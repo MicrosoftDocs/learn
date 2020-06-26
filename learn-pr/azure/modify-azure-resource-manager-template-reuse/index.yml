@@ -12,12 +12,15 @@ title: "TBD"
 summary: TBD.
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Create an expression for a unique value using Azure Resource Manager template functions
+  - Reuse your expression by storing it in an Azure Resource Manager template variable
+  - Organize and track your deployed Azure resources using resource tags
+  - Manage multiple deployment parameters using Azure Resource Manager template parameter files
 prerequisites: |
-  - A [GitHub](https://github.com?azure-portal=true) account
-  - The ability to navigate and edit files in GitHub
+  - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions  
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
+  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
+  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
@@ -29,6 +32,8 @@ roles:
 products:
 - azure
 - vs-code
+- azure-resource-manager
+- azure-storage-accounts
 units:
 - learn.modify-azure-resource-manager-template-reuse.1-introduction
 - learn.modify-azure-resource-manager-template-reuse.2-TBD

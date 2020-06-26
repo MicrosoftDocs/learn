@@ -1,4 +1,6 @@
-Here, you add tags to help organize and track your resources, and use a parameter file to allow for different parameter configurations per deployment.
+Here, you add tags to help organize and track your Microsoft Azure resources, and use a Resource Manager template parameter file to allow for different parameter configurations per deployment.
+
+This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Create a tag to track the resource deployment environment and project
 
@@ -16,7 +18,7 @@ Here, you create a parameter to use as a resource tag in your template.
     }
 ```
 
-1. Change *parameter1* to **resourceTags** and change the value of ```"type";``` to be **object**.
+1. Change *parameter1* to **resourceTags** and change the value of ```"type":``` to be **object**.
 1. Add an attribute called **defaultValue:** and set the value to be **{"Environment": "Dev", "Project": "Tutorial"}**.
 1. The parameter block should look like this:
 

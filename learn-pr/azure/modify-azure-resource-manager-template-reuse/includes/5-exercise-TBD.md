@@ -1,4 +1,6 @@
-In this exercise, you use a variable for your storage account name expression. 
+In this exercise, you store your storage account name expression in a Resource Manager template variable and use that variable to specify the name of the Storage Account to create. 
+
+This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Add a variable
 
@@ -7,7 +9,7 @@ Here, you add a variable to store your storage account name expression in one pl
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the curly braces in the variables block. ```"variables":{},``` Press <kbd>Enter</kbd>.
 1. Type **var**** in the square brackets. You see a list of related snippets. Choose arm-variable.
 
-  :::image type="content" source="../media/5-arm-variable.png" alt-text="Visual Studio Code showing the snippets for Azure Resource Manager template variables." border="true":::
+  :::image type="content" source="../media/5-arm-variable.png" alt-text="Visual Studio Code showing the snippets for Resource Manager template variables." border="true":::
 
 1. Your variables section will look like this.
 
@@ -23,9 +25,11 @@ Here, you add a variable to store your storage account name expression in one pl
       },
     ```
 
+    Notice that you are using the ```storagePrefix``` parameter in the expression instead of a literal string. Otherwise, this is the same expression you learned about in the previous unit.
+
 1. Use the variable in the resources section. Change the values of the ```name:``` and ```displayName``` attributes to **"[variables('uniqueStorageName')]"**
 
-1. Change value of the ```maxLength:``` attribute for the *storagePrefix* variable  to 11. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
+1. Change value of the ```maxLength:``` attribute for the *storagePrefix* variable to 11. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
 
 1. The entire file will look look this:
 

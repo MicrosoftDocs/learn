@@ -1,6 +1,6 @@
-In the scenario, you want to make deploying your template to different environments as seamless as possible. One of the areas of contention is coming up with a unique name for the Azure storage account.
+In the scenario, you want to make deploying your Resource Manager template to different environments as seamless as possible. One of the areas of contention is coming up with a unique name for the Storage Account.
 
-You decide to use an [Azure Resource Manager template function](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) to solve this problem.
+You decide to create an expression using [Azure Resource Manager template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) to solve this problem.
 
 ## What are template functions
 
@@ -8,7 +8,7 @@ Functions add flexibility to your template by dynamically getting values during 
 
 To understand functions, you first need to understand expressions. Expressions are values that get evaluated when the template is deployed. They start and end with square brackets, [ and ], and can return a string, integer, boolean, array, or object.
 
-You have already worked with expressions in you Azure Resource Manager template in the previous module. As an example, you used:
+You have already worked with expressions in your Resource Manager template in the previous module. As an example, you used:
 
 ```json
 "parameters": {
@@ -19,17 +19,17 @@ You have already worked with expressions in you Azure Resource Manager template 
 },
 ```
 
-The expression is for the ```defaultValue:``` attribute. Notice that this expression holds a *template function*, ```resourceGroup()```. This is a template function that returns that returns information on the resource group that this template is deploying to. The ```.location``` retrieves one property from the object returned by that function. Functions allow you to construct values you need dynamically.
+The expression here is the value of the ```defaultValue:``` attribute. Notice that this expression holds a *template function*, ```resourceGroup()```. This function returns information on the resource group that this template is deploying to. The ```.location``` retrieves one property from the object returned by that function. Functions allow you to construct values you need dynamically.
 
-## How do I work with functions
+## How do I work with Resource Manager template functions
 
 There are a few rules when working with functions:
 
-Use single quotes when passing a string value into a function. For example ```concat('storage',uniqueString(resourceGroup().id)))```.
+Use single quotes when passing a string value into a function. For example ```concat('storage',uniqueString(resourceGroup().id)))```. The function here is ```concat``` and the string you are passing in to the function is ```'storage'```.
 
 To work with literal values in template functions you need *escape characters*. The escape character is different depending on what you are escaping.
 
-To have a literal string start with a left bracket [ and end with a right bracket ], but not have it interpreted as an expression, add an extra bracket to start the string with [[. For example, the variable:
+To have a literal string start with a left bracket [ and end with a right bracket ], but not have it interpreted as an expression, add an extra bracket to the start of the string. For example, the variable:
 
 ```json
 "demoVar1": "[[test value]"
@@ -53,18 +53,28 @@ To escape double quotes in an expression, such as adding a JSON object in the te
 },
 ```
 
-To set a property to null, you can use ```null``` or ```[json('null')]```. The json function returns an empty object when you provide null as the parameter. In both cases, Resource Manager templates treat it as if the property isn't present.
+To set a property to null, you can use ```null``` or ```[json('null')]```. The json function returns an empty object when you provide null as the parameter.
 
 ```json
 "stringValue": null,
 "objectValue": "[json('null')]"
 ```
 
-The Azure Resource Manager provides several [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you.
+Resource Manager  provides several [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups of different types of functions:
+
+- *Array functions* for working with arrays. For example, ```first``` and ```last```.
+- *Comparison functions* for making comparisons in your templates. For example, ```equals``` and ```greater```.
+- *Date functions* for working with dates. For example, ```utcNow``` and ```dateTimeAdd```.
+- *Deployment value functions* for getting values from sections of the template and values related to the deployment. For example, ```environment``` and ```parameters```.
+- *Logical functions* for working with logical conditions. For example, ```if``` and ```not```.
+- *Numeric functions* for working with integers. For example, ```max``` and ```mod```.
+- *Object functions* for working with objects.For example, ```contains``` and ```length```.
+- *Resource functions* for getting resource values. For example, ```resourceGroup``` and ```subscription```.
+- *String functions* for working with strings. For example, ```length``` and ```startsWith```.
 
 ### How can I use several functions in one expression
 
-You can use several template functions together to create your own expressions. In the scenario, you need to create a way to create an expression that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in storage account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*. You can use four functions to construct this string value. For example:
+You can use several template functions together to create your own expressions. In the scenario, you need to create a way to create an expression that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in storage account names similar to *dev2hu6fktr577wh* or *staging5his8hgr67tt5*. You can use four functions to construct this string value. For example:
 
 ```json
 "[toLower(concat("Storage",uniqueString(resourceGroup().id)))]"

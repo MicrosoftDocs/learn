@@ -2,9 +2,9 @@ Here, you create an expression using template functions that creates a unique na
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
-## Create the Azure Resource Manager template file
+## Create the Resource Manager template file
 
-In the previous module, you created an Azure Resource Manager template that deployed an Azure storage account. You added parameters and an output to this file. Here, you start with that file, however, the output has been taken out to reduce the overhead.
+In the previous module, you created a Resource Manager template that deployed a Storage Account. You added parameters and an output to this file. Here, you start with that file, however, the output has been taken out to reduce the overhead.
 
 1. Open Visual Studio Code and create a file called **azuredeploy.json**. If you have this file from the previous module, you can use that file.
 
@@ -12,7 +12,7 @@ In the previous module, you created an Azure Resource Manager template that depl
 
     [!code-json[](code/starter.json)]
 
-1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter. This was used to pass in a unique name for the Azure storage account.
+1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter. This was used to pass in a unique name for the Storage Account.
 
 ## Create an expression to set a unique storage account name
 
@@ -24,7 +24,7 @@ Instead of passing in the name of the storage account, you change the parameter 
 
     [!code-json[](code/function.json)]
 
-## Deploy the Azure Resource Manager template to Azure
+## Deploy the Resource Manager template to Azure
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
 
