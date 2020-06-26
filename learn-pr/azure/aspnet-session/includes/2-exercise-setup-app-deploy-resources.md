@@ -1,7 +1,7 @@
 The example web application used by this module is based on part of an e-commerce system. The sample web application enables a warehouse employee to update the details of products sold by the system, and maintain the current stock levels.
 
 Here, you'll download and test the application locally, and then create the resources needed to deploy the application to Azure and configure it. You'll do the deployment and configuration in a later unit in this module.
- 
+
 ## Download and test the sample web application locally
 
 1. Using Windows Explorer, create a folder named **MigrationWorkshop** in a convenient place on your computer.
@@ -24,15 +24,15 @@ Here, you'll download and test the application locally, and then create the reso
     > ![Image of the Open Project/Solution dialog box in Visual Studio 2019. The user has selected the **eShopLegacyWebForms** solution](..\media\2-open-solution.png)
 
     You might be prompted to install additional components in the Solution Explorer window:
-    
+
     > [!div class="mx-imgBorder"]
     > ![Image of the Solution Explorer window in Visual Studio. The user is being prompted to install additional components to support Visual Studio.**](..\media\2-install-components.png)
-    
+
     If this occurs, click **Install** to install the required items, and follow the instructions.
 
 1. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps to:
 
-    1. Close Visual Studio, and start it again. 
+    1. Close Visual Studio, and start it again.
     2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
 
 1. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
