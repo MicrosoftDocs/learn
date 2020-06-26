@@ -41,20 +41,27 @@ Use Visual Studio Code IntelliSense for information on how to use pd.read_csv.
   )
   Docstring:
   Read a comma-separated values (csv) file into DataFrame.
+  
   Also supports optionally iterating or breaking of the file into chunks.
+  
   Additional help can be found in the online docs for `IO Tools `_.
+  
   Parameters
+  
   ...
+  
   Returns
   -------
   DataFrame or TextParser
       A comma-separated values (csv) file is returned as two-dimensional
       data structure with labeled axes.
+  
   See Also
   --------
   to_csv : Write DataFrame to a comma-separated values (csv) file.
   read_csv : Read a comma-separated values (csv) file into DataFrame.
   read_fwf : Read a table of fixed-width formatted lines into DataFrame.
+  
   Examples
   --------
   >>> pd.read_csv('data.csv')  # doctest: +SKIP
