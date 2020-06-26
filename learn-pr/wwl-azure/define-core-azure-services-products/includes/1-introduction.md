@@ -20,3 +20,4 @@ In this module, you will:
 - Survey the data storage options in Azure.
 - Discover how Azure data storage can meet your business demands.
 - Compare Azure data storage with on-premises storage.
+
