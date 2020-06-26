@@ -1,15 +1,15 @@
 ### YamlMime:LearningPath
 uid: learn.az104-admin-prerequisites
 metadata:
-  title: AZ-104 Prerequisites for Azure administrators
-  description: Learn the basic concepts you'll need to know as an Azure administrator and prepare for Exam AZ-104 Microsoft Azure Administrator.
+  title: "AZ-104: Prerequisites for Azure administrators"
+  description: "Learn the basic concepts you'll need to know as an Azure administrator and prepare for Exam AZ-104: Microsoft Azure Administrator."
   brand: azure
   ms.date: 05/14/2020
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: AZ-104 Prerequisites for Azure administrators
+title: "AZ-104: Prerequisites for Azure administrators"
 summary: |
   If you're an IT Administrator that's new to Azure and need to prepare for [Exam AZ-104: Microsoft Azure Administrator](https://docs.microsoft.com/learn/certifications/exams/az-104), this path is the place to start. Learn the basic Azure concepts you'll need to know as an Azure administrator. 
 prerequisites:  | 
