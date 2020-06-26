@@ -2,7 +2,7 @@ In this exercise, you'll build a High-Level Azure Sphere application that connec
 
 ## Step 1: Create a new IoT Central Application
 
-1. Click and open this link "[Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/)" in a new window.
+1. Click and open this link "[Azure IoT Central](https://azure.microsoft.com/services/iot-central/)" in a new window.
 
 2. Click **Build a solution**.
 
