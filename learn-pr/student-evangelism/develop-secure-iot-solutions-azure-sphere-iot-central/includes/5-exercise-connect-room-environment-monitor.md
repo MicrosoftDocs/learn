@@ -2,7 +2,7 @@ In this exercise, you'll build a High-Level Azure Sphere application that connec
 
 ## Step 1: Create a new IoT Central Application
 
-1. Click and open this link "[Azure IoT Central](https://azure.microsoft.com/services/iot-central)" in a new window.
+1. Click and open this link "[Azure IoT Central](https://azure.microsoft.com/en-gb/services/iot-central/)" in a new window.
 
 2. Click **Build a solution**.
 
@@ -65,7 +65,7 @@ A device template is a blueprint that defines the characteristics and behaviors 
 1. Click **Publish** to publish the template. Publishing the template makes it available for devices. 
 2. Next, confirm and click **Publish**
 
-> [!Note] See [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/en-us/azure/iot-central/core/howto-set-up-template?WT.mc_id=github-blog-dglover) for information on creating your own device templates.
+> [!Note] See [Define a new IoT device type in your Azure IoT Central application](https://docs.microsoft.com/azure/iot-central/core/howto-set-up-template?WT.mc_id=github-blog-dglover) for information on creating your own device templates.
 
 ------
 

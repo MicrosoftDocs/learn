@@ -1,6 +1,6 @@
 Connect your Azure Sphere dev kit to your PC through USB. When plugged in, the device exposes three COM ports. Open Device Manager on PC and make sure that three COM ports are installed. COM ports may be different from those in the figure.
 
-Alternatively, you can download the drivers from [Future Technology Devices International](https://www.ftdichip.com/Drivers/VCP.htm) ([FTDI](https://www.ftdichip.com/Drivers/VCP.htm)). Choose the driver that matches your Windows installation (32-bit or 64-bit).
+Alternatively, you can download the drivers from Future Technology Devices International. Choose the driver that matches your Windows installation (32-bit or 64-bit).
 
 ## Install Azure Sphere SDK
 
@@ -16,7 +16,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
-3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace [email@address.com](mailto:email@address.com) with your account and run the command.
+3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace "email@address.com" with your account and run the command.
 
    ```
    azsphere login --newuser <email@address.com>
