@@ -1,15 +1,15 @@
-In this exercise, you store your storage account name expression in a Resource Manager template variable and use that variable to specify the name of the Storage Account to create. 
+In this exercise, you store your Azure Storage Account name expression in an  Azure Resource Manager template variable and use that variable to specify the name of the Storage Account to create. 
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Add a variable
 
-Here, you add a variable to store your storage account name expression in one place in the template.
+Here, you add a variable to store your Storage Account name expression in one place in the template.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the curly braces in the variables block. ```"variables":{},``` Press <kbd>Enter</kbd>.
 1. Type **var**** in the square brackets. You see a list of related snippets. Choose arm-variable.
 
-  :::image type="content" source="../media/5-arm-variable.png" alt-text="Visual Studio Code showing the snippets for Resource Manager template variables." border="true":::
+  :::image type="content" source="../media/5-arm-variable.png" alt-text="Visual Studio Code showing the snippets for Azure Resource Manager template variables." border="true":::
 
 1. Your variables section will look like this.
 

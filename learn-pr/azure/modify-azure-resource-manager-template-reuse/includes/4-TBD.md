@@ -1,8 +1,8 @@
-In the previous scenario, you decided to use an expression made up of several template functions to create a unique name for the Storage Account. This will make sure each of your customers will be able to use this template for their deployment. However, you notice that adding this expression in several places will be a problem for maintaining this template. You decide to use a variable for the storage account name expression. 
+In the previous scenario, you decided to use an expression made up of several template functions to create a unique name for the Azure Storage Account. This will make sure each of your customers will be able to use this template for their deployment. However, you notice that adding this expression in several places will be a problem for maintaining this template. You decide to use a variable for the Storage Account name expression. 
 
 ## What is a Resource Manager template variable
 
-A Resource Manager template variable is a construct that holds a value for later use. Variables are best used when a value needs to be specified in several places in the template. Wherever the variable is used in the template, Resource Manager replaces it with the resolved value.
+An Azure Resource Manager template variable is a construct that holds a value for later use. Variables are best used when a value needs to be specified in several places in the template. Wherever the variable is used in the template, Resource Manager replaces it with the resolved value.
 
 For example, you have an expression that defines a value for a resource location. Several of the resources you have defined in your template require a location. You create a variable to hold the location expression and then use the variable in all of the places a location is required.
 
@@ -20,7 +20,7 @@ Template variables are defined in the ```variables: {}``` section of the templat
 },
 ```
 
-Then, use that variable in the template wherever you need the storage account name.
+Then, use that variable in the template wherever you need the Storage Account name.
 
 ```json
 "resources": [

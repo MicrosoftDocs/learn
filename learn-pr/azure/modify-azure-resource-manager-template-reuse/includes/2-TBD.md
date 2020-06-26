@@ -1,4 +1,4 @@
-In the scenario, you want to make deploying your Resource Manager template to different environments as seamless as possible. One of the areas of contention is coming up with a unique name for the Storage Account.
+In the scenario, you want to make deploying your Azure Resource Manager template to different environments as seamless as possible. One of the areas of contention is coming up with a unique name for the Azure Storage Account.
 
 You decide to create an expression using [Azure Resource Manager template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) to solve this problem.
 
@@ -74,7 +74,7 @@ Resource Manager  provides several [template functions](https://docs.microsoft.c
 
 ### How can I use several functions in one expression
 
-You can use several template functions together to create your own expressions. In the scenario, you need to create a way to create an expression that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in storage account names similar to *dev2hu6fktr577wh* or *staging5his8hgr67tt5*. You can use four functions to construct this string value. For example:
+You can use several template functions together to create your own expressions. In the scenario, you need to create a way to create an expression that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in Storage Account names similar to *dev2hu6fktr577wh* or *staging5his8hgr67tt5*. You can use four functions to construct this string value. For example:
 
 ```json
 "[toLower(concat("Storage",uniqueString(resourceGroup().id)))]"

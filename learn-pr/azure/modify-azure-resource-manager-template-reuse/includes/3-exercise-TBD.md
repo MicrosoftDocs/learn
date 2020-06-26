@@ -1,4 +1,4 @@
-Here, you create an expression using template functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in storage account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
+Here, you create an expression using Azure Resource Manager template functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in Azure Storage Account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -14,13 +14,13 @@ In the previous module, you created a Resource Manager template that deployed a 
 
 1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter. This was used to pass in a unique name for the Storage Account.
 
-## Create an expression to set a unique storage account name
+## Create an expression to set a unique Storage Account name
 
-Instead of passing in the name of the storage account, you change the parameter to take a prefix for the storage account name. This parameter will passed to the ```concat``` function in your expression.
+Instead of passing in the name of the Storage Account, you change the parameter to take a prefix for the Storage Account name. This parameter will passed to the ```concat``` function in your expression.
 
 1. In the parameters section, change ```storageName``` to **storagePrefix**.
 
-1. Create the expression to set the unique storage account name. In the resources section, change the value of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. This is the same expression you learned about in the previous unit. The file should now look like this.
+1. Create the expression to set the unique Storage Account name. In the resources section, change the value of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. This is the same expression you learned about in the previous unit. The file should now look like this.
 
     [!code-json[](code/function.json)]
 
@@ -102,6 +102,6 @@ Deploy the template to Azure. You learned about the deployment commands in the p
 
 1. Select *addfunction* to see what resources were deployed.
 
-    :::image type="content" source="../media/3-unique-storage-deploy.png" alt-text="Azure portal interface showing the storage account deployed." border="true":::
+    :::image type="content" source="../media/3-unique-storage-deploy.png" alt-text="Azure portal interface showing the Storage Account deployed." border="true":::
 
 1. Leave the page open in your browser. You'll check on deployments again.

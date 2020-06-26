@@ -1,4 +1,4 @@
-There are two features of Resource Manager templates that you will want to use when deploying to more than one environment. These features are * resource tags* and *Resource Manager template parameter files*.
+There are two features of Azure Resource Manager templates that you will want to use when deploying to more than one environment. These features are *resource tags* and *Azure Resource Manager template parameter files*.
 
 As you add more resources to your environments you'll quickly find that you need a way to identify the purpose of these resources. Resources have a ```tags:``` attribute for this purpose. And as you deploy to more environments, you'll need an efficient way to keep track of the input parameters. Resource Manager templates can use parameter files to manage parameters for each deployment environment.
 

@@ -1,4 +1,4 @@
-Here, you add tags to help organize and track your Microsoft Azure resources, and use a Resource Manager template parameter file to allow for different parameter configurations per deployment.
+Here, you add tags to help organize and track your Microsoft Azure resources, and use an Azure Resource Manager template parameter file to allow for different parameter configurations per deployment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -53,7 +53,7 @@ Here, you create a parameter to use as a resource tag in your template.
        },
     ```
 
-1. Use this parameter to tag your storage account resource. Change the ```tags:``` attribute in the resource definition.
+1. Use this parameter to tag your Storage Account resource. Change the ```tags:``` attribute in the resource definition.
 
     ```json
     "tags": "[parameters('resourceTags')]",
@@ -76,10 +76,10 @@ Here, you create a parameter to use as a resource tag in your template.
         --parameters storagePrefix={your-Prefix} storageSKU=Standard_LRS
     ```
 
-1. Verify that the new tags are in the deployment. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the storage account you deployed.
+1. Verify that the new tags are in the deployment. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the Storage Account you deployed.
 1. You see the *Environment:Dev* and *Project:Tutorial* tags.
 
-    :::image type="content" source="../media/7-tags.png" alt-text="Azure portal interface for the storage account showing tags of Environment:Dev and Project:Tutorial." border="true":::
+    :::image type="content" source="../media/7-tags.png" alt-text="Azure portal interface for the Storage Account showing tags of Environment:Dev and Project:Tutorial." border="true":::
 
 ## Use a parameter file
 
@@ -132,4 +132,4 @@ Here, you deploy the template specifying what parameter file to use.
 
 1. Check Azure to see that the deployment was successful and that the tag value changed.
 
-    :::image type="content" source="../media/7-new-tags.png" alt-text="Azure portal interface for the storage account showing tags of Environment:Dev and Project:Learn." border="true":::
+    :::image type="content" source="../media/7-new-tags.png" alt-text="Azure portal interface for the Storage Account showing tags of Environment:Dev and Project:Learn." border="true":::
