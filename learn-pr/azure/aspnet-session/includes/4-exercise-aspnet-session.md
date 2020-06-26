@@ -6,7 +6,7 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
 
 1. In the Cloud Shell window on the right, run the commands shown below to ensure that your environment is still set up correctly. If necessary, recreate any missing environment variables with the values you used earler in the Setup unit.
 
-    ````PowerShell
+    ```PowerShell
     cd ~/eShopModernizing/Setup
     . ./environment.ps1
     ```
