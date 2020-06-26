@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-set-room-virtual-thermostat-azure-iot-device-twins
+title: Set room virtual thermostat with Azure IoT Device Twins
+metadata:
+  title: Set room virtual thermostat with Azure IoT Device Twins
+  description: In this section, we set room virtual thermostat with Azure IoT Device Twins
+  ms.date: 6/26/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 10 # dummy number at present
+content: |
+  [!include[](includes/7-exercise-set-room-virtual-thermostat-azure-iot-device-twins.md)]
