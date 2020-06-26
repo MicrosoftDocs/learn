@@ -45,7 +45,7 @@ You'll perform this exercise using the Azure portal.
 6. Select **Create**. It can take 10 or 15 minutes to create the account.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Validation** page in the Azure portal. The user has selected **Create**](../media/7-create-cosmosdb.png)
+    > ![Image of the **Validation** page in the Azure portal. The user has selected **Create**](../media/7-create-cosmos-db.png)
 
 ### Create a database and a container
 
@@ -57,7 +57,7 @@ You'll perform this exercise using the Azure portal.
 2. On the page for your Cosmos DB account, select **Data Explorer**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the Cosmos DB account page. The user has selected **Data Explorer**.](../media/7-cosmosdb-account.png)
+    > ![Image of the Cosmos DB account page. The user has selected **Data Explorer**.](../media/7-cosmos-db-account.png)
 
 3. On the **Data Explorer** page, select **New Container**.
 
@@ -74,6 +74,8 @@ You'll perform this exercise using the Azure portal.
     | Container ID | **productvolumes** |
     | Partition key | **/productid** (Each product will have a new level recorded each day. Partitioning by product ID enables you to quickly report how the levels for a product vary over time.) |
     | My partition key is larger than 100 bytes| Leave unchecked |
+
+*Prices shown in the image below are for example purposes only.*
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **Add Container** dialog box. The user has provided the parameters for a new database and container.](../media/7-container.png)
