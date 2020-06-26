@@ -21,21 +21,34 @@ The logger currently writes to a local file. While this approach is fine for a w
 1. Create an Azure Blob storage account.
 
     ```PowerShell
-    $storageaccount = New-AzStorageAccount -ResourceGroupName $resourcegroupname -Location $location -AccountName $storageaccountname -SkuName Standard_LRS -Tag @{Name="BlobStorageAccount"}
+    $storageaccount = New-AzStorageAccount `
+        -ResourceGroupName $resourcegroupname `
+        -Location $location `
+        -AccountName $storageaccountname `
+        -SkuName Standard_LRS `
+        -Tag @{Name="BlobStorageAccount"}
     ```
 
 1. Create a container to hold the log data, in the storage account.
 
     ```PowerShell
-    New-AzStorageContainer -Name $storagecontainername -Permission Blob -Context $storageaccount.Context
+    New-AzStorageContainer `
+        -Name $storagecontainername `
+        -Permission Blob `
+        -Context $storageaccount.Context
     ```
 
 1. Generate the connection string for this storage account, and record it to use later.
 
     ```PowerShell
-    $storageaccountkey = (Get-AzStorageAccountKey -ResourceGroupName $resourcegroupname -Name $storageaccountname)[0].Value
+    $storageaccountkey = (Get-AzStorageAccountKey `
+        -ResourceGroupName $resourcegroupname `
+        -Name $storageaccountname)[0].Value
 
-    $storageconnectionstring = ((-join('DefaultEndpointsProtocol=https;AccountName=', $storageaccountname, ';AccountKey=', $storageaccountkey,';EndpointSuffix=core.windows.net' )))
+    $storageconnectionstring = `
+        ((-join('DefaultEndpointsProtocol=https;AccountName=', `
+        $storageaccountname, ';AccountKey=', $storageaccountkey,`
+        ';EndpointSuffix=core.windows.net' )))
     ```
 
 1. Define a PowerShell variable containing the name of the AppInsights instance to be created.
@@ -50,7 +63,12 @@ The logger currently writes to a local file. While this approach is fine for a w
     > Neither the Azure PowerShell nor the Azure CLI have a direct command for creating this resource type at this time. You must use the general purpose Azure Resource creation command shown below. When prompted, select **Y** and press Enter to create the AppInsights instance.
 
     ```PowerShell
-    $appinsights = New-AzResource -ResourceName $appinsightsname -ResourceGroupName $resourcegroupname -Location $location -ResourceType "Microsoft.Insights/components" -Properties (-join('{"ApplicationId":"', $appinsightsname, '","Application_Type":"other"}')) -Tag @{Name="AppInsightsLog"}
+    $appinsights = New-AzResource `
+        -ResourceName $appinsightsname `
+        -ResourceGroupName $resourcegroupname `
+        -Location $location `
+        -ResourceType "Microsoft.Insights/components" `
+        -Properties (-join('{"ApplicationId":"', $appinsightsname, '", "Application_Type":"other"}')) -Tag @{Name="AppInsightsLog"}
     ```
 
 1. Retrieve the AppInsights instrumentation key.
@@ -296,7 +314,12 @@ The logger currently writes to a local file. While this approach is fine for a w
     1. Switch back to the Azure PowerShell window, and run the following command to allow your computer to access the Azure SQL Database server you created in the Setup unit. Replace ***YourIPAddress*** with the public IP address of your computer.
 
         ```PowerShell
-        New-AzSqlServerFirewallRule -ResourceGroupName $resourcegroupname -ServerName $servername -FirewallRuleName "AllowDesktop" -StartIpAddress YourIPAddress -EndIpAddress YourIPAddress
+        New-AzSqlServerFirewallRule `
+            -ResourceGroupName $resourcegroupname `
+            -ServerName $servername `
+            -FirewallRuleName "AllowDesktop" `
+            -StartIpAddress YourIPAddress `
+            -EndIpAddress YourIPAddress
         ``` 
 
         > [!NOTE]
