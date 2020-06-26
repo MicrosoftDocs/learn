@@ -4,7 +4,7 @@ Clear your mind and picture this: you work as a developer for an enormous online
 
 It is entirely possible to construct a Web page using nothing but HTML pages, JavaScript, and CSS. Node.js has a core module called HTTP that helps you construct web applications. It supports most things you will try to do like handling requests for reading, writing and working with different types of content.
 
-Being a programmer is not only about solving problems but also being as fast and efficient as possible, doing so. That means you need to know your tools, how to version your code and sometimes pick a framework that will achieve a faster and more reliable result. This is one of those times. Even though the http module in Node.js is capable it's not as fast as using a web framework.
+Being a developer is not only about solving problems but also being as fast and efficient as possible, doing so. That means you need to know your tools, how to version your code and sometimes pick a framework that will achieve a faster and more reliable result. This is one of those times. Even though the HTTP module in Node.js is capable, it's not as fast as using a framework.
 
 So for you to be fast and efficient and handle more complex topics like authentication/authorization - life will be a lot easier if you use a framework.
 

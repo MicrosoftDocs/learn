@@ -8,7 +8,7 @@ So what things are important things to consider when building web applications a
 - **Reading/Writing data**, users will most likely need to both display data as well as be able to add data to the system by, for example,  enter data in a form or by uploading files.
 - **Time to market**, the chosen tools, and libraries to create web applications and APIs should include solutions to common problems to ensure the developer can spend as much time as possible on implementing business requirements.  
 
-## http module in Node.js
+## HTTP module in Node.js
 
 Node.js comes with a built-in http module. It's a fairly small module that is competent in handling most types of requests. It's able to work with important topics such as headers, the URL, and payloads being sent across.
 
@@ -40,14 +40,14 @@ server.listen(PORT, () => {
 There are several interesting things that go on above:
 
 1. **Creating the server**,  What you see above is how the call to `createServer()` creates an instance of `http.Server`.
-1. **Implementing the callback**, the method `createServer()` expects a method, a so called callback that when invoked is supplied with instances of `http.IncomingMessage`and `http.ServerResponse`, here they are called `res` and `req`.
+1. **Implementing the callback**, the method `createServer()` expects a function, a so called callback that when invoked is supplied with instances of `http.IncomingMessage`and `http.ServerResponse`, here they are called `res` and `req`.
    1. **The client request**, the `req` instance can then investigate what headers and data have been sent as part of the client's request.
    1. **The server response**, it's up to the server to construct a response by instructing the `res` object with what data and response headers it should answer back with.
 1. **Start listening to requests**, the server created from the call to `createServer()` can then be listened to by invoking the method `listen()` while specifying a port. After calling `listen()`, the server is now ready to accept client requests.
 
 ## Streams
 
-The way data is transported back and forth is by using something called streams. It means data is sent, little by little, from client to server and, little by little, from server to client. This approach is so the server is capable of handling many concurrent requests.
+The way data is transported back and forth is by using something called streams. It means data is sent, chunk by chunk, from client to server and, chunk by chunk, from server to client. This approach is so the server is capable of handling many concurrent requests.
 
 Streams are not a Node.js concept but rather an Operating system concept. The way *streaming* is implemented in the http module is by having classes that are streams. A stream is fundamental data structure in Node.js that can read and write data and send and receive messages, or *events*.
 
@@ -59,7 +59,7 @@ req.on('data', (chunk) => {
 })
 ```
 
-Conversely the way data is sent back to the client is by data being placed in the response stream `res` by invoking the `end()` method like so:
+Conversely, the way data is sent back to the client is by data being placed in the response stream `res` by invoking the `end()` method like so:
 
 ```javascript
 res.end('some data')
@@ -69,14 +69,14 @@ Streams are somewhat of a complicated topic and most web frameworks that sit on 
 
 ## Express
 
-So far you've been educated on the capabilities of the http module in Node.js. It's a perfectly valid choice for smaller web applications. As soon as applications grow large, comes the need to be able to architect your application in a scalable way. Sometimes a framework can help with architecture. Additionally, once you've built a few web applications you'll notice how you seem to solve the same problems over and over again. Problems like route management, authentication and authorization, error management and more. When you come to this point, you start looking for a library or framework that addresses or some or all of these problems.
+So far you've learned about the capabilities of the http module in Node.js. It's a perfectly valid choice for smaller web applications. As soon as applications grow large, comes the need to be able to architect your application in a scalable way. Sometimes a framework can help with architecture. Additionally, once you've built a few web applications you'll notice how you seem to solve the same problems over and over again. Problems like route management, authentication and authorization, error management and more. When you come to this point, you start looking for a library or framework that addresses some or all of these problems.
 
 Why should you go with Express as framework for your next app?
 
 - **Great features**, Express has a set of features that makes you as a developer fast and productive
-- **Abstracts away complexity**, Express abstracts away complicated concepts like Streams, for example,  and thereby makes the whole development experience a lot easier.
+- **Abstracts away complexity**, Express abstracts away complicated concepts like Streams, for example, and thereby makes the whole development experience a lot easier.
 - **Solves common Web problems**, Express helps you with common problems such as route management, caching, redirection and more.
-- **Trusted by millions of developers**, according to GitHUb 6.8 million developers are currently using Express for their web applications. Such a significant number implies that there are many developers invested in its success.
+- **Trusted by millions of developers**, according to GitHub 6.8 million developers are currently using Express for their web applications. Such a significant number implies that there are many developers invested in its success.
 
 ### Route management in Express
 

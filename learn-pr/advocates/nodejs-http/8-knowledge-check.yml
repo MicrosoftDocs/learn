@@ -19,16 +19,16 @@ quiz:
       choices:
         - content: "Instantiate an app, configure routes, set up middleware, set up error handlers, listen to the server"
           isCorrect: false
-          explanation: "Incorrect. These are definitely steps you could take in setting up your app. However, only instantiation and listen to server are steps you must do, everything else is optional"
+          explanation: "These are definitely steps you could take in setting up your app. However, only instantiation and listen to server are steps you must do, everything else is optional"
         - content: "Instantiate an app, listen to the server"
           isCorrect: true
-          explanation: "This is all you need to get an app up and running. You ar strongly recommended to configure some routes however"
+          explanation: "This is all you need to get an app up and running. You are strongly recommended to configure some routes however"
         - content: "Instantiate an app, configure routes, listen to the server"
           isCorrect: false
           explanation: "You don't actually need to configure routes although it's highly recommended"
         - content: "Instantiate an app, configure routes, set up middleware, listen to the server"
           isCorrect: false
-          explanation: "Neither configuring routes or set up middleware are things you must do, even though it's highly recommended"
+          explanation: "Neither configuring routes or setting up middleware are things you must do, even though it's highly recommended"
     - content: "What are the ways you can ensure the response is sent as JSON from an Express app?"
       choices:
         - content: "Call the json() helper method on the response object like so: res.json({ content: '' })"
