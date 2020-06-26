@@ -10,7 +10,7 @@
 
 These labs support developer boards from AVNET and Seeed Studio. You need to set the configuration that matches your developer board.
 
-The default developer board configuration is for the AVNET Azure Sphere Starter Kit. If you have this board, there is no additional configuration required.
+The default developer board configuration is for the AVNET Azure Sphere Starter Kit. If you have this board, there's no additional configuration required.
 
 1. Open CMakeList.txt.
 
@@ -24,12 +24,12 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
    # set(SEEED_STUDIO_MINI TRUE "Seeed Studio Azure Sphere MT3620 Mini Dev Board")
    ```
 
-4. Save the file. This will auto-generate the CMake cache.
+4. Save the file. This will autogenerate the CMake cache.
 
 ## Step 3: Configure the Azure IoT connection information
 
 1. Open the **app_manifest.json** file.
-2. You will need to redo the settings for the **app_manifest.json** file. Either copy from **Notepad** if you still have it open or copy from the **app_manifest.json** file you created in the previous exercise.
+2. You'll need to redo the settings for the **app_manifest.json** file. Either copy from **Notepad** if you still have it open or copy from the **app_manifest.json** file you created in the previous exercise.
 3. Paste the contents of the clipboard into **app_manifest.json** and save the file.
 
 ## Step 4: Start the app build deploy process
@@ -42,18 +42,18 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
 
 ------
 
-## Step 5: Expected Device Behaviour
+## Step 5: Expected Device Behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
-1. The RGB LED5 will start to blink. In the next section, you will be setting the desired temperature which will determine the RGB LED colour.
+1. The RGB LED5 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. LED4 will turn yellow when connected to Azure.
 3. LED3 will blink when telemetry is sent to IoT Hub
 4. Press **Button A** or **Button B** on the device to change the blink rate of LED5 and to update the **Actual Temperature** device twin property in IoT Hub.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
-1. The RGB LED 1 will start to blink. In the next section, you will be setting the desired temperature which will determine the RGB LED colour.
+1. The RGB LED 1 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. The network LED will turn red when connected to Azure.
 3. LED 4 will blink blue when telemetry is sent to IoT Hub
 4. Press **Button A** or **Button B** on the device to change the blink rate of RGB LED 1 and to update the **Actual Temperature** device twin property in IoT Hub.
@@ -65,7 +65,7 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
 
 ## Step 6: Display the actual temperature device twin
 
-We are going to use the Azure command-line tool to view and update the IoT Hub device twins. For more information see [az iot hub device-twin](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-twin?view=azure-cli-latest).
+We're going to use the Azure command-line tool to view and update the IoT Hub device twins. For more information, see [az iot hub device-twin](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub/device-twin?view=azure-cli-latest).
 
 Follow these steps to show the actual temperature recorded by the device:
 
@@ -79,7 +79,7 @@ Follow these steps to show the actual temperature recorded by the device:
    azsphere dev show-attached
    ```
 
-4. Open the Azure Cloud shell by right mouse clicking on the following link and opening in a new tab "[https://shell.azure.com](https://shell.azure.com/)".
+4. Open the Azure Cloud Shell by right mouse clicking on the following link and opening in a new tab "[https://shell.azure.com](https://shell.azure.com/)".
 
 5. In the Cloud Shell, run the [az extension add](https://docs.microsoft.com/cli/azure/extension?view=azure-cli-latest#az-extension-add) command to add the Microsoft Azure IoT Extension to your CLI shell. The IoT Extension adds IoT Hub, IoT Edge, and IoT Device Provisioning Service (DPS) specific commands to Azure CLI.
 
@@ -177,7 +177,7 @@ To set the desired temperature:
 
    > Note, IoT Hub requires Device IDs to be lowercase. The bash command **"${DEVICE_ID,,}"** in the device twin show command converts the device id to lowercase.
 
-3. Observe the blinking LED on the Azure Sphere may change colour depending on the desired temperature you set.
+3. Observe the blinking LED on the Azure Sphere may change color depending on the desired temperature you set.
 
 4. Show the latest state of the device twin. Review the **desired** and **reported** sections for the **DesiredTemperature** property.
 
@@ -185,6 +185,6 @@ To set the desired temperature:
    az iot hub device-twin show --device-id "${DEVICE_ID,,}" -n $HUB_NAME
    ```
 
-5. Try setting more extreme desired temperatures. For example, try 0 or 100. Again, observe the blinking LED will change colour.
+5. Try setting more extreme desired temperatures. For example, try 0 or 100. Again, observe the blinking LED will change color.
 
 6. Close the Cloud Shell by typing `exit`.

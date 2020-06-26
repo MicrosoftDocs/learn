@@ -31,6 +31,6 @@ products:
 units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.introduction
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-how-setup-azure-sphere
-- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.connect-room-environment-monitor
-- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.set-room-virtual-thermostat-azure-iot-device-twins
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-connect-room-environment-monitor
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-set-room-virtual-thermostat-azure-iot-device-twins
 
