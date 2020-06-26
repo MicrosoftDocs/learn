@@ -20,7 +20,11 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 3. Create an Azure key vault.
 
     ```PowerShell
-    New-AzKeyVault -Name $vaultname -ResourceGroupName $resourcegroupname -location $location -Tag @{Name="WebAppKeyVault"}
+    New-AzKeyVault `
+        -Name $vaultname `
+        -ResourceGroupName $resourcegroupname `
+        -location $location `
+        -Tag @{Name="WebAppKeyVault"}
     ```
 
     You'll receive the following warning when the key vault is created:
@@ -32,25 +36,36 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 4. Retrieve the service principal ID of the web app.
 
     ```PowerShell
-    $appId=(Get-AzWebApp -ResourceGroupName $resourcegroupname -Name $webappname).Identity.PrincipalId
+    $appId=(Get-AzWebApp `
+        -ResourceGroupName $resourcegroupname `
+        -Name $webappname).Identity.PrincipalId
     ```
 
 5. Set the access policy of the key vault to allow the web app (identified using the service principal), to access the key vault.
 
     ```PowerShell
-    Set-AzKeyVaultAccessPolicy -VaultName $vaultname -ResourceGroupName $resourcegroupname -ObjectId $appId -PermissionsToSecrets Get
+    Set-AzKeyVaultAccessPolicy `
+        -VaultName $vaultname `
+        -ResourceGroupName $resourcegroupname `
+        -ObjectId $appId `
+        -PermissionsToSecrets Get
     ```
 
 6. Generate the connection string for the SQL Server database, using the PowerShell variables you created earlier.
 
     ```PowerShell
-    $connectionstringplaintext = (-join("Server=tcp:", $servername, ".database.windows.net,1433;Database=", $dbname, ";User ID=", $serveradminname, ";Password=", $serveradminpassword, ";Encrypt=true;Connection Timeout=30;"))
+    $connectionstringplaintext = `
+        (-join("Server=tcp:", $servername, ".database.windows.net,1433;Database=", `
+        $dbname, ";User ID=", $serveradminname, ";Password=", $serveradminpassword, `
+        ";Encrypt=true;Connection Timeout=30;"))
     ```
 
 7. Convert the connection string into a secure string.
 
     ```PowerShell
-    $connectionstring = ConvertTo-SecureString $connectionstringplaintext -AsPlainText -Force
+    $connectionstring = ConvertTo-SecureString $connectionstringplaintext   
+        `-AsPlainText `
+        -Force
     ```
 
     > [!NOTE]
@@ -59,31 +74,44 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 8. Find the Object ID of your account in Azure AD.
 
     ```PowerShell
-    $objectId = az ad signed-in-user show --query objectId -o tsv
+    $objectId = az ad signed-in-user show `
+        --query objectId -o tsv
     ```
 
 9. Grant your account privileges to create and retrieve secrets and keys from the key vault.
 
     ```PowerShell
-    Set-AzKeyVaultAccessPolicy -VaultName $vaultName -PermissionsToKeys create,decrypt,delete,encrypt,get,list,unwrapKey,wrapKey -PermissionsToSecrets get,list,set,delete -ObjectId $objectId
+    Set-AzKeyVaultAccessPolicy `
+        -VaultName $vaultName `
+        -PermissionsToKeys create,decrypt,delete,encrypt,get,list,unwrapKey,wrapKey `
+        -PermissionsToSecrets get,list,set,delete `
+        -ObjectId $objectId
     ```
 
 10. Store the secure string in the key vault, with the key **CatalogDBContext**.
 
     ```PowerShell
-    Set-AzKeyVaultSecret -VaultName $vaultname -Name "CatalogDBContext" -SecretValue $connectionstring 
+    Set-AzKeyVaultSecret `
+        -VaultName $vaultname `
+        -Name "CatalogDBContext" `
+        -SecretValue $connectionstring 
     ```
 
 11. Verify that the **CatalogDBContext** secret has been stored in the key vault.
 
     ```PowerShell
-    Get-AzKeyVaultSecret -VaultName $vaultname -Name "CatalogDBContext"
+    Get-AzKeyVaultSecret `
+        -VaultName $vaultname `
+        -Name "CatalogDBContext"
     ```
 
 12. Set the vault name as an AppSetting named **KeyVaultName** for the web app. The application will be configured to retrieve the name of the key vault using this setting.
 
     ```PowerShell
-    Set-AzWebApp -Name $webappname -ResourceGroupName $resourcegroupname -AppSettings @{KeyVaultName = $vaultname}
+    Set-AzWebApp `
+        -Name $webappname `
+        -ResourceGroupName $resourcegroupname `
+        -AppSettings @{KeyVaultName = $vaultname}
     ```
 
 ## Configure the web app
@@ -200,7 +228,4 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 
     > [!div class="mx-imgBorder"]
     > ![Image of the web app running using Azure App Service.](..\media\4-web-app.png)
-
-
-
 
