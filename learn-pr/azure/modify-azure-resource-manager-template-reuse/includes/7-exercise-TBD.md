@@ -59,7 +59,7 @@ Here, you create a parameter to use as a resource tag in your template.
 
 1. Save the file.
 
-## Deploy the template with updates tags
+## Deploy the template with updated tags
 
 1. Deploy the updated template to Azure. Be sure to use the same *storagePrefix* you used before.
 

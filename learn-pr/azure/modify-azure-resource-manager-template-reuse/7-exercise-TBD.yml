@@ -9,6 +9,7 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 20
+azureSandbox: true
+durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-TBD.md)]

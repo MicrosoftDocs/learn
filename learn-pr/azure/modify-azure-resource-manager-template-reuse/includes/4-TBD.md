@@ -2,4 +2,38 @@ In the previous scenario, you decided to use an expression made up of several te
 
 ## What is an Azure Resource Manager template variable
 
+An Azure Resource manager template variable is a construct that holds a value for later use. Variables are best used when a value needs to be specified in several places in the template. Wherever the variable is used in the template, Resource Manager replaces it with the resolved value.
+
+For example, you have an expression that defines a value for a resource location. Several of the resources you have defined in your template require a location. You create a variable to hold the location expression and then use the variable in all of the place a location is required.
+
+### Advantages to using template variables
+
+Template variables allow you to write an expression once, and then use it in several places. Further, maintenance of the expression is in one place and the template is more readable.
+
 ## How do I use template variables
+
+Template variables are defined in the ```variables: {}``` section of the template. For example, here is the expression for the Azure storage account name you defined in the last unit. It is now defining the value for the ```storageName``` variable.
+
+```json
+"variables": {
+  "storageName": "[concat(toLower(parameters('storageNamePrefix')), uniqueString(resourceGroup().id))]"
+},
+```
+
+Then, use that variable in the template wherever you need the storage account name.
+
+```json
+"resources": [
+  {
+    "type": "Microsoft.Storage/storageAccounts",
+    "name": "[variables('storageName')]",
+    ...
+  }
+]
+```
+
+### Best practices for template variables
+
+Template variables are specified using camel case and are best used for values that you need to specify more than once, especially if that value is a complex expression.
+
+Don't use the ```reference``` function in the variables section of the template. The reference function is resolved at runtime and variables are resolved when the template is parsed. Also, don't use variables for ```apiVersion``` on a resource. The API version determines the schema of the resource and often you can't change the version without changing the properties for the resource.
