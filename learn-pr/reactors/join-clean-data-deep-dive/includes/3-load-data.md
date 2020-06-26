@@ -25,12 +25,42 @@ Use Visual Studio Code IntelliSense for information on how to use pd.read_csv.
   Refer to the discussion at the start of this section if you forgot the syntax.
   
   ```python
-  df = pd.read_csv('Data/USDA-nndb.csv')
+  df = pd.read_csv?
   ```
 
-  This flyout should appear:
+  This output should appear (note that this is a shortened version):
 
-  :::image type="content" source="../media/pd-read-csv-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.read_csv.'":::
+  ```Output
+  Signature:
+  pd.read_csv(
+      filepath_or_buffer: Union[str, pathlib.Path, IO[~AnyStr]],
+      sep=',',
+      delimiter=None,
+      header='infer',
+      ...
+  )
+  Docstring:
+  Read a comma-separated values (csv) file into DataFrame.
+  Also supports optionally iterating or breaking of the file into chunks.
+  Additional help can be found in the online docs for `IO Tools `_.
+  Parameters
+  ...
+  Returns
+  -------
+  DataFrame or TextParser
+      A comma-separated values (csv) file is returned as two-dimensional
+      data structure with labeled axes.
+  See Also
+  --------
+  to_csv : Write DataFrame to a comma-separated values (csv) file.
+  read_csv : Read a comma-separated values (csv) file into DataFrame.
+  read_fwf : Read a table of fixed-width formatted lines into DataFrame.
+  Examples
+  --------
+  >>> pd.read_csv('data.csv')  # doctest: +SKIP
+  File:      c:\users\sarah\appdata\local\programs\python\python38-32\lib\site-packages\pandas\io\parsers.py
+  Type:      function
+  ```
 
 </details>
 

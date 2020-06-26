@@ -18,8 +18,6 @@ Pandas is a big package, and there can be a lot to keep track of. Fortunately, y
 pd.
 ```
 
-> [!div class="alert is-tip"]
-
 When you do so, a drop-down menu will appear next to `pd`.
 
 ### Try it yourself
@@ -30,9 +28,21 @@ Alternatively, if you have a function you know you want to use but don't know ho
 pd.compat?
 ```
 
-The flyout looks like:
+The output looks like:
 
-:::image type="content" source="../media/pd-compat-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.'":::
+```Output
+Type:        module
+String form: 
+File:        c:\users\sarah\appdata\local\programs\python\python38-32\lib\site-packages\pandas\compat\__init__.py
+ Docstring:  
+compat
+======
+
+Cross-compatible functions for different versions of Python.
+
+Other items:
+* platform checker
+```
 
 Now select an item by using IntelliSense, and then add a period and use IntelliSense to explore *that*.
 
@@ -45,28 +55,6 @@ pd.DataFrame.
 You should see:
 
 :::image type="content" source="../media/pd-dataframe-help-vscode-flyout.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.DataFrame.'":::
-
-## Documentation
-
-As we progress through section 1.1, don't forget that Visual Studio Code offers IntelliSense and function documentation with the `?` (question mark) character. If you don't understand something about a function that you see in this section, taking a moment to consult the documentation can help. You'll find this documentation to be a valuable reference source for your own data science work, both now and in the future. 
-
-As a reminder, use Visual Studio Code IntelliSense and the `?` (question mark) character to discover functions and display the built-in pandas documentation:
-
-```python
-pd
-```
-
-### Try it yourself
-
-Run this code cell and review the documentation for the pandas DataFrame object. We're going to use it quite a bit.
-
-```python
-pd.
-```
-
-Here's the flyout:
-
-:::image type="content" source="../media/pd-help-vscode-flyout-dataframe-selected.png" alt-text="Help flyout menu in Visual Studio Code UI when typing 'pd.' and hovering over 'DataFrame'":::
 
 ## A brief reminder about Jupyter notebooks
 
