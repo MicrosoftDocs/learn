@@ -36,9 +36,9 @@ modules:
 - learn.authenticate-apps-with-managed-identities
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.control-authentication-with-apim
-- azure-api-management
 - learn.introduction-to-security
 - learn.monitor-report-aad-security-events
+- learn.github.maintain-secure-repository-github
 - learn.intro-to-governance
 - learn.improve-reliability-failure
 - learn.improve-reliability-incidents
