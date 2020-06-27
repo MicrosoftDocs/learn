@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.intro-to-azure-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
+uid: learn-pr.intro-to-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
 metadata:
   title: Using Jupyter and other preinstalled tools
   description: Use the preinstalled tools in the DSVM to perform data dscience

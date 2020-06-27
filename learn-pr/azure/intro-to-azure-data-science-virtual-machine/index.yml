@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn-pr.intro-to-azure-data-science-virtual-machine
+uid: learn.azure.intro-to-data-science-virtual-machine
 metadata:
-  title: intro-to-azure-data-science-virtual-machine
+  title: intro-to-data-science-virtual-machine
   description: Learn how to create and connect to an Azure-based virtual machine preloaded with data science and machine learning tools
   ms.date: 2020-07-01
   author: lobrien
   ms.author: laobri
   ms.topic: tutorial
   ms.service: machine-learning # Template had ms.prod. TODO: Confirm switch is okay for Learn
-title: intro-to-azure-data-science-virtual-machine
+title: intro-to-data-science-virtual-machine
 summary: Create, connect to, and share data among users on a Data Science Virtual Machine, preloaded with data science and machine learning tools
 abstract: Azure virtual machines are a fast way to use familiar operating systems and tools on powerful hardware. The Data Science Virtual Machine is configured with applications, frameworks, and libraries for data science and machine learning. You'll learn how to create and connect to a DSVM, how to access it with your choice of command-line or graphical interfaces, and how to share data and projects between users. 
 prerequisites: An Azure subscription. If you don’t have an Azure subscription, create a free account before you begin. Try the [free or paid version of Azure Machine Learning](https://aka.ms/AMLFree) today. 
@@ -24,10 +24,10 @@ products:
   - azure-machine-learning 
   # - azure-virtual-machines, azure-linux-virtual-machines, azure-virtual-windows-machines TODO: ? 
 units:
-  - learn-pr.intro-to-azure-data-science-virtual-machine.introduction
-  - learn-pr.intro-to-azure-data-science-virtual-machine.what-is-the-data-science-virtual-machine
-  - learn-pr.intro-to-azure-data-science-virtual-machine.create-a-data-science-virtual-machine
-  - learn-pr.intro-to-azure-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
-  - learn-pr.intro-to-azure-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
+  - learn-pr.intro-to-data-science-virtual-machine.introduction
+  - learn-pr.intro-to-data-science-virtual-machine.what-is-the-data-science-virtual-machine
+  - learn-pr.intro-to-data-science-virtual-machine.create-a-data-science-virtual-machine
+  - learn-pr.intro-to-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
+  - learn-pr.intro-to-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
 badge:
-  uid: learn-pr.intro-to-azure-data-science-virtual-machine.badge
+  uid: learn-pr.intro-to-data-science-virtual-machine.badge
