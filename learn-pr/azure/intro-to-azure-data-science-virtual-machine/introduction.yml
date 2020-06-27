@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.intro-to-azure-data-science-virtual-machine.introduction
+uid: learn.azure.intro-to-data-science-virtual-machine.introduction
 metadata:
   title: Introduction to the Data Science Virtual Machine
   description: You'll learn the features of the Data Science Virtual Machine and the options available for creating them. 

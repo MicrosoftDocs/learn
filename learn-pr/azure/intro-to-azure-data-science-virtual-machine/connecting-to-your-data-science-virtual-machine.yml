@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.intro-to-azure-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
+uid: learn-pr.intro-to-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
 metadata:
   title: Connecting to your Data Science Virtual Machine
   description: Connect to your DSVM using both command line and graphical clients
