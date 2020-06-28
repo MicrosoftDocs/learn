@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-central
 durationInMinutes: 10 # dummy number at present
 content: |
-  [!include[](includes/7-exercise-set-room-virtual-thermostat-azure-iot-device-twins.md)]
+  [!include[](includes/10-exercise-set-room-virtual-thermostat-azure-iot-device-twins.md)]
