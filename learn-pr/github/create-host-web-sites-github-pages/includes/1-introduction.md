@@ -18,3 +18,5 @@ In this module, you will:
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
+
+It is recommended that you complete [Communicate effectively on GitHub by using Markdown](/learn/modules/communicate-using-markdown) before beginning this module.
