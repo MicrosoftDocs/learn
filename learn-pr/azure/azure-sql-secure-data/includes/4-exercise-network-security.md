@@ -55,9 +55,7 @@ You can also use commands `az sql server firewall-rule` to create, delete, and v
 
     Now that you're set up, you can list your server's firewall settings with the following command, after filling in your resource group name (e.g. learn-2e3155n-fjj5302...) and server name (e.g. aw-server443651):  
 
-    > Tip: You can use the **Tab** key on Windows to autocomplete. E.g. for Resource Group, if you only have one, you can type `L` + `Tab`.  
-
-    ```bash
+    ```powershell
     az sql server firewall-rule list -g <rgn>Sandbox resource group name</rgn> -s $logical_server
     ```
 
