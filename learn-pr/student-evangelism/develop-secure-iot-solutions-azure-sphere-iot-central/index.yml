@@ -47,4 +47,7 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-connect-room-environment-monitor
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-set-virtual-thermostat-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-set-room-virtual-thermostat-azure-iot-device-twins
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-remote-reboot-device
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-remote-reboot-device
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.summary
 

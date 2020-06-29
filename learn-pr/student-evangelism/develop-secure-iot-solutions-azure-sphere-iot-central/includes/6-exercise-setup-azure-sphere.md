@@ -143,8 +143,7 @@ You'll configure the Azure Sphere for networking. Hence, you can receive cloud u
 
 ## Clone the Azure Sphere Learning Path
 
->  [!NOTE]
->
+> [!NOTE]
 > On Windows, clone the *Azure Sphere Learning Path* to a directory close to the root directory on your computer. For example **c:\lab**. The reason is the Azure Sphere build process uses CMake which does not support Windows 10 long path/folder names.
 
 ```

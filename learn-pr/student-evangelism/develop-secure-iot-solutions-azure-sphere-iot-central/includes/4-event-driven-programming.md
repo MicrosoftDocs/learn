@@ -4,7 +4,7 @@ In this unit, you'll learn about event driven programming.
 
 Event Timers generate events which are bound to handler functions which implement desired actions. For example, blink an LED every second, or read a sensor every 10 seconds. [Event-driven programming](https://en.wikipedia.org/wiki/Event-driven_programming) helps to simplify application design.
 
-[![img](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/raw/master/zdocs_vs_code_iot_central/Lab_1_Visual_Studio_and_Azure_Sphere/resources/timer-events.png)](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs_vs_code_iot_central/Lab_1_Visual_Studio_and_Azure_Sphere/resources/timer-events.png)
+![The illustration shows event timers concept.](../media/timer-events.png)
 
 The labs use event timers extensively, so there is a generalized model to simplify working with timers. There are two types of timers, **periodic timers**, and **one-shot timers**.
 
@@ -126,4 +126,3 @@ Remember to add this new peripheral to the **peripheral set**. Adding the periph
 ```
 Peripheral* peripheralSet[] = { &buttonA, &buttonB, &led1, &led2, &networkConnectedLed, &fanControl };
 ```
-

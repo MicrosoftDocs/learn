@@ -1,12 +1,10 @@
 In this unit, you'll learn how to control an Azure Sphere application using Azure IoT Central Properties. You will set the desired temperature from IoT Central Dashboard and it will act upon the Azure Sphere device as a thermostat in a room.
 
-This unit will cover **Azure IoT Device Twins** and explain **DeviceTwinBindings** to simplify the implementation of Azure IoT.
-
 ## Azure IoT cloud to device communications
 
-1. [Direct Methods](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods) for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
-2. [Device Twins](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins) are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
-3. [Cloud-to-device](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-messages-c2d) messages are for one-way notifications to the device app.
+1. **Direct Methods** for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
+2. ***Device Twins** are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
+3. **Cloud-to-device** messages are for one-way notifications to the device app.
 
 This unit will cover **Azure IoT Device Twins** and explain **DeviceTwinBindings** to simplify the implementation of Azure IoT.
 
@@ -36,11 +34,7 @@ The following outlines how Azure IoT Central uses Device Twins to set properties
 4. The device sends a reported property message back to Azure IoT. In this example, the device would report the new desired temperate.
 5. Azure IoT Central queries and displays the devices reported property data.
 
-[![img](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/raw/master/zdocs_vs_code_iot_central/Lab_3_Control_Device_with_Device_Twins/resources/device-twin-configuration-pattern.png)](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs_vs_code_iot_central/Lab_3_Control_Device_with_Device_Twins/resources/device-twin-configuration-pattern.png)
-
-For more information, refer to the [Understand and use device twins in IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins) article.
-
-------
+![The illustration shows device twin configuration pattern.](../media/device-twin-configuration-pattern.png)
 
 ## Device Twin Bindings
 
@@ -81,7 +75,7 @@ The following example declares an **actualTemperature** device twin property of 
 ```
 static LP_DEVICE_TWIN_BINDING actualTemperature = {
 		.twinProperty = "ActualTemperature",
-		.twinType = LP_TYPE_FLOAT 
+		.twinType = LP_TYPE_FLOAT
 };
 ```
 
@@ -90,6 +84,17 @@ The ActualTemperature reported property message is sent to IoT Central by callin
 ```
 lp_deviceTwinReportState(&actualTemperature, &last_temperature); // TwinType = LP_TYPE_FLOAT
 ```
+
+## Azure IoT Central device properties
+
+Azure IoT Central device properties are defined in Device templates.
+
+1. From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
+2. Click on **Interface** to list the interface capabilities.
+3. Scroll down and expand the **Actual Temperature** capability.
+4. Review the definition of **Actual Temperature**. The capability type is **Property**, the Schema type is **Float**, and the property is **Writeable**. Writeable means this property is enabled for Cloud to Device updates.
+
+![The illustration shows device properties.](../media//iot-central-device-template-interface-led1.png)
 
 ## Working with Device Twins
 
