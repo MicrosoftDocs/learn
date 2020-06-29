@@ -24,6 +24,5 @@ modules:
 - learn.introduction-to-regression
 - learn.neural-networks
 - learn.deep-learning
-- learn.unsupervised-learning
 trophy:
   uid: learn.ml-crash-course.trophy

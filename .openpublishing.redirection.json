@@ -1974,6 +1974,31 @@
       "source_path": "learn-pr/ai-school/introduction-to-classification/7-testing-your-predictions.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/3-exercise-k-means.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/2-k-means-clustering.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
+      "redirect_document_id": true
     }
   ]
 }
