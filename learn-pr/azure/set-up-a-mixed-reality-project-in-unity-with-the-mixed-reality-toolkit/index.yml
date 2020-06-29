@@ -2,17 +2,21 @@
 uid: learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit
 metadata:
   title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit 
-  description: Learn how to 
+  description: Import the Mixed Reality Toolkit into your mixed reality project to manipulate an object using hand interactions. 
   ms.date: 06/04/2020
   author: "aprilspeight"
   ms.author: "apspeigh"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
-summary: Learn how to 
+summary: Import the Mixed Reality Toolkit into your mixed reality project to manipulate an object using hand interactions.
 abstract: |
-  In this module you will:
-  - Learn about X
+  By the end of this module you will be able to:
+  - Configure Unity for Windows Mixed Reality Development
+  - Import the MRTK foundation package into Unity
+  - Add MRTK to a Unity scene
+  - Compare MRTK input sources
+  - Manipulate holograms using ObjectManipulator
 iconUrl: /learn/achievements/undefined.svg
 levels:
 - beginner
@@ -20,7 +24,11 @@ roles:
 - developer
 products:
 - vs
-prerequisites: None
+prerequisites: |
+  - A Windows 10 PC configured with the correct tools (https://docs.microsoft.com/en-us/windows/mixed-reality/install-the-tools)
+  - Windows 10 SDK 10.0.18362.0 or later
+  - Unity Hub with Unity 2019.2.X installed
+  - Basic familiarity of Unity - Unity interface, create a scene, import a package and add GameObjects to a scene
 units:
 - learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.1-introduction
 - learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.2-configure-unity-for-windows-mixed-reality
