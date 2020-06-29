@@ -15,7 +15,7 @@ Before diving into the exercise, we have first to prepare the code and environme
 1. Copy and paste the command below in the terminal on the right to prepare the Node.js environment:
 
     ```bash
-    source <(curl -s https://aka.ms/install-node-lts)
+    source <(curl -Ls https://aka.ms/install-node-lts)
     ```
 
 1. Once everything has finished installing, create a new JavaScript file with:
