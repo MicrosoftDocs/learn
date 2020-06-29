@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-files.9-exercise-reading-and-writing-to-files
+uid: learn.azure.nodejs-files.9-exercise-read-write-files
 title: Exercise - reading and writing to files
 metadata:
   title: Exercise - reading and writing to files
@@ -15,4 +15,4 @@ azureSandbox: true
 # -- End sandbox --
 durationInMinutes: 5
 content: |
-  [!include[](includes/9-exercise-reading-and-writing-to-files.md)]
+  [!include[](includes/9-exercise-read-write-files.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.nodejs.files
+uid: learn.azure.nodejs-files
 metadata:
   title: Working with files and directories with Node.js
   description: Build an app that manipulates files and directories with Node.js.
@@ -27,14 +27,14 @@ products:
 prerequisites: None
 units:
   - learn.azure.nodejs-files.1-introduction
-  - learn.azure.nodejs-files.2-working-with-the-file-system
-  - learn.azure.nodejs-files.3-exercise-working-with-the-file-system
-  - learn.azure.nodejs-files.4-working-with-paths
-  - learn.azure.nodejs-files.5-exercise-working-with-paths
-  - learn.azure.nodejs-files.6-creating-files-and-directories
-  - learn.azure.nodejs-files.7-exercise-creating-files-and-directories
-  - learn.azure.nodejs-files.8-reading-and-writing-to-files
-  - learn.azure.nodejs-files.9-exercise-reading-and-writing-to-files
+  - learn.azure.nodejs-files.2-file-system
+  - learn.azure.nodejs-files.3-exercise-file-system
+  - learn.azure.nodejs-files.4-paths
+  - learn.azure.nodejs-files.5-exercise-paths
+  - learn.azure.nodejs-files.6-create-files-directories
+  - learn.azure.nodejs-files.7-exercise-create-files-directories
+  - learn.azure.nodejs-files.8-read-write-files
+  - learn.azure.nodejs-files.9-exercise-read-write-files
   - learn.azure.nodejs-files.10-summary
 badge:
-  uid: learn.learn.azure.nodejs.files.badge
+  uid: learn.azure.nodejs-files.badge

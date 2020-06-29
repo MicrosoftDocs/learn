@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-files.3-exercise-working-with-the-file-system
+uid: learn.azure.nodejs-files.3-exercise-file-system
 title: Exercise - Working with the file system
 metadata:
   title: Exercise - Working with the file system
@@ -15,4 +15,4 @@ azureSandbox: true
 # -- End sandbox --
 durationInMinutes: 7
 content: |
-  [!include[](includes/3-exercise-working-with-the-file-system.md)]
+  [!include[](includes/3-exercise-file-system.md)]

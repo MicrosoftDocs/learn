@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-files.6-creating-files-and-directories
+uid: learn.azure.nodejs-files.6-create-files-directories
 title: Creating files and directories
 metadata:
   title: Creating files and directories
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-creating-files-and-directories.md)]
+  [!include[](includes/6-create-files-directories.md)]
