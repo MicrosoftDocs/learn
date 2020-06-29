@@ -42,18 +42,19 @@ function printForeignValues(value, sourceCurrency) {
 setEchangeRate(0.88, 'USD', 'EUR');
 setEchangeRate(107.4, 'USD', 'JPY');
 printForeignValues(10, 'EUR');
-
 ```
+
+Save this file with `Ctrl+S` (Windows, Linux) or `Cmd+S` (Mac).
 
 ## Create a launch configuration
 
 We are going to use the debugger a lot, so let's create a launch configuration for your app. Go to the **Run** tab in VS Code, click on **create a launch.json file** then select **Node.js**.
 
-This will create the file `.vscode/launch.json` in your project. You can then edit this file to further customize how your program should be started for debugging. By default, it creates a launch configuration to execute an `index.js` file in your project's root.
+This will create the file `.vscode/launch.json` in your project. You can then edit this file to further customize how your program should be started for debugging. By default, it creates a launch configuration to execute the currently opened file, `currency.js` in our case.
 
 :::image source="../media/launch-configuration.png" alt-text="VS Code debugger execution controls":::
 
-Edit the path and name of the program entry point to match your setup. In our case replace `${workspaceFolder}/index.js` by `${workspaceFolder}/currency.js`.
+Check that the path and name of the program entry point matches your setup.
 
 > [!NOTE]
 > You can click on **Add Configuration** if you want to create different launch configurations for your project.
