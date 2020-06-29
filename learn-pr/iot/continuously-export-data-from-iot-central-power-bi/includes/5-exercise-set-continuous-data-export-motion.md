@@ -1,4 +1,4 @@
-In this unit, you first create a Azure Blob storage resource, including one container, and then you create a new data export from your IoT Central app. Finally, you test that the telemetry data is reaching the storage container.
+In this unit, you first create an Azure Blob storage resource, including one container, and then you create a new data export from your IoT Central app. Finally, you test that the telemetry data is reaching the storage container.
 
 It's essential to create the resources in the correct order: storage first, and then data export.
 
