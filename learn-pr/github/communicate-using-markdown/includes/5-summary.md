@@ -6,6 +6,8 @@ You learned about:
 - Determining where and how to use Markdown in a GitHub repository
 - Learning about syntax extensions available in GitHub (GitHub-flavored Markdown)
 
+Now that you know how to use Markdown on GitHub, learn to [Create and host web sites by using GitHub Pages](/learn/modules/create-host-web-sites-github-pages/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

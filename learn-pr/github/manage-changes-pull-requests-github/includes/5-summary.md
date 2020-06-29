@@ -9,6 +9,8 @@ You learned about:
 - Requesting pull request reviews
 - Accepting changes introduced by a pull request review
 
+Now that you're familiar with merging commits using pull requests, learn to [Settle competing commits by using merge conflict resolution on GitHub](/learn/modules/resolve-merge-conflicts-github/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

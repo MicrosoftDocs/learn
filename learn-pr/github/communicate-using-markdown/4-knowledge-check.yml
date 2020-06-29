@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check what you've learned.
-  ms.date: 06/09/2020
+  ms.date: 06/26/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -17,23 +17,23 @@ quiz:
   questions:
   - content: "Which of the following Markdown snippets would produce this text: *Hello, **world**!*?"
     choices:
-    - content: "\\*Hello, \\*world\\*!\\*"
+    - content: "`*Hello, *world*!*`"
       isCorrect: false
       explanation: "This would produce *Hello, *world*!*."
-    - content: "\\*\\*Hello, \\*world\\*!\\*\\*"
+    - content: "`**Hello, *world*!**`"
       isCorrect: false
       explanation: "This would produce **Hello, *world*!**."
-    - content: "\\*Hello, \\*\\*world\\*\\*!\\*"
+    - content: "`*Hello, **world**!*`"
       isCorrect: true
-      explanation: "Correct! Remember that you can also use underscores (`\\_`) instead of asterisks if you prefer."
-  - content: "How do you print certain characters, like asterisks (`\\*`) and underscores (`\\_`), literally on your output?"
+      explanation: "Correct! Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
+  - content: "How do you print certain characters, like asterisks (`*`) and underscores (`_`), literally on your output?"
     choices:
-    - content: "Use three in a row, like `\\*\\*\\*` or `\\_\\_\\_`."
+    - content: "Use three in a row, like `***` or `___`."
       isCorrect: false
       explanation: "This won't get you the results you're looking for."
-    - content: "Escape them with a backslash, like `\\\\\\*` or `\\\\\\_`."
+    - content: "Escape them with a backslash, like `\\*` or `\\_`."
       isCorrect: true
-      explanation: "You can also escape other reserved characters, including `\\``, `\\{`, and `\\#`, using backslashes."
+      explanation: "You can also escape other reserved characters, including `{` and `#`, using backslashes."
     - content: "Unfortunately, this is not supported at this time."
       isCorrect: false
       explanation: "This question was written in Markdown and uses those characters, so it's definitely possible."
