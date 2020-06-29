@@ -40,7 +40,6 @@ modules:
 - learn.reactors.join-clean-data-deep-dive
 - learn.reactors.supervised-learning-regression
 - learn.introduction-to-regression
-- learn.introduction-to-classification
 - learn.reactors.unsupervised-learning-clustering
 trophy:
   uid: learn.reactors.machine-learning-three-basic-pillars.trophy
