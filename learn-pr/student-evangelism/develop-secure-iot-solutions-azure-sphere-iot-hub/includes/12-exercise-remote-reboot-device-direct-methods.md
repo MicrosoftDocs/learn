@@ -50,7 +50,7 @@
 
 ## Testing IoT Hub direct methods
 
-We are going to use the Azure command-line tool to invoked the Azure IoT Hub direct method. For more information see [invoke-device-method](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-invoke-device-method).
+We are going to use the Azure command-line tool to invoked the Azure IoT Hub direct method. For more information see [invoke-device-method](https://docs.microsoft.com/cli/azure/ext/azure-cli-iot-ext/iot/hub?view=azure-cli-latest#ext-azure-cli-iot-ext-az-iot-hub-invoke-device-method).
 
 Follow these steps to invoke the **resetDevice** direct method which will restart the device:
 

@@ -43,7 +43,7 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.event-driven-programming
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-setup-azure-sphere
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-setup-azure-sphere
-- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-connect-monitor-iot-central
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-connect-monitor-iot-hub
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-connect-room-environment-monitor
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-set-virtual-thermostat-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-set-room-virtual-thermostat-azure-iot-device-twins
