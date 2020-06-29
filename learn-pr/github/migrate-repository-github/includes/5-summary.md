@@ -7,6 +7,8 @@ You learned about:
 - Creating important Git files like a `.gitignore`
 - Importing your project to GitHub
 
+Now that you have your project on GitHub, learn to [Manage an InnerSource program by using GitHub](/learn/modules/manage-innersource-program-github/) and [Create an open-source program by using GitHub best practices](/learn/modules/create-open-source-program-github/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

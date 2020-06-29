@@ -8,6 +8,8 @@ You learned about:
 - Customizing your site
 - Creating and editing blog posts
 
+Now that you know how to use GitHub Pages to support your projects, learn to [Manage software delivery by using a release based workflow on GitHub](/learn/modules/release-based-workflow-github/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

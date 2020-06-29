@@ -19,3 +19,5 @@ In this module, you will:
 - A GitHub account
 - The ability to navigate and edit files in GitHub
 - Familiarity with pull requests
+
+This module builds on the concepts discussed in [Manage an InnerSource program by using GitHub](/learn/modules/manage-innersource-program-github). It assumes you have already completed that module first. 
