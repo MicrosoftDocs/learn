@@ -40,7 +40,7 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
 
 ## Set up easy file access with ADS  
 
-    Now that you're connected, you might want an easy way to access scripts and Jupyter notebooks. A Jupyter notebook (often referred to just as "Notebooks") is a way of integrating runnable code with text. If you aren't familiar with Jupyter notebooks, you will be soon.
+Now that you're connected, you might want an easy way to access scripts and Jupyter notebooks. A Jupyter notebook (often referred to just as "Notebooks") is a way of integrating runnable code with text. If you aren't familiar with Jupyter notebooks, you will be soon.
 
 1. First, in ADS, select **File > Open Folder**.  
 
