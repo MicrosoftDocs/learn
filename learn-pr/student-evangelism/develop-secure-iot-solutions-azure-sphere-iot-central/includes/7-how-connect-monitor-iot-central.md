@@ -4,7 +4,7 @@ The components for this unit:
 
 **Azure IoT:** Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This module focuses on Azure IoT Central.
 
-This project leverages the [Azure IoT Hub Device Provisioning Service (PDS)](https://docs.microsoft.com/en-gb/azure-sphere/app-development/use-azure-iot), which is included with Azure IoT Central. The Device Provisioning Service (DPS) enables zero-touch, just-in-time, large-scale device provisioning.
+This project leverages the [Azure IoT Hub Device Provisioning Service (PDS)](https://docs.microsoft.com/azure-sphere/app-development/use-azure-iot), which is included with Azure IoT Central. The Device Provisioning Service (DPS) enables zero-touch, just-in-time, large-scale device provisioning.
 
 **Azure IoT Central:  **IoT Central is an IoT application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central/) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 

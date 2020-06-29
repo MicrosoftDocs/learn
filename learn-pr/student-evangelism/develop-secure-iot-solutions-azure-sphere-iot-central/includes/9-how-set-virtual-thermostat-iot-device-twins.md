@@ -4,9 +4,9 @@ This unit will cover **Azure IoT Device Twins** and explain **DeviceTwinBindings
 
 ## Azure IoT cloud to device communications
 
-1. [Direct Methods](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-direct-methods?WT.mc_id=github-blog-dglover) for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
-2. [Device Twins](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins?WT.mc_id=github-blog-dglover) are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
-3. [Cloud-to-device](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-messages-c2d?WT.mc_id=github-blog-dglover) messages are for one-way notifications to the device app.
+1. [Direct Methods](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-direct-methods) for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
+2. [Device Twins](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins) are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
+3. [Cloud-to-device](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-messages-c2d) messages are for one-way notifications to the device app.
 
 This unit will cover **Azure IoT Device Twins** and explain **DeviceTwinBindings** to simplify the implementation of Azure IoT.
 
@@ -38,7 +38,7 @@ The following outlines how Azure IoT Central uses Device Twins to set properties
 
 [![img](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/raw/master/zdocs_vs_code_iot_central/Lab_3_Control_Device_with_Device_Twins/resources/device-twin-configuration-pattern.png)](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path/blob/master/zdocs_vs_code_iot_central/Lab_3_Control_Device_with_Device_Twins/resources/device-twin-configuration-pattern.png)
 
-For more information, refer to the [Understand and use device twins in IoT Hub](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-devguide-device-twins?WT.mc_id=github-blog-dglover) article.
+For more information, refer to the [Understand and use device twins in IoT Hub](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-device-twins) article.
 
 ------
 
