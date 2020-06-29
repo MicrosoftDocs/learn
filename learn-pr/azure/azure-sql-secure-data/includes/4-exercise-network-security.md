@@ -39,38 +39,26 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
 You can also use commands `az sql server firewall-rule` to create, delete, and view server-level firewall rules. You can use the Azure CLI through the command-line of your Azure VM or through a PowerShell notebook. For this part of the exercise, you'll experiment with the Azure Cloud Shell.  
 
-1. Connect to the Azure Cloud Shell
+1. Configure the Azure Cloud Shell
 
-    Return to the Azure portal. In the top bar, select the Azure Cloud Shell button.  
+    You can access the Azure Cloud Shell through the portal, but in this unit, you'll leverage the built-in terminal to your right, which is essentially the same thing.
 
-    ![Navigate to Azure Cloud Shell](../media/cloudshell.png)  
+    In order to configure your environment, run the following:  
 
-    Then, you can select Bash or PowerShell. Select **Bash**.  
+    ```powershell
+    $database_name = "AdventureWorks"
+    $server = Get-AzureRmSqlServer -ResourceGroupName <rgn>Sandbox resource group name</rgn>
+    $logical_server = $server.ServerName
+    ```
 
-    If this is your first time using the Azure Cloud Shell, you may be prompted to select a storage account. If you are, select **Show advanced settings**, and select an existing storage account in **your** existing resource group for the workshop. For "File share" select **Create new** and call it **fsID** where ID is your unique ID for the module. Finally, select **Create Storage**.  
-
-    ![Connect storage to Azure Cloud Shell](../media/mountstorage.png)  
-
-    More information about the Azure Cloud Shell can be found in the [documentation](https://docs.microsoft.com/azure/cloud-shell/overview).  
-
-    You should now see a view similar to below.  
-
-    ![Azure Cloud Shell Bash view](../media/acsbash.png)  
-
-2. Configure subscription connection
-
-    Run `az account show`. The result should be something similar to `Concierge Subscription`, which is associated with the sandbox you're using.
-
-    If you were **not** doing this through the sandbox environment, you could run `az account list` to find the name of the subscription you want to drill into. You can then run `az account set --subscription 'my-subscription-name'` to set the default subscription for this Azure Cloud Shell session. You can finally confirm this worked by running `az account show`.  
-
-3. Review firewall rules
+1. Review firewall rules
 
     Now that you're set up, you can list your server's firewall settings with the following command, after filling in your resource group name (e.g. learn-2e3155n-fjj5302...) and server name (e.g. aw-server443651):  
 
     > Tip: You can use the **Tab** key on Windows to autocomplete. E.g. for Resource Group, if you only have one, you can type `L` + `Tab`.  
 
     ```bash
-    az sql server firewall-rule list -g <ResourceGroup> -s <Server>
+    az sql server firewall-rule list -g <rgn>Sandbox resource group name</rgn> -s $logical_server
     ```
 
     Your client IP address rule should match what you saw in the previous step using the Azure portal.  
@@ -80,8 +68,6 @@ You can also use commands `az sql server firewall-rule` to create, delete, and v
     There are other commands available for creating, deleting, and updating rules, which you can explore [here](https://docs.microsoft.com/cli/azure/sql/server/firewall-rule?view=azure-cli-latest).  
 
     Note that this method of setting the firewall rules (using the Azure portal or Azure Cloud Shell) grants your client IP address access to all of the databases that are in that logical server. After you've configured the server-level firewall rule, which you did above, you can optionally configure database-level firewall rules that apply to individual databases. This can only be done with T-SQL, using the command `EXECUTE sp_set_database_firewall_rule`. For more information, see the references in the summary of this module.  
-
-    You can close the Azure Cloud Shell window now.  
 
 ### Dive deeper
 

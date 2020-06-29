@@ -1,4 +1,4 @@
-Once your Azure SQL Database or Azure SQL Managed Instance is secured one the networking, authentication, and data protection levels, the final step is to understand how you're going to manage security on an ongoing basis. This includes auditing, monitoring, and, in the case of Azure SQL, Advanced data security.
+Once your Azure SQL Database or Azure SQL Managed Instance is secured on the networking, authentication, and data protection levels, the final step is to understand how you're going to manage security on an ongoing basis. This includes auditing, monitoring, and, in the case of Azure SQL, Advanced data security.
 
 ## Auditing
 

@@ -2,7 +2,7 @@ Once your network and identity access are configured and secure, the next topic 
 
 ## Data encryption
 
-Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the TLS minimum version (>1.0, >1.1, or >1.2). For Azure SQL Managed Instance, a TLS version of >1.2 is forced for outbound connection. The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust server certificate as a best practice.
+Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the TLS minimum version (>1.0, >1.1, or >1.2). For Azure SQL Managed Instance, a TLS version of >1.2 is forced for outbound connections. The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust server certificate as a best practice.
 
 Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new Azure SQL Databases, and can be configured for all deployment options via a switch in the Azure portal:  
 
