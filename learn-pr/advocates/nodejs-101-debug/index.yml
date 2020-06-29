@@ -11,7 +11,8 @@ metadata:
 title: Learn how to quickly debug your Node.js app
 summary: Learn how to efficiently debug your Node.js app using Visual Studio Code to fix your bugs quickly.
 abstract: |
-  In this module, you will learn how to:
+  By the end of this module, you will be able to:
+  
   - Use VS Code debugger with a Node.js program.
   - Create breakpoints and run your code step by step to find issues.
   - Inspect your program state at any execution step.
