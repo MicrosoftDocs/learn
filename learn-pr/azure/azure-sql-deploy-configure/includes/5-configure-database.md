@@ -2,7 +2,7 @@ Now that you've verified your deployment was successful and you know what resour
 
 ## Configure Azure SQL Managed Instance
 
-For Azure SQL Managed Instance, since it is essentially a managed SQL Server, many configurations available in SQL Server apply here. For example, you can configure using sp_configure and certain global trace flags, and you have options available around tempdb, model and master, and the ERRORLOG. You also have control over your network connectivity and configuration, which will be discussed shortly.
+For Azure SQL Managed Instance, since it is essentially a managed SQL Server, many configurations available in SQL Server apply here. For example, you can configure using sp_configure and certain global trace flags, and you have options available around tempdb, model, and master. You also have control over your network connectivity and configuration, which will be discussed shortly.
 
 ## Configure databases
 
@@ -30,6 +30,7 @@ If you're familiar with SQL Server, there are a few configurations that are rest
 * Startup parameters
 * Error reporting and customer feedback
 * `ALTER SERVER CONFIGURATION`
+* ERRORLOG configuration
 * "Mixed Mode" security is forced
 * Logon audit is done through SQL Audit
 * Server Proxy account is N/A
