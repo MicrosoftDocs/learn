@@ -142,3 +142,8 @@ achievements:
   title: Use deep learning models to make predictions about specialized data
   summary: Use deep learning models to make predictions about specialized data
   iconUrl: /learn/achievements/introduction-to-deep-learning.svg
+- uid: learn.neural-networks.badge
+  type: badge
+  title: Make predictions from complex data with neural networks
+  summary: Make predictions from complex data with neural networks
+  iconUrl: /learn/achievements/introduction-to-neural-networks.svg
