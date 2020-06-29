@@ -22,7 +22,6 @@ products:
 - azure
 modules:
 - learn.introduction-to-regression
-- learn.introduction-to-classification
 - learn.neural-networks
 - learn.deep-learning
 - learn.unsupervised-learning
