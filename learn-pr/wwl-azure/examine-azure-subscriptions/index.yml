@@ -3,7 +3,7 @@ uid: learn.wwl.examine-azure-subscriptions
 metadata:
   title: Examine Azure subscriptions
   description: "Picking the right subscription for you business needs will help you track and control costs as you build solutions in the cloud. AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 06/26/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   * Review the Azure free account.
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/examine-azure-subscriptions.svg
 hidden: true
 levels:
 - beginner

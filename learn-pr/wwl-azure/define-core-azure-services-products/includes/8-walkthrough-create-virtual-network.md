@@ -22,7 +22,7 @@ In this task, we will create a virtual network.
     | Name | **vnet1** |
     | Address space |**10.1.0.0/16** |
     | Subscription | Ensure **Concierge Subscription** is selected |
-    | Resource group | **[sandbox resource group name]** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | Location | **(US) East US** |
     | Subnet - Name | **default** |
     | Subnet Address range | **10.1.0.0/24** |
@@ -47,7 +47,7 @@ In this task, we will create two virtual machines in the virtual network.
    | Setting | Value | 
    | --- | --- |
    | Subscription | Choose **Concierge Subscription**  |
-   | Resource group |  **[sandbox resource group name]** |
+   | Resource group |  **<rgn>[sandbox resource group name]</rgn>** |
    | Virtual machine name | **vm1**|
    | Region | **(US) East US** |
    | Image | **Windows Server 2019 Datacenter** |
@@ -72,7 +72,7 @@ In this task, we will create two virtual machines in the virtual network.
 
     | Setting | Value |
     | --- | --- |
-    | Resource group | **[sandbox resource group name]** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | Virtual machine name |  **vm2** |
     | Virtual network | **vnet1** |
     | Public IP | (new) **vm2-ip** |
