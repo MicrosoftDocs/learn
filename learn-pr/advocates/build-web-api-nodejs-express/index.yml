@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.nodejs-http
+uid: learn.azure.build-web-api-nodejs-express
 metadata:
   title: Build a web API with Node.js and Express 
   description: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization.
@@ -9,10 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a web API with Node.js and Express 
-summary: Use the library Express to build a web API for Node.js 
+summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging and authentication/authorization.
 abstract: |
   By the end of this module, you’ll be able to:
-  - Describe the core concepts of the Web framework Express
+
+  - Describe the core concepts of the web framework Express
   - Configure middleware to control how a request is handled
   - Respond to HTTP requests with different types of content like text and JSON
   - Send data to an Express endpoint
@@ -26,18 +27,18 @@ products:
 prerequisites: |
   - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
   - Familiarity with editing text and code files in any text editor
-  - Know the basic about the HTTP protocol
+  - Basic familiarity with the HTTP protocol
   - Experience using the command line, including Git operations
 units:
-- learn.azure.nodejs-http.1-introduction
-- learn.azure.nodejs-http.2-introducing-express
-- learn.azure.nodejs-http.3-exercise-express
-- learn.azure.nodejs-http.4-express-routing
-- learn.azure.nodejs-http.5-exercise-express-routing
-- learn.azure.nodejs-http.6-express-middleware
-- learn.azure.nodejs-http.7-exercise-express-middleware
-- learn.azure.nodejs-http.8-knowledge-check
-- learn.azure.nodejs-http.9-summary
+- learn.azure.build-web-api-nodejs-express.1-introduction
+- learn.azure.build-web-api-nodejs-express.2-create-app
+- learn.azure.build-web-api-nodejs-express.3-exercise-create-app
+- learn.azure.build-web-api-nodejs-express.4-route-management
+- learn.azure.build-web-api-nodejs-express.5-exercise-route-management
+- learn.azure.build-web-api-nodejs-express.6-middleware
+- learn.azure.build-web-api-nodejs-express.7-exercise-middleware
+- learn.azure.build-web-api-nodejs-express.8-knowledge-check
+- learn.azure.build-web-api-nodejs-express.9-summary
 
 badge:
-  uid: learn.azure.nodejs-http.badge
+  uid: learn.azure.build-web-api-nodejs-express.badge

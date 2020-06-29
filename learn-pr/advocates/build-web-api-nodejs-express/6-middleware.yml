@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-http.6-express-middleware
+uid: learn.azure.build-web-api-nodejs-express.6-middleware
 title: Manage request lifecycle with middleware
 metadata:
   title: Manage request lifecycle with middleware
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-express-middleware.md)]
+  [!include[](includes/6-middleware.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-http.5-exercise-express-routing
+uid: learn.azure.build-web-api-nodejs-express.5-exercise-route-management
 title: Exercise - Route management
 metadata:
   title: Exercise - Route management
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-express-routing.md)]
+  [!include[](includes/5-exercise-route-management.md)]

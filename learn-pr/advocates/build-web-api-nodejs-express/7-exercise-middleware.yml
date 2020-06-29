@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-http.7-exercise-express-middleware
+uid: learn.azure.build-web-api-nodejs-express.7-exercise-middleware
 title: Exercise - Manage request lifecycle
 metadata:
   title: Exercise - Manage request lifecycle
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-exercise-express-middleware.md)]
+  [!include[](includes/7-exercise-middleware.md)]
