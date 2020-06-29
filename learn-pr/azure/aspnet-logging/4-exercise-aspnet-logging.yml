@@ -2,9 +2,9 @@
 uid: learn.azure.aspnet-logging.4-exercise-aspnet-logging
 title: Exercise - Implement logging in an ASP.NET web app
 metadata:
-  title: Exercise - 
+  title: Exercise - Implement logging in an ASP.NET web app
   description: Configure Log4Net in an ASP.NET web app, and send log data to an Azure storage account, and Application Insights.
-  ms.date: 06/15/2020
+  ms.date: 06/30/2020
   author: coderandhiker
   ms.author: chrisrt
   ms.topic: interactive-tutorial
