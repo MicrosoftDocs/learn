@@ -22,7 +22,10 @@ When building an API, it's common to construct it so that you have a number of r
 
    ```bash
    -| app.js
-   -| client.js
+   -| client-get.js
+   -| client-post.js
+   -| client-put.js
+   -| client-delete.js
    -| package.json
    ```
 
@@ -189,7 +192,7 @@ When building an API, it's common to construct it so that you have a number of r
    ```bash
    node client-post.js
    ```
- 
+
    This command will create a record. Next run this command to update the newly created record:
 
    ```bash
@@ -250,7 +253,7 @@ When building an API, it's common to construct it so that you have a number of r
 
    ```bash
    node client-delete.js
-   ``` 
+   ```
 
    The above should give the following output:
 
@@ -272,7 +275,7 @@ When building an API, it's common to construct it so that you have a number of r
    Connection closed
    ```
 
-Congratulations, you've managed to implement a resource `products` where you are able to do a full CRUD, that is **C**reate, **R**ead, **Update, and **D**elete data.
+Congratulations, you've managed to implement a resource `products` where you are able to do a full CRUD, that is **C**reate, **R**ead, **U**pdate, and **D**elete data.
 
 1. Implementing *CRUD* for a resource is common thing to do. Express has a method `route()` meant just for this purpose. By using `route()` method, your code will be grouped so that it's easier to read. So let's replace all the code you have in `app.js` with this code:
 
