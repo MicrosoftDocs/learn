@@ -1,13 +1,4 @@
-## Step 1: Understanding Azure IoT Central device properties
-
-Azure IoT Central device properties are defined in Device templates.
-
-1. From Azure IoT Central, navigate to **Device template**, and select the **Azure Sphere** template.
-2. Click on **Interface** to list the interface capabilities.
-3. Scroll down and expand the **Actual Temperature** capability.
-4. Review the definition of **Actual Temperature**. The capability type is **Property**, the Schema type is **Float**, and the property is **Writeable**. Writeable means this property is enabled for Cloud to Device updates.
-
-## Step 2: Build and deploy your application
+## Step 1: Build and deploy your application
 
 1. Start Visual Studio Code to open your project.
 
@@ -37,9 +28,11 @@ Azure IoT Central device properties are defined in Device templates.
 
 10. From Visual Studio Code, press F5 to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
-## Step 3: Expected Device Behavior
+## Step 2: Expected Device Behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
+
+![The illustration shows Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
 1. The RGB LED5 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. LED4 will turn yellow when connected to Azure.
@@ -48,6 +41,8 @@ Azure IoT Central device properties are defined in Device templates.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
+![The illustration shows Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
+
 1. The RGB LED 1 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. The network LED will turn red when connected to Azure.
 3. LED 4 will blink blue when telemetry is sent to IoT Central
@@ -55,12 +50,14 @@ Azure IoT Central device properties are defined in Device templates.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
+![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
+
 1. The green LED closest to the USB connector will start to blink
 2. Given this device has no builtin buttons then virtual **Button A** and **Button B** presses will be generated every 10 seconds. The blink rate will change and the **Actual Temperature** Device twin property in IoT Central will be updated.
 
 ------
 
-## Step 4: Display the actual temperature property
+## Step 3: Display the actual temperature property
 
 1. Switch to Azure IoT Central in your browser.
 
@@ -74,7 +71,9 @@ Azure IoT Central device properties are defined in Device templates.
 
    Virtual button press events are generated for Azure Sphere devices that do not have builtin buttons.
 
-## Step 5: Set the desired temperature
+![The illustration shows how to display telemetry.](../media/iot-central-display-telemetry.png)
+
+## Step 4: Set the desired temperature
 
 Setting the desired temperature is like setting a thermostat in a room. A desired temperature device twin property message is sent to the Azure Sphere where it will be acted upon.
 
@@ -90,3 +89,5 @@ To set the desired temperature:
 
 1. Update the **Desired Temperature** value.
 2. Save the Property. This will send the desired temperature property to the Azure Sphere. The blinking LED color may change depending on the desired temperature chosen.
+
+![The illustration shows display settings.](../media/iot-central-display-settings.png)

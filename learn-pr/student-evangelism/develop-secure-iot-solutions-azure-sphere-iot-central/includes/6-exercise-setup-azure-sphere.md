@@ -140,3 +140,22 @@ You'll configure the Azure Sphere for networking. Hence, you can receive cloud u
    ```
    azsphere device enable-development
    ```
+
+## Clone the Azure Sphere Learning Path
+
+> [!NOTE]
+> On Windows, clone the *Azure Sphere Learning Path* to a directory close to the root directory on your computer. For example **c:\lab**. The reason is the Azure Sphere build process uses CMake which does not support Windows 10 long path/folder names.
+
+```
+git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git
+```
+
+## Clone the Azure Sphere Samples
+
+The Azure Sphere samples repository includes a tool required for listing IoT Central network endpoints.
+
+Clone this repository into the same directory you cloned the Azure Sphere Developer Learning Path into.
+
+```
+git clone https://github.com/Azure/azure-sphere-samples.git
+```

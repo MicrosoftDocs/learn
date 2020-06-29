@@ -10,13 +10,19 @@ In this exercise, you'll build a High-Level Azure Sphere application that connec
 
 4. Expand the sidebar menu by clicking on the **Burger menu** icon.
 
+   ![iot-central-burger-menu](../media/iot-central-burger-menu.png)
+
 5. Navigate to Build and click **+ New application** to create a new Azure IoT Central application.
 
 6. Select **Custom app**
 
+   ![The illustration shows how to create custom app.](../media/iot-central-new-application.png)
+
 ### Create a new application
 
 1. Specify the **Application name**, the **URL**, select the **Free** pricing plan, and complete the registration form.
+
+   ![The illustration shows how to create a new application](../media/iot-central-new-application.png)
 
 2. Then click **Create**.
 
@@ -24,9 +30,11 @@ In this exercise, you'll build a High-Level Azure Sphere application that connec
 
 A device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to an Azure IoT Central application.
 
-1. Click **Device templates**, then **+ New**.
+1. Navigate to **Device templates**, then **+ New**.
 
 2. Click the **IoT device** template type.
+
+   ![The ilustration shows how to create IoT device templates.](../media/iot-central-new-iot-device-template.png)
 
 3. Create an **IoT Device** Template.
 
@@ -45,24 +53,46 @@ A device template is a blueprint that defines the characteristics and behaviors 
 
 ### Create a device visualization view
 
-1. Click **Views**. 
-2. Select **Visualizing the device**. 
-3. Select **Humidity**, **Pressure**, and **Temperature** telemetry items. 
+1. Navigate Device templates and click **Views**.
+
+   ![The illustration shows how to create a view.](../media/iot-central-create-a-view.png)
+
+2. Select **Visualizing the device**.
+
+   ![The illustration shows how add tile status](../media/iot-central-add-tile-status.png)
+
+3. Select **Humidity**, **Pressure**, and **Temperature** telemetry items.
+
+   ![The illustration shows telemetry items.](../media/iot-central-add-tile-environment.png)
+
 4. Click **Add Tile**.
+
 5. Click **Save** to save the view.
 
 ### Create a properties form
 
-1. Click **Views**.
-2. Click the **Editing device and cloud data** option. 
+1. Navigate to Device templates and click **Views**.
+
+2. Click the **Editing device and cloud data** option.
+
+   ![The illustration shows how to edit device and cloud data.](../media/iot-central-view-properties-create.png)
+
 3. Expand the **Properties** section.
+
 4. Select **all properties**. 
+
+   ![The illustration shows properties section.](../media/iot-central-add-tile-form.png)
+
 5. Click **Add Section**.
+
 6. Click **Save** to save the form.
 
 ### Publish the device template
 
 1. Click **Publish** to publish the template. Publishing the template makes it available for devices. 
+
+   ![The illustration shows how to publish device template.](../media/iot-central-template-publish.png)
+
 2. Next, confirm and click **Publish**
 
 ## Step 2: Link your Azure Sphere Tenant to IoT Central
@@ -73,7 +103,7 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 
 ### Download the tenant authentication CA certificate
 
-1. If you're using Windows, open an **Azure Sphere Developer Command Prompt **. If you're using Linux, open your terminal.
+1. If you're using Windows, open an **Azure Sphere Developer Command Prompt**. If you're using Linux, open your terminal.
 
 2. Make a note of the current directory, or change to the Azure Sphere Learning path directory. You'll need the name of this directory in the next step.
 
@@ -95,6 +125,8 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 
 4. Click the Refresh icon to the right of the Verification Code box to generate a verification code. Copy the verification code to the clipboard.
 
+   ![The illustration shows how to verify certificate.](../media/iot-central-certificate-verify.png)
+
 ### Verify the tenant CA certificate
 
 1. Return to the command prompt.
@@ -113,6 +145,8 @@ Devices claimed by your Azure Sphere tenant will be automatically enrolled when 
 
 2. When prompted, navigate to the validation certificate that you downloaded in the previous step and select it. When the verification process is complete, the Primary Certificate dialog box displays the Verified message. Click Close to dismiss the box.
 
+   ![The illustration shows verified certification.](../media/iot-central-certificate-verified.png)
+
 
 After you complete these steps, any device that is claimed into your Azure Sphere tenant will automatically be enrolled in your Azure IoT Central application when it first connects.
 
@@ -126,7 +160,7 @@ Follow these steps:
 
 1. Open the command prompt.
 
-2. Navigate to the **Azure Sphere Learning path** directory. Go to **AzureIoT**  then **Tools** directory. 
+2. Navigate to the **Azure Sphere Learning path** directory. Go to **AzureIoT**  then **Tools** directory.
 
    - On Windows, navigate to the Samples\AzureIoT\Tools\win-x64 directory.
    - On Linux, navigate to the Samples\AzureIoT\Tools\linux-x64 directory. On Linux, you may need to explicitly set execution permissions for the ShowIoTCentralConfig tool. From a terminal, run `chmod +x ShowIoTCentralConfig` to add execution permissions for the tool.
@@ -140,7 +174,7 @@ Follow these steps:
    | **API token**                                                | This can be generated from your IoT Central application. In the Azure IoT Central application select **Administration**, select **API Tokens**, select **Generate Token**, provide a name for the token (for example, "AzureSphereSample"), select **Administrator** as the role, and click **Generate**. Copy the token to the clipboard. The token starts with **SharedAccessSignature**. |
    | **ID Scope**                                                 | In the Azure IoT Central application, select **Administration** > **Device Connection** and then copy the **ID Scope** |
 
-4. Run the **ShowIoTCentralConfig** tool. Now follow the prompts that the tool provides, and copy the information from the output into the app_manifest.json file in Visual Studio.
+4. Run the **ShowIoTCentralConfig** tool. Now follow the prompts that the tool provides, and copy the information from the output into the app_manifest.json file in Visual Studio Code.
 
    > [!NOTE]
    > Your organization might require consent for the ShowIoTCentralConfig tool to access your Azure IoT Central data in the same way that the Azure API requires such consent.
@@ -207,9 +241,93 @@ These labs support developer boards from AVNET and Seeed Studio. You need to set
 
 4. Save the file. This will autogenerate the CMake cache.
 
-## Step 7: Configure the Azure Sphere Application
+## Step 7: Understanding Azure Sphere Security
+
+Applications on Azure Sphere are locked down by default. You must grant capabilities to the application. Granting capabilities is key to Azure Sphere security and is also known as the [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). You should only grant the capabilities the Azure Sphere application needs to run correctly, and no more.
+
+Application capabilities include what hardware can be accessed, what internet services can be called (including Azure IoT Central and the Azure Device Provisioning Service), and what inter-core communications are allowed.
+
+### Open the Application Manifest File
+
+From Visual Studio Code, open the **app_manifest.json** file. The resources this application can access are limited to those listed in the **Capabilities** section.
+
+> [!NOTE]
+> The following example is for the Avnet Azure Sphere device. The resource names and capabilities will differ depending on which Azure Sphere device you are using.
+
+```
+{
+  "SchemaVersion": 1,
+  "Name": "AzureSphereIoTCentral",
+  "ComponentId": "25025d2c-66da-4448-bae1-ac26fcdd3627",
+  "EntryPoint": "/bin/app",
+  "CmdArgs": [ ],
+  "Capabilities": {
+    "Gpio": [
+      "$BUTTON_A",
+      "$BUTTON_B",
+      "$LED1",
+      "$LED2",
+      "$NETWORK_CONNECTED_LED",
+      "$RELAY"
+    ],
+    "I2cMaster": [ "$I2cMaster2" ],
+    "PowerControls": [ "ForceReboot" ]
+  },
+  "ApplicationType": "Default"
+}
+```
+
+### Understanding pin mappings
+
+Each Azure Sphere manufacturer maps pins differently. Follow these steps to understand how the pins are mapped for your developer board.
+
+1. Ensure you have the **main.c** file open. Place the cursor on the line that reads **#include "hw/azure_sphere_learning_path.h"**, then press F12 to open the header file.
+
+2. Review the pin mappings set up for the Azure Sphere Learning Path using the Avnet Starter Kit.
+
+   > Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies) article.
+
+   ```
+   /* Copyright (c) Microsoft Corporation. All rights reserved.
+   Licensed under the MIT License. */
+   
+   // This file defines the mapping from the MT3620 reference development board (RDB) to the
+   // 'sample hardware' abstraction used by the samples at https://github.com/Azure/azure-sphere-samples.
+   // Some peripherals are on-board on the RDB, while other peripherals must be attached externally if needed.
+   // https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies
+   // to enable apps to work across multiple hardware variants.
+   
+   // This file is autogenerated from ../../azure_sphere_learning_path.json.  Do not edit it directly.
+   
+   #pragma once
+   #include "avnet_mt3620_sk.h"
+   
+   // Button A
+   #define BUTTON_A AVNET_MT3620_SK_USER_BUTTON_A
+   
+   // Button B
+   #define BUTTON_B AVNET_MT3620_SK_USER_BUTTON_B
+   
+   // LED 1
+   #define LED1 AVNET_MT3620_SK_USER_LED_BLUE
+   
+   // LED 2
+   #define LED2 AVNET_MT3620_SK_APP_STATUS_LED_YELLOW
+   
+   // AVNET: Network Connected
+   #define NETWORK_CONNECTED_LED AVNET_MT3620_SK_WLAN_STATUS_LED_YELLOW
+   
+   // Click Relay
+   #define RELAY AVNET_MT3620_SK_GPIO0
+   ```
+
+3. Next, from Visual Studio Code, open the main.c file to bring back into focus.
+
+## Step 8: Configure the Azure Sphere Application
 
 1. Open the **app_manifest.json** file
+
+   ![](../media/vs-code-open-app-manifest.png)
 
 2. Update the Azure IoT Central Application connection properties.
 
@@ -262,7 +380,7 @@ These labs support developer boards from AVNET and Seeed Studio. You need to set
 
 ------
 
-## Step 8: Understanding the Azure Sphere Application
+## Step 9: Understanding the Azure Sphere Application
 
 ### Sending telemetry to Azure IoT Central
 
@@ -316,13 +434,15 @@ static void SendMsgLedOn(char* message)
 
 ------
 
-## Step 9: Deploying the Application to Azure Sphere
+## Step 10: Deploying the Application to Azure Sphere
 
 ### Start the app build and deploy process
 
 1. Ensure main.c is open.
 
 2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
+
+   ![The illustration shows CMake status.](../media/vs-code-start-application.png)
 
 3. From Visual Studio Code, press F5 to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
@@ -337,9 +457,11 @@ static void SendMsgLedOn(char* message)
 > [!NOTE]
 > You may see a couple of *ERROR: failure to create IoTHub Handle* messages displayed. These messages occur while the connection to IoT Central is being negotiated.
 
-## Step 10: Expected Device Behavior
+## Step 11: Expected Device Behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
+
+![The illustration shows Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
 1. The blue LED will start to blink.
 2. LED3 will turn yellow when connected to Azure.
@@ -347,17 +469,21 @@ static void SendMsgLedOn(char* message)
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
+![The illustration shows Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
+
 1. The green LED will start to blink.
 2. The network LED will turn red when connected to Azure.
 3. Press **Button A** on the device to change the blink rate.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
+![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
+
 1. The green LED closest to the USB connector will start to blink.
 
 ------
 
-## Step 11: View the device telemetry on the Azure IoT Central Dashboard
+## Step 12: View the device telemetry on the Azure IoT Central Dashboard
 
 1. Switch back to Azure IoT Central in your web browser.
 
@@ -373,7 +499,7 @@ static void SendMsgLedOn(char* message)
 
 ------
 
-## Step 12: Migrate your device to the Azure Sphere Template
+## Step 13: Migrate your device to the Azure Sphere Template
 
 You need to **Migrate** the newly enrolled device to the **Azure Sphere** template. The template maps the JSON formatted telemetry to the dashboard.
 
@@ -381,9 +507,13 @@ You need to **Migrate** the newly enrolled device to the **Azure Sphere** templa
 
 2. Click **Migrate**.
 
+   ![The illustration shows how to migrate a device.](../media/iot-central-migrate-device.png)
+
 3. Select the Azure Sphere Template, and then click migrate.
 
-## Step 13: Display the Azure Sphere device telemetry
+   ![The illustration shows how to migrate a device.](../media/iot-central-migrate-select-template.png)
+
+## Step 14: Display the Azure Sphere device telemetry
 
 1. Click **Devices** on the sidebar.
 2. Select the **Azure Sphere** template.
@@ -392,3 +522,5 @@ You need to **Migrate** the newly enrolled device to the **Azure Sphere** templa
 5. Rename your device. Click the **Rename** button and give your device a friendly name.
 
 > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.
+
+![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
