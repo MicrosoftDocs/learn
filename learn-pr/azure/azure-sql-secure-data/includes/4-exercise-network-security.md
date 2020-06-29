@@ -63,8 +63,6 @@ You can also use commands `az sql server firewall-rule` to create, delete, and v
 
     Your client IP address rule should match what you saw in the previous step using the Azure portal.  
 
-    ![Firewall rules list](../media/fwlist1.png)
-
     There are other commands available for creating, deleting, and updating rules, which you can explore [here](https://docs.microsoft.com/cli/azure/sql/server/firewall-rule?view=azure-cli-latest).  
 
     Note that this method of setting the firewall rules (using the Azure portal or Azure Cloud Shell) grants your client IP address access to all of the databases that are in that logical server. After you've configured the server-level firewall rule, which you did above, you can optionally configure database-level firewall rules that apply to individual databases. This can only be done with T-SQL, using the command `EXECUTE sp_set_database_firewall_rule`. For more information, see the references in the summary of this module.  

@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Network security
 durationInMinutes: 10
-interactive: bash
+interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-network-security.md)]
