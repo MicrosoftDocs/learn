@@ -17,9 +17,9 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
     |Parameter  |Value  |
     |---------|---------|
-    |**Subscription**     |         |
+    |**Subscription**     |  Concierge subscription       |
     |**Resource group**     | <rgn>Sandbox resource group name</rgn>        |
-    |**Database name**     |         |
+    |**Database name**     | AdventurworksLT        |
     |**Server**     |  Select **Create new**, then fill out the  **New server** pane as follows and select **OK**:      |
     |         |**Server name**:  Enter a unique name for the server  |
     | | **Server admin login**: cloudadmin |
