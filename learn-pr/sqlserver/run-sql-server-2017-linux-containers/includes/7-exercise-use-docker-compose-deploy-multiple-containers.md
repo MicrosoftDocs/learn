@@ -57,7 +57,7 @@ You've been supplied with a **docker-compose.yml** file. You want to ensure that
 1. In the terminal, to change to the right folder, type the following command, and then press Enter:
 
     ```bash
-    cd ~/run-sql-server-linux-containers
+    cd ~/mslearn-run-sql-server-linux-containers
     ```
 
 1. To edit the **docker-compose.yml** file, type the following command, and then press Enter:
