@@ -8,7 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language
-title: Create the device app project
+title: Exercise - Create the device app project
 durationInMinutes: 12
 content: |
   [!include[](includes/3-create-device-app-project.md)]
