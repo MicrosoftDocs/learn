@@ -1999,6 +1999,51 @@
       "source_path": "learn-pr/ai-school/introduction-to-unsupervised-learning/4-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-cluster-models",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/3-cnn-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/2-deep-learning-applications.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/5-deep-learning-tools.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/4-exercise-CNNs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/7-exercise-rnns.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/6-rnn-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-deep-learning/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
     }
   ]
 }

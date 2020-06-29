@@ -137,3 +137,8 @@ achievements:
   title: Use unsupervised learning to analyze unlabeled data
   summary: Use unsupervised learning to analyze unlabeled data
   iconUrl: /learn/achievements/introduction-to-unsupervised-learning.svg
+- uid: learn.deep-learning.badge
+  type: badge
+  title: Use deep learning models to make predictions about specialized data
+  summary: Use deep learning models to make predictions about specialized data
+  iconUrl: /learn/achievements/introduction-to-deep-learning.svg
