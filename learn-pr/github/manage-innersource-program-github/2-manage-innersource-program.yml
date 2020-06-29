@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-innersource-program-github.2-manage-innersource-program
+title: How to manage a successful InnerSource program
+metadata:
+  title: How to manage a successful InnerSource program
+  description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-manage-innersource-program.md)]

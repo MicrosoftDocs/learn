@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-changes-pull-requests-github.3-review-pull-requests
+title:  Exercise - Reviewing pull requests
+metadata:
+  title:  Exercise - Reviewing pull requests
+  description: Learn how to manage changes to your repository source by using pull requests.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 35
+content: |
+  [!include[](includes/3-review-pull-requests.md)]

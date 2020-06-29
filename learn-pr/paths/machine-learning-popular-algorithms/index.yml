@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.reactors.machine-learning-popular-algorithms
+metadata:
+  title: 'Popular machine learning algorithms: Naive Bayes and PCA'
+  description: Learn how to use and learn from popular machine learning algorithms, like Naive Bayes and PCA.
+  ms.date: 06/30/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+  hidden: true
+title: 'Popular machine learning algorithms: Naive Bayes and PCA'
+summary: |
+  Welcome to the learning path for popular machine learning algorithms: Naive Bayes and PCA! The content in this learning path pairs with in-person workshops that run in Microsoft Reactor and are standalone learning resources. (You don't have to come to a workshop to benefit from these modules.)
+  Throughout this learning path, you'll be encouraged to test Python code in Visual Studio Code by using the Python extension and Jupyter Notebooks.
+
+  In this learning path, you'll:
+  - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning. 
+  - Learn how to use principal component analysis to learn about the contents of a food nutrition dataset.
+ 
+  This is complementary content for Microsoft Reactor Workshops.
+  
+prerequisites: |
+ - Introduction to Python for data science
+iconUrl: /learn/achievements/reactors/machine-learning-popular-algorithms.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+modules:
+- learn.reactors.text-classification-naive-bayes
+- learn.reactors.principal-component-analysis-food-composition
+trophy:
+  uid: learn.reactors.machine-learning-popular-algorithms.trophy

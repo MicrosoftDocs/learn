@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.migrate-repository-github.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is **not** an important consideration for migrating a source repository to GitHub?"
+    choices:
+    - content: "Do you want to keep all of the version control history?"
+      isCorrect: false
+      explanation: "Version control history is an important consideration for GitHub migrations. If you want to keep the history, it is recommended that you use the **GitHub Importer**. Otherwise, a clean cutover to *restart* version control may be a better option."
+    - content: "Is there project data that lives outside of the history you need to preserve, such as issues, discussions, or pull requests?"
+      isCorrect: false
+      explanation: "This information may be important context for understanding why past decisions were made. If you decide to preserve it, see the GitHub documentation for guidance on migrating this data from various systems."
+    - content: "Does GitHub support the programming language your project uses?"
+      isCorrect: true
+      explanation: "GitHub is agnostic when it comes to the purpose of source files it tracks. While there may be special treatment for popular file types and programming languages, you can still manage source files for any kind of project using the same core features."
+  - content: "Why is a `.gitignore` file important to your repository?"
+    choices:
+    - content: "It defines which users are not allowed to participate in your repository discussions and pull requests."
+      isCorrect: false
+      explanation: "Project authorization is managed through **Manage Access** under the **Security** tab of your repository."
+    - content: "It helps you enforce policy around which files are not to be tracked by version control."
+      isCorrect: true
+      explanation: "It specifically defines which files and directories should be excluded from version control. This is useful for keeping sensitive data, build output, and other files out of your repository."
+    - content: "It's just a token file required by GitHub to make sure you're following the migration instructions closely. If you ignore it, your repository migration will fail."
+      isCorrect: false
+      explanation: "`.gitignore` is an optional file that helps you manage which files are ignored by version control."
+  - content: "Which of the following is **not** a valid way to migrate a project to GitHub?"
+    choices:
+    - content: "Email a password protected zip of your project to GitHub support along with instructions for the repository's creation. Be sure to include the zip password in the same email."
+      isCorrect: true
+      explanation: "This is not yet a supported option."
+    - content: "Use the `git` client or other git-friendly tool to upload your project."
+      isCorrect: false
+      explanation: "This is a great option if your project does not yet have version control or if you do not want to retain history."
+    - content: "Use the **GitHub Importer** to import your project."
+      isCorrect: false
+      explanation: "This is a great option if your project has version control history that you want to preserve."

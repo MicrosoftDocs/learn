@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.upload-project-github.2-how-to-upload-to-github
+title: How do I prepare and upload an existing project to GitHub?
+metadata:
+  title: How do I prepare and upload an existing project to GitHub?
+  description: Learn to upload your existing project to GitHub.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-how-to-upload-to-github.md)]
