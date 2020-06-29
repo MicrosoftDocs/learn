@@ -1,4 +1,4 @@
-SQL Server and Azure SQL services has been known for the importance it puts on security, specifically as being enterprise-class. In this unit, you'll learn about the various security capabilities related to network security and identity and access. In the units that follow, you'll get hands on with some of these capabilities.
+SQL Server and Azure SQL services have been known for the importance it puts on security, specifically as being enterprise-class. In this unit, you'll learn about the various security capabilities related to network security and identity and access. In the units that follow, you'll get hands on with some of these capabilities.
 
 ![Enterprise-class security](../media/enterprisesecurity.png)
 
@@ -13,11 +13,11 @@ There are four main choices you have when you're securing your network for Azure
 * Virtual network rules
 * Private Link
 
-In addition to these main choices, you have the opportunity to block all public access (only with Private Link) and the option to force a minimum TLS version. For more information on these topics, you should refer to the documentation.
+In addition to these main choices, you have the opportunity to block all public access (only with Private Link) and the option to force a minimum TLS version.
 
 #### Allow access to Azure services
 
-During deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This makes it very easy to get up and running with getting Azure SQL Database connected to other services like Azure VMs or Azure App Services, because you're allowing anything that comes through Azure to have the potential to connect.
+During deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This makes it very easy to get up and running and get Azure SQL Database connected to other services like Azure VMs or Azure App Services, because you're allowing anything that comes through Azure to have the potential to connect.
 
 ![Allow access to Azure services](../media/allowaccess.png)
 
@@ -88,7 +88,7 @@ Even though the connection through T-SQL is coming through the private IP addres
 
 ### Private Link for Azure SQL Database
 
-You've seen how to configure the most secure network using Azure SQL Database with the public endpoint. This method of securing Azure SQL Database has been used for years. However, in 2019, Azure began moving towards a concept of a Private Link, which is more similar to the way that Azure SQL Managed Instance is deployed. Private Link allows you to connect to Azure SQL Database (and several other PaaS services) using a private endpoint, which means it has a private IP address within a specific VNet.  
+You've seen how to configure the most secure network using Azure SQL Database with the public endpoint. This method of securing Azure SQL Database has been used for years. However, in 2019, Azure began moving towards a concept of a Private Link, which is more similar to the way that Azure SQL Managed Instance is deployed. Private Link allows you to connect to Azure SQL Database (and several other PaaS offerings) using a private endpoint, which means it has a private IP address within a specific VNet.  
   
 ![Private endpoint connection](../media/privateendpoint.png)
 
@@ -148,7 +148,7 @@ Once you've worked out the networking access, the next layer to consider is iden
 
 ### Azure Role-Based Access Control (RBAC)
 
-All Azure type of operations for Azure SQL are controlled through RBAC. This is currently decoupled from SQL Security today, but you can think of it as security rights outside of the SQL Database or SQL Managed Instance with a scope including subscription, resource group, and resource. This will apply to operations in the Azure portal, Azure CLI, and Azure PowerShell. Azure RBAC allows for separation of duties between deployment, management and usage.
+All Azure types of operations for Azure SQL are controlled through RBAC. This is currently decoupled from SQL Security today, but you can think of it as security rights outside of the SQL Database or SQL Managed Instance with a scope including subscription, resource group, and resource. This will apply to operations in the Azure portal, Azure CLI, and Azure PowerShell. Azure RBAC allows for separation of duties between deployment, management and usage.
 
 There are built-in roles available to reduce need for higher level Azure RBAC roles like Owner or Contributor. Effectively, you can use these roles to have certain individuals deploy Azure SQL resources (or manage security polices) but grant other users actual access to user or manage the instance or database.  For example, a SQL Server contributor could deploy a server but assign an Azure SQL Database user to be the admin of the server and databases. The built-in roles include:  
 

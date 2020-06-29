@@ -1,16 +1,14 @@
 
 Ensuring security and compliance of your data is always a top priority. In this module, you'll learn how to use Azure SQL to secure your data, how to configure logins and users, how to use tools and techniques for monitoring security, how to ensure your data meets industry and regulatory compliance standards, and how to leverage the extra benefits and intelligence that is only available in Azure. We'll also cover some of the networking considerations for securing SQL.
 
-Note that this is the third module in the Azure SQL Fundamentals learning path. It is recommended to complete the Azure SQL introduction module before continuing here.
+Note that this is the third module in the Azure SQL Fundamentals learning path.
 
-Throughout the exercises, it's important to also read the accompanying text to the steps, but know that you can always come back to this page to review what you did at a later time.  
+At the end of this module, you should be able to:  
 
-In this module, the following topics will be discussed:  
-
-* Platform and network security
-* Access management and authorization  
-* Information protection and encryption  
-* Security management  
+* Make an informed decision regarding securing your network
+* Managed and deliver access management and authorization  
+* Protect, encrypt, and mask data
+* Manage and monitor security for Azure SQL Database and Azure SQL Managed Instance
 
 ## Prerequisites for exercises  
 
