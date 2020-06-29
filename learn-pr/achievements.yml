@@ -132,3 +132,8 @@ achievements:
   title: Predict categories with machine learning classification
   summary: Predict categories with machine learning classification
   iconUrl: /learn/achievements/introduction-to-classification.svg
+- uid: learn.unsupervised-learning.badge
+  type: badge
+  title: Use unsupervised learning to analyze unlabeled data
+  summary: Use unsupervised learning to analyze unlabeled data
+  iconUrl: /learn/achievements/introduction-to-unsupervised-learning.svg
