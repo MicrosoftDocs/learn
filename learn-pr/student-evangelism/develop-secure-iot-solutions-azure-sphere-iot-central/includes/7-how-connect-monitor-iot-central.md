@@ -1,23 +1,23 @@
-In this unit, you will learn how to secure, build, deploy, and debug your High-Level (HL) Azure Sphere application onto the Azure Sphere A7 Core. Your Azure Sphere application will connect to Azure IoT Central and send room environment telemetry to Azure IoT Central.
+In this unit, you'll learn how to secure, build, deploy, and debug your High-Level (HL) Azure Sphere application onto the Azure Sphere A7 Core. Your Azure Sphere application will connect to Azure IoT Central and send room environment telemetry to Azure IoT Central.
 
 The components for this unit:
 
 **Azure IoT:** Your Azure Sphere device can securely connect and communicate with cloud services. Azure Sphere includes built-in library support for both Azure IoT Hub and Azure IoT Central. This module focuses on Azure IoT Central.
 
-This project leverages the [Azure IoT Hub Device Provisioning Service (PDS)](https://docs.microsoft.com/azure-sphere/app-development/use-azure-iot?WT.mc_id=github-blog-dglover), which is included with Azure IoT Central. The Device Provisioning Service (DPS) enables zero-touch, just-in-time, large scale device provisioning.
+This project leverages the [Azure IoT Hub Device Provisioning Service (PDS)](https://docs.microsoft.com/en-gb/azure-sphere/app-development/use-azure-iot), which is included with Azure IoT Central. The Device Provisioning Service (DPS) enables zero-touch, just-in-time, large-scale device provisioning.
 
-**Azure IoT Central:  **IoT Central is an IoT application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central/?WT.mc_id=github-blog-dglover) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
+**Azure IoT Central:  **IoT Central is an IoT application platform. [Azure IoT Central](https://azure.microsoft.com/services/iot-central/) provides an easy way to connect, monitor, and manage your Internet of Things (IoT) assets at scale.
 
 **Azure IoT Central Application: **Azure IoT Central application simplifies the creation of IoT solutions. You'll learn how to create, customize, manage, and use an Azure IoT Central application.
 
-**High Level Application:** Every Azure Sphere device has a high-level application, which runs on the Azure Sphere OS and uses the application libraries. A high-level application can:
+**High-Level Application:** Every Azure Sphere device has a high-level application, which runs on the Azure Sphere OS and uses the application libraries. A high-level application can:
 
 - Configure and interact with Azure Sphere peripherals, such as the general-purpose input/output (GPIO) pins, universal asynchronous receiver/transmitters (UARTs), and other interfaces
 - Communicate with RTApps
 - Communicate with the internet and cloud-based services
 - Broker trust relationships with other devices and services via certificate-based authentication
 
-The steps you will follow:
+The steps you'll follow:
 
 1. Create an Azure IoT Central Application
 2. Set up a trusted relationship between your Azure Sphere Tenant and IoT Central
@@ -34,4 +34,4 @@ The steps you will follow:
    3. View debugger output to see device telemetry data on VS Code
 5. View the device telemetry on the Azure IoT Central Dashboard
 
-By the end of the module, you will be able to view the environment telemetry on VS Code and then display the telemetry data in the cloud from Azure IoT Central Dashboard.
+By the end of the module, you'll be able to view the environment telemetry on VS Code and then display the telemetry data in the cloud from Azure IoT Central Dashboard.

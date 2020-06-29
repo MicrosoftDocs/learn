@@ -8,7 +8,7 @@ The terms you'll tackle:
 
 - **GPIO Output: **If a GPIO pin is designated as an *output* pin, then the software running on the Azure Sphere can set a pin to be either on or off. This equates to 3.3 volts for a pin that has been turned on, and zero volts when turned off. It is important to check that a peripheral connected to the pin is 3.3 volts tolerant. Otherwise you may destroy the peripheral. Lots of peripherals use single pins such as LEDs, relays, reed switches.
 
-- **GPIO Input: **If a GPIO pin is designated as an *input* pin, then the software running on the Azure Sphere can read a pin to determine if the voltage has been set to 3.3 volts, or zero volts/ground. It is essential to check that a peripheral will not set a voltage on a pin to anything higher than 3.3 volts **before** you connect it. Be warned, if you set a pin to a voltage higher than 3.3 volts you will destroy the Azure Sphere. An example of a GPIO peripheral that uses a single pin is a push button.
+- **GPIO Input: **If a GPIO pin is designated as an *input* pin, then the software running on the Azure Sphere can read a pin to determine if the voltage has been set to 3.3 volts, or zero volts/ground. It is essential to check that a peripheral will not set a voltage on a pin to anything higher than 3.3 volts **before** you connect it. Be warned, if you set a pin to a voltage higher than 3.3 volts you'll destroy the Azure Sphere. An example of a GPIO peripheral that uses a single pin is a push button.
 
 - **Other Peripheral Interface Types: **The following is a list of other common peripheral interfaces found on devices, including the Azure Sphere. To learn more about each interface type, right mouse click and open the link in a new browser window.
   - [PWM - Pulse width modulation](https://en.wikipedia.org/wiki/Pulse-width_modulation)
@@ -17,7 +17,7 @@ The terms you'll tackle:
   - [ADC - Analog-to-digital converter](https://en.wikipedia.org/wiki/Analog-to-digital_converter)
   - [UART - Universal asynchronous receiver-transmitter](https://en.wikipedia.org/wiki/Universal_asynchronous_receiver-transmitter)
 
-- **ISU: **You will see references to **ISU** in the Azure Sphere and Mediatec documentation. An ISU is a Serial interface block and is an acronym for "**I**2C, **S**PI, **U**ART.". For more information refer to the [MT3620 Support Status](https://docs.microsoft.com/azure-sphere/hardware/mt3620-product-status?WT.mc_id=github-blog-dglover) page.
+- **ISU: **You'll see references to **ISU** in the Azure Sphere and Mediatec documentation. An ISU is a Serial interface block and is an acronym for "**I**2C, **S**PI, **U**ART.". For more information, see the [MT3620 Support Status](https://docs.microsoft.com/azure-sphere/hardware/mt3620-product-status?WT.mc_id=github-blog-dglover) page.
 
 ## Azure Sphere Developer Board Peripheral Interfaces
 
@@ -29,7 +29,7 @@ You can find detailed peripheral interface information for each board by clickin
 
 ## Introduction to the Azure Sphere Learning Path Labs
 
-For this module, you will clone the [Azure Sphere Developer Learning Path repository](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path).
+For this module, you'll clone the [Azure Sphere Developer Learning Path repository](https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path).
 
 There are a number of Learning Path libraries that support these labs. These Learning Path C functions are prefixed with **lp_**, typedefs and enums are prefixed with **LP_**.
 
