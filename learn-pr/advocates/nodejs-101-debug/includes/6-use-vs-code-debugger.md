@@ -5,7 +5,7 @@ Open VS Code on your machine, and create a new file named `currency.js` with thi
 ```js
 const rates = {};
 
-function setEchangeRate(rate, sourceCurrency, targetCurrency) {
+function setExchangeRate(rate, sourceCurrency, targetCurrency) {
   if (rates[sourceCurrency] === undefined) {
     rates[sourceCurrency] = {};
   }
@@ -39,8 +39,8 @@ function printForeignValues(value, sourceCurrency) {
   }
 }
 
-setEchangeRate(0.88, 'USD', 'EUR');
-setEchangeRate(107.4, 'USD', 'JPY');
+setExchangeRate(0.88, 'USD', 'EUR');
+setExchangeRate(107.4, 'USD', 'JPY');
 printForeignValues(10, 'EUR');
 ```
 
@@ -157,17 +157,17 @@ Now we know that some conversion rates are missing, let's understand why. Remove
 
 :::image source="../media/remove-all-breakpoints.png" alt-text="Button to remove all breakpoints":::
 
-Now add a breakpoint at the beginning of the program, line `37`, before `setEchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. We can now at all times see how its value changes.
+Now add a breakpoint at the beginning of the program, line `37`, before `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. We can now at all times see how its value changes.
 
 Step over the first `setExchangeRate()` call, and look at the result on `rates`.
 Does its value seems correct to you?
 
-You can see at this point that the `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time, to look at the result of the second `setEchangeRate()` call. What do you see? What did you expect?
+You can see at this point that the `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time, to look at the result of the second `setExchangeRate()` call. What do you see? What did you expect?
 
-Looking at the result, we see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. Time to look at the `setEchangeRate()` code:
+Looking at the result, we see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. Time to look at the `setExchangeRate()` code:
 
 ```js
-function setEchangeRate(rate, sourceCurrency, targetCurrency) {
+function setExchangeRate(rate, sourceCurrency, targetCurrency) {
   if (rates[sourceCurrency] === undefined) {
     rates[sourceCurrency] = {};
   }
