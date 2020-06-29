@@ -9,6 +9,8 @@ You learned about:
 - Introducing changes with pull requests
 - Deploying a web page to GitHub Pages
 
+Now that you're familiar with the basics of GitHub, learn to [Upload your project by using GitHub best practices](/learn/modules/upload-project-github/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

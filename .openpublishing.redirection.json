@@ -1919,6 +1919,61 @@
       "source_path": "learn-pr/wwl-data-ai/wwl-data-ai/explain-machine-learning-models-with-azure-machine-learning/index.md",
       "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/explain-machine-learning-models-with-azure-machine-learning/",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/8-advanced-classification-with-svms.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/4-cost-function-gradient-descent.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/9-exercise-svms.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/3-exercise-logistic-regression.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/6-exercise-svms.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/2-logistic-regression.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/10-summary.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/5-support-vector-machines.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-classification/7-testing-your-predictions.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/train-evaluate-classification-models/",
+      "redirect_document_id": true
     }
   ]
 }
