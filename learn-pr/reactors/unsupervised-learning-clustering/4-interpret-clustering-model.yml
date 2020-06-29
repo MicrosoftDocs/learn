@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.unsupervised-learning-clustering.4-interpret-clustering-model
+title: Interpret the clustering model
+metadata:
+  title: Interpret the clustering model
+  description: Interpret the clustering model .
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 18
+content: |
+  [!include[](includes/4-interpret-clustering-model.md)]

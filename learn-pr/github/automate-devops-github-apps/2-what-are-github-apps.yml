@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.automate-devops-github-apps.2-what-are-github-apps
+title: What are GitHub Apps?
+metadata:
+  title: What are GitHub Apps?
+  description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-are-github-apps.md)]
