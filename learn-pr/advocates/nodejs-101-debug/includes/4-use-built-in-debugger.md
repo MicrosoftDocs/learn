@@ -6,46 +6,54 @@ The Fibonacci sequence is a suite of numbers starting with the number 0 and 1, w
 0, 1, 1, 2, 3, 5, 8, 13, 21...
 ```
 
-Let's create a new Node.js program to illustrate that. Before diving into the exercise, copy and paste the command below in the terminal on the right to prepare the Node.js environment:
+Let's create a new Node.js program to illustrate that.
 
-```bash
-source <(curl -s https://aka.ms/install-node-lts)
-```
+## Prepare environment
 
-Once everything has finished installing, create a new JavaScript file with:
+Before diving into the exercise, we have first to prepare the code and environment.
 
-```bash
-code fibonacci.js
-```
+1. Copy and paste the command below in the terminal on the right to prepare the Node.js environment:
 
-Then paste this code in the editor:
+    ```bash
+    source <(curl -s https://aka.ms/install-node-lts)
+    ```
 
-```js
-function fibonacci(n) {
-  let n1 = 0;
-  let n2 = 1;
-  let sum = 0;
+1. Once everything has finished installing, create a new JavaScript file with:
 
-  for (let i = 2; i < n; i++) {
-    sum = n1 + n2;
-    n1 = n2;
-    n2 = sum;
-  }
+    ```bash
+    code fibonacci.js
+    ```
 
-  return n === 0 ? n1 : n2;
-}
+1. Then paste this code in the editor:
 
-const result = fibonacci(5);
-console.log(result);
-```
+    ```js
+    function fibonacci(n) {
+      let n1 = 0;
+      let n2 = 1;
+      let sum = 0;
 
-Save the file, then run the program using the terminal:
+      for (let i = 2; i < n; i++) {
+        sum = n1 + n2;
+        n1 = n2;
+        n2 = sum;
+      }
 
-```bash
-node fibonacci.js
-```
+      return n === 0 ? n1 : n2;
+    }
+
+    const result = fibonacci(5);
+    console.log(result);
+    ```
+
+1. Save the file, then run the program using the terminal:
+
+    ```bash
+    node fibonacci.js
+    ```
 
 The program should display the result `3` in the console. Oops, it seems there's a bug in there, as we expected `5`! Let's understand what's going wrong using the Node.js built-in debugger.
+
+## Start built-in debugger
 
 Start again the program, this time with the built-in debugger enabled:
 
@@ -85,6 +93,8 @@ debug>
 > [!NOTE]
 > You may have noticed that it requires multiples step in commands to move through the `for(...) {}` line. This is because there are multiple **statements** on this line, and when stepping you move on to the next statement in your code. Usually there is one statement per line, but if that's not the case you need multiple steps to move on to the next line.
 
+## Locate the bug with breakpoints
+
 Now let's add a breakpoint here so we can quickly move through the loop iterations:
 
 ```bash
@@ -119,6 +129,8 @@ exec [i, sum]
 You should see in the console `[ 4, 2 ]`, which is correct again. Now we're at the point just before the number we're interested in (5), so it may be cautious to advance step by step through this iteration, using the `s` command. Try to reach our previous breakpoint, but one step at a time.
 
 What happened?
+
+## Fix the bug
 
 After checking the loop condition `i < n`, the execution suddenly jumped to the return line:
 
