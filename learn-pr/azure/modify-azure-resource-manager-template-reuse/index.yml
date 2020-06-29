@@ -2,14 +2,14 @@
 uid: learn.modify-azure-resource-manager-template-reuse
 metadata:
   title: "Deploy to multiple Azure environments by using Azure Resource Manager template features - Learn"
-  description: Manage the deployment of your Azure Resource Manager templates to multiple Azure environments using functions, variables, tags and parameter files.  
+  description: Manage multiple Azure environment deployments of your Azure Resource Manager templates using functions, variables, tags and parameter files.  
   ms.date: 07/10/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Deploy to multiple Azure environments by using Azure Resource Manager template features"
-summary: Manage the deployment of your Azure Resource Manager templates to multiple Azure environments using functions, variables, tags and parameter files.
+summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates using functions, variables, tags and parameter files.
 abstract: |
   In this module, you will:
   - Create an expression for a unique value using Azure Resource Manager template functions
@@ -36,12 +36,12 @@ products:
 - azure-storage-accounts
 units:
 - learn.modify-azure-resource-manager-template-reuse.1-introduction
-- learn.modify-azure-resource-manager-template-reuse.2-TBD
-- learn.modify-azure-resource-manager-template-reuse.3-exercise-TBD
-- learn.modify-azure-resource-manager-template-reuse.4-TBD
-- learn.modify-azure-resource-manager-template-reuse.5-exercise-TBD
-- learn.modify-azure-resource-manager-template-reuse.6-TBD
-- learn.modify-azure-resource-manager-template-reuse.7-exercise-TBD
+- learn.modify-azure-resource-manager-template-reuse.2-azure-resource-manager-functions
+- learn.modify-azure-resource-manager-template-reuse.3-exercise-use-functions-create-expression
+- learn.modify-azure-resource-manager-template-reuse.4-azure-resource-manager-variables
+- learn.modify-azure-resource-manager-template-reuse.5-exercise-use-variables-store-expressions
+- learn.modify-azure-resource-manager-template-reuse.6-azure-resource-manager-tags-parameter-files
+- learn.modify-azure-resource-manager-template-reuse.7-exercise-use-tags-parameter-files
 - learn.modify-azure-resource-manager-template-reuse.8-knowledge-check
 - learn.modify-azure-resource-manager-template-reuse.9-summary
 badge:

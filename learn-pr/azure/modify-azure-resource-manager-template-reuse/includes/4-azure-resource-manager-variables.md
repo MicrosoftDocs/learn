@@ -1,4 +1,4 @@
-In the previous scenario, you decided to use an expression made up of several template functions to create a unique name for the Azure Storage Account. This will make sure each of your customers will be able to use this template for their deployment. However, you notice that adding this expression in several places will be a problem for maintaining this template. You decide to use a variable for the Storage Account name expression. 
+In the previous scenario, you decided to use an expression made up of several template functions to create a unique name for the Azure Storage Account. This will make sure each of your customers will be able to use this template for their deployment. However, you notice that adding this expression in several places will be a problem for maintaining this template. You decide to use a variable for the Storage Account name expression so you can define the expression in one place and reuse it throughout the template. 
 
 ## What is a Resource Manager template variable
 

@@ -60,7 +60,7 @@ To set a property to null, you can use ```null``` or ```[json('null')]```. The j
 "objectValue": "[json('null')]"
 ```
 
-Resource Manager  provides several [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups of different types of functions:
+Resource Manager provides several [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups of different types of functions:
 
 - *Array functions* for working with arrays. For example, ```first``` and ```last```.
 - *Comparison functions* for making comparisons in your templates. For example, ```equals``` and ```greater```.
