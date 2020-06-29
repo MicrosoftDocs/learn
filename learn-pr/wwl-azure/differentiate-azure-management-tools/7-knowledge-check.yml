@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/20/2020
+  ms.date: 06/27/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
       explanation: "That's incorrect. Regions are a group of geography-based datacenters."
     - content: "Zones"
       isCorrect: false
-      explanation: "That's incorrect.  Zones are used to suppot application up time and not aligned to compliance needs."
+      explanation: "That's incorrect.  Zones are used to support application up time and not aligned to compliance needs."
   - content: "When managing Azure services remotely from an Android phone. Which management tools would best allow remote management from your Android phone with the least amount of administrative effort?"
     choices:
     - content: "Azure CLI"
@@ -37,4 +37,4 @@ quiz:
       explanation: "That's incorrect.  Azure portal could work, but would not be an optimal experience."
     - content: "PowerShell"
       isCorrect: false
-      explanation: "That's incorrect.  Scripting from an Adroid phone would not work without launching some sort of other management tool."
+      explanation: "That's incorrect.  Scripting from an Android phone would not work without launching some sort of other management tool."
