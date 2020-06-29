@@ -3,9 +3,9 @@ uid: learn.azure.aspnet-configurationbuilder
 metadata:
   title: Externalize configuration for your ASP.NET application using Azure Key Vault
   description: Learn how use ConfigurationBuilder to dynamically configure an ASP.NET web application to retrieve secrets from Azure Key vault 
-  ms.date: 06/16/2020
+  ms.date: 06/30/2020
   author: coderandhiker
-  ms.author: chrisrt@microsoft.com
+  ms.author: chrisrt
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Externalize configuration for your ASP.NET application using Azure Key Vault
