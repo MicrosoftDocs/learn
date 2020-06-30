@@ -1,4 +1,4 @@
-There are two features of Azure Resource Manager templates that you will want to use when deploying to more than one environment. These features are *resource tags* and *Azure Resource Manager template parameter files*.
+There are two features of Azure Resource Manager templates that you will want to use when deploying to more than one Azure environment. These features are *resource tags* and *Azure Resource Manager template parameter files*.
 
 As you add more resources to your environments you'll quickly find that you need a way to identify the purpose of these resources. Resources have a ```tags:``` attribute for this purpose. And as you deploy to more environments, you'll need an efficient way to keep track of the input parameters. Resource Manager templates can use parameter files to manage parameters for each deployment environment.
 
@@ -44,11 +44,11 @@ Then, you use that parameter for any resource that is for the *Dev* environment 
     }],
 ```
 
-## What is a parameter file
+## What is a Resource Manager template parameter file
 
 A Resource Manager parameter file holds values that will be passed in to the Resource Manager template when the template is executed and that file is specified. Using a parameter file for each environment that a template will be deployed to ensures that the correct parameters are set for that specific environment. Also, that the history and maintenance of those parameter values can be tracked in source control.
 
-## How do I use parameter files
+## How do I use Resource Manager template parameter files
 
 Parameter files are JSON files that hold parameter values. For example, for the parameters you have used in the Resource Manager template so far, a template parameter file could be created for each deployment environment as follows.
 
@@ -75,7 +75,7 @@ Parameter files are JSON files that hold parameter values. For example, for the 
 
 Then, you can create a file similar to this for each environment. For example, these files might be called **azuredeploy.parameters.dev.json** and **azuredeploy.parameters.prod.json** and hold different values for the parameters.
 
-To deploy a Resource Manager template using a parameter file, you specify the path to the file in the deployment command. In Azure CLI it is ```--parameters {path to parameter file}``` and in PowerShell it is ```-TemplateParameterFile {path to parameter file}```.
+To deploy a Resource Manager template using a parameter file, you specify the path to the parameter file in the deployment command. In Azure CLI it is ```--parameters {path to parameter file}``` and in PowerShell it is ```-TemplateParameterFile {path to parameter file}```.
 
 # [Azure CLI](#tab/azure-cli)
 

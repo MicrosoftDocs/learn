@@ -16,6 +16,6 @@ In this module, you will:
 ## Prerequisites
 
 - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions
-  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
-  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
-  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
+- The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
+- The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally

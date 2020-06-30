@@ -2,7 +2,7 @@ In the scenario, you want to make deploying your Azure Resource Manager template
 
 You decide to create an expression using [Azure Resource Manager template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) to solve this problem.
 
-## What are template functions
+## What are Resource Manager template functions
 
 Functions add flexibility to your template by dynamically getting values during deployment.
 
@@ -19,7 +19,7 @@ You have already worked with expressions in your Resource Manager template in th
 },
 ```
 
-The expression here is the value of the ```defaultValue:``` attribute. Notice that this expression holds a *template function*, ```resourceGroup()```. This function returns information on the resource group that this template is deploying to. The ```.location``` retrieves one property from the object returned by that function. Functions allow you to construct values you need dynamically.
+The expression is the value of the ```defaultValue:``` attribute. Notice that this expression holds the *template function* ```resourceGroup()```. This function returns information on the resource group that this template is deploying to. The ```.location``` retrieves one property from the object returned by that function. Functions allow you to construct values you need dynamically.
 
 ## How do I work with Resource Manager template functions
 

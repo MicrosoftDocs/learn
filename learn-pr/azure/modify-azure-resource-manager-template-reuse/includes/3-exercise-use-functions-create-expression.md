@@ -26,7 +26,7 @@ Instead of passing in the name of the Storage Account, you change the parameter 
 
 ## Deploy the Resource Manager template to Azure
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
 
 ### Sign in to Azure
 
@@ -73,7 +73,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 Deploy the template to Azure. You learned about the deployment commands in the previous module. Here, we are using the Azure CLI ```az deployment group create``` command.
 
-1. Deploy the template using Azure CLI commands in the terminal. Remember to substitute {your-prefix} with a different string. For example, you could use **storage**.
+1. Deploy the template using Azure CLI commands in the Visual Studio Code terminal. Remember to substitute {your-prefix} with a different string. For example, you could use **storage**.
 
     ```azurecli
     templateFile="azuredeploy.json"

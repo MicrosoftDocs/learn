@@ -6,11 +6,11 @@ An Azure Resource Manager template variable is a construct that holds a value fo
 
 For example, you have an expression that defines a value for a resource location. Several of the resources you have defined in your template require a location. You create a variable to hold the location expression and then use the variable in all of the places a location is required.
 
-### Advantages to using template variables
+### Advantages to using Resource Manager template variables
 
 Template variables allow you to write an expression once, and then use it in several places. Further, maintenance of the expression is in one place and the template is more readable.
 
-## How do I use template variables
+## How do I use Resource Manager template variables
 
 Template variables are defined in the ```variables: {}``` section of the template. For example, here is the expression for the Storage Account name you defined in the last unit. It is now defining the value for the ```storageName``` variable.
 

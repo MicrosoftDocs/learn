@@ -86,7 +86,7 @@ Here, you create a parameter to use as a resource tag in your template.
 Currently, there are three parameters to fill in each time you deploy this template. Each user of the template can create a file to hold their parameter values. Here, you create a parameter file to use with your template.
 
 1. In Visual Studio Code, create another file and call it **azuredeploy.parameters.dev.json**.
-1. In this file, you put the values for the template parameters that you would like to have input into the template for the development environment. Change a tag value to see that the deployment made a change.
+1. In this file, you put the values for the template parameters that you would like to have input into the template for the development environment. Change a tag value, for example *projectName* to **Learn**, to see that the deployment made a change.
 
     ```json
     {

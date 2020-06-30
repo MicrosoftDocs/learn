@@ -17,8 +17,8 @@ Check out more modules in this learning path to get more advanced practice with 
 
 Here are some resources to explore this topic further.
 
-[Understand the structure and syntax of ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax?azure-portal=true)
-[Azure Resource Manager Functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true)
-[User-defined functions in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true)
-[Variables in Azure Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables?azure-portal=true)
-[Syntax and expressions in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-expressions?azure-portal=true)
+- [Understand the structure and syntax of ARM templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-syntax?azure-portal=true)
+- [Azure Resource Manager Functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true)
+- [User-defined functions in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true)
+- [Variables in Azure Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables?azure-portal=true)
+- [Syntax and expressions in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-expressions?azure-portal=true)
