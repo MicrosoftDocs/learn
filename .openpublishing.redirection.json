@@ -2044,6 +2044,41 @@
       "source_path": "learn-pr/ai-school/introduction-to-deep-learning/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-neural-networks/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-neural-networks/4-activation-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-neural-networks/5-exercise-neural-networks-advanced.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-neural-networks/3-exercise-neural-networks-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-neural-networks/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-neural-networks/2-learning-rate.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-neural-networks/6-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
+      "redirect_document_id": true
     }
   ]
 }

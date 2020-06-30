@@ -22,6 +22,5 @@ products:
 - azure
 modules:
 - learn.introduction-to-regression
-- learn.neural-networks
 trophy:
   uid: learn.ml-crash-course.trophy
