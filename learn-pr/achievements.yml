@@ -147,3 +147,8 @@ achievements:
   title: Make predictions from complex data with neural networks
   summary: Make predictions from complex data with neural networks
   iconUrl: /learn/achievements/introduction-to-neural-networks.svg
+- uid: learn.ml-crash-course.trophy
+  type: trophy
+  title: Machine learning crash course
+  summary: Machine learning crash course
+  iconUrl: /learn/achievements/ml-crash-course.svg
