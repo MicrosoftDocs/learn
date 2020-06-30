@@ -7,7 +7,7 @@ Configuration is central to building an app in a way that allows its dependencie
 
 ## Learn more
 
-To learn more about using Configuration Builder and Azure Key Vault, visit the following articles.
+To learn more about using ConfigurationBuilder and Azure Key Vault, visit the following articles.
 
 - [Configuration builders for ASP.NET](https://docs.microsoft.com/aspnet/config-builder)
 - [Configuration Builders](https://github.com/aspnet/MicrosoftConfigurationBuilders)
