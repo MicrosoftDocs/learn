@@ -32,10 +32,10 @@ quiz:
     - content: 'Blob storage, IoT Hub, and Service Queue'
       isCorrect: false
       explanation: Only one of these three resources is correct.
-    - content: 'Blob storage, Service Bus, and Iot Hub'
+    - content: 'Blob storage, Service Bus, and IoT Hub'
       isCorrect: false
       explanation: Two of these resources are correct.
-    - content: 'Cosmos DB storage, Service Queue, and Iot Hub'
+    - content: 'Azure Cosmos DB storage, Service Queue, and IoT Hub'
       isCorrect: false
       explanation: None of these resources is correct.
     - content: 'Blob storage, Service Bus, and Event Hubs'
@@ -95,28 +95,28 @@ quiz:
     - content: 'Canvas apps and model-driven apps'
       isCorrect: false
       explanation: There are three types of apps in Power Apps.
-    - content: 'Canvas apps, model-driven apps, and mobile apps.'
+    - content: 'Canvas apps, model-driven apps, and mobile apps'
       isCorrect: false
       explanation: Mobile app isn't the name of a supported type.
-    - content: 'Canvas apps, model-driven apps, and portals. '
+    - content: 'Canvas apps, model-driven apps, and portals'
       isCorrect: true
       explanation: Correct. These are the three types of apps in Power Apps.
-    - content: 'Phone apps, tablet apps, and web portal apps.'
+    - content: 'Phone apps, tablet apps, and web portal apps'
       isCorrect: false
       explanation: There's a portal app type, but the other two are not associated with Power Apps.
 
   - content: 'In IoT Central data export, you get to choose which data runs continuously. What are the options?'
     choices: 
-    - content: 'telemetry, events, and commands'
+    - content: 'Telemetry, events, and commands'
       isCorrect: false
       explanation: Devices, device templates, and telemetry are the correct options.
-    - content: 'devices, telemetry, and containers.'
+    - content: 'Devices, telemetry, and containers'
       isCorrect: false
       explanation: Devices, device templates, and telemetry are the correct options. A container is a resource that stores the data.
-    - content: 'devices, device templates, and telemetry'
+    - content: 'Devices, device templates, and telemetry'
       isCorrect: true
       explanation: Correct. You select devices, device templates, and telemetry in the "Create data export" pane.
-    - content: 'telemetry, and devices'
+    - content: 'Telemetry and devices'
       isCorrect: false
       explanation: Devices, device templates, and telemetry are the correct options.
 
