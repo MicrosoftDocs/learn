@@ -164,7 +164,7 @@ Azure Policy can allow a resource to be created even if it doesn't pass validati
 
 From this screen, you can spot resources that are not compliant and take action to correct them.
 
-### Removing a policy definition
+### Removing a policy assignment
 
 Finally, you can delete policy requirements through the portal, or through the PowerShell command `Remove-AzPolicyAssignment` as shown below.
 
