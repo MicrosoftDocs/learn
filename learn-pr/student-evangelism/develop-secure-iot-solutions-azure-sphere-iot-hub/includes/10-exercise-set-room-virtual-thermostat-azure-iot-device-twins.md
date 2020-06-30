@@ -40,11 +40,11 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
 
 3. From Visual Studio Code, press F5 to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
-------
-
 ## Step 5: Expected Device Behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
+
+![The illustration shows Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
 1. The RGB LED5 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. LED4 will turn yellow when connected to Azure.
@@ -53,12 +53,16 @@ The default developer board configuration is for the AVNET Azure Sphere Starter 
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
+![The illustration shows Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
+
 1. The RGB LED 1 will start to blink. In the next section, you'll be setting the desired temperature which will determine the RGB LED color.
 2. The network LED will turn red when connected to Azure.
 3. LED 4 will blink blue when telemetry is sent to IoT Hub
 4. Press **Button A** or **Button B** on the device to change the blink rate of RGB LED 1 and to update the **Actual Temperature** device twin property in IoT Hub.
 
 ### Seeed Studio MT3620 Mini Dev Board
+
+![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 1. The green LED closest to the USB connector will start to blink
 2. Given this device has no builtin buttons then virtual **Button A** and **Button B** presses will be generated every 10 seconds. The blink rate will change and the **Actual Temperature** device twin property in IoT Hub will be updated.
@@ -71,7 +75,7 @@ Follow these steps to show the actual temperature recorded by the device:
 
 1. For Azure Sphere devices with buttons, press Button A or B. Virtual button presses are generated for devices without buttons
 
-2. You need the name of the Azure IoT Hub you created. You can get the name from the Azure web portal. 
+2. You need the name of the Azure IoT Hub you created. You can get the name from the Azure web portal.
 
 3. You need the Azure Sphere device ID. Run the following command from the **Azure Sphere Developer Command Prompt**.
 
@@ -188,3 +192,7 @@ To set the desired temperature:
 5. Try setting more extreme desired temperatures. For example, try 0 or 100. Again, observe the blinking LED will change color.
 
 6. Close the Cloud Shell by typing `exit`.
+
+## Close Visual Studio
+
+Now close **Close Visual Studio**.
