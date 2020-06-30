@@ -22,7 +22,6 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Insights/components"
-      kind: "web"
 - action: exists
   environment: azure
   hint: "Create the general-purpose v2 storage account to store logging data."
