@@ -36,10 +36,6 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     npm install chalk
     ```
 
-1. After you've entered the code below in the *app.js* file, you can run it from the terminal by running `node app.js`. 
-
-   When you run `node app.js`, ensure that the *RefrigeratedTruck* folder is the current folder of the terminal.
-
 ::: zone-end
 ::: zone pivot="vscode-csharp"
 
@@ -77,12 +73,6 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. On the Visual Studio Code **File** menu, open the *Program.cs* file, and then delete the default contents.
 
-1. After you've entered the code below in the *Program.cs* file, you can run the app with the following command:
-
-   `dotnet run`
-   
-   This command runs the *Program.cs* file in the current folder, so ensure that you're in the *RefrigeratedTruck* folder.
-
 ::: zone-end
 ::: zone pivot="vs-node"
 
@@ -103,8 +93,6 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 1. Delete the default contents of the *app.js* file.
 
-1. After you've entered the code below, you can run the app with either the **Start Without Debugging** or **Start Debugging** option. With the **Start Debugging** option, you can set breakpoints, examine data, and perform other debugging tasks.
-
 ::: zone-end
 ::: zone pivot="vs-csharp"
 
@@ -124,8 +112,6 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
     * **System.Text.Json**
 
 1. Delete the default contents of the *Program.cs* file.
-
-1. After you've entered the code below, you can run the app with either the **Start Without Debugging** or **Start Debugging** option. In the latter case you can set breakpoints, examine data, and perform other debugging tasks.
 
 ::: zone-end
 
