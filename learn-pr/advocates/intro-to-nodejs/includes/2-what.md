@@ -16,13 +16,13 @@ Applications you can build with Node.js:
 - Shell scripts for file manipulations or network access, etc.
 - Machine learning libraries and models.
 
-:::image type="content" source="../media/nodejs-npm.png" alt-text="Node.js and NPM registry":::
+:::image type="content" source="../media/npm.png" alt-text="Node.js and NPM registry":::
 
 The Node.js ecosystem is also rich thanks to NPM, a package manager for Node.js where everyone can share their own Node.js libraries.
 
 Let's imagine you have many data you need to expose to users or to third-party services. You would start off by using Node.js to create the REST API backend, and implement CRUD (Create, Read, Update, Delete) operations. Then, you would model your data and store it in a NoSQL database.
 
-:::image type="content" source="../media/nodejs-iot-example.jpeg" alt-text="Node.js IoT example":::
+:::image type="content" source="../media/iot-example.jpeg" alt-text="Node.js IoT example":::
 
 Also, imagine that you want to build a device to be able to send control commands to your standing desk; isn't that cool? Node.js would be a perfect fit for this use case as well. Node.js is fast and performant and can handle real-time applications and heavy data flows. You would install Node.js on your IoT board, or use a device that comes with Node.js preinstalled. Then write your application logic in JavaScript and deploy it on the device, that's it.
 

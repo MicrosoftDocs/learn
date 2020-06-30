@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs.02-how-nodejs-works
+uid: learn.azure.intro-to-nodejs.3-how-works
 title: How Node.js works
 metadata:
   title: How Node.js works
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/02-how-nodejs-works.md)]
+  [!include[](includes/3-how-works.md)]

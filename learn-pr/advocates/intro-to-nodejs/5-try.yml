@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs.04-try-nodejs
+uid: learn.azure.intro-to-nodejs.5-try
 title: Try Node.js
 metadata:
   title: Try Node.js
@@ -13,4 +13,4 @@ durationInMinutes: 5
 interactive: "bash"
 azureSandbox: true
 content: |
-  [!include[](includes/04-try-nodejs.md)]
+  [!include[](includes/5-try.md)]
