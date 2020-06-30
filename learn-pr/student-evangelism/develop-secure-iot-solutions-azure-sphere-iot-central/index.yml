@@ -39,6 +39,7 @@ products:
 - azure-iot-central
 units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.introduction
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere.design-secure-iot-solution
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.gpio-hardware-interfaces
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.event-driven-programming
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere.how-setup-azure-sphere
