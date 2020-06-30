@@ -2,9 +2,9 @@ In this unit, you'll learn how to control an Azure Sphere application using Azur
 
 ## Azure IoT cloud to device communications
 
-1. **Direct Methods** for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
-2. **Device Twins** are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
-3. **Cloud-to-device** messages are for one-way notifications to the device app.
+- **Direct Methods** for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
+- **Device Twins** are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
+- **Cloud-to-device** messages are for one-way notifications to the device app.
 
 This unit will cover **Azure IoT Device Twins** and explain **DeviceTwinBindings** to simplify the implementation of Azure IoT.
 
