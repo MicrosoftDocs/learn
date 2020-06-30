@@ -4,7 +4,9 @@ Azure Management Groups are containers for managing access, policies, and compli
 
 The following diagram shows an example of creating a hierarchy for governance using management groups.
 
-![Image showing Azure Management Groups as a tree graph of relationships](../media/4-management-groups-tree.png)
+:::image type="complex" source="../media/4-management-groups-tree.png" alt-text="Tree diagram showing Azure Management Groups as a tree graph of relationships.":::
+Tree starts at root management group containing the human resources, IT, and marketing groups as well as two enterprise agreement subscriptions. Each of the groups also split into sub-groups and enterprise and free trial subscriptions.
+:::image-end:::
 
 You might create a hierarchy so you can apply a policy that, for example, limits VM locations to the US West Region for the "Geo Region 1" group. This policy will inherit onto both Enterprise Agreement (EA) subscriptions under that management group and will apply to all VMs under those subscriptions. This security policy cannot be altered by the resource or subscription owner allowing for improved governance.
 

@@ -104,7 +104,7 @@ We can use the applied policy definition to identify resources that aren't compl
 
 The results match what you see in the Resource compliance tab of a policy assignment in the Azure portal:
 
-![Screenshot of the policy compliance pane in the Azure portal](../media/2-policy-compliance.png)
+![Screenshot of Azure portal showing the policy compliance pane in the Azure portal with the compliance navigation button highlighted and highlighting the audit VM policy.](../media/2-policy-compliance.png)
 
 Or we can again use the command-line tools to identify the resources in your resource group that are non-compliant to the policy assignment
 
@@ -140,7 +140,7 @@ This scope could range from a full subscription down to a resource group. Policy
 
 You can assign any of these policies through the Azure portal, PowerShell, or Azure CLI. When you assign a policy definition, you will need to supply any parameters that are defined.
 
-![Screenshot showing parameters when assigning a policy to a scope in the Azure portal](../media/2-policy-parameters.png)
+![Screenshot of Azure portal showing an allowed virtual machine SKU policy definition with the allowed SKUs parameter highlighted.](../media/2-policy-parameters.png)
 
 ### Policy effects
 
@@ -160,7 +160,7 @@ Each policy definition in Azure Policy has a single effect. That effect determin
 
 Azure Policy can allow a resource to be created even if it doesn't pass validation. In these cases, you can have it trigger an audit event that can be viewed in the Azure Policy portal, or through command-line tools. The easiest approach is in the portal as it provides a nice graphical overview that you can explore. You can find the Azure Policy section through the search field or _All Services_.
 
-![Azure portal showing the policy overview screen](../media/2-policy-portal.png)
+![Screenshot of Azure portal showing a sample policy overview screen with resource compliance progress charted out by policy and overall.](../media/2-policy-portal.png)
 
 From this screen, you can spot resources that are not compliant and take action to correct them.
 
