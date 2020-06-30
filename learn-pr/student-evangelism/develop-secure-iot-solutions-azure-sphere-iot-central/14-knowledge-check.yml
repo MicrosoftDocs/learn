@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "Azure Sphere API"
       isCorrect: false
-      explanation: "Azure Sphere API is not a component of the Azure Sphere Ecosystem"
+      explanation: "Azure Sphere API isn't a component of the Azure Sphere Ecosystem"
     - content: "Azure Sphere Security Service"
       isCorrect: true
       explanation: "Azure Sphere Security Service is a key component of the Azure Sphere ecosystem"
     - content: "Azure Sphere Security Key"
       isCorrect: false
-      explanation: "Azure Sphere Security Key is not a component of the Azure Sphere Ecosystem"
+      explanation: "Azure Sphere Security Key isn't a component of the Azure Sphere Ecosystem"
   - content: "Your organization created an Azure Sphere tenant and then claims each of its devices into that tenant – what function does this accomplish?"
     choices:
     - content: "So that you can manage those devices remotely and securely."
