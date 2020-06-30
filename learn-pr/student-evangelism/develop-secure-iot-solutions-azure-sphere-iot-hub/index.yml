@@ -39,6 +39,7 @@ products:
 - azure-iot-hub
 units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.introduction
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.design-secure-iot-solution
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.gpio-hardware-interfaces
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.event-driven-programming
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-setup-azure-sphere
@@ -49,5 +50,6 @@ units:
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-set-room-virtual-thermostat-azure-iot-device-twins
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.how-remote-reboot-device
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.exercise-remote-reboot-device
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.knowledge-check
 - learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub.summary
 

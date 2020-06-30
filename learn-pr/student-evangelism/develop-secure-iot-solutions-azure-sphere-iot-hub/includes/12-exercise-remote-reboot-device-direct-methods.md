@@ -1,4 +1,4 @@
-## Step 1: Build and deploy your application
+## Build and deploy your application
 
 1. Start Visual Studio Code to open your project.
 

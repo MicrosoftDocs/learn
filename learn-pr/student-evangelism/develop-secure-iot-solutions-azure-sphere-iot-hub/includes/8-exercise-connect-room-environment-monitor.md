@@ -1,6 +1,6 @@
 ## Step 1: Prepare Azure resources
 
-You can prepare Azure cloud resources with the Azure CLI, the Azure Portal Web interface, or deployment templates. For this module, we will be using an Azure deployment template. Click the **Deploy to Azure** button to deploy a Device Provisioning Service and a linked IoT Hub.
+You can prepare Azure cloud resources with the Azure CLI, the Azure Portal (Web interface), or deployment templates. For this module, we will be using an Azure deployment template. Click the **Deploy to Azure** button to deploy a Device Provisioning Service and a linked IoT Hub.
 
 ![Deploy to Azure](https://camo.githubusercontent.com/8305b5cc13691600fbda2c857999c4153bee5e43/68747470733a2f2f617a7572656465706c6f792e6e65742f6465706c6f79627574746f6e2e706e67)
 
@@ -45,9 +45,14 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 1. Switch back to the Azure web portal.
 2. Click on the Device Provisioning Service (**DPS**) resource link.
 3. Click **Certificates** from the Device Provisioning Service sidebar menu.
-4. Click **+ Add**. ![The illustration shows how to add device provisionining service.](../media/dps-certificate-add.png)
+4. Click **+ Add**.
+
+    ![The illustration shows how to add device provisionining service.](../media/dps-certificate-add.png)
+
 5. Name your certificate, and then select the **CAcertificate.cer** file you downloaded in the previous step to upload into the device provisioning service.
-6. Click **Save**. ![The illustration shows how to add certificate.](../media/dps-certificate-upload.png)
+6. Click **Save**.
+
+    ![The illustration shows how to add certificate.](../media/dps-certificate-upload.png)
 
 ### Verify the uploaded certificate
 
@@ -58,7 +63,6 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 3. Copy the verification code to the clipboard.
 
    ![The illustration shows how to verify certificate.](../media/dps-certificate-verify.png)
-
 
 ### Generate the verification certificate
 
@@ -99,16 +103,15 @@ From the Azure Web portal.
 
    ![The illustration shows how to add enrollment group.](../media/dps-enrollment-group-add.png)
 
-
 ## Step 4: Explicitly allow connections to Azure IoT Endpoints
 
 Remember, applications on Azure Sphere are locked down by default, including hardware and network endpoints. You must explicitly allow connections to the network endpoints of your Azure IoT Hub **and** your Device Provisioning Service otherwise your Azure Sphere application will not be able to connect.
 
 You must allow communications to the following **three** Azure IoT network endpoints:
 
-1. The Device Provisioning Service **Global device endpoint**.
-2. The Device Provisioning Service **Service endpoint**.
-3. The IoT Hub **Hostname** endpoint.
+- The Device Provisioning Service **Global device endpoint**.
+- The Device Provisioning Service **Service endpoint**.
+- The IoT Hub **Hostname** endpoint.
 
 Follow these steps:
 
@@ -128,15 +131,15 @@ Follow these steps:
 
 7. Select the **IoT Hub** resource.
 
-8. Copy the IoT Hub **Hostname** URL to *Notepad*. ![The illustration shows overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
+8. Copy the IoT Hub **Hostname** URL to *Notepad*.
 
-------
+    ![The illustration shows overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
 
 ## Step 5: Get the Azure Sphere Tenant ID
 
 We need the ID of the Azure Sphere Tenant that is now trusted by the Device Provisioning Service.
 
-1. From the Azure Sphere Developer Command Prompt, run 
+1. From the Azure Sphere Developer Command Prompt, run
 
    `azsphere tenant show-selected`
 
@@ -180,7 +183,7 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
 
 4. Save the file. This will auto-generate the CMake cache. ![The illustration shows cmake configuration.](../media/vs-code-open-cmake.png)
 
-## Step 7: Understanding Azure Sphere Security
+## Step 8: Understanding Azure Sphere Security
 
 Applications on Azure Sphere are locked down by default. You must grant capabilities to the application. Granting capabilities is key to Azure Sphere security and is also known as the [Principle of least privilege](https://en.wikipedia.org/wiki/Principle_of_least_privilege). You should only grant the capabilities the Azure Sphere application needs to run correctly, and no more.
 
@@ -388,7 +391,7 @@ static void SendMsgLedOn(char* message)
 
 ------
 
-## Step 12: Expected Device Behaviour
+## Step 12: Expected Device Behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
@@ -411,8 +414,6 @@ static void SendMsgLedOn(char* message)
 ![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
 1. The green LED closest to the USB connector will start to blink.
-
-------
 
 ## Step 13: View the device telemetry from the Azure Cloud Shell
 

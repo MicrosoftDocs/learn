@@ -2,9 +2,9 @@ In this unit, you'll learn how to control an Azure Sphere application using Azur
 
 ## Azure IoT cloud to device communications
 
-1. **Direct Methods** for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
-2. **Device Twins** are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
-3. **Cloud-to-device** messages are for one-way notifications to the device app.
+- **Direct Methods** for communications that require immediate confirmation of the result. Direct methods are often used for interactive control of devices, such as turning on a fan.
+- **Device Twins** are for long-running commands intended to put the device into a certain desired state. For example, set the sample rate for a sensor to every 30 minutes.
+- **Cloud-to-device** messages are for one-way notifications to the device app.
 
 This unit will cover **Azure IoT Device Twins** and explain **DeviceTwinBindings** to simplify the implementation of Azure IoT.
 
@@ -14,15 +14,15 @@ Device twins are JSON documents that store device information, including metadat
 
 You can use device twins as follows:
 
-1. Cloud to device updates.
+- Cloud to device updates.
 
    Typically an IoT Hub application would set the value of a device twin. For example, to set the temperature of the room. IoT Hub sends a desired property device twin message to the device. The device actions the desired property, and then the device responds with a reported property device twin message. Azure IoT Hub stores the reported property.
 
-2. Device to cloud updates.
+- Device to cloud updates.
 
    A device can send a reported property device twin message to Azure. For example, a device could report its firmware level on startup. Azure IoT Hub stores the reported property.
 
-3. Querying reported properties.
+- Querying reported properties.
 
    With device twins reported state stored in Azure, it is possible to query the stored device twin properties cloud side. For example, list all devices with a firmware version less than 2.0, as these devices require an update. Or, list all rooms with a temperature setting higher than 25 degrees Celsius.
 

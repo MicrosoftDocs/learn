@@ -6,7 +6,7 @@ The components for this unit:
 
 **Azure IoT Hub:** enables highly secure and reliable communication between your IoT application and the devices it manages. Azure IoT Hub provides a cloud-hosted solution back-end to connect virtually any device. Extend your solution from the cloud to the edge with per-device authentication, built-in device management, and scaled provisioning.
 
-**Device Provisioning Service:** This project leverages the [Azure IoT Hub Device Provisioning Service(PDS). The Device Provisioning Service(DPS) enables zero-touch, just-in-time, large scale device provisioning.
+**Device Provisioning Service:** This project leverages the Azure IoT Hub Device Provisioning Service (DPS). The DPS enables zero-touch, just-in-time, large scale device provisioning.
 
 **High-Level Application:** Every Azure Sphere device has a high-level application, which runs on the Azure Sphere OS and uses the application libraries. A high-level application can:
 
