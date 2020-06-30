@@ -83,7 +83,7 @@ quiz:
     - content: 'When an IoT Central data export service is created, data is automatically routed to it. '
       isCorrect: false
       explanation: The statement is true, as long as the Enabled setting is On, which it is by default.
-    - content: 'Event Hubs are a good gateway for an event pipeline.'
+    - content: 'Event Hubs is a good gateway for an event pipeline.'
       isCorrect: false
       explanation: This statement is true.  
     - content: 'The option to create a container within a Blob storage resource is optional, for data export purposes.'
