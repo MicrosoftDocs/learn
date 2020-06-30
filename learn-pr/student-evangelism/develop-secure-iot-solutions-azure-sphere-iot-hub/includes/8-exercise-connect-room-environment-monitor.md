@@ -86,6 +86,7 @@ Devices claimed by your Azure Sphere tenant will automatically be enrolled with 
 
    ![The illustration shows how to verify certificate.](../media/dps-certificate-verify-upload.png)
 
+------
 
 ## Step 3: Create a Device Provisioning Service Enrollment Group
 
@@ -102,6 +103,8 @@ From the Azure Web portal.
 5. Click Save.
 
    ![The illustration shows how to add enrollment group.](../media/dps-enrollment-group-add.png)
+
+------
 
 ## Step 4: Explicitly allow connections to Azure IoT Endpoints
 
@@ -135,6 +138,8 @@ Follow these steps:
 
     ![The illustration shows overview page of IoT Hub.](../media/iot-hub-endpoint-url.png)
 
+------
+
 ## Step 5: Get the Azure Sphere Tenant ID
 
 We need the ID of the Azure Sphere Tenant that is now trusted by the Device Provisioning Service.
@@ -163,6 +168,8 @@ We need the ID of the Azure Sphere Tenant that is now trusted by the Device Prov
 4. Open the **Lab_2_Send_Telemetry_to_Azure_IoT** folder.
 5. Click **Select Folder** button to open the project.
 
+------
+
 ## Step 7: Set your developer board configuration
 
 These labs support developer boards from AVNET and Seeed Studio. You need to set the configuration that matches your developer board.
@@ -182,6 +189,8 @@ The default developer board configuration is for the AVENT Azure Sphere Starter 
    ```
 
 4. Save the file. This will auto-generate the CMake cache. ![The illustration shows cmake configuration.](../media/vs-code-open-cmake.png)
+
+------
 
 ## Step 8: Understanding Azure Sphere Security
 
@@ -227,7 +236,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 2. Review the pin mappings set up for the Azure Sphere Learning Path using the Avnet Starter Kit.
 
-   > Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies) article.
+   > [!NOTE] Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies) article.
 
    ```
    /* Copyright (c) Microsoft Corporation. All rights reserved.
@@ -264,6 +273,8 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
    ```
 
 3. Next, from Visual Studio Code, open the main.c file to bring back into focus.
+
+------
 
 ## Step 9: Configure the Azure Sphere Application
 
@@ -413,7 +424,9 @@ static void SendMsgLedOn(char* message)
 
 ![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The green LED closest to the USB connector will start to blink.
+- The green LED closest to the USB connector will start to blink.
+
+------
 
 ## Step 13: View the device telemetry from the Azure Cloud Shell
 
