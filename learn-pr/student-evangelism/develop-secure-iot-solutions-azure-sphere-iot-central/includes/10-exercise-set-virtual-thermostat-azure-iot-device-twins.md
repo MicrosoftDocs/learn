@@ -28,7 +28,7 @@
 
 10. From Visual Studio Code, press F5 to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
-## Step 2: Expected Device Behavior
+## Step 2: Expected device behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
@@ -67,7 +67,8 @@
 
 4. Azure Sphere devices with builtin buttons, press **Button A** or **Button B** to update the **Actual Temperature** property in IoT Central.
 
-   > Note, IoT Central does not update immediately, it might take a minute or two for the Actual Temperature property to change.
+    > [!NOTE]
+    > IoT Central does not update immediately, it might take a minute or two for the Actual Temperature property to change.
 
    Virtual button press events are generated for Azure Sphere devices that do not have builtin buttons.
 

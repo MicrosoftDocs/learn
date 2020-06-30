@@ -327,7 +327,7 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 1. Open the **app_manifest.json** file
 
-   ![](../media/vs-code-open-app-manifest.png)
+   ![](../media/visual-studio-code-open-app-manifest.png)
 
 2. Update the Azure IoT Central Application connection properties.
 
@@ -442,7 +442,7 @@ static void SendMsgLedOn(char* message)
 
 2. Select **CMake: [Debug]: Ready** from the Visual Studio Code Status Bar.
 
-   ![The illustration shows CMake status.](../media/vs-code-start-application.png)
+   ![The illustration shows CMake status.](../media/visual-studio-code-start-application.png)
 
 3. From Visual Studio Code, press F5 to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 

@@ -28,25 +28,25 @@
 
 10. From Visual Studio Code, press F5 to build, deploy, start, and attached the remote debugger to the application now running the Azure Sphere device.
 
-## Expected Device Behavior
+## Expected device behavior
 
 ### Avnet Azure Sphere MT3620 Starter Kit
 
 ![The illustration shows Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. LED3 will turn yellow when connected to Azure.
+LED3 will turn yellow when connected to Azure.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The network LED will turn red when connected to Azure.
+The network LED will turn red when connected to Azure.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The green LED closest to the USB connector will turn on when connected to Azure.
+The green LED closest to the USB connector will turn on when connected to Azure.
 
 ## Testing Azure IoT Central Commands
 

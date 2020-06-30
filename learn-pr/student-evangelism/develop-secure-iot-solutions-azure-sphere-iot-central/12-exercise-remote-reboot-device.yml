@@ -4,7 +4,7 @@ title: Exercise - Remote reboot your Azure Sphere with Azure IoT Direct Methods
 metadata:
   title: Exercise - Remote reboot your Azure Sphere with Azure IoT Direct Methods
   description: In this section, we guide learner how to control Azure Sphere with Azure IoT Direct Methods
-  ms.date: 6/29/2020
+  ms.date: 06/29/2020
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
