@@ -11,6 +11,6 @@ metadata:
   ms.prod: learning-sqlserver
 interactive: bash
 azureSandbox: true
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/9-exercise-install-sql-server-container.md)]

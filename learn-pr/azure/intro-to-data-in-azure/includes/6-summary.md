@@ -1,4 +1,4 @@
-![An empty bag connected to Azure storage on a map of the world representing the final storage solution](../media/6-heading.png)
+:::image type="icon" source="../media/6-heading.png" border="false":::
 
 In this module, you explored the benefits of using Azure to store your data. Azure provides the following features:
 
