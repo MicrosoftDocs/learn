@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.automate-github-using-github-script.2-what-is-github-script
+title: What is GitHub Script?
+metadata:
+  title: What is GitHub Script?
+  description: Learn to interact with the GitHub API from GitHub Actions using GitHub Script.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-github-script.md)]

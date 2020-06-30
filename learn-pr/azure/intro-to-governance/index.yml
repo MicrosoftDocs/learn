@@ -28,6 +28,8 @@ roles:
 - student
 products:
 - azure
+- azure-policy
+- azure-blueprints
 units:
 - learn.intro-to-compliance.1-introduction
 - learn.intro-to-compliance.2-azure-policy
