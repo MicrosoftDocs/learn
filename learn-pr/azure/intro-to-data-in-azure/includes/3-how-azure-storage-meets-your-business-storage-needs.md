@@ -18,13 +18,13 @@ You can migrate your existing SQL Server databases with minimal downtime using t
 
 The following illustration shows the types of data from the online learning portal scenario that would be stored in an Azure SQL database.
 
-![An illustration showing Azure SQL used to store student information such as transcripts, certifications, and study materials.](../media/3-Azure_SQL.png)
+![Illustration showing an Azure SQL Database used to store student information such as personal information, transcripts, certifications, and study materials.](../media/3-Azure_SQL.png)
 
 :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    ![Azure Cosmos DB](../media/3-cosmos-db.png)
+    :::image type="icon" source="../media/3-cosmos-db.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
@@ -32,13 +32,13 @@ The following illustration shows the types of data from the online learning port
 
 Azure Cosmos DB is a globally distributed database service. It supports schema-less data that lets you build highly responsive and **Always On** applications to support constantly changing data. You can use this feature to store data that is updated and maintained by users around the world. The following illustration shows a sample Azure Cosmos DB database that's used to store data that's accessed by people located across the globe.
 
-![An illustration showing usage of Azure Cosmos DB in the online training scenario to store the course catalog. Azure Cosmos DB is a good choice here because the catalog is updated by administrators and accessed by students all over the world.](../media/3-Azure_cosmos_db.png)
+![Illustration showing usage of Azure Cosmos DB in the online training scenario to store the course catalog, where a developer updates the catalog frequently and the catalog is consumed by a global audience.](../media/3-Azure_cosmos_db.png)
 
 :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    ![Azure Blob storage](../media/3-azure-blob-storage.png)
+    :::image type="icon" source="../media/3-azure-blob-storage.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
@@ -50,13 +50,13 @@ Blobs aren't limited to common file formats. A blob could contain gigabytes of b
 
 Azure Blob storage lets you stream large video or audio files directly to the user's browser from anywhere in the world. Blob storage is also used to store data for backup, disaster recovery, and archiving. It has the ability to store up to 8 TB of data for virtual machines. The following illustration shows an example usage of Azure blob storage.
 
-![An illustration showing Azure blob storage used to store and stream video or audio files.](../media/3-Azure_blob.png)
+![Illustration showing Azure blob storage used to store and stream video or audio files to a web browser.](../media/3-Azure_blob.png)
 
 :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    ![Azure Data Lake Storage](../media/3-azure-data-lake.png)
+    :::image type="icon" source="../media/3-azure-data-lake.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
@@ -66,13 +66,15 @@ The Data Lake feature allows you to perform analytics on your data usage and pre
 
 **Azure Data Lake Storage** combines the scalability and cost benefits of object storage with the reliability and performance of the Big Data file system capabilities. The following illustration shows how Azure Data Lake stores all your business data and makes it available for analysis.
 
-![An illustration showing the role of Azure Data Lake in preparing and storing your data for use by analysis tools. Azure Data Lake can handle a variety of input types such as relational, video, or sensor data.](../media/3-Data_lake_store_concept.png)
+:::image type="complex" source="../media/3-Data_lake_store_concept.png" alt-text="Diagram showing the role of Azure Data Lake in preparing and storing your data for use by analysis tools.":::
+Data progresses through a flow diagram from ingest in its native format; prepare, where data is cleansed, enriched, annotated, and schematized; store, where data is retained for present and future analysis; then to analyze, where analytics engines like Hadoop and Spark are used on the data. Data is shown ingested to Azure Data Lake Store from devices, social media, LOB applications, web sites, relational databases, video, Clickstream, and sensors. From there, it can be accessed with batch queries, interactive queries, real-time analytics, machine learning, and data warehouse.
+:::image-end:::
 
 :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    ![Azure Files](../media/3-azure-files.png)
+    :::image type="icon" source="../media/3-azure-files.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
@@ -82,13 +84,13 @@ Azure Files offers fully managed file shares in the cloud that are accessible vi
 
 The following illustration shows Azure Files being used to share data between two geographical locations. Azure Files uses the Server Message Block (SMB) protocol that ensures the data is encrypted at rest and in transit.
 
-![An illustration showing the file sharing capabilities of Azure Files. ](../media/3-Azure_Files.png)
+![Illustration showing the file sharing capabilities of Azure Files between a Wester US Azure File Share and a Europe Azure File Share, each with their own SMB users.](../media/3-Azure_Files.png)
 
 :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    ![Azure Queue](../media/3-azure-queue.png)
+    :::image type="icon" source="../media/3-azure-queue.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
@@ -100,7 +102,7 @@ Azure Queue Storage can be used to help build flexible applications and separate
 
 Typically, there are one or more sender components and one or more receiver components. Sender components add messages to the queue, while receiver components retrieve messages from the front of the queue for processing. The following illustration shows multiple sender applications adding messages to the Azure Queue and one receiver application retrieving the messages.
 
-![An illustration showing a high-level architecture of Azure Queue storage](../media/3-Azure_Queue.png)
+![Illustration showing a high-level architecture of Azure Queue storage, with web app, mobile app, and service message senders pushing to a queue consumed by a service or application message receiver.](../media/3-Azure_Queue.png)
 
 You can use queue storage to:
 
@@ -112,7 +114,7 @@ You can use queue storage to:
 :::row-end:::
 :::row:::
   :::column:::
-    ![Disk Storage](../media/3-azure-standard-storage.png)
+    :::image type="icon" source="../media/3-azure-standard-storage.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
@@ -124,13 +126,13 @@ Disks come in many different sizes and performance levels, from solid-state driv
 
 When working with VMs, you can use standard SSD and HDD disks for less critical workloads, and premium SSD disks for mission-critical production applications. Azure Disks have consistently delivered enterprise-grade durability, with an industry-leading ZERO% annualized failure rate. The following illustration shows an Azure virtual machine using separate disks to store different data.
 
-![An illustration showing two disks inside a virtual machine, one that stores the operating system and one that stores data.](../media/3-Azure_disks.png)
+![Illustration showing two disks inside a virtual machine, one that stores the operating system and one that stores data.](../media/3-Azure_disks.png)
 
 :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    ![Storage tiers](../media/3-storage-tiers.png)
+    :::image type="icon" source="../media/3-storage-tiers.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
@@ -148,7 +150,7 @@ Azure offers three storage tiers for blob object storage:
 :::row-end:::
 :::row:::
   :::column:::
-    ![Encryption and replication](../media/3-azure-storage-encryption.png)
+    :::image type="icon" source="../media/3-azure-storage-encryption.png" border="false":::
   :::column-end:::
     :::column span="3":::
 
