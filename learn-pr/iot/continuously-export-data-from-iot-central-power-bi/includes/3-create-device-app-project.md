@@ -76,13 +76,13 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 ::: zone-end
 ::: zone pivot="vs-node"
 
-1. In Visual Studio, go to the **JavaScript** project types, and then select **Blank Node.js Console Application**, called "RefrigeratedTruck".
+1. In Visual Studio, go to the **JavaScript** project types, and then select **Blank Node.js Console Application**, called "RefrigeratedTruck."
 
     [![Screenshot showing how to create a new blank Node.js project in Visual Studio](../media/refrigerated-trucks-vs-project.png)](../media/refrigerated-trucks-vs-project.png#lightbox)
 
 1. Right-click the **npm** entry in Solution Explorer, and select **Install New npm Packages**.
 
-1. On the **showing how to add an npm package, in Visual Studio, search for and install the following libraries:
+1. On the **Install New npm Packages** page, search for and install the following libraries:
 
     * **azure-iot-device**
     * **azure-iot-device-mqtt**
@@ -142,12 +142,12 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 ::: zone pivot="vscode-csharp"
 
 1. Copy the previously downloaded Program.cs code to the *Program.cs* file of the project.
-1. Replace the strings in the code (`ScopeID`, `DeviceID`, `PrimaryKey`, and `AzureMapsKey`) with the ID and key strings you stored in your "Truck keys.txt" file.
+1. Replace the strings in the code (`ScopeID`, `DeviceID`, `PrimaryKey`, and `AzureMapsKey`) with the ID and key strings you stored in your *Truck keys.txt* file.
 1. In the Visual Studio Code **Terminal**, enter **dotnet run**.
 
 ::: zone-end
 
-A console window opens, displaying the text "Starting Truck number 1" on the first line.
+    A console window opens, displaying the text "Starting Truck number 1" on the first line.
 
 You're now ready to test the device app.
 
