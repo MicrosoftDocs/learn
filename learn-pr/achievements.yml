@@ -142,3 +142,18 @@ achievements:
   title: Use deep learning models to make predictions about specialized data
   summary: Use deep learning models to make predictions about specialized data
   iconUrl: /learn/achievements/introduction-to-deep-learning.svg
+- uid: learn.neural-networks.badge
+  type: badge
+  title: Make predictions from complex data with neural networks
+  summary: Make predictions from complex data with neural networks
+  iconUrl: /learn/achievements/introduction-to-neural-networks.svg
+- uid: learn.ml-crash-course.trophy
+  type: trophy
+  title: Machine learning crash course
+  summary: Machine learning crash course
+  iconUrl: /learn/achievements/ml-crash-course.svg
+- uid: learn.introduction-to-regression.badge
+  type: badge
+  title: Predict numeric values with regression
+  summary: Predict numeric values with regression
+  iconUrl: /learn/achievements/introduction-to-regression.svg

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>NA/monitor-data-drift-with-azure-machine-learning</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-8">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#CCCCCC" offset="15%"></stop>
+            <stop stop-color="#707070" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-1.34572488e-14%" id="linearGradient-10">
+            <stop stop-color="#773ADC" offset="0%"></stop>
+            <stop stop-color="#9255E6" offset="25%"></stop>
+            <stop stop-color="#A669EE" offset="50%"></stop>
+            <stop stop-color="#B376F2" offset="76%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0.303030303%" id="linearGradient-11">
+            <stop stop-color="#773ADC" offset="0%"></stop>
+            <stop stop-color="#9255E6" offset="25%"></stop>
+            <stop stop-color="#A669EE" offset="50%"></stop>
+            <stop stop-color="#B376F2" offset="76%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="99.6969697%" x2="50%" y2="0%" id="linearGradient-12">
+            <stop stop-color="#773ADC" offset="0%"></stop>
+            <stop stop-color="#9255E6" offset="25%"></stop>
+            <stop stop-color="#A669EE" offset="50%"></stop>
+            <stop stop-color="#B376F2" offset="76%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-150.0%" y="-133.3%" width="400.0%" height="366.7%" filterUnits="objectBoundingBox" id="filter-13">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="0%" y1="50%" x2="100.2%" y2="50%" id="linearGradient-14">
+            <stop stop-color="#50C7E8" offset="0%"></stop>
+            <stop stop-color="#4CC3E4" offset="25%"></stop>
+            <stop stop-color="#41B6DA" offset="51%"></stop>
+            <stop stop-color="#2FA2C8" offset="77%"></stop>
+            <stop stop-color="#1989B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-20" transform="translate(-159.000000, -1079.000000)">
+            <g id="NA/monitor-data-drift-with-azure-machine-learning" transform="translate(160.000000, 1080.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Computer" transform="translate(21.000000, 27.000000)" fill-rule="nonzero">
+                    <rect id="Rectangle" fill="url(#linearGradient-8)" x="0.595744681" y="0" width="52" height="36" rx="0.6"></rect>
+                    <path d="M37.9256997,46.9762419 C32.5857219,46.1295896 32.3757227,42.2591793 32.3757227,36 L21.7857667,36 C21.7857667,42.2591793 21.6057675,46.1295896 16.2657897,46.9762419 C14.7389912,47.1465252 13.5864821,48.4517399 13.5957447,50 L40.5957447,50 C40.6050072,48.4517399 39.4524981,47.1465252 37.9256997,46.9762419 Z" id="Path" fill="url(#linearGradient-9)"></path>
+                </g>
+                <g id="Metrics" transform="translate(34.000000, 30.000000)" fill-rule="nonzero">
+                    <polygon id="Path" fill="#B796F9" points="22.184076 2 15.7720964 12.7343413 8.99050402 6.23326134 2 14.7602592 3.63915267 15.9697624 9.18334551 9.24190065 16.2220599 16 24 2.98272138"></polygon>
+                    <circle id="Oval" fill="url(#linearGradient-10)" cx="8.5" cy="7.5" r="2.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-11)" cx="16.5" cy="14.5" r="2.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-12)" cx="22.5" cy="2.5" r="2.5"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-12)" cx="2.5" cy="15.5" r="2.5"></circle>
+                    <rect id="Rectangle" fill="#0078D4" x="7" y="16" width="4" height="12" rx="0.28"></rect>
+                    <rect id="Rectangle" fill="#005BA1" x="14" y="21" width="4" height="7" rx="0.28"></rect>
+                    <rect id="Rectangle" fill="#005BA1" x="21" y="12" width="4" height="16" rx="0.28"></rect>
+                    <rect id="Rectangle" fill="#5EA0EF" x="1" y="21" width="4" height="7" rx="0.28"></rect>
+                </g>
+                <polyline id="Path-142" fill="#198AB3" transform="translate(74.776279, 69.449673) rotate(-30.000000) translate(-74.776279, -69.449673) " points="72.7762794 63.9496732 72.7762794 74.9496732 76.7762794 74.9496732 76.7762794 63.9496732"></polyline>
+                <g id="Group-13" transform="translate(67.026279, 56.026279) rotate(-30.000000) translate(-67.026279, -56.026279) translate(56.026279, 45.026279)" fill-rule="nonzero">
+                    <circle id="Oval" fill="#50E6FF" cx="11" cy="11" r="11"></circle>
+                    <circle id="Oval" fill="#FFFFFF" cx="11" cy="11" r="8"></circle>
+                </g>
+                <g id="Icon-machinelearning-166-Machine-Learning-Service-Workspaces" filter="url(#filter-13)" transform="translate(63.000000, 51.000000)" fill-rule="nonzero">
+                    <polygon id="bc892891-989d-4c43-80d3-d2b4546a974f" fill="#198AB3" points="7.44303797 9 0.556962025 9 0 7 8 7"></polygon>
+                    <polygon id="Path" fill="url(#linearGradient-14)" points="2.9 0 2.9 3.38823529 0 6.82941176 0.55 9 5 3.38823529 5 0"></polygon>
+                    <polygon id="e6be01d6-345d-4df4-bbdb-151aa8edaa1f" fill="#32BEDD" points="7.39726027 9 4 5.59574468 5.42465753 4 8 6.81914894"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
