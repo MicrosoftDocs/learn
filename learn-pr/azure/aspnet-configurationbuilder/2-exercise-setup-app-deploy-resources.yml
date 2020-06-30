@@ -18,12 +18,6 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: "Create the App Service plan."
-  azure:
-    resource:
-      type: "Microsoft.Web/serverFarms"
-- action: exists
-  environment: azure
   hint: "Create web app."
   azure:
     resource:
