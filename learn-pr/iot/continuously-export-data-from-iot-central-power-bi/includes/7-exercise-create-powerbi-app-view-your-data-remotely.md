@@ -170,7 +170,7 @@ An empty Stream Analytics job is displayed as a skeleton query, with no inputs o
 
     a. For **Visualization Type**, select **Line chart**.  
     b. For **Axis**, select **EventProcessedUtcTime**.  
-    c. For **Values**, select **ContentsTemperature** again. 
+    c. For **Values**, select **ContentsTemperature** again.  
     d. You don't need to add a title.  
     e. Select **Next**, and then select **Apply**.
 
