@@ -91,3 +91,7 @@ To set the desired temperature:
 2. Save the Property. This will send the desired temperature property to the Azure Sphere. The blinking LED color may change depending on the desired temperature chosen.
 
 ![The illustration shows display settings.](../media/iot-central-display-settings.png)
+
+## Close Visual Studio
+
+Now close Close Visual Studio.

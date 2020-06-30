@@ -524,3 +524,7 @@ You need to **Migrate** the newly enrolled device to the **Azure Sphere** templa
 > Azure IoT Central does not update immediately. It may take a minute or two for the temperature, humidity, and pressure telemetry to be displayed.
 
 ![The illustration shows how to display measurements.](../media/iot-central-display-measurements.png)
+
+## Close Visual Studio
+
+Now close Close Visual Studio.

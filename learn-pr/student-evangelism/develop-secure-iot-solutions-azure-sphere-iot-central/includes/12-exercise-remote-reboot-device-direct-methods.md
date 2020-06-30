@@ -34,26 +34,19 @@
 
 ![The illustration shows Avnet Azure Sphere kit.](../media/avnet-azure-sphere.jpg)
 
-1. The RGB LED5 will start to blink. In the next section, you will be setting the desired temperature which will determine the RGB LED colour.
-2. LED4 will turn yellow when connected to Azure.
-3. LED3 will blink when telemetry is sent to IoT Central
-4. Press **Button A** or **Button B** on the device to change the blink rate of LED5 and to update the **Actual Temperature** Device twin property in IoT Central.
+1. LED3 will turn yellow when connected to Azure.
 
 ### Seeed Studio Azure Sphere MT3620 Development Kit
 
 ![The illustration shows Seeed Studio Azure Sphere kit.](../media/seeed-studio-azure-sphere-rdb.jpg)
 
-1. The RGB LED 1 will start to blink. In the next section, you will be setting the desired temperature which will determine the RGB LED colour.
-2. The network LED will turn red when connected to Azure.
-3. LED 4 will blink blue when telemetry is sent to IoT Central
-4. Press **Button A** or **Button B** on the device to change the blink rate of RGB LED 1 and to update the **Actual Temperature** Device twin property in IoT Central.
+1. The network LED will turn red when connected to Azure.
 
 ### Seeed Studio MT3620 Mini Dev Board
 
 ![The illustration shows Seeed Studio Mini Azure Sphere kit.](../media/seeed-studio-azure-sphere-mini.png)
 
-1. The green LED closest to the USB connector will start to blink
-2. Given this device has no builtin buttons then virtual **Button A** and **Button B** presses will be generated every 10 seconds. The blink rate will change and the **Actual Temperature** Device twin property in IoT Central will be updated.
+1. The green LED closest to the USB connector will turn on when connected to Azure.
 
 ## Testing Azure IoT Central Commands
 
@@ -75,3 +68,7 @@
 
     > [!NOTE]
     > You may see a timed out message in the history depending on how long it took you to step through the code in Visual Studio.
+
+## Close Visual Studio
+
+Now close Close Visual Studio.

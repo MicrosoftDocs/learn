@@ -1,5 +1,7 @@
 Connect your Azure Sphere dev kit to your PC through USB. When plugged in, the device exposes three COM ports. Open Device Manager on PC and make sure that three COM ports are installed. COM ports may be different from those in the figure.
 
+![The illustration shows COM ports in Device Manager.](../media/comports.png)
+
 Alternatively, you can download the drivers from [Future Technology Devices International](https://www.ftdichip.com/Drivers/VCP.htm) ([FTDI](https://www.ftdichip.com/Drivers/VCP.htm)). Choose the driver that matches your Windows installation (32-bit or 64-bit).
 
 ## Install Azure Sphere SDK
@@ -147,7 +149,7 @@ You'll configure the Azure Sphere for networking. Hence, you can receive cloud u
 > On Windows, clone the *Azure Sphere Learning Path* to a directory close to the root directory on your computer. For example **c:\lab**. The reason is the Azure Sphere build process uses CMake which does not support Windows 10 long path/folder names.
 
 ```
-git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git
+git clone --depth 1 https://github.com/MicrosoftDocs/Azure-Sphere-Developer-Learning-Path.git Azure-Sphere
 ```
 
 ## Clone the Azure Sphere Samples
