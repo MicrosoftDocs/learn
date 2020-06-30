@@ -97,7 +97,7 @@ Now advance step by step until the variable `convertedValue` is set. You should 
 
 Step a bit further to see the value of `displayValue`. Is it the string we expect to display?
 
-We can then conclude that up to this point, the methods `convertToCurrency()` and `formatValueForDisplay()` seem correct and return the expected result.
+We can then conclude that up to this point, the functions `convertToCurrency()` and `formatValueForDisplay()` seem correct and return the expected result.
 
 Continue stepping until the `console.info()` call, and examine this line carefully. Do you see the mistake here?
 
