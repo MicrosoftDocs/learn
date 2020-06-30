@@ -1,5 +1,7 @@
 Once you have decided to use a Data Science Virtual Machine to explore your domain, you need to decide whether you'd prefer Windows Server 2019 or Ubuntu Server 18.04 LTS as the operating system. Additionally, you should plan what hardware and network resources you'd like the DSVM to use. 
 
+This should show the name of the Sandboxed RG: <rgn>[sandbox resource group name]</rgn>
+
 ## Data Science Virtual Machine Operating System choices 
 
 There are two Data Science Virtual Machine images:
