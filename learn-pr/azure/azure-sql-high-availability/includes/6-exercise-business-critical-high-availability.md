@@ -15,8 +15,6 @@ In order to complete this exercise, you will complete the following steps:
 
 This exercise will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
 
-Learn more about the PowerShell commands used and available [in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples?tabs=single-database).  
-
 1. Configure cloud shell environment
 
     In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  

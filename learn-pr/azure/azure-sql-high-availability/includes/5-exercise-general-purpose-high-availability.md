@@ -14,8 +14,6 @@ In order to complete this exercise, you will complete the following steps:
 
 This exercise will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
 
->Note: Learn more about the PowerShell commands used and available [in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-powershell-samples?tabs=single-database).  
-
 1. Run the ostress workload
 
     The first step is to create a long-running workload so you can see how a failover affects the ability to read/write data, and how long a failover takes in the General purpose service tier for Azure SQL Database.  

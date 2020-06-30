@@ -194,7 +194,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     ![Select view audit logs](../media/viewauditlogs.png)
 
-    Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use for querying logs for SQL professionals. For the KQL documentation, [refer here](https://docs.microsoft.com/azure/kusto/query/).  
+    Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use for querying logs for SQL professionals.  
 
     ![Select log analytics](../media/loganalytics.png)  
 
@@ -296,4 +296,4 @@ In this exercise, you'll follow the steps that go along with the process above.
     az sql db list -o table
     ```
 
-You've now seen how you can leverage point in time restore (PITR) in Azure SQL Database. PITR is also available in Azure SQL Managed Instance, **for databases not the whole instance**. You can use almost the same commands except with `az sql midb` as opposed to `az sql db`. For more information, see the [documentation](https://docs.microsoft.com/cli/azure/sql/midb?view=azure-cli-latest#az-sql-midb-restore).  
+You've now seen how you can leverage point in time restore (PITR) in Azure SQL Database. PITR is also available in Azure SQL Managed Instance, **for databases not the whole instance**. You can use almost the same commands except with `az sql midb` as opposed to `az sql db`.
