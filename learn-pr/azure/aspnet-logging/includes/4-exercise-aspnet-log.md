@@ -4,7 +4,7 @@ The logger currently writes to a local file. While this approach is fine for a w
 
 ## Create a Blob storage account for holding log data
 
-1. In the Cloud Shell window on the right, run the commands shown below to ensure that your environment is still set up correctly. If necessary, recreate any missing environment variables with the values you used earler in the Setup unit.
+1. In the Cloud Shell window on the right, run the commands shown below to ensure that your environment is still set up correctly. If necessary, recreate any missing environment variables with the values you used earlier in the Setup unit.
 
     ```PowerShell
     cd ~/eShopModernizing/Setup

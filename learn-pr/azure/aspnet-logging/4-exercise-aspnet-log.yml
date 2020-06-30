@@ -13,5 +13,5 @@ durationInMinutes: 10
 interactive: powershell
 azureSandbox: true
 content: |
-  [!include[](includes/4-exercise-aspnet-logging.md)]
+  [!include[](includes/4-exercise-aspnet-log.md)]
 
