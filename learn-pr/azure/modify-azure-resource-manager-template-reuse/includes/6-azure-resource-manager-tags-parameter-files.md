@@ -2,13 +2,13 @@ There are two features of Azure Resource Manager templates that you will want to
 
 As you add more resources to your environments you'll quickly find that you need a way to identify the purpose of these resources. Resources have a ```tags:``` attribute for this purpose. And as you deploy to more environments, you'll need an efficient way to keep track of the input parameters. Resource Manager templates can use parameter files to manage parameters for each deployment environment.
 
-## What is resource tags
+## What is Azure resource tags
 
 You tag resources to add values that help you identify their use. For example, you can add tags that list the environment and the project that resource belongs to. Or, you can add tags that identify a cost center or the team that owns the resource. Add any values that make sense for your organization.
 
 The tag value will be displayed in the overview page for that Azure resource and in cost reports.
 
-## How do I create a tag
+## How do I create an Azure resource tag
 
 Each resource has a ```tags:``` attribute. So far, you have been using the default ```displayName``` for the tag for your Storage Account.
 

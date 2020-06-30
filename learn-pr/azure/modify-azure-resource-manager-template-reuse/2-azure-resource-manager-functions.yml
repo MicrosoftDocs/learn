@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.modify-azure-resource-manager-template-reuse.2-azure-resource-manager-functions
+uid: learn.azure.resource-manager-template-reuse.2-azure-resource-manager-functions
 title: Add flexibility to your Azure Resource Manager template with template functions
 metadata:
   title: Add flexibility to your Azure Resource Manager template with template functions

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.modify-azure-resource-manager-template-reuse.4-azure-resource-manager-variables
+uid: learn.azure.resource-manager-template-reuse.4-azure-resource-manager-variables
 title: Reuse expressions with Azure Resource Manager template variables
 metadata:
   title: Reuse expressions with Azure Resource Manager template variables

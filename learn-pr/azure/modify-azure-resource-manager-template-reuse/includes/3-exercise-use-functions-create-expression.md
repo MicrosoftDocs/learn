@@ -16,7 +16,7 @@ In the previous module, you created a Resource Manager template that deployed a 
 
 ## Create an expression to set a unique Storage Account name
 
-Instead of passing in the name of the Storage Account, you change the parameter to take a prefix for the Storage Account name. This parameter will passed to the ```concat``` function in your expression.
+Instead of passing in the name of the Storage Account, you change the parameter to take a prefix for the Storage Account name. This parameter will be passed to the ```concat``` function in your expression.
 
 1. In the parameters section, change ```storageName``` to **storagePrefix**.
 

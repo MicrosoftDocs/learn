@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.modify-azure-resource-manager-template-reuse.6-azure-resource-manager-tags-parameter-files
+uid: learn.azure.resource-manager-template-reuse.6-azure-resource-manager-tags-parameter-files
 title: Maintain multiple environment deployments with Azure Resource Manager template tags and parameter files
 metadata:
   title: Maintain multiple environment deployments with Azure Resource Manager template tags and parameter files
