@@ -89,7 +89,7 @@ To help you understand how much information to include, choose between these fou
 
 ## What Should I Use to Build My Data-Flow Diagram?
 
-Microsoft engineers recommend using one of three tools available today:
+Microsoft engineers recommend using a few tools available today:
 
 - Threat Modeling Tool
 - Visio
