@@ -14,11 +14,10 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/2-exercise-setup-app-deploy-resources.md)]
-  
 tasks:
 - action: exists
   environment: azure
-  hint: "Create web app."
+  hint: "Create the web app."
   azure:
     resource:
       type: "Microsoft.Web/sites"
@@ -29,4 +28,3 @@ tasks:
     resource:
       type: "Microsoft.Sql/servers"
 
-  
