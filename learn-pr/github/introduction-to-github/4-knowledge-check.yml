@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the best way to report a bug to a GitHub project?"
+    choices:
+    - content: "Send an email to a project owner."
+      isCorrect: false
+      explanation: "Emails do not benefit from the issue management infrastructure provided by GitHub."
+    - content: "I don't bother reporting software bugs because there's no transparency and they never get fixed anyway."
+      isCorrect: false
+      explanation: "GitHub provides great infrastructure for reporting, managing, and tracking bugs as issues. As a result, it's easy for the project's community to offer a resolution one way or another."
+    - content: "Search for the bug in the project's existing issues and create a new one if it hasn't been reported yet."
+      isCorrect: true
+      explanation: "A project's issues are visible to anyone who has access to the project, so you may find a resolution is already planned or available. Otherwise, you can create and track the issue yourself."
+  - content: "Suppose you have created a bug fix on a new branch and want it to become part of the next production build generated from the `master` branch. What should you do next?"
+    choices:
+    - content: "Copy your branch changes and commit them directly to the `master` branch."
+      isCorrect: false
+      explanation: "If you have your commits already in place on a new branch, as recommended, than you should create a pull request to merge them in to the `master` branch."
+    - content: "Create a pull request to merge your new branch into the `master` branch."
+      isCorrect: true
+      explanation: "Pull requests are the correct way to communicate that commits are ready for review and ultimate inclusion on the `master` branch."
+    - content: "On second thought, maybe I won't share this fix. I'll just put it in my own private version of the source code."
+      isCorrect: false
+      explanation: "You should reconsider offering your contribution to the original project. By getting your bug fix merged into the `master` branch, you will benefit from it being automatically included in future builds."
+  - content: "It is recommended that you create commits on a branch separate from `master`, and there are plenty of good reasons why. What is **not** a good reason?"
+    choices:
+    - content: "GitHub doesn't allow you to commit directly to the `master` branch."
+      isCorrect: true
+      explanation: "You can commit to the `master` branch unless it has been specifically locked by a branch owner. However, it is recommended that you only merge in commits via pull request."
+    - content: "The `master` branch is intended for the highest-quality code that has passed rigorous review for inclusion."
+      isCorrect: false
+      explanation: "Creating commits on another branch allows others in the project to review changes before committing them to the critical `master` branch."
+    - content: "The `master` branch is often treated differently by a project, and committing to it can create side effects, such as builds and deployments."
+      isCorrect: false
+      explanation: "The default etiquette for GitHub projects is to offer changes via pull request. This allows project owners to properly manage propagation of those changes to the correct branch if and when necessary in order to avoid conflicts, unnecessary resource usage, and more."

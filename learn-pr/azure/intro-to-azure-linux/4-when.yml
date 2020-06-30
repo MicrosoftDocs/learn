@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-linux.4-when
+title: When to use Linux on Azure
+metadata:
+  title: When to use Linux on Azure
+  description: When to use Linux on Azure
+  ms.date: 6/26/2020
+  author: nickwalkmsft
+  ms.author: nickwalk
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-when.md)]

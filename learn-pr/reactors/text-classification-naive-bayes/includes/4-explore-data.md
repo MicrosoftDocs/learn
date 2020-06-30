@@ -69,11 +69,11 @@ The output is:
 > [!div class="alert is-tip"]
 > ### Key takeaway
 >
-> Notice that here, as in previous units, we have stuck together several methods to run on a DataFrame. This kind of additive method-stacking is part of what makes Python and pandas such a power combination for the rough-and-ready data exploration that is a crucial part of data science.
+> Here, as in previous units, we have stuck together several methods to run on a DataFrame. This kind of additive method-stacking is part of what makes Python and pandas a powerful combination for the data exploration that is a crucial part of data science.
 >
 ## Explore the data by using word clouds
 
-Because our data is largely not numeric, you might have noticed that some of our go-to data exploration tools (such as bar charts and the `describe()` method) have been of limited use in exploring this data. Instead, word clouds can be a powerful way of getting a quick glance at what's represented in text data as a whole:
+Because our data is largely not numeric, you might have noticed that some of our standard data-exploration tools (such as bar charts and the `describe()` method) have been of limited use in exploring this data. Instead, word clouds can be a powerful way of getting a quick glance at what's represented in text data as a whole:
 
 ```python
 !pip install wordcloud
@@ -97,7 +97,7 @@ Installing collected packages: wordcloud
 Successfully installed wordcloud-1.6.0
 ```
 
-We have to supply a number of parameters to the `WordCloud()` function and to Matplotlib to render the word clouds, so we will save ourselves some redundant work by writing a short function to handle it. Parameters for `WordCloud()` will include the stop words we want to ignore and font size for the words in the cloud. For Matplotlib, these parameters will include instructions for rendering the word cloud.
+We have to supply parameters to the `WordCloud()` function and to Matplotlib to render the word clouds. We'll save ourselves some redundant work by writing a short function to handle it. Parameters for `WordCloud()` will include the stop words we want to ignore and font size for the words in the cloud. For Matplotlib, these parameters will include instructions for rendering the word cloud.
 
 ```python
 from wordcloud import WordCloud, STOPWORDS
@@ -116,7 +116,7 @@ def get_wordcloud(text_data,title):
   plt.show()
 ```
 
-Now, it's time to plot the word clouds.
+It's time to plot the word clouds.
 
 ```python
 spam_msg = df.loc[df['Class']=='spam']['Message']
@@ -127,7 +127,7 @@ get_wordcloud(ham_msg,'Ham Cloud')
 
 :::image type="content" alt-text="Two word clouds, labeled Spam Cloud and Ham Cloud." source="../media/word-clouds.png" loc-scope="Azure":::
 
-Looking at the two word clouds, it's immediately apparent that the frequency of the most common words is different between our spam and our ham messages, which will form the primary basis of our spam detection.
+Looking at the two word clouds, it's immediately apparent that the frequency of the most common words is different between our spam and our ham messages. This difference will form the primary basis of our spam detection.
 
 ## Explore the data numerically
 
@@ -215,7 +215,7 @@ Spam messages skew much longer than ham messages.
 ### Try it yourself
 
 
-Why does it appear in the details histograms that there is almost no overlap between the lengths of ham and spam text messages? What do the differences in scale tell us (and what could they inadvertently obscure)?
+Why does it appear in the details histograms that there is almost no overlap between the lengths of ham and spam text messages? What do the differences in scale tell us (and what might they inadvertently obscure)?
 
 <br />
 
