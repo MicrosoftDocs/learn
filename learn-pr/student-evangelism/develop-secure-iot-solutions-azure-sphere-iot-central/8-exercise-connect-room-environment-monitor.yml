@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.develop-secure-iot-solutions-for-azure-sphere.exercise-connect-room-environment-monitor
-title: Connect a room environment monitor to Azure IoT Central
+title: Exercise - Connect a room environment monitor to Azure IoT Central
 metadata:
-  title: Connect a room environment monitor to Azure IoT Central
+  title: Exercise - Connect a room environment monitor to Azure IoT Central
   description: In this section, we connect a room environment monitor to Azure IoT Central.
   ms.date: 6/26/2020
   author: leestott
