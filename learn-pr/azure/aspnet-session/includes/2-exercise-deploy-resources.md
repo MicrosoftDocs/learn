@@ -103,7 +103,7 @@ Here, you'll download and test the application locally, and then create the reso
 
     Wait for the script to create the resources used by the lab before continuing.
 
-1. Run the following PowerShell script tp verify that the resources have been cteated successfully:
+1. Run the following PowerShell script tp verify that the resources have been created successfully:
 
     ```PowerShell
     ./verify.ps1
