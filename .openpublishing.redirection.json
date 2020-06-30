@@ -2079,6 +2079,11 @@
       "source_path": "learn-pr/ai-school/introduction-to-neural-networks/6-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-deep-learn-models",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/ml-crash-course/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/paths/create-machine-learn-models",
+      "redirect_document_id": true
     }
   ]
 }
