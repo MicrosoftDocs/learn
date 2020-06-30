@@ -1,4 +1,4 @@
-It's time to put in practice your newly acquired debugging knowledge! Turns out we have the perfect opportunity for that. In our Tailwind Traders application we are developing a new feature to allow displaying a product's price in multiple currencies. A coworker wrote some code for it, but is having a hard time trying to figure out what's going wrong. Let's try helping.
+It's time to put in practice your newly acquired debugging knowledge! Turns out we have the perfect opportunity for that. In our Tailwind Traders application, we are developing a new feature to allow displaying a product's price in multiple currencies. A coworker wrote some code for it, but is having a hard time trying to figure out what's going wrong. Let's try helping.
 
 Open VS Code on your machine, and create a new file named `currency.js` with this code:
 
@@ -20,7 +20,7 @@ function setExchangeRate(rate, sourceCurrency, targetCurrency) {
 
 function convertToCurrency(value, sourceCurrency, targetCurrency) {
   const exchangeRate = rates[sourceCurrency][targetCurrency];
-  return value * exchangeRate;
+  return exchangeRate && value * exchangeRate;
 }
 
 function formatValueForDisplay(value) {
@@ -46,6 +46,8 @@ printForeignValues(10, 'EUR');
 
 Save this file with `Ctrl+S` (Windows, Linux) or `Cmd+S` (Mac).
 
+This program's goal is to set the exchange rate between three currencies (USD, EUR, JPY) and display how much value is `10 EUR` in all the other currencies, with two digits after decimal point. For every currency added, the exchange rate to all other currencies should be calculated.
+
 ## Create a launch configuration
 
 We are going to use the debugger a lot, so let's create a launch configuration for your app. Go to the **Run** tab in VS Code, click on **create a launch.json file** then select **Node.js**.
@@ -63,20 +65,24 @@ Once you have finished preparing your configuration, select it using the dropdow
 
 ## Analyze the issues
 
-Now start the program using the **Start debugging** button. You should see the program finishing quickly, that's normal as you did not add any breakpoints yet.
+Now start the program using the **Start debugging** button.
 
-If you don't have the debug console displayed, bring it on with `Ctrl+Shift+Y` (Windows, Linux) or `Cmd+Shift+Y` (Mac). You should see this in the debug console, followed by an exception.
+:::image source="../media/start-debugging.png" alt-text="Start debugging button in VS Code":::
+
+You should see the program finishing quickly, that's normal as you did not add any breakpoints yet.
+
+If you don't have the debug console displayed, bring it on with `Ctrl+Shift+Y` (Windows, Linux) or `Cmd+Shift+Y` (Mac). You should see this text in the debug console, followed by an exception.
 
 ```text
 The value of 10 EUR is:
 - 11.363636363636365 USD
 ```
 
-What our program aims to do is set the exchange rate between three currencies (USD, EUR, JPY) and display the how much value is `10 EUR` in all the other currencies, with 2 digits after decimal point.
+What our program aims to do is set the exchange rate between three currencies (USD, EUR, JPY) and display how much value is `10 EUR` in all the other currencies, with two digits after decimal point.
 
 We can see two bugs here:
 
-- There is more than 2 digits after decimal point.
+- There are more than two digits after decimal point.
 - The program crash with an exception, failing to display the `JPY` value.
 
 ## Fix the digits display
@@ -85,7 +91,7 @@ We will start by fixing the first issue. As you did not write this code and ther
 
 Add a breakpoint at line **39**, before `printForeignValues(10, 'EUR');`.
 
-:::image source="../media/exercise-add-breakpoint.png" alt-text="Screenshot of breakpoint location in the code":::
+:::image source="../media/add-breakpoint.png" alt-text="Screenshot of breakpoint location in the code":::
 
 Then start debugging again, and step into the `printForeignValues()` function.
 Now take some time to inspect the different variables values, using the **Variables** panel.
@@ -93,7 +99,7 @@ Now take some time to inspect the different variables values, using the **Variab
 - What's the value of `value` and `sourceCurrency`?
 - Do you see the three expected keys `USD`, `EUR` and `JPY` in the `rates` variable?
 
-Now advance step by step until the variable `convertedValue` is set. You should see that the value seems correct at this point.
+Advance step by step until the variable `convertedValue` is set. You should see that the value seems correct at this point.
 
 Step a bit further to see the value of `displayValue`. Is it the string we expect to display?
 
@@ -123,9 +129,9 @@ const displayValue = formatValueForDisplay(convertedValue);
 
 Looking closely, you can see that parameter causing the exception comes from the `convertedValue` variable. Now we need to find out at what point this value becomes `undefined`.
 
-One option would be to add a breakpoint at this line, and inspect the variable every time the breakpoint is it. Though, we don't know when it might occur, and in very complex programs this approach might take too much time.
+One option would be to add a breakpoint at this line, and inspect the variable every time the breakpoint is it. Though, we don't know when it might occur, and in complex programs this approach might take too much time.
 
-What would be nice here would be to tell the debugger to only stop at this breakpoint when `convertedValue` is `undefined`. Turns out, VS Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
+What would be nice here, would be to tell the debugger to only stop at this breakpoint when `convertedValue` is `undefined`. Turns out, VS Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
 
 :::image source="../media/conditional-breakpoint.png" alt-text="Set a conditional breakpoint in VS Code":::
 
@@ -141,11 +147,11 @@ Maybe we should take a look at the code of the `convertToCurrency()` function.
 ```js
 function convertToCurrency(value, sourceCurrency, targetCurrency) {
   const exchangeRate = rates[sourceCurrency][targetCurrency];
-  return value * exchangeRate;
+  return exchangeRate && value * exchangeRate;
 }
 ```
 
-We now that the result of this code is `undefined`, and we also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover the `rates` variable to take a peek.
+We now that the result of this code is `undefined`, and we also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover onto the `rates` variable to take a peek.
 
 :::image source="../media/peek-at-variable.png" alt-text="Peek at the rates variable value":::
 
@@ -160,7 +166,7 @@ Now we know that some conversion rates are missing, let's understand why. Remove
 Now add a breakpoint at the beginning of the program, line `37`, before `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. We can now at all times see how its value changes.
 
 Step over the first `setExchangeRate()` call, and look at the result on `rates`.
-Does its value seems correct to you?
+Does its value seem correct to you?
 
 You can see at this point that the `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time, to look at the result of the second `setExchangeRate()` call. What do you see? What did you expect?
 
@@ -202,7 +208,7 @@ With this code:
   }
 ```
 
-Using this code, for every currency other that `sourceCurrency` and `targetCurrency`, we will use the conversion rate to `sourceCurrency` to deduce the rate between the other currency and `targetCurrency` and set it accordingly.
+Using this code, for every currency other that `sourceCurrency` and `targetCurrency`, we'll use the conversion rate to `sourceCurrency` to deduce the rate between the other currency and `targetCurrency` and set it accordingly.
 
 > [!NOTE]
 > This will only work if rates between `sourceCurrency` and other currency already exists, which is an acceptable limitation in this case.
