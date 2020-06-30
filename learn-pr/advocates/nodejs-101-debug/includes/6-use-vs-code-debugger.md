@@ -107,7 +107,7 @@ You can then fix the first bug by using `displayValue` instead of `convertedValu
 
 Let's now find out why the program is crashing. Remove the current breakpoint and check the `Uncaught exception` box in the breakpoint panel, to force the program to pause after the exception is raised.
 
-Run the program again, and it should pause on the exception with a big error log in the middle of the editor window:
+Run the program in the debugger again, and it should pause on the exception with a big error log in the middle of the editor window:
 
 :::image source="../media/exception.png" alt-text="Screenshot of the exception message shown in VS Code":::
 
