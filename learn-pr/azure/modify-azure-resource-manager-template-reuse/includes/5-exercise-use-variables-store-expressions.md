@@ -33,7 +33,7 @@ Here, you add a variable to store your Storage Account name expression in one pl
 
 1. The entire file will look look this:
 
-    [!code-json[](code/variable.json)]
+    [!code-json[](code/variable.json?highlight=26-28,30,33)]
 
 ## Optionally, deploy the template
 

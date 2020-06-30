@@ -22,7 +22,7 @@ Instead of passing in the name of the Storage Account, you change the parameter 
 
 1. Create the expression to set the unique Storage Account name. In the resources section, change the value of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. This is the same expression you learned about in the previous unit. The file should now look like this.
 
-    [!code-json[](code/function.json)]
+    [!code-json[](code/function.json?highlight=28,32)]
 
 ## Deploy the Resource Manager template to Azure
 

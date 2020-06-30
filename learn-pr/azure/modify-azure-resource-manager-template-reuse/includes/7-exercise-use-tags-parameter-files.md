@@ -59,6 +59,10 @@ Here, you create a parameter to use as a resource tag in your template.
     "tags": "[parameters('resourceTags')]",
     ```
 
+1. You file should look like this:
+
+    [!code-json[](code/tags.json?highlight=24-29,40)]
+
 1. Save the file.
 
 ## Deploy the template with updated tags
