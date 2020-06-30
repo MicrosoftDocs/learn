@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-azure-resource-manager-template-vs-code.4-add-flexibility-arm-template
+uid: learn.azure.create-resource-manager-template-vs-code.4-add-flexibility-arm-template
 title: Add flexibility to your Azure Resource Manager template by using parameters and outputs
 metadata:
   title: Add flexibility to your Azure Resource Manager template by using parameters and outputs
