@@ -16,7 +16,7 @@ In this module, you’ll learn about how to handle HTTP requests with Node.js. Y
 
 By the end of this module, you’ll be able to:
 
-- Describe the core concepts of the Web framework Express
+- Describe the core concepts of the web framework Express
 - Configure middleware to control how a request is handled
 - Respond to HTTP requests with different types of content like text and JSON
 - Send data to an Express endpoint
@@ -25,5 +25,5 @@ By the end of this module, you’ll be able to:
 
 - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
 - Familiarity with editing text and code files in any text editor
-- Know the basic about the HTTP protocol
+- Basic familiarity with the HTTP protocol
 - Experience using the command line, including Git operations

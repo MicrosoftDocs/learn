@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-http.4-express-routing
+uid: learn.azure.build-web-api-nodejs-express.4-route-management
 title: Route management
 metadata:
   title: Route management
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-express-routing.md)]
+  [!include[](includes/4-route-management.md)]

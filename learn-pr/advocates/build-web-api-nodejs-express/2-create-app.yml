@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-http.2-introducing-express
+uid: learn.azure.build-web-api-nodejs-express.2-create-app
 title: Create a new Express web application
 metadata:
   title: Create a new Express web application
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-introducing-express.md)]
+  [!include[](includes/2-create-app.md)]
