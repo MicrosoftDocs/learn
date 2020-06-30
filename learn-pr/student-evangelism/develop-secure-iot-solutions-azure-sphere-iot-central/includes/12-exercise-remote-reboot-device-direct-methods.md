@@ -6,7 +6,7 @@
 
 3. Open the Azure-Sphere lab folder.
 
-4. Open the **Lab_3_Device_Twins** folder.
+4. Open the **Lab_4_Direct_Methods** folder.
 
 5. Click **Select Folder** or the **OK** button to open the project.
 
