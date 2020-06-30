@@ -4,17 +4,17 @@ The specific datacenters aren't exposed to end users directly; instead, Azure or
 
 ## What is a region?
 
-A **region** is a geographical area on the planet containing at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network. Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced. 
+A **region** is a geographical area on the planet containing at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network. Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced.
 
 When you deploy a resource in Azure, you will often need to choose the region where you want your resource deployed. 
 
 > [!IMPORTANT]
-> Some services or virtual machine features are only available in certain regions, such as specific virtual machine sizes or storage types. There are also some global Azure services that do not require you to select a particular region, such as Microsoft Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS. 
+> Some services or virtual machine features are only available in certain regions, such as specific virtual machine sizes or storage types. There are also some global Azure services that do not require you to select a particular region, such as Microsoft Azure Active Directory, Microsoft Azure Traffic Manager, and Azure DNS.
 
 A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Australia East*, and *Japan West*. Here's a view of all the available regions as of February 2020:
 
 [//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/en-us/global-infrastructure/regions/, resampled smaller here for the initial view.)
-[ ![Map of available regions as of February 2020](../media/2-regions-small.png) ](../media/2-regions-large.svg#lightbox)
+[ ![Global map of available Azure regions as of June 2020.](../media/2-regions-small.png) ](../media/2-regions-large.svg#lightbox)
 
 ### Why is this important?
 
