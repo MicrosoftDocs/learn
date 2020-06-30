@@ -152,3 +152,8 @@ achievements:
   title: Machine learning crash course
   summary: Machine learning crash course
   iconUrl: /learn/achievements/ml-crash-course.svg
+- uid: learn.introduction-to-regression.badge
+  type: badge
+  title: Predict numeric values with regression
+  summary: Predict numeric values with regression
+  iconUrl: /learn/achievements/introduction-to-regression.svg

@@ -2084,6 +2084,51 @@
       "source_path": "learn-pr/paths/ml-crash-course/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/paths/create-machine-learn-models",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/5-exercise-multiple-linear-regression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/7-exercise-polynomial-regression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/3-exercise-simple-linear-regression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/4-multiple-linear-regression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/6-nonlinear-data-sets-with-polynomial-regression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/2-simple-linear-regression.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/ai-school/introduction-to-regression/8-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
+      "redirect_document_id": true
     }
   ]
 }
