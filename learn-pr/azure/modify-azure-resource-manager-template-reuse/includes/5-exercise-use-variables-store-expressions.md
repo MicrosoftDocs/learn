@@ -31,7 +31,7 @@ Here, you add a variable to store your Storage Account name expression in one pl
 
 1. Change value of the ```maxLength:``` attribute for the *storagePrefix* variable to 11. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
 
-1. The entire file will look look this:
+1. The entire file will look like this:
 
     [!code-json[](code/variable.json?highlight=26-28,30,33)]
 

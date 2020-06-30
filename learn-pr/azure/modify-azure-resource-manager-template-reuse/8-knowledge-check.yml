@@ -15,36 +15,36 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Azure Resource Manager template functions get their values during what precess?"
     choices:
-    - content: "A"
+    - content: "Parsing the template"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "Functions add flexibility to your template by dynamically getting values during deployment."
+    - content: "Deploying the template"
+      isCorrect: true
+      explanation: "Functions add flexibility to your template by dynamically getting values during deployment."
+    - content: "From the resource after deployment"
+      isCorrect: false
+      explanation: "Functions add flexibility to your template by dynamically getting values during deployment."
+  - content: "The Azure Resource Manager template parameter file that you want to use for a deployment must be located where?"
+    choices:
+    - content: "In the path specified by the deployment command"
       isCorrect: true
       explanation: "."
-    - content: "C"
+    - content: "In an Azure file share"
       isCorrect: false
       explanation: "."
-  - content: "TBD"
+    - content: "In an Azure Storage Account"
+      isCorrect: false
+      explanation: "."
+  - content: "Azure Resource Manager template variables are defined in what section of the template?" 
     choices:
-    - content: "A"
+    - content: "The ```variables:{}``` section"
       isCorrect: true
-      explanation: "."
-    - content: "B"
+      explanation: "Template variables are defined in the variables: {} section of the template."
+    - content: "The ```parameters:[]``` section"
       isCorrect: false
-      explanation: "."
-    - content: "C"
+      explanation: "Template variables are defined in the variables: {} section of the template."
+    - content: "Anywhere you need to declare a variable"
       isCorrect: false
-      explanation: "."
-  - content: "TBD" 
-    choices:
-    - content: "A"
-      isCorrect: false
-      explanation: "."
-    - content: "B"
-      isCorrect: true
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
+      explanation: "Template variables are defined in the variables: {} section of the template."
