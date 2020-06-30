@@ -23,8 +23,7 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
     New-AzKeyVault `
         -Name $vaultname `
         -ResourceGroupName $resourcegroupname `
-        -location $location `
-        -Tag @{Name="WebAppKeyVault"}
+        -location $location 
     ```
 
     You'll receive the following warning when the key vault is created:
