@@ -14,5 +14,10 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-aspnet-session.md)]
-  
-    
+tasks:
+- action: exists
+  environment: azure
+  hint: "Create the Azure Redis Cache instance."
+  azure:
+    resource:
+      type: "Microsoft.Cache/Redis"
