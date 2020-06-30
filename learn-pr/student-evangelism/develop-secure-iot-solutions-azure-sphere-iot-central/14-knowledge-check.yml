@@ -46,5 +46,3 @@ quiz:
     - content: "You can't get the latest security updates to the Azure Sphere devices."
       isCorrect: true
       explanation: "You can't get the latest security updates to the Azure Sphere devices."
-    
-    

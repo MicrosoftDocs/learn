@@ -1,6 +1,6 @@
 Connect your Azure Sphere dev kit to your PC through USB. When plugged in, the device exposes three COM ports. Open Device Manager on PC and make sure that three COM ports are installed. COM ports may be different from those in the figure.
 
-![The illustration shows COM ports in Device Manager.](../media/comports.png)
+![The illustration shows COM ports in Device Manager.](../media/com-ports.png)
 
 Alternatively, you can download the drivers from [Future Technology Devices International](https://www.ftdichip.com/Drivers/VCP.htm) ([FTDI](https://www.ftdichip.com/Drivers/VCP.htm)). Choose the driver that matches your Windows installation (32-bit or 64-bit).
 

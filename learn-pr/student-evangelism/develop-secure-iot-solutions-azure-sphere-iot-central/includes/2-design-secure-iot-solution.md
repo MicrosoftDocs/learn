@@ -6,8 +6,6 @@ The components you'll use are:
 
 - **Azure Sphere MT3620 Board:** MT3620 is the first Azure Sphere certified MCU. Azure Sphere certified MCUs are a new class of secured, connected crossover microcontrollers.
 
-- **Azure Sphere Developer Learning Path:** is a series of labs designed to ease you into the world of Azure Sphere development with the Avnet and Seeed Studio Azure Sphere development boards.
-
-​      The labs cover Azure Sphere security concepts, secure bi-directional cloud communications, how to integrate FreeRTOS Real-Time applications with Azure, and over the air updates, with more labs to follow.
+- **Azure Sphere Developer Learning Path:** is a series of labs designed to ease you into the world of Azure Sphere development with the Avnet and Seeed Studio Azure Sphere development boards. The labs cover Azure Sphere security concepts, secure bi-directional cloud communications, how to integrate FreeRTOS Real-Time applications with Azure, and over the air updates, with more labs to follow.
 
 To summarize, you'll clone Azure Sphere Developer Learning Path, configure your application and deploy it to the Azure Sphere device using Visual Studio Code.
