@@ -147,7 +147,7 @@ Node.js is a platform for building server apps, based on JavaScript. All the Jav
 
 ::: zone-end
 
-    A console window opens, displaying the text "Starting Truck number 1" on the first line.
+A console window opens, displaying the text "Starting Truck number 1" on the first line.
 
 You're now ready to test the device app.
 
