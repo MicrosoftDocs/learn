@@ -34,11 +34,6 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Sql/servers"
-- action: exists
-  environment: azure
-  hint: "Create the SQL database."
-  azure:
-    resource:
-      type: "Microsoft.Sql/servers/databases"
+
   
     
