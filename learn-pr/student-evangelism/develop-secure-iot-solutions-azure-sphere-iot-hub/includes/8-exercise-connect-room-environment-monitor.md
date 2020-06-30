@@ -236,7 +236,8 @@ Each Azure Sphere manufacturer maps pins differently. Follow these steps to unde
 
 2. Review the pin mappings set up for the Azure Sphere Learning Path using the Avnet Starter Kit.
 
-   > [!NOTE] Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies) article.
+> [!NOTE]
+> Azure Sphere hardware is available from multiple vendors, and each vendor may expose features of the underlying chip in different ways. Azure Sphere applications manage hardware dependencies by using hardware definition files. For further information, review the [Managing target hardware dependencies](https://docs.microsoft.com/azure-sphere/app-development/manage-hardware-dependencies) article.
 
    ```
    /* Copyright (c) Microsoft Corporation. All rights reserved.
