@@ -9,7 +9,7 @@ You can manage devices running the following operating systems:
 ### Apple
 - Apple iOS 11.0 and later
 - Apple iPadOS 13.0 and later
-- MacOS X 10.12 and later
+- macOS X 10.12 and later
 
 ### Google
 - Android 5.0 and later (including Samsung KNOX Standard 2.4 and higher)

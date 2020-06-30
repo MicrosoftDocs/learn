@@ -37,7 +37,7 @@ To set the availability of an app, you include and exclude app assignments to a 
 
 As a best practice, create and assign apps specifically for your user groups, and separately for your device groups. 
 
-For example, when a user is added with the manager title, the user is automatically added to an **All managers** users group. Or, when a device has the iOS/iPadOS device OS type, the device is automatically added to an **All iOS/iPadOS devices** devices group.
+For example, when a user is added with the manager title, the user is automatically added to an **All managers** user group. Or, when a device has the iOS/iPadOS device OS type, the device is automatically added to an **All iOS/iPadOS devices group.
 
 After you assign an app to a group in Intune, you can assign policies for the app to users or devices.
 
@@ -65,11 +65,11 @@ To summarize, use device groups when you don't care who's signed in on the devic
 Profile settings applied to user groups always go with the user, and go with the user when signed in to their many devices. It's normal for users to have many devices, such as a Surface Pro for work, and a personal iOS/iPadOS device. And, it's normal for a person to access email and other organization resources from these devices.
 
 For example:
-- You want to put a Help Desk icon for all users on all their devices. In this scenario, put these users in a users group, and assign your Help Desk icon profile to this users group.
-- A user receives a new organization-owned device. The user signs in to the device with their domain account. The device is automatically registered in Azure AD, and automatically managed by Intune. This profile is a good scenario to assign to a users group.
-- Whenever a user signs in to a device, you want to control features in apps, such as OneDrive or Office. In this scenario, assign your OneDrive or Office profile settings to a users group.
+- You want to put a Help Desk icon for all users on all their devices. In this scenario, put these users in a user group, and assign your Help Desk icon profile to this user group.
+- A user receives a new organization-owned device. The user signs in to the device with their domain account. The device is automatically registered in Azure AD, and automatically managed by Intune. This profile is a good scenario to assign to a user group.
+- Whenever a user signs in to a device, you want to control features in apps, such as OneDrive or Office. In this scenario, assign your OneDrive or Office profile settings to a user group.
 
-  For example, you want to block untrusted ActiveX controls in your Office apps. You can create an Administrative Template in Intune, configure this setting, and then assign this profile to a users group.
+  For example, you want to block untrusted ActiveX controls in your Office apps. You can create an Administrative Template in Intune, configure this setting, and then assign this profile to a user group.
 
 To summarize, use user groups when you want your settings and rules to always go with the user, whatever device they use.
 

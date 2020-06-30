@@ -1,4 +1,4 @@
-Microsoft Endpoint Mananger helps you protect the digital resources that your organization uses. These resources include devices, apps, and data. You use the Microsoft Endpoint Manager admin center to configure the settings that are then applied based on the devices and users of your organization. Those settings are contained in policies that you create. You assign the policies to groups that you define. And, those groups are either users or devices.
+Microsoft Endpoint Manager helps you protect the digital resources that your organization uses. These resources include devices, apps, and data. You use the Microsoft Endpoint Manager admin center to configure the settings that are then applied based on the devices and users of your organization. Those settings are contained in policies that you create. You assign the policies to groups that you define. And, those groups are either users or devices.
 
 ## Manage and protect devices
 <!--
@@ -8,7 +8,7 @@ https://docs.microsoft.com/mem/intune/protect/device-protect
 Microsoft Intune helps you protect the devices you manage and the data stored on those devices. Protected devices are also known as managed devices. You can create and apply device policies as part of your efforts to protect endpoints. Intune includes settings and features you can enable or disable for different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices and different platforms, including iOS/iPadOS, macOS, Android, Android Enterprise, and Windows. Then, use Intune to apply or "assign" the profile to the devices.
 
 ### Types of device policies
-Device policies allow you to perform several different types of actions to protect devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control and retire many of the aspects of the devices at your organization.
+Device policies allow you to perform several different types of actions to protect devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control, and retire many of the aspects of the devices at your organization.
 
 #### Examples of device configuration policies
 Intune configuration policies help you protect and configure devices by controlling a multitude of settings and features. For example, you can:

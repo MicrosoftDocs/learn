@@ -1,4 +1,4 @@
-You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called Mobile Application Management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization related access and data is managed.
+You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called Mobile Application Management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed.
 
 Microsoft Endpoint Manager supports two MAM configurations:
 - **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Microsoft Endpoint Manager admin center.
@@ -11,7 +11,7 @@ When apps are managed in Intune, administrators can:
   - Require a PIN to open an app in a work context.
   - Control the sharing of data between apps.
   - Prevent the saving of company app data to a personal storage location.
-- **Support apps on a variety of platforms and operating systems.** Each platform is differnt. Intune and Config Manager provides available settings specifically for each supported platform.
+- **Support apps on a variety of platforms and operating systems.** Each platform is different. Intune and Config Manager provides available settings specifically for each supported platform.
 - **See reports about which apps are used, and track their usage.** In addition, Intune and Config Manager provides endpoint analytics to help you assess and resolve problems.
 - **Do a selective wipe by removing only organization data from apps.
 - **Ensure personal data is kept separate from managed data.** End-user productivity isn't affected and policies don't apply when using the app in a personal context. The policies are applied only in a work context, which gives you the ability to protect company data without touching personal data.
@@ -33,13 +33,13 @@ As part of the app lifecycle, new versions of apps are regularly released. Intun
 ### Protect
 Intune gives you many ways to help protect the data in your apps. The main methods are:
 - Conditional Access, which controls access to email and other services based on conditions that you specify. Conditions include device types or compliance with a device compliance policy that you deployed.
-- App protection policies works with individual apps to help protect the company data that they use. For example, you can restrict copying data between unmanaged apps and apps that you manage, or you can prevent apps from running on devices that have been jailbroken or rooted.
+- App protection policies work with individual apps to help protect the company data that they use. For example, you can restrict copying data between unmanaged apps and apps that you manage, or you can prevent apps from running on devices that have been jailbroken or rooted.
 
 ### Retire
 Eventually, it's likely that apps that you deployed become outdated and need to be removed. Intune makes it easy to uninstall apps.
 
 ## App configuration policies
-App configuration policies can help you eliminate app setup up problems by letting you assign configuration settings to a policy that is assigned to end-users before they run the app. The settings are then supplied automatically when the app is configured on the end-users device, and end-users don't need to take action. The configuration settings are unique for each app. 
+App configuration policies can help you eliminate app setup up problems by letting you assign configuration settings to a policy that is assigned to end users before they run the app. The settings are then supplied automatically when the app is configured on the end-users device, and end users don't need to take action. The configuration settings are unique for each app. 
 
 You can create and use app configuration policies to provide configuration settings for both iOS/iPadOS or Android apps. These configuration settings allow an app to be customized by using app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run. 
 
@@ -49,7 +49,7 @@ An app configuration setting, for example, might require you to specify any of t
 - Security settings
 - Branding settings such as a company logo
 
-If end-users were to enter these settings instead, they could do this incorrectly. App configuration policies can help provide consistency across an enterprise and reduce helpdesk calls from end-users trying to configure settings on their own. By using app configuration policies, the adoption of new apps can be easier and quicker.
+If end users were to enter these settings instead, they could do this incorrectly. App configuration policies can help provide consistency across an enterprise and reduce helpdesk calls from end users trying to configure settings on their own. By using app configuration policies, the adoption of new apps can be easier and quicker.
 
 The available configuration parameters are ultimately decided by the developers of the app. Documentation from the application vendor should be reviewed to see if an app supports configuration and what configurations are available. For some applications, Intune will populate the available configuration settings.
 

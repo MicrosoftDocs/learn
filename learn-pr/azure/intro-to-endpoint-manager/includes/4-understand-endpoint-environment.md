@@ -5,8 +5,7 @@ Microsoft Endpoint Manager is used to manage your organization's endpoints. As w
 
 ## Cloud endpoint management
 
-You can manage devices, apps, and data by using a cloud-based mobile device management (MDM) and mobile application management (MAM) service, such as Microsoft Intune. Intune integrates with other services, including Microsoft 365 and Azure Active Directory (Azure AD) to control who has access and what they have access to. Intune also integrates with Azure Information Protection to protect your organization's data. When you use Intune with Microsoft 365, you can enable your workforce to be productive on all their devices, while keeping your organi
-zation's information protected.
+You can manage devices, apps, and data by using a cloud-based mobile device management (MDM) and mobile application management (MAM) service, such as Microsoft Intune. Intune integrates with other services, including Microsoft 365 and Azure Active Directory (Azure AD) to control who has access and what they have access to. Intune also integrates with Azure Information Protection to protect your organization's data. When you use Intune with Microsoft 365, you can enable your workforce to be productive on all their devices, while keeping your organization's information protected.
 
 ## On-premises endpoint management
 
@@ -14,7 +13,7 @@ By using an on-premises endpoint management solution, you can manage your on-pre
 
 ## Cloud + on-premises endpoint management
 
-For Configuration Manager managed devices, data can also flow to Microsoft Endpoint Management through the ConfigMgr connector. This is call cloud attached, where the ConfigMgr connector is attached to the cloud. It  requires a connection to an Intune tenant, and doesn't require turning on co-management.
+For Configuration Manager managed devices, data can also flow to Microsoft Endpoint Management through the ConfigMgr connector. This is called cloud attached, where the ConfigMgr connector is attached to the cloud. It  requires a connection to an Intune tenant, and doesn't require turning on co-management.
  
 ## Co-managed endpoint management
 
