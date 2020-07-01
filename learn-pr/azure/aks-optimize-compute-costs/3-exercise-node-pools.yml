@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-optimize-compute-costs.exercise-node-pools
-title: Introduction
+title: Exercise - Configure multiple nodes and enable scale to zero using Azure Kubernetes Service
 
 metadata:
-  title: Introduction to Azure Kubernetes Service
-  description: Introduction
+  title: Exercise - Configure multiple nodes and enable scale to zero using Azure Kubernetes Service
+  description: Here you configure multiple node pools on an AKS cluster and scale a user node pool's node count to zero.
   ms.date: 7/10/2020
   author: cryophobia
   ms.author: chrvaw

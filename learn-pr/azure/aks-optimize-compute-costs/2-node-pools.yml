@@ -4,7 +4,7 @@ title: Configure multiple nodes and enable scale to zero using Azure Kubernetes 
 
 metadata:
   title: Configure multiple nodes and enable scale to zero using Azure Kubernetes Service
-  description: Introduction
+  description: You can configure multiple node pools on AKS to run specific workloads. Node pools make use of virtual scale sets that allow you to set the number of nodes in a node pool. You can set the node count in a node pool to zero to optimize your cluster's running costs when nodes are not used in a node pool. Here you'll explore how to configure a node pool to scale its node count to zero. 
   ms.date: 7/10/2020
   author: cryophobia
   ms.author: chrvaw

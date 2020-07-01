@@ -4,7 +4,7 @@ title: Configure AKS resource quota policies by using Azure Policy for Kubernete
 
 metadata:
   title: Configure AKS resource quota policies by using Azure Policy for Kubernetes
-  description: Introduction
+  description: Azure Policy helps to enforce organizational standards and to assess compliance at-scale. You apply Azure Policies in AKS by using Azure Policy for Kubernetes. Here you'll explore how to configure Azure Policy for Kubernetes and how to apply a built-in policy to optimize costs by limiting workload resources requests.
   ms.date: 7/10/2020
   author: cryophobia
   ms.author: chrvaw
