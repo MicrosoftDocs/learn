@@ -30,7 +30,7 @@ function addToBasket(product) {
 
 ## Node.js inspect mode
 
-As a debugger has full access to the execution environment, a malicious actor could also use it to inject arbitrary code on your Node.js process. That's why by default Node.js doesn't allow you to debug a running program, you have to enable a special mode called **inspector** mode to allow debugging.
+As a debugger has full access to the execution environment, a malicious actor could also use it to inject arbitrary code in your Node.js process. That's why by default Node.js doesn't allow you to debug a running program, you have to enable a special mode called **inspector** mode to allow debugging.
 
 You need the `--inspect` option to allow a Node.js process to listen for a debugger client that will attach itself to the process and take control of your program execution.
 
@@ -48,13 +48,13 @@ After Node.js is started with inspect mode enabled, you can use any compatible d
 For example, you can use [node-inspect](https://github.com/nodejs/node-inspect), a command-line debugger that comes bundled with Node.js. You can use it by running your program like this:
 
 ```bash
-$ node inspect <YOUR_SCRIPT>.js
+node inspect <YOUR_SCRIPT>.js
 ```
 
 It will run Node.js with inspect mode enabled and launch at the same time the integrated interactive debugger, and pause execution just before your code starts. You should see the debugger prompt indicating it has successfully launched:
 
 ```bash
-$ node inspect myscript.js
+node inspect myscript.js
 < Debugger listening on ws://127.0.0.1:9229/ce3689fa-4433-41ee-9d5d-98b5bc5dfa27
 < For help, see: https://nodejs.org/en/docs/inspector
 < Debugger attached.

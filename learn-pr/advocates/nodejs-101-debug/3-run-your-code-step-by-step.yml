@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.nodejs.debug.3-run-your-code-step-by-step
-title: Run your Node.js code step by step
+title: Debug with the Node.js built-in debugger
 metadata:
-  title: Run your Node.js code step by step
+  title: Debug with the Node.js built-in debugger
   description: Learn what is a breakpoint and how to run your code step by step using Node.js built-in debugger.
   author: sinedied
   ms.author: yolasors
