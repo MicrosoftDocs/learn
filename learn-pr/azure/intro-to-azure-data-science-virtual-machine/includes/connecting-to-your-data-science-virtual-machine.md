@@ -1,6 +1,6 @@
 Now that you've created a Data Science Virtual Machine, you need to connect to it. The DSVM is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH , you can connect to the command-line of the DSVM. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
 
-## If necessary, start the DSVM and request just-in-time access
+## If necessary, start the DSVM
 
 A newly-created DSVM will already be running, but generally you'll need to start the virtual machine from the Azure Portal.
 
@@ -9,16 +9,6 @@ A newly-created DSVM will already be running, but generally you'll need to start
 1. From the DSVM's resource page, choose "Start" if necessary
 1. Wait until the DSVM's Status is "Running"
 1. Record the IP address 
-
-If you have configured just-in-time access, as recommended:
-
-1. Wait until the DSVM's is "Running"
-1. Select the "Configuration" button from the left-hand "Settings" panel
-1. Follow the "Open Azure Security Center" link
-1. Choose your DSVM from the list of configured VMs
-1. Choose "Request access"
-1. Toggle port 22 to "On" (both direct ssh and XCFE connections use this port)
-1. Choose "Open ports"
 
 ## Connect to the command line using SSH
 
@@ -49,19 +39,7 @@ If the `State` of the `OpenSSH.Client` is not `Installed`, run:
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-### Enable just-in-time access and connect
-
-In the Azure Portal, from the DSVM's Overview page, find the IP address of your DSVM. Click the icon next to the IP to copy it to your clipboard
-
-![Screenshot of the Azure Portal, highlighting the IP address of the virtual machine](tk)
-
-If you have enabled just-in-time access as recommended:
-
-1. Click the **Connect** button
-1. Choose the SSH tab
-1. Click the **Request access** button
-
-![Screenshot of the Connect page with request access button visible](tk)
+## Connect using an ssh client from the command line
 
 From a terminal or PowerShell console, run the following, substituting your username and the IP address for `1.1.1.1`:
 

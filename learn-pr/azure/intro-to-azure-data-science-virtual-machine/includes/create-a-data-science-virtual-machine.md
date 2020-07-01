@@ -2,6 +2,9 @@ Once you have decided to use a Data Science Virtual Machine to explore your doma
 
 This should show the name of the Sandboxed RG: <rgn>[sandbox resource group name]</rgn>
 
+Go to [portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
+
+
 ## Data Science Virtual Machine Operating System choices 
 
 There are two Data Science Virtual Machine images:
@@ -166,7 +169,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
 
     - The **Image** should be the _Data Science Virtual Machine - Ubuntu 18.04_ option we selected from the Marketplace
 
-    - Check to make sure the **Size** of the VM set as _Standard\_DS3\_v2_
+    - Check to make sure the **Size** of the VM set as _Standard\_DS1\_v2_
     - Change the **Authentication Type** to _Password_
     - Choose and record a **Username** and strong **Password** 
     
