@@ -25,7 +25,7 @@ quiz:
           explanation: "This will install jest and as a dev dependency. A test framework is something you only need during development."
         - content: "Run `npm install jest --save`"
           isCorrect: false
-          explanation: "This will install jest in the `dependencies` section. It's recommended that any library that is only used during development is installed ass a dev dependency. Additionally there is no need to add the `--save` flag, this is leftover from when this flag was needed to persist the installed library in the package.json file"
+          explanation: "This will install jest in the `dependencies` section. It's recommended that any library that is only used during development is installed as a dev dependency. Additionally there is no need to add the `--save` flag, this is leftover from when this flag was needed to persist the installed library in the package.json file"
         - content: "npm download jest --save-dev"
           isCorrect: false
           explanation: "There is no command called `download`, use `install`"
@@ -42,7 +42,7 @@ quiz:
           explanation: ""
         - content: "You don't have to use sudo before running it like you would a global install"
           isCorrect: false
-          explanation: "While this is technically correct, this shouldn't be the reason why you choose NPX over global install. Global installs are something that remains on your system and you need to uninstall. There's no such need with NPX ass it cleans up after itself."
+          explanation: "While this is technically correct, this shouldn't be the reason why you choose NPX over global install. Global installs are something that remains on your system and you need to uninstall. There's no such need with NPX as it cleans up after itself."
     - content: "What's a way to instruct the `package.json` file that you only want patch (bug fixes) updates"
       choices:
         - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"\""
@@ -66,7 +66,7 @@ quiz:
           explanation: "Having a script for start and test is good. It's also recommended that you have a script for how to build your solution. Additionally having a way to *lint* your files ensure you and your team members can write code in a consistent way."
         - content: "start"
           isCorrect: false
-          explanation: "This isn't nearly enough. Look into setting up commands for test, build and linting as well."
-        - content: "start, test, lint and build"
+          explanation: "This isn't nearly enough. Look into setting up commands for test, build, and linting as well."
+        - content: "start, test, lint, and build"
           isCorrect: true
-          explanation: "Having all these scripts set up is great way to start any Node.js project."
+          explanation: "Having all these scripts set-up is great way to start any Node.js project."

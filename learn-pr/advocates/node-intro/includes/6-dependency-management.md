@@ -4,13 +4,13 @@ There are considerations that should be taken into account prior to attempt to u
 
 - **The type of update**, what type of update is available, is it a small bug fix? Is it adding a new feature I need or will it break my code? A way to communicate what type of update that takes place is by adhering to a system called Semantic versioning. Based on how the version number of the library is expressed it communicates to a developer what type of update they are dealing with.
 - **Is my project configured correctly**, you can configure your Node.js project in a way so that you only get the types of updates you want. That means you will only perform an update if a specific type of update is available. It's a recommended approach as you don't risk running into surprises.
-- **Mitigate issues**, part of managing your project dependencies over time means being aware of that issues might occur. Issues arise as vulnerabilities are detected for example. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
+- **Mitigate issues**, part of managing your project dependencies over time means being aware of issues that might occur. Issues arise as vulnerabilities are detected for example. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
 
 ## Semantic versioning
 
-There's an industry standard called semantic versioning. It's a system  adopted by numerous companies and developers. If you mean to publish packages and push them to the NPM registry you should definitely follow semantic versioning as this is expected. Even if you only download packages from the NPN registry you can expect these packages to follow semantic versioning.
+There's an industry standard called semantic versioning. It's a system  adopted by numerous companies and developers. If you mean to publish packages and push them to the NPM registry, you should definitely follow semantic versioning as this is expected. Even if you only download packages from the NPN registry you can expect these packages to follow semantic versioning.
 
-So why is it such a big deal? Changes to a package is about introducing risk, risk that a bug is introduced, that can harm your business. A risk that you as a consumer needs to rewrite part of your code, fixing that takes time and time is money.  
+So why is it such a big deal? Changes to a package are about introducing risk, risk that a bug is introduced, that can harm your business. A risk that you as a consumer needs to rewrite part of your code, fixing that takes time and time is money.  
 
 Semantic versioning is how you express what type of change you or some other developer is introducing to a library. How semantic versioning works is by ensuring a package has a version number and that the version number is divided up into the following sections:
 
@@ -43,15 +43,15 @@ How do we approach updating as Node.js developers? We can communicate to Node.js
 - **Minor version**, I'm ok with a new feature being added. I'm not ok with code that breaks.
 - **Patch version**, the only thing I'm ok with are bug fixes.
 
-If you are in a completely new or smaller Node.js project you can afford to be quite loose with how you define the update strategy and for example allow to always update to the latest and greatest version. For more complex projects there is a bit more nuance but we'll save that for a future module.
+If you are in a completely new or smaller Node.js project, you can afford to be quite loose with how you define the update strategy and, for example,  allow to always update to the latest and greatest version. For more complex projects, there is a bit more nuance but we'll save that for a future module.
 
 As a general guidance though, the smaller the dependency you are trying to update is the fewer dependencies it has in turn and the more likely it is that the update process is going to be easy.
 
 ### Configure the `package.json` for update
 
-Before you go on an update one or many dependencies you want to configure your manifest file in a way so that it's predictable what will happen if you run the `npm update <name of dependency>` command. You can communicate what approach you want to take for a package. Node.js has a set of symbols that allows us to define how we want our packages to update.
+Before you go on an update one or many dependencies, you want to configure your manifest file in a way so that it's predictable what will happen if you run the `npm update <name of dependency>` command. You can communicate what approach you want to take for a package. Node.js has a set of symbols that allows us to define how we want our packages to update.
 
-What we do is add different prefixes to our package entries in the `package.json` file. There's a lot of things you an configure for apart from major/minor/patch version. It's also possible to express that you want packages within a certain range only or that you want a package with a certain tag like `alpha` or `beta` for example.
+What we do is add different prefixes to our package entries in the `package.json` file. There are many things you can configure for apart from major/minor/patch version. It's also possible to express that you want packages within a certain range only or that you want a package with a certain tag like `alpha` or `beta` for example.
 
 Here are some patterns to configure for major/minor/patch version:
 

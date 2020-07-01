@@ -36,9 +36,9 @@ A way to look at all the possible fields in the `package.json` is to think of th
 
 ### Scripts for managing your project
 
-In any project, whether it's using Node.js or not, you are likely to want to have a way to run, test and build your project. The Node.js runtime have recognized this and have taken it a step further by guiding you what these scripts should be called. The idea is to ensure that all Node.js projects in this aspect looks the same. It makes for a better developer experience if you can move between Node.js projects and quickly recognize yourself by there existing a familiar set of actions. Thanks to this naming standardization various tools for DevOps and instrumentation have been able to take advantage of this.
+In any project, whether it's using Node.js or not, you are likely to want to have a way to run, test, and build your project. The Node.js runtime has recognized this and has taken it a step further by guiding you what these scripts should be called. The idea is to ensure that all Node.js projects in this aspect look the same. It makes for a better developer experience if you can move between Node.js projects and quickly recognize yourself by there existing a familiar set of actions. Thanks to this naming standardization various tools for DevOps and instrumentation have been able to take advantage of this fact.
 
-Essentially, you should set up a number of scripts and name them in a specific way, this is expected by the developer community and various tools out there. So what are these scripts?
+Essentially, you should set up a number of scripts and name them in a specific way. It is expected by the developer community and various tools out there rely on it. So what are these scripts?
 
 - **Start action**, setting up a start command is about essentially invoking node with the entry file as argument. An example of a start command can look like so `node ./src/index.js`. This command says to invoke node and the entry file `index.js`.
 - **Build**, this command how to build your project. The end result of the build process should produce something that you can ship. Examples of the content of a build command can be to run a Typescript compiler to produce the JavaScript version of the project that you mean to ship.
@@ -66,8 +66,8 @@ and a more real looking example could look like this:
 }
 ```
 
-The above is using the proper naming that has been hinted at so far. First you have the `start` action that starts up our application. Secondly, the `test` action runs our tests using the testing framework `jest`. Then we have the `build` action that uses the TypeScript compiler `tsc` to compile our code from TypeScript and into for example ES6 that the browser can understand. Finally we have a *linting* tool `eslint` that looks for inconsistencies and possibly errors in our code.
+The above is using the proper naming that has been hinted at so far. First you have the `start` action that starts up our application. Secondly, the `test` action runs our tests using the testing framework `jest`. Then we have the `build` action that uses the TypeScript compiler `tsc` to compile our code from TypeScript and into, for example,  ES6 that the browser can understand. Finally we have a *linting* tool `eslint` that looks for inconsistencies and possibly errors in our code.
 
 Actions are invoked by typing `npm run <action>`. There are *special* actions however, `start`, and, `build`. They are special in the sense that you can omit `run`. That means that instead of typing `npm run start` you can instead save a few characters and type `npm start`.
 
-Most likely your project will have a few more scripts set up but those are usually specific to your project but the above is a good starting point for any Node.js project.
+Most likely your project will have a few more scripts set up but those scripts are usually specific to your project. The above actions are a good starting point for any Node.js project.

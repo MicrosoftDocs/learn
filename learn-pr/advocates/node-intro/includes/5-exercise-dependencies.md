@@ -1,10 +1,10 @@
-Tailwind Traders realize that they are about to put a lot of development resources on developing apps for the Node.js platform. One thing all these apps is going to need is testing. After some analysis they've found Node.js to have limited testing capabilities. You will therefore need to depend on a framework. They've found Jest at the NPM registry, it seems widely used and promises to be a zero-config test framework. All they want from you at this point is to install Jest, write a couple of tests and run them to see if it delivers on its promise. 
+Tailwind Traders realize that they are about to put extensive development resources on developing apps for the Node.js platform. One thing all these apps is going to need is testing. After some analysis, they've found Node.js to have limited testing capabilities. You will therefore need to depend on a framework. They've found Jest at the NPM registry, it seems widely used and promises to be a zero-config test framework. All they want from you at this point is to install Jest, write a couple of tests and run them to see if it delivers on its promise. 
 
 ## Add a testing package using the NPM tool
 
-You've been given some app code that parse an address from a string. So your task should be fairly straight forward and involve just installing the test framework, write a couple of tests and run them.
+You've been given some app code that parses an address from a string. So your task should be fairly straight forward and involve just installing the test framework, write a couple of tests and run them.
 
-1. Clone the following repo TODO . You should now have access to the following files:
+1. Clone the following repo. You should now have access to the following files:
 
    -| address_parser.js
    -| package.json
@@ -94,4 +94,4 @@ You've been given some app code that parse an address from a string. So your tas
 
    Success, your test passes and you've added a new capability *testing* by installing a dependency.
 
-Congrats you've managed to successfully install Jest, a dependency, write tests for application code and run the tests. Jest seems to deliver in on its promise and TailwindTraders are likely to be very happy with this evaluation.
+Congrats you've managed to successfully install Jest, a dependency, write tests for application code and run the tests. Jest seems to deliver in on its promise and TailwindTraders are likely to be happy with this evaluation.
