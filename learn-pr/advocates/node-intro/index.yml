@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.node-intro
 metadata:
-  title: Install Node.js and Manage Dependencies 
-  description: Install and manage Dependencies for your Node.js application. 
+  title: Create a new Node.js project and work with dependencies 
+  description: Create a Node.js project and learn to add and manage dependencies in your project. 
   ms.date: 06/25/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Install Node.js and Manage Dependencies  
-summary: Learn how to 
+title: Create a new Node.js project and work with dependencies  
+summary: Use dependencies from the NPM registry to faster develop Node.js applications. Additionally you will know how to manage dependencies for your project.
 abstract: |
-  In this module you will:
-  - Install and Uninstall dependencies
-  - Know the difference between global and local installs
+  By the end of this module you will be able to:
+  - Initialize Node.js projects
+  - Understand what the manifest file package.json consist of and use it to your advantage
+  - Add and remove dependencies to your Node.js project
   - Manage your dependencies and update them in a predictable way
-  - Leverage a package.json file to describe your projects, manage dependencies run scripts and more
 iconUrl: /learn/achievements/node-intro.svg
 levels:
 - beginner
@@ -23,19 +23,19 @@ roles:
 - developer
 products:
 - vs
-prerequisites: None
+prerequisites: |
+  - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
+  - Familiarity with editing text and code files in any text editor
 units:
 - learn.node-intro.1-introduction
-- learn.node-intro.2-dependencies
-- learn.node-intro.3-exercise-dependencies
-- learn.node-intro.4-local-global-installation
-- learn.node-intro.5-exercise-local-global-installation
-- learn.node-intro.6-updating
-- learn.node-intro.7-exercise-updating
-- learn.node-intro.8-package-json
-- learn.node-intro.9-exercise-package-json
-- learn.node-intro.10-knowledge-check
-- learn.node-intro.11-summary
+- learn.node-intro.2-package-json
+- learn.node-intro.3-exercise-package-json
+- learn.node-intro.4-dependencies-json
+- learn.node-intro.5-exercise-dependencies-json
+- learn.node-intro.6-dependency-management-json
+- learn.node-intro.7-exercise-dependency-management-json
+- learn.node-intro.8-knowledge-check
+- learn.node-intro.9-summary
 
 badge:
   uid: learn.node-intro.badge

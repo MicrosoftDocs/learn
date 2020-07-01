@@ -4,17 +4,19 @@ As a Node.js developer on Tailwind Traders, learning how to set up a new Node.js
 
 Open up a terminal window.
 
-1. Create a directory `app` and subdirectory `src` and a file `index.js` in the subdirectory. 
+1. Clone the following repo TODO
+1. You should now have access to the following files:
 
-   Your project should now look like this:
+   -| src/
+   ---| index.js
 
-    ```bash
-    --| app/
-    ----| src/
-    ------| index.js
-    ```
+1. Run the following command to place yourself in the cloned directory:
 
-1. Type the following command while placed in the `app` directory:
+   ```bash
+   cd <cloned directory>
+   ```
+
+1. Type the following command to initialize a Node.js project:
 
     ```bash
     node init -y
@@ -72,13 +74,23 @@ Open up a terminal window.
    "start": "node ./src/index.js",
    ```
 
+1. Open up `src/index.js` and place the following code inside of it:
+
+   ```javascript
+   console.log('Welcome to this application');
+   ```
+
    The above entry will define how the project is started up. You can now start it up by typing the following command:
 
    ```bash
    npm start
    ```
 
-   There isn't much happening in `index.js` yet but it's good to have a command setup to easily start up the project.
+   You should see the following output:
+
+   ```output
+   Welcome to this application
+   ```
 
 ## Add testing to your project
 

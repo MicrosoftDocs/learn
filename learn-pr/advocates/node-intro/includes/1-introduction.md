@@ -24,12 +24,12 @@ To keep track of all the dependencies, your app consist of your Node.js project 
 
 ## Learning Objectives
 
-In this module, you will:
+By the end of this module you will be able to:
 
-- Install and Uninstall dependencies
-- Know the difference between global and local installs
+- Initialize Node.js projects
+- Understand what the manifest file package.json consist of and use it to your advantage
+- Add and remove dependencies to your Node.js project
 - Manage your dependencies and update them in a predictable way
-- Leverage a package.json file to describe your projects, manage dependencies run scripts and more
 
 ## Prerequisites
 
