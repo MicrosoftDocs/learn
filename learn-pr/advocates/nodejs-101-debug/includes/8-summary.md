@@ -9,9 +9,8 @@ In this module, you learned how to:
 
 ## Next steps
 
-Continue learning more about Node.js with:
+Continue learning more about Node.js debugging with:
 
-- [Work with files and directories in a Node.js app](../../nodejs-files/)
-- [Build a web API with Node.js and Express](../build-web-api-nodejs-express/)
+- [Visual Studio Code Debugging](https://code.visualstudio.com/docs/editor/debugging)
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
