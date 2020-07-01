@@ -9,7 +9,7 @@ In this exercise, you'll create an Azure Kubernetes Service Kubernetes cluster. 
 
 1. You'll reuse some values throughout the exercises in this module. For example, you need to choose a region where you want to create a resource group. Some features, that you'll add in later exercises, may not be available in the region you select. For this reason, we advise you to use **East US**. If you choose a different value, remember to note the value for use with exercises throughout the module.
 
-    You'll also create a unique cluster name variable for your new AKS cluster.
+    Run the following commands to register your variables.
 
     ```azurecli
     REGION_NAME=eastus
