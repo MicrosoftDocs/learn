@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.6-updating
+uid: learn.node-intro.6-dependency-management
 title: Manage dependency updates in your Node.js project
 metadata:
   title: Manage dependency updates in your Node.js project
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-updating.md)]
+  [!include[](includes/6-dependency-management.md)]

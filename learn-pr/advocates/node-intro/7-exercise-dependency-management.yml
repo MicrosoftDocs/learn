@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.7-exercise-updating
+uid: learn.node-intro.7-exercise-dependency-management
 title: Exercise - Manage dependency updates in your Node.js project
 metadata:
   title: Exercise - Manage dependency updates in your Node.js project
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 4
 content: |
-  [!include[](includes/7-exercise-updating.md)]
+  [!include[](includes/7-exercise-dependency-management.md)]

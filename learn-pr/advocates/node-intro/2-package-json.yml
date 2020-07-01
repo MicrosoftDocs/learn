@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.8-package-json
+uid: learn.node-intro.2-package-json
 title: Configure Package.json
 metadata:
   title: Configure Package.json
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 4
 content: |
-  [!include[](includes/8-package-json.md)]
+  [!include[](includes/2-package-json.md)]
