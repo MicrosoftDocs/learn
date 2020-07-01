@@ -4,14 +4,7 @@ The logger currently writes to a local file. While this approach is fine for a w
 
 ## Create a Blob storage account for holding log data
 
-1. In the Cloud Shell window on the right, run the commands shown below to ensure that your environment is still set up correctly. If necessary, recreate any missing environment variables with the values you used earlier in the Setup unit.
-
-    ```PowerShell
-    cd ~/eShopModernizing/Setup
-    . ./environment.ps1
-    ```
-
-1. Define the following PowerShell variables containing the name of the storage account and blob container to be created. 
+1. In the Cloud Shell window on the right, run the command shown below to define PowerShell variables containing the names of the storage account and blob container to be created. 
 
     ```PowerShell
     $storageaccountname = (-join($useralias, "storage"))
