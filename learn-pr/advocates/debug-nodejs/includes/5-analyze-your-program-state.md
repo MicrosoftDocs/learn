@@ -1,7 +1,7 @@
-In addition to being able to run your code step by step, you saw in the previous exercise that knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but it's still rather limited. Using a debugger with a more complete visual interface is useful for that purpose, and it'll help you a lot while working on the Tailwin Traders application.
+In addition to being able to run your code step by step, you saw in the previous exercise that knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but it's still rather limited. Using a debugger with a more complete visual interface is useful for that purpose, and it will help you a lot while working on the Tailwind Traders application.
 Let's discover how you can configure Visual Studio Code debugger to use it with Node.js.
 
-## Debug Node.js programs with Visual Studio Code
+## Set up Visual Studio Code for Node.js debugging
 
 In VS Code, if you click on the **Run** tab you can access the debugger tool.
 
@@ -49,7 +49,7 @@ After you've set up your breakpoints and started your app, you'll see new inform
 
 ### Debugger launch controls
 
-At the top of the side bar you can find the launch controls:
+At the top of the side bar, you can find the launch controls:
 
 :::image source="../media/sidebar-controls.png" alt-text="Screenshot of VS Code debug side bar controls":::
 
@@ -106,7 +106,7 @@ TypeError: Cannot read property 'toFixed' of undefined
     at internal/main/run_main_module.js:17:11
 ```
 
-The `at [...]` lines below the error message is called a *stack trace*. It gives the name and origin of every function that was called before ending up with the exception. It can be a bit difficult to decipher though, as it also includes internal functions from the Node.js runtime.
+The group of `at [...]` lines below the error message is called a *stack trace*. It gives the name and origin of every function that was called before ending up with the exception. It can be a bit difficult to decipher though, as it also includes internal functions from the Node.js runtime.
 
 That's where the VS Code **Call stack** panel comes handy. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
 
