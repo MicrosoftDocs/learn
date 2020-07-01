@@ -5,7 +5,7 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 ## Create a Resource Manager template
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
-1. On the first line of the file, type **arm**.
+1. The Visual Studio Code ARM template extension comes preconfigured with many snippets that help you develop templates. Let's start by adding a blank template. On the first line of the file, type **arm**.
 1. You see an intellisense choice **!arm**. Choose that snippet by clicking on the box next to it.
 
     :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
@@ -112,7 +112,7 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
 ## Add a resource to the template
 
-Here, you add an Azure Storage Account resource to the template using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
+In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. Here, you add an Azure Storage Account resource to the template using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the square brackets in the resources block. ```"resources":[],```
 1. Type **storage** in the square brackets. You see a list of related snippets. Choose **arm-storage**.

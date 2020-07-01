@@ -1,4 +1,4 @@
-In the last unit, you created an Azure Resource Manager template and added an Azure Storage Account to the template. Recall that in our scenario each deployment may have a different type of Storage Account. You can make your template more reusable by adding a parameter for the Storage Account SKU.
+In the last unit, you created an Azure Resource Manager template and added an Azure Storage Account to the template. You may have noticed that there's a problem with your template. The storage account name is hard-coded. You can only use this template to deploy the same storage account every time. To deploy a storage account with a different name, you would have to create a new template, which isn't a practical way to automate your deployments. The Storage Account SKU is also hard-coded which means you can't vary the type of storage account for different environments. Recall that in our scenario each deployment may have a different type of Storage Account. You can make your template more reusable by adding a parameter for the Storage Account SKU.
 
 Here, you learn about the *parameters* and *outputs* sections of the template.
 
@@ -133,7 +133,7 @@ Here is an example to output the Storage Account's endpoints.
  "outputs": {
        "storageEndpoint": {
            "type": "object",
-           "value": "[reference(learntemplatestorage123).primaryEndpoints]"
+           "value": "[reference('learntemplatestorage123').primaryEndpoints]"
        }
    }
 ```

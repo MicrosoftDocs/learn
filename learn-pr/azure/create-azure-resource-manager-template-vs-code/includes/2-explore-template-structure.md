@@ -65,6 +65,8 @@ There are three ways to deploy an ARM template to Azure.
 - Deploy a linked template
 - Deploy in a continuous deployment pipeline
 
+This module focuses on deploying a local template. In future modules, you'll learn how to deploy more complicated infrastructure and how to integrate with Azure Pipelines.
+
 Deploying a local template requires you to have either [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) installed locally. You first sign in to Azure using Azure CLI or Azure PowerShell.
 
 # [Azure CLI](#tab/azure-cli)
@@ -156,19 +158,19 @@ For our storage example, your template might look like this:
    "variables": {},
    "functions": [],
    "resources": [
-       {
-           "type": "Microsoft.Storage/storageAccounts",
-           "apiVersion": "2019-06-01",
-           "name": "learntemplatestorage123",
-           "location": "westus",
-           "sku": {
-               "name": "Standard_LRS"
-           },
-           "kind": "StorageV2",
-           "properties": {
-               "supportsHttpsTrafficOnly": true
-           }
-       }
+      {
+          "type": "Microsoft.Storage/storageAccounts",
+          "apiVersion": "2019-06-01",
+          "name": "learntemplatestorage123",
+          "location": "westus",
+          "sku": {
+              "name": "Standard_LRS"
+          },
+          "kind": "StorageV2",
+          "properties": {
+              "supportsHttpsTrafficOnly": true
+          }
+      }
    ],
    "outputs": {}
 }

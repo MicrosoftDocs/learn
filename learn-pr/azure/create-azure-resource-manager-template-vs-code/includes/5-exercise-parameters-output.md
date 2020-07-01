@@ -1,4 +1,4 @@
-In this exercise, you add a parameter to define the Azure Storage Account name at execute time. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the template by adding an output that can be used later in the deployment process.
+In this exercise, you add a parameter to define the Azure Storage Account name during deployment. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the template by adding an output that can be used later in the deployment process.
 
 ## Create parameters for the template
 
@@ -125,7 +125,7 @@ Here you deploy successfully using a ```storageSKU``` parameter that is in the a
       --parameters storageSKU=Standard_GRS storageName={your-unique-name}
     ```
 
-      Allow this deployment to finish. This deployment succeeds as expected.
+      Allow this deployment to finish. This deployment succeeds as expected. The allowed values prevent users of your template from passing in parameter values that don't work for the resource. Let's see what happens when you provide an invalid SKU.
 
 1. Run the following commands to deploy the template with a parameter that is not allowed. Here. you changed the ```storageSKU``` parameter to **Basic**. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
