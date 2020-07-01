@@ -1,5 +1,3 @@
-# Introduction
-
 Working on an application means you will write code to implement business requirements. For the sake of speed and reliability, you and your team might not write all of that code yourselves. You might rely on external code, libraries that someone else wrote. The advantages are many:
 
 - **Time to market**, the ability to create and deploy an application faster than the competition could be the difference between having customers and not having it. Being fast to create and update an app is therefore crucial. A way to be fast is by using pre-built libraries when developing your application.
