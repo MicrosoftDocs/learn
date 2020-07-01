@@ -90,7 +90,8 @@ Follow these steps to invoke the **resetDevice** direct method which will restar
    az iot hub invoke-device-method --method-name "ResetMethod" --method-payload '{"reset_timer":5}' --device-id "${DEVICE_ID,,}" -n $HUB_NAME
    ```
 
-   > Note, IoT Hub requires Device IDs to be lowercase. The bash command **"${DEVICE_ID,,}"** in the invoke device method converts the device id to lowercase.
+    > [!NOTE]
+    > IoT Hub requires Device IDs to be lowercase. The bash command **"${DEVICE_ID,,}"** in the invoke device method converts the device id to lowercase.
 
 8. The invoke-device-method will display the result of the call as follows.
 
