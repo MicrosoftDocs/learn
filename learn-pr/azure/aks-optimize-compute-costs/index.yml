@@ -21,8 +21,7 @@ prerequisites: |
   - Knowledge of Kubernetes and its concepts
   - Basic knowledge of creating Kubernetes YAML manifest files
   - Basic knowledge of executing commands using kubectl
-#iconUrl: /learn/achievements/aks-optimize-compute-costs.svg
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/optimize-compute-costs-on-azure-kubernetes-service.svg
 badge:
   uid: learn.aks-optimize-compute-costs.badge
 levels: 
