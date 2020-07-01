@@ -20,6 +20,4 @@ tasks:
   hint: "Create the Azure Key Vault."
   azure:
     resource:
-      type: "Microsoft.KeyVault/vaults"
-
-    
+    type: "Microsoft.KeyVault/vaults"
