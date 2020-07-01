@@ -26,6 +26,10 @@ To add a breakpoint in your code, open your `.js` program then click on the left
 
 :::image source="../media/breakpoint.png" alt-text="Screenshot of breakpoint added in VS Code editor window":::
 
+If you use right-click to add a breakpoint, you can also choose **Add Conditional Breakpoint**. This is a special kind of breakpoint that allows you to enter a *condition* for breaking execution. This breakpoint will only be active when the specified condition is met.
+
+:::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in VS Code":::
+
 ## Visual Studio Code debugger overview
 
 After you've set up your breakpoints and started your app, you'll see new information panels and controls appear on the screen.
