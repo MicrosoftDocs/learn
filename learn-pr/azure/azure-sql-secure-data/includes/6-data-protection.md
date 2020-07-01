@@ -2,7 +2,7 @@ Once your network and identity access are configured and secure, the next topic 
 
 ## Data encryption
 
-Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the TLS minimum version (>1.0, >1.1, or >1.2). For Azure SQL Managed Instance, a TLS version of >1.2 is forced for outbound connections. The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust server certificate as a best practice.
+Encrypted connections are forced by Azure SQL Database, with the option to additionally specify the inbound TLS minimum version (>1.0, >1.1, or >1.2) required. For Azure SQL Managed Instance, a TLS version of >1.2 is forced for outbound connections, and you have the same options for inbound TLS as with Azure SQL Database. The recommended task is to force encryption on the client to avoid server negotiation, as well as to not trust server certificate as a best practice.
 
 Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new Azure SQL Databases, and can be configured for all deployment options via a switch in the Azure portal:  
 
@@ -39,7 +39,7 @@ ADD MASKED WITH (FUNCTION = 'RANDOM(1,20000)')
 
 From above, you see that there are multiple ways you can apply a mask via functions.
 
-Some users, for example the `DataOfficers` in this example, may need to be able to view the masked data. They can be given `UNMASK` privileges with the following T-SQL:
+Some users, for example, if they are assigned to a role such as `DataOfficers` (just an example, not an official role), may need to be able to view the masked data. They can be given `UNMASK` privileges with the following T-SQL:
 
 ```sql
 GRANT UNMASK TO DataOfficers
@@ -54,6 +54,6 @@ Depending on who is querying, the results would be as follows.
 In order to set up and configure data protection, you should:
 
 1. Ensure your applications force connection encryption
-1. Evaluate and enable TDE
+1. Evaluate and enable TDE (this is default for new databases, but if you migrate you may need to enable it)
 1. Take advantage of Dynamic Data Masking
 1. For advanced protection, you can configure Always Encrypted

@@ -17,7 +17,7 @@ In addition to these main choices, you have the opportunity to block all public 
 
 #### Allow access to Azure services
 
-During deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This makes it very easy to get up and running and get Azure SQL Database connected to other services like Azure VMs or Azure App Services, because you're allowing anything that comes through Azure to have the potential to connect.
+During deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This makes it very easy to get up and running and get Azure SQL Database connected to other services like Azure VMs or Azure App Services (or even the Azure Cloud Shell), because you're allowing anything that comes through Azure to have the potential to connect.
 
 ![Allow access to Azure services](../media/allowaccess.png)
 
@@ -88,7 +88,7 @@ Even though the connection through T-SQL is coming through the private IP addres
 
 ### Private Link for Azure SQL Database
 
-You've seen how to configure the most secure network using Azure SQL Database with the public endpoint. This method of securing Azure SQL Database has been used for years. However, in 2019, Azure began moving towards a concept of a Private Link, which is more similar to the way that Azure SQL Managed Instance is deployed. Private Link allows you to connect to Azure SQL Database (and several other PaaS offerings) using a private endpoint, which means it has a private IP address within a specific VNet.  
+You've seen how to configure the most secure network using Azure SQL Database with the public endpoint, which is similar to the way that Azure SQL Managed Instance is deployed. This method of securing Azure SQL Database has been used for years. However, in 2019, Azure began moving towards a concept of a Private Link, which is more similar to the way that Azure SQL Managed Instance is deployed. Private Link allows you to connect to Azure SQL Database (and several other PaaS offerings) using a private endpoint, which means it has a private IP address within a specific VNet.  
   
 ![Private endpoint connection](../media/privateendpoint.png)
 
@@ -100,7 +100,7 @@ Continuing with this example, on the Azure VM in VNet "SQLDBVNET-EUS", you could
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```
 
-By adding access from your specific VNet, connections to Azure SQL Database from your VM will appear to come through the private IP address of your VM. This is the same result you saw with virtual network rules.  
+The result would now be `10.0.0.2`, which is the private IP address of the Azure VM in this example. By adding access from your specific VNet, connections to Azure SQL Database from your VM will appear to come through the private IP address of your VM. This is the same result you saw with virtual network rules.  
 
 However, if you leverage the command prompt to look at the DNS hierarchy, using the follow command:
 
@@ -136,11 +136,11 @@ Additionally, the service will block you from directly connecting using anything
 
 ### Azure SQL Managed Instance
 
-While Azure SQL Managed Instance's deployment is quite different from Azure SQL Database, understanding the networking functionality at a high level is easy to translate from Azure SQL Database to Azure SQL Managed Instance. In Azure SQL Managed Instance, either before or during deployment, you must create a specific subnet (logical grouping within a VNet) with several requirements to host the Azure SQL Managed Instance(s). Once deployed, it is already configured like a private endpoint in Azure SQL Database. Using standard networking practices, you must enable access to the VNet that the managed instance lives. By default, you have a private endpoint and relatively private DNS hierarchy.  
+While Azure SQL Managed Instance's deployment is quite different from Azure SQL Database, understanding the networking functionality at a high level is easy to translate from Azure SQL Database to Azure SQL Managed Instance. In Azure SQL Managed Instance, either before or during deployment, you must create a specific subnet (logical grouping within a VNet) with several requirements to host the Azure SQL Managed Instance(s). Once deployed, it is already configured similar to a private endpoint in Azure SQL Database. Using standard networking practices, you must enable access to the VNet that the managed instance lives. By default, you have a private endpoint and relatively private DNS hierarchy.  
 
 ![SQL Managed Instance Network](../media/sqlminetwork.png)
 
-There are references in the summary on how exactly your subnet must be deployed.
+There are references in the summary on how exactly your subnet must be deployed and configured. If you go through the Azure portal flow for deployment, the virtual network and subnet can be deployed for you.
 
 ## Identity and access
 
@@ -159,7 +159,7 @@ There are built-in roles available to reduce need for higher level Azure RBAC ro
 
 ### Authentication
 
-For both Azure SQL Database and Azure SQL Managed Instance, SQL authentication is used for deployment, and this is referred to as the **server admin**. In Azure SQL Database, the server admin is a server-level principal for the Azure SQL Database logical server, but for Azure SQL Managed Instance it is a member of the sysadmin server role. In addition, "Mixed Mode" authentication is force for both deployment options.
+For both Azure SQL Database and Azure SQL Managed Instance, SQL authentication is used for deployment, and this is referred to as the **server admin**. In Azure SQL Database, the server admin is a server-level principal for the Azure SQL Database logical server, but for Azure SQL Managed Instance it is a member of the sysadmin server role. In addition, "Mixed Mode" authentication is forced for both deployment options.
 
 If you are migrating a workload that needs Windows Authentication or your organization leverages Azure Active Directory (Azure AD), you can use Azure AD. For both Azure SQL Managed Instance and Azure SQL Database, you can assign an Azure AD server admin using the portal or command-line tools.
 

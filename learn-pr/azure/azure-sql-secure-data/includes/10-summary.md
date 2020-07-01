@@ -1,6 +1,6 @@
 In this module and throughout the exercises, you got to get hands-on with many security capabilities and scenarios that are enabled for Azure SQL. As a summary, when securing Azure SQL, you should first consider your network and identity access, allowing only connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and leverage security management tools like those available in the Advanced data security suite.
 
-In the next module in this learning path, you'll take a look at how performance is different in Azure, and you'll see how you can optimize it in Azure SQL.  
+In the next module in this learning path, you'll take a look at the performance capabilities and tasks to monitor and tune performance for Azure SQL as it compares to SQL Server. You will also learn new capabilities in Azure SQL to automate and accelerated performance.
 
 ### Learn more
 

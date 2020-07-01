@@ -17,7 +17,7 @@ In an earlier exercise, you set up Auditing at the server level, but it is also 
 
 There are two aspects to monitoring and managing security: the Azure level and the database/server level. In Azure, you can leverage tools like the Activity Logs and RBAC auditing.
 
-In Azure SQL Managed Instance, you can configure SQL Server audit, and the engine can track the failed and successful logins. In Azure SQL Database, you can configure Azure SQL Auditing and leverage DMVs, Metrics, and Alerts in order to monitor security-related events (for example, `sys.event_log` will allow you to track the number of failed and successful connections and the number of connections blocked by the firewall).  
+In Azure SQL Managed Instance, you can configure SQL Server audit, and the engine can track the failed and successful logins. Failed logins for Azure SQL Managed Instance are also tracked in the ERRORLOG. In Azure SQL Database, you can configure Azure SQL Auditing and leverage DMVs, Metrics, and Alerts in order to monitor security-related events (for example, `sys.event_log` will allow you to track the number of failed and successful connections and the number of connections blocked by the firewall).  
 
 For both services, Microsoft recommends you configure Advanced data security including setting up alerts for Advanced Threat Protection (discussed in the next section and exercise). Finally, you can leverage the Azure Security Center to monitor, manage, and receive recommendations on all the resources in your Azure estate.
 
