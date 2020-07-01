@@ -26,5 +26,5 @@ tasks:
   hint: "Create the Azure SQL Database Server."
   azure:
     resource:
-      type: "Microsoft.Sql/Servers"
+      type: "Microsoft.Sql/servers"
 
