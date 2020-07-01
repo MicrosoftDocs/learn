@@ -122,7 +122,7 @@ Here, you'll download and test the application locally, and then create the reso
     ```PowerShell
     New-AzSqlServer `
         -ServerName $servername `
-        -ResourceGroupName $resourcegroupname ` 
+        -ResourceGroupName $resourcegroupname `
         -Location $location `
         -SqlAdministratorCredentials $(New-Object `
             -TypeName System.Management.Automation.PSCredential `
