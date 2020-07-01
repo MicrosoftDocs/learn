@@ -16,7 +16,7 @@ Imagine we allow anyone in our organization to create virtual machines (VMs). We
 >
 > At first glance, it might seem like Azure Policy is a way to restrict access to specific resource types similar to role-based access control (RBAC). However, they solve different problems. RBAC focuses on _user actions at different scopes_. You might be added to the contributor role for a resource group, allowing you to make changes to anything in that resource group. Azure Policy focuses on _resource properties during deployment_ and for already-existing resources. Azure Policy controls properties such as the types or locations of resources. Unlike RBAC, Azure Policy is a **default-allow-and-explicit-deny system**.
 
-## Creating a policy
+## Create a policy
 
 The process of creating and implementing an Azure Policy begins with creating a _policy definition_. Every policy definition has conditions under which it is enforced. And, it has an accompanying effect that takes place if the conditions are met. To apply a policy, you will:
 
@@ -67,7 +67,7 @@ Here is an example of a Compute policy that only allows specific virtual machine
 
 Notice the `[parameters('listofAllowedSKUs')]` value; this value is a _replacement token_ that will be filled in when the policy definition is applied to a scope. When a parameter is defined, it's given a name and optionally given a value.
 
-### Applying Azure policy
+### Apply an Azure policy
 
 To apply a policy, we can use the Azure portal, or one of the command-line tools such as Azure PowerShell by adding the `Microsoft.PolicyInsights` extension.
 
@@ -98,7 +98,7 @@ The preceding commands use the following information:
 | **Definition** | The policy definition, based on which you're using to create the assignment. In this case, it's the ID of policy definition Audit VMs that do not use managed disks. |
 | **Scope** | A scope determines what resources or grouping of resources the policy assignment gets enforced on. It could range from a subscription to resource groups. Be sure to replace `<scope>` with the name of your resource group. |
 
-### Identifying non-compliant resources
+### Identify non-compliant resources
 
 We can use the applied policy definition to identify resources that aren't compliant with the policy assignment through the Azure portal
 
@@ -164,7 +164,7 @@ Azure Policy can allow a resource to be created even if it doesn't pass validati
 
 From this screen, you can spot resources that are not compliant and take action to correct them.
 
-### Removing a policy definition
+### Remove a policy assignment
 
 Finally, you can delete policy requirements through the portal, or through the PowerShell command `Remove-AzPolicyAssignment` as shown below.
 

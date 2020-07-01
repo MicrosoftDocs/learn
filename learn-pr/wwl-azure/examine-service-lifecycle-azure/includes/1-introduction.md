@@ -1,5 +1,5 @@
 Azure services have a lifecycle.  Azure services start in the development phase. Next they are released to preview, to inform you new features are coming. Then the services release to public testing, so you can experiment with them.  Finally the service becomes available to everyone.  Services Lifecycle in Azure is the name of this release cycle.  Over the next few minutes we'll explore the value of service lifecycles.
-
+   
 > [!Tip]
 > ### Contoso Shipping case study
 >
