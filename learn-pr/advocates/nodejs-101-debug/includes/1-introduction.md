@@ -15,8 +15,8 @@ By the end of this module, you will be able to:
 * Inspect your program state at any execution step.
 * Rewind the call stack to find the source of an exception.
 
+Ultimately, you’ll be able to find bugs effectively in your Node.js programs. And you won't need to rely only on `console.log` anymore.
+
 ## Prerequisites
 
 - Local installations of [Node.js](https://nodejs.org/) and [Visual Studio Code](https://code.visualstudio.com/)
-
-Ultimately, you’ll be able to find bugs effectively in your Node.js programs. And you won't need to rely only on `console.log` anymore.
