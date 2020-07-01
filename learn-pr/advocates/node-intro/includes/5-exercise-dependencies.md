@@ -6,8 +6,10 @@ You've been given some app code that parses an address from a string. So your ta
 
 1. Clone the following repo. You should now have access to the following files:
 
+   ```bash
    -| address_parser.js
    -| package.json
+   ```
 
 1. Open up `address_parser.js`, it should look like so:
 

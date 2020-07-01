@@ -32,7 +32,7 @@ The way you install a dependency is by using a built-in command-line tool called
 ------| <files includes in the dependency>
 ```
 
-## Where to find a dependency
+## Where to find a dependency
 
 Individual developers might use the global registry at NPM to find and download packages they need for their apps. A company might have a whole strategy in place for what packages are ok to use and where to find them. For that reason packages might live in many different sources. Some of these sources might be publicly available and some might be restricted and only accessible for employees of a specific company. Here's a list of where packages might reside:
 
@@ -44,7 +44,7 @@ Individual developers might use the global registry at NPM to find and download 
 
 When you type `npm install <name of dependency>`, Node.js goes to a global registry called the NPM registry and looks for the code to download. It's located at `http://npmjs.org` and is page where you can browse for packages as well, if you visit the page using a browser. The site holds packages, zipped versions of source code.  Every package has a dedicated website you can go to, to learn more on where the source code resides, and numerous other information like metrics on downloads and maintenance for example.
 
-### NPM Commands
+### NPM Commands
 
 So far you've learned how you can install dependencies using the NPM tool but it can do a lot more. In fact, the NPM command-line tool has quite a few commands. The commands help you with an array of different tasks like installing packages to help you author your package, to initialize a Node.js project and more. It's not necessary to know all the commands in detail. Starting out with Node.js you are more likely to only use a subset of all commands. As you expand your usage of Node.js, you might use more and more commands within a variety of categories.
 
@@ -82,7 +82,7 @@ What's listed in the `dependencies` section of your `package.json` and what's in
 npm list --depth=<depth>
 ```
 
-At depth ,0` it will list the same content as what you have in your `dependencies` section in your `package.json`. Given that you have installed the `jest` package `npm list --depth=0` will produce an output similar to the below:
+At depth 0 it will list the same content as what you have in your `dependencies` section in your `package.json`. Given that you have installed the `jest` package `npm list --depth=0` will produce an output similar to the below:
 
 ```output
 ├── jest@26.0.1

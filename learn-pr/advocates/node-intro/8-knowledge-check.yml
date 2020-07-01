@@ -17,7 +17,7 @@ quiz:
   questions:
     - content: "How would you install a test framework like Jest?"
       choices:
-        - content: "Run `npm install jest --save-dev`"
+        - content: "Run `npm install jest`"
           isCorrect: false
           explanation: "While this will install jest, it will be installed as a normal dependency. This is not recommended as this means the dependency will ship with the application."
         - content: "Run `npm install jest --save-dev`"

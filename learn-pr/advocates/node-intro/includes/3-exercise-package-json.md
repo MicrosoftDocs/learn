@@ -7,8 +7,10 @@ Open up a terminal window.
 1. Clone the following repo TODO
 1. You should now have access to the following files:
 
+   ```bash
    -| src/
    ---| index.js
+   ```
 
 1. Run the following command to place yourself in the cloned directory:
 

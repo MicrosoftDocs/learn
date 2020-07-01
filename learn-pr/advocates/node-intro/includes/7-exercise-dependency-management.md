@@ -4,8 +4,10 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
 
 1. Clone the following repo TODO . You should now have access to the following files:
 
+   ```bash
    -| index.js
    -| package.json
+   ```
 
 1. Open up the `index.js` file. It should look like so:
 
