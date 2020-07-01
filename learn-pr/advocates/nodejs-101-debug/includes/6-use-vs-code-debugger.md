@@ -148,8 +148,8 @@ You can now input the condition that will trigger the breakpoint. Type `converte
 
 Now take some time to analyze the current state.
 
-- The variable `convertedValue` is the result of `convertToCurrency(value, sourceCurrency, targetCurrency)`, so what is the parameters' value?
-- In particular, what's the value of `value`?
+- The variable `convertedValue` is the result of `convertToCurrency(value, sourceCurrency, targetCurrency)`, so check also the parameters' value and confirm that it's correct.
+- In particular, look at `value` and see that it has the expected value `10`.
 
 Maybe we should take a look at the code of the `convertToCurrency()` function.
 
@@ -172,14 +172,13 @@ Now we know that some conversion rates are missing, let's understand why. Remove
 
 :::image source="../media/remove-all-breakpoints.png" alt-text="Button to remove all breakpoints":::
 
-Now add a breakpoint at the beginning of the program, line `37`, before `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. We can now at all times see how its value changes.
+Now add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. We can now at all times see how its value changes.
 
 Step over the first `setExchangeRate()` call, and look at the result on `rates`.
-Does its value seem correct to you?
 
-You can see at this point that the `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time, to look at the result of the second `setExchangeRate()` call. What do you see? What did you expect?
+You can see at this point that the `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time, to look at the result of the second `setExchangeRate()` call.
 
-Looking at the result, we see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. Time to look at the `setExchangeRate()` code:
+We see now that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. Time to look at the `setExchangeRate()` code:
 
 ```js
 function setExchangeRate(rate, sourceCurrency, targetCurrency) {
@@ -210,6 +209,7 @@ With this code:
 ```js
   for (const currency in rates) {
     if (currency !== targetCurrency) {
+      // Use a pivot rate for currencies that don't have the direct conversion rate
       const pivotRate = currency === sourceCurrency ? 1 : rates[currency][sourceCurrency];
       rates[currency][targetCurrency] = rate * pivotRate;
       rates[targetCurrency][currency] = 1 / (rate * pivotRate);
