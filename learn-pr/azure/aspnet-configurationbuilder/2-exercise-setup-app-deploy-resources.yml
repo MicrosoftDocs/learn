@@ -27,6 +27,3 @@ tasks:
   azure:
     resource:
       type: Microsoft.Sql/servers
-      kind: 12.0
-      properties:
-        version: 12.0
