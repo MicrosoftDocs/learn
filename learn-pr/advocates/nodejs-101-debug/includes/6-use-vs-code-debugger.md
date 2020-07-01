@@ -54,7 +54,7 @@ We are going to use the debugger a lot, so let's create a launch configuration f
 
 This will create the file `.vscode/launch.json` in your project. You can then edit this file to further customize how your program should be started for debugging. By default, it creates a launch configuration to execute the currently opened file, `currency.js` in our case.
 
-:::image source="../media/launch-configuration.png" alt-text="VS Code debugger execution controls":::
+:::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration":::
 
 Check that the path and name of the program entry point matches your setup.
 
@@ -67,7 +67,7 @@ Once you have finished preparing your configuration, select it using the dropdow
 
 Now start the program using the **Start debugging** button.
 
-:::image source="../media/start-debugging.png" alt-text="Start debugging button in VS Code":::
+:::image source="../media/start-debugging.png" alt-text="Screenshot of start debugging button in VS Code":::
 
 You should see the program finishing quickly, that's normal as you did not add any breakpoints yet.
 
@@ -95,7 +95,7 @@ Add a breakpoint by clicking in the left margin at line **39**, on `printForeign
 
 Then start debugging again, and step into the `printForeignValues()` function.
 
-:::image source="../media/step-into.png" alt-text="Step into button":::
+:::image source="../media/step-into.png" alt-text="Screenshot of step into button":::
 
 Now take some time to inspect the different variables values, using the **Variables** panel.
 
@@ -106,7 +106,7 @@ Now take some time to inspect the different variables values, using the **Variab
 
 Advance step by step until the variable `convertedValue` is set using **Step over**.
 
-:::image source="../media/step-over.png" alt-text="Step over button":::
+:::image source="../media/step-over.png" alt-text="Screenshot of step over button":::
 
 You should see that the value seems correct at this point.
 
@@ -142,7 +142,7 @@ One option would be to add a breakpoint at this line, and inspect the variable e
 
 What would be nice here, would be to tell the debugger to only stop at this breakpoint when `convertedValue` is `undefined`. Turns out, VS Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
 
-:::image source="../media/conditional-breakpoint.png" alt-text="Set a conditional breakpoint in VS Code":::
+:::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in VS Code":::
 
 You can now input the condition that will trigger the breakpoint. Type `convertedValue === undefined` and press `Enter`. Restart the program, and it should stop right where you wanted.
 
@@ -162,7 +162,7 @@ function convertToCurrency(value, sourceCurrency, targetCurrency) {
 
 We now that the result of this code is `undefined`, and we also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover onto the `rates` variable to take a peek.
 
-:::image source="../media/peek-at-variable.png" alt-text="Peek at the rates variable value":::
+:::image source="../media/peek-at-variable.png" alt-text="Screenshot of peeking at the rates variable value":::
 
 We try to get the exchange rate from `EUR` to `JPY`, but if you unfold the `EUR` value you can see that there's only a conversion rate for `USD`, `JPY` is missing!
 
@@ -170,7 +170,7 @@ We try to get the exchange rate from `EUR` to `JPY`, but if you unfold the `EUR`
 
 Now we know that some conversion rates are missing, let's understand why. Remove all existing breakpoints by clicking the **Remove all breakpoints** button in the **Breakpoints** panel.
 
-:::image source="../media/remove-all-breakpoints.png" alt-text="Button to remove all breakpoints":::
+:::image source="../media/remove-all-breakpoints.png" alt-text="Screenshot of button to remove all breakpoints":::
 
 Now add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. We can now at all times see how its value changes.
 

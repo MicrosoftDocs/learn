@@ -10,11 +10,11 @@ If you have a Node.js project open, you have three different ways to activate th
 
 - If you have a `.js` file open in the editor window, you can click on the **Run and debug**, then select **Node.js** to directly debug this JavaScript file.
 
-    :::image source="../media/debug-select-environment.png" alt-text="Select Node.js in environment selection dropdown in VS Code":::
+    :::image source="../media/debug-select-environment.png" alt-text="Screenshot of Node.js environment selection dropdown in VS Code":::
 
 - You can also choose to open a **Node.js debug terminal**. Clicking on this button opens a special terminal window, that you can use to run your program from the command line. For example, you can type in `node myscript.js` and your app will start with the debugger enabled automatically, without having to use the `--inspect` option.
 
-    :::image source="../media/debug-terminal.png" alt-text="Debug terminal window in VS Code":::
+    :::image source="../media/debug-terminal.png" alt-text="Screenshot of debug terminal window in VS Code":::
 
 - You can click on **create a launch.json file** to customize further your run configuration and share it with your coworkers. We'll see more about that later.
 
@@ -24,13 +24,13 @@ As opposed to the built-in Node.js command line debugger, the VS Code debugger w
 
 To add a breakpoint in your code, open your `.js` program then click on the left side of the line number, on the line you want to break. You should see a red circle once the breakpoint is enabled. To remove it, just click on the red circle again.
 
-:::image source="../media/breakpoint.png" alt-text="Breakpoint added in VS Code editor window":::
+:::image source="../media/breakpoint.png" alt-text="Screenshot of breakpoint added in VS Code editor window":::
 
 ## Visual Studio Code debugger overview
 
 After you've set up your breakpoints and started your app, you'll see new information panels and controls appear on the screen.
 
-:::image source="../media/debugger-overview.png" alt-text="VS Code debugger overview":::
+:::image source="../media/debugger-overview.png" alt-text="Screenshot of VS Code debugger overview":::
 
 1. Debugger launch controls.
 1. Variables state.
@@ -46,7 +46,7 @@ After you've set up your breakpoints and started your app, you'll see new inform
 
 At the top of the side bar you can find the launch controls:
 
-:::image source="../media/debug-sidebar-controls.png" alt-text="VS Code debug side bar controls":::
+:::image source="../media/debug-sidebar-controls.png" alt-text="Screenshot of VS Code debug side bar controls":::
 
 1. Start debugging.
 1. Select active launch configuration.
@@ -69,7 +69,7 @@ It is possible to change the value of a variable on the fly by double-clicking o
 
 By hovering a function parameter or a variable directly in the editor window, you can also peek at its value:
 
-:::image source="../media/variable-hover.png" alt-text="Hover variable during debugging to peek at its value":::
+:::image source="../media/variable-hover.png" alt-text="Screenshot of variable hover during debugging":::
 
 ### Watch variables
 
@@ -107,7 +107,7 @@ That's where the VS Code **Call stack** panel comes handy. It filters out unwant
 
 To help you even more, you can click on the **Restart frame** button that appears when hovering a function name in the stack. It will "rewind" execution back to the beginning of that function, by actually restarting your program up to that point.
 
-:::image source="../media/restart-frame.png" alt-text="Hover variable during debugging to peek at its value":::
+:::image source="../media/restart-frame.png" alt-text="Screenshot of restart frame button in VS Code call stack panel":::
 
 ### View loaded script files
 
@@ -121,7 +121,7 @@ In the Breakpoints panel, you see and toggle all the breakpoints you placed in y
 
 You can control the execution flow of your program using these controls.
 
-:::image source="../media/debugger-controls.png" alt-text="VS Code debugger execution controls":::
+:::image source="../media/debugger-controls.png" alt-text="Screenshot of VS Code debugger execution controls":::
 
 From left to right, the controls go like that:
 
@@ -146,7 +146,7 @@ In case you want to follow the execution of your program using logs, there is ac
 
 By right-clicking in the same area used to add breakpoint, you can select **Add logpoint**:
 
-:::image source="../media/logpoint.png" alt-text="VS Code debugger execution controls":::
+:::image source="../media/logpoint.png" alt-text="Screenshot of adding a logpoint in VS Code":::
 
 You can enter a message to display at that point in your code. It's even possible to print expressions by enclosing them in brackets, using `{<EXPRESSION>}`.
 
