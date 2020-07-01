@@ -18,7 +18,7 @@ Alternatively, you can download the drivers from [Future Technology Devices Inte
 
 2. Select and start the **Azure Sphere Developer Command Prompt**.
 
-3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace <email@address.com> with your account and run the command.
+3. If you've never logged in to Azure Sphere before or have installed the SDK, add the -- newuser parameter to create a new tenant user. Replace `<email@address.com>` with your account and run the command.
 
    ```
    azsphere login --newuser <email@address.com>
