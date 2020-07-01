@@ -26,7 +26,7 @@ In this module, you will:
 * Connect to the command-line of the DSVM via SSH 
 * Add a non-administrative user to the DSVM
 * Connect to the graphical Desktop of the DSVM via X2Go Client 
-* Create a Jupyter Notebook powered by the DSVM and use tk to do some rudimentary data manipulation
+* Create a Jupyter Notebook powered by the DSVM and use Pytorch to do some rudimentary data manipulation
 * As a different user, access the Jupyter Notebook and data
 
 
