@@ -10,11 +10,11 @@ If you have a Node.js project open, you have three different ways to activate th
 
 - If you have a `.js` file open in the editor window, you can click on the **Run and debug**, then select **Node.js** to directly debug this JavaScript file.
 
-    :::image source="../media/debug-select-environment.png" alt-text="Screenshot of Node.js environment selection dropdown in VS Code":::
+    :::image source="../media/select-environment.png" alt-text="Screenshot of Node.js environment selection dropdown in VS Code":::
 
 - You can also choose to open a **Node.js debug terminal**. Clicking on this button opens a special terminal window, that you can use to run your program from the command line. For example, you can type in `node myscript.js` and your app will start with the debugger enabled automatically, without having to use the `--inspect` option.
 
-    :::image source="../media/debug-terminal.png" alt-text="Screenshot of debug terminal window in VS Code":::
+    :::image source="../media/terminal.png" alt-text="Screenshot of debug terminal window in VS Code":::
 
 - You can click on **create a launch.json file** to customize further your run configuration and share it with your coworkers. We'll see more about that later.
 
@@ -50,7 +50,7 @@ After you've set up your breakpoints and started your app, you'll see new inform
 
 At the top of the side bar you can find the launch controls:
 
-:::image source="../media/debug-sidebar-controls.png" alt-text="Screenshot of VS Code debug side bar controls":::
+:::image source="../media/sidebar-controls.png" alt-text="Screenshot of VS Code debug side bar controls":::
 
 1. Start debugging.
 1. Select active launch configuration.

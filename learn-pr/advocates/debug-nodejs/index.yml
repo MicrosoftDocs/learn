@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.nodejs.debug
+uid: learn.azure.debug-nodejs
 metadata:
   title: Interactively debug Node.js apps with the built-in and Visual Studio Code debuggers
   description: Learn how to efficiently debug your Node.js app using Visual Studio Code to fix your bugs quickly.
@@ -26,14 +26,14 @@ products:
 prerequisites: |
   - Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)
 units:
-- learn.azure.nodejs.debug.1-introduction
-- learn.azure.nodejs.debug.2-what-is-a-debugger
-- learn.azure.nodejs.debug.3-run-your-code-step-by-step
-- learn.azure.nodejs.debug.4-use-built-in-debugger
-- learn.azure.nodejs.debug.5-analyze-your-program-state
-- learn.azure.nodejs.debug.6-use-vs-code-debugger
-- learn.azure.nodejs.debug.7-knowledge-check
-- learn.azure.nodejs.debug.8-summary
+- learn.azure.debug-nodejs.1-introduction
+- learn.azure.debug-nodejs.2-debugger
+- learn.azure.debug-nodejs.3-run-your-code-step-by-step
+- learn.azure.debug-nodejs.4-use-builtin-debugger
+- learn.azure.debug-nodejs.5-analyze-your-program-state
+- learn.azure.debug-nodejs.6-use-vs-code-debugger
+- learn.azure.debug-nodejs.7-knowledge-check
+- learn.azure.debug-nodejs.8-summary
 
 badge:
-  uid: learn.azure.nodejs.debug.badge
+  uid: learn.azure.debug-nodejs.badge
