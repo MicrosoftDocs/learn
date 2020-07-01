@@ -42,7 +42,7 @@ quiz:
         - content: "By setting a breakpoint in your code."
           isCorrect: true
           explanation: "When using a debugger, you can using breakpoints to pause execution at specific points in your code."
-    - content: "What is the best way to print information in the console during debugging?"
+    - content: "What is the preferred way to print information in the console during debugging?"
       choices:
         - content: "With a breakpoint"
           isCorrect: false
