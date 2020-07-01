@@ -17,14 +17,16 @@ content: |
 tasks:
 - action: exists
   environment: azure
-  hint: "Create the Azure SQL Database Server."
-  azure:
-    resource:
-      type: "Microsoft.Sql/servers"
-- action: exists
-  environment: azure
   hint: "Create the web app."
   azure:
     resource:
       type: "Microsoft.Web/sites"
-
+- action: exists
+  environment: Azure
+  hint: "Create the Azure SQL Database Server."
+  azure:
+    resource:
+      type: Microsoft.Sql/servers
+      kind: 12.0
+      properties:
+        version: 12.0
