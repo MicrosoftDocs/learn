@@ -106,4 +106,4 @@ Follow these steps to invoke the **resetDevice** direct method which will restar
 
 ## Close Visual Studio
 
-Now close **Close Visual Studio**.
+Now you can close **Visual Studio** and clean up your resources in Azure.
