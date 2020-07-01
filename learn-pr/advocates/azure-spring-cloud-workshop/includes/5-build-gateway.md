@@ -11,7 +11,7 @@ Gateways are used to route public HTTP traffic to microservices:
 To create our gateway, we will use [https://start.spring.io/](https://start.spring.io/) with the command line:
 
 ```bash
-curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=gateway -d bootVersion=2.2.5.RELEASE | tar -xzvf -
+curl https://start.spring.io/starter.tgz -d dependencies=cloud-gateway,cloud-eureka,cloud-config-client -d baseDir=gateway -d bootVersion=2.3.1.RELEASE | tar -xzvf -
 ```
 
 > [!NOTE]
