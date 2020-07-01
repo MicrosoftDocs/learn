@@ -30,10 +30,10 @@ units:
 - learn.node-intro.1-introduction
 - learn.node-intro.2-package-json
 - learn.node-intro.3-exercise-package-json
-- learn.node-intro.4-dependencies-json
-- learn.node-intro.5-exercise-dependencies-json
+- learn.node-intro.4-dependencies
+- learn.node-intro.5-exercise-dependencies
 - learn.node-intro.6-dependency-management-json
-- learn.node-intro.7-exercise-dependency-management-json
+- learn.node-intro.7-exercise-dependency-management
 - learn.node-intro.8-knowledge-check
 - learn.node-intro.9-summary
 
