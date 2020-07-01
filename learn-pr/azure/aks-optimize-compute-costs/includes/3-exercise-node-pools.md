@@ -17,7 +17,7 @@ In this exercise, you'll create an Azure Kubernetes Service Kubernetes cluster. 
     AKS_CLUSTER_NAME=akscostsaving-$RANDOM
     ```
 
-    [!include[](../../../includes/azure-cloudshell-copy-past-tip.md)]
+    [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
     You can check each value using the `echo` command, for example, `echo $REGION_NAME`.
 
