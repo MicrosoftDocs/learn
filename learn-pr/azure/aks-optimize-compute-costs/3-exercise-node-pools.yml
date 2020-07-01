@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-kubernetes-service.exercise-node-pools
+title: Introduction
+
+metadata:
+  title: Introduction to Azure Kubernetes Service
+  description: Introduction
+  ms.date: 7/10/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-node-pools.md)]

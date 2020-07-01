@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-kubernetes-service.spot-node-pools
+title: Configure multiple node pools by using AKS spot node pools with cluster autoscaler
+
+metadata:
+  title: Configure multiple node pools by using AKS spot node pools with cluster autoscaler
+  description: Introduction
+  ms.date: 7/10/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 11
+content: |
+  [!include[](includes/4-spot-node-pools.md)]
