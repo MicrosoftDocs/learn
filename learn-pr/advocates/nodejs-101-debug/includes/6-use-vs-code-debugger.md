@@ -128,7 +128,7 @@ Run the program in the debugger again, and it should pause on the exception with
 
 Look at the line where the execution stopped and the exception message `TypeError: Cannot read property 'toFixed' of undefined`. From that, you can deduce that the `value` parameter function has the value `undefined` instead of being a number, causing the exception.
 
-What you see below the error message is called a *stack trace* and can be a bit difficult to decipher. The good news is that VS Code process the function call stack for you, showing by default only the meaningful information in the **Call stack** panel. Let's use it to find out which code led to this exception.
+The *stack trace* you see below the error message can be a bit difficult to decipher. The good news is that VS Code process the function call stack for you, showing by default only the meaningful information in the **Call stack** panel. Let's use it to find out which code led to this exception.
 
 We know that the exception was thrown in `formatValueForDisplay()`. Double-click on the function below it in the **Call stack** panel to see where is what called. You should end up at this line in `printForeignValues` function:
 

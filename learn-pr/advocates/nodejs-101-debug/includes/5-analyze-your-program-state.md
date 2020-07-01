@@ -83,7 +83,27 @@ All expressions inside the watch panel will be updated automatically as your cod
 
 Every time your program enters a function, an entry is added to the call stack. When your application becomes complex and you have functions called within functions many times, it represents the trail of functions calls.
 
-It's useful to find the source of an exception. If you have an unexpected crash in your program, you can unwind this call stack to find out where the exception originated from.
+It's useful to find the source of an exception. If you have an unexpected crash in your program, you will often see something like this in the console:
+
+```text
+/Users/learn/nodejs/index.js:22
+  return value.toFixed(2);
+               ^
+TypeError: Cannot read property 'toFixed' of undefined
+    at formatValueForDisplay (/Users/learn/nodejs/index.js:22:16)
+    at printForeignValues (/Users/learn/nodejs/index.js:31:28)
+    at Object.<anonymous> (/Users/learn/nodejs/index.js:39:1)
+    at Module._compile (internal/modules/cjs/loader.js:956:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
+    at Module.load (internal/modules/cjs/loader.js:812:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:724:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1025:10)
+    at internal/main/run_main_module.js:17:11
+```
+
+The `at [...]` lines below the error message is called a *stack trace*. It gives the name and origin of every function that was called before ending up with the exception. It can be a bit difficult to decipher though, as it also includes internal functions from the Node.js runtime.
+
+That's where the VS Code **Call stack** panel comes handy. It filters out unwanted information to show you only the relevant functions from your own code by default. You then can unwind this call stack to find out where the exception originated from.
 
 To help you even more, you can click on the **Restart frame** button that appears when hovering a function name in the stack. It will "rewind" execution back to the beginning of that function, by actually restarting your program up to that point.
 
