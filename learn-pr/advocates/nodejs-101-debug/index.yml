@@ -24,7 +24,7 @@ roles:
 products:
 - azure
 prerequisites: |
-  - Local installations of [Node.js](https://nodejs.org/) and [Visual Studio Code](https://code.visualstudio.com/)
+  - Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)
 units:
 - learn.azure.nodejs.debug.1-introduction
 - learn.azure.nodejs.debug.2-what-is-a-debugger
