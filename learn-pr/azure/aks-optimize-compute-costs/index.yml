@@ -41,6 +41,6 @@ units:
 - learn.aks-optimize-compute-costs.exercise-node-pools
 - learn.aks-optimize-compute-costs.spot-node-pools
 - learn.aks-optimize-compute-costs.exercise-spot-node-pools
-- learn.ask-optimize-compute-costs.resource-quota-azure-policy
-- learn.ask-optimize-compute-costs.exercise-resource-quota-azure-policy
+- learn.aks-optimize-compute-costs.resource-quota-azure-policy
+- learn.aks-optimize-compute-costs.exercise-resource-quota-azure-policy
 - learn.aks-optimize-compute-costs.summary
