@@ -1,4 +1,4 @@
-The ease with which Azure Kubernetes Service allows you to orchestrate your cloud-native applications has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS that ensures a cost-effective approach to creating workloads.
+The ease with which Azure Kubernetes Service (AKS) allows you to orchestrate your cloud-native applications has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS that ensures a cost-effective approach to creating workloads.
 
 Companies implement business rules to define how employees may use company software, hardware, and other resources in the organization. These business rules are often described using policies that are put in place, enforced, and reviewed as per defined within that policy. A policy allows an organization to meet governance, legal requirements, implement best practices, and organizational conventions.
 
@@ -9,8 +9,6 @@ To understand how to use Azure Policy for Kubernetes, we need to cover a few add
 ### What is a Kubernetes admission controller?
 
 An admission controller is a Kubernetes plug-in that intercepts authenticated and authorized requests to the Kubernetes API before the requested object's persistence. You can think of an admission controller as software that governs and enforce how the cluster is used and designed to limit requests to create, delete, and modify Kubernetes objects.
-
-The admission controller functions as a gatekeeper, and several advanced Kubernetes security features such as pod security policies depend on admission controllers for their functionality.
 
 ### What is an admission controller webhook?
 
@@ -32,7 +30,7 @@ OPA aksGatekeeper allows you to define organization-wide policies.  For example,
 
 - the maximum resource limits like CPU and memory limits for all configured pods 
 
-- the deployment of images are allowed only from approved repositories
+- the deployment of images is allowed only from approved repositories
 
 - labels for all namespaces in a cluster list a point-of-contact for each namespace
 
@@ -56,7 +54,7 @@ To set up resource limits, you can apply resource quotas at the namespace level 
 
 There are a few steps to registering the *Azure Policy Add-on for AKS* feature.
 
-1. You have to register two resource providers using the `az provider register` command.
+1. You register two resource providers using the `az provider register` command.
 
     - **Microsoft.ContainerService**. This provider is the same resource provider you used to register the *spotpoolpreview* feature with earlier.
     
@@ -109,9 +107,9 @@ There are a few steps to registering the *Azure Policy Add-on for AKS* feature.
 
 ## Assign a built-in policy definition
 
-You manage your Azure environment's policies using the Azure policy compliance dashboard. The dashboard allows you to drill-down to a per-resource, per-policy granularity. It helps you bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
+You manage your Azure environment's policies using the Azure policy compliance dashboard. The dashboard allows you to drill down to a per-resource, per-policy granularity. It helps you bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
 
-For each policy an overview of the following information is listed:
+For each policy, an overview of the following information is listed:
 
 | Item  | Description | 
 | --- | --- |
@@ -122,7 +120,7 @@ For each policy an overview of the following information is listed:
 | **Non-complaint resources** | The number of unique resources that violates one or more policy rules. |
 | **Non-complaint policies** | The number of non-compliant policies.
 
-From here, you drill-down into the per-resource, per-policy detail as well as events triggered. For example, a workload deployment that is denied.
+From here, you drill down into the per-resource, per-policy detail as well as events triggered. For example, a workload deployment that is denied.
 
 ### Assigning policies
 
@@ -132,7 +130,7 @@ You assign Azure policies in two ways. Either as a group of policies, called an 
 
 #### Initiative assignment
 
-An initiative assignment is were a collection of Azure policy definitions are grouped together to satisfy a specific goal or purpose in mind. For example, to apply the Payment Card Industry Data Security Standard across your resources.
+An initiative assignment is a collection of Azure policy definitions grouped together to satisfy a specific goal or purpose in mind. For example, to apply the Payment Card Industry Data Security Standard across your resources.
 
 #### Policy assignment
 
@@ -155,7 +153,7 @@ The first step requires you to select and enter basic information defining the n
 | Item | Description |
 | --- | --- |
 | **Scope** | The scope determines what resources or group of resource the policy assignment gets enforced on. This value is based on a subscription or a management group. You can exclude resources from your selection at one level lower than the scope level.|
-| **Policy Definition** | This is where you select the policy you want to apply. You can choose from several built-in policy options. |
+| **Policy Definition** | Here you select the policy you want to apply. You can choose from several built-in policy options. |
 | **Assignment name** | The name by which to identify the assigned policy. |
 | **Description** | A free text description that describes the policy. |
 | **Policy enforcement** | This option switches between Enabled and Disabled. If disabled, the policy isn't applied, and requests are not denied with non-compliance. |
@@ -163,7 +161,7 @@ The first step requires you to select and enter basic information defining the n
 
 #### Policy parameters
 
-Policies require you to configure the business rules that apply to each specific policy. Not all policies have the same business rules, and therefore each policy has different parameters that may apply.
+Policies require you to configure the business rules that apply to each specific policy. Not all policies have the same business rules, and that's why each policy has different parameters that may apply.
 
 For example, the *Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster* policy, requires you to set three parameters.
 
@@ -175,7 +173,7 @@ If you compare the above policy with the *Web Application should only be accessi
 
 All policies have an **Effect** setting. This setting enables or disables the execution of the policy. Like before, policies may have different effect options.
 
-For example, for the resource management policy, you can select **audit**, **deny**, or **disable** as the value. However, for the web application policy, you can only select **audit** or **disable**.
+For example, for the resource management policy, you can select **audit**, **deny**, or **disable** as the value. For the web application policy, you can only select **audit** or **disable**.
 
 The following table lists all the effects currently supported in policy definitions.
 
@@ -183,7 +181,7 @@ The following table lists all the effects currently supported in policy definiti
 | --- | --- |
 | **Append** | Used to add additional fields to the requested resource. |
 | **Audit** | Used to create a warning event in the activity log. |
-| **AuditIfNotExists** |  Enables auditing of resources related to the resource that matches the if condition. |
+| **AuditIfNotExists** |  Enables auditing of resources related to the resource that matches the condition. |
 | **Deny** | Used to prevent a resource request that doesn't match defined standards through a policy definition and fails the request. |
 | **DeployIfNotExists** | Executes a template deployment when the condition is met. |
 | **Disabled** | useful for testing situations or for when the policy definition has parameterized the effect, and you want to disable a single assignment. |
@@ -191,6 +189,6 @@ The following table lists all the effects currently supported in policy definiti
 
 #### Policy Remediation
 
-The final step is to consider policy remediation. When assigning policies, there is the possibility that resources already exist and are impacted by the new policy. By default, only newly created resources are affected by the new policy. You can update existing resources using a remediation task following the assignment of the policy. Remediation tasks will differ between the types of policies applied.
+The final step is to consider policy remediation. When assigning policies, there's the possibility that resources already exist and is impacted by the new policy. By default, only newly created resources are affected by the new policy. You can update existing resources using a remediation task following the assignment of the policy. Remediation tasks will differ between the types of policies applied.
 
 Let's assign the *Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster* policy in the following exercise.

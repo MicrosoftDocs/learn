@@ -1,6 +1,6 @@
-As more development teams in your company embrace AKS as a development platform, you realize that you need to manage costs by enforcing business rules that define workload resource limits. You want to make sure that developers can only deploy workloads within specific CPU and memory allocation limits.  The system must prevent workloads that exceed the limits of running.
+As more development teams in your company embrace AKS as a development platform, you realize you need to manage costs by enforcing business rules that define workload resource limits. You want to make sure developers can only deploy workloads within specific CPU and memory allocation limits. The system must prevent workloads that exceed the limits of running.
 
-In this exercise, you'll enable Azure Policy for Azure Kubernetes Service on your AKS cluster. You want to limit the resources requested by workloads deployed by your development teams. To do this, you'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceeds the policy's resource parameters.
+In this exercise, you'll enable Azure Policy for Azure Kubernetes Service on your AKS cluster. You want to limit the resources requested by workloads deployed by your development teams. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceeds the policy's resource parameters.
 
 ## Enable the ContainerService and PolicyInsights resource providers
 
@@ -13,7 +13,7 @@ In this exercise, you'll enable Azure Policy for Azure Kubernetes Service on you
     >
     >This exercise makes use of preview features. Once you enable some preview features in Azure, defaults may be used for all AKS cluster created in the subscription. Test preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
 
-1. To use Azure Policy for AKS the configured cluster must be version 1.14. Run the following script to validate your AKS cluster version:
+1. Azure Policy for AKS requires the cluster version to be 1.14 or above. Run the following script to validate your AKS cluster version:
 
     ```azurecli
     az aks list
@@ -45,7 +45,7 @@ In this exercise, you'll enable Azure Policy for Azure Kubernetes Service on you
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/AKS-AzurePolicyAutoApprove')].   {Name:name,State:properties.state}"
     ```
 
-    If the cloud shell session times out, then you can track the registration process via the Azure portal using the [preview onboarding page](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
+    If the Cloud Shell session times out, then you can track the registration process via the Azure portal using the [preview onboarding page](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
 
 1. Run the `az provider register` command to propagate the update once you confirmed the feature list query command shows 'Registered'
 
@@ -128,7 +128,7 @@ In this exercise, you'll enable Azure Policy for Azure Kubernetes Service on you
     v2
     ```
 
-    You're now ready to switch to the Azure Portal to configure the **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy.
+    You're now ready to switch to the Azure portal to configure the **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy.
 
 ## Assign a built-in policy definition
 
@@ -136,11 +136,11 @@ You configure the new Azure Policy using the Policy service in the Azure portal.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. To locate the *Policy* service in the Azure Portal, enter the term "policy" in the search bar at the top of the portal. **Select** the **Policy** service from the list of services, as shown in the example below.
+1. To locate the *Policy* service in the Azure portal, enter the term "policy" in the search bar at the top of the portal. **Select** the **Policy** service from the list of services, as shown in the example below.
 
-    :::image type="content" source="../media/7-search-result.png" alt-text="Screenshot of the general Azure portal search box with a result showing for the search term policy.":::
+    :::image type="content" source="../media/7-search-result.png" alt-text="Screenshot of the general Azure portal search box with a result that shows the Azure policy service.":::
 
-1. The Policy dashboard opens with an overview that shows all your assigned policies and the status of resources and how policies affects them. I've you haven't assigned any policies then the dashboard will be empty.
+1. The Policy dashboard opens with an overview that shows all your assigned policies and the status of resources and how policies affect them. I've you haven't assigned any policies then the dashboard will be empty.
 
 1. Select the **Assignments** option under the Authoring section from the Policy service's navigation panel.
 
@@ -179,13 +179,13 @@ You configure the new Azure Policy using the Policy service in the Azure portal.
 
     Here is an example of the completed **Parameters** tab.
 
-    :::image type="content" source="../media/7-complete-parameters-tab.png" alt-text="Screenshot that shows the information captured in the basic tab.":::
+    :::image type="content" source="../media/7-complete-parameters-tab.png" alt-text="Screenshot that shows the information captured in the parameters tab.":::
 
 1. Select the **Remediation** tab. This tab allows you to select how the new policy impacts resources that already exist. By default, only newly created resources are affected by the new policy. Leave the default configuration as is on this tab.
 
     Here is an example of the completed **Parameters** tab.
 
-    :::image type="content" source="../media/7-complete-remediation-tab.png" alt-text="Screenshot that shows the information captured in the basic tab.":::
+    :::image type="content" source="../media/7-complete-remediation-tab.png" alt-text="Screenshot that shows the information captured in the remediation tab.":::
 
 1. Select the **Review + save** tab. Review the values selected and click on **Save**.
 

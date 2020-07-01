@@ -1,4 +1,4 @@
-In the previous exercise, you created a standard user node pool with cluster autoscaler to manage the creation of nodes as resource demands increased an decreased on the cluster. In this exercise, you'll add a spot node pool to reduce your cluster's operational cost further.
+You created a standard user node pool with cluster autoscaler to manage the creation of nodes as resource demands increased a decreased on the cluster in the previous exercise. Here, you'll add a spot node pool to reduce your cluster's operational costs even further.
 
 ## Enable preview features on your subscription
 
@@ -11,7 +11,7 @@ In the previous exercise, you created a standard user node pool with cluster aut
     >
     >This exercise makes use of preview features. Once you enable some preview features in Azure, defaults may be used for all AKS clusters created in the subscription. Test preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
 
-1. Register the *spotpoolpreview* flag using the `az feature register` command. This command takes two parameters. The namespace identifying the resource provider you're registering the feature to the and the name of the feature. 
+1. Register the *spotpoolpreview* flag using the `az feature register` command. This command takes two parameters. The namespace identifying the resource provider you're registering the feature to the name of the feature.
 
     ```azurecli
     az feature register --namespace "Microsoft.ContainerService" --name "spotpoolpreview"
@@ -79,7 +79,7 @@ You want to create a separate node pool that supports the batch processing servi
         --no-wait
     ```
 
-    Keep in mind that this request may fail due to capacity restrictions in the location that you've selected.
+    Keep in mind that this request may fail because of capacity restrictions in the location that you've selected.
 
 1. Run the `az aks nodepool show` command to show the new batch processing spot node pool's details.
 
@@ -149,7 +149,7 @@ You want to create a separate node pool that supports the batch processing servi
 
 You can schedule a pod to run on a spot node by adding toleration to the pod's deployment manifest file. When the toleration corresponds with the taint applied to your spot nodes, then pod will be scheduled on these nodes.
 
-The nodes in a spot node pool is assigned a taint that equals `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`. You use the information in this key value pair in the `tolerations` section of your workloads YAML manifest file. With the 2nd batch processing pool configured as a spot node pool, you can now create a deployment file to schedule workloads to run on it.
+The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`. You use the information in this key value pair in the `tolerations` section of your workloads YAML manifest file. With the second batch processing pool configured as a spot node pool, you can now create a deployment file to schedule workloads to run on it.
 
 1. Create a manifest file for the Kubernetes deployment called `spot-node-deployment.yaml` by using the integrated editor.
 
