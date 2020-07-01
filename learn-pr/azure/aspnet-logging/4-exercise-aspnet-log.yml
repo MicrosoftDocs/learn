@@ -14,7 +14,6 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-aspnet-log.md)]
-
 tasks:
 - action: exists
   environment: azure
