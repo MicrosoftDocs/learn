@@ -60,9 +60,9 @@ node inspect myscript.js
 < Debugger attached.
 Break on start in myscript.js:1
 > 1 const express = require('express');
-  2 
+  2
   3 const app = express();
-debug> 
+debug>
 ```
 
 You can now use one of the multiple commands to control the execution of your program:
