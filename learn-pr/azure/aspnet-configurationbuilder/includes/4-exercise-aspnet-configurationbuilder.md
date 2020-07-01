@@ -4,20 +4,13 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 
 ## Create an Azure Key Vault and store the connection string
 
-1. In the Cloud Shell window on the right, run the commands shown below to ensure that your environment is still set up correctly. If necessary, re-create any missing environment variables with the values you used earlier in the Setup unit.
-
-    ```PowerShell
-    cd ~/eShopModernizing/Setup
-    . ./environment.ps1
-    ```
-
-2. Define a PowerShell variable containing the name of the key vault to be created. 
+1. In the Cloud Shell window on the right, run the command shown below to define a PowerShell variable containing the name of the key vault to be created. 
 
     ```PowerShell
     $vaultname = (-join("shopvault", $useralias))
     ```
 
-3. Create an Azure key vault.
+2. Create an Azure key vault.
 
     ```PowerShell
     New-AzKeyVault `
