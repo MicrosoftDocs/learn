@@ -27,3 +27,4 @@ tasks:
   azure:
     resource:
       type: "Microsoft.Web/sites"
+
