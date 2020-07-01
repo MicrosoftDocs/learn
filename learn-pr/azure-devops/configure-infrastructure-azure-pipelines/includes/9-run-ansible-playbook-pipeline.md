@@ -70,9 +70,9 @@ Create a service connection that enables Azure Pipelines to access your Azure su
 
     | Field               | Value |
     |---------------------|-------|
-    | **Host name**       | Your control machine's IP address. For example, *40.113.7.63* |
+    | **Host name**       | Your control machine's IP address, for example, *40.113.7.63* |
     | **Port number**     | *22* |
-    | **Private key**     | The contents of your SSH private key, *ansible_rsa*. |
+    | **Private key**     | The contents of your SSH private key, *ansible_rsa* |
     | **User name**       | *azureuser* |
     | **Password/Passphrase** | (Leave blank) |
     | **Connection name** | *SSH - Ansible VM* |

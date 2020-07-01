@@ -5,13 +5,13 @@ First, they need to set up their local development environment. Here, you'll do 
 In this exercise, you:
 
 > [!div class="checklist"]
-> * Create a Git repository.
+> * Create a local Git repository.
 > * Connect to your Azure subscription and bring up Cloud Shell through Visual Studio Code.
 > * Create an SSH key pair and upload your key pair to Cloud Shell.
 
 ## Create a Git repository
 
-Here, you create a working directory, configure Git, and then create a Git repository.
+Here, you create a working directory, configure Git, and then create a local Git repository. Later, you'll upload your repository to GitHub so that you can run configure VMs from Azure Pipelines.
 
 ### Add Visual Studio Code to your system PATH
 
@@ -115,16 +115,6 @@ Now that you've installed the Azure Account extension, you can sign in to Azure 
 1. In Visual Studio Code, select <kbd>F1</kbd> or select **View** > **Command Palette** to access the command palette.
 1. In the command palette, enter *Azure: Sign In*.
 1. From the browser tab that opens, select the Microsoft account that's associated with your Azure subscription. Then follow the steps to sign in.
-1. Run the following `az account list` command to verify that you've successfully signed in.
-
-    ```azurecli
-    az account list \
-      --query "[?isDefault][id]" \
-      --all \
-      --output tsv
-    ```
-
-    You see a string of letters and numbers in the output. This is your Azure subscription ID.
 
 ### Create an SSH key
 

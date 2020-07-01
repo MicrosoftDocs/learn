@@ -6,7 +6,7 @@ But in practice, you typically use a _control machine_ to manage your systems. A
 
 You can set up a control machine manually, either in the cloud or in your datacenter. If you need multiple control machines, you can create an image that has everything configured.
 
-You can set up a control machine on most popular Linux distributions. Here, you create a control machine VM on CentOS and install the required software by running a Custom Script Extension. Recall that the Custom Script Extension is a way to download and run scripts on your Azure VMs. You can run the extension when you create a VM, or any time after the VM is in use.
+You can set up a control machine on most popular Linux distributions. Here, you create a control machine VM on CentOS and install the required software by running the Custom Script Extension. Recall that the Custom Script Extension is a way to download and run scripts on your Azure VMs. You can run the extension when you create a VM, or any time after the VM is in use.
 
 To enable the VM to authenticate with Azure, you create a service principal. A _service principal_ is an identity with a limited role that can access Azure resources. Think of a service principal as a service account that can perform automated tasks on your behalf. You create a service principal in Cloud Shell, and then add details about your service principal to a credentials file that you upload to your control machine.
 
@@ -177,10 +177,11 @@ Create the control machine by creating a CentOS VM on Azure and then running the
       --output tsv)
     ```
 
-1. Run the following command to verify that Ansible is configured. At the prompt, enter **yes** to continue connecting.
+1. Run the following command to verify that Ansible is configured.
 
     ```bash
-    ssh -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no azureuser@$IPADDRESS "which ansible"
+    ssh -i ~/.ssh/ansible_rsa -o StrictHostKeyChecking=no \
+      azureuser@$IPADDRESS "which ansible"
     ```
 
     The `which ansible` command prints the path to the `ansible` executable file on your VM. You see this:
@@ -332,6 +333,9 @@ You're now ready to run Ansible from your control machine. To do that:
 
     * The full path to your playbook file, *users.yml*.
     * Your control machine's IP address, such as *40.113.7.63*.
+
+    > [!NOTE]
+    > In Visual Studio Code, if you see a prompt that asks "Copy workspace to remote host?", select **no, not show this again**.
 
     From the output, you see that the run succeeded, but Ansible made no changes to your VMs.
 
