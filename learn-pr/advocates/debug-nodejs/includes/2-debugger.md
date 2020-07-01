@@ -2,7 +2,7 @@ During your journey as developer, there's always _that_ moment when you end up a
 
 > Why isn't my code working?
 
-When there's a bug in your program, everyone usually has its own way of dealing with this problem.
+During your work on Tailwind Traders retail application, you'll most likely be confronted to this situation a few times. When there's a bug in your program, everyone usually has its own way of dealing with this problem.
 You probably already have tried one or more of these debugging approaches yourself:
 
 - Try running your program again, because it **should** work.

@@ -1,4 +1,5 @@
-In addition to being able to run your code step by step, you saw in the previous exercise that knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but it's still rather limited. Using a debugger with a more complete visual interface is useful for that purpose. So let's discover how you can configure Visual Studio Code debugger to use it with Node.js.
+In addition to being able to run your code step by step, you saw in the previous exercise that knowing about your program state is also essential. With the built-in debugger, you have some options for that end like the `exec` command, but it's still rather limited. Using a debugger with a more complete visual interface is useful for that purpose, and it'll help you a lot while working on the Tailwin Traders application.
+Let's discover how you can configure Visual Studio Code debugger to use it with Node.js.
 
 ## Debug Node.js programs with Visual Studio Code
 
