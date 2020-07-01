@@ -22,7 +22,7 @@ tasks:
     resource:
       type: "Microsoft.Web/sites"
 - action: exists
-  environment: Azure
+  environment: azure
   hint: "Create the Azure SQL Database Server."
   azure:
     resource:
