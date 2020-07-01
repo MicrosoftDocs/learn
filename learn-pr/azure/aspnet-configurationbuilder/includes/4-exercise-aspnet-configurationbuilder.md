@@ -62,7 +62,7 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 7. Convert the connection string into a secure string.
 
     ```PowerShell
-    $connectionstring = ConvertTo-SecureString $connectionstringplaintext `  
+    $connectionstring = ConvertTo-SecureString $connectionstringplaintext `
         -AsPlainText `
         -Force
     ```
