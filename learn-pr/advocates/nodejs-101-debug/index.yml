@@ -33,6 +33,7 @@ units:
 - learn.azure.nodejs.debug.5-analyze-your-program-state
 - learn.azure.nodejs.debug.6-use-vs-code-debugger
 - learn.azure.nodejs.debug.7-knowledge-check
+- learn.azure.nodejs.debug.8-summary
 
 badge:
   uid: learn.azure.nodejs.debug.badge
