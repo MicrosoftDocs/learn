@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-kubernetes-service.node-pools
+uid: learn.aks-optimize-compute-costs.node-pools
 title: Configure multiple nodes and enable scale to zero using Azure Kubernetes Service
 
 metadata:

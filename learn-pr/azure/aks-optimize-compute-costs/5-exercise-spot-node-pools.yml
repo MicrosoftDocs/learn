@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-kubernetes-service.exercise-spot-node-pools
+uid: learn.aks-optimize-compute-costs.exercise-spot-node-pools
 title: Introduction
 
 metadata:

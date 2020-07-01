@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-kubernetes-service.spot-node-pools
+uid: learn.aks-optimize-compute-costs.spot-node-pools
 title: Configure multiple node pools by using AKS spot node pools with cluster autoscaler
 
 metadata:
