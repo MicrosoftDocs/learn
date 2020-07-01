@@ -109,7 +109,8 @@ Follow these steps to show the actual temperature recorded by the device:
    az iot hub device-twin show --device-id "${DEVICE_ID,,}" -n $HUB_NAME
    ```
 
-   > Note, IoT Hub requires Device IDs to be lowercase. The bash command **"${DEVICE_ID,,}"** in the device twin show command converts the device id to lowercase.
+    > [!NOTE]
+    > IoT Hub requires Device IDs to be lowercase. The bash command **"${DEVICE_ID,,}"** in the device twin show command converts the device id to lowercase.
 
 9. Review the device twin **reported** section and look for the updated **ActualTemperature** property.
 
@@ -179,7 +180,8 @@ To set the desired temperature:
    az iot hub device-twin update --device-id "${DEVICE_ID,,}" -n $HUB_NAME --set properties.desired='{"DesiredTemperature":{"value":25}}'
    ```
 
-   > Note, IoT Hub requires Device IDs to be lowercase. The bash command **"${DEVICE_ID,,}"** in the device twin show command converts the device id to lowercase.
+    > [!NOTE]
+    > IoT Hub requires Device IDs to be lowercase. The bash command **"${DEVICE_ID,,}"** in the device twin show command converts the device id to lowercase.
 
 3. Observe the blinking LED on the Azure Sphere may change color depending on the desired temperature you set.
 

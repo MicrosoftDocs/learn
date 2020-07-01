@@ -34,7 +34,7 @@ The following outlines how Azure IoT Hub uses Device Twins to set properties on 
 4. The device sends a reported property message back to Azure IoT. In this example, the device would report the new desired temperate.
 5. Your application can then query the device twin report property cloud side.
 
-[![The illustration shows how Azure IoT Hub device twins work.](../media/device-twin-configuration-pattern.png)
+![The illustration shows how Azure IoT Hub device twins work.](../media/device-twin-configuration-pattern.png)
 
 ## Device Twin Bindings
 
