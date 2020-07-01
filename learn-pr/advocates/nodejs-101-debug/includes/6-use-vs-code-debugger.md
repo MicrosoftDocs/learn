@@ -89,25 +89,34 @@ We can see two bugs here:
 
 We will start by fixing the first issue. As you did not write this code and there are different functions called, let's first understand the execution flow using step by step.
 
-Add a breakpoint at line **39**, before `printForeignValues(10, 'EUR');`.
+Add a breakpoint by clicking in the left margin at line **39**, on `printForeignValues(10, 'EUR');`.
 
 :::image source="../media/add-breakpoint.png" alt-text="Screenshot of breakpoint location in the code":::
 
 Then start debugging again, and step into the `printForeignValues()` function.
+
+:::image source="../media/step-into.png" alt-text="Step into button":::
+
 Now take some time to inspect the different variables values, using the **Variables** panel.
+
+:::image source="../media/variables-panel.png" alt-text="Screenshot of variables panel":::
 
 - What's the value of `value` and `sourceCurrency`?
 - Do you see the three expected keys `USD`, `EUR` and `JPY` in the `rates` variable?
 
-Advance step by step until the variable `convertedValue` is set. You should see that the value seems correct at this point.
+Advance step by step until the variable `convertedValue` is set using **Step over**.
 
-Step a bit further to see the value of `displayValue`. Is it the string we expect to display?
+:::image source="../media/step-over.png" alt-text="Step over button":::
+
+You should see that the value seems correct at this point.
+
+Step a bit further to see the value of `displayValue`. It should contain the formatted string for display, with two digits as we expected.
 
 We can then conclude that up to this point, the functions `convertToCurrency()` and `formatValueForDisplay()` seem correct and return the expected result.
 
 Continue stepping until the `console.info()` call, and examine this line carefully. Do you see the mistake here?
 
-You can then fix the first bug by using `displayValue` instead of `convertedValue` when printing the value. Restart the program and check that the `USD` value is displayed correctly. First problem, solved.
+You can then fix the first bug by using `displayValue` instead of `convertedValue` when printing the value. Restart the program and check that the `USD` value correctly displays `11.36`. First problem, solved.
 
 ## Find the cause of the crash
 
