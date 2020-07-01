@@ -1,6 +1,6 @@
-Your company's drone tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. Your team developed a new predictive modeling feature that allows the team to process flight path information in extreme weather conditions and create optimal flight routes. The service that processes flight path information requires GPU-based VM support and only runs on specific days during the week.
+Your company's drone tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. Your team developed a new predictive modeling service that allows the team to process flight path information in extreme weather conditions and create optimal flight routes. This service requires GPU-based VM support and only runs on specific days during the week.
 
-You want to configure a cluster node pool dedicated to flight path information processing. The process only runs for a couple of hours a day and you want to use a GPU-based node pool. However, you only pay for the nodes when you use them.
+You want to configure a cluster node pool dedicated to processing flight path information. The process only runs for a couple of hours a day and you want to use a GPU-based node pool. However, you only want to pay for the nodes when you use them.
 
 Let's look at how node pools and nodes are used in AKS and then how to scale the node count in a node pool.
 
@@ -18,7 +18,7 @@ System node pools only allow the use of Linux as the node OS and only run Linux-
 
 ### User node pools
 
-User node pools support custom workloads. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone tracking solution has a batch processing service that you deploy to a node pool configured with general-purpose VMs. The batch processing service requires higher capacity GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU enabled nodes.  
+User node pools support custom workloads. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone tracking solution has a batch processing service that you deploy to a node pool configured with general-purpose VMs. The new predictive modeling service requires higher capacity GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU enabled nodes.  
 
 In contrast to system node pools, user node pools allow you to specify Windows or Linux as the node operating system.
 
@@ -38,7 +38,7 @@ The function in AKS that provides the flexibility of increasing or decreasing th
 
 If you're running workloads that execute for a specific duration at specific intervals, then manually scaling the node pool size is a way to control node costs.
 
-Assume you want to run a compute-heavy operation that requires a GPU-based node pool and only runs at specific intervals. You can configure the node pool with specific GPU-based nodes and scale the node pool to zero nodes when you're not using the cluster.
+Assume you want to run the new compute-heavy predictive modeling service that requires a GPU-based node pool and only runs at specific intervals. You can configure the node pool with specific GPU-based nodes and scale the node pool to zero nodes when you're not using the cluster.
 
 Here is an example `az aks node pool add` that you can use to create the node pool. Notice the use of the `--node-vm-size` parameter to specify the `Standard_NC6` GPU-based VM size for the node s in the pool.
 
@@ -80,7 +80,7 @@ The Kubernetes horizontal pod autoscaler (HPA) to monitor the resource demand on
 
 The Kubernetes Metrics Server collects memory and processor metrics from controllers, nodes, and containers running on the AKS cluster. One of the ways to access this information is to use the Metrics API. The HPA checks the Metrics API every 30 seconds to decide if your application needs additional instances to meet the required demand.
 
-In your example, you see that the batch processing service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch process service replicas will allow the timeous processing of orders.
+Assume our company also has a batch processing service that schedules drone flight paths. You see that the batch processing service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch process service replicas will allow the timeous processing of orders.
 
 To solve the problem, you configure HPA to automatically scale the number of replicas of the batch processing service up when needed and then scale down the replica count when batch requests become less.
 

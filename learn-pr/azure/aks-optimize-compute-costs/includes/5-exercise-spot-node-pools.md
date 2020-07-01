@@ -1,4 +1,4 @@
-You created a standard user node pool with cluster autoscaler to manage the creation of nodes as resource demands increased a decreased on the cluster in the previous exercise. Here, you'll add a spot node pool to reduce your cluster's operational costs even further.
+You created a standard user node pool with cluster autoscaler to manage the creation of nodes in the previous exercise and scaled the node count manually. Here, you'll add a spot node pool with automatic scaling to reduce your cluster's operational costs where usage isn't as predictive, but still varies. You'll also deploy a workload with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
 
 ## Enable preview features on your subscription
 

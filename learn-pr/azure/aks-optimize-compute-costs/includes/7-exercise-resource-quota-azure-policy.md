@@ -1,6 +1,6 @@
 As more development teams in your company embrace AKS as a development platform, you realize you need to manage costs by enforcing business rules that define workload resource limits. You want to make sure developers can only deploy workloads within specific CPU and memory allocation limits. The system must prevent workloads that exceed the limits of running.
 
-In this exercise, you'll enable Azure Policy for Azure Kubernetes Service on your AKS cluster. You want to limit the resources requested by workloads deployed by your development teams. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceeds the policy's resource parameters.
+In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You want to limit the resources requested by workloads deployed by your development teams. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceeds the policy's resource parameters.
 
 ## Enable the ContainerService and PolicyInsights resource providers
 
@@ -146,7 +146,7 @@ You configure the new Azure Policy using the Policy service in the Azure portal.
 
     :::image type="content" source="../media/7-assignment-option.png" alt-text="Screenshot of the Policy service navigation panel that shows the location of the Assignments option.":::
 
-1. Recall from earlier that you have two options to create a policy assignment. You assign either an initiative or a policy. Select the **Assign policy **option.
+1. Recall from earlier that you have two options to create a policy assignment. You assign either an initiative or a policy. Select the **Assign policy** option.
 
     :::image type="content" source="../media/7-assign-policy.png" alt-text="Screenshot that shows the new policy assignment option." lightbox="../media/7-assign-policy.png":::
 

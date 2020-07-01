@@ -4,7 +4,7 @@ Automatically scaling the number of batch processing service replicas allows for
 
 Azure provides Azure Virtual Machine instances that you can use to access unused Azure compute capacity at deep discounts. These VMs are ideal for workloads that can be interrupted, providing scalability while reducing costs.
 
-Let's look at the underlying infrastructure that is available to you when deciding on a cost-saving solution.
+Let's look at the underlying infrastructure that allows for this cost-saving solution in AKS.
 
 ## Azure Spot Virtual Machines (Spot VMs)
 
@@ -53,9 +53,9 @@ A spot node pool is a user node pool backed by spot virtual machine scale sets. 
 - define the maximum price you want to pay per hour
 - enable the recommended AKS Kubernetes cluster autoscaler when using spot node pools
 
-For example, to support the drone tracking application's batch processing service, you can create a spot node pool and enable the cluster autoscaler. You then configure the horizontal pod scaler to deploy additional batching processing services to match resource demands.
+For example, to support the drone tracking application's batch processing service, you can create a spot node pool and enable the **cluster autoscaler**. You then configure the **horizontal pod scaler** to deploy additional batching processing services to match resource demands.
 
-As the demand for nodes increase, the cluster autoscaler can now scale up and down the number of nodes in the spot node pool. Should node evictions happen, then the cluster autoscaler will continue to try to scale up the node count if additional nodes are still needed.
+As the demand for nodes increase, the **cluster autoscaler** can scale the number of nodes up and down in the spot node pool. Should node evictions happen, the **cluster autoscaler** will continue to try to scale the node count up if additional nodes are still needed.
 
 ### Spot node pool limitations
 

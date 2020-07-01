@@ -1,4 +1,4 @@
-The ease with which Azure Kubernetes Service (AKS) allows you to orchestrate your cloud-native applications has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS that ensures a cost-effective approach to creating workloads.
+The ease with which Azure Kubernetes Service (AKS) allows you to orchestrate your cloud-native applications has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS to ensure a cost-effective approach to creating workloads.
 
 Companies implement business rules to define how employees may use company software, hardware, and other resources in the organization. These business rules are often described using policies that are put in place, enforced, and reviewed as per defined within that policy. A policy allows an organization to meet governance, legal requirements, implement best practices, and organizational conventions.
 
