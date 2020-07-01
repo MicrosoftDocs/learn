@@ -19,4 +19,4 @@ Ultimately, you’ll be able to find bugs effectively in your Node.js programs. 
 
 ## Prerequisites
 
-- Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)
+* Local installations of [Node.js](https://nodejs.org) and [Visual Studio Code](https://code.visualstudio.com)

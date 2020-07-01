@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.nodejs.debug.2-what-is-a-debugger
-title: Debugging: running code step by step
+title: What's a debugger?
 metadata:
-  title: Debugging: running code step by step
+  title: What's a debugger?
   description: Learn about what is a debugger and why it's useful.
   author: sinedied
   ms.author: yolasors
