@@ -59,7 +59,7 @@ Here, you create a parameter to use as a resource tag in your template.
     "tags": "[parameters('resourceTags')]",
     ```
 
-1. You file should look like this:
+1. Your file should look like this:
 
     [!code-json[](code/tags.json?highlight=24-29,40)]
 
@@ -72,7 +72,7 @@ Here, you create a parameter to use as a resource tag in your template.
     ```azurecli
     templateFile="azuredeploy.json"
     today=$(date +"%d-%b-%Y")
-    DeploymentName="addVariable-"$today
+    DeploymentName="updateTags-"$today
 
     az deployment group create \
         --name $DeploymentName \
