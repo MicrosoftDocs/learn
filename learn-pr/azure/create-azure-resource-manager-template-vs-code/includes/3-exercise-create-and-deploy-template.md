@@ -1,4 +1,4 @@
-In this exercise, you create an Azure Resource Manager template and deploy it to Azure. Then you update that template to add parameters and outputs.
+In this exercise, you create an Azure Resource Manager template (ARM template) and deploy it to Azure. Then you update that ARM template to add parameters and outputs.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -29,7 +29,7 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 1. Save the changes to the file.
 
-## Deploy the Resource Manager template to Azure
+## Deploy the ARM template to Azure
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
 
@@ -76,7 +76,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Deploy the template to Azure
 
-Here, you deploy the template to Azure. The template doesn't have any resources yet, so you won't see resources created. However, you'll see a successful deployment.
+Here, you deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. However, you'll see a successful deployment.
 
 1. Deploy the template using Azure CLI commands in the terminal.
 
@@ -110,9 +110,9 @@ Here, you deploy the template to Azure. The template doesn't have any resources 
 
 1. Leave the page open in your browser. You will check on deployments again.
 
-## Add a resource to the template
+## Add a resource to the ARM template
 
-In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. Here, you add an Azure Storage Account resource to the template using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
+In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. Here, you add an Azure Storage Account resource to the ARM template using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the square brackets in the resources block. ```"resources":[],```
 1. Type **storage** in the square brackets. You see a list of related snippets. Choose **arm-storage**.
@@ -135,7 +135,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 1. Note the location of the resource is set to the location of the resource group where it will be deployed. Leave the default here.
 1. Save the file.
 
-### Deploy the updated template
+### Deploy the updated ARM template
 
 Here, you change the name of the deployment to better reflect what this deployment does.
 
@@ -160,4 +160,4 @@ Here, you change the name of the deployment to better reflect what this deployme
 
     :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
-1. Notice that the storage account has been deployed.
+1. Notice that the Storage Account has been deployed.

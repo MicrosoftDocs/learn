@@ -1,4 +1,4 @@
-Here, you learn about using Microsoft Azure Resource Manager templates to implement infrastructure as code. You survey the sections of a Resource Manager template, discover how to deploy your template to Azure, and delve into detail on the *resources* section of the template.
+Here, you learn about using Microsoft Azure Resource Manager templates (ARM templates) to implement infrastructure as code. You survey the sections of an ARM template, discover how to deploy your ARM template to Azure, and delve into detail on the *resources* section of the ARM template.
 
 ## What is infrastructure as code
 
@@ -13,17 +13,17 @@ With infrastructure as code, you can maintain both your application code and eve
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Infrastructure-as-Code--One-Dev-Question/player?format=ny]
 
-## What is an Azure Resource Manager template
+## What is an ARM template
 
-Azure Resource Manager templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your deployment. The template uses a *declarative syntax*. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow. Declarative syntax is different than *imperative syntax*, which uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
+ARM templates are JavaScript Object Notation (JSON) files that define the infrastructure and configuration for your deployment. The template uses a *declarative syntax*. The declarative syntax is a way of building the structure and elements that outline what resources will look like without describing its control flow. Declarative syntax is different than *imperative syntax*, which uses commands for the computer to perform. Imperative scripting focuses on specifying each step in deploying the resources.
 
-ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it.  In a template, you specify the resources and the properties for those resources, then the [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true) uses that information to deploy the resources in an organized and consistent manner.
+ARM templates allow you declare what you intend to deploy without having to write the sequence of programming commands to create it.  In an ARM template, you specify the resources and the properties for those resources, then the [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true) uses that information to deploy the resources in an organized and consistent manner.
 
-### Benefits of using Resource Manager templates
+### Benefits of using ARM templates
 
 Using ARM templates allows you to automate deployments and use the practice of infrastructure as code (IaC). The template code becomes part of your infrastructure and development projects. Just like application code, you can store the IaC files in a source repository and version it.
 
-Templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
+ARM templates are *idempotent*, which means you can deploy the same template many times and get the same resource types in the same state.
 
 The Resource Manager orchestrates the deployment of the resources so they're created in the correct order, and when possible, in parallel, so your deployments finish faster than scripted deployments.
 
@@ -35,9 +35,9 @@ If your deployments become more complex, you can break your templates into small
 
 In the Azure portal, you can review your deployment history and get information about the state of the deployment. You can see all the parameter values passed in, and any output values.
 
-You can also integrate your templates into continuous integration and continuous deployment (CI/CD) tools like [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines?azure-portal=true), which can automate your release pipelines for fast and reliable application and infrastructure updates. By using Azure DevOps and ARM template tasks, you can continuously build and deploy your projects.
+You can also integrate your ARM templates into continuous integration and continuous deployment (CI/CD) tools like [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines?azure-portal=true), which can automate your release pipelines for fast and reliable application and infrastructure updates. By using Azure DevOps and ARM template tasks, you can continuously build and deploy your projects.
 
-### Template file structure
+### ARM template file structure
 
 When writing an ARM template, you need to understand all the parts that make up the template and what they do. The template files are made up of the following elements.
 
@@ -57,7 +57,7 @@ When writing an ARM template, you need to understand all the parts that make up 
 
 - *output* section - an optional section where you specify the values that will be returned at the end of the deployment.
 
-## How do I deploy a template to Azure
+## How do I deploy an ARM template to Azure
 
 There are three ways to deploy an ARM template to Azure.
 
@@ -65,7 +65,7 @@ There are three ways to deploy an ARM template to Azure.
 - Deploy a linked template
 - Deploy in a continuous deployment pipeline
 
-This module focuses on deploying a local template. In future modules, you'll learn how to deploy more complicated infrastructure and how to integrate with Azure Pipelines.
+This module focuses on deploying a local ARM template. In future modules, you'll learn how to deploy more complicated infrastructure and how to integrate with Azure Pipelines.
 
 Deploying a local template requires you to have either [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) installed locally. You first sign in to Azure using Azure CLI or Azure PowerShell.
 
@@ -137,7 +137,7 @@ More information on these two types of deployment are covered in other modules.
 
 ## How do I add resources to the template
 
-To add a resource to your template, you will need to know the resource provider and its types of resources. The syntax for this combination is in the form of *{resource-provider}/{resource-type}*. For example, to add a storage account resource to your template, you will need the *Microsoft.Storage* resource provider. One of the types for this provider is *storageAccount*. So your resource type will be displayed as *Microsoft.Storage/storageAccounts*. You can use a list of [Resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true) to find the providers you need.
+To add a resource to your template, you'll need to know the resource provider and its types of resources. The syntax for this combination is in the form of *{resource-provider}/{resource-type}*. For example, to add a storage account resource to your template, you'll need the *Microsoft.Storage* resource provider. One of the types for this provider is *storageAccount*. So your resource type will be displayed as *Microsoft.Storage/storageAccounts*. You can use a list of [resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true) to find the providers you need.
 
 Once you have the provider and resource type, you need to know the properties to use for that resource type. For that, you can go to the [Define resources in Azure Resource Manager template](https://docs.microsoft.com/azure/templates?azure-portal=true) page. There you will see a left side menu to find the resource you are looking for. Notice that the properties are sorted by API version.
 

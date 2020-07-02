@@ -1,10 +1,10 @@
-In the last unit, you created an Azure Resource Manager template and added an Azure Storage Account to the template. You may have noticed that there's a problem with your template. The storage account name is hard-coded. You can only use this template to deploy the same storage account every time. To deploy a storage account with a different name, you would have to create a new template, which isn't a practical way to automate your deployments. The Storage Account SKU is also hard-coded which means you can't vary the type of storage account for different environments. Recall that in our scenario each deployment may have a different type of Storage Account. You can make your template more reusable by adding a parameter for the Storage Account SKU.
+In the last unit, you created an Azure Resource Manager template (ARM template) and added an Azure Storage Account to the ARM template. You may have noticed that there's a problem with your template. The Storage Account name is hard-coded. You can only use this template to deploy the same Storage Account every time. To deploy a storage account with a different name, you would have to create a new template, which isn't a practical way to automate your deployments. The Storage Account SKU is also hard-coded which means you can't vary the type of Storage Account for different environments. Recall that in our scenario each deployment may have a different type of Storage Account. You can make your template more reusable by adding a parameter for the Storage Account SKU.
 
 Here, you learn about the *parameters* and *outputs* sections of the template.
 
-## What are template parameters
+## What are ARM template parameters
 
-Parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you pass in different values based on whether you're deploying to an environment for development, test, production or others. For example, the template above uses the *Standard_LRS* SKU. You can reuse this template for other deployments that create a storage account by making the name of the SKU a parameter. Then, you pass in the name of the SKU you would like for this particular deployment when the template is executed. You can do this either at the command line, or using a parameter file.
+ARM template parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you pass in different values based on whether you're deploying to an environment for development, test, production or others. For example, the template above uses the *Standard_LRS* Storage Account SKU. You can reuse this template for other deployments that create a Storage Account by making the name of the Storage Account SKU a parameter. Then, you pass in the name of the SKU you would like for this particular deployment when the template is deployed. You can do this either at the command line, or using a parameter file.
 
 In the parameters section of the template, you specify which values you can input when deploying the resources. You're limited to 256 parameters in a template and parameter definitions can use most template functions.
 
@@ -43,11 +43,11 @@ It is recommended that you use parameters for settings that vary according to th
 
 For security reasons, it is important to never hard code or provide default values for usernames and/or passwords in templates. Always use parameters for usernames and passwords (or secrets). Use *secureString* for all passwords and secrets. If you pass sensitive data in a JSON object, use the secureObject type. Template parameters with *secureString* or *secureObject* types can't be read or harvested after the deployment of the resource.
 
-### How do I use parameters in my template
+### How do I use parameters in my ARM template
 
-In the parameters section of the template, you specify the parameters that can be input when deploying the resources. You're limited to 256 parameters in a template.
+In the parameters section of the ARM template, you specify the parameters that can be input when deploying the resources. You're limited to 256 parameters in a template.
 
-Here is an example of a template file with a parameter for the storage SKU defined in the *parameters* section of the template. Notice that you can provide a default for the parameter to be used if no value is specified at execution.
+Here is an example of a template file with a parameter for the Storage Account SKU defined in the *parameters* section of the template. Notice that you can provide a default for the parameter to be used if no value is specified at execution.
 
 ```json
 "parameters": {
@@ -81,7 +81,7 @@ Then, use the parameter in the resource definition. Notice the syntax is ```[par
   }
 ```
 
-When you execute the template, you can give a value for the parameter. Notice the last line in the command below.
+When you deploy the template, you can give a value for the parameter. Notice the last line in the command below.
 
 ```azurecli
 templateFile="azuredeploy.json"
@@ -101,9 +101,9 @@ az deployment group create \
   --parameters storageAccountType=Standard_LRS parameter2=anotherValue
 ```
 
-## What are template outputs
+## What are ARM template outputs
 
-In the *outputs* section of your template, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.
+In the *outputs* section of your ARM template, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.
 
 ```json
 "outputs": {
@@ -125,7 +125,7 @@ In the *outputs* section of your template, you can specify values that will be r
 - *value*: (Optional) A template language expression that is evaluated and returned as output value.
 - *copy*: (Optional) Copy is used to return more than one value for an output.
 
-### How do I use outputs in my template
+### How do I use outputs in my ARM template
 
 Here is an example to output the Storage Account's endpoints.
 
@@ -138,8 +138,8 @@ Here is an example to output the Storage Account's endpoints.
    }
 ```
 
-Notice the ```reference``` part of the expression. This function gets the runtime state of the storage account.
+Notice the ```reference``` part of the expression. This function gets the runtime state of the Storage Account.
 
-## What happens if I deploy a template again
+## What happens if I deploy an ARM template again
 
-Recall that Resource Manager templates are idempotent, meaning you can deploy the template to the same environment again and if nothing was changed in the template, nothing will change in the environment. However, if there was a change made to the template, for example, you changed a parameter value, only that change will be deployed. Your template can contain all of the resources you need for your Azure solution and you can safely execute a template again. Resources will only be created if they didn't already exist, and updated only if there is a change.
+Recall that ARM templates are idempotent, meaning you can deploy the template to the same environment again and if nothing was changed in the template, nothing will change in the environment. However, if there was a change made to the template, for example, you changed a parameter value, only that change will be deployed. Your template can contain all of the resources you need for your Azure solution and you can safely execute a template again. Resources will only be created if they didn't already exist, and updated only if there is a change.

@@ -1,8 +1,8 @@
-In this exercise, you add a parameter to define the Azure Storage Account name during deployment. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the template by adding an output that can be used later in the deployment process.
+In this exercise, you add a parameter to define the Azure Storage Account name during deployment. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the Azure Resource Manager template (ARM template) by adding an output that can be used later in the deployment process.
 
-## Create parameters for the template
+## Create parameters for the ARM template
 
-Here, you make your template more flexible by adding parameters that can be set at runtime. Create a parameter for the ```storageName``` value.
+Here, you make your ARM template more flexible by adding parameters that can be set at runtime. Create a parameter for the ```storageName``` value.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the curly braces in the *parameters* attribute. ```"parameters":{},```
 1. Press <kbd>Enter</kbd> and then type **par**. You see a list of related snippets. Choose **arm-param**. This adds a generic parameter to the template. It will look like this:
@@ -23,15 +23,15 @@ Here, you make your template more flexible by adding parameters that can be set 
 
     ```json
     "parameters": {
-       "storageName": {
-           "type": "string",
-           "minLength": 3,
-           "maxLength": 24,
-           "metadata": {
-                "description": "The name of the Azure storage resource"
-            }
-       }
-   },
+      "storageName": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 24,
+          "metadata": {
+              "description": "The name of the Azure storage resource"
+          }
+      }
+    },
     ```
 
 1. Use the new parameter in the ```resources``` block in both the ```name``` and ```displayName``` values. The entire file will look like this:
@@ -40,7 +40,7 @@ Here, you make your template more flexible by adding parameters that can be set 
 
 1. Save the file.
 
-### Deploy the parameterized template
+### Deploy the parameterized ARM template
 
 Here, you change the name of the deployment to better reflect what this deployment does and fill in a value for the new parameter.
 
@@ -108,7 +108,7 @@ Here you use parameters to limit the values allowed for a parameter.
 
 1. Save the file.
 
-### Deploy the template
+### Deploy the ARM template
 
 Here you deploy successfully using a ```storageSKU``` parameter that is in the allowed list, then you try to deploy the template using a ```storageSKU``` parameter that is not in the allowed list. The second deployment will fail as expected.
 
@@ -144,9 +144,9 @@ Here you deploy successfully using a ```storageSKU``` parameter that is in the a
 
     :::image type="content" source="../media/3-deploy-validation-failed.png" alt-text="Terminal window showing the deployment validation error." border="true":::
 
-## Add output to the template
+## Add output to the ARM template
 
-Here you add to the ```outputs``` section of the template to output the endpoints for the storage account resource.
+Here you add to the ```outputs``` section of the ARM template to output the endpoints for the Storage Account resource.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser between the curly braces in the outputs attribute. ```"outputs":{},```
 1. Press <kbd>Enter</kbd> and then type **out**. You see a list of related snippets. Choose **arm-output**. This adds a generic output to the template. It will look like this:
@@ -171,11 +171,11 @@ Here you add to the ```outputs``` section of the template to output the endpoint
 
 1. Save the file.
 
-### Deploy the template with an output
+### Deploy the ARM template with an output
 
 Here, you deploy the template and see the endpoints output as JSON. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
-1. Run the following commands to deploy the template. Be sure to replace the *{your-unique-name} with a string unique to you.
+1. Run the following commands to deploy the template. Be sure to replace the *{your-unique-name}* with a string unique to you.
 
     ```azurecli
     templateFile="azuredeploy.json"
