@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.5-exercise-dependencies
+uid: learn.azure.create-nodejs-project-dependencies.5-exercise-dependency
 title: Exercise - Install Dependencies
 metadata:
   title: Exercise - Install Dependencies
@@ -11,4 +11,4 @@ metadata:
   ms.prod: vs
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-exercise-dependencies.md)]
+  [!include[](includes/5-exercise-dependency.md)]
