@@ -107,7 +107,7 @@ To verify that Ansible can apply configuration changes to your inventory, run th
 
 Unlike what the name suggests, the `ping` module doesn't connect over the ICMP protocol. Rather, it connects over SSH, just like every other Ansible module. Think of the `ping` module as a way to verify that Ansible can connect, and that Python is correctly installed on each node. You don't typically use this module in a playbook.
 
-To run the `ping` module directly, run this `ansible` command:
+To run the `ping` module directly, run this `ansible` command from Cloud Shell:
 
 ```bash
 ansible \
