@@ -16,7 +16,7 @@ When you add logging to an application, there are several points to consider:
 
   When debugging a desktop app, you can write messages to the screen, or the Debug window if you're using a tool such as Visual Studio. For a web app hosted in an on-premises server, you can record log data in a local file. However, for a production web app running in an environment such as Azure App Service, you require a repository that's more accessible. You might not have direct access to the file system for the system on which the web app is running. Additionally, if the web app scales out across multiple servers, then writing to the local file system causes the log to become fragmented. 
   
-  Security is another concern. A log might contain personally identifiable information that should be kept confidential (especially if the log also acts as an audit trail of events). You may also need to ensure that the log can't be tampered with by an unauthorized user. Keeping the log data in a more centralized, secure storage mechanism, such as Azure Blob storage, could be a better and more scalable solution.
+  Security is another concern. A log might contain personal information that should be kept confidential (especially if the log also acts as an audit trail of events). You may also need to ensure that the log can't be tampered with by an unauthorized user. Keeping the log data in a more centralized, secure storage mechanism, such as Azure Blob storage, could be a better and more scalable solution.
 
 - For how long should the messages be saved?
 

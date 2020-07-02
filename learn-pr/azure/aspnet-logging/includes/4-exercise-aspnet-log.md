@@ -392,12 +392,12 @@ The logger currently writes to a local file. While this approach is fine for a w
 1. On the **Containers** page, click the **workshopcontainer** container.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Containers** page in the Azure portal. The user has clicked the **workshopcontainer** container.](..\media\4-ws-container.png)
+    > ![Image of the **Containers** page in the Azure portal. The user has clicked the **workshopcontainer** container.](..\media\4-workshop-container.png)
 
 1. On the **Blobs** page, click the **eShopModernizedLogs** folder. 
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Blob folders** page in the Azure portal. The user has clicked the **eShopModernizedLogs** folder.](..\media\4-ws-blob.png)
+    > ![Image of the **Blob folders** page in the Azure portal. The user has clicked the **eShopModernizedLogs** folder.](..\media\4-workshop-blob.png)
 
 1. Click the append blob that appears in this folder. This blob will be named after the current date, with the suffix **.entry.log.xml**. 
 
@@ -459,7 +459,7 @@ The logger currently writes to a local file. While this approach is fine for a w
 1. On the **Performance** blade, select any operation, and then click **Samples** in the **Drill into..." section**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Performance** blade. The user has selected an operation and is drilling into the details.](..\media\4-select-op.png)
+    > ![Image of the **Performance** blade. The user has selected an operation and is drilling into the details.](..\media\4-select-operation.png)
 
     > [!NOTE]
     > It can take several minutes for the logging data to appear in Blob storage. You might need to wait and refresh the page if no operations are displayed.
@@ -472,7 +472,7 @@ The logger currently writes to a local file. While this approach is fine for a w
 1. On the **End-to-end transaction details** blade, click **View all telemetry**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **End-to-end transaction details** blade. The user has clicked **View all telemetry**.](..\media\4-e-to-e-details.png)
+    > ![Image of the **End-to-end transaction details** blade. The user has clicked **View all telemetry**.](..\media\4-end-to-end-details.png)
 
 1. On the detailed telemetry page, select any logging event. Logging events are identified as **Verbose** or **Information**. If the sample operation doesn't display any logging events, click a different sample in the left pane.
 
