@@ -29,30 +29,6 @@ Use single quotes when passing a string value into a function. For example ```co
 
 To work with literal values in template functions you need *escape characters*. The escape character is different depending on what you are escaping.
 
-To have a literal string start with a left bracket [ and end with a right bracket ], but not have it interpreted as an expression, add an extra bracket to the start of the string. For example, the variable:
-
-```json
-"demoVar1": "[[test value]"
-```
-
-Resolves to ```[test value]```.
-
-However, if the literal string doesn't end with a bracket, don't escape the first bracket.
-
-```json
-"demoVar2": "[test] value"
-```
-
-Resolves to ```[test] value```.
-
-To escape double quotes in an expression, such as adding a JSON object in the template, use the backslash.
-
-```json
-"tags": {
-    "CostCenter": "{\"Dept\":\"Finance\",\"Environment\":\"Production\"}"
-},
-```
-
 To set a property to null, you can use ```null``` or ```[json('null')]```. The json function returns an empty object when you provide null as the parameter.
 
 ```json

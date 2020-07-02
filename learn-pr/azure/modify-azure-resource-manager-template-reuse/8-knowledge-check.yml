@@ -26,17 +26,17 @@ quiz:
     - content: "From the resource after deployment"
       isCorrect: false
       explanation: "Functions add flexibility to your template by dynamically getting values during deployment."
-  - content: "The Azure Resource Manager template parameter file that you want to use for a deployment must be located where?"
+  - content: "A template expression always starts and ends with what characters?"
     choices:
-    - content: "In the path specified by the deployment command"
+    - content: "[]"
       isCorrect: true
-      explanation: "."
-    - content: "In an Azure file share"
+      explanation: "A template expression always starts and ends with square brackets []."
+    - content: "{}"
       isCorrect: false
-      explanation: "."
-    - content: "In an Azure Storage Account"
+      explanation: "A template expression always starts and ends with square brackets []."
+    - content: "()"
       isCorrect: false
-      explanation: "."
+      explanation: "A template expression always starts and ends with square brackets []."
   - content: "Azure Resource Manager template variables are defined in what section of the template?" 
     choices:
     - content: "The ```variables:{}``` section"
