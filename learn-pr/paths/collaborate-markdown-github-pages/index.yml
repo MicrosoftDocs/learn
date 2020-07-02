@@ -31,7 +31,7 @@ roles:
 - developer
 - solution-architect
 products:
-- azure
+- github
 modules:
 - learn.github.introduction-to-github
 - learn.github.communicate-using-markdown
