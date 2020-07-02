@@ -1,4 +1,4 @@
-Azure Resource Manager templates have a few features designed for template reuse. Here, you looked at using functions in an expression to specify a unique vlaue where it is needed. You put that expression in a variable to easily reuse it in several places in your template and for ease of maintenance of that value. You also created tags to track your resources and template parameter files to store and track template parameter values for different deployment environments.
+Azure Resource Manager templates have a few features designed for template reuse. Here, you looked at using functions in an expression to specify a unique value where it is needed. You put that expression in a variable to easily reuse it in several places in your template and for ease of maintenance of that value. You also created tags to track your resources and template parameter files to store and track template parameter values for different deployment environments.
 
 In this module, you:
 
