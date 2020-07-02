@@ -9,8 +9,7 @@ metadata:
   ms.author: v-alism
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 15
 interactive: bash
 azureSandbox: true
 content: |

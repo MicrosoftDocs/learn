@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 At this point, your build configuration scans your code whenever a change is pushed to the repository. But you might have noticed the scanning process adds time to the overall build process. You don't want to scan on every small commit. Instead, you want to scan less often, such as on pull requests only. You can use conditions in your pipeline to accomplish this.
 
 In this part, you modify your build configuration to run the SonarCloud scanner only when the build is happening in response to a pull request.
@@ -131,7 +133,7 @@ In this part, you provide a condition to each build task that relates to SonarCl
 
     You see that the scanning tasks that relate to SonarCloud are now skipped.
 
-    ![Azure Pipelines showing skipped tasks](../media/6-ci-skipped-tasks.png)
+    ![Screenshot of Azure DevOps Pipelines showing skipped tasks: Prepare SonarCloud analysis, Run SonarCloud code analysis, and Publish SonarCloud quality gate results.](../media/6-ci-skipped-tasks.png)
 
     That's because this run is for a normal CI build, and not a PR build. The conditions you added to your pipeline configuration run these tasks only when the build is for a pull request.
 1. From a browser, go to [github.com](https://www.github.com?azure-portal=true) and sign in.
@@ -166,6 +168,6 @@ In this part, you provide a condition to each build task that relates to SonarCl
 
     You see that all tasks, including the SonarCloud tasks, are run in the pull request build. That's because your pull request targets the `master` branch, which satisfies the conditions to run these tasks.
 
-    ![Azure Pipelines showing a PR build that runs all tasks](../media/6-pr-build-tasks.png)
+    ![Screenshot of Azure DevOps Pipelines showing a PR build that ran all tasks as succeeded.](../media/6-pr-build-tasks.png)
 
 For brevity, you won't merge your pull request here. But in practice, you might merge your pull request only after all build checks pass and another team member approves your changes.

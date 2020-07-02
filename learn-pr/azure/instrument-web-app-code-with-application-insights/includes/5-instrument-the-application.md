@@ -10,7 +10,8 @@ In this exercise, we'll track an event based on a user action. We'll present a *
 
 Let's add the button and action on the main page of the app.
 
-1. Open the code editor if it isn't open already.
+1. Open the Cloud Shell editor if it isn't open already.
+
    ```bash
    cd videowebapp
    code .

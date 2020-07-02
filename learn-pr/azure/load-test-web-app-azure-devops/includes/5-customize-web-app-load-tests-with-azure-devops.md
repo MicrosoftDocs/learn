@@ -15,19 +15,22 @@ To use the Azure DevOps Portal to view tests that you've run from the Azure port
 
 If this is the first time you've opened the Azure DevOps dashboard to view the tests, you'll need to select your Azure DevOps organization and then create a new project. In any project, the **Load test** section under **Test Plans** will list the test runs that you initiated from the Azure portal:
 
-![Load tests in Azure DevOps](../media/5-devops-load-test.png)
+:::image type="content" source="../media/5-devops-load-test.png" alt-text="Load tests in Azure DevOps." loc-scope="azure-devops":::
+
 >[!NOTE]
 >Load tests are organization-level entities and are not linked to particular projects. If you have more than one project, you'll see that each project's Load Tests link points to the same set of load tests.
 
 ### Comparing test results
+
 The summary data displayed for each test will look similar to what it looked like in the Azure portal. The Azure DevOps Portal does provide additional charts. To compare the results from two tests, hold the Ctrl key and select both tests, and then select **Compare two runs**. You now get a summary of the results, including a **% change from baseline** column, which indicates how the average response time and requests/sec changed between the two test runs.
- 
-![Compare tests](../media/5-devops-compare-tests.png)
+
+:::image type="content" source="../media/5-devops-compare-tests.png" alt-text="Compare tests." loc-scope="azure-devops":::
 
 ### Configuring tests in Azure DevOps
+
 The Azure DevOps Portal provides more test options than the Azure portal.
 
-![Configure tests](../media/5-devops-configure-test.png)
+:::image type="content" source="../media/5-devops-configure-test.png" alt-text="Configure tests." loc-scope="azure-devops":::
 
 - **Multiple URLs**. You can configure a test to work with more than one URL. You might, for example, configure a test with your app's home page and add URLs for other key pages, like product details and shopping cart pages.
 - **Query strings**. If your app uses query strings, like `?product=sp231`, to pass parameters to your code, you can configure your tests for specific strings. This configuration can be useful if your app uses a database and you want to test the performance of specific database queries.
@@ -41,21 +44,22 @@ The Azure DevOps Portal provides more test options than the Azure portal.
 - **Warm-up duration**. You can specify a period of time between the start of a test run and the start of data recording. You might use this option together with the step load pattern so that test results only start recording when the number of virtual users has reached a certain load level. Setting a warm-up duration might also be useful if you're trying to identify the effect of server-side issues, like caching.
 
 ### Using recorded user actions in tests
+
 So far, you've tested with specific URLs and assumed that these URLs reflect your users' typical interactions with your app. But there's another way. You can record all the browser clicks and scrolling from actual user sessions and then use these recordings as a basis for your performance testing. This approach can provide more realistic test results, especially if you can involve real users in the process. To use this approach, you need to record *HAR (HTTP Archive)* files.
 
 To record a HAR file, you need to first configure your browser. For example, in Chrome, you select F12 to open the developer tools, and then, on the **Network** tab, set the recording button to on and select the **Preserve log** box:
 
-![Record a HAR in Chrome](../media/5-chrome-devtools-settings.png)
+:::image type="content" source="../media/5-chrome-devtools-settings.png" alt-text="Record a HAR in Chrome." loc-scope="third-party"::: <!-- product  is Google Chrome, no-loc -->
 
 You can now work through a user scenario. Start from the default URL for your app and then follow the actions that a typical user would perform. In the Contoso Rentals scenario, for example, this might involve browsing for a service, checking terms, conditions, and rental locations, and then placing an order.
 
 To finish the recording in Chrome, open the developer tools and set the recording button to off. In the shortcut menu for the URL list, select **Save as HAR with content**, and then save the file:
 
-![Save HAR file in Chrome](../media/5-chrome-save-har-file.png)
+:::image type="content" source="../media/5-chrome-save-har-file.png" alt-text="Save HAR file in Chrome." loc-scope="azure-devops":::
 
 To use HAR files in testing, start a new HTTP Archive-based test and import your HAR file. After the import finishes, when you open the test, all the URLs, headers, and QueryString parameters that were saved to the HAR file will be shown:
 
-![Imported HAR file in performance test](../media/5-har-test.png)
+:::image type="content" source="../media/5-har-test.png" alt-text="Imported HAR file in performance test." loc-scope="azure-devops":::
 
 You then specify the run duration and the geo-location to use and run the test.
 

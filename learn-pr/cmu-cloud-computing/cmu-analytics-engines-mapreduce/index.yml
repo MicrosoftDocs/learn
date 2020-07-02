@@ -1,0 +1,61 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce
+metadata:
+  title: 'Distributed computing on the cloud: MapReduce'
+  description: Carnegie Mellon University's cloud developer course. MapReduce was a breakthrough in big data processing that has become mainstream and been improved upon significantly. Learn about how MapReduce works.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Distributed computing on the cloud: MapReduce'
+summary: MapReduce was a breakthrough in big data processing that has become mainstream and been improved upon significantly. Learn about how MapReduce works.
+abstract: | 
+  In this module, you will:
+  - Identify the underlying distributed programming model of MapReduce
+  - Explain how MapReduce can exploit data parallelism
+  - Identify the input and output of map and reduce tasks
+  - Define task elasticity, and indicate its importance for effective job scheduling
+  - Explain the map and reduce task-scheduling strategies in Hadoop MapReduce
+  - List the elements of the YARN architecture, and identify the role of each element
+  - Summarize the lifecycle of a MapReduce job in YARN
+  - Compare and contrast the architectures and the resource allocators of YARN and the previous Hadoop MapReduce
+  - Indicate how job and task scheduling differ in YARN as opposed to the previous Hadoop MapReduce
+  
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know the different types of virtualization
+  - Understand CPU virtualization
+  - Understand memory virtualization
+  - Understand I/O virtualization
+  - Know about the different types of data and how they're stored
+  - Be familiar with distributed file systems and how they work
+  - Be familiar with NoSQL databases and object storage, and how they work
+  - Know what distributed programming is and why it's useful for the cloud
+iconUrl: /learn/achievements/cmu-cloud-developer/distributed-programming-mapreduce.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.0-introduction
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.1-programming-model
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.2-data-structure-flow
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.3-examples
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.4-computation-architecture-model
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.5-job-task-schedule
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.6-fault-tolerance
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.7-yarn
+- learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.8-summary
+badge:
+  uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.badge

@@ -15,6 +15,9 @@ abstract: |
   - Learn what speaker recognition is all about.
   - Learn about the concepts related to speaker recognition.
   - Explore the Speaker Recognition APIs.
+  
+  > [!WARNING]
+  > This module is based on a previous version, and code may not run in the current environment. Updated content is being developed.
 prerequisites: None
 iconUrl: /learn/achievements/data-ai/recognize-voices-with-speaker-recognition.svg
 levels:

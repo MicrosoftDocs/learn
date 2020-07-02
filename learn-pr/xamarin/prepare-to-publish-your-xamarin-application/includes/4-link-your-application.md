@@ -6,7 +6,7 @@ Let's look at the items that go into your app before we look at how to manage yo
 
 ## Application composition
 
-![An illustration that describes an app's component composition.](../media/4-app-composition.png)
+![Illustration showing an app's component composition: Mono, 3rd party (Json.NET), custom library, and application code.](../media/4-app-composition.png)
 
 Assemblies are the building blocks of your apps. These building blocks include Mono, third-party libraries, and libraries that you've created and referenced.
 
@@ -16,7 +16,7 @@ By default, if you use even a single type from a referenced assembly, your app w
 
 Let's look at an example. Say you have a library called SuperTextEncoder. SuperTextEncoder has several encode and decode classes:
 
-![An illustration that describes an app's referencing assemblies.](../media/4-referencing-assemblies.png)
+![Illustration of an example SuperTextEncoder assembly's referencing assemblies: EncodeCSV, DecodeCSV, EncodeBinary, DecodeBase64, and others.](../media/4-referencing-assemblies.png)
 
 Let's assume you want to use only a single method from the **EncodeBinary** class. The code that you reference forms part of a single assembly. When you reference even a single method, the entire assembly is included in your app.
 
@@ -46,7 +46,7 @@ Linker settings can dramatically affect the size of your app's package. The Link
 - Link Framework SDKs Only
 - Link All
 
-![A screenshot of the Visual Studio Linker tab in build options.](../media/4-vs-linker-options.png)
+![Screenshot of the Visual Studio Linker tab in build options, showing iOS Build pane with the Link Framework SDKs Only option selected for Linker Behavior.](../media/4-vs-linker-options.png)
 
 You can set this option in the project options on the build tab for either iOS or Android.
 

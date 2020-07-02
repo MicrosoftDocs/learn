@@ -5,7 +5,8 @@ It's always a good idea to run your tests locally before you submit changes to t
 In this unit, you help the team fix a broken build that's caused by a failing unit test. Here, you will:
 
 > [!div class="checklist"]
-> * Get starter code from the Microsoft GitHub repository.
+> * Get starter code from GitHub.
+> * Add code coverage tools to your project.
 > * Push the code up to your repository.
 > * Watch the pipeline automatically run and the unit tests fail.
 > * Reproduce the failure locally.
@@ -78,19 +79,25 @@ As you did earlier, you fetch the `failed-test` branch from GitHub and check out
 
     We named the branch `failed-test` for learning purposes. In practice, you would name a branch after its purpose or feature.
 
-1. Run the following `git commit` command to add an empty entry to your commit history:
+1. Run these commands to create a local tool manifest file, install the `ReportGenerator` tool, and add the `coverlet.msbuild` package to your tests project:
 
     ```bash
-    git commit --allow-empty -m "Trigger Azure Pipelines"
+    dotnet new tool-manifest
+    dotnet tool install dotnet-reportgenerator-globaltool
+    dotnet add Tailspin.SpaceGame.Web.Tests package coverlet.msbuild
     ```
 
-    This step is for learning purposes and is not typical.
+    You need this step because the `failed-test` branch does not contain the work you added to the `unit-tests` branch.
 
-    When you forked the repository from the Microsoft account into yours, your fork already came with the `failed-test` branch. Here you run the `git commit` command by using the `--allow-empty` flag to create an additional entry in your commit history. This command helps the next step successfully push a change to GitHub.
+1. Add your test project file and your tool manifest file to the staging index and commit your changes. 
 
-    If you were to omit this step, the `git push` command that you run in the next step wouldn't take any action and, therefore, wouldn't cause the build to run in Azure Pipelines.
+    ```bash
+    git add Tailspin.SpaceGame.Web.Tests/Tailspin.SpaceGame.Web.Tests.csproj
+    git add .config/dotnet-tools.json
+    git commit -m "Configure code coverage tests"
+    ```
 
-1. Run the following `git push` command to upload the branch to your GitHub repository:
+1. Run the following `git push` command to upload the `failed-test` branch to your GitHub repository:
 
     ```bash
     git push origin failed-test
@@ -105,7 +112,7 @@ Let's say that Andy was in a hurry and pushed up his work without running the te
 
     You see that the `ReturnRequestedCount` test method fails.
 
-    ![The dashboard showing a failure on the Test Results Trend widget](../media/7-pipeline-test-failure.png)
+    ![Screenshot of Azure Pipelines dashboard showing output log of an assertion failure on the unit test, expecting 10 but was 9.](../media/7-pipeline-test-failure.png)
 
     The test passes when the input value is 0, but it fails when the input value is 1 or 10.
 
@@ -115,24 +122,24 @@ In practice, you won't always manually trace the build as it runs. Here are a fe
 
 * **An email notification from Azure DevOps**
 
-    Azure DevOps sends you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
+    You can configure Azure DevOps to send you an email notification when the build is complete. The subject line starts with "[Build failed]" when the build fails.
 
-    ![A portion of a build failed email notification](../media/7-email-notification.png)
+    ![Screenshot of a portion of a build failed email notification.](../media/7-email-notification.png)
 * **Azure Test Plans**
 
     In Azure DevOps, select **Test Plans**, and then select **Runs**. You see the recent test runs, including the one that just ran. Select the latest completed test. You see that two of the eight tests failed.
 
-    ![Test run outcome showing two failed tests](../media/7-test-run-outcome.png)
+    ![Screenshot of Azure DevOps test run outcome showing two of eight failed tests in a ring chart.](../media/7-test-run-outcome.png)
 * **The dashboard**
 
     In Azure DevOps, select **Overview**, and then select **Dashboards**. You see the failure appear in the **Test Results Trend** widget. The **Code Coverage** widget is blank, which indicates that code coverage was not run.
 
-    ![The dashboard widget showing a failed test](../media/7-dashboard-failed-test.png)
+    ![Screenshot of Azure DevOps dashboard trend chart widget showing two failed test in the last test run.](../media/7-dashboard-failed-test.png)
 * **The build badge**
 
     Although the `failed-test` branch doesn't include the build badge in the *README.md* file, here's what you would see on GitHub when the build fails:
 
-    ![The build badge on GitHub indicating a failure](../media/7-badge-failed.png)
+    ![Screenshot of Azure Pipelines build badge on GitHub indicating a failure.](../media/7-badge-failed.png)
 
 ## Analyze the test failure
 
@@ -217,7 +224,7 @@ public Task<IEnumerable<T>> GetItemsAsync(
 
 They examine the file on GitHub and notice that it was recently changed.
 
-![GitHub showing a file diff](../media/7-github-diff.png)
+![Screenshot of GitHub showing a file diff where a minus one operation was added.](../media/7-github-diff.png)
 
 Mara suspects that `pageSize - 1` is returning one fewer results and that this should be just `pageSize`.
 
@@ -304,11 +311,7 @@ In this section, you fix the error by changing the code back to its original sta
 
     You can also check out the dashboard to view the updated results trend.
 
-    ![The dashboard showing a passing tests on the Test Results Trend widget](../media/7-dashboard-passing-test.png)
-
-    As a bonus, the added unit test increases the percentage of code covered from around 14 percent to 17 percent.
-
-    ![The Code Coverage widget showing an increased amount of coverage](../media/7-dashboard-widget.png)
+    ![Screenshot of Azure DevOps dashboard trend chart widget showing a return to all tests passing.](../media/7-dashboard-passing-test.png)
 
 **Andy:** Great! We fixed the build! I'm sorry for breaking it. I was in a hurry and I forgot to run the tests one final time.
 

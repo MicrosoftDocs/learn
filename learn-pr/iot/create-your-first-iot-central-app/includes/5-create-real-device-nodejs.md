@@ -114,6 +114,14 @@ In the blank app.js file, insert the following code. Each additional section of 
 
     var connectionString = "<your IoT Central device connection string for truck 1>";
 
+    function greenMessage(text) {
+        console.log(chalk.green(text));
+    }
+
+    function redMessage(text) {
+        console.log(chalk.red(text));
+    }
+
     console.log("Starting " + truckIdentification);
 
     // Use the Azure IoT device SDK for devices that connect to Azure IoT Central.
@@ -930,7 +938,7 @@ In the blank Program.cs file, insert the following code. Each additional section
     
                 var req = new RouteRequestDirections
                 {
-                    Query = $"{currentLat},{currentLon}:{destinationLat},{destinationLon}"
+                    Query = FormattableString.Invariant($"{currentLat},{currentLon}:{destinationLat},{destinationLon}")
                 };
                 var directions = azureMapsServices.GetRouteDirections(req).Result;
     

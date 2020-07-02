@@ -4,7 +4,7 @@ In the previous unit, we looked at the basics of creating a Xamarin.Android app.
 
 An *activity* is the basic building block of an Android application. An activity groups together the UI and code that the user needs to do something with your app.
 
-![Diagram showing a potential app structure, with three activities each containing their own UI and code and a separate set of shared data files and images](../media/3-app-structure.png)
+![Diagram showing a potential Android app structure, with three numbered activities each containing their own UI and code and a separate set of shared data files and images.](../media/3-app-structure.png)
 
 Conceptually, an activity defines UI for a single user task in your application. Here are a few task examples:
 
@@ -22,7 +22,7 @@ Suppose we have an app with a screen where the user calculates the value of pi. 
 
 Here's an example of the app's UI:
 
-![A screenshot showing a running Xamarin Android app](../media/4-xamarin-android-app.png)
+![Screenshot showing the Pi Calculator Xamarin.Android app running on an Android device.](../media/4-xamarin-android-app.png)
 
 The app allows the user to enter how many decimal digits they want to return in the pi calculation. Then the user starts the calculation by tapping a button. The UI behavior is then managed in code.
 
@@ -52,7 +52,7 @@ Suppose you've decided to create an email app. Now think about the user's tasks 
 - Edit an account
 - Modify user preferences
 
-![A collection of three screenshots showing potential activities in an email app: an inbox screen, a compose screen, and a settings screen](../media/3-example-email-app.png)
+![Collection of three screenshots showing potential activities in an email app: an inbox screen, a compose screen, and a settings screen.](../media/3-example-email-app.png)
 
 All of these tasks will likely make good activities in your app. Each one requires both UI and behavior.
 
@@ -106,7 +106,9 @@ This description of a _view_ as a _visual component and code_ sounds like an act
 
 The UI elements you add to a screen are arranged into an inheritance hierarchy with the `View` class at the root.
 
-![Diagram of the UI hierarchy from Object to View to ViewGroup](../media/4-view-hierarchy.png)
+:::image type="complex" source="../media/4-view-hierarchy.png" alt-text="Diagram of the UI hierarchy from Object to View to ViewGroup.":::
+    Object is the parent of View. View is the parent of both "Controls like button, text box, etc." and ViewGroup. ViewGroup is the parent of "Collection views like lists and grids" and "Layout panels that size and position their children".
+:::image-end:::
 
 Standalone elements like `Button` inherit from `View`. Elements that have multiple views derive from `ViewGroup`. This arrangement adds the ability to manage a collection of child views, such as lists and grids. Android also provides ways to group the controls together by using panels that derive from `ViewGroup`. These views are called layout panels.
 
@@ -118,19 +120,19 @@ Child panels can specify their preferred layout size. Most panels try to accommo
 
 ### LinearLayout
 
-![Illustration showing vertically stacked controls in a linear layout](../media/4-linear-layout.png)
+![Illustration showing vertically stacked controls in a linear layout.](../media/4-linear-layout.png)
 
 *LinearLayout* is the simplest panel. You specify a vertical or horizontal direction, and it lays out the child panels in a single column or row.
 
 ### GridLayout
 
-![Illustration showing views displayed in a two-by-two grid within a grid layout](../media/4-grid-layout.png)
+![Illustration showing views displayed in a two-by-two grid within a grid layout.](../media/4-grid-layout.png)
 
 *GridLayout* creates a grid of rows and columns and positions the children in the cells.
 
 ### RelativeLayout
 
-![Illustration showing a potential relative layout with several views oriented to each other](../media/4-relative-layout.png)
+![Illustration showing a potential relative layout with several views oriented to each other.](../media/4-relative-layout.png)
 
 *RelativeLayout* requires you to provide the relationships between the child panels. You specify things like "this child goes to the left of this other one" or "this child should be aligned with the right edge of the screen". RelativeLayout is a powerful and flexible panel. It's a good choice for the root panel of a UI.
 
@@ -142,7 +144,7 @@ Keep in mind that you can nest panels. For example, one of the rows of a vertica
 
 You define your UI by using XML. The XML elements are view class names like `Button` and `TextView`.
 
-![Screenshot of the pi calculator app running on an Android emulator, displaying pi to 20 digits](../media/4-xamarin-android-app-small.png)
+![Screenshot of the Pi Calculator app running on an Android emulator, displaying pi to 20 digits.](../media/4-xamarin-android-app-small.png)
 
 The file that contains the XML is called a layout file. In Xamarin.Android, layout files use a **.axml** extension (Android XML). This piece of XML shows the basic structure of the elements in the layout file:
 
@@ -167,7 +169,7 @@ You typically start with a layout panel as your root element and nest its child 
 
 Android *resources* are noncode files that you include in your application.
 
-![Screenshot of Visual Studio Solution Explorer, showing the Resources folder of the pi calculator app](../media/4-basic-project-structure.png)
+![Screenshot of Visual Studio Solution Explorer showing the Resources folder of the Pi Calculator app.](../media/4-basic-project-structure.png)
 
 Xamarin.Android creates a special folder named **Resources** to hold your app's resources. Resources can include many types of items. Here are the most common resources:
 
@@ -180,7 +182,7 @@ Xamarin.Android creates a special folder named **Resources** to hold your app's 
 
 Android considers UI layout files to be resources, so they need to be placed under **Resources** in a folder named **layout**.
 
-![Screenshot showing the Visual Studio Solution Explorer with the Resources folder expanded to show layout .axml files](../media/4-expanded-resource-folder.png)
+![Screenshot of the Visual Studio Solution Explorer with the Resources folder expanded to show layout .axml files.](../media/4-expanded-resource-folder.png)
 
 The **Resources** folder contains several types of files:
 
@@ -193,7 +195,7 @@ The **Resources** folder contains several types of files:
 
 Xamarin provides a UI designer tool to help you build a UI. It's available in both Visual Studio and Visual Studio for Mac.
 
-![Screenshot of Visual Studio, showing the Android designer in split view, with the visual preview on the left and the source view on the right](../media/4-designer-view.png)
+![Screenshot of Visual Studio showing the Android designer in split view, with the visual preview on the left and the source view on the right.](../media/4-designer-view.png)
 
 Instead of hand-coding XML, in UI Designer you drag views from the **Toolbox** onto the design surface. Instead of setting attributes in XML, you set them in a **Property** editor. Using UI Designer is much faster than writing XML manually.
 
@@ -235,7 +237,7 @@ Views typically require you to set their width and height. An example of such a 
 
 `LinearLayout` requires that you set the `layout_width` and `layout_height` attributes on every element in your XML layout file. If you don't set both, you'll get a runtime exception.
 
-![Screenshot of Visual Studio for Mac, showing Java.Lang.RuntimeException details, including an error message of "You must supply a layout_width attribute"](../media/4-sizing-error.png)
+![Screenshot of Visual Studio for Mac showing Java.Lang.RuntimeException details, including an error message of "You must supply a layout_width attribute".](../media/4-sizing-error.png)
 
 ### Size views automatically
 

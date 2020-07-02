@@ -74,9 +74,9 @@ Which may have one or more security control functions:
 
 ## I Selected the Appropriate Security Controls for My System, Is There Anything Else I Need To Do?
 
-Add security control details to each issue in the bug management solution. 
+Add security control details to each issue in the bug management solution.
 
-Then, resolve each issue with one of the following resolutions, which varies lightly from organization to organization:
+Then, resolve each issue with one of the following resolutions, which varies slightly from organization to organization:
 
 |Resolution|Description|
 |----------|-----------|

@@ -18,7 +18,7 @@ The Azure portal provides shortcuts for creating performance tests. These shortc
 ### Create tests in Azure DevOps 
 The Azure DevOps Portal provides more control over your performance testing and lets you easily compare results from different test runs. One of the key components of Azure DevOps is Test Plans, which can be used in a wide range of scenarios. In this module, you're going to look at the load testing features of Azure Test Plans. These are the tests that are also available from the Azure portal.
 
-![Azure DevOps load tests](../media/2-devops-load-test.png)
+:::image type="content" source="../media/2-devops-load-test.png" alt-text="Azure DevOps load tests." loc-scope="azure-devops":::
 
 Azure DevOps includes these features:
 
@@ -46,7 +46,7 @@ If you're running the first test for the web app, set up a link to your Azure De
 
 If you don't have an organization, select **Create new** and then select your Azure subscription:
 
-![Create an Azure DevOps organization](../media/2-name-organization.png)
+:::image type="content" source="../media/2-name-organization.png" alt-text="Create an Azure DevOps organization." loc-scope="azure-devops":::
 
 ### 3. Configure the test
 

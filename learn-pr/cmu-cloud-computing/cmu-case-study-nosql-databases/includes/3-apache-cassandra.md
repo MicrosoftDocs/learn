@@ -1,20 +1,20 @@
-Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both BigTable<sup>[1][^1]</sup> and Amazon's Dynamo.<sup>[4][^4]</sup> Cassandra uses the data model of BigTable and the implementation architecture of Dynamo. The following video covers Cassandra.
+Apache Cassandra is a fully distributed, structured key-value storage system. Cassandra marries the best aspects of both HBase and Amazon's set of storage techniques, referrred to as Dynamo.<sup>[3][^3]</sup> Cassandra uses the data model of HBase and the implementation architecture of Dynamo. The following video covers Cassandra.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4pQ3Z]
 
 ### Cassandra data model
 
-Cassandra implements the data model of BigTable (which is similar to the HBase data model, as discussed in the previous unit), with slightly different terminology. 
+Cassandra implements the data model of HBase, as discussed in the previous unit), with slightly different terminology.
 
-A table in Cassandra is referred to as a **column family** (not to be confused with an Apache HBase column family, which is a group of associated columns in a table, see Figure 7a). A **record** (or **row** ) is treated as a key-value pair, with the key being an identifying characteristic of the record. The value is also considered to be a set of key-value pairs, where each key is the name of each column, and each value is the value in the column (Figure 7b). 
+A table in Cassandra is referred to as a **column family** (not to be confused with an Apache HBase column family, which is a group of associated columns in a table, see Figure 7a). A **record** (or **row** ) is treated as a key-value pair, with the key being an identifying characteristic of the record. The value is also considered to be a set of key-value pairs, where each key is the name of each column, and each value is the value in the column (Figure 7b).
 
 ![The Cassandra data model. (a) Logical view of the webtable in Cassandra. (b) A row of the table represented as a nested sequence of key-value pairs.](../media/cassandra.png)
 
 _Figure 7: The Cassandra data model. (a) Logical view of the webtable in Cassandra. (b) A row of the table represented as a nested sequence of key-value pairs._
 
-Like BigTable and HBase, Cassandra also allows for nested columns, which are known as **super columns**. Super columns in Cassandra are implemented as nested key-value pairs, where the super column name is the key, and the value is a sequence of key-value pairs that correspond to each column name and value. 
+Like HBase, Cassandra also allows for nested columns, which are known as **super columns**. Super columns in Cassandra are implemented as nested key-value pairs, where the super column name is the key, and the value is a sequence of key-value pairs that correspond to each column name and value.
 
-Cassandra allows for data to be stored in the key or value parts of each key-value pair. Values can be stored in column or super column names, if required. Typical operations in Cassandra involve storing and retrieving individual rows using the key as well as updates to parts of a row. The data model in Cassandra is hence similar to BigTable and HBase and is fairly flexible to allow various types of data to be stored. The big difference between HBase's and Cassandra's data models is that Cassandra does not have built-in support for versioning like HBase. 
+Cassandra allows for data to be stored in the key or value parts of each key-value pair. Values can be stored in column or super column names, if required. Typical operations in Cassandra involve storing and retrieving individual rows using the key as well as updates to parts of a row. The data model in Cassandra is hence similar to HBase and is fairly flexible to allow various types of data to be stored. The big difference between HBase's and Cassandra's data models is that Cassandra does not have built-in support for versioning like HBase.
 
 Cassandra supports data operations similar to HBase, with a few exceptions. Typical operations in Cassandra are expressed as **Gets**, **Inserts**, and **Deletes**. Operations can be performed on a single row or a set of rows (called a **range**). In addition, operations<!-- they --> can be performed on a set of columns of a database (called a **slice**): 
 
@@ -49,7 +49,7 @@ Assume that the replication factor specified is $N$. The first replica is always
 
 Nodes can be added to a Cassandra cluster at any time, which is handled in two ways. Either the administrator manually reassigns tokens for the new incoming node, or Cassandra automatically finds the node with the most data and divides its token in half, giving one half of the hash space to the new incoming node. The new node will not immediately accept requests <!-- so that it has time to -->because it must first learn the topology of the ring and accept data that it may also be responsible for. After it<!-- does this --> has done so, it can join the ring as a full member and begin accepting requests. Cassandra then reshuffles the data among the nodes in the cluster. 
 
-The process of keeping replicas up to date in Cassandra is called **antientropy**. Antientropy in Cassandra is achieved using Merkle trees. A Merkle tree<sup>[2][^2]</sup> (Figure 10) is a hash tree in which the leaves are hashes of the values of individual keys. Parent nodes higher in the tree are hashes of their respective children. The principal advantage of Merkle trees is that each branch of the tree can be checked independently without having to scan the entire branch. Cassandra periodically computes the Merkle trees for each column family and exchanges it among replica members to quickly compute differences in the tables so that they can be synchronized. Compared to other techniques in Cassandra, antientropy is an expensive operation that is not performed often. Cassandra also has techniques to perform instantaneous repairs to replicas during reads (called a **read repair**, which is described later). 
+The process of keeping replicas up to date in Cassandra is called **antientropy**. Antientropy in Cassandra is achieved using Merkle trees. A Merkle tree<sup>[1][^1]</sup> (Figure 10) is a hash tree in which the leaves are hashes of the values of individual keys. Parent nodes higher in the tree are hashes of their respective children. The principal advantage of Merkle trees is that each branch of the tree can be checked independently without having to scan the entire branch. Cassandra periodically computes the Merkle trees for each column family and exchanges it among replica members to quickly compute differences in the tables so that they can be synchronized. Compared to other techniques in Cassandra, antientropy is an expensive operation that is not performed often. Cassandra also has techniques to perform instantaneous repairs to replicas during reads (called a **read repair**, which is described later). 
 
 ![Merkle trees](../media/merkle-trees.png)
 
@@ -90,7 +90,7 @@ Unlike other NoSQL database systems, Cassandra has a tunable consistency model. 
 
 #### Accrual failure detection
 
-With no centralized master to keep track of the nodes in the cluster, Cassandra uses a special **gossip protocol** to communicate in all nodes in the token ring. In Cassandra, failures are expressed as a probability using an **accrual failure detection (AFD)**<sup>[3][^3]</sup> algorithm, which can be summarized as follows.
+With no centralized master to keep track of the nodes in the cluster, Cassandra uses a special **gossip protocol** to communicate in all nodes in the token ring. In Cassandra, failures are expressed as a probability using an **accrual failure detection (AFD)**<sup>[2][^2]</sup> algorithm, which can be summarized as follows.
 
 Every second or so, each node in the Cassandra token ring contacts another random member in the ring to inquire about its status. This communication happens using a handshake protocol similar to a TCP handshake. In case the node cannot be contacted, a failure **suspicion** is raised. Therefore, the failure monitoring system outputs a continuous level of suspicion regarding how confident it is that a node has failed, which is desirable because it can <!-- take into -->account for fluctuations in the network environment. For example, just because one connection gets caught up, it does not necessarily mean that the whole node is dead. So a suspicion offers a more fluid and proactive indication of the weaker or stronger possibility of failure based on interpretation, as opposed to a simple binary assessment, such as dead or alive in heartbeat mechanisms. 
 
@@ -122,21 +122,18 @@ Cassandra is a unique data storage system with useful features, such as tunable 
 
 Cassandra is also among the most powerful for its write performance, which is in part due to its architecture and tunable consistency model. Cassandra was primarily developed for applications in the social network space, where writes are frequent and read operations are less predictable. 
 
-Another feature that is useful in Cassandra is that it has out-of-the-box support for replicating across multiple data centers. The fault-tolerance mechanism is more dynamic in nature (compared to HBase or Hadoop) and will not mistake long latencies as failures. The schema-free data model is also good for evolving applications, where application changes may occur frequently. 
+Another feature that is useful in Cassandra is that it has out-of-the-box support for replicating across multiple data centers. The fault-tolerance mechanism is more dynamic in nature (compared to HBase or Hadoop) and will not mistake long latencies as failures. The schema-free data model is also good for evolving applications, where application changes may occur frequently.
 
-You can read more use cases on the [Cassandra project wiki](http://wiki.apache.org/cassandra/usecases). 
-<br>
 ***
+
 ### References
 
-1. _Chang, Fay, et al. (2008). [BigTable: A distributed storage system for structured data](https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf) ACM Transactions on Computer Systems (TOCS) 2_
-2. _Merkle, R. (1988). [A digital signature based on a conventional encryption function](https://people.eecs.berkeley.edu/~raluca/cs261-f15/readings/merkle.pdf) Proceedings of CRYPTO (pp. 369–378). Springer-Verlag_
-3. _Hayashibara, Naohiro, et al. (2004). [The φ accrual failure detector](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.7427&rep=rep1&type=pdf) Reliable Distributed Systems, Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems_
-4. _DeCandia, Giuseppe, et al. (2007). [Dynamo: Amazon's highly available key-value store](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) ACM SIGOPS Operating Systems Review. Vol. 41. No. 6 ACM_
+1. _Merkle, R. (1988). [A digital signature based on a conventional encryption function](https://people.eecs.berkeley.edu/~raluca/cs261-f15/readings/merkle.pdf) Proceedings of CRYPTO (pp. 369–378). Springer-Verlag_
+2. _Hayashibara, Naohiro, et al. (2004). [The φ accrual failure detector](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.7427&rep=rep1&type=pdf) Reliable Distributed Systems, Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems_
+3. _DeCandia, Giuseppe, et al. (2007). [Dynamo: Amazon's highly available key-value store](https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf) ACM SIGOPS Operating Systems Review. Vol. 41. No. 6 ACM_
 
 ***
 
-[^1]: <https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf> "Chang, Fay, et al. (2008). *BigTable: A distributed storage system for structured data* ACM Transactions on Computer Systems (TOCS) 2"
-[^2]: <https://people.eecs.berkeley.edu/~raluca/cs261-f15/readings/merkle.pdf> "Merkle, R. (1988). *A digital signature based on a conventional encryption function* Proceedings of CRYPTO (pp. 369–378). Springer-Verlag"
-[^3]: <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.7427&rep=rep1&type=pdf> "Hayashibara, Naohiro, et al. (2004). *The φ accrual failure detector* Reliable Distributed Systems, 2004. Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems"
-[^4]: <https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf> "DeCandia, Giuseppe, et al. (2007). *Dynamo: Amazon's highly available key-value store* ACM SIGOPS Operating Systems Review. Vol. 41. No. 6 ACM"
+[^1]: <https://people.eecs.berkeley.edu/~raluca/cs261-f15/readings/merkle.pdf> "Merkle, R. (1988). *A digital signature based on a conventional encryption function* Proceedings of CRYPTO (pp. 369–378). Springer-Verlag"
+[^2]: <http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.80.7427&rep=rep1&type=pdf> "Hayashibara, Naohiro, et al. (2004). *The φ accrual failure detector* Reliable Distributed Systems, 2004. Proceedings of the 23rd IEEE International Symposium on Reliable Distributed Systems"
+[^3]: <https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf> "DeCandia, Giuseppe, et al. (2007). *Dynamo: Amazon's highly available key-value store* ACM SIGOPS Operating Systems Review. Vol. 41. No. 6 ACM"

@@ -99,7 +99,7 @@ To mount an Azure file share as a volume in a container, you specify the share a
 
 1. From a browser, navigate to your container's IP address. You see this.
 
-    ![Azure Container Instances file share demo](../media/5-files-ui.png)
+    :::image type="content" source="../media/5-files-ui.png" alt-text="Screenshot of the Azure Container Instances file share demo running in a browser." loc-scope="other"::: <!-- no-loc -->
 
 1. Enter some text into the form and click **Submit**. This action creates a file that contains the text you entered in the Azure file share.
 

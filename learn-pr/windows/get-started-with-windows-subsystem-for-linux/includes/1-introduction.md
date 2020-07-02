@@ -18,6 +18,6 @@ In this module, you will:
 - Enable Windows Subsystem for Linux and install a Linux distribution.
 - Integrate your workflow between native Linux and Windows commands, file systems, and tools.
 - Create a Hello World web app by using Node.js and Express.
-- Integrate your Linux distribution with VS Code and customize your terminal.
-- Debug your Node.js website with VS Code and Linux tools.
+- Integrate your Linux distribution with Visual Studio Code and customize your terminal.
+- Debug your Node.js website with Visual Studio Code and Linux tools.
 - Run multiple Linux distributions, switch between them, and set a default.

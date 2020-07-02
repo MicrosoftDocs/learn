@@ -16,7 +16,7 @@ Let's use Azure Active Directory (Azure AD) to set up the custom branding.
 1. Next to **Sign-in page background image**, select **Browse**. Select your page background image.
 1. Next to **Banner logo**, select **Browse**. Select your logo image.
 
-    ![Screenshot that shows the configure company branding form](../media/5-customize-ui.png)
+    ![Screenshot that shows the configure company branding form.](../media/5-customize-ui.png)
 1. Select **Save**.
 
 ## Test the organization's branding
@@ -26,8 +26,8 @@ Now, let's use the account that we created in the last exercise to test the bran
 1. In a new browser window, go to https://login.microsoft.com.
 1. Select the account for **Bala Sandhu**. Your custom branding is displayed.
 
-    ![Screenshot that shows the customized sign-in page](../media/5-custom-login-page.png)
+    ![Screenshot that shows the customized sign-in page.](../media/5-custom-login-page.png)
 1. Select **Forgot my password**.
 
 
-    ![Screenshot that shows organization logo on password reset page](../media/5-forgot-password-branding.png)
+    ![Screenshot that shows organization logo on password reset page.](../media/5-forgot-password-branding.png)

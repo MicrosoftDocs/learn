@@ -105,7 +105,7 @@ In this exercise, you'll update the `index.jsp` page for your web app to include
     ```
 
 1. Visit the deployed app by selecting the URL in the shell.
-    
-    ![Example web app running on Azure App Service in a web browser](../media/6-web-app-on-production-server.png)
+
+    :::image type="content" source="../media/6-web-app-on-tomcat-server.png" alt-text="Example web app running on Tomcat in a web browser." loc-scope="other"::: <!-- no-loc -->
 
 In the next unit, you'll learn how to authenticate your web app deployments to Azure App Service.

@@ -42,7 +42,7 @@ To monitor your network, you'll need to use a secure network management protocol
 
 ### FCAPS
 
-When you manage a network, you deal with many different tasks and functions. These tasks and functions have been categorized to help us do them effectively. The categories are fault management, configuration management, accounting/administration and performance management, or FCAPS:
+When you manage a network, you deal with many different tasks and functions. These tasks and functions have been categorized to help us do them effectively. The categories are fault management, configuration management, accounting/administration, performance management, and security, or FCAPS:
 
 - **Fault management**. Relates to the processes and tasks used to identify and resolve faults on the network. Dealing with issues that might cause problems later is also classified as fault management.
 
@@ -66,10 +66,10 @@ Azure Monitor is a unifying solution that collects log data for analysis, helpin
 
 Use Azure Monitor to configure alerts to notify us about potential problems. These alerts help you take further action, when needed, to rectify potential problems in your network environment.
 
-![Configuring an alert](../media/5-alerts.png)
+:::image type="content" source="../media/5-alerts.png" alt-text="Screenshot that shows how to configure an alert rule in the Azure portal for log analytics.":::
 
 **Log Analytics**
 
 Use the Log Analytics tool in Azure Monitor to query and aggregate large amounts of log data for comprehensive analysis. This tool helps you gain a better understanding of the resources and services across your network.
 
-![Log analytics](../media/5-log-analytics.png)
+:::image type="content" source="../media/5-log-analytics.png" alt-text="Screenshot of example log analytics results over 24 hours in the Azure portal.":::

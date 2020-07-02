@@ -91,8 +91,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 
 1. Click the **Published** link in the **Azure Activity Log** window. A new browser window will open. After 20 seconds, the messages displaying the time at two-second intervals will appear, followed by the IP address of the client computer.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the web browser running the new version of the web app](../media/7-updated-web-app.png)
+    :::image type="content" source="../media/7-updated-web-app.png" alt-text="Screenshot of the web browser running the new version of the web app." loc-scope="third-party":::
 
 1. Leave the browser window open, and return to Eclipse.
 
@@ -116,8 +115,7 @@ Finally, you'll use Azure Explorer to delete the web app and remove it from Azur
 
 1. In the **Azure Explorer** message box that prompts you to make sure this is really what you want to do, click **OK**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the message box confirming that the user wants to delete the web app](../media/7-delete-web-app.png)
+    :::image type="content" source="../media/7-delete-web-app.png" alt-text="Screenshot of the message box confirming that the user wants to delete the web app." loc-scope="third-party":::
 
 1. When the web app has been deleted, it will disappear from the **Web Apps** folder in **Azure Explorer**.
 

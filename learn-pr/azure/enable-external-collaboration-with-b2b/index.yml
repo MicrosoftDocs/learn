@@ -14,7 +14,7 @@ abstract: |
   In this module, you will:
   - Identify the methods to enable secure external collaboration for your applications with Azure AD B2B collaboration
   - Enable B2B collaboration for an application
-  - Enforce MFA for B2B collaboration
+  - Enforce multi-factor authentication for B2B collaboration
 prerequisites: | 
   - Basic understanding of Azure AD
 iconUrl: /learn/achievements/enable-external-collaboration-with-b2b.svg

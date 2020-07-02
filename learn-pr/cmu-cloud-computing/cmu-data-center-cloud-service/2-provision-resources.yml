@@ -15,15 +15,15 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following steps is not automatically performed when a new t2.micro EC2 instance is launched on AWS with a Windows Server 2008 OS?"
+  - content: "Which of the following steps is not automatically performed when a new VM is launched on Azure with a Windows Server 2016 OS?"
     choices:
-    - content: "A virtual machine is created based on a base AMI (with Windows Server 2008)."
+    - content: "A virtual machine is created based on a base AMI (with Windows Server 2016)."
       isCorrect: false
-      explanation: "Incorrect. A Windows Server 2008 VM must be created as requested by the user. Think about the capability of an automatic provisioning system to deal with physical changes."
+      explanation: "Incorrect. A Windows Server 2016 VM must be created as requested by the user. Think about the capability of an automatic provisioning system to deal with physical changes."
     - content: "A new hard disk is physically connected to the host server where the virtual machine runs."
       isCorrect: true
       explanation: "Correct!"
-    - content: "A new IP address and DNS subdomain are allocated by AWS to allow users to connect to this instance."
+    - content: "A new IP address and DNS subdomain are allocated by Azure to allow users to connect to this instance."
       isCorrect: false
       explanation: "The text above describes the importance of automatic network configuration for all cloud provisioning. Think about the capability of an automatic provisioning system to deal with physical changes."
 

@@ -1,12 +1,12 @@
 Effects are platform-specific classes that modify the underlying native control used by a Xamarin.Forms element. The native controls are usually a lot more flexible and powerful than the Xamarin.Forms element. For example, the Xamarin.Forms `Entry` effect doesn't expose a drop shadow option directly, but every supported platform has some mechanism for creating one. You can access those options through effects.
 
-![Diagram showing effect applied to Entry](../media/ApplyAndroidShadowEffect.png)
+![Diagram showing an Android ShadowEffect applied to an Entry control.](../media/ApplyAndroidShadowEffect.png)
 
 ## How do effects work?
 
 Effects are applied after the renderer has already created the native control. The effect, therefore, needs to provide only the specific modifications that it's responsible for. In the following diagram, the effect adds the drop shadow behavior.
 
-![Diagram showing effect being applied after renderer](../media/applyShadowEffectAfterRenderer.png)
+![Diagram showing the separation of shared and platform code, with an iOS shadow effect being applied to a button.](../media/applyShadowEffectAfterRenderer.png)
 
 For any effect, you need one class *per platform*, because the effect does platform-specific work. In the preceding diagram, for instance, the IOSShadowEffect applies iOS-specific APIs. Because you want to support Android with the shadow effect, you'd need an Android class as well. The platform-specific classes derive from the `PlatformEffect` base class.
 

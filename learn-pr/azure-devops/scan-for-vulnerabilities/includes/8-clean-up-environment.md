@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 You're all done with the tasks for this module. Here, you move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
 
 > [!IMPORTANT]
@@ -16,7 +18,7 @@ To complete the work item:
 1. From Azure DevOps, navigate to **Boards** and then select **Boards** from the menu.
 1. Move the **Check code for vulnerabilities** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column](../media/8-azure-boards-wi4-done.png)
+    ![Screenshot of Azure DevOps Boards showing the code vulnerability card in the Done column.](../media/8-azure-boards-wi4-done.png)
 
 ## Disable the pipeline or delete your project
 
@@ -32,16 +34,13 @@ This option disables the pipeline so that it does not process further build requ
 
 To disable the pipeline:
 
-1. From Azure Pipelines, navigate to your pipeline.
-1. Select **Edit**.
+1. In Azure Pipelines, navigate to your pipeline.
+1. From the drop-down menu, select **Settings**:
 
-    ![Azure Pipelines showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. Select **Edit**. From the menu in the upper corner, select **Settings**.
-
-    ![Azure Pipelines showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
+    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
-    Your pipeline no longer processes build requests.
+    Your pipeline will no longer process build requests.
 
 ### Option 2: Delete the Azure DevOps project
 
@@ -54,10 +53,10 @@ To delete the project:
 
     The icon might not appear until you move your mouse over that area.
 
-    ![Azure DevOps showing the gear icon](../../shared/media/azure-devops-project-gear.png)
+    ![Screenshot of Azure DevOps showing the project gear icon highlighted.](../../shared/media/azure-devops-project-gear.png)
 1. From the **Project details** area, scroll to the bottom and select **Delete**.
 
-    ![Azure DevOps showing the Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
+    ![Screenshot of Azure DevOps showing the Delete button to delete your project.](../../shared/media/azure-devops-delete-project.png)
 1. From the window that appears, enter the project name and select **Delete** a second time.
 
     Your project is now deleted.

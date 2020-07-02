@@ -8,7 +8,7 @@ The `Application` class also defines a `Resources` property. `Application` doesn
 
 The following illustration shows the structure of a typical application. Each of the elements shown has a `Resources` property that can hold a resource dictionary.
 
-![An image that shows the structure of a Xamarin.Forms application containing two pages, two layout panels, and several views](../media/8-resource-scope.png)
+![Diagram showing the structure of a Xamarin.Forms application containing two pages, each with a layout panel, and three views per layout panel.](../media/8-resource-scope.png)
 
 ## How to define application-level resources and styles
 
@@ -44,7 +44,7 @@ The search algorithm in Xamarin.Forms walks up the visual tree:
 
 The search returns the first item found with a matching `x:Key` value. The following image summarizes the resource lookup sequence.
 
-![An image that shows the Xamarin.Forms process for searching resource dictionaries to locate a resource definition](../media/8-lookup-rules.png)
+![Diagram showing the Xamarin.Forms process for searching resource dictionaries to locate a resource definition, from view to layout to page to application.](../media/8-lookup-rules.png)
 
 In practice, most developers ignore the `Resources` property in views and layout panels. They use the page-level dictionaries for things they use on a single page. Resources and styles they want to share across multiple pages are defined at the application level. The lookup process then needs to check only two dictionaries: the one in the current `Page` instance and the one in `Application`.
 

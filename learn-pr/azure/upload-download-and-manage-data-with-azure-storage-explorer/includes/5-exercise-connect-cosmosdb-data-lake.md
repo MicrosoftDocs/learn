@@ -94,7 +94,7 @@ So far, you've created an Azure Cosmos DB instance and connected to it by using 
 
 1. Give your database the name **products** and select **Enter**.
 
-   ![Screenshot that shows the field where you can name your database](../media/5-cosmos-db-create-database-name.png)
+    :::image type="content" source="../media/5-cosmos-db-create-database-name.png" alt-text="Screenshot that shows the field where you can name your database." loc-scope="other"::: <!-- no-loc -->
 
 You've now created a database called **products** in Azure Cosmos DB.
 

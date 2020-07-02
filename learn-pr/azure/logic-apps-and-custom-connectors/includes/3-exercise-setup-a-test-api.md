@@ -44,7 +44,7 @@ To save time, let's start by running a script to host our test API in Azure. The
 1. Keep note of this URL, because you'll need it in the next exercise.
 1. To see what the API looks like, navigate in your browser to the URL that is displayed in the **Swagger URL** output shown in the Cloud Shell. The URL should look something like `https://PrintFramerAPIabcde.azurewebsites.net/swagger`.The browser displays the Swagger UI for our app, as shown in the following screenshot.
 
-    ![The Swagger user interface](../media/3-swagger-ui.png)
+:::image type="content" source="../media/3-swagger-ui.png" alt-text="The Swagger user interface." loc-scope="third-party":::
 
 1. In the Swagger UI in your browser, select **Get** and then select **Try it out**. Enter a height and width, and then select **Execute**. Examine the response.
 1. In the **Address** bar of your browser, replace **/swagger/index.html** with **/swagger/v1/swagger.json**. The browser displays the OpenAPI definition for the API.

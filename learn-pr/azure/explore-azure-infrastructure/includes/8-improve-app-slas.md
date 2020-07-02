@@ -6,11 +6,13 @@ Building an efficient and reliable Azure solution requires knowing your workload
 In a distributed system, failures will happen. Hardware can fail. The network can have transient failures. It's rare for an entire service or region to experience a disruption, but even this must be planned for.
 
 ## Resiliency
+
 *Resiliency* is the ability of a system to recover from failures and continue to function. It's not about avoiding failures, but responding to failures in a way that avoids downtime or data loss. The goal of resiliency is to return the application to a fully functioning state following a failure. High availability and disaster recovery are two crucial components of resiliency.
 
 When designing your architecture you need to design for resiliency, and you should perform a *Failure Mode Analysis* (FMA). The goal of an FMA is to identify possible points of failure and to define how the application will respond to those failures.
 
 ## Cost and complexity vs. high availability
+
 *Availability* refers to the time that a system is functional and working. Maximizing availability requires implementing measures to prevent possible service failures.  However, devising preventative measures can be difficult and expensive, and often results in complex solutions.
 
 As your solution grows in complexity, you will have more services depending on each other.  Therefore, you might overlook possible failure points in your solution if you have several interdependent services.

@@ -142,7 +142,7 @@ Many controls in Xamarin.iOS expose .NET events to provide interactivity notific
 Here are a few examples:
 
 - `TouchUpInside` on the `UIButton` indicates that the user tapped within the button boundaries.
-- `UITextFiled` includes several events. For example:
+- `UITextField` includes several events. For example:
   - `EditingDidBegin` shows that the user started editing and the text field has input focus.
   - `ValueChanged` indicates that the text field's value changed.
   - `EditingDidEnd` shows that the user stopped editing and the text field has lost input focus.
@@ -168,7 +168,9 @@ There are six notifications that the view sends to the view controller. These no
 
 The following diagram shows the sequence of these methods in relation to `ViewDidLoad`.
 
-![A diagram showing View s presentation life cycle](../media/7-view-lifecycle.png)
+:::image type="complex" source="../media/7-view-lifecycle.png" alt-text="Diagram showing View's presentation life cycle.":::
+    Flow diagram starting with LoadView. An arrow proceeds to ViewDidLoad and then to ViewWillAppear. ViewWillAppear is part of a cycle going to ViewDidAppear, ViewWillDisappear, ViewDidDisappear, and back to ViewWillAppear.
+:::image-end:::
 
 ### Subscribe to a button event
 

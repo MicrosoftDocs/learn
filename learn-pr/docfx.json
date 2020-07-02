@@ -84,6 +84,32 @@
                 ],
                 "dest": "modules"
             },
+             {
+                "src": "cela-accessibility",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+             {
+                "src": "commercial-marketplace",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },               
             {
                 "src": "cmu-cloud-admin",
                 "files": [
@@ -124,6 +150,19 @@
                 "dest": "modules"
             },
             {
+                "src": "github",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "iot",
                 "files": [
                     "**/*.yml",
@@ -137,7 +176,46 @@
                 "dest": "modules"
             },
             {
+                "src": "language",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "reactors",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "ai-business",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "quantum",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -252,7 +330,7 @@
                     "**/resources/**"
                 ],
                 "dest": "modules"
-            },                    
+            },
             {
                 "files": [
                     "**/*.md",
@@ -302,7 +380,6 @@
         "overwrite": [],
         "externalReference": [],
         "globalMetadata": {
-            "show_latex": true,
             "breadcrumb_path": "/learn/breadcrumb/toc.json",
             "feedback_system": "GitHub",
             "feedback_github_repo": "MicrosoftDocs/learn",
@@ -310,9 +387,6 @@
             "uhfHeaderId": "MSDocsHeader-Learn"
         },
         "fileMetadata": {
-            "brand": {
-                "azure/**/*.yml": "azure"
-            },
             "sandbox-disabled": {},
             "localization_scopes": {
                 "azure/**/*.yml": [
@@ -421,7 +495,45 @@
                     "tr-tr",
                     "sv-se"
                 ],
+                "github/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
                 "iot/**/*.yml": [
+                    "de-de",
+                    "es-es",
+                    "fr-fr",
+                    "it-it",
+                    "ru-ru",
+                    "pt-br",
+                    "ja-jp",
+                    "ko-kr",
+                    "zh-cn",
+                    "zh-tw",
+                    "cs-cz",
+                    "hu-hu",
+                    "nl-nl",
+                    "pl-pl",
+                    "pt-pt",
+                    "tr-tr",
+                    "sv-se"
+                ],
+                "quantum/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",

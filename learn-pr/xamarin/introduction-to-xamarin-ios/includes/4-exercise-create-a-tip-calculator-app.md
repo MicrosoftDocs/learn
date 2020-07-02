@@ -11,11 +11,11 @@ The primary goal of this exercise is to disable the default Storyboard UI from t
 
 1. To start the project creation wizard, select **Create a new project** on the Visual Studio start page. You can also access the new project dialog in the **File** > **New** > **Project** menu.
 
-    ![Screenshot showing the Visual Studio's create new project option.](../media/3-create-new-project-1.png )
+    ![Screenshot showing Visual Studio 2019 Get started dialog with the Create a new project button highlighted.](../media/3-create-new-project-1.png )
 
 1. Use the search term _xamarin_ and filter the project types in the **Create a new project** dialog. Select the **iOS App (Xamarin)** template from the filtered list of options.
 
-   ![Selecting the iOS project template in Visual Studio.](../media/3-create-new-project-2.png)
+    ![Screenshot showing Visual Studio 2019 Create a new project dialog with a search for "xamarin" and the iOS App (Xamarin) template highlighted.](../media/3-create-new-project-2.png)
 
 1. Give your new project the name `TipCalculator` and select **Create**.
 
@@ -32,11 +32,13 @@ On the next screen:
 
 1. Click **OK** to create the project.
 
-   ![Configuring the template and support options for the iOS project.](../media/3-create-new-project-3.png "Configure the app project settings")
+    ![Screenshot showing Visual Studio 2019 New iOS App template selection with Single View App highlighted.](../media/3-create-new-project-3.png)
 
-   Visual Studio creates and loads a new solution with a single iOS project.
+    Visual Studio creates and loads a new solution with a single iOS project.
 
-   ![List of files and nodes in the Visual Studio Solution Explorer after creating initial iOS project.](../media/3-create-new-project-4.png "Initial Xamarin.iOS app files")
+    :::image type="complex" source="../media/3-create-new-project-4.png" alt-text="<alt text>":::
+        The new project consists of a TipCalculator solution and iOS project. Within the project are references, asset catalogs, native references, resources, and all the C#, PList, storyboard, and resource files.
+    :::image-end:::
 
 ## Delete boiler plate code
 
@@ -58,7 +60,7 @@ The Single View App template creates both a Storyboard UI and a view controller 
 
 1. Select **Add** to create the file and add it to your project.
 
-  ![Screenshot of Visual Studio showing the Add New Item dialog with the Class item selected](../media/4-new-class.png)
+    ![Screenshot of Visual Studio showing the Add New Item dialog with the Class item selected.](../media/4-new-class.png)
 
 ## Inherit from UIViewController
 
@@ -144,13 +146,13 @@ Next, you select the deployment target for your new iOS application. In this exa
 
 1. Choose **iPhoneSimulator** from the **Solution Platforms** dropdown on the Visual Studio toolbar.
 
-    ![Screenshot of Visual Studio showing iPhoneSimulator selected in the build target toolbar](../media/4-build-bar-windows.png)
+    ![Screenshot of Visual Studio showing iPhoneSimulator selected in the build target toolbar.](../media/4-build-bar-windows.png)
 
     With **iPhoneSimulator** selected, you can now choose from the available simulators installed on the Mac. The available devices and versions might change when Xcode is updated on the Mac.
 
 1. Select any **iPhone** simulator.
 
-    ![Screenshot of the Visual Studio toolbar list of iOS simulators available on a Mac build host](../media/4-device-list-windows.png "List of available iOS simulators")
+    ![Screenshot of the Visual Studio toolbar dropdown list of available iOS simulators on a sample Mac build host.](../media/4-device-list-windows.png)
 
     The simulator variations are created and installed through Xcode on your Mac build host. Visual Studio reads the configuration and displays what's available from the build host you've selected. If you don't see the simulator image you're looking for, you can create it through Xcode.
 
@@ -160,7 +162,7 @@ Compile and deploy the application to the iOS Simulator. The application display
 
 Start the application by selecting the **Play** button in the toolbar. This action builds and launches the application on the simulator. You can also build from the **Build** menu.
 
-![Screenshot of the Visual Studio toolbar with the app play button highlighted](../media/4-vs-play-button.png)
+![Screenshot of the Visual Studio toolbar with the app play button highlighted.](../media/4-vs-play-button.png)
 
 Remember, the simulator is hosted on your Mac build host. With the **Remoted iOS Simulator** installed, a window launches on your Windows development machine to preview and interact with the iOS simulator directly. If the Remoted iOS Simulator isn't installed, the simulator window appears and deploys on your **Mac** build host. Switch to your Mac to see the window there.
 

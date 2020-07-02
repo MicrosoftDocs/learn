@@ -1,8 +1,8 @@
 ### YamlMime:LearningPath
-uid: learn.cmu-cloud-computing.cmu-cloud-computing-basics
+uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics
 metadata:
-  title: Cloud computing basics for developers
-  description: The first learning path in a course on cloud computing for developers from Carnegie Mellon University. Learn about the basics of the cloud, including the history, building blocks, and types. This learning path prepares developers for real-world cloud practice on Azure.
+  title: Cloud administration basics
+  description: The first learning path in a course on Cloud Administration from Carnegie Mellon University. Learn about the basics of the cloud, including the history, building blocks, and types of services, in preparation for real-world cloud practice on Azure. 
   brand: azure
   ms.date: 02/20/2020
   author: shanamatthews
@@ -10,35 +10,33 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   showCreativeCommonsFooter: true
-title: Cloud computing basics for developers
+title: Cloud administration basics
 summary: |
-  Learn about the basics of the cloud, including the history, building blocks, and types, in preparation for real-world cloud practice on Azure.
+  Learn about the basics of the cloud, including the history, building blocks, and types of services, in preparation for real-world cloud practice on Azure.
 
   In this learning path, you will:
     - Learn about the history of the cloud, and how it was built
     - Know the major cloud providers and cloud types
     - Understand what types of resources are available through the cloud
-    - Compare the economic benefits of the cloud
-    - Design a datacenter and use a datacenter with a cloud service
-    - Build apps on the cloud
+    - Recognize cloud service modules
+    - Know the economic benefits of the cloud
+    - Understand digital identity, and how digital identities can be shared and secured
+
 
   In partnership with Dr. Majd Sakr and Carnegie Mellon University.
 prerequisites: None.
-iconUrl: /learn/achievements/cmu-cloud-developer/cloud-computing-basics-for-developers.svg
+iconUrl: /learn/achievements/cmu-cloud-admin/cmu-cloud-admin-basics.svg
 levels:
 - beginner
-- intermediate
 roles:
-- developer
+- administrator
 - student
 products:
 - azure
 modules:
-- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview
-- learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics
-- learn.cmu-cloud-computing.cloud-basics.cmu-data-centers
-- learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design
-- learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service
-- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud
+- learn.cmu-cloud-admin.overview-of-the-cloud.cmu-cloud-admin-overview
+- learn.cmu-cloud-admin.cloud-admin-provision-manage
+- learn.cmu-cloud-admin.secure-cloud-resources
+
 trophy:
-  uid: learn.cmu-cloud-computing.cmu-cloud-computing-basics.trophy
+  uid: learn.cmu-cloud-admin.cmu-cloud-admin-basics.trophy

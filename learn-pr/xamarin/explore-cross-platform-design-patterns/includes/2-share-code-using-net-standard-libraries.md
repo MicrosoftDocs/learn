@@ -8,7 +8,7 @@ A platform describes a set of components. With these components, you can build a
 
 You'll likely come across three common .NET platforms. They each let you run apps on a large variety of devices and operating systems.
 
-![An illustration that conceptualizes platforms](../media/2-platforms.png)
+![Illustration of three .NET platform with their own tools, runtime, and library: .NET Framework, .NET Core, and Mono for Xamarin.](../media/2-platforms.png)
 
 Each platform includes tools, a runtime, and libraries. When you create applications, you'll want to share code across platform libraries.
 
@@ -16,7 +16,7 @@ Each platform includes tools, a runtime, and libraries. When you create applicat
 
 The various .NET platforms include libraries developed by different teams, often with a focus on their specific operating systems. But they don't provide the exact same surface area to code against.
 
-![An illustration that conceptualizes platform libraries](../media/2-library-variation.png)
+![Illustration of the distinct .NET platform libraries: .NET Framework, .NET Core, and Mono for Xamarin.](../media/2-library-variation.png)
 
 Let's assume you want to use an API that's the same in both .NET Framework and .NET Core. You want to use the same API in Mono, but you realize the API is different. How could you use this API to write a single library? The answer is .NET Standard.
 
@@ -26,7 +26,7 @@ The goal of .NET Standard is to help with the inconsistencies that can exist bet
 
 The .NET Standard is a specification. It's not an implementation but rather a *standard* for a platform library to implement.
 
-![An illustration that conceptualizes platforms with .NET Standard](../media/2-library-standard.png)
+![Illustration of the various .NET platforms each using the .NET Standard system.](../media/2-library-standard.png)
 
 For example, these three platforms offer .NET Standard implementations of that standard API surface. The standard makes it easier to write a single library that runs on all three platforms.
 
@@ -44,19 +44,19 @@ Both Visual Studio 2019 and Visual Studio for Mac offer templates for creating .
 
 In **Visual Studio 2019**, one of the easiest ways to find the template in the **New Project** dialog box is to search for _standard_.
 
-![An image that shows creating a .NET Standard library in Visual Studio](../media/2-visual-studio-create-library.png)
+![Screenshot of Visual Studio Add a new project dialog searching for "standard" and selecting the Class Library (.NET Standard) template.](../media/2-visual-studio-create-library.png)
 
 No wizard is available to set the .NET Standard version. You can change the version you're targeting from the project properties.
 
-![An image that shows setting the .NET Standard library version in Visual Studio](../media/2-visual-studio-library-version.png)
+![Screenshot of Visual Studio setting the .NET Standard library version in the target framework field of the project properties.](../media/2-visual-studio-library-version.png)
 
 In **Visual Studio for Mac**, you can find the option to create a .NET Standard library under **Multiplatform** > **Library**.
 
-![An image that shows setting the .NET Standard library version in Visual Studio](../media/2-visual-studio-mac-create-library.png)
+![Screenshot for Visual Studio for Mac New Project dialog with the Multiplatform > Library > .NET Standard Library template selected.](../media/2-visual-studio-mac-create-library.png)
 
 Visual Studio for Mac provides a wizard that lets you choose the .NET Standard version when you create the project.
 
-![An image that shows setting the .NET Standard library version in Visual Studio](../media/2-visual-studio-mac-library-version.png)
+![Screenshot for Visual Studio for Mac New Project dialog selecting the .NET Standard version in the Target Framework dropdown.](../media/2-visual-studio-mac-library-version.png)
 
 ## Available APIs
 
@@ -70,6 +70,6 @@ For more information, see [Portable Class Libraries](https://docs.microsoft.com/
 
 The target .NET Standard version you pick determines which APIs you can use. Let's assume you pick version 1.4 as the target version. Version 1.4 lets you use all the APIs that were added between versions 1.0 and 1.4.
 
-![An image that shows setting the .NET Standard library version in Visual Studio](../media/2-selecting-version.png)
+![Diagram showing the superset API concept of the .NET Standard versions, where version 1.4 contains all APIs of prior versions.](../media/2-selecting-version.png)
 
 However, you can't use the APIs added in any later versions. For example, you can't use APIs in version 1.5, 1.6, or later. When you pick your version, make sure it includes all the APIs you need to implement your library.

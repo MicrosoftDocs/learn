@@ -15,7 +15,9 @@ There are several concepts in Azure Event Grid that connect a source to a subscr
 - **Event subscriptions:** The endpoint or built-in mechanism to route events, sometimes to multiple handlers. Subscriptions are also used by handlers to filter incoming events intelligently.
 - **Event handlers:** The app or service reacting to the event.
 
-![An illustration showing an Azure Event Grid positioned between multiple event sources and multiple event handlers. The event sources send events to the Event Grid and the Event Grid forwards relevant events to the subscribers. Event Grid use topics to decide which events to send to which handlers. Events sources tag each event with one or more topics, and event handlers subscribe to the topics they are interested in.](../media/4-event-grid.png)
+The following illustration shows an Azure Event Grid positioned between multiple event sources and multiple event handlers. The event sources send events to the Event Grid and the Event Grid forwards relevant events to the subscribers. Event Grid use topics to decide which events to send to which handlers. Events sources tag each event with one or more topics, and event handlers subscribe to the topics they are interested in.
+
+![Diagram of various event sources sending messages as topics to the Event Grid which in turn sends messages to subscribing event handlers.](../media/4-event-grid.png)
 
 ### What is an event?
 **Events** are the data messages passing through Event Grid that describe what has taken place. Each event is self-contained, can be up to 64 KB, and contains several pieces of information based on a schema defined by Event Grid:

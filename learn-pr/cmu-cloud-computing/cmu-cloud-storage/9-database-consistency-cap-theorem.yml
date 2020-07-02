@@ -9,6 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 22
 content: |
   [!include[](includes/9-database-consistency-cap-theorem.md)]

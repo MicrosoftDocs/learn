@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 In this module, you helped the team to shift left to search for code vulnerabilities and technical debt. They can now find problems early in the development process, which makes it easier to write code that's secure and maintainable. Because the scans are a part of the automated pipeline, they know the results are current. Not only that, but Tim now has an easy way to understand the state of the code for security and quality. 
 
 What happens if you find a vulnerability? You need to investigate it to determine if it's a security issue and a real threat. Some vulnerabilities are reported because one of your dependencies is out of date. This may or may not be a security issue. Address possible vulnerabilities on a case-by-case basis.
@@ -20,7 +22,7 @@ If you build .NET applications, as an optional exercise you can practice fixing 
 
 A relatively easy bug to fix relates to replacing the bold `<b>` tag with the `<strong>` tag, as you saw earlier.
 
-![Bug details on SonarCloud](../media/3-sonar-scan-bug.png)
+![Screenshot of SonarCloud bug details for "Replace this <b> tag by <strong>".](../media/3-sonar-scan-bug.png)
 
 See if you can locate this issue in the source code based on the report. After you fix the issue and commit the change to the `master` branch on GitHub, you see the issue disappear the next time the scanner runs.
 

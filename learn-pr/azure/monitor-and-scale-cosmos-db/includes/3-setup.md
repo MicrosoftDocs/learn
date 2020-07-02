@@ -12,8 +12,10 @@ A database account is a container for multiple Azure Cosmos DB databases.
 
 1. Create an Azure Cosmos DB account by using the following command:
 
-    ```bash
-    az cosmosdb create --resource-group <rgn>Sandbox Resource Group</rgn> --name $COSMOS_NAME
+    ```azurecli
+    az cosmosdb create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --name $COSMOS_NAME
     ```
 
 The database account can take 4 to 5 minutes to provision. Keep reading while the account is being created.
@@ -51,24 +53,31 @@ We look at indexing in units 6 and 7.
 1. After the database is created, run the following command to store its endpoint in an environment variable.
 
     ```bash
-    export ENDPOINT=$(az cosmosdb list --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --output tsv --query [0].documentEndpoint)
+    export ENDPOINT=$(az cosmosdb list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output tsv \
+        --query [0].documentEndpoint)
     ```
 
 1. Run the following command to store the access key in an environment variable.
 
     ```bash
-    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
-            --name $COSMOS_NAME --output tsv --query primaryMasterKey)
+    export KEY=$(az cosmosdb keys list \
+        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --name $COSMOS_NAME \
+        --output tsv \
+        --query primaryMasterKey)
     ```
 
 ## Create your database and collections
 
 1. Create a database called `mslearn` in your Azure Cosmos DB account. We need only one database for these exercises.
 
-    ```bash
-    az cosmosdb database create --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --name $COSMOS_NAME --db-name mslearn
+    ```azurecli
+    az cosmosdb sql database create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --account-name $COSMOS_NAME \
+        --name mslearn
     ```
 
 1. Create the first collection.
@@ -77,30 +86,42 @@ We look at indexing in units 6 and 7.
 
     We'll allocate a smaller capacity to this collection to demonstrate overloading it. The partition key for this collection is the unique identifier of the order. In this case, the partition isn't important because the collection is smaller than a single partition.
 
-    ```bash
-    az cosmosdb collection create --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --name $COSMOS_NAME --db-name mslearn --collection Small \
-            --partition-key-path /id --throughput 400
+    ```azurecli
+    az cosmosdb sql container create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --account-name $COSMOS_NAME \
+        --database-name mslearn \
+        --name Small \
+        --partition-key-path /id \
+        --throughput 400
     ```
 
 1. Create the second collection.
 
     This collection uses an order item's product category as the partition key. We'll explore the consequences of this choice as we go through the exercises in this module.
 
-    ```bash
-    az cosmosdb collection create --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --name $COSMOS_NAME --db-name mslearn --collection HotPartition \
-            --partition-key-path /Item/Category --throughput 7000
+    ```azurecli
+    az cosmosdb sql container create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --account-name $COSMOS_NAME \
+        --database-name mslearn \
+        --name HotPartition \
+        --partition-key-path /Item/Category \
+        --throughput 7000
     ```
 
 1. Create a third collection.
 
     This collection partitions the documents by the order item's unique product identifier.
 
-    ```bash
-    az cosmosdb collection create --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --name $COSMOS_NAME --db-name mslearn --collection Orders \
-            --partition-key-path /Item/id --throughput 7000
+    ```azurecli
+    az cosmosdb sql container create \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --account-name $COSMOS_NAME \
+        --database-name mslearn \
+        --name Orders \
+        --partition-key-path /Item/id \
+        --throughput 7000
     ```
 
 ## Populate your collections
@@ -128,13 +149,18 @@ We'll use an open-source C# console application to populate your collections. Th
     You can reset your `ENDPOINT` and `KEY` variables by running the following commands.
 
     ```bash
-    export ENDPOINT=$(az cosmosdb list --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --output tsv --query [0].documentEndpoint)
+    export ENDPOINT=$(az cosmosdb list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output tsv \
+        --query [0].documentEndpoint)
     ```
 
     ```bash
-    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
-            --name $COSMOS_NAME --output tsv --query primaryMasterKey)
+    export KEY=$(az cosmosdb keys list \
+        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --name $COSMOS_NAME \
+        --output tsv \
+        --query primaryMasterKey)
     ```
 
 1. Populate the `Small` collection.
@@ -145,12 +171,12 @@ We'll use an open-source C# console application to populate your collections. Th
 
     Again, the application takes a few minutes to run. We need to populate the database with enough data that we can discern metrics for different partitioning and indexing strategies. To populate this collection, the console application is running with the following options:
 
-    Option|Value|Description
-    ------|-----|-----------
-    -c|Small|The name of the collection to use.
-    -o|InsertDocument|The name of the task to run.
-    -n|4000|The number of times to run.
-    -p|10|The degree of parallelism to use. That's the number of threads used for the experiment. The higher this number, the greater the demand on the collection.
+    | Option | Value | Description |
+    |---|---|---|
+    | -c | Small | The name of the collection to use. |
+    | -o | InsertDocument | The name of the task to run. |
+    | -n | 4000 | The number of times to run. |
+    | -p | 10 | The degree of parallelism to use. That's the number of threads used for the experiment. The higher this number, the greater the demand on the collection. |
 
     The first time you run the application, it shows a welcome message.
 

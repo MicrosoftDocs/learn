@@ -20,7 +20,7 @@ Your managing director wants to be able to understand clearly the workflow that 
 
 You want to update the bike reservation and rental process on both campuses to the following workflow:
 
-![Bike booking and rental workflow](../media/4-bike-hire-workflow.png)
+![Decision flow diagram detailing the logic for the bike booking and rental process.](../media/4-bike-hire-workflow.png)
 
 The details are as follows:
 

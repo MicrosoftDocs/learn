@@ -9,6 +9,7 @@ metadata:
   ms.author: shanama
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  show_latex: true
 durationInMinutes: 27
 content: |
   [!include[](includes/3-apache-cassandra.md)]
@@ -22,7 +23,7 @@ quiz:
 # Did I Get This block 2 question 1
   - content: "Which topology does Cassandra follow?"
     choices:
-    - content: "Master-slave topology"
+    - content: "Master-subordinate topology"
       isCorrect: false
       explanation: "Incorrect. All the nodes in Cassandra have the same role."
     - content: "Peer-to-peer topology"

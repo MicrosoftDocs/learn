@@ -1,6 +1,6 @@
 In our last exercise, we implemented a scenario to look up bookmarks in an Azure Cosmos DB database. We configured an input binding to read data from our bookmarks collection. But, we can do more. Let's expand the scenario to include writing. Consider the following flowchart:
 
-![Flow diagram showing the process of finding a bookmark in our Azure Cosmos DB back-end. When the Azure function receives a request with the bookmark id, it first checks whether the request is valid, if not an error response is generated. For valid requests, the function checks if the bookmark id is present in the Azure Cosmos DB, if not present an error response is generated. If the bookmark id is found, a success response is generated.](../media/7-add-bookmark-flow-small.png)
+![Decision flow diagram illustrating the process of adding a bookmark in our Azure Cosmos DB back-end and returning a response. ](../media/7-add-bookmark-flow-small.png)
 
 In this scenario, we'll receive requests to add bookmarks to our collection. The requests pass in the desired key, or ID, along with the bookmark URL. As you can see in the flowchart, we'll respond with an error if the key already exists in our back end.
 
@@ -135,7 +135,7 @@ Now we have a binding to read from our collection, and one to write to it.
 
 Azure Queue storage is a service for storing messages that can be accessed from anywhere in the world. The size of a single message can be as much as 64 KB, and a queue can contain millions of messages - up to the total capacity of the storage account in which it is defined. The following diagram shows at a high level how a queue is used in our scenario:
 
-![An illustration showing a storage queue and two functions one pushing and the other popping messages onto the queue](../media/7-q-logical-small.png)
+![Illustration showing a storage queue and two functions one pushing and the other popping messages onto the queue.](../media/7-q-logical-small.png)
 
 Here you can see that the new function, **add-bookmark**, adds messages to a queue. Another function - for example, a fictitious function called *gen-qr-code* - will pop messages from the same queue and process the request. Since we write, or *push*, messages to the queue from **add-bookmark**, we'll add a new output binding to your solution. Let's create the binding through the portal UI this time.
 
@@ -295,11 +295,11 @@ Azure Queue Storage queues are hosted in a storage account. You already selected
 
 1. In the **Services** list, select the **Queues** item. A list of queues hosted by this storage account is displayed. Verify that the **bookmarks-post-process** queue exists, as shown in the following screenshot:
 
-    ![Screenshot showing our queue in the list of queues hosted by this storage account](../media/7-q-in-list-small.png)
+    ![Screenshot showing our queue in the list of queues hosted by this storage account.](../media/7-q-in-list-small.png)
 
 1. Select **bookmarks-post-process** to open the queue. The messages that are in the queue are displayed in a list. If all went according to plan, the queue includes the message that you posted when you added a bookmark to the database. It should look like the following:
 
-    ![Screenshot showing our message in the queue](../media/7-message-in-q-small.png)
+    ![Screenshot showing our message sitting in the queue.](../media/7-message-in-q-small.png)
 
     In this example, you can see that the message was given a unique ID, and the **MESSAGE TEXT** field displays your bookmark in JSON string format.
 

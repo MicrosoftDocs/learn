@@ -1,6 +1,6 @@
 You've now seen how to create a basic Xamarin.Android app. Behind the scenes, Xamarin.Android uses many of the native Android tools and libraries. Your goal in this unit is to understand enough about how Xamarin.Android uses these tools and libraries to make sure your development environment is up to date.
 
-![A diagram showing native libraries and tools](../media/8-native-libraries-and-tools.png)
+![Screenshot showing the components that can make up a Xamarin.Android app: JDK, Android SDK, Android NDK, and Mono .NET.](../media/8-native-libraries-and-tools.png)
 
 If you want to target new versions of Android with your Xamarin.Android app, you can update the underlying Android SDK installed on your development machine.
 
@@ -8,7 +8,7 @@ If you want to target new versions of Android with your Xamarin.Android app, you
 
 Let's put aside Android for a moment and talk about Java.
 
-![A diagram showing the Java SDK components](../media/8-jdk-components.png)
+![Diagram showing the Java SDK components: java.* library packages, dev tools, runtime, docs and samples, and library source code.](../media/8-jdk-components.png)
 
 Java apps are built using the tools and libraries from the *Java Development Kit* (JDK). The JDK includes several things that Java apps need:
 
@@ -20,7 +20,7 @@ Some of the Java development tools are used in the Android build process, so the
 
 ## What is the Android SDK?
 
-![A diagram showing the Android SDK components](../media/8-android-sdk-components.png)
+![Diagram showing the Android SDK components: SDK platform, Google APIs, Tools, SDK docs and samples, and emulator images.](../media/8-android-sdk-components.png)
 
 The *Android SDK* provides many key resources for native Android development:
 
@@ -34,7 +34,7 @@ The *Android SDK* provides many key resources for native Android development:
 
 The *Android native development kit* (NDK) contains tools to let you integrate native code such as C++ into your Android application.
 
-![A diagram showing the Android NDK components](../media/8-android-ndk-components.png)
+![Diagram showing the Android NDK components: C headers, compilers and linkers, tools, and NDK docs and samples.](../media/8-android-ndk-components.png)
 
 The native code runs directly on the Android platform, outside of the Dalvik virtual machine. The NDK is useful when you have an existing C++ codebase that you don't want to port to Java. You can use the NDK to directly incorporate the codebase into your Android app.
 
@@ -42,7 +42,7 @@ The native code runs directly on the Android platform, outside of the Dalvik vir
 
 The Mono project is an open-source implementation of the Microsoft .NET Framework.
 
-![Illustration showing the various Mono components: base class library, Mono class library, Mono runtime, and C# compiler](../media/8-mono-components.png)
+![Illustration showing the Mono components: base class library, Mono class library, Mono runtime, and C# compiler.](../media/8-mono-components.png)
 
 Xamarin.Android uses many Mono tools and libraries because Mono has the core pieces needed to build many kinds of apps:
 
@@ -58,7 +58,7 @@ Xamarin.Android uses many Mono tools and libraries because Mono has the core pie
 
 Native Android apps are written predominantly in Java. Your Java source code is compiled to Java bytecode. Android compiles your code by using the standard Java compiler from the JDK.
 
-![Diagram showing the Android compilation process from Java code compiled to a class through the Android DEX compiler generating .dex files](../media/8-native-compilation.png)
+![Diagram showing the Android compilation process from Java code compiled to a class through the Android DEX compiler generating .dex files.](../media/8-native-compilation.png)
 
 The Java bytecode is then translated into Android's proprietary bytecode format, called Dalvik bytecode, or into a Dalvik Executable (DEX) format.
 
@@ -66,7 +66,7 @@ The Java bytecode is then translated into Android's proprietary bytecode format,
 
 Android apps are combined into a single file for deployment. You can deploy this file to a device or upload it to the Android Play store.
 
-![Diagram showing .dex files and resources in an Android app being assembled by Android apkbuilder into an .apk file](../media/8-native-packaging.png)
+![Diagram showing .dex files and resources in an Android app being assembled by Android apkbuilder into an .apk file.](../media/8-native-packaging.png)
 
 The file is called an *application package*, and it has an .apk extension. It contains all your app's assets:
 
@@ -90,13 +90,13 @@ Android is based on Linux. Apps run in their own process and get their own copy 
 
 The C# source code in Xamarin.Android apps is compiled to MSIL and packaged into assemblies.
 
-![A diagram showing the Xamarin.Android compilation process](../media/8-xamarin-android-compilation.png)
+![Diagram showing the Xamarin.Android compilation process from C# source file to the C# compiler to an assembly.](../media/8-xamarin-android-compilation.png)
 
 ## Understand Xamarin.Android and the Mono runtime
 
 Xamarin.Android apps contain MSIL, so they need a runtime to manage MSIL execution.
 
-![A diagram showing the Xamarin.Android linking process](../media/8-xamarin-android-mono-vm.png)
+![Diagram showing the Xamarin.Android linking process from Mono Runtime to the Android apkbuilder to a resulting .apk file.](../media/8-xamarin-android-mono-vm.png)
 
 The Xamarin.Android build tools automatically include the Mono runtime in the .apk file. The Mono runtime is analogous to Common Language Runtime (CLR) from .NET. The Mono runtime has an MSIL compiler, a garbage collector, and so on.
 
@@ -104,7 +104,7 @@ The Xamarin.Android build tools automatically include the Mono runtime in the .a
 
 The Mono runtime is part of your app's process to execute your intermediate language (IL).
 
-![A diagram showing the Xamarin.Android linking process](../media/8-xamarin-android-execution.png)
+![Diagram showing the Xamarin.Android components: your C# code and .NET libraries on the Mono Runtime, java.* libraries and android.* libraries on the Android Runtime (ART), both on top of the Linux Kernal.](../media/8-xamarin-android-execution.png)
 
 ART is part of your app's process to execute the native Java code. For example, the Xamarin.Android libraries are C# wrappers around the underlying java.* and android.* Java packages. These packages are native Android types and aren't written in C#. The packages have to run on ART.
 
@@ -114,7 +114,7 @@ The Mono runtime and ART run side by side in your app's process.
 
 When you set up your development machine, you'll run the Xamarin unified installer. Visual Studio should be installed on Windows. On macOS, the installer includes Visual Studio for Mac.
 
-![A diagram showing the Xamarin.Android installation](../media/8-xamarin-android-installation.png)
+![Diagram showing the components installed for Xamarin.Android: JDK, Android SDK, Android NDK, Visual Studio + Xamarin, and Xamarin.Android.](../media/8-xamarin-android-installation.png)
 
 The installer puts all the prerequisites onto your machine:
 
@@ -170,7 +170,7 @@ Android supplies an integer API level that identifies a specific set of APIs. Th
 
 Android SDK Manager is a graphical user interface tool from Google that helps you keep the Android SDK up-to-date on your development machine.
 
-![A diagram showing the components managed by the Android SDK Manager](../media/8-android-sdk-manager-components.png)
+![Diagram showing the components managed by the Android SDK Manager: SDK platform, Google APIs, Tools, SDK docs and samples, and emulator images.](../media/8-android-sdk-manager-components.png)
 
 You can use Android SDK Manager to install new versions of every part of the Android SDK. To target a new Android version with your app, the SDK platform and the tools are the key pieces you need to install.
 
@@ -178,13 +178,13 @@ You can use Android SDK Manager to install new versions of every part of the And
 
 You can open Android SDK Manager from Visual Studio or Visual Studio for Mac. Here's the menu item in Visual Studio:
 
-![A screenshot showing how to open Android SDK Manager from Visual Studio](../media/8-vs-open-android-sdk-manager.png)
+![Screenshot showing opening the Android SDK Manager from the Visual Studio Tools > Android menu.](../media/8-vs-open-android-sdk-manager.png)
 
 ## Update platform versions
 
 To target a specific API level of Android, you need the SDK platform for that installed API level.
 
-![A screenshot showing platform installation options in Android SDK Manager](../media/8-sdk-manager-platform-options.png)
+![Screenshot showing platform installation options in Android SDK Manager with a highlighted SDK platform and system images yet to be installed.](../media/8-sdk-manager-platform-options.png)
 
 You'll install the SDK platform only for the API levels you want to target. You don't need to install every one. For example, you would rarely need to install and target API level 7 because it's many years out of date.
 
@@ -192,6 +192,6 @@ You'll install the SDK platform only for the API levels you want to target. You 
 
 Android splits the tools into three logical groups that you can update independently.
 
-![A screenshot showing the Android SDK Manager tools](../media/8-sdk-manager-platform-tools.png)
+![Screenshot showing the Android SDKs and Tools dialog with the Tools tab shown, the SDK Tools, Platform-Tools, and Build Tools are highlighted.](../media/8-sdk-manager-platform-tools.png)
 
 The standard advice is to keep all three categories up-to-date. The tools are backward compatible, so you rarely need to avoid an update.

@@ -1,6 +1,6 @@
 For this exercise, you'll start from a different version of the **Astronomy** app. There's a new starter solution for you to work with. You'll use `MasterDetailPage` to display a homogeneous collection of data in a split view.
 
-![Screenshot that shows the resulting master-detail split navigation with a list of planet detail pages running on an iPad iOS simulator](../media/8-ios-master-detail-list.png)
+![Screenshot showing the resulting master-detail split navigation with a list of planet detail pages running on an iPad iOS simulator.](../media/8-ios-master-detail-list.png)
 
 ## Open the starter solution
 

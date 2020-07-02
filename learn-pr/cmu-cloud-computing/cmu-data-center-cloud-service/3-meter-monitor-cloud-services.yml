@@ -15,18 +15,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "To be able to bill users accurately, which of the following does AWS not need to monitor?"
+  - content: "To be able to bill users accurately, which of the following does Azure not need to monitor?"
     choices:
-    - content: "The start time of every single EC2 instance that a customer owns"
+    - content: "The start time of every single VM instance that a customer owns"
       isCorrect: false
-      explanation: "Incorrect. Think about the way AWS bills customers for using its services."
-    - content: "The number of bytes of data sent out by every EC2 instance"
+      explanation: "Incorrect. Think about the way Azure bills customers for using its services."
+    - content: "The number of bytes of data sent out by every VM instance"
       isCorrect: false
-      explanation: "Incorrect. Think about the way AWS bills customers for using its services."
+      explanation: "Incorrect. Think about the way Azure bills customers for using its services."
     - content: "The number of bytes of storage where data is actually stored on a provisioned EBS storage volume"
       isCorrect: true
       explanation: "Correct! Once disk space is provisioned, the amount that the user actually uses is not billed."
-    - content: "All of the above must be monitored by AWS"
+    - content: "All of the above must be monitored by Azure"
       isCorrect: false
-      explanation: "Incorrect. Think about the way AWS bills customers for using its services."
+      explanation: "Incorrect. Think about the way Azure bills customers for using its services."
 

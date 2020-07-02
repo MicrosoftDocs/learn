@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-deployment.4-pipelines
+title: "Test automation and the delivery pipeline"
+metadata:
+  title: "Test automation and the delivery pipeline"
+  description: "Test automation and the delivery pipeline"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-pipelines.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Commit, test, scan, and build are typical steps in which of these things?'
+    choices:
+    - content: 'unit test'
+      isCorrect: false
+      explanation: 'These are typical steps in a continuous delivery pipeline.'
+    - content: 'epic deployment'
+      isCorrect: false
+      explanation: 'These are typical steps in a continuous delivery pipeline.'
+    - content: 'continuous delivery pipeline'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'feature flag'
+      isCorrect: false
+      explanation: 'These are typical steps in a continuous delivery pipeline.'
+
+  - content: 'Environment traceability allows us to do which of these things?'
+    choices:
+    - content: 'correlate what is running in production with a specific build instance'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'see which environment variables were active during a build'
+      isCorrect: false
+      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
+    - content: 'determine the origin of code in a source control system'
+      isCorrect: false
+      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'
+    - content: 'find the staging environment used for testing the code'
+      isCorrect: false
+      explanation: 'Environment traceability allows us to correlate what is running in production with a specific build instance.'

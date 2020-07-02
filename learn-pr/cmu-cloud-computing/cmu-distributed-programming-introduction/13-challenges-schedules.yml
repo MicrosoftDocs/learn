@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.13-challenges-schedules
+title: 'Cloud challenges: Scheduling'
+metadata:
+  title: 'Cloud challenges: Scheduling'
+  description: Learn about scheduling challenges in building cloud programs.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/13-challenges-schedules.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What are the considerations for an ideal scheduler for distributed programs?"
+    choices:
+    - content: "Response time"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Throughput"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Resource utilization"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Resource heterogeneity"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Locality"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Fairness"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Load balancing"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Reducing communication"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Facilitating scalability"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "Meeting SLOs"
+      isCorrect: false
+      explanation: "That's not quite right. Is this the only consideration for an ideal scheduler? What about the other aspects of the program?"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "Why is meeting SLOs a challenge in cloud computing?"
+    choices:
+    - content: "Heterogeneity in cloud resources"
+      isCorrect: false
+      explanation: "That's not quite right. Heterogeneity in cloud resources poses a challenge in cloud computing, but is this the only reason?"
+    - content: "Task elasticity is an issue"
+      isCorrect: false
+      explanation: "That's not quite right. Task elasticity poses a challenge in cloud computing, but is this the only reason?"
+    - content: "SLOs are hard to define"
+      isCorrect: false
+      explanation: "Incorrect. SLOs are not difficult to define in terms of service availability and expected throughput, among others."
+    - content: "Heterogeneity in cloud resources and task elasticity is an issue"
+      isCorrect: true
+      explanation: "Correct! These are both issues that pose challenges in meeting SLOs in cloud computing."
+    - content: "All of the above"
+      isCorrect: false
+      explanation: "That's not quite right. SLOs are not difficult to define in terms of service availability and expected throughput, among others."      
+      

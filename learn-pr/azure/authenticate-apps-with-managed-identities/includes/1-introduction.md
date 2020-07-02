@@ -1,24 +1,24 @@
-One of the issues facing application developers looking to integrate their application with on-premises, external, or cloud service is authentication. What's the most practical way to access resources like databases, without compromising security?
+One of the issues that faces application developers who want to integrate their application with on-premises, external, or cloud services is authentication. What's the most practical way to access resources like databases without compromising security?
 
-Storing credentials, tokens, or secret keys in configuration files accessed by your applications, isn't secure. It also creates an on-going technical debt where you have to modify and redistribute your application each time credentials change.
+Storing credentials, tokens, or secret keys in configuration files that your applications access isn't a secure solution. It also creates an ongoing technical debt, requiring you to modify and redistribute your application each time credentials change.
 
-A better solution is to use the authentication tools provided by Azure, **service principals** and **managed identities**.
+A better solution uses the authentication tools that Azure provides. These tools include *service principals* and *managed identities*.
 
-You're a developer at a furniture company that's migrating a stock-tracking application to Azure VMs. The application needs to access secrets in Azure Key Vault to work. The deployment and management tasks for the application should be as streamlined as possible, and avoid handling credentials in configuration files. You'd like to use a managed identity for Azure resources to authenticate the application that's running in Azure.
+Imagine that you're a developer at a furniture company. Your company is migrating a stock-tracking application to Azure VMs. The application needs access to secrets in Azure Key Vault. The application's deployment and management tasks should be as streamlined as possible. The processes should avoid handling credentials in configuration files. You want to use a managed identity for Azure resources to authenticate the application that's running in Azure.
 
-This module will explore the various service principals available, introduce you to managed identities, and examine some scenarios around their usage.
+This module explores the available service principals, introduces you to managed identities, and examines some usage scenarios.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Identify the benefits and use cases for using service principals
-- Identify the benefits of using managed identities for Azure resources
-- Enable managed identity on an Azure VM
-- Use managed identity with Azure SDKs in applications
+- Identify the benefits of and use cases for service principals.
+- Identify the benefits of using managed identities for Azure resources.
+- Enable managed identities on an Azure VM.
+- Use managed identities with Azure SDKs in applications.
 
 ## Prerequisites
 
 - Familiarity with Azure Active Directory concepts
 - Familiarity with general concepts of authorization and authentication
-- Experience of developing and deploying IaaS applications
+- Experience with developing and deploying infrastructure-as-a-service (IaaS) applications

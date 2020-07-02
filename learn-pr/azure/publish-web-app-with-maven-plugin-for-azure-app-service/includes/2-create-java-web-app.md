@@ -41,7 +41,7 @@ mvn archetype:generate \
 
 Running the above command creates a project directory structure with these contents:
 
-![Project folder and file hierarchy](../media/2-project-tree.png)
+:::image type="content" source="../media/2-project-tree.png" alt-text="Project folder and file hierarchy." loc-scope="other"::: <!-- no-loc -->
 
 [//]: # (NOTE: The following code is used to generate the preceding image)
 

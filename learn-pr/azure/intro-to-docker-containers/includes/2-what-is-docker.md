@@ -46,7 +46,15 @@ The Docker platform consists of several components that we use to build, run, an
 
 The Docker Engine consists of several components configured as a client-server implementation where the client and server run simultaneously on the same host. The client communicates with the server using a REST API, which allows the client to also communicate with a remote server instance.
 
-![An illustration showing a high-level overview of the Docker architecture.](../media/2-docker-architecture.svg)
+:::image type="complex" source="../media/2-docker-architecture.svg" alt-text="Diagram showing a high-level overview of the Docker architecture.":::
+   The diagram shows a square that represents Docker Hub with container images and a separate square that represents a Docker Host. An arrow shows communication between the Docker Hub and Docker Host. 
+   
+   The Docker Host contains two objects. One represents the Docker Engine, and the second the running docker containers. The Docker Host object contains four objects. These are the Docker Server, the Docker REST API, the Docker Client, and stored container images. 
+   
+   Some arrows show communication between the Docker Server, the REST API, and the Docker Client. These arrows indicate how the user communicates with the Docker Server via the REST API.
+
+   Some arrows show communication between the Docker Server, running Containers, and stored container images. These arrows indicate how the Docker server loads stored container images and manage running containers.
+:::image-end:::
 
 **The Docker client**
 

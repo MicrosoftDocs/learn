@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.oxford.intro-iot-funtions-iot
+metadata:
+  title: "Introduction to Azure Functions for IoT"
+  description: "University of Oxford"
+  ms.date: 03/24/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+title: "Introduction to Azure Functions for IoT"
+summary: "Assess the characteristics of Azure Functions for IoT. Describe the function of triggers and bindings and show how you combine them to create a scalable IoT solution. Describe the benefits of using cloud infrastructure to rapidly deploy IoT applications with Azure Functions."
+abstract: |
+    In this module, you will:
+    - Explain how Azure Functions implements business logic with IoT devices
+    - Decide whether Azure Functions is right choice for your IoT solution
+
+    "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***"
+prerequisites: |
+    - Familiarity with Azure
+    - Basic knowledge of REST and APIs
+    - Basic understanding of IoT 
+    
+iconUrl: /learn/achievements/student-evangelism/introduction-to-azure-functions-iot-edge.svg
+badge:
+  uid: learn.oxford.intro-iot-funtions-iot.badge
+levels:
+- beginner
+roles:
+- ai-edge-engineer
+products:
+- azure-iot-hub
+units:
+- learn.oxford.intro-iot-funtions-iot.introduction
+- learn.oxford.intro-iot-funtions-iot.what-azure-functions-iot
+- learn.oxford.intro-iot-funtions-iot.how-azure-functions-works
+- learn.oxford.intro-iot-funtions-iot.when-use-azure-functions-iot
+- learn.oxford.intro-iot-funtions-iot.knowledge-check
+- learn.oxford.intro-iot-funtions-iot.summary
