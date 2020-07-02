@@ -14,4 +14,20 @@ interactive: powershell
 azureSandbox: true
 content: |
   [!include[](includes/4-exercise-aspnet-log.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Create the AppInsights instance."
+  azure:
+    resource:
+      type: "Microsoft.Insights/components"
+- action: exists
+  environment: azure
+  hint: "Create the general-purpose v2 storage account to store logging data."
+  azure:
+    resource:
+      type: "Microsoft.Storage/storageAccounts"
+      kind: "StorageV2"
+
+
 

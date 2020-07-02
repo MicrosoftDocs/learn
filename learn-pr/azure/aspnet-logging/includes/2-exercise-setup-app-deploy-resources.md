@@ -62,13 +62,7 @@ Here, you'll download and test the application locally, and then create the reso
 
 ## Create Azure resources for running the application as an Azure web app
 
-1. In the Cloud Shell window on the right, run the following command to download the sample application from the Microsoft repository on GitHub:
-
-    ```bash
-    git clone https://github.com/dotnet-architecture/eShopModernizing.git
-    ```
-
-1. Run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
+1. In the Cloud Shell window on the right, run the commands shown below to define the following PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
     > The resource group <rgn>[sandbox resource group name]</rgn> has been created automatically. Use this as your resource group name, you will not have permission to create additional resource groups in the sandbox.
@@ -85,35 +79,75 @@ Here, you'll download and test the application locally, and then create the reso
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
-1. Move to the **~/eShopModernizing/Setup** folder.
+1. Run the following commands to define further variables that will be used to create the resources used by this module:
 
     ```PowerShell
-    cd ~/eShopModernizing/Setup
+    $location = "eastus"
+    $webappplanname = (-join($useralias,"-webappplan"))
+    $webappname = (-join($useralias,"-webapp"))
+    $serveradminname = "ServerAdmin"
+    $servername = (-join($useralias, "-workshop-server"))
+    $dbname = "eShop"
     ```
 
-1. Run the following PowerShell scripts:
+1. Run the following PowerShell command to create a new Azure App Service plan for hosting the web app:
 
     ```PowerShell
-    . ./environment.ps1
-    ./setup.ps1
+    New-AzAppServicePlan `
+        -Name $webappplanname `
+        -ResourceGroup $resourcegroupname `
+        -Location $location
     ```
-
-    > [!NOTE]
-    > The "." and the space characters at the start of the first command above are important. Don't omit them.
-
-    Wait for the script to create the resources used by the lab before continuing.
-
-1. Run the following PowerShell script tp verify that the resources have been created successfully:
+1. Run the following PowerShell command to create a web app using the App Service plan:
 
     ```PowerShell
-    ./verify.ps1
+    New-AzWebApp `
+        -Name $webappname `
+        -AppServicePlan $webappplanname `
+        -ResourceGroup $resourcegroupname `
+        -Location $location
     ```
 
-    You should see the following messages:
+1. Run the following PowerShell command to assign a managed identity to the web app. You'll require this identity later:
 
-    ```output
-    The app service plan was created
-    The web app was created
-    The database server was created
-    The database was created
+    ```PowerShell
+    Set-AzWebApp `
+        -AssignIdentity $true `
+        -Name $webappname `
+        -ResourceGroupName $resourcegroupname
+    ```
+
+1. Run the following PowerShell command to create a new Azure SQL Database server:
+
+    ```PowerShell
+    New-AzSqlServer `
+        -ServerName $servername `
+        -ResourceGroupName $resourcegroupname `
+        -Location $location `
+        -SqlAdministratorCredentials $(New-Object `
+            -TypeName System.Management.Automation.PSCredential `
+            -ArgumentList $serveradminname, `
+            $(ConvertTo-SecureString `
+            -String $serveradminpassword `
+            -AsPlainText -Force))
+    ```
+1. Run the following PowerShell command to open the SQL Database server firewall to allow access to services hosted in Azure.
+
+    ```PowerShell
+    New-AzSqlServerFirewallRule `
+        -ResourceGroupName $resourcegroupname `
+        -ServerName $servername `
+        -FirewallRuleName "AllowedIPs" `
+        -StartIpAddress "0.0.0.0" `
+        -EndIpAddress "0.0.0.0"
+    ```
+
+1. Run the following PowerShell command to create a database on the SQL Database server. The database will be populated later, when you migrate the web app.
+
+    ```PowerShell
+    New-AzSqlDatabase  `
+        -ResourceGroupName $resourcegroupname `
+        -ServerName $servername `
+        -DatabaseName $dbName `
+        -RequestedServiceObjectiveName "S0"
     ```
