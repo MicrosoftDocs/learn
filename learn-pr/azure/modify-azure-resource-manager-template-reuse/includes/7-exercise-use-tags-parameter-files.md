@@ -10,47 +10,47 @@ Here, you create a parameter to use as a resource tag in your template.
 1. Type **par**. You see a list of related snippets.
 1. 1. Choose *arm-param*. Recall, this adds a generic parameter to the template. It will look like this:
 
-```json
-"parameter1": {
-    "type": "string",
-    "metadata": {
-        "description": "description"
-    }
-```
+    ```json
+    "parameter1": {
+        "type": "string",
+        "metadata": {
+            "description": "description"
+        }
+    ```
 
 1. Change *parameter1* to **resourceTags** and change the value of ```"type":``` to be **object**. Recall that parameters can be string, secureString, int, bool, object, secureObject, and array data types. A link to example syntax for these parameter types is in the summary of this module.
 1. Add an attribute called **defaultValue:** and set the value to be **{"Environment": "Dev", "Project": "Tutorial"}**.
 1. The parameter block should look like this:
 
     ```json
-        "parameters": {
-           "storagePrefix": {
-               "type": "string",
-               "minLength": 3,
-               "maxLength": 11
-           },
-            "storageSKU": {
-                "type": "string",
-                "defaultValue": "Standard_LRS",
-                "allowedValues": [
-                    "Standard_LRS",
-                    "Standard_GRS",
-                    "Standard_RAGRS",
-                    "Standard_ZRS",
-                    "Premium_LRS",
-                    "Premium_ZRS",
-                    "Standard_GZRS",
-                    "Standard_RAGZRS"
-                ]
-            },
-            "resourceTags": {
-            "type": "object",
-            "defaultValue": {
-                "Environment": "Dev",
-                "Project": "Tutorial"
-                }
+    "parameters": {
+        "storagePrefix": {
+            "type": "string",
+            "minLength": 3,
+            "maxLength": 11
+        },
+        "storageSKU": {
+            "type": "string",
+            "defaultValue": "Standard_LRS",
+            "allowedValues": [
+                "Standard_LRS",
+                "Standard_GRS",
+                "Standard_RAGRS",
+                "Standard_ZRS",
+                "Premium_LRS",
+                "Premium_ZRS",
+                "Standard_GZRS",
+                "Standard_RAGZRS"
+            ]
+        },
+        "resourceTags": {
+        "type": "object",
+        "defaultValue": {
+            "Environment": "Dev",
+            "Project": "Tutorial"
             }
-       },
+        }
+    },
     ```
 
 1. Use this parameter to tag your Storage Account resource. Change the ```tags:``` attribute in the resource definition.

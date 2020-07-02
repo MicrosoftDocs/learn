@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Azure Resource Manager template functions get their values during what precess?"
+  - content: "Azure Resource Manager template functions get their values during what process?"
     choices:
     - content: "Parsing the template"
       isCorrect: false
