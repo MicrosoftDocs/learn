@@ -12,7 +12,7 @@ By the end of this module, you'll understand the potential hurdles to migrating 
 
 By the end of this module, you'll be able to:
 
-- Identify the kinds of issues that you might face when migrating an application hosted on IIS to Azure App Service.
+- Identify the kinds of problems that you might face when migrating an application hosted on IIS to Azure App Service.
 - Assess the migration readiness of an on-premises web application with the Azure App Service Migration Assistant.
 - Use the Migration Assistant to migrate an on-premises web application to Azure App Service.
 
