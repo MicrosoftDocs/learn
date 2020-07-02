@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-files.7-exercise-creating-files-and-directories
+uid: learn.azure.nodejs-files.7-exercise-create-files-directories
 title: Exercise - Creating files and directories
 metadata:
   title: Exercise - Creating files and directories
@@ -15,4 +15,4 @@ azureSandbox: true
 # -- End sandbox --
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-exercise-creating-files-and-directories.md)]
+  [!include[](includes/7-exercise-create-files-directories.md)]

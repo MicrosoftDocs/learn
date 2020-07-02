@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.nodejs-files.2-working-with-the-file-system
+uid: learn.azure.nodejs-files.2-file-system
 title: Work with the file system
 metadata:
   title: Work with the file system
@@ -11,7 +11,7 @@ metadata:
   ms.prod: vs
 durationInMinutes: 6
 content: |
-  [!include[](includes/2-working-with-the-file-system.md)]
+  [!include[](includes/2-file-system.md)]
 quiz:
   title: Check your knowledge
   questions:
