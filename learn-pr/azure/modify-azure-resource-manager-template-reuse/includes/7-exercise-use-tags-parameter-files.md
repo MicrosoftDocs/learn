@@ -1,4 +1,4 @@
-Here, you add tags to help organize and track your Microsoft Azure resources, and use an Azure Resource Manager template parameter file to allow for different parameter configurations per deployment.
+Here, you add tags to help organize and track your Microsoft Azure resources, and use an Azure Resource Manager template (ARM template) parameter file to allow for different parameter configurations per deployment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -18,7 +18,7 @@ Here, you create a parameter to use as a resource tag in your template.
     }
 ```
 
-1. Change *parameter1* to **resourceTags** and change the value of ```"type":``` to be **object**.
+1. Change *parameter1* to **resourceTags** and change the value of ```"type":``` to be **object**. Recall that parameters can be string, secureString, int, bool, object, secureObject, and array data types. A link to example syntax for these parameter types is in the summary of this module.
 1. Add an attribute called **defaultValue:** and set the value to be **{"Environment": "Dev", "Project": "Tutorial"}**.
 1. The parameter block should look like this:
 
@@ -65,9 +65,9 @@ Here, you create a parameter to use as a resource tag in your template.
 
 1. Save the file.
 
-## Deploy the template with updated tags
+## Deploy the ARM template with updated tags
 
-1. Deploy the updated template to Azure. Be sure to use the same *storagePrefix* you used before.
+1. Deploy the updated ARM template to Azure. Be sure to use the same *storagePrefix* you used before.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -90,7 +90,7 @@ Here, you create a parameter to use as a resource tag in your template.
 Currently, there are three parameters to fill in each time you deploy this template. Each user of the template can create a file to hold their parameter values. Here, you create a parameter file to use with your template.
 
 1. In Visual Studio Code, create another file and call it **azuredeploy.parameters.dev.json**.
-1. In this file, you put the values for the template parameters that you would like to have input into the template for the development environment. Change a tag value, for example *projectName* to **Learn**, to see that the deployment made a change.
+1. In this file, you put the values for the template parameters that you would like to have input into the template for the *development* environment. Change a tag value, for example *projectName* to **Learn**, to see that the deployment made a change.
 
     ```json
     {
@@ -118,7 +118,7 @@ Currently, there are three parameters to fill in each time you deploy this templ
 
 ## Deploy with the parameter file
 
-Here, you deploy the template specifying what parameter file to use.
+Here, you deploy the ARM template specifying what parameter file to use.
 
 1. In the Visual Studio Code terminal, run the following Azure CLI commands.
 
@@ -137,3 +137,5 @@ Here, you deploy the template specifying what parameter file to use.
 1. Check Azure to see that the deployment was successful and that the tag value changed.
 
     :::image type="content" source="../media/7-new-tags.png" alt-text="Azure portal interface for the Storage Account showing tags of Environment:Dev and Project:Learn." border="true":::
+
+1. As a challenge, create a parameter file for the *Production* environment and change the parameter file path when you run the command to deploy to the *Production* environment.

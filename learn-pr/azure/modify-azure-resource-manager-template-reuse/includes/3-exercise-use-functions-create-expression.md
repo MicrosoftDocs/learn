@@ -1,10 +1,10 @@
-Here, you create an expression using Azure Resource Manager template functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in Azure Storage Account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
+Here, you create an expression using Azure Resource Manager template (ARM template) functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in Azure Storage Account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
-## Create the Resource Manager template file
+## Create the ARM template file
 
-In the previous module, you created a Resource Manager template that deployed a Storage Account. You added parameters and an output to this file. Here, you start with that file, however, the output has been taken out to reduce the overhead.
+In the previous module, you created an ARM template that deployed a Storage Account. You added parameters and an output to this file. Here, you start with that file, however, the output has been taken out to reduce the overhead.
 
 1. Open Visual Studio Code and create a file called **azuredeploy.json**. If you have this file from the previous module, you can use that file.
 
@@ -24,9 +24,9 @@ Instead of passing in the name of the Storage Account, you change the parameter 
 
     [!code-json[](code/function.json?highlight=28,32)]
 
-## Deploy the Resource Manager template to Azure
+## Deploy the ARM template to Azure
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
+To deploy this ARM template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
 
 ### Sign in to Azure
 
@@ -69,7 +69,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
     ```
 
-### Deploy the template to Azure
+### Deploy to Azure
 
 Deploy the template to Azure. You learned about the deployment commands in the previous module. Here, we are using the Azure CLI ```az deployment group create``` command.
 

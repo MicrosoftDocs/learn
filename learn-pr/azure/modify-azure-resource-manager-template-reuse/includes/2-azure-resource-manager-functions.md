@@ -1,10 +1,10 @@
-In the scenario, you want to make deploying your Azure Resource Manager template to different environments as seamless as possible. One of the areas of contention is coming up with a unique name for the Azure Storage Account.
+In the scenario, you want to make deploying your Azure Resource Manager template (ARM template) to different environments as seamless as possible. One of the areas of contention is coming up with a unique name for the Azure Storage Account.
 
-You decide to create an expression using [Azure Resource Manager template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) to solve this problem.
+You decide to create an expression using [ARM template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) to solve this problem.
 
-## What are Resource Manager template functions
+## What are ARM template functions
 
-Functions add flexibility to your template by dynamically getting values during deployment.
+ARM template functions add flexibility to your ARM template by dynamically getting values during deployment.
 
 To understand functions, you first need to understand expressions. Expressions are values that get evaluated when the template is deployed. They start and end with square brackets, [ and ], and can return a string, integer, boolean, array, or object.
 
@@ -19,9 +19,9 @@ You have already worked with expressions in your Resource Manager template in th
 },
 ```
 
-The expression is the value of the ```defaultValue:``` attribute. Notice that this expression holds the *template function* ```resourceGroup()```. This function returns information on the resource group that this template is deploying to. The ```.location``` retrieves one property from the object returned by that function. Functions allow you to construct values you need dynamically.
+The *expression* is the value of the ```defaultValue:``` attribute. Notice that this expression holds the *ARM template function* ```resourceGroup()```. This function returns information on the resource group that this template is deploying to. The ```.location``` retrieves one property from the object returned by that function. Functions allow you to construct values you need dynamically.
 
-## How do I work with Resource Manager template functions
+## How do I work with ARM template functions
 
 There are a few rules when working with functions:
 
@@ -60,7 +60,7 @@ To set a property to null, you can use ```null``` or ```[json('null')]```. The j
 "objectValue": "[json('null')]"
 ```
 
-Resource Manager provides several [template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups of different types of functions:
+Resource Manager provides several [ARM template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true) for you. The functions are listed in groups of different types of functions:
 
 - *Array functions* for working with arrays. For example, ```first``` and ```last```.
 - *Comparison functions* for making comparisons in your templates. For example, ```equals``` and ```greater```.

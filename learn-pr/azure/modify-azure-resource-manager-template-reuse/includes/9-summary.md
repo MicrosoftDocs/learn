@@ -22,3 +22,4 @@ Here are some resources to explore this topic further.
 - [User-defined functions in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-user-defined-functions?azure-portal=true)
 - [Variables in Azure Resource Manager template](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-variables?azure-portal=true)
 - [Syntax and expressions in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-expressions?azure-portal=true)
+- [Parameter type formats](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files#parameter-type-formats?azure-portal=true)
