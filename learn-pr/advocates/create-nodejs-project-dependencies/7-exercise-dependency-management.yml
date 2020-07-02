@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.node-intro.7-exercise-dependency-management
+uid: learn.azure.create-nodejs-project-dependencies.7-exercise-dependency-management
 title: Exercise - Manage dependency updates in your Node.js project
 metadata:
   title: Exercise - Manage dependency updates in your Node.js project
