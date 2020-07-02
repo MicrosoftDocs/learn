@@ -11,5 +11,4 @@ metadata:
 title: Opportunities in Azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-cloud-opportunities
-  .md)]
+  [!include[](includes/5-cloud-opportunities.md)]
