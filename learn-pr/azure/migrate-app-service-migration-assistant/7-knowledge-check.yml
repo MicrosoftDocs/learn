@@ -39,7 +39,7 @@ quiz:
     - content: Creates a virtual machine running a copy of your SQL database
       isCorrect: false
       explanation: The Migration Assistant does not create or use virtual machines as part of the migration process, and does not migrate database data.
-  - content: Which of the following is a task you might need to perform yourself after using the Migration Assistant to migrate an application?
+  - content: Which of the following tasks might you need to perform yourself after using the Migration Assistant to migrate an application?
     choices:
     - content: Set up a custom domain name
       isCorrect: true

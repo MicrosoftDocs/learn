@@ -49,7 +49,7 @@ The Migration Assistant looks for specific features of a web application to ensu
 | Configuration error | The Migration Assistant ensures that your on-premises IIS instance is configured correctly and does not return an error when scanned. This readiness check ensures that there are no underlying problems with the web app before migration. |
 | Virtual directories | Azure App Service stores all files in a fixed directory structure. The Migration Assistant will move files into the appropriate subdirectories. But it can't migrate applications with virtual directories that are backed by UNC shares. |
 
-This information from this table was summarized from the [Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks).
+The information in this table was summarized from the [Azure App Service Migration Assistant wiki](https://github.com/Azure/App-Service-Migration-Assistant/wiki/Readiness-Checks).
 
 
 ### What if the assessment finds a problem?
