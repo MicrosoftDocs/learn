@@ -1,5 +1,7 @@
 Over the course of the learning path, you've learn a lot about Azure SQL with regards to security, performance, and availability. There are a few things that didn't quite fit in a particular module, but that you should be aware of as you start developing in Azure SQL.
 
+TODO - Bob can you help me fill this in?
+
 ## Job Management
 - SQL Agent in Managed Instance
 - Elastic Jobs for Azure SQL Database

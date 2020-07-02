@@ -12,3 +12,102 @@ title: Scenario 1 - Global CDN System
 durationInMinutes: 10
 content: |
   [!include[](includes/2-scenario-1.md)]
+quiz:
+    title: Selecting a deployment option
+    questions:
+    - content: "Which Azure SQL deployment option potentially offers the best fit for this scenario?"
+      choices:
+      - content: "SQL Server in an Azure virtual machine"
+        isCorrect: true
+        explanation: "While this would technically work, a PaaS offering may be a better fit."
+      - content: "Azure SQL Managed Instance"
+        isCorrect: false
+        explanation: "Since it appears that the customer is using CLR, which is an instance-scoped feature, Azure SQL Managed Instance will allow them to move to a PaaS offering without having to rewrite the CLR applications."
+      - content: "Azure SQL Database - single database"
+        isCorrect: false
+        explanation: "Hint: Consider their need for CLR"
+      - content: "Azure SQL Database - elastic pool"
+        isCorrect: false
+        explanation: "Hint: Consider their need for CLR"
+    - content: "How will they scale over multiple regions with multiple queries happening at the same time, while isolating read workloads from write workloads?"
+      choices:
+      - content: "Select General purpose service tier and deploy auto-failover groups"
+        isCorrect: false
+        explanation: "This won't address their need to isolate read and write workloads."
+      - content: "Select General purpose service tier and deploy geo-replication"
+        isCorrect: false
+        explanation: "This won't address their need to isolate read and write workloads."
+      - content: "Select Business critical service tier and deploy auto-failover groups"
+        isCorrect: true
+        explanation: "The Business critical tier will enable them to get a readable secondary, and auto-failover groups can help them scale over two regions."
+      - content: "Select Business critical service tier and deploy geo-replication"
+        isCorrect: false
+        explanation: "Geo-replication isn't currently available in Azure SQL Managed Instance"
+    - content: "Which authentication method would you recommend for the application on an Azure VM?"
+      choices:
+      - content: "Azure AD authentication: integrated authentication"
+        isCorrect: false
+        explanation: "Is there a password-less option available for Azure resources?"
+      - content: "Azure AD authentication: client ID/certificate"
+        isCorrect: false
+        explanation: "Is there a password-less option available for Azure resources?"
+      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)"
+        isCorrect: false
+        explanation: "Is there a password-less option available for Azure resources?"
+      - content: "Azure AD authentication: managed identity"
+        isCorrect: true
+        explanation: "Managed identities for Azure resources are, in general, the recommended form of password-less authentication for applications running on Azure virtual machines."
+      - content: "SQL authentication: username and password"
+        isCorrect: false
+        explanation: "Consider Azure AD."
+    - content: "Which authentication method would you recommend for the application on a non-Azure machine?"
+      choices:
+      - content: "Azure AD authentication: integrated authentication"
+        isCorrect: true
+        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client id and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
+      - content: "Azure AD authentication: client ID/certificate"
+        isCorrect: true
+        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client id and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
+      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)"
+        isCorrect: false
+        explanation: "Not the best option for an application."
+      - content: "Azure AD authentication: managed identity"
+        isCorrect: false
+        explanation: "Not for an application outside of Azure."
+      - content: "SQL authentication: username and password"
+        isCorrect: false
+        explanation: "Consider Azure AD."
+    - content: "Which authentication method would you recommend for SQL admin tools (SSMS, PowerShell) on a non-Azure machine?"
+      choices:
+      - content: "Azure AD authentication: integrated authentication"
+        isCorrect: true
+        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
+      - content: "Azure AD authentication: client ID/certificate"
+        isCorrect: false
+        explanation: "Is there a password-less option?"
+      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)"
+        isCorrect: true
+        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
+      - content: "Azure AD authentication: managed identity"
+        isCorrect: false
+        explanation: "Available only for Azure resources."
+      - content: "SQL authentication: username and password"
+        isCorrect: false
+        explanation: "Consider Azure AD."
+    - content: "Which authentication method would you recommend for the application on legacy application where you can't change the driver/connection string on a non-Azure machine?"
+      choices:
+      - content: "Azure AD authentication: integrated authentication"
+        isCorrect: false
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+      - content: "Azure AD authentication: client ID/certificate"
+        isCorrect: false
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+      - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)"
+        isCorrect: false
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+      - content: "Azure AD authentication: managed identity"
+        isCorrect: false
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+      - content: "SQL authentication: username and password"
+        isCorrect: true
+        explanation: "No option exists today for eliminating passwords for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
