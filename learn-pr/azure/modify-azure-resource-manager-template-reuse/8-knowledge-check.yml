@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Azure Resource Manager template functions get their values during what process?"
+  - content: "You can track costs by adding what to a resource?"
     choices:
-    - content: "Parsing the template"
+    - content: "Api Version"
       isCorrect: false
-      explanation: "Functions add flexibility to your template by dynamically getting values during deployment."
-    - content: "Deploying the template"
+      explanation: "A resource tags value will be displayed in the overview page for that Azure resource and in cost reports."
+    - content: "Tags"
       isCorrect: true
-      explanation: "Functions add flexibility to your template by dynamically getting values during deployment."
-    - content: "From the resource after deployment"
+      explanation: "A resource tags value will be displayed in the overview page for that Azure resource and in cost reports."
+    - content: "A variable"
       isCorrect: false
-      explanation: "Functions add flexibility to your template by dynamically getting values during deployment."
+      explanation: "A resource tags value will be displayed in the overview page for that Azure resource and in cost reports."
   - content: "A template expression always starts and ends with what characters?"
     choices:
     - content: "[]"
@@ -37,14 +37,20 @@ quiz:
     - content: "()"
       isCorrect: false
       explanation: "A template expression always starts and ends with square brackets []."
-  - content: "Azure Resource Manager template variables are defined in what section of the template?" 
+  - content: "Template expressions can be used what section or sections of the template?" 
     choices:
     - content: "The ```variables:{}``` section"
-      isCorrect: true
-      explanation: "Template variables are defined in the variables: {} section of the template."
+      isCorrect: false
+      explanation: "Template expressions can be used in any of the sections of an ARM template."
     - content: "The ```parameters:[]``` section"
       isCorrect: false
-      explanation: "Template variables are defined in the variables: {} section of the template."
-    - content: "Anywhere you need to declare a variable"
+      explanation: "Template expressions can be used in any of the sections of an ARM template."
+    - content: The ```resources:[]``` section"
       isCorrect: false
-      explanation: "Template variables are defined in the variables: {} section of the template."
+      explanation: "Template expressions can be used in any of the sections of an ARM template."
+    - content: The ```outputs:[]``` section"
+      isCorrect: false
+      explanation: "Template expressions can be used in any of the sections of an ARM template."
+    - content: All of the above"
+      isCorrect: true
+      explanation: "Template expressions can be used in any of the sections of an ARM template."
