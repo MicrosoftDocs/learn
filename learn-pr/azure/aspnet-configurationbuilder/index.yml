@@ -23,7 +23,6 @@ levels:
 - intermediate
 roles:
 - developer
-- security-engineer
 products:
 - azure
 - aspnet
