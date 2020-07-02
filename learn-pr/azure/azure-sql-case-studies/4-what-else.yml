@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-case-studies.4-what-else
+metadata:
+  title: What else should I know
+  description: What else should I know
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What else should I know
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-what-else.md)]

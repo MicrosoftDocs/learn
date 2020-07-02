@@ -1,0 +1,23 @@
+Congratulations, you have completed the final module in the Azure SQL fundamentals learning path. You've taken your SQL Server expertise, and, with some dedication, worked through translating those skills to Azure SQL. Hopefully, your eyes are also opened to the possibilities and benefits associated with moving to Azure SQL and the broader Azure Ecosystem.
+
+## Learn more
+
+As always, there are a few ways you can continue your learning:
+
+- Follow along with the accompanying video series, [Azure SQL for beginners](aka.ms/azuresql4beginners)
+- Go deeper with more [code samples on GitHub](aka.ms/sqlworkshops)
+- Build more with an [Azure free trial account](https://aka.ms/c9-azurefree/?WT.mc_id=dataexposed-c9-niner)
+- Connect with the Azure SQL and SQL Server product group to learn about the latest innovations on their show, [Data Exposed](aka.ms/dataexposedyt), and on Twitter, [@AzureSQL](https://twitter.com/AzureSQL)
+
+### Building solutions with Azure SQL
+
+In this module, you considered several business scenarios and how to architect a solution. Below are some resources that may be useful as you go through the process with your workloads.
+
+- [How to Write a Problem Statement - Article on writing effective problem statements](http://www.ceptara.com/blog/how-to-write-problem-statement)
+- [Decision Matrix Analysis - Article on creating a Decision Matrix](https://www.mindtools.com/pages/article/newTED_03.htm)
+- [Azure Pricing Calculator - Create a cost analysis of your solution](https://azure.microsoft.com/en-us/pricing/calculator/)
+- [Azure Data Architecture Guide - This guide presents a structured approach for designing data-centric solutions on Microsoft Azure. It is based on proven practices derived from customer engagements](https://docs.microsoft.com/en-us/azure/architecture/data-guide/)
+- [Azure Reference Architectures - Recommended practices, along with considerations for scalability, availability, manageability, and security](https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/)
+- [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/en-us/azure/architecture/cloud-adoption/)
+- [Microsoft Azure Trust Center - Full reference site for Azure security, privacy and compliance](https://azure.microsoft.com/en-us/overview/trusted-cloud/)
+- [Azure SQL Security Playbook - Best practices for securing your Azure SQL deployment](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-security-best-practice)

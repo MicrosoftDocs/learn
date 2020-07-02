@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-case-studies.2-scenario-1
+metadata:
+  title: Scenario 1 - Global CDN System
+  description: Scenario 1 - Global CDN System
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Scenario 1 - Global CDN System
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-scenario-1.md)]

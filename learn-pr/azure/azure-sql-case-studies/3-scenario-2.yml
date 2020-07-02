@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-case-studies.3-scenario-2
+metadata:
+  title: Scenario 2 - Mission Critical App
+  description: Scenario 2 - Mission Critical App
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Scenario 2 - Mission Critical App
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-scenario-2.md)]

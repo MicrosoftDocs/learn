@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-case-studies.5-cloud-opportunities
+metadata:
+  title: Opportunities in Azure
+  description: Opportunities in Azure
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Opportunities in Azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-cloud-opportunities
+  .md)]
