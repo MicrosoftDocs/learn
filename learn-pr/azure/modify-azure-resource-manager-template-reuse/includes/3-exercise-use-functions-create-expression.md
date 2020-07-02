@@ -18,7 +18,9 @@ In the previous module, you created an ARM template that deployed a Storage Acco
 
 Instead of passing in the name of the Storage Account, you change the parameter to take a prefix for the Storage Account name. This parameter will be passed to the ```concat``` function in your expression.
 
-1. In the parameters section, change ```storageName``` to **storagePrefix** and set the ```maxLength:``` value to **11**.
+1. In the parameters section, change ```storageName``` to **storagePrefix**. and set the ```maxLength:``` value to **11**.
+
+1. Change value of the ```maxLength:``` attribute for the *storagePrefix* parameter to 11. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
 
 1. Create the expression to set the unique Storage Account name. In the resources section, change the value of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. This is the same expression you learned about in the previous unit. The file should now look like this.
 
