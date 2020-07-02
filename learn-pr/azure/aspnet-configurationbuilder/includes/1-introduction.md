@@ -1,0 +1,14 @@
+In this module, you'll take an existing ASP.NET web application and configure it to retrieve sensitive information, such as connection strings, from Azure Key Vault. Using Azure Key Vault helps to protect security information that could otherwise be used by a malicious application to attack your system.
+
+The scenario used by this module revolves around an existing .NET Framework web application that runs on-premises. You'll start by migrating this application to Azure App Service. Next, you'll store the secrets required by this application to connect to resources such as a database in Azure Key Vault. Finally, you'll configure the application using a *ConfigurationBuilder* object that retrieves information from Azure Key Vault. 
+
+## Learning objectives
+
+By the end of this module, you will be able to use ConfigurationBuilder to retrieve access keys from Azure Key Vault at runtime.
+
+## Prerequisites
+
+- Some C# programming experience
+- Familiarity with ASP.NET development
+- A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
+- Git for Windows installed on your desktop 
