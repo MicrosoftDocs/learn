@@ -2162,7 +2162,7 @@
     },
     {
       "source_path": "learn-pr/advocates/authoring-arm-templates/6-add-parameters-templates.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
       "redirect_document_id": false
     },
     {
@@ -2192,7 +2192,7 @@
     },
     {
       "source_path": "learn-pr/advocates/authoring-arm-templates/12-add-outputs.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
       "redirect_document_id": false
     },
     {
