@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.govern-monitor-secure-resources-azure-lighthouse
+metadata:
+  title: Use Azure Lighthouse to govern, monitor, and secure customer resources
+  description: Learn about how Azure Lighthouse can help you monitor, secure, and govern your customer resources.
+  ms.date: 04/30/2020
+  author: iankensey
+  ms.author: v-geo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Use Azure Lighthouse to govern, monitor, and secure customer resources
+summary: Azure Lighthouse can help you monitor, secure, and govern your customer resources.
+abstract: | 
+  In this module, you will:
+  - Learn how to do governance at scale
+  - Learn how to use centralized monitoring in a scalable way
+  - Learn how to do security at scale
+  - Learn how to view and manage service providers (as a customer)
+  - Learn how to view service provider activity (as a customer)
+  - Learn how to manage hybrid resources at scale 
+  - Learn how to automate with Devops with Lighthouse
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.govern-monitor-secure-resources-azure-lighthouse.1-introduction
+- learn.govern-monitor-secure-resources-azure-lighthouse.2-view-manage-service-provider-activities
+- learn.govern-monitor-secure-resources-azure-lighthouse.3-use-centralized-monitor-scalable-way
+- learn.govern-monitor-secure-resources-azure-lighthouse.4-governance-scale-manage-customer-tenants
+- learn.govern-monitor-secure-resources-azure-lighthouse.5-secure-customer-resources-scale
+- learn.govern-monitor-secure-resources-azure-lighthouse.6-manage-hybrid-scale
+- learn.govern-monitor-secure-resources-azure-lighthouse.7-automate-devops-azure-lighthouse
+- learn.govern-monitor-secure-resources-azure-lighthouse.8-summary
+badge:
+  uid: learn.govern-monitor-secure-resources-azure-lighthouse.badge
+  

@@ -3,10 +3,12 @@ You’ve seen how Relecloud can  monitor its customer tenants in a centralized a
 ## Deploy a policy for multiple tenants
 
 You can deploy policies across delegated subscriptions in multiple customer tenants. You might want to a single policy that ensures:
--	All storage accounts in customer subscriptions only use HTTPS
--	Storage accounts that don’t use HTTPS can’t be created
--	Any storage accounts that aren’t set to HTTPS are marked non-compliant
-You define the policy by creating a policy definition and a policy assignment.  You define both of these in an Azure Resource Manager template.  The template enables you to deploy the policy at scale. You can use tools like Azure PowerShell and Azure CLI to deploy the template across all customer subscriptions. You are able to use the following snippet of Azure PowerShell code  to iterate through all customer subscriptions and deploy the template to each one:
+
+- All storage accounts in customer subscriptions only use HTTPS
+- Storage accounts that don’t use HTTPS can’t be created
+- Any storage accounts that aren’t set to HTTPS are marked non-compliant
+
+You define the policy by creating a policy definition and a policy assignment.  You define both of these in an Azure Resource Manager template.  The template enables you to deploy the policy at scale. You can use tools like Azure PowerShell and Azure CLI to deploy the template across all customer subscriptions. You're able to use the following snippet of Azure PowerShell code  to iterate through all customer subscriptions and deploy the template to each one:
 
 ```powershell
 foreach ($ManagedSub in $ManagedSubscriptions)
@@ -19,7 +21,8 @@ foreach ($ManagedSub in $ManagedSubscriptions)
                      -AsJob
 }
 ```
-Once you have deployed your template, you’ll confirm that the policy was successfully applied across tenants. To do this, you test the policy out by trying to create a storage account that has the **EnableHttpsTrafficOnly** setting set to **False** in one of the customer subscriptions, like Lamna Healtchare’s subscription. If the policy has been applied successfully, you will be unable to create the storage account.
+
+Once you've deployed your template, you’ll confirm that the policy was successfully applied across tenants. To do this, you test the policy out by trying to create a storage account that has the **EnableHttpsTrafficOnly** setting set to **False** in one of the customer subscriptions, like Lamna Healthcare’s subscription. If the policy has been applied successfully, you'll be unable to create the storage account.
 
 ## Deploy a policy to remediate non-compliance
 
@@ -52,9 +55,10 @@ You want to make sure that all customer resources are compliant, and fix non-com
 
 ### Define a user to assign roles to managed identities
 
-You will need to create a managed identity in a customer like Lamna Healthcare’s tenant, to deploy policies with remediation to them.  To onboard new customers with Azure Lighthouse, you will have defined users and permissions that you and other Relecloud users will use to manage customer’s resources and subscriptions. 
+You'll need to create a managed identity in a customer like Lamna Healthcare’s tenant, to deploy policies with remediation to them.  To onboard new customers with Azure Lighthouse, you'll have defined users and permissions that you and other Relecloud users will use to manage customer’s resources and subscriptions.
 
-To enable any of your users to create a managed identity in any customer’s tenant, the user’s **roleDefinitionId** needs to be set to **User Access Administrator** in the Azure Resource Manager template used for onboarding. The user won’t have the permissions associated with the User Access Administrator role, but it can assign certain built-in roles to managed identities once the customer has been onboarded. 
+To enable any of your users to create a managed identity in any customer’s tenant, the user’s **roleDefinitionId** needs to be set to **User Access Administrator** in the Azure Resource Manager template used for onboarding. The user won’t have the permissions associated with the User Access Administrator role, but it can assign certain built-in roles to managed identities once the customer has been onboarded.
+
 You include these roles in the **delegatedRoleDefinitionIds** property for this user in the template. You would define this user in the template in the following way:
 
 ```javascript
@@ -77,10 +81,9 @@ You include these roles in the **delegatedRoleDefinitionIds** property for this 
 | *roleDefinitionId*| The   role ID for User Access Administrator|
 | *delegatedRoleDefinitionIds* | The IDs   for roles that this user can assign to managed identities the customer’s   tenant. In this case Log Analytics Contributor and Contributor. |
 
-
 ### Deploy a policy with remediation
 
-You’ve defined a user with the right permissions. You’re now able to deploy policies with remediation. In your case, you want to enforce monitoring for Azure Key Vault in Lamna Healthcare’s tenant.  The defined user can be used to deploy the resource manager template with the appropriate policy definition and policy assignment. You also include a role assignment resource in your resource manager template that has a **delegatedManagedIdentityResourceId** property. Role assignments are how access to resources is controlled in Azure:
+You’ve defined a user with the right permissions. You’re now able to deploy policies with remediation. In your case, you want to enforce monitoring for Azure Key Vault in Lamna Healthcare’s tenant.  The defined user can be used to deploy the Resource Manager template with the appropriate policy definition and policy assignment. You also include a role assignment resource in your Resource Manager template that has a **delegatedManagedIdentityResourceId** property. Role assignments are how access to resources is controlled in Azure:
 
 ```powershell
 "type": "Microsoft.Authorization/roleAssignments",

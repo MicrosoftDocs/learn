@@ -2,19 +2,20 @@ Relecloud wants to ensure that resources and data for customers like Lamna Healt
 
 ## Coupling Azure Sentinel with Azure Lighthouse
 
-With Azure Lighthouse, you are able to build a sophisticated Security-as-a-service offering using Azure Sentinel. Azure Sentinel provides features such as threat intelligence, alert detection, security analytics, and more. You couple Azure Lighthouse with Azure Sentinel to enable you to manage multiple Azure Sentinel customer workspaces simultaneously.
+With Azure Lighthouse, you are able to build a sophisticated Security-as-a-service offering using Azure Sentinel. Azure Sentinel provides features such as threat intelligence, alert detection, security analytics, and more. You couple Azure Lighthouses with Azure Sentinel to enable you to manage multiple Azure Sentinel customer workspaces simultaneously.
 
-You’re able then to run queries through multiple customer workspaces, or provide insights by creating workbooks that you can use to monitor and visualize data across customer data sources. Your playbooks, queries, and other intellectual property stay in your Azure tenant, but can perform actions on your customers’ tenants. 
+You’re able then to run queries through multiple customer workspaces, or provide insights by creating workbooks that you can use to monitor and visualize data across customer data sources. Your playbooks, queries, and other intellectual property stay in your Azure tenant, but can perform actions on your customers’ tenants.
 
 ### Centralized deployment model
 
 Because you operate Azure Sentinel from a central location to manage all your customer’s Azure Sentinel workspaces, you’re able to take advantage of the following benefits:
--	Keep customer data isolated from other customers
--	Ensure that customers data is stored within their tenant and it stays within their geographical boundaries
--	Improved network latency when performing actions on customer workspaces
--	Related costs are never charged to your tenant, but go directly to the customer you’re providing services to
--	Integration with many customer data sources including Microsoft Threat Protection alerts, Azure Active Directory Activity logs, Microsoft 365 logs, and more
--	Flexibility to accommodate the addition or removal of new customers or their subsidiaries
+
+- Keep customer data isolated from other customers
+- Ensure that customers data is stored within their tenant and it stays within their geographical boundaries
+- Improved network latency when performing actions on customer workspaces
+- Related costs are never charged to your tenant, but go directly to the customer you’re providing services to
+- Integration with many customer data sources including Microsoft Threat Protection alerts, Azure Active Directory Activity logs, Microsoft 365 logs, and more
+- Flexibility to accommodate the addition or removal of new customers or their subsidiaries
 
 ### Manage Azure Sentinel using role-based access control (RBAC)
 
@@ -26,11 +27,11 @@ Because Azure Lighthouse enables you to onboard your customers through Azure del
 | **Azure Sentinel Responder**| Can perform all the actions that Azure Sentinel Reader can, but can   also manage incidents. |
 | **Azure Sentinel Contributor** | Can perform all the actions that Azure Sentinel   Responder can but can also create and edit dashboards, and analytic rules |
 
-After customers have been onboarded, your users sign in to your tenant to directly access customers’ workspaces based on the roles that have been assigned to them.
+After customers have been onboarded, your user's sign in to your tenant to directly access customers’ workspaces based on the roles that have been assigned to them.
 
 ### Manage multiple workspaces
 
-As a managing user, you open Azure Sentinel in the Azure portal to view a list of all the customer workspaces which you’ve been given access to.  You can decide to look at a single workspace, or expand your focus to multiple workspaces. Alternatively, you can choose to investigate any incidents that have been detected across all your customers’ workspaces:
+As a managing user, you open Azure Sentinel in the Azure portal to view a list of all the customer workspaces, which you’ve been given access to.  You can decide to look at a single workspace, or expand your focus to multiple workspaces. Alternatively, you can choose to investigate any incidents that have been detected across all your customers’ workspaces:
 
 :::image type="content" source="../media/5-incidents-multiple-customers.png" alt-text="Incidents across multiple workspaces":::
 
