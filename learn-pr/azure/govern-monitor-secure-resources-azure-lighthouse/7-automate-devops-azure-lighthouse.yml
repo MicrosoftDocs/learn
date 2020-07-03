@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.govern-monitor-secure-resources-azure-lighthouse.7-automate-devops-azure-lighthouse
+metadata:
+  title: Automate with DevOps and Azure Lighthouse
+  description: Learn how to automate with DevOps and Azure Lighthouse
+  ms.date: 01/08/2020
+  author: iankensey
+  ms.author: v-geo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate with DevOps and Azure Lighthouse
+durationInMinutes: 12
+content: |
+  [!include[](includes/7-automate-devops-azure-lighthouse.md)]
