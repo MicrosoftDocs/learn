@@ -35,7 +35,7 @@ quiz:
         isCorrect: false
         explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
       - content: "Auto-failover groups"
-        isCorrect: false
+        isCorrect: true
         explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
     - content: "What role does co-location play in your solution?"
       choices:
@@ -88,5 +88,5 @@ quiz:
           isCorrect: false
           explanation: "Almost, but the DBA group must have Azure AD admin rights on the logical server."
         - content: "None of the above" 
-          isCorrect: false
+          isCorrect: true
           explanation: "The answer is really a combination of the above plus a little more. Create an Azure AD group SQL DBA for the DBAs on the respective instance. Then, assign the group to the Azure RBAC role SQL Server Contributor. Finally, set the group to be the Azure AD admin on the logical server."
