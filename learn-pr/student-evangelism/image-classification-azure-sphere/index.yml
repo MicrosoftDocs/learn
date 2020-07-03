@@ -29,7 +29,7 @@ prerequisites: |
     - Ability to use Git/Github
 iconUrl: /learn/achievements/student-evangelism/image-classification-using-azure-sphere.svg
 badge:
-  uid: learn.oxford.implement-cicd-iot-edge.badge
+  uid: learn.oxford.image-classification-azure-sphere.badge
 levels:
 - intermediate
 roles:
