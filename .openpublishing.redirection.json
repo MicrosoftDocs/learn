@@ -2129,6 +2129,81 @@
       "source_path": "learn-pr/ai-school/introduction-to-regression/8-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/train-evaluate-regression-models",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/2-create-first-template.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/3-create-first-template-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/4-add-resources-templates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/5-add-resources-templates-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/6-add-parameters-templates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/7-add-parameters-templates-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/8-template-functions.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/9-template-functions-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/10-add-variables-templates.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/11-add-variables-templates-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/12-add-outputs.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/13-add-outputs-exercise.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/advocates/authoring-arm-templates/14-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse",
+      "redirect_document_id": false
     }
   ]
 }
