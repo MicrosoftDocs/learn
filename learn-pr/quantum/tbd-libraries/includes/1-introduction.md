@@ -1,12 +1,14 @@
-INTRODUCTION
+INTRODUCTION 
+
+words words words
 
 ## Learning objectives
 
 In this module you'll:
 
-- A.
-- B.
-- C.
+- Learn about the additional domain-specific Q# libraries at your disposal
+- Use the quantum chemistry library to estimate the ground state energy of a molecular system
+- Discover the classical computing tools which allow you to seamlessly transform molecular models into a format that can be simulated on quantum computers.
 
 ## Prerequisites
 
