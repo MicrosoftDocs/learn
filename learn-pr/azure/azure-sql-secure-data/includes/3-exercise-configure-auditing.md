@@ -72,13 +72,13 @@ Write-Host $serverName
 
 Open SSMS and create a new connection to your logical server.  
 
-For server name, input the name of your Azure SQL Database logical server. You may need to refer to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) to get this, e.g. *aw-server`<unique ID>`.database.windows.net*.  
+For server name, input the name of your Azure SQL Database logical server. You may need to refer to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
 
 Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
 Check the **Remember password** box and select **Connect**.  
 
-> **Note**: Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
+> **Note**: Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
 
 ![Connect to SQL Database in SSMS](../media/connectazsql.png)  
 
@@ -108,7 +108,7 @@ Check the **Remember password** box and select **Connect**.
 
     ![Details for new workspace](../media/laws.png)  
 
-    This may take a few moments to validate and create. You should now see your Log Analytics account.  
+    This process may take a few moments to validate and create. You should now see your Log Analytics account.  
 
 3. Configure auditing with Azure Storage  
 
@@ -122,7 +122,7 @@ Check the **Remember password** box and select **Connect**.
 
     You also have options for the number of days you want to retain data. The default, **0**, means to retain data forever. You can change this to something else, if you want to cut back on the storage that may be generated and charged here. For this exercise, input **7**.  
 
-    Finally, you can make a decision of which storage access key to use. Note you can use this to switch between keys when it's time to rotate them. Select **Primary**.  
+    Finally, you can make a decision of which storage access key to use. Note you can use this pane to switch between keys when it's time to rotate them. Select **Primary**.  
 
     After you've configured your options, select **OK**.  
 
@@ -138,4 +138,4 @@ Check the **Remember password** box and select **Connect**.
 
     ![Auditing is OFF](../media/dbauditoff.png)  
 
-This is the end of this exercise. You can select **Overview** in the left hand menu to navigate back to the overview of your database. In a later exercise in this module, you'll dive deeper into auditing capabilities in Azure SQL and see how to analyze the audit logs to view all of the changes you've made throughout the module, as well as some other interesting use cases.  
+This is the end of this exercise. You can select **Overview** in the left-hand menu to navigate back to the overview of your database. In a later exercise in this module, you'll dive deeper into auditing capabilities in Azure SQL and see how to analyze the audit logs to view all of the changes you've made throughout the module, as well as some other interesting use cases.  

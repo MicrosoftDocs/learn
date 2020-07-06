@@ -6,7 +6,7 @@ In this exercise, you'll see how to create logins, users, and admins, as well as
 
 1. Grant other users access (SQL)  
 
-    Once you've configured your databases and gotten connected, your next step might be to add other users. Just as in SQL Server, you can add new logins and users.
+    Once you've configured your databases and gotten connected, your next step might be to add other users. As in SQL Server, you can add new logins and users.
 
     For most queries in Azure SQL Database, you must right-click on the **database** within your Azure SQL Database logical server. In SQL Server and Azure SQL managed instance, you can query at the server level and use `USE DatabaseName`, but in Azure SQL Database, you must query the database directly, the `USE` statement is not supported. There are a few exceptions to querying Azure SQL Database, and one is logins. You must connect to the **master** database to create and alter logins.  
 
@@ -46,7 +46,7 @@ In this exercise, you'll see how to create logins, users, and admins, as well as
 
     Now, select **Connect** > **Database Engine** and configure the main page so you are connecting to your Azure SQL Database logical server with Login `BobLovesTN` and Password `Tanehill1!`.  
 
-    **You must also set the database name**. You can do this by going to **Options** > **Connection Properties** and selecting **Reset All**. Then, one way to set it is in **Additional Connection Parameters**, where you can enter `Initial Catalog=AdventureWorks`. You have to do this manually, because BobLovesTN doesn't have access to scan the server to select a database.  
+    **You must also set the database name**. You can do this by going to **Options** > **Connection Properties** and selecting **Reset All**. Then, one way to set it is in **Additional Connection Parameters**, where you can enter `Initial Catalog=AdventureWorks`. You must do this manually, because BobLovesTN doesn't have access to scan the server to select a database.  
 
     Select **Connect** and confirm you're able to access the database.  
 

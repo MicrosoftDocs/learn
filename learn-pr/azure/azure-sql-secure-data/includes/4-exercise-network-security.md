@@ -2,7 +2,7 @@ In this exercise, you'll see how to review and manage your firewall rules using 
 
 ### Description
 
-During deployment of Azure SQL Database, the script run selected **Allow Azure services and resources access to this server** to **Yes**. By leaving this **Yes**, you're allowing any resource from any region or subscription the possibility to access your resource. If you can, switching it to **No** is the most secure configuration of the public endpoint, because it will block all connections/networks apart from ones you've added. In this exercise, you'll see how to view and edit your firewall rules. Setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). Some alternative methods for securing your network are provided in a demonstration video that follows the exercise.  
+During deployment of Azure SQL Database, the script used selected **Allow Azure services and resources access to this server** to **Yes**. By leaving this **Yes**, you're allowing any resource from any region or subscription the possibility to access your resource. If you can, switching it to **No** is the most secure configuration of the public endpoint, because it will block all connections/networks apart from ones you've added. In this exercise, you'll see how to view and edit your firewall rules. Setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). Some alternative methods for securing your network are provided in a demonstration video that follows the exercise.  
 
 #### Part 1: Managing firewall rules in the Azure portal
 
@@ -13,7 +13,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
     ![Navigate to firewalls and virtual networks](../media/fwvn.png)  
 
-    Switch **Allow Azure services and resources to access this serve**r to **No**. During deployment, you should have added your Client IP address already, but if one of the Rules do not match your Client IP displayed (see below), select **Add Client IP**.  
+    Switch **Allow Azure services and resources to access this server** to **No**. During deployment, you should have added your Client IP address already, but if one of the Rules does not match your Client IP displayed (see below), select **Add Client IP**.  
 
     ![Add your Client IP address](../media/clientip2.png)  
 
@@ -53,7 +53,7 @@ You can also use commands `az sql server firewall-rule` to create, delete, and v
 
 1. Review firewall rules
 
-    Now that you're set up, you can list your server's firewall settings with the following command, after filling in your resource group name (e.g. learn-2e3155n-fjj5302...) and server name (e.g. aw-server443651):  
+    Now that you're set up, you can list your server's firewall settings with the following command, after filling in your resource group name (for example, learn-2e3155n-fjj5302...) and server name (for example, aw-server443651):  
 
     ```powershell
     az sql server firewall-rule list -g <rgn>Sandbox resource group name</rgn> -s $logical_server
@@ -63,13 +63,13 @@ You can also use commands `az sql server firewall-rule` to create, delete, and v
 
     There are other commands available for creating, deleting, and updating rules, which you can explore [here](https://docs.microsoft.com/cli/azure/sql/server/firewall-rule?view=azure-cli-latest).  
 
-    Note that this method of setting the firewall rules (using the Azure portal or Azure Cloud Shell) grants your client IP address access to all of the databases that are in that logical server. After you've configured the server-level firewall rule, which you did above, you can optionally configure database-level firewall rules that apply to individual databases. This can only be done with T-SQL, using the command `EXECUTE sp_set_database_firewall_rule`. For more information, see the references in the summary of this module.  
+    This method of setting the firewall rules (using the Azure portal or Azure Cloud Shell) grants your client IP address access to all of the databases that are in that logical server. After you've configured the server-level firewall rule, which you did above, you can optionally configure database-level firewall rules that apply to individual databases. This can only be done with T-SQL, using the command `EXECUTE sp_set_database_firewall_rule`. For more information, see the references in the summary of this module.  
 
 ### Dive deeper
 
-You've now seen how to update firewall rules for specific IP addresses or ranges of IP addresses on the server or database level. If you were running in production, you may also need access from various virtual networks, resources (e.g. Azure Apps or Azure VMs). If you take an Azure VM as an example, they have dynamic IP addresses (they change). You can set up static IP addresses, but even this can be difficult to maintain using firewall rules. You can, alternatively, use virtual network (VNet) rules to manage access from specific subnet(s) that contain your VMs or other services. Alternatively, you could configure Private Endpoint, the most secure way to connect to an Azure SQL Database.
+You've now seen how to update firewall rules for specific IP addresses or ranges of IP addresses on the server or database level. If you were running in production, you may also need access from various virtual networks, resources (for example, Azure Apps or Azure VMs). If you take an Azure VM as an example, they have dynamic IP addresses (they change). You can set up static IP addresses, but even this can be difficult to maintain using firewall rules. You can, alternatively, use virtual network (VNet) rules to manage access from specific subnet(s) that contain your VMs or other services. Alternatively, you could configure Private Endpoint, the most secure way to connect to an Azure SQL Database.
 
-In the video that follows, you can see how to create, configure and compare all the various methods of connecting to Azure SQL Database: Allow access to Azure resources, Firewall rules, Virtual Network rules.
+In the video that follows, you can see how to create, configure, and compare all the various methods of connecting to Azure SQL Database: Allow access to Azure resources, Firewall rules, Virtual Network rules.
 
 TODO Embed Demo video
 

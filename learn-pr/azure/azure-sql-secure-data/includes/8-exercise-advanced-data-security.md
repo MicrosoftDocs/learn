@@ -30,7 +30,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     ![Save settings](../media/save.png)  
 
-    Setting these settings up will enable you to complete some of the other steps in this activity, so you'll see more of VA and ATP soon.  
+    Setting up these settings will enable you to complete some of the other steps in this activity, so you'll see more of VA and ATP soon.  
 
 3. Data Discovery & Classification  
 
@@ -42,9 +42,9 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     For this step, select the **Data Discovery & Classification** box. This wizard type of view is similar (but not exactly matching) to the Data Discovery & Classification tool that exists in SQL Server today through SSMS. Using the SSMS wizard is **supported** for Azure SQL Managed Instance but **not supported** for Azure SQL Database, but you can achieve similar functionality using the Azure portal (supported for both Azure SQL Database and Managed Instance).  
 
-    Note that T-SQL can be used across all deployment options to add/drop column classifications and to retrieve classifications.
+    T-SQL can be used across all deployment options to add/drop column classifications and to retrieve classifications.
 
-    Select the information bar that says **We have found XX columns with classification recommendations**.  
+    Select the information bar that says, **We have found XX columns with classification recommendations**.  
 
     ![Select classification recommendations](../media/recs.png)  
 
@@ -52,7 +52,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     ![Accept the recommendations](../media/ddcrecs.png)  
 
-    Then, select **Save** near the top left corner.
+    Then, select **Save** near the top-left corner.
 
     ![Select save](../media/save.png)  
 
@@ -62,7 +62,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 4. Vulnerability Assessment  
 
-    Select the **X** in the top right corner of DD&C to bring you back to the ADS dashboard. Next, you'll review the Vulnerability Assessment (VA) capabilities. Start by selecting the **Vulnerability Assessment** box.  
+    Select the **X** in the top-right corner of DD&C to bring you back to the ADS dashboard. Next, you'll review the Vulnerability Assessment (VA) capabilities. Start by selecting the **Vulnerability Assessment** box.  
 
     ![Return to the main ADS dashboard](../media/adsdashboard2.png)  
 
@@ -94,7 +94,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 5. Advanced Threat Protection overview  
 
-    Select the **X** in the top right corner of VA to get back to the ADS dashboard. Select the **Advanced Threat Protection** (ATP) box to drill in and review the results. ATP detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases.  
+    Select the **X** in the top-right corner of VA to get back to the ADS dashboard. Select the **Advanced Threat Protection** (ATP) box to drill in and review the results. ATP detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases.  
 
     ![Return to the ADS dashboard](../media/adsdashboard3.png)  
 
@@ -111,7 +111,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
     * Brute force
     * Anomalous client login
 
-    In this step you will see how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom written application not for standard tools like SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection we need to "set" the **Application Name** (which is a connection property for clients connecting to SQL Server or Azure SQL).
+    In this step, you will see how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom-written application not for standard tools like SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection we need to "set" the **Application Name** (which is a connection property for clients connecting to SQL Server or Azure SQL).
 
     To get the full experience of this step, you'll need access to the email address you provided for ATP alerts in Step 1 of this activity. If you need to update it, do so before proceeding.  
 

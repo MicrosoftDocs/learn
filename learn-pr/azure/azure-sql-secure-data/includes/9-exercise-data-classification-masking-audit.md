@@ -20,11 +20,11 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     ![Select Save](../media/save.png)  
 
-    You can confirm that this was successful by viewing the **Overview** tab and confirming that MiddleName is now present in the list of classified columns under the SalesLT schema. Select **X**.  
+    You can confirm the added classification was successful by viewing the **Overview** tab and confirming that MiddleName is now present in the list of classified columns under the SalesLT schema. Select **X**.  
 
 2. Apply Dynamic Data Masking over the Name columns  
 
-    Dynamic Data Masking (DDM) is something available in Azure SQL as well as in SQL Server. It limits data exposure by masking sensitive data to non-privileged users at SQL Server vs the application having to code those type of rules. Azure SQL will recommend things for you to mask, or you can add masks manually. You'll mask the FirstName, MiddleName, and LastName columns which you reviewed in the previous step.  
+    Dynamic Data Masking (DDM) is something available in Azure SQL as well as in SQL Server. It limits data exposure by masking sensitive data to non-privileged users at SQL Server vs the application having to code those types of rules. Azure SQL will recommend things for you to mask, or you can add masks manually. You'll mask the FirstName, MiddleName, and LastName columns which you reviewed in the previous step.  
 
     In the Azure portal, navigate to your Azure SQL Database. In the left-hand menu, under Security, select **Dynamic Data Masking** and then select **+ Add mask**.  
 
@@ -34,9 +34,9 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     ![Add FirstName mask](../media/addmask2.png)  
 
-    Repeat this for both **MiddleName** and **LastName** in that table.  
+    Repeat these steps for both **MiddleName** and **LastName** in that table.  
 
-    After, you should have three masking rules, similar to below.  
+    Now, you should have three masking rules, similar to below.  
 
     ![Review all masking rules](../media/addmask3.png)  
 
@@ -136,7 +136,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     ![Add from Azure Blob Storage](../media/fileauditconnect.png)  
 
-    Now sign into Azure with the account you are using for this workshop.  
+    Now sign into Azure with the account you are using for this module.  
 
     ![Sign in to Azure](../media/fileauditsignin.png)  
 
@@ -182,9 +182,9 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     Feel free to click around and understand what some of the options are.  
 
-    Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals.   
+    Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals.  
 
-    The default query is querying the category `SQLSecurityAuditEvents`, so while you might use this category now to view security related incidents, this tool can also be used for querying other Azure logs and categories in Azure Monitor. For this step, you can look for the statements where Bob tried to access sensitive information, and expand the details (click the **`>`**) to get the same information that you saw in SSMS.  
+    The default query is querying the category `SQLSecurityAuditEvents`, so while you might use this category now to view security-related incidents, this tool can also be used for querying other Azure logs and categories in Azure Monitor. For this step, you can look for the statements where Bob tried to access sensitive information, and expand the details (click the **`>`**) to get the same information that you saw in SSMS.  
 
     ![Log Analytics security query](../media/laview.png)  
 
@@ -194,7 +194,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
 8. Analyze audit logs and monitor security with the Log Analytics SQL Security dashboard  
 
-    In this step, you'll see how SQL Security has built a dashboard based on Log Analytics for you to monitor and audit the logs and other SQL activity. To get back to Audit records, select the **X** in the top right corner of the Log Analytics query window.  
+    In this step, you'll see how SQL Security has built a dashboard based on Log Analytics for you to monitor and audit the logs and other SQL activity. To get back to Audit records, select the **X** in the top-right corner of the Log Analytics query window.  
 
     Then, select **View dashboard**.  
 
@@ -202,7 +202,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     You should now see an overview dashboard. Drill in to **Azure SQL - Access to Sensitive Data**.  
 
-    Note that you may need to wait 3-5 minutes and select **Refresh** for items to show up here.  
+   You may need to wait 3-5 minutes and select **Refresh** for items to show up here.  
 
     ![Access to sensitive data dashboard view](../media/securitydb.png)  
 
@@ -215,7 +215,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     Review what's available here, and how you can audit usage with this tool. You can even click into each of these and see the related logs in Log Analytics.  
 
-    When you're done, select the **X** in the top right corner of the **Azure SQL - Access to Sensitive Data** tab.  
+    When you're done, select the **X** in the top-right corner of the **Azure SQL - Access to Sensitive Data** tab.  
 
     Back in the overview, select **Azure SQL - Security Insights**.  
 

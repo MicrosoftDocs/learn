@@ -31,7 +31,7 @@ For detailed information on contained database users (in SQL Server and Azure), 
 
 #### Data protection
 
-For more information regarding Azure SQL TDE with BYOK, [refer here](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql?view=sql-server-ver15). If you're interested in leveraging Azure Key Vault for BYOK, you can check out this tutorial which leverages PowerShell: [Always Encrypted: Protect sensitive data and store encryption keys in Azure Key Vault](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault?tabs=azure-powershell).
+For more information regarding Azure SQL TDE with BYOK, [refer here](https://docs.microsoft.com/azure/sql-database/transparent-data-encryption-byok-azure-sql?view=sql-server-ver15). If you're interested in leveraging Azure Key Vault for BYOK, you can check out this tutorial, which leverages PowerShell: [Always Encrypted: Protect sensitive data and store encryption keys in Azure Key Vault](https://docs.microsoft.com/azure/sql-database/sql-database-always-encrypted-azure-key-vault?tabs=azure-powershell).
 
 #### Advanced data security
 
