@@ -19,46 +19,46 @@ quiz:
     choices:
     - content: Open 
       isCorrect: false
-      explanation: Open offers aren't a valid type of service provider offer.
+      explanation: Open offers aren't a valid type of service provider offer
     - content: Private
       isCorrect: true
-      explanation: You can take advantage of private or public offers from service providers.
+      explanation: You can take advantage of private or public offers from service providers
     - content: Closed
       isCorrect: false
-      explanation: Closed offers aren't a valid type of service provider offer.
+      explanation: Closed offers aren't a valid type of service provider offer
   - content: How do you create policies?
     choices:
     - content: Create an policy graph and a graph assignment
       isCorrect: false
-      explanation: You don't create a policy graph or graph assignment.
+      explanation: You don't create a policy graph or graph assignment
     - content: Create a policy log and a log assignment
       isCorrect: false
-      explanation: You don't create a policy log or log assignment.
-    - content: Create a policy definition and a policy assignment.
+      explanation: You don't create a policy log or log assignment
+    - content: Create a policy definition and a policy assignment
       isCorrect: true
-      explanation: You can create policies using tools like the Azure portal, Azure CLI, and PowerShell.
-  - content: Which of these is a valid effect tat you can include in your policy definition?
+      explanation: You can create policies using tools like the Azure portal, Azure CLI, and PowerShell
+  - content: Which of these is a valid effect that you can include in your policy definition?
     choices:
     - content: DeployIfNotExists
       isCorrect: true
       explanation: An effect describes what should happen when a policy rule has been matched. You define an effect inside of a policy definition.
     - content: ChangeEffect
       isCorrect: false
-      explanation: This isn't a valid effect.
+      explanation: This isn't a valid effect
     - content: Non-compliantEffect
       isCorrect: false
-      explanation: This isn't a valid effect.
+      explanation: This isn't a valid effect
   - content: Which of these is a valid Azure Sentinel built-in role that you can assign to your users?
     choices:
     - content: Azure Sentinel Worker
       isCorrect: false
-      explanation: This isn't a valid role.
+      explanation: This isn't a valid role
     - content: Azure Sentinel Responder
       isCorrect: true
       explanation: Your managing users are able to access and perform actions directly on your customers Azure Sentinel workspaces
     - content: Azure Sentinel Looker
       isCorrect: false
-      explanation: This isn't a valid role.
+      explanation: This isn't a valid role
   - content: How often will the Azure Connected Machine Agent send updates to an Azure tenant?
     choices:
     - content: Every 30 seconds
@@ -69,16 +69,16 @@ quiz:
       explanation: The agent sends updates at a longer interval
     - content: Every five minutes
       isCorrect: true
-      explanation: The Connected Machine agent sends an update every five minutes to the Azure tenant it is registered to. 
-  - content: How service connections should you create?
+      explanation: The Connected Machine agent sends an update every five minutes to the Azure tenant it is registered to.
+  - content: You want to use Azure DevOps to help manage customer resources. How many service connections should you create?
     choices:
-    - content: You should create one service connection per customer.
+    - content: You should create one service connection per customer
       isCorrect: true
       explanation: These connections can all be assigned to the same service principal identified in the managed services offer plan.
     - content: You don't have to create a service connection if you're using Azure Sentinel
       isCorrect: false
-      explanation: You need at least one service connection for each customer.
-    - content: You should create one service connection to use for all customers.
+      explanation: You need at least one service connection for each customer
+    - content: You should create one service connection to use for all customers
       isCorrect: false
-      explanation: You need at least one service connection for each customer.
+      explanation: You need at least one service connection for each customer
   
