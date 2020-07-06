@@ -1,12 +1,12 @@
-Imagine you work for a growing video editing company that provides a cloud-based video rendering service. Your company is experiencing increased demand for its video rendering service because of its international expansion and is looking for ways to scale the product to provide a better experience to all customers. Management tasked you to assess which Azure service would improve the ability to deploy your video rendering service and meet demand quickly.
+Imagine you work for a growing video editing company that provides a cloud-based video rendering service. Your company is experiencing increased demand for its video rendering service because of its international expansion. They're looking for ways to scale the product to provide a better experience to all customers. Management tasked you to assess which Azure service would improve the ability to deploy your video rendering service to meet customer demand.
 
-You've identified Azure Kubernetes Service (AKS) as a potential solution, as it meets the requirements to allow your application to handle the company's increased growth. You want to understand how to deploy applications to an AKS cluster and allow customers access to the application's services.
+You've identified Azure Kubernetes Service (AKS) as a potential solution. AKS meets the requirements that allow you to deploy your app and handle the company's increased growth. You want to understand how to deploy your app to an AKS cluster and allow customers access to the app's services.
 
-In this module, you'll deploy Kubernetes workloads declaratively to an AKS cluster using manifest files.  You will create different deployment manifest files that allow you to deploy and expose your application to your users.  
+In this module, you'll deploy Kubernetes workloads declaratively to an AKS cluster using manifest files. You'll create different deployment manifest files that allow you to deploy and expose your application to your users.  
 
 ## Learning objectives
 
-By the end of this module, you will be able to:
+By the end of this module, you'll be able to:
 
 - Create and set up an Azure Kubernetes Cluster
 - Deploy Kubernetes workloads using deployment YAML files

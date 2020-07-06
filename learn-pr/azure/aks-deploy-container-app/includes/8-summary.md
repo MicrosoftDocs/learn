@@ -1,8 +1,37 @@
-The company needed to deploy its infrastructure from the ground up. So we created an AKS cluster and deployed a ping application to check it's working properly.
+Your company is experiencing increased demand for its video rendering service because of its international expansion. You're looking for ways to scale the product to provide a better experience for all customers. You want to understand how to deploy applications to an Azure Kubernetes(AKS) cluster and allow customers access to the application's services.
 
-We used Kubernetes' declarative paradigm to help us describe what we wanted to create, this way we can keep a version history and make it easily reproducible. AZ CLI allowed us to connect to our managed Kubernetes service with AKS without having to worry about infrastructure and to get up and running fast.
+You created an AKS cluster and deployed your web application to the Kubernetes cluster. When you deployed the web app, you used Kubernetes' declarative paradigm to describe what you wanted to create. This way, you can keep the app's version history and make it future deployments easily reproducible.
 
-Imagine how would it be to deploy this application on a VM or another environment without Kubernetes. Having AKS to manage the heavy lifting for us, it made possible not only to save much time but to make our deployment much simpler.
+Imagine how it would be to deploy this application onto multiple virtual machines or another environment without Kubernetes. You would have to recreate your environment with each new deployment and configure additional services to manage user requests between these instances. AKS simplifies the implementation of Kubernetes clusters and provides all the orchestration features you need to manage cloud-native applications.
+
+## Clean up resources
+
+In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
+
+1. Open the Azure portal.
+
+    > [!div class="nextstepaction"]
+    > [Azure portal](https://portal.azure.com?azure-portal=true)
+
+1. Select **Resource groups** on the left.
+
+1. Find the **contoso-aks** resource group, or the resource group name you used, and select it.
+
+1. On the **Overview** tab of the resource group, select **Delete resource group**.
+
+1. Enter the name of the resource group to confirm. Select **Delete** to delete all of the resources you created in this module.
+
+1. Finally, run the `kubectl config delete-context` command to remove the deleted clusters context. Here is an example of the complete command. Remember to replace the name of the cluster with your cluster's name.
+
+    ```bash
+    kubectl config delete-context contoso-kubernetes-cluster
+    ```
+
+    If successful, the command returns the following example output.
+
+    ```output
+    deleted context contoso-kubernetes-cluster from /home/user/.kube/config
+    ```
 
 ## Learn more
 
