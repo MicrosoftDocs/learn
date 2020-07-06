@@ -16,8 +16,8 @@ abstract: |
   - Assess the migration readiness of an on-premises web application with the Azure App Service Migration Assistant.
   - Use the Migration Assistant to migrate an on-premises web application to Azure App Service.
 prerequisites: |
-  - You should have some familiarity in working with Virtual Machines, Windows Server and Internet Information Services
-  - You should have some basic understanding of how Internet Information Services works, and its extensibility points, and how it hosts ASP.NET applications
+  - Some familiarity in working with virtual machines, Windows Server, and IIS
+  - A basic understanding of how IIS works, what its extensibility points are, and how it hosts ASP.NET applications
   - A Remote Desktop Protocol (RDP) client (included with all versions of Windows)
 ratingEnabled: true
 iconUrl: /learn/achievements/migrate-app-service-migration-assistant.svg
