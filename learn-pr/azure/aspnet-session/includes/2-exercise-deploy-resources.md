@@ -62,7 +62,7 @@ Here, you'll download and test the application locally, and then create the reso
 
 ## Create Azure resources for running the application as an Azure web app
 
-1. In the Cloud Shell window on the right, run the following commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. 
+1. In the Cloud Shell window on the right, run the following commands to define PowerShell variables. The commands that create the Azure resources in later steps use these variables to name the resources. 
 
     Replace *\<your-initials-with-suffix\>* with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials from attempting to use the same alias. Also, replace *\<your-password\>* with a password of your choice. This password will be used by the instance of Azure SQL Database that the application connects to.  
 
