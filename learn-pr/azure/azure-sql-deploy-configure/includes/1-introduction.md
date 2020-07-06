@@ -1,8 +1,8 @@
 In this module, you'll learn about the process of deploying and configuring Azure SQL. Through hands-on exercises, you will deploy and configure specifically Azure SQL Database. You will also see comparisons to both Azure SQL Managed Instance and SQL Server. In addition to the Azure portal, you'll work with SSMS, Azure Data Studio (including SQL Notebooks), and the Azure CLI.
 
-This is the second module in the Azure SQL Fundamentals learning path. The recommendation is to complete Azure SQL introduction module before continuing.
+This module is the second module in the Azure SQL Fundamentals learning path. The recommendation is to complete Azure SQL introduction module before continuing.
 
-At the end of this module you will be able to:  
+At the end of this module, you will be able to:  
 
 * Plan for a deployment of Azure SQL
 * Deploy and verify Azure SQL with common tools and interfaces
