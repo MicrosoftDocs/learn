@@ -1,6 +1,6 @@
 [//]: # (This first paragraph will pull your reader into the unit. Try and relate the intro to the scenario from the introduction unit.)
 
-[//]: # (Do you need to tell the student what you're going to use to build the website with or even that there is code available? Think about what the student wants to now first. For example, how do you deploy a website without Kubernetes? You'll install your VM, configure your web server, write some code, and finally deploy the website. How does the deployment to Kubernetes compare to all of the previous?)
+[//]: # (Do you need to tell the student what you're going to use to build the website with or even that there is code available? Think about what the student wants to know or do. For example, how do you deploy a website without Kubernetes? You'll install your VM, configure your web server, write some code, and finally deploy the website. How does the deployment to Kubernetes compare to all of the previous?)
 
 Here, you'll use a static web application built using Hugo, a static website generator written in Golang. This application is available [in this repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app).
 

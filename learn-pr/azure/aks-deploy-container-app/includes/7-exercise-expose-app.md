@@ -1,3 +1,7 @@
+[//]: # (Here you want to lead the unit with your example of deploying the custom website. This is a continuation.)
+
+[//]: # (You're touching on a number of new concepts in the exercise. For example, "annotations" and the whole "rules" structure for deploying ingress. Remember that you've only discussed the structure of a deployment manifest file, Service and Ingress are completely new.)
+
 Next, let's expose Contoso's website to the world.
 
 ## Create the service manifest
