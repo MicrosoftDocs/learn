@@ -38,5 +38,6 @@ modules:
 - learn.iot.create-your-first-iot-central-app
 - learn.iot.set-up-rules-take-actions-telemetry-data-azure-iot-central
 - learn.iot.manage-iot-central-apps-with-rest-api
+- learn.iot.continuous-data-export-from-iot-central
 trophy:
   uid: learn.develop-solutions-with-azure-iot-central.trophy

@@ -73,5 +73,7 @@ modules:
 - learn.oxford.implement-cicd-iot-edge
 - learn.oxford.intro-azure-sphere
 - learn.oxford.image-classification-azure-sphere
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy

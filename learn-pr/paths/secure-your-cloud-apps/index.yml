@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your cloud applications in Azure
-summary: Learn how to secure your Azure apps and associated data with encryption, certificates, and policy.
+summary: |
+  Learn how to secure your Azure apps and associated data with encryption, certificates, and policy. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](https://docs.microsoft.com/learn/certifications/azure-security-engineer).
 prerequisites: None
 iconUrl: /learn/achievements/secure-your-cloud-apps.svg
 levels:
