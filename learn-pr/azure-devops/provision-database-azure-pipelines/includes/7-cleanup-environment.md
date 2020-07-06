@@ -12,7 +12,7 @@ To clean up your resource group:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. When you're prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![Selecting Cloud Shell from the Azure portal menu bar.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
 1. Run the following `az group delete` command to delete the resource group that you used in this module, **tailspin-spacegame-web-rg**.
 
@@ -43,7 +43,7 @@ To complete the work item:
 1. From Azure DevOps, go to **Boards**, and then select **Boards** from the menu.
 1. Move the **Provision a database in each environment** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards showing the card in the Done column](../media/8-boards.png)
+    ![Azure Boards showing the card in the Done column.](../media/8-boards.png)
 
 ## Disable the pipeline or delete your project
 
@@ -62,7 +62,7 @@ To disable the pipeline:
 1. In Azure Pipelines, navigate to your pipeline.
 1. From the drop-down menu, select **Settings**:
 
-    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+    ![The Settings menu option in Azure Pipelines.](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
@@ -78,10 +78,10 @@ To delete the project:
 
     The icon might not appear until you move your mouse over that area.
 
-    ![Azure DevOps showing the gear icon](../../shared/media/azure-devops-project-gear.png)
+    ![Azure DevOps showing the gear icon.](../../shared/media/azure-devops-project-gear.png)
 1. From the **Project details** area, scroll to the bottom and select **Delete**.
 
-    ![Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
+    ![Delete button to delete your project.](../../shared/media/azure-devops-delete-project.png)
 1. From the window that appears, enter the project name and select **Delete** a second time.
 
 Your project is now deleted.
