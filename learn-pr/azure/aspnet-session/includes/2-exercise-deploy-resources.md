@@ -133,7 +133,7 @@ Here, you'll download and test the application locally, and then create the reso
             -String $serveradminpassword `
             -AsPlainText -Force))
     ```
-1. Run the following PowerShell command to open the SQL Database server firewall to allow access to services hosted in Azure.
+1. Run the following PowerShell command to open the SQL Database server firewall to allow access to services hosted in Azure:
 
     ```PowerShell
     New-AzSqlServerFirewallRule `
