@@ -63,7 +63,7 @@ Instead of adding the `int` variable `widgetsSold` to the literal `int` `7`, the
 
 ### Step 4: Add parenthesis to make our intention clear to the compiler.
 
-Modify the code ion the .NET Editor to match the following code:
+Modify the code in the .NET Editor to match the following code:
 
 ```csharp-interactive
 string firstName = "Bob";
