@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.learn.azure-sql-performance
+uid: learn.azure-sql-performance
 metadata:
   title: Azure SQL - Deliver consistent performance
   description: TODO
@@ -25,16 +25,16 @@ roles:
 products:
 - azure
 units:
-- learn.learn.azure-sql-performance.1-introduction
-- learn.learn.azure-sql-performance.2-performance-capabilities
-- learn.learn.azure-sql-performance.3-configure-maintain-performance
-- learn.learn.azure-sql-performance.4-monitor-troubleshooting-performance
-- learn.learn.azure-sql-performance.5-performance-scenarios
-- learn.learn.azure-sql-performance.6-exercise-monitor-troubleshoot-performance
-- learn.learn.azure-sql-performance.7-accelerate-tune-performance
-- learn.learn.azure-sql-performance.8-exercise-scale-performance
-- learn.learn.azure-sql-performance.9-exercise-optimize-app-performance
-- learn.learn.azure-sql-performance.10-intelligent-performance
-- learn.learn.azure-sql-performance.11-summary
+- learn.azure-sql-performance.1-introduction
+- learn.azure-sql-performance.2-performance-capabilities
+- learn.azure-sql-performance.3-configure-maintain-performance
+- learn.azure-sql-performance.4-monitor-troubleshooting-performance
+- learn.azure-sql-performance.5-performance-scenarios
+- learn.azure-sql-performance.6-exercise-monitor-troubleshoot-performance
+- learn.azure-sql-performance.7-accelerate-tune-performance
+- learn.azure-sql-performance.8-exercise-scale-performance
+- learn.azure-sql-performance.9-exercise-optimize-app-performance
+- learn.azure-sql-performance.10-intelligent-performance
+- learn.azure-sql-performance.11-summary
 badge:
-  uid: learn.learn.azure-sql-performance.badge
+  uid: learn.azure-sql-performance.badge
