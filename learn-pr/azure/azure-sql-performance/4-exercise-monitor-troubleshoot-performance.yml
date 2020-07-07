@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.learn.azure-sql-performance.4-exercise-monitor-troubleshoot-performance
+metadata:
+  title: Exercise - Monitor and troubleshoot performance
+  description: Exercise - Monitor and troubleshoot performance
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Monitor and troubleshoot performance
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-monitor-troubleshoot-performance.md)]

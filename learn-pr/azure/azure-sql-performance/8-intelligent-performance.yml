@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.learn.azure-sql-performance.8-intelligent-performance
+metadata:
+  title: Intelligent performance
+  description: Intelligent performance
+  ms.date: 07/31/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Intelligent performance
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-intelligent-performance.md)]
