@@ -228,7 +228,7 @@ Here, you change the name of the deployment to better reflect what this deployme
 
 ::: zone-end
 
-### check your deployment
+### Check your deployment
 
 1. In your browser, navigate back to Azure. Go to your resource group and see that there are now *2 Succeeded* deployments. Select this link.
 1. Notice that both deployments are in the list.
