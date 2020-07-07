@@ -9,6 +9,12 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
    -| package.json
    ```
 
+1. Install the dependencies with the following command:
+
+   ```bash
+   npm install
+   ```
+
 1. Open up the `index.js` file. It should look like so:
 
    ```javascript
