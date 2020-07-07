@@ -106,7 +106,7 @@ To find your IP address:
 
 1. Go to the resource group you created
 2. Click on the virtual machine resource
-3. In the Overview page, you'll find your public IP address
+3. In the **Overview** page, you'll find your public IP address
 
 ## Checking if the IoT Edge device is configured
 

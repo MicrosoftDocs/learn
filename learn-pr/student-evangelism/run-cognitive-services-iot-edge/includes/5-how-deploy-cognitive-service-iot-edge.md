@@ -12,9 +12,9 @@ Parameters for configuring Cognitive Services containers:
 
 **The end-user license agreement (EULA):** indicates that you've accepted the license for the container. It must be set to a value of accept.
 
-**Endpoint URI value:** is available on the Azure portal's Overview page of the corresponding Cognitive Services resource.
+**Endpoint URI value:** is available on the Azure portal's **Overview** page of the corresponding Cognitive Services resource.
 
-**Keys {API_KEY}:** tracks billing information and is available on the Azure portal's Keys page of the corresponding Cognitive Services resource.
+**Keys {API_KEY}:** tracks billing information and is available on the Azure portal's **Keys** page of the corresponding Cognitive Services resource.
 
 The steps you'll follow:
 
