@@ -41,7 +41,7 @@ Azure SQL Managed Instance and Database are PaaS offerings so restricting these 
 
 For Azure SQL Managed Instance, there is a maximum storage allowed for the instance and the number of vCores is going to affect the maximum storage (for example, the Business critical tier has a lower maximum storage). If you reach the maximum, you may get Message 1105 for a managed database or Message 1133 for the instance. Upon creation of a database, they are created as the model default size which is 100Mb/8Mb and is configurable. You have the ability to alter the size as well as the number of files, but you do not have control over the physical location of them (we have commitments per your deployment choice on I/O performance). Additionally, since in the General Purpose service tier remote storage is used, performance can be afected by the data/log file size.
 
-For Azure SQL Database, the "Data max size" or "Maxsize" is the maximum possible size of a single database file (one one is allowed). The database file "Maxsize" can grow to the "Data max size". The transaction log maximum size is always 30% above the "Data max size". The log is also truncated regularly due to automatic backups (Accelerated Database Recovery is on by default).
+For Azure SQL Database, the "Data max size" or "Maxsize" is the maximum possible size of a single database file (only one is allowed). The database file "Maxsize" can grow to the "Data max size". The transaction log is managed over and above the data size and the log's maximum size is always 30% of the "Data max size". For example, if the data max size is 100GB, then the maximum transaction log size is 30GB, and the total of data max size and log size is 130GB. The log is also truncated regularly due to automatic backups (Accelerated Database Recovery is on by default).
 
 To understand this idea of Data max size versus Maxsize, let's consider an example where a 1TB (Data max size) General purpose database is deployed. When you do this, however, your database is only ~500GB (not 1 TB). As your database grows and approaches the Data max size, the database file Maxsize will also grow up to the 1TB level.
 
@@ -55,6 +55,7 @@ During deployment, in Azure SQL Managed Instance you're able to choose the conne
 
 You can keep the default (Proxy for connections from outside and Redirect for connections within Azure) or configure something else.
 
+[!div class="mx-imgBorder"]
 ![Connection policies in Azure SQL](../media/connectivity.png)
 
 At the highest level, in Proxy mode, all connections are proxied through the a gateway, but in Redirect mode, after the connection is established leveraging the gateway (redirect-find-db in the figure above), the connection can then connect directly to the database or managed instance.

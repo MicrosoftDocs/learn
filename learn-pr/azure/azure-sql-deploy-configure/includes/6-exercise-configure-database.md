@@ -21,10 +21,10 @@ You'll run all of the commands using the integrated Cloud Shell to your right. Y
     $databaseName = $databaseName.DatabaseName
     ```
 
-1. Next, we'll set the defaults in the Cloud Shel to specify your default resource group and Azure SQL Database logical server.
+1. Next, we'll set the defaults in the Cloud Shell to specify your default resource group and Azure SQL Database logical server.
 
     ```azurecli
-    az configure --defaults group=$resource_group sql-server=$logical_server
+    az configure --defaults group=$resourceGroup sql-server=$logical_server
     ```
 
 1. Run the following command to confirm the defaults have been set.
@@ -78,7 +78,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     az sql server conn-policy show
     ```
 
-3. To test round trip time, you can connect with SSMS. On your device, open SSMS and connect to your database. Right-click your database and select **New Query**. Create a new query with the below text, and choose to **Include Client Statistics** in your results. In the results, the **Wait time on server replies** is the best indicator of network latency. You can run this a few times to get a good average.  
+3. To test round trip time, you can connect with SSMS. On your device, open SSMS and connect to your database. Right-click your database and select **New Query**. Create a new query with the below text, and choose to **Include Client Statistics** in your results (one way to do this is by selecting **Query > Include Client Statistics**). In the results, the **Wait time on server replies** is the best indicator of network latency. You can run this a few times to get a good average.  
 
     ```sql
     -- Proxy
@@ -114,7 +114,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
 
     After 10 trials, I have an average wait time on server replies of `25.8000`, which is almost half that of the Proxy connection policy. Remember, exact timings will vary depending on your connection, but compared to your Proxy test earlier, this time should be significantly reduced.  
 
-6.Set the policy back to default for the next exercise, by using the similar commands.  
+6. Set the policy back to default for the next exercise, by using the similar commands.  
 
     ```azurecli
     # update policy
