@@ -1,10 +1,10 @@
 In the e-commerce system, it's important not to expose the keys used by the warehouse web app to connect to the SQL Server database. Failure to do so, could lead to the database being compromised, and the valuable information it contains being corrupted or amended in an authorized manner.
 
-Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vault is a secure repository that uses Azure Active Directory to authenticate and authorize users. You'll make the connection string available only to the web app, by specifying that a client attempting to retrieve the string must be running with the service principal of the web app. You'll then deploy the warehouse web app to the Azure App Service you created earlier, and verify that it still functions correctly.
+Here, you'll store the SQL Server connection string in your Azure key vault. The key vault is a secure repository that uses Azure Active Directory to authenticate and authorize users. You'll make the connection string available only to the web app, by specifying that a client attempting to retrieve the string must be running with the service principal of the web app. You'll then deploy the warehouse web app to the Azure App Service you created earlier, and verify that it still functions correctly.
 
-## Create an Azure Key Vault and store the connection string
+## Create an Azure key vault and store the connection string
 
-1. In the Cloud Shell window on the right, run the command shown below to define a PowerShell variable containing the name of the key vault to be created. 
+1. In the Cloud Shell window on the right, to define a PowerShell variable containing the name of the key vault to be created, run the following command: 
 
     ```PowerShell
     $vaultname = (-join("shopvault", $useralias))
@@ -112,7 +112,7 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
 
 2. On the **Tools** menu, click **NuGet Package Manager**, and then click **Package Manager Console**.
 
-3. In the **Package Manager Console** window, run the following command to install the ConfigurationBuilder library required for reading secrets from Azure Key Vault.
+3. In the **Package Manager Console** window, run the following command to install the ConfigurationBuilder library that's required for reading secrets from the Azure key vault.
 
     ```PowerShell
     Install-Package Microsoft.Configuration.ConfigurationBuilders.Azure -Version 2.0.0
@@ -144,7 +144,7 @@ Here, you'll store the SQL Server connection string in Azure Key Vault. Key Vaul
     ...
     ```
 
-6. Modify the **\<connectionStrings\>** node, and add the **configBuilders** attribute with the value **AzureKeyVault**, as shown below. This attribute enables application settings and connection strings to be configured using the named ConfigurationBuilder type at runtime. In this case, rather than using the **connectionString** value hard-coded into the configuration file, the web app will retrieve the connection string for **CatalogDBContext** from Azure Key Vault.
+6. Modify the **\<connectionStrings\>** node, and add the **configBuilders** attribute with the value **AzureKeyVault**, as shown below. This attribute enables application settings and connection strings to be configured using the named ConfigurationBuilder type at runtime. In this case, rather than using the **connectionString** value hard-coded into the configuration file, the web app will retrieve the connection string for **CatalogDBContext** from the Azure key vault.
 
     ```xml
     ...
