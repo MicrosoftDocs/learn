@@ -1,10 +1,23 @@
+The Mixed Reality Toolkit is an open source toolkit which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you will learn about the contents of the Mixed Reality Toolkit.
+
 ## What is the Mixed Reality Toolkit?
 
-The Mixed Reality Toolkit (MRTK) is an open-source development toolkit for building Mixed Reality applications. To use MRTK in your mixed reality project, you need to complete the following:
+The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform.
 
-1. Import TextMeshPro Essential Resources
-1. Import the MRTK Unity Foundation package
-1. Add MRTK to the scene and configure
+## MRTK Unity
+
+MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
+
+Provides the basic building blocks for Unity development on HoloLens, Windows Mixed Reality, and OpenVR.
+Enables rapid prototyping via in-editor simulation that allows you to see changes immediately.
+Operates as an extensible framework that provides developers the ability to swap out core components.
+Supports a wide range of platforms, including
+
+- Microsoft HoloLens
+- Microsoft HoloLens 2
+- Windows Mixed Reality headsets
+- OpenVR headsets (HTC Vive / Oculus Rift)
+- Ultraleap Hand Tracking
 
 ## TextMesh Pro
 
@@ -19,7 +32,7 @@ After MRTK is added to the scene and configured, two new objects are added to th
 - MixedRealityToolkit
 - MixedRealityPlayspace
 
-The **MixedRealityToolkit** object contains the toolkit itself. The **MixedRealityPlayspace** ensures the headset/controllers and other required systems are managed correctly in the scene.
+The **MixedRealityToolkit** object contains the toolkit itself. The **MixedRealityPlayspace** object ensures the headset/controllers and other required systems are managed correctly in the scene.
 
 The **Main Camera** object is moved as a child to the **MixedRealityPlayspace** object. This allows the playspace to manage the camera simultaneously with the SDKs.
 
