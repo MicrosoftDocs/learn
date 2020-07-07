@@ -14,7 +14,7 @@ Kubernetes can only spin up an image if that image is hosted in a container regi
 
 Think of registries as archives to your images. It stores all the images described by their tags, so an image `contoso-website:latest` has a different tag than `contoso-website:v1.0.0`. These tags describe the versions of your image, and you can have multiple of them in your registry.
 
-![](../media/draft-4-1-cr-diagram.png)
+:::image type="content" source="../media/4-1-cr-diagram.png" alt-text="Container Registry Diagram":::
 
 Container registries may be public, which means anyone has access to it and download images without the need of a credential. They can also be private, which is the opposite, to download any image you'll need to run a sign-in step.
 
@@ -82,7 +82,7 @@ Kubernetes groups containers and applications into logical structures called __P
 
 Deployments are an evolution of pods. They wrap the Pods into an intelligent structure that allows them to _scale out_. That means you can easily duplicate and scale your application to support more load without the need to configure complex networking rules. To create this wrapping, deployments need a `label`. Labels are the way deployments find and group pods within their bounds.
 
-![](../media/draft-4-2-deployments-diagram.png)
+:::image type="content" source="../media/4-2-deployments-diagram.png" alt-text="Deployments diagram":::
 
 Kubernetes can tag workloads with labels. These labels allow for the system to query the cluster for workloads that have one or more labels, for example, if we wanted to search all workloads related to the `contoso-website` we could query the cluster for everything with the label `app` and the value of that label being `contoso-website`. This can be seen in the `selector` key of our previous example:
 

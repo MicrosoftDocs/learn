@@ -10,7 +10,7 @@ The same happens with the network. Deployments aren't considered a physical work
 
 Services are workloads that abstract the IP address for networked workloads, like pods. Essentially, a service uses the same `selector` key as deployments to select and group resources with the required labels into one single IP, acting somewhat as a load balancer and redirecting the traffic to the specific ports. Basically, services handle the port-forwarding rules to their selected pods. receiving incoming packages in one port and forward them to another internal one.
 
-![](../media/draft-6-1-service-diagram.png)
+:::image type="content" source="../media/6-1-service-diagram.png" alt-text="Services diagram":::
 
 Services can be of several types, each type changes the behavior of the applications selected by the service:
 
@@ -27,7 +27,7 @@ By default, all incoming traffic to a Kubernetes cluster is rejected. To allow t
 
 Ingresses are like doors in a huge wall. They allow some traffic in based on a set of rules. Think of it as a firewall solution. An Ingress resource is required when exposing an application externally using a DNS name – like we want to do by allowing people to access Contoso's website through `http://contoso.com`.
 
-![](../media/draft-6-2-ingress-diagram.png)
+:::image type="content" source="../media/6-2-ingress-diagram.png" alt-text="Ingress diagram":::
 
 Using managed services like AKS makes it a lot easier, because with the :::no-loc text="HTTP Application Routing"::: add on we create a resource called __Ingress Controller__.
 

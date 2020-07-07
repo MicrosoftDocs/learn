@@ -19,11 +19,9 @@ There are several architectural considerations you have to keep in mind when dep
 
 There are a few main cluster architectures for Kubernetes-based deployments.
 
-### Single control plane and multiple workers
+### Single control plane and multiple nodes
 
-![](../media/draft-2-1-diagram.png)
-
-![](../media/draft-2-1-diagram-alt.png)
+:::image type="content" source="../media/2-1-diagram.png" alt-text="Single Control Plane Diagram":::
 
 The single control plane and multiple worker architecture is the most common architectural pattern. While this is the easiest architecture to deploy, it doesn't provide high availability to your cluster's core management services.
 
@@ -33,9 +31,9 @@ Despite being less available than others, this architecture should be enough for
 
 However, if you are dealing with a production scenario, this architecture might not be the best solution.
 
-### Single control plane and a single worker
+### Single control plane and a single nodes
 
-![](../media/draft-2-2-single-diagram.png)
+:::image type="content" source="../media/2-2-single-diagram.png" alt-text="Single control plane and single node diagram":::
 
 The single control plane and a single worker is a variant of the previous architecture and normally used as a development environment. This architecture provides only one node, hosting both the control plane and a worker node and is useful when testing or experimenting with different Kubernetes concepts. The single control plane and a single worker limit cluster scaling and makes this architecture not suitable for production and staging use.
 
@@ -47,7 +45,7 @@ When you create a new AKS cluster, you have several different items of informati
 
 AKS requires you to create *node pools* to group nodes in your cluster. When you create a node pool, you have to specify the VM size to use for each node in the node pool.  Node pools use VM scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool when needed.  New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
 
-![](../media/draft-2-3-nodepool-diagram.png)
+:::image type="content" source="../media/2-3-nodepool-diagram.png" alt-text="Node pool diagram":::
 
 ### Node count
 
@@ -61,9 +59,7 @@ By default, all external communications are blocked by a Kubernetes cluster. So,
 
 AKS allows you to enable what is called HTTP application routing. This add-on makes it easy to access applications deployed to the cluster through the automatic creation of an Ingress Controller. Ingress Controllers provide the capability to deploy and expose your applications to the world without the need to configure network-related services.
 
-![](../media/draft-2-4-httpar-diagram.png)
-
-[//]: # (Personal notes written in Blue)
+:::image type="content" source="../media/2-4-httpar-diagram.png" alt-text="HTTP Application Routing Diagram":::
 
 Ingress Controllers create a reverse-proxy server that allows for all the requests to be served from a single DNS output automatically. You don't have to create a DNS record every time a new service is deployed, the ingress controller will take care of it. As soon as a new ingress is deployed to the cluster, the Ingress Controller will create a new record on an Azure-managed DNS zone and will link it to an existing load balancer. This allows for easy access to the resource through the Internet without the need of additional configuration.
 
