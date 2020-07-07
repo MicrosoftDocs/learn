@@ -4,7 +4,7 @@ Kubernetes differs itself from other tool mostly because of its ease to create w
 
 Recall the last unit, we need to create and push a container image to a container registry so we can deploy the app to our cluster.
 
-### Create a container registry
+### Create a container registry and Connect to the AKS cluster
 
 Azure provides the __Azure Container Registry__ (ACR) service that we'll be using to store our images. Let's create one.
 
@@ -16,8 +16,6 @@ Azure provides the __Azure Container Registry__ (ACR) service that we'll be usin
         --name ContosoContainerRegistry$RANDOM \
         --sku Basic
     ```
-
-### Connect the AKS cluster to the ACR
 
 Since we are working with a private container registry, we need to tell our AKS cluster to authenticate with that registry so it can download the stored images. Luckily, using both ACR and AKS this integration can be easily done.
 
@@ -48,7 +46,7 @@ Since we are working with a private container registry, we need to tell our AKS 
 
 The result will be the attachment of your ACR to your AKS cluster.
 
-### Sign in to your container registry
+### Sign in to your container registry and push an image to it
 
 Once the CR is created, you need to connect your local Docker runtime to the :::no-loc text="registry"::: so it can push your image to the remote destination. To do so, follow these steps:
 
@@ -65,8 +63,6 @@ Once the CR is created, you need to connect your local Docker runtime to the :::
     :::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
 
 1. After the sign-in, your local Docker runtime should be already connected to the ACR resource.
-
-### Push an image to the ACR
 
 Now it's time to put everything together and push the image to the ACR you created.
 
