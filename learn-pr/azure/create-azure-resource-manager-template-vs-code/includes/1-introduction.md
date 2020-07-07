@@ -21,4 +21,4 @@ In this module, you:
 
     OR
 
-- The latest [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed locally
+- The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed locally

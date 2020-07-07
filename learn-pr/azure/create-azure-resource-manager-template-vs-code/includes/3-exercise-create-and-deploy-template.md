@@ -100,7 +100,7 @@ Here, you deploy the ARM template to Azure. The ARM template doesn't have any re
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you [install Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) and that you are signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you [install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) and that you are signing in to the same account that activated the sandbox.
 
 ### Sign in to Azure using Azure PowerShell
 
