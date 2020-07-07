@@ -24,6 +24,8 @@ roles:
 - student
 products:
 - azure-maps
+- azure
+- azure-iot
 prerequisites: | 
   - Basic familiarity with Azure Functions.
   - Before you begin, you might want to complete the Microsoft Learn module [Create serverless logic with Azure Functions](https://docs.microsoft.com/learn/modules/create-serverless-logic-with-azure-functions/).
