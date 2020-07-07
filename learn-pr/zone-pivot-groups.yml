@@ -316,3 +316,11 @@ groups:
       title: Windows
     - id: linux
       title: Linux
+- id: azure-shell-interface
+  title: Shell
+  prompt: Choose your Azure shell
+  pivots:
+    - id: powershell
+      title: PowerShell
+    - id: cli
+      title: Azure CLI

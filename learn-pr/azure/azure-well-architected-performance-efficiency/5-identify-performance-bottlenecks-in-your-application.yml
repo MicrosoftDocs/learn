@@ -20,16 +20,16 @@ quiz:
     choices:
     - content: 'A single view for all your monitoring needs in Azure'
       isCorrect: false
-      explanation: 'While Application Insights can provide a wealth of data on your application performance, is it not a comprehensive Azure monitoring solution.'
+      explanation: "Application Insights can provide a wealth of data on your application performance, but it isn't a comprehensive Azure monitoring solution."
     - content: 'An implementation of the health endpoint monitoring pattern'
       isCorrect: false
       explanation: 'The health endpoint monitoring pattern focuses on monitoring endpoints exposed by your application for overall health.'
     - content: 'A workspace to enable collection of logs across infrastructure and applications'
       isCorrect: false
       explanation: 'Log Analytics is a workspace that enables the collection of logs across infrastructure and applications.'
-    - content: 'A service to monitor availability, performance, and usage of web applications'
+    - content: 'A service to monitor availability, performance, and the use of web applications'
       isCorrect: true
-      explanation: 'Application Insights is a service to monitor availability, performance, and usage of web applications.'
+      explanation: 'Application Insights is a service to monitor availability, performance, and the use of web applications.'
 
   - content: 'True or false: Log Analytics tracks custom logs and metrics.'
     choices:
