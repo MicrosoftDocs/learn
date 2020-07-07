@@ -34,18 +34,18 @@ quiz:
     - content: Copies the data to an in-memory database that runs on App Service
       isCorrect: false
       explanation: The Migration Assistant does not perform database migration, only app migration.
-    - content: Creates a Hybrid Connection to allow App Service to communicate with your on-premises database
+    - content: Creates a hybrid connection to allow App Service to communicate with your on-premises database
       isCorrect: true
     - content: Creates a virtual machine running a copy of your SQL database
       isCorrect: false
       explanation: The Migration Assistant does not create or use virtual machines as part of the migration process, and does not migrate database data.
-  - content: Which of the following is a task you may need to perform yourself after using the Migration Assistant to migrate an application?
+  - content: Which of the following tasks might you need to perform yourself after using the Migration Assistant to migrate an application?
     choices:
     - content: Set up a custom domain name
       isCorrect: true
     - content: Start up the virtual machine running the site
       isCorrect: false
-      explanation: You don't need to interact directly with the resources that power your App Service, and the site is started automatically after deployment.
+      explanation: You don't need to interact directly with the resources that power your App Service instance, and the site is started automatically after deployment.
     - content: Assign the App Service instance to an App Service plan
       isCorrect: false
       explanation: Assignment to an App Service plan is performed as part of the migration process.
