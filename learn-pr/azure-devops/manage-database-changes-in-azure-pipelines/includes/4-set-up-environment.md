@@ -36,7 +36,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 1. Select **Sign In** and accept the usage terms.
 1. From the **Create New Project** page, select your Azure DevOps organization. Enter a project name, such as *Space Game - web - Database*.
 
-    ![Creating a project through the Azure DevOps Demo Generator](../media/4-create-new-project.png)
+    ![A web page showing creating a project through the Azure DevOps Demo Generator.](../media/4-create-new-project.png)
 
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
@@ -57,7 +57,7 @@ Assigning work in this way gives you a checklist to work from. The work item let
 
 Recall that the team settled on these top issues for the current sprint:
 
-![Azure Boards, showing the tasks for this sprint](../../shared/media/deploy-all-tasks.png)
+![Azure Boards, showing the tasks for this sprint.](../../shared/media/deploy-all-tasks.png)
 
 > [!NOTE]
 > Within an Azure DevOps organization, work items are numbered sequentially. In your project, the number for each work item might not match what you see here.
@@ -68,15 +68,15 @@ To set up the work item:
 
 1. In Azure DevOps, navigate to **Boards**. In the menu, select **Boards**.
 
-    ![Azure DevOps, showing the Boards menu](../../shared/media/azure-devops-boards-menu.png)
+    ![Azure DevOps, showing the Boards menu.](../../shared/media/azure-devops-boards-menu.png)
 
 1. In the **Connect the web app to a database** work item, select the down arrow at the bottom of the card. Assign the work item to yourself.
 
-    ![Assigning the work item to yourself](../../shared/media/azure-boards-down-chevron.png)
+    ![Azure Boards showing assigning the work item to yourself.](../../shared/media/azure-boards-down-chevron.png)
 
 1. Move the work item from the **To Do** column to the **Doing** column.
 
-    ![Azure Boards, showing the card in the Doing column](../media/4-azure-boards-wi2-doing.png)
+    ![Azure Boards showing the card in the Doing column.](../media/4-azure-boards-wi2-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you complete the task.
 
