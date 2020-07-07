@@ -74,7 +74,7 @@ In this unit, you download and test the app locally and then create the resource
     > The resource group `<rgn>[sandbox resource group name]</rgn>` has been created automatically. Use this as your resource group name. You won't have permission to create additional resource groups in the sandbox.
 
     ```PowerShell
-    $useralias = "<your-initals-with-suffix>"
+    $useralias = "<your-initials-with-suffix>"
     ```
 
     ```PowerShell
