@@ -26,7 +26,7 @@ The following example shows a custom script configuration that downloads an appl
 
 To deploy this configuration on the scale set, you use a custom script extension. The following code shows how to create a custom script extension for a virtual machine scale set by using the Azure CLI. This command installs the new app on the VMs across the scale set:
 
-```powershell
+```azurecli
 az vmss extension set \
   --publisher Microsoft.Azure.Extensions \
   --version 2.0 \
@@ -50,7 +50,7 @@ You can use a custom script extension to update an existing app across a virtual
 
 Use the same `az vmss extension set` command shown previously to deploy the updated app. But this time, reference the new configuration file:
 
-```powershell
+```azurecli
 az vmss extension set \
     --publisher Microsoft.Azure.Extensions \
     --version 2.0 \
@@ -68,7 +68,7 @@ The VMs are updated according to the upgrade policy for the scale set. You speci
 
 To specify the upgrade policy mode when you provision a virtual machine scale set, use the `upgrade-policy-mode` option. The following code example uses the Azure CLI:  
 
-```powershell
+```azurecli
 az vmss create \
   --resource-group MyResourceGroup \
   --name MyScaleSet \

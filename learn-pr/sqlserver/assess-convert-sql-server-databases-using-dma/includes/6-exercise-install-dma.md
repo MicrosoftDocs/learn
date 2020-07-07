@@ -40,7 +40,7 @@ https://github.com/microsoft/sql-server-samples/releases/download/adventureworks
 
 ## Download the Data Migration Assistant
 
-1. Go to the [Microsoft® Data Migration Assistant v5.2](https://www.microsoft.com/download/details.aspx?id=53595) download page, then select **Download**.
+1. Go to the [https://github.com/PhilStollery/mslearn-sqlserver-assess-convert-sql-server-databases-using-dma/blob/master/DataMigrationAssistant.msi](https://github.com/PhilStollery/mslearn-sqlserver-assess-convert-sql-server-databases-using-dma/blob/master/DataMigrationAssistant.msi), then select **Download**.
 1. On the pop-up menu, select **Save**.
 
 ## Install the Data Migration Assistant

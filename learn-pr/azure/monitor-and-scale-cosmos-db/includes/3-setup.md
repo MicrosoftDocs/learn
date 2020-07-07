@@ -74,7 +74,7 @@ We look at indexing in units 6 and 7.
 1. Create a database called `mslearn` in your Azure Cosmos DB account. We need only one database for these exercises.
 
     ```azurecli
-    az cosmosdb database create \
+    az cosmosdb sql database create \
         --resource-group <rgn>[sandbox resource group name]</rgn> \
         --account-name $COSMOS_NAME \
         --name mslearn

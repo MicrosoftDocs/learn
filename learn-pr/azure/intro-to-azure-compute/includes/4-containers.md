@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-    ![Image representing Azure containers](../media/4-azure-containers.png)
+    :::image type="icon" source="../media/4-azure-containers.png" border="false":::
   :::column-end:::
   :::column span="3":::
 If you wish to run multiple instances of an application on a single host machine, containers are an excellent choice. The container orchestrator can start, stop, and scale out application instances as needed.
@@ -46,7 +46,9 @@ Imagine your website backend has reached capacity but the front end and storage 
 
 You can move existing applications to containers and run them within AKS. You can control access via integration with Azure Active Directory (Azure AD) and access Service Level Agreement (SLA)–backed Azure services, such as Azure Database for MySQL for any data needs, via Open Service Broker for Azure (OSBA).
 
-![Diagram that depicts moving existing applications to containers and running them within Azure Kubernetes Service, or AKS/](../media/4-kub-migration.png)
+:::image type="complex" source="../media/4-kub-migration.png" alt-text="Diagram showing numbered steps of moving an existing application to containers and running them within Azure Kubernetes Service (AKS)":::
+Step one is between an existing application and the Azure Container Registry. Step two is the CLI between Azure Container Registry and AKS. Step three is between AKS and Azure Active Directory. Step four is between AKS and Azure Database for MySQL, labeled OSBA. Step five is the dotted containing virtual network box around AKS, Azure Active Directory, and Azure Database for MySQL.
+:::image-end:::
 
 The preceding figure depicts this process as follows:
 
