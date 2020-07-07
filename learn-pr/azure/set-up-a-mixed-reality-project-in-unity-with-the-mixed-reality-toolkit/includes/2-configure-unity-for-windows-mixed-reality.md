@@ -1,13 +1,16 @@
-## What is Unity
+The first step to creating an immersive experience for Windows Mixed Reality requires configuring your Unity project for Windows Mixed Reality development. Once your project is configured, your app will be able to do basic holographic rendering and spatial input. Here you will learn the specifics of configuring your Unity project for Windows Mixed Reality development.
 
-Often referred to as a game engine, Unity is a real-time development platform. You can create and test mixed reality apps in Unity without the need for a mixed reality device.
+## Universal Windows Platform
 
-Unity has two modes: Edit and Play. As you create your own mixed reality apps, you will do so in Edit mode. When you're ready to test your scene, you can do so in Play mode.
-
-Unity is equipped with a collection of 3D objects, known as primitives, that can be added to your project. For the exercises in this module, you will use Unity primitives.
+To target Windows Mixed Reality, your Unity project must be set to export as a Universal Windows Platform app. By default, the build settings for the Universal Windows Platform targets any device - this includes support for immersive headsets. However, you could select the appropriate device by changing the setting for **Target device**.
 
 ## Create an immersive view
-An immersive view gives your app the ability to create holograms in the world around you or immerse the user in a virtual environment. Apps that have at least one immersive view are categorized as mixed reality apps. In Unity, you can configure your project to create an immersive view by enabling **Virtual Reality Supported**. When virtual reality support is enabled, a virtual reality SDK must be added. As there is no separate SDK for Windows Mixed Reality development, the Windows 10 SDK is used instead.
+
+Windows apps can contain two kinds of views, **2D views** and **immersive views**. Apps can switch between their various immersive views and 2D views, showing their 2D views on a monitor as a window or in a headset as a slate.
+
+An immersive view gives your app the ability to create holograms in the world around you or immerse the user in a virtual environment. Apps that have at least one immersive view are categorized as mixed reality apps. Apps that never have an immersive view are **2D apps**.
+
+In Unity, you can configure your project to create an immersive view by enabling **Virtual Reality Supported**. When virtual reality support is enabled, a virtual reality SDK must be added. As there is no separate SDK for Windows Mixed Reality development, the Windows 10 SDK is used instead.
 
 ## How are holograms rendered
 
@@ -18,3 +21,7 @@ In Mixed Reality apps, the scene is rendered twice, once for each eye to the use
 To achieve better hologram stability from the perception of the user, **Depth Buffer Sharing** should be enabled. By turning this on, Unity will share the depth map produced by your app with the Windows Mixed Reality platform. The platform will then be able to better optimize hologram stability specifically for your scene for any given frame being rendered by your app.
 
 With regards to performance, selecting the **16-bit depth** format compared to 24-bit will significantly reduce the bandwidth requirements as less data will need to be moved/processed.
+
+## Porting an existing Unity app to Windows Mixed Reality
+
+If you have an existing Unity project that you're porting to Windows Mixed Reality, refer to the [Unity porting guide](https://docs.microsoft.com/en-us/windows/mixed-reality/porting-guides) to get started. Bringing existing content over to Windows Mixed Reality involves retargeting the usage of other platform SDKs to the Windows APIs. If your app is not already built for the Universal Windows Platform, changing over to the platform will be part of the porting experience.
