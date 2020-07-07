@@ -1,12 +1,8 @@
-To deploy your application, you need to create and deploy an AKS cluster.
-
-[//]: # (This first paragraph will pull your reader into the unit. Try and relate the intro to the scenario from the introduction unit.)
-
-Let's see some of the concepts behind Kubernetes and how we can better understand them.
+Thinking about our scenario, the first thing we need to do to make sure our application scale based on the demands we need is to create and deploy an AKS cluster. And to do this, we first need to understand the concepts that Kubernetes relies on. Let's see some of these concepts and how we can better understand them.
 
 ## Kubernetes clusters
 
-Kubernetes is based on clusters. Instead of having a single and powerful VM, it uses the power of several less potent machines working as one. Being a cluster-based orchestrator brings your application several benefits. Like availability, monitoring, scaling, rolling updates, and many more.
+Kubernetes is based on clusters. Instead of having a single and powerful VM, it uses the power of several less potent machines working as one. Being a cluster-based orchestrator brings your application several benefits such as availability, monitoring, scaling, and rolling updates.
 
 Clusters are based on nodes. There are two types of nodes in a Kubernetes cluster:
 
