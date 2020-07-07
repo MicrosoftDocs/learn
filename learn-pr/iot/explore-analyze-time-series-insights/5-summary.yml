@@ -8,7 +8,7 @@ metadata:
   ms.author: chmaneu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configure Data model
+title: Summary
 azureSandbox: true
 durationInMinutes: 4
 content: |
@@ -17,14 +17,14 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'To which sources you can not connect a Time Series Insights?'
+  - content: 'To which sources you cannot connect a Time Series Insights?'
     choices:  
     - content: 'Cosmos DB'
       isCorrect: true
       explanation: Cosmos DB doesn't have built-in support. You can build your own feature with Azure Functions.
     - content: 'Event Hubs'
       isCorrect: false
-      explanation: Event Hubs can send messages to Time Series Insights. You may need to format these messages accordingly.
+      explanation: Event Hubs can send messages to Time Series Insights. You may need to correctly format these messages.
     - content: 'IoT Hub'
       isCorrect: false
       explanation: IoT Hub can send all IoT devices events directly to Time Series Insights.
@@ -57,10 +57,10 @@ quiz:
     choices:  
     - content: 'Cold storage'
       isCorrect: false
-      explanation: Cold storage needs a lot of processing to query historical data, and can take more time.
+      explanation: Cold storage requires more processing power to query historical data, and can take more time.
     - content: 'Warm storage'
       isCorrect: true
-      explanation: Warm storage allows to query latest data faster.
+      explanation: Warm storage allows querying latest data faster.
     - content: 'Cosmos DB storage'
       isCorrect: false
       explanation: You can't connect Cosmos DB to Time Series Insights.
