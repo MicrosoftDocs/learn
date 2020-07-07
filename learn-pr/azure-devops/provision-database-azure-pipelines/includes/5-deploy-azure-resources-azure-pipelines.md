@@ -110,12 +110,12 @@ In the previous exercise, you forked and cloned the repo you'll need for this mo
     ```
 
     The Resource Manager template reads this file to discover:
-    
+
     * The `deploymentPrefix` and `uniqueSuffix` variables that we want to use for this specific deployment.
     * The `adminPassword` value for the SQL Server instance.
     * The `keyVaultName` value.
-    * The `firstRun` value. 
-    
+    * The `firstRun` value.
+
     The template needs the name of the key vault so it can add the database connection string to the key vault for us.
 
 1. In *deploymentParameters.json*, set these values:
@@ -204,7 +204,7 @@ From Azure DevOps:
 
 1. Select your profile from the upper-right corner, then select **Personal access tokens**.
 
-    ![Accessing personal access tokens from Azure DevOps](../../shared/media/azure-devops-profile-personal-access-tokens.png)
+    ![Accessing personal access tokens from Azure DevOps.](../../shared/media/azure-devops-profile-personal-access-tokens.png)
 
 1. Select **+ New Token**.
 1. For the name, enter *Microsoft Learn - ProvisionDB*.
@@ -278,7 +278,7 @@ Add a variable group and variables to the pipeline.
 
     Your variable group looks similar to this:
 
-    ![Pipeline library variables](../media/5-library-variables.png)
+    ![Pipeline library variables in a list.](../media/5-library-variables.png)
 
 ## Allow the service connection to access the key vault
 
@@ -442,7 +442,7 @@ Create the manual approval for the `DBAVerificationApply` stage. You learned abo
 1. Select **Create**.
 1. On the **dbaverificationapply** environment page, in the drop-down menu, select **Approvals and checks**.
 
-    ![Azure Pipelines showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
+    ![Azure Pipelines showing the approvals and checks.](../../shared/media/pipeline-add-check-to-environment.png)
 
 1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
@@ -466,7 +466,7 @@ Create the manual approval for the `DBAVerificationApply` stage. You learned abo
 
     You see that the deployment finished successfully.
 
-    ![Azure Pipelines showing the completed stages](../media/5-pipeline-stages-overview.png)
+    ![Azure Pipelines showing the completed stages.](../media/5-pipeline-stages-overview.png)
 
 ## Verify the result
 

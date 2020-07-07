@@ -1,4 +1,4 @@
-Calculating a regression line for a simple binomial (two-variable) function from first principles is possible, but involves some mathematical effort. When you consider a real-world dataset in which ***x*** is not a single feature value such as temperature, but a vector of multiple variables such as temperature, day of week, month, rainfall, and so on; and the calculations become more complex.
+Calculating a regression line for a simple binomial (two-variable) function from first principles is possible, but involves some mathematical effort. When you consider a real-world dataset in which ***x*** is not a single feature value such as temperature, but a vector of multiple variables such as temperature, day of week, month, rainfall, and so on; the calculations become more complex.
 
 For this reason, data scientists generally use specialized machine learning frameworks to perform model training and evaluation. Such frameworks encapsulate common algorithms and provide useful functions for preparing data, fitting data to a model, and calculating model evaluation metrics.
 
@@ -29,4 +29,4 @@ After you've created the environment, open the **Regression.ipynb** notebook and
 > [!NOTE]
 > We highly recommend using a Visual Studio Codespace hosted in Azure for this exercise - this setup ensures the correct version of Python and the various packages you will need are installed. If you prefer to complete the exercise using your own computer, and you have experience configuring Python development environments, you can find details for configuring a local development environment at [Running the labs on your own computer](https://github.com/MicrosoftDocs/ml-basics/blob/master/local-setup.md?azure-portal=true).
 
-When you've finished working through the notebook, return to this module and more to the next unit to check your knowledge.
+When you've finished working through the notebook, return to this module and move on to the next unit to check your knowledge.

@@ -1,10 +1,10 @@
 ## Availability sets
 
-**Availability sets** are a way for you to ensure your application remains online if a high-impact maintenance event is required, or a hardware a failure occurs. 
+**Availability sets** are a way for you to ensure your application remains online if a high-impact maintenance event is required, or if a hardware failure occurs. 
 
 Availability sets are made up of **Update domains (UD)** and **Fault domains (FD)**.
 
-![An illustration shows three availability sets. The first set has one update domain, the second has two update domains, and the third is without any update domain.](../media/Azure-Availability-Sets.png)
+![An illustration shows three availability sets. The first set has one update domain, the second has two update domains, and the third is without any update domain.](../media/azure-availability-sets.png)
 
 + **Update domains**. When a maintenance event occurs (such as a performance update or critical security patch applied to the host), the update is sequenced through update domains. Sequencing updates using update domains ensures that the entire datacenter isn't unavailable during platform updates and patching. Update domains are a logical section of the datacenter, and they are implemented with software and logic.
 

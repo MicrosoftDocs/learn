@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.automate-github-using-github-script.3-use-github-script
+title:  Exercise - Using GitHub Script in GitHub Actions
+metadata:
+  title:  Exercise - Using GitHub Script in GitHub Actions
+  description: Learn to interact with the GitHub API from GitHub Actions using GitHub Script.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-use-github-script.md)]
