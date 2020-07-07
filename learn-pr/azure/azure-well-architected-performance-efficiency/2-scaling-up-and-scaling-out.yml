@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-performance-efficiency.2-scaling-up-and-scaling-out
-title: Leverage scaling up and scaling out in your architecture
+title: Use scaling up and scaling out in your architecture
 metadata:
-  title: Leverage scaling up and scaling out in your architecture
-  description: In this unit, you'll learn how to leverage scaling up and scaling out in your architecture.
+  title: Use scaling up and scaling out in your architecture
+  description: In this unit, you'll learn how to use scaling up and scaling out in your architecture.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
@@ -20,43 +20,43 @@ quiz:
     choices:
     - content: 'Increasing the amount of resources allocated to an instance'
       isCorrect: false
-      explanation: 'Increasing the amount of resources of a single instance is a description for scaling up'
+      explanation: 'Increasing the amount of resources of a single instance is a description for scaling up.'
     - content: 'Increasing the number of instances serving requests'
       isCorrect: true
       explanation: 'Scaling out increases the number of instances service requests.'
     - content: 'Adding additional storage to a virtual machine'
       isCorrect: false
-      explanation: 'Adding additional storage is not an example of scaling out.'
+      explanation: "Adding additional storage isn't an example of scaling out."
     - content: 'Reaching the maximum level of scale for your application'
       isCorrect: false
-      explanation: 'Reaching the maximum level of scale for your application can be addressed by scaling out, but is not an accurate description of scaling out.'
+      explanation: "Reaching the maximum level of scale for your application can be addressed by scaling out but isn't an accurate description of scaling out."
 
   - content: 'Which is the most accurate description of scaling down?'
     choices:
     - content: 'Decreasing the number of instances serving requests'
       isCorrect: false
-      explanation: 'Decreasing the number of instances serving requests is scaling in'
+      explanation: 'Decreasing the number of instances serving requests is scaling in.'
     - content: 'Taking ownership of how your application scales'
       isCorrect: false
-      explanation: 'Taking ownership of how your application scales is not scaling down.'
+      explanation: "Taking ownership of how your application scales isn't scaling down."
     - content: 'Decreasing the amount of resources allocated to an instance'
       isCorrect: true
       explanation: 'Scaling down is the reduction of resources that a single instance has available.'
     - content: 'Remaining below the maximum level of scale for your application'
       isCorrect: false
-      explanation: 'This is not a description of scaling down.'
+      explanation: "This isn't a description of scaling down."
 
-  - content: 'Which of the following is NOT a consideration when building a scaling strategy into your application?'
+  - content: 'Which of the following is *not* a consideration when you build a scaling strategy into your application?'
     choices:
     - content: 'The backup retention policies for your instances'
       isCorrect: true
-      explanation: 'While it is important to define the backup retention policies, it is unrelated to the ability of your application to scale.'
+      explanation: "While it's important to define the backup retention policies, it's unrelated to the ability of your application to scale."
     - content: 'State management of your application'
       isCorrect: false
-      explanation: 'State management is important to consider when building a scaling strategy. Scaling requires you to store user state outside of the individual instances to ensure the user experience is not broken as instances are added and removed.'
+      explanation: "State management is important to consider when you build a scaling strategy. Scaling requires you to store user state outside of the individual instances to ensure the user experience isn't broken as instances are added and removed."
     - content: 'Startup time of your instances'
       isCorrect: false
       explanation: 'Startup time is an important consideration in a scaling strategy. As the time to start an instance decreases, the quicker your application can react to increased demand.'
     - content: 'Automating the scaling of your instances based on a metric or schedule'
       isCorrect: false
-      explanation: 'Scaling automation is an important piece of a scaling strategy. As you automate your scaling capabilities, you will have greater ability to handle fluctuations in user load without manual intervention or poor user experience.'
+      explanation: "Scaling automation is an important piece of a scaling strategy. As you automate your scaling capabilities, you'll have greater ability to handle fluctuations in user load without manual intervention or poor user experience."

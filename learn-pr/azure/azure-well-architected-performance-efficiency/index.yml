@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.azure-well-architected-performance-efficiency
 metadata:
-  title: Microsoft Azure Well-Architected Framework - Performance efficiency
-  description: Learn how to adjust your capacity based on workload, and how to optimize network performance, storage and database performance.
+  title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
+  description: Learn how to adjust your capacity based on workload and how to optimize network performance, storage, and database performance.
   ms.date: 05/19/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Microsoft Azure Well-Architected Framework - Performance efficiency
+title: 'Microsoft Azure Well-Architected Framework - Performance efficiency'
 summary: Scaling your system to handle load, identifying network bottlenecks, and optimizing your storage performance are important to ensure your users have the best experience. Learn how to make your application perform at its best.
 abstract:  | 
-  By the end of this module, you will be able to:
-  - Scale your capacity based on workload
-  - Optimize network performance
-  - Optimize storage and database performance
-  - Improve application performance by identifying bottlenecks
+  By the end of this module, you'll be able to:
+  - Scale your capacity based on workload.
+  - Optimize network performance.
+  - Optimize storage and database performance.
+  - Improve application performance by identifying bottlenecks.
 prerequisites: |
   - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems

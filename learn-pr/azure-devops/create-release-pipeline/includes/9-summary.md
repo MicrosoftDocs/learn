@@ -48,7 +48,9 @@ These resources provide more information about some of the topics in this module
 * [Pipeline reports](https://docs.microsoft.com/azure/devops/pipelines/reports/pipelinereport?view=azure-devops&azure-portal=true)
 * [Explore the Analytics OData metadata](https://docs.microsoft.com/azure/devops/report/extend-analytics/analytics-metadata?view=azure-devops&azure-portal=true)
 
-## Implement a mobile DevOps strategy
+## Appendix: Implement a mobile DevOps strategy
+
+The following sections are optional. They provide additional information beyond what's covered in this module.
 
 So far, you've deployed the _Space Game_ website to Azure App Service but there are, of course, other opportunities for deploying your app and one of them is to mobile devices. You'll need the same commitment and cultural changes as with any other DevOps project and, of course, you'll also need the right toolset. Microsoft offers this toolset through Visual Studio Mobile Center (also called App Center), which brings together multiple services commonly used by mobile developers into an integrated cloud solution. Let's look at some of these services.
 

@@ -1,6 +1,6 @@
 :::row:::
   :::column:::
-    ![Illustration representing serverless computing](../media/6-serverless.png)
+    :::image type="icon" source="../media/6-serverless.png" border="false":::
   :::column-end:::
     :::column span="3":::
     Serverless computing is the abstraction of servers, infrastructure, and OSs. With _serverless_ computing, Azure takes care of managing the server infrastructure and allocation/deallocation of resources based on demand. Infrastructure isn't your responsibility. Scaling and performance are handled automatically, and you are billed only for the exact resources you use. There's no need to even reserve capacity.

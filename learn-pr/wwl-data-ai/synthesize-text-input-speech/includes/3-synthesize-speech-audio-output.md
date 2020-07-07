@@ -233,6 +233,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
     ```
 
 1. Get your key and region from the Speech resource your created on Azure and paste them in the **YourSubscriptionKey** and **YourServiceRegion** placeholders in the code.
+1. Before you run the code, you need to add the Cognitive Services speech package. In the terminal, enter the command ```sudo pip install --upgrade azure-cognitiveservices-speech```
 1. Select the Run Python File in Terminal (green arrow) or right-click in the Python file editor and select Run Python File in Terminal.
 1. Type some text when you're prompted. The synthesized audio is played using the default voice.
 
