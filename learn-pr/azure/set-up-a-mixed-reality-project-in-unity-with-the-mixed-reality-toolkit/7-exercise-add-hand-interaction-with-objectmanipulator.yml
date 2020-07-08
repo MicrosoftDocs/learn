@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.5-exercise-import-and-configure-resources
+title: Exercise - Add hand interaction with objectmanipulator
+metadata:
+  title: Exercise - Add hand interaction with object manipulator
+  description: Describe unit
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-add-hand-interaction-with-objectmanipulator.md)]

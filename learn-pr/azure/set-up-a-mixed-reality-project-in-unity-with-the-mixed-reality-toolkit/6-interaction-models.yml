@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.4-import-and-configure-resources
+title: Interaction models
+metadata:
+  title: Interaction models
+  description: Describe unit
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-interaction-models.md)]
