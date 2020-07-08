@@ -1,65 +1,61 @@
 Your company's drone tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. One of these services is a batch processing service that schedules drone flight paths. With a sudden growth in your customer base, you see the batch processing service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrates customers.
 
-Automatically scaling the number of batch processing service replicas allows for the timeous processing of orders and requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you realize these nodes are only used at specific times during the day and not cost-effectively. The batch processing service is stateless and doesn't save and client session data. You realize that you can save money, by using lower-cost node instances and automatically scale the node count in the node pool configured for batch processing.
+Automatically scaling the number of batch processing service replicas allows for the timeous processing of orders and requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you realize these nodes are only used at specific times during the day and not cost-effectively. The batch processing service is stateless and doesn't save and client session data. You realize you can save money, by using lower-cost node instances and automatically scale the node count in the node pool configured for batch processing.
 
 Azure provides Azure Virtual Machine instances that you can use to access unused Azure compute capacity at deep discounts. These VMs are ideal for workloads that can be interrupted, providing scalability while reducing costs.
 
 Let's look at the underlying infrastructure that allows for this cost-saving solution in AKS.
 
-## Azure Spot Virtual Machines (Spot VMs)
+## What is an Azure Spot Virtual Machine (Spot VM)?
 
-A Spot VM is a VM that allows you to access unused Azure compute capacity at deep discounts. These VMs replace the existing low-priority VMs in Azure. You can use these VMs to run workloads that include:
+A Spot Virtual Machine is a VM that allows you access to unused Azure compute capacity at deep discounts. Spot VMs replace the existing low-priority VMs in Azure. You can use Spot VMs to run workloads that include:
 
-- High-performance computing scenarios, batch processing, or visual rendering applications.
-- Large-scale stateless applications.
-- Developer/test environments, including continuous integration (CI) and continuous delivery (CD) workloads.
+- High-performance computing scenarios, batch processing, or visual rendering applications
+
+- Large-scale stateless applications
+
+- Developer/test environments, including continuous integration (CI) and continuous delivery (CD) workloads
 
 ### Spot VM availability
 
-Spot VM availability is dependent on factors such as capacity size, region, and time of day. Azure will allocate VMs only if there's capacity available, and as such, there's no SLA available for these types of VMs and offer no high availability guarantees.
+Spot VM availability depends on factors such as capacity size, region, and time of day. Azure will allocate VMs only if there's capacity available. As a result, no SLA is available for these types of VMs and they offer no high availability guarantees.
 
 ### Spot VM eviction policy
 
-Azure will evict Spot VMs with a 30 seconds notice once capacity in a region becomes limited. The default Spot VMs eviction policy is **Deallocate**.
+The default Spot VM eviction policy is **Deallocate**. Azure will evict Spot VMs with a 30 seconds notice once capacity in a region becomes limited. A VM set with the *Deallocate* policy, moves to the stopped-deallocated state when evicted. You may redeploy an evicted VM when Spot capacity becomes available again. A deallocated VM keeps counting to your Spot vCPU quota, and charges for the underlying allocated disks still apply.
 
-Deallocate moves the VM to the stopped-deallocated state when evicted. This feature allows you to redeploy an evicted VM later when Spot capacity becomes available again. A deallocated VM keeps counting to your Spot vCPU quota, and charges for the underlying allocated disks still apply.
+## What is a Spot Virtual machine scale set
 
-## Virtual machine scale set support for Azure Spot VMs
+A Spot Virtual machine scale set is Virtual machine scale sets that support Azure Spot VMs. These VMs have the same behavior as normal Spot VMs, but with one difference. You choose between two eviction policies when you use virtual machine scale set support for Azure Spot VMs. These policies are:
 
-Virtual machine scale sets provide support for Azure Spot VMs. The same considerations apply for the VMs used in a scale set as for single Spot VM.
+- **Deallocate**
 
-### Virtual machine scale eviction policies
+    The *Deallocate* policy functions exactly as described earlier.
 
-You can now choose between the default **Deallocate** or **Delete** eviction policies when using Virtual machine scale set support for Azure Spot VMs.
+- **Delete**
 
-The **Deallocate** eviction policy functions exactly as described earlier.
+    The **Delete** policy allows you to avoid the cost of disks and hitting quota limits. With the *Delete* eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for the eviction of VMs and create new VMs. Though the creation of VMs isn't guaranteed, the evicted VMs don't count towards your vCPU quota, and underlying disks cost.  
 
-The **Delete** eviction policy allows you to avoid the cost of disks and hitting quota limits.
+    Best practice advice is to only use the autoscale feature when you set the eviction policy to delete on the scale set.
 
-### Cost-benefit of using the Delete eviction policy
+## What is a Spot node pool in Azure Kubernetes Service (AKS)?
 
-With the Delete eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for the eviction of VMs and create new VMs. Though the creation of VMs isn't guaranteed, the evicted VMs don't count towards your vCPU quota, and underlying disks cost.  
-
-Best practice advice is to only use the autoscale feature on Spot scale sets when you set the eviction policy to delete.
-
-## What is a Spot node pool in Azure Kubernetes Service (AKS)
-
-A spot node pool is a user node pool backed by spot virtual machine scale sets. AKS supports *Spot VMs* when you need to create user node pools and want to use the cost benefits that *Virtual machine scale set support for Azure Spot VMs* offer.
+A spot node pool is a user node pool that uses a spot virtual machine scale set. AKS supports *Spot VMs* when you need to create user node pools and want to use the cost benefits that *Virtual machine scale set support for Azure Spot VMs* offer.
 
  These node pools allow you to:
 
-- take advantage of unutilized capacity in Azure
-- use scale set features with the *Delete* eviction policy
-- define the maximum price you want to pay per hour
-- enable the recommended AKS Kubernetes cluster autoscaler when using spot node pools
+- Take advantage of unutilized capacity in Azure
+- Use scale set features with the *Delete* eviction policy
+- Define the maximum price you want to pay per hour
+- Enable the recommended AKS Kubernetes cluster autoscaler when using spot node pools
 
 For example, to support the drone tracking application's batch processing service, you can create a spot node pool and enable the **cluster autoscaler**. You then configure the **horizontal pod scaler** to deploy additional batching processing services to match resource demands.
 
 As the demand for nodes increase, the **cluster autoscaler** can scale the number of nodes up and down in the spot node pool. Should node evictions happen, the **cluster autoscaler** will continue to try to scale the node count up if additional nodes are still needed.
 
-### Spot node pool limitations
+## Spot node pool limitations
 
-When you decide to add a spot node pool to your AKS cluster, you must consider the following limitations.
+Before you decide to add a spot node pool to your AKS cluster, consider the following limitations.
 
 - The underlying spot scale set is only deployed to a single fault domain and offers no high availability guarantees.
 - The AKS cluster needs multiple node pool support enabled.
@@ -77,7 +73,7 @@ Spot node pools are, at the time of creating this content, in preview. To comple
 >
 >In some subscriptions, such as sponsorship subscriptions, the ability to create Spot VMs and Spot node pools are limited. You may not be able to create a spot node pool for your cluster.
 
-### Enable preview features on your subscription
+## Enable preview features on your subscription
 
 To use spot node pools, you must enable the **spotpoolpreview** feature on your subscription and provide the latest set of service enhancements when configuring a cluster.
 
@@ -111,9 +107,9 @@ There are a couple of steps to registering the **spotpoolpreview** feature.
     az provider register --namespace Microsoft.ContainerService
     ```
 
-### Install aks-preview CLI extension
+## Install aks-preview CLI extension
 
-The AKS preview feature command parameters are only available in the aks-preview CLI extension. You'll need to install the aks-preview CLI extension version 0.4.53 or higher to create an AKS cluster that uses spot node pools.
+The AKS spot node pool command parameters are only available in the aks-preview CLI extension. Without the extension installed, you can't use the preview features.
 
 You can run the following two commands to install or update the extension if already installed.
 
@@ -121,21 +117,21 @@ You can run the following two commands to install or update the extension if alr
 az extension add --name aks-preview
 ```
 
-You can check the installed version of the extension if you've already installed the preview version. Run the `az extension show` command to query the extension version.
+You need to install the aks-preview CLI extension version 0.4.53 or higher to create an AKS cluster that uses spot node pools. Check the installed version of the extension if you've already installed the preview version. Run the `az extension show` command to query the extension version.
 
 ```azurecli
 az extension show --name aks-preview --query [version]
 ```
 
-You can update the extension by running the `az extension update` command if you've previously installed the extension and need to update it to a newer version.
+You update the extension by running the `az extension update` command if you've previously installed the extension and need to update it to a newer version.
 
 ```azurecli
 az extension update --name aks-preview
 ```
 
-### Add a spot node pool to an AKS cluster
+## Add a spot node pool to an AKS cluster
 
-Recall from earlier that the spot node pool can't be a primary node pool. You'll first create your cluster and then use the `az aks nodepool add` command to add a new user node pool.
+A spot node pool can't be a primary node pool for an AKS cluster. You'll first create your cluster and then use the `az aks nodepool add` command to add a new user node pool.
 
 You set several parameters for a new node pool to configure it as a spot node pool.
 
@@ -192,19 +188,19 @@ Here is an example `az aks nodepool add` command that adds a spot node pool. Not
 
 When deploying workloads in Kubernetes, you can provide information to the scheduler restrict on which nodes the workloads may or may not run. You control workload scheduling by configuring taints, toleration, or node affinity. Spot nodes are configured with a specific label and taint.
 
-### What is a taint?
+## What is a taint?
 
 A taint is applied to a node to indicate that only specific pods can be scheduled on them. Spot nodes are configured with a label set to `kubernetes.azure.com/scalesetpriority:spot`.
 
-### What is toleration?
+## What is toleration?
 
 Toleration is a specification applied to a pod to allow it to tolerate a node's taint. Spot nodes are configured with a node taint set to `kubernetes.azure.com/scalesetpriority=spot:NoSchedule`.
 
-### What is node affinity?
+## What is node affinity?
 
 Node affinity allows you to describe which Pods are scheduled on a node. Affinity is specified using labels defined on the node. For example, in AKS,  system pods are configured with anti-affinity towards spot nodes to prevent them from being scheduled on these nodes.
 
-### How to define toleration in a pod manifest file
+## How to define toleration in a pod manifest file
 
 Node taint toleration is specified by creating a `tolerations` dictionary entry in your workload manifest file. In this dictionary, you set the following properties for each node taint the workload has to tolerate in this section.
 

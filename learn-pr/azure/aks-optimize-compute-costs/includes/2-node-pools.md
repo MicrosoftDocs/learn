@@ -6,35 +6,33 @@ Let's look at how node pools and nodes are used in AKS and then how to scale the
 
 ## What is a node pool?
 
-A node pool describes a group of nodes with the same configuration in an AKS cluster. These nodes contain the underlying VMs that run your applications.
+A node pool describes a group of nodes with the same configuration in an AKS cluster. These nodes contain the underlying VMs that run your applications. You can create two types of node pools on an AKS-managed Kubernetes cluster. These are:
 
-You can create two types of node pools for an AKS-managed Kubernetes cluster, system node pools, and user node pools.
+- System node pools
+
+- User node pools.
 
 ### System node pools
 
-System node pools host critical system pods that make up the control plane of your cluster. Usually, nodes in a system node pool are reserved for system workloads and not used to run custom workloads. Every AKS cluster must contain at least one system node pool with at least one node and you must define the underlying VM sizes for nodes.
-
-System node pools only allow the use of Linux as the node OS and only run Linux-based workloads.
+System node pools host critical system pods that make up the control plane of your cluster. A system node pool only allows the use of Linux as the node OS and only run Linux-based workloads. Nodes in a system node pool are reserved for system workloads and normally not used to run custom workloads. Every AKS cluster must contain at least one system node pool with at least one node and you must define the underlying VM sizes for nodes.
 
 ### User node pools
 
-User node pools support custom workloads. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone tracking solution has a batch processing service that you deploy to a node pool configured with general-purpose VMs. The new predictive modeling service requires higher capacity GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU enabled nodes.  
+User node pools support custom workloads and allow you to specify Windows or Linux as the node operating system. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone tracking solution has a batch processing service that you deploy to a node pool configured with general-purpose VMs. The new predictive modeling service requires higher capacity GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU enabled nodes.  
 
-In contrast to system node pools, user node pools allow you to specify Windows or Linux as the node operating system.
+## Number of nodes in a node pool
 
-### Number of nodes in a node pools
+You are allowed to configure up to a 100 nodes in a node pool. However, the number of nodes you choose to configure is dependent on the number of pods that runs per node.
 
-Node pools allow you flexibility when configuring the number of nodes in a node pool. However, the number of nodes is dependent on the number of pods each node in the node pool can run.
+For example, in a system node pool, it's essential to set the minimum number of pods to run on a single node to 30. This minimum value guarantees enough space is available to run the system pods critical to cluster health. Once the number of pods exceeds this minimum value, new nodes are required in the pool to schedule additional workloads. For this reason, system node pool needs at least one node in the pool. For production environments, the recommended node count for a system node pool is a minimum of three nodes.
 
-For example, in a system node pool, it's essential to set the minimum number of pods to run on a single node to 30. This minimum value guarantees enough space is available to run the system pods critical to cluster health. Once the number of pods exceeds this minimum value, new nodes are required in the pool to schedule additional workloads. That's why, system node pools allow for a minimum of one node. For production environments, the recommended node count for a system node pool is a minimum of three nodes.
-
-User node pools are designed to run custom workloads and allows you to set the node count for a user node pool to zero.
+User node pools are designed to run custom workloads and doesn't have the 30 pod requirement. User node pools allow you to set the node count for a pool to zero.
 
 ## Manage application demand in an AKS cluster
 
-The function in AKS that provides the flexibility of increasing or decreasing the amount of compute resources in a Kubernetes cluster is called scaling. You either scale the number of workload instances that need to run or scale the number of nodes on which these workloads run. You scale workloads on an AKS-managed cluster in two ways. The first option is to scale the pods or nodes as required manually. Instead, you can use the horizontal pod autoscaler to scale pods and the cluster autoscaler to scale nodes.
+The function in AKS that allows for increasing or decreasing the amount of compute resources in a Kubernetes cluster is called scaling. You either scale the number of workload instances that need to run or scale the number of nodes on which these workloads run. You scale workloads on an AKS-managed cluster in two ways. The first option is to scale the pods or nodes as required manually. Instead, you can use the horizontal pod autoscaler to scale pods and the cluster autoscaler to scale nodes.
 
-### How to scale a node pool manually
+## How to scale a node pool manually
 
 If you're running workloads that execute for a specific duration at specific intervals, then manually scaling the node pool size is a way to control node costs.
 
@@ -62,15 +60,15 @@ az aks nodepool scale \
     --node-count 0
 ```
 
-### How to scale a cluster automatically
+## How to scale a cluster automatically
+
+:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Screenshot that shows the information captured in the basic tab.":::
 
 Azure Kubernetes Service makes use of the Kubernetes cluster autoscaler to automatically scale workloads. The cluster can scale using two options:
 
 - The horizontal pod autoscaler
 
 - The cluster autoscaler
-
-:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Screenshot that shows the information captured in the basic tab.":::
 
 Let's look at each of two options, starting with the horizontal pod autoscaler.
 
