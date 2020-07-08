@@ -38,7 +38,7 @@ In this unit, you download and test the app locally and then create the resource
     > [!div class="mx-imgBorder"]
     > ![Image of the Solution Explorer window and the "Web.config" file](..\media\2-open-web-config.png).
 
-1. In the *Web.config* file, in the *\<appSettings\>* section, set the value of the **UseMockData** key to *false*. This setting causes the app to use data that's stored in a local SQL Server database:
+1. In the *Web.config* file, in the **\<appSettings\>** section, set the value of the **UseMockData** key to *false*. This setting causes the app to use data that's stored in a local SQL Server database:
 
     ```xml
     ...
