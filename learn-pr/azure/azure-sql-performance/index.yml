@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure-sql-performance
 metadata:
-  title: Azure SQL - Deliver consistent performance
+  title: Azure SQL fundamentals - Deliver consistent performance
   description: TODO
   ms.date: 07/31/2020
   author: rgward
   ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure SQL - Deliver consistent performance
+title: Azure SQL fundamentals - Deliver consistent performance
 summary: TODO
 abstract: | 
   In this module, you will:
