@@ -12,3 +12,17 @@ title: Configure and maintain performance
 durationInMinutes: 10
 content: |
   [!include[](includes/3-configure-maintain-performance.md)]
+quiz:
+    title: "Knowledge Check"
+    questions:
+    - content: "The number of files for tempdb is configurable for Azure SQL Database by which method"
+      choices:
+      - content: "The T-SQL ALTER DATABASE statement"
+        isCorrect: false
+        explanation: "You cannot modify the file properties for tempdb through T-SQL"
+      - content: "File properties in SQL Serer Management Studio (SSMS)"
+        isCorrect: false
+        explanation: "File properties in SSMS just use T-SQL behind the scenes"
+      - content: "Increasing the number of vCores through the Azure Portal"
+        isCorrect: true
+        explanation: "Increasing the number of vCores may give you additional tempdb files"

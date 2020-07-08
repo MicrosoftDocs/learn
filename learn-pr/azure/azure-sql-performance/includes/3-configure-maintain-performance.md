@@ -6,7 +6,7 @@ Tempdb is an important shared resource used by applications. Ensuring the right 
 
 Tempdb files are always automatically stored on local SSD drives so I/O performance shouldn't be an issue.
 
-SQL Server professionals often use more than one database file to partition allocations for tempdb tables.  For Azure SQL Database, the number of files are scaled with the number of vCores (2 vCores=4 files,…) with a max of 16. The number of files is not configurable. The maximum size of tempdb is scaled per number of vCores. You get 12 files with Azure SQL Managed Instance independent of vCores and you cannot change this number. We are looking in the future to allow configuration of the number of files for Azure SQL Managed Instance.
+SQL Server professionals often use more than one database file to partition allocations for tempdb tables.  For Azure SQL Database, the number of files are scaled with the number of vCores (2 vCores=4 files,…) with a max of 16. The number of files is not configurable through T-SQL but by changing the deployment option. The maximum size of tempdb is scaled per number of vCores. You get 12 files with Azure SQL Managed Instance independent of vCores and you cannot change this number. We are looking in the future to allow configuration of the number of files for Azure SQL Managed Instance.
 
 Database options MIXED_PAGE_ALLOCATION is set to OFF and AUTOGROW_ALL_FILES is set to ON. This cannot be configured but they are the recommended defaults as with SQL Server.
 
@@ -47,4 +47,4 @@ Index creation and maintenance for Azure SQL is exactly the same as SQL Server. 
 
 Statistics are the same for Azure SQL as with SQL Server. Automatic statistics options for databases are available for Azure SQL just like SQL Server.
 
-TODO: Put in Quiz here
+Now that you have learned some of the configuration and maintenance options for performance for Azure SQL, complete the following knowledge check before proceeding to the next unit.
