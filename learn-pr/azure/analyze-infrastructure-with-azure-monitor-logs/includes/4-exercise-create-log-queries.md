@@ -6,12 +6,9 @@ In this exercise, you'll practice performing Azure Monitor log queries. You'll u
 
 ## Create basic Azure Monitor log queries to extract information from log data
 
-Let's use the **Azure Monitor Logs** website to practice writing queries against sample data. This site is provided for demonstration with pre-populated sample data. The user interface is similar to the Azure portal, and you can use the Kusto language.
+Let's use the **Azure Monitor Demo Logs blade** to practice writing queries against sample data. This site is provided for demonstration with pre-populated sample data. The user interface is similar to the Azure portal, and you can use the Kusto language.
 
-1. In your browser, go to the URL https://portal.loganalytics.io/demo#/discover/query/main.
-
-    > [!NOTE]
-    > You can also run queries in your own subscription under **Monitor** > **Logs**. The results depend on the resources that your subscription is using.
+1. In your browser, open the [Azure Monitor Demo Logs blade](https://portal.azure.com/learn.docs.microsoft.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
 
 1. Enter a basic query in the **Type your query here** box. The example query retrieves the details of the most recent 10 security events.
 
@@ -52,6 +49,7 @@ Let's use the **Azure Monitor Logs** website to practice writing queries against
         | where TimeGenerated >= startofweek(ago(21d))
         | summarize dcount(Computer) by endofweek(TimeGenerated) | render barchart kind=default
     ```
+
 In addition to writing queries from scratch, the operations team can also take advantage of predefined example queries in Azure Monitor Logs that answer common questions related to the health, availability, usage and performance of their resources. Use the **Time Range** parameter above the query editor to select **Last 24 hours** as the time period of concern. Navigate to the **Queries** tab in the left pane to view a list of the sample queries grouped by Category, Resource Type, Solution or Topic.
 
 1. Leave the Group by setting on **Resource Type**, expand **Virtual Machine** and run the query called **Distinct missing updates cross computers**. This query returns a list missing Windows updates from Virtual Machines sending logs into the workspace.
