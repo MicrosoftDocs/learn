@@ -93,5 +93,5 @@ This exercise will guide you through getting ostress configured, and then you'll
     You might be wondering, if there's a way to check if potentially a failover occurred. There is no clear "Failover occurred" message that exists today, however, checking the Resource Health can be a good indicator.  
 
     In the Azure portal, navigate to your Azure SQL Database, and in the left-hand menu, under "Support + troubleshooting", select **Resource Health**. Some time after a failover (can be 5-15 minutes), you may see a health event similar to below. This can indicate several things, but one is that something has happened and Azure has decided to failover.
-    
-    ![](../media/healthhistory.png)
+
+    ![Screenshot of the health history details](../media/5-health-history.png)

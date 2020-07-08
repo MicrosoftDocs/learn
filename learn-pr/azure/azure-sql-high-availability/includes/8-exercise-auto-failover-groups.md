@@ -177,6 +177,6 @@ This notebook will guide you through configuring auto-failover groups for your A
         -ResourceGroupName $resourceGroup -ServerName $drServer).ReplicationRole
     ```
 
-    You can now close both command prompts and maxmize the Microsoft Learn browser window.
+    You can now close both command prompts and maximize the Microsoft Learn browser window.
 
 In this exercise, you learned how to deploy and configure auto-failover groups, as well as what that means from an application perspective. Auto-failover groups is just one way you can go further with availability and read-scale in Azure SQL.

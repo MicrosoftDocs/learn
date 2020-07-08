@@ -84,7 +84,7 @@ Check the **Remember password** box and select **Connect**.
 
 > **Note**: Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
 
-![Connect to SQL Database in SSMS](../media/connectazsql.png)  
+![Connect to SQL Database in SSMS](../media/3-connect-azure-sql.png)  
 
 ### Set up: Configure Auditing with Log Analytics
 
@@ -94,7 +94,7 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
     Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) and navigate to your Azure SQL Database. In the left-hand task menu, under Security, select **Auditing**. Select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server.  
 
-    ![Database-level auditing blade](../media/dbaudit.png)  
+    ![Database-level auditing blade](../media/3-db-audit.png)  
 
     Next, set **Auditing** to **ON**.  
 
@@ -104,15 +104,15 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
     Select **Log Analytics (Preview)** and the **Configure** button.  
 
-    ![Server-level auditing blade](../media/serveraudit.png)  
+    ![Server-level auditing blade](../media/3-server-audit.png)  
 
     Next, select **+ Create New Workspace**.  
 
-    ![Create a new workspace](../media/newws.png)  
+    ![Create a new workspace](../media/3-new-workspace.png)  
 
     Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.  
 
-    ![Details for new workspace](../media/laws.png)  
+    ![Details for new workspace](../media/3-workspace-details.png)  
 
     This may take a few moments to validate and create. You should now see your Log Analytics account.  
 
@@ -120,7 +120,7 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
     Select **Save**.  
 
-    ![Save Log Analytics details](../media/save.png)  
+    ![Save Log Analytics details](../media/3-save.png)  
 
 ### Process for PITR
 
@@ -142,7 +142,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     **Navigate to SSMS** and **check/update your connection**. You'll want to make sure that the connection you use is connecting to the logical server, but not a specific database (e.g. set to `<default>` in screenshot below). You should also confirm that **Additional Connection Parameters** is contains no text.  
 
-    ![Default connection](../media/default.png)
+    ![Default connection](../media/3-default.png)
 
     Next, right-click on your AdventureWorks database and create a new query. Run the following query and review the results.  
 
@@ -150,7 +150,7 @@ In this exercise, you'll follow the steps that go along with the process above.
     SELECT TOP 10 * from SalesLT.SalesOrderDetail
     ```
 
-    ![Sales order detail table](../media/salesdetailssms.png)  
+    ![Sales order detail table](../media/3-sales-detail-ssms.png)  
 
     For whatever reason, let's create a scenario where someone accidentally deletes that table. Today, you will be that someone.  
 
@@ -190,13 +190,13 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     One way to determine the drop time, is if you have access to the `Completion time` of the `DROP` statement, which you noted in the previous step.  
 
-    A new way may be to use the Audit logs in the Azure portal. Navigate to your Azure SQL Database in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com), e.g. **AdventureWorks**. In the left-hand menu, under Security, select **Auditing** and then select **View audit logs**.  
+    A new way may be to use the Audit logs in the Azure portal. Navigate to your Azure SQL Database in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), e.g. **AdventureWorks**. In the left-hand menu, under Security, select **Auditing** and then select **View audit logs**.  
 
-    ![Select view audit logs](../media/viewauditlogs.png)
+    ![Select view audit logs](../media/3-view-audit-logs.png)
 
     Then, click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use for querying logs for SQL professionals.  
 
-    ![Select log analytics](../media/loganalytics.png)  
+    ![Select log analytics](../media/3-log-analytics.png)  
 
     Next, copy the below KQL query and paste it into the query editor in the Log Analytics view in the Azure portal (replace the existing query).
 
@@ -211,7 +211,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     If you see other `DROP`s, you should select the one related to the table you just dropped.  
 
-    ![Log analytics results](../media/laresults.png)
+    ![Log analytics results](../media/3-log-analytics-results.png)
 
     Note that the logs can take a few minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
 
@@ -237,7 +237,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     You can check the status by refreshing your view of databases in **SSMS** by right-clicking on **Databases** and selecting **Refresh**. Once the database has been deployed, you will see the restore is now in progress.  
 
-    ![DB Restoring in SSMS](../media/dbrestoring.png)  
+    ![DB Restoring in SSMS](../media/3-db-restore.png)  
 
     Once you see this, it should only be 2-3 minutes more. You will know it is done, because the command will complete. Also, you will no longer see "(Restoring...)" next to the copy database when you initiate a refresh.  
 
@@ -249,7 +249,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     Then, right-click on your new database, e.g. **AdventureWorks-copy** and select **New Query**.  
 
-    ![Create new query](../media/newnewquery.png)  
+    ![Create new query](../media/3-new-query.png)  
 
     Use the following query to confirm the table exists.  
 
@@ -259,7 +259,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     You should get something similar to the following screenshot, which confirms your database has been restored to where you want it to be.
 
-    ![Sales order detail table](../media/salesdetailssms.png)  
+    ![Sales order detail table](../media/3-sales-detail-ssms.png)  
 
 4. Rename the original database  
 

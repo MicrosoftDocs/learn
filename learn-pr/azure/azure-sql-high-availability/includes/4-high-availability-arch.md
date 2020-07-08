@@ -8,13 +8,13 @@ Databases and managed instances in the General purpose service tier have the sam
 
 As discussed in an earlier module in the learning path, all of Azure SQL is built on Azure Service Fabric, which serves as the Azure backbone. If Azure Service Fabric determines that a failover needs to occur, the failover will be similar to that of a Failover Cluster Instance (FCI) where the service fabric will look for a node with spare capacity and spin up a new SQL Server instance. Then, the database files will be attached, recovery will be run, and gateways are updated to point applications to the new node. Note that there is no virtual network or listener or updates required, this just comes built-in.
 
-![General purpose architecture](../media/gparch.png)
+![General purpose architecture](../media/4-general-purpose-architecture.png)
 
 ## Business critical
 
 The next service tier to consider is Business critical, which is meant to obtain the highest performance and availability of all Azure SQL service tiers (General purpose, Hyperscale, Business critical). Business critical is meant for mission-critical applications that need low latency and minimal downtime.  
 
-![Business critical architecture](../media/bcarch.png)
+![Business critical architecture](../media/4-business-critical-architecture.png)
 
 Business critical is very similar to deploying an Always on Availability Group (AG) behind the scenes. Unlike the General purpose tier, in Business critical the tempdb, data and log files are all running on directly attached SSDs, which reduces network latency significantly (General purpose uses remote storage). In this AG, there are three secondary replicas, and one of them can be used as a read-only endpoint (at no additional charge). One secondary replica must sync for a commit.
 
@@ -26,7 +26,7 @@ If any type of failure occurs and the service fabric decides a failover needs to
 
 The Hyperscale service tier is only available in Azure SQL Database, but is in the process of being developed for Azure SQL Managed Instance. This service tier has a unique architecture.
 
-![Hyperscale architecture](../media/hsarch2.png)
+![Hyperscale architecture](../media/4-hyperscale-architecture-2.png)
 
 The architecture leverages paired page servers and the ability to scale horizontally to put all of the data in caching layers. The log and data files are stored using a combination of Azure Premium Storage and Azure Standard Storage. One interesting piece in this architecture is how the log service was pulled out. The log service is used to feed the replicas as well as the page servers. Transactions can commit when the log service hardens to the landing zone, which means the consumpution of the changes by a secondary compute replica is not required for a commit. Unlike other service tiers, the existence of secondary replicas is up to you to determine. You can configure zero to four secondary replicas, which can all be used for read-scale. 
 

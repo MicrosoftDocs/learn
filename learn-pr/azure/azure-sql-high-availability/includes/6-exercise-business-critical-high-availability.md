@@ -68,7 +68,7 @@ This exercise will guide you through getting ostress configured, and then you'll
 
     Another way to confirm this is to navigate to your database in the Azure portal and review the **Overview** tab, locating the **Pricing tier**.  
 
-    ![Overview tab](../media/overviewtab.png)
+    ![Overview tab](../media/6-overview-tab.png)
 
     > Note: There are many other ways to check this, but another way is through SSMS. If you right-click on your database and select **Properties** > **Configure SLO**, you can also view the changes.  
 
@@ -125,11 +125,11 @@ This exercise will guide you through getting ostress configured, and then you'll
 
     In SSMS, create a new query connection (select **File** > **New** > **Database Engine Query**).  
 
-    ![New database engine query](../media/newdbenginequery.png)  
+    ![New database engine query](../media/6-new-db-engine-query.png)  
 
     Using the same way you've been connecting to your Azure SQL Database logical server (either with SQL Auth or Azure AD Auth), select **Options**.  
 
-    ![Options in SSMS](../media/connectazsql.png)  
+    ![Options in SSMS](../media/3-connect-azure-sql.png)  
 
     Select **Connection Properties**, and select **Reset All**. Then, under "Connect to database" select **Browse server** and select your **AdventureWorks-bc** database.  
 
@@ -147,8 +147,8 @@ This exercise will guide you through getting ostress configured, and then you'll
     SELECT DATABASEPROPERTYEX(DB_NAME(), 'Updateability')
     ```
 
-    ![Read only response](../media/readonly.png)
+    ![Read only response](../media/6-read-only.png)
 
     You can optionally re-connect and update the Additional Connection Parameters (replace `ReadOnly` with `ReadWrite`), and confirm you are accessing the read-write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in.
 
-    ![Read write response](../media/readwrite.png)
+    ![Read write response](../media/6-read-write.png)
