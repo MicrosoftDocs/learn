@@ -145,6 +145,21 @@ You want to create a separate node pool that supports the batch processing servi
 
     1. Notice the `nodeLabels` and `nodeTaints` applied to the node pool. You use these values to schedule workloads on the nodes in this node pool.
 
+## Configure a namespace
+
+1. Use the `kubectl create namespace` command to create a namespace for the application called **cost savings**. You'll use this namespace to make it easier to select your workloads.
+
+    ```bash
+    kubectl create namespace costsavings
+    ```
+
+    You'll see a confirmation that the namespace was created.
+
+    ```output
+    namespace/costsavings created
+    ```
+
+
 ## Schedule a pod with spot pool node affinity
 
 You can schedule a pod to run on a spot node by adding toleration to the pod's deployment manifest file. When the toleration corresponds with the taint applied to your spot nodes, then pod will be scheduled on these nodes.
@@ -191,19 +206,19 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     -f spot-node-deployment.yaml
     ```
 
-    You'll see an output like this example.
+    You'll see output like this example.
 
     ```output
     pod/nginx created
     ```
 
-1. You can *watch* the pods rolling out using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `costsavings` namespace.
+1. You can fetch more information on the running pod using the `-o wide` flag with the `kubectl get pods` command. In this case you want to see on which node the pod is scheduled. Make sure to query for pods in the `costsavings` namespace.
 
     ```bash
     kubectl get pods --namespace costsavings -o wide
     ```
 
-    You'll see an output like this example.
+    You'll see output like this example.
 
     ```output
     NAME    READY   STATUS    RESTARTS   AGE   IP           NODE                                   NOMINATED NODE   READINESS GATES
