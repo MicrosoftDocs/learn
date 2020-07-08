@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.microservices-devops-aspnet-core.summary
+uid: learn-pr.microservices-devops-aspnet-core.6-summary
 metadata:
-  title: summary
+  title: Summary
   description: Summary
   ms.date: 07/08/2020
   author: scottaddie
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
   ROBOTS: NOINDEX
-title: summary
+title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/summary.md)]
+  [!include[](includes/6-summary.md)]
