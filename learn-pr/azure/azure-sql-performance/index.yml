@@ -12,9 +12,10 @@ title: Azure SQL - Deliver consistent performance
 summary: TODO
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Identify the performance capabilities of Azure SQL
+  - Configure and maintain the performance features of Azure SQL
+  - Monitor and troubleshoot performance in Azure SQL
+  - Improve performance with Intelligent Insights
 prerequisites: | 
   - TODO
 iconUrl: http://via.placeholder.com/120x120
