@@ -35,6 +35,18 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
 
+1. Open a terminal window using the *Terminal* menu.
+1. If the dropdown menu on the right of the terminal window says *bash* you have the right shell to work from and you can skip to the next section.
+
+      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the dropdown." border="true":::
+
+1. If not, select the dropdown and choose **Select Default Shell**.
+1. Select **bash**.
+
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
+
+1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
+
 ### Sign in to Azure
 
 1. From the terminal in Visual Studio Code, run this command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
@@ -80,7 +92,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 Here, you deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. However, you'll see a successful deployment.
 
-1. Deploy the template using Azure CLI commands in the terminal.
+1. Deploy the template using Azure CLI commands in the Visual Studio Code terminal.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -101,6 +113,18 @@ Here, you deploy the ARM template to Azure. The ARM template doesn't have any re
 ::: zone pivot="powershell"
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you [install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) and that you are signing in to the same account that activated the sandbox.
+
+1. Open a terminal window using the *Terminal* menu.
+1. If the dropdown menu on the right of the terminal window says *pwsh* you have the right shell to work from and you can skip to the next section.
+
+      :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh in the dropdown." border="true":::
+
+1. If not, select the dropdown and choose **Select Default Shell**.
+1. Select **pwsh**.
+
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
+
+1. Select the **+** in the terminal to create a new terminal with *pwsh* as the shell.
 
 ### Sign in to Azure using Azure PowerShell
 

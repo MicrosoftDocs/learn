@@ -77,7 +77,7 @@ Here, you change the name of the deployment to better reflect what this deployme
 
 ::: zone-end
 
-### Check you deployment
+### Check your deployment
 
 1. In your browser, navigate back to Azure. Go to your resource group and see that there are now *3 Succeeded* deployments. Select this link.
 1. Notice that all three deployments are in the list.
@@ -276,7 +276,7 @@ Here, you deploy the template and see the endpoints output as JSON. You need to 
 
 ::: zone-end
 
-### Check your deployment
+### Check your output deployment
 
 1. In the portal, navigate to your *addOutputs* deployment. You can find your output there as well.
 
