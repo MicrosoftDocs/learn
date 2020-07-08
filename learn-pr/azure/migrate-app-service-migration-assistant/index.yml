@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.migrate-app-service-migration-assistant
 metadata:
-  title: Migrate an on-premises web application to Azure with the App Service Migration Assistant
+  title: Migrate an on-premises web application to Azure App Service
   description: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
   ms.date: 05/21/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrate an on-premises web application to Azure with the App Service Migration Assistant
+title: Migrate an on-premises web application to Azure App Service
 summary: Use the Azure App Service Migration Assistant to assess the readiness of a web app to be deployed on App Service, and perform the migration.
 abstract: |
   By the end of this module, you will be able to:
@@ -27,6 +27,7 @@ roles:
 - developer
 products:
 - azure
+- azure-app-service
 units:
 - learn.azure.migrate-app-service-migration-assistant.introduction
 - learn.azure.migrate-app-service-migration-assistant.exercise-setup
