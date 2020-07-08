@@ -5,9 +5,10 @@ This is the fourth module of the Azure SQL Fundamentals learning path. The recom
 At the end of this module, you will be able to:
 
 - Identify the performance capabilities of Azure SQL
-- Configure and maintain the performance features of Azure SQL
+- Configure and maintain the performance of Azure SQL
 - Monitor and troubleshoot performance in Azure SQL
-- Improve performance with Intelligent Insights
+- Accelerate and tune performance in Azure SQL
+- Improve performance with Intelligent Performance
 
 ## Prerequisites for exercises
 
