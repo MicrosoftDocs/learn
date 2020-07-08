@@ -1,4 +1,4 @@
-As more development teams in your company embrace AKS as a development platform, you realize you need to manage costs by enforcing business rules that define workload resource limits. You want to make sure developers can only deploy workloads within specific CPU and memory allocation limits. The system must prevent workloads that exceed the limits of running.
+Development teams in your company are embracing AKS as a development platform. You realize you need to manage costs by enforcing business rules that define workload resource limits. You want to make sure developers can only deploy workloads within specific CPU and memory allocation limits. The system must prevent workloads that exceed the limits of running.
 
 In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You want to limit the resources requested by workloads deployed by your development teams. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceeds the policy's resource parameters.
 
@@ -172,8 +172,8 @@ You configure the new Azure Policy using the Policy service in the Azure portal.
 
     | Option | Value
     | --- | --- |
-    | **Max allowed CPU units** | Set the value to **200m**. The policy matches this value to both the workload resource request value as well as the workload limit value as specified in the workload manifest file. |
-    | **Max allowed memory bytes** | Set the value to **256Mi**. The policy matches this value to both the workload resource request value and the workload limit value as specified in the workload's manifest file. |
+    | **Max allowed CPU units** | Set the value to **200m**. The policy matches this value to both the workload resource request value and the workload limit value as specified in the workload manifest file. |
+    | **Max allowed memory bytes** | Set the value to **256Mi**. The policy matches this value to the workload resource request and limit values specified in the workload's manifest file. |
     | **Effect** | Set the value to **deny**. |
     | **Namespace exclusions** | Leave the **default** values as set as *kube-system; gatekeeper-system;azure-arc*. |
 
