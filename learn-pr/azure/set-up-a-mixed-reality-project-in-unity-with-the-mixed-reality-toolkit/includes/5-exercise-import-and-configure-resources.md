@@ -46,4 +46,4 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add MRTK to your current scene. Two new objects are added to the Hierarchy: **MixedRealityToolkit** and **MixedRealityPlayspace**.
 
-    :::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects":::
+:::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects":::
