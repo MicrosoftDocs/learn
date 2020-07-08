@@ -7,15 +7,15 @@ During deployment of Azure SQL Database, the script used selected **Allow Azure 
 #### Part 1: Managing firewall rules in the Azure portal
 
 1. Restrict access from all Azure services and resources  
-Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com), specifically to your Azure SQL Database logical **server**.  
+Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), specifically to your Azure SQL Database logical **server**.  
 
     Select **Firewalls and virtual networks** under **Security** from the left-hand menu.  
 
-    ![Navigate to firewalls and virtual networks](../media/fwvn.png)  
+    ![Navigate to firewalls and virtual networks](../media/4-firewall-virtual-network.png)  
 
     Switch **Allow Azure services and resources to access this server** to **No**. During deployment, you should have added your Client IP address already, but if one of the Rules does not match your Client IP displayed (see below), select **Add Client IP**.  
 
-    ![Add your Client IP address](../media/clientip2.png)  
+    ![Add your Client IP address](../media/4-client-ip.png)  
 
     Finally, select **Save**. You can select **Overview** in the left-hand menu to navigate back to the overview of your database.  
 
@@ -23,7 +23,7 @@ Navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com
 
     To confirm you still have access from your local machine, navigate to SSMS and refresh your connection to the Azure SQL Database logical server. If no errors occur, you have successfully configured access to your Azure SQL Database logical server for your IP address only.  
 
-    ![Refresh database connection](../media/dbrefresh.png)  
+    ![Refresh database connection](../media/4-db-refresh.png)  
 
 3. Check connection to Azure SQL Database
 
