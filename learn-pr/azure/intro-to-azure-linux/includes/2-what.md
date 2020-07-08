@@ -58,7 +58,7 @@ Build a secure foundation for your apps and workloads with security tools and ca
 
 ### Business continuity and disaster recovery
 
-Keep your data safe and your workloads online with an Azure-supported business continuity and disaster recovery strategy. Azure Backup creates encrypted snapshot backups of all of your VMs, and supports application consistency This ensures that applications start up as expected after restoring a snapshot. Azure Site Recovery ensures that apps and workloads remain up and running during outages, by replicating VMs across geographical regions.
+Keep your data safe and your workloads online with an Azure-supported business continuity and disaster recovery strategy. Azure Backup creates encrypted snapshot backups of all of your VMs, and supports application consistency. This ensures that applications start up as expected after restoring a snapshot. Azure Site Recovery ensures that apps and workloads remain up and running during outages, by replicating VMs across geographical regions.
 
 ### Azure Migrate
 
