@@ -45,7 +45,7 @@ To perform analysis on waiting scenarios you typically look at:
 
 ## Scenarios specific to Azure SQL
 
-There are some performance scenarios that are specific to Azure SQL
+There are some performance scenarios that are specific to Azure SQL.
 
 ### Log governance
 
@@ -69,15 +69,15 @@ SQL Server uses a worker pool of threads but has limits on the maximum number of
 
 If you use a Business Critical service tier you may unexpectedly see the following wait types:
 
-HADR_SYNC_COMMIT
-HADR_DATABASE_FLOW_CONTROL
-HADR_THROTTLE_LOG_RATE_SEND_RECV
+- HADR_SYNC_COMMIT
+- HADR_DATABASE_FLOW_CONTROL
+- HADR_THROTTLE_LOG_RATE_SEND_RECV
 
 Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). Business Critical (BC) tiers use AG technology behind the scenes to implement SLA and features of a BC service tier.
 
 ### Hyperscale
 
-The Hyperscale unique architecture can result in some unique performance wait types that start with RBIO*
+The Hyperscale unique architecture can result in some unique performance wait types that are prefixed with **RBIO**
 
 In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
 
