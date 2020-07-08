@@ -4,13 +4,13 @@ In this unit, you store the SQL Server connection string in your Azure key vault
 
 ## Create an Azure key vault and store the connection string
 
-1. In the Cloud Shell window on the right, to define a PowerShell variable containing the name of the key vault to be created, run the following command: 
+1. In the Cloud Shell window on the right, to define a PowerShell variable that contains the name of the key vault to be created, run the following command: 
 
     ```PowerShell
     $vaultname = (-join("shopvault", $useralias))
     ```
 
-1. Create an Azure key vault.
+1. Create the Azure key vault.
 
     ```PowerShell
     New-AzKeyVault `
@@ -19,7 +19,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
         -location $location 
     ```
 
-    When the key vault is created, you receive the following warning:
+    When the key vault is created, you'll receive the following warning:
     
     ```output
     WARNING: Access policy is not set. No user or application have access permission to use this vault. This can happen if the vault was created by a service principal. Please use Set-AzKeyVaultAccessPolicy to set access policies.
@@ -108,7 +108,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
 
 ## Configure the web app
 
-1. Switch to Visual Studio on your computer, and return to the **eShopLegacyWebFormsSolution** solution that contains the web app.
+1. Switch to Visual Studio on your computer, and return to the **eShopLegacyWebForms** solution that contains the web app.
 
 1. On the **Tools** menu, select **NuGet Package Manager**, and then select **Package Manager Console**.
 
@@ -154,7 +154,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
     ...
     ```
 
-1.  Add an empty key to the **\<appSettings\>** section, with the name **KeyVaultName**. This key vault will be used as the source for the connection string. However, this setting is simply a placeholder. At runtime, the web app will retrieve the value from the **KeyVaultName** app setting that you specified earlier for the Azure web app.
+1.  Add an empty key to the **\<appSettings\>** section, with the name **KeyVaultName**. This key vault will be used as the source for the connection string. However, this setting is only a placeholder. At runtime, the web app will retrieve the value from the **KeyVaultName** app setting that you specified earlier for the Azure web app.
 
     ```xml
     ...
@@ -167,12 +167,12 @@ In this unit, you store the SQL Server connection string in your Azure key vault
 
 ## Deploy the web app to Azure
 
-1.  In the **Solution Explorer** window, expand the **Models** folder, expand the **Infrastructure** folder, and then select the **dbo.catalog_brand_hilo.Sequence.sql** file.
+1.  In the **Solution Explorer** window, expand the **Models** folder, expand the **Infrastructure** folder, and then select the *dbo.catalog_brand_hilo.Sequence.sql* file.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the Solution Explorer window, with the "dbo.catalog_brand_hilo.Sequence.sql" file highlighted.](..\media\4-edit-sql-file.png)
 
-1. In the **dbo.catalog_brand_hilo.Sequence.sql** file, comment out the **USE** statement at the start of the file, as shown below.
+1. In the *dbo.catalog_brand_hilo.Sequence.sql* file, comment out the **USE** statement at the start of the file, as shown below.
 
     ```sql
     -- USE [Microsoft.eShopOnContainers.Services.CatalogDb]
@@ -186,7 +186,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
     CACHE 
     ```
 
-1. Repeat step 2 for the **dbo.catalog_hilo.Sequence.sql** file and the **dbo.catalog_type_hilo.Sequence.sql** file.
+1. Repeat step 2 for the *dbo.catalog_hilo.Sequence.sql* file and the *dbo.catalog_type_hilo.Sequence.sql* file.
 
     > [!NOTE]
     > The scripts in these files run when the database is seeded with data. This seeding happens automatically the first time you run the application against a new database. The statements that you've commented out are required only when you run the application locally. When you run the application by using the Azure SQL Server database, you specify the database to be used as part of the connection string.
@@ -216,7 +216,7 @@ In this unit, you store the SQL Server connection string in your Azure key vault
     > [!div class="mx-imgBorder"]
     > ![Image of the "Publish" page, with the "Publish" button highlighted.](..\media\4-webapp-publish.png)
 
-    Wait for the web app to be built and deployed to the App Service. When deployment is complete, the web app starts, and Visual Studio opens a web browser. 
+    Wait for the web app to be built and deployed to the App Service. When the deployment is complete, the web app starts, and Visual Studio opens a web browser. 
     
 1. Verify that the web app operates in the same manner as it did before, when it was running locally. For the web app to connect to the database, it must have retrieved the connection string from the key vault.
 
