@@ -8,6 +8,7 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
 title: "Deploy to multiple Azure environments by using Azure Resource Manager template features"
 summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates using functions, variables, tags and parameter files.
 abstract: |
