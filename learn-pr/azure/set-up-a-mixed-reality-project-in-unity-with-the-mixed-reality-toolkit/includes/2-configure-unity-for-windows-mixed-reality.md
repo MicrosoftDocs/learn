@@ -24,4 +24,4 @@ With regards to performance, selecting the **16-bit depth** format compared to 2
 
 ## Porting an existing Unity app to Windows Mixed Reality
 
-If you have an existing Unity project that you're porting to Windows Mixed Reality, refer to the [Unity porting guide](https://docs.microsoft.com/en-us/windows/mixed-reality/porting-guides) to get started. Bringing existing content over to Windows Mixed Reality involves retargeting the usage of other platform SDKs to the Windows APIs. If your app is not already built for the Universal Windows Platform, changing over to the platform will be part of the porting experience.
+If you have an existing Unity project that you're porting to Windows Mixed Reality, refer to the [Unity porting guide](https://docs.microsoft.com/windows/mixed-reality/porting-guides) to get started. Bringing existing content over to Windows Mixed Reality involves retargeting the usage of other platform SDKs to the Windows APIs. If your app is not already built for the Universal Windows Platform, changing over to the platform will be part of the porting experience.

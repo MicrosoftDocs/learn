@@ -35,8 +35,10 @@ units:
 - learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.3-exercise-configure-unity-for-windows-mixed-reality
 - learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.4-import-and-configure-resources
 - learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.5-exercise-import-and-configure-resources
-- learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.7-knowledge-check
-- learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.8-summary
+- learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.6-interaction-models
+- learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.7-exercise-add-hand-interaction-with-objectmanipulator
+- learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.8-knowledge-check
+- learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.9-summary
 
 badge:
   uid: learn.undefined.badge
