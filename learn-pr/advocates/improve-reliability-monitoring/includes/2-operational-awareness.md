@@ -180,7 +180,7 @@ make use of other people's careful work when constructing dashboards.
 Let's look at final example for this section that nicely ties together two
 of the ideas from this unit. If you download this JSON file:
 
-[AzureInventoryDashboard.json](https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/master/ops10/demos/AzureInventoryDashboard.json)
+[AzureInventoryDashboard.json](https://raw.githubusercontent.com/microsoft/ignite-learning-paths-training-ops/main/ops10/demos/AzureInventoryDashboard.json)
 to your computer and then upload it to a dashboard, you should see
 something like this:
 
