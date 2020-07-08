@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.microservices-devops-aspnet-core.1-introduction
+uid: learn.microservices-devops-aspnet-core.1-introduction
 metadata:
   title: Introduction
   description: Introduction
@@ -12,4 +12,5 @@ metadata:
 title: introduction
 durationInMinutes: 1
 content: |
+  [!include[](includes/1-introduction.md)]
   [!include[](includes/1-introduction.md)]
