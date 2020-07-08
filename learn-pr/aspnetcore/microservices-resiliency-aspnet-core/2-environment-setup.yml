@@ -1,14 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.microservices-resiliency-aspnet-core.2-environment-setup
+uid: learn.microservices-resiliency-aspnet-core.2-environment-setup
 metadata:
   title: 2-environment-setup
   description: ...
-  ms.date: ...
-  author: ...
-  ms.author: ...
+  ms.date: 07/08/2020
+  author: scottaddie
+  ms.author: scaddie
   ms.topic: interactive-tutorial
-  ms.prod: ...
-  ROBOTS: NOINDEX
+  ms.prod: learning-aspnetcore
 title: 2-environment-setup
 durationInMinutes: 1
 content: |

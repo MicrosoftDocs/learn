@@ -1,28 +1,36 @@
 ### YamlMime:Module
-uid: learn-pr.microservices-resiliency-aspnet-core
+uid: learn.microservices-resiliency-aspnet-core
 metadata:
   title: microservices-resiliency-aspnet-core
   description: ...
-  ms.date: ...
+  ms.date: 07/08/2020
   author: ...
   ms.author: ...
   ms.topic: ...
-  ms.prod: ...
+  ms.prod: learning-aspnetcore
 title: microservices-resiliency-aspnet-core
 summary: ...
 abstract: ...
 prerequisites: ...
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
-levels: ...
-roles: ...
-products: ...
+levels:
+- intermediate
+roles:
+- developer
+products:
+- dotnet
+- aspnet-core
+- dotnet-core
+- azure
+- azure-container-registry
+- azure-kubernetes-service
 units:
-- learn-pr.microservices-resiliency-aspnet-core.1-introduction
-- learn-pr.microservices-resiliency-aspnet-core.2-environment-setup
-- learn-pr.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
-- learn-pr.microservices-resiliency-aspnet-core.4-implement-resiliency-with-linkerd
-- learn-pr.microservices-resiliency-aspnet-core.5-implement-resiliency-with-polly
-- learn-pr.microservices-resiliency-aspnet-core.6-knowledge-check
-- learn-pr.microservices-resiliency-aspnet-core.7-summary
+- learn.microservices-resiliency-aspnet-core.1-introduction
+- learn.microservices-resiliency-aspnet-core.2-environment-setup
+- learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
+- learn.microservices-resiliency-aspnet-core.5-implement-resiliency-with-linkerd
+- learn.microservices-resiliency-aspnet-core.4-implement-resiliency-with-polly
+- learn.microservices-resiliency-aspnet-core.6-knowledge-check
+- learn.microservices-resiliency-aspnet-core.7-summary
 badge:
-  uid: learn-pr.microservices-resiliency-aspnet-core.badge
+  uid: learn.microservices-resiliency-aspnet-core.badge

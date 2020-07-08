@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.microservices-resiliency-aspnet-core.7-summary
+uid: learn.microservices-resiliency-aspnet-core.7-summary
 metadata:
-  title: 7-summary
+  title: Summary
   description: ...
-  ms.date: ...
+  ms.date: 07/08/2020
   author: ...
   ms.author: ...
   ms.topic: interactive-tutorial
-  ms.prod: ...
-  ROBOTS: NOINDEX
-title: 7-summary
+  ms.prod: learning-aspnetcore
+title: Summary
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-resiliency-aspnet-core.4-implement-resiliency-with-polly
+metadata:
+  title: 4-implement-resiliency-with-polly
+  description: ...
+  ms.date: 07/08/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+title: 4-implement-resiliency-with-polly
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-implement-resiliency-with-polly.md)]

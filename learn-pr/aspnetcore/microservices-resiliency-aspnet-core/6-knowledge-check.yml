@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn-pr.microservices-resiliency-aspnet-core.6-knowledge-check
+uid: learn.microservices-resiliency-aspnet-core.6-knowledge-check
 metadata:
-  title: 6-knowledge-check
+  title: Knowledge check
   description: ...
-  ms.date: ...
+  ms.date: 07/08/2020
   author: ...
   ms.author: ...
   ms.topic: interactive-tutorial
-  ms.prod: ...
-  ROBOTS: NOINDEX
-title: 6-knowledge-check
+  ms.prod: learning-aspnetcore
+title: Knowledge check
 durationInMinutes: 1
 content: |
   [!include[](includes/6-knowledge-check.md)]
