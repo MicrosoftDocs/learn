@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.microservices-devops-aspnet-core.implement-github-action-deploy-aks
+metadata:
+  title: Implement a GitHub Action to build and deploy to ACR and AKS
+  description: Implement and test a simple CI/CD pipeline
+  ms.date: 07/08/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: Implement a GitHub Action to build and deploy to ACR and AKS
+durationInMinutes: 1
+content: |
+  [!include[](includes/implement-github-action-deploy-aks.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-pr.microservices-devops-aspnet-core.introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 07/08/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: introduction
+durationInMinutes: 1
+content: |
+  [!include[](includes/introduction.md)]
