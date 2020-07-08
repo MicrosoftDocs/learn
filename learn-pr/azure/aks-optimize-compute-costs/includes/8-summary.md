@@ -1,16 +1,16 @@
-In this module, you explored some of the cost optimization strategies to optimize Azure Kubernetes Service (AKS) compute costs. You're evaluating strategies to manage the deployment of many workloads needed to match customer demands cost-effectively.  You also want to introduce business policies that govern how your development teams create and use AKS compute resources.
+In this module, you explored some of the cost optimization strategies to optimize Azure Kubernetes Service (AKS) compute costs. You were evaluating strategies to manage the deployment of many workloads needed to match customer demands cost-effectively. You also want to introduce business policies that govern how your development teams create and use AKS compute resources.
 
-By configuring multiple node pools on your AKS cluster, you can identify specific node pools to run specific workloads. You saw how to configure these node pools and use manual scaling to scale the node count to zero in scenarios where you have control over usage intervals. This configuration allows you to handle increased customer demands without creating many nodes that aren't used.
+By configuring multiple node pools on your AKS cluster, you can identify specific node pools to run specific workloads. You saw how to configure these node pools and manually scale the node count to zero in scenarios where you have control over usage intervals.
 
-Next, you configured a spot node pool to access unused Azure compute capacity at a discount or predefined price and schedule workloads to run on nodes in the node pool. Here you configured the cluster autoscaler to scale the number of nodes up or down based on computing resource requirements.
+Next, you configured a spot node pool to access unused Azure compute capacity at a discount or predefined price and schedule workloads to run on nodes in the node pool. Here you configured the cluster autoscaler to scale the number of nodes up or down based on computing resource requirements. This configuration allows you to handle increased customer demands without creating many nodes that aren't used.
 
-Finally, you enabled and configured the Azure Policy Add-on for AKS to manage resource quotas to govern the deployment of AKS compute resources. You enabled the built-in *Ensure CPU and memory resource limits* policy to configure parameters to deny workloads that exceed predefined CPU and memory limits.
+Finally, you enabled and configured the Azure Policy Add-on for AKS to manage resource quotas to govern the deployment of AKS compute resources. You enabled the built-in *Ensure CPU and memory resource limits* policy to configure parameters to deny workloads that exceed predefined CPU and memory resource limits.
 
-Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure. AKS reduces the complexity and operational overhead of managing Kubernetes and allows for optimization of computing costs when running many workloads.
+Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure and the optimization of computing costs when running many workloads.
 
 ## Clean up resources
 
-In this module, you created resources by using your Azure subscription. You want to clean up these resources so that there's no continued charge against your account for these resources.
+In this module, you created resources by using your Azure subscription. The following steps show you how to clean up these resources so that there's no continued charge against your account.
 
 1. Open the Azure portal.
 
@@ -19,7 +19,7 @@ In this module, you created resources by using your Azure subscription. You want
 
 1. Select **Resource groups** on the left.
 
-1. Find the **akscostsavinggrp** resource group, or the resource group name you used, and select it.
+1. Find the **aks-costsaving-grp** resource group, or the resource group name you used, and select it.
 
 1. On the **Overview** tab of the resource group, select **Delete resource group**.
 

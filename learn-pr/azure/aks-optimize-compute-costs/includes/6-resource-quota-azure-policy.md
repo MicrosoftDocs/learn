@@ -1,4 +1,4 @@
-The ease with which Azure Kubernetes Service (AKS) allows you to orchestrate your cloud-native applications has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS that ensures a cost-effective approach to creating workloads.
+The ease with which Azure Kubernetes Service (AKS) allows you to orchestrate your cloud-native applications has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS to ensure a cost-effective approach to creating workloads.
 
 Companies implement business rules to define how employees may use company software, hardware, and other resources in the organization. These business rules are often described using policies that are put in place, enforced, and reviewed as per defined within that policy. A policy allows an organization to meet governance, legal requirements, implement best practices, and organizational conventions.
 
@@ -6,21 +6,21 @@ You can apply this same idea to how your Azure cloud resources are used by using
 
 To understand how to use Azure Policy for Kubernetes, we need to cover a few additional concepts that enable this feature from within Kubernetes.
 
-### What is a Kubernetes admission controller?
+## What is a Kubernetes admission controller?
 
 An admission controller is a Kubernetes plug-in that intercepts authenticated and authorized requests to the Kubernetes API before the requested object's persistence. You can think of an admission controller as software that governs and enforce how the cluster is used and designed to limit requests to create, delete, and modify Kubernetes objects.
 
-### What is an admission controller webhook?
+## What is an admission controller webhook?
 
-Admission controllers exist either as a compiled-in admission plug-in or as a deployed extension that runs as a webhook that you configure at runtime. The webhook is an HTTP callback that receives admission requests and then acts on these requests.
+An admission controller webhook is an HTTP callback that receives admission requests and then acts on these requests. Admission controllers exist either as a compiled-in admission plug-in or as a deployed extension that runs as a webhook that you configure at runtime.
 
 Admission webhooks are available in two kinds of webhooks. An admission webhook is either a validating or a mutating webhook. A mutating webhook is invoked first and can change and apply defaults on the objects sent to the API server. A validation webhook validates object values and can reject requests.
 
-### What is the Open Policy Agent (OPA)?
+## What is the Open Policy Agent (OPA)?
 
 The Open Policy Agent (OPA) is an open-source, general-purpose policy engine that gives you a high-level declarative language to author policies. These policies allow you to define rules that oversee how your system should behave.
 
-### What is the Open Policy Agent (OPA) Gatekeeper?
+## What is the Open Policy Agent (OPA) Gatekeeper?
 
 The OPA Gatekeeper is an open-source validating Kubernetes admission controller webhook that enforces Custom Resource Definition (CRD) based policies using the Open Policy Agent.
 
@@ -46,13 +46,14 @@ Your company's development teams want to optimize development and introduce deve
 
 To set up resource limits, you can apply resource quotas at the namespace level and monitor resource usage to adjust policy quotas. This strategy will allow you to reserve and limit resources across the development team.
 
-### How to enable the Azure Policy Add-on for AKS 
+## How to enable the Azure Policy Add-on for AKS 
+
+There are a few steps to registering the *Azure Policy Add-on for AKS* feature.
 
 >[!CAUTION]
 >
 >Like spot nodes, the *Azure Policy Add-ons for AKS* is a preview feature. Once you enable some preview features in Azure, defaults may be used for all AKS clusters created in the subscription. Test preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
 
-There are a few steps to registering the *Azure Policy Add-on for AKS* feature.
 
 1. You register two resource providers using the `az provider register` command.
 
@@ -128,15 +129,15 @@ Azure Policies are assigned. To assign a policy, you select the **Assignments** 
 
 You assign Azure policies in two ways. Either as a group of policies, called an initiative, or as a single policy.
 
-#### Initiative assignment
+### Initiative assignment
 
 An initiative assignment is a collection of Azure policy definitions grouped together to satisfy a specific goal or purpose in mind. For example, to apply the Payment Card Industry Data Security Standard across your resources.
 
-#### Policy assignment
+### Policy assignment
 
 A policy assignment allows you to assign a single policy. For example, do not enable privileged containers in the Kubernetes cluster.
 
-### How to assign a policy
+## How to assign a policy
 
 Each policy is defined using a series of configuration steps. The amount of information you capture depends on the type of policy you'll select.  
 
@@ -146,7 +147,7 @@ The policy requires you to set the limit on the allowed resources requested by d
 
 Let's look at the options you configure to assign a policy.
 
-#### Basic policy information
+### Basic policy information
 
 The first step requires you to select and enter basic information defining the new policy. For example, the policy and the resource scope that the policy covers. Here is a table that shows each item you'll configure.
 
@@ -159,7 +160,7 @@ The first step requires you to select and enter basic information defining the n
 | **Policy enforcement** | This option switches between Enabled and Disabled. If disabled, the policy isn't applied, and requests are not denied with non-compliance. |
 | **Assigned by** | This value is a free text value that defaults to the user signed into the portal's details and can be changed. |
 
-#### Policy parameters
+### Policy parameters
 
 Policies require you to configure the business rules that apply to each specific policy. Not all policies have the same business rules, and that's why each policy has different parameters that may apply.
 
@@ -187,7 +188,7 @@ The following table lists all the effects currently supported in policy definiti
 | **Disabled** | useful for testing situations or for when the policy definition has parameterized the effect, and you want to disable a single assignment. |
 | **Modify** | Used to add, update, or remove tags on a resource during creation or update. |
 
-#### Policy Remediation
+### Policy Remediation
 
 The final step is to consider policy remediation. When assigning policies, there's the possibility that resources already exist and is impacted by the new policy. By default, only newly created resources are affected by the new policy. You can update existing resources using a remediation task following the assignment of the policy. Remediation tasks will differ between the types of policies applied.
 

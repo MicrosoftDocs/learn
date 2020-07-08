@@ -13,7 +13,7 @@ In this exercise, you'll create an Azure Kubernetes Service Kubernetes cluster. 
 
     ```azurecli
     REGION_NAME=eastus
-    RESOURCE_GROUP=akscostsavinggrp
+    RESOURCE_GROUP=aks-costsaving-grp
     AKS_CLUSTER_NAME=akscostsaving-$RANDOM
     ```
 
