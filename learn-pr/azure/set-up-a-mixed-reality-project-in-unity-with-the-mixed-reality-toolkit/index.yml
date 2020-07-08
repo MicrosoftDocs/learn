@@ -2,14 +2,14 @@
 uid: learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit
 metadata:
   title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit 
-  description: Import the Mixed Reality Toolkit into your mixed reality project to manipulate an object using hand interactions. 
+  description: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development. 
   ms.date: 06/04/2020
   author: "aprilspeight"
   ms.author: "apspeigh"
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Set up a mixed reality project in Unity with the Mixed Reality Toolkit
-summary: Import the Mixed Reality Toolkit into your mixed reality project to manipulate an object using hand interactions.
+summary: Import the Mixed Reality Toolkit into your Unity project to accelerate your mixed reality development.
 abstract: |
   By the end of this module you will be able to:
   - Configure Unity for Windows Mixed Reality Development
