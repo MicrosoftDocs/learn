@@ -55,7 +55,7 @@ The partnership of Microsoft with the publishers of the endorsed distributions h
 
 ### Migrate on-premises Linux VMs and physical servers to Azure VMs
 
-If your immediate concern is migrating specific workloads and applications to Azure with as little overhead as possible, you can use Azure Migrate. This service can automatically discover, assess, and migrate on-premises VMWare and Hyper-V VMs, as well as physical servers. The Azure Migrate hub provides a centralized record of discovery, assessment, and migration activities. Azure Migrate also includes tools for automatically assessing and migrating databases and web applications to Azure platform as a service (PaaS) services.
+If your immediate concern is migrating specific workloads and applications to Azure with as little overhead as possible, you can use Azure Migrate. This service can automatically discover, assess, and migrate on-premises VMware and Hyper-V VMs, as well as physical servers. The Azure Migrate hub provides a centralized record of discovery, assessment, and migration activities. Azure Migrate also includes tools for automatically assessing and migrating databases and web applications to Azure platform as a service (PaaS) services.
 
 ### Virtual machine sizes and disks
 

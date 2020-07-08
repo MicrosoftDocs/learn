@@ -39,14 +39,14 @@ Achieve flexible and secure communication between VMs, services, and the interne
 Database services provide both familiar features and unique innovation in cloud-hosted databases. The Azure SQL family of products provides the SQL Server database engine in multiple forms:
 
 - Azure SQL Database for fully managed, PaaS-style database support.
-- SQL Managed Instances for on-premises SQL Server compatibility with PaaS management benefits.
+- Azure SQL Managed Instance for on-premises SQL Server compatibility with PaaS management benefits.
 - SQL Server on Windows and Linux VMs for full operating system access, and complete compatibility for migration.
 
 Azure Cosmos DB offers global distribution and multiple storage models, in a globally distributed data platform designed for the cloud. Azure Cache for Redis enables you to use the fast, well-known Redis storage server, without managing a virtual machine.
 
 ### AI and Azure Cognitive Services
 
-Improve the intelligence of your apps with AI and cognitive services. Cognitive Search provides fully managed, AI-powered search as a service. Azure Machine Learning helps developers and data scientists of all skill levels be productive, by using guided machine learning model development and drag-and-drop interaction. Azure Bot Service lets you create conversational bots to interact with your users. Azure Cognitive Services is a family of vision, speech, language, web search, and decision APIs for adding cognitive features to applications.
+Improve the intelligence of your apps with AI and Azure Cognitive Services. The search APIs of Cognitive Services provide fully managed, AI-powered search as a service. Azure Machine Learning helps developers and data scientists of all skill levels be productive, by using guided machine learning model development and drag-and-drop interaction. Azure Bot Service lets you create conversational bots to interact with your users. Azure Cognitive Services is a family of vision, speech, language, web search, and decision APIs for adding cognitive features to applications.
 
 ### Governance and monitoring
 

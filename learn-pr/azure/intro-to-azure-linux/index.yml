@@ -13,10 +13,10 @@ summary: Discover the unique benefits of running Linux on Azure, and how to run 
 abstract: |
   By the end of this module, you will be able to:
 
-  - Differentiate between Azure Linux infrastructure as a service (IaaS) and platform as a service (PaaS) computing, and the value of each
+  - Differentiate between Linux on Azure infrastructure as a service (IaaS) and platform as a service (PaaS) computing, and the value of each
   - Describe Azure tools and services that bring additional value to Linux workloads
   - Explain the components of Linux virtual infrastructure in Azure, and the role of Microsoft in supporting different Linux distributions
-  - Describe the value of Azure Linux-based service platforms
+  - Describe the value of Linux-based service platforms on Azure
   - Envision building new Linux-based workloads and migrating existing workloads to Azure
   - Evaluate whether Linux on Azure is the right choice for your solutions
 prerequisites: |

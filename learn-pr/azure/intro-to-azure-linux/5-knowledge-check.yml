@@ -29,9 +29,9 @@ quiz:
       explanation: Azure is a cloud computing service, not a datacenter provider or hardware colocation service.
   - content: Which of the following Azure services is a platform as a service (PaaS) that can host Linux applications?
     choices:  
-    - content: Cognitive Search
+    - content: Azure Cognitive Services search APIs
       isCorrect: false
-      explanation: Cognitive Search is an AI-powered search service that can be used by applications on any platform. It doesn't host applications.
+      explanation: Cognitive Services provides search APIs that are powered by AI, and that can be used by applications on any platform. It doesn't host applications.
     - content: Virtual machines
       isCorrect: false
       explanation: Virtual machines are a component of infrastructure as a service (IaaS) computing.
@@ -48,7 +48,7 @@ quiz:
       explanation: Microsoft works with partners to provide VM images optimized for Azure, and requires them to publish updates to their images regularly.
     - content: SLA connectivity guarantees
       isCorrect: false
-      explanation: Azure's VM platform SLA applies to Linux virtual machines only when endorsed images are used.
+      explanation: The VM platform SLA of Azure applies to Linux virtual machines only when endorsed images are used.
     - content: Enhanced compatibility with additional programming languages
       isCorrect: true
       explanation: Endorsed distributions don't provide any benefits related to specific programming languages.
