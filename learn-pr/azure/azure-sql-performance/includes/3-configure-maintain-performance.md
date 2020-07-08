@@ -14,9 +14,9 @@ These numbers and sizes for tempdb should meet the needs for most applications.
 
 Database configuration is most commonly done with the T-SQL ALTER DATABASE statement. Many of the configuration options for performance are available for Azure SQL. Consult the ALTER DATABASE T-SQL reference for the differences between SQL Server, Azure SQL Database, and Azure SQL Managed Instance.
 
-For performance, one option that is not available to change is the recovery model of the database. The default is full recovery and cannot be modified (this is needed to meet SLA) Therefore, minimal logging for bulk operations is not supported. Minimal logging for bulk operations is supported for tempdb.
+For performance, one option that is not available to change is the recovery model of the database. The default is full recovery and cannot be modified. This ensures your database can meet Azure service level agreements (SLAs). Therefore, minimal logging for bulk operations is not supported. Minimal logging for bulk operations is supported for tempdb.
 
-## Files and File Groups
+## Files and filegroups
 
 - Azure SQL Database does not support any modification or creation of files or filegroups.
 - Azure SQL Managed Instance supports adding files and sizes but not physical placement.
@@ -38,10 +38,10 @@ Degree of parallelism works exactly the same in the engine for Azure SQL as SQL 
 
 Resource Governor is supported for Azure SQL Managed Instance for user defined workload groups and pools.
 
-## Maintaining Indexes
+## Maintaining indexes
 
 Index creation and maintenance for Azure SQL is exactly the same as SQL Server. For example, rebuilding and reorganization of indexes is fully supported as with SQL Server. This includes online and resumable indexes.
 
-## Maintaining Statistics
+## Maintaining statistics
 
 Statistics are the same for Azure SQL as with SQL Server. Automatic statistics options for databases are available for Azure SQL just like SQL Server.
