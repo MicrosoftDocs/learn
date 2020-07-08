@@ -31,10 +31,10 @@ It is also important to know that Azure SQL resources have overall resource limi
 
 Once you've completed your pre-deployment planning, it's time to put your plan into action. In this stage, you'll deploy Azure SQL (using the Azure portal or command-line), determine network configuration, and make an initial connection.  
 
-For Azure SQL Database and Azure SQL Managed Instance, there are essentially five blades in the Azure portal to fill in during a deployment.  
+For Azure SQL Database and Azure SQL Managed Instance, there are essentially five panes in the Azure portal to fill in during a deployment.  
 
 > [!div class="mx-imgBorder"]
-> ![Deployment blades for Azure SQL](../media/deployblades.png)
+> ![Deployment panes for Azure SQL](../media/2-deploy-panes.png)
 
 Let's dive into a few of these options.
 
