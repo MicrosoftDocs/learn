@@ -12,11 +12,11 @@ For Azure, we can use ALTER DATABASE, az cli, or the portal to increase CPU capa
 
 Using the Azure Portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment.<br>
 
-![Azure_Portal_Change_Tier](../media/Azure_Portal_Change_Tier.png)
+![Azure_Portal_Change_Tier](../media/7-azure-portal-change-tier.png)
 
 Here you can see options for changing or scaling compute resources. For General Purpose, you can easily scale up to something like 8 vCores.
 
-![Azure_Portal_Compute_Options](../media/Azure_Portal_Compute_Options.png)
+![Azure_Portal_Compute_Options](../media/7-azure-portal-compute-options.png)
 
 Instead of using the portal, I'll show you a different method to scale your workload.
 
@@ -42,7 +42,7 @@ GO
 
 For the current Azure SQL Database deployment, your results should look like the following:
 
-![service_objective_results](../media/service_objective_results.png)
+![service_objective_results](../media/7-service-objective-results.png)
 
 Notice the term **slo_name** is also used for service objective. The term **slo** stands for *service level objective*.
 
@@ -60,7 +60,7 @@ ALTER DATABASE AdventureWorks<ID> MODIFY (SERVICE_OBJECTIVE = 'GP_Gen5_8');
 
 This statement comes back immediately but the scaling of the compute resources take place in the background. A scale this small should take less than a minute and for a short period of time the database will be offline to make the change effective. You can monitor the progress of this scaling activity using the Azure Portal.
 
-![Azure_Portal_Update_In_Progress](../media/Azure_Portal_Update_In_Progress.png)
+![Azure_Portal_Update_In_Progress](../media/7-azure-portal-update-progress.png)
 
 Another way to monitor the progress of a change for the service object for Azure SQL Database is to use the DMV **sys.dm_operation_status**. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change. 
 
@@ -147,24 +147,24 @@ The workload duration from **sqlworkload.cmd** should now be much less and somew
 
 Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:
 
-![SSMS_QDS_Top_Query_Faster](../media/SSMS_QDS_Top_Query_Faster.png)
+![SSMS_QDS_Top_Query_Faster](../media/7-ssms-top-query-faster.png)
 
 You will now see two queries (query_id). These are the same query but show up as different query_id values in Query Store because the scale operation required a restart so the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
 Look also at the Query Wait Statistics report as you did in Section 4.3 Activity 1. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
 
-![SSMS_Top_Wait_Stats_Query_Faster](../media/SSMS_Top_Wait_Stats_Query_Faster.png)
+![SSMS_Top_Wait_Stats_Query_Faster](../media/7-ssms-top-wait-stats-query-faster.png)
 
 - Observe Azure Portal Compute Utilization
 
 Look at the Overview blade again for the Compute Utilization. Notice the significant drop in overall CPU resource usage compared to the previous workload execution:
 
-![Azure_Portal_Compute_Query_Comparison.png](../media/Azure_Portal_Compute_Query_Comparison.png)
+![Azure_Portal_Compute_Query_Comparison.png](../media/7-azure-portal-compute-query-comparison.png)
 
 >**TIP:** If you continue to increase vCores for this database you can improve performance up to a threshold where all queries have plenty of CPU resources. This does not mean you must match the number of vCores to the number of concurrent users from your workload. In addition, you can change the Pricing Tier to use **Serverless** *Compute Tier* instead of **Provisioned** to achieve a more "auto-scaled" approach to a workload. For example, for this workload if you chose a min vCore value of 2 and max VCore value of 8, this workload would immediately scale to 8vCores.
 
 If you used Azure Log Analytics, you would see performance differences like the following (image has been annotated)
 
-![kusto_query_metric_cpu_percent_faster](../media/kusto_query_metric_cpu_percent_faster.png)
+![kusto_query_metric_cpu_percent_faster](../media/7-kusto-query-metric-cpu-percent-faster.png)
 
 You will now go through another exercise where you observe a performance problem and resolve it by improving application performance.

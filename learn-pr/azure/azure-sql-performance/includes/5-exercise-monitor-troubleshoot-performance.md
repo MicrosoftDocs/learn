@@ -79,7 +79,7 @@ Check the **Remember password** box and select **Connect**.
 
 > **Note**: Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
 
-![Connect to SQL Database in SSMS](../media/connectazsql.png)  
+![Connect to SQL Database in SSMS](../media/5-connect-azure-sql.png)  
 
 ### Prepare the exercise
 
@@ -157,19 +157,20 @@ From a powershell command prompt, change to the directory for this module activi
 
 [vmusername] is the name of the user in your Windows Virtual Machine. Substitute in the path for c:\users\\[vmusername] where you have cloned the GitHub repo.
 
-<pre>
+```powershell
 cd c:\users\[vmusername]\sqlworkshops-azuresqlworkshop\azuresqlworkshop\04-Performance\monitor_and_scale
-</pre>
+```
 
 Run the workload with the following command
 
-```Powershell
+```powershell
 .\sqlworkload.cmd
 ```
 
 Your screen at the command prompt should look similar to the following
 
-<pre>[datetime] [ostress PID] Max threads setting: 10000
+```output
+[datetime] [ostress PID] Max threads setting: 10000
 [datetime] [ostress PID] Arguments:
 [datetime] [ostress PID] -S[server].database.windows.net
 [datetime] [ostress PID] -isqlquery.sql
@@ -194,7 +195,8 @@ Your screen at the command prompt should look similar to the following
 [datetime] [ostress PID] Starting query execution...
 [datetime] [ostress PID]  BETA: Custom CLR Expression support enabled.
 [datetime] [ostress PID] Creating 10 thread(s) to process queries
-[datetime] [ostress PID] Worker threads created, beginning execution...</pre>
+[datetime] [ostress PID] Worker threads created, beginning execution...
+```
 
 4. Observe performance with DMVs
 
@@ -245,29 +247,29 @@ Query Store comes with a series of system catalog views to view performance data
 
 Using the Object Explorer in SSMS, open the Query Store Folder to find the report for **Top Resource Consuming Queries**
 
-![SSMS_QDS_Find_Top_Queries](../media/SSMS_QDS_Find_Top_Queries.png)
+![SSMS_QDS_Find_Top_Queries](../media/5-ssms-find-top-queries.png)
 
 Select the report to find out what queries have consumed the most avg resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:
 
-![SSMS_QDS_Top_Query_Report](../media/SSMS_QDS_Top_Query_Report.png)
+![SSMS_QDS_Top_Query_Report](../media/5-ssms-top-query-report.png)
 
 The query shown is the SQL query from the workload for customer sales. This report has 3 components: Queries with the high total duration (you can change the metric), the associated query plan and runtime statistics, and the associated query plan in a visual map.
 
 If you click on the bar chart for the query (the query_id may be different for your system), your results should look like the following:
 
-![SSMS_QDS_Query_ID](../media/SSMS_QDS_Query_ID.png)
+![SSMS_QDS_Query_ID](../media/5-ssms-query-id.png)
 
 You can see the total duration of the query and query text.
 
 Right of this bar chart is a chart for statistics for the query plan associated with the query. Hover over the dot associated with the plan. Your results should look like the following:
 
-![SSMS_Slow_Query_Stats](../media/SSMS_Slow_Query_Stats.png)
+![SSMS_Slow_Query_Stats](../media/5-ssms-slow-query-stats.png)
 
 Note the average duration of the query. Your times may vary but the key will be to compare this average duration to the average wait time for this query and eventually the average duration when we introduce a performance improvement.
 
 The final component is the visual query plan. The query plan for this query looks like the following:
 
-![SSMS_Workload_Query_Plan](../media/SSMS_Workload_Query_Plan.png)
+![SSMS_Workload_Query_Plan](../media/5-ssms-workload-query-plan.png)
 
 Given the small nature of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself.
 
@@ -277,11 +279,11 @@ We know from earlier diagnostics that a high number of requests constantly were 
 
 Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. Click on this report and hover over the bar chart. Your results should look like the following:
 
-![SSMS_Top_Wait_Stats](../media/SSMS_Top_Wait_Stats.png)
+![SSMS_Top_Wait_Stats](../media/5-ssms-top-wait-stats.png)
 
 You can see the top wait category is CPU (this is equivalent to the wait_type SOS_SCHEDULER_YIELD which can be seen in **sys.dm_os_wait_stats**) and the average wait time. Furthermore, the top query waiting for CPU is the query from the workload we are using.
 
-![SSMS_Top_Wait_Stats_Query](../media/SSMS_Top_Wait_Stats_Query.png)
+![SSMS_Top_Wait_Stats_Query](../media/5-ssms-top-wait-stats-query.png)
 
 Notice that the average wait time for CPU for this query is a high % of the overall average duration for the query.
 
@@ -295,17 +297,17 @@ Let's use one other method to view the performance of our workload. Azure Monito
 
 In the Overview page for an Azure SQL database, the standard default view is called **Compute Utilization** which you can see on the Overview blade for your database:
 
-![Azure_Portal_Compute_Slow_Query](../media/Azure_Portal_Compute_Slow_Query.png)
+![Azure_Portal_Compute_Slow_Query](../media/5-azure-portal-compute-slow-query.png)
 
 Notice in this example, the CPU utilization is near 100% for a recent time range. This chart will show resource usage (defaults to CPU and I/O) over the last hour and is refreshed continually. If you click on the chart you can customize the chart (Ex. bar chart) and look at other resource usage.
 
 Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer) If you click on Metrics you will see the following:
 
-![Azure_Monitor_Metrics](../media/Azure_Monitor_Metrics.png)
+![Azure_Monitor_Metrics](../media/5-azure-monitor-metrics.png)
 
 As you can see in the screenshot there are several metrics you can use to view with the Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period showing a 5 minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select CPU percentage and change the capture for 1 hour. The granularity will change to 1-minute and should look like the following:
 
-![Azure_Monitor_Metrics_CPU_1minrefresh](../media/Azure_Monitor_Metrics_CPU_1minrefresh.png)
+![Azure_Monitor_Metrics_CPU_1minrefresh](../media/5-azure-monitor-metrics-cpu.png)
 
 The default is a line chart, but the Explorer view allows you to change the chart type. There are various options with Metrics Explorer including the ability to show multiple metrics on the same chart.
 
@@ -323,6 +325,6 @@ AzureMetrics
 
 Your results would look like the following:
 
-![kusto_query_metric_cpu_percent](../media/kusto_query_metric_cpu_percent.png)
+![kusto_query_metric_cpu_percent](../media/5-kusto-query-metric-cpu-percent.png)
 
 Azure Monitor Logs have a delay when first configuring log diagnostics for a database so these results may take some time to appear.

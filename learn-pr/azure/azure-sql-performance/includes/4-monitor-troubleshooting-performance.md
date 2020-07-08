@@ -88,7 +88,7 @@ In order to decide how to apply monitoring and troubleshooting performance tools
 
 A common technique for SQL Server performance troubleshooting is to examine where the problem is Running (high CPU) or Waiting (Waiting on a Resource)
 
-![runningvswaiting](../media/runningvswaiting.png)
+![runningvswaiting](../media/4-running-vs-waiting.png)
 
 #### Running vs Waiting
 

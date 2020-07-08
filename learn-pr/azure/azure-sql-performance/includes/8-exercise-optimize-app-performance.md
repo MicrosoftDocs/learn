@@ -84,9 +84,9 @@ From a powershell command prompt, change to the directory for this module activi
 
 [vmusername] is the name of the user in your Windows Virtual Machine. Substitute in the path for c:\users\\[vmusername] where you have cloned the GitHub repo.
 
-<pre>
+```powershell
 cd c:\users\[vmusername]\sqlworkshops-azuresqlworkshop\azuresqlworkshop\04-Performance\tuning_applications
-</pre>
+```
 
 Run the workload with the following command
 
