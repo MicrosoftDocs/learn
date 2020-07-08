@@ -92,7 +92,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
 
     First, for anything that is outside Azure, you need to allow inbound and outbound communication on ports in the range of 11000 - 11999. This is required for the Redirect connection policy.  
 
-    > [!NOTE] 
+    > [!NOTE]
     > This is likely already configured on your local device, but if you hit errors in the next steps, you may need to enable the ports above, [more guidance available here](https://docs.microsoft.com/azure/sql-database/sql-database-develop-direct-route-ports-adonet-v12?azure-portal=true).  
 
     Update the connection policy and confirm that update with the following two commands.  

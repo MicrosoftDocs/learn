@@ -33,8 +33,8 @@ Once you've completed your pre-deployment planning, it's time to put your plan i
 
 For Azure SQL Database and Azure SQL Managed Instance, there are essentially five blades in the Azure portal to fill in during a deployment.  
 
-[!div class="mx-imgBorder"]
-![Deployment blades for Azure SQL](../media/deployblades.png)
+> [!div class="mx-imgBorder"]
+> ![Deployment blades for Azure SQL](../media/deployblades.png)
 
 Let's dive into a few of these options.
 

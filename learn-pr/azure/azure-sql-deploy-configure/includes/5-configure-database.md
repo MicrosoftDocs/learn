@@ -55,8 +55,8 @@ During deployment, in Azure SQL Managed Instance you're able to choose the conne
 
 You can keep the default (Proxy for connections from outside and Redirect for connections within Azure) or configure something else.
 
-[!div class="mx-imgBorder"]
-![Connection policies in Azure SQL](../media/connectivity.png)
+> [!div class="mx-imgBorder"]
+> ![Connection policies in Azure SQL](../media/connectivity.png)
 
 At the highest level, in Proxy mode, all connections are proxied through the a gateway, but in Redirect mode, after the connection is established leveraging the gateway (redirect-find-db in the figure above), the connection can then connect directly to the database or managed instance.
 
