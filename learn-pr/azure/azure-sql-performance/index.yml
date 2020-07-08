@@ -30,12 +30,11 @@ units:
 - learn.azure-sql-performance.2-performance-capabilities
 - learn.azure-sql-performance.3-configure-maintain-performance
 - learn.azure-sql-performance.4-monitor-troubleshooting-performance
-- learn.azure-sql-performance.5-performance-scenarios
-- learn.azure-sql-performance.6-exercise-monitor-troubleshoot-performance
-- learn.azure-sql-performance.7-accelerate-tune-performance
-- learn.azure-sql-performance.8-exercise-scale-performance
-- learn.azure-sql-performance.9-exercise-optimize-app-performance
-- learn.azure-sql-performance.10-intelligent-performance
-- learn.azure-sql-performance.11-summary
+- learn.azure-sql-performance.5-exercise-monitor-troubleshoot-performance
+- learn.azure-sql-performance.6-accelerate-tune-performance
+- learn.azure-sql-performance.7-exercise-scale-performance
+- learn.azure-sql-performance.8-exercise-optimize-app-performance
+- learn.azure-sql-performance.9-intelligent-performance
+- learn.azure-sql-performance.10-summary
 badge:
   uid: learn.azure-sql-performance.badge
