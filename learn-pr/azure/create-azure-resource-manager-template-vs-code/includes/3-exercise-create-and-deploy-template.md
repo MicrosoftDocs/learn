@@ -94,7 +94,7 @@ Here, you deploy the ARM template to Azure. The ARM template doesn't have any re
 
   In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure. Notice the deployment name is *blanktemplate* with the date as a suffix.
 
-1. You see ```Running...``` in the terminal. 
+  You see ```Running...``` in the terminal.
 
 ::: zone-end
 
@@ -111,7 +111,9 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     ```
 
 1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. You use this one for the rest of the exercise.
-Set the default subscription for all of the Azure PowerShell commands you run in this session.
+
+    Set the default subscription for all of the Azure PowerShell commands you run in this session.
+
 1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription* and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
 
     ```azurepowershell
