@@ -83,6 +83,8 @@ Then, use the parameter in the resource definition. Notice the syntax is ```[par
 
 When you deploy the template, you can give a value for the parameter. Notice the last line in the command below.
 
+# [Azure CLI](#tab/azure-cli)
+
 ```azurecli
 templateFile="azuredeploy.json"
 az deployment group create \
@@ -91,15 +93,17 @@ az deployment group create \
   --parameters storageAccountType=Standard_LRS
 ```
 
-If you have multiple parameters, put a space between them. For example:
+# [PowerShell](#tab/azure-powershell)
 
-```azurecli
-templateFile="azuredeploy.json"
-az deployment group create \
-  --name testdeployment1 \
-  --template-file $templateFile \
-  --parameters storageAccountType=Standard_LRS parameter2=anotherValue
+```azurepowershell
+$templateFile = "azuredeploy.json"
+New-AzResourceGroupDeployment `
+  -Name testdeployment1 `
+  -TemplateFile $templateFile `
+  -storageAccountType Standard_LRS
 ```
+
+---
 
 ## What are ARM template outputs
 

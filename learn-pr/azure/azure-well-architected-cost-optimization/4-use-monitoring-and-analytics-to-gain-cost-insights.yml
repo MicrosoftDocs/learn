@@ -21,12 +21,12 @@ quiz:
     - content: 'A 1% increase in compute costs from the previous month.'
       isCorrect: false
       explanation: 'This is a small change and would not normally be considered suspicious.'
-    - content: 'A decrease in compute costs following the decommission of a web site.'
+    - content: 'A decrease in compute costs after the decommission of a website.'
       isCorrect: false
-      explanation: 'A compute cost reduction could be expected when decommissioning a web site.'
-    - content: 'A 5% increase in storage costs following the migration of a large database.'
+      explanation: 'You can expect a compute cost reduction when decommissioning a website.'
+    - content: 'A 5% increase in storage costs after the migration of a large database.'
       isCorrect: false
-      explanation: 'Data storage and transaction activity would be expected to increase following a migration.'
+      explanation: 'You can expect data storage and transaction activity to increase after a migration.'
     - content: 'A 25% increase in ExpressRoute circuit utilization from the previous month.'
       isCorrect: true
       explanation: 'This is a large spike in utilization and would merit further investigation.'
