@@ -62,8 +62,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az account set --subscription "Concierge Subscription"
     ```
 
-> [!NOTE]
-> If you have used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the above command was successful, skip the next two steps.
+   > [!NOTE]
+   > If you have used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the above command was successful, skip the next two steps.
 
 1. Get the *Concierge Subscription* IDs.
 
