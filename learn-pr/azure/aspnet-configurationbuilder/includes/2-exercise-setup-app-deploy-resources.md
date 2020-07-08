@@ -1,11 +1,11 @@
-The example web app that's used in this module is based on part of an e-commerce system. The app enables a warehouse employee to update the details of products sold by the system and maintain the current stock levels.
+The example web app in this module is based on part of an e-commerce system. The app enables a warehouse employee to update the details of products sold by the system and maintain the current stock levels.
 
-In this unit, you download and test the app locally and then create the resources needed to deploy the app to Azure and configure it later in this module.
+In this unit, you download and test the app locally and then create the resources that are needed to deploy the app to Azure and configure it later in this module.
  
 ## Download and test the sample web app locally
 
 1. In Windows Explorer, create a folder named *MigrationWorkshop* in a convenient place on your computer.
-1. Open a command prompt window, and move to the *MigrationWorkshop* folder.
+1. Open a command prompt window, and go to the *MigrationWorkshop* folder.
 1. Download the sample app from the Microsoft repository on GitHub by running the following command:
 
     ```bash
@@ -28,17 +28,17 @@ In this unit, you download and test the app locally and then create the resource
     > [!div class="mx-imgBorder"]
     > ![Image of the Solution Explorer window in Visual Studio. The user is being prompted to install additional components to support Visual Studio.**](..\media\2-install-components.png)
     
-1. This project currently uses v2.0.1 of the *Microsoft.CodeDom.Providers.DotNetCompilerPlatform* assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. To do so, do the following:
+1. This project currently uses v2.0.1 of the *Microsoft.CodeDom.Providers.DotNetCompilerPlatform* assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Do the following:
 
     a. Restart Visual Studio.  
-    b. Open the **eShopLegacyWebForms** solution and, in the **Build** list, select **Rebuild Solution**.
+    b. Open the **eShopLegacyWebForms** solution and then, in the **Build** list, select **Rebuild Solution**.
 
-1. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the *Web.config* file.
+1. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select **Web.config**.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the Solution Explorer window and the "Web.config" file](..\media\2-open-web-config.png).
 
-1. In the *Web.config* file, in the *\<appSettings\>* section, set the value of the **UseMockData** key to *false*. This setting causes the application to use data that's stored in a local SQL Server database:
+1. In the *Web.config* file, in the *\<appSettings\>* section, set the value of the **UseMockData** key to *false*. This setting causes the app to use data that's stored in a local SQL Server database:
 
     ```xml
     ...
@@ -49,14 +49,14 @@ In this unit, you download and test the app locally and then create the resource
     ...
     ```
 
-1. To build and run the application, select F5. The application opens a web browser and displays the **Catalog manager** page for the web app.
+1. To build and run the app, select F5. The app opens a web browser and displays the **Catalog manager** page for the web app.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Catalog Manager** page for the sample application in a web browser window](..\media\2-catalog-manager.png)
+    > ![Image of the **Catalog Manager** page for the sample app in a web browser window](..\media\2-catalog-manager.png)
 
     With **Catalog manager**, you can view the products sold by the organization, add new products, modify the details of existing products, and delete products.
 
-1. Experiment with the application. Try adding, editing, and removing products. 
+1. Experiment with the app. Try adding, editing, and removing products. 
 
 1. When you're done, close the browser. This action closes the app and returns you to Visual Studio.
 
@@ -68,10 +68,10 @@ In this unit, you download and test the app locally and then create the resource
     
     Replace `<your-initials-with-suffix>` with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials from using the same alias. 
     
-    Replace `<your-password>` with a password of your choosing. This password is used by the instance of Azure SQL Database that the application connects to.  
+    Replace `<your-password>` with a password of your choosing. This password is used by the instance of Azure SQL Database that the app connects to.  
 
     > [!NOTE]
-    > The resource group `<rgn>[sandbox resource group name]</rgn>` has been created automatically. Use this as your resource group name. You won't have permission to create additional resource groups in the sandbox.
+    > The resource group `[sandbox resource group name]` has been created automatically. Use this as your resource group name. You won't have permission to create additional resource groups in the sandbox.
 
     ```PowerShell
     $useralias = "<your-initials-with-suffix>"
@@ -85,7 +85,7 @@ In this unit, you download and test the app locally and then create the resource
     $resourcegroupname = "<rgn>[sandbox resource group name]</rgn>"
     ```
 
-1. To define further variables that are used to create the resources in this module, run the following commands:
+1. To define additional variables to be used to create the resources in this module, run the following commands:
 
     ```PowerShell
     $location = "eastus"
@@ -148,7 +148,7 @@ In this unit, you download and test the app locally and then create the resource
         -EndIpAddress "0.0.0.0"
     ```
 
-1. To create a database in the SQL Database, run the following PowerShell command. The database will be populated later, when you migrate the web app.
+1. To create a database in SQL Database, run the following PowerShell command. The database will be populated later, when you migrate the web app.
 
     ```PowerShell
     New-AzSqlDatabase  `
