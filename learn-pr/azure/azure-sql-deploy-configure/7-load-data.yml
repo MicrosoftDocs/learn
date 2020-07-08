@@ -1,14 +1,31 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-deploy-configure.7-load-data
 metadata:
-  title: Load data into Azure SQL Database
-  description: Load data into Azure SQL Database
+  title: Load data into Azure SQL
+  description: Load data into Azure SQL
   ms.date: 07/31/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Load data into Azure SQL Database
+title: Load data into Azure SQL
 durationInMinutes: 10
 content: |
   [!include[](includes/7-load-data.md)]
+quiz:
+    title: Configure Azure SQL 
+    questions:
+    - content: "Which Azure SQL deployment options support natively restoring a database?"
+      choices:
+      - content: "SQL Server on an Azure VM"
+        isCorrect: false
+        explanation: "Yes, it's just SQL Server. But are there other options?"
+      - content: "Azure SQL Managed Instance"
+        isCorrect: false
+        explanation: "Azure SQL Managed Instance does support native restore (from a URL). But are there other options?"
+      - content: "Azure SQL Database"
+        isCorrect: false
+        explanation: "This is not currently supported in Azure SQL Database"
+      - content: "SQL Server on an Azure VM and Azure SQL Managed Instance"
+        isCorrect: true
+        explanation: "In an Azure VM, it's just SQL Server, so it's supported. In Azure SQL Managed Instance, native restore from a URL is supported."
