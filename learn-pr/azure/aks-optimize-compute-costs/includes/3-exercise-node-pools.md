@@ -55,7 +55,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
     | Parameter and value | Description |
     | --- | --- |
     | `--load-balancer-sku standard` | The default load balancer support in AKS is *Basic*.  The *Basic* load balancer isn't supported when using multiple node pools. Set the value to *Standard*. |
-| `--vm-set-type VirtualMachineScaleSets` | Virtual Machine Scale Sets are required to use the scale features in AKS. This parameter enables this support.
+    | `--vm-set-type VirtualMachineScaleSets` | Virtual Machine Scale Sets are required to use the scale features in AKS. This parameter enables this support.
 
     ```azurecli
     az aks create \
@@ -68,7 +68,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
     --vm-set-type VirtualMachineScaleSets \
     --generate-ssh-keys
     ```
-Notice the configuration of two nodes in the default node pool using the `--node-count 2` parameter. Recall from earlier that essential system services run across this node pool, and additional nodes allow for cluster operation reliability.
+    Notice the configuration of two nodes in the default node pool using the `--node-count 2` parameter. Recall from earlier that essential system services run across this node pool, and additional nodes allow for cluster operation reliability.
 
 1. Run the `az aks nodepool list` command to list the node pools in your new cluster.
 
@@ -247,72 +247,4 @@ In the previous command's output result, the node pool count is set to 0. You ca
 
     Notice that even though the `az aks nodepool list` command lists two node pools, there are only two nodes available in the cluster, and both are from `nodepool1`.
 
-Manually scaling the node count in node pools and the ability to scale expensive MV-based node pools to zero is a good strategy to optimize costs on AKS when you manage workload demands directly. Let's look at a strategy where you need to scale nodes, but don't control demand directly.
-
->>>>>>>> TEMP CODE
-
-
-1. Use the `kubectl create namespace` command to create a namespace for the application called **cost savings**. You'll use this namespace throughout the rest of the exercises in this module.
-
-    ```bash
-    kubectl create namespace costsavings
-    ```
-
-    You'll see a confirmation that the namespace was created.
-
-    ```output
-    namespace/costsavings created
-    ```
-
-This default configuration allows you to manage costs when you need to scale quickly. There are, however, other options available to manage costs in different ways. Let's have a look at these options next.
-
-
-Recall, that you have two node pools in the cluster. The primary node pool and a user node pool, named `batchprocpl`, to run the batch processing workloads. You created a user node pool in a previous step and want to allow it to scale to meet resource demands.
-
-1. Run the `az aks nodepool update` command. This command requires you to identify the AKS cluster and the node pool that requires the autoscaler update. You then pass the `--enable-cluster-autoscaler` flag and the maximum and minimum node count for the node pool.
-
-    Run the following command to enable the cluster autoscaler and set a minimum node count of 0 and a maximum node count of 5.
-
-    ```azurecli
-    az aks nodepool update \
-        --resource-group $RESOURCE_GROUP \
-        --cluster-name $AKS_CLUSTER_NAME \
-        --name batchprocpl \
-        --enable-cluster-autoscaler \
-        --max-count 5 \
-        --min-count 0
-    ```
-
-1. Run the `az aks nodepool show` command to show the details of the new batch processing node pool.
-
-    ```azurecli
-    az aks nodepool show \
-        --resource-group $RESOURCE_GROUP \
-        --cluster-name $AKS_CLUSTER_NAME \
-        --name batchprocpl
-    ```
-
-    Here is an example of the output from the command.
-
-    ```output
-    {
-      "agentPoolType": "VirtualMachineScaleSets",
-      "availabilityZones": null,
-      "count": 3,
-      "enableAutoScaling": true,
-      "enableNodePublicIp": false,
-      "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/akscostsavinggrp/providers/Microsoft.ContainerService/managedClusters/akscostsaving-2093/agentPools/batchprocpl",
-      "maxCount": 10,
-      "maxPods": 110,
-      "minCount": 2,
-      "mode": "User",
-      "name": "batchprocpl",
-      ...
-      "type": "Microsoft.ContainerService/managedClusters/agentPools",
-      "upgradeSettings": {
-        "maxSurge": null
-      },
-      "vmSize": "Standard_DS2_v2",
-      "vnetSubnetId": null
-    }
-    ```
+    Manually scaling the node count in node pools and the ability to scale expensive MV-based node pools to zero is a good strategy to optimize costs on AKS when you manage workload demands directly. Let's look at a strategy where you need to scale nodes, but don't control demand directly.
