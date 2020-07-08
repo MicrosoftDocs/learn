@@ -35,7 +35,7 @@ quiz:
         isCorrect: false
         explanation: "Review the connectivity architecture and policy section"
       - content: "Redirect for all connections"
-        isCorrect: true
+        isCorrect: false
         explanation: "Review the connectivity architecture and policy section"
       - content: "Proxy for connections within Azure and Redirect for connections outside of Azure"
         isCorrect: false
