@@ -110,7 +110,7 @@ Deploy the template to Azure. You learned about the deployment commands in the p
 
 ::: zone pivot="powershell"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
 
 1. Open a terminal window using the *Terminal* menu.
 1. If the dropdown menu on the right of the terminal window says *pwsh* you have the right shell to work from and you can skip to the next section.
