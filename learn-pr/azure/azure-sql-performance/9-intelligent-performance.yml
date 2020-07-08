@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-performance.10-intelligent-performance
+uid: learn.azure-sql-performance.9-intelligent-performance
 metadata:
   title: Intelligent performance
   description: Intelligent performance
@@ -11,4 +11,4 @@ metadata:
 title: Intelligent performance
 durationInMinutes: 10
 content: |
-  [!include[](includes/10-intelligent-performance.md)]
+  [!include[](includes/9-intelligent-performance.md)]
