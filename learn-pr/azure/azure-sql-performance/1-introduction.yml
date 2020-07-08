@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.learn.azure-sql-performance.1-introduction
+uid: learn.azure-sql-performance.1-introduction
 metadata:
   title: Introduction
   description: Introduction
   ms.date: 07/31/2020
-  author: amthomas46
-  ms.author: antho
+  author: rgward
+  ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction
