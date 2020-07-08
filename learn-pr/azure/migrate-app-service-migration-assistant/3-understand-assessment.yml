@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.migrate-app-service-migration-assistant.understand-assessment
-title: Assess the migration readiness of an on-premises web app
+title: Assess a web app with the Azure App Service Migration Assistant
 metadata:
-  title: Assess the migration readiness of an on-premises web app
+  title: Assess a web app with the Azure App Service Migration Assistant
   description: Explore the reasons why you should move your web application to Azure App Service, potential migration hurdles, and the value of an assessment.
   ms.date: 05/21/2020
   author: bobtabor-msft
