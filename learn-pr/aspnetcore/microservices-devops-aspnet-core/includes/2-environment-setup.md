@@ -6,7 +6,7 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
 
 2. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal.
 
-    ![](media/open-azure-cloud-shell.png)
+    ![](../media/open-azure-cloud-shell.png)
 
 3. Create the base source directory
 
@@ -108,15 +108,15 @@ You can begin exploring these services (when ready):
 
 A little while after the `seq` container becomes ready (1/1) you should be able to check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh` where you'll see all the transient errors that occur during the application startup, until they stop and all services are up and running.
 
-![](media/startup-errors-logging.png)
+![](../media/startup-errors-logging.png)
 
 You can also check the general application status at `http://###.###.###.###/webstatus/` until all health icons are green.
 
-![](media/eshop-learn-webstatus.png)
+![](../media/eshop-learn-webstatus.png)
 
 All the services should be up and running in less than five minutes and then you should be able to browse to the home page and login using the credential in the login page.
 
-![](media/home-page.png)
+![](../media/home-page.png)
 
 ## Discount Coupon features
 
@@ -129,4 +129,4 @@ All the services should be up and running in less than five minutes and then you
 
 The discount coupon feature adds the following element to the checkout view:
 
-![Discount coupon feature](media/discount-coupon-feature.png)
+![Discount coupon feature](../media/discount-coupon-feature.png)

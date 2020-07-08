@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with DevOps concepts
   - Access to an Azure subscription with Owner privilege
   - Access to a GitHub account
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: https://docs.microsoft.com/../media/learn/module.svg
 levels:
 - intermediate
 roles:

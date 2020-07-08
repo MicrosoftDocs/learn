@@ -23,7 +23,7 @@ The script above creates the ACR and grants permission to AKS to pull images fro
 
 You should get an output similar to this:
 
-![](media/create-acr.png)
+![](../media/create-acr.png)
 
 You'll use the values ESHOP_REGISTRY, ESHOP_ACRUSER, and ESHOP_ACRPASSWORD in short.
 
@@ -41,7 +41,7 @@ az ad sp create-for-rbac --sdk-auth
 
 You should get an output similar to this:
 
-![](media/create-sp.png)
+![](../media/create-sp.png)
 
 Copy the whole json output because you'll need this a the credentials for the GitHub Action in next step.
 
@@ -53,7 +53,7 @@ In the GitHub repository you just forked, go to **Settings > Secrets** and add t
 <br>
 At this point you should have something like this:
 
-![](media/add-github-secrets.png)
+![](../media/add-github-secrets.png)
 
 - **REGISTRY_USERNAME**: The user name to access your Azure Registry Container (use **ESHOP_ACRUSER**'s value).
 
@@ -67,13 +67,13 @@ The GitHub action you're about to create will be saved to your your repo and wil
 
 Go to the Settings tab in your repo and disable Actions, as shown in the next image.
 
-![](media/disable-actions.png)
+![](../media/disable-actions.png)
 
 ### 2. Create a custom action
 
 Click on the Actions tab in your repository and then click on the "**set up a workflow yourself**" link:
 
-![](media/set-upg-custom-github-workflow.png)
+![](../media/set-upg-custom-github-workflow.png)
 
 ### 3. Add the action specification
 
@@ -196,13 +196,13 @@ Configure the following values in the action yaml editor view:
 
 At this point you should see something like this:
 
-![](media/configure-github-action.png)
+![](../media/configure-github-action.png)
 
 To save the file click on the **Start commit** button
 
 This will create a in the commit in the repo, and you can do it directly to **develop**, as shown next:
 
-![](media/commit-action-to-develop.png)
+![](../media/commit-action-to-develop.png)
 
 This GitHub Action definition will be part of the repo from now on. If you want to make any change, you'll just have to update the file locally and push to **develop** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **develop**.
 
@@ -210,7 +210,7 @@ This GitHub Action definition will be part of the repo from now on. If you want 
 
 Now you have to enable back Actions in your repo, from the **Settings** tab, as shown in the next image.
 
-![](media/enabling-actions.png)
+![](../media/enabling-actions.png)
 
 The updated action will the be triggered next time a commit is pushed to **develop**. From now on, unless you disable Actions in your repo, the CI/CD pipeline you just created will be run automatically every time the develop branch is updated.
 
@@ -332,21 +332,21 @@ Since we are committing to **develop**, the action will run immediately and the 
 
 If you click in the **Actions** tab in your repo, you should be able to monitor the progress, as shown in the next image.
 
-![](media/monitor-github-action-progress.png)
+![](../media/monitor-github-action-progress.png)
 
 If you monitor your pods using the command `kubectl get pods -w` you should see something like this:
 
-![](media/replacing-pods.png)
+![](../media/replacing-pods.png)
 
 In the preceding image you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
 
 You can also check the `webspa` microservice deployment history, with the command `helm history eshoplearn-webspa` to get something like this:
 
-![](media/deployment-history.png)
+![](../media/deployment-history.png)
 
 At this point you just have to refresh the browser to see the changes, as shown in the next image.
 
-![](media/changes-deployed.png)
+![](../media/changes-deployed.png)
 
 ## Rollback a deployment
 
@@ -358,7 +358,7 @@ helm rollback eshoplearn-webspa
 
 Checking the deployment history again you know that everything is back to normal 😅:
 
-![](media/deployment-rollback.png)
+![](../media/deployment-rollback.png)
 
 > **NOTE**
 >
