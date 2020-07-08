@@ -1,3 +1,5 @@
+[//]: # (Here you want to lead the unit with your example of deploying the custom website, where the code is located and so on.)
+
 Kubernetes differs itself from other tool mostly because of its ease to create workloads and manage the cluster. After talking about `kubectl` and how we can create an AKS cluster, now is time to talk about how you can create workloads in your AKS cluster.
 
 ## Create and push images
