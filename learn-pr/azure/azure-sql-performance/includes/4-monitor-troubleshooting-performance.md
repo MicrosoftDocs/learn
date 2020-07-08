@@ -1,12 +1,12 @@
 In this section you will learn about what monitoring and troubleshooting capabilities exist for Azure SQL as compared to SQL Server.
 
-## Monitoring and Troubleshooting Performance
+## Tools and features for performance
 
 Azure SQL provides monitoring and troubleshooting capabilities in the Azure ecosystem as well familiar tools that come with SQL Server. These include the following:
 
 ### Azure Monitor
 
-Azure Monitor is part of the Azure ecosystem and Azure SQL is integrated to support Azure Metrics, Alerts, and Logs
+Azure Monitor is part of the Azure ecosystem and Azure SQL is integrated to support Azure Metrics, Alerts, and Logs.
 
 ### Dynamic Management Views (DMV)
 
@@ -22,11 +22,11 @@ Lightweight Query Profiling is on by default and can be useful to examine the qu
 
 ### Query Plan Debugging
 
-All T-SQL SET statements such as SET SHOWPLAN and SET STATISTICS are available in Azure SQL
+All T-SQL SET statements such as SET SHOWPLAN and SET STATISTICS are available in Azure SQL.
 
 ### Query Store
 
-Query Store is on by default for Azure SQL and is used to provide capabilities such as Automatic Plan Correction and Automatic Tuning. SQL Server Management Studio (SSMS) reports for Query Store are available for Azure SQL
+Query Store is on by default for Azure SQL and is used to provide capabilities such as Automatic Plan Correction and Automatic Tuning. SQL Server Management Studio (SSMS) reports for Query Store are available for Azure SQL.
 
 ### Performance Visualizations
 
@@ -34,9 +34,9 @@ The Azure Portal can be used to view common metrics data for Azure SQL through A
 
 Azure SQL Database uses the Query Store to provide performance visualization for query performance analysis including **Query Performance Insight**.
 
-## Dynamic Management Views (DMV) Details
+## Dynamic Management Views (DMV) details
 
-Dynamic Management Views (DMV) have been a driving force to monitor and troubleshoot performance for many years with SQL Server. Common DMVs for SQL Server are available with Azure SQL and some additional ones specific to Azure
+Dynamic Management Views (DMV) have been a driving force to monitor and troubleshoot performance for many years with SQL Server. Common DMVs for SQL Server are available with Azure SQL and some additional ones specific to Azure.
 
 ### Azure SQL Managed Instance
 
@@ -56,7 +56,7 @@ Dynamic Management Views (DMV) have been a driving force to monitor and troubles
 - **sys.dm_instance_resource_governance** can be used to seem resource limits for a Managed Instance.
 - **sys.dm_user_db_resource_governance** can be used to see common resource limits per the deployment option, service tier, and size for your Azure SQL deployment.
 
-### Geek out with these
+### DMVs for deep troubleshooting
 
 These DMVs provide deeper insight into resource limits and resource governance for Azure SQL. They are not mean to be used for common scenarios but might be helpful when looking deep into a complex performance problem:
 
@@ -64,9 +64,9 @@ These DMVs provide deeper insight into resource limits and resource governance f
 - **sys.dm_resource_governor_resource_pools_history_ex**
 - **sys.dm_resource_governor_workload_groups_history_ex**
 
-## Extended Events Details
+## Extended Events details
 
-Extended events is the de factor tracing mechanism for SQL Server. Extended events for Azure SQL is based on the SQL Server engine and therefore is the same with a few notable differences:
+Extended Events is the tracing mechanism for SQL Server. Extended events for Azure SQL is based on the SQL Server engine and therefore is the same with a few notable differences:
 
 ### Extended Events for Azure SQL Database
 
