@@ -2,19 +2,16 @@ You've been responsible for getting your SQL Server fast, keeping it fast, and m
 
 This is the fourth module of the Azure SQL Fundamentals learning path. The recommendation is to complete the Azure SQL introduction module before continuing.
 
-Throughout the exercises, it's important to also read the accompanying text to the steps, but know that you can always come back to this page to review what you did at a later time.
-
 At the end of this module, you will be able to:
 
-- Understand what are the Azure SQL performance capabilities
-- Configure and Maintain for Performance
+- Identify the performance capabilities of Azure SQL
+- Configure and maintain the performance features of Azure SQL
 - Monitor and troubleshoot performance in Azure SQL
-- Accelerate and Tune Performance in Azure SQL
-- Improve performance with Intelligent Performance
+- Improve performance with Intelligent Insights
 
-### Prerequisites for exercises
+## Prerequisites for exercises
 
-If you intend to complete the exercises (recommended), a sandbox environment is provided for Azure resources. However, you do need to do a few things on your local machine to complete the exercises:
+A sandbox environment is provided for you to deploy Azure resources. However, you do need to do a few things on your local machine to complete the exercises:
 
 - Use a Windows machine or VM (SSMS is only available on Windows)
 - Download and install [the latest version of SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
