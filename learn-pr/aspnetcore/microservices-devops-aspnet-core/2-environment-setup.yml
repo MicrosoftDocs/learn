@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-devops-aspnet-core.2-environment-setup
 metadata:
-  title: environment-setup
+  title: Exercise - Setup the environment
   description: Provision Azure resources, download the eShopOnContainers starter solution, and configure the learning environment.
   ms.date: 07/08/2020
   author: scottaddie
@@ -9,8 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
   ROBOTS: NOINDEX
-title: environment-setup
+title: Exercise - Setup the environment
 durationInMinutes: 1
 content: |
   [!include[](includes/2-environment-setup.md)]
-  [!include[](includes/2-environment-setup.md)]
+

@@ -9,8 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
   ROBOTS: NOINDEX
-title: introduction
+title: Introduction
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
-  [!include[](includes/1-introduction.md)]
+

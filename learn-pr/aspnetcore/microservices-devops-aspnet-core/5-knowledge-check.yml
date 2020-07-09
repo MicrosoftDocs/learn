@@ -65,7 +65,7 @@ quiz:
       - content: "Delete the chart before installing again"
         isCorrect: false
         explanation: "TODO: Explanation"
-      - content: "Update the `appVersion` in the chart - **CORRECT ANSWER**"
+      - content: "Update the `appVersion` in the chart"
         isCorrect: true
         explanation: "TODO: Explanation"
     - content: "What's the command to go back to the previous installed version of a chart?"
@@ -76,7 +76,7 @@ quiz:
       - content: "`helm restore {chart-name}`"
         isCorrect: false
         explanation: "TODO: Explanation"
-      - content: "helm rollback {chart-name}"
+      - content: "`helm rollback {chart-name}`"
         isCorrect: true
         explanation: "TODO: Explanation"
       - content: "`helm install --version -1`"
