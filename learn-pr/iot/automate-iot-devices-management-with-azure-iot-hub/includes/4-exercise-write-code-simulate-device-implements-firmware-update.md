@@ -9,6 +9,7 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
     ```bash
     mkdir fwupdatedevice
     cd fwupdatedevice
+
     ```
     
 1. Enter the below commands in the terminal. The first command creates a **Program.cs** file in your folder, along with a project file and the second one gives your app access to the required .NET packages.
@@ -16,6 +17,7 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
     ```bash
     dotnet new console
     dotnet restore
+
     ```
 
 1. In the terminal, install the required libraries using the following commands:
@@ -24,6 +26,7 @@ At the end of this unit, you'll have a device simulator awaiting for a firmware 
     dotnet add package Microsoft.Azure.Devices.Client
     dotnet add package Microsoft.Azure.Devices.Shared
     dotnet add package Newtonsoft.Json
+
     ```
 
 At this point, your project is ready for coding.
@@ -34,6 +37,7 @@ At this point, your project is ready for coding.
 
     ```bash
     code Program.cs
+
     ```
 
 1. Delete all the content form the document.
