@@ -2,9 +2,9 @@ When a request reaches a web application, there might be a few things you need t
 
 Think of handling a request as a series of steps. Let's say you have a request where the user needs to be logged in to handle a resource. The steps might then need to look like in the following way:
 
-1. **Pre request**, here you could investigate whether the user sent the proper credentials through a request header. If the credentials checks out send the request to the next step.
-1. **Construct the response**, this step would involve talking to some kind of data source that could be a database or an endpoint for example. This step ends with the asked for resource being returned providing the request asks for the resource in a correct way.
-1. **Post request**, there might be an optional step here where you run a piece of code after the request have been handled. The reason to do so could be for logging purposes for example.
+1. **Pre request**: here you could investigate whether the user sent the proper credentials through a request header. If the credentials check out send the request to the next step.
+1. **Construct the response**: this step would involve talking to some kind of data source that could be a database or an endpoint for example. This step ends with the asked for a resource being returned providing the request asks for the resource in a correct way.
+1. **Post request**: there might be an optional step here where you run a piece of code after the request has been handled. The reason to do so could be for logging purposes for example.
 
 The Express framework has built-in support for handling a request in this fashion. It has different methods for handling the request or running a pre or post request.  
 
@@ -16,9 +16,9 @@ app.use((req, res, next) => {})
 
 Note above how the method passed into `use()` has three parameters `req`, `res` and `next`. The parameters have the following meaning:
 
-- `req`, this is the incoming request. It contains request headers, the calling URL, and optionally a body of data if the client sent some data with their request
-- `res`, this is response stream, you will use this stream and write information to it like headers and data that you want to send back to the calling client.
-- `next`, this is a method that when called signals that the request is ok and that you are ready to process the request. If this method `next()` is not called in a middleware any processing of the request is stopped there. If you do not call the  method, it's good practice to communicate back to the client why the request can no longer be processed. You could do that by calling `res.send('<specify a reason why the request is stopped>')`
+- `req`: this is the incoming request. It contains request headers, the calling URL, and optionally a body of data if the client sent some data with their request
+- `res`: this is a response stream, you will use this stream and write information to it like headers and data that you want to send back to the calling client.
+- `next`: this is a method that when called signals that the request is ok and that you are ready to process the request. If this method `next()` is not called in a middleware any processing of the request is stopped there. If you do not call the method, it's good practice to communicate back to the client why the request can no longer be processed. You could do that by calling `res.send('<specify a reason why the request is stopped>')`
 
 ### A request pipeline
 

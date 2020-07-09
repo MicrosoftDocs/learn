@@ -5,7 +5,7 @@ You've been tasked with creating a simple API using the framework Express. Tailw
 You will create a basic application that will be able to handle requests.
 
 1. Create a file `app.js`.
-1. Go to the terminal and enter `npm init -y`. This command will initialize a Node.js project.
+1. Go to the terminal and enter `npm init -y`. This command will create a default `package.json` file for your Node.js project.
 1. In the terminal type `npm install express`. This command installs the Express framework.
 1. Open up the file `package.json` and note how the `dependencies` section now has an `express` entry. That means Express has been correctly installed.
 1. Add the following code to `app.js`:
@@ -19,7 +19,7 @@ You will create a basic application that will be able to handle requests.
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
-   The above creates an instance of an Express app by invoking `express()`. It also sets up a route to `/` with:
+   The code above creates an instance of an Express app by invoking `express()`. It also sets up a route to `/` with:
 
    ```javascript
    app.get('/', (req, res) => res.send('Hello World!'));
@@ -50,9 +50,9 @@ You will create a basic application that will be able to handle requests.
 
 ## Create a Web App that returns JSON data
 
-You will continue to work with the same `app.js` and add a new route.
+You will continue to work with the same `app.js` file and add a new route.
 
-1. Open up `app.js` and add the following code to it:
+1. Open up `app.js` file and add the following code to it:
 
    ```javascript
    app.get("/products", (req,res) => {
@@ -76,7 +76,7 @@ You will continue to work with the same `app.js` and add a new route.
    });
    ```
 
-   Ensure the `app.js` looks like this:
+   Ensure the `app.js` file looks like this:
 
    ```javascript
    const express = require("express");
@@ -138,5 +138,5 @@ You will continue to work with the same `app.js` and add a new route.
    ]
    ```
 
-   Congrats, you've managed to implement a second route that is able to serve up static content.
+   Congrats! You've managed to implement a second route that is able to serve up static content.
    
