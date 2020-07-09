@@ -9,11 +9,11 @@ Let's use the Azure portal to see the custom roles in your subscription.
 1. Select the subscription that you associated your custom role to.
 1. Select **Access control (IAM)** > **Roles**.
 
-    ![Screenshot that how to get to Access control (IAM) and Roles](../media/5-subscription-iam-roles.png)
+    ![Screenshot that how to get to Access control (IAM) and Roles.](../media/5-subscription-iam-roles.png)
 
 1. Select **Type** > **CustomRole**.
 
-    ![Screenshot that shows custom roles selected from drop-down list](../media/5-custom-roles.png)
+    ![Screenshot that shows custom roles selected from drop-down list.](../media/5-custom-roles.png)
 
     You see all the custom roles in your organization.
 
