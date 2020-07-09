@@ -4,7 +4,7 @@ In this module, you learned how to read files and directories, create files and 
 
 A few things to keep in mind from this module:
 
-1. Always favor the sync methods over the async defaults. Asynchronous code can be powerful because it allows your program to do multiple things at once. It can also be incredibly difficult to debug. Stick with the explicit `sync` methods unless you find yourself with a specific need for an action to be asynchronous.
+1. Always use the `promises` namespace on the built-in modules. This allows you to use the `async` and `await` operators to make code synchronous without blocking program execution.
 
 1. Remember that when you create directories, you should check to see if they exist **before** you try to create them. The default behavior in Node.js is to throw an error when you try to create a directory that already exists.
 
