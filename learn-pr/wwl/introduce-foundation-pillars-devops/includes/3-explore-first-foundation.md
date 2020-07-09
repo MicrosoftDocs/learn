@@ -1,6 +1,6 @@
 
 
-The first pillar in our holistic view of DevOps is **Culture**. Culture is an essential foundation to DevOps because it requires a growth and continuous learning mindset to succeed. Leadership support is one of the critical elements to its success.
+**Culture** is an essential foundation to DevOps because it requires a growth and continuous learning mindset to succeed. Leadership support is one of the critical elements to its success.
 
 Before we discuss what DevOps culture looks like, let’s consider the role of culture in an organization’s ability to adopt DevOps. According to Gartner:
 
