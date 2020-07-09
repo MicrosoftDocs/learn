@@ -1,5 +1,7 @@
 In this section, you will learn about Intelligent Performance capabilities of Azure SQL.
 
+TODO: Put in more here. Explain why we call it IP
+
 ## Intelligent Query Processing
 
 Intelligent Query Processing (IQP) is a suite of new capabilities built into the Query Processor and enabled using the latest database compatibility level. Applications can gain performance with no code changes by simply using the latest database compatibility level.
@@ -38,6 +40,8 @@ The following is an example from the Azure Portal where indexes are recommended 
 
 You can yourself try out the following example as a separate exercise on your own Azure subscription by following the steps in Module 4.5 at https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/04-Performance.md. (The scripts used in this example are also in the 04-Performance/tuning_recommendations folder).
 
+TODO: Take out http
+
 ![Index_Recommendation_Notification](../media/9-index-recommendation-notification.png)
 
 If you look at **Performance Overview** in the Azure Portal, you will see performance information for the top 5 resource consuming queries as found in the Query Story and an indication of a recommendation:
@@ -71,3 +75,5 @@ You will see details of the index, table, and space required. You have the optio
 ![create_index_recommendation_script](../media/9-create-index-recommendation-script.png)
 
 Notice the index is a non-clustered index that is applied as an online index. When an index has been applied based on a recommendation, either manually or through automatic tuning, the recommendation engine will also monitor query performance over a period of item with the applied index. If query performance degrades compared to before the index was applied, a recommendation can be made to drop the index.
+
+TODO: Put in quiz

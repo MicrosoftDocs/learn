@@ -1,8 +1,6 @@
-You will now go through an exercise to observe a new performance problem and resolve it by optimizing the application
+You will now go through an exercise to observe a new performance scenario and resolve it by optimizing the application and queries.
 
-### Optimizing application performance with Azure SQL
-
-
+## Optimizing application performance with Azure SQL
 
 In some cases, migrating an existing application and SQL query workload to Azure may uncover opportunities to optimize and tune queries.
 
@@ -12,9 +10,9 @@ When you move your test to Azure SQL Database using the General Purpose tier (8 
 
 All scripts for this exercise can be found at *04-Performance\tuning_applications* in the GitHub repository or zip file you downloaded.
 
-1. Create a new table
+## Create a new table for the application
 
-Run the following T-SQL statement (or use the script **order_rating_ddl.sql**) to create a table in the AdventureWorks database you have used in the first two activities:
+Run the following T-SQL statement (or use the script **order_rating_ddl.sql**) to create a table in the AdventureWorks database you have used in the first two exercises:
 
 ```sql
 DROP TABLE IF EXISTS SalesLT.OrderRating;
@@ -28,45 +26,51 @@ OrderRatingComments char(500) not null);
 GO
 ```
 
-2. Load queries to monitor query execution
+## Load queries to monitor query execution
 
-- Use the following query or script **sqlrequests.sql** to look at active SQL queries *in the context of the AdventureWorks database*:
+Load some T-SQL queries for DMVs to observe query performance for active queries, waits, and I/O. **Load all these queries in the context of the AdventureWorks database**.
 
-```sql
-SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
-FROM sys.dm_exec_requests er
-INNER JOIN sys.dm_exec_sessions es
-ON er.session_id = es.session_id
-AND es.is_user_process = 1;
-```
+1. Load up a query to observe active queries.
 
-- Use the following query or script **top_waits.sql** to look at top wait types by count *in the context of the AdventureWorks database*:
+    Use the following query or script **sqlrequests.sql** to look at active SQL queries *in the context of the AdventureWorks database*:
 
-```sql
-SELECT * FROM sys.dm_os_wait_stats
-ORDER BY waiting_tasks_count DESC;
-```
+    ```sql
+    SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
+    FROM sys.dm_exec_requests er
+    INNER JOIN sys.dm_exec_sessions es
+    ON er.session_id = es.session_id
+    AND es.is_user_process = 1;
+    ```
 
-- Use the following query or script **tlog_io.sql** to observe latency for transaction log writes:
+1. Load up a query to observe waits
 
-```sql
-SELECT io_stall_write_ms/num_of_writes as avg_tlog_io_write_ms, * 
-FROM sys.dm_io_virtual_file_stats
-(db_id('AdventureWorks<ID>'), 2);
-```
+    Use the following query or script **top_waits.sql** to look at top wait types by count *in the context of the AdventureWorks database*:
 
-3. Prepare the workload script
+    ```sql
+    SELECT * FROM sys.dm_os_wait_stats
+    ORDER BY waiting_tasks_count DESC;
+    ```
+
+1. Load up a query to observe I/O latency
+
+    Use the following query or script **tlog_io.sql** to observe latency for transaction log writes *in the context of the AdventureWorks database*:
+
+    ```sql
+    SELECT io_stall_write_ms/num_of_writes as avg_tlog_io_write_ms, * 
+    FROM sys.dm_io_virtual_file_stats
+    (db_id('AdventureWorks'), 2);
+    ```
+
+## Prepare the workload script for execution
 
 Edit the workload script **order_rating_insert_single.cmd**.
 
-Substitute your Azure Database Server created in Module 2 for the **-S parameter**
-Substitute the login name created for the Azure SQL Database Server created in Module 2 for the **-U parameter**
-Substitute the database you deployed in Module 2 for the **-d parameter**
-Substitute the password for the login for the Azure SQL Database Server created in Module 2 for the **-P parameter**.
+Substitute your **unique_id** you were given in the previous exercise for the server name for the **-S parameter**.
+Substitute the password you provided in the database deployment from the previous exercise for the **-P parameter**.
 
-4. Run the workload
+## Run the workload
 
-Run the test INSERT workload using the script **order_rating_insert_single.cmd**. This script uses ostress to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
+Run the workload using the script **order_rating_insert_single.cmd**. This script uses ostress to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
 
 ```sql
 DECLARE @x int;
@@ -82,54 +86,79 @@ END
 
 You can see from this script that it is not exactly a real depiction of data coming from the website but it does simulate many order ratings being ingested into the database.
 
-From a powershell command prompt, change to the directory for this module activity:
+1. Change to the correct directory
 
-[vmusername] is the name of the user in your Windows Virtual Machine. Substitute in the path for c:\users\\[vmusername] where you have cloned the GitHub repo.
+    From a powershell command prompt, change to the directory for this module activity:
 
-```powershell
-cd c:\users\[vmusername]\sqlworkshops-azuresqlworkshop\azuresqlworkshop\04-Performance\tuning_applications
-```
+    ```powershell
+    cd c:<base directory>\04-Performance\tuning_applications
+    ```
 
-Run the workload with the following command
+1. Run the workload script
 
-```Powershell
-.\order_rating_insert_single.cmd
-```
+    Run the workload with the following command
 
-5. Observe query results and duration
+    ```Powershell
+    .\order_rating_insert_single.cmd
+    ```
 
-Using the queries in Step 2 you should observe the following:
+## Observe DMVs and workload performance
+
+Now run the queries for DMVs you loaded earlier to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
+
+Use these queries you can observe the following:
 
 - Many requests constantly have a wait_type of WRITELOG with a value > 0
 - The WRITELOG wait type is one of the highest count for wait types.
 - The avg time to write to the transaction log is somewhere around 2ms.
 
-The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 15 seconds. The total duration using this on Azure SQL Database using a Gen5 v8core ~20 seconds.
+The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core should be around ~25 seconds.
 
 WRITELOG wait types are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1ms.
 
-6. Decide on a resolution
+## Decide on a resolution
 
 The problem is not a high % of log write activity. The Azure Portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25% (this is information only. There is not a need to query these). The problem is not an IOPS limit as well. The issue is that this application workload is sensitive to low latency for transaction log writes and the General Purpose tier is not designed for this type of latency requirements. In fact, the documentation for Azure SQL Database says the resource limits for I/O latency is between 5-7ms.
 
->**NOTE:** General Purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads) so you may experience latencies more like these numbers. Managed Instance General Purpose latencies are similar. If your application is very sensitive to I/O latencies you should consider Business Critical Tiers.
+> [!NOTE]
+> General Purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads) so you may experience latencies more like these numbers. Managed Instance General Purpose latencies are similar. If your application is very sensitive to I/O latencies you should consider Business Critical Tiers.
 
-If you examine the workload, you will see each INSERT is a single transaction commit which requires a transaction log flush.
+If you examine the workload T-SQL script **order_rating_insert_single.sql**, you will see each INSERT is a single transaction commit which requires a transaction log flush.
 
 One commit for each insert is not efficient but the application was not affected on a local SSD because each commit was very fast. The Business Critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency but maybe there is an application optimization so the workload is not as sensitive to I/O latency for the transaction log.
 
 The T-SQL batch can be changed for the workload to wrap a BEGIN TRAN/COMMIT TRAN around the INSERT iterations.
 
-7. Prepare and run the modified workload and observe
+## Run a modified more efficient workload
 
-The modified workload can be found in the script **order_rating_insert.sql**. Prepare the workload script with edits **order_rating_insert.cmd** as you did in Step 3.
+Make edits to scripts and execute them to see a more efficient I/O performance.
 
-Run the modified workload using the script with ostress called **order_rating_insert.cmd** similar to how you ran the workload script in Step 3.
+1. Change the application query for the workload
 
-Now the workload runs in almost 2-5 seconds compared to even 18-19 seconds with a local SSD using singleton transactions. This is an example of tuning an application for SQL queries that will run after in or outside of Azure.
+    The modified workload can be found in the script **order_rating_insert.sql**. Prepare the workload script by editing **order_rating_insert.cmd** to put in your server name and password.
 
-The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity. It is important to note that sys.dm_os_wait_stats cannot be cleared using DBCC SQLPERF as it can be with SQL Server.
+1. Run the modified workload
 
-The concept of "batching" can help most applications including Azure.
+    Run the modified workload using the script **order_rating_insert.cmd** similar to how you ran the previous workload script.
 
->**TIP:** Very large transactions can be affected by resource governance on Azure and the symptoms will be LOG_RATE_GOVERNOR. In this example, the char(500) not null column pads spaces and causes large tlog records. Performance can even be more optimized by making that column a variable length column.
+## Observe the new results
+
+1. Look at the results of the T-SQL script for **sqlrequests.sql**.
+
+    You will see from these results far less WRITELOG waits and overall less wait time for these waits.
+    
+    Now the workload runs much faster compared to the previous execution. This is an example of tuning an application for SQL queries that will run after in or outside of Azure.
+
+    > [!NOTE]
+    > This workload can run even faster against an Azure SQL Database with a connection type of **Redirect**. The deployment you have done in this exercise uses a Default connection type which will be a Proxy type because you are connected outside of Azure. Using Redirect can significantly speed up a workload like this given the round trips requires from the client to the server.
+
+1. Observe the workload duration
+
+    The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity. It is important to note that sys.dm_os_wait_stats cannot be cleared using DBCC SQLPERF as it can be with SQL Server.
+
+The concept of "batching" can help most applications including those connected to Azure SQL.
+
+> [!TIP]
+> Very large transactions can be affected by resource governance on Azure and the symptoms will be LOG_RATE_GOVERNOR. In this example, the char(500) not null column pads spaces and causes large tlog records. Performance can even be more optimized by making that column a variable length column.
+
+In the next unit you will learn about the amazing capabilities of Intelligent Performance in Azure SQL which can help you go even farther with performance for Azure SQL.
