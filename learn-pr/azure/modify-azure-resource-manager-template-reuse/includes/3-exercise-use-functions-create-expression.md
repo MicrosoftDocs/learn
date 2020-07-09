@@ -1,3 +1,6 @@
+> [!NOTE]
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox, and you're added to a special subscription named Concierge Subscription.
+
 Here, you create an expression using Azure Resource Manager template (ARM template) functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in Azure Storage Account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
