@@ -20,7 +20,7 @@ For performance, one option that is not available to change is the recovery mode
 
 ## Files and filegroups
 
-SQL Server professionals often use files and filegroups to improve I/O performance. Azure SQL does not allow users to place files on specific disk systems. However, Azure SQL has commitments for I/O performance with regards to rates, IOPS, and latencies so abstracting the user from physical file placement can be a benefit.
+SQL Server professionals often use files and filegroups to improve I/O performance. Azure SQL does not allow users to place files on specific disk systems. However, Azure SQL has resource limits for I/O performance with regards to rates, IOPS, and latencies so abstracting the user from physical file placement can be a benefit.
 
 Azure SQL Database only has one database file and the size is configured through Azure interfaces. There is no functionality to create additional files.
 
@@ -41,7 +41,7 @@ Resource Governor is a feature in SQL Server that can be used to control resourc
 
 ## Maintaining indexes
 
-Index creation and maintenance for Azure SQL is exactly the same as SQL Server. For example, rebuilding and reorganization of indexes is fully supported as with SQL Server. This includes online and resumable indexes.
+Index creation and maintenance for Azure SQL is exactly the same as SQL Server. For example, creating, rebuilding and reorganization of indexes is fully supported as with SQL Server. This includes online and resumable indexes.
 
 ## Maintaining statistics
 

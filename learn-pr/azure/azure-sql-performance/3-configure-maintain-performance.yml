@@ -26,3 +26,25 @@ quiz:
       - content: "Increasing the number of vCores through the Azure Portal"
         isCorrect: true
         explanation: "Increasing the number of vCores may give you additional tempdb files"
+    - content: "You can configure I/O Performance for Azure SQL Database by which method"
+      choices:
+      - content: "Place database files on Azure Premium Storage"
+        isCorrect: false
+        explanation: "Users don't have access for physical file placement with Azure SQL Database"
+      - content: "Choose a deployment option that meets your I/O requirements"
+        isCorrect: true
+        explanation: "Resource limits for specific deployment options have I/O performance commitments"
+      - content: "Place specific tables and indexes on different filegroups"
+        isCorrect: true
+        explanation: "You don't have access to create filegroups with Azure SQL Database"
+    - content: "How do you maintain indexes with Azure SQL?"
+      choices:
+      - content: "You can create, rebuild, and reorganize indexes"
+        isCorrect: true
+        explanation: "Azure SQL supports all options to create, rebuild, and reorganize indexes just like Azure SQL"
+      - content: "Use a specific deployment option that supports rebuilding indexes"
+        isCorrect: false
+        explanation: "All deployment options support rebuilding indexes"
+      - content: "Use an offline index rebuild since online index rebuilds are not supported on Azure SQL"
+        isCorrect: false
+        explanation: "Azure SQL supports online index rebuilds"
