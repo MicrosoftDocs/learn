@@ -1,6 +1,6 @@
 SQL Server and Azure SQL services have been known for the importance it puts on security, specifically as being enterprise-class. In this unit, you'll learn about the various security capabilities related to network security and identity and access. In the units that follow, you'll get hands on with some of these capabilities.
 
-![Enterprise-class security](../media/enterprisesecurity.png)
+![Enterprise-class security](../media/2-enterprise-security.png)
 
 ## Network security
 
@@ -19,7 +19,7 @@ In addition to these main choices, you have the opportunity to block all public 
 
 During deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This option makes it easy to get up and running and get Azure SQL Database connected to other services like Azure VMs or Azure App Services (or even the Azure Cloud Shell), because you're allowing anything that comes through Azure to have the potential to connect.
 
-![Allow access to Azure services](../media/allowaccess.png)
+![Allow access to Azure services](../media/2-allow-access.png)
 
 This does not, however, allow anything outside of Azure (for example, your on-premises environment) to have access.
 
@@ -29,7 +29,7 @@ If you can, switching it to **No** is the most secure configuration of the publi
 
 The next option you have is to leverage firewall rules. Your results can be similar to those of Allow Azure access, except for each service to connect (in the example below, a VM) you will need to add a unique firewall rule to allow the VM to connect. Firewall rules also enable your on-premises environment because you can add firewall rules for machines and applications in your on-premises environment.
 
-![Firewall rules](../media/firewallrules.png)
+![Firewall rules](../media/2-firewall-rules.png)
 
 Note that it is possible to Allow access to Azure services so you get connectivity in Azure, and then add firewall rules for just your on-premises connectivity. As previously mentioned, the Allow access to Azure services is not as secure since it allows all Azure traffic, so the recommendation would be to instead use firewall rules exclusively.
 
@@ -47,7 +47,7 @@ If you wanted to use only firewall rules, setting this up can be complicated, si
 
 If you configure access from a VNet with a Virtual Network rule, then any resources in that VNet can access the Azure SQL Database logical server, which can simplify the challenge of configuring access to all the IP addresses (static and dynamic) that need to access the data. VNet rules allows you to specify one or multiple virtual networks, encompassing all of the resources within. You can also start to leverage VNet technologies to connect networks across regions in Azure and even to on-premises.  
 
-![VNet Rules](../media/vnetrules.png)
+![VNet Rules](../media/2-vnet-rules.png)
 
 In this example, you could run the same query as in the previous section from your Azure VM in the virtual network "SQLDBVNET-EUS":
 
@@ -90,7 +90,7 @@ Even though the connection through T-SQL is coming through the private IP addres
 
 You've seen how to configure the most secure network using Azure SQL Database with the public endpoint, which is similar to the way that Azure SQL Managed Instance is deployed. This method of securing Azure SQL Database has been used for years. However, in 2019, Azure began moving towards a concept of a Private Link, which is more similar to the way that Azure SQL Managed Instance is deployed. Private Link allows you to connect to Azure SQL Database (and several other PaaS offerings) using a private endpoint, which means it has a private IP address within a specific VNet.  
   
-![Private endpoint connection](../media/privateendpoint.png)
+![Private endpoint connection](../media/2-private-endpoint.png)
 
 In the example above, what you'll notice is that the general networking infrastructure did not change, you can still leverage the VNet connectivity strategies from VNet rules. However, you will not have to create VNet rules. Resources that need to connect to the database server simply have to have access to the VNet where the endpoint resides (in this case "SQLDBVNET-EUS"). Only connections going through the private endpoint will have access, all other connections (for example, from the internet) will be denied.
 
@@ -138,7 +138,7 @@ Additionally, the service will block you from directly connecting using anything
 
 While Azure SQL Managed Instance's deployment is different from Azure SQL Database, understanding the networking functionality at a high level is easy to translate from Azure SQL Database to Azure SQL Managed Instance. In Azure SQL Managed Instance, either before or during deployment, you must create a specific subnet (logical grouping within a VNet) with several requirements to host the Azure SQL Managed Instance(s). Once deployed, it is already configured similar to a private endpoint in Azure SQL Database. Using standard networking practices, you must enable access to the VNet that the managed instance lives. By default, you have a private endpoint and relatively private DNS hierarchy.  
 
-![SQL Managed Instance Network](../media/sqlminetwork.png)
+![SQL Managed Instance Network](../media/2-sql-managed-instance-network.png)
 
 There are references in the summary on how exactly your subnet must be deployed and configured. If you go through the Azure portal flow for deployment, the virtual network and subnet can be deployed for you.
 
@@ -163,7 +163,7 @@ For both Azure SQL Database and Azure SQL Managed Instance, SQL authentication i
 
 If you are migrating a workload that needs Windows Authentication or your organization leverages Azure Active Directory (Azure AD), you can use Azure AD. For both Azure SQL Managed Instance and Azure SQL Database, you can assign an Azure AD server admin using the portal or command-line tools.
 
-![Set the AD admin](../media/aadadmin.png)  
+![Set the AD admin](../media/2-azure-ad-admin.png)  
 
 Depending on how your organization has configured Azure AD, there are three methods of connecting (for example, in SSMS) with Azure AD:
 
