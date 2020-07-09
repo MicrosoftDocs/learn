@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.nodejs-files.3-exercise-file-system
-title: Exercise - Working with the file system
+title: Exercise - Work with the file system
 metadata:
-  title: Exercise - Working with the file system
+  title: Exercise - Work with the file system
   description: Use the "fs" module to read files and folders on the file system.
   author: burkeholland
   ms.author: buhollan

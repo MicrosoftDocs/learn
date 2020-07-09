@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azure.nodejs-files
 metadata:
-  title: Working with files and directories with Node.js
+  title: Work with files and directories with Node.js
   description: Build an app that manipulates files and directories with Node.js.
   ms.date: 04/20/2020
   author: softchris
