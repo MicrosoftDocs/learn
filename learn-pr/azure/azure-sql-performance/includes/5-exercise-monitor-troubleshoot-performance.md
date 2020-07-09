@@ -1,6 +1,6 @@
 In this exercise you will learn how to monitor and troubleshoot a performance problem with Azure SQL using familiar and new tools and capabilities.
 
-### Set up: Use scripts to deploy Azure SQL Database
+## Set up: Use scripts to deploy Azure SQL Database
 
 You first need to deploy a database for this exercise. You will use a Powershell script with the Azure Cloud Shell.
 
@@ -86,7 +86,7 @@ You first need to deploy a database for this exercise. You will use a Powershell
 
     ![Connect to SQL Database in SSMS](../media/5-connect-azure-sql.png)  
 
-### Prepare the exercise by loading and editing scripts
+## Prepare the exercise by loading and editing scripts
 
 All scripts for this exercise can be found in the folder *04-Performance\monitor_and_scale* in the GitHub repository or zip file you downloaded.
 
@@ -122,7 +122,7 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
     - Substitute your unique_id you saved from the deployment script to put in the correct server name.
     - Substitute the password for the login for the Azure SQL Database Server for the **-P parameter**.
 
-### Run the workload
+## Run the workload
 
 Now run a workload of the T-SQL query to observe its performance simulating concurrent users.
 
@@ -201,7 +201,7 @@ Now run a workload of the T-SQL query to observe its performance simulating conc
     [datetime] [ostress PID] Worker threads created, beginning execution...
     ```
 
-### Observe performance of the workload
+## Observe performance of the workload
 
 Use T-SQL DMVs to observe the performance of the workload.
 
@@ -248,7 +248,7 @@ Use T-SQL DMVs to observe the performance of the workload.
 
     Your duration time may vary but this typically takes at least 1-3 minutes. Make sure to let this run to completion. When the workload is done you will be put back at the command prompt.
 
-### Use the Query Store for further analysis
+## Use the Query Store for further analysis
 
 Query Store is a capability in SQL Server to track performance execution of queries. Performance data is stored in the user database. Query Store is not enabled by default for databases created in SQL Server but is on by default for Azure SQL Database (and Azure SQL Managed Instance).
 
@@ -300,7 +300,9 @@ Query Store comes with a series of system catalog views to view performance data
 
     Given the evidence to this point, without any query tuning, our workload requires more CPU capacity than we have deployed for our Azure SQL Database.
 
-### Observing performance with Azure Monitor
+You can close both Query Store reports for now. You will use the same reports in the next exercise.
+
+## Observing performance with Azure Monitor
 
 Let's use one other method to view the resource usage of our workload. Azure Monitor provides performance metrics which you can view in various methods including Azure Portal.
 
@@ -324,7 +326,7 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
     The default is a line chart, but the Explorer view allows you to change the chart type. There are various options with Metrics Explorer including the ability to show multiple metrics on the same chart.
 
-### Azure Monitor Logs
+## Azure Monitor Logs
 
 In this exercise you did not setup an Azure Monitor Log (mainly because there is a delay in metrics information appearing in the log) but it is worth looking at what a log may look like for a CPU resource usage scenario. Azure Monitor Logs can provide a much longer historical record than Azure Metrics.
 
