@@ -10,6 +10,8 @@ You learned about:
 - Keeping sensitive files out of your repository by leveraging the use of a `.gitignore` file
 - Removing historical commits exposing sensitive data deep in your repository
 
+Now that you're familiar with security best practices, learn to [Automate DevOps processes by using GitHub Apps](/learn/modules/automate-devops-github-apps/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

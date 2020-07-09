@@ -7,6 +7,8 @@ You learned about:
 - Utilizing GitHub's APIs
 - Installing GitHub Apps and working with them
 
+GitHub Apps are great for interacting with GitHub from virtually anywhere. But what if you want to interact with the API from within GitHub Actions? Learn to [Automate GitHub by using GitHub Script](/learn/modules/automate-github-using-github-script/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.

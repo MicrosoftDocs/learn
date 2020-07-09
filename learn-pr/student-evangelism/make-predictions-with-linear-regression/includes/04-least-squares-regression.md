@@ -54,7 +54,7 @@ to make our predictions, there is still one best straight line among all
 straight lines.
 
 Our formulas for the slope and intercept of the regression line, derived
-for football shaped scatter plots, give the following values.
+from football shaped scatter plots, give the following values.
 
 ``` python
 slope(shotput, 'Weight Lifted', 'Shot Put Distance')

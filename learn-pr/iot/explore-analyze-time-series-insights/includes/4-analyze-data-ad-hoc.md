@@ -51,5 +51,3 @@ You'll now see two lines on your graph, with a different shade of color. As you 
 ![alt-text](../media/explore-5.png)
 
 You have now successfully displayed data ingested by Time Series Insights.
-
-In the next module, you'll configure a data model to better query your data.

@@ -16,3 +16,9 @@ In this module, you will:
 
 - A GitHub account
 - The ability to navigate and edit files in GitHub
+
+This module covers the process of finding and organizing information on GitHub. To fully appreciate the benefits this module discusses, it's recommended that you complete the following modules first:
+
+- [Introduction to GitHub](/learn/modules/introduction-to-github)
+- [Manage software delivery by using a release based workflow on GitHub](/learn/modules/release-based-workflow-github)
+- [Manage repository changes by using pull requests on GitHub](/learn/modules/manage-changes-pull-requests-github)

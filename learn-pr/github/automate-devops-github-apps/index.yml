@@ -3,7 +3,7 @@ uid: learn.github.automate-devops-github-apps
 metadata:
   title: "Automate DevOps processes by using GitHub Apps - Learn"
   description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
-  ms.date: 06/18/2020
+  ms.date: 06/26/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Familiarity with pull requests
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/github/automate-devops-github-apps.svg
 ratingEnabled: true
 levels:
 - beginner

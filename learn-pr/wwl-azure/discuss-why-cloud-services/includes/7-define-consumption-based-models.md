@@ -18,7 +18,7 @@ Consumption-based models also allow for better cost prediction. Prices for indiv
 
 ## Contoso Ltd. Case Study - Consumption-Based Usage
 
-Consumption-based usage is best capability for us here at the Contoso, as we are only paying for what we consume! We have systems designed to take a ton of load, but often they are sitting idle. During the last shopping season, we had more than a 1000 servers just waiting to collect and process data. "Waiting" being the operative word, simply because we were paying for them even when they were idle.
+Consumption-based usage is best capability for us here at the Contoso, as we are only paying for what we consume! We have systems designed to take a ton of load, but often they are sitting idle. During the last shopping season, we had more than 1000 servers just waiting to collect and process data. "Waiting" being the operative word, simply because we were paying for them even when they were idle.
 
 The ability to build out the application, deploy it to cloud, and only pay for it when (and how) it is being used, is great. We can have one server deployed and waiting for users, and we only pay a small amount.  Then when more users start connecting at peak shopping times, we can just add a few extra servers to our site. The system works well because we only pay for them while they are working, and then we disconnect them when they are not needed.
 

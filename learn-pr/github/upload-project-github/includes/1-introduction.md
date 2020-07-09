@@ -5,7 +5,7 @@ Suppose you are working on a software project that is starting to really take sh
 In this module, you learn how to prepare and upload a project to GitHub.
 
 > [!NOTE]
-> If you are uploading a project that is already hosted in a version control system, consider completing **Migrating your repository to GitHub** instead.
+> If you are uploading a project that is already hosted in a version control system, consider completing [Migrate your repository by using GitHub best practices](/learn/modules/migrate-repository-github) instead.
 
 ## Learning objectives
 
@@ -19,3 +19,5 @@ In this module, you will:
 ## Prerequisites
 
 - A GitHub account
+
+It is recommended that you complete [Introduction to GitHub](/learn/modules/introduction-to-github) before beginning this module.

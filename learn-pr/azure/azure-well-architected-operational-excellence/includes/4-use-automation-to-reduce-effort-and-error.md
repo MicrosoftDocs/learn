@@ -120,7 +120,7 @@ Automating your infrastructure deployment is a great first step. But when you're
 
 ## VM images vs. post-deployment configuration
 
-For many virtual machine deployments, your job isn't done when a VM is simply up and running. In many situations, it's quite likely there's additional configuration that you need to take care of before the VM can actually serve its intended purpose. For example: additional disks might need formatting, the VM might need to be joined to a domain, an agent for a management software package might needs to be installed, and most likely the actual workload requires installation and configuration as well.
+For many virtual machine deployments, your job isn't done when a VM is simply up and running. In many situations, it's quite likely there's additional configuration that you need to take care of before the VM can actually serve its intended purpose. For example: additional disks might need formatting, the VM might need to be joined to a domain, an agent for a management software package might need to be installed, and most likely the actual workload requires installation and configuration as well.
 
 There are two common strategies that you can use for the configuration work, which for all intents and purposes are considered to be part of the configuration process for the VM itself, and each of these strategies has its advantages and disadvantages.
 

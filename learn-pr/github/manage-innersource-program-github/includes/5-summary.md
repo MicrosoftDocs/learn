@@ -11,6 +11,8 @@ You learned about:
 - Measuring the success of InnerSource within your organization
 - Distributing your InnerSource toolkit
 
+Now that you have an InnerSource program together, learn to [Create an open-source program by using GitHub best practices](/learn/modules/create-open-source-program-github/).
+
 ## Learn more
 
 Here are some links to more information on the topics we discussed in this module.
