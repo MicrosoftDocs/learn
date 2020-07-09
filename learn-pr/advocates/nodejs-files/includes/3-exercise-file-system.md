@@ -177,6 +177,8 @@ You're going to need to find all of those files given only the top-most location
          }
        }
      }
+     await findFiles(folderName);
+     return salesFiles;
    }
    ```
 

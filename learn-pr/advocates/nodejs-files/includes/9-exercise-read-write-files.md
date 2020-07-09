@@ -24,7 +24,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
    async function calculateSalesTotal(salesFiles) {
      let salesTotal = 0;
      // loop over each file path in the salesFiles array
-     for (file of files) {
+     for (file of salesFiles) {
        // read the file and parse the contents as JSON
        const data = JSON.parse(await fs.readFile(file));
        // Add the amount in the data.total field to the salesTotal variable
@@ -36,7 +36,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
 
 ## Call the calculateSalesTotals Method
 
-1. In the `main` function, add a call to the `calculateSalesTotals` function just above the `fs.writeFileSync` call.
+1. In the `main` function, add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
 
    ```javascript
    async function main() {
@@ -57,13 +57,13 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
      const salesTotal = await calculateSalesTotal(salesFiles);
 
      // write the total to the "totals.txt" file
-     fs.writeFileSync(path.join(salesTotalsDir, "totals.txt"), String());
+     await fs.writeFile(path.join(salesTotalsDir, "totals.txt"), String());
    }
    ```
 
 ## Write the total to the "totals.txt" file
 
-1. In the `main` function, modify the `fs.writeFileSync` a block to write the value of the `salesTotal` variable to the "totals.txt" file.
+1. In the `main` function, modify the `fs.writeFile` a block to write the value of the `salesTotal` variable to the "totals.txt" file.
 
    ```javascript
    async function main() {

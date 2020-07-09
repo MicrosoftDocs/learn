@@ -1,17 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.nodejs-files
 metadata:
-  title: Working with files and directories with Node.js
+  title: Work with files and directories in a Node.js app
   description: Build an app that manipulates files and directories with Node.js.
   ms.date: 04/20/2020
-  author: softchris
-  ms.author: chnoring
+  author: burkeholland
+  ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Work with files and directories with Node.js
+title: Work with files and directories in a Node.js app
 summary: Build an app that manipulates files and directories with Node.js.
 abstract: |
   By the end of this module, you will be able to:
+  
   - Work with directories
   - Create and delete files
   - Read from files
@@ -23,7 +24,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - azure
 prerequisites: None
 units:
   - learn.azure.nodejs-files.1-introduction

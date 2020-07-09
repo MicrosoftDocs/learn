@@ -22,7 +22,7 @@ In the current "index.js" code, you're passing the static location of the "store
    async function main() {
      const salesDir = path.join(__dirname, "stores");
 
-     const salesFiles = async findSalesFiles(salesDir);
+     const salesFiles = await findSalesFiles(salesDir);
      console.log(salesFiles);
    }
    ```
