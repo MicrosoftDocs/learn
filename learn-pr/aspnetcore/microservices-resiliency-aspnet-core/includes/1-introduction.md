@@ -17,4 +17,3 @@ You'll modify the application to include some Polly resiliency handling policies
 - Familiarity C# and ASP.NET Core development.
 - Access to an Azure subscription with **Owner** privilege.
 - Access to a GitHub account
-- 
