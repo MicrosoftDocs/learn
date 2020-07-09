@@ -8,7 +8,7 @@ In this exercise, you're going to write a Node.js program that can search for fi
 
 Make sure you activate the Microsoft Learn sandbox by clicking the "Activate Sandbox" at the top of this page.
 
-## Setup the enviornment
+## Setup the environment
 
 Run the following command in the Cloud Shell on the right to ensure that you are working with the most current version of Node.js
 
