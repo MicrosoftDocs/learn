@@ -8,7 +8,7 @@ metadata:
   ms.author: buhollan
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
-  ms.prod: vs
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

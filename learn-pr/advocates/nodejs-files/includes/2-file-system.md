@@ -20,7 +20,7 @@ The "fs" module allows you to do various operations on files and directories. It
 
 ## Listing contents in a directory
 
-One of the things that you'll do with the "fs" module quite a bit is list out or "enumerate" the contents in a given directory. For instance, Tailwind Traders has a root folder called "sales" and in that folder are subfolders organized by store number. Inside those folders are the sales total files. The whole structure look like this...
+One of the things that you'll do with the "fs" module quite a bit is list out or "enumerate" the contents in a given directory. For instance, Tailwind Traders has a root folder called "stores" and in that folder are subfolders organized by store number. Inside those folders are the sales total files. The whole structure look like this...
 
 ```
 📂 stores
@@ -37,7 +37,7 @@ To read through the contents of the folder, you can use the `readdir` method. Mo
 The "readdir" returns a list of items
 
 ```javascript
-const items = await fs.readdir("stores", (err, items));
+const items = await fs.readdir("stores");
 console.log(items); // [ 201, 202, sales.json, totals.txt ]
 ```
 
@@ -48,8 +48,8 @@ Notice the order of the results returned by `readdir` and `readdirsync` methods:
 When you read the contents of a directory, you get back both folders and files as an array of strings. You can determine which ones are files vs which ones are directories by passing in the `withFileTypes` option. This will return an array of `Dirent` objects instead of an array of strings. The `Dirent` object has `isFile` and `isDirectory` methods that you can use to determine what type of object you are dealing with.
 
 ```javascript
-const items = await fs.readdir("stores", { withFileTypes: true }));
-for each (item of items) {
+const items = await fs.readdir("stores", { withFileTypes: true });
+for (let item of items) {
   const type = item.isDirectory() ? "folder" : "file";
   console.log(`${item.name}: ${type}`);
   // 201: folder, 202: folder, sales.json: file, totals.txt: file
