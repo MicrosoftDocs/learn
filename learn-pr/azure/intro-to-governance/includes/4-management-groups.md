@@ -23,7 +23,7 @@ You can manage your Azure subscriptions more effectively by using Azure Policy a
 
 You can create management groups by using the Azure portal, Azure PowerShell, or Azure CLI.
 
-The first time your organization creates a management group, there is an initial set up process. To get started in the portal, search for Management groups and select **Start using management groups**.
+The first time your organization creates a management group, there is an initial setup process. To get started in the portal, search for Management groups and select **Start using management groups**.
 
 :::image type="content" source="../media/4-start-using-management-groups.png" alt-text="Screenshot of the management groups page in the Azure portal where there aren't any management groups yet. The button Start using management groups is enabled.":::
 
@@ -34,9 +34,9 @@ Create your first management group by entering a management group ID and display
 
 ## Root management group for each organization
 
-After you select **Save** on your first management group, a root management group is created in the Azure Active Directory (Azure AD) organization. By default, the root management group's display name is **Tenant root group**. The ID is the Azure AD ID. After this group is created, all existing subscriptions in the directory are made children of the root management group. This ensures there's only one management group hierarchy within a directory.
+After you select **Save** on your first management group, a root management group is created in the Azure Active Directory (Azure AD) organization. By default, the root management group's display name is **Tenant root group**. The ID is the Azure AD ID. After this group is created, all existing subscriptions in the Azure AD organization are made children of the root management group. So there's only one management group hierarchy within an organization.
 
-Having a single hierarchy within the directory allows administrators to apply global access and policies that other customers within the directory can't bypass. Anything assigned on the root applies to the entire hierarchy, which includes all management groups, subscriptions, resource groups, and resources within that Azure AD organization.
+Having a single hierarchy within the organization allows administrators to apply global access and policies that other users within the organization can't bypass. Anything assigned on the root applies to the entire hierarchy, which includes all management groups, subscriptions, resource groups, and resources within that Azure AD organization.
 
 The management group you create appears under the **Tenant root group**.
 
@@ -47,8 +47,7 @@ Create additional management groups by selecting **Add management group**.
 ## Important facts about management groups
 
 - Any Azure AD user in the organization can create a management group. The creator is given an Owner role assignment.
-
 - A single Azure AD organization can support 10,000 management groups.
 - A management group tree can support up to six levels of depth not including the Root level or subscription level.
 - Each management group can have many children.
-- When your organization creates subscriptions, they are automatically defaulted to the root management group.
+- When your organization creates subscriptions, they are automatically added to the root management group.
