@@ -58,7 +58,7 @@ az deployment group create \
 
 However, if you would like to deploy this template to see it succeed, use the Azure PowerShell commands below. Be sure to use the same *storagePrefix* parameter value you used in the last deployment.
 
-```azurecli
+```azurepowershell
 $templateFile = "azuredeploy.json"
 $today=Get-Date -Format "MM-dd-yyyy"
 $deploymentName="addVariable-"+"$today"

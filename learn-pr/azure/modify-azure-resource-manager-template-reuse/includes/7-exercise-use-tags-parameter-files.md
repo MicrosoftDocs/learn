@@ -95,7 +95,7 @@ Here, you create a parameter to use as a resource tag in your template.
     New-AzResourceGroupDeployment `
       -Name $deploymentName `
       -TemplateFile $templateFile `
-      -storagePrefix storage `
+      -storagePrefix {your storagePrefix} `
       -storageSKU Standard_LRS
     ```
 
