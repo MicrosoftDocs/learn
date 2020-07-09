@@ -72,7 +72,12 @@ Write-Host $serverName
 
 Open SSMS and create a new connection to your logical server.  
 
-For server name, input the name of your Azure SQL Database logical server. You may need to refer to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
+For server name, input the name of your Azure SQL Database logical server. You may need to refer to the Azure portal to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
+
+> [!div class="nextstepaction"]
+> [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
+Once you're in the Azure Portal you can search in the top bar for `AdventureWorks` to find your database and its associated logical server.
 
 Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
@@ -86,7 +91,12 @@ Check the **Remember password** box and select **Connect**.
 
 1. Enable auditing on the Azure SQL Database logical server  
 
-    Open the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) and navigate to your Azure SQL Database. In the left-hand task menu, under Security, select **Auditing**. Review the options and then select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.  
+    Open the Azure portal and navigate to your Azure SQL Database.
+
+    > [!div class="nextstepaction"]
+    > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+
+    In the left-hand task menu, under Security, select **Auditing**. Review the options and then select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.  
 
     ![Database-level auditing blade](../media/dbaudit.png)  
 
