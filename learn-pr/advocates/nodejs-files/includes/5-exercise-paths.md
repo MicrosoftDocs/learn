@@ -77,7 +77,7 @@ Instead of looking for just `sales.json` files, this program needs to search for
    mv stores/201/sales.json stores/201/totals.json
    ```
 
-1. On line 30 of the `index.js` file, change the `if` statement to check just the file extension. Use the `path.join` method to compose the full path to the file.
+1. In the `findFiles` method, change the `if` statement to check just the file extension. Use the `path.join` method to compose the full path to the file.
 
    ```javascript
    if (path.extname(item.name) === ".json") {

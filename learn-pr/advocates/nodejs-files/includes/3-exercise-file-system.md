@@ -210,7 +210,9 @@ You're going to need to find all of those files given only the top-most location
 
 Excellent! You've successfully written a command-line program that will traverse any directory and find all the "sales.json" files inside.
 
-However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. That's not bad, it's just that there's a better way to work with paths in Node.js. In the next section, you'll learn how to do just that using the "path" module.
+However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. Also, you may run into issues on other operating systems (like Windows) that use different path separators. 
+
+In the next section, you'll learn how to construct paths that work across operating systems using the "path" module.
 
 ### Got Stuck?
 
