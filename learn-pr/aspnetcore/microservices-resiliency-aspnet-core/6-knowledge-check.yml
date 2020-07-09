@@ -39,7 +39,7 @@ quiz:
       - content: "Polly and Linkerd can have complementary roles, depending on the context."
         isCorrect: true
         explanation: "TODO: Explanation"
-    - content: "Which of the following is *not* needed to achieve a resilient application in Kubernetes?"
+    - content: "Which of the following is **not** needed to achieve a resilient application in Kubernetes?"
       choices:
       - content: "CI/CD pipelines."
         isCorrect: true
@@ -53,17 +53,32 @@ quiz:
       - content: "Network-related resiliency infrastructure."
         isCorrect: false
         explanation: "TODO: Explanation"
-    - content: "True?"
+    - content: "Which of the following is **not** true of Linkerd?"
       choices:
-      - content: "true 1"
+      - content: "It can adjust retries and timeouts adapting to the current cluster state."
+        isCorrect: false
+        explanation: "TODO: Explanation"
+      - content: "It can monitor the traffic between pods."
+        isCorrect: false
+        explanation: "TODO: Explanation"
+      - content: "It must be included in the application code."
         isCorrect: true
         explanation: "TODO: Explanation"
-      - content: "true 2"
+      - content: "It monitors all incoming and outgoing connections."
         isCorrect: false
         explanation: "TODO: Explanation"
-      - content: "false 1"
+    - content: "Which of the following is **not** true of Polly?"
+      choices:
+      - content: "It can handle retries with exponential back-off."
         isCorrect: false
         explanation: "TODO: Explanation"
-      - content: "false 2"
+      - content: "It can ensure resiliency for complex database transactions."
         isCorrect: false
         explanation: "TODO: Explanation"
+      - content: "It doesn't need any application code changes."
+        isCorrect: true
+        explanation: "TODO: Explanation"
+      - content: "It has to be code-configured for every HttpClient."
+        isCorrect: false
+        explanation: "TODO: Explanation"
+  
