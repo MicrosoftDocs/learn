@@ -35,8 +35,8 @@ units:
 - learn.microservices-resiliency-aspnet-core.1-introduction
 - learn.microservices-resiliency-aspnet-core.2-environment-setup
 - learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
-- learn.microservices-resiliency-aspnet-core.5-implement-resiliency-with-linkerd
 - learn.microservices-resiliency-aspnet-core.4-implement-resiliency-with-polly
+- learn.microservices-resiliency-aspnet-core.5-implement-resiliency-with-linkerd
 - learn.microservices-resiliency-aspnet-core.6-knowledge-check
 - learn.microservices-resiliency-aspnet-core.7-summary
 badge:
