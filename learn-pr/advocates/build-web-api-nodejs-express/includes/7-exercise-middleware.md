@@ -1,4 +1,4 @@
-Tailwind Traders have realized they need an application that have some basic level of security. It doesn't need to be anything fancy at this point just a way to differentiate between users that have access and don't have access. This security can be improved later to be more efficient and you could at later stage add more features likerole management etc. For now, make it simple, make it work.
+Tailwind Traders have realized they need an application that has some basic level of security. It doesn't need to be anything fancy at this point just a way to differentiate between users that have access and don't have access. This security can be improved later to be more efficient and you could at later stage add more features like role management etc. For now, make it simple, make it work.
 
 ## Add basic authorization to an Express
 
@@ -86,7 +86,7 @@ Most applications have parts that it's ok for anyone to access but there are als
    });
    ```
 
-   What the above code does is to connect to the address `http://localhost:3000/users` and the listen to different events `chunk`, `end` and `close`. You will use the client to verify that the server application works as expected.
+   What the above code does is to connect to the address `http://localhost:3000/users` and the listen to different events `chunk`, `end`, and `close`. You will use the client to verify that the server application works as expected.
 
 1. Run the server application by typing the following command in the terminal:
 
@@ -170,7 +170,7 @@ Most applications have parts that it's ok for anyone to access but there are als
    Closing connection
    ```
 
-   This time around the middleware `isAuthorized()` is being invoked and is looking for an `authorization` header having a specific value. You didn't provide that as part of your request and that's why you get the response above. Next let's add said `authorization` header.
+   This time around the middleware `isAuthorized()` is being invoked and is looking for an `authorization` header having a specific value. You didn't provide that as part of your request and that's why you get the response above. Next, let's add said `authorization` header.
 
 1. Open up `client.js` and locate the part of the code looking like this:
 
