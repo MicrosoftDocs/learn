@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.create-multi-stage-pipeline
 metadata:
-  title: Create a multistage pipeline by using Azure Pipelines - Learn
+  title: Create a multistage pipeline by using Azure Pipelines
   description: Design and create a realistic release pipeline that promotes changes to various testing and staging environments.
   ms.date: 01/21/2020
   author: tpetchel
