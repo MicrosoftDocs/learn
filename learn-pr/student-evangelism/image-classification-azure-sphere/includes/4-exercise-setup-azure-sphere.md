@@ -126,7 +126,7 @@ You'll configure Azure Sphere for networking. Hence, you can receive cloud updat
 
 ## Delete any existing applications on Azure Sphere
 
-1. Run the following command to delete existing application on the device.
+1. Run the following command to delete existing applications on the device.
 
    ```
    azsphere device sideload delete

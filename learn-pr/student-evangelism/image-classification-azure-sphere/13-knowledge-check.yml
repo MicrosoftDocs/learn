@@ -39,7 +39,7 @@ quiz:
     choices:
     - content: "You can deploy a machine learning model on an IoT Edge device even when the device is offline"
       isCorrect: true
-      explanation: "A machine learning model can be deployed on an Edge device and can be operational even when the device is offline"
+      explanation: "A machine learning model can be deployed on an IoT Edge device and can be operational even when the device is offline"
     - content: "You can use an IoT Edge device to capture images"
       isCorrect: false
       explanation: "The ability to capture images isn't a characteristic of IoT Edge devices"

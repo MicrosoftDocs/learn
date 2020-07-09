@@ -2,7 +2,7 @@ In the scenario, you were tasked with designing a system that can detect the pre
 
 Azure Sphere is a secured, high-level application platform with built-in communication and security features for internet-connected devices. It comprises a secured, connected, crossover microcontroller unit (MCU), a custom high-level Linux-based operating system (OS), and a cloud-based security service that provides continuous, renewable security.
 
-The Azure Sphere MCU integrates real-time processing capabilities with the ability to run a high-level operating system. An Azure Sphere MCU, along with its operating system and application platform, enables the creation of secured, internet-connected devices that can be updated, controlled, monitored, and maintained remotely. The use of a device like Azure Sphere means that you don’t need a high-spec machine or cloud compute to do real-time ML tasks on IoT Edge devices. You can do them fast and efficiently on embedded devices.
+The Azure Sphere MCU integrates real-time processing capabilities with the ability to run a high-level operating system. An Azure Sphere MCU, along with its operating system and application platform, enables the creation of secured, internet-connected devices that can be updated, controlled, monitored, and maintained remotely. The use of a device like Azure Sphere means that you don’t need a high-spec machine or cloud compute to do real-time ML tasks on Azure IoT Edge devices. You can do them fast and efficiently on embedded devices.
 
 In this module, we use the Azure Sphere MT3620 board. Note that here, you aren't using a camera to detect the images. Instead, you'll upload custom images into the project and will run the project to detect the image (in this case, an image of a deer).
 
