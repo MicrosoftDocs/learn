@@ -86,9 +86,9 @@ When a client makes a request towards a web application they do so using a URL, 
 http://localhost:3000/products
 ```
 
-The term `localhost` refers to your own machine but a more production looking URL might have switched out the term `localhost` for a domain name like `microsoft.com`. The end part of the URL is the route. It decides a specific place to go on the server, to `/products` in this case. Together with HTTP Verbs like POST, PUT, GET, and so on, the routes and the verbs constitute a way to understand, not only where to go, but what the client wants done. Each HTTP verb has a semantic meaning, an intention of what should happen to the data, should it be read or changed in some way. This will be covered more in detail later on in the module.
+The term `localhost` refers to your own machine but a more production looking URL might have switched out the term `localhost` for a domain name like `microsoft.com`. The end part of the URL is the route. It decides a specific place to go on the server, to `/products` in this case. Together with HTTP Verbs like POST, PUT, GET, and so on, the routes and the verbs constitute a way to understand, not only where to go, but what the client wants done. Each HTTP verb has a semantic meaning, an intention of what should happen to the data, should it be read or changed in some way. This topic will be covered more in detail later on in the module.
 
-Express helps with registering routes and pairing these to appropriate HTTP verbs to make it simpler to organize the web application.
+Express helps with registering routes and pairing these routes to appropriate HTTP verbs to make it simpler to organize the web application.
 
 How does Express help us with route management and HTTP verbs? The Express framework has dedicated methods for handling both different HTTP Verbs but also a smart system for associating different routes with different pieces of your code. Consider the below code example:
 
@@ -126,7 +126,7 @@ For other types of data like JSON, there are dedicated methods that ensure the c
 res.json({ id: 1, name: "Catcher in the Rye" })
 ```
 
-This is equivalent to the following code, if we were using the http module over the Express module:
+This code above is equivalent to the following code, if we were using the http module over the Express module:
 
 ```javascript
 res.writeHead(200, { 'Content-Type': 'application/json' });
@@ -146,4 +146,4 @@ There are steps involved when creating a web application using the Express frame
 1. **Instantiate the app**: at this step, a web application instance is created. It's not runnable at this point, but you have something you can extend.
 1. **Define routes and route handlers**: a route is a part of URL. For example, in the URL `http://localhost:8000/products`. The route part is the `/products`. Express has the concept of thinking in routes and the different routes should execute different pieces of code. At this step, you define what routes the application should listen to. Other examples of routes are  `/`, also known as the default route and `/orders`. Routes are a concept that will be explored further in the upcoming routes unit in this module.
 1. **Configure middleware**: middleware is a piece of code that can run before or after a request. Additionally, it can be used to handle things like authentication/authorization or adding a capability to your app.
-1. **Start the app**: to start the app you define a port and instruct it to listen to that port. Now the app is ready to receive requests.
+1. **Start the app**: to start the app, you define a port and instruct it to listen to that port. Now the app is ready to receive requests.

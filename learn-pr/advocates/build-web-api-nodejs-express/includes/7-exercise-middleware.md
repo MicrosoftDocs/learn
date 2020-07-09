@@ -2,20 +2,20 @@ Tailwind Traders have realized they need an application that has some basic leve
 
 ## Add basic authorization to an Express
 
-Most applications have parts that it's ok for anyone to access but there are also parts that should be protected. There are different ways to accomplish this protection. You will implement a very simple system to understand how the mechanism of *middleware* works in the Express framework.
+Most applications have parts that it's ok for anyone to access but there are also parts that should be protected. There are different ways to accomplish this protection. You will implement a simple protection system to understand how the mechanism of *middleware* works in the Express framework.
 
-1. Clone the repo at URL with the following command:
+1. Clone the repo at `https://github.com/MicrosoftDocs/node-essentials` with the following command:
 
    ```bash
-   git clone <REPO url>
+   git clone https://github.com/MicrosoftDocs/node-essentials
    ```
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you cloned. Type the following:
+1. Let's inspect the repo you cloned. Type the following command:
 
    ```bash
-   cd <repo dir>
+   cd node-essentials/nodejs-http/exercise-express-middleware
    ```
 
    The outline of the directory should look like so:
@@ -34,7 +34,7 @@ Most applications have parts that it's ok for anyone to access but there are als
 
    `npm` reads from the `dependencies` section in our `package.json` and you should be ready to continue.
 
-1. Time to inspect `app.js`. Open up said file. You should see the following:
+1. Time to inspect `app.js`. Open up said file. You should see the following code:
 
    ```javascript
    const express = require('express')
@@ -60,7 +60,7 @@ Most applications have parts that it's ok for anyone to access but there are als
    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
-   The above application contains a functioning Express application containing the routes `/`, `/users` and `/products`.
+   The above application contains a functioning Express application containing the routes `/`, `/users`, and, `/products`.
 
 1. Open up the file `client.js`. It should look like this:
 
@@ -86,7 +86,7 @@ Most applications have parts that it's ok for anyone to access but there are als
    });
    ```
 
-   What the above code does is to connect to the address `http://localhost:3000/users` and the listen to different events `chunk`, `end`, and `close`. You will use the client to verify that the server application works as expected.
+   What the above code does, is to connect to the address `http://localhost:3000/users` and then listen to different events `chunk`, `end`, and `close`. You will use the client to verify that the server application works as expected.
 
 1. Run the server application by typing the following command in the terminal:
 
@@ -178,7 +178,7 @@ Most applications have parts that it's ok for anyone to access but there are als
    headers: {}
    ```
 
-   Change it to this:
+   Change it to this code:
 
    ```javascript
    headers: {

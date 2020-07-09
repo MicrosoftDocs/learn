@@ -4,18 +4,18 @@ Tailwind Traders are impressed with your first Web Application and want you to i
 
 When building an API, it's common to construct it so that you have a number of resources. Each resource may have a number of operations available on them for reading and writing. Organizing by resource and by operations like read/write is referred to as CRUD or **C**reate, **R**ead, **U**pdate, **D**elete. You will implement such an API on the resource `products`.
 
-1. Clone the repo at URL with the following command:
+1. Clone the repo at `https://github.com/MicrosoftDocs/node-essentials` with the following command:
 
    ```bash
-   git clone <REPO url>
+   git clone https://github.com/MicrosoftDocs/node-essentials
    ```
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you cloned. Type the following command:
+1. Let's inspect the repo you cloned. Type the following command to navigate to the files you need:
 
    ```bash
-   cd <repo dir>
+   cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
    ```
 
    The outline of the directory should look like so:
@@ -96,7 +96,7 @@ When building an API, it's common to construct it so that you have a number of r
    node client-get.js
    ```
 
-   That should give you the following output:
+   That command should give you the following output:
 
    ```output
    Received data []
@@ -157,7 +157,7 @@ When building an API, it's common to construct it so that you have a number of r
    Connection closed
    ```
 
-   The above response tells you that when you ran `client-post.js` you successfully managed to write data to the API. By running `client-get.js` you queried the API for data and it responded with the data you just wrote to it.
+   The above response tells you that when you ran `client-post.js` you successfully managed to write data to the API. By running `client-get.js`, you queried the API for data and it responded with the data you just wrote to it.
 
 1. Next thing you want to implement is the ability to update your data. Locate the part of your code looking like this:
 
@@ -349,16 +349,16 @@ Congratulations, you've managed to implement a resource `products` where you are
    Connection closed
    ```
 
-   Note how you are using `client-delete-route.js` instead of `client-delete.js`. What's the difference? The difference lies in how the route is implemented. The first version of `app.js` relied on deletions being done towards a route like this `/products/<id>`, with the unique identifier being sent as a route parameter. When you use the `route()` method it implements the deletion route differently and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route - you do you.
+   Note how you are using `client-delete-route.js` instead of `client-delete.js`. What's the difference? The difference lies in how the route is implemented. The first version of `app.js` relied on deletions being done towards a route like this `/products/<id>`, with the unique identifier being sent as a route parameter. When you use the `route()` method, it implements the deletion route differently and wants you to send unique identifier through the body instead of as a route parameter. There's no right or wrong way to implement a deletion route - you do you.
 
 ## Leverage route parameters and query parameters to limit response size
 
 Data usually resides in a database or an endpoint. The size of that data can potentially be enormous. When a user then asks for all the data for a specific resource, that could be a huge response like thousands or even millions of records. A request like this can cause a massive strain on a database but it would also take a long time to serve that response. To avoid that scenario, it's considered good practice to *limit* the size of the response. A way to do that is by using route parameters so you can ask for specific records. Another way is to use query parameters to specify a subset of records. You will be taught both these techniques in this exercise.  
 
-1. Clone the repo at URL with the following command:
+1. Clone the repo at URL with the following command (no need to this again if you completed the exercise above):
 
    ```bash
-   git clone <REPO url>
+   git clone https://github.com/MicrosoftDocs/node-essentials
    ```
 
    Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
@@ -366,7 +366,7 @@ Data usually resides in a database or an endpoint. The size of that data can pot
 1. Let's inspect the repo you cloned. Type the following command:
 
    ```bash
-   cd <repo dir>
+   cd node-essentials/nodejs-http/exercise-express-routing/parameters
    ```
 
    The outline of the directory should look like so:
@@ -374,6 +374,7 @@ Data usually resides in a database or an endpoint. The size of that data can pot
    ```bash
    -| app.js
    -| package.json
+   -| package-lock.json
    ```
 
    The `package.json` file contains a dependency `express`. Type the following command in the terminal to install that:

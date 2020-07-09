@@ -139,4 +139,3 @@ You will continue to work with the same `app.js` file and add a new route.
    ```
 
    Congrats! You've managed to implement a second route that is able to serve up static content.
-   
