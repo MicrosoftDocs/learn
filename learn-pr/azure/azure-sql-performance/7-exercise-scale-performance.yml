@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 title: Exercise - Scale the performance of your workload
 durationInMinutes: 10
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/7-exercise-scale-performance.md)]

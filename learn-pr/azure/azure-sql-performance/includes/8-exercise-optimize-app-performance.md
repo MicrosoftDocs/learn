@@ -1,6 +1,8 @@
+You will now go through an exercise to observe a new performance problem and resolve it by optimizing the application
+
 ### Optimizing application performance with Azure SQL
 
-You will now go through an exercise to observe a performance problem and resolve it by optimizing the application
+
 
 In some cases, migrating an existing application and SQL query workload to Azure may uncover opportunities to optimize and tune queries.
 
