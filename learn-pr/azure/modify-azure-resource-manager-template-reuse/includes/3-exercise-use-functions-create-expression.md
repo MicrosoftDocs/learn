@@ -162,7 +162,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 You learned about the deployment commands in the previous module. Here, we are using the Azure PowerShell ```New-AzResourceGroupDeployment``` command.
 
-1. Deploy the template using Azure Powershell commands in the Visual Studio Code terminal. Remember to substitute *{your-prefix}* with a different string. For example, you could use **storage**.
+1. Deploy the template using Azure PowerShell commands in the Visual Studio Code terminal. Remember to substitute *{your-prefix}* with a different string. For example, you could use **storage**.
 
     ```azurepowershell
     $templateFile = "azuredeploy.json"
