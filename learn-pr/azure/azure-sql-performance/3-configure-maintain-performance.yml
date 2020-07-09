@@ -35,7 +35,7 @@ quiz:
         isCorrect: true
         explanation: "Resource limits for specific deployment options have I/O performance commitments"
       - content: "Place specific tables and indexes on different filegroups"
-        isCorrect: true
+        isCorrect: false
         explanation: "You don't have access to create filegroups with Azure SQL Database"
     - content: "How do you maintain indexes with Azure SQL?"
       choices:
