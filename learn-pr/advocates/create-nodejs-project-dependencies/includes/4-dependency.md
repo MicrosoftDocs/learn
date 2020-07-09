@@ -82,7 +82,7 @@ What's listed in the `dependencies` section of your `package.json` and what's in
 npm list --depth=<depth>
 ```
 
-At depth 0 it will list the same content as what you have in your `dependencies` section in your `package.json`. Given that you have installed the `jest` package `npm list --depth=0` will produce an output similar to the below:
+At depth 0, it will list the same content as what you have in your `dependencies` section in your `package.json`. Given that you have installed the `jest` package `npm list --depth=0` will produce an output similar to the below:
 
 ```output
 ├── jest@26.0.1
@@ -103,7 +103,7 @@ The idea is clear, the higher the `depth` number the more dependent packages you
 
 ## Cleaning up
 
-You are likely to sooner or later run into a scenario where you no longer need a package or you needs a package other than the one you installed, that perhaps solve the task better. Regardless of the reason, you want to ensure you remove dependencies that are not used anymore. The arguments for that is except for keeping things clean, is also that it takes up space. The *space* argument becomes more apparent if you are building a SPA application with a framework like Angular, React, or Vue. Such an application is also a Node.js project and part of building the app is taking it through a *bundling* and *minification* process where different Node.js modules are concatenated and the source code is compressed. The resulting bundle/s ends up being served from a Browser. The larger that bundle is the longer it will take to send over the network before it ultimately becomes something the user can interact with. The longer the user has to wait the more likely they are to not want to use your app again.
+You are likely to sooner or later run into a scenario where you no longer need a package or you need a package other than the one you installed, that perhaps solve the task better. Regardless of the reason, you want to ensure you remove dependencies that are not used anymore. The arguments for that is except for keeping things clean, is also that it takes up space. The *space* argument becomes more apparent if you are building a SPA application with a framework like Angular, React, or Vue. Such an application is also a Node.js project and part of building the app is taking it through a *bundling* and *minification* process where different Node.js modules are concatenated and the source code is compressed. The resulting bundle/s ends up being served from a Browser. The larger that bundle is the longer it will take to send over the network before it ultimately becomes something the user can interact with. The longer the user has to wait the more likely they are to not want to use your app again.
 
 There are two ways you can clean up dependencies you no longer want to use:
 

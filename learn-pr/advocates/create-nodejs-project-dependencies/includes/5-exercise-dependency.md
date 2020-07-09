@@ -4,7 +4,19 @@ Tailwind Traders realize that they are about to put extensive development resour
 
 You've been given some app code that parses an address from a string. So your task should be fairly straight forward and involve just installing the test framework, write a couple of tests and run them.
 
-1. Clone the following repo. You should now have access to the following files:
+1. Clone the following `https://github.com/MicrosoftDocs/node-essentials/` by typing the following command:
+
+   ```bash
+   git clone `https://github.com/MicrosoftDocs/node-essentials/`
+   ```
+
+1. Navigate to your files by typing the following command:
+
+   ```bash
+   cd node-essentials/node-dependencies/5-exercise-dependency
+   ```
+
+1. You should now have access to the following files:
 
    ```bash
    -| address_parser.js

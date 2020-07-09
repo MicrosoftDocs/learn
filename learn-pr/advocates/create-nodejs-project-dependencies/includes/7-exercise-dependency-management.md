@@ -2,11 +2,16 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
 
 ## Upgrading the app dependencies
 
-1. Clone the following repo TODO . You should now have access to the following files:
+1. Clone the following `https://github.com/MicrosoftDocs/node-essentials/` by typing the following command:
 
    ```bash
-   -| index.js
-   -| package.json
+   git clone `https://github.com/MicrosoftDocs/node-essentials/`
+   ```
+
+1. Navigate to your files by typing the following command:
+
+   ```bash
+   cd node-essentials/node-dependencies/7-exercise-dependency-management
    ```
 
 1. Install the dependencies with the following command:
@@ -58,7 +63,7 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
    3 vulnerabilities require semver-major dependency updates.
    ```
 
-   You have vulnerabilities, two on high and one low. The high vulnerabilities say you should upgrade. It tells you that *3 vulnerabilities require semver-major dependency updates*. This fact means you need to upgrade the major version of the dependency to get rid of these vulnerabilities. The audit report suggests how to resolve these issues. It states the command to run at the top Run `npm install lodash@4.17.15`.
+   You have vulnerabilities, two on high and one low. The high vulnerabilities say you should upgrade. It tells you that *three vulnerabilities require semver-major dependency updates*. This fact means you need to upgrade the major version of the dependency to get rid of these vulnerabilities. The audit report suggests how to resolve these issues. It states the command to run at the top Run `npm install lodash@4.17.15`.
 
 1. Type the command in the terminal the audit report told you to:
 

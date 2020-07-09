@@ -43,7 +43,7 @@ How do we approach updating as Node.js developers? We can communicate to Node.js
 - **Minor version**, I'm ok with a new feature being added. I'm not ok with code that breaks.
 - **Patch version**, the only thing I'm ok with are bug fixes.
 
-If you are in a completely new or smaller Node.js project, you can afford to be quite loose with how you define the update strategy and, for example,  allow to always update to the latest and greatest version. For more complex projects, there is a bit more nuance but we'll save that for a future module.
+If you are in a new or smaller Node.js project, you can afford to be loose with how you define the update strategy and, for example,  allow to always update to the latest and greatest version. For more complex projects, there is a bit more nuance but we'll save that for a future module.
 
 As a general guidance though, the smaller the dependency you are trying to update is the fewer dependencies it has in turn and the more likely it is that the update process is going to be easy.
 

@@ -4,18 +4,23 @@ As a Node.js developer on Tailwind Traders, learning how to set up a new Node.js
 
 Open up a terminal window.
 
-1. Clone the following repo TODO
+1. Clone the following repo `https://github.com/MicrosoftDocs/node-essentials/` by typing the command:
+
+   ```bash
+   git clone https://github.com/MicrosoftDocs/node-essentials/
+   ```
+
+1. Navigate to your files by typing the following command:
+
+   ```bash
+   cd node-essentials/node-dependencies/3-exercise-package-json
+   ```
+
 1. You should now have access to the following files:
 
    ```bash
    -| src/
    ---| index.js
-   ```
-
-1. Run the following command to place yourself in the cloned directory:
-
-   ```bash
-   cd <cloned directory>
    ```
 
 1. Type the following command to initialize a Node.js project:

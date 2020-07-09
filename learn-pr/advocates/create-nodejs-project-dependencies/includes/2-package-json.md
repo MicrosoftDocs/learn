@@ -36,7 +36,7 @@ A way to look at all the possible fields in the `package.json` is to think of th
 
 ### Scripts for managing your project
 
-In any project, whether it's using Node.js or not, you are likely to want to have a way to run, test, and build your project. The Node.js runtime has recognized this and has taken it a step further by guiding you what these scripts should be called. The idea is to ensure that all Node.js projects in this aspect look the same. It makes for a better developer experience if you can move between Node.js projects and quickly recognize yourself by there existing a familiar set of actions. Thanks to this naming standardization various tools for DevOps and instrumentation have been able to take advantage of this fact.
+In any project, whether it's using Node.js or not, you are likely to want to have a way to *run*, *test*, and *build* your project. The Node.js runtime has recognized this behavior and has taken it a step further by guiding you what these scripts should be called. The idea is to ensure that all Node.js projects in this aspect look the same. It makes for a better developer experience if you can move between Node.js projects and quickly recognize yourself by there existing a familiar set of actions. Thanks to this naming standardization various tools for DevOps and instrumentation have been able to take advantage of this fact.
 
 Essentially, you should set up a number of scripts and name them in a specific way. It is expected by the developer community and various tools out there rely on it. So what are these scripts?
 
