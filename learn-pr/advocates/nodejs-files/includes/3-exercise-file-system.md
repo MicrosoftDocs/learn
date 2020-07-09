@@ -8,12 +8,20 @@ In this exercise, you're going to write a Node.js program that can search for fi
 
 Make sure you activate the Microsoft Learn sandbox by clicking the "Activate Sandbox" at the top of this page.
 
+## Setup the enviornment
+
+Run the following command in the Cloud Shell on the right to ensure that you are working with the most current version of Node.js
+
+```bash
+source <(curl -Ls https://aka.ms/install-node-lts)
+```
+
 ## Clone exercise
 
-1. Run the following command in the Cloud Shell pane on the right:
+1. Run the following command to clone the example project for this module:
 
    ```bash
-   git clone https://github.com/burkeholland/node-files && cd node-files
+   git clone https://github.com/MicrosoftDocs/node-essentials && cd node-essentials/nodejs-files
    ```
 
 1. Open the Cloud Shell editor by typing the following command in the Cloud Shell and pressing "enter".
