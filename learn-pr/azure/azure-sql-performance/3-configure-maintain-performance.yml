@@ -47,4 +47,4 @@ quiz:
         explanation: "All deployment options support rebuilding indexes"
       - content: "Use an offline index rebuild since online index rebuilds are not supported on Azure SQL"
         isCorrect: false
-        explanation: "Azure SQL supports online index rebuilds"
+        explanation: "Azure SQL supports online and resumable index rebuilds"
