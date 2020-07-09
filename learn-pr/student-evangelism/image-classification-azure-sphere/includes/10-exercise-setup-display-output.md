@@ -4,7 +4,7 @@ You'll use a USB-to-serial adapter to connect the UART on the real-time core to 
 
 The Visual Studio extension for Azure Sphere includes the compiler that is required for the ARM Cortex-M4 processors on the real-time capable cores. 
 
-When you are using Visual Studio Code or you are developing from the CLI, you must install this compiler yourself. You can find the GNU embedded toolchain for ARM that includes the compiler on the [Arm developer website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads).
+When you are using Visual Studio Code or you are developing from the CLI, you must install this compiler yourself. You can find the GNU Arm Embedded Toolchain that includes the compiler on the [Arm developer website](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads).
 
 In this module, you're developing an application using Visual Studio Code. Follow the instructions in the website to install the GNU Arm Embedded Toolchain.
 
