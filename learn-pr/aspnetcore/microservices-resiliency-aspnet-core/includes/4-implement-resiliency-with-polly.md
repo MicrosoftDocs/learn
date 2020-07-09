@@ -26,7 +26,7 @@ You need to have at least one item in the basket to configure a simulated failur
 3. Click **APPLY**.
 4. You should receive a confirmation message with number of failures configured for the code: "**CONFIG: 2 failure(s) configured for code "DISC-10"!**" as shown in the next image.
 
-![](media/configure-coupon-failures.png)
+![](../media/configure-coupon-failures.png)
 
 This configuration will make the next two requests for the **DISC-10** code to throw an exception.
 
@@ -42,7 +42,7 @@ Notice that you receive the error message immediately.
 
 If you check the log traces, you should see something like this:
 
-![](media/non-resilient-failures.png)
+![](../media/non-resilient-failures.png)
 
 In the image above you can see that:
 
@@ -157,7 +157,7 @@ To create the ACR instance you just have to run the following script from the `d
 
 The preceding script creates and ACR instance and gives the AKS cluster permission to pull images from the ACR. You should get something like this:
 
-![](media/create-acr.png)
+![](../media/create-acr.png)
 
 ### 2. Publish the updated image to ACR
 
@@ -169,11 +169,11 @@ To update the deployment, you just have to run the following script:
 
 The preceding script uses an [ACR quick task](https://docs.microsoft.com/azure/container-registry/container-registry-tasks-overview#quick-task) to build the `webshoppingagg` image and push it to the ACR in a command. You should get an output similar to the following:
 
-![](media/build-to-acr.png)
+![](../media/build-to-acr.png)
 
 And this when finished:
 
-![](media/image-built-and-published.png)
+![](../media/image-built-and-published.png)
 
 ### 3. Deploy the updated image to AKS
 
@@ -185,7 +185,7 @@ Run the script:
 
 The preceding script uninstalls the old `webshoppingagg` helm chart and installs it again, so the AKS uses the new image from the ACR. You should get a result like this:
 
-![](media/update-aks.png)
+![](../media/update-aks.png)
 
 ## Explore the system response when implementing resiliency
 
@@ -197,7 +197,7 @@ If you configure the same two coupon failures with the code "**FAIL 3 DISC-10**"
 
 If you check the log traces, you should see something like this:
 
-![](media/configure-and-retry-logs.png)
+![](../media/configure-and-retry-logs.png)
 
 In the above image you can see:
 
@@ -208,7 +208,7 @@ In the above image you can see:
 
 For this case, you'll configure the code for 20 failures, using **FAIL 20 DISC-10**, as shown next:
 
-![](media/configure-severe-failure.png)
+![](../media/configure-severe-failure.png)
 
 Now enter the code **DISC-10** again an click **APPLY**, you'll have to wait about 20 seconds to get the error 500 message. When you do, click again on **APPLY**. After the second failure click **APPLY** again for the third time.
 
@@ -216,7 +216,7 @@ You should notice that this third time the error 500 message came in much faster
 
 You'll se this clearly in the log traces, as show next:
 
-![](media/severe-failure-logs.png)
+![](../media/severe-failure-logs.png)
 
 In the image above you can see that:
 
@@ -224,7 +224,7 @@ In the image above you can see that:
 - The next time you try you validate the code, you get the error 500 message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
 - If you check the details on this last trace, you should something like this:
 
-![](media/severe-failure-log-detail.png)
+![](../media/severe-failure-log-detail.png)
 
 Where you can see that the last trace has the "The circuit is now open..." message.
 

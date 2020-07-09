@@ -43,7 +43,7 @@ curl -sL https://run.linkerd.io/install | sh
 
 You should get something like this after a few seconds (depending on your Internet connection):
 
-![](media/install-linkerd.png)
+![](../media/install-linkerd.png)
 
 Next, add linkerd to your path running the following:
 
@@ -63,7 +63,7 @@ linkerd version
 
 You should get something like this:
 
-![](media/check-linkerd-version.png)
+![](../media/check-linkerd-version.png)
 
 ### 2. Validate your Kubernetes cluster
 
@@ -75,7 +75,7 @@ linkerd check --pre
 
 You should get something like this:
 
-![](media/check-linkerd-pre.png)
+![](../media/check-linkerd-pre.png)
 
 ### 3. Install Linkerd onto the cluster
 
@@ -97,7 +97,7 @@ linkerd check
 
 You should see a checklist similar to the pre-install one, but longer. It's also probable that the check pauses several times while waiting for the components to become ready. Eventually you should get to something like this:
 
-![](media/linkerd-check.png)
+![](../media/linkerd-check.png)
 
 ## Configure the application to use Linkerd
 
@@ -248,7 +248,7 @@ Use the following command to redeploy the updated charts:
 
 You should see that the updated pods have two containers now (0/2). One is the service container and the other is linkerd-proxy:
 
-![](media/injecting-linkerd-proxies.png)
+![](../media/injecting-linkerd-proxies.png)
 
 ## Explore the application behavior with Linkerd
 
@@ -265,7 +265,7 @@ Let's explore the application behavior now with a similar process:
 
 If you check the log traces you should see something like this:
 
-![](media/log-traces-with-linkerd.png)
+![](../media/log-traces-with-linkerd.png)
 
 As mentioned in the review unit, Linkerd follows a different approach to resiliency from what we saw with Polly. Linkerd retried five times in fast sequence so we didn't notice any failure at all.
 

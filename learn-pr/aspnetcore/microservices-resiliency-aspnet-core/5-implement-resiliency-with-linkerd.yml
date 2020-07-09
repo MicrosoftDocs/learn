@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-resiliency-aspnet-core.5-implement-resiliency-with-linkerd
 metadata:
-  title: 5-implement-resiliency-with-linkerd
-  description: ...
+  title: Exercise - Implement resiliency with Linkerd
+  description: Configure resiliency in your microservices app with Linkerd.
   ms.date: 07/08/2020
-  author: ...
-  ms.author: ...
+  author: scottaddie
+  ms.author: scaddie
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: 5-implement-resiliency-with-linkerd
+title: Exercise - Implement resiliency with Linkerd
 durationInMinutes: 1
 content: |
   [!include[](includes/5-implement-resiliency-with-linkerd.md)]
