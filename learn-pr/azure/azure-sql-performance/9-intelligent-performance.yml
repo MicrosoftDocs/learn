@@ -12,3 +12,39 @@ title: Intelligent performance
 durationInMinutes: 10
 content: |
   [!include[](includes/9-intelligent-performance.md)]
+quiz:
+    title: "Knowledge Check"
+    questions:
+    - content: "Which best describes Intelligent Query Processing (IQP)"
+      choices:
+      - content: "Automated statistics to improve inefficient query plans"
+        isCorrect: false
+        explanation: "Statistics can be updated automatically with Azure SQL but that is part of IQP"
+      - content: "Background tasks using the Query Store to fix inefficient query plans"
+        isCorrect: false
+        explanation: "IQP is built into the query processor and does not run through background tasks"
+      - content: "Built-in capability in the query processor to enabled through database compatibility levels"
+        isCorrect: true
+        explanation: "IQP is built into the query processor and can improve performance with no code changes"
+    - content: "Automatic Plan Correction......"
+      choices:
+      - content: "xxxxxxxxxxxxxxxxxx"
+        isCorrect: true
+        explanation: "xxxxxxxxxxxxxxxxxxx"
+      - content: "xxxxxxxxxxxxxxxx"
+        isCorrect: false
+        explanation: "xxxxxxxxxxx"
+      - content: "xxxxxxxxxxxxxxxx"
+        isCorrect: false
+        explanation: "xxxxxxxxxxxxxxxxxxxxx"
+    - content: "Automatic Tuning for Azure SQL Database"
+      choices:
+      - content: "xxxxxxxxxxxxxxxxxxxxxxxxxx"
+        isCorrect: false
+        explanation: "xxxxxxxxxxxxxxxxxxxx"
+      - content: "xxxxxxxxxxxxxxxxx"
+        isCorrect: true
+        explanation: "xxxxxxxxxxxxxxxxx"
+      - content: "xxxxxxxxxxxxxxxxxxx"
+        isCorrect: false
+        explanation: "xxxxxxxxxxxxxxxxxx"
