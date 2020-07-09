@@ -1,4 +1,4 @@
-In this unit, you'll learn who can manage custom Azure roles and how.
+In this unit, you'll learn who can manage Azure custom roles and how.
 
 ## Who can manage custom roles?
 
@@ -19,7 +19,7 @@ Task | Actions | Description
 In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure portal or Azure PowerShell.
 
 ### Create custom roles by using the Azure portal
-In the Azure portal, you'd go to the subscription, resource group, or resource you want the custom role scope to apply to. Then go to **Access control (IAM)** and select **Add** > **Add custom role**.
+In the Azure portal, you'd go to the subscription or resource group you want the custom role scope to apply to. Then go to **Access control (IAM)** and select **Add** > **Add custom role**.
 
 :::image type="content" source="../media/4-add-custom-role-portal.png" alt-text="Screenshot that shows Add custom role option under Add button.":::
 
