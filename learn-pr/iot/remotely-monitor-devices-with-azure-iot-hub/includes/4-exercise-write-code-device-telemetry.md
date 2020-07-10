@@ -68,9 +68,8 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. Give the project a friendly name, such as "CheeseCaveDevice".
 
-1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Select **Browse**, then search for, and install, the following libraries:
     * **Microsoft.Azure.Devices.Client**
-    * **Microsoft.Azure.Devices.Shared**
     * **Newtonsoft.Json**
 
 1. Delete the default contents of the **Program.cs** file.
@@ -455,10 +454,9 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Give the project a friendly name, such as "CheeseCaveOperator".
 
-1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Install the following libraries:
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Select **Browse**, then search for, and install, the following libraries:
     * **Microsoft.Azure.Devices**
     * **Microsoft.Azure.EventHubs**
-    * **Newtonsoft.Json**
 
 1. Delete the default contents of **Program.cs**.
 
@@ -550,7 +548,7 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 
 1. Replace the `<your service connection string>` with the _service_ connection string you saved off in a text file, in an earlier unit.
 
-1. Replace the `const deviceId` if you did not use the suggested "CheeseCaveID".
+1. Replace the `const deviceId`, if you did not use the suggested "CheeseCaveID".
 
 1. Save the **app.js** file.
 
