@@ -45,7 +45,7 @@ To create the role in Azure PowerShell, you run the following command:
 
 ## Update custom roles
 
-To update a custom role, you use Azure CLI or Azure Powershell. You'll walk through the specific steps to update your custom role definition  in the next unit. But, in general, after you update the JSON file with your changes, you'd run one of the following commands.
+To update a custom role, you use Azure CLI or Azure PowerShell. You'll walk through the specific steps to update your custom role definition  in the next unit. But, in general, after you update the JSON file with your changes, you'd run one of the following commands.
 
 To update the custom role by using Azure CLI, run the following command with the path to the JSON file that has your updates.
 
