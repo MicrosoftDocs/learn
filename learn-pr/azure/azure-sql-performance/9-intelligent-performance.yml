@@ -26,25 +26,25 @@ quiz:
       - content: "Built-in capability in the query processor to enabled through database compatibility levels"
         isCorrect: true
         explanation: "IQP is built into the query processor and can improve performance with no code changes"
-    - content: "Automatic Plan Correction......"
+    - content: "Automatic Plan Correction can help recommend and fix which type of performance scenario"
       choices:
-      - content: "xxxxxxxxxxxxxxxxxx"
+      - content: "Indexes that may be needed to improve query performance"
+        isCorrect: false
+        explanation: "Automatic Plan Correction does not recommend indexes"
+      - content: "Inefficient query plans chosen due to out of date statistics"
+        isCorrect: false
+        explanation: "Automatic Plan Correction doesn't look at statistics for a query plan"
+      - content: "Query plan regressions that may be caused by parameter sensitive plans (PSP)"
         isCorrect: true
-        explanation: "xxxxxxxxxxxxxxxxxxx"
-      - content: "xxxxxxxxxxxxxxxx"
-        isCorrect: false
-        explanation: "xxxxxxxxxxx"
-      - content: "xxxxxxxxxxxxxxxx"
-        isCorrect: false
-        explanation: "xxxxxxxxxxxxxxxxxxxxx"
-    - content: "Automatic Tuning for Azure SQL Database"
+        explanation: "Automatic Plan Correction does look at query plan regressions from the Query Store and can recommend or fix problems by reverting to a previous good plan."
+    - content: "Automatic Tuning for Azure SQL Database can recommend and create indexes based on what information"
       choices:
-      - content: "xxxxxxxxxxxxxxxxxxxxxxxxxx"
-        isCorrect: false
-        explanation: "xxxxxxxxxxxxxxxxxxxx"
-      - content: "xxxxxxxxxxxxxxxxx"
+      - content: "Information from the Query Store and Dynamic Management Views (DMV)"
         isCorrect: true
-        explanation: "xxxxxxxxxxxxxxxxx"
-      - content: "xxxxxxxxxxxxxxxxxxx"
+        explanation: "Automatic Tuning uses machine learning to examine Query Store and DMV data over time to recommend and create indexes"
+      - content: "Query plan details captured from Dynamic Management Views"
         isCorrect: false
-        explanation: "xxxxxxxxxxxxxxxxxx"
+        explanation: "Automatic Tuning does not look at query plan details"
+      - content: "Extended Events traces of query plan information over time"
+        isCorrect: false
+        explanation: "Automatic Tuning does not use extended events"

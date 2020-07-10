@@ -4,15 +4,15 @@ You will now go through an exercise to observe a new performance scenario and re
 
 In some cases, migrating an existing application and SQL query workload to Azure may uncover opportunities to optimize and tune queries.
 
-Assume that to support a new extension to a website for AdventureWorks orders to support a rating system from customers you need to add a new table to support a heavy set of concurrent INSERT activity for ratings. You have tested the SQL query workload on a development computer that has a local SSD drive for the database and transaction log.
+Assume that to support a new extension to a website for AdventureWorks orders to provide a rating system from customers you need to add a new table for a heavy set of concurrent INSERT activity. You have tested the SQL query workload on a development computer witH SQL Server 2019 that has a local SSD drive for the database and transaction log.
 
-When you move your test to Azure SQL Database using the General Purpose tier (8 vCores), the INSERT workload is slower. You need to discover whether you need to change the service objective or tier to support the new workload.
+When you move your test to Azure SQL Database using the General Purpose tier (8 vCores), the INSERT workload is slower. You need to discover whether you need to change the service objective or tier to support the new workload or look at the application.
 
 All scripts for this exercise can be found at *04-Performance\tuning_applications* in the GitHub repository or zip file you downloaded.
 
 ## Create a new table for the application
 
-Run the following T-SQL statement or use the script **order_rating_ddl.sql** to create a table in the AdventureWorks database you have used in the first two exercises:
+Run the following T-SQL statement in SSMS or use the script **order_rating_ddl.sql** to create a table in the AdventureWorks database you have used in the first two exercises:
 
 ```sql
 DROP TABLE IF EXISTS SalesLT.OrderRating;
@@ -63,10 +63,10 @@ Load some T-SQL queries for DMVs to observe query performance for active queries
 
 ## Prepare the workload script for execution
 
-Edit the workload script **order_rating_insert_single.cmd**.
+Edit the workload script **order_rating_insert_single.cmd**
 
-Substitute your **unique_id** you were given in the previous exercise for the server name for the **-S parameter**.
-Substitute the password you provided in the database deployment from the previous exercise for the **-P parameter**.
+- Substitute your **unique_id** you were given in the first exercise for the server name for the **-S parameter**.
+- Substitute the password you provided in the database deployment from the first exercise for the **-P parameter**.
 
 ## Run the workload
 
@@ -112,16 +112,16 @@ Use these queries you can observe the following:
 - The WRITELOG wait type is one of the highest count for wait types.
 - The avg time to write to the transaction log is somewhere around 2ms.
 
-The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core should be around ~25 seconds.
+The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core is around ~25 seconds.
 
-WRITELOG wait types are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1ms.
+WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1ms.
 
 ## Decide on a resolution
 
 The problem is not a high % of log write activity. The Azure Portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25% (this is information only. There is not a need to query these). The problem is not an IOPS limit as well. The issue is that this application workload is sensitive to low latency for transaction log writes and the General Purpose tier is not designed for this type of latency requirements. In fact, the documentation for Azure SQL Database says the resource limits for I/O latency is between 5-7ms.
 
 > [!NOTE]
-> General Purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads) so you may experience latencies more like these numbers. Managed Instance General Purpose latencies are similar. If your application is very sensitive to I/O latencies you should consider Business Critical Tiers.
+> General Purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads) so you may experience latencies more like these numbers. Managed Instance General Purpose latencies are similar. If your application is very sensitive to I/O latencies you could consider Business Critical Tiers.
 
 If you examine the workload T-SQL script **order_rating_insert_single.sql**, you will see each INSERT is a single transaction commit which requires a transaction log flush.
 
@@ -135,7 +135,7 @@ Make edits to scripts and execute them to see a more efficient I/O performance.
 
 1. Change the application query for the workload
 
-    The modified workload can be found in the script **order_rating_insert.sql**. Prepare the workload script by editing **order_rating_insert.cmd** to put in your server name and password.
+    The modified workload can be found in the script **order_rating_insert.sql**. Prepare the workload script by editing **order_rating_insert.cmd** to put in your correct server name and password.
 
 1. Run the modified workload
 
@@ -150,7 +150,7 @@ Make edits to scripts and execute them to see a more efficient I/O performance.
     Now the workload runs much faster compared to the previous execution. This is an example of tuning an application for SQL queries that will run after in or outside of Azure.
 
     > [!NOTE]
-    > This workload can run even faster against an Azure SQL Database with a connection type of **Redirect**. The deployment you have done in this exercise uses a Default connection type which will be a Proxy type because you are connected outside of Azure. Using Redirect can significantly speed up a workload like this given the round trips requires from the client to the server.
+    > This workload can run even faster against an Azure SQL Database with a connection type of **Redirect**. The deployment you have done in this exercise uses a Default connection type which will be a Proxy type because you are connected outside of Azure. Using Redirect can significantly speed up a workload like this given the round trips required from the client to the server.
 
 1. Observe the workload duration
 

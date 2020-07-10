@@ -22,10 +22,10 @@ quiz:
         explanation: "You cannot modify the file properties for tempdb through T-SQL"
       - content: "File properties in SQL Serer Management Studio (SSMS)"
         isCorrect: false
-        explanation: "File properties in SSMS just use T-SQL behind the scenes"
+        explanation: "File properties in SSMS use T-SQL behind the scenes and therefore is not supported"
       - content: "Increasing the number of vCores through the Azure Portal"
         isCorrect: true
-        explanation: "Increasing the number of vCores may give you additional tempdb files"
+        explanation: "Increasing the number of vCores can give you additional tempdb files"
     - content: "You can configure I/O Performance for Azure SQL Database by which method"
       choices:
       - content: "Place database files on Azure Premium Storage"
@@ -39,7 +39,7 @@ quiz:
         explanation: "You don't have access to create filegroups with Azure SQL Database"
     - content: "How do you maintain indexes with Azure SQL?"
       choices:
-      - content: "You can create, rebuild, and reorganize indexes"
+      - content: "You can create, rebuild, and reorganize indexes in Azure SQL"
         isCorrect: true
         explanation: "Azure SQL supports all options to create, rebuild, and reorganize indexes just like Azure SQL"
       - content: "Use a specific deployment option that supports rebuilding indexes"

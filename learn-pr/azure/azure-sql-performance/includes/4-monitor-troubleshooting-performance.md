@@ -1,6 +1,6 @@
 Monitoring and troubleshooting is a key element to deliver consistent performance. Azure SQL has the same tools and features as SQL Server to monitor and troubleshoot performance plus additional capabilities. This includes features like Dynamic Management Views (DMV), Extended Events, and Azure Monitor. It is also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL like high CPU or resource wait types.
 
-## Tools and features for performance
+## Tools and capabilities to monitor performance
 
 Azure SQL provides monitoring and troubleshooting capabilities in the Azure ecosystem as well familiar tools that come with SQL Server. These include the following:
 
@@ -10,11 +10,11 @@ Azure Monitor is part of the Azure ecosystem and Azure SQL is integrated to supp
 
 ### Dynamic Management Views (DMV)
 
-Azure SQL provides the same DMV infrastructure as with SQL Server with a few differences. DMVs are a crucial aspect to performance monitoring since you can view key SQL Server performance data using standard T-SQL queries. Information such as active queries, resource usage, query plans, and resource wait types. Learn more details about DMVs with Azure SQL later in this section of the unit.
+Azure SQL provides the same DMV infrastructure as with SQL Server with a few differences. DMVs are a crucial aspect to performance monitoring since you can view key SQL Server performance data using standard T-SQL queries. Information such as active queries, resource usage, query plans, and resource wait types. Learn more details about DMVs with Azure SQL later in this unit.
 
 ### Extended Events
 
-Azure SQL provides the same Extended Events infrastructure as with SQL Server with a few differences. Extended Events is a method to trace key events of execution within the SQL Server that powers Azure SQL. For performance, extended allows you to trace the execution of individual queries. Learn more details about Extended Events with Azure SQL later in this section of the unit.
+Azure SQL provides the same Extended Events infrastructure as with SQL Server with a few differences. Extended Events is a method to trace key events of execution within SQL Server that powers Azure SQL. For performance, extended allows you to trace the execution of individual queries. Learn more details about Extended Events with Azure SQL later in this unit.
 
 ### Lightweight Query Profiling
 
@@ -40,11 +40,11 @@ Dynamic Management Views (DMV) have been a driving force to monitor and troubles
 
 All DMVs for SQL Server are available for Managed Instance. Key DMVs like **sys.dm_exec_requests** and **sys.dm_os_wait_stats** are commonly used to examine query performance.
 
-One DMV is specific to Azure called **sys.server_resource_stats** and shows historical resource usage for the Managed Instance. This is an important DMV to use to see resource usage since you do not have direct access to OS tools like Performance Monitor.
+One DMV is specific to Azure called **sys.server_resource_stats** and shows historical resource usage for the Managed Instance. This is an important DMV to see resource usage since you do not have direct access to OS tools like Performance Monitor.
 
 ### Azure SQL Database
 
-Most of the common DMVs you need for performance including **sys.dm_exec_requests** and **sys.dm_os_wait_stats** are available. It is important to know that these DMVs only provide information specific to the database and not across all databases for a logical server
+Most of the common DMVs you need for performance including **sys.dm_exec_requests** and **sys.dm_os_wait_stats** are available. It is important to know that these DMVs only provide information specific to the database and not across all databases for a logical server.
 
 **sys.dm_db_resource_stats**  is a DMV specific to Azure SQL Database and can be used to view a history of resource usage for the database. Use this DMV similar to how you would use sys.server_resource_stats for a Managed Instance.
 
@@ -56,8 +56,8 @@ There are a few DMVs worth calling out you will need to solve certain performanc
 
 - **sys.dm_io_virtual_file_stats** is important for Azure SQL since you don't have direct access to operating system metrics for I/O performance per file.
 - **sys.dm_os_performance_counters** is available for both Azure SQL Database and Managed Instance to see SQL Server common performance metrics. This can be used to view SQL Server Performance Counter information that is typically available in Performance Monitor.
-- **sys.dm_instance_resource_governance** can be used to seem resource limits for a Managed Instance. You can view this information to see what your expected resource limits should be without using th Azure Portal.
-- **sys.dm_user_db_resource_governance** can be used to see common resource limits per the deployment option, service tier, and size for your Azure SQL deployment. You can view this information to see what your expected resource limits should be without using th Azure Portal.
+- **sys.dm_instance_resource_governance** can be used to view resource limits for a Managed Instance. You can view this information to see what your expected resource limits should be without using the Azure portal.
+- **sys.dm_user_db_resource_governance** can be used to see common resource limits per the deployment option, service tier, and size for your Azure SQL Database deployment. You can view this information to see what your expected resource limits should be without using th Azure portal.
 
 ### DMVs for deep troubleshooting
 
@@ -99,9 +99,9 @@ In order to decide how to apply monitoring and troubleshooting performance tools
 
 ### Common Performance Scenarios
 
-A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (Waiting on a Resource). This is a way to "divide and conquer" a performance problem for SQL which can often be vague (i.e. "it is slow").
+A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a Resource). This is a way to "divide and conquer" a performance problem for SQL which can often be vague (i.e. "it is slow").
 
-The following diagram shows a common decision tree to determine if a SQL performance issue is Running or Waiting and how to use common performance tools to determine the cause and solution.
+The following diagram shows a common decision tree to determine if a SQL performance issue is running or waiting and how to use common performance tools to determine the cause and solution.
 
 ![runningvswaiting](../media/4-running-vs-waiting.png)
 
@@ -113,41 +113,41 @@ Running or waiting scenarios can often be determined by looking at overall resou
 
 - Azure Portal/Powershell/Alerts
 
-Azure Monitor has integrated metrics to view resource usage for Azure SQL. You can also setup alerts to look for resource usage conditions.
+    Azure Monitor has integrated metrics to view resource usage for Azure SQL. You can also setup alerts to look for resource usage conditions.
 
 - sys.dm_db_resource_stats
 
-For Azure SQL Database, you can look at this DMV to see CPU, memory, and I/O resource usage for the database deployment. This DMV takes a snapshot of this data every 15 seconds.
+    For Azure SQL Database, you can look at this DMV to see CPU, memory, and I/O resource usage for the database deployment. This DMV takes a snapshot of this data every 15 seconds.
 
 - sys.server_resource_stats
 
-This DMV behaves just like sys.dm_db_resource_stats but it used to see resource usage for the Managed Instance for CPU, memory, and I/O. This DMV also takes a snapshot every 15 seconds.
+    This DMV behaves just like sys.dm_db_resource_stats but it used to see resource usage for the Managed Instance for CPU, memory, and I/O. This DMV also takes a snapshot every 15 seconds.
 
 #### Running
 
-If you have determined the problem is high CPU utilization, this is called a Running scenario. A running scenario can involve queries that consume resources through compilation or execution. Further analysis to determine a solution can be done by using these tools:
+If you have determined the problem is high CPU utilization, this is called a running scenario. A running scenario can involve queries that consume resources through compilation or execution. Further analysis to determine a solution can be done by using these tools:
 
 - Query Store
 
-Use the Top Consuming Resource reports in SSMS, Query Store catalog views, or Query Performance Insight in the Azure Portal (Azure SQL Database only) to find which queries are consuming the most CPU resources.
+    Use the Top Consuming Resource reports in SSMS, Query Store catalog views, or Query Performance Insight in the Azure Portal (Azure SQL Database only) to find which queries are consuming the most CPU resources.
 
 - sys.dm_exec_requests
 
-Use this DMV in Azure SQL to get a snapshot of the state of active queries. Look for queries with a state of RUNNABLE and a wait type of SOS_SCHEDULER_YIELD to see if you have enough CPU capacity.
+    Use this DMV in Azure SQL to get a snapshot of the state of active queries. Look for queries with a state of RUNNABLE and a wait type of SOS_SCHEDULER_YIELD to see if you have enough CPU capacity.
 
 - sys.dm_exec_query_stats
 
-This DMV can be used much like Query Store to find top resource consuming queries but only is available for query plans that are cached where Query Store provides a persistent historical record of performance. This DMV also allows you to find the query plan for a cached query.
+    This DMV can be used much like Query Store to find top resource consuming queries but only is available for query plans that are cached where Query Store provides a persistent historical record of performance. This DMV also allows you to find the query plan for a cached query.
 
 - sys.dm_exec_procedure stats
 
-This DMV provides information much like sys.dm_exec_query_stats except the performance information can be viewed at the stored procedure level.
+    This DMV provides information much like sys.dm_exec_query_stats except the performance information can be viewed at the stored procedure level.
 
-Once you determine what query or queries are consuming the most resources, you may have to examine whether you have enough CPU resources for your workload or debug query plans with tools like Lightweight Query Profiling, SET statements, Query Store, or Extended Events tracing.
+    Once you determine what query or queries are consuming the most resources, you may have to examine whether you have enough CPU resources for your workload or debug query plans with tools like Lightweight Query Profiling, SET statements, Query Store, or Extended Events tracing.
 
 #### Waiting
 
-If your problem doesn't appear to be a high CPU resource usage, it could be the performance problem involves waiting on a resource. Scenarios involving waiting on resources can be waits such as:
+If your problem doesn't appear to be a high CPU resource usage, it could be the performance problem involves waiting on a resource. Scenarios involving waiting on resources include:
 
 - I/O Waits
 - Lock Waits
@@ -160,22 +160,22 @@ To perform analysis on waiting scenarios you typically look at the following too
 
 - sys.dm_os_wait_stats
 
-Use this DMV to see what are the top wait types for the database or instance. This can guide you on what action to take next depending on the top wait types.
+    Use this DMV to see what are the top wait types for the database or instance. This can guide you on what action to take next depending on the top wait types.
 
 - sys.dm_exec_requests
 
-Use this DMV to find specific wait types for active queries to see what resource they are waiting on. This could be a standard blocking scenario waiting on locks from other users.
+    Use this DMV to find specific wait types for active queries to see what resource they are waiting on. This could be a standard blocking scenario waiting on locks from other users.
 
 - sys.dm_os_waiting_tasks
 
-Queries that use parallelism use multiple tasks for a given query so you may need to use this DMV to find wait types for a given task for a specific query.
+    Queries that use parallelism use multiple tasks for a given query so you may need to use this DMV to find wait types for a given task for a specific query.
 
 - Query Store
 
-Query Store provides reports and catalog views that show an aggregation of the top waits for query plan execution. It is important to know that a wait of **CPU** is equivalent to a *Running* problem.
+    Query Store provides reports and catalog views that show an aggregation of the top waits for query plan execution. It is important to know that a wait of **CPU** is equivalent to a *running* problem.
 
 > [!TIP]
-> Extended Events can be used for any of running or waiting scenarios but requires you to setup an extended events session to trace queries and can be considered a *heavy* method to debug a performance problem.
+> Extended Events can be used for any running or waiting scenarios but requires you to setup an extended events session to trace queries and can be considered a *heavier* method to debug a performance problem.
 
 ### Scenarios specific to Azure SQL
 
@@ -183,7 +183,7 @@ There are some performance scenarios, both running and waiting, that are specifi
 
 #### Log governance
 
-Azure SQL can put enforce resource limits on transaction log usage called *log rate governance*. Log governance may be seen from the following types of waits:
+Azure SQL can enforce resource limits on transaction log usage called *log rate governance*. This enforcement is often needed to ensure resource limits and to meet promised SLA. Log governance may be seen from the following types of waits:
 
 - LOG_RATE_GOVERNOR - waits for Azure SQL Database
 - POOL_LOG_RATE_GOVERNOR - waits for Elastic Pools
@@ -208,11 +208,11 @@ If you use a Business Critical (BC) service tier you may *unexpectedly* see the 
 - HADR_DATABASE_FLOW_CONTROL
 - HADR_THROTTLE_LOG_RATE_SEND_RECV
 
-Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). (BC) tiers use AG technology behind the scenes to implement SLA and features of a BC service tier.
+Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). (BC) tiers use AG technology behind the scenes to implement SLA and availability features of a BC service tier.
 
 #### Hyperscale
 
-The Hyperscale unique architecture can result in some unique performance wait types that are prefixed with **RBIO**
+The Hyperscale architecture can result in some unique performance wait types that are prefixed with **RBIO**
 
 In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
 

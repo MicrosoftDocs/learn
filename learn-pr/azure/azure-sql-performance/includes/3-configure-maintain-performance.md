@@ -20,7 +20,7 @@ For performance, one option that is not available to change is the recovery mode
 
 ## Files and filegroups
 
-SQL Server professionals often use files and filegroups to improve I/O performance. Azure SQL does not allow users to place files on specific disk systems. However, Azure SQL has resource limits for I/O performance with regards to rates, IOPS, and latencies so abstracting the user from physical file placement can be a benefit.
+SQL Server professionals often use files and filegroups to improve I/O performance through physical file placement. Azure SQL does not allow users to place files on specific disk systems. However, Azure SQL has resource commitments for I/O performance with regards to rates, IOPS, and latencies so abstracting the user from physical file placement can be a benefit.
 
 Azure SQL Database only has one database file and the size is configured through Azure interfaces. There is no functionality to create additional files.
 
@@ -28,16 +28,16 @@ Azure SQL Managed Instance supports adding database files and configuring sizes 
 
 ## Configuring MAXDOP
 
-Max degree of parallelism (MAXDOP), which can affect the performance of individual queries, works exactly the same in the engine for Azure SQL as SQL Server. The ability to configure MAXDOP may be important to delivering consistent performance in Azure SQL.You can configure (MAXDOP) in Azure SQL similar to SQL Server using the following techniques:
+Max degree of parallelism (MAXDOP), which can affect the performance of individual queries, works exactly the same in the engine for Azure SQL as SQL Server. The ability to configure MAXDOP may be important to delivering consistent performance in Azure SQL. You can configure (MAXDOP) in Azure SQL similar to SQL Server using the following techniques:
 
 - ALTER DATABASE SCOPED CONFIGURATION to configure MAXDOP is supported for Azure SQL
 - sp_configure for 'max degree of parallelism' is supported for Managed Instance.
 - MAXDOP Query hints are fully supported
-- Configuring MAXDOP with Resource Governor is supported only for Managed Instance
+- Configuring MAXDOP with Resource Governor is supported for Managed Instance
 
 ## Resource Governor
 
-Resource Governor is a feature in SQL Server that can be used to control resource usage for workloads through I/O, CPU, and memory.While Resource Governor is used behind the scenes for Azure SQL Database, Resource Governor is supported for Azure SQL Managed Instance for user defined workload groups and pools.
+Resource Governor is a feature in SQL Server that can be used to control resource usage for workloads through I/O, CPU, and memory. While Resource Governor is used behind the scenes for Azure SQL Database, Resource Governor is only supported for Azure SQL Managed Instance for user defined workload groups and pools.
 
 ## Maintaining indexes
 

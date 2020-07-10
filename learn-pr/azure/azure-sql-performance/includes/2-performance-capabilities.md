@@ -4,19 +4,19 @@ Since Azure SQL Database and Managed Instance are based on the SQL Server databa
 
 ## Memory, CPU, and I/O capacities
 
-Choosing the right deployment and service tier for Azure SQL Database or Managed Instance can be important for performance. In Module 2 you learned about the various deployment options for Azure SQL. Consider these important maximum capacities as part of your deployment:
+Choosing the right deployment and service tier for Azure SQL Database or Managed Instance can be important for performance. In second Module you learned about the various deployment options for Azure SQL. Consider these important maximum capacities as part of your deployment:
 
 - Azure SQL Database can support up to 128 vCores, 4TB Memory, and a 4TB Database size.
 - The Hyperscale deployment option supports up to 100TB databases.
 - Azure SQL Managed Instance can support up to 80 vCores, 400Gb Memory, and a 8TB Database size.
 - The # of vCores and service tier also affects other resource capacities (Ex. maximum transaction log rates)
-- Windows Job Objects are used to support certain resource limits such as memory. Use **sys.dm_os_job_objects** to find true capacities for your deployment.
+- Windows Job Objects are used to support certain resource limits such as memory. Use **sys.dm_os_job_object** to find true capacities for your deployment.
 
 ## Indexes
 
-Indexes are often critical to query performance for SQL Server and that is not different for Azure SQL deployments. Here are important points to consider about indexes and Azure SQL:
+Indexes are often critical to query performance for SQL Server and that is not different for Azure SQL. Here are important points to consider about indexes and Azure SQL:
 
-- All index types, clustered and non-clustered,are supported across Azure SQL.
+- All index types, clustered and non-clustered, are supported across Azure SQL.
 - Online and resumable indexes are fully supported. Online and resumable indexes can be critical for maximum availability.
 - Columnstore indexes are available in almost all service tiers. Check the documentation for any exceptions.
 
@@ -37,8 +37,8 @@ Partitions are often used with SQL Server for tables with a large number of rows
 
 ## SQL Server 2019 performance enhancements
 
-Many of the new enhancements for performance such as Intelligent Query Processing are available in Azure SQL. However, not all specific improvements are yet in Azure SQL. For example, Tempdb Metadata Optimization is still planned for Azure SQL but not available yet.
+Many of the new enhancements for performance in SQL Server 2019 such as Intelligent Query Processing are available in Azure SQL. However, not all specific improvements are yet in Azure SQL. For example, Tempdb Metadata Optimization is still planned for Azure SQL but not available yet.
 
 ## Intelligent performance
 
-Intelligent performance covers capabilities in Azure SQL that include intelligent query processing, automatic plan correction, and automatic tuning (including indexes).
+Intelligent performance covers capabilities in Azure SQL that include intelligent query processing, automatic plan correction, and automatic tuning (including indexes). You will learn more about these features in a later unit.

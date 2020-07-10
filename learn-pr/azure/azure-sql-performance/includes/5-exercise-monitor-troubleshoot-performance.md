@@ -10,9 +10,9 @@ You first need to deploy a database for this exercise. You will use a Powershell
 
     In order to get the IP address required, you **must disconnect from any VPN** service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser).  
 
-    This script should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again. Copy the script and paste it into the Cloud Shell and hit enter. You will need to hit enter for the last command to get the server name.
+    This script should take 3-5 minutes to complete. Make sure to note your password, unique ID, and server name as it will not be shown again. Copy the script and paste it into the Cloud Shell and hit enter. You will need to hit enter for the last command to get the server name.
 
-    **Don't forget to note your password, unique ID, and server name. You will need these throughout the module.**  
+    **Don't forget to note your password, unique ID, and server name. You will need these throughout the module and in future exercises.**  
 
     ```powershell
     # Prompt for password
@@ -75,7 +75,7 @@ You first need to deploy a database for this exercise. You will use a Powershell
 
 1. Open SSMS and create a new connection to your logical server.  
 
-    For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell. You may need to refer to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com) to get this, e.g. *aw-server`<unique ID>`.database.windows.net*.
+    For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell. You can also obtain this in the   [Azure portal](https://portal.azure.com/learn.docs.microsoft.com), e.g. *aw-server`<unique ID>`.database.windows.net*.
 
     Change the authentication to **SQL Server Authentication**, and input the corresponding login **cloudadmin** and password you provided for the Cloud Shell script.  
 
@@ -151,7 +151,7 @@ Now run a workload of the T-SQL query to observe its performance simulating conc
     GO
     ```
 
-1. Run the workload from the command line using the script sqlworkload.cmd
+1. Run the workload from the command line using the script **sqlworkload.cmd**
 
     This script will use 10 concurrent users running the workload query 2 times (Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server).
 
@@ -276,7 +276,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     ![SSMS_Slow_Query_Stats](../media/5-ssms-slow-query-stats.png)
 
-    Note the average duration of the query. Your times may vary but the key will be to compare this average duration to the average wait time for this query and eventually the average duration when we introduce a performance improvement.
+    Note the average duration of the query. Your times may vary but the key will be to compare this average duration to the average wait time for this query and eventually a different average duration when we introduce a performance improvement.
 
     The final component is the visual query plan. The query plan for this query looks like the following:
 
@@ -316,7 +316,7 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
 1. Use Azure Metric Explorer
 
-    Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer) If you click on Metrics you will see the following:
+    Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring from the Resource pane in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer) If you click on Metrics you will see the following:
 
     ![Azure_Monitor_Metrics](../media/5-azure-monitor-metrics.png)
 
@@ -346,4 +346,4 @@ Your results would look like the following:
 
 Azure Monitor Logs have a delay when first configuring log diagnostics for a database so these results may take some time to appear.
 
-In this exercise, you learned how to observe a common SQL performance scenario and dive into details to decide on a possible solution to improve performance. In the next unit you will learn methods to accelerate and tune performance and then use the database you deployed in this unit to see a performance improvement.
+In this exercise, you learned how to observe a common SQL performance scenario and dive into details to decide on a possible solution to improve performance. In the next unit you will learn methods to accelerate and tune performance.
