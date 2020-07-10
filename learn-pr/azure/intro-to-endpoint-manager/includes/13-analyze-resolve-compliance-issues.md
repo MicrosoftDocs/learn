@@ -69,10 +69,18 @@ Endpoint analytics currently focuses on three things:
 - **Proactive remediation scripting**: Fix common support issues before end-users notice issues.
 - **Start up performance**: Help IT get users from power-on to productivity quickly without lengthy boot and sign in delays.
 
+## Client health with co-management
+
+The health of your network is directly connected to the health of the devices moving in and out of it. Intune can communicate with an unhealthy client, even when it isn't on your network. Use co-management to combine this feature with Configuration Manager's ability to report back 98% of known healthy clients. Then you can detect, assess, and provide visibility across all clients in real time. Intune also adds the support needed for compliance upgrades across all connected clients.
+
+Assessing client health is a top priority. The **CCMeval** utility is external to the Configuration Manager client. It provides client health monitoring and auto remediation. However, this reporting relies on a device being physically or virtually on your internal network. Co-management helps to address this issue.
+
+With co-management, Intune can report on the client health state. It provides timestamp information for the validity of the data. This information tells you if your devices are healthy, able to connect, able to install apps, or can update to the required OS builds.
 
 <!--
 https://docs.microsoft.com/mem/intune/fundamentals/tenant-status
 https://docs.microsoft.com/mem/intune/fundamentals/help-desk-operators
 https://docs.microsoft.com/mem/intune/configuration/troubleshoot-policies-in-microsoft-intune
 https://docs.microsoft.com/mem/intune/fundamentals/reports
+https://docs.microsoft.com/en-us/mem/configmgr/comanage/quickstart-client-health 
 -->

@@ -24,7 +24,7 @@ In the following diagram, you can see how Intune interacts with other components
 
 ## Microsoft Endpoint Configuration Manager
 
-Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or are internet-based. You can cloud-enable Configuration Manager to integrate with Intune, Azure AD, Microsoft Defender ATP, and other cloud services. Use Configuration Manager to deploy apps, software updates, and operating systems, as well as configure sites and clients, and run and monitor management tasks.
+Configuration Manager is an on-premises management solution to manage desktops, servers, and laptops that are on your network or are internet-based. You can cloud-enable Configuration Manager to integrate with Intune, Azure AD, Microsoft Defender ATP, and other cloud services. Use Configuration Manager to deploy apps, software updates, and operating systems, as well as configure sites and clients, and run and monitor management tasks. Config Manager supports Windows and Mac OS versions.
 
 ![Diagram of Configuration Manager infrastructure](../media/configmanager.png)
 

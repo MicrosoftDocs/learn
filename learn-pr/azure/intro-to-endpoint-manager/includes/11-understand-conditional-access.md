@@ -1,3 +1,5 @@
+Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. It's built from scratch in the cloud. Whether you're managing devices with Intune or extending your Configuration Manager deployment with co-management, it works the same way.
+
 With Conditional Access, you can control the devices and apps that can connect to your email and company resources. 
 
 Enterprise Mobility + Security (EMS)  is not a standalone product. It's a solution that takes part on all services and products that are part of EMS. Conditional Access provides granular access control to keep your corporate data secure, while giving users an experience that allows them to do their best work from any device, and from any location.
@@ -24,6 +26,20 @@ Ways to use Conditional Access with Intune:
 <!--
 https://docs.microsoft.com/mem/intune/protect/conditional-access
 -->
+
+With co-management, Intune evaluates every device in your network to determine how trustworthy it is. It does this evaluation in the following two ways:
+
+1. Intune makes sure a device or app is managed and securely configured. This check depends on how you set your organization's compliance policies. For example, make sure all devices have encryption enabled and aren't jailbroken.  
+
+    - This evaluation is pre-security breach and configuration-based  
+
+    - For co-managed devices, Configuration Manager also does configuration-based evaluation. For example, required updates or apps compliance. Intune combines this evaluation along with its own assessment.  
+
+2. Intune detects active security incidents on a device. It uses the intelligent security of Microsoft Defender Advanced Threat Protection (formerly Windows Defender ATP) and other mobile threat defense providers. These partners run ongoing behavioral analysis on devices. This analysis detects active incidents, and then passes this information to Intune for real-time compliance evaluation.  
+
+    - This evaluation is post-security breach and incident-based  
+
+
 By using Intune or Config Manager, you help ensure your organization is using proper credentials to access and share company data.
 
 ## Common ways to use conditional access
@@ -92,3 +108,22 @@ When devices don't meet the conditions set, the end user is guided through the p
 #### How conditional access for Exchange on-premises works
 
 Conditional access for Exchange on-premises works differently than Azure Conditional Access based policies. You install the Intune Exchange on-premises connector to directly interact with Exchange server. The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
+
+## Benefits of Conditional Access
+
+Every IT team is obsessed with network security. It's mandatory to make sure that every device meets your security and business requirements before accessing your network. With Conditional Access, you can determine the following factors: 
+- If every device is encrypted  
+- If malware is installed  
+- If its settings are updated  
+- If it's jailbroken or rooted  
+
+Conditional Access combines granular control over organizational data with a user experience that maximizes worker productivity on any device from any location.
+
+The following video shows how Advanced Threat Protection (ATP) is integrated into common scenarios that you regularly experience:
+
+> [!VIDEO https://www.youtube.com/embed/A7IrxAH87wc?start=178]
+
+With co-management, Intune can incorporate Configuration Manager's responsibilities for assessing your security standards compliance of required updates or apps. This behavior is important for any IT organization that wants to continue using Configuration Manager for complex app and patch management.
+
+Conditional Access is also a critical part of developing your Zero Trust Networkarchitecture. With Conditional Access, compliant device access controls cover the foundational layers of Zero Trust Network. This functionality is a large part of how you secure your organization in the future.
+

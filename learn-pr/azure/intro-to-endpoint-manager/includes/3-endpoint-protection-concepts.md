@@ -26,9 +26,7 @@ The following interactive guide steps you through the Microsoft Endpoint Manager
 > [!VIDEO https://mslearn.cloudguides.com/en-us/guides/Manage%20devices%20with%20Microsoft%20Endpoint%20Manager]
 
 ## Manage and protect apps
-Microsoft Intune gives you a range of features to help you manage and protect apps and data. Intune supports mobile application management (MAM) policies without managing the device. Intune MAM supports two configurations:
-- **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM).
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers.
+Microsoft Intune gives you a range of features to help you manage and protect apps and data. Intune supports mobile application management policies without managing the device. Intune MAM supports two configurations. The first involves Mobile Device Management (MDM) along with Mobile App Management (MAM). This configuration is where IT administrators can only manage apps using MAM and app protection policies on devices that are *enrolled* with Intune mobile device management (MDM). The second configuration involves MAM without device enrollment. MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices *not enrolled* with Intune MDM. This means apps could be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers.
 
 ### Examples of app policies
 App policies allow you to perform several different types of actions to configure and protect apps. By using MAM policies in Intune you can configure, secure, publish, monitor, and update apps for devices and users of your organization. For example, you can:
