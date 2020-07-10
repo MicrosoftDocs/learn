@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-grover.7-knowledge-check
+uid: learn.quantum.solve-graph-coloring-problems-grovers-search.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your understanding so far.
-  author: KittyYeungQ
-  ms.author: kitty
+  author: tcNickolas
+  ms.author: mamykhai
   ms.date: 09/19/2020
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-quantum
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 
 quiz:
   title: Check your knowledge
