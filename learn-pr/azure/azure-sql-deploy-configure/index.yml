@@ -22,6 +22,7 @@ levels:
 - beginner
 roles:
 - solution-architect
+- database-administrator
 products:
 - azure
 units:
