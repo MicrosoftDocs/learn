@@ -49,7 +49,7 @@ Git is an open-source distributed control system. Basically a tool for storing f
 
    ```
    bin
-   node_module
+   node_modules
    ```
 
    You can learn more about `.gitignore` files from the [Git documentation](https://git-scm.com/docs/gitignore) and by reviewing [Node.gitignore](https://github.com/github/gitignore/blob/master/Node.gitignore), which adds other common Node.js files and folders that you may want to exclude.

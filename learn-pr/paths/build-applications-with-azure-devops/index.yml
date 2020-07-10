@@ -12,7 +12,7 @@ metadata:
   ms.prod: learning-azure
 title: Build applications with Azure DevOps
 summary: |
-  Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how configure build pipelines that continuously build, test, and verify your applications.
+  Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure build pipelines that continuously build, test, and verify your applications.
 
   In this learning path, you will:
   - Collaborate with others to build your applications using Azure Pipelines and GitHub
@@ -20,8 +20,6 @@ summary: |
   - Scan your source code and third-party components for potential vulnerabilities
   - Define multiple pipelines that work together to build your application
   - Build applications using both Microsoft-hosted agents and your own build agents
-
-  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 prerequisites: |
   - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
 iconUrl: /learn/achievements/azure-devops/build-applications-with-azure-devops.svg

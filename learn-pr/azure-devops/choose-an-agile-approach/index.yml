@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.choose-an-agile-approach
 metadata:
-  title: Choose an Agile approach to software development - Learn
+  title: Choose an Agile approach to software development
   description: Learn with the Space Game web team how to use Azure Boards to implement Agile software practices along with DevOps transparency and collaboration.
   ms.date: 01/21/2020
   author: tpetchel

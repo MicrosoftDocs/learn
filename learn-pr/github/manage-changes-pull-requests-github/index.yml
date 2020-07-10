@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.github.manage-changes-pull-requests-github
+metadata:
+  title: "Manage repository changes by using pull requests on GitHub"
+  description: Learn how to manage changes to your repository source by using pull requests.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Manage repository changes by using pull requests on GitHub"
+summary: Learn how to manage changes to your repository source by using pull requests.
+abstract: |
+  In this module, you will:
+  - Create a pull request
+  - Comment on pull requests
+  - Leave reviews on pull requests
+  - Know what's expected when reviewing pull requests
+  - Request pull request reviews
+  - Accept changes introduced by a pull request review
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+iconUrl: /learn/achievements/github/manage-changes-pull-requests-github.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.manage-changes-pull-requests-github.1-introduction
+- learn.github.manage-changes-pull-requests-github.2-what-are-pull-requests
+- learn.github.manage-changes-pull-requests-github.3-review-pull-requests
+- learn.github.manage-changes-pull-requests-github.4-knowledge-check
+- learn.github.manage-changes-pull-requests-github.5-summary
+badge:
+  uid: learn.github.manage-changes-pull-requests-github.badge

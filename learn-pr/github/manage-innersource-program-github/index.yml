@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.github.manage-innersource-program-github
+metadata:
+  title: "Manage an InnerSource program by using GitHub"
+  description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Manage an InnerSource program by using GitHub"
+summary: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
+abstract: |
+  In this module, you will learn to:
+  - Contrast user versus organization owned projects
+  - Make recommendations about the number of GitHub organizations you should have
+  - Create discoverable repositories
+  - Create robust repository READMEs
+  - Use issue and pull request templates
+  - Build transparency into repositories
+  - Measure the success of InnerSource within your organization
+  - Distribute your InnerSource toolkit
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+  - Familiarity with pull requests
+iconUrl: /learn/achievements/github/manage-innersource-program-github.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.manage-innersource-program-github.1-introduction
+- learn.github.manage-innersource-program-github.2-manage-innersource-program
+- learn.github.manage-innersource-program-github.3-innersource-fundamentals
+- learn.github.manage-innersource-program-github.4-knowledge-check
+- learn.github.manage-innersource-program-github.5-summary
+badge:
+  uid: learn.github.manage-innersource-program-github.badge

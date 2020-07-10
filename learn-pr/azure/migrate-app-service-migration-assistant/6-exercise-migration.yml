@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.migrate-app-service-migration-assistant.exercise-migration
+title: Exercise - Migrate your web app with the Azure App Service Migration Assistant
+metadata:
+  title: Exercise - Migrate your web app with the Azure App Service Migration Assistant
+  description: Use the Migration Assistant do a migration from on-premises to Azure App Service.
+  ms.date: 05/21/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-migration.md)]
