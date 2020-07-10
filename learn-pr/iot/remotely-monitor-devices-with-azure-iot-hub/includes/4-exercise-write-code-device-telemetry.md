@@ -14,7 +14,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
     ```
         npm install azure-iot-device@1.15.0
-        npm install azure-iot-device-mqtt@1.14.0
+        npm install azure-iot-device-mqtt@1.15.0
         npm install chalk@2.4.2
     ```
 
