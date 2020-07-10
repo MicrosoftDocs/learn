@@ -117,7 +117,7 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
 
 1. Prepare the workload script
 
-    Edit the script **sqlworkload.cmd** (which will use the ostress.exe program
+    Edit the script **sqlworkload.cmd** (which will use the ostress.exe program)
 
     - Substitute your unique_id you saved from the deployment script to put in the correct server name.
     - Substitute the password for the login for the Azure SQL Database Server for the **-P parameter**.

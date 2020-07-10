@@ -12,7 +12,7 @@ All scripts for this exercise can be found at *04-Performance\tuning_application
 
 ## Create a new table for the application
 
-Run the following T-SQL statement (or use the script **order_rating_ddl.sql**) to create a table in the AdventureWorks database you have used in the first two exercises:
+Run the following T-SQL statement or use the script **order_rating_ddl.sql** to create a table in the AdventureWorks database you have used in the first two exercises:
 
 ```sql
 DROP TABLE IF EXISTS SalesLT.OrderRating;
@@ -70,7 +70,7 @@ Substitute the password you provided in the database deployment from the previou
 
 ## Run the workload
 
-Run the workload using the script **order_rating_insert_single.cmd**. This script uses ostress to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
+Run the workload using the script **order_rating_insert_single.cmd**. This script uses the ostress.exe program  to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
 
 ```sql
 DECLARE @x int;
@@ -146,7 +146,7 @@ Make edits to scripts and execute them to see a more efficient I/O performance.
 1. Look at the results of the T-SQL script for **sqlrequests.sql**.
 
     You will see from these results far less WRITELOG waits and overall less wait time for these waits.
-    
+
     Now the workload runs much faster compared to the previous execution. This is an example of tuning an application for SQL queries that will run after in or outside of Azure.
 
     > [!NOTE]

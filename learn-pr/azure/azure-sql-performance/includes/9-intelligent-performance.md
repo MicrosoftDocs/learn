@@ -74,4 +74,4 @@ You will see details of the index, table, and space required. You have the optio
 
 Notice the index is a non-clustered index that is applied as an online index. When an index has been applied based on a recommendation, either manually or through automatic tuning, the recommendation engine will also monitor query performance over a period of item with the applied index. If query performance degrades compared to before the index was applied, a recommendation can be made to drop the index.
 
-Now take a quick to check your knowledge about Intelligent Performance and Azure SQL.
+Now take a quiz to check your knowledge about Intelligent Performance and Azure SQL.

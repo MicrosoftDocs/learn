@@ -59,28 +59,28 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
 1. Modify the service objective for the database to scale more CPUs
 
-    Using SSMS, run the script modify_service_objective.sql or T-SQL command:
+    Using SSMS, run the script **modify_service_objective.sql** or T-SQL command:
   
     ```sql
     ALTER DATABASE AdventureWorks MODIFY (SERVICE_OBJECTIVE = 'GP_Gen5_8');
     ```
   
     This statement comes back immediately but the scaling of the compute resources take place in the background. A scale this small should take less than a minute and for a short period of time the database will be offline to make the change effective. You can monitor the progress of this scaling activity using the Azure Portal.
-    
+
     ![Azure_Portal_Update_In_Progress](../media/7-azure-portal-update-progress.png)
 
 1. Monitor the progress of service tier changes with T-SQL
 
     Another way to monitor the progress of a change for the service object for Azure SQL Database is to use the DMV **sys.dm_operation_status**. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change. 
-    
+
     Run this query to see the output of this DMV at any point in time (You must be in the context of master):
-    
+
     ```sql
     SELECT * FROM sys.dm_operation_status;
     ```
-    
+
     Here is an example of the output of this DMV after executing the above ALTER DATABASE statement:
-    
+
     <table>
       <tr>
         <th>session_activity_id</th>
@@ -117,10 +117,10 @@ To scale performance for a problem that appears to be a CPU capacity problem you
         <td>[date time]</td>
       </tr>
     </table>
-    
-    During a change for the service objective, queries are allowed against the database until the final change is implemented so an application cannot connect for a very brief period of time. For Azure SQL Database Managed Instance, a change to Tier (or SKU) will allow queries and connections but prevents all database operations like creation of new databases (in these cases operations like these will fail with the error message "**The operation could not be completed because a service tier change is in progress for managed instance '[server]' Please wait for the operation in progress to complete and try again**".)
-    
-    When this is done using the queries listed above to verify the new service objective or pricing tier of 8 vCores has taken affect.
+
+    During a change for the service objective, queries are allowed against the database until the final change is implemented so an application cannot connect for a very brief period of time. For Azure SQL Database Managed Instance, a change to Tier (or SKU) will allow queries and connections but prevents all database operations like creation of new databases (in these cases operations like these will fail with the error message "**The operation could not be completed because a service tier change is in progress for managed instance '[server]' Please wait for the operation in progress to complete and try again**")
+
+    When this is done use the queries listed above from **get_service_object.sql** to verify the new service objective or pricing tier of 8 vCores has taken affect.
 
 ## Run the workload after scaling
 
@@ -129,22 +129,22 @@ Now that the database has more CPU capacity, let's run the workload we did in th
 1. Run the workload again
 
     Now that the scaling has complete, we need to see if the workload duration is faster and whether waits on CPU resources has decreased.
-    
+
     Run the workload again using the command **sqlworkload.cmd** that you executed in the previous exercise.
 
 1. Observe the resource usage with DMVs
 
     Use the same query from the first exercise of this module to observe results for **dm_db_resource_stats**.
-    
+
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;
-    ```
+    ``
     You should see the average cpu resoure usage has dropped lower from the almost 100% usage in the previous exercise.
 
 1. Observe active queries with DMVs
 
     Run the following T-SQL statement
-    
+
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
     FROM sys.dm_exec_requests er
@@ -152,10 +152,10 @@ Now that the database has more CPU capacity, let's run the workload we did in th
     ON er.session_id = es.session_id
     AND es.is_user_process = 1;
     ```
-    
+
     You will see there are more queries with a status of RUNNING (less RUNNABLE although this will appear some) and the avg_cpu_percent should drop to 40-60%.
 
-6. Observe the new workload duration.
+1. Observe the new workload duration.
 
     The workload duration from **sqlworkload.cmd** should now be much less and somewhere ~25-30 seconds.
 
@@ -166,17 +166,17 @@ Let's look at the same Query Store reports as we did in the previous exercise.
 1. Use Top Resource Consuming Queries from SSMS
 
     Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:
-    
+
     ![SSMS_QDS_Top_Query_Faster](../media/7-ssms-top-query-faster.png)
-    
+
     You will now see two queries (query_id). These are the same query but show up as different query_id values in Query Store because the scale operation required a restart so the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
 2. Look at Top Waits from SSMS
 
     Look also at the Query Wait Statistics report as you did in the previous exercise. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
-    
+
     ![SSMS_Top_Wait_Stats_Query_Faster](../media/7-ssms-top-wait-stats-query-faster.png)
-    
+
 ## Observe changes from Azure Metrics
 
 Look at the Overview blade again for the Compute Utilization. Notice the significant drop in overall CPU resource usage compared to the previous workload execution like the following:
