@@ -15,5 +15,5 @@ Keep in mind the following key points about Azure SQL Performance and learn more
 - New Azure functionality like [Azure Metrics](https://docs.microsoft.com/azure/azure-monitor/platform/data-platform-metrics) can be used to replace functionality like Windows Performance Monitor
 - DMVs exist that are new and designed for Azure such as [sys.dm_db_resource_stats](https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/sys-dm-db-resource-stats-azure-sql-database?view=azuresqldb-current).
 - New wait types exist specific to Azure such as [LOG_RATE_GOVERNOR](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-logical-server#transaction-log-rate-governance).
-- [Scale](https://docs.microsoft.com/en-us/azure/azure-sql/database/scale-resources) up and down without need to migrate.
+- [Scale](https://docs.microsoft.com/azure/azure-sql/database/scale-resources) up and down without need to migrate.
 - Take advantage of Intelligent Performance to get faster. [Automatic Tuning](https://docs.microsoft.com/azure/azure-sql/database/automatic-tuning-overview) uses Machine Learning to recommend important performance best practices such as indexes.
