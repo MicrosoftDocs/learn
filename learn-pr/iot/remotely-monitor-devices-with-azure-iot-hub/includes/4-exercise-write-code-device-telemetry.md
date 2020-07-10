@@ -13,9 +13,9 @@ At the end of this unit, you'll be sending and receiving telemetry.
 1. Back in the terminal, install the required libraries. Enter:
 
     ```
-        npm install azure-iot-device
-        npm install azure-iot-device-mqtt
-        npm install chalk
+        npm install azure-iot-device@1.15.0
+        npm install azure-iot-device-mqtt@1.14.0
+        npm install chalk@2.4.2
     ```
 
 1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the `cheesecave` folder is the current folder of the terminal, when you run the app.
@@ -37,7 +37,7 @@ At the end of this unit, you'll be sending and receiving telemetry.
         dotnet add package Microsoft.Azure.Devices.Client
         dotnet add package Microsoft.Azure.Devices.Shared
         dotnet add package Newtonsoft.Json
-    ```    
+    ```
 
 1. From the **File** menu, open up the **Program.cs** file, and delete the default contents.
 
@@ -68,9 +68,8 @@ At the end of this unit, you'll be sending and receiving telemetry.
 
 1. Give the project a friendly name, such as "CheeseCaveDevice".
 
-1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Select **Browse**, then search for, and install, the following libraries:
+1. Under **Tools/NuGet Package Manager**, select **Manage NuGet Packages for Solution**. Select **Browse**, then search for, and install, the following library:
     * **Microsoft.Azure.Devices.Client**
-    * **Newtonsoft.Json**
 
 1. Delete the default contents of the **Program.cs** file.
 
@@ -405,10 +404,9 @@ Now we have a device pumping out telemetry, we need to listen for that telemetry
 1. Back in the terminal, enter the following commands:
 
     ```
-        npm install azure-iothub
-        npm install @azure/event-hubs
-        npm install @azure/event-hubs@2
-        npm install chalk
+        npm install azure-iothub@1.12.2
+        npm install @azure/event-hubs@2.1.4
+        npm install chalk@2.4.2
     ```
 
 1. After you've entered the code below into the **app.js** file, you can run it from the terminal by entering `node app.js`. Ensure that the `cheesecaveservice` folder is the current folder of the terminal.
