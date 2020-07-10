@@ -32,6 +32,10 @@ The workflow you used in this module is a standard way to get started. Your team
 
 [Build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true) explains how triggers enable you to control which files or Git branches cause a build to occur.
 
+## Appendix
+
+The following sections are optional. They provide additional information beyond what's covered in this module.
+
 ### Source control migration strategies
 
 Now that you're familiar with Git, let's talk briefly about how to migrate to Git from another source control system. Specifically, we'll discuss migrating from Team Foundation Version Control (TFVC) to Git.

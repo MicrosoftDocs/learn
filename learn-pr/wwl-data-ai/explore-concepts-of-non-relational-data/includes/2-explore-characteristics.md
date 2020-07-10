@@ -1,5 +1,5 @@
 
-Relational databases are an excellent tool for storing and retrieving data that has a well-known structure, containing fields that you can define in advance. In some situations, you might not have the required knowledge of the structure of your data, in advance of it arriving in your database, to record it as a neat set of rows and columns in a tabular format. This is a common scanrio in systems that consume data from a wide variety of sources, such as data ingestion pipelines. In these situations, a non-relational database can prove extremely useful.
+Relational databases are an excellent tool for storing and retrieving data that has a well-known structure, containing fields that you can define in advance. In some situations, you might not have the required knowledge of the structure of your data, in advance of it arriving in your database, to record it as a neat set of rows and columns in a tabular format. This is a common scenario in systems that consume data from a wide variety of sources, such as data ingestion pipelines. In these situations, a non-relational database can prove extremely useful.
 
 In this unit, you'll look in more detail at the common characteristics of non-relational databases. You'll learn how they enable you to capture data quickly, and model data that can vary in structure.
 

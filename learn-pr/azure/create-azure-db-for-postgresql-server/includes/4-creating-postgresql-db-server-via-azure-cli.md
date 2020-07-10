@@ -32,7 +32,7 @@ az postgres server create [-h] [--verbose] [--debug]
                             --resource-group RESOURCE_GROUP_NAME --name SERVER_NAME
                             --sku-name SKU_NAME [--location LOCATION]
                             --admin-user ADMINISTRATOR_LOGIN
-                            [--admin-password ADMINISTRATOR_LOGIN_PASSWORD]
+                            --admin-password ADMINISTRATOR_LOGIN_PASSWORD
                             [--backup-retention BACKUP_RETENTION]
                             [--geo-redundant-backup GEO_REDUNDANT_BACKUP]
                             [--ssl-enforcement {Enabled,Disabled}]

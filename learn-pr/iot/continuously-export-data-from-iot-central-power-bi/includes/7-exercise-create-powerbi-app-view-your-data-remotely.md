@@ -1,102 +1,120 @@
 
-In this exercise, we're going to create a Stream Analytics job, and then use Power BI to visualize the output from the query. We first create an instance of an Event Hubs namespace.
+In this exercise, you create a Stream Analytics job and then use Power BI to visualize the output from the query. To begin, you create an instance of an event hub namespace.
 
-## Create an Event Hubs namespace
+## Create an event hub namespace
 
-1. In the Azure portal containing your storage account, and container, create a new resource. Search for "Event Hubs", and select it.
+In this unit, you use the Azure portal, which contains your Blob storage account and container, to create a new resource. 
 
-1. Verify the subscription is **Concierge Subscription**, and select the sandbox **learn-** resource group.
+1. In the Azure portal, search for **Event Hubs** and then, in the results list, select it.
 
-1. For **Name**, enter "continuousnamespace". Pricing tier can be the recommended selection, as sandbox resources are free.  **Throughput Units** can be set to **1**.
+1. Verify that the subscription is **Concierge Subscription**, select the sandbox **learn-** resource group, and do the following:
 
-1. Click **Create**, and wait for the resource to be deployed. This process can take a few minutes.
+   a. In the **Name** box, enter **continuousnamespace**.   
+   b. For **Pricing tier**, use the recommended selection, because sandbox resources are free.  
+   c. Set the **Throughput Units** value at **1**.
 
-1. Now, you need to save off the connection string for the namespace. Click on **Shared access policies** in the left menu, open up the **RootManagedSharedAccessKey**, and copy the **Connection string-primary key** to your text file, noting it is the connection string for the Event Hub namespace.
+1. Select **Create**, and wait for the resource to be deployed. This process can take a few minutes.
 
-### Create an Event Hubs instance
+1. Save the connection string for the namespace. On the left pane, select **Shared access policies**, open **RootManagedSharedAccessKey**, and then copy the **Connection string-primary key** value to your text file. This key is the connection string for the event hub namespace.
 
-1. Locate the **Overview** page for your Event Hub namespace resource. If you do not already have it open, navigate to your Azure home page, search recent resources, or **All resources**, for the namespace.
+### Create an event hub instance
 
-1. Select the namespace, and click **+ Event Hub**. We need to create an instance of this namespace.
+1. Go to the **Overview** page for your event hub namespace resource. If you don't already have it open, find it by going to your Azure portal home page, and then searching recent resources or selecting **All resources**.
 
-1. In the **Create Event Hub** page, enter "continuouseventhub" for the **Name**. Leave the other fields at their defaults, and click **Create**.
+1. Select the namespace, and then select **Event Hub**. You need to create an instance of this namespace.
 
-    [![Screenshot showing the fields required to create an Event Hub instance](../media/continuous-data-create-event-hub-instance.png)](../media/continuous-data-create-event-hub-instance.png#lightbox)
+1. On the **Create Event Hub** pane, in the **Name** box, enter **continuouseventhub**. Keep the default settings for the other fields, and then select **Create**.
 
-1. Wait for the resource to be deployed.
+    [![Screenshot of the "Create Event Hub" pane](../media/continuous-data-create-event-hub-instance.png)](../media/continuous-data-create-event-hub-instance.png#lightbox)
 
-### Set continuous data export to the Event Hub
+   Wait for the resource to be deployed.
 
-1. Locate the home page for your IoT Central **Refrigerated Truck** app.
+### Set continuous data export to your event hub
 
-1. Click **Data export**, in the left menu.
+1. Locate the home page for your IoT Central Refrigerated Truck app.
 
-1. Click **+ New**, and select **Azure Event Hubs**.
+1. On the left pane, select **Data export**.
 
-1. In the **Create data export** page, leave the **Display name** as **Export to Event Hubs 1**.
+1. Select **New**, and then select **Azure Event Hubs**.
 
-1. Enter the connection string for the Event Hubs namespace, that you saved off in the previous section.
+1. On the **Create data export** pane, keep the value in the **Display name** box as **Export to Event Hubs 1**.
 
-     [![Screenshot showing the creation of a data export to an event hub](../media/continuous-data-create-data-export-event-hub.png)](../media/continuous-data-create-data-export-event-hub.png#lightbox)
+1. In the **Event Hubs namespace** box, enter the connection string that you saved in the preceding section.
 
-1. For **Event Hub**, enter **continuouseventhub**.
+     [![Screenshot of the "Create data export" to an event hub pane](../media/continuous-data-create-data-export-event-hub.png)](../media/continuous-data-create-data-export-event-hub.png#lightbox)
 
-1. Leave the other entries at their default values, and click **Save**.
+1. In the **Event Hub** box, enter **continuouseventhub**.
 
-1. Wait for the **Status** of the data export to change to **Running**.
+1. Keep the default values of the other fields, and select **Save**.
+
+1. Wait for the status of the data export to change to *Running*.
 
 ## Create an Azure Stream Analytics job
 
-1. Navigate to the home page for your Azure storage and event hub resources.
+1. Go to the home page for your Azure Blob storage and event hub resources.
 
-1. Select **Create a resource**. Search for, and select **Stream Analytics job**. Click **Create**.
+1. Select **Create a resource**. 
 
-    [![Screenshot showing the new job creation button](../media/continuous-data-new-job-create.png)](../media/continuous-data-new-job-create.png#lightbox)
+1. Search for and select **Stream Analytics job**, and then select **Create**.
 
-1. Enter "continuousjob" for the name. Select the sandbox **Concierge Subscription**, and **learn-** resource group.
+    [![Screenshot showing the "Stream Analytics job" Create button](../media/continuous-data-new-job-create.png)](../media/continuous-data-new-job-create.png#lightbox)
 
-1. Select the location nearest to you.
+1. In the **Name** box, enter **continuousjob**. Select the sandbox **Concierge Subscription** link, and then select the **learn-** resource group.
 
-1. Reduce the number of **Streaming units** from 3 to 1. No need to have more capability than you need.
+1. In the **Location** drop-down list, select the location nearest to you.
 
-1. Click **Create**. Wait for the **Deployment succeeded** message. Open the new resource.
+1. Reduce the number of **Streaming units** from **3** to **1**. There's no need for more capability than is required.
+
+1. Select **Create**. 
+
+1. Wait for the "Deployment succeeded" message, and then open the new resource.
 
     > [!TIP]
-    > If you miss the message to go to the new resource, or need to find a resource at any time, navigate to **Home/All resources**. Enter enough of the resource name for it to appear in the list of resources.
+    > If you miss the message to go to the new resource, or you need to find a resource at any time, select to **Home/All resources**. Enter enough of the resource name for it to appear in the list of resources.
 
-1. You'll now see the empty job, no inputs or outputs, and a skeleton query. The next step is to populate these entries. Click on **Inputs**.
+An empty Stream Analytics job is displayed as a skeleton query, with no inputs or outputs. The next step is to populate these entries. Do the following: 
+   
+1. Select **Inputs**.
 
-1. Click **+ Add stream input**, and select **Event Hub** from the drop-down list.
+1. Select **Add stream input** and then, in the drop-down list, select **Event Hub**.
 
-1. On the right-hand side of the window, enter "continuousInput" for the **Input alias**.
+1. In the **Input alias** box, enter **continuousInput**.
 
-1. Ensure **Select Event Hub from your subscriptions** is selected. 
+1. Ensure that the **Select Event Hub from your subscriptions** option is selected, and do the following: 
 
-1. For **Event Hub namespace**, select **continuousnamespace**. Ensure **Use existing** is selected for **Event Hub name**. Select **continuouseventhub**. Also, ensure the two other check box selections are set to **Use existing**. No need to change the other fields from their defaults.
+   a. For **Event Hub namespace**, select **continuousnamespace**.  
+   b. For **Event Hub name**, ensure that **Use existing** is selected.  
+   c. Select **continuouseventhub**.  
+   d. Ensure that **Use existing** is selected for the two other check boxes.  
+   e. Keep the default values for the other fields.
 
-1. Click **Save**.
+1. Select **Save**.
 
-1. Select your job again, easily done from the breadcrumb trail, top left. You should now see your job has an input. Select **Outputs**.
+1. Select your Stream Analytics job again. You can easily do so from the breadcrumbs at the upper left. 
 
-1. Select **Add**, to add an output, then **Power BI** from the drop-down list.
+   You should now see that your job has an input. 
+   
+1. Select **Outputs**.
 
-1. You will probably be asked to **Authorize** the connection, so do so now.
+1. To add an output, select **Add** and then, in the drop-down list, select **Power BI**.
 
-1. For **Output alias**, enter "continuousBI".
+1. At the prompt, authorize the connection.
 
-1. For **Group workspace**, select **My workspace** if it is available, otherwise, select one of the listed workspaces, and record the workspace name in your text file.
+1. For **Output alias**, enter **continuousBI**.
 
-1. For **Dataset name**, enter "continuousDataset".
+1. In the **Group workspace** drop-down list, select **My workspace**. If this option isn't available, select one of the listed workspaces, and record that workspace name in your text file.
 
-1. For **Table name**, enter "continuousTable".
+1. For **Dataset name**, enter **continuousDataset**.
 
-1. Change **Authentication mode** to **User token**.
+1. For **Table name**, enter **continuousTable**.
 
-1. No need to change any of the other fields, so click **Save**.
+1. Change the **Authentication mode** value to **User token**.
+
+1. Keep the default values for the other fields, and select **Save**.
 
 1. Use the breadcrumbs to select your job.
 
-1. Click **Edit query**, and change the query to:
+1. Select **Edit query**, and change the query to:
 
     ```sql
     SELECT
@@ -107,50 +125,67 @@ In this exercise, we're going to create a Stream Analytics job, and then use Pow
         continuousInput
     ```
 
-1. Click **Save query**, and return to your job.
+1. Select **Save query**, and return to your job.
 
     [![Screenshot showing the completed SQL logging query](../media/continuous-data-job-overview.png)](../media/continuous-data-job-overview.png#lightbox)
 
-1. Click **Start**, and set your job running.
+1. Select **Start**, and run your job.
 
-## Create a dashboard to visualize the query, using Power BI
+## Create a dashboard to visualize the query by using Power BI
 
-1. In your browser, navigate to **outlook.office365.com**. This URL will take you to the mail inbox. You may have to enter your Microsoft Account login information.
+1. In your browser, go to your [Microsoft Outlook mail inbox](https://outlook.office365.com). You might have to enter your Microsoft account sign-in information.
 
-1. Use the nine dots icon, top left, to display a drop-down list. Select **All apps**. Scroll down and select **Power BI**.
+1. On the **Bookmarks bar**, at the far left, select the **Show apps** icon.
 
-    [![Screenshot showing the selection of Power BI from the Office 365 portal](../media/continuous-outlook-power-bi.png)](../media/continuous-outlook-power-bi.png#lightbox)
+1. In the drop-down list, select **All apps**, and then select **Power BI**.
 
-1. Open the workspace that you created the dataset in. This might be **My workspace**, or another one you selected in the previous section, and stored into your text file.
+    [![Screenshot showing the Power BI icon in the Office 365 portal](../media/continuous-outlook-power-bi.png)](../media/continuous-outlook-power-bi.png#lightbox)
 
-1. Under **Datasets** verify that **continuousDataset** is displayed. If not, you might have to wait a short time for this list to populate.
+1. Open the workspace where you created the dataset. The workspace might be **My workspace** or one that you selected earlier and stored in your text file.
 
-1. Select **+ Create**, top right, and select **Dashboard** from the drop-down list.
+1. Under **Datasets**, verify that **continuousDataset** is displayed. If it isn't displayed, you might have to wait a short time for this datasets list to populate.
 
-1. Give the dashboard a friendly name, say "Continuous dash".
+1. At the upper right, in the **Create** drop-down list, select **Dashboard**.
 
-1. In the blank screen that follows, click **Add tile**. Select **Custom Streaming Data**, **Next**, and select the **continuousDataset** from the list of datasets.
+1. Give the dashboard a friendly name (for example, *Continuous dash*).
+
+1. On the next pane, select **Add tile**. 
+
+1. Select **Custom Streaming Data** > **Next** and then, in the list of datasets, select **continuousDataset**.
 
     [![Screenshot showing the selection of the Power BI dataset, for a tile](../media/continuous-power-bi-dataset.png)](../media/continuous-power-bi-dataset.png#lightbox)
 
-1. For the first card, select **Visualization Type** as **Gauge**, **Value** as **Contents Temperature**. Click **Next**, then enter "Contents temperature" for the title, in the **Tile details** box.
+1. For the first card, do the following:
 
-1. Click **Apply**.
+   a. For **Visualization Type**, select **Gauge**.  
+   b. For **Value**, select **ContentsTemperature**.   
+   c. Select **Next**.  
+   d. In the **Tile details** box, for the title, enter **Contents temperature**.
 
-1. Use the bottom-right corner icon on the tile to shrink it to the smallest allowable size.
+1. Select **Apply**.
 
-1. Repeat the process, with the same dataset and tile source, for a second tile. This time with **Line chart** as the **Visualization Type**. Select **EventProcessedUtcTime** as the **Axis**, and for **Values**, select **Contents Temperature** again. No need to add a title, click **Next**, then **Apply**.
+1. On the tile, use the icon at the lower right to reduce it to the smallest allowable size.
 
-    [![Screenshot showing the creation of a line chart tile](../media/continuous-power-bi-utc-tile.png)](../media/continuous-power-bi-utc-tile.png#lightbox)
+1. Repeat the process, with the same dataset and tile source, for a second tile. This time, use the following values:
 
-1. Now, top right of your screen, change **Web view** to **Phone view**.
+    a. For **Visualization Type**, select **Line chart**.  
+    b. For **Axis**, select **EventProcessedUtcTime**.  
+    c. For **Values**, select **ContentsTemperature** again.  
+    d. You don't need to add a title.  
+    e. Select **Next**, and then select **Apply**.
 
-1. There's a latency with so many routes and connections, so you might have to wait a minute. Are you now seeing the continuous data coming through? Is the temperature changing? Is the line chart scrolling left?
+    [![Screenshot of the "Add a custom streaming data tile" pane](../media/continuous-power-bi-utc-tile.png)](../media/continuous-power-bi-utc-tile.png#lightbox)
 
-1. Let the job run for a while, with the console output of the device app in view. Are you able to correlate the contents temperatures from the app, shown in the console window, matches the gauge in Power BI?
+1. At the upper right, change **Web view** to **Phone view**.
+
+   There might be a latency because of the many routes and connections, so you might have to wait a minute. Are you now seeing the continuous data coming through? Is the temperature changing? Is the line chart scrolling left?
+
+1. Let the job run for a while, with the console output of the device app in view. 
+
+    Are you able to correlate the contents temperatures from the app, shown in the console window, with the gauge in Power BI?
 
     [![Image of a Power BI dashboard on a mobile phone](../media/continuous-data-phone-view-2.png)](../media/continuous-data-phone-view-2.png#lightbox)
 
-If you're seeing an active Power BI dashboard, similar to the one above, you've about completed this module. Great work.
+If you're seeing an active Power BI dashboard, similar to the one in the image, you've nearly completed this module. Great work.
 
-Finish the module off with a knowledge check.
+Finish the module with a knowledge check.

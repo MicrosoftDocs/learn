@@ -12,3 +12,4 @@ We have covered several important topics in this module.
 - [Azure subscription limits and constraints](https://docs.microsoft.com/azure/azure-subscription-service-limits)
 - [Azure support plans](https://azure.microsoft.com/support/plans/)
 - [Azure community support](https://azure.microsoft.com/support/community/)
+- [Microsoft Q&A](https://docs.microsoft.com/answers/products/azure?product=all)
