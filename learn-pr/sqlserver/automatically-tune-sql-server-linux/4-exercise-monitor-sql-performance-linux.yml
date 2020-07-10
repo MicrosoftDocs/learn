@@ -5,8 +5,8 @@ metadata:
   title: Choose to use Query Store and automatic tuning
   description: In this unit, you will learn about the Query Store and automatic tuning in SQL Server on Linux.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 5
