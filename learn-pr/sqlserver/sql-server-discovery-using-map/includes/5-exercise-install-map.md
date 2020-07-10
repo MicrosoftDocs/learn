@@ -48,7 +48,7 @@ Start by using the installer to set up the MAP toolkit.
 
 ## Download the sample MAP database
 
-1. Use **Microsoft Edge** to go to [https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak](https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak).
+1. Use **Microsoft Edge** to go to [https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map](https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map).
 1. Select **Download**, and in the pop-up select **Save**.
 
 ## Connect to the sample MAP database
