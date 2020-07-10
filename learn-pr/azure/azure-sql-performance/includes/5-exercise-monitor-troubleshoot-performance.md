@@ -153,12 +153,12 @@ Now run a workload of the T-SQL query to observe its performance simulating conc
 
 1. Run the workload from the command line using the script **sqlworkload.cmd**
 
-    This script will use 10 concurrent users running the workload query 2 times (Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server).
+    This script will use 10 concurrent users running the workload query 2 times. Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server.
 
     > [!TIP]
     > If you are not seeing CPU usage behavior with this workload for your environment you can adjust the **-n parameter** for number of users and **-r parameter** for iterations.
 
-    From a powershell command prompt, change to the directory for this module activity:
+    From a powershell command prompt, change to the directory for this exercise:
 
     ```powershell
     cd <base directory>\04-Performance\monitor_and_scale
@@ -282,7 +282,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     ![SSMS_Workload_Query_Plan](../media/5-ssms-workload-query-plan.png)
 
-    Given the small nature of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself.
+    Given the small number of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself.
 
 1. Observe waits to see if they are affecting performance
 
@@ -316,11 +316,11 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
 1. Use Azure Metric Explorer
 
-    Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring from the Resource pane in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer) If you click on Metrics you will see the following:
+    Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring from the Resource pane in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer). If you click on Metrics you will see the following:
 
     ![Azure_Monitor_Metrics](../media/5-azure-monitor-metrics.png)
 
-    As you can see in the screenshot there are several metrics you can use to view with the Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period showing a 5 minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select CPU percentage and change the capture for 1 hour. The granularity will change to 1-minute and should look like the following:
+    As you can see in the screenshot there are several metrics you can use to view with  Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period showing a 5 minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select CPU percentage and change the capture for 1 hour. The granularity will change to 1-minute and should look like the following:
 
     ![Azure_Monitor_Metrics_CPU_1minrefresh](../media/5-azure-monitor-metrics-cpu.png)
 

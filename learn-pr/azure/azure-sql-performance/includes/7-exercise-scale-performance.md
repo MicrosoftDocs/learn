@@ -34,7 +34,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     There are other methods to change the service tier and one of them is with the T-SQL statement ALTER DATABASE. To ensure we see the proper effect of changing the service tier, learn how to find out your current tier using T-SQL.
   
-    The Pricing or service tier is also known as a *service objective*. Using SSMS, open the script **get_service_object.sql** or the T-SQL statements to find out this information.
+    The Pricing or service tier is also known as a *service objective*. Using SSMS, open the script **get_service_objective.sql** or the T-SQL statements to find out this information.
   
     ```sql
     SELECT database_name,slo_name,cpu_limit,max_db_memory, max_db_max_size_in_mb, primary_max_log_rate,primary_group_max_io, volume_local_iops,volume_pfs_iops
@@ -50,12 +50,12 @@ To scale performance for a problem that appears to be a CPU capacity problem you
   
     Notice the term **slo_name** is also used for service objective. The term **slo** stands for *service level objective*.
   
-    The various slo_name values are not documented but you can see from the string value this database uses a General Purpose SKU with 2 vCores:
+    The various slo_name values are not documented but you can see from the string value this database uses a General Purpose service tier with 2 vCores:
 
     > [!NOTE]
     > SQLDB_OP_... is the string used for Business Critical.
 
-    When you view the ALTER DATABASE documentation, notice the ability to click on your target SQL Server deployment to get the right syntax options. Click on SQL Database single database/elastic pool to see the options for Azure SQL Database. To match the compute scale you found in the portal you need the service object **'GP_Gen5_8'**
+    When you view the ALTER DATABASE documentation, notice the ability to click on your target SQL Server deployment to get the right syntax options. Click on SQL Database single database/elastic pool to see the options for Azure SQL Database. To match the compute scale you found in the portal you need the service objective **'GP_Gen5_8'**.
 
 1. Modify the service objective for the database to scale more CPUs
 
@@ -73,7 +73,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     Another way to monitor the progress of a change for the service object for Azure SQL Database is to use the DMV **sys.dm_operation_status**. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change. 
 
-    Run this query in SSMS to see the output of this DMV at any point in time (**You must be in the context of master**):
+    Run this query in SSMS to see the output of this DMV at any point in time (**You must be in the context of the master database**):
 
     ```sql
     SELECT * FROM sys.dm_operation_status;
@@ -118,9 +118,9 @@ To scale performance for a problem that appears to be a CPU capacity problem you
       </tr>
     </table>
 
-    During a change for the service objective, queries are allowed against the database until the final change is implemented so an application cannot connect for a very brief period of time. For Azure SQL Database Managed Instance, a change to Tier (or SKU) will allow queries and connections but prevents all database operations like creation of new databases (in these cases operations like these will fail with the error message "**The operation could not be completed because a service tier change is in progress for managed instance '[server]' Please wait for the operation in progress to complete and try again**")
+    During a change for the service objective, queries are allowed against the database until the final change is implemented so an application cannot connect for a very brief period of time. For Azure SQL Database Managed Instance, a change of tier will allow queries and connections but prevents all database operations like creation of new databases (in these cases operations like these will fail with the error message "**The operation could not be completed because a service tier change is in progress for managed instance '[server]' Please wait for the operation in progress to complete and try again**")
 
-    When this is done use the queries listed above from **get_service_object.sql** to verify the new service objective or pricing tier of 8 vCores has taken affect.
+    When this is done use the queries listed above from **get_service_objective.sql** to verify the new service objective or service tier of 8 vCores has taken affect.
 
 ## Run the workload after scaling
 
@@ -154,7 +154,7 @@ Now that the database has more CPU capacity, let's run the workload we did in th
     AND es.is_user_process = 1;
     ```
 
-    You will see there are more queries with a status of RUNNING (less RUNNABLE although this will appear some).
+    You will see there are more queries with a status of RUNNING (less RUNNABLE although this will appear some). This means our workers have more CPU capacity to execute.
 
 1. Observe the new workload duration.
 

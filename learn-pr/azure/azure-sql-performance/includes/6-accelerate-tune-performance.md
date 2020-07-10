@@ -13,13 +13,13 @@ Downtime is typically required but can be very fast for Azure SQL Database with 
 
 I/O performance can be critical to a database application. Azure SQL abstracts you from physical file placement but there are methods to ensure you get the I/O performance you need.
 
-Input/Output per Second (IOPS) may be important to your application. Be sure you have chosen the right service tier and vCores for your IOPS needs. Understand how to measure IOPS for your queries on-premises if you are migrating to Azure. If you have restrictions on IOPS you may see long I/O waits. Scale up vCores or move to Business Critical or Hyperscale if you don't have enough IOPs.
+Input/Output per Second (IOPS) may be important to your application. Be sure you have chosen the right service tier and vCores for your IOPS needs. Understand how to measure IOPS for your queries on-premises if you are migrating to Azure. If you have restrictions on IOPS you may see long I/O waits. Scale up vCores or move to Business Critical or Hyperscale if you don't have enough IOPS.
 
 I/O latency is another key component for I/O performance. For faster I/O latency for Azure SQL Database, consider Business Critical or Hyperscale. For faster I/O latency for Managed Instance, move to Business Critical or increase file size or number of files for the database. Improving transaction log latency may require you to use multi-statement transactions.
 
 ## Increase Memory or Workers
 
-Having enough memory or workers may be important to your application and SQL deployment. For Azure SQL Database, scale up vCores for higher memory limits or workers. For Managed Instance, scale up vCores for higher memory limits. Managed Instance also supports increase workers with 'max worker threads'
+Having enough memory or workers may be important to your application and SQL deployment. For Azure SQL Database, scale up vCores for higher memory limits or workers. For Managed Instance, scale up vCores for higher memory limits. Managed Instance also supports increasing workers with 'max worker threads'.
 
 > [!NOTE]
 > Managed Instance in the future may limit workers based on vCores
@@ -34,7 +34,7 @@ Even if you configure your deployment for all your resource needs, applications 
 
 ## Tune like it is SQL Server
 
-Azure SQL is still SQL Server. There is almost never a substitute for ensuring you tune your SQL Server queries and look at:
+Azure SQL is still SQL Server. There is almost never a substitute for ensuring you tune your SQL Server queries and look at the following:
 
 - Proper index design
 - Using batches

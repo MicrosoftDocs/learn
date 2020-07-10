@@ -23,7 +23,7 @@ quiz:
       - content: "Background tasks using the Query Store to fix inefficient query plans"
         isCorrect: false
         explanation: "IQP is built into the query processor and does not run through background tasks"
-      - content: "Built-in capability in the query processor to enabled through database compatibility levels"
+      - content: "Built-in capability in the query processor enabled through database compatibility levels"
         isCorrect: true
         explanation: "IQP is built into the query processor and can improve performance with no code changes"
     - content: "Automatic Plan Correction can help recommend and fix which type of performance scenario"
