@@ -40,7 +40,7 @@ To create an AKS cluster, complete the following steps:
 
 2. Add a new stage after **Smoke Test**.
 
-3. Select the **Deploy an application to a Kubernetes cluster by using its Helm chart** template and apply.
+3. Select the **Deploy an application to a Kubernetes cluster by using its Helm chart** template and apply it.
 
    ![The illustration shows adding smoke test by choosing a template.](../media/integration-test.png)
 

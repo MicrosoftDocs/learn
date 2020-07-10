@@ -77,7 +77,7 @@ This repository contains an Azure DevOps build definition, which is preconfigure
 
 3. Select a Container Registry resource and go to **Access keys** under **Settings**.
 
-4. Copy the name of login server, username and password.
+4. Copy the name of the login server, username, and password.
 
    ![The illustration shows the access keys of Container Registry.](../media/access-keys.png)
 
@@ -97,7 +97,7 @@ This repository contains an Azure DevOps build definition, which is preconfigure
 
 10. When you add four variables above with values, save and run the pipeline.
 
-11. You review the status of pipeline by going back to **Pipelines**. The build should finish successfully as shown below.
+11. You review the status of the pipeline by going back to **Pipelines**. The build should finish successfully as shown below.
 
     ![The illustration shows a successful build.](../media/successful-build.png)
 

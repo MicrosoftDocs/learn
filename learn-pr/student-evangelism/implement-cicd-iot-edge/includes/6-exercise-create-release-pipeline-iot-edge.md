@@ -32,7 +32,7 @@ Deployments to devices need to be done under tight control in production environ
 
 11. `iothub_name` is the name of the IoT hub you created. Navigate to the Azure portal, go to resource group you created, and make a copy of the IoT hub name.
 
-12. For the additional variables, you need to create a service principal by performing the following the steps.
+12. For the additional variables, you need to create a service principal by performing the following steps.
 
     1. Go to the Azure portal.
 

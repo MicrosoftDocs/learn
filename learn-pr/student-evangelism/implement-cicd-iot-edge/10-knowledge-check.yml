@@ -20,7 +20,7 @@ quiz:
       explanation: "CI/CD isn't mainly concerned with unit testing."
     - content: "Regularly and consistently test, build, and ship code"
       isCorrect: true
-      explanation: "CI/CD manages the code build, test and shipping process in a seamless way."
+      explanation: "CI/CD manages the code build, test, and shipping process in a seamless way."
     - content: "Regression testing"
       isCorrect: false
       explanation: "CI/CD isn't mainly concerned with regression testing."

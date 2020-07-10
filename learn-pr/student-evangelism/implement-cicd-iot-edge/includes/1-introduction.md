@@ -13,6 +13,7 @@ By the end of this module, you'll be able to create a smoke test for virtual IoT
 ## Learning objectives
 
 In this module, you will:
+
     - Create a pipeline that deploys a smoke test using virtual IoT Edge devices
     - Monitor the performance of the solution using a CI/CD strategy
 
