@@ -14,41 +14,33 @@ durationInMinutes: 1
 content: |
   [!include[](includes/use-preinstalled-tools-to-do-data-science.md)]
 quiz:
-  title: Connecting to your Data Science Virtual Machine
+  title: Using preinstalled tools on the Data Science Virtual Machine
   questions:
-    - content: "How can one reach the command line of the Data Science Virtual Machine without launching a terminal from the DSVM's graphical desktop?"
+    - content: "tk?"
       choices:
-        - content: "On Ubuntu, one can connect with ssh. On Windows, one cannot access the command line without launching a terminal from within a Remote Desktop session."
-          isCorrect: false
-          explanation: "Both Ubuntu and Windows Server 2019 DSVM images come with ssh access configured."
-        - content: "Both Ubuntu and Windows Server 2019 DSVM images come with ssh access enabled.  On Windows clients, an ssh client might need to be installed."
-          isCorrect: true
-          explanation: "ssh is generally the fastest, least resource-intensive, and most flexible way to access the command line of your DSMV."
-        - content: "By default, remote command line access is not enabled in either the Ubuntu or Windows DSVM."
-          isCorrect: false
-          explanation: "An ssh client can connect to the command line of the DSVM quickly and with low overhead. Both Ubuntu and Windows Server 2019 DSVM images come with ssh access configured."
-    - content: "How can one use a graphical desktop with a Data Science Virtual Machine?"
-      choices:
-        - content: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
-          isCorrect: true
-          explanation: "A graphical desktop experience is available on both Ubuntu and Windows. The Ubuntu DSVM uses XCFE, while the Windows DSVM uses RDP."
-        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with an XCFE client, such as X2Go Client."
-          isCorrect: false
-          explanation: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
-        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with a Remote Desktop Protocol (RDP) client."
-          isCorrect: false
-          explanation: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
-    - content: "On a DSVM that has been idle for days, what steps, if any, need to be taken in the Azure Portal before connecting?"
-      choices:
-        - content: "DSVM must be started. If JITA, requested"
+        - content: "tk"
           isCorrect: true
           explanation: "tk"
-        - content: "DSVM must be started"
+        - content: "tk"
           isCorrect: false
           explanation: "tk"
-        - content: "DSVM will start automatically. JITA must be requested."
+        - content: "tk"
           isCorrect: false
           explanation: "tk"
-        - content: DSVM will start automatically. JITA will connect automatically." 
+        - content: "tk"
+          isCorrect: false
+          explanation: "tk"
+    - content: "tk?"
+      choices:
+        - content: "tk"
+          isCorrect: true
+          explanation: "tk"
+        - content: "tk"
+          isCorrect: false
+          explanation: "tk"
+        - content: "tk"
+          isCorrect: false
+          explanation: "tk"
+        - content: "tk"
           isCorrect: false
           explanation: "tk"
