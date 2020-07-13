@@ -1,4 +1,4 @@
-Microsoft Azure Resource Manager templates (ARM templates) allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and saved in the same source control as your development project.
+Microsoft Azure Resource Manager (ARM) templates allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and saved in the same source control as your development project.
 
 Suppose you are managing a software team that is developing an inventory system for your partner companies. This product is going to be deployed to Azure and each partner company will have their own solution. Each environment that the software will be deployed to will have different policies implemented through different Azure Storage Account SKU. You decide to use the practice of *Infrastructure as Code* using ARM templates to ensure that your infrastructure deployments for each environment will be consistent, flexible, and that the versions can be tracked.
 
