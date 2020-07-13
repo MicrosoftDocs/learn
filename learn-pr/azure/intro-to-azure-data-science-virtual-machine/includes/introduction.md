@@ -13,7 +13,7 @@ You may, of course, buy or build your own machine and configure it just as you c
 
 With a Data Science Virtual Machine, you only pay for when the machine is running. If you're worried about forgetting to shut down the machine, you can schedule a daily shutdown at the time of your choosing. You can connect to the machine's command line interface or use it's graphical desktop.
 
-tk image of the desktop(s) tk
+![Screenshot of the desktop of the DSVM running Jupyter](../media/jupyter-running-pytorch-in-dsvm.png)
 
 The DSVM has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the DSVM on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but popular packages, development environments, and Jupyter kernels.
 
@@ -28,7 +28,6 @@ In this module, you will:
 * Connect to the graphical Desktop of the DSVM via X2Go Client 
 * Create a Jupyter Notebook powered by the DSVM and use Pytorch to do some rudimentary data manipulation
 * As a different user, access the Jupyter Notebook and data
-
 
 ## Prerequisites
 
