@@ -6,13 +6,11 @@ The auditing feature tracks database and server events and writes events to an a
 
 In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.  
 
-In order to get the IP address required, you must disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser).  
-
 This scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
 
-**Don't forget to note your password, unique ID, and region. You will need these throughout the module.**  
+1. In order to get the IP address required, you must disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser). Note the resulting IP address.
 
-1. Fill in your password and public IP address when prompted by running the following in the Azure Cloud shell, which is in the right-hand side of this page.
+1. Run the following in the Azure Cloud shell, which is in the right-hand side of this page. Fill in a complex password and public IP address when prompted.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -27,7 +25,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     $location = $resourceGroup.Location
     ```
 
-1. Output and store (in a text file or something similar) the information you'll need throughout the module by running the following in the Azure Cloud shell.
+1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -39,6 +37,8 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     Write-Host "Your server name is:"
     Write-Host $serverName
     ```
+
+    **Don't forget to note your password, unique ID, and region. You will need these throughout the module.**
 
 1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units.
 
@@ -81,28 +81,26 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
         -Type "Standard_LRS"
     ```
 
-1. Open SSMS and create a new connection to your logical server.  
+1. Open SSMS and create a new connection to your logical server. For server name, input the name of your Azure SQL Database logical server. If you did not save it above, you may need to refer to the Azure portal to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
 
-    For server name, input the name of your Azure SQL Database logical server. If you did not save it above, you may need to refer to the Azure portal to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
-    
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-    
+
     Once you're in the Azure Portal you can search in the top bar for `AdventureWorks` to find your database and its associated logical server.
-    
+
     Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
-    
+
     Check the **Remember password** box and select **Connect**.  
-    
-    > **Note**: Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
-    
+
+    [!div class="mx-imgBorder"]
     ![Connect to SQL Database in SSMS](../media/3-connect-azure-sql.png)  
-    
+
+    > [!NOTE]
+    > Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
+
 ### Configure auditing
 
-1. Enable auditing on the Azure SQL Database logical server  
-
-    Open the Azure portal and navigate to your Azure SQL Database.
+1. Open the Azure portal and navigate to your Azure SQL Database to enable Auditing on the logical server.
 
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -112,18 +110,14 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     [!div class="mx-imgBorder"]
     ![Database-level auditing blade](../media/3-db-audit.png)  
 
-    Next, set **Auditing** to **ON**.  
+    Set **Auditing** to **ON**.  
 
-2. Configure auditing with Log Analytics  
-
-    Notice you have different options for your log destination, depending how you want to audit your data. In this lab, you'll configure Storage and Log Analytics. In a later activity in this module, you'll get to look at the logs in both. You can also explore the implementations by reviewing [the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-auditing).  
-
-    Select **Log Analytics (Preview)** and the **Configure** button.  
+1. Select **Log Analytics (Preview)** and the **Configure** button.  
 
     [!div class="mx-imgBorder"]
     ![Server-level auditing blade](../media/3-server-audit.png)  
 
-    Next, select **+ Create New Workspace**.  
+1. Select **+ Create New Workspace**.  
 
     [!div class="mx-imgBorder"]
     ![Create a new workspace](../media/3-new-workspace.png)  
@@ -133,11 +127,9 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     [!div class="mx-imgBorder"]
     ![Details for new workspace](../media/3-workspace-details.png)  
 
-    This process may take a few moments to validate and create. You should now see your Log Analytics account.  
+    This process may take a few moments to validate and create. You should now see your Log Analytics account.
 
-3. Configure auditing with Azure Storage  
-
-    Next, select **Storage**. This option allows you to collect XEvent log files in an Azure Blob storage account. In a later activity, you'll see more on how this differs from Log Analytics. Select **Configure**.  
+1. Next, select **Storage**. This option allows you to collect XEvent log files in an Azure Blob storage account. In a later activity, you'll see more on how this differs from Log Analytics. Select **Configure**.  
 
     [!div class="mx-imgBorder"]
     ![Configure storage](../media/3-configure-storage.png)  
@@ -150,19 +142,19 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
     Finally, you can make a decision of which storage access key to use. Note you can use this pane to switch between keys when it's time to rotate them. Select **Primary**.  
 
-    After you've configured your options, select **OK**.  
+1. After you've configured your options, select **OK**.  
 
     [!div class="mx-imgBorder"]
     ![Confirm options and select OK](../media/3-storage-settings.png)  
 
-    Select **Save**.  
+1. Select **Save**.  
 
     [!div class="mx-imgBorder"]
     ![Save Log Analytics details](../media/3-save-workspace.png)  
 
     Once it saves, you can select the **X** button to close the server level Auditing pane.  
 
-    Navigate back to your Azure SQL Database (not logical server) and under Security, select **Auditing**. In the Azure SQL Database Auditing overview, you may notice that the **Auditing** option says **OFF**. It's important to note that if auditing is enabled on the server, it will always apply to the database.  
+1. Navigate back to your Azure SQL Database (not logical server) and under Security, select **Auditing**. In the Azure SQL Database Auditing overview, you may notice that the **Auditing** option says **OFF**. It's important to note that if auditing is enabled on the server, it will always apply to the database.  
 
     [!div class="mx-imgBorder"]
     ![Auditing is OFF](../media/3-db-audit-off.png)  
