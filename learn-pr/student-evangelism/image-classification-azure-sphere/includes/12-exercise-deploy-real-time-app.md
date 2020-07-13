@@ -14,7 +14,7 @@ In this exercise, you'll test an input image of a deer.
 
 ![The illustration shows the input image.](../media/deer.jpg)
 
-The pixel values of the image are converted by the Python script defined in the [scripts folder](add link!) in the repository you cloned.
+The pixel values of the image are converted by the Python script defined in the [scripts folder](https://github.com/MicrosoftDocs/mslearn-oxford-image-classification-azure-sphere) in the repository you cloned.
 
 ![The illustration shows the Python script of converting the image to pixel values.](../media/input-data.png)
 
