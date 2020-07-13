@@ -45,7 +45,7 @@ DevOps Projects creates a CI/CD pipeline in Azure DevOps. You firstly will need 
 
 This repository contains an Azure DevOps build definition which is preconfigured to build the included EdgeSolution in [azure-pipelines.yml](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/.azure-pipelines.yml). This build definition relies on an external plugin [Replace Tokens](https://marketplace.visualstudio.com/items?itemName=qetza.replacetokens).
 
-1. Begin by installing the **Replace Tokens** task from the Visual Studio Marketplace by visiting this [link](https://marketplace.visualstudio.com/items?itemName=qetza.replacetoken&wt.mc_id=iotedgedevops-github-pdecarlo) and clicking the "Get it free" button, then install into the organization which contains your newly created Azure DevOps project.
+1. Begin by installing the **Replace Tokens** task from the Visual Studio Marketplace by visiting this [link](https://marketplace.visualstudio.com/) and clicking the "Get it free" button, then install into the organization which contains your newly created Azure DevOps project.
 
 2. Once this task is successfully installed, return to the Azure DevOps project and select **Repos** > Files then edit the `.azure-pipelines.yml` file.
 
