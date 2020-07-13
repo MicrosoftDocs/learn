@@ -1,8 +1,6 @@
-[//]: # (Here you want to lead the unit with your example of deploying the custom website. This is a continuation.)
+We have successfully deployed the website to the cluster, but as we spoke to the management, they were not able to access it. The problem is that we haven't exposed our application to the Internet yet! As we can recall in the previous units, all the external traffic is blocked by default in Kubernetes, so we have to add an **Ingress Rule** to allow that traffic to come in and serve our site!
 
-[//]: # (You're touching on a number of new concepts in the exercise. For example, "annotations" and the whole "rules" structure for deploying ingress. Remember that you've only discussed the structure of a deployment manifest file, Service and Ingress are completely new.)
-
-Next, let's expose Contoso's website to the world.
+Let's expose Contoso's website to the world.
 
 ## Create the service manifest
 
