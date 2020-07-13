@@ -122,7 +122,7 @@ With the new virtual network in place, you can go ahead and create your new clus
     --location $REGION_NAME \
     --kubernetes-version $VERSION \
     --network-plugin azure \
-    --vnet-subnet-id $SUBNET_NAME \
+    --vnet-subnet-id $SUBNET_ID \
     --service-cidr 10.2.0.0/24 \
     --dns-service-ip 10.2.0.10 \
     --docker-bridge-address 172.17.0.1/16 \

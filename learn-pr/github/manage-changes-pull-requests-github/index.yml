@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.manage-changes-pull-requests-github
 metadata:
-  title: "Manage repository changes by using pull requests on GitHub - Learn"
+  title: "Manage repository changes by using pull requests on GitHub"
   description: Learn how to manage changes to your repository source by using pull requests.
   ms.date: 06/26/2020
   author: tpetchel
