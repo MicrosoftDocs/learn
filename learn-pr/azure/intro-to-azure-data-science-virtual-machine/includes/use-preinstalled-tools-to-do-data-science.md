@@ -20,7 +20,7 @@ To activate the desired conda environment:
 
 1. Click the terminal emulator icon on the toolbar of the DSVM's desktop
 
-    ![tk](tk)
+    ![Ubuntu desktop with terminal highlighted](../media/desktop-ubuntu.png)
 
 1. To initialize conda and activate it, run:
 
