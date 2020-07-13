@@ -1,12 +1,6 @@
-Now we have our cluster set up, let's make it work by deploying our application. The first application we decided to move was the company's website, because it's a simple static website with just the basic tech stack of HTML, CSS, and JavaScript. And also, it doesn't receive as many requests as the other services, this way we have a safe way to test everything.
+Now we have our cluster set up, let's make it work by deploying our application. The first application we decided to move was the company's website.
 
-If we aren't using Kubernetes, we'd have to spin um an Azure Virtual Machine. In this VM, we'd install a webserver like NGINX and then we'd upload the website files to the public folder so they are served.
-
-In a single VM, we can only upload a small number of files, and most of the times, we'd have to spin up other VMs to make the website scalable and available.
-
-The other option is to run the website in a container-based ecosystem like Azure Container Instances, but we'd have to spin up several containers to make it work. That's how Kubernetes and AKS come to help. We can harness the power of several VMs and control them all in one single place. Here, we'll run through all the engineering aspects of a containerized application and discuss how you can create one, and what makes them different from other applications.
-
-> If you want to know more about this application, it's hosted [in this repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app).
+Kubernetes differs itself from other tool mostly because of its ease to create workloads and manage the cluster. After talking about `kubectl` and how we can create an AKS cluster, now is time to talk about how you can create workloads in your AKS cluster.
 
 ## Images
 
