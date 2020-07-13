@@ -1,14 +1,13 @@
 ### YamlMime:Module
 uid: learn.azure.create-resource-manager-template-vs-code
 metadata:
-  title: "Deploy consistent infrastructure in Azure by using Azure Resource Manager templates"
   description: Write Azure Resource Manager templates using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
   ms.date: 07/08/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy consistent infrastructure in Azure by using Azure Resource Manager templates"
+title: "Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates"
 summary: Write Azure Resource Manager templates using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
 abstract: |
   In this module, you will:
