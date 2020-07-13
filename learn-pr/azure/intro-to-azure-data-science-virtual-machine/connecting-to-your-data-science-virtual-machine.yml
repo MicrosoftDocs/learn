@@ -38,17 +38,4 @@ quiz:
         - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with a Remote Desktop Protocol (RDP) client."
           isCorrect: false
           explanation: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
-    - content: "On a DSVM that has been idle for days, what steps, if any, need to be taken in the Azure Portal before connecting?"
-      choices:
-        - content: "DSVM must be started. If JITA, requested"
-          isCorrect: true
-          explanation: "tk"
-        - content: "DSVM must be started"
-          isCorrect: false
-          explanation: "tk"
-        - content: "DSVM will start automatically. JITA must be requested."
-          isCorrect: false
-          explanation: "tk"
-        - content: DSVM will start automatically. JITA will connect automatically." 
-          isCorrect: false
-          explanation: "tk"
+
