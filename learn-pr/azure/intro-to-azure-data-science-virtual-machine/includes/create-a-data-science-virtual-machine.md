@@ -145,7 +145,7 @@ You may resize your DSVM as your requirements change. For instance, you might ch
 
     As you can see, there are many selectable options. We want to create a DSVM running on Ubuntu.
 
-1. Use the **Search the Marketplace** search bar to find "Data Science". You will see a list of options. Select the option that reads **Data Science Virtuall Machine - Ubuntu 18.04** as shown below
+1. Use the **Search the Marketplace** search bar to find "Data Science". You will see a list of options. Select the option that reads **Data Science Virtual Machine - Ubuntu 18.04** as shown below
 
     ![A screenshot showing Search the Marketplace with DSVM Ubuntu Server 18.04 LTS highlighted.](../media/search-dsvm.png)
 
