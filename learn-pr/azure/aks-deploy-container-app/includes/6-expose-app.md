@@ -61,3 +61,19 @@ rules:
 ```
 
 This example is saying to the Ingress that we should allow all traffic coming from `example.com` in the path `/site` – which means we're allowing `http://example.com/site` – to enter the cluster, and all this traffic will be sent to the `contoso-website` service and will hit port `80` in that service. An Ingress is basically a name resolver to a service, which resolves the incoming traffic to a port in the pod.
+
+It's also common to see Ingresses work with what is called **Annotations**. Annotations are like labels, but to attach non-identifying metadata such as ingress configurations to workloads. The main difference between a label and an annotation is that labels are public and are used like filters, while annotations are internal and define specific configurations for resources which are destined to libraries and other clients.
+
+The best example of how an annotation can be used within an ingress is to tell Azure that we want to use the HTTP Application Routing Addon we deployed earlier on this module. The HTTP Application Routing is an **Ingress Controller**, which means it'll read all the ingresses with the annotation `kubernetes.io/ingress.class` with the value of `addon-http-application-routing` and create an external access for that ingress:
+
+```yml
+#ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: contoso-website
+  annotations:
+    kubernetes.io/ingress.class: addon-http-application-routing # Using HTTP Application Routing Addon
+```
+
+Different ingress controllers can support different types of annotations that can perform other tasks such as name rewriting, payload limiting, and IP based permissions.
