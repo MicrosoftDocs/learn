@@ -10,7 +10,7 @@ metadata:
   ms.service: machine-learning
   ROBOTS: NOINDEX
 title: Connecting to your Data Science Virtual Machine
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/connecting-to-your-data-science-virtual-machine.md)]
 quiz:

@@ -10,6 +10,6 @@ metadata:
   ms.service: machine-learning
   ROBOTS: NOINDEX
 title: Introduction to the Data Science Virtual Machine
-durationInMinutes: 1 #TODO: Revisit (Word_Count / 200?)
+durationInMinutes: 2
 content: |
   [!include[](includes/introduction.md)]
