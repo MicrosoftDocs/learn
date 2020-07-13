@@ -1,16 +1,14 @@
-[//]: # (This first paragraph will pull your reader into the unit. Try and relate the intro to the scenario from the introduction unit.)
+Now that we have our application up and running on the cluster. We'll notice it's not accessible by anyone but those inside the cluster itself. Differently from a VM, where we can control all the open ports and network availability, in Kubernetes these controls are in the power of the control plane and we can give it instructions to open some ports for us.
 
-[//]: # (Think about what the student wants to know or do. This unit is kind of interesting. Typically, allow of what you're going to talk about isn't needed on a VM. Strictly speaking, that isn't completely true since you'll configure VNets, firewalls, and load balancers. Rewrite the following to explain why there are objects responsible for redirecting the traffic inside the cluster to the correct apps. Why isn't the app exposed, to begin with?)
+By default, all inbound traffic from the Internet to the AKS cluster is blocked to assure network security. To expose the applications to the outer world, we need to open specific ports and forward them to our services. Since the control plane has the power over that information. Kubernetes has two abstractions around network availability that allows us to expose any app without needing to worry about the underlying infrastructure.
 
-To expose our application to the world, we must have a basic knowledge of two workloads we'll be creating: services and ingresses. Both are responsible for redirecting the traffic inside the cluster to the correct apps.
+These abstractions are the **Services** and **Ingresses**. They're both responsible for allowing and redirecting the traffic from external sources to our cluster.
 
 ## Networks in Kubernetes
 
-[//]: # (Do I need to know about all the info in this paragraph to understand networks? I would simplify the next in this way:)
+Containers are temporary. A container's configuration and data the data in it isn't persistent between executions. Once you delete a container, all information is gone unless it's configured to use a volume.
 
-Containers are temporary. A container's configuration and data the data inside of it isn't persistent between executions. Once you delete a container, all information is gone unless it's configured to use a volume. 
-
-The same applies to the container's network configuration. 
+The same applies to the container's network configuration.
 
 Deployments aren't considered a physical workload since they're only logical groups of pods, so we don't have to worry about their networking rules or IP addresses. Their pods, however, have an internal IP assigned to each of them when created. Like all the data, this IP is lost when the pod is destroyed. Internet is based on persistent IP addresses, so how can we expose an ever-changing pod IP to the network? The answer is **services**.
 
@@ -20,7 +18,13 @@ Services are workloads that abstract the IP address for networked workloads, lik
 
 :::image type="content" source="../media/6-1-service-diagram.png" alt-text="Services diagram":::
 
-Services can be of several types. Each type changes the behavior of the applications selected by the service:
+A basic service needs to know about three pieces of information:
+
+- **Which are the resources it needs to route the traffic to:** Defined by the `selector` key, which selects the resources with the given labels and values to be grouped into a single IP address
+- **Which port in the service will receive the traffic:** It's the inbound port for your application, all the requests should come to this port in the service to it can forward the request to the resource
+- **To which port in the resource the traffic will be directed:** Essentially, the service is a port-forwarding abstraction. It receives incoming requests in a port and forwards those requests to another internal port in the resource. This port is the one we opened in the `ports` key of the deployment in the previous unit. This is called the **Target Port**.
+
+All that information will be going into the manifest file. Describing how you'd like your routing to work within your cluster. Generally, services act as an internal router to specific applications, so you don't need to expose your pod's port straight to the Internet. Services can be of several types. Each type changes the behavior of the applications selected by the service:
 
 - **ClusterIP**: Exposes the applications internally only, acting as a port-forwarder. Choosing this type makes the service available within the cluster. Default value when omitted
 - **NodePort**: Exposes the service externally, assigning each node a static port that responds to that service. When accessed through `nodeIp:port`, the node will automatically redirect the request to an internal service of the `clusterIP` type. This service will then forward the request on to the applications.
@@ -28,8 +32,6 @@ Services can be of several types. Each type changes the behavior of the applicat
 - **ExternalName**: Maps the service using a DNS resolution through a CNAME record. With this type, no proxying is set up.
 
 We'll use the `clusterIP` type because we'll be exposing the application externally through an __Ingress__.
-
-[//]: # (How about discussing the structure of a Service manifest file, Service and Ingress are completely new.)
 
 ### Ingresses
 
@@ -45,4 +47,17 @@ Ingress controllers are reverse proxies that listen when you create an Ingress w
 
 In AKS, the Ingress Controller is linked to a _DNS Zone_ resource in your Azure subscription – which was automatically created when we created our cluster. This link makes possible for the cluster to automatically create a zone record pointing the DNS name to the IP address and port of the exposed application.
 
-[//]: # (How about discussing the structure of a Ingress manifest file, Service and Ingress are completely new.)
+When we define and Ingress, we need to provide some information to the manifest so it knows where the traffic is coming from and where to direct it. These are the **Ingress Rules**. These rules are defined in the `rules` key of the manifest. Each rule is a set of a few other options:
+
+```yml
+rules:
+  - host: example.com # A FQDN that describes the host where that rule should be applied
+    http:
+      paths: # A list of paths and handlers for that host
+        - path: /site # Which path is this rule referring to
+          backend: # How the ingress will handle the requests
+            serviceName: contoso-website # Which service the request will be forwarded to
+            servicePort: 80 # Which port in that service
+```
+
+This example is saying to the Ingress that we should allow all traffic coming from `example.com` in the path `/site` – which means we're allowing `http://example.com/site` – to enter the cluster, and all this traffic will be sent to the `contoso-website` service and will hit port `80` in that service. An Ingress is basically a name resolver to a service, which resolves the incoming traffic to a port in the pod.
