@@ -12,7 +12,7 @@ Steps you follow are:
 2. Start deploying the application to Azure Sphere
 3. Display output in your terminal emulator
 
-Now you're building and running the neural network with purely pre-defined input data on Azure Sphere. The source code will be proceeded by taking an input image and will show the output on the terminal emulator.
+Now you're building and running the neural network with purely pre-defined input data on Azure Sphere. The source code will be processed by taking an input image and will show the resulting output on the terminal emulator.
 
 By the end of the module, you'll learn how to run an image classification model on an ARM microcontroller like Azure Sphere. You'll also learn about the basics of the CMSIS-NN framework.
 
