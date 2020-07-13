@@ -7,7 +7,7 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy to multiple Azure environments by using Azure Resource Manager "Deploy to multiple Azure environments by using Azure Resource Manager (ARM) template features" template features"
+title: "Deploy to multiple Azure environments by using Azure Resource Manager (ARM) template features"
 summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates using functions, variables, tags and parameter files.
 abstract: |
   In this module, you will:
