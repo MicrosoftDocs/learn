@@ -1,5 +1,3 @@
-# MRTK and Interaction Models
-
 The Mixed Reality Toolkit enables you to consume inputs from a variety of input sources such as 6DoF (degrees of freedom) controllers, articulated hands or speech. Choosing the interaction model best suited for your mixed reality experience requires you to identify your user, their goals and consider any situational or environmental factors which may impact their experience. Here you will learn about the three primary interaction models for mixed reality experiences and how each can be implemented with MRTK.
 
 ## Interaction models

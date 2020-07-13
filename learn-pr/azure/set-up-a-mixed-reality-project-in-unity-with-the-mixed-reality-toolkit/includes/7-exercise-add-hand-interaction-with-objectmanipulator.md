@@ -18,7 +18,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
     :::image type="content" source="../media/cube_transform_scale.png" alt-text="Screenshot of the Inspector window with the Scale parameters highlighted. The value of x, y and z are 0.25.":::
 
-1. Change the Cube **Transform Position** to **0**, **0**, **.8**. This will move the cube object further back on the z-axis. When you later import the Mixed Reality Toolkit into your project, this change will provide a better view of the cube in the **Game** window.
+1. Change the Cube **Transform Position** to **0**, **0**, **.8**. This will move the cube object further back on the z-axis.
 
     :::image type="content" source="../media/cube_transform_position.png" alt-text="Screenshot of the Inspector window with the Position parameters highlighted. The value of x andy are 0. The value of z is 0.8.":::
 
