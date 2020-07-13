@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-data-science-virtual-machine.create-a-data-science-virtual-machine
 metadata:
   title: Create a Data Science Virtual Machine
-  description: tk
+  description: Create and connect to a DSVM using Azure Learn
   ms.date: 2020-07-01
   author: lobrien
   ms.author: laobri
@@ -11,6 +11,6 @@ metadata:
   ROBOTS: NOINDEX
 azureSandbox: true
 title: Create a Data Science Virtual Machine
-durationInMinutes: 1
+durationInMinutes: 15
 content: |
   [!include[](includes/create-a-data-science-virtual-machine.md)]
