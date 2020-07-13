@@ -1,4 +1,4 @@
-Here, you add tags to help organize and track your Microsoft Azure resources, and use an Azure Resource Manager template (ARM template) parameter file to allow for different parameter configurations per deployment.
+Here, you add tags to help organize and track your Microsoft Azure resources, and use an Azure Resource Manager (ARM) template parameter file to allow for different parameter configurations per deployment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
