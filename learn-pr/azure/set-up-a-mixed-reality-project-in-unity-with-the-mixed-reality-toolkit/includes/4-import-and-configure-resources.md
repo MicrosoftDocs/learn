@@ -40,7 +40,7 @@ The **Main Camera** object is moved as a child to the **MixedRealityPlayspace** 
 
 One of the main ways that MRTK is configured is through the many profiles available in the Foundation package. Profiles configure the behavior of MRTK core components. The **MixedRealityToolkit** object contains the active profile and can be viewed in the Inspector window. When MRTK is added to the scene, the **DefaultMixedRealityToolkitConfigurationProfile** is preselected.
 
-:::image type="content" source="../media/configure-profile-organization.png" alt-text="Configuration Profile":::
+:::image type="content" source="../media/configure-profile-organization.png" alt-text="Screenshot of the Mixed Reality Toolkit parameters for the Configuration Profile. The default mixed reality toolkit configuration profile is selected.":::
 
 MRTK provides additional default profiles which cover most platforms and scenarios that MRTK supports. Note that because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it is not optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
 
@@ -52,4 +52,4 @@ There is essentially an entire tree of connected profiles that make up the confi
 
 The default MRTK profiles cannot be modified. Instead, you must clone the profile if you would like to make a change. Cloning a MRTK profile creates a new profile with the same settings and assigns the profile as the Configuration Profile for the scene. Given the format of how Configuration Profiles are organized, you must also clone the sub-profiles if you would like to modify sub-profile settings.
 
-:::image type="content" source="../media/clone-profile.png" alt-text="Clone Configuration Profile":::
+:::image type="content" source="../media/clone-profile.png" alt-text="Screenshot of  the Mixed Reality Toolkit parameters for the Configuration Profile. The default mixed reality toolkit configuration profile is selected. The clone button is highlighted.":::
