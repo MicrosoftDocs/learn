@@ -1,4 +1,4 @@
-Now that you've created a Data Science Virtual Machine, you need to connect to it. The DSVM is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH , you can connect to the command-line of the DSVM. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
+Now that you've created a Data Science Virtual Machine, you need to connect to it. The DSVM is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH , you can connect to the command line of the DSVM. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
 
 ## If necessary, start the DSVM
 
