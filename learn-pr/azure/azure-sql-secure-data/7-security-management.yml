@@ -12,3 +12,20 @@ title: Security management
 durationInMinutes: 10
 content: |
   [!include[](includes/7-security-management.md)]
+quiz:
+    title: Auditing
+    questions:
+    - content: "Which of the following T-SQL for auditing is not supported in Azure SQL Managed Instance?"
+      choices:
+      - content: "With `CREATE AUDIT` there is syntax `TO URL`"
+        isCorrect: false
+        explanation: "This is only available in Azure SQL Managed Instance."
+      - content: "With `CREATE AUDIT` there is syntax `TO EXTERNAL MONITOR`"
+        isCorrect: true
+        explanation: "This is only available in Azure SQL Managed Instance"
+      - content: "With `CREATE AUDIT` there is syntax `TO FILE`"
+        isCorrect: false
+        explanation: "You cannot write to local files since your instance is hosted in Azure"
+      - content: "All of the above"
+        isCorrect: false
+        explanation: "Two of the above options are available in Azure SQL Managed Instance."
