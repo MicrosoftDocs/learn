@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-nodejs-project-dependencies.5-exercise-dependency
-title: Exercise - Install Dependencies
+title: Exercise - Install Packages
 metadata:
-  title: Exercise - Install Dependencies
-  description: Exercise in how to add and remove dependencies to your Node.js project.
+  title: Exercise - Install Packages
+  description: Exercise in how to add and remove packages in your Node.js project.
   author: softchris
   ms.author: chnoring
   ms.date: 06/25/2020
