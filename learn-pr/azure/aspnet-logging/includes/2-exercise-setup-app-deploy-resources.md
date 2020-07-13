@@ -1,11 +1,11 @@
-The example web application used by this module is based on part of an e-commerce system. The sample web application enables a warehouse employee to update the details of products sold by the system, and maintain the current stock levels.
+The example web application used in this module is based on part of an e-commerce system. The sample web application enables a warehouse employee to update the details of products sold by the system and to maintain the current stock levels.
 
 Here, you'll download and test the application locally, and then create the resources needed to deploy the application to Azure and configure it. You'll do the deployment and configuration in a later unit in this module.
  
 ## Download and test the sample web application locally
 
-1. Using Windows Explorer, create a folder named **MigrationWorkshop** in a convenient place on your computer.
-1. Open a command prompt window, and move to the **MigrationWorkshop** folder.
+1. In File Explorer in Windows, create a folder named MigrationWorkshop in a convenient place on your computer.
+1. Open a Command Prompt window and change the directory to the MigrationWorkshop folder.
 1. Run the following command to download the sample application from the Microsoft repository on GitHub:
 
     ```bash
@@ -13,34 +13,34 @@ Here, you'll download and test the application locally, and then create the reso
     ```
 
 1. Start Visual Studio 2019.
-1. Click **Open a project or solution**.
+1. Select **Open a project or solution**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Visual Studio 2019 start screen. The user has selected **Open a project or solution**](..\media\2-open-project-or-solution.png)
+    > ![Screenshot of the Visual Studio 2019 start screen with the "Open a project or solution" option selected.](..\media\2-open-project-or-solution.png)
 
-1. Browse to the **MigrationWorkshop** folder, move to the **eShopModernizing** folder, move to the **eShopLegacyWebFormsSolution** folder, select the **eShopLegacyWebFormsSolution**, and then click **Open**.
+1. Go to the MigrationWorkshop folder, and then select **eShopModernizing** > **eShopLegacyWebFormsSolution** > **eShopLegacyWebFormsSolution** > **Open**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the Open Project/Solution dialog box in Visual Studio 2019. The user has selected the **eShopLegacyWebForms** solution](..\media\2-open-solution.png)
+    > ![Screenshot of the Open Project/Solution dialog box in Visual Studio 2019 with the eShopLegacyWebForms solution selected.](..\media\2-open-solution.png)
 
-    You might be prompted to install additional components in the Solution Explorer window:
+    In the Solution Explorer window, you might be prompted to install additional components:
     
     > [!div class="mx-imgBorder"]
-    > ![Image of the Solution Explorer window in Visual Studio. The user is being prompted to install additional components to support Visual Studio.**](..\media\2-install-components.png)
+    > ![Screenshot of the Solution Explorer window in Visual Studio. A prompt to install additional components to support Visual Studio is shown.](..\media\2-install-components.png)
     
-    If this occurs, click **Install** to install the required items, and follow the instructions.
+    If this occurs, select **Install** to install the required items, and follow the instructions.
 
-1. This project currently uses v2.0.1 of the **Microsoft.CodeDom.Providers.DotNetCompilerPlatform** assembly, which has an issue that requires restarting Visual Studio to refresh a cached value. Perform the following steps:
+1. This project currently uses v2.0.1 of the Microsoft.CodeDom.Providers.DotNetCompilerPlatform assembly. The version has an issue that requires restarting Visual Studio to refresh a cached value. Complete the following steps:
 
-    1. Close Visual Studio, and start it again. 
-    2. Open the **eShopLegacyWebFormsSolution** solution, and on the **Build** menu, select **Rebuild Solution**.
+    1. Close Visual Studio and then restart it. 
+    2. Open the eShopLegacyWebFormsSolution solution. On the **Build** menu, select **Rebuild Solution**.
 
-1. In the **Solution Explorer** window, expand the **eShopLegacyWebForms** project, and select the **Web.config** file.
+1. In the Solution Explorer window, expand the eShopLegacyWebForms project, and then select the Web.config file.
 
     > [!div class="mx-imgBorder"]
     > ![Image of Solution Explorer window. The user has selected the **Web.config** file](..\media\2-open-web-config.png).
 
-1. In the **Web.config** file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting will cause the application to use data stored in a local SQL Server database:
+1. In the Web.config file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting causes the application to use data stored in a local SQL Server database:
 
     ```xml
     ...
