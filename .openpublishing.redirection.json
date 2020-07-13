@@ -2985,28 +2985,28 @@ working",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization/0-introduction.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization/0-introduction",
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/0-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/0-introduction",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization/1-virtualization.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization/1-virtualization",
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/1-virtualization.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/1-virtualization",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization/2-virtual-machine-type.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization/2-virtual-machine-type",
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/2-virtual-machine-type.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/2-virtual-machine-type",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization/3-summary.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization/3-summary",
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/3-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/3-summary",
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization/index",
+      "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualization-developer/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualization-developer/index",
       "redirect_document_id": true
     },
     {
