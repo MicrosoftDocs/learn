@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-sentinel.3-data-connectors
-title: Getting Started with Sentinel
+uid: learn.intro-to-azure-sentinel.3-initial-configuration
+title: Initial Sentinel Configuration
 metadata:
-  title: Getting Started with Sentinel
-  description: Getting Started with Sentinel
+  title: Initial Sentinel Configuration
+  description: Getting your workspace configured and start bringing your data in to Sentinel.
   ms.date: 03/10/2020
-  author: debryen
+  author: deanobalino
   ms.author: debryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/3-data-connectors.md)]
+  [!include[](includes/3-initial-configuration.md)]
 quiz:
   title: Check your knowledge
   questions:

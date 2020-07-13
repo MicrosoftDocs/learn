@@ -6,7 +6,7 @@ metadata:
   description: Introduction to Azure Sentinel
   ms.date: 03/10/2020
   #TODO: Update with real author name.
-  author: debryen
+  author: deanobalino
   ms.author: debryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

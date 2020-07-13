@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-sentinel.2-tour-of-azure-sentinel
-title: What does Azure Sentinel have to offer?
+uid: learn.intro-to-azure-sentinel.2-what-is-azure-sentinel
+title: What is Azure Sentinel?
 metadata:
-  title: What does Azure Sentinel have to offer?
-  description: What does Azure Sentinel have to offer?
+  title: What is Azure Sentinel?
+  description: Let's take a look at what Azure Sentinel has to offer.
   ms.date: 03/10/2020
-  author: debryen
+  author: deanobalino
   ms.author: debryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
-  [!include[](includes/2-tour-of-sentinel.md)]
+  [!include[](includes/2-what-is-azure-sentinel.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-sentinel.5-workbooks
-title: "Leveraging built-in Workbooks"
+uid: learn.intro-to-azure-sentinel.5-configure-alerts.md
+title: "Configuring Security Alerts"
 metadata:
-  title: "Leveraging built-in Workbooks"
-  description: "Leveraging built-in Workbooks"
+  title: "Configuring Security Alerts"
+  description: "Configure alerts based on built in or custom attack detection queries."
   ms.date: 03/10/2020
-  author: debryen
+  author: deanobalino
   ms.author: debryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-workbooks.md)]
+  [!include[](includes/6-configure-alerts.md)]
 quiz:
   title: Check your knowledge
   questions:

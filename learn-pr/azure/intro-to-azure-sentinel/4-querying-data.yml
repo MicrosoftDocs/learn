@@ -1,18 +1,18 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-azure-sentinel.4-kql
-title: "Introduction to Kusto Query Language (KQL)"
+uid: learn.intro-to-azure-sentinel.4-querying-data
+title: "Kusto Query Language (KQL)"
 metadata:
-  title: "Introduction to Kusto Query Language (KQL)"
-  description: "Introduction to Kusto Query Language (KQL)"
+  title: "Kusto Query Language (KQL)"
+  description: "Learn about the query language behind Azure Sentinel. This is foundational for hunting, creating workbooks and alerts."
   ms.date: 03/10/2020
-  author: debryen
+  author: deanobalino
   ms.author: debryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 15
+durationInMinutes: 10
 content: |
-  [!include[](includes/4-kql.md)]
+  [!include[](includes/4-querying-data.md)]
 quiz:
   title: Check your knowledge
   questions:
