@@ -1,14 +1,13 @@
 ### YamlMime:Module
 uid: learn.azure.resource-manager-template-reuse
 metadata:
-  title: "Deploy to multiple Azure environments by using Azure Resource Manager template features"
   description: Manage multiple Azure environment deployments of your Azure Resource Manager templates using functions, variables, tags and parameter files.  
   ms.date: 07/10/2020
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy to multiple Azure environments by using Azure Resource Manager template features"
+title: "Deploy to multiple Azure environments by using Azure Resource Manager (ARM) template features"
 summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates using functions, variables, tags and parameter files.
 abstract: |
   In this module, you will:
@@ -21,11 +20,9 @@ prerequisites: |
   - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally
-  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
-
-    OR
-
-  - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed locally
+  - Either:
+    - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed locally
+    - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) installed locally
 iconUrl: /learn/achievements/modify-azure-resource-manager-template-reuse.svg
 ratingEnabled: true
 levels:
