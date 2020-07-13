@@ -1,4 +1,4 @@
-Now that you've created a Data Science Virtual Machine, you need to connect to it. The DSVM is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH , you can connect to the command line of the DSVM. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
+Now that you've created a Data Science Virtual Machine, you need to connect to it. The DSVM is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH, you can connect to the command line of the DSVM. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
 
 ## If necessary, start the DSVM
 
@@ -47,7 +47,7 @@ From a terminal or PowerShell console, run the following, substituting your user
 ssh UserName@1.1.1.1
 ```
 
-The first time you connect via SSH , you will receive a warning. Accept the fingerprint and you will be presented with a password prompt. Enter the password you specified while creating the DSVM. You should see a greeting screen and a command prompt.
+The first time you connect via SSH, you will receive a warning. Accept the fingerprint and you will be presented with a password prompt. Enter the password you specified while creating the DSVM. You should see a greeting screen and a command prompt.
 
 This is the moment where, if this were a movie, you'd say "I'm in."
 
