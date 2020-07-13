@@ -2,7 +2,7 @@ Tailwind Traders realize that they are about to put extensive development resour
 
 ## Add a testing package using the NPM tool
 
-You've been given some app code that parses an address from a string. So your task should be fairly straight forward and involve just installing the test framework, write a couple of tests and run them.
+You've been given some app code that parses an address from a string. So your task should be fairly straightforward and involve installing the test framework, write a couple of tests and run them.
 
 1. Clone the following `https://github.com/MicrosoftDocs/node-essentials/` by typing the following command:
 
@@ -19,11 +19,11 @@ You've been given some app code that parses an address from a string. So your ta
 1. You should now have access to the following files:
 
    ```bash
-   -| address_parser.js
+   -| address-parser.js
    -| package.json
    ```
 
-1. Open up `address_parser.js`, it should look like so:
+1. Open up `address-parser.js`, it should look like so:
 
    ```javascript
    exports.parse = function parseOrder(order) {
@@ -54,9 +54,9 @@ You've been given some app code that parses an address from a string. So your ta
 
    ```bash
    -| package.json
-   -| address_parser.json
+   -| address-parser.js
    -| __tests__/
-   ---| address_parser.json
+   ---| address-parser.js
    ```
 
 1. Add the following content to `__tests__/address_parser.js`:
@@ -109,3 +109,4 @@ You've been given some app code that parses an address from a string. So your ta
    Success, your test passes and you've added a new capability *testing* by installing a dependency.
 
 Congrats you've managed to successfully install Jest, a dependency, write tests for application code and run the tests. Jest seems to deliver in on its promise and TailwindTraders are likely to be happy with this evaluation.
+

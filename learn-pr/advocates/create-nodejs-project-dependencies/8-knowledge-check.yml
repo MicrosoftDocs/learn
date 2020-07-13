@@ -36,16 +36,14 @@ quiz:
           explanation: ""
         - content: "It's more secure than a global install"
           isCorrect: false
-          explanation: ""
         - content: "It's faster than installing it globally"
           isCorrect: false
-          explanation: ""
         - content: "You don't have to use sudo before running it like you would a global install"
           isCorrect: false
           explanation: "While this is technically correct, this shouldn't be the reason why you choose NPX over global install. Global installs are something that remains on your system and you need to uninstall. There's no such need with NPX as it cleans up after itself."
     - content: "What's a way to instruct the `package.json` file that you only want patch (bug fixes) updates"
       choices:
-        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"\""
+        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"*\""
           isCorrect: false
           explanation: "This will update the dependency to the latest possible version. This is incorrect."
         - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"1.x.0\""
@@ -53,7 +51,6 @@ quiz:
           explanation: "This will update the dependency to the latest minor version. That's not what you want"
         - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"1.0.x\""
           isCorrect: true
-          explanation: ""
         - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"^1.0.x\""
           isCorrect: false
     - content: "What are some recommended scripts to set up in your Package.json at the start of a project?"

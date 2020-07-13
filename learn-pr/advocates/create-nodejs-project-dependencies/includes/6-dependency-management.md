@@ -4,7 +4,7 @@ There are considerations that should be taken into account prior to attempt to u
 
 - **The type of update**, what type of update is available, is it a small bug fix? Is it adding a new feature I need or will it break my code? A way to communicate what type of update that takes place is by adhering to a system called Semantic versioning. Based on how the version number of the library is expressed it communicates to a developer what type of update they are dealing with.
 - **Is my project configured correctly**, you can configure your Node.js project in a way so that you only get the types of updates you want. That means you will only perform an update if a specific type of update is available. It's a recommended approach as you don't risk running into surprises.
-- **Mitigate issues**, part of managing your project dependencies over time means being aware of issues that might occur. Issues arise as vulnerabilities are detected for example. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
+- **Mitigate security issues**, part of managing your project dependencies over time means being aware of issues that might occur. Issues arise as vulnerabilities are detected for example. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
 
 ## Semantic versioning
 
@@ -14,9 +14,9 @@ So why is it such a big deal? Changes to a package are about introducing risk, r
 
 Semantic versioning is how you express what type of change you or some other developer is introducing to a library. How semantic versioning works is by ensuring a package has a version number and that the version number is divided up into the following sections:
 
-- **major version**, the leftmost number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. Many things have changed.
-- **minor version**, the middle number e.g `2` in `1.2.0`, means features have been added. Your code should still be working. It's generally safe to update minor version.
-- **patch version**, the rightmost number e.g `3` in `1.2.3`, means a fix has been applied that fixes something in the code that should have worked. It should be safe to update patch version.
+- **major version**, the leftmost number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. You might need to rewrite part of your code.
+- **minor version**, the middle number e.g the `2` in `1.2.0`, means features have been added. Your code should still be working. It's generally safe to update the minor version.
+- **patch version**, the rightmost number e.g the `3` in `1.2.3`, means a fix has been applied that *fixes* something in the code that should have worked. It should be safe to update patch version.
 
 Below is a table showing different types and what number changes in what position.
 
@@ -26,14 +26,14 @@ Below is a table showing different types and what number changes in what positio
 |Minor version     | 1.1.1 going to 1.2.0 |
 |Patch version     | 1.0.1 going to 1.0.2 |
 
-## Updating a package
+## Updating a package with NPM
 
-There are two ways to install a package, you can either use the `install` command or the `update` command. Historically there used to be differences between the two commands but now they act more like aliases for one another. A typical command to update could therefore look like so `npm update <name of dependency>@<optional argument with version number>`.
+There are two ways to install a package, you can either use the `install` command or the `update` command. Historically there used to be differences between the two commands but now they act more like aliases for one another. A typical command to update could therefore look like so `npm update <name of package>@<optional argument with version number>`.
 
 What happens at this point is depends on two things:
 
-- **The version argument is specified**, if the version argument (the last argument) is specified that particular package version will be fetched and installed.
-- **There is an entry in the manifest file**, the entry in the manifest file consist of the name of the dependency plus a value expressing a rule pattern for how this dependency will be updated. Here's how it can look `"<name of dependency>": "1.1.x"`. NPM will respect the rule pattern and try to fetch the version of the dependency that matches the rule system.
+- **The version argument is specified as part of the command**, if the version argument (the last argument) is specified that particular package version will be fetched and installed.
+- **There is an entry in the manifest file**, the entry in the manifest file consist of the name of the dependency plus a value expressing a rule pattern for how this dependency will be updated. Here's how it can look `"<name of dependency>": "1.1.x"`. NPM will respect the rule pattern and try to fetch the version of the dependency that matches the rule pattern.
 
 ### Update approach
 
@@ -59,7 +59,29 @@ Here are some patterns to configure for major/minor/patch version:
 - `^` or `1.x.1`, this instruction will update only the minor version.
 - `*` or `x.0.0`, this instruction will update to the highest major version.
 
-## Managing issues
+## `package-lock.json`
+
+Together with the `package.json` manifest file you also have the `package-lock.json` file. The latter is generated when you take an action that modifies `node_modules` directory or any kind of action changing the `package.json`. So it would not be created on `npm init` but rather on a package install for example.
+
+This file *should be committed* to your repository and why is that?
+
+Well, for one it *guarantees exact installs*. Remember how in a `package.json` you define patterns for what type of installs you need like a patch, minor or major version? Patterns aren't very exact, you wouldn't know if you installed for example version `1.4` or `1.5` with a `1.x` pattern. Why do I need to know that exactly? Imagine you have a scenario where you specify `1.x` and you at the time where using `1.2` and a new version `1.4` was released of that library that ended up breaking your code. Someone else installing your app will get a non functioning app at that point. But, if there's a `package-lock.json` file stating `1.2` was used then `1.2` will be installed. So who cares about this behavior? The answer is people using your app/tool and CI, continuous integration tools.
+
+It's important to understand how it's used and *what file* decides when an install operation is carried out. It works like this, if the `package.json` and what's in the `package-lock.json` agrees on semantic rule level, i.e the pattern says for example `1.x` in `package.json` and `package-lock.json` specifies that `1.4` is installed then `1.4` would be installed. However, if the `package.json` has been updated to let's say `1.8.x` then `package-lock.json` would not be obeyed and version and at least `1.8.0` would be installed, or higher patch version if available.
+
+It should also be mentioned that there are other features that `package-lock.json` provides such as making it easy to see what changed between commits and help with optimizing the installing process.
+
+## Find and update outdated packages
+
+There's a command called `npm outdated` that will list outdated packages. Using that command can be a great help to find out when there are newer versions of packages that has been released. A recommended workflow is therefore running the following commands after each other:
+
+1. Run `npm outdated`, lists all the outdated packages along with columns `Wanted`, `Latest` and `Location`:
+   - `Wanted`, this column lists the latest version matching the semantic pattern you specified in the `package.json` file.
+   - `Latest`, lists the latest version of the package.
+   - `Location`, a column listing where dependency was found. The `outdated` command crawls through all installed packages in `node_modules`.
+1. Run `npm update <optional package name>`, running this command with a package name specified will attempt to update only that specific package. If package name is omitted then it will attempt to update all the packages in `package.json`.
+
+## Managing security issues
 
 Every time you update or install a package you will get a log response just after install. It will tell you what version it installed and also if there are any vulnerabilities. An example log can look like this:
 

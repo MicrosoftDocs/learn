@@ -60,9 +60,9 @@ Open up a terminal window.
 
     ```json
     {
-      "name": "Tailwind trader API",
+      "name": "Tailwind-trader-API",
       "version": "1.0.0",
-      "description": "An HTTP API that will items from Tailwind Traders database",
+      "description": "An HTTP API that will fetch items from Tailwind Traders database",
       "main": "index.js",
       "dependencies": {},
       "devDependencies": {},

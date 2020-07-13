@@ -1,4 +1,4 @@
-The package.json file is manifest file for your Node.js project. It contains numerous metadata information on your project but it also governs things such as how your dependencies are managed and what files go into a package meant for NPM and much more. Let's have a closer look at all the different properties and what they mean.
+The package.json file is a manifest file for your Node.js project. It contains numerous metadata information on your project but it also governs things such as how your dependencies are managed and what files go into a package meant for NPM and much more. Let's have a closer look at all the different properties and what they mean.
 
 ## Initialize a package.json
 
@@ -40,8 +40,8 @@ In any project, whether it's using Node.js or not, you are likely to want to hav
 
 Essentially, you should set up a number of scripts and name them in a specific way. It is expected by the developer community and various tools out there rely on it. So what are these scripts?
 
-- **Start action**, setting up a start command is about essentially invoking node with the entry file as argument. An example of a start command can look like so `node ./src/index.js`. This command says to invoke node and the entry file `index.js`.
-- **Build**, this command how to build your project. The end result of the build process should produce something that you can ship. Examples of the content of a build command can be to run a Typescript compiler to produce the JavaScript version of the project that you mean to ship.
+- **Start**, setting up a start command is about essentially invoking node with the entry file as argument. An example of a start command can look like so `node ./src/index.js`. This command says to invoke node and the entry file `index.js`.
+- **Build**, this command describes how to build your project. The end result of the build process should produce something that you can ship. Examples of the content of a build command can be to run a Typescript compiler to produce the JavaScript version of the project that you mean to ship.
 - **Test**, this command should run the tests of your project so if you are using a third-party test library it should invoke it's executable.
 - **Lint**, this command should invoke a linter program like ESLint. What *linting* does is point out inconsistencies in the code. A linter usually offers a way to correct the inconsistencies as well. Having consistent code can greatly increase its readability which in turn speeds up development of features and additions of code in general.
 
@@ -68,6 +68,6 @@ and a more real looking example could look like this:
 
 The above is using the proper naming that has been hinted at so far. First you have the `start` action that starts up our application. Secondly, the `test` action runs our tests using the testing framework `jest`. Then we have the `build` action that uses the TypeScript compiler `tsc` to compile our code from TypeScript and into, for example,  ES6 that the browser can understand. Finally we have a *linting* tool `eslint` that looks for inconsistencies and possibly errors in our code.
 
-Actions are invoked by typing `npm run <action>`. There are *special* actions however, `start`, and, `build`. They are special in the sense that you can omit `run`. That means that instead of typing `npm run start` you can instead save a few characters and type `npm start`.
+Actions are invoked by typing `npm run <action>`. There are *special* actions however, `start`, `build`, and `test`. They are special in the sense that you can omit `run`. That means that instead of typing `npm run start` you can instead save a few characters and type `npm start`.
 
 Most likely your project will have a few more scripts set up but those scripts are usually specific to your project. The above actions are a good starting point for any Node.js project.

@@ -1,4 +1,4 @@
-Tailwind Traders has tasked you with working on an app with some outdated dependencies. The app is fairly small and only has a couple of dependencies. Updating it should be straight forward. See if you can update the app to take advantage of the latest features and if you find any vulnerabilities fix them while you are at it.
+Tailwind Traders has tasked you with working on an app with some outdated dependencies. The app is fairly small and only has a couple of dependencies. Updating it should be straightforward. See if you can update the app to take advantage of the latest features and if you find any vulnerabilities fix them while you are at it.
 
 ## Upgrading the app dependencies
 
@@ -50,56 +50,56 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
    "node-fetch": "^1.0.2"
    ```
 
-   Type the following command in the terminal to find out if your dependencies pose a risk:
+   Type the following command to see what dependencies are outdated:
 
    ```bash
-   npm audit
+   npm outdated
    ```
 
-   The output, a bit shortened down for brevity, shows the following:
+   The output should look something like this. There might be a slight variation on what number is listed as the `Latest` depending on when this module is taken.
 
    ```output
-   found 3 vulnerabilities (1 low, 2 high) in 5 scanned packages
-   3 vulnerabilities require semver-major dependency updates.
+   Package       Current    Wanted    Latest    Location
+   lodash        1.1.0      1.3.1     4.17.19   lock-test
+   node-fetch    1.0.2      1.7.3     2.6.0     lock-test
    ```
 
-   You have vulnerabilities, two on high and one low. The high vulnerabilities say you should upgrade. It tells you that *three vulnerabilities require semver-major dependency updates*. This fact means you need to upgrade the major version of the dependency to get rid of these vulnerabilities. The audit report suggests how to resolve these issues. It states the command to run at the top Run `npm install lodash@4.17.15`.
+   The above tells you what version you are currently on `Current`. It also tells you what the latest minor version is in the `Wanted` column. Thirdly it states the latest version there is in the `Latest` column. This may differs depending on when you take this module. Finally it tells you the location of the dependency.
 
-1. Type the command in the terminal the audit report told you to:
+1. You can with a decent level of confidence update to the `Wanted` version, it will ensure the dependencies get the latest features and patches in that major version. Type the the following command:
 
    ```bash
-   npm install lodash@4.17.15
+   npm update
    ```
 
-   At the end of the output from the above command, you see this text:
+   You should get an output looking something like this:
 
    ```output
-   found 0 vulnerabilities
+   + lodash@1.3.1
+   + node-fetch@1.7.3
+   added 1 package from 1 contributor, updated 2 packages and audited 6 packages in 0.514s
+   found 4 vulnerabilities (2 low, 2 high)
    ```
 
-   The output means you from a vulnerability standpoint are now safe. You might have some other reasons to update though so let's look at what those reasons might be next.
+   Above it states that your project dependencies have been updated.
 
-1. You've upgraded the `lodash` dependency. You have a `node-fetch` dependency as well. Looking at the `package.json` entry for it, it says the following `"node-fetch": "^1.0.2"`. Let's see what versions are available with the following command:
+1. At this point you have upgraded the dependencies as far as the patterns in your `package.json` allows you. You can either install the latest version version by specifically type `npm install <name of package>@<known latest version>` or use the *latest* keyword like so `npm install <name of package>@latest`. Another thing you can do is to alter the pattern in the `package.json` file, which is what you will be doing next.  
 
-   ```bash
-   npm show node-fetch versions
-   ```
+1. Locate the entry `"node-fetch": "^1.7.3"` in `package.json` and change it to `"node-fetch": "*"`, additionally locate `"lodash": "^1.3.1"` and change it to `"lodash": "*"`.
 
-   You look through the resulting response of the above command and you see the latest version seems to be `2.6.0`.
-
-1. Locate the entry `"node-fetch": "^1.0.2"` in `package.json` and change it to `"node-fetch": ""`.
 1. Run the following command in the terminal:
 
    ```bash
-   npm update node-fetch
+   npm update
    ```
 
    You should have gotten an output looking something like this:
 
    ```output
    + node-fetch@2.6.0
-   removed 3 packages, updated 1 package and audited 2 packages in 0.925s
-   found 0 vulnerabilities
+   + lodash@4.17.19
    ```
 
-Congratulations you've managed to upgrade the two dependencies in your app. In doing so you've managed to fix three vulnerabilities, 2 of them on high, nice. You've also managed to upgrade the second dependency because you wanted the latest and greatest features. Well done!
+   Results may vary above depending on when this module is taken. The point is though that the listed versions above should correspond to the latest available versions of these two packages.
+
+Congratulations you've managed to upgrade the two dependencies in your app. Well done!
