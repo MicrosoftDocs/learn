@@ -48,9 +48,11 @@ Telemetry is the data values transmitted by sensors. The most important sensor i
 
     [![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
-    > Capability names can only contain alphanumeric characters, no spaces or special characters are allowed.
+
+    > [!IMPORTANT]
+    > In all locales, capability names can currently _only_ contain characters **A** through **Z**, upper or lower case, the digits **0** through **9**, and the underscore **_**. No spaces, special characters, or localized characters, are allowed.
 
 Let's add the rest of the template.
 
