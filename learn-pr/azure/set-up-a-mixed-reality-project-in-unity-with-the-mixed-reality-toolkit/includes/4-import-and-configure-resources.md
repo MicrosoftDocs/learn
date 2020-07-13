@@ -8,16 +8,15 @@ The MRTK v2 with Unity is an open source cross-platform development kit for mixe
 
 MRTK-Unity is a Microsoft-driven project that provides a set of components and features, used to accelerate cross-platform MR app development in Unity. Here are some of its functions:
 
-Provides the basic building blocks for Unity development on HoloLens, Windows Mixed Reality, and OpenVR.
-Enables rapid prototyping via in-editor simulation that allows you to see changes immediately.
-Operates as an extensible framework that provides developers the ability to swap out core components.
-Supports a wide range of platforms, including
-
-- Microsoft HoloLens
-- Microsoft HoloLens 2
-- Windows Mixed Reality headsets
-- OpenVR headsets (HTC Vive / Oculus Rift)
-- Ultraleap Hand Tracking
+- Provides the basic building blocks for Unity development on HoloLens, Windows Mixed Reality, and OpenVR.
+- Enables rapid prototyping via in-editor simulation that allows you to see changes immediately.
+- Operates as an extensible framework that provides developers the ability to swap out core components.
+- Supports a wide range of platforms, including
+    - Microsoft HoloLens
+    - Microsoft HoloLens 2
+    - Windows Mixed Reality headsets
+    - OpenVR headsets (HTC Vive / Oculus Rift)
+    - Ultraleap Hand Tracking
 
 ## TextMesh Pro
 
