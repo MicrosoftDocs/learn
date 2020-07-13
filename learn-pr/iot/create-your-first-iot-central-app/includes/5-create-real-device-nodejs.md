@@ -103,7 +103,14 @@ In the blank app.js file, insert the following code. Each additional section of 
    > [!NOTE]
    > If you would like to skip this unit, and load all of the code into your app, then download and copy all of the contents of app.js from [MicrosoftDocs/mslearn-your-first-iot-central-app](https://github.com/MicrosoftDocs/mslearn-your-first-iot-central-app) into the app.js file of your project. If you copy this code (and replace the connection and subscription strings) then go straight to the next unit, and start testing!
 
-1. Add code to connect to Azure IoT Central and Azure Maps, replacing the `<your...>` strings for both technologies with your own strings. Do not change any other lines of code.
+1. Add code to connect to Azure IoT Central, and Azure Maps, replacing the two `<your...>` strings for both technologies with your own strings. Do not change any other lines of code.
+
+    > [!TIP]
+    > Your device connection string will look _similar_ to the following:
+    >
+    > `HostName=iotc-<guid>.azure-devices.net;DeviceId=<your Device ID>;SharedAccessKey=<your Primary Key>`
+    >
+    > Your Azure Maps string will be a mix of upper and lower case characters, special characters, and numbers, about 40 charactes in length.
 
     ```js
     "use strict";
@@ -767,7 +774,7 @@ In the blank Program.cs file, insert the following code. Each additional section
     using AzureMapsToolkit.Common;
     ```
 
-1. Add the namespace, class, and global variables.
+1. Add the namespace, class, and global variables. Replace the four `<your...>` strings with the keys you saved in a previous unit.
 
    ```cs
     namespace refrigerated_truck

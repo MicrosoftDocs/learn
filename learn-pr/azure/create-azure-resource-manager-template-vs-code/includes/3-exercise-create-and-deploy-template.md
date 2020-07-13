@@ -1,3 +1,6 @@
+> [!NOTE]
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox, and you're added to a special subscription named Concierge Subscription.
+
 In this exercise, you create an Azure Resource Manager template (ARM template) and deploy it to Azure. Then you update that ARM template to add parameters and outputs.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
@@ -31,7 +34,21 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 ## Deploy the ARM template to Azure
 
+::: zone pivot="cli"
+
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
+
+1. Open a terminal window using the *Terminal* menu.
+1. If the dropdown menu on the right of the terminal window says *bash* you have the right shell to work from and you can skip to the next section.
+
+      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the dropdown." border="true":::
+
+1. If not, select the dropdown and choose **Select Default Shell**.
+1. Select **bash**.
+
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
+
+1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
 
 ### Sign in to Azure
 
@@ -48,8 +65,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az account set --subscription "Concierge Subscription"
     ```
 
-> [!NOTE]
-> If you have used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the above command was successful, skip the next two steps.
+   > [!NOTE]
+   > If you have used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the above command was successful, skip the next two steps.
 
 1. Get the *Concierge Subscription* IDs.
 
@@ -78,7 +95,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 Here, you deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. However, you'll see a successful deployment.
 
-1. Deploy the template using Azure CLI commands in the terminal.
+1. Deploy the template using Azure CLI commands in the Visual Studio Code terminal.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -92,7 +109,77 @@ Here, you deploy the ARM template to Azure. The ARM template doesn't have any re
 
   In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure. Notice the deployment name is *blanktemplate* with the date as a suffix.
 
-1. You see ```Running...``` in the terminal. When that finishes, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+  You see ```Running...``` in the terminal.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you [install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) and that you are signing in to the same account that activated the sandbox.
+
+1. Open a terminal window using the *Terminal* menu.
+1. If the dropdown menu on the right of the terminal window says *pwsh* you have the right shell to work from and you can skip to the next section.
+
+      :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh in the dropdown." border="true":::
+
+1. If not, select the dropdown and choose **Select Default Shell**.
+1. Select **pwsh**.
+
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
+
+1. Select the **+** in the terminal to create a new terminal with *pwsh* as the shell.
+
+### Sign in to Azure using Azure PowerShell
+
+1. From the terminal in Visual Studio Code, run this command to sign in to Azure. Running this command will prompt you to open a browser to a URL that allows you to sign in to your account. Use the code that is in the prompt.
+
+    ```azurepowershell
+    Connect-AzAccount
+    ```
+
+1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. You use this one for the rest of the exercise.
+
+    Set the default subscription for all of the Azure PowerShell commands you run in this session.
+
+1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription* and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
+
+    ```azurepowershell
+    Get-AzSubscription
+    ```
+
+1. Change your active subscription to the Concierge Subscription. Be sure to substitute {Your subscription ID} with the one you just copied.
+
+    ```azurepowershell
+    $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
+    Set-AzContext $context
+    ```
+
+1. Set the default resource group to the resource group created for you in the sandbox environment. This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+
+    ```azurepowershell
+    Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    ```
+
+### Deploy the template to Azure using Azure PowerShell
+
+Here, you deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. However, you'll see a successful deployment.
+
+1. Deploy the template using Azure PowerShell commands in the terminal.
+
+    ```azurepowershell
+    $templateFile = "azuredeploy.json"
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="blanktemplate-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile
+    ```
+
+  In the top section of this code, you set Azure PowerShell variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```New-AzResourceGroupDeployment``` command to deploy the template to Azure. Notice the deployment name is *blanktemplate* with the date as a suffix.
+
+::: zone-end
+
+When that finishes, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left side panel, choose *Resource groups*.
 1. Select <rgn>[sandbox resource group name]</rgn>.
@@ -139,6 +226,8 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
 Here, you change the name of the deployment to better reflect what this deployment does.
 
+::: zone pivot="cli"
+
 1. Run the following Azure CLI commands in the terminal. This is the same code you used previously, however the name of the deployment is changed.
 
     ```azurecli
@@ -150,6 +239,25 @@ Here, you change the name of the deployment to better reflect what this deployme
       --name $DeploymentName \
       --template-file $templateFile
     ```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Run the following Azure PowerShell commands in the terminal. This is the same code you used previously, however the name of the deployment is changed.
+
+    ```azurepowershell
+    $templateFile = "azuredeploy.json"
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="addstorage-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile
+    ```
+
+::: zone-end
+
+### Check your deployment
 
 1. In your browser, navigate back to Azure. Go to your resource group and see that there are now *2 Succeeded* deployments. Select this link.
 1. Notice that both deployments are in the list.
