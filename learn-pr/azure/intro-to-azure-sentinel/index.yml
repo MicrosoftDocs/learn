@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   #ms.learn-contact: luken
 title: Introduction to Azure Sentinel
-summary: Traditional Security Information and Event Management (SIEM) systems typically take a long time to get set up and configured. They are also not neccesarily designed with cloud workloads in mind. Azure Sentinel enables you to start getting valuable security insights from your cloud and on premises data within very little time. This module will help you get started. 
+summary: Traditional Security Information and Event Management (SIEM) systems typically take a long time to get set up and configured. They are also not necessarily designed with cloud workloads in mind. Azure Sentinel enables you to start getting valuable security insights from your cloud and on premises data within very little time. This module will help you get started. 
 abstract: |
   By the end of this module you will:
   - Be able to understand the various components and functionality of Azure Sentinel.

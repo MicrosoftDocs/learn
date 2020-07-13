@@ -18,7 +18,7 @@ Introduction to Azure Sentinel
 
 ## Prerequisites
 
-- A basic familiarity with Azure and the Azure Portal
+- A basic familiarity with Azure and the Azure portal
 
 ## Summary
 
@@ -38,7 +38,7 @@ Identify the subtasks of Introduction to Azure Sentinel
 | Describe the components of  Azure Sentinel | Understanding the capability of Azure Sentinel and which business objectives it could solve. | Knowledge Check | 1 | yes |
 | Configure Azure Sentinel and Connect Data Sources | Getting your workspace configured and start bringing your data in to Sentinel. | Knowledge Check | 2 | yes |
 | Understand Kusto Query Language (KQL) | Learn about the query language behind Azure Sentinel. This is foundational for hunting, creating workbooks and alerts. | Knowledge Check | 1 | yes |
-| Visualize  data in Workbooks | Visualise your data using built in or custom Workbooks or Dashboards | Knowledge Check | 2 | yes |
+| Visualize  data in Workbooks | Visualize your data using built in or custom Workbooks or Dashboards | Knowledge Check | 2 | yes |
 |Configure Alerts | Configure alerts based on built in or custom attack detection queries. | Knowledge Check | 2 | yes |
 
 ## Outline the units
@@ -47,7 +47,7 @@ Identify the subtasks of Introduction to Azure Sentinel
 
 1. **Introduction**
 
-   You work as a SOC Analyst for a national insurance provider. The business has already started moving some workloads to the public cloud, and you've been tasked with evaluating Security Incident and Event Management (SIEM) solutions that can help in both an on premises and multi-cloud environment. You've heard about Azure Sentinel and want to see wether this could potentially be the right SIEM for your business.
+   You work as a SOC Analyst for a national insurance provider. The business has already started moving some workloads to the public cloud, and you've been tasked with evaluating Security Incident and Event Management (SIEM) solutions that can help in both an on premises and multi-cloud environment. You've heard about Azure Sentinel and want to see whether this could potentially be the right SIEM for your business.
 
 1. **What is Azure Sentinel?**
 
@@ -140,7 +140,7 @@ Identify the subtasks of Introduction to Azure Sentinel
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module?
 
-    As a SOC Analyst you had to idnetify a SIEM that would support your organisation's evolving workloads that were deployed on premises and across multiple cloud providers.
+    As a SOC Analyst you had to identify a SIEM that would support your organization's evolving workloads that were deployed on premises and across multiple cloud providers.
 
     Azure Sentinel is a cloud native SIEM solution that enables us to manage the entire Security operations process, from data collection through to automated remediation. We configured Azure Sentinel, set up our data connectors, visualized our data and then configured security alert rules on that data too. We also spent some time understanding the underlying query language KQL.
 
