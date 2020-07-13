@@ -177,19 +177,15 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
 
 2. There are several other tabs you can explore to see the settings you can influence during the VM creation, particularly the **Disks** tab, where you can specify your data disk(s). Once you're finished exploring, click **Review + create** to review and validate the settings.
 
-3. On the review screen, Azure will validate your settings. Verify all the settings are set the way you want, and then click **Create**.
+1. On the review screen, Azure will validate your settings. Verify all the settings are set the way you want, and then click **Create**.
 
 1. You can monitor the deployment through the **Notifications** panel. Click the icon in the top toolbar to show or hide the panel.
 
-    ![A screenshot showing the Monitor the deployment progress](../media/3-deploying.png)
+1. The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded. Click on the **Go to resource** button to go to the VM overview page.
 
-5. The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded. Click on the **Go to resource** button to go to the VM overview page.
+1. Here you can see all the information and configuration options for your newly created DSVM. One of the pieces of information is the **Public IP address**.
 
-    ![Screenshot showing a successful deployment of the Ubuntu image](../media/3-deployment-succeeded.png)
-
-6. Here you can see all the information and configuration options for your newly created DSVM. One of the pieces of information is the **Public IP address**.
-
-    ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/3-public-ip-address.png)
+    ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/dsvm-summary-started-in-portal.png)
 
 1. Securing access 
 
