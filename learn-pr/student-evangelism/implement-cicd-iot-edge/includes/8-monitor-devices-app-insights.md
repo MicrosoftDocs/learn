@@ -110,8 +110,8 @@ Make sure that the device has been deployed and is running. You can monitor the 
 3. Navigate to **Metrics Explorer** under **Investigate**.
 4. To configure a chart, select **Add Chart** > **Edit Chart** and add the following to monitor block I/O for all edge modules.
 
-   ![The illustration shows chart details.](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/content/AIBlkio.PNG)
+   ![The illustration shows chart details.](../media/ai-block-io.png)
    
 5. Add the following to monitor the network traffic for all Edge modules.
 
-   ![The illustration shows chart details.](https://github.com/MicrosoftDocs/mslearn-oxford-implement-cicd-iot-edge/blob/master/content/AINetworkTraffic.PNG)
+   ![The illustration shows chart details.](../media/ai-network-traffic.png)
