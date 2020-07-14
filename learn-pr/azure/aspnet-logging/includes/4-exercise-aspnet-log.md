@@ -213,7 +213,7 @@ The logger currently is set to write to a local file. Although this approach is 
    The configuration text defines two new appenders:
     
    - **aiAppender**: Writes to Application Insights.
-   - **azureAppendBlobAppender**: Writes to blob storage in your storage account. In this appender, replace *YourStorageAccountConnectionString* with the value in the **$storageconnectionstring** PowerShell variable. You can use the command `Write-Host $storageconnectionstring` to see the value of this variable.
+   - **azureAppendBlobAppender**: Writes to Blob storage in your storage account. In this appender, replace *YourStorageAccountConnectionString* with the value in the **$storageconnectionstring** PowerShell variable. You can use the command `Write-Host $storageconnectionstring` to see the value of this variable.
 
 1. In Solution Explorer, select the *ApplicationInsights.config* file to open it in Code View.
 
@@ -353,7 +353,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
    1. On the **Settings** tab, select the **Use this connection string at runtime (update destination web.config)** check box, and then select **Save**.
 
-       :::image type="content" source="../media/4-publish-save.png" alt-text="Screenshot of the Settings tab of the Publish dialog box, with the Use this connection string at runtime (update destination web.config) check box select and the Save button highlighted.:::
+       :::image type="content" source="../media/4-publish-save.png" alt-text="Screenshot of the Settings tab of the Publish dialog box, with the Use this connection string at runtime (update destination web.config) check box select and the Save button highlighted.":::
 
 1. On the **Publish** page, select **Publish**.
 

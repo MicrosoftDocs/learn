@@ -51,7 +51,7 @@ First, you'll download and test the application locally, and then you'll create 
 
     :::image type="content" source="../media/2-catalog-manager.png" alt-text="Screenshot of the Catalog manager page in the eShop onContainers sample web application in a web browser window.":::
 
-    You can use the Catalog Manager to view the products that are sold by the organization, add new products, modify the details of existing products, and delete products.
+    You can use Catalog Manager to view the products that are sold by the organization, add new products, modify the details of existing products, and delete products.
 
 1. Experiment with the application. Try adding, editing, and removing products. Close the web browser when you're finished. This action stops the application and returns you to Visual Studio.
 
