@@ -15,13 +15,12 @@ In order to complete this exercise, you will complete the following steps:
 
 This exercise will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
 
-1. Configure cloud shell environment
+### Configure cloud shell environment
 
-    In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  
+1. In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  
 
     ```powershell
-    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like learn*
-    $resourceGroup = $resourceGroup.ResourceGroupName
+    $resourceGroup = <rgn>Sandbox resource group name</rgn>
     $database = "AdventureWorks-bc"
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
     $server = $server.ServerName
@@ -33,11 +32,11 @@ This exercise will guide you through getting ostress configured, and then you'll
     az configure --list-defaults
     ```
 
-2. Deploy an identical database with Business critical
+### Deploy an identical database with Business critical
 
-    In a previous module of the learning path, you learned how to scale a database using T-SQL. For this exercise, the goal is to upgrade the same database from General purpose to Business critical using the Azure CLI commands in the Azure Cloud Shell. However, since there is a limit between the frequency of failovers, you will deploy the same sample database as Business critical with the name `AdventureWorks-bc`  
+In a previous module of the learning path, you learned how to scale a database using T-SQL. For this exercise, the goal is to upgrade the same database from General purpose to Business critical using the Azure CLI commands in the Azure Cloud Shell. However, since there is a limit between the frequency of failovers, you will deploy the same sample database as Business critical with the name `AdventureWorks-bc`  
 
-    Since in the previous step you configured your default resource group and server name, the command to create the database is simple, you just have to specify what you want deployed. Run the following in the Azure Cloud Shell.  
+1. Since in the previous step you configured your default resource group and server name, the command to create the database is simple, you just have to specify what you want deployed. Run the following in the Azure Cloud Shell.  
 
     ```powershell
     az sql db create --name $database `
@@ -60,21 +59,22 @@ This exercise will guide you through getting ostress configured, and then you'll
 
     Note that this is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region) and not (yet) in Azure SQL managed instance.  
 
-    After the service tier change completes, you should see detailed information about the updates in the Azure Cloud Shell output under two main categories (though you'll also see indicators under several other properties):  
+1. After the database is created, you should see detailed information about the updates in the Azure Cloud Shell output under two main categories (though you'll also see indicators under several other properties):  
     * `currentServiceObjectiveName`: should be `BC_Gen5_2` where `BC` stands for Business critical  
     * `currentSku`:  
         * `name`: should be `BC_Gen5`
         * `tier`: should be `BusinessCritical`  
 
-    Another way to confirm this is to navigate to your database in the Azure portal and review the **Overview** tab, locating the **Pricing tier**.  
+1. Another way to check the service tier is to navigate to your database in the Azure portal and review the **Overview** tab, locating the **Pricing tier**.  
 
-    ![Overview tab](../media/6-overview-tab.png)
+    > [!TIP]
+    > There are many other ways to check this, but another way is through SSMS. If you right-click on your database and select **Properties** > **Configure SLO**, you can also view the changes.  
 
-    > Note: There are many other ways to check this, but another way is through SSMS. If you right-click on your database and select **Properties** > **Configure SLO**, you can also view the changes.  
+### Run the ostress workload
 
-3. Run the ostress workload
+Just like in the previous exercise, you will leverage `ostress` to repeatedly query your Azure SQL Database.
 
-    Just like in the previous exercise, you will leverage `ostress` to repeatedly query your Azure SQL Database. Open a new Command Prompt window on your local machine. Use `cd` to change directories to where the availability module is in the repository you cloned or downloaded earlier. For example, you might use
+1. Open a new Command Prompt window on your local machine. Use `cd` to change directories to where the availability module is in the repository you cloned or downloaded earlier. For example, you might use
 
     ```cmd
     cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability
@@ -84,7 +84,7 @@ This exercise will guide you through getting ostress configured, and then you'll
 
     The ostress workload will essentially connect and runs a simple query 50,000 times.
 
-    Before running the workload, you will need to update the below ostress script by replacing `serverName` with the name of your Azure SQL Database logical server, and `password` with your password. Note that this command is slightly different because the database name is now `AdventureWorks-bc`.
+1. Before running the workload, you will need to update the below ostress script by replacing `serverName` with the name of your Azure SQL Database logical server, and `password` with your password. Note that this command is slightly different because the database name is now `AdventureWorks-bc`.
 
     ```cmd
     .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks-bc" -P"password" -n1 -r50000
@@ -96,11 +96,11 @@ This exercise will guide you through getting ostress configured, and then you'll
 
     If, at any time, you want to run the workload again, you can run the command again.  
 
-4. Use PowerShell in Azure Cloud Shell to initiate a failover
+### Use PowerShell in Azure Cloud Shell to initiate a failover and observe the results
 
-    Configure your windows so that you can see this browser and the Command Prompt in one view.  
+1. Configure your windows so that you can see this browser and the Command Prompt in one view.  
 
-    Next, run the following code in the Azure Cloud Shell terminal. Note this is the same command you used in the previous exercise.
+1. Next, run the following code in the Azure Cloud Shell terminal. Note this is the same command you used in the previous exercise.
 
     ```powershell
     # create a failover
@@ -109,15 +109,13 @@ This exercise will guide you through getting ostress configured, and then you'll
         -DatabaseName $database
     ```
 
-5. Observe the results in ostress from Command Prompt  
-
-    While this cell is running, you should observe any changes that appear in the terminal. You'll notice that while the failover occurs, for some time you cannot access the database. However, the time where you're unavailable is very short. Once you become disconnected, you should be reconnected after approximately 5 seconds! This failover is 6+ times faster that in the General purpose tier.  
+1. While this cell is running, you should observe any changes that appear in the terminal. You'll notice that while the failover occurs, for some time you cannot access the database. However, the time where you're unavailable is very short. Once you become disconnected, you should be reconnected after approximately 5 seconds! This failover is 6+ times faster that in the General purpose tier.  
 
     Recall that databases or managed instances in the Business critical service tier essentially have an Always On Availability Group deployed behind the scenes. This means that when you failover, all that happens is a change in pointers in the backend as we redirect you to one of the secondaries. Because of this, it can be very fast, much faster than General purpose.
 
-6. Connect to a readable secondary
+### Read-scale
 
-    Since you enabled the `read-scale` parameter, you have the ability to use one of the secondary replicas for read-only workloads. In order to access the read-only replica in applications, you just have to add the following parameter to your connection string for a database:  
+1. Since you enabled the `read-scale` parameter, you have the ability to use one of the secondary replicas for read-only workloads. In order to access the read-only replica in applications, you just have to add the following parameter to your connection string for a database:  
 
     ```sql
     ApplicationIntent=ReadOnly;
@@ -125,15 +123,17 @@ This exercise will guide you through getting ostress configured, and then you'll
 
     In SSMS, create a new query connection (select **File** > **New** > **Database Engine Query**).  
 
+    [!div class="mx-imgBorder"]
     ![New database engine query](../media/6-new-db-engine-query.png)  
 
-    Using the same way you've been connecting to your Azure SQL Database logical server (either with SQL Auth or Azure AD Auth), select **Options**.  
+1. Using the same way you've been connecting to your Azure SQL Database logical server (either with SQL Auth or Azure AD Auth), select **Options**.  
 
+    [!div class="mx-imgBorder"]
     ![Options in SSMS](../media/3-connect-azure-sql.png)  
 
-    Select **Connection Properties**, and select **Reset All**. Then, under "Connect to database" select **Browse server** and select your **AdventureWorks-bc** database.  
+1. Select **Connection Properties**, and select **Reset All**. Then, under "Connect to database" select **Browse server** and select your **AdventureWorks-bc** database.  
 
-    Then select **Additional Connection Parameters** and copy and paste the following into the text box. Finally, select **Connect**.  
+1. Then select **Additional Connection Parameters** and copy and paste the following into the text box. Finally, select **Connect**.  
 
     ```sql
     ApplicationIntent=ReadOnly;
@@ -141,14 +141,16 @@ This exercise will guide you through getting ostress configured, and then you'll
 
     With SSMS, you have to specify the server and database to which you want to connect read-only, because there may be multiple databases in a server with different capabilities as far as readable secondaries goes.
 
-    To test, try the following query on your new database engine query, and observe the results. Is it what you would expect?  
+1. To test, try the following query on your new database engine query, and observe the results. Is it what you would expect?  
 
     ```sql
     SELECT DATABASEPROPERTYEX(DB_NAME(), 'Updateability')
     ```
 
+    [!div class="mx-imgBorder"]
     ![Read only response](../media/6-read-only.png)
 
-    You can optionally re-connect and update the Additional Connection Parameters (replace `ReadOnly` with `ReadWrite`), and confirm you are accessing the read-write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in.
+1. You can optionally re-connect and update the Additional Connection Parameters (replace `ReadOnly` with `ReadWrite`), and confirm you are accessing the read-write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in.
 
+    [!div class="mx-imgBorder"]
     ![Read write response](../media/6-read-write.png)
