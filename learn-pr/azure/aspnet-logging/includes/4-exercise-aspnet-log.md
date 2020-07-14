@@ -314,7 +314,6 @@ The logger currently is set to write to a local file. Although this approach is 
 
     1. In Visual Studio, on the **Pick a publish target** pane, select **App Service** > **Select Existing** > **Create Profile**.
 
-
         :::image type="content" source="../media/4-pick-publishing-target.png" alt-text="Screenshot of the Pick a publish target pane, with App Service highlighted and the Select Existing option selected.":::
         
     1. In the **App Service** pane:
@@ -371,11 +370,11 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. On the **Storage accounts** blade, select the storage account you created earlier to store the web application logs. In this exercise, the storage account name is prefixed with your ID and the number you specified when you created you user alias in the setup unit. Other storage accounts might exist for use by the Cloud Shell and other services.
 
-    :::image type="content" source="../media/4-select-storage.png" alt-text="Screenshot of the Storage accounts blade in the Azure portal, with the storage account that contains the web application logs highlighted.":::
+    :::image type="content" source="../media/4-select-storage.png" alt-text="Screenshot of the Storage accounts blade, with the storage account that contains the web application logs highlighted.":::
 
 1. On the **Storage account** blade, select **Overview** > **Containers**.
 
-    :::image type="content" source="../media/4-containers.png" alt-text="Screenshot of the Storage account, blade with Overview in the menu and the Containers tile highlighted.]
+    :::image type="content" source="../media/4-containers.png" alt-text="Screenshot of the Storage account blade, with Overview in the menu and the Containers tile highlighted.":::
     
 1. On the **Containers** blade, select the **workshopcontainer** container.
 
@@ -440,7 +439,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. On the **Performance** blade, select any operation. In the **Drill into...** section, select **Samples**.
 
-    :::image type="content" source="../media/4-select-operation.png" alt-text="Screenshot of the Performance blade, with a GET operation and the Samples button highlighted.":::
+    :::image type="content" source="../media/4-select-operation.png" alt-text="Screenshot of the Performance blade, with a GET operation and the Samples button highlighted..":::
     
     > [!NOTE]
     > It might take several minutes for the logging data to appear in Blob storage. You might need to wait and refresh the page if no operations are shown.
