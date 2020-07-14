@@ -1,11 +1,11 @@
-The example web application used in this module is based on part of an e-commerce system. The sample web application enables a warehouse employee to update the details of products sold by the system and to maintain the current stock levels.
+The example web application in this module is part of an e-commerce system. The sample web application provides a way for a warehouse employee to update the details of products sold by a company and to maintain current stock levels.
 
-First, you'll download and test the application locally, and then you'll create the resources needed to deploy the application to Azure and configure the application. You'll do the deployment and configuration in a later unit in this module.
+First, you'll download and test the application locally, and then you'll create resources that are needed to deploy the application to Azure and configure the application. You'll configure and deploy the application later in this module.
  
 ## Download and test the sample web application locally
 
 1. In File Explorer in Windows, create a folder named *MigrationWorkshop* in a convenient place on your computer.
-1. Open a Command Prompt window and change the directory to the *MigrationWorkshop* folder.
+1. Open a Command Prompt window, and then change the directory to the *MigrationWorkshop* folder.
 1. Run the following command to download the sample application from the Microsoft repository on GitHub:
 
     ```bash
@@ -27,7 +27,7 @@ First, you'll download and test the application locally, and then you'll create 
   
     If the prompt is shown, select **Install** to install the required items, and then follow the instructions.
 
-1. This project currently uses v2.0.1 of the Microsoft.CodeDom.Providers.DotNetCompilerPlatform assembly. The version has an issue that requires you to restart Visual Studio to refresh a cached value. To refresh the cache, complete the following steps:
+1. This project currently uses v2.0.1 of the Microsoft.CodeDom.Providers.DotNetCompilerPlatform assembly. The version has an issue that requires you to restart Visual Studio to refresh a cached value:
 
     1. Close Visual Studio and then restart it. 
     2. Open the eShopLegacyWebFormsSolution solution. On the **Build** menu, select **Rebuild Solution**.
@@ -36,7 +36,7 @@ First, you'll download and test the application locally, and then you'll create 
 
     :::image type="content" source="../media/2-open-web-config.png" alt-text="Screenshot of Solution Explorer, with the Web.config file highlighted.":::
 
-1. In the Web.config file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting causes the application to use data that's stored in a local SQL Server database:
+1. In the *Web.config* file, in the **appSettings** section, set the value of the **UseMockData** key to **false**. This setting causes the application to use data that's stored in a local SQL Server database.
 
     ```xml
     ...
@@ -47,20 +47,20 @@ First, you'll download and test the application locally, and then you'll create 
     ...
     ```
 
-1. Press **F5** to build and run the application. The application opens a web browser and displays the Catalog Manager page in the web application.
+1. Press **F5** to build and run the application. The application opens a web browser and displays the Catalog manager page in the web application:
 
     :::image type="content" source="../media/2-catalog-manager.png" alt-text="Screenshot of the Catalog manager page in the eShop onContainers sample web application in a web browser window.":::
 
-    You can use Catalog Manager to view the products that are sold by the organization, add new products, modify the details of existing products, and delete products.
+    You can use the Catalog manager page to view the products that are sold by the organization, add new products, modify the details of existing products, and delete products.
 
 1. Experiment with the application. Try adding, editing, and removing products. Close the web browser when you're finished. This action stops the application and returns you to Visual Studio.
 
-## Create Azure resources for running the application as an Azure web app
+## Create Azure resources to run the application as an Azure web app
 
-1. In the Cloud Shell window on the right, run the next commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password of your choosing. This password will be used by the instance of Azure SQL Database that the application connects to.  
+1. In the Cloud Shell window on the right, run the next commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password that you choose. The password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
-    > The resource group [sandbox resource group name] is automatically created. Use this as your resource group name. You don't have permissions to create additional resource groups in the sandbox.
+    > The resource group *[sandbox resource group name]* is automatically created. Use this as your resource group name. You don't have permissions in the sandbox to create additional resource groups.
 
     ```powershell
     $useralias = "<your-initals-with-suffix>"
@@ -74,7 +74,7 @@ First, you'll download and test the application locally, and then you'll create 
     $resourcegroupname = "[sandbox resource group name]"
     ```
 
-1. Run the following commands to define further variables that will be used to create the resources used by this module:
+1. Run the following commands to define more variables that will be used to create the resources used by this module:
 
     ```powershell
     $location = "eastus"
@@ -85,7 +85,7 @@ First, you'll download and test the application locally, and then you'll create 
     $dbname = "eShop"
     ```
 
-1. Run the following command to create a new Azure App Service plan for hosting the web app:
+1. Create a new Azure App Service plan to host the web app:
 
     ```powershell
     New-AzAppServicePlan `
@@ -93,7 +93,8 @@ First, you'll download and test the application locally, and then you'll create 
         -ResourceGroup $resourcegroupname `
         -Location $location
     ```
-1. Run the following command to create a web app using the App Service plan:
+
+1. Create a web app by using the App Service plan:
 
     ```powershell
     New-AzWebApp `
@@ -103,7 +104,7 @@ First, you'll download and test the application locally, and then you'll create 
         -Location $location
     ```
 
-1. Run the following command to assign a managed identity to the web app. You'll require this identity later:
+1. Assign a managed identity to the web app. You'll require this identity later.
 
     ```powershell
     Set-AzWebApp `
@@ -112,7 +113,7 @@ First, you'll download and test the application locally, and then you'll create 
         -ResourceGroupName $resourcegroupname
     ```
 
-1. Run the following command to create a new Azure SQL Database server:
+1. Create a new SQL Database server:
 
     ```powershell
     New-AzSqlServer `
@@ -126,7 +127,7 @@ First, you'll download and test the application locally, and then you'll create 
             -String $serveradminpassword `
             -AsPlainText -Force))
     ```
-1. Run the following command to open the SQL Database server firewall to allow access to services hosted in Azure:
+1. Open the SQL Database server firewall to allow access to services that are hosted in Azure:
 
     ```powershell
     New-AzSqlServerFirewallRule `
@@ -137,7 +138,7 @@ First, you'll download and test the application locally, and then you'll create 
         -EndIpAddress "0.0.0.0"
     ```
 
-1. Run the following command to create a database on the SQL Database server. The database will be populated later, when you migrate the web app.
+1. Create a database on the SQL Database server. The database will be populated later, when you migrate the web app.
 
     ```powershell
     New-AzSqlDatabase  `

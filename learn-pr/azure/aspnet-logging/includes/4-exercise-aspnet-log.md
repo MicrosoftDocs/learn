@@ -1,10 +1,10 @@
 .NET developers can choose from many logging frameworks that are available, including custom solutions. The web application in this module is configured to use the popular Log4Net framework. Log4Net is designed to work with log levels and appenders. You can mix and match appenders that are active for different log levels. If you're unfamiliar with this approach to logging, take a look at the [Log4Net](https://logging.apache.org/log4net/) documentation before you proceed.
 
-The logger currently is set to write to a local file. Although this approach is fine for a web app running on your desktop, it isn't appropriate for a web app that's hosted by Azure App Service. In this exercise, you modify the logger to record information in Azure Blob storage. You'll also set the logger to write to Azure Application Insights. When you use this approach, you can consolidate the logs into a common location in Azure, and then use Application Insights to capture custom telemetry that's based on information in the logs.
+The sample logger currently is set to write to a local file. Although this approach is fine for a web app running on your desktop, it doesn't meet the needs of a web app that's hosted by Azure App Service. In this exercise, you'll modify the logger to record information in Azure Blob storage. You'll also set the logger to write to Azure Application Insights. You can consolidate the logs in a common location in Azure, and then use Application Insights to capture custom telemetry that's based on information in the logs.
 
 ## Create a Blob storage account to hold log data
 
-1. In the Cloud Shell on the right, run the following command to define PowerShell variables that contain the names of the storage account and the blob container you want to create: 
+1. In the Cloud Shell on the right, run the following command to define PowerShell variables that contain the names of the storage account and the blob container to create: 
 
     ```powershell
     $storageaccountname = (-join($useralias, "storage"))
@@ -43,7 +43,7 @@ The logger currently is set to write to a local file. Although this approach is 
         ';EndpointSuffix=core.windows.net' )))
     ```
 
-1. Define a PowerShell variable that contains the name of the Application Insights instance you want to create:
+1. Define a PowerShell variable that contains the name of the Application Insights instance to create:
 
     ```powershell
     $appinsightsname = (-join($useralias, "-insights"))
@@ -114,7 +114,7 @@ The logger currently is set to write to a local file. Although this approach is 
     }
     ```
 
-1. Examine the **Page_Load** method. This method contains the logic that runs when a page is loaded in the app. The method includes statements that write log data by using the **_log** variable as the operation occurs:
+1. Examine the **Page_Load** method. This method contains the logic that runs when a page is loaded in the app. The method includes statements that write log data by using the **_log** variable as the operation occurs.
 
     ```csharp
     protected void Page_Load(object sender, EventArgs e)
@@ -133,7 +133,7 @@ The logger currently is set to write to a local file. Although this approach is 
         }
     ```
 
-1. In Solution Explorer, expand the **Catalog** folder, expand the **Create.aspx** node, and then select **Create.aspx.cs**. This file contains the C# code that runs when the user creates a new item in the product catalog. The code in this file also creates a reference to the logger and records a message when a new item is created:
+1. In Solution Explorer, expand the **Catalog** folder, expand the **Create.aspx** node, and then select **Create.aspx.cs**. This file contains the C# code that runs when the user creates a new item in the product catalog. The code in this file also creates a reference to the logger and records a message when a new item is created.
 
     ```csharp
     public partial class Create : System.Web.UI.Page
@@ -234,7 +234,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. In the **Tools** menu, select **NuGet Package Manager** > **Package Manager Console**.
 
-1. In the Package Manager Console, run the following commands to install the Log4Net packages that are required for writing to Application Insights and Azure Blob storage:
+1. In Package Manager Console, run the following commands to install the Log4Net packages that are required for writing to Application Insights and Azure Blob storage:
 
     ```powershell
     Install-Package Microsoft.ApplicationInsights.Log4NetAppender
@@ -264,11 +264,11 @@ The logger currently is set to write to a local file. Although this approach is 
 
 ## Deploy the web app to Azure
 
-1.  In Solution Explorer, expand the *Models* folder, expand the *Infrastructure* folder, and then select the *dbo.catalog_brand_hilo.Sequence.sql* file to open the file.
+1.  In Solution Explorer, expand the **Models** folder, expand the **Infrastructure** folder, and then select the **dbo.catalog_brand_hilo.Sequence.sql** file to open the file.
 
     :::image type="content" source="../media/4-edit-sql-file.png" alt-text="Screenshot of Solution Explorer, with the dbo.catalog_brand_hilo.Sequence.sql file highlighted.":::
 
-1. Comment out the `USE` statement at the start of the file:
+1. Comment-out the `USE` statement at the start of the file:
 
     ```sql
     -- USE [Microsoft.eShopOnContainers.Services.CatalogDb]
@@ -298,7 +298,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. If you didn't previously deploy the web app and configure the connection to Azure SQL Database, complete the following substeps; otherwise, go to step 7.
 
-    1. In the Azure PowerShell window, run the following command to allow your computer to access the Azure SQL Database server you created in the setup unit. Replace *YourIPAddress* with the public IP address of your computer.
+    1. In the Azure PowerShell window, run the following command to give your computer access the SQL Database server you created in the setup unit. Replace *YourIPAddress* with the public IP address of your computer.
 
         ```powershell
         New-AzSqlServerFirewallRule `
@@ -310,16 +310,16 @@ The logger currently is set to write to a local file. Although this approach is 
         ``` 
 
         > [!NOTE]
-        > Make sure you specify the public IP address of your computer, and not the IP address of the host that's running Cloud Shell.
+        > Make sure you specify the public IP address of your computer, not the IP address of the host that's running Cloud Shell.
 
-    1. In Visual Studio, on the **Pick a publish target** pane, select **App Service** > **Select Existing** > **Create Profile**.
+    1. In Visual Studio, on the **Pick a publish target** pane, select **App Service**, select **Select Existing**, and then select **Create Profile**.
 
         :::image type="content" source="../media/4-pick-publishing-target.png" alt-text="Screenshot of the Pick a publish target pane, with App Service highlighted and the Select Existing option selected.":::
         
     1. In the **App Service** pane:
        1. Select your Azure subscription.
        1. For **View**, select **Resource type**.
-       1. Expand **Web App**, and then select the Azure web app you created during the setup unit.
+       1. Expand **Web App**, and then select the Azure web app you created in the setup unit.
        1. Select **OK**.
 
        :::image type="content" source="../media/4-select-app-service.png" alt-text="Screenshot of the App Service pane, with the View value and the web app that was created earlier highlighted.":::
@@ -332,7 +332,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
         :::image type="content" source="../media/4-publish-next.png" alt-text="Screenshot of the Connection tab of the Publish dialog box, with the Next button highlighted.":::
                 
-   1. On the **Settings** tab, to the right of the ***Remote connection string*** text box, select the ellipsis button **(...)**.
+   1. On the **Settings** tab, to the right of the ***Remote connection string*** text box, select the ellipsis (**...**).
 
         :::image type="content" source="../media/4-publish-ellipsis.png" alt-text="Screenshot of the Settings tab of the Publish dialog box, with the ellipses button highlighted.":::
     
@@ -358,7 +358,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
     :::image type="content" source="../media/4-webapp-publish.png" alt-text="Screenshot of the Publish page, with the web app displayed and the Publish button highlighted.":::
 
-1. Wait while the web app is built and deployed to App Service. When deployment is finished, the web app starts and Visual Studio opens a web browser. Verify that the web app operates the same manner way it did before when running locally. Browse the website, edit one or more products, create a new product to test the app, and then delete the new product.
+1. Wait while the web app is built and deployed to App Service. When deployment is finished, the web app starts and Visual Studio opens a web browser. Verify that the web app operates the same way it did when it was running locally. Move around the website: edit one or more products, and then create and delete a new product to test the app.
 
 ## View the log data and examine the Application Insights telemetry
 
@@ -368,7 +368,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
     :::image type="content" source="../media/4-search-storage.png" alt-text="Screenshot of the start page in the Azure portal, with Storage in the search box and Storage accounts under Services highlighted.":::
 
-1. On the **Storage accounts** blade, select the storage account you created earlier to store the web application logs. In this exercise, the storage account name is prefixed with your ID and the number you specified when you created you user alias in the setup unit. Other storage accounts might exist for use by the Cloud Shell and other services.
+1. On the **Storage accounts** blade, select the storage account you created earlier to store the web application logs. In this exercise, the storage account name is prefixed with your ID and the number you specified when you created you user alias in the setup unit. Other storage accounts might exist and be used by Cloud Shell and other services.
 
     :::image type="content" source="../media/4-select-storage.png" alt-text="Screenshot of the Storage accounts blade, with the storage account that contains the web application logs highlighted.":::
 
@@ -380,19 +380,19 @@ The logger currently is set to write to a local file. Although this approach is 
 
     :::image type="content" source="../media/4-workshop-container.png" alt-text="Screenshot of the Containers blade, with the workshopcontainer container highlighted.":::
  
-1. On the **Blobs** blade, select the **eShopModernizedLogs** folder. 
+1. On the container's blobs blade, select the **eShopModernizedLogs** folder. 
 
-    :::image type="content" source="../media/4-workshop-blob.png" alt-text="Screenshot of the Blobs blade, with the eShopModernizedLogs folder highlighted.":::
+    :::image type="content" source="../media/4-workshop-blob.png" alt-text="Screenshot of the container's blobs blade, with the eShopModernizedLogs folder highlighted.":::
 
-1. Select the append blob that appears in this folder. The blob named by using the current date, with the suffix *.entry.log.xml*. 
+1. Select the append blob that is shown in this folder. The blob is named by using the current date, with the suffix *.entry.log.xml*. 
 
-    :::image type="content" source="../media/4-log-blob.png" alt-text="Screenshot of the Blobs blade, with the blob that contains the log entries generated by the web app highlighted.":::
+    :::image type="content" source="../media/4-log-blob.png" alt-text="Screenshot of the Blobs blade, with the blob that contains the log entries that were generated by the web app highlighted.":::
  
 1. On the details pane for the blob, select **Download**.
 
     :::image type="content" source="../media/4-blob-download.png" alt-text="Screenshot of the blob details pane, with the Download button highlighted.":::
 
-1. Use Notepad to open the downloaded file, and then browse the file contents. The file contains the log entries written by the web app. The log entries should resemble the ones shown in the following example:
+1. Use Notepad to open the downloaded file, and then browse the file contents. The file contains the log entries that were written by the web app. The log entries should resemble the ones shown in the following example:
 
     ```xml
     <LogEntry>
@@ -421,7 +421,7 @@ The logger currently is set to write to a local file. Although this approach is 
     </LogEntry>
     ```
 
-    The **\<RenderedMessage\>** element in each entry contains the data written using the **_log** object in the application code.
+    The **\<RenderedMessage\>** element in each entry contains data that was written by using the **_log** object in the application code.
 
 1. Close Notepad and return to the Azure portal.
 
@@ -429,9 +429,9 @@ The logger currently is set to write to a local file. Although this approach is 
 
     :::image type="content" source="../media/4-menu-services.png" alt-text="Screenshot of the menu button in the Azure portal, with All services highlighted.":::
 
-1. On the **All service** page, in the search box, enter **Application Insights**, and then press Enter.
+1. On the **All services** page, in the search box, enter **Application Insights**, and then press Enter.
 
-1. On the **Application Insights** blade, select the Application Insights instance you created earlier. The **Overview** pane should display the general statistics for the web app.
+1. On the **Application Insights** blade, select the Application Insights instance you created earlier. The **Overview** pane should display general statistics for the web app.
 
 1. In the menu, under **Investigate**, select **Performance**.
 
@@ -439,10 +439,10 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. On the **Performance** blade, select any operation. In the **Drill into...** section, select **Samples**.
 
-    :::image type="content" source="../media/4-select-operation.png" alt-text="Screenshot of the Performance blade, with a GET operation and the Samples button highlighted..":::
+    :::image type="content" source="../media/4-select-operation.png" alt-text="Screenshot of the Performance blade, with a GET operation and the Samples button highlighted.":::
     
     > [!NOTE]
-    > It might take several minutes for the logging data to appear in Blob storage. You might need to wait and refresh the page if no operations are shown.
+    > It might take several minutes for the logging data to appear in Blob storage. If no operations are shown, refresh the page.
 
 1. On the **Select a sample operation** pane, select any of the samples that are shown.
 
@@ -452,11 +452,11 @@ The logger currently is set to write to a local file. Although this approach is 
 
     :::image type="content" source="../media/4-end-to-end-details.png" alt-text="Screenshot of the End-to-end transaction details blade, with the View all telemetry button highlighted.":::
 
-1. On the detailed telemetry page, select any logging event. Logging events are identified as **Verbose** or **Information**. If the sample operation doesn't display any logging events, in the left pane, select a different sample.
+1. On the detailed telemetry page, select any logging event. Logging events are identified as *Verbose* or *Information*. If the sample operation doesn't display any logging events, in the left pane, select a different sample.
 
     :::image type="content" source="../media/4-select-logging.png" alt-text="Screenshot of the End-to-end transaction details blade, with a logging event highlighted.":::
 
-1. On the **Trace** pane, in the **Message** box, select **Show more**.
+1. On the **Trace** pane, in the **Message** box, select **show more**.
 
     :::image type="content" source="../media/4-trace-pane.png" alt-text="Screenshot of the Trace pane, with the Show more link highlighted.":::
 
