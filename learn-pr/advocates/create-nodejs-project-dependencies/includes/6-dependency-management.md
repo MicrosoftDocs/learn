@@ -15,8 +15,8 @@ So why is it such a big deal? Changes to a package are about introducing risk, r
 Semantic versioning is how you express what type of change you or some other developer is introducing to a library. How semantic versioning works is by ensuring a package has a version number and that the version number is divided up into the following sections:
 
 - **major version**, the leftmost number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. You might need to rewrite part of your code.
-- **minor version**, the middle number e.g the `2` in `1.2.0`, means features have been added. Your code should still be working. It's generally safe to update the minor version.
-- **patch version**, the rightmost number e.g the `3` in `1.2.3`, means a fix has been applied that *fixes* something in the code that should have worked. It should be safe to update patch version.
+- **minor version**, the middle number, e.g,  the `2` in `1.2.0`, means features have been added. Your code should still be working. It's generally safe to update the minor version.
+- **patch version**, the rightmost number, e.g,  the `3` in `1.2.3`, means a fix has been applied that *fixes* something in the code that should have worked. It should be safe to update patch version.
 
 Below is a table showing different types and what number changes in what position.
 
@@ -65,7 +65,7 @@ Together with the `package.json` manifest file you also have the `package-lock.j
 
 This file *should be committed* to your repository and why is that?
 
-Well, for one it *guarantees exact installs*. Remember how in a `package.json` you define patterns for what type of installs you need like a patch, minor or major version? Patterns aren't very exact, you wouldn't know if you installed for example version `1.4` or `1.5` with a `1.x` pattern. Why do I need to know that exactly? Imagine you have a scenario where you specify `1.x` and you at the time where using `1.2` and a new version `1.4` was released of that library that ended up breaking your code. Someone else installing your app will get a non functioning app at that point. But, if there's a `package-lock.json` file stating `1.2` was used then `1.2` will be installed. So who cares about this behavior? The answer is people using your app/tool and CI, continuous integration tools.
+Well, for one it *guarantees exact installs*. Remember how in a `package.json` you define patterns for what type of installs you need like a patch, minor or major version? Patterns aren't very exact, you wouldn't know if you installed, for example,  version `1.4` or `1.5` with a `1.x` pattern. Why do I need to know that exactly? Imagine you have a scenario where you specify `1.x` and you at the time were using `1.2` and a new version `1.4` was released of that library that ended up breaking your code. Someone else installing your app will get a non-functioning app at that point. But, if there's a `package-lock.json` file stating `1.2` was used then `1.2` will be installed. So who cares about this behavior? The answer is people using your app/tool and CI, continuous integration tools.
 
 It's important to understand how it's used and *what file* decides when an install operation is carried out. It works like this, if the `package.json` and what's in the `package-lock.json` agrees on semantic rule level, i.e the pattern says for example `1.x` in `package.json` and `package-lock.json` specifies that `1.4` is installed then `1.4` would be installed. However, if the `package.json` has been updated to let's say `1.8.x` then `package-lock.json` would not be obeyed and version and at least `1.8.0` would be installed, or higher patch version if available.
 
@@ -73,13 +73,24 @@ It should also be mentioned that there are other features that `package-lock.jso
 
 ## Find and update outdated packages
 
-There's a command called `npm outdated` that will list outdated packages. Using that command can be a great help to find out when there are newer versions of packages that has been released. A recommended workflow is therefore running the following commands after each other:
+There's a command called `npm outdated` that will list outdated packages. Using that command can be a great help to find out when there are newer versions of packages that have been released. Here's what a typical output can look like when you run `npm outdated`:
+
+```output
+Package     Current  Wanted   Latest  Location
+lodash        1.0.0   1.0.0  4.17.19  lock-test
+node-fetch    1.2.0   1.2.0    2.6.0  lock-test
+```
+
+The above columns have the following meaning:
+
+- `Wanted`, this column lists the latest version matching the semantic pattern you specified in the `package.json` file.
+- `Latest`, lists the latest version of the package.
+- `Location`, a column listing where dependency was found. The `outdated` command crawls through all installed packages in `node_modules`.
+
+A recommended workflow is therefore running the following commands after each other:
 
 1. Run `npm outdated`, lists all the outdated packages along with columns `Wanted`, `Latest` and `Location`:
-   - `Wanted`, this column lists the latest version matching the semantic pattern you specified in the `package.json` file.
-   - `Latest`, lists the latest version of the package.
-   - `Location`, a column listing where dependency was found. The `outdated` command crawls through all installed packages in `node_modules`.
-1. Run `npm update <optional package name>`, running this command with a package name specified will attempt to update only that specific package. If package name is omitted then it will attempt to update all the packages in `package.json`.
+1. Run `npm update <optional package name>`, running this command with a package name specified will attempt to update only that specific package. If package name is omitted, then it will attempt to update all the packages in `package.json`.
 
 ## Managing security issues
 
