@@ -1,11 +1,11 @@
 ### YamlMime:Module
 uid: create-azure-resource-manager-template-vs-code
 metadata:
-  title: "TBD - Learn"
+  title: "Manage and orchestrate Azure resources using Azure Resource Manager templates  - Learn"
   description: TBD
   ms.date: 10/15/2020
-  author: jamcneil
-  ms.author: jumcn
+  author: pierreroman
+  ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "TBD"
@@ -31,9 +31,15 @@ products:
 - vs-code
 units:
 - learn.create-azure-resource-manager-template-vs-code.1-introduction
-- learn.create-azure-resource-manager-template-vs-code.2-TBD
-- learn.create-azure-resource-manager-template-vs-code.3-exercise-TBD
-- learn.create-azure-resource-manager-template-vs-code.4-knowledge-check
-- learn.create-azure-resource-manager-template-vs-code.5-summary
+- learn.create-azure-resource-manager-template-vs-code.2-whatif
+- learn.create-azure-resource-manager-template-vs-code.3-exercise-whatif
+- learn.create-azure-resource-manager-template-vs-code.4-singledeployment
+- learn.create-azure-resource-manager-template-vs-code.5-exercise-singledeployment
+- learn.create-azure-resource-manager-template-vs-code.6-linkedtemplates
+- learn.create-azure-resource-manager-template-vs-code.7-exercise-linkedtemplates
+- learn.create-azure-resource-manager-template-vs-code.8-githubaction
+- learn.create-azure-resource-manager-template-vs-code.9-exercise-githubaction
+- learn.create-azure-resource-manager-template-vs-code.10-knowledge-check
+- learn.create-azure-resource-manager-template-vs-code.11-summary
 badge:
   uid: create-azure-resource-manager-template-vs-code.badge
