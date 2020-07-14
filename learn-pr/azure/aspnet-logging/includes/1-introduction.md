@@ -14,5 +14,5 @@ By the end of this module, you'll be able to:
 - An Azure subscription. If you don't have an Azure account, you can [create a free trial subscription](https://azure.microsoft.com/free/).
 - Some C# programming experience
 - Familiarity with ASP.NET development
-- A development environment that has Windows 10 and Visual Studio 2019, with the latest updates
+- A development environment that has Windows 10 and Visual Studio 2019 installed, with the latest updates
 - Git for Windows installed on your desktop

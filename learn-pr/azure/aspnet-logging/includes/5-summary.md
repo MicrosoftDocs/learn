@@ -9,7 +9,7 @@ In this module, you learned:
 
 ## Learn more
 
-To learn more about using logging and tracing in an ASP.NET web app, visit the following articles:
+To learn more about using logging and tracing in an ASP.NET web app, see the following articles:
 
 - [Trace and instrument applications](https://docs.microsoft.com/dotnet/framework/debug-trace-profile/tracing-and-instrumenting-applications)
 - [Logging in .NET Core and ASP.NET Core](https://docs.microsoft.com/aspnet/core/fundamentals/logging/)
