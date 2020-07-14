@@ -4,7 +4,7 @@ title: Azure Machine Learning estimators
 metadata:
   title: Azure Machine Learning estimators
   description: "Learn how to use an estimator to run a training script as an experiment."
-  ms.date: 06/07/2020
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
