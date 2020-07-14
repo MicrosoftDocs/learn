@@ -155,9 +155,8 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. In File Explorer in Windows, go to the *MigrationWorkshop\eShopModernizing\eShopLegacyWebFormsSolution\src\eShopLegacyWebForms* folder. Verify that this folder contains a subfolder named *logFiles*.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of Windows Explorer showing the contents of the folder for the web app. The logFiles folder is highlighted](..\media\4-logfiles-folder.png)
-
+    :::image type="content" source="../media/4-logfiles-folder.png" alt-text="Screenshot of Windows Explorer showing the contents of the folder for the web app. The logFiles folder is highlighted.":::
+    
 1. Verify that the *logFiles* folder contains a text file named *myapp*. This file is a log file that was created when you ran the web app in the setup unit.
 
 1. Use Notepad to open the file. The file should contain text that resembles the following example. Each line is a log message that contains the date, time, log level, and text output by the various webpages. The messages are formatted in the layout that's described by the ***\<layout\>*** element in the *log4Net.xml* file.
@@ -264,6 +263,8 @@ The logger currently is set to write to a local file. Although this approach is 
 ## Deploy the web app to Azure
 
 1.  In Solution Explorer, expand the *Models* folder, expand the *Infrastructure* folder, and then select the *dbo.catalog_brand_hilo.Sequence.sql* file.
+
+    :::image type="content" source="../media/4-logfiles-folder.png" alt-text="Screenshot of Windows Explorer showing the contents of the folder for the web app. The logFiles folder is highlighted.":::
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of Solution Explorer. The user has selected the dbo.catalog_brand_hilo.Sequence.sql file.](../media/4-edit-sql-file.png)
@@ -463,15 +464,15 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. In the **Select a sample operation** blade, select any of the samples displayed.
 
-    :::image type="content" source="../media/4-select-sample.png" alt-text="Screenshot of the **Select a sample operation** blade. The user has selected a sample operation.":::
+    :::image type="content" source="../media/4-select-sample.png" alt-text="Screenshot of the Select a sample operation blade. The user has selected a sample operation.":::
 
 1. In the **End-to-end transaction details** blade, select **View all telemetry**.
 
-    :::image type="content" source="../media/4-end-to-end-details.png" alt-text="Screenshot of the End-to-end transaction details blade. The user has clicked **View all telemetry**.:::
+    :::image type="content" source="../media/4-end-to-end-details.png" alt-text="Screenshot of the End-to-end transaction details blade. The user has clicked View all telemetry.":::
 
 1. On the detailed telemetry page, select any logging event. Logging events are identified as **Verbose** or **Information**. If the sample operation doesn't display any logging events, click a different sample in the left pane.
 
-    :::image type="content" source="../media/4-select-logging.png" alt-text="Screenshot of the **End-to-end transaction details** blade. The user has selected a logging event.":::
+    :::image type="content" source="../media/4-select-logging.png" alt-text="Screenshot of the End-to-end transaction details blade. The user has selected a logging event.":::
 
 1. In the **Trace** pane, in the **Message** box, select **Show more**.
 
