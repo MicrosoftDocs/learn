@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage hybrid resources at scale
-durationInMinutes: 12
+durationInMinutes: 8
 content: |
   [!include[](includes/6-manage-hybrid-scale.md)]

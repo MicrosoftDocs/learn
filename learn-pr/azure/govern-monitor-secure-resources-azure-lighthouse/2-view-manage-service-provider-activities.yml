@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: View and manage service providers and their activities
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/2-view-manage-service-provider-activities.md)]
       

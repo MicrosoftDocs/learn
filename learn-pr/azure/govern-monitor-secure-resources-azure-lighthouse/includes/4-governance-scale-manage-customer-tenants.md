@@ -1,4 +1,4 @@
-You’ve seen how Relecloud monitors its customer tenants in a centralized and scalable way. Because Relecloud has onboarded multiple customers with Azure delegated resource management, the company wants to ensure it stays compliant with all corporate standards and service level agreements. You’ll investigate how Relecloud can help ensure compliance by using Azure Policy. You’ll explore how Relecloud can deploy policies to customer tenants at scale, and how to use policies with remediation tasks in a customer tenant, to remediate noncompliance.
+You’ve seen how Relecloud monitors its customer tenants in a centralized and scalable way. Because Relecloud has onboarded multiple customers with Azure delegated resource management, the company wants to ensure it stays compliant with all corporate standards and service level agreements. You’ll investigate how Relecloud can help ensure compliance by using Azure Policy. You’ll explore how Relecloud can deploy policies to customer tenants at scale, and how to use policies with remediation tasks in a customer tenant, to remediate non-compliance.
 
 ## Deploy a policy for multiple tenants
 
