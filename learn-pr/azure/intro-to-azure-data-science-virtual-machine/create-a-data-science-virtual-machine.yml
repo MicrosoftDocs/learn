@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-data-science-virtual-machine.create-a-data-science-virtual-machine
 metadata:
   title: Create a Data Science Virtual Machine
-  description: Create and connect to a DSVM using Azure Learn
+  description: Create and connect to an Ubuntu DSVM using XFCE
   ms.date: 2020-07-01
   author: lobrien
   ms.author: laobri

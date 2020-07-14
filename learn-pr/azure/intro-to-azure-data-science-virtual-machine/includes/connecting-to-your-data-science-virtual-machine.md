@@ -72,7 +72,7 @@ The Linux VM is already provisioned with X2Go Server and ready to accept client 
    - **Media tab**: You can turn off sound support and client printing if you don't need to use them.
    - **Shared folders**: If you want directories from your client machines mounted on the Linux VM, add the client machine directories that you want to share with the VM on this tab.
 
-   ![X2go configuration](./media/dsvm-ubuntu-intro/x2go-ubuntu.png)
+   ![X2go configuration](../media/dsvm-ubuntu-intro/x2go-ubuntu.png)
 
 1. Select **OK**.
 1. Click on the box in the right pane of the X2Go window in order to bring up the log-in screen for your VM.
