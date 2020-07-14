@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: create-azure-resource-manager-template-vs-code
+uid: learn.azure.resource-manager-template-deploy-integrate
 metadata:
   title: "Manage and orchestrate Azure resources using Azure Resource Manager templates  - Learn"
   description: TBD
@@ -30,16 +30,16 @@ products:
 - azure
 - vs-code
 units:
-- learn.create-azure-resource-manager-template-vs-code.1-introduction
-- learn.create-azure-resource-manager-template-vs-code.2-whatif
-- learn.create-azure-resource-manager-template-vs-code.3-exercise-whatif
-- learn.create-azure-resource-manager-template-vs-code.4-singledeployment
-- learn.create-azure-resource-manager-template-vs-code.5-exercise-singledeployment
-- learn.create-azure-resource-manager-template-vs-code.6-linkedtemplates
-- learn.create-azure-resource-manager-template-vs-code.7-exercise-linkedtemplates
-- learn.create-azure-resource-manager-template-vs-code.8-githubaction
-- learn.create-azure-resource-manager-template-vs-code.9-exercise-githubaction
-- learn.create-azure-resource-manager-template-vs-code.10-knowledge-check
-- learn.create-azure-resource-manager-template-vs-code.11-summary
+- learn.azure.resource-manager-template-deploy-integrate.1-introduction
+- learn.azure.resource-manager-template-deploy-integrate.2-whatif
+- learn.azure.resource-manager-template-deploy-integrate.3-exercise-whatif
+- learn.azure.resource-manager-template-deploy-integrate.4-singledeployment
+- learn.azure.resource-manager-template-deploy-integrate.5-exercise-singledeployment
+- learn.azure.resource-manager-template-deploy-integrate.6-linkedtemplates
+- learn.azure.resource-manager-template-deploy-integrate.7-exercise-linkedtemplates
+- learn.azure.resource-manager-template-deploy-integrate.8-githubaction
+- learn.azure.resource-manager-template-deploy-integrate.9-exercise-githubaction
+- learn.azure.resource-manager-template-deploy-integrate.10-knowledge-check
+- learn.azure.resource-manager-template-deploy-integrate.11-summary
 badge:
-  uid: create-azure-resource-manager-template-vs-code.badge
+  uid: uid: learn.azure.resource-manager-template-deploy-integrate.badge
