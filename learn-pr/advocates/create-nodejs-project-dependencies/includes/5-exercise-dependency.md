@@ -1,4 +1,4 @@
-Tailwind Traders realize that they are about to put extensive development resources on developing apps for the Node.js platform. One thing all these apps is going to need is testing. After some analysis, they've found Node.js to have limited testing capabilities. You will therefore need to depend on a framework. They've found Jest at the NPM registry, it seems widely used and promises to be a zero-config test framework. All they want from you at this point is to install Jest, write a couple of tests and run them to see if it delivers on its promise. 
+Tailwind Traders realize that they're about to put extensive development resources on developing apps for the Node.js platform. One thing all these apps is going to need is testing. After some analysis, they've found Node.js to have limited testing capabilities. You will therefore need to depend on a framework. They've found Jest at the NPM registry, it seems widely used and promises to be a zero-config test framework. All they want from you at this point is to install Jest, write a couple of tests and run them to see if it delivers on its promise. 
 
 ## Add a testing package using the NPM tool
 
@@ -48,7 +48,7 @@ You've been given some app code that parses an address from a string. So your ta
     }
    ```
 
-1. Create the directory `__tests__` and inside of it the file `address_parser.js`
+1. Create the directory `__tests__` and inside of it the file `address-parser.js`
 
    Your project structure should now look like so:
 
@@ -108,5 +108,5 @@ You've been given some app code that parses an address from a string. So your ta
 
    Success, your test passes and you've added a new capability *testing* by installing a dependency.
 
-Congrats you've managed to successfully install Jest, a dependency, write tests for application code and run the tests. Jest seems to deliver in on its promise and TailwindTraders are likely to be happy with this evaluation.
+Congrats you've managed to successfully install Jest, a dependency, write tests for application code and run the tests. Jest seems to deliver in on its promise and Tailwind Traders are likely to be happy with this evaluation.
 

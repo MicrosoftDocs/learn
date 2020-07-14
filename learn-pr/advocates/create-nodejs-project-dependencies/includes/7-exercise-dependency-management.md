@@ -64,9 +64,9 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
    node-fetch    1.0.2      1.7.3     2.6.0     lock-test
    ```
 
-   The above tells you what version you are currently on `Current`. It also tells you what the latest minor version is in the `Wanted` column. Thirdly it states the latest version there is in the `Latest` column. This may differs depending on when you take this module. Finally it tells you the location of the dependency.
+   The above tells you what version you are currently on `Current`. It also tells you what the latest minor version is in the `Wanted` column. Thirdly it states the latest version there is in the `Latest` column. This may differ depending on when you take this module. Finally it tells you the location of the dependency.
 
-1. You can with a decent level of confidence update to the `Wanted` version, it will ensure the dependencies get the latest features and patches in that major version. Type the the following command:
+1. You can, with a decent level of confidence, update to the `Wanted` version, it will ensure the dependencies get the latest features and patches in that major version. Type the following command:
 
    ```bash
    npm update
@@ -83,7 +83,7 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
 
    Above it states that your project dependencies have been updated.
 
-1. At this point you have upgraded the dependencies as far as the patterns in your `package.json` allows you. You can either install the latest version version by specifically type `npm install <name of package>@<known latest version>` or use the *latest* keyword like so `npm install <name of package>@latest`. Another thing you can do is to alter the pattern in the `package.json` file, which is what you will be doing next.  
+1. At this point, you have upgraded the dependencies as far as the patterns in your `package.json` allows you. You can either install the latest version by specifically type `npm install <name of package>@<known latest version>` or use the *latest* keyword like so `npm install <name of package>@latest`. Another thing you can do is to alter the pattern in the `package.json` file, which is what you will be doing next.  
 
 1. Locate the entry `"node-fetch": "^1.7.3"` in `package.json` and change it to `"node-fetch": "*"`, additionally locate `"lodash": "^1.3.1"` and change it to `"lodash": "*"`.
 

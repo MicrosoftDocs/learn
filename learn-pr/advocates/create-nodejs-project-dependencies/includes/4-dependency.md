@@ -75,7 +75,7 @@ Additionally this separation of different types of dependencies is built into th
 
 A normal dependency meant to be used as part of your application, is installed using the `npm install <dependency name>`. The developer dependency is something that's not meant to be shipped to production. The way to install a developer dependency is by adding the flag `--save-dev`.
 
-There's also packages that you can install *globally*. These packages are not something that's usually not meant to be imported into your project. For that reason many global packages are CLI tools. Some of these packages allow themselves to be imported however like `http-server` for example.
+There's also packages that you can install *globally*. These packages are not something that's usually not meant to be imported into your project. For that reason, many global packages are CLI tools. Some of these packages allow themselves to be imported however like `http-server` for example.
 
 Installing something globally means that it's not installed in a project's `node_modules` directory but a machine-specific directory so it's available for all Node.js projects on that machine. The way to install such packages is by adding the flag `-g` to the `install command` so the command would look like so instead `npm install <dependency name> -g`.
 
