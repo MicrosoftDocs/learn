@@ -23,6 +23,8 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
     $storageAccountName = "mslearnsa"+$uniqueID
     $location = $resourceGroup.Location
+    # The logical server name has to be unique in the system
+    $serverName = "aw-server$($uniqueID)"
     ```
 
 1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell.

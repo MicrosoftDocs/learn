@@ -21,10 +21,10 @@ quiz:
         isCorrect: false
         explanation: "This is only available in Azure SQL Managed Instance."
       - content: "With `CREATE AUDIT` there is syntax `TO EXTERNAL MONITOR`"
-        isCorrect: true
+        isCorrect: false
         explanation: "This is only available in Azure SQL Managed Instance"
       - content: "With `CREATE AUDIT` there is syntax `TO FILE`"
-        isCorrect: false
+        isCorrect: true
         explanation: "You cannot write to local files since your instance is hosted in Azure"
       - content: "All of the above"
         isCorrect: false

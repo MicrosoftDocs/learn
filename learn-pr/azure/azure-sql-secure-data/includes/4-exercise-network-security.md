@@ -16,12 +16,9 @@ During deployment of Azure SQL Database, the script used selected **Allow Azure 
     [!div class="mx-imgBorder"]
     ![Navigate to firewalls and virtual networks](../media/4-firewall-virtual-network.png)  
 
-1. Switch **Allow Azure services and resources to access this server** to **No**. During deployment, you should have added your Client IP address already, but if one of the Rules does not match your Client IP displayed (see below), select **Add Client IP**.  
+1. Switch **Allow Azure services and resources to access this server** to **No**. During deployment, you should have added your Client IP address already, but if one of the Rules does not match your Client IP displayed, select **Add Client IP**.  
 
-    [!div class="mx-imgBorder"]
-    ![Add your Client IP address](../media/4-client-ip.png)  
-
-    Finally, select **Save**. You can select **Overview** in the left-hand menu to navigate back to the overview of your database.  
+1. Finally, select **Save**. You can select **Overview** in the left-hand menu to navigate back to the overview of your database.  
 
 1. To confirm you still have access from your local machine, navigate to SSMS and refresh your connection to the Azure SQL Database logical server. If no errors occur, you have successfully configured access to your Azure SQL Database logical server for your IP address only.  
 

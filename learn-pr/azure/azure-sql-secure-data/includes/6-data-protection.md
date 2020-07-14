@@ -50,6 +50,7 @@ GRANT UNMASK TO DataOfficers
 
 Depending on who is querying, the results would be as follows.
 
+[!div class="mx-imgBorder"]
 ![Example of users with Unmask access](../media/6-mask-example.png)
 
 ## Tasks for data protection
