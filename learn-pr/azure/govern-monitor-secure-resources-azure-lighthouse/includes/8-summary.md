@@ -1,2 +1,0 @@
-You’ve learned how you, at Relecloud, can implement governance, monitor, implement automation, manage hybrid resources, and secure Lamna Healthcare’s resources.  You’ve also explored how Lamna Healthcare can view and manage its cloud service providers through Azure Lighthouse.
-Without Azure Lighthouse, you wouldn’t be able to manage Lamna healthcare’s resources through delegated Service Management. Lamna Healthcare would also not be able to manage and control access to its resources to managed service providers like Relecloud.
