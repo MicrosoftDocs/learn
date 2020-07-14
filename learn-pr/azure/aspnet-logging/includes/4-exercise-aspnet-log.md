@@ -73,7 +73,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. In Visual Studio, edit the eShopLegacyWebForms solution.
 
-1. In the Solution Explorer window, select the *log4Net.xml* file. The file contains the configuration information for the Log4Net logger. You should see the following XML markup:
+1. In Solution Explorer, select the *log4Net.xml* file. The file contains the configuration information for the Log4Net logger. You should see the following XML markup:
 
     ```xml
     <log4net>
@@ -104,7 +104,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. In Solution Explorer, expand the **Default.aspx** node, and then select **Default.aspx.cs**. This file contains the C# code that runs when the home page is viewed.
 
-1. In the **Code View** window, at the start of the **_Default** class, note that the page creates a reference to the logger in a variable named **_log** as shown in the following code:
+1. In Code View, at the start of the **_Default** class, note that the page creates a reference to the logger in a variable named **_log** as shown in the following code:
 
     ```csharp
     public partial class _Default : Page
@@ -133,9 +133,7 @@ The logger currently is set to write to a local file. Although this approach is 
         }
     ```
 
-1. In Solution Explorer, expand the **Catalog** folder, expand the **Create.aspx** node, and then select **Create.aspx.cs**. This file contains the C# code that runs when the user creates a new item in the product catalog.
-
-1. The code in this file also creates a reference to the logger, and records a message when a new item is being created:
+1. In Solution Explorer, expand the **Catalog** folder, expand the **Create.aspx** node, and then select **Create.aspx.cs**. The *Create.aspx.cs* file contains the C# code that runs when the user creates a new item in the product catalog. The code in this file also creates a reference to the logger and records a message when a new item is being created:
 
     ```csharp
     public partial class Create : System.Web.UI.Page
@@ -153,18 +151,16 @@ The logger currently is set to write to a local file. Although this approach is 
     }
     ```
 
-1. If you have time, examine the *Delete.aspx.cs*, *Details.aspx.cs*, and *Edit.aspx.cs* files. You should notice the same pattern of logging in each of these files.
+   If you take a look at the *Delete.aspx.cs*, *Details.aspx.cs*, and *Edit.aspx.cs* files, you should see the same pattern of logging in each of these files.
 
-1. Using File Explorer in Windows, go to the *MigrationWorkshop\eShopModernizing\eShopLegacyWebFormsSolution\src\eShopLegacyWebForms* folder.
-
-1. Verify that this file contains a subfolder named *logFiles*.
+1. In File Explorer in Windows, go to the *MigrationWorkshop\eShopModernizing\eShopLegacyWebFormsSolution\src\eShopLegacyWebForms* folder. Verify that this folder contains a subfolder named *logFiles*.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of Windows Explorer showing the contents of the folder for the web app. The **logFiles** folder is highlighted](..\media\4-logfiles-folder.png)
+    > ![Screenshot of Windows Explorer showing the contents of the folder for the web app. The logFiles folder is highlighted](..\media\4-logfiles-folder.png)
 
-1. Verify that the *logFiles* folder contains a text file named *myapp*. This file is a log file that's created when you ran the web app earlier, during the setup unit.
+1. Verify that the *logFiles* folder contains a text file named *myapp*. This file is a log file that was created when you ran the web app in the setup unit.
 
-1. Open the file using Notepad. The file should contain text that resembles that shown below. Each line is a log message containing the date, time, log level, and text output by the various webpages. The messages are formatted using the layout described by the ***\<layout\>*** element in the **log4Net.xml** file.
+1. Use Notepad to open the file. The file should contain text that resembles the following example. Each line is a log message that contains the date, time, log level, and text output by the various webpages. The messages are formatted in the layout that's described by the ***\<layout\>*** element in the *log4Net.xml* file.
 
     ```text
     2020-04-29 12:53:42,629 [26] (null) DEBUG eShopLegacyWebForms.Global - /, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363
@@ -187,12 +183,12 @@ The logger currently is set to write to a local file. Although this approach is 
 
 ## Modify the logging configuration to write to an Azure storage blob
 
-1. Return to Visual Studio, and open the **Log4Net.xml** file in the **Code View** window.
+1. In Visual Studio, in Code View, open the *Log4Net.xml* file.
 
-1. Replace the contents of the file with the text shown below. This configuration defines two new appenders:
+1. Replace the contents of the file with the following text. The configuration text defines two new appenders:
     
-    - The **aiAppender** appender writes to AppInsights.
-    - The **azureAppendBlobAppender** appender writes to a blob in your storage account. In this appender, replace *YourStorageAccountConnectionString* with the value in the **$storageconnectionstring** PowerShell variable. You can display the value of this variable with the command `Write-Host $storageconnectionstring`.
+    - **aiAppender**: Writes to Application Insights.
+    - **azureAppendBlobAppender**: Writes to blob storage in your storage account. In this appender, replace *YourStorageAccountConnectionString* with the value in the **$storageconnectionstring** PowerShell variable. You can use the command `Write-Host $storageconnectionstring` to display the value of this variable.
 
     ```xml
     <log4net> 
@@ -220,7 +216,7 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. In Solution Explorer, select the *ApplicationInsights.config* file to display it in Code View.
 
-1. Add the instrumentation key for your AppInsights instance before the **\<TelemetryInitializers\>** node, as shown in the following XML example. Replace *YourAppinsightsKey* with the value in the **$appinsightskey** PowerShell variable. 
+1. Add the instrumentation key for your Application Insights instance before the **\<TelemetryInitializers\>** node, as shown in the following example. Replace *YourAppinsightsKey* with the value in the **$appinsightskey** PowerShell variable. 
 
     ```xml
     <?xml version="1.0" encoding="utf-8"?>
@@ -235,18 +231,18 @@ The logger currently is set to write to a local file. Although this approach is 
     </ApplicationInsights>
     ```
 
-1. In the **Tools** menu, select **NuGet Package Manager**, and then select **Package Manager Console**.
+1. In the **Tools** menu, select **NuGet Package Manager** > **Package Manager Console**.
 
-1. In the **Package Manager Console** window, run the following commands to install the Log4Net packages that are required for writing to Application Insights and Azure Blob storage:
+1. In the Package Manager Console, run the following commands to install the Log4Net packages that are required for writing to Application Insights and Azure Blob storage:
 
     ```powershell
     Install-Package Microsoft.ApplicationInsights.Log4NetAppender
     Install-Package log4net.Appender.Azure
     ```
 
-1. Open the *web.config* file in Code View and scroll to the end of the file. 
+1. In Code View, open the *web.config* file and scroll to the end of the file. 
 
-1. Comment out the **\<log4net\>** section at the end of the file. (This section was generated by NuGet. If it's left in place, it will override the settings in the *log4net.xml* file.)
+1. Comment out the **\<log4net\>** section at the end of the file. (This section is generated by NuGet. If it's not deleted, it overrides the settings in the *log4net.xml* file.)
 
     ```xml
     <configuration>
@@ -270,9 +266,9 @@ The logger currently is set to write to a local file. Although this approach is 
 1.  In Solution Explorer, expand the *Models* folder, expand the *Infrastructure* folder, and then select the *dbo.catalog_brand_hilo.Sequence.sql* file.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the Solution Explorer window. The user has selected the **dbo.catalog_brand_hilo.Sequence.sql** file.](..\media\4-edit-sql-file.png)
+    > ![Screenshot of Solution Explorer. The user has selected the dbo.catalog_brand_hilo.Sequence.sql file.](../media/4-edit-sql-file.png)
 
-1. In the SQL file, comment out the **USE** statement at the start of the file, as shown below.
+1. In the SQL file, comment out the `USE` statement at the start of the file:
 
     ```sql
     -- USE [Microsoft.eShopOnContainers.Services.CatalogDb]
@@ -286,26 +282,26 @@ The logger currently is set to write to a local file. Although this approach is 
     CACHE 
     ```
 
-1. Repeat step 2 for the **dbo.catalog_hilo.Sequence.sql** file, and the **dbo.catalog_type_hilo.Sequence.sql** file.
+1. Repeat step 2 for the *dbo.catalog_hilo.Sequence.sql* file and the *dbo.catalog_type_hilo.Sequence.sql* file.
 
     > [!NOTE]
-    > The scripts in these files run when the database is seeded with data. This seeding happens automatically the first time the application is run against a new database. The statements that you've commented out are only required when running the application locally. When the application runs using the Azure SQL Server database, the database to be used is specified as part of the connection string.
+    > The scripts in these files run when data is added to the database. Data is added automatically the first time the application is run with a new database as the target. The statements that you commented out are required only when you run the application locally. When the application runs with the Azure SQL Database instance as the target, the database to be used is specified as part of the connection string.
 
-1. If you aren't currently signed in to your Azure account in Visual Studio, in the upper right of the toolbar, click **Sign in**. Follow the instructions and sign in.
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of the Visual Studio toolbar. The user has clicked **Sign in**.](..\media\4-toolbar-sign-in.png)
-
-1. In the **Solution Explorer** window, right-click the **eShopLegacyWebForms** project, and then click **Publish**.
+1. Ensure that you are signed in to your Azure account in Visual Studio.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the Solution Explorer window. The user has selected the **Publish** command on the context menu for the **eShopLegacyWebForms** project.](..\media\4-project-publish.png)
+    > ![Screenshot of the Visual Studio toolbar, with the Sign in link highlighted.](..\media\4-toolbar-sign-in.png)
 
-1. If you haven't previously deployed the web app and configured the connection to Azure SQL Database, complete the following substeps, otherwise go to Step 7 below.
+1. In Solution Explorer, right-click the **eShopLegacyWebForms** project, and then select **Publish**.
 
-    1. Switch back to the Azure PowerShell window, and run the following command to allow your computer to access the Azure SQL Database server you created in the Setup unit. Replace ***YourIPAddress*** with the public IP address of your computer.
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of Solution Explorer, with the Publish command in the context menu for the eShopLegacyWebForms project highlighted.](..\media\4-project-publish.png)
 
-        ```PowerShell
+1. If you haven't previously deployed the web app and configured the connection to Azure SQL Database, complete the following substeps; otherwise, go to step 7.
+
+    1. In the Azure PowerShell window, run the following command to allow your computer to access the Azure SQL Database server you created in the setup unit. Replace *YourIPAddress* with the public IP address of your computer.
+
+        ```powershell
         New-AzSqlServerFirewallRule `
             -ResourceGroupName $resourcegroupname `
             -ServerName $servername `
@@ -315,58 +311,62 @@ The logger currently is set to write to a local file. Although this approach is 
         ``` 
 
         > [!NOTE]
-        > Make sure you specify the public IP address of your computer, and not the IP address of the host running the Cloud Shell.
+        > Make sure to specify the public IP address of your computer, and not the IP address of the host that's running Cloud Shell.
 
-    1. Return to the **Pick a publish target** window in Visual Studio, select **Azure App Service**, click **Select Existing**, and then click **Create Profile**.
-
-        > [!div class="mx-imgBorder"]
-        > ![Image of the **Pick a publish target** window. The user is about to create a new profile for publishing the web app to Azure App Service.](..\media\4-pick-publishing-target.png)
-
-    1. In the **App Service** window, select your Azure subscription, set the **View** to **Resource type**, expand **Web App**, select the Azure web app you created during the Setup unit, and then click **OK**.
+    1. In Visual Studio, in the **Pick a publish target** pane, select **Azure App Service** > **Select Existing** > **Create Profile**.
 
         > [!div class="mx-imgBorder"]
-        > ![Image of the **App Service** window. The user has selected the Azure web app created earlier.](..\media\4-select-app-service.png)
+        > ![Screenshot of the Pick a publish target pane. The user is about to create a new profile for publishing the web app to Azure App Service.](..\media\4-pick-publishing-target.png)
 
-    1. On the **Publish** page, click **Edit**.
-
-        > [!div class="mx-imgBorder"]
-        > ![Image of the Publish page. The user has clicked **Edit**.](..\media\4-publish-edit.png)
-
-    1. On the **Connection** page of the **Publish** dialog box, click **Next**.
-
-        > [!div class="mx-imgBorder"]
-        > ![Image of the **Connection** page of the Publish dialog box. The user has clicked **Next**.](..\media\4-publish-next.png)
-
-    1. On the **Settings** page, by the ***Remote connection string*** text box, click the ellipsis button (...)
+    1. In the **App Service** window:
+       1. Select your Azure subscription.
+       1. Set **View** to **Resource type**.
+       1. Expand **Web App**, and then select the Azure web app you created during the setup unit.
+       1. Select **OK**.
 
         > [!div class="mx-imgBorder"]
-        > ![Image of the **Settings** page of the Publish dialog box. The user has clicked the ellipsis button for the remote connection string.](..\media\4-publish-ellipsis.png)
+        > ![Screenshot of the App Servicep pane. The user has selected the Azure web app created earlier.](..\media\4-select-app-service.png)
 
-    1. In the **Destination Connection String** dialog box, specify the values in the following table, and then click **OK**.
+    1. On the **Publish** page, select **Edit**.
+
+        > [!div class="mx-imgBorder"]
+        > ![Screenshot of the Publish page. The user has clicked **Edit**.](..\media\4-publish-edit.png)
+
+    1. In the **Publish** dialog box, on the **Connection** page, select **Next**.
+
+        > [!div class="mx-imgBorder"]
+        > ![Screenshot of the Connection page of the Publish dialog box. The user has clicked **Next**.](..\media\4-publish-next.png)
+
+    1. On the **Settings** page, next to the the **Remote connection string** text box, select the ellipsis button (...).
+
+        > [!div class="mx-imgBorder"]
+        > ![Screenshot of the Settings page of the Publish dialog box. The user has clicked the ellipsis button for the remote connection string.](..\media\4-publish-ellipsis.png)
+
+    1. In the **Destination Connection String** dialog box, set the values that are described in the following table, and then select **OK**.
 
         | Field | Value |
         |-|-|
         | Data source | Microsoft SQL Server (SqlClient) |
-        | Server name |  Specify the value in the **$servername** PowerShell variable. Append the text **".database.windows.net"** to the end of the server name |
+        | Server name |  Specify the value in the **$servername** PowerShell variable. Append the text **".database.windows.net"** to the end of the server name. |
         | Authentication | SQL Server Authentication |
-        | User name | Specify the value in the **$serveradminname** PowerShell variable |
-        | Password | Specify the value in the **$serveradminpassword** PowerShell variable |
+        | User name | Specify the value in the **$serveradminname** PowerShell variable. |
+        | Password | Specify the value in the **$serveradminpassword** PowerShell variable. |
         | Save my password | Checked |
         | Select or enter a database name | eShop |
 
 
         > [!div class="mx-imgBorder"]
-        > ![Image of the **Destination Connection String** dialog box. The user has entered the settings required to connect to the **eShop** database running in Azure SQL Database.](..\media\4-connection-string.png)
+        > ![Screenshot of the Destination Connection String dialog box. The user has entered the settings required to connect to the **eShop** database running in Azure SQL Database.](..\media\4-connection-string.png)
 
-    1. Back on the **Settings** page, check **Use this connection string at runtime (update destination web.config)** if it isn't already selected, and then select **Save**.
+    1. On the **Settings** page, select the **Use this connection string at runtime (update destination web.config)** check box, and then select **Save**.
 
         > [!div class="mx-imgBorder"]
-        > ![Image of the **Settings** page of the Publish dialog box. The user has clicked **Save**.](..\media\4-publish-save.png)
+        > ![Screenshot of the Settings page of the Publish dialog box. The user has clicked **Save**.](..\media\4-publish-save.png)
 
-1. On the **Publish** page, click **Publish**.
+1. On the **Publish** page, select **Publish**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Publish** page. The user has clicked **Publish**.](..\media\4-webapp-publish.png)
+    > ![Screenshot of the Publish page. The user has clicked **Publish**.](..\media\4-webapp-publish.png)
 
 1. Wait while the web app is built and deployed to the App Service. When deployment is complete, the web app will start and Visual Studio opens a web browser. Verify that the web app operates in the same manner as it did before, when running locally. Browse the website, edit one or more products, create a new product, and then delete it.
 
@@ -374,40 +374,40 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
-1. On the home page, in the search box, type **Storage**, select **Storage accounts**, and then press Enter.
+1. In the search box, enter **Storage**, select **Storage accounts**, and then press Enter.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the Home page in the Azure portal. The user is searching for **Storage accounts**.](..\media\4-search-storage.png)
+    > ![Screenshot of the start page in the Azure portal. The user is searching for **Storage accounts**.](..\media\4-search-storage.png)
 
 1. On the **Storage accounts** page, click the storage account you created earlier for storing the web application logs. In this exercise, the storage account name will be prefixed with your ID and the number you specified when you created you user alias in the Setup unit. Other storage accounts might exist for use by the Cloud Shell, and other services.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Storage accounts** page in the Azure portal. The user has clicked the storage account containing the web application logs.](..\media\4-select-storage.png)
+    > ![Screenshot of the **Storage accounts** page in the Azure portal. The user has clicked the storage account containing the web application logs.](..\media\4-select-storage.png)
 
 1. On the **Storage account** page, click **Overview**, and then click **Containers**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Storage account** page in the Azure portal. The user has clicked **Containers**.](..\media\4-containers.png)
+    > ![Screenshot of the **Storage account** page in the Azure portal. The user has clicked **Containers**.](..\media\4-containers.png)
 
 1. On the **Containers** page, click the **workshopcontainer** container.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Containers** page in the Azure portal. The user has clicked the **workshopcontainer** container.](..\media\4-workshop-container.png)
+    > ![Screenshot of the **Containers** page in the Azure portal. The user has clicked the **workshopcontainer** container.](..\media\4-workshop-container.png)
 
 1. On the **Blobs** page, click the **eShopModernizedLogs** folder. 
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Blob folders** page in the Azure portal. The user has clicked the **eShopModernizedLogs** folder.](..\media\4-workshop-blob.png)
+    > ![Screenshot of the **Blob folders** page in the Azure portal. The user has clicked the **eShopModernizedLogs** folder.](..\media\4-workshop-blob.png)
 
 1. Click the append blob that appears in this folder. This blob will be named after the current date, with the suffix **.entry.log.xml**. 
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **Blobs** page in the Azure portal. The user has clicked the blob containing the log entries generated by the web app.](..\media\4-log-blob.png)
+    > ![Screenshot of the **Blobs** page in the Azure portal. The user has clicked the blob containing the log entries generated by the web app.](..\media\4-log-blob.png)
 
 1. On the details pane for the blob, click **Download**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the blob details page in the Azure portal. The user has clicked **Download**.](..\media\4-blob-download.png)
+    > ![Screenshot of the blob details page in the Azure portal. The user has clicked **Download**.](..\media\4-blob-download.png)
 
 1. Open the file you downloaded using Notepad, and browse the contents. The file contains the log entries written by the web app. The log entries should resemble the ones shown in the following example:
 
@@ -442,51 +442,49 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. Close Notepad and return to the Azure portal.
 
-1. On the hamburger menu in the portal, click **All services**.
+1. Select **Menu**, and then select **All services**.
+
+    :::image type="content" source="../media/4-menu-services.png" alt-text="Screenshot of the menu button in the Azure portal, with All services highlighted.":::
+
+1. On the **All service** page, in the search box, enter **Application Insights**, and then press Enter.
+
+1. On the **Application Insights** page, select the Application Insights instance you created earlier. The **Overview** page should appear, displaying the general statistics for the web app.
+
+1. Under **Investigate**, select **Performance**.
+
+    :::image type="content" source="../media/4-performance.png" alt-text="Screenshot of the Application Insights blade. The user has clicked Performance.":::
+
+1. On the **Performance** blade, select any operation. In the **Drill into...** section, select **Samples**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the hamburger menu in the Azure portal. The user has clicked **All services**.](..\media\4-hamburger-services.png)
-
-1. On the **All service** page, in the search box, type **Application Insights**, and then press Enter.
-
-1. On the **Application Insights** page, click the AppInsights instance you created earlier. The **Overview** page should appear, displaying the general statistics for the web app.
-
-1. Under **Investigate**, click **Performance**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of the Application Insights blade. The user has clicked **Performance**.](..\media\4-performance.png)
-
-1. On the **Performance** blade, select any operation, and then click **Samples** in the **Drill into..." section**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of the **Performance** blade. The user has selected an operation and is drilling into the details.](..\media\4-select-operation.png)
+    > ![Screenshot of the Performance blade. The user has selected an operation and is drilling into the details.](..\media\4-select-operation.png)
 
     > [!NOTE]
-    > It can take several minutes for the logging data to appear in Blob storage. You might need to wait and refresh the page if no operations are displayed.
+    > It might take several minutes for the logging data to appear in Blob storage. You might need to wait and refresh the page if no operations are displayed.
 
-1. In the **Select a sample operation** blade, click any of the samples displayed.
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of the **Select a sample operation** blade. The user has selected a sample operation.](..\media\4-select-sample.png)
-
-1. On the **End-to-end transaction details** blade, click **View all telemetry**.
+1. In the **Select a sample operation** blade, select any of the samples displayed.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **End-to-end transaction details** blade. The user has clicked **View all telemetry**.](..\media\4-end-to-end-details.png)
+    > ![Screenshot of the **Select a sample operation** blade. The user has selected a sample operation.](..\media\4-select-sample.png)
+
+1. In the **End-to-end transaction details** blade, select **View all telemetry**.
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the End-to-end transaction details blade. The user has clicked **View all telemetry**.](..\media\4-end-to-end-details.png)
 
 1. On the detailed telemetry page, select any logging event. Logging events are identified as **Verbose** or **Information**. If the sample operation doesn't display any logging events, click a different sample in the left pane.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **End-to-end transaction details** blade. The user has selected a logging event.](..\media\4-select-logging.png)
+    > ![Screenshot of the **End-to-end transaction details** blade. The user has selected a logging event.](..\media\4-select-logging.png)
 
-1. On the **Trace** pane, in the **Message** box, click **Show more**.
-
-    > [!div class="mx-imgBorder"]
-    > ![Image of the **Trace** pane.](..\media\4-trace-pane.png)
-
-    The entire log message will appear in a new window. The log message includes the data written using the **_log** object in the application code.
+1. In the **Trace** pane, in the **Message** box, select **Show more**.
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the window displaying the full log message.](..\media\4-log-message.png)
+    > ![Screenshot of the Trace pane.](..\media\4-trace-pane.png)
 
-1. If you have time, examine the log events for other operations, and verify that the logging messages written by the web app are included.
+    The entire log message is shown in a new window. The log message includes the data written using the **_log** object in the application code.
+
+    > [!div class="mx-imgBorder"]
+    > ![Screenshot of the window displaying the full log message.](..\media\4-log-message.png)
+
+   If you take a look at the the log events for other operations, you can verify that the logging messages that were written by the web app are included.
