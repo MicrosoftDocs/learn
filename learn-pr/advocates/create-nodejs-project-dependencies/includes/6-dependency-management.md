@@ -96,7 +96,7 @@ A recommended workflow is therefore running the following commands after each ot
 
 Every time you update or install a package you will get a log response just after install. It will tell you what version it installed and also if there are any vulnerabilities. An example log can look like this:
 
-```bash
+```output
 + lodash@1.3.1
 added 1 package from 4 contributors and audited 1 package in 0.949s
 found 3 vulnerabilities (1 low, 2 high)
