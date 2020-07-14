@@ -456,35 +456,30 @@ The logger currently is set to write to a local file. Although this approach is 
 
 1. On the **Performance** blade, select any operation. In the **Drill into...** section, select **Samples**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Performance blade. The user has selected an operation and is drilling into the details.](..\media\4-select-operation.png)
-
+    :::image type="content" source="../media/4-select-operation.png" alt-text="Screenshot of the Performance blade. The user has selected an operation and is drilling into the details.":::
+    
     > [!NOTE]
     > It might take several minutes for the logging data to appear in Blob storage. You might need to wait and refresh the page if no operations are displayed.
 
 1. In the **Select a sample operation** blade, select any of the samples displayed.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **Select a sample operation** blade. The user has selected a sample operation.](..\media\4-select-sample.png)
+    :::image type="content" source="../media/4-select-sample.png" alt-text="Screenshot of the **Select a sample operation** blade. The user has selected a sample operation.":::
 
 1. In the **End-to-end transaction details** blade, select **View all telemetry**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the End-to-end transaction details blade. The user has clicked **View all telemetry**.](..\media\4-end-to-end-details.png)
+    :::image type="content" source="../media/4-end-to-end-details.png" alt-text="Screenshot of the End-to-end transaction details blade. The user has clicked **View all telemetry**.:::
 
 1. On the detailed telemetry page, select any logging event. Logging events are identified as **Verbose** or **Information**. If the sample operation doesn't display any logging events, click a different sample in the left pane.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the **End-to-end transaction details** blade. The user has selected a logging event.](..\media\4-select-logging.png)
+    :::image type="content" source="../media/4-select-logging.png" alt-text="Screenshot of the **End-to-end transaction details** blade. The user has selected a logging event.":::
 
 1. In the **Trace** pane, in the **Message** box, select **Show more**.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the Trace pane.](..\media\4-trace-pane.png)
+    :::image type="content" source="../media/4-trace-pane.png" alt-text="Screenshot of the Trace pane.":::
 
     The entire log message is shown in a new window. The log message includes the data written using the **_log** object in the application code.
 
-    > [!div class="mx-imgBorder"]
-    > ![Screenshot of the window displaying the full log message.](..\media\4-log-message.png)
+
+       :::image type="content" source="../media/4-log-message.png" alt-text="Screenshot of the window displaying the full log message.":::
 
    If you take a look at the the log events for other operations, you can verify that the logging messages that were written by the web app are included.
