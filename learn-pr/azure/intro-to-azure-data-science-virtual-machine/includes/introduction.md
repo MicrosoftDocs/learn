@@ -22,14 +22,8 @@ The DSVM has dozens of applications and programming tools and libraries preinsta
 In this module, you will:
 
 * Match operating systems and hardware resources available for the DSVM
-* Create a Data Science Virtual Machine running Ubuntu Server 18.04 LTS
-* Connect to the command line of the DSVM via SSH 
-* Add a non-administrative user to the DSVM
-* Connect to the graphical Desktop of the DSVM via X2Go Client 
-* Create a Jupyter Notebook powered by the DSVM and use Pytorch to do some rudimentary data manipulation
-* As a different user, access the Jupyter Notebook and data
-
-## Prerequisites
-
-- tk Azure subscription tk 
-
+* Specify and create a Data Science Virtual Machine running Ubuntu Server 18.04 LTS
+* Connect to the command line of the DSVM with SSH 
+* Connect to the graphical Desktop of the DSVM with X2Go Client 
+* Experiment with a Jupyter Notebook powered by the DSVM 
+* Demonstrate the use of a custom Python environment in the DSVM
