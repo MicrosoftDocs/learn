@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.govern-monitor-secure-resources-azure-lighthouse.8-summary
+uid: learn.govern-monitor-secure-resources-azure-lighthouse.7-summary
 metadata:
   title: Summary
   description: Summary
@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Summary
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]
 quiz:
