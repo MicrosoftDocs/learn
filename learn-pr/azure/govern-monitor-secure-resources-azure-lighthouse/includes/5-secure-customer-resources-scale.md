@@ -71,6 +71,5 @@ You deploy workbooks in your tenant to query and monitor data in customer tenant
 
 In this video, you’ll see how to use Azure Sentinel with Azure Lighthouse to get a cross-tenant view of all incidents in your customers’ subscriptions:
 
-Demo Video: 
+Demo Video:
 https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/5_SentinelDemo.mp4?csf=1&web=1&e=5YMQXi
-

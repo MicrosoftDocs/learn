@@ -14,7 +14,7 @@ By using Azure Arc, Lamna Healthcare can:
 - **Manage Kubernetes apps at scale**: Manage and deploy Kubernetes applications across any environment using DevOps techniques.
 - **Run data services anywhere**: Get automated upgrades and patches. Scale on-demand needs across all environments, for all the data estate.
 
-By creating a single control plane, Lamna Healthcare can extend its current Azure native operations and governance to resources that exist outside of Azure. 
+By creating a single control plane, Lamna Healthcare can extend its current Azure native operations and governance to resources that exist outside of Azure.
 
 :::image type="content" source="../media/6-azure-arc-governance.png" alt-text="Screenshot showing Azure Arc connected machines":::
 
@@ -26,7 +26,6 @@ To make Lamna Healthcare’s on-premises servers available to Azure, you'll need
 - The ability to store log data collected from the Log Analytics agent, in the workspace where the machine is registered
 
 The Connected Machine agent sends an update every five minutes to the Azure tenant where it's registered.
-
 
 ### Generating the Connected Machine agent installation script
 
@@ -59,7 +58,7 @@ At this stage, the Azure portal will generate the script you’ll use to onboard
 - For Windows machines, there will be a generated PowerShell script, called **OnboardingScipt.ps1**.
 - For Linux machines, the generated script will be a bash script.
 
-For more information on how to manually install the Connected Machine agent on a target machine, see [onboarding non-Azure machines using Azure Arc.](https://docs.microsoft.com/azure/azure-arc/servers/onboard-portal)[[AA5\]](#_msocom_5).
+For more information on how to manually install the Connected Machine agent on a target machine, see [onboarding non-Azure machines using Azure Arc.](https://docs.microsoft.com/azure/azure-arc/servers/onboard-portal).
 
 ### Installing the Connected Machine agent on a Windows server
 
@@ -86,11 +85,11 @@ After installing the agent, you need to configure it to communicate with the Azu
 
 At Lamna Healthcare, after you install the agent and configure it to connect to Azure Arc for servers (preview), you go to the Azure portal to verify that the server has been successfully connected. View your machines in the [Azure portal](https://aka.ms/hybridmachineportal).
 
-:::image type="content" source="../media/6-azure-arc-non-azure-machines.png" alt-text="Screen shot from Azure Portal showing the non-azure connected machines":::
+:::image type="content" source="../media/6-azure-arc-non-azure-machines.png" alt-text="Screen shot from Azure portal showing the non-azure connected machines":::
 
 ## Use Azure Lighthouse with Azure Arc Connected Machines
 
-Now that Lamna Healthcare have added all their non-Azure machines to Azure Resource Manager in the tenant, Relecloud can manage them.  Relecloud will create a service offer to Lamna Healthcare to manage the non-Azure resource groups.  As soon as Lamna Healthcare approve the service, Relecloud will manage them in the same way that they manage Azure virtual machines.
+Now that Lamna Healthcare has added all their non-Azure machines to Azure Resource Manager in the tenant, Relecloud can manage them.  Relecloud will create a service offer to Lamna Healthcare to manage the non-Azure resource groups.  As soon as Lamna Healthcare approves the service, Relecloud will manage them in the same way that they manage Azure virtual machines.
 
 :::image type="content" source="../media/6-azure-portal-connected-machines.png" alt-text="Screenshot showing Azure and Azure Arc resources":::
 
@@ -106,5 +105,5 @@ For more information on Azure Policy see [Governance policy overview](https://do
 
 In this video, you’ll see what to do to manage a customer’s cloud and on-premises resources.
 
-Demo Video: 
+Demo Video:
 https://contentm-my.sharepoint.com/personal/jezh_contentmaster_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjezh%5Fcontentmaster%5Fcom%2FDocuments%2FLighthouse%20L200%2F6%5FManageHybridResources%2Emp4&parent=%2Fpersonal%2Fjezh%5Fcontentmaster%5Fcom%2FDocuments%2FLighthouse%20L200

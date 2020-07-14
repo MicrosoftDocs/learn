@@ -1,4 +1,4 @@
-Lamna Healthcare have seen great results with Azure Lighthouse so far. Your company already use multiple service providers, and Relecloud, to manage their subscriptions and resources. You’ll explore how Lamna Healthcare can manage and view information on all their service providers. You’ll also explore how they'll view service providers’ activities, delegate specific resources through Azure delegated resource management, and browse for the newest service provider offers.
+Lamna Healthcare has seen great results with Azure Lighthouse so far. Your company already use multiple service providers, and Relecloud, to manage their subscriptions and resources. You’ll explore how Lamna Healthcare can manage and view information on all their service providers. You’ll also explore how they'll view service providers’ activities, delegate specific resources through Azure delegated resource management, and browse for the newest service provider offers.
 
 ## How Azure Lighthouse benefits Lamna Healthcare
 
@@ -30,8 +30,7 @@ Private offers:
 
 For each service provider offer, you'll see the service provider's name and the offer associated with it, along with the name that Lamna Healthcare entered during the onboarding process.
 
-When you’ve added service provider offers, you’ll see a list of all the offers that your company has signed up to, and details of the service provider that delivered each one.      
-
+When you’ve added service provider offers, you’ll see a list of all the offers that your company has signed up to, and details of the service provider that delivered each one.
 
 ### View update offers from service providers
 
@@ -53,26 +52,24 @@ https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documen
 > [!NOTE]
 > Please note that this is a silent video. You'll find additional information in captions.
 
-
 ### Audit delegations
 
 Your company has many different subscriptions and resources, so it's especially useful to help keep track of delegations.  You can use **Azure Policy built-in policy definition** for Azure Lighthouse to audit delegation of scopes to service providers. Then you can check for compliance of delegated subscriptions or resources against the policy, and stay alert for any unexpected delegations.
 
-Your company must have at least one user who has the Owner built-in role in Azure. This user can add and remove offers, and delegate resources. 
-
+Your company must have at least one user who has the Owner built-in role in Azure. This user can add and remove offers, and delegate resources.
 
 ## View service provider activity
 
-If you have delegated subscriptions for Azure delegated resource management, you can use Azure activity log data to monitor any actions taken. This way, you'll gain wider visibility into the work the service providers are doing through delegated resource management. 
+If you have delegated subscriptions for Azure delegated resource management, you can use Azure activity log data to monitor any actions taken. This way, you'll gain wider visibility into the work the service providers are doing through delegated resource management.
 
 ### View activity log data
 
 You use the activity log to see a list of activities, the status, and the date and time an activity occurred. It also shows which user performed a particular action, and whether they are from a service provider or from inside Lamna Healthcare. To keep users secure, Azure will only show the user’s role or tenant, and won’t reveal further user information.
 
-You can view the activity log in Azure Monitor, under the **Monitor** pane in the Azure portal.
+You can view the activity login Azure Monitor, under the **Monitor** pane in the Azure portal.
 
 Also, you can limit the view to show specific subscriptions, and fetch Azure activity log events in an automated way by connecting your own tools to the REST API for further analysis.
-In the following video, you’ll see how to use the activity log to monitor for activities across your managed services: 
+In the following video, you’ll see how to use the activity log to monitor for activities across your managed services:
   
 Link to video demo: https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/2-View_Manage_ServiceProvider_ActivityLog.mp4?csf=1&web=1&e=PFTsQj
 

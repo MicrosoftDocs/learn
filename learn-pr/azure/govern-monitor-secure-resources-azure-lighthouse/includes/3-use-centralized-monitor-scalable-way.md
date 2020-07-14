@@ -18,14 +18,13 @@ You can create Log Analytics workspaces through the Azure portal, Azure CLI, or 
 In the Azure portal, you'll view activity logs from workspaces from one pane:
 
 :::image type="content" source="../media/3-view-activity-logs.png" alt-text="View activity logs":::
-    
+
 In the following video, you’ll see how to create a Log Analytics workspace using the Azure portal:
 
 Demo video: https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/3_CreateLogAnalyticsworkspaces.mp4?csf=1&web=1&e=wCoiAf
 
 > [!NOTE]
 > Please note that this is a silent video. You'll find additional information in captions.
-
 
 ## Deploy policies to log data
 
@@ -45,7 +44,7 @@ Your company provides different kinds of managed services for customers so you'l
     .\Create-AzDiagPolicy.ps1 -ExportAll -ExportLA -ValidateJSON -ManagementGroup -AllRegions -ExportInitiative -InitiativeDisplayName "Azure Diagnostics Policy Initiative for a Log Analytics Workspace" -TemplateFileName 'YourTemplate'
     ```
 
-    When it finishes running, this script creates a resource manager template. The template will apply the policies across resources. You then deploy the template to Azure:
+    When it finishes running, this script creates a Resource Manager template. The template will apply the policies across resources. You then deploy the template to Azure:
 
     ```azurepowershell
     Select-AzSubscription -Subscription "<subscription-id>"
@@ -59,7 +58,7 @@ Your company provides different kinds of managed services for customers so you'l
     .\Trigger-PolicyEvaluation.ps1 -SubscriptionId "<subscription-id>"
     ```
 
-1. Run the **Trigger-PolicyInitiativeRemediation.PS1** script. This script ensures that all policies receive remediation if they aren't compliant. It will launch a remediation process for every policy, to try and bring all resources to full compliance with each one.  Use the following command to run the script at a subscription level: 
+1. Run the **Trigger-PolicyInitiativeRemediation.PS1** script. This script ensures that all policies receive remediation if they aren't compliant. It will launch a remediation process for every policy, to try, and bring all resources to full compliance with each one.  Use the following command to run the script at a subscription level:
 
     ```azurepowershell
     .\Trigger-PolicyInitiativeRemediation.ps1 -SubscriptionId "<subscription-id>"
@@ -75,7 +74,7 @@ When you've deployed policies, data collected will be logged to the workspaces c
 
 Workbooks can be shared across the organization or with outside groups in the wider community.
 
-In the following video, you’ll see how to create a new workbook using the Azure portal. You’ll also learn how to add a query to your workbook and run it across customer workspaces: 
+In the following video, you’ll see how to create a new workbook using the Azure portal. You’ll also learn how to add a query to your workbook and run it across customer workspaces:
 
 Demo Video: https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/3_AzureMonitorWorkbooks.mp4?csf=1&web=1&e=Zv1wk5
 
@@ -84,7 +83,7 @@ Demo Video: https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster
 
 ### Use multiple Log Analytics alerts
 
-You can have multiple simultaneous Log Analytics alerts in place for different events. In your case, you want to ensure that an alert is raised any time there’s suspicious activity on an Azure Key Vault, or if someone tries to submit a bad template for deployment. 
+You can have multiple simultaneous Log Analytics alerts in place for different events. In your case, you want to ensure that an alert is raised any time there’s suspicious activity on an Azure Key Vault, or if someone tries to submit a bad template for deployment.
 
 There's a template that creates multiple alerts based on Kusto Query Language (KQL) queries. Use the multiple Log Analytics alerts [template on GitHub](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/multiple-loganalytics-alerts). It defines both types of alerts for you.
 
@@ -94,12 +93,11 @@ You want to always be aware of when customer resources or subscriptions have bee
 
 You can use Azure’s activity log to monitor for delegation activity from customers. To access logs, you do the following:
 
-
 ### Enable access to tenant scoped data
 
 You must have an account in Azure that's assigned with the *Monitoring Reader* built-in role set at the root scope of the managing tenant, to access activity log data.  This type of role can be assigned by any administrator user who has the Global administrator role, along with elevated access.
 
-If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Azure Active Directory tenant: 
+If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Azure Active Directory tenant:
 
 :::image type="content" source="../media/3-elevate-access.png" alt-text="Elevate access":::
 
@@ -129,9 +127,8 @@ The tenant activity log data returned contains useful information, including the
 
 You use an Azure PowerShell script to query the tenant activity log API in your managing tenant, and filter events related to customers who are registering or unregistering a delegation to your tenant. Write your script like this:
 
-
- 
 1. Define the time frame (in this case, the last day). Get your current Azure context, and a token to make a call to the API:
+
     ```powershell
     # Azure Lighthouse: Query Tenant Activity Log for registered or unregistered delegations for the last 1 day
 
@@ -203,7 +200,7 @@ You use an Azure PowerShell script to query the tenant activity log API in your 
     |CustomerDelegationStatus|The new status for the delegation of the resource|
     |EventTimeStamp|When the action took place|
 
-1. Output the same information on any customer who has unregistered delegated resources from your tenant: 
+1. Output the same information on any customer who has unregistered delegated resources from your tenant:
 
     ```powershell
     if ($showOperations.operationName.value -eq "Microsoft.Resources/tenants/unregister/action") {
@@ -225,7 +222,7 @@ You use an Azure PowerShell script to query the tenant activity log API in your 
         Write-Output "No new delegation events for tenant: $($currentContext.Tenant.TenantId)"  
     ```
 
-## Additional tools 
+## Additional tools
 
 You can use various tools in Azure that naturally integrate with Azure Lighthouse. Use these tools to help monitor customer tenants:
 

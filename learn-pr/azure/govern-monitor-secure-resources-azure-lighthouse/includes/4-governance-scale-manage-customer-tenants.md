@@ -1,4 +1,4 @@
-You’ve seen how Relecloud monitors its customer tenants in a centralized and scalable way. Because Relecloud has onboarded multiple customers with Azure delegated resource management, the company wants to ensure it stays compliant with all corporate standards and service level agreements. You’ll investigate how Relecloud can help ensure compliance by using Azure Policy. You’ll explore how Relecloud can deploy policies to customer tenants at scale, and how to use policies with remediation tasks in a customer tenant, to remediate non-compliance.
+You’ve seen how Relecloud monitors its customer tenants in a centralized and scalable way. Because Relecloud has onboarded multiple customers with Azure delegated resource management, the company wants to ensure it stays compliant with all corporate standards and service level agreements. You’ll investigate how Relecloud can help ensure compliance by using Azure Policy. Finally, you’ll explore how Relecloud can deploy policies to customer tenants at scale, and how to use policies with remediation tasks in a customer tenant, to remediate non-compliance.
 
 ## Deploy a policy for multiple tenants
 
@@ -16,13 +16,13 @@ Search-AzGraph -Query "Resources | where type =~ 'Microsoft.Storage/storageAccou
 
 This query returns a list of storage accounts that don’t require HTTPS for all traffic.
 
-When you've deployed your template, you’ll confirm that the policy was successfully applied across tenants. To do this, you test the policy by trying to create a storage account that has the **EnableHttpsTrafficOnly** setting set to **False** in one of the customer subscriptions, such as Lamna Healthcare. If the policy has been applied successfully, you can't create the storage account.
+When you've deployed your template, you’ll confirm that the policy was successfully applied across tenants. To test the policy, you'll try to create a storage account that has the **EnableHttpsTrafficOnly** setting set to **False** in one of the customer subscriptions, such as Lamna Healthcare. If the policy has been applied successfully, you can't create the storage account.
 
 You can deploy policies across delegated subscriptions in multiple customer tenants. You want to deploy a single policy that ensures:
 
 - All storage accounts in customer subscriptions only use HTTPS
 - Storage accounts that don’t use HTTPS can’t be created
-- Any storage accounts that aren’t set to HTTPS are marked as noncompliant
+- Any storage accounts that aren't set to HTTPS will be marked as noncompliant
 
 You define the policy by creating a policy definition and a policy assignment in an [Azure Resource Manager template](https://github.com/Azure/Azure-Lighthouse-samples/blob/master/templates/policy-enforce-https-storage/enforceHttpsStorage.json). The template enables you to deploy the policy at scale. You can use tools like Azure PowerShell and Azure CLI to deploy the template across all customer subscriptions. Use the following snippet of Azure PowerShell code to iterate through all customer subscriptions, and deploy the template to each one:
 
@@ -85,7 +85,7 @@ You include these roles in the **delegatedRoleDefinitionIds** property for this 
 
 ### Deploy a policy with remediation
 
-You’ve defined a user with the correct permissions, and you can now deploy policies with remediation. You want to enforce monitoring for Azure Key Vault in Lamna Healthcare’s tenant.  The defined user can be utilized to deploy the resource manager template with the appropriate policy definition and policy assignment. You also include a role assignment resource in your resource manager template that has a **delegatedManagedIdentityResourceId** property. Role assignments are how access to resources is controlled in Azure:
+You’ve defined a user with the correct permissions, and you can now deploy policies with remediation. You want to enforce monitoring for Azure Key Vault in Lamna Healthcare’s tenant.  The defined user can be utilized to deploy the Resource Manager template with the appropriate policy definition and policy assignment. You also include a role assignment resource in your Resource Manager template that has a **delegatedManagedIdentityResourceId** property. Role assignments are how access to resources is controlled in Azure:
 
 ```powershell
 "type": "Microsoft.Authorization/roleAssignments",
@@ -109,6 +109,6 @@ You’ve defined a user with the correct permissions, and you can now deploy pol
 > [!NOTE]
 > To use the **delegatedManagedIdentityResourceId** property, apiVersion must be set to 2019-04-01-preview. There's a detailed example template that deploys a policy definition, a policy assignment, and a role assignment to collect logs and metrics for Azure Key Vault, in this [**GitHub repo**.](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/policy-enforce-keyvault-monitoring)
 
-As part of the managed services that your company provides, you look after Windows and Linux virtual machines for customers like Lamna Healthcare. Of course, this means you’ll have to make sure that all virtual machines are constantly monitored for issues and insights. You can use a template that ensures Azure Monitor is enforced on all customer virtual machines, and Log Analytics workspaces are created for capturing and analyzing data. 
+As part of the managed services that your company provides, you look after Windows and Linux virtual machines for customers like Lamna Healthcare. Of course, this means you’ll have to make sure that all virtual machines are constantly monitored for issues and insights. You can use a template that ensures Azure Monitor is enforced on all customer virtual machines, and Log Analytics workspaces are created for capturing and analyzing data.
 
 Use the [enforce Azure Monitor using Azure Policy template](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/policy-enforce-sub-monitoring) on GitHub to deploy several policies that will enforce Azure Monitor for all virtual machine resources at a subscription level, and create the workspaces to be used accordingly. Because this is an Azure Resource Manager template, you can deploy it just like you’ve deployed previous templates.
