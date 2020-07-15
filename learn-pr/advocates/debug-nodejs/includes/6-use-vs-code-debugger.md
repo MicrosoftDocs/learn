@@ -75,7 +75,21 @@ If you don't have the debug console displayed, bring it on with `Ctrl+Shift+Y` (
 
 ```text
 The value of 10 EUR is:
+11.363636363636365
 - 11.363636363636365 USD
+/app/node-101/currency.js:23
+  return value.toFixed(2);
+               ^
+TypeError: Cannot read property 'toFixed' of undefined
+    at formatValueForDisplay (/app/node-101/currency.js:23:16)
+    at printForeignValues (/app/node-101/currency.js:32:28)
+    at Object.<anonymous> (/app/node-101/currency.js:40:1)
+    at Module._compile (internal/modules/cjs/loader.js:959:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:995:10)
+    at Module.load (internal/modules/cjs/loader.js:815:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:727:14)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:1047:10)
+    at internal/main/run_main_module.js:17:11
 ```
 
 What our program aims to do is set the exchange rate between three currencies (USD, EUR, JPY) and display how much value is `10 EUR` in all the other currencies, with two digits after decimal point.
