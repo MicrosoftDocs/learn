@@ -6,7 +6,7 @@ Here you will learn how to use the "fs" module to create directories and files.
 
 ## Creating directories
 
-The `mkdir` method allowa creation of directories. The following method creates a folder called "newDirectory" inside of the "201" folder.
+The `mkdir` method allows creation of directories. The following method creates a folder called "newDirectory" inside of the "201" folder.
 
 ```javascript
 const fs = require("fs").promises;

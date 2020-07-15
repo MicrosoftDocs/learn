@@ -216,7 +216,7 @@ However, the way that the path to subfolders was constructed in this example is 
 
 In the next section, you'll learn how to construct paths that work across operating systems using the "path" module.
 
-### Got Stuck?
+### Got stuck?
 
 If you got stuck at any point in this exercise, here is the completed code. Remove everything in `index.js` and replace it with this solution.
 

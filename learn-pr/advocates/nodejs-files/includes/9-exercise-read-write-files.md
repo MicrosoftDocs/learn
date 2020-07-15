@@ -34,7 +34,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
    }
    ```
 
-## Call the calculateSalesTotals Method
+## Call the calculateSalesTotals method
 
 1. In the `main` function, add a call to the `calculateSalesTotals` function just above the `fs.writeFile` call.
 

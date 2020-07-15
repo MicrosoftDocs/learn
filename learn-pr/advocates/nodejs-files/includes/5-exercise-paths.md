@@ -107,7 +107,7 @@ Instead of looking for just `sales.json` files, this program needs to search for
 
 Great job! You've used the "path" and `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
 
-### Got Stuck?
+### Got stuck?
 
 If you got stuck at any point in this exercise, here is the completed code. Remove everything in `index.js` and replace it with this solution.
 
