@@ -101,7 +101,7 @@ Now let's add a breakpoint here so we can quickly move through the loop iteratio
 sb()
 ```
 
-You should see the same lines displayed again in the console, indicating that a breakpoint has been set at this line. Advance to the next loop iteration by using the `c` command.
+You should see the same lines displayed again in the console, indicating that a breakpoint has been set at this line. When the current execution point moves, you'll see a `*` on the line where you set the breakpoint. Advance to the next loop iteration by using the `c` command.
 
 We can check the current iteration state with the `exec` command:
 
