@@ -46,9 +46,9 @@ When you create a new AKS cluster, you have several different items of informati
 
 These items include:
 
-Node pools
-Node count
-Automatic routing
+- Node pools
+- Node count
+- Automatic routing
 
 ## Node pools
 
