@@ -78,7 +78,7 @@ Why should you go with Express as framework for your next app?
 - **Solves common Web problems**: Express helps you with common problems such as route management, caching, redirection, and more.
 - **Trusted by millions of developers**: according to GitHub, 6.8 million developers are currently using Express for their web applications. Such a significant number implies that there are many developers invested in its success.
 
-### Route management in Express
+### Route management in Express
 
 When a client makes a request towards a web application they do so using a URL, an address that points to a specific server. A URL might look like this:
 
