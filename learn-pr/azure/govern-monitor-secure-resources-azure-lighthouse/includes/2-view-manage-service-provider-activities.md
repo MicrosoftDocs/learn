@@ -46,11 +46,12 @@ By selecting the **Delegations** pane on the left, you see which resource groups
 
 Relecloud must be delegated for resource management before users can access and manage your company’s resources and subscriptions. If you've accepted an offer from a service provider, but not yet delegated anything to them, you’ll see a notification in the **Service provider offers** pane. This helps you understand what you need to do before a service provider can access your company’s resources or subscriptions. You'll have to either select **Delegate subscriptions** or **Delegate resource groups**, to specify which resources or subscriptions you want to configure for delegation.
 
-In the following video, you’ll see how you do these steps to delegate subscriptions and resource groups to Relecloud, your managed service provider: 
-https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/2-View_Manage_ServiceProvider_Delegate_Resources.mp4?csf=1&web=1&e=9fcSfH
+In the following video, you’ll see how you do these steps to delegate subscriptions and resource groups to Relecloud, your managed service provider:
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B1Uq]
 
 > [!NOTE]
-> Please note that this is a silent video. You'll find additional information in captions.
+> Please note that this is a silent video. You'll find additional information, where applicable, in captions.
 
 ### Audit delegations
 
@@ -71,7 +72,7 @@ You can view the activity login Azure Monitor, under the **Monitor** pane in the
 Also, you can limit the view to show specific subscriptions, and fetch Azure activity log events in an automated way by connecting your own tools to the REST API for further analysis.
 In the following video, you’ll see how to use the activity log to monitor for activities across your managed services:
   
-Link to video demo: https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/2-View_Manage_ServiceProvider_ActivityLog.mp4?csf=1&web=1&e=PFTsQj
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B4vs]
 
 > [!NOTE]
 > Please note that this is a silent video. You'll find additional information in captions.

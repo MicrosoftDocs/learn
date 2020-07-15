@@ -21,10 +21,10 @@ In the Azure portal, you'll view activity logs from workspaces from one pane:
 
 In the following video, you’ll see how to create a Log Analytics workspace using the Azure portal:
 
-Demo video: https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/3_CreateLogAnalyticsworkspaces.mp4?csf=1&web=1&e=wCoiAf
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B4vU]
 
 > [!NOTE]
-> Please note that this is a silent video. You'll find additional information in captions.
+> Please note that this is a silent video. You'll find, where applicable, additional information in captions.
 
 ## Deploy policies to log data
 
@@ -76,7 +76,7 @@ Workbooks can be shared across the organization or with outside groups in the wi
 
 In the following video, you’ll see how to create a new workbook using the Azure portal. You’ll also learn how to add a query to your workbook and run it across customer workspaces:
 
-Demo Video: https://contentm-my.sharepoint.com/:v:/r/personal/jezh_contentmaster_com/Documents/Lighthouse%20L200/3_AzureMonitorWorkbooks.mp4?csf=1&web=1&e=Zv1wk5
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AZgz]
 
 > [!NOTE]
 > Please note that this is a silent video. You'll find additional information in captions.
@@ -122,7 +122,7 @@ The tenant activity log data returned contains useful information, including the
 
 - The ID of a delegated resource group or subscription
 - The tenant ID for a customer
-- Whether or not a delegation change was successful 
+- Whether or not a delegation change was successful
 - The time and date when a change in delegation was logged
 
 You use an Azure PowerShell script to query the tenant activity log API in your managing tenant, and filter events related to customers who are registering or unregistering a delegation to your tenant. Write your script like this:
@@ -168,7 +168,7 @@ You use an Azure PowerShell script to query the tenant activity log API in your 
     $showOperations = $data;
     ```
 
-1. Output information on any customer who has delegated resources to the Azure tenant: 
+1. Output information on any customer who has delegated resources to the Azure tenant:
 
     ```powershell
     if ($showOperations.operationName.value -eq "Microsoft.Resources/tenants/register/action") {

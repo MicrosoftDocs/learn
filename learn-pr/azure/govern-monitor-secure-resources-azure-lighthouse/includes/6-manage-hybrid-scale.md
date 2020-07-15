@@ -55,7 +55,7 @@ Let’s look at how Lamna Healthcare will add a Windows based on-premises server
 
 At this stage, the Azure portal will generate the script you’ll use to onboard the machine, projecting it into your Azure tenant. Lamna Healthcare can download this script to a local device. When you have a script for a Windows or Linux server, it can be used for all servers of that type.
 
-- For Windows machines, there will be a generated PowerShell script, called **OnboardingScipt.ps1**.
+- For Windows machines, there will be a generated PowerShell script, called **OnboardingScript.ps1**.
 - For Linux machines, the generated script will be a bash script.
 
 For more information on how to manually install the Connected Machine agent on a target machine, see [onboarding non-Azure machines using Azure Arc.](https://docs.microsoft.com/azure/azure-arc/servers/onboard-portal).
@@ -105,5 +105,4 @@ For more information on Azure Policy see [Governance policy overview](https://do
 
 In this video, you’ll see what to do to manage a customer’s cloud and on-premises resources.
 
-Demo Video:
-https://contentm-my.sharepoint.com/personal/jezh_contentmaster_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fjezh%5Fcontentmaster%5Fcom%2FDocuments%2FLighthouse%20L200%2F6%5FManageHybridResources%2Emp4&parent=%2Fpersonal%2Fjezh%5Fcontentmaster%5Fcom%2FDocuments%2FLighthouse%20L200
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B1UO]
