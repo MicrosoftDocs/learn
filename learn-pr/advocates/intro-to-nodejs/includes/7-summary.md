@@ -24,7 +24,7 @@ Companies using Node.js in production:
 - [Walmart](https://medium.com/walmartlabs/migrating-large-enterprise-to-nodejs-6c38523d2b33).
 - [Uber](https://eng.uber.com/uber-tech-stack-part-two/).
 - [Ebay](https://tech.ebayinc.com/engineering/how-we-built-ebays-first-node-js-application/).
-- [NASA](https://openjsf.org/wp-content/uploads/sites/84/2020/02/Case_Study-Node.js-NASA.pdf)).
+- [NASA](https://openjsf.org/wp-content/uploads/sites/84/2020/02/Case_Study-Node.js-NASA.pdf).
 
 Node.js release types
 

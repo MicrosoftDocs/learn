@@ -1,4 +1,4 @@
-As you might know, Node.js is a JavaScript runtime. It can interpret and run JavaScript code outside the browser, on the host machine.
+As you learned in the previous section, Node.js is a wrapper around a JavaScript engine called V8. This means that Node.js is a  "JavaScript runtime". It can interpret and run JavaScript code outside the browser, on the host machine.
 This means that Node.js has direct access to the operating system I/O, filesystem, network, etc. But how does Node.js handle incoming tasks? Let's find out.
 
 Node.js is based on a "single threaded event loop model" architecture, which allows Node.js to handle multiple concurrent operations in an efficient way:
@@ -6,7 +6,7 @@ Node.js is based on a "single threaded event loop model" architecture, which all
 - single threaded: JavaScript has only one call stack and can do only one thing at a time.
 - event loop: executes the code, collect and process events, and execute the next subtasks from the event queue.
 
-I/O operations in Node.js, such as reading or writing to a file on the disk, or doing a network call to a remote server, are considered as blocking operations. A blocking I/O task would block all the subsequent tasks. When the I/O operation is finished, then the next one can proceed.
+I/O operations in Node.js, such as reading or writing to a file on the disk, or doing a network call to a remote server, are "blocking operations". A blocking operation would block all the subsequent tasks. When the operation is finished, then the next one can proceed. 
 
 A non-blocking model would mean that we can execute multiple I/O operations at the same time. This is made possible thanks to the event loop.
 
@@ -30,7 +30,7 @@ In summary, the event loop executes the JavaScript callbacks registered for even
 
 ### Performance
 
-Thanks to V8 and the modern techniques in the Compiler Optimizations space such as JIT, Concurrent Speculative Optimization, etc. JavaScript, which is considered to be a high-level programming language is now capable of producing the same performance results as the low-level languages such as C. In addition to this performance boost introduced by V8, Node takes advantage of the JavaScript language capabilities: The Event-Driven model. Implementing server-side async tasks has become an easy task thanks to Node and JavaScript.
+Thanks to performance boosts made possible by V8, JavaScript is now capable of producing the same performance results as the low-level languages such as C. In addition, Node.js takes advantage of the unique event-driven nature of JavaScript. This makes composing server tasks fast and performant.
 
 ### Asynchronous programming
 
@@ -40,7 +40,7 @@ In order to support the powerful event-based programming model, Node has a built
 
 ## Install and use Node.js
 
-There are many ways to install Node.js. We list a few of the most common options:
+There are many ways to install Node.js. Here are a few of the most common options:
 
 - Install via executable, `https://nodejs.org/en/download/`. Here you can find different installation packages for your Operating System.
 - Install via Brew, Brew is a popular package manager for Linux and Mac.

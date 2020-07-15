@@ -1,4 +1,4 @@
-Let's see how to create and run a simple Hello World Node.js script.
+In this section, you'll create and run a simple Hello World Node.js script.
 
 ## Node.js REPL
 
@@ -13,7 +13,7 @@ Node.js will:
 
 > The REPL mode is useful for quick code evaluation and experimentation!
 
-To start the REPL mode by running the `node` program in the console:
+To start the REPL mode by running the `node` program in the Azure Cloud Shell.
 
 ```bash
 node
