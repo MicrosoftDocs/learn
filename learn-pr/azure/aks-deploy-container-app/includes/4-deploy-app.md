@@ -24,7 +24,7 @@ Kubernetes groups containers and applications into logical structures called **P
 
 ## Kubernetes labels
 
-Kubernetes labels allow you to logical group Kubernetes objects. These labels enable the system to query the cluster for objects that match a  label with a specific name. 
+Kubernetes labels allow you to logical group Kubernetes objects. These labels enable the system to query the cluster for objects that match a label with a specific name. 
 
 For example, if you wanted to search all workloads related to the `contoso-website', you'll query the cluster for pods with the label `app` and the value `contoso-website`. 
 
