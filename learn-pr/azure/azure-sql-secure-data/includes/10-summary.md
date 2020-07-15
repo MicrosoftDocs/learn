@@ -6,6 +6,10 @@ In the next module in this learning path, you'll take a look at the performance 
 
 General and detailed guidance on security for Azure SQL can be found in the [Azure SQL Security Documentation](https://docs.microsoft.com/azure/sql-database/sql-database-security-overview) and the [Azure SQL Security Best Practices Playbook](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice).
 
+### Video series: Azure SQL for beginners
+
+People learn in different ways. With that in mind, a video series related to this learning path was created with Channel 9 on YouTube. [You can access all 60+ videos here](https://aka.ms/azuresql4beginnersyt).
+
 #### Network security
 
 You can learn more about Private Link [in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-private-endpoint-overview). You can also learn about the subnet requirements for Azure SQL Managed Instance with details [here](https://docs.microsoft.com/azure/azure-sql/managed-instance/virtual-network-subnet-create-arm-template).  
