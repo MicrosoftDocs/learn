@@ -1,16 +1,14 @@
-Now we have our cluster set up, let's make it work by deploying our application. The first application we decided to move was the company's website.
+Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're to deploy one of your video rendering service applications. You decide to deploy your company's website as a test app.
 
-Kubernetes differs itself from other tool mostly because of its ease to create workloads and manage the cluster. After talking about `kubectl` and how we can create an AKS cluster, now is time to talk about how you can create workloads in your AKS cluster.
+The Kubernetes container orchestration features make it easy to manage workloads on the cluster. Here you'll explore how to create workloads in your AKS cluster.
 
-## Images
+## Container images
 
-The first thing you'll notice is that there's a Dockerfile in the root of the repository. That's because you'll be using a Docker image to spin up your application.
+Kubernetes is a **container** orchestrator. You deploy workloads using containers built from container images to run your applications within an ASK cluster. You'll typically use Docker containers for this purpose.
 
-Kubernetes is a **container** orchestrator, which means you'll use containers to build and run the application within an image and deploy this image to the AKS cluster. You'll typically use Docker containers.
+## Container registries
 
-## Container Registries
-
-Container registries allow you to store your images safely in the cloud and download them later on. You can think of the container registry as an archive that stores multiple versions of your container image. Each stored image has a tag assigned for identification.
+Container registries allow you to store your images safely in the cloud and download them later. You can think of the container registry as an archive that stores multiple versions of your container image. Each stored image has a tag assigned for identification.
 
 For example, you may have the image `contoso-website:latest`, which would be a different version of the image with the tag `contoso-website:v1.0.0`.
 
@@ -20,15 +18,60 @@ Container registries may be public or private. Private registries require creden
 
 Kubernetes only allows you to deploy images hosted in a container registry. Creating a private container registry will normally be part of your standard AKS deployment strategy.
 
-### Kubernetes Deployments
+## Kubernetes Pods
 
-Kubernetes groups containers and applications into logical structures called **Pods**. These pods have no intelligence and are composed of one or more application containers (Docker containers). Each one has its own IP address and network rules, and exposed ports.
+Kubernetes groups containers and applications into logical structures called **Pods**. These pods have no intelligence and are composed of one or more application containers. Each one has an IP address, network rules, and exposed ports.
 
-Deployments are an evolution of pods. They wrap the Pods into an intelligent structure that allows them to _scale out_. That means you can easily duplicate and scale your application to support more load without the need to configure complex networking rules. To create this wrapping, deployments need a `label`. Labels are the way deployments find and group pods within their bounds.
+## Kubernetes labels
+
+Kubernetes labels allow you to logical group Kubernetes objects. These labels enable the system to query the cluster for objects that match a  label with a specific name. 
+
+For example, if you wanted to search all workloads related to the `contoso-website', you'll query the cluster for pods with the label `app` and the value `contoso-website`. 
+
+## Kubernetes deployments
 
 :::image type="content" source="../media/4-2-deployments-diagram.png" alt-text="Deployments diagram":::
 
-Kubernetes can tag workloads with labels. These labels allow the system to query the cluster for workloads that have one or more labels. For example, if we wanted to search all workloads related to the `contoso-website`, we could query the cluster for everything with the label `app` and the value of that label being `contoso-website`. This can be seen in the `selector` key of our previous example:
+Deployments are an evolution of pods. They wrap the Pods into an intelligent object that allows them to _scale out_. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules. 
+
+Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps and creating new ones, the deployment turns off the online apps one by one, replacing them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
+
+## Kubernetes manifest files
+
+A Kubernetes manifest file allows you to describe your workloads in the YAML format declaratively and simplify Kuberenete object management. 
+
+Imagine you have to deploy a workload by hand. You need to think about and manage several aspects. You'd need to create a container, select a specific node, wrap it in a pod, run the pod, monitor execution, and so on.
+
+Manifest files contain all the information that is needed to create and manage the described workload.
+
+### Manifest file structure
+
+The structure of manifest files differs depending on the type of resource that you create. However, manifest files share common instructions. These instructions define various aspects, such as the APIs to use and the type of workload to create.
+
+The first two entries in all manifest files have two important keys `apiVersion` and `kind`. Here is an example of a deployment file.
+
+    ```yml
+    apiVersion: apps/v1 # Where in the API it resides
+    kind: Deployment # The kind of workload we're creating
+    ```
+The `apiVersion` key defines the API server endpoint that manages the object you'll deploy.
+
+The `kind` key defines the workload this deployment will create.
+
+Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources **must** have a name, and this name goes inside the `metadata` key.
+
+    ```yml
+    apiVersion: apps/v1
+    kind: Deployment
+    metadata:
+      name: contoso-website # This will be the name of the deployment
+    ```
+
+## How to group objects in a deployment
+
+Deployments make use of a `label` to find and group pods within their bounds. You define the label as part of your deployment's manifest file.
+
+Here is an example. Notice the `matchLabels` value defined in the `selector` definition added to the `spec` definition.
 
     ```yml
     # deployment.yaml
@@ -40,34 +83,12 @@ Kubernetes can tag workloads with labels. These labels allow the system to query
     # ...
     ```
 
-Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps and creating new ones, the deployment turns off the online apps one by one, replacing them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
+From this point on, all files have different structures based on what kind of resource you're telling Kubernetes to create.
 
-## Kubernetes manifest files
+## How to apply a deployment file
 
-Instead of telling exactly what to do and how to create the resources, Kubernetes have manifest files. They allow you to describe your workloads in the YAML format. These manifest files contain everything that is needed to create and manage the workload it describes.
+You deploy a Kubernetes deployment manifest file using `kubectl`. Here is an example of the command.
 
-The biggest difference between an imperative paradigm, where we tell the cluster what and how we want it to deploy our apps, and the declarative one, is that we do not need to worry about node availability. This is why we don't need to tell to which node we want our application deployed unless it's necessary, because the control plane has all the information needed to balance the application load among all the nodes.
-
-Also, declarative paradigm allows us to version our infrastructure in a way we don't need to worry about how the environment will deploy the apps, but only on what apps are going to be deployed instead.
-
-Manifest files can differ depending on the type of resource that it creates. But all manifest files have common instructions. The first lines of all files have two important keys `apiVersion` and `kind`.
-
-First, we need to tell Kubernetes what kind of workload this file refers to using the `kind` key, and then the API endpoint refers to using the `apiVersion` key in the YAML file, like this:
-
-    ```yml
-    # deployment.yaml
-    apiVersion: apps/v1 # Where in the API it resides
-    kind: Deployment # The kind of workload we're creating
-    ```
-
-Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources **must** have a name, and this name goes inside the `metadata` key.
-
-    ```yml
-    # deployment.yaml
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: contoso-website # This will be the name of the deployment
-    ```
-
-From this point on, all files have different structures based on what kind of resource we're telling Kubernetes to create for us. In the next unit, we'll build a deployment manifest and understand all the aspects of the declarative paradigm and manifest files.
+```bash
+kubectl apply -f ./deployment.yaml
+```
