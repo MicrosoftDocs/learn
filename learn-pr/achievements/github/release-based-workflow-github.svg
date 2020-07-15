@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>GitHub Learning Lab content/create-a-release-based-workflow</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-8">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0.303030303%" id="linearGradient-9">
+            <stop stop-color="#773ADC" offset="0%"></stop>
+            <stop stop-color="#9255E6" offset="25%"></stop>
+            <stop stop-color="#A669EE" offset="50%"></stop>
+            <stop stop-color="#B376F2" offset="76%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.5565878%" id="linearGradient-10">
+            <stop stop-color="#14C2D2" offset="0%"></stop>
+            <stop stop-color="#0396A4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GitHub-Learning-Lab-content" transform="translate(-159.000000, -1079.000000)">
+            <g id="GitHub-Learning-Lab-content/create-a-release-based-workflow" transform="translate(160.000000, 1080.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <line x1="50" y1="14.96875" x2="50" y2="71.0297297" id="Path-158" stroke="#FFFFFF"></line>
+                <path d="M34.7324324,83.3432432 L34.7324324,68.9667969 C34.7324324,65.175772 37.8056653,62.1025391 41.5966902,62.1025391 L50,62.1025391 L50,62.1025391" id="Path-159" stroke="#FFFFFF"></path>
+                <path d="M67.1027027,53.8405405 L67.1027027,39.578125 C67.1027027,35.7121318 63.968696,32.578125 60.1027027,32.578125 L50,32.578125 L50,32.578125" id="Path-160" stroke="#FFFFFF"></path>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-8)" cx="50" cy="13.4459459" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-8)" cx="50" cy="25.0486486" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-9)" cx="67.1027027" cy="41.8081081" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-9)" cx="67.1027027" cy="53.8405405" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-10)" cx="34.7324324" cy="71.0297297" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-10)" cx="34.7324324" cy="83.3432432" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-8)" cx="50" cy="41.8081081" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-8)" cx="50" cy="53.8405405" r="5.15675676"></circle>
+                <circle id="Oval" stroke="#FFFFFF" fill="url(#linearGradient-8)" cx="50" cy="71.0297297" r="5.15675676"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.github.migrate-repository-github
+metadata:
+  title: "Migrate your repository by using GitHub best practices"
+  description: Learn to move your existing project to GitHub from a legacy version control system.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Migrate your repository by using GitHub best practices"
+summary: Learn to move your existing project to GitHub from a legacy version control system.
+abstract: |
+  In this module, you will:
+  - Prepare your project for a successful migration
+  - Handle any binary files currently stored in your project
+  - Create important Git files like a `.gitignore`
+  - Import your project to GitHub
+prerequisites: |
+  - A GitHub account
+iconUrl: /learn/achievements/github/migrate-repository-github.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.migrate-repository-github.1-introduction
+- learn.github.migrate-repository-github.2-how-to-migrate-to-github
+- learn.github.migrate-repository-github.3-migrate-your-repository-to-github
+- learn.github.migrate-repository-github.4-knowledge-check
+- learn.github.migrate-repository-github.5-summary
+badge:
+  uid: learn.github.migrate-repository-github.badge

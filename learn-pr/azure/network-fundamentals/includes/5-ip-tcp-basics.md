@@ -45,9 +45,9 @@ The structure of an IPv4 address is four decimal numbers in the range of 0 to 25
 
 There are two parts to an IP address, the network and the host. Let's use the address `192.168.0.1` as an example.
 
-The network part of an IP address covers the first two decimal numbers. In the example, that's `192.168`. This number is unique to the network and specifies the class of the network as well.
+The network part of an IP address covers the first set of decimal numbers. In the example, that's `192.168.0`. This number is unique to the network and specifies the class of the network. The are a number of network classes available, which we'll discuss next.
 
-The host part of the IP address covers the last two decimal numbers. In the example, that's `0.1`. This number represents the device and has to be unique within the network to avoid address conflicts. Each device on a network segment must have a unique address.
+The host part of the IP address covers the next set of decimal numbers. In the example, that's `1`. This number represents the device and has to be unique within the network to avoid address conflicts. Each device on a network segment must have a unique address.
 
 ### IPv4 address classes
 
@@ -65,7 +65,7 @@ For classes A, B, and C, the start and end IP addresses are reserved and shouldn
 
 In the previous table, the last column is marked as a subnet mask. The subnet mask uses the same format of the IP address. But its purpose is to identify valid IP addresses in an IP range.
 
-For example, assume you have an IP address range that starts at `192.168.1.0`, and you have a subnet of `255.255.255.0`.You'll apply the subnet mask in the following way. For each address segment value specified as 225 in the mask, the corresponding address segment is static. When you want to pick an IP address, you have to pick an address that matches `192.168.1`. Where the segment has a value of `0`, you're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.1.0` to `192.168.1.255`, which are valid values to select.
+For example, assume you have an IP address range that starts at `192.168.0.1`, and you have a subnet of `255.255.255.0`.You'll apply the subnet mask in the following way. For each address segment value specified as 255 in the mask, the corresponding address segment is static. When you want to pick an IP address, you have to pick an address that matches `192.168.0`. Where the segment has a value of `0`, you're allowed to use any value between 0 to 255. A subnet mask of `255.255.255.0` gives an IP address range of `192.168.0.0` to `192.168.0.255`, which are valid values to select.
 
 ### What is a subnet?
 
@@ -136,9 +136,9 @@ The structure of IPv6 is different from IPv4. Instead of four decimal numbers, i
 The new standard allows for the address to be simplified by using the following rules:
 
 - One or more leading zeros from any group can be removed, so `0042` becomes `42`.
-- Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address. So the three sets of `0000` in this example are replaced by three colons (`:::`).
+- Consecutive sections of zeros are replaced with a double colon (`::`), which can be used only once in an address.
 
-The shortened version of the IPv6 example is `2001:db8:::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
+The shortened version of the IPv6 example is `2001:db8::8a2e:370:7334`. Notice that all the instances of `0000` are removed.
 
 ## DNS
 

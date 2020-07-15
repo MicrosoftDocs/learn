@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.monitor-data-drift-with-azure-machine-learning.scheduling-alerts
+title: Scheduling alerts
+metadata:
+  title: Scheduling alerts
+  description: "Learn how to schedule data drift monitoring runs and alerts."
+  ms.date: 07/16/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-schedules-alerts.md)]

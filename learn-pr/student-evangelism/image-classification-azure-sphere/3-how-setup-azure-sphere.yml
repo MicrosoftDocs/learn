@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.image-classification-azure-sphere.how-setup-azure-sphere
+title: How to set up Azure Sphere
+metadata:
+  title: How to set up Azure Sphere
+  description: In this section, we guide the learner in how to set up Azure Sphere.
+  ms.date: 06/19/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 5 # dummy number at present
+content: |
+  [!include[](includes/3-how-setup-azure-sphere.md)]

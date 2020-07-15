@@ -1,5 +1,2 @@
 > [!NOTE]
 > This module's labs can be completed for free using the Databricks 14-day trial, but you cannot use an Azure free trial subscription to create a Databricks workspace. To switch a *free trial subscription* to *pay-as-you-go*, go to your profile and [change your subscription offer to *pay-as-you-go*](https://docs.microsoft.com/azure/billing/billing-upgrade-azure-subscription). You may also need to [remove the spending limit](https://docs.microsoft.com/azure/billing/billing-spending-limit#remove-the-spending-limit-in-azure-portal), and [request a quota increase](https://docs.microsoft.com/azure/azure-supportability/resource-manager-core-quotas-request) for vCPUs in your region. When you create your Azure Databricks workspace, you can select the Trial (Premium - 14-Days Free DBUs) pricing tier to give the workspace access to free Premium Azure Databricks DBUs for 14 days.
-
-> [!WARNING]
-> This module is based on a previous version of Databricks, and code may not run in the current environment. Updated content is being developed.

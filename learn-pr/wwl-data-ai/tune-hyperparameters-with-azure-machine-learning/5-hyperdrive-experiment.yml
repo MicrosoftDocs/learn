@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.tune-hyperparameters-with-azure-machine-learning.running-hyperparameter-tuning-experiment
+title: Running a hyperparameter tuning experiment
+metadata:
+  title: Running a hyperparameter tuning experiment
+  description: "Learn how to create and run a hyperparameter tuning experiment."
+  ms.date: 07/16/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-hyperdrive-experiment.md)]

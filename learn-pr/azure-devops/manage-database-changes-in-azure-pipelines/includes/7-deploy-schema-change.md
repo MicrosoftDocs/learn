@@ -18,7 +18,7 @@ In the *Tailspin.SpaceGame.Database* project, the Profiles table has changed. Th
     git checkout -b schema-changes upstream/schema-changes
     ```
 
-1. Open the `dbo` folder in the database project. This folder includes the scripts for each of the tables. Open *Profiles.sql* to see the new column, `favoriteMap`.
+1. Open the `dbo` folder in the database project. This folder includes the scripts for each of the tables. Open *Profile.sql* to see the new column, `favoriteMap`.
 
 ## Run the pipeline
 
@@ -51,7 +51,7 @@ In the *Tailspin.SpaceGame.Database* project, the Profiles table has changed. Th
         Verify that the `favoriteMap` column is populated with data.
 1. Navigate to one of your host names, for example, **tailspin-space-game-web-dev-1234.azurewebsites.net**. Select a player to see the new data on the profile.
 
-    ![The website, displaying a profile that shows the player's favorite galaxy](../media/7-profile-with-favorite-galaxy.png)
+    ![The website displaying a profile that shows the player's favorite galaxy.](../media/7-profile-with-favorite-galaxy.png)
 
 **Tim:** I think the meeting went well. We managed to get the DBA involved, and they're a tough customer. Score one for DevOps. But I can see a problem here. Every application change triggers this pipeline to run. We won't have schema changes every time. But the pipeline will stop and wait for approval even if the change file contains no changes. How can we fix that problem?
 
@@ -152,7 +152,7 @@ From Azure DevOps:
 
 1. Select your profile from the upper-right corner, then select **Personal access tokens**.
 
-    ![Accessing personal access tokens from Azure DevOps](../../shared/media/azure-devops-profile-personal-access-tokens.png)
+    ![Accessing personal access tokens from Azure DevOps.](../../shared/media/azure-devops-profile-personal-access-tokens.png)
 
 1. Select **+ New Token**.
 1. For the name, enter *Database Changes*.
@@ -192,7 +192,7 @@ From Azure DevOps:
 
 1. Navigate back to Azure DevOps and watch the pipeline run. You see that the `DBAVerificationApply` stage is skipped because the schema didn't change.
 
-    ![Azure Pipelines showing the skipped stage](../media/7-pipeline-run-skipped.png)
+    ![Azure Pipelines showing the skipped stage.](../media/7-pipeline-run-skipped.png)
 
 ## Recommended practices
 

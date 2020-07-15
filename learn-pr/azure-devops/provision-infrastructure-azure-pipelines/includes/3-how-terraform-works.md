@@ -55,11 +55,12 @@ Provider software versions are maintained separately from the `terraform` progra
 
 ```terraform
 provider "azurerm" {
-  version = "~> 1.35"
+  version = ">=2.0.0"
+  features {}
 }
 ```
 
-When you're getting started, you don't need to include the `provider` block in your plan. In practice, you might include the provider version to help ensure that your plan is run with a version of the provider that you understand and have tested.
+When working with Azure resources, the `provider` block is required in your plan. When you're getting started, you can use the most basic settings as shown here. In practice, you might specify additional features to customize the behavior of certain resources. For example, you can specify whether the OS disk should also be destroyed when a virtual machine is destroyed.
 
 ### Variables
 
@@ -84,7 +85,7 @@ variable "resource_group_location" {
 
 When you define your resource group, you use the `var.variable` syntax to read your variable. Here's an example:
 
-[!code-terraform[](code/main.tf?range=30-33&highlight=32)]
+[!code-terraform[](code/main.tf?range=35-38&highlight=37)]
 
 To specify the values of your variables when Terraform runs, you can use:
 
@@ -101,7 +102,7 @@ A _resource_ is the primary construct in Terraform. A resource defines one piece
 
 Here are a few resources you'll work with shortly. These resources define an Azure resource group, an App Service plan, and an App Service instance.
 
-[!code-terraform[](code/main.tf?range=30-53&highlight=37-38,50-51)]
+[!code-terraform[](code/main.tf?range=25-58&highlight=42-43,55-56)]
 
 Notice that you can define some attributes, such as the parent resource group's name and location, directly from other resources. Terraform creates a dependency graph that expresses these relationships so that it can create and manage your resources in the correct order.
 
@@ -113,7 +114,7 @@ Terraform prints each output value after it applies your plan. You can also fetc
 
 Here's an example that outputs the host name of an App Service instance:
 
-[!code-terraform[](code/main.tf?range=55-58)]
+[!code-terraform[](code/main.tf?range=60-63)]
 
 You can fetch output values after Terraform runs. Later, you'll see how to fetch the name of an App Service instance whose name is generated dynamically. You'll pass that name to a later job in Azure Pipelines.
 

@@ -9,9 +9,18 @@ metadata:
   ms.author: leestott
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to Python using the Datascience Library
+title: Introduction to Python using the datascience library
 summary: Learn about programming and data types in Python
 abstract: |
+  The UC Berkeley Foundations of Data Science course combines three perspectives: inferential thinking, computational 
+  thinking, and real-world relevance. Given data arising from some real-world phenomenon, how does one analyze that 
+  data so as to understand that phenomenon? The course teaches critical concepts and skills in computer programming 
+  and statistical inference, in conjunction with hands-on analysis of real-world datasets, including economic data, 
+  document collections, geographical data, and social networks. It delves into social issues surrounding data 
+  analysis such as privacy and design.
+  
+  ***Produced in partnership with the University of California, Berkeley - Ani Adhikari and John Denero with Contributions from David Wagner [Computational and Inferential Thinking](https://www.inferentialthinking.com/chapters/intro.html).*** 
+
   In this module, you will:
   - Write basic arithmetic expressions and function calls in Python.
   - Identify the correct data type of each object.

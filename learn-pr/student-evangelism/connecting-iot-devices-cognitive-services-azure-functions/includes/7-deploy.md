@@ -1,8 +1,8 @@
-In this unit, we'll start by opening a project file called "**Devkit Translator**” in VS Code. We’ll provision Azure services to create an Azure function then deploy the Azure function in the cloud by using Azure IoT Workbench extension. 
+In this unit, we'll start by opening a project file called "**Devkit Translator**” in Visual Studio Code. We’ll provision Azure services to create an Azure function then deploy the Azure function in the cloud by using Azure IoT Workbench extension. 
 
  The components in this unit are: 
 
-- **Azure IoT workbench**: an extension supported by VS Code. It simplifies the end-to-end process of the development of the IoT Devkit. It will also install some dependency extensions like **Azure Functions** and **Azure IoT Toolkit**.
+- **Azure IoT workbench**: an extension supported by Visual Studio Code. It simplifies the end-to-end process of the development of the IoT Devkit. It will also install some dependency extensions like **Azure Functions** and **Azure IoT Toolkit**.
 - **Azure provisioning service**: allows you to create an automated process to connect to the cloud.
 - **Devkit Translator**: a translator project sample that is available on GitHub: [https://github.com/Azure-Samples/mxchip-iot-devkit-translator](https://github.com/Azure-Samples/mxchip-iot-devkit-translator). The project contains two main parts - Functions and Device folders. 
 

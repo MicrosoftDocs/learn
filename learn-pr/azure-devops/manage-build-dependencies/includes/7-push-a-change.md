@@ -25,7 +25,7 @@ Add a property to one of the model classes, named `Score`, that provides the gam
 
 Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGame.Web.Models** project.
 
-1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.Models/Models/Score.cs**. Add the following highlighted property to the list of properties already there.
+1. From Visual Studio Code, open *Tailspin.SpaceGame.Web.Models/Models/Score.cs*. Add the following highlighted property to the list of properties already there.
 
     [!code-csharp[](code/7-score-property.cs?highlight=23-25)]
 
@@ -54,7 +54,7 @@ Now that you've added the new property to the `Score` class, and verified the pr
 
     Here, we bump the version from 1.0.0 to 2.0.0 to make the change clear. In practice, you would follow the versioning scheme for the kind of package you're working with.
 
-    For example, according to Semantic Versioning, bumping the major version to 2 tells others that the package is not backward compatible with applications that use version 1 of that package. Those who use the package wouldn't need to modify their application to adapt to any breaking changes.
+    For example, according to Semantic Versioning, bumping the major version to 2 tells others that the package is not backward compatible with applications that use version 1 of that package. Those who use the package would need to modify their application to adapt to any breaking changes.
 
     Popular open-source projects provide documentation in the form of a _changelog_ that explains the changes made in each version, as well as how to migrate from one major version to the next.
 
@@ -72,6 +72,8 @@ Now that you've added the new property to the `Score` class, and verified the pr
 
     ![Screenshot of Azure Artifacts, showing version 2.0 of the package](../media/7-artifacts-package-ver2.png)
 
+1. As you did previously, write down the new version for the next part.
+
 ## Reference the new version of the Models package
 
 Now change the **Tailspin.SpaceGame.Web** project to use the new version of the **Tailspin.SpaceGame.Web.Models** package.
@@ -83,7 +85,7 @@ Here, you'll work from the copy of Visual Studio Code for the _Space Game_ web a
     Here's an example:
 
     ```xml
-    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="2.0.0-CI-20190621-055623" />
+    <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="2.0.0-CI-20200610-201937" />
     ```
 
     If Visual Studio Code asks you to restore packages, you can safely ignore that message. For brevity, we won't build the web application locally.

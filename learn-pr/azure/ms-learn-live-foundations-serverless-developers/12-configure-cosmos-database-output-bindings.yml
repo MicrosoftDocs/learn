@@ -1,0 +1,24 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.12-configure-cosmos-database-output-bindings
+
+title: Use an Output Binding to Write to Cosmos DB
+
+metadata:
+  title: Use an Output Binding to Write to Cosmos DB
+  description: Use an Output Binding to Write to Cosmos DB
+  
+  ms.date: 04/29/2020
+  
+  author: krumelur
+
+  ms.author: renrup
+
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+azureSandbox: false
+
+durationInMinutes: 5
+
+content: |
+  [!include[](includes/12-configure-cosmos-database-output-bindings.md)]

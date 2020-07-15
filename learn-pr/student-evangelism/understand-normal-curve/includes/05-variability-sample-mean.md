@@ -40,7 +40,7 @@ plots.scatter(pop_mean, -0.0008, marker='^', color='darkblue', s=60)
 plots.ylim(-0.004, 0.04);
 ```
 
-![Sample mean example](../media/73-variability-sample-mean-5-1.png)
+![Sample mean example.](../media/73-variability-sample-mean-5-1.png)
 
 Now let's take random samples and look at the probability distribution
 of the sample mean. As usual, we will use simulation to get an empirical
@@ -96,7 +96,7 @@ plots.ylim(0, 0.25);
     SD of sample means: 3.8997187931829136
 ```
 
-![Sample mean example](../media/73-variability-sample-mean-9-2.png)
+![Sample mean example.](../media/73-variability-sample-mean-9-2.png)
 
 ``` python
 simulate_sample_mean(delay, 'Delay', 400, 10000)
@@ -112,7 +112,7 @@ plots.ylim(0, 0.25);
     SD of sample means: 1.9777759739145762
 ```
 
-![Sample mean example](../media/73-variability-sample-mean-10-2.png)
+![Sample mean example.](../media/73-variability-sample-mean-10-2.png)
 
 ``` python
 simulate_sample_mean(delay, 'Delay', 625, 10000)
@@ -128,7 +128,7 @@ plots.ylim(0, 0.25);
     SD of sample means: 1.5794443889422805
 ```
 
-![Sample mean example](../media/73-variability-sample-mean-11-2.png)
+![Sample mean example.](../media/73-variability-sample-mean-11-2.png)
 
 You can see the Central Limit Theorem in action -- the histograms of the
 sample means are roughly normal, even though the histogram of the delays
@@ -162,8 +162,8 @@ Take a look at the SDs in the sample mean histograms above. In all three
 of them, the SD of the population of delays is about 40 minutes, because
 all the samples were taken from the same population.
 
-Now look at the SD of all 10,000 sample means, when the sample size is
-100. That SD is about one-tenth of the population SD. When the sample
+Now look at the SD of all 10,000 sample means, when the sample size is 100.
+That SD is about one-tenth of the population SD. When the sample
 size is 400, the SD of all the sample means is about one-twentieth of
 the population SD. When the sample size is 625, the SD of the sample
 means is about one-twenty fifth of the population SD.
@@ -228,7 +228,7 @@ two graphs are essentially indistinguishable.
 sd_comparison.plot('Sample Size n')
 ```
 
-![Sample mean example](../media/73-variability-sample-mean-20-0.png)
+![Sample mean example.](../media/73-variability-sample-mean-20-0.png)
 
 There really are two curves there. But they are so close to each other
 that it looks as though there is just one.

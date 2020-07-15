@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-innersource-program-github.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following choices best describes the relationship between *open source* and *InnerSource* programs?"
+    choices:
+    - content: "Anyone can offer a contribution to an open source program, whereas InnerSource programs only accept contributions from members of the team that owns the repository."
+      isCorrect: false
+      explanation: "Both InnerSource and open source programs are designed to accept contributions from people outside the team that owns the repository."
+    - content: "InnerSource programs are forked from open source programs by organizations that only use and maintain them privately moving forward."
+      isCorrect: false
+      explanation: "While an InnerSource program may be occasionally forked from an open source program, this distinction isn't really what defines their relationship."
+    - content: "InnerSource programs are fundamentally the same as open source programs, except that their access is limited to people within their organization."
+      isCorrect: true
+      explanation: "InnerSource offers all of the benefits of traditional open source patterns, but to a limited audience in order to protect intellectual property."
+  - content: "Suppose your team has been receiving some low-quality bug reports without enough information to properly diagnose. Which of the following choices is the **best** way to address the issue?"
+    choices:
+    - content: "Use GitHub Script to add a workflow action that automatically rejects any issues with a description fewer than 200 characters long."
+      isCorrect: false
+      explanation: "While this action may add length to the reports, it doesn't necessarily mean that your team will receive all the information they need to find and fix bugs."
+    - content: "Add an `ISSUE_TEMPLATE.md` file that includes fields for reproduction steps, system properties, and instructions for generating and including important logs."
+      isCorrect: true
+      explanation: "This file will ensure that anyone filing a bug knows what's expected of them at the moment they're writing the report."
+    - content: "Add a `CONTRIBUTING.md` file that clearly explains what's expected in bug reports, such as reproduction steps, system properties, and instructions for generating and including important logs."
+      isCorrect: false
+      explanation: "While this file is valuable, it assumes that everyone will read and conform to it. Consider a better option that is more integrated with the issue creation experience."
+  - content: "Suppose your team has been tracking data of all kinds since your InnerSource program went live three months ago. Which of the following metrics indicates your program is a great success?"
+    choices:
+    - content: "A dramatic rise in pull requests that address bugs in your software."
+      isCorrect: true
+      explanation: "This metric indicates that more people are motivated to improve the quality of your software and are making the investment themselves."
+    - content: "A growing rate of bug reports that are quickly closed because they cannot be reproduced."
+      isCorrect: false
+      explanation: "While this metric may indicate increasing interest in your program, these bug reports don't necessarily mean that your software quality is improving."
+    - content: "A steady decline in new issues."
+      isCorrect: false
+      explanation: "A decline in new issues may be an indication that users are satisfied with your software, or it could mean that they have low confidence that reporting issues and requesting features will produce progress. This metric alone is not enough to infer success."

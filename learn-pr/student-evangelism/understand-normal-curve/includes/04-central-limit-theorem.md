@@ -98,7 +98,7 @@ below.
 red.select('Winnings: Red').hist(bins=np.arange(-1.5, 1.6, 1))
 ```
 
-![theorem example](../media/72-central-limit-theorem-10-0.png)
+![Theorem example.](../media/72-central-limit-theorem-10-0.png)
 
 Now suppose you bet many times on red. Your net winnings will be the sum
 of many draws made at random with replacement from the distribution
@@ -133,7 +133,7 @@ results = Table().with_column(
 results.hist(bins=np.arange(-80, 50, 6))
 ```
 
-![theorem example](../media/72-central-limit-theorem-13-0.png)
+![Theorem example.](../media/72-central-limit-theorem-13-0.png)
 
 That's a roughly bell shaped histogram, even though the distribution we
 are drawing from is nowhere near bell shaped.
@@ -198,8 +198,8 @@ approximately normal, with an average and an SD that we can approximate.
 ### Average flight delay
 
 The table `united` contains data on departure delays of 13,825 United
-Airlines domestic flights out of San Francisco airport in the summer of
-2015. As we have seen before, the distribution of delays has a long
+Airlines domestic flights out of San Francisco airport in the summer of 2015.
+As we have seen before, the distribution of delays has a long
 right-hand tail.
 
 ``` python
@@ -210,7 +210,7 @@ united = Table.read_table(path_data + 'united_summer2015.csv')
 united.select('Delay').hist(bins=np.arange(-20, 300, 10))
 ```
 
-![theorem example](../media/72-central-limit-theorem-25-0.png)
+![Theorem example.](../media/72-central-limit-theorem-25-0.png)
 
 The mean delay was about 16.6 minutes and the SD was about 39.5 minutes.
 Notice how large the SD is, compared to the mean. Those large deviations
@@ -276,7 +276,7 @@ results = Table().with_column(
 results.hist(bins=np.arange(10, 25, 0.5))
 ```
 
-![theorem example](../media/72-central-limit-theorem-33-0.png)
+![Theorem example.](../media/72-central-limit-theorem-33-0.png)
 
 Once again, we see a rough bell shape, even though we are drawing from a
 skewed distribution. The bell is centered somewhere between 16 ad
@@ -351,7 +351,7 @@ results = Table().with_column('Sample Proportion: 200', props)
 results.hist(bins=np.arange(0.65, 0.85, 0.01))
 ```
 
-![theorem example](../media/72-central-limit-theorem-39-0.png)
+![Theorem example.](../media/72-central-limit-theorem-39-0.png)
 
 There's that normal curve again, as predicted by the Central Limit
 Theorem, centered at around 0.75 just as you would expect.
@@ -380,7 +380,7 @@ results = results.with_column('Sample Proportion: 800', props2)
 results.hist(bins=np.arange(0.65, 0.85, 0.01))
 ```
 
-![theorem example](../media/72-central-limit-theorem-42-0.png)
+![Theorem example.](../media/72-central-limit-theorem-42-0.png)
 
 Both distributions are approximately normal but one is narrower than the
 other. The proportions based on a sample size of 800 are more tightly

@@ -54,7 +54,7 @@ commute = trips.where('Duration', are.below(1800))
 commute.hist('Duration', unit='Second')
 ```
 
-![Bay Area Bike Sharing Map](../media/36-bike-share-bay-area-4-1.png)
+![Bay Area bike sharing map.](../media/36-bike-share-bay-area-4-1.png)
 
 We can get more detail by specifying a larger number of bins. But the
 overall shape doesn't change much.
@@ -63,7 +63,7 @@ overall shape doesn't change much.
 commute.hist('Duration', bins=60, unit='Second')
 ```
 
-![Bay Area Bike Sharing Map](../media/36-bike-share-bay-area-6-1.png)
+![Bay Area bike sharing map.](../media/36-bike-share-bay-area-6-1.png)
 
 ### Exploring the Data with group and pivot
 
@@ -227,7 +227,7 @@ point.
 Marker.map_table(stations.select('lat', 'long', 'name'))
 ```
 
-![Bay Area Map](../media/folium1.png)
+![Bay Area map.](../media/folium1.png)
 
 The map is created using
 [OpenStreetMap](http://www.openstreetmap.org/#map=5/51.500/-0.100),
@@ -245,7 +245,7 @@ sf_map_data = sf.select('lat', 'long', 'name')
 Circle.map_table(sf_map_data, color='green', radius=200)
 ```
 
-![Bay Area Map](../media/folium2.png)
+![Bay Area map.](../media/folium2.png)
 
 ### More informative maps: An application of join
 
@@ -295,7 +295,7 @@ colored = joined.select('lat', 'long', 'name', 'color')
 Marker.map_table(colored)
 ```
 
-![Bay Area Map](../media/folium3.png)
+![Bay Area map.](../media/folium3.png)
 
 Now the markers have five different colors for the five different
 cities.
@@ -378,6 +378,6 @@ Circle.map_table(starts_map_data)
 ... (65 rows omitted)
 ```
 
-![Bay Area Map](../media/folium4.png)
+![Bay Area map.](../media/folium4.png)
 
 That huge blob in San Francisco shows that the eastern section of the city is the unrivaled capital of bike rentals in the Bay Area.

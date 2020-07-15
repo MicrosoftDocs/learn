@@ -1,6 +1,6 @@
 # Title
 
-Create and publish an Express.js web application with Azure App Service and VS Code
+Create and publish an Express.js web application with Azure App Service and Visual Studio Code
 
 ## Role(s)
 
@@ -13,7 +13,7 @@ Create and publish an Express.js web application with Azure App Service and VS C
 ## Product(s)
 
 - Azure App Service
-- VS Code
+- Visual Studio Code
 
 ## Prerequisites
 
@@ -22,21 +22,21 @@ Create and publish an Express.js web application with Azure App Service and VS C
 
 ## Summary
 
-Create a JavaScript web application with Express.js and VS Code and publish it to Azure App Service.
+Create a JavaScript web application with Express.js and Visual Studio Code and publish it to Azure App Service.
 
 ## Learning objectives
 
-1. Create an Express.js web application in VS Code
+1. Create an Express.js web application in Visual Studio Code
 1. Publish the app to Azure App Service
-1. Update the app in VS Code and publish the updates
+1. Update the app in Visual Studio Code and publish the updates
 
 ## Chunk your content into subtasks
 
 | Subtask                                           | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet?  | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ------------------------------------------------- | ------------------------------------------------------------ | -------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------------ |
-| Create an Express.js web application in VS Code   | Create an Express.js web application in VS Code              | Exercise                                                 | Create an Express.js web application in VS Code   | Yes                                                          |
+| Create an Express.js web application in Visual Studio Code   | Create an Express.js web application in Visual Studio Code              | Exercise                                                 | Create an Express.js web application in Visual Studio Code   | Yes                                                          |
 | Publish the app to Azure App Service              | Publish the app to Azure App Service                         | Exercise                                                 | Publish the app to Azure App Service              | Yes                                                          |
-| Update the app in VS Code and publish the updates | Update the app in VS Code and publish the updates            | Exercise                                                 | Update the app in VS Code and publish the updates | Yes                                                      |
+| Update the app in Visual Studio Code and publish the updates | Update the app in Visual Studio Code and publish the updates            | Exercise                                                 | Update the app in Visual Studio Code and publish the updates | Yes                                                      |
 
 ## Outline the units
 
@@ -97,4 +97,4 @@ Create a JavaScript web application with Express.js and VS Code and publish it t
 
 ## Notes
 
-This is effectively the JavaScript/VS Code/Linux App Service version of https://docs.microsoft.com/en-us/learn/modules/publish-azure-web-app-with-visual-studio/
+This is effectively the JavaScript/Visual Studio Code/Linux App Service version of https://docs.microsoft.com/en-us/learn/modules/publish-azure-web-app-with-visual-studio/

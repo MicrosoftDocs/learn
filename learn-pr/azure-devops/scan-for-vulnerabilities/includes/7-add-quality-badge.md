@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 In this part, you add a quality badge to your GitHub README file so that there's a way to quickly see the status of your code quality.
 
 Let's check in with the team to see how this happens.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-batch-inference-pipelines-with-azure-machine-learning.4-creating-batch-pipeline
+title: Exercise - Create a batch inference pipeline
+metadata:
+  title: Exercise - Create a batch inference pipeline
+  description: "Get hands-on experience creating a batch inference pipeline with Azure Machine Learning"
+  ms.date: 07/16/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/4-create-batch-pipeline.md)]

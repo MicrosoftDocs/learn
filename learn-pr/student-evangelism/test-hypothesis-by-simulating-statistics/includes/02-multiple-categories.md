@@ -94,7 +94,7 @@ differences.
 jury.barh('Ethnicity')
 ```
 
-![category example](../media/57-multiple-categories-8-0.png)
+![Category example.](../media/57-multiple-categories-8-0.png)
 
 ### Comparison with panels selected at random
 
@@ -147,7 +147,7 @@ As always, it helps to visualize.
 panels_and_sample.barh('Ethnicity')
 ```
 
-![category example](../media/57-multiple-categories-12-0.png)
+![Category example.](../media/57-multiple-categories-12-0.png)
 
 The bar chart shows that the distribution of the random sample resembles
 the eligible population but the distribution of the panels does not.
@@ -171,7 +171,7 @@ below.
 jury.barh('Ethnicity')
 ```
 
-![category example](../media/57-multiple-categories-16-0.png)
+![Category example.](../media/57-multiple-categories-16-0.png)
 
 For this, we will compute a quantity called the *total variation
 distance* between two distributions. The calculation is as an extension
@@ -352,7 +352,7 @@ distribution by more than about 0.05.
 Table().with_column('TVD', tvds).hist(bins=np.arange(0, 0.2, 0.005))
 ```
 
-![category example](../media/57-multiple-categories-34-0.png)
+![Category example.](../media/57-multiple-categories-34-0.png)
 
 ### Assessing the model of random selection
 
