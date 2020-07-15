@@ -1,4 +1,4 @@
-It's time to put in practice your newly acquired debugging knowledge! Turns out we have the perfect opportunity for that. In our Tailwind Traders application, we are developing a new feature to allow displaying a product's price in multiple currencies. A coworker wrote some code for it, but is having a hard time trying to figure out what's going wrong. Let's try helping.
+It's time to put in practice your newly acquired debugging knowledge! It turns out we have the perfect opportunity for that. In our Tailwind Traders application, we are developing a new feature to allow displaying a product's price in multiple currencies. A coworker wrote some code for it, but is having a hard time trying to figure out what's going wrong. Let's try helping.
 
 Open VS Code on your machine, and create a new file named `currency.js` with this code:
 
@@ -150,9 +150,9 @@ Look at the line where the execution stopped and the exception message `TypeErro
 
 ### Rewind the call stack
 
-The *stack trace* you see below the error message can be a bit difficult to decipher. The good news is that VS Code process the function call stack for you, showing by default only the meaningful information in the **Call stack** panel. Let's use it to find out which code led to this exception.
+The *stack trace* you see below the error message can be a bit difficult to decipher. The good news is that VS Code processes the function call stack for you, showing by default only the meaningful information in the **Call stack** panel. Let's use it to find out which code led to this exception.
 
-We know that the exception was thrown in `formatValueForDisplay()`. Double-click on the function below it in the **Call stack** panel to see where is what called. You should end up at this line in `printForeignValues` function:
+We know that the exception was thrown in `formatValueForDisplay()`. Double-click on the function below it in the **Call stack** panel to see where it was called. You should end up at this line in `printForeignValues` function:
 
 ```js
 const displayValue = formatValueForDisplay(convertedValue);
@@ -160,11 +160,11 @@ const displayValue = formatValueForDisplay(convertedValue);
 
 Looking closely, you can see that parameter causing the exception comes from the `convertedValue` variable. Now we need to find out at what point this value becomes `undefined`.
 
-One option would be to add a breakpoint at this line, and inspect the variable every time the breakpoint is it. Though, we don't know when it might occur, and in complex programs this approach might take too much time.
+One option would be to add a breakpoint at this line, and inspect the variable every time the breakpoint hits it. Though, we don't know when it might occur, and in complex programs this approach might be cumbersome.
 
 ### Add conditional breakpoint
 
-What would be nice here, would be to tell the debugger to only stop at this breakpoint when `convertedValue` is `undefined`. Turns out, VS Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
+What would be nice here is to tell the debugger to only stop at this breakpoint only when `convertedValue` is `undefined`. It turns out, VS Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
 
 :::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in VS Code":::
 
@@ -174,7 +174,7 @@ You can now input the condition that will trigger the breakpoint. Type `converte
 
 Now take some time to analyze the current state.
 
-- The variable `convertedValue` is the result of `convertToCurrency(value, sourceCurrency, targetCurrency)`, so check also the parameters' value and confirm that it's correct.
+- The variable `convertedValue` is the result of `convertToCurrency(value, sourceCurrency, targetCurrency)`, so check also the parameters' values and confirm they are correct.
 - In particular, look at `value` and see that it has the expected value `10`.
 
 Maybe we should take a look at the code of the `convertToCurrency()` function.
@@ -186,7 +186,7 @@ function convertToCurrency(value, sourceCurrency, targetCurrency) {
 }
 ```
 
-We now that the result of this code is `undefined`, and we also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover onto the `rates` variable to take a peek.
+We know that the result of this code is `undefined`, and we also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover over the `rates` variable to take a peek.
 
 :::image source="../media/peek-at-variable.png" alt-text="Screenshot of peeking at the rates variable value":::
 
@@ -200,13 +200,13 @@ Now we know that some conversion rates are missing, let's understand why. Remove
 
 ### Watch `rates` variable
 
-Now add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. We can now at all times see how its value changes.
+Add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. Every time the value of `rates` is updated, its value will be reflected in the **Watch** panel.
 
 Step over the first `setExchangeRate()` call, and look at the result on `rates`.
 
 You can see at this point that the `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time, to look at the result of the second `setExchangeRate()` call.
 
-We see now that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. Time to look at the `setExchangeRate()` code:
+We see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. Time to look at the `setExchangeRate()` code:
 
 ```js
 function setExchangeRate(rate, sourceCurrency, targetCurrency) {
@@ -223,7 +223,7 @@ function setExchangeRate(rate, sourceCurrency, targetCurrency) {
 }
 ```
 
-The most important lines are the last two. It seems you've found the bug! The rates are only set between the `sourceCurrency` and `targetCurrency`, but we also need to calculate it for the other currencies that were previously added.
+The most important lines are the last two. It seems you've found the bug! The rates are only set between the `sourceCurrency` and `targetCurrency`, but we also need to calculate the rate for the other currencies that were previously added.
 
 ### Fix the code
 
@@ -247,10 +247,10 @@ With this code:
   }
 ```
 
-Using this code, for every currency other that `sourceCurrency` and `targetCurrency`, we'll use the conversion rate to `sourceCurrency` to deduce the rate between the other currency and `targetCurrency` and set it accordingly.
+Using this code, for every currency other than `sourceCurrency` and `targetCurrency`, we'll use the conversion rate of `sourceCurrency` to deduce the rate between the other currency and `targetCurrency` and set it accordingly.
 
 > [!NOTE]
-> This will only work if rates between `sourceCurrency` and other currency already exists, which is an acceptable limitation in this case.
+> This will only work if rates between `sourceCurrency` and other currencies already exist, which is an acceptable limitation in this case.
 
 ### Test the correction
 
