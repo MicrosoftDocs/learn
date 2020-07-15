@@ -1,8 +1,8 @@
-Now we need to create our cluster so we can deploy Contoso's website. To do that, let's recall what we learned from the previous unit about cluster architectures. To make this deployment work we're going to need several nodes, because we need to meet the demand of customers, so let's use the "Single Control Plane and Multiple Nodes" architecture, since it provides the best way to create and manage the resources and meet the scaling demand
+In this exercise, you'll create an AKS cluster to deploy a sample component for your video rendering service. You'll create an AKS cluster that uses several nodes to meet the demand of many customers using the service. You decide to use the *Single Control Plane and Multiple Nodes* architecture since it provides the best way to create and manage workload resources.
 
 ## Create a new cluster
 
-The first action you need to take in order to create your cluster is to provision it within Azure. Provisioning an AKS cluster in Azure can be done in the Azure portal or through the Azure CLI.
+You start the AKS cluster deployment by provisioning the cluster within Azure. Provisioning an AKS cluster in Azure can be done in the Azure portal or through the Azure CLI. 
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -11,7 +11,7 @@ The first action you need to take in order to create your cluster is to provisio
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
-1. Run the following command to create a resource group that you'll use to deploy your resources into.
+1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
 
     ```azurecli
     az group create \
@@ -19,7 +19,7 @@ The first action you need to take in order to create your cluster is to provisio
         --location eastus
     ```
 
-1. Run the following command to create an AKS cluster.
+1. Run the ` az aks create` command to create an AKS cluster.
 
     ```azurecli
     az aks create \
@@ -32,11 +32,7 @@ The first action you need to take in order to create your cluster is to provisio
         --node-vm-size Standard_B2s
     ```
 
-    In this command, we're telling Azure that we want to create a new AKS cluster named `contoso-kubernetes-cluster` within the `contoso-aks` resource group. This cluster will have 3 nodes defined in the `--node-count` parameter and we'll enable the HTTP application routing addon via the `--enable-addons` flag.
-
-    We'll also tell it to generate local public and private SSH files to allow our access to the cluster if they're missing via the `--generate-ssh-keys` and we'll set the DNS name for our cluster to `contoso-kubernetes` using the `--dns-name-prefix` parameter.
-
-    We're also specifying a small VM size of `Standard_B2s` using the `--node-vm-size` parameter.
+    The above command creates a new AKS cluster named `contoso-kubernetes-cluster` within the `contoso-aks` resource group. The cluster will have three nodes defined by the `--node-count` parameter. The `--node-vm-size` parameter configures the cluster nodes as `Standard_B2s` sized VMs, and the HTTP application routing addon is enabled via the `--enable-addons` flag. Finally, the command sets the DNS name for your cluster to `contoso-kubernetes` using the `--dns-name-prefix` parameter.
 
 ## Link with kubectl
 
@@ -48,9 +44,9 @@ The first action you need to take in order to create your cluster is to provisio
         --resource-group contoso-aks
     ```
 
-    This command will add an entry to your `~/.kube/config` file, which holds all the information to access the clusters you've registered. This allows you to manage multiple clusters from a single command line interface.
+    This command will add an entry to your `~/.kube/config` file, which holds all the information to access your clusters. Kubectl allows you to manage multiple clusters from a single command-line interface.
 
-1. Run the following command to confirm your cluster was created successfully and that kubectl can connect to it.
+1. Execute the ` kubectl get nodes` command to check that you can connect to your cluster and confirm its configuration.
 
     ```bash
     kubectl get nodes
