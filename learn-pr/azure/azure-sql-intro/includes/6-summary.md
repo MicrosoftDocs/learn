@@ -4,9 +4,13 @@ In this module, you learned about Azure SQL, including the deployment options, p
 
 To learn more about the history, options, models, and management tools for Azure SQL, visit the references below.
 
+### Video series: Azure SQL for beginners
+
+People learn in different ways. With that in mind, a video series related to this learning path was created with Channel 9 on YouTube. [You can access all 60+ videos here](https://aka.ms/azuresql4beginners).
+
 ### History of Azure SQL  
 
-You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg) keynote, where Microsoft's Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when", you can find that [here](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx). You can also read the [original blog post](https://azure.microsoft.com/en-us/blog/microsoft-announces-windows-azure-and-azure-services-platform/) from the launch of Windows Azure and SQL Azure.  
+You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg) keynote, where Microsoft's Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when", you can find that [here](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx). You can also read the [original blog post](https://azure.microsoft.com/blog/microsoft-announces-windows-azure-and-azure-services-platform/) from the launch of Windows Azure and SQL Azure.  
 
 ### SQL Server on Azure virtual machines
 
@@ -57,8 +61,8 @@ You may want to dive to the differences between the [DTU-based](https://docs.mic
 ) and [vCore-based](https://docs.microsoft.com/azure/sql-database/sql-database-service-tiers-vcore) purchasing models. To do that, review the [comparison vCores and DTUs in-depth here](https://docs.microsoft.com/azure/sql-database/sql-database-purchase-models
 ). Note that only the vCore model allows you to opt in for cost saving opportunities like [Azure Hybrid Benefit for SQL Server](https://azure.microsoft.com/pricing/hybrid-benefit/) and/or [Reserved capacity](https://docs.microsoft.com/azure/sql-database/sql-database-reserved-capacity).  
 
-The [documentation](https://docs.microsoft.com/en-us/azure/azure-sql/database/service-tiers-general-purpose-business-critical) goes deeper into the details and architectures for the various service tiers.  
+The [documentation](https://docs.microsoft.com/azure/azure-sql/database/service-tiers-general-purpose-business-critical) goes deeper into the details and architectures for the various service tiers.  
 
 ### Management interfaces
 
-To learn more about some of the tools, you can leverage the [Tools documentation](https://docs.microsoft.com/en-us/sql/tools/overview-sql-tools?view=sql-server-ver15) which includes information and guidance on the various options discussed in this module (and more).  
+To learn more about some of the tools, you can leverage the [Tools documentation](https://docs.microsoft.com/sql/tools/overview-sql-tools?view=sql-server-ver15) which includes information and guidance on the various options discussed in this module (and more).  
