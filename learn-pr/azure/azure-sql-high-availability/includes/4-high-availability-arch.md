@@ -13,7 +13,7 @@ As discussed in an earlier module in the learning path, all of Azure SQL is buil
 
 ## Business critical
 
-The next service tier to consider is Business critical, which is meant to obtain the highest performance and availability of all Azure SQL service tiers (General purpose, Hyperscale, Business critical). Business critical is meant for mission-critical applications that need low latency and minimal downtime.  
+The next service tier to consider is Business critical, which can generally achieve the highest performance and availability of all Azure SQL service tiers (General purpose, Hyperscale, Business critical). Business critical is meant for mission-critical applications that need low latency and minimal downtime.  
 
 [!div class="mx-imgBorder"]
 ![Business critical architecture](../media/4-business-critical-architecture.png)
@@ -31,6 +31,10 @@ The Hyperscale service tier is only available in Azure SQL Database, but is in t
 [!div class="mx-imgBorder"]
 ![Hyperscale architecture](../media/4-hyperscale-architecture-2.png)
 
-The architecture leverages paired page servers and the ability to scale horizontally to put all of the data in caching layers. The log and data files are stored using a combination of Azure Premium Storage and Azure Standard Storage. One interesting piece in this architecture is how the log service was pulled out. The log service is used to feed the replicas as well as the page servers. Transactions can commit when the log service hardens to the landing zone, which means the consumpution of the changes by a secondary compute replica is not required for a commit. Unlike other service tiers, the existence of secondary replicas is up to you to determine. You can configure zero to four secondary replicas, which can all be used for read-scale. 
+Since the architecture leverages paired page servers, you have the ability to scale horizontally to put all of the data in caching layers. This new architecture also allows Hyperscale to support up to 100 TB of database size. Because of the use of snapshots, nearly instantaneous database backups can occur regardless of size and databases restores takes minutes rather than hours or days. You can also scale up or down in constant time to accommodate your workloads.
 
-An automatic failover will happen if service fabric determines it needs to, but the recovery time will depend on the existence of secondary replicas. For example, if you have zero replicas and a failover occurs, it will be similar to the General purpose service tier where it first needs to find spare capacity. If you have one or more replicas, recovery is faster and more closely aligns to the Busines critical service tier.
+One other interesting piece in this architecture is how the log service was pulled out. The log service is used to feed the replicas as well as the page servers. Transactions can commit when the log service hardens to the landing zone, which means the consumption of the changes by a secondary compute replica is not required for a commit. Unlike other service tiers, the existence of secondary replicas is up to you to determine. You can configure zero to four secondary replicas, which can all be used for read-scale.
+
+Similar to the other service tiers, an automatic failover will happen if service fabric determines it needs to, but the recovery time will depend on the existence of secondary replicas. For example, if you have zero replicas and a failover occurs, it will be similar to the General purpose service tier where it first needs to find spare capacity. If you have one or more replicas, recovery is faster and more closely aligns to the Business critical service tier.
+
+Business critical maintains the highest performance and availability for workloads with small log writes that need low latency. However, the Hyperscale service tier will allow you to get a higher log throughput in terms of MB/second, so you'll need to consider your workload when choosing between the two.

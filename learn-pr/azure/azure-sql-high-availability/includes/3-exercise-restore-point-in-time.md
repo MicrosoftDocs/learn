@@ -25,7 +25,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell.
+1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell. You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
