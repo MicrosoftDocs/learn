@@ -18,11 +18,11 @@ The next service tier to consider is Business critical, which is meant to obtain
 [!div class="mx-imgBorder"]
 ![Business critical architecture](../media/4-business-critical-architecture.png)
 
-Business critical is very similar to deploying an Always on Availability Group (AG) behind the scenes. Unlike the General purpose tier, in Business critical the tempdb, data and log files are all running on directly attached SSDs, which reduces network latency significantly (General purpose uses remote storage). In this AG, there are three secondary replicas, and one of them can be used as a read-only endpoint (at no additional charge). One secondary replica must sync for a commit.
+Business critical is very similar to deploying an Always on Availability Group (AG) behind the scenes. Unlike the General purpose tier, in Business critical the data and log files are all running on directly attached SSDs, which reduces network latency significantly (General purpose uses remote storage). In this AG, there are three secondary replicas, and one of them can be used as a read-only endpoint (at no additional charge). A transaction can complete a commit when at least one of the secondary replicas has hardened the change for its transaction log.
 
 Read scale-out with one of the secondary replicas supports session-level consistency. That means if the read-only session reconnects after a connection error caused by replica unavailability, it may be redirected to a replica that is not 100% up-to-date with the read-write replica. Likewise, if an application writes data using a read-write session and immediately reads it using a read-only session, it is possible that the latest updates are not immediately visible on the replica. The latency is caused by an asynchronous transaction log redo operation.
 
-If any type of failure occurs and the service fabric decides a failover needs to occur, failing over to a secondary replica is very fast, because it already exists and has the data attached to it. In a failover, the pointers are changed quickly and then the service fabric takes care of spinning up another secondary.  
+If any type of failure occurs and the service fabric decides a failover needs to occur, failing over to a secondary replica is very fast, because it already exists and has the data attached to it. In a failover, you don't need a listener. The gateway will redirect your connection to the primary even after a failover. This switch happens quickly and then the service fabric takes care of spinning up another secondary replica.  
 
 ## Hyperscale
 

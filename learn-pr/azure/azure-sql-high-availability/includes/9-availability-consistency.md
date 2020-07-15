@@ -2,9 +2,9 @@ You now know about the high availability and disaster recovery architectures in 
 
 ## Database availability
 
-In both Azure SQL Database and Azure SQL Managed Instance, you cannot set `OFFLINE` and `EMERGENCY`. If you think about it, `OFFLINE` doesn't make sense, since you cannot attach databases, and `EMERGENCY` being restricted means you can do emergency mode repair, but you shouldn't have to, since Azure manages and maintains the service. However, other capabilities such as `RESTRICTED_USER` and Dedicated Admin Connection (DAC) are allowed in Azure SQL Database.
+In both Azure SQL Database and Azure SQL Managed Instance, you cannot set a database state to `OFFLINE` and `EMERGENCY`. If you think about it, `OFFLINE` doesn't make sense, since you cannot attach databases, and `EMERGENCY` being restricted means you cannot do emergency mode repair, but you shouldn't have to, since Azure manages and maintains the service. However, other capabilities such as `RESTRICTED_USER` and Dedicated Admin Connection (DAC) are allowed in Azure SQL Database.
 
-Accelerated Database Recovery (ADR) is a capability built in to the engine. With ADR, the transaction log is aggressively truncated and a Persisted Version Store (PVS) is used. This technology allows you to perform a transaction rollback instantly, solving a well-known issue with long running transactions. It also allows you to do database recovery quickly and consistently.
+Accelerated Database Recovery (ADR) is a capability built in to the engine. With ADR, the transaction log is aggressively truncated and a Persisted Version Store (PVS) is used. This technology allows you to perform a transaction rollback instantly, solving a well-known issue with long running transactions. It also means Azure SQL can recover databases quickly.
 
 In Azure SQL Database and Azure SQL Managed Instance, ADR greatly increases the general database availability, and is a big factor in the SLA. For these reasons, ADR is on by default and it cannot be turned off.
 

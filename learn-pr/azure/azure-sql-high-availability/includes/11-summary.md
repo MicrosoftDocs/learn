@@ -4,6 +4,10 @@ In this module and throughout the activities, you got to get hands-on with many 
 
 You can leverage the following resources to dive deeper into topics covered in this module.
 
+### Video series: Azure SQL for beginners
+
+People learn in different ways. With that in mind, a video series related to this learning path was created with Channel 9 on YouTube. [You can access all 60+ videos here](https://aka.ms/azuresql4beginnersyt).
+
 ### Backup/Restore
 
 In the documentation, you can learn more about how [restoring to a point in time](https://docs.microsoft.com/sql/relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model?view=sql-server-ver15) and [restoring a deleted database](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups#deleted-database-restore) work.
@@ -21,6 +25,10 @@ PowerShell has also been leveraged to see a few examples of availability in acti
 You can read more about [business continuity](https://docs.microsoft.com/azure/sql-database/sql-database-business-continuity) and [high availability](https://docs.microsoft.com/azure/sql-database/sql-database-high-availability) in Azure SQL in the documentation.
 
 In the Business critical tier, you can opt-in (for no additional fee) for a [zone redundant configuration](https://docs.microsoft.com/azure/sql-database/sql-database-high-availability#zone-redundant-configuration) if your [region supports that](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region). The links will guide you to more information.
+
+### Availability and consistency
+
+If you're interested in diving deeper into how Azure manages data integrity, there is an in-depth [blog post here](https://azure.microsoft.com/blog/data-integrity-in-azure-sql-database/). Additionally, if you want to learn more about Accelerated Database Recovery, the [documentation](https://docs.microsoft.com/azure/azure-sql/accelerated-database-recovery) has great detail and references to other resources like white papers.
 
 ### Designing cloud solutions for disaster recovery
 

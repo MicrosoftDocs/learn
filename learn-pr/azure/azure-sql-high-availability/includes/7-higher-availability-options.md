@@ -2,7 +2,7 @@ Azure SQL Database and Azure SQL Managed Instance provide great availability opt
 
 ## Availability zones
 
-In the Business critical tier, you can opt-in (for no additional fee) for a zone redundant configuration if your region supports that. At a high level, the Always On Availability Group (AG) that is running behind Business critical databases and managed instances is deployed across three different availability zones (AZ) within a region. An AZ is basically a separate datacenter within a given region with some distance between another AZ. This protects against catastrophic failures that may occur in a region to a datacenter.
+In the Business critical tier in Azure SQL Database, you can opt-in (for no additional fee) for a zone redundant configuration if your region supports that. At a high level, the Always On Availability Group (AG) that is running behind Business critical databases and managed instances is deployed across three different availability zones (AZ) within a region. An AZ is basically a separate datacenter within a given region with some distance between another AZ. This protects against catastrophic failures that may occur in a region to a datacenter.
 
 [!div class="mx-imgBorder"]
 ![Availability zone architecture](../media/7-availability-zones.png)
