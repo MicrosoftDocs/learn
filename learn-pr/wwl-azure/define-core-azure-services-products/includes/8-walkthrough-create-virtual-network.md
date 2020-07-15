@@ -26,7 +26,7 @@ In this task, we will create a virtual network.
 
    :::image type="content" source="../media/basics-tab-create-virtual-network.png" alt-text="Screenshot of the Create virtual network blade with the default fields of the Basics tab.":::
 
-4. Click on the **IP Addresses" tab and fill in the following values (leave the defaults for other fields):
+4. Click on the **IP Addresses** tab and fill in the following values (leave the defaults for other fields):
 
     | Setting | Value | 
     | --- | --- |
