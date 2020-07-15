@@ -19,7 +19,7 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
         --location eastus
     ```
 
-1. Run the ` az aks create` command to create an AKS cluster.
+1. Run the `az aks create` command to create an AKS cluster.
 
     ```azurecli
     az aks create \
