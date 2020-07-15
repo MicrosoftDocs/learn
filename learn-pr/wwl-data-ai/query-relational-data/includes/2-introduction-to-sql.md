@@ -11,7 +11,7 @@ You can use SQL statements such as **SELECT**, **INSERT**, **UPDATE**, **DELETE*
 
 Some popular dialects of SQL include:
 
-- *Transact-SQL (T-TQL)*. This version of SQL is used by Microsoft SQL Server and Azure SQL Database. 
+- *Transact-SQL (T-SQL)*. This version of SQL is used by Microsoft SQL Server and Azure SQL Database. 
 
 - *pgSQL*. This is the dialect, with extensions implemented in PostgreSQL.
 

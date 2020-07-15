@@ -2,8 +2,8 @@
 uid: learn.azure.aspnet-configurationbuilder.3-aspnet-configurationbuilder-overview
 title: Use the ConfigurationBuilder type
 metadata:
-  title: Using the ConfigurationBuilder type
-  description: Explain the purpose of the ConfigurationBuilder type, and how to use it in an ASP.NET web app.
+  title: Use the ConfigurationBuilder type
+  description: This unit explains the purpose of the ConfigurationBuilder type, and how to use it in an ASP.NET web app.
   ms.date: 06/30/2020
   author: coderandhiker
   ms.author: chrisrt

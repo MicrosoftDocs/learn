@@ -1,4 +1,4 @@
-Here, you learn about using Microsoft Azure Resource Manager templates (ARM templates) to implement infrastructure as code. You survey the sections of an ARM template, discover how to deploy your ARM template to Azure, and delve into detail on the *resources* section of the ARM template.
+Here, you learn about using Microsoft Azure Resource Manager (ARM) templates to implement infrastructure as code. You survey the sections of an ARM template, discover how to deploy your ARM template to Azure, and delve into detail on the *resources* section of the ARM template.
 
 ## What is infrastructure as code
 
