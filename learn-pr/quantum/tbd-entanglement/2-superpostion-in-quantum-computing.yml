@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.concepts.2-superposition-in-quantum-computing
+title: Superposition in quantum computing
+metadata:
+  title: Superposition in quantum computing
+  description: Explanation of what is quantum superposition and provides physical context.
+  ms.date: 09/19/2020
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-superposition-in-quantum-computing.md)]
