@@ -2,6 +2,10 @@ In this module and throughout the activities, you learned how to deploy and conf
 
 ## Learn more
 
+### Video series: Azure SQL for beginners
+
+People learn in different ways. With that in mind, a video series related to this learning path was created with Channel 9 on YouTube. [You can access all 60+ videos here](https://aka.ms/azuresql4beginnersyt).
+
 ### Pre-deployment planning and Migration to Azure
 
 To learn more about how to migrate to Azure SQL, you should review datamigration.microsoft.com, which has custom guidance on how to migrate based on your source and target database. Additionally, you should consider accessing the various resources and support available through the Azure Migrate Program (AMP) at azure.com/amp.  
