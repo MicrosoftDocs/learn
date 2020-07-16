@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Manage security operations in Azure
-summary: Learn how to configure security policies and manage security alerts with the tools and services in Azure. 
+summary: |
+  Learn how to configure security policies and manage security alerts with the tools and services in Azure. This learning path can help you prepare for the [Microsoft Certified: Azure Security Engineer Associate certification](https://docs.microsoft.com/learn/certifications/azure-security-engineer). 
 prerequisites: None
 iconUrl: /learn/achievements/manage-security-operations.svg
 levels:

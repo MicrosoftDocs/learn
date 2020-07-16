@@ -19,8 +19,6 @@ summary: |
     - Sign up for your free Azure DevOps organization
     - Learn how to plan and track work items using Azure Boards
     - Optimize sprint workloads across multiple Agile teams
-
-  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 prerequisites: None
 iconUrl: /learn/achievements/azure-devops/evolve-your-devops-practices.svg
 levels:

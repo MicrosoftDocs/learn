@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.github.upload-project-github
 metadata:
-  title: "Upload your project by using GitHub best practices - Learn"
+  title: "Upload your project by using GitHub best practices"
   description: Learn to upload your existing project to GitHub.
-  ms.date: 06/08/2020
+  ms.date: 06/26/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Identify important next steps to manage your repository and add community involvement
 prerequisites: |
   - A GitHub account
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/github/upload-project-github.svg
 ratingEnabled: true
 levels:
 - beginner

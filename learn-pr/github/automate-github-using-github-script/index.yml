@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.github.automate-github-using-github-script
 metadata:
-  title: "Automate GitHub by using GitHub Script - Learn"
+  title: "Automate GitHub by using GitHub Script"
   description: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
-  ms.date: 06/11/2020
+  ms.date: 06/26/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ prerequisites: |
   - A GitHub account
   - The ability to navigate and edit files in GitHub
   - Familiarity with GitHub Actions
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/github/automate-github-using-github-script.svg
 ratingEnabled: true
 levels:
 - beginner

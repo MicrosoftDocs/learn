@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.manage-release-cadence
 metadata:
-  title: Manage release cadence in Azure Pipelines by using deployment patterns - Learn
+  title: Manage release cadence in Azure Pipelines by using deployment patterns
   description: Choose and implement a deployment pattern that helps you smoothly roll out new application features to your users.
   ms.date: 01/21/2020
   author: tpetchel

@@ -5,8 +5,8 @@ metadata:
   title: Install the MAP toolkit
   description: See the steps you need to take to successfully install the MAP toolkit
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 5

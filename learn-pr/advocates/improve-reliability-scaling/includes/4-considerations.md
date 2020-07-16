@@ -92,7 +92,7 @@ You can:
 -   Review current and projected monthly spend in the Azure portal.
 -   Set up budgets in Azure Cost Management. This tool can allow you to
     examine your costs at different scopes including management group,
-    resource group and subscription. etc.)
+    resource group and subscription.
 
 ## Code and configuration inefficiencies
 

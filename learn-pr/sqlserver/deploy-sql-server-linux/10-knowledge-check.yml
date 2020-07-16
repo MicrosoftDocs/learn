@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check - client tools
   description: In this unit, you will test your understanding of SQL Server on Linux by answering questions.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 5
