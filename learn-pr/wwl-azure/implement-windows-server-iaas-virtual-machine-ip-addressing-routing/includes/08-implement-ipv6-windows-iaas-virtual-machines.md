@@ -17,7 +17,7 @@ You can create a dual-stack VNet when you create the VNet in the Azure portal. U
 2. Enter the basic information on the **Basics** page, and then select **Next: IP Addresses**.
 3. On the **IP Addresses** page, select the **Add IPv6 address** space check box.
 
-![A screenshot of the Create virtual network page in the Azure portal. The administrator has selected the IP Addresses tab and the Add IPv6 address space check box. In the Edit subnet blade, the administrator has entered an IPv6 address range.](../media/m18-ipv6-configuration1.png)
+   ![A screenshot of the Create virtual network page in the Azure portal. The administrator has selected the IP Addresses tab and the Add IPv6 address space check box. In the Edit subnet blade, the administrator has entered an IPv6 address range.](../media/m18-ipv6-configuration-1.png)
 
 4. Select the subnet that displays, and on the **Edit subnet** blade, select the **Add IPv6 address space** check box.
 5. Enter an IPv6 address, and then select **Save**.

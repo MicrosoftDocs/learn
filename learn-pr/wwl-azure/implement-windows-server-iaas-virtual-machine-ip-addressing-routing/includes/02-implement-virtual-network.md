@@ -22,7 +22,7 @@ However, in Azure, any additional network management tasks are more straightforw
 
 A *network interface* is the interconnection between a VM and a VNet. A VM must have at least one network interface (connected to a VNet), but they can also have more than one, depending on the size of the VM you create. You can create a VM with multiple network interfaces and add or remove network interfaces through the lifecycle of a VM. Multiple network interfaces allow a VM to connect to different subnets in the same VNet, and send or receive traffic over the most appropriate interface. VMs with any number of network interfaces can exist in the same availability set, up to the number supported by the VM size. In the following example, a VNet has three connected network interfaces.
 
-![A screenshot of the Overview page of a VNet interface named ContosoVM1VNET, which has three connected devices: ContosoVM1VMNIC, ContosoVM2VMNIC, and ContosoVM3VMNIC.](../media/m18-virtual-network1.png)
+![A screenshot of the Overview page of a VNet interface named ContosoVM1VNET, which has three connected devices: ContosoVM1VMNIC, ContosoVM2VMNIC, and ContosoVM3VMNIC.](../media/m18-virtual-network-1.png)
 
 Each network interface that's attached to a VM must:
 
@@ -41,7 +41,7 @@ You can assign two types of IP addresses to a network interface in Azure as desc
 
 The following screenshot displays both the private IPv4 address (10.0.0.4) and the public IPv4 address (52.146.34.12) of a network interface.
 
-![A screenshot of the ContosoVM1VMNic page in the Azure portal. Both the private IP address (10.0.0.4) and the public IP address (52.146.34.12) (ContosoVM1PublicIP) display.)](../media/m18-virtual-network2.png)
+![A screenshot of the ContosoVM1VMNic page in the Azure portal. Both the private IP address (10.0.0.4) and the public IP address (52.146.34.12) (ContosoVM1PublicIP) display.)](../media/m18-virtual-network-2.png)
 
 You can assign public IP addresses to VMs or internet-facing load balancers. Azure assigns private IP addresses to VMs and internal load balancers automatically.
 

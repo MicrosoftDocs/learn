@@ -43,17 +43,17 @@ After you have created your VM or other resource, you can reconfigure the privat
 3. Select the appropriate network interface.
 4. Select **IP configurations**.
 
-[![Screenshot of the IP configuration page for a selected VM's network interface. IP forwarding settings are set to Disabled.](../media/m18-network-settings.png)](../media/m18-network-settings.png#lightbox)
+   [![Screenshot of the IP configuration page for a selected VM's network interface. IP forwarding settings are set to Disabled.](../media/m18-network-settings.png)](../media/m18-network-settings.png#lightbox)
 
 5. Under the IP configurations table, select the listed entry.
 
-![Screenshot of the Azure portal ipconfig1 page for a selected Azure network interface. Under Public IP address settings, the public IP address is set to Associate, and under Private IP address settings, Assignment is set to Dynamic.](../media/m18-configurate-network1.png)
+   ![Screenshot of the Azure portal ipconfig1 page for a selected Azure network interface. Under Public IP address settings, the public IP address is set to Associate, and under Private IP address settings, Assignment is set to Dynamic.](../media/m18-configurate-network-1.png)
 
 6. If you want to remove the public IP address from the resource, under **Public IP address settings**, select **Disassociate**.
 7. If you want to change the public IP address configuration, under **Public IP address settings**, select **IP address**.
 8. On the **Choose public IP address** page, select **Create new**.
 
-![Screenshot of the Create public IP address page for ipconfig1. The SKU is Basic and the Assignment is Dynamic. ](../media/m18-configurate-network2.png)
+   ![Screenshot of the Create public IP address page for ipconfig1. The SKU is Basic and the Assignment is Dynamic. ](../media/m18-configurate-network-2.png)
 
 9. Enter a new name, choose the SKU and Assignment methods, and then select **OK**.
 10. Under **Private IP address settings**, you can change the assignment from **Dynamic** to **Static**. If you switch from **Dynamic**, the Static address defaults to the same IP address that was dynamically assigned, although you can change it.

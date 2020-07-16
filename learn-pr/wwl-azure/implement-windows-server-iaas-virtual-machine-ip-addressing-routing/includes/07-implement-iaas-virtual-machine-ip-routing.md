@@ -67,13 +67,13 @@ The following table describes how Azure interprets the Next hop type.
 
 You can create either user-defined custom routes in Azure, or you can generate custom routes by exchanging BGP routes with your on-premises network infrastructure and an Azure VNet gateway.
 
-![A screenshot of the Create route table page in the Azure portal. The administrator has defined the Name as ContosoRouteTable, and selected Enabled for the Virtual network gateway route propagation value.](../media/m18-add-route1.png)
+![A screenshot of the Create route table page in the Azure portal. The administrator has defined the Name as ContosoRouteTable, and selected Enabled for the Virtual network gateway route propagation value.](../media/m18-add-route-1.png)
 
 ### User-defined
 
 You can create user-defined custom routes in Azure to override Azure's default system routes. In Azure, you create a route table, then associate the route table to zero or more virtual network subnets. Each subnet can have zero or one route table associated to it. If you create a route table and associate it with a subnet, the routes within the table are combined with, or override the default routes Azure adds to a subnet by default.
 
-![A screenshot of the Add route page in the Azure portal. The administrator has defined the route name as Internet, the address prefix as 0.0.0.0/0, and the Next hop type as Internet. ](../media/m18-add-route2.png)
+![A screenshot of the Add route page in the Azure portal. The administrator has defined the route name as Internet, the address prefix as 0.0.0.0/0, and the Next hop type as Internet. ](../media/m18-add-route-2.png)
 
 The following table defines the next hop types you can use select when creating a custom route.
 
