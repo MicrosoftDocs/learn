@@ -16,13 +16,13 @@ abstract: |
   - Understand what the manifest file package.json consist of and use it to your advantage
   - Add and remove packages to your Node.js project
   - Manage your package dependencies and update them in a predictable way
-iconUrl: /learn/achievements/node-intro.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - developer
 products:
-- vs
+- azure
 prerequisites: |
   - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
   - Familiarity with editing text and code files in any text editor
