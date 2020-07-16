@@ -1,6 +1,14 @@
-Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're to deploy one of your video rendering service applications. You decide to deploy your company's website as a test app.
+Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
 
-The Kubernetes container orchestration features make it easy to manage workloads on the cluster. Here you'll explore how to create workloads in your AKS cluster.
+Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment. 
+
+Assume you're using an Azure Virtual Machine as your target platform. The first step is to prepare the server software to host the application. You'll install the operating system, make sure to update the OS to the latest security and software patches, install and configure the web server software, and finally deploy the web application. You'll repeat this process for each new VMs when you decide to scale the website out to handle an increase in demand from customers.
+
+An alternative approach is to run the website on a container-based platform like Azure Container Instances (ACI). You do not need to worry about the underlying server technology, but you'll have to configure and manage several containers to use this strategy manually.
+
+Kubernetes and AKS help you orchestrate containers. The Kubernetes container orchestration features make it easy to manage workloads on the cluster.
+
+Here you'll explore how to create workloads in your AKS cluster.
 
 ## Container images
 
@@ -69,7 +77,7 @@ Other common keys for all the files are the `metadata` and `name` keys. All Kube
 
 ## How to group objects in a deployment
 
-Deployments make use of a `label` to find and group pods within their bounds. You define the label as part of your deployment's manifest file.
+Deployments make use of a `label` to find and group pods. You define the label as part of your deployment's manifest file.
 
 Here is an example. Notice the `matchLabels` value defined in the `selector` definition added to the `spec` definition.
 
