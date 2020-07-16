@@ -31,7 +31,7 @@ Regardless of whether you run the `npm init` or `npm init -y` command it will ge
 A way to look at all the possible fields in the `package.json` is to think of them as belonging to different groups. Namely the following groups:
 
 - **meta information**, in this group we have meta information on the project like its name, description, author, keywords for example.
-- **dependencies**, there are two properties, `dependencies` and `devDependencies` that is used to inform of what libraries are currently being used. We'll learn later in the module how to take advantage of these two sections to install, update and also separate our different dependencies.
+- **dependencies**, there are two properties, `dependencies` and `devDependencies` that are used to inform of what libraries are currently being used. We'll learn later in the module how to take advantage of these two sections to install, update and also separate our different dependencies.
 - **scripts**, this section is where we place script that can do things such as for example *start*, *build*, *test*, *lint* our project.
 
 ### Scripts for managing your project

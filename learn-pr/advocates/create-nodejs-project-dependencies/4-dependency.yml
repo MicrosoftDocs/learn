@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-nodejs-project-dependencies.4-dependency
-title: Add Dependencies to your Node.js project
+title: Add packages to your Node.js project
 metadata:
   title: Add packages to your Node.js project
   description: This unit will explain how to add and remove packages in your Node.js application.

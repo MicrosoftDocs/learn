@@ -61,7 +61,7 @@ Here are some patterns to configure for major/minor/patch version:
 
 ## `package-lock.json`
 
-Together with the `package.json` manifest file you also have the `package-lock.json` file. The latter is generated when you take an action that modifies `node_modules` directory or any kind of action changing the `package.json`. So it would not be created on `npm init` but rather on a package install for example.
+Together with the `package.json` manifest file you also have the `package-lock.json` file. The latter is generated when you take an action that modifies `node_modules` directory or any kind of action changing the dependencies in `package.json`. So it would not be created on `npm init` but rather on a package install for example.
 
 This file *should be committed* to your repository and why is that?
 

@@ -59,7 +59,7 @@ You've been given some app code that parses an address from a string. So your ta
    ---| address-parser.js
    ```
 
-1. Add the following content to `__tests__/address_parser.js`:
+1. Add the following content to `__tests__/address-parser.js`:
 
    ```javascript
    const { parse } = require("../address-parser");
@@ -109,4 +109,3 @@ You've been given some app code that parses an address from a string. So your ta
    Success, your test passes and you've added a new capability *testing* by installing a dependency.
 
 Congrats you've managed to successfully install Jest, a dependency, write tests for application code and run the tests. Jest seems to deliver in on its promise and Tailwind Traders are likely to be happy with this evaluation.
-

@@ -40,7 +40,7 @@ Individual developers might use the global registry at NPM to find and download 
 
 - **Registries**, an example of a registry might be a global registry like the NPM one. It is possible to host your own registries that can be either private or public.
 - **Repositories**, instead of pointing to a registry it's possible to point out a GitHub URL and install the package from there.
-- **Files**, a package can be installed from a zipped file. Installing from a package is a common scenario when you are trying to develop your own Node.js libraries and want to test it locally or you for some reason don't want to use a registry.
+- **Files**, a package can be installed from a local folder or zipped file. Installing from a package is a common scenario when you are trying to develop your own Node.js libraries and want to test it locally or you for some reason don't want to use a registry.
 - **Directory**, you can install right from a directory as well.
   
 ### The NPM registry and tool
@@ -115,4 +115,4 @@ You are likely to sooner or later run into a scenario where you no longer need a
 There are two ways you can clean up dependencies you no longer want to use:
 
 - **Uninstalling**, to uninstall a package you use the uninstall command like so `npm uninstall <name of dependency>`. This command will remove the package from the manifest file but also from the `node_modules` directory.
-- **Pruning**, by running the command prune like so `npm prune` it will remove all dependencies in the `node_modules` directory that is not listed as dependencies in the manifest file. This command can be good to use if you want to remove more than one dependency and don't want to run the `uninstall` command for each dependency. Used in that way you would remove entries from the `dependencies` or `devDependencies` section and the run the `npm prune` command.
+- **Pruning**, by running the command prune like so `npm prune` it will remove all dependencies in the `node_modules` directory that are not listed as dependencies in the manifest file. This command can be good to use if you want to remove more than one dependency and don't want to run the `uninstall` command for each dependency. Used in that way you would remove entries from the `dependencies` or `devDependencies` section and the run the `npm prune` command.

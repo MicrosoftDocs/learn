@@ -50,8 +50,8 @@ Open up a terminal window.
 
 1. Fill out the following values like so:
 
-    - `name`, give it the value `Tailwind trader API`
-    - `description`, fill in the following description `An HTTP API that will items from Tailwind Traders database`
+    - `name`, give it the value `tailwind-trader-api`
+    - `description`, fill in the following description `An HTTP API that will manage items from Tailwind Traders database`
     - `main`, fill in `index.js`.
     - `keywords`, fill in the following `api`, `database`
     - `author`, fill in `Sam`
