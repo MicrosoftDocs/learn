@@ -46,13 +46,13 @@ When you create a new AKS cluster, you have several different items of informati
 
 These items include:
 
-Node pools
-Node count
-Automatic routing
+- Node pools
+- Node count
+- Automatic routing
 
 ## Node pools
 
-You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size for each node in the node pool.  Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool when needed.  New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
+You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size for each node in the node pool. Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool when needed. New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
 
 :::image type="content" source="../media/2-3-nodepool-diagram.png" alt-text="Node pool diagram":::
 

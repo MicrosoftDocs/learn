@@ -19,7 +19,7 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
         --location eastus
     ```
 
-1. Run the ` az aks create` command to create an AKS cluster.
+1. Run the `az aks create` command to create an AKS cluster.
 
     ```azurecli
     az aks create \
@@ -46,7 +46,7 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
 
     This command will add an entry to your `~/.kube/config` file, which holds all the information to access your clusters. Kubectl allows you to manage multiple clusters from a single command-line interface.
 
-1. Execute the ` kubectl get nodes` command to check that you can connect to your cluster and confirm its configuration.
+1. Execute the `kubectl get nodes` command to check that you can connect to your cluster and confirm its configuration.
 
     ```bash
     kubectl get nodes

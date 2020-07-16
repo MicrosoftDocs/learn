@@ -32,7 +32,7 @@ Kubernetes groups containers and applications into logical structures called **P
 
 ## Kubernetes labels
 
-Kubernetes labels allow you to logical group Kubernetes objects. These labels enable the system to query the cluster for objects that match a  label with a specific name. 
+Kubernetes labels allow you to logical group Kubernetes objects. These labels enable the system to query the cluster for objects that match a label with a specific name. 
 
 For example, if you wanted to search all workloads related to the `contoso-website`, you'll query the cluster for pods with the label `app` and the value `contoso-website`. 
 
@@ -46,7 +46,7 @@ Deployments allow users to update applications just by changing the image tag wi
 
 ## Kubernetes manifest files
 
-A Kubernetes manifest file allows you to describe your workloads in the YAML format declaratively and simplify Kuberenete object management. 
+A Kubernetes manifest file allows you to describe your workloads in the YAML format declaratively and simplify Kubernetes object management. 
 
 Imagine you have to deploy a workload by hand. You need to think about and manage several aspects. You'd need to create a container, select a specific node, wrap it in a pod, run the pod, monitor execution, and so on.
 
