@@ -6,7 +6,7 @@ Integrating the QnA Maker service with a bot in Azure can make it easier for use
 
 To avoid any unexpected costs in your Azure account, delete the **mslearn-factbot** resource group. This removes all the resources you created in this module. Here are the steps:
 
-1. Find the **mslearn-factbot** resource group. You can select **Resource groups** in the Azure sidebar to quickly locate it, or use the global search bar at the top of the portla window.
+1. Find the **mslearn-factbot** resource group. You can select **Resource groups** in the Azure sidebar to quickly locate it, or use the global search bar at the top of the portal window.
 
 1. Select the resource group and either right-click the row or use the ellipsis button (...) on the right side of the row to open the menu.
 
@@ -18,7 +18,7 @@ To avoid any unexpected costs in your Azure account, delete the **mslearn-factbo
 
 There is more that you can do to leverage the power of the Azure Bot Service.
 
-- Incorporating [Dialogs](http://aihelpwebsite.com/Blog/EntryId/9/Introduction-To-Using-Dialogs-With-The-Microsoft-Bot-Framework)
+- Incorporating [Dialogs](https://aihelpwebsite.com/ViewBlogPost/32)
 - Add support for [FormFlow](https://blogs.msdn.microsoft.com/uk_faculty_connection/2016/07/14/building-a-microsoft-bot-using-microsoft-bot-framework-using-formflow/)
 - Support natural language with [Microsoft Language Understanding and Intelligence Services (LUIS)](https://docs.botframework.com/node/builder/guides/understanding-natural-language/).
 
