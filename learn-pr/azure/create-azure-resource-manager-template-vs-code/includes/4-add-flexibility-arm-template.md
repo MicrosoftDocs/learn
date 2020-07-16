@@ -1,4 +1,4 @@
-In the last unit, you created an Azure Resource Manager template (ARM template) and added an Azure Storage Account to the ARM template. You may have noticed that there's a problem with your template. The Storage Account name is hard-coded. You can only use this template to deploy the same Storage Account every time. To deploy a storage account with a different name, you would have to create a new template, which isn't a practical way to automate your deployments. The Storage Account SKU is also hard-coded which means you can't vary the type of Storage Account for different environments. Recall that in our scenario each deployment may have a different type of Storage Account. You can make your template more reusable by adding a parameter for the Storage Account SKU.
+In the last unit, you created an Azure Resource Manager (ARM) template and added an Azure Storage Account to the ARM template. You may have noticed that there's a problem with your template. The Storage Account name is hard-coded. You can only use this template to deploy the same Storage Account every time. To deploy a storage account with a different name, you would have to create a new template, which isn't a practical way to automate your deployments. The Storage Account SKU is also hard-coded which means you can't vary the type of Storage Account for different environments. Recall that in our scenario each deployment may have a different type of Storage Account. You can make your template more reusable by adding a parameter for the Storage Account SKU.
 
 Here, you learn about the *parameters* and *outputs* sections of the template.
 
@@ -83,6 +83,8 @@ Then, use the parameter in the resource definition. Notice the syntax is ```[par
 
 When you deploy the template, you can give a value for the parameter. Notice the last line in the command below.
 
+# [Azure CLI](#tab/azure-cli)
+
 ```azurecli
 templateFile="azuredeploy.json"
 az deployment group create \
@@ -91,15 +93,17 @@ az deployment group create \
   --parameters storageAccountType=Standard_LRS
 ```
 
-If you have multiple parameters, put a space between them. For example:
+# [PowerShell](#tab/azure-powershell)
 
-```azurecli
-templateFile="azuredeploy.json"
-az deployment group create \
-  --name testdeployment1 \
-  --template-file $templateFile \
-  --parameters storageAccountType=Standard_LRS parameter2=anotherValue
+```azurepowershell
+$templateFile = "azuredeploy.json"
+New-AzResourceGroupDeployment `
+  -Name testdeployment1 `
+  -TemplateFile $templateFile `
+  -storageAccountType Standard_LRS
 ```
+
+---
 
 ## What are ARM template outputs
 

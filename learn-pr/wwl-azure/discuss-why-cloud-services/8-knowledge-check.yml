@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/20/2020
+  ms.date: 07/18/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ quiz:
     choices:
     - content: "Economies of scale"
       isCorrect: true
-      explanation: "That's correct. Economies of scale is the ability to do things more cheaply and more efficiently when operating at a larger scale in comparison to operating at a smaller scale."
+      explanation: "That's correct. Economies of scale is the ability to do things more cheaply and more efficiently when a company operates at a larger scale (in comparison to a smaller scale)."
     - content: "Fixed workloads"
       isCorrect: false
       explanation: "That's incorrect. Workloads can be flexible or fixed in the cloud."
@@ -37,15 +37,15 @@ quiz:
       explanation: "That's incorrect. Operational expenses are on-going expenses that land as you use a given service or feature."
     - content: "Supply and demand"
       isCorrect: false
-      explanation: "That's incorrect.  This is a business concept for managing your inventory versus a way of spending money on cloud services."
+      explanation: "That's incorrect. Supply and demand is a business concept for managing your inventory versus a way of spending money on cloud services."
   - content: "Which of the following terms refer to making a service available with no downtime for an extended period of time?"
     choices:
     - content: "Agility"
       isCorrect: false
-      explanation: "That's incorrect. This is the ability to add or remove resources to support peaks in your resource usage."
+      explanation: "That's incorrect. Agility is the ability to add or remove resources to support peaks in your resource usage."
     - content: "Fault tolerance"
       isCorrect: false
-      explanation: "That's incorrect.  This is the ability to have an interruption or fault in your service without your application going offline."
+      explanation: "That's incorrect.  Fault tolerance is the ability to have an interruption or fault in your service without your application going offline."
     - content: "High availability"
       isCorrect: true
       explanation: "That's correct. High availability keeps services up and running for long periods of time, with little downtime, depending on the service in question."

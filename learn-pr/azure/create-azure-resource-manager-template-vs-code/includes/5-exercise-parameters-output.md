@@ -1,4 +1,4 @@
-In this exercise, you add a parameter to define the Azure Storage Account name during deployment. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the Azure Resource Manager template (ARM template) by adding an output that can be used later in the deployment process.
+In this exercise, you add a parameter to define the Azure Storage Account name during deployment. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the Azure Resource Manager (ARM) template by adding an output that can be used later in the deployment process.
 
 ## Create parameters for the ARM template
 
@@ -44,6 +44,8 @@ Here, you make your ARM template more flexible by adding parameters that can be 
 
 Here, you change the name of the deployment to better reflect what this deployment does and fill in a value for the new parameter.
 
+::: zone pivot="cli"
+
 1. Run the following Azure CLI commands in the terminal. This is the same code you used previously, however the name of the deployment is changed and you need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
     ```azurecli
@@ -56,6 +58,26 @@ Here, you change the name of the deployment to better reflect what this deployme
       --template-file $templateFile \
       --parameters storageName={your-unique-name}
     ```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Run the following Azure PowerShell commands in the terminal. This is the same code you used previously, however the name of the deployment is changed and you need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
+
+    ```azurepowershell
+    $templateFile = "azuredeploy.json"
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="addnameparameter-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile `
+      -storageName {your-unique-name}
+    ```
+
+::: zone-end
+
+### Check your deployment
 
 1. In your browser, navigate back to Azure. Go to your resource group and see that there are now *3 Succeeded* deployments. Select this link.
 1. Notice that all three deployments are in the list.
@@ -112,6 +134,8 @@ Here you use parameters to limit the values allowed for a parameter.
 
 Here you deploy successfully using a ```storageSKU``` parameter that is in the allowed list, then you try to deploy the template using a ```storageSKU``` parameter that is not in the allowed list. The second deployment will fail as expected.
 
+::: zone pivot="cli"
+
 1. Run the following commands to deploy the template. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
     ```azurecli
@@ -144,6 +168,42 @@ Here you deploy successfully using a ```storageSKU``` parameter that is in the a
 
     :::image type="content" source="../media/3-deploy-validation-failed.png" alt-text="Terminal window showing the deployment validation error." border="true":::
 
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Run the following commands to deploy the template. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
+
+    ```azurepowershell
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="addSkuParameter-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile `
+      -storageName {your-unique-name} `
+      -storageSKU Standard_GRS
+    ```
+
+      Allow this deployment to finish. This deployment succeeds as expected. The allowed values prevent users of your template from passing in parameter values that don't work for the resource. Let's see what happens when you provide an invalid SKU.
+
+1. Run the following commands to deploy the template with a parameter that is not allowed. Here. you changed the ```storageSKU``` parameter to **Basic**. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
+
+    ```azurepowershell
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="addSkuParameter-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile `
+      -storageName {your-unique-name} `
+      -storageSKU Basic
+    ```
+
+    This deployment fails. Notice the error.
+
+    :::image type="content" source="../media/3-deploy-validation-failed.png" alt-text="Terminal window showing the deployment validation error." border="true":::
+
+::: zone-end
+
 ## Add output to the ARM template
 
 Here you add to the ```outputs``` section of the ARM template to output the endpoints for the Storage Account resource.
@@ -175,6 +235,8 @@ Here you add to the ```outputs``` section of the ARM template to output the endp
 
 Here, you deploy the template and see the endpoints output as JSON. You need to fill in a unique name for the ```storageName``` parameter. Remember, this must be unique across all of Azure. You can use the unique name you created in the last section. In that case, Azure will update the resource instead of creating a new one.
 
+::: zone pivot="cli"
+
 1. Run the following commands to deploy the template. Be sure to replace the *{your-unique-name}* with a string unique to you.
 
     ```azurecli
@@ -191,6 +253,30 @@ Here, you deploy the template and see the endpoints output as JSON. You need to 
 1. Notice the output.
 
     :::image type="content" source="../media/3-add-output-result.png" alt-text="Terminal window showing the primary endpoints output as JSON." border="true":::
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Run the following commands to deploy the template. Be sure to replace the *{your-unique-name}* with a string unique to you.
+
+    ```azurepowershell
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="addOutputs-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile `
+      -storageName {your-unique-name} `
+      -storageSKU Standard_LRS
+    ```
+
+1. Notice the output.
+
+    :::image type="content" source="../media/3-add-output-result.png" alt-text="Terminal window showing the primary endpoints output as JSON." border="true":::
+
+::: zone-end
+
+### Check your output deployment
 
 1. In the portal, navigate to your *addOutputs* deployment. You can find your output there as well.
 
