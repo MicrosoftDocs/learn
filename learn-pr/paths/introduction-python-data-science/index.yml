@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.reactors.introduction-python-data-science
+metadata:
+  title: Introduction to Python for data science
+  description: Learn to use Python for data science. Modules introduce the Python language, the NumPy and pandas libraries, basic data-preparation methods, and related tools.
+  brand: azure
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Introduction to Python for data science
+summary: |
+  Welcome to the introduction to Python for data science. The modules in this learning path pair with in-person workshops that run in Microsoft Reactors, and they're also standalone learning resources. That is, you don't have to come to a workshop to benefit from them.
+
+  Throughout this learning path, you'll be encouraged to try out Python code in Visual Studio Code by using the Python extension and Jupyter Notebook.
+
+  In this learning path, you will:
+    - Learn about Python for data science
+    - Understand the basics of using the NumPy and pandas libraries
+    - Clean and manipulate data to prepare for analysis
+    - Work with your data in Visual Studio Code by using Jupyter Notebook
+
+  This learning path is complementary content for Microsoft Reactor Workshops.
+  
+prerequisites: |
+  None.
+iconUrl: /learn/achievements/reactors/introduction-python-data-science.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+modules:
+- learn.reactors.python-data-science
+- learn.reactors.numpy-data-science
+- learn.reactors.pandas-data-science
+- learn.reactors.data-manipulate-clean
+trophy:
+  uid: learn.reactors.introduction-python-data-science.trophy
