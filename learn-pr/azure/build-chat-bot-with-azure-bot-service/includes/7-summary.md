@@ -6,7 +6,7 @@ Integrating the QnA Maker service with a bot in Azure can make it easier for use
 
 To avoid any unexpected costs in your Azure account, delete the **mslearn-factbot** resource group. This removes all the resources you created in this module. Here are the steps:
 
-1. Find the **mslearn-factbot** resource group. You can select **Resource groups** in the Azure sidebar to quickly locate it, or use the global search bar at the top of the portla window.
+1. Find the **mslearn-factbot** resource group. You can select **Resource groups** in the Azure sidebar to quickly locate it, or use the global search bar at the top of the portal window.
 
 1. Select the resource group and either right-click the row or use the ellipsis button (...) on the right side of the row to open the menu.
 
