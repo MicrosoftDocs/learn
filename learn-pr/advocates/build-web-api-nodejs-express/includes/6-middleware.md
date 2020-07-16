@@ -24,8 +24,6 @@ Note above how the method passed into `use()` has three parameters `req`, `res`,
 
 The way to set up middleware is by identifying whether you have routes that for some reason could benefit from having middleware run pre or post a request. Then you would set it up so that middleware that needs to be run before the request would be defined before the actual request and post request middleware would be defined after. Consider the below code example that does just that:  
 
-define code looking roughly like so:
-
 ```javascript
 app.use((req, res, next) => {
   // pre request

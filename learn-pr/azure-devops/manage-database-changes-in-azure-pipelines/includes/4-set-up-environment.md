@@ -51,7 +51,7 @@ On the Azure DevOps Demo Generator site, follow these steps to run the template.
 
 ## Move the work item to Doing
 
-In this part, in Azure Boards you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would assign work items at the start of each sprint, or work iteration.
+In this part, in Azure Boards you assign yourself a work item that relates to this module. You also move the work item to the **Doing** state. In practice, your team would create work items at the start of each sprint, or work iteration.
 
 Assigning work in this way gives you a checklist to work from. The work item lets your teammates see what you're working on and how much work is left. It also helps the team enforce work-in-progress (WIP) limits to avoid taking on too much work at one time.
 
