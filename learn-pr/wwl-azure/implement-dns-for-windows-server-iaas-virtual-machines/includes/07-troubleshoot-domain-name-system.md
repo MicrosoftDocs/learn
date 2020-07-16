@@ -53,33 +53,33 @@ When troubleshooting name resolution, you must understand the name resolution me
 
 1. Open an elevated command prompt, and then clear the DNS resolver cache by entering the following command at a command prompt:
 
-```powershell
-ipconfig /flushdns
-```
+   ```powershell
+   ipconfig /flushdns
+   ```
 
-> [!NOTE] 
-> The equivalent Windows PowerShell command is: `Clear-DNSClientCache`.
+   > [!NOTE] 
+   > The equivalent Windows PowerShell command is: `Clear-DNSClientCache`.
 
 2. Attempt to ping the remote host by its IP address. This helps identify whether the issue is related to name resolution. If the ping succeeds by using the IP address but fails by using its host name, then the problem is related to name resolution.
 3. Attempt to ping the remote host by using its host name. For example, at Contoso, you would enter the following command at a command prompt:
 
-```powershell
-Ping LON-DC1.contoso.com
-```
+   ```powershell
+   Ping LON-DC1.contoso.com
+   ```
 
-> [!NOTE] 
-> The equivalent Windows PowerShell command is: `Test-connection LON-DC1.Contoso.com`.
+   > [!NOTE] 
+   > The equivalent Windows PowerShell command is: `Test-connection LON-DC1.Contoso.com`.
 
-5. At the command prompt, enter the following command, and then select Enter:
+4. At the command prompt, enter the following command, and then select Enter:
 
-```powershell
-NSLookup.exe -d2 LON-DC1.contoso.com. > filename.txt
-```
+   ```powershell
+   NSLookup.exe -d2 LON-DC1.contoso.com. > filename.txt
+   ```
 
-> [!NOTE] 
-> The equivalent Windows PowerShell command is: `Resolve-dnsname lon-DC1.Contoso.com. > filename.txt`.
+   > [!NOTE] 
+   > The equivalent Windows PowerShell command is: `Resolve-dnsname lon-DC1.Contoso.com. > filename.txt`.
 
-6. Examine the contents of the filename.txt file to identify the failed stage in name resolution.
+5. Examine the contents of the filename.txt file to identify the failed stage in name resolution.
 
 You should understand how to interpret the NSLookup command output so that you can identify whether the name resolution problem exists with the client computer’s configuration, the name server, or the configuration of records within the name server-zone database.
 

@@ -16,7 +16,7 @@ To create a public DNS zone in Azure using the Azure portal, use the following p
 3. Select **DNS zone** from the returned results, and then select **Create**.
 4. Select an appropriate resource group, and then in the **Name** text box, enter the name of your DNS zone. If the zone is a child of an existing zone, select the check box labeled **This zone is a child of an existing zone already hosted in Azure DNS**.
 
-![A screenshot of the Create DNS zone page in the Azure portal. The administrator has entered the name ContosoDemo.com and is adding the zone to the ContosoResourceGroup..](../media/m7-create-publish-zone1.png)
+   ![A screenshot of the Create DNS zone page in the Azure portal. The administrator has entered the name ContosoDemo.com and is adding the zone to the ContosoResourceGroup..](../media/m7-create-publish-zone-1.png)
 
 5. Select **Review + create**, and then select **Create**.
 
@@ -50,11 +50,11 @@ To test name resolution, for example, for a server named `www.contosodemo.com` u
 
 1. In the Azure portal, copy the name of one of the name servers listed on the overview page of your new zone.
 
-![A screenshot of the ContosoDemo.com DNS zone<!-- Isn't this a screenshot of the ContosoDemo.com page? -->. The administrator has selected the overview page, and a list of available name servers that can service this zone are listed, including ns1-02.azure-dns.com.](../media/m7-select-domain-name-system.png)
+   ![A screenshot of the ContosoDemo.com DNS zone<!-- Isn't this a screenshot of the ContosoDemo.com page? -->. The administrator has selected the overview page, and a list of available name servers that can service this zone are listed, including ns1-02.azure-dns.com.](../media/m7-select-domain-name-system.png)
 
 2. Open a command prompt, and run the following command: `nslookup www.contosodemo.com ns1-02.azure-dns.com`, replacing both the FQDN and name server name with the information relevant to your environment.
 
-![A screenshot of the Administrator: Command Prompt window. The administrator has executed the nslookup www.contosodemo.com ns1-02.azure-dns.com command, and the petitioned DNS server has responded with the record for www.contosodemo.com: 10.2.0.4.](../media/m7-test-domain-name-system.png)
+   ![A screenshot of the Administrator: Command Prompt window. The administrator has executed the nslookup www.contosodemo.com ns1-02.azure-dns.com command, and the petitioned DNS server has responded with the record for www.contosodemo.com: 10.2.0.4.](../media/m7-test-domain-name-system.png)
 
 ## Configure an Azure private DNS zone
 
@@ -68,7 +68,7 @@ Use the following procedure to create your private DNS zone:
 2. Select **Create private DNS zone**.
 3. Select the appropriate resource group, and then enter the instance name.
 
-![A screenshot of the Create Private DNS zone page in the Azure portal. The administrator has selected the ContosoResourceGroup and entered the Name of Priv.contosodemo.com.](../media/m7-add-private-zone.png)
+   ![A screenshot of the Create Private DNS zone page in the Azure portal. The administrator has selected the ContosoResourceGroup and entered the Name of Priv.contosodemo.com.](../media/m7-add-private-zone.png)
 
 4. Select **Review + Create**, and then select **Create**.
 
