@@ -32,7 +32,7 @@ Workspace Configuration opens, displaying five tabs, each of which lists the ent
 
 Next, you select an identity protection. In this example, the **autoexec.bat** is selected on the **Edit Windows Files for Change Tracking** blade.
 
-![A screenshot of the Edit Windows File for Change Tracking blade with the autoexec.bat file selected.](../media/m10-file-integrity-monitoring-settings2.png)
+![A screenshot of the Edit Windows File for Change Tracking blade with the autoexec.bat file selected.](../media/m10-file-integrity-monitoring-settings-2.png)
 
 Under **Edit for Change Tracking** you can:
 
@@ -56,7 +56,7 @@ To add a new entity to monitor, return to the File Integrity Monitoring dashboar
     - Group: (defaults to Custom)
     - Windows Registry Key: Enter a key path
 
-![A screenshot of the Add Windows Registry for Change Tracking blade. The administrator has added an entry for HKEY_LOCAL_MACHINE\SOFTWARE\Classes.](../media/m10-file-integrity-monitoring-settings3.png)
+![A screenshot of the Add Windows Registry for Change Tracking blade. The administrator has added an entry for HKEY_LOCAL_MACHINE\SOFTWARE\Classes.](../media/m10-file-integrity-monitoring-settings-3.png)
 
 ## Disable monitored entities
 
@@ -76,4 +76,4 @@ The file system in Windows Server is extensive. Manually configuring individual 
 - If an environment variable includes a path that isn't valid, validation will succeed but the path will fail when inventory runs.
 - When setting the path, avoid general paths such as `c:\*.*` which will result in too many folders being traversed.
 
-![A screenshot of the Edit Windows File for Change Tracking blade. The administrator has added an entry for C:\temp\*.*.](../media/m10-file-integrity-monitoring-settings4.png)
+![A screenshot of the Edit Windows File for Change Tracking blade. The administrator has added an entry for C:\temp\*.*.](../media/m10-file-integrity-monitoring-settings-4.png)

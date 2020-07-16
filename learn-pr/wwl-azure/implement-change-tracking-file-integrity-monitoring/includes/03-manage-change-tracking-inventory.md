@@ -22,7 +22,7 @@ You can use the Azure portal to configure and manage Change Tracking and Invento
 
 Events automatically display on the timeline, as displayed in the graphic. 
 
-![Screenshot of the ContosoAutomationAccount blade. The administrator has selected Change tracking beneath Configuration Management. The graphical output has a number of Events over the preceding 24 hours. ](../media/m10-change-tracking-dash01.png)
+![Screenshot of the ContosoAutomationAccount blade. The administrator has selected Change tracking beneath Configuration Management. The graphical output has a number of Events over the preceding 24 hours. ](../media/m10-change-tracking-dash-01.png)
 
 To access inventory information, from the automation account page, in the navigation pane, select **Inventory**. You can review the inventory changes in the corresponding chart that opens.
 
@@ -63,11 +63,11 @@ Use the following procedure to configure tracking for Windows files:
 1. On the **Workspace Configuration** blade, select the **Windows Files** tab.
 2. On the toolbar, select **Add**.
 
-![Screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Files tab. The Add Windows File for Change Tracking blade is also open. The Administrator has added a file has added and enabled the file.](../media/m10-add-files.png)
+   ![Screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Files tab. The Add Windows File for Change Tracking blade is also open. The Administrator has added a file has added and enabled the file.](../media/m10-add-files.png)
 
 3. On the **Add Windows File for Change Tracking** blade, enter the required information, and then select **Save**.
 
-![A screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Files tab and added a file.](../media/m10-add-files2.png)
+   ![A screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Files tab and added a file.](../media/m10-add-files-2.png)
 
 The following table lists the configurable properties and explains their meaning.
 
@@ -94,7 +94,7 @@ To track changes to the Registry, use the following procedure:
 4. On the toolbar, select **Add**.
 5. On the **Add Windows Registry for Change Tracking** blade, enter the required information, and then select **Save**.
 
-![A screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Registry tab. Other tab options are: Windows Files, Linux Files, File Content, and Windows Services.](../media/m10-change-tracking-settings.png)
+   ![A screenshot of the Workspace Configuration blade in Change Tracking. The Administrator has selected the Windows Registry tab. Other tab options are: Windows Files, Linux Files, File Content, and Windows Services.](../media/m10-change-tracking-settings.png)
 
 The following table lists the configurable properties and explains their meaning.
 

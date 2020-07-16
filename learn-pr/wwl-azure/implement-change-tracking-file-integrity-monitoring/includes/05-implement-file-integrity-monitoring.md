@@ -41,16 +41,16 @@ To upgrade the workspace to Security Center Standard tier, use the following pro
 > [!TIP] 
 > If you've already configured your VMs for Change Tracking and Inventory, you don't need to install the agent as it will already be present.
 
-[![A screenshot of the Azure portal, Security Center File Integrity Monitoring page. Several workspaces are listed. One is marked with UPGRADE PLAN, and two are marked ENABLE.](../media/m10-upgrade-plan1.png)](../media/m10-upgrade-plan1.png#lightbox)
+[![A screenshot of the Azure portal, Security Center File Integrity Monitoring page. Several workspaces are listed. One is marked with UPGRADE PLAN, and two are marked ENABLE.](../media/m10-upgrade-plan-1.png)](../media/m10-upgrade-plan-1.png#lightbox)
 
 After you have upgraded the required workspaces:
 
 1. Return to the list of workspaces.
 1. Select **ENABLE** for any workspaces that you want to enable for File Integrity Monitoring.
 
-The Enable File Integrity Monitoring page opens, listing the number of Windows and Linux machines under the workspace.
+   The Enable File Integrity Monitoring page opens, listing the number of Windows and Linux machines under the workspace.
 
-![A screenshot of the Azure portal, Enable File Integrity Monitoring page of the Security Center is displayed. Recommended settings are  Windows Files, Registry, and Linux Files.](../media/m10-enable-file-integrity-monitoring1.png)
+   ![A screenshot of the Azure portal, Enable File Integrity Monitoring page of the Security Center is displayed. Recommended settings are  Windows Files, Registry, and Linux Files.](../media/m10-enable-file-integrity-monitoring-1.png)
 
 3. Review the Recommended settings: Windows Files, Registry, and (if applicable), Linux Files.
 4. Clear the check box for any items you don't want to track, and then select **Enable File Integrity Monitoring**.
@@ -64,7 +64,7 @@ After you have enabled File Integrity Monitoring, on the File Integrity Monitori
 - Geographic location of the workspace
 - Azure subscription that the workspace is under
 
-![A screenshot of the  Security Center's File Integrity Monitoring blade. Three servers display, with six changes.](../media/m10-file-integrity-monitoring-dashboard1.png)
+![A screenshot of the  Security Center's File Integrity Monitoring blade. Three servers display, with six changes.](../media/m10-file-integrity-monitoring-dashboard-1.png)
 
 You can filter the returned summary to return results from the last:
 
@@ -77,7 +77,7 @@ You can filter the returned summary to return results from the last:
 
 To review any changes in detail, select the appropriate VM. The logs detail displays. On this page, you can review the changes. You can also modify the query used to return the list of changes to suit your requirements.
 
-![A screenshot of the Logs page with a query that's returned six results.](../media/m10-file-integrity-monitoring-dashboard2.png)
+![A screenshot of the Logs page with a query that's returned six results.](../media/m10-file-integrity-monitoring-dashboard-2.png)
 
 ## Disable File Integrity Monitoring
 

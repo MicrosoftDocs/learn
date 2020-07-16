@@ -130,20 +130,20 @@ Use the following high-level procedure to enable Change Tracking and Inventory u
 2. Use the checkboxes to choose the virtual machines to add to Change Tracking and Inventory.
 3. Select **Services**, and then select **Change Tracking** or **Inventory**.
 
-![A screenshot of the Azure portal, Virtual Machines blade. All VMs are selected, and from the Services menu, the administrator has selected Change Tracking. Inventory is also displayed in the list. ](../media/m10-enable-change-tracking1.png)
+   ![A screenshot of the Azure portal, Virtual Machines blade. All VMs are selected, and from the Services menu, the administrator has selected Change Tracking. Inventory is also displayed in the list. ](../media/m10-enable-change-tracking-1.png)
 
-> [!TIP] 
-> Azure filters the list of VMs to list only the VMs that are in the same subscription and location. You can change this behavior.
+   > [!TIP] 
+   > Azure filters the list of VMs to list only the VMs that are in the same subscription and location. You can change this behavior.
 
 
 4. Azure selects an existing Log Analytics workspace and Automation account (if available). If you want to use a different Log Analytics workspace and Automation account, select **CUSTOM** to select them from the Custom Configuration page.
 5. Select **Enable** to enable the feature you've selected.
 
 
-> [!NOTE] 
-> The setup can take up to 15 minutes to complete.
+   > [!NOTE] 
+   > The setup can take up to 15 minutes to complete.
 
-![A screenshot of the Enable Change Tracking blade in the Azure portal. Three VMs are selected, their Change Tracking status is Ready to enable.](../media/m10-enable-change-tracking2.png)
+   ![A screenshot of the Enable Change Tracking blade in the Azure portal. Three VMs are selected, their Change Tracking status is Ready to enable.](../media/m10-enable-change-tracking-2.png)
 
 ## Additional reading
 
