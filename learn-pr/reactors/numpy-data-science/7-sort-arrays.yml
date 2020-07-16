@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.numpy-data-science.7-sort-arrays
+title: Sorting arrays
+metadata:
+  title: Sorting arrays
+  description: Learn how to sort array data and tease out structure in data.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 7
+content: |
+  [!include[](includes/7-sort-arrays.md)]
