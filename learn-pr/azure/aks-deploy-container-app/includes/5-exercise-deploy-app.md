@@ -1,22 +1,18 @@
-Recalling the last unit, we decided to spin up the company's website as first workload because it's a simple static website with just the basic tech stack of HTML, CSS, and JavaScript. And also, it doesn't receive as many requests as the other services, this way we have a safe way to test everything.
+In this exercise, you'll deploy your company's website as a test app onto AKS. The website is a static website with an underlying technology stack of HTML, CSS, and JavaScript. It doesn't receive as many requests as the other services and provides us with a safe way to test deployment options.
 
-If we aren't using Kubernetes, we'd have to spin um an Azure Virtual Machine. In this VM, we'd install a webserver like NGINX and then we'd upload the website files to the public folder so they are served.
+> The code for the web app is available in this [GitHub repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app) if you want to explore the source code further.
 
-In a single VM, we can only upload a small number of files, and most of the times, we'd have to spin up other VMs to make the website scalable and available.
+## Create a container registry
 
-The other option is to run the website in a container-based ecosystem like Azure Container Instances, but we'd have to spin up several containers to make it work. That's how Kubernetes and AKS come to help. We can harness the power of several VMs and control them all in one single place. Here, we'll run through all the engineering aspects of a containerized application and discuss how you can create one, and what makes them different from other applications.
+You need to create and push your container image to a container registry to deploy your app to your AKS cluster. Azure provides the **Azure Container Registry** (ACR) service to store container images.
 
-> If you want to know more about this application, its code is hosted [in this repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app).
+1. Log in to the Azure Cloud Shell if not done so already.
 
-## Create and push images
+    > [!div class="nextstepaction"]
+    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
-Recall the last unit, we need to create and push a container image to a container registry so we can deploy the app to our cluster.
 
-### Create a container registry and Connect to the AKS cluster
-
-Azure provides the __Azure Container Registry__ (ACR) service that we'll be using to store our images. Let's create one.
-
-1. Run the following command to create a new container registry. Replace `<resource-group-name>` with the name of your resource group.
+1. Run the `az acr create` command to create a new container registry. Replace `<resource-group-name>` with the name of your resource group.
 
     ```azurecli
     az acr create \
@@ -25,7 +21,10 @@ Azure provides the __Azure Container Registry__ (ACR) service that we'll be usin
         --sku Basic
     ```
 
-Since we are working with a private container registry, we need to tell our AKS cluster to authenticate with that registry so it can download the stored images. Luckily, using both ACR and AKS this integration can be easily done.
+    The ACR you're working with is a private container registry. You need to tell your AKS cluster to authenticate with that registry to download the stored images. 
+
+    > [!WARNING]
+    > Some features in AKS requires you to install the Azure CLI `aks-preview` extension. The extension modifies and extends the az aks command options.
 
 1. Check if you have the `aks-preview` extension enabled in your CLI
 
@@ -33,7 +32,7 @@ Since we are working with a private container registry, we need to tell our AKS 
     az extension list
     ```
 
-1. If the list is empty, Run the following command on your terminal to update your AKS cluster
+1. If the extension list is empty, run the `az aks update` command to attach to your new ACR.
 
     ```azurecli
     az aks update \
@@ -42,7 +41,7 @@ Since we are working with a private container registry, we need to tell our AKS 
         --attach-acr ContosoContainerRegistry$RANDOM
     ```
 
-1. If not, run the preview command:
+1. If the extension is listed, run the preview `az aks update` command.
 
     ```azurecli
     az aks update \
@@ -52,36 +51,28 @@ Since we are working with a private container registry, we need to tell our AKS 
         --enable-acr
     ```
 
-The result will be the attachment of your ACR to your AKS cluster.
+## Sign in and push a container image to ACR
 
-### Sign in to your container registry and push an image to it
+You need to authenticate with the new ACR before you can push your container image. Your ACR credentials are available in the [Azure portal](https://portal.azure.com)  should you need the information. Navigate to your newly created ACR and select the **Access keys** tab.
 
-Once the CR is created, you need to connect your local Docker runtime to the :::no-loc text="registry"::: so it can push your image to the remote destination. To do so, follow these steps:
+    :::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
 
-1. Open your terminal and type the following Azure CLI command:
+1. In the Cloud Shell run the `az acr login` command to authenticate with your new ACR. There's no need to include the `.azurecr.io` in the name of the CR when logging in.
 
     ```azurecli
     az acr login --name ContosoContainerRegistry$RANDOM
     ```
 
-    There's no need to include the `.azurecr.io` in the name of the CR when logging in.
+    You're now ready to push images to the ACR.
 
-    If you ever need to see your sign-in credentials, just access the ACR resource in the [Azure portal](https://portal.azure.com) and go to the "Access keys" tab on the left-hand side:
-
-    :::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
-
-1. After the sign-in, your local Docker runtime should be already connected to the ACR resource.
-
-Now it's time to put everything together and push the image to the ACR you created.
-
-1. Run the following commands in Cloud Shell to clone the GitHub repository that contains the files for the application, and change to that directory.
+1. Clone the web app from the GitHub repository and change into the `mslearn-aks-deploy-container-app` directory.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app.git
     cd mslearn-aks-deploy-container-app
     ```
 
-1. Next, run the `acr build` command to start building the image.
+1. Run the `az acr build` command to build and push the container image. 
 
     ```azurecli
     az acr build \
@@ -90,22 +81,23 @@ Now it's time to put everything together and push the image to the ACR you creat
         --file Dockerfile .
     ```
 
-    Using the `-t` option will add the `contoso-website` tag to the image. After the image is built, it will be pushed directly to the registry.
+    The `--image` parameter adds the `contoso-website` tag to the image, and the image is automatically pushed to the registry once the build completes successfully. 
 
-## Deploy the application
+## Create a deployment manifest
 
-After we have our image created and pushed, we need to tell AKS what it needs to do.
+You create a deployment manifest file to deploy your application. The manifest file allows you to define what type of resource you want to deploy and all the details associated with the workload.
 
-All the example files can be found in the [official demo repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app/tree/master/kubernetes) under the `Kubernetes` directory.
+Kubernetes groups containers into logical structures called Pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's begin creating a deployment file.
 
-### Create a deployment manifest
+1. In the Cloud Shell, create a file named `deployment.yaml`
 
-As we learned, Kubernetes groups containers into logical structures called Pods, which have no intelligence. Deployments add the missing intelligence we need to create our application. Let's begin creating a deployment file.
+    ```bash
+    touch deployment.yaml
+    ```
 
-1. Create a file called `deployment.yaml` in any directory and enter it
-1. Open VSCode in Cloud Shell by typing `code .` and start the following changes:
+1. Open VSCode in Cloud Shell by typing `code .` 
 
-    Recalling what we learned previously, we need to add the first two keys to tell Kubernetes the `apiVersion`, `name`, and `kind` of manifest we're creating:
+1. Open the `deployment.yaml` file and add the following code section of YAML.
 
     ```yml
     # deployment.yaml
@@ -114,11 +106,14 @@ As we learned, Kubernetes groups containers into logical structures called Pods,
     metadata:
       name: contoso-website # This will be the name of the deployment
     ```
+    In the above code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the deployment, and you'll use it to identify and query the deployment information by using `kubectl`.
 
     > [!TIP]
     > You can find more information about `apiVersion` and what values to put in this key by visiting the official Kubernetes documentation, linked at the end of this module.
 
-1. Deployments wrap pods – which have containers – adding more intelligence to them. Because of that, all deployments follow a `template` key the specification. This key has all the needed information to describe what that deployment will hold, the `spec.template` key is the definition of the pod we're putting inside the deployment:
+1. A deployment wraps a pod. You make use of a template definition to define the pod information within the manifest file. The template is placed in the manifest file below the deployment specification section. 
+
+	Update the `deployment.yaml` file to match the following YAML.
 
     ```yml
     # deployment.yaml
@@ -133,11 +128,13 @@ As we learned, Kubernetes groups containers into logical structures called Pods,
             app: contoso-website
     ```
 
-    As you can see, we're not creating a `name` tag inside `metadata`, that's because pods don't have given names when created inside deployments, the pod's name will be the deployment's name with a random ID added to the end.
+    Pods don't have given names when created inside deployments, the pod's name will be the deployment's name with a random ID added to the end.
 
-    Instead of `name` we added the `labels` key to allow the deployment to wrap all pods with the keys we described and add the intelligence we need to all of them as we learned in the previous unit.
+    Notice the use of the `labels` key. You add the `labels` key to allow deployments to find and group pods.
 
-1. All pods also have a `spec` key that allows us to define the containers inside that pod.
+1. A pod wraps one or more containers. All pods have a specification section that allows you to define the containers inside that pod.
+
+	Update the `deployment.yaml` file to match the following YAML.
 
     ```yml
     # deployment.yaml
@@ -152,32 +149,16 @@ As we learned, Kubernetes groups containers into logical structures called Pods,
             app: contoso-website
         spec:
           containers: # Here we define all containers
+	  name: contoso-website
     ```
 
-    The `containers` key is an array of container specs, because a pod can have one or more containers. These specs define `image`, `name`, `resources`, `ports`, and other important information.
+    The `containers` key is an array of container specifications as a pod can have one or more containers. The specification defines an `image`, `name`, `resources`, `ports`, and other important information about the container.
+ 
+    All running pods will follow the name `contoso-website-<UUID>`, where UUID is a generated ID to identify all resources uniquely.
 
-    Let's define the image our container will run. Using the `spec.containers[0].image` key. After the image, we need to give our pod a name through the `spec.containers[0].name` key.
+1. It's a good practice to define a minimum and a maximum amount of the resources the app is allowed to use from the cluster. You use the  `resources` key to specify this information. 
 
-    ```yml
-    # deployment.yaml
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: contoso-website
-    spec:
-      template: # This is the template of the pod inside the deployment
-        metadata:
-          labels:
-            app: contoso-website
-        spec:
-          containers:
-            - image: ContosoContainerRegistry$RANDOM.azurecr.io/contoso-website # The image the container will run
-              name: contoso-website
-    ```
-
-    All pods will follow the name `contoso-website-<UUID>`, where UUID is a generated ID to uniquely identify all resources.
-
-1. It's a good practice to define a minimum amount, and a maximum amount of the resources the app will be allowed to use from the cluster. We do this limiting by adding a `resources` key inside the `spec.containers[0]`:
+	Update the `deployment.yaml` file to match the following YAML.
 
     ```yml
     # deployment.yaml
@@ -203,7 +184,11 @@ As we learned, Kubernetes groups containers into logical structures called Pods,
                   memory: 256Mi
     ```
 
-1. Lastly, we define the ports this container will expose externally through the `port` key inside `spec.containers[0]`.
+	Notice how the resource section allows you to specify the minimum resource amount as a request and the maximum resource amount as a limit.
+
+1. The last step is to define the ports this container will expose externally through the `ports` key. The `ports` key is an array of objects, which means that a container in a pod can expose multiple ports with multiple names.
+
+	Update the `deployment.yaml` file to match the following YAML.
 
     ```yml
     # deployment.yaml
@@ -232,11 +217,13 @@ As we learned, Kubernetes groups containers into logical structures called Pods,
                   name: http # We named that port "http" so we can refer to it later
     ```
 
-    Notice we named the port using the `name` key inside `spec.containers[0].ports[0]`. Naming ports allows us to change the port being exposed without changing files that reference that port.
+    Notice how you name the port using the `name` key. Naming ports allow you to change the exposed port without changing files that reference that port.
 
-    Also notice that the `ports` key is an array of objects, which means that a container in a pod can expose multiple ports with multiple names if needed.
+    
 
-1. Back to the deployment configurations. We need to define which workloads the deployment will wrap. We can run this query by adding another key named `selector` inside the deployment `spec` key, and fill it with the rules we want through the `matchLabels` key:
+1. Finally, add a selector section to define the workloads the deployment will manage.  The `selector` key is placed inside the deployment specification section of the manifest file. Use the `matchLabels` key to list the labels for all the pods managed by the deployment.
+
+	Update the `deployment.yaml` file to match the following YAML.
 
     ```yml
     # deployment.yaml
@@ -268,28 +255,31 @@ As we learned, Kubernetes groups containers into logical structures called Pods,
                   name: http
     ```
 
-Save the deployment file and now all we need to do to deploy an application is described inside it, making it easily versionable and explicit.
+1. Save the deployment file and close the editor.
 
 ## Apply the manifest
 
-Now that we have our file saved, we need to deploy it.
-
-1. Open the Cloud Shell in the same directory as the `deployment.yaml` file.
-1. Run the command below.
+1. In the Cloud Shell, run the `kubectl apply` command to submit the deployment manifest to API server.
 
     ```bash
     kubectl apply -f ./deployment.yaml
     ```
+	The command should output a result similar to the following example:
 
-    Wait for the command to respond
-1. Check if the deployment was successful by issuing this command.
+    ```output
+    contoso-website created
+    ```
+
+1. Run the `kubectl get deploy` command to check if the deployment was successful.
 
     ```bash
     kubectl get deploy contoso-website
     ```
 
-    The command should output a table similar to the following data:
+    The command should output a table similar to the following example:
 
+    ```output
     |NAME  |READY  |UP-TO-DATE  |AVAILABLE  |
     |---------|---------|---------|---------|
     |contoso-website     |1/1         |1         |1         |
+    ```

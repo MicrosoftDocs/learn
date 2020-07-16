@@ -1,53 +1,75 @@
-Now that we have our application up and running on the cluster. We'll notice it's not accessible by anyone but those inside the cluster itself. Differently from a VM, where we can control all the open ports and network availability, in Kubernetes these controls are in the power of the control plane and we can give it instructions to open some ports for us.
+AKS cluster blocks all inbound traffic from the Internet to the cluster to assure network security. Deployed workloads in Kubernetes is by default, not accessible by anyone but those inside the cluster. To expose the applications to the outside world, you need to open specific ports and forward them to your services. 
 
-By default, all inbound traffic from the Internet to the AKS cluster is blocked to assure network security. To expose the applications to the outer world, we need to open specific ports and forward them to our services. Since the control plane has the power over that information. Kubernetes has two abstractions around network availability that allows us to expose any app without needing to worry about the underlying infrastructure.
-
-These abstractions are the **Services** and **Ingresses**. They're both responsible for allowing and redirecting the traffic from external sources to our cluster.
+The configuration of ports and port forwarding in Kubernetes is different from what you might be used to in other environments. For example, on a VM, you'll configure the OS level firewall to allow inbound traffic to port 443 and allow HTTPS web traffic. In Kubernetes, the control plane manages network configuration based on declarative instructions you provide.
 
 ## Networks in Kubernetes
 
-Containers are temporary. A container's configuration and data the data in it isn't persistent between executions. Once you delete a container, all information is gone unless it's configured to use a volume.
+Containers are temporary. A container's configuration and data the data in it isn't persistent between executions. Once you delete a container, all information is gone unless it's configured to use a volume. The same applies to the container's network configuration and any IP addresses assigned to it.
 
-The same applies to the container's network configuration.
+A deployment is a logical grouping of pods and is not considered a physical workload and not assigned an IP address. However, each pod is automatically assigned an IP address. When the pod is destroyed, the IP address is lost. This behavior makes a manual network configuration strategy complex.
 
-Deployments aren't considered a physical workload since they're only logical groups of pods, so we don't have to worry about their networking rules or IP addresses. Their pods, however, have an internal IP assigned to each of them when created. Like all the data, this IP is lost when the pod is destroyed. Internet is based on persistent IP addresses, so how can we expose an ever-changing pod IP to the network? The answer is **services**.
+Kubernetes has two network availability abstractions that allow you to expose any app without worrying about the underlying infrastructure or assigned pod IP addresses.
 
-### Kubernetes services
+These abstractions are the **Services** and **Ingresses**. They're both responsible for allowing and redirecting the traffic from external sources to our cluster.
 
-Services are workloads that abstract the IP address for networked workloads, like pods. Essentially, a service uses the same `selector` key as deployments to select and group resources with the required labels into one single IP, acting somewhat as a load balancer and redirecting the traffic to the specific ports. Services handle the port-forwarding rules to their selected pods. They receive incoming packages one port and forward them onto an internal one.
+## Kubernetes services
+
+A Kubernetes service is a workload that abstracts the IP address for networked workloads. A Kubernetes service acts as a load balancer and redirects traffic to the specific ports of specified ports using port-forwarding rules.
 
 :::image type="content" source="../media/6-1-service-diagram.png" alt-text="Services diagram":::
 
-A basic service needs to know about three pieces of information:
+You define a service in the same way as a deployment by using a YAML manifest file. The service uses the same `selector` key as deployments to select and group resources with matching labels into one single IP. 
 
-- **Which are the resources it needs to route the traffic to:** Defined by the `selector` key, which selects the resources with the given labels and values to be grouped into a single IP address
-- **Which port in the service will receive the traffic:** It's the inbound port for your application, all the requests should come to this port in the service to it can forward the request to the resource
-- **To which port in the resource the traffic will be directed:** Essentially, the service is a port-forwarding abstraction. It receives incoming requests in a port and forwards those requests to another internal port in the resource. This port is the one we opened in the `ports` key of the deployment in the previous unit. This is called the **Target Port**.
+A Kubernetes service needs four pieces of information to route traffic.
 
-All that information will be going into the manifest file. Describing how you'd like your routing to work within your cluster. Generally, services act as an internal router to specific applications, so you don't need to expose your pod's port straight to the Internet. Services can be of several types. Each type changes the behavior of the applications selected by the service:
+| Information | Description |
+| --- | --- |
+| **Target resource** | The target resource is defined by the `selector` key in the service manifest file.  This value selects all the resources with a given label onto a single IP address. | 
+| **Service port** | This port is the inbound port for your application. All the requests come to this port from where the service forwards the requests to the resource. |
+| **Network Protocol**| This value identifies the network protocol for which the service will forward network data. |
+| **Resource port** | This value identifies the port on the target resource on which incoming requests are received. This port is defined by the `targetPort` key in the service manifest file.
 
-- **ClusterIP**: Exposes the applications internally only, acting as a port-forwarder. Choosing this type makes the service available within the cluster. Default value when omitted
-- **NodePort**: Exposes the service externally, assigning each node a static port that responds to that service. When accessed through `nodeIp:port`, the node will automatically redirect the request to an internal service of the `clusterIP` type. This service will then forward the request on to the applications.
-- **LoadBalancer**: Exposes the service externally using Azure's load-balancing solution. When created, this resource will spin up a Load Balancer resource within your Azure subscription. Also, this type will automatically create a `nodePort` service to which the Load Balancer's traffic will be redirected, and a `clusterIP` service to forward internally.
-- **ExternalName**: Maps the service using a DNS resolution through a CNAME record. With this type, no proxying is set up.
+## Kubernetes service types
 
-We'll use the `clusterIP` type because we'll be exposing the application externally through an __Ingress__.
+Services can be of several types. Each type changes the behavior of the applications selected by the service:
 
-### Ingresses
+- **ClusterIP**: This value exposes the applications internally only. This option allows the service to act as a port-forwarder and makes the service available within the cluster. This value is the default when omitted.
 
-By default, all incoming traffic to a Kubernetes cluster is rejected. To allow traffic into the cluster, we need to create _ingress rules_. These rules are manipulated through a resource named Ingress.
+- **NodePort**: This value exposes the service externally, assigning each node a static port that responds to that service. When accessed through `nodeIp:port`, the node will automatically redirect the request to an internal service of the `clusterIP` type. This service will then forward the request to the applications.
 
-Ingresses are like doors in a huge wall. They allow some traffic in based on a set of rules. Think of it as a firewall solution. An Ingress resource is required when exposing an application externally using a DNS name – like we want to do by allowing people to access Contoso's website through `http://contoso.com`.
+- **LoadBalancer**: This value exposes the service externally using Azure's load-balancing solution. When created, this resource will spin up a Load Balancer resource within your Azure subscription. Also, this type will automatically create a `nodePort` service to which the Load Balancer's traffic will be redirected, and a `clusterIP` service to forward internally.
+
+- **ExternalName**: This value maps the service using a DNS resolution through a CNAME record. You use this service type to direct traffic to services that exist outside the Kubernetes cluster.
+
+## Ingresses
+
+Ingress exposes routes for HTTP and HTTPS traffic from outside a cluster to services inside the cluster. You define Ingress routes by using *ingress rules*. A Kubernetes cluster rejects all incoming traffic without these routes defined.
 
 :::image type="content" source="../media/6-2-ingress-diagram.png" alt-text="Ingress diagram":::
 
-Using managed services like AKS makes it a lot easier, because with the :::no-loc text="HTTP Application Routing"::: add on we create a resource called __Ingress Controller__.
+Assume you want to allow clients to access your website through the `http://contoso.com` web address. For a client to access your app inside the cluster, the cluster must respond to the website's CNAME and route the requests to the relevant pod.
 
-Ingress controllers are reverse proxies that listen when you create an Ingress workload in the cluster. When you create a new Ingress, the add-on gets its name and figures where the DNS is pointing to by reading the manifest file. Then it automatically adds a new entry in the internal webserver's configuration that allows this DNS to pass through the cluster's "wall".
+## Ingresse Controllers
 
-In AKS, the Ingress Controller is linked to a _DNS Zone_ resource in your Azure subscription – which was automatically created when we created our cluster. This link makes possible for the cluster to automatically create a zone record pointing the DNS name to the IP address and port of the exposed application.
+Kubernetes use Ingress controllers to manage the configure of Ingress in a cluster. An Ingress controller provides several features. An Ingress controller:
 
-When we define and Ingress, we need to provide some information to the manifest so it knows where the traffic is coming from and where to direct it. These are the **Ingress Rules**. These rules are defined in the `rules` key of the manifest. Each rule is a set of a few other options:
+- acts as a reverse proxy to allow external URLs
+- may act as a load balancer
+- terminate SSL / TLS requests
+- offers name-based virtual hosting
+
+In AKS, the Ingress Controller links to a _DNS Zone_ resource in your Azure subscription. The DNS Zone is automatically created as part of the cluster creation process on your behalf. The link makes it possible for the cluster to automatically generate a zone record that points to the DNS name to the exposed application's IP address and port.
+
+In AKS, the :::no-loc text="HTTP Application Routing"::: add-on allows you to create **Ingress Controllers**.
+
+## Ingress rules
+
+Ingress rules define where traffic is coming from and where to direct it within a cluster. You define ingress rules in an ingress deployment manifest file.
+
+These rules are defined in the `rules` key of the manifest file. Each rule is a set of additional values that describes the rule. 
+
+
+For example, assume you want to allow clients to access your website using the url `http://example.com/site`. You want to route traffic to your video rendering service website. Here is an example of the defined ingress rule to allow this behavior.
 
 ```yml
 rules:
@@ -60,11 +82,14 @@ rules:
             servicePort: 80 # Which port in that service
 ```
 
-This example is saying to the Ingress that we should allow all traffic coming from `example.com` in the path `/site` – which means we're allowing `http://example.com/site` – to enter the cluster, and all this traffic will be sent to the `contoso-website` service and will hit port `80` in that service. An Ingress is basically a name resolver to a service, which resolves the incoming traffic to a port in the pod.
+This example defines a rule that allows all traffic using the address `example.com` and path `/site` to enter the cluster. This traffic is then routed to the `contoso-website` service on port `80`. 
 
-It's also common to see Ingresses work with what is called **Annotations**. Annotations are like labels, but to attach non-identifying metadata such as ingress configurations to workloads. The main difference between a label and an annotation is that labels are public and are used like filters, while annotations are internal and define specific configurations for resources which are destined to libraries and other clients.
 
-The best example of how an annotation can be used within an ingress is to tell Azure that we want to use the HTTP Application Routing Addon we deployed earlier on this module. The HTTP Application Routing is an **Ingress Controller**, which means it'll read all the ingresses with the annotation `kubernetes.io/ingress.class` with the value of `addon-http-application-routing` and create an external access for that ingress:
+## Annotations
+
+An annotation allows you to attach non-identifying metadata such as ingress configurations to workloads. You can think of the annotation as an internal label that defines specific configurations for resources destined to libraries and other clients.  For example, you may want to use a specific Ingress controller that supports name rewriting or payload limiting.
+
+Here is an example of the annotation in a manifest file that specifies the use of the HTTP Application Routing Addon.
 
 ```yml
 #ingress.yaml
@@ -76,4 +101,4 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing # Using HTTP Application Routing Addon
 ```
 
-Different ingress controllers can support different types of annotations that can perform other tasks such as name rewriting, payload limiting, and IP based permissions.
+In the next exercise, you'll define a service of type `clusterIP` and expose your company's web app through an **Ingress**.
