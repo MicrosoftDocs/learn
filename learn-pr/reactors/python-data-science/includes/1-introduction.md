@@ -1,17 +1,17 @@
-Since its release in 1991, Python has become more than a popular, general-purpose programming language. It's also a preeminent computer language for data science. This learn module uses Python and the Python extension for Visual Studio Code to illustrate data-science tools and resources.
+Since its release in 1991, Python has become more than a popular, general-purpose programming language. It's also a preeminent computer language for data science. This Learn module uses Python and the Python extension for Visual Studio Code to illustrate data-science tools and resources.
 
 > [!NOTE]
-> Several examples in this learn module draw from the Python documentation. Material from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples from the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) are presented with edits and amendments. Original material from the Python Software Foundation (PSF) is used here in accordance with the [PSF License Agreement for Python 3.8.3](https://docs.python.org/3/license.html#psf-license-agreement-for-python-release):
+> Several examples in this Learn module draw from the Python documentation. Material from the [python.org introductory tutorial](https://docs.python.org/3.5/tutorial/introduction.html?azure-portal=true) and examples from the [Python 3 documentation](https://docs.python.org/3/?azure-portal=true) are presented with edits and amendments. Original material from the Python Software Foundation (PSF) is used here in accordance with the [PSF License Agreement for Python 3.8.3](https://docs.python.org/3/license.html#psf-license-agreement-for-python-release):
 >
 >  [Copyright © 2001-2020 Python Software Foundation. All rights reserved.](https://docs.python.org/3/copyright.html)
 
 This introduction to Python is written for Python version 3.6.7 but generally applies to other Python 3._x_ versions.
 
-This learn module makes extensive use of Jupyter Notebook, which runs in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. Throughout this learn module, we encourage you to try out Python code in Visual Studio Code by using the Python extension and integrated Jupyter notebooks.
+This Learn module makes extensive use of Jupyter Notebook, which runs in Visual Studio Code. Visual Studio Code runs on macOS, Linux, and Windows. Throughout this Learn module, we encourage you to try out Python code in Visual Studio Code by using the Python extension and integrated Jupyter notebooks.
 
 ## Set up your environment
 
-We recommend that you set up your environment so that you can follow along and learn effectively throughout this learn module.
+We recommend that you set up your environment so that you can follow along and learn effectively throughout this Learn module.
 
 To set up your environment:
 
@@ -25,16 +25,16 @@ To set up your environment:
 You've successfully set up your environment with Visual Studio Code, Python, Anaconda, and the NumPy and pandas libraries. You're now ready to run a Jupyter notebook inside Visual Studio Code.
 
 1. Clone the [Reactor repository](https://github.com/microsoft/Reactors?azure-portal=true) and open the [Learn/Intro-Python-Data-Science folder](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/README.md?azure-portal=true) in Visual Studio Code.
-2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure that you're ready to continue through the learn module.
+2. Run the [`Test-Setup-Config.ipynb`](https://github.com/microsoft/Reactors/tree/master/Learn/Intro-python-data-science/Test-Setup-Config.ipynb?azure-portal=true) file to ensure that you're ready to continue through the Learn module.
 
-## About this learn module
+## About this Learn module
 
-As you work through this learn module, you're encouraged to try out code. Use the files you cloned for this purpose.
+As you work through this Learn module, you're encouraged to try out code. Use the files you cloned for this purpose.
 
 Jupyter notebooks are divided into cells. Each cell contains either text that's written in the Markdown markup language or a space in which to write and execute computer code. Because all the code is inside code cells, you can run each code cell inline instead of using a separate Python interactive window.
 
 > [!Note]
-> This learn module has you run code cells one by one. As you complete these modules, we encourage you to copy the code snippets into your Jupyter notebook in Visual Studio Code and run the cells one at a time.
+> This Learn module has you run code cells one by one. As you complete these modules, we encourage you to copy the code snippets into your Jupyter notebook in Visual Studio Code and run the cells one at a time.
 
 ## Comments
 
