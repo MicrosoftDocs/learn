@@ -47,7 +47,7 @@ Individual developers might use the global registry at NPM to find and download 
 
 When you type `npm install <name of dependency>`, Node.js goes to a global registry called the NPM registry and looks for the code to download. It's located at `http://npmjs.org` and is page where you can browse for packages as well, if you visit the page using a browser. The site holds packages, zipped versions of source code.  Every package has a dedicated website you can go to, to learn more on where the source code resides, and numerous other information like metrics on downloads and maintenance for example.
 
-### NPM Commands
+### NPM commands
 
 So far you've learned how you can install dependencies using the NPM tool but it can do a lot more. In fact, the NPM command-line tool has quite a few commands. The commands help you with an array of different tasks like installing packages to help you author your package, to initialize a Node.js project and more. It's not necessary to know all the commands in detail. Starting out with Node.js you are more likely to only use a subset of all commands. As you expand your usage of Node.js, you might use more and more commands within a variety of categories.
 

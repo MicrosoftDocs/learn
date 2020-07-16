@@ -4,7 +4,7 @@ One way to approach building your app with external libraries, is to use an exis
 
 In this module, you will use the NPM command-line tool and the NPM global registry to add libraries to your application code. You will also be introduced to how to manage updates and mitigate issues.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module you will be able to:
 
