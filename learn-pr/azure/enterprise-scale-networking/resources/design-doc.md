@@ -67,7 +67,7 @@ Evaluate options for network topology and connectivity.
     - Virtual WAN
     - Hub and spoke
     
-1. **Exercise**
+   **Knowledge check/exercise**
     
     - Chose the right network topology
 
