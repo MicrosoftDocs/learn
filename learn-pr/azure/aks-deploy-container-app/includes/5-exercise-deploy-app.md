@@ -75,7 +75,7 @@ You create a deployment manifest file to deploy your application. The manifest f
 
 Kubernetes groups containers into logical structures called Pods, which have no intelligence. Deployments add the missing intelligence to create your application. Let's begin creating a deployment file.
 
-1. In the Cloud Shell, create a manifest file for the Kubernetes service called `deployment.yaml` by using the integrated editor.
+1. In the Cloud Shell, create a manifest file for the Kubernetes deployment called `deployment.yaml` by using the integrated editor.
 
     ```bash
     touch deployment.yaml
