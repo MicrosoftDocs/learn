@@ -1,7 +1,3 @@
-$$\newcommand{\braket}[2]{\left\langle{#1}\middle|{#2}\right\rangle}
-\newcommand{\ket}[1]{\left|{#1}\right\rangle}
-\newcommand{\bra}[1]{\left\langle{#1}\right|}$$
-
 For some computational tasks, quantum computing seems to provide an exponential
 benefit. For other tasks, the benefits appear to be more limited. We would like
 to know what are the fundamental quantum ingredients that give rise to augmented
