@@ -48,6 +48,7 @@ Relecloud must be delegated for resource management before users can access and 
 
 In the following video, you’ll see how you do these steps to delegate subscriptions and resource groups to Relecloud, your managed service provider:
 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B1Uq]
 
 > [!NOTE]
@@ -71,6 +72,7 @@ You can view the activity login Azure Monitor, under the **Monitor** pane in the
 
 Also, you can limit the view to show specific subscriptions, and fetch Azure activity log events in an automated way by connecting your own tools to the REST API for further analysis.
 In the following video, you’ll see how to use the activity log to monitor for activities across your managed services:
+
   
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B4vs]
 
@@ -86,8 +88,6 @@ You use activity log alerts to monitor critical operations done by service provi
 ### Query logs for analysis
 
 You create log queries to analyze and audit activity. You can query all administrative actions done on subscriptions, or a particular subscription, for an audit. You use Log Analytics to create and run queries.  You choose to run a query to find out which devices have sent heartbeats within the last hour. Write your query using the Kusto Query Language (KQL), like this:
-
-:::image type="content" source="../media/2-log-analytics.png" alt-text="Log Analytics queries":::
 
 ```sql
 //List all computer heartbeats from the last hour.

@@ -37,7 +37,7 @@ After customers have been onboarded, users sign in to your tenant to directly ac
 
 As a managing user, you open Azure Sentinel in the Azure portal to view a list of all the customer workspaces you can access.   You can choose to look at a single workspace, or expand your focus to multiple workspaces. Alternatively, you could investigate any incidents that have been detected across all your customers’ workspaces:
 
-:::image type="content" source="../media/5-incidents-multiple-customers.png" alt-text="Incidents across multiple workspaces":::
+:::image type="content" source="../media/5-incidents-multiple-customers-small.png" alt-text="Incidents across multiple workspaces"  lightbox="../media/../media/5-incidents-multiple-customers.png":::
 
 You can create a single Log Analytics query to run across all customer workspaces. This way, you'll investigate and correlate information from your customers in a single query. Use this query to gain a detailed understanding of your customers' tenants.
 
@@ -63,12 +63,13 @@ You create playbooks to mitigate alerts detected by Azure Sentinel. Playbooks he
 
 You use Azure Sentinel with Azure Monitor workbooks to monitor and analyze data in customer Azure Sentinel workspaces. With Azure Monitor workbooks, you can create your own custom workbooks, but also use prebuilt templates:
 
-:::image type="content" source="../media/5-prebuilt-workbooks.png" alt-text="Prebuilt workspaces":::
+:::image type="content" source="../media/5-prebuilt-workbooks-small.png" alt-text="Prebuilt workspaces" lightbox="../media/5-prebuilt-workbooks.png":::
 
 You deploy workbooks in your tenant to query and monitor data in customer tenants through [cross-workspace monitoring](https://docs.microsoft.com/azure/sentinel/extend-sentinel-across-workspaces-tenants#using-cross-workspace-workbooks). But you can also deploy a workbook directly in a tenant that you manage for a customer.
 
 ### View incidents using Azure Sentinel workspaces
 
 In this video, you’ll see how to use Azure Sentinel with Azure Lighthouse to get a cross-tenant view of all incidents in your customers’ subscriptions:
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B4w3]

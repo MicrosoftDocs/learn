@@ -105,4 +105,5 @@ For more information on Azure Policy see [Governance policy overview](https://do
 
 In this video, you’ll see what to do to manage a customer’s cloud and on-premises resources.
 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B1UO]

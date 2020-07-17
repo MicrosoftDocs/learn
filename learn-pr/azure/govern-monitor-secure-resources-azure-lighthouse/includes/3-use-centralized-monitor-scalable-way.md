@@ -18,6 +18,7 @@ You can create Log Analytics workspaces through the Azure portal, Azure CLI, or 
 
 In the following video, you’ll see how to create a Log Analytics workspace using the Azure portal:
 
+
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4B4vU]
 
 > [!NOTE]
@@ -72,6 +73,7 @@ When you've deployed policies, data collected will be logged to the workspaces c
 Workbooks can be shared across the organization or with outside groups in the wider community.
 
 In the following video, you’ll see how to create a new workbook using the Azure portal. You’ll also learn how to add a query to your workbook and run it across customer workspaces:
+
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4AZgz]
 
