@@ -2,7 +2,7 @@ Node.js has become one of the most used technologies by many giant companies and
 
 Node.js is a single-threaded non-blocking runtime; it's based on the event-driven I/O paradigm and is capable of executing JavaScript outside the browser. The Non-blocking aspect means that, for instance, when a remote client makes a request, a server written in JavaScript and running on Node.js would handle that request and would construct and send back a response; then move on to the next request, without blocking and waiting for other tasks to finish.
 
-The main benefits of using Node.js are:
+This unit describes the main benefits of using Node.js.
 
 ## Multi-purpose technology
 
