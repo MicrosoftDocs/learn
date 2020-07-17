@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-introduction.4-enterprise-scale-design-principles
+metadata:
+  title: Enterprise-scale design principles
+  description: Enterprise-scale design principles
+  ms.date: 09/30/2020
+  author: telmosampaio
+  ms.author: telmos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enterprise-scale design principles
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-enterprise-scale-design-principles.md)]
