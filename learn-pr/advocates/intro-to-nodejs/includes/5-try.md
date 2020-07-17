@@ -48,11 +48,13 @@ Node.js does also support running code from files. Using Azure Cloud Shell, open
 code
 ```
 
-Inside the shell code editor, create a file with the following code, and save the file under `index.js`:
+Inside the shell code editor, create a file with the following code:
 
 ```javascript
 console.log('Hello World, from a script file.');
 ```
+
+Save the file with `Ctrl+S` (Windows, Linux) or `Cmd+S` (Mac) under `index.js`.
 
 Then, from the command-line shell, enter `node` followed by the name of the file, in this case, `index.js`:
 
