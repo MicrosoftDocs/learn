@@ -60,7 +60,7 @@ Kubernetes use Ingress controllers to manage the configure of Ingress in a clust
 
 In AKS, the Ingress Controller links to a _DNS Zone_ resource in your Azure subscription. The DNS Zone is automatically created as part of the cluster creation process on your behalf. The link makes it possible for the cluster to automatically generate a zone record that points to the DNS name to the exposed application's IP address and port.
 
-In AKS, the :::no-loc text="HTTP Application Routing"::: add-on allows you to create **Ingress controllers**.
+In AKS, the :::no-loc text="HTTP Application Routing"::: add-on allows you to create **ingress controllers**.
 
 ## Ingress rules
 
