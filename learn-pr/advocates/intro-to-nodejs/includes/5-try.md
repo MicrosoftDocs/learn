@@ -11,7 +11,7 @@ Node.js will:
 - **Print**: prints the computed results.
 - **Loop**: loop and wait for the user to enter a new command (or exit if the user hits **ctrl-c** twice)
 
-> The REPL mode is useful for quick code evaluation and experimentation!
+The REPL mode is useful for quick code evaluation and experimentation!
 
 To start the REPL mode by running the `node` program in the Azure Cloud Shell.
 
