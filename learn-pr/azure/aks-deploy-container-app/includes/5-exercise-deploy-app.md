@@ -87,7 +87,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
     ```yml
     # deployment.yaml
-    apiVersion: apps/v1 # Where in the API the object resides
+    apiVersion: apps/v1 # The API resource where this workload resides
     kind: Deployment # The kind of workload we're creating
     metadata:
       name: contoso-website # This will be the name of the deployment
