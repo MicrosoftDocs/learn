@@ -15,9 +15,6 @@ To collect data across customer tenants, you’ll need to create Log Analytics w
 Microsoft recommends that you create workspaces directly in customer tenants. This will help ensure that each customer’s data remains in their tenant. This way, you achieve centralized monitoring for services and resources.
 
 You can create Log Analytics workspaces through the Azure portal, Azure CLI, or Azure PowerShell.
-In the Azure portal, you'll view activity logs from workspaces from one pane:
-
-:::image type="content" source="../media/3-view-activity-logs.png" alt-text="View activity logs":::
 
 In the following video, you’ll see how to create a Log Analytics workspace using the Azure portal:
 
