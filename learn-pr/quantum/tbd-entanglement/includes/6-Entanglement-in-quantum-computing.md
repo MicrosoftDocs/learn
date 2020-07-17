@@ -55,8 +55,8 @@ $i_{\text{th}}$ atom. If each atom can be only in two states, this means that we
 need $2^n$ complex parameters to represent the probability amplitudes for
 each possible state.
 
-With ~50 atoms our best classical supercomputers start to struggle. For N≈80 we
-will need more parameters than transistors are in the Earth. For  N≈280 we need
+With ~50 atoms our best classical supercomputers start to struggle. For n≈80 we
+will need more parameters than transistors are in the Earth. For  nfix≈280 we need
 more parameters than the estimated number of atoms in the Universe. Even
 supposing that we need only one bit per parameter (which is not true) we will
 need more transistors than atoms exist in the universe to simulate a relatively
