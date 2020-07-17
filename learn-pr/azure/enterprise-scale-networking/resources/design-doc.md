@@ -1,6 +1,6 @@
 # Enterprise-scale architecture overview
 
-## Enterprise-scale architecture design principles: networking
+## Enterprise-scale architecture networking design principles
 
 Evaluate options for network topology and connectivity.
 
