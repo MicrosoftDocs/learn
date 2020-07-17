@@ -47,7 +47,7 @@ $$\hat A(\ket{\psi_1} + \ket{\psi_2}) = \hat A\ket{\psi_1} + \hat A\ket{\psi_2}$
 
 and homogeneity
 
-$$\hat A(ax)=a \hat A(x)$$
+$$\hat A(a\ket{\psi})=a \hat A(\ket{\psi})$$
 
 where $a$ is a complex number.
 
