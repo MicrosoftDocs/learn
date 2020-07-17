@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-organizational-design-principles.2-enterprise-enrollment-azure-ad-tenants
+metadata:
+  title: Enterprise enrollment and Azure AD tenants
+  description: Enterprise enrollment and Azure AD tenants
+  ms.date: 09/30/2020
+  author: telmosampaio
+  ms.author: telmos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enterprise enrollment and Azure AD tenants
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-enterprise-enrollment-azure-ad-tenants.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Question 1'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
+    - content: 'Answer 4'
+      isCorrect: true
+      explanation: 'Explanation 4'
+
+  - content: 'Question 2'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
+    - content: 'Answer 4'
+      isCorrect: true
+      explanation: 'Explanation 4'

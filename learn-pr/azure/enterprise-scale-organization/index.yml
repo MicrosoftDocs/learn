@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.azure.enterprise-scale-organizational-design-principles
+metadata:
+  title: Enterprise-scale architecture organizational design principles
+  description: Enterprise-scale architecture organizational design principles
+  ms.date: 09/30/2020
+  author: telmosampaio
+  ms.author: telmos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enterprise-scale architecture organizational design principles
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.enterprise-scale-organizational-design-principles.1-introduction
+- learn.azure.enterprise-scale-organizational-design-principles.2-enterprise-enrollment-azure-ad-tenants
+- learn.azure.enterprise-scale-organizational-design-principles.3-identity-access-management
+- learn.azure.enterprise-scale-organizational-design-principles.4-management-group-subscription-organization
+- learn.azure.enterprise-scale-organizational-design-principles.5-summary
+badge:
+  uid: learn.azure.enterprise-scale-organizational-design-principles.badge
