@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-operations.3-business-continuity-disaster-recovery
+metadata:
+  title: Business continuity and disaster recovery
+  description: Business continuity and disaster recovery
+  ms.date: 09/30/2020
+  author: telmosampaio
+  ms.author: telmos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Business continuity and disaster recovery
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-business-continuity-disaster-recovery.md)]

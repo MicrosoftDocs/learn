@@ -1,0 +1,34 @@
+### YamlMime:Module
+uid: learn.azure.enterprise-scale-operations
+metadata:
+  title: Enterprise-scale architecture operational design principles
+  description: Enterprise-scale architecture operational design principles
+  ms.date: 04/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enterprise-scale architecture operational design principles
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.enterprise-scale-operations.1-introduction
+- learn.azure.enterprise-scale-operations.2-management-monitoring
+- learn.azure.enterprise-scale-operations.3-business-continuity-disaster-recovery
+- learn.azure.enterprise-scale-operations.4-security-governance-compliance
+- learn.azure.enterprise-scale-operations.5-summary
+badge:
+  uid: learn.azure.enterprise-scale-operations.badge

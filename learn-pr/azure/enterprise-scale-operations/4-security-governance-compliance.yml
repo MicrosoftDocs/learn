@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-operations.4-security-governance-compliance
+metadata:
+  title: Security, governance, and compliance
+  description: Security, governance, and compliance
+  ms.date: 09/30/2020
+  author: telmosampaio
+  ms.author: telmos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Security, governance, and compliance
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-security-governance-compliance.md)]
