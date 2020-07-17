@@ -22,8 +22,8 @@ $$\hat H \hat H \ket{0}= \hat H \frac1{\sqrt2}(\ket{0}+\ket{1})$$
 
 Since $\hat H$ is a linear operator:
 
-$$\hat H \hat H \ket{0}=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
-\frac1{\sqrt2}(\ket{psi_1}+\ket{\psi_2})$$ 
+$$=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
+\frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2})$$ 
 
 Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as superposing
 the states $\psi_1$ and $\psi_2$. We know how to code that with Q#, so let's if
@@ -162,6 +162,22 @@ And the output:
 |1?:     0,000000 + -0,707107 i  ==     ***********          [ 0,500000 ]        [ -1,57080 rad ]
 ```
 
-We get a phase of $\frac\pi2$ for $\ket{0}$ $-\frac\pi2$ for $\ket{1}$
+We get a phase of $\frac\pi2$ for $\ket{0}$ and $-\frac\pi2$ for $\ket{1}$.
+Those angles correspond to the positive and negative parts of the imaginary
+y-axis of the complex plane.
 
-*Article under construction*
+## Creating entanglement with Q#
+
+Until now we used only single qubit operations, this is, operations that act
+over single qubits individually. However, to get qubits entangled we need
+what is called **multi-qubit gates**.
+
+The most prominent example of a multi-qubit gate is the [`CNOT`](todo)
+operation. This operation takes two qubits as input, and flips the state of the
+second qubit (target qubit) if and only if the state of the first qubit (control
+qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT` we can
+transform a register in the state $\ket{00}$ to the entangled state
+$\frac1{\sqrt2}(\ket{00}+\ket{11})$. Let's see how:
+
+$$CNOT(\hat H\ket{0}),\ket{0})=CNOT($\frac1{\sqrt2}(\ket{0}+\ket{1}),\ket{0})=
+\frac1{\sqrt2}(CNOT(\ket{0},\ket{0})+CNOT(\ket{1},ket{0}))=\frac1{\sqrt2}(\ket{00}+\ket{11})$$
