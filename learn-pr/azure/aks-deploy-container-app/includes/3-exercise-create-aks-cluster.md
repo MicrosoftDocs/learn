@@ -11,11 +11,18 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
+1. Create variables for the configuration values you'll reuse through out the exercises.
+
+    ```bash
+    RESOURCE_GROUP=contoso-aks
+    CLUSTER_NAME=contoso-kubernetes-cluster
+    ```
+
 1. Run the `az group create` command to create a resource group. You'll deploy all resources into this new resources group.
 
     ```azurecli
     az group create \
-        --name contoso-aks \
+        --name $RESOURCE_GROUP \
         --location eastus
     ```
 
@@ -23,11 +30,10 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
 
     ```azurecli
     az aks create \
-        --resource-group contoso-aks \
-        --name contoso-kubernetes-cluster \
+        --resource-group $RESOURCE_GROUP \
+        --name $CLUSTER_NAME \
         --node-count 3 \
         --enable-addons http_application_routing \
-        --generate-ssh-keys \
         --dns-name-prefix contoso-kubernetes-$RANDOM \
         --node-vm-size Standard_B2s
     ```
@@ -40,8 +46,8 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
 
     ```azurecli
     az aks get-credentials \
-        --name contoso-kubernetes-cluster \
-        --resource-group contoso-aks
+        --name $CLUSTER_NAME \
+        --resource-group $RESOURCE_GROUP
     ```
 
     This command will add an entry to your `~/.kube/config` file, which holds all the information to access your clusters. Kubectl allows you to manage multiple clusters from a single command-line interface.
@@ -53,3 +59,11 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
     ```
 
     You should receive a list of three available nodes.
+
+    ```output
+    NAME                                STATUS   ROLES   AGE    VERSION
+    aks-nodepool1-14167704-vmss000000   Ready    agent   105s   v1.16.10
+    aks-nodepool1-14167704-vmss000001   Ready    agent   105s   v1.16.10
+    aks-nodepool1-14167704-vmss000002   Ready    agent   105s   v1.16.10
+    ```
+    

@@ -35,9 +35,9 @@ Services can be of several types. Each type changes the behavior of the applicat
 
 - **ClusterIP**: This value exposes the applications internally only. This option allows the service to act as a port-forwarder and makes the service available within the cluster. This value is the default when omitted.
 
-- **NodePort**: This value exposes the service externally, assigning each node a static port that responds to that service. When accessed through `nodeIp:port`, the node will automatically redirect the request to an internal service of the `clusterIP` type. This service will then forward the request to the applications.
+- **NodePort**: This value exposes the service externally, assigning each node a static port that responds to that service. When accessed through `nodeIp:port`, the node will automatically redirect the request to an internal service of the `ClusterIP` type. This service will then forward the request to the applications.
 
-- **LoadBalancer**: This value exposes the service externally using Azure's load-balancing solution. When created, this resource will spin up a Load Balancer resource within your Azure subscription. Also, this type will automatically create a `nodePort` service to which the Load Balancer's traffic will be redirected, and a `clusterIP` service to forward internally.
+- **LoadBalancer**: This value exposes the service externally using Azure's load-balancing solution. When created, this resource will spin up a Load Balancer resource within your Azure subscription. Also, this type will automatically create a `NodePort` service to which the Load Balancer's traffic will be redirected, and a `ClusterIP` service to forward internally.
 
 - **ExternalName**: This value maps the service using a DNS resolution through a CNAME record. You use this service type to direct traffic to services that exist outside the Kubernetes cluster.
 
@@ -49,7 +49,7 @@ Ingress exposes routes for HTTP and HTTPS traffic from outside a cluster to serv
 
 Assume you want to allow clients to access your website through the `http://contoso.com` web address. For a client to access your app inside the cluster, the cluster must respond to the website's CNAME and route the requests to the relevant pod.
 
-## Ingresse Controllers
+## Ingress controllers
 
 Kubernetes use Ingress controllers to manage the configure of Ingress in a cluster. An Ingress controller provides several features. An Ingress controller:
 
@@ -60,14 +60,13 @@ Kubernetes use Ingress controllers to manage the configure of Ingress in a clust
 
 In AKS, the Ingress Controller links to a _DNS Zone_ resource in your Azure subscription. The DNS Zone is automatically created as part of the cluster creation process on your behalf. The link makes it possible for the cluster to automatically generate a zone record that points to the DNS name to the exposed application's IP address and port.
 
-In AKS, the :::no-loc text="HTTP Application Routing"::: add-on allows you to create **Ingress Controllers**.
+In AKS, the :::no-loc text="HTTP Application Routing"::: add-on allows you to create **ingress controllers**.
 
 ## Ingress rules
 
 Ingress rules define where traffic is coming from and where to direct it within a cluster. You define ingress rules in an ingress deployment manifest file.
 
-These rules are defined in the `rules` key of the manifest file. Each rule is a set of additional values that describes the rule. 
-
+These rules are defined in the `rules` key of the manifest file. Each rule is a set of additional values that describes the rule.
 
 For example, assume you want to allow clients to access your website using the url `http://example.com/site`. You want to route traffic to your video rendering service website. Here is an example of the defined ingress rule to allow this behavior.
 
@@ -84,10 +83,9 @@ rules:
 
 This example defines a rule that allows all traffic using the address `example.com` and path `/site` to enter the cluster. This traffic is then routed to the `contoso-website` service on port `80`. 
 
-
 ## Annotations
 
-An annotation allows you to attach non-identifying metadata such as ingress configurations to workloads. You can think of the annotation as an internal label that defines specific configurations for resources destined to libraries and other clients.  For example, you may want to use a specific Ingress controller that supports name rewriting or payload limiting.
+An annotation allows you to attach non-identifying metadata such as ingress configurations for workloads. You can think of the annotation as an internal label that defines specific configurations for resources.  For example, you may want to use a specific Ingress controller that supports name rewriting or payload limiting.
 
 Here is an example of the annotation in a manifest file that specifies the use of the HTTP Application Routing Addon.
 
@@ -101,4 +99,4 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing # Using HTTP Application Routing Addon
 ```
 
-In the next exercise, you'll define a service of type `clusterIP` and expose your company's web app through an **Ingress**.
+In the next exercise, you'll define a service of type `ClusterIP` and expose your company's web app through an **Ingress**.
