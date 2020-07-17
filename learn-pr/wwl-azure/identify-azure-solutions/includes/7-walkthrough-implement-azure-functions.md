@@ -49,7 +49,7 @@ In this task, we will use the Webhook + API function to display a message when t
 
 3. Review the default values of Function name = **HttpTrigger1** and Authorization Level = **Function**. Then click **Create Function**. This will run a function whenever the app receives an HTTP request. Review other templates that you can choose from.
 
-    :::image type="content" source="../media/function-lab-select-function-name.png" alt-text="Screenshot of the create a function step in the Azure functions for dot net getting started pane inside Azure portal. The HTTP Trigger button was chosen previously and now you need to enter the function name.  You will accept the defualt and click Create Function.":::
+    :::image type="content" source="../media/function-lab-select-function-name.png" alt-text="Screenshot of the create a function step in the Azure functions for dot net getting started pane inside Azure portal. The HTTP Trigger button was chosen previously and now you need to enter the function name.  You will accept the default and click Create Function.":::
 
 4. Your new **HttpTrigger1** function has been created, the overview page is opened. 
 
