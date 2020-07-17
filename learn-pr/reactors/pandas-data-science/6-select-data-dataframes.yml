@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.pandas-data-science.6-select-data-dataframes
+title: Select data in DataFrames objects
+metadata:
+  title: Select data in DataFrames objects
+  description: Learn how to select data in DataFrames objects.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-select-data-dataframes.md)]
