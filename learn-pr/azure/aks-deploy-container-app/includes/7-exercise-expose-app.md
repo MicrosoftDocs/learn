@@ -113,7 +113,7 @@ Like all resources, services also have manifest files describing how they should
 
 ## Create an Ingress manifest
 
-To expose your website to the world via DNS, you must create an Ingress controller.
+To expose your website to the world via DNS, you must create an ingress controller.
 
 1. In the Cloud Shell, create a manifest file for the Kubernetes service called `service.yaml`.
 
