@@ -11,7 +11,7 @@ In this walkthrough, we will access the Trust Center, Service Trust Portal (STP)
 3. In the **Global** group, click **ISO 27001**. 
 
     > [!NOTE]
-    > The ISO 27001 Information Security Management Standards page is typical of the type of complaince information we provide.
+    > The ISO 27001 Information Security Management Standards page is typical of the type of compliance information we provide.
 
 4. Notice there is an overview of the standard; in-scope cloud services; audits, reports and certificates; assessments and reports; FAQs; resources; and white papers. 
 
