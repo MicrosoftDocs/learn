@@ -81,9 +81,9 @@ Evaluate options for network topology and connectivity.
 
 1. **Knowledge check**
     
-- Determine how to connect to Azure
-- Determine how to connect to the public Internet
-- Determine how to connect to PaaS services
+    - Determine how to connect to Azure
+    - Determine how to connect to the public Internet
+    - Determine how to connect to PaaS services
 
 1. **Network segmentation**
 
