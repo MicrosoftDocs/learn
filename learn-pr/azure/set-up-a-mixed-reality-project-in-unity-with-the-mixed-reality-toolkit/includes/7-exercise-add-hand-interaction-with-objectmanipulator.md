@@ -1,4 +1,4 @@
-The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the script enables the user to touch holograms directly with their hands. Here you will create a cube and use ObjectManipulator to enable hand interactions so that you can scale and rotate the cube.
+The ObjectManipulator script makes an object movable, scalable, and rotatable using one or two hands. This script supports the direct manipulation input model as the script enables the user to touch holograms directly with their hands. Here you will create a cube and use ObjectManipulator to enable hand interactions so that you can move, scale, and rotate the cube.
 
 ## Add a Cube to the scene
 
