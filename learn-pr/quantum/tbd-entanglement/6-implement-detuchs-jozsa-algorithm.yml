@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.concepts.6-entanglement-in-quantum-computing
-title: Entanglement in quantum computing 
+uid: learn.quantum.concepts.6-implement-detuch-jozsa-algorithm
+title: Exercise - Implement the Deutch-Jozsa algorithm in Q#
 metadata:
   title: Entanglement in quantum computing
   description: Explanation of quantum entanglement in the context of quantum computing.
@@ -22,4 +22,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-entanglement-in-quantum-computing.md)]
+  [!include[](includes/6-implement-detuch-jozsa-algorithm.md)]
