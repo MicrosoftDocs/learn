@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.enterprise-scale-networking.3-dns
+metadata:
+  title: DNS
+  description: DNS
+  ms.date: 09/30/2020
+  author: telmosampaio
+  ms.author: telmos
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: DNS
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-dns.md)]
