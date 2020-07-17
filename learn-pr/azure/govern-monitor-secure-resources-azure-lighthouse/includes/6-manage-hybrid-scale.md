@@ -1,6 +1,6 @@
 You’ve seen how Relecloud can secure customer resources at scale with Azure Lighthouse. Lamna Healthcare is about to refocus their efforts on growing the business.  The company is impressed with the way that Relecloud manages their existing Azure resources and assets.  To free up resources, Lamna Healthcare want Relecloud to take over the management of their on-premises operation. This would be in addition to management of their existing Azure resources. You're aware of a service called Azure Arc. You’ll need to explore the capabilities of Azure Arc to see how it might be used to meet Lamna Healthcare’s new requirements. Finally, you’ll see how to use Azure Arc within your existing Azure Lighthouse service offering.
 
-:::image type="content" source="../media/6-azure-arc-range.png" alt-text="Diagram showing the range and extent of Miscrosoft Azure Arc":::
+:::image type="content" source="../media/6-azure-arc-range.png" alt-text="Diagram showing the range and extent of Microsoft Azure Arc":::
 
 ## Understand Azure Arc
 
