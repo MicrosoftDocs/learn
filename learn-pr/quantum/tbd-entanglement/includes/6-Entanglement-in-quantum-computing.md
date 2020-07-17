@@ -50,7 +50,7 @@ systems.
 
 Suppose we have a molecule with $n$ different atoms that can become entangled.
 The state of the system would be described by a superposition of states of the
-form $\ket{\x_0,x_1,...,x_{n-1}}$, where $x_i$ is the individual state of the
+form $\ket{x_0,x_1,...,x_{n-1}}$, where $x_i$ is the individual state of the
 $i_{\text{th}}$ atom. If each atom can be only in two states, this means that we
 need $2^n$ complex parameters to represent the probability amplitudes for
 each possible state.
