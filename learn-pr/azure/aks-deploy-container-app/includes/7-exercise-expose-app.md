@@ -1,36 +1,23 @@
-We have successfully deployed the website to the cluster, but as we spoke to the management, they were not able to access it. The problem is that we haven't exposed our application to the Internet yet! As we can recall in the previous units, all the external traffic is blocked by default in Kubernetes, so we have to add an **Ingress Rule** to allow that traffic to come in and serve our site!
-
-Let's expose Contoso's website to the world.
+You successfully deployed the video rendering service website to your cluster. However, you noticed that you couldn't access the website from any client external to the cluster. The problem is that you haven't exposed your application to the Internet yet. By default, Kubernetes blocks all external traffic. You'll need to add an **Ingress Rule** to allow traffic into the cluster.
 
 ## Create the service manifest
 
-Like all resources, services also have manifest files describing how they should behave. Let's create our service description.
+Like all resources, services also have manifest files describing how they should behave. Let's create a new service description.
 
-> [!NOTE]
-> You can check the example service file in the [official repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app/blob/master/kubernetes/service.yaml)
+1. Log in to the Azure Cloud Shell if not done so already.
 
-1. Create a new `service.yaml` file
-1. Like the :::no-loc text="deployment":::, the first two steps in creating a manifest file is defining the `apiVersion` and the `kind` keys
+    > [!div class="nextstepaction"]
+    > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
-    ```yml
-    #service.yaml
-    apiVersion: v1
-    kind: Service
+1. In the Cloud Shell, create a manifest file for the Kubernetes service called `service.yaml`.
+
+    ```bash
+    touch service.yaml
     ```
 
-1. We also define the name through the `metadata.name` key
+1. Open the integrated editor in Cloud Shell by typing `code .`
 
-    ```yml
-    #service.yaml
-    apiVersion: v1
-    kind: Service
-    metadata:
-      name: contoso-website
-    ```
-
-1. In the `spec` key, we'll define how the service will behave
-
-    The first behavior we need to add is the type of service it's going to be. We'll create a `clusterIP` service:
+1. Open the `service.yaml` file and add the following code section of YAML.
 
     ```yml
     #service.yaml
@@ -38,11 +25,13 @@ Like all resources, services also have manifest files describing how they should
     kind: Service
     metadata:
       name: contoso-website
-    spec:
-      type: clusterIP
     ```
 
-    Then, we'll define which pods this service will wrap and provide coverage to. We can do that by the same `selector` key as the :::no-loc text="deployment":::, but now we can only match labels, so it's simpler:
+    In the above code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the service, and you'll use it to identify and query the service information when using `kubectl`.
+
+1. You define how the service will behave in the specification section of the manifest file. The first behavior you need to add is the type of service the service. Set the `type` key to `clusterIP`.
+
+    Update the `service.yaml` file to match the following YAML.
 
     ```yml
     #service.yaml
@@ -51,14 +40,28 @@ Like all resources, services also have manifest files describing how they should
     metadata:
       name: contoso-website
     spec:
-      type: clusterIP
-      selector:
-        app: contoso-website
+      type: ClusterIP
     ```
 
-    We're telling the service to wrap all apps with the label `app` set to `contoso-website`.
+1. You define the pods the service will group and provide coverage by adding a `selector` section to the manifest file. Add the `selector` and set the `app` key value to the `contoso-website` label of your pods as specified in your earlier deployments manifest file.
 
-    Next up, we need to define the port-forwarding rules. We exposed port 80 on our :::no-loc text="deployment"::: and called that port `http`. Let's make all requests that come to this service on port 80 be redirected to the same 80 port on the deployment via the `spec.ports` key:
+    Update the `service.yaml` file to match the following YAML.
+
+      ```yml
+      #service.yaml
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: contoso-website
+      spec:
+        type: ClusterIP
+        selector:
+          app: contoso-website
+      ```
+
+1. You define the port-forwarding rules by adding a `ports` section to the manifest file. The service must accept all TCP requests on port 80 and forward the request to the HTTP target port for all pods matching the selector value defined earlier.
+
+    Update the `service.yaml` file to match the following YAML.
 
     ```yml
     #service.yaml
@@ -67,7 +70,7 @@ Like all resources, services also have manifest files describing how they should
     metadata:
       name: contoso-website
     spec:
-      type: clusterIP
+      type: ClusterIP
       selector:
         app: contoso-website
       ports:
@@ -77,48 +80,50 @@ Like all resources, services also have manifest files describing how they should
           targetPort: http # Port to forward to in the POD
     ```
 
-    The configuration follows the phrase: "Take all requests that arrive on `spec.ports[0].port` via the `spec.ports[0].protocol` protocol, named as `spec.ports[0].name`, and redirect to the port `spec.ports[0].targetPort` in the pod.
-
-Save your manifest file.
+1. Save the manifest file and close the editor.
 
 ## Deploy the service
 
-To deploy the service, we need to follow the same steps as the :::no-loc text="deployment":::.
-
-1. Open a terminal in the same directory as the file
-1. Run the following command:
+1. In the Cloud Shell, run the `kubectl apply` command to submit the service manifest to your cluster.
 
     ```bash
     kubectl apply -f ./service.yaml
     ```
 
-1. Check if the service has been deployed by running the command:
+    The command should output a result similar to the following example:
 
-    ```bash
-    kubectl get svc contoso-website
+    ```output
+    service/contoso-website created
     ```
 
-    The command output should be a table with some service data. Make sure the column `CLUSTER-IP` is filled with an IP address and the column `EXTERNAL-IP` is `<none>`. Also make sure the column `PORT(S)` is defined to `80/TCP`.
+1. Run the `kubectl get service` command to check if the deployment was successful.
 
-As you'll notice, there's no exposing to the Internet yet. The service is only accessible to the Internal cluster, so we need to create our Ingress manifest and deploy it
+    ```bash
+    kubectl get service contoso-website
+    ```
+
+    The command should output a result similar to the following example. Make sure the column `CLUSTER-IP` is filled with an IP address, and the column `EXTERNAL-IP` is `<none>`. Also, make sure the column `PORT(S)` is defined to `80/TCP`.
+
+    ```output
+    NAME              TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
+    contoso-website   ClusterIP   10.0.158.189   <none>        80/TCP    42s
+    ```
+
+    With the external IP set to `<none>`, the application isn't available to external clients. The service is only accessible to the internal cluster.
 
 ## Create an Ingress manifest
 
-To expose our website to the world via DNS, we need a new file called, which will contain the definition of our ingress resource.
+To expose your website to the world via DNS, you must create an Ingress controller.
 
-> [!NOTE]
-> You can check the example service file in the [official repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app/blob/master/kubernetes/ingress.yaml)
+1. In the Cloud Shell, create a manifest file for the Kubernetes service called `service.yaml`.
 
-1. Create a new file called `ingress.yaml` and open a terminal in the same directory.
-1. Like the others, the first two steps in creating a manifest file are defining the `apiVersion` and the `kind` keys
-
-    ```yml
-    #ingress.yaml
-    apiVersion: extensions/v1beta1
-    kind: Ingress
+    ```bash
+    touch ingress.yaml
     ```
 
-1. We also define the name through the `metadata.name` key
+1. Open the integrated editor in Cloud Shell by typing `code .`
+
+1. Open the `service.yaml` file and add the following code section of YAML.
 
     ```yml
     #ingress.yaml
@@ -128,7 +133,11 @@ To expose our website to the world via DNS, we need a new file called, which wil
       name: contoso-website
     ```
 
-1. To tell the :::no-loc text="HTTP Application Routing"::: addon to listen to this ingress, we need to create another key inside `metadata` called `annotations`. Annotations are like internal labels that Kubernetes plugins or addons uses to identify resources. The annotation we want to create is `kubernetes.io/ingress.class` with a value of `addon-http-application-routing`.
+    In the above code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the ingress, and you'll use it to identify and query the ingress information when using `kubectl`.
+
+1. Create an `annotations` key inside `metadata` section of the manifest file called to use the :::no-loc text="HTTP Application Routing"::: addon for this ingress. Set the key to `kubernetes.io/ingress.class` and a value of `addon-http-application-routing`.
+
+    Update the `ingress.yaml` file to match the following YAML.
 
     ```yml
     #ingress.yaml
@@ -140,30 +149,25 @@ To expose our website to the world via DNS, we need a new file called, which wil
         kubernetes.io/ingress.class: addon-http-application-routing
     ```
 
-1. Now, we move over to the specification on the `spec` key
+1. Set the Fully Qualified Domain Name (FQDN) of the host allowed access to the cluster. 
 
-    The first specification we need to write is the DNS allowed to access the cluster. In other words, the domain name our site will have.
-
-    Since we're using the HTTP Application Routing addon, our domain name will be something like `contoso.<uuid>.<region>.aksapp.io`. To get this information, let's query Azure to list all DNS zones we have via terminal:
+	In the Cloud Shell,  run  the `az network dns zone list` command to query the Azure DNS zone list. 
 
     ```bash
     az network dns zone list --output table
     ```
 
-    The command will output a table containing a column named `ZoneName`. Copy this value. Now create a `spec` key in the same indentation level as `metadata`:
+    The command should output a result similar to the following example.
 
-    ```yml
-    #ingress.yaml
-    apiVersion: extensions/v1beta1
-    kind: Ingress
-    metadata:
-      name: contoso-website
-      annotations:
-        kubernetes.io/ingress.class: addon-http-application-routing
-    spec:
+    ```output
+    ZoneName                               ResourceGroup                                     RecordSets    MaxRecordSets
+    -------------------------------------  ------------------------------------------------  ------------  ---------------
+    5cd29ec927f24764b052.eastus.aksapp.io  mc_contoso-aks_contoso-kubernetes-cluster_eastus  2             10000
     ```
 
-    Inside this `spec` there will be all the ingress rules of our cluster, so create a new array key named `rules` inside `spec`. Create a new key named `host` inside rules, this key will have the DNS zone we copied.
+1. Copy the `ZoneName` and update  the `ingress.yaml` file to match the following YAML. Replace the `<zone-name>` placeholder value with the `ZoneName` value you copied.
+
+    Update the `ingress.yaml` file to match the following YAML.
 
     ```yml
     #ingress.yaml
@@ -175,14 +179,12 @@ To expose our website to the world via DNS, we need a new file called, which wil
         kubernetes.io/ingress.class: addon-http-application-routing
     spec:
       rules:
-        - host: contoso.<uuid>.<region>.aksapp.io # Which host is allowed to enter the cluster
+        - host: contoso.<zone-name> # Which host is allowed to enter the cluster
     ```
 
-    Now our ingress will allow any requests from that host to enter the cluster.
+1. Next up, add the backend configuration to your ingress rule. Create a key named `http` and allow the `http` protocol to pass through.  Then, define the `paths` key that will allow you to filter whether this rule applies to all paths of the website or only some of them. 
 
-1. Next up, let's add the backend configuration that will tell our rule where it should forward the traffic to
-
-    Inside `rules`, in the same object as `host`, we'll create a key named `http`. This states we'll allow the `http` protocol to pass through. Inside the  key, we'll define the `paths` key that will allow us to filter whether this rule applies to all paths of the website or only some of them. And how the ingress will handle those requests:
+    Update the `ingress.yaml` file to match the following YAML.
 
     ```yml
     #ingress.yaml
@@ -203,23 +205,35 @@ To expose our website to the world via DNS, we need a new file called, which wil
                 path: / # Which path is this rule referring to
     ```
 
-Save the file and that is enough to describe our ingress workload.
+1. Save the manifest file and close the editor.
 
 ## Deploy the ingress
 
 Now we need to deploy the service for our changes to take effect.
 
-1. Open a terminal in the same directory as the `ingress.yaml` file
-1. Run the `apply` command:
+1. In the Cloud Shell, run the `kubectl apply` command to submit the ingress manifest to your cluster.
 
     ```bash
     kubectl apply -f ./ingress.yaml
     ```
 
-1. To test if everything worked, let's check if the ingress resource was created
+    The command should output a result similar to the following example.
+
+    ```output
+    ingress.extensions/contoso-website created
+    ```
+
+1. Run the ` kubectl get ingress` command to check if the deployment was successful.
 
     ```bash
     kubectl get ingress contoso-website
+    ```
+
+    The command should output a result similar to the following example.
+
+    ```output
+    NAME              HOSTS                                           ADDRESS        PORTS   AGE
+    contoso-website   contoso.5cd29ec927f24764b052.eastus.aksapp.io   52.226.96.30   80      4m44s
     ```
 
     Make sure the `ADDRESS` column of the output is filled with an IP address. That's the address of you cluster.
@@ -232,15 +246,33 @@ Now we need to deploy the service for our changes to take effect.
     az network dns zone list --output table
     ```
 
-    Copy the `ZoneName` and `ResourceGroup` columns. Now run:
+    The command should output a result similar to the following example.
 
-    ```bash
-    az network dns record-set list -g <resource-group-name> -z <zone-name> --output table
+    ```output
+    ZoneName                               ResourceGroup                                     RecordSets    MaxRecordSets
+    -------------------------------------  ------------------------------------------------  ------------  ---------------
+    5cd29ec927f24764b052.eastus.aksapp.io  mc_contoso-aks_contoso-kubernetes-cluster_eastus  4             10000
     ```
 
-    Make sure there are two new records at the bottom of the list with the host we created in the `specs.rules[0].host` key. And the `ProvisioningState` is `Succeeded`. If they're not there yet, wait a few moments and run this command again. It can take up to two minutes for Zone Records to propagate.
+1. Copy the `ZoneName` and `ResourceGroup` columns and run the `az network dns` command. Replace `<resource-group>` and `<zone-name>` value placeholders with the values you copied.
 
-1. Open your browser and go to the DNS described in the zone (the same one we put into `spec.rules[0].host`). You'll access the website:
+    ```bash
+    az network dns record-set list -g <resource-group> -z <zone-name> --output table
+    ```
 
-:::image type="content" source="../media/7-website-success.png" alt-text="We can access our website":::
+    The command should output a result similar to the following example.
 
+    ```output
+    Fqdn                                            Name     ProvisioningState    ResourceGroup                                     Ttl
+    ----------------------------------------------  -------  -------------------  ------------------------------------------------  ------
+    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  172800
+    5cd29ec927f24764b052.eastus.aksapp.io.          @        Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  3600
+    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  300
+    contoso.5cd29ec927f24764b052.eastus.aksapp.io.  contoso  Succeeded            mc_contoso-aks_contoso-kubernetes-cluster_eastus  300
+    ```
+
+    Make sure there are two new records at the bottom of the list with the host we created in the `host` key. And the `ProvisioningState` is `Succeeded`.  It can take up to two minutes for Zone Records to propagate.
+
+1. Open your browser and go to the FQDN described in the output. You should see a website as displayed in the following example screenshot.
+
+:::image type="content" source="../media/7-website-success.png" alt-text="Screenshot of the Contoso video rendering service website.":::
