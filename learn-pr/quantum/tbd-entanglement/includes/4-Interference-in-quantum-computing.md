@@ -55,7 +55,7 @@ And we used that state because the probabilities of measuring **0** and **1** wh
 
 $$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$$
 
-Notice the minus sign. We can check that for $\ket{\psi{2}}$ the probabilities of measuring **0** and **1** are also $\frac12$, since $\left|-\frac1{\sqrt2}\right|^2=\frac12$. Then, what is the meaningful difference between $\ket{\psi_1}$ and $\ket{\psi_2}$? The difference is the relative phase between the states in each superposition.
+Notice the minus sign. We can check that for $\ket{\psi_2}$ the probabilities of measuring **0** and **1** are also $\frac12$, since $\left|-\frac1{\sqrt2}\right|^2=\frac12$. Then, what is the meaningful difference between $\ket{\psi_1}$ and $\ket{\psi_2}$? The difference is the relative phase between the states in each superposition.
 
 This difference of phase has implications when we superpose this states. Let's superpose $\ket{\psi_1}$ and $\ket{\psi_2}$ to see what happens.
 

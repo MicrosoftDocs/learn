@@ -30,10 +30,10 @@ have zero probability amplitude, and therefore we can't observe them if the
 register is in this superposition. Then the second qubit always gives the same
 result as the measurement of the first qubit. This means that by measuring one
 qubit we immediately know the state of the other without having to measure it.
-We say that the measurement outcomes are correlated and the qubits
+We say that the measurement outcomes are correlated and the qubits are
 **entangled**.
 
-It is possible to manipulate this states with different operations so that
+It is possible to manipulate these states with different operations so that
 advantageous correlations still exist between both qubits. This correlations are
 proven to be stronger than could ever exists between classical bits.
 
