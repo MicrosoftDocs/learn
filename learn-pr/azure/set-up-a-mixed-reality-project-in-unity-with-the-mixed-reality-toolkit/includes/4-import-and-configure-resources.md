@@ -24,7 +24,7 @@ Some MRTK prefabs and assets require TextMesh Pro. TextMesh Pro is Unity's defau
 
 ## MRTK Unity Foundation Package
 
-MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found on the [MRTK Releases](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases) page. The **Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage** is the only **required** package that must be downloaded, imported and configured to use MRTK with your project. This package includes the core components required to create a mixed reality application.
+MRTK provides four MRTK Unity packages which can be imported into your Unity project. The latest version of the packages can be found on the MRTK Releases page. The **Microsoft.MixedRealityToolkit.Unity.Foundation.unitypackage** is the only **required** package that must be downloaded, imported and configured to use MRTK with your project. This package includes the core components required to create a mixed reality application.
 
 After MRTK is added to the scene and configured, two new objects are added to the Scene hierarchy window:
 
