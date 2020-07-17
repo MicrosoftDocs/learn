@@ -29,7 +29,7 @@ units:
 - learn.azure.debug-nodejs.1-introduction
 - learn.azure.debug-nodejs.2-debugger
 - learn.azure.debug-nodejs.3-run-your-code-step-by-step
-- learn.azure.debug-nodejs.4-use-builtin-debugger
+- learn.azure.debug-nodejs.4-use-built-in-debugger
 - learn.azure.debug-nodejs.5-analyze-your-program-state
 - learn.azure.debug-nodejs.6-use-vs-code-debugger
 - learn.azure.debug-nodejs.7-knowledge-check
