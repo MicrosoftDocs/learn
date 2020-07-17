@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.data-manipulate-clean.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to manipulating and cleaning data for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
