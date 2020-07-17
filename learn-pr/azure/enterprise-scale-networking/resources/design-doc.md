@@ -79,7 +79,7 @@ Evaluate options for network topology and connectivity.
     - Connectivity to the public Internet
     - Connectivity to PaaS services
 
-1. **Knowledge check**
+   **Knowledge check**
     
     - Determine how to connect to Azure
     - Determine how to connect to the public Internet
