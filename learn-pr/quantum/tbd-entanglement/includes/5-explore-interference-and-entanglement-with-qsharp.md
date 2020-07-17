@@ -284,4 +284,4 @@ the parameters of the output and more estimation tools, you can read [the offici
 
 In the next unit, we are going to wrap up everything and learn how can we
 exploit interference and entanglement to outperform classical computers with the
-simple Deutch-Jozsa algorithm.
+simple Deutsch-Jozsa algorithm.
