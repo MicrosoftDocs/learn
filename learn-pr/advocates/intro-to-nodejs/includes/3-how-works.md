@@ -1,14 +1,18 @@
 As you learned in the previous section, Node.js is a wrapper around a JavaScript engine called V8. This means that Node.js is a  "JavaScript runtime". It can interpret and run JavaScript code outside the browser, on the host machine.
 This means that Node.js has direct access to the operating system I/O, filesystem, network, etc. But how does Node.js handle incoming tasks? Let's find out.
 
-Node.js is based on a "single threaded event loop model" architecture, which allows Node.js to handle multiple concurrent operations (operations that can be executed at the same time) in an efficient way:
+Node.js is based on a "single threaded event loop model" architecture, which allows Node.js to handle multiple concurrent operations (operations that can be executed at nearly the same time) in an efficient way:
 
 - single threaded: JavaScript has only one call stack and can do only one thing at a time.
 - event loop: executes the code, collect and process events, and execute the next subtasks from the event queue.
 
 A "thread" is a single sequence of programmed instructions that can be managed independently by the operating system.
 
-The name "event loop" is simply a way to describe the implementation of the "busy-waiting" mechanism that waits synchronously for a message to arrive and process it:
+I/O operations in Node.js, such as reading or writing to a file on the disk, or doing a network call to a remote server, are "blocking operations". A blocking operation would block all the subsequent tasks. When the operation is finished, then the next one can proceed.
+
+A non-blocking model would mean that we can execute multiple I/O operations at the same time. This is made possible thanks to the event loop.
+
+The name "event loop" is simply a way to describe the implementation of the "busy-waiting" mechanism that waits synchronously for a message to arrive and process it. We could illustrate such an implementation as follow:
 
 ```js
 while (queue.wait()) {
@@ -16,9 +20,7 @@ while (queue.wait()) {
 }
 ```
 
-I/O operations in Node.js, such as reading or writing to a file on the disk, or doing a network call to a remote server, are "blocking operations". A blocking operation would block all the subsequent tasks. When the operation is finished, then the next one can proceed.
-
-A non-blocking model would mean that we can execute multiple I/O operations at the same time. This is made possible thanks to the event loop.
+In Node, concurrency refers to the ability of the event loop to perform JavaScript callback functions after other work has been completed.
 
 ## Node.js architecture
 
