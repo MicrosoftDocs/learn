@@ -14,7 +14,7 @@ Quantum computers are controllable quantum mechanical devices that exploit the p
 quantum physics to perform computations. And, like every quantum mechanical
 system, can be described with the Schrödinger equation:
 
-$$\hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$
+$$i \hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$
 
 Don't worry if you don't understand every term in this equation, fortunately,
 you don't need to in order to learn quantum computing. In practice, nobody
