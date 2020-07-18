@@ -1,15 +1,14 @@
+To begin with this module, you'll create an initial AKS deployment of the simplified version of eShopOnContainers with a simple public IP over HTTP. This step is mostly just running a script that usually needs no attention so, once you start the script, you can begin the next step, to review some key concepts.
 
-To begin with this module you'll create an initial AKS deployment of the simplified version of eShopOnContainers with a simple public IP over HTTP. This step is mostly just running a script that usually needs no attention so, once you start the script, you can begin the next step, to review some key concepts.
-
-To create an AKS cluster with a starter version of eShop-Learn complete the following steps:
+Complete the following steps to create an AKS cluster with a starter version of *eShop-Learn*:
 
 1. Fork the repo <https://github.com/dotnet-architecture/eShop-Learn> in your GitHub account.
 
-2. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal.
+1. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal:
 
     ![](../media/open-azure-cloud-shell.png)
 
-3. Create the base source directory
+1. Create the base source directory:
 
     ```bash
     cd ~/clouddrive
@@ -17,7 +16,7 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
     cd source
     ```
 
-4. Clone your repo
+1. Clone your GitHub repository:
 
     ```bash
     git clone https://github.com/{your-github-account}/eShop-Learn.git
@@ -32,19 +31,19 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
     git config --global credential.helper 'cache --timeout=7200'
     ```
 
-5. Go to the module #5 folder - **NOTE - This should be changed to the final module path**
+1. Go to the module #5 folder - **NOTE - This should be changed to the final module path**:
 
     ```bash
     cd ~/clouddrive/source/module-05-devops
     ```
 
-6. Start VS Code online, so it's easier for you to look at the scripts or code
+1. Launch the Azure Cloud Shell editor, so it's easier for you to look at the scripts or code:
 
     ```bash
     code .
     ```
 
-7. Run the quickstart script:
+1. Run the quickstart script:
 
     ```bash
     cd deploy/k8s
@@ -53,9 +52,9 @@ To create an AKS cluster with a starter version of eShop-Learn complete the foll
 
     You can change the **resource group** and **location** if it suits you better.
 
-When the script finishes you should see something like this:
+When the script finishes, you should see something like this:
 
-```txt
+```console
 Helm charts deployed
 NAME                            NAMESPACE       REVISION        UPDATED                                 STATUS         CHART                    APP VERSION
 eshoplearn-backgroundtasks      default         1               2020-06-10 17:14:34.2354515 +0100 BST   deployed       backgroundtasks-0.1.0    1.0.0
@@ -102,24 +101,26 @@ You can begin exploring these services (when ready):
 - Web SPA application       : http://51.124.84.102/
 ```
 
-> **NOTE**:
+> [!NOTE]
+> You might miss the above screen if a problem occurs, such as a session timeout. The relevant information can be retrieved with the following command:
 >
-> If you miss the above screen because the session timed out or any other reason, you can get all the relevant information with this command: \
-> `cat ~/clouddrive/source/deploy-application-results.txt`
+> ```bash
+> cat ~/clouddrive/source/deploy-application-results.txt
+> ```
 
-A little while after the `seq` container becomes ready (1/1) you should be able to check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh` where you'll see all the transient errors that occur during the application startup, until they stop and all services are up and running.
+Shortly after the `seq` container becomes ready (`1/1`), you should be able to check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh`. You'll see all the transient errors that occur during the app startup, until they stop and all services are up and running.
 
 ![](../media/startup-errors-logging.png)
 
-You can also check the general application status at `http://###.###.###.###/webstatus/` until all health icons are green.
+You can also check the general app status at `http://###.###.###.###/webstatus/` until all health icons are green.
 
 ![](../media/eshop-learn-webstatus.png)
 
-All the services should be up and running in less than five minutes and then you should be able to browse to the home page and login using the credential in the login page.
+All the services should be running in less than five minutes. Then you can browse to the home page and log in using the credential in the login page.
 
 ![](../media/home-page.png)
 
-## Discount Coupon features
+## Discount coupon features
 
 - The user can apply a discount coupon code during the checkout (**DISC-##**, where ## is the discount amount to the order total. For $5, $10, $15, $20, $25, and $30).
 - The coupon service must confirm that the coupon is available and return the discount amount (REST API).
