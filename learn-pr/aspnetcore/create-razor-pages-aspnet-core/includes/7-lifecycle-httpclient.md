@@ -91,7 +91,7 @@ services.AddHttpClient<ProductService>(config => {
 });
 ```
 
-The `BaseAddress` URI that the `HttpClient` instance will use for all requests to the web API are set in the following `ProductService` configuration entry in the *:::no-loc text="appsettings.json":::* file:
+The `BaseAddress` URI that the `HttpClient` instance will use for all requests to the web API are set in a `ProductService` configuration entry in the *:::no-loc text="appsettings.json":::* file, such as in the following example:
 
 ```json
   "ProductService": {
