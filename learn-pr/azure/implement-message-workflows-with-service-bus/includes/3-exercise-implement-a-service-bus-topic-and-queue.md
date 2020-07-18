@@ -71,10 +71,10 @@ Follow these steps:
 
 1. In the list of topics, click **salesperformancemessages**, and then click **+ Subscription**.
 
-1. In the **Name** text box, type **Americas**, and then click **Create**.
+1. Enter **Americas** for the **Name**, then **100** for the **Max delivery count**, and then click **Create**.
 
 1. Click **+ Subscription**.
 
-1. In the **Name** text box, type **EuropeAndAfrica**, and then click **Create**.
+1. Enter **EuropeAndAfrica** for the **Name**, then **100** for the **Max delivery count**, and then click **Create**.
 
 You have built the infrastructure required to use Service Bus to increase the resilience of your sales force distributed application. You have created a queue for messages about individual sales and a topic for messages about sales performance. The topic includes multiple subscriptions because messages sent to that topic can be delivered to multiple recipient web services around the world.
