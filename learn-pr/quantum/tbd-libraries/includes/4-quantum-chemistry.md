@@ -1,3 +1,7 @@
+Although of the quantum chemistry library's functionality is built around using Q# with a host program (e.g. importing large molecular structure files and transforming them into a form for input to a Q# operation), we will continue to use Q# from the command-line in this module.
+As such, we will demonstrate a small example of such an application, where the molecular structure is small and straightforward to implement by hand, noting where the host program would take care of things.
+
+-----------------------------------
 Overview of fermionic Hamiltonians with interactions, presenting the general eqs *briefly* but always immediately turning to the equation as it looks for molecular hydrogen. 
 
 - atomic orbitals: spatial and spin components
