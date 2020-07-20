@@ -12,12 +12,15 @@ You'll run all of the commands using the integrated Cloud Shell to your right. Y
 > In PowerShell in the Azure Cloud Shell, you can use the PowerShell Az module or the Azure CLI. In this activity, you'll explore the Azure CLI, but there are similar commands available for the PowerShell Az module.  
 
 1. You can configure a default resource group and Azure SQL Database logical server, so you don't have to specify with every `az` command. Run the following commands to set some variables.
- 
+
     ```powershell
     $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
     $logical_server = $server.ServerName
-    $databaseName = Get-AzureRmSqlDatabase -ResourceGroupName $resourceGroup -ServerName $logical_server | Where DatabaseName -like Adventure*
+    $databaseName = Get-AzureRmSqlDatabase `
+                        -ResourceGroupName $resourceGroup `
+                        -ServerName $logical_server `
+                        | Where DatabaseName -like Adventure*
     $databaseName = $databaseName.DatabaseName
     ```
 
@@ -33,7 +36,7 @@ You'll run all of the commands using the integrated Cloud Shell to your right. Y
     az configure --list-defaults
     ```
 
-1. Now that you've got your details plugged in, let's see what you can do with the Azure CLI. Run the following command to show all databases in the Azure SQL Database logical server.
+1. Now that you've got these variables and defaults configured, let's see what you can do with the Azure CLI. Run the following command to show all databases in the Azure SQL Database logical server.
 
     ```azurecli
     az sql db list
@@ -86,7 +89,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     GO 10
     ```
 
-    After 10 trials, I had an average wait time on server replies of `46.6000`, depending on your internet connection, your results will vary. Make a note of the time you observe.  
+    After 10 trials, I had an average wait time on server replies of `46.6000`. Depending on your internet connection, your results will vary. Make a note of the time you observe.  
 
 4. What if we want to make everything `Redirect` so we can attempt to achieve reduced latency?
 
