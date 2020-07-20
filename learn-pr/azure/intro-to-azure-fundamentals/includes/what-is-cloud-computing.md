@@ -1,9 +1,8 @@
 If you've ever wondered, "What is cloud computing?", it is the delivery of computing services - including servers, storage, databases, networking, software, analytics, and intelligence over the Internet ("the cloud"). Cloud computing offers faster innovation, flexible resources, and economies of scale.
 
-> [!NOTE]
->
-> TODO: We need some images and perhaps a video. We *could* steal what's available in the existing [What is Azure?](https://docs.microsoft.com/learn/modules/welcome-to-azure/2-what-is-azure) unit.
->
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/What-is-Cloud-Computing/player?format=ny]
+
+## How expensive is cloud computing?
 
 Cloud computing is the delivery of computing services over the Internet using a *pay-as-you-go pricing* model. You typically pay only for cloud services you use, which helps you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change. To put that another way, cloud computing is a way to rent compute power and storage from someone else's data center. You can treat cloud resources like you would your resources in your own data center. When you're done using them, you give them back. You're billed only for what you use.
 
@@ -28,6 +27,8 @@ To power your services and deliver innovative and novel user experiences more qu
 - Speech recognition and other cognitive services that help make your application stand out from the crowd.
 - Analytics services that enable you to make sense of telemetry data coming back from your software and devices.
 
+## Cloud computing advantages
+
 There are several benefits that a cloud environment has over a physical environment. For example, cloud-based applications achieve a high rate of availability through a myriad of related strategies:
 
 - **Scalability** - applications in the cloud can be scaled two ways:
@@ -43,16 +44,6 @@ There are several benefits that a cloud environment has over a physical environm
 
 - **Disaster Recovery** - by taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event that disaster should occur
 
-## Public, Private, and Hybrid clouds
-
-There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
-
-| Deployment Model | Description |
-| --- | --- |
-| <nobr>**Public cloud**</nobr> | Services are offered over the public internet and available to anyone who wants to purchase them. Cloud resources - such as servers and storage - are owned and operated by a third-party cloud service provider, and delivered over the internet. |
-| <nobr>**Private cloud**</nobr> | A private cloud consists of computing resources used exclusively by users from one business or organization. A private cloud can be physically located at your organization's on-site datacenter, or it can be hosted by a third-party service provider. |
-| <nobr>**Hybrid cloud**</nobr> | A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them. |
-
 ## PaaS, IaaS, and SaaS
 
 If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibility that a cloud provider and cloud tenent are responsible for.
@@ -66,3 +57,18 @@ If you've been around cloud computing for a while, you've probably seen these ac
 The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenent.
 
 ![Shared responsiblities chart for cloud providers and cloud tenents.](../media/shared-responsibility.png)
+
+## Public, Private, and Hybrid clouds
+
+There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
+
+| Deployment Model | Description |
+| --- | --- |
+| <nobr>**Public cloud**</nobr> | Services are offered over the public internet and available to anyone who wants to purchase them. Cloud resources - such as servers and storage - are owned and operated by a third-party cloud service provider, and delivered over the internet. |
+| <nobr>**Private cloud**</nobr> | A private cloud consists of computing resources used exclusively by users from one business or organization. A private cloud can be physically located at your organization's on-site datacenter, or it can be hosted by a third-party service provider. |
+| <nobr>**Hybrid cloud**</nobr> | A hybrid cloud is a computing environment that combines a public cloud and a private cloud by allowing data and applications to be shared between them. |
+
+The following image illustrates several of the cloud computing concepts that are presented in this unit. In this example, several factors are demonstrated when you are considering where to deploy a database server in a Hybrid cloud environment: as your resources move from on-premisis to off-premisis, your costs are reduced, and your administration requirements decrease.
+
+![Illustration showing the cloud computing continuum.](../media/cloud_computing_continuum.png)
+
