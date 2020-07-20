@@ -2,22 +2,24 @@ In this exercise, you'll see how to review and manage your firewall rules using 
 
 ## Securing your network
 
-During deployment of Azure SQL Database, the script used selected **Allow Azure services and resources access to this server** to **Yes**. By leaving this **Yes**, you're allowing any resource from any region or subscription the possibility to access your resource. If you can, switching it to **No** is the most secure configuration of the public endpoint, because it will block all connections/networks apart from ones you've added. In this exercise, you'll see how to view and edit your firewall rules. Setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). Some alternative methods for securing your network are provided in a demonstration video that follows the exercise.  
+During deployment of Azure SQL Database, the script you ran configured **Allow Azure services and resources access to this server** to **Yes**. By leaving this **Yes**, you're allowing any resource from any region or subscription the possibility to access your resource. If you can, switching it to **No** is the most secure configuration of the public endpoint, because it will block all connections/networks apart from ones you've added. 
+
+In this exercise, you'll see how to view and edit your firewall rules. Setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections which can sometimes have dynamic IP addresses. Some alternative methods for securing your network are provided in a demonstration video that follows the exercise.  
 
 ### Part 1: Managing firewall rules in the Azure portal
 
-1. Navigate to the Azure portal, specifically to your Azure SQL Database logical **server**.
+1. Navigate to the Azure portal, and find your Azure SQL Database logical server.
 
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-    Select **Firewalls and virtual networks** under **Security** from the left-hand menu.  
+1. Select **Firewalls and virtual networks** under **Security** from the menu.  
 
     :::image type="content" source="../media/4-firewall-virtual-network.png" alt-text="Navigate to firewalls and virtual networks":::  
 
-1. Switch **Allow Azure services and resources to access this server** to **No**. During deployment, you should have added your Client IP address already, but if one of the Rules does not match your Client IP displayed, select **Add Client IP**.  
+1. Select **No** for **Allow Azure services and resources to access this server**. During deployment, you should have added your Client IP address already, but if one of the Rules does not match your Client IP displayed, select **Add Client IP**.  
 
-1. Finally, select **Save**. You can select **Overview** in the left-hand menu to navigate back to the overview of your database.  
+1. Select **Save**. You can select **Overview** in the left-hand menu to navigate back to the overview of your database.  
 
 1. To confirm you still have access from your local machine, navigate to SSMS and refresh your connection to the Azure SQL Database logical server. If no errors occur, you have successfully configured access to your Azure SQL Database logical server for your IP address only.  
 
@@ -45,7 +47,7 @@ You can also use commands `az sql server firewall-rule` to create, delete, and v
 
 1. Now that you're set up, you can list your server's firewall settings with the following command:  
 
-    ```powershell
+    ```azurecli
     az sql server firewall-rule list -g <rgn>Sandbox resource group name</rgn> -s $logical_server
     ```
 
