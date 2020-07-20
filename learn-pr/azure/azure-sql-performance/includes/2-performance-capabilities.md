@@ -1,6 +1,6 @@
 Let's start by looking at some of the performance capabilities of Azure SQL as compared to SQL Server.
 
-Since Azure SQL Database and Managed Instance are based on the SQL Server database engine, most of the capabilities that come with SQL Server are also available with Azure SQL. There are a few capabilities that have an impact on the performance of your databases that you should consider when configuring and managing Azure SQL including maximum capacities, indexes, In-Memory OLTP, partitions, SQL Server 2019 enhancements, and Intelligent Performance capabilities.
+Since Azure SQL Database and Managed Instance are based on the SQL Server database engine, most of the capabilities that come with SQL Server are also available with Azure SQL. There are a few capabilities that have an impact on the performance of your databases that you should consider when deploying and configuring Azure SQL including maximum capacities, indexes, In-Memory OLTP, partitions, SQL Server 2019 enhancements, and Intelligent Performance capabilities.
 
 ## Memory, CPU, and I/O capacities
 
@@ -25,7 +25,7 @@ Indexes are often critical to query performance for SQL Server and that is not d
 In-Memory OLTP is a capability for transaction latency sensitive applications, such as applications that involve a high number of concurrent users modifying data. Here are important points related to In-Memory OLTP and Azure SQL:
 
 - Memory optimized tables are only available in Business Critical Tiers.
-- The memory optimized FILEGROUP is pre-created in Azure SQL Database and Managed Instance when a database is created.
+- The memory optimized FILEGROUP is pre-created in Azure SQL Database and Managed Instance when a database is created (even for General Purpose tiers).
 - The amount of memory for memory optimized tables is a percentage of the vCore dependent memory limit.
 
 ## Partitions

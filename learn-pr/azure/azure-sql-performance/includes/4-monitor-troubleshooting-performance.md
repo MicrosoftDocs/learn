@@ -14,11 +14,11 @@ Azure SQL provides the same DMV infrastructure as with SQL Server with a few dif
 
 ### Extended Events
 
-Azure SQL provides the same Extended Events infrastructure as with SQL Server with a few differences. Extended Events is a method to trace key events of execution within SQL Server that powers Azure SQL. For performance, extended allows you to trace the execution of individual queries. Learn more details about Extended Events with Azure SQL later in this unit.
+Azure SQL provides the same Extended Events infrastructure as with SQL Server with a few differences. Extended Events is a method to trace key events of execution within SQL Server that powers Azure SQL. For performance, extended events allow you to trace the execution of individual queries. Learn more details about Extended Events with Azure SQL later in this unit.
 
 ### Lightweight Query Profiling
 
-Lightweight Query Profiling a capability to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems vs using tools like Extended Events to trace query performance. Lightweight Query Profiling is accessed through DMVs and is on by default for Azure SQL just like SQL Server 2019.
+Lightweight Query Profiling is a capability to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems vs using tools like Extended Events to trace query performance. Lightweight Query Profiling is accessed through DMVs and is on by default for Azure SQL just like SQL Server 2019.
 
 ### Query Plan Debugging
 
@@ -26,7 +26,7 @@ In some situations, you may need additional details about query performance for 
 
 ### Query Store
 
-Query Store is a historical record of performance execution for queries stored in the user database. Query Store is on by default for Azure SQL and is used to provide capabilities such as Automatic Plan Correction and Automatic Tuning. SQL Server Management Studio (SSMS) reports for Query Store are available for Azure SQL. These reports can be used to find Top Resource Consuming queries including query plan differences and Top Wait Types to look at resource wait scenarios.
+Query Store is a historical record of performance execution for queries stored in the user database. Query Store is on by default for Azure SQL and is used to provide capabilities such as Automatic Plan Correction and Automatic Tuning. SQL Server Management Studio (SSMS) reports for Query Store are available for Azure SQL. These reports can be used to find top resource consuming queries including query plan differences and top wait types to look at resource wait scenarios.
 
 ### Performance Visualizations
 
@@ -57,11 +57,11 @@ There are a few DMVs worth calling out you will need to solve certain performanc
 - **sys.dm_io_virtual_file_stats** is important for Azure SQL since you don't have direct access to operating system metrics for I/O performance per file.
 - **sys.dm_os_performance_counters** is available for both Azure SQL Database and Managed Instance to see SQL Server common performance metrics. This can be used to view SQL Server Performance Counter information that is typically available in Performance Monitor.
 - **sys.dm_instance_resource_governance** can be used to view resource limits for a Managed Instance. You can view this information to see what your expected resource limits should be without using the Azure portal.
-- **sys.dm_user_db_resource_governance** can be used to see common resource limits per the deployment option, service tier, and size for your Azure SQL Database deployment. You can view this information to see what your expected resource limits should be without using th Azure portal.
+- **sys.dm_user_db_resource_governance** can be used to see common resource limits per the deployment option, service tier, and size for your Azure SQL Database deployment. You can view this information to see what your expected resource limits should be without using the Azure portal.
 
 ### DMVs for deep troubleshooting
 
-These DMVs provide deeper insight into resource limits and resource governance for Azure SQL. They are not meant to be used for common scenarios but might be helpful when looking deep into a complex performance problems. Consult the documentation for all the details of these DMVs:
+These DMVs provide deeper insight into resource limits and resource governance for Azure SQL. They are not meant to be used for common scenarios but might be helpful when looking deep into complex performance problems. Consult the documentation for all the details of these DMVs:
 
 - **sys.dm_user_db_resource_governance_internal**
 - **sys.dm_resource_governor_resource_pools_history_ex**
@@ -79,7 +79,10 @@ Extended Events can be used for Azure SQL Database just like SQL Server by creat
 - File, ring_buffer, and counter targets are supported
 - File targets are supported with Azure Blob Storage since you don't have access to the underlying operating system disks.
 
-You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. Note that the ability with SSMS to View Live Data is not available for Azure SQL Database.
+You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. 
+
+> [!NOTE]
+> Note that the ability with SSMS to View Live Data is not available for Azure SQL Database.
 
 It is important to know that any extended events fired for your sessions are specific to your database and not across the logical server.
 
@@ -91,7 +94,7 @@ Extended Events can be used for Azure SQL Managed Instance just like SQL Server 
 - File targets are supported with Azure Blob Storage since you don't have access to the underlying operating system disks.
 - Some specific events are added for Managed Instance to trace events specific to the management and execution of the instance.
 
-You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. Note that the ability with SSMS to View Live Data is supported for Managed Instance.
+You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. The ability with SSMS to View Live Data is supported for Managed Instance.
 
 ## Performance Scenarios for Azure SQL
 
@@ -99,7 +102,7 @@ In order to decide how to apply monitoring and troubleshooting performance tools
 
 ### Common Performance Scenarios
 
-A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a Resource). This is a way to "divide and conquer" a performance problem for SQL which can often be vague (i.e. "it is slow").
+A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). This is a way to "divide and conquer" a performance problem for SQL which can often be vague (i.e. "it is slow").
 
 The following diagram shows a common decision tree to determine if a SQL performance issue is running or waiting and how to use common performance tools to determine the cause and solution.
 
@@ -183,7 +186,7 @@ There are some performance scenarios, both running and waiting, that are specifi
 
 #### Log governance
 
-Azure SQL can enforce resource limits on transaction log usage called *log rate governance*. This enforcement is often needed to ensure resource limits and to meet promised SLA. Log governance may be seen from the following types of waits:
+Azure SQL can enforce resource limits on transaction log usage called *log rate governance*. This enforcement is often needed to ensure resource limits and to meet promised SLA. Log governance may be seen from the following wait types:
 
 - LOG_RATE_GOVERNOR - waits for Azure SQL Database
 - POOL_LOG_RATE_GOVERNOR - waits for Elastic Pools
@@ -212,8 +215,6 @@ Even though these waits may not slow down your application you may not be expect
 
 #### Hyperscale
 
-The Hyperscale architecture can result in some unique performance wait types that are prefixed with **RBIO**
-
-In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
+The Hyperscale architecture can result in some unique performance wait types that are prefixed with **RBIO**. In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
 
 You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL using the tools and knowledge you have gained in this unit.
