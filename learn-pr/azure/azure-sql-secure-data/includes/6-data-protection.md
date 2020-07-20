@@ -6,11 +6,9 @@ Encrypted connections are forced by Azure SQL Database, with the option to addit
 
 Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new Azure SQL Databases, and can be configured for all deployment options via a switch in the Azure portal:  
 
-
 :::image type="content" source="../media/6-tde-enabled.png" alt-text="Confirm TDE is on":::  
 
 At the server or instance level, you can also choose to use a Service-managed key or you can bring your own key (BYOK). The default is to let the Azure service manage your key. Azure will automatically generate a key to encrypt your databases, and manage the key rotations. You've seen how to do this with the Azure portal, but you can also use PowerShell, Azure CLI, T-SQL, or REST APIs.
-
 
 :::image type="content" source="../media/6-tde-key.png" alt-text="Server view of TDE options":::  
 
@@ -23,7 +21,6 @@ One important note is Always Encrypted with secure enclaves is not yet available
 ## Dynamic Data Masking
 
 On certain occasions, there is data that you will want to be masked or modified so unprivileged users cannot see the data, but can still perform queries including that data. This capability is supported just like in SQL Server, however there are additional capabilities and views in the Azure portal that allow you to see recommendations of fields to mask.
-
 
 :::image type="content" source="../media/6-mask-recommendations.png" alt-text="DDM recommendations in Azure portal":::
 
@@ -49,7 +46,6 @@ GRANT UNMASK TO DataOfficers
 ```
 
 Depending on who is querying, the results would be as follows.
-
 
 :::image type="content" source="../media/6-mask-example.png" alt-text="Example of users with Unmask access":::
 
