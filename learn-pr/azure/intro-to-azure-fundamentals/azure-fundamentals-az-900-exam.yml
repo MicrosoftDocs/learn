@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-fundamentals.azure-fundamentals-az-900-exam
+title: Azure Fundamentals AZ-900 Exam
+metadata:
+  title: Azure Fundamentals AZ-900 Exam
+  description: TODO
+  ms.date: 09/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/azure-fundamentals-az-900-exam.md)]
