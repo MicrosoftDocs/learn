@@ -1,0 +1,74 @@
+Witha  basic index and a client that can submit queries and display results, you can achieve an effective search solution. However, Azure Cognitive Search supports several ways to enhance an index to provide a better user experience. This topic describes some of the ways in which you can extend your search solution.
+
+## Search-as-you-type
+
+By adding a *suggester* to an index, you can enable two forms of search-as-you-type experience to help users find relevant results more easily:
+
+- *Suggestions* - retrieve and display a list of suggested results as the user types into the search box, without needing to submit the search query.
+- *Autocomplete* - complete partially typed search terms based on values in index fields.
+
+To implement one or both of these capabilities, create or update an index, defining a suggester for one or more fields.
+
+After you've added a suggestor, you can use the **suggestion** and **autocomplete** REST API endpoints or the .NET **DocumentsOperationsExtensions.Suggest** and **DocumentsOperationsExtensions.Autocomplete** methods to submit a partial search term and retrieve a list of suggested results or autocompleted terms to display in the user interface.
+
+## Custom scoring and result boosting
+
+--
+
+## Synonyms
+
+--
+
+## Enhancing the Margie's Travel index
+
+:::zone pivot="csharp"
+
+1. In the **Terminal** pane, select the bash terminal for the **C-Sharp/search-client** folder. If you have closed this terminal, right-click (CTRL+click if using a Mac) the **search-client** folder and select **Open in Terminal**.
+2. In the terminal for the **search-client** folder, enter the following command:
+    ```bash
+    dotnet run
+    ```
+3. Follow the link for the `https://localhost:5000/` address to open the web site in a new browser tab. Then in the Margie's Travel website, enter **United Kingdom** into the search box and click **Search**. Then review the results.
+4. Enter **UK** into the search box and click **Search** and review the results. The results are different, even though a user might commonly use "UK" as an alternative term for "United Kingdom". To address this issue, you will add a synonym map to your index.
+5. Leaving the Margie's Travel website running, switch to the Codespace tab in your browser and in the **C-Sharp/create-index** folder, open the **Program.cs** file and in the **Main** function, uncomment the following lines of code (under the comment `// Add synonyms`):
+    ```C#
+    Console.WriteLine("Adding synonyms...");
+    AddSynonyms(searchClient, index)
+    ```
+2. Review the code in the **AddSymonyms** function, which createsa synonym map and applies it to the **content** field of the index.
+3. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
+4. In the terminal for the **create-index** folder, enter the following command:
+    ```bash
+    dotnet run
+    ```
+5. Wait while the program runs, updating the data source, recreating the index, and indexer, and finally adding a synonym map to the content field.
+    ```
+10. After the index has been updated, switch back to the Margie's Travel website tab and search for **UK**. The results this time should include documents in which the term *United Kingdom* is highlighted.
+11. Close the browser tab containing the Margie's Travel web site and return to the Codespace tab. Then in the terminal for the **search-client** folder (where the dotnet process is running), enter CTRL+C to stop the app.
+
+:::zone-end
+
+:::zone pivot="python"
+
+1. In the **Terminal** pane, select the bash terminal for the **search-client** folder. If you have closed this terminal, right-click (CTRL+click if using a Mac) the **search-client** folder and select **Open in Terminal**.
+2. In the terminal for the **search-client** folder, enter the following command:
+    ```bash
+    flask run
+    ```
+3. Follow the link for the `https://127.0.0.1:5000/` address to open the web site in a new browser tab. Then in the Margie's Travel website, enter **United Kingdom** into the search box and click **Search**. Then review the results.
+4. Enter **UK** into the search box and click **Search** and review the results. The results are different, even though a user might commonly use "UK" as an alternative term for "United Kingdom". To address this issue, you will add a synonym map to your index.
+5. Leaving the Margie's Travel website running, switch to the Codespace tab in your browser and in the **create-index** folder, open the **synonyms.json** file. This file contains a JSON definition for a synonym map that includes alternative terms for the United States, United Kingdom, and United Arab Emirates.
+6. in the **create-index** folder, open the **updated_index.json** file. This file contains a JSON definition for the index in which the synonym map has been added to the **content** field.
+7. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (CTRL+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
+8. In the terminal for the **create-index** folder, enter the following command to create the synomym map:
+    ```bash
+    python3 submit-rest.py 'PUT' 'synonymmaps/locationsynonyms' 'synonyms.json'
+    ```
+9. After the synonym map has been created, enter the following command to update the index:
+    ```bash
+    python3 submit-rest.py 'PUT' 'indexes/margies-index' 'updated_index.json'
+    ```
+10. After the index has been updated, switch back to the Margie's Travel website tab and search for **UK**. The results this time should include documents in which the term *United Kingdom* is highlighted.
+11. Close the browser tab containing the Margie's Travel web site and return to the Codespace tab. Then in the Python terminal for the **search-client** folder (where the flask application is running), enter CTRL+C to stop the app.
+
+:::zone-end

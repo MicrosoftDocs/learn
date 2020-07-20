@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-azure-cognitive-search-solution.enhance-index
+title: Enhance the index
+metadata:
+  title: Enhance the index
+  description: "Enhance the index"
+  ms.date: 07/22/2020
+  author: wwlpublish
+  ms.author: cwsuseng
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-python
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-enhance-index.md)]
