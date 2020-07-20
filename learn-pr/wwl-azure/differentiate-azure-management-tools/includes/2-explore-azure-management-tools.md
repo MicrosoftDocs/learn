@@ -6,7 +6,7 @@ You can configure and manage Azure using a broad range of tools and platforms. T
 
 ![Azure icon.](../media/icon-portal.png)
 
-The [Azure portal](https://azure.microsoft.com/features/azure-portal/) is a public website that you can access with any web browser. After you sign in with your Azure account, you can create, manage, and monitor any available Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
+The Azure portal is a public website that you can access with any web browser. After you sign in with your Azure account, you can create, manage, and monitor any available Azure services. You can identify a service you're looking for, get links for help on a topic, and deploy, manage, and delete resources. It also guides you through complex administrative tasks using wizards and tooltips.
 
 The dashboard view provides high-level details about your Azure environment. You can customize the portal view as you need by moving and resizing tiles, displaying particular services of interest, accessing links for help and support, and providing feedback.
 
@@ -52,7 +52,7 @@ az vm create \
 
 ![Cloud Shell icon.](../media/icon-shell.png)
 
-[Azure Cloud Shell](https://azure.microsoft.com/features/cloud-shell/) is a browser-based scripting environment in your portal. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
+Azure Cloud Shell is a browser-based scripting environment in your portal. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell.
 
 A storage account is required to use the Cloud Shell and you will be prompted to create one when accessing the Azure Cloud Shell.
 
@@ -63,7 +63,7 @@ A storage account is required to use the Cloud Shell and you will be prompted to
 
 ![Mobile app icon.](../media/icon-mobile-app.png)
 
-The [Microsoft Azure mobile app](https://azure.microsoft.com/features/azure-portal/mobile-app/) allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
+The Microsoft Azure mobile app allows you to access, manage, and monitor all your Azure accounts and resources from your iOS or Android phone or tablet. Once installed, you can:
 
 +	Check the status and important metrics of your services
 +	Stay informed with notifications and alerts about important health issues
