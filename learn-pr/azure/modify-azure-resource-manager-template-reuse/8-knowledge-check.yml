@@ -37,20 +37,20 @@ quiz:
     - content: "()"
       isCorrect: false
       explanation: "A template expression always starts and ends with brackets: []."
-  - content: "Template expressions can be used what section or sections of the template?" 
+  - content: "Template expressions can be used which section or sections of a template?" 
     choices:
     - content: "The ```variables:{}``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
+      explanation: "Template expressions can be used in any section of an ARM template."
     - content: "The ```parameters:[]``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
-    - content: The ```resources:[]``` section"
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "The ```resources:[]``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
-    - content: The ```outputs:[]``` section"
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "The ```outputs:[]``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
-    - content: All of the above"
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
+      explanation: "Template expressions can be used in any section of an ARM template."
