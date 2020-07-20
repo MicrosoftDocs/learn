@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following is not true about cloud computing?"
+    - content: "Which of the following statements is not true about cloud computing?"
       choices:
         - content: "TODO"
           isCorrect: True
@@ -31,7 +31,7 @@ quiz:
         - content: "TODO"
           isCorrect: false
           explanation: "TODO"
-    - content: "True or False: You need to purchase an Azure account before using an Azure resources."
+    - content: "True or False: You need to purchase an Azure account before using any Azure resources."
       choices:
         - content: "TODO"
           isCorrect: True
@@ -39,7 +39,7 @@ quiz:
         - content: "TODO"
           isCorrect: false
           explanation: "TODO"
-    - content: "True or False: In an Infrastructure-as-a-Service environment, the cloud tenent is responsbile for routine hardware maintenance."
+    - content: "True or False: In an Infrastructure-as-a-Service environment, the cloud tenent is responsible for routine hardware maintenance."
       choices:
         - content: "TODO"
           isCorrect: True

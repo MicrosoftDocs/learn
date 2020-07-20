@@ -1,6 +1,6 @@
 The [AZ-900, Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true), certification exam is designed for candidates looking to demonstrate foundational level knowledge of cloud services and how those services are provided with Microsoft Azure. The exam is intended for candidates with non-technical backgrounds, such as candidates involved in selling or purchasing cloud-based solutions and services. It is also designed for candidates have some involvement with cloud-based solutions and services, as well as candidates with a technical background who have a need to validate their foundational level knowledge around cloud services. Technical IT experience is not required; however, some general IT knowledge or experience would be beneficial.
 
-![Azure Fundamentals AZ-900 Exam Logo](../media/certification-exam.png){ style="display:block;margin-left:auto;margin-right:auto;" }
+![Azure Fundamentals AZ-900 Exam Logo](../media/certification-exam.png)
 
 The AZ-900 exam can be taken as an optional first step in learning concepts about cloud services and how those concepts are exemplified by Microsoft Azure. It can be taken as a precursor to Microsoft Azure or Microsoft cloud services exams. While it would be a beneficial first step in validating foundational level knowledge, taking this exam is not a pre-requisite for taking any other Azure-based certifications. 
 

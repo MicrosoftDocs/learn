@@ -35,7 +35,7 @@ There are several benefits that a cloud environment has over a physical environm
    - *Vertically* - computing capacity can be increased by adding additional RAM or CPUs to a virtual machine
    - *Horizontally* - computing capacity can be increased by adding instances of a resource, such as adding additional virtual machines to your configuration
 
-- **Elasticity** - cloud-based applications can be configured to take advantage of auto-scaling, so your applications will always have the resources they need
+- **Elasticity** - cloud-based applications can be configured to take advantage of autoscaling, so your applications will always have the resources they need
 
 - **Agility** - cloud-based resources can be deployed and configured quickly as your application requirements change
 
@@ -45,7 +45,7 @@ There are several benefits that a cloud environment has over a physical environm
 
 ## Public, Private, and Hybrid clouds
 
-There three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
+There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
 
 | Deployment Model | Description |
 | --- | --- |
@@ -55,7 +55,7 @@ There three deployment models for cloud computing: *public cloud*, *private clou
 
 ## PaaS, IaaS, and SaaS
 
-If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibilty that a cloud provider and cloud tenent are responsible for.
+If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibility that a cloud provider and cloud tenent are responsible for.
 
 | | Definition | Description |
 | --- | --- | --- |
@@ -63,6 +63,6 @@ If you've been around cloud computing for a while, you've probably seen these ac
 | **PaaS** | <nobr>*Platform-as-a-Service*</nobr> | This cloud service model is a managed hosting environment, where the cloud provider manages the virtual machines and networking resources, and the cloud tenent deploys their applications into the managed hosting environment. For example: Azure App Services provides a managed hosting environment where developers can upload their web applications, without having to worry about dealing with the physical hardware and software requirements. |
 | **SaaS** | <nobr>*Software-as-a-Service*</nobr> | In this cloud service model, the cloud provider manages all aspects of the application environment - virtual machines, networking resources, data storage, applications, etc. - and the cloud tenent only needs to provide their data to the application managed by the cloud provider. For example: Microsoft Office 365 provides a fully working version of Microsoft Office that runs in the cloud; all that you need to do is create your content, and Office 365 takes care of everything else. |
 
-The following chart illustrates the various levels of responsiblity between a cloud provider and a cloud tenent.
+The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenent.
 
 ![Shared responsiblities chart for cloud providers and cloud tenents.](../media/shared-responsibility.png)

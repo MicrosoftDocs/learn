@@ -52,7 +52,7 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
 1. **Introduction**
 
-    Microsoft Azure is a cloud computing platform with an ever expanding set of services to help you build solutions to meet your business goals. Azure services range from simple web servies for hosting your business presence in the cloud, to running fully virtualized computers for you to run your custom software solutions. Azure provides a wealth of cloud based services like remote storage, database hosting, centralized account management, and new capabilities like Artificial Intelligence and Internet of Things (IoT).
+    Microsoft Azure is a cloud computing platform with an ever expanding set of services to help you build solutions to meet your business goals. Azure services range from simple web services for hosting your business presence in the cloud, to running fully virtualized computers for you to run your custom software solutions. Azure provides a wealth of cloud-based services like remote storage, database hosting, centralized account management, and new capabilities like Artificial Intelligence and Internet of Things (IoT).
 
     In this module, you'll take an entry level end-to-end look at Azure and its capabilities, which will provide you with a solid foundation for completing the available learning paths for Azure Fundamentals. Additionally, as you learn about Azure, you will also be preparing yourself for the Azure Fundamentals (AZ-900) certification.
 
@@ -115,14 +115,14 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
     - **Scalability** - applications in the cloud can be scaled two ways:
        - *Vertically* - computing capacity can be increased by adding additional RAM or CPUs to a virtual machine
        - *Horizontally* - computing capacity can be increased by adding instances of a resource, such as adding additional virtual machines to your configuration
-    - **Elasticity** - cloud-based applications can be configured to take advantage of auto-scaling, so your applications will always have the resources they need
+    - **Elasticity** - cloud-based applications can be configured to take advantage of autoscaling, so your applications will always have the resources they need
     - **Agility** - cloud-based resources can be deployed and configured quickly as your application requirements change
     - **Geo-distribution** - applications and data can be deployed to regional data centers around the globe, thereby ensuring that your customers always have the best performance in their region
     - **Disaster Recovery** - by taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event that disaster should occur
 
     **Public, Private, and Hybrid clouds**
 
-    There three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
+    There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
 
     | Deployment Model | Description |
     | --- | --- |
@@ -132,7 +132,7 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
     **PaaS, IaaS, and SaaS**
 
-    If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibilty that a cloud provider and cloud tenent are responsible for.
+    If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibility that a cloud provider and cloud tenent are responsible for.
 
     | | Definition | Description |
     | --- | --- | --- |
@@ -140,9 +140,9 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
     | **PaaS** | <nobr>*Platform-as-a-Service*</nobr> | This cloud service model is a managed hosting environment, where the cloud provider manages the virtual machines and networking resources, and the cloud tenent deploys their applications into the managed hosting environment. For example: Azure App Services provides a managed hosting environment where developers can upload their web applications, without having to worry about dealing with the physical hardware and software requirements. |
     | **SaaS** | <nobr>*Software-as-a-Service*</nobr> | In this cloud service model, the cloud provider manages all aspects of the application environment - virtual machines, networking resources, data storage, applications, etc. - and the cloud tenent only needs to provide their data to the application managed by the cloud provider. For example: Microsoft Office 365 provides a fully working version of Microsoft Office that runs in the cloud; all that you need to do is create your content, and Office 365 takes care of everything else. |
 
-    The following chart illustrates the various levels of responsiblity between a cloud provider and a cloud tenent.
+    The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenent.
 
-    ![Shared responsiblities chart for cloud providers and cloud tenents.](../media/shared-responsibility.png)
+    ![Shared responsibilities chart for cloud providers and cloud tenents.](../media/shared-responsibility.png)
    
 1. **What is Microsoft Azure?**
 
@@ -164,10 +164,10 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
     | Azure Benefits | |
     | --- | --- |
-    | **Be future ready** - Continuous innovation from Microsoft supports<br>your development today, and your product visions for tomorrow. | ![Launching rocket ship representing the future.](../media/future.png){ style="width:300px" } |
-    | ![Three slider bars representing choice in your usage needs.](../media/build.png){ style="width:300px" } | **Build on your terms** - You have choices. With a commitment to open source, and support<br>for all languages and frameworks, build how you want, and deploy where you want to. |
-    | **Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge—we'll meet you where you<br>are. Integrate and manage your environments with tools and services designed for hybrid cloud. | ![Brick building datacenter next to a cloud datacenter representing both datacenters working together.](../media/hybrid.png){ style="width:300px" } |
-    | ![Shield over a cloud representing cloud security.](../media/trust.png){ style="width:300px" } | **Trust your cloud** - Get security from the ground up, backed by a team of experts,<br>and proactive compliance trusted by enterprises, governments, and startups. |
+    | **Be future ready** - Continuous innovation from Microsoft supports<br>your development today, and your product visions for tomorrow. | ![Launching rocket ship representing the future.](../media/future.png) |
+    | ![Three slider bars representing choice in your usage needs.](../media/build.png) | **Build on your terms** - You have choices. With a commitment to open source, and support<br>for all languages and frameworks, build how you want, and deploy where you want to. |
+    | **Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge—we'll meet you where you<br>are. Integrate and manage your environments with tools and services designed for hybrid cloud. | ![Brick building datacenter next to a cloud datacenter representing both datacenters working together.](../media/hybrid.png) |
+    | ![Shield over a cloud representing cloud security.](../media/trust.png) | **Trust your cloud** - Get security from the ground up, backed by a team of experts,<br>and proactive compliance trusted by enterprises, governments, and startups. |
 
     **What can I do with Azure?**
 
@@ -185,13 +185,13 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
     To create and use Azure services, you need an Azure subscription. When you are completing modules on Microsoft Learn, most of the time a temporary subscription is created for you, which runs in an environment called the *Microsoft Learn Sandbox*. However, when you are working with your own applications and business needs, you need to create an Azure account, and a subscription will be created for you. Once you have created an Azure account, you are free to create additional subscriptions; for example: your company might use a single Azure account for your business, and separate subscriptions for development, marketing, and sales departments.
 
-    If you're new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. Once you're ready, you can choose to upgrade your free account and create a new subscriptions that enables you to start paying for Azure services you need to use that are beyond the limits of a free account.
+    If you're new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. Once you're ready, you can choose to upgrade your free account and create a new subscription that enables you to start paying for Azure services you need to use that are beyond the limits of a free account.
 
     **How to create an Azure account**
 
     You can purchase Azure access directly from Microsoft by signing up on the [Azure website](https://azure.microsoft.com/), or through a Microsoft representative. You can also purchase Azure access through a Microsoft partner. Cloud Solution Provider partners offer a range of complete managed-cloud solutions for Azure.
 
-    For more information on creating an Azure account, see the [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/){ target="_blank" } learning module.
+    For more information on creating an Azure account, see the [Create an Azure account](https://docs.microsoft.com/learn/modules/create-an-azure-account/) learning module.
 
     **What is the Microsoft Learn Sandbox?**
 
@@ -207,7 +207,7 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
     The [AZ-900, Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true), certification exam is designed for candidates looking to demonstrate foundational level knowledge of cloud services and how those services are provided with Microsoft Azure. The exam is intended for candidates with non-technical backgrounds, such as candidates involved in selling or purchasing cloud-based solutions and services. It is also designed for candidates have some involvement with cloud-based solutions and services, as well as candidates with a technical background who have a need to validate their foundational level knowledge around cloud services. Technical IT experience is not required; however, some general IT knowledge or experience would be beneficial.
 
-    ![Azure Fundamentals AZ-900 Exam Logo](../media/certification-exam.png){ style="display:block;margin-left:auto;margin-right:auto;" }
+    ![Azure Fundamentals AZ-900 Exam Logo](../media/certification-exam.png)
 
     The AZ-900 exam can be taken as an optional first step in learning concepts about cloud services and how those concepts are exemplified by Microsoft Azure. It can be taken as a precursor to Microsoft Azure or Microsoft cloud services exams. While it would be a beneficial first step in validating foundational level knowledge, taking this exam is not a pre-requisite for taking any other Azure-based certifications.
 
@@ -236,11 +236,11 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
     Throughout the Azure Fundamentals Learning Paths, we will be working with a fictional company named *Tailwind Traders*, which manufactures hardware products. For the purposes of discussion, let's suppose that you work as an Information Technology (IT) specialist for the company.
 
-    ![Tailwind Traders Logo](../media/tailwind-traders-logo.png){ style="width:480px;height:128px;display:block;margin-left:auto;margin-right:auto;" }
+    ![Tailwind Traders Logo](../media/tailwind-traders-logo.png)
 
-    Your company currently manages an on-premises datacenter that hosts your company's retail website, and stores that data and streaming video for your applications. Your IT deparment is currently responsible for all of management tasks for your computing hardware and software; for example: your IT team handles the procurement process to buy new hardware, installs and configures software, and deploys everything throughout your datacenter.
+    Your company currently manages an on-premises datacenter that hosts your company's retail website, and stores that data and streaming video for your applications. Your IT department is currently responsible for all of management tasks for your computing hardware and software; for example: your IT team handles the procurement process to buy new hardware, installs and configures software, and deploys everything throughout your datacenter.
 
-    However, these management responsiblities create numerous obstacles for delivering your applications to your users in a timely fashion. As a technology professional, you realize that it would be advantageous to have servers, storage, databases, and other services immediately available when developing and deploying applications. You should be able to click a button to start up a new server or add services to your solutions.
+    However, these management responsibilities create numerous obstacles for delivering your applications to your users in a timely fashion. As a technology professional, you realize that it would be advantageous to have servers, storage, databases, and other services immediately available when developing and deploying applications. You should be able to click a button to start up a new server or add services to your solutions.
 
     As you have seen in the other units of this learning module, your company's needs can be addressed through various cloud-based services. With that in mind, the services that are available through Microsoft Azure can help your company conduct its business more efficiently.
     
@@ -248,13 +248,13 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
 1. **Knowledge Check**
 
-    - Q: Which of the following is not true about cloud computing?
+    - Q: Which of the following statements is not true about cloud computing?
 
     - Q: What is Microsoft Azure?
 
-    - Q: True or False: You need to purchase an Azure account before using an Azure resources.
+    - Q: True or False: You need to purchase an Azure account before using any Azure resources.
 
-    - Q: True or False: In an Infrastructure-as-a-Service environment, the cloud tenent is responsbile for routine hardware maintenance.
+    - Q: True or False: In an Infrastructure-as-a-Service environment, the cloud tenent is responsible for routine hardware maintenance.
 
     - **TODO**: *Need a question about the AZ-900 exam.*
 
