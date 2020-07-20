@@ -123,13 +123,13 @@ Just like in the previous exercise, you will leverage `ostress` to repeatedly qu
 
     In SSMS, create a new query connection (select **File** > **New** > **Database Engine Query**).  
 
-    [!div class="mx-imgBorder"]
-    ![New database engine query](../media/6-new-db-engine-query.png)  
+    
+    :::image type="content" source="../media/6-new-db-engine-query.png" alt-text="New database engine query":::  
 
 1. Using the same way you've been connecting to your Azure SQL Database logical server (either with SQL Auth or Azure AD Auth), select **Options**.  
 
-    [!div class="mx-imgBorder"]
-    ![Options in SSMS](../media/3-connect-azure-sql.png)  
+    
+    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Options in SSMS":::  
 
 1. Select **Connection Properties**, and select **Reset All**. Then, under "Connect to database" select **Browse server** and select your **AdventureWorks-bc** database.  
 
@@ -147,10 +147,10 @@ Just like in the previous exercise, you will leverage `ostress` to repeatedly qu
     SELECT DATABASEPROPERTYEX(DB_NAME(), 'Updateability')
     ```
 
-    [!div class="mx-imgBorder"]
-    ![Read only response](../media/6-read-only.png)
+    
+    :::image type="content" source="../media/6-read-only.png" alt-text="Read only response":::
 
 1. You can optionally re-connect and update the Additional Connection Parameters (replace `ReadOnly` with `ReadWrite`), and confirm you are accessing the read-write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in.
 
-    [!div class="mx-imgBorder"]
-    ![Read write response](../media/6-read-write.png)
+    
+    :::image type="content" source="../media/6-read-write.png" alt-text="Read write response":::
