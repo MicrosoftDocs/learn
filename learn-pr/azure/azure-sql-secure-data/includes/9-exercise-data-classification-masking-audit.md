@@ -1,5 +1,7 @@
 In this exercise, you will learn how to audit users trying to view columns that were marked for data classification. This exercise will combine several of the things you've already learned about in the module, and take those learnings to the next level.
 
+## Configure data classification
+
 1. In the Azure portal, navigate to your Azure SQL Database (not logical server).
 
     > [!div class="nextstepaction"]
@@ -42,6 +44,8 @@ In this exercise, you will learn how to audit users trying to view columns that 
 1. Select **Save**.  
 
 1. Select **Overview** in the left hand menu to navigate back to the overview of your database.
+
+## Retrieve data that is classified and masked
 
 1. Next, you will simulate someone querying the classified columns and explore dynamic data masking in action. Navigate to SSMS and create a new query in your AdventureWorks database.  
 
@@ -114,6 +118,8 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     :::image type="content" source="../media/9-names-2.png" alt-text="SQL query results with mask":::  
 
+## Review audit logs in SSMS
+
 1. As an admin, you may want to review and audit who is accessing the databases and specifically the classified data. Next, you'll take a look at the audit files that are being sent to Azure Blob storage. The first thing you have to do is merge the audit files, in case logs span multiple files. You can do this from SSMS. First, select **File** > **Open** > **Merge Audit Files**.  
 
     :::image type="content" source="../media/9-file-audit.png" alt-text="Open audit files":::  
@@ -158,9 +164,11 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     This merged file can then be exported to an XEL or CSV file (or to a table) for additional analysis. You can also query the Extended Events files using PowerShell.  
 
-1. Analyzing your audit logs will depend on your preference, and the method in Step 5 may be more familiar. In this step, you'll be exposed to querying security logs in the Azure portal with Log Analytics.  
+## Review audit logs in the Azure portal
 
-    In the Azure portal, navigate to your Azure SQL Database. In the left-hand menu, under Security, select **Auditing**. Then select **View audit logs**.  
+Analyzing your audit logs will depend on your preference. Here, you'll be exposed to querying security logs in the Azure portal with Log Analytics.  
+
+1. In the Azure portal, navigate to your Azure SQL Database. In the left-hand menu, under Security, select **Auditing**. Then select **View audit logs**.  
 
     :::image type="content" source="../media/9-view-audit-logs.png" alt-text="Navigate to view audit logs":::  
 
@@ -170,7 +178,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     Feel free to click around and understand what some of the options are.  
 
-1. Click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals.  
+1. Select **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals.  
 
     The default query is querying the category `SQLSecurityAuditEvents`, so while you might use this category now to view security-related incidents, this tool can also be used for querying other Azure logs and categories in Azure Monitor. For this step, you can look for the statements where Bob tried to access sensitive information, and expand the details (click the **`>`**) to get the same information that you saw in SSMS.  
 
