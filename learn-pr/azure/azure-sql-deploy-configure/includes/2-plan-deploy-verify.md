@@ -33,8 +33,7 @@ Once you've completed your pre-deployment planning, it's time to put your plan i
 
 For Azure SQL Database and Azure SQL Managed Instance, there are essentially five panes in the Azure portal to fill in during a deployment.  
 
-> [!div class="mx-imgBorder"]
-> ![Deployment panes for Azure SQL](../media/2-deploy-panes.png)
+:::image type="content" source="../media/2-deploy-panes.png" alt-text="Deployment panes for Azure SQL" border="false":::
 
 Let's dive into a few of these options.
 
