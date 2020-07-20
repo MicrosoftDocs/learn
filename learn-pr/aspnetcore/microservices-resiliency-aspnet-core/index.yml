@@ -9,15 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Implement resiliency in a .NET microservices app
-summary: Learn how to make your application fault-tolerant with minimal impact on the user.
-abstract: | 
+summary: Learn how to make your app fault-tolerant with minimal impact on the user.
+abstract: |
   In this module, you will:
   - Learn key resiliency concepts.
   - Implement failure handling code for HTTP requests in one microservice.
   - Deploy Linkerd onto an AKS cluster to implement an infrastructure-based resiliency solution.
 prerequisites: |
-  - Familiarity C# and ASP.NET Core development.
-  - Access to an Azure subscription with **Owner** privilege.
+  - Familiarity C# and ASP.NET Core development at the intermediate level
+  - Access to an Azure subscription with **Owner** privilege
   - Access to a GitHub account
 iconUrl: https://docs.microsoft.com/../media/learn/module.svg
 levels:
