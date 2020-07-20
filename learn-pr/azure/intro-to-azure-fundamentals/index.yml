@@ -11,7 +11,6 @@ metadata:
 title: Introduction to Azure Fundamentals
 summary: This module introduces you to the basics of Azure and how to get started on the path to completing the AZ-900 exam certification.
 abstract: | 
-  In this module, you will:
   After completing this module, you will be able to:
   - Describe the basic concepts of cloud computing
   - Determine whether Azure is the right solution for their business needs
