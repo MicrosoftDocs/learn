@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.debug-nodejs.5-analyze-your-program-state
+title: Debug with Visual Studio Code
+metadata:
+  title: Debug with Visual Studio Code
+  description: Learn how to use the Visual Studio Code debugger to inspect variables and add watchers during execution.
+  author: sinedied
+  ms.author: yolasors
+  ms.date: 06/04/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-analyze-your-program-state.md)]
