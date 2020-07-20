@@ -94,8 +94,8 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
     Check the **Remember password** box and select **Connect**.  
 
-    [!div class="mx-imgBorder"]
-    ![Connect to SQL Database in SSMS](../media/3-connect-azure-sql.png)  
+    
+    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Connect to SQL Database in SSMS":::  
 
     > [!NOTE]
     > Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
@@ -109,32 +109,32 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
     In the left-hand task menu, under Security, select **Auditing**. Review the options and then select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.  
 
-    [!div class="mx-imgBorder"]
-    ![Database-level auditing blade](../media/3-db-audit.png)  
+    
+    :::image type="content" source="../media/3-db-audit.png" alt-text="Database-level auditing blade":::  
 
     Set **Auditing** to **ON**.  
 
 1. Select **Log Analytics (Preview)** and the **Configure** button.  
 
-    [!div class="mx-imgBorder"]
-    ![Server-level auditing blade](../media/3-server-audit.png)  
+    
+    :::image type="content" source="../media/3-server-audit.png" alt-text="Server-level auditing blade":::  
 
 1. Select **+ Create New Workspace**.  
 
-    [!div class="mx-imgBorder"]
-    ![Create a new workspace](../media/3-new-workspace.png)  
+    
+    :::image type="content" source="../media/3-new-workspace.png" alt-text="Create a new workspace":::  
 
     Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.  
 
-    [!div class="mx-imgBorder"]
-    ![Details for new workspace](../media/3-workspace-details.png)  
+    
+    :::image type="content" source="../media/3-workspace-details.png" alt-text="Details for new workspace":::  
 
     This process may take a few moments to validate and create. You should now see your Log Analytics account.
 
 1. Next, select **Storage**. This option allows you to collect XEvent log files in an Azure Blob storage account. In a later activity, you'll see more on how this differs from Log Analytics. Select **Configure**.  
 
-    [!div class="mx-imgBorder"]
-    ![Configure storage](../media/3-configure-storage.png)  
+    
+    :::image type="content" source="../media/3-configure-storage.png" alt-text="Configure storage":::  
 
     Next, select the subscription you're using for this module as well as the storage account in the resource group with your ID that was created for you (should be *sqlva* + *a random string of letters and numbers*). In this storage account, auditing logs will be saved as a collection of blob files within a container named **sqldbauditlogs**.  
 
@@ -146,19 +146,19 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
 1. After you've configured your options, select **OK**.  
 
-    [!div class="mx-imgBorder"]
-    ![Confirm options and select OK](../media/3-storage-settings.png)  
+    
+    :::image type="content" source="../media/3-storage-settings.png" alt-text="Confirm options and select OK":::  
 
 1. Select **Save**.  
 
-    [!div class="mx-imgBorder"]
-    ![Save Log Analytics details](../media/3-save-workspace.png)  
+    
+    :::image type="content" source="../media/3-save-workspace.png" alt-text="Save Log Analytics details":::  
 
     Once it saves, you can select the **X** button to close the server level Auditing pane.  
 
 1. Navigate back to your Azure SQL Database (not logical server) and under Security, select **Auditing**. In the Azure SQL Database Auditing overview, you may notice that the **Auditing** option says **OFF**. It's important to note that if auditing is enabled on the server, it will always apply to the database.  
 
-    [!div class="mx-imgBorder"]
-    ![Auditing is OFF](../media/3-db-audit-off.png)  
+    
+    :::image type="content" source="../media/3-db-audit-off.png" alt-text="Auditing is OFF":::  
 
 This is the end of this exercise. You can select **Overview** in the left-hand menu to navigate back to the overview of your database. In a later exercise in this module, you'll dive deeper into auditing capabilities in Azure SQL and see how to analyze the audit logs to view all of the changes you've made throughout the module, as well as some other interesting use cases.  

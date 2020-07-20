@@ -6,13 +6,13 @@ Encrypted connections are forced by Azure SQL Database, with the option to addit
 
 Transparent Data Encryption (TDE) provides encryption for data at rest and is on by default for all new Azure SQL Databases, and can be configured for all deployment options via a switch in the Azure portal:  
 
-[!div class="mx-imgBorder"]
-![Confirm TDE is on](../media/6-tde-enabled.png)  
+
+:::image type="content" source="../media/6-tde-enabled.png" alt-text="Confirm TDE is on":::  
 
 At the server or instance level, you can also choose to use a Service-managed key or you can bring your own key (BYOK). The default is to let the Azure service manage your key. Azure will automatically generate a key to encrypt your databases, and manage the key rotations. You've seen how to do this with the Azure portal, but you can also use PowerShell, Azure CLI, T-SQL, or REST APIs.
 
-[!div class="mx-imgBorder"]
-![Server view of TDE options](../media/6-tde-key.png)  
+
+:::image type="content" source="../media/6-tde-key.png" alt-text="Server view of TDE options":::  
 
 You can, alternatively, bring your own key (BYOK) leveraging Azure key vault. In this scenario, you (not Azure) are responsible for and in full control of a key lifecycle management (key creation, rotation, deletion), key usage permissions, and auditing of operations on keys.
 
@@ -24,8 +24,8 @@ One important note is Always Encrypted with secure enclaves is not yet available
 
 On certain occasions, there is data that you will want to be masked or modified so unprivileged users cannot see the data, but can still perform queries including that data. This capability is supported just like in SQL Server, however there are additional capabilities and views in the Azure portal that allow you to see recommendations of fields to mask.
 
-[!div class="mx-imgBorder"]
-![DDM recommendations in Azure portal](../media/6-mask-recommendations.png)
+
+:::image type="content" source="../media/6-mask-recommendations.png" alt-text="DDM recommendations in Azure portal":::
 
 Let's take a look at example where the data includes sensitive information such as social security numbers, email addresses, and salary values. You can apply a mask to those columns with the Azure portal or the following T-SQL:
 
@@ -50,8 +50,8 @@ GRANT UNMASK TO DataOfficers
 
 Depending on who is querying, the results would be as follows.
 
-[!div class="mx-imgBorder"]
-![Example of users with Unmask access](../media/6-mask-example.png)
+
+:::image type="content" source="../media/6-mask-example.png" alt-text="Example of users with Unmask access":::
 
 ## Tasks for data protection
 
