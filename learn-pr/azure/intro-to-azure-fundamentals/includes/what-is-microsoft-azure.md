@@ -18,7 +18,7 @@ With help from Azure, you have everything you need to build your next great solu
 | --- | --- |
 | **Be future ready** - Continuous innovation from Microsoft supports<br>your development today, and your product visions for tomorrow. | ![Launching rocket ship representing the future.](../media/future.png) |
 | ![Three slider bars representing choice in your usage needs.](../media/build.png) | **Build on your terms** - You have choices. With a commitment to open source, and support<br>for all languages and frameworks, build how you want, and deploy where you want to. |
-| **Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge—we'll meet you where you<br>are. Integrate and manage your environments with tools and services designed for hybrid cloud. | ![Brick building datacenter next to a cloud datacenter representing both datacenters working together.](../media/hybrid.png) |
+| **Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge - we'll meet you where you<br>are. Integrate and manage your environments with tools and services designed for hybrid cloud. | ![Brick building datacenter next to a cloud datacenter representing both datacenters working together.](../media/hybrid.png) |
 | ![Shield over a cloud representing cloud security.](../media/trust.png) | **Trust your cloud** - Get security from the ground up, backed by a team of experts,<br>and proactive compliance trusted by enterprises, governments, and startups. |
 
 ## What can I do with Azure?
