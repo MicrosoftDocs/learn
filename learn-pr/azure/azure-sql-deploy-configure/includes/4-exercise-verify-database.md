@@ -81,13 +81,13 @@ In this option, you'll walk through some common queries against system functions
 
 1. Next, you can determine the specific type of Azure SQL deployment. The number returned is one of the possible options below.
 
-    1 = Personal or Desktop Engine
-    2 = Standard
-    3 = Enterprise
-    4 = Express
-    5 = SQL Database
-    6 = SQL Data Warehouse
-    8 = SQL Managed Instance
+    1 = Personal or Desktop Engine  
+    2 = Standard  
+    3 = Enterprise  
+    4 = Express  
+    5 = SQL Database  
+    6 = SQL Data Warehouse  
+    8 = SQL Managed Instance  
 
     Run the following T-SQL to see if you get the expected result.
 
