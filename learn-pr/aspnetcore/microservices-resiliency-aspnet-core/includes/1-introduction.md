@@ -5,7 +5,7 @@ This module focuses on resiliency. Resiliency is about how to make your app faul
 * Using a library-based approach with Polly
 * Using an infrastructure-based approach with Linkerd
 
-You'll modify the app to include some Polly resiliency handling policies in a microservice. You'll also reconfigure your AKS deployment, without changing any code, to implement a Linkerd-based solution.
+You'll modify the app to include some Polly resiliency handling policies in a microservice. You'll also reconfigure your Azure Kubernetes Service (AKS) deployment, without changing any code, to implement a Linkerd-based solution.
 
 ## Learning objectives
 

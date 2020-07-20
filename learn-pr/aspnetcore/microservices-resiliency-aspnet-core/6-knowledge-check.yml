@@ -30,7 +30,7 @@ quiz:
         explanation: "TODO: Explanation"
     - content: "Which of the following sentences is correct?"
       choices:
-      - content: "Polly is the best option to handle failures, but it requires a lot of work."
+      - content: "Polly is the best option to handle failures, but it requires a significant amount of work."
         isCorrect: false
         explanation: "TODO: Explanation"
       - content: "Linkerd can be implemented with little effort, but it only handles TCP connection failures."
@@ -39,7 +39,7 @@ quiz:
       - content: "Polly and Linkerd can have complementary roles, depending on the context."
         isCorrect: true
         explanation: "TODO: Explanation"
-    - content: "Which of the following is **not** needed to achieve a resilient app in Kubernetes?"
+    - content: "Which of the following components is **not** needed to achieve a resilient app in Kubernetes?"
       choices:
       - content: "CI/CD pipelines."
         isCorrect: true
@@ -53,7 +53,7 @@ quiz:
       - content: "Network-related resiliency infrastructure."
         isCorrect: false
         explanation: "TODO: Explanation"
-    - content: "Which of the following is **not** true of Linkerd?"
+    - content: "Which of the following statements is **not** true of Linkerd?"
       choices:
       - content: "It can adjust retries and timeouts adapting to the current cluster state."
         isCorrect: false
@@ -67,7 +67,7 @@ quiz:
       - content: "It monitors all incoming and outgoing connections."
         isCorrect: false
         explanation: "TODO: Explanation"
-    - content: "Which of the following is **not** true of Polly?"
+    - content: "Which of the following statements is **not** true of Polly?"
       choices:
       - content: "It can handle retries with exponential back-off."
         isCorrect: false
@@ -78,7 +78,7 @@ quiz:
       - content: "It doesn't need any app code changes."
         isCorrect: true
         explanation: "TODO: Explanation"
-      - content: "It has to be code-configured for every `HttpClient`."
+      - content: "It must be configured via code for every `HttpClient`."
         isCorrect: false
         explanation: "TODO: Explanation"
   

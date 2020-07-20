@@ -1,33 +1,33 @@
-In the previous exercise, you implemented resiliency by adding failure-handling code, in the form of Polly policies. You can certainly say that it was a small change but it's also true that you only updated one microservice. So it could mean a non-trivial effort if you had to update a large application composed of many microservices.
+In the previous exercise, you implemented resiliency by adding failure-handling code. The code used Polly policies. It was a small change but it's also true that you only updated one microservice. So it could mean a non-trivial effort if you had to update a large app composed of many microservices.
 
-You'll now make the app more fault tolerant by deploying Linkerd.
+You'll now make the app more fault-tolerant by deploying Linkerd.
 
 In this exercise you will:
 
-- Return the application to the original version.
+- Return the app to the original version.
 - Deploy Linkerd in your cluster.
-- Configure the application to use Linkerd for resiliency.
-- Explore the application behavior with Linkerd.
+- Configure the app to use Linkerd for resiliency.
+- Explore the app behavior with Linkerd.
 
-## Return the application to the initial version
+## Return the app to the initial version
 
-Since we're going to explore the effect of Linkerd on the app, we have to go back to the original version, that is, without using Polly.
+To examine the effect of Linkerd on the app, revert to the original version of the app. As you recall, the original app didn't use Polly.
 
-To achieve this, you have to redeploy the modified service from the original repository, using this command from the *deploy/k8s* folder:
+To revert, redeploy the modified service from the original repository, using the following command from the *deploy/k8s* folder:
 
 ```bash
 ./deploy-application.sh --registry eshopdev --charts webshoppingagg
 ```
 
-You can explore the application when it becomes fully available again to verify that it's failing immediately on the configured discount code, as you just did in the previous exercise. As a quick refresher, complete the following tasks:
+You can explore the app when it becomes fully available again to verify it's failing immediately on the configured discount code, as you just did in the previous exercise. As a refresher, complete the following tasks:
 
 - Log in to the app.
 - Click on the **.NET FOUNDATION PIN**
 - Click on the basket icon at the top right of the page.
 - Click checkout.
 - Go to the **HAVE A DISCOUNT CODE?** input.
-- Enter the code **FAIL 2 DISC-10** and click **APPLY**.
-- Change the code to **DISC-10** and click **APPLY** twice.
+- Enter the code *:::no-loc text="FAIL 2 DISC-10":::* and click **APPLY**.
+- Change the code to *:::no-loc text="DISC-10":::* and click **APPLY** twice.
 - Verify that you receive the "**ERROR: 500 - Internal Server Error!**" immediately after each click.
 
 ## Install Linkerd
@@ -40,11 +40,11 @@ Run the following command:
 curl -sL https://run.linkerd.io/install | sh
 ```
 
-You should get something like this after a few seconds (depending on your Internet connection):
+You'll see the following output after a few seconds (depending on your Internet connection):
 
 ![](../media/install-linkerd.png)
 
-Next, add Linkerd to your path by running the following command:
+Next, add Linkerd to your `PATH` environment variable by running the following command:
 
 ```bash
 export PATH=$PATH:$HOME/.linkerd2/bin
@@ -99,13 +99,13 @@ You should see a checklist similar to the pre-install one, but longer. It's also
 
 ## Configure the app to use Linkerd
 
-To keep the exercise short and focused, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. To achieve this, you'll:
+To keep the exercise short and focused, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. You'll:
 
-- Modify the deployments so Linkerd creates its proxy container in the pods
+- Modify the deployments so Linkerd creates its proxy container in the pods.
 - Add a `ServiceProfile` object to the cluster, to configure the retries on the selected route.
 - Configure headers for the related Nginx ingress.
 
-You could check the app behavior now, but it will be the same as before. Linkerd only retries on the routes configured in the `ServiceProfile`.
+You could check the app behavior now, but it will be unchanged. Linkerd only retries on the routes configured in the `ServiceProfile`.
 
 ### 1. Modify the `webshoppingagg` and `coupon` deployments
 
@@ -255,8 +255,8 @@ Let's explore the app behavior now with a similar process:
 - Click on the basket icon at the top right of the page.
 - Click checkout.
 - Go to the **HAVE A DISCOUNT CODE?** input.
-- Enter the code **FAIL 5 DISC-10** and click **APPLY**.
-- Change the code to **DISC-10** and click **APPLY**.
+- Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and click **APPLY**.
+- Change the code to *:::no-loc text="DISC-10":::* and click **APPLY**.
 - You'll notice that this time, you receive the correct response almost immediately.
 
 If you check the log traces, you should see something like this:
@@ -265,7 +265,7 @@ If you check the log traces, you should see something like this:
 
 As mentioned in the review unit, Linkerd follows a different approach to resiliency from what we saw with Polly. Linkerd retried five times in fast sequence so we didn't notice any failure at all.
 
-For more information about Linkerd configuration, see:
+For more information about Linkerd configuration, see the following resources:
 
 - [Configuring Retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries/)
 - [Configuring Timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts/)

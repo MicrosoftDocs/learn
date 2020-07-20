@@ -6,7 +6,7 @@ Designing and deploying a microservices-based app is challenging enough. But you
 
 Handling partial failures in distributed systems, like a microservices-based app, is a complex aspect of the cloud. There's an ever-present risk of partial failure. For instance, a single microservice/container can fail or be unavailable to respond for a short time. Additionally, a single virtual machine or server can crash. Since clients and services are separate processes, a service might not respond to a client's request in a timely fashion. The service might be overloaded and respond slowly to requests. Or it might be inaccessible for a short time because of network issues.
 
-Though they aren't covered in this module, ensuring a resilient deployment also requires the use of health checks. The key idea is that apps and services provide some [liveness, readiness, and startup probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/). The probes provide the service state. Kubernetes uses that state to determine whether to accept traffic or replace a failing pod.
+Though they aren't covered in this module, ensuring a resilient deployment also requires the use of health checks. The key idea is that apps and services provide some [liveness, readiness, and startup probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes). The probes provide the service state. Kubernetes uses that state to determine whether to accept traffic or replace a failing pod.
 
 ## Resiliency approaches
 
@@ -17,7 +17,7 @@ There are two fundamental approaches to resiliency. You can add:
 
 There are pros and cons on both sides. You may use both approaches, depending on the situation. Plenty of solutions exist for both approaches.
 
-For the first approach, we'll introduce the use of [Polly](https://github.com/App-vNext/Polly), and [Linkerd](https://linkerd.io/) for the second.
+For the first approach, we'll introduce the use of [Polly](https://github.com/App-vNext/Polly), and [Linkerd](https://linkerd.io) for the second.
 
 ## Polly
 
@@ -29,7 +29,7 @@ Resiliency with Polly has to be hard-coded, although you can use startup-time co
 
 ### Retry policy
 
-The Retry policy is exactly what the name implies. The request is retried if an error response is received, after a short waiting time. The waiting time is configurable and may be:
+The *Retry policy* is exactly what the name implies. The request is retried if an error response is received, after a short waiting time. The waiting time is configurable and may be:
 
 - A constant waiting time for a certain retry count.
 - An exponentially increasing time. For example, 2, 4, 8, 16 seconds.
@@ -41,7 +41,7 @@ For an in-depth explanation of the Retry policy, see [Polly's wiki page on Retry
 
 ### Circuit Breaker policy
 
-The Circuit Breaker policy "gives the target service a break", after a certain number of failures, when it looks like the service is having some serious problem and it's not going to respond for a while.
+The *Circuit Breaker policy* "gives the target service a break", after a certain number of failures, when it looks like the service is having some serious problem and it's not going to respond for a while.
 
 The concept is simple too. After a certain number of consecutive failures (more options with the advanced Circuit Breaker policy), the connection is open for some waiting time.
 
@@ -53,21 +53,21 @@ For an in-depth explanation of the Circuit Breaker policy, see [Polly's wiki pag
 
 [Linkerd](https://linkerd.io/2/overview) is very different from Polly. Linkerd is service mesh infrastructure for Kubernetes clusters. It can handle resiliency without changing your app's code.
 
-A [service mesh](https://servicemesh.io/) is a set of proxies that stand beside each of your pods and handle all communication-related tasks. For example, Linkerd can be configured to ensure reliable and secure communications and getting operational metrics.
+A [service mesh](https://servicemesh.io) is a set of proxies that stand beside each of your pods and handle all communication-related tasks. For example, Linkerd can be configured to ensure reliable and secure communications and to get operational metrics.
 
 Each "meshed" service doesn't really know it's being supported by a proxy beside it. A proxy is "transparent", light, and handles incoming and outgoing connections.
 
 This module focuses on the resiliency aspect of Linkerd and skips the observability and security aspects.
 
-Linkerd includes a dashboard, that you can [explore when running from a local machine](https://linkerd.io/2/features/dashboard/), but not from Azure's Cloud Shell.
+Linkerd includes a dashboard, that you can [explore when running from a local machine](https://linkerd.io/2/features/dashboard), but not from Azure's Cloud Shell.
 
 ### Resiliency strategies
 
-Linkerd's resiliency strategies differ from those mentioned for Polly. Linkerd has [Retries and Timeouts](https://linkerd.io/2/features/retries-and-timeouts/). However, since Linkerd has a systemic view of the cluster, it can do some interesting "tricks". For example, retrying in such a way as to add a maximum of 20 percent additional load on the target service.
+Linkerd's resiliency strategies differ from those mentioned for Polly. Linkerd has [Retries and Timeouts](https://linkerd.io/2/features/retries-and-timeouts). Since Linkerd has a systemic view of the cluster, it can do some interesting "tricks". For example, retrying in such a way as to add a maximum of 20 percent additional load on the target service.
 
 It may appear that Linkerd is more limited than Polly in this sense. Keep in mind that the systemic, metrics-based view allows Linkerd to adapt dynamically to cluster conditions in real time. This just adds another dimension to managing the cluster.
 
-When you implement resiliency in your app's code, as when using Polly, you're guessing which retry or timeout parameters are reasonable. With a Polly-like solution, you're focusing on a specific request. There's no reasonable way that you can respond in your app's code. Consider the hundreds or thousands of requests that are being processed simultaneously. So it's not difficult to imagine a situation in which even a retry with exponential back-off (times request count) can flood a service.
+When you implement resiliency in your app's code, as when using Polly, you're guessing which retry or timeout parameters are reasonable. With a Polly-like solution, you're focusing on a specific request. There's no reasonable way that you can respond in your app's code. Consider the hundreds or thousands of requests that are being processed simultaneously. It's not difficult to imagine a situation in which even a retry with exponential back-off (times request count) can flood a service.
 
 There are other "tricks" that are impossible for Linkerd to handle. Linkerd doesn't know anything about the app internals. For example, you can protect a complex database transaction with a Polly strategy, so it's automatically retried if it fails.
 

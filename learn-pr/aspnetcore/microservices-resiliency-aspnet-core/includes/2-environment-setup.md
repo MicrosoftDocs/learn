@@ -22,7 +22,7 @@ Complete the following steps to create an AKS cluster with a starter version of 
     git clone https://github.com/{your-github-account}/eShop-Learn.git
     ```
 
-    If asked for GitHub credentials, generate a personal access token (PAT) for your account per the instructions at [Creating a token](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). Use the PAT as the password.
+    If asked for GitHub credentials, generate a personal access token (PAT) for your account per the instructions at [Creating a token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). Use the PAT as the password.
 
     It's also recommended that you enable credential caching with these commands:
 
@@ -50,9 +50,9 @@ Complete the following steps to create an AKS cluster with a starter version of 
     ./quickstart.sh --resource-group eshop-learn-rg --location westus
     ```
 
-    You can change the **resource group** and **location** if it suits you better.
+    You can change the resource group and location parameters to better suit your needs.
 
-When the script finishes, you should see something like this:
+When the script finishes, you should see something like the following output:
 
 ```console
 Helm charts deployed
@@ -122,9 +122,9 @@ All the services should be running in less than five minutes. Then you can brows
 
 ## Discount coupon features
 
-- The user can apply a discount coupon code during the checkout (**DISC-##**, where ## is the discount amount to the order total. For $5, $10, $15, $20, $25, and $30).
+- To obtain a discount, the user can apply a coupon code from the checkout page. All coupon codes are prefixed with *:::no-loc text="DISC-":::* and are suffixed with an unsigned integer. The integer indicates the US dollar (USD) amount to be deducted from the order total. For example, *:::no-loc text="DISC-30":::* deducts 30 USD. Coupon codes are available in increments of five USD, starting at five and ending at 30.
 - The coupon service must confirm that the coupon is available and return the discount amount (REST API).
-- The ordering microservice will request validation for the coupon, during the order process (Asynchronous messaging).
+- The ordering microservice will request validation for the coupon, during the order process (asynchronous messaging).
 - Upon validation, the coupon will be assigned to the order and won't be available for any other order. However the coupon can be initially "used" by more than one order, until it's actually "consumed" during the order process.
 - If the coupon validation is rejected for another order, it will be canceled.
 - If an order is canceled because of payment rejection, any assigned coupon should be released for another order to use. By default, a payment rejection occurs if the order total exceeds 100 USD. That payment rejection amount is configurable.
