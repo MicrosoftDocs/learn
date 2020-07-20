@@ -9,14 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Knowledge check
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What's the key goal when implementing a resiliency solution for an application?"
+    - content: "What's the key goal when implementing a resiliency solution for an app?"
       choices:
-      - content: "Make the application error-free."
+      - content: "Make the app error-free."
         isCorrect: false
         explanation: "TODO: Explanation"
       - content: "Handling user errors transparently."
@@ -39,7 +39,7 @@ quiz:
       - content: "Polly and Linkerd can have complementary roles, depending on the context."
         isCorrect: true
         explanation: "TODO: Explanation"
-    - content: "Which of the following is **not** needed to achieve a resilient application in Kubernetes?"
+    - content: "Which of the following is **not** needed to achieve a resilient app in Kubernetes?"
       choices:
       - content: "CI/CD pipelines."
         isCorrect: true
@@ -61,7 +61,7 @@ quiz:
       - content: "It can monitor the traffic between pods."
         isCorrect: false
         explanation: "TODO: Explanation"
-      - content: "It must be included in the application code."
+      - content: "It must be included in the app's code."
         isCorrect: true
         explanation: "TODO: Explanation"
       - content: "It monitors all incoming and outgoing connections."
@@ -75,10 +75,10 @@ quiz:
       - content: "It can ensure resiliency for complex database transactions."
         isCorrect: false
         explanation: "TODO: Explanation"
-      - content: "It doesn't need any application code changes."
+      - content: "It doesn't need any app code changes."
         isCorrect: true
         explanation: "TODO: Explanation"
-      - content: "It has to be code-configured for every HttpClient."
+      - content: "It has to be code-configured for every `HttpClient`."
         isCorrect: false
         explanation: "TODO: Explanation"
   

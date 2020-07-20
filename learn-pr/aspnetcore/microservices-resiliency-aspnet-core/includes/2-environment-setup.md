@@ -1,10 +1,10 @@
-To begin with this module, you'll create an initial AKS deployment of the simplified version of eShopOnContainers with a simple public IP over HTTP. This step is mostly just running a script that usually needs no attention so, once you start the script, you can begin the next step, to review some key concepts.
+In this module, you'll create an initial AKS deployment of the simplified version of *eShopOnContainers* with a public IP address over HTTP. This step runs a script that usually requires no attention. Once you start the script, begin the next step to review some key concepts.
 
 Complete the following steps to create an AKS cluster with a starter version of *eShop-Learn*:
 
-1. Fork the repo <https://github.com/dotnet-architecture/eShop-Learn> in your GitHub account.
+1. Fork the [eShop-Learn](https://github.com/dotnet-architecture/eShop-Learn) repository to your GitHub account.
 
-1. Open an Azure Cloud Shell session while logged in with your subscription on the Azure portal:
+1. Open an Azure Cloud Shell session while logged in with your subscription in the Azure portal:
 
     ![](../media/open-azure-cloud-shell.png)
 
@@ -22,16 +22,16 @@ Complete the following steps to create an AKS cluster with a starter version of 
     git clone https://github.com/{your-github-account}/eShop-Learn.git
     ```
 
-    If asked for a GitHub Login, it's recommended that you generate a personal access token for your account from this page <https://github.com/settings/tokens> and use it as the password.
+    If asked for GitHub credentials, generate a personal access token (PAT) for your account per the instructions at [Creating a token](https://docs.github.com/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). Use the PAT as the password.
 
-    It's also recommended that you enable credentials caching with these commands:
+    It's also recommended that you enable credential caching with these commands:
 
     ```bash
     git config --global credential.helper cache
     git config --global credential.helper 'cache --timeout=7200'
     ```
 
-1. Go to the module #5 folder - **NOTE - This should be changed to the final module path**:
+1. Go to the module #5 folder - **TODO: This should be changed to the final module path**:
 
     ```bash
     cd ~/clouddrive/source/module-05-devops
@@ -108,7 +108,7 @@ You can begin exploring these services (when ready):
 > cat ~/clouddrive/source/deploy-application-results.txt
 > ```
 
-Shortly after the `seq` container becomes ready (`1/1`), you should be able to check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh`. You'll see all the transient errors that occur during the app startup, until they stop and all services are up and running.
+Shortly after the `seq` container becomes ready (`1/1`), check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh`. You'll see all the transient errors that occur during the app startup, until they stop and all services are up and running.
 
 ![](../media/startup-errors-logging.png)
 
@@ -116,7 +116,7 @@ You can also check the general app status at `http://###.###.###.###/webstatus/`
 
 ![](../media/eshop-learn-webstatus.png)
 
-All the services should be running in less than five minutes. Then you can browse to the home page and log in using the credential in the login page.
+All the services should be running in less than five minutes. Then you can browse to the home page and sign in using the credential in the login page.
 
 ![](../media/home-page.png)
 
@@ -126,8 +126,8 @@ All the services should be running in less than five minutes. Then you can brows
 - The coupon service must confirm that the coupon is available and return the discount amount (REST API).
 - The ordering microservice will request validation for the coupon, during the order process (Asynchronous messaging).
 - Upon validation, the coupon will be assigned to the order and won't be available for any other order. However the coupon can be initially "used" by more than one order, until it's actually "consumed" during the order process.
-- If the coupon validation is rejected for another order it'll be cancelled.
-- If an order is cancelled because of payment rejection (will happen if the order total exceeds $100, configurable), the assigned coupon, if there was one, should be released for any other order to use.
+- If the coupon validation is rejected for another order, it will be canceled.
+- If an order is canceled because of payment rejection, any assigned coupon should be released for another order to use. By default, a payment rejection occurs if the order total exceeds 100 USD. That payment rejection amount is configurable.
 
 The discount coupon feature adds the following element to the checkout view:
 

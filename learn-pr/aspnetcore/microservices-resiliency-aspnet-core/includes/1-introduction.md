@@ -1,6 +1,6 @@
-Using a microservices app in the cloud offers many advantages, but there are also several shortcomings. Transient infrastructure failures, mostly network-related, are a key problem that every cloud app must handle.
+Using a microservices app in the cloud offers many advantages. There are also several shortcomings. Transient infrastructure failures, mostly network-related, are a key problem that every cloud app must handle.
 
-The focus of this module is on resiliency, or how to make your app fault-tolerant, in a way that has the lowest possible impact on the user. The following resilience approaches will be explored:
+This module focuses on resiliency. Resiliency is about how to make your app fault-tolerant, in a way that has the lowest possible impact on the user. The following resilience approaches will be explored:
 
 * Using a library-based approach with Polly
 * Using an infrastructure-based approach with Linkerd

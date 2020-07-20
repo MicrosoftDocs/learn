@@ -82,7 +82,7 @@ Edit the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Startup.cs* fi
 
 - Add `Polly`, `Polly.Extensions.Http`, and `Serilog` to the `using` section.
 - Include the `AddPolicyHandler(GetRetryPolicy())` and `AddPolicyHandler(GetCircuitBreakerPolicy())` to the `AddHttpClient` method for the `CouponService` dependency injection registration.
-- Add the `GetRetryPolicy()` `GetCircuitBreakerPolicy()` methods.
+- Add the `GetRetryPolicy()` and `GetCircuitBreakerPolicy()` methods.
 
 Check the code below for details:
 
