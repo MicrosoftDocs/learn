@@ -2,9 +2,9 @@ Throughout the Azure Fundamentals Learning Paths, we will be working with a fict
 
 ![Tailwind Traders Logo](../media/tailwind-traders-logo.png){ style="width:480px;height:128px;display:block;margin-left:auto;margin-right:auto;" }
 
-Your company currently manages an on-premises datacenter that hosts your company's retail website, and stores that data and streaming video for your applications. Your IT deparment is currently responsible for all of management tasks for your computing hardware and software; for example: your IT team handles the procurement process to buy new hardware, installs and configures software, and deploys everything throughout your datacenter.
+Your company currently manages an on-premises datacenter that hosts your company's retail website, and stores that data and streaming video for your applications. Your IT department is currently responsible for all of management tasks for your computing hardware and software; for example: your IT team handles the procurement process to buy new hardware, installs and configures software, and deploys everything throughout your datacenter.
 
-However, these management responsiblities create numerous obstacles for delivering your applications to your users in a timely fashion. As a technology professional, you realize that it would be advantageous to have servers, storage, databases, and other services immediately available when developing and deploying applications. You should be able to click a button to start up a new server or add services to your solutions.
+However, these management responsibilities create numerous obstacles for delivering your applications to your users in a timely fashion. As a technology professional, you realize that it would be advantageous to have servers, storage, databases, and other services immediately available when developing and deploying applications. You should be able to click a button to start up a new server or add services to your solutions.
 
 As you have seen in the other units of this learning module, your company's needs can be addressed through various cloud-based services. With that in mind, the services that are available through Microsoft Azure can help your company conduct its business more efficiently.
 
