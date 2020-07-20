@@ -64,7 +64,7 @@ quiz:
     choices:
     - content: "An ExpressRoute circuit with connectivity back to the on-premises network"
       isCorrect: true
-      explanation: "That's correct. Protection this mission critical resource from accidental deletion is a great idea."
+      explanation: "That's correct. Protecting this mission critical resource from accidental deletion is a great idea."
     - content: "A non-production virtual machine used to test occasional application builds"
       isCorrect: false
       explanation: "That's incorrect.  This not a critical system that needs to be protected with locks."
