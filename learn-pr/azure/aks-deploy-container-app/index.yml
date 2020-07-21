@@ -22,7 +22,7 @@ prerequisites: |
   - Ability to create a Docker container
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /media/icon-badge.svg
 levels:
   - beginner
 roles:
