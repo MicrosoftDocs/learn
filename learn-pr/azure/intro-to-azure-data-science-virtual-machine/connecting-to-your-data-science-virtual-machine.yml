@@ -29,13 +29,13 @@ quiz:
           explanation: "An ssh client can connect to the command line of the DSVM quickly and with low overhead. Both Ubuntu and Windows Server 2019 DSVM images come with ssh access configured."
     - content: "How can one use a graphical desktop with a Data Science Virtual Machine?"
       choices:
-        - content: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
+        - content: "On Ubuntu, one must use an XFCE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
           isCorrect: true
-          explanation: "A graphical desktop experience is available on both Ubuntu and Windows. The Ubuntu DSVM uses XCFE, while the Windows DSVM uses RDP."
-        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with an XCFE client, such as X2Go Client."
+          explanation: "A graphical desktop experience is available on both Ubuntu and Windows. The Ubuntu DSVM uses XFCE, while the Windows DSVM uses RDP."
+        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with an XFCE client, such as X2Go Client."
           isCorrect: false
-          explanation: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
+          explanation: "On Ubuntu, one must use an XFCE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
         - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with a Remote Desktop Protocol (RDP) client."
           isCorrect: false
-          explanation: "On Ubuntu, one must use an XCFE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
+          explanation: "On Ubuntu, one must use an XFCE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
 
