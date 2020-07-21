@@ -3,7 +3,7 @@ uid: learn.aks-deploy-container-app
 metadata:
   title: Deploy a containerized application on Azure Kubernetes Service
   description: Deploy a containerized application on Azure Kubernetes Service
-  ms.date: 04/24/2020
+  ms.date: 07/25/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Ability to create a Docker container
   - Ability to navigate the Azure portal
   - Basic knowledge of Kubernetes and its concepts
-iconUrl: /media/icon-badge.svg
+iconUrl: /learn/achievements/aks-deploy-container-app.svg
 levels:
   - beginner
 roles:
