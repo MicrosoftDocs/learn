@@ -1,12 +1,5 @@
-For some computational tasks, quantum computing seems to provide an exponential
-benefit. For other tasks, the benefits appear to be more limited. We would like
-to know what are the fundamental quantum ingredients that give rise to augmented
-performance of quantum computers in order to exploit them. Note that these issue
-is not yet understood. Quantum computing scientist are working hard to unveil
-why quantum computers provide these advantages. However, there is evidence that
-some properties of quantum systems are essential for the quantum boost. In this
-module we will explore three of them: superposition, interference and
-entanglement.
+For some computational tasks, quantum computing provides exponential speedups. This is rooted from the fact that quantum computing utilizes three phenomena from quantum mechanics: superposition, interference and
+entanglement. In the last MS Learn module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/), you have experienced superposition by creating a random number generator from qubits. In this unit, you will learn more about the concept.  
 
 ## Quantum computers are quantum systems
 
