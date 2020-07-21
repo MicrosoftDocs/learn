@@ -1,6 +1,6 @@
 Although Azure Cosmos DB is described as a NoSQL database management system, the SQL API enables you to run *SQL-like* queries against Cosmos DB databases. These queries use a syntax similar to that of SQL, but there are some differences. This is because the data in a Cosmos DB is structured as documents rather than tables.
 
-In this unit, you'll learn about the dialect of SQL implemented by the SQL API. You'll see how to use the **Data Explorer** in the Azure portal to run queries.
+In this lesson, you'll learn about the dialect of SQL implemented by the SQL API. You'll see how to use the **Data Explorer** in the Azure portal to run queries.
 
 ## Use the SQL API to query documents
 
