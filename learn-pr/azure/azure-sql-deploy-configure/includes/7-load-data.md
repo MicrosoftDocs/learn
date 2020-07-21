@@ -19,3 +19,9 @@ In Azure SQL, you can use this to connect with SSIS on-premises. You can host an
 ### Other options
 
 Some other interesting options include using technologies like Spark or Azure Data Factory to load data into Azure SQL Database or Azure SQL Managed Instance. Not directly related to "loading", but it is possible to create a database leveraging an existing database for a copy or doing an import of a bacpac file. In Azure SQL Managed Instance, the T-SQL commands to restore a database natively from a URL is possible.  
+
+## Considerations for loading data
+
+The biggest difference between loading data on-premises and loading data into Azure SQL is that the data you want to load needs to be hosted in Azure as opposed to in files on-premises. These files and file systems on-premises can be stored in Azure Blob storage as an alternative. This will also increase the efficiency at which you can load your files in and set up ETL jobs.
+
+Another thing to keep in mind is that minimal logging is not supported, so you're always running in full recovery mode. Because of this and limits around log throughput, you might be affected by log governance as you're loading data. Techniques like using batches and appropriately sizing them become important during a bulk load. You'll see more of this in the following exercise. Loading into a clustered columnstore index may help in avoiding transaction log limits, depending on your scenario.
