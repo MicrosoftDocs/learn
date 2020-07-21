@@ -58,7 +58,7 @@ You need to authenticate with the new ACR before you can push your container ima
     cd mslearn-aks-deploy-container-app
     ```
 
-1. Run the `az acr build` command to build and push the container image. 
+1. Run the `az acr build` command to build and push the container image.
 
     ```azurecli
     az acr build \
