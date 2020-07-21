@@ -4,8 +4,7 @@ entanglement. In the last MS Learn module [Create your first Q# program by using
 ## Quantum computers are quantum systems
 
 Quantum computers are controllable quantum mechanical devices that exploit the properties of
-quantum physics to perform computations. And, like every quantum mechanical
-system, can be described with the Schrödinger equation:
+quantum physics to perform computations. You may have seen or heard about the Schrödinger equation that describes every quantum mechanical system:
 
 $$i \hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$
 
