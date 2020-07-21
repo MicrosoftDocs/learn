@@ -23,20 +23,20 @@
     protected override void OnAppearing()
     {
         base.OnAppearing();
-        DualScreenInfo.Current.PropertyChanged += Current_PropertyChanged;
+        DualScreenInfo.Current.PropertyChanged += DualScreen_PropertyChanged;
         UpdateLayouts(); // for first page load
     }
     protected override void OnDisappearing()
     {
-        DualScreenInfo.Current.PropertyChanged -= Current_PropertyChanged;
+        DualScreenInfo.Current.PropertyChanged -= DualScreen_PropertyChanged;
         base.OnDisappearing();
     }
     ```
 
-1. Implement the method `Current_PropertyChanged` and `UpdateLayouts`.
+1. Implement the methods `DualScreen_PropertyChanged` and `UpdateLayouts`:
 
     ```csharp
-    void Current_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    void DualScreen_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
         UpdateLayouts();
     }
@@ -64,7 +64,7 @@
     }
     ```
 
-    The `UpdateLayouts` method will now be called whenever the app is spanned or unspanned (or the detail is rotated). When spanned, the `twoPaneView` is configured to show the two views side-by-side. When the app is on a single screen, only the list is shown.
+    The `UpdateLayouts` method will now be called whenever the app is spanned or unspanned (or the device is rotated). When spanned, the `twoPaneView` is configured to show the two views side-by-side. When the app is on a single screen, only the list is shown.
 
     When the app is moved to single screen, the `if` statement checks if the app was previously spanned, and if so, pushes the flag details onto the navigation stack. This ensures the app navigation works as expected when unspanning back to a single screen.
 
@@ -82,6 +82,36 @@
 
     This method will now use the `Navigation` class to push the flag details if the app is on a single screen. This ensures the navigation works as expected on all single-screen devices.
 
+## Update the FlagDetailsPage code-behind
+
+1. Add the following methods from above to **FlagDetailsPage.xaml.cs**:
+
+    - DeviceIsSpanned
+    - OnAppearing
+    - OnDisappearing
+    - Current_PropertyChanged
+
+1. In **FlagDetailsPage.xaml.cs** implement `UpdateLayouts` as shown here:
+
+    ```csharp
+    async void UpdateLayouts()
+    {
+        if (DeviceIsSpanned)
+        {   // the detail view should never be showing when spanned
+            if (Navigation.NavigationStack.Count > 1)
+            {
+                await Navigation.PopToRootAsync();
+            }
+        }
+    }
+    ```
+
+    This will cause the detail content page to be removed if the app is spanned, which is important because Pane2 shows the detail on the second screen.
+
 ## Run the app
 
 Now when you start the app on a single screen, it uses the navigation stack to switch between the list and the detail page.
+
+If the app is spanned, the list and detail is shown side-by-side using `TwoPaneView`.
+
+When you span or unspan the app, the detail will be pushed onto the navigation stack or popped off the navigation stack as required.
