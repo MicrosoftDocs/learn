@@ -1,12 +1,12 @@
-AKS cluster blocks all inbound traffic from the Internet to the cluster to assure network security. Deployed workloads in Kubernetes is by default, not accessible by anyone but those inside the cluster. To expose the applications to the outside world, you need to open specific ports and forward them to your services. 
+AKS cluster blocks all inbound traffic from the Internet to the cluster to assure network security. Deployed workloads in Kubernetes are by default, not accessible by anyone but those inside the cluster. To expose the applications to the outside world, you need to open specific ports and forward them to your services.
 
-The configuration of ports and port forwarding in Kubernetes is different from what you might be used to in other environments. For example, on a VM, you'll configure the OS level firewall to allow inbound traffic to port 443 and allow HTTPS web traffic. In Kubernetes, the control plane manages network configuration based on declarative instructions you provide.
+The configuration of ports and port forwarding in Kubernetes is different from what you might be used to in other environments. On a VM, you'll configure the OS level firewall to allow inbound traffic to port 443 and allow HTTPS web traffic. In Kubernetes, the control plane manages network configuration based on declarative instructions you provide.
 
 ## Networks in Kubernetes
 
 Containers are temporary. A container's configuration and data the data in it isn't persistent between executions. Once you delete a container, all information is gone unless it's configured to use a volume. The same applies to the container's network configuration and any IP addresses assigned to it.
 
-A deployment is a logical grouping of pods and is not considered a physical workload and not assigned an IP address. However, each pod is automatically assigned an IP address. When the pod is destroyed, the IP address is lost. This behavior makes a manual network configuration strategy complex.
+A deployment is a logical grouping of pods and isn't considered a physical workload and not assigned an IP address. However, each pod is automatically assigned an IP address. When the pod is destroyed, the IP address is lost. This behavior makes a manual network configuration strategy complex.
 
 Kubernetes has two network availability abstractions that allow you to expose any app without worrying about the underlying infrastructure or assigned pod IP addresses.
 
@@ -18,13 +18,13 @@ A Kubernetes service is a workload that abstracts the IP address for networked w
 
 :::image type="content" source="../media/6-1-service-diagram.png" alt-text="Services diagram":::
 
-You define a service in the same way as a deployment by using a YAML manifest file. The service uses the same `selector` key as deployments to select and group resources with matching labels into one single IP. 
+You define a service in the same way as a deployment by using a YAML manifest file. The service uses the same `selector` key as deployments to select and group resources with matching labels into one single IP.
 
 A Kubernetes service needs four pieces of information to route traffic.
 
 | Information | Description |
 | --- | --- |
-| **Target resource** | The target resource is defined by the `selector` key in the service manifest file.  This value selects all the resources with a given label onto a single IP address. | 
+| **Target resource** | The target resource is defined by the `selector` key in the service manifest file.  This value selects all the resources with a given label onto a single IP address. |
 | **Service port** | This port is the inbound port for your application. All the requests come to this port from where the service forwards the requests to the resource. |
 | **Network Protocol**| This value identifies the network protocol for which the service will forward network data. |
 | **Resource port** | This value identifies the port on the target resource on which incoming requests are received. This port is defined by the `targetPort` key in the service manifest file.
@@ -51,11 +51,11 @@ Assume you want to allow clients to access your website through the `http://cont
 
 ## Ingress controllers
 
-Kubernetes use Ingress controllers to manage the configure of Ingress in a cluster. An Ingress controller provides several features. An Ingress controller:
+Kubernetes use Ingress controllers to manage the configuration of Ingresses in a cluster. An Ingress controller provides several features. An Ingress controller:
 
 - acts as a reverse proxy to allow external URLs
 - may act as a load balancer
-- terminate SSL / TLS requests
+- terminate SSL/TLS requests
 - offers name-based virtual hosting
 
 In AKS, the Ingress Controller links to a _DNS Zone_ resource in your Azure subscription. The DNS Zone is automatically created as part of the cluster creation process on your behalf. The link makes it possible for the cluster to automatically generate a zone record that points to the DNS name to the exposed application's IP address and port.
@@ -81,7 +81,7 @@ rules:
             servicePort: 80 # Which port in that service
 ```
 
-This example defines a rule that allows all traffic using the address `example.com` and path `/site` to enter the cluster. This traffic is then routed to the `contoso-website` service on port `80`. 
+This example defines a rule that allows all traffic using the address `example.com` and path `/site` to enter the cluster. This traffic is then routed to the `contoso-website` service on port `80`.
 
 ## Annotations
 
