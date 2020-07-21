@@ -3,7 +3,7 @@ uid: learn.wwl.use-containers-language-understanding-intelligent-service-apps
 metadata:
   title: Use containers for your Language Understanding Intelligent Service (LUIS) Apps
   description: "The Language Understanding (LUIS) container loads your trained or published Language Understanding model. As a LUIS app, the docker container provides access to the query predictions from the container's API endpoints"
-  ms.date: 07/23/2020
+  ms.date: 07/24/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial

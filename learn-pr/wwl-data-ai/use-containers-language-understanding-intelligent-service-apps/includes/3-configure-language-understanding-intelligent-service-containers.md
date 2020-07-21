@@ -1,13 +1,13 @@
 Configuration of your LUIS containers is done through the docker command argument. There are required settings and optional settings. During the creation of the docker container for your LUIS application, you use some of these command arguments.  For example, the command used to create the docker container in unit 2 was,
 
-    ```powershell
-    docker run --rm -it -p 5000:5000 --memory 4g --cpus 2 --mount type=bind,src=c:\input,target=/input
-    --mount type=bind,src=c:\output\,target=/output
-    mcr.microsoft.com/azure-cognitive-services/luis
-    Eula=accept
-    Billing={ENDPOINT_URI}
-    ApiKey={API_KEY}
-    ```
+```powershell
+docker run --rm -it -p 5000:5000 --memory 4g --cpus 2 --mount type=bind,src=c:\input,target=/input
+--mount type=bind,src=c:\output\,target=/output
+mcr.microsoft.com/azure-cognitive-services/luis
+Eula=accept
+Billing={ENDPOINT_URI}
+ApiKey={API_KEY}
+```
 
 In this command, some of the arguments were specific to creating a container that is not LUIS-specific but more generic such as:
 
@@ -30,9 +30,9 @@ The remaining options are covered here.
 
 Like many Azure services, you can gain insights to the LUIS container to gather telemetry information for the container. You can easily monitor your container for availability, performance, and usage. You can also quickly identify and diagnose errors in your container. To use application insights for your container, during creation, add the option to the docker run command:
 
-    ```powershell
-    InstrumentationKey=123456789
-    ```
+```powershell
+InstrumentationKey=123456789
+```
 
 ### Fluentd settings
 
