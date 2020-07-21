@@ -9,9 +9,9 @@ quantum physics to perform computations. You may have seen or heard about the Sc
 $$i \hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$
 
 It captures the wavefunction, $$\psi(t)$$, and the energy Hamiltonian, $$H$$, of the system, with $$t$$ being time and $$\hbar$$ being the Plank constant. However, fortunately,
-you don't need to in order to learn quantum computing. In practice, nobody
-thinks in terms of the Schrödinger equation when writing quantum algorithms. But
-it will help us to understand some concepts of quantum computing.
+you don't need the Schrödinger equation in order to do quantum programming. In practice, nobody
+thinks in terms of the Schrödinger equation when writing quantum algorithms. But we can use it to
+assist us to understand some concepts of quantum computing.
 
 The Schrödinger equation determines the evolution of an important property of
 quantum systems: the **probability amplitude** $\psi$. The probability amplitude determines probability of finding the system in a specific state, and
