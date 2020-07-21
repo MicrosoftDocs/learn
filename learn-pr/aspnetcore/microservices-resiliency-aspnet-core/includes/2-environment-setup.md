@@ -31,7 +31,7 @@ Complete the following steps to create an AKS cluster with a starter version of 
         git config --global credential.helper 'cache --timeout=7200'
     ```
 
-1. Go to the module #5 folder - **TODO: This should be changed to the final module path**:
+1. Go to the module #5 directory - **TODO: This should be changed to the final module path**:
 
     ```bash
     cd ~/clouddrive/source/module-05-devops

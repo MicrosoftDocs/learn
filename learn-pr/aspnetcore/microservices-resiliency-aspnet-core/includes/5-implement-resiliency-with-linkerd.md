@@ -13,7 +13,7 @@ In this exercise you will:
 
 To examine the effect of Linkerd on the app, revert to the original version of the app. As you recall, the original app didn't use Polly.
 
-To revert, redeploy the modified service from the original repository, using the following command from the *deploy/k8s* folder:
+To revert, redeploy the modified service from the original repository, using the following command from the *deploy/k8s* directory:
 
 ```bash
 ./deploy-application.sh --registry eshopdev --charts webshoppingagg
@@ -22,13 +22,13 @@ To revert, redeploy the modified service from the original repository, using the
 You can explore the app when it becomes fully available again to verify it's failing immediately on the configured discount code, as you just did in the previous exercise. As a refresher, complete the following tasks:
 
 - Log in to the app.
-- Click on the **.NET FOUNDATION PIN**
-- Click on the basket icon at the top right of the page.
-- Click checkout.
+- Select the **.NET FOUNDATION PIN**
+- Select the basket icon at the top right of the page.
+- Select checkout.
 - Go to the **HAVE A DISCOUNT CODE?** input.
-- Enter the code *:::no-loc text="FAIL 2 DISC-10":::* and click **APPLY**.
-- Change the code to *:::no-loc text="DISC-10":::* and click **APPLY** twice.
-- Verify that you receive the "**ERROR: 500 - Internal Server Error!**" immediately after each click.
+- Enter the code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
+- Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
+- Verify that you receive the "**ERROR: 500 - Internal Server Error!**" immediately after select **APPLY** each time.
 
 ## Install Linkerd
 
@@ -179,7 +179,7 @@ spec:
 
 ### 2. Add the ServiceProfile for the GET coupon route
 
-The `ServiceProfile` manifest content is shown next and it's already included in the *deploy/k8s/linkerd* folder, so you just have to run this command from the *deploy/k8s* folder:
+The `ServiceProfile` manifest content is shown next and it's already included in the *deploy/k8s/linkerd* directory, so you just have to run this command from the *deploy/k8s* directory:
 
 ```bash
 kubectl apply -f linkerd/coupon-serviceprofile.yaml
@@ -251,12 +251,12 @@ You should see that the updated pods have two containers now (`0/2`). One is the
 Let's explore the app behavior now with a similar process:
 
 - Log in to the app.
-- Click on the **.NET FOUNDATION PIN**
-- Click on the basket icon at the top right of the page.
-- Click checkout.
+- Select the **.NET FOUNDATION PIN**
+- Select the basket icon at the top right of the page.
+- Select checkout.
 - Go to the **HAVE A DISCOUNT CODE?** input.
-- Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and click **APPLY**.
-- Change the code to *:::no-loc text="DISC-10":::* and click **APPLY**.
+- Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
+- Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
 - You'll notice that this time, you receive the correct response almost immediately.
 
 If you check the log traces, you should see something like this:
