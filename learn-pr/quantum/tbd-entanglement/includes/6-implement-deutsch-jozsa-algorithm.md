@@ -68,14 +68,13 @@ In our case, since $f$ is binary it can either no change the phase if f(x)=0, or
 add a $-1$ phase if f(x)=1. These phase shifts applied to superposition states will be
 crucial for our algorithm.
 
-[!NOTE] Remember that multiplying a complex number $z$ by another complex number
-$u$ of
-module $1$ means to modify the phase of $z$ without affecting its magnitude. To
-see this we just need to represent the multiplication in polar coordinates. The
-number $z$ in polar coordinates is $z=|z|e^i\phi_z$, where $\phi_z$ is the phase
-of $z$. The number $y$ is just $y=e^{i\phi_y}$ since it has module one. Then the
-multiplication is $zu=|z|e^{i\phi_z}e^{i\phi_y}=|z|e^{i(\phi_z+\phi_y)}$. This
-is, a phase shift.
+>[!NOTE] Remember that multiplying a complex number $z$ by another complex
+>number $u$ of module $1$ means to modify the phase of $z$ without affecting its
+>magnitude. To see this we just need to represent the multiplication in polar
+>coordinates. The number $z$ in polar coordinates is $z=|z|e^i\phi_z$, where
+>$\phi_z$ is the phase of $z$. The number $y$ is just $y=e^{i\phi_y}$ since it
+>has module one. Then the multiplication is
+>$zu=|z|e^{i\phi_z}e^{i\phi_y}=|z|e^{i(\phi_z+\phi_y)}$. This is, a phase shift.
 
 ### Algorithm for n=1
 
