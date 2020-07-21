@@ -19,7 +19,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     :::image type="content" source="../media/8-vulnerability-assessment-settings.png" alt-text="Vulnerability assessment settings":::  
 
-1. You can also configure your Advanced Threat Protection (ATP) settings. ATP enables you to detect and respond to potential threats as they occur by providing security alerts on anomalous activities. To check the ATP alert types available, select **All** under Advanced Threat Protection types.  
+1. You can also configure your Advanced Threat Protection (ATP) settings. To check the ATP alert types available, select **All** under Advanced Threat Protection types.  
 
     :::image type="content" source="../media/8-atp-types.png" alt-text="Types of protection in ATP":::  
 
