@@ -1,3 +1,15 @@
+<div style="background:yellow;">
+TODO: I didn't touch this page, but from our conversation, let's see if we want to lead with TCO.
+
+After this unit, we might move to the TCO exercise where you help TWT understand their current cloud spend (and see what Azure thinks the savings will be.)
+
+After that, move to 2-purchase-azure-products-services and discuss pricing structure. Then do the pricing exercise.
+
+After that, move to 9-explore-minimizing-costs and then 10-define-azure-cost-management (I haven't looked closely, but perhaps we can combine them.)
+
+After that, move to the knowledge check unit and then the summary
+</div>
+
 The [Total Cost of Ownership Calculator](https://azure.microsoft.com/pricing/tco?azure-portal=true) is a tool that you use to estimate cost savings you can realize by migrating to Azure. To use the TCO calculator, complete the three steps that the following sections explain.
 
 ![Image showing the numbers 1, 2 and 3 to represent the three steps required to use the TCO calculator.](../media/total-cost-ownership-steps.png)

@@ -1,19 +1,23 @@
-Every customer likes to have visibility into expected costs of their solutions, whether running on-premises or in the cloud with Azure. In this module, we will explore how you can determine, predict, and even control your Azure spend.
+<div style="background:yellow;">
+TODO: In this module, you'll ...
+</div>
 
-> [!Tip]
-> ### Contoso shipping case study
->
-> Contoso shipping is planning to move 10 servers into the cloud using IaaS, and then get a few add-on services like cloud back, and a full fail over capability in case a site goes now. They will also want to see what the overall cost is going to be with servers on-premises and some in cloud.
+<div style="background:yellow;">
+TODO: (Boilerplate overview of TWT goes here. They're an online hardware retailer, yada yada...)
+</div>
 
-By the end of this module you will determine what are the key factors that affect the cost of a cloud deployment whether you are running all in the cloud or in a hybrid configuration.
+Tailwind Traders is planning their migration to the cloud. They've ran a few successful proof-of-concept projects and want to better understand how to understand and manage their costs before they move their workloads to Azure.
 
-**Level**: 
+Running in the datacenter requires you to maintain a facility as well as purchase, power, and cool your servers. Running in the cloud presents new ways to think about your IT expenses.
 
-Beginner
+To answer "how much will it cost?", you need to understand the factors that influence cost as well as what tools are available to you to help estimate and manage your cloud spend.
 
-**Expected learning**
+<div style="background:yellow;">
+TODO: After completing this module, you'll be able to:
+</div>
 
-+ Explore purchasing Azure products and services.
-+ Define the factors that affect your cost.
-+ Review and use the Azure Pricing Calculator and the Azure TCO Calculator.
-+ List ways of minimizing your costs.
+* Describe the different ways to purchase Azure products and services.
+* Define the factors that affect your costs.
+* Review and use the Azure Pricing Calculator and Total Cost of Ownership Calculator.
+* List ways to minimize your costs
+* Explain the purpose of Azure Cost Management + Billing (control Azure spending and optimize resource use.)

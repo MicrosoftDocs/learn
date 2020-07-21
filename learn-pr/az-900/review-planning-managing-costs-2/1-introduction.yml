@@ -2,11 +2,10 @@
 uid: learn.review-planning-managing-costs.introduction
 title: Introduction
 metadata:
-  title: Introduction
   description: "Introduction"
   ms.date: 07/03/2020
-  author: wwlpublish
-  ms.author: roberts
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

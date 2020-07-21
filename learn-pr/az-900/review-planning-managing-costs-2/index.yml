@@ -9,17 +9,18 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Review planning and managing Azure costs
-summary: Estimating costs and managing your spend are crucial skills you will want when moving into the cloud.  Lets explore your options.
+summary: Migration to the cloud presents new ways to think about your IT expenses. "How much will it cost?" is a common question organizations ask when moving to the cloud. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
 abstract: |
-  After completing this module, you will be able to:
-   - Explore purchasing Azure products and services.
-   - Define the factors that affect your cost.
-   - Review and use the Azure Pricing Calculator and the Azure TCO Calculator.
-   - List ways of minimizing your costs.
+  TODO: After completing this module, you'll be able to:
+
+    * Describe the different ways to purchase Azure products and services.
+    * Define the factors that affect your costs 
+    * Review and use the Azure Pricing Calculator and Total Cost of Ownership Calculator 
+    * List ways to minimize your costs 
+    * Explain the purpose of Azure Cost Management + Billing (control Azure spending and optimize resource use.)
 prerequisites: |
-  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+  There are no prerequisites for this course. However, having some IT knowledge or experience will make the concepts easier to understand.
 iconUrl: /learn/achievements/review-planning-managing-costs.svg
-hidden: true
 levels:
 - beginner
 roles:
@@ -32,13 +33,10 @@ products:
 - azure
 units:
 - learn.review-planning-managing-costs.introduction
-- learn.review-planning-managing-costs.purchase-azure-products-services
-- learn.review-planning-managing-costs.explore-factors-affecting-costs
-- learn.review-planning-managing-costs.identify-zones-for-billing-purposes
-- learn.review-planning-managing-costs.explore-pricing-calculator
-- learn.review-planning-managing-costs.walkthrough-use-azure-pricing-calculator
 - learn.review-planning-managing-costs.explore-total-cost-of-ownership-calculator
 - learn.review-planning-managing-costs.walkthrough-use-azure-tco-calculator
+- learn.review-planning-managing-costs.purchase-azure-products-services
+- learn.review-planning-managing-costs.walkthrough-use-azure-pricing-calculator
 - learn.review-planning-managing-costs.explore-minimizing-costs
 - learn.review-planning-managing-costs.define-azure-cost-management
 - learn.review-planning-managing-costs.knowledge-check
