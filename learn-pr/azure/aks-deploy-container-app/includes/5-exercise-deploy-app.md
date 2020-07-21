@@ -13,9 +13,9 @@ You need to create and push your container image to a container registry to depl
 
 1. Create variables for the configuration values you'll reuse in this exercise.
 
-```bash
-ACR_NAME=ContosoContainerRegistry$RANDOM
-```
+    ```bash
+    ACR_NAME=ContosoContainerRegistry$RANDOM
+    ```
 
 1. Run the `az acr create` command to create a new container registry.
 
