@@ -8,7 +8,7 @@ quantum physics to perform computations. You may have seen or heard about the Sc
 
 $$i \hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$
 
-Don't worry if you don't understand every term in this equation, fortunately,
+It captures the wavefunction, $$\psi(t)$$, and the energy Hamiltonian, $$H$$, of the system, with $$t$$ being time and $$\hbar$$ being the Plank constant. However, fortunately,
 you don't need to in order to learn quantum computing. In practice, nobody
 thinks in terms of the Schrödinger equation when writing quantum algorithms. But
 it will help us to understand some concepts of quantum computing.
