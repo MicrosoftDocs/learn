@@ -15,17 +15,29 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What are the four types of services?"
+    - content: "What's the purpose of the 'ClusterIP' service type?"
       choices:
-        - content: "'ClusterPort', 'NodeIP', 'LoadController', and 'ExternalBalancer'"
+        - content: "To freeze the cluster's IP so we can access it directly."
           isCorrect: false
-          explanation: "These types don't exist within Kubernetes"
-        - content: "'InternalIP', 'ExternalIP', 'ExternalName', and 'LoadBalancer'"
+          explanation: "The cluster's IP is already a fixed IP present in the AKS dashboard."
+        - content: "To make services available to other AKS clusters within Azure network."
           isCorrect: false
-          explanation: "Some of these types don't exist in Kubernetes"
-        - content: "'ClusterIP', 'NodePort', 'LoadBalancer', and 'ExternalName'"
+          explanation: "Services don't work across clusters. Their work is focused on their current cluster."
+        - content: "To group pods into one single IP that's only available within the cluster."
           isCorrect: true
-          explanation: "Those are the four types of services in Kubernetes"
+          explanation: "Correct, services of that type expose the selected pods internally"
+
+    - content: "What's the purpose of the 'LoadBalancer' service type?"
+      choices:
+        - content: "Exposes the service externally using Azure's load-balancing solution"
+          isCorrect: true
+          explanation: "Correct, services of that type expose the selected pods externally using an Azure Load Balancing solution"
+        - content: "To balance the flow of internal communication in the cluster."
+          isCorrect: false
+          explanation: "Services don't interfere with cluster traffic."
+        - content: "To group several different pods into a reverse proxy that's used internally in the cluster."
+          isCorrect: false
+          explanation: "It's not possible to group different pods and differentiate them using their IPs as a reverse proxy. That's how an ingress controller works."
 
     - content: "What is an Ingress?"
       choices:
