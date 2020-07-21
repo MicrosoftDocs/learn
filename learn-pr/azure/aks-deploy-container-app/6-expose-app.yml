@@ -3,7 +3,7 @@ uid: learn.aks-deploy-container-app.6-expose-app
 metadata:
   title: Enable network access to an application
   description: Enable network access to an application
-  ms.date: 04/24/2020
+  ms.date: 07/25/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
