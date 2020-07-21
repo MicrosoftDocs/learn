@@ -9,7 +9,7 @@ results using superposition, interference and entanglement.
 ## Deutsch's problem
 
 First let's introduce the problem we are going to solve. Suppose you're given a
-function $f(x):{0,1}^n\rightarrow{0,1}$, this is, a binary function that takes a string
+function $f(x):\{0,1\}^n\rightarrow\{0,1\}$, this is, a binary function that takes a string
 of bits and outputs a single bit. You're guaranteed that the function is:
 
 - either *constant*, this is, outputs the same value for all inputs.
@@ -18,7 +18,7 @@ of bits and outputs a single bit. You're guaranteed that the function is:
 
 For example, the function $f(x)=1$ for all $x$ is a constant function. On the
 other hand, the
-function $f(x)= x_{n-1}$, where x_{n-1} is the last bit of x is balanced.
+function $f(x)= x_{n-1}$, where $x_{n-1}$ is the last bit of $x$ is balanced.
 
 The task is to find out wether if a given black-box function $f(x)$ is constant
 or balanced with the least amount of calls possible.
@@ -32,7 +32,7 @@ or 1, the function could still be constant or balanced. In the best case
 scenario the second call will return a different value and we'll be able to
 conclude that the function is balanced in just 2 calls. However, if we get the
 same value for the first two calls, we'll have to keep querying the function
-until either we get a different value or until we do $\frac{2^{n}}{2}+1 queries that
+until either we get a different value or until we do $\frac{2^{n}}{2}+1$ queries that
 will return the same value - in this case we'll know for certain that the
 function will be constant.
 
@@ -51,13 +51,13 @@ a quantum operation that is used to implement a black-box function. This
 operation is implemented in a way that allows to evaluate the black-box
 function not only on individual inputs, but also on superposition of qubits.
 
-[!NOTE] This is not the same as being able to calculate the function on all
-inputs at once, since you'll be able to extract the evaluation of the qubit you
-decide to measure!
+>[!NOTE] This is not the same as being able to calculate the function on all
+>inputs at once, since you'll be able to extract the evaluation of the qubit you
+>decide to measure!
 
 The oracle has to act on quantum states instead of classical bits. To enable
-this, the integer input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1}$
-can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}$.
+this, the integer input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
+can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 
 In this tutorial we are going to implement the function $f$ using *phase
 oracles*. A phase oracle $U_f$ encodes the value of $f$ by modifying the phase the qubit register's state as follows:
@@ -73,14 +73,14 @@ $u$ of
 module $1$ means to modify the phase of $z$ without affecting its magnitude. To
 see this we just need to represent the multiplication in polar coordinates. The
 number $z$ in polar coordinates is $z=|z|e^i\phi_z$, where $\phi_z$ is the phase
-of $z$. The number $y$ is just $y=e^\phi_y$ since it has module one. Then the
+of $z$. The number $y$ is just $y=e^{i\phi_y}$ since it has module one. Then the
 multiplication is $zu=|z|e^{i\phi_z}e^{i\phi_y}=|z|e^{i(\phi_z+\phi_y)}$. This
 is, a phase shift.
 
 ### Algorithm for n=1
 
 Let's introduce the algorithm for the simplest case in which we have a function
-$f:{0,1}\rightarrow{0,1}$, this is, a binary function that maps bits to bits.
+$f:\{0,1\}\rightarrow\{0,1\}$, this is, a binary function that maps bits to bits.
 This function can be constant if $f(x)=0$ or $f(x)=1$ and balanced if $f(x)=x$
 (identity) or $f(x)=x+1$ (inversion). Classically, we need to evaluate $f$ two
 times to determine if the function is constant or balanced. With quantum
@@ -112,6 +112,6 @@ opposite, the amplitude probability of obtaining $0$ will vanish.
 
 **Exercise:** Check that if you apply $\hat H$ to the state
 $\frac{1}{\sqrt2} \big( \ket{0} - \ket{1} \big)$ the resulting state has zero
-probability of yielding **0** when measured.
+probability of yielding $0$ when measured.
 
 *Unit under construction*
