@@ -11,6 +11,6 @@ metadata:
 title: Exercise - Load data into Azure SQL Database
 durationInMinutes: 10
 azureSandbox: true
-interactive: powershell
+interactive: bash
 content: |
   [!include[](includes/8-exercise-load-data.md)]

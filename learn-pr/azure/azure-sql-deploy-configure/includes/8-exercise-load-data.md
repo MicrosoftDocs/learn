@@ -15,7 +15,13 @@ Both exercises contain the same commands and content, so you can choose the opti
 
 `sqlcmd` is a command-line utility which allows you to interact with SQL Server and Azure SQL using the command-line. In this exercise, you'll use `sqlcmd` in the PowerShell instance of the Azure Cloud shell. `sqlcmd` is installed by default, so it is easy to use from the cloud shell.
 
-1. Run the following in the integrated terminal (right-hand side of this browser) after modifying your server name and password.
+1. Due to the way the Azure Cloud shell for bash is configured, you first need to change the terminal mode by running the following command in the integrated terminal (right-hand side of this browser).
+
+    ```powershell
+    TERM=dumb
+    ```
+
+1. Run the following in the integrated terminal after modifying your server name and password.
 
     ```powershell
     sqlcmd -S <server name>.database.windows.net -P <password> -U cloudadmin -d AdventureWorks
@@ -51,6 +57,9 @@ Both exercises contain the same commands and content, so you can choose the opti
     )
     GO
     ```
+
+    > [!TIP]
+    > You'll see a number entry after the T-SQL statements representing each line of the T-SQL entry. For example, the above command will end with `26`. Be sure to select `ENTER` after this. You'll know the command has completed when you see the `1>` again (indicating `sqlcmd` is ready for the first line of your next T-SQL entry).
 
 1. Next, you must create a `MASTER KEY`.
 
