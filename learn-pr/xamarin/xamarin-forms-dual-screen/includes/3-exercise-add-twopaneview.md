@@ -1,3 +1,17 @@
+In this exercise, you'll work with an existing list-detail app. The app has a ListView that shows different country flags. The first version of the code works well on single-screen devices but does not adapt to dual-screens. You'll change the code so that it uses a dual-screen layout.
+
+## Open the starter solution
+
+In Visual Studio, open the starter solution from this module's **exercise1 > start** folder in your copy of the cloned or downloaded exercise repo.
+
+> [!NOTE]
+> If you are planning to run and debug your Xamarin apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as **C:\dev\**, to avoid build-generated files exceeding the maximum path length.
+
+1. Explore the FlagFacts shared project. The single-screen navigation relies on pushing and popping a ContentPage 
+2. Open the code-behind for both XAML pages (AllFlagsPage and FlagDetailsView)
+3. Notice that the DependencyService is used to create and set the BindingContext on both content pages.
+4. Run the application on an Android device or emulator.
+
 ## Add dual-screen NuGet
 
 1. Add the **Xamarin.Forms.Dualscreen** NuGet to your solution.
@@ -15,11 +29,11 @@
     | ConfigChanges.UiMode
     ```
 
-Now that the project is configured for dual-screen support, you can refactor the code to support two screens.
+Now that the project is configured for dual-screen support, you will refactor the code to support two screens.
 
 ## Extract controls from FlagDetailsPage
 
-The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-side on a dual-screen device you need to 
+The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-side on a dual-screen device you need to extract the controls into a custom view control:
 
 1. Create a new item in the FlagFacts project by right-clicking on the project **Add > New Item...**.
 1. Choose a XAML **Content View.**, and name it `FlagView`.
@@ -94,10 +108,10 @@ The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-s
 
 Run the modified app and it will render the list and details side-by-side. When the app is spanned it displays nicely:
 
-![TwoPaneView on a dual-screen device](media/2-twpaneview.png)
+![TwoPaneView on a dual-screen device](../media/2-twpaneview.png)
 
 However when the app starts on a single screen (and for other devices like iPhone), the default behavior is for the views to appear squashed together side-by-side on single screens too:
 
-![TwoPaneView on a single-screen](media/2-singlepane.png)
+![TwoPaneView on a single-screen](../media/2-singlepane.png)
 
 Next learn how the `DualScreenInfo` class can help to dynamically configure the `TwoPaneView` to work well for both single- and dual-screen devices.
