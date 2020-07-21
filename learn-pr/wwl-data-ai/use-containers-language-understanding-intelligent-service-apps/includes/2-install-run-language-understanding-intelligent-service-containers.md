@@ -12,16 +12,16 @@ As you access the LUIS app in this container, the endpoint hits will result in a
 ## Prepare the Docker container
 
 1. Ensure that Docker is installed and running on the host computer.
-1. Open PowerShell on the host computer, or a bash terminal on Linux or Mac
-1. Get the container image using **docker pull**
+1. Open PowerShell on the host computer, or a bash terminal on Linux or Mac.
+1. Get the container image using **docker pull**.
 
     ```powershell
     docker pull mcr.microsoft.com/azure-cognitive-services/luis:latest
     ```
 
-1. Create a folder on the host computer with a descriptive name such as **LUIS_Container**
-1. Create a folder named **input** inside the **LUIS_Container** folder
-1. Create a folder named **output** inside the **LUIS_Container** folder
+1. Create a folder on the host computer with a descriptive name such as **LUIS_Container**.
+1. Create a folder named **input** inside the **LUIS_Container** folder.
+1. Create a folder named **output** inside the **LUIS_Container** folder.
 1. Copy, or move, the exported LUIS app gzip file to the **input** folder.  Do not modify or extract the contents of this file.  Leave the gzip file intact as it was exported from the LUIS portal.
 1. You are now ready to import the LUIS app and run the container.  You will use the following command to achieve import the app.
 
@@ -64,7 +64,7 @@ The command:
 1. You can open a browser and visit localhost:5000, which is the port you assigned to the container.
 1. If all was successful, you should see a message that your container is running.
 
-:::image type="content" source="../media/run-container.png" alt-text="Container running message in browser":::
+    :::image type="content" source="../media/run-container.png" alt-text="Container running message in browser":::
 
 1. You can now query the LUIS app using the endpoint that is available.  An example of a query using CURL and a V3 endpoint, is presented here.
 1. Get the AppID from your LUIS portal and paste it in the placeholder in the command.
@@ -78,7 +78,7 @@ The command:
     ```
 
 1. If you are using a V2 endpoint, run the following CURL command instead. Note that *staging* is set to false so if your endpoint is on a staging slot, set the staging parameter to true.
-1. 1. Get the AppID from your LUIS portal and paste it in the placeholder in the command.
+1. Get the AppID from your LUIS portal and paste it in the placeholder in the command.
 
     ```bash
     curl -X GET \
