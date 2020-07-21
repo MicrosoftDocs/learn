@@ -17,7 +17,7 @@ quiz:
   questions:
     - content: "What's the purpose of the 'ClusterIP' service type?"
       choices:
-        - content: "To freeze the cluster's IP so we can access it directly."
+        - content: "To freeze the cluster's IP. So we can access it directly."
           isCorrect: false
           explanation: "The cluster's IP is already a fixed IP present in the AKS dashboard."
         - content: "To make services available to other AKS clusters within Azure network."
@@ -31,7 +31,7 @@ quiz:
       choices:
         - content: "Exposes the service externally using Azure's load-balancing solution"
           isCorrect: true
-          explanation: "Correct, services of that type expose the selected pods externally using an Azure Load Balancing solution"
+          explanation: "Correct, services of that type expose the selected pods externally using an Azure Load-Balancing solution"
         - content: "To balance the flow of internal communication in the cluster."
           isCorrect: false
           explanation: "Services don't interfere with cluster traffic."
