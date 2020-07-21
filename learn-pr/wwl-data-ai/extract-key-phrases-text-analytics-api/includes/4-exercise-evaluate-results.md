@@ -51,7 +51,7 @@ If you decide that you need different access to the JSON contents, or that you n
 
 An example of a generated class from JSON is shown here with the JSON document posted first and the C# class files following the JSON.
 
-### JSON File
+### JSON file
 
 ```json
 {
@@ -82,7 +82,7 @@ An example of a generated class from JSON is shown here with the JSON document p
 }
 ```
 
-### C# Class File
+### C# class file
 
 ```csharp
     public class Document

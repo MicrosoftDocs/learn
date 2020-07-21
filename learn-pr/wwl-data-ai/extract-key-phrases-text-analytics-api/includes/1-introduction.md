@@ -23,6 +23,8 @@ The above was a simple example of a survey scenario but we can think of a few ot
 - monitor social media feeds.  Perhaps you are running a political campaign and want to see how the candidates are being perceived on social media.  You can mine the posts on feeds, such as Twitter, and then extract key phrases from the tweets
 - evaluate a set of documents for classified or sensitive information and decide whether to release them or not
 
+## Learning objectives
+
 In this module, you will learn:
 
 - How to create the proper JSON document for the request
