@@ -29,4 +29,23 @@ Advanced data security (ADS) is a unified package for advanced SQL security capa
 * Vulnerability assessment
 * Advanced Threat Protection
 
-In the next two exercises, you'll dive into the capabilities and scenarios that Advanced data security enables.
+### Data discovery & classification
+
+Data Discovery & Classification forms a new information-protection paradigm for Azure SQL Database and Azure SQL Managed Instance, aimed at protecting the data and not just the database. This paradigm includes discovery and recommendations for potentially sensitive data that should be classified, the ability to persistently add labels to columns using metadata attributes, and the ability to audit and query sensitive data access. The portal view is only available for Azure SQL, but SQL Server supports similar functionality through a wizard in SSMS.
+
+### Vulnerability assessment
+
+At the highest level, SQL Vulnerability Assessment (VA) is a scanning service that provides visibility into your security state. It then provides actionable steps to address any potential concerns. When you configure periodic recurring scans, you're enabling the service to scan your databases every seven days and check for any vulnerabilities. You can then choose to send those reports to the admins, subscription owners, or anyone else that might need to be made notified of changes. In order for this service to operate, you have to specify a storage account for the results to be stored.
+
+### Advanced Threat Protection
+
+Advanced Threat Protection (ATP) enables you to detect and respond to potential threats as they occur by providing security alerts on anomalous activities. ATP leverages advanced monitoring and machine learning technologies to detect if any of the following threats have occurred:
+
+* SQL injection
+* SQL injection vulnerability
+* Data exfiltration
+* Unsafe action
+* Brute force attempt
+* Anomalous client login
+
+In the next two exercises, you'll dive into the capabilities and scenarios that Advanced data security enables and protects against.

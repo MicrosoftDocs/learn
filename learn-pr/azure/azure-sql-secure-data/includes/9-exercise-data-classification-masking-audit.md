@@ -1,4 +1,4 @@
-In this exercise, you will learn how to audit users trying to view columns that were marked for data classification. This exercise will combine several of the things you've already learned about in the module, and take those learnings to the next level.
+In this exercise, you'll combine your learnings from the module to walk through a scenario. You will learn how to add new data classifications and dynamic data masks, and then you'll see various methods for auditing users trying to view columns that were marked for data classification. This exercise will combine several of the things you've already learned about in the module: data protection, auditing, and Advanced data security.
 
 ## Configure data classification
 
@@ -68,7 +68,7 @@ In this exercise, you will learn how to audit users trying to view columns that 
 
     ```sql
     -- Create a new SQL user and give them a password
-    CREATE USER Bob WITH PASSWORD = 'goTitans1!';
+    CREATE USER Bob WITH PASSWORD = 'c0mpl3xPassword!';
 
     -- Until you run the following two lines, Bob has no access to read or write data
     ALTER ROLE db_datareader ADD MEMBER Bob;

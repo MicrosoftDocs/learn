@@ -29,3 +29,17 @@ quiz:
       - content: "Private Link"
         isCorrect: true
         explanation: "This will create a DNS hierarchy without information related to the Azure SQL Database logical server, and a truly private endpoint."
+    - content: "Consider the example from the unit where the Azure VM public IP address is 174.17.218.16 and the Azure VM private IP address is 10.0.0.2. When using virtual network rules to configure network access to Azure SQL Database, what will be returned from `SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;`?"
+      choices:
+      - content: "174.17.218.16"
+        isCorrect: false
+        explanation: "This would be returned if Firewall rules and/or Allow Azure Services are enabled."
+      - content: "10.0.0.2"
+        isCorrect: true
+        explanation: "This will be returned if virtual network rules or Private Endpoint(s) are enabled."
+      - content: "Both IP addresses"
+        isCorrect: false
+        explanation: "Only one IP address will be returned."
+      - content: "Neither IP address"
+        isCorrect: false
+        explanation: "Review the unit again for more information."
