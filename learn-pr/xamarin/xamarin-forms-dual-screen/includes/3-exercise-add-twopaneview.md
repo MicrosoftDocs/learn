@@ -1,49 +1,103 @@
+## Add dual-screen NuGet
 
+1. Add the **Xamarin.Forms.Dualscreen** NuGet to your solution.
+1. In the Android project, add this `Init` method in the `MainActivity.OnCreate` method:
 
-`xamarin.forms.dualscreen`
+   ```csharp
+    Xamarin.Forms.DualScreen.DualScreenService.Init(this);
+    ```
 
+1. Also in the Android project, ensure the `[Activity]` attribute in the **MainActivity.cs** file has all these attributes declared:
 
-MainActivity.OnCreate method:
+    ```@csharp
+    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation
+    | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize
+    | ConfigChanges.UiMode
+    ```
 
-```csharp
-Xamarin.Forms.DualScreen.DualScreenService.Init(this);
-```
+Now that the project is configured for dual-screen support, you can refactor the code to support two screens.
 
-```xaml
-xmlns:dualscreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
-```
+## Extract controls from FlagDetailsPage
 
+The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-side on a dual-screen device you need to 
 
-```xaml
+1. Create a new item in the FlagFacts project by right-clicking on the project **Add > New Item...**.
+1. Choose a XAML **Content View.**, and name it `FlagView`.
+1. Copy the `<ScrollView>` and its contents from **FlagDetailsPage.xaml** and paste into **FlagView.xaml**. Leave the `ToolbarItems` in the content page.
+1. Move the `OnMoreInformation` method from the content page to the content view codebehind:
+
+    ```csharp
+    private void OnMoreInformation(object sender, EventArgs e)
+    {
+        Launcher.OpenAsync(((FlagDetailsViewModel)BindingContext).CurrentFlag.MoreInformationUrl);
+    }
+    ```
+
+1. In the **FlagDetailsPage.xaml**, add a new namespace so we can add locally defined classes:
+
+    ```csharp
+    xmlns:views="clr-namespace:FlagFacts"
+    ```
+
+1. In the **FlagDetailsPage.xaml**, delete the existing content and replace with a reference to the new view:
+
+    ```csharp
+    <ContentPage.Content>
+        <views:FlagView />
+    </ContentPage.Content>
+    ```
+
+## Add TwoPaneView to AllFlagsPage
+
+1. In the **AllFlagsPage.xaml**, add a new namespace so that you can reference dual-screen controls:
+
+    ```xaml
+    xmlns:dualscreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
+    ```
+
+2. Replace the XAML content with the code below. The existing `ListView` is now wrapped in `Pane1` of the `TwoPaneView` control, and the `FlagView` content view is in `Pane2. When the app runs, these two views will appear side-by-side.
+
+    ```xaml
     <dualScreen:TwoPaneView>
         <dualScreen:TwoPaneView.Pane1>
             <!--existing ListView-->
+            <ListView ItemsSource="{Binding Flags}"
+                      SelectedItem="{Binding CurrentFlag, Mode=TwoWay}"
+                      ItemTapped="ListView_ItemTapped">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell DetailColor="Gray"
+                                   ImageSource="{Binding ImageUrl, Converter={StaticResource irConverter}}"
+                                   Text="{Binding Country}"
+                                   Detail="{Binding DateAdopted, StringFormat='Adopted on {0:d}'}"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </dualScreen:TwoPaneView.Pane1>
         <dualScreen:TwoPaneView.Pane2>
-            <!--ScrollView from FlagDetailsPage-->
+            <!--view is shared with FlagDetailsPage-->
+            <views:FlagView />
         </dualScreen:TwoPaneView.Pane2>
     </dualScreen:TwoPaneView>
-```
+    ```
 
+3. _Comment out_ the body of the `ListView_FlagTapped` method, since the list and detail are now on the same ContentPage, databinding takes care of the selected item being displayed.
 
-Remove the item tapped handler, since the list and detail are now on the same ContentPage, databinding takes care of the selected item being displayed.
+    ```csharp
+    private async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
+    {
+        //await this.Navigation.PushAsync(new FlagDetailsPage());
+    }
+    ```
 
-```xaml
-ItemTapped="ListView_ItemTapped"
-```
+## Run the app
 
-Also remove the implementation:
+Run the modified app and it will render the list and details side-by-side. When the app is spanned it displays nicely:
 
-```csharp
-private async void ListView_ItemTapped(object sender, ItemTappedEventArgs e)
-{
-    await this.Navigation.PushAsync(new FlagDetailsPage());
-}
-```
+![TwoPaneView on a dual-screen device](media/2-twpaneview.png)
 
+However when the app starts on a single screen (and for other devices like iPhone), the default behavior is for the views to appear squashed together side-by-side on single screens too:
 
+![TwoPaneView on a single-screen](media/2-singlepane.png)
 
-
-```xaml
-MinWideModeWidth="550"
-```
+Next learn how the `DualScreenInfo` class can help to dynamically configure the `TwoPaneView` to work well for both single- and dual-screen devices.

@@ -3,14 +3,23 @@ Dual screen
 ## NuGet
 
 1. Add the **Xamarin.Forms.Dualscreen** NuGet to your solution.
-1. In the Android project
+1. In the Android project, add this `Init` method in the `MainActivity.OnCreate` method:
+
    ```csharp
     Xamarin.Forms.DualScreen.DualScreenService.Init(this);
     ```
 
+1. Also in the Android project, ensure the `[Activity]` attribute in the **MainActivity.cs** file has all these attributes declared:
+
+    ```@csharp
+    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation
+    | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize
+    | ConfigChanges.UiMode
+    ```
+
 ## DualScreenInfo
 
-The `DualScreenInfo` class provides a number of methods
+The `DualScreenInfo` class provides a number of methods:
 
 - **SpanningBounds** – when spanned across two screens, return two rectangles indicating the bounds of each visible area. If the window isn't spanned this will return an empty array.
 - **HingeBounds** – the position of the hinge on the screen.
@@ -59,12 +68,12 @@ There are three display modes:
 
 ## User interface patterns
 
-![Stylized representations of five user-interface patterns for dual-screens](media/2-dual-screen-app-patterns.png)
+![Stylized representations of five user-interface patterns for dual-screens](../media/2-dual-screen-app-patterns.png)
 
 - Extended canvas - useful for maps or a drawing canvas
-- Master-detail - hierarchical navigation through data
+- Lost-detail - hierarchical navigation through data
 - Two Page - book reading experience
 - Dual view - different views of the same data (such as a list and a map)
 - Companion pane - tool palettes or game controllers
 
-These are described in more detail in the [docs](https://docs.microsoft.com/dual-screen/introduction#dual-screen-app-patterns).
+These are described in more detail in the [dual-screen documentation](https://docs.microsoft.com/dual-screen/introduction#dual-screen-app-patterns).
