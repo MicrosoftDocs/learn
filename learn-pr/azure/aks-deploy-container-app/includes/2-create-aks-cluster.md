@@ -1,4 +1,4 @@
-Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. However, before you can deploy any application, you need to create your AKS cluster. 
+Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. However, before you can deploy any application, you need to create your AKS cluster.
 
 We'll review a few concepts that allow you to deploy a new AKS cluster successfully.
 
@@ -16,7 +16,7 @@ A cluster is node-based. There are two types of nodes in a Kubernetes cluster th
 
 ## Cluster architectures
 
-There are several architectural considerations you have to keep in mind when deploying a Kubernetes cluster. 
+There are several architectural considerations you have to keep in mind when deploying a Kubernetes cluster.
 
 For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes scheduler will try to reschedule all the workloads running on this node onto the remaining nodes in the cluster.
 
@@ -42,7 +42,7 @@ The single control plane and a single node is a variant of the previous architec
 
 ## AKS concepts
 
-When you create a new AKS cluster, you have several different items of information that you need to configure.  Each item impacts the final configuration of your cluster. 
+When you create a new AKS cluster, you have several different items of information that you need to configure.  Each item impacts the final configuration of your cluster.
 
 These items include:
 
@@ -70,9 +70,9 @@ AKS allows you to overcome the complexity by enabling what is called HTTP applic
 
 ### Ingress Controllers
 
-Ingress Controllers provide the capability to deploy and expose your applications to the world without the need to configure network-related services. 
+Ingress Controllers provide the capability to deploy and expose your applications to the world without the need to configure network-related services.
 
-:::image type="content" source="../media/2-4-httpar-diagram.png" alt-text="HTTP Application Routing Diagram":::
+:::image type="content" source="../media/2-4-http-application-routing-diagram.png" alt-text="HTTP Application Routing Diagram":::
 
 Ingress Controllers create a reverse-proxy server that automatically allows for all the requests to be served from a single DNS output. You don't have to create a DNS record every time a new service is deployed. The ingress controller will take care of it. When a new ingress is deployed to the cluster, the Ingress Controller creates a new record on an Azure-managed DNS zone and link it to an existing load balancer. This functionality allows for easy access to the resource through the Internet without the need for additional configuration.
 
