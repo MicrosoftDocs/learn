@@ -2,7 +2,7 @@ In this exercise, you'll create an AKS cluster to deploy a sample component for 
 
 ## Create a new cluster
 
-You start the AKS cluster deployment by provisioning the cluster within Azure. Provisioning an AKS cluster in Azure can be done in the Azure portal or through the Azure CLI. 
+You start the AKS cluster deployment by provisioning the cluster within Azure. Provisioning an AKS cluster in Azure can be done in the Azure portal or through the Azure CLI.
 
 [!INCLUDE [azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -11,7 +11,7 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
-1. Create variables for the configuration values you'll reuse through out the exercises.
+1. Create variables for the configuration values you'll reuse throughout the exercises.
 
     ```bash
     RESOURCE_GROUP=contoso-aks
@@ -66,4 +66,3 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
     aks-nodepool1-14167704-vmss000001   Ready    agent   105s   v1.16.10
     aks-nodepool1-14167704-vmss000002   Ready    agent   105s   v1.16.10
     ```
-    
