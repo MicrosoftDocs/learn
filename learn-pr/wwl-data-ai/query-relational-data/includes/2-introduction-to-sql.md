@@ -65,7 +65,16 @@ You can also run SELECT statements that retrieve data from multiple tables using
 - Specifying the column from each table to be used for the join. A typical join condition specifies a foreign key from one table and its associated primary key in the other table.
 - Specifying a logical operator (for example, = or <>,) to be used in comparing values from the columns.
 
-The following query shows an example that joins two tables, named *Inventory* and *CustomerOrder*. It retrieves all rows where the value in the ID column in the Inventory table matches the value in the *InventoryId* column in the *CustomerOrder* table. 
+The following query shows an example that joins two tables, named *Inventory* and *CustomerOrder*. It retrieves all rows where the value in the *ID* column in the *Inventory* table matches the value in the *InventoryID* column in the *CustomerOrder* table. 
+
+```SQL
+SELECT *
+FROM Inventory
+JOIN CustomerOrder
+WHERE Inventory.ID = CustomerOrder.InventoryID
+```
+
+SQL provides aggregate functions. An aggregate function calculate a single result across a set of rows or an entire table. The example below finds the minimum value in the *MyColumn1* column across all rows in the *MyTable* table:
 
 ```SQL
 SELECT MIN(MyColumn1)
