@@ -20,7 +20,7 @@ This exercise steps through the process of preparing a submission for the key ph
 
 ## Create Visual Studio Codespace environment
 
-1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)
+1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
 
     An Azure subscription is required to create an environment for Visual Studio Codespaces.
     > [!NOTE]
@@ -138,7 +138,7 @@ This exercise steps through the process of preparing a submission for the key ph
 
 1. Paste your key and endpoint into the placeholders in the Main() method.
 1. Before you run the code, you will need to add the TextAnalytics package to the application.  Enter the following command to add the package, ``` dotnet add package Microsoft.Azure.CognitiveServices.Language.TextAnalytics ```, and press Enter.
-1. Once the package is added, in the Terminal, enter the command ``` dotnet run ```
+1. Once the package is added, in the Terminal, enter the command ``` dotnet run ```.
 1. If there are no errors in the code and your key is accurate, key phrases from each sentence will be output to the terminal window.
 
    >[!NOTE]

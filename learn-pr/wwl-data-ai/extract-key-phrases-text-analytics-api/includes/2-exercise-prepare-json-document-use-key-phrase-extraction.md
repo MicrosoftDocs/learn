@@ -40,7 +40,7 @@ Note the entries in the JSON array consist of a language attribute, an ID attrib
 ## Use the API Testing Console to test the service
 
 1. Ensure that you have a Cognitive Services resource created in your Azure subscription.  You will need the access key.
-1. Open the [Text Analytics API testing console](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c6)
+1. Open the [Text Analytics API testing console](https://westcentralus.dev.cognitive.microsoft.com/docs/services/TextAnalytics-v2-1/operations/56f30ceeeda5650db055a3c6).
 1. You can read more about the API here to understand the locations in which it is available and see samples of the request and response for the service.
 1. In the left pane, select **POST Key Phrases**.
 1. Scroll down the page until you locate the service location buttons.
