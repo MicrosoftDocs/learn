@@ -11,15 +11,15 @@ Complete the following steps to create an AKS cluster with a starter version of 
 1. Create the base source directory:
 
     ```bash
-    cd ~/clouddrive
-    mkdir source
-    cd source
+    cd ~/clouddrive && \
+        mkdir source && \
+        cd source
     ```
 
 1. Clone your GitHub repository:
 
     ```bash
-    git clone https://github.com/{your-github-account}/eShop-Learn.git
+    git clone https://github.com/{your-github-account}/eShop-Learn
     ```
 
     If asked for GitHub credentials, generate a personal access token (PAT) for your account per the instructions at [Creating a token](https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token#creating-a-token). Use the PAT as the password.
@@ -27,8 +27,8 @@ Complete the following steps to create an AKS cluster with a starter version of 
     It's also recommended that you enable credential caching with these commands:
 
     ```bash
-    git config --global credential.helper cache
-    git config --global credential.helper 'cache --timeout=7200'
+    git config --global credential.helper cache && \
+        git config --global credential.helper 'cache --timeout=7200'
     ```
 
 1. Go to the module #5 folder - **TODO: This should be changed to the final module path**:
@@ -46,8 +46,8 @@ Complete the following steps to create an AKS cluster with a starter version of 
 1. Run the quickstart script:
 
     ```bash
-    cd deploy/k8s
-    ./quickstart.sh --resource-group eshop-learn-rg --location westus
+    cd deploy/k8s && \
+        ./quickstart.sh --resource-group eshop-learn-rg --location westus
     ```
 
     You can change the resource group and location parameters to better suit your needs.
