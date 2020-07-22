@@ -20,7 +20,7 @@ prerequisites: |
   - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true), installed locally
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension, installed locally
-  - Either:
+  - One of these:
     - The latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools, installed locally
     - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true), installed locally
 iconUrl: /learn/achievements/modify-azure-resource-manager-template-reuse.svg
