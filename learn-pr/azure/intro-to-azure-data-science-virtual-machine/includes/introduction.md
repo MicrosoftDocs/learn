@@ -1,4 +1,4 @@
-The Data Science Virtual Machine (DSVM) is a customized VM image on the Azure cloud platform built specifically for doing data science. It has many popular data science tools preinstalled and preconfigured to jumpstart building intelligent applications for advanced analytics. 
+The Data Science Virtual Machine (DSVM) is a customized VM image built specifically for doing data science. The Data Science Virtual Machine runs on the Azure cloud platform built specifically for doing data science. It has many popular data science tools preinstalled and preconfigured to jumpstart building intelligent applications for advanced analytics. 
 
 If you work with data, you know: Wrangling data is time-consuming. Wrangling data requires different tools for different tasks. Wrangling data can require large amounts of storage and RAM, challenge the CPU/GPU, and be difficult to replicate. Sharing data and tools can be difficult and involve fragile data transmissions or "sneakernet" sharing of drives.
 
@@ -13,16 +13,16 @@ You may, of course, buy or build your own machine and configure it just as you c
 
 With a Data Science Virtual Machine, you only pay for when the machine is running. If you're worried about forgetting to shut down the machine, you can schedule a daily shutdown at the time of your choosing. You can connect to the machine's command line interface or use it's graphical desktop.
 
-![Screenshot of the desktop of the DSVM running Jupyter](../media/jupyter-running-pytorch-in-dsvm.png)
+![Screenshot of the desktop of the Data Science Virtual Machine running Jupyter](../media/jupyter-running-pytorch-in-dsvm.png)
 
-The DSVM has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the DSVM on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but popular packages, development environments, and Jupyter kernels.
+The Data Science Virtual Machine has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the Data Science Virtual Machine on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but popular packages, development environments, and Jupyter kernels.
 
 ## Learning objectives
 
 In this module, you will:
 
-* Match operating systems and hardware resources available for the DSVM
+* Match operating systems and hardware resources available for the Data Science Virtual Machine
 * Specify and create a Data Science Virtual Machine running Ubuntu Server 18.04 LTS
-* Connect to the command line of the DSVM with SSH 
-* Connect to the graphical Desktop of the DSVM with X2Go Client 
-* Demonstrate the use of a R Server running inside the DSVM
+* Connect to the command line of the Data Science Virtual Machine with SSH 
+* Connect to the graphical Desktop of the Data Science Virtual Machine with X2Go Client 
+* Demonstrate the use of a R Server running inside the Data Science Virtual Machine
