@@ -118,4 +118,4 @@ If the app is spanned, the list and detail is shown side-by-side using `TwoPaneV
 
 When you span or unspan the app, the detail will be pushed onto the navigation stack or popped off the navigation stack as required.
 
-![List rendering correctly in single screen](../media/4-list.png) ![Detail rendering correctly in single screen](../media/4-detail.png)
+![List rendering correctly in single screen](../media/5-list.png) ![Detail rendering correctly in single screen](../media/5-detail.png)

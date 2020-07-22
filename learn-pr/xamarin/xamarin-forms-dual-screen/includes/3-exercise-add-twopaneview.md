@@ -109,8 +109,8 @@ The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-s
 
 Run the modified app and it will render the list and details side-by-side. When the app is spanned it displays nicely:
 
-![TwoPaneView on a dual-screen device](../media/2-twpaneview.png)
+![TwoPaneView on a dual-screen device](../media/3-twopaneview.png)
 
 However when the app starts on a single screen (and for other devices like iPhone), the default behavior is for the views to appear squashed together side-by-side on single screens too:
 
-![TwoPaneView on a single-screen](../media/2-singlepane.png)
+![TwoPaneView on a single-screen](../media/3-singlepane.png)
