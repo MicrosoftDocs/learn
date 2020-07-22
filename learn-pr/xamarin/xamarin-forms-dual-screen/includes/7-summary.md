@@ -12,4 +12,3 @@ We can build on the classes introduced in this module to make our application ev
 ## Learn more
 
 - [Build 2020 - How to bring your Android apps to Surface Duo with Xamarin](https://youtu.be/dgGfxRtWrig)
-- 

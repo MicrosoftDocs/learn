@@ -70,7 +70,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
 
     When the app is moved to single screen, the `if` statement checks if the app was previously spanned, and if so, pushes the flag details onto the navigation stack. This ensures the app navigation works as expected when unspanning back to a single screen.
 
-1. Revisit the **AllFlagsView.cs** code behind to uncomment the `ListView_FlagTapped` method, and add a check for `!IsDeviceSpanned`:
+1. Revisit the **AllFlagsView.xaml.cs** code behind to uncomment the `ListView_FlagTapped` method, and add a check for `!IsDeviceSpanned`:
 
     ```csharp
     private async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
@@ -86,7 +86,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
 
 ## Update the FlagDetailsPage code-behind
 
-1. Add the following methods from above to **FlagDetailsPage.xaml.cs**:
+1. Add the these methods from above to **FlagDetailsPage.xaml.cs**:
 
     - DeviceIsSpanned
     - OnAppearing
@@ -108,7 +108,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
     }
     ```
 
-    This will cause the detail content page to be removed if the app is spanned, which is important because Pane2 shows the detail on the second screen.
+    This will cause the detail content page to be hidden if the app is spanned, which is important because Pane2 shows the detail on the second screen.
 
 ## Run the app
 
