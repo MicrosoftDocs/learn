@@ -1,4 +1,4 @@
-The Data Science Virtual Machine (DSVM) is a customized VM image built specifically for doing data science. The Data Science Virtual Machine runs on the Azure cloud platform built specifically for doing data science. It has many popular data science tools preinstalled and preconfigured to jumpstart building intelligent applications for advanced analytics. 
+The Data Science Virtual Machine (DSVM) is a customized VM image built specifically for doing data science. The Data Science Virtual Machine runs on the Azure cloud platform. The virtual machine image has many popular data science tools preinstalled and preconfigured to jumpstart building intelligent applications for advanced analytics. 
 
 If you work with data, you know: Wrangling data is time-consuming. Wrangling data requires different tools for different tasks. Wrangling data can require large amounts of storage and RAM, challenge the CPU/GPU, and be difficult to replicate. Sharing data and tools can be difficult and involve fragile data transmissions or "sneakernet" sharing of drives.
 

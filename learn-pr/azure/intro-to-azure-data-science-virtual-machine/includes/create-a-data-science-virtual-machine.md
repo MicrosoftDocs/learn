@@ -1,11 +1,12 @@
-Once you have decided to use a Data Science Virtual Machine to explore your domain, you need to decide whether you'd prefer Windows Server 2019 or Ubuntu Server 18.04 LTS as the operating system. Additionally, you should plan what hardware and network resources you'd like the Data Science Virtual Machine to use. 
+## Activate the Learn sandbox
 
-This should show the name of the Sandboxed RG: <rgn>[sandbox resource group name]</rgn>
+Use the above button to activate the Learn Sandbox. This will create an Azure Resource Group, a container for resources relating to a single project domain. This resource group will be available for an hour and will allow you to create a Data Science Virtual Machine, connect to it, and run programs.
 
-Go to [portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
+## Creating a Data Science Virtual Machine
 
+Once you have decided to use a Data Science Virtual Machine to explore your domain, you need to decide whether you'd prefer Windows Server 2019 or Ubuntu Server 18.04 LTS as the operating system. Additionally, you should plan what hardware and network resources you'd like the Data Science Virtual Machine to use.
 
-## Data Science Virtual Machine Operating System choices 
+## Data Science Virtual Machine Operating System choices
 
 There are two Data Science Virtual Machine images:
 
@@ -13,8 +14,6 @@ There are two Data Science Virtual Machine images:
 * Ubuntu Server 18.04 LTS
 
 Both machines contain a variety of tools for data science and deep learning.
-
-TODO: Maybe even a Venn diagram... 
 
 | Windows Server 2019   only                        | Both Machines                                        | Ubuntu Server 18.04 LTS only           |
 |---------------------------------------------------|------------------------------------------------------|-----------------------------|
@@ -42,77 +41,6 @@ TODO: Maybe even a Venn diagram...
 |                                                   | Visual Studio Code                                   |                             |
 |                                                   | Vowpal Wabbit                                        |                             |
 |                                                   | XGBoost                                              |                             |
-
-### Software available on both machines
-
-Apache Drill
-Apache Spark (standalone)
-Azure CLI
-Azure Machine Learning Python and R SDKs and samples
-Azure SDK
-Azure Storage Explorer
-CUDA 
-cuDNN
-Git and Git Bash
-Julia
-Jupyter Notebook server with kernels for:
-    - Julia
-    - PySpark
-    - Python
-    - Python 3 Spark - HDInsight
-    - R
-    - R Spark - HDInsight
-    - Scala Spark - HDInsight
-Node.js
-NVidia System Management Interface
-OpenJDK
-PyCharm Community Edition
-Python with miniconda environments preinstalled
-PyTorch
-R with CRAN-R popular packages preinstalled
-RStudio Desktop
-SQL Server 2019 Developer Edition
-Tensorflow 2 / Keras
-Visual Studio Code
-Vowpal Wabbit
-XGBoost
-
-### Software only available on Windows Server 2019
-
-.NET Framework
-AdlCopy (Azure Data Lake Storage)
-AzCopy
-Azure Cosmos DB Data Migration Tool
-Microsoft Edge Browser
-Microsoft Office ProPlus with shared activation
-Nano
-Notepad++
-Power BI Desktop
-SQL Server Integration Service
-SQL Server Management Studio
-Visual Studio 2019 Community Edition
-
-### Software only available on Ubuntu Server 18.04 LTS
-
-Atom
-Blob FUSE driver
-CatBoost
-Dlib
-Docker (TODO: Check!)
-Emacs
-H2O
-Horovod
-Intel MKL
-IntelliJ IDEA
-JupyterHub / JupyterLab
-LightGBM
-Nccl
-ONNX Runtime (TODO: Check!)
-OpenCV (TODO: Check!)
-Rattle
-RStudio Server
-Squirrel SQL
-Vim
 
 ## Processor, RAM, and Disk Choices
 
@@ -156,9 +84,9 @@ You may resize your Data Science Virtual Machine as your requirements change. Fo
 We need to configure the basic parameters of our Ubuntu virtual machine. 
 
 1. Use the following values on the **Basics** tab.
-    - The **Subscription** should be set to _Concierge Subscription_
+    - Set the **Subscription** to _Concierge Subscription_
 
-    - The **Resource Group** should be set to <rgn>[sandbox resource group name]</rgn>
+    - Set the **Resource Group** to <rgn>[sandbox resource group name]</rgn> (this is the Sandbox resource group)
 
     - Enter the **Virtual machine name** as _test-ubuntu-dsvm_
 
@@ -167,7 +95,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
 
     - For **Availability options**, choose _No infrastructure redundancy required_
 
-    - The **Image** should be the _Data Science Virtual Machine - Ubuntu 18.04_ option we selected from the Marketplace
+    - The **Image** should be the _Data Science Virtual Machine - Ubuntu 18.04_ option you selected from the Marketplace
 
     - Check to make sure the **Size** of the VM set as _Standard\_DS1\_v2_
     - Change the **Authentication Type** to _Password_
@@ -186,7 +114,5 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
 1. Here you can see all the information and configuration options for your newly created Data Science Virtual Machine. One of the pieces of information is the **Public IP address**.
 
     ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/dsvm-summary-started-in-portal.png)
-
-1. Securing access 
 
 Congratulations! With a few steps, you deployed a Data Science Virtual Machine running on Linux. Let's connect to it. 
