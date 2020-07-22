@@ -1,8 +1,4 @@
-Quantum computers are presumably faster than classical computers for certain 
-tasks. Some quantum algorithms, like integer factorization, offer exponential
-speed ups against their classical counterparts. But, why? How does quantum
-computing differ from classical computing and how is it related with more
-powerful devices?
+Quantum computers work in fundamentally different ways from classical computers. They can offer solutions when classical computers run into limitations. Quantum algorithms is not always faster than their classical counterparts. But for certain tasks, such as factorizing large numbers or searching for items in an unordered list, quantum computers prove to provide exponential speed-ups. How does it work?
 
 In this module we will introduce some fundamental concepts of quantum computing
 like superposition, entanglement and interference. We will make use of Q# and
