@@ -1,4 +1,4 @@
-In this exercise, we're going to fix display for single-screens, so that the app adapts to all device types.
+In this exercise, we're going to fix how the panes display on single-screens, so that the app adapts to all device types.
 
 We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise1 > final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.
 
@@ -70,7 +70,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
 
     When the app is moved to single screen, the `if` statement checks if the app was previously spanned, and if so, pushes the flag details onto the navigation stack. This ensures the app navigation works as expected when unspanning back to a single screen.
 
-1. Revisit the **AllFlagsView.xaml.cs** code behind to uncomment the `ListView_FlagTapped` method, and add a check for `!IsDeviceSpanned`:
+1. Revisit **AllFlagsView.xaml.cs** to uncomment the `ListView_FlagTapped` method, and add a check for `!IsDeviceSpanned`:
 
     ```csharp
     private async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
@@ -86,12 +86,12 @@ We'll continue with the solution from the previous exercise. If you don't alread
 
 ## Update the FlagDetailsPage code-behind
 
-1. Add the these methods from above to **FlagDetailsPage.xaml.cs**:
+1. Add the these methods (exactly as above) to **FlagDetailsPage.xaml.cs**:
 
     - DeviceIsSpanned
     - OnAppearing
     - OnDisappearing
-    - Current_PropertyChanged
+    - DualScreen_PropertyChanged
 
 1. In **FlagDetailsPage.xaml.cs** implement `UpdateLayouts` as shown here:
 
@@ -114,8 +114,8 @@ We'll continue with the solution from the previous exercise. If you don't alread
 
 Now when you start the app on a single screen, it uses the navigation stack to switch between the list and the detail page.
 
-If the app is spanned, the list and detail is shown side-by-side using `TwoPaneView`.
+If the app is spanned, the list and detail view is shown side-by-side using `TwoPaneView`.
 
-When you span or unspan the app, the detail will be pushed onto the navigation stack or popped off the navigation stack as required. These screenshots show how the app working on a single screen:
+When you span or unspan the app, the detail view will be pushed onto the navigation stack or popped off the navigation stack as required. These screenshots show how the app working on a single screen:
 
 ![List rendering correctly in single screen](../media/5-list.png) and ![Detail rendering correctly in single screen](../media/5-detail.png)
