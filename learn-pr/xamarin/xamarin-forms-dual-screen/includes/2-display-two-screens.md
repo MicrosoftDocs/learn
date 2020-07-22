@@ -3,7 +3,7 @@ Xamarin.Forms provides two different classes that can help display content on du
 - **TwoPaneView** - a layout control that can host other controls and automatically adapt to two screens.
 - **DualScreenInfo** - a helper class that provides access to screen information to help adapt your app for two screens.
 
-To access these in your Xamarin.Forms apps, add the **Xamarin.Forms.DualScreen** NuGet to your solution.
+To access these in your Xamarin.Forms apps, add the **Xamarin.Forms.DualScreen** NuGet to your solution and call the `DualScreenService.Init(this)` method in the Android main activity `OnCreate`.
 
 ## Use TwoPaneView
 
@@ -58,6 +58,8 @@ public bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMod
 The other properties can be used to affect your app layouts, even if you choose not to take advantage of the TwoPaneView.
 
 ## User interface patterns
+
+We have identified five common user interface design patterns
 
 ![Stylized representations of five user-interface patterns for dual-screens](../media/2-dual-screen-app-patterns.png)
 

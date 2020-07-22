@@ -28,7 +28,7 @@ private void DualScreen_PropertyChanged(object sender, PropertyChangedEventArgs 
 
 ## Determining if the application is spanned
 
-The `DualScreenInfo.Current.SpanMode` property can be used to check whether the application is spanned. This property can be added to your app:
+`DualScreenInfo.Current.SpanMode` can be used to check whether the application is spanned. YOu can create a property to check for spanning like this:
 
 ```csharp
 public bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMode.SinglePane;
@@ -56,3 +56,8 @@ public async void UpdateLayouts()
 ```
 
 Because the second pane is only shown when the application is spanned, you should write additional code to manage navigation to that view when required.
+
+`DualScreenInfo` has additional properties that you could use to update your own custom layouts for single- or dual-screen display:
+
+- **SpanningBounds** – when spanned across two screens, return two rectangles indicating the bounds of each visible area. If the window isn't spanned this will return an empty array.
+- **HingeBounds** – the position of the hinge on the screen. You can use this information to ensure your custom layouts don't get obscured by the hinge.

@@ -36,10 +36,10 @@ Now that the project is configured for dual-screen support, you will refactor th
 
 The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-side on a dual-screen device you need to extract the controls into a custom view control:
 
-1. Create a new item in the FlagFacts project by right-clicking on the project **Add > New Item...**.
-1. Choose a XAML **Content View.**, and name it `FlagView`.
-1. Copy the `<ScrollView>` and its contents from **FlagDetailsPage.xaml** and paste into **FlagView.xaml**. Leave the `ToolbarItems` in the content page.
-1. Move the `OnMoreInformation` method from the content page to the content view codebehind:
+1. Create a new item in the FlagFacts project by right-clicking on the project and choosing **Add > New Item...**.
+1. Choose the XAML **Content View.**, and name it `FlagView`.
+1. Copy the `<ScrollView>` and all its contents from **FlagDetailsPage.xaml** and paste into **FlagView.xaml**. Leave the `ToolbarItems` in the original content page.
+1. Move the `OnMoreInformation` method from the content page to the **FlagView.xaml.cs** codebehind:
 
     ```csharp
     private void OnMoreInformation(object sender, EventArgs e)
@@ -54,13 +54,15 @@ The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-s
     xmlns:views="clr-namespace:FlagFacts"
     ```
 
-1. In the **FlagDetailsPage.xaml**, delete the existing content and replace with a reference to the new view:
+1. In the **FlagDetailsPage.xaml**, delete the existing `<ScrollView>` content and replace with a reference to the new view:
 
     ```csharp
     <ContentPage.Content>
         <views:FlagView />
     </ContentPage.Content>
     ```
+
+We will use the `FlagView` in this unit below, and the `FlagDetailsPage` later in the module.
 
 ## Add TwoPaneView to AllFlagsPage
 
