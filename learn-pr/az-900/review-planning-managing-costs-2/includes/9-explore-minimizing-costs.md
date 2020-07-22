@@ -1,3 +1,11 @@
+<div style="background:yellow;">
+TODO: OK, we did the TCO calculator, then looked at pricing. Now let's shift the scenario to minimzing costs. 
+
+Maybe you met with the CFO again and want to get a sense of how to manage and minimize costs. Maybe there's another set of probing questions for you to answer.
+
+Start with the narrative, ask some probing questions, answer them here. And we're done.
+</div>
+
 The following best practice guidelines can help minimize your Azure costs.
 
 ## Perform cost analyses
@@ -47,3 +55,23 @@ Keep up-to-date with the latest Azure customer and subscription offers, and swit
 ## Apply tags to identify cost owners
 
 Tags help you manage costs associated with the different groups of Azure products and resources.  You can apply tags to groups of Azure products and resources to organize billing data. For example, if you run several virtual machines for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance, or by environment, such as Production or Test. Tags make it easy to identify groups that generate the biggest Azure costs, so you can adjust your spending accordingly.
+
+## What is Azure Cost Management?
+
+[Cost Management](https://azure.microsoft.com/services/cost-management?azure-portal=true) is an Azure product that provides a set of tools for monitoring, allocating, and optimizing your Azure costs.
+
+![Three graphics that depict a company's cost analysis by meter category, resource location, and resource group name.](../media/cost-management.png)
+
+The main features of the Azure Cost Management toolset include:
+
++ **Reporting**. Generate reports using historical data to forecast future usage and expenditure.
+
++ **Data enrichment**. Improve accountability by categorizing resources with tags that correspond to real-world business and organizational units.
+
++ **Budgets**. Create and manage cost and usage budgets by monitoring resource demand trends, consumption rates, and cost patterns.
+
++ **Alerting**. Get alerts based on your cost and usage budgets.
+
++ **Recommendations**. Receive recommendations to eliminate idle resources and to optimize the Azure resources you provision.
+
++ **Price**. Free to Azure customers.

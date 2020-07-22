@@ -1,20 +1,32 @@
-<div style="background:yellow;">
-TODO: Tom is currently working on this page.
-</div>
+In this part, you'll learn how to purchase Azure services as well as get a sense for other factors that affect cost.
 
-<div style="background:yellow;">
-TODO: In this part, you'll ...
-</div>
+You meet with your Chief Financial Officer and some of the team leads. You learn about some assumptions you've missed and were able to quickly update your total estimated spend through the Total Cost of Ownership (TCO) Calculator.
+
+During the meeting, a few more questions came up as the discussion moved towards cloud migration:
+
+> [!div class="checklist"]
+> * How do we purchase Azure services?
+> * What other factors affect the final cost?
+> * How do inbound and outbound network traffic affect cost?
+> * How can we get a more detailed estimate of the cost to run on Azure?
+
+You agree to research these questions a bit more, so let's review each one in greater detail.
 
 ## How do I purchase Azure services?
 
 There are three main ways to purchase services on Azure. They are:
 
-- **Through an Enterprise Agreement**. Enterprise customers sign an Enterprise Agreement with Azure that commits them to spending a predetermined amount on Azure services, which is typically paid annually. As an enterprise customer, you can receive customized pricing based on the kinds and the amount of services you plan on using.
+* **Through an Enterprise Agreement**
 
-- **Directly from the web**. Here, you pay standard prices for Azure resources. You're billed monthly and make payments through the Azure website.
+    Enterprise customers sign an Enterprise Agreement with Azure that commits them to spending a predetermined amount on Azure services, which is typically paid annually. As an enterprise customer, you can receive customized pricing based on the kinds and the amount of services you plan on using.
 
-- **Through a Cloud Solution Provider**. A Cloud Solution Provider (CSP) is a Microsoft partner that you hire to build solutions on top of Azure. You're typically billed for Azure usage directly through your CSP.
+* **Directly from the web**
+
+    Here, you pay standard prices for Azure resources. You're billed monthly and make payments through the Azure website.
+
+* **Through a Cloud Solution Provider (CSP)**
+
+    A CSP is a Microsoft partner that you hire to build solutions on top of Azure. You're typically billed for Azure usage directly through your CSP.
 
 <div style="background:yellow;">
 TODO: Diagram doesn't match above bullets. And do we even need a graphic?
@@ -42,34 +54,39 @@ The point is, you're always charged based on what you use. As a brief example, c
 TODO: Not sure I like this, but I rewrote what was there to make it more of a digestible story.
 </div>
 
-When you deallocate a VM, you still keep the VM, but the VM is not assigned to a CPU or network in Azure's datacenter. However, the associated hard disks remain with your data, and the resource is present in your Azure subscription. It's similar to turning off your physical computer. While the VM is deallocated,, you're not billed for compute time or for the VM's private IP address; you're billed only for your disk storage. Deallocating a VM when you don't plan on using it for some time is just one example of how to minimize costs.
+When you deallocate a VM, you still keep the VM, but the VM is not assigned to a CPU or network in Azure's datacenter. However, the associated hard disks remain with your data, and the resource is present in your Azure subscription. It's similar to turning off your physical computer. While the VM is deallocated, you're not billed for compute time or for the VM's private IP address; you're billed only for your disk storage. Deallocating a VM when you don't plan on using it for some time is just one example of how to minimize costs.
 
 ## Which factors affect the final cost?
 
 <div style="background:yellow;">
-TODO: I'm not done, but this is about where I ended. Feel free to pick up or let me work on it more later this evening.
+TODO: Weak lead-in sentence. Improve it.
+Also, I'm not in love with this section. Can we trim down to bullet points and a paragraph for each? (like we do for the first H2?)
 </div>
 
-When you provision an Azure resource, Azure creates one or more meter instances for that resource. The meters track the resources' usage, and each meter generates a usage record that is used to calculate your bill.
+Usage meters, resource types, services, and location all impact your final cost. Let's review what each of these mean.
 
 ### Usage meters
 
-For example, a single virtual machine that you provision in Azure might have the following meters tracking its usage:
+When you provision a resource, Azure creates _meters_ to track usage of that resource. Azure uses these meters to generate a usage record that's later used to calculate your bill.
 
-- Compute Hours
-- IP Address Hours
-- Data Transfer In
-- Data Transfer Out
-- Standard Managed Disk
-- Standard Managed Disk Operations
-- Standard IO-Disk
-- Standard IO-Block Blob Read
-- Standard IO-Block Blob Write
-- Standard IO-Block Blob Delete
+Think of usage meters similar to how you use electricity or water in your home. You might pay a base price each month for electricity or water service, but your final bill is based on the total amount that you consume.
 
-The following sections describe the main factors that affect Azure costs, including resource type, services, and the user's location.
+As an example, a single virtual machine that you provision on Azure might have the following meters tracking its usage:
+
+<div style="background:yellow;">
+TODO: Does this sufficiently summarize the previous list we had?
+</div>
+
+* Overall CPU time.
+* Time spent with a public IP address.
+* Ingress and egress traffic in and out of the VM.
+* Disk size and amount of I/O operations.
 
 ### Resource type
+
+<div style="background:yellow;">
+TODO: This really isn't saying anything. Do we mean the "type" as in how big the VM is or which tier you select? Or something else?
+</div>
 
 Costs are resource-specific, so the usage that a meter tracks and the number of meters associated with a resource depend on the resource type.
 
@@ -80,33 +97,52 @@ The usage that a meter tracks correlates to a quantity of billable units. Those 
 
 ### Services
 
-Azure usage rates and billing periods can differ between Enterprise, Web Direct, and Cloud Solution Provider (CSP) customers. Some subscription types also include usage allowances, which affect costs.
+Your bill can vary depending on how you purchase Azure services (through an Enterprise Agreement, directly from the web, or through a CSP). Some subscription types also include usage allowances, which affect costs.
 
-The Azure team develops and offers first-party products and services, while products and services from third-party vendors are available in the **Azure Marketplace**.  Different billing structures apply to each of these categories.
+<div style="background:yellow;">
+TODO: Need more on usage allowances?
+</div>
+
+Microsoft offers its set of first-party products and services, while products and services from third-party vendors are available in the **Azure Marketplace**. Different billing structures apply to each of these categories.
+
+<div style="background:yellow;">
+TODO: Need more 3rd party / Marketplace services and cost?
+</div>
+
+<div style="background:yellow;">
+TODO: Image below has no information. Do we need it? Is there a better one?
+</div>
 
 ![Depicts a billing period, with a calendar, computer, and meter linked to illustrate correlation between the three">](../media/billing-period.png)
 
-
 ### Location
 
-The Azure infrastructure is globally distributed, and usage costs might vary between locations that offer Azure products, services, and resources.
+Azure infrastructure is distributed globally, which enables you to also distribute your services globally or closest to where your customers use them. The locations where you provision resources can affect cost.
 
-For example, you might want to build your Azure solution by provisioning resources in locations that offer the lowest prices, but this would require transferring data between locations, if dependent resources and their users are located in different parts of the world. If there are meters tracking the volume of data that transfers between the resources you provision, any potential savings you make from choosing the cheapest location could be offset by the additional cost of transferring data between those resources.
+For example, say you build your solution on Azure by provisioning resources in locations that offer the lowest prices. If you need to transfer data between locations or your users are located in different parts of the world, any potential savings you make from choosing the cheapest location could be offset by the additional cost of transferring data between those resources.
+
+<div style="background:yellow;">
+TODO: ^^ The point?
+</div>
+
+<div style="background:yellow;">
+TODO: Likely move this link to the summary.
+</div>
 
 > [!NOTE]
 > For more information about Azure usage charges, refer to [Understand terms on your Microsoft Azure invoice](https://docs.microsoft.com/azure/billing/billing-understand-your-invoice?azure-portal=true).
 
 ## Identify zones for billing purposes
 
+<div style="background:yellow;">
+TODO: Clean this up. Change title to reflect one of the probing questions at the top of the page.
+</div>
+
 Billing zones help determine the cost of services you are using.
 
 [Bandwidth](https://azure.microsoft.com/pricing/details/bandwidth?azure-portal=true) refers to data moving in and out of Azure datacenters. Some inbound data transfers, such as data going into Azure datacenters, are free. For outbound data transfers, such as data going out of Azure datacenters, data transfer pricing is based on **Zones**.
 
-
-
 ![Image that shows internet traffic traveling between two datacenters around a globe](../media/billing-zones.png)
-
-
 
 A Zone is a geographical grouping of Azure Regions for billing purposes. the following Zones exist and include the sample regions as listed below:
 
@@ -121,8 +157,11 @@ A Zone is a geographical grouping of Azure Regions for billing purposes. the fol
 > [!div class="checklist"]
 > * To avoid confusion, be aware that a *Zone for billing purposes* is not the same as an *Availability Zone*. In Azure, the term *Zone* is for billing purposes only, and the full-term *Availability Zone* refers to the failure protection that Azure provides for datacenters.
 
-
 ## Explore the Pricing Calculator
+
+<div style="background:yellow;">
+TODO: Clean this up. Change title to reflect one of the probing questions at the top of the page.
+</div>
 
 The [Pricing Calculator](https://azure.microsoft.com/pricing/calculator?azure-portal=true) is a tool that helps you estimate the cost of Azure products. It displays Azure products in categories, and you choose the Azure products you need and configure them according to your specific requirements.  Azure then provides a detailed estimate of the costs associated with your selections and configurations.
 
