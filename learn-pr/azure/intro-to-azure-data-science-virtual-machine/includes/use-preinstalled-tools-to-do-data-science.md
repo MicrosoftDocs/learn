@@ -1,6 +1,6 @@
 Now that you are connected to your Data Science Virtual Machine, you can begin using it to do data science. 
 
-The DSVM comes with tools preinstalled for:
+The Data Science Virtual Machine comes with tools preinstalled for:
 
 - Python
 - R
@@ -12,7 +12,7 @@ You can, of course, add additional programming languages, desktop applications, 
 
 ## Run RStudio remotely
 
-From the DSVM desktop running in your XFCE client, click on the RStudio icon. 
+From the Data Science Virtual Machine desktop running in your XFCE client, click on the RStudio icon. 
 
 ![Screenshot showing XFCE client, with RSTudio highlighted](../media/x2go-ubuntu.png)
 
@@ -20,5 +20,5 @@ When RStudio completes startup, enter `demo(graphics)` in the Console window to 
 
 ![Screenshot showing RStudio](../media/rstudio.png)
 
-Because the DSVM you've created in this module is sandboxed, it cannot access outside resources, such as the data files needed for the included Python Jupyter notebooks.
+Because the Data Science Virtual Machine you've created in this module is sandboxed, it cannot access outside resources, such as the data files needed for the included Python Jupyter notebooks.
 
