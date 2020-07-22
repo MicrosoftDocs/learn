@@ -20,7 +20,7 @@ This exercise will guide you through getting ostress configured, and then you'll
 1. In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  
 
     ```powershell
-    $resourceGroup = <rgn>Sandbox resource group name</rgn>
+    $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
     $database = "AdventureWorks-bc"
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
     $server = $server.ServerName
@@ -126,7 +126,7 @@ Just like in the previous exercise, you will leverage `ostress` to repeatedly qu
     
     :::image type="content" source="../media/6-new-db-engine-query.png" alt-text="New database engine query":::  
 
-1. Using the same way you've been connecting to your Azure SQL Database logical server (either with SQL Auth or Azure AD Auth), select **Options**.  
+1. Using the same way you've been connecting to your Azure SQL Database logical server (with SQL Auth), select **Options**.  
 
     
     :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Options in SSMS":::  

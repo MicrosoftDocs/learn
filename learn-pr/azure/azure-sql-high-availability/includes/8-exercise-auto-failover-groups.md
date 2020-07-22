@@ -6,9 +6,9 @@ To configure auto-failover groups for a database(s) and observe the results in a
 
 1. Configure environment
 1. Create an empty Azure SQL Database server in the failover region
-1. Create a failover group between the servers  
+1. Create a failover group between the servers
+1. 1. Configure the network
 1. Add database(s) to the failover group  
-1. Configure the network
 1. Configure your command prompt applications
 1. Understand the running applications
 1. Initiate a failover
@@ -69,6 +69,19 @@ This notebook will guide you through configuring auto-failover groups for your A
     Write-Host "New auto-failover group created between the two Azure SQL Database logical servers"
     ```
 
+1. Configure the network by running the following in the Azure Cloud shell.
+
+    ```powershell
+    # Add a firewall rules that gives your VM access to the new server
+    New-AzSqlServerFirewallRule -ResourceGroupName $resourceGroup `
+        -ServerName $drServer `
+        -FirewallRuleName $firewallRule `
+        -StartIpAddress $ipAddress `
+        -EndIpAddress $ipAddress;
+    ```
+
+    For the purposes of this exercise (illustrating auto-failover groups) this is sufficient from a networking perspective. However, this is slightly different from what you would do in an enterprise environment. In an enterprise environment, your machine that needs access will likely be a set of resources that make up some type of application. In the event of a failover of your database, you may want to failover your application/VMs/other resources to that new region as well. Both sets of resources will need access to the resources/servers/databases in the other region. In order to do this, you can use virtual network peering, virtual network to virtual network connections, or potentially something else (like ExpressRoute). It will depend on your scenario.
+
 1. Add database(s) to the failover group by running the following in the Azure Cloud shell.
 
     ```powershell
@@ -81,26 +94,9 @@ This notebook will guide you through configuring auto-failover groups for your A
     Write-Host "AdventureWorks database added to the auto-failover group"
     ```
 
-    The above step takes some time, because what you're doing is restoring the database in the other region, which involves copying the data from the original region to the DR region. You can work on **Step 6** and then come back here to check if it has completed. If it hasn't, you can work on **Configure your Command Prompt applications** and then check back here.  
+    The above step takes some time, because what you're doing is restoring the database in the other region, which involves copying the data from the original region to the DR region. You can work on **Configure your Command Prompt applications** and then come back here to check if it has completed.  
 
-1. Configure the network by running the following in the Azure Cloud shell.
-
-    ```powershell
-    # Enter your local IP address
-    $ipAddress = "Local Ip Here"
-    # Add a firewall rules that gives your VM access to the new server
-    New-AzSqlServerFirewallRule -ResourceGroupName $resourceGroup `
-        -ServerName $drServer `
-        -FirewallRuleName $firewallRule `
-        -StartIpAddress $ipAddress `
-        -EndIpAddress $ipAddress;
-    ```
-
-    What you've just done is deploy and configure and auto-failover group for you AdventureWorks database. Let's review.  
-
-    You started with a database and server in one location, with access from a virtual network (containing your VM) in that same location, this is what you did in Modules 2 and 3. In this notebook, you created a failover group from your original server to a new server in a different location, and added your AdventureWorks database to it. Finally, you added a firewall rule so that the new server/database in a different region can still be accessed from your VM.  
-
-    For the purposes of this exercise (illustrating auto-failover groups) this is sufficient from a networking and VM perspective. However, this is slightly different from what you would do in an enterprise environment. In an enterprise environment, your "VM" will likely be a set of resources that make up some type of application. In the event of a failover of your database, you may want to failover your application/VMs/other resources to that new region as well. Both sets of resources will need access to the resources/servers/databases in the other region. In order to do this, you can use virtual network peering, virtual network to virtual network connections, or potentially something else (like ExpressRoute). It will depend on your scenario.
+What you've just done is deploy and configure and auto-failover group for you AdventureWorks database.
 
 ### Configure your Command Prompt applications
 

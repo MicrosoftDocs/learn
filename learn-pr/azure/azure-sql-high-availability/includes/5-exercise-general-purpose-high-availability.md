@@ -45,7 +45,7 @@ The first step is to create a long-running workload so you can see how a failove
 1. In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  
 
     ```powershell
-    $resourceGroup = <rgn>Sandbox resource group name</rgn>
+    $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
     $database = "AdventureWorks"
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup
     $server = $server.ServerName
