@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.govern-monitor-secure-resources-azure-lighthouse.7-knowledge-check
+uid: learn.govern-monitor-secure-resources-azure-lighthouse.6a-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge
@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/6a-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -32,8 +32,8 @@ units:
 - learn.govern-monitor-secure-resources-azure-lighthouse.4-governance-scale-manage-customer-tenants
 - learn.govern-monitor-secure-resources-azure-lighthouse.5-secure-customer-resources-scale
 - learn.govern-monitor-secure-resources-azure-lighthouse.6-manage-hybrid-scale
-- learn.govern-monitor-secure-resources-azure-lighthouse.7-knowledge-check
-- learn.govern-monitor-secure-resources-azure-lighthouse.8-summary
+- learn.govern-monitor-secure-resources-azure-lighthouse.6a-knowledge-check
+- learn.govern-monitor-secure-resources-azure-lighthouse.7-summary
 badge:
   uid: learn.govern-monitor-secure-resources-azure-lighthouse.badge
   
