@@ -1,12 +1,14 @@
 The TwoPaneView can be dynamically configured by responding to changes in the device and application configuration, including:
 
 - Device rotation
-- Device folding and unfolding (especially if one of the screens gets turned off)
-- Application spanning and unspanning
+- Device folding and unfolding (eg. if one of the screens gets turned off or on)
+- Application spanning and unspanning across two screens
+
+When any of these events occurs, you may want the application layout to change to adjust to the new orientation, or the number of screens available.
 
 ## Property changed event
 
-The `DualScreenInfo` helper class provides a `PropertyChanged` event that you can subscribe to, and then update your controls appropriately. 
+The `DualScreenInfo` helper class provides a `PropertyChanged` event that you can subscribe to, and then update your controls appropriately. Use content page lifecycle methods to set and remove an event handler:
 
 ```csharp
 protected override void OnAppearing()
@@ -28,7 +30,7 @@ private void DualScreen_PropertyChanged(object sender, PropertyChangedEventArgs 
 
 ## Determining if the application is spanned
 
-`DualScreenInfo.Current.SpanMode` can be used to check whether the application is spanned. YOu can create a property to check for spanning like this:
+`DualScreenInfo.Current.SpanMode` can be used to check whether the application is spanned. You can create a property to check for spanning like this:
 
 ```csharp
 public bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMode.SinglePane;
@@ -42,12 +44,12 @@ Using the `PropertyChanged` event and the `DeviceIsSpanned` property we can writ
 public async void UpdateLayouts()
 {
     if (DeviceIsSpanned)
-    {
+    {   // dual-screen: list and detail appear side-by-side
         twoPaneView.TallModeConfiguration = TwoPaneViewTallModeConfiguration.TopBottom;
         twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.LeftRight;
     }
     else
-    {   // single-screen
+    {   // single-screen: only show the list view
         twoPaneView.PanePriority = TwoPaneViewPriority.Pane1;
         twoPaneView.TallModeConfiguration = TwoPaneViewTallModeConfiguration.SinglePane;
         twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.SinglePane;

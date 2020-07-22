@@ -10,7 +10,7 @@ In this exercise, you'll work with an existing list-detail app. The app has a Li
 1. Open the **FlagFacts.sln** solution.
 1. Explore the FlagFacts shared project. The single-screen navigation relies on pushing and popping a ContentPage using Xamarin.Forms navigation.
 1. Open the code-behind for both XAML pages (AllFlagsPage and FlagDetailsView).
-1. Notice that the DependencyService is used to create and set the BindingContext on both content pages.
+1. Notice that the DependencyService is used to create and set the BindingContext on both content pages. We will rely on this behavior as we change the way navigation works in the app.
 1. Run the application on an Android device or emulator.
 
 ## Add dual-screen NuGet
