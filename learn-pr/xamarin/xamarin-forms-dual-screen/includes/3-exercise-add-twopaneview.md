@@ -2,15 +2,16 @@ In this exercise, you'll work with an existing list-detail app. The app has a Li
 
 ## Open the starter solution
 
-In Visual Studio, open the starter solution from this module's **exercise1 > start** folder in your copy of the cloned or downloaded exercise repo.
+1. Clone or download the [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].
 
-> [!NOTE]
-> If you are planning to run and debug your Xamarin apps on Android from Windows, it is best to clone or download the exercise content to a short folder path, such as **C:\dev\**, to avoid build-generated files exceeding the maximum path length.
+    [!include[](../../../includes/android-windows-path-length-warning.md)]
 
-1. Explore the FlagFacts shared project. The single-screen navigation relies on pushing and popping a ContentPage 
-2. Open the code-behind for both XAML pages (AllFlagsPage and FlagDetailsView)
-3. Notice that the DependencyService is used to create and set the BindingContext on both content pages.
-4. Run the application on an Android device or emulator.
+1. Open the **exercise1** > **start** folder.
+1. Open the **FlagFacts.sln** solution.
+1. Explore the FlagFacts shared project. The single-screen navigation relies on pushing and popping a ContentPage using Xamarin.Forms navigation.
+1. Open the code-behind for both XAML pages (AllFlagsPage and FlagDetailsView).
+1. Notice that the DependencyService is used to create and set the BindingContext on both content pages.
+1. Run the application on an Android device or emulator.
 
 ## Add dual-screen NuGet
 

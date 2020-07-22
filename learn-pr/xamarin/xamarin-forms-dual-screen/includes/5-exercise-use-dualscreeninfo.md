@@ -1,6 +1,6 @@
 In this exercise, we're going to fix display for single-screens, so that the app adapts to all device types.
 
-We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise1 > final** folder in your copy of the cloned or downloaded exercise repo in Visual Studio.
+We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise1 > final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.
 
 ## Add DualScreenInfo to AllFlagsPage
 
