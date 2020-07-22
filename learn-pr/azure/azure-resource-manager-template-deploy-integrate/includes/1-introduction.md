@@ -1,10 +1,7 @@
 ﻿As we mentioned in previous modules, Microsoft Azure Resource Manager (ARM) templates allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and saved in the same source control as your development project.
 
-In previous modules you deployed resources in a resource group. If for some reason you need to either modify a template or create a new one to deploy more resources in this resource group.  How would you know the impact on existing resources? Will the new resource have an adverse effect on the existing resources? the "what-if" operation is here to address these possibilities.
+As a developer or an operation person for your enterprise 
 
-Azure Resource Manager now provides the what-if operation to let you see how resources will change if you deploy the template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed.
-
-You can use the what-if operation with Azure PowerShell, Azure CLI, or REST API operations. What-if is supported for resource group and subscription level deployments.
 
 ## Learning objectives
 
