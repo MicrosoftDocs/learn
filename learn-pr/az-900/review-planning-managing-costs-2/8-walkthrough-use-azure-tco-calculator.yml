@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.review-planning-managing-costs.walkthrough-use-azure-tco-calculator
-title: Walkthrough - Use Azure TCO Calculator
+title: Exercise - Compare costs by using the Total Cost of Ownership (TCO) Calculator
 metadata:
-  title: Walkthrough - Use Azure TCO Calculator
   description: "Walkthrough - Use Azure TCO Calculator"
   ms.date: 07/03/2020
   author: wwlpublish

@@ -1,24 +1,34 @@
-## Exercise - Use the Azure TCO Calculator
+Tailwind Traders is interested in moving some of their on-premises workloads to the cloud. But first, their Chief Financial Officer wants to understand more about moving from a relatively fixed cost structure to more of an ongoing monthly cost structure.
 
-Tailwind Traders is interested in moving some of their on-premises workloads to the cloud, but the Chief Financial Officer is concerned about committing to an ongoing monthly cost.  You've been asked to investigate if there are any potential cost savings, taking into account all of the costs involved with operating a technology workload. 
+You've been tasked to investigate whether there are any potential cost savings in moving your European datacenter to the cloud over the next three years. You need to take into account all of the potentially hidden costs involved with operating on-premises and in the cloud.
 
-Instead of writing a list of all the things you think may be included, you will use the Total Cost of Ownership as a basis, and you will adjust the provided cost assumptions to match the Tailwind Traders on-premises environment.     
+Instead of manually collecting everything you think might be included, you use the Total Cost of Ownership (TCO) Calculator as a starting point. You adjust the provided cost assumptions to match Tailwind Traders' on-premises environment.
 
-> [!Note]
-> This exercise does not require an Azure subscription. You will only need a web browser with internet access to complete this.
+> [!NOTE]
+> Remember, you don't need an Azure subscription to work with the TCO Calculator.
 
-## Configure the TCO calculator
+Let's say that Tailwind Traders runs two physical servers that each host 50 virtual machines. The first bank of virtual machines runs Windows Server under Hyper-V virtualization. The second bank of virtual machines runs Linux under VMware virtualization. Each physical server has 60 terrabytes (TB) of disk storage. You consume an estimated 15 TB of outbound network bandwidth each month. For brevity, you'll omit details around database usage.
 
-In this task, you will add the details of the existing on-premise servers - two physical servers hosting 50 virtual machines each and 60Tb of disk storage. 
+Recall that the TCO Calculator breaks down into these three steps:
 
-1. In a browser, navigate to the [Total Cost of Ownership (TCO) Calculator](https://azure.microsoft.com/pricing/tco/calculator?azure-portal=true) page.
+![TODO](../media/total-cost-ownership-steps.png)
 
-2. Click **+ Add server workload** in the **Define your workloads** pane.
+Let's see how Tailwind Traders' existing workloads stack up in the datacenter versus on Azure.
+
+## Define your workloads
+
+Enter the specifications of your on-premises infrastructure into the TCO calculator.
+
+1. Go to the [Total Cost of Ownership (TCO) Calculator](https://azure.microsoft.com/pricing/tco/calculator?azure-portal=true).
+
+1. Under **Define your workloads**, select **Add server workload** to create a row for your bank of Windows Server virtual machines.
+
+1. Under **Servers**, set the value for each of these settings:
 
     | Settings | Value |
     | -- | -- |
-    | Name | **Servers: Windows VMs** |
-    | Workload | **Windows/Linux server** |
+    | Name | *Servers: Windows VMs* |
+    | Workload | **Windows/Linux Server** |
     | Environment | **Virtual Machines** |
     | Operating system | **Windows** |  
     | VMs | **50** |
@@ -29,12 +39,12 @@ In this task, you will add the details of the existing on-premise servers - two 
     | Windows Server 2008/2008 R2 | **Off** |
     | | |
 
-3. Select **+ Add server workload** to make a row for a new server workload definition. 
+1. Select **Add server workload** to create a second row for your bank of Linux virtual machines.
 
     | Settings | Value |
     | -- | -- |
-    | Name | **Servers: Linux VMs** |
-    | Workload | **Windows/Linux server** |
+    | Name | *Servers: Linux VMs* |
+    | Workload | **Windows/Linux Server** |
     | Environment | **Virtual Machines** |
     | Operating system | **Linux** |  
     | VMs | **50** |
@@ -44,11 +54,11 @@ In this task, you will add the details of the existing on-premise servers - two 
     | Optimize by | **CPU** |
     | | |
 
-4. In the **Storage** pane, click **Add storage**.
+1. Under **Storage**, select **Add storage**. Then specify these settings:
 
     | Settings | Value |
     | -- | -- |
-    | Name | **Server Storage** |
+    | Name | *Server Storage* |
     | Storage type | **Local Disk/SAN** |
     | Disk type | **HDD** |
     | Capacity | **60 TB** |  
@@ -56,40 +66,34 @@ In this task, you will add the details of the existing on-premise servers - two 
     | Archive | **0 TB** |
     | | |
 
-5. In the **Networking** pane, add bandwidth. 
+1. Under **Networking**, set **Outbound bandwidth** to **15 TB**.
 
-    | Settings | Value |
-    | -- | -- |
-    | Outbound bandwidth | 15 TB|
-    | | |
+1. Select **Next**.
 
-6. Click **Next**.
+## Adjust assumptions
 
-7. Review the options and cost assumptions and make any adjustments that you would like. 
+Here, you specify your currency. For brevity, you leave the remaining fields at their default values.
 
-    | Settings | Value |
-    | -- | -- |
-    | Currency | **Euro** |
-    | | |
+In practice, you would adjust any cost assumptions and make any adjustments to match your current on-premises infrastructure.
 
-8. Click **Next**.
+1. At the top of the page, select your currency. This example uses **US Dollar ($)**.
+1. Select **Next**.
 
-## View the report and save a copy
+## View report
 
-1. Review the estimated cost savings in Azure, then change the timeframe and region to see the results.
+Take a moment to review generated report.
 
-    | Settings | Value |
-    | -- | -- |
-    | Timeframe| **Three years** |
-    | Region | **North Europe** |
-    | | |
+Remember, you've been tasked to investigate cost savings for your European datacenter over the next three years.
 
-2. Note the cost breakdown summary and review the details of each section under Estimated cost.
+To make these adjustments:
 
-3. To modify any information you have provided, go to the bottom of the page, and click **Back**. 
+1. Set **Timeframe** to **3 Years**.
+1. Set **Region** to **North Europe**.
 
-4. To download or print a PDF copy of the report, click **Download**.
+Scroll to the summary at the bottom. You see a comparison of running your workloads in the datacenter versus on Azure. The prices you see might differ, but here's an example of the cost savings you might expect:
 
-![Screenshot of the report pane of the TCO Calculator in Azure. The highlighted and completed input fields indicates how set the TCO Calculator timeframe to three years and the region to North Europe. A graph shows the cost of on-premises infrastructure and workloads off-set against the reduced cost of using Azure.](../media/2001.png)
+![TODO: Screenshot of the report pane of the TCO Calculator in Azure. The highlighted and completed input fields indicates how set the TCO Calculator timeframe to three years and the region to North Europe. A graph shows the cost of on-premises infrastructure and workloads off-set against the reduced cost of using Azure.](../media/tco-calculator-summary.png)
 
-Congratulations! You now have the information that the Chief Financial Officer needs, to compare the ongoing operating costs of your workloads on-premises to the costs of running them in Azure.
+Select **Download** to download or print a copy of the report in PDF format.
+
+Great work. You now have the information that you can share with your Chief Financial Officer needs. If you need to make adjustments, you can revisit the TCO Calculator to generate a fresh report.
