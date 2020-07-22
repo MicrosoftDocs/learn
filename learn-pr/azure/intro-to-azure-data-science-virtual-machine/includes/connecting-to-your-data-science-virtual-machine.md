@@ -49,8 +49,6 @@ ssh UserName@1.1.1.1
 
 The first time you connect via SSH, you will receive a warning. Accept the fingerprint and you will be presented with a password prompt. Enter the password you specified while creating the Data Science Virtual Machine. You should see a greeting screen and a command prompt.
 
-This is the moment where, if this were a movie, you'd say "I'm in."
-
 ## Connect using a graphical user interface
 
 If you wish to use a graphical user interface, you can use Microsoft Remote Desktop for the Windows Server 2019 Data Science Virtual Machine and an XFCE client such as X2Go Client for the Ubuntu 18.04 Data Science Virtual Machine.
