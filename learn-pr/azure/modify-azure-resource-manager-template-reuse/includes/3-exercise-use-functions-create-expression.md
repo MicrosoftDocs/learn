@@ -90,9 +90,9 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
     ```
 
-### Deploy to Azure
+### Deploy to the template to Azure
 
-Deploy the template to Azure. You learned about the deployment commands in the previous module. Here, we're using the Azure CLI ```az deployment group create``` command.
+You learned about the deployment commands in the previous module. Here, we're using the Azure CLI ```az deployment group create``` command.
 
 1. Deploy the template by using Azure CLI commands in the Visual Studio Code terminal. Remember to replace `{your-prefix}` with a different string. For example, you could use **storage**.
 
@@ -131,30 +131,30 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Sign in to Azure by using Azure PowerShell
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. When you run this command, you'll be prompted to open a browser to a URL that allows you to sign in to your account. Use the code that is in the prompt. Make sure you sign in with the same account that you used to activate the sandbox.
+1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. When you run this command, you'll be prompted to open a browser to a URL that allows you to sign in to your account. Use the code that's in the prompt. Make sure to sign in with the same account that you used to activate the sandbox.
 
     ```azurepowershell
     Connect-AzAccount
     ```
 
-1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. You use this one for the rest of the exercise.
+1. After you're signed in, you see a list of the subscriptions associated with the account in the terminal. If you activated the sandbox, you see one called **Concierge Subscription**. Use this one for the rest of the exercise.
 
-    Set the default subscription for all of the Azure CLI commands you run in this session.
+    Set the default subscription for all the Azure CLI commands you run in this session.
 
-1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription* and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*.
+1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for `Concierge Subscription` and copy the second column. It will look something like this: `cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0`.
 
     ```azurepowershell
     Get-AzSubscription
     ```
 
-1. Change your active subscription to the Concierge Subscription. Be sure to substitute *{Your subscription ID}* with the one you just copied.
+1. Change your active subscription to the Concierge Subscription. Be sure to substitute `{Your subscription ID}` with the ID you just copied.
 
     ```azurepowershell
     $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
     Set-AzContext $context
     ```
 
-1. Set the default resource group to the resource group created for you in the sandbox environment. This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+1. Set the default resource group to the resource group created for you in the sandbox environment. Doing so allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
     ```azurepowershell
     Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
@@ -162,9 +162,9 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Deploy the template to Azure
 
-You learned about the deployment commands in the previous module. Here, we are using the Azure PowerShell ```New-AzResourceGroupDeployment``` command.
+You learned about the deployment commands in the previous module. Here, we're using the Azure PowerShell ```New-AzResourceGroupDeployment``` command.
 
-1. Deploy the template using Azure PowerShell commands in the Visual Studio Code terminal. Remember to substitute *{your-prefix}* with a different string. For example, you could use **storage**.
+1. Deploy the template by using Azure PowerShell commands in the Visual Studio Code terminal. Remember to substitute `{your-prefix}` with a different string. For example, you could use **storage**.
 
     ```azurepowershell
     $templateFile = "azuredeploy.json"
@@ -176,26 +176,26 @@ You learned about the deployment commands in the previous module. Here, we are u
       -storagePrefix {your-prefix}
     ```
 
-      In the top section of this code, you set Azure PowerShell variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```New-AzResourceGroupDeployment``` command to deploy the template to Azure.
+      In the first section of this code, you set Azure PowerShell variables for the path to the template file that you want to deploy and the name of the deployment. You then use the ```New-AzResourceGroupDeployment``` command to deploy the template to Azure.
 
 ::: zone-end
 
 ### Check your deployment
 
-When that finishes, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+When the deployment finishes, go to [Azure](https://portal.azure.com?azure-portal=true) and make sure you're in the sandbox subscription. To check the subscription, select your avatar in the upper-right corner of the page. Select **Switch directory**. In the list, select the **Microsoft Learn Sandbox** directory.
 
-1. On the left side panel, choose *Resource groups*.
+1. In the left pane, select **Resource groups**.
 1. Select <rgn>[sandbox resource group name]</rgn>.
-1. In the *Overview*, you see one deployment succeeded.
+1. In the **Overview** section, you see that one deployment succeeded:
 
-    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Azure portal interface for the resource group overview with the deployments section showing one succeeded." border="true":::
+    :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal that shows the resource group overview. The Deployments section shows that one deployment succeeded." border="true":::
 
-1. Select *1 Succeeded* to see the details of the deployment.
+   Select **1 Succeeded** to see the details of the deployment:
 
-    :::image type="content" source="../media/3-add-function.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
+    :::image type="content" source="../media/3-add-function.png" alt-text="Screenshot of the Azure portal that shows deployments. One deployment is listed and has a status of Succeeded." border="true":::
 
-1. Select *addfunction* to see what resources were deployed.
+1. Select **addfunction** to see what resources were deployed:
 
-    :::image type="content" source="../media/3-unique-storage-deploy.png" alt-text="Azure portal interface showing the Storage Account deployed." border="true":::
+    :::image type="content" source="../media/3-unique-storage-deploy.png" alt-text="Screenshot of the Azure portal that shows that the Storage account deployed." border="true":::
 
 1. Leave the page open in your browser. You'll check on deployments again.

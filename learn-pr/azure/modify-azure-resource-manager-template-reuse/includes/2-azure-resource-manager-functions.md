@@ -1,4 +1,4 @@
-In the inventory system scenario, you want to make deploying your Azure Resource Manager (ARM) template to different environments as easy as possible. One of the areas of contention is coming up with a unique name for the Azure Storage account.
+In this scenario, you want to make deploying your Azure Resource Manager (ARM) template to different environments as easy as possible. One of the areas of contention is coming up with a unique name for the Azure Storage account.
 
 To solve this problem, you decide to create an expression by using [ARM template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true).
 
@@ -50,7 +50,7 @@ Resource Manager provides several [ARM template functions](https://docs.microsof
 
 ### How can I use several functions in one expression?
 
-You can use several template functions together to create your own expressions. In the inventory system scenario, you need to create an expression that creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. This expression results in storage account names like `dev2hu6fktr577wh` and `staging5his8hgr67tt5`. You can use four functions to construct this string value. For example:
+You can use several template functions together to create your own expressions. In this scenario, you need to create an expression that creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. This expression results in storage account names like `dev2hu6fktr577wh` and `staging5his8hgr67tt5`. You can use four functions to construct this string value. For example:
 
 ```json
 "[toLower(concat("Storage",uniqueString(resourceGroup().id)))]"
