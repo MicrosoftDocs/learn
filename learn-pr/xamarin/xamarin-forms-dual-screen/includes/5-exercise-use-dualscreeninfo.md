@@ -116,6 +116,6 @@ Now when you start the app on a single screen, it uses the navigation stack to s
 
 If the app is spanned, the list and detail is shown side-by-side using `TwoPaneView`.
 
-When you span or unspan the app, the detail will be pushed onto the navigation stack or popped off the navigation stack as required.
+When you span or unspan the app, the detail will be pushed onto the navigation stack or popped off the navigation stack as required. These screenshots show how the app working on a single screen:
 
-![List rendering correctly in single screen](../media/5-list.png) ![Detail rendering correctly in single screen](../media/5-detail.png)
+![List rendering correctly in single screen](../media/5-list.png) and ![Detail rendering correctly in single screen](../media/5-detail.png)
