@@ -24,7 +24,7 @@ You can explore the app when it becomes fully available again to verify it's fai
 - Log in to the app.
 - Select the **.NET FOUNDATION PIN**
 - Select the basket icon at the top right of the page.
-- Select checkout.
+- Select **CHECKOUT**.
 - Go to the **HAVE A DISCOUNT CODE?** input.
 - Enter the code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
 - Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
@@ -253,7 +253,7 @@ Let's explore the app behavior now with a similar process:
 - Log in to the app.
 - Select the **.NET FOUNDATION PIN**
 - Select the basket icon at the top right of the page.
-- Select checkout.
+- Select **CHECKOUT**.
 - Go to the **HAVE A DISCOUNT CODE?** input.
 - Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
 - Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
@@ -267,6 +267,6 @@ As mentioned in the review unit, Linkerd follows a different approach to resilie
 
 For more information about Linkerd configuration, see the following resources:
 
-- [Configuring Retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries/)
-- [Configuring Timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts/)
-- [How we designed retries in Linkerd 2.2 - Linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2/)
+- [Configuring Retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries)
+- [Configuring Timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts)
+- [How we designed retries in Linkerd 2.2 - Linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2)

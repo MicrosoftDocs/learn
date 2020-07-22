@@ -4,7 +4,7 @@ The goal of resiliency is to return the app to a fully functioning state after a
 
 Designing and deploying a microservices-based app is challenging enough. But you also need to keep your app running in an environment where some sort of failure is certain. Your app should be resilient. It should cope with partial failures, like network outages or nodes or VMs crashing in the cloud. Even microservices (containers) being moved to a different node within a cluster can cause intermittent, short failures within the app.
 
-Handling partial failures in distributed systems, like a microservices-based app, is a complex aspect of the cloud. There's an ever-present risk of partial failure. For instance, a single microservice/container can fail or be unavailable to respond for a short time. Additionally, a single virtual machine or server can crash. Since clients and services are separate processes, a service might not respond to a client's request in a timely fashion. The service might be overloaded and respond slowly to requests. Or it might be inaccessible for a short time because of network issues.
+Handling partial failures in distributed systems, like a microservices-based app, is a complex aspect of the cloud. There's an ever-present risk of partial failure. For instance, a single microservice/container can fail or become unavailable to respond for a short time. Additionally, a single virtual machine or server can crash. Since clients and services are separate processes, a service might not respond to a client's request in a timely fashion. The service might be overloaded and respond slowly to requests. Or it might be inaccessible for a short time because of network issues.
 
 Though they aren't covered in this module, ensuring a resilient deployment also requires the use of health checks. The key idea is that apps and services provide some [liveness, readiness, and startup probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes). The probes provide the service state. Kubernetes uses that state to determine whether to accept traffic or replace a failing pod.
 
@@ -17,15 +17,15 @@ There are two fundamental approaches to resiliency. You can add:
 
 There are pros and cons on both sides. You may use both approaches, depending on the situation. Plenty of solutions exist for both approaches.
 
-For the first approach, we'll introduce the use of [Polly](https://github.com/App-vNext/Polly), and [Linkerd](https://linkerd.io) for the second.
+You'll start with adding Polly to the app. Once you understand how Polly works, you'll replace it with Linkerd.
 
 ## Polly
 
-[Polly](https://github.com/App-vNext/Polly) is a .NET resilience and transient-failures-handling library, that allows the developer to include failure-handling code with fluent and easy-to-understand syntax.
+[Polly](https://github.com/App-vNext/Polly) is a .NET resilience and transient-failures-handling library. It allows the developer to include failure-handling code with a fluent, easy-to-understand syntax.
 
-There are several strategies ([Polly's policies](https://github.com/App-vNext/Polly#resilience-policies)) for handling failures, and the strategies can be applied for HTTP (gRPC) requests and even database transactions. For this module, the focus is on **Retries (with exponential back-off)** and **Circuit Breaker** on HTTP calls using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests).
+There are several strategies ([Polly's policies](https://github.com/App-vNext/Polly#resilience-policies)) for handling failures. The strategies can be applied for HTTP (gRPC) requests and even database transactions. This module focuses on **Retries (with exponential back-off)** and **Circuit Breaker** on HTTP calls using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests).
 
-Resiliency with Polly has to be hard-coded, although you can use startup-time configuration for some parameters.
+Resiliency with Polly must be hard-coded, although you can use startup-time configuration for some parameters.
 
 ### Retry policy
 
@@ -35,7 +35,7 @@ The *Retry policy* is exactly what the name implies. The request is retried if a
 - An exponentially increasing time. For example, 2, 4, 8, 16 seconds.
 - A specific time list. For example, 100 ms, 100 ms, 100 ms, 2 s, 4 s, 8 s, and so on.
 
-The Retry policy always has a maximum retry count and it gives up at that point, finally sending the error message back. The user experience for this policy is usually that the app takes longer to complete some operations or it takes some time before informing the user that it couldn't complete the operation.
+The Retry policy always has a maximum retry count. Once that number of retries has been satisfied, the policy gives up and returns the error message. The user experience for this policy is usually that the app takes longer to complete some operations. The app may also take some time before informing the user that it couldn't complete the operation.
 
 For an in-depth explanation of the Retry policy, see [Polly's wiki page on Retry policy](https://github.com/App-vNext/Polly/wiki/Retry).
 
@@ -45,15 +45,15 @@ The *Circuit Breaker policy* "gives the target service a break", after a certain
 
 The concept is simple too. After a certain number of consecutive failures (more options with the advanced Circuit Breaker policy), the connection is open for some waiting time.
 
-During the waiting time, the operation is failed immediately, without even "bothering" the service. After the waiting time has elapsed, the operation is tried once. If the operation succeeds, the circuit is closed again and the system goes back to normal. If the operation fails, the circuit is opened and the waiting time begins again.
+During the waiting time, the operation is failed immediately, without "bothering" the service. After the waiting time has elapsed, the operation is tried once. If the operation succeeds, the circuit is closed again and the system goes back to normal. If the operation fails, the circuit is opened and the waiting time begins again.
 
 For an in-depth explanation of the Circuit Breaker policy, see [Polly's wiki page on Circuit Breaker policy](https://github.com/App-vNext/Polly/wiki/Circuit-Breaker).
 
 ## Linkerd
 
-[Linkerd](https://linkerd.io/2/overview) is very different from Polly. Linkerd is service mesh infrastructure for Kubernetes clusters. It can handle resiliency without changing your app's code.
+[Linkerd](https://linkerd.io/2/overview) takes a different approach than Polly. Linkerd is service mesh infrastructure for Kubernetes clusters. It can handle resiliency without changing your app's code.
 
-A [service mesh](https://servicemesh.io) is a set of proxies that stand beside each of your pods and handle all communication-related tasks. For example, Linkerd can be configured to ensure reliable and secure communications and to get operational metrics.
+A [service mesh](https://servicemesh.io) is a set of proxies that stand beside each pod and handle all communication-related tasks. For example, Linkerd can be configured to ensure reliable and secure communications and to get operational metrics.
 
 Each "meshed" service doesn't really know it's being supported by a proxy beside it. A proxy is "transparent", light, and handles incoming and outgoing connections.
 
@@ -71,4 +71,4 @@ When you implement resiliency in your app's code, as when using Polly, you're gu
 
 There are other "tricks" that are impossible for Linkerd to handle. Linkerd doesn't know anything about the app internals. For example, you can protect a complex database transaction with a Polly strategy, so it's automatically retried if it fails.
 
-In the next two exercises, you'll implement resilience for the coupon service going through the application gateway. Polly and Linkerd are used for the first and second exercises, respectively.
+In the next two units, you'll implement resilience for the coupon service going through the app gateway. Polly and Linkerd are used for the first and second units, respectively.

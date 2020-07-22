@@ -17,6 +17,6 @@ In this module, you will:
 
 ## Prerequisites
 
-* Familiarity C# and ASP.NET Core development at the intermediate level
+* Familiarity C# and ASP.NET Core development at the beginner level
+* Conceptual knowledge of containers at the beginner level
 * Access to an Azure subscription with **Owner** privilege
-* Access to a GitHub account

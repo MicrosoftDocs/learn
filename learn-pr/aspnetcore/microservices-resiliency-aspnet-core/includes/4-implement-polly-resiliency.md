@@ -1,10 +1,10 @@
-In this exercise, you'll implement a resiliency handler with Polly. The initial eShop-Learn deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
+In this exercise, you'll implement a resiliency handler with Polly. The initial *eShop-Learn* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
 
 In this exercise, you will:
 
 - Explore the app's response when resiliency isn't implemented.
 - Update the app's code to implement failure handling using Polly.
-- Create an Azure Container Registry (ACR) instance and deploy the updated app to AKS.
+- Create an ACR instance and deploy the updated app to AKS.
 - Explore the system response under failure after implementing resiliency.
 
 ## Explore the response of a non-resilient app
@@ -16,7 +16,7 @@ To configure a simulated failure, you need at least one item in the basket. Comp
 1. Log in to *eShopOnContainers*.
 1. Select the **.NET FOUNDATION PIN**.
 1. Select the basket icon at the top right of the page.
-1. Select checkout.
+1. Select **CHECKOUT**.
 
 ### 2. Configure simulated failure
 
@@ -80,54 +80,10 @@ Using Polly together with `IHttpClientFactory` to add resiliency to web apps is 
     - Include the `AddPolicyHandler(GetRetryPolicy())` and `AddPolicyHandler(GetCircuitBreakerPolicy())` to the `AddHttpClient` method for the `CouponService` dependency injection registration.
     - Add the `GetRetryPolicy` and `GetCircuitBreakerPolicy` methods.
 
-    <!-- TODO: move code snippet to external .cs file and add line highlighting to show differences -->
     Check the following code for details:
 
-    ```csharp
-    using System
-    ...
-    using Polly;
-    using Polly.Extensions.Http;
-    using Serilog;
-    ...
-
-    public class Startup
-    {
-        // code omitted for brevity
-    }
-
-    public static class ServiceCollectionExtensions
-    {
-        ...
-        public static IServiceCollection AddApplicationServices(this IServiceCollection services)
-        {
-            ...
-            services.AddHttpClient<ICouponService, CouponService>()
-                .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
-                .AddPolicyHandler(GetRetryPolicy())
-                .AddPolicyHandler(GetCircuitBreakerPolicy());
-
-            return services;
-        }
-
-        static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
-        {
-            return HttpPolicyExtensions
-                .HandleTransientHttpError()
-                .WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(1.5, retryAttempt) * 1000), (_, waitingTime) =>
-                {
-                    Log.Logger.Information("----- Retrying in {WaitingTime}s", $"{ waitingTime.TotalSeconds:n1}");
-                });
-        }
-
-        static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
-        {
-            return HttpPolicyExtensions
-                .HandleTransientHttpError()
-                .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
-        }
-    }
-    ```
+    <!-- TODO: add line highlighting to show differences -->
+    :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/startup.cs":::
 
     The preceding code configures a retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead.
 
@@ -216,4 +172,4 @@ In the image above, you see that:
 
 Where you can see that the last trace has the "The circuit is now open..." message.
 
-Let's move on to the deployment of Linkerd in the next exercise.
+Let's move on to the deployment of Linkerd in the next unit.
