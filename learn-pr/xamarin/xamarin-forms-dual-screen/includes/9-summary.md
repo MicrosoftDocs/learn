@@ -4,8 +4,7 @@ In this module, we modified an application by adding `TwoPaneView` and `DualScre
 
 We can build on the classes introduced in this module to make our application even more responsive to different devices:
 
-- Further customize the view when the device is in dual-landscape ("tall") mode.
-- Add support for tablet and desktop apps using `MinWideModeWidth` and pane length properties.
+- Further customize the view when a Surface Duo is in dual-landscape ("tall") mode.
 - Detect the hinge angle and adapt the user-interface in some way.
 - Use [XAML triggers](https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/dual-screen/triggers) to create responsive dual-screen apps.
 

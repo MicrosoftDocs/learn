@@ -45,13 +45,13 @@ We'll continue with the solution from the previous exercise. If you don't alread
     async void UpdateLayouts()
     {
         if (DeviceIsSpanned)
-        {   //
+        {   // two screens: side by side
             twoPaneView.TallModeConfiguration = TwoPaneViewTallModeConfiguration.TopBottom;
             twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.LeftRight;
             wasSpanned = true;
         }
         else
-        {   // single-screen
+        {   // single-screen: only list is shown
             twoPaneView.PanePriority = TwoPaneViewPriority.Pane1;
             twoPaneView.TallModeConfiguration = TwoPaneViewTallModeConfiguration.SinglePane;
             twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.SinglePane;

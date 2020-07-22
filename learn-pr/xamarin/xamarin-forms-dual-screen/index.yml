@@ -34,7 +34,8 @@ units:
 - learn-xamarin.xamarin-forms-dual-screen.4-spanning-and-unspanning
 - learn-xamarin.xamarin-forms-dual-screen.5-exercise-use-dualscreeninfo
 - learn-xamarin.xamarin-forms-dual-screen.6-larger-screens
-- learn-xamarin.xamarin-forms-dual-screen.6-hinge-angle
-- learn-xamarin.xamarin-forms-dual-screen.7-summary
+- learn-xamarin.xamarin-forms-dual-screen.7-exercise-tablet-support
+- learn-xamarin.xamarin-forms-dual-screen.8-hinge-angle
+- learn-xamarin.xamarin-forms-dual-screen.9-summary
 badge:
   uid: learn-xamarin.xamarin-forms-dual-screen.badge
