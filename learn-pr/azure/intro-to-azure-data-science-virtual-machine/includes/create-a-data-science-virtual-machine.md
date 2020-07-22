@@ -156,7 +156,7 @@ You may resize your DSVM as your requirements change. For instance, you might ch
 We need to configure the basic parameters of our Ubuntu virtual machine. 
 
 1. Use the following values on the **Basics** tab.
-    - The **Subscription** should be set to _Concierge Subscription_ 
+    - The **Subscription** should be set to _Concierge Subscription_
 
     - The **Resource Group** should be set to <rgn>[sandbox resource group name]</rgn>
 
