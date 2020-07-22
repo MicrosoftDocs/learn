@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
 metadata:
   title: Using RStudio and other preinstalled tools
-  description: Use the preinstalled tools in the DSVM to perform data science
+  description: Use the preinstalled tools in the Data Science Virtual Machine to perform data science
   ms.date: 2020-07-01
   author: lobrien
   ms.author: laobri
