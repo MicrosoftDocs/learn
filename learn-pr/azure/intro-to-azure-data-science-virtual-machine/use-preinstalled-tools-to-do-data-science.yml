@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
 metadata:
-  title: Using Jupyter and other preinstalled tools
+  title: Using RStudio and other preinstalled tools
   description: Use the preinstalled tools in the DSVM to perform data science
   ms.date: 2020-07-01
   author: lobrien
@@ -14,33 +14,46 @@ durationInMinutes: 15
 content: |
   [!include[](includes/use-preinstalled-tools-to-do-data-science.md)]
 quiz:
-  title: Using preinstalled tools on the Data Science Virtual Machine
+  title: Introduction to the Data Science Virtual Machine
   questions:
-    - content: "tk?"
+    - content: "On what hardware does the Data Science Virtual Machine run?"
       choices:
-        - content: "tk"
+        - content: "On your local client machine"
+          isCorrect: false
+          explanation: "tk"
+        - content: "On any Internet-accessible computer with compatible hardware"
+          isCorrect: false
+          explanation: "tk"
+        - content: "On an Azure compute resource specified by Microsoft as the best for data science"
+          isCorrect: false
+          explanation: "tk"
+        - content: "On an Azure compute resource that you can customize to your needs and budget"
           isCorrect: true
           explanation: "tk"
-        - content: "tk"
-          isCorrect: false
-          explanation: "tk"
-        - content: "tk"
-          isCorrect: false
-          explanation: "tk"
-        - content: "tk"
-          isCorrect: false
-          explanation: "tk"
-    - content: "tk?"
+    - content: "Using GPU resources on the Data Science Virtual Machine requires:"
       choices:
-        - content: "tk"
+        - content: "The Data Science Virtual Machine does not support GPU scenarios"
+          isCorrect: false
+          explanation: "tk"
+        - content: "GPU support is universally available on Data Science Virtual Machines"
+          isCorrect: false
+          explanation: "tk"
+        - content: "GPU support is available only on GPU-enabled Azure compute resources and requires no user configuration"
           isCorrect: true
           explanation: "tk"
-        - content: "tk"
+        - content: "GPU support is available only on GPU-enabled Azure compute resources and requires user configuration"
           isCorrect: false
           explanation: "tk"
-        - content: "tk"
+    - content: "Charges for the Data Science Virtual Machine start and stop:"
+        - content: "From creation of the Data Science Virtual Machine until you delete the resource"
           isCorrect: false
           explanation: "tk"
-        - content: "tk"
+        - content: "From when you start the Data Science Virtual Machine to when you stop it"
+          isCorrect: true
+          explanation: "tk"
+        - content: "From when you logon to the Data Science Virtual Machine until you logoff"
+          isCorrect: true
+          explanation: "tk"
+        - content: "For the time that any process on the Data Science Virtual Machine is running under your account"
           isCorrect: false
           explanation: "tk"
