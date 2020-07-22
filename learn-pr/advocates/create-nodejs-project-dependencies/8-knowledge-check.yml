@@ -1,0 +1,69 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-nodejs-project-dependencies.8-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz: 
+  title: "Check your knowledge"
+  questions:
+    - content: "How would you install a test framework like Jest?"
+      choices:
+        - content: "Run `npm install jest`"
+          isCorrect: false
+          explanation: "While this will install jest, it will be installed as a normal dependency. This is not recommended as this means the dependency will ship with the application."
+        - content: "Run `npm install jest --save-dev`"
+          isCorrect: true
+          explanation: "This will install jest and as a dev dependency. A test framework is something you only need during development."
+        - content: "Run `npm install jest --save`"
+          isCorrect: false
+          explanation: "This will install jest in the `dependencies` section. It's recommended that any library that is only used during development is installed as a dev dependency. Additionally there is no need to add the `--save` flag, this is leftover from when this flag was needed to persist the installed library in the package.json file"
+        - content: "npm download jest --save-dev"
+          isCorrect: false
+          explanation: "There is no command called `download`, use `install`"
+    - content: "Why would you use NPX?"
+      choices:
+        - content: "It's downloaded directly into the Node.js process and is removed after the command is executed. This is great for when you want to run commands seldom."
+          isCorrect: true
+          explanation: ""
+        - content: "It's more secure than a global install"
+          isCorrect: false
+        - content: "It's faster than installing it globally"
+          isCorrect: false
+        - content: "You don't have to use sudo before running it like you would a global install"
+          isCorrect: false
+          explanation: "While this is technically correct, this shouldn't be the reason why you choose NPX over global install. Global installs are something that remains on your system and you need to uninstall. There's no such need with NPX as it cleans up after itself."
+    - content: "What's a way to instruct the `package.json` file that you only want patch (bug fixes) updates"
+      choices:
+        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"*\""
+          isCorrect: false
+          explanation: "This will update the dependency to the latest possible version. This is incorrect."
+        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"1.x.0\""
+          isCorrect: false
+          explanation: "This will update the dependency to the latest minor version. That's not what you want"
+        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"1.0.x\""
+          isCorrect: true
+        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"^1.0.x\""
+          isCorrect: false
+    - content: "What are some recommended scripts to set up in your Package.json at the start of a project?"
+      choices:
+        - content: "start, test, build"
+          isCorrect: false
+          explanation: "These are all good scripts to set up. As you working in JavaScript it's good if you set up a linter tool as well to ensure your code looks consistent."
+        - content: "start, test"
+          isCorrect: false
+          explanation: "Having a script for start and test is good. It's also recommended that you have a script for how to build your solution. Additionally having a way to *lint* your files ensure you and your team members can write code in a consistent way."
+        - content: "start"
+          isCorrect: false
+          explanation: "This isn't nearly enough. Look into setting up commands for test, build, and linting as well."
+        - content: "start, test, lint, and build"
+          isCorrect: true
+          explanation: "Having all these scripts set-up is great way to start any Node.js project."

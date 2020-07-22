@@ -1,4 +1,4 @@
-In this exercise, you store your Azure Storage Account name expression in an Azure Resource Manager template (ARM template) variable and use that variable to specify the name of the Storage Account to create. 
+In this exercise, you store your Azure Storage Account name expression in an Azure Resource Manager (ARM) template variable and use that variable to specify the name of the Storage Account to create. 
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -35,7 +35,11 @@ Here, you add a variable to store your Storage Account name expression in one pl
 
 ## Optionally, deploy the template
 
-The updated template doesn't have any changes to the resource you deployed, so deploying this template won't make any changes to your Azure environment. However, if you would like to deploy this template to see it succeed, use the Azure CLI commands below. Be sure to use the same *storagePrefix* parameter value you used in the last deployment.
+The updated template doesn't have any changes to the resource you deployed, so deploying this template won't make any changes to your Azure environment. 
+
+::: zone pivot="cli"
+
+However, if you would like to deploy this template to see it succeed, use the Azure CLI commands below. Be sure to use the same *storagePrefix* parameter value you used in the last deployment.
 
 ```azurecli
 templateFile="azuredeploy.json"
@@ -47,3 +51,21 @@ az deployment group create \
   --template-file $templateFile \
   --parameters storagePrefix={your-Prefix}
 ```
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+However, if you would like to deploy this template to see it succeed, use the Azure PowerShell commands below. Be sure to use the same *storagePrefix* parameter value you used in the last deployment.
+
+```azurepowershell
+$templateFile = "azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="addVariable-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile `
+  -storagePrefix {your-Prefix}
+```
+
+::: zone-end

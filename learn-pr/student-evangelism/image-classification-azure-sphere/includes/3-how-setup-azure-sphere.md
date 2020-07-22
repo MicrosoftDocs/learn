@@ -1,10 +1,10 @@
-Before starting to prototype and develop Azure Sphere applications, you need to set up your Azure Sphere on your PC. In this unit, you'll learn how to install Azure Sphere SDK, claim your device and set up your Azure Sphere for application deployments.
+Before starting to prototype and develop Azure Sphere applications, you need to set up Azure Sphere on your PC. In this unit, you'll learn how to install the Azure Sphere SDK, claim your device and set up Azure Sphere for application deployments.
 
-Firstly you'll install the Azure Sphere SDK so that you work with **azsphere** command-line utility.
+Firstly, you'll install the Azure Sphere SDK so that you work with the **azsphere** command-line utility.
 
-Secondly, you'll claim your device by an Azure Sphere tenant. Each device is claimed once and after you claim your device you can't move it to different tenant. Claiming the device associates its unique, immutable device ID with your Azure Sphere tenant. The Azure Sphere Security Service uses the device ID to identify and authenticate the device.
+Secondly, you'll claim your device by using an Azure Sphere tenant. Each device is claimed once, and after you claim your device, you can't move it to different tenant. Claiming the device associates its unique, immutable device ID with your Azure Sphere tenant. The Azure Sphere Security Service uses the device ID to identify and authenticate the device.
 
-Then, you'll configure the Azure Sphere for network connection and update the device OS. The Azure Sphere device checks and receives OS update and application updates from Azure Sphere Security each time it boots. Azure Sphere can also communicate with services such as an Azure IoT Hub.
+Then, you'll configure Azure Sphere for network connection and update the device OS. The Azure Sphere device checks and receives OS updates and application updates from the Azure Sphere Security Service each time it boots. Azure Sphere can also communicate with services such as Azure IoT Hub.
 
 The components you'll need to know are:
 
@@ -18,16 +18,16 @@ The components you'll need to know are:
 
 The steps you follow:
 
-1. Install Azure Sphere SDK
+1. Install the Azure Sphere SDK
 
-2. Claim your Azure Sphere
-   1. Log in Azure Sphere
+2. Claim your Azure Sphere device
+   1. Log in to Azure Sphere
    2. Create a new tenant
-   3. Set default Azure Sphere tenant
-   4. Claim your Azure Sphere
+   3. Set the default Azure Sphere tenant
+   4. Claim your Azure Sphere device
 
 3. Configure the Azure Sphere Wi-Fi network
-4. Update Azure Sphere OS
+4. Update the Azure Sphere OS
 5. Enable app development on the device
 
-After successfully completing this unit, the components that you need will be installed and your development environment will be set up to develop applications.
+After you successfully complete this unit, the components that you need will be installed and your development environment will be set up to develop applications.

@@ -173,7 +173,7 @@ The publish flag effectively configures a firewall rule that maps the ports.
 In our example, our tracking portal is accessible to clients browsing to port 80. We'll have to map port 80 from the container to an available port on the host.  We have port 8080 open on the host, which allows us to set the flag like this:
 
 ```code
---publish 80:8080
+--publish 8080:80
 ```
 
 Any client browsing to the Docker host IP and port 8080 can access the tracking portal.
