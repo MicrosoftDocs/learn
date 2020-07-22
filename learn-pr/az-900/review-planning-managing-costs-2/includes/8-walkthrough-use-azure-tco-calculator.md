@@ -1,20 +1,19 @@
-In this walkthrough, you will use the Total Cost of Ownership (TCO) Calculator to generate cost comparison report for an on-premises environment.
-
 ## Exercise - Use the Azure TCO Calculator
 
+Tailwind Traders is interested in moving some of their on-premises workloads to the cloud, but the Chief Financial Officer is concerned about committing to an ongoing monthly cost.  You've been asked to investigate if there are any potential cost savings, taking into account all of the costs involved with operating a technology workload. 
+
+Instead of writing a list of all the things you think may be included, you will use the Total Cost of Ownership as a basis, and you will adjust the provided cost assumptions to match the Tailwind Traders on-premises environment.     
+
 > [!Note]
-> This lab only requires browser with internet access to complete.
+> This exercise does not require an Azure subscription. You will only need a web browser with internet access to complete this.
 
-## Task 1: Configure the TCO calculator
+## Configure the TCO calculator
 
-> [!NOTE]
-> This walkthrough provides example definitions of on-premises infrastructure and workloads for a typical datacenter. To create a TCO Calculator report, use the example definitions or provide details of your *actual* on-premises infrastructure and workloads.
-
-In this task, we will add infrastructure information to the calculator. 
+In this task, you will add the details of the existing on-premise servers - two physical servers hosting 50 virtual machines each and 60Tb of disk storage. 
 
 1. In a browser, navigate to the [Total Cost of Ownership (TCO) Calculator](https://azure.microsoft.com/pricing/tco/calculator?azure-portal=true) page.
 
-2. To add details of your on-premises server infrastructure, click **+ Add server workload** in the **Define your workloads** pane.
+2. Click **+ Add server workload** in the **Define your workloads** pane.
 
     | Settings | Value |
     | -- | -- |
@@ -30,7 +29,7 @@ In this task, we will add infrastructure information to the calculator.
     | Windows Server 2008/2008 R2 | **Off** |
     | | |
 
-3. Select **+ Add server workload** to make a row for a new server workloads definition. 
+3. Select **+ Add server workload** to make a row for a new server workload definition. 
 
     | Settings | Value |
     | -- | -- |
@@ -43,7 +42,6 @@ In this task, we will add infrastructure information to the calculator.
     | Core(s) | **8**|
     | RAM (GB) | **16** |
     | Optimize by | **CPU** |
-    | Windows Server 2008/2008 R2 | **Off** |
     | | |
 
 4. In the **Storage** pane, click **Add storage**.
@@ -67,7 +65,7 @@ In this task, we will add infrastructure information to the calculator.
 
 6. Click **Next**.
 
-7. Explore the options and make any adjustments that you require. 
+7. Review the options and cost assumptions and make any adjustments that you would like. 
 
     | Settings | Value |
     | -- | -- |
@@ -76,11 +74,9 @@ In this task, we will add infrastructure information to the calculator.
 
 8. Click **Next**.
 
-## Task 2: Review the results and save a copy
+## View the report and save a copy
 
-In this task, we will review cost saving recommendations and download a report. 
-
-1. Review the Azure cost saving recommendations and visualizations.
+1. Review the estimated cost savings in Azure, then change the timeframe and region to see the results.
 
     | Settings | Value |
     | -- | -- |
@@ -88,11 +84,12 @@ In this task, we will review cost saving recommendations and download a report.
     | Region | **North Europe** |
     | | |
 
+2. Note the cost breakdown summary and review the details of each section under Estimated cost.
 
-2. To modify the information you provided, go to the bottom of the page, and click **Back**. 
+3. To modify any information you have provided, go to the bottom of the page, and click **Back**. 
 
-3. To save or print a PDF copy of the report, click **Download**.
+4. To download or print a PDF copy of the report, click **Download**.
 
 ![Screenshot of the report pane of the TCO Calculator in Azure. The highlighted and completed input fields indicates how set the TCO Calculator timeframe to three years and the region to North Europe. A graph shows the cost of on-premises infrastructure and workloads off-set against the reduced cost of using Azure.](../media/2001.png)
 
-Congratulations! You have used the TCO Calculator to generate a cost comparison report for an on-premises environment.
+Congratulations! You now have the information that the Chief Financial Officer needs, to compare the ongoing operating costs of your workloads on-premises to the costs of running them in Azure.

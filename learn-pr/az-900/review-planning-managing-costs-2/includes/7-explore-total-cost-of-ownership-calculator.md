@@ -10,28 +10,37 @@ After that, move to 9-explore-minimizing-costs and then 10-define-azure-cost-man
 After that, move to the knowledge check unit and then the summary
 </div>
 
-The [Total Cost of Ownership Calculator](https://azure.microsoft.com/pricing/tco?azure-portal=true) is a tool that you use to estimate cost savings you can realize by migrating to Azure. To use the TCO calculator, complete the three steps that the following sections explain.
+The [Total Cost of Ownership Calculator](https://azure.microsoft.com/pricing/tco?azure-portal=true) is a tool that you can use to estimate the cost savings of operating a solution in Azure over time, instead of in your on-premises data center. While total cost of ownership is a common business financial term, it can be hard to truly see all of the hidden costs related to operating a technology capability on-premises, in addition to the purchase price of hardware and software licenses. 
 
-![Image showing the numbers 1, 2 and 3 to represent the three steps required to use the TCO calculator.](../media/total-cost-ownership-steps.png)
+With the Total Cost of Ownership calculator you enter the details of your on-premises workloads and then review the suggested industry average cost (which you can adjust) for related operational costs, such as electricity, network maintenance and IT labor. You are then presented with a side-by-side report, letting you compare those costs with the same workloads running in Azure.
 
 **Step 1: Define your workloads**
 
-Enter details about your on-premises infrastructure into the TCO calculator according to four groups:
+Here you will enter the specifications of your on-premises infrastructure into the TCO calculator, according to four groups:
 
-+ **Servers**. Enter details of your current on-premises server infrastructure.
-+ **Databases**. Enter details of your on-premises database infrastructure in the **Source** section. In the **Destination** section, select the corresponding Azure service you would like to use.
-+ **Storage**. Enter the details of your on-premises storage infrastructure.
-+ **Networking**. Enter the amount of network bandwidth you currently consume in your on-premises environment.
++ **Servers**. Operating system, virtualization method, CPU Cores, RAM (memory).
++ **Databases**. Database type,  database server hardware specifications, and the corresponding Azure service you would like to use, including the expected maximum concurrent user logins.
++ **Storage**. Storage type and capacity, including any backup or archive storage.
++ **Networking**. The amount of network bandwidth you currently consume in your on-premises environment.
 
 **Step 2: Adjust assumptions**
 
-Adjust the values of key assumptions that the TCO calculator makes, which might vary between customers. To improve the accuracy of the TCO calculator, you should adjust the values so they match the costs of your current on-premises infrastructure. The assumption values you can adjust include storage costs, IT labor costs, hardware costs, software costs, electricity costs, virtualization costs, datacenter costs, networking costs, and database costs.
+In this section, you will define if your current on-premises licenses are enrolled for Software Assurance (which can save you money by re-using them in Azure), and whether you need to replicate your storage to another Azure region for greater redundancy.
+
+Then, you can see the values of key operating cost assumptions across several different areas, which might vary between customers. These costs have been certified by independent research company Nucleus Research. For example, these include electricity price per KW hour, hourly rate for an IT administrator and network maintenance cost as a percentage of network hardware & software costs.
+
+To improve the accuracy of the TCO calculator results, you should adjust the values so they match the costs of your current on-premises infrastructure. 
 
 **Step 3: View the report**
 
-![Depicts two TCO pie charts. One for total on-premises cost of $30,702,495 and one for Azure cost of $595,618.](../media/total-cost-ownership-report.png)
+Choosing a timeframe of between 1 - 5 years, the TCO calculator generates a report based on the information you have entered.
 
+![Depicts two TCO pie charts. One for total on-premises cost of $777,258 and one for Azure cost of $107,569.](../media/tco-report-piecharts.png)
 
-The TCO calculator generates a detailed report based on the details you enter and the adjustments you make.  The report allows you to compare the costs of your on-premises infrastructure with the costs using Azure products and services to host your infrastructure in the cloud.
+You can also view a side-by-side comparison of the cost breakdown of operating those workloads on-premises versus operating them in Azure, under the categories compute, data center, networking, storage and IT labor. 
+  
+![Depicts side by side detailed costs of storage.](../media/tco-report-detailed-cost.png)
 
+Then you can download, share or save this report.
 
+In the next exercise, you'll explore how Tailwind Traders uses the TCO calculator. 
