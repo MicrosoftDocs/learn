@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.introduction-machine-learning-models.8-logistic-regression-evaluate-model
+title: 'Logistic regression: Evaluating the model'
+metadata:
+  title: 'Logistic regression: Evaluating the model'
+  description: Learn how to evaluate models in logistic regressions with machine learning models for data science.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-logistic-regression-evaluate-model.md)] 
