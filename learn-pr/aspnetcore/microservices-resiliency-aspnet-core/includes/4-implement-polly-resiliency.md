@@ -1,4 +1,72 @@
-In this exercise, you'll implement a resiliency handler with Polly. The initial *eShop-Learn* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
+<!--begin paste-->
+<!-- TODO: move the app verification content to its own unit -->
+
+Soon after launching the setup script, the [Cloud Shell editor](/azure/cloud-shell/using-cloud-shell-editor) opens the starter solution. The editor opens to the *:::no-loc text="~/clouddrive/aspnet-learn/src/":::* directory. You can investigate the solution while the script continues to deploy the Docker containers to Azure Kubernetes Service (AKS). While doing so, the script will continue to run.
+
+> [!NOTE]
+> If your Cloud Shell session disconnects due to inactivity, reconnect and run the following command to return to this directory and open the Cloud Shell editor:
+>
+> ```bash
+> cd ~/clouddrive/aspnet-learn/src/ && \
+>   code .
+> ```
+
+## Review code
+
+The following *:::no-loc text="src":::* subdirectories contain .NET Core projects, each of which is containerized and deployed to AKS:
+
+| Project directory | Description |
+|-------------------|-------------|
+| *:::no-loc text="Aggregators/":::* | Services to aggregate across multiple microservices for certain cross-service operations. An HTTP aggregator is implemented in the *:::no-loc text="ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::* project. |
+| *:::no-loc text="BuildingBlocks/":::* | Services that provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
+| *:::no-loc text="Services/":::* | These projects implement the business logic of the app. Each microservice is autonomous, with its own data store. They showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain-Driven Design (DDD), and Command and Query Responsibility Segregation (CQRS). The new *:::no-loc text="Coupon.API":::* project has been provided, but it's incomplete. |
+| *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces. *:::no-loc text="WebSPA":::* is a storefront UI built with Angular. *:::no-loc text="WebStatus":::* is the health checks dashboard for monitoring the operational status of each service. |
+
+## Verify deployment to AKS
+
+After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
+
+```
+The eShop-Learn application has been deployed.
+
+You can begin exploring these services (when available):
+- Centralized logging       : http://13.83.97.100/seq/#/events?autorefresh (See transient failures during startup)
+- General application status: http://13.83.97.100/webstatus/ (See overall service status)
+- Web SPA application       : http://13.83.97.100/
+```
+
+> [!TIP]
+> To display these URLs again, run the following command:
+>
+> ```bash
+> cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+> ```
+
+Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
+
+1. Select the **General application status** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
+
+    :::image type="content" source="../media/4-review-code-verify-deployment/health-check.png" alt-text="Health check page" border="true" lightbox="../media/4-review-code-verify-deployment/health-check.png":::
+
+    > [!NOTE]
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
+
+1. After all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+
+    :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa.png" alt-text="eShop SPA" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa.png":::
+
+1. Complete a purchase as follows:
+    1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
+    1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
+    1. Select the shopping bag icon in the upper right.
+    1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
+
+    :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png":::
+
+In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll review the design of the new coupon service in the next unit.
+
+<!-- end paste -->
+In this exercise, you'll implement a resiliency handler with Polly. The initial *eShopOnContainers* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
 
 In this exercise, you will:
 
@@ -8,6 +76,8 @@ In this exercise, you will:
 - Explore the system response under failure after implementing resiliency.
 
 ## Explore the response of a non-resilient app
+
+Complete the following steps to see how the app responds without a resiliency solution in place.
 
 ### 1. Buy some stuff
 
@@ -60,27 +130,55 @@ When validating a discount coupon, the request goes to the web shopping aggregat
 
 In this case, you'll implement two policies to handle failure: the Retry and Circuit Breaker policies from the previous unit.
 
-Using Polly together with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical solutions to handle failures. Complete the following steps to implement the failure handling:
+Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical solutions to handle failures. Complete the following steps to implement the failure handling:
 
-1. Run the following command from the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator* directory:
+1. Run the following command:
 
     ```dotnetcli
-    dotnet add . package Microsoft.Extensions.Http.Polly
+    dotnet add src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Web.Shopping.HttpAggregator.csproj \
+        package Microsoft.Extensions.Http.Polly
     ```
 
-    The preceding command adds the `Microsoft.Extensions.Http.Polly` NuGet package to the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this package.
+    The preceding command installs the Polly `IHttpClientFactory` integration package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
 
 1. Configure the `HttpClient` to apply Polly policies.
 
     To implement this, you'll use the `AddHttpClient` extension method to register a specific configuration for the `HttpClient` that will be injected into `CouponService`.
 
-    Edit the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Startup.cs* file and make the following changes:
+    Apply the following changes to the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file:
 
-    - Import the `Polly`, `Polly.Extensions.Http`, and `Serilog` namespaces with `using` statements.
-    - Include the `AddPolicyHandler(GetRetryPolicy())` and `AddPolicyHandler(GetCircuitBreakerPolicy())` to the `AddHttpClient` method for the `CouponService` dependency injection registration.
-    - Add the `GetRetryPolicy` and `GetCircuitBreakerPolicy` methods.
+    1. Replace the `// Add the GetRetryPolicy method` comment with the following code:
 
-    Check the following code for details:
+        ```csharp
+        public static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy() =>
+            HttpPolicyExtensions.HandleTransientHttpError()
+                .WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(1.5, retryAttempt) * 1000), (_, waitingTime) =>
+                {
+                    Log.Logger.Information("----- Retrying in {WaitingTime}s", $"{ waitingTime.TotalSeconds:n1}");
+                });
+        ```
+
+    1. Replace the `// Add the GetCircuitBreakerPolicy method` comment with the following code:
+
+        ```csharp
+        public static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy() =>
+            HttpPolicyExtensions.HandleTransientHttpError()
+                .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
+        ```
+
+    1. Add the `AddPolicyHandler(GetRetryPolicy())` and `AddPolicyHandler(GetCircuitBreakerPolicy())` method calls to the `AddHttpClient` method for the `CouponService` dependency injection registration.
+
+    1. In the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file, replace the `// Add the using statements` comment with the following code:
+
+        ```csharp
+        using Polly;
+        using Polly.Extensions.Http;
+        using Serilog;
+        ```
+
+        The preceding code imports the `Polly`, `Polly.Extensions.Http`, and `Serilog` namespaces to resolve references downstream in the class.
+
+    The *Startup.cs* file will resemble the following code:
 
     <!-- TODO: add line highlighting to show differences -->
     :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/startup.cs":::

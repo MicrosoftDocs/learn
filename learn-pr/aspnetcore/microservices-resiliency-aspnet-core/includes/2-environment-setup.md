@@ -24,7 +24,7 @@ The preceding command retrieves and runs a setup script from a GitHub repository
 > [!IMPORTANT]
 > The script installs the required version of the .NET Core SDK alongside the version pre-installed in Azure Cloud Shell. To revert to the default configuration in Cloud Shell, see the instructions in the **Summary** unit.
 
-The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). While the script is running, continue to the next unit to review resiliency concepts.
+The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The script will take several minutes to complete. While the script is running, continue to the next unit to review resiliency concepts.
 
 > [!NOTE]
 > Non-blocking warnings are expected in the deployment process. If an unexpected exception occurs, you can reset any changes made by the script by running the following command:
