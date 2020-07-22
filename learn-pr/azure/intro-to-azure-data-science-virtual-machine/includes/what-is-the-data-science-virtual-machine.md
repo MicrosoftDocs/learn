@@ -22,11 +22,11 @@ The goal of the Data Science Virtual Machine is to provide data professionals of
 
 ## Sample Use Cases
 
-Below, we illustrate some common use cases for Data Science Virtual Machine customers.
+There are several use-cases where the Data Science Virtual Machine is a good fit:
 
 ### Moving data science workloads to the cloud
 
-The Data Science Virtual Machine provides a baseline configuration for data science teams that want replace their local desktops with a managed cloud desktop, ensuring that all the data scientists on a team have a consistent setup with which to verify experiments and promote collaboration. It also lowers costs by reducing the sysadmin burden. This burden reduction saves on the time needed to evaluate, install, and maintain software packages for advanced analytics.
+The Data Science Virtual Machine provides a baseline configuration for data science teams that want to replace their local desktops with a managed cloud desktop, ensuring that all the data scientists on a team have a consistent setup with which to verify experiments and promote collaboration. It also lowers costs by reducing the sysadmin burden. This burden reduction saves on the time needed to evaluate, install, and maintain software packages for advanced analytics.
 
 ### Data science training and education
 

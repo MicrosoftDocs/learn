@@ -2,7 +2,7 @@
 uid: learn.azure.intro-to-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
 metadata:
   title: Connecting to your Data Science Virtual Machine
-  description: Connect to your DSVM using both command line and graphical clients
+  description: Connect to your Data Science Virtual Machine using both command line and graphical clients
   ms.date: 2020-07-01
   author: lobrien
   ms.author: laobri
@@ -16,26 +16,26 @@ content: |
 quiz:
   title: Connecting to your Data Science Virtual Machine
   questions:
-    - content: "How can one reach the command line of the Data Science Virtual Machine without launching a terminal from the DSVM's graphical desktop?"
+    - content: "How can one reach the command line of the Data Science Virtual Machine without launching a terminal from the Data Science Virtual Machine's graphical desktop?"
       choices:
         - content: "On Ubuntu, one can connect with ssh. On Windows, one cannot access the command line without launching a terminal from within a Remote Desktop session."
           isCorrect: false
-          explanation: "Both Ubuntu and Windows Server 2019 DSVM images come with ssh access configured."
-        - content: "Both Ubuntu and Windows Server 2019 DSVM images come with ssh access enabled.  On Windows clients, an ssh client might need to be installed."
+          explanation: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with ssh access configured."
+        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with ssh access enabled.  On Windows clients, an ssh client might need to be installed."
           isCorrect: true
           explanation: "ssh is generally the fastest, least resource-intensive, and most flexible way to access the command line of your DSMV."
-        - content: "By default, remote command line access is not enabled in either the Ubuntu or Windows DSVM."
+        - content: "By default, remote command line access is not enabled in either the Ubuntu or Windows Data Science Virtual Machine."
           isCorrect: false
-          explanation: "An ssh client can connect to the command line of the DSVM quickly and with low overhead. Both Ubuntu and Windows Server 2019 DSVM images come with ssh access configured."
+          explanation: "An ssh client can connect to the command line of the Data Science Virtual Machine quickly and with low overhead. Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with ssh access configured."
     - content: "How can one use a graphical desktop with a Data Science Virtual Machine?"
       choices:
         - content: "On Ubuntu, one must use an XFCE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
           isCorrect: true
-          explanation: "A graphical desktop experience is available on both Ubuntu and Windows. The Ubuntu DSVM uses XFCE, while the Windows DSVM uses RDP."
-        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with an XFCE client, such as X2Go Client."
+          explanation: "A graphical desktop experience is available on both Ubuntu and Windows. The Ubuntu Data Science Virtual Machine uses XFCE, while the Windows Data Science Virtual Machine uses RDP."
+        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images can be accessed with an XFCE client, such as X2Go Client."
           isCorrect: false
           explanation: "On Ubuntu, one must use an XFCE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
-        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with a Remote Desktop Protocol (RDP) client."
+        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images can be accessed with a Remote Desktop Protocol (RDP) client."
           isCorrect: false
           explanation: "On Ubuntu, one must use an XFCE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
 
