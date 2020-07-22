@@ -113,5 +113,3 @@ Run the modified app and it will render the list and details side-by-side. When 
 However when the app starts on a single screen (and for other devices like iPhone), the default behavior is for the views to appear squashed together side-by-side on single screens too:
 
 ![TwoPaneView on a single-screen](../media/2-singlepane.png)
-
-Next learn how the `DualScreenInfo` class can help to dynamically configure the `TwoPaneView` to work well for both single- and dual-screen devices.

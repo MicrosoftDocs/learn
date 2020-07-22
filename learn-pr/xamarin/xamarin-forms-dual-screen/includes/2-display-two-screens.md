@@ -1,9 +1,9 @@
 Xamarin.Forms provides two different classes that can help display content on dual-screens:
 
-- **TwoPaneView** - a layout control that can host other controls and automatically 
-- **DualScreenInfo** - a 
+- **TwoPaneView** - a layout control that can host other controls and automatically adapt to two screens.
+- **DualScreenInfo** - a helper class that provides access to screen information to help adapt your app for two screens.
 
-To access these classes in your Xamarin.Forms apps, add the **Xamarin.Forms.DualScreen** NuGet to your solution.
+To access these in your Xamarin.Forms apps, add the **Xamarin.Forms.DualScreen** NuGet to your solution.
 
 ## Use TwoPaneView
 

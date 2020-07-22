@@ -15,7 +15,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
 1. Add a field `wasSpanned` to the class, which will be used to keep track of the window state:
 
     ```csharp
-    // is notbe spanned when first viewed...
+    // is not spanned when first viewed...
     bool wasSpanned = false;
     ```
 
