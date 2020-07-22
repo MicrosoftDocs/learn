@@ -1,4 +1,4 @@
-In this module, you were introduced to Azure Resource Manager templates (ARM templates) and used them to deploy a storage account to Azure. You made the template more flexible by adding parameters, and got output from the execution of the template. 
+In this module, you were introduced to Azure Resource Manager (ARM) templates and used them to deploy a storage account to Azure. You made the template more flexible by adding parameters, and got output from the execution of the template. 
 
 In summary, you:
 

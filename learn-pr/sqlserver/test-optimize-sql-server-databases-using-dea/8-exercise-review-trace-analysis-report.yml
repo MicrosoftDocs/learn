@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Review a trace analysis report in DEA
   description: Exercise - Review a trace analysis report in DEA
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 azureSandbox: true

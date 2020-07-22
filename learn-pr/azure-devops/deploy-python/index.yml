@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.deploy-python
 metadata:
-  title: Automate Python deployments with Azure Pipelines - Learn
+  title: Automate Python deployments with Azure Pipelines
   description: Implement a CI/CD pipeline for Python.
   ms.date: 04/27/2020
   author: tpetchel

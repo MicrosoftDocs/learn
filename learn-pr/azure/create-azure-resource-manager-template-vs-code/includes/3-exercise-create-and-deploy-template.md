@@ -1,4 +1,7 @@
-In this exercise, you create an Azure Resource Manager template (ARM template) and deploy it to Azure. Then you update that ARM template to add parameters and outputs.
+> [!NOTE]
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox, and you're added to a special subscription named Concierge Subscription.
+
+In this exercise, you create an Azure Resource Manager (ARM) template and deploy it to Azure. Then you update that ARM template to add parameters and outputs.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 

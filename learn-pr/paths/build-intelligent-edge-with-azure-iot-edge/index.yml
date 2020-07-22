@@ -45,7 +45,6 @@ products:
 - azure-cosmos-db
 - azure-blob-storage
 - azure-event-grid
-- azure-machine-learning-service
 - azure-resource-manager
 - azure-virtual-machines
 - azure-notebooks

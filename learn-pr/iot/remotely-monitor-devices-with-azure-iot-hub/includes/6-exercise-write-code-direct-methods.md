@@ -155,13 +155,8 @@ When setting up a call to invoke a direct method, it's best to divide the code i
 1. Finally, add a call to the `sendDirectMethod` function into the `createFromIotHubConnectionString` function, after the `eventHubClient = client;` line of code.
 
     ```javascript
-        // Save the client as a global variable.
-        eventHubClient = client;
-
         // Send a direct method to turn the fan on.
         sendDirectMethod();
-
-        return eventHubClient.getPartitionIds();
     ```
 
 1. Save the **app.js** file.
@@ -208,6 +203,8 @@ When setting up a call to invoke a direct method, it's best to divide the code i
             }
         }
     ```
+
+1. If you did not use the suggested "CheeseCaveID" device Id, change the `InvokeDeviceMethodAsync` call to use your device Id.
 
 1. Add the following code to the `Main` method, before creating the receivers to listen for messages.
 

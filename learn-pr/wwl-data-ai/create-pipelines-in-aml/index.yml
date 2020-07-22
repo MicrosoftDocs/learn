@@ -3,7 +3,7 @@ uid: learn.wwl.create-pipelines-in-aml
 metadata:
   title: Orchestrating machine learning with pipelines
   description: "Create pipelines in Azure Machine Learning"
-  ms.date: 06/07/2020
+  ms.date: 07/19/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ roles:
 - student
 products:
 - azure
-- azure-machine-learning-service
+- azure-machine-learning
 units:
 - learn.wwl.create-pipelines-in-aml.introduction
 - learn.wwl.create-pipelines-in-aml.pipelines

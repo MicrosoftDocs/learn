@@ -75,7 +75,7 @@ Milestone markers can be added to the delivery plan as reference points. These h
 
 	![An optimized work schedule](../media/5-adjust-work-schedule.png)
 
-Your final sprint plan should looks similar to this:
+Your final sprint plan should look similar to this:
 
 ![An optimized work schedule](../media/5-optimized-work-schedule.png)
 

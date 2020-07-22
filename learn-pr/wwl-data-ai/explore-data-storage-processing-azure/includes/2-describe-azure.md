@@ -41,7 +41,7 @@ You write Databricks applications using a *Notebook*. A notebook contains a seri
 
 For more information, read [What is Azure Databricks?](https://docs.microsoft.com/azure/azure-databricks/what-is-azure-databricks)
 
-### What is Azure HDInisght? 
+### What is Azure HDInsight? 
 
 Azure HDInsight is a managed analytics service in the cloud. It's based on Apache Hadoop, a collection of open-source tools and utilities that enable you to run processing tasks over large amounts of data. HDInsight uses a clustered model, similar to that of Synapse Analytics. HDInsight stores data using Azure Data Lake storage. You can use HDInsight to analyze data using frameworks such as Hadoop Map/Reduce, Apache Spark, Apache Hive, Apache Kafka, Apache Storm, R, and more.
 
@@ -49,7 +49,7 @@ Hadoop Map/Reduce uses a simple framework to split a task over a large dataset i
 
 Like Map/Reduce jobs, Spark jobs are parallelized into a series of subtasks tasks that run on the cluster. You can write Spark jobs as part of an application, or you can use interactive notebooks. These notebooks are the same as those that you can run from Azure Databricks. Spark includes libraries that you can use to read and write data in a wide variety of data stores (not just HDFS). For example, you can connect to relational databases such as Azure SQL Database, and other services such as Azure Cosmos DB.
 
-Apache Hive provides interactive SQL-like facilities for querying, aggregating, and summarizing data. The data can come from many different sources. Queries are converted into tasks, and parallelized. Each task can run on a separate node in the HDInisght cluster, and the results are combined before being returned to the user.
+Apache Hive provides interactive SQL-like facilities for querying, aggregating, and summarizing data. The data can come from many different sources. Queries are converted into tasks, and parallelized. Each task can run on a separate node in the HDInsight cluster, and the results are combined before being returned to the user.
 
 Apache Kafka is a clustered streaming service that can ingest data in real time. It's a highly scalable solution that offers publish and subscribe features.
 
@@ -84,7 +84,7 @@ Azure Data Lake is a collection of analytics and storage services that you can c
 
 - Data Lake Store
 - Data Lake Analytics
-- HDInisght
+- HDInsight
 
 ### What is Data Lake Store?
 
