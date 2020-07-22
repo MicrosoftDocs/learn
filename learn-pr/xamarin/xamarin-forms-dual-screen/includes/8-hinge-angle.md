@@ -30,5 +30,5 @@ To monitor the hinge angle as it changes, implement an event handler following t
     }
     ```
 
-> [!WARNING]
-> Constantly monitoring sensors such as the hinge angle can adversely affect battery life.
+    > [!WARNING]
+    > Constantly monitoring sensors such as the hinge angle can adversely affect battery life.
