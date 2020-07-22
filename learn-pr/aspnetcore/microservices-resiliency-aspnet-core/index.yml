@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.microservices-resiliency-aspnet-core
 metadata:
-  title: Implement resiliency in a .NET microservices app
-  description: Implement resiliency solutions in a .NET app in AKS using Polly and Linkerd.
+  title: Implement resiliency in a cloud-native ASP.NET Core microservice
+  description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
   ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-title: Implement resiliency in a .NET microservices app
+title: Implement resiliency in a cloud-native ASP.NET Core microservice
 summary: Learn how to make your app fault-tolerant with minimal impact on the user.
 abstract: |
   In this module, you will:
@@ -17,6 +17,7 @@ abstract: |
   - Deploy Linkerd onto an AKS cluster to implement an infrastructure-based resiliency solution.
 prerequisites: |
   - Familiarity C# and ASP.NET Core development at the beginner level
+  - Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
   - Conceptual knowledge of containers at the beginner level
   - Access to an Azure subscription with **Owner** privilege
 iconUrl: https://docs.microsoft.com/../media/learn/module.svg
