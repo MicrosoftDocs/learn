@@ -34,4 +34,4 @@ quiz:
       explanation: "Correct. When content cannot be correctly analyzed and a language determination made, results will show unknown for language name and ISO code, and the score will be NaN."
     - content: "0.50."
       isCorrect: false
-      explanation: "Incorrect. A score of 0.50 merely indicates a fifty percent positive confidence."
+      explanation: "Incorrect. A score of 0.50 merely indicates a 50 percent positive confidence."
