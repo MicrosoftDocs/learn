@@ -2,9 +2,7 @@
 TODO: In this module, you'll ...
 </div>
 
-<div style="background:yellow;">
-TODO: (Boilerplate overview of TWT goes here. They're an online hardware retailer, yada yada...)
-</div>
+[!include[](../../shared/tailwind-traders-overview.md)]
 
 Tailwind Traders is planning their migration to the cloud. They've ran a few successful proof-of-concept projects and want to better understand how to understand and manage their costs before they move their workloads to Azure.
 
