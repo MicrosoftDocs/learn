@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.govern-monitor-secure-resources-azure-lighthouse.6a-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 07/23/2020
+  author: iankensey
+  ms.author: prukulka
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 2
+content: |
+  [!include[](includes/6a-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content : Which of these is a valid service provider offer?
+    choices:
+    - content : Open 
+      isCorrect : false
+      explanation : Open offers aren't a valid type of service provider offer.
+    - content : Private
+      isCorrect: true
+      explanation: You can take advantage of private or public offers from service providers.
+    - content : Closed
+      isCorrect: false
+      explanation: Closed offers aren't a valid type of service provider offer
+  - content: How do you create policies?
+    choices:
+    - content: Create a policy graph and a graph assignment
+      isCorrect: false
+      explanation: You don't create a policy graph or graph assignment.
+    - content: Create a policy log and a log assignment
+      isCorrect: false
+      explanation: You don't create a policy log or log assignment.
+    - content: Create a policy definition and a policy assignment.
+      isCorrect: true
+      explanation: You can create policies using tools like the Azure portal, Azure CLI, and Azure PowerShell.
+  - content: Which of the following properties do you include in your template if you want to deploy a policy with remediation?
+    choices:
+    - content: delegatedManagedIdentityResourceId
+      isCorrect: true
+      explanation: Note that apiVersion must be set to 2019-04-01-preview to use this property.
+    - content: delegatedMainResourceId
+      isCorrect: false
+      explanation: This isn't a valid property.
+    - content: delegatedMainIdentityResourceId
+      isCorrect: false
+      explanation: This isn't a valid property.
+  - content: Which of these is a valid Azure Sentinel built-in role that you can assign to your users?
+    choices:
+    - content: Azure Sentinel Worker
+      isCorrect: false
+      explanation: This isn't a valid role.
+    - content: Azure Sentinel Responder
+      isCorrect: true
+      explanation: Your managing users can access and perform actions directly on your customers Azure Sentinel workspaces
+    - content: Azure Sentinel Looker
+      isCorrect: false
+      explanation: This isn't a valid role.
+  - content: How often will the Azure Connected Machine Agent send updates to an Azure tenant?
+    choices:
+    - content: Every 30 seconds
+      isCorrect: false
+      explanation: The agent sends updates at a longer interval
+    - content: Every two minutes
+      isCorrect: false
+      explanation: The agent sends updates at a longer interval
+    - content: Every five minutes
+      isCorrect: true
+      explanation: The Connected Machine agent sends an update every five minutes to the Azure tenant it is registered to. 

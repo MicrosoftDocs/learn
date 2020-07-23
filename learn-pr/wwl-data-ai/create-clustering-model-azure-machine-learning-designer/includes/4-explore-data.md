@@ -40,7 +40,7 @@ To get started with Azure machine Learning designer, first you must create a pip
     - **Column1**: Sepal length
     - **Column2**: Sepal width
     - **Column3**: Petal length
-    - **Column4**: Sepal width
+    - **Column4**: Petal width
     - **Column5**: Species indicator (0:"Setosa", 1:"Versicolor", 2:"Virginica")
 7. Close the iris visualization, and then close or resize its settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon so you can see the dataset on the pipeline canvas.
 8. In the pane on the left, view the **Modules** (&#8862;) tab and expand the **Data Transformation** section, which contains a wide range of modules you can use to transform data before model training.
