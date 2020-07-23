@@ -51,4 +51,4 @@ Azure Data factory is typically used to automate the process of extracting, tran
 
 ### Advanced Analytical Workloads
 
-You can perform advanced analytics in the form of predictive or pre-emptive analytics using a range of Azure data platform sevices. Azure Data Factory provides the integration from source systems into a Data Lake store, and can initiate compute resources such as Azure Databricks, or HDInsight to use the data to perform the advanced analytical work
+You can perform advanced analytics in the form of predictive or preemptive analytics using a range of Azure data platform services. Azure Data Factory provides the integration from source systems into a Data Lake store, and can initiate compute resources such as Azure Databricks, or HDInsight to use the data to perform the advanced analytical work
