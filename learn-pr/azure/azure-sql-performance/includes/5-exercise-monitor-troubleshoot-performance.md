@@ -112,7 +112,7 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
     AND es.is_user_process = 1;
     ```
 
-1. Use the same method in SSMS to load the  **dmdbresourcestats.sql** script. A new query editor window should look like the following:
+1. Use the same method in SSMS to load the **dmdbresourcestats.sql** script. A new query editor window should look like the following:
 
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;

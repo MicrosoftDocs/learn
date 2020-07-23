@@ -6,9 +6,7 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
 
 To scale performance for a problem that appears to be a CPU capacity problem you should decide what your options are and then proceed to scale CPUs using provided interfaces for Azure SQL.
 
-1. Decide options on how to scale performance
-
-    Since the workload is CPU *bound*, one way to improve performance is to increase CPU capacity or speed. A SQL Server user would have to move to a different machine or reconfigure a VM to get more CPU capacity. In some cases, even a SQL Server administrator may not have permission to make these scaling changes, the process could take time, and even require a database migration.
+1. Decide options on how to scale performance. Since the workload is CPU *bound*, one way to improve performance is to increase CPU capacity or speed. A SQL Server user would have to move to a different machine or reconfigure a VM to get more CPU capacity. In some cases, even a SQL Server administrator may not have permission to make these scaling changes, the process could take time, and even require a database migration.
   
     For Azure, we can use ALTER DATABASE, az cli, or the portal to increase CPU capacity with no database migration on the part of the user.
   
@@ -22,20 +20,14 @@ To scale performance for a problem that appears to be a CPU capacity problem you
   
     Instead of using the portal, I'll show you a different method to scale your workload.
 
-1. Flush the query store
-
-    For this exercise, so that we can see proper differences in reports, you must first flush the query store using the following script **flushhquerystore.sql** or T-SQL statement in SSMS in the context of the AdventureWorks database:
+1. For this exercise, so that we can see proper differences in reports, you must first flush the query store using the following script in SSMS **flushhquerystore.sql** in the context of the AdventureWorks database.
   
     ```sql
     EXEC sp_query_store_flush_db;
     ```
 
-1. Find out the current deployment service tier
+1. Open the script  **get_service_objective.sql** in SSMS. Your query editor window should look like the following:
 
-    There are other methods to change the service tier and one of them is with the T-SQL statement ALTER DATABASE. To ensure we see the proper effect of changing the service tier, learn how to find out your current tier using T-SQL.
-  
-    The Pricing or service tier is also known as a *service objective*. Using SSMS, open the script **get_service_objective.sql** or the T-SQL statements to find out this information.
-  
     ```sql
     SELECT database_name,slo_name,cpu_limit,max_db_memory, max_db_max_size_in_mb, primary_max_log_rate,primary_group_max_io, volume_local_iops,volume_pfs_iops
     FROM sys.dm_user_db_resource_governance;
@@ -43,6 +35,8 @@ To scale performance for a problem that appears to be a CPU capacity problem you
     SELECT DATABASEPROPERTYEX('AdventureWorks', 'ServiceObjective');
     GO
     ```
+
+    This is a method to find out your service tier using T-SQL. The Pricing or service tier is also known as a *service objective*. Execute the T-SQL batches.
   
     For the current Azure SQL Database deployment, your results should look like the following:
   
@@ -69,15 +63,13 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     :::image type="content" source="../media/7-azure-portal-update-progress.png" alt-text="Azure_Portal_Update_In_Progress":::
 
-1. Monitor the progress of service tier changes with T-SQL
-
-    Another way to monitor the progress of a change for the service objective for Azure SQL Database is to use the DMV **sys.dm_operation_status**. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change. 
-
-    Run this query in SSMS to see the output of this DMV at any point in time (**You must be in the context of the master database**):
+1. Right click master database in Object Explorer under the System Databases folder and select New Query. Run this query in SSMS:
 
     ```sql
     SELECT * FROM sys.dm_operation_status;
     ```
+
+    This is another way to monitor the progress of a change for the service objective for Azure SQL Database. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change.
 
     Here is an example of the output of this DMV after executing the above ALTER DATABASE statement:
 
@@ -126,15 +118,9 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
 Now that the database has more CPU capacity, let's run the workload we did in the previous exercise to observe whether there is a performance improvement.
 
-1. Run the workload again
+1. Now that the scaling has complete, we need to see if the workload duration is faster and whether waits on CPU resources has decreased. Run the workload again using the command **sqlworkload.cmd** that you executed in the previous exercise.
 
-    Now that the scaling has complete, we need to see if the workload duration is faster and whether waits on CPU resources has decreased.
-
-    Run the workload again using the command **sqlworkload.cmd** that you executed in the previous exercise.
-
-1. Observe the resource usage with DMVs
-
-    Use the same query from the first exercise of this module to observe results for **dm_db_resource_stats**.
+1. Using SSMS, execute the same query from the first exercise of this module to observe results from the script **dmdbresourcestats.sql**
 
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;
@@ -142,9 +128,7 @@ Now that the database has more CPU capacity, let's run the workload we did in th
 
     You should see the average cpu resource usage has dropped lower from the almost 100% usage in the previous exercise.
 
-1. Observe active queries with DMVs
-
-    Run the following T-SQL statement
+1. Using SSMS, execute the same query from the first exercise of this module from the script **dmexecrequests.sql**.
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -156,33 +140,27 @@ Now that the database has more CPU capacity, let's run the workload we did in th
 
     You will see there are more queries with a status of RUNNING (less RUNNABLE although this will appear some). This means our workers have more CPU capacity to execute.
 
-1. Observe the new workload duration.
-
-    The workload duration from **sqlworkload.cmd** should now be much less and somewhere ~25-30 seconds.
+1. Observe the new workload duration. The workload duration from **sqlworkload.cmd** should now be much less and somewhere ~25-30 seconds.
 
 ## Observe Query Store reports
 
 Let's look at the same Query Store reports as we did in the previous exercise.
 
-1. Use Top Resource Consuming Queries from SSMS
-
-    Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:
+1. Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:
 
     :::image type="content" source="../media/7-ssms-top-query-faster.png" alt-text="SSMS_QDS_Top_Query_Faster":::
 
     You will now see two queries (query_id). These are the same query but show up as different query_id values in Query Store because the scale operation required a restart so the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
-2. Look at Top Waits from SSMS
-
-    Look also at the Query Wait Statistics report as you did in the previous exercise. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
+2. Look also at the Query Wait Statistics report as you did in the previous exercise. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
 
     :::image type="content" source="../media/7-ssms-top-wait-stats-query-faster.png" alt-text="SSMS_Top_Wait_Stats_Query_Faster":::
 
 ## Observe changes from Azure Metrics
 
-Look at the Overview blade again for the Compute Utilization. Notice the significant drop in overall CPU resource usage compared to the previous workload execution like the following:
+1. Look at the Overview blade again for the Compute Utilization. Notice the significant drop in overall CPU resource usage compared to the previous workload execution like the following:
 
-:::image type="content" source="../media/7-azure-portal-compute-query-comparison.png" alt-text="Azure_Portal_Compute_Query_Comparison.png":::
+    :::image type="content" source="../media/7-azure-portal-compute-query-comparison.png" alt-text="Azure_Portal_Compute_Query_Comparison.png":::
 
 > [!TIP]
 > If you continue to increase vCores for this database you can improve performance up to a threshold where all queries have plenty of CPU resources. This does not mean you must match the number of vCores to the number of concurrent users from your workload. In addition, you can change the Pricing Tier to use **Serverless** *Compute Tier* instead of **Provisioned** to achieve a more "auto-scaled" approach to a workload. For example, for this workload if you chose a min vCore value of 2 and max vCore value of 8, this workload would immediately scale to 8 vCores.

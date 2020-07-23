@@ -12,7 +12,7 @@ All scripts for this exercise can be found at *04-Performance\tuning_application
 
 ## Create a new table for the application
 
-Run the following T-SQL statement in SSMS or use the script **order_rating_ddl.sql** to create a table in the AdventureWorks database you have used in the first two exercises:
+1. Run the following T-SQL statement in SSMS or use the script **order_rating_ddl.sql** to create a table in the AdventureWorks database you have used in the first two exercises:
 
 ```sql
 DROP TABLE IF EXISTS SalesLT.OrderRating;
@@ -30,9 +30,7 @@ GO
 
 Load some T-SQL queries for DMVs to observe query performance for active queries, waits, and I/O. **Load all these queries in the context of the AdventureWorks database**.
 
-1. Load up a query to observe active queries.
-
-    Use the following query or script **sqlrequests.sql** to look at active SQL queries *in the context of the AdventureWorks database*:
+1. Use the following query or script **sqlrequests.sql** to look at active SQL queries *in the context of the AdventureWorks database*:
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -42,18 +40,14 @@ Load some T-SQL queries for DMVs to observe query performance for active queries
     AND es.is_user_process = 1;
     ```
 
-1. Load up a query to observe waits
-
-    Use the following query or script **top_waits.sql** to look at top wait types by count *in the context of the AdventureWorks database*:
+1. Use the following query or script **top_waits.sql** to look at top wait types by count *in the context of the AdventureWorks database*:
 
     ```sql
     SELECT * FROM sys.dm_os_wait_stats
     ORDER BY waiting_tasks_count DESC;
     ```
 
-1. Load up a query to observe I/O latency
-
-    Use the following query or script **tlog_io.sql** to observe latency for transaction log writes *in the context of the AdventureWorks database*:
+1. Use the following query or script **tlog_io.sql** to observe latency for transaction log writes *in the context of the AdventureWorks database*:
 
     ```sql
     SELECT io_stall_write_ms/num_of_writes as avg_tlog_io_write_ms, * 
@@ -63,48 +57,44 @@ Load some T-SQL queries for DMVs to observe query performance for active queries
 
 ## Prepare the workload script for execution
 
-Edit the workload script **order_rating_insert_single.cmd**
+1. Edit the workload script **order_rating_insert_single.cmd**
 
 - Substitute your **unique_id** you were given in the first exercise for the server name for the **-S parameter**.
 - Substitute the password you provided in the database deployment from the first exercise for the **-P parameter**.
 
 ## Run the workload
 
-Run the workload using the script **order_rating_insert_single.cmd**. This script uses the ostress.exe program to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
-
-```sql
-DECLARE @x int;
-SET @x = 0;
-WHILE (@x < 500)
-BEGIN
-SET @x = @x + 1;
-INSERT INTO SalesLT.OrderRating
-(SalesOrderID, OrderRatingDT, OrderRating, OrderRatingComments)
-VALUES (@x, getdate(), 5, 'This was a great order');
-END
-```
-
-You can see from this script that it is not exactly a real depiction of data coming from the website but it does simulate many order ratings being ingested into the database.
-
-1. Change to the correct directory
-
-    From a powershell command prompt, change to the directory for this module activity:
+1. From a powershell command prompt, change to the directory for this module activity:
 
     ```powershell
     cd c:<base directory>\04-Performance\tuning_applications
     ```
 
-1. Run the workload script
-
-    Run the workload with the following command
+1. Run the workload with the following command
 
     ```Powershell
     .\order_rating_insert_single.cmd
     ```
 
+    This script uses the ostress.exe program to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
+
+    ```sql
+    DECLARE @x int;
+    SET @x = 0;
+    WHILE (@x < 500)
+    BEGIN
+    SET @x = @x + 1;
+    INSERT INTO SalesLT.OrderRating
+    (SalesOrderID, OrderRatingDT, OrderRating, OrderRatingComments)
+    VALUES (@x, getdate(), 5, 'This was a great order');
+    END
+    ```
+
+    You can see from this script that it is not exactly a real depiction of data coming from the website but it does simulate many order ratings being ingested into the database.
+
 ## Observe DMVs and workload performance
 
-Now run the queries for DMVs you loaded earlier to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
+1. Now run the queries for DMVs you loaded earlier to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
 
 Use these queries you can observe the following:
 
@@ -123,38 +113,28 @@ The problem is not a high percentage of log write activity. The Azure Portal and
 > [!NOTE]
 > General Purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads) so you may experience latencies more like these numbers. Managed Instance General Purpose latencies are similar. If your application is very sensitive to I/O latencies you could consider Business Critical Tiers.
 
-If you examine the workload T-SQL script **order_rating_insert_single.sql**, you will see each INSERT is a single transaction commit which requires a transaction log flush.
+1. Examine the workload T-SQL script **order_rating_insert_single.sql**, you will see each INSERT is a single transaction commit which requires a transaction log flush.
 
-One commit for each insert is not efficient but the application was not affected on a local SSD because each commit was very fast. The Business Critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency but maybe there is an application optimization so the workload is not as sensitive to I/O latency for the transaction log.
+    One commit for each insert is not efficient but the application was not affected on a local SSD because each commit was very fast. The Business Critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency but maybe there is an application optimization so the workload is not as sensitive to I/O latency for the transaction log.
 
-The T-SQL batch can be changed for the workload to wrap a BEGIN TRAN/COMMIT TRAN around the INSERT iterations.
+    The T-SQL batch can be changed for the workload to wrap a BEGIN TRAN/COMMIT TRAN around the INSERT iterations.
 
 ## Run a modified more efficient workload
 
-Make edits to scripts and execute them to see a more efficient I/O performance.
+Make edits to scripts and execute them to see a more efficient I/O performance. The modified workload can be found in the script **order_rating_insert.sql**. Prepare the workload script by editing **order_rating_insert.cmd** to put in your correct server name and password.
 
-1. Change the application query for the workload
-
-    The modified workload can be found in the script **order_rating_insert.sql**. Prepare the workload script by editing **order_rating_insert.cmd** to put in your correct server name and password.
-
-1. Run the modified workload
-
-    Run the modified workload using the script **order_rating_insert.cmd** similar to how you ran the previous workload script.
+1. Run the modified workload using the script **order_rating_insert.cmd** similar to how you ran the previous workload script.
 
 ## Observe the new results
 
-1. Look at the results of the T-SQL script for **sqlrequests.sql**.
-
-    You will see from these results far less WRITELOG waits and overall less wait time for these waits.
+1. Look at the results of the T-SQL script for **sqlrequests.sql** in SSMS. You will see from these results far less WRITELOG waits and overall less wait time for these waits.
 
     Now the workload runs much faster compared to the previous execution. This is an example of tuning an application for SQL queries that will run after in or outside of Azure.
 
     > [!NOTE]
     > This workload can run even faster against an Azure SQL Database with a connection type of **Redirect**. The deployment you have done in this exercise uses a Default connection type which will be a Proxy type because you are connected outside of Azure. Using Redirect can significantly speed up a workload like this given the round trips required from the client to the server.
 
-1. Observe the workload duration
-
-    The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity. It is important to note that sys.dm_os_wait_stats cannot be cleared using DBCC SQLPERF as it can be with SQL Server.
+1. Observe the workload duration. The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity. It is important to note that sys.dm_os_wait_stats cannot be cleared using DBCC SQLPERF as it can be with SQL Server.
 
 The concept of "batching" can help most applications including those connected to Azure SQL.
 
