@@ -14,10 +14,10 @@ properties of quantum physics to perform computations. You may have seen or
 heard about the Schrödinger equation that describes every quantum mechanical
 system:
 
-$$i \hbar \frac{\partial}{\partial t}\psi(t)= H \psi(t)$$.
+$$i \hbar \frac{\partial}{\partial t}\psi(t)= H \psi(t).$$
 
 It captures the wavefunction, $\psi(t)$, and the energy Hamiltonian, $H$, of
-the system, with $t$ being time and $$\hbar$$ being the Plank constant.
+the system, with $t$ being time and $\hbar$ being the Plank constant.
 However, fortunately, you don't need the Schrödinger equation in order to do
 quantum programming. In practice, nobody thinks in terms of the Schrödinger
 equation when writing quantum algorithms. But we can use it to assist us to
@@ -97,7 +97,7 @@ solving the task classically.
 How do we know the probabilities associated with a given superposition? Suppose
 we have a register of two qubits. That would be a superposition of four possible
 states: 
-$$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}$$.
+$$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
 
 Remember that $a,b,c$ and $d$ are probability amplitudes for each state. Their
 absolute values, e.g. $|a|$, squared give the corresponding probabilities. For
@@ -116,7 +116,7 @@ $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability
 for each state is: 
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
-$$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12$$.
+$$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 
 Each state has a 50% probability of being measured and hence we have a balanced
 bit generator. We also can check that $\frac12 + \frac12 = 1$.
