@@ -167,16 +167,11 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-    1. Call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy()` method call. The second occurrence should accept a `GetCircuitBreakerPolicy()` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
+    1. In the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file, call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy` method call. The second occurrence should accept a `GetCircuitBreakerPolicy` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
-        ```csharp
-        services.AddHttpClient<ICouponService, CouponService>()
-            .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
-            .AddPolicyHandler(GetRetryPolicy())
-            .AddPolicyHandler(GetCircuitBreakerPolicy());
-        ```
+        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/servicecollectionextensions.cs" id="snippet_AddApplicationServices" highlight="7-8":::
 
-    1. In the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file, replace the comment `// Add the using statements` with the following code:
+    1. Also in the *ServiceCollectionExtensions.cs* file, replace the comment `// Add the using statements` with the following code:
 
         ```csharp
         using Polly;
@@ -186,12 +181,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
         The preceding code imports the `Polly`, `Polly.Extensions.Http`, and `Serilog` namespaces to resolve references downstream in the class.
 
-    The *Startup.cs* file will resemble the following code:
-
-    <!-- TODO: add line highlighting to show differences -->
-    :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/startup.cs":::
-
-    The preceding code configures a retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead.
+    The preceding changes configure a Retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead.
 
     You can also see that the Circuit Breaker policy "opens the breaker" for 15 seconds, after 15 continuous failures. This policy configuration gives the server some time to recover.
 
