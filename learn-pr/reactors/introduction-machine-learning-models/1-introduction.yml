@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.introduction-machine-learning-models.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction to working with data by using machine learning models for data science.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)] 

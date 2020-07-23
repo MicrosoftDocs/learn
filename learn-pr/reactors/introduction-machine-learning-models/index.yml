@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.reactors.introduction-machine-learning-models 
+metadata:
+  title: Introduction to machine learning models 
+  description: Learn how to use machine learning models for data science operations.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Introduction to machine learning models 
+summary: Learn how to use machine learning models for data science operations.
+abstract: |
+  In this module, you will:
+  - Learn how to make predictions by using linear regression.
+  - Understand classifications with logistic regression.
+  - Review classifications with decision trees.
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Review the steps to manipulate and clean data.
+# placeholder icon
+iconUrl: /learn/achievements/reactors/introduction-machine-learning-models.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.introduction-machine-learning-models.1-introduction
+- learn.reactors.introduction-machine-learning-models.2-prediction-linear-regression
+- learn.reactors.introduction-machine-learning-models.3-linear-regression-explore-data
+- learn.reactors.introduction-machine-learning-models.4-linear-regression-fit-model
+- learn.reactors.introduction-machine-learning-models.5-linear-regression-evaluate-model
+- learn.reactors.introduction-machine-learning-models.6-classification-logistic-regression
+- learn.reactors.introduction-machine-learning-models.7-logistic-regression-handle-missing-values
+- learn.reactors.introduction-machine-learning-models.8-logistic-regression-evaluate-model
+- learn.reactors.introduction-machine-learning-models.9-classification-decision-trees
+badge:
+  uid: learn.reactors.introduction-machine-learning-models.badge 

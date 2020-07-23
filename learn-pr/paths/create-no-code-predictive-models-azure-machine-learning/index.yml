@@ -3,7 +3,7 @@ uid: learn.wwl.create-no-code-predictive-models-with-azure-machine-learning
 metadata:
   title: Create no-code predictive models with Azure Machine Learning
   description: Learn how to use Azure Machine Learning to create and publish machine learning models without writing code.
-  ms.date: 07/03/2020
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ roles:
 - data-scientist
 products:
 - azure
-- azure-machine-learning-service
+- azure-machine-learning
 modules:
 - learn.wwl.use-automated-machine-learning
 - learn.wwl.create-regression-model-azure-machine-learning-designer
