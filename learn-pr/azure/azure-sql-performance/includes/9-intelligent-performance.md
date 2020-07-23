@@ -73,5 +73,3 @@ You will see details of the index, table, and space required. You have the optio
 :::image type="content" source="../media/9-create-index-recommendation-script.png" alt-text="create_index_recommendation_script":::
 
 Notice the index is a non-clustered index that is applied as an online index. When an index has been applied based on a recommendation, either manually or through automatic tuning, the recommendation engine will also monitor query performance over a period of item with the applied index. If query performance degrades compared to before the index was applied, a recommendation can be made to drop the index.
-
-Now take a quiz to check your knowledge about Intelligent Performance and Azure SQL.

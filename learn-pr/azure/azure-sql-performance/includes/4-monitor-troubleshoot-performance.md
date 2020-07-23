@@ -96,11 +96,11 @@ Extended Events can be used for Azure SQL Managed Instance just like SQL Server 
 
 You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. The ability with SSMS to View Live Data is supported for Managed Instance.
 
-## Performance Scenarios for Azure SQL
+## Performance scenarios for Azure SQL
 
 In order to decide how to apply monitoring and troubleshooting performance tools and capabilities, it is important to look at performance for Azure SQL through *scenarios*.
 
-### Common Performance Scenarios
+### Common performance scenarios
 
 A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). This is a way to "divide and conquer" a performance problem for SQL which can often be vague (i.e. "it is slow").
 
@@ -110,7 +110,7 @@ The following diagram shows a common decision tree to determine if a SQL perform
 
 Let's dive more into the details of each aspect of the diagram.
 
-#### Running vs Waiting
+#### Running vs waiting
 
 Running or waiting scenarios can often be determined by looking at overall resource usage. For a standard SQL Server deployment you might use tools such as Performance Monitor in Windows or top in Linux. For Azure SQL, you can use the following methods:
 
@@ -142,7 +142,7 @@ If you have determined the problem is high CPU utilization, this is called a run
 
     This DMV can be used much like Query Store to find top resource consuming queries but only is available for query plans that are cached where Query Store provides a persistent historical record of performance. This DMV also allows you to find the query plan for a cached query.
 
-- sys.dm_exec_procedure stats
+- sys.dm_exec_procedure_stats
 
     This DMV provides information much like sys.dm_exec_query_stats except the performance information can be viewed at the stored procedure level.
 
@@ -203,7 +203,7 @@ SQL Server uses a worker pool of threads but has limits on the maximum number of
 > [!NOTE]
 > Managed Instance in the future may enforce worker limits similar to Azure SQL Database.
 
-#### Business Critical HADR Waits
+#### Business Critical HADR waits
 
 If you use a Business Critical (BC) service tier you may *unexpectedly* see the following wait types:
 

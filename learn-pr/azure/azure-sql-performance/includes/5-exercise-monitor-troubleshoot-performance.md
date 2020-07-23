@@ -2,17 +2,17 @@ In this exercise you will learn how to monitor and troubleshoot a performance pr
 
 ## Set up: Use scripts to deploy Azure SQL Database
 
-You first need to deploy a database for this exercise. You will use a Powershell script with the Azure Cloud Shell.
+In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script you will be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
-1. Deploy with Powershell and the Azure Cloud Shell
+This scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
 
-    In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.
+1. Start by obtaining your local IP address. Ensure you are disconnected from any VPN service and open a local PowerShell terminal on your device. Run the following command and note the resulting IP address.
 
-    In order to get the IP address required, you **must disconnect from any VPN** service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser).  
+    ```powershell
+    (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
+    ```
 
-    This script should take 3-5 minutes to complete. Make sure to note your password, unique ID, and server name as it will not be shown again. Copy the script and paste it into the Cloud Shell and hit enter. You will need to hit enter for the last command to get the server name.
-
-    **Don't forget to note your password, unique ID, and server name. You will need these throughout the module and in future exercises.**  
+1. Next, run the following commands in the Azure Cloud shell on the right. Fill in a complex password and enter your local public IP address you retrieved when prompted.
 
     ```powershell
     # Prompt for password
@@ -73,18 +73,18 @@ You first need to deploy a database for this exercise. You will use a Powershell
     Write-Host $serverName
     ```
 
-1. Open SSMS and create a new connection to your logical server.  
+1. On your local device, open SSMS and create a new connection to your logical server.  
 
-    For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell. You can also obtain this in the   [Azure portal](https://portal.azure.com/learn.docs.microsoft.com), e.g. *aw-server`<unique ID>`.database.windows.net*.
+    For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell e.g. *aw-server`<unique ID>`.database.windows.net*.
 
-    Change the authentication to **SQL Server Authentication**, and input the corresponding login **cloudadmin** and password you provided for the Cloud Shell script.  
+    Change the authentication to **SQL Server Authentication**, and input the corresponding login **cloudadmin** and password you provided for the script.  
 
-    Check the **Remember password** box and select **Connect**.  
+    Select **Remember password** and select **Connect**.  
+
+    :::image type="content" source="../media/5-connect-azure-sql.png" alt-text="Connect to SQL Database in SSMS"::: 
 
     > [!NOTE]
     > Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
-
-    :::image type="content" source="../media/5-connect-azure-sql.png" alt-text="Connect to SQL Database in SSMS":::  
 
 ## Prepare the exercise by loading and editing scripts
 
