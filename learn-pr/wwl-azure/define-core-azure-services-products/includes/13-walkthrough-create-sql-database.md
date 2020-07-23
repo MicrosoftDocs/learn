@@ -1,7 +1,7 @@
 ## Exercise - SQL database
 
 > [!IMPORTANT]
-> A sandbox is provided to all you to complete this lab.  Otherwise, this Lab requires an Azure subscription.
+> A sandbox is provided to allow you to complete this lab.  Otherwise, this Lab requires an Azure subscription.
 
 ## Lab - Create a SQL database
 
