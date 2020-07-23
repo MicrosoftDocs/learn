@@ -8,14 +8,14 @@ After you (and likely your team and stakeholders) agree on a problem statement, 
 
 In production, there are normally 6 phases to create  a solution, and developing the problem statement is just the beginning:
 
-- 01 **Discovery**: The original statement of the problem from the customer
-- 02 **Envisioning**: A "blue-sky" description of what success in the project would look like. Often phrased as *"I can..."* statements
-- 03 **Architecture Design Session**: An initial layout of the technology options and choices for a preliminary solution
-- 04 **Proof-Of-Concept** (POC): After the optimal solution technologies and processes are selected, a POC is set up with a small representative example of hat a solution might look like, as much as possible. If available, a currently-running solution in a parallel example can be used
-- 05 **Implementation**: Implementing a phased-in rollout of the completed solution based on findings from the previous phases
-- 06 **Handoff**: A post-mortem on the project with a discussion of future enhancements
+1. **Discovery**: The original statement of the problem from the customer
+1. **Envisioning**: A "blue-sky" description of what success in the project would look like. Often phrased as *"I can..."* statements
+1. **Architecture Design Session**: An initial layout of the technology options and choices for a preliminary solution
+1. **Proof-Of-Concept** (POC): After the optimal solution technologies and processes are selected, a POC is set up with a small representative example of hat a solution might look like, as much as possible. If available, a currently-running solution in a parallel example can be used
+1. **Implementation**: Implementing a phased-in rollout of the completed solution based on findings from the previous phases
+1. **Handoff**: A post-mortem on the project with a discussion of future enhancements
 
-Throughout this module, if you want to leverage various project templates you can find them [here](https://github.com/microsoft/sqlworkshops/tree/master/ProjectResources), and the latest icons can be found [here](https://www.microsoft.com/download/confirmation.aspx?id=41937). These assets can also be used in your production workloads.  
+Throughout this module, if you want to leverage various project templates you can find them [here](https://github.com/microsoft/sqlworkshops/tree/master/ProjectResources?azure-portal=true), and the latest icons can be found [here](https://www.microsoft.com/download/confirmation.aspx?id=41937?azure-portal=true). These assets can also be used in your production workloads.  
 
 For these scenarios module, you'll spend some time determining the problem statement (**Discovery**), but the big focus will be on the **Architecture Design Session**. If you wish to develop a solution further after the module, you can use the assets in the module to do so.
 
@@ -25,7 +25,13 @@ For these scenarios module, you'll spend some time determining the problem state
 
 Your customer is a provider for services and content delivery across the globe. They've requested your assistance in architecting a system that can handle thousands of writes per second to what is essentially an operational data mart. They also need to be able to perform real-time analytics on the data, to determine trends and identify anomalies, which they are currently doing with CLR applications. They are not looking for a data warehouse and utilize large portions of the SQL surface area, but they need to be able to scale where their users live.  
 
-Additionally, they are trying to determine which authentication methods they should use in their hybrid environment. While the main solution and application will live in Azure, there is also an application on a non-Azure machine, a legacy application (they can't change the driver or connection string) on a non-Azure machine, and multiple users that run reports from SQL admin tools (SSMS, ADS, PowerShell) on non-Azure machines. Wherever possible, they want to eliminate hard coding passwords/secrets in the connection strings and app config files, and they want to eliminate using passwords in SQL tools in SQL tools or find a way to enhance that authentication.
+Additionally, they are trying to determine which authentication methods they should use in their hybrid environment. While the main solution and application will live in Azure, they also need to accommodate the following:
+
+- An application on a non-Azure machine
+- A legacy application that will not allow the change the driver or connection string on a non-Azure machine.
+- Multiple users that run reports from SQL admin tools (SSMS, ADS, PowerShell) on non-Azure machines.
+
+Wherever possible, they want to eliminate hard coding passwords/secrets in the connection strings and app config files, and they want to eliminate using passwords in SQL tools or find a way to enhance that authentication.
 
 *Scenario guidance*:
 
@@ -38,7 +44,7 @@ Additionally, they are trying to determine which authentication methods they sho
 
 1. After reviewing the scenario and the guidance provided, pull out as many requirements for the project as you can find.
 1. List out the possible technologies and processes that could potentially be used in a solution. Feel free to adapt the scenario to have more information where you want clarity, you can make assumptions in this case.
-    Hint: For the security challenges, you might consider leveraging the Azure SQL Security Best Practices Playbook that's available in the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice).  
+    Hint: For the security challenges, you might consider leveraging the [Azure SQL Security Best Practices Playbook](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice?azure-portal=true).  
 1. Using a decision matrix or some other decision process, select technologies and processes that will make up your preliminary solution.
 1. Take some notes that present your project goals and constraints, as well as the recommended solution design.
 
