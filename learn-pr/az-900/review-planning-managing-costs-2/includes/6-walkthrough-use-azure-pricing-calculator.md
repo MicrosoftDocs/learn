@@ -1,73 +1,139 @@
-With an understanding of Azure cost factors, Tailwind Traders wants to take a workload scenario and estimate how much it would cost them in Azure, each month.
+With an understanding of the more important cost factors associated with running on Azure, Tailwind Traders wants to take a typical workload and estimate how much it would cost each month to run it on Azure.
 
-## Explore the Azure Pricing Calculator
+The IT Manager at Tailwind Traders is faced with the decision about whether to replace some aging on-premises hardware or move the application solution to Azure. They need to know how much the ongoing monthly cost of the solution in Azure would be.
 
-> [!Note]
-> This exercise only requires browser access to the internet to complete.
-1. Launch the [Azure Pricing Calculator](https://azure.microsoft.com/pricing/calculator/). There you'll find several tabs:
+Let's start by defining which Azure services you need.
 
-- **Products.** This tab is where you'll do most of your activity. It has all of the Azure products and services listed and is where you'll add or remove services to put together your estimate.
-- **Example Scenarios** This tab has several examples of the resources involved in common cloud-based solution architectures. You can add all the components of the entire scenario to estimate the cost, and you can edit their configurations. This is a great place to find suggested architectures for things like modern data warehouse and real-time analytics solutions. 
-- **Saved Estimates.** Here are all of your previously saved estimates. 
-- **FAQ.** Frequently asked questions about using the Pricing Calculator.
+> [!NOTE]
+> The Pricing calculator is for information purposes only. The prices are only an estimate, and you won't be charged for any services you select.
 
-## Estimate a solution
-The IT Manager at Tailwind Traders is faced with the decision about whether to replace some ageing on-premises hardware or move the application solution to Azure. They need to know how much the ongoing monthly cost of the solution in Azure would be.
+## Define your requirements
 
-This system will run on two Azure VMs and will connect to an Azure SQL Database instance. You also want to have a layer 7 load balancer in place (provided by an Azure Application Gateway), for increased application performance. The following illustration shows an application gateway connected to two virtual machines that are connected to a single Azure SQL Database instance.
+Before you run the Pricing calculator, you first need a sense of what Azure services you need.
+
+You meet with the application development team to discuss their migration project.
+
+In their datacenter, the team has an ASP.NET web application that runs on Windows. The web application provides information about product inventory and pricing. They have two virtual machines that are connected through a central load balancer. The web application connects to a SQL Server database that holds inventory and pricing information.
+
+The team decides to:
+
+* Use virtual machines on Azure, similar to what they use in the datacenter.
+* Use Azure Application Gateway for load balancing.
+* Use Azure SQL Database to hold inventory and pricing information.
+
+Here's a diagram that shows the basic configuration:
 
 ![Illustration of described sample architecture: Application Gateway feeding to two virtual machines that take data from a single Azure SQL database.](../media/2-estimate-costs-architecture.png)
 
-> [!Tip]
-> Make sure you have a clean calculator with nothing listed in the estimate. If you have anything present in your estimate, click the trash can icon on each item to reset the estimate.
+In practice, you would define your requirements in greater detail. But here are some basic requirements that came up during the meeting:
 
-1. In the **Products** tab of the Azure Pricing Calculator, add the following services to the estimate by clicking on them:
+* The application is used by Tailwind Traders employees at their retail stores. It's not accessible to customers.
+* This application doesn't require a massive amount of computing power.
+* The virtual machines and the database runs all the time (730 hours/month).
+* The network processes about 1 TB of data per month.
+* The database doesn't need to be configured for high-performance workloads, and requires no more than 32 GB of storage.
 
-    Use the **West US** region for all resources.
+## Explore the Pricing calculator
 
-<div style="background:yellow;">
-TODO: Convert resource details from the paragraphs below into a table like the TCO calc exercise.
-</div>
+Let's start with a quick tour of the Pricing calculator.
 
-**Virtual Machines** in the **Compute** category
+1. Go to the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true).
 
-1. TO BE EDITED Set the value for each of these settings:
+1. Note the tabs at the top:
 
-    | Settings | Value |
+    ![](../media/pricing-calculator-tabs.png)
+
+Here's what you'll find under each tab:
+
+- **Products**
+
+    This is where you choose the Azure services that you want to include in your estimate. You'll likely spend most of your time here.
+- **Example Scenarios**
+
+    Here you'll find several _reference architectures_,or common cloud-based solutions that you can use as a starting point.
+- **Saved Estimates**
+
+    Here you'll find your previously saved estimates.
+- **FAQ**
+
+    Here you'll discover answers to frequently asked questions about the Pricing calculator.
+
+## Estimate your solution
+
+Here you add each Azure service that you need to the calculator and then configure each service to fit your needs.
+
+> [!TIP]
+> Make sure you have a clean calculator with nothing listed in the estimate. You can reset the estimate by selecting the trash can icon next to each item.
+
+### Add services to the estimate
+
+1. On the **Products** tab, select the service from each of these categories:
+
+    | Category | Service |
     | -- | -- |
-    | Name | *Servers: Windows VMs* |
-    | Workload | **Windows/Linux Server** |
-    | Environment | **Virtual Machines** |
-    | Operating system | **Windows** |  
-    | VMs | **50** |
-    | Virtualization | **Hyper-V** |
-    | Core(s) | **8**|
-    | RAM (GB) | **16** |
-    | Optimize by | **CPU** |
-    | Windows Server 2008/2008 R2 | **Off** |
-    | | |
+    | **Compute** | **Virtual Machines** |
+    | **Databases** | **Azure SQL Database** |
+    | **Networking** | **Application Gateway** |
 
-This project is an ASP.NET application, so we'll need to use a **Windows** operating system VM. This application doesn't require a massive amount of computing power, so select the **D2 v3** instance size. We'll need two virtual machines, and they will run all the time (730 hours/month). We're going to use **Standard SSD** storage for these VMs and will require just one disk per VM of size **E10**, for a total of two disks. Keep the storage transactions set to the default of 100.
+1. Scroll to the bottom of the page. You see that each service is listed with its default configuration.
 
+    ![](../media/pricing-calculator-estimate.png)
 
-**Azure SQL Database** in the **Databases** category
-For the database, we're going to provision a **Single Database** type using the **vCore** model. We want a **General Purpose, Gen 5** database with **8 vCores**. We'll need **32 GB** of storage.
+### Configure services to match your requirements
 
-**Application Gateway** in the **Networking** category
-For Application Gateway, we're going to use the **Web Application Firewall** tier, so we have some protection for our environment. And we're going to go with just **2** instances and **Medium** size, as our load isn't going to be high. We expect to process **1 TB** of data per month. We don't expect to process any data in the North America, Europe (Zone 1).
+1. Under **Virtual Machines**, set these values:
 
-1. Looking through your estimate, you should see a summary cost for each service you've added and a full total for the entire estimate. You can try playing with some of the options to see the estimate go up or down.
+    | Setting | Value |
+    | -- | -- |
+    | Region | **West US** |
+    | Operating system | **Windows** |
+    | Type | **(OS Only)** |
+    | Tier | **Standard** |
+    | Instance | **D2 v3** |
+    | Virtual Machines | **2** x **730 Hours** |
 
+    Leave the remaining settings at their current values.
 
+1. Under **Azure SQL Database**, set these values:
 
-## Share and save your estimate
-We now have an estimate for our solution. We can save this estimate, so we can come back to it later and adjust it if necessary. We can also export it to Excel for further analysis or share the estimate via a URL.
+    | Setting | Value |
+    | -- | -- |
+    | Region | **West US** |
+    | Type | **Single Database** |
+    | Backup Storage Tier | **RA-GRS** |
+    | Purchase Model | **vCore** |
+    | Service Tier | **General Purpose** |
+    | Compute Tier | **Provisioned** |
+    | Generation | **Gen 5** |
+    | Instance | **8 vCore** |
 
-To export the estimate, select **Export** at the bottom of the estimate. Exporting will download your estimate in Excel (**.xlsx**) format and will include all the services you added to your estimate.
+    Leave the remaining settings at their current values.
 
-We can either share the Excel spreadsheet, or we can click on the Share button in the calculator. Sharing will give you a URL that you can use to share this estimate. Anyone with this link will be able to access it, making it easy to share with your team.
+1. Under **Application Gateway**, set these values:
 
-If you are logged in with your Azure account, you can save the estimate, so you can come back to it later. Go ahead and click the **Save** button. If you are signed in, you should see a notification that your estimate was saved. If you aren't signed in, you'll see a message to sign in to save your estimate. After you've saved the estimate, scroll back up to the top of the page and select the **Saved Estimates** tab. You will see your estimate there. You can then select it to pull it back up, or delete it if you no longer need it.
+    | Setting | Value |
+    | -- | -- |
+    | Region | **West US** |
+    | Tier | **Web Application Firewall** |
+    | Size | **Medium** |
+    | Gateway hours | **2** x **730 Hours** |
+    | Data processed | **1 TB** |
+    | Outbound Data Transfer | **5 GB** |
 
-We have arrived at a cost estimate for a set of Azure services without spending any money. We didn't create anything, and we have a fully sharable estimate that we can do further analysis or modifications on in the future. You can use this estimate not only to create estimates for systems where you know the specific services you plan to use but also to compare how different services might impact your overall costs. An example is Microsoft SQL Server on a VM instead of an Azure SQL Database.
+    Leave the remaining settings at their current values.
 
+## Review, share, and save your estimate
+
+At the bottom of the page, you see the total estimated cost of running the solution. You can change the currency type if you'd like.
+
+![](../media/pricing-calculator-estimated-cost.png)
+
+At this point, you have a few options:
+
+* Select **Export** to save your estimate as a Microsoft Excel document.
+* Select **Save** or **Save as** to save your estimate to the **Saved Estimates** tab for later.
+* Select **Share** to generate a URL so you can share the estimate with your team.
+
+You now have a cost estimate that you can share with your team. You can make adjustments as you discover any new requirements or requirements you can omit.
+
+Try experimenting with some of the options you worked with here, or create a purchase plan for a workload you want to run on Azure.

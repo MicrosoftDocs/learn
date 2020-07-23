@@ -14,6 +14,10 @@ It's important to learn how costs are generated in Azure, so you can understand 
 
 ## How do I purchase Azure services?
 
+<div style="background:yellow;">
+TODO: Are one of these called "Pay-As-You-Go"? We use the term later... is this the same as "Web Direct"?
+</div>
+
 There are three main ways to purchase services on Azure. They are:
 
 * **Through an Enterprise Agreement**
@@ -22,11 +26,11 @@ There are three main ways to purchase services on Azure. They are:
 
 * **Directly from the web**
 
-    Here, you purchase Azure services directly from the Azure portal website and pay standard prices. You're billed monthly, as a credit card payment or via an invoice. This purchasing method is known as Web Direct. 
+    Here, you purchase Azure services directly from the Azure portal website and pay standard prices. You're billed monthly, as a credit card payment or via an invoice. This purchasing method is known as Web Direct.
 
 * **Through a Cloud Solution Provider (CSP)**
 
-    A CSP is a Microsoft Partner who may help you build solutions on top of Azure. You will be billed for your Azure usage by your CSP, at a price determined by them. They will also answer your support questions,  escalating them to Microsoft if needed.
+    A CSP is a Microsoft Partner who may help you build solutions on top of Azure. You will be billed for your Azure usage by your CSP, at a price determined by them. They will also answer your support questions, escalating them to Microsoft as needed.
 
 You can bring up, or _provision_, Azure resources from the Azure portal or from the command line. The Azure portal arranges products and services by category. You simply select the services that fit your needs, and your account is billed according to Azure's "pay for what you use" model.
 
@@ -51,16 +55,18 @@ Deallocating a VM when you don't plan on using it for some time is just one exam
 ### Azure subscription types
 In addition, some Azure subscription types also include usage allowances, which affect costs. 
 
-For example, an Azure free account subscription offers access to a number of Azure products that are free for 12 months, a $200 credit to spend within your first 30 days of sign-up and access to more than 25 products that are always free (based on resource and region availability).  To learn more, visit the [Azure free account FAQ] (https://azure.microsoft.com/free/free-account-faq/).
+For example, an Azure free account subscription offers access to a number of Azure products that are free for 12 months, a $200 credit to spend within your first 30 days of sign-up and access to more than 25 products that are always free (based on resource and region availability).  To learn more, visit the [Azure free account FAQ](https://azure.microsoft.com/free/free-account-faq/).
 
 ### Azure Marketplace
+
 <div style="background:yellow;">
 TODO: Need more 3rd party / Marketplace services and cost? - Review Sonia's edit.
 </div>
+
 You can also purchase Azure-based solutions and services from third-party vendors through the **Azure Marketplace**. Examples of these include a managed network firewall appliance or a connector to a third-party backup service. Billing structures are set by the third-party vendor.
 
 ## Does location or network traffic affect cost?
-When you provision a resource in Azure, you need to define the location (known as the Azure region) of where it will be deployed. This decision can have cost consequences. 
+When you provision a resource in Azure, you need to define the location (known as the Azure region) of where it will be deployed. This decision can have cost consequences.
 
 ### Location
 <div style="background:yellow;">
@@ -98,6 +104,7 @@ For a full, up-to-date list of Azure regions and zones, visit the FAQ on the [Az
 > * To avoid confusion, be aware that a *Zone for billing purposes* is not the same as an *Availability Zone*. In Azure, the term *Zone* is used to refer to billing purposes only, and the full-term *Availability Zone* refers to a failure protection feature that Azure provides with its cloud datacenters.
 
 ## What other factors affect the final cost?
+
 Finally, the range of Azure products and services have different ways of calculating cost, depending on what is relevant to that kind of resource.  
 
 ### Resource type

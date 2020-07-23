@@ -1,52 +1,56 @@
+As a home improvement retailer, the proverb "measure twice, cut once" is fitting for the team at Tailwind Traders.
+
+Here are some recommended practices that can help you minimize your costs.
+
+## Perform cost analysis before you deploy
+
+To help you plan your solution on Azure, carefully consider the products, services, and resources you need, and read the relevant documentation to understand how each of your choices are metered and billed.
+
+Calculate your projected costs by using the Pricing calculator and the Total Cost of Ownership (TCO) calculator. Only add the products, services, and resources that you need for your solution.
+
+## Use Azure Advisor to monitor your usage
+
+Ideally, you want your provisioned resources to match your actual demand.
+
+Azure Advisor identifies unused or under-utilized resources, and recommendation unused resources that you can remove. This helps you configure your resources to match your actual demand.
+
 <div style="background:yellow;">
-TODO: OK, we did the TCO calculator, then looked at pricing. Now let's shift the scenario to minimzing costs. 
+TODO: Image is a bit blurry.
 
-Maybe you met with the CFO again and want to get a sense of how to manage and minimize costs. Maybe there's another set of probing questions for you to answer.
-
-Start with the narrative, ask some probing questions, answer them here. And we're done.
+TODO: Can we show a better example and tie it to a specific recommendation? Looking at a recommendation around what you did in the prior exercises would be ideal ;)
 </div>
-
-The following best practice guidelines can help minimize your Azure costs.
-
-## Perform cost analyses
-
-Plan your Azure solution wisely. Carefully consider the products, services, and resources you need, and read the relevant documentation to understand how each of your choices are metered and billed. Additionally, you should calculate your projected costs by using the Azure Pricing and Total Cost of Ownership (TCO) calculators, only adding the products, services, and resources you need.
-
-## Monitor usage with Azure Advisor
 
 ![Depicts two Azure Advisor monitor results, one for document count and one for storage size.](../media/usage-costs.png)
 
-In an efficient architecture, provisioned resources match the demand for those resources. The *Azure Advisor* feature identifies unused or under-utilized resources, and you can implement its recommendations by removing unused resources and configuring your resources to match your actual demand.
+## Use spending limits to prevent accidental spending
 
-## Use spending limits
+If you have a Free Trial or a credit-based Azure subscription, you can use spending limits to prevent accidental overrun.
 
-Free trial customers and some credit-based Azure subscriptions can use the Spending Limits feature. Azure provides the Spending Limits feature to help prevent you from exhausting the credit on your account within each billing period. If you have a credit-based subscription and you reach your configured spending limit, Azure suspends your subscription until a new billing period begins.
+For example, when you spend all the credit included with your Azure free account, Azure resources that you deployed are removed from production and your Azure virtual machines are stopped and de-allocated. The data in your storage accounts are available as read-only. At this point, you can upgrade your Free Trial subscription to a Pay-As-You-Go subscription.
 
-The spending limit feature is not available for customers who aren't using credit-based subscriptions, such as Pay-As-You-Go subscribers.
+If you have a credit-based subscription and you reach your configured spending limit, Azure suspends your subscription until a new billing period begins.
 
-> [!NOTE]
-> For more information on Azure spending limits, refer to [Understand Azure spending limit and how to remove it](https://docs.microsoft.com/azure/billing/billing-spending-limit?azure-portal=true)
+A related concept is _quotas_, or limits on the number of similar resources you can provision within your subscription. For example, you can allocate up to 25,000 virtual machines per region. While these limits mainly help Microsoft plan their datacenter capacity, they also help protect you from accidentally provisioning more than you intended.
 
----
+<div style="background:yellow;">
+TODO: Sonia, per our discussion, remove this paragraph ^ if it's out of place or we don't want to talk about it.
+</div>
 
-> [!NOTE]
-> Azure spending limits are not the same as Subscription, Service, or Resource Group limits and quotas. For more information, refer to [Azure subscription and service limits, quotas, and constraints.](https://docs.microsoft.com/azure/azure-subscription-service-limits?azure-portal=true)
+## Use Azure Reservations to pre-pay in advance
 
-## Use Azure Reservations
-
-[Azure Reservations](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations?azure-portal=true) offer discounted prices on certain Azure products and resources. To get a discount, you reserve products and resources by paying in advance. You can pre-pay for one year or three years of use of Virtual Machines, SQL Database Compute Capacity, Azure Cosmos Database Throughput, and other Azure resources.
-
-Azure Reservations are only available to Enterprise or CSP customers and for Pay-As-You-Go subscriptions.
+Azure Reservations offers discounted prices on certain Azure services. To receive a discount, you reserve services and resources by paying in advance.
 
 ![Depiction of two silos, indicating the 72% cost savings you can realize by using Azure Reservations rather than a Pay-As-You-Go subscription. ](../media/reservations.png)
 
+For example, you can pre-pay for one year or three years of use of virtual machines, database compute capacity, database throughput, and other Azure resources.
+
+Azure Reservations are available to customers with an Enterprise Agreement, Cloud Solution Providers, and Pay-As-You-Go subscriptions.
 
 ## Choose low-cost locations and regions
 
 The cost of Azure products, services, and resources can vary across locations and regions, and if possible, you should use them in those locations and regions where they cost less.
 
-> [!NOTE]
-> Some resources are metered and billed according to how much outgoing network bandwidth they consume (egress).  *You should provision connected resources that are bandwidth metered in the same region* to reduce egress traffic between them.
+But remember, some resources are metered and billed according to how much outgoing (egress) network bandwidth they consume. You should provision connected resources that are metered by bandwidth in the same Azure region to reduce egress traffic between them.
 
 ## Research available cost-saving offers
 
@@ -54,24 +58,36 @@ Keep up-to-date with the latest Azure customer and subscription offers, and swit
 
 ## Apply tags to identify cost owners
 
-Tags help you manage costs associated with the different groups of Azure products and resources.  You can apply tags to groups of Azure products and resources to organize billing data. For example, if you run several virtual machines for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance, or by environment, such as Production or Test. Tags make it easy to identify groups that generate the biggest Azure costs, so you can adjust your spending accordingly.
+_Tags_ help you manage costs associated with the different groups of Azure products and resources.  You can apply tags to groups of Azure products and resources to organize billing data.
 
-## What is Azure Cost Management?
+For example, if you run several virtual machines for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance, or by environment, such as Test or Production.
 
-[Cost Management](https://azure.microsoft.com/services/cost-management?azure-portal=true) is an Azure product that provides a set of tools for monitoring, allocating, and optimizing your Azure costs.
+Tags make it easier to identify groups that generate the biggest Azure costs, which can help you adjust your spending accordingly.
+
+## Azure Cost Management + Billing
+
+Azure Cost Management + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use.
 
 ![Three graphics that depict a company's cost analysis by meter category, resource location, and resource group name.](../media/cost-management.png)
 
-The main features of the Azure Cost Management toolset include:
+Azure Cost Management + Billing features include:
 
-+ **Reporting**. Generate reports using historical data to forecast future usage and expenditure.
++ **Reporting**
 
-+ **Data enrichment**. Improve accountability by categorizing resources with tags that correspond to real-world business and organizational units.
+    Use historical data to generate reports and forecast future usage and expenditure.
 
-+ **Budgets**. Create and manage cost and usage budgets by monitoring resource demand trends, consumption rates, and cost patterns.
++ **Data enrichment**
 
-+ **Alerting**. Get alerts based on your cost and usage budgets.
+    Improve accountability by categorizing resources with tags that correspond to real-world business and organizational units.
 
-+ **Recommendations**. Receive recommendations to eliminate idle resources and to optimize the Azure resources you provision.
++ **Budgets**
 
-+ **Price**. Free to Azure customers.
+    Create and manage cost and usage budgets by monitoring resource demand trends, consumption rates, and cost patterns.
+
++ **Alerting**
+
+    Get alerts based on your cost and usage budgets.
+
++ **Recommendations**
+
+    Receive recommendations to eliminate idle resources and to optimize the Azure resources you provision.
