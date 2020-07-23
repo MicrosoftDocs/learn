@@ -1,9 +1,6 @@
+# Exercise - Estimate costs with the Azure Pricing Calculator
+
 In this walkthrough, we will use the Azure Pricing Calculator to generate a cost estimate for an Azure virtual machine and related network resources.
-
-## Exercise - Estimate costs with the Azure Pricing Calculator
-
-> [!Note]
-> This lab only requires browser access to the internet to complete.
 
 ## Try out the Azure Pricing Calculator
 
@@ -19,6 +16,9 @@ Let's start with the **Products** tab. You'll see the full listing of service ca
 After you've added the services, you'll want to price them. Scrolling down on the Pricing Calculator page will show you customizable details for that service that apply to pricing. For example, on virtual machines, you can select details such as the region, operating system, and instance size. These options all impact the pricing for the VM. You'll see a subtotal for the service. Further down the page, you'll see the full total for all services included in the estimate. Along with the total, you'll see buttons where you can export, save, and share the estimate.
 
 ## Estimate a solution
+> [!Note]
+> This exercise only requires browser access to the internet to complete.
+
 From our original scenario, let's imagine that this system will run on two Azure VMs and will connect to an Azure SQL Database instance. We also want to have a layer 7 load balancer in place to ensure we have enhanced load-balancing capabilities. The following illustration shows an application gateway connected to two virtual machines that are connected to a single Azure SQL Database instance.
 
 ![Illustration of described sample architecture: Application Gateway feeding to two virtual machines that take data from a single Azure SQL database.](../media/2-estimate-costs-architecture.png)

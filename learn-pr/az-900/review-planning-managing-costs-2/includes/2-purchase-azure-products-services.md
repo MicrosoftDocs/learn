@@ -51,7 +51,7 @@ Deallocating a VM when you don't plan on using it for some time is just one exam
 ### Azure subscription types
 In addition, some Azure subscription types also include usage allowances, which affect costs. 
 
-For example, an Azure free account subscription offers access to a number of Azure products that are free for 12 months, a $200 credit to spend within your first 30 days of sign-up and access to more than 25 products that are always free (based on resource and region availability).  To learn more, visit the [Azure free account FAQ] (https://azure.microsoft.com/en-gb/free/free-account-faq/).
+For example, an Azure free account subscription offers access to a number of Azure products that are free for 12 months, a $200 credit to spend within your first 30 days of sign-up and access to more than 25 products that are always free (based on resource and region availability).  To learn more, visit the [Azure free account FAQ] (https://azure.microsoft.com/free/free-account-faq/).
 
 ### Azure Marketplace
 <div style="background:yellow;">
@@ -163,6 +163,6 @@ The options that you can configure in the Pricing Calculator vary between produc
 
 + **Programs and Offers**. Allows you to choose from available licensing programs or offers, according to your customer or subscription type.
 
-+ **Azure Dev/Test Pricing**. Lists the available prices for development and test workloads. Dev/Test pricing applies only when you run resources within an Azure subscription that is based on a Dev/Test offer. For more information, visit [Azure Dev/Test Pricing](https://azure.microsoft.com/en-us/pricing/dev-test/?azure-portal=true)
++ **Azure Dev/Test Pricing**. Lists the available prices for development and test workloads. Dev/Test pricing applies only when you run resources within an Azure subscription that is based on a Dev/Test offer. For more information, visit [Azure Dev/Test Pricing](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true)
 
 ✔️ The Pricing Calculator provides estimates, *not* actual price quotes. Actual prices may vary depending upon the date of purchase, the payment currency you are using, and the type of Azure customer you are.
