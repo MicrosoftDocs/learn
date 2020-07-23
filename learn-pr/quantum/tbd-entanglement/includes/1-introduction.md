@@ -11,7 +11,7 @@ computers.
 In this module you'll:
 
 - Learn the basic theory behind the power of quantum computing: superposition,
-  entanglement and interference.
+  interference and entanglement.
 - Get a firsthand view of different tools of the Quantum Development Kit like
   the DumpMachine function and the Resources Estimator.
 - Demonstrate the power of quantum computing by implementing in Q# a quantum
