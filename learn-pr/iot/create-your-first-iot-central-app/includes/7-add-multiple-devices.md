@@ -6,7 +6,7 @@ Now for the best fun of all.
 
 1. Click the **Commands** title for the device. This control should be under the truck name, and right of the **Truck view** control.
 
-1. Enter a customer Id, say "1" ("0" through "9" are valid customer Ids), and click **Run**.
+1. Enter a customer Id, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
 
 1. In the console for the device app, you should see both a **New customer** event, and a **Route found** message.
 
@@ -27,7 +27,7 @@ Great progress! Take a moment to just watch the map update, and your truck deliv
 
 ### 5. Confirm the command to recall the truck works as expected
 
-1. When the truck returns to base, and is reloaded with contents, it's state will be **ready**. Try issuing another delivery command. Choose another customer Id.
+1. When the truck returns to base, and is reloaded with contents, it's state will be **ready**. Try issuing another delivery command. Choose another customer ID.
 
 1. Issue a recall command before the truck reaches its customer, to check the truck responds to this command.
 

@@ -31,7 +31,7 @@ We need to create a separate view, with the sole purpose of setting writable pro
 
 1. Click the **Views** entry, then select the **Editing device and cloud data** tile.
 
-    [![Screenshot showing the tile to select to create a view for writable properties](../media/editing-device-and-cloud-data.png)](../media/editing-device-and-cloud-data.png#lightbox)
+    [![Screenshot showing the tile to select to create a view for writable properties](../media/editing-device-cloud-data.png)](../media/editing-device-cloud-data.png#lightbox)
 
 1. Change the form name to something like "Set properties".
 

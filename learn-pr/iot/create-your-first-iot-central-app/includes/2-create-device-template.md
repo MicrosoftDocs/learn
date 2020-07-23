@@ -142,7 +142,7 @@ A location is probably the most important, and yet one of the easiest measuremen
 
 ### Add properties
 
-A property of a device is typically a constant value, that is sent to the IoT Central app when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck Id.
+A property of a device is typically a constant value, that is sent to the IoT Central app when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
 
 Properties can also be device configuration data. We will define an _optimal temperature_ for the truck contents as a property. This optimal temperature might change with different types of content, different weather conditions, or whatever might be appropriate. This kind of property is called a _writable property_.
 
