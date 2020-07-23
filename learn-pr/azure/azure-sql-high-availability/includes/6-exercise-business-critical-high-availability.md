@@ -6,7 +6,6 @@ The exercise will use the ostress tool you used in the previous exercise create 
 
 In order to complete this exercise, you will complete the following steps:
 
-1. Configure cloud shell environment
 1. Deploy an identical database with Business critical
 1. Run the ostress workload  
 1. Use PowerShell to initiate a failover  
@@ -15,9 +14,11 @@ In order to complete this exercise, you will complete the following steps:
 
 This exercise will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
 
-### Configure cloud shell environment
+## Deploy an identical database with Business critical
 
-1. In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  
+In a previous module of the learning path, you learned how to scale a database using T-SQL. For this exercise, the goal is to upgrade the same database from General purpose to Business critical using the Azure CLI commands in the Azure Cloud Shell. However, since there is a limit between the frequency of failovers, you will deploy the same sample database as Business critical with the name `AdventureWorks-bc`  
+
+1. In the Azure Cloud Shell terminal on the right, run the following PowerShell to configure your environment.  
 
     ```powershell
     $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
@@ -32,11 +33,7 @@ This exercise will guide you through getting ostress configured, and then you'll
     az configure --list-defaults
     ```
 
-### Deploy an identical database with Business critical
-
-In a previous module of the learning path, you learned how to scale a database using T-SQL. For this exercise, the goal is to upgrade the same database from General purpose to Business critical using the Azure CLI commands in the Azure Cloud Shell. However, since there is a limit between the frequency of failovers, you will deploy the same sample database as Business critical with the name `AdventureWorks-bc`  
-
-1. Since in the previous step you configured your default resource group and server name, the command to create the database is simple, you just have to specify what you want deployed. Run the following in the Azure Cloud Shell.  
+1. Next, run the following command to create a database on the business critical service tier.  
 
     ```powershell
     az sql db create --name $database `
@@ -55,9 +52,9 @@ In a previous module of the learning path, you learned how to scale a database u
     * `sample-name`: To be consistent with the previous exercise, the `AdventureWorksLT` database sample used.
     * `edition`: This term is a bit misleading, because it is really referring to the service tier, which is not the same as what edition means in the SQL Server box product.  
     * `read-scale`: This is not enabled by default, but there is no additional cost associated with it. By enabling it, you're enabling one of your secondary replicas to be used as a readable secondary.  
-    * `zone-redundant`: By default, this is set to false, but you can set it to true if you want a multi-az deployment, with no additional cost. You'll learn more about availability zones in the next unit. 
+    * `zone-redundant`: By default, this is set to false, but you can set it to true if you want a multi-az deployment, with no additional cost. You'll learn more about availability zones in the next unit.
 
-    Note that this is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region) and not (yet) in Azure SQL managed instance.  
+    Note that this is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region) and is not yet available in Azure SQL managed instance.  
 
 1. After the database is created, you should see detailed information about the updates in the Azure Cloud Shell output under two main categories (though you'll also see indicators under several other properties):  
     * `currentServiceObjectiveName`: should be `BC_Gen5_2` where `BC` stands for Business critical  
@@ -70,7 +67,7 @@ In a previous module of the learning path, you learned how to scale a database u
     > [!TIP]
     > There are many other ways to check this, but another way is through SSMS. If you right-click on your database and select **Properties** > **Configure SLO**, you can also view the changes.  
 
-### Run the ostress workload
+## Run the ostress workload
 
 Just like in the previous exercise, you will leverage `ostress` to repeatedly query your Azure SQL Database.
 
@@ -96,7 +93,7 @@ Just like in the previous exercise, you will leverage `ostress` to repeatedly qu
 
     If, at any time, you want to run the workload again, you can run the command again.  
 
-### Use PowerShell in Azure Cloud Shell to initiate a failover and observe the results
+## Initiate a failover and observe the results
 
 1. Configure your windows so that you can see this browser and the Command Prompt in one view.  
 
@@ -113,22 +110,20 @@ Just like in the previous exercise, you will leverage `ostress` to repeatedly qu
 
     Recall that databases or managed instances in the Business critical service tier essentially have an Always On Availability Group deployed behind the scenes. This means that when you failover, all that happens is a change in pointers in the backend as we redirect you to one of the secondaries. Because of this, it can be very fast, much faster than General purpose.
 
-### Read-scale
+## Connect to the read-only replica
 
-1. Since you enabled the `read-scale` parameter, you have the ability to use one of the secondary replicas for read-only workloads. In order to access the read-only replica in applications, you just have to add the following parameter to your connection string for a database:  
+Since you enabled the `read-scale` parameter, you have the ability to use one of the secondary replicas for read-only workloads. In order to access the read-only replica in applications, you just have to add the following parameter to your connection string for a database:  
 
-    ```sql
-    ApplicationIntent=ReadOnly;
-    ```
+```text
+ApplicationIntent=ReadOnly;
+```
 
-    In SSMS, create a new query connection (select **File** > **New** > **Database Engine Query**).  
+1. In SSMS, create a new query connection (select **File** > **New** > **Database Engine Query**).  
 
-    
     :::image type="content" source="../media/6-new-db-engine-query.png" alt-text="New database engine query":::  
 
 1. Using the same way you've been connecting to your Azure SQL Database logical server (with SQL Auth), select **Options**.  
 
-    
     :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Options in SSMS":::  
 
 1. Select **Connection Properties**, and select **Reset All**. Then, under "Connect to database" select **Browse server** and select your **AdventureWorks-bc** database.  
@@ -147,10 +142,8 @@ Just like in the previous exercise, you will leverage `ostress` to repeatedly qu
     SELECT DATABASEPROPERTYEX(DB_NAME(), 'Updateability')
     ```
 
-    
     :::image type="content" source="../media/6-read-only.png" alt-text="Read only response":::
 
 1. You can optionally re-connect and update the Additional Connection Parameters (replace `ReadOnly` with `ReadWrite`), and confirm you are accessing the read-write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in.
 
-    
     :::image type="content" source="../media/6-read-write.png" alt-text="Read write response":::

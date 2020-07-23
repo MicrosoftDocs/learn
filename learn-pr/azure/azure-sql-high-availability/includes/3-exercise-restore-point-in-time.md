@@ -1,6 +1,6 @@
 In this, you'll see how a common error can be recovered using point in time restore (PITR). This is easy to do in the portal or programmatically, but in this exercise you'll see how to do it with the Azure CLI.
 
-### Set up: Use scripts to deploy Azure SQL Database
+## Set up: Use scripts to deploy Azure SQL Database
 
 In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.  
 
@@ -81,7 +81,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
         -Type "Standard_LRS"
     ```
 
-1. Open SSMS and create a new connection to your logical server. For server name, input the name of your Azure SQL Database logical server. If you did not save it above, you may need to refer to the Azure portal to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
+1. On your local device, open SSMS and create a new connection to your logical server. For server name, input the name of your Azure SQL Database logical server. If you did not save it above, you may need to refer to the Azure portal to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
 
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
@@ -97,7 +97,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     > [!NOTE]
     > Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
 
-### Set up: Configure Auditing with Log Analytics
+## Set up: Configure Auditing with Log Analytics
 
 In this exercise, you'll learn how to use auditing through Log Analytics to determine when `DROP` statements have occurred. In order to do this, you must first configure auditing.
 
@@ -120,7 +120,7 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
     :::image type="content" source="../media/3-new-workspace.png" alt-text="Create a new workspace":::  
 
-    Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.  
+    Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace `azuresql<unique ID>-la`, using your unique ID for your resources. Select **OK**.  
 
     :::image type="content" source="../media/3-workspace-details.png" alt-text="Details for new workspace":::  
 
@@ -128,11 +128,9 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
 1. Select **Save**.  
 
-    :::image type="content" source="../media/3-save.png" alt-text="Save Log Analytics details":::  
+## Process for PITR
 
-### Process for PITR
-
-Before you go any further, it's important to understand the recommended process for doing point in time restore (PITR):  
+Before you go any further, it's important to understand the recommended process for doing PITR:  
 
 1. A table or database is deleted on accident.
 1. Determine the time that you need to go back to. This should be **before** the error or mistake took place.  
@@ -143,6 +141,8 @@ Before you go any further, it's important to understand the recommended process 
 1. Delete the original database, e.g. **AdventureWorks-old**.  
 
 In this exercise, you'll follow the steps that go along with the process above.  
+
+### Simulate deletion of data
 
 1. First, let's confirm that the table we'll *accidentally* delete does exist and have data in it. Let's take a look at some of the values in `SalesLT.OrderDetail`.  
 
@@ -158,7 +158,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Sales order detail table":::  
 
-1. For whatever reason, let's create a scenario where someone accidentally deletes that table. Today, you will be that someone.  
+1. Now, let's simulate the loss of data by dropping a table in the database.  
 
     **Using the same query window**, run the following query and note the completion time.
 
@@ -169,7 +169,7 @@ In this exercise, you'll follow the steps that go along with the process above.
     > [!IMPORTANT]
     > Save the completion time, you may need it later, for example `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
 
-1. Finally, before you get into the steps to restore, run the follow code in the Azure Cloud Shell (in this window to the right) to configure your environment in the Azure Cloud Shell.  
+1. Finally, before you get into the steps to restore, run the follow code in Cloud Shell on the right to configure your environment in the Azure Cloud Shell.  
 
     ```powershell
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
@@ -189,6 +189,8 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     The `group` and `sql-server` parameters returned should match the name of your Microsoft Learn resource group and your Azure SQL Database logical server.
 
+### Identify the time to restore the database to
+
 1. The first step is to figure out when you should restore the database. In order to complete step 1, you need to know when the last "good" transaction occurred, before the "bad" one, so you can restore to before the "bad" transaction but after the last "good" one.  
 
     One way to determine the drop time, is if you have access to the `Completion time` of the `DROP` statement, which you noted in the previous step.  
@@ -197,7 +199,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     :::image type="content" source="../media/3-view-audit-logs.png" alt-text="Select view audit logs":::
 
-1. Click on **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use for querying logs for SQL professionals.  
+1. Select **Log Analytics**. If you see a **Get Started** screen, select **OK**. This then takes you to a query editor that allows you to query logs using Kusto query language (KQL), which is meant to be easy to use for querying logs for SQL professionals.  
 
     :::image type="content" source="../media/3-log-analytics.png" alt-text="Select log analytics":::  
 
@@ -227,6 +229,8 @@ In this exercise, you'll follow the steps that go along with the process above.
     $before_error_time ="2020-02-10T21:28:54.509"
     ```
 
+### Restore the database and confirm missing data
+
 1. In this step you'll use `az cli db restore` to restore to before the table was deleted. Run the following in the terminal to your right in this window. 
 
     ```powershell
@@ -234,7 +238,7 @@ In this exercise, you'll follow the steps that go along with the process above.
     az sql db restore --dest-name $database_name_copy --name $database_name --time $before_error_time --verbose
     ```
 
-    This above command will take about 5-10 minutes. This is because, in the background, Azure is deploying a new Azure SQL Database in your Azure SQL Database logical server that has all the same configuration options as the original. After it's deployed, it will then restore the database into that new Azure SQL Database.  
+    The restore will take about 5-10 minutes. When you run a restore, Azure deploys a new Azure SQL Database in your Azure SQL Database logical server that has all the same configuration options as the original. After it's deployed, it will then restore the database into that new Azure SQL Database.  
 
     You can check the status by refreshing your view of databases in **SSMS** by right-clicking on **Databases** and selecting **Refresh**. Once the database has been deployed, you will see the restore is now in progress.  
 
@@ -244,7 +248,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     If you notice it is taking longer than above stated times, it could be due to your Microsoft Learn environment. There are a limited number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details for PITR while you wait, you can [read more to learn the details related to recovering an Azure SQL database by using automated database backups](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups).  
 
-1. In order to confirm the new database is in the correct state (before the accident occurred), refresh your connection to the Azure SQL Database logical server in SSMS (right-click on the logical server and select **Refresh**).  
+1. In order to confirm the new database is in the correct state (before the accident occurred), right-click on the logical server in SSMS and select **Refresh** to refresh your connection to the Azure SQL Database logical server.  
 
 1. Then, right-click on your new database, e.g. **AdventureWorks-copy** and select **New Query**.  
 
@@ -260,9 +264,9 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Sales order detail table":::  
 
-1. This step involves renaming the original database to something similar to **AdventureWorks-old** so you can later rename the new database to the original database name. As long as your applications use retry logic, this will make it so no connection strings need to be changed.  
+### Swap the databases and clean up
 
-    You're likely very familiar with how to rename databases in SSMS, but here you will see how it can be easily done using the Azure Cloud Shell.  
+1. Next, you'll rename the original database to **AdventureWorks-old** so you can later rename the new database to the original database name. As long as your applications use retry logic, this will make it so no connection strings need to be changed.
 
     If at any point your database appears unavailable (e.g. you can't connect to the databases in SSMS if you refresh the connection), it could be due to updates happening to the DNS table. So while the database isn't physically unavailable, it is unresolvable. If you wait a minute or so, you should be able to resume normal activities.  
 
@@ -289,4 +293,4 @@ In this exercise, you'll follow the steps that go along with the process above.
     az sql db list -o table
     ```
 
-You've now seen how you can leverage point in time restore (PITR) in Azure SQL Database. PITR is also available in Azure SQL Managed Instance, **for databases not the whole instance**. You can use almost the same commands except with `az sql midb` as opposed to `az sql db`.
+You've now seen how you can leverage PITR in Azure SQL Database. PITR is also available in Azure SQL Managed Instance, **for databases not the whole instance**. You can use almost the same commands except with `az sql midb` as opposed to `az sql db`.

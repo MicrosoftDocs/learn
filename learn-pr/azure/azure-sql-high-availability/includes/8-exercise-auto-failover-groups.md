@@ -32,7 +32,6 @@ This notebook will guide you through configuring auto-failover groups for your A
 1. Next, run the following in the Azure Cloud Shell to configure your variables for the steps that follow.
 
     ```powershell
-    # Do not modify
     $admin = "cloudadmin"
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
     $location = $resourceGroup.Location
@@ -98,7 +97,7 @@ This notebook will guide you through configuring auto-failover groups for your A
 
 What you've just done is deploy and configure and auto-failover group for you AdventureWorks database.
 
-### Configure your Command Prompt applications
+### Configure your command prompt applications
 
 For this exercise, you'll leverage two ostress workloads to check the *Updateability* (whether a database is in a `ReadWrite` or `ReadOnly` state) of your primary and secondary servers in your failover group. This is intended to simulate an application where you have read and write workloads.  
 
@@ -124,13 +123,11 @@ For this exercise, you'll leverage two ostress workloads to check the *Updateabi
     ostress.exe -S"<server-name>-fg.secondary.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50000 -osecondary
     ```
 
-1. Understand the running applications
+The result from the first command prompt you configured should be `READ_WRITE` because it is the primary failover group server and you have not initiated any failovers.  
 
-    The result from the first command prompt you configured should be `READ_WRITE` because it is the primary failover group server and you have not initiated any failovers.  
+The result from the second command prompt you configured should be `READ_ONLY` because it is the disaster recovery or secondary server that you configured. You should only be able to write from one of the servers at any given time.  
 
-    The result from the second command prompt you configured should be `READ_ONLY` because it is the disaster recovery or secondary server that you configured. You should only be able to write from one of the servers at any given time.  
-
-    In the next steps, you'll examine what happens to both servers when a failover occurs.  
+In the next steps, you'll examine what happens to both servers when a failover occurs.  
 
 ### Initiate a failover and observe the results
 
@@ -154,7 +151,7 @@ For this exercise, you'll leverage two ostress workloads to check the *Updateabi
 
     One of the benefits of auto-failover groups in Azure SQL Database and Azure SQL Managed Instance is that you do not have to update the connection strings after a failover. You continue to connect to the primary (`<failover-group>.database.windows.net`) for write-workloads and the secondary (`<failover-group>.secondary.database.windows.net`) for read-workloads, and Azure takes care of routing you to the appropriate database in the corresponding region/server.
 
-1. Check the status of the secondary server by running the following in the Azure Cloud shell.
+1. Check the status of the secondary server by running the following in Cloud shell.
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `
@@ -163,14 +160,14 @@ For this exercise, you'll leverage two ostress workloads to check the *Updateabi
 
     It should now be in the `Primary` role.
 
-1. Fail back by running the following in the Azure Cloud shell.
+1. Fail back by running the following in Cloud shell.
 
     ```powershell
     Switch-AzSqlDatabaseFailoverGroup -ResourceGroupName $resourceGroup `
      -ServerName $server -FailoverGroupName $failoverGroup
     ```
 
-1. Finally, you can check the status of the secondary server yet again by running the following in the Azure Cloud shell.
+1. Finally, you can check the status of the secondary server yet again by running the following in Cloud Shell.
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `
