@@ -3,7 +3,7 @@ uid: learn.wwl.create-azure-cognitive-search-solution
 metadata:
   title: Create an Azure Cognitive Search solution
   description: "Use Azure Cognitive Search to make unstructured data searchable."
-  ms.date: 07/22/2020
+  ms.date: 07/26/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial

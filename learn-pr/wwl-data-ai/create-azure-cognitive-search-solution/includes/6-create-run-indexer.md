@@ -13,7 +13,7 @@ You can think of the indexer as the orchestration engine for a *pipeline* that e
 
 ## Create and run an indexer for Margie's Travel
 
-The indexer for the Margie's Travel search solution must map the metadata fields and content from the documents in the data store to the fields in the index. Follow the steps for your preferred language to create and run an indexer for the Margie's Travel search solution.
+The indexer for the Margie's Travel search solution must map the metadata fields and content from the documents in the data store to the fields in the index. Select your preferred language at the top of this page, and then follow the steps below to create and run an indexer for the Margie's Travel search solution.
 
 :::zone pivot="csharp"
 
@@ -21,21 +21,15 @@ To create an indexer, you can use the **Create** method of the **SearchServiceCl
 
 Indexing is an asynchronous operation. To check the status of an indexer, you use the **GetStatus** method of the **SearchServiceClient**'s **Indexers** member.
 
-1. In the **C-Sharp/create-index** folder, open the **Program.cs** file and in the **Main** function, uncomment the following lines of code (under the comment `// Create and run the indexer`):
-    ```C#
-    Console.WriteLine("Creating and running the indexer...");
-    Indexer indexer = CreateIndexer(searchClient, dataSource, index);
-    Console.WriteLine("Check the indexer status...");
-    CheckIndexerOverallStatus(searchClient, indexer);
-    ```
-2. Review the code in the **CreateIndexer** function, which creates an indexer that maps the metadata fields from the documents in the data source to the index fields.
-3. Review the code in the **CheckIndexerOverallStatus** function, which retrieves the indexer status.
-4. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
-5. In the terminal for the **create-index** folder, enter the following command:
+1. In the **C-Sharp/create-index** folder, open the **Program.cs** file and review the code in the **CreateIndexer** function, which creates an indexer that maps the metadata fields from the documents in the data source to the index fields.
+2. Review the code in the **CheckIndexerOverallStatus** function, which retrieves the indexer status.
+3. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
+4. In the terminal for the **create-index** folder, enter the following command:
     ```bash
     dotnet run
     ```
-6. Wait while the program runs, updating the data source, recreating the index, and finally creating and running the indexer.
+5. When prompted, press **3** to create and run an indexer. Then wait while the program creates the indexer and then retrieves it status.
+6. When the prompt is redisplayed, press **q** to quit the program.
 7. In another browser tab, open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has been created and has processed 72 documents.
 
 :::zone-end
@@ -44,24 +38,24 @@ Indexing is an asynchronous operation. To check the status of an indexer, you us
 
 To create an indexer with Python, you need to submit a request to the **indexers** REST endpoint with the name of the indexer. The body of the request must be a JSON document that defines the indexer.
 
-The first time you submit a *PUT* request with an indexer definition, the index is created and run automatically to initialize the index. Subsequent *PUT* requests will update the indexer without running it. You must explicitly submit a request to the indexer's **run** endpoint to re-run the indexer. Alternatively, you can include a **schedule** in the indexer definition that will cause the indexer to run periodically.
+The first time you submit a *PUT* request with an indexer definition, the index is created and run automatically to initialize the index. Subsequent *PUT* requests will update the indexer without running it. You must explicitly submit a request to the indexer's **run** endpoint to rerun the indexer. Alternatively, you can include a **schedule** in the indexer definition that will cause the indexer to run periodically.
 
 Indexing is an asynchronous operation. To check the status of an indexer, you can submit a *GET* request to the indexer's **status** endpoint.
 
-1. In the **create-index** folder, open the **indexer.json** file. This contains the JSON definition of an indexer.
-2. Review the indexer definition. It defines an indexer named *margies-indexer* that maps fields from the *margies-docs* data source to the *margies-index* index. The source fields are standard fields that are extracted from blob data sources based on file metadata and the file contents after Azure Cognitive Search has performed the required document cracking to the PDF files to extract their content.
+1. In the **create-index** folder, open the **indexer.json** file. This file contains the JSON definition of an indexer.
+2. Review the indexer definition. It defines an indexer that maps fields from the *margies-docs-py* data source to the *margies-index-py* index. The source fields are standard fields that are extracted from blob data sources based on file metadata and the file contents after Azure Cognitive Search has performed the required document cracking to the PDF files to extract their content.
 3. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (CTRL+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
 4. In the terminal for the **create-index** folder, enter the following command:
     ```bash
-    python3 submit-rest.py 'PUT' 'indexers/margies-indexer' 'indexer.json'
+    python3 submit-rest.py 'PUT' 'indexers/margies-indexer-py' 'indexer.json'
     ```
-5. Wait while Python runs the **submit-rest&#46;py** script, causing it to submit an HTTP PUT request to the *indexers* REST endpoint, adding an indexer named *margies-indexer* based on the JSON body defined in the *indexer.json* file. The use of a PUT request ensures that if the indexer already exists, it is updated based on the JSON; otherwise it is created.
+5. Wait while Python runs the **submit-rest&#46;py** script, causing it to submit an HTTP PUT request to the *indexers* REST endpoint, adding an indexer named *margies-indexer-py* based on the JSON body defined in the *indexer.json* file. The use of a PUT request ensures that if the indexer already exists, it is updated based on the JSON; otherwise it is created.
 6. Review the JSON response that is returned from the REST interface. The indexer is created and automatically run to initialize the index.
 7. In the terminal for the **create-index** folder, enter the following command:
     ```bash
-    python3 submit-rest.py 'GET' 'indexers/margies-indexer/status' 'null'
+    python3 submit-rest.py 'GET' 'indexers/margies-indexer-py/status' 'null'
     ```
-8. Review the JSON response that is returned from the REST interface, which shows the status of the indexer. In particular, check the **status** value in the **lastResult** section of the response. If this is shown as **inProgress**, the indexer is still being applied to the index. You can re-run the previous command to retrieve the status until the last result status is **success**. 
+8. Review the JSON response that is returned from the REST interface, which shows the status of the indexer. In particular, check the **status** value in the **lastResult** section of the response. If this is shown as **inProgress**, the indexer is still being applied to the index. You can rerun the previous command to retrieve the status until the last result status is **success**.
 9. In another browser tab, open your search service in the [Azure portal](https://portal.azure.com?portal=true) and view its **Indexers** tab to confirm that the indexer has been created and has processed 72 documents.
 
 :::zone-end
