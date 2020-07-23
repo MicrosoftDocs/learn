@@ -6,7 +6,7 @@ entanglement. In the last MS Learn module [Create your first Q# program by using
 Quantum computers are controllable quantum mechanical devices that exploit the properties of
 quantum physics to perform computations. You may have seen or heard about the Schrödinger equation that describes every quantum mechanical system:
 
-$$i \hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$
+$$i \hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$.
 
 It captures the wavefunction, $$\psi(t)$$, and the energy Hamiltonian, $$H$$, of the system, with $$t$$ being time and $$\hbar$$ being the Plank constant. However, fortunately,
 you don't need the Schrödinger equation in order to do quantum programming. In practice, nobody

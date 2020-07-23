@@ -1,17 +1,17 @@
-Until now, we only have been using superpositions with real positive amplitudes. So you might be wondering, why not to use directly the probabilities to represent the superposition? Well, this is one of the main ingredients that makes quantum computing work. Let's explain it.
+Until now, we only have been using superpositions with real positive amplitudes. You might be wondering, why not use directly the probabilities to represent the superposition? Well, this is one of the main ingredients that makes quantum computing work. Let's explain it.
 
 ## Waves of probabilities
 
-The term *wave function* might be familiar to you (in fact, the `DumpMachine` function we just used names the quantum state as "wave function"). Physicist often use this term as a synonym to design the quantum state of a system. This is because the Schrödinger equation that we introduced at the beginning of this module has the same mathematical structure than classical wave equations.
+The term *wave function* might be familiar to you (in fact, the `DumpMachine` function we just used names the quantum state as "wave function"). Physicist often use this term as a synonym to design the quantum state of a system. This is because the Schrödinger equation that we introduced at the beginning of this module has the same mathematical structure as classical wave equations.
 
-This means that the function defining the probability amplitudes behaves like a physical wave, and therefore is called wave function. This is why you sometimes might hear the term "probability wave". In fact, the term *probability amplitude* is inspired directly from the term *amplitude* of a wave.
+You might have also heard the term "probability wave". In fact, the term *probability amplitude* is inspired directly from the term *amplitude* of a wave.
 
 If probability amplitudes of qubits are governed by a wave-like equation, this implies that we will observe many of the different well-known physical properties of waves. Quantum algorithms exploit these properties to perform calculations. In particular, quantum computers exploit the phenomenon of **wave interference**.
 
 ## Complex numbers to describe waves
 
-Complex numbers are a handy mathematical tool to describe waves. In fact, they were already used to describe waves long
-before the discovery of quantum mechanics. They are an intuitive form of describing waves to explain phenomena like wave interference. 
+We have mentioned earlier, the probability amplitudes can be complex numbers. Complex numbers are a handy mathematical tool to describe waves. In fact, they were already used to describe waves long
+before the discovery of quantum mechanics. They provide intuition to understand interference. 
 
 But, what is wave interference? Waves are governed by a linear equation
 (remember, waves and quantum states are mathematically the same thing). This
@@ -31,13 +31,11 @@ hear it. This is known as *active noise cancellation*.
 
 ![Noise cancellation](../media/noise-cancellation.jpg)
 
-But, why do some waves interfere constructively whereas others interfere destructively? Well, this is due to the **relative phase** between the waves. 
+Constructive and destructive interference are due to **relative phases** between the waves. 
 
 ![Relative phase](../media/relative-phase.jpg)
 
-The phase of a wave is just a number that represents the relative position of the wave in the cycle. It is usually interpreted as an angle because waves are often described in terms of trigonometric functions $\sin$ and $\cos$.
-
-Then, to characterize a wave-like object we need two things: the *amplitude*, i.e. the intensity of the wave, and the **phase**,i.e. the relative position in the cycle. It happens to be that complex numbers are a natural mathematical tool to describe both things at the same time! This is why we use the concept of **complex amplitude**.
+In general an amplitude is a complex number, which describes both the magnitude and the phase of the wave. 
 
 ![image.png](../media/complex-plane.jpg)
 

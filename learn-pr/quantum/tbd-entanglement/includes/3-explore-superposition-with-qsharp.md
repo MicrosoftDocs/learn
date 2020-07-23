@@ -1,4 +1,4 @@
-In this unit we are going to explore how to create, manage and inspect superpositions in Q#. We will introduce a function from the Quantum Development Kit called `DumpMachine` that will allow us to observe the probability amplitude of the simulated qubit registers.
+In this unit we are going to explore how to create, manage and inspect superpositions in Q#. We will introduce a function from the Quantum Development Kit called `DumpMachine` that will allow us to observe the probability amplitudes of the simulated qubit registers.
 
 ## Create the project 
 
@@ -16,7 +16,7 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 The Diagonstics Library under the `Microsoft.Quantum.Diagnostics` namespace is a library of the Quantum Development Kit that contains functions and operations useful for diagnostic purposes. For the moment, we are just interested in the function [`DumpMachine`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine). This function dumps information about the current status of the target machine into a file or some other location. If we omit the `location` in the argument it will print the output in the console. We will use this information to track the state of the qubit register.
 
->[!NOTE] In actual quantum hardware you won't be able to use a tool like `DumpMachine` to access the state of the qubit register without breaking the algorithm. Accessing the state of the qubit register will imply measuring it and therefore changing its state. We can use tools like `DumpMachine` because we are simulating a virtual quantum computer and we can do these sorts of tricks.
+>[!NOTE] In actual quantum hardware you won't be able to use a tool like `DumpMachine` to access the state of the qubit register without breaking the algorithm. Accessing the state of the qubit register will imply measuring it and therefore changing its state. In simulated virtual quantum computers, we can use tools like `DumpMachine`  and do tricks like these.
 
 To add the library we just open `Microsoft.Quantum.Diagnostic` in the namespace:
 
@@ -96,7 +96,7 @@ Qubit after resetting:
 One
 ```
 
-The `DumpMachine` function outputs a table with the information characterizing the state of the qubit register. Specifically, it gives the probability amplitude, the probability and the phase in radians for each state. Let's comment each step:
+The `DumpMachine` function outputs a table with the information characterizing the state of the qubit register. Specifically, it gives the probability amplitude, the probability and the phase in radians for each state. Let's comment on each step:
 
 1. ```output
        Initialized qubit:
