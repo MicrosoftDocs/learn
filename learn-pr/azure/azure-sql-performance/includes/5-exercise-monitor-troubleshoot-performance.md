@@ -1,6 +1,6 @@
 In this exercise you will learn how to monitor and troubleshoot a performance problem with Azure SQL using familiar and new tools and capabilities.
 
-## Set up: Use scripts to deploy Azure SQL Database
+### Set up: Use scripts to deploy Azure SQL Database
 
 In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script you will be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
@@ -15,24 +15,44 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 1. Next, run the following commands in the Azure Cloud shell on the right. Fill in a complex password and enter your local public IP address you retrieved when prompted.
 
     ```powershell
-    # Prompt for password
     $adminSqlLogin = "cloudadmin"
     $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
     # Prompt for local ip address
     $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
     # Get resource group and location and random string
-    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like learn* | Select-Object -Property ResourceGroupName | Select-Object -Index 0
-    $resourceGroupName = $resourceGroup.ResourceGroupName
-    $randomString = Get-Random -Minimum 100000 -Maximum 1000000
-    $storageAccountName = "mslearnsa"+$randomString
-    $rg = Get-AzResourceGroup | Where ResourceGroupName -like learn*
-    $location = $rg.Location
+    $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
+    $resourceGroupName = "<rgn>Sandbox resource group name</rgn>"
+    $uniqueID = Get-Random -Minimum 100000 -Maximum 1000000
+    $storageAccountName = "mslearnsa"+$uniqueID
+    $location = $resourceGroup.Location
     # The logical server name has to be unique in the system
-    $serverName = "aw-server$($randomString)"
+    $serverName = "aw-server$($uniqueID)"
+    ```
+
+1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell.  You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
+
+    ```powershell
+    Write-Host "Please note your unique ID for future exercises in this module:"  
+    Write-Host $uniqueID
+    Write-Host "Your resource group name is:"
+    Write-Host $resourceGroupName
+    Write-Host "Your resources were deployed in the following region:"
+    Write-Host $location
+    Write-Host "Your server name is:"
+    Write-Host $serverName
+    ```
+
+    **Don't forget to note your password, unique ID, and server. You will need these throughout the module.**
+
+1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units.
+
+    ```powershell
+    # The logical server name has to be unique in the system
+    $serverName = "aw-server$($uniqueID)"
     # The sample database name
     $databaseName = "AdventureWorks"
     # The storage account name has to be unique in the system
-    $storageAccountName = $("sql$($randomString)")
+    $storageAccountName = $("sql$($uniqueID)")
     # Create a new server with a system wide unique server name
     $server = New-AzSqlServer -ResourceGroupName $resourceGroupName `
         -ServerName $serverName `
@@ -48,7 +68,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
         -ResourceGroupName $resourceGroupName `
         -ServerName $serverName `
         -AllowAllAzureIPs
-    # Create a database 
+    # Create a database
     $database = New-AzSqlDatabase  -ResourceGroupName $resourceGroupName `
         -ServerName $serverName `
         -DatabaseName $databaseName `
@@ -58,19 +78,11 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     $advancedDataSecurity = Enable-AzSqlServerAdvancedDataSecurity `
         -ResourceGroupName $resourceGroupName `
         -ServerName $serverName
-    # Create a Storage Account 
+    # Create a Storage Account
     $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName `
         -AccountName $storageAccountName `
         -Location $location `
         -Type "Standard_LRS"
-    Write-Host "Please note your unique ID for future exercises in this module:"  
-    Write-Host $randomString
-    Write-Host "Your resource group name is:"
-    Write-Host $resourceGroupName
-    Write-Host "Your resources were deployed in the following region:"
-    Write-Host $location
-    Write-Host "Your server name is:"
-    Write-Host $serverName
     ```
 
 1. On your local device, open SSMS and create a new connection to your logical server.  
@@ -88,14 +100,9 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
 ## Prepare the exercise by loading and editing scripts
 
-All scripts for this exercise can be found in the folder *04-Performance\monitor_and_scale* in the GitHub repository or zip file you downloaded.
+All scripts for this exercise can be found in the folder *04-Performance\monitor_and_scale* in the GitHub repository or zip file you downloaded. Let's prepare the exercise by loading and editing scripts.
 
-1. Setup to monitor Azure SQL Database
-
-    > [!TIP]
-    > To open a script file in the context of a database in SSMS, click on the database in Object Explorer and then use the File/Open menu in SSMS.
-
-    Launch SQL Server Management Studio (SSMS) and load a query *in the context of the database* to monitor the Dynamic Management View (DMV) **sys.dm_exec_requests** from the script **dmexecrequests.sql** which looks like the following:
+1. In SSMS, click the AdventureWorks database in Object Explorer. Then select the File menu and Open to load the **dmexecrequests.sql** script. Your query edtior window should look like the following:
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -105,9 +112,7 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
     AND es.is_user_process = 1;
     ```
 
-1. Load another query to observe resource usage
-
-    In another session for SSMS *in the context of the database* load a query to monitor a Dynamic Management View (DMV) unique to Azure SQL Database called **sys.dm_db_resource_stats** from a script called **dmdbresourcestats.sql**
+1. Use the same method in SSMS to load the  **dmdbresourcestats.sql** script. A new query editor window should look like the following:
 
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;
@@ -115,20 +120,16 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
 
     This DMV will track overall resource usage of your workload against Azure SQL Database such as CPU, I/O, and memory.
 
-1. Prepare the workload script
-
-    Edit the script **sqlworkload.cmd** (which will use the ostress.exe program)
+1. Edit the script **sqlworkload.cmd** (which will use the ostress.exe program)
 
     - Substitute your unique_id you saved from the deployment script to put in the correct server name.
     - Substitute the password for the login for the Azure SQL Database Server for the **-P parameter**.
 
 ## Run the workload
 
-Now run a workload of the T-SQL query to observe its performance simulating concurrent users.
+Now you will run a workload of a T-SQL query to observe its performance simulating concurrent users.
 
-1. Examine the workload query from the script **topcustomersales.sql**.
-
-    This database is not large so the query to retrieve customer and their associated sales information ordered by customers with the most sales shouldn't generate a large result set. It is possible to tune this query by reducing the number of columns from the result set but these are needed for demonstration purposes of this exercise.
+1. Use SSMS to open up the script file **topcustomersales.sql** to observe the query. You will not run the query from SSMS. Your query editor window should look like the following:
 
     ```sql
     DECLARE @x int
@@ -151,24 +152,24 @@ Now run a workload of the T-SQL query to observe its performance simulating conc
     GO
     ```
 
-1. Run the workload from the command line using the script **sqlworkload.cmd**
+    This database is not large so the query to retrieve customer and their associated sales information ordered by customers with the most sales shouldn't generate a large result set. It is possible to tune this query by reducing the number of columns from the result set but these are needed for demonstration purposes of this exercise.
 
-    This script will use 10 concurrent users running the workload query 2 times. Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server.
-
-    > [!TIP]
-    > If you are not seeing CPU usage behavior with this workload for your environment you can adjust the **-n parameter** for number of users and **-r parameter** for iterations.
-
-    From a powershell command prompt, change to the directory for this exercise:
+1. From a powershell command prompt, change to the directory for this exercise:
 
     ```powershell
     cd <base directory>\04-Performance\monitor_and_scale
     ```
 
-    Run the workload with the following command
+1.  Run the workload with the following command
 
     ```powershell
     .\sqlworkload.cmd
     ```
+
+    This script will use 10 concurrent users running the workload query 2 times. Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server.
+
+    > [!TIP]
+    > If you are not seeing CPU usage behavior with this workload for your environment you can adjust the **-n parameter** for number of users and **-r parameter** for iterations.
 
     Your screen at the command prompt should look similar to the following
 
@@ -203,11 +204,9 @@ Now run a workload of the T-SQL query to observe its performance simulating conc
 
 ## Observe performance of the workload
 
-Use T-SQL DMVs to observe the performance of the workload.
+Let's now use the DMV queries you loaded earlier to observe performance.
 
-1. Observe query performance with DMVs
-
-    Use the query in SSMS to monitor dm_exec_requests (**dmexecrequests.sql**) to observe active requests. Run this query 5 or 6 times and observe some of the results
+1. Use the query in SSMS to monitor dm_exec_requests (**dmexecrequests.sql**) to observe active requests. Run this query 5 or 6 times and observe some of the results
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -222,9 +221,7 @@ Use T-SQL DMVs to observe the performance of the workload.
     > [!NOTE]
     > You may see one or more active requests with a command = SELECT and a wait_type = XE_LIVE_TARGET_TVF. These are queries run by services managed by Microsoft to help power capabilities like Performance Insights using Extended Events. Microsoft does not publish the details of these Extended Event sessions.
 
-1. Observe overall resource usage with another DMV
-
-    Run the query in SSMS to monitor **sys.dm_db_resource_stats** (**dmdbresourcestats.sql**). Run the query to see the results of this DMV 3 or 4 times.
+1. Run the query in SSMS to monitor **sys.dm_db_resource_stats** (**dmdbresourcestats.sql**). Run the query to see the results of this DMV 3 or 4 times.
 
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;
@@ -237,9 +234,7 @@ Use T-SQL DMVs to observe the performance of the workload.
     > [!NOTE]
     > Another DMV called, **sys.resource_stats**, can be run in the context of the master database of the Azure Database Server to see resource usage for all Azure SQL Database databases associated with the server. This view is less granular and shows resource usage every 5 minutes (kept for 14 days).
 
-1. Let the workload complete and take note of its overall duration.
-
-    When the workload completes you should see results like the following and a return to the command prompt
+1. Let the workload complete and take note of its overall duration. When the workload completes you should see results like the following and a return to the command prompt
 
     ```output
     [datetime] [ostress PID] Total IO waits: 0, Total IO wait time: 0 (ms)
@@ -254,45 +249,41 @@ Query Store is a capability in SQL Server to track performance execution of quer
 
 Query Store comes with a series of system catalog views to view performance data. SQL Server Management Studio (SSMS) provides reports using these views.
 
-1. Look at queries consuming the most resources in SSMS
-
-    Using the Object Explorer in SSMS, open the Query Store Folder to find the report for **Top Resource Consuming Queries**
+1. Using the Object Explorer in SSMS, open the Query Store Folder to find the report for **Top Resource Consuming Queries**
 
     :::image type="content" source="../media/5-ssms-find-top-queries.png" alt-text="SSMS_QDS_Find_Top_Queries":::
 
-    Select the report to find out what queries have consumed the most average resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:
+1. Select the report to find out what queries have consumed the most average resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:
 
     :::image type="content" source="../media/5-ssms-top-query-report.png" alt-text="SSMS_QDS_Top_Query_Report":::
 
     The query shown is the SQL query from the workload for customer sales. This report has 3 components: Queries with the high total duration (you can change the metric), the associated query plan and runtime statistics, and the associated query plan in a visual map.
 
-    If you click on the bar chart for the query (the query_id may be different for your system), your results should look like the following:
+1. Click on the bar chart for the query (the query_id may be different for your system), your results should look like the following:
 
     :::image type="content" source="../media/5-ssms-query-id.png" alt-text="SSMS_QDS_Query_ID":::
 
     You can see the total duration of the query and query text.
 
-    Right of this bar chart is a chart for statistics for the query plan associated with the query. Hover over the dot associated with the plan. Your results should look like the following:
+1. Right of this bar chart is a chart for statistics for the query plan associated with the query. Hover over the dot associated with the plan. Your results should look like the following:
 
     :::image type="content" source="../media/5-ssms-slow-query-stats.png" alt-text="SSMS_Slow_Query_Stats":::
 
     Note the average duration of the query. Your times may vary but the key will be to compare this average duration to the average wait time for this query and eventually a different average duration when we introduce a performance improvement.
 
-    The final component is the visual query plan. The query plan for this query looks like the following:
+1. The final component is the visual query plan. The query plan for this query looks like the following:
 
     :::image type="content" source="../media/5-ssms-workload-query-plan.png" alt-text="SSMS_Workload_Query_Plan":::
 
     Given the small number of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself.
 
-1. Observe waits to see if they are affecting performance
-
-    We know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status along with almost 100% CPU. Query Store comes with reports to look at possible performance bottlenecks to due waits on resources.
-
-    Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. Click on this report and hover over the bar chart. Your results should look like the following:
+1. Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. We know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status along with almost 100% CPU. Query Store comes with reports to look at possible performance bottlenecks to due waits on resources. Click on this report and hover over the bar chart. Your results should look like the following:
 
     :::image type="content" source="../media/5-ssms-top-wait-stats.png" alt-text="SSMS_Top_Wait_Stats":::
 
-    You can see the top wait category is CPU (this is equivalent to the wait_type SOS_SCHEDULER_YIELD which can be seen in **sys.dm_os_wait_stats**) and the average wait time. Furthermore, the top query waiting for CPU is the query from the workload we are using.
+    You can see the top wait category is CPU (this is equivalent to the wait_type SOS_SCHEDULER_YIELD which can be seen in **sys.dm_os_wait_stats**) and the average wait time. 
+
+1. Click on the CPU bar chart in the report. The top query waiting for CPU is the query from the workload we are using.
 
     :::image type="content" source="../media/5-ssms-top-wait-stats-query.png" alt-text="SSMS_Top_Wait_Stats_Query":::
 
@@ -300,23 +291,19 @@ Query Store comes with a series of system catalog views to view performance data
 
     Given the evidence to this point, without any query tuning, our workload requires more CPU capacity than we have deployed for our Azure SQL Database.
 
-You can close both Query Store reports for now. You will use the same reports in the next exercise.
+1. You can close both Query Store reports for now. You will use the same reports in the next exercise.
 
 ## Observing performance with Azure Monitor
 
 Let's use one other method to view the resource usage of our workload. Azure Monitor provides performance metrics which you can view in various methods including Azure Portal.
 
-1. Use Azure Metrics to observe performance
-
-    Navigate to the Azure Portal for your deployment. Find the Azure SQL Database deployed. In the Overview page for an Azure SQL database, the standard default view in the Monitoring pane is called **Compute Utilization**:
+1. Navigate to the Azure Portal for your deployment. Find the Azure SQL Database deployed. In the Overview page for an Azure SQL database, the standard default view in the Monitoring pane is called **Compute Utilization**:
 
     :::image type="content" source="../media/5-azure-portal-compute-slow-query.png" alt-text="Azure_Portal_Compute_Slow_Query":::
 
     Notice in this example, the CPU utilization is near 100% for a recent time range. This chart will show resource usage (defaults to CPU and I/O) over the last hour and is refreshed continually. If you click on the chart you can customize the chart (Ex. bar chart) and look at other resource usage.
 
-1. Use Azure Metric Explorer
-
-    Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring from the Resource pane in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer). If you click on Metrics you will see the following:
+1. Click on Metrics in the Resource menu. Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring from the Resource pane in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer). If you click on Metrics you will see the following:
 
     :::image type="content" source="../media/5-azure-monitor-metrics.png" alt-text="Azure_Monitor_Metrics":::
 
