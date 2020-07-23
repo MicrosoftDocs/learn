@@ -20,7 +20,7 @@ a quantum operation that is used to implement some black-box function $f:
 operation is implemented in a way that allows to evaluate the black-box function
 not only on individual inputs, but also on superposition of qubits.
 
->[!NOTE] This is not the same as being able to calculate the function on all
+>![NOTE] This is not the same as being able to calculate the function on all
 >inputs at once, since you'll be able to extract only the evaluation of the qubit you
 >decide to measure!
 
