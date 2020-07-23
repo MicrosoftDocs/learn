@@ -18,7 +18,7 @@ That person is responsible for the site. They need to  oversee deployments, moni
 
 The team is getting ready to hire an SRE. To hire the right person, they need to understand what SRE is.
 
-Site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production. The goal is to bridge the gap between the development team that needs to ship continuously, and the operations team that that is responsible for the reliability of the production environment. Site reliability engineering shifts the responsibility of production reliability to the SRE on the development team.
+Site reliability engineering (SRE) empowers software developers to own the ongoing daily operation of their applications in production. The goal is to bridge the gap between the development team that needs to ship continuously, and the operations team that's responsible for the reliability of the production environment. Site reliability engineering shifts the responsibility of production reliability to the SRE on the development team.
 
 Site reliability engineers typically spend up to 50% of their time on the daily tasks that keep the application reliable and the rest of their time developing software.
 
