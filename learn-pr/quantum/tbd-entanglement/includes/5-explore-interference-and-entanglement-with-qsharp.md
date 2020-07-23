@@ -1,17 +1,19 @@
 In this unit we are going to explore quantum interference with Q# and see how we
 can create quantum entanglement with Q#. We will also present the tool
-`ResourcesEstimator` in the Quantum Development Kit, that will help us to estimate the kind of resources we need to run our algorithms.
+`ResourcesEstimator` in the Quantum Development Kit, that will help us to
+estimate the kind of resources we need to run our algorithms.
 
 ## An example of interference with Q#
 
 In unit 3, when putting the states $\ket{\psi_1}=
 \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$ and $\ket{\psi_2}=
-\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ in a superposition, the probability amplitude of
-$\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
+\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ in a superposition, the probability
+amplitude of $\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
 
-To see this effect in Q#, we can implement it with the help of
-the `H` operation. We already know that $\hat H \ket{0} = \ket{\psi_1}$, which we used for the quantum random bit generator. But if we apply $\hat H$
-to the state $\ket{1}$, we obtain $\ket{\psi_2}$. 
+To see this effect in Q#, we can implement it with the help of the `H`
+operation. We already know that $\hat H \ket{0} = \ket{\psi_1}$, which we used
+for the quantum random bit generator. But if we apply $\hat H$ to the state
+$\ket{1}$, we obtain $\ket{\psi_2}$. 
 
 If we then apply `H` twice to the state $\ket{0}$:
 
@@ -22,8 +24,8 @@ Since $\hat H$ is a linear operator:
 $$=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
 \frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2})$$.
 
-Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as superposing
-the states $\psi_1$ and $\psi_2$. We know how to code that with Q#.
+Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as
+superposing the states $\psi_1$ and $\psi_2$. We know how to code that with Q#.
 
 The code would be:
 
@@ -239,8 +241,8 @@ take a look to the [Q# user guide](todo).
 ## Estimating resources with Q#
 
 The Quantum Development Kit has a built-in tool that allows you to estimate the
-resources required to run a given Q# code on a quantum computer. Its name is
-[`ResourcesEstimator`](todo) and it accomplishes this by executing the quantum operation
+resources required to run a given Q# code on a quantum computer. It's called 
+[`ResourcesEstimator`](todo). It runs the quantum operation
 without actually simulating the state of a quantum computer. For this reason, it
 can estimate resources for Q# operations that use thousands of qubits, if the
 classical part of the code can be run in a reasonable time.
@@ -268,13 +270,16 @@ BorrowedWidth   0
 ```
 
 We need 1 CNOT gate, 1 Clifford gate to apply `H` and 4 measurements: 2 to
-obtain the qubits results, and two to reset them.
-
-The width of the circuit, i.e. the number of qubits used, is 2 since we only
-used two qubits.
+obtain the qubits results, and two to reset them. The width of the circuit, i.e.
+the number of qubits used, is 2 since we only used two qubits. For this example,
+it was very simple to know how many resources we needed without having to use
+`ResourcesEstimator`. But Q# has high-level functionality and for most programs
+it is virtually impossible to know directly how many resources they need. This
+makes `ResourcesEstimator` a very useful tool for quantum developers.
 
 To learn more about `ResourcesEstimator` and a detailed description of each of
-the parameters of the output and more estimation tools, you can read [the official documentation](todo).
+the parameters of the output and more estimation tools, you can read [the
+official documentation](todo).
 
 In the next unit, we are going to wrap up everything and learn how can we
 exploit interference and entanglement to outperform classical computers with the
