@@ -88,7 +88,7 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
     nslookup www.wideworldimportsXXXX.com ns1-07.azure-dns.com
     ```
 
-1. You should see that your host name (www.wideworldimportsXXXX.com) resolves to 10.10.10.10.
+1. You should see that your host name `www.wideworldimportsXXXX.com` resolves to 10.10.10.10.
 
    ![Screenshot of Cloud Shell, showing the nslookup results](../media/4-nslookup.png)
 
