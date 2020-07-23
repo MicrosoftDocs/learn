@@ -1,18 +1,18 @@
-Now that you've created a Data Science Virtual Machine, you need to connect to it. The Data Science Virtual Machine is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH, you can connect to the command line of the Data Science Virtual Machine. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
+Now that you've created a Data Science Virtual Machine, you need to connect to it. The Data Science Virtual Machine is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH, you can connect to the command-line of the Data Science Virtual Machine. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
 
 ## If necessary, start the Data Science Virtual Machine
 
-A newly-created Data Science Virtual Machine will already be running, but generally you'll need to start the virtual machine from the Azure Portal.
+A newly created Data Science Virtual Machine will already be running, but generally you'll need to start the virtual machine from the Azure portal.
 
-1. Navigate to your resource group in the Azure Portal
+1. Navigate to your resource group in the Azure portal
 1. From your resource list, choose your Data Science Virtual Machine, which is of type "Virtual machine"
 1. From the Data Science Virtual Machine's resource page, choose "Start" if necessary
 1. Wait until the Data Science Virtual Machine's Status is "Running"
 1. Record the IP address 
 
-## Connect to the command line using SSH
+## Connect to the command-line using SSH
 
-To access the command line of your Data Science Virtual Machine, you'll use:
+To access the command-line of your Data Science Virtual Machine, you'll use:
 
 - An SSH client running in a terminal on your local machine
 - The username and password you specified during creation
@@ -20,7 +20,7 @@ To access the command line of your Data Science Virtual Machine, you'll use:
 
 ### Install an SSH client on Windows, if necessary
 
-If you are running Linux or MacOS, an ssh client is part of the OS standard utilities. If you are running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
+If you are running Linux or macOS, an ssh client is part of the OS standard utilities. If you are running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
 
 ```powershell
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
@@ -33,21 +33,21 @@ Name  : OpenSSH.Server~~~~0.0.1.0
 State : NotPresent
 ```
 
-If the `State` of the `OpenSSH.Client` is not `Installed`, run:
+If the `State` of the `OpenSSH.Client` isn't `Installed`, run:
 
 ```powershell
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-## Connect using an ssh client from the command line
+## Connect using an ssh client from the command-line
 
-From a terminal or PowerShell console, run the following, substituting your username and the IP address for `1.1.1.1`:
+From a terminal or PowerShell console, run the following, replacing your username and the IP address for `1.1.1.1`:
 
 ```bash
 ssh UserName@1.1.1.1
 ```
 
-The first time you connect via SSH, you will receive a warning. Accept the fingerprint and you will be presented with a password prompt. Enter the password you specified while creating the Data Science Virtual Machine. You should see a greeting screen and a command prompt.
+The first time you connect via SSH, you'll receive a warning. Accept the fingerprint and you'll be presented with a password prompt. Enter the password you specified while creating the Data Science Virtual Machine. You should see a greeting screen and a command prompt.
 
 ## Connect using a graphical user interface
 
@@ -59,7 +59,7 @@ The Linux VM is already provisioned with X2Go Server and ready to accept client 
 
 1. Download and install the X2Go client for your client platform from [X2Go](https://wiki.x2go.org/doku.php/doc:installation:x2goclient).
 
-1. Run the X2Go client. If the "New Session" window does not pop up automatically, go to Session -> New Session.
+1. Run the X2Go client. If the "New Session" window doesn't pop up automatically, go to Session -> New Session.
 
 1. On the resulting configuration window, enter the following configuration parameters:
    - **Session tab**:
@@ -73,9 +73,9 @@ The Linux VM is already provisioned with X2Go Server and ready to accept client 
    ![X2go configuration](../media/x2go-ubuntu.png)
 
 1. Select **OK**.
-1. Click on the box in the right pane of the X2Go window in order to bring up the log-in screen for your VM.
+1. Click on the box in the right pane of the X2Go window to bring up the log-in screen for your VM.
 1. Enter the password for your VM.
 1. Select **OK**.
-1. You may have to give X2Go permission to bypass your firewall in order to finish connecting.
+1. You may have to give X2Go permission to bypass your firewall to finish connecting.
 1. You should now see the graphical interface for your Ubuntu Data Science Virtual Machine.
 

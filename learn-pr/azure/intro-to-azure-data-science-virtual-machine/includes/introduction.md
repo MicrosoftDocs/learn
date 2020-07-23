@@ -11,7 +11,7 @@ You want to work:
 
 You may, of course, buy or build your own machine and configure it just as you choose. This may be the right choice for you if you're willing to bear the upfront costs and know that you'll stress the machine frequently. Even so, safe remote access to the machine either for yourself or your colleagues may be a challenge and will, at the least, be an ongoing administrative task.
 
-With a Data Science Virtual Machine, you only pay for when the machine is running. If you're worried about forgetting to shut down the machine, you can schedule a daily shutdown at the time of your choosing. You can connect to the machine's command line interface or use it's graphical desktop.
+With a Data Science Virtual Machine, you only pay for when the machine is running. If you're worried about forgetting to shut down the machine, you can schedule a daily shutdown at the time of your choosing. You can connect to the machine's command-line interface or use its graphical desktop.
 
 ![Screenshot of the desktop of the Data Science Virtual Machine running Jupyter](../media/jupyter-running-pytorch-in-dsvm.png)
 
@@ -19,10 +19,11 @@ The Data Science Virtual Machine has dozens of applications and programming tool
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you'll:
 
 * Match operating systems and hardware resources available for the Data Science Virtual Machine
 * Specify and create a Data Science Virtual Machine running Ubuntu Server 18.04 LTS
-* Connect to the command line of the Data Science Virtual Machine with SSH 
+* Connect to the command-line of the Data Science Virtual Machine with SSH 
 * Connect to the graphical Desktop of the Data Science Virtual Machine with X2Go Client 
-* Demonstrate the use of a R Server running inside the Data Science Virtual Machine
+* Demonstrate the use of RStudio running inside the Data Science Virtual Machine
+* List custom Python environments, activate one, and run Jupyter notebook server

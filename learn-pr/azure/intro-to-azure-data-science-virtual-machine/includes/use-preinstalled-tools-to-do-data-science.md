@@ -20,7 +20,7 @@ When RStudio completes startup, enter `demo(graphics)` in the Console window to 
 
 ![Screenshot showing RStudio](../media/rstudio.png)
 
-Because the Data Science Virtual Machine you've created in this module is sandboxed, it cannot access outside resources, such as the data files needed for the included Python Jupyter notebook tutorials.
+Because the Data Science Virtual Machine you've created in this module is sandboxed, it can't access outside resources, such as the data files needed for the included Python Jupyter notebook tutorials.
 
 ## List and activate a Python conda environment
 
@@ -77,6 +77,6 @@ To start a Jupyter server, run:
 jupyter notebook
 ```
 
-After startup, the Firefox browser on your Data Science Virtual Machine should start and open to `localhost:8888/tree`, showing the home directory of your Data Science Virtual Machine user. While the **notebooks* directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Since your Data Science Virtual Machine is running in a Learn Sandbox, you cannot access such data at this time.
+After startup, the Firefox browser on your Data Science Virtual Machine should start and open to `localhost:8888/tree`, showing the home directory of your Data Science Virtual Machine user. While the **notebooks* directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Since your Data Science Virtual Machine is running in a Learn Sandbox, you can't access such data at this time.
 
 Feel free to try other software on the machine, although the Sandbox restrictions will affect those that rely on Internet access.
