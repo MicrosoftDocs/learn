@@ -1,4 +1,119 @@
-In this unit you will use superposition, interference and entanglement to
+In this unit you will see some of the most famous quantum computing algorithms.
+We will outline how they use superposition, interference and entanglement to
+achieve a quantum advantage over classical algorithms. In future modules, you
+will be able to explore in detail some of these algorithms.
+
+## Quantum oracle
+
+First, we need to introduce the concept of *quantum oracle*. In many problems we
+are interested in solving a problem while making the fewest number of uses of a
+function $f:
+\{0,1\}^n \rightarrow \{0,1\}^m$. For example, if we are searching an element in
+a database we can encode the problem in a binary function $f:
+\{0,1\}^n \rightarrow \{0,1\}$. The function $f(x)$ can be considered as a
+black-box that outputs $1$ if the consulted element $x$ is our target, and $0$
+otherwise. An efficient search finds the target element with few uses of $f$.
+
+A quantum oracle is
+a quantum operation that is used to implement some black-box function $f:
+\{0,1\}^n \rightarrow \{0,1\}^m$. This
+operation is implemented in a way that allows to evaluate the black-box function
+not only on individual inputs, but also on superposition of qubits.
+
+>[!NOTE] This is not the same as being able to calculate the function on all
+>inputs at once, since you'll be able to extract only the evaluation of the qubit you
+>decide to measure!
+
+The oracle has to act on quantum states instead of classical bits. To enable
+this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
+can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
+
+<!-- In this tutorial we are going to implement the function $f$ using *phase
+oracles*. A phase oracle $U_f$ encodes the value of $f$ by modifying the phase
+the qubit register's state as follows:
+
+$$U_f\ket{x}=(-1)^{f(x)}\ket{x}$$
+
+In our case, since $f$ is binary it can either no change the phase if f(x)=0, or
+add a $-1$ phase if f(x)=1. These phase shifts applied to superposition states
+will be crucial for our algorithm.
+
+>[!NOTE] Remember that multiplying a complex number $z$ by another complex
+>number $u$ of module $1$ means to modify the phase of $z$ without affecting its
+>magnitude. To see this we just need to represent the multiplication in polar
+>coordinates. The number $z$ in polar coordinates is $z=|z|e^i\phi_z$, where
+>$\phi_z$ is the phase of $z$. The number $y$ is just $y=e^{i\phi_y}$ since it
+>has module one. Then the multiplication is
+>$zu=|z|e^{i\phi_z}e^{i\phi_y}=|z|e^{i(\phi_z+\phi_y)}$. This is, a phase shift. -->
+
+## Deutsch-Jozsa algorithm
+
+This quantum algorithm is famous for being one of the earliest examples of
+quantum computing solving a problem exponentially faster than any classical
+algorithm. It has very limited real-life applications, but its relative
+simplicity makes it a fantastic example to show how quantum computers can
+improve classical results using superposition, interference and entanglement.
+
+### The problem
+
+First let's introduce the problem we are going to solve. Suppose you're given a
+function $f(x):\{0,1\}^n\rightarrow\{0,1\}$, this is, a binary function that
+takes a string of bits and outputs a single bit. You're guaranteed that the
+function is:
+
+- either *constant*, this is, outputs the same value for all inputs.
+- or *balanced*, this is, for exactly half of the inputs it outputs $1$ and for
+  the other half it outputs $0$.
+
+For example, the function $f(x)=1$ for all $x$ is a constant function. On the
+other hand, the function $f(x)= x_{n-1}$, where $x_{n-1}$ is the last bit of
+$x$, is balanced.
+
+The task is to find out wether if a given black-box function $f(x)$ is constant
+or balanced with the least amount of calls possible.
+
+### The classical solution
+
+If we solve this problem classically, how many calls to the given function will
+we need?
+
+The first call will give us no information - regardless of whether it returns 0
+or 1, the function could still be constant or balanced. In the best case
+scenario the second call will return a different value and we'll be able to
+conclude that the function is balanced in just two calls. However, if we get the
+same value for the first two calls, we'll have to keep querying the function
+until either we get a different value or until we do $\frac{2^{n}}{2}+1$ queries
+that will return the same value - in this case we'll know for certain that the
+function will be constant.
+
+This is, if the function is balanced we need to use the function on half plus
+one of the possible inputs to be completely sure that the function is balanced.
+
+### The quantum solution: the Deutsch-Jozsa algorithm
+
+Suppose you are given an oracle operation $U_f$ that acts as a black-box
+implementing the function $f(x)$. Both, $f(x)$ and $U_f$ are unknown to you and
+the only information you have is that $f(x)$ takes a bit string of length $n$ as
+input and you're guaranteed that the function is either constant or balanced.
+
+#### Outline of the algorithm
+
+The algorithm is as follows:
+
+1. Start with a register of $n$ qubits initiated in the state \ket{0...0}. 
+1. Apply $\hat H$ to every qubit to create a superposition of all possible states.
+1. Apply the oracle $U_f$ to the superposition.
+1. Apply $\hat H$ to every qubit again to cause quantum interference.
+1. Measure every qubit: if all measurements results are $0$, the function is
+   constant, otherwise, it is balanced.
+
+This is, we solve the problem with just one query to the oracle, exponentially
+faster than the classical solution.
+
+If you're interested in the details of this algorithm and want to implement it
+in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](todo).
+
+<!-- In this unit you will use superposition, interference and entanglement to
 implement in Q# the Deutsch-Jozsa algorithm. This quantum algorithm is famous
 for being one of the earliest examples of quantum computing solving a problem
 exponentially faster than any classical algorithm. It has very limited real-life
@@ -220,4 +335,4 @@ The algorithm is as follows:
 
 #### Implement the algorithm in Q#
 
-*Article under development*
+*Article under development* -->

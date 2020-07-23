@@ -1,41 +1,56 @@
-For some computational tasks, quantum computing provides exponential speedups. This is rooted from the fact that quantum computing utilizes three phenomena from quantum mechanics: superposition, interference and
-entanglement. In the last MS Learn module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/), you have experienced superposition by creating a random number generator from qubits. In this unit, you will learn more about the concept.  
+For some computational tasks, quantum computing provides exponential speed-ups.
+This is rooted from the fact that quantum computing utilizes three phenomena
+from quantum mechanics: superposition, interference and entanglement. In the
+last MS Learn module [Create your first Q# program by using the Quantum
+Development
+Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/),
+you have experienced superposition by creating a random number generator from
+qubits. In this unit, you will learn more about the concept.  
 
 ## Quantum computers are quantum systems
 
-Quantum computers are controllable quantum mechanical devices that exploit the properties of
-quantum physics to perform computations. You may have seen or heard about the Schrödinger equation that describes every quantum mechanical system:
+Quantum computers are controllable quantum mechanical devices that exploit the
+properties of quantum physics to perform computations. You may have seen or
+heard about the Schrödinger equation that describes every quantum mechanical
+system:
 
-$$i \hbar \frac{\partial}{\partial t}\psi(t)=\hat H \psi(t)$$.
+$$i \hbar \frac{\partial}{\partial t}\psi(t)= H \psi(t)$$.
 
-It captures the wavefunction, $$\psi(t)$$, and the energy Hamiltonian, $$H$$, of the system, with $$t$$ being time and $$\hbar$$ being the Plank constant. However, fortunately,
-you don't need the Schrödinger equation in order to do quantum programming. In practice, nobody
-thinks in terms of the Schrödinger equation when writing quantum algorithms. But we can use it to
-assist us to understand some concepts of quantum computing.
+It captures the wavefunction, $\psi(t)$, and the energy Hamiltonian, $H$, of
+the system, with $t$ being time and $$\hbar$$ being the Plank constant.
+However, fortunately, you don't need the Schrödinger equation in order to do
+quantum programming. In practice, nobody thinks in terms of the Schrödinger
+equation when writing quantum algorithms. But we can use it to assist us to
+understand some concepts of quantum computing.
 
-The Schrödinger equation determines the evolution of an important property of
-quantum systems: the **probability amplitude** $\psi$. The probability amplitude determines probability of finding the system in a specific state, and
-therefore, determines the state of the quantum system. This is an important
-difference with respect to classical physics (and therefore classical
-computing): we don't describe the systems as being in determined factual states,
-but in terms of the probabilities of finding those states when we observe them.
+The Schrödinger equation determines the evolution of the state of the system,
+represented by the wave function $\psi$. An important concept in quantum
+computing is the **probability amplitude** of an observable. The probability
+amplitude determines probability of obtaining a certain outcome when measuring
+the system. This is an important difference with respect to classical computing:
+we don't describe bits as being in determined factual states, but in
+terms of the probabilities of finding those states when we observe them.
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In
-this notation, we describe the possible states of quantum systems with kets $\ket{ }$. For example, for qubit systems, the state $\ket{0}$ represents the state whose
-probability of observing `Zero` when measuring the qubit is 100%. Analogously,
-$\ket{1}$ represents the state that always yields `One` after a measurement.
+this notation, we describe the possible states of quantum systems with kets
+$\ket{ }$.  For example, $\ket{0}$ and $\ket{1}$ are two possible states of a
+qubit. If a qubit is in the state, i.e. $\ket{\psi} = \ket{0}$, it means the
+probability of observing `Zero` when measuring the qubit is 100%. Similarly, if
+a qubit is in the state $\ket{\psi} =\ket{1}$, it yields `One` after a
+measurement.
 
 ## Linear operators
 
-An **operator** (sometimes known as **gate**) is a
-function that transforms the state of a quantum system to another state.
+An **operator** (sometimes known as **gate**) is a function that transforms the
+state of a quantum system to another state.
 
 $$\hat A \ket{\psi} = \ket{\psi'}$$
 
 We say that an operator $\hat A$ is linear when it presents two simple
 properties, additivity
 
-$$\hat A(\ket{\psi_1} + \ket{\psi_2}) = \hat A\ket{\psi_1} + \hat A\ket{\psi_2}$$
+$$\hat A(\ket{\psi_1} + \ket{\psi_2}) = \hat A\ket{\psi_1} + \hat
+A\ket{\psi_2}$$
 
 and homogeneity
 
@@ -45,50 +60,66 @@ where $a$ is a complex number.
 
 ## Quantum superposition
 
-The Schrödinger equation is a linear equation, since all the operators involved
-in the equation are linear. This implies that if two states $\ket{\psi_1}$ and
-$\ket{\psi_2}$ are solutions of the Schrödinger equation (i.e. valid quantum
-states), then any linear combination of them is also a valid quantum state. This
-property allows superpositions of quantum states:
+The Schrödinger equation is a linear equation. This implies that if two states
+$\ket{\psi_1}$ and $\ket{\psi_2}$ are solutions of the Schrödinger equation
+(i.e. valid quantum states), then any linear combination of them is also a valid
+quantum state. This property allows superpositions of quantum states:
 
 $$\ket{\psi}=a\ket{\psi_1}+b\ket{\psi_2}$$
 
-Remember that in the module [Create your first Q# program by using the Quantum Development Kit](todo)
-we already used superposition to create a quantum random number generator. To do 
-so we used the operator `H` to put a qubit in the state $\ket{0}$ into superposition. Mathematically this 
-is:
+This linear combination of $\ket{\psi_1}$ and $\ket{\psi_2}$ is called a
+superposition of $\ket{\psi_1}$ and $\ket{\psi_2}$. Here, $a$ and $b$ are the
+probability amplitudes of $\ket{\psi_1}$ and $\ket{\psi_2}$, respectively.
+Remember that in the module [Create your first Q# program by using the Quantum
+Development Kit](todo) we already used superposition to create a quantum random
+number generator. We used the operator `H` to put a qubit in the state $\ket{0}$
+into superposition. Mathematically this is:
+$$ \hat H \ket{0} = \frac1{\sqrt2}
+\ket{0} + \frac1{\sqrt2} \ket{1} $$
 
-$$ \hat H \ket{0} = \frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1} $$
-
-Linearity is a fundamental property of quantum mechanics and therefore of quantum computing.
+Linearity is a fundamental property of
+quantum mechanics and therefore of quantum computing.
 
 ## Quantum computers are probabilistic
 
-A fundamental difference between classical computers and quantum computers is that
-programs in quantum computers are probabilistic. Quantum algorithms consists in the
-application of linear operations to a register of qubits to modify its state to 
-a particular superposition. Each superposition has different probabilities of giving
-a result when we measure the qubits. This means that sometimes we have to run the
-algorithm several times to find the wanted output reliably. This might look 
-inefficient, but running several times quantum algorithms in many cases is much 
-more efficient than the classical equivalent.
+A fundamental difference between classical computers and quantum computers is
+that programs in quantum computers are probabilistic. Quantum algorithms
+consists of linear operations to a register of qubits to modify their states to
+a particular superposition of all possibilities. Each possible state has an
+associated probability amplitude. When we make a measurement, we obtain one of
+the possible states with a certain probability. This is in contrast with
+classical computing, where a bit can only be deterministically `Zero` or `One`.
+It means that sometimes we have to run the algorithm several times to ensure the
+highest probability result in the output. This might look inefficient, but running
+several times quantum algorithms in many cases is much more efficient than
+solving the task classically.
 
-How do we know the probabilities associated with a given superposition? Well, it's 
-very easy. Suppose we have a register of two qubits that consists on a superposition of
-four different states:
+How do we know the probabilities associated with a given superposition? Suppose
+we have a register of two qubits. That would be a superposition of four possible
+states: 
+$$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}$$.
 
-$$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}$$
+Remember that $a,b,c$ and $d$ are probability amplitudes for each state. Their
+absolute values, e.g. $|a|$, squared give the corresponding probabilities. For
+example, the probability for observing $\ket{00}$ is $P(00)=|a|^2$, for
+$\ket{01}$ is $P(01)=|b|^2$ and so on.  
+There are restrictions on the types of numbers the probability amplitudes can
+be. They can be positive, negative or in general complex numbers. However, for a
+valid quantum superposition all probabilities sum to one:
+$|a|^2+|b|^2+|c|^2+|d|^2=1$. This is often known as the normalization condition.
+You can think of it as the fact that you always obtain an outcome when you
+measure, so the probabilities of measuring every possible outcome must sum to
+one.
 
-Then the probability for observing $\ket{00}$ is $P(00)=|a|^2$, for $\ket{01}$ is $P(01)=|b|^2$ and so on. Remember that $a,b,c$ and $d$ are probability amplitudes for each state, and therefore complex numbers.  The symbol $|a|$ represents the module of $a$. The module of a complex number is a real number, so it can represent a probability. 
+In the example state we produced for the quantum random bit generator,
+$\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability
+for each state is: 
 
-An extra condition that happens in every valid quantum superposition is that all probabilities sum to one. In this case this means that $|a|^2+|b|^2+|c|^2+|d|^2=1$. This is often known as the normalization condition. You can think of it as the fact
-that you always obtain an outcome when you measure, so the probabilities of measuring every possible outcome must sum to one.
+$$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
+$$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12$$.
 
-For example, in the state we produced for the quantum random bit generator, $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$ the probabilities for each state are:
+Each state has a 50% probability of being measured and hence we have a balanced
+bit generator. We also can check that $\frac12 + \frac12 = 1$.
 
-$$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12$$
-$$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12$$
-
-so each state has a 50% probability of being measured and hence we have a balanced bit generator. We also can check that $\frac12 + \frac12 = 1$.
-
-In the next unit we are going to use Q# to see how we can create different superpositions of qubits and output the probabilities.
+In the next unit, we are going to use Q# to see how we can create different
+superpositions of qubits and inspect the probabilities.

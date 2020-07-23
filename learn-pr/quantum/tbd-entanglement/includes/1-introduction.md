@@ -1,10 +1,17 @@
-Quantum computers work in fundamentally different ways from classical computers. They can offer solutions when classical computers run into limitations. Quantum algorithms is not always faster than their classical counterparts. But for certain tasks, such as factorizing large numbers or searching for items in an unordered list, quantum computers prove to provide exponential speed-ups. How does it work?
+Quantum computers work in fundamentally different ways from classical computers.
+They can offer solutions when classical computers run into limitations. Quantum
+algorithms aren't always faster than their classical counterparts. But for
+certain tasks, such as factorizing large numbers or searching for items in an
+unordered list, quantum computers prove to provide exponential speed-ups. How
+does it work? In this module you will learn the fundamental concepts behind the
+power of quantum computing.
 
-The key to understanding quantum computing is the three concepts: superposition, entanglement and interference. In this module, we will explain these fundamentals. We will use Q# and tools provided by the Quantum Development Kit to illustrate these ideas.
+The key to understanding quantum computing is the three concepts: superposition,
+interference and entanglement. In this module you will use Q# and some tools
+provided by the Quantum Development Kit to illustrate these ideas.
 
-Finally, we will wrap-up all these concepts to implement the Deutsch–Jozsa
-quantum algorithm to show how they can be exploited to outperform classical
-computers.
+Finally, we will outline different quantum algorithms to show how they exploit
+superposition, interference and entanglement to outperform classical computers.
 
 ## Learning objectives
 
@@ -13,13 +20,17 @@ In this module you'll:
 - Learn the basic theory behind the power of quantum computing: superposition,
   interference and entanglement.
 - Get a firsthand view of different tools in the Quantum Development Kit like
-  the DumpMachine function and the Resources Estimator.
-- Demonstrate the power of quantum computing by implementing in Q# a quantum
-  algorithm that outperforms any classical algorithm.
+  the DumpMachine function, to inspect quantum states in virtual quantum computers, and
+  and the Resources Estimator, to estimate the quantum resources needed to run
+  your programs.
+- Learn about different algorithms that make use of quantum properties to
+  outperform classical algorithms.
 
 ## Prerequisites
 
-- The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
+- The latest version of [.NET
+  Core](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-- The Quantum Development Kit.
-- Basic knowledge of linear algebra.
+- The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode)
+- Module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/).
+- Basic knowledge of [linear algebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra) and [complex numbers](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic).
