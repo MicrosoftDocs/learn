@@ -1,5 +1,6 @@
 In this exercise, you'll deploy your company's website as a test app onto AKS. The website is a static website with an underlying technology stack of HTML, CSS, and JavaScript. It doesn't receive as many requests as the other services and provides us with a safe way to test deployment options.
 
+> [!NOTE]
 > The code for the web app is available in this [GitHub repository](https://github.com/MicrosoftDocs/mslearn-aks-deploy-container-app) if you want to explore the source code further.
 
 ## Create a container registry
@@ -41,7 +42,7 @@ You need to create and push your container image to a container registry to depl
 
 You need to authenticate with the new ACR before you can push your container image. Your ACR credentials are available in the [Azure portal](https://portal.azure.com)  should you need the information. Navigate to your newly created ACR and select the **Access keys** tab.
 
-    :::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
+:::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
 
 1. In the Cloud Shell run the `az acr login` command to authenticate with your new ACR. There's no need to include the `.azurecr.io` in the name of the CR when logging in.
 
@@ -85,7 +86,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
 1. Open the `deployment.yaml` file and add the following code section of YAML.
 
-    ```yml
+    ```yaml
     # deployment.yaml
     apiVersion: apps/v1 # The API resource where this workload resides
     kind: Deployment # The kind of workload we're creating
@@ -102,7 +103,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
     Update the `deployment.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     # deployment.yaml
     apiVersion: apps/v1
     kind: Deployment
@@ -123,7 +124,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
     Update the `deployment.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     # deployment.yaml
     apiVersion: apps/v1
     kind: Deployment
@@ -147,7 +148,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
     Update the `deployment.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     # deployment.yaml
     apiVersion: apps/v1
     kind: Deployment
@@ -177,7 +178,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
     Update the `deployment.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     # deployment.yaml
     apiVersion: apps/v1
     kind: Deployment
@@ -210,7 +211,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
     Update the `deployment.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     # deployment.yaml
     apiVersion: apps/v1
     kind: Deployment

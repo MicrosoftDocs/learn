@@ -1,6 +1,6 @@
 Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. With the cluster configured, you're ready to deploy one of the components in your video rendering application. You decide to deploy a static version of your company's website to explore the Kubernetes deployment process.
 
-Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment. 
+Before we discuss the Kubernetes way of deployment, let's review some of the steps you'd take to deploy a similar application to a non-Kubernetes environment.
 
 Assume you're using an Azure Virtual Machine as your target platform. The first step is to prepare the server software to host the application. You'll install the operating system, make sure to update the OS to the latest security and software patches, install and configure the web server software, and finally deploy the web application. You'll repeat this process for each new VMs when you decide to scale the website out to handle an increase in demand from customers.
 
@@ -32,21 +32,21 @@ Kubernetes groups containers and applications into logical structures called **P
 
 ## Kubernetes labels
 
-Kubernetes labels allow you to logical group Kubernetes objects. These labels enable the system to query the cluster for objects that match a label with a specific name. 
+Kubernetes labels allow you to logical group Kubernetes objects. These labels enable the system to query the cluster for objects that match a label with a specific name.
 
-For example, if you wanted to search all workloads related to the `contoso-website`, you'll query the cluster for pods with the label `app` and the value `contoso-website`. 
+For example, if you wanted to search all workloads related to the `contoso-website`, you'll query the cluster for pods with the label `app` and the value `contoso-website`.
 
 ## Kubernetes deployments
 
 :::image type="content" source="../media/4-2-deployments-diagram.png" alt-text="Deployments diagram":::
 
-Deployments are an evolution of pods. They wrap the Pods into an intelligent object that allows them to _scale out_. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules. 
+Deployments are an evolution of pods. They wrap the Pods into an intelligent object that allows them to _scale out_. You can easily duplicate and scale your application to support more load without the need to configure complex networking rules.
 
 Deployments allow users to update applications just by changing the image tag without downtime. When you update a deployment, instead of deleting all apps and creating new ones, the deployment turns off the online apps one by one, replacing them with the newest version. This aspect means any deployment can update the pods inside it with no visible effect in availability.
 
 ## Kubernetes manifest files
 
-A Kubernetes manifest file allows you to describe your workloads in the YAML format declaratively and simplify Kubernetes object management. 
+A Kubernetes manifest file allows you to describe your workloads in the YAML format declaratively and simplify Kubernetes object management.
 
 Imagine you have to deploy a workload by hand. You need to think about and manage several aspects. You'd need to create a container, select a specific node, wrap it in a pod, run the pod, monitor execution, and so on.
 
@@ -58,22 +58,23 @@ The structure of manifest files differs depending on the type of resource that y
 
 The first two entries in all manifest files have two important keys `apiVersion` and `kind`. Here is an example of a deployment file.
 
-    ```yml
-    apiVersion: apps/v1 # Where in the API it resides
-    kind: Deployment # The kind of workload we're creating
-    ```
+```yml
+apiVersion: apps/v1 # Where in the API it resides
+kind: Deployment # The kind of workload we're creating
+```
+
 The `apiVersion` key defines the API server endpoint that manages the object you'll deploy.
 
 The `kind` key defines the workload this deployment will create.
 
 Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources **must** have a name, and this name goes inside the `metadata` key.
 
-    ```yml
-    apiVersion: apps/v1
-    kind: Deployment
-    metadata:
-      name: contoso-website # This will be the name of the deployment
-    ```
+```yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: contoso-website # This will be the name of the deployment
+```
 
 ## How to group objects in a deployment
 
@@ -81,15 +82,15 @@ Deployments make use of a `label` to find and group pods. You define the label a
 
 Here is an example. Notice the `matchLabels` value defined in the `selector` definition added to the `spec` definition.
 
-    ```yml
-    # deployment.yaml
-    # ...
-    spec:
-      selector:
-        matchLabels:
-          app: contoso-website
-    # ...
-    ```
+```yml
+# deployment.yaml
+# ...
+spec:
+  selector:
+    matchLabels:
+      app: contoso-website
+# ...
+```
 
 From this point on, all files have different structures based on what kind of resource you're telling Kubernetes to create.
 
