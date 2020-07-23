@@ -26,7 +26,7 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 
 After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
 
-```
+```console
 The eShop-Learn application has been deployed.
 
 You can begin exploring these services (when available):
@@ -130,7 +130,7 @@ When validating a discount coupon, the request goes to the web shopping aggregat
 
 In this case, you'll implement two policies to handle failure: the Retry and Circuit Breaker policies from the previous unit.
 
-Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical solutions to handle failures. Complete the following steps to implement the failure handling:
+Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical solutions to handle failures. Complete the following steps to implement failure handling for the coupon service:
 
 1. Run the following command:
 
@@ -147,12 +147,13 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
     Apply the following changes to the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file:
 
-    1. Replace the `// Add the GetRetryPolicy method` comment with the following code:
+    1. Replace the comment `// Add the GetRetryPolicy method` with the following code:
 
         ```csharp
         public static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy() =>
             HttpPolicyExtensions.HandleTransientHttpError()
-                .WaitAndRetryAsync(5, retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(1.5, retryAttempt) * 1000), (_, waitingTime) =>
+                .WaitAndRetryAsync(5, retryAttempt =>
+                    TimeSpan.FromMilliseconds(Math.Pow(1.5, retryAttempt) * 1000), (_, waitingTime) =>
                 {
                     Log.Logger.Information("----- Retrying in {WaitingTime}s", $"{ waitingTime.TotalSeconds:n1}");
                 });
@@ -166,9 +167,16 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-    1. Add the `AddPolicyHandler(GetRetryPolicy())` and `AddPolicyHandler(GetCircuitBreakerPolicy())` method calls to the `AddHttpClient` method for the `CouponService` dependency injection registration.
+    1. Call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy()` method call. The second occurrence should accept a `GetCircuitBreakerPolicy()` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
-    1. In the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file, replace the `// Add the using statements` comment with the following code:
+        ```csharp
+        services.AddHttpClient<ICouponService, CouponService>()
+            .AddHttpMessageHandler<HttpClientAuthorizationDelegatingHandler>()
+            .AddPolicyHandler(GetRetryPolicy())
+            .AddPolicyHandler(GetCircuitBreakerPolicy());
+        ```
+
+    1. In the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file, replace the comment `// Add the using statements` with the following code:
 
         ```csharp
         using Polly;

@@ -1,4 +1,4 @@
-Resiliency is the ability to recover from transient failures and restore normal function with minimal user impact. Failures are unavoidable and your app must respond in a way that minimizes downtime and data loss. This should ideally be done gracefully without any user impact.
+Resiliency is the ability to recover from transient failures and restore normal function with minimal user impact. Failures are unavoidable and your app must respond in a way that minimizes downtime and data loss. You should strive to handle failures gracefully without any user impact.
 
 Microservice environments are volatile. Consequently, microservice apps should be designed to handle partial failures, such as code exceptions, network outages, unresponsive server processes, and hardware failures. Even normal activities, such as moving containers to a different node within a Kubernetes cluster, can cause transient failures.
 
@@ -6,7 +6,7 @@ Ensuring a resilient deployment requires the use of health checks. Microservices
 
 ## Resiliency approaches
 
-There are two fundamental approaches to resiliency: Code and infrastructure. Each approach has benefits and drawbacks. Both approaches can be appropriate depending on the situation. In this module you'll implement code-based resiliency using Polly. Then you'll implement infrastructure-based resiliency with Linkerd.
+There are two fundamental approaches to resiliency: code and infrastructure. Each approach has benefits and drawbacks. Both approaches can be appropriate depending on the situation. In this module, you'll implement code-based resiliency using Polly. Then you'll implement infrastructure-based resiliency with Linkerd.
 
 ## Polly
 
@@ -28,7 +28,7 @@ For an in-depth explanation of the Retry policy, see [Polly's wiki page on Retry
 
 ### Circuit-breaker policy
 
-The *Circuit-breaker* policy gives the target service a break after a repeated failures. Such a state might indicate that the service is having a serious problem and will be temporarily unable to respond. After a number of consecutive failures, the connection attempts are paused temporarily, "opening" the circuit. During this wait, additional operations on the target service fail immediately without "bothering" the service. After the wait time has elapsed, the operation is tried again. If the operation succeeds, the circuit is "closed" and the system goes back to normal.
+The *Circuit-breaker* policy gives the target service a break after a repeated number of failures. Such a state might indicate that the service is having a serious problem and will be temporarily unable to respond. After a number of consecutive failures, the connection attempts are paused temporarily, "opening" the circuit. During this wait, additional operations on the target service fail immediately without "bothering" the service. After the wait time has elapsed, the operation is tried again. If the operation succeeds, the circuit is "closed" and the system goes back to normal.
 
 For an in-depth explanation of the Circuit-breaker policy, see [Polly's wiki page on Circuit-breaker policy](https://github.com/App-vNext/Polly/wiki/Circuit-Breaker).
 
