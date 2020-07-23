@@ -25,8 +25,9 @@ In this exercise, you'll work with an existing list-detail app. The app has a Li
 1. Also in the Android project, ensure the `[Activity]` attribute in the **MainActivity.cs** file has all these attributes declared:
 
     ```@csharp
+    [Activity(Label = "FlagFactsDuo", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true,
     ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation
-    | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize
+    | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     ```
 
     This ensures that when your app switches from single- to dual-screen it doesn't destroy and recreate the activity.
