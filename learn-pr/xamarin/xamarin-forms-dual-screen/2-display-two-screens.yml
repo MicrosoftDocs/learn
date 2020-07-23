@@ -24,7 +24,7 @@ quiz:
     - content: "Add the Xamarin.Forms.DualScreen NuGet."
       isCorrect: false
       explanation: "Once you've added Xamarin.Forms.DualScreen, you need to initialize it in the Android project."
-    - content: "Add the Xamarin.Forms.DualScreen and initialize in the Android application's MainActivity class."
+    - content: "Add the Xamarin.Forms.DualScreen NuGet and initialize in the Android application's MainActivity class."
       isCorrect: true
       explanation: "`ContentPage` offers no methods to modify the dataset of a `ListView` control."
   - content: "For apps to run on Surface Duo they..."
