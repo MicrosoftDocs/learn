@@ -1,4 +1,4 @@
-Now that you are connected to your Data Science Virtual Machine, you can begin using it to do data science. 
+Now that you're connected to your Data Science Virtual Machine, you can begin using it to do data science. 
 
 The Data Science Virtual Machine comes with tools preinstalled for:
 
@@ -20,7 +20,7 @@ When RStudio completes startup, enter `demo(graphics)` in the Console window to 
 
 ![Screenshot showing RStudio](../media/rstudio.png)
 
-Because the Data Science Virtual Machine you've created in this module is sandboxed, it can't access outside resources, such as the data files needed for the included Python Jupyter notebook tutorials.
+Because Learn sandboxes the Data Science Virtual Machine you've created in this module, the virtual machine can't access outside resources. Since the Data Science Virtual Machine cannot access the Internet in this context, it cannot download the data files needed for the included Python Jupyter notebook tutorials.
 
 ## List and activate a Python conda environment
 
@@ -79,4 +79,4 @@ jupyter notebook
 
 After startup, the Firefox browser on your Data Science Virtual Machine should start and open to `localhost:8888/tree`, showing the home directory of your Data Science Virtual Machine user. While the **notebooks* directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Since your Data Science Virtual Machine is running in a Learn Sandbox, you can't access such data at this time.
 
-Feel free to try other software on the machine, although the Sandbox restrictions will affect those that rely on Internet access.
+Feel free to try other software on the machine, although the Sandbox restrictions will affect those programs that rely on Internet access.

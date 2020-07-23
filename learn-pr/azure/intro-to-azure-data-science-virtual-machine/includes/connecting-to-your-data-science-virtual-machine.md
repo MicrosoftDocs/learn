@@ -1,4 +1,4 @@
-Now that you've created a Data Science Virtual Machine, you need to connect to it. The Data Science Virtual Machine is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH, you can connect to the command-line of the Data Science Virtual Machine. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
+Now that you've created a Data Science Virtual Machine, you need to connect to it. The Data Science Virtual Machine is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH, you can connect to the command line of the Data Science Virtual Machine. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
 
 ## If necessary, start the Data Science Virtual Machine
 
@@ -10,9 +10,9 @@ A newly created Data Science Virtual Machine will already be running, but genera
 1. Wait until the Data Science Virtual Machine's Status is "Running"
 1. Record the IP address 
 
-## Connect to the command-line using SSH
+## Connect to the command line using SSH
 
-To access the command-line of your Data Science Virtual Machine, you'll use:
+To access the command line of your Data Science Virtual Machine, you'll use:
 
 - An SSH client running in a terminal on your local machine
 - The username and password you specified during creation
@@ -20,7 +20,7 @@ To access the command-line of your Data Science Virtual Machine, you'll use:
 
 ### Install an SSH client on Windows, if necessary
 
-If you are running Linux or macOS, an ssh client is part of the OS standard utilities. If you are running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
+If you're running Linux or macOS, an ssh client is part of the OS standard utilities. If you're running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
 
 ```powershell
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
@@ -39,7 +39,7 @@ If the `State` of the `OpenSSH.Client` isn't `Installed`, run:
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-## Connect using an ssh client from the command-line
+## Connect using an ssh client from the command line
 
 From a terminal or PowerShell console, run the following, replacing your username and the IP address for `1.1.1.1`:
 
@@ -73,7 +73,7 @@ The Linux VM is already provisioned with X2Go Server and ready to accept client 
    ![X2go configuration](../media/x2go-ubuntu.png)
 
 1. Select **OK**.
-1. Click on the box in the right pane of the X2Go window to bring up the log-in screen for your VM.
+1. Click on the box in the right pane of the X2Go window to bring up the sign-in screen for your VM.
 1. Enter the password for your VM.
 1. Select **OK**.
 1. You may have to give X2Go permission to bypass your firewall to finish connecting.

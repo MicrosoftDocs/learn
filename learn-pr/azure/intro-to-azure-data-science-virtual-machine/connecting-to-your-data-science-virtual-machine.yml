@@ -16,17 +16,17 @@ content: |
 quiz:
   title: Connecting to your Data Science Virtual Machine
   questions:
-    - content: "How can one reach the command-line of the Data Science Virtual Machine without launching a terminal from the Data Science Virtual Machine's graphical desktop?"
+    - content: "How can one reach the command line of the Data Science Virtual Machine without launching a terminal from the Data Science Virtual Machine's graphical desktop?"
       choices:
-        - content: "On Ubuntu, one can connect with ssh. On Windows, one can't access the command-line without launching a terminal from within a Remote Desktop session."
+        - content: "On Ubuntu, one can connect with ssh. On Windows, one can't access the command line without launching a terminal from within a Remote Desktop session."
           isCorrect: false
           explanation: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with ssh access configured."
         - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with ssh access enabled.  On Windows clients, an ssh client might need to be installed."
           isCorrect: true
-          explanation: "ssh is generally the fastest, least resource-intensive, and most flexible way to access the command-line of your DSMV."
-        - content: "By default, remote command-line access isn't enabled in either the Ubuntu or Windows Data Science Virtual Machine."
+          explanation: "ssh is generally the fastest, least resource-intensive, and most flexible way to access the command line of your DSMV."
+        - content: "By default, remote command line access isn't enabled in either the Ubuntu or Windows Data Science Virtual Machine."
           isCorrect: false
-          explanation: "An ssh client can connect to the command-line of the Data Science Virtual Machine quickly and with low overhead. Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with ssh access configured."
+          explanation: "An ssh client can connect to the command line of the Data Science Virtual Machine quickly and with low overhead. Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with ssh access configured."
     - content: "How can one use a graphical desktop with a Data Science Virtual Machine?"
       choices:
         - content: "On Ubuntu, one must use an XFCE client, such as X2Go Client. On Windows, one must use Microsoft Remote Desktop client software."
