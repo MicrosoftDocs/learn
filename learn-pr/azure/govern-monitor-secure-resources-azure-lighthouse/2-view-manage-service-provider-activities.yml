@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.govern-monitor-secure-resources-azure-lighthouse.2-view-manage-service-provider-activities
+metadata:
+  title: View and manage service providers and their activities
+  description: Learn how to view and manage service providers and their activities
+  ms.date: 01/08/2020
+  author: iankensey
+  ms.author: prukulka
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: View and manage service providers and their activities
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-view-manage-service-provider-activities.md)]
+      

@@ -12,7 +12,7 @@ There are many web frameworks created for Node.js that you could use like Hapi, 
 
 In this module, you’ll learn about how to handle HTTP requests with Node.js. You’ll also learn about the Express framework, which enables the building of websites and HTTP APIs.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you’ll be able to:
 

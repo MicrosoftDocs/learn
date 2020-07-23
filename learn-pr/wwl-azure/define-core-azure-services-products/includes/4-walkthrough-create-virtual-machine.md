@@ -60,7 +60,7 @@ In this task, we will connect to our new virtual machine using RDP.
     :::image type="content" source="../media/virtual-machine-properties.png" alt-text="Screenshot of the virtual machine properties with the Connect button highlighted.":::
 
     > [!NOTE]
-    > The following directions tell you how to connect to your virtual machine from a Windows computer. On a Mac, you need an RDP client such as this Remote Desktop Client from the Mac App Store and on a Linux computer you can use an open source RDP client.
+    > The following directions tell you how to connect to your virtual machine from a Windows computer. On a Mac, you need an RDP client such as [this Remote Desktop Client from the Mac App Store](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466) and on a Linux computer you can use an open source RDP client.
 
 2. In the **Connect to virtual machine** page, keep the default options to connect with the public IP address over port 3389 and click **Download RDP File**.
 
