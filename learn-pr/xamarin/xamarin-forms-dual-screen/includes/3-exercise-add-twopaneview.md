@@ -27,7 +27,6 @@ In this exercise, you'll work with an existing list-detail app. The app has a Li
     ```@csharp
     ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation
     | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize
-    | ConfigChanges.UiMode
     ```
 
     This ensures that when your app switches from single- to dual-screen it doesn't destroy and recreate the activity.
@@ -68,10 +67,11 @@ We will use the `FlagView` in this unit below, and the `FlagDetailsPage` later i
 
 ## Add TwoPaneView to AllFlagsPage
 
-1. In the **AllFlagsPage.xaml**, add a new namespace so that you can reference dual-screen controls:
+1. In the **AllFlagsPage.xaml**, add these two namespaces so that you can reference the `FlagView` and also the dual-screen controls:
 
     ```xaml
-    xmlns:dualscreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
+    xmlns:views="clr-namespace:FlagFacts"
+    xmlns:dualScreen="clr-namespace:Xamarin.Forms.DualScreen;assembly=Xamarin.Forms.DualScreen"
     ```
 
 2. Replace the XAML content with the code below. The existing `ListView` is now wrapped in `Pane1` of the `TwoPaneView` control, and the `FlagView` content view is in `Pane2. When the app runs, these two views will appear side-by-side.
