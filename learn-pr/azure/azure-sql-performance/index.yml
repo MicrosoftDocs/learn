@@ -30,7 +30,7 @@ units:
 - learn.azure-sql-performance.1-introduction
 - learn.azure-sql-performance.2-performance-capabilities
 - learn.azure-sql-performance.3-configure-maintain-performance
-- learn.azure-sql-performance.4-monitor-troubleshooting-performance
+- learn.azure-sql-performance.4-monitor-troubleshoot-performance
 - learn.azure-sql-performance.5-exercise-monitor-troubleshoot-performance
 - learn.azure-sql-performance.6-accelerate-tune-performance
 - learn.azure-sql-performance.7-exercise-scale-performance
