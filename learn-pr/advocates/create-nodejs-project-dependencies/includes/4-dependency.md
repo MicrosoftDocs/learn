@@ -69,7 +69,7 @@ We think of dependencies as belonging to one of two different categories:
 
 This separation is not only conceptual. The NPM tool writes to a manifest file by adding entries to it when you download a dependency. The tool allows you to differ between the two types of dependencies by adding a flag to the install command. What this flag does it to place the name of a dependency and its version, in a section called `dependencies` or `devDependencies`. This behavior gives you a clear mental separation of what dependencies you have in your application and what type they are. Regardless of what type of dependency you installed, it still gets stored in the `node_modules` directory but the manifest file is where it differs.  
 
-Additionally this separation of different types of dependencies is built into the NPM command-line tool as well. By specifying the `--production` flag when installing, you ensure that only `devDependencies` are being installed. This flag is used by for example CI/CD pipelines to ensure only the needed parts for the app to run is installed.
+Additionally this separation of different types of dependencies is built into the NPM command-line tool as well. By specifying the `--production` flag when installing, you ensure that only `dependencies` are being installed. This flag is used by for example CI/CD pipelines to ensure only the needed parts for the app to run is installed.
 
 ### How to install a package
 
