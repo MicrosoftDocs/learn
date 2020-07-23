@@ -7,7 +7,7 @@ Instead of manually collecting everything you think might be included, you use t
 > [!NOTE]
 > Remember, you don't need an Azure subscription to work with the TCO Calculator.
 
-Let's say that Tailwind Traders runs two physical servers that each host 50 virtual machines. The first bank of virtual machines runs Windows Server under Hyper-V virtualization. The second bank of virtual machines runs Linux under VMware virtualization. Each physical server has 60 terrabytes (TB) of disk storage. You consume an estimated 15 TB of outbound network bandwidth each month. For brevity, you'll omit details around database usage.
+Let's say that Tailwind Traders run two sets of 50 virtual machines. The first bank of virtual machines runs Windows Server under Hyper-V virtualization. The second bank of virtual machines runs Linux under VMware virtualization. There is also a storage area network (SAN) with 60 terabytes (TB) of disk storage. You consume an estimated 15 TB of outbound network bandwidth each month. For brevity, you'll omit details around database usage.
 
 Recall that the TCO Calculator breaks down into these three steps:
 

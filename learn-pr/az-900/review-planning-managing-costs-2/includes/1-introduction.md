@@ -6,7 +6,7 @@ TODO: In this module, you'll ...
 
 Tailwind Traders is planning their migration to the cloud. They've ran a few successful proof-of-concept projects and want to better understand how to understand and manage their costs before they move their workloads to Azure.
 
-Running in the datacenter requires you to maintain a facility as well as purchase, power, and cool your servers. Running in the cloud presents new ways to think about your IT expenses.
+Running in the datacenter requires you to maintain a facility as well as purchase, power, cool and maintain your servers. Running in the cloud presents new ways to think about your IT expenses.
 
 To answer "how much will it cost?", you need to understand the factors that influence cost as well as what tools are available to you to help estimate and manage your cloud spend.
 
