@@ -59,6 +59,6 @@ In this module, you'll build the app displayed in the above image.
 
 1. You should now see a **Dashboard**, with a few default tiles.
 
-The next time you visit your Azure central home page, select **My apps** in the left-hand menu, and an icon for your  **Refrigerated Trucks** app should appear.
+The next time you visit your Azure IoT Central home page, select **My apps** in the left-hand menu, and an icon for your **Refrigerated Trucks** app should appear.
 
 You've now created the app. The next step is to specify a _device template_.
