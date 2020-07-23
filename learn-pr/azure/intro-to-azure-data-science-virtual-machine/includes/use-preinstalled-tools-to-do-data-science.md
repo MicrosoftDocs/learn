@@ -20,11 +20,11 @@ When RStudio completes startup, enter `demo(graphics)` in the Console window to 
 
 ![Screenshot showing RStudio](../media/rstudio.png)
 
-Because Learn sandboxes the Data Science Virtual Machine you've created in this module, the virtual machine can't access outside resources. Since the Data Science Virtual Machine cannot access the Internet in this context, it cannot download the data files needed for the included Python Jupyter notebook tutorials.
+Because Learn sandboxes the Data Science Virtual Machine you've created in this module, the virtual machine can't access outside resources. Since the Data Science Virtual Machine can't access the Internet in this context, it can't download the data files needed for the included Python Jupyter notebook tutorials.
 
 ## List and activate a Python conda environment
 
-The conda package manager is a popular way to manage Python programming environments. It is the default environment manager used by the Data Science Virtual Machine and the Data Science Virtual Machine comes with several environments preconfigured to work with popular data science and ML packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
+The conda package manager is a popular way to manage Python programming environments. It's the default environment manager used by the Data Science Virtual Machine. The Data Science Virtual Machine comes with several environments configured to work with popular data science and ML packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
 
 To activate the desired conda environment:
 
