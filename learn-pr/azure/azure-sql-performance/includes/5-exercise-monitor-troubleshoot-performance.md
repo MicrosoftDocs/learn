@@ -128,7 +128,7 @@ Now run a workload of the T-SQL query to observe its performance simulating conc
 
 1. Examine the workload query from the script **topcustomersales.sql**.
 
-    This database is not large so the query to retrieve customer and their associated sales information ordered by customers with the most sales shouldn't generate a large result set. It is possible to tune this query by reducing the number of columns from the result set but these are needed for demonstration purposes of this activity.
+    This database is not large so the query to retrieve customer and their associated sales information ordered by customers with the most sales shouldn't generate a large result set. It is possible to tune this query by reducing the number of columns from the result set but these are needed for demonstration purposes of this exercise.
 
     ```sql
     DECLARE @x int
@@ -178,7 +178,7 @@ Now run a workload of the T-SQL query to observe its performance simulating conc
     [datetime] [ostress PID] -S[server].database.windows.net
     [datetime] [ostress PID] -isqlquery.sql
     [datetime] [ostress PID] -U[user]
-    [datetime] [ostress PID] -dAdventureWorks0406
+    [datetime] [ostress PID] -dAdventureWorks
     [datetime] [ostress PID] -P********
     [datetime] [ostress PID] -n10
     [datetime] [ostress PID] -r2
@@ -260,7 +260,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-find-top-queries.png" alt-text="SSMS_QDS_Find_Top_Queries":::
 
-    Select the report to find out what queries have consumed the most avg resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:
+    Select the report to find out what queries have consumed the most average resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:
 
     :::image type="content" source="../media/5-ssms-top-query-report.png" alt-text="SSMS_QDS_Top_Query_Report":::
 

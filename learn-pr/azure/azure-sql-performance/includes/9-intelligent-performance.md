@@ -54,7 +54,7 @@ The Azure Portal also provides a way to directly see any performance recommendat
 
 :::image type="content" source="../media/9-performance-recommendations.png" alt-text="Performance_Recommendations":::
 
-In this view you will see specific recommendations and history of any automatic tuning actions. In the case of an index, details of the index and table are displayed. The option to Automate is to enable Automatic Tuning.
+In this view you will see specific recommendations and history of any automatic tuning actions. In the case of an index, details of the index and table are displayed. The option to **Automate** is to enable Automatic Tuning.
 
 :::image type="content" source="../media/9-automatic-tuning-options.png" alt-text="Automatic_Tuning_Options":::
 

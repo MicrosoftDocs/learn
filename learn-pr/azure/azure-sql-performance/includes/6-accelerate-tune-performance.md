@@ -24,7 +24,7 @@ Having enough memory or workers may be important to your application and SQL dep
 > [!NOTE]
 > Managed Instance in the future may limit workers based on vCores
 
-## Improving application latency
+## Improve application latency
 
 Even if you configure your deployment for all your resource needs, applications may introduce latency performance issues. Be sure to follow these best practices with Azure SQL applications:
 

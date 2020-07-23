@@ -2,7 +2,7 @@ In this exercise you will take the problem you encountered in the first exercise
 
 All scripts for this exercise can be found in the folder *04-Performance\monitor_and_scale* in the GitHub repository or zip file you downloaded.
 
-## Scaling Azure SQL Performance
+## Scale up Azure SQL performance
 
 To scale performance for a problem that appears to be a CPU capacity problem you should decide what your options are and then proceed to scale CPUs using provided interfaces for Azure SQL.
 
@@ -71,7 +71,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
 1. Monitor the progress of service tier changes with T-SQL
 
-    Another way to monitor the progress of a change for the service object for Azure SQL Database is to use the DMV **sys.dm_operation_status**. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change. 
+    Another way to monitor the progress of a change for the service objective for Azure SQL Database is to use the DMV **sys.dm_operation_status**. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change. 
 
     Run this query in SSMS to see the output of this DMV at any point in time (**You must be in the context of the master database**):
 
@@ -122,7 +122,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     When this is done use the queries listed above from **get_service_objective.sql** to verify the new service objective or service tier of 8 vCores has taken affect.
 
-## Run the workload after scaling
+## Run the workload after scale up
 
 Now that the database has more CPU capacity, let's run the workload we did in the previous exercise to observe whether there is a performance improvement.
 

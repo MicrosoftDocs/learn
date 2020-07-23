@@ -22,11 +22,11 @@ For performance, one option that is not available to change is the recovery mode
 
 SQL Server professionals often use files and filegroups to improve I/O performance through physical file placement. Azure SQL does not allow users to place files on specific disk systems. However, Azure SQL has resource commitments for I/O performance with regards to rates, IOPS, and latencies so abstracting the user from physical file placement can be a benefit.
 
-Azure SQL Database only has one database file (Hyperscale many have several) and the size is configured through Azure interfaces. There is no functionality to create additional files.
+Azure SQL Database only has one database file (Hyperscale typically has several) and the size is configured through Azure interfaces. There is no functionality to create additional files.
 
 Azure SQL Managed Instance supports adding database files and configuring sizes but not physical placement of files. The number of files and file sizes for Azure SQL Managed Instance can be used to improve I/O performance. In addition, user defined filegroups are supported for Azure SQL Managed Instance for manageability purposes.
 
-## Configuring MAXDOP
+## MAXDOP configuration
 
 Max degree of parallelism (MAXDOP), which can affect the performance of individual queries, works exactly the same in the engine for Azure SQL as SQL Server. The ability to configure MAXDOP may be important to delivering consistent performance in Azure SQL. You can configure MAXDOP in Azure SQL similar to SQL Server using the following techniques:
 
@@ -39,11 +39,11 @@ Max degree of parallelism (MAXDOP), which can affect the performance of individu
 
 Resource Governor is a feature in SQL Server that can be used to control resource usage for workloads through I/O, CPU, and memory. While Resource Governor is used behind the scenes for Azure SQL Database, Resource Governor is only supported for Azure SQL Managed Instance for user defined workload groups and pools.
 
-## Maintaining indexes
+## Index maintenance
 
 Index creation and maintenance for Azure SQL is exactly the same as SQL Server. For example, creating, rebuilding and reorganization of indexes is fully supported as with SQL Server. This includes online and resumable indexes.
 
-## Maintaining statistics
+## Statistic maintenance
 
 Statistics are the same for Azure SQL as with SQL Server. Automatic statistics options for databases are available for Azure SQL just like SQL Server.
 

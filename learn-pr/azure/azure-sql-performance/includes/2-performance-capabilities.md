@@ -4,7 +4,7 @@ Since Azure SQL Database and Managed Instance are based on the SQL Server databa
 
 ## Memory, CPU, and I/O capacities
 
-Choosing the right deployment and service tier for Azure SQL Database or Managed Instance can be important for performance. In second Module you learned about the various deployment options for Azure SQL. Consider these important maximum capacities as part of your deployment:
+Choosing the right deployment and service tier for Azure SQL Database or Managed Instance can be important for performance. In the second Module you learned about the various deployment options for Azure SQL. Consider these important maximum capacities as part of your deployment:
 
 - Azure SQL Database can support up to 128 vCores, 4TB Memory, and a 4TB Database size.
 - The Hyperscale deployment option supports up to 100TB databases.

@@ -20,7 +20,7 @@ Azure SQL provides the same Extended Events infrastructure as with SQL Server wi
 
 Lightweight Query Profiling is a capability to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems vs using tools like Extended Events to trace query performance. Lightweight Query Profiling is accessed through DMVs and is on by default for Azure SQL just like SQL Server 2019.
 
-### Query Plan Debugging
+### Query Plan debug capabilities
 
 In some situations, you may need additional details about query performance for an individual T-SQL statement. T-SQL SET statements such as SHOWPLAN and STATISTICS can provide these details and are fully supported for Azure SQL as they are for SQL Server.
 
@@ -46,7 +46,7 @@ One DMV is specific to Azure called **sys.server_resource_stats** and shows hist
 
 Most of the common DMVs you need for performance including **sys.dm_exec_requests** and **sys.dm_os_wait_stats** are available. It is important to know that these DMVs only provide information specific to the database and not across all databases for a logical server.
 
-**sys.dm_db_resource_stats**  is a DMV specific to Azure SQL Database and can be used to view a history of resource usage for the database. Use this DMV similar to how you would use sys.server_resource_stats for a Managed Instance.
+**sys.dm_db_resource_stats** is a DMV specific to Azure SQL Database and can be used to view a history of resource usage for the database. Use this DMV similar to how you would use sys.server_resource_stats for a Managed Instance.
 
 **sys.elastic_pool_resource_stats** is similar to sys.dm_db_resource_stats but can be used to view resource usage for elastic pool databases.
 
@@ -59,7 +59,7 @@ There are a few DMVs worth calling out you will need to solve certain performanc
 - **sys.dm_instance_resource_governance** can be used to view resource limits for a Managed Instance. You can view this information to see what your expected resource limits should be without using the Azure portal.
 - **sys.dm_user_db_resource_governance** can be used to see common resource limits per the deployment option, service tier, and size for your Azure SQL Database deployment. You can view this information to see what your expected resource limits should be without using the Azure portal.
 
-### DMVs for deep troubleshooting
+### DMVs for deeper insights
 
 These DMVs provide deeper insight into resource limits and resource governance for Azure SQL. They are not meant to be used for common scenarios but might be helpful when looking deep into complex performance problems. Consult the documentation for all the details of these DMVs:
 
@@ -90,7 +90,7 @@ It is important to know that any extended events fired for your sessions are spe
 
 Extended Events can be used for Azure SQL Managed Instance just like SQL Server by creating sessions and using events, actions, and targets. Keep these important points in mind when creating extended event sessions:
 
-- All events, targets, and actions are supported
+- All events, targets, and actions are supported.
 - File targets are supported with Azure Blob Storage since you don't have access to the underlying operating system disks.
 - Some specific events are added for Managed Instance to trace events specific to the management and execution of the instance.
 
@@ -104,9 +104,9 @@ In order to decide how to apply monitoring and troubleshooting performance tools
 
 A common technique for SQL Server performance troubleshooting is to examine if a performance problem is **Running** (high CPU) or **Waiting** (waiting on a resource). This is a way to "divide and conquer" a performance problem for SQL which can often be vague (i.e. "it is slow").
 
-The following diagram shows a common decision tree to determine if a SQL performance issue is running or waiting and how to use common performance tools to determine the cause and solution.
+The following diagram shows a decision tree to determine if a SQL performance issue is running or waiting and how to use performance tools to determine the cause and solution.
 
-:::image type="content" source="../media/4-running-vs-waiting.svg" alt-text="runningvswaiting" border="false":::
+:::image type="content" source="../media/4-running-vs-waiting.png" alt-text="runningvswaiting" border="false":::
 
 Let's dive more into the details of each aspect of the diagram.
 
@@ -211,10 +211,10 @@ If you use a Business Critical (BC) service tier you may *unexpectedly* see the 
 - HADR_DATABASE_FLOW_CONTROL
 - HADR_THROTTLE_LOG_RATE_SEND_RECV
 
-Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). (BC) tiers use AG technology behind the scenes to implement SLA and availability features of a BC service tier.
+Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). (BC) tiers use AG technology behind the scenes to implement SLA and availability features of a BC service tier so these wait types are expected (long wait times though may indicate a bottleneck).
 
 #### Hyperscale
 
-The Hyperscale architecture can result in some unique performance wait types that are prefixed with **RBIO**. In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
+The Hyperscale architecture can result in some unique wait types that are prefixed with **RBIO**. In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
 
 You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL using the tools and knowledge you have gained in this unit.

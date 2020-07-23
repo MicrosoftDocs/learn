@@ -1,6 +1,6 @@
 You will now go through an exercise to observe a new performance scenario and resolve it by optimizing the application and queries.
 
-## Optimizing application performance with Azure SQL
+## Optimize application performance with Azure SQL
 
 In some cases, migrating an existing application and SQL query workload to Azure may uncover opportunities to optimize and tune queries.
 
@@ -70,7 +70,7 @@ Edit the workload script **order_rating_insert_single.cmd**
 
 ## Run the workload
 
-Run the workload using the script **order_rating_insert_single.cmd**. This script uses the ostress.exe program  to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
+Run the workload using the script **order_rating_insert_single.cmd**. This script uses the ostress.exe program to run 25 concurrent users running the following T-SQL statement (in the script **order_rating_insert_single.sql**):
 
 ```sql
 DECLARE @x int;
@@ -110,7 +110,7 @@ Use these queries you can observe the following:
 
 - Many requests constantly have a wait_type of WRITELOG with a value > 0
 - The WRITELOG wait type is one of the highest count for wait types.
-- The avg time to write to the transaction log is somewhere around 2ms.
+- The average time to write to the transaction log is somewhere around 2ms.
 
 The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core is around ~25 seconds.
 
@@ -118,7 +118,7 @@ WRITELOG wait types with higher wait times are indicative of latency flushing to
 
 ## Decide on a resolution
 
-The problem is not a high % of log write activity. The Azure Portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25% (this is information only. There is not a need to query these). The problem is not an IOPS limit as well. The issue is that this application workload is sensitive to low latency for transaction log writes and the General Purpose tier is not designed for this type of latency requirements. In fact, the documentation for Azure SQL Database says the resource limits for I/O latency is between 5-7ms.
+The problem is not a high percentage of log write activity. The Azure Portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25% (this is information only. There is not a need to query these). The problem is not an IOPS limit as well. The issue is that this application workload is sensitive to low latency for transaction log writes and the General Purpose tier is not designed for this type of latency requirements. In fact, the documentation for Azure SQL Database says the resource limits for I/O latency is between 5-7ms.
 
 > [!NOTE]
 > General Purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads) so you may experience latencies more like these numbers. Managed Instance General Purpose latencies are similar. If your application is very sensitive to I/O latencies you could consider Business Critical Tiers.
@@ -159,6 +159,6 @@ Make edits to scripts and execute them to see a more efficient I/O performance.
 The concept of "batching" can help most applications including those connected to Azure SQL.
 
 > [!TIP]
-> Very large transactions can be affected by resource governance on Azure and the symptoms will be LOG_RATE_GOVERNOR. In this example, the char(500) not null column pads spaces and causes large tlog records. Performance can even be more optimized by making that column a variable length column.
+> Very large transactions can be affected by resource governance on Azure and the symptoms will be LOG_RATE_GOVERNOR. In this example, the char(500) not null column pads spaces and causes large transaction log records. Performance can even be more optimized by making that column a variable length column.
 
 In the next unit you will learn about the amazing capabilities of Intelligent Performance in Azure SQL which can help you go even farther with performance for Azure SQL.
