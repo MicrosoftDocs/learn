@@ -5,29 +5,26 @@ what kind of resources do we need in order tu run our algorithms.
 
 ## An example of interference with Q#
 
-In a previous unit we saw how if we superpose the states $\ket{\psi_1}=
+In unit 3, when putting the states $\ket{\psi_1}=
 \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$ and $\ket{\psi_2}=
-\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ the probability amplitudes of
-$\ket{1}$ vanish and for $\ket{0}$ double.
+\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ in a superposition, the probability amplitude of
+$\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
 
-How can we see this effect with Q#? Well, we can implement it with the help of
-the `H` operation. We already know that $\hat H \ket{0} = \ket{\psi_1}$, we used
-it for the quantum random bit generator. But what happens if we apply $\hat H$
-to the state $\ket{1}$? What happens is that we obtain $\ket{\psi_2}$. In fact,
-this is how we define the `H` operation.
+To see this effect in Q#, we can implement it with the help of
+the `H` operation. We already know that $\hat H \ket{0} = \ket{\psi_1}$, which we used for the quantum random bit generator. But if we apply $\hat H$
+to the state $\ket{1}$, we obtain $\ket{\psi_2}$. 
 
-Let's see what happens if we apply `H` twice to the state $\ket{0}$:
+If we then apply `H` twice to the state $\ket{0}$:
 
-$$\hat H \hat H \ket{0}= \hat H \frac1{\sqrt2}(\ket{0}+\ket{1})$$
+$$\hat H \hat H \ket{0}= \hat H \frac1{\sqrt2}(\ket{0}+\ket{1})$$.
 
 Since $\hat H$ is a linear operator:
 
 $$=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
-\frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2})$$ 
+\frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2})$$.
 
 Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as superposing
-the states $\psi_1$ and $\psi_2$. We know how to code that with Q#, so let's if
-interference takes place.
+the states $\psi_1$ and $\psi_2$. We know how to code that with Q#.
 
 The code would be:
 
@@ -86,14 +83,13 @@ We can see that it behaves just as we expected.
 
 ## Exploring the relative phase with Q#
 
-If you paid attention you would have noticed that `DumpMachine` also give us
-information about the phases of each amplitude. However, so far we have been
+You may have noticed that `DumpMachine` also give us
+information about the phase of each amplitude. However, so far we have
 only seen amplitudes with zero phase. Let's see how it looks like when a state
 has amplitudes with non-zero phases.
 
 We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
-$\ket{1}$, so let's see what it outputs `DumpMachine` if we put the register
-into the state $\ket{\psi_2}$. To do it we just need to first transform
+$\ket{1}$. Let's observe it using `DumpMachine`. We should first transform
 $\ket{0}$ into $\ket{1}$ with help of the `[X]`(todo) operation, and then apply
 `H` to obtain $\ket{1}.$ 
 
@@ -180,9 +176,9 @@ transform a register in the state $\ket{00}$ to the entangled state
 $\frac1{\sqrt2}(\ket{00}+\ket{11})$. Let's see how:
 
 $$CNOT(\hat H\ket{0}),\ket{0})=CNOT(\frac1{\sqrt2}(\ket{0}+\ket{1}),\ket{0})=
-\frac1{\sqrt2}(CNOT(\ket{0},\ket{0})+CNOT(\ket{1},\ket{0}))=\frac1{\sqrt2}(\ket{00}+\ket{11})$$
+\frac1{\sqrt2}(CNOT(\ket{0},\ket{0})+CNOT(\ket{1},\ket{0}))=\frac1{\sqrt2}(\ket{00}+\ket{11})$$.
 
-Were we used the linear properties of $CNOT$.
+
 
 The code in Q# would be:
 
@@ -234,7 +230,7 @@ Entangled state after measurement:
 
 In Q# you can use the `Controlled` functor to transform any operation to a
 controlled operation. For example, the operation `CNOT(control, target)` can
-also be expressed `Controlled X([control], target)`. In general, you can put any
+also be expressed as `Controlled X([control], target)`. In general, you can put any
 operation in the place of `X`. For example, `Controlled Y([control], target)`
 applies the `Y` gate conditioned on the state of the control qubit.
 
@@ -250,8 +246,7 @@ without actually simulating the state of a quantum computer. For this reason, it
 can estimate resources for Q# operations that use thousands of qubits, if the
 classical part of the code can be run in a reasonable time.
 
-To use it you just need to run the Q# application on a different simulator. To
-do it you should write in the command line:
+To use a Resources Estimator, write in the command line:
 
 ```dotnetcli
 dotnet run --simulator ResourcesEstimator

@@ -67,12 +67,7 @@ classical algorithms.
 
 ## Quantum entanglement
 
-So far, we have been exploring quantum superposition and interference. However,
-those two properties alone aren't exclusive of quantum mechanics. There are many
-wave-like phenomena in the nature that could be harnessed to exploit wave
-dynamics to perform computations. In this section we will introduce the concept
-of quantum entanglement, a truly new property of quantum systems that enables
-the power of quantum computing.
+Another effect that superposition enables is quantum entanglement. In this unit, we will explore this effect, which proves to be a powerful tool in quantum computing.
 
 ### Correlations between qubits
 
@@ -80,18 +75,13 @@ We already have seen superpositions involving several qubits in which each of
 the possible outcomes has associated a probability amplitude. These probability
 amplitudes are represented by complex numbers.
 
-Let's suppose now that we have a register with only two qubits. The possible
-outcomes are four:
+Suppose we have a register with only two qubits. There are four possible states:
 
-$$\ket{00}, \ket{01}, \ket{10}, \ket{11}$$
+$$\ket{00}, \ket{01}, \ket{10}, \ket{11}$$.
 
-Then, a possible superposition would be:
+It is possible to put two of these options into a superposition:
 
-$$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}$$
-
-This apparently innocent state is the main ingredient of many of the most
-striking processes of quantum computing and quantum information. Let's
-understand why.
+$$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}$$.
 
 In such state, we can obtain only two different outcomes, **00** and **11**,
 each of them with a probability of $\frac12$. The outcomes **01** and **10**
@@ -108,14 +98,12 @@ proven to be stronger than could ever exists between classical bits.
 
 ### Entangled states are difficult to simulate
 
-Entanglement is something that happens in nature, not only in quantum computers.
-Atoms in molecules or compounds obeying the laws of quantum physics also get
-entangled. From this entanglement many physical properties of interest array.
+Entanglement is a phenomenon that happens in nature, not only in quantum computers.
+Quantum mechanical objects, such as atoms, electrons and photons, can all involve in entanglement. 
 
-We would like to simulate these physical systems to learn and predict new
-properties in fields like drug development, industrial chemical processes, and
-many others. However, simulating entanglement is hard for classical
-systems.
+We would like to simulate these physical systems to learn and design material properties for drug development, industrial chemical processes, and
+many others. Simulating entanglement would be difficult for classical
+systems. But because quantum computers intrinsically is built on superposition, this becomes an achievable task.
 
 Suppose we have a molecule with $n$ different atoms that can become entangled.
 The state of the system would be described by a superposition of states of the
