@@ -26,4 +26,4 @@ twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.LeftRight;
 
 You can also use the minimum width or height properties to control how the two panes are displayed.
 
-When both panes are visible your application code should manage the navigation between the panes (versus using the navigation stack on smaller screens).
+When both panes are visible your application code should manage the communication between the panes (versus using the navigation stack on smaller screens).
