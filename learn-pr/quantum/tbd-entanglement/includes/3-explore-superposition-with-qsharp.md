@@ -274,7 +274,7 @@ namespace katas {
 
     @EntryPoint()
     operation GenerateUniformState() : Int {
-        using (qubits = Qubit[3]){       
+        using (qubits = Qubit[3]){
         ApplyToEach(H,qubits);
         Message("The qubit register in a uniform superposition: ");
         DumpMachine();
@@ -343,6 +343,72 @@ The qubit register in a uniform superposition:
 Your random number is:
 5
 ```
-We can see how each consecutive measurement alters the quantum state, and therefore the probabilities of obtaining each outcome. For example, in the first measurement the result was `One`. Therefore, all the amplitudes of the states whose leftmost qubit is `Zero` get vanished, i.e. $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$ and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the normalization condition.
 
-In the next unit we are going to explore two important concepts of quantum computing: phase and interference.
+We can see how each consecutive measurement alters the quantum state, and
+therefore the probabilities of obtaining each outcome. Let's comment briefly on
+each step:
+
+1. **State preparation:** after applying `H` to each qubit of the register we obtain
+  a uniform superposition.
+
+    ```qsharp 
+    The qubit register in a uniform superposition: 
+    # wave function for qubits with ids (least to most significant): 0;1;2
+    |0?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    |1?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    |2?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    |3?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    |4?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    |5?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    |6?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    |7?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
+    ```
+
+1. **First measurement:** in the first measurement the result was `One`. Therefore, all the amplitudes of the states whose rightmost qubit is `Zero` get vanished, i.e. $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$ and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the normalization condition.
+    ```qsharp
+    # wave function for qubits with ids (least to most significant): 0;1;2
+    |0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |1?:     0,500000 +  0,000000 i  ==     *****                [ 0,250000 ]     --- [  0,00000 rad ]
+    |2?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |3?:     0,500000 +  0,000000 i  ==     *****                [ 0,250000 ]     --- [  0,00000 rad ]
+    |4?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |5?:     0,500000 +  0,000000 i  ==     *****                [ 0,250000 ]     --- [  0,00000 rad ]
+    |6?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |7?:     0,500000 +  0,000000 i  ==     *****                [ 0,250000 ]     --- [  0,00000 rad ]
+    ```
+1. **Second measurement:** in the second measurement the result was `Zero`, so
+   all the amplitudes of the states whose second rightmost (middle) qubit is `One` get
+   vanished, i.e. $\ket{3}=\ket{011} and $\ket{7}=\ket{111}$. The rest of the amplitudes increase to fulfill the normalization condition.
+    ```qsharp
+    # wave function for qubits with ids (least to most significant): 0;1;2
+    |0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |1?:     0,707107 +  0,000000 i  ==     **********           [ 0,500000 ]     --- [  0,00000 rad ]
+    |2?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |3?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |4?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |5?:     0,707107 +  0,000000 i  ==     **********           [ 0,500000 ]     --- [  0,00000 rad ]
+    |6?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |7?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    ```
+1. **Third measurement:** in the third measurement the result was `One`, so
+   all the amplitudes of the states whose leftmost qubit is `Zero` get
+   vanished. The only compatible state is $\ket{5}=\ket{101}$, that get's an
+   amplitude probability of $1$.
+
+    ```qsharp
+    # wave function for qubits with ids (least to most significant): 0;1;2
+    |0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |1?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |2?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |3?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |4?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |5?:     1,000000 +  0,000000 i  ==     ******************** [ 1,000000 ]     --- [  0,00000 rad ]
+    |6?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    |7?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+    
+    Your random number is:
+    5
+    ```
+
+In the next unit we are going to explore two important concepts of quantum
+computing: interference and entanglement.
