@@ -107,18 +107,16 @@ It is possible to put two of these options into a superposition:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}$$.
 
-In such state, we can obtain only two different outcomes, **00** and **11**,
-each of them with a probability of $\frac12$. The outcomes **01** and **10**
-have zero probability amplitude, and therefore we can't observe them if the
-register is in this superposition. Then the second qubit always gives the same
-result as the measurement of the first qubit. This means that by measuring one
-qubit we immediately know the state of the other without having to measure it.
+In such a state, only two outcomes are possible: **00** and **11**,
+each with a probability of $\frac12$. There is zero probability of obtaining **01** and **10**. If we measure the first qubit to be **0**, we would know the second qubit would be **1** as well, without even having to measure it. 
 We say that the measurement outcomes are correlated and the qubits are
-**entangled**.
+**entangled**. 
 
-It is possible to manipulate these states with different operations so that
-advantageous correlations still exist between both qubits. This correlations are
-proven to be stronger than could ever exists between classical bits.
+Similarly, we can set up a superposition state
+
+$$\ket{\psi}=\frac1{\sqrt2}\ket{01}+\frac1{\sqrt2}\ket{10}$$.
+
+In this case, only **01** and **10** are possible outcomes. Again we would know by measuring one of the qubits, what the result of the other one would be. This correlation can be very useful in algorithms.
 
 ### Entangled states are difficult to simulate
 

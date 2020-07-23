@@ -1,7 +1,6 @@
-In this unit we are going to explore quantum interfernce with Q# and see how we
+In this unit we are going to explore quantum interference with Q# and see how we
 can create quantum entanglement with Q#. We will also present the tool
-`ResourcesEstimator` of the Quantum Development Kit, that will help us to know
-what kind of resources do we need in order tu run our algorithms.
+`ResourcesEstimator` in the Quantum Development Kit, that will help us to estimate the kind of resources we need to run our algorithms.
 
 ## An example of interference with Q#
 
