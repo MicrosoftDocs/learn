@@ -1,6 +1,6 @@
 ## Activate the Learn sandbox
 
-Use the above button to activate the Learn Sandbox. The activation will create an Azure Resource Group, a container for resources relating to a single project domain. This resource group will be available for an hour and will allow you to create a Data Science Virtual Machine, connect to it, and run programs.
+Use the above button to activate the Learn Sandbox. The activation will create an Azure Resource Group, a container for resources relating to a single project domain. This resource group will be available for an hour. You will use the resource group to create a Data Science Virtual Machine, connect to it, and run programs.
 
 ## Creating a Data Science Virtual Machine
 
