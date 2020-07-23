@@ -16,21 +16,21 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "The DualScreenInfo `PropertyChanged` event will be called when:"
+  - content: "The DualScreenInfo PropertyChanged event will be called when:"
     choices:
-    - content: "The application is spanned or un-spanned."
+    - content: "The application is spanned or unspanned."
       isCorrect: false
-      explanation: "`PropertyChanged` is called for more than one type of change."
+      explanation: "PropertyChanged is called for more than one type of change."
     - content: "The device is folded so that only one screen is visible."
       isCorrect: false
-      explanation: "`PropertyChanged` is called for more than one type of change."
+      explanation: "PropertyChanged is called for more than one type of change."
     - content: "The device is rotated."
       isCorrect: false
-      explanation: "`PropertyChanged` is called for more than one type of change."
+      explanation: "PropertyChanged is called for more than one type of change."
     - content: "All of the above."
       isCorrect: true
-      explanation: "`PropertyChanged` is called for all these actions."
-  - content: "TwoPaneView is the only way to show content side-by-side on a dual-screen device."
+      explanation: "PropertyChanged is called for all these actions."
+  - content: "TwoPaneView is the only way to show content side by side on a dual-screen device."
     choices:
     - content: "True - TwoPaneView should be the root view in all your content pages to work on a dual-screen device."
       isCorrect: false
