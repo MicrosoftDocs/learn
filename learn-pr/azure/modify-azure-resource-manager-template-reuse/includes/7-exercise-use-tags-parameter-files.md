@@ -164,13 +164,13 @@ In this section, you deploy the ARM template, specifying which parameter file to
 
     :::image type="content" source="../media/7-new-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Learn tags." border="true":::
 
-1. As a challenge, create a parameter file for the *Production* environment and change the parameter file path when you run the command to deploy to the *Production* environment.
+1. As a challenge, create a parameter file for the production environment. Change the parameter file path when you run the command to deploy to the production environment.
 
 ::: zone-end
 
 ::: zone pivot="powershell"
 
-1. In the Visual Studio Code terminal, run the following Azure PowerShell commands.
+1. In the Visual Studio Code terminal, run these Azure PowerShell commands:
 
     ```azurepowershell
     $templateFile = "azuredeploy.json"
@@ -183,10 +183,10 @@ In this section, you deploy the ARM template, specifying which parameter file to
       -TemplateParameterFile $parameterFile
     ```
 
-1. Check Azure to see that the deployment was successful and that the tag value changed.
+1. Check Azure to ensure that the deployment was successful and that the tag value changed:
 
-    :::image type="content" source="../media/7-new-tags.png" alt-text="Azure portal interface for the Storage Account showing tags of Environment:Dev and Project:Learn." border="true":::
+    :::image type="content" source="../media/7-new-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Learn tags." border="true":::
 
-1. As a challenge, create a parameter file for the *Production* environment and change the parameter file path when you run the command to deploy to the *Production* environment.
+1. As a challenge, create a parameter file for the production environment. Change the parameter file path when you run the command to deploy to the production environment.
 
 ::: zone-end
