@@ -16,8 +16,8 @@ before the discovery of quantum mechanics. They provide intuition to understand 
 But, what is wave interference? Waves are governed by a linear equation
 (remember, waves and quantum states are mathematically the same thing). This
 implies that waves can be superposed, just like we discussed for quantum states
-in the previous units. However, the superposition of different waves can have different
-effects on the amplitude of the resulting superposition.
+in the previous units. Superposition of different waves enables their amplitudes to interfere, resulting in different
+effects on the overall state.
 
 Some waves, when superposed, form a wave of a greater amplitude. This is known as **constructive interference**: two waves are added to increase the amplitude of the resulting wave. For example, when two waves meet in a pool and the height of the resulting wave increases.
 
@@ -43,27 +43,26 @@ A single complex number can store the amplitude and the phase of a given quantum
 
 ## Interference in quantum computing
 
-You might be confused now. What do waves have to do with qubits? Do you need to know wave mechanics to program quantum algorithms? Let's explore it. But we advance you that you DON'T need to know wave mechanics to use quantum computers! Is much more intuitive than you think.
+Qubit states have the same mathematics as waves.
 
 We used the following superposition to create the quantum random number generator:
 
-$$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$$
+$$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$$.
 
-And we used that state because the probabilities of measuring **0** and **1** where both $\frac12$ (remember that these probabilities were obtained squaring the probability amplitude of each state in the superposition). But we could very well have used the following state:
+In this case, the probabilities of measuring **0** and **1** are both $\frac12$ (remember each amplitude squared gives the probability of obtaining each state). The following state is probabilistically equivalent:
 
-$$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$$
+$$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$$.
 
-Notice the minus sign. We can check that for $\ket{\psi_2}$ the probabilities of measuring **0** and **1** are also $\frac12$, since $\left|-\frac1{\sqrt2}\right|^2=\frac12$. Then, what is the meaningful difference between $\ket{\psi_1}$ and $\ket{\psi_2}$? The difference is the relative phase between the states in each superposition.
+Notice the minus sign, which makes the relative phase between the $\ket{0}$ and $\ket{1}$ states different.
 
-This difference of phase has implications when we superpose these states. Let's superpose $\ket{\psi_1}$ and $\ket{\psi_2}$ to see what happens.
+If we then put $\ket{\psi_1}$ and $\ket{\psi_2}$ in superposition:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{\psi_1}+\frac1{\sqrt2}\ket{\psi_2}= \frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}\right)+\frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}\right)$$
-$$= \frac12 \left(\ket{0}+\ket{0}\right)+ \frac12\left(\ket{1}-\ket{1}\right)= \ket{0}$$
+$$= \frac12 \left(\ket{0}+\ket{0}\right)+ \frac12\left(\ket{1}-\ket{1}\right)= \ket{0}$$.
 
-What did happen here? The amplitudes of $\ket{0}$ had the same phase and like waves, constructively interfered doubling the probability of obtaining **0**. On the other hand, the amplitudes of $\ket{1}$ had different phase and destructively interfered, vanishing the probability of obtaining **1**.
+The amplitudes of $\ket{0}$ had the same phase. Like waves, they constructively interfered doubling the probability of obtaining **0**. On the other hand, the amplitudes of $\ket{1}$ had the opposite phase and destructively interfered, eliminating the probability of obtaining **1**.
 
-This kind of quantum interference is one of the basic principles behind the power of quantum computing. Our objective will
-be to harness quantum interference to perform computations much faster than with
+Interference is one of the basic principles behind the power of quantum computing. Quantum interference can be harnessed to perform computations to bring advantage over
 classical algorithms.
 
 ## Quantum entanglement
