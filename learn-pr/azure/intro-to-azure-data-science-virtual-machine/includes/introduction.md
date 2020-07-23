@@ -23,7 +23,7 @@ In this module, you'll:
 
 * Match operating systems and hardware resources available for the Data Science Virtual Machine
 * Specify and create a Data Science Virtual Machine running Ubuntu Server 18.04 LTS
-* Connect to the command-line of the Data Science Virtual Machine with SSH 
+* Connect to the command line of the Data Science Virtual Machine with SSH 
 * Connect to the graphical Desktop of the Data Science Virtual Machine with X2Go Client 
 * Demonstrate the use of RStudio running inside the Data Science Virtual Machine
 * List custom Python environments, activate one, and run Jupyter notebook server

@@ -52,7 +52,7 @@ quiz:
         - content: "From when you start the Data Science Virtual Machine to when you stop it"
           isCorrect: true
           explanation: "Charges are based on machine uptime. You can configure a daily shutdown to catch mistakes"
-        - content: "From when you logon to the Data Science Virtual Machine until you logoff"
+        - content: "From when you sign in to the Data Science Virtual Machine until you sign off"
           isCorrect: false
           explanation: "Charges are based on machine uptime, not user activity. You can configure a daily shutdown to catch mistakes"
         - content: "For the time that any process on the Data Science Virtual Machine is running under your account"
