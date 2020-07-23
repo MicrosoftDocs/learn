@@ -6,7 +6,7 @@ Now for the best fun of all.
 
 1. Click the **Commands** title for the device. This control should be under the truck name, and right of the **Truck view** control.
 
-1. Enter a customer Id, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
+1. Enter a customer ID, say "1" ("0" through "9" are valid customer IDs), and click **Run**.
 
 1. In the console for the device app, you should see both a **New customer** event, and a **Route found** message.
 

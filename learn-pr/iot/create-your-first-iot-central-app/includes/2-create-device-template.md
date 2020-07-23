@@ -226,6 +226,6 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
 1. Click **Publish**. You should see that the annotation changes from **Draft** to **Published**.
 
-Preparing a device template does take some carey, and some time.
+Preparing a device template does take some care, and some time.
 
 In the next unit, you use the capabilities of the device template to prepare a controller's dashboard. Preparing views can be done before, or after, a device template is published.
