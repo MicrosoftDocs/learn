@@ -173,10 +173,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     ```powershell
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
-    $database_name = "AdventureWorks"
     $server = Get-AzureRmSqlServer -ResourceGroupName $resourceGroup.ResourceGroupName
-    $database_name_copy = "$($database_name)-copy"
-    $database_name_old = "$($database_name)-old"
     $logical_server = $server.ServerName
     $resource_group = $resourceGroup.ResourceGroupName
 
@@ -235,7 +232,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     ```powershell
     # Restore the database to the time before the database was deleted
-    az sql db restore --dest-name $database_name_copy --name $database_name --time $before_error_time --verbose
+    az sql db restore --dest-name "AdventureWorks-copy" --name "AdventureWorks" --time $before_error_time --verbose
     ```
 
     The restore will take about 5-10 minutes. When you run a restore, Azure deploys a new Azure SQL Database in your Azure SQL Database logical server that has all the same configuration options as the original. After it's deployed, it will then restore the database into that new Azure SQL Database.  
@@ -271,19 +268,19 @@ In this exercise, you'll follow the steps that go along with the process above.
     If at any point your database appears unavailable (e.g. you can't connect to the databases in SSMS if you refresh the connection), it could be due to updates happening to the DNS table. So while the database isn't physically unavailable, it is unresolvable. If you wait a minute or so, you should be able to resume normal activities.  
 
     ```powershell
-    az sql db rename --name $database_name --new-name $database_name_old
+    az sql db rename --name "AdventureWorks" --new-name "AdventureWorks-old"
     ```
 
 1. Now that the original database name is no longer taken, you can rename the copy database to that of the original, again using the Azure Cloud Shell.  
 
     ```powershell
-    az sql db rename --name $database_name_copy --new-name $database_name
+    az sql db rename --name "AdventureWorks-copy" --new-name "AdventureWorks"
     ```
 
 1. Finally, you have no need for the old database, so you can delete it with `az sql db delete`.
 
     ```powershell
-    az sql db delete --name $database_name_old --yes
+    az sql db delete --name "AdventureWorks-old" --yes
     Write-Host "Database deleted"
     ```
 
