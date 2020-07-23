@@ -30,6 +30,8 @@ In this exercise, you'll work with an existing list-detail app. The app has a Li
     | ConfigChanges.UiMode
     ```
 
+    This ensures that when your app switches from single- to dual-screen it doesn't destroy and recreate the activity.
+
 Now that the project is configured for dual-screen support, you will refactor the code to support two screens.
 
 ## Extract controls from FlagDetailsPage
