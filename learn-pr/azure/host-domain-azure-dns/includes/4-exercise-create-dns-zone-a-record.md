@@ -26,7 +26,7 @@ To create your DNS zone:
    |---------|---------|
    |Subscription     |  Concierge subscription       |
    |Resource group    |   <rgn>[sandbox resource group name]</rgn>      |
-   |Name   |   The name needs to be unique in the sandbox. So use wideworldimportsXXXX.com where you replace the Xs with letters or numbers. |
+   |Name   |   The name needs to be unique in the sandbox. So use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
 1. Select **Review + create**.
 1. Select **Create**. It will take a few minutes to create the DNS zone.
