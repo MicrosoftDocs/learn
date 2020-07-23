@@ -18,7 +18,7 @@ First, you create a parameter to use as a resource tag in your template.
         }
     ```
 
-1. Change `parameter1` to **resourceTags** and change the value of ```"type":``` to **object**. Remember that parameters have be string, secureString, int, bool, object, secureObject, and array data types. A link to example syntax for these parameter types is in the summary of this module.
+1. Change `parameter1` to **resourceTags** and change the value of ```"type":``` to **object**. Remember that parameters can have string, secureString, int, bool, object, secureObject, and array data types. A link to example syntax for these parameter types is in the summary of this module.
 1. Add an attribute called **defaultValue:** and set the value to **{"Environment": "Dev", "Project": "Tutorial"}**.
 
    The parameter block should look like this code:

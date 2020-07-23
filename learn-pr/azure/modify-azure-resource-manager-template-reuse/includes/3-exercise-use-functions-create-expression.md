@@ -3,7 +3,7 @@
 
 In this exercise, you create an expression by using Azure Resource Manager (ARM) template functions. The expression creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. It results in Azure Storage account names like `dev2hu6sbtr5` and `staging5his8hgr67`.
 
-This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+In this exercise, you'll use the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Create the ARM template file
 
@@ -23,7 +23,7 @@ Instead of passing in the name of the Storage account, you'll change the paramet
 
 1. In the `parameters` section, change ```storageName``` to **storagePrefix**.
 
-1. Change value of the ```maxLength:``` attribute of the `storagePrefix` parameter to **11**. The maximum length for a storage account name is 24 characters, so you want to be sure the added hash from the function you create doesn't cause the name to be longer than 24 characters.
+1. Change value of the ```maxLength:``` attribute of the `storagePrefix` parameter to **11**. The maximum length for a storage account name is 24 characters. So you want to be sure the added hash from the function you create doesn't cause the name to be longer than that.
 
 1. Create the expression to set the unique Storage account name. In the `resources` section, change the values of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. You learned about this expression in the previous unit. The file should now look like this file:
 
@@ -33,7 +33,7 @@ Instead of passing in the name of the Storage account, you'll change the paramet
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed and that you're signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed. Also, be sure you're signing in to the same account that activated the sandbox.
 
 1. Open a terminal window by using the **Terminal** menu.
 1. If the drop-down menu on the right side of the terminal window says **bash**, you have the right shell to work from. You can skip to the next section.
@@ -147,7 +147,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Get-AzSubscription
     ```
 
-1. Change your active subscription to the Concierge Subscription. Be sure to substitute `{Your subscription ID}` with the ID you just copied.
+1. Change your active subscription to the Concierge Subscription. Be sure to replace `{Your subscription ID}` with the ID you just copied.
 
     ```azurepowershell
     $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
@@ -164,7 +164,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 You learned about the deployment commands in the previous module. Here, we're using the Azure PowerShell ```New-AzResourceGroupDeployment``` command.
 
-1. Deploy the template by using Azure PowerShell commands in the Visual Studio Code terminal. Remember to substitute `{your-prefix}` with a different string. For example, you could use **storage**.
+1. Deploy the template by using Azure PowerShell commands in the Visual Studio Code terminal. Remember to replace `{your-prefix}` with a different string. For example, you could use **storage**.
 
     ```azurepowershell
     $templateFile = "azuredeploy.json"
