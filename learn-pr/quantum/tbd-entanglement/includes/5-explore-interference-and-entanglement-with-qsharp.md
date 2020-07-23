@@ -281,6 +281,6 @@ To learn more about `ResourcesEstimator` and a detailed description of each of
 the parameters of the output and more estimation tools, you can read [the
 official documentation](todo).
 
-In the next unit, we are going to wrap up everything and learn how can we
-exploit interference and entanglement to outperform classical computers with the
-simple Deutsch-Jozsa algorithm.
+In the next unit, we are going to present different quantum algorithms that make
+use of superposition, interference and entanglement to outperform classical
+computers. 
