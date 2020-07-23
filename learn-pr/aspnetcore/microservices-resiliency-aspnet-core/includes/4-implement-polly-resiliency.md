@@ -145,7 +145,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
     To implement this, you'll use the `AddHttpClient` extension method to register a specific configuration for the `HttpClient` that will be injected into `CouponService`.
 
-    Apply the following changes to the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file:
+    Apply the following changes to the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
 
     1. Replace the comment `// Add the GetRetryPolicy method` with the following code:
 
@@ -167,7 +167,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-    1. In the *src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Extensions\ServiceCollectionExtensions.cs* file, call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy` method call. The second occurrence should accept a `GetCircuitBreakerPolicy` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
+    1. In the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file, call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy` method call. The second occurrence should accept a `GetCircuitBreakerPolicy` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
         :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/servicecollectionextensions.cs" id="snippet_AddApplicationServices" highlight="7-8":::
 
@@ -188,7 +188,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 1. Run the following command to build the app:
 
     ```dotnetcli
-    dotnet build src\ApiGateways\Aggregators\Web.Shopping.HttpAggregator\Web.Shopping.HttpAggregator.csproj
+    dotnet build src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator
     ```
 
     The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
