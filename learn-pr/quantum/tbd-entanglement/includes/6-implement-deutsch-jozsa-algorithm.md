@@ -333,6 +333,6 @@ The algorithm is as follows:
 1. Measure every qubit: if all measurements results are $0$, the function is
    constant, otherwise, it is balanced.
 
-#### Implement the algorithm in Q#
+#### Implement the algorithm in Q# -->
 
-*Article under development* -->
+*Article under development*
