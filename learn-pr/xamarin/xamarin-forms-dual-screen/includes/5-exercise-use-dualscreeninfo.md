@@ -68,7 +68,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
 
     The `UpdateLayouts` method will now be called whenever the app is spanned or unspanned (or the device is rotated). When spanned, the `twoPaneView` is configured to show the two views side-by-side. When the app is on a single screen, only the list is shown.
 
-    When the app is moved to single screen, the `if` statement checks if the app was previously spanned, and if so, pushes the flag details onto the navigation stack. This ensures the app navigation works as expected when unspanning back to a single screen.
+    When the app is moved to single screen, the `if` statement checks if the app was previously spanned, and if so, pushes the flag details onto the navigation stack. Showing the detail page ensures the app navigation works as expected when unspanning back to a single screen.
 
 1. Revisit **AllFlagsView.xaml.cs** to uncomment the `ListView_FlagTapped` method, and add a check for `!IsDeviceSpanned`:
 
@@ -82,16 +82,16 @@ We'll continue with the solution from the previous exercise. If you don't alread
     }
     ```
 
-    This method will now use the `Navigation` class to push the flag details if the app is on a single screen. This ensures the navigation works as expected on all single-screen devices.
+    This method will now use the `Navigation` class to push the flag details if the app is on a single screen. Showing the detail page via the navigation class ensures the app works as expected on all single-screen devices.
 
 ## Update the FlagDetailsPage code-behind
 
 1. Add the these methods (exactly as above) to **FlagDetailsPage.xaml.cs**:
 
-    - DeviceIsSpanned
-    - OnAppearing
-    - OnDisappearing
-    - DualScreen_PropertyChanged
+    - `DeviceIsSpanned`
+    - `OnAppearing`
+    - `OnDisappearing`
+    - `DualScreen_PropertyChanged`
 
 1. In **FlagDetailsPage.xaml.cs** implement `UpdateLayouts` as shown here:
 

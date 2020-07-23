@@ -1,4 +1,4 @@
-In this exercise, you'll work with an existing list-detail app. The app has a ListView that shows different country flags. The first version of the code works well on single-screen devices but does not adapt to dual-screens. You'll change the code so that it uses a dual-screen layout.
+In this exercise, you'll work with an existing list-detail app. The app has a list view that shows different country flags. The first version of the code works well on single-screen devices but does not adapt to dual-screens. You'll change the code so that it uses a dual-screen layout.
 
 ## Open the starter solution
 
@@ -10,7 +10,7 @@ In this exercise, you'll work with an existing list-detail app. The app has a Li
 1. Open the **FlagFacts.sln** solution.
 1. Explore the FlagFacts shared project. The single-screen navigation relies on pushing and popping a ContentPage using Xamarin.Forms navigation.
 1. Open the code-behind for both XAML files (AllFlagsPage and FlagView).
-1. Notice that the DependencyService is used to create and set the BindingContext on both content pages. We will rely on this behavior as we change the way navigation works in the app.
+1. Notice that the `DependencyService` is used to create and set the `BindingContext` on both content pages. We will rely on this behavior as we change the way navigation works in the app.
 1. Run the application on an Android device or emulator.
 
 ## Add dual-screen NuGet
@@ -30,7 +30,7 @@ In this exercise, you'll work with an existing list-detail app. The app has a Li
     | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     ```
 
-    This ensures that when your app switches from single- to dual-screen it doesn't destroy and recreate the activity.
+    These attributes ensure that when your app switches from single- to dual-screen it doesn't destroy and recreate the activity.
 
 Now that the project is configured for dual-screen support, you will refactor the code to support two screens.
 
@@ -39,7 +39,7 @@ Now that the project is configured for dual-screen support, you will refactor th
 The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-side on a dual-screen device you need to extract the controls into a custom view control:
 
 1. Create a new item in the FlagFacts project by right-clicking on the project and choosing **Add > New Item...**.
-1. Choose the XAML **Content View.**, and name it `FlagView`.
+1. Choose the XAML **Content View**, and name it `FlagView`.
 1. Copy the `<ScrollView>` and all its contents from **FlagDetailsPage.xaml** and paste into **FlagView.xaml**. Leave the `ToolbarItems` in the original content page.
 1. Move the `OnMoreInformation` method from the content page to the **FlagView.xaml.cs** codebehind:
 
@@ -101,7 +101,7 @@ We will use the `FlagView` in this unit below, and the `FlagDetailsPage` later i
     </dualScreen:TwoPaneView>
     ```
 
-3. _Comment out_ the body of the `ListView_FlagTapped` method, since the list and detail are now on the same ContentPage, databinding takes care of the selected item being displayed.
+3. _Comment out_ the body of the `ListView_FlagTapped` method, since the list and detail are now on the same content page, databinding takes care of the selected item being displayed.
 
     ```csharp
     private async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
