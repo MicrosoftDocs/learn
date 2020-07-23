@@ -23,7 +23,7 @@ protected override void OnDisappearing()
     DualScreenInfo.Current.PropertyChanged -= DualScreen_PropertyChanged;
     base.OnDisappearing();
 }
-private void DualScreen_PropertyChanged(object sender, PropertyChangedEventArgs e)
+void DualScreen_PropertyChanged(object sender, PropertyChangedEventArgs e)
 {
     // Update layout to respond to changes like rotation or spanning
     UpdateLayouts();
@@ -35,7 +35,7 @@ private void DualScreen_PropertyChanged(object sender, PropertyChangedEventArgs 
 `DualScreenInfo.Current.SpanMode` can be used to check whether the application is spanned. You can create a property to check for spanning like this:
 
 ```csharp
-public bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMode.SinglePane;
+bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMode.SinglePane;
 ```
 
 ## Changing the layout dynamically
@@ -43,7 +43,7 @@ public bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMod
 Using the `PropertyChanged` event and the `DeviceIsSpanned` property we can write a method that adapts to application spanning. The example below ensures that when the application is spanned across both screens, the `TwoPaneView` displays both panes (`TopBottom` or `LeftRight`) regardless of orientation. When on a single screen, only the first pane is shown.
 
 ```csharp
-public async void UpdateLayouts()
+void UpdateLayouts()
 {
     if (DeviceIsSpanned)
     {   // dual-screen: list and detail appear side-by-side

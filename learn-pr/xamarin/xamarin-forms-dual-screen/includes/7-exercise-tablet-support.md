@@ -18,7 +18,7 @@ public bool DeviceIsBigScreen => (Device.Idiom == TargetIdiom.Tablet) || (Device
 1. Update `ListView_FlagTapped` so that the navigation is _not_ used when the app is running on a large screen, by changing the `if` clause to `!DeviceIsSpanned && !DeviceIsBigScreen`. The method should look like this:
 
     ```csharp
-    private async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
+    async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
     {
         if (!DeviceIsSpanned && !DeviceIsBigScreen)
         {   // use Navigation only on phone-size single-screens
@@ -30,7 +30,7 @@ public bool DeviceIsBigScreen => (Device.Idiom == TargetIdiom.Tablet) || (Device
 1. Change the `UpdateLayouts` method so that the `LeftRight` configuration is used for both spanned and large screens. When the device has a large screen, also set the two panes to be sized proportionally: one third for the list and two thirds for the detail view:
 
     ```csharp
-    public async void UpdateLayouts()
+    void UpdateLayouts()
     {
         if (DeviceIsSpanned || DeviceIsBigScreen)
         {   // two panes: side by side

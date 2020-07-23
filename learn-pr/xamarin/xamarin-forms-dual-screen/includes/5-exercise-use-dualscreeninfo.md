@@ -9,7 +9,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
     ```csharp
     using Xamarin.Forms.DualScreen;
     // ...
-    public bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMode.SinglePane;
+    bool DeviceIsSpanned => DualScreenInfo.Current.SpanMode != TwoPaneViewMode.SinglePane;
     ```
 
 1. Add a field `wasSpanned` to the class, which will be used to keep track of the window state:
@@ -73,7 +73,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
 1. Revisit **AllFlagsView.xaml.cs** to uncomment the `ListView_FlagTapped` method, and add a check for `!IsDeviceSpanned`:
 
     ```csharp
-    private async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
+    async void ListView_FlagTapped(object sender, ItemTappedEventArgs e)
     {
         if (!DeviceIsSpanned)
         {   // use Navigation on single screen

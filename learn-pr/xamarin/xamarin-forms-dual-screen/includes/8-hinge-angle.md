@@ -21,7 +21,7 @@ To monitor the hinge angle as it changes, implement an event handler following t
 2. Implement the even handler to perform some action as the hinge angle changes. In this example, a label's text is updated with the current hinge angle:
 
     ```csharp
-    private void DualScreen_HingeAngleChanged(object sender, HingeAngleChangedEventArgs e)
+    void DualScreen_HingeAngleChanged(object sender, HingeAngleChangedEventArgs e)
     {
         Device.BeginInvokeOnMainThread(() =>
         {
