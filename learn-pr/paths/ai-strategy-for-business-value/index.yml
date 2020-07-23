@@ -20,7 +20,7 @@ roles:
 - business-user
 products:
 - azure
-- dynamics-365
+- dynamics-365-365
 - m365
 modules:
 - learn-wwl.ai-strategy-to-create-business-value

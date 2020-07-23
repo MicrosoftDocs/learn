@@ -16,7 +16,7 @@ Introduction to Cloud for Everyone
 
 - Azure
 - Microsoft 365
-- dynamics-365 365
+- dynamics-365-365 365
 
 ## Prerequisites
 
