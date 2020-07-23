@@ -12,7 +12,7 @@ You can, of course, add additional programming languages, desktop applications, 
 
 ## Run a Jupyter server from a custom Python environment
 
-In the last unit, you connected to the desktop of your Ubuntu Data Science Virtual Machine. One of the icons on the desktop is labeled "Jupyter." If you run this, it will start a Jupyter notebook server using the base environment provided by conda. 
+In the last unit, you connected to the desktop of your Ubuntu Data Science Virtual Machine. One of the icons on the desktop is labeled "Jupyter." If you click this icon, it will start a Jupyter notebook server using the base environment provided by conda. 
 
 The conda package manager is a popular way to manage Python programming environments. It is the default environment manager used by the Data Science Virtual Machine and the Data Science Virtual Machine comes with several environments preconfigured to work with popular data science and ML packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
 
@@ -78,8 +78,8 @@ You should see something similar to:
 
 1. Choose **cell** **Run all** to execute the notebook
 
-Scroll down to the "Using your GPU" section (near executable cell 45). The sandboxed workspace you are using does not provide GPU support, so `torch.cuda.is_available()` is `False`. 
+Scroll down to the "Using your GPU" section (near executable cell 45). The sandboxed workspace you are using doesn't provide GPU support, so `torch.cuda.is_available()` is `False`. 
 
-It is possible to "resize" a virtual machine so that the image runs on more or less powerful hardware. If you had created the a non-GPU Data Science Virtual Machine in your own subscription and that subscription included GPU resources, you could switch to the more powerful hardware without losing any of your data or configuration. 
+It is possible to "resize" a virtual machine so that the image runs on more or less powerful hardware. If you had created a non-GPU Data Science Virtual Machine in your own subscription and that subscription included GPU resources, you could switch to the more powerful hardware without losing any of your data or configuration. 
 
-The following video shows this. It begins with the **nn_tutorial.ipynb** notebook running on "Standard D2s v3" hardware and GPU acceleration with CUDA is not available. In the Azure Portal, click on **Size** and choose a GPU-enabled size, such as a "Standard NC6". Click "Resize" and restart the VM. After logging in, the Jupyter notebook is once again available, but this time, when run, CUDA acceleration _is_ available. 
+The following video shows this. It begins with the **nn_tutorial.ipynb** notebook running on "Standard D2s v3" hardware and GPU acceleration with CUDA isn't available. In the Azure portal, click on **Size** and choose a GPU-enabled size, such as a "Standard NC6". Click "Resize" and restart the VM. After logging in, the Jupyter notebook is once again available, but this time, when run, CUDA acceleration _is_ available. 

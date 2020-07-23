@@ -1,10 +1,10 @@
 ## Activate the Learn sandbox
 
-Use the above button to activate the Learn Sandbox. This will create an Azure Resource Group, a container for resources relating to a single project domain. This resource group will be available for an hour and will allow you to create a Data Science Virtual Machine, connect to it, and run programs.
+Use the above button to activate the Learn Sandbox. The activation will create an Azure Resource Group, a container for resources relating to a single project domain. This resource group will be available for an hour and will allow you to create a Data Science Virtual Machine, connect to it, and run programs.
 
 ## Creating a Data Science Virtual Machine
 
-Once you have decided to use a Data Science Virtual Machine to explore your domain, you need to decide whether you'd prefer Windows Server 2019 or Ubuntu Server 18.04 LTS as the operating system. Additionally, you should plan what hardware and network resources you'd like the Data Science Virtual Machine to use.
+Once you've decided to use a Data Science Virtual Machine to explore your domain, you need to decide whether you'd prefer Windows Server 2019 or Ubuntu Server 18.04 LTS as the operating system. Additionally, you should plan what hardware and network resources you'd like the Data Science Virtual Machine to use.
 
 ## Data Science Virtual Machine Operating System choices
 
@@ -59,9 +59,9 @@ The Data Science Virtual Machines are preconfigured with the drivers, library ve
 
 Within a type, machines are typically associated with a letter-based series. For instance, GPU sizes typically begin with an 'N': NC6, NC12s v3, NC24, NV12, and so forth. For more, see [Virtual Machines Pricing](https://azure.microsoft.com/pricing/details/virtual-machines/).
 
-Before you create a Data Science Virtual Machine, you should decide on a storage strategy. You can choose to install the OS on a Premium SSD, a Standard SSD, or a Standard HDD. In addition, you will be able to choose to create or attach to one or more data disks. Again, you can choose the hard-drive technology, trading off the higher speed of SSDs versus their cost per gigabyte. 
+Before you create a Data Science Virtual Machine, you should decide on a storage strategy. You can choose to install the OS on a Premium SSD, a Standard SSD, or a Standard HDD. In addition, you can choose to create or attach to one or more data disks. Again, you can choose the hard-drive technology, trading off the higher speed of SSDs versus their cost per gigabyte.
 
-You may resize your Data Science Virtual Machine as your requirements change. For instance, you might choose a General Purpose or Memory Optimized size when Data Acquisition & Understanding are your primary focus, but resize to a GPU offering when Modeling becomes the bottleneck. 
+You may resize your Data Science Virtual Machine as your requirements change. For instance, you might choose a General Purpose or Memory Optimized size when Data Acquisition & Understanding are your primary focus, but resize to a GPU offering when Modeling becomes the bottleneck.
 
 ## Create a Data Science VM with the Azure portal
 
@@ -73,7 +73,7 @@ You may resize your Data Science Virtual Machine as your requirements change. Fo
 
     As you can see, there are many selectable options. We want to create a Data Science Virtual Machine running on Ubuntu.
 
-1. Use the **Search the Marketplace** search bar to find "Data Science". You will see a list of options. Select the option that reads **Data Science Virtual Machine - Ubuntu 18.04** as shown below
+1. Use the **Search the Marketplace** search bar to find "Data Science". you'll see a list of options. Select the option that reads **Data Science Virtual Machine - Ubuntu 18.04** as shown below
 
     ![A screenshot showing Search the Marketplace with Data Science Virtual Machine Ubuntu Server 18.04 LTS highlighted.](../media/search-dsvm.png)
 

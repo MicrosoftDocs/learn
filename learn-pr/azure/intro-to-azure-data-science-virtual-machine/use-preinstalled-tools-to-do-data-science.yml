@@ -24,7 +24,7 @@ quiz:
         - content: "On any Internet-accessible computer with compatible hardware"
           isCorrect: false
           explanation: "The Data Science Virtual Machine runs on Azure compute resources you can match to your changing needs"
-        - content: "On an Azure compute resource you can customize to your needs and budget. Once specified, you cannot change the hardware."
+        - content: "On an Azure compute resource you can customize to your needs and budget. Once specified, you can't change the hardware."
           isCorrect: false
           explanation: "The Data Science Virtual Machine runs on Azure compute resources you can match to your changing needs"
         - content: "On an Azure compute resource you can customize to your needs and budget. You can change this resource as your needs change."
@@ -32,7 +32,7 @@ quiz:
           explanation: "The Data Science Virtual Machine runs on Azure compute resources you can match to your changing needs"
     - content: "Using GPU resources on the Data Science Virtual Machine requires:"
       choices:
-        - content: "The Data Science Virtual Machine does not support GPU scenarios"
+        - content: "The Data Science Virtual Machine doesn't support GPU scenarios"
           isCorrect: false
           explanation: "GPU support depends on the chosen compute resource. Preinstalled tools are configured to use the GPU on appropriate hardware"
         - content: "GPU support is universally available on Data Science Virtual Machines"
