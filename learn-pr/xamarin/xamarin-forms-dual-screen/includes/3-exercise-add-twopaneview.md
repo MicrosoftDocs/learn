@@ -77,7 +77,7 @@ We will use the `FlagView` in this unit below, and the `FlagDetailsPage` later i
 2. Replace the XAML content with the code below. The existing `ListView` is now wrapped in `Pane1` of the `TwoPaneView` control, and the `FlagView` content view is in `Pane2. When the app runs, these two views will appear side-by-side.
 
     ```xaml
-    <dualScreen:TwoPaneView>
+    <dualScreen:TwoPaneView x:Name="twoPaneView">
         <dualScreen:TwoPaneView.Pane1>
             <!--existing ListView-->
             <ListView ItemsSource="{Binding Flags}"

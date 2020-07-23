@@ -1,4 +1,6 @@
-The TwoPaneView can be dynamically configured by responding to changes in the device and application configuration, including:
+Exercise 1 showed how `TwoPaneView` can be used to create a split layout, but it did not adapt well to display on a single screen.
+
+The `TwoPaneView` can be dynamically configured by responding to changes in the device and application configuration, including:
 
 - Device rotation
 - Device folding and unfolding (eg. if one of the screens gets turned off or on)
