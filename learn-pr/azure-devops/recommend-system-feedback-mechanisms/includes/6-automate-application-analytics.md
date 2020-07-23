@@ -54,7 +54,7 @@ Telemetry enables you to answer questions such as:
 * What happens when crashes occur?
 * Are crashes happening more frequently when certain features or functions are used?
 
-The answers to these and many other questions enables you to make continuous improvements and to introduce new features. To your end users, it may seem as though you've been reading their minds – which you have been, thanks to telemetry.
+The answers to these and many other questions enable you to make continuous improvements and to introduce new features. To your end users, it may seem as though you've been reading their minds – which you have been, thanks to telemetry.
 
 ### What are the challenges of telemetry?
 
