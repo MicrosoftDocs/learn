@@ -15,7 +15,7 @@ With a Data Science Virtual Machine, you only pay for when the machine is runnin
 
 ![Screenshot of the desktop of the Data Science Virtual Machine running Jupyter](../media/jupyter-running-pytorch-in-dsvm.png)
 
-The Data Science Virtual Machine has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the Data Science Virtual Machine on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but popular packages, development environments, and Jupyter kernels.
+The Data Science Virtual Machine has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the Data Science Virtual Machine on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but so are popular packages, development environments, and Jupyter kernels.
 
 ## Learning objectives
 

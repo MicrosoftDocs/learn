@@ -49,7 +49,7 @@ Azure virtual machines come in a variety of sizes, grouped by type:
 | Type | Characteristics |
 | - |- |
 | General purpose | Balanced CPU-to-memory ratio. |
-| GPU | Single or multiple GPUs. Best fit for statistical ML training and inferencing. |
+| GPU | Single or multiple GPUs. Best fit for statistical machine learning training and inferencing. |
 | Memory optimized | High memory-to-CPU ratio. Good for in-memory analytics. |
 | Storage optimized | High disk and IO throughput. Good for Big Data. |
 | High performance compute | Powerful CPU machines. Good for tools with no GPU support. |
