@@ -1,4 +1,4 @@
-In this unit, we are going to explore how to create, manage, and inspect superpositions in Q#. We'll introduce a function from the Quantum Development Kit called `DumpMachine` that will allow us to observe the probability amplitudes of the simulated qubit registers.
+In this unit, we're going to explore how to create, manage, and inspect superpositions in Q#. We'll introduce a function from the Quantum Development Kit called `DumpMachine` that will allow us to observe the probability amplitudes of the simulated qubit registers.
 
 ## Create the project
 
@@ -16,7 +16,7 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 The Diagnostics Library under the `Microsoft.Quantum.Diagnostics` namespace is a
 library of the Quantum Development Kit that contains functions and operations
-useful for diagnostic purposes. For the moment, we are interested in the
+useful for diagnostic purposes. For the moment, we're interested in the
 function
 [`DumpMachine`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine).
 This function dumps information about the current status of the target machine
