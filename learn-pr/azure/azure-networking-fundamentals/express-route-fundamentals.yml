@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-networking-fundamentals.express-route-fundamentals
+title: Express Route fundamentals
+metadata:
+  title: Express Route fundamentals
+  description: TODO
+  ms.date: 09/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/express-route-fundamentals.md)]

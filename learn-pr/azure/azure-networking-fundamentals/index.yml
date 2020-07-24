@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.azure-networking-fundamentals
+metadata:
+  title: Azure Networking Fundamentals
+  description: TODO
+  ms.date: 09/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Networking Fundamentals
+summary: Tailwind Traders has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to network infrastructure. In this session you'll learn about the different Azure networking options and the scenarios in which each is appropriate.
+abstract: | 
+  Upon completion of this module, you'll be able to:
+  - Describe the core networking resources tha are available in Azure
+  - Describe the benefits and usage of Virtual networks, VPN Gateway, Virtual Network peering, and Express Route
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology
+  - Familiarity with cloud computing is helpful, but isn't necessary
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products:
+- azure
+- azure-virtual-network
+- azure-vpn-gateway
+- azure-expressroute
+units:
+- learn.azure.azure-networking-fundamentals.introduction
+- learn.azure.azure-networking-fundamentals.azure-virtual-network-fundamentals
+- learn.azure.azure-networking-fundamentals.azure-vpn-gateway-fundamentals
+- learn.azure.azure-networking-fundamentals.express-route-fundamentals
+- learn.azure.azure-networking-fundamentals.knowledge-check
+- learn.azure.azure-networking-fundamentals.summary
+badge:
+  uid: learn.azure.azure-networking-fundamentals.badge
