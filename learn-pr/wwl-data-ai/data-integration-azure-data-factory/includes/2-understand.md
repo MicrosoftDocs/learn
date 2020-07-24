@@ -11,4 +11,4 @@ ADF can use a similar approach, whilst it has native functionality to ingest and
 
 It also provides rich visualizations to display the lineage and dependencies between your data pipelines, and monitor all your data pipelines from a single unified view to easily pinpoint issues and setup monitoring alerts.
 
-![Data Factory platform](../media/hydrid-data-integration-at-scale.png)
+![Data Factory platform](../media/hydrid-data-integration-scale.png)

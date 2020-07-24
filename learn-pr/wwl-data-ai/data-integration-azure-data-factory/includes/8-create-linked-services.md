@@ -2,7 +2,7 @@ Before you create a dataset, you must create a **linked service** to link your d
 
 A linked service in Data Factory can be defined using the Copy Data Activity in the ADF designer, or you can create them independantly. The Copy Activity copies data between the source and destination, and when you run this activity you are asked to define a linked service as part of the copy activity definition
 
- ![The Copy Activity](../media/creating-linked-services.png)
+ ![The Copy Activity](../media/create-linked-services.png)
 
 
 Alternatively you can programmatically define a linked service in the JSON format to be used via REST APIs or the SDK, using the following notation:
