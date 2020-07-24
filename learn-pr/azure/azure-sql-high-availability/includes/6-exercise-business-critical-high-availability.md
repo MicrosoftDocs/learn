@@ -52,7 +52,7 @@ In a previous module of the learning path, you learned how to scale a database u
     * `sample-name`: To be consistent with the previous exercise, the `AdventureWorksLT` database sample used.
     * `edition`: This term is a bit misleading, because it is really referring to the service tier, which is not the same as what edition means in the SQL Server box product.  
     * `read-scale`: This is not enabled by default, but there is no additional cost associated with it. By enabling it, you're enabling one of your secondary replicas to be used as a readable secondary.  
-    * `zone-redundant`: By default, this is set to false, but you can set it to true if you want a multi-az deployment, with no additional cost. You'll learn more about availability zones in the next unit.
+    * `zone-redundant`: By default, this is set to false, but you can set it to true if you want a "multi-az" deployment, with no additional cost. You'll learn more about availability zones in the next unit.
 
     Note that this is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region) and is not yet available in Azure SQL managed instance.  
 
@@ -89,9 +89,9 @@ Just like in the previous exercise, you will leverage `ostress` to repeatedly qu
 
     If your workload is running properly, you should be seeing the result of the query `847` repeatedly appearing in the Command Prompt.
 
-    If, at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
+    If at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
 
-    If, at any time, you want to run the workload again, you can run the command again.  
+    If at any time, you want to run the workload again, you can run the command again.  
 
 ## Initiate a failover and observe the results
 

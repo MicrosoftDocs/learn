@@ -36,9 +36,9 @@ The first step is to create a long-running workload so you can see how a failove
 
     If your workload is running properly, you should be seeing the result of the query `847` repeatedly appearing in the Command Prompt.
 
-    If, at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
+    If at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
 
-    If, at any time, you want to run the workload again, you can run the command again.  
+    If at any time, you want to run the workload again, you can run the command again.  
 
 ### Use PowerShell in Azure Cloud Shell to initiate a failover and observe the results
 

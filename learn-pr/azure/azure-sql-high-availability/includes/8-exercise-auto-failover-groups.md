@@ -45,7 +45,7 @@ This notebook will guide you through configuring auto-failover groups for your A
     Write-Host "Variables Received"
     ```
 
-1. Create an empty Azure SQL Database server in the failover region by running the following in the Azure Cloud shell.
+1. Create an empty Azure SQL Database server in the failover region by running the following in the Azure Cloud Shell.
 
     ```powershell
     # create a backup server in the failover region
@@ -57,7 +57,7 @@ This notebook will guide you through configuring auto-failover groups for your A
     Write-Host "New Azure SQL Database logical server Created in different region"
     ```
 
-1. Create a failover group between the servers by running the following in the Azure Cloud shell.
+1. Create a failover group between the servers by running the following in the Azure Cloud Shell.
 
     ```powershell
     # create a failover group between the servers
@@ -68,7 +68,7 @@ This notebook will guide you through configuring auto-failover groups for your A
     Write-Host "New auto-failover group created between the two Azure SQL Database logical servers"
     ```
 
-1. Configure the network by running the following in the Azure Cloud shell.
+1. Configure the network by running the following in the Azure Cloud Shell.
 
     ```powershell
     # Add a firewall rules that gives your VM access to the new server
@@ -81,7 +81,7 @@ This notebook will guide you through configuring auto-failover groups for your A
 
     For the purposes of this exercise (illustrating auto-failover groups) this is sufficient from a networking perspective. However, this is slightly different from what you would do in an enterprise environment. In an enterprise environment, your machine that needs access will likely be a set of resources that make up some type of application. In the event of a failover of your database, you may want to failover your application/VMs/other resources to that new region as well. Both sets of resources will need access to the resources/servers/databases in the other region. In order to do this, you can use virtual network peering, virtual network to virtual network connections, or potentially something else (like ExpressRoute). It will depend on your scenario.
 
-1. Add database(s) to the failover group by running the following in the Azure Cloud shell.
+1. Add database(s) to the failover group by running the following in the Azure Cloud Shell.
 
     ```powershell
     # add the database to the failover group
@@ -95,7 +95,7 @@ This notebook will guide you through configuring auto-failover groups for your A
 
     The above step takes some time, because what you're doing is restoring the database in the other region, which involves copying the data from the original region to the DR region. You can work on **Configure your Command Prompt applications** and then come back here to check if it has completed.  
 
-What you've just done is deploy and configure and auto-failover group for you AdventureWorks database.
+What you've just done is deploy and configure and auto-failover group for your AdventureWorks database.
 
 ### Configure your command prompt applications
 
@@ -151,7 +151,7 @@ In the next steps, you'll examine what happens to both servers when a failover o
 
     One of the benefits of auto-failover groups in Azure SQL Database and Azure SQL Managed Instance is that you do not have to update the connection strings after a failover. You continue to connect to the primary (`<failover-group>.database.windows.net`) for write-workloads and the secondary (`<failover-group>.secondary.database.windows.net`) for read-workloads, and Azure takes care of routing you to the appropriate database in the corresponding region/server.
 
-1. Check the status of the secondary server by running the following in Cloud shell.
+1. Check the status of the secondary server by running the following in Azure Cloud Shell.
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `
@@ -160,14 +160,14 @@ In the next steps, you'll examine what happens to both servers when a failover o
 
     It should now be in the `Primary` role.
 
-1. Fail back by running the following in Cloud shell.
+1. Fail back by running the following in Azure Cloud Shell.
 
     ```powershell
     Switch-AzSqlDatabaseFailoverGroup -ResourceGroupName $resourceGroup `
      -ServerName $server -FailoverGroupName $failoverGroup
     ```
 
-1. Finally, you can check the status of the secondary server yet again by running the following in Cloud Shell.
+1. Finally, you can check the status of the secondary server yet again by running the following in Azure Cloud Shell.
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `
@@ -176,4 +176,4 @@ In the next steps, you'll examine what happens to both servers when a failover o
 
 1. You can now close both command prompts and maximize the Microsoft Learn browser window.
 
-In this exercise, you learned how to deploy and configure auto-failover groups, as well as what that means from an application perspective. Auto-failover groups is just one way you can go further with availability and read-scale in Azure SQL.
+In this exercise, you learned how to deploy and configure auto-failover groups, as well as what that means from an application perspective. Auto-failover groups are just one way you can go further with availability and read-scale in Azure SQL.

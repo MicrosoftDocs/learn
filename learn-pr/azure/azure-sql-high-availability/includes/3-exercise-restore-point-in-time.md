@@ -4,11 +4,11 @@ In this, you'll see how a common error can be recovered using point in time rest
 
 In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.  
 
-This scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
+These scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
 
 1. In order to get the IP address required, you must disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser). Note the resulting IP address.
 
-1. Run the following in the Azure Cloud shell, which is in the right-hand side of this page. Fill in a complex password and public IP address when prompted.
+1. Run the following in the Azure Cloud Shell, which is in the right-hand side of this page. Fill in a complex password and public IP address when prompted.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -25,7 +25,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell. You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
+1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud Shell. You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -86,7 +86,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-    Once you're in the Azure Portal you can search in the top bar for `AdventureWorks` to find your database and its associated logical server.
+    Once you're in the Azure portal you can search in the top bar for `AdventureWorks` to find your database and its associated logical server.
 
     Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
@@ -169,7 +169,7 @@ In this exercise, you'll follow the steps that go along with the process above.
     > [!IMPORTANT]
     > Save the completion time, you may need it later, for example `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
 
-1. Finally, before you get into the steps to restore, run the follow code in Cloud Shell on the right to configure your environment in the Azure Cloud Shell.  
+1. Finally, before you get into the steps to restore, run the follow code in Azure Cloud Shell on the right to configure your environment in the Azure Cloud Shell.  
 
     ```powershell
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
