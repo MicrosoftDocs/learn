@@ -60,7 +60,7 @@ Let's walk through this expression.
 
 Starting with [concat](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-string#concat?azure-portal=true), this function takes any number of arguments, and can accept either strings or arrays for the parameters. Here, you use a literal string `"Storage"` and concatenate it with the result of another function, [uniqueString](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-string#uniquestring?azure-portal=true). The `uniqueSting` function creates a deterministic hash string based on the parameters. In this expression, you create a hash of the current resource group ID by using another function, [resourceGroup](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions-resource#resourcegroup?azure-portal=true).
 
-Here's the output from what has been discussed so far:
+Here's the output from what we've discussed so far:
 
 :::image type="content" source="../media/2-storage-account-name-function.png" alt-text="Picture of a string created by concatenating the word Storage with a 13-character hash that contains both uppercase and lowercase letters." border="false":::
 

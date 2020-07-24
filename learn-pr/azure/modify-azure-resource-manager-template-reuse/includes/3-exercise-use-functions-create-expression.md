@@ -50,7 +50,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Sign in to Azure
 
-1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
+1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account:
 
     ```azurecli
     az login
@@ -84,7 +84,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Set the default resource group
 
-1. Set the default resource group to the resource group created for you in the sandbox environment. Doing so allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
+- Set the default resource group to the resource group created for you in the sandbox environment. Doing so allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
     ```azurecli
     az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
@@ -190,9 +190,9 @@ When the deployment finishes, go to [Azure](https://portal.azure.com?azure-porta
 
     :::image type="content" source="../media/3-deployment-succeeded.png" alt-text="Screenshot of the Azure portal that shows the resource group overview. The Deployments section shows that one deployment succeeded." border="true":::
 
-   Select **1 Succeeded** to see the details of the deployment:
+ 1.  Select **1 Succeeded** to see the details of the deployment:
 
-    :::image type="content" source="../media/3-add-function.png" alt-text="Screenshot of the Azure portal that shows deployments. One deployment is listed and has a status of Succeeded." border="true":::
+     :::image type="content" source="../media/3-add-function.png" alt-text="Screenshot of the Azure portal that shows deployments. One deployment is listed and has a status of Succeeded." border="true":::
 
 1. Select **addfunction** to see what resources were deployed:
 
