@@ -31,7 +31,7 @@ When graphically authoring ADF psolutions, you can use the control flow within t
 
 You can get the [latest information here](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities#control-activities).
 
-# Activities and Pipelines 
+## Activities and Pipelines 
 
 ## Defining Activities
 
