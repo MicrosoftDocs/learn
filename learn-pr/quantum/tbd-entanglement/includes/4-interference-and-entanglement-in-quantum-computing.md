@@ -1,12 +1,12 @@
 Until now, we only have been using superpositions with real positive amplitudes.
 You might be wondering, why not use directly the probabilities to represent the
-superposition? Well, this is one of the main ingredients that makes quantum
-computing work. Let's explain it.
+superposition? Well, this aspect is one of the main ingredients that makes
+quantum computing work. Let's explain it.
 
 ## Waves of probabilities
 
 The term *wave function* might be familiar to you (in fact, the `DumpMachine`
-function we just used names the quantum state as "wave function"). Physicist
+function we just used names the quantum state as "wave function"). Physicists
 often use this term as a synonym to design the quantum state of a system. This
 is because the Schrödinger equation that we introduced at the beginning of this
 module has the same mathematical structure as classical wave equations.
@@ -16,7 +16,7 @@ You might have also heard the term "probability wave". In fact, the term
 wave.
 
 If probability amplitudes of qubits are governed by a wave-like equation, this
-implies that we will observe many of the different well-known physical
+implies that we'll observe many of the different well-known physical
 properties of waves. Quantum algorithms exploit these properties to perform
 calculations. In particular, quantum computers exploit the phenomenon of **wave
 interference**.
@@ -29,7 +29,7 @@ were already used to describe waves long before the discovery of quantum
 mechanics. They provide intuition to understand interference. 
 
 But, what is wave interference? Waves are governed by a linear equation
-(remember, waves and quantum states are mathematically the same thing). This
+(remember, waves, and quantum states are mathematically the same thing). This
 implies that waves can be superposed, just like we discussed for quantum states
 in the previous units. Superposition of different waves enables their amplitudes
 to interfere, resulting in different effects on the overall state. There are two
@@ -94,7 +94,7 @@ bring advantage over classical algorithms.
 ## Quantum entanglement
 
 Another effect that superposition enables is quantum entanglement. In this unit,
-we will explore this effect, which proves to be a powerful tool in quantum
+we'll explore this effect, which proves to be a powerful tool in quantum
 computing.
 
 ### Correlations between qubits
@@ -124,13 +124,13 @@ correlation can be very useful in algorithms.
 ### Entangled states are difficult to simulate
 
 Entanglement is a phenomenon that happens in nature, not only in quantum
-computers. Quantum mechanical objects, such as atoms, electrons and photons, can
+computers. Quantum mechanical objects, such as atoms, electrons, and photons, can
 all involve in entanglement.
 
 We would like to simulate these physical systems to learn and design material
 properties for drug development, industrial chemical processes, and many others.
 Simulating entanglement would be difficult for classical systems. But because
-quantum computers intrinsically is built on superposition, this becomes an
+quantum computers are intrinsically built on superposition, this becomes an
 achievable task.
 
 Suppose we have a molecule with $n$ different atoms that are entangled. The
@@ -144,11 +144,11 @@ If we want to simulate this molecule with a
 classical computer, with n≈50 atoms, we would need $2^n$ bits. Our best
 classical supercomputers start to struggle.
 
-For n≈80 we will need more parameters than the number of transistors we have
-ever made on Earth. For n≈280 we need more parameters than the estimated number
+For n≈80, we'll need more parameters than the number of transistors we have
+ever made on Earth. For n≈280, we need more parameters than the estimated number
 of atoms in the Universe. In a quantum computer, the computer itself can be in a
 superposition. We just need to embed the quantum state of the system that we
 want to simulate and run the simulation with a specific set of operations.
 
-In the next section we are going to see how can we use Q# to
+In the next section, we are going to see how can we use Q# to
 explore quantum interference and entanglement.
