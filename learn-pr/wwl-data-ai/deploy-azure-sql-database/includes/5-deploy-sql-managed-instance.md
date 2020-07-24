@@ -1,4 +1,4 @@
-While many organizations initially migrate to Azure using IaaS offerings, the platform as a service (PaaS) service offering allows for additional benefits. One key benefit is that you no longer have to have to install or patch SQL Server as that is performed by the service. Additionally, consistency checking, and backups are also part of the managed service, and there are additional security and performance tools that are included in the PaaS offerings.
+While many organizations initially migrate to Azure using IaaS offerings, the platform as a service (PaaS) service offering allows for additional benefits. One key benefit is that you no longer have to install or patch SQL Server as that is performed by the service. Additionally, consistency checking, and backups are also part of the managed service, and there are additional security and performance tools that are included in the PaaS offerings.
 
 Azure SQL Managed Instance is a fully functional SQL Server instance that is almost 100% compatible with your on-premises ecosystem including features like SQL Agent, access to tempdb, cross-database query and common language runtime (CLR). The service uses the same infrastructure as Azure SQL Database and includes all the benefits of the PaaS service such as automatic backups, automatic patching, and built-in high availability, just to name a few.
 
@@ -12,11 +12,11 @@ There are two service tiers available when creating an Azure SQL Managed Instanc
 
 ### High Availability
 
-Because Azure SQL Database Managed Instance is backed by the PaaS Service, it has high availability baked into the product. A standalone Managed Instance offers a 99.99% Service Level Agreement (SLA) which guarantees at most 52.60 minutes of downtime per year. The architecture is the same as Azure SQL Database with General Purpose which use storage replication for availability, and Business critical using multiple replicas.
+Because Azure SQL Database Managed Instance is backed by the PaaS Service, it has high availability baked into the product. A standalone Managed Instance offers a 99.99% Service Level Agreement (SLA) which guarantees at most 52.60 minutes of downtime per year. The architecture is the same as Azure SQL Database with General Purpose, which uses storage replication for availability, and Business critical using multiple replicas.
 
 ### Backups
 
-Automatic backups are also automatically configured for Managed Instance. One key difference between Managed Instance and Azure SQL Database is that with MI you can manually make a copy-only backup of a database. You must backup to a URL, as access to the local storage is not permissible. You can also configure long-term retention (LTR) for retaining automatic backups for up to 10 years in geo-redundant Azure blob storage.
+Automatic backups are also automatically configured for Managed Instance. One key difference between Managed Instance and Azure SQL Database is that with MI you can manually make a copy-only backup of a database. You must back up to an URL, as access to the local storage is not permissible. You can also configure long-term retention (LTR) for retaining automatic backups for up to 10 years in geo-redundant Azure blob storage.
 
 Database backups occur on the same schedule as with Azure SQL Database. These schedules are not adjustable.
 
@@ -28,7 +28,7 @@ Database backups occur on the same schedule as with Azure SQL Database. These sc
 
 Restoring a database to a Managed Instance is also similar to the process with Azure SQL Database. You can use:
 
-- Azure Portal
+- Azure portal
 
 - PowerShell
 
@@ -36,7 +36,7 @@ Restoring a database to a Managed Instance is also similar to the process with A
 
 However, there are some limitations when restoring. In order to restore from one instance to another, both instances must reside within the same Azure subscription as well as the same Azure region. You also cannot restore the entire managed instance, only individual databases within the Managed Instance itself.
 
-As with Azure SQL Database, you cannot restore over an existing database. The existing database must either be dropped or renamed prior to restoring it from backup. Since Managed Instance is a fully functional SQL Server instance, you can execute a RESTORE command whereas with Azure SQL Database that is not possible. However, since it is a PaaS service, there are limitations.
+As with Azure SQL Database, you cannot restore over an existing database. Drop or rename the existing database prior to restoring it from backup. Since Managed Instance is a fully functional SQL Server instance, you can execute a RESTORE command whereas with Azure SQL Database that is not possible. However, since it is a PaaS service, there are limitations.
 
 - You must restore from an URL endpoint. You do not have access to local drives.
 
@@ -60,8 +60,8 @@ By default, the databases in a managed instance are encrypted using Transparent 
 
 ### Disaster Recovery
 
-Azure SQL Database Managed Instance offers auto-failover groups as a means to implement disaster recovery. You should note that this feature protects the entire managed instance and all of the databases contained within it, not just specific databases. This process asynchronously replicates data from the Azure SQL Managed Instance to a secondary; however, it is currently limited to the paired Azure region of the primary copy, and only one replica is allowed.
+Azure SQL Database Managed Instance offers auto-failover groups as a means to implement disaster recovery. Note that this feature protects the entire managed instance and all of the databases contained within it, not just specific databases. This process asynchronously replicates data from the Azure SQL Managed Instance to a secondary; however, it is currently limited to the paired Azure region of the primary copy, and only one replica is allowed.
 
-Much like Azure SQL Database, auto-failover groups offer read-write and read-only listener endpoints which facilitate easy connection string management. In the event of a failover, application connection strings will automatically be routed to the appropriate instance. While fairly consistent with Azure SQL Database, these endpoints follow a slightly different format, `<fog-name>.zone_id.database.windows.net whereas Azure SQL Database is in the <fog-name>.secondary.database.windows.net` format.
+Much like Azure SQL Database, auto-failover groups offer read-write and read-only listener endpoints, which facilitates easy connection string management. In the event of a failover, application connection strings will automatically be routed to the appropriate instance. While fairly consistent with Azure SQL Database, these endpoints follow a slightly different format, `<fog-name>.zone_id.database.windows.net whereas Azure SQL Database is in the <fog-name>.secondary.database.windows.net` format.
 
-Each managed instance, primary and secondary, must be within the same DNS zone. This will ensure that the same multi-domain certificate can be used for client connection authentication between either of the two instances in the same failover group. This can be facilitated by specifying a “DNS Zone Partner” through various methods such as the Azure portal, PowerShell, or Azure CLI.
+Each managed instance, primary and secondary, must be within the same DNS zone. This placement will ensure that the same multi-domain certificate can be used for client connection authentication between either of the two instances in the same failover group. This can be facilitated by specifying a “DNS Zone Partner” through various methods such as the Azure portal, PowerShell, or Azure CLI.

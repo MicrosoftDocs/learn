@@ -1,6 +1,6 @@
-The Platform as a Service (PaaS) offering for SQL Server can be a great solution for certain workloads. The PaaS offering provides less granular control over the infrastructure and relegates management of the underlying components (memory, CPU, storage, operating system, etc) to the cloud provider, namely Microsoft.
+The Platform as a Service (PaaS) offering for SQL Server can be a great solution for certain workloads. The PaaS offering provides less granular control over the infrastructure and relegates management of the underlying components (memory, CPU, storage, operating system, etc.) to the cloud provider, namely Microsoft.
 
-This module will focus on ways to provision and deploy both Azure SQL Database and SQL Server Managed Instances, as well as provide clear and definitive guidance on the various options when performing a migration to this platform.
+This module will focus on ways to provision and deploy both Azure SQL Database and Azure SQL managed instances, as well as provide clear and definitive guidance on the various options when performing a migration to this platform.
 
 ## Learning Objectives
 

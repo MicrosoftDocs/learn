@@ -4,7 +4,7 @@ We’ll look at several methods for deploying a singleton Azure SQL Database.
 
 The process to create a singleton database through the Azure portal is straightforward. While in the portal, on the left-hand navigation menu, select “SQL Databases”. In the resulting slide out dialog, click “Create” as shown in Figure 3 below.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-13.png" alt-text="The Azure Portal Azure SQL Database Deployment screen":::
+:::image type="content" source="../media/module-22-plan-and-implement-final-13.png" alt-text="The Azure portal Azure SQL Database Deployment screen":::
 
 In the blade in the image below, you’ll notice that the subscription should already be provided for you. You will need to supply the following information:
 
@@ -12,13 +12,13 @@ In the blade in the image below, you’ll notice that the subscription should al
 - Database Name – You must provide a database name
 - Server – Each database must reside on a logical server. If you have one already in existence in the appropriate region, you may choose to use it. Otherwise, you can click on the “Create new” and follow the prompts to create a new logical server to house the database.
 - Determine whether to use an elastic pool.
-- Determine the appropriate compute resources needed. By default, it will be a Gen5, 2vCore, with 32GB of storage until something else is selected. Click on “Configure database” to view alternate configuration options.
+- Determine the appropriate compute resources needed. By default, it will be a Gen5, 2vCore, with 32 GB of storage until something else is selected. Click on “Configure database” to view alternate configuration options.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-14.png" alt-text="Create SQL Database blade of Azure Portal":::
+:::image type="content" source="../media/module-22-plan-and-implement-final-14.png" alt-text="Create SQL Database blade of Azure portal":::
 
-The image below shows the Portal blade in which you can configure the database options. Here you will notice that the service tier is General Purpose and compute tier is Provisioned. Provisioned implies that the compute resources are pre-allocated and billeed per hour based on the number of configured vCores. The other option is Serverless which was discussed previously. Serverless is billed per second based on the number of vCores utilized.
+The image below shows the portal blade in which you can configure the database options. Here you will notice that the service tier is General Purpose and compute tier is Provisioned. Provisioned implies that the compute resources are pre-allocated and billed per hour based on the number of configured vCores. The other option is Serverless, which was discussed previously. Serverless is billed per second based on the number of vCores utilized.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-15.png" alt-text="Service Tier selection in Azure Portal":::
+:::image type="content" source="../media/module-22-plan-and-implement-final-15.png" alt-text="Service Tier selection in Azure portal":::
 
 ## Deploying an Azure SQL Database via PowerShell/CLI
 
@@ -218,7 +218,7 @@ echo $password
 
 ## Deploying Azure SQL Database Using ARM Templates
 
-Another method for deploying resources is as mentioned earlier is using an ARM template. An ARM template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates” which hosts ARM templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown in Figure 19:
+Another method for deploying resources is as mentioned earlier is using an ARM template. An ARM template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts ARM templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown in Figure 19:
 
 ```powershell
 #Define Variables for parameters to pass to template
