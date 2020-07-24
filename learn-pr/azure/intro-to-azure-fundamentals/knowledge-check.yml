@@ -18,7 +18,7 @@ quiz:
     - content: "Which of the following statements is not true about cloud computing?"
       choices:
         - content: "TODO"
-          isCorrect: True
+          isCorrect: true
           explanation: "TODO"
         - content: "TODO"
           isCorrect: false
@@ -26,31 +26,31 @@ quiz:
     - content: "What is Microsoft Azure?"
       choices:
         - content: "TODO"
-          isCorrect: True
+          isCorrect: true
           explanation: "TODO"
         - content: "TODO"
           isCorrect: false
           explanation: "TODO"
     - content: "True or False: You need to purchase an Azure account before using any Azure resources."
       choices:
-        - content: "TODO"
-          isCorrect: True
-          explanation: "TODO"
-        - content: "TODO"
+        - content: "False"
+          isCorrect: true
+          explanation: "You can use a Free Azure Account or a Microsoft Learn Sandbox to create resources."
+        - content: "True"
           isCorrect: false
-          explanation: "TODO"
+          explanation: "You can use a Free Azure Account or a Microsoft Learn Sandbox to create resources."
     - content: "True or False: In an Infrastructure-as-a-Service environment, the cloud tenent is responsible for routine hardware maintenance."
       choices:
-        - content: "TODO"
-          isCorrect: True
-          explanation: "TODO"
-        - content: "TODO"
+        - content: "True"
           isCorrect: false
-          explanation: "TODO"
-    - content: "**TODO**: *Need a question about the AZ-900 exam.*"
+          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+        - content: "False"
+          isCorrect: true
+          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+    - content: "<span style='background:yellow'>**TODO**: *Need a question about the AZ-900 exam.*</span>"
       choices:
         - content: "TODO"
-          isCorrect: True
+          isCorrect: true
           explanation: "TODO"
         - content: "TODO"
           isCorrect: false

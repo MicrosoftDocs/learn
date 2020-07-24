@@ -146,17 +146,7 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
    
 1. **What is Microsoft Azure?**
 
-    > [!NOTE]
-    >
-    > TODO: Should we insert a separate learning unit after this unit and steal the content from the [Tour of Azure services](https://docs.microsoft.com/learn/modules/welcome-to-azure/3-tour-of-azure-services) unit? If we decide to scrap the [Core Cloud Services - Introduction to Azure](https://docs.microsoft.com/learn/modules/welcome-to-azure/) module in favor of this module, then the answer would be *Yes*. Otherwise, we should still consider it.
-    >
-
     Azure is a continually expanding set of cloud services that help your organization meet your current and future business challenges. Azure gives you the freedom to build, manage, and deploy applications on a massive global network using your favorite tools and frameworks.
-
-    > [!NOTE]
-    >
-    > TODO: We need some images and perhaps a video. We *could* steal what's available in the existing [What is Azure?](https://docs.microsoft.com/learn/modules/welcome-to-azure/2-what-is-azure) unit.
-    >
 
     **What does Azure offer?**
 

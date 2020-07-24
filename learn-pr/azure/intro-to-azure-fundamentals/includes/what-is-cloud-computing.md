@@ -2,7 +2,7 @@ If you've ever wondered, "What is cloud computing?", it is the delivery of compu
 
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/What-is-Cloud-Computing/player?format=ny]
 
-## How expensive is cloud computing?
+## Why is cloud computing typically cheaper to use?
 
 Cloud computing is the delivery of computing services over the Internet using a *pay-as-you-go pricing* model. You typically pay only for cloud services you use, which helps you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change. To put that another way, cloud computing is a way to rent compute power and storage from someone else's data center. You can treat cloud resources like you would your resources in your own data center. When you're done using them, you give them back. You're billed only for what you use.
 
@@ -27,9 +27,11 @@ To power your services and deliver innovative and novel user experiences more qu
 - Speech recognition and other cognitive services that help make your application stand out from the crowd.
 - Analytics services that enable you to make sense of telemetry data coming back from your software and devices.
 
-## Cloud computing advantages
+## What are some cloud computing advantages?
 
-There are several benefits that a cloud environment has over a physical environment. For example, cloud-based applications achieve a high rate of availability through a myriad of related strategies:
+There are several benefits that a cloud environment has over a physical environment. For example, cloud-based applications employ a myriad of related strategies:
+
+- **High Availability** - depending on the service-level agreement (SLA) that you choose, your cloud[based applications can provide a continuous user experience with no apparent downtime even when things go wrong
 
 - **Scalability** - applications in the cloud can be scaled two ways:
 
@@ -44,7 +46,7 @@ There are several benefits that a cloud environment has over a physical environm
 
 - **Disaster Recovery** - by taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event that disaster should occur
 
-## PaaS, IaaS, and SaaS
+## What are PaaS, IaaS, and SaaS?
 
 If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibility that a cloud provider and cloud tenent are responsible for.
 
@@ -58,7 +60,13 @@ The following chart illustrates the various levels of responsibility between a c
 
 ![Shared responsiblities chart for cloud providers and cloud tenents.](../media/shared-responsibility.png)
 
-## Public, Private, and Hybrid clouds
+## What is serverless computing?
+
+Overlapping with PaaS, serverless computing enables developers to build applications faster by eliminating the need for them to manage infrastructure. With serverless applications, the cloud service provider automatically provisions, scales, and manages the infrastructure required to run the code. Serverless architectures are highly scalable and event-driven, only using resources when a specific function or trigger occurs.
+
+In understanding the definition of serverless computing, it’s important to note that servers are still running the code. The serverless name comes from the fact that the tasks associated with infrastructure provisioning and management are invisible to the developer. This approach enables developers to increase their focus on the business logic and deliver more value to the core of the business. Serverless computing helps teams increase their productivity and bring products to market faster, and it allows organizations to better optimize resources and stay focused on innovation.
+
+## What are Public, Private, and Hybrid clouds?
 
 There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
 

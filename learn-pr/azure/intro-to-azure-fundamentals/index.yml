@@ -19,7 +19,7 @@ abstract: |
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
   - Familiarity with cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/welcome-to-azure.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,7 @@ units:
 - learn.azure.intro-to-azure-fundamentals.introduction
 - learn.azure.intro-to-azure-fundamentals.what-is-cloud-computing
 - learn.azure.intro-to-azure-fundamentals.what-is-microsoft-azure
+- learn.azure.intro-to-azure-fundamentals.tour-of-azure-services
 - learn.azure.intro-to-azure-fundamentals.getting-started-with-azure-accounts
 - learn.azure.intro-to-azure-fundamentals.azure-fundamentals-az-900-exam
 - learn.azure.intro-to-azure-fundamentals.case-study-introduction
