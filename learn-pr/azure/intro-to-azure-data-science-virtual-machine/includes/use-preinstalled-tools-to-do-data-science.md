@@ -12,7 +12,7 @@ You can, of course, add additional programming languages, desktop applications, 
 
 ## Run RStudio remotely
 
-From the Data Science Virtual Machine desktop running in your XFCE client, click on the RStudio icon. 
+From the Data Science Virtual Machine desktop running in your XFCE client, double-click the RStudio icon. 
 
 ![Screenshot showing XFCE client, with RSTudio highlighted](../media/desktop-ubuntu.png)
 
