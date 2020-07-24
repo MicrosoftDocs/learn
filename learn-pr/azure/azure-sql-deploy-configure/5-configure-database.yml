@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/5-configure-database.md)]
 quiz:
-    title: Configure Azure SQL 
+    title: Knowledge Check 
     questions:
     - content: "If your data max size in Azure SQL Database is 10GB, what is the maximum transaction log size?"
       choices:

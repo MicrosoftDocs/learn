@@ -23,7 +23,7 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
     |**Password**     | Enter the password for the cloudadmin account        |
     |**Remember password**     | Selected        |
     |**Database**     | AdventureWorks        |
-    |**Server group**     | Azure SQL Database        |
+    |**Server group**     | Leave as `<Default>`        |
     |**Name (optional)**     |  Leave blank       |
 
 
@@ -36,6 +36,8 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
 1. For Azure SQL Database, since you are not really getting a full "server", **`USE [DatabaseName]`** is not supported to change the database context. You must either change the connection to specifically connect to the database you want to run a query on or use the drop-down. Change to the context of your **AdventureWorks** database by selecting the drop-down box next to **master** and run `SELECT @@VERSION`.  
 
     :::image type="content" source="../media/4-new-query-ads.png" alt-text="Querying in ADS":::
+
+    Later in this exercise, you'll dive in to why that result is different from what you see in SQL Server.
 
 ## Set up easy file access with ADS  
 
@@ -142,6 +144,6 @@ In this option, you'll walk through some common queries against system functions
 
 ### Option 2: SQL Notebooks in Azure Data Studio
 
-For this option, you'll use the notebook **VerifyDeployment.ipynb** which is under `02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb` in the GitHub repository or zip file you downloaded earlier. Navigate to that file in ADS to complete this activity, and then return here.  
+For this option, you'll use the notebook **VerifyDeployment.ipynb** which is under `02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb` in the GitHub repository or zip file you downloaded earlier. Navigate to that file in ADS to complete this part of the exercise, and then return here. In the same folder, you'll also find extra notebooks containing the results of the same queries on Azure SQL Managed Instance and SQL Server 2019.  
 
 If you are unable to complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/verifydeployment/VerifyDeployment.ipynb).

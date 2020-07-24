@@ -43,7 +43,7 @@ When you create an Azure SQL Managed Instance, supplying the server name is the 
 
 ### Compute and storage
 
-One of the final steps is to determine how many vCores and the Data max size.
+In the previous module of this learning path, you learned about the various options available and recommendations when it comes to compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. Additionally, you must determine how many vCores and the Data max size.
 
 Generally, if you're migrating, you should use a similar size as to what you use on-premises. You can also leverage tools, like the Data Migration Assistant SKU Recommender to estimate the vCore and Data max size based on your current workload.  
 

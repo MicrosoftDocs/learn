@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/7-load-data.md)]
 quiz:
-    title: Load data into Azure SQL 
+    title: Knowledge Check
     questions:
     - content: "Which Azure SQL deployment options support natively restoring a database?"
       choices:

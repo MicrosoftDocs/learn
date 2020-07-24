@@ -39,3 +39,7 @@ Similar to the EULA for SQL Server, there exists [Azure Marketplace terms](https
 #### Resource governance
 
 Resource governance from the Azure side is something new to consider in Azure SQL. You can [review how it works here](https://azure.microsoft.com/blog/resource-governance-in-azure-sql-database/) and a useful [blog post with more details](https://azure.microsoft.com/blog/resource-governance-in-azure-sql-database/).
+
+#### Job management
+
+You can learn more about the differences between SQL Server Agent in SQL Server and Azure SQL Managed Instance in the [documentation](https://docs.microsoft.com/azure/azure-sql/managed-instance/transact-sql-tsql-differences-sql-server#sql-server-agent). Additionally, you can learn about Elastic Jobs for Azure SQL Database in the [documentation](https://docs.microsoft.com/azure/azure-sql/database/elastic-jobs-overview).

@@ -54,7 +54,7 @@ Both exercises contain the same commands and content, so you can choose the opti
         sr_reversed_charge              float,
         sr_store_credit                 float,
         sr_net_loss                     float
-    )
+    );
     GO
     ```
 
@@ -71,7 +71,7 @@ Both exercises contain the same commands and content, so you can choose the opti
 
 1. A `MASTER KEY` is required to create a `DATABASE SCOPED CREDENTIAL` since the blob storage is not configured to allow public (anonymous) access. The credential refers to the Azure blob storage account and the data portion specifies the container where the store return data is located.
 
-    We use SHARED ACCESS SIGNATURE as the identity which SQL knows how to interpret, and the secret provided is the SAS token that you can generate from the Azure blob storage account.
+    We use a SHARED ACCESS SIGNATURE as the identity which SQL knows how to interpret, and the secret provided is the SAS token that you can generate from the Azure blob storage account. In this example, the SAS token for a storage account you do not have access to is provided so you can access only the store return data.
 
     ```sql
     CREATE DATABASE SCOPED CREDENTIAL [https://azuresqlworkshopsa.blob.core.windows.net/data/]
@@ -97,23 +97,23 @@ Both exercises contain the same commands and content, so you can choose the opti
 
     ```sql
     SET NOCOUNT ON -- Reduce network traffic by stopping the message that shows the number of rows affected
-    BULK INSERT DataLoad.store_returns -- Table you created in Step 1
+    BULK INSERT DataLoad.store_returns -- Table you created in Step 3
     FROM 'dataset/store_returns/store_returns_1.dat' -- Within the container, the location of the file
     WITH (
-    DATA_SOURCE = 'dataset' -- Using the External data source from Step 4
+    DATA_SOURCE = 'dataset' -- Using the External data source from Step 6
     ,DATAFILETYPE = 'char'
     ,FIELDTERMINATOR = '\|'
     ,ROWTERMINATOR = '\|\n'
     ,BATCHSIZE=100000 -- Reduce network traffic by inserting in batches
     , TABLOCK -- Minimize number of log records for the insert operation
-    )
+    );
     GO
     ```
 
 1. Finally, you can check how many rows were inserted into the table.
 
     ```sql
-    select count(*) from DataLoad.store_returns
+    SELECT COUNT(*) FROM DataLoad.store_returns;
     GO
     ```
 
@@ -122,10 +122,10 @@ Both exercises contain the same commands and content, so you can choose the opti
 You've now seen a simple example of how to insert data from blob storage into Azure SQL Database. If you want to run through the exercise again, run the following code to reset what you've done.
 
 ```sql
-DROP EXTERNAL DATA SOURCE dataset
-DROP DATABASE SCOPED CREDENTIAL [https://azuresqlworkshopsa.blob.core.windows.net/data/]
-DROP TABLE DataLoad.store_returns
-DROP MASTER KEY
+DROP EXTERNAL DATA SOURCE dataset;
+DROP DATABASE SCOPED CREDENTIAL [https://azuresqlworkshopsa.blob.core.windows.net/data/];
+DROP TABLE DataLoad.store_returns;
+DROP MASTER KEY;
 GO
 ```
 

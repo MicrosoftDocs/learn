@@ -8,12 +8,12 @@ metadata:
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Plan, deploy, and verify Azure SQL
+title: Knowledge Check
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-deploy-verify.md)]
 quiz:
-    title: Plan, deploy, and verify Azure SQL 
+    title: Knowledge Check
     questions:
     - content: "Which of the following options do have limits depending on your deployment option and service tier?"
       choices:
