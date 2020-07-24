@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.create-a-data-science-virtual-machine
 metadata:
-  title: "Create a Data Science Virtual Machine"
+  title: "Exercise: Create a Data Science Virtual Machine"
   description: Create and connect to an Ubuntu Data Science Virtual Machine using XFCE
   ms.date: 2020-07-01
   author: lobrien
@@ -10,7 +10,7 @@ metadata:
   ms.service: machine-learning
   ROBOTS: NOINDEX
 azureSandbox: true
-title: "Create a Data Science Virtual Machine"
+title: "Exercise: Create a Data Science Virtual Machine"
 durationInMinutes: 15
 content: |
-  [!include[](includes/create-a-data-science-virtual-machine.md)]
+  [!include[](includes/exercise-create-a-data-science-virtual-machine.md)]
