@@ -60,7 +60,7 @@ If you wish to use a graphical user interface, you can use:
 
 The Linux VM is already provisioned with X2Go Server and ready to accept client connections. To connect to the Linux VM graphical desktop, complete the following procedure on your client:
 
-1. Download and install the X2Go client for your client platform from [X2Go](https://wiki.x2go.org/doku.php/doc:installation:x2goclient).
+1. Download and install the X2Go client for your client platform from [X2Go](https://wiki.x2go.org/doku.php/doc:installation:x2goclient?portal=true).
 
 1. Run the X2Go client. If the "New Session" window doesn't pop up automatically, go to Session -> New Session.
 
