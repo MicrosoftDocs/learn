@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.review-planning-managing-costs.explore-total-cost-of-ownership-calculator
+uid: learn.review-planning-managing-costs.2-explore-total-cost-of-ownership-calculator
 title: Explore Total Cost of Ownership Calculator
 metadata:
   title: Explore Total Cost of Ownership Calculator
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-explore-total-cost-of-ownership-calculator.md)]
+  [!include[](includes/2-explore-total-cost-of-ownership-calculator.md)]

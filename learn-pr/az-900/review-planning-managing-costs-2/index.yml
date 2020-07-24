@@ -32,13 +32,13 @@ roles:
 products:
 - azure
 units:
-- learn.review-planning-managing-costs.introduction
-- learn.review-planning-managing-costs.explore-total-cost-of-ownership-calculator
-- learn.review-planning-managing-costs.walkthrough-use-azure-tco-calculator
-- learn.review-planning-managing-costs.purchase-azure-products-services
-- learn.review-planning-managing-costs.walkthrough-use-azure-pricing-calculator
-- learn.review-planning-managing-costs.explore-minimizing-costs
-- learn.review-planning-managing-costs.knowledge-check
-- learn.review-planning-managing-costs.summary
+- learn.review-planning-managing-costs.1-introduction
+- learn.review-planning-managing-costs.2-explore-total-cost-of-ownership-calculator
+- learn.review-planning-managing-costs.3-walkthrough-use-azure-tco-calculator
+- learn.review-planning-managing-costs.4-purchase-azure-products-services
+- learn.review-planning-managing-costs.5-walkthrough-use-azure-pricing-calculator
+- learn.review-planning-managing-costs.6-explore-minimizing-costs
+- learn.review-planning-managing-costs.7-knowledge-check
+- learn.review-planning-managing-costs.8-summary
 badge:
   uid: learn.review-planning-managing-costs.badge

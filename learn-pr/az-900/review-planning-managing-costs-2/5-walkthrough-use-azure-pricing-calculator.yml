@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.review-planning-managing-costs.walkthrough-use-azure-pricing-calculator
+uid: learn.review-planning-managing-costs.5-walkthrough-use-azure-pricing-calculator
 title: Walkthrough - Use Azure Pricing Calculator
 metadata:
   title: Walkthrough - Use Azure Pricing Calculator
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/6-walkthrough-use-azure-pricing-calculator.md)]
+  [!include[](includes/5-walkthrough-use-azure-pricing-calculator.md)]
