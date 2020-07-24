@@ -7,7 +7,7 @@ With help from Azure, you have everything you need to build your next great solu
 :::row:::
   :::column span="3":::  
 
-**Be future ready** - Continuous innovation from Microsoft supports<br>your development today, and your product visions for tomorrow.
+**Be future ready** - Continuous innovation from Microsoft supports your development today, and your product visions for tomorrow.
 
   :::column-end:::
   :::column:::
@@ -25,7 +25,7 @@ With help from Azure, you have everything you need to build your next great solu
   :::column-end:::
   :::column span="3":::  
 
-**Build on your terms** - You have choices. With a commitment to open source, and support<br>for all languages and frameworks, build how you want, and deploy where you want to.
+**Build on your terms** - You have choices. With a commitment to open source, and support for all languages and frameworks, build how you want, and deploy where you want to.
 
   :::column-end:::
 :::row-end:::
@@ -33,7 +33,7 @@ With help from Azure, you have everything you need to build your next great solu
 :::row:::
   :::column span="3":::  
 
-**Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge - we'll meet you where you<br>are. Integrate and manage your environments with tools and services designed for hybrid cloud.
+**Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge - we'll meet you where you are. Integrate and manage your environments with tools and services designed for hybrid cloud.
 
   :::column-end:::
   :::column:::
@@ -51,7 +51,7 @@ With help from Azure, you have everything you need to build your next great solu
   :::column-end:::
   :::column span="3":::  
 
-**Trust your cloud** - Get security from the ground up, backed by a team of experts,<br>and proactive compliance trusted by enterprises, governments, and startups.
+**Trust your cloud** - Get security from the ground up, backed by a team of experts, and proactive compliance trusted by enterprises, governments, and startups.
 
   :::column-end:::
 :::row-end:::
@@ -78,7 +78,7 @@ The Azure portal is designed for resiliency and continuous availability. It has 
 
 ## What is the Azure Marketplace?
 
-The [Azure Marketplace](https://azuremarketplace.microsoft.com?azure-portal=true) is a service on Azure that helps connect end users with Microsoft partners, independent software vendors (ISVs), and start-ups that are offering their solutions and services, which are optimized to run on Azure. Azure Marketplace allows customers—mostly IT professionals and cloud developers—to find, try, purchase, and provision applications and services from hundreds of leading service providers, all certified to run on Azure.
+The [Azure Marketplace](https://azuremarketplace.microsoft.com?azure-portal=true) is a service on Azure that helps connect end users with Microsoft partners, independent software vendors (ISVs), and start-ups that are offering their solutions and services, which are optimized to run on Azure. Azure Marketplace allows customers - mostly IT professionals and cloud developers - to find, try, purchase, and provision applications and services from hundreds of leading service providers, all certified to run on Azure.
 
 [![Screenshot of the Azure Marketplace.](../media/marketplace.png)](../media/marketplace.png#lightbox)
 
