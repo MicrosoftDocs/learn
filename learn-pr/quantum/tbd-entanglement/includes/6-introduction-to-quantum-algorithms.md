@@ -85,8 +85,8 @@ until either we get a different value or until we do $\frac{2^{n}}{2}+1$ queries
 that will return the same value - in this case we'll know for certain that the
 function will be constant.
 
-This is, if the function is balanced we need to use the function on half plus
-one of the possible inputs to be completely sure that the function is balanced.
+This is, if the function is constant we need to use the function on half plus
+one of the possible inputs to be completely sure that the function isn't balanced.
 
 ### Quantum solution: the Deutsch-Jozsa algorithm
 
