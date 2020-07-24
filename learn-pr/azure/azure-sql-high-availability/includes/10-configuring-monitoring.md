@@ -13,7 +13,7 @@ A large part of this process is stepping back and thinking about the requirement
 
 The answers to these questions will help you in narrowing down what configuration you should deploy to meet your availability requirements.
 
-The last question, *Is your application ready?*, if often overlooked by the data professional. However, this consideration is crucial to actually achieving the SLA you desire. You need to make sure that not only your database is meeting your availability requirements, but also that your application is meeting those requirements. Additionally, you'll want to make sure that the connectivity between the data and the application(s) meets your requirements. As an example, if your application and database are in different regions, this will increase the network latency. You should, as a best practice, place your application and data as close together as possible. Throughout the module, you've also seen how important implementing retry logic in your applications is to mainintaing availability.
+The last question, *Is your application ready?*, if often overlooked by the data professional. However, this consideration is crucial to actually achieving the SLA you desire. You need to make sure that not only your database is meeting your availability requirements, but also that your application is meeting those requirements. Additionally, you'll want to make sure that the connectivity between the data and the application(s) meets your requirements. As an example, if your application and database are in different regions, this will increase the network latency. You should, as a best practice, place your application and data as close together as possible. Throughout the module, you've also seen how important implementing retry logic in your applications is to maintaining availability.
 
 ## Monitoring availability
 
@@ -39,14 +39,13 @@ You can always use standard SQL Server tools such as SQL Server Management Studi
 
 In addition, interfaces such as **az CLI** can show the status of Azure SQL such as:
 
-**az sql mi list** - List the status of managed instances
-**az sql db list** - List the status of Azure SQL Databases
+- **az sql mi list** - List the status of managed instances
+- **az sql db list** - List the status of Azure SQL Databases
 
-PowerShell cmdlets can also be used to find out the availability of an Azure SQL Database such as:
+PowerShell commands can also be used to find out the availability of an Azure SQL Database such as:
 
-**Get-AzSQLDatabase** - Get all the databases on a server and their details including status
-
-**REST APIs**, although not as simple to use, can also be used to get the status of Managed Instances and Databases.
+- **Get-AzSQLDatabase** - Get all the databases on a server and their details including status
+- **REST APIs**, although not as simple to use, can also be used to get the status of Managed Instances and Databases.
 
 ### Backup and Restore History
 
