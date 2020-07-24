@@ -25,7 +25,7 @@ quiz:
     - content: 'A quantum computer is faster than classical computers for all tasks.'
       isCorrect: false
       explanation: 'Quantum computers provide an advantage only for certain tasks.'
-    - content: 'A quantum computer exploits superposition, interference, and entanglement to make calculations faster than classical computers.'
+    - content: 'A quantum computer exploits superposition, interference, and entanglement to do calculations faster than classical computers.'
       isCorrect: true
       explanation: 'Learning how to exploit these phenomena is the key to design better quantum algorithms.'
       
