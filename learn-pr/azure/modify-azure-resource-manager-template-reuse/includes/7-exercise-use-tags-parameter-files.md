@@ -70,7 +70,7 @@ First, you create a parameter to use as a resource tag in your template.
 
 ::: zone pivot="cli"
 
-1. Deploy the updated ARM template to Azure. Be sure to use the same `storagePrefix` that you used before.
+- Deploy the updated ARM template to Azure. Be sure to use the same `storagePrefix` that you used before.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -87,7 +87,7 @@ First, you create a parameter to use as a resource tag in your template.
 
 ::: zone pivot="powershell"
 
-1. Deploy the updated ARM template to Azure. Be sure to use the same `storagePrefix` that you used before.
+- Deploy the updated ARM template to Azure. Be sure to use the same `storagePrefix` that you used before.
 
     ```azurepowershell
     $templateFile = "azuredeploy.json"
@@ -105,7 +105,7 @@ First, you create a parameter to use as a resource tag in your template.
 ### Verify that the new tags are in the deployment
 
 1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the Storage account you deployed.
-1. You see the **Environment: Dev** and **Project: Tutorial** tags:
+1. You see the **Environment : Dev** and **Project : Tutorial** tags:
 
     :::image type="content" source="../media/7-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Tutorial Storage account tags." border="true":::
 
@@ -114,7 +114,7 @@ First, you create a parameter to use as a resource tag in your template.
 There are currently three parameters to fill in each time you deploy this template. Each user of the template can create a file to hold their parameter values. Here, you create a parameter file to use with your template.
 
 1. In Visual Studio Code, create another file. Call it **azuredeploy.parameters.dev.json**.
-1. In this file, you put the values for the template parameters that you want to have input into the template for the development environment. Change a tag value to see that the deployment makes a change. For example, you could change `projectName` to **Learn**:
+1. In this file, you add the values for the template parameters that you want to have input into the template for the development environment. Change a tag value to see that the deployment makes a change. For example, you could change `projectName` to **Learn**:
 
     ```json
     {

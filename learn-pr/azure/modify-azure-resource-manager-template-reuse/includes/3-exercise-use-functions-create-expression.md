@@ -94,7 +94,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 You learned about the deployment commands in the previous module. Here, we're using the Azure CLI ```az deployment group create``` command.
 
-1. Deploy the template by using Azure CLI commands in the Visual Studio Code terminal. Remember to replace `{your-prefix}` with a different string. For example, you could use **storage**.
+- Deploy the template by using Azure CLI commands in the Visual Studio Code terminal. Remember to replace `{your-prefix}` with a different string. For example, you could use **storage**.
 
     ```azurecli
     templateFile="azuredeploy.json"

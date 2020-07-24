@@ -37,7 +37,7 @@ quiz:
     - content: "()"
       isCorrect: false
       explanation: "A template expression always starts and ends with brackets: []."
-  - content: "Template expressions can be used which section or sections of a template?" 
+  - content: "Template expressions can be used in which section or sections of a template?" 
     choices:
     - content: "The ```variables:{}``` section"
       isCorrect: false
