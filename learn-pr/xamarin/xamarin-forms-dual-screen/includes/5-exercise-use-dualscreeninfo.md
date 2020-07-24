@@ -1,10 +1,10 @@
 In this exercise, we're going to fix how the panes display on single-screens, so that the app adapts to all device types.
 
-We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise1 > final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.
+We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise2 > start** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.
 
 ## Add DualScreenInfo to AllFlagsPage
 
-1. Create a `DeviceIsSpanned` property using `DualScreenInfo`:
+1. In **AllFlagsPage.xaml.cs** create a `DeviceIsSpanned` property using `DualScreenInfo`:
 
     ```csharp
     using Xamarin.Forms.DualScreen;
@@ -19,7 +19,7 @@ We'll continue with the solution from the previous exercise. If you don't alread
     bool wasSpanned = false;
     ```
 
-1. Add `OnAppearing` and `OnDisappearing` overrides to respond to dual-screen property changes:
+1. Add `OnAppearing` and `OnDisappearing` overrides to respond to dual-screen property changes (you'll also need `using System.ComponentModel;`):
 
     ```csharp
     protected override void OnAppearing()
@@ -92,6 +92,11 @@ We'll continue with the solution from the previous exercise. If you don't alread
     - `OnAppearing`
     - `OnDisappearing`
     - `DualScreen_PropertyChanged`
+
+    and these `using` statements:
+
+    - `using Xamarin.Forms.DualScreen;`
+    - `using System.ComponentModel;`
 
 1. In **FlagDetailsPage.xaml.cs** implement `UpdateLayouts` as shown here:
 

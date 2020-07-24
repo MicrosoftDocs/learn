@@ -1,6 +1,6 @@
 In this exercise, we're going to adapt the display for larger screen sizes like tablets and desktops. `TwoPaneView` can set the two panes to specific widths or proportionally, and we can use the same navigation strategy as for dual-screen display.
 
-We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise2 > final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.
+We'll continue with the solution from the previous exercise. If you don't already have it, you can open the solution from the **exercise3 > start** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)] in Visual Studio.
 
 ## Detect larger screens
 
@@ -9,7 +9,7 @@ We can use the Xamarin.Forms `Device` class to detect whether the app is running
 Add the following code to **AllFlagsPage.xaml.cs**:
 
 ```csharp
-public bool DeviceIsBigScreen => (Device.Idiom == TargetIdiom.Tablet) || (Device.Idiom == TargetIdiom.Desktop);
+bool DeviceIsBigScreen => (Device.Idiom == TargetIdiom.Tablet) || (Device.Idiom == TargetIdiom.Desktop);
 ```
 
 ## Update layout and navigation

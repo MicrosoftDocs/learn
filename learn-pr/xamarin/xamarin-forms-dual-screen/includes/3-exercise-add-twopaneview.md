@@ -15,8 +15,8 @@ In this exercise, you'll work with an existing list-detail app. The app has a li
 
 ## Add dual-screen NuGet
 
-1. Add the **Xamarin.Forms.Dualscreen** NuGet to your solution.
-1. In the Android project, add this `Init` method in the `MainActivity.OnCreate` method:
+1. Add the **Xamarin.Forms.Dualscreen** NuGet to your solution (include it in every project).
+1. In the **Android** project, add this `Init` method in the `MainActivity.OnCreate` method in **MainActivity.cs**:
 
    ```csharp
     Xamarin.Forms.DualScreen.DualScreenService.Init(this);
@@ -38,7 +38,7 @@ Now that the project is configured for dual-screen support, you will refactor th
 
 The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-side on a dual-screen device you need to extract the controls into a custom view control:
 
-1. Create a new item in the FlagFacts project by right-clicking on the project and choosing **Add > New Item...**.
+1. Create a new item in the **FlagFacts** project by right-clicking on the project and choosing **Add > New Item...**.
 1. Choose the XAML **Content View**, and name it `FlagView`.
 1. Copy the `<ScrollView>` and all its contents from **FlagDetailsPage.xaml** and paste into **FlagView.xaml**. Leave the `ToolbarItems` in the original content page.
 1. Move the `OnMoreInformation` method from the content page to the **FlagView.xaml.cs** codebehind:
@@ -50,13 +50,15 @@ The "detail view" in the app is `FlagDetailsPage`. To show the details side-by-s
     }
     ```
 
+    You will need to add `using Xamarin.Essentials;` and `using FlagData;` statements to the top of the file.
+
 1. In the **FlagDetailsPage.xaml**, add a new namespace so we can add locally defined classes:
 
     ```csharp
     xmlns:views="clr-namespace:FlagFacts"
     ```
 
-1. In the **FlagDetailsPage.xaml**, delete the existing `<ScrollView>` content and replace with a reference to the new view:
+1. Also in the **FlagDetailsPage.xaml**, delete the existing `<ScrollView>` content and replace with a reference to the new view:
 
     ```csharp
     <ContentPage.Content>
