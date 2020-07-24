@@ -7,15 +7,15 @@ will be able to explore in detail some of these algorithms.
 
 First, we need to introduce the concept of *quantum oracle*. In many problems, we
 are interested in solving a problem while making the fewest number of uses of a
-function $f:\\{ 0,1 \\}^n \rightarrow \{0,1\}^m$. For example, if we're searching an element in
+function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For example, if we're searching an element in
 a database we can encode the problem in a binary function $f:
-\{0,1\}^n \rightarrow \{0,1\}$. The function $f(x)$ can be considered as a
+\\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$ can be considered as a
 black-box that outputs $1$ if the consulted element $x$ is our target, and $0$
 otherwise. An efficient search finds the target element with few uses of $f$.
 
 A quantum oracle is
 a quantum operation that is used to implement some black-box function $f:
-\{0,1\}^n \rightarrow \{0,1\}^m$. This
+\\{0,1\\}^n \rightarrow \\{0,1\\}^m$. This
 operation is implemented in a way that allows to evaluate the black-box function
 not only on individual inputs, but also on superposition of qubits.
 
@@ -56,7 +56,7 @@ improve classical results using superposition, interference and entanglement.
 ### Problem: finding out if a function is constant
 
 First let's introduce the problem we're going to solve. Suppose you're given a
-function $f(x):\{0,1\}^n\rightarrow\{0,1\}$, this is, a binary function that
+function $f(x):\\{0,1\\}^n\rightarrow\\{0,1\\}$, this is, a binary function that
 takes a string of bits and outputs a single bit. You're guaranteed that the
 function is:
 
@@ -121,7 +121,7 @@ searching for a specific card in a deck of cards.
 ### Problem: Search in an unstructured database
 
 In this case, the function that we use to construct the oracle is a function
-$f(x):\{0,1\}^n\rightarrow\{0,1\}$, and our task is to find an input $x'$ for
+$f(x):\\{0,1\\}^n\rightarrow\\{0,1\\}$, and our task is to find an input $x'$ for
 which $f(x')=1$. For example, in the card searching problem the input of $f(x)$
 would be any card of the deck, represented by $x$, and the function $f$ would be
 a comparison between our reference card and the drawn card. If the drawn card
@@ -223,7 +223,7 @@ interference and entanglement.
 ## Deutsch's problem
 
 First let's introduce the problem we're going to solve. Suppose you're given a
-function $f(x):\{0,1\}^n\rightarrow\{0,1\}$, this is, a binary function that
+function $f(x):\\{0,1\\}^n\rightarrow\\{0,1\\}$, this is, a binary function that
 takes a string of bits and outputs a single bit. You're guaranteed that the
 function is:
 
@@ -296,7 +296,7 @@ will be crucial for our algorithm.
 ### Algorithm for $n=1$
 
 Let's introduce the algorithm for the simplest case in which we have a function
-$f:\{0,1\}\rightarrow\{0,1\}$, this is, a binary function that maps bits to
+$f:\\{0,1\\}\rightarrow\\{0,1\\}$, this is, a binary function that maps bits to
 bits. This function can be constant if $f(x)=0$ or $f(x)=1$ and balanced if
 $f(x)=x$ (identity) or $f(x)=x+1$ (inversion). Classically, we need to evaluate
 $f$ two times to determine if the function is constant or balanced. With quantum
@@ -387,7 +387,7 @@ operation PhaseOracle_Constant_One (x : Qubit[]) : Unit {
 #### Phase oracle for $f(x)=x_{n-1}$
 
 In this case the function $f(x)$ returns the last binary digit of the bit string
-$x=(x_0x_1...x_{n-1}$. Since in the set $\{0,1\}^n$ of all possible strings of
+$x=(x_0x_1...x_{n-1}$. Since in the set $\\{0,1\\}^n$ of all possible strings of
 length $n$ there are the same number of strings ending with $1$ and $0$, the
 function is balanced. The action of the phase oracle is:
 
