@@ -24,7 +24,7 @@ twoPaneView.Pane2Length = new GridLength(3, GridUnitType.Star);
     Pane2Length="3*">
 ```
 
-The panes will be laid out in either wide or tall mode, and sized according to the pane length values. In addition to proportional (`Star`) values, you can also use absolute pixel sizes.
+The panes will be laid out in either wide or tall mode, and sized according to the pane length values. In addition to proportional (`Star`) values, you can also use fixed sizes.
 
 When the app is spanned across two screens, these properties are ignored. Each pane will fill an entire screen unless forced into `SinglePane` mode.
 
@@ -38,8 +38,8 @@ twoPaneView.TallModeConfiguration = TwoPaneViewTallModeConfiguration.TopBottom;
 twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.LeftRight;
 // or force only a single view to appear
 twoPaneView.TallModeConfiguration = TwoPaneViewTallModeConfiguration.SinglePane;
-twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.SinglePane
-twoPaneView.PanePriority = TwoPaneViewPriority.Pane1 // or Pane2
+twoPaneView.WideModeConfiguration = TwoPaneViewWideModeConfiguration.SinglePane;
+twoPaneView.PanePriority = TwoPaneViewPriority.Pane1; // or Pane2
 ```
 
 ```xaml
