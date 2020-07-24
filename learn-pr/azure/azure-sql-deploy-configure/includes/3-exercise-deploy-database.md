@@ -7,9 +7,7 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. In the top search bar, type **Azure SQL** and review what appears:  
-
-    :::image type="content" source="../media/3-search.png" alt-text="Search for Azure SQL":::  
+1. In the top search bar, type **Azure SQL** and review what appears.  
 
     There are a lot of different items and categories here, but basically this menu gives you filters for what you can search on. Let's break them down:
     * **Services**: if you select Services, then you're able to see the existing resources (i.e. already deployed) that you have all together. For example, if you clicked Azure SQL, you would see all of your SQL VMs, Databases, Logical servers, Managed Instances, and pools.
@@ -41,10 +39,6 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
     |**Want to use SQL elastic pool?**     |   No      |
     |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**       |
 
-    The **Basics** pane should now look similar to the image below:  
-
-    :::image type="content" source="../media/3-basics-pane.png" alt-text="Review basics selections":::
-
 1. Select **Next : Networking**.  
 
 1. For **Connectivity method**, select **Public endpoint**. Select **Yes** for both **Allow Azure services and resources to access this server** and **Add current client IP address**.
@@ -53,7 +47,7 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
 1. On the **Additional settings** tab, for Azure SQL Database you have the option to select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, select **Sample**.  
 
-1. When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable Advanced Data Security (ADS) on a free trial. Select **Start free trial**. 
+1. When you deploy Azure SQL Database in the portal, you are prompted if you'd like to enable Advanced Data Security (ADS) on a free trial. Select **Start free trial**.
 
     After the free trial, it is billed according to the Azure Security Center Standard Tier pricing. If you choose to enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection.
 
@@ -105,8 +99,6 @@ Keep that in mind as a reference for comparison as you complete the following st
 
     > [!NOTE]
     > Depending on your local configuration (e.g. VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
-
-    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Connect to SQL Database in SSMS":::  
 
 1. Expanding the databases and system databases should result in a view similar to the following.  
 

@@ -26,7 +26,6 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
     |**Server group**     | Azure SQL Database        |
     |**Name (optional)**     |  Leave blank       |
 
-    :::image type="content" source="../media/4-ads-connect-db.png" alt-text="Connecting to Azure SQL database in ADS":::  
 
 1. In the **Connections** tab, under **Servers**, you should now see your Azure SQL Database connection (SQL Server connection shown in image for comparison only).  
 
