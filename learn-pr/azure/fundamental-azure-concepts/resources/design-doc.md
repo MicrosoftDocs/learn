@@ -41,7 +41,7 @@ Upon completion of this module, the learner will be able to:
 Identify the subtasks of *Introduction to Azure Fundamentals*
 
 | Subtask | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet?
-|---|---|---|---|---|
+| --- | --- | --- |
 | TODO | Knowledge check | TODO |
 | TODO | Knowledge check | TODO |
 
