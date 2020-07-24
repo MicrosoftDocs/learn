@@ -108,21 +108,13 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
 1. In the left-hand task menu, under Security, select **Auditing**. Select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server.  
 
-    :::image type="content" source="../media/3-db-audit.png" alt-text="Database-level auditing blade":::  
-
 1. Set **Auditing** to **ON**.  
 
 1. Select **Log Analytics (Preview)** and the **Configure** button.  
 
-    :::image type="content" source="../media/3-server-audit.png" alt-text="Server-level auditing blade":::  
-
 1. Select **+ Create New Workspace**.  
 
-    :::image type="content" source="../media/3-new-workspace.png" alt-text="Create a new workspace":::  
-
-    Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace `azuresql<unique ID>-la`, using your unique ID for your resources. Select **OK**.  
-
-    :::image type="content" source="../media/3-workspace-details.png" alt-text="Details for new workspace":::  
+1. Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace `azuresql<unique ID>-la`, using your unique ID for your resources. Select **OK**.  
 
     This may take a few moments to validate and create. You should now see your Log Analytics account.  
 
@@ -194,8 +186,6 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     A new way may be to use the Audit logs in the Azure portal. Navigate to your Azure SQL Database in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), e.g. **AdventureWorks**. In the left-hand menu, under Security, select **Auditing** and then select **View audit logs**.  
 
-    :::image type="content" source="../media/3-view-audit-logs.png" alt-text="Select view audit logs":::
-
 1. Select **Log Analytics**. If you see a **Get Started** screen, select **OK**. This then takes you to a query editor that allows you to query logs using Kusto query language (KQL), which is meant to be easy to use for querying logs for SQL professionals.  
 
     :::image type="content" source="../media/3-log-analytics.png" alt-text="Select log analytics":::  
@@ -215,7 +205,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Log analytics results":::
 
-    Note that the logs can take a few minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
+    Note that the logs can take a 5-10 minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
 
 1. In this example, the date/time is `2020-02-10 09:28:54.509`. The required format is slightly different. Update it using this example as a reference and to the definition of `$before_error_time`.  
 

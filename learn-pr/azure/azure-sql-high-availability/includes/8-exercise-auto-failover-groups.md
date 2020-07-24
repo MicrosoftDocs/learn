@@ -7,7 +7,7 @@ To configure auto-failover groups for a database(s) and observe the results in a
 1. Configure environment
 1. Create an empty Azure SQL Database server in the failover region
 1. Create a failover group between the servers
-1. 1. Configure the network
+1. Configure the network
 1. Add database(s) to the failover group  
 1. Configure your command prompt applications
 1. Understand the running applications
