@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ROBOTS: NOINDEX
-title: "Exercise: Use preinstalled tools to do data science"
+title: "Exercise: Use RStudio and other preinstalled tools"
 durationInMinutes: 15
 content: |
   [!include[](includes/use-preinstalled-tools-to-do-data-science.md)]
