@@ -58,7 +58,7 @@ The structure of manifest files differs depending on the type of resource that y
 
 The first two entries in all manifest files have two important keys `apiVersion` and `kind`. Here is an example of a deployment file.
 
-```yml
+```yaml
 apiVersion: apps/v1 # Where in the API it resides
 kind: Deployment # The kind of workload we're creating
 ```
@@ -69,7 +69,7 @@ The `kind` key defines the workload this deployment will create.
 
 Other common keys for all the files are the `metadata` and `name` keys. All Kubernetes resources **must** have a name, and this name goes inside the `metadata` key.
 
-```yml
+```yaml
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -82,7 +82,7 @@ Deployments make use of a `label` to find and group pods. You define the label a
 
 Here is an example. Notice the `matchLabels` value defined in the `selector` definition added to the `spec` definition.
 
-```yml
+```yaml
 # deployment.yaml
 # ...
 spec:

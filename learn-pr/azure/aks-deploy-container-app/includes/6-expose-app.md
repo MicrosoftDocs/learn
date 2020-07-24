@@ -70,7 +70,7 @@ These rules are defined in the `rules` key of the manifest file. Each rule is a 
 
 For example, assume you want to allow clients to access your website using the url `http://example.com/site`. You want to route traffic to your video rendering service website. Here is an example of the defined ingress rule to allow this behavior.
 
-```yml
+```yaml
 rules:
   - host: example.com # A FQDN that describes the host where that rule should be applied
     http:
@@ -89,7 +89,7 @@ An annotation allows you to attach non-identifying metadata such as ingress conf
 
 Here is an example of the annotation in a manifest file that specifies the use of the HTTP Application Routing Addon.
 
-```yml
+```yaml
 #ingress.yaml
 apiVersion: extensions/v1beta1
 kind: Ingress

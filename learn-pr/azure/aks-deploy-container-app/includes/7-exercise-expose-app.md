@@ -19,7 +19,7 @@ Like all resources, services also have manifest files describing how they should
 
 1. Open the `service.yaml` file and add the following code section of YAML.
 
-    ```yml
+    ```yaml
     #service.yaml
     apiVersion: v1
     kind: Service
@@ -33,7 +33,7 @@ Like all resources, services also have manifest files describing how they should
 
     Update the `service.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     #service.yaml
     apiVersion: v1
     kind: Service
@@ -47,7 +47,7 @@ Like all resources, services also have manifest files describing how they should
 
     Update the `service.yaml` file to match the following YAML.
 
-      ```yml
+      ```yaml
       #service.yaml
       apiVersion: v1
       kind: Service
@@ -63,7 +63,7 @@ Like all resources, services also have manifest files describing how they should
 
     Update the `service.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     #service.yaml
     apiVersion: v1
     kind: Service
@@ -125,7 +125,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
 1. Open the `service.yaml` file and add the following code section of YAML.
 
-    ```yml
+    ```yaml
     #ingress.yaml
     apiVersion: extensions/v1beta1
     kind: Ingress
@@ -139,7 +139,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     Update the `ingress.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     #ingress.yaml
     apiVersion: extensions/v1beta1
     kind: Ingress
@@ -149,9 +149,9 @@ To expose your website to the world via DNS, you must create an ingress controll
         kubernetes.io/ingress.class: addon-http-application-routing
     ```
 
-1. Set the Fully Qualified Domain Name (FQDN) of the host allowed access to the cluster. 
+1. Set the Fully Qualified Domain Name (FQDN) of the host allowed access to the cluster.
 
-	In the Cloud Shell,  run  the `az network dns zone list` command to query the Azure DNS zone list. 
+	In the Cloud Shell,  run  the `az network dns zone list` command to query the Azure DNS zone list.
 
     ```bash
     az network dns zone list --output table
@@ -169,7 +169,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     Update the `ingress.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     #ingress.yaml
     apiVersion: extensions/v1beta1
     kind: Ingress
@@ -182,11 +182,11 @@ To expose your website to the world via DNS, you must create an ingress controll
         - host: contoso.<zone-name> # Which host is allowed to enter the cluster
     ```
 
-1. Next up, add the backend configuration to your ingress rule. Create a key named `http` and allow the `http` protocol to pass through.  Then, define the `paths` key that will allow you to filter whether this rule applies to all paths of the website or only some of them. 
+1. Next up, add the backend configuration to your ingress rule. Create a key named `http` and allow the `http` protocol to pass through.  Then, define the `paths` key that will allow you to filter whether this rule applies to all paths of the website or only some of them.
 
     Update the `ingress.yaml` file to match the following YAML.
 
-    ```yml
+    ```yaml
     #ingress.yaml
     apiVersion: extensions/v1beta1
     kind: Ingress
