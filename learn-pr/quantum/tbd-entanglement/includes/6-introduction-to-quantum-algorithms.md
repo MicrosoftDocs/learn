@@ -8,7 +8,7 @@ will be able to explore in detail some of these algorithms.
 First, we need to introduce the concept of *quantum oracle*. In many problems we
 are interested in solving a problem while making the fewest number of uses of a
 function $f:
-\left \{ 0,1 \right \}^n \rightarrow \{0,1\}^m$. For example, if we are searching an element in
+\left\{ 0,1 \right\}^n \rightarrow \{0,1\}^m$. For example, if we are searching an element in
 a database we can encode the problem in a binary function $f:
 \{0,1\}^n \rightarrow \{0,1\}$. The function $f(x)$ can be considered as a
 black-box that outputs $1$ if the consulted element $x$ is our target, and $0$
