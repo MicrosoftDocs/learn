@@ -20,9 +20,9 @@ a quantum operation that is used to implement some black-box function $f:
 operation is implemented in a way that allows to evaluate the black-box function
 not only on individual inputs, but also on superposition of qubits.
 
->[!NOTE] This is not the same as being able to calculate the function on all
->inputs at once, since you'll be able to extract only the evaluation of the qubit you
->decide to measure!
+> [!NOTE] This is not the same as being able to calculate the function on all
+> inputs at once, since you'll be able to extract only the evaluation of the qubit you
+> decide to measure!
 
 The oracle has to act on quantum states instead of classical bits. To enable
 this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
@@ -38,13 +38,13 @@ In our case, since $f$ is binary it can either no change the phase if f(x)=0, or
 add a $-1$ phase if f(x)=1. These phase shifts applied to superposition states
 will be crucial for our algorithm.
 
->[!NOTE] Remember that multiplying a complex number $z$ by another complex
->number $u$ of module $1$ means to modify the phase of $z$ without affecting its
->magnitude. To see this we just need to represent the multiplication in polar
->coordinates. The number $z$ in polar coordinates is $z=|z|e^i\phi_z$, where
->$\phi_z$ is the phase of $z$. The number $y$ is just $y=e^{i\phi_y}$ since it
->has module one. Then the multiplication is
->$zu=|z|e^{i\phi_z}e^{i\phi_y}=|z|e^{i(\phi_z+\phi_y)}$. This is, a phase shift. -->
+> [!NOTE] Remember that multiplying a complex number $z$ by another complex
+> number $u$ of module $1$ means to modify the phase of $z$ without affecting its
+> magnitude. To see this we just need to represent the multiplication in polar
+> coordinates. The number $z$ in polar coordinates is $z=|z|e^i\phi_z$, where
+> $\phi_z$ is the phase of $z$. The number $y$ is just $y=e^{i\phi_y}$ since it
+> has module one. Then the multiplication is
+> $zu=|z|e^{i\phi_z}e^{i\phi_y}=|z|e^{i(\phi_z+\phi_y)}$. This is, a phase shift. -->
 
 ## Deutsch-Jozsa algorithm
 
@@ -431,6 +431,6 @@ The algorithm is as follows:
 1. Measure every qubit: if all measurements results are $0$, the function is
    constant, otherwise, it is balanced.
 
-#### Implement the algorithm in Q#
+#### Implement the algorithm in Q# -->
 
-*Article under development* -->
+*Article under development*
