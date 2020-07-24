@@ -20,7 +20,7 @@ TODO: Image is a bit blurry.
 TODO: Can we show a better example and tie it to a specific recommendation? Looking at a recommendation around what you did in the prior exercises would be ideal ;)
 </div>
 
-![Depicts two Azure Advisor monitor results, one for document count and one for storage size.](../media/usage-costs.png)
+![Depicts two Azure Advisor monitor results, one for document count and one for storage size.](../media/6-usage-costs.png)
 
 ## Use spending limits to prevent accidental spending
 
@@ -40,7 +40,7 @@ TODO: Sonia, per our discussion, remove this paragraph ^ if it's out of place or
 
 Azure Reservations offers discounted prices on certain Azure services. To receive a discount, you reserve services and resources by paying in advance.
 
-![Depiction of two silos, indicating the 72% cost savings you can realize by using Azure Reservations rather than a Pay-As-You-Go subscription. ](../media/reservations.png)
+![Depiction of two silos, indicating the 72% cost savings you can realize by using Azure Reservations rather than a Pay-As-You-Go subscription. ](../media/6-reservations.png)
 
 For example, you can pre-pay for one year or three years of use of virtual machines, database compute capacity, database throughput, and other Azure resources.
 
@@ -68,7 +68,7 @@ Tags make it easier to identify groups that generate the biggest Azure costs, wh
 
 Azure Cost Management + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use.
 
-![Three graphics that depict a company's cost analysis by meter category, resource location, and resource group name.](../media/cost-management.png)
+![Three graphics that depict a company's cost analysis by meter category, resource location, and resource group name.](../media/6-cost-management.png)
 
 Azure Cost Management + Billing features include:
 

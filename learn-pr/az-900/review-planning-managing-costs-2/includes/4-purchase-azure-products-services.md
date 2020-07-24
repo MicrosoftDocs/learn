@@ -34,7 +34,7 @@ There are three main ways to purchase services on Azure. They are:
 
 You can bring up, or _provision_, Azure resources from the Azure portal or from the command line. The Azure portal arranges products and services by category. You simply select the services that fit your needs, and your account is billed according to Azure's "pay for what you use" model.
 
-![Depiction of the various Azure products with the Featured products selection highlighted, displaying names and short descriptions of those products.](../media/product-overview.png)
+![Depiction of the various Azure products with the Featured products selection highlighted, displaying names and short descriptions of those products.](../media/4-product-overview.png)
 
 <div style="background:yellow;">
 TODO: Update image - it's blurry.
@@ -86,7 +86,7 @@ Billing zones are a factor in determining the cost of some Azure services.
 
 [Bandwidth](https://azure.microsoft.com/pricing/details/bandwidth?azure-portal=true) refers to data moving in and out of Azure datacenters. Some inbound data transfers (data going into Azure datacenters), are free. For outbound data transfers (data leaving Azure datacenters), data transfer pricing is based on **Zones**.
 
-![Image that shows internet traffic traveling between two datacenters around a globe](../media/billing-zones.png)
+![Image that shows internet traffic traveling between two datacenters around a globe](../media/4-billing-zones.png)
 
 A Zone is a geographical grouping of Azure Regions for billing purposes. The following Zones exist and include some of the regions as listed below:
 
@@ -156,7 +156,7 @@ It displays Azure products in categories, which you add to your estimate and the
 
 You also can access pricing details, product details, and documentation for each product from within the Pricing Calculator.
 
-![Screenshot of a Pricing Calculator estimate](../media/pricing-calculator.png)
+![Screenshot of a Pricing Calculator estimate](../media/4-pricing-calculator.png)
 
 The options that you can configure in the Pricing Calculator vary between products, but may include:
 

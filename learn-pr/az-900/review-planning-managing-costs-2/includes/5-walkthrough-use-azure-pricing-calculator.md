@@ -23,7 +23,7 @@ The team decides to:
 
 Here's a diagram that shows the basic configuration:
 
-![Illustration of described sample architecture: Application Gateway feeding to two virtual machines that take data from a single Azure SQL database.](../media/2-estimate-costs-architecture.png)
+![Illustration of described sample architecture: Application Gateway feeding to two virtual machines that take data from a single Azure SQL database.](../media/5-estimate-costs-architecture.png)
 
 In practice, you would define your requirements in greater detail. But here are some basic requirements that came up during the meeting:
 
@@ -41,7 +41,7 @@ Let's start with a quick tour of the Pricing calculator.
 
 1. Note the tabs at the top:
 
-    ![](../media/pricing-calculator-tabs.png)
+    ![](../media/5-pricing-calculator-tabs.png)
 
 Here's what you'll find under each tab:
 
@@ -77,7 +77,7 @@ Here you add each Azure service that you need to the calculator and then configu
 
 1. Scroll to the bottom of the page. You see that each service is listed with its default configuration.
 
-    ![](../media/pricing-calculator-estimate.png)
+    ![](../media/5-pricing-calculator-estimate.png)
 
 ### Configure services to match your requirements
 
@@ -126,7 +126,7 @@ Here you add each Azure service that you need to the calculator and then configu
 
 At the bottom of the page, you see the total estimated cost of running the solution. You can change the currency type if you'd like.
 
-![](../media/pricing-calculator-estimated-cost.png)
+![](../media/5-pricing-calculator-estimated-cost.png)
 
 At this point, you have a few options:
 

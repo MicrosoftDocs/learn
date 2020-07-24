@@ -21,7 +21,7 @@ With the TCO Calculator, you enter the details of your on-premises workloads and
 
 The TCO Calculator breaks down into these three steps:
 
-![TODO](../media/total-cost-ownership-steps.png)
+![TODO](../media/2-total-cost-ownership-steps.png)
 
 Let's break down each step.
 
@@ -54,11 +54,11 @@ To improve the accuracy of the TCO Calculator results, you adjust the values so 
 
 Choose a time frame between 1 and 5 years; the TCO Calculator generates a report that's based on the information you've entered.
 
-![Two pie charts comparing total cost of ownership in the datacenter versus on Azure. For the datacenter, total cost of ownership is $777,258. The same workload on Azure is estimated at $107,569.](../media/tco-report-piecharts.png)
+![Two pie charts comparing total cost of ownership in the datacenter versus on Azure. For the datacenter, total cost of ownership is $777,258. The same workload on Azure is estimated at $107,569.](../media/2-tco-report-piecharts.png)
 
 For each category (compute, datacenter, networking, storage, and IT labor),  you can also view a side-by-side comparison of the cost breakdown of operating those workloads on-premises versus operating them on Azure.
   
-![A diagram showing the side-by-side cost breakdown across compute, datacenter, networking, and storage categories.](../media/tco-report-detailed-cost.png)
+![A diagram showing the side-by-side cost breakdown across compute, datacenter, networking, and storage categories.](../media/2-tco-report-detailed-cost.png)
 
 You can download, share, or save this report to review later in more detail.
 
