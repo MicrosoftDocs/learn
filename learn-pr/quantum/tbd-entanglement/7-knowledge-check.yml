@@ -36,8 +36,8 @@ quiz:
       explanation: 'The probability of obtaining the qubit state is the absolute value of the probability amplitude squared.'
     - content: 'A complex number encoding the probability and the phase associated to such qubit state.'
       isCorrect: true
-      explanation: 'We can obtain the the probability by squaring the absolute value of the probability amplitude.'
-    - content: 'A complex number whose absolute value squared tell us the probability of the algorithm to succeed.'
+      explanation: 'We can obtain the probability by squaring the absolute value of the probability amplitude.'
+    - content: 'A complex number whose absolute value squared tells us the probability of the algorithm to succeed.'
       isCorrect: false
       explanation: 'Probability amplitudes do not tell us anything about the probability of the algorithm to succeed.'
 
