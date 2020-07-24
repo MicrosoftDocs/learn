@@ -28,6 +28,7 @@ products:
 - aspnet
 - azure-web-apps
 - azure-application-insights
+- dotnet
 units:
 - learn.azure.aspnet-logging.1-introduction
 - learn.azure.aspnet-logging.2-exercise-setup-app-deploy-resources

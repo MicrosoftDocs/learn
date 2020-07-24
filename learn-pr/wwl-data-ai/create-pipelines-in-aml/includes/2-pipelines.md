@@ -20,7 +20,8 @@ Common kinds of step in an Azure Machine Learning pipeline include:
 - **DatabricksStep**: Runs a notebook, script, or compiled JAR on a databricks cluster.
 - **AdlaStep**: Runs a U-SQL job in Azure Data Lake Analytics.
 
-> **Note**: For a full list of supported step types, see [azure.pipeline.steps package documentation](https://aka.ms/AA70rrh).
+> [!NOTE]
+> For a full list of supported step types, see [azure.pipeline.steps package documentation](https://aka.ms/AA70rrh).
 
 ### Defining steps in a pipeline
 

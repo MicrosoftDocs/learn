@@ -51,7 +51,7 @@ SaaS provides the same benefits as IaaS, but again there some additional benefit
 
 
 - **Disadvantages**
-    - **Software limitations**. There may be some limitations to a software application that might affect how users work. Any limitations should be taken into consideration when considering which PaaS platform is best suited for a workload.
+    - **Software limitations**. There may be some limitations to a software application that might affect how users work. Since you are using as-is software you don't have direct control of features.  Any business needs and software limitations should be taken into consideration when considering which SaaS platform is best suited for a workload.
 
 
 

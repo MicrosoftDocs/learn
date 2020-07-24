@@ -26,7 +26,7 @@ To create your DNS zone:
    |---------|---------|
    |Subscription     |  Concierge subscription       |
    |Resource group    |   <rgn>[sandbox resource group name]</rgn>      |
-   |Name   |   wideworldimports.com    |
+   |Name   |   The name needs to be unique in the sandbox. So use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
 1. Select **Review + create**.
 1. Select **Create**. It will take a few minutes to create the DNS zone.
@@ -44,7 +44,7 @@ Now that the DNS zone exists, you need to create the necessary records to suppor
 The primary record to create is the A record. This record contains the pairing between the IP address and the domain name. The A record can have multiple entries, called record sets. In record sets, the domain name remains constant, while the IP addresses are different.
 
 1. In the Azure portal, select **All Resources**.
-1. Select **wideworldimports.com**.
+1. Select the DNS zone you created (wideworldimportsXXXX.com).
 1. Select **+ Record set**. 
 
     ![Screenshot of the DNS zone page, with + Record set highlighted](../media/4-add-a-record.png)
@@ -76,19 +76,19 @@ Even though we don't have a registered domain, it's still possible to verify tha
 
 Here's how to use `nslookup` to verify the DNS zone configuration.
 
-1. Use Cloud Shell to run the following command. Replace the name server address with one of the NS values you copied after you created the DNS zone.
+1. Use Cloud Shell to run the following command. Replace the DNS zone name with the zone you created. Also replace the name server address with one of the NS values you copied after you created the DNS zone.
 
     ```bash
-    nslookup www.wideworldimports.com <name server address>
+    nslookup www.wideworldimportsXXXX.com <name server address>
     ```
 
    The command should look something like the following:
 
     ```bash
-    nslookup www.wideworldimports.com ns1-07.azure-dns.com
+    nslookup www.wideworldimportsXXXX.com ns1-07.azure-dns.com
     ```
 
-1. You should see that the host name `www.wideworldimports.com` resolves to `10.10.10.10`.
+1. You should see that your host name `www.wideworldimportsXXXX.com` resolves to 10.10.10.10.
 
    ![Screenshot of Cloud Shell, showing the nslookup results](../media/4-nslookup.png)
 

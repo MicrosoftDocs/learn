@@ -60,7 +60,7 @@ In this task, we will connect to our new virtual machine using RDP.
     :::image type="content" source="../media/virtual-machine-properties.png" alt-text="Screenshot of the virtual machine properties with the Connect button highlighted.":::
 
     > [!NOTE]
-    > The following directions tell you how to connect to your virtual machine from a Windows computer. On a Mac, you need an RDP client such as this Remote Desktop Client from the Mac App Store and on a Linux computer you can use an open source RDP client.
+    > The following directions tell you how to connect to your virtual machine from a Windows computer. On a Mac, you need an RDP client such as [this Remote Desktop Client from the Mac App Store](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466) and on a Linux computer you can use an open source RDP client.
 
 2. In the **Connect to virtual machine** page, keep the default options to connect with the public IP address over port 3389 and click **Download RDP File**.
 
@@ -108,4 +108,6 @@ Congratulations! You have created a web server that is accessible via its public
 
 
 > [!NOTE]
-> To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
+> **Non Sandbox** To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
