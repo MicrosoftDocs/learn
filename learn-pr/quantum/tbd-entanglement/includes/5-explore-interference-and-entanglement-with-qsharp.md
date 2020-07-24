@@ -1,5 +1,5 @@
-In this unit we are going to explore quantum interference with Q# and see how we
-can create quantum entanglement with Q#. We will also present the tool
+In this unit, we're going to explore quantum interference with Q# and see how we
+can create quantum entanglement with Q#. We'll also present the tool
 `ResourcesEstimator` in the Quantum Development Kit, that will help us to
 estimate the kind of resources we need to run our algorithms.
 
@@ -92,7 +92,7 @@ has amplitudes with non-zero phases.
 We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
 $\ket{1}$. Let's observe it using `DumpMachine`. We should first transform
 $\ket{0}$ into $\ket{1}$ with help of the `[X]`(todo) operation, and then apply
-`H` to obtain $\ket{1}.$ 
+`H` to obtain $\ket{1}.$
 
 The code would be:
 
@@ -125,11 +125,11 @@ And the output:
 
 We see how the phase for the state $\ket{0}$ is $\pi$ radians. This is because
 the negative numbers in the complex plane lie in the negative part of the
-x-axis, and therefore $\pi$ radians in polar coordinates. Note that, although
+x-axis, and so it's $\pi$ radians in polar coordinates. Note that, although
 the phase is non-zero, the probabilities remain the same.
 
 And what about complex amplitudes? If instead of using `X` we use the operation
-`Y` we will rotate the amplitudes to the imaginary axis. Let's see the effect.
+`Y` we'll rotate the amplitudes to the imaginary axis. Let's see the effect.
 
 The code would be:
 
@@ -165,14 +165,14 @@ y-axis of the complex plane.
 
 ## Creating entanglement with Q#
 
-Until now we used only single qubit operations, this is, operations that act
+Until now, we used only single qubit operations, this is, operations that act
 over single qubits individually. However, to get qubits entangled we need
 what is called **multi-qubit gates**.
 
 The most prominent example of a multi-qubit gate is the [`CNOT`](todo)
 operation. This operation takes two qubits as input, and flips the state of the
 second qubit (target qubit) if and only if the state of the first qubit (control
-qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT` we can
+qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT`, we can
 transform a register in the state $\ket{00}$ to the entangled state
 $\frac1{\sqrt2}(\ket{00}+\ket{11})$. Let's see how:
 
@@ -229,13 +229,13 @@ Entangled state after measurement:
 
 ### Controlled operations
 
-In Q# you can use the `Controlled` functor to transform any operation to a
+In Q#, you can use the `Controlled` functor to transform any operation to a
 controlled operation. For example, the operation `CNOT(control, target)` can
 also be expressed as `Controlled X([control], target)`. In general, you can put any
 operation in the place of `X`. For example, `Controlled Y([control], target)`
 applies the `Y` gate conditioned on the state of the control qubit.
 
-To learn more about the `Controlled` functor and many other Q# features you can
+To learn more about the `Controlled` functor and many other Q# features, you can
 take a look to the [Q# user guide](todo).
 
 ## Estimating resources with Q#
@@ -270,17 +270,17 @@ BorrowedWidth   0
 ```
 
 We need 1 CNOT gate, 1 Clifford gate to apply `H` and 4 measurements: 2 to
-obtain the qubits results, and two to reset them. The width of the circuit, i.e.
-the number of qubits used, is 2 since we only used two qubits. For this example,
-it was very simple to know how many resources we needed without having to use
-`ResourcesEstimator`. But Q# has high-level functionality and for most programs
-it is virtually impossible to know directly how many resources they need. This
-makes `ResourcesEstimator` a very useful tool for quantum developers.
+obtain the qubits results, and two to reset them. The width of the circuit, this
+is the number of qubits used, is 2 since we only used two qubits. For this
+example, it was very simple to know how many resources we needed without having
+to use `ResourcesEstimator`. But Q# has high-level functionality and for most
+programs it's virtually impossible to know directly how many resources they
+need. This makes `ResourcesEstimator` a very useful tool for quantum developers.
 
 To learn more about `ResourcesEstimator` and a detailed description of each of
 the parameters of the output and more estimation tools, you can read [the
 official documentation](todo).
 
-In the next unit, we are going to present different quantum algorithms that make
-use of superposition, interference and entanglement to outperform classical
-computers. 
+In the next unit, we're going to present different quantum algorithms that make
+use of superposition, interference, and entanglement to outperform classical
+computers.

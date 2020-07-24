@@ -150,5 +150,5 @@ of atoms in the Universe. In a quantum computer, the computer itself can be in a
 superposition. We just need to embed the quantum state of the system that we
 want to simulate and run the simulation with a specific set of operations.
 
-In the next section, we are going to see how can we use Q# to
+In the next section, we're going to see how can we use Q# to
 explore quantum interference and entanglement.
