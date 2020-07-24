@@ -158,9 +158,15 @@ Let's look at the same Query Store reports as we did in the previous exercise.
 
 ## Observe changes from Azure Metrics
 
-1. Look at the Overview blade again for the Compute Utilization. Notice the significant drop in overall CPU resource usage compared to the previous workload execution like the following:
+1. Look at the Overview blade again for the Compute Utilization:
 
     :::image type="content" source="../media/7-azure-portal-compute-query-comparison.png" alt-text="Azure_Portal_Compute_Query_Comparison.png":::
+
+    Notice the duration is shorter for high CPU utilization which means an overall drop in CPU resources required to run the workload.
+
+    This chart can be somewhat misleading. If you use Azure Metrics and do a CPU comparison the chart looks more like
+
+  :::image type="content" source="../media/7-azure-metrics-query-comparison.png" alt-text="Azure_Metrics_Compute_Query_Comparison.png":::
 
 > [!TIP]
 > If you continue to increase vCores for this database you can improve performance up to a threshold where all queries have plenty of CPU resources. This does not mean you must match the number of vCores to the number of concurrent users from your workload. In addition, you can change the Pricing Tier to use **Serverless** *Compute Tier* instead of **Provisioned** to achieve a more "auto-scaled" approach to a workload. For example, for this workload if you chose a min vCore value of 2 and max vCore value of 8, this workload would immediately scale to 8 vCores.
