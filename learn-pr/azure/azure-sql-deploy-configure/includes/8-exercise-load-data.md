@@ -1,33 +1,33 @@
-When you're bulk loading data, it has to come from somewhere. In Azure, it's very common to store or dump data into an Azure Blob storage because it is optimized for storing massive amounts of unstructured data at a relatively low cost.
+When you're bulk loading data, it has to come from somewhere. In Azure, it's common to store or dump data into an Azure Blob storage because it is optimized for storing massive amounts of unstructured data at a relatively low cost.
 
-In this scenario, AdventureWorks is receiving store return data based on store identification number (e.g. 1, 2, etc.). This return data is being stored in .dat files which are then pushed into Azure Blob storage. Once the data is in blob storage, Azure SQL needs a way to access it. You can do that by creating an external data source that has access to the Azure Storage account. You can control access to that storage account through Azure Active Directory, Shared Key authorization, or with a Shared access signature (SAS).
+In this scenario, AdventureWorks is receiving store return data based on store identification number (for example, 1, 2, etc.). This return data is being stored in .dat files, which are then pushed into Azure Blob storage. Once the data is in blob storage, Azure SQL needs a way to access it. You can do that by creating an external data source that has access to the Azure Storage account. You can control access to that storage account through Azure Active Directory, Shared Key authorization, or with a Shared access signature (SAS).
 
 In this exercise, you'll explore one scenario for bulk loading data from Azure Blob storage using T-SQL and Shared Access Signatures (SAS) into Azure SQL Database.
 
 There are two options for completing this exercise:
 
-1. `sqlcmd` in the Azure Cloud shell (follow along this page)
+1. `sqlcmd` in the Azure Cloud Shell (follow along this page)
 1. SQL Notebooks in Azure Data Studio
 
 Both exercises contain the same commands and content, so you can choose the option you prefer.
 
-### Option 1: `sqlcmd` in the Azure Cloud shell
+### Option 1: `sqlcmd` in the Azure Cloud Shell
 
-`sqlcmd` is a command-line utility which allows you to interact with SQL Server and Azure SQL using the command-line. In this exercise, you'll use `sqlcmd` in the PowerShell instance of the Azure Cloud shell. `sqlcmd` is installed by default, so it is easy to use from the cloud shell.
+`sqlcmd` is a command-line utility, which allows you to interact with SQL Server and Azure SQL using the command-line. In this exercise, you'll use `sqlcmd` in the PowerShell instance of the Azure Cloud Shell. `sqlcmd` is installed by default, so it is easy to use from the Azure Cloud Shell.
 
-1. Due to the way the Azure Cloud shell for bash is configured, you first need to change the terminal mode by running the following command in the integrated terminal (right-hand side of this browser).
+1. Due to the way the Azure Cloud Shell for bash is configured, you first need to change the terminal mode by running the following command in the integrated terminal (right-hand side of this browser).
 
     ```powershell
     TERM=dumb
     ```
 
-1. Run the following in the integrated terminal after modifying your server name and password.
+1. Run the following command in the integrated terminal after modifying your server name and password.
 
     ```powershell
     sqlcmd -S <server name>.database.windows.net -P <password> -U cloudadmin -d AdventureWorks
     ```
 
-1. First, you need to create a table and schema for our data to be loaded into. This is pretty straightforward, good old-fashioned T-SQL. Run the following in the terminal, now that you're connected to your database.
+1. First, you need to create a table and schema for our data to be loaded into. This is pretty straightforward, good old-fashioned T-SQL. Run the following script in the terminal, now that you're connected to your database.
 
     ```sql
     IF SCHEMA_ID('DataLoad') IS NULL
@@ -93,7 +93,7 @@ Both exercises contain the same commands and content, so you can choose the opti
     GO
     ```
 
-1. You're finally ready to bulk insert one of the store return files. Run the following, and while it completes, review the comments.
+1. You're finally ready to bulk insert one of the store return files. Run the following script, and while it completes, review the comments.
 
     ```sql
     SET NOCOUNT ON -- Reduce network traffic by stopping the message that shows the number of rows affected

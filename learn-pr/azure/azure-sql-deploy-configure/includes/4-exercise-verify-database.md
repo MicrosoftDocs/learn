@@ -76,7 +76,7 @@ In this option, you'll walk through some common queries against system functions
 
     :::image type="content" source="../media/4-version.png" alt-text="Result of SELECT @@VERSION":::  
 
-    Looks a bit different from SQL Server. But we can tell this is Azure SQL which is "versionless". The version number is not comparable to SQL Server. Azure SQL Database includes the most up to date changes in line with the latest release of SQL Server. However, querying the system function @@VERSION is common method to verify you can "query" SQL Server.
+    Looks a bit different from SQL Server. But we can tell this is Azure SQL which is "versionless". The version number is not comparable to SQL Server. Azure SQL Database includes the most up-to-date changes in line with the latest release of SQL Server. However, querying the system function @@VERSION is common method to verify you can "query" SQL Server.
 
 1. Next, you can determine the specific type of Azure SQL deployment. The number returned is one of the possible options below.
 
@@ -109,7 +109,7 @@ In this option, you'll walk through some common queries against system functions
 
     In the first result set, you'll notice that system databases msdb, tempdb, and model are not listed but only master and your user database. This is because the master database for a database server for Azure SQL Database is not the same as the physical master database installed with SQL Server. In Azure SQL Managed Instance, you will see the normal set of system database as with any SQL Server.
 
-    However, sys.objects looks very similiar to a normal SQL Server including system tables, internal tables, and user objects for the sample AdventureWorksLT database.
+    However, sys.objects looks very similar to a normal SQL Server including system tables, internal tables, and user objects for the sample AdventureWorksLT database.
 
 1. Let's next verify that all schedulers are online and we're detecting the expected available CPUs given we deployed with a 2 vCore model.
 
@@ -121,7 +121,7 @@ In this option, you'll walk through some common queries against system functions
 
     Two VISIBLE ONLINE schedulers are what you would expect when 2 vCores are available for the SQL Server where your SQL Database is deployed.
 
-1. For a SQL Server deployment, you may normally look at DMVs like sys.dm_os_sys_info AND sys.dm_process_memory to see limts for CPU, memory, and workers. These DMVs are not supported with Azure SQL Database, since the details of the host supporting the database are not exposed or controlled by the user. So the DMV sys.dm_user_db_resource_governance can be used to review capacities and limits for your deployed Azure SQL Database. Run and review the query results below and compare this to your Pricing Tier and the limits documented for your deployed tier.
+1. For a SQL Server deployment, you may normally look at DMVs like sys.dm_os_sys_info AND sys.dm_process_memory to see limits for CPU, memory, and workers. These DMVs are not supported with Azure SQL Database, since the details of the host supporting the database are not exposed or controlled by the user. So the DMV sys.dm_user_db_resource_governance can be used to review capacities and limits for your deployed Azure SQL Database. Run and review the query results below and compare this to your Pricing Tier and the limits documented for your deployed tier.
 
     ```sql
     SELECT * FROM sys.dm_user_db_resource_governance;
@@ -137,7 +137,7 @@ In this option, you'll walk through some common queries against system functions
 
     :::image type="content" source="../media/4-exec-requests.png" alt-text="Results showing dm_exec_requests":::
 
-    There is a difference in using sys.dm_exec_requests for Azure SQL Database than SQL Server or Managed Instance. This DMV only shows active requests related to your database including background tasks (or background tasks that don't have a database context that show up as "master"). This is becasue the nature of Azure SQL Database deployment where each database is deployed on its own SQL Server instance.
+    There is a difference in using sys.dm_exec_requests for Azure SQL Database than SQL Server or Managed Instance. This DMV only shows active requests related to your database including background tasks (or background tasks that don't have a database context that show up as "master"). This is because the nature of Azure SQL Database deployment where each database is deployed on its own SQL Server instance.
 
 
 ### Option 2: SQL Notebooks in Azure Data Studio

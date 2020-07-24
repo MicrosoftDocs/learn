@@ -6,15 +6,15 @@ There are many options available for you when it comes to loading data into Azur
 
 ### Bulk copy program
 
-Bulk copy program (bcp) is a very common utility for connecting to Azure SQL from on-premises, as well as connecting to Azure SQL from an Azure Virtual Machine. You can then use it to move data into Azure SQL.  
+Bulk copy program (bcp) is a common utility for connecting to Azure SQL from on-premises, as well as connecting to Azure SQL from an Azure Virtual Machine. You can then use it to move data into Azure SQL.  
 
 ### BULK INSERT
 
-Bulk insert operations are very similar to in SQL Server on-premises, except instead of loading data from a file (or multiple files) on your machine, you load data from Azure Blob storage. The next exercise will walk through an example of how.  
+Bulk insert operations are similar to in SQL Server on-premises, except instead of loading data from a file (or multiple files) on your machine, you load data from Azure Blob storage. The next exercise will walk through an example of how.  
 
 ### SSIS packages
 
-In Azure SQL, you can use this to connect with SSIS on-premises. You can host an SSIS DB in Azure SQL Database or Azure SQL Managed Instance. Additionally, you can use the Azure-SSIS Integration Runtime (IR) for SSIS packages with tools like Azure Data Factory.
+In Azure SQL, you can use packages to connect with SSIS on-premises. You can host an SSIS DB in Azure SQL Database or Azure SQL Managed Instance. Additionally, you can use the Azure-SSIS Integration Runtime (IR) for SSIS packages with tools like Azure Data Factory.
 
 ### Other options
 
@@ -22,6 +22,6 @@ Some other interesting options include using technologies like Spark or Azure Da
 
 ## Considerations for loading data
 
-The biggest difference between loading data on-premises and loading data into Azure SQL is that the data you want to load needs to be hosted in Azure as opposed to in files on-premises. These files and file systems on-premises can be stored in Azure Blob storage as an alternative. This will also increase the efficiency at which you can load your files in and set up ETL jobs.
+The biggest difference between loading data on-premises and loading data into Azure SQL is that the data you want to load needs to be hosted in Azure as opposed to in files on-premises. These files and file systems on-premises can be stored in Azure Blob storage as an alternative. This strategy will also increase the efficiency at which you can load your files in and set up ETL jobs.
 
-Another thing to keep in mind is that minimal logging is not supported, so you're always running in full recovery mode. Because of this and limits around log throughput, you might be affected by log governance as you're loading data. Techniques like using batches and appropriately sizing them become important during a bulk load. You'll see more of this in the following exercise. Loading into a clustered columnstore index may help in avoiding transaction log limits, depending on your scenario.
+Another thing to keep in mind is that minimal logging is not supported, so you're always running in full recovery mode. Because of full recovery mode and limits around log throughput, you might be affected by log governance as you're loading data. Techniques like using batches and appropriately sizing them become important during a bulk load. You'll see more tips in the following exercise. Loading into a clustered columnstore index may help in avoiding transaction log limits, depending on your scenario.

@@ -1,6 +1,6 @@
 In this module and throughout the activities, you learned how to deploy and configure Azure SQL. By learning about the pre-deployment planning guidance and best practices, you'll be more prepared going into the deployment of Azure SQL Database or Azure SQL Managed Instance. You also got hands on and learned about the deployment process using the Azure portal.
 
-Following deployment, you dove deeper into running verification checks and configuring Azure SQL to meet your scenario's requirements. Finally, you learned how loading data into Azure SQL is very similar to SQL Server, except you now have some additional options available.
+Following deployment, you dove deeper into running verification checks and configuring Azure SQL to meet your scenario's requirements. Finally, you learned how loading data into Azure SQL is similar to SQL Server, except you now have some additional options available.
 
 After you've deployed and configured Azure SQL, you'll likely look to make sure it meets your security needs. In the next module, you'll dive into the capabilities and tasks related to Azure SQL for securing your databases and instances.
 
@@ -26,7 +26,7 @@ Two common command-line tools for deploying, verifying, and configuring Azure SQ
 
 #### Data max size
 
-For more information about the difference between data space used, data space allocated, and data max size, refer to this [explanation in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database).
+For more information about the difference between data space used, data space allocated, and data max size, see this [explanation in the documentation](https://docs.microsoft.com/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database).
 
 #### Connectivity to Azure SQL
 

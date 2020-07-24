@@ -72,7 +72,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
 
     The results tell you the connection type is `Default`.
 
-2. Let's set the connection policy to `Proxy` and determine the round trip time.  
+2. Let's set the connection policy to `Proxy` and determine the round-trip time.  
 
     ```azurecli
     # update policy
@@ -81,7 +81,7 @@ One thing that you might use the Azure CLI or Azure PowerShell commands for is u
     az sql server conn-policy show
     ```
 
-3. To test round trip time, you can connect with SSMS. On your device, open SSMS and connect to your database. Right-click your database and select **New Query**. Create a new query with the below text, and choose to **Include Client Statistics** in your results (one way to do this is by selecting **Query > Include Client Statistics**). In the results, the **Wait time on server replies** is the best indicator of network latency. You can run this a few times to get a good average.  
+3. To test round-trip time, you can connect with SSMS. On your device, open SSMS and connect to your database. Right-click your database and select **New Query**. Create a new query with the below text, and choose to **Include Client Statistics** in your results (one way to do this is by selecting **Query > Include Client Statistics**). In the results, the **Wait time on server replies** is the best indicator of network latency. You can run this a few times to get a good average.  
 
     ```sql
     -- Proxy

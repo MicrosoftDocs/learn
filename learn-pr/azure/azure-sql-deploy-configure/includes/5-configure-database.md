@@ -6,7 +6,7 @@ For Azure SQL Managed Instance, since it is essentially a managed SQL Server, ma
 
 ## Configure databases
 
-For managed databases in Azure SQL Managed Instance and Azure SQL Databases, you have options available with the `ALTER DATABASE` command. There are `SET` options and you can select the dbcompat you want to be at (this can help in migrations). You can also use the `ALTER DATABASE` command to change the Edition or Service tier. In Azure SQL Database you don't have access to the file configuration underneath, but in Azure SQL Managed instance you can perform file maintenance. Similar to Azure SQL Managed Instance, you have options available for network connectivity, network configuration, and space management.
+For managed databases in Azure SQL Managed Instance and Azure SQL Databases, you have options available with the `ALTER DATABASE` command. There are `SET` options and you can select the dbcompat you want to be at (this can help in migrations). You can also use the `ALTER DATABASE` command to change the Edition or Service tier. In Azure SQL Database, you don't have access to the file configuration underneath, but in Azure SQL Managed instance you can perform file maintenance. Similar to Azure SQL Managed Instance, you have options available for network connectivity, network configuration, and space management.
 
 In Azure SQL Database specifically, "stale" page detection is enabled and the default server collation `SQL_Latin1_General_CP1_CI_AS` is always used. Additionally, the following are default options set to **ON**:  
 
@@ -47,19 +47,19 @@ For Azure SQL Database, the *Data max size* is the maximum possible size of a si
 
 The transaction log is in addition to the data size, and it is truncated regularly due to automatic backups as Accelerated Database Recovery is on by default. The log's maximum size is always 30% of the Data max size. For example, if the data max size is 1 TB, then the maximum transaction log size is 0.3 TB, and the total of data max size and log size is 1.3 TB.
 
-The Azure SQL Database Hyperscale tier is different from the other service tiers in that it creates a database initially 40GB and grows automatically in size to the limit of 100TB. The transaction log has a fixed size restriction of 1TB.  
+The Azure SQL Database Hyperscale tier is different from the other service tiers in that it creates a database initially 40 GB and grows automatically in size to the limit of 100 TB. The transaction log has a fixed size restriction of 1 TB.  
 
 ## Connectivity architecture and policy
 
 Part of configuring your Azure SQL database logical server or Azure SQL Managed Instance involves determining the route of connection to your database(s).
 
-For Azure SQL Managed Instance you can choose the connection type or policy during the deployment. In Azure SQL Database, you can choose the connection type after deployment.
+For Azure SQL Managed Instance, you can choose the connection type or policy during the deployment. In Azure SQL Database, you can choose the connection type after deployment.
 
 You can keep the default of *Proxy for connections from outside and Redirect for connections within Azure* or configure something else.
 
 :::image type="content" source="../media/5-connectivity.png" alt-text="Connection policies in Azure SQL" border="false":::
 
-At the highest level, in Proxy mode, all connections are proxied through the a gateway. In Redirect mode, after the connection is established leveraging the gateway (redirect-find-db in the figure above) the connection can then connect directly to the database or managed instance.
+At the highest level, in Proxy mode, all connections are proxied through the gateway. In Redirect mode, after the connection is established leveraging the gateway (redirect-find-db in the figure above) the connection can then connect directly to the database or managed instance.
 
 The direct connection (redirect) allows for reduced latency and improved throughput, but also requires opening up additional ports to allow inbound and outbound communication in the range of 11000 - 11999.  
 

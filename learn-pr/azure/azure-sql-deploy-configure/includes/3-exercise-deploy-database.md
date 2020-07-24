@@ -57,7 +57,7 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
 1. Select **Review + create**. Here you can review your deployment selections and the Azure Marketplace terms. Review all the options here to ensure all of your selections match the exercise instructions and select **Create** to deploy the service.  
 
-1. Soon after selecting Create, you will be redirected to a page that looks like the following where you can monitor the status of your deployment. You can also navigate to your resource group, and select **Deployments** to get to this same pane. This will give you the various deployments, their status, and more information. This deployment option and configuration typically takes less than five minutes to deploy.  
+1. Soon after selecting Create, you will be redirected to a page that looks like the following where you can monitor the status of your deployment. You can also navigate to your resource group, and select **Deployments** to get to this same pane. This will give you the various deployments, their status, and more information. This deployment typically takes less than five minutes to deploy.  
 
     :::image type="content" source="../media/3-deployment-underway-2.png" alt-text="Resources being deployed view":::
 
