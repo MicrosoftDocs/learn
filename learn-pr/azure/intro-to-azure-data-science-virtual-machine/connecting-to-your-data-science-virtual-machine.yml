@@ -14,7 +14,7 @@ durationInMinutes: 12
 content: |
   [!include[](includes/connecting-to-your-data-science-virtual-machine.md)]
 quiz:
-  title: Connecting to your Data Science Virtual Machine
+  title: Connect to your Data Science Virtual Machine
   questions:
     - content: "How can one reach the command line of the Data Science Virtual Machine without launching a terminal from the Data Science Virtual Machine's graphical desktop?"
       choices:
