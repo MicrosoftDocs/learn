@@ -4,7 +4,7 @@ Now that you've created a Data Science Virtual Machine, you need to connect to i
 
 Since you just created the virtual machine it will already be running. In general, you bookend your sessions with the virtual machine by starting and stopping it from the Azure portal. The portal is also where you can find the public IP address of your virtual machine, which you will need to connect. 
 
-![Screenshot of portal highlighting start stop buttons and IP address](../media/dsvm-started-in-portal.png)
+![Screenshot of portal highlighting start stop buttons and IP address](../media/dsvm-summary-started-in-portal.png)
 
 ## Securing your virtual machine
 
