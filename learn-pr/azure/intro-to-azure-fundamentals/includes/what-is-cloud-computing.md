@@ -31,7 +31,7 @@ To power your services and deliver innovative and novel user experiences more qu
 
 There are several benefits that a cloud environment has over a physical environment. For example, cloud-based applications employ a myriad of related strategies:
 
-- **High Availability** - depending on the service-level agreement (SLA) that you choose, your cloud[based applications can provide a continuous user experience with no apparent downtime even when things go wrong
+- **High Availability** - depending on the service-level agreement (SLA) that you choose, your cloud-based applications can provide a continuous user experience with no apparent downtime even when things go wrong
 
 - **Scalability** - applications in the cloud can be scaled two ways:
 
