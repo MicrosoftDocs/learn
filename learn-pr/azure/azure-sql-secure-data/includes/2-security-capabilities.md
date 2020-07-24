@@ -4,6 +4,8 @@ SQL Server and Azure SQL services have been known for the importance it puts on 
 
 ## Network security
 
+The first layer of security involves the network. The networking capabilities and tasks differ between Azure SQL Database and Azure SQL Managed Instance, so they will be discussed separately.
+
 ### Azure SQL Database
 
 There are four main choices you have when you're securing your network for Azure SQL Database:
@@ -45,7 +47,7 @@ The result would be `174.17.218.16`. This IP address is the public IP address of
 
 If you wanted to use only firewall rules, setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). A much easier alternative is to use Virtual network (VNet) rules to establish and to manage access from specific networks that contain VMs or other services that need to access the data.
 
-If you configure access from a VNet with a Virtual Network rule, then any resources in that VNet can access the Azure SQL Database logical server, which can simplify the challenge of configuring access to all the IP addresses (static and dynamic) that need to access the data. VNet rules allows you to specify one or multiple virtual networks, encompassing all of the resources within. You can also start to leverage VNet technologies to connect networks across regions in Azure and even to on-premises.  
+If you configure access from a VNet with a Virtual Network rule, then any resources in that VNet can access the Azure SQL Database logical server, which can simplify the challenge of configuring access to all the IP addresses (static and dynamic) that need to access the data. VNet rules allow you to specify one or multiple virtual networks, encompassing all of the resources within. You can also start to leverage VNet technologies to connect networks across regions in Azure and even to on-premises.  
 
 :::image type="content" source="../media/2-vnet-rules.png" alt-text="VNet Rules" border="false":::
 
@@ -55,7 +57,7 @@ In this example, you could run the same query as in the previous section from yo
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```  
 
-The result would now be `10.0.0.2`. This IP addres is the private IP address of the Azure VM. This gets you one step closer to making private connections to your Azure SQL Database logical server, since now resources are connecting through the VNet.
+The result would now be `10.0.0.2`. This IP address is the private IP address of the Azure VM. This gets you one step closer to making private connections to your Azure SQL Database logical server, since now resources are connecting through the VNet.
 
 Another common strategy for analyzing your connection is to examine the DNS hierarchy. In the same Azure VM, in a command prompt you could run the following command:
 

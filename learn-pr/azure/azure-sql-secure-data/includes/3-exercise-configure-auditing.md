@@ -6,7 +6,7 @@ The auditing feature tracks database and server events and writes events to an a
 
 In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script you will be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
-This scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
+These scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
 
 1. Start by obtaining your local IP address. Ensure you are disconnected from any VPN service and open a local PowerShell terminal on your device. Run the following command and note the resulting IP address.
 
@@ -14,7 +14,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Next, run the following commands in the Azure Cloud shell on the right. Fill in a complex password and enter your local public IP address you retrieved when prompted.
+1. Next, run the following commands in the Azure Cloud Shell on the right. Fill in a complex password and enter your local public IP address you retrieved when prompted.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -31,7 +31,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell.  You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
+1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud Shell.  You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -92,7 +92,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-    Once you're in the Azure Portal you can search in the top bar for `AdventureWorks` to find your database and its associated logical server.
+    Once you're in the Azure portal you can search in the top bar for `AdventureWorks` to find your database and its associated logical server.
 
     Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
 
@@ -105,41 +105,32 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
 ### Configure auditing
 
-1. Open the Azure portal and navigate to your Azure SQL Database to enable Auditing on the logical server. Set **Auditing** to **ON**. 
+1. Open the Azure portal and navigate to your Azure SQL Database to enable Auditing on the logical server. Set **Auditing** to **ON**.
 
     > [!div class="nextstepaction"]
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. In the left-hand menu, under Security, select **Auditing**. Review the options and then select **View server settings**.   
+1. In the left-hand menu, under Security, select **Auditing**. Review the options and then select **View server settings**.
 
-    
     :::image type="content" source="../media/3-db-audit.png" alt-text="Database-level auditing blade":::  
 
     You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply at the database level (you won't do that today), that would mean the two audits would happen in parallel (one does not override the other). You could alternatively only audit at the database level.
 
 1. Select **Log Analytics (Preview)** and the **Configure** button.  
 
-    :::image type="content" source="../media/3-server-audit.png" alt-text="Server-level auditing blade":::  
-
 1. Select **+ Create New Workspace**.  Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace **azuresql`<unique ID>`-la**, using your unique ID for your resources. Select **OK**.
 
-    :::image type="content" source="../media/3-workspace-details.png" alt-text="Details for new workspace":::  
-
-    This process may take a few moments to validate and create. You should now see your Log Analytics account.
+    This process may take a few moments to validate and create. You should then see your Log Analytics account in the Auditing view.
 
 1. Next, select **Storage**, then select **Configure**. This option allows you to collect XEvent log files in an Azure Blob storage account. In a later activity, you'll see more on how this differs from Log Analytics.
-
-    :::image type="content" source="../media/3-configure-storage.png" alt-text="Configure storage":::  
 
 1. Next, select the **Concierge Subscription** you're using for this module as well as the storage account in the resource group with your ID that was created for you (should be *sqlva* + *a random string of letters and numbers*). In this storage account, auditing logs will be saved as a collection of blob files within a container named **sqldbauditlogs**.  
 
     Depending on your organization, in production you may consider having a separate storage account for the audit logs.
 
-1. For **Retention (Days)** enter 7, and for **Storage access key** select **Primary**. 
+1. For **Retention (Days)** enter 7, and for **Storage access key**, select **Primary**.
 
 1. After you've configured your options, select **OK**.  
-
-    :::image type="content" source="../media/3-storage-settings.png" alt-text="Confirm options and select OK":::  
 
 1. Select **Save**.  
 

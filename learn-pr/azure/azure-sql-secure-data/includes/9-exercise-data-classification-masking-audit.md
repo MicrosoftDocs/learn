@@ -1,6 +1,6 @@
 In this exercise, you'll combine your learnings from the module to walk through a scenario. You will learn how to add new data classifications and dynamic data masks, and then you'll see various methods for auditing users trying to view columns that were marked for data classification. This exercise will combine several of the things you've already learned about in the module: data protection, auditing, and Advanced data security.
 
-## Configure data classification
+## Configure data classification and masking
 
 1. In the Azure portal, navigate to your Azure SQL Database (not logical server).
 
@@ -8,8 +8,6 @@ In this exercise, you'll combine your learnings from the module to walk through 
     > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
 1. In the left-hand menu, under Security, select **Advanced data security** and then select the **Data Discovery & Classification** box.  
-
-    :::image type="content" source="../media/9-ads-dashboard.png" alt-text="ADS Dashboard":::  
 
 1. Select the **Classification** tab and then select **+ Add classification**.  
 
@@ -23,19 +21,17 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. Select **Save**.
 
-    You can confirm the added classification was successful by viewing the **Overview** tab and confirming that MiddleName is now present in the list of classified columns under the SalesLT schema. Select **X**.  
+1. You can confirm the added classification was successful by viewing the **Overview** tab and confirming that MiddleName is now present in the list of classified columns under the SalesLT schema. Select **X**.  
 
-1. Dynamic Data Masking (DDM) is something available in Azure SQL as well as in SQL Server. It limits data exposure by masking sensitive data to non-privileged users at SQL Server vs the application having to code those types of rules. Azure SQL will recommend things for you to mask, or you can add masks manually. You'll mask the FirstName, MiddleName, and LastName columns which you reviewed in the previous step.  
+1. Dynamic Data Masking (DDM) is something available in Azure SQL as well as in SQL Server. It limits data exposure by masking sensitive data to non-privileged users at SQL Server vs the application having to code those types of rules. Azure SQL will recommend things for you to mask, or you can add masks manually. You'll mask the FirstName, MiddleName, and LastName columns, which you reviewed in the previous step.  
 
     In the Azure portal, navigate to your Azure SQL Database. In the left-hand menu, under Security, select **Dynamic Data Masking** and then select **+ Add mask**.  
-
-    :::image type="content" source="../media/9-add-mask.png" alt-text="Create new mask":::  
 
 1. First, select the **SalesLT** schema, **Customer** table, and **FirstName** column. Then, you can review the options for masking, but the default is good for this scenario. Select **Add** to add the masking rule.  
 
     :::image type="content" source="../media/9-add-mask-2.png" alt-text="Add FirstName mask":::  
 
-1. Repeat these steps for both **MiddleName** and **LastName** in that table.  
+1. Repeat the previous step for both **MiddleName** and **LastName** in that table.  
 
     Now, you should have three masking rules, similar to below.  
 
@@ -47,9 +43,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 ## Retrieve data that is classified and masked
 
-1. Next, you will simulate someone querying the classified columns and explore dynamic data masking in action. Navigate to SSMS and create a new query in your AdventureWorks database.  
-
-    :::image type="content" source="../media/9-new-query.png" alt-text="Create a new query":::  
+1. Next, you will simulate someone querying the classified columns and explore dynamic data masking in action. Navigate to SSMS and create a new query in your AdventureWorks database (right-click on the database and select **New Query**).  
 
 1. Now, run the following query to return the classified (and in some cases columns marked for masked) data.  
 
@@ -58,7 +52,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
     FROM SalesLT.Customer;
     ```
 
-    You should get a result of the first ten names, with no masking applied. Why? Because you are the admin for this Azure SQL Database logical server.  
+    You should get a result of the first 10 names, with no masking applied. Why? Because you are the admin for this Azure SQL Database logical server.  
 
     :::image type="content" source="../media/9-names.png" alt-text="SQL query results with no mask":::  
 
@@ -81,7 +75,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
     REVERT;
     ```
 
-    Now, you should get a result of the first ten names, but with masking applied. Bob has not been granted access to the unmasked form of this data.  
+    Now, you should get a result of the first 10 names, but with masking applied. Bob has not been granted access to the unmasked form of this data.  
 
     :::image type="content" source="../media/9-names-2.png" alt-text="SQL query results with mask":::  
 
@@ -124,35 +118,27 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
     :::image type="content" source="../media/9-file-audit.png" alt-text="Open audit files":::  
 
-    Next, select **Add**.  
+1. Next, select **Add**.  
 
     :::image type="content" source="../media/9-file-audit-add.png" alt-text="Add a new file":::  
 
-    Specify to add then from Azure Blob storage and select **Connect**.  
+1. Specify to add them from Azure Blob storage and select **Connect**.  
 
     :::image type="content" source="../media/9-file-audit-connect.png" alt-text="Add from Azure Blob Storage":::  
 
-    Now sign into Azure with the account you are using for this module.  
+1. Sign into Azure with the account you are using for this module.  
 
     :::image type="content" source="../media/9-file-audit-signin.png" alt-text="Sign in to Azure":::  
 
-    Select the subscription, storage account, and blob container you configured Audit logs to go to (refer to your selection in the Azure portal under your Azure SQL Database logical server's Auditing blade). The container will be called `sqldbauditlogs`.  
+1. Select the subscription, storage account, and blob container you configured Audit logs to go to The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`.  
 
-    :::image type="content" source="../media/9-file-audit-select.png" alt-text="Select the blob container":::  
-
-    Select your Azure SQL Database logical server and your AdventureWorks database. It should take everything from the day up until the second you select the Database name. Select **OK**.  
-
-    :::image type="content" source="../media/9-file-audit-ok.png" alt-text="Select OK":::  
+1. Select your Azure SQL Database logical server and your AdventureWorks database. It should take everything from the current day up until the time you select the Database name. Select **OK**.
 
 1. The confirmation window lets you know how many files are being downloaded and merged. Select **OK**.  
 
-    :::image type="content" source="../media/9-download-confirm.png" alt-text="Confirm the number of files to be downloaded and merged":::  
-
 1. Review the files and select **OK** one last time.  
 
-    :::image type="content" source="../media/9-merge-audit.png" alt-text="Select OK":::  
-
-    You should now be able to see all the audit logs. Look for where you were testing with masking with Bob (should be near the bottom). You can select the statement, and then use the detail pane below to review the information. For example, for one of the queries where Bob tries to view classified data, under the `data_sensitivity_information` field, you can see the data that is classified.
+1. You should now be able to see all the audit logs. Look for where you were testing with masking with Bob (should be near the bottom). You can select the statement, and then use the details pane below to review the information. For example, for one of the queries where Bob tries to view classified data, under the `data_sensitivity_information` field, you can see the data that is classified.
 
 1. You can double-click on the value of the data_sensitivity_information in the Details tab. It will display a pop-up where you can more easily read the data.
 
@@ -170,8 +156,6 @@ Analyzing your audit logs will depend on your preference. Here, you'll be expose
 
 1. In the Azure portal, navigate to your Azure SQL Database. In the left-hand menu, under Security, select **Auditing**. Then select **View audit logs**.  
 
-    :::image type="content" source="../media/9-view-audit-logs.png" alt-text="Navigate to view audit logs":::  
-
     You should now be able to see a query of your event records, options to run in Query Editor (run T-SQL queries through the portal), options for Log Analytics/View dashboard, and more.  
 
     :::image type="content" source="../media/9-audit-records.png" alt-text="View audit records":::  
@@ -181,8 +165,6 @@ Analyzing your audit logs will depend on your preference. Here, you'll be expose
 1. Select **Log Analytics**. If you see a *Get Started* screen, select **OK**. This then takes you to a query editor but it is not T-SQL. This view allows you to query logs using Kusto query language or KQL, which is meant to be easy to use and understand by SQL professionals.  
 
     The default query is querying the category `SQLSecurityAuditEvents`, so while you might use this category now to view security-related incidents, this tool can also be used for querying other Azure logs and categories in Azure Monitor. For this step, you can look for the statements where Bob tried to access sensitive information, and expand the details (click the **`>`**) to get the same information that you saw in SSMS.  
-
-    :::image type="content" source="../media/9-log-analytics-view.png" alt-text="Log Analytics security query":::  
 
     It may take a few minutes for the results to show up here. You can refresh the query by selecting **Run** again.  
 
@@ -198,8 +180,6 @@ Analyzing your audit logs will depend on your preference. Here, you'll be expose
 
    You may need to wait 3-5 minutes and select **Refresh** for items to show up here.  
 
-    :::image type="content" source="../media/9-security-db.png" alt-text="Access to sensitive data dashboard view":::  
-
     You can use this drill down to find out:  
 
     1. How many queries are accessing sensitive data
@@ -209,14 +189,10 @@ Analyzing your audit logs will depend on your preference. Here, you'll be expose
 
     Review what's available here, and how you can audit usage with this tool. You can even click into each of these and see the related logs in Log Analytics.  
 
-    When you're done, select the **X** in the top-right corner of the **Azure SQL - Access to Sensitive Data** tab.  
+1. When you're done, select the **X** in the top-right corner of the **Azure SQL - Access to Sensitive Data** tab.  
 
 1. Back in the overview, select **Azure SQL - Security Insights**.  
 
-    :::image type="content" source="../media/9-security-db.png" alt-text="SQL security insights dashboard view":::  
-
     This dashboard gives more auditing information to help you understand database activity, and gain insight into anomalies. Spend a few minutes reviewing and drilling into the options here.  
 
-    In addition to these insights for Azure SQL services, by being in Azure you can leverage the Azure Security Center to monitor, manage, and respond to issues that arise across your entire Azure estate. If you want to look around (may be limited depending on your subscription level), you can search for **Security Center** and select under *Services*.
-
-    :::image type="content" source="../media/9-security-center.png" alt-text="Azure security center":::
+In addition to these insights for Azure SQL services, by being in Azure you can leverage the Azure Security Center to monitor, manage, and respond to issues that arise across your entire Azure estate. If you want to look around (may be limited depending on your subscription level), you can search for **Security Center** in the Azure portal and select it under *Services*.

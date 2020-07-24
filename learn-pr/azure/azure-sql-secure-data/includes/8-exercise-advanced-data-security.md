@@ -1,8 +1,6 @@
-#### Activity 6: Advanced Data Security
-
 In this exercise, you'll confirm Advanced data security (ADS) is enabled, and you'll explore some of the features within each of the capabilities mentioned in the previous unit.  
 
-### Steps
+## Configure Advanced data security
 
 1. In the Azure portal, navigate to your Azure SQL Database logical server.
 
@@ -11,13 +9,9 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. In the left-hand menu, under Security, select **Advanced data security**. ADS should already be enabled, however if it is not, select **ON** and select **Save**.
 
-    :::image type="content" source="../media/8-ads-on.png" alt-text="Confirm Advanced data security is turned ON":::  
-
-1. In this step, you'll review the selections you've made for your Azure SQL Database logical server. In the same pane as step 1 (**Azure SQL Database logical server > Security > Advanced data security**), you will also see information regarding Vulnerability Assessments and Advanced Threat Protection.  
+1. In this step, you'll review the selections you've made for your Azure SQL Database logical server. In the same pane as the previous step (**Azure SQL Database logical server > Security > Advanced data security**), you will also see information regarding Vulnerability Assessments and Advanced Threat Protection.  
 
     This storage account was deployed as part of the deployment script for your Azure SQL Database. Review the options and add your email address if you want to receive the results of the recurring scan (weekly).  
-
-    :::image type="content" source="../media/8-vulnerability-assessment-settings.png" alt-text="Vulnerability assessment settings":::  
 
 1. You can also configure your Advanced Threat Protection (ATP) settings. To check the ATP alert types available, select **All** under Advanced Threat Protection types.  
 
@@ -29,15 +23,11 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. Once you've updated all your settings, don't forget to select **Save**.  
 
-    
-    :::image type="content" source="../media/8-save.png" alt-text="Save settings":::  
-
     Setting up these settings will enable you to complete some of the other steps in this activity, so you'll see more of VA and ATP soon.  
 
-1. Navigate back to your Azure SQL Database (not the logical server!). In the left-hand menu, under Security, Select **Advanced data security**.  
+## Data Discovery & Classification
 
-    
-    :::image type="content" source="../media/8-ads-dashboard.png" alt-text="Navigate to ADS dashboard":::  
+1. Navigate back to your Azure SQL Database (not the logical server!). In the left-hand menu, under Security, Select **Advanced data security**.  
 
 1. First, you'll review Data Discovery & Classification (DD&C) which provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your database.
 
@@ -47,19 +37,15 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. Select the information bar that says, **We have found XX columns with classification recommendations**.  
 
-    :::image type="content" source="../media/8-classification-recommendations.png" alt-text="Select classification recommendations":::  
-
 1. DD&C tries to identify potential sensitive data based on the column names in your tables. Review some of the suggested labels and then select **Select all** and **Accept selected recommendations**.  
 
-    :::image type="content" source="../media/8-accept-recommendations.png" alt-text="Accept the recommendations":::  
-
 1. Select **Save** near the top-left corner.
-
-    :::image type="content" source="../media/8-save.png" alt-text="Select save":::  
 
 1. Finally, select **Overview** to view the overview dashboard and review the classifications you've added.  
 
     :::image type="content" source="../media/8-data-classification-overview.png" alt-text="View the Data classification overview":::  
+
+## Vulnerability Assessment
 
 1. Select the **X** in the top-right corner of DD&C to bring you back to the ADS dashboard. Next, you'll review the Vulnerability Assessment (VA) capabilities. Start by selecting the **Vulnerability Assessment** box.  
 
@@ -88,7 +74,9 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     :::image type="content" source="../media/8-va2065-passed.png" alt-text="VA2109 security risk passed":::  
 
-1. If you click into the passed security check above, you should be able to see the baseline you configured. If anything changes in the future, VA scans will pick it up and the security check will fail.  
+    If you click into the passed security check above, you should be able to see the baseline you configured. If anything changes in the future, VA scans will pick it up and the security check will fail.  
+
+## Advanced Threat Protection
 
 1. Select the **X** in the top-right corner of VA to get back to the ADS dashboard. Select the **Advanced Threat Protection** (ATP) box to drill in and review the results. ATP detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases.  
 
@@ -105,13 +93,11 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
     * Brute force
     * Anomalous client login
 
-    In this step, you will see how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom-written application not for standard tools like SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection we need to "set" the **Application Name** (which is a connection property for clients connecting to SQL Server or Azure SQL).
+    In this section, you will see how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom-written application not for standard tools like SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection we need to "set" the **Application Name** (which is a connection property for clients connecting to SQL Server or Azure SQL).
 
-    To get the full experience of this section, you'll need access to the email address you provided for ATP alerts in Step 1 of this activity. If you need to update it, do so before proceeding.  
+    To get the full experience of this section, you'll need access to the email address you provided for ATP alerts in the first part of this exercise. If you need to update it, do so before proceeding.  
 
 1. Using SSMS, select **File** > **New** > **Database Engine Query** to create a query using a new connection.  
-
-    :::image type="content" source="../media/8-database-engine-query.png" alt-text="Create a new database engine query":::  
 
 1. In the main login window, fill in your AdventureWorks login information as you usually would, with SQL authentication. Before connecting, however, select **Options** > **Connection Properties**. Once in here, specify your AdventureWorks database using the "Connect to database" drop-down.  
 
@@ -141,15 +127,12 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     :::image type="content" source="../media/8-atp-alert.png" alt-text="ATP alert":::  
 
-    You can drill into that alert to see the overall security alerts.  
+1. Select the **Advanced Threat Protection** pane to see the overall security alerts.  
 
     :::image type="content" source="../media/8-security-alerts.png" alt-text="Security alerts":::  
 
-    You can also click specific alerts to see more details about them.  
+1. Select **Potential SQL injection** to drill in specific alerts and receive investigation steps.  
 
-    :::image type="content" source="../media/8-sql-injection.png" alt-text="Potential SQL injection":::
-
-    > [!TIP]
-    > You might consider closing all your query editors in SSMS and removing all connections except the one SQL server admin connection.
+1. As a clean up step, you might consider closing all your query editors in SSMS and removing all connections so you don't accidentally trigger additional alerts in the next exercise.
 
 In this exercise, you learned how to configure and leverage some of the features in Advanced data security. In the following exercise, you'll expand on what you've learned throughout the security module by using various security features together.

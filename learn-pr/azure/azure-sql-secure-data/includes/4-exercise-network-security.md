@@ -55,6 +55,6 @@ You can also use commands `az sql server firewall-rule` to create, delete, and v
 
 This method of setting the firewall rules (using the Azure portal or Azure Cloud Shell) grants your client IP address access to all of the databases that are in that logical server. After you've configured the server-level firewall rule, which you did above, you can optionally configure database-level firewall rules that apply to individual databases. This can only be done with T-SQL, using the command `EXECUTE sp_set_database_firewall_rule`. For more information, see the references in the summary of this module.  
 
-## Dive deeper
+## Go further
 
 You've now seen how to update firewall rules for specific IP addresses or ranges of IP addresses on the server or database level. If you were running in production, you may also need access from various virtual networks, resources (for example, Azure Apps or Azure VMs). If you take an Azure VM as an example, they have dynamic IP addresses (they change). You can set up static IP addresses, but even this can be difficult to maintain using firewall rules. You can, alternatively, use virtual network (VNet) rules to manage access from specific subnet(s) that contain your VMs or other services. Alternatively, you could configure Private Endpoint, the most secure way to connect to an Azure SQL Database.
