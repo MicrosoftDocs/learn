@@ -12,7 +12,7 @@ All scripts for this exercise can be found at *04-Performance\tuning_application
 
 ## Create a new table for the application
 
-1. Run the following T-SQL statement in SSMS or use the script **order_rating_ddl.sql** to create a table in the AdventureWorks database you have used in the first two exercises:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **order_rating_ddl.sql** script to create a table in the AdventureWorks database. Your query editor window should look like the following:
 
 ```sql
 DROP TABLE IF EXISTS SalesLT.OrderRating;
@@ -28,9 +28,9 @@ GO
 
 ## Load queries to monitor query execution
 
-Load some T-SQL queries for DMVs to observe query performance for active queries, waits, and I/O. **Load all these queries in the context of the AdventureWorks database**.
+Let's now load some T-SQL queries for DMVs to observe query performance for active queries, waits, and I/O. **Load all these queries in the context of the AdventureWorks database**.
 
-1. Use the following query or script **sqlrequests.sql** to look at active SQL queries *in the context of the AdventureWorks database*:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **sqlrequests.sql** script to look at active SQL queries. Your query editor window should look like the following:
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -40,14 +40,14 @@ Load some T-SQL queries for DMVs to observe query performance for active queries
     AND es.is_user_process = 1;
     ```
 
-1. Use the following query or script **top_waits.sql** to look at top wait types by count *in the context of the AdventureWorks database*:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **top_waits.sql** script to look at top wait types by count. Your query editor window should look like the following:
 
     ```sql
     SELECT * FROM sys.dm_os_wait_stats
     ORDER BY waiting_tasks_count DESC;
     ```
 
-1. Use the following query or script **tlog_io.sql** to observe latency for transaction log writes *in the context of the AdventureWorks database*:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **tlog_io.sql** script to observe latency for transaction log writes. Your query editor window should look like the following:
 
     ```sql
     SELECT io_stall_write_ms/num_of_writes as avg_tlog_io_write_ms, * 
@@ -94,7 +94,7 @@ Load some T-SQL queries for DMVs to observe query performance for active queries
 
 ## Observe DMVs and workload performance
 
-1. Now run the queries for DMVs you loaded earlier to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
+1. Now run the queries in SSMS you previously loaded to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
 
 Use these queries you can observe the following:
 
@@ -134,9 +134,11 @@ Make edits to scripts and execute them to see a more efficient I/O performance. 
     > [!NOTE]
     > This workload can run even faster against an Azure SQL Database with a connection type of **Redirect**. The deployment you have done in this exercise uses a Default connection type which will be a Proxy type because you are connected outside of Azure. Using Redirect can significantly speed up a workload like this given the round trips required from the client to the server.
 
-1. Observe the workload duration. The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity. It is important to note that sys.dm_os_wait_stats cannot be cleared using DBCC SQLPERF as it can be with SQL Server.
+1. Observe the workload duration. The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity. 
 
-The concept of "batching" can help most applications including those connected to Azure SQL.
+    It is important to note that sys.dm_os_wait_stats cannot be cleared in Azure SQL Database using DBCC SQLPERF as it can be with SQL Server.
+
+    The concept of "batching" can help most applications including those connected to Azure SQL.
 
 > [!TIP]
 > Very large transactions can be affected by resource governance on Azure and the symptoms will be LOG_RATE_GOVERNOR. In this example, the char(500) not null column pads spaces and causes large transaction log records. Performance can even be more optimized by making that column a variable length column.

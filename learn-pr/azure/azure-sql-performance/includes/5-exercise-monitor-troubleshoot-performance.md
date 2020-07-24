@@ -206,7 +206,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
 
 Let's now use the DMV queries you loaded earlier to observe performance.
 
-1. Use the query in SSMS to monitor dm_exec_requests (**dmexecrequests.sql**) to observe active requests. Run this query 5 or 6 times and observe some of the results
+1. Run the query in SSMS you previously loaded to monitor dm_exec_requests (**dmexecrequests.sql**) to observe active requests. Run this query 5 or 6 times and observe some of the results
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -221,7 +221,9 @@ Let's now use the DMV queries you loaded earlier to observe performance.
     > [!NOTE]
     > You may see one or more active requests with a command = SELECT and a wait_type = XE_LIVE_TARGET_TVF. These are queries run by services managed by Microsoft to help power capabilities like Performance Insights using Extended Events. Microsoft does not publish the details of these Extended Event sessions.
 
-1. Run the query in SSMS to monitor **sys.dm_db_resource_stats** (**dmdbresourcestats.sql**). Run the query to see the results of this DMV 3 or 4 times.
+    Leave this query editor window open as you will run it again in the next exercise.
+
+1. Run the query in SSMS you previously loaded to monitor **sys.dm_db_resource_stats** (**dmdbresourcestats.sql**). Run the query to see the results of this DMV 3 or 4 times.
 
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;
@@ -233,6 +235,8 @@ Let's now use the DMV queries you loaded earlier to observe performance.
 
     > [!NOTE]
     > Another DMV called, **sys.resource_stats**, can be run in the context of the master database of the Azure Database Server to see resource usage for all Azure SQL Database databases associated with the server. This view is less granular and shows resource usage every 5 minutes (kept for 14 days).
+
+    Leave this query editor window open as you will run it again in the next exercise.
 
 1. Let the workload complete and take note of its overall duration. When the workload completes you should see results like the following and a return to the command prompt
 
@@ -281,7 +285,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-top-wait-stats.png" alt-text="SSMS_Top_Wait_Stats":::
 
-    You can see the top wait category is CPU (this is equivalent to the wait_type SOS_SCHEDULER_YIELD which can be seen in **sys.dm_os_wait_stats**) and the average wait time. 
+    You can see the top wait category is CPU (this is equivalent to the wait_type SOS_SCHEDULER_YIELD which can be seen in **sys.dm_os_wait_stats**) and the average wait time.
 
 1. Click on the CPU bar chart in the report. The top query waiting for CPU is the query from the workload we are using.
 
@@ -317,12 +321,12 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
 In this exercise you did not setup an Azure Monitor Log (mainly because there is a delay in metrics information appearing in the log) but it is worth looking at what a log may look like for a CPU resource usage scenario. Azure Monitor Logs can provide a much longer historical record than Azure Metrics.
 
-If you had configured Azure Monitor Logs with a Log Analytics workspace, you could use the following **Kusto Query** to see the same type of results for CPU utilization for the database:
+If you had configured Azure Monitor Logs with a Log Analytics workspace (this is for later study on your own), you could use the following **Kusto Query** to see the same type of results for CPU utilization for the database:
 
 ```kusto
 AzureMetrics
 | where MetricName == 'cpu_percent'
-| where Resource == "<database name>"
+| where Resource == "AdventureWorks"
 | project TimeGenerated, Average
 | render columnchart
 ```

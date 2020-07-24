@@ -10,17 +10,17 @@ To scale performance for a problem that appears to be a CPU capacity problem you
   
     For Azure, we can use ALTER DATABASE, az cli, or the portal to increase CPU capacity with no database migration on the part of the user.
   
-    Using the Azure Portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment. The Pricing tier is also known as the service tier.
+1. Using the Azure Portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment. The Pricing tier is also known as the service tier.
   
     :::image type="content" source="../media/7-azure-portal-change-tier.png" alt-text="Azure_Portal_Change_Tier":::
   
-    Here you can see options for changing or scaling compute resources. For General Purpose, you can easily scale up to something like 8 vCores.
+1. Here you can see options for changing or scaling compute resources. For General Purpose, you can easily scale up to something like 8 vCores.
   
     :::image type="content" source="../media/7-azure-portal-compute-options.png" alt-text="Azure_Portal_Compute_Options":::
   
     Instead of using the portal, I'll show you a different method to scale your workload.
 
-1. For this exercise, so that we can see proper differences in reports, you must first flush the query store using the following script in SSMS **flushhquerystore.sql** in the context of the AdventureWorks database.
+1. For this exercise, so that we can see proper differences in reports, you must first flush the query store. In SSMS click on the AdventureWorks database and use the File/Open menu to open the script in SSMS **flushhquerystore.sql** in the context of the AdventureWorks database. Your query editor window should look like the following:
   
     ```sql
     EXEC sp_query_store_flush_db;
@@ -51,9 +51,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     When you view the ALTER DATABASE documentation, notice the ability to click on your target SQL Server deployment to get the right syntax options. Click on SQL Database single database/elastic pool to see the options for Azure SQL Database. To match the compute scale you found in the portal you need the service objective **'GP_Gen5_8'**.
 
-1. Modify the service objective for the database to scale more CPUs
-
-    Using SSMS, run the script **modify_service_objective.sql** or T-SQL command:
+1. Modify the service objective for the database to scale more CPUs. Open the script **modify_service_objective.sql** in SSMS. Your query editor window should look like the following:
   
     ```sql
     ALTER DATABASE AdventureWorks MODIFY (SERVICE_OBJECTIVE = 'GP_Gen5_8');
@@ -63,7 +61,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     :::image type="content" source="../media/7-azure-portal-update-progress.png" alt-text="Azure_Portal_Update_In_Progress":::
 
-1. Right click master database in Object Explorer under the System Databases folder and select New Query. Run this query in SSMS:
+1. Right click the master database in Object Explorer under the System Databases folder and select New Query. Run this query in the SSMS query editor window:
 
     ```sql
     SELECT * FROM sys.dm_operation_status;
@@ -112,7 +110,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     During a change for the service objective, queries are allowed against the database until the final change is implemented so an application cannot connect for a very brief period of time. For Azure SQL Database Managed Instance, a change of tier will allow queries and connections but prevents all database operations like creation of new databases (in these cases operations like these will fail with the error message "**The operation could not be completed because a service tier change is in progress for managed instance '[server]' Please wait for the operation in progress to complete and try again**")
 
-    When this is done use the queries listed above from **get_service_objective.sql** to verify the new service objective or service tier of 8 vCores has taken affect.
+1. When this is done use the queries listed above from **get_service_objective.sql** in SSMS to verify the new service objective or service tier of 8 vCores has taken affect.
 
 ## Run the workload after scale up
 
@@ -152,19 +150,21 @@ Let's look at the same Query Store reports as we did in the previous exercise.
 
     You will now see two queries (query_id). These are the same query but show up as different query_id values in Query Store because the scale operation required a restart so the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
-2. Look also at the Query Wait Statistics report as you did in the previous exercise. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
+1. Look also at the **Query Wait Statistics** report as you did in the previous exercise. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
 
     :::image type="content" source="../media/7-ssms-top-wait-stats-query-faster.png" alt-text="SSMS_Top_Wait_Stats_Query_Faster":::
 
+1. You can close out all reports and query editor windows but leave SSMS connected as you will need this in the next exercise.
+
 ## Observe changes from Azure Metrics
 
-1. Look at the Overview blade again for the Compute Utilization:
+1. Navigate to the AdventureWorks database in the Azure portal and look at the Overview blade again for the Compute Utilization:
 
     :::image type="content" source="../media/7-azure-portal-compute-query-comparison.png" alt-text="Azure_Portal_Compute_Query_Comparison.png":::
 
     Notice the duration is shorter for high CPU utilization which means an overall drop in CPU resources required to run the workload.
 
-    This chart can be somewhat misleading. If you use Azure Metrics and do a CPU comparison the chart looks more like
+1. This chart can be somewhat misleading. If you use Azure Metrics from the Resource menu and do a CPU comparison the chart looks more like
 
   :::image type="content" source="../media/7-azure-metrics-query-comparison.png" alt-text="Azure_Metrics_Compute_Query_Comparison.png":::
 
