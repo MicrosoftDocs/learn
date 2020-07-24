@@ -121,7 +121,7 @@ searching for a specific card in a deck of cards.
 ### Problem: Search in an unstructured database
 
 In this case, the function that we use to construct the oracle is a function
-$f(x):\{0,1\}^n\rightarrow\{0,1\}, and our task is to find an input $x'$ for
+$f(x):\{0,1\}^n\rightarrow\{0,1\}$, and our task is to find an input $x'$ for
 which $f(x')=1$. For example, in the card searching problem the input of $f(x)$
 would be any card of the deck, represented by $x$, and the function $f$ would be
 a comparison between our reference card and the drawn card. If the drawn card
@@ -139,7 +139,10 @@ $2^n$ uses of $f(x)$.
 ### Quantum solution: Grover's algorithm
 
 If we're given the number of bits in the function input $n$, and the function
-$f(x)$ implemented with a quantum oracle $U_f$.
+$f(x)$ implemented with a quantum oracle $U_f$, we can use Grover's algorithm to
+find the target efficiently. This algorithm exploit superposition and
+interference and the oracle $U_f$ to increase the probability of measuring the
+correct target $x_0$ when measuring the qubit register.
 
 #### Outline of the algorithm
 
@@ -153,7 +156,7 @@ A high-level outline of the algorithm is:
    probability.
 
 This algorithm obtains the target element $x_0$ with very high probability using
-$\sqrt(2^n)$ queries to the oracle. This is a quadratic improvement over the
+$\sqrt{2^n}$ queries to the oracle. This is a quadratic improvement over the
 classical method. More specifically, it obtains $x_0$ with a probability
 $1-O(\frac1{2^n})$ using $O(\sqrt{2^n})$ queries.
 
@@ -166,7 +169,7 @@ algorithm in Q#](todo).
 
 ## Shor's algorithm
 
-Shor's algorithm is a quantum factoring algorithm that offer's an exponential
+Shor's algorithm is a quantum factoring algorithm that offers an exponential
 speed-up over any known classical factoring algorithm. It's important since it
 implies that public key cryptography can be broken with sufficiently large
 quantum computers.
@@ -198,14 +201,13 @@ The algorithm consists of three parts:
 
 1. A classical part that transforms the factoring problem into a problem of
    finding the period $r$ of a periodic function $f(x)=a^x mod N$, where $a$ is
-a random number whose greater common divisor with $N$ is 1.
+a random number whose greater common divisor with $N$ is $1$.
 
 1. A quantum part that finds the period $r$ using the quantum Fourier transform.
 
-Shor's algorithm succeeds in finding a prime factor with high probability, but
-it can fail. However, repeating the algorithm several times until it finds a
-prime factor is exponentially faster than the best known classical algorithm
-*general number field sieve*.
+Shor's algorithm succeeds in finding a prime factor with high probability but
+it can fail. However, repeating the algorithm several times until it finds the
+prime factors is exponentially faster than the best known classical algorithm.
 
 In  the next unit you'll take a knowledge check to test what you learnt on
 this module.
