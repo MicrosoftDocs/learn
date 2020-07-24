@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-xamarin.xamarin-forms-dual-screen.6-larger-screens
-title: Support for larger screens
+title: Support for layout changes and larger screens
 metadata:
-  title: Support for larger screens
-  description: Support for larger screens
+  title: Support for layout changes and larger screens
+  description: Support for layout changes and larger screens
   ms.date: 07/23/2020
   author: conceptdev
   ms.author: crdun
