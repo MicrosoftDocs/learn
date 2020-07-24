@@ -17,24 +17,24 @@ quiz:
   questions:
     - content: "What is a Container Registry?"
       choices:
-        - content: "A remote storage where we can store our images safely so Kubernetes can download and run them"
+        - content: "A remote storage where we can store our images safely so Kubernetes can download and run them."
           isCorrect: true
-          explanation: "CRs are remote storages for our container images outside our local machine"
-        - content: "An index of where Kubernetes can find an image source to download and execute"
+          explanation: "CRs are remote storages for our container images outside our local machine."
+        - content: "An index of where Kubernetes can find an image source to download and execute."
           isCorrect: false
-          explanation: "Despite being called 'registries', CRs are not indexes"
-        - content: "Version control system for container images allowing us to switch between versions"
+          explanation: "Despite being called 'registries', CRs are not indexes."
+        - content: "Version control system for container images allowing us to switch between versions."
           isCorrect: false
           explanation: "It's possible to store several image versions using image tags, but this is not the main purpose of this resource."
 
     - content: "What is a manifest file"
       choices:
-        - content: "Files that manifest Kubernetes' intentions in your computer"
+        - content: "Files that manifest Kubernetes' intentions in your computer."
           isCorrect: false
-          explanation: "Manifest files are no related to Kubernetes' intentions"
-        - content: "Describe exactly how the cluster can be accessed through contexts"
+          explanation: "Manifest files are no related to Kubernetes' intentions."
+        - content: "Describe exactly how the cluster can be accessed through contexts."
           isCorrect: false
-          explanation: "This is the .kube/config file"
-        - content: "Describe everything needed to create and manage a workload"
+          explanation: "This is the .kube/config file."
+        - content: "Describe everything needed to create and manage a workload."
           isCorrect: true
-          explanation: "Manifests describe what kind of workloads you want to create"
+          explanation: "Manifests describe what kind of workloads you want to create."
