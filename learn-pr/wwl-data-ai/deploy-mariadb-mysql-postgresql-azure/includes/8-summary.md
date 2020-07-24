@@ -1,4 +1,4 @@
-The open source offerings on the Azure Database for MariaDB, MySQL, and PostgreSQL platform cover the most popular open source offerings and offer value-added services like built-in high availability and backups in addition to easy scaling up and down for the flexibility your application needs.
+The open source offerings on the Azure Database for MariaDB, MySQL, and PostgreSQL platform cover the most popular open source offerings and offer value-added services like built-in high availability and backups. These offerings also provide easy scaling up and down for the flexibility your application needs.
 
 Now that you've reviewed this module, you should be able to:
 
