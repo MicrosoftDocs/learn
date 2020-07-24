@@ -1,0 +1,24 @@
+﻿extends layout
+
+block content
+  div.text-center
+    h1.display-4 Welcome to Contoso Fashions
+    p Style from the cloud.
+    h2.display-4 Contoso Fashions
+    p.lead Contoso Fashions is a world-leading online retailer of quality clothing.
+    script
+        console.log("Log from index page")
+        console.error("Error from index page")
+    table.center
+        tr.row
+            th.col-md-4 Clothing for men
+            th.col-md-4 Clothing for women
+            th.col-md-4 Footwear
+        tr.row
+            td.col-md-4 Contoso Fashions has a great range of men's clothes.
+            td.col-md-4 Contoso Fashions has a great range of women's clothes.
+            td.col-md-4 Contoso Fashions has a great range of men's and women's shoes.
+        tr.row
+            td.col-md-4  <img src='/images/jacket.png' alt='Jacket' title='Jacket' width='200' />
+            td.col-md-4  <img src='/images/dress.png' alt='Dress' title='Dress' width='200' />
+            td.col-md-4  <img src='/images/shoes.png' alt='Shoes' title='Shoes' width='200'/>
