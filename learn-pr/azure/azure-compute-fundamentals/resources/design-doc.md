@@ -2,7 +2,7 @@
 
 ## Title
 
-Azure Compute Fundamentals
+Describe core resources available in Azure
 
 ## Role(s)
 
@@ -97,4 +97,6 @@ Identify the subtasks of *Azure Compute Fundamentals*
     
 ## Notes
 
-See TBD
+See the following:
+
+- https://docs.microsoft.com/en-us/learn/modules/define-core-azure-services-products/

@@ -24,9 +24,17 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
+- administrator
 - developer
+- solution-architect
+- student
 products:
 - azure
+- azure-virtual-machines
+- azure-app-service
+- azure-container-instances
+- azure-container-registry
+- azure-kubernetes-service
 units:
 - learn.azure.azure-compute-fundamentals.introduction
 - learn.azure.azure-compute-fundamentals.azure-virtual-machines
