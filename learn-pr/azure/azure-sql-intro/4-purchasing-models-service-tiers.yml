@@ -13,13 +13,13 @@ durationInMinutes: 10
 content: |
   [!include[](includes/4-purchasing-models-service-tiers.md)]
 quiz:
-    title: Selecting a service tier
+    title: Knowledge Check
     questions:
     - content: "You're moving an application and database to Azure, but your database is currently 62 TB, with plans to continue to grow. You don't currently leverage any instance-scoped features. Which Azure SQL deployment option will be the easiest to move to?"
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false
-        explanation: "62TB is bigger than the max size allowed for this deployment option"
+        explanation: "This will technically work, but is there a PaaS offering?"
       - content: "Azure SQL Managed Instance"
         isCorrect: false
         explanation: "62TB is bigger than the max size allowed for this deployment option"

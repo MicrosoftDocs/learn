@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/3-deployment-options.md)]
 quiz:
-    title: Selecting a deployment option
+    title: Knowledge Check
     questions:
     - content: "Consider the following scenario: you want to migrate to the cloud, but you leverage a third-party application which requires access to the operating system (OS). Which Azure SQL deployment option will be the easiest to move to?"
       choices:
@@ -29,11 +29,11 @@ quiz:
       - content: "Azure SQL Database - elastic pool"
         isCorrect: false
         explanation: "Only one deployment option is going to give you OS-level access."
-    - content: "Consider the following scenario: you want to migrate to the cloud, and your application leverages CLR and Service Broker capabilities from SQL Server. Which Azure SQL deployment option will be the easiest to move to?"
+    - content: "Consider the following scenario: you want to migrate to the cloud and remove some of the management associated with SQL Server, but your application leverages CLR and Service Broker capabilities from SQL Server. Which Azure SQL deployment option will be the easiest to move to?"
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false
-        explanation: "This will technically work, but is there a better option to consider?"
+        explanation: "This will technically work, but is there a better option to consider which removes some of the management overhead?"
       - content: "Azure SQL Managed Instance"
         isCorrect: true
         explanation: "Azure SQL Managed Instance is the only PaaS service that supports instance-scoped features like CLR and Service Broker. A is also technically correct, but doesn't unlock the benefits that PaaS can offer."
