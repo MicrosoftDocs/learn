@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.explore-azure-service-level-agreements.knowledge-check
+uid: learn.explore-sla-lifecycle-azure-new.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/24/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 07/24/2020
+  author: socuff
+  ms.author: socuff
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

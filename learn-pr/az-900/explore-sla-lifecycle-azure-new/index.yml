@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.explore-sla-lifecycle-azure-new
+metadata:
+  title: Explore service level agreements and service lifecycle in Azure
+  description: "Everyone wants to use the next great feature in their solutions before their competitors; explore how to see what is coming next. AZ-900"
+  ms.date: 07/24/2020
+  author: socuff
+  ms.author: socuff
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore service level agreements and service lifecycle in Azure
+summary: Everyone wants to use the next great feature in their solutions before their competitors. Explore features designed to help you know what is coming next.
+abstract: |
+  After completing this module, you will be able to:
+   - Define what preview features are.
+   - Explore how you can access these features.
+   - Review what general availability of a feature is.
+   - Preview a few of the upcoming features.
+prerequisites: |
+  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+iconUrl: /learn/achievements/explore-sla-lifecycle-azure-new.svg
+hidden: true
+levels:
+- beginner
+roles:
+- administrator
+- business-owner
+- business-user
+- student
+- technology-manager
+products:
+- azure
+units:
+- learn.explore-sla-lifecycle-azure-new.introduction
+- learn.explore-sla-lifecycle-azure-new.explore-service-level-agreements
+- learn.explore-sla-lifecycle-azure-new.factors-impact-sla
+- learn.explore-sla-lifecycle-azure-new.define-public-preview-general-features
+- learn.explore-sla-lifecycle-azure-new.access-preview-features
+- learn.explore-sla-lifecycle-azure-new.knowledge-check
+- learn.explore-sla-lifecycle-azure-new.summary
+badge:
+  uid: learn.explore-sla-lifecycle-azure-new.badge
