@@ -18,13 +18,13 @@ quiz:
     - content: "Which service tier puts the data and log files on Azure premium storage?"
       choices:
       - content: "General purpose"
-        isCorrect: false
+        isCorrect: true
         explanation: "In General purpose, tempdb is on directly-attached SSD, but the data and log files are in Azure premium storage."
       - content: "Business Critical"
         isCorrect: false
         explanation: "In Business critical, tempdb, data, and log files are on directly-attached SSD."
       - content: "Hyperscale"
-        isCorrect: true
+        isCorrect: false
         explanation: "Hyperscale has a different architecture, and the data files are on Azure standard storage and the log files have a mix: the landing zone is in Azure premium storage and the long term log storage is in Azure standard storage."
       - content: "All of the above"
         isCorrect: false
