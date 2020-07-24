@@ -1,13 +1,13 @@
-In this unit you will see some of the most famous quantum computing algorithms.
-We will outline how they use superposition, interference and entanglement to
+In this unit, you'll see some of the most famous quantum computing algorithms.
+We'll outline how they use superposition, interference, and entanglement to
 achieve a quantum advantage over classical algorithms. In future modules, you
 will be able to explore in detail some of these algorithms.
 
 ## Quantum oracle
 
-First, we need to introduce the concept of *quantum oracle*. In many problems we
+First, we need to introduce the concept of *quantum oracle*. In many problems, we
 are interested in solving a problem while making the fewest number of uses of a
-function $f:\{ 0,1 \}^n \rightarrow \{0,1\}^m$. For example, if we are searching an element in
+function $f:\{ 0,1 \}^n \rightarrow \{0,1\}^m$. For example, if we're searching an element in
 a database we can encode the problem in a binary function $f:
 \{0,1\}^n \rightarrow \{0,1\}$. The function $f(x)$ can be considered as a
 black-box that outputs $1$ if the consulted element $x$ is our target, and $0$
@@ -27,7 +27,7 @@ The oracle has to act on quantum states instead of classical bits. To enable
 this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
 can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 
-<!-- In this tutorial we are going to implement the function $f$ using *phase
+<!-- In this tutorial we're going to implement the function $f$ using *phase
 oracles*. A phase oracle $U_f$ encodes the value of $f$ by modifying the phase
 the qubit register's state as follows:
 
@@ -55,7 +55,7 @@ improve classical results using superposition, interference and entanglement.
 
 ### Problem: finding out if a function is constant
 
-First let's introduce the problem we are going to solve. Suppose you're given a
+First let's introduce the problem we're going to solve. Suppose you're given a
 function $f(x):\{0,1\}^n\rightarrow\{0,1\}$, this is, a binary function that
 takes a string of bits and outputs a single bit. You're guaranteed that the
 function is:
@@ -68,7 +68,7 @@ For example, the function $f(x)=1$ for all $x$ is a constant function. On the
 other hand, the function $f(x)= x_{n-1}$, where $x_{n-1}$ is the last bit of
 $x$, is balanced.
 
-The task is to find out wether if a given black-box function $f(x)$ is constant
+The task is to find out whether if a given black-box function $f(x)$ is constant
 or balanced with the least amount of calls possible.
 
 ### Classical solution
@@ -78,7 +78,7 @@ we need?
 
 The first call will give us no information - regardless of whether it returns 0
 or 1, the function could still be constant or balanced. In the best case
-scenario the second call will return a different value and we'll be able to
+scenario, the second call will return a different value and we'll be able to
 conclude that the function is balanced in just two calls. However, if we get the
 same value for the first two calls, we'll have to keep querying the function
 until either we get a different value or until we do $\frac{2^{n}}{2}+1$ queries
@@ -115,8 +115,8 @@ in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](todo).
 ## Grover's algorithm
 
 Grover's search algorithm is one of the most popular quantum algorithms. The
-algorithm searches for an item in a list of unstructured data, e.g. the
-searching for an specific card in a deck of cards.
+algorithm searches for an item in a list of unstructured data, for example the
+searching for a specific card in a deck of cards.
 
 ### Problem: Search in an unstructured database
 
@@ -138,7 +138,7 @@ $2^n$ uses of $f(x)$.
 
 ### Quantum solution: Grover's algorithm
 
-If we are given the number of bits in the function input $n$, and the function
+If we're given the number of bits in the function input $n$, and the function
 $f(x)$ implemented with a quantum oracle $U_f$.
 
 #### Outline of the algorithm
@@ -167,7 +167,7 @@ algorithm in Q#](todo).
 ## Shor's algorithm
 
 Shor's algorithm is a quantum factoring algorithm that offer's an exponential
-speed up over any known classical factoring algorithm. It's important since it
+speed-up over any known classical factoring algorithm. It's important since it
 implies that public key cryptography can be broken with sufficiently large
 quantum computers.
 
@@ -207,7 +207,7 @@ it can fail. However, repeating the algorithm several times until it finds a
 prime factor is exponentially faster than the best known classical algorithm
 *general number field sieve*.
 
-In  the next unit you will realize a knowledge check to test what you learnt on
+In  the next unit you'll take a knowledge check to test what you learnt on
 this module.
 
 <!-- In this unit you will use superposition, interference and entanglement to
@@ -220,7 +220,7 @@ interference and entanglement.
 
 ## Deutsch's problem
 
-First let's introduce the problem we are going to solve. Suppose you're given a
+First let's introduce the problem we're going to solve. Suppose you're given a
 function $f(x):\{0,1\}^n\rightarrow\{0,1\}$, this is, a binary function that
 takes a string of bits and outputs a single bit. You're guaranteed that the
 function is:
@@ -233,7 +233,7 @@ For example, the function $f(x)=1$ for all $x$ is a constant function. On the
 other hand, the function $f(x)= x_{n-1}$, where $x_{n-1}$ is the last bit of
 $x$, is balanced.
 
-The task is to find out wether if a given black-box function $f(x)$ is constant
+The task is to find out whether if a given black-box function $f(x)$ is constant
 or balanced with the least amount of calls possible.
 
 ## Classical algorithm
@@ -273,7 +273,7 @@ The oracle has to act on quantum states instead of classical bits. To enable
 this, the integer input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
 can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 
-In this tutorial we are going to implement the function $f$ using *phase
+In this tutorial we're going to implement the function $f$ using *phase
 oracles*. A phase oracle $U_f$ encodes the value of $f$ by modifying the phase
 the qubit register's state as follows:
 
@@ -412,7 +412,7 @@ $1$ if $x$ has an odd number of $1$s, and $0$ otherwise.
 ### Algorithm for arbitrary $n$
 
 Now that we understand quantum oracles and got an overview of the algorithm for
-$n=1$, we are ready to present the full algorithm for arbitrary $n$.
+$n=1$, we're ready to present the full algorithm for arbitrary $n$.
 
 Suppose you are given an oracle operation $U_f$ that acts as a black-box
 implementing the function $f(x)$. Both, $f(x)$ and $U_f$ are unknown to you and
