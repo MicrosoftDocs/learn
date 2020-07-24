@@ -1,10 +1,10 @@
-Suppose you're <span style="background:yellow">TODO: TODO</span>...
+Suppose you're <span style="background:yellow">TODO</span>...
 
 ## What are Public, Private, and Hybrid clouds?
 
 There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
 
-| Deployment Model | Description |
+| <nobr>Deployment Model</nobr> | Description |
 | --- | --- |
 | <nobr>**Public cloud**</nobr> | Services are offered over the public internet and available to anyone who wants to purchase them. Cloud resources - such as servers and storage - are owned and operated by a third-party cloud service provider, and delivered over the internet. |
 | <nobr>**Private cloud**</nobr> | A private cloud consists of computing resources used exclusively by users from one business or organization. A private cloud can be physically located at your organization's on-site datacenter, or it can be hosted by a third-party service provider. |

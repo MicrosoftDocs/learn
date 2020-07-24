@@ -1,4 +1,4 @@
-Suppose you're <span style="background:yellow">TODO: TODO</span>...
+Suppose you're <span style="background:yellow">TODO</span>...
 
 ## What are PaaS, IaaS, and SaaS?
 
@@ -27,16 +27,11 @@ IaaS is the most flexible category of cloud services. It aims to give you comple
 :::row:::
   :::column:::
 **No CapEx**. Users have no upfront costs.
-  :::column-end:::
-  :::column:::
-**Management**. The shared responsibility model applies; the user manages and maintains the services they have provisioned, and the cloud provider manages and maintains the cloud infrastructure.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
+
 **Agility**. Applications can be made accessible quickly, and deprovisioned whenever needed.
   :::column-end:::
   :::column:::
+**Management**. The shared responsibility model applies; the user manages and maintains the services they have provisioned, and the cloud provider manages and maintains the cloud infrastructure.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -83,16 +78,11 @@ PaaS provides the same benefits and considerations as IaaS, but there some addit
 :::row:::
   :::column:::
 **No CapEx**. Users have no upfront costs.
-  :::column-end:::
-  :::column:::
-**Platform limitations**. There may be some limitations to a cloud platform that could affect how an application runs. Any limitations should be taken into consideration when considering which PaaS platform is best suited for a workload.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
+
 **Agility**. PaaS is more agile than IaaS, and users do not need to configure servers for running applications.
   :::column-end:::
   :::column:::
+**Platform limitations**. There may be some limitations to a cloud platform that could affect how an application runs. Any limitations should be taken into consideration when considering which PaaS platform is best suited for a workload.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -141,16 +131,11 @@ SaaS provides the same benefits as IaaS, but again there some additional benefit
 :::row:::
   :::column:::
 **No CapEx**. Users have no upfront costs.
-  :::column-end:::
-  :::column:::
-**Software  limitations**. There may be some limitations to a software application that might affect how users work. Since you are using as-is software you don't have direct control of features. Any business needs and software limitations should be taken into consideration when considering which SaaS platform is best suited for a workload.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
+
 **Agility**. Users can provide staff with access to the latest software quickly and easily.
   :::column-end:::
   :::column:::
+**Software  limitations**. There may be some limitations to a software application that might affect how users work. Since you are using as-is software you don't have direct control of features. Any business needs and software limitations should be taken into consideration when considering which SaaS platform is best suited for a workload.
   :::column-end:::
 :::row-end:::
 :::row:::
