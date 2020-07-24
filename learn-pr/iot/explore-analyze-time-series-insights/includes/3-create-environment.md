@@ -8,29 +8,28 @@ In this unit, you'll create a Time Series Insights environment and configure ing
 
 You'll now specify basic
 
-1. In the **Environment name** field, specify a unique name.
 1. In the **Subscription** dropdown, you should already have one subscription selected, _Concierge Subscription_.
 1. In the **Resource group** dropdown, select the resource group created by the sandbox, <rgn>[sandbox resource group name]</rgn>.
+1. In the **Environment name** field, specify a unique name.
 1. In the **Location** dropdown, select the same location you choose for the IoT Hub in the previous unit.
-
+1. In the **Tier** dropdown, select **Gen 2** to use Time Series Insights V2.
 ![Azure Portal screenshot](../media/explore-6.png)
 
 ## Configure Storage options
 
-You'll now need to select a pricing option. For using Time Series Insights (TSI) Preview, select **PAYG** option.
-Time Series Insights Preview allows you to store your data in two different stores:
+Time Series Insights needs a way to partition your data, with a value contained
+in your messages. That's the name of the property containing your value that you need to specify next. As messages are coming from IoT Hub, specify the value below in **Property name** field.
+    ```
+    iothub-connection-device-id
+    ```
+You'll now need to select a pricing option. For using Time Series Insights (TSI) , select **PAYG** option.
+Time Series Insights allows you to store your data in two different stores:
 
 - **A cold store**, for long-term durable storage. It's the default storage option.
 - **A warm store**, managed by Time Series Insights, optimized for higher query performance, and unlimited queries. It's an optional feature that can be enabled at creation time or later on.
 
-For this module, we'll enable both. Time Series Insights needs a way to partition your data, with a value contained
-in your messages. That's the name of the property containing your value that you need to specify next. 
+For this module, we'll enable both. 
 
-
-1. As messages are coming from IoT Hub, specify the value below in **Property name** field.
-    ```
-    iothub-connection-device-id
-    ```
 1. In the **Storage account name** field, specify a unique value.
 1. In the **Storage account replication** dropdown, for this course, leave _Locally redundant storage (LRS)_.
 1. In the **Enable warm store** selector, select _Yes_.
@@ -61,7 +60,6 @@ We'll now create a dedicated consumer group for the IoT Hub. It allows you to ha
 1. Under the **TIMESTAMP** section, leave the **Property Name** blank.
 1. Click on the **Review + create** button at the bottom-left of the page.
 1. Click on **Create** button.
-
 
 ![Azure Portal screenshot](../media/explore-8.png)
 
