@@ -7,7 +7,7 @@ does it work? In this module, you'll learn the fundamental concepts behind the
 power of quantum computing.
 
 The key to understanding quantum computing is the three concepts: superposition,
-interference and entanglement. In this module, you'll use Q# and some tools
+interference, and entanglement. In this module, you'll use Q# and some tools
 provided by the Quantum Development Kit to illustrate these ideas.
 
 Finally, we'll outline different quantum algorithms to show how they exploit

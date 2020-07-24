@@ -1,6 +1,6 @@
-In this unit we are going to explore how to create, manage and inspect superpositions in Q#. We will introduce a function from the Quantum Development Kit called `DumpMachine` that will allow us to observe the probability amplitudes of the simulated qubit registers.
+In this unit, we are going to explore how to create, manage, and inspect superpositions in Q#. We'll introduce a function from the Quantum Development Kit called `DumpMachine` that will allow us to observe the probability amplitudes of the simulated qubit registers.
 
-## Create the project 
+## Create the project
 
 Let's start by creating a Q# project like we did for the quantum random number generator.
 
@@ -14,11 +14,19 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 ## Include the Diagnostics Library
 
-The Diagonstics Library under the `Microsoft.Quantum.Diagnostics` namespace is a library of the Quantum Development Kit that contains functions and operations useful for diagnostic purposes. For the moment, we are just interested in the function [`DumpMachine`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine). This function dumps information about the current status of the target machine into a file or some other location. If we omit the `location` in the argument it will print the output in the console. We will use this information to track the state of the qubit register.
+The Diagnostics Library under the `Microsoft.Quantum.Diagnostics` namespace is a
+library of the Quantum Development Kit that contains functions and operations
+useful for diagnostic purposes. For the moment, we are interested in the
+function
+[`DumpMachine`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine).
+This function dumps information about the current status of the target machine
+into a file or some other location. If we omit the `location` in the argument,
+it will print the output in the console. We'll use this information to track
+the state of the qubit register.
 
 >[!NOTE] In actual quantum hardware you won't be able to use a tool like `DumpMachine` to access the state of the qubit register without breaking the algorithm. Accessing the state of the qubit register will imply measuring it and therefore changing its state. In simulated virtual quantum computers, we can use tools like `DumpMachine`  and do tricks like these.
 
-To add the library we just open `Microsoft.Quantum.Diagnostic` in the namespace:
+To add the library, we open `Microsoft.Quantum.Diagnostic` in the namespace:
 
  ```qsharp
      namespace ExploringSuperposition{
@@ -30,11 +38,12 @@ To add the library we just open `Microsoft.Quantum.Diagnostic` in the namespace:
          ...
      }
  ```
+
 ## Learn to use `DumpMachine`
 
 We can use the `GenerateRandomBit` operation we defined in the previous module to see
 how `DumpMachine` works. We just need to add `DumpMachine()` on every step we want to
-see the state of the register. In this case we will call `DumpMachine()` three times:
+see the state of the register. In this case we'll call `DumpMachine()` three times:
 at the beginning before 
 
 ```
@@ -70,7 +79,7 @@ namespace ExploringSuperposition {
 
 Note that we split the operation `MResetZ` into two operations `M` and `Reset` since we want to observe the state after the measurement.
 
-We run the code using the command `dotnet run` in the terminal. If we obtain the result `One` we should see the following outcome:
+We run the code using the command `dotnet run` in the terminal. If we obtain the result `One`, we should see the following outcome:
 
 ```output 
 Initialized qubit:
@@ -96,7 +105,7 @@ Qubit after resetting:
 One
 ```
 
-The `DumpMachine` function outputs a table with the information characterizing the state of the qubit register. Specifically, it gives the probability amplitude, the probability and the phase in radians for each state. Let's comment on each step:
+The `DumpMachine` function outputs a table with the information characterizing the state of the qubit register. Specifically, it gives the probability amplitude, the probability, and the phase in radians for each state. Let's comment on each step:
 
 1. ```output
        Initialized qubit:
@@ -104,8 +113,11 @@ The `DumpMachine` function outputs a table with the information characterizing t
        |0?:     1,000000 +  0,000000 i  ==     ******************** [ 1,000000 ]     --- [  0,00000 rad ]
        |1?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
    ```
+
    Every qubit allocated with the statement `using` starts in the state $\ket{0}$, so `DumpMachine` outputs 
-   the information corresponding to a single qubit register in the state $\ket{0}$.
+   the information corresponding to a single qubit register in the state
+   $\ket{0}$.
+
 1. ```output
        Qubit after applying H:
        # wave function for qubits with ids (least to most significant): 0
@@ -113,28 +125,34 @@ The `DumpMachine` function outputs a table with the information characterizing t
        |1?:     0,707107 +  0,000000 i  ==     ***********          [ 0,500000 ]     --- [  0,00000 rad ]
 
    ```
+
    After applying `H` we throw the qubit into the superposition state $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$.
+
 1. ```output
        Qubit after the measurement:
        # wave function for qubits with ids (least to most significant): 0
        |0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
        |1?:     1,000000 +  0,000000 i  ==     ******************** [ 1,000000 ]     --- [  0,00000 rad ]
    ```
-   After measuring and storing the outcome `One`, the state of the registers collapses to $\ket{1}$ and is no longer in a superposition.
+
+   After measuring and storing the outcome `One`, the state of the registers
+   collapses to $\ket{1}$ and is no longer in a superposition.
+
 1. ```output
        Qubit after resetting:
        # wave function for qubits with ids (least to most significant): 0
        |0?:     1,000000 +  0,000000 i  ==     ******************** [ 1,000000 ]     --- [  0,00000 rad ]
        |1?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
    ```
-   The operation `Reset` gives back the qubit to the state $\ket{0}$. Rememeber that for any Q# operation you
+
+   The operation `Reset` gives back the qubit to the state $\ket{0}$. Remember that for any Q# operation you
    always need to leave the qubits you use in the state $\ket{0}$ to be readily available for being used by other
    operations.
-   
+
 ## Explore different superpositions
 
 Now that we know how to inspect the state of a register, we can see operations that
-modify the state of our qubits and put them into a superpostion.
+modify the state of our qubits and put them into a superposition.
 
 ### Skewed random bit generator
 
@@ -150,7 +168,8 @@ to a qubit in the state $\ket{0}.$
 
 >[!TIP] If you want to learn more about the math behind single qubit operations, you can check the [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates).
 
-The operation would be the following:
+The operation would be:
+
 ```qsharp
 namespace ExploringSuperposition {
     open Microsoft.Quantum.Canon;
@@ -172,9 +191,10 @@ namespace ExploringSuperposition {
     }
 }
 ```
+
 Let's try it out. If we choose $\alpha = \frac13$:
 
-```
+```outcome
 dotnet run --alpha 0.333333
 The qubit is in the desired state.
 # wave function for qubits with ids (least to most significant): 0
@@ -183,6 +203,7 @@ The qubit is in the desired state.
 Your skewed random bit is:
 One
 ```
+
 We can see how  `DumpMachine` displays the wanted state after applying the operations
 and displays the correct probabilities.
 
@@ -213,7 +234,7 @@ namespace ExploringSuperposition {
 
     @EntryPoint()
     operation GenerateRandomNumber() : Int {
-        using (qubits = Qubit[3]){       
+        using (qubits = Qubit[3]){
         ApplyToEach(H,q);
         Message("The qubit register in a uniform superposition: ");
         DumpMachine();
@@ -225,7 +246,9 @@ namespace ExploringSuperposition {
     }
 }
 ```
+
 In this code we introduced three concepts:
+
 * Now `qubits` represents a `Qubit` array of dimension 3. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/en-us/quantum/user-guide/language/types#array-types).
 * We use the functions [`ApplyToEach`](todo), [`ResetAll`](todo) and [`MultiM`](todo) to perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions alike that make writing quantum programs more efficient. 
 * We use the functions [`BoolArrayAsInt`](todo) and [`ResultArrayAsBoolArray`](todo) from the library `Microsoft.Quantum.Convert` to
@@ -259,7 +282,7 @@ The output should be something like this:
 ```
 
 We can see with `DumpMachine` how the act of measuring the three qubits
-collapses the state of the register to one of the 8 possible basis states. 
+collapses the state of the register to one of the eight possible basis states. 
 
 What would happen if instead of measuring the three qubits at once with `MultiM` we measure them sequentially? We can check it, we just need to slightly modify the code:
 
@@ -294,7 +317,7 @@ namespace katas {
 }
 ```
 
-In this block we have introduced the use of the loop `for`. Q# as a full stack programming language has classical flow control capabilities. You can learn more about the different Q# flow control statements in the [Quantum Development Kit documentation](todo).
+In this block, we have introduced the use of the loop `for`. Q# as a full stack programming language has classical flow control capabilities. You can learn more about the different Q# flow control statements in the [Quantum Development Kit documentation](todo).
 
 The output of this code should be something like this:
 
@@ -351,7 +374,7 @@ each step:
 1. **State preparation:** after applying `H` to each qubit of the register we obtain
   a uniform superposition.
 
-    ```qsharp 
+    ```qsharp
     The qubit register in a uniform superposition: 
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
@@ -364,7 +387,11 @@ each step:
     |7?:     0,353553 +  0,000000 i  ==     ***                  [ 0,125000 ]     --- [  0,00000 rad ]
     ```
 
-1. **First measurement:** in the first measurement the result was `One`. Therefore, all the amplitudes of the states whose rightmost qubit is `Zero` get vanished, i.e. $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$ and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the normalization condition.
+1. **First measurement:** in the first measurement, the result was `One`.
+   Therefore, all the amplitudes of the states whose rightmost qubit is `Zero`
+   get vanisheid, this is $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$
+   and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the
+   normalization condition.
     ```qsharp
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
@@ -376,9 +403,12 @@ each step:
     |6?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
     |7?:     0,500000 +  0,000000 i  ==     *****                [ 0,250000 ]     --- [  0,00000 rad ]
     ```
-1. **Second measurement:** in the second measurement the result was `Zero`, so
+
+1. **Second measurement:** in the second measurement, the result was `Zero`, so
    all the amplitudes of the states whose second rightmost (middle) qubit is `One` get
-   vanished, i.e. $\ket{3}=\ket{011} and $\ket{7}=\ket{111}$. The rest of the amplitudes increase to fulfill the normalization condition.
+   vanished, this is $\ket{3}=\ket{011} and $\ket{7}=\ket{111}$. The rest of the
+   amplitudes increase to fulfill the normalization condition.
+
     ```qsharp
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
@@ -390,7 +420,8 @@ each step:
     |6?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
     |7?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
     ```
-1. **Third measurement:** in the third measurement the result was `One`, so
+
+1. **Third measurement:** in the third measurement, the result was `One`, so
    all the amplitudes of the states whose leftmost qubit is `Zero` get
    vanished. The only compatible state is $\ket{5}=\ket{101}$, that get's an
    amplitude probability of $1$.
@@ -410,5 +441,5 @@ each step:
     5
     ```
 
-In the next unit we are going to explore two important concepts of quantum
+In the next unit, we're going to explore two important concepts of quantum
 computing: interference and entanglement.
