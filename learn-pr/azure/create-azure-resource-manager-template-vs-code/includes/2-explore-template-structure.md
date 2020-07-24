@@ -71,9 +71,7 @@ This module focuses on deploying a local ARM template. In future Learn modules, 
 
 To deploy a local template, you need to have either [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.2.0&azure-portal=true) or [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) installed locally. 
 
-First, sign in to Azure using Azure CLI or Azure PowerShell.
-
-\***
+First, sign in to Azure using Azure CLI or Azure PowerShell:
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -89,7 +87,7 @@ Connect-AzAccount
 
 ---
 
-Then, you create a resource group or use an already defined resource group to deploy into. If you need to create a resource group, you can use this command:
+Next, you define your resource group for deployment. You can use an already defined resource group or create a new one with the following command:
 
 # [Azure CLI](#tab/azure-cli)
 
@@ -135,21 +133,21 @@ New-AzResourceGroupDeployment `
 
 ---
 
-Linked templates are used to deploy complex solutions. You can break a template into many templates, and deploy these templates through a main template. When the main template gets deployed, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
+Linked templates are used to deploy complex solutions. You can break a template into many templates and deploy these templates through a main template. When you deploy the main template, it triggers the deployment of the linked template. You can store and secure the linked template by using a SAS token.
 
-A continuous integration/continuous deployment (CI/CD) pipeline automates building and deploying development project including Azure Resource Manager template projects. The two most common pipelines used for template deployment are [Azure Pipelines](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](https://docs.microsoft.com/learn/paths/automate-workflow-github-actions/?azure-portal=true).
+A continuous integration/continuous deployment (CI/CD) pipeline automates the creation and deployment of development projects including Azure Resource Manager template projects. The two most common pipelines used for template deployment are [Azure Pipelines](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops/?azure-portal=true) or [GitHub Actions](https://docs.microsoft.com/learn/paths/automate-workflow-github-actions/?azure-portal=true).
 
 More information on these two types of deployment are covered in other modules.
 
-## How do I add resources to the template
+## Add resources to the template
 
 To add a resource to your template, you'll need to know the resource provider and its types of resources. The syntax for this combination is in the form of *{resource-provider}/{resource-type}*. For example, to add a storage account resource to your template, you'll need the *Microsoft.Storage* resource provider. One of the types for this provider is *storageAccount*. So your resource type will be displayed as *Microsoft.Storage/storageAccounts*. You can use a list of [resource providers for Azure services](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers?azure-portal=true) to find the providers you need.
 
-Once you have the provider and resource type, you need to know the properties to use for that resource type. For that, you can go to the [Define resources in Azure Resource Manager template](https://docs.microsoft.com/azure/templates?azure-portal=true) page. There you will see a left side menu to find the resource you are looking for. Notice that the properties are sorted by API version.
+After you've defined the provider and resource type, you need to understand the properties each resource type you want to use. For details, see [Define resources in Azure Resource Manager template](https://docs.microsoft.com/azure/templates?azure-portal=true). View the list in the left column to find the resource. Notice that the properties are sorted by API version.
 
 ![Microsoft documentation page showing the storage account documentation selected.](../media/2-resource-type-properties.png)
 
-Here is an example of some of the listed properties from the Storage Accounts page:
+Here is an example of some of the listed properties from the `Microsoft.Storage/storageAccounts` page:
 
 ![Microsoft documentation page showing some of the storage account properties.](../media/2-storage-account-properties.png)
 

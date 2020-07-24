@@ -1,17 +1,17 @@
 > [!NOTE]
-> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox, and you're added to a special subscription named Concierge Subscription.
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're also added to a special subscription named Concierge Subscription.
 
-In this exercise, you create an Azure Resource Manager (ARM) template and deploy it to Azure. Then you update that ARM template to add parameters and outputs.
+In this exercise, you create an Azure Resource Manager template, deploy it to Azure, and then update that ARM template to add parameters and outputs.
 
-This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+This exercise requires Visual Studio Code with the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools) extension. Be sure to install the extension.
 
 ## Create a Resource Manager template
 
 1. Open Visual Studio Code and create a new file called *azuredeploy.json*.
-1. The Visual Studio Code ARM template extension comes preconfigured with many snippets that help you develop templates. Let's start by adding a blank template. On the first line of the file, type **arm**.
-1. You see an intellisense choice **!arm**. Choose that snippet by clicking on the box next to it.
+1. The Visual Studio Code ARM template extension comes configured with snippets to help you develop templates. Let's start by adding a blank template. On the first line of the file, type **arm**.
+1. You see an intellisense choice **arm!**. Choose that snippet by clicking on the box next to it.
 
-    :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
+   :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
 
 1. Your file will now look like this:
 
@@ -28,7 +28,7 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
     }
     ```
 
-      Notice that this file has all of the sections of a Resource Manager template that we discussed in the last unit.
+    Notice that this file has all of the sections of a Resource Manager template that we discussed in the last unit.
 
 1. Save the changes to the file.
 
@@ -36,52 +36,57 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 ::: zone pivot="cli"
 
-To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and that you are signing in to the same account that activated the sandbox.
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) tools installed and sign in with the same account you used to activate the sandbox.
 
 1. Open a terminal window using the *Terminal* menu.
+
 1. If the dropdown menu on the right of the terminal window says *bash* you have the right shell to work from and you can skip to the next section.
 
-      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the dropdown." border="true":::
+   :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the dropdown." border="true":::
 
 1. If not, select the dropdown and choose **Select Default Shell**.
+
 1. Select **bash**.
 
-      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
+   :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
 
 1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
 
 ### Sign in to Azure
 
-1. From the terminal in Visual Studio Code, run this command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
-
-    ```azurecli
-    az login
-    ```
-
-1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. You use this one for the rest of the exercise.
-1. Set the default subscription for all of the Azure CLI commands you run in this session.
-
-    ```azurecli
-    az account set --subscription "Concierge Subscription"
-    ```
-
-   > [!NOTE]
-   > If you have used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the above command was successful, skip the next two steps.
-
-1. Get the *Concierge Subscription* IDs.
+1. From the terminal in Visual Studio Code, run the following command to sign in to Azure. Running this command will open a browser where you can sign in to your account.
 
    ```azurecli
-    az account list \
-      --refresh \
-      --query "[?contains(name, 'Concierge Subscription')].id" \
-      --output table
-    ```
+   az login
+   ```
 
-1. Set the default subscription using the subscription ID. Replace the *{your subscription ID}* with the latest Concierge Subscription ID.
+1. After you're logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
-    ```azurecli
-    az account set --subscription {your subscription ID}
-    ```
+1. Set the default subscription for all of the Azure CLI commands you run in this session.
+
+   ```azurecli
+   az account set --subscription "Concierge Subscription"
+   ```
+
+> [!NOTE]
+> If you used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, you can set the default subscription with the following steps:
+>
+>1. Get the *Concierge Subscription* IDs.
+>
+>    ```azurecli
+>    az account list \
+>      --refresh \
+>      --query "[?contains(name, 'Concierge Subscription')].id" \
+>      --output table
+>    ```
+>
+>1. Set the default subscription using the subscription ID. Replace the *{your subscription ID}* with the latest Concierge Subscription ID.
+>
+>    ```azurecli
+>    az account set --subscription {your subscription ID}
+>    ```
+
+\***
 
 ### Set the default resource group
 
