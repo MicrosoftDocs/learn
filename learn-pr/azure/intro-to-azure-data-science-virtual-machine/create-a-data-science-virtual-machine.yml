@@ -9,7 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ROBOTS: NOINDEX
-azureSandbox: true
 title: "Create a Data Science Virtual Machine"
 durationInMinutes: 15
 content: |

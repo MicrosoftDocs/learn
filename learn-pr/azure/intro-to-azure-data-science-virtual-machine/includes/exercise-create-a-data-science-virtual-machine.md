@@ -26,14 +26,18 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
 
     - Enter the **Virtual machine name** as _test-ubuntu-dsvm_
 
-    - Select a **Region** close to you from the following list
-        [!include[](../../../includes/azure-sandbox-regions-note-friendly.md)]
+    - The **Region** should be the same as that of the resource group 
 
     - For **Availability options**, choose _No infrastructure redundancy required_
 
     - The **Image** should be the _Data Science Virtual Machine - Ubuntu 18.04_ option you selected from the Marketplace
 
-    - Check to make sure the **Size** of the VM set as _Standard\_DS1\_v2_
+    - The **Size** of the VM should be _Standard\_DS1\_v2_. If that is not the value selected:
+        1. Select **Choose size** 
+        1. Enter `DS1\_` in the search box
+        1. Choose the `DS1\_v2` row
+        1. Click **Select** to choose that size and return to the configuration screen
+
     - Change the **Authentication Type** to _Password_
     - Choose and record a **Username** and strong **Password** 
     
