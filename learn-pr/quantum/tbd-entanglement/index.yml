@@ -32,7 +32,7 @@ units:
 - learn.quantum.concepts.3-explore-superposition-with-qsharp
 - learn.quantum.concepts.4-interference-and-entanglement-in-quantum-computing
 - learn.quantum.concepts.5-explore-interference-and-entanglement-with-qsharp
-- learn.quantum.concepts.6-implement-deutsch-jozsa-algorithm
+- learn.quantum.concepts.6-introduction-to-quantum-algorithms
 - learn.quantum.concepts.7-knowledge-check
 - learn.quantum.concepts.8-summary
 badge:

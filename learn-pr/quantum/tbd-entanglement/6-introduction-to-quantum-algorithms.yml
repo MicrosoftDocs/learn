@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.concepts.6-implement-deutsch-jozsa-algorithm
-title: Exercise - Implement the Deutsch-Jozsa algorithm in Q#
+uid: learn.quantum.concepts.6-introduction-to-quantum-algorithms
+title: Introduction to quantum algorithms
 metadata:
-  title: Entanglement in quantum computing
-  description: Explanation of quantum entanglement in the context of quantum computing.
+  title: Introduction to quantum algorithms
+  description: Short introduction to several famous quantum algorithms.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -22,4 +22,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-implement-deutsch-jozsa-algorithm.md)]
+  [!include[](includes/6-introduction-to-quantum-algorithms.md)]
