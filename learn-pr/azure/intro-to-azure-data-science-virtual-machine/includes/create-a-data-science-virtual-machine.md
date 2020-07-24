@@ -13,34 +13,7 @@ There are two Data Science Virtual Machine images:
 * Windows Server 2019
 * Ubuntu Server 18.04 LTS
 
-Both machines contain a variety of tools for data science and deep learning.
-
-| Windows Server 2019   only                        | Both Machines                                        | Ubuntu Server 18.04 LTS only           |
-|---------------------------------------------------|------------------------------------------------------|-----------------------------|
-|        .NET Framework                             |        Apache Drill                                  |        Atom                 |
-| AdlCopy (Azure Data Lake   Storage)               | Apache Spark (standalone)                            | Blob FUSE driver            |
-| AzCopy                                            | Azure CLI                                            | CatBoost                    |
-| Azure Cosmos DB Data Migration Tool             | Azure Machine Learning Python and R SDKs and samples | Dlib                        |
-| Microsoft Edge Browser                            | Azure SDK                                            | Docker (TODO: Check!)       |
-| Microsoft Office ProPlus with shared activation | Azure Storage Explorer                               | Emacs                       |
-| Nano                                              | CUDA                                                 | H2O                         |
-| Notepad++                                         | cuDNN                                                | Horovod                     |
-| Power BI Desktop                                  | Git and Git Bash                                     | Intel MKL                   |
-| SQL Server Integration Service                    | Julia                                                | IntelliJ IDEA               |
-| SQL Server Management Studio                      | Jupyter Notebook server with kernels for: <br/> Python <br/> R <br/> Julia <br/> Python Spark <br/> R Spark <br/> Scala Spark           | JupyterHub / JupyterLab     |
-| Visual Studio 2019 Community Edition            | Node.js                                              | LightGBM                    |
-|                                                   | NVidia System Management Interface                   | Nccl                        |
-|                                                   | OpenJDK                                              | ONNX Runtime (TODO: Check!) |
-|                                                   | PyCharm Community Edition                            | OpenCV (TODO: Check!)       |
-|                                                   | Python with miniconda environments preinstalled      | Rattle                      |
-|                                                   | PyTorch                                              | RStudio Server              |
-|                                                   | R with CRAN-R popular packages preinstalled           | Squirrel SQL                |
-|                                                   | RStudio Desktop                                      | Vim                         |
-|                                                   | SQL Server 2019 Developer   Edition                  |                             |
-|                                                   | Tensorflow 2 / Keras                                 |                             |
-|                                                   | Visual Studio Code                                   |                             |
-|                                                   | Vowpal Wabbit                                        |                             |
-|                                                   | XGBoost                                              |                             |
+Both images contain a variety of tools for data science and deep learning. If you're a Python programmer, you can use VSCode or Pycharm to program PyTorch, TensorFlow, and ONNX. If you use R, there's R Studio. C#, TypeScript, and F# users can use VSCode or, on the Windows image, Visual Studio to program ML.NET and SQL Server to store and retrieve their data. Jupyter is installed on both machines with multiple language kernels and on the Ubuntu image, JupyterHub is installed to provide multiuser access.
 
 ## Processor, RAM, and Disk Choices
 
@@ -57,7 +30,7 @@ Azure virtual machines come in a variety of sizes, grouped by type:
 
 The Data Science Virtual Machines are preconfigured with the drivers, library versions, and configurations to take advantage of GPU processing if it's available.
 
-Within a type, machines are typically associated with a letter-based series. For instance, GPU sizes typically begin with an 'N': NC6, NC12s v3, NC24, NV12, and so forth. For more, see [Virtual Machines Pricing](https://azure.microsoft.com/pricing/details/virtual-machines/).
+Within a type, machines are typically associated with a letter-based series. For instance, GPU sizes typically begin with an 'N': NC6, NC12s v3, NC24, NV12, and so forth. 
 
 Before you create a Data Science Virtual Machine, you should decide on a storage strategy. You can choose to install the OS on a Premium SSD, a Standard SSD, or a Standard HDD. In addition, you can choose to create or attach to one or more data disks. Again, you can choose the hard-drive technology, trading off the higher speed of SSDs versus their cost per gigabyte.
 
