@@ -10,13 +10,13 @@ Even though Azure SQL takes care of the heavy lifting for you, it's still import
 
 ### Point in time restore (PITR)
 
-In Azure SQL Database and Azure SQL Managed Instance, you have the opportunity to conduct a self-service restore. You can select the exact point in time that you would like to restore and initiate it using the Azure portal, PowerShell/Azure CLI, or REST APIs. This point in time restore (PITR) will create a new database (different name) in the same logical server. If you need to replace the original database with the PITR database, you will have to rename both the original and the new database to get back to a working condition. In this way, no updates to connection strings will be needed.
+In Azure SQL Database and Azure SQL Managed Instance, you have the opportunity to conduct a self-service restore. You can select the exact point in time that you would like to restore and initiate it using the Azure portal, PowerShell/Azure CLI, or REST APIs. Point in time restore (PITR) will create a new database (different name) in the same logical server. If you need to replace the original database with the PITR database, you will have to rename both the original and the new database to get back to a working condition. No updates to connection strings will be needed.
 
-As far as retention for PITR goes, it varies between 1 and 35 days. By default, the retention period (for all service tiers and deployment options) is seven days. In most deployment options and service tiers, you can configure this to be 1 to 35 days, depending on your scenario's requirements. For example, for a test database you may only need 1 day, but for a mission critical database, you may select the max of 35 days.
+As far as retention for PITR goes, it varies between 1 and 35 days. By default, the retention period (for all service tiers and deployment options) is seven days. In most deployment options and service tiers, you can configure the policy to be 1 to 35 days, depending on your scenario's requirements. For example, for a test database you may only need one day, but for a mission critical database, you may select the max of 35 days.
 
-### Long term retention (LTR)
+### Long-term retention (LTR)
 
-If 35 days are not enough to meet your organization's needs or compliance, you can opt for long term retention (LTR). This capability enables you to automatically create full database backups that are stored in RA-GRS storage for up to 10 years. For Azure SQL Database, LTR is generally available, and for Azure SQL Managed Instance, LTR is available in a limited public preview.
+If 35 days are not enough to meet your organization's needs or compliance, you can opt for long-term retention (LTR). This capability enables you to automatically create full database backups that are stored in RA-GRS storage for up to 10 years. For Azure SQL Database, LTR is generally available, and for Azure SQL Managed Instance, LTR is available in a limited public preview.
 
 ### Geo-restore
 
