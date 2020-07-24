@@ -4,7 +4,7 @@ Once you have an idea of what deployment option is best for your requirements, d
 
 You have two options for the Azure SQL purchasing model, virtual core (vCore)-based or database transaction unit (DTU)-based. The DTU model is not available in Azure SQL Managed Instance.  
 
-The vCore-based model is recommended because it allows you to independently choose compute and storage resources, while the DTU-based model is a bundled measure of compute, storage, and I/O resources.  In the vCore model, you pay for:  
+The vCore-based model is recommended because it allows you to independently select the compute and storage resources, while the DTU-based model is a bundled measure of compute, storage, and I/O resources.  In the vCore model, you pay for:  
 
 - Compute resources (the service tier + the number of vCores and the amount of memory + the generation of hardware).
 - The type and amount of data and log storage.
@@ -19,8 +19,8 @@ For most databases, the vCore model is recommended. For the purposes of this mod
 The next decision is choosing the service tier for performance and availability. We recommend you start with the General Purpose, and adjust as needed. There are three tiers available in the vCore model:  
 
 - **General Purpose**: Suitable for most business workloads. Offers budget-oriented, balanced, and scalable compute and storage options.  
-- **Business Critical**: Suitable for business applications with low-latency response requirements. Offers highest resilience to failures by using several isolated replicas. This is the only tier that can leverage in-memory OLTP to improve performance.
-- **Hyperscale**: Suitable for business workloads with highly scalable storage (100 TB+) and read-scale requirements. From a performance and cost perspective, it falls between general purpose and business critical. Hyperscale is currently only available for single databases, not managed instances or pools.  
+- **Business Critical**: Suitable for business applications with low-latency response requirements. Offers highest resilience to failures by using several isolated replicas. This tier is the only one that can leverage in-memory OLTP to improve performance.
+- **Hyperscale**: Suitable for business workloads with highly scalable storage (100 TB+) and read-scale requirements. From a performance and cost perspective, it falls between general purpose and business critical. Hyperscale is currently only available for single databases in Azure SQL Database.  
 
 If you choose General Purpose and the vCore-based model, you have an additional decision to make regarding the compute that you pay for:
 
@@ -33,4 +33,4 @@ The default hardware generation at this time is referred to as Gen5 hardware. Ge
 
 If you choose General Purpose within SQL Database and want to use the serverless compute tier, Gen5 hardware is currently the only option and it currently can scale up to 16 vCores.  
 
-The purchasing model, service tier, and hardware selections you make will have a large impact on the performance, availability and cost of your deployment.  
+The purchasing model, service tier, and hardware selections you make will have a large impact on the performance, availability, and cost of your deployment.  

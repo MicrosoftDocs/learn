@@ -1,10 +1,10 @@
-Within the umbrella of the Azure SQL platform, there are many deployment options and choices to be made in order to tailor to your needs. While there are many options,to give you the flexibility to get and pay for exactly what you need. Here, we'll cover some of the considerations when choosing various Azure SQL deployment options, as well as some of the technical specifications for each of those options. The deployment options discussed here include SQL Server on virtual machines, Azure SQL Managed Instance, Azure SQL Databases, Azure SQL Managed Instance pools, and Azure SQL Database elastic pools.  
+Within the umbrella of the Azure SQL platform, there are many deployment options and choices to be made in order to tailor to your needs. The options exist to give you the flexibility to get and pay for exactly what you need. Here, we'll cover some of the considerations when choosing various Azure SQL deployment options, as well as some of the technical specifications for each of those options. The deployment options discussed here include SQL Server on virtual machines, Azure SQL Managed Instance, Azure SQL Databases, Azure SQL Managed Instance pools, and Azure SQL Database elastic pools.  
 
 :::image type="content" source="../media/3-azure-sql.png" alt-text="Azure SQL umbrella of offerings" border="false":::  
 
 ## SQL Server on Azure Virtual Machines
 
-SQL Server on virtual machines is a version of SQL Server that you specify running in an Azure VM. It is just SQL Server, so all of your SQL Server skills should directly transfer, though Azure can help automate backups and security patches. SQL Server on an Azure virtual machine is referred to as Infrastructure as a Service (IaaS). You are responsible for updating and patching the OS and SQL Server (apart from critical SQL security patches), but you have access to the full capabilities of SQL Server.
+SQL Server on a virtual machine is a version of SQL Server that you specify running in an Azure VM. It is just SQL Server, so all of your SQL Server skills should directly transfer, though Azure can help automate backups and security patches. SQL Server on an Azure virtual machine is referred to as Infrastructure as a Service (IaaS). You are responsible for updating and patching the OS and SQL Server (apart from critical SQL security patches), but you have access to the full capabilities of SQL Server.
 
 There are some considerations for optimally deploying and managing SQL Server on virtual machines, including:  
 
@@ -28,7 +28,7 @@ Customers around the globe have successfully used SQL Server on virtual machines
 
 ## IaaS vs PaaS
 
-SQL Server on virtual machines are considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance and Azure SQL Database, are Platform as a Service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions such as upgrading, patching, backups, and monitoring. Some key features of SQL Manged Instance and SQL Database include:  
+SQL Server on a virtual machine is considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance and Azure SQL Database, are Platform as a Service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions such as upgrading, patching, backups, and monitoring. Some key features of SQL Manged Instance and SQL Database include:  
 
 - *Business continuity* enables your business to continue operating in the face of disruption.
 
@@ -62,7 +62,7 @@ As new features are developed, some customers can be granted access to specific 
 
 ## SQL Managed Instance
 
-SQL Managed Instance is a PaaS deployment option of Azure SQL that gives you an instance of SQL Server, but removes much of the overhead of managing a virtual machine. Most of the features available in SQL Server are available in SQL Managed Instance. This option is ideal for customers who want to leverage instance-scoped features (features that are tied to an instance of SQL Server as opposed to features that are tied to a database in an instance of SQL Server) like SQL Server Agent, Service Broker, Common Language Runtime (CLR), etc. and want to move to Azure without rearchitecting their applications. While SQL Managed Instance allows customers to access the instance-scoped features, customers do not have to worry about, nor do they have access to, the OS or the infrastructure underneath.  
+SQL Managed Instance is a PaaS deployment option of Azure SQL that gives you an instance of SQL Server, but removes much of the overhead of managing a virtual machine. Most of the features available in SQL Server are available in SQL Managed Instance. This option is ideal for customers who want to leverage instance-scoped features (features that are tied to an instance of SQL Server as opposed to features that are tied to a database in an instance of SQL Server) like SQL Server Agent, Service Broker, Common Language Runtime (CLR), Database Mail, Linked Servers, and Machine Learning Services (preview). and want to move to Azure without rearchitecting their applications. While SQL Managed Instance allows customers to access the instance-scoped features, customers do not have to worry about, nor do they have access to, the OS or the infrastructure underneath.  
 
 :::image type="content" source="../media/3-sql-managed-instance.png" alt-text="When to choose Azure SQL Managed Instance" border="false":::
 
