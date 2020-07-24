@@ -5,8 +5,8 @@ metadata:
   title: Define public preview features and general availability
   description: "Define public preview features and general availability"
   ms.date: 07/24/2020
-  author: socuff
-  ms.author: socuff
+  author: scuffy
+  ms.author: scuffy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
