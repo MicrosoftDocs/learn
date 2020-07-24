@@ -13,7 +13,7 @@ You can choose to run the Data Science Virtual Machine on different Azure virtua
 | --- | --- | 
 | General purpose | Balance CPU-memory ratios |
 | Memory-optimized E series | In-memory data analytics | 
-| N-series GPU compute | ML experimentation and inferencing |
+| N-series GPU compute | machine learning experimentation and inferencing |
 
 N-series virtual machines feature the NVIDIA Tesla accelerated platform and NVIDIA GRID 2.0 technology. The Data Science Virtual Machine tools and libraries that can exploit GPU acceleration are pre-configured with the appropriate drivers and library versions.
 
@@ -27,7 +27,7 @@ Your charges are based on the type of hardware (compute power, RAM, and storage)
 
 ## When to use the Data Science Virtual Machine
 
-The goal of the Data Science Virtual Machine is a friction-free, preconfigured data science and ML environment. The experience is familiar and usable by data professionals of all skill levels. Instead of rolling out a comparable workspace on your own, you can provision a Data Science Virtual Machine. That choice can save you days or even _weeks_ on the installation, configuration, and package management processes. After your Data Science Virtual Machine has been allocated, you can immediately begin working on your data science project.
+The goal of the Data Science Virtual Machine is a friction-free, preconfigured data science and machine learning environment. The experience is familiar and usable by data professionals of all skill levels. Instead of rolling out a comparable workspace on your own, you can provision a Data Science Virtual Machine. That choice can save you days or even _weeks_ on the installation, configuration, and package management processes. After your Data Science Virtual Machine has been allocated, you can immediately begin working on your data science project.
 
 ## Sample Use Cases
 

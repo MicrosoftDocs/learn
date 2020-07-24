@@ -24,7 +24,7 @@ Because Learn sandboxes the Data Science Virtual Machine you've created in this 
 
 ## List and activate a Python conda environment
 
-The conda package manager is a popular way to manage Python programming environments. It's the default environment manager used by the Data Science Virtual Machine. The Data Science Virtual Machine comes with several environments configured to work with popular data science and ML packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
+The conda package manager is a popular way to manage Python programming environments. It's the default environment manager used by the Data Science Virtual Machine. The Data Science Virtual Machine comes with several environments configured to work with popular data science and machine learning packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
 
 To activate the desired conda environment:
 
