@@ -28,7 +28,7 @@ The panes will be laid out in either wide or tall mode, and sized according to t
 
 When the app is spanned across two screens, these properties are ignored. Each pane will fill an entire screen unless forced into `SinglePane` mode.
 
-## CHange pane order
+## Change pane order
 
 The following code snippets show how to configure the order that the panes appear, using either C# or XAML.
 
