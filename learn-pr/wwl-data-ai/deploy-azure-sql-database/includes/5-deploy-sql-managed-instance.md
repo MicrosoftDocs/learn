@@ -16,7 +16,7 @@ Because Azure SQL Database Managed Instance is backed by the PaaS Service, it ha
 
 ### Backups
 
-Automatic backups are also automatically configured for Managed Instance. One key difference between Managed Instance and Azure SQL Database is that with MI you can manually make a copy-only backup of a database. You must back up to an URL, as access to the local storage is not permissible. You can also configure long-term retention (LTR) for retaining automatic backups for up to 10 years in geo-redundant Azure blob storage.
+Automatic backups are also automatically configured for Managed Instance. One key difference between Managed Instance and Azure SQL Database is that with MI you can manually make a copy-only backup of a database. You must back up to a URL, as access to the local storage is not permissible. You can also configure long-term retention (LTR) for retaining automatic backups for up to 10 years in geo-redundant Azure blob storage.
 
 Database backups occur on the same schedule as with Azure SQL Database. These schedules are not adjustable.
 
@@ -38,7 +38,7 @@ However, there are some limitations when restoring. In order to restore from one
 
 As with Azure SQL Database, you cannot restore over an existing database. Drop or rename the existing database prior to restoring it from backup. Since Managed Instance is a fully functional SQL Server instance, you can execute a RESTORE command whereas with Azure SQL Database that is not possible. However, since it is a PaaS service, there are limitations.
 
-- You must restore from an URL endpoint. You do not have access to local drives.
+- You must restore from a URL endpoint. You do not have access to local drives.
 
 - You can use the following options (in addition to specifying the database):
 
@@ -60,8 +60,8 @@ By default, the databases in a managed instance are encrypted using Transparent 
 
 ### Disaster Recovery
 
-Azure SQL Database Managed Instance offers auto-failover groups as a means to implement disaster recovery. Note that this feature protects the entire managed instance and all of the databases contained within it, not just specific databases. This process asynchronously replicates data from the Azure SQL Managed Instance to a secondary; however, it is currently limited to the paired Azure region of the primary copy, and only one replica is allowed.
+Azure SQL Database Managed Instance offers auto-failover groups as a means to implement disaster recovery. This feature protects the entire managed instance and all of the databases contained within it, not just specific databases. This process asynchronously replicates data from the Azure SQL Managed Instance to a secondary; however, it is currently limited to the paired Azure region of the primary copy, and only one replica is allowed.
 
-Much like Azure SQL Database, auto-failover groups offer read-write and read-only listener endpoints, which facilitates easy connection string management. In the event of a failover, application connection strings will automatically be routed to the appropriate instance. While fairly consistent with Azure SQL Database, these endpoints follow a slightly different format, `<fog-name>.zone_id.database.windows.net whereas Azure SQL Database is in the <fog-name>.secondary.database.windows.net` format.
+Much like Azure SQL Database, auto-failover groups offer read-write and read-only listener endpoints, which facilitate easy connection string management. In the event of a failover, application connection strings will automatically be routed to the appropriate instance. While fairly consistent with Azure SQL Database, these endpoints follow a slightly different format, `<fog-name>.zone_id.database.windows.net whereas Azure SQL Database is in the <fog-name>.secondary.database.windows.net` format.
 
-Each managed instance, primary and secondary, must be within the same DNS zone. This placement will ensure that the same multi-domain certificate can be used for client connection authentication between either of the two instances in the same failover group. This can be facilitated by specifying a “DNS Zone Partner” through various methods such as the Azure portal, PowerShell, or Azure CLI.
+Each managed instance, primary and secondary, must be within the same DNS zone. This placement will ensure that the same multi-domain certificate can be used for client connection authentication between either of the two instances in the same failover group. You can specify a “DNS Zone Partner” through various methods such as the Azure portal, PowerShell, or Azure CLI.
