@@ -51,8 +51,8 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
 
 1. The VM deployment process takes a few minutes to complete. You'll receive a notification informing you that the deployment succeeded. Click on the **Go to resource** button to go to the VM overview page.
 
-1. Here you can see all the information and configuration options for your newly created Data Science Virtual Machine. One of the pieces of information is the **Public IP address**.
+1. Here you can see all the information and configuration options for your newly created Data Science Virtual Machine. One of the pieces of information is the **Public IP address**. Make note of this IP address, as you will need it to connect.
 
     ![Screenshot showing the VM overview page with the public IP address to the VM highlighted.](../media/dsvm-summary-started-in-portal.png)
 
-Congratulations! With a few steps, you deployed a Data Science Virtual Machine running on Linux. Let's connect to it. 
+Congratulations! With a few steps, you deployed a Data Science Virtual Machine running on Linux. Now let's connect to it. 

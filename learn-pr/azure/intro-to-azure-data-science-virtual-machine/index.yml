@@ -27,8 +27,8 @@ units:
   - learn.azure.intro-to-data-science-virtual-machine.what-is-the-data-science-virtual-machine
   - learn.azure.intro-to-data-science-virtual-machine.create-a-data-science-virtual-machine
   - learn.azure.intro-to-data-science-virtual-machine.exercise-create-a-data-science-virtual-machine
-  - learn.azure.intro-to-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
   - learn.azure.intro-to-data-science-virtual-machine.exercise-connect-to-your-data-science-virtual-machine
+  - learn.azure.intro-to-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
   - learn.azure.intro-to-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
   - learn.azure.intro-to-data-science-virtual-machine.summary
 badge:

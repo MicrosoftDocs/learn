@@ -1,19 +1,12 @@
-Since you just created the virtual machine, it will be already be running.
-
-
-1. Navigate to your resource group (<rgn>[sandbox resource group name]</rgn>) in the Azure portal
-1. From your resource list, choose your Data Science Virtual Machine, which is of type "Virtual machine"
-1. From the Data Science Virtual Machine's resource page, choose "Start" if necessary
-1. Wait until the Data Science Virtual Machine's Status is "Running"
-1. Record the IP address
+Since you just created the virtual machine, it will already be running. You should have noted the public IP address of the virtual machine in the last exercise. If you did not, use the portal to find it.
 
 ## Connect to your Ubuntu Data Science Virtual Machine using X2Go
 
-The Linux VM is already provisioned with X2Go Server and ready to accept client connections. To connect to the Linux VM graphical desktop, complete the following procedure on your client:
+The Linux VM is already provisioned with X2Go Server and is ready to accept client connections. To connect to the Linux VM graphical desktop, complete the following procedure on your client:
 
 1. Download and install the X2Go client for your client platform from [X2Go](https://wiki.x2go.org/doku.php/doc:installation:x2goclient?portal=true).
 
-1. Run the X2Go client. If the "New Session" window doesn't pop up automatically, go to Session -> New Session.
+1. Run the X2Go client. If the "New Session" window doesn't pop up automatically, go to **Session -> New Session**.
 
 1. On the resulting configuration window, enter the following configuration parameters:
    - **Session tab**:
@@ -22,8 +15,8 @@ The Linux VM is already provisioned with X2Go Server and ready to accept client 
      - **SSH Port**: Leave it at 22, the default value.
      - **Session Type**: Change the value to **XFCE**. Currently, the Linux VM supports only the XFCE desktop.
    - **Media tab**: You can turn off sound support and client printing if you don't need to use them.
-   - **Shared folders**: You can mount client machine directories to the virtual machine. Add the client machine directories that you want to share with the VM on this tab. Shared folders are convenient, but for transferring large amounts of data to blob storage, [Azure Data Explorer](https://azure.microsoft.com/services/data-explorer/) is a faster and more robust choice.
-
+   - **Shared folders**: You can mount client machine directories to the virtual machine. Add the client machine directories that you want to share with the VM on this tab. 
+   
    ![X2go configuration](../media/x2go-ubuntu.png)
 
 1. Select **OK**.
