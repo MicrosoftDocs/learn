@@ -4,7 +4,15 @@ With SSH, you can connect to the command line of the Data Science Virtual Machin
 
 ## Connect to a Windows server using RDP 
 
+To connect to a Windows DSVM with Remote Desktop: 
 
+1. If necessary, download [Microsoft Remote Desktop client](https://www.microsoft.com/p/microsoft-remote-desktop/9wzdncrfj3ps?portal=true)
+1. Navigate to the DSVM in the portal
+1. Select **Connect** and **RDP**
+1. Click **Download RDP File** 
+1. Open the file in Microsoft Remote Desktop to connect
+
+![Screenshot of portal showing RDP File download page](../media/download-rdp-file.png)
 
 ## Connect to the command line using SSH
 
@@ -44,12 +52,3 @@ ssh UserName@1.1.1.1
 ```
 
 The first time you connect via SSH, you'll receive a warning. Accept the fingerprint and you'll be presented with a password prompt. Enter the password you specified while creating the Data Science Virtual Machine. You should see a greeting screen and a command prompt.
-
-## Connect using a graphical user interface
-
-If you wish to use a graphical user interface, you can use:
-
-* Microsoft Remote Desktop for the Windows Server 2019 Data Science Virtual Machine
-* An XFCE client such as X2Go Client for the Ubuntu 18.04 Data Science Virtual Machine.
-
-Since you have created an Ubuntu virtual machine, we'll use X2Go.

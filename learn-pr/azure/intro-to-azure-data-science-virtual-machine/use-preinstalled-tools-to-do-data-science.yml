@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ROBOTS: NOINDEX
+azureSandbox: true
 title: "Exercise: Use RStudio and other preinstalled tools"
 durationInMinutes: 15
 content: |
