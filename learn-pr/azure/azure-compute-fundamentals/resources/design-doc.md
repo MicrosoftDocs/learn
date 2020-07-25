@@ -99,4 +99,4 @@ Identify the subtasks of *Azure Compute Fundamentals*
 
 See the following:
 
-- https://docs.microsoft.com/en-us/learn/modules/define-core-azure-services-products/
+- https://docs.microsoft.com/learn/modules/define-core-azure-services-products/
