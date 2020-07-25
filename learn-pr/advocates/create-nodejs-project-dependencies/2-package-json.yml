@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-nodejs-project-dependencies.2-package-json
-title: Configure package.json
+title: Configure the package.json
 metadata:
-  title: Configure package.json
-  description: This unit will explain how you can configure the `package.json` file to describe the project better. It will also cover how to create and run various scripts that can help you manage the project throughout its lifetime.
+  title: Configure the package.json
+  description: This unit will explain how you can configure a package.json file to describe a project better. It will also cover how to create and run various scripts that can help you manage a project throughout its lifetime.
   author: softchris
   ms.author: chnoring
   ms.date: 06/25/2020
