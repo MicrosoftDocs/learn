@@ -16,7 +16,7 @@ The Linux VM is already provisioned with X2Go Server and is ready to accept clie
      - **Session Type**: Change the value to **XFCE**. Currently, the Linux VM supports only the XFCE desktop.
    - **Media tab**: You can turn off sound support and client printing if you don't need to use them.
    - **Shared folders**: You can mount client machine directories to the virtual machine. Add the client machine directories that you want to share with the VM on this tab. 
-   
+
    ![X2go configuration](../media/x2go-ubuntu.png)
 
 1. Select **OK**.
