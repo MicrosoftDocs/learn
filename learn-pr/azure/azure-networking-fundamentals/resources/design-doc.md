@@ -29,7 +29,7 @@ Azure Networking Fundamentals
 
 ## Summary
 
-Tailwind Traders has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to network infrastructure. In this session you’ll learn about the different Azure networking options and the scenarios in which each is appropriate.
+Tailwind Traders has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to network infrastructure. In this session you'll learn about the different Azure networking options and the scenarios in which each is appropriate.
 
 ## Learning objectives
 
