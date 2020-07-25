@@ -80,7 +80,7 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
 
 1. **What is cloud computing?**
 
-    If you've ever wondered, "What is cloud computing?", it is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence over the Internet ("the cloud"). Cloud computing offers faster innovation, flexible resources, and economies of scale.
+    If you've ever wondered, "What is cloud computing?", it is the delivery of computing services - including servers, storage, databases, networking, software, analytics, and intelligence - over the Internet ("the cloud"). Cloud computing offers faster innovation, flexible resources, and economies of scale.
 
     > [!NOTE]
     >
@@ -100,7 +100,7 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
     - Teams are delivering new features to their users at record speeds.
     - End users expect an increasingly rich and immersive experience with their devices and with software.
 
-    Software releases were once scheduled in terms of months or even years. Today, teams are releasing features in smaller batches. Releases are now often scheduled in terms of days or weeks. Some teams even deliver software updates continuously—sometimes with multiple releases within the same day.
+    Software releases were once scheduled in terms of months or even years. Today, teams are releasing features in smaller batches. Releases are now often scheduled in terms of days or weeks. Some teams even deliver software updates continuously - sometimes with multiple releases within the same day.
 
     Think of all the ways you interact with devices that you couldn't do just a few years ago. Many devices can recognize your face and respond to voice commands. Augmented reality changes the way you interact with the physical world. Household appliances are even beginning to act intelligently. These technologies are just a few examples, many of which are powered by the cloud.
 
@@ -156,7 +156,7 @@ Identify the subtasks of *Introduction to Azure Fundamentals*
     | --- | --- |
     | **Be future ready** - Continuous innovation from Microsoft supports<br>your development today, and your product visions for tomorrow. | ![Launching rocket ship representing the future.](../media/future.png) |
     | ![Three slider bars representing choice in your usage needs.](../media/build.png) | **Build on your terms** - You have choices. With a commitment to open source, and support<br>for all languages and frameworks, build how you want, and deploy where you want to. |
-    | **Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge—we'll meet you where you<br>are. Integrate and manage your environments with tools and services designed for hybrid cloud. | ![Brick building datacenter next to a cloud datacenter representing both datacenters working together.](../media/hybrid.png) |
+    | **Operate hybrid seamlessly** - On-premises, in the cloud, and at the edge - we'll meet you where you are. Integrate and manage your environments with tools and services designed for hybrid cloud. | ![Brick building datacenter next to a cloud datacenter representing both datacenters working together.](../media/hybrid.png) |
     | ![Shield over a cloud representing cloud security.](../media/trust.png) | **Trust your cloud** - Get security from the ground up, backed by a team of experts,<br>and proactive compliance trusted by enterprises, governments, and startups. |
 
     **What can I do with Azure?**

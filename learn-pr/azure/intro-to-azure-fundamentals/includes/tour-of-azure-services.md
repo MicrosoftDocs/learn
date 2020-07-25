@@ -158,7 +158,7 @@ Open source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure Synapse Analytics | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Databricks | Collaborative Apache Spark–based analytics service that can be integrated with other Big Data services in Azure. |
+> | Azure Databricks | Collaborative Apache Spark-based analytics service that can be integrated with other Big Data services in Azure. |
 
 ### Artificial Intelligence
 
