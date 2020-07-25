@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ROBOTS: NOINDEX
+azureSandbox: true
 title: "Exercise: Connect to your Data Science Virtual Machine"
 durationInMinutes: 12
 content: |

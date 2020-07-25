@@ -1,15 +1,10 @@
-Now that you've created a Data Science Virtual Machine, you need to connect to it. The Data Science Virtual Machine is preconfigured for SSH access on both Ubuntu and Windows Server 2019. With SSH, you can connect to the command line of the Data Science Virtual Machine. You can also use a full graphical desktop, using Remote Desktop for Windows and X2Go client for Linux. 
+On a Windows Data Science Virtual Machine, the graphical desktop is available via Remote Desktop Protocol.
 
-## Starting and stopping the Data Science Virtual Machine
+With SSH, you can connect to the command line of the Data Science Virtual Machine. Both Windows and Ubuntu Data Science Virtual Machine images support SSH connection.
 
-Since you just created the virtual machine it will already be running. In general, you bookend your sessions with the virtual machine by starting and stopping it from the Azure portal. The portal is also where you can find the public IP address of your virtual machine, which you will need to connect. 
-
-![Screenshot of portal highlighting start stop buttons and IP address](../media/dsvm-summary-started-in-portal.png)
-
-## Securing your virtual machine
+## Connect to a Windows server using RDP 
 
 
-tk
 
 ## Connect to the command line using SSH
 
@@ -57,3 +52,4 @@ If you wish to use a graphical user interface, you can use:
 * Microsoft Remote Desktop for the Windows Server 2019 Data Science Virtual Machine
 * An XFCE client such as X2Go Client for the Ubuntu 18.04 Data Science Virtual Machine.
 
+Since you have created an Ubuntu virtual machine, we'll use X2Go.
