@@ -26,7 +26,7 @@ Fundamental Azure Concepts
 
 ## Summary
 
-Tailwind Traders has some new IT staff that they need to get up to speed on the basics of cloud computing. In this session you’ll learn about the fundamental concepts of cloud computing and how Azure implements these concepts.
+Tailwind Traders has some new IT staff that they need to get up to speed on the basics of cloud computing. In this session you'll learn about the fundamental concepts of cloud computing and how Azure implements these concepts.
 
 ## Learning objectives
 
