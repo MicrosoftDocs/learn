@@ -1,4 +1,4 @@
-Suppose your company, Tailwind Traders, has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to storage infrastructure. In this session you’ll learn about the different Azure storage options and the scenarios in which each is appropriate.
+Suppose your company, Tailwind Traders, has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to storage infrastructure. In this session you'll learn about the different Azure storage options and the scenarios in which each is appropriate.
 
 ## Learning objectives
 

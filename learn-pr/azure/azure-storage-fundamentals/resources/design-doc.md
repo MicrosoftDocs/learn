@@ -29,7 +29,7 @@ Azure Storage Fundamentals
 
 ## Summary
 
-Tailwind Traders has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to storage infrastructure. In this session you’ll learn about the different Azure storage options and the scenarios in which each is appropriate.
+Tailwind Traders has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to storage infrastructure. In this session you'll learn about the different Azure storage options and the scenarios in which each is appropriate.
 
 ## Learning objectives
 
@@ -92,6 +92,6 @@ Identify the subtasks of *Azure Storage Fundamentals*
 - https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/
 - https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/
 - https://docs.microsoft.com/learn/modules/create-azure-storage-account/
-- https://docs.microsoft.com/en-us/azure/virtual-machines/windows/managed-disks-overview
-- https://docs.microsoft.com/en-us/azure/storage/files/
-- https://docs.microsoft.com/en-us/azure/storage/
+- https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview
+- https://docs.microsoft.com/azure/storage/files/
+- https://docs.microsoft.com/azure/storage/
