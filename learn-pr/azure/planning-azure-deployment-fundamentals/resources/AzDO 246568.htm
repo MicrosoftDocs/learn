@@ -1,0 +1,235 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>246568</title>
+<style>
+html,body { font-family: calibri, arial, helvetica, sans-serif; }
+</style>
+</head>
+
+<body>
+
+<h1><a href="https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/246568">246568</a> &quot;Planning Azure Deployment Fundamentals&quot; module</h1>
+<p>(Formerly the &quot;Azure Core Architectural Components Fundamentals&quot; module)</p>
+<h2><a>Orin Thomas has provided some suggestions:</a></h2>
+<h2><a>AFUN20A: Azure Core Architectural Components Fundamentals</a></h2>
+<table>
+	<tr>
+		<td>Learn Module</td>
+		<td>Azure Core Architectural Components Fundamentals</td>
+	</tr>
+	<tr>
+		<td>MS Learn Learning Path</td>
+		<td>LP1: Fundamental Cloud Concepts and Core Azure Services</td>
+	</tr>
+	<tr>
+		<td>ELP module mapping</td>
+		<td>AFUN 20a</td>
+	</tr>
+	<tr>
+		<td>Abstract</td>
+		<td>Tailwind Traders needs to understand how and where they should deploy their Azure workloads as they migrate to and adopt Azure. At present they are not fully sure about how they can deploy in such a way that they follow best practices as well as ensuring that they meet compliance requirements around high availability.</td>
+	</tr>
+	<tr>
+		<td>AZ 900 Objectives Covered</td>
+		<td>
+		<ul>
+			<li>Describe the core azure architectural components<ul>
+				<li>Describe the benefits and usage of Regions and Region Pairs</li>
+				<li>Describe the benefits and usage of Availability Zones</li>
+				<li>Describe the benefits and usage of Resource Groups</li>
+				<li>Describe the benefits and usage of Subscriptions</li>
+				<li>Describe the benefits and usage of Management Groups</li>
+				<li>Explain Azure resources</li>
+				<li>Describe the benefit and usage of Azure Resource Manager
+				<ul>
+					<ul>
+						<li>Not: ARM templates, which is covered in 3.2, or RBAC which is in 5.1</li>
+					</ul>
+				</ul>
+				</li>
+			</ul>
+			</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Units</td>
+		<td>
+		<ul>
+			<li>Azure Regions and Region Pairs</li>
+			<li>Azure Availability Zones</li>
+			<li>Azure Management Groups and Subscriptions</li>
+			<li>Azure Resources</li>
+			<li>Azure Resource Groups</li>
+			<li>Benefits of Azure Resource Manager</li>
+			<li>Case Study Knowledge Check</li>
+			<li>Summary &amp; Further Learning</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Problems addressed / Case Study Question Ideas</td>
+		<td>
+		<ul>
+			<li>When should I use separate resource groups and when should I use separate subscriptions?</li>
+			<li>How can I ensure my workload is highly available?</li>
+			<li>How do I know which region to choose in my own country? Do I just look at a map? Is there some way to figure out which region is the best for my organization or are they all the same?</li>
+			<li>How do I ensure that my organization’s data and workloads remain in a specific geographic region?</li>
+			<li>I have IaaS VMs, Azure SQL Instances, container workloads and App Service apps. When should I segment workloads by resource group?</li>
+			<li>When does it make sense to have more than one subscription?</li>
+			<li>What are the drawbacks of using multiple subscriptions?</li>
+			<li>What is the relationship between subscriptions and Azure AD tenancies?</li>
+			<li>What does ARM allow me to do that I can’t do using a script?</li>
+			<li>ARM templates look complicated, is there an easy way for me to understand them or do I even need to?</li>
+			<li>What are some drawbacks to ARM?</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Demonstrations / Potential Sandbox Exercises</td>
+		<td>
+		<ul>
+			<li>ARM template introduction video</li>
+			<li>Show a workload that is deployed across availability zones and regions (maybe Azure Site Recovery for VMs across regions)</li>
+			<li>Create and delete resource groups</li>
+			<li>Show permissions inheritance</li>
+			<li>Collect subscriptions into a management group</li>
+			<li>Deploy a VM from a GitHub ARM template</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Notes</td>
+		<td>
+		<ul>
+			<li>Addresses what attendees need to know about Azure architecture and structure in terms of how and where they deploy workloads.</li>
+			<li>Relevant Learn<ul>
+				<li>https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/</li>
+				<li>https://docs.microsoft.com/learn/modules/move-azure-resources-another-resource-group/</li>
+				<li>https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/</li>
+			</ul>
+			</li>
+			<li>Relevant Docs<ul>
+				<li>https://docs.microsoft.com/en-us/azure/availability-zones/az-overview</li>
+				<li>https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/decision-guides/regions/</li>
+				<li>https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview#resource-groups</li>
+				<li>https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory</li>
+				<li>https://docs.microsoft.com/en-us/azure/governance/management-groups/overview</li>
+				<li>https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/overview</li>
+			</ul>
+			</li>
+		</ul>
+		</td>
+	</tr>
+</table>
+<hr>
+<h2>Resources:</h2>
+<h3>Azure Fundamentals 1.0: </h3>
+<p>* Core Cloud Services - Azure architecture and service guarantees: <a href="https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/">https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/</a></p>
+<p>* Control and organize Azure resources with Azure Resource Manager:&nbsp; <a href="https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/">https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/</a></p>
+<h3>Azure Fundamentals 1.5: </h3>
+<p>* Discuss core Azure architectural components: <a href="https://docs.microsoft.com/en-us/learn/modules/discuss-core-azure-architectural-components/">https://docs.microsoft.com/en-us/learn/modules/discuss-core-azure-architectural-components/</a> </p>
+<p>* Examine Azure subscriptions: <a href="https://docs.microsoft.com/en-us/learn/modules/examine-azure-subscriptions/">https://docs.microsoft.com/en-us/learn/modules/examine-azure-subscriptions/</a> </p>
+<table width="1232">
+	<colgroup>
+		<col width="455"><col width="777">
+	</colgroup>
+	<tr>
+		<td>describe the benefits and usage of Regions </td>
+		<td><a href="https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/2-azure-datacenter-locations">https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/2-azure-datacenter-locations</a></td>
+	</tr>
+	<tr>
+		<td>describe the benefits and usage of Availability Zones </td>
+		<td><a href="https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/4-availability-zones">https://docs.microsoft.com/en-us/learn/modules/explore-azure-infrastructure/4-availability-zones</a></td>
+	</tr>
+	<tr>
+		<td>describe the benefits and usage of Resource Groups </td>
+		<td><a href="https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/2-principles-of-resource-groups">https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/2-principles-of-resource-groups</a></td>
+	</tr>
+	<tr>
+		<td>describe the benefits and usage of Subscriptions</td>
+		<td><a href="https://docs.microsoft.com/en-us/learn/modules/examine-azure-subscriptions/">https://docs.microsoft.com/en-us/learn/modules/examine-azure-subscriptions/</a></td>
+	</tr>
+	<tr>
+		<td>describe the benefits and usage of Management Groups</td>
+		<td><a href="https://docs.microsoft.com/en-us/learn/modules/intro-to-governance/4-management-groups">https://docs.microsoft.com/en-us/learn/modules/intro-to-governance/4-management-groups</a></td>
+	</tr>
+	<tr>
+		<td>describe the benefits and usage of Azure Resource manager </td>
+		<td><a href="https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/1-introduction">https://docs.microsoft.com/en-us/learn/modules/control-and-organize-with-azure-resource-manager/1-introduction</a></td>
+	</tr>
+</table>
+<table width="1232">
+	<tr>
+		<td>describe the benefits and usage of Azure Marketplace</td>
+		<td><a href="https://docs.microsoft.com/en-us/learn/modules/tour-azure-portal/3-navigate-the-portal">https://docs.microsoft.com/en-us/learn/modules/tour-azure-portal/3-navigate-the-portal</a></td>
+	</tr>
+</table>
+<hr>
+<h2>ELP and OD info:</h2>
+<table>
+	<tr>
+		<td>AFUN 20</td>
+		<td>Planning Azure Deployment Fundamentals</td>
+	</tr>
+	<tr>
+		<td>Abstract</td>
+		<td>Tailwind Traders needs to understand how and where they should deploy their Azure workloads as they migrate to and adopt Azure. At present they are not fully sure about how they can deploy in such a way that they follow best practices as well as ensuring that they meet compliance requirements around high availability.</td>
+	</tr>
+	<tr>
+		<td>Format</td>
+		<td>45 minute breakout session</td>
+	</tr>
+	<tr>
+		<td>AZ 900 Objectives Covered</td>
+		<td>
+		<ul>
+			<li>Describe the core azure architectural components<ul>
+				<li>Describe the benefits and usage of regions</li>
+				<li>Describe the benefits and usage of Availability zones</li>
+				<li>Describe the benefits and usage of Resource Groups</li>
+				<li>Describe the benefits and usage of Subscriptions</li>
+				<li>Describe the benefits and usage of Management Groups</li>
+				<li>Describe the benefit and usage of Azure Resource Manager</li>
+			</ul>
+			</li>
+			<li>Describe the core workload products available in Azure<ul>
+				<li>Describe the benefits and usage of Azure Marketplace</li>
+			</ul>
+			</li>
+			<li>Describe privacy and compliance resources<ul>
+				<li>Describe the purpose of the Microsoft Privacy Statement and the <a>Cloud Adoption Framework for Azure</a><a href="https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/246568#_msocom_1"></a> </li>
+				<li>Describe the purpose of Azure Sovereign Regions (Azure Government and Azure China cloud services)</li>
+			</ul>
+			</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Problems addressed</td>
+		<td>
+		<ul>
+			<li>When should I use separate resource groups and when should I use separate subscriptions?</li>
+			<li>What is the benefit of ARM deployments and of deployments from the marketplace?</li>
+			<li>Where can I go to get advice on Azure best practices?</li>
+			<li>How can I ensure my workload is highly available?</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td>Notes</td>
+		<td>
+		<ul>
+			<li>Addresses what attendees need to know about Azure architecture and structure in terms of how and where they deploy workloads.</li>
+		</ul>
+		</td>
+	</tr>
+</table>
+<hr>
+
+</body>
+
+</html>
