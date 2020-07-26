@@ -3,6 +3,7 @@
 This is an introduction paragraph.
 
 I'm trying to make a change.
+I actually made a change!
 
 ## What is machine learning?
 
