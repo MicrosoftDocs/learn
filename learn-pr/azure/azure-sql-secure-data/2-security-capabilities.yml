@@ -15,7 +15,7 @@ content: |
 quiz:
     title: Knowledge Check
     questions:
-    - content: "What is the recommended way to protect your network for Azure SQL Database?"
+    - content: "What is the recommended, most secure way to protect your network for Azure SQL Database?"
       choices:
       - content: "Allow access to Azure services"
         isCorrect: false
