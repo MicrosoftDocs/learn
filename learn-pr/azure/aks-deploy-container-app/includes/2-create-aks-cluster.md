@@ -42,7 +42,7 @@ The single control plane and a single node is a variant of the previous architec
 
 ## How to configure an AKS cluster
 
-When you create a new AKS cluster, you have several different items of information that you need to configure.  Each item impacts the final configuration of your cluster.
+When you create a new AKS cluster, you have several different items of information that you need to configure. Each item impacts the final configuration of your cluster.
 
 These items include:
 
