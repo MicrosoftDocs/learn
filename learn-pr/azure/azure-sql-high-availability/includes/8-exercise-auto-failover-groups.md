@@ -14,7 +14,7 @@ To configure auto-failover groups for a database(s) and observe the results in a
 1. Initiate a failover
 1. Fail back
 
-This notebook will guide you through configuring auto-failover groups for your AdventureWorks database. You'll then use a simple Java application to understand where reads and writes occur, and the importance of retry logic in your applications. Finally, you'll do a fun exercise to determine how many read-replicas are associated with a Business critical database that also has an auto-failover group.  
+This exercise will guide you through configuring auto-failover groups for your AdventureWorks database. You'll then use a simple command-line application to understand where reads and writes occur, and the importance of retry logic in your applications. Finally, you'll do a fun exercise to determine how many read-replicas are associated with a Business critical database that also has an auto-failover group.  
 
 ### Configure environment
 
@@ -116,6 +116,8 @@ For this exercise, you'll leverage two ostress workloads to check the *Updateabi
     ```cmd
     .\ostress.exe -S"<server-name>-fg.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50000 -oprimary
     ```
+
+    Note that you connect to the failover group server name, which is the abstraction for the database.
 
 1. The second command prompt window will be used to check the status of your secondary server in the failover group you created. Format and then run the following command with your server name and password:  
 

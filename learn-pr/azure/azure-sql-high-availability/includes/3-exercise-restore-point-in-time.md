@@ -120,6 +120,9 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
 1. Select **Save**.  
 
+> [!IMPORTANT]
+> Make sure you select **Save**. If you don't, auditing with Log Analytics won't start to collect logs.
+
 ## Process for PITR
 
 Before you go any further, it's important to understand the recommended process for doing PITR:  
@@ -207,18 +210,18 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     Note that the logs can take a 5-10 minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
 
-1. In this example, the date/time is `2020-02-10 09:28:54.509`. The required format is slightly different. Update it using this example as a reference and to the definition of `$before_error_time`.  
+1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Update it using this example as a reference and to the definition of `$before_error_time`. You also may want to subtract `.001` seconds, to ensure you restore to *before* the error occurred.  
 
-    * Log Analytics format: `2020-02-10 09:28:54.509`
-    * Required format: `2020-02-10T21:28:54.509`  
+    * Log Analytics format: `2020-07-24 08:06:24.386`
+    * Required format: `2020-07-10T24:06:24.385`  
 
     ```powershell
-    $before_error_time ="2020-02-10T21:28:54.509"
+    $before_error_time ="2020-07-10T24:06:24.385"
     ```
 
 ### Restore the database and confirm missing data
 
-1. In this step you'll use `az cli db restore` to restore to before the table was deleted. Run the following in the terminal to your right in this window. 
+1. In this step you'll use `az cli db restore` to restore to before the table was deleted. Run the following in the terminal to your right in this window.
 
     ```powershell
     # Restore the database to the time before the database was deleted

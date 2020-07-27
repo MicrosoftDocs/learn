@@ -49,7 +49,7 @@ PowerShell commands can also be used to find out the availability of an Azure SQ
 
 ### Backup and Restore History
 
-Azure SQL automatically backs up databases and transaction logs. Although standard backup history is not available, **Long-term backup retention history** can be viewed through the Azure portal or CLI interfaces.
+Azure SQL automatically backs up databases and transaction logs. Although standard backup history is not available, **Long-term backup retention history** can be viewed through the Azure portal or CLI interfaces. Additionally, Azure SQL Managed Instance supports using XEvents to track the backup history.
 
 Any restore of a database using Point in time restore results in the creation of a new database so the history of restore can be viewed as looking at the creation of a new database. All operations to create a new database can be viewed through Azure Activity Logs.
 
