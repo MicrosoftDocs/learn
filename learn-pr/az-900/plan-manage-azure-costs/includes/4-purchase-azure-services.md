@@ -2,7 +2,7 @@ In this part, you learn how to purchase Azure services as well as get a sense fo
 
 You meet with your Chief Financial Officer and some of the team leads. You learn about some assumptions you've missed and were able to quickly update your total estimated spend through the Total Cost of Ownership (TCO) Calculator.
 
-During the meeting, some new questions came up as the discussion moved towards cloud migration:
+During the meeting, some new questions come up as the discussion moves towards cloud migration:
 
 > [!div class="checklist"]
 > * What types of Azure subscriptions are available?
@@ -45,9 +45,9 @@ There are three main ways to purchase services on Azure. They are:
 
 * **Through a Cloud Solution Provider (CSP)**
 
-    A CSP is a Microsoft Partner who may help you build solutions on top of Azure. You will be billed for your Azure usage by your CSP, at a price determined by them. They will also answer your support questions, escalating them to Microsoft as needed.
+    A CSP is a Microsoft Partner who helps you build solutions on top of Azure. Your CSP bills you for your Azure usage at a price they determine. They also answer your support questions, escalating them to Microsoft as needed.
 
-You can bring up, or _provision_, Azure resources from the Azure portal or from the command line. The Azure portal arranges products and services by category. You simply select the services that fit your needs, and your account is billed according to Azure's "pay for what you use" model.
+You can bring up, or _provision_, Azure resources from the Azure portal or from the command line. The Azure portal arranges products and services by category. You select the services that fit your needs, and your account is billed according to Azure's "pay for what you use" model.
 
 :::image type="content" source="../media/4-azure-portal-create-resource.png" alt-text="A screenshot of the Azure portal showing many service categories as well as the more popular services.":::
 
@@ -79,7 +79,7 @@ You can also purchase Azure-based solutions and services from third-party vendor
 
 ## Does location or network traffic affect cost?
 
-When you provision a resource in Azure, you need to define the location (known as the Azure region) of where it will be deployed. This decision can have cost consequences.
+When you provision a resource in Azure, you need to define the location (known as the Azure region) of where it will be deployed. Let's see why this decision can have cost consequences.
 
 ### Location
 
@@ -118,7 +118,7 @@ When you create a resource, the customization options you choose can impact its 
 
 Azure resources have a number of factors which influence their cost, depending on the type of resource or how you customize it.
 
-For example, with a storage account you would specify a type (such as block blob storage or table storage), a performance tier (standard or premium), and an access tier (hot, cool or archive). These selections apply different costs.
+For example, with a storage account you would specify a type (such as block blob storage or table storage), a performance tier (standard or premium), and an access tier (hot, cool or archive). These selections present different costs.
 
 ### Usage meters
 
@@ -172,6 +172,6 @@ The options that you can configure in the Pricing calculator vary between produc
 
 * **Azure Dev/Test Pricing**
 
-    Lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription that is based on a Dev/Test offer.
+    This option lists the available prices for development and test workloads. Dev/Test pricing applies when you run resources within an Azure subscription that is based on a Dev/Test offer.
 
 Keep in mind that the Pricing calculator provides estimates, and *not* actual price quotes. Actual prices can vary depending upon the date of purchase, the payment currency you are using, and the type of Azure customer you are.

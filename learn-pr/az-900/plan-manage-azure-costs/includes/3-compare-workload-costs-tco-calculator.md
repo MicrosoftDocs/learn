@@ -4,7 +4,7 @@ Tailwind Traders is interested in moving some of their on-premises workloads to 
 
 You've been tasked to investigate whether there are any potential cost savings in moving your European datacenter to the cloud over the next three years. You need to take into account all of the potentially hidden costs involved with operating on-premises and in the cloud.
 
-Instead of manually collecting everything you think might be included, you use the Total Cost of Ownership (TCO) Calculator as a starting point. You adjust the provided cost assumptions to match Tailwind Traders' on-premises environment.
+Instead of manually collecting everything you think might be included, you use the TCO Calculator as a starting point. You adjust the provided cost assumptions to match Tailwind Traders' on-premises environment.
 
 > [!NOTE]
 > Remember, you don't need an Azure subscription to work with the TCO Calculator.
@@ -47,7 +47,7 @@ Enter the specifications of your on-premises infrastructure into the TCO calcula
     | Optimize by | **CPU** |
     | Windows Server 2008/2008 R2 | **Off** |
 
-1. Select **Add server workload** to create a second row for your bank of Linux virtual machines.
+1. Select **Add server workload** to create a second row for your bank of Linux virtual machines. Then specify these settings:
 
     | Setting | Value |
     | -- | -- |
@@ -80,7 +80,7 @@ Enter the specifications of your on-premises infrastructure into the TCO calcula
 
 Here, you specify your currency. For brevity, you leave the remaining fields at their default values.
 
-In practice, you would adjust any cost assumptions and make any adjustments to match your current on-premises infrastructure.
+In practice, you would adjust any cost assumptions and make any adjustments to match your current on-premises environment.
 
 1. At the top of the page, select your currency. This example uses **US Dollar ($)**.
 1. Select **Next**.

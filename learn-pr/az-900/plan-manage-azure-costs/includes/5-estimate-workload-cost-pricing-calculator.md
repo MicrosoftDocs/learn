@@ -2,7 +2,7 @@ In this exercise, you use the Pricing calculator to estimate the cost of running
 
 With an understanding of the more important cost factors associated with running on Azure, Tailwind Traders wants to take a typical workload and estimate how much it would cost each month to run it on Azure.
 
-The IT Manager at Tailwind Traders is faced with the decision about whether to replace some aging on-premises hardware or move the application solution to Azure. They need to know how much the ongoing monthly cost of the solution in Azure would be.
+The IT Manager at Tailwind Traders is faced with the decision about whether to replace some aging on-premises hardware or move the application to Azure. They need to know how much the ongoing monthly cost of the solution in Azure would be.
 
 Let's start by defining which Azure services you need.
 
@@ -73,9 +73,9 @@ Here you add each Azure service that you need to the calculator and then configu
 
     | Category | Service |
     | -- | -- |
-    | **Compute** | **Virtual Machines** |
-    | **Databases** | **Azure SQL Database** |
-    | **Networking** | **Application Gateway** |
+    | Compute | **Virtual Machines** |
+    | Databases | **Azure SQL Database** |
+    | Networking | **Application Gateway** |
 
 1. Scroll to the bottom of the page. You see that each service is listed with its default configuration.
 
