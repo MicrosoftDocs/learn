@@ -1,6 +1,6 @@
 In the previous unit, you worked through a scenario involving global scale for a content delivery network. In this unit, you'll review one potential solution and some items to consider.
 
-As you review, you should compare the solution provided to the one you developed in the previous unit. There is often more than one correct solution to any problem, but there are always tradeoffs. Which items in your solution differ from the proposed? Is there anything in your solution you might rethink? Is there anything in the provided solution that you think is addressed more thoroughly in your solution?
+As you review, you should compare the solution provided to the one you developed in the previous unit. There is often more than one correct solution to any problem, but there are always tradeoffs. Which items in your solution differ from the proposed? Is there anything in your solution you might rethink? Is there anything in the provided solution that you think is addressed more thoroughly in your solution?  
 
 ## Deployment option and configuration
 
