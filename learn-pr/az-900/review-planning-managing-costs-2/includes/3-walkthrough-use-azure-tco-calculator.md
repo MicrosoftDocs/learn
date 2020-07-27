@@ -1,4 +1,6 @@
-Tailwind Traders is interested in moving some of their on-premises workloads to the cloud. But first, their Chief Financial Officer wants to understand more about moving from a relatively fixed cost structure to more of an ongoing monthly cost structure.
+TODO: In this exercise, you... 
+
+Tailwind Traders is interested in moving some of their on-premises workloads to the cloud. But first, their Chief Financial Officer wants to understand more about moving from a relatively fixed cost structure to an ongoing monthly cost structure.
 
 You've been tasked to investigate whether there are any potential cost savings in moving your European datacenter to the cloud over the next three years. You need to take into account all of the potentially hidden costs involved with operating on-premises and in the cloud.
 
@@ -7,11 +9,18 @@ Instead of manually collecting everything you think might be included, you use t
 > [!NOTE]
 > Remember, you don't need an Azure subscription to work with the TCO Calculator.
 
-Let's say that Tailwind Traders run two sets of 50 virtual machines. The first bank of virtual machines runs Windows Server under Hyper-V virtualization. The second bank of virtual machines runs Linux under VMware virtualization. There is also a storage area network (SAN) with 60 terabytes (TB) of disk storage. You consume an estimated 15 TB of outbound network bandwidth each month. For brevity, you'll omit details around database usage.
+Let's say that:
+
+* Tailwind Traders run two sets, or banks, of 50 virtual machines (VMs) in each bank.
+* The first bank of VMs runs Windows Server under Hyper-V virtualization.
+* The second bank of VMs runs Linux under VMware virtualization.
+* There is also a storage area network (SAN) with 60 terabytes (TB) of disk storage.
+* You consume an estimated 15 TB of outbound network bandwidth each month.
+* There are also a number of databases involved, but for now, you'll omit those details.
 
 Recall that the TCO Calculator breaks down into these three steps:
 
-![TODO](../media/total-cost-ownership-steps.png)
+:::image type="content" source="../media/2-total-cost-ownership-steps.png" alt-text="A visual representation of the three steps; define your workloads, adjust assumptions, view report." border="false":::
 
 Let's see how Tailwind Traders' existing workloads stack up in the datacenter versus on Azure.
 
@@ -96,4 +105,4 @@ Scroll to the summary at the bottom. You see a comparison of running your worklo
 
 Select **Download** to download or print a copy of the report in PDF format.
 
-Great work. You now have the information that you can share with your Chief Financial Officer needs. If you need to make adjustments, you can revisit the TCO Calculator to generate a fresh report.
+Great work. You now have the information that you can share with your Chief Financial Officer. If you need to make adjustments, you can revisit the TCO Calculator to generate a fresh report.

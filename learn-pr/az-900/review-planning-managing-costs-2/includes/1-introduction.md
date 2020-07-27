@@ -1,6 +1,4 @@
-<div style="background:yellow;">
-TODO: In this module, you'll ...
-</div>
+In this module, you'll learn about the major factors that influence the cost of running in the cloud. Along the way, you'll get hands-on experience with some of the tools you can use to estimate the costs of running your workloads on Azure to help ensure that you stay within budget and use only the services that you need.
 
 ## Meet Tailwind Traders
 
@@ -10,18 +8,15 @@ TODO: In this module, you'll ...
 
 Tailwind Traders is planning their migration to the cloud. They've ran a few successful proof-of-concept projects and want to better understand how to understand and manage their costs before they move their workloads to Azure.
 
-Running in the datacenter requires you to maintain a facility as well as purchase, power, cool and maintain your servers. Running in the cloud presents new ways to think about your IT expenses.
+Running in the datacenter requires you to maintain a facility as well as purchase, power, cool, and maintain your servers. Running in the cloud presents new ways to think about your IT expenses.
 
 To answer "how much will it cost?", you need to understand the factors that influence cost as well as what tools are available to you to help estimate and manage your cloud spend.
 
 ## Learning objectives
 
-<div style="background:yellow;">
-TODO: After completing this module, you'll be able to:
-</div>
+After completing this module, you'll be able to:
 
-* Describe the different ways to purchase Azure products and services.
-* Define the factors that affect your costs.
-* Review and use the Azure Pricing Calculator and Total Cost of Ownership Calculator.
-* List ways to minimize your costs
-* Explain the purpose of Azure Cost Management + Billing (control Azure spending and optimize resource use.)
+* Use the Total Cost of Ownership (TCO) Calculator to compare your current datacenter costs to running the same workloads on Azure.
+* Describe the different ways you can purchase Azure products and services.
+* Use the Pricing calculator to estimate the monthly cost of running your cloud workloads.
+* Define some of the major factors that affect total cost and apply recommended practices to minimize cost.

@@ -10,14 +10,14 @@ Calculate your projected costs by using the Pricing calculator and the Total Cos
 
 ## Use Azure Advisor to monitor your usage
 
-Ideally, you want your provisioned resources to match your actual demand.
+Ideally, you want your provisioned resources to match your actual usage.
 
-Azure Advisor identifies unused or under-utilized resources, and recommendation unused resources that you can remove. This helps you configure your resources to match your actual demand.
+Azure Advisor identifies unused or under-utilized resources, and recommends unused resources that you can remove. This helps you configure your resources to match your actual workload.
 
 <div style="background:yellow;">
 TODO: Image is a bit blurry.
 
-TODO: Can we show a better example and tie it to a specific recommendation? Looking at a recommendation around what you did in the prior exercises would be ideal ;)
+TODO: Also, can we show a better example and tie it to a specific recommendation? Looking at a recommendation around what you did in the prior exercises would be ideal ;)
 </div>
 
 ![Depicts two Azure Advisor monitor results, one for document count and one for storage size.](../media/6-usage-costs.png)
@@ -26,19 +26,21 @@ TODO: Can we show a better example and tie it to a specific recommendation? Look
 
 If you have a Free Trial or a credit-based Azure subscription, you can use spending limits to prevent accidental overrun.
 
-For example, when you spend all the credit included with your Azure free account, Azure resources that you deployed are removed from production and your Azure virtual machines are stopped and de-allocated. The data in your storage accounts are available as read-only. At this point, you can upgrade your Free Trial subscription to a Pay-As-You-Go subscription.
+For example, when you spend all the credit included with your Azure free account, Azure resources that you deployed are removed from production and your Azure virtual machines are stopped and deallocated. The data in your storage accounts are available as read-only. At this point, you can upgrade your Free Trial subscription to a Pay-As-You-Go subscription.
 
 If you have a credit-based subscription and you reach your configured spending limit, Azure suspends your subscription until a new billing period begins.
 
-A related concept is _quotas_, or limits on the number of similar resources you can provision within your subscription. For example, you can allocate up to 25,000 virtual machines per region. While these limits mainly help Microsoft plan their datacenter capacity, they also help protect you from accidentally provisioning more than you intended.
-
-<div style="background:yellow;">
-TODO: Sonia, per our discussion, remove this paragraph ^ if it's out of place or we don't want to talk about it.
-</div>
+A related concept is _quotas_, or limits on the number of similar resources you can provision within your subscription. For example, you can allocate up to 25,000 virtual machines per region. These limits mainly help Microsoft plan their datacenter capacity.
 
 ## Use Azure Reservations to pre-pay in advance
 
 Azure Reservations offers discounted prices on certain Azure services. To receive a discount, you reserve services and resources by paying in advance.
+
+<div style="background:yellow;">
+TODO: Image is pixelated.
+
+TODO: Also, can we show an image with greater meaning and perhaps tie it to a concrete example?
+</div>
 
 ![Depiction of two silos, indicating the 72% cost savings you can realize by using Azure Reservations rather than a Pay-As-You-Go subscription. ](../media/6-reservations.png)
 
@@ -48,7 +50,7 @@ Azure Reservations are available to customers with an Enterprise Agreement, Clou
 
 ## Choose low-cost locations and regions
 
-The cost of Azure products, services, and resources can vary across locations and regions, and if possible, you should use them in those locations and regions where they cost less.
+The cost of Azure products, services, and resources can vary across locations and regions. If possible, you should use them in those locations and regions where they cost less.
 
 But remember, some resources are metered and billed according to how much outgoing (egress) network bandwidth they consume. You should provision connected resources that are metered by bandwidth in the same Azure region to reduce egress traffic between them.
 
@@ -64,9 +66,15 @@ For example, if you run several virtual machines for different teams, you can us
 
 Tags make it easier to identify groups that generate the biggest Azure costs, which can help you adjust your spending accordingly.
 
-## Azure Cost Management + Billing
+## Use Azure Cost Management + Billing to control spending
 
 Azure Cost Management + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use.
+
+<div style="background:yellow;">
+TODO: The "tablet" feature is non-standard here. Also, it's blurry.
+
+TODO: Also, can we show an image with greater meaning and perhaps tie it to a concrete example? 
+</div>
 
 ![Three graphics that depict a company's cost analysis by meter category, resource location, and resource group name.](../media/6-cost-management.png)
 

@@ -1,35 +1,46 @@
-In this module you learned about topics like:
+Tailwind Traders is taking a methodical approach towards cloud migration. While proof-of-concept projects can help demonstrate technical feasibility, having a clear picture of the total cost of running in the cloud will further help the team validate their approach.
 
-+ How to purchase Azure products and services.
-+ Which factors affect your cost and how you might manage that cost.
-+ How to use use the Azure Pricing Calculator and the Azure TCO Calculator to predict spend.
-+ And several ways to minimize your costs.
+To start, the Tailwind Traders team used the TCO Calculator to estimate the cost savings of operating their solution on Azure instead of in their on-premises datacenter.
+
+From there, they used the Pricing calculator to get a more detailed estimate for running a typical workload on Azure each month.
+
+The team also created a checklist of cost-saving measures they can refer back to to help keep costs down. This list includes:
+
+> [!div class="checklist"]
+> * Perform cost analysis before you deploy.
+> * Use Azure Advisor to monitor your usage.
+> * Use spending limits to prevent accidental spending.
+> * Use Azure Reservations to pre-pay in advance.
+> * Choose low-cost locations and regions.
+> * Research available cost-saving offers.
+> * Apply tags to identify cost owners.
+
+With these measures in place, the Tailwind Traders team is ready to take next steps towards their cloud migration.
+
+## Next steps
+
+If you run existing workloads on-premises or in the datacenter, try entering your existing workloads in the [Total Cost of Ownership Calculator](https://azure.microsoft.com/pricing/tco?azure-portal=true) to see how the cost of running on Azure compares to what you pay today.
+
+Then, use the [Azure documentation](https://docs.microsoft.com/azure/) to map your current infrastructure to cloud services. Then use the [Pricing calculator](https://azure.microsoft.com/pricing/calculator/?azure-portal=true) to get a more accurate picture of what it would cost to run your existing workloads on Azure.
 
 ## Learn more
 
-TCO:
+In this module, you learned about the many factors that affect the total cost of running on Azure. Here are additional resources to help you go further.
 
-* [Total Cost of Ownership Calculator](https://azure.microsoft.com/pricing/tco?azure-portal=true)
+### Purchase Azure services
 
-TODO: More about usage meters?
+* If you're just getting started with Azure, review commonly asked questions in the [Azure free account FAQ](https://azure.microsoft.com/free/free-account-faq/?azure-portal=true) to see whether a Free Trail account is right for you.
+* To learn more about how to purchase Azure products and services, see [Explore flexible purchasing options for Azure](https://azure.microsoft.com/pricing/purchase-options?azure-portal=true).
 
-> [!div class="checklist"]
-> * For more information about purchasing Azure products and services, refer to [Explore flexible purchasing options for Azure](https://azure.microsoft.com/pricing/purchase-options?azure-portal=true).
+### Understand your bill
 
-Manage and minimize costs:
+* For more information about Azure usage charges, see [Understand terms on your Microsoft Azure invoice](https://docs.microsoft.com/azure/billing/billing-understand-your-invoice?azure-portal=true).
+* To learn more about how bandwidth affects pricing, see [Bandwidth Pricing Details](https://azure.microsoft.com/pricing/details/bandwidth?azure-portal=true).
 
-* [Azure Reservations](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations?azure-portal=true)
+### Manage and minimize costs
 
-https://docs.microsoft.com/en-gb/azure/cost-management-billing/manage/getting-started
-
-
-> [!NOTE]
-> For more information on Azure spending limits, refer to [Understand Azure spending limit and how to remove it](https://docs.microsoft.com/azure/billing/billing-spending-limit?azure-portal=true)
-
-> [!NOTE]
-> Azure spending limits are not the same as Subscription, Service, or Resource Group limits and quotas. For more information, refer to [Azure subscription and service limits, quotas, and constraints.](https://docs.microsoft.com/azure/azure-subscription-service-limits?azure-portal=true)
-
-Tags
-
-Learn how to analyze costs, create and manage budgets, export data, and review and act on recommendations.
-[Cost Management](https://azure.microsoft.com/services/cost-management?azure-portal=true)
+* See [Azure Cost Management + Billing](https://azure.microsoft.com/services/cost-management?azure-portal=true) to learn more about analyzing costs, creating and managing budgets, exporting data, and reviewing and acting on recommendations.
+* Take advantage of significant discounts on development and testing workloads. To learn more, see [Azure Dev/Test Pricing](https://azure.microsoft.com/pricing/dev-test/?azure-portal=true).
+* Learn more about how [Azure Reservations](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations?azure-portal=true) can save you money when you commit to to one-year or three-year pricing plans.
+* Learn how to [Prevent unexpected charges with Azure billing and cost management](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started?azure-portal=true).
+* See [Azure spending limit](https://docs.microsoft.com/azure/billing/billing-spending-limit?azure-portal=true) to learn what happens when you reach your spending limit and how to remove it.
