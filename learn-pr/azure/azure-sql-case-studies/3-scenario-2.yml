@@ -33,10 +33,10 @@ quiz:
       choices:
       - content: "Geo-replication"
         isCorrect: false
-        explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
+        explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
       - content: "Auto-failover groups"
         isCorrect: true
-        explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
+        explanation: "While geo-replication and auto-failover groups are both options here, auto-failover groups will enable the customer to failover if it's required, without changing any connection strings. This setup can potentially help in reducing downtime to update applications, because it will not be needed. You can also configure monitoring queries to check the status, if something goes wrong, you could even force a failover."
     - content: "What role does colocation play in your solution?"
       choices:
       - content: "It doesn't, we will deploy to one region only."
@@ -47,7 +47,7 @@ quiz:
         explanation: "Almost, but what happens to your application when you failover?"
       - content: "In addition to the failover group, need to deploy the application in both regions where the failover group exists."
         isCorrect: true
-        explanation: "You'll want to make sure your application is deployed in both regions for the auto-failover group, this answer will provide a redundant copy of the application (for example, a web app). In the case of a failover, you can use Traffic Manager to reroute traffic to the application in the secondary region."
+        explanation: "You'll want to make sure your application is deployed in both regions for the auto-failover group, this answer will provide a redundant copy of the application (for example, a web app). If there's a failover, you can use Traffic Manager to reroute traffic to the application in the secondary region."
     - content: "How can you ensure that DBAs cannot see sensitive data stored in specific columns?"
       choices:
       - content: "SQL Audit"
@@ -83,7 +83,7 @@ quiz:
           explanation: "Using groups alone won't really help the situation."
         - content: "Azure RBAC" 
           isCorrect: false
-          explanation: "This option will allow you make DBAs part of the SQL Server Contributor role, but they won't be able to access data."
+          explanation: "This option will allow you to make DBAs part of the SQL Server Contributor role, but they won't be able to access data."
         - content: "Azure AD groups and Azure RBAC" 
           isCorrect: false
           explanation: "Almost, but the DBA group must have Azure AD admin rights on the logical server."
