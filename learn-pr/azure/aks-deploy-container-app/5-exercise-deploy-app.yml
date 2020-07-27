@@ -3,7 +3,7 @@ uid: learn.aks-deploy-container-app.5-exercise-deploy-app
 metadata:
   title: Exercise - Deploy an application on your AKS cluster
   description: Exercise - Deploy an application on your AKS cluster
-  ms.date: 07/25/2020
+  ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
