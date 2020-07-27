@@ -107,7 +107,7 @@ You learned about the deployment commands in the previous module. Here, we're us
       --parameters storagePrefix={your-prefix}
     ```
 
-      In the first section of this code, you set Azure CLI variables for the path to the template file that you want to deploy and the name of the deployment. You then use the ```az deployment group create``` command to deploy the template to Azure.
+    In the first section of this code, you set Azure CLI variables for the path to the template file that you want to deploy and the name of the deployment. You then use the ```az deployment group create``` command to deploy the template to Azure.
 
     You'll see ```Running...``` in the terminal.
 
