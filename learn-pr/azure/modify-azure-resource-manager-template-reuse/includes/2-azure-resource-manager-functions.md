@@ -1,4 +1,4 @@
-In this scenario, you want to make deploying your Azure Resource Manager (ARM) template to different environments as easy as possible. One of the areas of contention is coming up with a unique name for the Azure Storage account.
+In this scenario, you want to make deploying your Azure Resource Manager (ARM) template to different environments as easy as possible. One of the areas of contention is coming up with a unique name for the Azure storage account.
 
 To solve this problem, you decide to create an expression by using [ARM template functions](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-functions?azure-portal=true).
 

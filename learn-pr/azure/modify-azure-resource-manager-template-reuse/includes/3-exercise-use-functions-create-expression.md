@@ -1,13 +1,13 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-In this exercise, you create an expression by using Azure Resource Manager (ARM) template functions. The expression creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. It results in Azure Storage account names like `dev2hu6sbtr5` and `staging5his8hgr67`.
+In this exercise, you create an expression by using Azure Resource Manager (ARM) template functions. The expression creates a unique name for each resource group by combining a prefix input with a hash of the resource group ID. It results in Azure storage account names like `dev2hu6sbtr5` and `staging5his8hgr67`.
 
 In this exercise, you'll use the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 ## Create the ARM template file
 
-In the previous module, you created an ARM template that deployed a Storage account. You added parameters and an output to this file. Here, you start with that file, but the output has been removed to reduce the overhead.
+In the previous module, you created an ARM template that deployed a storage account. You added parameters and an output to this file. Here, you start with that file, but the output has been removed to reduce the overhead.
 
 1. Open Visual Studio Code and create a file called **azuredeploy.json**. If you have this file from the previous module, you can use that file.
 
@@ -15,17 +15,17 @@ In the previous module, you created an ARM template that deployed a Storage acco
 
     [!code-json[](code/starter.json)]
 
-1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter. This parameter is used to pass in a unique name for the Storage account.
+1. If you didn't complete the previous module, take a moment to review this file. Note the ```storageName``` parameter. This parameter is used to pass in a unique name for the storage account.
 
-## Create an expression to set a unique Storage account name
+## Create an expression to set a unique storage account name
 
-Instead of passing in the name of the Storage account, you'll change the parameter to take a prefix for the Storage account name. This parameter will be passed to the ```concat``` function in your expression.
+Instead of passing in the name of the storage account, you'll change the parameter to take a prefix for the storage account name. This parameter will be passed to the ```concat``` function in your expression.
 
 1. In the `parameters` section, change ```storageName``` to **storagePrefix**.
 
 1. Change value of the ```maxLength:``` attribute of the `storagePrefix` parameter to **11**. The maximum length for a storage account name is 24 characters. So you want to be sure the added hash from the function you create doesn't cause the name to be longer than that.
 
-1. Create the expression to set the unique Storage account name. In the `resources` section, change the values of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. You learned about this expression in the previous unit. The file should now look like this file:
+1. Create the expression to set the unique storage account name. In the `resources` section, change the values of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. You learned about this expression in the previous unit. The file should now look like this file:
 
     [!code-json[](code/function.json?highlight=8,28,32)]
 
@@ -196,6 +196,6 @@ When the deployment finishes, go to [Azure](https://portal.azure.com?azure-porta
 
 1. Select **addfunction** to see what resources were deployed:
 
-    :::image type="content" source="../media/3-unique-storage-deploy.png" alt-text="Screenshot of the Azure portal that shows that the Storage account deployed." border="true":::
+    :::image type="content" source="../media/3-unique-storage-deploy.png" alt-text="Screenshot of the Azure portal that shows that the storage account deployed." border="true":::
 
 1. Leave the page open in your browser. You'll check on deployments again.

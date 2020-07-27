@@ -1,4 +1,4 @@
-In the previous scenario, you decided to use an expression made up of several Azure Resource Manager (ARM) template functions to create a unique name for the Azure Storage account. This flexibility will ensure that all your customers will be able to use the ARM template for their deployments. But you notice that adding this expression in several places will be a problem for maintaining the template. You decide to use a variable for the Storage account name expression so you can define the expression in one place and reuse it throughout the template. 
+In the previous scenario, you decided to use an expression made up of several Azure Resource Manager (ARM) template functions to create a unique name for the Azure storage account. This flexibility will ensure that all your customers will be able to use the ARM template for their deployments. But you notice that adding this expression in several places will be a problem for maintaining the template. You decide to use a variable for the storage account name expression so you can define the expression in one place and reuse it throughout the template. 
 
 ## What is an ARM template variable?
 
@@ -12,7 +12,7 @@ ARM template variables allow you to write an expression once and then use it in 
 
 ## How do I use ARM template variables?
 
-ARM template variables are defined in the ```variables: {}``` section of a template. For example, here's the expression for the Storage account name you defined in the last unit. It's now defining the value for the ```storageName``` variable.
+ARM template variables are defined in the ```variables: {}``` section of a template. For example, here's the expression for the storage account name you defined in the last unit. It's now defining the value for the ```storageName``` variable.
 
 ```json
 "variables": {
@@ -20,7 +20,7 @@ ARM template variables are defined in the ```variables: {}``` section of a templ
 },
 ```
 
-You then use the variable in the template wherever you need the Storage account name:
+You then use the variable in the template wherever you need the storage account name:
 
 ```json
 "resources": [

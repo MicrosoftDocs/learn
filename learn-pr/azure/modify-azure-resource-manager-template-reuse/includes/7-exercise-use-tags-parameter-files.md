@@ -54,7 +54,7 @@ First, you create a parameter to use as a resource tag in your template.
     },
     ```
 
-1. Use this parameter to tag your Storage account resource. Change the ```tags:``` attribute in the resource definition:
+1. Use this parameter to tag your storage account resource. Change the ```tags:``` attribute in the resource definition:
 
     ```json
     "tags": "[parameters('resourceTags')]",
@@ -104,7 +104,7 @@ First, you create a parameter to use as a resource tag in your template.
 
 ### Verify that the new tags are in the deployment
 
-1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the Storage account you deployed.
+1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the storage account you deployed.
 1. You see the **Environment : Dev** and **Project : Tutorial** tags:
 
     :::image type="content" source="../media/7-tags.png" alt-text="Screenshot of the Azure portal that shows the Environment : Dev and Project : Tutorial Storage account tags." border="true":::

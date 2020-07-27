@@ -10,7 +10,7 @@ The tag value will be displayed on the overview page for the Azure resource and 
 
 ## How do I create an Azure resource tag?
 
-Each resource has a ```tags:``` attribute. So far, you've been using the default ```displayName``` for the tag for your Storage account:
+Each resource has a ```tags:``` attribute. So far, you've been using the default ```displayName``` for the tag for your storage account:
 
 ```json
 "tags": {
@@ -32,7 +32,7 @@ To make this attribute more useful, you can define a parameter that has more inf
 
 Here, you created an object to hold values for an environment name and a project name. You could have defined anything you wanted.
 
-You then use that parameter for any resource that's for the Dev environment and the Inventory project. For example, your Storage account.
+You then use that parameter for any resource that's for the Dev environment and the Inventory project. For example, your storage account.
 
 ```json
 "resources": [{
