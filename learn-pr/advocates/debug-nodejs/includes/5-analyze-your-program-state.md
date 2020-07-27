@@ -132,7 +132,7 @@ From left to right, the controls go like that:
 
 - **Continue or pause execution**. If execution is paused, it will continue until the next breakpoint is hit. If your program is running, the button switches to a pause button that you can use to pause execution.
 - **Step over**. Executes the next code statement in the current context (same as the `next` command in built-in debugger).
-- **Step into**. Like *Step into*, but if the next statement is a function call, move on to the first code statement of this function (same as `step` command).
+- **Step into**. Like *Step over*, but if the next statement is a function call, move on to the first code statement of this function (same as `step` command).
 - **Step out**. If you're inside a function, execute the remaining code of this function and jump back to the statement after the initial function call (same as `out` command).
 - **Restart**. Restart your program from the beginning.
 - **Stop**. End execution and leave the debugger.
