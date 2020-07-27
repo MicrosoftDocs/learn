@@ -22,7 +22,7 @@ To revert, redeploy the modified service from the original repository, using the
 You can explore the app when it becomes fully available again to verify it's failing immediately on the configured discount code, as you just did in the previous exercise. As a refresher, complete the following tasks:
 
 - Log in to the app.
-- Select the **.NET FOUNDATION PIN**
+- Select the **.NET FOUNDATION PIN**.
 - Select the basket icon at the top right of the page.
 - Select **CHECKOUT**.
 - Go to the **HAVE A DISCOUNT CODE?** input.
