@@ -2,14 +2,14 @@
 uid: learn.azure-sql-performance
 metadata:
   title: Azure SQL fundamentals - Deliver consistent performance
-  description: TODO
+  description: Azure SQL - Deliver consistent performance
   ms.date: 07/31/2020
   author: rgward
   ms.author: bobward
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure SQL fundamentals - Deliver consistent performance
-summary: TODO
+summary: Azure SQL has the capabilities and tools to allow you to deliver consistent performance for your application. In this module, you will learn key aspects of configuration, monitoring, and intelligent performance for Azure SQL.
 abstract: | 
   In this module, you will:
   - Identify the performance capabilities of Azure SQL
@@ -17,7 +17,10 @@ abstract: |
   - Monitor and troubleshoot performance in Azure SQL
   - Improve performance with Intelligent Insights
 prerequisites: | 
-  - TODO
+- Use a Windows machine or VM (SSMS is only available on Windows)  
+- Download and install [the latest version of SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15?azure-portal=true)
+- Download and install [the latest version on Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15?azure-portal=true)
+- Download the [zip file](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/archive/master.zip?azure-portal=true) or clone the repository from [GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals?azure-portal=true) to access lab files. Extract the contents of the zip file to something similar to `C:\Users\[YourUsername]\` so you can access it easily in the exercises. 
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner

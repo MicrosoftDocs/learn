@@ -211,7 +211,7 @@ If you use a Business Critical (BC) service tier you may *unexpectedly* see the 
 - HADR_DATABASE_FLOW_CONTROL
 - HADR_THROTTLE_LOG_RATE_SEND_RECV
 
-Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). (BC) tiers use AG technology behind the scenes to implement SLA and availability features of a BC service tier so these wait types are expected (long wait times though may indicate a bottleneck such as I/O latency or replica behind).
+Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). BC tiers use AG technology behind the scenes to implement SLA and availability features of a BC service tier so these wait types are expected (long wait times though may indicate a bottleneck such as I/O latency or replica behind).
 
 #### Hyperscale
 
