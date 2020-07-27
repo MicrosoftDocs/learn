@@ -22,7 +22,7 @@ For performance, one option that is not available to change is the recovery mode
 
 SQL Server professionals often use files and filegroups to improve I/O performance through physical file placement. Azure SQL does not allow users to place files on specific disk systems. However, Azure SQL has resource commitments for I/O performance with regards to rates, IOPS, and latencies so abstracting the user from physical file placement can be a benefit.
 
-Azure SQL Database only has one database file (Hyperscale typically has several) and the ,maximum size is configured through Azure interfaces. There is no functionality to create additional files.
+Azure SQL Database only has one database file (Hyperscale typically has several) and the maximum size is configured through Azure interfaces. There is no functionality to create additional files.
 
 Azure SQL Managed Instance supports adding database files and configuring sizes but not physical placement of files. The number of files and file sizes for Azure SQL Managed Instance can be used to improve I/O performance. In addition, user defined filegroups are supported for Azure SQL Managed Instance for manageability purposes.
 
