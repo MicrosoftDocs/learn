@@ -3,11 +3,11 @@ uid: learn.microservices-resiliency-aspnet-core.6-implement-linkerd-resiliency
 metadata:
   title: Exercise - Implement resiliency with Linkerd
   description: Configure resiliency in your microservices app with Linkerd.
-  ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie
-  ms.topic: interactive-tutorial
+  ms.date: 07/08/2020
   ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
 title: Exercise - Implement resiliency with Linkerd
 durationInMinutes: 1
 content: |

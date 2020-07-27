@@ -57,7 +57,7 @@ The basic idea is to have the app automatically handle retrying the operation un
 
 When validating a discount coupon, the request goes to the web shopping aggregator, as the implementation of the [Backends For Frontends pattern](https://samnewman.io/patterns/architectural/bff) (BFF). The BFF implementation:
 
-- Initiates another REST API request to the coupon service to get the required information.
+- Sends another HTTP request to the coupon service to get the required information.
 - Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](http://www.thepollyproject.org).
 
 In this case, you'll implement two policies to handle failure: the Retry and Circuit Breaker policies from the previous unit.

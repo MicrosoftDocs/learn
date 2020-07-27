@@ -3,11 +3,11 @@ uid: learn.microservices-resiliency-aspnet-core.7-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge.
-  ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie
-  ms.topic: interactive-tutorial
+  ms.date: 07/08/2020
   ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
 title: Knowledge check
 durationInMinutes: 7
 content: ""

@@ -3,11 +3,11 @@ uid: learn.microservices-resiliency-aspnet-core.5-implement-polly-resiliency
 metadata:
   title: Exercise - Implement resiliency with Polly
   description: Implement a resiliency handler with Polly.
-  ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie
-  ms.topic: interactive-tutorial
+  ms.date: 07/08/2020
   ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
 title: Exercise - Implement resiliency with Polly
 durationInMinutes: 1
 content: |

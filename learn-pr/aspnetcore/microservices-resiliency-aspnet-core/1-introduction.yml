@@ -3,11 +3,11 @@ uid: learn.microservices-resiliency-aspnet-core.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie
-  ms.topic: interactive-tutorial
+  ms.date: 07/08/2020
   ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
 title: Introduction
 durationInMinutes: 1
 content: |

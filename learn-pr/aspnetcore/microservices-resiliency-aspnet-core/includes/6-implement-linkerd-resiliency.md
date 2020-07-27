@@ -251,7 +251,7 @@ You should see that the updated pods have two containers now (`0/2`). One is the
 Let's explore the app behavior now with a similar process:
 
 - Log in to the app.
-- Select the **.NET FOUNDATION PIN**
+- Select the **.NET FOUNDATION PIN**.
 - Select the basket icon at the top right of the page.
 - Select **CHECKOUT**.
 - Go to the **HAVE A DISCOUNT CODE?** input.

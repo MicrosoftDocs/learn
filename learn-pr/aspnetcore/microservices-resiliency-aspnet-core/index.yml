@@ -3,11 +3,11 @@ uid: learn.microservices-resiliency-aspnet-core
 metadata:
   title: Implement resiliency in a cloud-native ASP.NET Core microservice
   description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
-  ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie
-  ms.topic: interactive-tutorial
+  ms.date: 07/08/2020
   ms.prod: learning-aspnetcore
+  ms.topic: interactive-tutorial
 title: Implement resiliency in a cloud-native ASP.NET Core microservice
 summary: Learn how to make your app fault-tolerant with minimal impact on the user.
 abstract: |
