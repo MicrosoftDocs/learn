@@ -2,7 +2,7 @@
 uid: learn.aks-deploy-container-app.5-exercise-deploy-app
 metadata:
   title: Exercise - Deploy an application on your AKS cluster
-  description: Exercise - Deploy an application on your AKS cluster
+  description: Here you'll practice the creation of a Kubernetes workload from scratch while putting in practice the push and storage of a container image to the Azure Container Registry.
   ms.date: 07/25/2020
   author: khaosdoctor
   ms.author: ludossan
