@@ -59,8 +59,8 @@ Let's now load some T-SQL queries for DMVs to observe query performance for acti
 
 1. Edit the workload script **order_rating_insert_single.cmd**
 
-- Substitute your **unique_id** you were given in the first exercise for the server name for the **-S parameter**.
-- Substitute the password you provided in the database deployment from the first exercise for the **-P parameter**.
+    - Substitute your **unique_id** you were given in the first exercise for the server name for the **-S parameter**.
+    - Substitute the password you provided in the database deployment from the first exercise for the **-P parameter**.
 
 ## Run the workload
 
@@ -96,15 +96,15 @@ Let's now load some T-SQL queries for DMVs to observe query performance for acti
 
 1. Now run the queries in SSMS you previously loaded to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
 
-Use these queries you can observe the following:
-
-- Many requests constantly have a wait_type of WRITELOG with a value > 0
-- The WRITELOG wait type is one of the highest count for wait types.
-- The average time to write to the transaction log is somewhere around 2ms.
-
-The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core is around ~25 seconds.
-
-WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1ms.
+    Use these queries you can observe the following:
+    
+    - Many requests constantly have a wait_type of WRITELOG with a value > 0
+    - The WRITELOG wait type is one of the highest count for wait types.
+    - The average time to write to the transaction log is somewhere around 2ms.
+    
+    The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core is around ~25 seconds.
+    
+    WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1ms.
 
 ## Decide on a resolution
 
@@ -121,7 +121,9 @@ The problem is not a high percentage of log write activity. The Azure Portal and
 
 ## Run a modified more efficient workload
 
-Make edits to scripts and execute them to see a more efficient I/O performance. The modified workload can be found in the script **order_rating_insert.sql**. Prepare the workload script by editing **order_rating_insert.cmd** to put in your correct server name and password.
+Make edits to scripts and execute them to see a more efficient I/O performance. The modified workload can be found in the script **order_rating_insert.sql**.
+
+1. Prepare the workload script by editing **order_rating_insert.cmd** to put in your correct server name and password.
 
 1. Run the modified workload using the script **order_rating_insert.cmd** similar to how you ran the previous workload script.
 
@@ -134,7 +136,7 @@ Make edits to scripts and execute them to see a more efficient I/O performance. 
     > [!NOTE]
     > This workload can run even faster against an Azure SQL Database with a connection type of **Redirect**. The deployment you have done in this exercise uses a Default connection type which will be a Proxy type because you are connected outside of Azure. Using Redirect can significantly speed up a workload like this given the round trips required from the client to the server.
 
-1. Observe the workload duration. The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity. 
+1. Observe the workload duration. The workload runs so fast it may be difficult to observe diagnostic data from queries used previously in this activity.
 
     It is important to note that sys.dm_os_wait_stats cannot be cleared in Azure SQL Database using DBCC SQLPERF as it can be with SQL Server.
 

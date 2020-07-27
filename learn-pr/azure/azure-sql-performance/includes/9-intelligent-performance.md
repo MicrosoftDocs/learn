@@ -38,7 +38,7 @@ One additional scenario in preview for Automatic Tuning for Azure SQL Database i
 The following is an example from the Azure Portal where indexes are recommended for a database based on workload analysis over time.
 
 > [!NOTE]
-> You can at a later date use the AdventureWorksLT sample with your own Azure SQL Database deployment and use the scripts in the *04-Performance/tuning_recommendations* folder to see this example. It is important to note that when you run these scripts it can take 8 hours or later to see results in DMVs and Azure Portal.
+> You can at a later date use the AdventureWorksLT sample with your own Azure SQL Database deployment and use the scripts in the *04-Performance\tuning_recommendations* folder to see this example. It is important to note that when you run these scripts it can take 8 hours or more to see results in DMVs and Azure Portal.
 
 :::image type="content" source="../media/9-index-recommendation-notification.png" alt-text="Index_Recommendation_Notification":::
 
@@ -62,7 +62,7 @@ Automatic Tuning options can be set at the Database Server or database level.  I
 
 You can also view automatic tuning options through the DMV **sys.database_automatic_tuning_options**.
 
-Recommendations and automation for indexes and parameter sensitive plans are not available for Azure SQL Database Managed Instance or SQL Server (Automatic Plan Correction is available).
+Recommendations and automation for indexes and parameter sensitive plans are not available for Azure SQL Managed Instance or SQL Server (Automatic Plan Correction is available).
 
 If you click on the recommended index you will get more details about the specific index.
 

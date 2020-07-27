@@ -14,7 +14,7 @@ Currently, the Tempdb Metadata Optimization feature in SQL Server 2019, which ca
 
 ## Database configuration
 
-Database configuration is most commonly done with the T-SQL ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION statements. Many of the configuration options for performance are available for Azure SQL. Consult the ALTER DATABASE T-SQL reference for the differences between SQL Server, Azure SQL Database, and Azure SQL Managed Instance.
+Database configuration is most commonly done with the T-SQL ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION statements. Many of the configuration options for performance are available for Azure SQL. Consult the ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION T-SQL reference for the differences between SQL Server, Azure SQL Database, and Azure SQL Managed Instance.
 
 For performance, one option that is not available to change is the recovery model of the database. The default is full recovery and cannot be modified. This ensures your database can meet Azure service level agreements (SLAs). Therefore, minimal logging for bulk operations is not supported. Minimal logging for bulk operations is supported for tempdb.
 
@@ -22,7 +22,7 @@ For performance, one option that is not available to change is the recovery mode
 
 SQL Server professionals often use files and filegroups to improve I/O performance through physical file placement. Azure SQL does not allow users to place files on specific disk systems. However, Azure SQL has resource commitments for I/O performance with regards to rates, IOPS, and latencies so abstracting the user from physical file placement can be a benefit.
 
-Azure SQL Database only has one database file (Hyperscale typically has several) and the size is configured through Azure interfaces. There is no functionality to create additional files.
+Azure SQL Database only has one database file (Hyperscale typically has several) and the ,maximum size is configured through Azure interfaces. There is no functionality to create additional files.
 
 Azure SQL Managed Instance supports adding database files and configuring sizes but not physical placement of files. The number of files and file sizes for Azure SQL Managed Instance can be used to improve I/O performance. In addition, user defined filegroups are supported for Azure SQL Managed Instance for manageability purposes.
 

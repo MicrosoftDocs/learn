@@ -19,7 +19,7 @@ quiz:
       choices:
       - content: "Automated statistics to improve inefficient query plans"
         isCorrect: false
-        explanation: "Statistics can be updated automatically with Azure SQL but that is part of IQP"
+        explanation: "Statistics can be updated automatically with Azure SQL but that is not part of IQP"
       - content: "Background tasks using the Query Store to fix inefficient query plans"
         isCorrect: false
         explanation: "IQP is built into the query processor and does not run through background tasks"
@@ -47,4 +47,4 @@ quiz:
         explanation: "Automatic Tuning does not look at query plan details"
       - content: "Extended Events traces of query plan information over time"
         isCorrect: false
-        explanation: "Automatic Tuning does not use extended events"
+        explanation: "Automatic Tuning does not use extended events to look at query plan details"

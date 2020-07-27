@@ -1,4 +1,4 @@
-Monitoring and troubleshooting is a key element to deliver consistent performance. Azure SQL has the same tools and features as SQL Server to monitor and troubleshoot performance plus additional capabilities. This includes features like Dynamic Management Views (DMV), Extended Events, and Azure Monitor. It is also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL like high CPU or resource wait types.
+Monitoring and troubleshooting is a key element to deliver consistent performance. Azure SQL has the same tools and features as SQL Server to monitor and troubleshoot performance plus additional capabilities. This includes features like Dynamic Management Views (DMV), Extended Events, and Azure Monitor. It is also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL like high CPU or waiting on a resource.
 
 ## Tools and capabilities to monitor performance
 
@@ -30,7 +30,7 @@ Query Store is a historical record of performance execution for queries stored i
 
 ### Performance Visualizations
 
-For Azure SQL Database, we have integrated Query Store performance information into the Azure Portal through visualizations. This way you can see some of the same information for Query Store as you would with a client tool like SSMS by just using the Azure Portal with an option called **Query Performance Insight**.
+For Azure SQL Database, we have integrated Query Store performance information into the Azure Portal through visualizations. This way you can see some of the same information for Query Store as you would with a client tool like SSMS by just using the Azure Portal options called **Performance Overview** and **Query Performance Insight**.
 
 ## Dynamic Management Views (DMV) details
 
@@ -211,10 +211,10 @@ If you use a Business Critical (BC) service tier you may *unexpectedly* see the 
 - HADR_DATABASE_FLOW_CONTROL
 - HADR_THROTTLE_LOG_RATE_SEND_RECV
 
-Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). (BC) tiers use AG technology behind the scenes to implement SLA and availability features of a BC service tier so these wait types are expected (long wait times though may indicate a bottleneck).
+Even though these waits may not slow down your application you may not be expecting to see these since they are specific to using an Always On Availability Group (AG). (BC) tiers use AG technology behind the scenes to implement SLA and availability features of a BC service tier so these wait types are expected (long wait times though may indicate a bottleneck such as I/O latency or replica behind).
 
 #### Hyperscale
 
-The Hyperscale architecture can result in some unique wait types that are prefixed with **RBIO**. In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
+The Hyperscale architecture can result in some unique wait types that are prefixed with **RBIO** (a possible indication of log governance). In addition, DMVs, catalog views, and Extended Events have been enhanced to show metrics for Page Server reads.
 
 You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL using the tools and knowledge you have gained in this unit.

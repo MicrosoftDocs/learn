@@ -10,7 +10,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
   
     For Azure, we can use ALTER DATABASE, az cli, or the portal to increase CPU capacity with no database migration on the part of the user.
   
-1. Using the Azure Portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment. The Pricing tier is also known as the service tier.
+1. Using the Azure Portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment. The Pricing tier allows you to change the service tier and number of vCores.
   
     :::image type="content" source="../media/7-azure-portal-change-tier.png" alt-text="Azure_Portal_Change_Tier":::
   
@@ -25,6 +25,8 @@ To scale performance for a problem that appears to be a CPU capacity problem you
     ```sql
     EXEC sp_query_store_flush_db;
     ```
+
+    Execute this T-SQL batch.
 
 1. Open the script  **get_service_objective.sql** in SSMS. Your query editor window should look like the following:
 
@@ -51,7 +53,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     When you view the ALTER DATABASE documentation, notice the ability to click on your target SQL Server deployment to get the right syntax options. Click on SQL Database single database/elastic pool to see the options for Azure SQL Database. To match the compute scale you found in the portal you need the service objective **'GP_Gen5_8'**.
 
-1. Modify the service objective for the database to scale more CPUs. Open the script **modify_service_objective.sql** in SSMS. Your query editor window should look like the following:
+1. Modify the service objective for the database to scale more CPUs. Open the script **modify_service_objective.sql** in SSMS and execute the T-SQL batch. Your query editor window should look like the following:
   
     ```sql
     ALTER DATABASE AdventureWorks MODIFY (SERVICE_OBJECTIVE = 'GP_Gen5_8');

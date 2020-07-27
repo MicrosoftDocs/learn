@@ -9,7 +9,7 @@ Choosing the right deployment and service tier for Azure SQL Database or Managed
 - Azure SQL Database can support up to 128 vCores, 4TB Memory, and a 4TB Database size.
 - The Hyperscale deployment option supports up to 100TB databases.
 - Azure SQL Managed Instance can support up to 80 vCores, 400Gb Memory, and a 8TB Database size.
-- The # of vCores and service tier also affects other resource capacities (Ex. maximum transaction log rates)
+- The # of vCores and service tier also affects other resource capacities (Ex. maximum transaction log rates, IOPS, I/O latency, memory, ...)
 - Windows Job Objects are used to support certain resource limits such as memory. Use **sys.dm_os_job_object** to find true capacities for your deployment.
 
 ## Indexes

@@ -44,7 +44,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
     **Don't forget to note your password, unique ID, and server. You will need these throughout the module.**
 
-1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units.
+1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units (this is to be consistent with other units).
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -279,7 +279,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-workload-query-plan.png" alt-text="SSMS_Workload_Query_Plan":::
 
-    Given the small number of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself. You may see a warning in the plan for lack of statistics for one of the columns in the query for the Clustered Index Seek but it does not have a factor in overall performance.
+    Given the small number of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself. You may see a warning in the plan for lack of statistics for one of the columns in the query for the Clustered Index Seek but it does not have a factor in overall performance (and is not in the actual execution plan since statistics are created automatically for the column that generated the warning).
 
 1. Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. We know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status along with almost 100% CPU. Query Store comes with reports to look at possible performance bottlenecks to due waits on resources. Click on this report and hover over the bar chart. Your results should look like the following:
 
@@ -326,7 +326,7 @@ If you had configured Azure Monitor Logs with a Log Analytics workspace (this is
 ```kusto
 AzureMetrics
 | where MetricName == 'cpu_percent'
-| where Resource == "AdventureWorks"
+| where Resource == "ADVENTUREWORKS"
 | project TimeGenerated, Average
 | render columnchart
 ```
