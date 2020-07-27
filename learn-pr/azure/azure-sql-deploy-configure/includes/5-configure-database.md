@@ -32,7 +32,7 @@ Azure SQL Database does not support SQL Server Agent. However, you can use the E
 
 ### Azure Automation
 
-Azure automation is a service that allows you to orchestrate processes through a concept called a runbook. A runbook can be composed of code like Powershell or Python and can be directed to any Azure resource.
+Azure automation is a service that allows you to orchestrate processes through a concept called a runbook. A runbook can be composed of code like PowerShell or Python and can be directed to any Azure resource.
 
 ## Restricted configuration choices
 
