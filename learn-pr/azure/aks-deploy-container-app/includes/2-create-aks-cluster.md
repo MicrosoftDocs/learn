@@ -16,7 +16,7 @@ A cluster is node-based. There are two types of nodes in a Kubernetes cluster th
 
 ## Cluster architectures
 
-A cluster architecture allows you to conceptualize the number of control planes and node you'll deploy in your Kubernetes cluster.
+A cluster architecture allows you to conceptualize the number of control planes and nodes you'll deploy in your Kubernetes cluster.
 
 For example, the number of nodes in a cluster should always be more than two. When a node becomes unavailable, the Kubernetes scheduler will try to reschedule all the workloads running on this node onto the remaining nodes in the cluster.
 
@@ -52,7 +52,7 @@ These items include:
 
 ## Node pools
 
-You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size for each node in the node pool. Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool when needed. New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
+You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size for each node in the node pool. Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
 
 :::image type="content" source="../media/2-3-nodepool-diagram.png" alt-text="A diagram that depicts a Kubernetes cluster with two node pools. The first node pool uses NC24s_v2 VMs and the second node pool uses B2s standard VMs.":::
 
@@ -72,7 +72,7 @@ AKS allows you to overcome the complexity by enabling what is called HTTP applic
 
 Ingress Controllers provide the capability to deploy and expose your applications to the world without the need to configure network-related services.
 
-:::image type="content" source="../media/2-4-http-application-routing-diagram.png" alt-text="A HTTP Application Routing Diagram that shows how an Ingress controller that listens for ingress resources and creates DNS rules to make applications available to external clients.":::
+:::image type="content" source="../media/2-4-http-application-routing-diagram.png" alt-text="An HTTP Application Routing Diagram that shows how an Ingress controller that listens for ingress resources and creates DNS rules to make applications available to external clients.":::
 
 Ingress Controllers create a reverse-proxy server that automatically allows for all the requests to be served from a single DNS output. You don't have to create a DNS record every time a new service is deployed. The ingress controller will take care of it. When a new ingress is deployed to the cluster, the Ingress Controller creates a new record on an Azure-managed DNS zone and link it to an existing load balancer. This functionality allows for easy access to the resource through the Internet without the need for additional configuration.
 
