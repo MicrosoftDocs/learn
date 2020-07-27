@@ -24,7 +24,12 @@ into a file or some other location. If we omit the `location` in the argument,
 it will print the output in the console. We'll use this information to track
 the state of the qubit register.
 
->[!NOTE] In actual quantum hardware you won't be able to use a tool like `DumpMachine` to access the state of the qubit register without breaking the algorithm. Accessing the state of the qubit register will imply measuring it and therefore changing its state. In simulated virtual quantum computers, we can use tools like `DumpMachine`  and do tricks like these.
+> [!NOTE] 
+> In actual quantum hardware you won't be able to use a tool like `DumpMachine`
+> to access the state of the qubit register without breaking the algorithm.
+> Accessing the state of the qubit > register will imply measuring it and
+> therefore changing its state. In simulated virtual quantum computers, we can
+> use tools like `DumpMachine`  and do tricks like these.
 
 To add the library, we open `Microsoft.Quantum.Diagnostic` in the namespace:
 
