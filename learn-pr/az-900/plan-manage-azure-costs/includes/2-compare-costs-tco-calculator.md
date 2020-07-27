@@ -14,7 +14,7 @@ With the TCO Calculator, you enter the details of your on-premises workloads and
 
 The following image shows just one example:
 
-:::image type="content" source="../media/2-tco-report-bar-graphs.png" alt-text="Two bar graphs shown side-by-side that compare hardware, software, labor, and other costs in the datacenter versus on Azure.":::
+:::image type="content" source="../media/2-tco-report-bar-graphs.png" alt-text="Two bar graphs shown side by side that compare hardware, software, labor, and other costs in the datacenter versus on Azure.":::
 
 > [!NOTE]
 > You don't need an Azure subscription to work with the TCO Calculator.
@@ -33,28 +33,32 @@ First, you enter the specifications of your on-premises infrastructure into the 
 
 * **Servers**
 
-    This includes operating systems, virtualization methods, CPU cores, and memory (RAM).
+    This category includes operating systems, virtualization methods, CPU cores, and memory (RAM).
 * **Databases**
 
-    This includes database types, server hardware specifications, and the corresponding Azure service you would like to use, including the expected maximum concurrent user logins.
+    This category includes database types, server hardware, and the Azure service you would like to use, including the expected maximum concurrent user logins.
 * **Storage**
 
-    This includes storage type and capacity, including any backup or archive storage.
+    This category includes storage type and capacity, including any backup or archive storage.
 * **Networking**
 
-    This includes the amount of network bandwidth you currently consume in your on-premises environment.
+    This category includes the amount of network bandwidth you currently consume in your on-premises environment.
 
 ### Step 2: Adjust assumptions
 
-Next, you specify whether your current on-premises licenses are enrolled for Software Assurance (which can save you money by reusing them on Azure), and whether you need to replicate your storage to another Azure region for greater redundancy.
+Next, you specify whether your current on-premises licenses are enrolled for Software Assurance, which can save you money by reusing them on Azure. You also specify whether you need to replicate your storage to another Azure region for greater redundancy.
 
-Then, you can see the key operating cost assumptions across several different areas, which varies among teams and organizations. These costs have been certified by Nucleus Research, an independent research company. For example, these include electricity price per kilowatt hour (KWh), hourly pay rate for IT administration, and network maintenance cost as a percentage of network hardware and software costs.
+Then, you can see the key operating cost assumptions across several different areas, which vary among teams and organizations. These costs have been certified by Nucleus Research, an independent research company. For example, these include:
+
+* Electricity price per kilowatt hour (KWh).
+* Hourly pay rate for IT administration.
+* Network maintenance cost as a percentage of network hardware and software costs.
 
 To improve the accuracy of the TCO Calculator results, you adjust the values so that they match the costs of your current on-premises infrastructure.
 
 ### Step 3: View report
 
-Choose a time frame between 1 and 5 years; the TCO Calculator generates a report that's based on the information you've entered.
+Choose a time frame between one and five years; the TCO Calculator generates a report that's based on the information you've entered.
 
 :::image type="content" source="../media/2-tco-report-piecharts.png" alt-text="Two pie charts comparing total cost of ownership in the datacenter versus on Azure. For the datacenter, total cost of ownership is $777,258. The same workload on Azure is estimated at $107,569.":::
 
