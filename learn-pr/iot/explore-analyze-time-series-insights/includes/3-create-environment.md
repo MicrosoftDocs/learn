@@ -43,13 +43,11 @@ For this module, we'll enable both. Let's start with configuring the cold store.
 
 We'll now configure the data source used by Time Series Insights to populate the database. On **Event Source** tab of the **Create Time Series Insights environment**:
 
+1. In the **Source type** selector, Select _IoT Hub_.
 1. In the **Name** field, type a unique name.
-1. In the **Source type** dropdown, Select _IoT Hub_.
-1. In the **Select a hub** dropdown, leave the default value _Select Existing_.
 1. In the **Subscription** dropdown, leave the default value _Concierge Subscription_.
 1. In the **IoT Hub name** dropdown, select the IoT Hub created at the previous step.
 1. In the **IoT Hub access policy name** dropdown, select _iothubowner_.
-
 
 > [!NOTE]
 > The _iothubowner_ access policy gives a lot of rights.
