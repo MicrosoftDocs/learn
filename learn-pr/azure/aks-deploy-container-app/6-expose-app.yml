@@ -3,7 +3,7 @@ uid: learn.aks-deploy-container-app.6-expose-app
 metadata:
   title: Enable network access to an application
   description: To expose your application so others can use, you'll need to expose it using services and ingresses. Here you'll understand the concepts behind networking in Kubernetes.
-  ms.date: 07/25/2020
+  ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial

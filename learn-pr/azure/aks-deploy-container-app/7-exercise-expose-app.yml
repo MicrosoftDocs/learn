@@ -3,7 +3,7 @@ uid: learn.aks-deploy-container-app.7-exercise-expose-app
 metadata:
   title: Exercise - Enable network access to an application
   description: Here you'll put in practice all the concepts learned in the previous unit by exposing and configuring all the needed networking workloads that will allow others to access your Kubernetes application.
-  ms.date: 07/25/2020
+  ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial

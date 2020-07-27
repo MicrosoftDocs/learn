@@ -3,7 +3,7 @@ uid: learn.aks-deploy-container-app.2-create-aks-cluster
 metadata:
   title: Create an Azure Kubernetes Service cluster
   description: Your company is looking at ways to deploy your cloud-based video rendering service. You've chosen Azure Kubernetes Service (AKS) as your cloud-native development platform. However, before you can deploy any application, you need to create your AKS cluster. Here you'll review a few concepts that allow you to deploy a new AKS cluster successfully.
-  ms.date: 07/25/2020
+  ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial

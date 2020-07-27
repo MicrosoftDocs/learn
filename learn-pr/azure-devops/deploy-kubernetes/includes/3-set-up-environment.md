@@ -296,7 +296,7 @@ Here you create service connections that enable Azure Pipelines to access your A
     | Service connection name | *Container Registry Connection*          |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
-1. Select **OK**.
+1. Select **Save**.
 
 1. Select **New service connection**, then choose **Kubernetes**, then select **Next**.
 1. Near the top of the page, select **Azure Subscription**.
@@ -310,7 +310,7 @@ Here you create service connections that enable Azure Pipelines to access your A
     | Service connection name | *Kubernetes Cluster Connection*          |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
-1. Select **OK**.
+1. Select **Save**.
 
 ### Create the environment
 
