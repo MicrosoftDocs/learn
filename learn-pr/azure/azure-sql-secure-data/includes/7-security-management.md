@@ -6,7 +6,7 @@ Auditing helps maintain regulatory compliance, understand database activity, and
 
 Traditional SQL Server Auditing using T-SQL is only available (with some differences) in Azure SQL Managed Instance. The primary differences are:  
 
-* With `CREATE AUDIT`, you have new syntax `TO URL` and `TO EXTERNAL MONITOR` allow you to specify an Azure Blob storage container and enable Event Hub and Azure Monitor logs target, respectively.  
+* With `CREATE SERVER AUDIT`, you have new syntax `TO URL` and `TO EXTERNAL MONITOR` allow you to specify an Azure Blob storage container and enable Event Hub and Azure Monitor logs target, respectively.  
 * `TO FILE`, shutdown option, and `queue_delay=0` are not supported in Azure SQL.
 
 As an alternative to SQL Server Audit, in Azure SQL Database there is *Azure SQL Auditing*. It is powered by SQL Server Audit, and supports Audit Action Groups and Actions, like SQL Server. Azure SQL Auditing tracks database and server events and writes events to an audit log in either Azure Blob storage, Azure Monitor logs (also referred to as Log Analytics), or to an Event hub. If you point to an Azure Blob storage account, you can store and analyze your results in XEvents files. With Log Analytics, you unlock the ability to query your logs with Kusto Query Language (KQL) and leverage the auditing Log Analytics dashboards.

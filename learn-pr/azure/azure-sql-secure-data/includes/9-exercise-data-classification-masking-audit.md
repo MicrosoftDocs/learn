@@ -130,7 +130,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
     :::image type="content" source="../media/9-file-audit-signin.png" alt-text="Sign in to Azure":::  
 
-1. Select the subscription, storage account, and blob container you configured Audit logs to go to The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`.  
+1. Select the subscription, storage account, and blob container you configured Audit logs to go to. The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`.  
 
 1. Select your Azure SQL Database logical server and your AdventureWorks database. It should take everything from the current day up until the time you select the Database name. Select **OK**.
 
