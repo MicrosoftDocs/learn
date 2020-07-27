@@ -86,35 +86,33 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 >    az account set --subscription {your subscription ID}
 >    ```
 
-\***
-
 ### Set the default resource group
 
-1. Set the default resource group to the resource group created for you in the sandbox environment. This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
+Set the default resource group to the resource group created for you in the sandbox environment. This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
-    ```azurecli
-    az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
-    ```
+```azurecli
+az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
+```
 
 ### Deploy the template to Azure
 
-Here, you deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. However, you'll see a successful deployment.
+The following code deploys the template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. You will see a successful deployment.
 
-1. Deploy the template using Azure CLI commands in the Visual Studio Code terminal.
+Deploy the template using Azure CLI commands in the Visual Studio Code terminal.
 
-    ```azurecli
-    templateFile="azuredeploy.json"
-    today=$(date +"%d-%b-%Y")
-    DeploymentName="blanktemplate-"$today
+```azurecli
+templateFile="azuredeploy.json"
+today=$(date +"%d-%b-%Y")
+DeploymentName="blanktemplate-"$today
 
-    az deployment group create \
-     --name $DeploymentName \
-     --template-file $templateFile
-    ```
+az deployment group create \
+ --name $DeploymentName \
+ --template-file $templateFile
+```
 
-  In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure. Notice the deployment name is *blanktemplate* with the date as a suffix.
+The top section of this code sets Azure CLI variables, including the path to the template file that you're deploying and the name of the deployment. The command - `az deployment group create` deploys the template to Azure. Notice that the deployment name is *blanktemplate* with the date as a suffix.
 
-  You see ```Running...``` in the terminal.
+You see `Running...` in the terminal.
 
 ::: zone-end
 
