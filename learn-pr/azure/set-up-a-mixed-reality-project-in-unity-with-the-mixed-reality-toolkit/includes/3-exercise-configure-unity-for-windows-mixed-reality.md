@@ -61,8 +61,4 @@ Before you can get started creating an immersive experience for Windows Mixed Re
     - Check the Windows Mixed Reality **Enable Depth Sharing** checkbox
     - Set **Stereo Rendering Mode** to **Single Pass Instanced**.
 
-<<<<<<< HEAD
     :::image type="content" source="../media/optimize_xr_settings.png" alt-text="Screenshot of Project Settings with Player selected. Within Virtual Realty S D Ks, the Depth Format and Enable Depth Buffer Sharing fields are highlighted. Depth Format is set to 16 bit depth. Enabled Depth Buffer Sharing is checked. The Stereo Rendering Mode field is highlighted with Single Pass Instanced selected.":::
-=======
-    :::image type="content" source="../media/optimize_xr_settings.png" alt-text="Optimize XR Settings":::
->>>>>>> 650838121492dced42d8b4c26b173d6fda8326c3
