@@ -1,8 +1,8 @@
-### YamlMime:Module
 uid: learn.microservices-resiliency-aspnet-core
 metadata:
   title: Implement resiliency in a cloud-native ASP.NET Core microservice
-  description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
+  description: This module guides you through implementing resiliency in an
+    ASP.NET Core microservices app in Azure Kubernetes Service.
   ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie
@@ -10,35 +10,42 @@ metadata:
   ms.prod: learning-aspnetcore
 title: Implement resiliency in a cloud-native ASP.NET Core microservice
 summary: Learn how to make your app fault-tolerant with minimal impact on the user.
-abstract: |
+abstract: >
   In this module, you will:
+
   - Learn key resiliency concepts.
+
   - Implement failure handling code for HTTP requests in one microservice.
+
   - Deploy Linkerd onto an AKS cluster to implement an infrastructure-based resiliency solution.
-prerequisites: |
+prerequisites: >
   - Familiarity C# and ASP.NET Core development at the beginner level
+
   - Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
+
   - Conceptual knowledge of containers at the beginner level
+
   - Access to an Azure subscription with **Owner** privilege
 iconUrl: https://docs.microsoft.com/../media/learn/module.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- developer
+  - developer
 products:
-- dotnet
-- aspnet-core
-- dotnet-core
-- azure
-- azure-container-registry
-- azure-kubernetes-service
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-container-registry
+  - azure-kubernetes-service
 units:
-- learn.microservices-resiliency-aspnet-core.1-introduction
-- learn.microservices-resiliency-aspnet-core.2-environment-setup
-- learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
-- learn.microservices-resiliency-aspnet-core.4-implement-polly-resiliency
-- learn.microservices-resiliency-aspnet-core.5-implement-linkerd-resiliency
-- learn.microservices-resiliency-aspnet-core.6-knowledge-check
-- learn.microservices-resiliency-aspnet-core.7-summary
+  - learn.microservices-resiliency-aspnet-core.1-introduction
+  - learn.microservices-resiliency-aspnet-core.2-environment-setup
+  - learn.microservices-resiliency-aspnet-core.3-review-resiliency-concepts
+  - learn.microservices-resiliency-aspnet-core.4-verify-deployment
+  - learn.microservices-resiliency-aspnet-core.5-implement-polly-resiliency
+  - learn.microservices-resiliency-aspnet-core.6-implement-linkerd-resiliency
+  - learn.microservices-resiliency-aspnet-core.7-knowledge-check
+  - learn.microservices-resiliency-aspnet-core.8-summary
 badge:
   uid: learn.microservices-resiliency-aspnet-core.badge

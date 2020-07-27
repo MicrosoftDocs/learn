@@ -1,5 +1,4 @@
-### YamlMime:ModuleUnit
-uid: learn.microservices-resiliency-aspnet-core.4-implement-polly-resiliency
+uid: learn.microservices-resiliency-aspnet-core.5-implement-polly-resiliency
 metadata:
   title: Exercise - Implement resiliency with Polly
   description: Implement a resiliency handler with Polly.
@@ -11,4 +10,4 @@ metadata:
 title: Exercise - Implement resiliency with Polly
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-implement-polly-resiliency.md)]
+  [!include[](includes/5-implement-polly-resiliency.md)]
