@@ -213,10 +213,10 @@ In this exercise, you'll follow the steps that go along with the process above.
 1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Update it using this example as a reference and to the definition of `$before_error_time`. You also may want to subtract `.001` seconds, to ensure you restore to *before* the error occurred.  
 
     * Log Analytics format: `2020-07-24 08:06:24.386`
-    * Required format: `2020-07-10T24:06:24.385`  
+    * Required format: `2020-07-24T20:06:24.385`  
 
     ```powershell
-    $before_error_time ="2020-07-10T24:06:24.385"
+    $before_error_time ="2020-07-24T20:06:24.385"
     ```
 
 ### Restore the database and confirm missing data
