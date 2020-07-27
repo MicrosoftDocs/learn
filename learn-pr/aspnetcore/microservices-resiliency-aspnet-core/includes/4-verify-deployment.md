@@ -80,7 +80,7 @@ To configure a simulated failure, you need at least one item in the basket. Comp
 1. Select **APPLY**.
 1. You should receive a confirmation message with number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!** as shown in the next image.
 
-    ![](../media/configure-coupon-failures.png)
+    :::image type="content" source="../media/configure-coupon-failures.png" alt-text="configure coupon failures":::
 
 This configuration will make the next two requests for the *:::no-loc text="DISC-10":::* code to throw an exception.
 
@@ -96,7 +96,7 @@ Notice that you receive the error message immediately.
 
 If you check the log traces, you should see something like this:
 
-![](../media/non-resilient-failures.png)
+:::image type="content" source="../media/non-resilient-failures.png" alt-text="non-resilient failures":::
 
 In the preceding image, you can see that:
 

@@ -1,8 +1,8 @@
-Using a microservices app in the cloud offers many advantages. There are also several shortcomings. Transient infrastructure failures, mostly network-related, are a key problem that every cloud app must handle.
+Cloud-hosted, microservices-based apps rely on communications with other systems across unreliable networks. Such systems may be unavailable or unreachable because of transient failures. Failures include network outages, request timeouts, and components that are offline, under excessive load, or otherwise unresponsive. Transient infrastructure failures, mostly network-related, are a problem that every cloud app must handle.
 
 This module focuses on resiliency. Resiliency is about how to make your app fault-tolerant, in a way that has the lowest possible impact on the user. The following resilience approaches will be explored:
 
-* Using a library-based approach with Polly
+* Using a code-based approach with Polly
 * Using an infrastructure-based approach with Linkerd
 
 You'll modify the app to include some Polly resiliency handling policies in a microservice. You'll also reconfigure your Azure Kubernetes Service (AKS) deployment, without changing any code, to implement a Linkerd-based solution.

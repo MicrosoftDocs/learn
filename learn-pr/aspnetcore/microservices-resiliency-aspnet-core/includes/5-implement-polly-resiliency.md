@@ -2,8 +2,6 @@ In this exercise, you'll implement a resiliency handler with Polly. The initial 
 
 In this exercise, you will:
 
-<!-- delete the following bullet -->
-- Explore the app's response when resiliency isn't implemented.
 - Update the app's code to implement failure handling using Polly.
 - Create an ACR instance and deploy the updated app to AKS.
 - Explore the system response under failure after implementing resiliency.
@@ -19,7 +17,7 @@ When validating a discount coupon, the request goes to the web shopping aggregat
 
 In this case, you'll implement two policies to handle failure: the Retry and Circuit Breaker policies from the previous unit.
 
-Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical solutions to handle failures. Complete the following steps to implement failure handling for the coupon service:
+Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. Complete the following steps to implement failure handling for the coupon service:
 
 1. Run the following command:
 
@@ -98,7 +96,7 @@ Complete the following steps to deploy the changes that you've implemented:
     - Permits the AKS cluster to retrieve images from the ACR instance.
     - Generates a variation of the following output:
 
-        ![](../media/create-acr.png)
+        :::image type="content" source="../media/create-acr.png" alt-text="Create ACR instance":::
 
 1. Run the following script to publish the updated image to ACR:
 
@@ -108,11 +106,11 @@ Complete the following steps to deploy the changes that you've implemented:
 
     The preceding script builds and publishes the updated image to ACR. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build the `webshoppingagg` image and push it to the ACR instance. You'll see a variation of the following output:
 
-    ![](../media/build-to-acr.png)
+    :::image type="content" source="../media/build-to-acr.png" alt-text="Building and publishing Docker images to ACR":::
 
     And this when finished:
 
-    ![](../media/image-built-and-published.png)
+    :::image type="content" source="../media/image-built-and-published.png" alt-text="Docker images published to ACR":::
 
 1. Run the following script to deploy the updated image in ACR to AKS:
 
@@ -122,7 +120,7 @@ Complete the following steps to deploy the changes that you've implemented:
 
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
 
-    ![](../media/update-aks.png)
+    :::image type="content" source="../media/update-aks.png" alt-text="Reinstall Helm chart":::
 
 ## Explore the system response when implementing resiliency
 
@@ -134,7 +132,7 @@ Consider the situation in which you configure the same two coupon failures with 
 
 If you check the log traces, you should see something like this:
 
-![](../media/configure-and-retry-logs.png)
+:::image type="content" source="../media/configure-and-retry-logs.png" alt-text="log traces":::
 
 In the preceding image, you can see:
 
@@ -145,7 +143,7 @@ In the preceding image, you can see:
 
 For this case, you'll configure the code for 20 failures, using *:::no-loc text="FAIL 20 DISC-10":::*, as shown next:
 
-![](../media/configure-severe-failure.png)
+:::image type="content" source="../media/configure-severe-failure.png" alt-text="configure a severe failure":::
 
 Now enter the code *:::no-loc text="DISC-10":::* again and select **APPLY**. You'll have to wait about 20 seconds to get the error 500 message. When you do, select **APPLY** again. After the second failure, select **APPLY** for the third time.
 
@@ -153,7 +151,7 @@ On the third try, notice that the error 500 message came in much faster. That's 
 
 You'll see this clearly in the log traces, as show next:
 
-![](../media/severe-failure-logs.png)
+:::image type="content" source="../media/severe-failure-logs.png" alt-text="severe failures in log traces":::
 
 In the image above, you see that:
 
@@ -161,7 +159,7 @@ In the image above, you see that:
 - The next time you try, you validate the code, you get the error 500 message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
 - If you check the details on this last trace, you should something like this:
 
-    ![](../media/severe-failure-log-detail.png)
+    :::image type="content" source="../media/severe-failure-log-detail.png" alt-text="severe failure log detail":::
 
 Where you can see that the last trace has the "The circuit is now open..." message.
 

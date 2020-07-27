@@ -1,4 +1,4 @@
-Resiliency is the ability to recover from transient failures and restore normal function with minimal user impact. Failures are unavoidable and your app must respond in a way that minimizes downtime and data loss. You should strive to handle failures gracefully without any user impact.
+Resiliency is the ability to recover from transient failures and restore normal function with minimal user impact. Failures are unavoidable, and your app must respond in a way that minimizes downtime and data loss. You should handle failures gracefully without impacting the user.
 
 Microservice environments are volatile. Consequently, microservice apps should be designed to handle partial failures, such as code exceptions, network outages, unresponsive server processes, and hardware failures. Even normal activities, such as moving containers to a different node within a Kubernetes cluster, can cause transient failures.
 
@@ -12,7 +12,7 @@ There are two fundamental approaches to resiliency: code and infrastructure. Eac
 
 [Polly](https://github.com/App-vNext/Polly) is a .NET library for resilience and transient failure handling. It is used to build failure-handling code with a fluent, easy-to-understand syntax. There are several ([resilience policies](https://github.com/App-vNext/Polly#resilience-policies)) that define failure-handling behavior. In this module, you'll apply the *Retry* and *Circuit-breaker* policies to HTTP client operations.
 
-Resiliency with Polly is usually defined in code, but startup-time configuration for some parameters is supported.
+Resiliency with Polly is defined in code, but startup-time configuration for some parameters is supported.
 
 ### Retry policy
 
