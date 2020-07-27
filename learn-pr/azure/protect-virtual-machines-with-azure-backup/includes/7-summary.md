@@ -10,6 +10,7 @@ You can now use Azure Backup to help protect your environment against data loss 
 
 For more information on Azure Backup, see the following articles:
 
+- [Configure Azure Backup reports](https://docs.microsoft.com/azure/backup/configure-reports)
 - [Latest Azure Backup pricing and availability](https://azure.microsoft.com/pricing/details/backup)
 - [Documentation for the Azure Backup service](https://docs.microsoft.com/azure/backup/)
 - [Azure Backup Server protection matrix](https://docs.microsoft.com/azure/backup/backup-mabs-protection-matrix)

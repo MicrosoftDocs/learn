@@ -44,18 +44,18 @@ From Visual Studio Code, go to the terminal. Then run these commands. Replace th
 
 ```bash
 driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\netcoreapp3.1"
-export ChromeWebDriver=driverDir
-export EdgeWebDriver=driverDir
-export GeckoWebDriver=driverDir
+export ChromeWebDriver=$driverDir
+export EdgeWebDriver=$driverDir
+export GeckoWebDriver=$driverDir
 ```
 
 # [macOS](#tab/export-macos)
 
 ```bash
 driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/netcoreapp3.1"
-export ChromeWebDriver=driverDir
-export EdgeWebDriver=driverDir
-export GeckoWebDriver=driverDir
+export ChromeWebDriver=$driverDir
+export EdgeWebDriver=$driverDir
+export GeckoWebDriver=$driverDir
 ```
 
 ---
