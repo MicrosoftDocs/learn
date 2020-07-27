@@ -163,17 +163,14 @@ Co-management adds new functionality to your existing Configuration Manager depl
 When you enroll existing Configuration Manager clients in co-management, you gain the following immediate value:  
 
 - Conditional access with device compliance  
-
 - Intune-based remote actions, for example: restart, remote control, or factory reset
-
 - Centralized visibility of device health  
-
 - Link users, devices, and apps with Azure Active Directory (Azure AD)  
-
 - Modern provisioning with Windows Autopilot  
-
 - Remote actions
 
+
+<!-- >
 
 NOTES:
 
@@ -188,7 +185,7 @@ MEM provides a means to modern management. Modern management is the following:
 
  It provides an improved end user experience in a single console for simplified IT administration and operations management. MEM helps administrators protect corporate resources. 
 
-<!-- 
+
 Also, see:
 
 https://docs.microsoft.com/learn/modules/introduction-to-modern-management-in-microsoft-365/2-benefits-modern-management

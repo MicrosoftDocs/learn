@@ -27,5 +27,5 @@ https://docs.microsoft.com/mem/intune/protect/certificates-configure
 <!--
 https://docs.microsoft.com/mem/intune/configuration/device-profiles#endpoint-protection
 
-https://docs.microsoft.com/en-us/mem/configmgr/protect/deploy-use/endpoint-protection 
+https://docs.microsoft.com/mem/configmgr/protect/deploy-use/endpoint-protection 
  -->

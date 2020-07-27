@@ -39,9 +39,16 @@ App policies allow you to perform several different types of actions to configur
 
 The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage devices enrolled in Intune, enforce compliance with policies, and protect your organization's data.</br></br>
 
+<!--
 > [!VIDEO https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager]
+-->
 
-## Protect your organization’s data
+<div align=”center”>
+<iframe allowfullscreen width="95%" height="450" src="https://mslearn.cloudguides.com/guides/Manage%20devices%20with%20Microsoft%20Endpoint%20Manager" frameborder="1" scrolling="no"/></iframe>
+</div>
+
+
+## Manage and protect your organization’s data
 <!--
 https://docs.microsoft.com/mem/intune/protect/data-leak-prevention
 -->
