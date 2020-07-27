@@ -2,7 +2,7 @@
 uid: learn.aks-deploy-container-app.3-exercise-create-aks-cluster
 metadata:
   title: Exercise - Create an Azure Kubernetes Service cluster
-  description: Here you'll create an Azure Kubernetes Service cluster through the Azure CLI and learn all the options needed to start your development.
+  description: In this exercise, you'll create an Azure Kubernetes Service cluster using Azure CLI and configure access from the Cloud Shell to your new cluster using Kubectl.
   ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
