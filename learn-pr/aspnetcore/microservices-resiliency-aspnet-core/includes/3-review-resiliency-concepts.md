@@ -47,6 +47,6 @@ With a code-based approach, such as with Polly, you:
 
 There's no reasonable way to respond to an infrastructure failure in your app's code. Consider the hundreds or thousands of requests that are being processed simultaneously. It's not difficult to imagine a situation in which even a retry with exponential back-off (times request count) can flood a service.
 
-Infrastructure-based approaches like Linkerd don't know anything about app internals. For example, complex database transactions are not visible to Linkerd. Such transactions can be protected from failure with a Polly strategy.
+Infrastructure-based approaches like Linkerd don't know anything about app internals. For example, complex database transactions are not visible to Linkerd. Such transactions can be protected from failure with Polly.
 
 In upcoming units, you'll implement resilience for the coupon service with Polly and Linkerd.

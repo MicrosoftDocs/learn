@@ -43,14 +43,14 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **General application status** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
 
-    <!-- :::image type="content" source="../media/4-review-code-verify-deployment/health-check.png" alt-text="Health check page" border="true" lightbox="../media/4-review-code-verify-deployment/health-check.png"::: -->
+    :::image type="content" source="../media/4-verify-deployment/health-check.png" alt-text="Health check page" border="true" lightbox="../media/4-verify-deployment/health-check.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    <!-- :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa.png" alt-text="eShop SPA" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa.png"::: -->
+    :::image type="content" source="../media/4-verify-deployment/eshop-spa.png" alt-text="eShop SPA" border="true" lightbox="../media/4-verify-deployment/eshop-spa.png":::
 
 1. Complete a purchase as follows:
     1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
@@ -58,7 +58,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
 
-    <!-- :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png"::: -->
+    :::image type="content" source="../media/4-verify-deployment/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/4-verify-deployment/eshop-spa-shopping-bag.png":::
 
 ## Explore the response of a non-resilient app
 
@@ -80,7 +80,7 @@ To configure a simulated failure, you need at least one item in the basket. Comp
 1. Select **APPLY**.
 1. You should receive a confirmation message with number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!** as shown in the next image.
 
-    :::image type="content" source="../media/configure-coupon-failures.png" alt-text="configure coupon failures":::
+    :::image type="content" source="../media/4-verify-deployment/configure-coupon-failures.png" alt-text="configure coupon failures":::
 
 This configuration will make the next two requests for the *:::no-loc text="DISC-10":::* code to throw an exception.
 
@@ -96,7 +96,7 @@ Notice that you receive the error message immediately.
 
 If you check the log traces, you should see something like this:
 
-:::image type="content" source="../media/non-resilient-failures.png" alt-text="non-resilient failures":::
+:::image type="content" source="../media/4-verify-deployment/non-resilient-failures.png" alt-text="non-resilient failures":::
 
 In the preceding image, you can see that:
 

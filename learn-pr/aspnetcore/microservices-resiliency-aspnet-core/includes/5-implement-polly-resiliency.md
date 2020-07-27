@@ -96,7 +96,7 @@ Complete the following steps to deploy the changes that you've implemented:
     - Permits the AKS cluster to retrieve images from the ACR instance.
     - Generates a variation of the following output:
 
-        :::image type="content" source="../media/create-acr.png" alt-text="Create ACR instance":::
+        :::image type="content" source="../media/5-implement-polly-resiliency/create-acr.png" alt-text="Create ACR instance":::
 
 1. Run the following script to publish the updated image to ACR:
 
@@ -106,11 +106,11 @@ Complete the following steps to deploy the changes that you've implemented:
 
     The preceding script builds and publishes the updated image to ACR. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build the `webshoppingagg` image and push it to the ACR instance. You'll see a variation of the following output:
 
-    :::image type="content" source="../media/build-to-acr.png" alt-text="Building and publishing Docker images to ACR":::
+    :::image type="content" source="../media/5-implement-polly-resiliency/build-to-acr.png" alt-text="Building and publishing Docker images to ACR":::
 
     And this when finished:
 
-    :::image type="content" source="../media/image-built-and-published.png" alt-text="Docker images published to ACR":::
+    :::image type="content" source="../media/5-implement-polly-resiliency/image-built-and-published.png" alt-text="Docker images published to ACR":::
 
 1. Run the following script to deploy the updated image in ACR to AKS:
 
@@ -120,7 +120,7 @@ Complete the following steps to deploy the changes that you've implemented:
 
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
 
-    :::image type="content" source="../media/update-aks.png" alt-text="Reinstall Helm chart":::
+    :::image type="content" source="../media/5-implement-polly-resiliency/update-aks.png" alt-text="Reinstall Helm chart":::
 
 ## Explore the system response when implementing resiliency
 
@@ -132,7 +132,7 @@ Consider the situation in which you configure the same two coupon failures with 
 
 If you check the log traces, you should see something like this:
 
-:::image type="content" source="../media/configure-and-retry-logs.png" alt-text="log traces":::
+:::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces":::
 
 In the preceding image, you can see:
 
@@ -143,7 +143,7 @@ In the preceding image, you can see:
 
 For this case, you'll configure the code for 20 failures, using *:::no-loc text="FAIL 20 DISC-10":::*, as shown next:
 
-:::image type="content" source="../media/configure-severe-failure.png" alt-text="configure a severe failure":::
+:::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure":::
 
 Now enter the code *:::no-loc text="DISC-10":::* again and select **APPLY**. You'll have to wait about 20 seconds to get the error 500 message. When you do, select **APPLY** again. After the second failure, select **APPLY** for the third time.
 
@@ -151,7 +151,7 @@ On the third try, notice that the error 500 message came in much faster. That's 
 
 You'll see this clearly in the log traces, as show next:
 
-:::image type="content" source="../media/severe-failure-logs.png" alt-text="severe failures in log traces":::
+:::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces":::
 
 In the image above, you see that:
 
@@ -159,7 +159,7 @@ In the image above, you see that:
 - The next time you try, you validate the code, you get the error 500 message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
 - If you check the details on this last trace, you should something like this:
 
-    :::image type="content" source="../media/severe-failure-log-detail.png" alt-text="severe failure log detail":::
+    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail":::
 
 Where you can see that the last trace has the "The circuit is now open..." message.
 
