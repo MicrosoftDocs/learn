@@ -15,7 +15,7 @@ When validating a discount coupon, the request goes to the web shopping aggregat
 - Sends another HTTP request to the coupon service to get the required information.
 - Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](http://www.thepollyproject.org).
 
-In this case, you'll implement two policies to handle failure: the Retry and Circuit Breaker policies from the previous unit.
+In this case, you'll implement a Retry and a Circuit Breaker policy to handle failure.
 
 Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. Complete the following steps to implement failure handling for the coupon service:
 
@@ -28,13 +28,8 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
     The preceding command installs the Polly `IHttpClientFactory` integration package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
 
-1. Configure the `HttpClient` to apply Polly policies.
-
-    To implement this, you'll use the `AddHttpClient` extension method to register a specific configuration for the `HttpClient` that will be injected into `CouponService`.
-
-    Apply the following changes to the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
-
-    1. Replace the comment `// Add the GetRetryPolicy method` with the following code:
+1. Configure the `HttpClient` to apply Polly policies. To implement this, you'll use the `AddHttpClient` extension method to register a specific configuration for the `HttpClient` that will be injected into `CouponService`.
+    1. In the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file, replace the comment `// Add the GetRetryPolicy method` with the following code:
 
         ```csharp
         public static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy() =>
@@ -46,7 +41,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
                 });
         ```
 
-    1. Replace the `// Add the GetCircuitBreakerPolicy method` comment with the following code:
+    1. Also in the *ServiceCollectionExtensions.cs* file, replace the comment `// Add the GetCircuitBreakerPolicy method` with the following code:
 
         ```csharp
         public static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy() =>
@@ -141,26 +136,26 @@ In the preceding image, you can see:
 
 ### Circuit breaker
 
-For this case, you'll configure the code for 20 failures, using *:::no-loc text="FAIL 20 DISC-10":::*, as shown next:
+For this case, you'll configure the code for 20 failures, using *:::no-loc text="FAIL 20 DISC-10":::*:
 
 :::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure":::
 
 Now enter the code *:::no-loc text="DISC-10":::* again and select **APPLY**. You'll have to wait about 20 seconds to get the error 500 message. When you do, select **APPLY** again. After the second failure, select **APPLY** for the third time.
 
-On the third try, notice that the error 500 message came in much faster. That's because the circuit breaker was activated. If you select **APPLY** once again, you'll get the error message immediately.
+On the third try, notice that the HTTP 500 error message came in much faster. That's because the circuit breaker was activated. If you select **APPLY** once again, you'll get the error message immediately.
 
-You'll see this clearly in the log traces, as show next:
+You'll see this clearly in the log traces:
 
 :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces":::
 
-In the image above, you see that:
+In the preceding image, notice that:
 
-- After waiting for 7.6 seconds (#1), you get the error 500 message with the retry policy (#2) but
-- The next time you try, you validate the code, you get the error 500 message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
-- If you check the details on this last trace, you should something like this:
+- After waiting for 7.6 seconds (#1), you get the HTTP 500 error message with the retry policy (#2) but
+- The next time you try, you validate the code, you get the HTTP 500 error message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
+- If you check the details on this last trace, you should see a variation of the following output:
 
     :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail":::
 
-Where you can see that the last trace has the "The circuit is now open..." message.
+    Notice that the last trace has the "The circuit is now open..." message.
 
 Let's move on to the deployment of Linkerd in the next unit.
