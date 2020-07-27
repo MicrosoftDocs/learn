@@ -3,7 +3,7 @@ uid: learn.azure-sql-high-availability
 metadata:
   title: Azure SQL - Deploy highly available solutions
   description: Azure SQL - Deploy highly available solutions
-  ms.date: 07/31/2020
+  ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Download and install [the latest version of SSMS](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15?azure-portal=true)
   - Download and install [the latest version on Azure Data Studio](https://docs.microsoft.com/sql/azure-data-studio/download-azure-data-studio?view=sql-server-ver15?azure-portal=true)
   - Download the [zip file](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/archive/master.zip?azure-portal=true) or clone the repository from [GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals?azure-portal=true) to access lab files. Extract the contents of the zip file to something similar to `C:\Users\[YourUsername]\` so you can access it easily in the exercises.  
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/azure-sql-high-availability.svg
 levels:
 - beginner
 roles:
@@ -30,6 +30,7 @@ roles:
 - database-administrator
 products:
 - azure
+- azure-sql-database
 units:
 - learn.azure-sql-high-availability.1-introduction
 - learn.azure-sql-high-availability.2-backup-restore
