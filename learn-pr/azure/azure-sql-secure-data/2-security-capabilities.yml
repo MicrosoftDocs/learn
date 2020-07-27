@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/2-security-capabilities.md)]
 quiz:
-    title: Securing your network
+    title: Knowledge Check
     questions:
     - content: "What is the recommended way to protect your network for Azure SQL Database?"
       choices:

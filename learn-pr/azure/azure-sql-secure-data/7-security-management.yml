@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/7-security-management.md)]
 quiz:
-    title: Security management
+    title: Knowledge Check
     questions:
     - content: "Which of the following T-SQL for auditing is not supported in Azure SQL Managed Instance?"
       choices:

@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/6-data-protection.md)]
 quiz:
-    title: Data protection
+    title: Knowledge Check
     questions:
     - content: "How can you manage who has access to view masked data?"
       choices:
