@@ -1,8 +1,8 @@
-In this exercise you will learn how to monitor and troubleshoot a performance problem with Azure SQL using familiar and new tools and capabilities.
+In this exercise, you will learn how to monitor and troubleshoot a performance problem with Azure SQL using familiar and new tools and capabilities.
 
 ### Set up: Use scripts to deploy Azure SQL Database
 
-In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script you will be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
+In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, you will be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
 This script should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
 
@@ -29,7 +29,7 @@ This script should take 3-5 minutes to complete. Make sure to note your password
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud shell.  You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
+1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following script in the Azure Cloud shell.  You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -87,7 +87,7 @@ This script should take 3-5 minutes to complete. Make sure to note your password
 
 1. On your local device, open SSMS and create a new connection to your logical server.  
 
-    For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell e.g. *aw-server`<unique ID>`.database.windows.net*.
+    For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell, for example *aw-server`<unique ID>`.database.windows.net*.
 
     Change the authentication to **SQL Server Authentication**, and input the corresponding login **cloudadmin** and password you provided for the script.  
 
@@ -166,7 +166,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
     .\sqlworkload.cmd
     ```
 
-    This script will use 10 concurrent users running the workload query 2 times. Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server.
+    This script will use 10 concurrent users running the workload query two times. Notice the script itself runs a single batch but loops 10,000 times. It also assigned the result to a variable therefore eliminating almost all result set traffic to the client. This is not necessary but helps show a "pure" CPU workload run all on the server.
 
     > [!TIP]
     > If you are not seeing CPU usage behavior with this workload for your environment you can adjust the **-n parameter** for number of users and **-r parameter** for iterations.
@@ -206,7 +206,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
 
 Let's now use the DMV queries you loaded earlier to observe performance.
 
-1. Run the query in SSMS you previously loaded to monitor dm_exec_requests (**dmexecrequests.sql**) to observe active requests. Run this query 5 or 6 times and observe some of the results
+1. Run the query in SSMS you previously loaded to monitor dm_exec_requests (**dmexecrequests.sql**) to observe active requests. Run this query five or six times and observe some of the results
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -223,7 +223,7 @@ Let's now use the DMV queries you loaded earlier to observe performance.
 
     Leave this query editor window open as you will run it again in the next exercise.
 
-1. Run the query in SSMS you previously loaded to monitor **sys.dm_db_resource_stats** (**dmdbresourcestats.sql**). Run the query to see the results of this DMV 3 or 4 times.
+1. Run the query in SSMS you previously loaded to monitor **sys.dm_db_resource_stats** (**dmdbresourcestats.sql**). Run the query to see the results of this DMV three or four times.
 
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;
@@ -231,21 +231,21 @@ Let's now use the DMV queries you loaded earlier to observe performance.
 
     This DMV records of snapshot of resource usage for the database every 15 seconds (kept for 1 hour).  You should see the column **avg_cpu_percent** close to 100% for several of the snapshots. (at least in the high 90% range). This is a symptom of a workload pushing the limits of CPU resources for the database.
 
-    For a SQL Server on-premises environment you would typically use a tool specific to the Operating System like Windows Performance Monitor to track overall resource usage such a CPU. If you ran this example on a on-premises SQL Server or SQL Server in a Virtual Machine with 2 CPUs, you would see near 100% CPU utilization on the server.
+    For a SQL Server on-premises environment, you would typically use a tool specific to the Operating System like Windows Performance Monitor to track overall resource usage such a CPU. If you ran this example on a on-premises SQL Server or SQL Server in a Virtual Machine with 2 CPUs, you would see near 100% CPU utilization on the server.
 
     > [!NOTE]
     > Another DMV called, **sys.resource_stats**, can be run in the context of the master database of the Azure Database Server to see resource usage for all Azure SQL Database databases associated with the server. This view is less granular and shows resource usage every 5 minutes (kept for 14 days).
 
     Leave this query editor window open as you will run it again in the next exercise.
 
-1. Let the workload complete and take note of its overall duration. When the workload completes you should see results like the following output and a return to the command prompt
+1. Let the workload complete and take note of its overall duration. When the workload completes, you should see results like the following output and a return to the command prompt
 
     ```output
     [datetime] [ostress PID] Total IO waits: 0, Total IO wait time: 0 (ms)
     [datetime] [ostress PID] OSTRESS exiting normally, elapsed time: 00:01:22.637
     ```
 
-    Your duration time may vary but this typically takes at least 1-3 minutes. Make sure to let this run to completion. When the workload is done you will be put back at the command prompt.
+    Your duration time may vary but this typically takes at least 1-3 minutes. Make sure to let this run to completion. When the workload is done, you will be put back at the command prompt.
 
 ## Use the Query Store for further analysis
 
@@ -261,7 +261,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-top-query-report.png" alt-text="SSMS_QDS_Top_Query_Report":::
 
-    The query shown is the SQL query from the workload for customer sales. This report has 3 components: Queries with the high total duration (you can change the metric), the associated query plan and runtime statistics, and the associated query plan in a visual map.
+    The query shown is the SQL query from the workload for customer sales. This report has three components: Queries with the high total duration (you can change the metric), the associated query plan and runtime statistics, and the associated query plan in a visual map.
 
 1. Click on the bar chart for the query (the query_id may be different for your system), your results should look like the following image:
 
@@ -269,7 +269,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     You can see the total duration of the query and query text.
 
-1. Right of this bar chart is a chart for statistics for the query plan associated with the query. Hover over the dot associated with the plan. Your results should look like the following:
+1. Right of this bar chart is a chart for statistics for the query plan associated with the query. Hover over the dot associated with the plan. Your results should look like the following image:
 
     :::image type="content" source="../media/5-ssms-slow-query-stats.png" alt-text="SSMS_Slow_Query_Stats":::
 
@@ -285,7 +285,7 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-top-wait-stats.png" alt-text="SSMS_Top_Wait_Stats":::
 
-    You can see the top wait category is CPU (this is equivalent to the wait_type SOS_SCHEDULER_YIELD which can be seen in **sys.dm_os_wait_stats**) and the average wait time.
+    You can see the top wait category is CPU (this is equivalent to the wait_type SOS_SCHEDULER_YIELD, which can be seen in **sys.dm_os_wait_stats**) and the average wait time.
 
 1. Click on the CPU bar chart in the report. The top query waiting for CPU is the query from the workload we are using.
 
@@ -305,13 +305,13 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
     :::image type="content" source="../media/5-azure-portal-compute-slow-query.png" alt-text="Azure_Portal_Compute_Slow_Query":::
 
-    Notice in this example, the CPU utilization is near 100% for a recent time range. This chart will show resource usage (defaults to CPU and I/O) over the last hour and is refreshed continually. If you click on the chart you can customize the chart (Ex. bar chart) and look at other resource usage.
+    Notice in this example, the CPU utilization is near 100% for a recent time range. This chart will show resource usage (defaults to CPU and I/O) over the last hour and is refreshed continually. If you click on the chart, you can customize the chart (Ex. bar chart) and look at other resource usage.
 
-1. Click on Metrics in the Resource menu. Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring from the Resource pane in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer). If you click on Metrics you will see the following:
+1. Click on Metrics in the Resource menu. Another method to see the same compute utilization metrics and others automatically collected by Azure Monitor for Azure SQL Database is to use the **Metrics Explorer** under Monitoring from the Resource pane in the portal (The Compute Utilization is a just a pre-defined view of the Metrics Explorer). If you click on Metrics, you will see the following results:
 
     :::image type="content" source="../media/5-azure-monitor-metrics.png" alt-text="Azure_Monitor_Metrics":::
 
-    As you can see in the screenshot there are several metrics you can use to view with  Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period showing a 5 minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select CPU percentage and change the capture for 1 hour. The granularity will change to 1-minute and should look like the following image:
+    As you can see in the screenshot, there are several metrics you can use to view with  Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period showing a give minute granularity. The Compute Utilization view is the last hour with a one minute granularity (which you can change). To see the same view, select CPU percentage and change the capture for 1 hour. The granularity will change to one minute and should look like the following image:
 
     :::image type="content" source="../media/5-azure-monitor-metrics-cpu.png" alt-text="Azure_Monitor_Metrics_CPU_1minrefresh":::
 
@@ -319,7 +319,7 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
 ## Azure Monitor Logs
 
-In this exercise you did not setup an Azure Monitor Log (mainly because there is a delay in metrics information appearing in the log) but it is worth looking at what a log may look like for a CPU resource usage scenario. Azure Monitor Logs can provide a much longer historical record than Azure Metrics.
+In this exercise, you did not setup an Azure Monitor Log (mainly because there is a delay in metrics information appearing in the log) but it is worth looking at what a log may look like for a CPU resource usage scenario. Azure Monitor Logs can provide a much longer historical record than Azure Metrics.
 
 If you had configured Azure Monitor Logs with a Log Analytics workspace (this is for later study on your own), you could use the following **Kusto Query** to see the same type of results for CPU utilization for the database:
 
@@ -337,4 +337,4 @@ Your results would look like the following image:
 
 Azure Monitor Logs have a delay when first configuring log diagnostics for a database so these results may take some time to appear.
 
-In this exercise, you learned how to observe a common SQL performance scenario and dive into details to decide on a possible solution to improve performance. In the next unit you will learn methods to accelerate and tune performance.
+In this exercise, you learned how to observe a common SQL performance scenario and dive into details to decide on a possible solution to improve performance. In the next unit, you will learn methods to accelerate and tune performance.

@@ -104,16 +104,16 @@ Let's now load some T-SQL queries for DMVs to observe query performance for acti
     
     The duration of this workload on a SQL Server 2019 instance with a SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core is around ~25 seconds.
     
-    WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1ms.
+    WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. 2ms per write doesn't seem like much but on a local SSD drive these waits may < 1 ms.
 
 ## Decide on a resolution
 
-The problem is not a high percentage of log write activity. The Azure Portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25% (this is information only. There is not a need to query these). The problem is not an IOPS limit as well. The issue is that this application workload is sensitive to low latency for transaction log writes and the General Purpose tier is not designed for this type of latency requirements. In fact, the documentation for Azure SQL Database says the resource limits for I/O latency is between 5-7ms.
+The problem is not a high percentage of log write activity. The Azure Portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25% (this is information only. There is not a need to query these). The problem is not an IOPS limit as well. The issue is that this application workload is sensitive to low latency for transaction log writes and the General Purpose tier is not designed for this type of latency requirements. In fact, the documentation for Azure SQL Database says the resource limits for I/O latency is between 5-7 ms.
 
 > [!NOTE]
 > General Purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads) so you may experience latencies more like these numbers. Managed Instance General Purpose latencies are similar. If your application is very sensitive to I/O latencies you could consider Business Critical Tiers.
 
-1. Examine the workload T-SQL script **order_rating_insert_single.sql**, you will see each INSERT is a single transaction commit which requires a transaction log flush.
+1. Examine the workload T-SQL script **order_rating_insert_single.sql**, you will see each INSERT is a single transaction commit, which requires a transaction log flush.
 
     One commit for each insert is not efficient but the application was not affected on a local SSD because each commit was very fast. The Business Critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency but maybe there is an application optimization so the workload is not as sensitive to I/O latency for the transaction log.
 
@@ -145,4 +145,4 @@ Make edits to scripts and execute them to see a more efficient I/O performance. 
 > [!TIP]
 > Very large transactions can be affected by resource governance on Azure and the symptoms will be LOG_RATE_GOVERNOR. In this example, the char(500) not null column pads spaces and causes large transaction log records. Performance can even be more optimized by making that column a variable length column.
 
-In the next unit you will learn about the amazing capabilities of Intelligent Performance in Azure SQL which can help you go even farther with performance for Azure SQL.
+In the next unit, you will learn about the amazing capabilities of Intelligent Performance in Azure SQL, which can help you go even farther with performance for Azure SQL.
