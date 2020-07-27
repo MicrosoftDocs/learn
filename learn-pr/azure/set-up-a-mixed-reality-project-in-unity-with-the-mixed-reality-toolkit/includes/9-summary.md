@@ -16,7 +16,6 @@ You can complete your mixed reality experience by building the Unity project and
 ## Further Reading
 
 - Port an existing Unity project to Windows Mixed Reality with the [Unity porting guide](https://docs.microsoft.com/windows/mixed-reality/porting-guides).
-
 - Get the latest Mixed Reality Toolkit Unity packages from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases).
-- Learn more about mixed reality [interaction models](https://docs.microsoft.com/en-us/windows/mixed-reality/interaction-fundamentals).
-- Explore [core concepts](https://docs.microsoft.com/en-us/windows/mixed-reality/core-concepts-landingpage) to consider when designing a mixed reality experience.
+- Learn more about mixed reality [interaction models](https://docs.microsoft.com/windows/mixed-reality/interaction-fundamentals).
+- Explore [core concepts](https://docs.microsoft.com/windows/mixed-reality/core-concepts-landingpage) to consider when designing a mixed reality experience.
