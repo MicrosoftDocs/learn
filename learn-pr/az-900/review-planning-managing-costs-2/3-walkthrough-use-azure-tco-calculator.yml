@@ -3,9 +3,9 @@ uid: learn.review-planning-managing-costs.3-walkthrough-use-azure-tco-calculator
 title: Exercise - Compare costs by using the Total Cost of Ownership (TCO) Calculator
 metadata:
   description: "Walkthrough - Use Azure TCO Calculator"
-  ms.date: 07/03/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

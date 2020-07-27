@@ -1,30 +1,32 @@
 ### YamlMime:Module
 uid: learn.review-planning-managing-costs
 metadata:
-  title: Review planning and managing costs
-  description: "Estimating costs and managing your spend are crucial skills you will want when moving into the cloud. Lets explore your options. AZ-900"
+  description: Migration to the cloud presents new ways to think about your IT expenses. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
   ms.date: 07/03/2020
-  author: wwlpublish
-  ms.author: roberts
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Review planning and managing Azure costs
-summary: Migration to the cloud presents new ways to think about your IT expenses. "How much will it cost?" is a common question organizations ask when moving to the cloud. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
-abstract: |
-  TODO: After completing this module, you'll be able to:
+title: Plan and manage your Azure costs
+summary: |
+  Migration to the cloud presents new ways to think about your IT expenses.
 
-    * Describe the different ways to purchase Azure products and services.
-    * Define the factors that affect your costs 
-    * Review and use the Azure Pricing Calculator and Total Cost of Ownership Calculator 
-    * List ways to minimize your costs 
-    * Explain the purpose of Azure Cost Management + Billing (control Azure spending and optimize resource use.)
+  "How much will it cost?" is a common question organizations ask when moving to the cloud. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
+abstract: |
+  After completing this module, you'll be able to:
+
+  * Use the Total Cost of Ownership (TCO) Calculator to compare your current datacenter costs to running the same workloads on Azure.
+  * Describe the different ways you can purchase Azure products and services.
+  * Use the Pricing calculator to estimate the monthly cost of running your cloud workloads.
+  * Define some of the major factors that affect total cost and apply recommended practices to minimize cost.
 prerequisites: |
-  There are no prerequisites for this course. However, having some IT knowledge or experience will make the concepts easier to understand.
+  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
 iconUrl: /learn/achievements/review-planning-managing-costs.svg
 levels:
 - beginner
 roles:
 - administrator
+- developer
 - business-owner
 - business-user
 - student

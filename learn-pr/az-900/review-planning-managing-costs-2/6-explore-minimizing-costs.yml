@@ -4,9 +4,9 @@ title: Manage and minimize total cost on Azure
 metadata:
   description: TODO
   title: Explore minimizing costs
-  ms.date: 07/03/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
