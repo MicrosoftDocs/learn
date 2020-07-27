@@ -38,6 +38,10 @@ After creating and running a pipeline to train the clustering model, you can cre
 > ![Inference pipeline for clustering](../media/inference-clusters.png)
 
 8. Submit the pipeline as a new experiment named **predict-iris-cluster** on your compute cluster. This may take a while!
+
+    > [!NOTE]
+    > If an **invalid dataset(s)** error is displayed, refresh the browser page and resubmit the experiment.
+
 9. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three iris observations in the input data.
 
 Your inference pipeline assigns iris observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.

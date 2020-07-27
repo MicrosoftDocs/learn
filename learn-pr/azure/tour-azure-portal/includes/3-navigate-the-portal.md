@@ -64,8 +64,6 @@ Select the **gear** icon to change the Azure portal settings. These settings inc
 
 ![Screenshot of the Azure portal settings pane](../media/3-settings-pane.png)
 
-When you have changed settings, select **Apply** to accept your changes.
-
 ### Help pane
 
 Select the **question mark** icon to show the **Help** pane. Here you choose from several options, including:
