@@ -1,6 +1,6 @@
 [Tailwind Traders](https://www.tailwindtraders.com/?azure-portal=true) is a fictitious home improvement retailer. They operate retail hardware stores across the globe and online.
 
-![A screenshot of the Tailwind Traders website. You can upload a photo to the smart shopping feature or browse recommended products.](../../shared/media/tailwind-traders-web-top.png)
+![A screenshot of the Tailwind Traders website. You can upload a photo to the smart shopping feature or browse recommended products.](media/tailwind-traders-web-top.png)
 
 Tailwind Traders specializes in competitive pricing, fast shipping, and a large range of items. They are looking at cloud technologies to improve their business operations, support their business growth into new markets, and enhance their online shopping experience, further differentiating them from their competitors.
 
