@@ -16,7 +16,7 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 |-------------------|-------------|
 | *:::no-loc text="Aggregators/":::* | Services to aggregate across multiple microservices for certain cross-service operations. An HTTP aggregator is implemented in the *:::no-loc text="ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::* project. |
 | *:::no-loc text="BuildingBlocks/":::* | Services that provide cross-cutting functionality, such as the app's event bus used for inter-service events. |
-| *:::no-loc text="Services/":::* | These projects implement the business logic of the app. Each microservice is autonomous, with its own data store. They showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain-Driven Design (DDD), and Command and Query Responsibility Segregation (CQRS). The new *:::no-loc text="Coupon.API":::* project has been provided, but it's incomplete. |
+| *:::no-loc text="Services/":::* | These projects implement the business logic of the app. Each microservice is autonomous, with its own data store. They showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain-Driven Design (DDD), and Command and Query Responsibility Segregation (CQRS). The new *:::no-loc text="Coupon.API":::* project has been provided, but it's not resilient. |
 | *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces. *:::no-loc text="WebSPA":::* is a storefront UI built with Angular. *:::no-loc text="WebStatus":::* is the health checks dashboard for monitoring the operational status of each service. |
 
 ## Verify deployment to AKS
@@ -60,4 +60,48 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
     <!-- :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png"::: -->
 
-In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll review the design of the new coupon service in the next unit.
+## Explore the response of a non-resilient app
+
+Complete the following steps to see how the app responds without a resiliency solution in place.
+
+### Purchase some merchandise
+
+To configure a simulated failure, you need at least one item in the basket. Complete the following steps:
+
+1. Log in to *eShopOnContainers*.
+1. Select the **.NET FOUNDATION PIN**.
+1. Select the basket icon at the top right of the page.
+1. Select **CHECKOUT**.
+
+### Configure simulated failure
+
+1. Go to the **HAVE A DISCOUNT CODE?** input at the bottom of the page.
+1. Enter the code *:::no-loc text="FAIL 2 DISC-10":::* to have the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
+1. Select **APPLY**.
+1. You should receive a confirmation message with number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!** as shown in the next image.
+
+    ![](../media/configure-coupon-failures.png)
+
+This configuration will make the next two requests for the *:::no-loc text="DISC-10":::* code to throw an exception.
+
+### Apply the failing discount coupon
+
+1. Enter the coupon code *:::no-loc text="DISC-10":::*.
+1. Select **APPLY**.
+1. You should receive the message **ERROR: 500 - Internal Server Error!**.
+1. If you select **APPLY** again, you should receive the same message once more.
+1. On the third try, the code validation should succeed and the discount should be applied to the order.
+
+Notice that you receive the error message immediately.
+
+If you check the log traces, you should see something like this:
+
+![](../media/non-resilient-failures.png)
+
+In the preceding image, you can see that:
+
+- The first two requests (#1, #2) fail when getting the values.
+- The third request (#3) succeeds and,
+- Returns the expected value (#4).
+
+In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll add code-based resiliency with Polly to the coupon service in the next unit.

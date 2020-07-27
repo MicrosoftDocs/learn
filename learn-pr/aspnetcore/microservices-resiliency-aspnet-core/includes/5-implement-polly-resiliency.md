@@ -2,54 +2,11 @@ In this exercise, you'll implement a resiliency handler with Polly. The initial 
 
 In this exercise, you will:
 
+<!-- delete the following bullet -->
 - Explore the app's response when resiliency isn't implemented.
 - Update the app's code to implement failure handling using Polly.
 - Create an ACR instance and deploy the updated app to AKS.
 - Explore the system response under failure after implementing resiliency.
-
-## Explore the response of a non-resilient app
-
-Complete the following steps to see how the app responds without a resiliency solution in place.
-
-### 1. Buy some stuff
-
-To configure a simulated failure, you need at least one item in the basket. Complete the following steps:
-
-1. Log in to *eShopOnContainers*.
-1. Select the **.NET FOUNDATION PIN**.
-1. Select the basket icon at the top right of the page.
-1. Select **CHECKOUT**.
-
-### 2. Configure simulated failure
-
-1. Go to the **HAVE A DISCOUNT CODE?** input at the bottom of the page.
-1. Enter the code *:::no-loc text="FAIL 2 DISC-10":::* to have the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
-1. Select **APPLY**.
-1. You should receive a confirmation message with number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!** as shown in the next image.
-
-    ![](../media/configure-coupon-failures.png)
-
-This configuration will make the next two requests for the *:::no-loc text="DISC-10":::* code to throw an exception.
-
-### 3. Apply the failing discount coupon
-
-1. Enter the coupon code *:::no-loc text="DISC-10":::*.
-1. Select **APPLY**.
-1. You should receive the message **ERROR: 500 - Internal Server Error!**.
-1. If you select **APPLY** again, you should receive the same message once more.
-1. On the third try, the code validation should succeed and the discount should be applied to the order.
-
-Notice that you receive the error message immediately.
-
-If you check the log traces, you should see something like this:
-
-![](../media/non-resilient-failures.png)
-
-In the preceding image, you can see that:
-
-- The first two requests (#1, #2) fail when getting the values.
-- The third request (#3) succeeds and,
-- Returns the expected value (#4).
 
 ## Add failure handling code using Polly
 

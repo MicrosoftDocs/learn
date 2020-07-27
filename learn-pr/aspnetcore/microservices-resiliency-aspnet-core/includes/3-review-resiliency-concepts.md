@@ -34,22 +34,19 @@ For an in-depth explanation of the Circuit-breaker policy, see [Polly's wiki pag
 
 ## Linkerd
 
-[Linkerd](https://linkerd.io/2/overview) is service mesh infrastructure for Kubernetes clusters. It provides resiliency without changing code.
+[Linkerd](https://linkerd.io/2/overview) is service mesh infrastructure for Kubernetes clusters. It provides resiliency without changing code. A [service mesh](https://servicemesh.io) is a set of proxies that stand beside each pod and handle all communication-related tasks. Each service in the mesh isn't aware it's behind a proxy. The proxy is transparent, lightweight, and handles incoming and outgoing connections.
 
-A [service mesh](https://servicemesh.io) is a set of proxies that stand beside each pod and handle all communication-related tasks. Each service in the mesh isn't aware it's being supported by a proxy beside it. The proxy is transparent, lightweight, and handles incoming and outgoing connections.
+### Comparison to code-based approaches
 
-Linkerd and skips the observability and security aspects.
+Linkerd's principal strategy is [Retries and Timeouts](https://linkerd.io/2/features/retries-and-timeouts). Since Linkerd has a systemic view of the entire cluster, it has the ability employ resiliency strategies in novel ways. An example of this is retrying in such a way as to add a maximum of 20 percent additional load on the target service. Linkerd's metrics-based view allows it to adapt dynamically to cluster conditions in real time. This adds another dimension to managing the cluster, but doesn't add any code.
 
-Linkerd includes a dashboard, that you can [explore when running from a local machine](https://linkerd.io/2/features/dashboard), but not from Azure's Cloud Shell.
+With a code-based approach, such as with Polly, you:
 
-### Resiliency strategies
+* Are required to guess which retry and timeout parameters are appropriate.
+* Focus on a specific HTTP request.
 
-Linkerd's resiliency strategies differ from those mentioned for Polly. Linkerd has [Retries and Timeouts](https://linkerd.io/2/features/retries-and-timeouts). Since Linkerd has a systemic view of the cluster, it can do some interesting "tricks". For example, retrying in such a way as to add a maximum of 20 percent additional load on the target service.
+There's no reasonable way to respond to an infrastructure failure in your app's code. Consider the hundreds or thousands of requests that are being processed simultaneously. It's not difficult to imagine a situation in which even a retry with exponential back-off (times request count) can flood a service.
 
-It may appear that Linkerd is more limited than Polly in this sense. Keep in mind that the systemic, metrics-based view allows Linkerd to adapt dynamically to cluster conditions in real time. This just adds another dimension to managing the cluster.
+Infrastructure-based approaches like Linkerd don't know anything about app internals. For example, complex database transactions are not visible to Linkerd. Such transactions can be protected from failure with a Polly strategy.
 
-When you implement resiliency in your app's code, as when using Polly, you're guessing which retry or timeout parameters are reasonable. With a Polly-like solution, you're focusing on a specific request. There's no reasonable way that you can respond in your app's code. Consider the hundreds or thousands of requests that are being processed simultaneously. It's not difficult to imagine a situation in which even a retry with exponential back-off (times request count) can flood a service.
-
-There are other "tricks" that are impossible for Linkerd to handle. Linkerd doesn't know anything about the app internals. For example, you can protect a complex database transaction with a Polly strategy, so it's automatically retried if it fails.
-
-In the next two units, you'll implement resilience for the coupon service going through the app gateway. Polly and Linkerd are used for the first and second units, respectively.
+In upcoming units, you'll implement resilience for the coupon service with Polly and Linkerd.
