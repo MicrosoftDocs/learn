@@ -1,4 +1,4 @@
-In this unit, you'll create a Time Series Insights environment and configure ingesting events from IoT Hub.
+In this unit, you'll create a Time Series Insights (TSI) environment and configure ingesting events from IoT Hub.
 
 ## Create Time Series Insights
 
@@ -29,7 +29,7 @@ Time Series Insights allows you to store your data in two different stores:
 - **A cold store**, for long-term durable storage. It's the default storage option.
 - **A warm store**, managed by Time Series Insights, optimized for higher query performance, and unlimited queries. It's an optional feature that can be enabled at creation time or later on.
 
-For this module, we'll enable both. Let's start by configuring the cold store. For this, we'll need to create a new storage account.
+For this module, we'll enable both. Let's start with configuring the cold store. We'll have to create a new storage account.
 
 1. In the **Storage account name** field, specify a unique value.
 1. In the **Storage account kind**, leave _StorageV2_ selected.
@@ -53,7 +53,7 @@ We'll now configure the data source used by Time Series Insights to populate the
 
 > [!NOTE]
 > The _iothubowner_ access policy gives a lot of rights.
-> In a production environment, it's best practice to create a new Access Policy within Azure IoT Hub to use for configuring Time Series Insights (TSI) access. This will enable the security of TSI to be managed independently of any other services connected to the same Azure IoT Hub. We are not doing that here for convenience reasons.
+> In a production environment, it's best practice to create a new Access Policy within Azure IoT Hub to use for configuring Time Series Insights access. This will enable the security of TSI to be managed independently of any other services connected to the same Azure IoT Hub. We are not doing that here for convenience reasons.
 
 We'll now create a dedicated consumer group for the IoT Hub. It allows you to have several applications - including TSI - to process messages from IoT Hub without interfering with each other.
 
@@ -65,6 +65,6 @@ We'll now create a dedicated consumer group for the IoT Hub. It allows you to ha
 
 ![Azure Portal screenshot](../media/explore-8.png)
 
-Deployment of Time Series Insights (TSI) will take a couple of minutes to complete. Once your Time Series Insights deployment is complete, you've completed this unit.
+Deployment of Time Series Insights will take a couple of minutes to complete. Once your Time Series Insights deployment is complete, you've completed this unit.
 
 In the next unit, we'll explore data gathered in Time Series Insights.
