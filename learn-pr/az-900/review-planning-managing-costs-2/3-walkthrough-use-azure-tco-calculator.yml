@@ -2,7 +2,7 @@
 uid: learn.review-planning-managing-costs.3-walkthrough-use-azure-tco-calculator
 title: Exercise - Compare sample workload costs by using the TCO Calculator
 metadata:
-  description: "Walkthrough - Use Azure TCO Calculator"
+  description: Use the Total Cost of Ownership (TCO) Calculator to compare the cost of running a sample workload in the datacenter versus on Azure.
   ms.date: 09/11/2020
   author: tpetchel
   ms.author: thpetche
