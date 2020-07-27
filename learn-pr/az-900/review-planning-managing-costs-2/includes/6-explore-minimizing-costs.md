@@ -60,7 +60,7 @@ Keep up-to-date with the latest Azure customer and subscription offers, and swit
 
 ## Apply tags to identify cost owners
 
-_Tags_ help you manage costs associated with the different groups of Azure products and resources.  You can apply tags to groups of Azure products and resources to organize billing data.
+_Tags_ help you manage costs associated with the different groups of Azure products and resources. You can apply tags to groups of Azure resources to organize billing data.
 
 For example, if you run several virtual machines for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance, or by environment, such as Test or Production.
 

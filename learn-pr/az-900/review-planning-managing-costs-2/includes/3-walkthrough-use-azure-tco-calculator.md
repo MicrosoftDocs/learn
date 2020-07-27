@@ -1,4 +1,4 @@
-TODO: In this exercise, you... 
+In this exercise, you use the Total Cost of Ownership (TCO) Calculator to compare the cost of running a sample workload in the datacenter versus on Azure.
 
 Tailwind Traders is interested in moving some of their on-premises workloads to the cloud. But first, their Chief Financial Officer wants to understand more about moving from a relatively fixed cost structure to an ongoing monthly cost structure.
 
