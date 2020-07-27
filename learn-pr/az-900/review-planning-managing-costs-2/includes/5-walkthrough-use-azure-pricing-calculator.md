@@ -1,4 +1,4 @@
-TODO: In this exercise, you... 
+In this exercise, you use the Pricing calculator to estimate the cost of running a basic web application on Azure.
 
 With an understanding of the more important cost factors associated with running on Azure, Tailwind Traders wants to take a typical workload and estimate how much it would cost each month to run it on Azure.
 
@@ -43,7 +43,7 @@ Let's start with a quick tour of the Pricing calculator.
 
 1. Note the tabs at the top:
 
-    ![](../media/5-pricing-calculator-tabs.png)
+    ![A screenshot showing the four tabs that appear on the pricing calculator: products, example scenarios, saved estimates, and FAQ.](../media/5-pricing-calculator-tabs.png)
 
 Here's what you'll find under each tab:
 

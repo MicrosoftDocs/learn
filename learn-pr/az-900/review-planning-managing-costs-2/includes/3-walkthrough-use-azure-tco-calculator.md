@@ -46,7 +46,6 @@ Enter the specifications of your on-premises infrastructure into the TCO calcula
     | RAM (GB) | **16** |
     | Optimize by | **CPU** |
     | Windows Server 2008/2008 R2 | **Off** |
-    | | |
 
 1. Select **Add server workload** to create a second row for your bank of Linux virtual machines.
 
@@ -61,7 +60,6 @@ Enter the specifications of your on-premises infrastructure into the TCO calcula
     | Core(s) | **8**|
     | RAM (GB) | **16** |
     | Optimize by | **CPU** |
-    | | |
 
 1. Under **Storage**, select **Add storage**. Then specify these settings:
 
@@ -73,7 +71,6 @@ Enter the specifications of your on-premises infrastructure into the TCO calcula
     | Capacity | **60 TB** |  
     | Backup | **120 TB** |
     | Archive | **0 TB** |
-    | | |
 
 1. Under **Networking**, set **Outbound bandwidth** to **15 TB**.
 
@@ -101,7 +98,7 @@ To make these adjustments:
 
 Scroll to the summary at the bottom. You see a comparison of running your workloads in the datacenter versus on Azure. The prices you see might differ, but here's an example of the cost savings you might expect:
 
-![TODO: Screenshot of the report pane of the TCO Calculator in Azure. The highlighted and completed input fields indicates how set the TCO Calculator timeframe to three years and the region to North Europe. A graph shows the cost of on-premises infrastructure and workloads off-set against the reduced cost of using Azure.](../media/3-tco-calculator-summary.png)
+![A screenshot that shows the report summary. The summary estimates a total savings of over 15 million dollars over the course of three years when running on Azure.](../media/3-tco-calculator-summary.png)
 
 Select **Download** to download or print a copy of the report in PDF format.
 
