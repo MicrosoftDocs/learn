@@ -32,7 +32,7 @@ For more information about the difference between data space used, data space al
 
 More information on connectivity for Azure SQL Database can be found [here](https://docs.microsoft.com/azure/sql-database/sql-database-connectivity-architecture) and for Azure SQL Managed Instance [here](https://docs.microsoft.com/azure/sql-database/sql-database-managed-instance-connectivity-architecture). There will also be more on this topic in upcoming sections/modules.  
 
-#### Azure marketplace terms
+#### Azure Marketplace terms
 
 Similar to the EULA for SQL Server, there exists [Azure Marketplace terms](https://go.microsoft.com/fwlink/?linkid=2045624) which must be accepted before deploying Azure SQL.
 
