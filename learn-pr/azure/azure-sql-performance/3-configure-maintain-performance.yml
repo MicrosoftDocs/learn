@@ -20,7 +20,7 @@ quiz:
       - content: "The T-SQL ALTER DATABASE statement"
         isCorrect: false
         explanation: "You cannot modify the file properties for tempdb through T-SQL"
-      - content: "File properties in SQL Serer Management Studio (SSMS)"
+      - content: "File properties in SQL Server Management Studio (SSMS)"
         isCorrect: false
         explanation: "File properties in SSMS use T-SQL behind the scenes and therefore is not supported"
       - content: "Increasing the number of vCores through the Azure Portal"

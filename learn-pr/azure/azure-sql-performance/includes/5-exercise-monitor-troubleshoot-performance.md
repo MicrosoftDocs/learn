@@ -4,7 +4,7 @@ In this exercise you will learn how to monitor and troubleshoot a performance pr
 
 In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script you will be prompted for a password for the new database and your local IP address to enable your device to connect to the database.  
 
-This scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
+This script should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
 
 1. Start by obtaining your local IP address. Ensure you are disconnected from any VPN service and open a local PowerShell terminal on your device. Run the following command and note the resulting IP address.
 
@@ -42,9 +42,9 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
     Write-Host $serverName
     ```
 
-    **Don't forget to note your password, unique ID, and server. You will need these throughout the module.**
+    **Don't forget to note your password, unique ID, and server. You will need these items throughout the module.**
 
-1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units (this is to be consistent with other units).
+1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units (this is to be consistent with other units).
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -102,7 +102,7 @@ This scripts should take 3-5 minutes to complete. Make sure to note your passwor
 
 All scripts for this exercise can be found in the folder *04-Performance\monitor_and_scale* in the GitHub repository or zip file you downloaded. Let's prepare the exercise by loading and editing scripts.
 
-1. In SSMS, click the AdventureWorks database in Object Explorer. Then select the File menu and Open to load the **dmexecrequests.sql** script. Your query edtior window should look like the following:
+1. In SSMS, click the AdventureWorks database in Object Explorer. Then select the File menu and Open to load the **dmexecrequests.sql** script. Your query editor window should look like the following text:
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -112,7 +112,7 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
     AND es.is_user_process = 1;
     ```
 
-1. Use the same method in SSMS to load the **dmdbresourcestats.sql** script. A new query editor window should look like the following:
+1. Use the same method in SSMS to load the **dmdbresourcestats.sql** script. A new query editor window should look like the following text:
 
     ```sql
     SELECT * FROM sys.dm_db_resource_stats;
@@ -129,7 +129,7 @@ All scripts for this exercise can be found in the folder *04-Performance\monitor
 
 Now you will run a workload of a T-SQL query to observe its performance simulating concurrent users.
 
-1. Use SSMS to open up the script file **topcustomersales.sql** to observe the query. You will not run the query from SSMS. Your query editor window should look like the following:
+1. Use SSMS to open up the script file **topcustomersales.sql** to observe the query. You will not run the query from SSMS. Your query editor window should look like the following text:
 
     ```sql
     DECLARE @x int
@@ -171,7 +171,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
     > [!TIP]
     > If you are not seeing CPU usage behavior with this workload for your environment you can adjust the **-n parameter** for number of users and **-r parameter** for iterations.
 
-    Your screen at the command prompt should look similar to the following
+    Your screen at the command prompt should look similar to the following output:
 
     ```output
     [datetime] [ostress PID] Max threads setting: 10000
@@ -238,7 +238,7 @@ Let's now use the DMV queries you loaded earlier to observe performance.
 
     Leave this query editor window open as you will run it again in the next exercise.
 
-1. Let the workload complete and take note of its overall duration. When the workload completes you should see results like the following and a return to the command prompt
+1. Let the workload complete and take note of its overall duration. When the workload completes you should see results like the following output and a return to the command prompt
 
     ```output
     [datetime] [ostress PID] Total IO waits: 0, Total IO wait time: 0 (ms)
@@ -257,13 +257,13 @@ Query Store comes with a series of system catalog views to view performance data
 
     :::image type="content" source="../media/5-ssms-find-top-queries.png" alt-text="SSMS_QDS_Find_Top_Queries":::
 
-1. Select the report to find out what queries have consumed the most average resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following:
+1. Select the report to find out what queries have consumed the most average resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following image:
 
     :::image type="content" source="../media/5-ssms-top-query-report.png" alt-text="SSMS_QDS_Top_Query_Report":::
 
     The query shown is the SQL query from the workload for customer sales. This report has 3 components: Queries with the high total duration (you can change the metric), the associated query plan and runtime statistics, and the associated query plan in a visual map.
 
-1. Click on the bar chart for the query (the query_id may be different for your system), your results should look like the following:
+1. Click on the bar chart for the query (the query_id may be different for your system), your results should look like the following image:
 
     :::image type="content" source="../media/5-ssms-query-id.png" alt-text="SSMS_QDS_Query_ID":::
 
@@ -275,13 +275,13 @@ Query Store comes with a series of system catalog views to view performance data
 
     Note the average duration of the query. Your times may vary but the key will be to compare this average duration to the average wait time for this query and eventually a different average duration when we introduce a performance improvement.
 
-1. The final component is the visual query plan. The query plan for this query looks like the following:
+1. The final component is the visual query plan. The query plan for this query looks like the following image:
 
     :::image type="content" source="../media/5-ssms-workload-query-plan.png" alt-text="SSMS_Workload_Query_Plan":::
 
     Given the small number of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself. You may see a warning in the plan for lack of statistics for one of the columns in the query for the Clustered Index Seek but it does not have a factor in overall performance (and is not in the actual execution plan since statistics are created automatically for the column that generated the warning).
 
-1. Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. We know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status along with almost 100% CPU. Query Store comes with reports to look at possible performance bottlenecks to due waits on resources. Click on this report and hover over the bar chart. Your results should look like the following:
+1. Below the Top Resource Consuming Queries report in SSMS is a report called Query Wait Statistics. We know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status along with almost 100% CPU. Query Store comes with reports to look at possible performance bottlenecks to due waits on resources. Click on this report and hover over the bar chart. Your results should look like the following image:
 
     :::image type="content" source="../media/5-ssms-top-wait-stats.png" alt-text="SSMS_Top_Wait_Stats":::
 
@@ -311,7 +311,7 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
     :::image type="content" source="../media/5-azure-monitor-metrics.png" alt-text="Azure_Monitor_Metrics":::
 
-    As you can see in the screenshot there are several metrics you can use to view with  Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period showing a 5 minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select CPU percentage and change the capture for 1 hour. The granularity will change to 1-minute and should look like the following:
+    As you can see in the screenshot there are several metrics you can use to view with  Metrics Explorer. The default view of Metrics Explorer is for a 24-hour period showing a 5 minute granularity. The Compute Utilization view is the last hour with a 1-minute granularity (which you can change). To see the same view, select CPU percentage and change the capture for 1 hour. The granularity will change to 1-minute and should look like the following image:
 
     :::image type="content" source="../media/5-azure-monitor-metrics-cpu.png" alt-text="Azure_Monitor_Metrics_CPU_1minrefresh":::
 
@@ -331,7 +331,7 @@ AzureMetrics
 | render columnchart
 ```
 
-Your results would look like the following:
+Your results would look like the following image:
 
 :::image type="content" source="../media/5-kusto-query-metric-cpu-percent.png" alt-text="kusto_query_metric_cpu_percent":::
 

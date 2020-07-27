@@ -12,7 +12,7 @@ All scripts for this exercise can be found at *04-Performance\tuning_application
 
 ## Create a new table for the application
 
-1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **order_rating_ddl.sql** script to create a table in the AdventureWorks database. Your query editor window should look like the following:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **order_rating_ddl.sql** script to create a table in the AdventureWorks database. Your query editor window should look like the following text:
 
 ```sql
 DROP TABLE IF EXISTS SalesLT.OrderRating;
@@ -30,7 +30,7 @@ GO
 
 Let's now load some T-SQL queries for DMVs to observe query performance for active queries, waits, and I/O. **Load all these queries in the context of the AdventureWorks database**.
 
-1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **sqlrequests.sql** script to look at active SQL queries. Your query editor window should look like the following:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **sqlrequests.sql** script to look at active SQL queries. Your query editor window should look like the following text:
 
     ```sql
     SELECT er.session_id, er.status, er.command, er.wait_type, er.last_wait_type, er.wait_resource, er.wait_time
@@ -40,14 +40,14 @@ Let's now load some T-SQL queries for DMVs to observe query performance for acti
     AND es.is_user_process = 1;
     ```
 
-1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **top_waits.sql** script to look at top wait types by count. Your query editor window should look like the following:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **top_waits.sql** script to look at top wait types by count. Your query editor window should look like the following text:
 
     ```sql
     SELECT * FROM sys.dm_os_wait_stats
     ORDER BY waiting_tasks_count DESC;
     ```
 
-1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **tlog_io.sql** script to observe latency for transaction log writes. Your query editor window should look like the following:
+1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **tlog_io.sql** script to observe latency for transaction log writes. Your query editor window should look like the following text:
 
     ```sql
     SELECT io_stall_write_ms/num_of_writes as avg_tlog_io_write_ms, * 
@@ -96,7 +96,7 @@ Let's now load some T-SQL queries for DMVs to observe query performance for acti
 
 1. Now run the queries in SSMS you previously loaded to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
 
-    Use these queries you can observe the following:
+    Use these queries you can observe the following facts:
     
     - Many requests constantly have a wait_type of WRITELOG with a value > 0
     - The WRITELOG wait type is one of the highest count for wait types.

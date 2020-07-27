@@ -1,10 +1,10 @@
-In this exercise you will take the problem you encountered in the first exercise and improve performance by scaling more CPUs for Azure SQL Database. You will use the database you deployed in the previous exercise.
+In this exercise, you will take the problem you encountered in the first exercise and improve performance by scaling more CPUs for Azure SQL Database. You will use the database you deployed in the previous exercise.
 
 All scripts for this exercise can be found in the folder *04-Performance\monitor_and_scale* in the GitHub repository or zip file you downloaded.
 
 ## Scale up Azure SQL performance
 
-To scale performance for a problem that appears to be a CPU capacity problem you should decide what your options are and then proceed to scale CPUs using provided interfaces for Azure SQL.
+To scale performance for a problem that appears to be a CPU capacity problem, you should decide what your options are and then proceed to scale CPUs using provided interfaces for Azure SQL.
 
 1. Decide options on how to scale performance. Since the workload is CPU *bound*, one way to improve performance is to increase CPU capacity or speed. A SQL Server user would have to move to a different machine or reconfigure a VM to get more CPU capacity. In some cases, even a SQL Server administrator may not have permission to make these scaling changes, the process could take time, and even require a database migration.
   
@@ -20,7 +20,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
   
     Instead of using the portal, I'll show you a different method to scale your workload.
 
-1. For this exercise, so that we can see proper differences in reports, you must first flush the query store. In SSMS click on the AdventureWorks database and use the File/Open menu to open the script in SSMS **flushhquerystore.sql** in the context of the AdventureWorks database. Your query editor window should look like the following:
+1. For this exercise, so that we can see proper differences in reports, you must first flush the query store. In SSMS click on the AdventureWorks database and use the File/Open menu to open the script in SSMS **flushhquerystore.sql** in the context of the AdventureWorks database. Your query editor window should look like the following text:
   
     ```sql
     EXEC sp_query_store_flush_db;
@@ -28,7 +28,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     Execute this T-SQL batch.
 
-1. Open the script  **get_service_objective.sql** in SSMS. Your query editor window should look like the following:
+1. Open the script  **get_service_objective.sql** in SSMS. Your query editor window should look like the following text:
 
     ```sql
     SELECT database_name,slo_name,cpu_limit,max_db_memory, max_db_max_size_in_mb, primary_max_log_rate,primary_group_max_io, volume_local_iops,volume_pfs_iops
@@ -40,7 +40,7 @@ To scale performance for a problem that appears to be a CPU capacity problem you
 
     This is a method to find out your service tier using T-SQL. The Pricing or service tier is also known as a *service objective*. Execute the T-SQL batches.
   
-    For the current Azure SQL Database deployment, your results should look like the following:
+    For the current Azure SQL Database deployment, your results should look like the following image:
   
     :::image type="content" source="../media/7-service-objective-results.png" alt-text="service_objective_results":::
   
@@ -51,9 +51,9 @@ To scale performance for a problem that appears to be a CPU capacity problem you
     > [!NOTE]
     > SQLDB_OP_... is the string used for Business Critical.
 
-    When you view the ALTER DATABASE documentation, notice the ability to click on your target SQL Server deployment to get the right syntax options. Click on SQL Database single database/elastic pool to see the options for Azure SQL Database. To match the compute scale you found in the portal you need the service objective **'GP_Gen5_8'**.
+    When you view the ALTER DATABASE documentation, notice the ability to click on your target SQL Server deployment to get the right syntax options. Click on SQL Database single database/elastic pool to see the options for Azure SQL Database. To match the compute scale you found in the portal, you need the service objective **'GP_Gen5_8'**.
 
-1. Modify the service objective for the database to scale more CPUs. Open the script **modify_service_objective.sql** in SSMS and execute the T-SQL batch. Your query editor window should look like the following:
+1. Modify the service objective for the database to scale more CPUs. Open the script **modify_service_objective.sql** in SSMS and execute the T-SQL batch. Your query editor window should look like the following text:
   
     ```sql
     ALTER DATABASE AdventureWorks MODIFY (SERVICE_OBJECTIVE = 'GP_Gen5_8');
