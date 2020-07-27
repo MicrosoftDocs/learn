@@ -3,7 +3,7 @@ uid: learn.azure-sql-high-availability.4-high-availability-arch
 metadata:
   title: High availability by service tier
   description: High availability by service tier
-  ms.date: 07/31/2020
+  ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
