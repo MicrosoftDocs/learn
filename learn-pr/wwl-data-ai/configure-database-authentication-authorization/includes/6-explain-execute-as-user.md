@@ -4,9 +4,9 @@ If a user has a permission and the user no longer needs to have that permission,
 
 ## Ownership Chains
 
-A concept called chaining applies to permissions which allows users to inherit permissions from other objects. The most common example of this is a function or stored procedure that accesses a table during its execution. If the procedure has the same owner as the table, the stored procedure is able to be executed and access the table, even though the user does not have rights to access the table directly. This is because the user inherits the rights to access the table from the stored procedure, but only for the duration of the execution of the stored procedure, and only within the context of the stored procedures execution.
+A concept called chaining applies to permissions, which allows users to inherit permissions from other objects. The most common example of chaining is a function or stored procedure that accesses a table during its execution. If the procedure has the same owner as the table, the stored procedure is able to be executed and access the table, even though the user does not have rights to access the table directly. This access is available because the user inherits the rights to access the table from the stored procedure, but only for the duration of the execution of the stored procedure, and only within the context of the stored procedures execution.
 
-In the example below, run as a database owner or server administrator, a new user is created and added as a member of a new *SalesReader* role, which is then granted permission to select from any object and execute any procedure in the Sales schema. A stored procedure is then created in the Sales schema which accesses a table in the Production schema.
+In the example below, run as a database owner or server administrator, a new user is created and added as a member of a new *SalesReader* role, which is then granted permission to select from any object and execute any procedure in the Sales schema. A stored procedure is then created in the Sales schema that accesses a table in the Production schema.
 
 The example then changes content to be the new user and an attempt is made to select directly from the table in the Production schema.
 
@@ -91,7 +91,7 @@ DECLARE @sqlstring NVARCHAR(MAX)
 
 
 
-SET @sqlstring = 'SELECT P.Name, Sum(SOD.LineTotal) as TotalSales ,SOH.OrderDate 
+SET @sqlstring = 'SELECT P.Name, Sum(SOD.LineTotal) as TotalSales, SOH.OrderDate 
 
 FROM Production.Product P
 
@@ -112,4 +112,4 @@ EXECUTE AS USER = 'DP300User1'
 EXECUTE Sales.DemoProc
 ```
 
-The *DP300User1* will receive an error that the user does not have SELECT permission on the *Production.Product* table, just like the user tried to execute the query directly. Because of this permission chains to not apply and the user account which is executing the dynamic SQL must have rights to the tables and views which are being used by the code within the dynamic SQL.
+The *DP300User1* will receive an error that the user does not have SELECT permission on the *Production.Product* table, just like the user tried to execute the query directly. Permission chains do not apply and the user account that is executing the dynamic SQL must have rights to the tables and views that are being used by the code within the dynamic SQL.
