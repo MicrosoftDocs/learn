@@ -25,7 +25,7 @@ quiz:
         explanation: "Does not meet the SLA requirements."
       - content: "Azure SQL Database - single database"
         isCorrect: true
-        explanation: "Azure SQL Database is currently the only deployment offering an SLA of 99.995%, which the customer can obtain by using the Business critical service tier and enabling availability zones."
+        explanation: "Azure SQL Database is the only deployment option with a possible SLA of 99.995%, which the customer can obtain by using the Business critical service tier and enabling availability zones."
       - content: "Azure SQL Database - elastic pool"
         isCorrect: false
         explanation: "It's not clear from the scenario that an elastic pool is required"
