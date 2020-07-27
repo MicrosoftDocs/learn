@@ -19,7 +19,7 @@ In this case, you'll implement a Retry and a Circuit Breaker policy to handle fa
 
 Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. Complete the following steps to implement failure handling for the coupon service:
 
-1. Run the following command:
+1. Run the following command in the command shell:
 
     ```dotnetcli
     dotnet add src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Web.Shopping.HttpAggregator.csproj \
@@ -32,13 +32,16 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
     1. In the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file, replace the comment `// Add the GetRetryPolicy method` with the following code:
 
         ```csharp
-        public static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy() =>
-            HttpPolicyExtensions.HandleTransientHttpError()
+        public static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
+        {
+            return HttpPolicyExtensions.HandleTransientHttpError()
                 .WaitAndRetryAsync(5, retryAttempt =>
                     TimeSpan.FromMilliseconds(Math.Pow(1.5, retryAttempt) * 1000), (_, waitingTime) =>
                 {
-                    Log.Logger.Information("----- Retrying in {WaitingTime}s", $"{ waitingTime.TotalSeconds:n1}");
+                    Log.Logger.Information(
+                        "----- Retrying in {WaitingTime}s", $"{ waitingTime.TotalSeconds:n1}");
                 });
+        }
         ```
 
     1. Also in the *ServiceCollectionExtensions.cs* file, replace the comment `// Add the GetCircuitBreakerPolicy method` with the following code:

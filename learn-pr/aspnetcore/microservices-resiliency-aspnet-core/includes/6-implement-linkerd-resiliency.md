@@ -1,13 +1,11 @@
-In the previous exercise, you implemented resiliency by adding failure-handling code. The code used Polly policies. It was a small change but it's also true that you only updated one microservice. So it could mean a non-trivial effort if you had to update a large app composed of many microservices.
-
-You'll now make the app more fault-tolerant by deploying Linkerd.
+In the previous unit, you implemented resiliency by adding failure-handling code with Polly. This change only applies to the service you changed, however. Updating a large app with many services would be non-trivial. In this using, you'll implement an infrastructure-based resiliency approach spanning the entire app with Linkerd.
 
 In this exercise you will:
 
-- Return the app to the original version.
-- Deploy Linkerd in your cluster.
-- Configure the app to use Linkerd for resiliency.
-- Explore the app behavior with Linkerd.
+* Return the app to the original version.
+* Deploy Linkerd in your cluster.
+* Configure the app to use Linkerd for resiliency.
+* Explore the app behavior with Linkerd.
 
 ## Return the app to the initial version
 

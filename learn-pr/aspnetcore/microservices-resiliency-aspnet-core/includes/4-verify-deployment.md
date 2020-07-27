@@ -43,7 +43,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. Select the **General application status** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
 
-    :::image type="content" source="../media/4-verify-deployment/health-check.png" alt-text="Health check page" border="true" lightbox="../media/4-verify-deployment/health-check.png":::
+    :::image type="content" source="../media/4-review-code-verify-deployment/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-review-code-verify-deployment/health-check.png":::
 
     > [!NOTE]
     > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
@@ -68,6 +68,7 @@ Complete the following steps to see how the app responds without a resiliency so
 
 To configure a simulated failure, you need at least one item in the basket. Complete the following steps:
 
+1. Select the **CONTINUE SHOPPING** button.
 1. Log in to *eShopOnContainers*.
 1. Select the **.NET FOUNDATION PIN**.
 1. Select the basket icon at the top right of the page.
@@ -75,33 +76,31 @@ To configure a simulated failure, you need at least one item in the basket. Comp
 
 ### Configure simulated failure
 
-1. Go to the **HAVE A DISCOUNT CODE?** input at the bottom of the page.
-1. Enter the code *:::no-loc text="FAIL 2 DISC-10":::* to have the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
-1. Select **APPLY**.
-1. You should receive a confirmation message with number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!** as shown in the next image.
+1. In the **HAVE A DISCOUNT CODE?** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 2 DISC-10":::*.
+
+    This code causes the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
+1. Select the **APPLY** button.
+
+    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!**.
 
     :::image type="content" source="../media/4-verify-deployment/configure-coupon-failures.png" alt-text="configure coupon failures":::
 
-This configuration will make the next two requests for the *:::no-loc text="DISC-10":::* code to throw an exception.
+This configuration causes the next two requests for the *:::no-loc text="DISC-10":::* code to throw an exception.
 
 ### Apply the failing discount coupon
 
-1. Enter the coupon code *:::no-loc text="DISC-10":::*.
-1. Select **APPLY**.
-1. You should receive the message **ERROR: 500 - Internal Server Error!**.
-1. If you select **APPLY** again, you should receive the same message once more.
-1. On the third try, the code validation should succeed and the discount should be applied to the order.
+1. In the **HAVE A DISCOUNT CODE?** text box, remove the coupon code *:::no-loc text="FAIL 2":::*, leaving only *:::no-loc text="DISC-10":::*.
+1. Select the **APPLY** button. You'll receive the message **ERROR: 500 - Internal Server Error!**.
+1. Select the **APPLY** button again. You'll receive the same message once more.
+1. Select the **APPLY** button for a third time. This time, the code validation succeeds and the discount is applied to the order.
 
-Notice that you receive the error message immediately.
-
-If you check the log traces, you should see something like this:
+In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, notice that you received the error message immediately. Check the log traces. You'll see something like the following output:
 
 :::image type="content" source="../media/4-verify-deployment/non-resilient-failures.png" alt-text="non-resilient failures":::
 
 In the preceding image, you can see that:
 
-- The first two requests (#1, #2) fail when getting the values.
-- The third request (#3) succeeds and,
-- Returns the expected value (#4).
+- The first two requests, labeled as "1" and "2", fail when getting the values.
+- The third request, labeled as "3", succeeds and returns the expected value, labeled as "4".
 
 In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll add code-based resiliency with Polly to the coupon service in the next unit.
