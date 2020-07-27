@@ -1,6 +1,6 @@
 In this learning path, you have covered deploying and configuring a secure, performant, and highly available solution with Azure SQL.
 
-There are many elements in a single solution, and in this module you'll learn how to take the business scenario and determine the best resources and processes to use to satisfy the requirements while considering the constraints within the scenario. You'll also learn what else you should consider when it comes to Azure SQL and opportunities in the cloud.
+There are many elements in a single solution, and in this module you'll learn how to take the business scenario and determine the best resources and processes to use to satisfy the requirements while considering the constraints within the scenario. You'll also learn about other opportunities for Azure SQL and the cloud.
 
 At the end of this final module, you should be able to:
 
