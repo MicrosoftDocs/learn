@@ -19,7 +19,7 @@ Throughout this module, if you want to leverage various project templates you ca
 
 For these scenarios module, you'll spend some time determining the problem statement (**Discovery**), but the big focus will be on the **Architecture Design Session**. If you wish to develop a solution further after the module, you can use the assets in the module to do so.
 
-## Scenario 1: Global Content Delivery Network (CDN) system
+## Scenario 1: Architect global scale and secure access
 
 ### Scenario description  
 

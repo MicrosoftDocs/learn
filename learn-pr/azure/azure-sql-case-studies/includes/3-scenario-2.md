@@ -1,16 +1,18 @@
-Similar to the last unit, you will review a business scenario. The company descriptions, project goals, and constraints have already been laid out for you, but you will be responsible for coming up with a potential solution.
+In the last unit, you analyzed a solution which had requirements involving global scale, isolating read and write workloads, and determining the most secure methods of authentication depending on client. These are common themes that occur in many scenarios.
+
+Similar to the last unit, you will review an additional business scenario focused on mission critical applications. The company descriptions, project goals, and constraints have already been laid out for you, but you will be responsible for coming up with a potential solution.
 
 ## Scenario 2: Mission critical application
 
 *Scenario description*:  
 
-You are hired to architect a mission critical cloud application that requires 99.995% availability because downtime might be life threatening. 911 dispatch, stolen credit card notifications or corporate security reporting are examples of such applications. High performance is required as any delay in response carries high risk. Given the sensitivity of the collected information, data sovereignty must be guaranteed. Your main mission is to ensure that the app is designed and deployed with the appropriate data redundancy and fault resilience to meet the availability and data sovereignty goals.
+You are hired to architect a mission critical cloud application that requires 99.995% availability because downtime might be life threatening. 911 dispatch, stolen credit card notifications or corporate security reporting are examples of such applications, but in this case, you will focus on a 911 dispatch system. High performance is required as any delay in response carries high risk, sometimes life-threatening. Given the sensitivity of the collected personal information, data sovereignty must be guaranteed. Your main mission is to ensure that the app is designed and deployed with the appropriate data redundancy and fault resilience to meet the availability and data sovereignty goals.
 
-Additionally, mission critical cloud applications, especially those mentioned above, are concerned about protecting sensitive data while allowing DBAs to perform their jobs. In this scenario, DBAs must not be able to see sensitive data stored in specific columns and all access to tables containing sensitive data must be monitored. At the same time, DBAs need to be able to troubleshoot performance using the Azure portal and SSMS/ADS and to create new contained database users who must be mapped to Azure AD principals.  
+Additionally, the 911 dispatch system coordinators are concerned about protecting sensitive data (like health history and personally identifiable information) while allowing DBAs to perform their jobs. In this scenario, DBAs must not be able to see sensitive data stored in specific columns and all access to tables containing sensitive data must be monitored. At the same time, DBAs need to be able to troubleshoot performance using the Azure portal and SSMS/ADS and to create new contained database users who must be mapped to Azure AD principals.  
 
 *Scenario guidance*:
 
-- Start by selecting the Azure SQL deployment option, service tier and configuration that creates the highest availability.  
+- Start by selecting the Azure SQL deployment option, service tier and configuration that creates the highest availability for the 911 dispatch system.  
 - Consider geo-redundancy.  
 - What role does co-location play in your solution?  
 - Determine a security strategy for meeting the data sensitivity requirements.

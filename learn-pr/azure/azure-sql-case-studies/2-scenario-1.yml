@@ -1,48 +1,48 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-sql-case-studies.2-scenario-1
 metadata:
-  title: Scenario 1 - Global CDN System
-  description: Scenario 1 - Global CDN System
+  title: Scenario 1 - Architect global scale and secure access
+  description: Scenario 1 - Architect global scale and secure access
   ms.date: 07/31/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Scenario 1 - Global CDN System
+title: Scenario 1 - Architect global scale and secure access
 durationInMinutes: 10
 content: |
   [!include[](includes/2-scenario-1.md)]
 quiz:
-    title: "Scenario 1: Global CDN system"
+    title: "Knowledge Check"
     questions:
     - content: "Which Azure SQL deployment option potentially offers the best fit for this scenario?"
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false
-        explanation: "While this would technically work, a PaaS offering may be a better fit."
+        explanation: "While this would technically work, a PaaS offering may be a better fit and less management overhead."
       - content: "Azure SQL Managed Instance"
         isCorrect: true
         explanation: "Since it appears that the customer is using CLR, which is an instance-scoped feature, Azure SQL Managed Instance will allow them to move to a PaaS offering without having to rewrite the CLR applications."
       - content: "Azure SQL Database - single database"
         isCorrect: false
-        explanation: "Hint: Consider their need for CLR"
+        explanation: "Hint: Consider their need for CLR."
       - content: "Azure SQL Database - elastic pool"
         isCorrect: false
-        explanation: "Hint: Consider their need for CLR"
+        explanation: "There's no indication from the information provided that many databases or a pooling system would be necessary. Hint: Consider their need for CLR"
     - content: "How will they scale over multiple regions with multiple queries happening at the same time, while isolating read workloads from write workloads?"
       choices:
       - content: "Select General purpose service tier and deploy auto-failover groups"
         isCorrect: false
-        explanation: "This won't address their need to isolate read and write workloads."
+        explanation: "While this solution will enable them to isolate read and write workloads, since the secondary server in the auto-failover group can be used as a read-only endpoint, they will not be able to isolate read and write workloads in the primary region. Is there a better option?"
       - content: "Select General purpose service tier and deploy geo-replication"
         isCorrect: false
-        explanation: "This won't address their need to isolate read and write workloads."
+        explanation: "They can leverage the geo-replicated database(s) as readable secondaries, and they can deploy multiple geo-replicated databases across the globe, including in their existing region. However, Azure SQL Managed Instance does not support geo-replication currently."
       - content: "Select Business critical service tier and deploy auto-failover groups"
         isCorrect: true
         explanation: "The Business critical tier will enable them to get a readable secondary, and auto-failover groups can help them scale over two regions."
       - content: "Select Business critical service tier and deploy geo-replication"
         isCorrect: false
-        explanation: "Geo-replication isn't currently available in Azure SQL Managed Instance"
+        explanation: "They can leverage the geo-replicated database(s) as readable secondaries, and they can deploy multiple geo-replicated databases across the globe, including in their existing region. However, geo-replication isn't currently available in Azure SQL Managed Instance."
     - content: "Which authentication method would you recommend for the application on an Azure VM?"
       choices:
       - content: "Azure AD authentication: integrated authentication"
@@ -98,16 +98,16 @@ quiz:
       choices:
       - content: "Azure AD authentication: integrated authentication"
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
       - content: "Azure AD authentication: client ID/certificate"
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
       - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)"
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
       - content: "Azure AD authentication: managed identity"
         isCorrect: false
-        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modfiied."
+        explanation: "Not possible for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
       - content: "SQL authentication: username and password"
         isCorrect: true
         explanation: "No option exists today for eliminating passwords for legacy applications that use old drivers and/or SQL authentication and cannot be modified."
