@@ -4,7 +4,7 @@ The configuration of ports and port forwarding in Kubernetes is different from w
 
 ## Networks in Kubernetes
 
-Containers are temporary. A container's configuration and data the data in it isn't persistent between executions. Once you delete a container, all information is gone unless it's configured to use a volume. The same applies to the container's network configuration and any IP addresses assigned to it.
+The network configuration for containers is temporary. A container's configuration and the data in it isn't persistent between executions. Once you delete a container, all information is gone unless it's configured to use a volume. The same applies to the container's network configuration and any IP addresses assigned to it.
 
 A deployment is a logical grouping of pods and isn't considered a physical workload and not assigned an IP address. However, each pod is automatically assigned an IP address. When the pod is destroyed, the IP address is lost. This behavior makes a manual network configuration strategy complex.
 
@@ -12,11 +12,11 @@ Kubernetes has two network availability abstractions that allow you to expose an
 
 These abstractions are the **Services** and **Ingresses**. They're both responsible for allowing and redirecting the traffic from external sources to our cluster.
 
-## Kubernetes services
+## What is a Kubernetes service?
 
 A Kubernetes service is a workload that abstracts the IP address for networked workloads. A Kubernetes service acts as a load balancer and redirects traffic to the specific ports of specified ports using port-forwarding rules.
 
-:::image type="content" source="../media/6-1-service-diagram.png" alt-text="Services diagram":::
+:::image type="content" source="../media/6-1-service-diagram.png" alt-text="A diagram that shows two Kubernetes Services. The first service is applied to one pod. The second service is applied to two pods.":::
 
 You define a service in the same way as a deployment by using a YAML manifest file. The service uses the same `selector` key as deployments to select and group resources with matching labels into one single IP.
 
@@ -41,17 +41,17 @@ Services can be of several types. Each type changes the behavior of the applicat
 
 - **ExternalName**: This value maps the service using a DNS resolution through a CNAME record. You use this service type to direct traffic to services that exist outside the Kubernetes cluster.
 
-## Ingresses
+## What is Ingress?
 
 Ingress exposes routes for HTTP and HTTPS traffic from outside a cluster to services inside the cluster. You define Ingress routes by using *ingress rules*. A Kubernetes cluster rejects all incoming traffic without these routes defined.
 
-:::image type="content" source="../media/6-2-ingress-diagram.png" alt-text="Ingress diagram":::
+:::image type="content" source="../media/6-2-ingress-diagram.png" alt-text="A diagram that shows two Kubernetes services. The first service does not make use of an Ingress and all internet access is blocked. The second service uses an ingress and internet access is allowed to the service.":::
 
 Assume you want to allow clients to access your website through the `http://contoso.com` web address. For a client to access your app inside the cluster, the cluster must respond to the website's CNAME and route the requests to the relevant pod.
 
-## Ingress controllers
+## How to use ingress controllers in Kubernetes
 
-Kubernetes use Ingress controllers to manage the configuration of Ingresses in a cluster. An Ingress controller provides several features. An Ingress controller:
+Kubernetes use Ingress controllers to manage the configuration of Ingresses in a cluster and provides several features. An Ingress controller:
 
 - acts as a reverse proxy to allow external URLs
 - may act as a load balancer
@@ -62,7 +62,7 @@ In AKS, the Ingress Controller links to a _DNS Zone_ resource in your Azure subs
 
 In AKS, the :::no-loc text="HTTP Application Routing"::: add-on allows you to create **ingress controllers**.
 
-## Ingress rules
+## What are Ingress rules?
 
 Ingress rules define where traffic is coming from and where to direct it within a cluster. You define ingress rules in an ingress deployment manifest file.
 
@@ -83,7 +83,7 @@ rules:
 
 This example defines a rule that allows all traffic using the address `example.com` and path `/site` to enter the cluster. This traffic is then routed to the `contoso-website` service on port `80`.
 
-## Annotations
+## What is an annotation?
 
 An annotation allows you to attach non-identifying metadata such as ingress configurations for workloads. You can think of the annotation as an internal label that defines specific configurations for resources.  For example, you may want to use a specific Ingress controller that supports name rewriting or payload limiting.
 
