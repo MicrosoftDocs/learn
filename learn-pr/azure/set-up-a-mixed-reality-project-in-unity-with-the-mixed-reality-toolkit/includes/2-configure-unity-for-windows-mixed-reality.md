@@ -1,4 +1,4 @@
-The first step to creating an immersive experience for Windows Mixed Reality requires configuring your Unity project for Windows Mixed Reality development. Once your project is configured, your app will be able to do basic holographic rendering and spatial input. Here you will learn the specifics of configuring your Unity project for Windows Mixed Reality development.
+The first step to creating an immersive experience for Windows Mixed Reality requires configuring your Unity project for Windows Mixed Reality development. Configuring Unity for Windows Mixed Reality development is a manual process which must be completed whenever you create a new Unity project or open a project shared with you. Once your project is configured, your app will be able to do basic holographic rendering and spatial input. Here you will learn the specifics of configuring your Unity project for Windows Mixed Reality development.
 
 ## Universal Windows Platform
 
