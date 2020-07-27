@@ -3,7 +3,7 @@ uid: learn.azure-sql-performance
 metadata:
   title: Azure SQL fundamentals - Deliver consistent performance
   description: TODO
-  ms.date: 07/31/2020
+  ms.date: 08/05/2020
   author: rgward
   ms.author: bobward
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Improve performance with Intelligent Insights
 prerequisites: | 
   - TODO
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/azure-sql-performance.svg
 levels:
 - beginner
 roles:
@@ -26,6 +26,7 @@ roles:
 - database-administrator
 products:
 - azure
+- azure-sql-database
 units:
 - learn.azure-sql-performance.1-introduction
 - learn.azure-sql-performance.2-performance-capabilities
