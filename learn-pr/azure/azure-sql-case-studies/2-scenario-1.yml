@@ -22,7 +22,7 @@ quiz:
         explanation: "While this would technically work, a PaaS offering may be a better fit and less management overhead."
       - content: "Azure SQL Managed Instance"
         isCorrect: true
-        explanation: "Since it appears that the customer is using CLR, which is an instance-scoped feature, Azure SQL Managed Instance will allow them to move to a PaaS offering without having to rewrite the CLR applications."
+        explanation: "Since the customer is using CLR, which is an instance-scoped feature, Azure SQL Managed Instance will allow them to move to a PaaS offering without having to rewrite the CLR applications."
       - content: "Azure SQL Database - single database"
         isCorrect: false
         explanation: "Hint: Consider their need for CLR."
@@ -39,7 +39,7 @@ quiz:
         explanation: "They can leverage the geo-replicated database(s) as readable secondaries, and they can deploy multiple geo-replicated databases across the globe, including in their existing region. However, Azure SQL Managed Instance does not support geo-replication currently."
       - content: "Select Business critical service tier and deploy auto-failover groups"
         isCorrect: true
-        explanation: "The Business critical tier will enable them to get a readable secondary, and auto-failover groups can help them scale over two regions."
+        explanation: "The Business critical tier will enable them to get a readable secondary, and an auto-failover group can help them scale over two regions."
       - content: "Select Business critical service tier and deploy geo-replication"
         isCorrect: false
         explanation: "They can leverage the geo-replicated database(s) as readable secondaries, and they can deploy multiple geo-replicated databases across the globe, including in their existing region. However, geo-replication isn't currently available in Azure SQL Managed Instance."
@@ -64,10 +64,10 @@ quiz:
       choices:
       - content: "Azure AD authentication: integrated authentication"
         isCorrect: true
-        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client id and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
+        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
       - content: "Azure AD authentication: client ID/certificate"
         isCorrect: false
-        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client id and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
+        explanation: "Integrated authentication via Azure Active Directory is the recommended authentication method for apps running on domain-joined machines outside of Azure, assuming the domain has been federated with Azure Active Directory. Alternatively, you can create an application identity for your application in Azure Active Directory, associate a certificate with the application identity, and modify your application to acquire a token for Azure SQL Database by providing a client ID and a certificate. Although the certificate must contain a private key and it must be deployed on the machine, hosting your application, you at least avoid hardcoding an application secret in the application code or configuration (you will need to configure the app with the certificate thumbprint)."
       - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)"
         isCorrect: false
         explanation: "Not the best option for an application."
@@ -81,13 +81,13 @@ quiz:
       choices:
       - content: "Azure AD authentication: integrated authentication"
         isCorrect: true
-        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
+        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD-Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
       - content: "Azure AD authentication: client ID/certificate"
         isCorrect: false
         explanation: "Is there a password-less option?"
       - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)"
         isCorrect: false
-        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
+        explanation: "You can eliminate the use passwords with SQL tools by using Azure AD-Integrated authentication, providing the tools run on a domain-joined machine and the domain has been federated with Azure Active Directory. If your environment does not meet the above pre-requisites for integrated authentication, it is recommended you use Azure AD interactive authentication with MFA, which most SQL tools support. "
       - content: "Azure AD authentication: managed identity"
         isCorrect: false
         explanation: "Available only for Azure resources."
