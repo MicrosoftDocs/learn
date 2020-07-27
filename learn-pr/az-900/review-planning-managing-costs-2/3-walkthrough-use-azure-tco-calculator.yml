@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.review-planning-managing-costs.3-walkthrough-use-azure-tco-calculator
+uid: learn.plan-manage-azure-costs.3-compare-workload-costs-tco-calculator
 title: Exercise - Compare sample workload costs by using the TCO Calculator
 metadata:
   description: Use the Total Cost of Ownership (TCO) Calculator to compare the cost of running a sample workload in the datacenter versus on Azure.
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/3-walkthrough-use-azure-tco-calculator.md)]
+  [!include[](includes/3-compare-workload-costs-tco-calculator.md)]

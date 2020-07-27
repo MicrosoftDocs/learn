@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.review-planning-managing-costs.4-purchase-azure-products-services
+uid: learn.plan-manage-azure-costs.4-purchase-azure-services
 title: Purchase Azure services
 metadata:
   description: Learn how to purchase Azure services as well as get a sense for other factors that affect cost.
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-purchase-azure-products-services.md)]
+  [!include[](includes/4-purchase-azure-services.md)]

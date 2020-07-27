@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.review-planning-managing-costs.6-explore-minimizing-costs
+uid: learn.plan-manage-azure-costs.6-manage-minimize-total-cost
 title: Manage and minimize total cost on Azure
 metadata:
   description: Apply recommended practices to minimize cost when running on Azure.
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-explore-minimizing-costs.md)]
+  [!include[](includes/6-manage-minimize-total-cost.md)]

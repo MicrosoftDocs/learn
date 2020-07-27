@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.review-planning-managing-costs.2-explore-total-cost-of-ownership-calculator
+uid: learn.plan-manage-azure-costs.2-compare-costs-tco-calculator
 title: Compare costs by using the Total Cost of Ownership (TCO) Calculator
 metadata:
   description: See how the Total Cost of Ownership (TCO) Calculator can help you compare the cost of running in the datacenter versus running on Azure.
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-explore-total-cost-of-ownership-calculator.md)]
+  [!include[](includes/2-compare-costs-tco-calculator.md)]
