@@ -3,7 +3,7 @@ uid: learn.aks-deploy-container-app.4-deploy-app
 metadata:
   title: Deploy an application on your AKS cluster
   description: Deploy an application on your AKS cluster
-  ms.date: 07/25/2020
+  ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
   ms.topic: interactive-tutorial
