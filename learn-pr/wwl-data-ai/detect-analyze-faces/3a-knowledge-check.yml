@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge."
-  ms.date: 06/07/2020
+  ms.date: 07/30/2020
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -35,3 +35,14 @@ quiz:
     - content: "Fast shutter speed"
       isCorrect: false
       explanation: "Incorrect: This applies to video more than images however, faster shutter speeds tend to create a sharper image, which is beneficial to facial detection"
+  - content: "You want to use the Face service to identify named individuals. What must you do?"
+    choices:
+    - content: "Use the Computer Vision service - the Face service cannot perform facial recognition"
+      isCorrect: false
+      explanation: "Incorrect: The Face service can be used to recognize individual faces."
+    - content: "Use the Face service to retrieve gender, age, and emotional state for each person"
+      isCorrect: false
+      explanation: "Incorrect: Gender, age, and emotional state do not uniquely identify individuals"
+    - content: "use the Face service to create a group containing multiple images of each named individual, and train a model based on the group"
+      isCorrect: true
+      explanation: "Correct: Creating a group that contains multiple images of named individuals enables you to train a facial recognition model."
