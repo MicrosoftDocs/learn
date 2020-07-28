@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.7-higher-availability-options
+metadata:
+  title: Going further with availability
+  description: Going further with availability
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Going further with availability
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-higher-availability-options.md)]

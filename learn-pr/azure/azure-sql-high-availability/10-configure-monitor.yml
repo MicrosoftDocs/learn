@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.10-configure-monitor
+metadata:
+  title: Configure and monitor availability
+  description: Configure and monitor availability
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure and monitor availability
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-configure-monitor.md)]
+quiz:
+    title: Knowledge Check
+    questions:
+    - content: "What methods can you use to monitor region and data center availability?"
+      choices:
+      - content: "Azure status dashboard"
+        isCorrect: false
+        explanation: "Are there other ways?"
+      - content: "SMS alerts"
+        isCorrect: false
+        explanation: "Are there other ways?"
+      - content: "Email alerts"
+        isCorrect: false
+        explanation: "Are there other ways?"
+      - content: "All of the above"
+        isCorrect: true
+        explanation: "Correct! All are configurable options for monitoring availability of regions and data centers. Additionally, you can view the Azure Service Health through the Azure portal."
+    - content: "Which of the following is not a way you can monitor instance, server, and database availability?"
+      choices:
+      - content: "Azure Service Health in the Azure portal"
+        isCorrect: true
+        explanation: "Correct. Azure Service Health can be used to monitoring the availability of a general region or service, but not your specific database or instance availability."
+      - content: "Azure Resource Health in the Azure portal"
+        isCorrect: false
+        explanation: "This is possible, review the Instance, server, and database availability section in the unit."
+      - content: "Azure PowerShell commands"
+        isCorrect: false
+        explanation: "This is possible, review the Instance, server, and database availability section in the unit."
+      - content: "Azure CLI commands"
+        isCorrect: false
+        explanation: "This is possible, review the Instance, server, and database availability section in the unit."
