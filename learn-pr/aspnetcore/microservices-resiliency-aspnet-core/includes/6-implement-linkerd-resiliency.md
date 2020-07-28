@@ -11,10 +11,10 @@ In this unit, you will:
 
 To examine the effect of Linkerd on the app, revert to the original version of the app. As you recall, the original app didn't use Polly.
 
-To revert, redeploy the modified service from the original repository, using the following command from the *deploy/k8s* directory:
+To revert, redeploy the modified service from the original repository, using the following command:
 
 ```bash
-./deploy-application.sh --registry eshopdev --charts webshoppingagg
+./deploy/k8s/deploy-application.sh --registry eshopdev --charts webshoppingagg
 ```
 
 You can explore the app when it becomes fully available again to verify it's failing immediately on the configured discount code, as you just did in the previous exercise. As a refresher, complete the following tasks:
@@ -40,9 +40,45 @@ Run the following command to confirm that Linkerd prerequisites have been satisf
 linkerd check --pre
 ```
 
-You should get something like this:
+You'll see a variation of the following output:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/check-linkerd-pre.png" alt-text="check Linkerd prerequisites" border="true" lightbox="../media/6-implement-linkerd-resiliency/check-linkerd-pre.png":::
+```console
+kubernetes-api
+--------------
+√ can initialize the client
+√ can query the Kubernetes API
+
+kubernetes-version
+------------------
+√ is running the minimum Kubernetes API version
+√ is running the minimum kubectl version
+
+pre-kubernetes-setup
+--------------------
+√ control plane namespace does not already exist
+√ can create non-namespaced resources
+√ can create ServiceAccounts
+√ can create Services
+√ can create Deployments
+√ can create CronJobs
+√ can create ConfigMaps
+√ can create Secrets
+√ can read Secrets
+√ can read extension-apiserver-authentication configmap
+√ no clock skew detected
+
+pre-kubernetes-capability
+-------------------------
+√ has NET_ADMIN capability
+√ has NET_RAW capability
+
+linkerd-version
+---------------
+√ can determine the latest version
+√ cli is up-to-date
+
+Status check results are √
+```
 
 ### Install Linkerd onto the cluster
 
@@ -52,7 +88,15 @@ Run the following command:
 linkerd install | kubectl apply -f -
 ```
 
-You should see the list of objects being created.
+You'll see the list of objects being created:
+
+```console
+namespace/linkerd created
+clusterrole.rbac.authorization.k8s.io/linkerd-linkerd-identity created
+clusterrolebinding.rbac.authorization.k8s.io/linkerd-linkerd-identity created
+serviceaccount/linkerd-identity created
+clusterrole.rbac.authorization.k8s.io/linkerd-linkerd-controller created
+```
 
 ### Verify the Linkerd status in the cluster
 
@@ -62,9 +106,31 @@ Run the following command:
 linkerd check
 ```
 
-You should see a checklist similar to the pre-install one, but longer. It's also probable that the check pauses several times while waiting for the components to become ready. Eventually, you should get to something like this:
+You'll see a checklist similar to the pre-install one, but longer. It's also probable that the check pauses several times while waiting for the components to become ready. Eventually, you'll get to something like this:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/linkerd-check.png" alt-text="Linkerd status check results" border="true" lightbox="../media/6-implement-linkerd-resiliency/linkerd-check.png":::
+```console
+linkerd-version
+---------------
+√ can determine the latest version
+√ cli is up-to-date
+
+control-plane-version
+---------------------
+√ control plane is up-to-date
+√ control plane and cli versions match
+
+linkerd-addons
+--------------
+√ 'linkerd-config-addons' config map exists
+
+linkerd-grafana
+---------------
+√ grafana add-on service account exists
+√ grafana add-on config map exists
+√ grafana pod is running
+
+Status check results are √
+```
 
 ## Configure the app to use Linkerd
 
@@ -78,130 +144,40 @@ You could check the app behavior now, but it will be unchanged. Linkerd only ret
 
 ### Modify the `webshoppingagg` and `coupon` deployments
 
-Edit the `coupon` chart *deployment.yaml* file (*deploy/k8s/helm-simple/coupon/templates/deployment.yaml*) and add the following annotations in line 20:
+1. Add the highlighted annotations to the `coupon` chart *deployment.yaml* file (*deploy/k8s/helm-simple/coupon/templates/deployment.yaml*):
 
-```yml
-      annotations:
-        linkerd.io/inject: enabled
-```
+    :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/templates/6-deployment.yaml" highlight="18-19":::
 
-The updated file must look like this:
+    The `linkerd.io/inject: enabled` annotation instructs Linkerd to add the `linkerd-proxy` container when creating the pod.
 
-```yml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: coupon
-  labels:
-    app: eshop
-    type: application-service
-    service: coupon
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      service: coupon
-  template:
-    metadata:
-      labels:
-        app: eshop
-        type: application-service
-        service: coupon
-      annotations:
-        linkerd.io/inject: enabled
-    spec:
-      ...
-```
+    > [!NOTE]
+    > It's important to maintain correct indentation in YAML manifests.
 
-The `linkerd.io/inject: enabled` annotation instructs Linkerd to add the `linkerd-proxy` container when creating the pod.
+1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart *deployment.yaml* file (*deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml*):
 
-> [!NOTE]
-> It's important to maintain correct indentation in YAML manifests.
+    :::code language="yml" source="../code/deploy/k8s/helm-simple/webshoppingagg/templates/6-deployment.yaml" highlight="18-19":::
 
-In a similar way, edit the `webshoppingagg` chart *deployment.yaml* file (*deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml*) as shown next:
+### Add the ServiceProfile for the HTTP GET coupon route
 
-```yml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: webshoppingagg
-  labels:
-    app: eshop
-    type: application-service
-    service: webshoppingagg
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      service: webshoppingagg
-  template:
-    metadata:
-      labels:
-        app: eshop
-        type: application-service
-        service: webshoppingagg
-      annotations:
-        linkerd.io/inject: enabled
-    spec:
-    ...
-```
-
-### Add the ServiceProfile for the GET coupon route
-
-The `ServiceProfile` manifest content is shown next and it's already included in the *deploy/k8s/linkerd* directory, so you just have to run this command from the *deploy/k8s* directory:
+The `ServiceProfile` manifest content is shown next and is already included in the *deploy/k8s/linkerd* directory. Run the following command from the *deploy/k8s* directory:
 
 ```bash
 kubectl apply -f linkerd/coupon-serviceprofile.yaml
 ```
 
+The following output appears:
+
+```console
+serviceprofile.linkerd.io/coupon-api.default.svc.cluster.local created
+```
+
 ### Configure headers for Nginx
 
-Linkerd needs additional information in the request headers, so you have to add some annotations in the ingress route.
+Linkerd needs additional information in the request headers. You must add some annotations in the ingress route.
 
-Edit the *deploy\k8s\helm-simple\apigateway\templates\ingress-gateway.yaml* file to insert the following lines in line 89:
+Add the highlighted lines to the *deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml* file:
 
-```yml
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      proxy_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;
-      grpc_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;
-```
-
-The updated file must look like this:
-
-```yml
-...
----
-apiVersion: extensions/v1beta1
-kind: Ingress
-metadata:
-  name: ingress-gw-cp
-  annotations:
-    kubernetes.io/ingress.class: nginx
-    nginx.ingress.kubernetes.io/rewrite-target: /webshoppingagg/$2
-    nginx.ingress.kubernetes.io/use-regex: "true"
-    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
-    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
-    nginx.ingress.kubernetes.io/configuration-snippet: |
-      proxy_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;
-      grpc_set_header l5d-dst-override $service_name.$namespace.svc.cluster.local:$service_port;
-  labels:
-    app: eshop
-spec:
-  rules:
-{{- if .Values.useHostName }}
-  - host: {{ .Values.host }}
-    http:
-{{- else }}
-  - http:
-{{- end }}
-      paths:
-      - backend:
-          serviceName: webshoppingagg
-          servicePort: 80
-        path: /apigateway/cp(/|$)(.*)
----
-...
-```
+:::code language="yml" source="../code/deploy/k8s/helm-simple/apigateway/templates/6-ingress-gateway.yaml" highlight="13-15":::
 
 ### Deploy the updated Helm charts
 
@@ -211,7 +187,7 @@ Use the following command to redeploy the updated charts:
 ./deploy-application.sh --registry eshopdev --charts apigateway,coupon,webshoppingagg
 ```
 
-You should see that the updated pods have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
+You'll see that the updated pods have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
 
 :::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers" border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
 
@@ -219,20 +195,21 @@ You should see that the updated pods have two containers now (`0/2`). One is the
 
 Let's explore the app behavior now with a similar process:
 
-* Log in to the app.
-* Select the **.NET FOUNDATION PIN**.
-* Select the basket icon at the top right of the page.
-* Select **CHECKOUT**.
-* Go to the **HAVE A DISCOUNT CODE?** input.
-* Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
-* Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
-* You'll notice that this time, you receive the correct response almost immediately.
+1. Log in to the app.
+1. Select the **.NET FOUNDATION PIN**.
+1. Select the basket icon at the top right of the page.
+1. Select **CHECKOUT**.
+1. Go to the **HAVE A DISCOUNT CODE?** text box.
+1. Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
+1. Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
 
-If you check the log traces, you should see something like this:
+    You'll notice that this time, you receive the correct response almost immediately.
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
+1. Check the log traces. You'll see something like this:
 
-As mentioned in the review unit, Linkerd follows a different approach to resiliency from what we saw with Polly. Linkerd retried five times in fast sequence so we didn't notice any failure at all.
+    :::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
+
+As mentioned in the review unit, Linkerd follows a different approach to resiliency from what you saw with Polly. Linkerd retried five times in fast sequence so you didn't notice any failure.
 
 For more information about Linkerd configuration, see the following resources:
 

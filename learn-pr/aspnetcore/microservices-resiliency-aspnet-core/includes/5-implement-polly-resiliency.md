@@ -61,7 +61,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
     1. Call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy` method call. The second occurrence should accept a `GetCircuitBreakerPolicy` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
-        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/servicecollectionextensions.cs" id="snippet_AddApplicationServices" highlight="7-8":::
+        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/5-servicecollectionextensions.cs" highlight="7-8":::
 
     1. Replace the comment `// Add the using statements` with the following `using` directives:
 
@@ -89,38 +89,10 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
 Complete the following steps to deploy the changes that you've implemented:
 
-1. Set your current location to the Kubernetes deployment scripts directory by using the following command:
-
-    ```bash
-    pushd deploy/k8s/
-    ```
-
-    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/deploy/k8s":::*.
-
-1. Run the following script to create an ACR instance:
-
-    ```bash
-    ./create-acr.sh
-    ```
-
-    The preceding script:
-
-    - Provisions a private ACR instance to publish the updated `webshoppingagg` image.
-    - Permits the AKS cluster to retrieve images from the ACR instance.
-    - Generates a variation of the following output:
-
-        ```console
-        Creating Azure Container Registry "eshoplearn20200728215827705" in resource group "eshop-learn-rg"...
-
-         > az acr create --name eshoplearn20200728215827705 -g eshop-learn-rg -l westus -o json --sku basic --admin-enabled --query "name" -otsv
-
-        ACR instance created!
-        ```
-
 1. Run the following script to publish the updated image to ACR:
 
     ```bash
-    ./build-to-acr.sh --services coupon-api
+    ./deploy/k8s/build-to-acr.sh --services coupon-api
     ```
 
     The preceding script builds and publishes the updated image to the ACR instance. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build the `webshoppingagg` image and push it to the ACR instance. You'll see a variation of the following output:
@@ -161,7 +133,7 @@ Complete the following steps to deploy the changes that you've implemented:
 1. Run the following script to deploy the updated image in ACR to AKS:
 
     ```bash
-    ./deploy-application.sh --charts webshoppingagg
+    ./deploy/k8s/deploy-application.sh --charts webshoppingagg
     ```
 
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
@@ -185,12 +157,6 @@ Complete the following steps to deploy the changes that you've implemented:
     TEST SUITE: None
 
     Helm charts deployed!
-    ```
-
-1. Return to your previous location by using the following command:
-
-    ```bash
-    popd
     ```
 
 ## Explore the system response when implementing resiliency

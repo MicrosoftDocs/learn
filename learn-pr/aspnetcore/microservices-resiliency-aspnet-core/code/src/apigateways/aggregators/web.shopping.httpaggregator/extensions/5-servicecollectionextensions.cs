@@ -1,4 +1,3 @@
-#region snippet_AddApplicationServices
 public static IServiceCollection AddApplicationServices(this IServiceCollection services)
 {
     //code omitted for brevity
@@ -10,4 +9,3 @@ public static IServiceCollection AddApplicationServices(this IServiceCollection 
 
     return services;
 }
-#endregion
