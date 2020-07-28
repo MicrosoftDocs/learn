@@ -55,7 +55,7 @@ In this task, we will use the Webhook + API function to display a message when t
 
     :::image type="content" source="../media/function-lab-select-function-created.png" alt-text="Screenshot of the Function with your newly created HttpTrigger showing the overview page.":::
 
-5. Click on the **Code + Text** entry in the menu.  Notice the code is designed to run an HTTP request and log information. Also, notice the function returns a Hello message with a name. 
+5. Click on the **Code + Test** entry in the menu.  Notice the code is designed to run an HTTP request and log information. Also, notice the function returns a Hello message with a name. 
 
     :::image type="content" source="../media/function-lab-select-function-code.png" alt-text="Screenshot of the function code. The Hello message is highlighted.":::
 
