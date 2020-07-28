@@ -4,7 +4,7 @@ Our case study shows how using Azure and cloud computing can help Contoso, while
 
 Contoso's growth plans are a massive project that they're hoping will span much of the world, and not be limited to only a few countries. Additionally, growth is going to take infrastructure, and the computers they'll use have the potential for a large capital expense cost and variable usage. Finally, Contoso knows from historical data that people adopt their products and services in waves. Contoso needs enough systems available to onboard their new customers, but they don't want them to cost money while expanding into each country.
 
-These types of questions are common questions that Contoso, Ltd., and lets face it most companies, are faced with every day.  How do we make the best use of the dollars that we spend on computing hardware and software every day.
+With this planned growth, Contoso, Ltd. is faced with some very common questions.  The most common is, how do we make the best use of the dollars that we spend on computing hardware and software every day.
 
 ## The case study experience 
 
