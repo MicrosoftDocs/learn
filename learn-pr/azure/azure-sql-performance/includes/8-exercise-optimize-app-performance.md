@@ -14,17 +14,17 @@ All scripts for this exercise can be found at *04-Performance\tuning_application
 
 1. Click on the AdventureWorks database in Object Explorer and use the File/Open menu to open the **order_rating_ddl.sql** script to create a table in the AdventureWorks database. Your query editor window should look like the following text:
 
-```sql
-DROP TABLE IF EXISTS SalesLT.OrderRating;
-GO
-CREATE TABLE SalesLT.OrderRating
-(OrderRatingID int identity not null,
-SalesOrderID int not null,
-OrderRatingDT datetime not null,
-OrderRating int not null,
-OrderRatingComments char(500) not null);
-GO
-```
+    ```sql
+    DROP TABLE IF EXISTS SalesLT.OrderRating;
+    GO
+    CREATE TABLE SalesLT.OrderRating
+    (OrderRatingID int identity not null,
+    SalesOrderID int not null,
+    OrderRatingDT datetime not null,
+    OrderRating int not null,
+    OrderRatingComments char(500) not null);
+    GO
+    ```
 
 ## Load queries to monitor query execution
 

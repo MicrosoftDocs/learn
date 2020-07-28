@@ -12,7 +12,7 @@ This script should take 3-5 minutes to complete. Make sure to note your password
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Next, run the following commands in the Azure Cloud shell on the right. Fill in a complex password and enter your local public IP address you retrieved when prompted.
+1. Next, run the following commands in the Azure Cloud Shell on the right. Fill in a complex password and enter your local public IP address you retrieved when prompted.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -29,7 +29,7 @@ This script should take 3-5 minutes to complete. Make sure to note your password
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following script in the Azure Cloud shell.  You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
+1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following script in the Azure Cloud Shell.  You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -42,7 +42,8 @@ This script should take 3-5 minutes to complete. Make sure to note your password
     Write-Host $serverName
     ```
 
-    **Don't forget to note your password, unique ID, and server. You will need these items throughout the module.**
+    > [!TIP]
+    > Don't forget to note your password, unique ID, and server. You will need these items throughout the module.**
 
 1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units (this is to be consistent with other units).
 
@@ -89,7 +90,7 @@ This script should take 3-5 minutes to complete. Make sure to note your password
 
     For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell, for example *aw-server`<unique ID>`.database.windows.net*.
 
-    Change the authentication to **SQL Server Authentication**, and input the corresponding login **cloudadmin** and password you provided for the script.  
+    Change the authentication to **SQL Server Authentication**, and input the corresponding login and password you provided for the script.  
 
     Select **Remember password** and select **Connect**.  
 
@@ -154,7 +155,7 @@ Now you will run a workload of a T-SQL query to observe its performance simulati
 
     This database is not large so the query to retrieve customer and their associated sales information ordered by customers with the most sales shouldn't generate a large result set. It is possible to tune this query by reducing the number of columns from the result set but these are needed for demonstration purposes of this exercise.
 
-1. From a powershell command prompt, change to the directory for this exercise:
+1. From a PowerShell command prompt, change to the directory for this exercise:
 
     ```powershell
     cd <base directory>\04-Performance\monitor_and_scale
@@ -299,9 +300,9 @@ Query Store comes with a series of system catalog views to view performance data
 
 ## Observing performance with Azure Monitor
 
-Let's use one other method to view the resource usage of our workload. Azure Monitor provides performance metrics which you can view in various methods including Azure Portal.
+Let's use one other method to view the resource usage of our workload. Azure Monitor provides performance metrics which you can view in various methods including Azure portal.
 
-1. Navigate to the Azure Portal for your deployment. Find the Azure SQL Database deployed. In the Overview page for an Azure SQL database, the standard default view in the Monitoring pane is called **Compute Utilization**:
+1. Navigate to the Azure portal for your deployment. Find the Azure SQL Database deployed. In the Overview page for an Azure SQL database, the standard default view in the Monitoring pane is called **Compute Utilization**:
 
     :::image type="content" source="../media/5-azure-portal-compute-slow-query.png" alt-text="Azure_Portal_Compute_Slow_Query":::
 

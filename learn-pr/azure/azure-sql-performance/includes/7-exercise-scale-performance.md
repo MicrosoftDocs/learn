@@ -8,9 +8,9 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
 
 1. Decide options on how to scale performance. Since the workload is CPU *bound*, one way to improve performance is to increase CPU capacity or speed. A SQL Server user would have to move to a different machine or reconfigure a VM to get more CPU capacity. In some cases, even a SQL Server administrator may not have permission to make these scaling changes, the process could take time, and even require a database migration.
   
-    For Azure, we can use ALTER DATABASE, az cli, or the portal to increase CPU capacity with no database migration on the part of the user.
+    For Azure, we can use ALTER DATABASE, Azure CLI, or the portal to increase CPU capacity with no database migration on the part of the user.
   
-1. Using the Azure Portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment. The Pricing tier allows you to change the service tier and number of vCores.
+1. Using the Azure portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment. The Pricing tier allows you to change the service tier and number of vCores.
   
     :::image type="content" source="../media/7-azure-portal-change-tier.png" alt-text="Azure_Portal_Change_Tier":::
   
@@ -59,7 +59,7 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
     ALTER DATABASE AdventureWorks MODIFY (SERVICE_OBJECTIVE = 'GP_Gen5_8');
     ```
   
-    This statement comes back immediately but the scaling of the compute resources takes place in the background. A scale this small should take less than a minute and for a short period of time the database will be offline to make the change effective. You can monitor the progress of this scaling activity using the Azure Portal.
+    This statement comes back immediately but the scaling of the compute resources takes place in the background. A scale this small should take less than a minute and for a short period of time the database will be offline to make the change effective. You can monitor the progress of this scaling activity using the Azure portal.
 
     :::image type="content" source="../media/7-azure-portal-update-progress.png" alt-text="Azure_Portal_Update_In_Progress":::
 
@@ -168,7 +168,7 @@ Let's look at the same Query Store reports as we did in the previous exercise.
 
 1. This chart can be somewhat misleading. If you use Azure Metrics from the Resource menu and do a CPU comparison the chart looks more like
 
-  :::image type="content" source="../media/7-azure-metrics-query-comparison.png" alt-text="Azure_Metrics_Compute_Query_Comparison.png":::
+    :::image type="content" source="../media/7-azure-metrics-query-comparison.png" alt-text="Azure_Metrics_Compute_Query_Comparison.png":::
 
 > [!TIP]
 > If you continue to increase vCores for this database you can improve performance up to a threshold where all queries have plenty of CPU resources. This does not mean you must match the number of vCores to the number of concurrent users from your workload. In addition, you can change the Pricing Tier to use **Serverless** *Compute Tier* instead of **Provisioned** to achieve a more "auto-scaled" approach to a workload. For example, for this workload if you chose a min vCore value of 2 and max vCore value of 8, this workload would immediately scale to 8 vCores.

@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/3-configure-maintain-performance.md)]
 quiz:
-    title: "Knowledge Check"
+    title: "Knowledge check"
     questions:
     - content: "The number of files for tempdb is configurable for Azure SQL Database by which method"
       choices:
@@ -23,7 +23,7 @@ quiz:
       - content: "File properties in SQL Server Management Studio (SSMS)"
         isCorrect: false
         explanation: "File properties in SSMS use T-SQL behind the scenes and therefore is not supported"
-      - content: "Increasing the number of vCores through the Azure Portal"
+      - content: "Increasing the number of vCores through the Azure portal"
         isCorrect: true
         explanation: "Increasing the number of vCores can give you additional tempdb files"
     - content: "You can configure I/O Performance for Azure SQL Database by which method"

@@ -6,7 +6,7 @@ Azure SQL provides monitoring and troubleshooting capabilities in the Azure ecos
 
 ### Azure Monitor
 
-Azure Monitor is part of the Azure ecosystem and Azure SQL is integrated to support Azure Metrics, Alerts, and Logs. Azure Monitor data can be visualized in the Azure Portal or accessed by applications through Azure Event Hub or APIs. An example of why Azure Monitor is important is accessing resource usage metrics for Azure SQL outside of SQL Server tools much like Windows Performance Monitor.
+Azure Monitor is part of the Azure ecosystem and Azure SQL is integrated to support Azure Metrics, Alerts, and Logs. Azure Monitor data can be visualized in the Azure portal or accessed by applications through Azure Event Hub or APIs. An example of why Azure Monitor is important is accessing resource usage metrics for Azure SQL outside of SQL Server tools much like Windows Performance Monitor.
 
 ### Dynamic Management Views (DMV)
 
@@ -30,7 +30,7 @@ Query Store is a historical record of performance execution for queries stored i
 
 ### Performance Visualizations
 
-For Azure SQL Database, we have integrated Query Store performance information into the Azure Portal through visualizations. This way you can see some of the same information for Query Store as you would with a client tool like SSMS by just using the Azure Portal options called **Performance Overview** and **Query Performance Insight**.
+For Azure SQL Database, we have integrated Query Store performance information into the Azure portal through visualizations. This way you can see some of the same information for Query Store as you would with a client tool like SSMS by just using the Azure portal options called **Performance Overview** and **Query Performance Insight**.
 
 ## Dynamic Management Views (DMV) details
 
@@ -114,7 +114,7 @@ Let's dive more into the details of each aspect of the diagram.
 
 Running or waiting scenarios can often be determined by looking at overall resource usage. For a standard SQL Server deployment you might use tools such as Performance Monitor in Windows or top in Linux. For Azure SQL, you can use the following methods:
 
-- Azure Portal/Powershell/Alerts
+- Azure portal/Powershell/Alerts
 
     Azure Monitor has integrated metrics to view resource usage for Azure SQL. You can also setup alerts to look for resource usage conditions.
 
@@ -132,7 +132,7 @@ If you have determined the problem is high CPU utilization, this is called a run
 
 - Query Store
 
-    Use the Top Consuming Resource reports in SSMS, Query Store catalog views, or Query Performance Insight in the Azure Portal (Azure SQL Database only) to find which queries are consuming the most CPU resources.
+    Use the Top Consuming Resource reports in SSMS, Query Store catalog views, or Query Performance Insight in the Azure portal (Azure SQL Database only) to find which queries are consuming the most CPU resources.
 
 - sys.dm_exec_requests
 

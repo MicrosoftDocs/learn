@@ -16,7 +16,7 @@ SQL Server 2017 and Azure SQL Database introduced the concept of Automatic Plan 
 
 If you gain confidence in these recommendations, you can enable SQL Server to force plans automatically when regressions are encountered. Automatic Plan Correction can be enabled using ALTER DATABASE using the AUTOMATIC_TUNING argument.
 
-For Azure SQL Database, you can also enable Automatic Plan Correction through automatic tuning options in the Azure Portal or REST APIs. You can read more about these techniques in the documentation. Automatic Plan Correction recommendations are always enabled for any database where Query Store is enabled (which is the default for Azure SQL Database and Managed Instance). Automatic Plan Correction (FORCE_PLAN) is enabled by default for Azure SQL Database as of March, 2020 for new databases.
+For Azure SQL Database, you can also enable Automatic Plan Correction through automatic tuning options in the Azure portal or REST APIs. You can read more about these techniques in the documentation. Automatic Plan Correction recommendations are always enabled for any database where Query Store is enabled (which is the default for Azure SQL Database and Managed Instance). Automatic Plan Correction (FORCE_PLAN) is enabled by default for Azure SQL Database as of March, 2020 for new databases.
 
 ## Automatic Tuning for Azure SQL Database
 
@@ -35,22 +35,22 @@ One additional scenario in preview for Automatic Tuning for Azure SQL Database i
 
 ## See an example of indexes with Automatic Tuning in Azure SQL Database
 
-The following is an example from the Azure Portal where indexes are recommended for a database based on workload analysis over time.
+The following is an example from the Azure portal where indexes are recommended for a database based on workload analysis over time.
 
 > [!NOTE]
-> You can at a later date use the AdventureWorksLT sample with your own Azure SQL Database deployment and use the scripts in the *04-Performance\tuning_recommendations* folder to see this example. It is important to note that when you run these scripts it can take 8 hours or more to see results in DMVs and Azure Portal.
+> You can at a later date use the AdventureWorksLT sample with your own Azure SQL Database deployment and use the scripts in the *04-Performance\tuning_recommendations* folder to see this example. It is important to note that when you run these scripts it can take 8 hours or more to see results in DMVs and Azure portal.
 
 :::image type="content" source="../media/9-index-recommendation-notification.png" alt-text="Index_Recommendation_Notification":::
 
-If you look at **Performance Overview** in the Azure Portal, you will see performance information for the top 5 resource consuming queries as found in the Query Story and an indication of a recommendation:
+If you look at **Performance Overview** in the Azure portal, you will see performance information for the top 5 resource consuming queries as found in the Query Story and an indication of a recommendation:
 
 :::image type="content" source="../media/9-query-performance-overview.png" alt-text="Query_Performance_Overview":::
 
-The Azure Portal also offers **Query Performance Insights**, which is a visual reporting tool based on the Query Store. In this example, Query Performance Insights will show the specific query consuming the most resources and advice of any recommendations to improve query performance
+The Azure portal also offers **Query Performance Insights**, which is a visual reporting tool based on the Query Store. In this example, Query Performance Insights will show the specific query consuming the most resources and advice of any recommendations to improve query performance
 
 :::image type="content" source="../media/9-query-performance-insights.png" alt-text="Query_Performance_Insights":::
 
-The Azure Portal also provides a way to directly see any performance recommendations.
+The Azure portal also provides a way to directly see any performance recommendations.
 
 :::image type="content" source="../media/9-performance-recommendations.png" alt-text="Performance_Recommendations":::
 

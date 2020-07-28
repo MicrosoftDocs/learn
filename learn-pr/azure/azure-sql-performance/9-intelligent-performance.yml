@@ -13,7 +13,7 @@ durationInMinutes: 10
 content: |
   [!include[](includes/9-intelligent-performance.md)]
 quiz:
-    title: "Knowledge Check"
+    title: "Knowledge check"
     questions:
     - content: "Which best describes Intelligent Query Processing (IQP)"
       choices:
