@@ -2,7 +2,7 @@ The ultimate goal of DevOps is to increase the quality of the software a team pr
 
 Dissatisfied customers can cost you money. The first step toward meeting customer needs is to admit that you have room for improvement. The second step is to measure customer satisfaction to find out where you currently stand.
 
-Engaging customers throughout your product lifecycle is a primary Agile principle. They key is to empower each team member to interact directly with customers on the feature sets they own.
+Engaging customers throughout your product lifecycle is a primary Agile principle. The key is to empower each team member to interact directly with customers on the feature sets they own.
 
 In this module, you will:
 

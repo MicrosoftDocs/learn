@@ -19,7 +19,7 @@ Traditionally, many data analysts used Microsoft Office Apps such as Microsoft E
 
 Power BI is a collection of software services, apps, and connectors that work together to turn your unrelated sources of data into coherent, visually immersive, and interactive insights. Your data might be held somewhere local such as an Excel spreadsheet, or in a collection of cloud-based and on-premises databases, or some other set of data sources. Power BI lets you easily connect to your data sources, discover what's important in that data, and share your findings with others in the organization.
 
-The image below shows an example of a dashboard created using Power BI. In this example, te analyst is using Power BI to examine retail sales data for items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, and variance, as well as new-store analysis.
+The image below shows an example of a dashboard created using Power BI. In this example, the analyst is using Power BI to examine retail sales data for items sold across multiple stores and districts. The metrics compare this year's performance to last year's for sales, units, gross margin, and variance, as well as new-store analysis.
 
 > [!div class="mx-imgBorder"]
 > ![Image showing a Power BI Dashboard](../media/5-retail1.png)
