@@ -73,7 +73,7 @@ Let's create the virtual network for your AKS cluster. We will use this virtual 
         --name $VNET_NAME \
         --address-prefixes 10.0.0.0/8 \
         --subnet-name $SUBNET_NAME \
-        --subnet-prefix 10.240.0.0/16
+        --subnet-prefixes 10.240.0.0/16
     ```
 
 1. Next, retrieve, and store the subnet ID in a Bash variable by running the command below.
