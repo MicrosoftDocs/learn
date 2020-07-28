@@ -18,7 +18,7 @@ The Diagnostics Library under the `Microsoft.Quantum.Diagnostics` namespace is a
 library of the Quantum Development Kit that contains functions and operations
 useful for diagnostic purposes. For the moment, we're interested in the
 function
-[`DumpMachine`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine).
+[`DumpMachine`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine).
 This function dumps information about the current status of the target machine
 into a file or some other location. If we omit the `location` in the argument,
 it will print the output in the console. We'll use this information to track
@@ -27,7 +27,7 @@ the state of the qubit register.
 > [!NOTE] 
 > In actual quantum hardware you won't be able to use a tool like `DumpMachine`
 > to access the state of the qubit register without breaking the algorithm.
-> Accessing the state of the qubit > register will imply measuring it and
+> Accessing the state of the qubit register will imply measuring it and
 > therefore changing its state. In simulated virtual quantum computers, we can
 > use tools like `DumpMachine`  and do tricks like these.
 
@@ -168,10 +168,13 @@ is:
 
 $$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
 
-This state can be obtained applying sequentially the operations [`Rx`]()($2\arctan \sqrt{\frac\alpha{1-\alpha}}$) and [`Z`](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.intrinsic.Z?view=qsharp-preview)
+This state can be obtained applying sequentially the operations [`Rx`]()($2\arctan \sqrt{\frac\alpha{1-\alpha}}$) and [`Z`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Z?view=qsharp-preview)
 to a qubit in the state $\ket{0}.$
 
->[!TIP] If you want to learn more about the math behind single qubit operations, you can check the [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates).
+> [!TIP]
+> If you want to learn more about the math behind single qubit operations, 
+> you can check the 
+> [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates).
 
 The operation would be:
 
@@ -254,7 +257,7 @@ namespace ExploringSuperposition {
 
 In this code we introduced three concepts:
 
-* Now `qubits` represents a `Qubit` array of dimension 3. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/en-us/quantum/user-guide/language/types#array-types).
+* Now `qubits` represents a `Qubit` array of dimension 3. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types).
 * We use the functions [`ApplyToEach`](todo), [`ResetAll`](todo) and [`MultiM`](todo) to perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions alike that make writing quantum programs more efficient. 
 * We use the functions [`BoolArrayAsInt`](todo) and [`ResultArrayAsBoolArray`](todo) from the library `Microsoft.Quantum.Convert` to
 transform the binary `Result` array returned by `MultiM(q)` into an integer number.
