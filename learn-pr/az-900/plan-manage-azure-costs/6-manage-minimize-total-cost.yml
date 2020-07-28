@@ -8,6 +8,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
+durationInMinutes: 11
 content: |
   [!include[](includes/6-manage-minimize-total-cost.md)]
