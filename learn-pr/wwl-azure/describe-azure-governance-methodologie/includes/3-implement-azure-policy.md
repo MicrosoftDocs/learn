@@ -1,4 +1,4 @@
-There are three steps to creating an implementing an Azure policy.
+There are three steps to creating and implementing an Azure policy.
 
 ![Three-step process for implementing policy definitions as discussed in the text](../media/policy-process.png)
 
