@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-intro.5-management-interfaces
+metadata:
+  title: Management interfaces for Azure SQL
+  description: Management interfaces for Azure SQL
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Management interfaces for Azure SQL
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-management-interfaces.md)]
