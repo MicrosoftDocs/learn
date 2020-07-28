@@ -40,9 +40,9 @@ You need to create and push your container image to a container registry to depl
 
 ## Sign in and push a container image to ACR
 
-You need to authenticate with the new ACR before you can push your container image. Your ACR credentials are available in the [Azure portal](https://portal.azure.com)  should you need the information. Navigate to your newly created ACR and select the **Access keys** tab.
+The new ACR requires authentication before you can push your container image. If you need this information in the future, you can access the ACR credentials in the [Azure portal](https://portal.azure.com).
 
-:::image type="content" source="../media/4-acr-login.png" alt-text="Check your credentials on the 'Access Keys' tab":::
+Navigate to your newly created ACR and select the **Access keys** tab. In this tab, you'll find the *registry name*, *login server*, *username*, and *password* information.
 
 1. In the Cloud Shell run the `az acr login` command to authenticate with your new ACR. There's no need to include the `.azurecr.io` in the name of the CR when logging in.
 

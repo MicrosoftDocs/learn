@@ -6,17 +6,17 @@ Assume you're using an Azure Virtual Machine as your target platform. The first 
 
 An alternative approach is to run the website on a container-based platform like Azure Container Instances (ACI). You do not need to worry about the underlying server technology, but you'll have to configure and manage several containers to use this strategy manually.
 
-Kubernetes and AKS help you orchestrate containers. The Kubernetes container orchestration features make it easy to manage workloads on the cluster. You deploy workloads using containers built from container images to run your applications within an ASK cluster.
+Kubernetes and AKS help you orchestrate containers. The Kubernetes container orchestration features make it easy to manage workloads on the cluster. You deploy workloads using containers built from container images to run your applications within an AKS cluster.
 
 Here you'll explore how to create workloads in your AKS cluster.
 
-## What is a Container registry?
+## What is a container registry?
 
 A container registry allows you to store container images safely in the cloud for later deployment. You can think of the container registry as an archive that stores multiple versions of your container image. Each stored image has a tag assigned for identification.
 
 For example, you may have the image `contoso-website:latest`, which would be a different version of the image with the tag `contoso-website:v1.0.0`.
 
-:::image type="content" source="../media/4-1-cr-diagram.png" alt-text="A diagram that shows how container images are downloaded from a container registry to a Kubernetes cluster using a manifest file.":::
+:::image type="content" source="../media/4-1-container-registry-diagram.png" alt-text="A diagram that shows how container images are downloaded from a container registry to a Kubernetes cluster using a manifest file.":::
 
 Container registries may be public or private. Private registries require credentials to access and download images and will be the strategy you'll follow when storing container images.
 

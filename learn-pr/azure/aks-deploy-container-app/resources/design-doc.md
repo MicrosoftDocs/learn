@@ -6,7 +6,7 @@ Deploy a containerized app to Azure Kubernetes Services
 ## Role(s)
 
 <!-- - *Add the role(s)* [Role guidance](https://review.docs.microsoft.com/en-us/new-hope/information-architecture/metadata/taxonomies?branch=master#role) -->
-- devOps Engineer
+- DevOps Engineer
 
 ## Level
 
@@ -61,7 +61,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Let's suppose you work for a growing company that, because of the increased demand, needed to scale the product so it can provide a better experience to all customers. For that they asked you, the devOps Engineer, to assess which tool would be the best for the job.
+    Let's suppose you work for a growing company that, because of the increased demand, needed to scale the product so it can provide a better experience to all customers. For that they asked you, the DevOps Engineer, to assess which tool would be the best for the job.
 
     After experimenting with Kubernetes you got to Azure Kubernetes Service, which fits all the prerequisites to be the perfect tool for the company's increased growth. So, after clearance from the leadership, you have to create the future structure that will support the company in the future!
 

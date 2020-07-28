@@ -54,7 +54,7 @@ These items include:
 
 You create *node pools* to group nodes in your AKS cluster. When you create a node pool, you specify the VM size for each node in the node pool. Node pools use virtual machine scale sets as the underlying infrastructure to allow the cluster to scale the number of nodes in a node pool. New nodes created in the node pool, will always be the same size as you specified when creating the node pool.
 
-:::image type="content" source="../media/2-3-nodepool-diagram.png" alt-text="A diagram that depicts a Kubernetes cluster with two node pools. The first node pool uses NC24s_v2 VMs and the second node pool uses B2s standard VMs.":::
+:::image type="content" source="../media/2-3-node-pool-diagram.png" alt-text="A diagram that depicts a Kubernetes cluster with two node pools. The first node pool uses NC24s_v2 VMs and the second node pool uses B2s standard VMs.":::
 
 ## Node count
 
@@ -64,7 +64,7 @@ You can change the node count later in the cluster's configuration panel. It's a
 
 ## Automatic routing
 
-A Kubernetes cluster blocks all external communications by default. For example, assume you deploy a website that is accessible to all clients. You need to manually create an **Ingress* with an exception that allows incoming client connections to that particular service. This configuration requires network-related changes that forward requests from the client to an internal IP on the cluster, and finally to your application. Depending on your specific requirements, this process can be complicated.
+A Kubernetes cluster blocks all external communications by default. For example, assume you deploy a website that is accessible to all clients. You need to manually create an **Ingress** with an exception that allows incoming client connections to that particular service. This configuration requires network-related changes that forward requests from the client to an internal IP on the cluster, and finally to your application. Depending on your specific requirements, this process can be complicated.
 
 AKS allows you to overcome the complexity by enabling what is called HTTP application routing. This add-on makes it easy to access applications on the cluster through an automatically deployed Ingress Controller.
 
