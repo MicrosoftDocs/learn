@@ -57,7 +57,7 @@ Note the entries in the JSON array consist of a language attribute, an ID attrib
         {
           "language": "en",
           "id": "1",
-          "text": "Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800."
+          "text": "Bill Gates and Paul Allen founded Microsoft, in part, to develop a BASIC interpreter for the popular Altair 8800 personal computer."
         },
         {
           "language": "es",

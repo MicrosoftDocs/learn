@@ -3,7 +3,7 @@ uid: learn.wwl.extract-key-phrases-text-analytics-api
 metadata:
   title: Extract key phrases from text with the text analytics API
   description: "Automatically extract key phrases to quickly identify the main points in documents or text."
-  ms.date: 07/23/2020
+  ms.date: 07/30/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial
@@ -16,9 +16,9 @@ abstract: |
   * Structure and Submit the Request
   * Evaluate the key phrases extracted from the text
 prerequisites: |
-  Knowledge of navigating the Azure portal
-  Knowledge of at least one programming language such as C#, Python, or JavaScript
-  Basic understanding of REST APIs and JSON
+  - Knowledge of navigating the Azure portal
+  - Knowledge of at least one programming language such as C#, Python, or JavaScript
+  - Basic understanding of REST APIs and JSON
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

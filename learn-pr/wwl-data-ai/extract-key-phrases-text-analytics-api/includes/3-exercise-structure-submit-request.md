@@ -79,7 +79,7 @@ This exercise steps through the process of preparing a submission for the key ph
                List<String> phraseList = new List<string>();
 
                // Add two sentences to the list
-               phraseList.Add("Microsoft was founded by Bill Gates and Paul Allen on April 4, 1975, to develop and sell BASIC interpreters for the Altair 8800.");
+               phraseList.Add("Bill Gates and Paul Allen founded Microsoft, in part, to develop a BASIC interpreter for the popular Altair 8800 personal computer.");
                phraseList.Add("La sede principal de Microsoft se encuentra en la ciudad de Redmond, a 21 kilómetros de Seattle.");
 
                // loop through the list and pass in each sentence to key phrase extraction service
