@@ -24,5 +24,5 @@ To access some Service Trust Portal materials, you must sign in as an authentica
 Existing customers can access the Service Trust Portal at the [Service Trust Portal](https://aka.ms/STP?azure-portal=true) webpage, with one of the following online subscriptions (trial or paid):
 
 - Office 365
-- Dynamics 365
+- dynamics-365 365
 - Azure

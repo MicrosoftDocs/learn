@@ -1,4 +1,4 @@
-In this unit, you'll first create a dashboard showing all the capabilities of the device template. Next, you'll create a real device, and record the connection settings needed for the remote device app.
+In this unit, you'll first create a dashboard showing all the capabilities of the device template. Then, you'll create a view to set writable properties. Finally, you'll create a real device, and record the connection settings needed for the remote device app.
 
 ## Create a rich dashboard
 
@@ -14,15 +14,36 @@ In this unit, you'll first create a dashboard showing all the capabilities of th
 
 1. Now, click each of the rest of the telemetry and property capabilities in turn, starting at the top, and **Add tile** for each one. We are going for function over form here, we can prettify the dashboard later. For now, we just want a dashboard that will confirm all the telemetry being sent from our remote device. There's no need to add the commands to the dashboard, though that option does exist.
 
+    > [!NOTE]
+    > If you click the checkboxes for two, or more, telemetry values, then click **Add tile**, then all the values will appear in _one_ tile. This feature is a good way of saving dashboard space.
+
 1. When you've added all the tiles, scroll around a bit on your dashboard, and check out the wording in the tiles.
 
     [![Screenshot showing some sample dashboard tiles](../media/refrigerated-trucks-sample-tiles.png)](../media/refrigerated-trucks-sample-tiles.png#lightbox)
 
 1. You can drag tiles around, and the portal will try to rearrange them neatly.
 
-1. When you are satisfied with your dashboard, click **Save**, then click **Publish**. You'll now notice that in the dialog that appears, that the **Views** entry is **Yes**. Click **Publish** in the dialog.
+1. Click **Save**, to save off this view.
 
-You can create as many views as you want to, giving each a friendly name. For this module though, one dashboard will work well.
+### Create a dashboard for setting writable properties
+
+We need to create a separate view, with the sole purpose of setting writable properties. 
+
+1. Click the **Views** entry, then select the **Editing device and cloud data** tile.
+
+    [![Screenshot showing the tile to select to create a view for writable properties](../media/editing-device-cloud-data.png)](../media/editing-device-cloud-data.png#lightbox)
+
+1. Change the form name to something like "Set properties".
+
+1. Click the **Optimal temperature** property checkbox, then **Add section**.
+
+1. Verify that your view looks similar to the following, and click **Save**.
+
+    [![Screenshot showing the view for writable properties](../media/set-properties-view.png)](../media/set-properties-view.png#lightbox)
+
+1. When you are satisfied with your views, click **Publish**. You'll now notice that in the dialog that appears, that the **Views** entry is **Yes**. Click **Publish** in the dialog.
+
+You can create as many views as you want to, giving each a friendly name. For this module though, the two views will work well.
 
 The next step is to create a device.
 
@@ -56,11 +77,11 @@ The next step is to create the keys that will allow a remote device to communica
 
 1. Click **Connect** in the top-right menu. Do _not_ click **Connect to gateway**.
 
-1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. Typically, use a tool like Notepad, and save the file with a meaningful name, say "Truck connections.txt".
+1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. The **Scope ID** identifies the app, the **Device ID** the real device, and the **Primary Key** gives you permission for the connection. Typically, use a tool like Notepad, and save the text file with a meaningful name, say "Truck keys.txt". 
 
 1. Leave the **Connect method** as **Shared access signature (SAS)**.
 
-1. When you've saved off the IDs and key, click **Close** on the dialog.
+1. When you've saved off the Ids and key, click **Close** on the dialog.
 
 Leave the IoT portal open in your browser, waiting as it is.
 

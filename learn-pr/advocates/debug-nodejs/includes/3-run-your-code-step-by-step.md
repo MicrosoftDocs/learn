@@ -6,7 +6,7 @@ Debugging is a multi-stage process that usually goes along these lines:
 1. Fix the bug.
 1. Validate that your fix works.
 
-After you identify an error in your Node.js program, the first challenge you'll face is to find where the error is located is your code. To achieve that, one of the most efficient ways is to run your code step by step to get at idea of where things start to go wrong.
+After you identify an error in your Node.js program, the first challenge you'll face is to find where the error is located in your code. To achieve that, one of the most efficient ways is to run your code step by step to get an idea of where things start to go wrong.
 
 ## Breakpoints
 
