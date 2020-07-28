@@ -2,13 +2,9 @@ Consider the following scenario. Then choose the best response for each question
 
 Before they migrate their existing e-commerce system from their datacenter to production environments on Azure, the Tailwind Traders team wants to first set up environments for development and testing.
 
-<div style="background:yellow;">
-TODO: If we like this scenario, create a diagram that shows the Dev and Test environments.
+Here's a diagram that shows the basic compute, database, and networking components found in each environment:
 
-Each environment might contain a bank of VMs, a database, a network, and so on.
-
-The Test environment might be more complete because it's one step closer to production than Dev.
-</div>
+:::image type="content" source="../media/7-dev-test-environments.png" alt-text="A diagram of the development and test environments. Each environment contains virtual machines, a database, and a virtual network. The development environment includes three virtual machines. The test environment contains six virtual machines." border="false":::
 
 An e-commerce system might require a website, the products database, a payment system, and so on. Because developers can't always run the entire service from their local development environment, the _Dev_ environment is the first place where everything the app needs comes together.
 
