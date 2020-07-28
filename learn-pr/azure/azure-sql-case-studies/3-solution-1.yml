@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-case-studies.3-solution-1
+metadata:
+  title: Scenario 1 solution - Architect global scale and secure access
+  description: Scenario 1 solution - Architect global scale and secure access
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Scenario 1 solution - Architect global scale and secure access
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-solution-1.md)]
