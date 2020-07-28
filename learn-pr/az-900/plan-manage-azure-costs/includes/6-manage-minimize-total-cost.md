@@ -14,13 +14,11 @@ Ideally, you want your provisioned resources to match your actual usage.
 
 Azure Advisor identifies unused or under-utilized resources, and recommends unused resources that you can remove. This helps you configure your resources to match your actual workload.
 
-<div style="background:yellow;">
-TODO: Image is a bit blurry.
+The following image shows six recommendations from Azure Advisor:
 
-TODO: Also, can we show a better example and tie it to a specific recommendation? Looking at a recommendation around what you did in the prior exercises would be ideal ;)
-</div>
+:::image type="content" source="../media/6-azure-advisor.png" alt-text="A screenshot of Azure Advisor showing six recommendations. Recommendations are sorted by high, medium, or low impact.":::
 
-![Depicts two Azure Advisor monitor results, one for document count and one for storage size.](../media/6-usage-costs.png)
+Recommendations are sorted by impact: high, medium, or low. In some cases, Azure Advisor can automatically remediate, or fix, the underlying problem. Other issues, such as the two that are listed as high impact, require human intervention.
 
 ## Use spending limits to prevent accidental spending
 
@@ -35,14 +33,6 @@ A related concept is _quotas_, or limits on the number of similar resources you 
 ## Use Azure Reservations to pre-pay in advance
 
 Azure Reservations offers discounted prices on certain Azure services. To receive a discount, you reserve services and resources by paying in advance.
-
-<div style="background:yellow;">
-TODO: Image is pixelated.
-
-TODO: Also, can we show an image with greater meaning and perhaps tie it to a concrete example?
-</div>
-
-![Depiction of two silos, indicating the 72% cost savings you can realize by using Azure Reservations rather than a Pay-As-You-Go subscription. ](../media/6-reservations.png)
 
 For example, you can pre-pay for one year or three years of use of virtual machines, database compute capacity, database throughput, and other Azure resources.
 
@@ -70,13 +60,11 @@ Tags make it easier to identify groups that generate the biggest Azure costs, wh
 
 Azure Cost Management + Billing is a free service that helps you understand your Azure bill, manage your account and subscriptions, monitor and control Azure spending, and optimize resource use.
 
-<div style="background:yellow;">
-TODO: The "tablet" feature is non-standard here. Also, it's blurry.
+The following image shows current usage broken down by service:
 
-TODO: Also, can we show an image with greater meaning and perhaps tie it to a concrete example? 
-</div>
+:::image type="content" source="../media/6-cost-management.png" alt-text="A screenshot of Azure Cost Management + Billing showing usage broken down by Azure service." lightbox="../media/6-cost-management-expanded.png":::
 
-![Three graphics that depict a company's cost analysis by meter category, resource location, and resource group name.](../media/6-cost-management.png)
+In this example, Azure App Service, a web application hosting service, generates the greatest cost.
 
 Azure Cost Management + Billing features include:
 

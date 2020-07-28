@@ -58,7 +58,7 @@ To improve the accuracy of the TCO Calculator results, you adjust the values so 
 
 ### Step 3: View report
 
-Choose a time frame between one and five years; the TCO Calculator generates a report that's based on the information you've entered.
+Choose a time frame between one and five years; the TCO Calculator generates a report that's based on the information you've entered. Here's an example:
 
 :::image type="content" source="../media/2-tco-report-piecharts.png" alt-text="Two pie charts comparing total cost of ownership in the datacenter versus on Azure. For the datacenter, total cost of ownership is $777,258. The same workload on Azure is estimated at $107,569.":::
 

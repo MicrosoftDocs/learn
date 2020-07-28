@@ -29,7 +29,7 @@ Azure offers both free and paid subscription options to fit your needs and requi
 
 * **Member offers**
 
-    Your existing membership to certain Microsoft products and services might provide you with credits for your Azure account and reduced rates on Azure services. For example, member offers are available to Microsoft Visual Studio subscribers, Microsoft Partner Network members, Microsoft BizSpark members, and Microsoft Imagine members.
+    Your existing membership to certain Microsoft products and services might provide you with credits for your Azure account and reduced rates on Azure services. For example, member offers are available to Microsoft Visual Studio subscribers, Microsoft Partner Network members, Microsoft for Startups members, and Microsoft Imagine members.
 
 ## How do I purchase Azure services?
 
@@ -49,7 +49,9 @@ There are three main ways to purchase services on Azure. They are:
 
 You can bring up, or _provision_, Azure resources from the Azure portal or from the command line. The Azure portal arranges products and services by category. You select the services that fit your needs, and your account is billed according to Azure's "pay for what you use" model.
 
-:::image type="content" source="../media/4-azure-portal-create-resource.png" alt-text="A screenshot of the Azure portal showing many service categories as well as the more popular services.":::
+Here's an example that shows the Azure portal:
+
+:::image type="content" source="../media/4-azure-portal-create-resource.png" alt-text="A screenshot of the Azure portal showing many service categories. The Compute category is selected, which reveals compute services.":::
 
 At the end of each month, you're billed for what you've used. At any time, you can check the cost management and billing page in the Azure portal to get a summary of your current usage and review invoices from prior months.
 
@@ -71,7 +73,7 @@ Deallocating a VM when you don't plan on using it for some time is just one way 
 
 Some Azure subscription types also include usage allowances, which affect costs.
 
-For example, an Azure Free Trial subscription provides access to a number of Azure products that are free for 12 months, a $200 credit to spend within your first 30 days of sign-up, and access to more than 25 products that are always free (based on resource and region availability).
+For example, an Azure Free Trial subscription provides access to a number of Azure products that are free for 12 months, as well as credit to spend within your first 30 days of sign-up, and access to more than 25 products that are always free (based on resource and region availability).
 
 ### Azure Marketplace
 
@@ -106,9 +108,6 @@ A Zone is a geographical grouping of Azure regions for billing purposes. The fol
 * **Zone 3** - Brazil South, South Africa North, South Africa West, UAE Central, UAE North.
 
 * **DE Zone 1** - Germany Central, Germany Northeast.
-
-> [!NOTE]
-> You may be familiar with the term *Availability Zone*, which refers to a failure protection feature that Azure provides within its datacenters. An Availability Zone differs from a Zone in the context of billing.
 
 ## What other factors affect the final cost?
 
