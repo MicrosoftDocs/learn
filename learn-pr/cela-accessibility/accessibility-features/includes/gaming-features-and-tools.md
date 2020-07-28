@@ -16,7 +16,11 @@ To turn on Copilot for Xbox One:
 
 For more information, learn how to use [Copilot on Xbox One](https://beta.support.xbox.com/help/account-profile/accessibility/copilot).
 <br></br>
+<br></br>
+<br></br>
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Gamer-Choice/player?format=ny] 
+<br></br>
+<br></br>
 <br></br>
 > [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Narrated-Menus-on-the-Xbox-Console/player?format=ny]
 

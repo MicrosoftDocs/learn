@@ -28,6 +28,7 @@ products:
 - aspnet
 - azure-web-apps
 - azure-cache-redis
+- dotnet
 units:
 - learn.azure.aspnet-session.1-introduction
 - learn.azure.aspnet-session.2-exercise-deploy-resources
