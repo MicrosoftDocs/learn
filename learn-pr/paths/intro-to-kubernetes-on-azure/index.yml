@@ -27,6 +27,7 @@ modules:
 - learn.intro-to-docker-containers
 - learn.intro-to-kubernetes
 - learn.intro-to-azure-kubernetes-service
+- learn.aks-deploy-container-app
 - learn.aks-optimize-compute-costs
 trophy:
   uid: learn.intro-to-kubernetes-on-azure.trophy
