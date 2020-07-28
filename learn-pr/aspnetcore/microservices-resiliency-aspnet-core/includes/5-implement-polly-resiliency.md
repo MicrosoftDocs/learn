@@ -25,7 +25,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
     pushd src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/
     ```
 
-    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::*.
+    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::*.
 
 1. Run the following command in the command shell:
 
@@ -80,7 +80,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 1. Run the following command to build the app:
 
     ```dotnetcli
-    dotnet build
+    dotnet build --no-restore
     ```
 
     The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
@@ -115,9 +115,15 @@ Complete the following steps to deploy the changes that you've implemented:
     - Permits the AKS cluster to retrieve images from the ACR instance.
     - Generates a variation of the following output:
 
-        :::image type="content" source="../media/5-implement-polly-resiliency/create-acr.png" alt-text="Create ACR instance" border="true" lightbox="../media/5-implement-polly-resiliency/create-acr.png":::
+        ```console
+        Creating Azure Container Registry "eshoplearn20200728175107866" in resource group "eshop-learn-rg"...
 
-1. Run the following script to publish the updated image to ACR:
+         > az acr create --name eshoplearn20200728175107866 -g eshop-learn-rg -l westus -o json --sku basic --admin-enabled --query "name" -otsv
+
+        ACR instance created!
+        ```
+
+1. Run the following script to publish the updated image to the ACR instance:
 
     ```bash
     ./build-to-acr.sh
