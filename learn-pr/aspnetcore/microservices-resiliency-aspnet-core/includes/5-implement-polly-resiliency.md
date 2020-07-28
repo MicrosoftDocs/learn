@@ -110,9 +110,9 @@ Complete the following steps to deploy the changes that you've implemented:
     - Generates a variation of the following output:
 
         ```console
-        Creating Azure Container Registry "eshoplearn20200728175107866" in resource group "eshop-learn-rg"...
+        Creating Azure Container Registry "eshoplearn20200728215827705" in resource group "eshop-learn-rg"...
 
-         > az acr create --name eshoplearn20200728175107866 -g eshop-learn-rg -l westus -o json --sku basic --admin-enabled --query "name" -otsv
+         > az acr create --name eshoplearn20200728215827705 -g eshop-learn-rg -l westus -o json --sku basic --admin-enabled --query "name" -otsv
 
         ACR instance created!
         ```
@@ -125,11 +125,38 @@ Complete the following steps to deploy the changes that you've implemented:
 
     The preceding script builds and publishes the updated image to the ACR instance. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build the `webshoppingagg` image and push it to the ACR instance. You'll see a variation of the following output:
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/build-to-acr.png" alt-text="Building and publishing Docker images to ACR" border="true" lightbox="../media/5-implement-polly-resiliency/build-to-acr.png":::
+    ```console
+    Building images to ACR
+    ======================
 
-    And this when finished:
+    Building and publishing docker images to eshoplearn20200728215827705.azurecr.io
+    ~/clouddrive/aspnet-learn/src ~/clouddrive/aspnet-learn/src/deploy/k8s
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/image-built-and-published.png" alt-text="Docker images published to ACR" border="true" lightbox="../media/5-implement-polly-resiliency/image-built-and-published.png":::
+    Building image "coupon.api" for service "coupon-api" with "src/Services/Coupon/Coupon.API/Dockerfile.acr"...
+    Packing source code into tar to upload...
+    Excluding '.gitignore' based on default ignore rules
+    Uploading archived source code from '/tmp/build_archive_8ac133acf1e94357a1486d05d03368c4.tar.gz'...
+    Sending context (7.991 MiB) to registry: eshoplearn20200728215827705...
+    Queued a build with ID: cf1
+    Waiting for an agent...
+    2020/07/28 22:02:11 Downloading source code...
+    2020/07/28 22:02:13 Finished downloading source code
+    2020/07/28 22:02:13 Using acb_vol_181712d8-b881-4efa-ac0f-d09a4d497713 as the home volume
+    2020/07/28 22:02:13 Setting up Docker configuration...
+    2020/07/28 22:02:14 Successfully set up Docker configuration
+    2020/07/28 22:02:14 Logging in to registry: eshoplearn20200728215827705.azurecr.io
+    2020/07/28 22:02:15 Successfully logged into eshoplearn20200728215827705.azurecr.io
+    2020/07/28 22:02:15 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+    2020/07/28 22:02:15 Scanning for dependencies...
+    2020/07/28 22:02:16 Successfully scanned dependencies
+    2020/07/28 22:02:16 Launching container with name: build
+    ```
+
+    And this particular line once the image has been published to ACR:
+
+    ```console
+    2020/07/28 22:03:43 Successfully pushed image: eshoplearn20200728215827705.azurecr.io/coupon.api:linux-latest
+    ```
 
 1. Run the following script to deploy the updated image in ACR to AKS:
 
@@ -139,7 +166,26 @@ Complete the following steps to deploy the changes that you've implemented:
 
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/update-aks.png" alt-text="Reinstall Helm chart" border="true" lightbox="../media/5-implement-polly-resiliency/update-aks.png":::
+    ```console
+    ~/clouddrive/aspnet-learn ~/clouddrive/aspnet-learn/src/deploy/k8s
+    ~/clouddrive/aspnet-learn/src/deploy/k8s
+
+    Uninstalling chart webshoppingagg...
+    release "eshoplearn-webshoppingagg" uninstalled
+
+    Deploying Helm charts from registry "eshopdev" to "http://20.189.128.128"...
+    ---------------------
+
+    Installing chart "webshoppingagg"...
+    NAME: eshoplearn-webshoppingagg
+    LAST DEPLOYED: Tue Jul 28 22:05:13 2020
+    NAMESPACE: default
+    STATUS: deployed
+    REVISION: 1
+    TEST SUITE: None
+
+    Helm charts deployed!
+    ```
 
 1. Return to your previous location by using the following command:
 
@@ -151,18 +197,24 @@ Complete the following steps to deploy the changes that you've implemented:
 
 ### Simple retries
 
-You're going to repeat now what was done in the initial exploration, only you've already deployed the resilient BFF.
+You're going to repeat what was done in the initial exploration, only you've already deployed the resilient BFF.
 
 Consider the situation in which you configure the same two coupon failures with the code *:::no-loc text="FAIL 3 DISC-10":::*. When you enter the *:::no-loc text="DISC-10":::* code, it will take a few seconds to get the response back. Fortunately, you won't have to deal with the retrying.
 
-If you check the log traces, you should see something like this:
+1. Run the following command to view the logging page URL. Click the **Centralized logging** link.
 
-:::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces" border="true" lightbox="../media/5-implement-polly-resiliency/configure-and-retry-logs.png":::
+    ```bash
+    cat ../deployment-urls.txt
+    ```
 
-In the preceding image, you can see:
+1. Check the log traces. You should see something like this:
 
-- The log traces when configuring the simulated failures (#1) and
-- Three retries until the aggregator could finally get the value (#2).
+    :::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces" border="true" lightbox="../media/5-implement-polly-resiliency/configure-and-retry-logs.png":::
+
+    In the preceding image, you can see:
+
+    - The log traces when configuring the simulated failures (#1) and
+    - Three retries until the aggregator could finally get the value (#2).
 
 ### Circuit breaker
 
@@ -170,22 +222,28 @@ For this case, you'll configure the code for 20 failures, using *:::no-loc text=
 
 :::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure" border="true" lightbox="../media/5-implement-polly-resiliency/configure-severe-failure.png":::
 
-Now enter the code *:::no-loc text="DISC-10":::* again and select **APPLY**. You'll have to wait about 20 seconds to get the error 500 message. When you do, select **APPLY** again. After the second failure, select **APPLY** for the third time.
+Complete the following steps:
 
-On the third try, notice that the HTTP 500 error message came in much faster. That's because the circuit breaker was activated. If you select **APPLY** once again, you'll get the error message immediately.
+1. In the **HAVE A DISCOUNT CODE?** text box, enter the code *:::no-loc text="DISC-10":::* again and select **APPLY**.
+1. Wait about 20 seconds to get the HTTP 500 error message. When you do, select **APPLY** again.
+1. After the second failure, select **APPLY** for the third time.
 
-You'll see this clearly in the log traces:
+    On the third try, notice that the HTTP 500 error message came in much faster. That's because the circuit breaker was activated.
 
-:::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
+1. Select **APPLY** once again.
 
-In the preceding image, notice that:
+    Notice that you receive the error message immediately. You'll see this clearly in the log traces:
 
-- After waiting for 7.6 seconds (#1), you get the HTTP 500 error message with the retry policy (#2) but
-- The next time you try, you validate the code, you get the HTTP 500 error message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
-- If you check the details on this last trace, you should see a variation of the following output:
+    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
+    In the preceding image, notice that:
 
-    Notice that the last trace has the "The circuit is now open..." message.
+    - After waiting for 7.6 seconds (#1), you get the HTTP 500 error message with the retry policy (#2) but
+    - The next time you try, you validate the code, you get the HTTP 500 error message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
+    - If you check the details on this last trace, you should see a variation of the following output:
+
+        :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
+
+        Notice that the last trace has the "The circuit is now open..." message.
 
 Let's move on to the deployment of Linkerd in the next unit.
