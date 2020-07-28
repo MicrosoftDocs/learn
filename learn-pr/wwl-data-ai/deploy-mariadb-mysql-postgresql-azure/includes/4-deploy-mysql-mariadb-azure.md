@@ -12,14 +12,14 @@ The Azure Service makes it easy to scale our read workloads using read replicas 
 
 To enable replication click on **Replication** in the **Settings** section of the **MySQL** blade in the Azure portal as shown in the image below.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-27.png" alt-text="MySQL blade in the Azure portal highlighting Replication":::
+:::image type="content" source="../media/module-22-plan-implement-final-27.png" alt-text="MySQL blade in the Azure portal highlighting Replication":::
 
 Click **Add Replica** as shown in the image below.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-28.png" alt-text="Add Replica in MySQL":::
+:::image type="content" source="../media/module-22-plan-implement-final-28.png" alt-text="Add Replica in MySQL":::
 
 Provide a new server name and specify which Azure region it should reside in, as shown in the image below.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-29.png" alt-text="Configuring a replica in MySQL":::
+:::image type="content" source="../media/module-22-plan-implement-final-29.png" alt-text="Configuring a replica in MySQL":::
 
 Click **OK**.

@@ -6,15 +6,15 @@ In the Azure portal, click on Create a Resource on the main portal blade as show
 
 Select Single Server or Hyperscale. You will learn more about Hyperscale later, but it is typically used for large-scale databases that scale out across multiple nodes. Click the appropriate Create button.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-24.png" alt-text="Azure Database for PostgreSQL Creation Page":::
+:::image type="content" source="../media/module-22-plan-implement-final-24.png" alt-text="Azure Database for PostgreSQL Creation Page":::
 
 You will supply the Resource Group, Server Name, Region, Version, Username, and Password as shown in the image below.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-25.png" alt-text="Configuration Page for Azure Database for PostgreSQL":::
+:::image type="content" source="../media/module-22-plan-implement-final-25.png" alt-text="Configuration Page for Azure Database for PostgreSQL":::
 
 Click on Configure Server. Select the appropriate service tier for your applications and/or workloads as shown in the image below. Click ok.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-26.png" alt-text="Creation and Tier Selection for Azure Database for PostgreSQL":::
+:::image type="content" source="../media/module-22-plan-implement-final-26.png" alt-text="Creation and Tier Selection for Azure Database for PostgreSQL":::
 
 The image above also shows you that you can configure the amount of storage and properties of the storage.
 
