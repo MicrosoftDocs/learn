@@ -71,44 +71,25 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
 
     This is another way to monitor the progress of a change for the service objective for Azure SQL Database. This DMV exposes a history of changes to the database with ALTER DATABASE to the service objective and will show active progress of the change.
 
-    Here is an example of the output of this DMV after executing the above ALTER DATABASE statement:
+    Here is an example of the output of this DMV in a table format after executing the above ALTER DATABASE statement:
 
-    <table>
-      <tr>
-        <th>session_activity_id</th>
-        <th>resource_type</th>
-        <th>resource_type_desc</th>
-        <th>major_resource_id</th>
-        <th>minor_resource_id</th>
-        <th>operation</th>
-        <th>state</th>
-        <th>state_desc</th>
-        <th>percent_complete</th>
-        <th>error_code</th>
-        <th>error_desc</th>
-        <th>error_severity</th>
-        <th>error_state</th>
-        <th>start_time</th>
-        <th>last_modify_time</th>
-      </tr>
-      <tr>
-        <td>97F9474C-0334-4FC5-BFD5-337CDD1F9A21</td>
-        <td>0</td>
-        <td>Database</td>
-        <td>AdventureWorks</td>
-        <td></td>
-        <td>ALTER DATABASE</td>
-        <td>1</td>
-        <td>IN_PROGRESS</td>
-        <td>0</td>
-        <td>0</td>
-        <td></td>
-        <td>0</td>
-        <td>0</td>
-        <td>[date time]</td>
-        <td>[date time]</td>
-      </tr>
-    </table>
+    Item                | Value
+    ---                 | ---
+    session_activity_id | 97F9474C-0334-4FC5-BFD5-337CDD1F9A21
+    resource_type       | 0
+    resource_type_desc  | Database
+    major_resource_id   | AdventureWorks
+    minor_resource_id   | 
+    operation           | ALTER DATABASE
+    state               | 1
+    state_desc          | IN_PROGRESS
+    percent_complete    | 0
+    error_code          | 0
+    error_desc          | 
+    error_severity      | 0
+    error_state         | 0
+    start_time          | [date time]
+    last_modify_time    | [date time]
 
     During a change for the service objective, queries are allowed against the database until the final change is implemented so an application cannot connect for a very brief period of time. For Azure SQL Database Managed Instance, a change of tier will allow queries and connections but prevents all database operations like creation of new databases (in these cases operations like these will fail with the error message "**The operation could not be completed because a service tier change is in progress for managed instance '[server]' Please wait for the operation in progress to complete and try again**")
 
