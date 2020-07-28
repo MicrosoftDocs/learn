@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-nodejs.4-when-use
+title: Why you might need Node.js?
+metadata:
+  title: Why you might need Node.js?
+  description: Learn why Node.js is the perfect choice for your JavaScript applications running outside the browser.
+  ms.date: 02/25/2020
+  author: manekinekko
+  ms.author: wachegha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-when-use.md)]

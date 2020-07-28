@@ -42,7 +42,7 @@ From the Azure DevOps demo generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint, or work iteration.
+In this part, you'll assign a work item to yourself that relates to this module on Azure Boards. You'll also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint, or work iteration.
 
 Assigning work in this way gives you a checklist to work from. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress limits, so that the team doesn't take on too much work at one time.
 
