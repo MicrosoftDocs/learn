@@ -30,40 +30,11 @@ You can explore the app when it becomes fully available again to verify it's fai
 
 ## Install Linkerd
 
-### 1. Install the Linkerd CLI
+As you recall, the Linkerd CLI was installed as part of the module setup. To finish configuration, complete the following steps.
 
-Run the following command:
+### Validate your Kubernetes cluster
 
-```bash
-curl -sL https://run.linkerd.io/install | sh
-```
-
-You'll see the following output after a few seconds (depending on your Internet connection):
-
-:::image type="content" source="../media/6-implement-linkerd-resiliency/install-linkerd.png" alt-text="install Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/install-linkerd.png":::
-
-Next, add Linkerd to your `PATH` environment variable by running the following command:
-
-```bash
-export PATH=$PATH:$HOME/.linkerd2/bin
-```
-
-> [!NOTE]
-> You'll have to run the above command every time you start a session, unless you update the *~/.profile* file accordingly.
-
-Check the Linkerd CLI is running correctly using:
-
-```bash
-linkerd version
-```
-
-You should get something like this:
-
-:::image type="content" source="../media/6-implement-linkerd-resiliency/check-linkerd-version.png" alt-text="check Linkerd version" border="true" lightbox="../media/6-implement-linkerd-resiliency/check-linkerd-version.png":::
-
-### 2. Validate your Kubernetes cluster
-
-To be sure all Linkerd prerequisites are met, run this command:
+Run the following command to confirm that Linkerd prerequisites have been satisfied:
 
 ```bash
 linkerd check --pre
@@ -73,9 +44,9 @@ You should get something like this:
 
 :::image type="content" source="../media/6-implement-linkerd-resiliency/check-linkerd-pre.png" alt-text="check Linkerd prerequisites" border="true" lightbox="../media/6-implement-linkerd-resiliency/check-linkerd-pre.png":::
 
-### 3. Install Linkerd onto the cluster
+### Install Linkerd onto the cluster
 
-Run this command:
+Run the following command:
 
 ```bash
 linkerd install | kubectl apply -f -
@@ -83,9 +54,9 @@ linkerd install | kubectl apply -f -
 
 You should see the list of objects being created.
 
-### 4. Verify the Linkerd status in the cluster
+### Verify the Linkerd status in the cluster
 
-Run this command:
+Run the following command:
 
 ```bash
 linkerd check
@@ -105,7 +76,7 @@ To keep the exercise short and focused, you'll implement Linkerd on two services
 
 You could check the app behavior now, but it will be unchanged. Linkerd only retries on the routes configured in the `ServiceProfile`.
 
-### 1. Modify the `webshoppingagg` and `coupon` deployments
+### Modify the `webshoppingagg` and `coupon` deployments
 
 Edit the `coupon` chart *deployment.yaml* file (*deploy/k8s/helm-simple/coupon/templates/deployment.yaml*) and add the following annotations in line 20:
 
@@ -175,7 +146,7 @@ spec:
     ...
 ```
 
-### 2. Add the ServiceProfile for the GET coupon route
+### Add the ServiceProfile for the GET coupon route
 
 The `ServiceProfile` manifest content is shown next and it's already included in the *deploy/k8s/linkerd* directory, so you just have to run this command from the *deploy/k8s* directory:
 
@@ -183,7 +154,7 @@ The `ServiceProfile` manifest content is shown next and it's already included in
 kubectl apply -f linkerd/coupon-serviceprofile.yaml
 ```
 
-### 3. Configure headers for Nginx
+### Configure headers for Nginx
 
 Linkerd needs additional information in the request headers, so you have to add some annotations in the ingress route.
 
@@ -232,7 +203,7 @@ spec:
 ...
 ```
 
-### 4. Deploy the updated Helm charts
+### Deploy the updated Helm charts
 
 Use the following command to redeploy the updated charts:
 
