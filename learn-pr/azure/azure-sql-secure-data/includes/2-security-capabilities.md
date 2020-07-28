@@ -33,7 +33,7 @@ The next option you have is to leverage firewall rules. Your results can be simi
 
 :::image type="content" source="../media/2-firewall-rules.png" alt-text="Firewall rules" border="false":::
 
-Note that it is possible to Allow access to Azure services so you get connectivity in Azure, and then add firewall rules for just your on-premises connectivity. As previously mentioned, the Allow access to Azure services is not as secure since it allows all Azure traffic, so the recommendation would be to instead use firewall rules exclusively.
+You can also allow access to Azure services so you get connectivity in Azure, and then add firewall rules for just your on-premises connectivity. As previously mentioned, the Allow access to Azure services is not as secure since it allows all Azure traffic, so the recommendation would be to instead use firewall rules exclusively.
 
 Let's take the example above with firewall rules configured. From a tool supporting T-SQL, you could run the following query from your Azure VM in the virtual network "SQLDBVNET-EUS":
 
@@ -45,11 +45,11 @@ The result would be `174.17.218.16`. This IP address is the public IP address of
 
 #### Virtual network rules
 
-If you wanted to use only firewall rules, setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). A much easier alternative is to use Virtual network (VNet) rules to establish and to manage access from specific networks that contain VMs or other services that need to access the data.
+If you wanted to use only firewall rules, setting this up can be complicated, since it means you'll have to specify a range of IP addresses for all your connections (which can sometimes have dynamic IP addresses). A much easier alternative is to use virtual network rules to establish and to manage access from specific networks that contain VMs or other services that need to access the data.
 
-If you configure access from a VNet with a Virtual Network rule, then any resources in that VNet can access the Azure SQL Database logical server, which can simplify the challenge of configuring access to all the IP addresses (static and dynamic) that need to access the data. VNet rules allow you to specify one or multiple virtual networks, encompassing all of the resources within. You can also start to leverage VNet technologies to connect networks across regions in Azure and even to on-premises.  
+If you configure access from a virtual network with a virtual network rule, then any resources in that virtual network can access the Azure SQL Database logical server, which can simplify the challenge of configuring access to all the IP addresses (static and dynamic) that need to access the data. Virtual network rules allow you to specify one or multiple virtual networks, encompassing all of the resources within. You can also start to leverage virtual network technologies to connect networks across regions in Azure and even to on-premises.  
 
-:::image type="content" source="../media/2-vnet-rules.png" alt-text="VNet Rules" border="false":::
+:::image type="content" source="../media/2-vnet-rules.png" alt-text="Virtual network rules" border="false":::
 
 In this example, you could run the same query as in the previous section from your Azure VM in the virtual network "SQLDBVNET-EUS":
 
@@ -57,7 +57,7 @@ In this example, you could run the same query as in the previous section from yo
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```  
 
-The result would now be `10.0.0.2`. This IP address is the private IP address of the Azure VM. This gets you one step closer to making private connections to your Azure SQL Database logical server, since now resources are connecting through the VNet.
+The result would now be `10.0.0.2`. This IP address is the private IP address of the Azure VM. This gets you one step closer to making private connections to your Azure SQL Database logical server, since now resources are connecting through the virtual network.
 
 Another common strategy for analyzing your connection is to examine the DNS hierarchy. In the same Azure VM, in a command prompt you could run the following command:
 
@@ -90,19 +90,19 @@ Even though the connection through T-SQL is coming through the private IP addres
 
 ### Private Link for Azure SQL Database
 
-You've seen how to configure the most secure network using Azure SQL Database with the public endpoint, which is similar to the way that Azure SQL Managed Instance is deployed. This method of securing Azure SQL Database has been used for years. However, in 2019, Azure began moving towards a concept of a Private Link, which is more similar to the way that Azure SQL Managed Instance is deployed. Private Link allows you to connect to Azure SQL Database (and several other PaaS offerings) using a private endpoint, which means it has a private IP address within a specific VNet.  
+You've seen how to configure the most secure network using Azure SQL Database with the public endpoint, which is similar to the way that Azure SQL Managed Instance is deployed. This method of securing Azure SQL Database has been used for years. However, in 2019, Azure began moving towards a concept of a Private Link, which is more similar to the way that Azure SQL Managed Instance is deployed. Private Link allows you to connect to Azure SQL Database (and several other PaaS offerings) using a private endpoint, which means it has a private IP address within a specific virtual network.  
 
 :::image type="content" source="../media/2-private-endpoint.png" alt-text="Private endpoint connection" border="false":::
 
-In the example above, what you'll notice is that the general networking infrastructure did not change, you can still leverage the VNet connectivity strategies from VNet rules. However, you will not have to create VNet rules. Resources that need to connect to the database server simply have to have access to the VNet where the endpoint resides (in this case "SQLDBVNET-EUS"). Only connections going through the private endpoint will have access, all other connections (for example, from the internet) will be denied.
+In the example above, what you'll notice is that the general networking infrastructure did not change, you can still leverage the virtual network connectivity strategies from virtual network rules. However, you will not have to create virtual network rules. Resources that need to connect to the database server simply have to have access to the virtual network where the endpoint resides (in this case "SQLDBVNET-EUS"). Only connections going through the private endpoint will have access, all other connections (for example, from the internet) will be denied.
 
-Continuing with this example, on the Azure VM in VNet "SQLDBVNET-EUS", you could once again run the following TSQL:
+Continuing with this example, on the Azure VM in virtual network "SQLDBVNET-EUS", you could once again run the following TSQL:
 
 ```sql
 SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
 ```
 
-The result would now be `10.0.0.2`, which is the private IP address of the Azure VM in this example. By adding access from your specific VNet, connections to Azure SQL Database from your VM will appear to come through the private IP address of your VM. This is the same result you saw with virtual network rules.  
+The result would now be `10.0.0.2`, which is the private IP address of the Azure VM in this example. By adding access from your specific virtual network, connections to Azure SQL Database from your VM will appear to come through the private IP address of your VM. This is the same result you saw with virtual network rules.  
 
 However, if you leverage the command prompt to look at the DNS hierarchy, using the follow command:
 
@@ -125,7 +125,7 @@ Aliases:    aw-server.database.windows.net
 The important things to look at are under the Non-authoritative answer, and let's examine the differences:  
 
 * **Name**: Note that you're no longer pointing to the public DNS hierarchy, only to the Private Link DNS. This means less information is revealed about your database server.  
-* **Addresses**: For VNet rules, the address returned is the public IP address of your VM, but it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
+* **Addresses**: For virtual network rules, the address returned is the public IP address of your VM, but it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
 * **Aliases**: Similar to the Name field, you're not seeing anything related to the DNS hierarchy, except that you can still connect to the server name (for example, `aw-server.database.windows.net`).  
 
 One thing you might be wondering, is if you are connecting to the private endpoint, **why are you still using the same server name?** In the backend, when you use solely the Private Link method of connecting (i.e. no firewall or virtual network rules), the information is processed as follows:  
@@ -138,7 +138,7 @@ Additionally, the service will block you from directly connecting using anything
 
 ### Azure SQL Managed Instance
 
-While Azure SQL Managed Instance's deployment is different from Azure SQL Database, understanding the networking functionality at a high level is easy to translate from Azure SQL Database to Azure SQL Managed Instance. In Azure SQL Managed Instance, either before or during deployment, you must create a specific subnet (logical grouping within a VNet) with several requirements to host the Azure SQL Managed Instance(s). Once deployed, it is already configured similar to a private endpoint in Azure SQL Database. Using standard networking practices, you must enable access to the VNet that the managed instance lives. By default, you have a private endpoint and relatively private DNS hierarchy.  
+While Azure SQL Managed Instance's deployment is different from Azure SQL Database, understanding the networking functionality at a high level is easy to translate from Azure SQL Database to Azure SQL Managed Instance. In Azure SQL Managed Instance, either before or during deployment, you must create a specific subnet (logical grouping within a virtual network) with several requirements to host the Azure SQL Managed Instance(s). Once deployed, it is already configured similar to a private endpoint in Azure SQL Database. Using standard networking practices, you must enable access to the virtual network that the managed instance lives. By default, you have a private endpoint and relatively private DNS hierarchy.  
 
 :::image type="content" source="../media/2-sql-managed-instance-network.png" alt-text="SQL Managed Instance Network" border="false":::
 
