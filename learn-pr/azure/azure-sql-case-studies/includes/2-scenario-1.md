@@ -21,8 +21,6 @@ For these scenarios module, you'll spend some time determining the problem state
 
 ## Scenario 1: Architect global scale and secure access
 
-### Scenario description  
-
 Your customer is a provider for services and content delivery across the globe. They've requested your assistance in architecting a system that can handle thousands of writes per second to what is essentially an operational data mart. They also need to be able to perform real-time analytics on the data, to determine trends and identify anomalies, which they are currently doing with CLR applications. They are not looking for a data warehouse and utilize large portions of the SQL surface area, but they need to be able to scale where their users live.  
 
 Additionally, they are trying to determine which authentication methods they should use in their hybrid environment. While the main solution and application will live in Azure, they also need to accommodate the following:
@@ -33,14 +31,14 @@ Additionally, they are trying to determine which authentication methods they sho
 
 Wherever possible, they want to eliminate hard coding passwords/secrets in the connection strings and app config files, and they want to eliminate using passwords in SQL tools or find a way to enhance that authentication.
 
-*Scenario guidance*:
+### Scenario guidance
 
 - Start with the Azure SQL deployment option that is most compatible with their current solution and available today.
 - How will they scale over multiple regions with multiple queries happening at the same time, while isolating read workloads from write workloads?
 - How can they access data across the various deployments?
 - Which authentication methods would you recommend for the interaction paths described in the scenario?  
 
-## Tasks
+### Tasks
 
 1. After reviewing the scenario and the guidance provided, pull out as many requirements for the project as you can find.
 1. List out the possible technologies and processes that could potentially be used in a solution. Feel free to adapt the scenario to have more information where you want clarity, you can make assumptions in this case.
@@ -50,4 +48,4 @@ Wherever possible, they want to eliminate hard coding passwords/secrets in the c
 
 After you have a preliminary solution in mind, the next step is often to present it to the larger team (or customer, leadership, etc. depending on the scenario). You'll need to assemble and present your solution in a way that shares the project goals and constraints, as well as how your solution addresses those items.  
 
-When you're ready, take the quiz below to evaluate how your solution compares to a sample solution. There can be multiple right answers, so even if your solution isn't listed, it could be viable.
+When you're ready, answer the questions below to evaluate how your solution compares to a sample solution. There can be multiple right answers, so even if your solution isn't listed, it could be viable.
