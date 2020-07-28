@@ -77,13 +77,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
     You can also see that the Circuit Breaker policy "opens the breaker" for 15 seconds, after 15 continuous failures. This policy configuration gives the server some time to recover.
 
-1. Run the following command to build the app:
-
-    ```dotnetcli
-    dotnet build --no-restore
-    ```
-
-    The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
+1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. Return to your previous location by using the following command:
 
