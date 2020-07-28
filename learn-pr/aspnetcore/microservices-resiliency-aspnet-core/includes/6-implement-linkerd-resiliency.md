@@ -19,14 +19,14 @@ To revert, redeploy the modified service from the original repository, using the
 
 You can explore the app when it becomes fully available again to verify it's failing immediately on the configured discount code, as you just did in the previous exercise. As a refresher, complete the following tasks:
 
-- Log in to the app.
-- Select the **.NET FOUNDATION PIN**.
-- Select the basket icon at the top right of the page.
-- Select **CHECKOUT**.
-- Go to the **HAVE A DISCOUNT CODE?** input.
-- Enter the code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
-- Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
-- Verify that you receive the "**ERROR: 500 - Internal Server Error!**" immediately after select **APPLY** each time.
+* Log in to the app.
+* Select the **.NET FOUNDATION PIN**.
+* Select the basket icon at the top right of the page.
+* Select **CHECKOUT**.
+* Go to the **HAVE A DISCOUNT CODE?** input.
+* Enter the code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
+* Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
+* Verify that you receive the "**ERROR: 500 - Internal Server Error!**" immediately after select **APPLY** each time.
 
 ## Install Linkerd
 
@@ -40,7 +40,7 @@ curl -sL https://run.linkerd.io/install | sh
 
 You'll see the following output after a few seconds (depending on your Internet connection):
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/install-linkerd.png" alt-text="install Linkerd":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/install-linkerd.png" alt-text="install Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/install-linkerd.png":::
 
 Next, add Linkerd to your `PATH` environment variable by running the following command:
 
@@ -59,7 +59,7 @@ linkerd version
 
 You should get something like this:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/check-linkerd-version.png" alt-text="check Linkerd version":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/check-linkerd-version.png" alt-text="check Linkerd version" border="true" lightbox="../media/6-implement-linkerd-resiliency/check-linkerd-version.png":::
 
 ### 2. Validate your Kubernetes cluster
 
@@ -71,7 +71,7 @@ linkerd check --pre
 
 You should get something like this:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/check-linkerd-pre.png" alt-text="check Linkerd prerequisites":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/check-linkerd-pre.png" alt-text="check Linkerd prerequisites" border="true" lightbox="../media/6-implement-linkerd-resiliency/check-linkerd-pre.png":::
 
 ### 3. Install Linkerd onto the cluster
 
@@ -93,15 +93,15 @@ linkerd check
 
 You should see a checklist similar to the pre-install one, but longer. It's also probable that the check pauses several times while waiting for the components to become ready. Eventually, you should get to something like this:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/linkerd-check.png" alt-text="Linkerd status check results":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/linkerd-check.png" alt-text="Linkerd status check results" border="true" lightbox="../media/6-implement-linkerd-resiliency/linkerd-check.png":::
 
 ## Configure the app to use Linkerd
 
 To keep the exercise short and focused, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. You'll:
 
-- Modify the deployments so Linkerd creates its proxy container in the pods.
-- Add a `ServiceProfile` object to the cluster, to configure the retries on the selected route.
-- Configure headers for the related Nginx ingress.
+* Modify the deployments so Linkerd creates its proxy container in the pods.
+* Add a `ServiceProfile` object to the cluster, to configure the retries on the selected route.
+* Configure headers for the related Nginx ingress.
 
 You could check the app behavior now, but it will be unchanged. Linkerd only retries on the routes configured in the `ServiceProfile`.
 
@@ -242,29 +242,29 @@ Use the following command to redeploy the updated charts:
 
 You should see that the updated pods have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers" border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
 
 ## Explore the app behavior with Linkerd
 
 Let's explore the app behavior now with a similar process:
 
-- Log in to the app.
-- Select the **.NET FOUNDATION PIN**.
-- Select the basket icon at the top right of the page.
-- Select **CHECKOUT**.
-- Go to the **HAVE A DISCOUNT CODE?** input.
-- Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
-- Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
-- You'll notice that this time, you receive the correct response almost immediately.
+* Log in to the app.
+* Select the **.NET FOUNDATION PIN**.
+* Select the basket icon at the top right of the page.
+* Select **CHECKOUT**.
+* Go to the **HAVE A DISCOUNT CODE?** input.
+* Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
+* Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
+* You'll notice that this time, you receive the correct response almost immediately.
 
 If you check the log traces, you should see something like this:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
 
 As mentioned in the review unit, Linkerd follows a different approach to resiliency from what we saw with Polly. Linkerd retried five times in fast sequence so we didn't notice any failure at all.
 
 For more information about Linkerd configuration, see the following resources:
 
-- [Configuring Retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries)
-- [Configuring Timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts)
-- [How we designed retries in Linkerd 2.2 - Linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2)
+* [Configuring Retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries)
+* [Configuring Timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts)
+* [How we designed retries in Linkerd 2.2 - Linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2)
