@@ -24,7 +24,7 @@ To access the command line of your Data Science Virtual Machine, you'll use:
 
 ### Install an SSH client on Windows, if necessary
 
-If you're running Linux or macOS, an ssh client is part of the OS standard utilities. If you're running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
+If you're running Linux or macOS, an SSH client is part of the OS standard utilities. If you're running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
 
 ```powershell
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'

@@ -17,13 +17,15 @@ With a Data Science Virtual Machine, you only pay for when the machine is runnin
 
 The Data Science Virtual Machine has dozens of applications and programming tools and libraries preinstalled and preconfigured. These tools are configured to take advantage of the GPU(s) if you choose to run the Data Science Virtual Machine on hardware with GPU compute resources. For Python, R, Julia, Node, and .NET developers, not only are the base languages installed, but so are popular packages, development environments, and Jupyter kernels.
 
+For discussions sake, imagine that you're a bank analyst interested in doing some statistical analysis for the purposes of predicting investment trends. You don't yet really know what will come of this analysis, but you hope that you can extract a signal and develop a model that could potentially have a large impact. Because it's early in the process, you don't know exactly what tools and approaches will end up being important, but the data volume is large enough that it's difficult to work with locally while sharing work with your colleagues.
+
 ## Learning objectives
 
 In this module, you'll:
 
 * Match operating systems and hardware resources available for the Data Science Virtual Machine
 * Specify and create a Data Science Virtual Machine running Ubuntu Server 18.04 LTS
-* Connect to the command line of the Data Science Virtual Machine with SSH 
-* Connect to the graphical Desktop of the Data Science Virtual Machine with X2Go Client 
+* Connect to the command line of the Data Science Virtual Machine with SSH
+* Connect to the graphical Desktop of the Data Science Virtual Machine with X2Go Client
 * Demonstrate the use of RStudio running inside the Data Science Virtual Machine
 * List custom Python environments, activate one, and run Jupyter notebook server
