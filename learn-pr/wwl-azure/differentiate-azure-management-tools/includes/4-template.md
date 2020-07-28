@@ -1,7 +1,7 @@
 ## Exercise - Use Templates to create a Virtual Machine
 
 > [!NOTE]
-> This lab requires and Azure Subscription to complete.  You can use a free Azure account, or a paid one.
+> This lab requires an Azure Subscription to complete.  You can use a free Azure account, or a paid one.
 
 ---
 
