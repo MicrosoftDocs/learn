@@ -1,3 +1,4 @@
+Referring to our scenario, let's say that you've decided to work on an Ubuntu Data Science Virtual Machine. To do so, you'll specify its configuration and create a resource in your Resource Group.
 
 ## Create a Data Science VM with the Azure portal
 

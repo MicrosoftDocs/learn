@@ -57,4 +57,6 @@ In the Data Science Virtual Machine, your training models can use deep learning 
 
 The Data Science Virtual Machine is configured with the proper drivers, framework versions and configurations, and GPU tools for those tools and frameworks that support GPU acceleration. If you use Python, there are several conda environments configured to avoid confusion. For instance, Pythorch and Tensorflow are in separate environments. 
 
-You can also deploy the Ubuntu or Windows editions of the Data Science Virtual Machine to an Azure virtual machine that isn't based on GPUs. In this case, all the deep learning frameworks will fall back to the CPU mode.
+You can also deploy the Ubuntu or Windows editions of the Data Science Virtual Machine to an Azure virtual machine that isn't based on GPUs. In this case, all the deep learning frameworks will fall back to the CPU model.
+
+Our scenario, where you are investigating bank data to help predict trends, touch on several of these use-cases: collaboration, capacity, and exploration. 

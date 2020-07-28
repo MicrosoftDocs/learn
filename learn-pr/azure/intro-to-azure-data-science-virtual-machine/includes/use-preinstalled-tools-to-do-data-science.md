@@ -1,4 +1,4 @@
-Now that you're connected to your Data Science Virtual Machine, you can begin using it to do data science. 
+Now that you're connected to your Data Science Virtual Machine, you can begin using it to do data science.
 
 The Data Science Virtual Machine comes with tools preinstalled for:
 
@@ -20,7 +20,9 @@ When RStudio completes startup, enter `demo(graphics)` in the Console window to 
 
 ![Screenshot showing RStudio](../media/rstudio.png)
 
-The free Azure resources used for this learning module don't have permission to access the Internet, unlike those you create with your own account. Since the Data Science Virtual Machine can't access the Internet in this context, it can't download the data files needed for the included Python Jupyter notebook tutorials. 
+The free Azure resources used for this learning module don't have permission to access the Internet, unlike those you create with your own account. Since the Data Science Virtual Machine can't access the Internet in this context, it can't download the data files needed for the included Python Jupyter notebook tutorials.
+
+In our scenario, your local data disk might be mounted as a remote disk on the virtual machine and you could begin your analysis immediately.
 
 ## List and activate a Python conda environment
 
