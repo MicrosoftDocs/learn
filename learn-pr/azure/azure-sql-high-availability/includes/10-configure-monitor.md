@@ -47,7 +47,7 @@ PowerShell commands can also be used to find out the availability of an Azure SQ
 - **Get-AzSQLDatabase** - Get all the databases on a server and their details including status
 - **REST APIs**, although not as simple to use, can also be used to get the status of Managed Instances and Databases.
 
-### Backup and Restore History
+### Backup and restore history
 
 Azure SQL automatically backs up databases and transaction logs. Although standard backup history is not available, **Long-term backup retention history** can be viewed through the Azure portal or CLI interfaces. Additionally, Azure SQL Managed Instance supports using XEvents to track the backup history.
 

@@ -35,13 +35,13 @@ units:
 - learn.azure-sql-high-availability.1-introduction
 - learn.azure-sql-high-availability.2-backup-restore
 - learn.azure-sql-high-availability.3-exercise-restore-point-in-time
-- learn.azure-sql-high-availability.4-high-availability-arch
+- learn.azure-sql-high-availability.4-high-availability-architecture
 - learn.azure-sql-high-availability.5-exercise-general-purpose-high-availability
 - learn.azure-sql-high-availability.6-exercise-business-critical-high-availability
 - learn.azure-sql-high-availability.7-higher-availability-options
 - learn.azure-sql-high-availability.8-exercise-auto-failover-groups
 - learn.azure-sql-high-availability.9-availability-consistency
-- learn.azure-sql-high-availability.10-configuring-monitoring
+- learn.azure-sql-high-availability.10-configure-monitor
 - learn.azure-sql-high-availability.11-summary
 badge:
   uid: learn.azure-sql-high-availability.badge

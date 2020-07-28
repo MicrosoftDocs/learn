@@ -117,7 +117,8 @@ For this exercise, you'll leverage two ostress workloads to check the *Updateabi
     .\ostress.exe -S"<server-name>-fg.database.windows.net" -Q"SELECT DATABASEPROPERTYEX(DB_NAME(),'Updateability')" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50000 -oprimary
     ```
 
-    Note that you connect to the failover group server name, which is the abstraction for the database.
+    > [!NOTE]
+    > With auto-failover groups, you connect to the failover group name, which is the abstraction for the database.
 
 1. The second command prompt window will be used to check the status of your secondary server in the failover group you created. Format and then run the following command with your server name and password:  
 

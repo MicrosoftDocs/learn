@@ -208,7 +208,8 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Log analytics results":::
 
-    Note that the logs can take a 5-10 minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
+    > [!NOTE]
+    > The logs can take a 5-10 minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
 
 1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Update it using this example as a reference and to the definition of `$before_error_time`. You also may want to subtract `.001` seconds, to ensure you restore to *before* the error occurred.  
 

@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure-sql-high-availability.10-configuring-monitoring
+uid: learn.azure-sql-high-availability.10-configure-monitor
 metadata:
-  title: Configuring and monitoring availability
-  description: Configuring and monitoring availability
+  title: Configure and monitor availability
+  description: Configure and monitor availability
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Configuring and monitoring availability
+title: Configure and monitor availability
 durationInMinutes: 10
 content: |
-  [!include[](includes/10-configuring-monitoring.md)]
+  [!include[](includes/10-configure-monitor.md)]
 quiz:
     title: Knowledge Check
     questions:
