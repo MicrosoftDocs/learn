@@ -30,7 +30,7 @@ To activate the desired conda environment:
 
 1. Click the terminal emulator icon on the toolbar of the Data Science Virtual Machine's desktop
 
-    ![Ubuntu desktop with terminal highlighted](../media/desktop-ubuntu.png)
+    ![Ubuntu desktop with terminal highlighted](../media/desktop-ubuntu-terminal.png)
 
 1. To initialize conda and activate it, run:
 
@@ -77,6 +77,6 @@ To start a Jupyter server, run:
 jupyter notebook
 ```
 
-After startup, the Firefox browser on your Data Science Virtual Machine should start and open to `localhost:8888/tree`, showing the home directory of your Data Science Virtual Machine user. While the **notebooks* directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Since your Data Science Virtual Machine is running in a Learn Sandbox, you can't access such data at this time.
+After startup, the Firefox browser on your Data Science Virtual Machine should start and open to `localhost:8888/tree`, showing the home directory of your Data Science Virtual Machine user. While the **notebooks** directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Since in this module your Data Science Virtual Machine is running in a free, restricted Azure environment, you can't access that data at this time.
 
 Feel free to try other software on the machine, although the Sandbox restrictions will affect those programs that rely on Internet access.
