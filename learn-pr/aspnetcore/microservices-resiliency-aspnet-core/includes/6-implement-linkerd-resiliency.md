@@ -1,6 +1,6 @@
 In the previous unit, you implemented resiliency by adding failure-handling code with Polly. This change only applies to the service you changed, however. Updating a large app with many services would be non-trivial. In this using, you'll implement an infrastructure-based resiliency approach spanning the entire app with Linkerd.
 
-In this exercise you will:
+In this unit, you will:
 
 * Return the app to the original version.
 * Deploy Linkerd in your cluster.
@@ -26,7 +26,7 @@ You can explore the app when it becomes fully available again to verify it's fai
 * Go to the **HAVE A DISCOUNT CODE?** input.
 * Enter the code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
 * Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
-* Verify that you receive the "**ERROR: 500 - Internal Server Error!**" immediately after select **APPLY** each time.
+* Verify that you receive the message **ERROR: 500 - Internal Server Error!** immediately after select **APPLY** each time.
 
 ## Install Linkerd
 

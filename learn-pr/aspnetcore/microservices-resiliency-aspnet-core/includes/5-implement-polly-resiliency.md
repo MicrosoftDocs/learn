@@ -82,7 +82,15 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
 Complete the following steps to deploy the changes that you've implemented:
 
-1. Run the following script from the *deploy/k8s* directory to create an ACR instance:
+1. Set your current location to the Kubernetes deployment scripts directory by using the following command:
+
+    ```bash
+    pushd deploy/k8s/
+    ```
+
+    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/deploy/k8s":::*.
+
+1. Run the following script to create an ACR instance:
 
     ```bash
     ./create-acr.sh
@@ -119,6 +127,12 @@ Complete the following steps to deploy the changes that you've implemented:
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
 
     :::image type="content" source="../media/5-implement-polly-resiliency/update-aks.png" alt-text="Reinstall Helm chart" border="true" lightbox="../media/5-implement-polly-resiliency/update-aks.png":::
+
+1. Return to your previous location by using the following command:
+
+    ```bash
+    popd
+    ```
 
 ## Explore the system response when implementing resiliency
 
