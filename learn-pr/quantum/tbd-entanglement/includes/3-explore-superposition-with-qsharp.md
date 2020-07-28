@@ -173,7 +173,7 @@ to a qubit in the state $\ket{0}.$
 
 > [!TIP]
 > If you want to learn more about the math behind single qubit operations, 
-> you can check the 
+> you can check the
 > [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates).
 
 The operation would be:
@@ -400,6 +400,7 @@ each step:
    get vanisheid, this is $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$
    and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the
    normalization condition.
+
     ```qsharp
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
