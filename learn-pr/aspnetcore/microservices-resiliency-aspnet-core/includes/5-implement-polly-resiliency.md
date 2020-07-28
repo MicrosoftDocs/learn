@@ -107,7 +107,7 @@ Complete the following steps to deploy the changes that you've implemented:
 1. Run the following script to publish the updated image to ACR:
 
     ```bash
-    ./build-to-acr.sh --charts webshoppingagg
+    ./build-to-acr.sh
     ```
 
     The preceding script builds and publishes the updated image to ACR. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build the `webshoppingagg` image and push it to the ACR instance. You'll see a variation of the following output:
