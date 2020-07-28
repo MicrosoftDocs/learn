@@ -75,7 +75,7 @@ The goal of this module is to train experienced SQL Server professionals.
     Include confirm TDE here   
     https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/03-Security.md#5    
 
-1. **Monitoring, logging & auditing**  
+1. **Security management**  
     - Be able to configure and understand monitoring, auditing, and logging features in Azure SQL Database and Managed Instance  
     https://github.com/microsoft/sqlworkshops-azuresqlworkshop/blob/master/azuresqlworkshop/03-Security.md#3.4  
 
