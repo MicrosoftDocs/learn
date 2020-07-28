@@ -1,13 +1,13 @@
-The package.json file is a manifest file for your Node.js project. It contains numerous metadata information on your project but it also governs things such as how your dependencies are managed and what files go into a package meant for NPM and much more. Let's have a closer look at all the different properties and what they mean.
+The package.json file is a manifest file for your Node.js project. It contains metadata information on your project. It also governs things like how your dependencies are managed, what files go into a package meant for npm, and much more. Let's take a closer look at the properties and what they mean.
 
 ## Initialize a package.json
 
-A `package.json` file is not something you author by hand but it's the result of running the `init` command. There are two major ways to run this command:
+A package.json file isn't something you author by hand. It's the result of running the `init` command. There are two main ways to run this command:
 
-- `npm init`, this command will start a wizard where you are prompted for information around `name`, `version`, `description`, `entry point`, `test command`, `git repository`, `keywords`, `author`, `license`.
-- `npm init -y`, this command including the flag `-y` is a quicker version of `npm init`. It's quicker in the sense that it's *not* interactive. Instead it assigns the default value to all fields that you were asked for when running `npm init`.
+- `npm init`. This command starts a wizard that will prompt you for information about a project's name, version, description, entry point, test command, Git repository, keywords, author, and license.
+- `npm init -y`. This command, with the `-y` flag, is a faster version of `npm init`. It's faster in the sense that it's *not* interactive. Instead, it assigns default values to all values you'd be asked to supply if you ran `npm init`.
 
-Regardless of whether you run the `npm init` or `npm init -y` command it will generate a `package.json` file. Here's what a generated `package.json` can look like:
+The `npm init` command and the `npm init -y` command it will both generate a package.json file. A package.json file might look like this file:
 
 ```json
 {
@@ -26,7 +26,7 @@ Regardless of whether you run the `npm init` or `npm init -y` command it will ge
 }
 ```
 
-## `package.json` file content
+## package.json file content
 
 A way to look at all the possible fields in the `package.json` is to think of them as belonging to different groups. Namely the following groups:
 
