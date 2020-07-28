@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.6-exercise-business-critical-high-availability
+metadata:
+  title: Exercise - Business critical high availability
+  description: Exercise - Business critical high availability
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Business critical high availability
+durationInMinutes: 10
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-business-critical-high-availability.md)]
