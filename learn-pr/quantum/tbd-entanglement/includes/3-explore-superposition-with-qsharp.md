@@ -168,7 +168,7 @@ is:
 
 $$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
 
-This state can be obtained applying sequentially the operations [`Rx`]()($2\arctan \sqrt{\frac\alpha{1-\alpha}}$) and [`Z`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Z?view=qsharp-preview)
+This state can be obtained applying sequentially the operations [`Rx`]()($2\arctan \sqrt{\frac\alpha{1-\alpha}}$) and [`S`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.S?view=qsharp-preview)
 to a qubit in the state $\ket{0}.$
 
 > [!TIP]
