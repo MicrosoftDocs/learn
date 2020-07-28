@@ -28,8 +28,8 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
     The preceding command installs the Polly `IHttpClientFactory` integration package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
 
-1. Configure the `HttpClient` to apply Polly policies. To implement this, you'll use the `AddHttpClient` extension method to register a specific configuration for the `HttpClient` that will be injected into `CouponService`.
-    1. In the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file, replace the comment `// Add the GetRetryPolicy method` with the following code:
+1. Configure the `HttpClient` to apply Polly policies. To implement this, you'll use the `AddHttpClient` extension method to register a specific configuration for the `HttpClient` that will be injected into `CouponService`. Apply the following changes in the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
+    1. Replace the comment `// Add the GetRetryPolicy method` with the following method:
 
         ```csharp
         public static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -44,7 +44,7 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
         }
         ```
 
-    1. Also in the *ServiceCollectionExtensions.cs* file, replace the comment `// Add the GetCircuitBreakerPolicy method` with the following code:
+    1. Replace the comment `// Add the GetCircuitBreakerPolicy method` with the following method:
 
         ```csharp
         public static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy() =>
@@ -52,19 +52,19 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-    1. In the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file, call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy` method call. The second occurrence should accept a `GetCircuitBreakerPolicy` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
+    1. Call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy` method call. The second occurrence should accept a `GetCircuitBreakerPolicy` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
         :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/servicecollectionextensions.cs" id="snippet_AddApplicationServices" highlight="7-8":::
 
-    1. Also in the *ServiceCollectionExtensions.cs* file, replace the comment `// Add the using statements` with the following code:
+    1. Replace the comment `// Add the using statements` with the following `using` directives:
 
         ```csharp
         using Polly;
         using Polly.Extensions.Http;
-        using Serilog;
+        using System.Net.Http;
         ```
 
-        The preceding code imports the `Polly`, `Polly.Extensions.Http`, and `Serilog` namespaces to resolve references downstream in the class.
+        Importing the preceding namespaces resolves member references in the `GetRetryPolicy` and `GetCircuitBreakerPolicy` methods.
 
     The preceding changes configure a Retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead.
 
