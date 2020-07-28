@@ -59,4 +59,4 @@ The Data Science Virtual Machine is configured with the proper drivers, framewor
 
 You can also deploy the Ubuntu or Windows editions of the Data Science Virtual Machine to an Azure virtual machine that isn't based on GPUs. In this case, all the deep learning frameworks will fall back to the CPU model.
 
-Our scenario, where you are investigating bank data to help predict trends, touch on several of these use-cases: collaboration, capacity, and exploration. 
+Our scenario, where you are investigating bank data to help predict trends, touch on several of these use-cases: collaboration, capacity, and exploration. You decide that an Ubuntu Data Science Virtual Machine is a good choice, as it will allow you to use familiar tools like RStudio, your existing data disk, and not require you to invest in learning new technologies until you've worked with your data for awhile. 
