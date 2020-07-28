@@ -116,7 +116,7 @@ This might sound obvious, but if you aren't using a service, you should shut it 
 
 Regularly review your environment and work to identify these systems. Shutting down these systems can have a dual benefit by saving you not only on infrastructure costs but also potential savings on licensing and operating costs.
 
-## Migrate to PaaS or SaaS services
+## Migrate from IaaS to PaaS services
 
 As you move your workloads to the cloud, a natural evolution is to start with infrastructure as a service (IaaS) services because they map more directly to concepts and operations you're already familiar with.
 
