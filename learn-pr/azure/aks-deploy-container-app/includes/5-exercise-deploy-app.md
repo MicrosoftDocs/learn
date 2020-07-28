@@ -17,6 +17,12 @@ You need to create and push your container image to a container registry to depl
     ```bash
     ACR_NAME=ContosoContainerRegistry$RANDOM
     ```
+    
+1. Make a note of the generated container registry name by running the following command and writing down the value. You'll use this value in your manifest files.
+
+    ```bash
+    echo $ACR_NAME
+    ```
 
 1. Run the `az acr create` command to create a new container registry.
 
@@ -146,7 +152,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
 1. It's a good practice to define a minimum and a maximum amount of the resources the app is allowed to use from the cluster. You use the  `resources` key to specify this information.
 
-    Update the `deployment.yaml` file to match the following YAML.
+    Update the `deployment.yaml` file to match the following YAML. Update the `<acr_name>` value in the code snippet below with your container registry's name.
 
     ```yaml
     # deployment.yaml
@@ -161,7 +167,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
             app: contoso-website
         spec:
           containers:
-            - image: ContosoContainerRegistry$RANDOM.azurecr.io/contoso-website
+            - image: <acr_name>.azurecr.io/contoso-website
               name: contoso-website
               resources:
                 requests: # Minimum amount of resources requested
@@ -176,7 +182,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
 1. The last step is to define the ports this container will expose externally through the `ports` key. The `ports` key is an array of objects, which means that a container in a pod can expose multiple ports with multiple names.
 
-    Update the `deployment.yaml` file to match the following YAML.
+    Update the `deployment.yaml` file to match the following YAML. Update the `<acr_name>` value in the code snippet below with your container registry's name.
 
     ```yaml
     # deployment.yaml
@@ -191,7 +197,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
             app: contoso-website
         spec:
           containers:
-            - image: ContosoContainerRegistry$RANDOM.azurecr.io/contoso-website
+            - image: <acr_name>.azurecr.io/contoso-website
               name: contoso-website
               resources:
                 requests:
@@ -209,7 +215,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
 
 1. Finally, add a selector section to define the workloads the deployment will manage.  The `selector` key is placed inside the deployment specification section of the manifest file. Use the `matchLabels` key to list the labels for all the pods managed by the deployment.
 
-    Update the `deployment.yaml` file to match the following YAML.
+    Update the `deployment.yaml` file to match the following YAML. Update the `<acr_name>` value in the code snippet below with your container registry's name.
 
     ```yaml
     # deployment.yaml
@@ -227,7 +233,7 @@ Kubernetes groups containers into logical structures called Pods, which have no 
             app: contoso-website
         spec:
           containers:
-            - image: ContosoContainerRegistry$RANDOM.azurecr.io/contoso-website
+            - image: <acr_name>.azurecr.io/contoso-website
               name: contoso-website
               resources:
                 requests:
