@@ -27,7 +27,7 @@ quiz:
           isCorrect: false
           explanation: "It's possible to store several image versions using image tags, but this is not the main purpose of this resource."
 
-    - content: "What is a manifest file"
+    - content: "What is a manifest file?"
       choices:
         - content: "Files that manifest Kubernetes' intentions in your computer."
           isCorrect: false
