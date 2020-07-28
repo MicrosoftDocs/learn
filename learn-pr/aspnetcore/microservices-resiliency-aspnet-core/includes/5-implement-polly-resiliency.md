@@ -19,11 +19,18 @@ In this case, you'll implement a Retry and a Circuit Breaker policy to handle fa
 
 Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. Complete the following steps to implement failure handling for the coupon service:
 
+1. Set your current location to the HTTP aggregator project directory by using the following command:
+
+    ```bash
+    pushd src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/
+    ```
+
+    Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::*.
+
 1. Run the following command in the command shell:
 
     ```dotnetcli
-    dotnet add src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Web.Shopping.HttpAggregator.csproj \
-        package Microsoft.Extensions.Http.Polly
+    dotnet add package Microsoft.Extensions.Http.Polly
     ```
 
     The preceding command installs the Polly `IHttpClientFactory` integration package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
@@ -73,10 +80,16 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 1. Run the following command to build the app:
 
     ```dotnetcli
-    dotnet build src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator
+    dotnet build
     ```
 
     The build succeeds with no warnings. If the build fails, check the output for troubleshooting information.
+
+1. Return to your previous location by using the following command:
+
+    ```bash
+    popd
+    ```
 
 ## Deploy the updated microservice
 
