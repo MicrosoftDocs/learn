@@ -278,7 +278,7 @@ Query Store comes with a series of system catalog views to view performance data
 
 1. The final component is the visual query plan. The query plan for this query looks like the following image:
 
-    :::image type="content" source="../media/5-ssms-workload-query-plan.png" alt-text="SSMS_Workload_Query_Plan":::
+    :::image type="content" source="../media/5-ssms-workload-query-plan-inline.png" alt-text="SSMS_Workload_Query_Plan" lightbox="../media/5-ssms-workload-query-plan-expanded.png":::
 
     Given the small number of rows in the tables in this database, this query plan is not inefficient. There could be some tuning opportunities but not much performance will be gained by tuning the query itself. You may see a warning in the plan for lack of statistics for one of the columns in the query for the Clustered Index Seek but it does not have a factor in overall performance (and is not in the actual execution plan since statistics are created automatically for the column that generated the warning).
 

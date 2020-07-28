@@ -6,11 +6,11 @@ Tempdb is an important shared resource used by applications. Ensuring the right 
 
 Tempdb files are always automatically stored on local SSD drives so I/O performance shouldn't be an issue.
 
-SQL Server professionals often use more than one database file to partition allocations for tempdb tables.  For Azure SQL Database, the number of files are scaled with the number of vCores (Ex. 2 vCores=4 files,…) with a max of 16. The number of files is not configurable through T-SQL against tempdb but by changing the deployment option. The maximum size of tempdb is scaled per number of vCores. You get 12 files with Azure SQL Managed Instance independent of vCores and you cannot change this number. We are looking in the future to allow configuration of the number of files for Azure SQL Managed Instance.
+SQL Server professionals often use more than one database file to partition allocations for tempdb tables.  For Azure SQL Database, the number of files are scaled with the number of vCores (Ex. 2 vCores=4 files,…) with a max of 16. The number of files is not configurable through T-SQL against tempdb but by changing the deployment option. The maximum size of tempdb is scaled per number of vCores. You get 12 files with Azure SQL Managed Instance independent of vCores and at the current time you cannot change this number.
 
 Database options MIXED_PAGE_ALLOCATION is set to OFF and AUTOGROW_ALL_FILES is set to ON. This cannot be configured but they are the recommended defaults as with SQL Server.
 
-Currently, the Tempdb Metadata Optimization feature in SQL Server 2019, which can alleviate heavy latch contention, is not available in Azure SQL but is planned for the future.
+Currently, the Tempdb Metadata Optimization feature in SQL Server 2019, which can alleviate heavy latch contention, is not available in Azure SQL.
 
 ## Database configuration
 
