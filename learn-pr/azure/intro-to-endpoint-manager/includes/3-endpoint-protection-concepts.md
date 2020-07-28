@@ -21,9 +21,12 @@ Intune configuration policies help you protect and configure devices by controll
 - Control Windows Hello for Business settings, which is an alternative sign-in method for Windows 10 and later.
 - Retire devices and remove data.
 
-The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage and protect devices.</br></br>
+The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage and protect devices.
 
-> [!VIDEO https://mslearn.cloudguides.com/en-us/guides/Manage%20devices%20with%20Microsoft%20Endpoint%20Manager]
+</p>
+<div align=”center”>
+<iframe allowfullscreen width="95%" height="450" src="https://mslearn.cloudguides.com/guides/Manage%20devices%20with%20Microsoft%20Endpoint%20Manager" frameborder="0" scrolling="no"/></iframe>
+</div>
 
 ## Manage and protect apps
 Microsoft Intune gives you a range of features to help you manage and protect apps and data. Intune supports mobile application management policies without managing the device. Intune MAM supports two configurations. The first involves Mobile Device Management (MDM) along with Mobile App Management (MAM). This configuration is where IT administrators can only manage apps using MAM and app protection policies on devices that are *enrolled* with Intune mobile device management (MDM). The second configuration involves MAM without device enrollment. MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices *not enrolled* with Intune MDM. This means apps could be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers.
@@ -37,16 +40,12 @@ App policies allow you to perform several different types of actions to configur
 - Restrict copy and paste actions to other apps.
 - Require a PIN to access an app.
 
-The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage devices enrolled in Intune, enforce compliance with policies, and protect your organization's data.</br></br>
+The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage devices enrolled in Intune, enforce compliance with policies, and protect your organization's data.
 
-<!--
-> [!VIDEO https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager]
--->
-
+</p>
 <div align=”center”>
-<iframe allowfullscreen width="95%" height="450" src="https://mslearn.cloudguides.com/guides/Manage%20devices%20with%20Microsoft%20Endpoint%20Manager" frameborder="1" scrolling="no"/></iframe>
+<iframe allowfullscreen width="95%" height="450" src="https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager" frameborder="0" scrolling="no"/></iframe>
 </div>
-
 
 ## Manage and protect your organization’s data
 <!--
@@ -55,7 +54,7 @@ https://docs.microsoft.com/mem/intune/protect/data-leak-prevention
 
 ### Prevent data leaks
 
-you can control how users share and save data without risking intentional or accidental data leaks. Microsoft Intune provides app protection policies that you set to secure you company data on user-owned devices. The devices do not need to be enrolled in the Intune service.
+You can control how users share and save data without risking intentional or accidental data leaks. Microsoft Intune provides app protection policies that you set to secure you company data on user-owned devices. The devices do not need to be enrolled in the Intune service.
 
 App protection policies set up with Intune also work on devices managed with a non-Microsoft device management solution. The personal data on the devices is not touched; only company data is managed by the IT department.
 

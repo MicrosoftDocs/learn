@@ -7,11 +7,9 @@ The Microsoft Intune Tenant Status page is a centralized hub where you can view 
 > A tenant is an instance of Azure Active Directory (Azure AD). Your subscription to Intune is hosted by an Azure AD Tenant. 
 
 ## Connector status
-Connector status is a one-stop location to review the status of all available connectors for Intune.  
+You can use the connector status pane as a one-stop location to review the status of all available connectors for Intune.  
 
-Connectors are:
-- **Connections you configure to external services**. For example, the *Apple Volume Purchase Program* service or the *Windows Autopilot* service.  Status for this type of connector is based on the last successful synchronization time.
-- **Certificates or credentials that are required to connect to an external unmanaged service**, like *Apple Push Notification Services* (APNS) certificates. Status for this type of connector is based on the expiry timestamp of the certificate or credential.  
+Connectors are connections you configure to external services. For example, the *Apple Volume Purchase Program* service or the *Windows Autopilot* service.  Status for this type of connector is based on the last successful synchronization time. Connectors are also cCertificates or credentials that are required to connect to an external unmanaged service* like *Apple Push Notification Services* (APNS) certificates. Status for this type of connector is based on the expiry timestamp of the certificate or credential.  
 
 ## Service health dashboard  
 On the Service health dashboard you can view details for *Service incidents* that affect your tenant, and *Intune news* that provides information about updates and planned changes.

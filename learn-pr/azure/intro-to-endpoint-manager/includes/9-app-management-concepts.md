@@ -66,6 +66,36 @@ One of the primary ways that Intune provides mobile app security is through poli
 On enrolled devices, app protection policies can add an extra layer of protection. For example, a user signs in to a device with their organization credentials. Their organization identity allows access to data that's denied to their personal identity. As that organization data is used, app protection policies control how the data is saved and shared. When users sign in with their personal identity, those same protections (access and restrictions) aren't applied. In this way, IT has control of organization data, while end users maintain control and privacy over their personal data.
 
 There are additional benefits to using MDM with app protection policies, and companies can use app protection policies with and without MDM at the same time. For example, consider an employee that uses both a phone issued by the company, and their own personal tablet. The company phone is enrolled in MDM and protected by app protection policies while the personal device is protected by App protection policies only.
+
+## Protected apps
+
+Intune supports a number of protected Microsoft apps and partner apps. Intune protected apps are enabled with a rich set of mobile application protection policies. These apps allow you to:
+
+- Restrict copy-and-paste and save-as functions
+- Configure web links to open inside the secure Microsoft browser
+- Enable multi-identity use and app-level Conditional Access
+- Apply data loss prevention policies without managing the user's device
+- Enable app protection without requiring enrollment
+- Enable app protection on devices managed with 3rd party EMM tools
+
+Protected apps incorporate mobile app management using the Intune App Software Development Kit (SDK), or the App Wrapping Tool for eith iOS or Android.
+
+For instance, you can manage Outlook for iOS and Android with Intune. You can use Intune app protection and configuration policies with Outlook for iOS and Android to ensure team collaboration experiences are always accessed with safeguards in place. Organizations can use use Azure AD Conditional Access policies to ensure that users can only access work or school content using Outlook for iOS and Android. 
+
+## Data protection framework using app protection policies 
+
+As more organizations implement mobile device strategies for accessing work or school data, protecting against data leakage becomes paramount. Intune's mobile application management solution for protecting against data leakage is App Protection Policies (APP). APP are rules that ensure an organization's data remains safe or contained in a managed app, regardless of whether the device is enrolled. 
+
+When configuring App Protection Policies, the number of various settings and options enable organizations to tailor the protection to their specific needs. Due to this flexibility, it may not be obvious which permutation of policy settings are required to implement a complete scenario. To help organizations prioritize client endpoint hardening endeavors, Microsoft has introduced a new taxonomy for security configurations in Windows 10. Intune is leveraging a similar taxonomy for its APP data protection framework for mobile app management. 
+
+The Intune APP data protection framework is organized into three distinct configuration levels, with each level building off the previous level:
+
+- **Enterprise basic data protection** (Level 1) ensures that apps are protected with a PIN and encrypted and performs selective wipe operations. For Android devices, this level validates Android device attestation. This is an entry level configuration that provides similar data protection control in Exchange Online mailbox policies and introduces IT and the user population to APP.
+- **Enterprise enhanced data protection** (Level 2) introduces APP data leakage prevention mechanisms and minimum OS requirements. This is the configuration that is applicable to most mobile users accessing work or school data.
+- **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data.
+
+Each level has specific recommendations about how and what to set to meet each level of app protection.
+
 <!--
 https://docs.microsoft.com/mem/intune/apps/app-management#mobile-application-management-mam-basics
 https://docs.microsoft.com/mem/intune/apps/mam-faq
