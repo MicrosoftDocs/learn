@@ -1,6 +1,6 @@
 Platform as a Service (PaaS) provides a complete development and deployment environment in the cloud, which can be used for simple cloud-based applications as well as for advanced enterprise applications.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-11.png" alt-text="Platform Management for PaaS Solutions":::
+:::image type="content" source="../media/module-22-plan-implement-final-11.png" alt-text="Platform Management for PaaS Solutions":::
 
 As shown in the image above, PaaS includes cloud provided operating system and management of your solution. For example, in Azure SQL Database and Azure SQL Managed Instance, the high availability, OS and SQL Server features, and backups are all provided by the Azure platform.
 
@@ -90,7 +90,7 @@ The name “Serverless” can be a bit confusing as you still deploy your Azure 
 
 Another difference between serverless and the normal vCore model of Azure SQL Database is that with serverless you can specify a minimum and maximum number of vCores. Memory and I/O limits are proportional to the range that is specified.
 
-:::image type="content" source="../media/module-22-plan-and-implement-final-12.png" alt-text="The Azure SQL Database Serverless Settings in the Azure portal":::
+:::image type="content" source="../media/module-22-plan-implement-final-12.png" alt-text="The Azure SQL Database Serverless Settings in the Azure portal":::
 
 The image above shows the configuration screen for a serverless database in the Azure portal. You have the option have a minimum of half of a vCore all the way up to 16 vCores. You should note that databases that are not deployed as serverless are referred to as “provisioned”.
 
