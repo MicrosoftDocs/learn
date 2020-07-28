@@ -87,3 +87,55 @@ Azure Cost Management + Billing features include:
 + **Recommendations**
 
     Receive recommendations to eliminate idle resources and to optimize the Azure resources you provision.
+
+## Resize underutilized virtual machines
+
+A common recommendation that you'll find from Azure Cost Management + Billing and Azure Advisor is to resize or shut down virtual machines that are underutilized or idle.
+
+As an example, say you have a virtual machine whose size is **Standard_D4_v4**, a general-purpose virtual machine type with four vCPUs and 16 GB of memory. You might discover that this virtual machine is idle 90% of the time.
+
+Virtual machine costs are linear and double for each size larger in the same series. So in this case, if you reduce the VM's size from **Standard_D4_v4** to **Standard_D2_v4**, which is the next size lower, you reduce your compute cost by 50%.
+
+Thee following image shows this idea:
+
+:::image type="content" source="../media/6-vm-resize.png" alt-text="An illustration showing 50 percent savings by reducing the size of an underutilized virtual machine." border="false":::
+
+Keep in mind that resizing a VM requires it to be stopped, resized, and then restarted. This may take a few minutes depending on how significant the size change is. Be sure to properly plan for an outage, or shift your traffic to another instance while you perform resize operations.
+
+## Deallocate virtual machines during off hours
+
+Recall that to _deallocate_ a VM means to no longer run the VM, but preserve the associated hard disks and data in Azure.
+
+If you have virtual machine workloads that are only used during certain periods, but you're running them every hour of every day, you're wasting money. These VMs are great candidates to shut down when not in use and start back when you need them, saving you compute costs while the VM is deallocated.
+
+This approach is an excellent strategy for development and testing environments, where the virtual machines are needed only during business hours. Azure even provides a way to automatically start and stop your VMs on a schedule.
+
+## Delete unused virtual machines
+
+This might sound obvious, but if you aren't using a service, you should shut it down. It's not uncommon to find non-production or proof-of-concept systems that are no longer needed following the completion of a project.
+
+Regularly review your environment and work to identify these systems. Shutting down these systems can have a dual benefit by saving you not only on infrastructure costs but also potential savings on licensing and operating costs.
+
+## Migrate to PaaS or SaaS services
+
+As you move your workloads to the cloud, a natural evolution is to start with infrastructure as a service (IaaS) services because they map more directly to concepts and operations you're already familiar with.
+
+Over time, one way to reduce costs is to gradually move IaaS workloads to run on platform as a service (PaaS) services. While you can think of IaaS as direct access to compute infrastructure, PaaS provides ready-made development and deployment environments that are managed for you.
+
+As an example, say you run SQL Server on a virtual machine running on Azure. This requires you to manage the underlying operating system, set up a SQL Server license, manage software and security updates, and so on. You also pay for the VM whether or not the database is processing queries.
+
+Not only are PaaS services often less expensive to run, but because they're managed for you, you don't need to worry about software updates, security patches, or optimizing physical storage for read and write operations.
+
+## Save on licensing costs
+
+Licensing is another area that can dramatically impact your cloud spending. Let's look at some ways you can reduce your licensing costs.
+
+### Choose Windows versus Linux
+
+Many Azure services provide a choice of running on Windows or Linux. In some cases, the cost depends on which you choose. When you have a choice, and your application doesn't depend on the underlying OS, it's useful to compare pricing to see whether you can save money.
+
+### Use Azure Hybrid Benefit to re-purpose software licenses on Azure
+
+If you've purchased licenses for Windows Server or SQL Server, and your licenses are covered by Software Assurance, you may be able to re-purpose those licenses on virtual machines on Azure.
+
+Some of the details vary between Windows Server or SQL Server, and we'll provide resources at the end of this module where you can learn more.

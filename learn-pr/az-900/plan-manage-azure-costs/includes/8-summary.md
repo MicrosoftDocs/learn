@@ -44,3 +44,6 @@ In this module, you learned about the many factors that affect the total cost of
 * Learn more about how [Azure Reservations](https://docs.microsoft.com/azure/billing/billing-save-compute-costs-reservations?azure-portal=true) can save you money when you commit to to one-year or three-year pricing plans.
 * Learn how to [Prevent unexpected charges with Azure billing and cost management](https://docs.microsoft.com/azure/cost-management-billing/manage/getting-started?azure-portal=true).
 * See [Azure spending limit](https://docs.microsoft.com/azure/billing/billing-spending-limit?azure-portal=true) to learn what happens when you reach your spending limit and how to remove it.
+* Learn how to [start and stop VMs during off-hours](https://docs.microsoft.com/azure/automation/automation-solution-vm-management?azure-portal=true).
+* See how [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) can help save costs by bringing Windows Server and SQL Server on-premises licenses with Software Assurance to Azure.
+
