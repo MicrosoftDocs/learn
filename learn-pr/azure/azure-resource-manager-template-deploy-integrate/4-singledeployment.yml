@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-deploy-integrate.4-singledeployment
-title: TBD
+title: Deploying your Azure Manager Resource Templates
 metadata:
-  title: TBD
-  description: TBD
+  title: Deploying your Azure Manager Resource Templates
+  description: Wether you are deploying your templates in your test environment or in productions. The ability to deploying from a web interface or  a command line / terminal is crucial.  This unit will cover the ways to deploy your templates.
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer

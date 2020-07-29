@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-deploy-integrate.2-whatif
-title: TBD
+title: Using what-if to validate your deployments
 metadata:
-  title: TBD
-  description: TBD
+  title: Using what-if to validate your deployments
+  description: Deploying and hoping for the best is **NOT** the approach you should be taking.  The "what-if" operation is here to address this. this unit will cover what it is and how to use it.
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer

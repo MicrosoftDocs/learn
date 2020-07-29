@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-deploy-integrate.5-exercise-singledeployment
-title: TBD
+title: Deploying your Azure Manager Resource Templates - Exercise
 metadata:
-  title: TBD
-  description: TBD
+  title: Deploying your Azure Manager Resource Templates - Exercise
+  description: Walk-through of deploying your ARM templates
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-deploy-integrate.6-linkedtemplates
-title: TBD
+title: Deploying linked and nested templates
 metadata:
-  title: TBD
-  description: TBD
+  title: Deploying linked and nested templates
+  description: Deploying linked and nested templates in your environment
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer

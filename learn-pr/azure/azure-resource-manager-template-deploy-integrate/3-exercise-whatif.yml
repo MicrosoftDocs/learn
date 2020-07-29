@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-deploy-integrate.3-exercise-whatif
-title: TBD
+title: Using What-if to deploy your Azure Resource Manager templates - Exercise
 metadata:
-  title: TBD
-  description: TBD
+  title: Using What-if to deploy your Azure Resource Manager templates - Exercise
+  description: Walk-through of using the what-if operation to validate your ARM template deployments
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer
