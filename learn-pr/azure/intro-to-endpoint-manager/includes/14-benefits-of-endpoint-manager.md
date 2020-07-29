@@ -20,7 +20,7 @@ Microsoft Endpoint Manager enables a unique set of capabilities to simplify endp
 - **Secure Score** - Secure score helps you assess your workload security posture by recommending a prioritized list of security vulnerabilities for remediation.
 - **Windows Hello for Business** - Password-less authentication to Windows 10.
 
-<img alt="Endpoint security management" src="../media/endpoint-security-manangement.png" width="350">
+<img alt="Endpoint security management" src="media/endpoint-security-manangement.png" width="350">
 
 ### Risk-based Control
 Microsoft Endpoint Manager helps ensure cross-platform device controls in your zero-trust strategy, which include:
@@ -37,7 +37,7 @@ Microsoft Endpoint Manager helps ensure cross-platform device controls in your z
 - **Extend native platform security to meet all use cases**
 - **Third Party Risk and Compliance Signaling** 
 
-<img alt="Risk-based controls" src="../media/risk-based-controls.png" width="350">
+<img alt="Risk-based controls" src="media/risk-based-controls.png" width="350">
 
 ## Streamlined and Flexible
 Flexible support for diverse corporate and BYOD scenarios while increasing productivity and collaboration.
@@ -52,7 +52,7 @@ Manage your PCs, Macs, and mobile devices in one place.
 <!--
 ![Unified management](../media/unified-management.png)
 -->
-<img alt="Unified management" src="../media/unified-management.png" width="350">
+<img alt="Unified management" src="media/unified-management.png" width="350">
 
 ### Zero Touch Provisioning
 With Microsoft Endpoint Manager, you can simplify software updates and provisioning for all devices. By using Windows Autopilot, Android Enterprise, Apple DEP, and Samsung Knox Mobile Enrollment, you can do the following:
