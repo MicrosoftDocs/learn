@@ -53,7 +53,7 @@ Complete the following steps to implement failure handling for the coupon servic
         }
         ```
 
-        The preceding method configures a Retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead.
+        The preceding method configures a Retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead. This policy's premise is that faults are transient and may self-correct after a short delay.
 
     1. Replace the comment `// Add the GetCircuitBreakerPolicy method` with the following method:
 
@@ -63,7 +63,7 @@ Complete the following steps to implement failure handling for the coupon servic
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-        The preceding method configures a Circuit Breaker policy that "opens the breaker" for 15 seconds, after 15 continuous failures. This policy configuration gives the server some time to recover.
+        The preceding method configures a Circuit Breaker policy that "opens the breaker" for 15 seconds, after 15 continuous failures. This policy's premise is that protecting the coupon service from overload can help it recover.
 
     1. In the `AddApplicationServices` method, call the `AddPolicyHandler` extension method twice. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
@@ -85,7 +85,7 @@ Complete the following steps to implement failure handling for the coupon servic
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
-1. Return to your previous location by using the following command:
+1. Return to your previous location by running the following command:
 
     ```bash
     popd
