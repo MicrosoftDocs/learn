@@ -11,7 +11,7 @@ At the end of this final module, you should be able to:
 
 The end of this module contains several helpful references you can use throughout the module and in production.
 
-## Prequisites
+## Prerequisites
 
 - Experience working with, maintaining, and developing with SQL Server and Azure SQL
 - Experience with Azure, such as deploying and managing resources
