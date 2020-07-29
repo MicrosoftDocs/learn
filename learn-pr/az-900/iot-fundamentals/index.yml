@@ -1,0 +1,33 @@
+### YamlMime:Module
+uid: learn.languages.iot-fundamentals
+metadata:
+  title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
+  description: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+  ms.date: 07/17/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
+summary: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+abstract: |
+  In this module, you will:
+  - Install and configure Visual Studio 2019 Community Edition.
+prerequisites: None
+ratingEnabled: true
+iconUrl: /learn/achievements/iot-fundamentals.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- dotnet
+units:
+- learn.languages.iot-fundamentals.introduction
+- learn.languages.iot-fundamentals.what-is-iot
+- learn.languages.iot-fundamentals.iot-exercise
+- learn.languages.iot-fundamentals.knowledge-check
+- learn.languages.iot-fundamentals.summary
+
+badge:
+  uid: learn.languages.iot-fundamentals.badge
