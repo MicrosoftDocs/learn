@@ -1,11 +1,11 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-Here you will deploy a templates tha includes 2 linked templates in the supplied sandbox environment.
+Here you will deploy a templates tha includes two linked templates in the supplied sandbox environment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
-## setup your test environment with the provided Azure sandbox subscription
+## set up your test environment with the provided Azure sandbox subscription
 
 To perform each deployment in this unit, you need to sign in to your Azure account from the Visual Studio Code terminal.
 
@@ -55,16 +55,16 @@ In this exercise, we will review and deploy a template that includes two linked 
 
 1. To add a linked template to your ARM template, add a *Microsoft.Resources/deployments* resource and the *templateLink* property configured with the location of the template.
 
-    In the sample template below, you will notice that there are 2 variable that define remote or external templates located on a github repo.
+    In the sample template below, you will notice that there are two variable that define remote or external templates located on a GitHub repo.
 
     - "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json"
     - "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
 
-    Please review the template and note the *"type": "Microsoft.Resources/deployments"* sections that define where and how the linked templates will be deployed.
+    Review the template and note the *"type": "Microsoft.Resources/deployments"* sections that define where and how the linked templates will be deployed.
 
     The fist linked template deploys a storage account.  it consumes the parent parameters and deploys the storage template.
 
-    The second linked template is configured to depends on the storage deployment, and to deploys a virtual network template.
+    The second linked template is configured to depend on the storage deployment, and to deploy a virtual network template.
 
     ```json
         {
@@ -118,7 +118,7 @@ In this exercise, we will review and deploy a template that includes two linked 
 
 1. To get started copy and paste the content of the template displayed above, into a file in a local directory.  **C:\JSON\linkedtemplate.json** for example.
 
-    Once you have saved that file locally you can proceed to deploy it using the PowerShell command to deploy at the resource group level we talked about in the last unit. Namely, [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.4.0&WT.mc_id=MSLearn-ARM-pierrer)
+    Once you have saved that file locally, you can proceed to deploy it using the PowerShell command to deploy at the resource group level we talked about in the last unit. Namely, [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.4.0&WT.mc_id=MSLearn-ARM-pierrer)
 
     ```powershell
         $templateFile="C:\JSON\linkedtemplate.json"
@@ -130,7 +130,7 @@ In this exercise, we will review and deploy a template that includes two linked 
         -TemplateFile $templateFile
     ```
 
-    Once it completes you should have results like this:
+    Once it completes, you should have results like this:
 
     :::image type="content" source="../media/6-linked-template-results.png" alt-text="Results from deploying linked template." border="true":::
 
@@ -139,11 +139,11 @@ In this exercise, we will review and deploy a template that includes two linked 
     1. On the left side panel, choose *Resource groups*.
     1. Select <rgn>[sandbox resource group name]</rgn>.
     1. In the *Overview*, you see the deployment has succeeded.
-    1. Select *3 Succeeded* to see the details of the deployment. *(There may be more completed deployment depending on wether you performed the previous unit's exercises)*
+    1. Select *3 Succeeded* to see the details of the deployment. *(There may be more completed deployment depending on whether you performed the previous unit's exercises)*
 
         :::image type="content" source="../media/7-portal-deployment-details.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-    1. You will notice that you deployed one Template but 3 are listyed in the deployment pane of the portal. Those 3 deployments correspond to the Main templayte and the 2 linked templates.
+    1. You will notice that you deployed one Template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the Main template and the two linked templates.
 
         :::image type="content" source="../media/7-portal-deployment-listing.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
