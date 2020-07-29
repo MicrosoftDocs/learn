@@ -102,60 +102,7 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
 
     You see ```Running...``` in the terminal. When that finishes, the results of the above command should be something like the following
 
-    ```json
-    {
-      "id": "/subscriptions/6b678711-e207-4bbe-bad3-cb45178f095c/resourceGroups/learn-a73131a1-b618-48b8-af70-21af7ca420c4/providers/Microsoft.Resources/deployments/what-if-before",
-      "location": null,
-      "name": "what-if-before",
-      "properties": {
-        "correlationId": "811c5c86-0ec6-43f5-8851-3e070d8e2a15",
-        "debugSetting": null,
-        "dependencies": [],
-        "duration": "PT11.7244183S",
-        "mode": "Incremental",
-        "onErrorDeployment": null,
-        "outputResources": [
-          {
-            "id": "/subscriptions/6b678711-e207-4bbe-bad3-cb45178f095c/resourceGroups/learn-a73131a1-b618-48b8-af70-21af7ca420c4/providers/Microsoft.Network/virtualNetworks/vnet-001",
-            "resourceGroup": "learn-a73131a1-b618-48b8-af70-21af7ca420c4"
-          }
-        ],
-        "outputs": null,
-        "parameters": {},
-        "parametersLink": null,
-        "providers": [
-          {
-            "id": null,
-            "namespace": "Microsoft.Network",
-            "registrationPolicy": null,
-            "registrationState": null,
-            "resourceTypes": [
-              {
-                "aliases": null,
-                "apiVersions": null,
-                "capabilities": null,
-                "locations": [
-                  "westus"
-                ],
-               "properties": null,
-                "resourceType": "virtualNetworks"
-              }
-            ]
-          }
-        ],
-        "provisioningState": "Succeeded",
-        "template": null,
-        "templateHash": "1122925147183376254",
-        "templateLink": {
-          "contentVersion": "1.0.0.0",
-          "uri": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
-    },
-        "timestamp": "2020-07-28T22:53:43.840777+00:00"
-      },
-      "resourceGroup": "learn-a73131a1-b618-48b8-af70-21af7ca420c4",
-      "type": "Microsoft.Resources/deployments"
-    }
-    ```
+    :::image type="content" source="../media/whatif-before-result.png" alt-text="Results from before template." border="true":::
 
 1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
@@ -200,3 +147,33 @@ Now that you've deployed the template, you're ready to test the *what-if* operat
     - Green and "+" for new resources to be created
     - Orange and "-" for deletion.
 
+## Deploy using the Complete mode and confirmation option.
+
+To preview changes before deploying a template, you need to be in  use the **-confirm** switch parameter with the deployment command. If the changes are as you expected, acknowledge that you want the deployment to complete.  In this next steps you will deploy an empty template over your existing environment.  So, in theory, because of the "complete" mode it will try to remove\delete any resources in the target environment that are not defined in the template.  Basically, everything.
+
+1. to run the deployment in complete mode with a confirmation prompt, use the following PowerShell command:
+
+    ```powershell
+    New-AzResourceGroupDeployment `
+    -Mode Complete `
+    -Confirm `
+    -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/empty-template/azuredeploy.json"
+    ```
+
+    :::image type="content" source="../media/whatif-complete-confirm.png" alt-text="Azure portal interface for the complete deployments and prompt to execute." border="true":::
+
+    The result will ask you to confirm with the following prompt:
+
+    Are you sure you want to execute the deployment?
+    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): 
+
+1. To execute and clean out your environment type "A" for "[A] Yes to All".  Once it completes with the following results
+
+    :::image type="content" source="../media/whatif-complete-confirm-results.png" alt-text="Azure portal interface for the specific deployment with VNet resource listed." border="true":::
+
+1. Navigate back to the open browser you used earlier, and verify that there were 2 successful deployment.
+
+    1. The first one you deployed
+    1. The complete one that removed all resources, and the VNet is no longer there. 
+
+    :::image type="content" source="../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with VNet resource no longer listed." border="true":::

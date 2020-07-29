@@ -14,6 +14,8 @@ Azure Resource Manager now provides the *what-if* operation to highlight the cha
 
 If you've ever worked with [Azure Powershell](https://docs.microsoft.com/powershell/azure/?view=azps-4.4.0&WT.mc_id=MSLearn-ARM-pierrer) you're probably already familiar with the *what-if* capabilities.  It's really a way to run your code in a *dry-run* context that will allow you to validate your template before actually deploying the said template. The *What-if* operation confirms if the changes made by your template matches your expectations without applying those changes to real resources or to the state of those resources.
 
+One more benefits of this operation is that, unlike some of the other tools out there, the *what-if* operation discussed here actually compares your template with the target environment, not against a state file maintained outside of the target environment.  Therefore making it simpler to test against multiple environments (Dev, Test, Prod...)
+
 ## Change types
 
 When using the *what-if* operation it will lists six different types of changes:
@@ -43,3 +45,13 @@ And, the PowerShell command parameter "-WhatIfResultFormat ResourceIdOnly " will
     :::image type="content" source="../media/whatif-ResourceIdOnly.png" alt-text="Results from executing a deployment with -WhatIfResultFormat ResourceIdOnly parameter in PowerShell." border="true":::
 
 More detailed information about the command usage can be found [here](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell&WT.mc_id=MSLearn-ARM-pierrer#what-if-commands)
+
+## Removal or deletion of Resources and deployment modes
+
+There are time where you'll want to confirm the removal of deletion of resources as you deploy the template.  maybe is just a comfort thing.  Better safe than sorry!
+
+To that end the *what-if* operation supports using [deployment mode](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?WT.mc_id=MSLearn-ARM-pierrer). The default deployment mode is Incremental. In incremental mode, Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are added to the resource group.
+
+When set to complete mode, resources not in the template are deleted.
+
+To preview changes before deploying a template, use the confirm switch parameter with the deployment command. If the changes are as you expected, acknowledge that you want the deployment to complete.
