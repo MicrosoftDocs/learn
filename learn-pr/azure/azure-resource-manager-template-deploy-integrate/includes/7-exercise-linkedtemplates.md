@@ -9,9 +9,9 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 To perform each deployment in this unit, you need to sign in to your Azure account from the Visual Studio Code terminal.
 
-    :::image type="content" source="../media/vscode-terminal.gif" alt-text="Open the integrated terminal in Visual Studio Code." border="true":::
+:::image type="content" source="../media/vscode-terminal.gif" alt-text="Open the integrated terminal in Visual Studio Code." border="true":::
 
- Be sure you are signing in to the same account that activated the sandbox.
+Be sure you are signing in to the same account that activated the sandbox.
 
 ### Sign in to Azure
 
@@ -143,7 +143,7 @@ In this exercise, we will review and deploy a template that includes two linked 
 
 :::image type="content" source="../media/7-portal-deployment-details.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-    1. You will notice that you deployed one Template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the Main template and the two linked templates.
+2. You will notice that you deployed one Template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the Main template and the two linked templates.
 
 :::image type="content" source="../media/7-portal-deployment-listing.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 

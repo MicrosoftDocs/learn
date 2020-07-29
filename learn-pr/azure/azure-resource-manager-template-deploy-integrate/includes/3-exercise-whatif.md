@@ -113,13 +113,13 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
 
 :::image type="content" source="../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-    1. Select *what-if-before* to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with 2 subnets.
+Select *what-if-before* to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with 2 subnets.
 
 :::image type="content" source="../media/3-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
 :::image type="content" source="../media/3-portal-deployment-details-2.png" alt-text="Azure portal interface for the specific deployment with VNet resource listed." border="true":::
 
-    1. Leave the page open in your browser. You will check on deployments again.
+Leave the page open in your browser. You will check on deployments again.
 
 ## Deploy the modified template in the same environment
 
@@ -162,7 +162,7 @@ To preview changes before deploying a template, you need to be in  use the **-co
 
 :::image type="content" source="../media/whatif-complete-confirm.png" alt-text="Azure portal interface for the complete deployments and prompt to execute." border="true":::
 
-    The result will ask you to confirm with the following prompt:
+The result will ask you to confirm with the following prompt:
 
     Are you sure you want to execute the deployment?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): 

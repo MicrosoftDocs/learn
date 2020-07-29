@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-deploy-integrate.7-exercise-linkedtemplates
-title: Deploying linked and nested templates - Exercise
+title: Exercise - Deploying linked and nested templates
 metadata:
-  title: Deploying linked and nested templates - Exercise
-  description: Deploying linked and nested templates - Exercise
+  title: Exercise - Deploying linked and nested templates
+  description: Deploying linked and nested templates
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer

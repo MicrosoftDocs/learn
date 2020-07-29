@@ -9,9 +9,9 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 To perform each deployment in this unit, you need to sign in to your Azure account from the Visual Studio Code terminal.
 
-    :::image type="content" source="../media/vscode-terminal.gif" alt-text="Open the integrated terminal in Visual Studio Code." border="true":::
+:::image type="content" source="../media/vscode-terminal.gif" alt-text="Open the integrated terminal in Visual Studio Code." border="true":::
 
- Be sure you are signing in to the same account that activated the sandbox.
+Be sure you are signing in to the same account that activated the sandbox.
 
 ### Sign in to Azure
 
@@ -43,7 +43,7 @@ To perform each deployment in this unit, you need to sign in to your Azure accou
     Get-AzResourceGroup
     ```
 
-    and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This command allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise. 
+    and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This command allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
     ```powershell
     Set-AzDefault -ResourceGroupName {Resource Group Name}
@@ -212,4 +212,3 @@ New-AzResourceGroupDeployment `
 The results will be like the following screen capture. And they outline the details of the template location.
 
 :::image type="content" source="../media/5-remote-template.png" alt-text="Create parameter file in VS Code." border="true":::
-

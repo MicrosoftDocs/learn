@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.resource-manager-template-deploy-integrate.9-exercise-githubaction
-title: Deploying your templates as part of your CI\CD efforts with GitHub Actions - Exercise
+title: Exercise - Deploying your templates as part of your CI\CD efforts with GitHub Actions
 metadata:
-  title: Deploying your templates as part of your CI\CD efforts with GitHub Actions - Exercise
-  description: Deploying your templates as part of your CI\CD efforts with GitHub Actions - Exercise
+  title: Exercise - Deploying your templates as part of your CI\CD efforts with GitHub Actions
+  description: Deploying your templates as part of your CI\CD efforts with GitHub Actions
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer
