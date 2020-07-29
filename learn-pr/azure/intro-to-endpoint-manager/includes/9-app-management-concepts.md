@@ -1,6 +1,6 @@
 You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called Mobile Application Management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed.
 
-As we mentioned perviously, Microsoft Endpoint Manager supports two MAM configurations:
+As we mentioned previously, Microsoft Endpoint Manager supports two MAM configurations:
 - **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Microsoft Endpoint Manager admin center.
 - **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Microsoft Endpoint Manager admin center. Also, apps can be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers or not enrolled with an MDM at all. 
 
@@ -78,7 +78,7 @@ Intune supports a number of protected Microsoft apps and partner apps. Intune pr
 - Enable app protection without requiring enrollment
 - Enable app protection on devices managed with 3rd party EMM tools
 
-Protected apps incorporate mobile app management using the Intune App Software Development Kit (SDK), or the App Wrapping Tool for eith iOS or Android.
+Protected apps incorporate mobile app management using the Intune App Software Development Kit (SDK), or the App Wrapping Tool for either iOS or Android.
 
 For instance, you can manage Outlook for iOS and Android with Intune. You can use Intune app protection and configuration policies with Outlook for iOS and Android to ensure team collaboration experiences are always accessed with safeguards in place. Organizations can use use Azure AD Conditional Access policies to ensure that users can only access work or school content using Outlook for iOS and Android. 
 

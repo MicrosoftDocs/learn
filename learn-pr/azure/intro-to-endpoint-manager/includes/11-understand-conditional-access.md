@@ -125,5 +125,5 @@ The following video shows how Advanced Threat Protection (ATP) is integrated int
 
 With co-management, Intune can incorporate Configuration Manager's responsibilities for assessing your security standards compliance of required updates or apps. This behavior is important for any IT organization that wants to continue using Configuration Manager for complex app and patch management.
 
-Conditional Access is also a critical part of developing your Zero Trust Networkarchitecture. With Conditional Access, compliant device access controls cover the foundational layers of Zero Trust Network. This functionality is a large part of how you secure your organization in the future.
+Conditional Access is also a critical part of developing your Zero Trust Network architecture. With Conditional Access, compliant device access controls cover the foundational layers of Zero Trust Network. This functionality is a large part of how you secure your organization in the future.
 
