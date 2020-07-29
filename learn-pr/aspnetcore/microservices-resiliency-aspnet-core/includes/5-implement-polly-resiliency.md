@@ -35,7 +35,11 @@ Complete the following steps to implement failure handling for the coupon servic
     dotnet add package Microsoft.Extensions.Http.Polly
     ```
 
-    The preceding command installs the Polly `IHttpClientFactory` integration NuGet package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
+    The preceding command installs a NuGet package in the *Web.Shopping.HttpAggregator* project. The package integrates Polly and `IHttpClientFactory` and installs the actual `Polly` package as a dependency. The package is necessary to configure Polly policies to handle conditions representing transient faults when making HTTP requests. Such conditions are handled by invoking the package's `HttpPolicyExtensions.HandleTransientHttpError` method. The conditions include:
+
+    - Network failures, as indicated by exceptions of type `HttpRequestException`
+    - Server errors, as indicated by HTTP 5xx status codes
+    - Request timeouts, as indicated by the HTTP 408 status code
 
 1. Apply the following changes in the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
     1. Replace the comment `// Add the GetRetryPolicy method` with the following method:
