@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-performance.2-performance-capabilities
+metadata:
+  title: Performance capabilities
+  description: Performance capabilities
+  ms.date: 08/05/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Performance capabilities
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-performance-capabilities.md)]
