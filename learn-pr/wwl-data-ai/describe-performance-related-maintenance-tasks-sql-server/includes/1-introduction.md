@@ -1,4 +1,4 @@
-Even when your database is in the cloud, whether you are using a PaaS or an IaaS solution, on-going performance-related maintenance tasks are critical to the overall success of your applications. Whether it is a SQL Server instance  in an Azure Virtual Machine or Azure SQL Database, you need to ensure that your statistics are current, and your indexes are well organized.
+Even when your database is in the cloud, on-going performance-related maintenance tasks are critical to the overall success of your applications. Whether it is a SQL Server instance in an Azure Virtual Machine or Azure SQL Database, you need to ensure that your statistics are current, and your indexes are well organized.
 
 ## Learning objectives
 
@@ -8,4 +8,4 @@ In this module, you will:
 
 - Gain insight on plan forcing
 
-- Obtain knowledge on the auto-tuning feature in Azure
+- Obtain knowledge on the aautomatic tuning feature in Azure
