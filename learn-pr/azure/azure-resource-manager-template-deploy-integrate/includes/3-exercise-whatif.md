@@ -21,7 +21,6 @@ Before installing the required module, make sure you have PowerShell Core (6.x o
 
 To verify the PowerShell version you can use the following command in a PowerShell session:
 
-
 ```powershell
 (Get-Host).Version
 ```
@@ -82,12 +81,11 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     Get-AzResourceGroup
     ```
 
-    and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise. 
+    and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
     ```powershell
     Set-AzDefault -ResourceGroupName {Resource Group Name}
     ```
-
 
 ### Deploy the first template to Azure
 
@@ -141,13 +139,13 @@ Now that you've deployed the template, you're ready to test the *what-if* operat
 
 :::image type="content" source="../media/3-portal-deployment-whatif-results.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-    You'll notice that the result is colour coded in addition to a "prefix"
+You'll notice that the result is colour coded in addition to a "prefix"
 
-    - Purple and "~" for any modifications
-    - Green and "+" for new resources to be created
-    - Orange and "-" for deletion.
+- Purple and "~" for any modifications
+- Green and "+" for new resources to be created
+- Orange and "-" for deletion.
 
-## Deploy using the Complete mode and confirmation option.
+## Deploy using the Complete mode and confirmation option
 
 To preview changes before deploying a template, you need to be in  use the **-confirm** switch parameter with the deployment command. If the changes are as you expected, acknowledge that you want the deployment to complete.  In this next steps you will deploy an empty template over your existing environment.  So, in theory, because of the "complete" mode it will try to remove\delete any resources in the target environment that are not defined in the template.  Basically, everything.
 
@@ -164,8 +162,8 @@ To preview changes before deploying a template, you need to be in  use the **-co
 
 The result will ask you to confirm with the following prompt:
 
-    Are you sure you want to execute the deployment?
-    [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): 
+Are you sure you want to execute the deployment?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
 
 1. To execute and clean out your environment type "A" for "[A] Yes to All".  Once it completes with the following results
 
@@ -174,6 +172,6 @@ The result will ask you to confirm with the following prompt:
 1. Navigate back to the open browser you used earlier, and verify that there were 2 successful deployment.
 
     1. The first one you deployed
-    1. The complete one that removed all resources, and the VNet is no longer there. 
+    1. The complete one that removed all resources, and the VNet is no longer there.
 
 :::image type="content" source="../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with VNet resource no longer listed." border="true":::

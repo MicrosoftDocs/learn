@@ -5,7 +5,7 @@ Here, you will deploy an Azure Resource Manager (ARM) template from local direct
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
-## Set up your test environment with the provided Azure sandbox subscription
+## Set up your environment with the provided Azure sandbox subscription
 
 To perform each deployment in this unit, you need to sign in to your Azure account from the Visual Studio Code terminal.
 
