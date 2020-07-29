@@ -2,7 +2,7 @@ The most common reason for deploying SQL Server in an Azure Virtual Machine (VM)
 
 This module will focus on ways to provision and deploy Microsoft SQL Server into an Azure virtual machine. It will also provide concrete information on the various options when you are performing a migration.
 
-## Learning Objectives
+## Learning objectives
 
 At the end of this module, you will be able to:
 

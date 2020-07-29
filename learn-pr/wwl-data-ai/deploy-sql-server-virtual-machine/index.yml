@@ -2,14 +2,14 @@
 uid: learn.wwl.deploy-sql-server-virtual-machine
 metadata:
   title: Deploy SQL Server in a virtual machine
-  description: "Configure Virtual Machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options. Investigate options for migrating existing workloads."
-  ms.date: 07/30/2020
+  description: "Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options. Investigate options for migrating existing workloads."
+  ms.date: 07/31/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy SQL Server in a virtual machine
-summary: Configure Virtual Machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options. Investigate options for migrating existing workloads.
+summary: Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options. Investigate options for migrating existing workloads.
 abstract: |
   After completing this module, you will be able to:
   - Explore the basics of SQL Server in an Infrastructure as a Service (IaaS) offering
@@ -19,7 +19,7 @@ prerequisites: |
   - Familiarity with on-premises virtualization technologies, including: VMs, virtual networking, and virtual hard disks.
   - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
   - Ability to create a on-premises SQL Server database, including the configuration  of data files and log files.
-  - Experience creating and configuring resources using the Azure Portal.
+  - Experience creating and configuring resources using the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - intermediate

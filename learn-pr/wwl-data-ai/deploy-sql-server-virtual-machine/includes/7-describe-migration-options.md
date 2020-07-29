@@ -1,6 +1,6 @@
 Azure Infrastructure as a Service (IaaS) solutions are frequently used when migrating your on-premises environment to the cloud. There are several tools available to help with the migration process. This next section looks at some of the tools and methods for migration.
 
-## Azure Migrate Server Tool
+## Azure Migrate tool
 
 This migration tool provides a centralized location to assess and migrate on-premises servers, infrastructure, applications and data to Azure. It will provide discoverability and proper assessments of your servers regardless of whether they are physical or VMWare/Hyper-V virtual machines.
 

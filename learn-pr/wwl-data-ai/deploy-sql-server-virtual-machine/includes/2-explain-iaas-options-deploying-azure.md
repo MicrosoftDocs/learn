@@ -1,10 +1,10 @@
 Many applications will require a VM running SQL Server. Some reasons for this option include:
 
-1. **Older Versions of SQL Server**—If an application requires an older version of SQL Server for vendor support, running inside a VM is the best option for those applications, because it allows for the application to be supported by that vendor.
+- **Older versions of SQL Server**—If an application requires an older version of SQL Server for vendor support, running inside a VM is the best option for those applications, because it allows for the application to be supported by that vendor.
 
-2. **Use of other SQL Server Services**—While Analysis Services and to an extent Integration Services (through the use of Azure Data Factory) are available as PaaS offerings, many users maximize their licensing by running SQL Server Analysis Services, Integration Services, or Reporting Services on the same machine as the database engine.
+- **Use of other SQL Server services**—While Analysis Services and to an extent Integration Services (through the use of Azure Data Factory) are available as PaaS offerings, many users maximize their licensing by running SQL Server Analysis Services, Integration Services, or Reporting Services on the same machine as the database engine.
 
-3. **General Application Incompatibility**—This reason is a somewhat of a catch-all. For example, Azure SQL Database doesn't support cross-database querying, while Managed Instance does. Some applications may require additional services to be co-located with the database instance in a manner that isn't compatible with a PaaS offering.
+- **General application incompatibility**—This reason is a somewhat of a catch-all. For example, Azure SQL Database doesn't support cross-database querying, while Managed Instance does. Some applications may require additional services to be co-located with the database instance in a manner that isn't compatible with a PaaS offering.
 
 Infrastructure as a Service (IaaS) allows the administrator to have more granular access over specific settings of the underlying infrastructure than the other Azure offerings. While the Azure platform manages the underlying server and network hardware, you still have access to the virtual storage, virtual networking configuration, and any additional software you might install within the virtual machine. This includes Microsoft SQL Server.
 
@@ -24,15 +24,15 @@ When you deploy an SQL Server VM from the Azure Marketplace, part of the process
 
 Extensions are code that is executed on your VM post-deployment, typically to perform post deployment configurations. Some examples are installing anti-virus features, or installing a Windows feature. The SQL Server IaaS Agent Extension provides three key features that can reduce your administrative overhead.
 
-- **SQL Server Automated Backup**
-- **SQL Server Automated Patching**
-- **Azure Key Vault Integration**
+- **SQL Server automated backup**
+- **SQL Server automated patching**
+- **Azure Key Vault integration**
 
 In addition to these features, the extension allows you to view information about your SQL Server’s configuration and storage utilization.
 
 :::image type="content" source="../media/module-11-azure-dba-final-02.png" alt-text="Image of SQL Virtual Machine Configuration in Azure portal":::
 
-## SQL Server Licensing Models
+## SQL Server licensing models
 
 There are several different options related to how SQL Server is licensed when using the Azure IaaS offering.
 
@@ -50,11 +50,11 @@ In addition to flexible licensing options for SQL Server, there are also Windows
 
 Reserving a virtual machine for one to three years provides another option for cost savings. This commitment doesn't require an upfront payment and can be billed monthly. Using the reservation option can be beneficial if you know the workloads are going to be persisted. The cost savings can be significant, especially for larger VMs.
 
-## Virtual Machine Families
+## Virtual machine families
 
-When deploying to an Azure virtual machine, there are several series, or “Families”, of virtual machine sizes that can be selected. Each series is a combination of memory, CPU, and storage that meets certain requirements. For example, the series that are compute optimized have a higher CPU to memory ratio. Having multiple options allows you to select an appropriate hardware configuration for the expected workload. The following six series each have various sizes available, the details of which are fully described in the Azure portal when you choose the option to select your VM size.
+When deploying to an Azure virtual machine, there are several series, or “families”, of virtual machine sizes that can be selected. Each series is a combination of memory, CPU, and storage that meets certain requirements. For example, the series that are compute optimized have a higher CPU to memory ratio. Having multiple options allows you to select an appropriate hardware configuration for the expected workload. The following six series each have various sizes available, the details of which are fully described in the Azure portal when you choose the option to select your VM size.
 
-[General ](https://docs.microsoft.com/azure/virtual-machines/sizes-general)[purpose](https://docs.microsoft.com/azure/virtual-machines/sizes-general) - These VMs provide a balanced ration of CPU to memory. This VM class is ideal for testing and development, small to medium-sized database servers, and web servers with a low to medium amount of traffic.
+[General purpose](https://docs.microsoft.com/azure/virtual-machines/sizes-general) - These VMs provide a balanced ration of CPU to memory. This VM class is ideal for testing and development, small to medium-sized database servers, and web servers with a low to medium amount of traffic.
 
 [Compute optimized](https://docs.microsoft.com/azure/virtual-machines/sizes-compute) – Compute optimized VMs have a high CPU-to-memory ratio and are good for web servers with a medium amount of traffic, network appliances, batch processes, and application servers. These VMs can also support machine learning workloads that can't benefit from GPU-based VMs.
 
@@ -64,7 +64,7 @@ When deploying to an Azure virtual machine, there are several series, or “Fami
 
 [GPU](https://docs.microsoft.com/azure/virtual-machines/sizes-gpu) – Azure VMs with GPUs are targeted at two main types of workloads—naturally graphics processing operations like video rendering and processing, but also massively parallel machine learning workloads that can take advantage of GPUs.
 
-[High performance](https://docs.microsoft.com/azure/virtual-machines/sizes-hpc)[compute](https://docs.microsoft.com/azure/virtual-machines/sizes-hpc) – High Performance Compute workloads support applications that can scale horizontally to thousands of CPU cores. This support is provided by high-performance CPU and remote direct memory access (RDMA) networking that provides low latency communications between VMs.
+[High performance compute](https://docs.microsoft.com/azure/virtual-machines/sizes-hpc) – High Performance Compute workloads support applications that can scale horizontally to thousands of CPU cores. This support is provided by high-performance CPU and remote direct memory access (RDMA) networking that provides low latency communications between VMs.
 
 The easiest way to see the sizing options within each series is through the Azure portal. From the blade for creating a VM, you can click the option to “Select Size” and see a list.
 

@@ -2,7 +2,7 @@ The Azure ecosystem offers several different methods in which to provision a new
 
 ## Azure Marketplace
 
-The Azure Marketplace is essentially a centralized location that provides the ability to create Azure resources based on a predesigned template. For example, you can quickly create a SQL Server 2019 instance on Windows Server 2019 with a couple of clicks of the mouse along with some basic information, such as the virtual machine name as well as some SQL Server configuration information. Once provided, Azure Resource Manager (ARM) will initiate the creation of the virtual machine and within minutes it will be up and running.
+The Azure Marketplace is essentially a centralized location that provides the ability to create Azure resources based on a predesigned template. For example, you can quickly create a SQL Server 2019 instance on Windows Server 2019 with a couple of clicks of the mouse along with some basic information, such as the virtual machine name as well as some SQL Server configuration information. Once provided, Azure Resource Manager will initiate the creation of the virtual machine and within minutes it will be up and running.
 
 The blade for SQL Server 2019 on Windows Server 2019 in the Azure Marketplace is shown below. This blade gives you the option of pre-set configurations that support OLTP or Data Warehouse workloads and allow you to specify storage, patching, and backup options.
 
@@ -11,7 +11,7 @@ The blade for SQL Server 2019 on Windows Server 2019 in the Azure Marketplace is
 
 The disadvantage of using the portal to create Azure resources is that it is not an easily repeatable process. However, is it easy to get started with the portal, and using the portal a new administrator can quickly get up and running.
 
-## Storage Considerations
+## Storage considerations
 
 SQL Server requires good storage performance to deliver robust application performance, whether it be an on-premises instance or installed in an Azure VM. Azure provides a wide variety of storage solutions to meet the needs of your workload. While Azure offers various types of storage (blob, file, queue, table) in most cases SQL Server workloads will use Azure-managed disks. The exceptions are that a Failover Cluster Instance can be built on file storage and backups will use blob storage. Azure-managed disks act as a block-level storage device that is presented to your Azure VM. Managed disks offer a number of benefits including 99.999% availability, scalable deployment (you can have up to 50,000 VM disks per subscription per region), and integration with availability sets and zones to offer higher levels of resiliency in case of failure.
 
@@ -45,7 +45,7 @@ PowerShell is an object-orienting programming language that can be used to quick
 
 :::image type="content" source="../media/module-22-plan-implement-final-07.png" alt-text="PowerShell sample to create a Resource Group and an Azure VM":::
 
-TYhe image above shows a PowerShell script that defines parameters and creates an Azure resource group and a virtual machine with a predefined virtual network.
+The image above shows a PowerShell script that defines parameters and creates an Azure resource group and a virtual machine with a predefined virtual network.
 
 Azure Command Line Interface (CLI) is another method of using scripting to create Azure resources, including virtual machines. Its simplistic nature allows you to accomplish the same goal as with PowerShell in fewer lines of actual code.
 
@@ -53,13 +53,13 @@ Azure Command Line Interface (CLI) is another method of using scripting to creat
 
 As the image shows, the CLI is less verbose in terms of the amount of code required to create new resources.
 
-## Deploying using ARM Templates
+## Deploying using Azure Resource Manager templates
 
-Azure ARM Templates have the benefit of being able to deploy a full set of resources in one single declarative template. This includes the ability to build dependencies into the templates, as well as using parameters to change specific values at deployment time. Once you have a template, there are several ways with which you can deploy it including an Azure DevOps pipeline, or through the custom deployments blade in the Azure portal. You can use the Azure portal to export an ARM template to JSON for future deployment. 
+Azure Resource Manager Templates have the benefit of being able to deploy a full set of resources in one single declarative template. This includes the ability to build dependencies into the templates, as well as using parameters to change specific values at deployment time. Once you have a template, there are several ways with which you can deploy it including an Azure DevOps pipeline, or through the custom deployments blade in the Azure portal. You can use the Azure portal to export a Resource Manager template to JSON for future deployment. 
 
-:::image type="content" source="../media/module-22-plan-implement-final-09.png" alt-text="Example ARM Template":::
+:::image type="content" source="../media/module-22-plan-implement-final-09.png" alt-text="Example Azure Resource Manager Template":::
 
-The image above is an example of an ARM template that can be used to deploy a group of Azure resources repeatedly. Templates can be deployed directly from the Azure portal, or via scripting languages that reference the templates like PowerShell, the Azure CLI, or through DevOps workflows like Azure DevOps.
+The image above is an example of an Azure Resource Manager template that can be used to deploy a group of Azure resources repeatedly. Templates can be deployed directly from the Azure portal, or via scripting languages that reference the templates like PowerShell, the Azure CLI, or through DevOps workflows like Azure DevOps.
 
 ```powershell
 $resourceGroupName = Read-Host -Prompt "Enter the Resource Group name"
