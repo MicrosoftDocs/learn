@@ -38,11 +38,11 @@ For Example, when changing the storage type in a template that deploys a single 
 
 The PowerShell command parameter "-WhatIfResultFormat FullResourcePayloads" will produce the following results:
 
-:::image type="content" source="../media/whatif-FullResourcePayloads.png" alt-text="Results from executing a deployment with -WhatIfResultFormat FullResourcePayloads parameter in PowerShell." border="true":::
+:::image type="content" source="../media/whatif-fullresourcepayloads.png" alt-text="Results from executing a deployment with -WhatIfResultFormat FullResourcePayloads parameter in PowerShell." border="true":::
 
 And, the PowerShell command parameter "-WhatIfResultFormat ResourceIdOnly " will produce the following results:
 
-:::image type="content" source="../media/whatif-ResourceIdOnly.png" alt-text="Results from executing a deployment with -WhatIfResultFormat ResourceIdOnly parameter in PowerShell." border="true":::
+:::image type="content" source="../media/whatif-resourceIdonly.png" alt-text="Results from executing a deployment with -WhatIfResultFormat ResourceIdOnly parameter in PowerShell." border="true":::
 
 More detailed information about the command usage can be found [here](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell&WT.mc_id=MSLearn-ARM-pierrer#what-if-commands)
 
