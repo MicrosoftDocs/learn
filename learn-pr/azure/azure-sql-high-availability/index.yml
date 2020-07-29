@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure-sql-high-availability
 metadata:
-  title: Azure SQL - Deploy highly available solutions
-  description: Azure SQL - Deploy highly available solutions
+  title: Deploy highly available solutions with Azure SQL
+  description: Deploy highly available solutions with Azure SQL
   ms.date: 08/05/2020
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure SQL - Deploy highly available solutions
+title: Deploy highly available solutions with Azure SQL
 summary: Depending on the SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you will learn how to translate your knowledge of backup/restore, failover cluster instances, and Always On Availability Groups to the options for business continuity in Azure SQL. You'll also take a peek under the hood at the architectures and how they affect availability.
 abstract: | 
   In this module, you will learn how to:
