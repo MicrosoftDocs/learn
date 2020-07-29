@@ -10,17 +10,19 @@ There are two fundamental approaches to resiliency: code and infrastructure. Eac
 
 ## Polly
 
-[Polly](https://github.com/App-vNext/Polly) is a .NET library for resilience and transient failure handling. It is used to build failure-handling code with a fluent, easy-to-understand syntax. There are several ([resilience policies](https://github.com/App-vNext/Polly#resilience-policies)) that define failure-handling behavior. In this module, you'll apply the *Retry* and *Circuit-breaker* policies to HTTP client operations.
+[Polly](https://github.com/App-vNext/Polly) is a .NET library for resilience and transient failure handling. It is used to build failure-handling code with a fluent, easy-to-understand syntax. There are several [resilience policies](https://github.com/App-vNext/Polly#resilience-policies) that define failure-handling behavior. In this module, you'll apply the *Retry* and *Circuit-breaker* policies to HTTP client operations.
 
 Resiliency with Polly is defined in code, but startup-time configuration for some parameters is supported.
 
 ### Retry policy
 
-The *Retry* policy is exactly what the name implies. The request is retried after a short wait if an error response is received. The wait time is configurable and may be:
+The *Retry* policy is exactly what the name implies. The request is retried after a short wait if an error response is received. The wait time is configurable as shown in the following table:
 
-* A constant value, such as every 2 s.
-* An exponentially increasing value, such as 2 s, 4 s, 8 s, 16 s, etc.
-* A specific list of values, such as 100 ms, 100 ms, 100 ms, 2 s, 4 s, 8 s, etc.
+| Wait time value          | Example sequence   |
+|--------------------------|--------------------|
+| Constant                 | 2 s, 2 s, 2 s, 2 s... |
+| Exponentially increasing | 2 s, 4 s, 8 s, 16 s... |
+| Specified list           | 100 ms, 100 ms, 100 ms, 2 s, 4 s, 8 s... |
 
 The Retry policy always has a maximum retry count. Once that number of retries has been satisfied, the policy gives up and throws an exception. The user experience for this policy is usually that the app takes longer to complete some operations. The app may also take some time before informing the user that it couldn't complete the operation.
 

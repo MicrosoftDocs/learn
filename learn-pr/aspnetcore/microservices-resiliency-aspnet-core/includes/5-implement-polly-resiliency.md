@@ -8,18 +8,20 @@ In this exercise, you will:
 
 ## Add failure handling code using Polly
 
-The basic idea is to have the app automatically handle retrying the operation until it succeeds, or give up because it looks like a severe failure.
-
-When validating a discount coupon, the request goes to the web shopping aggregator, as the implementation of the [Backends For Frontends pattern](https://samnewman.io/patterns/architectural/bff) (BFF). The BFF implementation:
+The basic idea is to have the app automatically handle retrying the operation until it succeeds, or give up because it looks like a severe failure. When validating a discount coupon, the HTTP request goes to the web shopping aggregator, as the implementation of the [Backends For Frontends pattern](https://samnewman.io/patterns/architectural/bff) (BFF). The BFF implementation:
 
 - Sends another HTTP request to the coupon service to get the required information.
 - Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](http://www.thepollyproject.org).
 
-In this case, you'll implement a Retry and a Circuit Breaker policy to handle failure.
+To make the coupon service resilient, you'll implement a Retry and a Circuit Breaker policy to handle failure. Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. The `IHttpClientFactory` is responsible for creating instances of `HttpClient`.
 
-Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. Complete the following steps to implement failure handling for the coupon service:
+The following sequence diagram depicts the flow of events from an `HttpClient` instance to Polly's Retry and Circuit Breaker policies:
 
-1. Set your current location to the HTTP aggregator project directory by using the following command:
+:::image type="content" source="../media/5-implement-polly-resiliency/policy-http-message-handlers.png" alt-text="An HttpClient call through multiple PolicyHttpMessageHandlers" border="true" lightbox="../media/5-implement-polly-resiliency/policy-http-message-handlers.png":::
+
+Complete the following steps to implement failure handling for the coupon service as described above:
+
+1. Set your current location to the HTTP aggregator project directory by running the following command:
 
     ```bash
     pushd src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/
@@ -27,15 +29,15 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
 
     Your current location is *:::no-loc text="~/clouddrive/aspnet-learn/src/src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::*.
 
-1. Run the following command in the command shell:
+1. Run the following command:
 
     ```dotnetcli
     dotnet add package Microsoft.Extensions.Http.Polly
     ```
 
-    The preceding command installs the Polly `IHttpClientFactory` integration package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
+    The preceding command installs the Polly `IHttpClientFactory` integration NuGet package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
 
-1. Configure the `HttpClient` to apply Polly policies. To implement this, you'll use the `AddHttpClient` extension method to register a specific configuration for the `HttpClient` that will be injected into `CouponService`. Apply the following changes in the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
+1. Configure the `HttpClient` instance to apply Polly Retry and Circuit Breaker policies. Apply the following changes in the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
     1. Replace the comment `// Add the GetRetryPolicy method` with the following method:
 
         ```csharp
@@ -51,6 +53,8 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
         }
         ```
 
+        The preceding method configures a Retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead.
+
     1. Replace the comment `// Add the GetCircuitBreakerPolicy method` with the following method:
 
         ```csharp
@@ -59,9 +63,15 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-    1. Call the `AddPolicyHandler` extension method twice. The first occurrence should accept a `GetRetryPolicy` method call. The second occurrence should accept a `GetCircuitBreakerPolicy` method call. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
+        The preceding method configures a Circuit Breaker policy that "opens the breaker" for 15 seconds, after 15 continuous failures. This policy configuration gives the server some time to recover.
+
+    1. In the `AddApplicationServices` method, call the `AddPolicyHandler` extension method twice. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
         :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/5-servicecollectionextensions.cs" highlight="7-8":::
+
+        With the preceding changes, a Retry and a Circuit Breaker policy are registered with the `HttpClient` instance used by the coupon service. This particular `HttpClient` instance is provided to the `CouponService` class via constructor injection:
+
+        :::code language="csharp" source="../code/src/apigateways/services/5-couponservice.cs" highlight="8":::
 
     1. Replace the comment `// Add the using statements` with the following `using` directives:
 
@@ -72,10 +82,6 @@ Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of th
         ```
 
         Importing the preceding namespaces resolves member references in the `GetRetryPolicy` and `GetCircuitBreakerPolicy` methods.
-
-    The preceding changes configure a Retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead.
-
-    You can also see that the Circuit Breaker policy "opens the breaker" for 15 seconds, after 15 continuous failures. This policy configuration gives the server some time to recover.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
@@ -92,7 +98,7 @@ Complete the following steps to deploy the changes that you've implemented:
 1. Run the following script to publish the updated image to ACR:
 
     ```bash
-    ./deploy/k8s/build-to-acr.sh --services coupon-api
+    ./deploy/k8s/build-to-acr.sh --services webshoppingagg
     ```
 
     The preceding script builds and publishes the updated image to the ACR instance. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build the `webshoppingagg` image and push it to the ACR instance. You'll see a variation of the following output:
@@ -100,34 +106,38 @@ Complete the following steps to deploy the changes that you've implemented:
     ```console
     Building images to ACR
     ======================
+    ~/clouddrive/aspnet-learn/src/deploy/k8s ~/clouddrive/aspnet-learn/src
 
-    Building and publishing docker images to eshoplearn20200728215827705.azurecr.io
-    ~/clouddrive/aspnet-learn/src ~/clouddrive/aspnet-learn/src/deploy/k8s
+    Building and publishing docker images to eshoplearn20200729161705092.azurecr.io
+    ~/clouddrive/aspnet-learn/src ~/clouddrive/aspnet-learn/src/deploy/k8s ~/clouddrive/aspnet-learn/src
 
-    Building image "coupon.api" for service "coupon-api" with "src/Services/Coupon/Coupon.API/Dockerfile.acr"...
+    Building image "webshoppingagg" for service "webshoppingagg" with "src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Dockerfile.acr"...
+
+     > az acr build -r eshoplearn20200729161705092 -t eshoplearn20200729161705092.azurecr.io/webshoppingagg:linux-latest -f src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Dockerfile.acr .
+
     Packing source code into tar to upload...
     Excluding '.gitignore' based on default ignore rules
-    Uploading archived source code from '/tmp/build_archive_8ac133acf1e94357a1486d05d03368c4.tar.gz'...
-    Sending context (7.991 MiB) to registry: eshoplearn20200728215827705...
-    Queued a build with ID: cf1
+    Uploading archived source code from '/tmp/build_archive_1a826ecd8db64f8c846d796af13d6318.tar.gz'...
+    Sending context (7.838 MiB) to registry: eshoplearn20200729161705092...
+    Queued a build with ID: cf2
     Waiting for an agent...
-    2020/07/28 22:02:11 Downloading source code...
-    2020/07/28 22:02:13 Finished downloading source code
-    2020/07/28 22:02:13 Using acb_vol_181712d8-b881-4efa-ac0f-d09a4d497713 as the home volume
-    2020/07/28 22:02:13 Setting up Docker configuration...
-    2020/07/28 22:02:14 Successfully set up Docker configuration
-    2020/07/28 22:02:14 Logging in to registry: eshoplearn20200728215827705.azurecr.io
-    2020/07/28 22:02:15 Successfully logged into eshoplearn20200728215827705.azurecr.io
-    2020/07/28 22:02:15 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
-    2020/07/28 22:02:15 Scanning for dependencies...
-    2020/07/28 22:02:16 Successfully scanned dependencies
-    2020/07/28 22:02:16 Launching container with name: build
+    2020/07/29 17:03:19 Downloading source code...
+    2020/07/29 17:03:21 Finished downloading source code
+    2020/07/29 17:03:22 Using acb_vol_faae1c90-bbea-4ea6-89e9-daa0ab059f5a as the home volume
+    2020/07/29 17:03:22 Setting up Docker configuration...
+    2020/07/29 17:03:23 Successfully set up Docker configuration
+    2020/07/29 17:03:23 Logging in to registry: eshoplearn20200729161705092.azurecr.io
+    2020/07/29 17:03:24 Successfully logged into eshoplearn20200729161705092.azurecr.io
+    2020/07/29 17:03:24 Executing step ID: build. Timeout(sec): 28800, Working directory: '', Network: ''
+    2020/07/29 17:03:24 Scanning for dependencies...
+    2020/07/29 17:03:25 Successfully scanned dependencies
+    2020/07/29 17:03:25 Launching container with name: build
     ```
 
     And this particular line once the image has been published to ACR:
 
     ```console
-    2020/07/28 22:03:43 Successfully pushed image: eshoplearn20200728215827705.azurecr.io/coupon.api:linux-latest
+    2020/07/29 17:04:57 Successfully pushed image: eshoplearn20200729161705092.azurecr.io/webshoppingagg:linux-latest
     ```
 
 1. Run the following script to deploy the updated image in ACR to AKS:
@@ -167,13 +177,13 @@ You're going to repeat what was done in the initial exploration, only you've alr
 
 Consider the situation in which you configure the same two coupon failures with the code *:::no-loc text="FAIL 3 DISC-10":::*. When you enter the *:::no-loc text="DISC-10":::* code, it will take a few seconds to get the response back. Fortunately, you won't have to deal with the retrying.
 
-1. Run the following command to view the logging page URL. Click the **Centralized logging** link.
+1. Run the following command to view the logging page URL. Select the **Centralized logging** link.
 
     ```bash
     cat ../deployment-urls.txt
     ```
 
-1. Check the log traces. You should see something like this:
+1. Check the log traces. You'll see a variation of the following output:
 
     :::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces" border="true" lightbox="../media/5-implement-polly-resiliency/configure-and-retry-logs.png":::
 
