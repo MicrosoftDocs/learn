@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-Here you will deploy linked and nested templates in the supplied samdboix environment.
+Here you will deploy linked and nested templates in the supplied sandbox environment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -147,12 +147,3 @@ In this exercise, we will review and deploy a template that includes two linked 
 
         :::image type="content" source="../media/7-portal-deployment-listing.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
-
-
-    1. Leave the page open in your browser. You will check on deployments again.
-
-## Deploying a Nested template
-
-To add a nested template to your ARM template, add a Microsoft.Resources/deployments resource and the template property that contains the nested template. Take note of nested template expression evaluation scopes which determines at which level template expression are evaluated.
-
-In the following example, a 'parent' template targets a subscription deployment scope and deploys a resource group into the subscription. A nested template is then embedded into the parent template. The nested template is scoped at the resource group level and deploys a storage account into the resource group created in the parent template. Also, note that a dependency is created between the nested deployment resource and the resource group resource. This dependency ensures that the resource group has been deployed before deploying the storage account into it.
