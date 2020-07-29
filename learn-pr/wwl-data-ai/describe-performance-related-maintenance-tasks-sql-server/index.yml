@@ -3,7 +3,7 @@ uid: learn.wwl.describe-performance-related-maintenance-tasks-sql-server
 metadata:
   title: Describe performance-related maintenance tasks in SQL Server
   description: "Implement tasks for both IaaS and PaaS to maintain indexes, and statistics. Explore the automatic tuning features of Azure SQL Database."
-  ms.date: 07/31/2020
+  ms.date: 08/01/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial

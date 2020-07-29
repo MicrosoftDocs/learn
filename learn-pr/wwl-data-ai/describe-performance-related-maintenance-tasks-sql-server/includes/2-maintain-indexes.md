@@ -1,8 +1,8 @@
-Beyond just proper indexing, index maintenance is in important part of performance, especially for queries which scan tables or indexes. The query optimizer utilizes statistical information from the indexes to attempt to build the most optimal execution plan. While this execution plan is usually “good enough” having healthy indexes and statistics will ensure that any given plan will perform at optimal efficiency. Index maintenance should be performed regularly as data in your databases changes over time. You may choose to change your index maintenance strategy, based on the rate of change of your data.
+Beyond proper indexing, index maintenance is in important part of performance, especially for queries which scan tables or indexes. The query optimizer utilizes statistical information from the indexes to attempt to build the most optimal execution plan. While this execution plan is usually “good enough” having healthy indexes and statistics will ensure that any given plan will perform at optimal efficiency. Index maintenance should be performed regularly as data in your databases changes over time. You could change your index maintenance strategy based on the frequency of modifications to your data.
 
 ## Rebuild and reorganize
 
-As discussed earlier in this document, index fragmentation occurs when logical ordering within index pages does not match the physical ordering. This can occur during routine data modification statements such as UPDATE, DELETE, and INSERT. Due to the nature of index fragmentation, this can introduce performance issues because of the additional I/O that is required to locate the data which is being referenced by the pointers within the index pages.
+Index fragmentation occurs when logical ordering within index pages does not match the physical ordering. Pages can can out of order during routine data modification statements such as UPDATE, DELETE, and INSERT. Fragmentation can introduce performance issues because of the additional I/O that is required to locate the data that is being referenced by the pointers within the index pages.
 
 A reorganization of an index is an online operation that will defragment the leaf level of the index (both clustered and nonclustered). This defragmentation process will physically reorder the leaf-level pages to match the logical order of the nodes from left to right. During this process, the index pages are also compacted based on the configured fillfactor value.
 
@@ -14,9 +14,9 @@ The common guidance for index maintenance is:
 
 - &gt;30%  Rebuild the index
 
-You should use this a guidance, but not a hard and fast rule. Depending on your workload and data, you may need to be more aggressive, or in some cases you may be able to defer index maintenance for databases that mostly perform queries that seek specific pages.
+Use these numbers as general recommendations, but not as hard and fast rules. Depending on your workload and data, you may need to be more aggressive, or in some cases you may be able to defer index maintenance for databases that mostly perform queries that seek specific pages.
 
-Starting with SQL Server 2017, Microsoft introduced the ability to have resumable rebuild operations. This provides more flexibility in controlling how much of an impact a rebuild operation might impose on a given instance. With SQL Server 2019, the ability to control an associated maximum degree of parallelism was introduced further providing more granular control to database administrators.
+Starting with SQL Server 2017, Microsoft introduced the ability to have resumable rebuild operations. This option provides more flexibility in controlling how much of an impact a rebuild operation might impose on a given instance. With SQL Server 2019, the ability to control an associated maximum degree of parallelism was introduced further providing more granular control to database administrators.
 
 ## SQL Server on an Azure Virtual Machine
 
@@ -24,7 +24,7 @@ With SQL Server being installed within an Azure virtual machine you have access 
 
 ## Azure SQL Database
 
-Due to the nature of Azure SQL Database, you do not have access to SQL Server Agent nor Windows Task Scheduler. This means that index maintenance must be controlled from outside of the database. There are three ways to accomplish this:
+Due to the nature of Azure SQL Database, you do not have access to SQL Server Agent nor Windows Task Scheduler. Without these services, index maintenance must be controlled from outside of the database. There are three ways to manage maintenance operations:
 
 - Azure Automation Runbooks
 
@@ -34,4 +34,4 @@ Due to the nature of Azure SQL Database, you do not have access to SQL Server Ag
 
 ## Azure SQL managed instance
 
-As with SQL Server on an Azure VM, you can schedule jobs on an Azure SQL Managed Instance via the SQL Server Agent. This will provide flexibility to execute code specifically designed to reduce fragmentation within the indexes in the database.
+As with SQL Server on an Azure Virtual Machine, you can schedule jobs on an Azure SQL Managed Instance via the SQL Server Agent. Using the SQL Server Agent provides flexibility to execute code specifically designed to reduce fragmentation within the indexes in the database.
