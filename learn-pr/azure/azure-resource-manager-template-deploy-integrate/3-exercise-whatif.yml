@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.2-TBD
+uid: learn.azure.resource-manager-template-deploy-integrate.3-exercise-whatif
 title: TBD
 metadata:
   title: TBD
@@ -9,6 +9,7 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-TBD.md)]
+  [!include[](includes/3-exercise-whatif.md)]
