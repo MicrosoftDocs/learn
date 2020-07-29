@@ -116,7 +116,6 @@ In this exercise, we will review and deploy a template that includes two linked 
     }
     ```
 
-    
 1. To get started copy and paste the content of the template displayed above, into a file in a local directory.  **C:\JSON\linkedtemplate.json** for example.
 
     Once you have saved that file locally you can proceed to deploy it using the PowerShell command to deploy at the resource group level we talked about in the last unit. Namely, [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.4.0&WT.mc_id=MSLearn-ARM-pierrer)
@@ -133,9 +132,24 @@ In this exercise, we will review and deploy a template that includes two linked 
 
     Once it completes you should have results like this:
 
-    :::image type="content" source="../media/5-parameter-prompt.png" alt-text="Results from deploying local template." border="true":::
+    :::image type="content" source="../media/6-linked-template-results.png" alt-text="Results from deploying linked template." border="true":::
 
-All three templates can be found in this repository.
+1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+
+    1. On the left side panel, choose *Resource groups*.
+    1. Select <rgn>[sandbox resource group name]</rgn>.
+    1. In the *Overview*, you see the deployment has succeeded.
+    1. Select *3 Succeeded* to see the details of the deployment. *(There may be more completed deployment depending on wether you performed the previous unit's exercises)*
+
+        :::image type="content" source="../media/7-portal-deployment-details.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
+
+    1. You will notice that you deployed one Template but 3 are listyed in the deployment pane of the portal. Those 3 deployments correspond to the Main templayte and the 2 linked templates.
+
+        :::image type="content" source="../media/7-portal-deployment-listing.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
+
+
+
+    1. Leave the page open in your browser. You will check on deployments again.
 
 ## Deploying a Nested template
 
