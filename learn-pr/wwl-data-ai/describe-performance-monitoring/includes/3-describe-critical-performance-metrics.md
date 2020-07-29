@@ -1,4 +1,4 @@
-You have seen about how to collect data in both Azure Monitor and Windows Performance Monitor. You will now learn how to create metrics in Azure Monitor which allow you to trigger alerts or execute automated error responses.
+You have seen about how to collect data in both Azure Monitor and Windows Performance Monitor. You will now learn how to create metrics in Azure Monitor, which allow you to trigger alerts or execute automated error responses.
 
 ## Review of Azure metrics
 
@@ -14,11 +14,11 @@ Utilizing the Azure portal, you can create alert rules, based on defined metrics
 
 - All virtual machines (in one Azure region) in one subscription
 
-In this manner you can create an alert rule based on resources contained within resource groups as shown.
+In this manner, you can create an alert rule based on resources contained within resource groups as shown.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-04.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
-The example shown below reflects a virtual machine named SQL2019 on which we are creating an alert that is at the scope of the of the individual virtual machine.
+The example shown below reflects a virtual machine named SQL2019 on which we are creating an alert that is at the scope of the individual virtual machine.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-05.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
@@ -30,19 +30,19 @@ Under the Condition section, click **Add**:
 
 :::image type="content" source="../media/module-44-optimize-resources-final-06.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
-Select the metric that you wish to alert on. The following image shows Percentage CPU which you will then see selected.
+Select the metric that you wish to alert on. The following image shows Percentage CPU, which you will then see selected.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-07.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
-The alerts can be configured in a static manner (e.g. alert when CPU goes over 95%) or in a dynamic fashion using Dynamic Thresholds. Dynamic Thresholds learn the historical behavior of the metric and alert when the resources are operating in an abnormal manner. This can detect seasonality in your workloads and adjust the alerting accordingly.
+The alerts can be configured in a static manner (for example, raise an alert when CPU goes over 95%) or in a dynamic fashion using Dynamic Thresholds. Dynamic Thresholds learn the historical behavior of the metric and raise an alert when the resources are operating in an abnormal manner. These Dynamic Thresholds can detect seasonality in your workloads and adjust the alerting accordingly.
 
-If Static alerts are used, you must provide a threshold for the selected metric. In this example 80 percent was provide. This means that if the CPU utilization exceeds 80 percentage over a given period, an alert will be fired and react as specified.
+If Static alerts are used, you must provide a threshold for the selected metric. In this example, 80 percent was specified. This threshold means that if the CPU utilization exceeds 80 percentage over a given period, an alert will be fired and react as specified.
 
-Both types of alerts offer Booleans operators such as greater than or less than. Along with Boolean operators, there are aggregate measurements to select from such as average, minimum, maximum, count, average, and total. With these options available, it’s easy to construct a flexible alert that will suit just about any enterprise level alerting.
+Both types of alerts offer Booleans operators such as the 'greater than' or 'less than' operators. Along with Boolean operators, there are aggregate measurements to select from such as average, minimum, maximum, count, average, and total. With these options available, it’s easy to construct a flexible alert that will suit just about any enterprise level alerting.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-08.png" alt-text="A screenshot of a social media post Description automatically generated":::
 
-After creating the alert, in order to notify administrators or launch an automation process, an action group needs to be configured. You should note that defining an action group is optional, and if one is not configured the alert will just log the notification to storage with no further action is taken. You can create a new action group from the metrics screen, by clicking **Add** next to Action Groups. You will then see this dialog:
+After creating the alert, in order to notify administrators or launch an automation process, an action group needs to be configured. Note that defining an action group is optional, and if one is not configured the alert will just log the notification to storage with no further action is taken. You can create a new action group from the metrics screen, by clicking **Add** next to Action Groups. You will then see this dialog:
 
 :::image type="content" source="../media/module-44-optimize-resources-final-09.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
@@ -50,7 +50,7 @@ Once you click Create Action group, you will see the screen shown below. You wil
 
 :::image type="content" source="../media/module-44-optimize-resources-final-10.png" alt-text="A screenshot of a social media post Description automatically generated":::
 
- You can configure the email or SMS details as can be seen below. You can reach this screen either by clicking **Edit Details** under **Configure**, or by adding a new action which will also bring up the configuration screen.
+ You can configure the email or SMS details as can be seen below. You can reach this screen either by clicking **Edit Details** under **Configure**, or by adding a new action, which will also bring up the configuration screen.
 
 :::image type="content" source="../media/module-44-optimize-resources-final-11.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
@@ -72,7 +72,7 @@ With an action group, there are several ways in which you can respond to the ale
 
 - Webhook
 
-There are two categories to these actions—notification which means notifying an administrator or group of administrators of an event, and automation, which is taking a defined action to respond to a performance condition.
+There are two categories to these actions—notification, which means notifying an administrator or group of administrators of an event, and automation, which is taking a defined action to respond to a performance condition.
 
 ## Reviewing older performance data
 
@@ -82,6 +82,6 @@ One of the benefits of utilizing the Azure Monitor is the ability to easily and 
 
 You are also able to select a smaller window of time such as the last 30 minutes, last hour, last 4 hours, or last 12 hours as an example. The flexibility of Azure monitor allows administrators to quickly identify issues as well as to potentially diagnose past issues.
 
-## SQL Server Mmtrics that matter
+## SQL Server metrics that matter
 
-Microsoft SQL Server is an extremely well instrumented piece of software that collects a great deal of performance metadata. The database engine has metrics that can be monitored to help identify and improve performance related issues. Some operating system metrics are only viewable from within performance monitor while others can be accessed through T-SQL queries, in particular, by selecting from the dynamic management views (DMVs). There are some metrics that are exposed in both locations so knowing where to identify specific metrics is important. One example of data that can only be captured from DMVs is data and transaction log file read/write latency as exposed in sys.dm_os_volume_stats. On the other hand, an example of an OS metric that is not available directly through SQL Server is the seconds per disk read and write for the disk volume. Combining these two metrics can help you gain better understand if a performance issue is related to database structure or a physical storage bottleneck.
+Microsoft SQL Server is a well instrumented piece of software that collects a great deal of performance metadata. The database engine has metrics that can be monitored to help identify and improve performance-related issues. Some operating system metrics are only viewable from within performance monitor while others can be accessed through T-SQL queries, in particular, by selecting from the dynamic management views (DMVs). There are some metrics that are exposed in both locations so knowing where to identify specific metrics is important. One example of data that can only be captured from DMVs is data and transaction log file read/write latency as exposed in sys.dm_os_volume_stats. On the other hand, an example of an OS metric that is not available directly through SQL Server is the seconds per disk read and write for the disk volume. Combining these two metrics can help you gain better understand if a performance issue is related to database structure or a physical storage bottleneck.
