@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/30/2020
+  ms.date: 07/31/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You are deploying a mission critical MySQL database to support an e—commerce site which depends on low latency. What should you configure your application to do in order to handle transient errors?"
+  - content: "You are deploying a mission critical MySQL database to support an e-commerce site which depends on low latency. What should you configure your application to do in order to handle transient errors?"
     choices:
     - content: "Connection resiliency"
       isCorrect: true
@@ -38,17 +38,6 @@ quiz:
     - content: "Automated cross-region disaster recovery"
       isCorrect: false
       explanation: "That's incorrect. Automated backup is a feature of the service."
-  - content: "What's the process to upgrade a major version of Azure Database for MySQL?"
-    choices:
-    - content: "The Service performs the update for you"
-      isCorrect: false
-      explanation: "That's incorrect. It is required to create a backup and restore to upgrade to a new major version."
-    - content: "Create a dump and restore to a server at the higher version"
-      isCorrect: true
-      explanation: "That's correct. It is required to create a backup and restore to upgrade to a new major version."
-    - content: "Change the version of the server in the portal"
-      isCorrect: false
-      explanation: "That's incorrect. It is required to create a backup and restore to upgrade to a new major version."
   - content: "What's the process to upgrade a major version of Azure Database for MySQL?"
     choices:
     - content: "The Service performs the update for you"

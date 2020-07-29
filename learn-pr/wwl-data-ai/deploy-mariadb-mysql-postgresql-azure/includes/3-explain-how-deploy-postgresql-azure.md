@@ -1,6 +1,6 @@
-Just like the Azure SQL offerings, deployment for MariaDB, MySQL, and PostgreSQL is supported using all of the standard Azure methods including the Azure portal, PowerShell, ARM templates, and the Azure CLI. There is limited support for PowerShell cmdlets for these platforms.
+Just like the Azure SQL offerings, deployment for MariaDB, MySQL, and PostgreSQL is supported using all of the standard Azure methods including the Azure portal, PowerShell, Azure Resource Manager templates, and the Azure CLI. There is limited support for PowerShell cmdlets for these platforms.
 
-## Single Database
+## Single database
 
 In the Azure portal, click on Create a Resource on the main portal blade as shown. Search for Azure Database for PostgreSQL and click create. The portal will launch the screen shown below.
 

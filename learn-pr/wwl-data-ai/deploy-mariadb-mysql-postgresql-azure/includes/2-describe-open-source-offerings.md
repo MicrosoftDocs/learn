@@ -6,7 +6,7 @@ Azure Database for MariaDB is similar to the MySQL offering. It also allows for 
 
 Azure Database for PostgreSQL helps customers to build large scalable applications. The service allows for horizontal scaling and is available with Hyperscale which allows for unparalleled performance. It also integrates with several native features such as geospatial support, rich indexing, and JSONB along with other extensions. Azure Database for PostgreSQL Hyperscale is ideal for multi-tenant applications, with minor code changes to allow for data sharding.
 
-## Service Tiers
+## Service tiers
 
 There are three service tiers for each offering. Each tier has an ideal workload for which it is designed and allows you to choose from a variety of performance options.
 
