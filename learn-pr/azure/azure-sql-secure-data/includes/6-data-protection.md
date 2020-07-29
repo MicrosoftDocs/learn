@@ -16,7 +16,7 @@ You can, alternatively, bring your own key (BYOK) leveraging Azure key vault. In
 
 You also have the ability to leverage column-level encryption, which is supported in Azure SQL just as it is in SQL Server. Similarly, always encrypted is supported just like in SQL Server. This process involves client-side encryption of sensitive data using keys that are never given to the database system. Additionally, the client driver transparently encrypts query parameters and decrypts the encrypted results. There is currently support on encrypted data for equality comparison, including `JOIN`, `GROUP BY`, and `DISTINCT` operators by deterministic encryption.
 
-One important note is Always Encrypted with secure enclaves is not yet available in Azure SQL Database or Azure SQL Managed Instance.
+Always Encrypted with secure enclaves is not yet available in Azure SQL Database or Azure SQL Managed Instance.
 
 ## Dynamic Data Masking
 
