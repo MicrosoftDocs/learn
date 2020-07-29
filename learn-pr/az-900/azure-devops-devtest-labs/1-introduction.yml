@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.azure-devops-devtest-labs.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Brief introduction to the problems developers, engineers and others face when working with code.
+  ms.date: 07/17/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
