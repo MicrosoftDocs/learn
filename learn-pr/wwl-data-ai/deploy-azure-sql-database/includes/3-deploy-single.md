@@ -1,6 +1,6 @@
 We’ll look at several methods for deploying a singleton Azure SQL Database.
 
-## Deploying via the Portal
+## Deploying via the portal
 
 The process to create a singleton database through the Azure portal is straightforward. While in the portal, on the left-hand navigation menu, select “SQL Databases”. In the resulting slide out dialog, click “Create” as shown in Figure 3 below.
 
@@ -216,9 +216,9 @@ az sql db create \
 echo $password
 ```
 
-## Deploying Azure SQL Database Using ARM Templates
+## Deploying Azure SQL Database Using Azure Resource Manager templates
 
-Another method for deploying resources is as mentioned earlier is using an ARM template. An ARM template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts ARM templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown in Figure 19:
+Another method for deploying resources is as mentioned earlier is using an Azure Resource Manager template. A Resource Manager template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts Azure Resource Manager templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown in Figure 19:
 
 ```powershell
 #Define Variables for parameters to pass to template

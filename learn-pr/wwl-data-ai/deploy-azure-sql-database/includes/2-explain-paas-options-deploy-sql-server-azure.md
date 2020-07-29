@@ -6,11 +6,11 @@ As shown in the image above, PaaS includes cloud provided operating system and m
 
 We’ll explore Azure SQL database in this section. Azure SQL Database is available in three different deployment options:
 
-- A single database---A single database that is billed and managed on a per database level
+- A single database – A single database that is billed and managed on a per database level
 
-- Elastic Pools—A group of databases that are managed together and share a common set of resources
+- Elastic Pools – A group of databases that are managed together and share a common set of resources
 
-- Hyperscale—a single database offering that allows databases to scale much beyond the 4-TB limit of an Azure SQL Database
+- Hyperscale – a single database offering that allows databases to scale much beyond the 4-TB limit of an Azure SQL Database
 
 Even in the cloud all services are backed by physical hardware. The Azure SQL Database allows you to choose from two different purchasing models:
 
@@ -46,7 +46,7 @@ You can purchase vCore databases in three different service tiers as well:
 
 - Business Critical – This tier is for high performing workloads offering the lowest latency of either service tier. This tier is backed by local SSDs instead of Azure blob storage. It also offers the highest resilience to failure as well as providing a built-in read-only database replica that can be used to off-load reporting workloads
 
-- Hyperscale—Hyperscale databases can scale far beyond the 4 TB limit the other Azure SQL Database offerings and have a unique architecture that supports databases of up to 100 TB
+- Hyperscale – Hyperscale databases can scale far beyond the 4 TB limit the other Azure SQL Database offerings and have a unique architecture that supports databases of up to 100 TB
 
 ## Backups
 
@@ -72,7 +72,7 @@ Restore using the Azure portal –Using the Azure portal you have the option of 
 
 Restore using scripting Languages – Both PowerShell and Azure CLI can be utilized in order to restore a database.
 
-## Active Geo-Replication
+## Active geo-replication
 
 Geo-replication is a business continuity feature that asynchronously replicates a database to up to four secondary replicas. As transactions are committed to the primary (and its replicas within the same region), the transactions are sent to the secondaries to be replayed. Because this communication is done asynchronously, the calling application does not have to wait for the secondary replica to commit the transaction prior to SQL Server returning control to the caller.
 
@@ -80,7 +80,7 @@ The secondary databases are readable and can be used to offload read-only worklo
 
 With geo-replication you can initiate a failover either manually by the user or from the application. If a failover occurs, you potentially will need to update application connection strings to reflect the new endpoint of what is now the primary database.
 
-## Failover Groups
+## Failover groups
 
 Failover groups are built on top of the technology used in geo-replication, but provide a single endpoint for connection. The major reason for using failover groups is that the technology provides endpoints, which can be utilized to route traffic to the appropriate replica. Your application can then connect after a failover without connection string changes.
 

@@ -2,7 +2,7 @@ The Platform as a Service (PaaS) offering for SQL Server can be a great solution
 
 This module will focus on ways to provision and deploy both Azure SQL Database and Azure SQL managed instances, as well as provide clear and definitive guidance on the various options when performing a migration to this platform.
 
-## Learning Objectives
+## Learning objectives
 
 At the end of this module, you will be able to:
 
