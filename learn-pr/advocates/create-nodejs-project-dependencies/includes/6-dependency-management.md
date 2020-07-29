@@ -1,18 +1,18 @@
-Sooner or later you will want to update to a new version of a library. The reason can be that some function is marked as deprecated or that there's a new feature in a later version of a package you are using. 
+Sooner or later, you'll want to update to a new version of a library. Maybe a function is marked as deprecated. Or maybe there's a new feature in a later version of a package you're using. 
 
-There are considerations that should be taken into account prior to attempt to update a library, namely:
+There are some considerations that you should take into account before you try to update a library:
 
-- **The type of update**, what type of update is available, is it a small bug fix? Is it adding a new feature I need or will it break my code? A way to communicate what type of update that takes place is by adhering to a system called Semantic versioning. Based on how the version number of the library is expressed it communicates to a developer what type of update they are dealing with.
-- **Is my project configured correctly**, you can configure your Node.js project in a way so that you only get the types of updates you want. That means you will only perform an update if a specific type of update is available. It's a recommended approach as you don't risk running into surprises.
-- **Mitigate security issues**, part of managing your project dependencies over time means being aware of issues that might occur. Issues arise as vulnerabilities are detected for example. Hopefully patches will be released that you can download. The NPM executable helps you run an *audit* on your libraries to find out if you have packages that should be updated and the executable also helps you with the appropriate action to fix the issue.
+- **The type of update**. What type of update is available? Is it a small bug fix? Is it adding a new feature I need? Will it break my code? You can communicate the type of update by using a system called *semantic versioning*. The way the version number of the library is expressed communicates to developers the type of update they're dealing with.
+- **Whether the project is configured correctly**. You can configure your Node.js project so that you get only the types of updates you want. You'll only perform an update if a specific type of update is available. We recommend this approach because you don't risk running into surprises.
+- **Security problems**. Managing your project dependencies over time involves being aware of problems that might occur. Problems arise as vulnerabilities are detected, for example. Ideally, patches will be released that you can download. The npm tool helps you run an *audit* on your libraries to find out if you have packages that should be updated. It also helps you take the appropriate action to fix a problem.
 
 ## Semantic versioning
 
-There's an industry standard called semantic versioning. It's a system  adopted by numerous companies and developers. If you mean to publish packages and push them to the NPM registry, you should definitely follow semantic versioning as this is expected. Even if you only download packages from the NPN registry you can expect these packages to follow semantic versioning.
+There's an industry standard called semantic versioning. It's a system  adopted by numerous companies and developers. If you intend to publish packages and push them to the npm registry, you should definitely follow semantic versioning. It's expected. Even if you only download packages from the npm registry, you can expect these packages to follow semantic versioning.
 
-So why is it such a big deal? Changes to a package are about introducing risk, risk that a bug is introduced, that can harm your business. A risk that you as a consumer needs to rewrite part of your code, fixing that takes time and time is money.  
+So why is it such a big deal? Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time, and time is money.  
 
-Semantic versioning is how you express what type of change you or some other developer is introducing to a library. How semantic versioning works is by ensuring a package has a version number and that the version number is divided up into the following sections:
+Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring a package has a version number and that the version number is divided up into the following sections:
 
 - **major version**, the leftmost number e.g `1` in `1.0.0`, changing major version means that we can expect breaking changes in the code. You might need to rewrite part of your code.
 - **minor version**, the middle number, e.g,  the `2` in `1.2.0`, means features have been added. Your code should still be working. It's generally safe to update the minor version.
