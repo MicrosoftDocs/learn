@@ -17,8 +17,9 @@ abstract: |
   - Monitor and troubleshoot performance in Azure SQL
   - Improve performance with Intelligent Insights
 prerequisites: | 
-  - Experience working with, maintaining, and developing with SQL Server
-  - Experience with Azure, such as deploying and managing resources
+ - Experience working with, maintaining, and developing with SQL Server
+ - Experience with Azure, such as deploying and managing resources
+iconUrl: /learn/achievements/azure-sql-performance.svg
 levels:
 - beginner
 roles:
