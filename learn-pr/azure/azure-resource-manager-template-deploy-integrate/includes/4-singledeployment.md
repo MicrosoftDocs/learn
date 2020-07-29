@@ -10,7 +10,7 @@ While you are writing your templates you will need to deploy them to your test e
 There will be times where you need to deploy from different locations
 
 1. From a local file
-1. From a Uniform Resource Identifier (URI)
+1. From a external or remote location using a Uniform Resource Identifier (URI)
 
 And always with the option of using a parameter file.
 

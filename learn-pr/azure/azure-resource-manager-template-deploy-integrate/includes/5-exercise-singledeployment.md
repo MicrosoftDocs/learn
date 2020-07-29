@@ -1,7 +1,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-Here, you will deploy a simple Azure Resource Manager (ARM) template from local directory on your own machine, from a Github repo with a URI and directly from the Azure portal.
+Here, you will deploy a simple Azure Resource Manager (ARM) template from local directory on your own machine and from a Github repo with a URI.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -189,4 +189,27 @@ Rather than passing parameters as inline values in your script, you may find it 
     :::image type="content" source="../media/5-parameter-file-create-3.png" alt-text="Create parameter file in VS Code." border="true":::
 
 ## Deploy an external or remote template
+
+I some instances you will need to deploy from an external or remote location instead of from a templates on your local machine. You can store templates in a source control repository (such as GitHub). Or, you can store them in an Azure storage account for shared access in your organization.
+
+1. To deploy an external template, use the TemplateUri parameter.
+    In the next exercise, you will deploy an ARM template from a Github repo. The repo is public, therefore you don't need to worry about deploying a template that requires a shared access signature (SAS) token.  Details about using a private or secured remote locatio can be found in the following article. [Deploy private template with SAS token](https://docs.microsoft.com/azure/azure-resource-manager/templates/secure-template-with-sas-token?tabs=azure-powershell&WT.mc_id=MSLearn-ARM-pierrer).
+
+    The template URI for the exercise is https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json.  It's a short template that will deploy a simple storage account in your sandbox environment.
+1. The powershell command/process is exactly the same as for a local template for the exception of the **-TemplateUri** parameter replacing the **-TemplateFile** parameters.
+1. Use the following code to deploy in the provided sandbox
+
+```powershell
+$parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
+$today=Get-Date -Format "MM-dd-yyyy"
+$DeploymentName="DeployLocalTemplate-4-"+"$today"
+
+New-AzResourceGroupDeployment `
+    -Name $DeploymentName `
+    -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+```
+
+The results will be like the following screen capture. And they outline the details of the template location.
+
+:::image type="content" source="../media/5-remote-template.png" alt-text="Create parameter file in VS Code." border="true":::
 
