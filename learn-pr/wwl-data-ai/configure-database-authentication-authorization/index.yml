@@ -35,7 +35,6 @@ units:
 - learn.wwl.configure-database-authentication-authorization.describe-database-object-permissions
 - learn.wwl.configure-database-authentication-authorization.explain-execute-as-user
 - learn.wwl.configure-database-authentication-authorization.explain-policy-of-least-privilege
-- learn.wwl.configure-database-authentication-authorization.exercise
 - learn.wwl.configure-database-authentication-authorization.knowledge-check
 - learn.wwl.configure-database-authentication-authorization.summary
 badge:
