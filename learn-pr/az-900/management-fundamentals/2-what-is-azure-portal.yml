@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.management-fundamentals.what-is-azure-portal
+title: What is Azure Portal?
+metadata:
+  title: What is Azure Portal?
+  description: TODO need a description
+  ms.date: 07/29/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+azureSandbox: false
+content: |
+  [!include[](includes/2-what-is-azure-portal.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.management-fundamentals.what-is-azure-powershell
+title: What is Azure Powershell?
+metadata:
+  title: What is Azure Powershell?
+  description: TODO need a description
+  ms.date: 07/29/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+azureSandbox: false
+content: |
+  [!include[](includes/3-what-is-azure-powershell.md)]

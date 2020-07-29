@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.management-fundamentals.introduction
+title: Management Fundamentals
+metadata:
+  title: Management Fundamentals
+  description: Survey the various ways that engineers can create and manage Azure services.
+  ms.date: 07/29/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
