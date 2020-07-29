@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.2-TBD
+uid: learn.azure.resource-manager-template-deploy-integrate.6-linkedtemplates
 title: TBD
 metadata:
   title: TBD
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-TBD.md)]
+  [!include[](includes/6-linkedtemplates.md)]
