@@ -135,7 +135,7 @@ In the following exercise, you will deploy a template from your local machine. T
 
     Once it completes, you should have results like this:
 
-    :::image type="content" source="../media/5-parameter-prompt.png" alt-text="Results from deploying local template." border="true":::
+:::image type="content" source="../media/5-parameter-prompt.png" alt-text="Results from deploying local template." border="true":::
 
 ### Deploy the same local template with parameter values
 
@@ -158,7 +158,7 @@ To pass inline parameters to your deployment, you need to provide the names of t
 
     Once it completes, you should have results like this:
 
-    :::image type="content" source="../media/5-parameter-inline.png" alt-text="Results from deploying local template with inline parameters." border="true":::
+:::image type="content" source="../media/5-parameter-inline.png" alt-text="Results from deploying local template with inline parameters." border="true":::
 
 Rather than passing parameters as inline values in your script, you may find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI.  For more information about the parameter file, see [Create Resource Manager parameter file](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files?WT.mc_id=MSLearn-ARM-pierrer).
 
@@ -167,7 +167,7 @@ Rather than passing parameters as inline values in your script, you may find it 
 
 1. Click the "New..." item in the menu and the extension will create a parameter file based on the template currently opened.
 
-    :::image type="content" source="../media/5-parameter-file-create-2.png" alt-text="Create parameter file in VS Code." border="true":::
+:::image type="content" source="../media/5-parameter-file-create-2.png" alt-text="Create parameter file in VS Code." border="true":::
 
 1. Once we have our local parameter file, we can use the following PowerShell command with the **TemplateParameterFile** parameters.
 
@@ -186,7 +186,7 @@ Rather than passing parameters as inline values in your script, you may find it 
 
     after the deployment you should have results like the following:
 
-    :::image type="content" source="../media/5-parameter-file-create-3.png" alt-text="Create parameter file in VS Code." border="true":::
+:::image type="content" source="../media/5-parameter-file-create-3.png" alt-text="Create parameter file in VS Code." border="true":::
 
 ## Deploy an external or remote template
 

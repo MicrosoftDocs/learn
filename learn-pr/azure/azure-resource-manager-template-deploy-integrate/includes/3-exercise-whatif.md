@@ -48,7 +48,7 @@ To use what-if in Azure CLI, you must have Azure CLI 2.5.0 or later. If needed, 
 
 To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal.
 
-    :::image type="content" source="../media/vscode-terminal.gif" alt-text="Open the integrated terminal in Visual Studio Code." border="true":::
+:::image type="content" source="../media/vscode-terminal.gif" alt-text="Open the integrated terminal in Visual Studio Code." border="true":::
 
  Be sure you are signing in to the same account that activated the sandbox.
 
@@ -102,7 +102,7 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
 
     You see ```Running...``` in the terminal. When that finishes, the results of the above command should be something like the following
 
-    :::image type="content" source="../media/whatif-before-result.png" alt-text="Results from before template." border="true":::
+:::image type="content" source="../media/whatif-before-result.png" alt-text="Results from before template." border="true":::
 
 1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
@@ -111,13 +111,13 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
     1. In the *Overview*, you see one deployment succeeded.
     1. Select *1 Succeeded* to see the details of the deployment.
 
-        :::image type="content" source="../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
+:::image type="content" source="../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
     1. Select *what-if-before* to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with 2 subnets.
 
-        :::image type="content" source="../media/3-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
+:::image type="content" source="../media/3-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
-        :::image type="content" source="../media/3-portal-deployment-details-2.png" alt-text="Azure portal interface for the specific deployment with VNet resource listed." border="true":::
+:::image type="content" source="../media/3-portal-deployment-details-2.png" alt-text="Azure portal interface for the specific deployment with VNet resource listed." border="true":::
 
     1. Leave the page open in your browser. You will check on deployments again.
 
@@ -139,7 +139,7 @@ Now that you've deployed the template, you're ready to test the *what-if* operat
 
 1. The what-if output appears similar to:
 
-    :::image type="content" source="../media/3-portal-deployment-whatif-results.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
+:::image type="content" source="../media/3-portal-deployment-whatif-results.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
     You'll notice that the result is colour coded in addition to a "prefix"
 
@@ -160,7 +160,7 @@ To preview changes before deploying a template, you need to be in  use the **-co
     -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/empty-template/azuredeploy.json"
     ```
 
-    :::image type="content" source="../media/whatif-complete-confirm.png" alt-text="Azure portal interface for the complete deployments and prompt to execute." border="true":::
+:::image type="content" source="../media/whatif-complete-confirm.png" alt-text="Azure portal interface for the complete deployments and prompt to execute." border="true":::
 
     The result will ask you to confirm with the following prompt:
 
@@ -169,11 +169,11 @@ To preview changes before deploying a template, you need to be in  use the **-co
 
 1. To execute and clean out your environment type "A" for "[A] Yes to All".  Once it completes with the following results
 
-    :::image type="content" source="../media/whatif-complete-confirm-results.png" alt-text="Azure portal interface for the specific deployment with VNet resource listed." border="true":::
+:::image type="content" source="../media/whatif-complete-confirm-results.png" alt-text="Azure portal interface for the specific deployment with VNet resource listed." border="true":::
 
 1. Navigate back to the open browser you used earlier, and verify that there were 2 successful deployment.
 
     1. The first one you deployed
     1. The complete one that removed all resources, and the VNet is no longer there. 
 
-    :::image type="content" source="../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with VNet resource no longer listed." border="true":::
+:::image type="content" source="../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with VNet resource no longer listed." border="true":::
