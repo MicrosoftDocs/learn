@@ -1,16 +1,16 @@
-The Node.js "path" module and `__dirname` global variable are two ways to define and compose file system paths.
+The Node.js *path* module and `__dirname` global variable are two ways to define and compose file system paths.
 
-In the previous exercise, you wrote a _stunning_ program that iterates through a folder to find any of the "sales.json" files inside.
+In the previous exercise, you wrote a program that iterates through a folder to find any of the sales.json files inside.
 
-In this exercise, you'll use the "path" module and `__dirname` global variable to improve that program so that it will find any file with a ".json" extension.
+In this exercise, you'll use the path module and `__dirname` global variable to improve that program so that it will find any file with a .json extension.
 
-## Include the "path" module
+## Include the path module
 
-1. At the very top of the `index.js` file, include the "path" module.
+At the top of the `index.js` file, include the path module.
 
-   ```javascript
-   const path = require("path");
-   ```
+```javascript
+const path = require("path");
+```
 
 ## Using the current directory
 
@@ -29,7 +29,7 @@ In the current "index.js" code, you're passing the static location of the "store
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
 
-1. Execute the program from the command-line
+1. Run the program from the command line.
 
    ```bash
    node index.js
@@ -59,7 +59,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
 
-1. Execute the program from the command-line
+1. Run the program from the command line.
 
    ```bash
    node index.js
@@ -71,7 +71,7 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
 Instead of looking for just `sales.json` files, this program needs to search for any file with an extension of ".json". To do that, use the `path.extname` method to check the file extension.
 
-1. Execute the following command in the terminal to rename the "stores/201/sales.json" file to "stores/sales/totals.json".
+1. Run the following command in the terminal to rename the "stores/201/sales.json" file to "stores/sales/totals.json".
 
    ```bash
    mv stores/201/sales.json stores/201/totals.json
@@ -88,7 +88,7 @@ Instead of looking for just `sales.json` files, this program needs to search for
 
 1. Press <kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>S</kbd> to save the file.
 
-1. Execute the program from the command-line
+1. Run the program from the command line.
 
    ```bash
    node index.js

@@ -9,10 +9,8 @@ metadata:
   ms.date: 04/20/2020
   ms.topic: interactive-tutorial
   ms.prod: vs
-# If you don't the sandbox, remove these two lines...
 interactive: bash
 azureSandbox: true
-# -- End sandbox --
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-file-system.md)]
