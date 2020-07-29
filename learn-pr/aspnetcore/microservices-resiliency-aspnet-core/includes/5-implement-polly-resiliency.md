@@ -37,7 +37,7 @@ Complete the following steps to implement failure handling for the coupon servic
 
     The preceding command installs the Polly `IHttpClientFactory` integration NuGet package, named `Microsoft.Extensions.Http.Polly`, in the *Web.Shopping.HttpAggregator* project. The actual `Polly` package is installed as a dependency of this integration package.
 
-1. Configure the `HttpClient` instance to apply Polly Retry and Circuit Breaker policies. Apply the following changes in the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
+1. Apply the following changes in the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
     1. Replace the comment `// Add the GetRetryPolicy method` with the following method:
 
         ```csharp
@@ -69,7 +69,7 @@ Complete the following steps to implement failure handling for the coupon servic
 
         :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/5-servicecollectionextensions.cs" highlight="7-8":::
 
-        With the preceding changes, a Retry and a Circuit Breaker policy are registered with the `HttpClient` instance used by the coupon service. This particular `HttpClient` instance is provided to the `CouponService` class via constructor injection:
+        With the preceding changes, the `HttpClient` instance used by the coupon service has been configured to apply a Retry and a Circuit Breaker policy. This particular `HttpClient` instance is provided to the `CouponService` class via constructor injection:
 
         :::code language="csharp" source="../code/src/apigateways/services/5-couponservice.cs" highlight="8":::
 
@@ -140,10 +140,29 @@ Complete the following steps to deploy the changes that you've implemented:
     2020/07/29 17:04:57 Successfully pushed image: eshoplearn20200729161705092.azurecr.io/webshoppingagg:linux-latest
     ```
 
+1. Run the following command to verify the URL of your ACR instance:
+
+    ```bash
+    echo $ESHOP_REGISTRY
+    ```
+
+    You'll see a variation of the following output:
+
+    ```console
+    eshoplearn2020072900000000.azurecr.io
+    ```
+
+    > [!IMPORTANT]
+    > If the output is blank, this is because the variable isn't defined. Run the following command to set the variable using output from the setup script and then run the `echo` command again to verify:
+    >
+    > ```bash
+    > eval $(cat ~/clouddrive/aspnet-learn/create-acr-exports.txt)
+    > ```
+
 1. Run the following script to deploy the updated image in ACR to AKS:
 
     ```bash
-    ./deploy/k8s/deploy-application.sh --charts webshoppingagg
+    ./deploy/k8s/deploy-application.sh --charts webshoppingagg 
     ```
 
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
@@ -208,7 +227,7 @@ Complete the following steps:
 
 1. Select **APPLY** once again.
 
-    Notice that you receive the error message immediately. You'll see this clearly in the log traces:
+    Notice that you receive the error message immediately. You'll see this error clearly in the log traces:
 
     :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
 
