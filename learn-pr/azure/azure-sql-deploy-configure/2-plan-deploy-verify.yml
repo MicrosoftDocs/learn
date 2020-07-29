@@ -8,7 +8,7 @@ metadata:
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Knowledge Check
+title: Plan, deploy, and verify Azure SQL
 durationInMinutes: 10
 content: |
   [!include[](includes/2-plan-deploy-verify.md)]
