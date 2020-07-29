@@ -1,19 +1,19 @@
-Microsoft Azure Resource Manager (ARM) templates allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and saved in the same source control as your development project.
+Microsoft Azure Resource Manager templates (ARM templates) allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and saved in the same source control as your development project.
 
-Suppose you are managing a software team that is developing an inventory system for your partner companies. This product is going to be deployed to Azure and each partner company will have their own solution. Each environment that the software will be deployed to will have different policies implemented through different Azure Storage Account SKU. You decide to use the practice of *Infrastructure as Code* using ARM templates to ensure that your infrastructure deployments for each environment will be consistent, flexible, and that the versions can be tracked.
+Suppose you are managing a software team that is developing an inventory system for your partner companies. You plan to deploy this product to Azure, and each partner company will have their own solution. Different policies for each deployment will be implemented through different Azure storage accounts. You decide to use the practice of *Infrastructure as Code* by using ARM templates. This approach lets you track the different versions and ensure that your infrastructure deployments for each environment are consistent and flexible.
 
-In this module, you are introduced to ARM template structure and you practice creating and deploying an ARM template to Azure.
+In this module, you're introduced to the ARM template structure. You also practice the creation and deployment of an ARM template to Azure.
 
 ## Learning objectives
 
 In this module, you:
 
-- Implement an Azure Resource Manager template by using Visual Studio Code
-- Declare resources and add flexibility to your template by adding parameters, and outputs
+- Use Visual Studio Code to create an Azure Resource Manager template
+- Learn how to introduce flexibilty to your ARM template by adding resources, parameters, and outputs
 
 ## Prerequisites
 
-- Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions
+- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions
 - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally
 - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally

@@ -6,7 +6,7 @@ The **Form Recognizer** service in Azure provides intelligent form processing ca
 
 Form Recognizer supports automated document processing through:
 
-- **Custom models**, which enable you to extract what are known as key/value pairs and table data from forms.  Custom models are trained using your own data, which helps to tailor this model to your specific forms.  Staring with only five samples of your forms, you can train the custom model.  After the first training exercise, you can evaluate the results and consider if you need to add more samples and re train.
+- **Custom models**, which enable you to extract what are known as key/value pairs and table data from forms.  Custom models are trained using your own data, which helps to tailor this model to your specific forms.  Starting with only five samples of your forms, you can train the custom model.  After the first training exercise, you can evaluate the results and consider if you need to add more samples and re train.
 - **A pre-built receipt model** that is provided out-of-the-box, and is trained to recognize and extract data from sales receipts.
 
 ## Azure resources for Form Recognizer
@@ -27,7 +27,7 @@ Currently the pre-built receipt model is designed to recognize common receipts, 
 - other pertinent information that may be present on the receipt
 - all text on the receipt is recognized and returned as well
 
-The pre-built receipt model does specify input requirements. Adherence to the following input criteria will yield the best results when using the model.
+Use the following guidelines to get the best results when using a custom model.
 
 - Images must be JPEG, PNG, BMP, PDF, or TIFF formats
 - File size must be less than 20 MB
