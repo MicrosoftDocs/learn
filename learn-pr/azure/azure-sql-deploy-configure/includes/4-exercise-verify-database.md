@@ -141,9 +141,8 @@ In this option, you'll walk through some common queries against system functions
 
     There is a difference in using sys.dm_exec_requests for Azure SQL Database than SQL Server or Managed Instance. This DMV only shows active requests related to your database including background tasks (or background tasks that don't have a database context that show up as "master"). This is because the nature of Azure SQL Database deployment where each database is deployed on its own SQL Server instance.
 
-
 ### Option 2: SQL Notebooks in Azure Data Studio
 
 For this option, you'll use the notebook **VerifyDeployment.ipynb** which is under `02-DeployAndConfigure\verifydeployment\VerifyDeployment.ipynb` in the GitHub repository or zip file you downloaded earlier. Navigate to that file in ADS to complete this part of the exercise, and then return here. In the same folder, you'll also find extra notebooks containing the results of the same queries on Azure SQL Managed Instance and SQL Server 2019.  
 
-If you are unable to complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/verifydeployment/VerifyDeployment.ipynb).
+If you are unable to complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/verifydeployment/VerifyDeployment.ipynb?azure-portal=true).

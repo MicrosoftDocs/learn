@@ -133,4 +133,4 @@ GO
 
 For this activity, you'll use the notebook called **LoadData.ipynb** which located in `\mslearn-azure-sql-fundamentals\02-DeployAndConfigure\loaddata` on your device. Open this file in Azure Data Studio to complete this exercise, and then return here.  
 
-If you are unable to complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/loaddata/LoadData.ipynb).
+If you are unable to complete the exercise for any reason, you can review the results in the [corresponding notebook file on GitHub](https://github.com/MicrosoftDocs/mslearn-azure-sql-fundamentals/blob/master/02-DeployAndConfigure/loaddata/LoadData.ipynb?azure-portal=true).

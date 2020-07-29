@@ -55,7 +55,7 @@ In a previous module of the learning path, you learned how to scale a database u
     * `zone-redundant`: By default, this is set to false, but you can set it to true if you want a "multi-az" deployment, with no additional cost. You'll learn more about availability zones in the next unit.
 
     > [!NOTE]
-    > This is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region) and is not yet available in Azure SQL managed instance.  
+    > This is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true) and is not yet available in Azure SQL managed instance.  
 
 1. After the database is created, you should see detailed information about the updates in the Azure Cloud Shell output under two main categories (though you'll also see indicators under several other properties):  
     * `currentServiceObjectiveName`: should be `BC_Gen5_2` where `BC` stands for Business critical  

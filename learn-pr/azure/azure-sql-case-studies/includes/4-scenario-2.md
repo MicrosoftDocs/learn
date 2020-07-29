@@ -19,7 +19,7 @@ Additionally, the 911 dispatch system coordinators are concerned about protectin
 
 1. After reviewing the scenario and the guidance provided, pull out as many requirements for the project as you can find.
 1. List out the possible technologies and processes that could potentially be used in a solution. Feel free to adapt the scenario to have more information where you want clarity, you can make assumptions in this case.
-    Hint: For the security challenges, you might consider leveraging the Azure SQL Security Best Practices Playbook that's available in the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice).  
+    Hint: For the security challenges, you might consider leveraging the Azure SQL Security Best Practices Playbook that's available in the [documentation](https://docs.microsoft.com/azure/sql-database/sql-database-security-best-practice?azure-portal=true).  
 1. Using a decision matrix or some other decision process, select technologies and processes that will make up your preliminary solution.
 1. Take some notes that present your project goals and constraints, as well as the recommended solution design.
 

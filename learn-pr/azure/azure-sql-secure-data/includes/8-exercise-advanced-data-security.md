@@ -59,7 +59,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="New VA dashboard after scan":::  
 
-1. Every security risk has a risk level (high, medium, or low) and additional information. The rules in place are based on benchmarks provided by the Center for Internet Security (you can read more about the CIS benchmark [here](https://www.cisecurity.org/benchmark/microsoft_sql_server/)). Select the security check **VA2065** to get a detailed view, similar to below. Review the status and other available information.  
+1. Every security risk has a risk level (high, medium, or low) and additional information. The rules in place are based on benchmarks provided by the Center for Internet Security (you can read more about the CIS benchmark [here](https://www.cisecurity.org/benchmark/microsoft_sql_server/?azure-portal=true)). Select the security check **VA2065** to get a detailed view, similar to below. Review the status and other available information.  
 
     > [!NOTE]
     > If **VA2065** does not fail, you can perform a similar exercise below, depending on what failed security checks do occur.  

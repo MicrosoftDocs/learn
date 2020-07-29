@@ -18,7 +18,7 @@ This exercise will guide you through configuring auto-failover groups for your A
 
 ### Configure environment
 
-1. In the below cell, copy it to Notepad or similar and fill in your information. Add your SQL authentication password. For `$drLocation`, you'll need to supply the region where you want your failover group to be. Ideally, you would select a paired region to the region of your current server, which you can determine from the list [here](https://docs.microsoft.com/azure/best-practices-availability-paired-regions). At a minimum, it cannot be the same region where your original database is. Finally, add the IP address of your local machine. You should already have found this at the beginning of the exercise, but if you need to locate it again, open PowerShell on your local machine and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content`.
+1. In the below cell, copy it to Notepad or similar and fill in your information. Add your SQL authentication password. For `$drLocation`, you'll need to supply the region where you want your failover group to be. Ideally, you would select a paired region to the region of your current server, which you can determine from the list [here](https://docs.microsoft.com/azure/best-practices-availability-paired-regions?azure-portal=true). At a minimum, it cannot be the same region where your original database is. Finally, add the IP address of your local machine. You should already have found this at the beginning of the exercise, but if you need to locate it again, open PowerShell on your local machine and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content`.
 
     ```powershell
     # Add your info
