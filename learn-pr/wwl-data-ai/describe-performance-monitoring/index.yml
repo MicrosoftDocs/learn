@@ -36,7 +36,6 @@ units:
 - learn.wwl.describe-performance-monitoring.describe-critical-performance-metrics
 - learn.wwl.describe-performance-monitoring.establish-baseline-metrics
 - learn.wwl.describe-performance-monitoring.describe-azure-intelligent-insights
-- learn.wwl.describe-performance-monitoring.exercise
 - learn.wwl.describe-performance-monitoring.knowledge-check
 - learn.wwl.describe-performance-monitoring.summary
 badge:
