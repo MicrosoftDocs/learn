@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.explore-sla-lifecycle-azure-new.explore-service-level-agreements
+uid: learn.explore-sla-lifecycle-azure-new.2-what-are-service-level-agreements
 title: What are service-level agreements (SLAs)?
 metadata:
   description: "Explore service-level agreements (SLAs)"
-  ms.date: 07/24/2020
-  author: scuffy
-  ms.author: scuffy
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-explore-service-level-agreements.md)]
+  [!include[](includes/2-what-are-service-level-agreements.md)]

@@ -19,11 +19,11 @@ abstract: |
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/explore-sla-lifecycle-azure-new.svg
-hidden: true
 levels:
 - beginner
 roles:
 - administrator
+- developer
 - business-owner
 - business-user
 - student
@@ -31,12 +31,11 @@ roles:
 products:
 - azure
 units:
-- learn.explore-sla-lifecycle-azure-new.introduction
-- learn.explore-sla-lifecycle-azure-new.explore-service-level-agreements
-- learn.explore-sla-lifecycle-azure-new.factors-impact-sla
-- learn.explore-sla-lifecycle-azure-new.define-public-preview-general-features
-- learn.explore-sla-lifecycle-azure-new.access-preview-features
-- learn.explore-sla-lifecycle-azure-new.knowledge-check
-- learn.explore-sla-lifecycle-azure-new.summary
+- learn.explore-sla-lifecycle-azure-new.1-introduction
+- learn.explore-sla-lifecycle-azure-new.2-what-are-service-level-agreements
+- learn.explore-sla-lifecycle-azure-new.3-what-factors-impact-sla
+- learn.explore-sla-lifecycle-azure-new.4-access-preview-services
+- learn.explore-sla-lifecycle-azure-new.5-knowledge-check
+- learn.explore-sla-lifecycle-azure-new.6-summary
 badge:
   uid: learn.explore-sla-lifecycle-azure-new.badge
