@@ -1,6 +1,6 @@
-Microsoft offers a suite of protections for Azure SQL Database databases as part of the Advanced Threat Protection (ATP) feature. ATP monitors the connections to the Azure SQL Database databases and the queries which are executed against the database. You can configure ATP from the Azure Portal as shown in Figure 2. This screen is reached from the Security section of your databases main blade.
+Microsoft offers a suite of protections for Azure SQL Database databases as part of the Advanced Threat Protection (ATP) feature. ATP monitors the connections to the Azure SQL Database databases and the queries which are executed against the database. You can configure ATP from the Azure portal as shown in Figure 2. This screen is reached from the Security section of your databases main blade.
 
-:::image type="content" source="../media/module-33-security-final-17.png" alt-text="Advanced Threat Protection in the Azure Portal":::
+:::image type="content" source="../media/module-33-security-final-17.png" alt-text="Advanced Threat Protection in the Azure portal":::
 
 To get maximum benefit out of Advanced Threat Protection you will want to enable auditing on your databases. Auditing will allow for deeper investigation into the source of the problem if ATP detects an anomaly. ATP supports alerts for the following threats:
 

@@ -2,9 +2,10 @@ Confidential data stored within a Microsoft SQL Server or Azure SQL Database sho
 
 The Azure portal provides a management pane for data classification of your Azure SQL Database as shown in Figure 1 below. You can reach this screen by clicking Data Discovery and Classification in the Advanced Data Security screen, which is in the Security section of the main blade for your Azure SQL Database.
 
-:::image type="content" source="../media/module-33-security-final-16.png" alt-text="Data Discovery and Classification in the Azure portal":::
+> [!div class="mx-imgBorder"]
+> [![Data Discovery and Classification in the Azure portal](../media/module-33-security-final-16.png)](../media/module-33-security-final-16.png#lightbox)
 
-In both the Azure portal and SQL Server Management Studio, you can configure data classification. The classification engine scans your database and locates columns with names that indicate that the column could have sensitive information. One example is that a column named email would be classified by default as containing personally-identifiable information. Verify and validate this data, since it is based on column name, so a column named column1 that contained email addresses would not be classified as personally-identifiable information.
+In both the Azure portal and SQL Server Management Studio, you can configure data classification. The classification engine scans your database and locates columns with names that indicate that the column could have sensitive information. One example is that a column named email would be classified by default as containing sensitive personal information. Verify and validate this data, since it is based on column name, so a column named column1 that contained email addresses would not be classified as sensitive personal information.
 
 Columns can be classified using the sensitivity wizard in SQL Server Management Studio, from the Advanced Data Security screen in the Azure portal for Azure SQL Database, or by using the ADD SENSITIVITY CLASSFICATION T-SQL command as shown below:
 
