@@ -81,7 +81,7 @@ To configure a simulated failure, you need at least one item in the basket. Comp
     This code causes the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
 1. Select the **APPLY** button.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!**.
+    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!!**.
 
     :::image type="content" source="../media/4-verify-deployment/configure-coupon-failures.png" alt-text="configure coupon failures" border="true" lightbox="../media/4-verify-deployment/configure-coupon-failures.png" :::
 
