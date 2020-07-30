@@ -14,7 +14,7 @@ prerequisites: |
   - Familiarity with network configuration, including TCP/IP, Domain Name System (DNS), virtual private networks (VPNs), firewalls, and encryption technologies.
   - Ability to create a on-premises SQL Server database, including the configuration  of data files and log files.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
-  - Experience creating and configuring resources using the Azure Portal.
+  - Experience creating and configuring resources using the Azure portal.
 summary: |
   Deploy data platform resources in Azure for SQL Server and Open Source databases. Explore options for upgrade and migration.  Calculate resource requirements and create templates.
 iconUrl: /learn/achievements/generic-trophy.svg
