@@ -31,11 +31,11 @@ products:
 - vs-code
 units:
 - learn.student-evangelism.count-moon-rocks-python-nasa.1-introduction
-- learn.student-evangelism.count-moon-rocks-python-nasa.2-setting-up-program
-- learn.student-evangelism.count-moon-rocks-python-nasa.3-reading-text-file
-- learn.student-evangelism.count-moon-rocks-python-nasa.4-writing-function
-- learn.student-evangelism.count-moon-rocks-python-nasa.5-adding-call-to-function
-- learn.student-evangelism.count-moon-rocks-python-nasa.6-outputting-and-summarizing-data
+- learn.student-evangelism.count-moon-rocks-python-nasa.2-set-up-program
+- learn.student-evangelism.count-moon-rocks-python-nasa.3-read-text-file
+- learn.student-evangelism.count-moon-rocks-python-nasa.4-write-function
+- learn.student-evangelism.count-moon-rocks-python-nasa.5-add-call-to-function
+- learn.student-evangelism.count-moon-rocks-python-nasa.6-output-and-summarize-data
 - learn.student-evangelism.count-moon-rocks-python-nasa.7-summary
 badge:
   uid: learn.student-evangelism.count-moon-rocks-python-nasa.badge
