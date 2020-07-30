@@ -4,13 +4,13 @@ The developers at Tailwind Traders realize that they're about to put extensive r
 
 You're given some code that parses an address from a string. Your task should be fairly straightforward. It involves installing the test framework, writing a couple tests, and running them.
 
-1. Clone `https://github.com/MicrosoftDocs/node-essentials/` by entering this command:
+1. Clone `https://github.com/MicrosoftDocs/node-essentials/` by running this command:
 
    ```bash
    git clone `https://github.com/MicrosoftDocs/node-essentials/`
    ```
 
-1. Go to your files by entering this command:
+1. Go to your files by running this command:
 
    ```bash
    cd node-essentials/node-dependencies/5-exercise-dependency
@@ -34,7 +34,7 @@ You're given some code that parses an address from a string. Your task should be
 
    The preceding function takes a string and parses out information about what a customer orders, where it should be delivered, and how it will be paid for. Let's add Jest and write some tests for the function.
 
-1. Install the Jest library by using this command:
+1. Install the Jest library by running this command:
 
    ```bash
    npm install jest --save-dev

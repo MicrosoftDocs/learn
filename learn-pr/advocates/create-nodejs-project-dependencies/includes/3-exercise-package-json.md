@@ -4,13 +4,13 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
 
 Open a terminal window.
 
-1. Clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by entering this command:
+1. Clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials/
    ```
 
-1. Go to your files by entering this command:
+1. Go to your files by running this command:
 
    ```bash
    cd node-essentials/node-dependencies/3-exercise-package-json
@@ -23,7 +23,7 @@ Open a terminal window.
    ---| index.js
    ```
 
-1. Enter the following command to initialize a Node.js project:
+1. Run the following command to initialize a Node.js project:
 
     ```bash
     npm init -y
