@@ -22,13 +22,9 @@ TODO: What else can we say?
 
 Let's look at how Tailwind Traders defines the application SLA for the Special Orders application.
 
-<div style="background:yellow;">
-TODO: Here, you'll learn...
-</div>
-
 ### Understand your application requirements
 
-A good place to start is to have a discussion about how important the availability of each application is to your business.
+A good place to start is to have a discussion with your team about how important the availability of each application is to your business.
 
 For example, if the Special Orders application goes down, what would the business impact be? In this case, customers won't be able to place new orders through the store and staff won't be able to check the status of existing orders. This can make customers unhappy. They'll either need to try again later or possibly go to a competitor.
 
@@ -42,7 +38,7 @@ One question to consider is whether the availability requirement differs between
 
 In the case of Tailwind Traders, retail stores are not open 24 hours a day, so if the application was down in the middle of the night, the impact would be minimal. However, because Tailwind Traders has retail locations all over the world, they will need to ensure that each location has access to the service during its retail hours.
 
-To ensure a high level of uptime, you should plan for your application to have duplicate components across several regions, known as *redundancy*, in case one fails. Conversely, to minimize costs during non-critical periods, you could run your application only in a single region. Tailwind Traders may want to consider this if there is a trend that the special order rates are much higher in certain months or seasons.
+To ensure a high level of uptime, you should plan for your application to have duplicate components across several regions, known as *redundancy*, in case one fails. Conversely, to minimize costs during non-critical periods, you could run your application only in a single region. Tailwind Traders may want to consider this if there is a trend that the special order rates are much higher during certain months or seasons.
 
 ### Establish availability metrics
 
@@ -50,13 +46,7 @@ To ensure a high level of uptime, you should plan for your application to have d
 TODO: *Availability metrics* are ...
 </div>
 
-With the application currently on servers in your own datacenter, there may be some existing availability metrics that have been defined for those workloads.
-
-<div style="background:yellow;">
-I don't get what the above paragraph is telling me.
-</div>
-
-Here are two availability metrics to consider:
+You may already have existing availability metrics that you've defined for workloads you run in the datacenter. These considerations also apply to the cloud. Two common availability metrics to consider are:
 
 * **Mean time to recovery** (MTTR)
 
@@ -75,11 +65,7 @@ We define a couple terms here, but what's the guidance?
 TODO: *Recovery metrics* are ...
 </div>
 
-Another important set of metrics is defined in conjunction with the business impact of the application being unavailable.
-
-<div style="background:yellow;">
-TODO: Huh? ^^
-</div>
+While availability metrics focus on IT administration, you also need to consider the business impact when an application or service is unavailable.
 
 Here are two recovery metrics to consider:
 
@@ -89,12 +75,12 @@ Here are two recovery metrics to consider:
 
 * **Recovery point objective** (RPO)
 
-    RPO is the maximum duration of data loss that is acceptable during a disaster. If Tailwind Traders loses special orders that were entered or updated during the last hour, it may be easy to reenter them. It might even possible reenter one day's worth of data. However, losing two weeks of special order data from across all of their stores may create a more significant business impact, including lost sales.
+    RPO is the maximum duration of data loss that's acceptable during a disaster. If Tailwind Traders loses special orders that were entered or updated during the last hour, it may be easy to reenter them. It might even possible reenter one day's worth of data. However, losing two weeks of special order data from across all of their stores may create a more significant business impact, including lost sales.
 
 To derive these values, conduct a risk assessment and make sure you understand the cost and risk of downtime or data loss in your organization.
 
 <div style="background:yellow;">
-TODO: Any pointers on how to set up a risk assessment?
+TODO: Any pointers on how to set up a risk assessment? Does Microsoft provide any tools that help with this?
 </div>
 
 ## Design your application to meet your SLA
@@ -103,7 +89,7 @@ Let's say that Tailwind Traders decided that an SLA of 99.9% is acceptable for t
 
 Now you need to design an efficient and reliable solution for this application on Azure, keeping that application SLA in mind. You'll select the Azure products and services you need and provision your cloud resources according to those requirements.
 
-As with any technology, failures will happen. Hardware can fail. The network can have intermittent failures. While it's rare for an entire service or region to experience a disruption, you still need to plan for such events.
+As with any technology, failures will happen. Hardware can fail. The network can have intermittent timeout periods. While it's rare for an entire service or region to experience a disruption, you still need to plan for such events.
 
 Here are a few aspects to consider as you design your application.
 
@@ -113,6 +99,8 @@ A *workload* is a distinct capability or task that's logically separated from ot
 
 <div style="background:yellow;">
 TODO: Get application architecture checked by a dev.
+
+(Tom): Seems reasonable enough to me!
 
 TODO: Once approved, create a diagram showing the topology, after the bullet list below.
 </div>
@@ -138,7 +126,7 @@ Make sure that your purchasing decisions take into account the impact on the SLA
 
 After you've identified the SLA for the individual workloads in the Special Orders application, you might notice that those SLAs are not all the same. How does this impact our overall application SLA requirement of 99.9%? To work that out, you'll need to do some math.
 
-The process of combining SLAs helps you compute the *composite SLA* for a set of services. Computing the composite SLA requires you to multiply the SLA of each individual services.
+The process of combining SLAs helps you compute the *composite SLA* for a set of services. Computing the composite SLA requires you to multiply the SLA of each individual service.
 
 From the [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) page, you discover the SLA for each Azure service that you need. They are:
 
@@ -150,7 +138,10 @@ From the [Service Level Agreements](https://azure.microsoft.com/support/legal/sl
 
 Therefore, for the Special Orders application, the composite SLA would be:
 
-$${99.9\% * 99.9\% * 99.99\% * 99.99\%\\= 0.999 * 0.999 * 0.9999 * 0.9999\\= 0.9978\\= 99.78\%}$$
+${99.9\% * 99.9\% * 99.99\% * 99.99\%}$
+${= 0.999 * 0.999 * 0.9999 * 0.9999}$
+${= 0.9978}$
+${= 99.78\%}$
 
 Recall that you need two virtual machines. Therefore, you include the Virtual Machines SLA of 99.9% two times in the equation.
 
@@ -164,9 +155,9 @@ There are application design considerations you can use that relate to the under
 
 For example, to improve the availability of the application, you should avoid having any single points of failure. So instead of adding more virtual machines, you can deploy one or more extra instances of the same virtual machine across the different *Availability Zones* in the same Azure region.
 
-An Availability Zone is a unique physical location within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. These zones use different schedules for maintenance, so if one zone is impacted, your virtual machine instance in the other availability zone should be unaffected.
+An Availability Zone is a unique physical location within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. These zones use different schedules for maintenance, so if one zone is impacted, your virtual machine instance in the other Availability Zone should be unaffected.
 
-Deploying two or more instances of an Azure VM across to or more Availability Zones raises the virtual machine SLA to 99.99%. Recalculating your composite SLA above with this VM SLA would give you an application SLA of 99.96%, which exceeds your target.
+Deploying two or more instances of an Azure VM across to or more Availability Zones raises the virtual machine SLA to 99.99%. Recalculating your composite SLA above with this Virtual Machines SLA would give you an application SLA of 99.96%, which exceeds your target.
 
 To learn more about the SLA for virtual machines, visit [SLA for Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines?azure-portal=true).
 
@@ -186,16 +177,20 @@ When designing your architecture, consider performing a Failure Mode Analysis (F
 
 ## Consider cost and complexity versus high availability
 
-<div style="background:yellow;">
-TODO: This section is a mouthful. Simplify it.
-</div>
-
 To achieve maximum availability in your application, you would need to add redundancy to every single part of the application. This redundancy includes the application itself as well as the underlying services and infrastructure. However, doing so can be difficult and expensive, and often results in solutions that are more complex than they need to be.
+
+<div style="background:yellow;">
+TODO: This section is a mouthful. Can we simplify it?
+</div>
 
 As your solution grows in complexity, you have an increasing number of services that depend on one other. Therefore, you might overlook possible failure points. The risk of potential downtime is cumulative across SLAs, just as you saw with your composite SLA. Because complex solutions face greater availability challenges, how critical high-availability is to your requirements determines how you handle the addition of complexity and cost, in relation to your application SLA.
 
 ## Considerations for high performance targets
 
-Performance targets above 99.99% are very difficult to achieve. Recall that an SLA of 99.99% means 1.01 minutes of downtime per week. It's difficult for humans to respond to failures quickly enough to meet SLA performance targets above 99.99%. Instead, your application must be able to self-diagnose and self-heal outages.
+Performance targets above 99.99% are very difficult to achieve. Recall that an SLA of 99.99% means 1.01 minutes of downtime per week. It's difficult for humans to respond to failures quickly enough to meet SLA performance targets above 99.99%. Instead, your application must be able to self-diagnose and self-heal during an outage.
 
 Carefully consider the time window against which your application SLA performance targets are measured. The smaller the time window, the smaller the tolerances. If you define your application SLA as hourly or daily uptime, you need to understand that these tolerances might provide achievable performance targets.
+
+<div style="background:yellow;">
+TODO: I don't understand the last sentence...
+</div>

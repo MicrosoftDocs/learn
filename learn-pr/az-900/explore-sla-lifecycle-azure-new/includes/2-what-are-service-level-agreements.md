@@ -7,14 +7,17 @@ In this part, you'll learn:
 * Why SLAs are important.
 * Where you can find the SLA for a specific Azure service.
 * What you'll find in a typical SLA.
-* What we mean by terms like "three nines" and "four nines" availability, and how these percentages relate to total downtime.
+* What we mean by terms like "three nines" and "four nines" availability, and how SLA percentage relate to total downtime.
 * How credits are applied when a service fails to perform to its specification.
+* How SLAs relate to free Azure services.
 
 ## Why are SLAs important?
 
-<div style="background:yellow;">
-TODO: Fill this in with a few bullets.
-</div>
+Understanding the SLA for each Azure service you use helps you understand what guarantees you can expect.
+
+When you build applications on Azure, the availability of the services that you use impact your application's uptime and performance. Understanding the SLAs involved can help you establish the SLA you set with your customers.
+
+Later in this module, you'll learn about some strategies you can use when an Azure SLA doesn't meet your needs.
 
 ## Where can I access SLAs for Azure services?
 
@@ -42,7 +45,7 @@ A typical SLA breaks down into these sections:
     This section explains what to expect in this SLA, including its scope and how subscription renewals can impact the terms.
 * **General Terms**
 
-    This section contains terms that are used throughout the SLA so that both parties (you and Microsoft) have a consistent vocabulary. For example, this section might define what's meant by downtime, incidents, error codes, and success codes.
+    This section contains terms that are used throughout the SLA so that both parties (you and Microsoft) have a consistent vocabulary. For example, this section might define what's meant by downtime, incidents, error codes, and so on.
 
     This section also defines the general terms of the agreement, including how to submit a claim, receive credit for any performance or availability issues, and limitations of the agreement.
 * **SLA details**
@@ -89,14 +92,14 @@ Credits typically increase as uptime decreases. Here's how credits are applied f
 | < 99% | 25% |
 | < 95% | 100% |
 
-Now we have explored how service-level agreements are structured, lets take a look at some other factors that Tailwind Traders needs to consider, that might impact those SLA performance targets.
-
 ## What's the SLA for free services?
 
 Free products typically do not have an SLA.
 
 For example, many Azure services provide a *Free* or *Shared* tier that provides more limited functionality. Services like Azure Advisor are always free.
 
+Next, let's look at some other factors that Tailwind Traders needs to consider which might impact SLA performance targets.
+
 <div style="background:yellow;">
-TODO: A question I would have a learner is whether I need to file for credit or whether it's applied automatically.
+TODO: After reading this, a question I would have a learner is whether I need to file for credit or whether it's applied automatically. I might also want to know where I can look to find out about outages and service status/health.
 </div>
