@@ -22,7 +22,7 @@ You can access SLAs from the [Service Level Agreements](https://azure.microsoft.
 
 Each Azure service defines its own SLA. Azure services are organized by category.
 
-![](../media/2-sla-home-categories.png)
+:::image type="content" source="../media/2-sla-home-categories.png" alt-text="A screenshot of the SLA landing page showing 21 Azure service categories." border="false":::
 
 Open the SLA for Azure Database for MySQL, a managed database that makes it easy for developers to work with MySQL databases. You'll refer back to this SLA in a moment.
 
@@ -31,7 +31,7 @@ To do so:
 1. Go to [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true).
 1. From the **Databases** category, select **Azure Database for MySQL**.
 
-![](../media/2-sla-home-database-mysql.png)
+:::image type="content" source="../media/2-sla-home-database-mysql.png" alt-text="A screenshot of the SLA landing page showing the Databases category and the Azure Database for MySQL service.":::
 
 ## What's in a typical SLA?
 

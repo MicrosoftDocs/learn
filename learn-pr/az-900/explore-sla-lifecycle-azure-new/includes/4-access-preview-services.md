@@ -66,7 +66,7 @@ TODO: Do we need this graphic or is the sentence enough? Though it is a text al
 TODO: (Tom) I think the graphic is a bit over the top. I would cut it and the paragraph above. That said, this section is kinda thin. Maybe that's fine.
 </div>
 
-![Image depicting the typical lifecycle of a feature or bug.](../media/service-lifecycle.png)
+:::image type="content" source="../media/4-service-lifecycle.png" alt-text="The typical lifecycle of a feature or bug." border="false":::
 
 ## How can I access preview service?
 
@@ -95,7 +95,7 @@ Typical portal preview features provide performance, navigation, and accessibili
 
 You see **Microsoft Azure (Preview)** near the menu bar to remind you that you're working with a preview version of the Azure portal.
 
-![](../media/azure-portal-preview.png)
+:::image type="content" source="../media/4-azure-portal-preview.png" alt-text="A screenshot of the preview version of the Azure portal showing the menu bar.":::
 
 ## How can I provide feedback on the Azure portal?
 
@@ -103,7 +103,8 @@ You can provide feedback:
 
 * From the **Feedback** tab in the Azure portal.
 
-    ![](../media/azure-portal-feedback.png)
+    :::image type="content" source="../media/4-azure-portal-feedback.png" alt-text="A screenshot of the Azure portal showing the Feedback tab.":::
+
 * From the [Azure portal feedback forum](https://feedback.azure.com/forums/223579-azure-portal?azure-portal=true).
 
 ## How can I stay updated on the latest announcements?
