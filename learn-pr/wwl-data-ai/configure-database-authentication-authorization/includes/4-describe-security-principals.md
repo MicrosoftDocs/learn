@@ -4,7 +4,7 @@ Logins and Server Roles are the server-level security principals we will be disc
 
 At the database level, we’ll look at users, database roles, application roles.
 
-## Schemas and Securables
+## Schemas and securables
 
 Before we look at the details of security principals, we need to understand the concepts of securables and schemas. SQL Server and Azure SQL Database have three scopes for securables. Securables are the resources within the database to which the authorization system manages access. For example, a table is a securable. To simplify access control, SQL Server contains securables in nested hierarchies called scopes. The three securable scopes are the server, the database, and the schema. A schema is a collection of objects within your database, which allows objects to be grouped into separate namespaces.
 
@@ -13,7 +13,7 @@ Every user has a default schema. If a user tries to access an object without spe
 
 By default, if no schema is specified when a user creates an object, SQL Server will attempt to create it in the user’s default schema. If the user has not been granted permission to create objects in their default schema, the object cannot be created.
 
-## Logins and Users
+## Logins and users
 
 No matter the mode of authentication that is used, a login name used to access your SQL database is set up as a login within the instance. Those logins are set up at the instance level of SQL Server and stored in the master database. However, you can configure contained users, which are added at the database level. These users can be configured as SQL Server Authentication users as well as either Windows Authentication users or Azure Active Directory users (depending on which platform you are using). In order to create these users, the database must be configured for partial containment, which is configured by default in Azure SQL Database, and optionally configurable in SQL Server.
 
@@ -51,7 +51,7 @@ The login is first created in the master database, and then in the WideWorldImpo
 
 Logins and usernames are the most important security principals you need to be aware of, but the next sections describe some of the other concepts and terms when dealing with authorization.
 
-## Database Roles
+## Database roles
 
 As you can imagine, database security can get complicated for applications with many users. In order to make it easier for both administrators and auditors, most database applications use role-based security. Roles are effectively security groups that share a common set of permissions. Combining permissions into a role allows a set of roles to be created for a given application. Some examples of roles would be administrators who had full access to all of the databases and servers, reporting users who only read the database, and an application account that had access to write data into the database. The roles can be defined when the application is designed, and then users can be assigned to those roles as they need access to the database. Role-based access control or RBAC is a common architecture across computer systems and is how authorization is managed in Azure Resource Manager.
 
@@ -87,11 +87,11 @@ GO
 
 In the above example, you can see that two users are created, and then a role called SalesReader is created. The two new users are added to the newly created role, and then finally the role is granted SELECT and EXECUTE permissions on the Sales schema. Any user who is in that role can select from any object in the Sales schema, as well as execute any stored procedure in the schema.
 
-## Application Roles
+## Application roles
 
 Application roles can also be created within a SQL Server database or Azure SQL Database. Unlike database roles, users are not made members of an application role. An application role is activated by the user, by supplying the pre-configured password for the application role. Once the role is activated the permissions that are applied to the application role are applied to the user until that role is deactivated.
 
-## Built-In Database Roles
+## Built-in database roles
 
 Microsoft SQL Server contains several fixed database roles within each database for which the permissions are predefined. Users can be added as members of one or more roles. These roles give their members a pre-defined set of permissions. These roles work the same within Azure SQL Database and SQL Server.
 
@@ -115,7 +115,10 @@ Users who need to be able to grant access to other users within the database can
 
 All users within a database are automatically members of the public role. By default, this role has no permissions granted to it. Permissions can be granted to the public role, but you should consider carefully whether that is really something you want to do. Granting permissions to the public role would grant these permissions to any user, including the guest account, if the guest account was enabled.
 
-The built-in database roles do meet the needs of many applications; however with applications that require more granular security (for example, when you only want to grant access to a specific subset of tables) a custom role is often a better choice. Note that users in roles like db_owner can always see all of the data in the database. Applications should take advantage of encryption options like Always Encrypted to protect sensitive data from privileged users.
+The built-in database roles do meet the needs of many applications; however with applications that require more granular security (for example, when you only want to grant access to a specific subset of tables) a custom role is often a better choice. 
+
+    >[!NOTE]
+    >Users in roles like db_owner can always see all of the data in the database. Applications should take advantage of encryption options like Always Encrypted to protect sensitive data from privileged users.
 
 Azure SQL Database has two additional roles that are defined in the master database of Azure SQL server.
 
@@ -123,7 +126,7 @@ The role dbmanager within the master database allows its members to create addit
 
 The role loginmanager within the master database allows its members to create additional logins at the server level. This role is the equivalent of the securityadmin fixed server role in an on-premises Microsoft SQL Server.
 
-## Fixed Server Roles
+## Fixed server roles
 
 In addition to database roles, SQL Server and Azure SQL Managed Instance both provide several fixed server roles. These roles assign permissions at the scope of the entire server. Server level principals, which include SQL Server logins, Windows accounts, and Windows group can be added into fixed server roles. The permissions for fixed server roles are predefined, and no new server roles can be added. The fixed server roles are:
 

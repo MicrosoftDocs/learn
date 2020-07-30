@@ -4,7 +4,7 @@ All Relational Database Management platforms have 4 basic permissions which cont
 
 In the above example, the user Demo is granted SELECT and then denied SELECT permissions on the dbo.Company table. When the user tries to execute a query that selects from the dbo.Company table, the user receives an error that SELECT permission was denied.
 
-## Table and View Permissions
+## Table and view permissions
 
 Tables and views represent the objects on which permissions can be granted within a database. Within those tables and views, you can additionally restrict the columns that are accessible to a given security principal (user or login). SQL Server and Azure SQL Database also include row-level security which can be used to further restrict access.
 
@@ -28,7 +28,7 @@ The VIEW CHANGE TRACKING permission allows the user to view the change tracking 
 
 The VIEW DEFINITION permission allows the user to view the definition of the object.
 
-## Function and Stored Procedure permissions
+## Function and stored procedure permissions
 
 Like tables and views, functions and stored procedures have several permissions which can be granted or denied.
 
