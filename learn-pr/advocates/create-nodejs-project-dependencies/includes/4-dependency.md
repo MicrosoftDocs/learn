@@ -2,7 +2,7 @@ Node.js comes with many core libraries that handle everything from managing file
 
 Node.js and its ecosystem use the word *dependency* a lot. A dependency is a third-party library, a piece of reusable code that accomplishes something and can be added to your application. The third-party library is something your application *depends on* to function, hence the word *dependency*.
 
-The third-party library can be thought of as a package and stored in a registry. A package is therefore a collection of files needed to run one or many modules. A package consists of one more many modules that you can import into your application so you can take advantage of its features.
+The third-party library can be thought of as a package and stored in a registry. So a package is a collection of files needed to run one or many modules. A package consists of one more many modules that you can import into your application so you can take advantage of its features.
 
 ## Determine whether you need a package
 
@@ -10,7 +10,7 @@ So how do you know if you need a package for your project? That's a complicated 
 
 - **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customer's data. There are standard patterns out there and libraries used by many developers. These libraries implement features you most likely will always need. And they're good at patching issues as they arise. You should use such libraries instead of reinventing the wheel. The main reason is that you're not likely to do as good a job of writing the code yourself because there are so many edge cases that you'd need consider.  
 - **Saving time**. You could probably build most things yourself, like utility or UI component libraries. But it takes time. Even if the end result is comparable to what's out there, it's not a good use of your time to replicate the work of writing this code if you don't have to.
-- **Maintenance**. All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and also correcting bugs. Is it a good use of your or your team's time to maintain a library, or is it better to let an open-source software team handle it?
+- **Maintenance**. All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and also correcting bugs. Is it a good use of your or your team's time to maintain a library? Or is it better to let an open-source software team handle it?
 
 ## Evaluate a package
 
@@ -18,7 +18,7 @@ Before you install a library, you might want to inspect what dependencies it rel
 
 - **Size**. The number of dependencies could create a large footprint. If you're on a limited bandwidth or have other hardware limitations, this factor could be a concern.
 - **Licensing**. Licensing might be a factor if you're producing software that you intend to sell. If you have a license on a third-party library, and the creator of the library doesn't allow it to be included in software that's for sale, the creator could put you in a bad legal situation.
-- **Active maintenance**. If your package relies on a dependency that has been deprecated or hasn't seen any updates for a long time, that could be a problem.
+- **Active maintenance**. If your package relies on a dependency that's deprecated or hasn't seen any updates for a long time, that could be a problem.
 
 You can learn more about a package before installing it by going to `https://www.npmjs.com/package/<package name>`. This URL will take you to a detailed page for the package. Select the **Dependencies** tab to see how many packages and which packages it relies on to function. Another way to achieve a similar result is to enter this npm command: `npm view <package name>`.
 
@@ -40,7 +40,7 @@ Individual developers might use the global registry at npm to find and download 
 
 - **Registries**. An example of a registry might be a global registry like the npm one. It's possible to host your own registries that can be either private or public.
 - **Repositories**. Instead of pointing to a registry, it's possible to point to a GitHub URL and install a package from there.
-- **Files**. You can install a package from a local folder or zipped file. Installing from a package is common when you're trying to develop your own Node.js libraries and want to test the package locally or for some reason don't want to use a registry.
+- **Files**. You can install a package from a local folder or zipped file. Installation from a package is common when you're trying to develop your own Node.js libraries and want to test the package locally or for some reason don't want to use a registry.
 - **Directories**. You can install right from a directory as well.
   
 ### The npm registry and tool
@@ -67,7 +67,7 @@ Dependencies belong to one of two categories:
 - **Production dependencies**. Production dependencies are dependencies that you need to run an application in production. Examples include a web framework with which you can build web application.
 - **Development dependencies**. Development dependencies are dependencies that you need only when you develop your application. Think of these dependencies as you'd think of scaffolding for a building. When you're done building, you don't need them anymore. Examples of these dependencies are test libraries, linting tools, or bundling tools. These dependencies are an important part of ensuring your application works well, but you don't need to ship your application with them.
 
-This separation isn't just conceptual. The npm tool writes to a manifest file by adding entries to it when you download dependencies. The tool allows you to differentiate between the two types of dependencies by adding a flag to the installation command. The flag places the name of the dependency and its version in a section called `dependencies` or `devDependencies`. This differentiation gives you a clear mental separation of the dependencies you have in your application and what type they are. Regardless of what type of dependency you install, it's stored in the node_modules directory. The flag affects only the manifest file.  
+This separation isn't just conceptual. The npm tool writes to a manifest file by adding entries to it when you download dependencies. The tool allows you to differentiate between the two types of dependencies by adding a flag to the installation command. The flag places the name of the dependency and its version in a section called `dependencies` or `devDependencies`. This differentiation gives you a clear mental separation of the dependencies you have in your application and what type they are. Whichever type of dependency you install, it's stored in the node_modules directory. The flag affects only the manifest file.  
 
 This separation of different types of dependencies is built into the npm command-line tool as well. If you specify the `--production` flag when you install a dependency, only `dependencies` will be installed. For example, this flag is used by CI/CD pipelines to ensure that only the dependencies needed to run the app are installed.
 
@@ -85,7 +85,7 @@ The npx tool allows you to load the dependency into the Node.js process and run 
 
 ### After installation
 
-The packages listed in the `dependencies` section of your package.json file will differ from those listed in the node_modules folder. If you want to see what packages are in the folder, you can enter `npm list`. But this command might produce a long list. It might be hard to get a sense of what you have in the folder. To help with this problem, you can list packages at different depths. When you do so, the `list` command looks like this command:
+The packages listed in the `dependencies` section of your package.json file will differ from the ones listed in the node_modules folder. If you want to see what packages are in the folder, you can enter `npm list`. But this command might produce a long list. It might be hard to get a sense of what you have in the folder. To help with this problem, you can list packages at different depths. When you do so, the `list` command looks like this command:
 
 ```bash
 npm list --depth=<depth>
@@ -114,7 +114,7 @@ As the `depth` number increases, you'll see more dependent packages.
 
 Sooner or later, you're likely to realize that you no longer need a package. Or you might realize that the package you installed isn't the one you need. Maybe you've found one that will accomplish a task better. Whatever the reason, you should remove dependencies that aren't used anymore. Doing so keeps things clean. Also, dependencies take up space. 
 
-The *space* argument becomes more apparent if you're building an SPA application by using a framework like Angular, React, or Vue. These applications are also a Node.js projects. Building these apps involves a *bundling* and *minification* process in which different Node.js modules are concatenated and the source code is compressed. The resulting bundle or bundles end up being served from a browser. The larger the bundle is, the longer it takes to send over the network before it becomes something customers can interact with. The longer customers have to wait, the more likely they are to avoid your app.
+The *space* argument becomes more apparent if you're building an SPA application by using a framework like Angular, React, or Vue. These applications are also Node.js projects. Building these apps involves a *bundling* and *minification* process in which different Node.js modules are concatenated and the source code is compressed. The resulting bundle or bundles end up being served from a browser. The larger the bundle is, the longer it takes to send over the network before it becomes something customers can interact with. The longer customers have to wait, the more likely they are to avoid your app.
 
 There are two ways to clean up dependencies you no longer need:
 

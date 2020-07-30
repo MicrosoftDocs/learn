@@ -40,12 +40,12 @@ quiz:
           isCorrect: false
         - content: "You don't have to use sudo before running it as you would for a global installation."
           isCorrect: false
-          explanation: "This answer is technically correct, but this isn't the main reason to choose npx over global installation. Global installations remain on your system until you uninstall them. When you use npx, you don't need to uninstall the dependency."
+          explanation: "This answer is technically correct, but there's a better reason to choose npx over global installation. Global installations remain on your system until you uninstall them. When you use npx, you don't need to uninstall the dependency."
     - content: "How do you configure a package.json file so that you get only patch (bug fix) updates?"
       choices:
         - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this one: \"<library>\": \"*\""
           isCorrect: false
-          explanation: "This code will update the dependency to the latest possible version. This is incorrect."
+          explanation: "This answer is incorrect. This code will update the dependency to the latest possible version."
         - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this one: \"<library>\": \"1.x.0\""
           isCorrect: false
           explanation: "This code will update the dependency to the latest minor version. That's not what you want."
@@ -57,7 +57,7 @@ quiz:
       choices:
         - content: "start, test, build"
           isCorrect: false
-          explanation: "These are all good scripts to set up. Because you're working in JavaScript, it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
+          explanation: "It's a good idea to set up these scripts. Because you're working in JavaScript, it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
         - content: "start, test"
           isCorrect: false
           explanation: "Setting up a script for start and test is a good idea. We also recommend that you set up a script for how to build your solution. And it's a good idea to set up a linter tool as well to ensure that your code looks consistent."

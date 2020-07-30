@@ -36,14 +36,14 @@ You can think of all the possible fields in the package.json as belonging to  th
 
 ### Scripts for managing your project
 
-You're likely to want to have a way to run, test, and build any project, whether it's using Node.js or not. The Node.js runtime has recognized this need and provides guidance about what scripts that do these things should be called. The idea is to ensure that all Node.js projects use consistent names for these scripts. It's a better developer experience if you can move among Node.js projects and quickly orient yourself because you see a consistent set of actions. Various tools for DevOps and instrumentation are able to take advantage of this naming consistency.
+You're likely to want to have a way to run, test, and build any project, whether it's using Node.js or not. The Node.js runtime has recognized this need and provides guidance about what scripts that do these things should be called. The idea is to ensure that all Node.js projects use consistent names for these scripts. It's a better developer experience if you can move among Node.js projects and quickly orient yourself because you see a consistent set of actions. Various tools for DevOps and instrumentation can take advantage of this naming consistency.
 
 You should set up a number of scripts and name them in a specific way. These specific names are expected by the developer community and various tools:
 
 - **Start**. A start command invokes `node` with the entry file as an argument. It might look like this command: `node ./src/index.js`. This command says to invoke `node` and use the entry file `index.js`.
 - **Build**. This command describes how to build your project. The build process should produce something that you can ship. For example, a build command could run a TypeScript compiler to produce the JavaScript version of the project that you want to ship.
 - **Test**. This command should run the tests for your project. If you're using a third-party test library, the command should invoke the library's executable file.
-- **Lint**. This command should invoke a linter program like ESLint. *Linting* finds inconsistencies in code. A linter usually offers a way to correct inconsistencies as well. Having consistent code can greatly increase its readability, which in turn speeds up the development of features and additions to the code.
+- **Lint**. This command should invoke a linter program like ESLint. *Linting* finds inconsistencies in code. A linter usually offers a way to correct inconsistencies as well. Having consistent code can greatly increase its readability. This readability in turn speeds up the development of features and additions to the code.
 
 Now that you know what kinds of scripts you should have, how do you actually name them?
 

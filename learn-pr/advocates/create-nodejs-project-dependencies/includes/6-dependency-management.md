@@ -8,9 +8,9 @@ There are some considerations that you should take into account before you try t
 
 ## Use semantic versioning
 
-There's an industry standard called semantic versioning. It's a system adopted by numerous companies and developers. If you intend to publish packages and push them to the npm registry, you should follow semantic versioning. It's expected. Even if you only download packages from the npm registry, you can expect these packages to follow semantic versioning.
+There's an industry standard called semantic versioning. It's a system adopted by many companies and developers. If you intend to publish packages and push them to the npm registry, you should follow semantic versioning. It's expected. Even if you only download packages from the npm registry, you can expect these packages to follow semantic versioning.
 
-So why is it such a big deal? Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time, and time is money.  
+So why is it such a big deal? Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time and costs money.  
 
 Semantic versioning is how you express the type of change that you or some other developer is introducing to a library. Semantic versioning works by ensuring a package has a version number and that the version number is divided up into these sections:
 
@@ -28,7 +28,7 @@ This table illustrates how the version number changes for each version type:
 
 ## Update a package by using npm
 
-There are two ways to install a package. You can either use the `install` command or the `update` command. At one time there were differences between these two commands, but now they act more like aliases for one another. A typical command to update a package might look like this one: `npm update <name of package>@<optional argument with version number>`.
+There are two ways to install a package. You can either use the `install` command or the `update` command. At one time, there were differences between these two commands, but now they act more like aliases for one another. A typical command to update a package might look like this one: `npm update <name of package>@<optional argument with version number>`.
 
 What happens at this point depends on two things:
 
@@ -51,7 +51,7 @@ In general, the smaller the dependency you're updating, the fewer dependencies i
 
 Before you update one or more dependencies, you should configure your manifest file so that you get predictable behavior when you run the `npm update <name of dependency>` command. You can communicate the approach you want to take for a package. Node.js has a set of symbols that allows you to define how you want your packages to update.
 
-The process is to add different prefixes to your package entries in the package.json file. There are many things you can configure in addition to major/minor/patch version. You can also express that you want packages within a only certain range, or that you want packages that have a certain tag, like `alpha` or `beta`.
+The process is to add different prefixes to your package entries in the package.json file. There are many things you can configure in addition to major/minor/patch version. You can also express that you want packages within only a certain range, or that you want packages that have a certain tag, like `alpha` or `beta`.
 
 Here are some patterns that you can configure for major/minor/patch version:
 
@@ -61,11 +61,11 @@ Here are some patterns that you can configure for major/minor/patch version:
 
 ## package-lock.json
 
-In addition to the package.json manifest file, you also have the package-lock.json file. The latter is generated when you take an action that modifies the node_modules directory or any kind of action that changes the dependencies in package.json. So it wouldn't be created when you run `npm init`, but it would be created when you install a package, for example.
+In addition to the package.json manifest file, you also have the package-lock.json file. The latter is generated when you do something that modifies the node_modules directory or anything that changes the dependencies in package.json. So it wouldn't be created when you run `npm init`, but it would be created when you install a package, for example.
 
 This file should be committed to your repository. 
 
-One reason to commit this file to your repository is that it guarantees exact installations. Remember how in package.json you define patterns for the types of installs you want, like patches, minor versions, or major versions? Patterns aren't very exact. You wouldn't know if you installed, for example, version 1.4 or 1.5 if you were using a `1.x` pattern. 
+One reason to commit this file to your repository is that it guarantees exact installations. Remember how in package.json you define patterns for the types of installs you want, like patches, minor versions, or major versions? Patterns aren't exact. You wouldn't know if you installed, for example, version 1.4 or 1.5 if you were using a `1.x` pattern. 
 
 And you might need to know which version you installed. Imagine you specify `1.x`. You're using version 1.2, and a 1.4 version is released. The new version ends up breaking your code. Someone installing your app will get a non-functioning app at that point. But, if there's a `package-lock.json` file stating 1.2 was used, 1.2 will be installed. So who cares about this behavior? People who use your app and CI (continuous integration) tools.
 
