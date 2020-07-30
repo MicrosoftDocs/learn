@@ -1,17 +1,16 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn-wwl.azure-in-action.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Four multiple-choice questions
-  ms.date: 6/5/2019
-  author: kimrit
-  ms.author: v-kimrit
+  description: "Four multiple-choice questions"
+  ms.date: 08/01/2020
+  author: wwlpublish
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
 durationInMinutes: 5
-content: |
-  [!include[](includes/4-knowledge-check.md)] 
 quiz:
   questions:
   - content: "What's the name of the Azure tool that gathers metadata from on-premises servers to assist with cloud migration and operation recommendations?"
@@ -70,4 +69,3 @@ quiz:
     - content: "Application Insights"
       isCorrect: false
       explanation: "Incorrect. Application Insights allows administrators to monitor application performance in real time. It doesn't offer a way to modernize applications."
-    
