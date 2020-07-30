@@ -6,7 +6,7 @@ metadata:
   description: "Cassandra to Cosmos DB migration planning"
   ms.date: 08/01/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
