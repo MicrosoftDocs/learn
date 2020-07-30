@@ -3,7 +3,7 @@ uid: learn.wwl.train-evaluate-classification-models
 metadata:
   title: Train and evaluate classification models
   description: "Classification is a kind of machine learning used to categorize items into classes."
-  ms.date: 07/31/2020
+  ms.date: 08/01/2020
   author: wwlpublish
   ms.author: cwsuseng
   ms.topic: interactive-tutorial
