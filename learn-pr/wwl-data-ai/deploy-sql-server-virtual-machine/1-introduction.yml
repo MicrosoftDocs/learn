@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.train-evaluate-classification-models.introduction
+uid: learn.wwl.deploy-sql-server-virtual-machine.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
