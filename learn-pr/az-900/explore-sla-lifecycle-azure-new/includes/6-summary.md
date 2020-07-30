@@ -5,7 +5,7 @@ Across this module we have explored the service-level agreements available in Az
 + Explore composite SLAs.
 + Calculate your SLA based on components you choose.
 
-https://docs.microsoft.com/en-us/azure/availability-zones/az-overview
+https://docs.microsoft.com/azure/availability-zones/az-overview
 
 Lifecycle:
 
@@ -13,6 +13,6 @@ There's a [Supplemental Terms of Use for Microsoft Azure Previews](https://azure
 
 Learn about updates and new product features on the [Azure announcements blog](https://azure.microsoft.com/blog/topics/announcements?azure-portal=true)
 
-https://azure.microsoft.com/en-us/updates/
+https://azure.microsoft.com/updates/
 
 [Get early access to the newest Azure portal features](https://azure.microsoft.com/updates/get-early-access-to-new-portal-features-2?azure-portal=true)
