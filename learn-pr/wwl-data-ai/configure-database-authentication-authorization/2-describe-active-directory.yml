@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-database-authentication-authorization.describe-active-directory-azure-active-directory
-title: Describe active directory and Azure Active Directory
+title: Describe Active Directory and Azure Active Directory
 metadata:
-  title: Describe active directory and Azure active directory
-  description: "Describe active directory and Azure active directory"
-  ms.date: 08/01/2020
+  title: Describe Active Directory and Azure Active Directory
+  description: "Describe Active Directory and Azure Active Directory"
+  ms.date: 08/02/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
