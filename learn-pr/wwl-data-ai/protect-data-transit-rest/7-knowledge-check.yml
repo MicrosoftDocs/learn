@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/31/2020
+  ms.date: 08/01/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: kadelaney
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -64,7 +64,7 @@ quiz:
     choices:
     - content: "Running a PowerShell script"
       isCorrect: false
-      explanation: "That's incorrect. Powershell only supports creating server level firewall rules."
+      explanation: "That's incorrect. PowerShell only supports creating server level firewall rules."
     - content: "Running a Azure CLI script"
       isCorrect: false
       explanation: "That's incorrect. CLI only supports creating server level firewall rules."

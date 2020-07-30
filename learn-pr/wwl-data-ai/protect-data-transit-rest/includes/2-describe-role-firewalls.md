@@ -6,10 +6,10 @@ Server level firewall rules can be configured using the Azure portal or using th
 
 :::image type="content" source="../media/module-33-security-final-15.png" alt-text="New Firewall Rule Screen from SQL Server Management Studio":::
 
-## Virtual Network Endpoints
+## Virtual network endpoints
 
 Virtual network endpoints allow traffic from a specific Azure Virtual Network. These rules apply at the server level, not just the database level. Additionally, the service endpoint applies to only one region, which is the underlying endpoint’s region. One additional concern is that the virtual network that is connecting to the Azure SQL Database must have outbound access to the public IP address for Azure SQL Database, which can be configured using service tags for Azure SQL Database.
 
-## Private Link
+## Private link
 
 The Private Link feature allows you connect to Azure SQL Database (and other PaaS offerings) using a private endpoint. A private endpoint allows for a connection to your Azure SQL Database to go entirely over the Azure backbone network and not over the public internet. This feature provides a private IP address on your Virtual Network. Another feature of private link is that it allows for Azure Express Route connections through that circuit. Private link offers several additional benefits include cross-region private connectivity and protection against data leakage by only allowing connections to specific resources.

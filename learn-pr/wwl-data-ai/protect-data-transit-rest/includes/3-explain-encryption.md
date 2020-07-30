@@ -1,10 +1,10 @@
 It is important to consider encryption both for data at rest, and data in transit.
 
-## Encryption at Rest
+## Encryption at rest
 
 It is important to understand exactly what encryption at rest entails. Encryption at rest does not inherently encrypt data within the database. It provides protection against someone restoring a backup to an unsecured server or making a copy of a database and transaction log file and attaching it to another unsecured server. Encryption at rest does not protect data within a database from user access or prevent data exfiltration by a malicious user.
 
-## Transparent Data Encryption
+## Transparent data encryption
 
 Microsoft SQL Server’s Transparent Data Encryption (TDE) encrypts all the data within a target database. The data is the database is encrypted as the data is written to the data page and decrypted when the data page in memory is accessed. The end result is that all data pages on disk are encrypted. A database file is not readable by someone who is not authorized. Database backups will also be encrypted, because a backup operation just copies the data pages from the database file to the backup device. No decryption is done during the backup operation.
 
@@ -54,10 +54,10 @@ Once TDE is enabled, it will take some time in order to encrypt the database as 
 
 Once the certificate that will be used by TDE has been created, it must be manually backed up and stored in a safe place. SQL Server integrates with Enterprise Key Managers (EKMs) in order to manage encryption keys. An example of an EKM is Azure Key Vault. Managing the certificate is important, because if the certificate is lost and the database needs to be restored from a backup, the restore will fail, as the database cannot be read. To use TDE with databases in an Always On Availability Group, the certificate used to encrypt the database must be backed up and restored to the other servers within the Availability Group that will be hosting copies of the database.
 
-## Encryption at Rest for MySQL and PostgreSQL
+## Encryption at rest for MySQL and PostgreSQL
 
 Azure SQL Database for MySQL and Azure SQL Database for PostgreSQL do not have a TDE like process. However, the Azure environment in which they are run supports a disk encryption method. This process encrypts the databases that are stored on the disk, so that if the disk hosting the database was compromised the data on it would be unreadable. This service offers a Bring Your Own Key service, much like TDE within Azure SQL Database does. This service allows you to upload your own certificate and have this certificate be used for the encryption.
 
-## Azure Disk Encryption
+## Azure disk encryption
 
 In addition to these SQL Server security features, Azure VMs include an additional layer of security, Azure Disk Encryption—a feature that helps protect and safeguard data and meet organization and compliance commitments. If you are using TDE, your data is protected by multiple layers of encryption. Azure Disk Encryption and encryption of the SQL Server database files and backup.

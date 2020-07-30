@@ -2,6 +2,8 @@ This module explores the encryption options available within Microsoft SQL Serve
 
 This module also explores the practices of securing the firewalls of an Azure SQL Server. Furthermore it will show you how Always Encrypted is used to protect data in transit.
 
+## Learning objectives
+
 After taking this lesson, you will:
 
 - Understand the difference between database and instance firewalls in Azure SQL Database
@@ -9,3 +11,10 @@ After taking this lesson, you will:
 - Understand the role of Azure Key Vault in Transparent Data Encryption
 - Understand what Always Encrypted Enclaves are used for
 - Understand what Dynamic Data Masking is used for and how to configure it
+
+## Pre-requisites
+
+- Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based
+- Understanding of why security is a crucial part of database system planning
+- Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
+- Experience creating and configuring resources using the Azure portal
