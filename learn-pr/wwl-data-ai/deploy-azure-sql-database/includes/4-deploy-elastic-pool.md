@@ -1,6 +1,6 @@
 Elastic pools are a deployment option in which you purchase Azure compute resources (CPU, memory, and storage) that is then shared among multiple databases defined as belonging to the same pool. An easy comparison to an on-premises SQL Server is that an elastic pool is like a SQL Server instance that has multiple user databases. By using elastic pools, you can easily manage pool resources while at the same time potentially saving costs. Elastic pools also facilitate easy scalability up to the set limits such that if a single database within the pool needs resources due to an unpredictable workload, the resources are there. If the entire pool needs additional resources, a simple slider option within the Azure portal will facilitate scaling the elastic pool up or down.
 
-## Creating wew pools
+## Creating new pools
 
 Creating new SQL elastic pools from the Azure portal is straightforward. From the portal, click “Create a Resource” and then search for “SQL Elastic database pool” and you will see the screen shown below.
 
