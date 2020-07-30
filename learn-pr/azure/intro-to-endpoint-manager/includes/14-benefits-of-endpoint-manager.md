@@ -44,7 +44,7 @@ Flexible support for diverse corporate and BYOD scenarios while increasing produ
 
 ### Unified Management
 Manage your PCs, Macs, and mobile devices in one place.
-- **Manage all your endpoints from a single pane of glass** - M365 Admin Center provides a single pane of glass for all management activities.
+- **Manage all your endpoints from a single console** - M365 Admin Center provides a single console for all management activities.
 - **Extend on-premises infrastructure with cloud security** - Use guided deployments to extend on-premises infrastructure.
 - **Provide the best Office 365 management experience** - Provide the best Office Experience with security and config management, cloud content optimization.
 - **Manage key mobile apps Microsoft Outlook and Edge** - Stay secure with Microsoft Apps (aka Office 365 Pro Plus) and Microsoft Edge for iOS and Android.

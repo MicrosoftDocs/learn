@@ -40,6 +40,7 @@ units:
 - learn.intro-to-endpoint-manager.12-understand-endpoint-security
 - learn.intro-to-endpoint-manager.13-analyze-resolve-compliance-issues
 - learn.intro-to-endpoint-manager.14-benefits-of-endpoint-manager
-- learn.intro-to-endpoint-manager.15-summary-knowledge-check
+- learn.intro-to-endpoint-manager.15-knowledge-check
+- learn.intro-to-endpoint-manager.16-summary
 badge:
   uid: learn.intro-to-endpoint-manager.badge
