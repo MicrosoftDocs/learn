@@ -38,7 +38,7 @@ For an in-depth explanation of the Circuit-breaker policy, see [Polly's wiki pag
 
 To implement infrastructure-based resiliency, you can use a *[service mesh](https://servicemesh.io)*. Aside from resiliency without changing code, a service mesh provides traffic management, policy, security, strong identity, and observability. Your app is decoupled from these operational capabilities, which are moved to the infrastructure layer. Architecturally speaking, a service mesh is composed of two components: a control plane and a data plane:
 
-:::image type="content" source="../media/3-review-resiliency-concepts/service-mesh-architecture.png" alt-text="a typical service mesh architecture":::
+:::image type="content" source="../media/3-review-resiliency-concepts/service-mesh-architecture.png" alt-text="a typical service mesh architecture" border="true" lightbox="../media/3-review-resiliency-concepts/service-mesh-architecture.png":::
 
 The *control plane* component has a number of components that support managing the service mesh. The components inventory typically includes:
 
@@ -56,7 +56,7 @@ The *data plane* component consists of proxies that are transparently injected a
 
 Some popular service mesh options for Kubernetes clusters include [Linkerd](https://linkerd.io/2/overview), [Istio](https://istio.io), and [Consul](https://www.consul.io/intro). This module focuses on Linkerd. The following diagram shows interactions between components within the data and control planes:
 
-:::image type="content" source="../media/3-review-resiliency-concepts/linkerd-architecture.png" alt-text="Linkerd architecture":::
+:::image type="content" source="../media/3-review-resiliency-concepts/linkerd-architecture.png" alt-text="Linkerd architecture" border="true" lightbox="../media/3-review-resiliency-concepts/linkerd-architecture.png":::
 
 #### Comparison to code-based approaches
 
