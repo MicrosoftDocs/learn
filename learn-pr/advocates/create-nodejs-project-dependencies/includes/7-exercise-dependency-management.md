@@ -1,4 +1,4 @@
-Tailwind Traders has asked you to work on an app that has some outdated dependencies. The app is fairly small and has only a couple of dependencies. Updating it should be straightforward. See if you can update the app to take advantage of the latest features. While you're at it, if you find any vulnerabilities, fix them.
+Tailwind Traders has asked you to work on an app that has some outdated dependencies. The app is small and has only a couple of dependencies. Updating it should be straightforward. See if you can update the app to take advantage of the latest features. While you're at it, if you find any vulnerabilities, fix them.
 
 ## Upgrade app dependencies
 
@@ -83,21 +83,21 @@ Tailwind Traders has asked you to work on an app that has some outdated dependen
 
    The output states that your project dependencies have been updated.
 
-1. At this point, you've upgraded the dependencies as far as the patterns in your package.json will allow. You can either install the latest version by specifically type `npm install <name of package>@<known latest version>` or use the *latest* keyword like so `npm install <name of package>@latest`.
+   At this point, you've upgraded the dependencies as far as the patterns in your package.json will allow. You can either install the latest version by running `npm install <name of package>@<known latest version>` or use the `latest` keyword: `npm install <name of package>@latest`.
 
-1. In the terminal type the following command:
+1. In the terminal, run this command:
 
    ```bash
    npm install node-fetch@latest lodash@latest
    ```
 
-   You should have gotten an output looking something like this:
+   Your output should look something like this output:
 
    ```output
    + node-fetch@2.6.0
    + lodash@4.17.19
    ```
 
-   Results may vary above depending on when this module is taken. The point is though that the listed versions above should correspond to the latest available versions of these two packages.
+   Your results might be slightly different. The versions listed should correspond to the latest available versions of the packages.
 
-Congratulations you've managed to upgrade the two dependencies in your app. Well done!
+Congratulations. You've upgraded the two dependencies in your app. Well done!
