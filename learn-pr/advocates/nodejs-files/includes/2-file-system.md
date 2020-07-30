@@ -4,7 +4,7 @@ Tailwind Traders has each of its stores write its sales total to a file and send
 
 Here, you'll learn how to use Node.js to read the file system to discover files and directories.
 
-## Including the fs module
+## Include the fs module
 
 Node.js provides a built-in module for working with the file system. It's called the *fs* module. The name is short for "file system."
 
@@ -20,7 +20,7 @@ const fs = require("fs").promises;
 
 You can use the fs module to do various operations on files and directories. It has several methods to pick from. For now, we're going to focus on what you need to know to work with directories by using the fs module.
 
-## Listing contents in a directory
+## List contents in a directory
 
 One task that you'll often do with the fs module is list out or *enumerate* the contents in a directory. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total files. The structure looks like this:
 
@@ -43,7 +43,7 @@ console.log(items); // [ 201, 202, sales.json, totals.txt ]
 
 The `readdir` and `readdirsync` methods return results in alphabetical order.
 
-## Determining content type
+## Determine content type
 
 When you read the contents of a directory, you get back both folders and files as an array of strings. You can determine which strings are files and which ones are directories by passing in the `withFileTypes` option. This option will return an array of `Dirent` objects instead of an array of strings. The `Dirent` object has `isFile` and `isDirectory` methods that you can use to determine what type of object you're dealing with.
 

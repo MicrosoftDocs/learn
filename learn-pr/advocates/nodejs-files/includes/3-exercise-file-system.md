@@ -16,7 +16,7 @@ Run the following command in Azure Cloud Shell on the right to ensure that you'r
 source <(curl -Ls https://aka.ms/install-node-lts)
 ```
 
-## Clone exercise
+## Clone the project
 
 1. Run the following command to clone the example project for this module:
 
@@ -38,7 +38,7 @@ source <(curl -Ls https://aka.ms/install-node-lts)
 
 You need to find all the files in only the topmost location: the stores folder.
 
-### Including the fs module
+### Include the fs module
 
 1. Select **index.js** file to open it in the editor.
 

@@ -4,7 +4,7 @@ You're almost finished creating a Node.js masterpiece for Tailwind Traders. So f
 
 In this exercise, you'll complete the project by reading the ".json" files, adding up the store totals, and writing the grand total to the "totals.txt" file.
 
-## Create method to calculate sales totals
+## Create a method to calculate sales totals
 
 1. At the top of `index.js`, just below the `require("path")` statement, create a function that will calculate the sales total. This method should take in the array of file paths that it can iterate over.
 
@@ -61,7 +61,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
    }
    ```
 
-## Write the total to the "totals.txt" file
+## Write the total to the totals.txt file
 
 1. In the `main` function, modify the `fs.writeFile` a block to write the value of the `salesTotal` variable to the "totals.txt" file.
 
@@ -94,9 +94,9 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
 
 1. Press <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> to save the `index.js` file.
 
-## Execute the program
+## Run the program
 
-1. Execute the program from the terminal.
+1. Run the program from the terminal.
 
    ```bash
    node index.js
@@ -104,7 +104,7 @@ In this exercise, you'll complete the project by reading the ".json" files, addi
 
    There is no output from the program. If you look in the "salesTotals/totals.txt", you will see the total of all the sales from the "sales.json" files.
 
-1. Execute the program from the terminal again.
+1. Run the program from the terminal again.
 
    ```bash
    node.index.js
