@@ -6,7 +6,7 @@ metadata:
   description: "Provisioning Cosmos DB throughput"
   ms.date: 08/01/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
