@@ -40,9 +40,9 @@ If you aren’t participating in the Microsoft Software Assurance (SA) program, 
 
 If you are participating in the Microsoft Software Assurance (SA) program, you have more flexibility in how you license your SQL Server:
 
-1. You can use the previous method and pay-per-minute by deploying a virtual machine image containing a SQL Server from the Azure Marketplace
+* You can use the previous method and pay-per-minute by deploying a virtual machine image containing a SQL Server from the Azure Marketplace
 
-2. You can Bring Your Own License (BYOL) when deploying the virtual machine that doesn’t contain a preconfigured SQL Server instance. This option is possible when you already have purchased a valid SQL Server license for your on-premises infrastructure. This license can be applied to the virtual machine to ensure that you're properly licensed. You must report the usage of licenses to Microsoft by using the License Mobility verification form within 10 days of implementing the virtual machine.
+* You can Bring Your Own License (BYOL) when deploying the virtual machine that doesn’t contain a preconfigured SQL Server instance. This option is possible when you already have purchased a valid SQL Server license for your on-premises infrastructure. This license can be applied to the virtual machine to ensure that you're properly licensed. You must report the usage of licenses to Microsoft by using the License Mobility verification form within 10 days of implementing the virtual machine.
 
     When choosing this method, you can manually install SQL Server through media you have obtained, or you can choose to upload a virtual machine image to Azure.
 
@@ -56,15 +56,15 @@ When deploying to an Azure virtual machine, there are several series, or “fami
 
 [General purpose](https://docs.microsoft.com/azure/virtual-machines/sizes-general) - These VMs provide a balanced ration of CPU to memory. This VM class is ideal for testing and development, small to medium-sized database servers, and web servers with a low to medium amount of traffic.
 
-[Compute optimized](https://docs.microsoft.com/azure/virtual-machines/sizes-compute) – Compute optimized VMs have a high CPU-to-memory ratio and are good for web servers with a medium amount of traffic, network appliances, batch processes, and application servers. These VMs can also support machine learning workloads that can't benefit from GPU-based VMs.
+[Compute optimized](https://docs.microsoft.com/azure/virtual-machines/sizes-compute) - Compute optimized VMs have a high CPU-to-memory ratio and are good for web servers with a medium amount of traffic, network appliances, batch processes, and application servers. These VMs can also support machine learning workloads that can't benefit from GPU-based VMs.
 
-[Memory optimized](https://docs.microsoft.com/azure/virtual-machines/sizes-memory) -. These VMs provide high memory-to-CPU ratio. These VMs cover a broad range of CPU and memory options (all the way up to 4 TB of RAM) and are well suited for most database workloads.
+[Memory optimized](https://docs.microsoft.com/azure/virtual-machines/sizes-memory) - These VMs provide high memory-to-CPU ratio. These VMs cover a broad range of CPU and memory options (all the way up to 4 TB of RAM) and are well suited for most database workloads.
 
-[Storage optimized](https://docs.microsoft.com/azure/virtual-machines/sizes-storage) – Storage optimized VMs provide fast, local, NVMe storage that is ephemeral. They are good candidates for scale-out data workloads such as Cassandra. It is possible to use them with SQL Server, however since the storage is ephemeral, you would need to ensure you configured data protection using a feature like Always On Availability Groups or Log Shipping.
+[Storage optimized](https://docs.microsoft.com/azure/virtual-machines/sizes-storage) - Storage optimized VMs provide fast, local, NVMe storage that is ephemeral. They are good candidates for scale-out data workloads such as Cassandra. It is possible to use them with SQL Server, however since the storage is ephemeral, you would need to ensure you configured data protection using a feature like Always On Availability Groups or Log Shipping.
 
-[GPU](https://docs.microsoft.com/azure/virtual-machines/sizes-gpu) – Azure VMs with GPUs are targeted at two main types of workloads—naturally graphics processing operations like video rendering and processing, but also massively parallel machine learning workloads that can take advantage of GPUs.
+[GPU](https://docs.microsoft.com/azure/virtual-machines/sizes-gpu) - Azure VMs with GPUs are targeted at two main types of workloads—naturally graphics processing operations like video rendering and processing, but also massively parallel machine learning workloads that can take advantage of GPUs.
 
-[High performance compute](https://docs.microsoft.com/azure/virtual-machines/sizes-hpc) – High Performance Compute workloads support applications that can scale horizontally to thousands of CPU cores. This support is provided by high-performance CPU and remote direct memory access (RDMA) networking that provides low latency communications between VMs.
+[High performance compute](https://docs.microsoft.com/azure/virtual-machines/sizes-hpc) - High Performance Compute workloads support applications that can scale horizontally to thousands of CPU cores. This support is provided by high-performance CPU and remote direct memory access (RDMA) networking that provides low latency communications between VMs.
 
 The easiest way to see the sizing options within each series is through the Azure portal. From the blade for creating a VM, you can click the option to “Select Size” and see a list.
 
@@ -72,7 +72,7 @@ The easiest way to see the sizing options within each series is through the Azur
 
 The image above shows just a small set of the series and size possibilities. For each option, you can see the number of Virtual CPUs, the amount of RAM, the number of Data disks, the Max IPS, the temporary storage provided and whether Premium storage is supported.
 
-## High Availability
+## High availability
 
 One of the major benefits of cloud computing is that platform high availability is part of the architecture. Azure provides a high-level of built hardware, storage, and networking redundancy. High availability for a system is typically measured as a percentage of uptime per year. In Table 1, you can see what those numbers translate into in terms of time.
 
@@ -86,6 +86,6 @@ One of the major benefits of cloud computing is that platform high availability 
 | **99.995% ("four and a half nines")**| 26.30 minutes |
 | **99.999% ("five nines")**| 5.26 minutes |
 
-A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure-managed storage. Three nines means that the service guarantees the availability of the virtual machine up to 99.9% of the time, which translates into a downtime of no more than 8.77 hours each year.
+A single Azure Virtual Machine provides three nines (99.9%) of high availability when used in conjunction with Azure managed storage. Three nines means that the service guarantees the availability of the virtual machine up to 99.9% of the time, which translates into a downtime of no more than 8.77 hours each year.
 
 In addition to the default number of nines, there are additional features that you can include with your SQL Server in Azure virtual machine to ensure that you achieve the maximum amount of up time.
