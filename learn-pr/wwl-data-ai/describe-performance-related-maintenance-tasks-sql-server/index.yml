@@ -35,7 +35,6 @@ units:
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.maintain-indexes
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.maintain-statistics
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.describe-automatic-tuning
-- learn.wwl.describe-performance-related-maintenance-tasks-sql-server.exercise
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.knowledge-check
 - learn.wwl.describe-performance-related-maintenance-tasks-sql-server.summary
 badge:
