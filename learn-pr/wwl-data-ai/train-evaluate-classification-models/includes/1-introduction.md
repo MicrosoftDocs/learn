@@ -41,7 +41,7 @@ One such function is a *logistic* function, which forms a sigmoidal (S-shaped) c
 
 ![blood-glucose plotted against diabetic (0 or 1)](../media/logistic-function.png)
 
-Now we can use the function to calculate a probability value that ***y*** is positive  other words, the patient is diabetic) from any value of ***x*** by finding the point on the function line for ***x***; and we can set a threshold value of 0.5 as the cut-off point for the class label prediction. Let's test it with the data values we held-back.
+Now we can use the function to calculate a probability value that ***y*** is positive (in other words, the patient is diabetic) from any value of ***x*** by finding the point on the function line for ***x***; and we can set a threshold value of 0.5 as the cut-off point for the class label prediction. Let's test it with the data values we held-back.
 
 ![blood-glucose plotted against diabetic (0 or 1)](../media/class-predictions.png)
 
