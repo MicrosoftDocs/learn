@@ -5,7 +5,7 @@ metadata:
   description: "Migrate MongoDB workloads to Cosmos DB"
   ms.date: 08/01/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate on-premises MongoDB databases to Cosmos DB
