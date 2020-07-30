@@ -10,7 +10,7 @@ In this part, you'll learn:
 * What we mean by terms like "three nines" and "four nines" availability, and how these percentages relate to total downtime.
 * How credits are applied when a service fails to perform to its specification.
 
-## Why is an SLA important?
+## Why are SLAs important?
 
 <div style="background:yellow;">
 TODO: Fill this in with a few bullets.

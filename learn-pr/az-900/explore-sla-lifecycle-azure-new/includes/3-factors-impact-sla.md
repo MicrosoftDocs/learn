@@ -6,11 +6,9 @@ Now that you know how service-level agreements (SLAs) are structured, how do you
 
 Tailwind Traders runs an application that they built on Azure called Special Orders that tracks special orders that customers have placed in their retail stores. A special order includes an item and any customizations the customer needs. For example, a folding door might include customizations such as dimension and hinge placement. Because customizations typically aren't held in store inventory, the customized item needs to be ordered from the supplier when a customer needs it.
 
-There are many design decisions you could make to improve the availability of the applications and services you build on Azure. These decisions extend beyond just Microsoft's SLA for a specific service. In this part, you'll explore a few of these considerations, including:
+There are many design decisions you could make to improve the availability of the applications and services you build on Azure. These decisions extend beyond just Microsoft's SLA for a specific service. In this part, you'll explore a few of these considerations.
 
-* TODO
-* TODO
-* TODO
+Let's start by defining what an application SLA is.
 
 ## What's an application SLA?
 
@@ -103,11 +101,11 @@ TODO: Any pointers on how to set up a risk assessment?
 
 Let's say that Tailwind Traders decided that an SLA of 99.9% is acceptable for the Special Orders application. This gives them an estimated downtime of 10.1 minutes per week.
 
-Now, you need to design an efficient and reliable solution for this application on Azure, keeping that application SLA in mind. You'll select the Azure products and services you need and provision your cloud resources according to those requirements.
+Now you need to design an efficient and reliable solution for this application on Azure, keeping that application SLA in mind. You'll select the Azure products and services you need and provision your cloud resources according to those requirements.
 
 As with any technology, failures will happen. Hardware can fail. The network can have intermittent failures. While it's rare for an entire service or region to experience a disruption, you still need to plan for such events.
 
-TODO: Here are a few ...
+Here are a few aspects to consider as you design your application.
 
 ### Identify your workloads
 

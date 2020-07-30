@@ -4,18 +4,17 @@ In this module, you'll learn about Azure's service-level agreements (SLAs) and h
 
 [!include[](../../shared/tailwind-traders-overview.md)]
 
-## TODO: How will Tailwind Traders manage cloud costs?
+## How will moving to the cloud impact availability agreements?
 
-A common concern for customers new to cloud is whether the availability of those cloud products and services is guaranteed. As you no longer have access to monitor, maintain or respond to incidents with the underlying cloud datacenter infrastructure, you're relying on the cloud provider to keep those components running.
+Moving to the cloud removes the burden of supporting IT infrastructure. When network connectivity is lost or a hard drive fails, you rely on the cloud provider to restore service.
 
-Tailwind Traders' internal IT department manages technology services and solutions for the rest of the Tailwind Traders organization. It has internal agreements in place that state how available those solutions will be, that also allow for regular, planned maintenance. If Tailwind Traders move some workloads to Azure, will those internal agreements be impacted, as Tailwind Traders no longer has full control of the hardware and networks?
+Tailwind Traders' IT department hosts applications and services in their datacenter for the rest of the company. The IT department has agreements in place that state how available those services will be, which includes when and how planned maintenance can happen. As Tailwind Traders moves their workloads to Azure, Tailwind Traders no longer has full control of the hardware and networks. How will their agreements around availability be impacted?
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
-* Describe what a service-level agreement (SLA) is.
-* Identify factors that impact an SLA.
-* Explore how SLAs are calculated across multiple Azure products and services.
-* Describe the service lifecycle in Azure. 
-* Define preview features and general availability.
+* Describe what a service-level agreement (SLA) is and why SLAs are important.
+* Identify factors, such as the service tier you choose, that can impact an SLA.
+* Combine SLAs to compute a composite SLA.
+* Describe the service lifecycle in Azure, including how preview features move to general availability.

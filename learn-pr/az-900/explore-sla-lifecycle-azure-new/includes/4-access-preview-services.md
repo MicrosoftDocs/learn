@@ -1,4 +1,4 @@
-In this part, you'll learn how Azure services go from TODO to TODO. The TODO under which you use a service can impact its service-level agreement (SLA).
+In this part, you'll learn how Azure services go from the preview phase to being generally available.
 
 For Tailwind Traders, migration from the datacenter to Azure is more about operational efficiency. The research and development team is looking into new features that will keep them ahead of the competition &mdash; features they they can't achieve without the power of the cloud.
 

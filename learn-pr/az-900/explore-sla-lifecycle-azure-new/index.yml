@@ -11,11 +11,12 @@ metadata:
 title: Explore service level agreements and service lifecycle in Azure
 summary: Everyone wants to use the next great feature in their solutions before their competitors. Explore features designed to help you know what is coming next.
 abstract: |
-  After completing this module, you will be able to:
-   - Define what preview features are.
-   - Explore how you can access these features.
-   - Review what general availability of a feature is.
-   - Preview a few of the upcoming features.
+  After completing this module, you'll be able to:
+
+  * Describe what a service-level agreement (SLA) is and why SLAs are important.
+  * Identify factors, such as the service tier you choose, that can impact an SLA.
+  * Combine SLAs to compute a composite SLA.
+  * Describe the service lifecycle in Azure, including how preview features move to general availability.
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/explore-sla-lifecycle-azure-new.svg
