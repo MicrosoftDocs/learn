@@ -1,11 +1,11 @@
-<div style="background:yellow;">
+<div style="background:yellow;">
 TODO: Not started. Drop exercise but keep information, to a point.
 </div>
 
 
 You can access publicly available Preview features directly via the Azure portal. 
 
-## Try this - access preview features
+## How can I access preview features?
 
 
 You can view preview services by doing the following

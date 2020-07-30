@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.explore-sla-lifecycle-azure-new
 metadata:
-  title: Explore service level agreements and service lifecycle in Azure
+  title: Explore service-level agreements and service lifecycle in Azure
   description: "Everyone wants to use the next great feature in their solutions before their competitors; explore how to see what is coming next. AZ-900"
   ms.date: 07/24/2020
   author: scuffy
