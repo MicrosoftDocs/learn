@@ -20,7 +20,7 @@ Check out reports, podcasts, and training resources to learn more about how gove
 
 For example, you can to listen to the ["Intelligent Technologies" episode](http://govpod.mpsn.libsynpro.com/001-predictive-technologies) of our government podcast series to hear how national and municipal governments can use AI, the Internet of Things (IoT), blockchain, and other transformative technologies to improve their services. 
 
-* Read our [whitepaper on Microsoft’s vision for AI in the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2FPpk).
+* Read our [whitepaper on Microsoft’s vision for AI in action the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CKw1).
   
 * [Download PDF](https://aka.ms/AA55vdh) of the case study introduction to share with others.  
 * [Download PDF](https://aka.ms/AA55nz0) of the case study resolution to share with others.  
