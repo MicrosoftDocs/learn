@@ -29,7 +29,7 @@ products:
 - vs-code
 units:
 - learn.student-evangelism.install-code-tools-python-nasa.1-introduction
-- learn.student-evangelism.install-code-tools-python-nasa.2-what-is-a-programming-language
+- learn.student-evangelism.install-code-tools-python-nasa.2-about-programming-language
 - learn.student-evangelism.install-code-tools-python-nasa.3-visual-studio-code
 - learn.student-evangelism.install-code-tools-python-nasa.4-python
 - learn.student-evangelism.install-code-tools-python-nasa.5-install-vs-code

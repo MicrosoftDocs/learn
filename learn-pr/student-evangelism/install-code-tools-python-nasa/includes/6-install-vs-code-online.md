@@ -10,20 +10,20 @@ One of the great things about Visual Studio Code is that Microsoft Azure gives y
 To start using this code editor in your browser, you must first create a free Microsoft Azure account. Start by going to this [link](https://portal.azure.com/). Either sign in with a Microsoft account or create a free account. 
 
 > [!NOTE]
-> Azure has free accounts for both [professionals/individuals](https://azure.microsoft.com/en-us/free/) and [students](https://azure.microsoft.com/en-us/free/students/). 
+> Azure has free accounts for both [professionals/individuals](https://azure.microsoft.com/free/) and [students](https://azure.microsoft.com/free/students/).
 
 ## Instructions to set up Codespaces
 
-To run Python using Jupyter Notebooks from within Visual Studio Code, you will use Visual Studio Codespaces. As with most Visual Studio Code features, you can find [a quick startup guide to Codespaces here](https://docs.microsoft.com/en-us/visualstudio/online/quickstarts/browser).
+To run Python using Jupyter Notebooks from within Visual Studio Code, you will use Visual Studio Codespaces. As with most Visual Studio Code features, you can find [a quick startup guide to Codespaces here](https://docs.microsoft.com/visualstudio/online/quickstarts/browser).
 
 > [!WARNING]
-> [Visual Studio Codespaces does have a minimal fee](https://azure.microsoft.com/en-us/pricing/details/visual-studio-online/) paid for through your Azure subscription. The cost for a bsic instance at the time of publishing this module is $0.085 per hour. For a comprehensive list of the cost, you can check out the [Visual Studio Codespaces pricing calculator](https://azure.microsoft.com/en-us/pricing/calculator/?service=visual-studio-online). With the use of either a [professionals/individuals](https://azure.microsoft.com/en-us/free/) or [students](https://azure.microsoft.com/en-us/free/students/) free account, you shouldn't have to pay for anything to complete this Learning Path.
+> [Visual Studio Codespaces does have a minimal fee](https://azure.microsoft.com/pricing/details/visual-studio-online/) paid for through your Azure subscription. The cost for a bsic instance at the time of publishing this module is $0.085 per hour. For a comprehensive list of the cost, you can check out the [Visual Studio Codespaces pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=visual-studio-online). With the use of either a [professionals/individuals](https://azure.microsoft.com/free/) or [students](https://azure.microsoft.com/free/students/) free account, you shouldn't have to pay for anything to complete this Learning Path.
 
 ## Configuring Visual Studio Codespaces
 
 Once you are connected to Visual Studio Codespaces, you will be greeted with a welcome window. Let's start be closing this window. You will see on the left side of the screen that there are a variety of icons you can click on. Below is a brief overview of a few of the sections that we will be using.
 
-:::image type="content" source="..\Media\code-space-start.png" alt-text="test":::
+:::image type="content" source="..\media\code-space-start.png" alt-text="test":::
 
 - Explorer: Shows what file(s) you have open and shows the contents of the folder you are in, if you are in one.
 - Search: Allows you to look for a certain word or collection of words in your file.

@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.python-rock-project
+uid: learn.student-evangelism.count-moon-rocks-python-nasa
 metadata:
   title: Count the Number of Moon Rocks by Type using Python
   description: Use Python and Visual Studio Code to make a simple program to count the number of each type of space rock
@@ -30,13 +30,12 @@ roles:
 products:
 - vs-code
 units:
-- learn.student-evangelism.python-rock-project.1-introduction
-- learn.student-evangelism.python-rock-project.2-setting-up-program
-- learn.student-evangelism.python-rock-project.3-reading-text-file
-- learn.student-evangelism.python-rock-project.4-writing-function
-- learn.student-evangelism.python-rock-project.5-adding-call-to-function
-- >-
-    learn.student-evangelism.python-rock-project.6-outputting-and-summarizing-data
-- learn.student-evangelism.python-rock-project.7-summary
+- learn.student-evangelism.count-moon-rocks-python-nasa.1-introduction
+- learn.student-evangelism.count-moon-rocks-python-nasa.2-setting-up-program
+- learn.student-evangelism.count-moon-rocks-python-nasa.3-reading-text-file
+- learn.student-evangelism.count-moon-rocks-python-nasa.4-writing-function
+- learn.student-evangelism.count-moon-rocks-python-nasa.5-adding-call-to-function
+- learn.student-evangelism.count-moon-rocks-python-nasa.6-outputting-and-summarizing-data
+- learn.student-evangelism.count-moon-rocks-python-nasa.7-summary
 badge:
-  uid: learn.student-evangelism.python-rock-project.badge
+  uid: learn.student-evangelism.count-moon-rocks-python-nasa.badge

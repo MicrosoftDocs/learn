@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-rock-project.3-reading-text-file
+uid: learn.student-evangelism.count-moon-rocks-python-nasa.3-reading-text-file
 metadata:
   title: Exercise - Read in Moon Rock Data from a Text File for Exploration
   description: Read the text from rocks.txt

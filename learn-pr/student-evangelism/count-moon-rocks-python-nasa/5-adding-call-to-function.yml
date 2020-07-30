@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-rock-project.5-adding-call-to-function
+uid: learn.student-evangelism.count-moon-rocks-python-nasa.5-adding-call-to-function
 metadata:
   title: Exercise - Count the Number of Moon Rocks by Calling a Python Function
   description: Call the newly created function

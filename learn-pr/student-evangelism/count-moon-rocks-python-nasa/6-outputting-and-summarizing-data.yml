@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: >-
-  learn.student-evangelism.python-rock-project.6-outputting-and-summarizing-data
+  learn.student-evangelism.count-moon-rocks-python-nasa.6-outputting-and-summarizing-data
 metadata:
   title: Exercise - Analyze and Summarize Data in Python
   description: Output the data we gathers and use functions to summarize it

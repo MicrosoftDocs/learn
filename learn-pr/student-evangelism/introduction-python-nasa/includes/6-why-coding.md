@@ -1,6 +1,6 @@
 The scientific areas of interest for NASA research is vast. So why are we focusing on how code can play a role?
 
-Simply put, Microsoft is one of the leaders in innovation around coding tools and data science services. With tools like [Visual Studio Code](https://code.visualstudio.com/) and the services that [Azure offers to explore data](https://azure.microsoft.com/en-us/overview/ai-platform/) you can get started within an hour exploring data and discovery insights about that data. 
+Simply put, Microsoft is one of the leaders in innovation around coding tools and data science services. With tools like [Visual Studio Code](https://code.visualstudio.com/) and the services that [Azure offers to explore data](https://azure.microsoft.com/overview/ai-platform/) you can get started within an hour exploring data and discovery insights about that data. 
 
 But more than that, the new services offered by many different companies create a new type of research. With the hard work and dedication of NASA scientists when we initially collected rock samples and tracked weather patterns for launches, we now have massive amounts of data that allow us to do analysis on large numbers of rocks instead of individual rocks. We can now better equip astronauts with strategies for finding, identifying, and collecting rock samples that we know will further understanding, and we can begin to more accurately predict the right dates and times for rocket launches, saving money and increasingly the likelihood of success. 
 
