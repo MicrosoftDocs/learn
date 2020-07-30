@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.protect-data-transit-at-rest.explain-dynamic-data-masking
+title: Explain dynamic data masking
+metadata:
+  title: Explain dynamic data masking
+  description: "Explain dynamic data masking"
+  ms.date: 08/02/2020
+  author: wwlpublish
+  ms.author: kadelaney
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-explain-dynamic-data-masking.md)]

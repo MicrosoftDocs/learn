@@ -1,4 +1,4 @@
-Azure will let you build out any solution that you can think up, from mobile applications, to games running in the cloud, to ecommerces systems, and many others. With those sites, you will need tools to support you in keeping the sites secure and your data protected.
+Azure will let you build out any solution that you can think up, from mobile applications, to games running in the cloud, to Ecommerces systems, and many others. With those sites, you will need tools to support you in keeping the sites secure and your data protected.
 
 > [!Tip]
 > 
