@@ -77,6 +77,10 @@ Complete the following steps to implement failure handling for the coupon servic
 
         :::code language="csharp" source="../code/src/apigateways/services/5-couponservice.cs" highlight="8":::
 
+        The `AddApplicationServices` extension method is invoked from the `ConfigureServices` method in the project's *Startup.cs* file:
+
+        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/5-startup.cs" highlight="7":::
+
     1. Replace the comment `// Add the using statements` with the following `using` directives:
 
         ```csharp
