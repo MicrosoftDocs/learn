@@ -2,7 +2,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
 
 ## Set up a new Node.js project
 
-Open a terminal window.
+1. Open a terminal window.
 
 1. Clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
 
@@ -29,7 +29,7 @@ Open a terminal window.
     npm init -y
     ```
 
-   This command will generate a package.json file. It should look something like this file:
+   This command will generate a package.json file. It should look something like this one:
 
     ```json
     {
@@ -87,7 +87,7 @@ Open a terminal window.
    console.log('Welcome to this application');
    ```
 
-   The previous entry will define how the project starts. You can now start it by entering this command:
+1. The previous entry will define how the project starts. You can now start it by running this command:
 
    ```bash
    npm start

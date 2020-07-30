@@ -5,7 +5,7 @@ The package.json file is a manifest file for your Node.js project. It contains m
 A package.json file isn't something you author by hand. It's the result of running the `init` command. There are two main ways to run this command:
 
 - `npm init`. This command starts a wizard that will prompt you for information about a project's name, version, description, entry point, test command, Git repository, keywords, author, and license.
-- `npm init -y`. This command, with the `-y` flag, is a faster version of `npm init`. It's faster in the sense that it's *not* interactive. Instead, it assigns default values to all values you'd be asked to supply if you ran `npm init`.
+- `npm init -y`. This command, with the `-y` flag, is a faster version of `npm init`. It's faster in the sense that it's *not* interactive. Instead, it assigns default values for all values you'd be asked to supply if you ran `npm init`.
 
 The `npm init` command and the `npm init -y` command it will both generate a package.json file. A package.json file might look like this file:
 
@@ -32,7 +32,7 @@ You can think of all the possible fields in the package.json as belonging to  th
 
 - **Meta-information**. This group contains meta-information about the project, like its name, description, author, and keywords.
 - **Dependencies**. There are two properties, `dependencies` and `devDependencies`, that are used to describe the libraries that are being used. Later in the module, you'll learn how to use these two sections to install, update, and separate dependencies.
-- **Scripts**. In this section, you can place scripts that do things like start, build, test, and lint a project.
+- **Scripts**. You can place scripts in this section that do things like start, build, test, and lint a project.
 
 ### Scripts for managing your project
 
@@ -66,8 +66,8 @@ A more realistic example would look like this code:
 }
 ```
 
-This example uses the naming that has been described. First, you have the `start` action that starts our application. Secondly, the `test` action runs our tests by using the testing framework `jest`. Then we have the `build` action that uses the TypeScript compiler `tsc` to compile our code from TypeScript into, for example,  ES6 that the browser can understand. Finally, we have a linting tool `eslint` that looks for inconsistencies and possibly errors in our code.
+This example uses the naming that has been described. First, you have the `start` action that starts the application. Second, the `test` action runs tests by using the testing framework `jest`. Then you have the `build` action that uses the TypeScript compiler `tsc` to compile the code from TypeScript into, for example, ES6 that the browser can understand. Finally, you have a linting tool `eslint` that looks for inconsistencies and possibly errors in the code.
 
 You invoke actions by typing `npm run <action>`. But there are *special* actions: `start`, `build`, and `test`. They're special because you can omit `run`. So instead of typing `npm run start`, you can instead save a few characters and type `npm start`.
 
-Most likely your project will have a few more scripts, but those scripts are usually specific to the project. The actions described previously are a good starting point for any Node.js project.
+Your project will probably have a few more scripts, but those scripts are usually specific to the project. The actions described previously are a good starting point for any Node.js project.
