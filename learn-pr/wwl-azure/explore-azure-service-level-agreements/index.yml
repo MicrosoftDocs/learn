@@ -3,9 +3,9 @@ uid: learn.wwl.explore-azure-service-level-agreements
 metadata:
   title: Explore Azure service level agreements (SLAs)
   description: "You are placing an application into a cloud-providers hardware versus on-premises. How reliable will your solution be? AZ-900"
-  ms.date: 07/31/2020
+  ms.date: 08/03/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure service level agreements (SLAs)

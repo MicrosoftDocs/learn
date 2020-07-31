@@ -15,7 +15,7 @@ In the example above, if either service fails the whole application will fail. I
 99.95 percent × 99.99 percent = approx 99.94 percent
 ```
 
-This means the combined value is lower than the individual SLA values. This isn't surprising, because an application that relies on multiple services has more potential failure points.
+This means the combined value is lower than the individual SLA values, meaning higher probability of failure. This isn't surprising, because an application that relies on multiple services has more potential failure points.
 
 Conversely, you can improve the composite SLA by creating independent fallback paths. For example, if **SQL Database** is unavailable, you can put transactions into a **Queue** for processing at a later time.
 
