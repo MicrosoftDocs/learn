@@ -10,13 +10,13 @@ There are two fundamental approaches to resiliency: code and infrastructure. Eac
 
 ### Code-based resiliency
 
-To implement code-based resiliency, this module uses [Polly](https://github.com/App-vNext/Polly)&mdash;a .NET library for resilience and transient failure handling. It's used to build failure-handling code with a fluent, easy-to-understand syntax. There are several [resilience policies](https://github.com/App-vNext/Polly#resilience-policies) that define failure-handling behavior. In this module, you'll apply the *Retry* and *Circuit-breaker* policies to HTTP client operations.
+To implement code-based resiliency, this module uses [Polly](https://github.com/App-vNext/Polly)&mdash;a .NET library for resilience and transient failure handling. It's used to build failure-handling code with a fluent, easy-to-understand syntax in a thread-safe manner. There are several [resilience policies](https://github.com/App-vNext/Polly#resilience-policies) that define failure-handling behavior. In this module, you'll apply the *Retry* and *Circuit Breaker* policies to HTTP client operations.
 
 Resiliency with Polly is defined in code, but startup-time configuration for some parameters is supported.
 
 #### Retry policy
 
-The *Retry* policy is exactly what the name implies. The request is retried after a short wait if an error response is received. The wait time is configurable as shown in the following table:
+A *Retry* policy is exactly what the name implies. The request is retried after a short wait if an error response is received. The wait time is configurable as shown in the following table:
 
 | Wait time value          | Example sequence   |
 |--------------------------|--------------------|
@@ -28,11 +28,11 @@ The Retry policy always has a maximum retry count. Once that number of retries h
 
 For an in-depth explanation of the Retry policy, see [Polly's wiki page on Retry policy](https://github.com/App-vNext/Polly/wiki/Retry).
 
-#### Circuit-breaker policy
+#### Circuit Breaker policy
 
-The *Circuit-breaker* policy gives the target service a break after a repeated number of failures. Such a state might indicate that the service is having a serious problem and will be temporarily unable to respond. After a number of consecutive failures, the connection attempts are paused temporarily, "opening" the circuit. During this wait, additional operations on the target service fail immediately without "bothering" the service. After the wait time has elapsed, the operation is tried again. If the operation succeeds, the circuit is "closed" and the system goes back to normal.
+A *Circuit Breaker* policy gives the target service a break after a repeated number of failures. Such a state might indicate that the service is experiencing a serious problem and is temporarily unable to respond. After a defined number of consecutive failures, the connection attempts are paused temporarily, "opening" the circuit. During this wait, additional operations on the target service fail immediately without "bothering" the service. After the wait time has elapsed, the operation is attempted again. If the operation succeeds, the circuit is "closed" and the system goes back to normal.
 
-For an in-depth explanation of the Circuit-breaker policy, see [Polly's wiki page on Circuit-breaker policy](https://github.com/App-vNext/Polly/wiki/Circuit-Breaker).
+For an in-depth explanation of the Circuit Breaker policy, see [Polly's wiki page on Circuit Breaker policy](https://github.com/App-vNext/Polly/wiki/Circuit-Breaker).
 
 ### Infrastructure-based resiliency
 

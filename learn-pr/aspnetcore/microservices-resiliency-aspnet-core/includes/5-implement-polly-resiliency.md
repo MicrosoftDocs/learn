@@ -35,7 +35,7 @@ Complete the following steps to implement failure handling for the coupon servic
     dotnet add package Microsoft.Extensions.Http.Polly
     ```
 
-    The preceding command installs a NuGet package in the *Web.Shopping.HttpAggregator* project. The package integrates Polly and `IHttpClientFactory` and installs the actual `Polly` package as a dependency. The package is necessary to configure Polly policies to handle conditions representing transient faults when making HTTP requests. Such conditions are handled by invoking the package's `HttpPolicyExtensions.HandleTransientHttpError` method. The conditions include:
+    The preceding command installs a NuGet package in the *Web.Shopping.HttpAggregator* project. The package integrates `IHttpClientFactory` with Polly and installs the actual `Polly` package as a dependency. The package is necessary to configure Polly policies to handle conditions representing transient faults when making HTTP requests. Such conditions are handled by invoking the package's `HttpPolicyExtensions.HandleTransientHttpError` method. The conditions include:
 
     - Network failures, as indicated by exceptions of type `HttpRequestException`
     - Server errors, as indicated by HTTP 5xx status codes
@@ -48,16 +48,22 @@ Complete the following steps to implement failure handling for the coupon servic
         public static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
         {
             return HttpPolicyExtensions.HandleTransientHttpError()
-                .WaitAndRetryAsync(5, retryAttempt =>
-                    TimeSpan.FromMilliseconds(Math.Pow(1.5, retryAttempt) * 1000), (_, waitingTime) =>
-                {
-                    Log.Logger.Information(
-                        "----- Retrying in {WaitingTime}s", $"{ waitingTime.TotalSeconds:n1}");
-                });
+                .WaitAndRetryAsync(5,
+                    retryAttempt => TimeSpan.FromMilliseconds(Math.Pow(1.5, retryAttempt) * 1000),
+                    (_, waitingTime) =>
+                    {
+                        Log.Logger.Information(
+                            "----- Retrying in {WaitingTime}s", $"{ waitingTime.TotalSeconds:n1}");
+                    });
         }
         ```
 
-        The preceding method configures a Retry policy with an exponential back-off that increases the retry time as a power of 1.5 seconds. This value is typically a power of 2 seconds in most samples. To decrease wait times for this exercise, 1.5 seconds is used instead. This policy's premise is that faults are transient and may self-correct after a short delay.
+        The preceding method configures a Retry policy that retries up to five times with an exponentially increasing delay in between each attempt. The delay:
+
+        - Increases as a power of 1.5 seconds after each attempt.
+        - Is a power of 2 seconds by default. To decrease wait times for this exercise, 1.5 seconds is used instead.
+
+        This policy's premise is that faults are transient and may self-correct after a short delay.
 
     1. Replace the comment `// Add the GetCircuitBreakerPolicy method` with the following method:
 
@@ -67,7 +73,7 @@ Complete the following steps to implement failure handling for the coupon servic
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-        The preceding method configures a Circuit Breaker policy that "opens the breaker" for 15 seconds, after 15 continuous failures. This policy's premise is that protecting the coupon service from overload can help it recover.
+        The preceding method configures a Circuit Breaker policy. After 15 consecutive failures, the policy enforces a 15-second pause. This policy's premise is that protecting the service from overload can help it recover.
 
     1. In the `AddApplicationServices` method, call the `AddPolicyHandler` extension method twice. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
@@ -219,7 +225,7 @@ Consider the situation in which you configure the same two coupon failures with 
     - The log traces when configuring the simulated failures (#1) and
     - Three retries until the aggregator could finally get the value (#2).
 
-### Circuit breaker
+### Circuit Breaker
 
 For this case, you'll configure the code for 20 failures, using *:::no-loc text="FAIL 20 DISC-10":::*:
 
@@ -231,7 +237,7 @@ Complete the following steps:
 1. Wait about 20 seconds to get the HTTP 500 error message. When you do, select **APPLY** again.
 1. After the second failure, select **APPLY** for the third time.
 
-    On the third try, notice that the HTTP 500 error message came in much faster. That's because the circuit breaker was activated.
+    On the third try, notice that the HTTP 500 error message came in much faster. That's because the Circuit Breaker was activated.
 
 1. Select **APPLY** once again.
 

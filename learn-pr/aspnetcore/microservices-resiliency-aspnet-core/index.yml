@@ -22,7 +22,7 @@ prerequisites: |
   - Access to an Azure subscription with **Owner** privilege
 iconUrl: https://docs.microsoft.com/../media/learn/module.svg
 levels:
-  - intermediate
+  - advanced
 roles:
   - developer
 products:
