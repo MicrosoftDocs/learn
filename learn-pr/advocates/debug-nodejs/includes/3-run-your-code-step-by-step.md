@@ -83,4 +83,4 @@ To get information about the current execution point, use these commands:
 - `list(<N>)`: List your source code with *N* lines before and after the current execution point.
 - `exec <EXPR>`: Evaluate an expression within the current execution context. This command is useful to help you get information about the current state. For example, you can get the value of a variable named `i` by using `exec i`.
 
-That's quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, select **CTRL+D** or select the command `.exit`.
+That's quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, select **Ctrl+D** or select the command `.exit`.
