@@ -2,7 +2,7 @@ Proper storage configuration is important to the performance of your Azure Virtu
 
 Now that you've reviewed this module, you should be able to:
 
-- Understand your options for configuration of Azure Storage
+- Understand your options for configuration of Azure storage
 
 - Describe how to configure tempdb data files in SQL Server
 

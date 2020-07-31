@@ -4,12 +4,12 @@ title: Control SQL Server resources
 metadata:
   title: Control SQL Server resources
   description: "Control SQL Server resources"
-  ms.date: 08/01/2020
+  ms.date: 08/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: kadelaney
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/5-control.md)]

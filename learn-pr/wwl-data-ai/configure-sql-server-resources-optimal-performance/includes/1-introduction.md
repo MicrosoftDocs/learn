@@ -4,7 +4,7 @@ One of the challenges administrators face in the cloud is balancing costs and pe
 
 In this module, you will:
 
-- Understand your options for configuration of Azure Storage
+- Understand your options for configuration of Azure storage
 
 - Learn how to configure TempDB data files in SQL Server
 
