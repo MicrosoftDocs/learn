@@ -2,13 +2,13 @@ Sooner or later, you'll want to update to a new version of a library. Maybe a fu
 
 There are some considerations that you should take into account before you try to update a library:
 
-- **The type of update**. What type of update is available? Is it a small bug fix? Is it adding a new feature I need? Will it break my code? You can communicate the type of update by using a system called *semantic versioning*. The way the version number of the library is expressed communicates to developers the type of update they're dealing with.
+- **The type of update**. What type of update is available? Is it a small bug fix? Is it adding a new feature you need? Will it break your code? You can communicate the type of update by using a system called *semantic versioning*. The way the version number of the library is expressed communicates to developers the type of update they're dealing with.
 - **Whether the project is configured correctly**. You can configure your Node.js project so that you get only the types of updates you want. You'll only perform an update if a specific type of update is available. We recommend this approach because you don't risk running into surprises.
 - **Security problems**. Managing your project dependencies over time involves being aware of problems that might occur. Problems arise as vulnerabilities are detected, for example. Ideally, patches will be released that you can download. The npm tool helps you run an *audit* on your libraries to find out if you have packages that should be updated. It also helps you take the appropriate action to fix a problem.
 
 ## Use semantic versioning
 
-There's an industry standard called semantic versioning. It's a system adopted by many companies and developers. If you intend to publish packages and push them to the npm registry, you should follow semantic versioning. It's expected. Even if you only download packages from the npm registry, you can expect these packages to follow semantic versioning.
+There's an industry standard called *semantic versioning*. It's a system adopted by many companies and developers. If you intend to publish packages and push them to the npm registry, you should follow semantic versioning. It's expected. Even if you only download packages from the npm registry, you can expect these packages to follow semantic versioning.
 
 So why is it such a big deal? Changes to a package can introduce risk. Risk that a bug that could harm your business could be introduced. Risk that you might need to rewrite part of your code. Rewriting code takes time and costs money.  
 
@@ -28,7 +28,7 @@ This table illustrates how the version number changes for each version type:
 
 ## Update a package by using npm
 
-There are two ways to install a package. You can either use the `install` command or the `update` command. At one time, there were differences between these two commands, but now they act more like aliases for one another. A typical command to update a package might look like this one: `npm update <name of package>@<optional argument with version number>`.
+There are two ways to install a package. You can use either the `install` command or the `update` command. At one time, there were differences between these two commands, but now they act more like aliases for one another. A typical command to update a package might look like this one: `npm update <name of package>@<optional argument with version number>`.
 
 What happens at this point depends on two things:
 
@@ -41,7 +41,7 @@ As a Node.js developer, you can communicate to Node.js the update behavior you w
 
 - **Major version**. I'm OK with updating to the latest major version as soon as it's out. I accept the fact that I might need to change code on my end.
 - **Minor version**. I'm OK with a new feature being added. I'm not OK with code that breaks.
-- **Patch version**. The only thing I'm OK with are bug fixes.
+- **Patch version**. The only updates I'm OK with are bug fixes.
 
 If you're managing a new or smaller Node.js project, you can afford to be loose with how you define the update strategy. For example, you could always update to the latest version. For more complex projects, there's a bit more nuance, but we'll save that for a future module.
 
@@ -61,25 +61,25 @@ Here are some patterns that you can configure for major/minor/patch version:
 
 ## package-lock.json
 
-In addition to the package.json manifest file, you also have the package-lock.json file. The latter is generated when you do something that modifies the node_modules directory or anything that changes the dependencies in package.json. So it wouldn't be created when you run `npm init`, but it would be created when you install a package, for example.
+In addition to the package.json manifest file, you also have the package-lock.json file. The latter is generated when you do something that modifies the node_modules directory or anything that changes the dependencies in package.json. So it won't be created when you run `npm init`, but it will be created when you install a package, for example.
 
 This file should be committed to your repository. 
 
-One reason to commit this file to your repository is that it guarantees exact installations. Remember how in package.json you define patterns for the types of installs you want, like patches, minor versions, or major versions? Patterns aren't exact. You wouldn't know if you installed, for example, version 1.4 or 1.5 if you were using a `1.x` pattern. 
+One reason to commit this file to your repository is that it guarantees exact installations. Remember how in package.json you define patterns for the types of installations you want, like patches, minor versions, or major versions? Patterns aren't exact. You won't know if you installed, for example, version 1.4 or 1.5 if you're using a `1.x` pattern. 
 
-And you might need to know which version you installed. Imagine you specify `1.x`. You're using version 1.2, and a 1.4 version is released. The new version ends up breaking your code. Someone installing your app will get a non-functioning app at that point. But, if there's a `package-lock.json` file stating 1.2 was used, 1.2 will be installed. So who cares about this behavior? People who use your app and CI (continuous integration) tools.
+And you might need to know which version you installed. Imagine you specify `1.x`. You're using version 1.2, and a 1.4 version is released. The new version ends up breaking your code. Someone installing your app will get a non-functioning app at that point. But, if there's a `package-lock.json` file stating 1.2 was used, 1.2 will be installed. So, who cares about this behavior? People who use your app and CI (continuous integration) tools.
 
 It's important to understand the process and which file determines when an installation occurs. 
 
 It works like this: 
-- If the package.json and the package-lock.json agree on semantic-rule level, there's no conflict. For example, if the pattern says `1.x` in package.json and package-lock.json specifies that version 1.4 is installed, 1.4 would be installed. 
+- If the package.json and the package-lock.json agree on a semantic-rule level, there's no conflict. For example, if the pattern says `1.x` in package.json and package-lock.json specifies that version 1.4 is installed, 1.4 will be installed. 
 - But if the package.json specifies, for example, `1.8.x`, package-lock.json won't be obeyed. Version 1.8.0 or later will be installed, or a higher patch version if one is available.
 
 The package-lock.json file also provides other features. For example, it makes it easy to see what has changed between commits and helps to optimize the installation process.
 
 ## Find and update outdated packages
 
-The `npm outdated` command lists outdated packages. This command can help you find out when there are newer versions of packages available. Here's a typical output from the command:
+The `npm outdated` command lists outdated packages. This command can help you learn when there are newer versions of packages available. Here's a typical output from the command:
 
 ```output
 Package     Current  Wanted   Latest  Location
@@ -100,7 +100,7 @@ The recommended workflow is to run these commands, in this order:
 
 ## Managing security issues
 
-Every time you update or install a package, you'll get a log response just after the installation. The response will tell you what version was installed and whether there are any vulnerabilities. A log might look like this example:
+Every time you update or install a package, you'll get a log response just after the installation. The response tells you what version was installed and whether there are any vulnerabilities. A log might look like this example:
 
 ```output
 + lodash@1.3.1
@@ -126,6 +126,6 @@ and so on..
 
 The `npm audit fix` command tries to fix the problem. It tries to upgrade to a minor version for which the problem doesn't exist. That action might not be enough. The command might prompt you to run `npm audit fix --force` to fix the problem. This action involves a breaking change. That is, the major version of your package will be updated.
 
-A vulnerability is a weakness in code that attackers can exploit to commit malicious actions. Attackers can use these weaknesses to gain access to your data and your systems. You should take vulnerabilities seriously.
+A *vulnerability* is a weakness in code that attackers can exploit to commit malicious actions. Attackers can use these weaknesses to gain access to your data and your systems. You should take vulnerabilities seriously.
 
 Vulnerabilities are discovered all the time. They're so common that GitHub has implemented a function that scans repos and automatically creates PRs suggesting that you upgrade to a safer version if it finds a vulnerability. You should run the audit command `npm audit` occasionally. Safety is everyone's job. A large repo provider like GitHub does its part. You can do your part by auditing and fixing vulnerabilities if you find any.

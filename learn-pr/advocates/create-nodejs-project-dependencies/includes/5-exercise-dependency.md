@@ -93,7 +93,7 @@ You're given some code that parses an address from a string. Your task should be
    npm run test
    ```
 
-   You should get the following output
+   You should get the following output:
 
    ```output
    Address parser
@@ -108,4 +108,4 @@ You're given some code that parses an address from a string. Your task should be
 
    Success! Your test passes, and you've added testing by installing a dependency.
 
-Congratulations. You've managed to successfully install Jest, a dependency, write tests for application code, and run the tests. Jest seems to deliver in on its promise and Tailwind Traders is likely to be happy with this evaluation.
+Congratulations. You've managed to successfully install Jest as a dependency, write tests for application code, and run the tests. Jest seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.
