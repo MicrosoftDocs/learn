@@ -1,47 +1,19 @@
-In this module, you've learned about Microsoft Endpoint Manager, what it is and what its key capabilities. Here are some of the things you covered.
+In this module, you've learned about Microsoft Endpoint Manager, what it is and its key capabilities. Here are some of the things you covered.
 
-<!-->
+- Endpoint Manager integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot. 
+- Endpoint Manager helps keep your organization's cloud and on-premises devices, apps, and data secure.
+- Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses. Additionally, endpoints also include the apps used by an organization. These endpoints are managed in different environments based on where these endpoints are located.
+- Endpoint Manager supports several device platforms. The available platforms that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. 
+- Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. As part of the process, the individual user signs in to the device and steps through the process of connecting to your organization. You can either enroll the devices with Intune or Configuration Manager during the provisioning process or after, depending on the platform and your needs.
+- Before you can safeguard the devices that access your organization's resources, you must enroll them. Enrolling means that the device is connected and recognized by Intune or Configuration Manager based on a Mobile Device Management (MDM) certificate. There are several methods to enroll your workforce's devices. Each method depends on **device ownership** (personal or corporate), **device type** (iOS/iPadOS, Windows, Android, macOS), and **device management requirements** (resets, affinity, locking).
+- You can use Microsoft Intune to manage the apps that your company's workforce uses on their devices. This functionality is called Mobile Application Management (MAM). MAM in Intune is designed to protect organization data at the application level, including custom apps and store apps. App management can be used on organization-owned devices and personal devices. When it is used with personal devices, only organization-related access and data is managed.
+- Intune uses Azure Active Directory (Azure AD) groups to manage devices and users. As an Intune admin, you can set up groups to suit your organizational needs. Create groups to organize users or devices by geographic location, department, or hardware characteristics. Use groups to manage tasks at scale. 
+- Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. 
+- Use the *Endpoint security* node in Microsoft Endpoint Manager to configure device security and to manage security tasks for devices when those devices are at risk.
+- Intune and Config Manager provide a number of tools you can use to resolve compliance issues for end user's devices and apps, as well as your tenant.
 
-
-- Different types of cloud models that are available and the considerations of using those different models. 
-- Some of the key terms and concepts such as high availability, agility, elasticity, fault tolerance, and CapEx vs. OpEx. 
-- The different cloud services available, the benefits of using the different types, and the management responsibilities under each service type. 
-- Cloud models such as public, private and hybrid, and what the key characteristics of each model are.
-- The different types of cloud service available: IaaS, PaaS, and SaaS; what the key characteristics of each service are and when you would choose one over the other.
-
-![A connected plug to represent electricity being delivered](../media/7-heading.png)
-
-### Microsoft Azure
-
-Azure is Microsoft's cloud computing platform. Azure provides over 100 services that enable you to do everything from running your existing applications on virtual machines to exploring new software paradigms such as intelligent bots and mixed reality.
-
-Here are just a few kinds of services you'll find on Azure:
-
-- **Compute** services such as VMs and containers that can run your applications
-- **Database** services that provide both relational and NoSQL choices
-- **Identity** services that help you authenticate and protect your users
-- **Networking** services that connect your datacenter to the cloud, provide high availability or host your DNS domain
-- **Storage** solutions that can accommodate massive amounts of both structured and unstructured data
-- **AI and machine-learning** services can analyze data, text, images, comprehend speech, and make predictions using data — changing the world of agriculture, healthcare, and much more.
-- And many more!
-
-<-->
 ## Learn more
 
-<!-->
-Stay on the [Azure Fundamentals Learning Path](https://docs.microsoft.com/learn/paths/azure-fundamentals/) to learn more about how Microsoft Azure can help you build more secure, reliable, performant applications in the cloud.
+For addiitonal information about Microsoft Endpoint Manager, see the following resources:
 
-In addition, here are some places to go to learn more about what we've covered today:
-
-- [Cloud Computing Terms](https://azure.microsoft.com/overview/cloud-computing-dictionary/)
-- [What is Azure?](https://azure.microsoft.com/overview/)
-- [Azure compliance offerings](https://www.microsoft.com/trustcenter/compliance/complianceofferings)
-- [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/guide/)
-- [Overview of Azure compute options](https://docs.microsoft.com/azure/architecture/guide/technology-choices/compute-overview)
-
-<-->
-
-
-
-
-
+- [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/)
