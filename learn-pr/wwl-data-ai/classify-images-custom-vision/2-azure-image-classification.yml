@@ -4,9 +4,9 @@ title: Get started with image classification on Azure
 metadata:
   title: Get started with image classification on Azure
   description: "Learn about options for creating image classification solutions on Azure"
-  ms.date: 07/30/2020
+  ms.date: 08/02/2020
   author: benjiang
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
