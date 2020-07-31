@@ -35,7 +35,7 @@ In this task, we will use Azure CLI to create a resource group and a virtual mac
     az group list --output table
     ```
 
-2. Create a new virtual machine. Make sure that each line except for the last one is followed by the caret (`^`) character. If you type the whole command on the same line, do not use any backslash characters. 
+2. Create a new virtual machine. Make sure that each line except for the last one is followed by the backslash (`\`) character. If you type the whole command on the same line, do not use any backslash characters. 
 
     ```cli
     az vm create \
