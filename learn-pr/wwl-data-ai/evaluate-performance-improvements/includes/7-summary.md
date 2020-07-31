@@ -2,7 +2,7 @@ One of the challenges of the DBA’s role is to evaluate the impact of changes t
 
 ## Learning objectives:
 
-At the end of this module, you will be able to:
+Now that you've reviewed this module, you should be able to:
 
 - Describe dynamic management views and functions
 - Describe wait statistics

@@ -4,7 +4,7 @@ One holistic way of monitoring server performance is to evaluate what the server
 - Queue waits occur when a worker thread is idle and waiting for work to be assigned. Example queue waits are deadlock monitoring and deleted record cleanup.
 - External waits occur when SQL Server is waiting on an external process like a linked server query to complete. An example of an external wait is a network wait related to returning a large result set to a client application.
 
-This data is aggregated in the DMV sys.dm_os_wait_stats (and in sys.dm_db_wait_stats in Azure SQL Database) and is also tracked for active sessions in sys.dm_exec_session_wait_stats. These statistics (SQL Server tracks over 900 wait types) allow the DBA to get an overview of the performance of the server, and to readily identify configuration or hardware issues. This data is persisted from the time of instance startup, but the data can be cleared as needed to observe changes. 
+This data is aggregated in the DMV sys.dm_os_wait_stats (and in sys.dm_db_wait_stats in Azure SQL Database) and is also tracked for active sessions in sys.dm_exec_session_wait_stats. These statistics (SQL Server tracks over 900 wait types) allow the DBA to get an overview of the performance of the server, and to readily identify configuration or hardware issues. This data is persisted from the time of instance startup, but the data can be cleared as needed to observe changes.
 
 Wait statistics are evaluated as a percentage of the total waits on the server.
 
