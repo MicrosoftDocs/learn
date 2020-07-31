@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-causes-of-performance-issues.describe-sql-server-query-store
-title: Describe SQL server query store
+title: Describe SQL Server Query Store
 metadata:
-  title: Describe SQL server query store
-  description: "Describe SQL server query store"
-  ms.date: 08/01/2020
+  title: Describe SQL Server Query Store
+  description: "Describe SQL Server Query Store"
+  ms.date: 08/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: kadelaney
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 12
 content: |
   [!include[](includes/2-describe-sql-server-query-store.md)]

@@ -80,7 +80,7 @@ There is no way to set a global isolation level all queries running in a databas
 
 ## Monitoring for blocking problems
 
-Identifying blocking problem can be troublesome as they can be sporadic in nature. There is a DMV called *sys.dm_tran_locks*, which can be joined with *sys.dm_exec_requests* in order to provide further information on locks that each session is holding. A better way to monitor for blocking problems is to do so on an ongoing basis using the Extended Events engine. In the additional resources session of this module, you can see of an example extended events session that will track locks held and correlate them with queries so you can monitor queries over time.
+Identifying blocking problem can be troublesome as they can be sporadic in nature. There is a DMV called *sys.dm_tran_locks*, which can be joined with *sys.dm_exec_requests* in order to provide further information on locks that each session is holding. A better way to monitor for blocking problems is to do so on an ongoing basis using the Extended Events engine.
 
 Blocking problems typically fall into two categories:
 

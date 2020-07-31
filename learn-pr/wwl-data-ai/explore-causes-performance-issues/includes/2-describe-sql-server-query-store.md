@@ -56,7 +56,7 @@ You can further filter based on a time interval, which allows you to retroactive
 
 **Top Resource Consuming Queries** - This report shows the query and query plan for the most impactful queries in a database for a time period. This data allows you to observe if a query has multiple execution plans, and whether or not those plans have high variability in performance.
 
-**Queries with Forced Plans**—This report contains information about plan forcing, and any plan forcing failures (a situation where a forced execution plan was not honored).
+**Queries with Forced Plans** — This report contains information about plan forcing, and any plan forcing failures (a situation where a forced execution plan was not honored).
 
 **Queries with High Variation** - This report showcases queries that have a high degree of variance between executions and can be sorted by any of the above execution metrics.
 
