@@ -17,14 +17,14 @@ quiz:
       choices:
         - content: "With the command `node inspect myscript.js`"
           isCorrect: false
-          explanation: "This command is starts your program with the built-in debugger."
+          explanation: "This command starts your program with the built-in debugger."
         - content: "With the command `node --inspect myscript.js`"
           isCorrect: true
           explanation: "Use the `--inspect` option to allow debugger clients to connect to the Node.js process."
         - content: "With the command `node myscript.js"
           isCorrect: false
-          explanation: "For security reasons, the use of debugger must be enabled explicitly when running Node.js."
-        - content: "By typing `debug` in the Node.js REPL"
+          explanation: "For security reasons, the use of the debugger must be enabled explicitly when you run Node.js."
+        - content: "By entering `debug` in the Node.js REPL"
           isCorrect: false
           explanation: "A debugger can only be used on an existing program and doesn't work in the REPL environment."
     - content: "How can you make a debugger pause the execution of your program on a specific line of code?"
@@ -32,15 +32,15 @@ quiz:
         - content: "With the command `node --inspect-brk myscript.js`"
           isCorrect: false
           explanation: "This command runs Node.js in inspect and pause execution before your program code."
-        - content: "By stepping through your code until you reach the wanted line."
+        - content: "By stepping through your code until you reach the wanted line"
           isCorrect: false
-          explanation: "While this technique may work for small programs, it's not practical if you have thousands of lines of code."
-        - content: "By commenting out unwanted code."
+          explanation: "This technique might work for small programs, but it's not practical if you have thousands of lines of code."
+        - content: "By commenting out unwanted code"
           isCorrect: false
-          explanation: "Commenting out code can alter your program behavior and does not help you to pause the execution."
-        - content: "By setting a breakpoint in your code."
+          explanation: "Commenting out code can alter your program behavior and doesn't help you pause the execution."
+        - content: "By setting a breakpoint in your code"
           isCorrect: true
-          explanation: "When using a debugger, you can use breakpoints to pause execution at specific points in your code."
+          explanation: "When you use a debugger, you can use breakpoints to pause execution at specific points in your code."
     - content: "What's the preferred way to print information in the console during debugging?"
       choices:
         - content: "With a breakpoint"
@@ -48,10 +48,10 @@ quiz:
           explanation: "A breakpoint allows you to pause execution but not print information in the console."
         - content: "By adding a `console.log()` call in my code"
           isCorrect: false
-          explanation: "While it will work, it's not the best way as you alter your program by doing this and you may forget to remove it before shipping to production."
+          explanation: "This technique will work, but it's not the best method because you alter your program by doing this and you might forget to remove it before shipping to production."
         - content: "With a logpoint"
           isCorrect: true
           explanation: "A logpoint allows you to display information in the console while debugging, without altering your code."
         - content: "By watching a variable"
           isCorrect: false
-          explanation: "When watching a variable you see its value at all times during debugging in the watch panel, not in the debug console."
+          explanation: "When you watch a variable, you see its value at all times during debugging in the Watch panel, not in the Debug console."

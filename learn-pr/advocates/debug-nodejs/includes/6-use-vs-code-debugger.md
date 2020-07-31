@@ -69,7 +69,7 @@ Now start the program by selecting the **Start debugging** button.
 
 :::image source="../media/start-debugging.png" alt-text="Screenshot of the Start debugging button in Visual Studio Code.":::
 
-You should see the program finish quickly. That's normal because you haven't added add any breakpoints yet.
+You should see the program finish quickly. That's normal because you haven't added any breakpoints yet.
 
 If you don't have the debug console displayed, bring it on by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). You should see this text in the debug console, followed by an exception.
 
@@ -113,14 +113,14 @@ Then start debugging again, and step into the `printForeignValues()` function.
 
 :::image source="../media/step-into.png" alt-text="Screenshot of the Step into button.":::
 
-### Check variables state
+### Check the variables state
 
-Now take some time to inspect the different variables values by using the **Variables** panel.
+Now take some time to inspect the different variables' values by using the **Variables** panel.
 
 :::image source="../media/variables-panel.png" alt-text="Screenshot of the Variables panel.":::
 
 - What's the value of `value` and `sourceCurrency`?
-- Do you see the three expected keys `USD`, `EUR`, and `JPY` in the `rates` variable?
+- Do you see the three expected keys, `USD`, `EUR`, and `JPY`, in the `rates` variable?
 
 Advance step by step until the variable `convertedValue` is set by using **Step over**.
 
@@ -136,15 +136,15 @@ We can then conclude that up to this point, the functions `convertToCurrency()` 
 
 Continue stepping until the `console.info()` call, and examine this line carefully. Do you see the mistake here?
 
-You can then fix the first bug by using `displayValue` instead of `convertedValue` when printing the value. Restart the program and check that the `USD` value correctly displays `11.36`. First problem, solved.
+You can then fix the first bug by using `displayValue` instead of `convertedValue` when you print the value. Restart the program and check that the `USD` value correctly displays `11.36`. First problem, solved.
 
 ## Find the cause of the crash
 
-Let's now find out why the program is crashing. Remove the current breakpoint and check the `Uncaught exception` box in the breakpoint panel, to force the program to pause after the exception is raised.
+Let's now find out why the program is crashing. Remove the current breakpoint, and check the `Uncaught exception` box in the **Breakpoints** panel to force the program to pause after the exception is raised.
 
-Run the program in the debugger again, and it should pause on the exception with a big error log in the middle of the editor window:
+Run the program in the debugger again. It should pause on the exception with a large error log in the middle of the editor window:
 
-:::image source="../media/exception.png" alt-text="Screenshot of the exception message shown in Visual Studio Code":::
+:::image source="../media/exception.png" alt-text="Screenshot of the exception message shown in Visual Studio Code.":::
 
 Look at the line where the execution stopped and the exception message `TypeError: Cannot read property 'toFixed' of undefined` appears. From that message, you can deduce that the `value` parameter function has the value `undefined` instead of being a number, which caused the exception.
 
@@ -160,21 +160,21 @@ const displayValue = formatValueForDisplay(convertedValue);
 
 Looking closely, you can see that the parameter that causes the exception comes from the `convertedValue` variable. Now we need to find out at what point this value becomes `undefined`.
 
-One option is to add a breakpoint at this line, and inspect the variable every time the breakpoint hits it. We don't know when it might occur, and in complex programs this approach might be cumbersome.
+One option is to add a breakpoint at this line and inspect the variable every time the breakpoint hits it. We don't know when it might occur, and in complex programs, this approach might be cumbersome.
 
-### Add conditional breakpoint
+### Add a conditional breakpoint
 
-What would be nice here is to tell the debugger to only stop at this breakpoint only when `convertedValue` is `undefined`. It turns out, Visual Studio Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
+What would be nice here is to tell the debugger to stop at this breakpoint only when `convertedValue` is `undefined`. It turns out, Visual Studio Code can do that. Instead of left-clicking to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
 
-:::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code":::
+:::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code.":::
 
-You can now input the condition that will trigger the breakpoint. Type `convertedValue === undefined` and press `Enter`. Restart the program, and it should stop right where you wanted.
+You can now input the condition that will trigger the breakpoint. Enter `convertedValue === undefined`, and select **Enter**. Restart the program, and it should stop right where you wanted.
 
-### Observe current state
+### Observe the current state
 
 Now take some time to analyze the current state.
 
-- The variable `convertedValue` is the result of `convertToCurrency(value, sourceCurrency, targetCurrency)`, so check also the parameters' values and confirm they are correct.
+- The variable `convertedValue` is the result of `convertToCurrency(value, sourceCurrency, targetCurrency)`, so also check the parameters' values and confirm they're correct.
 - In particular, look at `value` and see that it has the expected value `10`.
 
 Maybe we should take a look at the code of the `convertToCurrency()` function.
@@ -186,27 +186,27 @@ function convertToCurrency(value, sourceCurrency, targetCurrency) {
 }
 ```
 
-We know that the result of this code is `undefined`, and we also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover over the `rates` variable to take a peek.
+We know that the result of this code is `undefined`. We also know that `value` is `10`. It means that the issue must be with the value of `exchangeRate`. Hover over the `rates` variable to take a peek.
 
-:::image source="../media/peek-at-variable.png" alt-text="Screenshot of peeking at the rates variable value":::
+:::image source="../media/peek-at-variable.png" alt-text="Screenshot of peeking at the rates variable value.":::
 
-We try to get the exchange rate from `EUR` to `JPY`, but if you unfold the `EUR` value you can see that there's only a conversion rate for `USD`, `JPY` is missing!
+We try to get the exchange rate from `EUR` to `JPY`, but if you unfold the `EUR` value, you can see that there's only a conversion rate for `USD`. The conversion rate for `JPY` is missing.
 
 ## Fix missing conversion rates
 
-Now we know that some conversion rates are missing, let's understand why. Remove all existing breakpoints by clicking the **Remove all breakpoints** button in the **Breakpoints** panel.
+Now that we know some conversion rates are missing, let's understand why. Remove all existing breakpoints by selecting the **Remove all breakpoints** button in the **Breakpoints** panel.
 
-:::image source="../media/remove-all-breakpoints.png" alt-text="Screenshot of button to remove all breakpoints":::
+:::image source="../media/remove-all-breakpoints.png" alt-text="Screenshot of the button to remove all breakpoints.":::
 
-### Watch `rates` variable
+### Watch the rates variable
 
-Add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by clicking the **Plus** button in the **Watch** panel and typing `rates`. Every time the value of `rates` is updated, its value will be reflected in the **Watch** panel.
+Add a breakpoint at the beginning of the program, line `37`, on `setExchangeRate(0.88, 'USD', 'EUR');`. Restart the program, and watch the value of the `rates` variable by selecting the **Plus** button in the **Watch** panel and entering `rates`. Every time the value of `rates` is updated, its value will be reflected in the **Watch** panel.
 
 Step over the first `setExchangeRate()` call, and look at the result on `rates`.
 
-You can see at this point that the `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time, to look at the result of the second `setExchangeRate()` call.
+You can see at this point that `USD` and `EUR` have matching opposite conversion rates, as we expect. Now step over one more time to look at the result of the second `setExchangeRate()` call.
 
-We see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. Time to look at the `setExchangeRate()` code:
+We see that `USD` and `JPY` have matching opposite conversion rates, but there's nothing between `EUR` and `JPY`. It's time to look at the `setExchangeRate()` code:
 
 ```js
 function setExchangeRate(rate, sourceCurrency, targetCurrency) {
@@ -223,7 +223,7 @@ function setExchangeRate(rate, sourceCurrency, targetCurrency) {
 }
 ```
 
-The most important lines are the last two. It seems you've found the bug! The rates are only set between the `sourceCurrency` and `targetCurrency`, but we also need to calculate the rate for the other currencies that were previously added.
+The most important lines are the last two. It seems you've found the bug! The rates are only set between `sourceCurrency` and `targetCurrency`, but we also need to calculate the rate for the other currencies that were previously added.
 
 ### Fix the code
 
@@ -250,11 +250,11 @@ With this code:
 Using this code, for every currency other than `sourceCurrency` and `targetCurrency`, we'll use the conversion rate of `sourceCurrency` to deduce the rate between the other currency and `targetCurrency` and set it accordingly.
 
 > [!NOTE]
-> This will only work if rates between `sourceCurrency` and other currencies already exist, which is an acceptable limitation in this case.
+> This fix will only work if rates between `sourceCurrency` and other currencies already exist, which is an acceptable limitation in this case.
 
 ### Test the correction
 
-Let's test our change. Remove all breakpoints, then restart the program. You should now see the expected result in the console, without any crash.
+Let's test our change. Remove all breakpoints, and then restart the program. You should now see the expected result in the console without any crash.
 
 ```text
 The value of 10 EUR is:
@@ -262,4 +262,4 @@ The value of 10 EUR is:
 - 1220.45 JPY
 ```
 
-That's it, you fixed the code. You are now capable of efficiently debugging code you don't even know beforehand using Visual Studio Code, well done!
+That's it, you fixed the code. You can now efficiently debug code you don't even know beforehand by using Visual Studio Code. Well done!
