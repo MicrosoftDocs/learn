@@ -11,7 +11,7 @@ metadata:
 title: Monitor and optimize operational resources in SQL Server
 prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
-  - Experience creating and configuring resources using the Azure Portal
+  - Experience creating and configuring resources using the Azure portal
   - Experience using Windows Performance Monitor to monitor system components such as CPU, I/O, network traffic
   - Knowledge of purpose of SQL Server system databases: master, tempdb, msdb
   - Basic understanding of SQL Server file storage
