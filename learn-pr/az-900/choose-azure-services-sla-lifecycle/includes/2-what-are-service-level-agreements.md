@@ -24,7 +24,7 @@ Later in this module, you'll learn about some strategies you can use when an Azu
 You can access SLAs from the [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) page on azure.microsoft.com.
 
 > [!NOTE]
-> You don't need an Azure subscription to review these SLAs.
+> You don't need an Azure subscription to review service SLAs.
 
 Each Azure service defines its own SLA. Azure services are organized by category.
 
