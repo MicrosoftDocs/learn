@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-nodejs.5-try
+title: Try Node.js
+metadata:
+  title: Try Node.js
+  description: Learn how to create and run a simple hello world script in Node.js.
+  ms.date: 06/04/2020
+  author: manekinekko
+  ms.author: wachegha
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+interactive: "bash"
+azureSandbox: true
+content: |
+  [!include[](includes/5-try.md)]

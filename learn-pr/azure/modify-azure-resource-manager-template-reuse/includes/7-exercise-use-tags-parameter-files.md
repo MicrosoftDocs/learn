@@ -1,4 +1,4 @@
-Here, you add tags to help organize and track your Microsoft Azure resources, and use an Azure Resource Manager template (ARM template) parameter file to allow for different parameter configurations per deployment.
+Here, you add tags to help organize and track your Microsoft Azure resources, and use an Azure Resource Manager (ARM) template parameter file to allow for different parameter configurations per deployment.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -67,6 +67,8 @@ Here, you create a parameter to use as a resource tag in your template.
 
 ## Deploy the ARM template with updated tags
 
+::: zone pivot="cli"
+
 1. Deploy the updated ARM template to Azure. Be sure to use the same *storagePrefix* you used before.
 
     ```azurecli
@@ -80,7 +82,28 @@ Here, you create a parameter to use as a resource tag in your template.
         --parameters storagePrefix={your-Prefix} storageSKU=Standard_LRS
     ```
 
-1. Verify that the new tags are in the deployment. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the Storage Account you deployed.
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. Deploy the updated ARM template to Azure. Be sure to use the same *storagePrefix* you used before.
+
+    ```azurepowershell
+    $templateFile = "azuredeploy.json"
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="updateTags-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile `
+      -storagePrefix {your storagePrefix} `
+      -storageSKU Standard_LRS
+    ```
+
+::: zone-end
+
+### Verify that the new tags are in the deployment
+
+1. In Azure, select the <rgn>[sandbox resource group name]</rgn> resource group and then select the Storage Account you deployed.
 1. You see the *Environment:Dev* and *Project:Tutorial* tags.
 
     :::image type="content" source="../media/7-tags.png" alt-text="Azure portal interface for the Storage Account showing tags of Environment:Dev and Project:Tutorial." border="true":::
@@ -120,6 +143,8 @@ Currently, there are three parameters to fill in each time you deploy this templ
 
 Here, you deploy the ARM template specifying what parameter file to use.
 
+::: zone pivot="cli"
+
 1. In the Visual Studio Code terminal, run the following Azure CLI commands.
 
     ```azurecli
@@ -139,3 +164,28 @@ Here, you deploy the ARM template specifying what parameter file to use.
     :::image type="content" source="../media/7-new-tags.png" alt-text="Azure portal interface for the Storage Account showing tags of Environment:Dev and Project:Learn." border="true":::
 
 1. As a challenge, create a parameter file for the *Production* environment and change the parameter file path when you run the command to deploy to the *Production* environment.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+1. In the Visual Studio Code terminal, run the following Azure PowerShell commands.
+
+    ```azurepowershell
+    $templateFile = "azuredeploy.json"
+    $parameterFile="azuredeploy.parameters.dev.json"
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="addParameterFile-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile `
+      -TemplateParameterFile $parameterFile
+    ```
+
+1. Check Azure to see that the deployment was successful and that the tag value changed.
+
+    :::image type="content" source="../media/7-new-tags.png" alt-text="Azure portal interface for the Storage Account showing tags of Environment:Dev and Project:Learn." border="true":::
+
+1. As a challenge, create a parameter file for the *Production* environment and change the parameter file path when you run the command to deploy to the *Production* environment.
+
+::: zone-end

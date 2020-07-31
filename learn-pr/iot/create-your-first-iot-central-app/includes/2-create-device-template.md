@@ -14,7 +14,7 @@ In this unit, you'll create a device template for a refrigerated truck.
     > [!TIP]
     > Take note of the other options. You may want to use those prebuilt template options in a future project!
 
-1. Click **Next: Customize**, then **Next: Review**. Do not select the **Gateway device** box. Then click **Create**.
+1. Click **Next: Customize**, then **Next: Review**. Don't select the **Gateway device** box. Then click **Create**.
 
 1. Enter the name for your device template, "RefrigeratedTruck", and hit Enter.
 
@@ -25,7 +25,7 @@ In this unit, you'll create a device template for a refrigerated truck.
     > [!NOTE]
     > Take note of a few important elements of the above image. Including that the template is in Draft form, and the locations of the **+ Add interface**, **Views**, and **Publish** controls.
 
-1. You are now ready to add the specifics of the device template. Click **Add interface**, then **Custom**, to start building from a blank interface.
+1. You're now ready to add the specifics of the device template. Click **Add interface**, then **Custom**, to start building from a blank interface.
 
 An interface defines a set of _capabilities_. We have quite a few to create, to define a refrigerated truck.
 
@@ -48,9 +48,11 @@ Telemetry is the data values transmitted by sensors. The most important sensor i
 
     [![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
-    > Capability names can only contain alphanumeric characters, no spaces or special characters are allowed.
+
+    > [!IMPORTANT]
+    > In all locales, capability names can currently _only_ contain characters **A** through **Z**, upper or lower case, the digits **0** through **9**, and the underscore **_**. No spaces, special characters, or localized characters, are allowed.
 
 Let's add the rest of the template.
 
@@ -214,7 +216,7 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
     [![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-commands.png)](../media/refrigerated-trucks-commands.png#lightbox)
 
-1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are very limited editing options. It's important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
+1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are limited editing options. It's important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
 
     [![Screenshot to help validate the capabilities of the simulated device](../media/refrigerated-trucks-capabilities.png)](../media/refrigerated-trucks-capabilities.png#lightbox)
 
@@ -226,4 +228,4 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
 Preparing a device template does take some care and some time.
 
-In the next unit, you use the capabilities of the device template to prepare a controllers dashboard. Preparing views can be done before, or after, a device template is published.
+In the next unit, you use the capabilities of the device template to prepare a controller's dashboard. Preparing views can be done before, or after, a device template is published.

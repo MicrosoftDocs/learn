@@ -18,7 +18,7 @@ The Standard tier adds advanced threat detection capabilities, using analytics a
 
 Migrating your Security Center subscription from the free tier to the standard tier enables the following features:
 
-- **Security event collection**. Security Center collects logs in a central place so you can search and alayze them to identify important security events that may require your attention.
+- **Security event collection**. Security Center collects logs in a central place so you can search and analyze them to identify important security events that may require your attention.
 - **Network Map**. This feature allows you to visualize the topology of your Azure network infrastructure and the traffic to your Azure VMs. It also allows you to create filters by the severity level and recommendations.
 - **Just-in-time VM access**. This allows admins to grant access to a VM for a defined period of time. Limiting access helps reduce exposure to outside attacks. This feature is especially useful if you’re working with an outside agency that needs to access your VM.
 - **Adaptive application controls (application whitelisting)**. Adaptive application controls uses artificial intelligence to recommend applications to whitelist. This helps protect VMs by preventing malware and unauthorized software from being installed.

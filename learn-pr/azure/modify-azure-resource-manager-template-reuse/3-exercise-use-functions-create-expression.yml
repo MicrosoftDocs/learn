@@ -9,6 +9,7 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 7
 content: |

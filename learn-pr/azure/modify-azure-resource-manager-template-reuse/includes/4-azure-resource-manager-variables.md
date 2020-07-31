@@ -1,4 +1,4 @@
-In the previous scenario, you decided to use an expression made up of several Azure Resource Manager template (ARM template) functions to create a unique name for the Azure Storage Account. This flexibility will make sure each of your customers will be able to use this ARM template for their deployment. However, you notice that adding this expression in several places will be a problem for maintaining this template. You decide to use a variable for the Storage Account name expression so you can define the expression in one place and reuse it throughout the template. 
+In the previous scenario, you decided to use an expression made up of several Azure Resource Manager (ARM) template functions to create a unique name for the Azure Storage Account. This flexibility will make sure each of your customers will be able to use this ARM template for their deployment. However, you notice that adding this expression in several places will be a problem for maintaining this template. You decide to use a variable for the Storage Account name expression so you can define the expression in one place and reuse it throughout the template. 
 
 ## What is an ARM template variable
 

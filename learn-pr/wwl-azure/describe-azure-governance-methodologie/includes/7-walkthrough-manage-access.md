@@ -49,7 +49,7 @@ In this task, we will assign the Virtual machine contributor role.
 8. **Refresh** the Role assignments page and ensure you are now listed as a Virtual machine contributor. 
 
     > [!NOTE]
-    > This assignment does not actually grant you any additional provileges, since your account has already the Owner role, which includes all privilges associated with the Contributor role.
+    > This assignment does not actually grant you any additional privileges, since your account has already the Owner role, which includes all privileges associated with the Contributor role.
 
 ## Task 2: Monitor role assignments and remove a role
 

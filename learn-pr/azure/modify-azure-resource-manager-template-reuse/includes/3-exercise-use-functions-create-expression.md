@@ -1,4 +1,7 @@
-Here, you create an expression using Azure Resource Manager template (ARM template) functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in Azure Storage Account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
+> [!NOTE]
+> The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox, and you're added to a special subscription named Concierge Subscription.
+
+Here, you create an expression using Azure Resource Manager (ARM) template functions that creates a unique name per resource group by taking a prefix input and adding a hash of the resource group id. This results in Azure Storage Account names similar to *dev2hu6sbtr5* or *staging5his8hgr67*.
 
 This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
@@ -18,17 +21,31 @@ In the previous module, you created an ARM template that deployed a Storage Acco
 
 Instead of passing in the name of the Storage Account, you change the parameter to take a prefix for the Storage Account name. This parameter will be passed to the ```concat``` function in your expression.
 
-1. In the parameters section, change ```storageName``` to **storagePrefix**. and set the ```maxLength:``` value to **11**.
+1. In the parameters section, change ```storageName``` to **storagePrefix**.
 
-1. Change value of the ```maxLength:``` attribute for the *storagePrefix* parameter to 11. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
+1. Change value of the ```maxLength:``` attribute for the *storagePrefix* parameter to **11**. The maximum length for a storage account name is 24, and you want to be sure the added hash from the function you created doesn't cause the name to be more than 24 characters.
 
 1. Create the expression to set the unique Storage Account name. In the resources section, change the value of the ```name:``` and ```displayName:``` attributes from ```"[parameters('storageName')]"``` to **"[toLower(concat(parameters('storagePrefix'),uniqueString(resourceGroup().id)))]"**. This is the same expression you learned about in the previous unit. The file should now look like this.
 
-    [!code-json[](code/function.json?highlight=28,32)]
+    [!code-json[](code/function.json?highlight=8,28,32)]
 
 ## Deploy the ARM template to Azure
 
-To deploy this ARM template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
+::: zone pivot="cli"
+
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
+
+1. Open a terminal window using the *Terminal* menu.
+1. If the dropdown menu on the right of the terminal window says *bash* you have the right shell to work from and you can skip to the next section.
+
+      :::image type="content" source="../media/3-bash.png" alt-text="The Visual Studio Code terminal window with bash in the dropdown." border="true":::
+
+1. If not, select the dropdown and choose **Select Default Shell**.
+1. Select **bash**.
+
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
+
+1. Select the **+** in the terminal to create a new terminal with *bash* as the shell.
 
 ### Sign in to Azure
 
@@ -75,7 +92,7 @@ To deploy this ARM template to Azure, you need to sign in to your Azure account 
 
 Deploy the template to Azure. You learned about the deployment commands in the previous module. Here, we are using the Azure CLI ```az deployment group create``` command.
 
-1. Deploy the template using Azure CLI commands in the Visual Studio Code terminal. Remember to substitute {your-prefix} with a different string. For example, you could use **storage**.
+1. Deploy the template using Azure CLI commands in the Visual Studio Code terminal. Remember to substitute *{your-prefix}* with a different string. For example, you could use **storage**.
 
     ```azurecli
     templateFile="azuredeploy.json"
@@ -90,7 +107,80 @@ Deploy the template to Azure. You learned about the deployment commands in the p
 
       In the top section of this code, you set Azure CLI variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```az deployment group create``` command to deploy the template to Azure.
 
-1. You see ```Running...``` in the terminal. When that finishes, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
+    You see ```Running...``` in the terminal.
+
+::: zone-end
+
+::: zone pivot="powershell"
+
+To deploy this template to Azure, you need to sign in to your Azure account from the Visual Studio Code terminal. Be sure you have the [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&azure-portal=true) tools installed and that you are signing in to the same account that activated the sandbox.
+
+1. Open a terminal window using the *Terminal* menu.
+1. If the dropdown menu on the right of the terminal window says *pwsh* you have the right shell to work from and you can skip to the next section.
+
+      :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh in the dropdown." border="true":::
+
+1. If not, select the dropdown and choose **Select Default Shell**.
+1. Select **pwsh**.
+
+      :::image type="content" source="../media/3-select-shell.png" alt-text="The Visual Studio Code terminal window showing the select shell dropdown." border="true":::
+
+1. Select the **+** in the terminal to create a new terminal with *pwsh* as the shell.
+
+### Sign in to Azure using Azure PowerShell
+
+1. From the terminal in Visual Studio Code, run this command to sign in to Azure. Running this command will prompt you to open a browser to a URL that allows you to sign in to your account. Use the code that is in the prompt. Make sure you sign in with the same account that you used to activate the sandbox.
+
+    ```azurepowershell
+    Connect-AzAccount
+    ```
+
+1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox, you see one called *Concierge Subscription*. You use this one for the rest of the exercise.
+
+    Set the default subscription for all of the Azure CLI commands you run in this session.
+
+1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for *Concierge Subscription* and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*.
+
+    ```azurepowershell
+    Get-AzSubscription
+    ```
+
+1. Change your active subscription to the Concierge Subscription. Be sure to substitute *{Your subscription ID}* with the one you just copied.
+
+    ```azurepowershell
+    $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
+    Set-AzContext $context
+    ```
+
+1. Set the default resource group to the resource group created for you in the sandbox environment. This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+
+    ```azurepowershell
+    Set-AzDefault -ResourceGroupName <rgn>[sandbox resource group name]</rgn>
+    ```
+
+### Deploy the template to Azure
+
+You learned about the deployment commands in the previous module. Here, we are using the Azure PowerShell ```New-AzResourceGroupDeployment``` command.
+
+1. Deploy the template using Azure PowerShell commands in the Visual Studio Code terminal. Remember to substitute *{your-prefix}* with a different string. For example, you could use **storage**.
+
+    ```azurepowershell
+    $templateFile = "azuredeploy.json"
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $deploymentName="addfunction-"+"$today"
+    New-AzResourceGroupDeployment `
+      -Name $deploymentName `
+      -TemplateFile $templateFile `
+      -storagePrefix {your-prefix}
+    ```
+
+      In the top section of this code, you set Azure PowerShell variables for the path to the template file to deploy, and the name of this deployment. Then, you use the ```New-AzResourceGroupDeployment``` command to deploy the template to Azure.
+
+::: zone-end
+
+### Check your deployment
+
+When that finishes, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
 1. On the left side panel, choose *Resource groups*.
 1. Select <rgn>[sandbox resource group name]</rgn>.

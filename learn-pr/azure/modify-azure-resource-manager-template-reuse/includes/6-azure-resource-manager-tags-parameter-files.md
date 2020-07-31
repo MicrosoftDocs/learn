@@ -1,4 +1,4 @@
-There are two features of Azure Resource Manager templates (ARM templates) that you'll want to use when deploying to more than one Azure environment. These features are *resource tags* and *ARM template parameter files*.
+There are two features of Azure Resource Manager (ARM) templates that you'll want to use when deploying to more than one Azure environment. These features are *resource tags* and *ARM template parameter files*.
 
 As you add more resources to your environments you'll quickly find that you need a way to identify the purpose of these resources. Resources have a ```tags:``` attribute for this purpose. And as you deploy to more environments, you'll need an efficient way to keep track of the input parameters. ARM templates can use parameter files to manage parameters for each deployment environment.
 

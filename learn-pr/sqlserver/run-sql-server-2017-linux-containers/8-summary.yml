@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: In this unit, you'll review what you have learned about SQL Server and containers on Linux distributions.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 3

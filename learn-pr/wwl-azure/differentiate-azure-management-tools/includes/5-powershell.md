@@ -11,7 +11,7 @@ In this walk-through, we will configure the Cloud Shell, use Azure PowerShell mo
 
 In this task, we will configure Cloud Shell. 
 
-1. If using the MS Learn sandbox, you can to Task2.  Else, Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
+1. If you are using the MS Learn sandbox, you can do Task2.  Otherwise, sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
 2. From the Azure portal, open the **Azure Cloud Shell** by clicking on the icon in the top right of the Azure portal.
 
@@ -45,7 +45,7 @@ In this task, we will use PowerShell to create a resource group and a virtual ma
     -VirtualNetworkName "myVnetPS" `
     -SubnetName "mySubnetPS" `
     -SecurityGroupName "myNSGPS" `
-    -PublicIpAddressName "myPublicIpPS" `
+    -PublicIpAddressName "myPublicIpPS"
     ```
 
 4. Close the PowerShell session Cloud Shell pane.
@@ -89,7 +89,7 @@ In this task, we will practice executing PowerShell commands from the Cloud Shel
 
 In this task, we will review Azure Advisor recommendations for our virtual machine. 
 
-1. If using the MS Learn sandbox, you can to Task2.  Else, Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
+1. If you are using the MS Learn sandbox, you can do Task2.  Otherwise, sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
 2. From the **All services** blade, search for and select **Advisor**. 
 
