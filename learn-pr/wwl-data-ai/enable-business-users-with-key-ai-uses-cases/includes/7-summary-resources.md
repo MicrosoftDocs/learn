@@ -15,6 +15,7 @@ Now that you have reviewed this module, you should be able to:
 * [Download PDF of AI for subject matter experts](https://aka.ms/AIBSAIESME).
 * [Download PDF of AI embedded in everyday applications](https://aka.ms/AIBSAIEEVR).
 * To learn more about how we’ve infused AI into Microsoft 365, [AI in Microsoft 365](https://aka.ms/everydayai).
+* To take a closer look at how AI helps Microsoft 365 users stay connected and productive, efficiently and securely, download the [Everyday AI in Microsoft 365 Guided Simulation](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CKwk), unzip the files and click on the index html file.
 * To learn more about our intelligent business applications, [visit our Dynamics 365 AI homepage](https://dynamics.microsoft.com/ai/overview/).
 * To learn how we’ve transformed our own internal Microsoft processes with AI, see the e-book [Empowering employees with AI: A look into how Microsoft uses AI to do business](https://aka.ms/empoweremployeeswithAIMSFT).
 * To learn more about our no-code tools in [Power Platform](https://powerplatform.microsoft.com/), visit our [AI Builder](https://powerapps.microsoft.com/ai-builder/) homepage.

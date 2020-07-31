@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure.explain-database-migration-options
+title: Explain database migration options
+metadata:
+  title: Explain database migration options
+  description: "Explain database migration options"
+  ms.date: 08/01/2020
+  author: wwlpublish
+  ms.author: cwsuseng
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-explain-database-migration-options.md)]
