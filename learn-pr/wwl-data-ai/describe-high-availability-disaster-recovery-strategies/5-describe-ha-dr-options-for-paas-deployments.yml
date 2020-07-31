@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.describe-ha-dr-options-for-paas-deployments
+title: Describe HA-DR Options for PaaS Deployments
+metadata:
+  title: Describe HA-DR Options for PaaS Deployments
+  description: "Describe HA-DR Options for PaaS Deployments"
+  ms.date: 08/03/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-describe-ha-dr-options-for-paas-deployments.md)]

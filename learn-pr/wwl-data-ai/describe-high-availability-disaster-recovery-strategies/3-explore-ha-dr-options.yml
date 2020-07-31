@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-high-availability-disaster-recovery-strategies.explore-ha-dr-options
+title: Explore HA-DR options
+metadata:
+  title: Explore HA-DR options
+  description: "Explore HA-DR options"
+  ms.date: 08/03/2020
+  author: wwlpublish
+  ms.author: kadelane
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-explore-ha-dr-options.md)]
