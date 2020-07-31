@@ -132,7 +132,7 @@ The following markup uses the Input Tag Helper. It extends the standard HTML `<i
 
 The *:::no-loc text="Input Tag Helper":::*:
 
-* Evaluates the *:::no-loc text="Product.Name":::* property, like the *:::no-loc text="Label Tag Helper":::*
+* Evaluates the *:::no-loc text="Product.Name":::* property, like the *:::no-loc text="Label Tag Helper":::*.
 * Is defined in the *:::no-loc text="PageModel":::* in C#.
 * Adds an *:::no-loc text="id":::* and *:::no-loc text="name":::* based on that property.
 * Sets the input type appropriately. For example, if the specified property is a *:::no-loc text="Boolean":::*, then an input type of *:::no-loc text="checkbox":::* would be dynamically generated in the HTML output. In this case, the *:::no-loc text="Product.Name":::* property is a *:::no-loc text="String":::*. The *:::no-loc text="Product.Name":::* property is set by the model's data annotation attributes, which will be reviewed later in this module.
