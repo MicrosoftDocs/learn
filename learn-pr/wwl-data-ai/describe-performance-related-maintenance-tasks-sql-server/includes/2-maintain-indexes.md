@@ -20,7 +20,7 @@ Starting with SQL Server 2017, Microsoft introduced the ability to have resumabl
 
 ## SQL Server on an Azure Virtual Machine
 
-With SQL Server being installed within an Azure virtual machine you have access to scheduling services such as the SQL Agent or the Windows Task Scheduler. These automation tools can assist in keeping the amount of fragmentation within indexes to a minimum. With larger databases, a balance between a rebuild and a reorganization of indexes must be found to ensure optimal performance. The flexibility provided by SQL Agent or Task Scheduler allows you to run custom jobs. You will learn more about these options in Module 6.
+With SQL Server being installed within an Azure virtual machine you have access to scheduling services such as the SQL Agent or the Windows Task Scheduler. These automation tools can assist in keeping the amount of fragmentation within indexes to a minimum. With larger databases, a balance between a rebuild and a reorganization of indexes must be found to ensure optimal performance. The flexibility provided by SQL Agent or Task Scheduler allows you to run custom jobs.
 
 ## Azure SQL Database
 
