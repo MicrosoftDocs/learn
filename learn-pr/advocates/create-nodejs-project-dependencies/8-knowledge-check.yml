@@ -43,7 +43,7 @@ quiz:
           explanation: "This answer is technically correct, but there's a better reason to choose npx over global installation. Global installations remain on your system until you uninstall them. When you use npx, you don't need to uninstall the dependency."
     - content: "How do you configure a package.json file so that you get only patch (bug fix) updates?"
       choices:
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: \"<library>\": \"*\"`"
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: \"<library>\": \"*\""
           isCorrect: false
           explanation: "This answer is incorrect. This code will update the dependency to the latest possible version."
         - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: \"<library>\": \"1.x.0\""
