@@ -1,12 +1,12 @@
 One important part of automation is providing notifications in the event of job failure or if certain system errors are encountered. SQL Server Agent provides this functionality through a group of objects. Alerting is most commonly done via email using the Database Mail functionality of SQL Server. The other agent objects that are used in this workflow are:
 
-- Operators—alias for people or group who receive notifications.
-- Notifications—notify an operator of the completion, success or failure of a job.
+- Operators—alias for people or group who receives notifications.
+- Notifications—notify an operator of the completion, success, or failure of a job.
 - Alerts—are assigned to an operator, for either a notification or a defined error condition.
 
 ## Operators
 
-Operators act an alias for a user or group of users that have been configured to receive notifications of job completion, or to be informed of alerts have been sent to the error log. An operator is defined as an operator name and contact information. Typically, an operator will map to a group of people using an email group. Having multiple people in the email group provides redundancy so that a notification is not missed if someone is unavailable. Groups are also beneficial if an employee leaves the organization; the single person can be removed from the email group and you do not have to update all of your instances. To send email to an operator you need to enable the email profile of the SQL Server Agent as shown below:
+Operators act an alias for a user or group of users that have been configured to receive notifications of job completion, or to be informed of alerts have been sent to the error log. An operator is defined as an operator name and contact information. Typically, an operator will map to a group of people using an email group. Having multiple people in the email group provides redundancy so that a notification is not missed if someone is unavailable. Groups are also beneficial if an employee leaves the organization; the single person can be removed from the email group and you do not have to update all of your instances. To send email to an operator, you need to enable the email profile of the SQL Server Agent as shown below:
 
 :::image type="content" source="../media/module-66-automation-final-08.png" alt-text="SQL Server Agent Mail Profile Configuration":::
 
@@ -24,4 +24,4 @@ Another common use case for alerts is that DBAs may want to be notified in the e
 
 :::image type="content" source="../media/module-66-automation-final-10.png" alt-text="SQL Server Agent Metric Alert Configuration":::
 
-You have options for how to respond to the performance condition—you can notify an operator via email, which is the most common approach, or you can execute another SQL Server Agent job, which could resolve the problem. Executing another SQL Server Agent job is most commonly used in the scenario where the condition is well-known, and easily handled without manual intervention. A good example of this would be to create an alert on for SQL Server storage error conditions (errors 823, 824, 825), and then to execute a job to perform a database consistency check. The notifications for these alerts use the same SQL Server Agent subsystem.
+You have options for how to respond to the performance condition — you can notify an operator via email, which is the most common approach, or you can execute another SQL Server Agent job, which could resolve the problem. Executing another SQL Server Agent job is most commonly used in the scenario where the condition is well-known, and easily handled without manual intervention. A good example of this would be to create an alert on for SQL Server storage error conditions (errors 823, 824, 825), and then to execute a job to perform a database consistency check. The notifications for these alerts use the same SQL Server Agent subsystem.
