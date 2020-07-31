@@ -1,6 +1,6 @@
-It's time to put in practice your newly acquired debugging knowledge! It turns out we have the perfect opportunity for that. In our Tailwind Traders application, we are developing a new feature to allow displaying a product's price in multiple currencies. A coworker wrote some code for it, but is having a hard time trying to figure out what's going wrong. Let's try helping.
+It's time to put into practice your newly acquired debugging knowledge. It turns out we have the perfect opportunity for that. In our Tailwind Traders application, we're developing a new feature to allow a product's price to display in multiple currencies. A coworker wrote some code for it but is having a hard time trying to figure out what's going wrong. Let's help.
 
-Open VS Code on your machine, and create a new file named `currency.js` with this code:
+Open Visual Studio Code on your machine, and create a new file named `currency.js` with this code:
 
 ```js
 const rates = {};
@@ -44,34 +44,34 @@ setExchangeRate(107.4, 'USD', 'JPY');
 printForeignValues(10, 'EUR');
 ```
 
-Save the file with `Ctrl+S` (Windows, Linux) or `Cmd+S` (Mac).
+Save the file by selecting **Ctrl+S** (Windows, Linux) or **Cmd+S** (Mac).
 
-This program's goal is to set the exchange rate between three currencies (USD, EUR, JPY) and display how much value is `10 EUR` in all the other currencies, with two digits after decimal point. For every currency added, the exchange rate to all other currencies should be calculated.
+The goal of this program is to set the exchange rate between three currencies, USD, EUR, and JPY. Then we want to display how much value `10 EUR` is in all the other currencies, with two digits after the decimal point. For every currency added, the exchange rate for all other currencies should be calculated.
 
 ## Create a launch configuration
 
-We are going to use the debugger a lot, so let's create a launch configuration for your app. Go to the **Run** tab in VS Code, click on **create a launch.json file** then select **Node.js**.
+We're going to use the debugger a lot, so let's create a launch configuration for your app. Go to the **Run** tab in Visual Studio Code, select **create a launch.json file**, and then select **Node.js**.
 
-This will create the file `.vscode/launch.json` in your project. You can then edit this file to further customize how your program should be started for debugging. By default, it creates a launch configuration to execute the currently opened file, `currency.js` in our case.
+The file `.vscode/launch.json` is created in your project. You can edit this file to further customize how your program should be started for debugging. By default, a launch configuration is created to execute the currently opened file. In this example, the file is `currency.js`.
 
-:::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration":::
+:::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration.":::
 
-Check that the path and name of the program entry point matches your setup.
+Check that the path and name of the program entry point match your setup.
 
 > [!NOTE]
-> You can click on **Add Configuration** if you want to create different launch configurations for your project.
+> Select **Add Configuration** if you want to create different launch configurations for your project.
 
-Once you have finished preparing your configuration, select it using the dropdown at the top of the side bar then click on the run button to start debugging.
+After you've finished preparing your configuration, select it by using the drop-down at the top of the sidebar. Then select the **Run** button to start debugging.
 
 ## Analyze the issues
 
-Now start the program using the **Start debugging** button.
+Now start the program by selecting the **Start debugging** button.
 
-:::image source="../media/start-debugging.png" alt-text="Screenshot of start debugging button in VS Code":::
+:::image source="../media/start-debugging.png" alt-text="Screenshot of the Start debugging button in Visual Studio Code.":::
 
-You should see the program finishing quickly, that's normal as you did not add any breakpoints yet.
+You should see the program finish quickly. That's normal because you haven't added add any breakpoints yet.
 
-If you don't have the debug console displayed, bring it on with `Ctrl+Shift+Y` (Windows, Linux) or `Cmd+Shift+Y` (Mac). You should see this text in the debug console, followed by an exception.
+If you don't have the debug console displayed, bring it on by selecting **Ctrl+Shift+Y** (Windows, Linux) or **Cmd+Shift+Y** (Mac). You should see this text in the debug console, followed by an exception.
 
 ```text
 The value of 10 EUR is:
@@ -92,39 +92,39 @@ TypeError: Cannot read property 'toFixed' of undefined
     at internal/main/run_main_module.js:17:11
 ```
 
-What our program aims to do is set the exchange rate between three currencies (USD, EUR, JPY) and display how much value is `10 EUR` in all the other currencies, with two digits after decimal point.
+What our program aims to do is set the exchange rate between three currencies (USD, EUR, JPY) and display the value for `10 EUR` in all the other currencies, with two digits after the decimal point.
 
 We can see two bugs here:
 
-- There are more than two digits after decimal point.
-- The program crash with an exception, failing to display the `JPY` value.
+- There are more than two digits after the decimal point.
+- The program crashed with an exception and failed to display the `JPY` value.
 
 ## Fix the digits display
 
-We will start by fixing the first issue. As you did not write this code and there are different functions called, let's first understand the execution flow using step by step.
+We'll start by fixing the first issue. Because you didn't write this code and there are different functions called, let's first understand the execution flow by using step-by-step execution.
 
-### Use breakpoints and step by step execution
+### Use breakpoints and step-by-step execution
 
 Add a breakpoint by clicking in the left margin at line **39**, on `printForeignValues(10, 'EUR');`.
 
-:::image source="../media/add-breakpoint.png" alt-text="Screenshot of breakpoint location in the code":::
+:::image source="../media/add-breakpoint.png" alt-text="Screenshot of the breakpoint location in the code.":::
 
 Then start debugging again, and step into the `printForeignValues()` function.
 
-:::image source="../media/step-into.png" alt-text="Screenshot of step into button":::
+:::image source="../media/step-into.png" alt-text="Screenshot of the Step into button.":::
 
 ### Check variables state
 
-Now take some time to inspect the different variables values, using the **Variables** panel.
+Now take some time to inspect the different variables values by using the **Variables** panel.
 
-:::image source="../media/variables-panel.png" alt-text="Screenshot of variables panel":::
+:::image source="../media/variables-panel.png" alt-text="Screenshot of the Variables panel.":::
 
 - What's the value of `value` and `sourceCurrency`?
-- Do you see the three expected keys `USD`, `EUR` and `JPY` in the `rates` variable?
+- Do you see the three expected keys `USD`, `EUR`, and `JPY` in the `rates` variable?
 
-Advance step by step until the variable `convertedValue` is set using **Step over**.
+Advance step by step until the variable `convertedValue` is set by using **Step over**.
 
-:::image source="../media/step-over.png" alt-text="Screenshot of step over button":::
+:::image source="../media/step-over.png" alt-text="Screenshot of the Step over button.":::
 
 You should see that the value seems correct at this point.
 
@@ -144,29 +144,29 @@ Let's now find out why the program is crashing. Remove the current breakpoint an
 
 Run the program in the debugger again, and it should pause on the exception with a big error log in the middle of the editor window:
 
-:::image source="../media/exception.png" alt-text="Screenshot of the exception message shown in VS Code":::
+:::image source="../media/exception.png" alt-text="Screenshot of the exception message shown in Visual Studio Code":::
 
-Look at the line where the execution stopped and the exception message `TypeError: Cannot read property 'toFixed' of undefined`. From that, you can deduce that the `value` parameter function has the value `undefined` instead of being a number, causing the exception.
+Look at the line where the execution stopped and the exception message `TypeError: Cannot read property 'toFixed' of undefined` appears. From that message, you can deduce that the `value` parameter function has the value `undefined` instead of being a number, which caused the exception.
 
 ### Rewind the call stack
 
-The *stack trace* you see below the error message can be a bit difficult to decipher. The good news is that VS Code processes the function call stack for you, showing by default only the meaningful information in the **Call stack** panel. Let's use it to find out which code led to this exception.
+The *stack trace* you see under the error message can be a bit difficult to decipher. The good news is that Visual Studio Code processes the function call stack for you. By default, it shows only the meaningful information in the **Call stack** panel. Let's use it to find out which code led to this exception.
 
-We know that the exception was thrown in `formatValueForDisplay()`. Double-click on the function below it in the **Call stack** panel to see where it was called. You should end up at this line in `printForeignValues` function:
+We know that the exception was thrown in `formatValueForDisplay()`. Double-click on the function under it in the **Call stack** panel to see where it was called. You should end up at this line in `printForeignValues` function:
 
 ```js
 const displayValue = formatValueForDisplay(convertedValue);
 ```
 
-Looking closely, you can see that parameter causing the exception comes from the `convertedValue` variable. Now we need to find out at what point this value becomes `undefined`.
+Looking closely, you can see that the parameter that causes the exception comes from the `convertedValue` variable. Now we need to find out at what point this value becomes `undefined`.
 
-One option would be to add a breakpoint at this line, and inspect the variable every time the breakpoint hits it. Though, we don't know when it might occur, and in complex programs this approach might be cumbersome.
+One option is to add a breakpoint at this line, and inspect the variable every time the breakpoint hits it. We don't know when it might occur, and in complex programs this approach might be cumbersome.
 
 ### Add conditional breakpoint
 
-What would be nice here is to tell the debugger to only stop at this breakpoint only when `convertedValue` is `undefined`. It turns out, VS Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
+What would be nice here is to tell the debugger to only stop at this breakpoint only when `convertedValue` is `undefined`. It turns out, Visual Studio Code can do that! Instead of using left-click to add a regular breakpoint at line `31`, right-click and select **Add conditional breakpoint**.
 
-:::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in VS Code":::
+:::image source="../media/conditional-breakpoint.png" alt-text="Screenshot of setting a conditional breakpoint in Visual Studio Code":::
 
 You can now input the condition that will trigger the breakpoint. Type `convertedValue === undefined` and press `Enter`. Restart the program, and it should stop right where you wanted.
 
@@ -262,4 +262,4 @@ The value of 10 EUR is:
 - 1220.45 JPY
 ```
 
-That's it, you fixed the code. You are now capable of efficiently debugging code you don't even know beforehand using VS Code, well done!
+That's it, you fixed the code. You are now capable of efficiently debugging code you don't even know beforehand using Visual Studio Code, well done!
