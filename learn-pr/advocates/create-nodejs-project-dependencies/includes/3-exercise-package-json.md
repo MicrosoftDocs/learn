@@ -26,7 +26,7 @@ Open up a terminal window.
 1. Type the following command to initialize a Node.js project:
 
     ```bash
-    node init -y
+    npm init -y
     ```
 
    This command will generate a `package.json` file. It should look something like this:

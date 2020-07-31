@@ -26,7 +26,7 @@ To create your DNS zone:
    |---------|---------|
    |Subscription     |  Concierge subscription       |
    |Resource group    |   <rgn>[sandbox resource group name]</rgn>      |
-   |Name   |   The name needs to be unique in the sandbox. So use wideworldimportsXXXX.com where you replace the Xs with letters or numbers. |
+   |Name   |   The name needs to be unique in the sandbox. So use `wideworldimportsXXXX.com` where you replace the Xs with letters or numbers. |
 
 1. Select **Review + create**.
 1. Select **Create**. It will take a few minutes to create the DNS zone.
@@ -88,7 +88,7 @@ Here's how to use `nslookup` to verify the DNS zone configuration.
     nslookup www.wideworldimportsXXXX.com ns1-07.azure-dns.com
     ```
 
-1. You should see that your host name (www.wideworldimportsXXXX.com) resolves to 10.10.10.10.
+1. You should see that your host name `www.wideworldimportsXXXX.com` resolves to 10.10.10.10.
 
    ![Screenshot of Cloud Shell, showing the nslookup results](../media/4-nslookup.png)
 

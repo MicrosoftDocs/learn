@@ -24,7 +24,7 @@ roles:
 - business-user
 products: 
 - azure
-- dynamics
+- dynamics-365
 - m365
 units: 
 - learn-wwl.responsible-ai-governing-practices.introduction
