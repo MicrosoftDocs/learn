@@ -12,4 +12,3 @@ After your content is classified (and optionally protected), you can then track 
 
 > [!div class="checklist"]
 > - You can purchase MSIP either as a standalone solution, or through one of the following Microsoft licensing suites: Enterprise Mobility + Security, or Microsoft 365 Enterprise. Purchasing details are available on the [Azure Information Protection](https://azure.microsoft.com/pricing/details/information-protection?azure-portal=true) pricing webpage.
-
