@@ -33,7 +33,6 @@ units:
 - learn.wwl.describe-sql-server-query-plans.describe-types-of
 - learn.wwl.describe-sql-server-query-plans.explain-estimated-actual
 - learn.wwl.describe-sql-server-query-plans.identify-problematic
-- learn.wwl.describe-sql-server-query-plans.exercise
 - learn.wwl.describe-sql-server-query-plans.knowledge-check
 - learn.wwl.describe-sql-server-query-plans.summary
 badge:

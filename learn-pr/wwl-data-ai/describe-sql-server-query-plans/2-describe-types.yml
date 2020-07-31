@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 11
 content: |
-  [!include[](includes/2-describe-types-of.md)]
+  [!include[](includes/2-describe-types.md)]
