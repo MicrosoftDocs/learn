@@ -4,7 +4,7 @@ You have learned about some of the capabilities of the SQL Server Agent. However
 
 At the end of this module, you will understand:
 
-- The benefits of Azure policy    
+- The benefits of Azure policy        
 - The capabilities of Azure automation
 - How to use elastic jobs    
 
