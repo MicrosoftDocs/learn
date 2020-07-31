@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Exercise - Verify deployment and test the coupon service
-durationInMinutes: 1
+durationInMinutes: 9
 content: |
   [!include[](includes/4-verify-deployment.md)]

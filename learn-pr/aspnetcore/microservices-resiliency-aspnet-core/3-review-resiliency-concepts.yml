@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Review resiliency concepts
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/3-review-resiliency-concepts.md)]

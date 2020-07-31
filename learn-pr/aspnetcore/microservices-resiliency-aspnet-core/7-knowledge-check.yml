@@ -18,7 +18,7 @@ quiz:
       choices:
         - content: Make the app error-free.
           isCorrect: false
-          explanation: "Making an app completely error-free is unlikely."
+          explanation: "Making an app error-free is unlikely."
         - content: Handling user errors transparently.
           isCorrect: false
           explanation: "Users should be provided useful feedback for errors."
@@ -27,7 +27,7 @@ quiz:
           explanation: "Resilience is about mitigating inevitable transient failures in an app's infrastructure."
         - content: Handling major infrastructure failures.
           isCorrect: false
-          explanation: "Major infrastructure failures generally are not transient and require manual intervention."
+          explanation: "Major infrastructure failures generally aren't transient and require manual intervention."
     - content: Which of the following sentences is correct?
       choices:
         - content: Polly is the best option to handle failures, but it requires a significant amount of work.
@@ -39,12 +39,11 @@ quiz:
         - content: Polly and Linkerd can have complementary roles, depending on the context.
           isCorrect: true
           explanation: "Polly and Linkerd take different approaches to resiliency and have complementary roles."
-    - content: Which of the following components is **not needed** to achieve a
-        resilient app in Kubernetes?
+    - content: Which of the following components is **not needed** to achieve a resilient app in Kubernetes?
       choices:
         - content: CI/CD pipelines.
           isCorrect: true
-          explanation: "Continuous Integration/Continuous Deployment pipelines are not required for resiliency."
+          explanation: "Continuous Integration/Continuous Deployment pipelines aren't required for resiliency."
         - content: Health check probes for services.
           isCorrect: false
           explanation: "Kubernetes clusters use health checks to determine a service's state."
@@ -56,8 +55,7 @@ quiz:
           explanation: "Network-related resiliency is required for all networked apps."
     - content: Which of the following statements is **not true** of Linkerd?
       choices:
-        - content: It can adjust retries and timeouts adapting to the current cluster
-            state.
+        - content: It can adjust retries and timeouts adapting to the current cluster state.
           isCorrect: false
           explanation: "Linkerd can apply adaptive retry and timeout policies."
         - content: It can monitor the traffic between pods.
