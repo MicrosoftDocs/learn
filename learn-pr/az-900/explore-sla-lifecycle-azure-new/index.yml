@@ -1,15 +1,20 @@
 ### YamlMime:Module
-uid: learn.explore-sla-lifecycle-azure-new
+uid: learn.choose-azure-services-sla-lifecycle
 metadata:
-  title: Explore service-level agreements and service lifecycle in Azure
-  description: "Everyone wants to use the next great feature in their solutions before their competitors; explore how to see what is coming next. AZ-900"
+  description: Learn about Azure's service-level agreements (SLAs) and how they can impact your application design decisions. Also see how to access preview services and learn how they impact your planning.
   ms.date: 09/11/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore service level agreements and service lifecycle in Azure
-summary: Everyone wants to use the next great feature in their solutions before their competitors. Explore features designed to help you know what is coming next.
+title: Choose the right Azure services by examining service-level agreements (SLAs) and service lifecycle
+summary: |
+  As you move to the cloud, you might ask:
+
+  * What guarantees does Azure provide around uptime and connectivity?
+  * Can I use preview services in my production applications?
+
+  Learn about Azure's service-level agreements (SLAs) and how they can impact your application design decisions. Also see how to access preview services and learn how they impact your planning.
 abstract: |
   After completing this module, you'll be able to:
 
@@ -18,7 +23,7 @@ abstract: |
   * Combine SLAs to compute a composite SLA.
   * Describe the service lifecycle in Azure, including how preview features move to general availability.
 prerequisites: |
-  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
 iconUrl: /learn/achievements/explore-sla-lifecycle-azure-new.svg
 levels:
 - beginner
@@ -32,11 +37,11 @@ roles:
 products:
 - azure
 units:
-- learn.explore-sla-lifecycle-azure-new.1-introduction
-- learn.explore-sla-lifecycle-azure-new.2-what-are-service-level-agreements
-- learn.explore-sla-lifecycle-azure-new.3-what-factors-impact-sla
-- learn.explore-sla-lifecycle-azure-new.4-access-preview-services
-- learn.explore-sla-lifecycle-azure-new.5-knowledge-check
-- learn.explore-sla-lifecycle-azure-new.6-summary
+- learn.choose-azure-services-sla-lifecycle.1-introduction
+- learn.choose-azure-services-sla-lifecycle.2-what-are-service-level-agreements
+- learn.choose-azure-services-sla-lifecycle.3-what-factors-impact-sla
+- learn.choose-azure-services-sla-lifecycle.4-access-preview-services
+- learn.choose-azure-services-sla-lifecycle.5-knowledge-check
+- learn.choose-azure-services-sla-lifecycle.6-summary
 badge:
-  uid: learn.explore-sla-lifecycle-azure-new.badge
+  uid: learn.choose-azure-services-sla-lifecycle.badge
