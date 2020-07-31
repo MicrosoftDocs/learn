@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-data-science-virtual-machine.exercise-connect-to-your-data-science-virtual-machine
+uid: learn.azure.intro-to-data-science-virtual-machine.exercise-connect
 metadata:
   title: "Exercise: Connect to your Data Science Virtual Machine"
   description: Connect to your Data Science Virtual Machine using both command-line and graphical clients
@@ -8,12 +8,11 @@ metadata:
   ms.author: laobri
   ms.topic: interactive-tutorial
   ms.service: machine-learning
-  ROBOTS: NOINDEX
 azureSandbox: true
 title: "Exercise: Connect to your Data Science Virtual Machine"
-durationInMinutes: 12
+durationInMinutes: 8
 content: |
-  [!include[](includes/exercise-connect-to-your-data-science-virtual-machine.md)]
+  [!include[](includes/exercise-connect.md)]
 quiz:
   title: Connect to your Data Science Virtual Machine
   questions:

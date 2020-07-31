@@ -24,12 +24,12 @@ products:
   # - azure-virtual-machines, azure-linux-virtual-machines, azure-virtual-windows-machines TODO: ? 
 units:
   - learn.azure.intro-to-data-science-virtual-machine.introduction
-  - learn.azure.intro-to-data-science-virtual-machine.what-is-the-data-science-virtual-machine
-  - learn.azure.intro-to-data-science-virtual-machine.create-a-data-science-virtual-machine
-  - learn.azure.intro-to-data-science-virtual-machine.exercise-create-a-data-science-virtual-machine
-  - learn.azure.intro-to-data-science-virtual-machine.exercise-connect-to-your-data-science-virtual-machine
-  - learn.azure.intro-to-data-science-virtual-machine.connecting-to-your-data-science-virtual-machine
-  - learn.azure.intro-to-data-science-virtual-machine.use-preinstalled-tools-to-do-data-science
+  - learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine
+  - learn.azure.intro-to-data-science-virtual-machine.create
+  - learn.azure.intro-to-data-science-virtual-machine.exercise-create
+  - learn.azure.intro-to-data-science-virtual-machine.exercise-connect
+  - learn.azure.intro-to-data-science-virtual-machine.connect
+  - learn.azure.intro-to-data-science-virtual-machine.exercise-preexisting-tools
   - learn.azure.intro-to-data-science-virtual-machine.summary
 badge:
   uid: learn.azure.intro-to-data-science-virtual-machine.badge
