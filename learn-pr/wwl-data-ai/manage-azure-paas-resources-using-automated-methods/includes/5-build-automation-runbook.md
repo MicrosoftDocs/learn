@@ -10,7 +10,7 @@ In this example runbook, you are going to connect to an Azure SQL Database using
 
 You will search for the module in the gallery, and search for the module you are looking for as shown in the image above. After you click on the module, you will have the option to import it, as shown in the image below.
 
-:::image type="content" source="../media/module-66-automation-final-20.png" alt-text="test":::
+:::image type="content" source="../media/module-66-automation-final-20.png" alt-text="automation":::
 
 This will import the module into your account. In this example, the process was repeated for the Az.SQL and SqlServer PowerShell modules.
 
