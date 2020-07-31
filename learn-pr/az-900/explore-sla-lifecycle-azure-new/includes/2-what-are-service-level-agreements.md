@@ -23,6 +23,9 @@ Later in this module, you'll learn about some strategies you can use when an Azu
 
 You can access SLAs from the [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) page on azure.microsoft.com.
 
+> [!NOTE]
+> You don't need an Azure subscription to review these SLAs.
+
 Each Azure service defines its own SLA. Azure services are organized by category.
 
 :::image type="content" source="../media/2-sla-home-categories.png" alt-text="A screenshot of the SLA landing page showing 21 Azure service categories." border="false":::
@@ -96,10 +99,18 @@ Credits typically increase as uptime decreases. Here's how credits are applied f
 
 Free products typically do not have an SLA.
 
-For example, many Azure services provide a *Free* or *Shared* tier that provides more limited functionality. Services like Azure Advisor are always free.
+For example, many Azure services provide a *Free* or *Shared* tier that provides more limited functionality. Services like Azure Advisor are always free. The [SLA for Azure Advisor](https://azure.microsoft.com/support/legal/sla/advisor/?azure-portal=true) states that because it's free, it does not have a financially backed SLA.
+
+## How do I know when there's an outage?
+
+[Azure status](https://status.azure.com/status?azure-portal=true) provides a global view of the health of Azure services and regions. If you suspect there's an outage, this is a often a good place to start your investigation.
+
+Azure status provides an RSS feed of changes to the health of Azure services that you can subscribe to. You can connect this feed to communication software such as Microsoft Teams or Slack.
+
+From the Azure status page, you can also access Azure Service Health, which provides a personalized view of the health of the Azure services and regions that you're using, directly from the Azure portal.
+
+## How can I request a service credit from Microsoft?
+
+Typically, you need to file a claim with Microsoft to receive a service credit. If you purchase Azure services from a Cloud Solution Provider (CSP) partner, your CSP typically manages the claims process.
 
 Next, let's look at some other factors that Tailwind Traders needs to consider which might impact SLA performance targets.
-
-<div style="background:yellow;">
-TODO: After reading this, a question I would have a learner is whether I need to file for credit or whether it's applied automatically. I might also want to know where I can look to find out about outages and service status/health.
-</div>

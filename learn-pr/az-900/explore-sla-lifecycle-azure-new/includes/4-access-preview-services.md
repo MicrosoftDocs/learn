@@ -2,6 +2,8 @@ In this part, you'll learn how Azure services go from the preview phase to being
 
 <div style="background:yellow;">
 TODO: We're switching gears here for sure. Can we more strongly relate lifecycle to SLAs?
+
+Perhaps we emphasize that you don't get an SLA for preview services (we already say we don't recommend using preview services in production applications).
 </div>
 
 For Tailwind Traders, migration from the datacenter to Azure is more about operational efficiency. The research and development team is looking into new features that will keep them ahead of the competition &mdash; features they can't achieve without the power of the cloud.
@@ -15,11 +17,7 @@ Before the team moves forward, they want a better understanding of how preview f
 
 ## What is the services lifecycle?
 
-<div style="background:yellow;">
-TODO: I couldn't find any sources that justify "Services Lifecycle" as a proper noun. Please confirm.
-</div>
-
-Every Azure service has a lifecycle which defines how it's released for public use, known as the *services lifecycle*.
+Every Azure service has a lifecycle which defines how it's released for public use. We call this the *services lifecycle*.
 
 An Azure service starts in the development phase. Next, it's released to the preview phase, which informs you that the new service is coming. Then, the service is released to public testing so that you can experiment with it and provide feedback. Finally the service becomes generally available to everyone.
 
@@ -118,7 +116,7 @@ From the Azure updates page, you can:
 * View details about all Azure updates.
 * See which updates are in general availability, preview, or development.
 
-    :::image type="content" source="../media/azure-updates-filter.png" alt-text="A screenshot of the Azure updates page showing how to filter services by now available, in preview, or in development.":::
+    :::image type="content" source="../media/4-azure-updates-filter.png" alt-text="A screenshot of the Azure updates page showing how to filter services by now available, in preview, or in development.":::
 * Browse updates by product category or update type.
 * Search for updates by keyword.
 * Subscribe to an RSS feed to receive notifications.

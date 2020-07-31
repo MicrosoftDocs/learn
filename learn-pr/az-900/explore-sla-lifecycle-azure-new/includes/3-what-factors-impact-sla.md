@@ -1,5 +1,7 @@
 <div style="background:yellow;">
 TODO: This is REALLY long. A graphic or video could help, or do we split over two units?
+
+(If we decide to keep the sections around availability metrics and recovery metrics, we can split this page at "Design your application to meet your SLA".)
 </div>
 
 Now that you know how service-level agreements (SLAs) are structured, how do you know whether the SLA for an Azure service meets your business needs? What other factors do you need to consider?
@@ -13,10 +15,6 @@ Let's start by defining what an application SLA is.
 ## What's an application SLA?
 
 An *application SLA* defines the service-level agreement requirements for a specific application. This term typically refers to an application that _you_ build on Azure.
-
-<div style="background:yellow;">
-TODO: What else can we say?
-</div>
 
 ## Define your application SLA
 
@@ -42,11 +40,7 @@ To ensure a high level of uptime, you should plan for your application to have d
 
 ### Establish availability metrics
 
-<div style="background:yellow;">
-TODO: *Availability metrics* are ...
-</div>
-
-You may already have existing availability metrics that you've defined for workloads you run in the datacenter. These considerations also apply to the cloud. Two common availability metrics to consider are:
+You may already have uptime goals for workloads you run in the datacenter. Availability metrics such as uptime also apply to running in the cloud. Two common availability metrics to consider are:
 
 * **Mean time to recovery** (MTTR)
 
@@ -60,10 +54,6 @@ We define a couple terms here, but what's the guidance?
 </div>
 
 ### Establish recovery metrics
-
-<div style="background:yellow;">
-TODO: *Recovery metrics* are ...
-</div>
 
 While availability metrics focus on IT administration, you also need to consider the business impact when an application or service is unavailable.
 
@@ -97,19 +87,15 @@ Here are a few aspects to consider as you design your application.
 
 A *workload* is a distinct capability or task that's logically separated from other tasks, in terms of business logic and data storage requirements. Each workload defines a set of requirements for availability, scalability, data consistency, and disaster recovery.
 
-<div style="background:yellow;">
-TODO: Get application architecture checked by a dev.
-
-(Tom): Seems reasonable enough to me!
-
-TODO: Once approved, create a diagram showing the topology, after the bullet list below.
-</div>
-
 On Azure, the Special Orders application will require:
 
 * Two virtual machines.
 * One instance of Azure SQL Database.
 * One instance of Azure Load Balancer.
+
+Here's a diagram that shows the basic architecture:
+
+:::image type="content" source="../media/3-special-orders-architecture.png" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database." border="false":::
 
 Each of these workloads has its own SLA, and the customization choices you make when you provision each impacts that SLA. For example:
 
@@ -138,10 +124,10 @@ From the [Service Level Agreements](https://azure.microsoft.com/support/legal/sl
 
 Therefore, for the Special Orders application, the composite SLA would be:
 
-${99.9\% * 99.9\% * 99.99\% * 99.99\%}$
-${= 0.999 * 0.999 * 0.9999 * 0.9999}$
-${= 0.9978}$
-${= 99.78\%}$
+$${99.9\% \times 99.9\% \times 99.99\% \times 99.99\%}$$
+$${= 0.999 \times 0.999 \times 0.9999 \times 0.9999}$$
+$${= 0.9978}$$
+$${= 99.78\%}$$
 
 Recall that you need two virtual machines. Therefore, you include the Virtual Machines SLA of 99.9% two times in the equation.
 
@@ -166,12 +152,6 @@ To learn more about the SLA for virtual machines, visit [SLA for Virtual Machine
 *Resiliency* is the ability of a system to recover from failures and continue to function. It's not about avoiding failures, but rather responding to failures in a way that avoids downtime or data loss.
 
 A resilient system returns the application to a fully-functioning state following a failure. High availability and disaster recovery are two crucial components of resiliency.
-
-<div style="background:yellow;">
-TODO: too much jargon follows.
-
-(Tom) I cut the design patterns. Not sure if that helps.
-</div>
 
 When designing your architecture, consider performing a Failure Mode Analysis (FMA). The goal of an FMA is to identify possible points of failure and to define how the application will respond to those failures.
 
