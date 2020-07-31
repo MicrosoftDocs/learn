@@ -1,9 +1,9 @@
-In the previous unit, you implemented resiliency by adding failure-handling code with Polly. This change only applies to the service you changed, however. Updating a large app with many services would be non-trivial. In this unit, you'll implement an infrastructure-based resiliency approach spanning the entire app with Linkerd.
+In the previous unit, you implemented resiliency by adding failure-handling code with Polly. This change only applies to the service you changed, however. Updating a large app with many services would be non-trivial.
 
-In this unit, you will:
+This unit focuses on replacing the code-based resiliency. An infrastructure-based resiliency approach spanning the entire app will be used instead. You will:
 
 * Redeploy the app without any resiliency.
-* Deploy Linkerd in your cluster.
+* Deploy Linkerd in your AKS cluster.
 * Configure the app to use Linkerd for resiliency.
 * Explore the app behavior with Linkerd.
 
@@ -17,9 +17,9 @@ Before applying Linkerd, let's revert the app to a state before we added code-ba
 
 You may verify the app is again failing as expected using the same steps as before:
 
-1. Log in to the app.
+1. Sign in to the app.
 1. Select the **.NET FOUNDATION PIN**.
-1. Select the basket icon.
+1. Select the basket icon at the top right of the page.
 1. Select **CHECKOUT**.
 1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
 1. Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
@@ -99,7 +99,7 @@ Run the following command:
 linkerd check
 ```
 
-The output is a checklist similar to that of the pre-install, and will resemble this:
+The output is a checklist similar to that of the pre-install and will resemble the following text:
 
 ```console
 linkerd-version
@@ -127,7 +127,7 @@ Status check results are √
 
 ## Configure the app to use Linkerd
 
-Linkerd has been deployed, but it has not been configured and app behavior is unchanged. Linkerd only retries routes configured in the `ServiceProfile` manifest. For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each, you will:
+Linkerd has been deployed, but it hasn't been configured and app behavior is unchanged. Linkerd only retries routes configured in the `ServiceProfile` manifest. For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each, you will:
 
 * Modify the deployments so Linkerd creates its proxy container in the pods.
 * Add a `ServiceProfile` object to the cluster to configure the retries on the selected route.
@@ -164,7 +164,7 @@ serviceprofile.linkerd.io/coupon-api.default.svc.cluster.local created
 
 ### Configure headers for Nginx
 
-Linkerd needs additional information in the request headers. You must add annotations to the ingress route.
+Linkerd needs additional information in the request headers, so you need to add annotations to the ingress route.
 
 Add the highlighted lines to the *deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml* file:
 
@@ -178,7 +178,7 @@ Use the following command to redeploy the updated charts:
 ./deploy/k8s/deploy-application.sh --registry eshopdev --charts apigateway,coupon,webshoppingagg
 ```
 
-Note that the updated pods each have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
+The updated pods each have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
 
 :::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers" border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
 
@@ -186,21 +186,21 @@ Note that the updated pods each have two containers now (`0/2`). One is the serv
 
 Test the app's behavior with Linkerd by completing the following steps:
 
-1. Log in to the app.
+1. Sign in to the app.
 1. Select the **.NET FOUNDATION PIN**.
-1. Select the basket icon at the top right of the page.
+1. Select the basket icon.
 1. Select **CHECKOUT**.
 1. Go to the **HAVE A DISCOUNT CODE?** text box.
 1. Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
 1. Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
 
-    Note that this time, you receive the correct response almost immediately.
+    This time, you receive the correct response almost immediately.
 
-1. Check the log traces. There should be log messages similar to the following:
+1. Check the log traces for the following messages:
 
     :::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
 
-Linkerd follows a different approach to resiliency from what you saw with Polly. Linkerd transparently retried the operation multiple times in quick succession and the user didn't notice any failure.
+Linkerd follows a different approach to resiliency than what you saw with Polly. Linkerd transparently retried the operation multiple times in quick succession. The user didn't notice any failure.
 
 ## Additional information
 

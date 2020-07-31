@@ -69,7 +69,7 @@ Complete the following steps to see how the app responds without a resiliency so
 To configure a simulated failure, you need at least one item in the basket. Complete the following steps:
 
 1. Select the **CONTINUE SHOPPING** button.
-1. Log in to *eShopOnContainers*.
+1. Sign in to *eShopOnContainers*.
 1. Select the **.NET FOUNDATION PIN**.
 1. Select the basket icon at the top right of the page.
 1. Select **CHECKOUT**.

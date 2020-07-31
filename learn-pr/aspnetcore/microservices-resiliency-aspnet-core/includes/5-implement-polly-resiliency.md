@@ -1,6 +1,6 @@
 In this exercise, you'll implement a resiliency handler with Polly. The initial *eShopOnContainers* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
 
-In this exercise, you will:
+In this unit, you will:
 
 - Update the app's code to implement failure handling using Polly.
 - Create an ACR instance and deploy the updated app to AKS.
@@ -58,7 +58,7 @@ Complete the following steps to implement failure handling for the coupon servic
         }
         ```
 
-        The preceding method configures a Retry policy that retries up to five times with an exponentially increasing delay in between each attempt. The delay:
+        The preceding method creates a Retry policy that retries up to five times with an exponentially increasing delay in between each attempt. The delay:
 
         - Increases as a power of 1.5 seconds after each attempt.
         - Is a power of 2 seconds by default. To decrease wait times for this exercise, 1.5 seconds is used instead.
@@ -73,7 +73,7 @@ Complete the following steps to implement failure handling for the coupon servic
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-        The preceding method configures a Circuit Breaker policy. After 15 consecutive failures, the policy enforces a 15-second pause. This policy's premise is that protecting the service from overload can help it recover.
+        The preceding method creates a Circuit Breaker policy. After 15 consecutive failures, the policy enforces a 15-second pause. This policy's premise is that protecting the service from overload can help it recover.
 
     1. In the `AddApplicationServices` method, call the `AddPolicyHandler` extension method twice. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
