@@ -9,7 +9,7 @@ You can also [install and run the Azure CLI locally](https://docs.microsoft.com/
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu bar, select **Cloud Shell**. Select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu bar](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![Azure portal page with the Cloud Shell icon on the menu bar.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
     > Cloud Shell requires an Azure storage resource to persist any files that you create while working in Cloud Shell. The first time you open Cloud Shell, it prompts you with an offer to create a resource group, storage account, and Azure Files share on your behalf. This is a one-time step and will be automatically attached for all future Cloud Shell sessions.
@@ -298,7 +298,7 @@ SQL_PASSWORD=$(openssl rand -base64 32)
 
 1. Go to the Azure portal and select **Resource groups**, and then select the **tailspin-spacegame-web-rg** resource group. Notice that you have an App Service plan, an App Service instance, and a SQL Server instance. Take note of the suffix on each of these resources. It's made from the `deployPrefix` variable and your `uniqueSuffix` variable.
 
-    ![List of resources created by the template run](../media/3-resource-list.png)
+    ![Azure portal page with a ist of resources created by the template run.](../media/3-resource-list.png)
 
 1. Run the template a second time.
 
@@ -320,4 +320,4 @@ From the Azure portal, delete the resources by selecting them in the resource gr
 
 When you're prompted, enter **Yes** to confirm. Verify that the resources are deleted but the resource group remains.
 
-![Delete resources in the resource group](../media/3-delete-resources.png)
+![Azure portal page showing deleting resources in the resource group.](../media/3-delete-resources.png)

@@ -35,8 +35,7 @@ quiz:
       explanation: "Correct!"
 
 # Did I get this block question 2      
-  - content: "Consider the same scenario from the previous question. If each drive is part of a two-drive RAID 1 mirror, would you expect to lose any data from a double drive failure on any one of those 10,000 RAID 1 arrays during that year?<br>
-  (Also assume that a failed drive is replaced immediately, and no additional drives fail during rebuild.)"
+  - content: "Consider the same scenario from the previous question. If each drive is part of a two-drive RAID 1 mirror, would you expect to lose any data from a double drive failure on any one of those 10,000 RAID 1 arrays during that year?<br>(Also assume that a failed drive is replaced immediately, and no additional drives fail during rebuild.)"
     choices:
     - content: "Yes"
       isCorrect: false

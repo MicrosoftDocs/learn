@@ -1,0 +1,51 @@
+### YamlMime:Module
+uid: learn.reactors.python-data-science
+metadata:
+  title: Introduction to Python
+  description: This module introduces you to Python as applied to data science. You'll also learn to use libraries and packages that help you analyze large, incomplete data.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Introduction to Python
+summary: This module introduces you to Python as applied to data science. You'll also learn to use libraries and packages that help you analyze large, incomplete data.
+abstract: |
+  In this module, you will:
+  - Explore the basic syntax and features of Python
+  - Use Jupyter Notebook to execute Python code in Visual Studio Code
+  - Learn how to store and manipulate simple data in Python
+  - Import external modules into your Python environment
+
+  This module is complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - None
+# placeholder icon
+iconUrl: /learn/achievements/reactors/python-data-science.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.python-data-science.1-introduction
+- learn.reactors.python-data-science.2-types-arithmetic-numeric
+- learn.reactors.python-data-science.3-variables
+- learn.reactors.python-data-science.4-expressions
+- learn.reactors.python-data-science.5-string-basics
+- learn.reactors.python-data-science.6-string-index
+- learn.reactors.python-data-science.7-lists
+- learn.reactors.python-data-science.8-list-object-methods
+- learn.reactors.python-data-science.9-tuples
+- learn.reactors.python-data-science.10-dictionaries
+- learn.reactors.python-data-science.11-control-flow
+- learn.reactors.python-data-science.12-functions
+- learn.reactors.python-data-science.13-list-comprehensions
+- learn.reactors.python-data-science.14-import-modules
+badge:
+  uid: learn.reactors.python-data-science.badge 

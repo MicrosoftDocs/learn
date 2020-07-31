@@ -26,5 +26,4 @@ A **security policy** defines the set of controls that are recommended for resou
     
 Security Center analyzes the security state of your Azure resources. When Security Center identifies potential security vulnerabilities, it creates **recommendations** based on the controls set in the security policy. The recommendations guide you through the process of configuring the needed security controls. For example, if you have workloads that do not require the *Azure SQL Database Transparent Data Encryption* (TDE) policy, turn off the policy at the subscription level and enable it only in the resources groups where SQL TDE is required.
 
-
 More implementation and scenario detail is also available in the [Azure Security Center planning and operations guide](https://docs.microsoft.com/azure/security-center/security-center-planning-and-operations-guide?azure-portal=true).

@@ -1,6 +1,6 @@
 <!--- Reviewers note: This unit uses LaTeX syntax to format mathematical content. A dollar sign $ starts and ends the LaTeX statement. -->
 
-It's finally time to perform the PCA on our data. (As stated before, even with fairly clean data, a lot of effort goes into preparing the data for analysis.)
+It's finally time to perform the PCA on our data. As stated before, even with fairly clean data, a lot of effort goes into preparing the data for analysis.
 
 First, run this code:
 
@@ -9,11 +9,11 @@ fit = PCA()
 pca = fit.fit_transform(nutr_df_TF)
 ```
 
-Now that we have performed the PCA on our data, what do we actually have? Remember that PCA is foremost about finding the eigenvectors for our data. Then, we want to select a subset of those vectors to form the lower-dimensional subspace in which to analyze our data.
+Now that we've performed the PCA on our data, what do we actually have? Remember that PCA is foremost about finding the eigenvectors for our data. Then, we want to select a subset of those vectors to form the lower-dimensional subspace in which to analyze our data.
 
-Not all eigenvectors are created equal. Just a few of them will account for the majority of the variance in the data. (Put another way, a subspace composed of just a few of the eigenvectors will retain the majority of the information from our data.) We want to focus on those vectors.
+Not all eigenvectors are equal. Just a few of them will account for the majority of the variance in the data. Put another way, a subspace composed of just a few of the eigenvectors will retain the majority of the information from our data. We want to focus on those vectors.
 
-To help us get a sense of how many vectors we should use, consider this scree graph of the variance for the PCA components, which plots the variance explained by the components, from greatest to least:
+To help us get a sense of how many vectors we should use, consider the following scree graph of the variance for the PCA components. It plots the variance explained by the components, from greatest to least.
 
 ```python
 plt.plot(fit.explained_variance_ratio_)
@@ -27,7 +27,7 @@ The output is:
 
 :::image type="content" alt-text="Scree graph of the variance for the PCA components." source="../media/plt-plot.png" loc-scope="Azure":::
 
-This is where data science can become an art. As a rule of thumb, we want to look for "elbow" in the graph, which is the point at which the few components have captured the majority of the variance in the data (after that point, we are only adding complexity to the analysis for increasingly diminishing returns). In this case, that appears to be at about five components.
+This is where data science can become an art. As a general rule, we want to look for "elbow" in the graph, which is the point at which the few components have captured the majority of the variance in the data. After that point, we're only adding complexity to the analysis for increasingly diminishing returns. In this case, that appears to be at about five components.
 
 We can take the cumulative sum of the first five components to see how much variance they capture in total:
 
@@ -37,7 +37,7 @@ print(fit.explained_variance_ratio_[:5].sum())
 
 The output is `0.6998599762716344`.
 
-Our five components capture approximately 70% of the variance. We can see what fewer or additional components would yield by looking at the cumulative variance for all the components:
+Our five components capture approximately 70 percent of the variance. We can see what fewer or additional components would yield by looking at the cumulative variance for all the components:
 
 ```python
 print(fit.explained_variance_ratio_.cumsum())
@@ -70,7 +70,7 @@ Text(0.5,1,'Cumulative Explained Variance Graph')
 ```
 :::image type="content" alt-text="Cumulative explained variance graph." source="../media/variance-graph.png" loc-scope="Azure":::
 
-Ultimately, the number of components to use is a matter of judgment, but five vectors (and 70% of the variance) will suffice for our purposes.
+Ultimately, the number of components to use is a matter of judgment, but five vectors (and 70 percent of the variance) will suffice for our purposes.
 
 To help with further analysis, let's now put those five components into a DataFrame:
 
@@ -99,7 +99,7 @@ The output is:
 --------------------------------------------------------------------
 ```
 
-Each column represents one of the eigenvectors, and each row is one of the coordinates that defines that vector in five-dimensional space.
+Each column represents one of the eigenvectors. Each row is one of the coordinates that define that vector in five-dimensional space.
 
 We want to add the `FoodGroup` column back in to help with our interpretation of the data later on. Let's also rename the component-columns $c_{1}$ through $c_{5}$ so that we know what we're looking at:
 
@@ -132,9 +132,9 @@ The output is:
 ---------------------------------------------------------------------------------------------
 ```
 
-Don't worry that the `FoodGroup` column has all `NaN` values: it's not a vector, so it has no vector coordinates.
+Don't worry that the `FoodGroup` column has all `NaN` values. It's not a vector, so it has no vector coordinates.
 
-One last thing we should demonstrate is that each component is mutually perpendicular (or orthogonal, in math-speak). One way of expressing that condition is that each component-vector should perfectly correspond with itself and not correlate at all (positively or negatively) with any other vector.
+One last thing we should demonstrate is that each component is mutually perpendicular (or orthogonal, in math terms). One way of expressing that condition is that each component-vector should perfectly correspond with itself and not correlate at all (positively or negatively) with any other vector.
 
 ```python
 np.round(pca_df.corr(), 5)

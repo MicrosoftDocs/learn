@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.automate-github-using-github-script.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is GitHub Script?"
+    choices:
+    - content: "A programming language that compiles to JavaScript."
+      isCorrect: false
+      explanation: "GitHub Script is not a programming language."
+    - content: "An automation syntax for GitHub Shell."
+      isCorrect: false
+      explanation: "GitHub Script is not a scripting language."
+    - content: "A workflow action that enables GitHub API access from GitHub Actions."
+      isCorrect: true
+      explanation: "It allows you to script any API usage that is available through the octokit/rest.js library."
+  - content: "What is the difference between GitHub Script and GitHub Actions?"
+    choices:
+    - content: "GitHub Actions is for automating build and release pipelines. It was written in the GitHub Script programming language."
+      isCorrect: false
+      explanation: "GitHub Script is not a programming language."
+    - content: "GitHub Actions is a workflow engine that automates the execution of actions. GitHub Script is one of the actions available for use in a workflow."
+      isCorrect: true
+      explanation: "GitHub Actions workflows may contain GitHub Script actions."
+    - content: "GitHub Actions automates workflows that run inside GitHub. GitHub Script automates workflows that run outside of GitHub."
+      isCorrect: false
+      explanation: "GitHub Script is a workflow action that runs inside GitHub."
+  - content: "Why would someone use the following YAML in a GitHub Script action: `if: contains(github.event.issue.labels.*.name, 'bug')`?"
+    choices:
+    - content: "To ensure that the script only runs when the target issue has been labeled as a bug."
+      isCorrect: true
+      explanation: "This expression instructs the action to ignore issues that are not labeled as a bug."
+    - content: "To make sure that new issue names do not violate the bug reporting policy when created."
+      isCorrect: false
+      explanation: "This snippet will not help you enforce issue creation policy."
+    - content: "To automatically flag any commits containing code matching the `github.event.issue.labels.*.name` namespace pattern as a bug."
+      isCorrect: false
+      explanation: "This snippet will not help you enforce code commit policy."

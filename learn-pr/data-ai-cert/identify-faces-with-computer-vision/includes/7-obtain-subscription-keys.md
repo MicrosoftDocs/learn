@@ -33,11 +33,9 @@ To view the subscription key and endpoint for your Computer Vision subscription:
 
 1.  On the left sidebar, select **Resource groups**, and then select the resource group you created for the Computer Vision API.
 
-1.  To view your new subscription keys, select the Face API subscription name (such as **Face**). Then under **Resource Management**, select **Keys**.
+1.  To view your new subscription keys, select the Face API subscription name (such as **Face**). Then under **Resource Management**, select **Keys and Endpoints**.
 
 1. Copy the value of **KEY 1**.
-
-    ![Copy the Face subscription key](../media/6-subscribe-to-face-api-keys.png)
 
 1. In the menu group, select **Overview**. Then copy the value under **Endpoint**.
 

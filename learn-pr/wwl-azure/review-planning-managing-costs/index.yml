@@ -3,7 +3,7 @@ uid: learn.wwl.review-planning-managing-costs
 metadata:
   title: Review planning and managing costs
   description: "Estimating costs and managing your spend are crucial skills you will want when moving into the cloud. Lets explore your options. AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 07/03/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
    - List ways of minimizing your costs.
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/review-planning-managing-costs.svg
 hidden: true
 levels:
 - beginner

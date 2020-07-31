@@ -11,7 +11,7 @@ In the [Create a multistage pipeline by using Azure Pipelines](/learn/modules/cr
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select **Cloud Shell**. In the upper left, in the drop-down menu, select **Bash**.
 
-    ![Selecting Cloud Shell from the menu](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![Azure portal showing selecting the Cloud Shell icon from the menu.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
     > [!NOTE]
     > To persist any files that you create in Cloud Shell, you must have an Azure Storage resource. When you first open Cloud Shell, you're prompted to create a resource group, storage account, and Azure Files share. This is a one-time step. The assets are automatically attached for all future Cloud Shell sessions.
@@ -189,7 +189,7 @@ To add the variable:
 1. In Azure DevOps, go to your **Space Game - web - Database** project.
 1. Under **Pipelines**, select **Library**.
 
-    ![Azure Pipelines, showing the Library menu option](../../create-release-pipeline/media/5-pipelines-library.png)
+    ![Azure Pipelines showing the Library menu option.](../../create-release-pipeline/media/5-pipelines-library.png)
 1. Select **+ Variable group**.
 1. Under **Properties**, enter *Release* for the variable group name.
 1. Under **Variables**, select **+ Add**.
@@ -219,7 +219,7 @@ To add the variable:
 
     Your variable group looks like this one:
 
-    ![Azure Pipeline, showing the variable group](../media/6-variables-library.png)
+    ![Azure Pipeline showing the variable group.](../media/6-variables-library.png)
 
 ## Add the database stage to the pipeline
 
@@ -328,7 +328,7 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 
 1. On the **dbaverificationapply** environment page, open the drop-down menu and then select **Approvals and checks**.
 
-    ![Azure Pipelines, showing the approvals and checks](../../shared/media/pipeline-add-check-to-environment.png)
+    ![Azure Pipelines showing the approvals and checks.](../../shared/media/pipeline-add-check-to-environment.png)
 
 1. Select **Approvals**.
 1. Under **Approvers**, select **Add users and groups** and then select your account.
@@ -349,7 +349,7 @@ Here you create the manual approval for the `DBAVerificationApply` stage. You le
 1. Go back to the pipeline and select the **Waiting** button on `DBAVerificationApply`. Select **Review** > **Approve**.
 1. Wait for the pipeline to finish deployments.
 
-    ![Azure Pipelines, showing the pipeline stages](../media/6-pipeline-run.png)
+    ![Azure Pipelines showing the pipeline stages.](../media/6-pipeline-run.png)
 
 1. Check at least one web address to see that the application is deployed and is working with the database.
 

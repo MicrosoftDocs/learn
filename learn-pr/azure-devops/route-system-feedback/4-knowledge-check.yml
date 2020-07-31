@@ -52,14 +52,3 @@ quiz:
       isCorrect: true
       explanation: "Smart Detection provides automatic alerts that adapt to your app's normal patterns of telemetry and trigger when there's something outside the usual pattern."
 
-  - content: 'Which of these tools provides a way to create log data visualizations?'
-    choices:
-    - content: Power BI.
-      isCorrect: false
-      explanation: "Power BI enables you to create business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can import the results of a log query into a Power BI dataset but it does not support log data directly." 
-    - content: Azure Monitor Views.
-      isCorrect: true
-      explanation: Azure Monitor Views enables you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
-    - content: Grafana.
-      isCorrect: false
-      explanation: Grafana is an open platform that provides operational dashboards using metrics data, but not log data.

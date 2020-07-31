@@ -3,7 +3,7 @@ uid: learn.data-ai.build-ai-solutions-with-azure-ml-service
 metadata:
   title: Build AI solutions with Azure Machine Learning service
   description: Azure Machine Learning is a cloud platform for training, deploying, managing, and monitoring machine learning models. Learn how to use the Azure Machine Learning Python SDK to create enterprise-ready machine learning solutions.
-  ms.date: 06/25/2020
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ roles:
 - student
 products:
 - azure
-- azure-machine-learning-service
+- azure-machine-learning
 - azure-portal
 modules:
 - learn.data-ai.intro-to-azure-machine-learning-service

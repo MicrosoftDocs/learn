@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/21/2020
+  ms.date: 07/26/2020
   author: wwlpublish
-  ms.author: roberts
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -27,7 +27,7 @@ quiz:
     - content: "Virtual machine scale sets"
       isCorrect: true
       explanation: "That's correct. Virtual machine scale sets let you deploy and manage a set of identical virtual machines."
-  - content: "Which of the following should be used when the primary concern is about the code running a service? In this implementation, there it is ok to ignore the underlying platform or infrastructure?"
+  - content: "Which of the following should be used when the primary concern is about the code running a service? In this implementation, is it ok to ignore the underlying platform or infrastructure?"
     choices:
     - content: "Azure App Service"
       isCorrect: false

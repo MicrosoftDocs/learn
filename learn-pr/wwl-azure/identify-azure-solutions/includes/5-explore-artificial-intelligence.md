@@ -6,6 +6,17 @@ Forecasts or predictions from machine learning can make apps and devices smarter
 
 Some of the most common Artificial Intelligence and Machine Learning service types in Azure are:
 
+## Azure Cognitive Services
+
+Cognitive services are a collection of domain-specific pre-trained AI models that can be customized with your data. They are categorized broadly into vision, speech, language, and search. For more information about each service, see the links in the resources section.
+
+| | |
+|:---------:|---------|
+|**Vision** ![Vision](../media/ic-gm06-ai-icons-computer-vision.png)    |Vision makes it possible for apps and services to accurately identify and analyze content within images and videos.           |
+|**Speech** ![Speech](../media/ic-gm06-ai-icons-speech.png)     | Speech services can convert spoken language into text, or produce natural-sounding speech from text using standard (or customizable) voice fonts.        |
+|**Language** ![Language](../media/ic-gm06-ai-icons-language.png)     | Language services can understand the meaning of unstructured text or recognize the speaker’s intent.         |
+|**Knowledge** ![Knowledge](../media/ic-gm06-ai-icons-knowledge.png)     | Knowledge services create rich knowledge resources that integrate into apps and services.          |
+|**Search**  ![Search](../media/ic-gm06-ai-icons-search.png)     | Enable apps and services to harness the power of a web-scale, ad-free search engine. Use search services to find information across billions of web pages, images, videos, and news search results.         |
 
 ## Azure Machine Learning Service
 
@@ -15,11 +26,6 @@ The [Azure Machine Learning service](https://azure.microsoft.com/services/machin
 
 The Azure Machine Learning service can auto-generate a model and auto-tune it for you. It will let you start training on your local machine, and then scale out to the cloud.  When you have the right model, you can easily deploy it in a container such as Docker in Azure. Use Machine Learning service if you work in a Python environment, you want more control over your machine learning algorithms, or you want to use open-source machine learning libraries.
 
-## Azure Machine Learning Studio
-
-![Azure Machine Learning Studio icon.](../media/icon-3.png)
-
-[Azure Machine Learning Studio](https://azure.microsoft.com/services/machine-learning-studio?azure-portal=true) is a collaborative, drag-and-drop visual workspace where you can build, test, and deploy machine learning solutions without needing to write code. It uses pre-built and pre-configured machine learning algorithms and data-handling modules. Use Machine Learning Studio when you want to experiment with machine learning models quickly and easily, and the built-in machine learning algorithms are enough for your solutions. It does not provide as much control over machine learning algorithms as the Machine Learning Service we discussed earlier. 
 
 > [!NOTE]
-> A full list of [Artificial Intelligence and Machine Learning services](https://azure.microsoft.com/services?azure-portal=true) is available.
+> A full list of [Artificial Intelligence and Machine Learning services](https://azure.microsoft.com/services?azure-portal=true#ai-machine-learning) is available.

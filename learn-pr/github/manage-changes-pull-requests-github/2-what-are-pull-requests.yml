@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-changes-pull-requests-github.2-what-are-pull-requests
+title: What are pull requests?
+metadata:
+  title: What are pull requests?
+  description: Learn how to manage changes to your repository source by using pull requests.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-are-pull-requests.md)]

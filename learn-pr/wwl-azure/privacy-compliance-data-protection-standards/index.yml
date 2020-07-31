@@ -3,9 +3,9 @@ uid: learn.wwl.examine-privacy-compliance-data-protection-standards
 metadata:
   title: Examine privacy, compliance, and data protection standards
   description: "Being able to trust in your cloud, trust in your solutions, and being able to use Azure, even when in a government role, are all key factors to picking your cloud provider. AZ-900"
-  ms.date: 06/25/2020
+  ms.date: 07/20/2020
   author: wwlpublish
-  ms.author: roberts
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Examine privacy, compliance, and data protection standards

@@ -9,7 +9,7 @@ Just as a blueprint allows an engineer or an architect to sketch a project's des
   :::column-end:::
 :::row-end:::
 
-![Screenshot showing the Azure Blueprints creation screen in the Azure portal](../media/5-azure-portal-blueprints.png)
+![Screenshot of Azure portal showing the Azure Blueprints creation screen with the Create button highlighted.](../media/5-azure-portal-blueprints.png)
 
 Azure Blueprints is a declarative way to orchestrate the deployment of various resource templates and other artifacts, such as:
 

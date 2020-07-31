@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.pandas-data-science.4-index-objects
+title: 'Manipulate data in pandas: Index objects'
+metadata:
+  title: 'Manipulate data in pandas: Index objects'
+  description: Learn how to manipulate data in pandas by using the Index object.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-index-objects.md)]

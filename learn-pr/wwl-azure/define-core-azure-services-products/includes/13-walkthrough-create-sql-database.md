@@ -1,7 +1,7 @@
 ## Exercise - SQL database
 
 > [!IMPORTANT]
-> A sandbox is provided to all you to complete this lab.  Otherwise, this Lab requires an Azure subscription.
+> A sandbox is provided to allow you to complete this lab.  Otherwise, this Lab requires an Azure subscription.
 
 ## Lab - Create a SQL database
 
@@ -20,7 +20,7 @@ In this task, we will create a SQL database based on the AdventureWorksLT sample
     | Setting | Value | 
     | --- | --- |
     | Subscription | **Choose Concierge Subscription** |
-    | Resource group | **[sandbox resource group name]** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | Database name| **db1** | 
     | | |
 
@@ -99,7 +99,7 @@ In this task, we will configure the SQL server and run a SQL query.
     ON pc.productcategoryid = p.productcategoryid;
     ```
 
-    ![Screenshot of the Query editor with the query pane and the commands executing successfully.](../media/query-editor .png)
+    ![Screenshot of the Query editor with the query pane and the commands executing successfully.](../media/query-editor.png)
 
 10. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
@@ -108,4 +108,6 @@ In this task, we will configure the SQL server and run a SQL query.
 Congratulations! You have created a SQL database in Azure and successfully queried the data in that database.
 
 > [!NOTE]
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
