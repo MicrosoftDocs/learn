@@ -1,4 +1,4 @@
-﻿## Introduction
+## Introduction
 
 When an application is outgrowing the local infrastructure that it's hosted on, you need to look at other options to meet its demands. Azure Cloud Services provides a number of platforms and service offerings to host applications.
 
