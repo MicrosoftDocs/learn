@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.explore-sla-lifecycle-azure-new.3-what-factors-impact-sla
+uid: learn.choose-azure-services-sla-lifecycle.3-what-factors-impact-sla
 title: What factors can impact an SLA?
 metadata:
   description: "Factors that impact service-level agreements"
