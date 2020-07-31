@@ -1,4 +1,4 @@
-Across this module, we have explored the Service Level Agreement available in Azure.  Knowing how much uptime each service has lets you calculate the uptime of the your applications.  This is valuable information in architecting solutions to best meet your needs.
+Across this module, we have explored the Service Level Agreement available in Azure.  Knowing how much uptime each service has, allows you calculate the uptime of your applications.  This information is valuable in architecting solutions to best meet your needs.
 
 You should now be able to:
 
