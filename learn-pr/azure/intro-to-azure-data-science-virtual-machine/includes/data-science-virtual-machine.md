@@ -1,6 +1,3 @@
-
-# What is the Azure Data Science Virtual Machine for Linux and Windows?
-
 The Data Science Virtual Machine (DSVM) is a VM that runs in the Azure cloud platform. There are Data Science Virtual Machine images for:
 
 - Windows Server 2019
