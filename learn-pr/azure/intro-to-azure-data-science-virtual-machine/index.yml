@@ -21,7 +21,6 @@ roles:
   - administrator
 products: 
   - azure-machine-learning 
-  # - azure-virtual-machines, azure-linux-virtual-machines, azure-virtual-windows-machines TODO: ? 
 units:
   - learn.azure.intro-to-data-science-virtual-machine.introduction
   - learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine
