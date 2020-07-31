@@ -4,7 +4,7 @@ You have seen about how to collect data in both Azure Monitor and Windows Perfor
 
 The Azure Monitor service includes the ability to track various metrics about the overall health of a given resource. Metrics are gathered at regular intervals and are the gateway for alerting processes that will help to resolve issues quickly and efficiently. Azure Monitor Metrics is a powerful subsystem that allows you to not only analyze and visualize your performance data, but to also trigger alerts that notify administrators or automated actions that can trigger an Azure Automation runbook or a webhook. You also have the option to archive your Azure Metrics data to Azure Storage, since active data is only stored for 93 days.
 
-## Creating metric alerts
+## Create metric alerts
 
 Utilizing the Azure portal, you can create alert rules, based on defined metrics, in the overview section of the Azure Monitor blade. Azure Monitor Alerts can be scoped in three ways. For example, using Azure Virtual Machines as an example you can specify the scope as:
 
@@ -42,7 +42,10 @@ Both types of alerts offer Booleans operators such as the 'greater than' or 'les
 
 :::image type="content" source="../media/module-44-optimize-resources-final-08.png" alt-text="A screenshot of a social media post Description automatically generated":::
 
-After creating the alert, in order to notify administrators or launch an automation process, an action group needs to be configured. Note that defining an action group is optional, and if one is not configured the alert will just log the notification to storage with no further action is taken. You can create a new action group from the metrics screen, by clicking **Add** next to Action Groups. You will then see this dialog:
+After creating the alert, in order to notify administrators or launch an automation process, an action group needs to be configured.
+
+>[!NOTE]
+>Defining an action group is optional, and if one is not configured the alert will just log the notification to storage with no further action is taken. You can create a new action group from the metrics screen, by clicking **Add** next to Action Groups. You will then see this dialog:
 
 :::image type="content" source="../media/module-44-optimize-resources-final-09.png" alt-text="A screenshot of a cell phone Description automatically generated":::
 
@@ -74,7 +77,7 @@ With an action group, there are several ways in which you can respond to the ale
 
 There are two categories to these actions—notification, which means notifying an administrator or group of administrators of an event, and automation, which is taking a defined action to respond to a performance condition.
 
-## Reviewing older performance data
+## Review older performance data
 
 One of the benefits of utilizing the Azure Monitor is the ability to easily and quickly review past metrics that were gathered. If you examine a resource, you’ll note a datetime picker in the upper right-hand corner. Azure Monitor Metrics will be retained for 93 days, after which they are purged, however you do have the option to archive them to Azure Storage.
 
