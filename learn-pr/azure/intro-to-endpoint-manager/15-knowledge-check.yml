@@ -14,37 +14,25 @@ durationInMinutes: 5
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which term from the list below would be viewed as benefits of using cloud services?"
+  - content: "What does Microsoft Endpoint Manager provide for an organization?"
     choices:
-    - content: 'Unpredictable costs'
-      isCorrect: false
-      explanation: "Cloud computing typically has very predictable 'pay-as-you-go' costing models."
-    - content: 'Elasticity'
+    - content: 'Endpoint Manager helps keep an organization's cloud and on-premises devices, apps, and data secure.'
       isCorrect: true
-      explanation: "Elasticity, Agility and Economies of scale are the correct answers, and would be seen as benefits that you can gain from using cloud services."
-    - content: 'Local reach only'
+      explanation: "Microsoft Endpoint Manager integrates Microsoft Intune and Microsoft Endpoint Configuration Manager to help protect devices, apps, and data."
+    - content: 'Endpoint Manager ensures an organization no longer needs credentials to access and share company data.'
       isCorrect: false
-      explanation: "While you can isolate cloud resources and make them private, most of the time the services are public facing and reachable over the internet."
-  - content: "Suppose you have two types of applications: legacy applications that require specialized mainframe hardware and newer applications that can run on commodity hardware. Which cloud deployment model would be best for you?"
+      explanation: "Microsoft Endpoint Manager ensures an organization is using proper credentials to access and share data."
+    - content: 'Endpoint Manager prevents remote devices and apps from access an organization's resources.'
+      isCorrect: false
+      explanation: "Microsoft Endpoint Manager ensures an organization is using proper credentials to access company devices, apps, and data."
+  - content: "What are endpoints?"
     choices:
-    - content: 'Public cloud'
+    - content: 'Endpoints are the policies that the users and groups of an organization use to safely transfer data.'
       isCorrect: false
-      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premises."
-    - content: 'Private cloud'
+      explanation: "Microsoft Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses."
+    - content: 'Endpoints are the end-users of an organization.'
       isCorrect: false
-      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premises."
-    - content: 'Hybrid cloud'
+      explanation: "Microsoft Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses."
+    - content: 'Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses.'
       isCorrect: true
-      explanation: "A hybrid cloud is a public and private cloud combined. You can run your new applications on commodity hardware you rent from the public cloud and maintain your specialized mainframe hardware on-premises."
-
-  - content: "You're developing an application and want to focus on building, testing, and deploying. You don't want to worry about managing the underlying hardware or software. Which cloud service type is best for you?"
-    choices:
-    - content: 'Infrastructure as a Service (IaaS)'
-      isCorrect: false
-      explanation: "Platform as a Service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
-    - content: 'Platform as a Service (PaaS)'
-      isCorrect: true
-      explanation: "Platform as a Service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
-    - content: 'Software as a Service (SaaS)'
-      isCorrect: false
-      explanation: "Platform as a Service is the best choice here because the PaaS services handle the IT management tasks for you, so you can focus on writing code."
+      explanation: "Microsoft Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses."
