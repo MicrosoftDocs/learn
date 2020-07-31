@@ -44,7 +44,7 @@ quiz:
       explanation: The size of a virtual machine does not affect its SLA.
     - content: Deploy extra instances of the same virtual machines across the different Availability Zones in the same Azure region.
       isCorrect: true
-      explanation: If one Availability Zones is impacted, your virtual machine instance in the other Availability Zone should be unaffected.
+      explanation: If one Availability Zone is impacted, your virtual machine instance in the other Availability Zone should be unaffected.
     - content: Do nothing. Using Azure Load Balancer increases the SLA for virtual machines.
       isCorrect: false
       explanation: Although Load Balancer can improve performance by distributing traffic, each service factors separately into the overall SLA.

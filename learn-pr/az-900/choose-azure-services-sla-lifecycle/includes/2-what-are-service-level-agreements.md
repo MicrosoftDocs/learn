@@ -103,7 +103,7 @@ For example, many Azure services provide a *Free* or *Shared* tier that provides
 
 ## How do I know when there's an outage?
 
-[Azure status](https://status.azure.com/status?azure-portal=true) provides a global view of the health of Azure services and regions. If you suspect there's an outage, this is a often a good place to start your investigation.
+[Azure status](https://status.azure.com/status?azure-portal=true) provides a global view of the health of Azure services and regions. If you suspect there's an outage, this is often a good place to start your investigation.
 
 Azure status provides an RSS feed of changes to the health of Azure services that you can subscribe to. You can connect this feed to communication software such as Microsoft Teams or Slack.
 
