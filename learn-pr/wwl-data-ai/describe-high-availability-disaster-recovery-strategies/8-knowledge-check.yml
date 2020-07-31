@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
@@ -32,10 +32,10 @@ quiz:
       explanation: "That's correct. Hybrid solutions span both on premises and Azure, or possibly Azure to another public cloud."
     - content: "A solution that uses two different database engines, for example, MySQL and SQL Server"
       isCorrect: false
-      explanation: "That's incorrect. A solution that uses two different database engines, for example, MySQL and SQL Server — This setup is known as a polyglot persistent solution, but is not hybrid."
+      explanation: "That's incorrect. A solution that uses two different database engines, for example, MySQL and SQL Server, is known as a polyglot persistent solution. It is not hybrid."
     - content: "A solution that spans two different versions of SQL Server"
       isCorrect: false
-      explanation: "That's incorrect. A solution that spans two different versions of SQL Server — This setup is also not an example of a hybrid solution."
+      explanation: "That's incorrect. A solution that spans two different versions of SQL Server is is also not an example of a hybrid solution."
   - content: "What is available after failover with database-level protection in SQL Server?"
     choices:
     - content: "Logins, Databases, and SQL Server Agent Job"
