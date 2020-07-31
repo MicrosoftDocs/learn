@@ -4,7 +4,7 @@ Many applications will require a VM running SQL Server. Some reasons for this op
 
 - **Use of other SQL Server services**—While Analysis Services and to an extent Integration Services (through the use of Azure Data Factory) are available as PaaS offerings, many users maximize their licensing by running SQL Server Analysis Services, Integration Services, or Reporting Services on the same machine as the database engine.
 
-- **General application incompatibility**—This reason is a somewhat of a catch-all. For example, Azure SQL Database doesn't support cross-database querying, while Managed Instance does. Some applications may require additional services to be co-located with the database instance in a manner that isn't compatible with a PaaS offering.
+- **General application incompatibility**—This reason is a somewhat of a catch-all. For example, Azure SQL Database doesn't support cross-database querying, while managed instance does. Some applications may require additional services to be co-located with the database instance in a manner that isn't compatible with a PaaS offering.
 
 Infrastructure as a Service (IaaS) allows the administrator to have more granular access over specific settings of the underlying infrastructure than the other Azure offerings. While the Azure platform manages the underlying server and network hardware, you still have access to the virtual storage, virtual networking configuration, and any additional software you might install within the virtual machine. This includes Microsoft SQL Server.
 

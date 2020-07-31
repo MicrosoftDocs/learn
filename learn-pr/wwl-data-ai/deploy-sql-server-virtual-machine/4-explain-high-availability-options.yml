@@ -4,12 +4,12 @@ title: Explain SQL Server high availability options
 metadata:
   title: Explain SQL Server high availability options
   description: "Explain SQL Server high availability options"
-  ms.date: 08/01/2020
+  ms.date: 08/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-explain-high-availability-options.md)]
