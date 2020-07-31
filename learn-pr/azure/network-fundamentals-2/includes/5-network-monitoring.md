@@ -42,7 +42,7 @@ To monitor your network, you'll need to use a secure network management protocol
 
 ### FCAPS
 
-When you manage a network, you deal with many different tasks and functions. These tasks and functions have been categorized to help us do them effectively. The categories are fault management, configuration management, accounting/administration and performance management, or FCAPS:
+When you manage a network, you deal with many different tasks and functions. These tasks and functions have been categorized to help us do them effectively. The categories are fault management, configuration management, accounting/administration, performance management, and security, or FCAPS:
 
 - **Fault management**. Relates to the processes and tasks used to identify and resolve faults on the network. Dealing with issues that might cause problems later is also classified as fault management.
 

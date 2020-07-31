@@ -39,7 +39,7 @@ An API token is issued by your IoT Central application and isn't associated with
 - **Application operator** grants access to API calls that create, edit, and delete devices.
 - Administrators can create custom roles that grant access to a selected set of features in the application.
 
-A bearer token is associated with an Azure Active Directory user account. You can generate a bearer token using the `az account get-access-token` CLI command. The caller is granted the same level of access that the Azure Active Directory user has in the IoT Central application.
+A bearer token is associated with an Azure Active Directory user account. You can generate a bearer token using the `az account get-access-token --resource https://apps.azureiotcentral.com` CLI command. The caller is granted the same level of access that the Azure Active Directory user has in the IoT Central application.
 
 ## IoT Central API token
 

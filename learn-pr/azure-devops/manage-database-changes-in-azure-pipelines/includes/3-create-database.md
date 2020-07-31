@@ -4,13 +4,13 @@ Mara has created a whiteboard drawing of the database tables and the relationshi
 
 ![Whiteboard drawing of the database tables and the relationships between them.](../media/3-database-diagram.png)
 
-The **Profiles** table ![Callout 1](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The **Achievements** table ![Callout 2](../../shared/media/callout-02.png) holds all of the possible achievements for this game.
+The **Profiles** table ![Callout 1 on the whiteboard drawing.](../../shared/media/callout-01.png) contains information about the player. Notice the *id* column. This field identifies the players and finds their related data. The **Achievements** table ![Callout 2 on the whiteboard drawing.](../../shared/media/callout-02.png) holds all of the possible achievements for this game.
 
 **Profiles** have a many-to-many relationship with achievements. That is, many profiles can have many achievements, and many achievements can be in many profiles.
 
-We need a table to define the specific profile and achievement relationship. This relationship table is the **ProfileAchievements** table ![Callout 3](../../shared/media/callout-03.png). Notice that the *profileId* relates to the *id* in the **Profiles** table. Similarly, the *achievementsId* relates to the *id* in the **Achievements** table.
+We need a table to define the specific profile and achievement relationship. This relationship table is the **ProfileAchievements** table ![Callout 3 on the whiteboard drawing.](../../shared/media/callout-03.png). Notice that the *profileId* relates to the *id* in the **Profiles** table. Similarly, the *achievementsId* relates to the *id* in the **Achievements** table.
 
-The **Scores** table ![Callout 4](../../shared/media/callout-04.png) holds score information for each player. This table relates to the **Profiles** table through the *profileId* column.
+The **Scores** table ![Callout 4 on the whiteboard drawing.](../../shared/media/callout-04.png) holds score information for each player. This table relates to the **Profiles** table through the *profileId* column.
 
 For learning purposes, here you bring up one instance of Azure SQL Database. The instance is connected to each App Service environment for the _Dev_, _Test_, and _Staging_ stages. In practice, you might associate a separate database instance with each environment. As you move toward _Staging_, instead of working with a small set of fictitious data, you might start working with a full copy of the real data that you run in production.
 
@@ -53,10 +53,10 @@ Mara creates the development database and populates it with test data. She expor
 1. Wait for the storage account to be created and then select **Go to resource**.
 1. Under **Services**, select **containers**.
 
-   ![Screenshot of the services section of the Containers page](../media/3-select-containers.png)
+   ![The services section of the Containers page.](../media/3-select-containers.png)
 
 1. On the **Containers** page, select **+ Container**.
-1. In the **Name** field, enter *bacpac* and select **OK**.
+1. In the **Name** field, enter *bacpac* and select **Create**.
 1. Select the **bacpac** container.
 1. On the **bacpac** page, select **Upload**.
 1. Upload the *tailspindatabase.bacpac* file that you downloaded earlier.
@@ -93,11 +93,11 @@ Here you import the *bacpac* file that you uploaded to Blob storage. You import 
 1. On the menu on the left, select **Overview** to go back to your **SQL server** overview page.
 1. Select **Import database**.
 
-   ![Screenshot of the "Import database" menu selection](../media/3-import-database-menu.png)
+   ![The "Import database" menu selection.](../media/3-import-database-menu.png)
 
 1. On the **Import database** page, select your subscription and then select **Storage - Configure required settings**.
 
-    ![Screenshot of the "Import database" page, highlighting the configure storage settings](../media/3-configure-storage-settings.png)
+    ![The "Import database" page, highlighting the configure storage settings.](../media/3-configure-storage-settings.png)
 
 1. On your **Storage accounts** page, select **spacegamedbstorageNNN**, where *NNN* is your number.
 1. On the **Containers** page, select **bacpac**.
@@ -153,7 +153,7 @@ The _Space Game_ web application reads from these tables to get the latest leade
 
 1. Expand **Tables** and then expand each table. You see four tables: **dbo.Profiles**, **dbo.Scores**, **dbo.Achievements**, and **dbo.ProfileAchievements**. You also see the columns and keys for each table.
 
-    ![Screenshot of the tables in the tailspin database](../media/3-database-tables.png)
+    ![The tables in the tailspin database in a list.](../media/3-database-tables.png)
 
 1. In the **Query 1** pane, enter the following SQL statement. Then select **Run**.
 
@@ -163,7 +163,7 @@ The _Space Game_ web application reads from these tables to get the latest leade
 
     This statement retrieves data from the **Profiles** table. The **Results** window displays the first 20 rows.
 
-    ![Screenshot of the query editor in the Azure portal, showing the data retrieved from the Profiles table](../media/3-select-all-profiles.png)
+    ![The query editor in the Azure portal showing the data retrieved from the Profiles table.](../media/3-select-all-profiles.png)
 
 1. Change the query as follows. Then select **Run**.
 

@@ -21,7 +21,7 @@ You are going to make the following changes to the inference pipeline:
 
 Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
 
-4. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction has not yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
+4. The inference pipeline assumes that new data will match the schema of the original training data, so the **Automobile price data (Raw)** dataset from the training pipeline is included. However, this input data includes the **price** label that the model predicts, which is unintuitive to include in new car data for which a price prediction has not yet been made. Delete this module and replace it with an **Enter Data Manually** module from the **Data Input and Output** section of the **Modules** tab, containing the following CSV data, which includes feature values without labels for three cars (copy and paste the entire block of text):
 
     ```CSV
     symboling,normalized-losses,make,fuel-type,aspiration,num-of-doors,body-style,drive-wheels,engine-location,wheel-base,length,width,height,curb-weight,engine-type,num-of-cylinders,engine-size,fuel-system,bore,stroke,compression-ratio,horsepower,peak-rpm,city-mpg,highway-mpg
@@ -31,7 +31,7 @@ Follow the remaining steps below, using the image and information above for refe
     ```
 
 5. Connect the new **Enter Data Manually** module to the same **dataset** input of the **Select Columns in Dataset** module as the **Web Service Input**.
-6. Now that you've changed the schema of the incoming data to exclude the **price** field, you need to remove any explicit uses of this field in the remaining modules. Select the **Select Columns in Dataset** module and then in the settings pane, edit the columns to remove the **Price** field.
+6. Now that you've changed the schema of the incoming data to exclude the **price** field, you need to remove any explicit uses of this field in the remaining modules. Select the **Select Columns in Dataset** module and then in the settings pane, edit the columns to remove the **price** field.
 7. The inference pipeline includes the **Evaluate Model** module, which is not useful when predicting from new data, so delete this module.
 8. The output from the **Score Model** module includes all of the input features as well as the predicted label. To modify the output to include only the prediction:
     - Delete the connection between the **Score Model** module and the **Web Service Output**.
@@ -55,7 +55,11 @@ Follow the remaining steps below, using the image and information above for refe
 > ![A visual inference pipeline](../media/inference-pipeline.png)
 
 10. Submit the pipeline as a new experiment named **predict-auto-price** on your compute cluster. This may take a while!
-11. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + Logs** tab, visualize the **Result dataset** to see the predicted prices for the three cars in the input data.
+
+    > [!NOTE]
+    > If an **invalid dataset(s)** error is displayed, refresh the browser page and resubmit the experiment.
+
+11. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + logs** tab, visualize the **Result dataset** to see the predicted prices for the three cars in the input data.
 12. Close the visualization window.
 
 Your inference pipeline predicts prices for cars based on their features. Now you're ready to publish the pipeline so that client applications can use it.

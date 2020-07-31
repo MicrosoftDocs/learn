@@ -63,10 +63,10 @@ def run(mini_batch):
 
 ## 3. Create a pipeline with a ParallelRunStep
 
-Azure Machine Learning provides a type of pipeline step specifically for performing parallel batch inferencing. Using the **ParallelRunStep** class, you can read batches of files from a **File** dataset and write the processing output to a **PipelinePata** reference. Additionally, you can set the **output_action** setting for the step to "append_row", which will ensure that all instances of the step being run in parallel will collate their results to a single output file named *parallel_run_step.txt*. The following code snippet shows an example of creating a pipeline with a **ParallelRunStep**:
+Azure Machine Learning provides a type of pipeline step specifically for performing parallel batch inferencing. Using the **ParallelRunStep** class, you can read batches of files from a **File** dataset and write the processing output to a **PipelineData** reference. Additionally, you can set the **output_action** setting for the step to "append_row", which will ensure that all instances of the step being run in parallel will collate their results to a single output file named *parallel_run_step.txt*. The following code snippet shows an example of creating a pipeline with a **ParallelRunStep**:
 
 ```python
-from azureml.contrib.pipeline.steps import ParallelRunConfig, ParallelRunStep
+from azurem.pipeline.steps import ParallelRunConfig, ParallelRunStep
 from azureml.pipeline.core import PipelineData
 from azureml.pipeline.core import Pipeline
 
@@ -78,9 +78,6 @@ default_ds = ws.get_default_datastore()
 output_dir = PipelineData(name='inferences',
                           datastore=default_ds,
                           output_path_on_compute='results')
-
-# Get the model
-model = ws.models['classification_model']
 
 # Define the parallel run step step configuration
 parallel_run_config = ParallelRunConfig(
@@ -96,7 +93,6 @@ parallel_run_config = ParallelRunConfig(
 # Create the parallel run step
 parallelrun_step = ParallelRunStep(
     name='batch-score',
-    models=[model],
     parallel_run_config=parallel_run_config,
     inputs=[batch_data_set.as_named_input('batch_data')],
     output=output_dir,

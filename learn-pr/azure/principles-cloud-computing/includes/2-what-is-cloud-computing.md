@@ -24,7 +24,7 @@ When you send an email, book a reservation on the Internet, pay a bill online, o
 When you build solutions using cloud computing, you can choose how you want work to be done based on your resources and needs. For example, if you want to have more control and responsibility over maintenance, you could create a _virtual machine_ (VM). A VM is an emulation of a computer - just like your desktop or laptop you're using now. Each VM includes an operating system and hardware that appears to the user like a physical computer running Windows or Linux. You can then install whatever software you need to do the tasks you want to run in the cloud.
   :::column-end:::
   :::column:::
-![Illustration showing a compute power gauge](../media/2-compute-power.png)
+:::image type="icon" border="false" source="../media/2-compute-power.png":::
   :::column-end:::
 :::row-end:::
 
@@ -46,7 +46,9 @@ The serverless model differs from VMs and containers in that you only pay for th
 
 Here's a diagram comparing the three compute approaches we've covered.
 
-![Diagram showing a comparison of virtual machines, containers, and serverless computing](../media/2-vm-vs-container-vs-serverless.png)
+:::image type="complex" source="../media/2-vm-vs-container-vs-serverless.png" alt-text="Diagram showing a comparison of virtual machines, containers, and serverless computing.":::
+    The three verticals, virtual machines, containers, and serverless, show different architectures. Virtual machines starts at physical hardware and has layers built on it: host operating system, hypervisor controller, and then two virtual machines on top with one running Linux and two apps and one running Windows and two apps. Containers starts with physical hardware with additional layers: host operating system, container engine, and then three containers, each with their own dependencies and hosted apps. Serverless starts with physical hardware with additional layers: host operating system, serverless runtime, and then eight functions.
+:::image-end:::
 
 :::row:::
   :::column span="3":::
@@ -63,7 +65,7 @@ Most devices and applications read and/or write data. Here are some examples:
 In all of these cases, data is either _read_ (looking up a price) or _written_ (taking a picture). The type of data and how it's stored can be different in each of these cases.
   :::column-end:::
   :::column:::
-![Illustration representing storage](../media/2-storage.png)
+:::image type="icon" border="false" source="../media/2-storage.png":::
   :::column-end:::
 :::row-end:::
 

@@ -173,7 +173,7 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
 1. Drag the following button to your running Eclipse workspace to install the Azure Toolkit for Eclipse plugin.
 
-   [![Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client](../media/3-eclipse-install-button.png)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
+   [![Screenshot of the Eclipse install button.](../media/3-eclipse-install-button.png)](https://marketplace.eclipse.org/marketplace-client-intro?mpc_install=1919278 "Drag to your running Eclipse* workspace. *Requires Eclipse Marketplace Client")
 
 1. The feature confirm dialog will open. Currently we have no optional feature, click **Confirm** to continue.
 
@@ -220,13 +220,13 @@ Installing the Azure Toolkit is the same across Windows, macOS, and Linux.
 
    The following screenshot shows the menu location of the **Settings** item.
 
-   :::image type="content" source="../media/9-intellij-open-settings.png" alt-text="Screenshot of Settings within the File menu of IntelliJ IDEA." loc-scope="third-party":::
+   :::image type="content" source="../media/9-intellij-open-settings.png" alt-text="Screenshot of IntelliJ IDEA File menu with the Settings item highlighted." loc-scope="third-party":::
 
 1. The **Settings** dialog will open. Select **Plugins** on the left, search `Azure Toolkit for IntelliJ` in plugin marketplace.
 
    The following screenshot shows the **Plugins** dialog as described above.
 
-   :::image type="content" source="../media/9-intellij-marketplace.png" alt-text="Screenshot of the Plugin window in IntelliJ IDEA." loc-scope="third-party":::
+   :::image type="content" source="../media/9-intellij-marketplace.png" alt-text="Screenshot of IntelliJ IDEA showing the Settings window with Plugin section selected and search results for Azure Toolkit for IntelliJ." loc-scope="third-party":::
 
 1. Click **Install**.
 

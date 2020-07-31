@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-resource-manager-template-vs-code.2-explore-template-structure
+title: Explore Azure Resource Manager template structure
+metadata:
+  title: Explore Azure Resource Manager template
+  description: Understand Azure Resource Manager template structure, how to write them, and how to deploy them to Azure.
+  ms.date: 07/08/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-explore-template-structure.md)]

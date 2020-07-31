@@ -42,7 +42,7 @@ The Completely Automated Public Turing test to tell Computers and Humans Apart (
 
 Attackers can create applications that are capable of automating the steps to log into accounts. A CAPTCHA presents an obfuscated image of a scenario, letters, or numbers, and the user is asked to explain what they see. Compared to humans, applications have difficulty identifying distorted photos, letters, and numbers. Humans can typically make out what is shown in a distorted image.
 
-However, keep in mind that this method might present difficulties for vision-impaired users.
+However, keep in mind that this method might present difficulties for users with a vision-impairment.
 
 ### Single sign-on
 

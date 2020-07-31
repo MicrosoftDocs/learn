@@ -31,7 +31,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-redis-cache
+- azure-cache-redis
 - azure-cloud-shell
 units:
 - learn.work-with-mutable-and-partial-data-in-a-redis-cache.1-introduction

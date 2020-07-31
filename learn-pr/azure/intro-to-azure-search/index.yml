@@ -20,7 +20,6 @@ abstract: |
 prerequisites: |
   - Beginner-level experience with C#
   - Familiarity with Azure Blob storage
-cardDescription: Use Azure Cognitive Search to make your data searchable.
 iconUrl: /learn/achievements/azure-introduction-to-azure-search.svg
 levels: 
 - beginner

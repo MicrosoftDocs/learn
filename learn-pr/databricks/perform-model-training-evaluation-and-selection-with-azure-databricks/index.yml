@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
 title: Train, evaluate, and select machine-learning models with Azure Databricks
 summary: Training a machine-learning model to have high predictive accuracy is crucial if you're a data scientist. This module focuses on basic and advanced techniques for training a machine-learning model and how these techniques are supported by Azure Databricks.
-cardDescription: Learn the fundamentals of using Azure Databricks notebooks for machine-learning model training, evaluation, and selection.
 abstract: | 
   In this module, you'll:
   - Train and evaluate the performance of regression models.

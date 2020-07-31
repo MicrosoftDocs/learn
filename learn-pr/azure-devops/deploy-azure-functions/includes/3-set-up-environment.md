@@ -61,7 +61,7 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Move the work item to Doing
 
-Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each *sprint*, or work iteration.
+Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
 
 This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -208,6 +208,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --name $leaderboardName \
       --resource-group $rgName \
       --storage-account $storageName \
+      --functions-version 3 \
       --consumption-plan-location <region>
     ```
 
@@ -220,7 +221,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --output table
     ```
 
-    Note the host name for each running service. You'll need the web host name later when you verify your work. Here's an example:
+    Note the host name for the running service. You'll need the web host name later when you verify your work. Here's an example:
 
     ```output
     HostName                                        State
@@ -237,7 +238,7 @@ This solution requires several Azure resources for deployment, which will be cre
       --output table
     ```
 
-    Note the host name for each running service. You'll need the leaderboard host name later when you verify your work. Here's an example:
+    Note the host name for the running service. You'll need the leaderboard host name later when you verify your work. Here's an example:
 
     ```output
     HostName                                                State
@@ -248,10 +249,6 @@ This solution requires several Azure resources for deployment, which will be cre
 1. Copy these two host names to a location you can easily access later.
 
 1. As an optional step, go to one or more of the host names. Verify that they're running and that the default home page appears.
-
-    Here's what you see:
-
-    ![The default home page on Azure App Service](../../shared/media/app-service-default.png)
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/learn/modules/deploy-azure-functions/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps. Cleaning up helps ensure that you're not charged for Azure resources after you complete this module. Be sure to perform the cleanup steps even if you don't complete this module.
@@ -272,7 +269,7 @@ To add the variables:
 
 1. Select **+ Variable group**.
 
-1. Under **Properties**, enter **Release** for the variable group name.
+1. Under **Properties**, enter *Release* for the variable group name.
 
 1. Under **Variables**, select **+ Add**.
 
@@ -302,20 +299,20 @@ Here you create a service connection that enables Azure Pipelines to access your
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, select **Service principal (automatic)**.
+1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
 1. Fill in these fields:
 
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Connection name | *Resource Manager - Tailspin - Space Game* |
-    | Scope level     | **Subscription**                             |
-    | Subscription    | Your Azure subscription                      |
-    | Resource Group  | **tailspin-space-game-rg**                   |
+    | Field                   | Value                                      |
+    |-------------------------|--------------------------------------------|
+    | Scope level             | **Subscription**                           |
+    | Subscription            | Your Azure subscription                    |
+    | Resource Group          | **tailspin-space-game-rg**                 |
+    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
 
-1. Select **OK**.
+1. Select **Save**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.

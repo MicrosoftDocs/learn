@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
 title: Deep learning with Azure Databricks
 summary: In this module, you'll investigate techniques for developing machine-learning models based on neural networks. The main purpose of this module is to build your understanding of deep learning.
-cardDescription: Investigate techniques for developing machine-learning models based on neural networks.
 abstract: | 
   In this module, you'll:
   - Identify how neural networks work and learn about use cases for deep-learning algorithms.

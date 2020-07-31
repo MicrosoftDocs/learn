@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>NA/migrate-an-asp.net-web-application-to-azure-with-the-app-service-migration-assistant</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <rect id="path-6" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-7"></path>
+        <filter x="-19.4%" y="-20.0%" width="138.7%" height="140.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="125.699103%" x2="50%" y2="6.86796686%" id="linearGradient-10">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#22A5CB" offset="11%"></stop>
+            <stop stop-color="#29BADE" offset="23%"></stop>
+            <stop stop-color="#2EC9EB" offset="37%"></stop>
+            <stop stop-color="#31D1F3" offset="53%"></stop>
+            <stop stop-color="#32D4F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.424581364%" x2="50%" y2="99.7525992%" id="linearGradient-11">
+            <stop stop-color="#C69AEB" offset="0%"></stop>
+            <stop stop-color="#BB90E4" offset="9%"></stop>
+            <stop stop-color="#926BC9" offset="49%"></stop>
+            <stop stop-color="#7854B8" offset="81%"></stop>
+            <stop stop-color="#6F4BB2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-12">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="50.0607015%" cy="49.8626431%" fx="50.0607015%" fy="49.8626431%" r="50.0961342%" gradientTransform="translate(0.500607,0.498626),scale(1.000000,0.999766),translate(-0.500607,-0.498626)" id="radialGradient-13">
+            <stop stop-color="#5EA0EF" offset="18%"></stop>
+            <stop stop-color="#0078D4" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50.3663004%" y1="101.282051%" x2="49.8168498%" y2="28.9377289%" id="linearGradient-14">
+            <stop stop-color="#CCCCCC" offset="0%"></stop>
+            <stop stop-color="#D7D7D7" offset="12%"></stop>
+            <stop stop-color="#EBEBEB" offset="42%"></stop>
+            <stop stop-color="#F8F8F8" offset="72%"></stop>
+            <stop stop-color="#FCFCFC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0.280898876%" id="linearGradient-15">
+            <stop stop-color="#CCCCCC" offset="0%"></stop>
+            <stop stop-color="#D7D7D7" offset="12%"></stop>
+            <stop stop-color="#EBEBEB" offset="42%"></stop>
+            <stop stop-color="#F8F8F8" offset="72%"></stop>
+            <stop stop-color="#FCFCFC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="99.7354497%" x2="50%" y2="0%" id="linearGradient-16">
+            <stop stop-color="#CCCCCC" offset="0%"></stop>
+            <stop stop-color="#D7D7D7" offset="12%"></stop>
+            <stop stop-color="#EBEBEB" offset="42%"></stop>
+            <stop stop-color="#F8F8F8" offset="72%"></stop>
+            <stop stop-color="#FCFCFC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-19" transform="translate(-159.000000, -319.000000)">
+            <g id="NA/migrate-an-asp.net-web-application-to-azure-with-the-app-service-migration-assistant" transform="translate(160.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Rectangle-Copy">
+                                <use fill="#0078D4" xlink:href="#path-6"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-7"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-8)" fill="#27C0F5">
+                            <g transform="translate(-1.886792, -1.886792)" id="Rectangle">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-2" filter="url(#filter-9)" transform="translate(18.875000, 19.000000)" fill-rule="nonzero">
+                    <g id="Icon-migrate-283-Azure-Database-Migration-Services" fill="url(#linearGradient-10)">
+                        <path d="M61.125,30.1801895 C60.9029294,23.361166 55.8715899,17.70019 49.2187896,16.7840012 C48.8208885,7.18293059 40.8877086,-0.300855589 31.4367871,0.00930219127 C23.8995735,-0.126019594 17.1046319,4.60371638 14.5052281,11.794805 C6.4967211,12.778759 0.390883351,19.5509996 0.125,27.7445189 C0.481410417,37.0296053 8.15008207,44.2788249 17.2884981,43.9692278 L18.7961027,43.9692278 L46.6288023,43.9692278 C46.8719625,44.0102574 47.1201161,44.0102574 47.3632763,43.9692278 C54.8634308,43.9074185 60.9581067,37.8006457 61.125,30.1801895 Z" id="Path"></path>
+                    </g>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="9.75" y="28" width="42.5" height="32" rx="0.6"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-12)" x="12.25" y="31" width="37.5" height="26" rx="0.3"></rect>
+                    <path d="M19.8515456,21.5269511 L30.1138614,11.3582387 C30.3444658,11.1289525 30.6582459,11 30.9855639,11 C31.312882,11 31.6266621,11.1289525 31.8572664,11.3582387 L42.1195823,21.5269511 C42.2552942,21.6860234 42.287996,21.9072517 42.2039895,22.097968 C42.119983,22.2886842 41.9337709,22.4159635 41.7233539,22.4264911 L35.4233221,22.4264911 C35.1169589,22.4264911 34.8686024,22.6716358 34.8686024,22.9740372 L34.8686024,35.5675965 C34.8965924,35.7589587 34.7787199,35.9417914 34.5912425,35.9978112 L27.5383768,35.9978112 C27.4193545,36.010286 27.3009977,35.9689859 27.2163631,35.8854458 C27.1317285,35.8019057 27.0898873,35.6850795 27.1025255,35.5675965 L27.1025255,22.9349267 C27.1086759,22.6729869 26.9259669,22.4434554 26.6666743,22.3873807 L20.247774,22.3873807 C20.0517959,22.3674159 19.8812513,22.2463439 19.7997242,22.0693038 C19.7181971,21.8922637 19.7379223,21.6858239 19.8515456,21.5269511 Z" id="Path" fill="#F2F2F2"></path>
+                    <g id="Icon-containers-103-App-Services" transform="translate(22.125000, 35.000000)">
+                        <path d="M14.21,15.72 C10.4986465,18.5974034 5.15740365,17.9213534 2.28000014,14.2099999 C-0.597403362,10.4986464 0.0786465971,5.15740358 3.79,2.28 L3.88,2.22 C7.61025787,-0.564440024 12.8862513,0.1694445 15.714978,3.86623163 C18.5437048,7.56301875 17.8727906,12.8473888 14.21,15.72" id="b82dad15-d623-4e89-93e3-286c94cd5912" fill="url(#radialGradient-13)"></path>
+                        <path d="M6.69,7.23 C9.0942952,4.94332101 12.2819615,3.66253026 15.6,3.65 C15.1641408,3.11082713 14.6637303,2.627209 14.11,2.21 C12.4958232,2.30957752 10.9101203,2.68149078 9.42,3.31 C7.88581865,3.96899536 6.49869257,4.92774427 5.34,6.13 C5.8969133,6.34137719 6.37049475,6.72725838 6.69,7.23 L6.69,7.23 Z" id="Path" fill="#FFFFFF" opacity="0.6"></path>
+                        <path d="M2.48,10.65 C2.13644927,11.5007184 1.85896125,12.3766445 1.65,13.27 C1.83462539,13.5909582 2.04181331,13.8983983 2.27,14.19 C2.45,14.42 2.62,14.63 2.82,14.84 C3.06161435,13.6497578 3.42347052,12.4871274 3.9,11.37 C3.36621797,11.2746954 2.87233245,11.0242746 2.48,10.65 L2.48,10.65 Z" id="Path" fill="#FFFFFF" opacity="0.6"></path>
+                        <path d="M3.46,6.11 C3.10711374,5.16296608 2.8752784,4.17514597 2.77,3.17 C2.35034601,3.61074765 1.98137926,4.0971129 1.67,4.62 C1.78287926,5.42984441 1.97376671,6.22688323 2.24,7 C2.55334374,6.59292865 2.97669485,6.28409054 3.46,6.11 L3.46,6.11 Z" id="Path" fill="#F2F2F2" opacity="0.55"></path>
+                        <circle id="Oval" fill="url(#linearGradient-14)" cx="4.38" cy="8.68" r="2.73"></circle>
+                        <path d="M8.36,13.67 C8.36075614,13.1910414 8.5555839,12.7328354 8.9,12.4 C7.97808098,11.8946779 7.12731757,11.2692155 6.37,10.54 C5.97428337,10.9681387 5.45232021,11.2588967 4.88,11.37 C5.33113254,11.8318132 5.81578649,12.2596457 6.33,12.65 C6.97027517,13.1334926 7.6569773,13.5522134 8.38,13.9 C8.36839103,13.8238436 8.36171047,13.7470172 8.36,13.67 L8.36,13.67 Z" id="Path" fill="#F2F2F2" opacity="0.55"></path>
+                        <path d="M14.66,13.88 C13.730713,13.8805612 12.804506,13.7731749 11.9,13.56 C11.904941,13.5965002 11.904941,13.6334998 11.9,13.67 C11.9013605,14.1346488 11.7178778,14.5807637 11.39,14.91 C12.5154393,15.132994 13.6644471,15.2136261 14.81,15.15 C15.2543747,14.7480944 15.6534181,14.2987514 16,13.81 C15.5550765,13.8593943 15.1076484,13.8827674 14.66,13.88 Z" id="Path" fill="#F2F2F2" opacity="0.55"></path>
+                        <circle id="Oval" fill="url(#linearGradient-15)" cx="10.13" cy="13.67" r="1.78"></circle>
+                        <path d="M12.32,8.93 C12.4082782,8.53883617 12.6225953,8.18749667 12.93,7.93 C11.2834108,6.73297233 9.78608506,5.34307803 8.47,3.79 C7.70302885,2.88930504 7.03269151,1.91061252 6.47,0.87 C6.09648074,0.981978218 5.73208259,1.12238851 5.38,1.29 C5.98218066,2.42305703 6.70288137,3.48902367 7.53,4.47 C8.93579145,6.1493095 10.5447821,7.64745115 12.32,8.93 L12.32,8.93 Z" id="Path" fill="#F2F2F2" opacity="0.7"></path>
+                        <circle id="Oval" fill="url(#linearGradient-16)" cx="14.18" cy="9.27" r="1.89"></circle>
+                        <path d="M17.35,10.54 L17,10.37 L17,10.37 L16.7,10.21 L16.64,10.21 L16.38,10 L16.31,10 L16,9.8 C15.892612,10.1682108 15.6678806,10.4912623 15.36,10.72 C15.48,10.8 15.61,10.87 15.74,10.94 L15.82,10.99 L16.17,11.18 L16.17,11.18 L17.03,11.63 L17.03,11.63 C17.1511805,11.266842 17.2480612,10.8960229 17.32,10.52 L17.35,10.54 Z" id="Path" fill="#F2F2F2" opacity="0.55"></path>
+                        <circle id="Oval" fill="url(#linearGradient-14)" cx="4.38" cy="8.68" r="2.73"></circle>
+                        <circle id="Oval" fill="url(#linearGradient-15)" cx="10.13" cy="13.67" r="1.78"></circle>
+                    </g>
+                </g>
+                <rect id="Rectangle" fill="#F2F2F2" fill-rule="nonzero" x="49" y="48" width="3" height="1" rx="0.11"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

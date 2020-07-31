@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge"
-  ms.date: 06/07/2020
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ quiz:
   questions:
   - content: "Which of the following descriptions accurately describes Azure Machine Learning?"
     choices:
-    - content: "A Python library that you can use as an alternative to common machine learning frameworks like Scikit-Learn, PyTorch, and Tensorflow"
+    - content: "A Python library that you can use as an alternative to common machine learning frameworks like Scikit-Learn, PyTorch, and Tensorflow."
       isCorrect: false
       explanation: "This is incorrect. Azure Machine Learning enables you to manage machine learning model data preparation, training, validation, and deployment. It supports existing frameworks such as Scikit-Learn, PyTorch, and Tensorflow; and provides a cross-platform platform for operationalizing machine learning in the cloud."
     - content: "A cloud-based platform for operating machine learning solutions at scale."
@@ -40,6 +40,6 @@ quiz:
     - content: "Save the experiment data in the outputs folder."
       isCorrect: false
       explanation: "That is incorrect. To record metrics in an experiment run, use the Run.log* methods."
-    - content: "Use the log* methods of the Run class to record named metrics."
+    - content: "Use the log\\* methods of the Run class to record named metrics."
       isCorrect: true
-      explanation: "That is correct. To record metrics in an experiment run, use the Run.log* methods."
+      explanation: "That is correct. To record metrics in an experiment run, use the Run.log\\* methods."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-relational-data-azure.introduction-to-sql
+title: Introduction to SQL
+metadata:
+  title: Introduction to SQL
+  description: "Introduction to SQL"
+  ms.date: 07/23/2020
+  author: wwlpublish
+  ms.author: cwsuseng
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-introduction-to-sql.md)]

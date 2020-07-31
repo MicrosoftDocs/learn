@@ -17,6 +17,7 @@ abstract: |
   - Share notebooks online
 prerequisites: None
 iconUrl: /learn/achievements/student-evangelism/analyze-climate-data-with-azure-notebooks-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

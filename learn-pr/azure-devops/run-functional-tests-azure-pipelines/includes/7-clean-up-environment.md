@@ -16,7 +16,7 @@ To clean up your resource group:
 
 1. Run the following `az group delete` command. The command deletes the resource group that you used in this module, **tailspin-space-game-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name tailspin-space-game-rg
     ```
 
@@ -24,7 +24,7 @@ To clean up your resource group:
 
 1. As an optional step, run the following `az group list` command after the previous command finishes.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 

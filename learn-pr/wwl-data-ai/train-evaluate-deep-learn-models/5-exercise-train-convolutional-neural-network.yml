@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.train-evaluate-deep-learn-models.exercise-train-convolutional-neural-network
+title: Exercise - Train a convolutional neural network
+metadata:
+  title: Exercise - Train a convolutional neural network
+  description: "Exercise - Train a convolutional neural network"
+  ms.date: 07/31/2020
+  author: wwlpublish
+  ms.author: cwsuseng
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise-train-convolutional-neural-network.md)]

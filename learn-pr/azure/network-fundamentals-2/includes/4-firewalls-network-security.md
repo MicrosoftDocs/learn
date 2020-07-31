@@ -105,7 +105,7 @@ Firewalls can perform several different functions across your network:
 
 - **Packet filtering firewalls** scrutinize each data packet as it travels through your network. Based on rules you configure, they decide whether to block the specific packet or not.
 
-- **Circuit-level firewalls** check whether TCP and DUP connections across your network are valid before data is exchanged. For example, this type of firewall might first check whether the source and destination addresses, the user, the time, and date meet certain defined rules. When these checks pass and a session starts, data is exchanged between parties without further scrutiny.
+- **Circuit-level firewalls** check whether TCP and UDP connections across your network are valid before data is exchanged. For example, this type of firewall might first check whether the source and destination addresses, the user, the time, and date meet certain defined rules. When these checks pass and a session starts, data is exchanged between parties without further scrutiny.
 
 - **Proxy server firewalls** control the information that goes into and out of a network. Firewall proxy servers provide safety and security by providing internet access to all devices on a network. This ability means the server can monitor, filter, and cache data requests to and from the network.
 

@@ -41,7 +41,6 @@ summary: |
 
   ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence:Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations).***
 
-cardDescription: The AI edge engineer learning path takes an engineering-led approach for the deployment of AI to edge devices within the framework of the cloud. This learning path helps the participants to learn skills in AI (broadly covering machine learning and deep learning algorithms), IoT and DevOps.
 prerequisites: None
 iconUrl: /learn/achievements/ai-edge-engineer.svg
 levels:
@@ -58,7 +57,7 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
-- azure-machine-learning-service
+- azure-machine-learning
 - azure-resource-manager
 - azure-virtual-machines
 modules:
@@ -69,7 +68,12 @@ modules:
 - learn.oxford.train-package-azure-ml-module-iot-edge
 - learn.oxford.intro-iot-funtions-iot
 - learn.oxford.deploy-cognitive-service-iot-edge-azure-func
+- learn.oxford.run-cognitive-services-iot-edge
 - learn.oxford.intro-mlops-iot-edge
+- learn.oxford.implement-cicd-iot-edge
 - learn.oxford.intro-azure-sphere
+- learn.oxford.image-classification-azure-sphere
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy

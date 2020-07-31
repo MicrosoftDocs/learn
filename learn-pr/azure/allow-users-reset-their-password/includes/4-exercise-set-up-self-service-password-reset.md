@@ -8,7 +8,7 @@ The default Azure Active Directory (Azure AD) organization in the Azure sandbox 
 1. Select **Create a resource** > **Identity** > **Azure Active Directory**.
 
    ![Screenshot that shows Azure Active Directory in the Azure Marketplace.](../media/4-create-active-directory.png)
-1. On the **Create directory** page, use these values, and then select **Create**.
+1. On the **Create tenant** page, use these values, and then select **Create**.
 
     | Property | Value |
     | --- | --- |

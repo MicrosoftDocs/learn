@@ -40,7 +40,7 @@ Next, you'll create a temporary app in App Center to explore the App Center serv
 
 1. Pick any one of the **Release Type** values for this temporary app. Notice the different options that available; for example: Alpha, Enterprise, Store, etc., or you can specify your own custom type.
 
-1. As you select the different **OS** options, notice whic platforms and languages are supported. For example, the platform options change between iOS and Android.
+1. As you select the different **OS** options, notice which platforms and languages are supported. For example, the platform options change between iOS and Android.
 
 1. Pick an **OS** value of your choice for this app.
 

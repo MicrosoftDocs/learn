@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.github.upload-project-github
+metadata:
+  title: "Upload your project by using GitHub best practices"
+  description: Learn to upload your existing project to GitHub.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Upload your project by using GitHub best practices"
+summary: Learn to upload your existing project to GitHub.
+abstract: |
+  In this module, you will:
+  - Identify where your code is stored
+  - Introduce code to a repository
+  - Create important Git files like a .gitignore
+  - Identify important next steps to manage your repository and add community involvement
+prerequisites: |
+  - A GitHub account
+iconUrl: /learn/achievements/github/upload-project-github.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.upload-project-github.1-introduction
+- learn.github.upload-project-github.2-how-to-upload-to-github
+- learn.github.upload-project-github.3-upload-your-repository-to-github
+- learn.github.upload-project-github.4-knowledge-check
+- learn.github.upload-project-github.5-summary
+badge:
+  uid: learn.github.upload-project-github.badge

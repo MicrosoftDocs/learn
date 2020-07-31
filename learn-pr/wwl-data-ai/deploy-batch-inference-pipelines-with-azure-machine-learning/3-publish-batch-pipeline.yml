@@ -4,7 +4,7 @@ title: Publishing a batch inference pipeline
 metadata:
   title: Publishing a batch inference pipeline
   description: "Learn how to publish a batch inference pipeline as a REST service."
-  ms.date: 06/07/2020
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial

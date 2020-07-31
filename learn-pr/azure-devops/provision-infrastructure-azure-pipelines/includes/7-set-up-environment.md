@@ -39,6 +39,8 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 1. Select **Yes, I want to fork this repository**, and then select **Authorize**.
 1. Select **Create Project**.
 
+    ![Creating a project through the Azure DevOps Demo Generator](../media/7-create-new-project.png)
+
     It takes a few moments for the template to run.
 1. Select **Fork repository on GitHub**, and then select **Authorize**. If a window appears, authorize access to your GitHub account.
 
@@ -54,7 +56,7 @@ From the Azure DevOps Demo Generator site, perform these steps to run the templa
 
 ## Move the work item to Doing
 
-In this part, you assign a work item to yourself on Azure Boards. The work item relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each sprint or work iteration.
+In this part, you assign a work item to yourself on Azure Boards. The work item relates to this module. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each sprint or work iteration.
 
 Assigning work in this way gives you a checklist. It gives others on your team visibility into what you're working on and how much work is left. It also helps the team enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -81,8 +83,6 @@ To set up the work item:
     ![Azure Boards showing the card in the Doing column](../media/7-azure-boards-wi1-doing.png)
 
 At the end of this module, you move the card to the **Done** column after you've completed the task.
-
-[!include[](../../shared/includes/enable-multi-stage-pipelines.md)]
 
 ## Prepare Visual Studio Code
 
@@ -127,7 +127,8 @@ At a minimum, complete the following steps. Run these commands from the Visual S
 
 In the [Deploy applications with Azure DevOps](https://docs.microsoft.com/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path, you forked and then cloned a Git repository that contains the source code for the _Space Game_ website. Your fork was connected to your projects in Azure DevOps so that the build runs when you push changes to GitHub.
 
-In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-automate](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
+> [!IMPORTANT]
+> In this learning path, we switch to a different Git repository, [mslearn-tailspin-spacegame-web-automate](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web-automate?azure-portal=true). When you ran the template to set up your Azure DevOps project, the process forked the repository automatically for you.
 
 In this part, you clone your fork locally so that you can make changes and build out your pipeline configuration.
 
@@ -248,20 +249,20 @@ Create a service connection that enables Azure Pipelines to access your Azure su
 1. From the bottom corner of the page, select **Project settings**.
 1. Under **Pipelines**, select **Service connections**.
 1. Select **New service connection**, then choose **Azure Resource Manager**, then select **Next**.
-1. Near the top of the page, select **Service Principal Authentication**.
+1. Near the top of the page, **Service principal (automatic)**. Then select **Next**.
 1. Fill in these fields:
 
-    | Field               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Connection name | *Resource Manager - Tailspin - Space Game* |
-    | Scope level     | **Subscription**                             |
-    | Subscription    | Your Azure subscription                      |
-    | Resource Group  | Leave this blank to include all resource groups. |
+    | Field                   | Value                                      |
+    |-------------------------|--------------------------------------------|
+    | Scope level             | **Subscription**                           |
+    | Subscription            | Your Azure subscription                    |
+    | Resource Group          | **(leave blank)**                          |
+    | Service connection name | *Resource Manager - Tailspin - Space Game* |
 
     During the process, you might be prompted to sign in to your Microsoft account.
 
-1. Ensure that **Allow all pipelines to use this connection** is selected.
+1. Ensure that **Grant access permission to all pipelines** is selected.
 
-1. Select **OK**.
+1. Select **Save**.
 
     Azure DevOps performs a test connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you have the chance to sign in a second time.

@@ -167,8 +167,7 @@ California. The columns represent everyone in the U.S.A., everyone in
 California, children in the U.S.A., and children in California. The body
 of the table contains proportions in the different categories. Each
 column shows the distribution of ethnicities in the group of people
-corresponding to that column. So in each column, the entries add up to
-1.
+corresponding to that column. So in each column, the entries add up to 1.
 
 ``` python
 usa_ca = Table.read_table(path_data + 'usa_ca_2014.csv')

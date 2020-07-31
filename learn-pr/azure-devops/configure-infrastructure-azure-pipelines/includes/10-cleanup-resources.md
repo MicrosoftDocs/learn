@@ -14,19 +14,19 @@ To clean up your resource groups:
 1. In Visual Studio Code, go to your Cloud Shell session.
 1. Run the following `az group delete` command to delete the resource group for your VM deployment, **learn-ansible-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name learn-ansible-rg --yes
     ```
 
 1. Run the following `az group delete` command to delete the resource group for your control machine, **learn-ansible-control-machine-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name learn-ansible-control-machine-rg --yes
     ```
 
 1. As an optional step, run the following `az group list` command after the previous command finishes.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 

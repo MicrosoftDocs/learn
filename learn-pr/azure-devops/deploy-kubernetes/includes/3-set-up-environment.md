@@ -61,7 +61,7 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Move the work item to Doing
 
-Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each *sprint*, or work iteration.
+Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
 
 This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -296,7 +296,7 @@ Here you create service connections that enable Azure Pipelines to access your A
     | Service connection name | *Container Registry Connection*          |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
-1. Select **OK**.
+1. Select **Save**.
 
 1. Select **New service connection**, then choose **Kubernetes**, then select **Next**.
 1. Near the top of the page, select **Azure Subscription**.
@@ -310,7 +310,7 @@ Here you create service connections that enable Azure Pipelines to access your A
     | Service connection name | *Kubernetes Cluster Connection*          |
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
-1. Select **OK**.
+1. Select **Save**.
 
 ### Create the environment
 

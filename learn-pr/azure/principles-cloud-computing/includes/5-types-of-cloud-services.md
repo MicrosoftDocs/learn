@@ -2,7 +2,7 @@ When talking about cloud computing, there are three major categories. It's impor
 
 ## Explore the three categories of cloud computing
 
-#### IaaS versus SaaS versus PaaS
+#### IaaS versus PaaS versus SaaS
 
 [//]: # (Video temporarily removed until confusing graphics can be updated.)
 [//]: # (> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yEbs])

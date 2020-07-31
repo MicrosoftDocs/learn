@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your knowledge"
-  ms.date: 06/07/2020
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -17,13 +17,13 @@ quiz:
     choices:
     - content: "create"
       isCorrect: false
-      explanation: "That is incorrect. Use the create_from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the create_from_existing_conda_environment requires an existing environment on the computer."
-    - content: "create_from_conda_specification"
+      explanation: "That is incorrect. Use the from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the from_existing_conda_environment requires an existing environment on the computer."
+    - content: "from_conda_specification"
       isCorrect: true
-      explanation: "That is correct. Use the create_from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the create_from_existing_conda_environment requires an existing environment on the computer."
-    - content: "create_from_existing_conda_environment"
+      explanation: "That is correct. Use the from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the from_existing_conda_environment requires an existing environment on the computer."
+    - content: "from_existing_conda_environment"
       isCorrect: false
-      explanation: "That is incorrect. Use the create_from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the create_from_existing_conda_environment requires an existing environment on the computer."
+      explanation: "That is incorrect. Use the from_conda_specification method to create an environment from a configuration file. The create method requires you to explicitly specify conda and pip packages, and the from_existing_conda_environment requires an existing environment on the computer."
   - content: "You must create a compute target for training experiments that require a graphical processing unit (GPU). You want to be able to scale the compute so that multiple nodes are started automatically as required. Which kind of compute target should you create?"
     choices:
     - content: "Compute Instance"

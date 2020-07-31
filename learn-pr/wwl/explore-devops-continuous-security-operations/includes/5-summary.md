@@ -2,18 +2,15 @@
 
 Your organization supports a critical business web application deployed across the globe in multiple regions. The infrastructure includes thousands of components. **Security is not something you can add at the end of the project and a fluent operation process is essential to maintain platform health.**
 
-Continuous Security is a practice that ensures security is an integral part of the software delivery lifecycle. It maintains a holistic view of:
+The best approach to addressing security is to assume that you have been breached.
 
-- Secure architecture
-- Governance, risk, and compliance
-- App security
-- Data security
-- Infrastructure security
-- Operations security
-- Endpoint security  
-- Identity and access security  
+Continuous Security is a practice that requires three essential elements:
 
-In a traditional software development lifecycle, security is often considered in the testing stages as part of a security resilience test. Collaboration between operations, security and compliance, and developers is often done reactively through incident management and problem management processes. With Continuous Security, collaboration between Development, Security, and Operations is continuous. When Development, Security, and Operations come together to fix production issues, they have already worked together. Additionally, instead of doing security at the last step, in Operations, it can be incorporated earlier and in an integrated way.
+- A strong security-focus for the organization’s culture
+- An infrastructure implemented and operated by adopting the latest security recommended practices
+- Software delivery focused on security, like Microsoft’s own Security Development Lifecycle (SDL)
+  
+When these factors are combined with the three principles of shifting left, automation, and continuous improvement, they represent a holistic approach to security in DevOps.
 
 Always assume you have been breached. Make defense-in-depth at each level central to your organization’s security posture. Remember that your organization can grow their security DevOps culture by promoting awareness, building security principles, and living by them.
 

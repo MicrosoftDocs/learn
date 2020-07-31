@@ -1,6 +1,6 @@
 Azure Machine Learning supports data drift monitoring through the use of *datasets*. You can compare two registered datasets to detect data drift, or you can capture new feature data submitted to a deployed model service and compare it to the dataset with which the model was trained.
 
-## Monitoring data drift by comparing datasets
+## Monitor data drift by comparing datasets
 
 It's common for organizations to continue to collect new data after a model has been trained. For example, a health clinic might use diagnostic measurements from previous patients to train a model that predicts diabetes likelihood, but continue to collect the same diagnostic measurements from all new patients. The clinic's data scientists could then periodically compare the growing collection of new data to the original training  data, and identify any changing data trends that might affect model accuracy.
 
@@ -32,7 +32,7 @@ import datetime as dt
 backfill = monitor.backfill( dt.datetime.now() - dt.timedelta(weeks=6), dt.datetime.now())
 ```
 
-## Monitoring data drift in service inference data
+## Monitor data drift in service inference data
 
 If you have deployed a model as a real-time web service, you can capture new inferencing data as it is submitted, and compare it to the original training data to detect data drift. This is a little more complex to set up initially than using a dataset monitor, but has the benefit of automatically collecting new target data as the deployed model is used.
 

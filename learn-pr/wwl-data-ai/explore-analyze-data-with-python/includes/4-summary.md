@@ -1,0 +1,3 @@
+In this module, you learned how to use Python to explore, visualize, and manipulate data. Data exploration is at the core of data science, and is a key element in data analysis and machine learning.
+
+In the hands-on exercise in this module, you used Python in Visual Studio Code. Visual Studio Code has comprehensive support for the Python language and utilities, such as Jupyter Notebooks. For more information about using Python on Visual Studio Code, see the [Visual Studio Code documentation](https://code.visualstudio.com/docs/languages/python).
