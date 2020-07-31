@@ -1,4 +1,4 @@
-﻿This module has allowed you to see Azure in action. It showcases how Azure enables organizations to move workloads to the cloud without changes to the production code of their line-of-business apps. Being able to demo the capabilities and benefits of Azure highlights the options Azure offers for innovation and modernization. It can also help you evaluate a move to the cloud.
+This module has allowed you to see Azure in action. It showcases how Azure enables organizations to move workloads to the cloud without changes to the production code of their line-of-business apps. Being able to demo the capabilities and benefits of Azure highlights the options Azure offers for innovation and modernization. It can also help you evaluate a move to the cloud.
 
 In this module, you've seen:
 
