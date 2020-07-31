@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-databases-for-performance.describe-query-store-azure-database-for-mysql-postgresql
-title: Describe query store in Azure database for MySQL and postgreSQL
+title: Describe query store in Azure database for MySQL and PostgreSQL
 metadata:
-  title: Describe query store in Azure database for MySQL and postgreSQL
-  description: "Describe query store in Azure database for MySQL and postgreSQL"
-  ms.date: 08/01/2020
+  title: Describe query store in Azure database for MySQL and PostgreSQL
+  description: "Describe query store in Azure database for MySQL and PostgreSQL"
+  ms.date: 08/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-describe-query-store-azure-database-mysql-postgresql.md)]

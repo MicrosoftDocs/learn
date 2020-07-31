@@ -4,7 +4,7 @@ One of the value-added features in Azure Database for MySQL and PostgreSQL is an
 
 The Query Store in MySQL allows you to track query performance over time and quickly identify the longest running and most expensive queries in your databases. The data for all users, databases, and queries is stored in the **mysql** schema database in your instance. Like Azure SQL Database, the Azure portal includes a Query Performance Insight dashboard, which highlights expensive queries and wait statistics for your instance.
 
-:::image type="content" source="../media/module-44-optimize-resources-final-24.png" alt-text="Query Performance Insight waits statistics":::
+[![Query Performance Insight waits statistics](../media/module-44-optimize-resources-final-24.png)](../media/module-44-optimize-resources-final-24.png#lightbox)
 
 The Azure portal also includes a performance recommendations section based on the data in the Query Store.
 

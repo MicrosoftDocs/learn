@@ -3,9 +3,9 @@ uid: learn.wwl.configure-databases-for-performance
 metadata:
   title: Configure databases for performance
   description: "Control database-level configuration options. Explore Intelligent Query Processing. Configure Open Source databases for optimum performance."
-  ms.date: 08/01/2020
+  ms.date: 08/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure databases for performance
@@ -17,7 +17,7 @@ abstract: |
   - Explore performance monitoring options in Azure Database for PostgreSQL and MySQL
 prerequisites: |
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
-  - Experience creating and configuring resources using the Azure Portal.
+  - Experience creating and configuring resources using the Azure portal.
   - Ability to set options for a SQL Server database.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

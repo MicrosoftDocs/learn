@@ -22,7 +22,7 @@ Database scoped options were introduced in SQL Server 2016, and allow configurat
 
 - Maximum Degree of Parallelism - This setting allows for a database to configure its own MaxDOP setting and override the server’s setting.
 
-- Legacy Cardinality Estimation - This setting allows for the database to use the older cardinality estimator. Some queries may have degraded performance under the newer cardinality estimator, introduced in SQL Server 2014, and may benefit from this setting. You should note that if you use this option in conjunction with a newer combability level, you can still get the benefits of Intelligent Query Processing in compatibility level 140 or 150.
+- Legacy Cardinality Estimation - This setting allows for the database to use the older cardinality estimator. Some queries may have degraded performance under the newer cardinality estimator, introduced in SQL Server 2014, and may benefit from this setting. You should note that if you use this option in conjunction with a newer compatibility level, you can still get the benefits of Intelligent Query Processing in compatibility level 140 or 150.
 
 - Last Query Plan Stats - This allows you to capture the values of the last actual execution plan for a query. This feature is only active in compatibility level 150.
 
