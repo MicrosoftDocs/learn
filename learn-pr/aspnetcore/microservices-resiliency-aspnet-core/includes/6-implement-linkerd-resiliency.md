@@ -17,15 +17,14 @@ Before applying Linkerd, let's revert the app to a state before we added code-ba
 
 You may verify the app is again failing as expected using the same steps as before:
 
-1. Sign in to the app.
 1. Select the **.NET FOUNDATION PIN**.
-1. Select the basket icon at the top right of the page.
+1. Select the basket icon.
 1. Select **CHECKOUT**.
 1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
 1. Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
 1. Verify that you receive the message **ERROR: 500 - Internal Server Error!** immediately after selecting **APPLY** each time.
 
-### Validate your Kubernetes cluster
+### Validate the AKS cluster
 
 The setup script installed the Linkerd CLI. Run the following command to confirm that Linkerd prerequisites have been satisfied:
 
@@ -81,7 +80,12 @@ Run the following command:
 linkerd install | kubectl apply -f -
 ```
 
-You'll see the list of objects being created:
+In the preceding command:
+
+* `linkerd install` generates a Kubernetes manifest with the necessary control plane resources.
+* The generated manifest is piped to `kubectl apply`, which installs those control plane resources in the AKS cluster.
+
+The first line of the output shows that the control plane was installed in its own `linkerd` namespace. The remaining output represents the objects being created.
 
 ```console
 namespace/linkerd created
@@ -91,7 +95,7 @@ serviceaccount/linkerd-identity created
 clusterrole.rbac.authorization.k8s.io/linkerd-linkerd-controller created
 ```
 
-### Verify Linkerd deployment
+### Validate the Linkerd deployment
 
 Run the following command:
 
@@ -99,7 +103,7 @@ Run the following command:
 linkerd check
 ```
 
-The output is a checklist similar to that of the pre-install and will resemble the following text:
+The preceding command analyzes the configurations of the Linkerd CLI and control plane. If Linkerd is configured correctly, the following output is displayed:
 
 ```console
 linkerd-version
@@ -125,9 +129,16 @@ linkerd-grafana
 Status check results are √
 ```
 
+> [!TIP]
+> To see a list of Linkerd components that were installed, run the following command:
+>
+> ```bash
+> kubectl -n linkerd get deploy
+> ```
+
 ## Configure the app to use Linkerd
 
-Linkerd has been deployed, but it hasn't been configured and app behavior is unchanged. Linkerd only retries routes configured in the `ServiceProfile` manifest. For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each, you will:
+Linkerd has been deployed, but it hasn't been configured. The app's behavior is unchanged. Linkerd only retries routes configured in the `ServiceProfile` manifest. For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each, you will:
 
 * Modify the deployments so Linkerd creates its proxy container in the pods.
 * Add a `ServiceProfile` object to the cluster to configure the retries on the selected route.
@@ -135,16 +146,16 @@ Linkerd has been deployed, but it hasn't been configured and app behavior is unc
 
 ### Modify the `webshoppingagg` and `coupon` deployments
 
-1. Add the highlighted annotations to the `coupon` chart *deployment.yaml* file (*deploy/k8s/helm-simple/coupon/templates/deployment.yaml*):
+1. Uncomment the following lines in the `coupon` chart *deployment.yaml* file (*deploy/k8s/helm-simple/coupon/templates/deployment.yaml*). Save your changes.
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/templates/6-deployment.yaml" highlight="18-19":::
 
     The `linkerd.io/inject: enabled` annotation instructs Linkerd to add the `linkerd-proxy` container when creating the pod.
 
-    > [!NOTE]
+    > [!IMPORTANT]
     > It's important to maintain correct indentation in YAML manifests.
 
-1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart *deployment.yaml* file (*deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml*):
+1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart *deployment.yaml* file (*deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml*). Save your changes.
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/webshoppingagg/templates/6-deployment.yaml" highlight="18-19":::
 
@@ -182,11 +193,10 @@ The updated pods each have two containers now (`0/2`). One is the service contai
 
 :::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers" border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
 
-## Explore the app with Linkerd
+## Test the app again
 
-Test the app's behavior with Linkerd by completing the following steps:
+After the redeployed containers are healthy, test the app's behavior with Linkerd. Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service. Complete the following steps to test the retry policy:
 
-1. Sign in to the app.
 1. Select the **.NET FOUNDATION PIN**.
 1. Select the basket icon.
 1. Select **CHECKOUT**.
@@ -194,7 +204,7 @@ Test the app's behavior with Linkerd by completing the following steps:
 1. Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
 1. Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
 
-    This time, you receive the correct response almost immediately.
+    The correct response is received immediately. An error indicating that this coupon has already been redeemed is displayed.
 
 1. Check the log traces for the following messages:
 

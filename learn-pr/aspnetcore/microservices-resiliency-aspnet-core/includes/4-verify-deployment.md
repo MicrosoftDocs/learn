@@ -24,12 +24,12 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
 
 ```console
-The eShop-Learn application has been deployed.
+The eShop-Learn application has been deployed to "http://13.87.153.177" (IP: 13.87.153.177).
 
-You can begin exploring these services (when available):
-- Centralized logging       : http://13.83.97.100/seq/#/events?autorefresh (See transient failures during startup)
-- General application status: http://13.83.97.100/webstatus/ (See overall service status)
-- Web SPA application       : http://13.83.97.100/
+You can begin exploring these services (when ready):
+- Centralized logging       : http://13.87.153.177/seq/#/events?autorefresh (See transient failures during startup)
+- General application status: http://13.87.153.177/webstatus/ (See overall service status)
+- Web SPA application       : http://13.87.153.177/
 ```
 
 > [!TIP]
@@ -53,7 +53,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     :::image type="content" source="../media/4-verify-deployment/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../media/4-verify-deployment/eshop-spa.png":::
 
 1. Complete a purchase as follows:
-    1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
+    1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page. Select the **Remember me?** check box to avoid signing in again.
     1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
@@ -62,20 +62,16 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 ## Explore the response of a non-resilient app
 
-Complete the following steps to see how the app responds without a resiliency solution in place.
-
-### Purchase some merchandise
-
-To configure a simulated failure, you need at least one item in the basket. Complete the following steps:
-
-1. Select the **CONTINUE SHOPPING** button.
-1. Sign in to *eShopOnContainers*.
-1. Select the **.NET FOUNDATION PIN**.
-1. Select the basket icon at the top right of the page.
-1. Select **CHECKOUT**.
+You've successfully verified that the app was deployed to AKS and is working properly. Complete the following steps to see how the app responds without a resiliency solution in place.
 
 ### Configure simulated failure
 
+The coupon service was designed to simulate failures on demand. Configuration of simulated failures is accomplished with a special syntax for coupon codes. To simulate a failure, you need at least one item in the basket. Complete the following steps:
+
+1. Select the **CONTINUE SHOPPING** button.
+1. Select the **.NET FOUNDATION PIN**.
+1. Select the basket icon.
+1. Select **CHECKOUT**.
 1. In the **HAVE A DISCOUNT CODE?** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 2 DISC-10":::*.
 
     This code causes the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
@@ -89,12 +85,13 @@ This configuration causes the next two requests for the *:::no-loc text="DISC-10
 
 ### Apply the failing discount coupon
 
-1. In the **HAVE A DISCOUNT CODE?** text box, remove the coupon code *:::no-loc text="FAIL 2":::*, leaving only *:::no-loc text="DISC-10":::*.
+1. In the **HAVE A DISCOUNT CODE?** text box, replace the existing value with *:::no-loc text="DISC-10":::*.
 1. Select the **APPLY** button. You'll receive the message **ERROR: 500 - Internal Server Error!**.
 1. Select the **APPLY** button again. You'll receive the same message once more.
 1. Select the **APPLY** button for a third time. This time, the code validation succeeds and the discount is applied to the order.
+1. Select the **Centralized logging** link in the command shell to view the Seq logs.
 
-In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, notice that you received the error message immediately. Check the log traces. You'll see something like the following output:
+In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, notice that you received the error message immediately. Check the log traces. You'll see a variation of the following output:
 
 :::image type="content" source="../media/4-verify-deployment/non-resilient-failures.png" alt-text="non-resilient failures" border="true" lightbox="../media/4-verify-deployment/non-resilient-failures.png":::
 

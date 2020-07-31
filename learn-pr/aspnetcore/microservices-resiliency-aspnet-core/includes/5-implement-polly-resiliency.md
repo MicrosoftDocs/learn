@@ -97,6 +97,8 @@ Complete the following steps to implement failure handling for the coupon servic
 
         Importing the preceding namespaces resolves member references in the `GetRetryPolicy` and `GetCircuitBreakerPolicy` methods.
 
+1. 
+
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
 1. Return to your previous location by running the following command:
@@ -109,13 +111,13 @@ Complete the following steps to implement failure handling for the coupon servic
 
 Complete the following steps to deploy the changes that you've implemented:
 
-1. Run the following script to publish the updated image to ACR:
+1. Run the following script to publish the updated Docker image to ACR:
 
     ```bash
     ./deploy/k8s/build-to-acr.sh --services webshoppingagg
     ```
 
-    The preceding script builds and publishes the updated image to the ACR instance. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build the `webshoppingagg` image and push it to the ACR instance. You'll see a variation of the following output:
+    The preceding script builds and publishes the updated image to the ACR instance. An [ACR quick task](/azure/container-registry/container-registry-tasks-overview#quick-task) is used to build and publish the `webshoppingagg` image to the ACR instance. You'll see a variation of the following output:
 
     ```console
     Building images to ACR
@@ -176,7 +178,7 @@ Complete the following steps to deploy the changes that you've implemented:
 1. Run the following script to deploy the updated image in ACR to AKS:
 
     ```bash
-    ./deploy/k8s/deploy-application.sh --charts webshoppingagg 
+    ./deploy/k8s/deploy-application.sh --registry $ESHOP_REGISTRY --charts webshoppingagg
     ```
 
     The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
@@ -188,12 +190,12 @@ Complete the following steps to deploy the changes that you've implemented:
     Uninstalling chart webshoppingagg...
     release "eshoplearn-webshoppingagg" uninstalled
 
-    Deploying Helm charts from registry "eshopdev" to "http://20.189.128.128"...
+    Deploying Helm charts from registry "eshoplearn20200731194920286.azurecr.io" to "http://13.87.153.177"...
     ---------------------
 
     Installing chart "webshoppingagg"...
     NAME: eshoplearn-webshoppingagg
-    LAST DEPLOYED: Tue Jul 28 22:05:13 2020
+    LAST DEPLOYED: Fri Jul 31 20:38:05 2020
     NAMESPACE: default
     STATUS: deployed
     REVISION: 1
@@ -202,14 +204,18 @@ Complete the following steps to deploy the changes that you've implemented:
     Helm charts deployed!
     ```
 
-## Explore the system response when implementing resiliency
+## Test the app again
 
-### Simple retries
+### Retry policy
 
-You're going to repeat what was done in the initial exploration, only you've already deployed the resilient BFF.
+Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service. Complete the following steps to test the retry policy:
 
-Consider the situation in which you configure the same two coupon failures with the code *:::no-loc text="FAIL 3 DISC-10":::*. When you enter the *:::no-loc text="DISC-10":::* code, it will take a few seconds to get the response back. Fortunately, you won't have to deal with the retrying.
+1. In the **HAVE A DISCOUNT CODE?** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 2 DISC-10":::*.
+1. Select the **APPLY** button.
 
+    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!!**.
+1. In the **HAVE A DISCOUNT CODE?** text box, replace the existing value with *:::no-loc text="DISC-10":::*.
+1. Select the **APPLY** button. The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective.
 1. Run the following command to view the logging page URL. Select the **Centralized logging** link.
 
     ```bash
@@ -224,35 +230,38 @@ Consider the situation in which you configure the same two coupon failures with 
 
     - The log traces when configuring the simulated failures (#1) and
     - Three retries until the aggregator could finally get the value (#2).
+1. Complete the checkout procedure and select **CONTINUE SHOPPING**.
 
-### Circuit Breaker
+### Circuit Breaker policy
 
-For this case, you'll configure the code for 20 failures, using *:::no-loc text="FAIL 20 DISC-10":::*:
+To test the Circuit Breaker policy, you'll configure the code for 20 failures. Accordingly, you'll use the code *:::no-loc text="FAIL 20 DISC-10":::*:
 
 :::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure" border="true" lightbox="../media/5-implement-polly-resiliency/configure-severe-failure.png":::
 
-Complete the following steps:
+Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service, this time for 20 consecutive failures. Complete the following steps:
 
+1. In the **HAVE A DISCOUNT CODE?** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 20 DISC-10":::*.
+1. Select the **APPLY** button.
+
+    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 20 failure(s) configured for code "DISC-10"!!**.
 1. In the **HAVE A DISCOUNT CODE?** text box, enter the code *:::no-loc text="DISC-10":::* again and select **APPLY**.
-1. Wait about 20 seconds to get the HTTP 500 error message. When you do, select **APPLY** again.
-1. After the second failure, select **APPLY** for the third time.
+1. Wait about 20 seconds. You will receive an HTTP 500 error message.
+1. Select **APPLY** again. Note that the error message is again received in about 20 seconds.
+1. Select **APPLY** again. Note that the HTTP 500 error message came in much faster due to the Circuit Breaker policy.
+1. Select **APPLY** again.
 
-    On the third try, notice that the HTTP 500 error message came in much faster. That's because the Circuit Breaker was activated.
+Note that the error message is received immediately. You can see this error clearly in the log traces:
 
-1. Select **APPLY** once again.
+:::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
 
-    Notice that you receive the error message immediately. You'll see this error clearly in the log traces:
+In the preceding image, notice that:
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
+- After waiting for 7.6 seconds (#1), you get the HTTP 500 error message with the retry policy (#2) but
+- The next time you try, you validate the code, you get the HTTP 500 error message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
+- If you check the details on this last trace, you should see a variation of the following output:
 
-    In the preceding image, notice that:
+    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
 
-    - After waiting for 7.6 seconds (#1), you get the HTTP 500 error message with the retry policy (#2) but
-    - The next time you try, you validate the code, you get the HTTP 500 error message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
-    - If you check the details on this last trace, you should see a variation of the following output:
+    Notice that the last trace has the "The circuit is now open..." message.
 
-        :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
-
-        Notice that the last trace has the "The circuit is now open..." message.
-
-Let's move on to the deployment of Linkerd in the next unit.
+In this unit, you added code-based resiliency with Polly. In the next unit, you'll implement infrastructure-based resiliency with Linkerd.
