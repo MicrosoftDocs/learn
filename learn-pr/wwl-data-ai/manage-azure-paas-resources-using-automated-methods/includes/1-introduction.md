@@ -7,4 +7,5 @@ At the end of this module, you will understand:
 - The benefits of Azure policy
 - The capabilities of Azure automation
 - How to use Elastic jobs
+
  
