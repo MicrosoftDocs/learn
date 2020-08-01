@@ -6,7 +6,7 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
 
     If you are prompted to enable preview features, select **Yes**.  
 
-    :::image type="content" source="../media/4-ads-connect.png" alt-text="Opening Azure Data Studio":::  
+    :::image type="content" source="../media/4-azure-data-studio-connect.png" alt-text="Opening Azure Data Studio":::  
 
     If you don't see this window, or at any time want to add an additional connection, you can select the **New connection** button in the **Servers** bar. In the example below, you also get a preview of what a SQL Server connection would look like, but in this exercise you will not connect to SQL Server.  
 
@@ -29,13 +29,13 @@ Now that you've seen how Azure SQL appears in SSMS, let's explore a tool that ma
 
 1. In the **Connections** tab, under **Servers**, you should now see your Azure SQL Database connection (SQL Server connection shown in image for comparison only).  
 
-    :::image type="content" source="../media/4-ads-servers.png" alt-text="Comparing SQL Server and SQL Database in ADS":::  
+    :::image type="content" source="../media/4-azure-data-studio-servers.png" alt-text="Comparing SQL Server and SQL Database in ADS":::  
 
 1. Finally, to run queries in ADS, it's very similar to SSMS. Right-click on a database or server name and select **New query**.
 
 1. For Azure SQL Database, since you are not really getting a full "server", **`USE [DatabaseName]`** is not supported to change the database context. You must either change the connection to specifically connect to the database you want to run a query on or use the drop-down. Change to the context of your **AdventureWorks** database by selecting the drop-down box next to **master** and run `SELECT @@VERSION`.  
 
-    :::image type="content" source="../media/4-new-query-ads.png" alt-text="Querying in ADS":::
+    :::image type="content" source="../media/4-new-query-azure-data-studio.png" alt-text="Querying in ADS":::
 
     Later in this exercise, you'll dive in to why that result is different from what you see in SQL Server.
 
@@ -59,8 +59,8 @@ Once you've deployed an instance of SQL (Azure SQL or SQL Server), there are typ
 
 There are two options for completing this exercise:
 
-1. T-SQL in SSMS (follow along this page)
-1. SQL Notebooks in Azure Data Studio
+- T-SQL in SSMS (follow along this page)
+- SQL Notebooks in Azure Data Studio
 
 Both exercises contain the same commands and content, so you can choose the option you prefer.
 
@@ -137,7 +137,7 @@ In this option, you'll walk through some common queries against system functions
     SELECT * FROM sys.dm_exec_requests;
     ```
 
-    :::image type="content" source="../media/4-exec-requests.png" alt-text="Results showing dm_exec_requests":::
+    :::image type="content" source="../media/4-dm-exec-requests.png" alt-text="Results showing dm_exec_requests":::
 
     There is a difference in using sys.dm_exec_requests for Azure SQL Database than SQL Server or Managed Instance. This DMV only shows active requests related to your database including background tasks (or background tasks that don't have a database context that show up as "master"). This is because the nature of Azure SQL Database deployment where each database is deployed on its own SQL Server instance.
 

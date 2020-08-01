@@ -20,9 +20,9 @@ Indexes are often critical to query performance for SQL Server and that is not d
 - Online and resumable indexes are fully supported. Online and resumable indexes can be critical for maximum availability.
 - Columnstore indexes are available in almost all service tiers. Check the documentation for any exceptions.
 
-## In-Memory OLTP
+## In-memory OLTP
 
-In-Memory OLTP is a capability for transaction latency sensitive applications, such as applications that involve a high number of concurrent users modifying data. Here are important points related to In-Memory OLTP and Azure SQL:
+In-memory OLTP is a capability for transaction latency sensitive applications, such as applications that involve a high number of concurrent users modifying data. Here are important points related to In-memory OLTP and Azure SQL:
 
 - Memory optimized tables are only available in Business Critical Tiers.
 - The memory optimized FILEGROUP is pre-created in Azure SQL Database and Managed Instance when a database is created (even for General Purpose tiers).

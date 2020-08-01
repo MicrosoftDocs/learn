@@ -2,7 +2,7 @@ In the last unit, you analyzed a solution, which had requirements involving glob
 
 Similar to the last unit, you will review an additional business scenario focused on mission critical applications. The company descriptions, project goals, and constraints have already been laid out for you, but you will be responsible for coming up with a potential solution.
 
-## Scenario 2: Mission critical application
+## Scenario details
 
 You are hired to architect a mission critical cloud application that requires 99.995% availability because downtime might be life threatening. 911 dispatch, stolen credit card notifications, or corporate security reporting are examples of such applications, but in this case, you will focus on a 911 dispatch system. High performance is required as any delay in response carries high risk, sometimes life-threatening. Given the sensitivity of the collected personal information, data sovereignty must be guaranteed. Your main mission is to ensure that the app is designed and deployed with the appropriate data redundancy and fault resilience to meet the availability and data sovereignty goals.
 

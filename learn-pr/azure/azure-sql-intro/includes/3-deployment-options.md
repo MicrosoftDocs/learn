@@ -86,7 +86,7 @@ You've now learned about the three main deployment options within Azure SQL: vir
 
 A good example for where a customer leveraged SQL Database elastic pools is Paychex. Paychex is a human capital management firm that serves more than 650,000 businesses across the US and Europe. They needed a way to separately manage the time and pay management for each of their customers, and cut costs. They opted for SQL Database elastic pools, which allowed them to simplify the management and enable resource sharing between separate databases to lower costs.  
 
-## Azure SQL Deployment Options
+## Azure SQL deployment options
 
 A brief visual that summarizes all the deployment options for Azure SQL is below. Next, you'll go through deploying and configuring Azure SQL and how it compares to deploying and configuring the box SQL Server.  
 

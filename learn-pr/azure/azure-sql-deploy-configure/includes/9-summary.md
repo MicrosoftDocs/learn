@@ -20,7 +20,7 @@ Additionally, while the hands-on exercises focused on Azure SQL Database, here i
 
 You may also want to dive deeper into the resource limits based on service tier and configuration for [SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [SQL Database](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
 
-### Deploy, Verify, and Configure
+### Deploy, verify, and configure
 
 Two common command-line tools for deploying, verifying, and configuring Azure SQL include the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest?azure-portal=true) and the [Azure PowerShell](https://docs.microsoft.com/powershell/azure?azure-portal=true) modules. The links included will provide references and explanations around the capabilities. You can also access both of these tools through the [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports bash and PowerShell in the Azure portal.
 

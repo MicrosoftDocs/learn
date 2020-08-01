@@ -1,6 +1,6 @@
 You've been responsible for getting your SQL Server fast, keeping it fast, and making it fast again when something is wrong. In this module, we'll show you how to leverage your existing performance skills, processes, and tools and apply them to Azure SQL, including taking advantage of the intelligence in Azure to deliver consistent performance for your application.
 
-This is the fourth module of the Azure SQL Fundamentals learning path. The recommendation is to complete the first three modules before continuing.
+## Learning objectives
 
 At the end of this module, you will be able to:
 

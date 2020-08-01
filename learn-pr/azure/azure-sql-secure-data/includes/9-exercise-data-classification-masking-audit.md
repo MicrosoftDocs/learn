@@ -182,10 +182,10 @@ Analyzing your audit logs will depend on your preference. Here, you'll be expose
 
     You can use this drill down to find out:  
 
-    1. How many queries are accessing sensitive data
-    1. Which types and sensitivities of are being accessed
-    1. Which principals are accessing sensitive data
-    1. Which IPs are accessing sensitive data  
+    - How many queries are accessing sensitive data
+    - Which types and sensitivities of are being accessed
+    - Which principals are accessing sensitive data
+    - Which IPs are accessing sensitive data  
 
     Review what's available here, and how you can audit usage with this tool. You can even click into each of these and see the related logs in Log Analytics.  
 

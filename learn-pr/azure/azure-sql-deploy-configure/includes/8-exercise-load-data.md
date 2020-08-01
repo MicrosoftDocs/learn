@@ -6,8 +6,8 @@ In this exercise, you'll explore one scenario for bulk loading data from Azure B
 
 There are two options for completing this exercise:
 
-1. `sqlcmd` in the Azure Cloud Shell (follow along this page)
-1. SQL Notebooks in Azure Data Studio
+- `sqlcmd` in the Azure Cloud Shell (follow along this page)
+- SQL Notebooks in Azure Data Studio
 
 Both exercises contain the same commands and content, so you can choose the option you prefer.
 

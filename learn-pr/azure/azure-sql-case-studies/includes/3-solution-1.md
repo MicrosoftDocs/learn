@@ -14,10 +14,10 @@ Business critical is only one half of the configuration here to separate read an
 
 The other piece of this scenario involved determining how best for each application/person to connect to the solution, given the need to create and leverage the most secure technologies possible. If you break down the scenario, there are four separate clients that will need access to the Azure SQL Managed Instance:
 
-1. Application running on an Azure VM
-1. Application running on a non-Azure machine
-1. DBAs or other users leveraging SQL admin tools (SSMS, ADS, PowerShell) from a non-Azure machine
-1. Legacy applications running on a non-Azure machine where you can't change the driver/connection string
+- Application running on an Azure VM
+- Application running on a non-Azure machine
+- DBAs or other users leveraging SQL admin tools (SSMS, ADS, PowerShell) from a non-Azure machine
+- Legacy applications running on a non-Azure machine where you can't change the driver/connection string
 
 Let's break each of them down on how you might choose the authentication method and some additional considerations and constraints.
 

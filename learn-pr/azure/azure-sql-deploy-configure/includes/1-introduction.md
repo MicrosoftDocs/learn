@@ -2,6 +2,8 @@ In this module, you'll learn about the process of deploying and configuring Azur
 
 This module is the second module in the Azure SQL Fundamentals learning path. The recommendation is to complete Azure SQL introduction module before continuing.
 
+## Learning objectives
+
 At the end of this module, you will be able to:  
 
 * Plan for a deployment of Azure SQL

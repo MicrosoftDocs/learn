@@ -1,5 +1,7 @@
 Depending on the SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you will learn how to translate your knowledge of backup/restore, failover cluster instances, and Always On Availability Groups to the options for business continuity in Azure SQL. You'll also take a peek under the hood at the architectures and how they affect availability.
 
+## Learning objectives
+
 By the end of this module, you will be able to:
 
 * Create a backup/restore strategy for your organization

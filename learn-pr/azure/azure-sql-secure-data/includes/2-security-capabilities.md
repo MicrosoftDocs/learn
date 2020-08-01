@@ -10,10 +10,10 @@ The first layer of security involves the network. The networking capabilities an
 
 There are four main choices you have when you're securing your network for Azure SQL Database:
 
-* Allow access to Azure services
-* Firewall rules
-* Virtual network rules
-* Private Link
+- Allow access to Azure services
+- Firewall rules
+- Virtual network rules
+- Private Link
 
 In addition to these main choices, you have the opportunity to block all public access (only with Private Link) and the option to force a minimum TLS version.
 
@@ -80,9 +80,9 @@ Aliases:    aw-server.database.windows.net
 
 The important things to look at are under the Non-authoritative answer:  
 
-* **Name**: The endpoint starting with `cr2` is part of the public DNS hierarchy. Without getting too much into the hierarchy, `cr2` is the Control Ring 2 and then there are multiple data "slices" below it.  
-* **Address**: The IP address returned here should match the public IP address of your Azure VM. So even though a tool like SSMS' final hop might be through your VM's private IP address, the public IP address of your VM is still being used to connect in some capacity.  
-* **Aliases**: These are various points within the DNS hierarchy, in this case the specific data "slice" and the endpoint you connect to.  
+- **Name**: The endpoint starting with `cr2` is part of the public DNS hierarchy. Without getting too much into the hierarchy, `cr2` is the Control Ring 2 and then there are multiple data "slices" below it.  
+- **Address**: The IP address returned here should match the public IP address of your Azure VM. So even though a tool like SSMS' final hop might be through your VM's private IP address, the public IP address of your VM is still being used to connect in some capacity.  
+- **Aliases**: These are various points within the DNS hierarchy, in this case the specific data "slice" and the endpoint you connect to.  
 
 **Fun fact**: the **Address: 168.63.129.16** is a virtual public IP address used to facilitate a communication channel to Azure platform resources. It's the case for all regions and all national clouds, and it will not change.
 
@@ -124,15 +124,15 @@ Aliases:    aw-server.database.windows.net
 
 The important things to look at are under the Non-authoritative answer, and let's examine the differences:  
 
-* **Name**: Note that you're no longer pointing to the public DNS hierarchy, only to the Private Link DNS. This means less information is revealed about your database server.  
-* **Addresses**: For virtual network rules, the address returned is the public IP address of your VM, but it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
-* **Aliases**: Similar to the Name field, you're not seeing anything related to the DNS hierarchy, except that you can still connect to the server name (for example, `aw-server.database.windows.net`).  
+- **Name**: Note that you're no longer pointing to the public DNS hierarchy, only to the Private Link DNS. This means less information is revealed about your database server.  
+- **Addresses**: For virtual network rules, the address returned is the public IP address of your VM, but it should now be one or more *private* IP addresses within the Private Link hierarchy (one is the private endpoint of your Azure SQL Database).
+- **Aliases**: Similar to the Name field, you're not seeing anything related to the DNS hierarchy, except that you can still connect to the server name (for example, `aw-server.database.windows.net`).  
 
 One thing you might be wondering, is if you are connecting to the private endpoint, **why are you still using the same server name?** In the backend, when you use solely the Private Link method of connecting (i.e. no firewall or virtual network rules), the information is processed as follows:  
 
-* `aw-server.database.windows.net`  
-  * Resolved by service to `aw-server.privatelink.database.net`  
-    * Resolved by service to `10.0.0.5` (the IP address of your private endpoint)  
+- `aw-server.database.windows.net`  
+  - Resolved by service to `aw-server.privatelink.database.net`  
+    - Resolved by service to `10.0.0.5` (the IP address of your private endpoint)  
 
 Additionally, the service will block you from directly connecting using anything apart from `aw-server.database.windows.net`.  
 
@@ -154,10 +154,10 @@ All Azure types of operations for Azure SQL are controlled through RBAC. Azure R
 
 There are built-in roles available to reduce need for higher-level Azure RBAC roles like Owner or Contributor. Effectively, you can use these roles to have certain individuals deploy Azure SQL resources (or manage security policies) but grant other users actual access to user or manage the instance or database.  For example, a SQL Server contributor could deploy a server but assign an Azure SQL Database user to be the admin of the server and databases. The built-in roles include:  
 
-* SQL DB Contributor: Can create and manage databases but not access the database (for example, cannot connect and read data)
-* SQL Managed Instance Contributor: Can create and manage managed instances but not access them
-* SQL Security Manager:  Can manage security policies for databases and instances (like auditing) but not access them
-* SQL Server Contributor: Can manage servers and databases but not access them.
+- SQL DB Contributor: Can create and manage databases but not access the database (for example, cannot connect and read data)
+- SQL Managed Instance Contributor: Can create and manage managed instances but not access them
+- SQL Security Manager:  Can manage security policies for databases and instances (like auditing) but not access them
+- SQL Server Contributor: Can manage servers and databases but not access them.
 
 ### Authentication
 
@@ -180,10 +180,10 @@ For Azure SQL Managed Instance, it is similar to SQL Server in that you can have
 
 At the end of the day, when you set up and configure authentication and authorization, there are four guidelines you can follow:  
 
-1. Deploy with a server admin
-1. Create other admins as necessary
-1. Admins can create users
-1. Grant access just like you would in SQL Server
+- Deploy with a server admin
+- Create other admins as necessary
+- Admins can create users
+- Grant access just like you would in SQL Server
 
 ## Other capabilities
 

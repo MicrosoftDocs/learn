@@ -266,7 +266,7 @@ Query Store comes with a series of system catalog views to view performance data
 
 1. Click on the bar chart for the query (the query_id may be different for your system), your results should look like the following image:
 
-    :::image type="content" source="../media/5-ssms-query-id.png" alt-text="SSMS_QDS_Query_ID":::
+    :::image type="content" source="../media/5-ssms-query-id.png" alt-text="SSMS_QDS_Query_ID" lightbox="../media/5-ssms-query-id.png":::
 
     You can see the total duration of the query and query text.
 
@@ -290,7 +290,7 @@ Query Store comes with a series of system catalog views to view performance data
 
 1. Click on the CPU bar chart in the report. The top query waiting for CPU is the query from the workload we are using.
 
-    :::image type="content" source="../media/5-ssms-top-wait-stats-query.png" alt-text="SSMS_Top_Wait_Stats_Query":::
+    :::image type="content" source="../media/5-ssms-top-wait-stats-query.png" alt-text="SSMS_Top_Wait_Stats_Query" lightbox="../media/5-ssms-top-wait-stats-query.png":::
 
     Notice that the average wait time for CPU for this query is a high % of the overall average duration for the query.
 

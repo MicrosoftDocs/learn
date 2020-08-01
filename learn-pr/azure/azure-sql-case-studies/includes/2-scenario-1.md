@@ -15,11 +15,11 @@ In production, there are normally 6 phases to create  a solution, and developing
 1. **Implementation**: Implementing a phased-in rollout of the completed solution based on findings from the previous phases
 1. **Handoff**: A post-mortem on the project with a discussion of future enhancements
 
-Throughout this module, if you want to leverage various project templates you can find them [here](https://github.com/microsoft/sqlworkshops/tree/master/ProjectResources?azure-portal=true), and the latest icons can be found [here](https://www.microsoft.com/download/confirmation.aspx?id=41937?azure-portal=true). These assets can also be used in your production workloads.  
+Throughout this module, if you want to leverage various project templates you can find them [here](https://github.com/microsoft/sqlworkshops/tree/master/ProjectResources?azure-portal=true), and the latest icons can be found [here](https://www.microsoft.com/download/confirmation.aspx?id=41937&azure-portal=true). These assets can also be used in your production workloads.  
 
 For these scenarios module, you'll spend some time determining the problem statement (**Discovery**), but the big focus will be on the **Architecture Design Session**. If you wish to develop a solution further after the module, you can use the assets in the module to do so.
 
-## Scenario 1: Architect global scale and secure access
+## Scenario details
 
 Your customer is a provider for services and content delivery across the globe. They've requested your assistance in architecting a system that can handle thousands of writes per second to what is essentially an operational data mart. They also need to be able to perform real-time analytics on the data, to determine trends and identify anomalies, which they are currently doing with CLR applications. They are not looking for a data warehouse and utilize large portions of the SQL surface area, but they need to be able to scale where their users live.  
 
