@@ -124,12 +124,12 @@ From the [Service Level Agreements](https://azure.microsoft.com/support/legal/sl
 
 Therefore, for the Special Orders application, the composite SLA would be:
 
-$${99.9 \% \times 99.9 \% \times 99.99 \% \times 99.99 \%}$$
-$${= 0.999 \times 0.999 \times 0.9999 \times 0.9999}$$
-$${= 0.9978}$$
-$${= 99.78 \%}$$
+$$99.9 \% \times 99.9 \% \times 99.99 \% \times 99.99 \%$$
+$$= 0.999 \times 0.999 \times 0.9999 \times 0.9999$$
+$$= 0.9978$$
+$$= 99.78\%$$
 
-Recall that you need two virtual machines. Therefore, you include the Virtual Machines SLA of 99.9% two times in the equation.
+Recall that you need two virtual machines. Therefore, you include the Virtual Machines SLA of 99.9% two times in the formula.
 
 What's important to note here is that even though all of the individual services have SLAs equal to or better than our application SLA, the act of combining them results in an overall number that is *lower* than the 99.9% you need. Why? Because using multiple services adds an extra level of complexity and slightly increases the risk of failure.
 
