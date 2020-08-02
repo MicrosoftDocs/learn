@@ -11,6 +11,8 @@ often use this term as a synonym to design the quantum state of a system. This
 is because the Schrödinger equation that we introduced at the beginning of this
 module has the same mathematical structure as classical wave equations.
 
+![Figure5](../media/KittyYeungQ35.png)
+
 You might have also heard the term "probability wave". In fact, the term
 *probability amplitude* is inspired directly from the term *amplitude* of a
 wave.
@@ -129,9 +131,6 @@ all involve in entanglement.
 
 We would like to simulate these physical systems to learn and design material
 properties for drug development, industrial chemical processes, and many others.
-Simulating entanglement would be difficult for classical systems. But because
-quantum computers are intrinsically built on superposition, this becomes an
-achievable task.
 
 Suppose we have a molecule with $n$ different atoms that are entangled. The
 state of the system would be described by a superposition of states in the form
@@ -142,13 +141,13 @@ possible state of the whole system.
 
 If we want to simulate this molecule with a
 classical computer, with n≈50 atoms, we would need $2^n$ bits. Our best
-classical supercomputers start to struggle.
-
-For n≈80, we'll need more parameters than the number of transistors we have
+classical supercomputers start to struggle. For n≈80, we'll need more parameters than the number of transistors we have
 ever made on Earth. For n≈280, we need more parameters than the estimated number
-of atoms in the Universe. In a quantum computer, the computer itself can be in a
-superposition. We just need to embed the quantum state of the system that we
-want to simulate and run the simulation with a specific set of operations.
+of atoms in the Universe. 
+
+Simulating entanglement would be difficult for classical systems. But because
+quantum computers are intrinsically built on superposition, this becomes an
+achievable task. In a quantum computer, we can describe each atom using one qubit, as each qubit can have two states in superposition.
 
 In the next section, we're going to see how can we use Q# to
 explore quantum interference and entanglement.

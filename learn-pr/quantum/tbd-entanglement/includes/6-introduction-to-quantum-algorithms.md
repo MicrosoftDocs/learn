@@ -31,8 +31,7 @@ can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 ## Deutsch-Jozsa algorithm
 
 This quantum algorithm is famous for being one of the earliest examples of
-quantum computing solving a problem exponentially faster than any classical
-algorithm. It has very limited real-life applications, but its relative
+quantum computing solving a problem exponentially faster than its classical counterpart. It has very limited real-life applications, but its relative
 simplicity makes it a fantastic example to show how quantum computers can
 improve classical results using superposition, interference and entanglement.
 
@@ -43,15 +42,15 @@ function $f(x):\\{0,1\\}^n\rightarrow\\{0,1\\}$, this is, a binary function that
 takes a string of bits and outputs a single bit. You're guaranteed that the
 function is:
 
-- either *constant*, this is, outputs the same value for all inputs.
-- or *balanced*, this is, for exactly half of the inputs it outputs $1$ and for
+- either *constant*: outputs the same value for all inputs.
+- or *balanced*: for exactly half of the inputs it outputs $1$ and for
   the other half it outputs $0$.
 
 For example, the function $f(x)=1$ for all $x$ is a constant function. On the
 other hand, the function $f(x)= x_{n-1}$, where $x_{n-1}$ is the last bit of
 $x$, is balanced.
 
-The task is to find out whether if a given black-box function $f(x)$ is constant
+The task is to find out whether or not a given black-box function $f(x)$ is constant
 or balanced with the least amount of calls possible.
 
 ### Classical solution
@@ -84,8 +83,8 @@ The algorithm is as follows:
 
 1. Start with a register of $n$ qubits initiated in the state \ket{0...0}.
 1. Apply $\hat H$ to every qubit to create a superposition of all possible states.
-1. Apply the oracle $U_f$ to the superposition.
-1. Apply $\hat H$ to every qubit again to cause quantum interference.
+1. Apply the oracle $U_f$ to the superposition to cause quantum interference.
+1. Apply $\hat H$ to every qubit again to get out of superposition.
 1. Measure every qubit: if all measurements results are $0$, the function is
    constant, otherwise, it is balanced.
 
@@ -95,11 +94,14 @@ faster than the classical solution.
 If you're interested in the details of this algorithm and want to implement it
 in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](todo).
 
+
+![Figure6](../media/KittyYeungQ30.png)
+
 ## Grover's algorithm
 
 Grover's search algorithm is one of the most popular quantum algorithms. The
 algorithm searches for an item in a list of unstructured data, for example the
-searching for a specific card in a deck of cards.
+searching for a specific card in a deck of randomly-ordered cards.
 
 ### Problem: Search in an unstructured database
 
@@ -142,6 +144,8 @@ This algorithm obtains the target element $x_0$ with very high probability using
 $\sqrt{2^n}$ queries to the oracle. This is a quadratic improvement over the
 classical method. More specifically, it obtains $x_0$ with a probability
 $1-O(\frac1{2^n})$ using $O(\sqrt{2^n})$ queries.
+
+![Figure7](../media/KittyYeungQ32.png)
 
 If you're interested in the details of this algorithm and want to implement it
 in Q#, check our [quantum katas tutorial on Grover's algorithm](todo).
@@ -192,5 +196,5 @@ Shor's algorithm succeeds in finding a prime factor with high probability but
 it can fail. However, repeating the algorithm several times until it finds the
 prime factors is exponentially faster than the best known classical algorithm.
 
-In  the next unit, you'll take a knowledge check to test what you learnt on
+In  the next unit, you'll take a knowledge check to test what you learned on
 this module.

@@ -2,7 +2,7 @@ Congratulations! You finished the module [Title of the module]. This module
 served you as an introduction to the working principles of quantum computers.
 
 In this module, we presented a lot of new concepts. Here we list a few concepts
-worth to remember:
+worth remembering:
 
 - Quantum computers use superposition, interference and entanglement do some
   calculations faster than classical computers.
@@ -12,10 +12,10 @@ worth to remember:
   This probability amplitude is a complex number that encodes the probability of
   measuring the state and the phase of the state.
 - The phase of a quantum state is relevant for quantum interference. States with
-  opposite phase interfere destructively whereas states with the same phase
+  opposite phase interfere destructively, whereas states with the same phase
   interfere constructively.
-- Two qubits are entangled if their states are correlated in ways that classical
-  physics cannot explain.
+- Two qubits are entangled if their states are correlated and cannot be described as two independent qubits
+
 
 ## Learn more
 
@@ -29,7 +29,7 @@ reference material, including:
 - Fundamental concepts around quantum computing.
 - Quickstarts and tutorials.
 - Q# language and API reference.
-- How to use Q# with C#, Python, and Jupyter notebooks.
+- How to use Q# with C#, Python, and Jupyter Notebooks.
 
 Once you're ready to dive deeper, you can [browse code
 samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum
