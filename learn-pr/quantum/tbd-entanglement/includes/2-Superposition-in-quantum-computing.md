@@ -73,7 +73,7 @@ Development Kit](todo) we already used superposition to create a quantum random
 number generator. We used the operator `H` to put a qubit in the state $\ket{0}$
 into superposition. Mathematically this is:
 $$ \hat H \ket{0} = \frac1{\sqrt2}
-\ket{0} + \frac1{\sqrt2} \ket{1} $$.
+\ket{0} + \frac1{\sqrt2} \ket{1}.$$
 
 Linearity is a fundamental property of
 quantum mechanics and therefore of quantum computing.
