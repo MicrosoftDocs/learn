@@ -10,8 +10,8 @@ In the case of rocket launches, as previously mentioned, we aren't likely to eve
 
 A great resource for determining what kind of machine learning algorithm will be useful for your particular analysis is the [Algorithm cheat sheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?azure-portal=true). 
 
-:::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Algorithm cheat sheet" loc-scope="azure":::
+:::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Algorithm cheat sheet" lightbox="../media/algorithm-cheat-sheet-expanded.png" loc-scope="azure":::
 
-Let's revisit the question we're trying to answer with Launches:  
-Will this day, with these weather conditions, yield a successful launch?   
+Let's revisit the question we're trying to answer with launches:  *Will this day, with these weather conditions, yield a successful launch?*
+
 This is a yes or no question, so this is a problem where a two-class classification algorithm can be helpful. You can see on the algorithm cheat-sheet that within that category, there are many specific algorithms to choose from. In this case, we're choosing to use a decision tree classifier, which takes observations about an event (all of the weather conditions for a particular day) and draws conclusions about the target value (yes or no that a rocket would successfully launch that day). 

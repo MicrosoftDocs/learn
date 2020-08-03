@@ -1,6 +1,6 @@
 After you have chosen which columns you want to use to predict whether a rocket would launch given certain weather conditions, you will need to chose which algorithm to use to make our model. Recall in LP3M1U6 you were introduced to the [Azure Maching Learning Algorithm Cheatsheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?azure-portal=true):
 
-:::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Algorithm Cheatsheet." loc-scope="azure":::
+:::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Algorithm Cheatsheet." lightbox="../media/algorithm-cheat-sheet-expanded.png" loc-scope="azure":::
 
 Remember your question:  
 *Can you predict whether a launch is likely to be able to happen given specific weather conditions?*  

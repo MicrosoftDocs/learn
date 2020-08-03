@@ -1,6 +1,6 @@
 To begin training our machine learning model, we will start by teaching the computer what parts of the data to look at to make predictions. We know that the column that we are interested in the model to predict is the "Launched" column, so we will extract this column and store it in a variable as a list of `Y` and `N`.
 
-## Further Data Cleansing
+## Further data cleansing
 
 Next, we will remove some of the columns that are not needed for making this prediction. Columns like "Name" are great for humans to give us more context about the data, but the name of a launch is probably the least likely indicator of whether weather will cause the launch to be post-poned. In this module, we will focus the columns involving wind speed, conditions, and precipitation.
 

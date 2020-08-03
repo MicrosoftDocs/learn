@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Why did we choose a decision tree for our Machine Learning Algorithm?"
+  - content: "Why did we choose a decision tree for our machine learning algorithm?"
     choices:
-    - content: "It is the most complex and accurate algorithm"
+    - content: "A decision tree is the most complex and accurate algorithm."
       isCorrect: false
-      explanation: "This is not true about the decision tree"
-    - content: "It is easy to visualize and fits well because there are only two choices: yes or no"
+      explanation: "Incorrect; decisions trees are not the most complex and accurate algorithm."
+    - content: "A decision tree is easy to visualize, and it fits well because the model can make only two choices: yes or no."
       isCorrect: true
-      explanation: "Correct! This is why we choose the decision tree"
-    - content: "A tree has lots of branches and there are lots of choices the model can make"
+      explanation: "Correct! We chose a decision tree because a decision tree is easy to visualize, and it's easy to use because the model can make only two choices."
+    - content: "A decision tree has lots of branches and the model can make lots of choices."
       isCorrect: false
-      explanation: "There are only 2 choices to make"
+      explanation: "Incorrect; in a decision tree, the model can make only two choices: yes or no."

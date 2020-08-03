@@ -34,7 +34,7 @@ tree_graph_to_png(tree=tree_model, feature_names=X.columns.values,class_names=['
 
 This will create this image:
 
-:::image type="content" source="../media/decision-tree.png" alt-text="Visualization of decision tree." loc-scope="azure":::
+:::image type="content" source="../media/decision-tree.png" alt-text="Visualization of decision tree." lightbox="../media/decision-tree-expanded.png" loc-scope="azure":::
 
 Overall looking at the data set, we have 240 samples.
 192 are no launches
@@ -52,7 +52,7 @@ launch_data[launch_data['Wind Speed at Launch Time'] <= 1]['Launched?'].value_co
 
 :::image type="content" source="../media/plot-launches.png" alt-text="Plot of launches vs no launches" loc-scope="azure":::
 
-## Understanding the Visualization
+## Understanding the visualization
 
 This simple tree shows you that the most important feature of the data was the Wind Speed at Launch Time. If the wind speed was less than 1 then 191 of the 240 samples were correctly guessed to be a no launch. 191 of those samples only needed the `Wind Speed at Launch Time` to be below 1 in order to correctly guess the outcome, while above 1 required more information.
 
@@ -66,9 +66,9 @@ This might be more interesting because there was only one day where a launch was
 launch_data([launch_data['Wind Speed at Launch Time'] > 1) & (launch_data['Max Wind Speed'] > 30.5)]
 ```
 
-:::image type="content" source="../media/only-no.png" alt-text="Only launch with greater than 1 wind speed at launch time and greater than 30 max wind speed." loc-scope="azure":::
+:::image type="content" source="../media/only-no.png" alt-text="Only launch with greater than 1 wind speed at launch time and greater than 30 max wind speed." ../media/only-no-expanded.png" loc-scope="azure":::
 
-## Improving the Results
+## Improve the results
 
 With this visualization you were able to see that some features became really important, but it was based on incorrect information. 
 

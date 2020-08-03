@@ -15,20 +15,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Computers will always be more accurate than humans at data analysis"
+  - content: "Computers will always be more accurate than humans at data analysis."
     choices:
-    - content: "True, they are purely logical and so cannot make mistakes"
+    - content: "This statement is true because computers are purely logical, so they can't make mistakes."
       isCorrect: false
-      explanation: "Computers need to be programmed"
-    - content: "True, they are able to process significantly more data, faster"
+      explanation: "Incorrect, because computers must be programmed by humans."
+    - content: "This statement is true because computers can process significantly more data than humans, and faster."
       isCorrect: false
-      explanation: "This is true, however this does not mean more accurate"
-    - content: "False, they can never understand context and so can't be accurate"
+      explanation: "Incorrect. It's a true statement, but it doesn't mean that computers are more accurate than humans."
+    - content: "This statement is false because computers can't understand context, so they can't be accurate all the time."
       isCorrect: false
-      explanation: "Machine Learning can let them understand context"
-    - content: "False, they are as accurate as the software built by humans can make them"
+      explanation: "Incorrect. Machine learning makes it possible for computers to understand context."
+    - content: "This statement is false because computers are as accurate as software built by humans can make them."
       isCorrect: true
-      explanation: "Correct! Computers are only accurate if the programming is accurate"
+      explanation: "Correct! Computers are only accurate if the programming is accurate."
   - content: "What are the four steps in the data science lifecycle?"
     choices:
     - content: "Business Understanding, Data Gathering and Preparation, Model Training and Testing, Model Deployment"
@@ -36,10 +36,10 @@ quiz:
       explanation: "Correct! These are the exact four steps"
     - content: "Data Gathering, Data Validation, Machine Learning, Result Visualization"
       isCorrect: false
-      explanation: "These are not the four steps"
+      explanation: "Incorrect; the data science lifecycle doesn't include these four steps."
     - content: "Data Identification, Model Training until 100% Accurate, Model Deployment, Business Understanding"
       isCorrect: false
-      explanation: "These are not the four steps"
+      explanation: "Incorrect; the data science lifecycle doesn't include these four steps."
     - content: "Machine Learning Algorithm Coding, Data Exploration, Algorithm Modifications, Report Generation"
       isCorrect: false
-      explanation: "These are not the four steps"
+      explanation: "Incorrect; the data science lifecycle doesn't include these four steps.
