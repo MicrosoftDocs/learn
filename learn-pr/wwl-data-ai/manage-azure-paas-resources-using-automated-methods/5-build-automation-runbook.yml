@@ -4,12 +4,12 @@ title: Build an automation runbook
 metadata:
   title: Build an automation runbook
   description: "Build an automation runbook"
-  ms.date: 08/03/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 9
 content: |
   [!include[](includes/5-build-automation-runbook.md)]
