@@ -4,23 +4,23 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/02/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What language are ARM templates written in?"
+  - content: "What language are Azure Resource Manager templates written in?"
     choices:
     - content: "JSON"
       isCorrect: true
-      explanation: "That's correct. An ARM template is a JSON (JavaScript Object Notation) document that describes the resources that will be deployed within an Azure Resource Group."
+      explanation: "That's correct. An Azure Resource Manager template is a JSON (JavaScript Object Notation) document that describes the resources that will be deployed within an Azure Resource Group."
     - content: "C#"
       isCorrect: false
       explanation: "That's incorrect. While templates can be called by C# programs it is not their native format."

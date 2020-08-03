@@ -4,12 +4,12 @@ title: Describe deployment models in Azure
 metadata:
   title: Describe deployment models in Azure
   description: "Describe deployment models in Azure"
-  ms.date: 08/02/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/2-describe-deployment-models-azure.md)]
