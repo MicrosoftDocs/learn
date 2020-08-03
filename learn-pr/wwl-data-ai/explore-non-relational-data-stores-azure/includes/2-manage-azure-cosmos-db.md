@@ -28,12 +28,12 @@ Cosmos DB manages data as set of documents. A document is a collection of fields
 
 ## Document 2 ##
 {
-  "customerID": "103249",
+  "customerID": "55151",
   "name": 
   { 
     "title": "Mr",
-    "forename": "AAA", 
-    "lastname": "BBB" 
+    "forename": "DDD", 
+    "lastname": "EEE" 
   },
   "address": 
   {
