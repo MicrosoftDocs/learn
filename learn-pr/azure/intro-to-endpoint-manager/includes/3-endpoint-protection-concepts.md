@@ -14,7 +14,7 @@ Device policies allow you to perform several different types of actions to prote
 Intune configuration policies help you protect and configure devices by controlling a multitude of settings and features. For example, you can:
 - Restrict use of hardware features on the device such as the camera, or Bluetooth.
 - Reset passcodes when users are locked out of their devices.
-- Require devices to be compliant.
+- Require devices to be compliant with the protection requirements implemented by your organization, such as requiring each device to use a PIN to access the device.
 - Configure compliant and noncompliant apps. You'll get an alert if a noncompliant app is installed (and some platforms can actually block the install).
 - Protect apps and the data they use.
 - Protect devices based on identity, by adding an additional layer of protection to devices.
@@ -59,8 +59,6 @@ You can control how users share and save data without risking intentional or acc
 App protection policies set up with Intune also work on devices managed with a non-Microsoft device management solution. The personal data on the devices is not touched; only company data is managed by the IT department.
 
 You can set app protection policies for Office mobile apps on devices running Windows, iOS/iPadOS, or Android to protect company data. These policies let you set policies such as app-based PIN or company data encryption, or more advanced settings to restrict how you cut, copy, paste, and save-as features are used by users between managed and unmanaged apps. You can also remotely wipe company data without requiring users enroll devices.
-
-Intune app protection policies are independent of device management. App protection policies let you manage Office mobile apps on both unmanaged and Intune-managed devices, as well as device managed by non-Microsoft MDM solutions.
 
 ### Prevent unauthorized access
 <!--

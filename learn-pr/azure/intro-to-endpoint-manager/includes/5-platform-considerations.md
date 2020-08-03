@@ -32,5 +32,5 @@ For more information about Intune supported devices, platforms, and operating sy
 - **Windows 10**  
 - **Windows 8.1** (x86, x64): Professional, Enterprise
 
-For more information about Config Manager supported devices, platforms, and operating systems, see [Supported configurations for Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/supported-configurations).
+For more information about Configuration Manager supported devices, servers, platforms, and operating systems, see [Supported configurations for Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/supported-configurations).
 

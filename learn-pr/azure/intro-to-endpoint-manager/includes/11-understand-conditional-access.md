@@ -40,17 +40,12 @@ With co-management, Intune evaluates every device in your network to determine h
     - This evaluation is post-security breach and incident-based  
 
 
-By using Intune or Config Manager, you help ensure your organization is using proper credentials to access and share company data.
+By using Intune or Configuration Manager, you help ensure your organization is using proper credentials to access and share company data.
 
 ## Common ways to use conditional access
 
 There are two types of conditional access with Intune: device-based conditional access and app-based conditional access. You need to configure the related compliance policies to drive conditional access compliance at your organization. Conditional access is commonly used to do things like allow or block access to Exchange, control access to the network, or integrate with a Mobile Threat Defense solution.
  
-The information in this article can help you understand how to use the Intune mobile *device* compliance capabilities and the Intune mobile *application* management (MAM) capabilities. 
-
-> [!NOTE]
-> Conditional Access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune enhances this capability by adding mobile device compliance and mobile app management to the solution. The Conditional Access node accessed from *Intune* is the same node as accessed from *Azure AD*. 
-
 ### Device-based Conditional Access
 
 Intune and Azure Active Directory work together to make sure only managed and compliant devices can access email, Office 365 services, Software as a service (SaaS) apps, and [on-premises apps](https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started). Additionally, you can set a policy in Azure Active Directory to only enable domain-joined computers or mobile devices that are enrolled in Intune to access Office 365 services.
@@ -105,9 +100,7 @@ Any device used to access Exchange on-premises is checked for compliance when de
 
 When devices don't meet the conditions set, the end user is guided through the process of enrolling the device to fix the issue that is making the device noncompliant.
 
-#### How conditional access for Exchange on-premises works
-
-Conditional access for Exchange on-premises works differently than Azure Conditional Access based policies. You install the Intune Exchange on-premises connector to directly interact with Exchange server. The Intune Exchange connector pulls in all the Exchange Active Sync (EAS) records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
+Conditional access for Exchange on-premises uses hybrid modern authentication from Microsoft 365, a method of identity management that offers secure user authentication and authorization.  
 
 ## Benefits of Conditional Access
 
@@ -119,7 +112,7 @@ Every IT team is obsessed with network security. It's mandatory to make sure tha
 
 Conditional Access combines granular control over organizational data with a user experience that maximizes worker productivity on any device from any location.
 
-The following video shows how Advanced Threat Protection (ATP) is integrated into common scenarios that you regularly experience:
+The following video shows how conditional access is integrated into common scenarios that you regularly experience:
 
 > [!VIDEO https://www.youtube.com/embed/A7IrxAH87wc?start=178]
 
