@@ -1,10 +1,10 @@
 Dynamic Data Masking allows users to view secure data without viewing the entire value. This masking allows users who do not need to see sensitive data such as credit card numbers, tax identification numbers, etc. to view the column that contains the data, but without seeing the actual data that is stored in the table. Note that Dynamic Data Masking is a presentation layer feature, and that unmasked data will always be seen by administrators. The best use case of Dynamic Data Masking is to mask data from application users who have no direct access to the database.
 
-Dynamic Data Masking can be implemented in the Azure portal, or using T-SQL as shown in Figure 11.
+Dynamic Data Masking can be implemented in the Azure portal, or using T-SQL as shown below:
 
 :::image type="content" source="../media/module-33-security-final-13.png" alt-text="Dynamic Data Maintain":::
 
-In the above example, both the phone number and email address are hidden from a user named DDMDemo who only has SELECT access on the table. The user is allowed to see the last four digits of the phone number as it's masked using a ‘partial’ function that replaces all but the last four digits in the column. This masking is considered to be a custom function. In addition to T-SQL, if you are using Azure SQL Database, you can create dynamic masking rules in the Azure portal as shown in Figure 12.
+In the above example, both the phone number and email address are hidden from a user named DDMDemo who only has SELECT access on the table. The user is allowed to see the last four digits of the phone number as it's masked using a ‘partial’ function that replaces all but the last four digits in the column. This masking is considered to be a custom function. In addition to T-SQL, if you are using Azure SQL Database, you can create dynamic masking rules in the Azure portal:
 
 :::image type="content" source="../media/module-33-security-final-14.png" alt-text="Add Masking Rule Screen in Azure portal":::
 

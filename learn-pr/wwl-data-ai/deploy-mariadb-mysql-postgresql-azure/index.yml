@@ -3,9 +3,9 @@ uid: learn.wwl.deploy-mariadb-mysql-postgresql-azure
 metadata:
   title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
   description: "Compare Open Source Azure Database offerings with Azure SQL Server offerings. Configure an Open Source database and configure high availability and security options."
-  ms.date: 08/01/2020
+  ms.date: 08/02/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy MariaDB, MySQL, and PostgreSQL on Azure
