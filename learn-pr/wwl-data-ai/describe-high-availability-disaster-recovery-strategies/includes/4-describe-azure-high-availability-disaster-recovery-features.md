@@ -14,7 +14,7 @@ Availability Sets provide uptime against Azure-related maintenance and single po
 
 Availability sets are separated into both fault domains and update domains to support both updates to the underlying Azure Infrastructure. Fault domains are sets of servers within a data center, which use the same power source and network There can be up to three fault domains in a data center as depicted in the image below by FD 0, 1, and 2. Update domains, denoted by UD in the image below, indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time. Different update domains ensure separation.
 
-:::image type="content" source="../media/module-77-ha-final-01.png" alt-text="Fault Domains and Update Domains":::
+:::image type="content" source="../media/module-77-high-availability-final-01.png" alt-text="Fault Domains and Update Domains":::
 
 Availability sets and zones do not protect against in-guest failures, such as an OS or RDBMS crash; which is why you need to implement additional solutions such as AGs or FCIs to ensure you meet RTOs and RPOs. Both availability sets and zones are designed to limit the impact of environmental problems at the Azure level such as datacenter failure, physical hardware failure, network outages, and power interruptions.
 

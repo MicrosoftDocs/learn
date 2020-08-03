@@ -3,7 +3,7 @@ uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
   title: Describe high-availability and disaster-recovery strategies
   description: "Plan appropriate HA/DR strategy based on RTO and RPO. Choose best solution for IaaS or PaaS deployments or hybrid workloads."
-  ms.date: 08/03/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

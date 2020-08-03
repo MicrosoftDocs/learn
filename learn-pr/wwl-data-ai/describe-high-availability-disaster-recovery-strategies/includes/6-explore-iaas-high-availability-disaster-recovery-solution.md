@@ -4,7 +4,7 @@ There are many different combinations of features that could be deployed in Azur
 
 If you only need high availability and not disaster recovery, configuring an AG is one of the most ubiquitous methods no matter where you are using SQL Server. The image below is an example of what one possible AG in a single region could look like.
 
-:::image type="content" source="../media/module-77-ha-final-02.png" alt-text="An Availability Group in a single region":::
+:::image type="content" source="../media/module-77-high-availability-final-02.png" alt-text="An Availability Group in a single region":::
 
 Why is this architecture worth considering?
 
@@ -24,7 +24,7 @@ Until AGs were introduced, FCIs were the most popular way to implement SQL Serve
 
 Having said that, FCIs do have a place in Azure. They work, and as long as you have the right expectations about what is and is not provided, an FCI is a perfectly acceptable solution. The image below, from the Microsoft documentation, shows a high-level view of what an FCI deployment looks like when using Storage Spaces Direct.
 
-:::image type="content" source="../media/module-77-ha-final-03.png" alt-text="A FCI deployment using Storage Spaces Direct":::
+:::image type="content" source="../media/module-77-high-availability-final-03.png" alt-text="A FCI deployment using Storage Spaces Direct":::
 
 Why is this architecture worth considering?
 
@@ -42,7 +42,7 @@ Why is this architecture worth considering?
 
 If you are using AGs, one option is to configure the AG across multiple Azure regions or potentially as a hybrid architecture. This means that all nodes which contain the replicas participate in the same WSFC. This assumes good network connectivity, especially if this is a hybrid configuration. One of the biggest considerations would be the witness resource for the WSFC. This architecture would require AD DS and DNS to be available in every region and potentially on premises as well if this is a hybrid solution. The image below shows what a single AG configured over two locations looks like using Windows Server.
 
-:::image type="content" source="../media/module-77-ha-final-04.png" alt-text="A single AG configured over two locations":::
+:::image type="content" source="../media/module-77-high-availability-final-04.png" alt-text="A single AG configured over two locations":::
 
 Why is this architecture worth considering?
 
@@ -62,7 +62,7 @@ This architecture makes it easier to deal with things like quorum since each clu
 
 The image below shows an example distributed AG configuration. There are two WSFCs. Imagine each is in a different Azure region or one is on premises and the other is in Azure. Each WSFC has an AG with two replicas. The global primary in AG 1 is keeping the secondary of replica of AG 1 synchronized as well as the forwarder, which also is the primary of AG 2. That replica keeps the secondary replica of AG 2 synchronized.
 
-:::image type="content" source="../media/module-77-ha-final-05.png" alt-text="An example distributed AG configuration":::
+:::image type="content" source="../media/module-77-high-availability-final-05.png" alt-text="An example distributed AG configuration":::
 
  Why is this architecture worth considering?
 
@@ -76,7 +76,7 @@ The image below shows an example distributed AG configuration. There are two WSF
 
 Log shipping is one of the oldest HADR methods for configuring disaster recovery for SQL Server. As described above, the unit of measurement is the transaction log backup. Unless the switch to a warm standby is planned to ensure no data loss, data loss will most likely occur. When it comes to disaster recovery, it is always best to assume some data loss even if minimal. The image below, from the Microsoft documentation, shows an example log shipping topology.
 
-:::image type="content" source="../media/module-77-ha-final-06.png" alt-text="Configuration showing backup, copy, & restore jobs":::
+:::image type="content" source="../media/module-77-high-availability-final-06.png" alt-text="Configuration showing backup, copy, & restore jobs":::
 
 Why is this architecture worth considering?
 
@@ -96,7 +96,7 @@ For those who do not want to implement a SQL Server-based disaster solution, ASR
 
 The image below, from the Microsoft documentation. shows where in the Azure Portal you would configure replication for ASR.
 
-:::image type="content" source="../media/module-77-ha-final-07.png" alt-text="Configuring Azure Site Recovery":::
+:::image type="content" source="../media/module-77-high-availability-final-07.png" alt-text="Configuring Azure Site Recovery":::
 
 Why is this architecture worth considering?
 
