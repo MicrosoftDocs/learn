@@ -76,7 +76,7 @@ In this option, you'll walk through some common queries against system functions
     SELECT @@VERSION
     ```
 
-    :::image type="content" source="../media/4-version.png" alt-text="Screenshot of the result of SELECT @@VERSION.:::  
+    :::image type="content" source="../media/4-version.png" alt-text="Screenshot of the result of SELECT @@VERSION.":::  
 
     Looks a bit different from SQL Server. But we can tell this is Azure SQL which is "versionless". The version number is not comparable to SQL Server. Azure SQL Database includes the most up-to-date changes in line with the latest release of SQL Server. However, querying the system function @@VERSION is common method to verify you can "query" SQL Server.
 
