@@ -6,7 +6,7 @@ The first step in any data science/machine learning solution is to collect and u
 
 The Excel file contains the weather data for the individual crewed and uncrewed launches, as well as the two days before and after each launch. We added the two days surrounding the launches data to see if there were any patterns that might be interesting. Here is a screenshot from the [Excel doc that you can download here](https://nasadata.blob.core.windows.net/rocketlaunches/RocketLaunchDataCompleted.xlsx?azure-portal=true).
 
-:::image type="content" source="../media/excel.png" alt-text="excel data" loc-scope="azure":::
+:::image type="content" source="../media/excel.png" alt-text="excel data" loc-scope="Azure":::
 
 ## Missing Data
 
@@ -18,7 +18,7 @@ A list of every single launch that was attempted but pushed due to weather is no
 
 ## SMEs: Subject Matter Experts
 
-The [United States Airforce's 45th Space Wing](https://www.patrick.af.mil/About-Us/Weather/?azure-portal=true) has one mission: "Exploit the weather to assure *safe* access to air and space." Combined with the incredible minds at NASA, the likelihood of choosing a date that will have weather concerns is small. The subject matter experts on weather and flight take into account climate changes, weather patterns, and existing known data to ensure the fewest amount of changes to a launch schedule. 
+The [United States Air Force's 45th Space Wing](https://www.patrick.af.mil/About-Us/Weather/?azure-portal=true) has one mission: "Exploit the weather to assure *safe* access to air and space." Combined with the incredible minds at NASA, the likelihood of choosing a date that will have weather concerns is small. The subject matter experts on weather and flight take into account climate changes, weather patterns, and existing known data to ensure the fewest amount of changes to a launch schedule. 
 
 You can start to explore this on your own by heading to the [NASA Launch Schedule](https://www.nasa.gov/launchschedule/?azure-portal=true). Even without machine learning, you can start to look at predicted weather patterns in Cape Canaveral and see if you can identify why that date/time was chosen over one a week before or after. 
 

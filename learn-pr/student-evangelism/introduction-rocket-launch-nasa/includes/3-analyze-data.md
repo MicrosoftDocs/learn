@@ -12,7 +12,7 @@ Some key factors that NASA takes into account regarding launches are:
 - Time
 - Distance
 - Cloud Temperature
-- Percipitation Intensity
+- Precipitation Intensity
 - Rocket Velocity
 
 The 45th Space Wing (a division of the United States Air Force that focuses on space exploration and weather relating to successful rocket launches) has compiled an easy to follow graphic to explain some of the critical criteria that is taken into consideration leading up to a launch. You can find this [FAQ on their website](https://www.patrick.af.mil/Portals/14/Weather/45WS%20Launch%20Forecast%20FAQ%20final.pdf?ver=2020-05-26-164030-040?azure-portal=true).

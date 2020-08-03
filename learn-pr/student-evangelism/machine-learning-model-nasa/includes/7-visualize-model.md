@@ -34,7 +34,7 @@ tree_graph_to_png(tree=tree_model, feature_names=X.columns.values,class_names=['
 
 This will create this image:
 
-:::image type="content" source="../media/decision-tree..png" alt-text="Visualization of decision tree." loc-scope="azure":::
+:::image type="content" source="../media/decision-tree.png" alt-text="Visualization of decision tree." loc-scope="azure":::
 
 Overall looking at the data set, we have 240 samples.
 192 are no launches

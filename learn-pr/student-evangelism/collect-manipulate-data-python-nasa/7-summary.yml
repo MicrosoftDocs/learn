@@ -17,26 +17,26 @@ quiz:
   questions:
   - content: "Why do we need to clean data?"
     choices:
-    - content: "So others can read the data easier"
+    - content: "So others can read the data easier."
       isCorrect: false
-      explanation: "This is not the main reason"
-    - content: "Computers will get confused if there is inconsistent data"
+      explanation: "Although this is a beneficial result, it's not the main reason we clean data."
+    - content: "Computers get confused by inconsistent data."
       isCorrect: true
-      explanation: "Correct! This is why we must clean data"
+      explanation: "Correct! We must clean data so that computers may accurately use the data."
     - content: "To create better visualizations with data"
       isCorrect: false
-      explanation: "This is not the main reason"
+      explanation: "Although this is a beneficial result, it's not the main reason we clean data."
   - content: "Which of the following is not a library we are using?"
     choices:
     - content: "PyTorch"
       isCorrect: true
-      explanation: "Correct! This is a machine learning library, but we are not using it in this module"
-    - content: "Pandas"
+      explanation: "Correct! PyTorch is a machine learning library, but we are not using it in this module."
+    - content: "pandas"
       isCorrect: false
-      explanation: "We are using this library"
+      explanation: "We are using the pandas library."
     - content: "Sklearn"
       isCorrect: false
-      explanation: "This is the main library we are using for making the machine learning model"
+      explanation: "Sklearn is the main library we are using for making the machine learning model."
     - content: "NumPy"
       isCorrect: false
-      explanation: "We are using this library"
+      explanation: "We are using the NumPy library."

@@ -10,7 +10,7 @@ When setting up your local programming environment, we recommend creating an Ana
 
 Before continuing, be sure that you have:
 - Visual Studio Code installed with the Python and Jupyter Notebook Extension (Link to LP1M1)
-- An Anaconda environment with Pandas, NumPy, scilkit-learn, pydotplus, Azure Machine Learnign SDK
+- An Anaconda environment with Pandas, NumPy, scilkit-learn, pydotplus, Azure Machine Learning SDK
 - A folder to store all of the code and data
 - The data downloaded and saved to the folder
 - A blank Jupyter notebook saved in the folder
@@ -25,7 +25,7 @@ To setup your local environment:
 
 2. Open the Anaconda prompt
    
-     :::image type="content" source="../media/anaconda-prompt.png" alt-text="Anaconda prompt" loc-scope="azure":::
+     :::image type="content" source="../media/anaconda-prompt.png" alt-text="Anaconda prompt" loc-scope="Azure":::
 
   3. In the Anaconda Prompt, create a new Anaconda environment:  
 
@@ -51,9 +51,9 @@ To setup your local environment:
    pip install xlrd
    ```
 
-7. With the folder open in Visual Studio Code, make sure your Python Intepreter and Jupyter Kernel are both set to your Anaconda Environment. Click on both the top right Jupyter Kernel Python version and the bottom left Python Interpreter and make sure you set them both to use the Anaconda Environment you created:  
+7. With the folder open in Visual Studio Code, make sure your Python Interpreter and Jupyter Kernel are both set to your Anaconda Environment. Click on both the top right Jupyter Kernel Python version and the bottom left Python Interpreter and make sure you set them both to use the Anaconda Environment you created:  
 
-   :::image type="content" source="../media/ensure-python.png" alt-text="Visual Studio Code with Anaconda Environment" loc-scope="azure":::
+   :::image type="content" source="../media/ensure-python.png" alt-text="Visual Studio Code with Anaconda Environment" loc-scope="Azure":::
 
 ## Import Libraries
 

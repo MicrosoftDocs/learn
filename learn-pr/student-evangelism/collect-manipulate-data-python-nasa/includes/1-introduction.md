@@ -1,4 +1,4 @@
-Weather is tracked and analyzed every day to help airplanes ensure safe flights. There are many weather conditions that have to be monitored to ensure that the likelihood of something negative happening to the aircraft is as low as possible. With rocket launches, the risk and outcomes of a mis-reading or bit of un-tracked data can be devastating.
+Weather is tracked and analyzed every day to help airplanes ensure safe flights. There are many weather conditions that have to be monitored to ensure that the likelihood of something negative happening to the aircraft is as low as possible. With rocket launches, the risk and outcomes of a misreading or bit of untracked data can be devastating.
 
 With higher altitudes, more power, and the inability to control the direction of the rocket, the accuracy of safe weather predictions is one of the most challenging and important parts of space exploration. The complexities of this increase even more when the timeline is taken into account - launch dates are decided years in advanced for massive scheduling and preparation efforts.
 
@@ -8,7 +8,7 @@ This module will look at:
 
 - Conditions (Cloudy, partly cloudy, fair, rain, thunder, heavy storm)
 - Temperature
-- Tumidity
+- Humidity
 - Wind speed
 - Wind direction
 - Precipitation
@@ -19,9 +19,9 @@ This module will look at:
 
 In this module, you will:
 
-- Explore weather data on days crewed and uncrewed rockets were launched
-- Explore weather data on the days surrounding launch days
-- Clean the data in preparation for training the machine learning model
+- Explore data about weather on days rockets with crews and rockets without crews were launched.
+- Explore data about weather on the days surrounding launch days.
+- Clean the data in preparation for training the machine learning model.
 
 ## Prerequisites
 

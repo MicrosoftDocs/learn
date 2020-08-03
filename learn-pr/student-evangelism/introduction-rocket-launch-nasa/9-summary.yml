@@ -29,11 +29,11 @@ quiz:
     - content: "False, they are as accurate as the software built by humans can make them"
       isCorrect: true
       explanation: "Correct! Computers are only accurate if the programming is accurate"
-  - content: "What are the four steps in the data science lifecyle?"
+  - content: "What are the four steps in the data science lifecycle?"
     choices:
     - content: "Business Understanding, Data Gathering and Preparation, Model Training and Testing, Model Deployment"
       isCorrect: true
-      explanation: "Correct! This are the exact four steps"
+      explanation: "Correct! These are the exact four steps"
     - content: "Data Gathering, Data Validation, Machine Learning, Result Visualization"
       isCorrect: false
       explanation: "These are not the four steps"

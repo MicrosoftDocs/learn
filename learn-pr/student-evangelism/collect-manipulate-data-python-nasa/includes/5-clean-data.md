@@ -4,7 +4,7 @@ We do this because computers will get confused if they look at inconsistent data
 
 ## Data Cleansing
 
-The first step that we will take to clean our data is to replaces all the missing values with something. Replacing these values usually requires subject matter expertise, but in this case you will use your best judgement. In our case, we have some rows (remember, rows represent days) where we are missing some weather or launch data. 
+The first step that we will take to clean our data is to replaces all the missing values with something. Replacing these values usually requires subject matter expertise, but in this case you will use your best judgment. In our case, we have some rows (remember, rows represent days) where we are missing some weather or launch data. 
 
 To get started, first get an overview of the launch data by typing this into a cell:
 
@@ -48,7 +48,7 @@ Data columns (total 26 columns):
 ```
 Most notably, we can see that `Hist Ave Max Wind Speed`, `Hist Ave Visibility`, and `Hist Ave Sea Level Pressure` have no data. 
 
-It makes sense that `Wind Speed at Launch Time`, `Temp at Launch Time`, `Launched`, `Crewed or Uncrewed`, `Time`, and `Name` only have 60 values, since we only have 60 launches in our data, the rest are the days preceeding and proceeding the launch. 
+It makes sense that `Wind Speed at Launch Time`, `Temp at Launch Time`, `Launched`, `Crewed or Uncrewed`, `Time`, and `Name` only have 60 values, since we only have 60 launches in our data, the rest are the days preceding and proceeding the launch. 
 
 Here are a few ways to cleanse the data: 
 - We know that the rows that do not have a Y in the Launched column did not have a rocket launch, so we will make those missing values 'N'

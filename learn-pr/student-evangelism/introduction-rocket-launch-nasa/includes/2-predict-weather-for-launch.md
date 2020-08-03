@@ -6,6 +6,6 @@ NASA partners closely with [NOAA - the National Oceanic and Atmospheric Administ
 
 NOAA gives access to their data in a number of ways. On the [NOAA Data Access page](https://www.ncdc.noaa.gov/data-access?azure-portal=true)  , you will find [APIs](https://wikipedia.org/wiki/Application_programming_interface?azure-portal=true) that will give you access through code that you might write. Additionally, you can download data at no cost, or even order hardcopies of come for small fees.
 
-NASA also has their own data that they collect and make publicy available. At [Data.NASA.gov](https://nasa.github.io/data-nasa-gov-frontpage/?azure-portal=true), you can find tens of thousands of datasets. [NASA also provides developer resources](https://data.nasa.gov/stories/s/gk8h-th3y?azure-portal=true) for folks who want to integrate the NASA data into their applications.
+NASA also has their own data that they collect and make publicly available. At [Data.NASA.gov](https://nasa.github.io/data-nasa-gov-frontpage/?azure-portal=true), you can find tens of thousands of datasets. [NASA also provides developer resources](https://data.nasa.gov/stories/s/gk8h-th3y?azure-portal=true) for folks who want to integrate the NASA data into their applications.
 
 With all of this data, and the hundreds of individuals who use their expertise to ensure the best prediction possible, a date is selected and the process for launching begins.
