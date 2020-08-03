@@ -1,15 +1,9 @@
-<div style="background:yellow;">TODO: Add introductory paragraph.</div>
+Title format: Use <product> to <solve problem>
 
-Introduction paragraph.
+Introduction: Statement of the sub-task using a scenario based on unit 1.
 
-## What is QnA Maker?
+Problem analysis: Analyze the sub-task using criteria from unit 3.
 
-<div style="background:yellow;">TODO: Add paragraph, add DIAGRAM.</div>
+Analysis of the criteria: Explain how it leads to the product best suited for the problem.
 
-## What will you build?
-
-<div style="background:yellow;">TODO: Add paragraph, add screenshot.</div>
-
-## Build a customer service bot with QnA Maker
-
-<div style="background:yellow;">TODO: Add steps, add screenshots.</div>
+Analysis of why other option(s) are sub optimal: Explain why the other products are not best suited for the problem.

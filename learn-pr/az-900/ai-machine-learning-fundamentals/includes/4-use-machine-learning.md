@@ -1,32 +1,9 @@
-<div style="background:yellow;">TODO: Add introductory paragraph.</div>
+Title format: Use <product> to <solve problem>
 
-This is an introduction paragraph.
+Introduction: Statement of the sub-task using a scenario based on unit 1.
 
-## What is machine learning?
+Problem analysis: Analyze the sub-task using criteria from unit 3.
 
-<div style="background:yellow;">TODO: Add paragraph. add video.</div>
+Analysis of the criteria: Explain how it leads to the product best suited for the problem.
 
-## How does it work?
-
-<div style="background:yellow;">TODO: Add paragraph, add image.</div>
-
-## How is it used?
-
-<div style="background:yellow;">TODO: Add paragraph, add image.</div>
-
-## What problems does it solve?
-
-<div style="background:yellow;">TODO: Add paragraph, add image.</div>
-
-## How is it different from machine learning?
-
-<div style="background:yellow;">TODO: Add paragraph, add image.</div>
-
-## How is it different from cognitive services?
-
-<div style="background:yellow;">TODO: Add paragraph, add image.</div>
-
-## Will it solve Tailwind Trader's problem?
-
-<div style="background:yellow;">TODO: Add paragraph, add image.</div>
-
+Analysis of why other option(s) are sub optimal: Explain why the other products are not best suited for the problem.
