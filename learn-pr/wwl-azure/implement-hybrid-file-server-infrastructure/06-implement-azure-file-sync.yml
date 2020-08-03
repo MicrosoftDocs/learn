@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-file-server-infrastructure.implement-azure-file-sync
+title: Implement Azure File Sync
+metadata:
+  title: 06-implement-azure-file-sync.md
+  description: "06-implement-azure-file-sync.md"
+  ms.date: 08/06/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 11
+content: |
+  [!include[](includes/06-implement-azure-file-sync.md)]
