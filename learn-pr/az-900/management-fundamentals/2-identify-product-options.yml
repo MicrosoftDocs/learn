@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.management-fundamentals.identify-product-options
+title: Identify the product options
+metadata:
+  title: Identify the product options
+  description: TODO
+  ms.date: 07/29/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-identify-product-options.md)]

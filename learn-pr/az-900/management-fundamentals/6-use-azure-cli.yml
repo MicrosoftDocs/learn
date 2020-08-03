@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.management-fundamentals.what-is-azure-powershell
-title: What is Azure Powershell?
+uid: learn.languages.management-fundamentals.use-azure-cli
+title: Use Azure CLI
 metadata:
-  title: What is Azure Powershell?
+  title: Use Azure CLI
   description: TODO need a description
   ms.date: 07/29/2020
   author: bobtabor-msft
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 1
 azureSandbox: false
 content: |
-  [!include[](includes/3-what-is-azure-powershell.md)]
+  [!include[](includes/6-use-azure-cli.md)]

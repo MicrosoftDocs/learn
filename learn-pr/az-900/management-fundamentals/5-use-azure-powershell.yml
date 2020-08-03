@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.management-fundamentals.what-is-azure-mobile-app
-title: What is the Azure Mobile App?
+uid: learn.languages.management-fundamentals.use-azure-powershell
+title: Use Azure Powershell?
 metadata:
-  title: Introduction
+  title: Use Azure Powershell?
   description: TODO need a description
   ms.date: 07/29/2020
   author: bobtabor-msft
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 1
 azureSandbox: false
 content: |
-  [!include[](includes/5-what-is-azure-mobile-app.md)]
+  [!include[](includes/5-use-azure-powershell.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.management-fundamentals.what-is-azure-resource-manager
-title: What is the Azure Resource Manager?
+uid: learn.languages.management-fundamentals.use-azure-portal
+title: Use Azure Portal
 metadata:
-  title: What is the Azure Resource Manager?
+  title: Use Azure Portal
   description: TODO need a description
   ms.date: 07/29/2020
   author: bobtabor-msft
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 1
 azureSandbox: false
 content: |
-  [!include[](includes/6-what-is-azure-resource-manager.md)]
+  [!include[](includes/4-use-azure-portal.md)]

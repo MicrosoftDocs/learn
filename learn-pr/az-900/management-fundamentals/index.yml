@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.languages.management-fundamentals
 metadata:
-  title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
-  description: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+  title: Choose the best Azure management tool for your cloud environment
+  description: TODO
   ms.date: 07/29/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
-summary: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+title: Choose the best Azure management tool for your cloud environment
+summary: TODO
 abstract: |
   In this module, you will:
   - Install and configure Visual Studio 2019 Community Edition.
@@ -24,12 +24,13 @@ products:
 - dotnet
 units:
 - learn.languages.management-fundamentals.introduction
-- learn.languages.management-fundamentals.what-is-azure-portal
-- learn.languages.management-fundamentals.what-is-azure-powershell
-- learn.languages.management-fundamentals.what-is-azure-cli
-- learn.languages.management-fundamentals.what-is-azure-mobile-app
-- learn.languages.management-fundamentals.what-is-azure-resource-manager
-- learn.languages.management-fundamentals.what-is-infrastructure-as-code
+- learn.languages.management-fundamentals.identify-product-options
+- learn.languages.management-fundamentals.analyze-decision-criteria
+- learn.languages.management-fundamentals.use-azure-portal
+- learn.languages.management-fundamentals.use-azure-powershell
+- learn.languages.management-fundamentals.use-azure-cli
+- learn.languages.management-fundamentals.use-azure-mobile-app
+- learn.languages.management-fundamentals.use-azure-resource-manager
 - learn.languages.management-fundamentals.knowledge-check
 - learn.languages.management-fundamentals.summary
 
