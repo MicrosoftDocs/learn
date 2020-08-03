@@ -60,7 +60,7 @@ Second normal form is only relevant to tables with composite keys, like in the t
 
 The table above is **not** in second normal form. The price value is dependent on the ProductID but not on the Color. There are three rows for ProductID 1, so the price for that product is repeated three times. The problem with violating second normal form is that if we have to update the price, we have to make sure we update it everywhere. If we update the price in the first row, but not the second or third, we would have something called an ‘update anomaly’. After the update, we wouldn’t be able to tell what the actual price for ProductID 1 was. The solution is to move the Price column to a table that has ProductID as a single column key, because that is the only column that Price depends on. For example, we could use Table 3 to store the Price.
 
-If the price for a product was different based on the color of the product, then the fourth table would be in second normal form, because the price would depend on both parts of the key: ProductID and Color. 
+If the price for a product was different based on the color of the product, then the fourth table would be in second normal form, because the price would depend on both parts of the key: ProductID and Color.
 
 ## Third normal form
 
@@ -74,7 +74,7 @@ The transitive relationship implies that one column in a table is related to oth
 
 While the third normal form is theoretically desirable, it is not always possible for all data. In addition, a normalized database does not always give you the best performance. Normalized data frequently requires multiple join operations to get all the necessary data returned in a single query. There is a tradeoff between normalizing data when the number of joins required to return query results has high CPU utilization, and denormalized data that has fewer joins and less CPU required, but opens up the possibility of update anomalies.
 
-Note that denormalized data is not the same as unnormalized. For denormalization, we start by designing tables that are normalized. Then we can add additional columns to some tables to reduce the number of joins required, but as we do so, we are aware of the possible update anomalies. We then make sure we have triggers or other kinds of processing that will make sure that when we perform an update, all the duplicate data is also updated. 
+Note that denormalized data is not the same as unnormalized. For denormalization, we start by designing tables that are normalized. Then we can add additional columns to some tables to reduce the number of joins required, but as we do so, we are aware of the possible update anomalies. We then make sure we have triggers or other kinds of processing that will make sure that when we perform an update, all the duplicate data is also updated.
 
 Denormalized data can be more efficient to query, especially for read heavy workloads like a data warehouse. In those cases, having additional columns may offer better query patterns and/or more simplistic queries.
 
