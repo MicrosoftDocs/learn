@@ -14,7 +14,7 @@ Here's the SLA for each service:
 
 To compute the composite SLA for a set of services, you multiply the SLA of each individual service. Recall that the existing composite SLA is:
 
-$${99.9 \% \times 99.9 \% \times 99.99 \% \times 99.99 \% = 99.78 \%}$$
+$${99.9\pct \times 99.9\pct \times 99.99\pct \times 99.99\pct = 99.78\pct}$$
 
 The team wants to add a mapping feature so that they can calculate routes between nearby suppliers and each retail store. For that, they'll use Azure Maps.
 
