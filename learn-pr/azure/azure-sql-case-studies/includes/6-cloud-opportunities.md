@@ -4,7 +4,7 @@ Once a given workload or application is up and running with Azure SQL, and you'v
 
 Satya Nadella, Microsoft CEO, once claimed that Azure is the world's computer. With the combination of stability and innovation that comes from the SQL Server and Azure SQL platform, Azure SQL has become the world's database. Once you're on Azure SQL, you can connect and integrate with other services in Azure, as well as to your on-premises environment.
 
-:::image type="content" source="../media/5-cloud-opportunities.png" alt-text="Cloud opportunities with Azure SQL" border="false":::
+:::image type="content" source="../media/5-cloud-opportunities.png" alt-text="Diagram of cloud opportunities with Azure SQL." border="false":::
 
 ### Integration with other services
 

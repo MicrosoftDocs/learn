@@ -97,13 +97,13 @@ Let's now load some T-SQL queries for DMVs to observe query performance for acti
 1. Now run the queries in SSMS you previously loaded to observe performance. Run the queries for **sqlrequests.sql**, **top_waits.sql**, and **tlog_io.sql**
 
     Use these queries you can observe the following facts:
-    
+
     - Many requests constantly have a wait_type of WRITELOG with a value > 0
     - The WRITELOG wait type is one of the highest counts for wait types.
     - The average time to write to the transaction log is somewhere around 2 ms.
-    
+
     The duration of this workload on a SQL Server 2019 instance with an SSD drive is somewhere around 10-12 seconds. The total duration on Azure SQL Database using a Gen5 v8 core is around ~25 seconds.
-    
+
     WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. 2 ms per write doesn't seem like much but on a local SSD drive these waits may be less than 1 ms.
 
 ## Decide on a resolution

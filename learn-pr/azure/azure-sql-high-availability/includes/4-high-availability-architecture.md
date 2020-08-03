@@ -8,13 +8,13 @@ Databases and managed instances in the General purpose service tier have the sam
 
 As discussed in an earlier module in the learning path, all of Azure SQL is built on Azure Service Fabric, which serves as the Azure backbone. If Azure Service Fabric determines that a failover needs to occur, the failover will be similar to that of a Failover Cluster Instance (FCI) where the service fabric will look for a node with spare capacity and spin up a new SQL Server instance. Then, the database files will be attached, recovery will be run, and gateways are updated to point applications to the new node. There is no virtual network or listener or updates required, this capability just comes built-in.
 
-:::image type="content" source="../media/4-general-purpose-architecture.png" alt-text="General purpose architecture":::
+:::image type="content" source="../media/4-general-purpose-architecture.png" alt-text="Screenshot of the General purpose architecture.":::
 
 ## Business critical
 
 The next service tier to consider is Business critical, which can generally achieve the highest performance and availability of all Azure SQL service tiers (General purpose, Hyperscale, Business critical). Business critical is meant for mission-critical applications that need low latency and minimal downtime.  
 
-:::image type="content" source="../media/4-business-critical-architecture.png" alt-text="Business critical architecture":::
+:::image type="content" source="../media/4-business-critical-architecture.png" alt-text="Screenshot of the Business critical architecture.":::
 
 Business critical is similar to deploying an Always on Availability Group (AG) behind the scenes. Unlike the General purpose tier, in Business critical the data and log files are all running on directly attached SSD, which reduces network latency significantly (General purpose uses remote storage). In this AG, there are three secondary replicas, and one of them can be used as a read-only endpoint (at no additional charge). A transaction can complete a commit when at least one of the secondary replicas has hardened the change for its transaction log.
 
@@ -27,7 +27,7 @@ If any type of failure occurs and the service fabric decides a failover needs to
 The Hyperscale service tier is only available in Azure SQL Database, but is in the process of being developed for Azure SQL Managed Instance. This service tier has a unique architecture.
 
 
-:::image type="content" source="../media/4-hyperscale-architecture-2.png" alt-text="Hyperscale architecture":::
+:::image type="content" source="../media/4-hyperscale-architecture-2.png" alt-text="Screenshot of the Hyperscale architecture.":::
 
 Since the architecture leverages paired page servers, you have the ability to scale horizontally to put all of the data in caching layers. This new architecture also allows Hyperscale to support up to 100 TB of database size. Because of the use of snapshots, nearly instantaneous database backups can occur regardless of size and databases restores take minutes rather than hours or days. You can also scale up or down in constant time to accommodate your workloads.
 

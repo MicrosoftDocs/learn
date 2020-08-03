@@ -18,7 +18,7 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
 1. Select **Azure SQL** under **Marketplace**. This will bring you to the Azure SQL create experience.
 
-    :::image type="content" source="../media/3-azure-sql-deployment-options.gif" alt-text="Azure SQL Deployment options in portal":::
+    :::image type="content" source="../media/3-azure-sql-deployment-options.gif" alt-text="Screenshot of the Azure SQL Deployment options in portal.":::
 
     Next, select **Single database** and click **Create**.
 
@@ -53,17 +53,17 @@ In this activity, you'll deploy Azure SQL Database deployment using the Azure po
 
     Your **Additional settings** pane should now look similar to the image below.
 
-    :::image type="content" source="../media/3-additional-settings.png" alt-text="Additional settings options":::
+    :::image type="content" source="../media/3-additional-settings.png" alt-text="Screenshot of additional settings options.":::
 
 1. Select **Review + create**. Here you can review your deployment selections and the Azure Marketplace terms. Review all the options here to ensure all of your selections match the exercise instructions and select **Create** to deploy the service.  
 
 1. Soon after selecting Create, you will be redirected to a page that looks like the following where you can monitor the status of your deployment. You can also navigate to your resource group, and select **Deployments** to get to this same pane. This will give you the various deployments, their status, and more information. This deployment typically takes less than five minutes to deploy.  
 
-    :::image type="content" source="../media/3-deployment-underway-2.png" alt-text="Resources being deployed view":::
+    :::image type="content" source="../media/3-deployment-underway-2.png" alt-text="Screenshot of resources being deployed view.":::
 
 1. Once complete, select **Go to resource**.
 
-    :::image type="content" source="../media/3-deployment-underway-3.png" alt-text="Deployment is complete view":::
+    :::image type="content" source="../media/3-deployment-underway-3.png" alt-text="Screenshot of deployment is complete view.":::
 
 1. Review the **Overview** pane for the SQL database in the Azure portal and confirm that the Status is **Online**.  
 
@@ -75,11 +75,11 @@ Next, let's look at the basics of connecting to your deployed Azure SQL Database
 
 Before you look at the Azure SQL Database you just deployed, let's review what connecting to an instance of SQL Server 2019 may look like. Typically, you'd open SSMS and connect, using Windows Authentication perhaps, to the local instance of SQL Server 2019, similar to the image below.  
 
-:::image type="content" source="../media/3-local-connect.png" alt-text="How to connect to SQL Server 2019 in SSMS":::  
+:::image type="content" source="../media/3-local-connect.png" alt-text="Screenshot showing how to connect to SQL Server 2019 in SSMS.":::  
 
 You would then see a view that looks similar to the following.  
 
-:::image type="content" source="../media/3-local-server.png" alt-text="What a SQL Server 2019 deployment looks like in SSMS":::  
+:::image type="content" source="../media/3-local-server.png" alt-text="Screenshot of what a SQL Server 2019 deployment looks like in SSMS.":::  
 
 Keep that in mind as a reference for comparison as you complete the following steps.
 
@@ -89,7 +89,7 @@ Keep that in mind as a reference for comparison as you complete the following st
 
 1. Next, let's connect to your Azure SQL Database logical server. On your local device, open SSMS if it is not open already, and create a new connection. Select **Connect > Database Engine**.  
 
-    :::image type="content" source="../media/3-db-engine.png" alt-text="How to connect to Azure SQL Database in SSMS":::  
+    :::image type="content" source="../media/3-db-engine.png" alt-text="Screenshot of how to connect to Azure SQL Database in SSMS.":::  
 
 1. For **Server name**, paste the name of your Azure SQL Database logical server.
 
@@ -102,10 +102,10 @@ Keep that in mind as a reference for comparison as you complete the following st
 
 1. Expanding the databases and system databases should result in a view similar to the following.  
 
-    :::image type="content" source="../media/3-azure-server.png" alt-text="View of SQL Database folders in SSMS":::  
+    :::image type="content" source="../media/3-azure-server.png" alt-text="Screenshot of the view of SQL Database folders in SSMS.":::  
 
     Spend a few minutes clicking around and exploring the differences, at first glance, between the Azure SQL Database logical server and SQL Server. You won't deploy an Azure SQL Managed Instance as part of this exercise, but the image below shows how Azure SQL Managed Instance would appear in SSMS.  
 
-    :::image type="content" source="../media/3-managed-instance.png" alt-text="View of Managed Instance in SSMS":::  
+    :::image type="content" source="../media/3-managed-instance.png" alt-text="Screenshot of the view of Managed Instance in SSMS.":::  
 
 In this exercise, you saw how to deploy and connect to Azure SQL Database, and how it compares (at first glance) to SQL Server and Azure SQL Managed Instance. In the next exercise, you will continue this comparison, going deeper and exploring various methods to verify your deployment/installation.  

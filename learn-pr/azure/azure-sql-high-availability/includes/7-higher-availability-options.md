@@ -5,7 +5,7 @@ Azure SQL Database and Azure SQL Managed Instance provide great availability opt
 In the Business critical tier in Azure SQL Database, you can opt in (for no additional fee) for a zone redundant configuration if your region supports that. At a high level, the Always On Availability Group (AG) that is running behind Business critical databases and managed instances is deployed across three different availability zones (AZ) within a region. An AZ is basically a separate datacenter within a given region with some distance between another AZ. This capability protects against catastrophic failures that may occur in a region to a datacenter.
 
 
-:::image type="content" source="../media/7-availability-zones.png" alt-text="Availability zone architecture" border="false":::
+:::image type="content" source="../media/7-availability-zones.png" alt-text="Screenshot of the availability zone architecture." border="false":::
 
 From performance standpoint, there may be a small increase in network latency, since your AG is now spread across datacenters with some distance between them. For this reason, leveraging AZs is not turned on by default. You have the choice to opt for what's commonly called a "multi-az" or "single-az" deployment. Making this decision is as simple as adding a parameter to a PowerShell/Azure CLI command or checking a box in the portal.  
 
