@@ -1,4 +1,4 @@
-## Quick Overview
+## Quick overview
 
 Published by Microsoft and recognized by the threat modeling community, Microsoft Threat Modeling Tool helps engineers create data-flow diagrams and apply STRIDE for their threat modeling work.
 
@@ -9,18 +9,18 @@ The Threat Modeling Tool offers:
 
 The default template is called "SDL TM Knowledge Base" and gives you a basic set of elements and threat generation capabilities. All you need is a basic understanding of data-flow diagrams and STRIDE.
 
-### Remember
+### STRIDE recap
 
-STRIDE is the acronym for the six major threat categories: 
+STRIDE is the acronym for the six major threat categories:
 
-- Spoofing - Pretending to be someone or something else
-- Tampering - Changing data without authorization
-- Repudiation - Not claiming responsibility for an action taken
-- Information Disclosure - Seeing data without permission
-- Denial of Service - Overwhelming the system
-- Elevation of Privilege - Having permissions I should not have
+- Spoofing - pretending to be someone or something else
+- Tampering - changing data without authorization
+- Repudiation - not claiming responsibility for an action taken
+- Information disclosure - seeing data without permission
+- Denial of service - overwhelming the system
+- Elevation of privilege - having permissions I shouldn't have
 
-## Advanced User Section
+## Advanced user section
 
 For more advanced users, the template can be customized across three main sections.
 
@@ -34,11 +34,11 @@ You can also create children elements to help provide granularity for additional
 
 :::image type="content" source="../media/expandedflowstencils.jpg" alt-text="Expanded Flow Stencils." loc-scope="other":::
 
-#### Example of How Children Elements Work
+#### Example of how children elements work
 
 The **data-flow** parent element gives you the option to choose between the **HTTP** and **HTTPS** children elements.
 
-HTTP should generate more threats because tampering, information disclosure and spoofing threats are common with unencrypted channels.
+HTTP should generate more threats because tampering, information disclosure, and spoofing threats are common with unencrypted channels.
 
 ##### Using HTTP
 
@@ -48,7 +48,7 @@ HTTP should generate more threats because tampering, information disclosure and 
 
 :::image type="content" source="../media/HTTPS.JPG" alt-text="Illustrates the HTTPS child element." loc-scope="other":::
 
-#### How to Add Element Properties
+#### How to add element properties
 
 If you have additional properties that must be included in the default template, you can add them to each element in the administrator view.
 
@@ -58,37 +58,37 @@ Users will see the changes whenever they drag and drop that element onto the can
 
 :::image type="content" source="../media/StencilProperties.JPG" alt-text="Stencil Properties User View." loc-scope="other":::
 
-### Threat Properties
+### Threat properties
 
 Properties allow you to create fields that are filled out for each generated threat, just like stencil properties allow you to create fields for each element.
 
 Remember: the goal is to have as much context as possible in the simplest manner.
 
-#### Example of Threat Properties
+#### Example of threat properties
 
-##### Administrator View
+##### Administrator view
 
 Add fields that give you more context and actionable steps. Examples include:
 
-- **Issue Priority** - understand which issues need to be worked on first
+- **Issue priority** - understand which issues need to be worked on first
 - **Hyperlinks** - link issues to online documentation
-- **External Risk Mapping** - speak the same risk language of other organizations by using reliable third-party sources, such as OWASP Top 10 and CWE Details
+- **External risk mapping** - speak the same risk language of other organizations by using reliable third-party sources, such as OWASP Top 10 and CWE Details
 
 :::image type="content" source="../media/ThreatAdminView.JPG" alt-text="Threat Properties Admin View." loc-scope="other":::
 
-##### User View
+##### User view
 
 Threat Modeling Tool users will see those changes whenever they analyze their data-flow diagrams.
 
 :::image type="content" source="../media/ThreatUserView.JPG" alt-text="Threat Properties User View." loc-scope="other":::
 
-### Threats and Risk Reduction Strategies
+### Threats and risk reduction strategies
 
 This section is the heart of the threat modeling tool. The threat generation engine looks at individual and connected elements to decide which threats to generate.
 
-#### How Threat Generation Works
+#### How threat generation works
 
-##### Step 1 - Specify Sources and Targets
+##### Step 1 - specify sources and targets
 
 The threat generation engine uses simple sentences to generate a threat. Examples include:
 
@@ -97,19 +97,19 @@ The threat generation engine uses simple sentences to generate a threat. Example
 
 You can also use the element name on titles and descriptions. The format is: '{target.Name}' or '{source.Name}'
 
-##### Step 2 - Combine Sources and Targets
+##### Step 2 - combine sources and targets
 
 You can be precise with the way a threat is generated. Combine targets, sources, and their individual properties with AND OR operators. Examples include:
 
 - target.[property name] is 'Yes' **AND** source.[property name] is 'No'
 - flow crosses [trust boundary name]
 
-##### Step 3 - Generate or Ignore Threats
+##### Step 3 - generate or ignore threats
 
 The threat generation engine uses two fields to generate or ignore a threat:
 
 - **Include** - threat will be generated if sentences added in this field are true
-- **Exclude** - threat will not be generated if sentences added in this field are true
+- **Exclude** - threat won't be generated if sentences added in this field are true
 
 Here's an actual example from the default template to bring these steps together:
 
@@ -120,7 +120,7 @@ Here's an actual example from the default template to bring these steps together
 The Cross Site Scripting threat above will **only** be generated when:
 
 - The process is either a Web Server or a Web Application
-- Input and output are not sanitized
+- Input and output aren't sanitized
 
 :::image type="content" source="../media/IncludeExclude.JPG" alt-text="Include Exclude." loc-scope="other":::
 
