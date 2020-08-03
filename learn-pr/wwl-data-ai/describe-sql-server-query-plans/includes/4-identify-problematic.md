@@ -34,7 +34,9 @@ This query could be written to use a predicate that is SARGable. The optimizer w
 
 :::image type="content" source="../media/module-55-optimize-queries-final-08.png" alt-text="A Query and Execution Plan with a SARGable Predicate":::
 
-By changing the LEFT function into a LIKE, and index SEEK is used. Note that this LIKE does not have a wildcard on the left, so it is looking for cities that begin with M. , if it was “two-sided” or started with a wildcard (‘%M% or ‘%M’) it would be non-SARGable. The seek operation is estimated to return 1267 rows, or approximately 15% of the estimate for the query with the non-SARGable predicate.
+By changing the LEFT function into a LIKE, and index SEEK is used. 
+>[!NOTE]
+>The LIKE keyword, in this instance, does not have a wildcard on the left, so it is looking for cities that begin with M. , if it was “two-sided” or started with a wildcard (‘%M% or ‘%M’) it would be non-SARGable. The seek operation is estimated to return 1267 rows, or approximately 15% of the estimate for the query with the non-SARGable predicate.
 
 Some other database development anti-patterns are treating the database as a service rather than a data store. Using a database to convert data to JSON, manipulate strings, or perform complex calculations can lead to excessive CPU use and increased latency. Queries that try to retrieve all records and then perform computations in the database can lead to excessive IO and CPU usage. Ideally, you should use the database for data access operations and optimized database constructs like aggregation.
 

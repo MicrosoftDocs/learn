@@ -1,14 +1,14 @@
-The topic of actual versus estimated execution plans can be confusing. As mentioned above, the difference is that the actual plan includes runtime statistics that are not captured in the estimated plan. The operators used, and order of execution will be the same as the estimated plan in nearly all cases. The other consideration is that in order to capture an actual execution plan the query has to be executed, which can be extremely time consuming, or not be possible. For example, the query may be an UPDATE statement that can only be run once. However, if you need to see query results as well as the plan, you’ll need to use one of the actual plan options.
+The topic of actual versus estimated execution plans can be confusing. The difference is that the actual plan includes runtime statistics that are not captured in the estimated plan. The operators used, and order of execution will be the same as the estimated plan in nearly all cases. The other consideration is that in order to capture an actual execution plan the query has to be executed, which can be extremely time consuming, or not be possible. For example, the query may be an UPDATE statement that can only be run once. However, if you need to see query results as well as the plan, you’ll need to use one of the actual plan options.
 
 :::image type="content" source="../media/module-55-optimize-queries-final-01.png" alt-text="An estimated execution plan generated in SQL Server Management Studio":::
 
 As shown above, you can generate an estimated plan in SSMS by clicking the button pointed to by the estimated query plan box (or using the keyboard command Control+L). You can generate the actual plan by either clicking the icon shown or using the keyboard command Control+M, and executing the query This is different than an estimated query plan, which does not require the query to be executed. The two option buttons work a bit differently. The Estimated Query Plan button responds immediately to whatever query in highlighted (or the entire workspace, if nothing is highlighted). The Actual Execution plan button is a toggle. Once you click it, it says on and displays the Actual plan for all queries. To stop displaying plans, you can click the button again, which will turn it off.
- 
+
 There is overhead to both executing a query and generating an estimated execution plan, so viewing execution plans should be done carefully in a production environment.
 
 For the most part you can use the estimated execution plan while writing your query, to understand its performance characteristics, identify missing indexes, or detect query anomalies. The actual execution plan is best used to understand the runtime performance of the query, and most importantly gaps in statistical data that cause the query optimizer to make suboptimal choices based on the data it has available.
 
-## Reading a query plan
+## Read a query plan
 
 Execution plans show you what tasks the database engine is performing while retrieving the data needed to satisfy a query. Let’s dive into the plan.
 
@@ -70,7 +70,7 @@ OPTION(USE HINT ('QUERY_PLAN_PROFILE');
 
 ## Last query plans stats
 
-SQL Server 2019 and Azure SQL Database support two further enhancements to the query profiling infrastructure. First, lightweight profiling is enabled by default in both SQL Server 2019 and Azure SQL Database and managed instance. Lightweight profiling is also available as a database scoped configuration option, called LIGHTWEIGHT_QUERY_PROFILING. With the database scoped option, you can disable the feature for any of your user databases independent of each other. 
+SQL Server 2019 and Azure SQL Database support two further enhancements to the query profiling infrastructure. First, lightweight profiling is enabled by default in both SQL Server 2019 and Azure SQL Database and managed instance. Lightweight profiling is also available as a database scoped configuration option, called LIGHTWEIGHT_QUERY_PROFILING. With the database scoped option, you can disable the feature for any of your user databases independent of each other.
 
 Second, there is a new dynamic management function called sys.dm_exec_query_plan_stats, which can show you the last known actual query execution plan for a given plan handle. In order to see the last known actual query plan through the function, you can enable trace flag 2451 server-wide.  Alternatively, you can enable this functionality using a database scoped configuration option called LAST_QUERY_PLAN_STATS. 
 
@@ -92,6 +92,6 @@ This functionality lets you quickly identify the runtime stats for the last exec
 
 :::image type="content" source="../media/module-55-optimize-queries-final-05.png" alt-text="Retrieving the Actual Execution Plan for a Query":::
 
-:::image type="content" source="../media/module-55-optimize-queries-final-06.png" alt-text="Execution Plan retrieved from SQL Server 2019"::: 
+[![Execution Plan retrieved from SQL Server 2019](../media/module-55-optimize-queries-final-06.png)](../media/module-55-optimize-queries-final-06.png#lightbox)
 
 As you can see from the properties of the Columnstore Index Scan, the plan retrieved from the cache has actual number of rows retrieved in the query.
