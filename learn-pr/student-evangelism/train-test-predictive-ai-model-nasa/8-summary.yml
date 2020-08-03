@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.8-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/8-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is a Neural Network?"
+    choices:
+    - content: "A computer system that is modeled after the human brain and nervous system"
+      isCorrect: true
+      explanation: "This is the definition of a neural network"
+    - content: "Giving a computer a brain of its own"
+      isCorrect: false
+      explanation: "A neural network is just modeled after a brain not an actual one"
+    - content: "Software that we install onto a computer"
+      isCorrect: false
+      explanation: "This is not what a neural network is"      
+  - content: "What does the accuracy of a Artificial Intelligence Model mean?"
+    choices:
+    - content: "What percentage of time the model made a incorrect prediction"
+      isCorrect: false
+      explanation: "This is not what accuracy means in our context"
+    - content: "What percentage of time the model made a correct prediction"
+      isCorrect: true 
+      explanation: "This is what accuracy means in our context"
+    - content: "How many more images you need to train the model with for it to be perfect"
+      isCorrect: false
+      explanation: "This is not what accuracy means in our context"
+    - content: "What percentage of time the program will run"
+      isCorrect: false
+      explanation: "The program should run every time."
+  - content: "How can you increase the accuracy of an artificial intelligence model?"
+    choices:
+    - content: "Train the model 3 times instead of 5 times"
+      isCorrect: false
+      explanation: "This will not necessarily increase accuracy"
+    - content: "Decrease the epoch number"
+      isCorrect: false
+      explanation: "This will not necessarily increase the accuracy"
+    - content: "Adding more images and increasing the epoch number"
+      isCorrect: true
+      explanation: "Correct! This is how to increase accuracy"
+    - content: "Decreasing the number of images"
+      isCorrect: false
+      explanation: "This won't necessarily increase the accuracy"
+
+

@@ -1,0 +1,56 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-moon-rock-images-ai-nasa.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning.azure
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the point of separating data into a training and testing section?"
+    choices:
+    - content: "So we can train the model with some and test the model with some"
+      isCorrect: true
+      explanation: "Correct! This is the reason"
+    - content: "Because the computer can't test that much data"
+      isCorrect: false
+      explanation: "That is not the reason"
+    - content: "To train the model faster"
+      isCorrect: false
+      explanation: "This is not the reason"
+  - content: "How do computers view images?"
+    choices:
+    - content: "As .jpg files"
+      isCorrect: false
+      explanation: "Computers can't just read a .jpg"
+    - content: "By reading the words off the picture"
+      isCorrect: false
+      explanation: "This would lose a lot of information about the picture"
+    - content: "By breaking the picture up into fours and reading each of those sections"
+      isCorrect: false
+      explanation: "This is not how computers read images"
+    - content: "By breaking it down into ones and zeros"
+      isCorrect: true
+      explanation: "This is the only way computers can read image data"
+  - content: "How did we clean the data in our project?"
+    choices:
+    - content: "By deleting images that were blurry"
+      isCorrect: false
+      explanation: "We did not do this"
+    - content: "By resizing all of the images so they were the same size."
+      isCorrect: true
+      explanation: "Correct! This is what we did"
+    - content: "By retaking some pictures that we didn't like"
+      isCorrect: false
+      explanation: "We did not do this"
+    - content: "By editing some pictures with paint"
+      isCorrect: false
+      explanation: "We did not do this"
