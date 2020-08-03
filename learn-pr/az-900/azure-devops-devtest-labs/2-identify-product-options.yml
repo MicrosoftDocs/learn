@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.azure-devops-devtest-labs.what-is-devops
+uid: learn.languages.azure-devops-devtest-labs.identify-product-options
 title: What is Azure DevOps?
 metadata:
   title: What is Azure DevOps?
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 1
 azureSandbox: false
 content: |
-  [!include[](includes/2-what-is-devops.md)]
+  [!include[](includes/2-identify-product-options.md)]

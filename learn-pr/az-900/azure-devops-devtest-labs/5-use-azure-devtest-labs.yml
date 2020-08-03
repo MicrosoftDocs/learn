@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.azure-devops-devtest-labs.what-is-devtest-labs
-title: What is Azure DevTest Labs?
+uid: learn.languages.azure-devops-devtest-labs.use-azure-devtest-labs
+title: Use Azure DevTest Labs to manage testing environments
 metadata:
-  title: What is Azure DevTest Labs?
+  title: Use Azure DevTest Labs to manage testing environments
   description: Explore tooling that helps automate the creation of environments that quality assurance professionals can use to test software.
   ms.date: 07/17/2020
   author: bobtabor-msft
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 1
 azureSandbox: false
 content: |
-  [!include[](includes/3-what-is-devtest-labs.md)]
+  [!include[](includes/5-use-azure-devtest-labs.md)]

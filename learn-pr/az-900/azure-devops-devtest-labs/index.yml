@@ -26,8 +26,12 @@ products:
 - dotnet
 units:
 - learn.languages.azure-devops-devtest-labs.introduction
-- learn.languages.azure-devops-devtest-labs.what-is-devops
-- learn.languages.azure-devops-devtest-labs.what-is-devtest-labs
+- learn.languages.azure-devops-devtest-labs.identify-product-options
+- learn.languages.azure-devops-devtest-labs.analyze-decision-criteria
+- learn.languages.azure-devops-devtest-labs.use-azure-devops
+- learn.languages.azure-devops-devtest-labs.use-azure-devtest-labs
+- learn.languages.azure-devops-devtest-labs.use-git
+- learn.languages.azure-devops-devtest-labs.use-github
 - learn.languages.azure-devops-devtest-labs.knowledge-check
 - learn.languages.azure-devops-devtest-labs.summary
 

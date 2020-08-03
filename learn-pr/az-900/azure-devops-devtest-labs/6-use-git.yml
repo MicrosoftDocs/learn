@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.azure-devops-devtest-labs.use-git
+title: Use Git to version and share code changes
+metadata:
+  title: Use Git to version and share code changes
+  description: Explore tooling that helps automate the creation of environments that quality assurance professionals can use to test software.
+  ms.date: 07/17/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+azureSandbox: false
+content: |
+  [!include[](includes/6-use-git.md)]
