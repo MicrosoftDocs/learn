@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-iaas-paas-platform-tools-for-ha-dr.describe-failover-clustering-windows-server
-title: Describe failover clustering in Windows Server
+title: Describe failover clusters in Windows Server
 metadata:
-  title: Describe failover clustering in Windows Server
-  description: "Describe failover clustering in Windows Server"
-  ms.date: 08/05/2020
+  title: Describe failover clusters in Windows Server
+  description: "Describe failover clusters in Windows Server"
+  ms.date: 08/06/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 14
 content: |
-  [!include[](includes/2-describe-failover-clustering-windows-server.md)]
+  [!include[](includes/2-describe-failover-clusters-windows-server.md)]
