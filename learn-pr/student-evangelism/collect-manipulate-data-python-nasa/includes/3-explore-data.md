@@ -6,7 +6,7 @@ The first step in any data science/machine learning solution is to collect and u
 
 The Excel file contains the weather data for the individual crewed and uncrewed launches, as well as the two days before and after each launch. We added the two days surrounding the launches data to see if there were any patterns that might be interesting. Here is a screenshot from the [Excel doc that you can download here](https://nasadata.blob.core.windows.net/rocketlaunches/RocketLaunchDataCompleted.xlsx?azure-portal=true).
 
-:::image type="content" source="../media/excel.png" alt-text="excel data" lightbox="../media/excel-expanded.png" loc-scope="Azure":::
+:::image type="content" source="../media/excel-inline.png" alt-text="excel data" lightbox="../media/excel-expanded.png" loc-scope="Azure":::
 
 ## Missing data
 

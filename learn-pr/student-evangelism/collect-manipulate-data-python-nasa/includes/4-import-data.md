@@ -53,7 +53,7 @@ To setup your local environment:
 
 7. With the folder open in Visual Studio Code, make sure your Python Interpreter and Jupyter Kernel are both set to your Anaconda Environment. Click on both the top right Jupyter Kernel Python version and the bottom left Python Interpreter and make sure you set them both to use the Anaconda Environment you created:  
 
-    :::image type="content" source="../media/ensure-python.png" lightbox="../media/ensure-python-expanded.png" alt-text="Visual Studio Code with Anaconda Environment" loc-scope="Azure":::
+    :::image type="content" source="../media/ensure-python-inline.png" lightbox="../media/ensure-python-expanded.png" alt-text="Visual Studio Code with Anaconda Environment" loc-scope="Azure":::
 
 ## Import libraries
 

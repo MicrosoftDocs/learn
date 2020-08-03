@@ -4,7 +4,7 @@ For example, let's imagine you have a garden where you're trying to plant lettuc
 
 The [Data Science Lifecycle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/lifecycle?azure-portal=true) can help guide us through the journey to using data to create new knowledge. 
 
-:::image type="content" source="../media/data-science-lifecyle.png" alt-text="Data Science Lifecyle" lightbox="../media/data-science-lifecyle-expanded.png" loc-scope="Azure":::
+:::image type="content" source="../media/data-science-lifecyle-inline.png" alt-text="Data Science Lifecyle" lightbox="../media/data-science-lifecyle-expanded.png" loc-scope="Azure":::
 
 The four steps, discussed throughout these units are:
 1. Define a business goal using subject matter expertise

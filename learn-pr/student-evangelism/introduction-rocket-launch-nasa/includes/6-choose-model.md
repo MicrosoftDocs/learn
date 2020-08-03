@@ -10,7 +10,7 @@ In the case of rocket launches, as previously mentioned, we aren't likely to eve
 
 A great resource for determining what kind of machine learning algorithm will be useful for your particular analysis is the [Algorithm cheat sheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?azure-portal=true). 
 
-:::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Algorithm cheat sheet" lightbox="../media/algorithm-cheat-sheet-expanded.png" loc-scope="azure":::
+:::image type="content" source="../media/algorithm-cheat-sheet-inline.png" alt-text="Algorithm cheat sheet"  lightbox="../media/algorithm-cheat-sheet-expanded.png" loc-scope="azure":::
 
 Let's revisit the question we're trying to answer with launches:  *Will this day, with these weather conditions, yield a successful launch?*
 

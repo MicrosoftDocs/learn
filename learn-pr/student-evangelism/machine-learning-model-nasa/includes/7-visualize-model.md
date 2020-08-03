@@ -29,12 +29,12 @@ Calling this function if fairly straightforward:
 
 ```python
 # this function takes a machine learning model and visualizes it
-tree_graph_to_png(tree=tree_model, feature_names=X.columns.values,class_names=['No Launch','Launch'], png_file_to_save='decision_tree.png')
+tree_graph_to_png(tree=tree_model, feature_names=X.columns.values,class_names=['No Launch','Launch'], png_file_to_save='decision-tree.png')
 ```
 
 This will create this image:
 
-:::image type="content" source="../media/decision-tree.png" alt-text="Visualization of decision tree." lightbox="../media/decision-tree-expanded.png" loc-scope="azure":::
+:::image type="content" source="../media/decision-tree-inline.png" alt-text="Visualization of decision tree." lightbox="../media/decision-tree-expanded.png" loc-scope="azure":::
 
 Overall looking at the data set, we have 240 samples.
 192 are no launches
