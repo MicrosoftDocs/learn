@@ -4,7 +4,7 @@ Just like the Azure SQL offerings, deployment for MariaDB, MySQL, and PostgreSQL
 
 In the Azure portal, click on Create a Resource on the main portal blade as shown. Search for Azure Database for PostgreSQL and click create. The portal will launch the screen shown below.
 
-Select Single Server or Hyperscale. You will learn more about Hyperscale later, but it is typically used for large-scale databases that scale out across multiple nodes. Click the appropriate Create button.
+Select Single Server or Hyperscale. Hyperscale is typically used for large-scale databases that scale out across multiple nodes. Click the appropriate Create button.
 
 :::image type="content" source="../media/module-22-plan-implement-final-24.png" alt-text="Azure Database for PostgreSQL Creation Page":::
 
