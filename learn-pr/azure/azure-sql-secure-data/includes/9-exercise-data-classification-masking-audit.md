@@ -11,13 +11,13 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. Select the **Classification** tab and then select **+ Add classification**.  
 
-    :::image type="content" source="../media/9-add-classification.png" alt-text="Add a new classification":::  
+    :::image type="content" source="../media/9-add-classification.png" alt-text="Screenshot of how to add a new classification.":::  
 
     In a previous exercise, you added all the recommended column classifications. In this step, you will *manually* add a potentially sensitive column to the list of classified columns.  
 
     In the SalesLT Customer table, DD&C identified FirstName and LastName to be classified, but not MiddleName. Using the drop-downs, add it now. Then, select **Add classification**.  
 
-    :::image type="content" source="../media/9-add-classification-2.png" alt-text="Add Name-related classification for MiddleName":::  
+    :::image type="content" source="../media/9-add-classification-2.png" alt-text="Screenshot of how to add Name-related classification for Middle Name.":::  
 
 1. Select **Save**.
 
@@ -29,13 +29,13 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. First, select the **SalesLT** schema, **Customer** table, and **FirstName** column. Then, you can review the options for masking, but the default is good for this scenario. Select **Add** to add the masking rule.  
 
-    :::image type="content" source="../media/9-add-mask-2.png" alt-text="Add FirstName mask":::  
+    :::image type="content" source="../media/9-add-mask-2.png" alt-text="Screenshot of how to add First Name mask.":::  
 
 1. Repeat the previous step for both **MiddleName** and **LastName** in that table.  
 
     Now, you should have three masking rules, similar to below.  
 
-    :::image type="content" source="../media/9-add-mask-3.png" alt-text="Review all masking rules":::  
+    :::image type="content" source="../media/9-add-mask-3.png" alt-text="Screenshot of how to review all masking rules.":::  
 
 1. Select **Save**.  
 
@@ -54,7 +54,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
     You should get a result of the first 10 names, with no masking applied. Why? Because you are the admin for this Azure SQL Database logical server.  
 
-    :::image type="content" source="../media/9-names.png" alt-text="SQL query results with no mask":::  
+    :::image type="content" source="../media/9-names.png" alt-text="Screenshot of SQL query results with no mask.":::  
 
 1. In the following query, you'll create a new user and run the previous query as that user. You'll also use `EXECUTE AS` to impersonate `Bob`. When an `EXECUTE AS` statement is run, the execution context of the session is switched to the login/user. This means that the permissions will be checked against the login/user instead of the person executing the `EXECUTE AS` command (in this case, you). `REVERT` is then used to stop impersonating the login/user.  
 
@@ -77,7 +77,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
     Now, you should get a result of the first 10 names, but with masking applied. Bob has not been granted access to the unmasked form of this data.  
 
-    :::image type="content" source="../media/9-names-2.png" alt-text="SQL query results with mask":::  
+    :::image type="content" source="../media/9-names-2.png" alt-text="Screenshot of SQL query results with mask.":::  
 
 1. What if, for some reason, Bob needs access to the names and gets permission to have it?  
 
@@ -93,7 +93,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
     Your results should include the names in full.  
 
-    :::image type="content" source="../media/9-names.png" alt-text="SQL query results with no mask":::  
+    :::image type="content" source="../media/9-names.png" alt-text="Screenshot of SQL query results with no mask.":::  
 
 1. Finally, you can also take away a user's unmasking privileges, and confirm that with the following T-SQL.  
 
@@ -110,13 +110,13 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
     Your results should include the masked names.  
 
-    :::image type="content" source="../media/9-names-2.png" alt-text="SQL query results with mask":::  
+    :::image type="content" source="../media/9-names-2.png" alt-text="Screenshot of SQL query results with mask.":::  
 
 ## Review audit logs in SSMS
 
 1. As an admin, you may want to review and audit who is accessing the databases and specifically the classified data. Next, you'll take a look at the audit files that are being sent to Azure Blob storage. The first thing you have to do is merge the audit files, in case logs span multiple files. You can do this from SSMS. First, select **File** > **Open** > **Merge Audit Files**.  
 
-    :::image type="content" source="../media/9-file-audit.png" alt-text="Open audit files":::  
+    :::image type="content" source="../media/9-file-audit.png" alt-text="Screenshot of how to open audit files.":::  
 
 1. Next, select **Add**.  
 
@@ -124,11 +124,11 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. Specify to add them from Azure Blob storage and select **Connect**.  
 
-    :::image type="content" source="../media/9-file-audit-connect.png" alt-text="Add from Azure Blob Storage":::  
+    :::image type="content" source="../media/9-file-audit-connect.png" alt-text="Screenshot of how to add from Azure Blob Storage.":::  
 
 1. Sign into Azure with the account you are using for this module.  
 
-    :::image type="content" source="../media/9-file-audit-signin.png" alt-text="Sign in to Azure":::  
+    :::image type="content" source="../media/9-file-audit-signin.png" alt-text="Screenshot of how to sign in to Azure.":::  
 
 1. Select the subscription, storage account, and blob container you configured Audit logs to go to. The storage account should start with `sqlva`. The container will be called `sqldbauditlogs`.  
 
@@ -158,7 +158,7 @@ Analyzing your audit logs will depend on your preference. Here, you'll be expose
 
     You should now be able to see a query of your event records, options to run in Query Editor (run T-SQL queries through the portal), options for Log Analytics/View dashboard, and more.  
 
-    :::image type="content" source="../media/9-audit-records.png" alt-text="View audit records":::  
+    :::image type="content" source="../media/9-audit-records.png" alt-text="Screenshot of how to view audit records.":::  
 
     Feel free to click around and understand what some of the options are.  
 
@@ -174,7 +174,7 @@ Analyzing your audit logs will depend on your preference. Here, you'll be expose
 
     Then, select **View dashboard**.  
 
-    :::image type="content" source="../media/9-view-db.png" alt-text="View the log analytics dashboard":::  
+    :::image type="content" source="../media/9-view-db.png" alt-text="Screenshot of the log analytics dashboard.":::  
 
 1. You should now see an overview dashboard. Drill in to **Azure SQL - Access to Sensitive Data**.  
 

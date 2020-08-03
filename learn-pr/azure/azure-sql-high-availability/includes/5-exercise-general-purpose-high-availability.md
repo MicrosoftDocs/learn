@@ -87,4 +87,4 @@ The first step is to create a long-running workload so you can see how a failove
 
     In the Azure portal, navigate to your Azure SQL Database, and in the left-hand menu, under "Support + troubleshooting", select **Resource Health**. Some time after a failover (can be 5-15 minutes), you may see a health event similar to below. This can indicate several things, but one is that something has happened and Azure has decided to failover.
 
-    :::image type="content" source="../media/5-health-history-inline.png" alt-text="Screenshot of the health history details" lightbox="../media/5-health-history-expanded.png":::
+    :::image type="content" source="../media/5-health-history-inline.png" alt-text="Screenshot of the health history details." lightbox="../media/5-health-history-expanded.png":::

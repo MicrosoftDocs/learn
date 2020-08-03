@@ -40,23 +40,23 @@ The following is an example from the Azure portal where indexes are recommended 
 > [!NOTE]
 > You can at a later date use the AdventureWorksLT sample with your own Azure SQL Database deployment and use the scripts in the *04-Performance\tuning_recommendations* folder to see this example. It is important to note that when you run these scripts it can take 8 hours or more to see results in DMVs and Azure portal.
 
-:::image type="content" source="../media/9-index-recommendation-notification.png" alt-text="Index_Recommendation_Notification":::
+:::image type="content" source="../media/9-index-recommendation-notification.png" alt-text="Screenshot of Index Recommendation Notification.":::
 
 If you look at **Performance Overview** in the Azure portal, you will see performance information for the top 5 resource consuming queries as found in the Query Story and an indication of a recommendation:
 
-:::image type="content" source="../media/9-query-performance-overview.png" alt-text="Query_Performance_Overview":::
+:::image type="content" source="../media/9-query-performance-overview.png" alt-text="Screenshot of Query Performance Overview.":::
 
 The Azure portal also offers **Query Performance Insights**, which is a visual reporting tool based on the Query Store. In this example, Query Performance Insights will show the specific query consuming the most resources and advice of any recommendations to improve query performance
 
-:::image type="content" source="../media/9-query-performance-insights.png" alt-text="Query_Performance_Insights":::
+:::image type="content" source="../media/9-query-performance-insights.png" alt-text="Screenshot of Query Performance Insights.":::
 
 The Azure portal also provides a way to directly see any performance recommendations.
 
-:::image type="content" source="../media/9-performance-recommendations.png" alt-text="Performance_Recommendations":::
+:::image type="content" source="../media/9-performance-recommendations.png" alt-text="Screenshot of Performance Recommendations.":::
 
 In this view you will see specific recommendations and history of any automatic tuning actions. In the case of an index, details of the index and table are displayed. The option to **Automate** is to enable Automatic Tuning.
 
-:::image type="content" source="../media/9-automatic-tuning-options.png" alt-text="Automatic_Tuning_Options":::
+:::image type="content" source="../media/9-automatic-tuning-options.png" alt-text="Screenshot of Automatic Tuning options.":::
 
 Automatic Tuning options can be set at the Database Server or database level.  If you would have enabled Automatic Tuning in this scenario, the index would have been automatically created.
 
@@ -66,10 +66,10 @@ Recommendations and automation for indexes and parameter sensitive plans are not
 
 If you click on the recommended index you will get more details about the specific index.
 
-:::image type="content" source="../media/9-create-index-recommendation.png" alt-text="create_index_recommendation":::
+:::image type="content" source="../media/9-create-index-recommendation.png" alt-text="Screenshot of create index recommendation.":::
 
 You will see details of the index, table, and space required. You have the option to apply the recommended index or view a T-SQL script that will be used to apply the index.
 
-:::image type="content" source="../media/9-create-index-recommendation-script.png" alt-text="create_index_recommendation_script":::
+:::image type="content" source="../media/9-create-index-recommendation-script.png" alt-text="Screenshot of the index recommendation script.":::
 
 Notice the index is a non-clustered index that is applied as an online index. When an index has been applied based on a recommendation, either manually or through automatic tuning, the recommendation engine will also monitor query performance over a period of item with the applied index. If query performance degrades compared to before the index was applied, a recommendation can be made to drop the index.

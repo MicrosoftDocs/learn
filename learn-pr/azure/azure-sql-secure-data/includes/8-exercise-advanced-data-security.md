@@ -15,11 +15,11 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. You can also configure your Advanced Threat Protection (ATP) settings. To check the ATP alert types available, select **All** under Advanced Threat Protection types.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-types.png" alt-text="Types of protection in ATP":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-types.png" alt-text="Screenshot of the types of protection in ATP.":::  
 
 1. Just like you can configure who receives the VA scans, you can configure who receives the ATP alerts. Review the options and **add your personal email address** so you can view the alerts in a future step of this exercise.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-settings.png" alt-text="ATP Settings information":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-settings.png" alt-text="Screenshot of ATP Settings information.":::  
 
 1. Once you've updated all your settings, don't forget to select **Save**.  
 
@@ -43,17 +43,17 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. Finally, select **Overview** to view the overview dashboard and review the classifications you've added.  
 
-    :::image type="content" source="../media/8-data-classification-overview.png" alt-text="View the Data classification overview":::  
+    :::image type="content" source="../media/8-data-classification-overview.png" alt-text="Screenshot of the data classification overview.":::  
 
 ## Vulnerability Assessment
 
 1. Select the **X** in the top-right corner of DD&C to bring you back to the ADS dashboard. Next, you'll review the Vulnerability Assessment (VA) capabilities. Start by selecting the **Vulnerability Assessment** box.  
 
-    :::image type="content" source="../media/8-azure-data-studio-dashboard-2.png" alt-text="Return to the main ADS dashboard":::  
+    :::image type="content" source="../media/8-azure-data-studio-dashboard-2.png" alt-text="Screenshot of how to return to the main ADS dashboard.":::  
 
 1. Next, select **Scan** to get the most current VA results. This will take a few moments, while VA scans all the databases in your Azure SQL Database logical server.
 
-    :::image type="content" source="../media/8-vulnerability-scan.png" alt-text="Kick off a VA scan":::  
+    :::image type="content" source="../media/8-vulnerability-scan.png" alt-text="Screenshot of how to kick off a VA scan.":::  
 
     Your resulting view should be similar to below.  
 
@@ -64,7 +64,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
     > [!NOTE]
     > If **VA2065** does not fail, you can perform a similar exercise below, depending on what failed security checks do occur.  
 
-    :::image type="content" source="../media/8-va20652-details.png" alt-text="VA2065 security risk":::  
+    :::image type="content" source="../media/8-va20652-details.png" alt-text="Screenshot of the VA2065 security risk.":::  
 
     In this case, VA is suggesting that you configure a baseline of what firewall rules have been set. Once you have a baseline, you can then monitor and assess any changes.  
 
@@ -72,7 +72,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. You can then complete another scan by selecting **Scan** and confirming that VA2065 is now showing up as a *Passed* security check.  
 
-    :::image type="content" source="../media/8-va2065-passed.png" alt-text="VA2109 security risk passed" lightbox="../media/8-va2065-passed.png":::  
+    :::image type="content" source="../media/8-va2065-passed.png" alt-text="Screenshot of the VA2109 security risk being passed." lightbox="../media/8-va2065-passed.png":::  
 
     If you click into the passed security check above, you should be able to see the baseline you configured. If anything changes in the future, VA scans will pick it up and the security check will fail.  
 
@@ -80,7 +80,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. Select the **X** in the top-right corner of VA to get back to the ADS dashboard. Select the **Advanced Threat Protection** (ATP) box to drill in and review the results. ATP detects anomalous activities indicating unusual and potentially harmful attempts to access or exploit databases.  
 
-    :::image type="content" source="../media/8-azure-data-studio-dashboard-3.png" alt-text="Return to the ADS dashboard":::  
+    :::image type="content" source="../media/8-azure-data-studio-dashboard-3.png" alt-text="Screenshot of how to return to the ADS dashboard.":::  
 
     Likely, you won't see any security alerts at this stage. In the next step, you will run a test that will trigger an alert, so you can review the results in ATP.  
 
@@ -101,7 +101,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. In the main login window, fill in your AdventureWorks login information as you usually would, with SQL authentication. Before connecting, however, select **Options** > **Connection Properties**. Once in here, specify your AdventureWorks database using the "Connect to database" drop-down.  
 
-    :::image type="content" source="../media/8-connect-db.png" alt-text="Connect to a specific database":::  
+    :::image type="content" source="../media/8-connect-db.png" alt-text="Screenshot of how to connect to a specific database.":::  
 
 1. Select the **Additional Connection Parameters** tab and insert the following into the empty text box:  
 
@@ -111,7 +111,7 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
     To connect, finally, select **Connect**.  
 
-    :::image type="content" source="../media/8-app-name.png" alt-text="Connect with an app name":::  
+    :::image type="content" source="../media/8-app-name.png" alt-text="Screenshot of how to connect with an app name.":::  
 
 1. In the new query window, run the following query:  
 
@@ -121,15 +121,15 @@ In this exercise, you'll confirm Advanced data security (ADS) is enabled, and yo
 
 1. Within a few minutes, you should receive an email similar to the following.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="ATP threat detected email":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an ATP threat detected email.":::  
 
     Additionally, navigate to the Azure portal to your AdventureWorks database. In the left-hand menu, under Security, select **Advanced data security**. You should now see an alert.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-alert.png" alt-text="ATP alert":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-alert.png" alt-text="Screenshot of an ATP alert.":::  
 
 1. Select the **Advanced Threat Protection** pane to see the overall security alerts.  
 
-    :::image type="content" source="../media/8-security-alerts.png" alt-text="Security alerts" lightbox="../media/8-security-alerts.png":::  
+    :::image type="content" source="../media/8-security-alerts.png" alt-text="Screenshot of the security alerts." lightbox="../media/8-security-alerts.png":::  
 
 1. Select **Potential SQL injection** to drill in specific alerts and receive investigation steps.  
 

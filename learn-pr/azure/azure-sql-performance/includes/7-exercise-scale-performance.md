@@ -12,11 +12,11 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
   
 1. Using the Azure portal we can see options for how you can scale for more CPU resources. Using the Overview blade for the database, select the Pricing tier current deployment. The Pricing tier allows you to change the service tier and number of vCores.
   
-    :::image type="content" source="../media/7-azure-portal-change-tier.png" alt-text="Azure_Portal_Change_Tier":::
+    :::image type="content" source="../media/7-azure-portal-change-tier.png" alt-text="Screenshot of changing service tier in the Azure portal.":::
   
 1. Here you can see options for changing or scaling compute resources. For General Purpose, you can easily scale up to something like 8 vCores.
   
-    :::image type="content" source="../media/7-azure-portal-compute-options.png" alt-text="Azure_Portal_Compute_Options":::
+    :::image type="content" source="../media/7-azure-portal-compute-options.png" alt-text="Screenshot of compute options in Azure portal.":::
   
     Instead of using the portal, I'll show you a different method to scale your workload.
 
@@ -42,7 +42,7 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
   
     For the current Azure SQL Database deployment, your results should look like the following image:
   
-    :::image type="content" source="../media/7-service-objective-results.png" alt-text="service_objective_results":::
+    :::image type="content" source="../media/7-service-objective-results.png" alt-text="Screenshot of service objective results.":::
   
     Notice the term **slo_name** is also used for service objective. The term **slo** stands for *service level objective*.
   
@@ -61,7 +61,7 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
   
     This statement comes back immediately but the scaling of the compute resources takes place in the background. A scale this small should take less than a minute and for a short period of time the database will be offline to make the change effective. You can monitor the progress of this scaling activity using the Azure portal.
 
-    :::image type="content" source="../media/7-azure-portal-update-progress.png" alt-text="Azure_Portal_Update_In_Progress":::
+    :::image type="content" source="../media/7-azure-portal-update-progress.png" alt-text="Screenshot of update in Azure portal.":::
 
 1. Right click the master database in Object Explorer under the System Databases folder and select New Query. Run this query in the SSMS query editor window:
 
@@ -129,13 +129,13 @@ Let's look at the same Query Store reports as we did in the previous exercise.
 
 1. Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:
 
-    :::image type="content" source="../media/7-ssms-top-query-faster.png" alt-text="SSMS_QDS_Top_Query_Faster":::
+    :::image type="content" source="../media/7-ssms-top-query-faster.png" alt-text="Screenshot of top query results running faster.":::
 
     You will now see two queries (query_id). These are the same query but show up as different query_id values in Query Store because the scale operation required a restart so the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
 1. Look also at the **Query Wait Statistics** report as you did in the previous exercise. You can see the overall average wait time for the query is less and a lower % of the overall duration. This is good indication that CPU is not as much of a resource bottleneck when the database had a lower number of vCores:
 
-    :::image type="content" source="../media/7-ssms-top-wait-stats-query-faster.png" alt-text="SSMS_Top_Wait_Stats_Query_Faster":::
+    :::image type="content" source="../media/7-ssms-top-wait-stats-query-faster.png" alt-text="Screenshot of top wait statistics results running faster.":::
 
 1. You can close out all reports and query editor windows but leave SSMS connected as you will need this in the next exercise.
 
@@ -143,13 +143,13 @@ Let's look at the same Query Store reports as we did in the previous exercise.
 
 1. Navigate to the AdventureWorks database in the Azure portal and look at the Overview blade again for the Compute Utilization:
 
-    :::image type="content" source="../media/7-azure-portal-compute-query-comparison.png" alt-text="Azure_Portal_Compute_Query_Comparison.png":::
+    :::image type="content" source="../media/7-azure-portal-compute-query-comparison.png" alt-text="Screenshot of compute comparison in Azure portal.":::
 
     Notice the duration is shorter for high CPU utilization which means an overall drop in CPU resources required to run the workload.
 
 1. This chart can be somewhat misleading. If you use Azure Metrics from the Resource menu and do a CPU comparison the chart looks more like
 
-    :::image type="content" source="../media/7-azure-metrics-query-comparison.png" alt-text="Azure_Metrics_Compute_Query_Comparison.png":::
+    :::image type="content" source="../media/7-azure-metrics-query-comparison.png" alt-text="Screenshot of query comparison in Azure portal.":::
 
 > [!TIP]
 > If you continue to increase vCores for this database you can improve performance up to a threshold where all queries have plenty of CPU resources. This does not mean you must match the number of vCores to the number of concurrent users from your workload. In addition, you can change the Pricing Tier to use **Serverless** *Compute Tier* instead of **Provisioned** to achieve a more "auto-scaled" approach to a workload. For example, for this workload if you chose a min vCore value of 2 and max vCore value of 8, this workload would immediately scale to 8 vCores.

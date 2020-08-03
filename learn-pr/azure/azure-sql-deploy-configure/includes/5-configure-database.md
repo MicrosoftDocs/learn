@@ -73,7 +73,7 @@ For Azure SQL Managed Instance, you can choose the connection type or policy dur
 
 You can keep the default of *Proxy for connections from outside and Redirect for connections within Azure* or configure something else.
 
-:::image type="content" source="../media/5-connectivity.png" alt-text="Connection policies in Azure SQL" border="false":::
+:::image type="content" source="../media/5-connectivity.png" alt-text="Diagram of the connection policies in Azure SQL." border="false":::
 
 At the highest level, in Proxy mode, all connections are proxied through the gateway. In Redirect mode, after the connection is established leveraging the gateway (redirect-find-db in the figure above) the connection can then connect directly to the database or managed instance.
 

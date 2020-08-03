@@ -92,7 +92,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 
     Check the **Remember password** box and select **Connect**.  
 
-    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Connect to SQL Database in SSMS":::  
+    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot of how to connect to SQL Database in SSMS.":::  
 
     > [!NOTE]
     > Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
@@ -143,7 +143,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     **Navigate to SSMS** and **check/update your connection**. You'll want to make sure that the connection you use is connecting to the logical server, but not a specific database (e.g. set to `<default>` in screenshot below). You should also confirm that **Additional Connection Parameters** is contains no text.  
 
-    :::image type="content" source="../media/3-default.png" alt-text="Default connection":::
+    :::image type="content" source="../media/3-default.png" alt-text="Screenshot of the default connection.":::
 
 1. Right-click on your AdventureWorks database and create a new query. Run the following query and review the results.  
 
@@ -151,7 +151,7 @@ In this exercise, you'll follow the steps that go along with the process above.
     SELECT TOP 10 * from SalesLT.SalesOrderDetail
     ```
 
-    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Sales order detail table":::  
+    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Screenshot of the sales order detail table.":::  
 
 1. Now, let's simulate the loss of data by dropping a table in the database.  
 
@@ -191,7 +191,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
 1. Select **Log Analytics**. If you see a **Get Started** screen, select **OK**. This then takes you to a query editor that allows you to query logs using Kusto query language (KQL), which is meant to be easy to use for querying logs for SQL professionals.  
 
-    :::image type="content" source="../media/3-log-analytics.png" alt-text="Select log analytics":::  
+    :::image type="content" source="../media/3-log-analytics.png" alt-text="Screenshot of how to select log analytics.":::  
 
 1. Copy the below KQL query and paste it into the query editor in the Log Analytics view in the Azure portal (replace the existing query).
 
@@ -206,7 +206,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     If you see other `DROP`s, you should select the one related to the table you just dropped.  
 
-    :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Log analytics results":::
+    :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Screenshot of the Log analytics results.":::
 
     > [!NOTE]
     > The logs can take a 5-10 minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
@@ -233,7 +233,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     You can check the status by refreshing your view of databases in **SSMS** by right-clicking on **Databases** and selecting **Refresh**. Once the database has been deployed, you will see the restore is now in progress.  
 
-    :::image type="content" source="../media/3-db-restore.png" alt-text="DB Restoring in SSMS":::  
+    :::image type="content" source="../media/3-db-restore.png" alt-text="Screenshot of a database restoring in SSMS.":::  
 
     Once you see this, it should only be 2-3 minutes more. You will know it is done, because the command will complete. Also, you will no longer see "(Restoring...)" next to the copy database when you initiate a refresh.  
 
@@ -243,7 +243,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
 1. Then, right-click on your new database, e.g. **AdventureWorks-copy** and select **New Query**.  
 
-    :::image type="content" source="../media/3-new-query.png" alt-text="Create new query":::  
+    :::image type="content" source="../media/3-new-query.png" alt-text="Screenshot of creating a new query.":::  
 
 1. Use the following query to confirm the table exists.  
 
@@ -253,7 +253,7 @@ In this exercise, you'll follow the steps that go along with the process above.
 
     You should get something similar to the following screenshot, which confirms your database has been restored to where you want it to be.
 
-    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Sales order detail table":::  
+    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Screenshot of the sales order detail table.":::  
 
 ### Swap the databases and clean up
 

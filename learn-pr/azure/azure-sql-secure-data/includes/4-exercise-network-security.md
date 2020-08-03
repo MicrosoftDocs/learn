@@ -15,7 +15,7 @@ In this exercise, you'll see how to view and edit your firewall rules. Setting t
 
 1. Select **Firewalls and virtual networks** under **Security** from the menu.  
 
-    :::image type="content" source="../media/4-firewall-virtual-network.png" alt-text="Navigate to firewalls and virtual networks":::  
+    :::image type="content" source="../media/4-firewall-virtual-network.png" alt-text="Screenshot of how to navigate to firewalls and virtual networks.":::  
 
 1. Select **No** for **Allow Azure services and resources to access this server**. During deployment, you should have added your Client IP address already, but if one of the Rules does not match your Client IP displayed, select **Add Client IP**.  
 
@@ -23,7 +23,7 @@ In this exercise, you'll see how to view and edit your firewall rules. Setting t
 
 1. To confirm you still have access from your local machine, navigate to SSMS and refresh your connection to the Azure SQL Database logical server. If no errors occur, you have successfully configured access to your Azure SQL Database logical server for your IP address only.  
 
-    :::image type="content" source="../media/4-db-refresh.png" alt-text="Refresh database connection":::  
+    :::image type="content" source="../media/4-db-refresh.png" alt-text="Screenshot of how to refresh database connection.":::  
 
 1. Optionally, you can create a new query and check how you're connecting to Azure SQL Database by running the following T-SQL query:  
 
