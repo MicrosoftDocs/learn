@@ -20,6 +20,10 @@ prerequisites: |
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
   - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&WT.mc_id=MSLearn-ARM-pierrer) tools installed locally
   - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&WT.mc_id=MSLearn-ARM-pierrer) extension installed locally
+  - For Unit 8 and 9, you'll also need an [Azure subscription](https://azure.microsoft.com/free/), since we cant create Service principals (SPN) in the Learn sandbox 
+  - A [GitHub](https://github.com?azure-portal=true) account
+  - The ability to navigate and edit files in GitHub
+    - (For more information about GitHub, see [Introduction to GitHub](https://lab.github.com/githubtraining/introduction-to-github?azure-portal=true).)
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
