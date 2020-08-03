@@ -42,4 +42,4 @@ quiz:
       explanation: "Incorrect; the data science lifecycle doesn't include these four steps."
     - content: "Machine Learning Algorithm Coding, Data Exploration, Algorithm Modifications, Report Generation"
       isCorrect: false
-      explanation: "Incorrect; the data science lifecycle doesn't include these four steps.
+      explanation: "Incorrect; the data science lifecycle doesn't include these four steps."
