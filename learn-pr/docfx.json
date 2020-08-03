@@ -231,8 +231,7 @@
                 "src": "student-evangelism",
                 "files": [
                     "**/*.yml",
-                    "**/*.md",
-                    "**/*.txt"
+                    "**/*.md"
                 ],
                 "exclude": [
                     "**/includes/**",
