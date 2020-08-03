@@ -1,6 +1,6 @@
 In this unit, we're going to explore quantum interference with Q# and see how we
 can create quantum entanglement with Q#. We'll also present the tool
-`ResourcesEstimator` in the Quantum Development Kit, that will help us to
+`ResourcesEstimator` in the Quantum Development Kit, that will help us
 estimate the kind of resources we need to run our algorithms.
 
 ## An example of interference with Q#
@@ -84,7 +84,7 @@ We can see that it behaves just as we expected.
 
 ## Exploring the relative phase with Q#
 
-You may have noticed that `DumpMachine` also give us
+You may have noticed that `DumpMachine` also gives us
 information about the phase of each amplitude. However, so far we have
 only seen amplitudes with zero phase. Let's see how it looks like when a state
 has amplitudes with non-zero phases.

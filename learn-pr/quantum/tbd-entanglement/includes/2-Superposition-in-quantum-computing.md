@@ -22,17 +22,17 @@ equation when writing quantum algorithms. But we can use it to assist us to
 understand some concepts of quantum computing.
 
 The Schrödinger equation determines the evolution of the state of the system,
-represented by the wave function $\psi$. An important concept in quantum
-computing is the **probability amplitude** of an observable. The probability
-amplitude determines probability of obtaining a certain outcome when measuring
+represented by the wave function $\psi$. Each wave function is associated with an important concept in quantum
+computing - **probability amplitude** of an observable. The probability
+amplitude determines the probability of obtaining a certain outcome when measuring
 the system. This is an important difference with respect to classical computing:
-we don't describe bits as being in determined factual states, but in
+in quantum computing, we don't describe bits as being in determined factual states, but in
 terms of the probabilities of finding those states when we observe them.
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In
 this notation, we describe the possible states of quantum systems with kets
 $\ket{ }$.  For example, $\ket{0}$ and $\ket{1}$ are two possible states of a
-qubit. If a qubit is in the state, that is $\ket{\psi} = \ket{0}$, it means the
+qubit. If a qubit is in the state $\ket{\psi} = \ket{0}$, it means the
 probability of observing `Zero` when measuring the qubit is 100%. Similarly, if
 a qubit is in the state $\ket{\psi} =\ket{1}$, it yields `One` after a
 measurement.
@@ -60,10 +60,10 @@ where $a$ is a complex number.
 
 The Schrödinger equation is a linear equation. It implies that if two states
 $\ket{\psi_1}$ and $\ket{\psi_2}$ are solutions of the Schrödinger equation
-(this is, valid quantum states), then any linear combination of them is also a valid
-quantum state. This property allows superpositions of quantum states:
+(i.e. valid quantum states), then any linear combination of them is also a valid
+quantum state:
 
-$$\ket{\psi}=a\ket{\psi_1}+b\ket{\psi_2}$$
+$$\ket{\psi}=a\ket{\psi_1}+b\ket{\psi_2}.$$
 
 This linear combination of $\ket{\psi_1}$ and $\ket{\psi_2}$ is called a
 superposition of $\ket{\psi_1}$ and $\ket{\psi_2}$. Here, $a$ and $b$ are the
@@ -73,7 +73,7 @@ Development Kit](todo) we already used superposition to create a quantum random
 number generator. We used the operator `H` to put a qubit in the state $\ket{0}$
 into superposition. Mathematically this is:
 $$ \hat H \ket{0} = \frac1{\sqrt2}
-\ket{0} + \frac1{\sqrt2} \ket{1} $$
+\ket{0} + \frac1{\sqrt2} \ket{1}.$$
 
 Linearity is a fundamental property of
 quantum mechanics and therefore of quantum computing.
@@ -92,6 +92,10 @@ highest probability result in the output. This repetition might look
 inefficient, but running several times quantum algorithms in many cases is much
 more efficient than solving the task classically.
 
+![Figure1](../media/KittyYeungQ7.png)
+
+![Figure2](../media/KittyYeungQ8.png)
+
 How do we know the probabilities associated with a given superposition? Suppose
 we have a register of two qubits that can be in a superposition of four possible
 states: $$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
@@ -100,13 +104,18 @@ Remember that $a,b,c$ and $d$ are probability amplitudes for each state. Their
 absolute values, for example $|a|$, squared give the corresponding probabilities. For
 instance, the probability for observing $\ket{00}$ is $P(00)=|a|^2$, for
 $\ket{01}$ is $P(01)=|b|^2$ and so on.  
-There are restrictions on the types of numbers the probability amplitudes can
+
+![Figure3](../media/KittyYeungQ9.png)
+
+There are no restrictions on the types of numbers the probability amplitudes can
 be. They can be positive, negative or in general complex numbers. However, for a
 valid quantum superposition all probabilities sum to one:
 $|a|^2+|b|^2+|c|^2+|d|^2=1$. This constraint is often known as the normalization
 condition. You can think of it as the fact that you always obtain an outcome
 when you measure, so the probabilities of measuring every possible outcome must
 sum to one.
+
+![Figure4](../media/KittyYeungQ10.png)
 
 In the example state we produced for the quantum random bit generator,
 $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability
