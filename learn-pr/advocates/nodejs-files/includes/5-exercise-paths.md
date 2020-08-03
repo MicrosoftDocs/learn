@@ -1,12 +1,12 @@
 The Node.js *path* module and `__dirname` global variable are two ways to define and compose file system paths.
 
-In the previous exercise, you wrote a program that iterates through a folder to find any of the sales.json files inside.
+In the previous exercise, you wrote a program that iterates through a folder to find any of the *sales.json* files inside.
 
-In this exercise, you'll use the path module and `__dirname` global variable to improve the program so that it will find any file with a .json extension.
+In this exercise, you'll use the *path* module and `__dirname` global variable to improve the program so that it will find any file with a .json extension.
 
 ## Include the path module
 
-At the top of the index.js file, include the path module.
+At the top of the *index.js* file, include the *path* module.
 
 ```javascript
 const path = require("path");
@@ -16,7 +16,7 @@ const path = require("path");
 
 In the current index.js code, you're passing the static location of the *stores* folder. We'll change that code to use the `__dirname` value instead of passing a static folder name.
 
-1. In the `main` method, create a variable to store a path to the `stores` directory by using the `__dirname` constant.
+1. In the `main` method, create a variable to store a path to the *stores* directory by using the `__dirname` constant.
 
    ```javascript
    async function main() {
@@ -69,9 +69,9 @@ Instead of concatenating folder names to make a new path to search, you'll chang
 
 ## Find all .json files
 
-Instead of looking for just sales.json files, the program needs to search for any file with an extension of .json. To do that, use the `path.extname` method to check the file name extension.
+Instead of looking for just *sales.json* files, the program needs to search for any file with an extension of .json. To do that, use the `path.extname` method to check the file name extension.
 
-1. Run the following command in the terminal to rename the `stores/201/sales.json` file to `stores/sales/totals.json`.
+1. Run the following command in the terminal to rename the *stores/201/sales.json* file to *stores/sales/totals.json*.
 
    ```bash
    mv stores/201/sales.json stores/201/totals.json
@@ -105,11 +105,11 @@ Instead of looking for just sales.json files, the program needs to search for an
    ]
    ```
 
-Great job! You've used the path module and the `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
+Great job! You've used the *path* module and the `__dirname` constant to make the program much more robust. In the next section, you'll learn how to create directories and move files between locations.
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here's the completed code. Remove everything in `index.js` and replace it with this solution.
+If you got stuck at any point in this exercise, here's the completed code. Remove everything in *index.js* and replace it with this solution.
 
 ```javascript
 const fs = require("fs").promises;

@@ -6,7 +6,7 @@ Here, you'll learn how to use the *fs* module to read and write to files.
 
 ## Read data from files
 
-Files are read through the `readFile` method on the fs module.
+Files are read through the `readFile` method on the *fs* module.
 
 ```javascript
 await fs.readFile("stores/201/sales.json");

@@ -1,8 +1,8 @@
 You can also use the *fs* module in Node.js to write data to files and read data from files.
 
-You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any directory, finds all .json files, and creates a totals.txt file.
+You're almost finished creating a Node.js masterpiece for Tailwind Traders. So far, your code reads any directory, finds all .json files, and creates a *totals.txt* file.
 
-In this exercise, you'll complete the project by reading the .json files, adding up the store totals, and writing the grand total to the totals.txt file.
+In this exercise, you'll complete the project by reading the .json files, adding up the store totals, and writing the grand total to the *totals.txt* file.
 
 ## Create a method to calculate sales totals
 
@@ -63,7 +63,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
 
 ## Write the total to the totals.txt file
 
-1. In the `main` function, modify the `fs.writeFile` block to write the value of the `salesTotal` variable to the totals.txt file.
+1. In the `main` function, modify the `fs.writeFile` block to write the value of the `salesTotal` variable to the *totals.txt* file.
 
    ```javascript
    async function main() {
@@ -92,7 +92,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
    }
    ```
 
-1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the `index.js` file.
+1. Select the <kbd>Cmd</kbd> / <kbd>Ctrl</kbd> + <kbd>S</kbd> keys to save the *index.js* file.
 
 ## Run the program
 
@@ -102,7 +102,7 @@ In this exercise, you'll complete the project by reading the .json files, adding
    node index.js
    ```
 
-   There is no output from the program. If you look in the salesTotals/totals.txt file, you'll see the total of all the sales from the sales.json file.
+   There is no output from the program. If you look in the *salesTotals/totals.txt* file, you'll see the total of all the sales from the *sales.json* file.
 
 1. Run the program from the terminal again.
 
@@ -110,11 +110,11 @@ In this exercise, you'll complete the project by reading the .json files, adding
    node.index.js
    ```
 
-1. Select the **index.js** file.
+1. Select the *index.js* file.
 
-1. Select the **salesTotals/totals.txt** file.
+1. Select the *salesTotals/totals.txt* file.
 
-   There is now a second line in the totals.txt file. Every time you run the program, the totals are added up again and a new line is written to the file.
+   The *totals.txt* file now has a second line. Every time you run the program, the totals are added up again and a new line is written to the file.
 
 Outstanding work! You've written a smart, robust, and handy tool that Tailwind Traders can use to process all of its stores' sales every night. In the next section, we'll review what you learned and a few tips to remember.
 

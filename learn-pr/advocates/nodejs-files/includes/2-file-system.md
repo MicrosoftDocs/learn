@@ -8,21 +8,21 @@ Here, you'll learn how to use Node.js to read the file system to discover files 
 
 Node.js provides a built-in module for working with the file system. It's called the *fs* module. The name is short for "file system."
 
-The fs module is included by default in Node.js, so you don't need to install it from npm.
+The *fs* module is included by default in Node.js, so you don't need to install it from npm.
 
-This can be a bit confusing because you can't see the fs module in your file system or in your node_modules folder. So how do you include the fs module in a project? You reference it just as you would any other dependency. 
+This can be a bit confusing because you can't see the *fs* module in your file system or in your *node_modules* folder. So how do you include the *fs* module in a project? You reference it just as you would any other dependency. 
 
-The fs module has a `promises` namespace that has promise versions of all methods. This is the preferred way to work with the fs module because it allows you to use `async`. It avoids the messiness of callbacks or the blocking of synchronous methods.
+The *fs* module has a `promises` namespace that has promise versions of all methods. This is the preferred way to work with the *fs* module because it allows you to use `async`. It avoids the messiness of callbacks or the blocking of synchronous methods.
 
 ```javascript
 const fs = require("fs").promises;
 ```
 
-You can use the fs module to do various operations on files and directories. It has several methods to pick from. For now, we're going to focus on what you need to know to work with directories by using the fs module.
+You can use the *fs* module to do various operations on files and directories. It has several methods to pick from. For now, we're going to focus on what you need to know to work with directories by using the *fs* module.
 
 ## List contents in a directory
 
-One task that you'll often do with the fs module is list out or *enumerate* the contents in a directory. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total files. The structure looks like this:
+One task that you'll often do with the *fs* module is list out or *enumerate* the contents in a directory. For instance, Tailwind Traders has a root folder called *stores*. In that folder are subfolders organized by store number. Inside those folders are the sales-total files. The structure looks like this:
 
 ```
 📂 stores
@@ -32,7 +32,7 @@ One task that you'll often do with the fs module is list out or *enumerate* the 
     📂 202
 ```
 
-To read through the contents of the folder, you can use the `readdir` method. Most operations on the fs module have both synchronous and asynchronous options.
+To read through the contents of the folder, you can use the `readdir` method. Most operations on the *fs* module have both synchronous and asynchronous options.
 
 The `readdir` method returns a list of items:
 
@@ -81,4 +81,4 @@ findFiles("stores");
 
 Recursion is a powerful feature of many programming languages. You'll likely use it a lot in the real world.
 
-In the next exercise, you'll use the fs module to dynamically read through Tailwind Traders' main "stores" directory to find all of the sales.json files.
+In the next exercise, you'll use the *fs* module to dynamically read through Tailwind Traders' main *stores* directory to find all of the sales.json files.
