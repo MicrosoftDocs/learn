@@ -1,20 +1,20 @@
 ### YamlMime:Module
 uid: learn.languages.ai-machine-learning-fundamentals
 metadata:
-  title: Automate crucial decision making and customers interactions with Azure Artificial Intelligence Services
-  description: Discover the strengths and choose the right Artificial Intelligence service.
+  title: Choose the best artificial intelligence service for decision support and customer interaction
+  description: Examine Azure's artificial intelligence services choose the right service for your scenario.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Automate crucial decision making and customers interactions with Azure Artificial Intelligence Services
-summary: Discover the strengths and choose the right Artificial Intelligence service.
+title: Choose the best artificial intelligence service for decision support and customer interaction
+summary: Examine Azure's artificial intelligence services choose the right service for your scenario.
 abstract: |
   In this module, you will:
   - Discover the Azure's Artificial Intelligence services like Machine Learning, Cognitive Services and Bot Service.
   - Choose the correct Artifical Intelligence service to address different kinds of business challenges.
-  - Built a bot using QnA Maker that harnesses the power of both Cognitive Services and Bot Service.
+  - 
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
@@ -26,10 +26,11 @@ products:
 - dotnet
 units:
 - learn.languages.ai-machine-learning-fundamentals.introduction
-- learn.languages.ai-machine-learning-fundamentals.what-is-machine-learning
-- learn.languages.ai-machine-learning-fundamentals.what-is-cognitive-services
-- learn.languages.ai-machine-learning-fundamentals.what-is-bot-service
-- learn.languages.ai-machine-learning-fundamentals.create-bot-exercise
+- learn.languages.ai-machine-learning-fundamentals.identify-product-options
+- learn.languages.ai-machine-learning-fundamentals.analyze-decision-criteria
+- learn.languages.ai-machine-learning-fundamentals.use-machine-learning
+- learn.languages.ai-machine-learning-fundamentals.use-cognitive-services
+- learn.languages.ai-machine-learning-fundamentals.use-bot-services
 - learn.languages.ai-machine-learning-fundamentals.knowledge-check
 - learn.languages.ai-machine-learning-fundamentals.summary
 
