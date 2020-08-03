@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.monitoring-fundamentals.what-is-azure-monitor
-title: What is Azure Monitor?
+uid: learn.languages.monitoring-fundamentals.use-azure-monitor
+title: Use Azure Monitor
 metadata:
-  title: What is Azure Monitor?
+  title: Use Azure Monitor
   description: TODO need a description.
   ms.date: 07/29/2020
   author: bobtabor-msft
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 1
 azureSandbox: false
 content: |
-  [!include[](includes/3-what-is-azure-monitor.md)]
+  [!include[](includes/5-use-azure-monitor.md)]

@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.languages.monitoring-fundamentals
 metadata:
-  title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
-  description: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+  title: Choose an Azure monitoring service for your solution
+  description: TODO
   ms.date: 07/29/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Setup your C# beginner development environment with Visual Studio 2019 Community Edition
-summary: Get started learning C# by istalling and configuring the tools you'll need to build real applications.
+title: Choose an Azure monitoring service for your solution
+summary: TODO
 abstract: |
   In this module, you will:
   - Install and configure Visual Studio 2019 Community Edition.
@@ -24,9 +24,11 @@ products:
 - dotnet
 units:
 - learn.languages.monitoring-fundamentals.introduction
-- learn.languages.monitoring-fundamentals.what-is-azure-advisor
-- learn.languages.monitoring-fundamentals.what-is-azure-monitor
-- learn.languages.monitoring-fundamentals.what-is-azure-service-health
+- learn.languages.monitoring-fundamentals.identify-product-options
+- learn.languages.monitoring-fundamentals.analyze-decision-criteria
+- learn.languages.monitoring-fundamentals.use-azure-advisor
+- learn.languages.monitoring-fundamentals.use-azure-monitor
+- learn.languages.monitoring-fundamentals.use-azure-service-health
 - learn.languages.monitoring-fundamentals.knowledge-check
 - learn.languages.monitoring-fundamentals.summary
 
