@@ -1,0 +1,1 @@
+For each product option, provide a 150-200 word overview, the product logo (optional), and a conceptual-explainer image (optional). The goal is to introduce what each product is and what it can do without describing how to use it.

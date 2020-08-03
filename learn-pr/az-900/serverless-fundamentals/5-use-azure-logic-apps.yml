@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.serverless-fundamentals.use-azure-logic-apps
+title: Use Azure Logic Apps
+metadata:
+  title: Use Azure Logic Apps
+  description: TODO
+  ms.date: 07/17/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+azureSandbox: false
+content: |
+  [!include[](includes/5-use-azure-logic-apps.md)]
