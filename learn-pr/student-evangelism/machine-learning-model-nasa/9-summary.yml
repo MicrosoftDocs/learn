@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.machine-learning-model-nasa.9-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 3
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Why did we choose a decision tree for our Machine Learning Algorithm?"
+    choices:
+    - content: "It is the most complex and accurate algorithm"
+      isCorrect: false
+      explanation: "This is not true about the decision tree"
+    - content: "It is easy to visualize and fits well because there are only two choices: yes or no"
+      isCorrect: true
+      explanation: "Correct! This is why we choose the decision tree"
+    - content: "A tree has lots of branches and there are lots of choices the model can make"
+      isCorrect: false
+      explanation: "There are only 2 choices to make"

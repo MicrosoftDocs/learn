@@ -1,0 +1,30 @@
+### YamlMime:LearningPath
+uid: learn.student-evangelism.machine-learning-predict-launch-delay-nasa
+metadata:
+  title: Predict if Rocket Launches will be Delayed with Machine Learning
+  description: This learning path introduces you to the world of Machine Learning. You will learn how to take a real-life problem that NASA faces and see how to apply Machine Learning to solve it. The goal of this learning path is to get students excited and curious for what other problems Machine Learning could solve in space discovery and other aspects of life. 
+  brand: vs-code
+  ms.date: 07/28/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Predict if Rocket Launches will be Delayed with Machine Learning
+summary: This learning path introduces you to the world of Machine Learning. You will learn how to take a real-life problem that NASA faces and see how to apply Machine Learning to solve it. The goal of this learning path is to get students excited and curious for what other problems Machine Learning could solve in space discovery and other aspects of life. 
+prerequisites: |
+ - Visual Studio Code Installed
+ - Python Installed
+ - Ability to code simple programs in Python
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- vs-code
+modules:
+- learn.student-evangelism.introduction-rocket-launch-nasa
+- learn.student-evangelism.collect-manipulate-data-python-nasa
+- learn.student-evangelism.machine-learning-model-nasa
+trophy:
+  uid: https://docs.microsoft.com/media/learn/module.svg

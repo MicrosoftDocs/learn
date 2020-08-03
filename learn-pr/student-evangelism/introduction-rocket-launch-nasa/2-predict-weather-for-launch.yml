@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-rocket-launch-nasa.2-predict-weather-for-launch
+metadata:
+  title: Discover Resources to Predict Weather Years in Advance
+  description: Learn about how we get weather data to make predictions about rocket launches
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover Resources to Predict Weather Years in Advance
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-predict-weather-for-launch.md)]

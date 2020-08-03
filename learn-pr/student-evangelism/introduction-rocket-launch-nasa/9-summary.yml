@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-rocket-launch-nasa.9-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/28/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Computers will always be more accurate than humans at data analysis"
+    choices:
+    - content: "True, they are purely logical and so cannot make mistakes"
+      isCorrect: false
+      explanation: "Computers need to be programmed"
+    - content: "True, they are able to process significantly more data, faster"
+      isCorrect: false
+      explanation: "This is true, however this does not mean more accurate"
+    - content: "False, they can never understand context and so can't be accurate"
+      isCorrect: false
+      explanation: "Machine Learning can let them understand context"
+    - content: "False, they are as accurate as the software built by humans can make them"
+      isCorrect: true
+      explanation: "Correct! Computers are only accurate if the programming is accurate"
+  - content: "What are the four steps in the data science lifecyle?"
+    choices:
+    - content: "Business Understanding, Data Gathering and Preparation, Model Training and Testing, Model Deployment"
+      isCorrect: true
+      explanation: "Correct! This are the exact four steps"
+    - content: "Data Gathering, Data Validation, Machine Learning, Result Visualization"
+      isCorrect: false
+      explanation: "These are not the four steps"
+    - content: "Data Identification, Model Training until 100% Accurate, Model Deployment, Business Understanding"
+      isCorrect: false
+      explanation: "These are not the four steps"
+    - content: "Machine Learning Algorithm Coding, Data Exploration, Algorithm Modifications, Report Generation"
+      isCorrect: false
+      explanation: "These are not the four steps"
