@@ -232,7 +232,7 @@
                 "files": [
                     "**/*.yml",
                     "**/*.md",
-                    "**/resources/*.txt"
+                    "**/*.txt"
                 ],
                 "exclude": [
                     "**/includes/**",
