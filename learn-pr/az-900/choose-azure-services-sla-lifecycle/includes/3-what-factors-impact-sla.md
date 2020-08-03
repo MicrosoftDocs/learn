@@ -127,7 +127,7 @@ Therefore, for the Special Orders application, the composite SLA would be:
 $$99.9\pct \times 99.9\pct \times 99.99\pct \times 99.99\pct$$
 $$= 0.999 \times 0.999 \times 0.9999 \times 0.9999$$
 $$= 0.9978$$
-$$= 99.78 \pct$$
+$$= 99.78\pct$$
 
 Recall that you need two virtual machines. Therefore, you include the Virtual Machines SLA of 99.9% two times in the formula.
 
