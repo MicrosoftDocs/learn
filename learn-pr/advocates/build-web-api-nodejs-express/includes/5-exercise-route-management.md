@@ -26,6 +26,7 @@ When building an API, it's common to construct it so that you have a number of r
    -| client-post.js
    -| client-put.js
    -| client-delete.js
+   -| client-delete-route.js
    -| package.json
    ```
 
@@ -230,7 +231,7 @@ When building an API, it's common to construct it so that you have a number of r
 
    ```javascript
    app.delete('/products/:id', function(req, res) {
-     const deletedProduct = products.find(p => p.id === +req.params.id);
+     const deletedProduct = products.find(p => p.id === +req.body.id);
      products = products.filter(p => p.id !== +req.params.id);
      res.json(deletedProduct);
    });
