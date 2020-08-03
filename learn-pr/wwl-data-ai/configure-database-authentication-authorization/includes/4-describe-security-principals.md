@@ -47,7 +47,7 @@ CREATE USER demo FROM LOGIN demo
 GO
 ```
 
-The login is first created in the master database, and then in the WideWorldImporters database a user is created to map to that user. Logins are used to access the SQL Server or the Azure SQL Database, but to do any work within a database, the login must be mapped to a username. The username is used for all authentication, as we’ll see in Lesson 2.
+The login is first created in the master database, and then in the WideWorldImporters database a user is created to map to that user. Logins are used to access the SQL Server or the Azure SQL Database, but to do any work within a database, the login must be mapped to a username. The username is used for all authentication.
 
 Logins and usernames are the most important security principals you need to be aware of, but the next sections describe some of the other concepts and terms when dealing with authorization.
 

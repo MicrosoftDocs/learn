@@ -2,7 +2,7 @@ We’ll look at several methods for deploying a singleton Azure SQL Database.
 
 ## Deploying via the portal
 
-The process to create a singleton database through the Azure portal is straightforward. While in the portal, on the left-hand navigation menu, select “SQL Databases”. In the resulting slide out dialog, click “Create” as shown in Figure 3 below.
+The process to create a singleton database through the Azure portal is straightforward. While in the portal, on the left-hand navigation menu, select “SQL Databases”. In the resulting slide out dialog, click “Create”:
 
 :::image type="content" source="../media/module-22-plan-implement-final-13.png" alt-text="The Azure portal Azure SQL Database Deployment screen":::
 
@@ -22,7 +22,7 @@ The image below shows the portal blade in which you can configure the database o
 
 ## Deploying an Azure SQL Database via PowerShell/CLI
 
-You can also deploy your database using Azure PowerShell or the Azure CLI. Figure 17 shows the PowerShell example where you are a creating a new resource group, and defining an admin called SqlAdmin and then creating a new server, database, and firewall rule.
+You can also deploy your database using Azure PowerShell or the Azure CLI. The image below shows the PowerShell example where you are a creating a new resource group, and defining an admin called SqlAdmin and then creating a new server, database, and firewall rule.
 
 ```powershell
 # Connect-AzAccount
@@ -218,7 +218,7 @@ echo $password
 
 ## Deploying Azure SQL Database Using Azure Resource Manager templates
 
-Another method for deploying resources is as mentioned earlier is using an Azure Resource Manager template. A Resource Manager template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts Azure Resource Manager templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown in Figure 19:
+Another method for deploying resources is as mentioned earlier is using an Azure Resource Manager template. A Resource Manager template gives you the most granular control over your resources, and Microsoft provides a GitHub repository called “Azure-Quickstart-Templates”, which hosts Azure Resource Manager templates that you can reference in your deployments. A PowerShell example of deploying a GitHub based template is shown below:
 
 ```powershell
 #Define Variables for parameters to pass to template
