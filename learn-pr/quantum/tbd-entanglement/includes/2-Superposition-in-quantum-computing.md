@@ -63,7 +63,7 @@ $\ket{\psi_1}$ and $\ket{\psi_2}$ are solutions of the Schrödinger equation
 (i.e. valid quantum states), then any linear combination of them is also a valid
 quantum state:
 
-$$\ket{\psi}=a\ket{\psi_1}+b\ket{\psi_2}$$.
+$$\ket{\psi}=a\ket{\psi_1}+b\ket{\psi_2}.$$
 
 This linear combination of $\ket{\psi_1}$ and $\ket{\psi_2}$ is called a
 superposition of $\ket{\psi_1}$ and $\ket{\psi_2}$. Here, $a$ and $b$ are the
