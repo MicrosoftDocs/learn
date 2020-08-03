@@ -34,7 +34,7 @@ tree_graph_to_png(tree=tree_model, feature_names=X.columns.values,class_names=['
 
 This will create this image:
 
-:::image type="content" source="../media/decision-tree-inline.png" alt-text="Visualization of decision tree." lightbox="../media/decision-tree-expanded.png" loc-scope="azure":::
+:::image type="content" source="../media/decision-tree.png" alt-text="Visualization of decision tree." loc-scope="azure":::
 
 Overall looking at the data set, we have 240 samples.
 192 are no launches
@@ -66,7 +66,7 @@ This might be more interesting because there was only one day where a launch was
 launch_data([launch_data['Wind Speed at Launch Time'] > 1) & (launch_data['Max Wind Speed'] > 30.5)]
 ```
 
-:::image type="content" source="../media/only-no.png" alt-text="Only launch with greater than 1 wind speed at launch time and greater than 30 max wind speed." ../media/only-no-expanded.png" loc-scope="azure":::
+:::image type="content" source="../media/only-no.png" alt-text="Only launch with greater than 1 wind speed at launch time and greater than 30 max wind speed." loc-scope="azure":::
 
 ## Improve the results
 
