@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.student-evangelism.machine-learning-model-nasa
+metadata:
+  title: Build Machine Learning Model
+  description: ...
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build Machine Learning Model
+summary: ...
+abstract: |
+ In this module, you will begin to discover: 
+ - The importance of column choosing
+ - How to split data to effectively train and test a machine learning algorithm
+ - How to train, test, and score a machine learning algorithm
+ - How to visualize a tree classification model
+prerequisites: |
+ - Basic Python experience
+ - Have clean data about rocket launches
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+- beginner
+roles:
+- student
+products:
+- vs-code
+units:
+- learn.student-evangelism.machine-learning-model-nasa.1-introduction
+- learn.student-evangelism.machine-learning-model-nasa.2-prepare-data
+- learn.student-evangelism.machine-learning-model-nasa.3-choose-algorithm
+- learn.student-evangelism.machine-learning-model-nasa.4-split-data
+- learn.student-evangelism.machine-learning-model-nasa.5-train-model
+- learn.student-evangelism.machine-learning-model-nasa.6-score-model
+- learn.student-evangelism.machine-learning-model-nasa.7-visualize-model
+- learn.student-evangelism.machine-learning-model-nasa.8-test-model
+- learn.student-evangelism.machine-learning-model-nasa.9-summary
+badge:
+  uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge 
