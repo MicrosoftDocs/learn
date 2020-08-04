@@ -8,9 +8,9 @@ Azure provides three main options to enhance availability for IaaS deployments:
 
 All three of these options are external to the virtual machine (VM) and do not know what kind of workload is running inside of it.
 
-## Availability Sets
+## Availability sets
 
-Availability Sets provide uptime against Azure-related maintenance and single points of failure in a single data center. This was one of the first availability features introduced into the Azure platform, and effectively it can be thought of as anti-affinity rules for your VMs. This means if you had two SQL Server VMs in an availability set or log shipping pair, they would be guaranteed to never run on the same physical server.
+Availability sets provide uptime against Azure-related maintenance and single points of failure in a single data center. This was one of the first availability features introduced into the Azure platform, and effectively it can be thought of as anti-affinity rules for your VMs. This means if you had two SQL Server VMs in an availability set or log shipping pair, they would be guaranteed to never run on the same physical server.
 
 Availability sets are separated into both fault domains and update domains to support both updates to the underlying Azure Infrastructure. Fault domains are sets of servers within a data center, which use the same power source and network There can be up to three fault domains in a data center as depicted in the image below by FD 0, 1, and 2. Update domains, denoted by UD in the image below, indicate groups of virtual machines and underlying physical hardware that can be rebooted at the same time. Different update domains ensure separation.
 
@@ -20,9 +20,9 @@ Availability sets and zones do not protect against in-guest failures, such as an
 
 For a multi-tier application, you should put each tier of the application into its own availability set. For example, if you were building a web application that has a SQL Server backend along with Active Directory Domain Services (AD DS), you would create an availability set for each tier (web, database, and AD DS).
 
-Availability Sets is not the only way to separate IaaS VMs. Azure also provides Availability Zones, but the two cannot be combined. You can pick one or the other.
+Availability sets is not the only way to separate IaaS VMs. Azure also provides Availability Zones, but the two cannot be combined. You can pick one or the other.
 
-## Availability Zones
+## Availability zones
 
 Availability zones account for data center-level failure in Azure. Each Azure region consists of many data centers with low latency network connections between them. When you deploy VM resources in a region that supports Availability Zones, you have the option to deploy those resources into Zone 1,2, or 3.A zone is a unique physical location, that is, a data center, within an Azure region.
 

@@ -1,6 +1,6 @@
 There are many different combinations of features that could be deployed in Azure for IaaS. This section will cover five common examples of SQL Server high availability and disaster recovery (HADR) architectures in Azure.
 
-## Single Region High Availability Example 1 – Always On Availability Groups
+## Single Region High Availability Example 1 – Always On availability groups
 
 If you only need high availability and not disaster recovery, configuring an (availability group) AG is one of the most ubiquitous methods no matter where you are using SQL Server. The image below is an example of what one possible AG in a single region could look like.
 
@@ -38,7 +38,7 @@ Why is this architecture worth considering?
 
 - This architecture provides enhanced availability during patching scenarios.
 
-## Disaster Recovery Example 1 – Multi-Region or Hybrid Always On Availability Group
+## Disaster Recovery Example 1 – Multi-Region or Hybrid Always On availability group
 
 If you are using AGs, one option is to configure the AG across multiple Azure regions or potentially as a hybrid architecture. This means that all nodes which contain the replicas participate in the same WSFC. This assumes good network connectivity, especially if this is a hybrid configuration. One of the biggest considerations would be the witness resource for the WSFC. This architecture would require AD DS and DNS to be available in every region and potentially on premises as well if this is a hybrid solution. The image below shows what a single AG configured over two locations looks like using Windows Server.
 
@@ -54,7 +54,7 @@ Why is this architecture worth considering?
 
 - This architecture makes use of one feature that provides both HA and D/R
 
-## Disaster Recovery Example 2 –Distributed Availability Group
+## Disaster Recovery Example 2 –Distributed availability group
 
 A distributed AG is an Enterprise Edition only feature introduced in SQL Server 2016. It is different than a traditional AG. Instead of having one underlying WSFC where all of nodes contain replicas participating in one AG as described in the previous example, a distributed AG is made up of multiple AGs. The primary replica containing the read write database is known as the global primary. The primary of the second AG is known as a forwarder and keeps the secondary replica(s) of that AG in sync. In essence, this is an AG of AGs.
 
@@ -72,7 +72,7 @@ The image below shows an example distributed AG configuration. There are two WSF
 
 - This architecture can provide failing back from one location to another.
 
-## Disaster Recovery Example 3 – Log Shipping
+## Disaster Recovery Example 3 – Log shipping
 
 Log shipping is one of the oldest HADR methods for configuring disaster recovery for SQL Server. As described above, the unit of measurement is the transaction log backup. Unless the switch to a warm standby is planned to ensure no data loss, data loss will most likely occur. When it comes to disaster recovery, it is always best to assume some data loss even if minimal. The image below, from the Microsoft documentation, shows an example log shipping topology.
 

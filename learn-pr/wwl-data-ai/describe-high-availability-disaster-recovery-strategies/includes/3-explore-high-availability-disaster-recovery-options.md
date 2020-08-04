@@ -38,7 +38,7 @@ FCIs require one copy of a database, but that is also its single point of failur
 
 Using Windows Server 2016 or later, FCIs can use Storage Replica to create a native disaster recovery solution for FCIs without having to use another feature such as log shipping or AGs.
 
-## Always On Availability Groups
+## Always On availability groups
 
 AGs were introduced in SQL Server 2012 Enterprise Edition and as of SQL Server 2016, are also in Standard Edition. In Standard Edition, an AG can contain one database whereas in Enterprise Edition, an AG can have more than one database. While AGs share some similarities with FCIs, in most ways they are different.
 
@@ -52,7 +52,7 @@ Remember that any object that exists outside of the database or is not captured 
 
 Many organizations may face challenges implementing highly available architectures, and may only need the high availability provided by the Azure platform, or using a PaaS solution like Azure SQL Managed Instance. Before we look at Azure platform solutions, there is one other SQL Server feature that you should know about: log shipping.
 
-## Log Shipping
+## Log shipping
 
 Log shipping has been around since the early days of SQL Server. The feature is based on backup, copy, and restore and is one of the simplest methods of achieving HADR for SQL Server. Log shipping is primarily used for disaster recovery, but it could also be used to enhance local availability.
 

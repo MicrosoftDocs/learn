@@ -4,7 +4,7 @@ Suppose you need to implement high availability and disaster recovery (HADR) for
 
 By the end of this module, you will have a solid foundation that will allow you to implement HADR solutions in Azure.
 
-## Learning Objectives
+## Learning objectives
 
 After this module, you will understand:
 
