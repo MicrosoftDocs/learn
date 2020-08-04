@@ -1,33 +1,35 @@
-The drone tracking application has the following components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster.
+The drone tracking application has several components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster. Here you'll look at some of the deployment options available to you to deploy these components.
 
-- Public tracking website
-- Private in-memory cache service
-- Public RESTful API
-- Private persisted queue
-- Private data processing service
-- Private NoSQL database
+:::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that describes the drone tracking solution." border="false":::
 
 ## Pod deployment options
 
-There are several options to manage the deployment of pods in a Kubernetes cluster when you're using `kubectl`. You can use any of four object type definitions to deploy a pod or pods. These files make use of YAML to describe the intended state of the pod or pods that will be deployed.
+There are several options to manage the deployment of pods in a Kubernetes cluster when you're using `kubectl`. The options are:
 
-### Pod templates
+- Pod templates
+- Replication controllers
+- Replica sets
+- Deployments
 
-You use a pod template to deploy pods manually. Keep in mind that a manually deployed pod isn't relaunched after it fails, is deleted, or is terminated.
+You can use any of these four Kubernetes object type definitions to deploy a pod or pods. These files make use of YAML to describe the intended state of the pod or pods that will be deployed.
 
-### Replication controllers
+## What is a pod template?
+
+A pod template is used to deploy pods manually. A manually deployed pod isn't relaunched after it fails, is deleted, or is terminated.
+
+## What is a replication controller?
 
 A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod and ensures that the specified number of pods are always running on one or more nodes in the cluster. A replication controller will replace pods launched in this way with new pods if they fail, are deleted, or are terminated.
 
 For example, assume that you deploy the drone tracking front-end website and users start accessing the website. If all the pods fail for any reason, the website is unavailable to your users unless you launch new pods. A replication controller helps you make sure that your website is always available.
 
-### Replica sets
+## What is a replica set?
 
-Replica sets replace the replication controller as the preferred way to deploy replicas. A replica set includes the same functionality as a replication controller. However, it has an extra configuration option to include a selector value.
+A replica set replace the replication controller as the preferred way to deploy replicas. A replica set includes the same functionality as a replication controller. However, it has an extra configuration option to include a selector value.
 
 A selector allows the replica set to identify all the pods running underneath it. This feature allows you to manage pods labeled with the same value as the selector value, but not created with the replicated set.
 
-### Deployments
+## What is a deployment?
 
 A deployment creates a management object one level higher than a replica set. You can use deployment management updates to manage how you update pods in a cluster.
 
@@ -55,7 +57,7 @@ Kubernetes has specific requirements on how you configure networking and storage
 
 For example, each of the services in the drone tracking application has specific requirements for user access, inter-process network access, and data storage. Let's have a look at these aspects of a Kubernetes cluster and how they affect the deployment of applications.
 
-### Kubernetes networking
+## Kubernetes networking
 
 Assume that you have a cluster with one master and two nodes. When you add nodes to Kubernetes, an IP address is automatically assigned to each node from an internal private network range. For example, assume that your local network range is 192.168.1.0/24.
 
@@ -79,9 +81,9 @@ Kubernetes offers several networking options that you can install to configure n
 
 Cloud providers also provide their networking solutions. For example, Azure Kubernetes Service (AKS) supports the Azure Virtual Network container network interface (CNI), Kubenet, Flannel, Cilium, and Antrea.
 
-### Services
+## Kubernetes services
 
-A service is a Kubernetes object that provides stable networking for pods. A Kubernetes service enables communication between nodes, pods, and users of your application, both internal and external, to the cluster.
+A Kubernetes service is a Kubernetes object that provides stable networking for pods. A Kubernetes service enables communication between nodes, pods, and users of your application, both internal and external, to the cluster.
 
 Kubernetes assigns a service an IP address on creation, just like a node or pod. These addresses get assigned from a service cluster's IP range. An example is 10.96.0.0/12. A service is also assigned a DNS name based on the service name, and an IP port.
 
@@ -105,17 +107,17 @@ To support these scenarios, you can configure three types of services to expose 
 
 In the drone tracking application, you might decide to expose the tracking website and the RESTful API by using LoadBalancer services and the data processing service with a ClusterIP.
 
-### How to group pods
+## How to group pods
 
-Pod IP addresses change as controllers re-create them, and you might have any number of pods running. Managing pods by IP address isn't practical.
-
-A service object allows you to target and manage specific pods in your cluster by using selector labels. You set the selector label in a service definition to match the pod label defined in the pod's definition file.
+Managing pods by IP address isn't practical. Pod IP addresses change as controllers re-create them, and you might have any number of pods running.
 
 :::image type="content" source="../media/4-service-with-selector.svg" alt-text="Diagram of a service with selector labels." border="false":::
 
+A service object allows you to target and manage specific pods in your cluster by using selector labels. You set the selector label in a service definition to match the pod label defined in the pod's definition file.
+
 For example, assume that you have many running pods. Only a few of these pods are on the front end, and you want to set a LoadBalancer service that targets only the front-end pods. You can apply your service to expose these pods by referencing the pod label as a selector value in the service's definition file. The service will now group only the pods that match the label. If a pod is removed and re-created, the new pod is automatically added to the service group through its matching label.
 
-### Kubernetes storage
+## Kubernetes storage
 
 Kubernetes uses the same storage volume concept that you find when using Docker. Docker volumes are less managed than the Kubernetes volumes because Docker volume lifetimes aren't managed. The Kubernetes volume's lifetime is an explicit lifetime that matches the pod's lifetime. This lifetime match means a volume outlives the containers that run in the pod. However, if the pod is removed, so is the volume.
 
@@ -125,8 +127,14 @@ Keep both of these options in mind when you're deploying application components 
 
 ## Cloud integration considerations
 
-In a cloud environment such as Azure, you can use several services outside the Kubernetes cluster. Recall from earlier that Kubernetes doesn't provide middleware, data-processing frameworks, databases, caches, or cluster storage systems.
+Kubernetes doesn't dictate the technology stack you use in your cloud-native application. In a cloud environment such as Azure, you can use several services outside the Kubernetes cluster. Recall from earlier that Kubernetes doesn't provide any of the following services:
 
-In the drone tracking solution, three services provide middleware functionality that needs consideration. There's a NoSQL database, an in-memory cache service, and a message queue. For example, you might choose to use MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
+- Middleware
+- Data-processing frameworks
+- Databases
+- Caches
+- Cluster storage systems
+
+Let's review the drone tracking solution, there are three services that provide middleware functionality. There's a NoSQL database, an in-memory cache service, and a message queue. You might choose to use MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
 
 When you're using a cloud environment such as Azure, it's a best practice to make use of services outside the Kubernetes cluster. This decision can simplify the cluster's configuration and management. For example, you can use *Azure Cache for Redis* for the in-memory caching services, *Azure Service Bus messaging* for the message queue, and *Azure Cosmos DB* for the NoSQL database.

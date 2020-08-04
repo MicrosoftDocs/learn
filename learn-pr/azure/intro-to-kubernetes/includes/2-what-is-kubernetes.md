@@ -1,6 +1,6 @@
 Before we look at what Kubernetes is, let's summarize a few concepts that are key to the applications that you develop and deploy to Kubernetes. This overview should help you decide whether Kubernetes might be a good fit for your containerization management strategy.
 
-### What is a container?
+## What is a container?
 
 A *container* is an atomic unit of software that packages up code, dependencies, and configuration for a specific application. You can use containers to split up monolithic applications into individual services that make up the solution. This rearchitecting of your application will enable you to deploy these separate services via containers. 
 
@@ -18,7 +18,7 @@ The container concept gives you three major benefits:
 
 The preceding benefits make containers a popular choice for developers and IT operations alike.
 
-### What is container management?
+## What is container management?
 
 :::image type="content" source="../media/2-deploy-multiple-containers.png" alt-text="Diagram of replicated servers as multiple containers in the cloud." border="false":::
 
@@ -32,17 +32,17 @@ Assume that you need to roll out a new version of the caching service. How do yo
 
 These types of questions justify a system to help you manage your container deployment.
 
-### What is container orchestration?
+## What is container orchestration?
 
 Container orchestration is a concept that describes all the tasks that you or a system performs to manage containers. A container orchestrator is a system that deploys and manages containerized applications. The orchestrator also dynamically responds to changes in the environment to increase or decrease the deployed instances of the managed application.
 
-### What is a cloud-native application?
+## What is a cloud-native application?
 
 A cloud-native application is designed and built to take advantage of services such as autoscaling, rolling updates, self-healing, and the other tasks listed earlier. These applications run in, and are managed in, an orchestration platform such as Kubernetes. 
 
 A cloud-native application isn't limited to running in public or private cloud environments. It can also run in a hybrid cloud and in on-premises datacenters.
 
-### What is a microservices application?
+## What is a microservices application?
 
 A microservices application is designed and structured as loosely coupled collaborative services. These services are deployed separately from each other to simplify the design and maintenance of large applications. The services typically communicate over RESTful APIs, or over services that are Advanced Message Queuing Protocol (AMQP) enabled. A microservice-designed application forms an important part of cloud-native applications.
 
@@ -54,7 +54,7 @@ In the drone tracking example, each of the components is easily identifiable as 
 
 Kubernetes is a portable, extensible open-source platform for automating deployment, scaling, and the management of containerized workloads. Kubernetes abstracts away complex container management and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility as with platform as a service (PaaS) and infrastructure as a service (IaaS) offerings.
 
-### Kubernetes benefits
+## Kubernetes benefits
 
 The benefits of using Kubernetes are based on the abstraction of tasks. These tasks include:
 
@@ -74,7 +74,7 @@ The benefits of using Kubernetes are based on the abstraction of tasks. These ta
 
 Keep in mind that all of the preceding aspects of Kubernetes require configuration and a good understanding of the underlying technologies that are covered. For example, you need to understand concepts such as virtual networks, load balancers, and reverse proxies to configure Kubernetes networking.
 
-### Kubernetes considerations
+## Kubernetes considerations
 
 With Kubernetes, you can view your datacenter as one large computer. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed. However, this view might be slightly misleading because there are a few aspects to keep in mind:
 
@@ -93,6 +93,6 @@ Cloud services such Azure Kubernetes Service (AKS) reduce these challenges by pr
 > [!NOTE]
 > Kubernetes is sometimes abbreviated to *K8s*. The 8 represents the eight characters between the K and the s of the word K[*ubernete*]s.
 
-### The use of Docker in Kubernetes
+## The use of Docker in Kubernetes
 
 For Kubernetes to run containers, it needs to support a container runtime. Kubernetes is responsible for managing the container runtime and doesn't directly manage containers. The container runtime is the object that's responsible for managing containers. For example, the container runtime starts, stops, and reports on the container's status. Docker is such a container runtime.

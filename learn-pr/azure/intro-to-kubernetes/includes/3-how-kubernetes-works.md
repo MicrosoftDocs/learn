@@ -1,6 +1,6 @@
 A successfully configured Kubernetes installation depends on a good understanding of the Kubernetes system architecture. Here you'll look at all the components that make up a Kubernetes installation.
 
-### What is a computer cluster?
+## What is a computer cluster?
 
 :::image type="content" source="../media/3-diagram-cluster.svg" alt-text="Diagram of a computer cluster." border="false":::
 
