@@ -33,7 +33,7 @@ In this task, we will review the Azure Updates page.
 
 3. Enable the **In preview** checkbox, type **Kubernetes** in the Keyword search textbox, and press the **Enter** key. 
     > [!NOTE]
-    > The page retrns a list of items in preview related to Kubernetes. Your result list may be different.   
+    > The page returns a list of items in preview related to Kubernetes. Your result list may be different.   
     
     ![Screenshot of Azure Updates page with details related to Kubernetes and In preview returned.](../media/azure-updates-page-with-details.png)
 
