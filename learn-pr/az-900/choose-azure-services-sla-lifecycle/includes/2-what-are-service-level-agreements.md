@@ -10,6 +10,7 @@ In this part, you'll learn:
 * What we mean by terms like "three nines" and "four nines" availability, and how SLA percentage relate to total downtime.
 * How credits are applied when a service fails to perform to its specification.
 * How SLAs relate to free Azure services.
+* How to know when there's an outage.
 
 ## Why are SLAs important?
 
@@ -112,5 +113,7 @@ From the Azure status page, you can also access Azure Service Health, which prov
 ## How can I request a service credit from Microsoft?
 
 Typically, you need to file a claim with Microsoft to receive a service credit. If you purchase Azure services from a Cloud Solution Provider (CSP) partner, your CSP typically manages the claims process.
+
+Each SLA specifies the timeline by which you must submit your claim and when Microsoft processes your claim. For many services, you must submit your claim by the end of the calendar month following the month in which the incident occurred.
 
 Next, let's look at some other factors that Tailwind Traders needs to consider which might impact SLA performance targets.
