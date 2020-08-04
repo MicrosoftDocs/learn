@@ -1,4 +1,4 @@
-Node.js comes with many core libraries that handle everything from managing files to HTTP to compressing files and more. There is, however, a huge ecosystem of third-party libraries. Thanks to npm, Node Package Manager, you can easily be install these libraries and use them in your application . 
+Node.js comes with many core libraries that handle everything from managing files to HTTP to compressing files and more. There is, however, a huge ecosystem of third-party libraries. Thanks to npm, Node Package Manager, you can easily install these libraries and use them in your application. 
 
 Node.js and its ecosystem use the word *dependency* a lot. A dependency is a third-party library, a piece of reusable code that accomplishes something and can be added to your application. The third-party library is something your application *depends on* to function, hence the word *dependency*.
 
