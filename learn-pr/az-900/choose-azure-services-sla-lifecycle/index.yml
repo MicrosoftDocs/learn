@@ -1,18 +1,19 @@
 ### YamlMime:Module
 uid: learn.choose-azure-services-sla-lifecycle
 metadata:
+  title: Choose the right Azure services by examining service-level agreements (SLAs) and service lifecycle
   description: Learn about Azure's service-level agreements (SLAs) and how they can impact your application design decisions. Also see how to access preview services and learn how they impact your planning.
   ms.date: 09/11/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the right Azure services by examining service-level agreements (SLAs) and service lifecycle
+title: Choose the right Azure services by examining SLAs and service lifecycle
 summary: |
   As you move to the cloud, you might ask:
 
   * What guarantees does Azure provide around uptime and connectivity?
-  * Can I use preview services in my production applications?
+  * How do preview services impact my production applications?
 
   Learn about Azure's service-level agreements (SLAs) and how they can impact your application design decisions. Also see how to access preview services and learn how they impact your planning.
 abstract: |
