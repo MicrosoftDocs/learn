@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: What's the key goal when implementing a resiliency solution for an app?
+    - content: What's the primary goal when implementing a resiliency solution for an app?
       choices:
         - content: Make the app error-free.
           isCorrect: false
@@ -53,7 +53,7 @@ quiz:
         - content: Network-related resiliency infrastructure.
           isCorrect: false
           explanation: "Network-related resiliency is required for all networked apps."
-    - content: Which of the following statements is **not true** of Linkerd?
+    - content: Which of the following statements isn't true of Linkerd?
       choices:
         - content: It can adjust retries and timeouts adapting to the current cluster state.
           isCorrect: false
@@ -67,7 +67,7 @@ quiz:
         - content: It monitors all incoming and outgoing connections.
           isCorrect: false
           explanation: "Linkerd is unconcerned with incoming and outgoing connections."
-    - content: Which of the following statements is **not true** of Polly?
+    - content: Which of the following statements isn't true of Polly?
       choices:
         - content: It can handle retries with exponential back-off.
           isCorrect: false
