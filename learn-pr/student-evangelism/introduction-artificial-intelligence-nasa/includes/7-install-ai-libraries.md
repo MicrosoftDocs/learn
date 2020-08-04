@@ -7,7 +7,7 @@ Start by going to the [Anaconda Download page](https://www.anaconda.com/products
 >[!Note]
 >The picture below depicts a user using Windows 10 with the Microsoft Edge browser, but you should choose the box that represents your system.
 
-:::image type="content" source="..\Media\anaconda.jpg" alt-text="How to download VSCode":::
+:::image type="content" source="..\media\anaconda.jpg" alt-text="How to download VSCode":::
 
 Next, walk through the steps to install Anaconda on your computer. You will be asked to read and agree to some license agreements and then wait for Anaconda to finish installing. After it is complete, you should have an application on your computer called "anaconda prompt". On Mac, you will not have this application because Anaconda is installed in your terminal.
 
@@ -37,6 +37,6 @@ You now have an environment built that will be able to take you through the rest
 
 Next, open Visual Studio code and open the new folder that you just created. Create a new Jupyter Notebook file and name it something like `ClassifySpaceRockProgram`. Lastly, at the top right and bottom left of the file, change the environment to be the new environment you just created.
 
-:::image type="content" source="..\Media\set-environment.jpg" alt-text="How to download VSCode":::
+:::image type="content" source="..\media\set-environment.jpg" alt-text="How to download VSCode":::
 
 Congratulations, you just installed all of the libraries you need to make an Artificial Intelligence program and told Visual Studio code where to find them.

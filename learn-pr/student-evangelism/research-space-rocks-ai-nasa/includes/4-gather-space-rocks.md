@@ -9,10 +9,10 @@ Have you ever walked along a rocky area and tried to pick out rocks that looked 
 For example, there are the more common types of space rocks like basalt, crustal, and regolith (soil), but there is also a kind of rock known as breccias which are a combination of rocks smashed together. This means that rocks may look like the ones the astronauts are instructed to get, when you look at the chemical composition of them, they are not the right ones. Furthermore, the rock images that you will look through in this learning path have already been cleaned and the pictures of them are in a studio with good lighting and really close up. Being able to identify these ont he Moon, through a space suit, without being to feel it, and with less than ideal lighting makes it even more of a challenge.
 
 Basalt:  
-![An image of a Basalt rock](..\Media\basalt-cristobalite-1.jpg)
+:::image type="content" source="..\media\basalt-cristobalite-1.jpg" alt-text="An image of Basalt rock":::
 
 Crustal:  
-![An image of Crustal rock](..\Media\crustal-anorthosite-2.jpg)
+:::image type="content" source="..\media\crustal-anorthosite-2.jpg" alt-text="An image of Crustal rock":::
 
 ## Uniqueness isn't always desireable
 
