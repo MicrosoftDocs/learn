@@ -13,4 +13,4 @@ durationInMinutes: 5
 interactive: "bash"
 azureSandbox: true
 content: |
-  [!include[](includes/5-try.md)]
+  [!INCLUDE [Try Node.js](includes/5-try.md)]
