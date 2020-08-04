@@ -12,11 +12,11 @@ Nonclustered indexes are a separate structure from the data rows. A nonclustered
 
 An example of when you need to add an index or add columns to an existing nonclustered index is shown below:
 
-:::image type="content" source="../media/module-55-optimize-queries-final-12.png" alt-text="Query and Query Execution Plan with a Key Lookup operator":::
+[![Query and Query Execution Plan with a Key Lookup operator](../media/module-55-optimize-queries-final-12.png)](../media/module-55-optimize-queries-final-12.png#lightbox)
 
 The query plan indicates that for each row retrieved using the index seek, additional data will need to be retrieved from the clustered index (the table itself). There is a nonclustered index, but it only includes the product column. If you add the other columns in the query to a nonclustered index as shown below, you can see the execution plan change to eliminate the key lookup.
 
-:::image type="content" source="../media/module-55-optimize-queries-final-13.png" alt-text="Changing the Index and the Query Plan with No Key Lookup":::
+[![Changing the Index and the Query Plan with No Key Lookup](../media/module-55-optimize-queries-final-13.png)](../media/module-55-optimize-queries-final-13.png#lightbox)
 
 The index created above is an example of a covering index, where in addition to the key column you are including additional columns to cover the query and eliminate the need to access the table itself.
 
