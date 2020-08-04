@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.planning-azure-deployment-fundamentals.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: TODO
+  ms.date: 09/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]
