@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.explore-provision-deploy-non-relational-data-services-azure.introduction
+uid: learn.wwl.describe-sql-server-query-plans.introduction
 title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
   ms.date: 08/06/2020
   author: wwlpublish
-  ms.author: rcaper
+  ms.author: kadelaney
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
