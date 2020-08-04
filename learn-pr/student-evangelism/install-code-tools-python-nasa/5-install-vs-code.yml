@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.install-code-tools-python-nasa.5-install-vs-code
+metadata:
+  title: Exercise - Install and Configure Visual Studio Code for Data Exploration
+  description: Install VS Code to code
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Install and Configure Visual Studio Code for Data Exploration
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-install-vs-code.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.install-code-tools-python-nasa.4-python
+metadata:
+  title: Understand the Importance of Python in Solving Big Data Problems
+  description: Learn what Python is
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand the Importance of Python in Solving Big Data Problems
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-python.md)]

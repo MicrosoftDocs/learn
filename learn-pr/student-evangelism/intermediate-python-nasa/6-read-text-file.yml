@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.intermediate-python-nasa.6-read-text-file
+metadata:
+  title: Exercise - Import Data from Text Files with Python
+  description: Learn how to read a text file
+  ms.date: 07/22/20220
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Import Data from Text Files with Python
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-read-text-file.md)]
