@@ -2,10 +2,10 @@ The most common (and most effective) method for tuning T-SQL queries is to evalu
 
 A common performance tuning approach is as follows:
 
-1. Evaluate existing index usage using sys.dm_db_index_operational_stats and sys.dm_db_index_usage_stats.
-2. Consider eliminating unused and duplicate indexes, but this should be done carefully. Some indexes may only be used during monthly/quarterly/annual operations, and may be important for those processes. You may also consider creating indexes to support those operations just before the operations are scheduled, to reduce the overhead of having otherwise unused indexes on a table.
-3. Review and evaluate expensive queries from the Query Store, or Extended Events capture, and work to manually craft indexes to better serve those queries.
-4. Create the index(s) in a non-production environment, and test query execution and performance and observe performance changes. It is important to note any hardware differences between your production and non-production environments, as the amount of memory and the number of CPUs could impact your execution plan.
-5. After testing carefully, implement the changes to your production system.
+* Evaluate existing index usage using sys.dm_db_index_operational_stats and sys.dm_db_index_usage_stats.
+* Consider eliminating unused and duplicate indexes, but this should be done carefully. Some indexes may only be used during monthly/quarterly/annual operations, and may be important for those processes. You may also consider creating indexes to support those operations just before the operations are scheduled, to reduce the overhead of having otherwise unused indexes on a table.
+* Review and evaluate expensive queries from the Query Store, or Extended Events capture, and work to manually craft indexes to better serve those queries.
+* Create the index(s) in a non-production environment, and test query execution and performance and observe performance changes. It is important to note any hardware differences between your production and non-production environments, as the amount of memory and the number of CPUs could impact your execution plan.
+* After testing carefully, implement the changes to your production system.
 
 Verify the column order of your indexes—the leading column drives column statistics and usually determines whether the optimizer will choose the index. Ideally, the leading column will be selective and used in the WHERE clause of many of your queries. Consider using a change control process for tracking changes that could impact application performance. Finally, before dropping an index, save the code in your source control, so the index can be quickly recreated in the event that an infrequently run query requires the index to perform well.
