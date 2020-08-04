@@ -2,7 +2,7 @@ Consider the following scenario. Then choose the best response for each question
 
 Recall that Tailwind Traders' Special Orders application includes two virtual machines, Azure Load Balancer, and Azure SQL Database:
 
-:::image type="content" source="../media/3-special-orders-architecture.png" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database." border="false":::
+:::image type="content" source="../media/4-special-orders-architecture.png" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database." border="false":::
 
 Here's the SLA for each service:
 
