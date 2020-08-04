@@ -28,5 +28,4 @@ In the case of Tailwind Traders, retail stores are not open 24 hours a day, so i
 
 Let's say that Tailwind Traders decides that an SLA of 99.9% is acceptable for the Special Orders application. This gives them an estimated downtime of 10.1 minutes per week. But how will they ensure that their technology choices support their application SLA?
 
-In the next part, you'll learn how the team TODO:
-Composite SLA, (techniques to get there)
+In the next part, you'll see how the team maps their application requirements to specific Azure services. You'll learn about some of the techniques you can use to help ensure that your technology choices meet your application SLA.
