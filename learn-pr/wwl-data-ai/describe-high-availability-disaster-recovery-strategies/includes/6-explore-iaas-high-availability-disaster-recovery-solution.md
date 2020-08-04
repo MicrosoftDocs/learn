@@ -1,22 +1,22 @@
-There are many different combinations of features that could be deployed in Azure for IaaS. This section will cover five common examples of SQL Server HADR architectures in Azure.
+There are many different combinations of features that could be deployed in Azure for IaaS. This section will cover five common examples of SQL Server high availability and disaster recovery (HADR) architectures in Azure.
 
 ## Single Region High Availability Example 1 – Always On Availability Groups
 
-If you only need high availability and not disaster recovery, configuring an AG is one of the most ubiquitous methods no matter where you are using SQL Server. The image below is an example of what one possible AG in a single region could look like.
+If you only need high availability and not disaster recovery, configuring an (availability group) AG is one of the most ubiquitous methods no matter where you are using SQL Server. The image below is an example of what one possible AG in a single region could look like.
 
 :::image type="content" source="../media/module-77-high-availability-final-02.png" alt-text="An Availability Group in a single region":::
 
 Why is this architecture worth considering?
 
-- This architecture protects data by having more than one copy on different VMs.
+- This architecture protects data by having more than one copy on different virtual machines (VMs).
 
-- This architecture allows you to meet RTO and RPO with minimal-to-no data loss if implemented properly.
+- This architecture allows you to meet recovery time objective (RTO) and recovery point objective (RPO) with minimal-to-no data loss if implemented properly.
 
 - This architecture provides an easy, standardized method for applications to access both primary and secondary replicas (if things like read-only replicas will be used).
 
 - This architecture provides enhanced availability during patching scenarios.
 
-- This architecture needs no shared storage, so there is less complication than when using an FCI.
+- This architecture needs no shared storage, so there is less complication than when using a failover cluster instance (FCI).
 
 ## Single Region High Availability Example 2 – Always On Failover Cluster Instance
 

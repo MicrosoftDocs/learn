@@ -6,7 +6,7 @@ Azure provides three main options to enhance availability for IaaS deployments:
 
 - Azure Site Recovery
 
-All three of these options are external to the VM and do not know what kind of workload is running inside of it.
+All three of these options are external to the virtual machine (VM) and do not know what kind of workload is running inside of it.
 
 ## Availability Sets
 

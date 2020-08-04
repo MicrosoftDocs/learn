@@ -1,4 +1,4 @@
-Now that you understand RTOs and RPOs as well as the different features both in SQL Server as well as Azure to increase availability, you can put all of that together and design a solution to meet your HADR requirements.
+You should now understand recovery time objectives (RTOs) and recovery point objectives (RPOs) as well as the different features both in SQL Server as well as Azure to increase availability, you can put all of that together and design a solution to meet your high availability and disaster recovery (HADR) requirements.
 
 While an architecture can be deployed in one or more Azure regions, many organizations will need or want to have solutions that span both on premises and Azure, or possibly Azure to another public cloud. This type of architecture is known as a hybrid solution.
 

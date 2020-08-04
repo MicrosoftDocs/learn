@@ -1,8 +1,8 @@
-To envision a solution for VMs, you must first understand the availability options for IaaS-based deployments.
+To envision a solution for virtual machines (VMs), you must first understand the availability options for IaaS-based deployments.
 
 ## Infrastructure-as-a-Service versus Platform-as-a-Service
 
-When it comes to availability, the choice of IaaS or PaaS makes a difference. With IaaS, you have a virtual machine (VM), which means there is an operating system with an installation of SQL Server. The administrator or group responsible for SQL Server would have a choice of HADR solutions and a great deal of control over what how that solution was configured.
+When it comes to availability, the choice of IaaS or PaaS makes a difference. With IaaS, you have a virtual machine, which means there is an operating system with an installation of SQL Server. The administrator or group responsible for SQL Server would have a choice of high availability and disaster recovery (HADR) solutions and a great deal of control over what how that solution was configured.
 
 With PaaS-based deployments such as Azure SQL Database, the HADR solutions are built into the feature and often just need to be enabled. There are minimal options that can be configured.
 
