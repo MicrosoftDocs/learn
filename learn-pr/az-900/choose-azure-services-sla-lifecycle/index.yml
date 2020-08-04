@@ -25,7 +25,7 @@ abstract: |
   * Describe the service lifecycle in Azure, including how preview features move to general availability.
 prerequisites: |
   There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
-iconUrl: /learn/achievements/explore-sla-lifecycle-azure-new.svg
+iconUrl: /learn/achievements/explore-azure-service-level-agreements.svg
 levels:
 - beginner
 roles:
