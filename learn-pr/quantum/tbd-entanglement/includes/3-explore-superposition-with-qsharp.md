@@ -118,7 +118,7 @@ The `DumpMachine` function outputs a table with the information characterizing t
        |1?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
    ```
 
-   Every qubit allocated with the statement `using` starts in the state $\ket{0}$, so `DumpMachine` outputs 
+   Every qubit allocated with the `using` statement starts in the state $\ket{0}$, so `DumpMachine` outputs 
    the information corresponding to a single qubit register in the state
    $\ket{0}$.
 
