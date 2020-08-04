@@ -40,9 +40,10 @@ products:
 units:
 - learn.choose-azure-services-sla-lifecycle.1-introduction
 - learn.choose-azure-services-sla-lifecycle.2-what-are-service-level-agreements
-- learn.choose-azure-services-sla-lifecycle.3-what-factors-impact-sla
-- learn.choose-azure-services-sla-lifecycle.4-access-preview-services
-- learn.choose-azure-services-sla-lifecycle.5-knowledge-check
-- learn.choose-azure-services-sla-lifecycle.6-summary
+- learn.choose-azure-services-sla-lifecycle.3-define-application-sla
+- learn.choose-azure-services-sla-lifecycle.4-design-application-meet-sla
+- learn.choose-azure-services-sla-lifecycle.5-access-preview-services
+- learn.choose-azure-services-sla-lifecycle.6-knowledge-check
+- learn.choose-azure-services-sla-lifecycle.7-summary
 badge:
   uid: learn.choose-azure-services-sla-lifecycle.badge

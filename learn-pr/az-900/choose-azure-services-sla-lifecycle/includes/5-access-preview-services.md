@@ -66,7 +66,7 @@ TODO: Why are we talking about bugs?
 TODO: (Tom) I think the graphic is a bit over the top. I would cut it and the paragraph above. That said, this section is kinda thin. Maybe that's fine.
 </div>
 
-:::image type="content" source="../media/4-service-lifecycle.png" alt-text="The typical lifecycle of a feature or bug." border="false":::
+:::image type="content" source="../media/5-service-lifecycle.png" alt-text="The typical lifecycle of a feature or bug." border="false":::
 
 ## How can I access preview services?
 
@@ -95,7 +95,7 @@ Typical portal preview features provide performance, navigation, and accessibili
 
 You see **Microsoft Azure (Preview)** near the menu bar to remind you that you're working with a preview version of the Azure portal.
 
-:::image type="content" source="../media/4-azure-portal-preview.png" alt-text="A screenshot of the preview version of the Azure portal showing the menu bar.":::
+:::image type="content" source="../media/5-azure-portal-preview.png" alt-text="A screenshot of the preview version of the Azure portal showing the menu bar.":::
 
 ## How can I provide feedback on the Azure portal?
 
@@ -103,7 +103,7 @@ You can provide feedback:
 
 * From the **Feedback** tab in the Azure portal.
 
-    :::image type="content" source="../media/4-azure-portal-feedback.png" alt-text="A screenshot of the Azure portal showing the Feedback tab.":::
+    :::image type="content" source="../media/5-azure-portal-feedback.png" alt-text="A screenshot of the Azure portal showing the Feedback tab.":::
 
 * From the [Azure portal feedback forum](https://feedback.azure.com/forums/223579-azure-portal?azure-portal=true).
 
@@ -116,7 +116,7 @@ From the Azure updates page, you can:
 * View details about all Azure updates.
 * See which updates are in general availability, preview, or development.
 
-    :::image type="content" source="../media/4-azure-updates-filter.png" alt-text="A screenshot of the Azure updates page showing how to filter services by now available, in preview, or in development.":::
+    :::image type="content" source="../media/5-azure-updates-filter.png" alt-text="A screenshot of the Azure updates page showing how to filter services by now available, in preview, or in development.":::
 * Browse updates by product category or update type.
 * Search for updates by keyword.
 * Subscribe to an RSS feed to receive notifications.

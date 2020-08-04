@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-azure-services-sla-lifecycle.4-access-preview-services
+uid: learn.choose-azure-services-sla-lifecycle.5-access-preview-services
 title: Access preview services and preview features
 metadata:
   description: "Define public preview features and general availability"
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-access-preview-services.md)]
+  [!include[](includes/5-access-preview-services.md)]
