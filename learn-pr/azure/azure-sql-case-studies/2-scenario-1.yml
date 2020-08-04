@@ -20,21 +20,21 @@ quiz:
       - content: "SQL Server in an Azure virtual machine."
         isCorrect: false
         explanation: "While this would technically work, a PaaS offering may be a better fit and less management overhead."
-      - content: "Azure SQL Managed Instance"
+      - content: "Azure SQL Managed Instance."
         isCorrect: true
         explanation: "Since the customer is using CLR, which is an instance-scoped feature, Azure SQL Managed Instance will allow them to move to a PaaS offering without having to rewrite the CLR applications."
-      - content: "Azure SQL Database - single database"
+      - content: "Azure SQL Database - single database."
         isCorrect: false
         explanation: "Hint: Consider their need for CLR."
-      - content: "Azure SQL Database - elastic pool"
+      - content: "Azure SQL Database - elastic pool."
         isCorrect: false
-        explanation: "There's no indication from the information provided that many databases or a pooling system would be necessary. Hint: Consider their need for CLR"
+        explanation: "There's no indication from the information provided that many databases or a pooling system would be necessary. Hint: Consider their need for CLR."
     - content: "How will they scale over multiple regions with multiple queries happening at the same time, while isolating read workloads from write workloads?"
       choices:
       - content: "Select General purpose service tier and deploy auto-failover groups."
         isCorrect: false
         explanation: "While this solution will enable them to isolate read and write workloads, since the secondary server in the auto-failover group can be used as a read-only endpoint, they will not be able to isolate read and write workloads in the primary region. Is there a better option?"
-      - content: "Select General purpose service tier and deploy geo-replication"
+      - content: "Select General purpose service tier and deploy geo-replication."
         isCorrect: false
         explanation: "They can leverage the geo-replicated database(s) as readable secondaries, and they can deploy multiple geo-replicated databases across the globe, including in their existing region. However, Azure SQL Managed Instance does not support geo-replication currently."
       - content: "Select Business critical service tier and deploy auto-failover groups."
@@ -48,7 +48,7 @@ quiz:
       - content: "Azure AD authentication: integrated authentication."
         isCorrect: false
         explanation: "Is there a password-less option available for Azure resources?"
-      - content: "Azure AD authentication: client ID/certificate"
+      - content: "Azure AD authentication: client ID/certificate."
         isCorrect: false
         explanation: "Is there a password-less option available for Azure resources?"
       - content: "Azure AD authentication: interactive with multi-factor authentication (MFA)."
