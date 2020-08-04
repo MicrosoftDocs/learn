@@ -1,8 +1,8 @@
-For all availability configurations of AGs, an underlying cluster is required. There are many aspects of setting up a cluster that you need to be aware of.
+For all availability configurations of availability groups (AGs), an underlying cluster is required. There are many aspects of setting up a cluster that you need to be aware of.
 
 ## Considerations for a Windows Server Failover Cluster in Azure
 
-Deploying a WSFC in Azure is similar to configuring one on premises. There are some Azure-specific considerations, which is what this section will focus on.
+Deploying a Windows Server Failover Cluster (WSFC) in Azure is similar to configuring one on premises. There are some Azure-specific considerations, which is what this section will focus on.
 
 One of the most important aspects is deciding what to use for a witness resource. Witness is a core component of the quorum mechanism. Quorum is what helps ensure that everything in the WSFC stays up and running. If you lose quorum, the WSFC will go down taking an AG or FCI with it. The witness resource can be a disk, file share (SMB 2.0 or later), or cloud witness. It is recommended that you use a cloud witness as it is fully Azure-based, especially for solutions that will span multiple Azure regions or are hybrid. The cloud witness feature is available in Windows Server 2016 and later.
 
@@ -16,7 +16,7 @@ A typical Azure-based WSFC will only require a single virtual network card (vNIC
 
 Considerations for the WSFC’s IP address is also different from on premises. There is no way to reserve the IP address at the Azure level since it is fully maintained within the guest configuration. This means that if subsequent resources that use an IP address in Azure use DHCP, you must check for conflicts.
 
-## The Failover Clustering Feature
+## The failover clustering feature
 
 Before a WSFC can be configured, the underlying Windows feature must be enabled on every node that will participate in the WSFC. This can be done in one of two ways: using the Server Manager or via PowerShell.
 
@@ -32,7 +32,7 @@ Install-WindowsFeature Failover-Clustering -IncludeManagementTools
 
 Once the feature is installed on the servers targeted as WSFC nodes, you must then validate the configuration.
 
-## Cluster Validation
+## Cluster validation
 
 For a WSFC to be considered supported, it must pass cluster validation. Cluster validation is a built-in process that checks the nodes via a series of tests to ensure that the entire configuration is suitable for clustering. After running validation, each of the tests will come back with an error, a warning, a pass, or a message that the test is not applicable. Warnings are acceptable if that condition is expected in your environment. If not, it should be addressed. All errors must be resolved.
 

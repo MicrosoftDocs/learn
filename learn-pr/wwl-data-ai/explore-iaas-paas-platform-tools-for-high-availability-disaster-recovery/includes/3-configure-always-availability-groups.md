@@ -1,22 +1,22 @@
-For all availability configurations of AGs, an underlying cluster is required, whether or not it uses AD DS. By the end of this unit, you will understand the considerations for deploying an AG in Azure.
+For all availability configurations of availability groups (AGs), an underlying cluster is required, whether or not it uses AD DS. By the end of this unit, you will understand the considerations for deploying an AG in Azure.
 
-## Considerations for Always On Availability Groups in Azure
+## Considerations for Always On availability groups in Azure
 
 Configuring an AG is nearly the same in Azure as it is on premises as are most of the considerations, such as how to initialize secondary replicas. Most of the Azure-specific considerations were discussed earlier, such as needing an ILB. Same as the WSFC itself, you cannot reserve the listener’s IP address in Azure so you need to ensure something else does not come along and grab it otherwise there could be a conflict on the network, which in turn could cause availability headaches.
 
-Do not place any permanent database on the ephemeral storage. All VMs that are participating in an AG should have the same storage configuration. You must size disks appropriately for performance depending on the application workload.
+Do not place any permanent database on the ephemeral storage. All virtual machines (VMs) that are participating in an AG should have the same storage configuration. You must size disks appropriately for performance depending on the application workload.
 
 Before an AG can be configured, the AG feature must be enabled. This can be done in SQL Server Configuration Manager as shown in the image below or via PowerShell with the cmdlet [Enable-SqlAlwaysOn](https://docs.microsoft.com/powershell/module/sqlps/enable-sqlalwayson?view=sqlserver-ps). Enabling the AG feature will require a stop and start of the SQL Server service.
 
 :::image type="content" source="../media/module-77-high-availability-final-10.png" alt-text="Enabling the Availability Groups Feature in SQL Server Configuration Manager":::
 
-## Create the Availability Group
+## Create the Availability group
 
 Creating an AG in Azure is the same as it is on premises. SQL Server Management Studio (SSMS), T-SQL, or PowerShell can be used.
 
 The only difference is that whether or not you create the listener as part of the initial AG configuration, as the listener requires the creation of an Azure load balancer and has some additional configuration in the WSFC related to the load balancer.
 
-## Create an Internal Azure Load Balancer
+## Create an Internal Azure load balancer
 
 Once the listener is created, an internal load balancer (ILB) must be used. Without configuring an ILB, applications, end users, administrators, and others cannot use the listener unless they were connected to the VM that hosts an AG’s primary replica.
 
@@ -46,7 +46,7 @@ Some environments may also require that the IP address for the WSFC and selected
 
 Once the load balancer is confirmed to be working, you can begin to test AG failover and connectivity to the AG via the listener.
 
-## Distributed Availability Groups
+## Distributed availability groups
 
 Planning for and configuring a distributed AG is the same on premises as it is in Azure, with any Azure-specific considerations for the individual AGs. The main difference between an on-premises configuration and an Azure configuration for a distributed AG is that as part of the load balancer configuration in each region, the endpoint port for the AG needs to be added. The default port is 5022.
 
