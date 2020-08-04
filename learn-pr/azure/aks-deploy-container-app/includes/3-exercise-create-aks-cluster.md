@@ -35,6 +35,7 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
         --node-count 3 \
         --enable-addons http_application_routing \
         --dns-name-prefix contoso-kubernetes-$RANDOM \
+        --generate-ssh-keys \
         --node-vm-size Standard_B2s
     ```
 

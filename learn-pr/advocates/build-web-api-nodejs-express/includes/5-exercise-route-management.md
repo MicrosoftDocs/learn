@@ -26,6 +26,7 @@ When building an API, it's common to construct it so that you have a number of r
    -| client-post.js
    -| client-put.js
    -| client-delete.js
+   -| client-delete-route.js
    -| package.json
    ```
 

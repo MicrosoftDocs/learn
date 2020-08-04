@@ -3,7 +3,7 @@ uid: learn.azure.create-nodejs-project-dependencies.7-exercise-dependency-manage
 title: Exercise - Manage dependency updates in your Node.js project
 metadata:
   title: Exercise - Manage dependency updates in your Node.js project
-  description: Exercise in how to update dependencies and configure the `package.json` so that updates happen in a predictable way.
+  description: Exercise on how to update dependencies and configure the package.json so that updates happen in a predictable way.
   author: softchris
   ms.author: chnoring
   ms.date: 06/25/2020

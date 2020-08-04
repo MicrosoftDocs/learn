@@ -17,8 +17,9 @@ quiz:
   questions:
  
 # Original course uses interactive GUI not available in YAML. Converted choices to text.
-  - content: "Complete the following sentence: <br><br>
-  GraphLab allows for vertex functions to be executed _______________."
+  - content: |
+      Complete the following sentence: <br><br>
+      GraphLab allows for vertex functions to be executed _______________.
     choices:
     - content: "asynchronously"
       isCorrect: false
