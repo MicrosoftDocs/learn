@@ -26,4 +26,4 @@ Here's a diagram that shows their proposed plan:
 
 Recall that you can access SLAs from the [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) page.
 
-Tailwind Traders is also considering using an augmented reality (AR) service in the Special Orders app to help customers visualize their customizations. This Azure service is currently in the public preview phase.
+Tailwind Traders is also considering using an augmented reality (AR) service in the Special Orders app to help customers visualize their customizations. This Azure service is currently in the Public preview phase.

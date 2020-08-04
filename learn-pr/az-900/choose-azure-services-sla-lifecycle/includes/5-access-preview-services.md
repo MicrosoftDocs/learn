@@ -1,72 +1,29 @@
-In this part, you'll learn how Azure services go from the preview phase to being generally available.
-
-<div style="background:yellow;">
-TODO: We're switching gears here for sure. Can we more strongly relate lifecycle to SLAs?
-
-Perhaps we emphasize that you don't get an SLA for preview services (we already say we don't recommend using preview services in production applications).
-</div>
+Now that Tailwind Traders has their applications up and running, they want to start looking into new capabilities. One option is to look at preview services. In this part, you'll learn how Azure services go from the preview phase to being generally available.
 
 For Tailwind Traders, migration from the datacenter to Azure is more about operational efficiency. The research and development team is looking into new features that will keep them ahead of the competition &mdash; features they can't achieve without the power of the cloud.
 
-Tailwind Traders is experimenting with a custom drone delivery system for customers in rural areas. They need the ability to use real-time storm tracking in the drone guidance system, but the feature is not ready yet. They read about the new AI Storm Analyzer service that has just entered public preview. So Tailwind Traders has decided to incorporate it into the early stages of their application testing.
+Tailwind Traders is experimenting with a custom drone delivery system for customers in rural areas. They need the ability to use real-time storm tracking in the drone guidance system, but the feature is not ready yet. They read about the new AI Storm Analyzer service that has just entered Public preview. So Tailwind Traders has decided to incorporate it into the early stages of their application testing.
 
 > [!NOTE]
 > AI Storm Analyzer is a fictitious Azure service. We introduce it here for illustration.
 
-Before the team moves forward, they want a better understanding of how preview features impact their SLA. Let's begin by defining the Azure services lifecycle.
+Before the team moves forward, they want a better understanding of how preview services impact their SLA. Let's begin by defining the Azure service lifecycle.
 
-## What is the services lifecycle?
+## What is the service lifecycle?
 
-Every Azure service has a lifecycle which defines how it's released for public use. We call this the *services lifecycle*.
+The *service lifecycle* defines how every Azure service is released for public use.
 
-An Azure service starts in the development phase. Next, it's released to the preview phase, which informs you that the new service is coming. Then, the service is released to public testing so that you can experiment with it and provide feedback. Finally the service becomes generally available to everyone.
+Every Azure service starts in the development phase. This is where the Azure team collects defines their requirements and begins to build out the service.
 
-<div style="background:yellow;">
-TODO: Where does "public testing" fit in to remaining text?
+Next, the service is released to the Public preview phase. During this phase, the public can access and experiment with it so that they can provide feedback. Your feedback  helps Microsoft to improve their services. More importantly,  providing feedback gives you the opportunity to request new or different capabilities so that services better meet your needs.
 
-TODO: Add a graphic of the lifecycle? Is there one we can borrow?
-</div>
+After a new Azure service is validated and tested, it's released to all customers as a production-ready service. This is known as *general availability* (GA).
 
-## What are Azure previews?
-
-Microsoft provides early access to new Azure services, features, and functionality. With Azure Previews, you can test pre-release features, products, services, software, and even regions. When you provide feedback on these previews, you're helping Microsoft to improve their services.
-
-<div style="background:yellow;">
-TODO: "When you provide feedback" - is there anything else in it for me? Currently, it reads as a bit self-serving.
-</div>
-
-### What preview categories can I access?
-
-There are two preview categories that you can access:
-
-* **Preview feature**
-
-    A preview feature is an Azure feature that's available to *select* Azure customers for evaluation purposes.
-* **Public preview**
-
-    Public preview is an Azure feature that's available to *all* Azure customers for evaluation purposes.
-
-### What terms and conditions can I expect?
+## What terms and conditions can I expect?
 
 Each Azure preview defines its own terms and conditions. All preview-specific terms and conditions supplement your existing Azure service agreement.
 
 Some previews are not covered by customer support. Therefore, previews are not recommended for business-critical workloads.
-
-## What's general availability (GA)?
-
-After a new Azure service or feature is validated and tested, it's released to all customers as a production-ready service. This is known as *general availability* (GA).
-
-The graphic below show the general process for features (and bugs) during their development lifecycle. It's common for features to move from being an Azure preview feature to GA, based on customer evaluation and feedback.
-
-<div style="background:yellow;">
-TODO: Do we need this graphic or is the sentence enough? Though it is a text alternative.
-
-TODO: Why are we talking about bugs?
-
-TODO: (Tom) I think the graphic is a bit over the top. I would cut it and the paragraph above. That said, this section is kinda thin. Maybe that's fine.
-</div>
-
-:::image type="content" source="../media/5-service-lifecycle.png" alt-text="The typical lifecycle of a feature or bug." border="false":::
 
 ## How can I access preview services?
 
@@ -83,7 +40,7 @@ Here's how to see what preview service are available. You can follow along if ha
 
 ## How can I access new features for an existing service?
 
-Some preview features relate to a specific area of an existing Azure service. For example, a compute or database service that you use might provide enhanced functionality. These preview features are accessible when you deploy, configure, and manage the service.
+Some preview features relate to a specific area of an existing Azure service. For example, a compute or database service that you use daily might provide enhanced functionality. These preview features are accessible when you deploy, configure, and manage the service.
 
 Although you can use an Azure preview feature in production, make sure you're aware of any limitations around its use before deploying to production.
 
@@ -97,7 +54,7 @@ You see **Microsoft Azure (Preview)** near the menu bar to remind you that you'r
 
 :::image type="content" source="../media/5-azure-portal-preview.png" alt-text="A screenshot of the preview version of the Azure portal showing the menu bar.":::
 
-## How can I provide feedback on the Azure portal?
+### How can I provide feedback on the Azure portal?
 
 You can provide feedback:
 
@@ -122,6 +79,4 @@ From the Azure updates page, you can:
 * Subscribe to an RSS feed to receive notifications.
 * Access the Microsoft Connect page to read Azure product news and announcements.
 
-<div style="background:yellow;">
-TODO: We define the TWT scenario but don't come back to it. If not here, maybe in the knowledge check?
-</div>
+In the next part, you'll help the Tailwind Traders team explore a new service that's currently in the Public preview phase.
