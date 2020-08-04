@@ -22,8 +22,14 @@ Does the composite SLA meet your requirements? If not, what can you do to improv
 
 In this module, you learned about several factors that affect service guarantees on Azure. You also learned how to access preview services and preview features. Here are additional resources to help you go further.
 
+### Design reliable and resilient applications
+
+* Take the [Microsoft Azure Well-Architected Framework - Reliability](https://docs.microsoft.com/learn/modules/azure-well-architected-reliability/?azure-portal=true) module to learn how to handle various kinds of infrastructure and service failures.
 * Review the [resiliency checklist](https://docs.microsoft.com/azure/architecture/checklist/resiliency-per-service?azure-portal=true) to learn how to build resiliency into the Azure services that you use.
-* Consider proven recommendations you can use to [design for self healing](https://docs.microsoft.com/azure/architecture/guide/design-principles/self-healing?azure-portal=true) in your applications.
+* Follow proven recommendations to [design for self healing](https://docs.microsoft.com/azure/architecture/guide/design-principles/self-healing?azure-portal=true) in your applications.
 * Learn how [regions and Availability Zones](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true) protect your applications and data from datacenter failures.
+
+### Work with preview services
+
 * Review [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms?azure-portal=true).
 * Learn about updates and new product features on the [Azure announcements blog](https://azure.microsoft.com/blog/topics/announcements?azure-portal=true).
