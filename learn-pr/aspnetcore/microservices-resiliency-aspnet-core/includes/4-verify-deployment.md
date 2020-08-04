@@ -77,7 +77,7 @@ The coupon service was designed to simulate failures on demand. Configuration of
     This code causes the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
 1. Select the **:::no-loc text="APPLY":::** button.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code "DISC-10"!!":::**.
+    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::**.
 
     :::image type="content" source="../media/4-verify-deployment/configure-coupon-failures.png" alt-text="configure coupon failures" border="true" lightbox="../media/4-verify-deployment/configure-coupon-failures.png" :::
 
@@ -97,7 +97,7 @@ In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, noti
 
 In the preceding image, you can see that:
 
-- The first two requests, labeled as :::no-loc text=""1""::: and :::no-loc text=""2"":::, fail when getting the values.
-- The third request, labeled as :::no-loc text=""3"":::, succeeds and returns the expected value, labeled as :::no-loc text=""4"":::.
+- The first two requests, labeled as ":::no-loc text="1":::" and ":::no-loc text="2":::", fail when getting the values.
+- The third request, labeled as ":::no-loc text="3":::", succeeds and returns the expected value, labeled as ":::no-loc text="4":::".
 
 In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll add code-based resiliency with Polly to the coupon service in the next unit.

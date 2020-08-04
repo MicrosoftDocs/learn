@@ -214,7 +214,7 @@ Place an item in the shopping bag and begin the checkout procedure. Repeat the e
 
 1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code "DISC-10"!!":::**.
+    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::**.
 1. Replace the existing discount code with *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective.
@@ -230,8 +230,8 @@ Place an item in the shopping bag and begin the checkout procedure. Repeat the e
 
     In the preceding image, you can see:
 
-    - The log traces when configuring the simulated failures (#1) and
-    - Three retries until the aggregator could finally get the value (#2).
+    - The log traces when configuring the simulated failures, labeled as ":::no-loc text="1":::".
+    - Three retries until the aggregator could finally get the value, labeled as ":::no-loc text="2":::".
 1. Complete the checkout procedure and select **:::no-loc text="CONTINUE SHOPPING":::**.
 
 ### Circuit Breaker policy
@@ -244,7 +244,7 @@ Place an item in the shopping bag and begin the checkout procedure. Repeat the e
 
 1. Enter the discount code *:::no-loc text="FAIL 20 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 20 failure(s) configured for code "DISC-10"!!":::**.
+    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 20 failure(s) configured for code \"DISC-10\"!!":::**.
 1. Enter the discount code *:::no-loc text="DISC-10":::* again and select **:::no-loc text="APPLY":::**.
 1. Wait about 20 seconds. You'll receive an HTTP 500 error message.
 1. Select **:::no-loc text="APPLY":::** again. The error message is received again in about 20 seconds.
@@ -257,8 +257,8 @@ Place an item in the shopping bag and begin the checkout procedure. Repeat the e
 
     In the preceding image, notice that:
 
-    - After waiting for 7.6 seconds, labeled as :::no-loc text=""1"":::, you received the HTTP 500 error message with the retry policy, labeled as :::no-loc text=""2"":::.
-    - On the next try, you validate the code. You receive the HTTP 500 error message after waiting only 3.4 seconds, labeled as :::no-loc text=""3"":::. You don't see the ":::no-loc text="Get coupon...":::" trace, meaning it failed without going to the server.
+    - After waiting for 7.6 seconds, labeled as ":::no-loc text="1":::", you received the HTTP 500 error message with the retry policy, labeled as ":::no-loc text="2":::".
+    - On the next try, you validate the code. You receive the HTTP 500 error message after waiting only 3.4 seconds, labeled as ":::no-loc text="3":::". You don't see the ":::no-loc text="Get coupon...":::" trace, meaning it failed without going to the server.
     - If you check the details on this last trace, you should see a variation of the following output:
 
         :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
