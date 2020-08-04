@@ -2,7 +2,7 @@
 uid: learn.choose-azure-services-sla-lifecycle.4-design-application-meet-sla
 title: Design your application to meet your SLA
 metadata:
-  description: "Factors that impact service-level agreements"
+  description: "Learn how technology choices can impact your application SLA."
   ms.date: 09/11/2020
   author: tpetchel
   ms.author: thpetche
@@ -11,6 +11,6 @@ metadata:
   show_latex: true
   latex_macros:
     pct: "\\%"
-durationInMinutes: 5
+durationInMinutes: 7
 content: |
   [!include[](includes/4-design-application-meet-sla.md)]

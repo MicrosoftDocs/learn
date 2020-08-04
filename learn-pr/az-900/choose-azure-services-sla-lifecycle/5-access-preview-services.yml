@@ -2,12 +2,12 @@
 uid: learn.choose-azure-services-sla-lifecycle.5-access-preview-services
 title: Access preview services and preview features
 metadata:
-  description: "Define public preview features and general availability"
+  description: "Learn how Azure services go from the preview phase to being generally available."
   ms.date: 09/11/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/5-access-preview-services.md)]
