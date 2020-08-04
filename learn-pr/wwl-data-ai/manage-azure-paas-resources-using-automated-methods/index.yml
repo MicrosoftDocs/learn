@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Ability to write code in the SQL language, particularly the Microsoft T-SQL dialect, at a basic level.
-  - Experience creating and configuring resources using the Azure Portal.
+  - Experience creating and configuring resources using the Azure portal.
   - Familiarly with Open Source database systems on Azure.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
