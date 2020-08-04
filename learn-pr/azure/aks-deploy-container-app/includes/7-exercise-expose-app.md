@@ -135,7 +135,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
     In this code, you added the first two keys to tell Kubernetes the `apiVersion` and `kind` of manifest you're creating. The `name` is the name of the ingress. You'll use it to identify and query the ingress information when you use `kubectl`.
 
-1. Create an `annotations` key inside the `metadata` section of the manifest file called to use the :::no-loc text="HTTP Application Routing"::: add-on for this ingress. Set the key to `kubernetes.io/ingress.class` and a value of `addon-http-application-routing`.
+1. Create an `annotations` key inside the `metadata` section of the manifest file called to use the :::no-loc text="HTTP application routing"::: add-on for this ingress. Set the key to `kubernetes.io/ingress.class` and a value of `addon-http-application-routing`.
 
     Update the `ingress.yaml` file to match the following YAML.
 

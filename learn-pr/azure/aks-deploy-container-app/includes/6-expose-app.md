@@ -60,7 +60,7 @@ Kubernetes uses ingress controllers to manage the configuration of ingresses in 
 
 In AKS, the ingress controller links to a _DNS Zone_ resource in your Azure subscription. The DNS Zone is automatically created as part of the cluster creation process on your behalf. The link makes it possible for the cluster to automatically generate a zone record that points to the DNS name to the exposed application's IP address and port.
 
-In AKS, the :::no-loc text="HTTP Application Routing"::: add-on allows you to create ingress controllers.
+In AKS, the :::no-loc text="HTTP application routing"::: add-on allows you to create ingress controllers.
 
 ## What are ingress rules?
 
@@ -87,7 +87,7 @@ This example defines a rule that allows all traffic using the address `example.c
 
 An annotation allows you to attach non-identifying metadata, such as ingress configurations, for workloads. You can think of the annotation as an internal label that defines specific configurations for resources. For example, you might want to use a specific ingress controller that supports name rewriting or payload limiting.
 
-Here's an example of the annotation in a manifest file that specifies the use of the HTTP Application Routing add-on.
+Here's an example of the annotation in a manifest file that specifies the use of the HTTP application routing add-on.
 
 ```yaml
 #ingress.yaml
@@ -96,7 +96,7 @@ kind: Ingress
 metadata:
   name: contoso-website
   annotations:
-    kubernetes.io/ingress.class: addon-http-application-routing # Using HTTP Application Routing Addon
+    kubernetes.io/ingress.class: addon-http-application-routing # Use the HTTP application routing add-on
 ```
 
 In the next exercise, you'll define a service of type `ClusterIP` and expose your company's web app through an ingress.

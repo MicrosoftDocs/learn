@@ -8,7 +8,7 @@ In this module, you'll deploy Kubernetes workloads declaratively to an AKS clust
 
 By the end of this module, you'll be able to:
 
-- Create and set up an Azure Kubernetes cluster.
+- Create and set up an AKS cluster.
 - Deploy Kubernetes workloads by using deployment YAML files.
 - Expose Kubernetes workloads by using services and ingress.
 - Integrate Azure Container Registry to deploy container images.
