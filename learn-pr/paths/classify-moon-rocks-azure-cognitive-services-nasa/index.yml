@@ -2,7 +2,7 @@
 uid: learn.classify-moon-rocks-azure-cognitive-services-nasa
 metadata:
   title: Classify moon rocks using Python and Azure Cognitive Services
-  description: In this learning path, you will touch the surface (pun intended) of how scientists begin to research the nuances of rocks, and the complexities that data science can begin to make simpler. These modules are designed to give you a sneak peak into the scientific discovery of space - what we can achieve is greater than we ever imagined.
+  description: In this learning path, you will touch the surface (pun intended) of how scientists begin to research the nuances of rocks, and the complexities that data science can begin to make simpler. These modules are designed to give you a sneak peek into the scientific discovery of space - what we can achieve is greater than we ever imagined.
   brand: vs-code
   ms.date: 07/22/2020
   author: angevin17
@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Classify moon rocks using Python and Azure Cognitive Services
-summary: In this learning path, you will touch the surface (pun intended) of how scientists begin to research the nuances of rocks, and the complexities that data science can begin to make simpler. These modules are designed to give you a sneak peak into the scientific discovery of space - what we can achieve is greater than we ever imagined.
-prerequisites: A basic understanding of Python for Data Science (link to previous learning path)
+summary: In this learning path, you will touch the surface (pun intended) of how scientists begin to research the nuances of rocks, and the complexities that data science can begin to make simpler. These modules are designed to give you a sneak peek into the scientific discovery of space - what we can achieve is greater than we ever imagined.
+prerequisites: A basic understanding of Python for Data Science (placeholder link to previous learning path)
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner

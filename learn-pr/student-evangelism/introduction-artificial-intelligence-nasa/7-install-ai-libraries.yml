@@ -9,7 +9,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Prepare to slassify space rocks by downloading AI Python libraries
+title: Exercise - Prepare to classify space rocks by downloading AI Python libraries
 durationInMinutes: 7
 content: |
   [!include[](includes/7-install-ai-libraries.md)]

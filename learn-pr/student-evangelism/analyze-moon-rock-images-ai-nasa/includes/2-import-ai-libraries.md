@@ -21,7 +21,7 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 ```
 
-Import torch vision (part of pyTorch) to process images and manipulate them (crop, change size, ect.)
+Import torch vision (part of pyTorch) to process images and manipulate them (crop, change size, etc.)
 
 ```python
 import torchvision

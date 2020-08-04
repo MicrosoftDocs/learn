@@ -18,7 +18,7 @@ Size of the rock
 
 Our brains subconsciously do all of these without us noticing. We call these 'Features' in AI.
 
-Below are some features that we can extract from a motorcycle. You can see there are wheels, handle-bars, throttle, ect.
+Below are some features that we can extract from a motorcycle. You can see there are wheels, handle-bars, throttle, etc.
 
 <img src="../introduction-artificial-intelligence-nasa\media\features.png" width="350" align="center">  
 

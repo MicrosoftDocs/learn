@@ -10,4 +10,4 @@ Below you can see how we slide a filter over an image to extract features, such 
 
 We have so many of such filters, we will use 32 filters for our rock classification example.
 
-<img src="../Media/convv.gif" width="450" align="center">
+<img src="../train-test-predictive-ai-model-nasa\media\convv.gif" width="450" align="center">

@@ -29,4 +29,4 @@ print('done')
 
 The Neural Network goes back and forth many times util it learns the best associations (wiring) between features and rock types
 
-<img src="..\train-test-predictive-ai-model\media\dl.gif" width="650" align="center">
+<img src="../train-test-predictive-ai-model-nasa\media\dl.gif" width="650" align="center">
