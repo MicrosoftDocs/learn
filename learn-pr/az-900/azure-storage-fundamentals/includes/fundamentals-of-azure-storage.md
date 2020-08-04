@@ -1,0 +1,5 @@
+[Azure Storage](https://azure.microsoft.com/product-categories/storage) is a service that you can use to store files, messages, tables, and other types of information. You can use Azure Storage on its own (for example as a file share), but developers also often use it as a store for working data. Such stores can be used by websites, mobile apps, desktop applications, and many other types of custom solutions. Azure Storage is also used by IaaS virtual machines, and PaaS cloud services.
+
+An Azure storage account contains all of your Azure Storage data objects: blobs, files, queues, tables, and disks. The storage account provides a unique namespace for your Azure Storage data that is accessible from anywhere in the world over HTTP or HTTPS. Data in your Azure storage account is durable and highly available, secure, and massively scalable.
+
+To learn how to create an Azure storage account, see [Create a storage account](https://docs.microsoft.com/azure/storage/common/storage-account-create).

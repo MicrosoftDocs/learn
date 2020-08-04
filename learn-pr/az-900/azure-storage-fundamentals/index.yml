@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.azure-storage-fundamentals
+metadata:
+  title: Azure Storage Fundamentals
+  description: TODO
+  ms.date: 09/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Storage Fundamentals
+summary: Tailwind Traders has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to storage infrastructure. In this session you'll learn about the different Azure storage options and the scenarios in which each is appropriate.
+abstract: | 
+  Upon completion of this module, the learner will be able to describe the benefits and usage of:
+  - Azure Container (Blob) Storage
+  - Azure Disk Storage
+  - Azure File Storage
+  - Azure Storage Tiers 
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology
+  - Familiarity with cloud computing is helpful, but isn't necessary
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- azure-storage
+- azure-storage-accounts
+- azure-blob-storage
+- azure-files
+- azure-storage-explorer
+units:
+- learn.azure.azure-storage-fundamentals.introduction
+- learn.azure.azure-storage-fundamentals.fundamentals-of-azure-storage
+- learn.azure.azure-storage-fundamentals.container-storage-fundamentals
+- learn.azure.azure-storage-fundamentals.disk-storage-fundamentals
+- learn.azure.azure-storage-fundamentals.file-storage-fundamentals
+- learn.azure.azure-storage-fundamentals.understanding-storage-tiers
+- learn.azure.azure-storage-fundamentals.knowledge-check
+- learn.azure.azure-storage-fundamentals.summary
+badge:
+  uid: learn.azure.azure-storage-fundamentals.badge
