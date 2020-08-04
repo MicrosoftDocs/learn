@@ -92,16 +92,16 @@ Why is this architecture worth considering?
 
 ## Disaster Recovery Example 4 – Azure Site Recovery
 
-For those who do not want to implement a SQL Server-based disaster solution, ASR is a potential option. However, most data professionals prefer a database-centric approach as it will generally have a lower RPO.
+For those who do not want to implement a SQL Server-based disaster solution, Azure Site Recovery is a potential option. However, most data professionals prefer a database-centric approach as it will generally have a lower RPO.
 
-The image below, from the Microsoft documentation. shows where in the Azure Portal you would configure replication for ASR.
+The image below, from the Microsoft documentation. shows where in the Azure portal you would configure replication for Azure Site Recovery.
 
 :::image type="content" source="../media/module-77-high-availability-final-07.png" alt-text="Configuring Azure Site Recovery":::
 
 Why is this architecture worth considering?
 
-- ASR will work with more than just SQL Server.
+- Azure Site Recovery will work with more than just SQL Server.
 
-- ASR may meet RTO and possibly RPO.
+- Azure Site Recovery may meet RTO and possibly RPO.
 
-- ASR is provided as part of the Azure platform.
+- Azure Site Recovery is provided as part of the Azure platform.
