@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-nodejs-project-dependencies.8-knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check
@@ -19,51 +19,51 @@ quiz:
       choices:
         - content: "Run `npm install jest`"
           isCorrect: false
-          explanation: "While this will install jest, it will be installed as a normal dependency. This is not recommended as this means the dependency will ship with the application."
+          explanation: "This command installs Jest, but it installs it as a normal dependency. We don't recommend installing Jest as a normal dependency because the dependency will ship with the application."
         - content: "Run `npm install jest --save-dev`"
           isCorrect: true
-          explanation: "This will install jest and as a dev dependency. A test framework is something you only need during development."
+          explanation: "This command installs Jest as a dev dependency. A test framework is something you need only during development."
         - content: "Run `npm install jest --save`"
           isCorrect: false
-          explanation: "This will install jest in the `dependencies` section. It's recommended that any library that is only used during development is installed as a dev dependency. Additionally there is no need to add the `--save` flag, this is leftover from when this flag was needed to persist the installed library in the package.json file"
-        - content: "npm download jest --save-dev"
+          explanation: "This command installs Jest in the `dependencies` section. We recommend that any library that's used only during development is installed as a dev dependency. And you don't need to add the `--save` flag. This flag is left over from when it was needed to persist the installed library in the package.json file."
+        - content: "Run `npm download jest --save-dev`"
           isCorrect: false
-          explanation: "There is no command called `download`, use `install`"
-    - content: "Why would you use NPX?"
+          explanation: "There is no `download` command. Use `install`."
+    - content: "What is the main reason to use npx?"
       choices:
-        - content: "It's downloaded directly into the Node.js process and is removed after the command is executed. This is great for when you want to run commands seldom."
+        - content: "The dependency is downloaded directly into the Node.js process and is removed after the command is run. This tool is great for when you want to run commands infrequently."
           isCorrect: true
           explanation: ""
-        - content: "It's more secure than a global install"
+        - content: "Installing dependencies by using npx is more secure than installing them globally."
           isCorrect: false
-        - content: "It's faster than installing it globally"
+        - content: "Installing dependencies by using npx is faster than installing them globally."
           isCorrect: false
-        - content: "You don't have to use sudo before running it like you would a global install"
+        - content: "You don't have to use sudo before running it as you would for a global installation."
           isCorrect: false
-          explanation: "While this is technically correct, this shouldn't be the reason why you choose NPX over global install. Global installs are something that remains on your system and you need to uninstall. There's no such need with NPX as it cleans up after itself."
-    - content: "What's a way to instruct the `package.json` file that you only want patch (bug fixes) updates"
+          explanation: "This answer is technically correct, but there's a better reason to choose npx over global installation. Global installations remain on your system until you uninstall them. When you use npx, you don't need to uninstall the dependency."
+    - content: "How do you configure a package.json file so that you get only patch (bug fix) updates?"
       choices:
-        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"*\""
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"*\"`"
           isCorrect: false
-          explanation: "This will update the dependency to the latest possible version. This is incorrect."
-        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"1.x.0\""
+          explanation: "This answer is incorrect. This code will update the dependency to the latest possible version."
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.x.0\"`"
           isCorrect: false
-          explanation: "This will update the dependency to the latest minor version. That's not what you want"
-        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"1.0.x\""
+          explanation: "This code will update the dependency to the latest minor version. That's not what you want."
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.0.x\"`"
           isCorrect: true
-        - content: "Locate the entry in dependencies or devDependencies. Set the entry to look like this \"<library>\": \"^1.0.x\""
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"^1.0.x\"`"
           isCorrect: false
-    - content: "What are some recommended scripts to set up in your Package.json at the start of a project?"
+    - content: "What are some recommended scripts to set up in a package.json at the start of a project?"
       choices:
         - content: "start, test, build"
           isCorrect: false
-          explanation: "These are all good scripts to set up. As you working in JavaScript it's good if you set up a linter tool as well to ensure your code looks consistent."
+          explanation: "It's a good idea to set up these scripts. Because you're working in JavaScript, it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
         - content: "start, test"
           isCorrect: false
-          explanation: "Having a script for start and test is good. It's also recommended that you have a script for how to build your solution. Additionally having a way to *lint* your files ensure you and your team members can write code in a consistent way."
+          explanation: "Setting up a script for start and test is a good idea. We also recommend that you set up a script for how to build your solution. And it's a good idea to set up a linter tool as well to ensure that your code looks consistent."
         - content: "start"
           isCorrect: false
-          explanation: "This isn't nearly enough. Look into setting up commands for test, build, and linting as well."
-        - content: "start, test, lint, and build"
+          explanation: "You should set up more than just a start script. Consider setting up commands for test, build, and linting as well."
+        - content: "start, test, lint, build"
           isCorrect: true
-          explanation: "Having all these scripts set-up is great way to start any Node.js project."
+          explanation: "Setting up these scripts is great way to start any Node.js project."
