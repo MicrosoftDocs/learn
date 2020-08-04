@@ -20,7 +20,7 @@ Our brains subconsciously do all of these without us noticing. We call these 'Fe
 
 Below are some features that we can extract from a motorcycle. You can see there are wheels, handle-bars, throttle, ect.
 
-<img src="../Media/features.png" width="350" align="center">  
+<img src="../introduction-artificial-intelligence-nasa\media\features.png" width="350" align="center">  
 
 ### Step 2
 
@@ -31,7 +31,7 @@ In this step our brain tries to figure out what are the characteristics/features
 As a result of this, we will come up with some rules, for example : "Lighter rocks are usually Crustals". "Basalt rocks have more dense textures", ...
 We show these associations with links such as shown below:
 
-<img src="../Media/links.png" width="350" align="center">
+<img src="../introduction-artificial-intelligence-nasa\media\links.png" width="350" align="center">
 
 ### Step 3
 
@@ -39,4 +39,4 @@ Lastly we try to use these relationships to figure out what to classify a new it
 
 Given a new rock image, our brain extracts all of its characteristics we discussed above, and then uses the associations we made in the second step to decides what type of rock it is.
 
-<img src="../Media/dl.png" width="550" align="center">
+<img src="../introduction-artificial-intelligence-nasa\media\dl.png" width="550" align="center">
