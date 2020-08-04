@@ -305,7 +305,7 @@ namespace katas {
     @EntryPoint()
     operation GenerateUniformState() : Int {
         using (qubits = Qubit[3]){
-        ApplyToEach(H,qubits);
+        ApplyToEach(H, qubits);
         Message("The qubit register in a uniform superposition: ");
         DumpMachine();
         mutable results = new Result[0];
