@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-fundamentals.knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge Check
+  description: Knowledge Check
+  ms.date: 09/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which of the following statements is not true about cloud computing?"
+      choices:
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TODO"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TODO"
+    - content: "What is Microsoft Azure?"
+      choices:
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TODO"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TODO"
+    - content: "True or False: You need to purchase an Azure account before using any Azure resources."
+      choices:
+        - content: "False"
+          isCorrect: true
+          explanation: "You can use a Free Azure Account or a Microsoft Learn Sandbox to create resources."
+        - content: "True"
+          isCorrect: false
+          explanation: "You can use a Free Azure Account or a Microsoft Learn Sandbox to create resources."
+    - content: "True or False: In an Infrastructure-as-a-Service environment, the cloud tenent is responsible for routine hardware maintenance."
+      choices:
+        - content: "True"
+          isCorrect: false
+          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+        - content: "False"
+          isCorrect: true
+          explanation: "In an IaaS environment, the cloud provider is responsible for any hardware maintenance."
+    - content: "<span style='background:yellow'>**TODO**: *Need a question about the AZ-900 exam.*</span>"
+      choices:
+        - content: "TODO"
+          isCorrect: true
+          explanation: "TODO"
+        - content: "TODO"
+          isCorrect: false
+          explanation: "TODO"
