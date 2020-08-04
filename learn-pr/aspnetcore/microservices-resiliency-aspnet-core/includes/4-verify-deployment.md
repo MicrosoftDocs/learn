@@ -24,12 +24,12 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
 
 ```console
-The eShop-Learn application has been deployed to "http://13.87.153.177" (IP: 13.87.153.177).
+The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
 
 You can begin exploring these services (when ready):
-- Centralized logging       : http://13.87.153.177/seq/#/events?autorefresh (See transient failures during startup)
-- General application status: http://13.87.153.177/webstatus/ (See overall service status)
-- Web SPA application       : http://13.87.153.177/
+- Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
+- General application status: http://203.0.113.55/webstatus/ (See overall service status)
+- Web SPA application       : http://203.0.113.55/
 ```
 
 > [!TIP]
@@ -41,24 +41,24 @@ You can begin exploring these services (when ready):
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
-1. Select the **General application status** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
+1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
 
     :::image type="content" source="../media/4-verify-deployment/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-verify-deployment/health-checks-status-page.png":::
 
     > [!NOTE]
-    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
-1. After all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../media/4-verify-deployment/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../media/4-verify-deployment/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
-    1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page. Select the **Remember me?** check box to avoid signing in again.
-    1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
+    1. Select the **:::no-loc text="LOGIN":::** link in the upper right to sign into the app. The credentials are provided on the page. Select the **:::no-loc text="Remember me?":::** check box to avoid signing in again.
+    1. Add the **:::no-loc text=".NET BLUE HOODIE":::** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
-    1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
+    1. Select **:::no-loc text="CHECKOUT":::**, and then select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
-    :::image type="content" source="../media/4-verify-deployment/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/4-verify-deployment/eshop-spa-shopping-bag.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
 
 ## Explore the response of a non-resilient app
 
@@ -68,16 +68,16 @@ You've successfully verified that the app was deployed to AKS and is working pro
 
 The coupon service was designed to simulate failures on demand. Configuration of simulated failures is accomplished with a special syntax for coupon codes. To simulate a failure, you need at least one item in the basket. Complete the following steps:
 
-1. Select the **CONTINUE SHOPPING** button.
-1. Select the **.NET FOUNDATION PIN**.
+1. Select the **:::no-loc text="CONTINUE SHOPPING":::** button.
+1. Select the **:::no-loc text=".NET FOUNDATION PIN":::**.
 1. Select the basket icon.
-1. Select **CHECKOUT**.
-1. In the **HAVE A DISCOUNT CODE?** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 2 DISC-10":::*.
+1. Select **:::no-loc text="CHECKOUT":::**.
+1. In the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 2 DISC-10":::*.
 
     This code causes the coupon service raise an exception twice, when validating the *:::no-loc text="DISC-10":::* discount code.
-1. Select the **APPLY** button.
+1. Select the **:::no-loc text="APPLY":::** button.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!!**.
+    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code "DISC-10"!!":::**.
 
     :::image type="content" source="../media/4-verify-deployment/configure-coupon-failures.png" alt-text="configure coupon failures" border="true" lightbox="../media/4-verify-deployment/configure-coupon-failures.png" :::
 
@@ -85,11 +85,11 @@ This configuration causes the next two requests for the *:::no-loc text="DISC-10
 
 ### Apply the failing discount coupon
 
-1. In the **HAVE A DISCOUNT CODE?** text box, replace the existing value with *:::no-loc text="DISC-10":::*.
-1. Select the **APPLY** button. You'll receive the message **ERROR: 500 - Internal Server Error!**.
-1. Select the **APPLY** button again. You'll receive the same message once more.
-1. Select the **APPLY** button for a third time. This time, the code validation succeeds and the discount is applied to the order.
-1. Select the **Centralized logging** link in the command shell to view the Seq logs.
+1. Replace the existing discount code with *:::no-loc text="DISC-10":::*.
+1. Select the **:::no-loc text="APPLY":::** button. You'll receive the message **:::no-loc text="ERROR: 500 - Internal Server Error!":::**.
+1. Select the **:::no-loc text="APPLY":::** button again. You'll receive the same message once more.
+1. Select the **:::no-loc text="APPLY":::** button for a third time. This time, the code validation succeeds and the discount is applied to the order.
+1. Select the **:::no-loc text="Centralized logging":::** link in the command shell to view the Seq logs.
 
 In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, notice that you received the error message immediately. Check the log traces. You'll see a variation of the following output:
 
@@ -97,7 +97,7 @@ In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, noti
 
 In the preceding image, you can see that:
 
-- The first two requests, labeled as "1" and "2", fail when getting the values.
-- The third request, labeled as "3", succeeds and returns the expected value, labeled as "4".
+- The first two requests, labeled as :::no-loc text=""1""::: and :::no-loc text=""2"":::, fail when getting the values.
+- The third request, labeled as :::no-loc text=""3"":::, succeeds and returns the expected value, labeled as :::no-loc text=""4"":::.
 
 In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll add code-based resiliency with Polly to the coupon service in the next unit.

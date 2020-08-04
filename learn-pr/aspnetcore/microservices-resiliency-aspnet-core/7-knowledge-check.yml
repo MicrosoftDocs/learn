@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
 title: Knowledge check
 durationInMinutes: 7
-content: ""
+content: |
 quiz:
   title: Check your knowledge
   questions:
@@ -39,7 +39,7 @@ quiz:
         - content: Polly and Linkerd can have complementary roles, depending on the context.
           isCorrect: true
           explanation: "Polly and Linkerd take different approaches to resiliency and have complementary roles."
-    - content: Which of the following components is **not needed** to achieve a resilient app in Kubernetes?
+    - content: Which of the following components isn't needed to achieve a resilient app in Kubernetes?
       choices:
         - content: CI/CD pipelines.
           isCorrect: true

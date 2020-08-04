@@ -1,4 +1,4 @@
-In this exercise, you'll implement a resiliency handler with Polly. The initial *eShopOnContainers* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
+In this exercise, you'll implement a resiliency handler with Polly. The initial *:::no-loc text="eShopOnContainers":::* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
 
 In this unit, you will:
 
@@ -8,12 +8,14 @@ In this unit, you will:
 
 ## Add failure handling code using Polly
 
-The basic idea is to have the app automatically handle retrying the operation until it succeeds, or give up because it looks like a severe failure. When validating a discount coupon, the HTTP request goes to the web shopping aggregator, as the implementation of the [Backends For Frontends pattern](https://samnewman.io/patterns/architectural/bff) (BFF). The BFF implementation:
+In this section, you'll modify the app to automatically retry a failing operation until it succeeds. If the operation continues to fail after several attempts, the UI will display an exception.
+
+When validating a discount coupon, the HTTP request is sent to the web shopping aggregator. The web shopping aggregator is responsible for routing the request to the coupon service. This is an implementation of the [Backends For Frontends pattern](https://samnewman.io/patterns/architectural/bff) (BFF). The BFF implementation:
 
 - Sends another HTTP request to the coupon service to get the required information.
 - Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](http://www.thepollyproject.org).
 
-To make the coupon service resilient, you'll implement a Retry and a Circuit Breaker policy to handle failure. Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. The `IHttpClientFactory` is responsible for creating instances of `HttpClient`.
+To make the coupon service resilient, you'll implement a Retry and a Circuit Breaker policy to handle failure within the web shopping aggregator. Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. The `IHttpClientFactory` is responsible for creating instances of `HttpClient`.
 
 The following sequence diagram depicts the flow of events from an `HttpClient` instance to Polly's Retry and Circuit Breaker policies:
 
@@ -35,13 +37,13 @@ Complete the following steps to implement failure handling for the coupon servic
     dotnet add package Microsoft.Extensions.Http.Polly
     ```
 
-    The preceding command installs a NuGet package in the *Web.Shopping.HttpAggregator* project. The package integrates `IHttpClientFactory` with Polly and installs the actual `Polly` package as a dependency. The package is necessary to configure Polly policies to handle conditions representing transient faults when making HTTP requests. Such conditions are handled by invoking the package's `HttpPolicyExtensions.HandleTransientHttpError` method. The conditions include:
+    The preceding command installs a NuGet package in the *:::no-loc text="Web.Shopping.HttpAggregator":::* project. The package integrates `IHttpClientFactory` with Polly and installs the actual `Polly` package as a dependency. The package is necessary to configure Polly policies to handle conditions representing transient faults when making HTTP requests. Such conditions are handled by invoking the package's `HttpPolicyExtensions.HandleTransientHttpError` method. The conditions include:
 
     - Network failures, as indicated by exceptions of type `HttpRequestException`
     - Server errors, as indicated by HTTP 5xx status codes
     - Request timeouts, as indicated by the HTTP 408 status code
 
-1. Apply the following changes in the *src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs* file:
+1. Apply the following changes in the *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs":::* file:
     1. Replace the comment `// Add the GetRetryPolicy method` with the following method:
 
         ```csharp
@@ -83,7 +85,7 @@ Complete the following steps to implement failure handling for the coupon servic
 
         :::code language="csharp" source="../code/src/apigateways/services/5-couponservice.cs" highlight="8":::
 
-        The `AddApplicationServices` extension method is invoked from the `ConfigureServices` method in the project's *Startup.cs* file:
+        The `AddApplicationServices` extension method is invoked from the `ConfigureServices` method in the project's *:::no-loc text="Startup.cs":::* file:
 
         :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/5-startup.cs" highlight="7":::
 
@@ -97,7 +99,7 @@ Complete the following steps to implement failure handling for the coupon servic
 
         Importing the preceding namespaces resolves member references in the `GetRetryPolicy` and `GetCircuitBreakerPolicy` methods.
 
-1. 
+1. Save the *:::no-loc text="ServiceCollectionExtensions.cs":::* file.
 
 1. [!INCLUDE[dotnet build command](../../includes/dotnet-build-no-restore-command.md)]
 
@@ -181,7 +183,7 @@ Complete the following steps to deploy the changes that you've implemented:
     ./deploy/k8s/deploy-application.sh --registry $ESHOP_REGISTRY --charts webshoppingagg
     ```
 
-    The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You should get a result like this:
+    The preceding script uninstalls the old `webshoppingagg` Helm chart and installs it again. The AKS cluster uses the new image from the ACR instance. You'll see a variation of the following output:
 
     ```console
     ~/clouddrive/aspnet-learn ~/clouddrive/aspnet-learn/src/deploy/k8s
@@ -210,13 +212,13 @@ Complete the following steps to deploy the changes that you've implemented:
 
 Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service. Complete the following steps to test the retry policy:
 
-1. In the **HAVE A DISCOUNT CODE?** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 2 DISC-10":::*.
-1. Select the **APPLY** button.
+1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 2 failure(s) configured for code "DISC-10"!!**.
-1. In the **HAVE A DISCOUNT CODE?** text box, replace the existing value with *:::no-loc text="DISC-10":::*.
-1. Select the **APPLY** button. The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective.
-1. Run the following command to view the logging page URL. Select the **Centralized logging** link.
+    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code "DISC-10"!!":::**.
+1. Replace the existing discount code with *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
+
+    The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective.
+1. Run the following command to view the logging page URL. Select the **:::no-loc text="Centralized logging":::** link.
 
     ```bash
     cat ../deployment-urls.txt
@@ -230,7 +232,7 @@ Place an item in the shopping bag and begin the checkout procedure. Repeat the e
 
     - The log traces when configuring the simulated failures (#1) and
     - Three retries until the aggregator could finally get the value (#2).
-1. Complete the checkout procedure and select **CONTINUE SHOPPING**.
+1. Complete the checkout procedure and select **:::no-loc text="CONTINUE SHOPPING":::**.
 
 ### Circuit Breaker policy
 
@@ -240,28 +242,27 @@ To test the Circuit Breaker policy, you'll configure the code for 20 failures. A
 
 Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service, this time for 20 consecutive failures. Complete the following steps:
 
-1. In the **HAVE A DISCOUNT CODE?** text box at the bottom of the page, enter the code *:::no-loc text="FAIL 20 DISC-10":::*.
-1. Select the **APPLY** button.
+1. Enter the discount code *:::no-loc text="FAIL 20 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **CONFIG: 20 failure(s) configured for code "DISC-10"!!**.
-1. In the **HAVE A DISCOUNT CODE?** text box, enter the code *:::no-loc text="DISC-10":::* again and select **APPLY**.
-1. Wait about 20 seconds. You will receive an HTTP 500 error message.
-1. Select **APPLY** again. Note that the error message is again received in about 20 seconds.
-1. Select **APPLY** again. Note that the HTTP 500 error message came in much faster due to the Circuit Breaker policy.
-1. Select **APPLY** again.
+    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 20 failure(s) configured for code "DISC-10"!!":::**.
+1. Enter the discount code *:::no-loc text="DISC-10":::* again and select **:::no-loc text="APPLY":::**.
+1. Wait about 20 seconds. You'll receive an HTTP 500 error message.
+1. Select **:::no-loc text="APPLY":::** again. The error message is received again in about 20 seconds.
+1. Select **:::no-loc text="APPLY":::** again. The HTTP 500 error message came in much faster because of the Circuit Breaker policy.
+1. Select **:::no-loc text="APPLY":::** again.
 
-Note that the error message is received immediately. You can see this error clearly in the log traces:
+    The error message is received immediately. You can see this error clearly in the log traces:
 
-:::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
+    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-logs.png" alt-text="severe failures in log traces" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-logs.png":::
 
-In the preceding image, notice that:
+    In the preceding image, notice that:
 
-- After waiting for 7.6 seconds (#1), you get the HTTP 500 error message with the retry policy (#2) but
-- The next time you try, you validate the code, you get the HTTP 500 error message after waiting only 3.4 seconds (#3) and you don't see the "Get coupon..." trace, meaning it failed without going to the server.
-- If you check the details on this last trace, you should see a variation of the following output:
+    - After waiting for 7.6 seconds, labeled as :::no-loc text=""1"":::, you received the HTTP 500 error message with the retry policy, labeled as :::no-loc text=""2"":::.
+    - On the next try, you validate the code. You receive the HTTP 500 error message after waiting only 3.4 seconds, labeled as :::no-loc text=""3"":::. You don't see the ":::no-loc text="Get coupon...":::" trace, meaning it failed without going to the server.
+    - If you check the details on this last trace, you should see a variation of the following output:
 
-    :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
+        :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
 
-    Notice that the last trace has the "The circuit is now open..." message.
+        Notice that the last trace has the ":::no-loc text="The circuit is now open...":::" message.
 
-In this unit, you added code-based resiliency with Polly. In the next unit, you'll implement infrastructure-based resiliency with Linkerd.
+In this unit, you added code-based resiliency with Polly. Next, you'll implement infrastructure-based resiliency with Linkerd.

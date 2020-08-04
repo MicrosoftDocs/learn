@@ -9,6 +9,6 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Exercise - Implement resiliency with Polly
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/5-implement-polly-resiliency.md)]

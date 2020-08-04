@@ -17,12 +17,12 @@ Before applying Linkerd, let's revert the app to a state before we added code-ba
 
 You may verify the app is again failing as expected using the same steps as before:
 
-1. Select the **.NET FOUNDATION PIN**.
+1. Select the **:::no-loc text=".NET FOUNDATION PIN":::**.
 1. Select the basket icon.
-1. Select **CHECKOUT**.
-1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **APPLY**.
-1. Change the code to *:::no-loc text="DISC-10":::* and select **APPLY** twice.
-1. Verify that you receive the message **ERROR: 500 - Internal Server Error!** immediately after selecting **APPLY** each time.
+1. Select **:::no-loc text="CHECKOUT":::**.
+1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **:::no-loc text="APPLY":::**.
+1. Change the code to *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::** twice.
+1. Verify that you receive the message **:::no-loc text="ERROR: 500 - Internal Server Error!":::** immediately after selecting **:::no-loc text="APPLY":::** each time.
 
 ### Validate the AKS cluster
 
@@ -146,7 +146,7 @@ Linkerd has been deployed, but it hasn't been configured. The app's behavior is 
 
 ### Modify the `webshoppingagg` and `coupon` deployments
 
-1. Uncomment the following lines in the `coupon` chart *deployment.yaml* file (*deploy/k8s/helm-simple/coupon/templates/deployment.yaml*). Save your changes.
+1. Add the highlighted annotations to the `coupon` chart *:::no-loc text="deployment.yaml":::* file (*:::no-loc text="deploy/k8s/helm-simple/coupon/templates/deployment.yaml":::*). Save your changes.
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/templates/6-deployment.yaml" highlight="18-19":::
 
@@ -155,13 +155,13 @@ Linkerd has been deployed, but it hasn't been configured. The app's behavior is 
     > [!IMPORTANT]
     > It's important to maintain correct indentation in YAML manifests.
 
-1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart *deployment.yaml* file (*deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml*). Save your changes.
+1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart *:::no-loc text="deployment.yaml":::* file (*:::no-loc text="deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml":::*). Save your changes.
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/webshoppingagg/templates/6-deployment.yaml" highlight="18-19":::
 
 ### Add the ServiceProfile for the HTTP GET coupon route
 
-The `ServiceProfile` manifest content is shown next and is already included in the *deploy/k8s/linkerd* directory. Run the following command:
+The `ServiceProfile` manifest content is shown next and is already included in the *:::no-loc text="deploy/k8s/linkerd":::* directory. Run the following command:
 
 ```bash
 kubectl apply -f ./deploy/k8s/linkerd/coupon-serviceprofile.yaml
@@ -175,11 +175,18 @@ serviceprofile.linkerd.io/coupon-api.default.svc.cluster.local created
 
 ### Configure headers for Nginx
 
-Linkerd needs additional information in the request headers, so you need to add annotations to the ingress route.
+Linkerd needs Nginx to provide additional information in the request headers to pass requests to the correct service. Consequently, annotations must be added to the ingress route.
 
-Add the highlighted lines to the *deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml* file:
+Add the highlighted lines to the *:::no-loc text="deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml":::* file. Save your changes.
 
 :::code language="yml" source="../code/deploy/k8s/helm-simple/apigateway/templates/6-ingress-gateway.yaml" highlight="13-15":::
+
+The preceding change instructs Nginx to add a request header named `l5d-dst-override`. The header's value is set dynamically to the destination service's DNS name and port. The `proxy_set_header` and `grpc_set_header` directives are used for HTTP and gRPC requests, respectively.
+
+> [!NOTE]
+> The *:::no-loc text="eShopOnContainers":::* app uses gRPC for inter-service communication within the app. Specifically, gRPC requests are sent between the service mesh's data plane proxies.
+
+#### TODO: We want to explain a bit more about how Linkerd knows whether a service is using gRPC or HTTP. How does it know? (attn: Nish)
 
 ### Deploy the updated Helm charts
 
@@ -197,12 +204,11 @@ The updated pods each have two containers now (`0/2`). One is the service contai
 
 After the redeployed containers are healthy, test the app's behavior with Linkerd. Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service. Complete the following steps to test the retry policy:
 
-1. Select the **.NET FOUNDATION PIN**.
+1. Select the **:::no-loc text=".NET FOUNDATION PIN":::**.
 1. Select the basket icon.
-1. Select **CHECKOUT**.
-1. Go to the **HAVE A DISCOUNT CODE?** text box.
-1. Enter the code *:::no-loc text="FAIL 5 DISC-10":::* and select **APPLY**.
-1. Change the code to *:::no-loc text="DISC-10":::* and select **APPLY**.
+1. Select **:::no-loc text="CHECKOUT":::**.
+1. Enter the discount code *:::no-loc text="FAIL 5 DISC-10":::* and select **:::no-loc text="APPLY":::**.
+1. Change the code to *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     The correct response is received immediately. An error indicating that this coupon has already been redeemed is displayed.
 
