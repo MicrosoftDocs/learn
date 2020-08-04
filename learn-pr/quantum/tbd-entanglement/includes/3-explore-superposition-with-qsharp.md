@@ -34,8 +34,7 @@ the state of the qubit register.
 To add the library, we open `Microsoft.Quantum.Diagnostic` in the namespace:
 
  ```qsharp
-     namespace ExploringSuperposition{
-     
+     namespace ExploringSuperposition {
          open Microsoft.Quantum.Canon;
          open Microsoft.Quantum.Intrinsic;
          open Microsoft.Quantum.Diagnostics;
