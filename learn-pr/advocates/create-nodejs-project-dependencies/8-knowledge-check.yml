@@ -46,12 +46,12 @@ quiz:
         - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"*\"`"
           isCorrect: false
           explanation: "This answer is incorrect. This code will update the dependency to the latest possible version."
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: \"<library>\": \"1.x.0\""
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.x.0\"`"
           isCorrect: false
           explanation: "This code will update the dependency to the latest minor version. That's not what you want."
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: \"<library>\": \"1.0.x\""
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"1.0.x\"`"
           isCorrect: true
-        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: \"<library>\": \"^1.0.x\""
+        - content: "Locate the entry in `dependencies` or `devDependencies`. Set the entry to look like this one: `\"<library>\": \"^1.0.x\"`"
           isCorrect: false
     - content: "What are some recommended scripts to set up in a package.json at the start of a project?"
       choices:
