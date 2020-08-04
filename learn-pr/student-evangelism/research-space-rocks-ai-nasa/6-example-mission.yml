@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.research-space-rocks-ai-nasa.6-example-mission
+metadata:
+  title: Explore an example space rock mission
+  description: Get a closer view of an actual NASA rock collection mission
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Explore an example space rock mission
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-example-mission.md)]

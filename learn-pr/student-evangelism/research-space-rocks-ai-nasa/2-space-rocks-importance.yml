@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.research-space-rocks-ai-nasa.2-space-rocks-importance
+metadata:
+  title: Discover the importance of space rocks
+  description: Learn about space rocks
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Discover the importance of space rocks
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-space-rocks-importance.md)]

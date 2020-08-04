@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.4-train-program
+metadata:
+  title: Exercise - Train a neural network to accurately classify space rocks
+  description: Train the artificial intelligence model 
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Train a neural network to accurately classify space rocks
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-train-program.md)]

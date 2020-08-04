@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.research-space-rocks-ai-nasa.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is not a form space rocks can take?"
+    choices:
+    - content: "Meteor"
+      isCorrect: false
+      explanation: "Space rocks can be in this form"
+    - content: "Meteorite"
+      isCorrect: false
+      explanation: "Space rocks can be in this form"
+    - content: "Asteroid"
+      isCorrect: false
+      explanation: "Space rocks can be in this form"
+    - content: "Space Boulder"
+      isCorrect: true
+      explanation: "Correct! This is not a real thing"
+  - content: "If an astronaut sees one black rock surrounded by white rocks, they should only take the black rock. True or False?"
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "This is not the way you should sample space rocks"
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct! They should take a sample of every rock."
+  - content: "What is the goal of the OSIRIS-REx mission?"
+    choices:
+    - content: "Find out about our history"
+      isCorrect: true
+      explanation: "Correct! This is what the mission's goal is"
+    - content: "Find an asteroid suitable to inhabit"
+      isCorrect: false
+      explanation: "Not quite the goal"
+    - content: "Test out a new rocket"
+      isCorrect: false
+      explanation: "Not quite the goal"
+    - content: "Test out a new camera "
+      isCorrect: false
+      explanation: "Not quite the goal"

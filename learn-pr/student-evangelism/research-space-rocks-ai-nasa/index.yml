@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.student-evangelism.research-space-rocks-ai-nasa
+metadata:
+  title: Explore the research of space rocks through AI
+  description: Learn about space rocks
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tools
+  ms.prod: learning-azure
+title: Explore the Research of Space Rocks Through AI
+summary: Learn about space rocks
+abstract: |
+  In this module, you will learn:
+  - What space rocks are and what we do with them
+  - What are the upcoming space exploration missions
+prerequisites: |
+    -none
+iconUrl: https://docs.microsoft.com/media/learn/module.svg
+levels:
+- beginner
+roles:
+- student
+- data-scientist
+products:
+- vs-code
+units:
+- learn.student-evangelism.research-space-rocks-ai-nasa.1-introduction
+- learn.student-evangelism.research-space-rocks-ai-nasa.2-space-rocks-importance
+- learn.student-evangelism.research-space-rocks-ai-nasa.3-space-rocks-earth
+- learn.student-evangelism.research-space-rocks-ai-nasa.4-gather-space-rocks
+- learn.student-evangelism.research-space-rocks-ai-nasa.5-ai-solution
+- learn.student-evangelism.research-space-rocks-ai-nasa.6-example-mission
+- learn.student-evangelism.research-space-rocks-ai-nasa.7-summary
+badge:
+  uid: learn.student-evangelism.research-space-rocks-ai-nasa.badge

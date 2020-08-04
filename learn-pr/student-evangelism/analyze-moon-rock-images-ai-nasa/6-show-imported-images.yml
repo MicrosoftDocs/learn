@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-moon-rock-images-ai-nasa.6-show-imported-images
+metadata:
+  title: Exercise - Display space rock images in a Python Notebook
+  description: Show the images that we just imported
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning.azure
+title: Exercise - Display space rock images in a Python Notebook
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-show-imported-images.md)]
