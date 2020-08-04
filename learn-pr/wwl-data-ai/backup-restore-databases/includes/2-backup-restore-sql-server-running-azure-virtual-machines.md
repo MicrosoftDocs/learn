@@ -6,7 +6,10 @@ A full database backup is a backup of a single database. When the backup is made
 
 A differential backup contains all the database pages that have changed since the last time a full backup was made.
 
-A transaction log backup is not only used to be able to achieve RPO and get to a more granular point in time but clears the transaction log and keeps its size manageable. Transaction log backups can be generated as frequently as every 30 seconds, although that is impractical. It is important to understand how the transaction log works because it impacts not only how the transaction log is backed up, but also how you can do point-in-time recovery using transaction log files.
+A transaction log backup is not only used to be able to achieve RPO and get to a more granular point in time but clears the transaction log and keeps its size manageable. Transaction log backups can be generated as frequently as every 30 seconds, although that is impractical. 
+
+> [IMPORTANT]
+> Understand how the transaction log works because it impacts not only how the transaction log is backed up, but also how you can do point-in-time recovery using transaction log files.
 
 There are other backup options such as copy-only, file, filegroup, partial, and more.
 

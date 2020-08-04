@@ -8,11 +8,11 @@ Combining SQL Server backups with snapshots can potentially cause issues. If sna
 
 "USEVSSCOPYBACKUP"="TRUE"
 
-## Use Local Disks or a Network Share for Backup Files
+## Use local disks or a network share for backup files
 
 As with on premises SQL Server instances, databases can be backed up to disks attached to the VM or to network shares (including the file share in Azure called Azure Files) that SQL Server has access to. If you are backing up to disks local to the VM, ensure that they are not written to the ephemeral storage that is erased upon shutdown or restart. You might also want to make sure that the backups are copied to a second location so as not to create a single point of failure.
 
-## Back Up Databases to and Restore from URL
+## Backup Databases to and restore from URL
 
 Another option is to configure backup to URL for the SQL Server instance installed in the VM. Unlike backups made on premises, backup and restore from URL for an IaaS VM is effectively a local option.
 
@@ -37,7 +37,7 @@ FROM URL = 'https://myacc.blob.core.windows.net/mycontainer/contoso20200327.bak'
 WITH NORECOVERY
 ```
 
-## Automated Backups Using the SQL Server Resource Provider
+## Automated backups using the SQL Server resource provider
 
 Any IaaS VM that has SQL Server installed can use the SQL Server resource provider. One of its options is the ability to configure automated backups so Azure takes care of backing up SQL Server databases. It requires the use of a storage account.
 
@@ -47,6 +47,7 @@ One benefit of implementing backups this way is that you can manage retention ti
 
 The automated backup option is currently only available for Windows Server-based SQL Server installations.
 
-It is important that you choose one method of backing up databases with IaaS-based SQL Server deployments. For example, if you use automated backups, especially with transaction log backups, do not also configure those at the instance level inside the VM. You could cause problems with the log chain with restoring a database if things are uncoordinated, because each log backup clears the log and you must have an entire unbroken chain of log backups in order to do a log restore. For example, if transaction log backups happen inside the guest as well as at the Azure level, you may have to piece together the backups to do a restore.
+> [!IMPORTANT]
+> You choose one method of backing up databases with IaaS-based SQL Server deployments. For example, if you use automated backups, especially with transaction log backups, do not also configure those at the instance level inside the VM. You could cause problems with the log chain with restoring a database if things are uncoordinated, because each log backup clears the log and you must have an entire unbroken chain of log backups in order to do a log restore. For example, if transaction log backups happen inside the guest as well as at the Azure level, you may have to piece together the backups to do a restore.
 
 While the backups can be automated, restores cannot be. You would need to configure and use the restore from URL functionality within SQL Server.
