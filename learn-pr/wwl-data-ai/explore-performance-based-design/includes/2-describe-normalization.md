@@ -74,7 +74,8 @@ The transitive relationship implies that one column in a table is related to oth
 
 While the third normal form is theoretically desirable, it is not always possible for all data. In addition, a normalized database does not always give you the best performance. Normalized data frequently requires multiple join operations to get all the necessary data returned in a single query. There is a tradeoff between normalizing data when the number of joins required to return query results has high CPU utilization, and denormalized data that has fewer joins and less CPU required, but opens up the possibility of update anomalies.
 
-Note that denormalized data is not the same as unnormalized. For denormalization, we start by designing tables that are normalized. Then we can add additional columns to some tables to reduce the number of joins required, but as we do so, we are aware of the possible update anomalies. We then make sure we have triggers or other kinds of processing that will make sure that when we perform an update, all the duplicate data is also updated.
+> [!NOTE]
+> Denormalized data is not the same as unnormalized. For denormalization, we start by designing tables that are normalized. Then we can add additional columns to some tables to reduce the number of joins required, but as we do so, we are aware of the possible update anomalies. We then make sure we have triggers or other kinds of processing that will make sure that when we perform an update, all the duplicate data is also updated.
 
 Denormalized data can be more efficient to query, especially for read heavy workloads like a data warehouse. In those cases, having additional columns may offer better query patterns and/or more simplistic queries.
 
