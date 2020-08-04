@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.resource-manager-template-reuse.3-exercise-use-functions-create-expression
+title: Exercise - Use Azure Resource Manager functions to create expressions
+metadata:
+  title: Exercise - Use Azure Resource Manager functions to create expressions
+  description: Use several Azure Resource Manager functions to create an expression for the unique Azure Storage account name.
+  ms.date: 07/10/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
+azureSandbox: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-exercise-use-functions-create-expression.md)]

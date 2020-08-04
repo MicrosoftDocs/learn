@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check - upgrade SQL Server versions
   description: Knowledge check - upgrade SQL Server versions
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 5
@@ -42,7 +42,7 @@ quiz:
       explanation: "That's incorrect. Availability Groups were not available in SQL Server 2008."
     - content: "SQL Server 2012"
       isCorrect: true
-      explanation: "That's correct. SQL Server 2008 R2 Service Pack 2 is the earliest version of SQL Server that can be upgraded to SQL Server 2019 by using Availability Groups."
+      explanation: "That's correct. SQL Server 2012 is the earliest version of SQL Server that can be upgraded to SQL Server 2019 by using Availability Groups."
     - content: "SQL Server 2016"
       isCorrect: false
       explanation: "That's incorrect. Availability Groups where available version."

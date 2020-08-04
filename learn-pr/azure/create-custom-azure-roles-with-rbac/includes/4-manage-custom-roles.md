@@ -1,4 +1,4 @@
-In this unit, you'll learn who can manage custom Azure roles and how.
+In this unit, you'll learn who can manage Azure custom roles and how.
 
 ## Who can manage custom roles?
 
@@ -16,7 +16,20 @@ Task | Actions | Description
 
 ## Create custom roles
 
-In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure PowerShell.
+In unit 3, you created a custom role by using Azure CLI. You can also create a custom role by using the Azure portal or Azure PowerShell.
+
+### Create custom roles by using the Azure portal
+In the Azure portal, you'd go to the subscription or resource group you want the custom role scope to apply to. Then go to **Access control (IAM)** and select **Add** > **Add custom role**.
+
+:::image type="content" source="../media/4-add-custom-role-portal.png" alt-text="Screenshot that shows Add custom role option under Add button.":::
+
+You can choose to clone an existing role or start from scratch.
+
+:::image type="content" source="../media/4-clone-role.png" alt-text="Screenshot of clone role radio button selected and Virtual Machine Contributor as role to clone.":::
+
+With either selection, you can edit the permissions, scopes, and the resulting JSON.
+
+### Create custom role by using Azure PowerShell
 
 The steps involved to create a role by using Azure PowerShell are similar to what we covered in unit 2 and 3. After you defined the custom role in a JSON file, you used the following command in Azure CLI to create the custom role:
 
@@ -32,7 +45,7 @@ To create the role in Azure PowerShell, you run the following command:
 
 ## Update custom roles
 
-To update a custom role, you use Azure CLI or Azure Powershell. You'll walk through the specific steps to update your custom role definition  in the next unit. But, in general, after you update the JSON file with your changes, you'd run one of the following commands.
+To update a custom role, you use Azure CLI or Azure PowerShell. You'll walk through the specific steps to update your custom role definition  in the next unit. But, in general, after you update the JSON file with your changes, you'd run one of the following commands.
 
 To update the custom role by using Azure CLI, run the following command with the path to the JSON file that has your updates.
 
@@ -121,7 +134,7 @@ You can delete a custom role by using the Azure portal, Azure CLI, or Azure Powe
 
 In the Azure portal, you'd go to the subscription, resource group, or resource the custom role's scope applies to. Then go to **Access control (IAM)** > **Roles**. To find the role, select **Type** > **CustomRole**. 
 
-![Screenshot that shows custom roles selected from drop-down list](../media/5-custom-roles.png)
+![Screenshot that shows custom roles selected from drop-down list.](../media/5-custom-roles.png)
 
 Select the role and **Remove**.
 

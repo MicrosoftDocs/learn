@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.unsupervised-learning-clustering.2-load-prepare-data
+title: Load and prepare the data
+metadata:
+  title: Load and prepare the data
+  description: Load and prepare your data.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-load-prepare-data.md)]

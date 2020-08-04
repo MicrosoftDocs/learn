@@ -23,8 +23,8 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Settings | Values |
     |  -- | -- |
     | Subscription | Ensure **Concierge Subscription** is selected |
-    | Resource group | **[sandbox resource group name]** |
-    | Virtual machine name | **myVm** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Virtual machine name | **myVM** |
     | Location | **(US) East US**|
     | Image | **Windows Server 2019 Datacenter**|
     | Size | Standard D2s v3|
@@ -57,10 +57,10 @@ In this task, we will connect to our new virtual machine using RDP.
 
 2. On the virtual machine **Overview** blade, click the **Connect** button.
 
-    ![Screenshot of the virtual machine properties with the Connect button highlighted.](../media/virtual-machine-properties.png)
+    :::image type="content" source="../media/virtual-machine-properties.png" alt-text="Screenshot of the virtual machine properties with the Connect button highlighted.":::
 
     > [!NOTE]
-    > The following directions tell you how to connect to your virtual machine from a Windows computer. On a Mac, you need an RDP client such as this Remote Desktop Client from the Mac App Store and on a Linux computer you can use an open source RDP client.
+    > The following directions tell you how to connect to your virtual machine from a Windows computer. On a Mac, you need an RDP client such as [this Remote Desktop Client from the Mac App Store](https://apps.apple.com/us/app/microsoft-remote-desktop/id1295203466) and on a Linux computer you can use an open source RDP client.
 
 2. In the **Connect to virtual machine** page, keep the default options to connect with the public IP address over port 3389 and click **Download RDP File**.
 
@@ -96,11 +96,11 @@ In this task, install the Web Server role on the server and ensure the default I
 
     ![Screenshot of the windows PowerShell command prompt with the command Install-WindowsFeature -name Web-Server -IncludeManagementTools successfully completed and output stating it was successful.](../media/powershell-command-prompt.png)
 
-4. **Fail in Sandbox** Back in the portal, navigate back to the **Overview** blade of myVM and, use the **Click to clipboard** button to copy the public IP address of myVM, open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
+4. Back in the portal, navigate back to the **Overview** blade of myVM and, use the **Click to clipboard** button to copy the public IP address of myVM, open a new browser tab, paste the public IP address into the URL text box, and press the **Enter** key to browse to it.
 
-    ![Screenshot of the Azure portal virtual machine property pane with the IP address copied.](../media/azure-portal-virtual-machine-property-pane.png)
+    :::image type="content" source="../media/azure-portal-virtual-machine-property-pane.png" alt-text="Screenshot of the Azure portal virtual machine property pane with the IP address copied.":::
 
-5. **Fail in Sandbox** The default IIS Web Server welcome page will open.
+5. The default IIS Web Server welcome page will open.
 
     ![Screenshot of the default IIS web server welcome page being accessed via the public ip address in a web browser.](../media/web-server-welcome-page.png)
 
@@ -108,4 +108,6 @@ Congratulations! You have created a web server that is accessible via its public
 
 
 > [!NOTE]
-> To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
+> **Non Sandbox** To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

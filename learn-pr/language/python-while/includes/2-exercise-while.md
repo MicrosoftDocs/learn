@@ -118,7 +118,7 @@ Both `break` and `else` are optional statements in the `while` looping structure
 
 ### Step 4: Update the code example to handle the case where the user enters nothing by using the continue statement
 
-Let's expand our previous example. Let's make sure that the player doesn't enter an empty string. In other words, if the user selects Enter without entering any other keystrokes (or merely selects the Spacebar), we want to ignore that entry and prompt the user again to enter a number.
+Let's expand our previous example. Let's make sure that the player doesn't enter an empty string. In other words, if the user selects Enter without entering any other keystrokes (or merely selects the Spacebar), we want to ignore that entry and prompt the user again to enter a name.
 
 ```python
 import random 

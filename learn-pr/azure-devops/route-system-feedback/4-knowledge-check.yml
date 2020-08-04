@@ -30,13 +30,13 @@ quiz:
 
   - content: 'Which of these is an easy way to get full observability across all of your Azure resources?'
     choices:
-    - content: Combine your Azure resources in a resource group and use Application Insights to monitor the health and performance across all of you application resources.
+    - content: Combine your Azure resources in a resource group and use Application Insights to monitor the health and performance across all of your application resources.
       isCorrect: false
       explanation: "Application Insights is a good way to continuously monitor your application's health and performance. However, it does not monitor your infrastructure." 
-    - content: Combine your Azure resources in a resource group and use Azure Monitor for resource groups to monitor the health and performance across all of you application resources.
+    - content: Combine your Azure resources in a resource group and use Azure Monitor for resource groups to monitor the health and performance across all of your application resources.
       isCorrect: true
       explanation: "Azure Monitor for resource groups provides a basic way to keep track of the health and performance of your entire application and enables you to drill down into individual components so that you can troubleshoot failures."
-    - content: "Combine your Azure resources in two resource groups, one for the application and one for the infrastructure, and use Application Insights and Infrastructure Monitor for resource groups to monitor the health and performance across all of you application resources."
+    - content: "Combine your Azure resources in two resource groups, one for the application and one for the infrastructure, and use Application Insights and Infrastructure Monitor for resource groups to monitor the health and performance across all of your application resources."
       isCorrect: false
       explanation: "Application Insights is a good way to continuously monitor your application's health and performance. However, it doesn't monitor infrastructure and there is no such product as Infrastructure Monitor for resource groups."
 
@@ -52,14 +52,3 @@ quiz:
       isCorrect: true
       explanation: "Smart Detection provides automatic alerts that adapt to your app's normal patterns of telemetry and trigger when there's something outside the usual pattern."
 
-  - content: 'Which of these tools provides a way to create log data visualizations?'
-    choices:
-    - content: Power BI.
-      isCorrect: false
-      explanation: "Power BI enables you to create business-centric dashboards and reports, as well as reports analyzing long-term KPI trends. You can import the results of a log query into a Power BI dataset but it does not support log data directly." 
-    - content: Azure Monitor Views.
-      isCorrect: true
-      explanation: Azure Monitor Views enables you to create custom visualizations with log data. They are used by monitoring solutions to present the data they collect.
-    - content: Grafana.
-      isCorrect: false
-      explanation: Grafana is an open platform that provides operational dashboards using metrics data, but not log data.

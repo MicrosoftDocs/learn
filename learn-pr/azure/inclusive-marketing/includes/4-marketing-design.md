@@ -16,7 +16,7 @@ What we market outside of a company, needs to be a 100% authentic reflection of 
 
 ### Design for the edges
 
-This concept isn't limited to product design, it extends to marketing and can be brought to life through storytelling. The Surface example with Maurice Harris’s work also depicts an individual who rose to success despite the adversity he faced being a floral sculpture artist and a black, gay man. He's representative of intersectionality and success. He exemplifies someone who is doing the extraordinary things that align to finding your authentic voice and being an underdog who rose up. By seeking and understanding the edges, design for one becomes a design for all. Binding people together through common human values.
+This concept isn't limited to product design, it extends to marketing and can be brought to life through storytelling. The Surface example with Maurice Harris’s work also depicts an individual who rose to success despite the adversity he faced being a floral sculpture artist and a Black, gay man. He's representative of intersectionality and success. He exemplifies someone who is doing the extraordinary things that align to finding your authentic voice and being an underdog who rose up. By seeking and understanding the edges, design for one becomes a design for all. Binding people together through common human values.
 
 ### Benevolent brand attribute
 

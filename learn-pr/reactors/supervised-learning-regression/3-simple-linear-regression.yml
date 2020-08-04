@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.supervised-learning-regression.3-simple-linear-regression
+title: Simple linear regression
+metadata:
+  title: Simple linear regression
+  description: Try simple linear regression.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-simple-linear-regression.md)]

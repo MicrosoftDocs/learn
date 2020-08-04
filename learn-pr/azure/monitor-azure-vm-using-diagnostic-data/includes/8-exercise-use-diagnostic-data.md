@@ -18,7 +18,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Select the resource
 
-1. Under **RESOURCE**, click the **Select** button.
+1. Under **Scope**, click the **Select resource** link.
 1. In the **Filter by resource type** field, select **Virtual machines**.
 1. Under **Resource**, select **monitored-linux-vm**.
 
@@ -28,7 +28,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Create the condition
 
-1. Under **CONDITION**, select **Add**.
+1. Under **Condition**, select **Select condition** link.
 1. Under **Signal name**, select **Percentage CPU**.
 
     ![Screenshot that shows "Percentage CPU" selected as the signal name](../media/8-configure-signal-logic-percentage-cpu.png)
@@ -49,10 +49,8 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 ### Add an action
 
-1. Under **ACTIONS GROUPS (optional)**, select **Create**.
-
-    ![Screenshot that shows the "Create action group" button highlighted](../media/8-create-action-group.png)
-
+1. Under **Action group**, select **Select action group**.
+1. Select **Create action group**.
 1. Use the following values:
 
    ![Screenshot that shows the "Add action group" pane filled out](../media/8-add-action-group-pane.png)
@@ -72,16 +70,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
 1. Select **OK**.
 1. In the **Add action group** pane, select **OK**.
-1. Under **ACTIONS GROUPS (optional)**, select **Add**.
-
-   ![Screenshot that shows the "Add" button in the "Create rule" pane](../media/8-select-action-group-button.png)
-
-1. Under **Action group name**, select **Email alerts**.
-
-   ![Screenshot that shows the action group for email alerts selected](../media/8-attach-action-group-to-rule.png)
-
-1. Click **Select**.
-1. For **Alert Details**, use the following values:
+1. For **Alert rule details**, use the following values:
 
    ![Screenshot that shows the fields for alert details](../media/8-alert-details.png)
 

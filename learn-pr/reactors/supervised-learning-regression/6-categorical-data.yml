@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.supervised-learning-regression.6-categorical-data
+title: Categorical data
+metadata:
+  title: Categorical data
+  description: Analyze categorical data with submodels.
+  ms.date: 05/15/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+  show_latex: true
+durationInMinutes: 25
+content: |
+  [!include[](includes/6-categorical-data.md)]

@@ -21,8 +21,6 @@ summary: |
   - Choose and implement an appropriate deployment pattern to smoothly roll out new features to your users.
   - Extend pipelines to add support for different deployment targets, such as Azure Functions.
   - Automate Docker and multi-container Kubernetes deployments with Azure Pipelines.
-
-  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 prerequisites: |
   - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
   - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)

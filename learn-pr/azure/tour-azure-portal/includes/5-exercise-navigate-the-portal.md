@@ -14,7 +14,7 @@ The Azure portal has several features and services available; let's look at some
 
 1. Select **Virtual machines**. If you don't see it, use the search box. The **Virtual Machines** pane appears. You haven't created any virtual machines so there are no results.
 
-1. Select **+ Add**. The **Create a virtual machine** pane appears.
+1. Select **+ Add** > **Virtual machine**. The **Create a virtual machine** pane appears.
 
 1. Select the **X** in the top right-hand corner to close the **Create a virtual machine** pane.
 
