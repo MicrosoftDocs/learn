@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-paas-resources-using-automated-methods
 metadata:
   title: Manage Azure PaaS resources using automated methods
   description: "Explore SQL automation for Azure SQL Database and Open Source databases. Configure elastic jobs and Azure Policy."
-  ms.date: 08/05/2020
+  ms.date: 08/06/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial

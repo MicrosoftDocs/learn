@@ -12,7 +12,7 @@ In this code sample on the second line, you can see that the list of resource gr
 
 Tags are also included in Azure billing information, so tagging by cost center means it can be much easier for management to break down the Azure charges. Tags are in the overview section of the blade for every Azure Resource. To add tags to a resource using the Azure portal, click tags, and enter the key and value for your tag. Click save after you apply the tags to your resources.
 
-:::image type="content" source="../media/module-66-automation-final-17.png" alt-text="Adding tags to an Azure SQL Database":::
+[![Adding tags to an Azure SQL Database](../media/module-66-automation-final-17.png)](../media/module-66-automation-final-17.png#lightbox)
 
 You can also use PowerShell or the CLI to add tags. The PowerShell example is below:
 
