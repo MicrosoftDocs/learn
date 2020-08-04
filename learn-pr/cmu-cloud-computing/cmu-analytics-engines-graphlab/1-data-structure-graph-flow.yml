@@ -20,10 +20,11 @@ quiz:
 # Did I Get This block question 1   
 # Original course uses interactive GUI not available in YAML. Using sample choices for now.
 # Original course has a text field for progress difference value. For yaml, made choices of possible values. 
-  - content: "Complete the following sentences: <br><br>
-  Graph-parallel problems assume problems are modeled as ____________.<br>
-  Computation in GraphLab is represented as ____________.<br>
-  Data dependencies or communications are represented as ____________."
+  - content: |
+      Complete the following sentences: <br><br>
+      Graph-parallel problems assume problems are modeled as ____________.<br>
+      Computation in GraphLab is represented as ____________.<br>
+      Data dependencies or communications are represented as ____________.
     choices:
     - content: "graphs, vertices, edges"
       isCorrect: true
@@ -70,10 +71,11 @@ quiz:
 # Did I Get This block question 4
 # Quiz uses image "quiz-units-2-and-4-vertices-graph.png"
 # LaTeX dollar sign syntax not supported in 'explanation' property. Using HTML 'sub' subscript syntax.
-  - content: "Assume the following graph: <br><br>
+  - content: |
+      Assume the following graph: <br><br>
       <img src=./media/quiz-units-2-and-4-vertices-graph.png></img> <br><br>
       Assume that the scope of a vertex $v$ in this graph is defined as the immediate neighboring vertices of $v$. <br>
-      Which vertices have the largest scope?"
+      Which vertices have the largest scope?
     choices:
     - content: "$V_{5}$"
       isCorrect: false
