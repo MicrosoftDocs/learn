@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/06/2020
+  ms.date: 08/07/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -40,15 +40,15 @@ quiz:
       explanation: "That's incorrect. The Failover Cluster feature can be enabled using Server Manager, or via PowerShell."
   - content: "What Azure feature lets you test disaster recovery without bringing down your production system?"
     choices:
-    - content: "ASR"
+    - content: "Azure Site Recovery"
       isCorrect: true
-      explanation: "That's correct. One major benefit of ASR is that you can test disaster recovery without needing to bring down production."
+      explanation: "That's correct. One major benefit of Azure Site Recovery is that you can test disaster recovery without needing to bring down production."
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: "That's incorrect. One major benefit of ASR is that you can test disaster recovery without needing to bring down production."
+      explanation: "That's incorrect. One major benefit of Azure Site Recovery is that you can test disaster recovery without needing to bring down production."
     - content: "Azure Load Balancer"
       isCorrect: false
-      explanation: "That's incorrect. One major benefit of ASR is that you can test disaster recovery without needing to bring down production."
+      explanation: "That's incorrect. One major benefit of Azure Site Recovery is that you can test disaster recovery without needing to bring down production."
   - content: "What feature creates a replica of the database in another region that is synchronously kept up to date.?"
     choices:
     - content: "Failover group"
