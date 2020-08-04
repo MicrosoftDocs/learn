@@ -130,7 +130,7 @@ The `DumpMachine` function outputs a table with the information characterizing t
 
    ```
 
-   After applying `H` we throw the qubit into the superposition state $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$.
+   After applying `H` we prepare the qubit into the superposition state $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$.
 
 1. ```output
        Qubit after the measurement:
