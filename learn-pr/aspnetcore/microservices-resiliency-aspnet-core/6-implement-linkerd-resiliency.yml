@@ -5,7 +5,7 @@ metadata:
   description: Configure resiliency in your microservices app with Linkerd.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 07/08/2020
+  ms.date: 08/04/2020
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Exercise - Implement resiliency with Linkerd

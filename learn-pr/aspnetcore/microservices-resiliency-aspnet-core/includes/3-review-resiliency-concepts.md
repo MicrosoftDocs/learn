@@ -10,7 +10,7 @@ There are two fundamental approaches to resiliency: code and infrastructure. Eac
 
 ### Code-based resiliency
 
-To implement code-based resiliency, this module uses [Polly](https://github.com/App-vNext/Polly)&mdash;a .NET library for resilience and transient failure handling. It's used to build failure-handling code with a fluent, easy-to-understand syntax in a thread-safe manner. There are several [resilience policies](https://github.com/App-vNext/Polly#resilience-policies) that define failure-handling behavior. In this module, you'll apply the *Retry* and *Circuit Breaker* policies to HTTP client operations.
+To implement code-based resiliency, this module uses [Polly](https://github.com/App-vNext/Polly)&mdash;a .NET library for resilience and transient failure handling. It's used to build failure-handling code with a fluent, easy-to-understand syntax in a thread-safe manner. There are several [resilience policies](https://github.com/App-vNext/Polly#resilience-policies) that define failure-handling behavior. In this module, you'll apply the Retry and Circuit Breaker policies to HTTP client operations.
 
 Resiliency with Polly is defined in code, but startup-time configuration for some parameters is supported.
 

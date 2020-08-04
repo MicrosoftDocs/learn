@@ -171,7 +171,7 @@ Complete the following steps to deploy the changes that you've implemented:
     ```
 
     > [!IMPORTANT]
-    > If the output is blank, this is because the variable isn't defined. Run the following command to set the variable using output from the setup script and then run the `echo` command again to verify:
+    > If the output is blank, it's because the `ESHOP_REGISTRY` variable isn't defined. Run the following command to set the variable using output from the setup script and then run the `echo` command again to verify:
     >
     > ```bash
     > eval $(cat ~/clouddrive/aspnet-learn/create-acr-exports.txt)
@@ -236,7 +236,7 @@ Place an item in the shopping bag and begin the checkout procedure. Repeat the e
 
 ### Circuit Breaker policy
 
-To test the Circuit Breaker policy, you'll configure the code for 20 failures. Accordingly, you'll use the code *:::no-loc text="FAIL 20 DISC-10":::*:
+To test the Circuit Breaker policy, you'll configure the code for 20 failures. Accordingly, you'll use the discount code *:::no-loc text="FAIL 20 DISC-10":::*:
 
 :::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure" border="true" lightbox="../media/5-implement-polly-resiliency/configure-severe-failure.png":::
 
