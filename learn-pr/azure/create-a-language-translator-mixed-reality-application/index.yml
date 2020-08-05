@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.create-a-language-translator-mixed-reality-application
+metadata:
+  title: Create a language translator mixed reality application
+  description: Create a language translator application for your Mixed Reality device (WMR, HoloLens 2 etc.) using Cognitive Services.
+  ms.date: 08/05/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a language translator mixed reality application
+summary: >
+  Create a language translator application for your Mixed Reality device (WMR, HoloLens 2 etc.) using Cognitive Services.
+abstract: | 
+  By the end of this module you will be able to:
+  - Configure a Unity project for Azure Speech Services
+  - Integrate Azure Speech Services with a Windows Mixed Reality application
+  - Use speech recognition to translate text
+prerequisites: |
+  - A Unity project configured for Windows Mixed Reality development
+  - The Mixed Reality Toolkit imported and configured into a Unity project
+  - A computer connected to the Internet
+  - Access to a microphone for audio capture
+  - Basic familiarity of Unity - Unity interface, create a scene, import a package and add GameObjects to a scene
+iconUrl: /learn/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- developer
+products:
+- vs
+units:
+- learn.create-a-language-translator-mixed-reality-application.1-introduction
+- learn.create-a-language-translator-mixed-reality-application.2-overview-of-speech-translation
+- learn.create-a-language-translator-mixed-reality-application.3-exercise-create-an-azure-speech-resource
+- learn.create-a-language-translator-mixed-reality-application.4-configure-capabilities-and-the-configuration-profile
+- learn.create-a-language-translator-mixed-reality-application.5-exercise-configure-capabilities-and-the-configuration-profile
+- learn.create-a-language-translator-mixed-reality-application.6-create-the-speech-translation-script
+- learn.create-a-language-translator-mixed-reality-application.7-exercise-create-the-speech-translation-script
+- learn.create-a-language-translator-mixed-reality-application.8-knowledge-check
+- learn.create-a-language-translator-mixed-reality-application.9-summary
+badge:
+  uid: learn.undefined.badge
