@@ -1,32 +1,32 @@
-Node.js comes with many core libraries handling anything from managing files to HTTP to compressing files and more. There is however a huge ecosystem out there with third-party libraries. These libraries can be easily installed and used in your application thanks to the NPM, the Node Package Manager. 
+Node.js comes with many core libraries that handle everything from managing files to HTTP to compressing files and more. There is, however, a huge ecosystem of third-party libraries. Thanks to npm, Node Package Manager, you can easily install these libraries and use them in your application. 
 
-Node.js and its ecosystem use the word *dependency* a lot. So what is a dependency? A dependency is a third-party library, a piece of reusable code that accomplishes something and can be added to your application. The third-party library is something your application *depends on* to function, hence calling it a dependency.
+Node.js and its ecosystem use the word *dependency* a lot. A dependency is a third-party library, a piece of reusable code that accomplishes something and can be added to your application. The third-party library is something your application *depends on* to function, hence the word *dependency*.
 
-The third-party library can be thought of as a package and stored on a registry. A package is therefore a collection of files needed to run one or many modules. A package consist of one more many modules you can import into your application so you can take advantage of its features.
+The third-party library can be thought of as a package and stored in a registry. So a package is a collection of files needed to run one or many modules. A package consists of one more many modules that you can import into your application so you can take advantage of its features.
 
-## How do I know if I need a package
+## Determine whether you need a package
 
-So how do you know if you need a package for your project? That's a complicated question that relies on a few factors namely:
+So how do you know if you need a package for your project? That's a complicated question that involves a few factors:
 
-- **Should I write this code**, asking yourself if you are dealing with an area like security, for example, and you are trying to implement authentication and authorization. It's a topic that is important to *get right* to protect your data and your customer's data. There are standard patterns out there and libraries used by many developers. These libraries have implemented features you most likely will always need and are good at patching issues as they arise. You should use such libraries instead of reinventing the wheel. The main reason is that you are likely to do a less good job of writing it yourself as there are so many edge cases that need to be considered.  
-- **Saving time**, you could probably build most things yourself like utility libraries or UI component libraries but it takes time. Even if the end result is comparable to what's out there, it's not a good use of your time to *reinvent the wheel*, if you don't have to.
-- **Maintenance**, all libraries, and apps need maintaining sooner or later. Maintaining it means adding new features but also correcting bugs. Is it a good use of your or your teams time to maintain a library or is it better to let an OSS (Open Source Software) team handle it?
+- **Getting better code**. Ask yourself if you're dealing with a task like security, for example, and are trying to implement authentication and authorization. It's a task that you need to *get right* to protect your data and your customer's data. There are standard patterns out there and libraries used by many developers. These libraries implement features you most likely will always need. And issues are patched as they arise. You should use such libraries instead of reinventing the wheel. The main reason is that you're not likely to do as good a job of writing the code yourself because there are so many edge cases that you'd need consider.  
+- **Saving time**. You could probably build most things yourself, like utility or UI component libraries. But it takes time. Even if the end result is comparable to what's out there, it's not a good use of your time to replicate the work of writing this code if you don't have to.
+- **Maintenance**. All libraries and apps need maintenance sooner or later. Maintenance involves adding new features and correcting bugs. Is it a good use of your or your team's time to maintain a library? Or is it better to let an open-source software team handle it?
 
-## Adopting a package
+## Evaluate a package
 
-Before you install a library, you might want to inspect what dependencies it relies on. The reason these dependencies might be interesting is that it might encourage or deter you from using the package. Here are some factors worth considering when selecting a dependency for your project:
+Before you install a library, you might want to inspect the dependencies it relies on. These dependencies might encourage you to use the package, or they might deter you. Here are some factors to consider when you select a dependency for your project:
 
-- **Size**, the sheer number of dependencies might put together become a large footprint. If you are on a limited bandwidth or have other hardware limitations, this fact might be a concern.
-- **Licensing**, for a company, licensing might be interesting if its producing software they intend to sell. Having a license on a third-party library that doesn't allow for the library to be included in software you intend to sell, means the company can be put you in a bad legal situation.
-- **Actively maintained**, if your package relies on a dependency that has been deprecated or hasn't seen any updates for a long this fact might be a red flag.
+- **Size**. The number of dependencies could create a large footprint. If you're on a limited bandwidth or have other hardware limitations, this factor could be a concern.
+- **Licensing**. Licensing might be a factor if you're producing software that you intend to sell. If you have a license on a third-party library, and the creator of the library doesn't allow it to be included in software that's for sale, the creator could put you in a bad legal situation.
+- **Active maintenance**. If your package relies on a dependency that's deprecated or hasn't been updated for a long time, that could be a problem.
 
-You can learn more about a package prior to install by navigating to the URL `https://www.npmjs.com/package/<package name>`. This link will take you to a detailed page for that package. To check dependencies, select the `dependencies` tab section and see how many and which other packages it relies on to function. Another way to achieve a similar result is to type the NPM command `npm view <package name>`.
+You can learn more about a package before installing it by going to `https://www.npmjs.com/package/<package name>`. This URL will take you to a detailed page for the package. Select the **Dependencies** tab to see how many packages and which packages it relies on to function. Another way to achieve a similar result is to run this npm command: `npm view <package name>`.
 
-When it comes to the listed dependencies, the sheer number might not tell the whole truth. If you actually download a package, you might end up with a `node_modules` folder containing thousands of packages. Why is that? Every package has a list of dependencies and to ensure you can use a package, all dependencies are crawled and downloaded when you hit the `npm install <package name>` command.
+As for the listed dependencies, the number might not tell the whole truth. If you download a package, you might end up with a node_modules folder that contains thousands of packages. Why is that? Every package has a list of dependencies. To ensure you can use a package, all dependencies are crawled and downloaded when you run the `npm install <package name>` command.
 
 ## Install a package
 
-The way you install a package is by using a built-in command-line tool called NPM. By invoking the  command in a terminal, you can add a package to your Node.js project. A typical install command look like so `npm install <name of package>`. So what happens when you type the `install` command? The command-line tool connects to a global registry and fetches the code and places it in a `node_modules` directory of your project. After install, your project directory looks something like so:
+You install a package by using a built-in command-line tool called npm. You can add a package to your Node.js project by invoking a command in the terminal. A typical installation command looks like this one: `npm install <name of package>`. When you run the `install` command, the command-line tool connects to a global registry, fetches the code, and places it in a node_modules folder for your project. After the installation, your project directory looks something like this one:
 
 ```bash
 -| node_modules/
@@ -34,70 +34,72 @@ The way you install a package is by using a built-in command-line tool called NP
 ------| <files included in the dependency>
 ```
 
-## Where to find a package
+## Find a package
 
-Individual developers might use the global registry at NPM to find and download packages they need for their apps. A company might have a whole strategy in place for what packages are ok to use and where to find them. For that reason, packages might live in many different sources. Some of these sources might be publicly available and some might be restricted and only accessible for employees of a specific company. Here's a list of where packages might reside:
+Individual developers might use the global registry at npm to find and download packages they need for their apps. A company might have a strategy in place for what packages are OK to use and where to find them. Packages might be located in many different places. Some of these sources might be publicly available. Some might be restricted and accessible only to employees of a specific company. Here are some places where packages might reside:
 
-- **Registries**, an example of a registry might be a global registry like the NPM one. It is possible to host your own registries that can be either private or public.
-- **Repositories**, instead of pointing to a registry it's possible to point out a GitHub URL and install the package from there.
-- **Files**, a package can be installed from a local folder or zipped file. Installing from a package is a common scenario when you are trying to develop your own Node.js libraries and want to test it locally or you for some reason don't want to use a registry.
-- **Directory**, you can install right from a directory as well.
+- **Registries**. An example of a registry might be a global registry like the npm registry. You can host your own registries that can be either private or public.
+- **Repositories**. Instead of pointing to a registry, it's possible to point to a GitHub URL and install a package from there.
+- **Files**. You can install a package from a local folder or zipped file. Installation from a package is common when you're trying to develop your own Node.js libraries and want to test the package locally or for some reason don't want to use a registry.
+- **Directories**. You can install right from a directory as well.
   
-### The NPM registry and tool
+### The npm registry and tool
 
-When you type `npm install <name of dependency>`, Node.js goes to a global registry called the NPM registry and looks for the code to download. It's located at `http://npmjs.org` and is page where you can browse for packages as well, if you visit the page using a browser. The site holds packages, zipped versions of source code.  Every package has a dedicated website you can go to, to learn more on where the source code resides, and numerous other information like metrics on downloads and maintenance for example.
+When you run `npm install <name of dependency>`, Node.js goes to a global registry called the npm registry and looks for the code to download. It's located at `http://npmjs.org`. You can browse this page for packages as well, if you visit it by using a browser. The site holds packages: zipped versions of source code. Every package has a dedicated website you can go to. On these sites, you can learn more about where the source code resides and find other information, like metrics on downloads and information about maintenance.
 
-### NPM commands
+### npm commands
 
-So far you've learned how you can install dependencies using the NPM tool but it can do a lot more. In fact, the NPM command-line tool has quite a few commands. The commands help you with an array of different tasks like installing packages to help you author your package, to initialize a Node.js project and more. It's not necessary to know all the commands in detail. Starting out with Node.js you are more likely to only use a subset of all commands. As you expand your usage of Node.js, you might use more and more commands within a variety of categories.
+So far, you've learned how you can install dependencies by using the npm tool. But this tool can do a lot more. The npm command-line tool has quite a few commands. The commands help you with tasks like installing packages, authoring packages, and initializing Node.js projects. You don't need to know all the commands in detail. When you start out with Node.js, you're likely to use only a subset of the commands. As you expand your use of Node.js, you might use more and more commands from a variety of categories.
 
-It's helpful to think of the commands as belonging to different categories to remember what they do:
+To help you remember what the commands do, it helps to think of them as belonging to categories:
 
-- **Managing dependencies**, there are a number of commands covering install, uninstall, and cleaning up after package installs. Additionally there are commands for updating packages as well.
-- **Run scripts**, the NPM tool is capable of helping you manage different flows in your application development. Examples of application flows are running tests, building your code, or running quality improving tools to *lint* your code.
-- **Configure environment**, there are many things you can configure like where your installs end up but also from where packages should be installed. It's common that you might have  a setup where you want packages both from the global NPM registry but also from a company-specific registry.
-- **Package authoring and publishing**, there are several commands that will help you with tasks such as create a compressed package and also help you in pushing said package to a registry.
+- **Manage dependencies**. There are a number of commands that cover installation, removal, and cleaning up after package installations. There are commands for updating packages as well.
+- **Run scripts**. The npm tool can help you manage flows in your application development. Examples of application flows are running tests, building code, or running quality improvement tools to lint your code.
+- **Configure the environment**. There are many things you can configure, like where your installations end up and where packages should be installed from. It's common to have a setup that allows you to install packages from the global npm registry and also from a company-specific registry.
+- **Author and publish packages**. There are several commands that can help you with tasks like creating a compressed package and pushing the package to a registry.
 
-Should you want a full detailed list of all the commands you can type `npm --help` in the terminal.
+If you want a detailed list of all commands, enter `npm --help` in the terminal.
 
-## Production vs development dependencies
+## Production vs. development dependencies
 
-We think of dependencies as belonging to one of two different categories:
+Dependencies belong to one of two categories:
 
-- **Production dependencies**, this type of dependency represents dependencies we need to run our application in production. Examples of content in this section are a web framework like, with which you can build web application.
-- **Development dependencies**, this section represents dependencies we only need when we develop our application. Think of these dependencies as you would scaffolding for a building, when you are done building, you don't need them anymore. Examples of such dependencies are test libraries, linting tools, or bundling tools. Nonetheless, these dependencies are an important part of ensuring our application works well, but we don't need to ship our application with them.
+- **Production dependencies**. Production dependencies are dependencies that you need to run an application in production. Examples include a web framework with which you can build a web application.
+- **Development dependencies**. Development dependencies are dependencies that you need only when you develop your application. Think of these dependencies as you'd think of scaffolding for a building. When you're done building, you don't need them anymore. Examples of these dependencies are test libraries, linting tools, or bundling tools. These dependencies are an important part of ensuring your application works well, but you don't need to ship your application with them.
 
-This separation is not only conceptual. The NPM tool writes to a manifest file by adding entries to it when you download a dependency. The tool allows you to differ between the two types of dependencies by adding a flag to the install command. What this flag does it to place the name of a dependency and its version, in a section called `dependencies` or `devDependencies`. This behavior gives you a clear mental separation of what dependencies you have in your application and what type they are. Regardless of what type of dependency you installed, it still gets stored in the `node_modules` directory but the manifest file is where it differs.  
+This separation isn't just conceptual. The npm tool writes to a manifest file by adding entries to it when you download dependencies. The tool allows you to differentiate between the two types of dependencies by adding a flag to the installation command. The flag places the name of the dependency and its version in a section called `dependencies` or `devDependencies`. This differentiation gives you a clear mental separation of the dependencies you have in your application and what type they are. Whichever type of dependency you install, it's stored in the node_modules directory. The flag affects only the manifest file.  
 
-Additionally this separation of different types of dependencies is built into the NPM command-line tool as well. By specifying the `--production` flag when installing, you ensure that only `dependencies` are being installed. This flag is used by for example CI/CD pipelines to ensure only the needed parts for the app to run is installed.
+This separation of different types of dependencies is built into the npm command-line tool as well. If you specify the `--production` flag when you install a dependency, only `dependencies` will be installed. For example, this flag is used by CI/CD pipelines to ensure that only the dependencies needed to run the app are installed.
 
 ### How to install a package
 
-A normal dependency meant to be used as part of your application, is installed using the `npm install <dependency name>`. The developer dependency is something that's not meant to be shipped to production. The way to install a developer dependency is by adding the flag `--save-dev`.
+You use the `npm install <dependency name>` command to install a normal dependency that's meant to be used as part of your application. The developer dependency is something that's not meant to be shipped to production. To install a developer dependency, add the `--save-dev` flag.
 
-There's also packages that you can install *globally*. These packages are not something that's usually not meant to be imported into your project. For that reason, many global packages are CLI tools. Some of these packages allow themselves to be imported however like `http-server` for example.
+There are also packages that you can install *globally*. These packages are usually not meant to be imported into your project. For that reason, many global packages are CLI tools. Some of these packages do allow themselves to be imported, like `http-server`.
 
-Installing something globally means that it's not installed in a project's `node_modules` directory but a machine-specific directory so it's available for all Node.js projects on that machine. The way to install such packages is by adding the flag `-g` to the `install command` so the command would look like so instead `npm install <dependency name> -g`.
+If you install something globally, it's not installed in a project's node_modules folder. Instead, it's installed in a computer-specific directory, so it's available for all Node.js projects on the computer. To install a global package, add the `-g` flag to the `install command`, so the command looks like this one: `npm install <dependency name> -g`.
 
-However, The tool NPX was created in part to address the fact that globally installed dependencies take up space after many them have been installed over time. On many operating systems, a globally installed tool needs to be given elevated permissions to be installed as well. The main point is still that numerous the global dependencies carry out tasks that you most likely want to perform seldom. There is therefore little need for these tools to be on your machine other than on a temporary basis. What NPX does is therefore to allow you to load in the dependency into the Node.js process and execute the command from there. After done executing, the dependency would be cleaned up and removed from your system. The NPX tool has been shipped with all major versions of NPM since version 5.2. NPX is the preferred way to use dependencies that are meant to be run seldom. To use the NPX tool just type `npx <name of package>`, it will take care of fetching the dependency and carrying out the command, and clean up.
+However, the npx tool was created in part to address the fact that globally installed dependencies take up space after many them have been installed over time. Also, on many operating systems, a globally installed tool needs elevated permissions for installation. The main point is that global dependencies complete tasks that you most likely want to perform infrequently. So there's little need for these tools to be on your computer for more than a temporary period of time. 
 
-### After install
+The npx tool allows you to load the dependency into the Node.js process and run the command from there. After the command is run, the dependency is cleaned up and removed from your system. The npx tool has been shipped with all major versions of npm since version 5.2. This tool is the preferred way to use dependencies that are meant to be run infrequently. To use the npx tool, enter `npx <name of package>`. It will fetch the dependency, run the command, and clean up.
 
-What's listed in the `dependencies` section of your `package.json` and what's in the `node_modules` folder will differ. If you want to see exactly what packages are in the  folder, you can type `npm list`. This command might produce a long list though and it might be hard to get a grasp of what you have in there. To help with this fact, it's possible to list packages at different depths. The `list` command then looks like so:
+### After installation
+
+The packages listed in the `dependencies` section of your package.json file will differ from the ones listed in the node_modules folder. If you want to see what packages are in the folder, you can enter `npm list`. But this command might produce a long list. It might be hard to get a sense of what you have in the folder. To help with this problem, you can list packages at different depths. When you do so, the `list` command looks like this one:
 
 ```bash
 npm list --depth=<depth>
 ```
 
-At depth 0, it will list the same content as what you have in your `dependencies` section in your `package.json`. Given that you have installed the `jest` package `npm list --depth=0` will produce an output similar to the below:
+At depth `0`, the command lists the same content that you have in the `dependencies` section of your package.json. Because you installed the Jest package, `npm list --depth=0` will produce output similar to this output:
 
 ```output
 ├── jest@26.0.1
 ```
 
-If you run the command, npm list` it will list all the packages in `node_modules/` directory that was installed. Every installed package will have installed all dependencies it relied on in turn.
+The `npm list` command will list all the packages in node_modules directory that were installed. Each installed package will have installed all the dependencies that it relies on.
 
-Depth `1` means that you want to see one level down, namely your installed packages and what primary dependencies they consist of. Running `npm list --depth=1` might produce an output like so:
+Depth `1` allows you to see one level down: your installed packages and the primary dependencies that they consist of. If you run `npm list --depth=1`, you might see this output:
 
 ```output
 ├─┬ jest@26.0.1
@@ -106,13 +108,15 @@ Depth `1` means that you want to see one level down, namely your installed packa
 │ └── jest-cli@26.0.1
 ```
 
-The idea is clear, the higher the `depth` number the more dependent packages you will see.
+As the `depth` number increases, you'll see more dependent packages.
 
-## Cleaning up
+## Clean up dependencies
 
-You are likely to sooner or later run into a scenario where you no longer need a package or you need a package other than the one you installed, that perhaps solve the task better. Regardless of the reason, you want to ensure you remove dependencies that are not used anymore. The arguments for that is except for keeping things clean, is also that it takes up space. The *space* argument becomes more apparent if you are building a SPA application with a framework like Angular, React, or Vue. Such an application is also a Node.js project and part of building the app is taking it through a *bundling* and *minification* process where different Node.js modules are concatenated and the source code is compressed. The resulting bundle/s ends up being served from a Browser. The larger that bundle is the longer it will take to send over the network before it ultimately becomes something the user can interact with. The longer the user has to wait the more likely they are to not want to use your app again.
+Sooner or later, you're likely to realize that you no longer need a package. Or you might realize that the package you installed isn't the one you need. Maybe you've found one that will accomplish a task better. Whatever the reason, you should remove dependencies that you aren't using. Doing so keeps things clean. Also, dependencies take up space. 
 
-There are two ways you can clean up dependencies you no longer want to use:
+The space argument becomes more important if you're building an SPA application by using a framework like Angular, React, or Vue. These applications are also Node.js projects. Building these apps involves a *bundling* and *minification* process in which different Node.js modules are concatenated and the source code is compressed. The resulting bundle or bundles end up being served from a browser. The larger the bundle is, the longer it takes to send over the network before it becomes something customers can interact with. The longer customers have to wait, the more likely they are to avoid your app.
 
-- **Uninstalling**, to uninstall a package you use the uninstall command like so `npm uninstall <name of dependency>`. This command will remove the package from the manifest file but also from the `node_modules` directory.
-- **Pruning**, by running the command prune like so `npm prune` it will remove all dependencies in the `node_modules` directory that are not listed as dependencies in the manifest file. This command can be good to use if you want to remove more than one dependency and don't want to run the `uninstall` command for each dependency. Used in that way you would remove entries from the `dependencies` or `devDependencies` section and the run the `npm prune` command.
+There are two ways to clean up dependencies you no longer need:
+
+- **Uninstall**. To uninstall a package, you use the `uninstall` command like so: `npm uninstall <name of dependency>`. This command will remove the package from the manifest file and from the node_modules folder.
+- **Prune**. Or you can run the `prune` command like so: `npm prune`. Running this command will remove all dependencies in the node_modules folder that aren't listed as dependencies in the manifest file. This command is a good choice if you want to remove more than one dependency and you don't want to run the `uninstall` command for each dependency. To do so, remove entries from the `dependencies` or `devDependencies` section and then run the `npm prune` command.
