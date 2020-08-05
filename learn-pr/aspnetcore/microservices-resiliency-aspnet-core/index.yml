@@ -26,6 +26,7 @@ levels:
   - advanced
 roles:
   - developer
+  - solution-architect
 products:
   - dotnet
   - aspnet-core
