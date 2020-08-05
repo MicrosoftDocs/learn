@@ -12,24 +12,23 @@ Let's start by creating a Q# project like we did for the quantum random number g
 
 Like before, you see two files: the project file and *Program.qs*, which contains starter code.
 
-## Include the Diagnostics Library
+## Include the Diagnostics namespace
 
-The Diagnostics Library under the `Microsoft.Quantum.Diagnostics` namespace is a
-library of the Quantum Development Kit that contains functions and operations
-useful for diagnostic purposes. For the moment, we're interested in the
-function
-[`DumpMachine`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine).
+The Diagnostics namespace `Microsoft.Quantum.Diagnostics` under the [Standard
+library](https://docs.microsoft.com/quantum/user-guide/libraries/standard?azure-portal=true)
+of the Quantum Development Kit contains functions and operations useful for
+diagnostic purposes. For the moment, we're interested in the function
+[`DumpMachine`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpmachine?azure-portal=true).
 This function dumps information about the current status of the target machine
 into a file or some other location. If we omit the `location` in the argument,
-it will print the output in the console. We'll use this information to track
-the state of the qubit register.
+it will print the output in the console. We'll use this information to track the
+state of the qubit register.
 
-> [!NOTE] 
-> In actual quantum hardware you won't be able to use a tool like `DumpMachine`
-> to access the state of the qubit register without breaking the algorithm.
-> Accessing the state of the qubit register will imply measuring it and
-> therefore changing its state. In simulated virtual quantum computers, we can
-> use tools like `DumpMachine`  and do tricks like these.
+> [!NOTE] `DumpMachine` is only useful for simulations. In actual quantum
+> hardware `DumpMachine` won't do anything at all since we can't access the
+> state of the qubit register during the execution. Remember that measuring the
+> state of a qubit may change its state. In simulated virtual quantum computers,
+> we can use tools like `DumpMachine` and do *tricks* like these.
 
 To add the library, we open `Microsoft.Quantum.Diagnostic` in the namespace:
 
@@ -48,7 +47,7 @@ To add the library, we open `Microsoft.Quantum.Diagnostic` in the namespace:
 We can use the `GenerateRandomBit` operation we defined in the previous module to see
 how `DumpMachine` works. We just need to add `DumpMachine()` on every step we want to
 see the state of the register. In this case we'll call `DumpMachine()` three times:
-at the beginning before 
+at the beginning before
 
 ```
 namespace ExploringSuperposition {
@@ -153,6 +152,12 @@ The `DumpMachine` function outputs a table with the information characterizing t
    always need to leave the qubits you use in the state $\ket{0}$ to be readily available for being used by other
    operations.
 
+> [!TIP]
+> Q# can also be run in Jupyter Notebooks. These notebooks provide a better
+> visualization of the `DumpMachine` outputs. You can install them and try them
+> out by following the official Quantum Development Kit documentation on [Q#
+> Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter).
+
 ## Explore different superpositions
 
 Now that we know how to inspect the state of a register, we can see operations that
@@ -167,13 +172,13 @@ is:
 
 $$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
 
-This state can be obtained applying sequentially the operations [`Rx`]()($2\arctan \sqrt{\frac\alpha{1-\alpha}}$) and [`S`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.S?view=qsharp-preview)
+This state can be obtained applying sequentially the operations [`Rx`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Rx?azure-portal=true)($2\arctan \sqrt{\frac\alpha{1-\alpha}}$) and [`S`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.S?azure-portal=true)
 to a qubit in the state $\ket{0}.$
 
 > [!TIP]
 > If you want to learn more about the math behind single qubit operations, 
 > you can check the
-> [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates).
+> [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates?azure-portal=true).
 
 The operation would be:
 
@@ -188,12 +193,12 @@ namespace ExploringSuperposition {
     @EntryPoint()
     operation GenerateSpecificState(alpha : Double) : Result {
         using (q = Qubit()) {
-        Rx(2.0 * ArcTan2(Sqrt(1.0-alpha), Sqrt(alpha)), q);
-        S(q);
-        Message("The qubit is in the desired state.");
-        DumpMachine();
-        Message("Your skewed random bit is:");
-        return MResetZ(q);
+            Rx(2.0 * ArcTan2(Sqrt(1.0-alpha), Sqrt(alpha)), q);
+            S(q);
+            Message("The qubit is in the desired state.");
+            DumpMachine();
+            Message("Your skewed random bit is:");
+            return MResetZ(q);
         }
     }
 }
@@ -235,20 +240,21 @@ namespace ExploringSuperposition {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
     open Microsoft.Quantum.Math;
     open Microsoft.Quantum.Convert;
+    open Microsoft.Quantum.Arrays;
 
     @EntryPoint()
     operation GenerateRandomNumber() : Int {
         using (qubits = Qubit[3]){
-        ApplyToEach(H,q);
-        Message("The qubit register in a uniform superposition: ");
-        DumpMachine();
-        let result = MultiM(qubits);
-        DumpMachine();
-        ResetAll(qubits);
-        return BoolArrayAsInt(ResultArrayAsBoolArray(result));
+            ApplyToEach(H, qubits);
+            Message("The qubit register in a uniform superposition: ");
+            DumpMachine();
+            let result = ForEach(M, qubits);
+            Message("Measuring the qubits collapses the superposition to a basis state.");
+            DumpMachine();
+            ResetAll(qubits);
+            return BoolArrayAsInt(ResultArrayAsBoolArray(result));
         }
     }
 }
@@ -257,9 +263,9 @@ namespace ExploringSuperposition {
 In this code we introduced three concepts:
 
 * Now `qubits` represents a `Qubit` array of dimension 3. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types).
-* We use the functions [`ApplyToEach`](todo), [`ResetAll`](todo) and [`MultiM`](todo) to perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions alike that make writing quantum programs more efficient. 
-* We use the functions [`BoolArrayAsInt`](todo) and [`ResultArrayAsBoolArray`](todo) from the library `Microsoft.Quantum.Convert` to
-transform the binary `Result` array returned by `MultiM(q)` into an integer number.
+* We use the functions [`ApplyToEach`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach), [`ResetAll`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall) and [`ForEach`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach) to perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions alike that make writing quantum programs more efficient. 
+* We use the functions [`BoolArrayAsInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint) and [`ResultArrayAsBoolArray`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray) from the library `Microsoft.Quantum.Convert` to
+transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer number.
 
 The output should be something like this:
 
@@ -291,10 +297,12 @@ The output should be something like this:
 We can see with `DumpMachine` how the act of measuring the three qubits
 collapses the state of the register to one of the eight possible basis states. 
 
-What would happen if instead of measuring the three qubits at once with `MultiM` we measure them sequentially? We can check it, we just need to slightly modify the code:
+What would happen if instead of measuring the three qubits at once with
+`ForEac(M, qubits)` we measure them sequentially? We can check it, we just need to
+slightly modify the code:
 
 ```qsharp
-namespace katas {
+namespace ExploringSuperposition {
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
     open Microsoft.Quantum.Diagnostics;
@@ -324,7 +332,7 @@ namespace katas {
 }
 ```
 
-In this block, we have introduced the use of the loop `for`. Q# as a full stack programming language has classical flow control capabilities. You can learn more about the different Q# flow control statements in the [Quantum Development Kit documentation](todo).
+In this block, we have introduced the use of the loop `for`. Q# as a full stack programming language has classical flow control capabilities. You can learn more about the different Q# flow control statements in the [Quantum Development Kit documentation](https://docs.microsoft.com/quantum/user-guide/using-qsharp/control-flow).
 
 The output of this code should be something like this:
 

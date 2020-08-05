@@ -13,7 +13,7 @@ amplitude of $\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
 To see this effect in Q#, we can implement it with the help of the `H`
 operation. We already know that $\hat H \ket{0} = \ket{\psi_1}$, which we used
 for the quantum random bit generator. But if we apply $\hat H$ to the state
-$\ket{1}$, we obtain $\ket{\psi_2}$. 
+$\ket{1}$, we obtain $\ket{\psi_2}$.
 
 If we then apply `H` twice to the state $\ket{0}$:
 
@@ -91,7 +91,7 @@ has amplitudes with non-zero phases.
 
 We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
 $\ket{1}$. Let's observe it using `DumpMachine`. We should first transform
-$\ket{0}$ into $\ket{1}$ with help of the `[X]`(todo) operation, and then apply
+$\ket{0}$ into $\ket{1}$ with help of the `[X]`(https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation, and then apply
 `H` to obtain $\ket{1}.$
 
 The code would be:
