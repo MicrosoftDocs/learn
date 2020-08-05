@@ -39,20 +39,20 @@ namespace ExploringInterference {
     @EntryPoint()
     operation TestInterference() : Result {
         using (q = Qubit()) {
-        Message(" ");
-        Message("At the beginning the qubit is in the state |0>.");
-        DumpMachine();
-        H(q);
-        Message(" ");
-        Message("After applying H the qubit is in a uniform superposition.");
-        DumpMachine();
-        H(q);
-        Message(" ");
-        Message("If we apply H again, interference gives back the state to |0>.");
-        DumpMachine();
-        Message(" ");
-        Message("If we measure we always obtain 'Zero'.");
-        return MResetZ(q);
+            Message(" ");
+            Message("At the beginning the qubit is in the state |0>.");
+            DumpMachine();
+            H(q);
+            Message(" ");
+            Message("After applying H the qubit is in a uniform superposition.");
+            DumpMachine();
+            H(q);
+            Message(" ");
+            Message("If we apply H again, interference gives back the state to |0>.");
+            DumpMachine();
+            Message(" ");
+            Message("If we measure we always obtain 'Zero'.");
+            return MResetZ(q);
         }
     }
 }
@@ -82,7 +82,7 @@ Zero
 
 We can see that it behaves just as we expected.
 
-## Exploring the relative phase with Q#
+## Exploring the relative phase with Q\#
 
 You may have noticed that `DumpMachine` also gives us
 information about the phase of each amplitude. However, so far we have
@@ -91,7 +91,7 @@ has amplitudes with non-zero phases.
 
 We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
 $\ket{1}$. Let's observe it using `DumpMachine`. We should first transform
-$\ket{0}$ into $\ket{1}$ with help of the `[X]`(https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation, and then apply
+$\ket{0}$ into $\ket{1}$ with help of the `[X]`(https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation, and then apply
 `H` to obtain $\ket{1}.$
 
 The code would be:
@@ -106,10 +106,10 @@ namespace ExploringInterference {
     @EntryPoint()
     operation TestInterference() : Unit {
         using (q = Qubit()) {
-        X(q);
-        H(q);
-        DumpMachine();
-        Reset(q);
+            X(q);
+            H(q);
+            DumpMachine();
+            Reset(q);
         }
     }
 }
@@ -143,10 +143,10 @@ namespace ExploringInterference {
     @EntryPoint()
     operation TestInterference() : Unit {
         using (q = Qubit()) {
-        Y(q);
-        H(q);
-        DumpMachine();
-        Reset(q);
+            Y(q);
+            H(q);
+            DumpMachine();
+            Reset(q);
         }
     }
 }
@@ -169,7 +169,8 @@ Until now, we used only single qubit operations, this is, operations that act
 over single qubits individually. However, to get qubits entangled we need
 what is called **multi-qubit gates**.
 
-The most prominent example of a multi-qubit gate is the [`CNOT`](todo)
+The most prominent example of a multi-qubit gate is the
+[`CNOT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot)
 operation. This operation takes two qubits as input, and flips the state of the
 second qubit (target qubit) if and only if the state of the first qubit (control
 qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT`, we can
@@ -193,16 +194,16 @@ namespace ExploringEntanglement {
     @EntryPoint()
     operation TestInterference() : Result[] {
         using (qubits = Qubit[2]) {
-        H(qubits[0]);
-        CNOT(qubits[0],qubits[1]);
-        Message("Entangled state before measurement:");
-        DumpMachine();
-        Message(" ");
-        let results = MultiM(qubits);
-        Message("Entangled state after measurement:");
-        DumpMachine();
-        ResetAll(qubits);
-        return results;
+            H(qubits[0]);
+            CNOT(qubits[0],qubits[1]);
+            Message("Entangled state before measurement:");
+            DumpMachine();
+            Message(" ");
+            let results = MultiM(qubits);
+            Message("Entangled state after measurement:");
+            DumpMachine();
+            ResetAll(qubits);
+            return results;
         }
     }
 }
@@ -229,23 +230,34 @@ Entangled state after measurement:
 
 ### Controlled operations
 
-In Q#, you can use the `Controlled` functor to transform any operation to a
+In Q#, you can use the `Controlled` *functor* to transform any operation to a
 controlled operation. For example, the operation `CNOT(control, target)` can
 also be expressed as `Controlled X([control], target)`. In general, you can put any
 operation in the place of `X`. For example, `Controlled Y([control], target)`
 applies the `Y` gate conditioned on the state of the control qubit.
 
 To learn more about the `Controlled` functor and many other Q# features, you can
-take a look to the [Q# user guide](todo).
+take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations).
 
-## Estimating resources with Q#
+> [!NOTE] A functor in Q# is a factory that defines a new operation from another
+> operation.
+
+## Estimating resources with Q\#
 
 The Quantum Development Kit has a built-in tool that allows you to estimate the
-resources required to run a given Q# code on a quantum computer. It's called 
-[`ResourcesEstimator`](todo). It runs the quantum operation
-without actually simulating the state of a quantum computer. For this reason, it
-can estimate resources for Q# operations that use thousands of qubits, if the
-classical part of the code can be run in a reasonable time.
+resources required to run a given Q# code on a quantum computer. It's called
+[`ResourcesEstimator`](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator).
+It runs the quantum operation without actually simulating the state of a quantum
+computer. For this reason, it can estimate resources for Q# operations that use
+thousands of qubits, if the classical part of the code can be run in a
+reasonable time.
+
+> [!NOTE]
+> The resources estimator is built on top of the quantum trace simulator of the
+> Quantum Development Kit. The quantum trace simulator can run quantum programs
+> without actually simulating the state of a quantum computer. You can learn
+> more about the quantum trace simulator in the [Quantum Development Kit
+> documentation](https://docs.microsoft.com/quantum/user-guide/machines/qc-trace-simulator/).
 
 To use a Resources Estimator, write in the command line:
 
@@ -279,7 +291,8 @@ need. This makes `ResourcesEstimator` a very useful tool for quantum developers.
 
 To learn more about `ResourcesEstimator` and a detailed description of each of
 the parameters of the output and more estimation tools, you can read [the
-official documentation](todo).
+official
+documentation](https://docs.microsoft.com/en-us/quantum/user-guide/machines/resources-estimator).
 
 In the next unit, we're going to present different quantum algorithms that make
 use of superposition, interference, and entanglement to outperform classical

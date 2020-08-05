@@ -92,7 +92,7 @@ This is, we solve the problem with just one query to the oracle, exponentially
 faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](todo).
+in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm).
 
 
 ![Figure6](../media/KittyYeungQ30.png)
@@ -148,11 +148,11 @@ $1-O(\frac1{2^n})$ using $O(\sqrt{2^n})$ queries.
 ![Figure7](../media/KittyYeungQ32.png)
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Grover's algorithm](todo).
+in Q#, check our [quantum katas tutorial on Grover's algorithm(https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm).
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the tutorial [Implement Grover's search
-algorithm in Q#](todo).
+algorithm in Q#](https://docs.microsoft.com/quantum/tutorials/search).
 
 ## Shor's algorithm
 
@@ -195,6 +195,10 @@ a random number whose greater common divisor with $N$ is $1$.
 Shor's algorithm succeeds in finding a prime factor with high probability but
 it can fail. However, repeating the algorithm several times until it finds the
 prime factors is exponentially faster than the best known classical algorithm.
+
+If you want to know how to implement this algorithm with the Q# high-level
+functionality, you can also check the [Q# sample for integer
+factorization](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization#integer-factorization-sample).
 
 In  the next unit, you'll take a knowledge check to test what you learned on
 this module.
