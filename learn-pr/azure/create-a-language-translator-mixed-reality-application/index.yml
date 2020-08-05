@@ -23,7 +23,6 @@ prerequisites: |
   - Access to a microphone for audio capture
   - Basic familiarity of Unity - Unity interface, create a scene, import a package and add GameObjects to a scene
 iconUrl: /learn/achievements/generic-badge.svg
-ratingEnabled: false
 levels:
 - beginner
 roles:
