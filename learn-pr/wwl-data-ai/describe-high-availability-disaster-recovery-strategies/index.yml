@@ -8,13 +8,13 @@ metadata:
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Describe high-availability and disaster-recovery strategies
-summary: Plan appropriate HA/DR strategy based on Recovery Time Objective (RTO) and Recovery Point Objective (RPO). Choose the best solution for IaaS or PaaS deployments or hybrid workloads.
+title: Describe high availability and disaster recovery strategies
+summary: Plan an appropriate high availability and disaster recovery strategy based on recovery rime objective and recovery point objective. Choose the best solution for IaaS or PaaS deployments or hybrid workloads.
 abstract: |
   After completing this module, you will be able to:
-  - Define Recovery time objective (RTO) and Recovery point objective (RPO)
-  - Explore the available HADR options for both IaaS and PaaS
-  - Devise an appropriate HADR strategy
+  - Define recovery time objective and recovery point objective
+  - Explore the available high availability and disaster recovery options for both IaaS and PaaS
+  - Devise an appropriate high availability and disaster recovery strategy
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Basic understanding of SQL Server file storage.

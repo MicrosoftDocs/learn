@@ -48,7 +48,7 @@ The following table contains information and uses for each type of Extended Even
 |**Histogram**|This is similar to event counter, which counts the occurrences of an event. The difference is that the histogram can count based on a specific event column or action.|Asynchronous |
 |**Ring Buffer**|Used to hold data in memory. Data is not persisted to disk and maybe frequently flushed from the buffer|Asynchronous |
 
-## Creating Extended Events Sessions with T-SQL 
+## Creating extended events sessions with T-SQL
 
 There are two options for creating an Extended Event session. You can create a session programmatically using T-SQL or you can use the GUI in SQL Server Management Studio. However, using T-SQL to deploy event sessions is more easily repeated and should be part of automation routines. The T-SQL for a sample event session is shown below.
 

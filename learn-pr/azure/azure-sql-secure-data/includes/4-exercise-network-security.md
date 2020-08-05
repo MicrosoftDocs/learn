@@ -58,3 +58,7 @@ This method of setting the firewall rules (using the Azure portal or Azure Cloud
 ## Go further
 
 You've now seen how to update firewall rules for specific IP addresses or ranges of IP addresses on the server or database level. If you were running in production, you may also need access from various virtual networks, resources (for example, Azure Apps or Azure VMs). If you take an Azure VM as an example, they have dynamic IP addresses (they change). You can set up static IP addresses, but even this can be difficult to maintain using firewall rules. You can, alternatively, use virtual network rules to manage access from specific subnet(s) that contain your VMs or other services. Alternatively, you could configure Private Endpoint, the most secure way to connect to an Azure SQL Database.
+
+In the video that follows, you can see how to create, configure, and compare the various methods of connecting to Azure SQL Database: Allow access to Azure resources, Firewall rules Virtual Network rules, and Private Endpoint.
+
+> [!VIDEO https://channel9.msdn.com/Series/Azure-SQL-for-Beginners/Demo-Network-Security-for-Azure-SQL-Database-23-of-61/player?format=ny]

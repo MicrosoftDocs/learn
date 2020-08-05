@@ -154,9 +154,9 @@ You configure the new Azure Policy using the Policy service in the Azure portal.
 
     | Option | Value |
     | --- | --- |
-    | **Scope** | Use the ellipses button top open the **Scope** panel. Select the **subscription** that holds your resource group. Then select the **akscostsavinggrp** resource group. |
+    | **Scope** | Use the ellipses button to open the **Scope** panel. Select the **subscription** that holds your resource group. Then select the **akscostsavinggrp** resource group. |
     | **Exclusions** | Leave this value empty. |
-    | **Policy definition** | Use the ellipses button top open the **Available Definitions** panel. Filter the selection using *CPU* as the term to search in the search box. Select the **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy from the list of options. |
+    | **Policy definition** | Use the ellipses button to open the **Available Definitions** panel. Filter the selection using *CPU* as the term to search in the search box. Select the **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy from the list of options. |
     | **Assignment name** | Leave this value as set by default. |
     | **Description** | Leave this value empty for this exercise. |
     | **Policy enforcement** | Make sure this option is enabled. |
