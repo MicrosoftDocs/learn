@@ -5,7 +5,7 @@ Imagine you work for Contoso Aircraft Engines. The engines your employer manufac
 You want to use historic sensor data to find patterns in the sensor readings that indicate engine failure is likely to happen soon. You want the real-time sensor readings to be compared against these failure patterns. You can then warn users in near real time if an engine is showing worrisome readings.
 
 ## What is Azure Event Hubs?
-Event Hubs is an intermediary for the publish-subscribe communication pattern. Unlike Event Grid, however, it is optimized for extremely high throughput, a large number of publishers, security, and resiliency.
+[Event Hubs](https://azure.microsoft.com/services/event-hubs/) is an intermediary for the publish-subscribe communication pattern. Unlike [Event Grid](https://azure.microsoft.com/services/event-grid/), however, it is optimized for extremely high throughput, a large number of publishers, security, and resiliency.
 
 #### What is an Event Hub?
 
