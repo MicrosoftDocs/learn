@@ -1,26 +1,26 @@
-Tailwind Traders has tasked you with working on an app with some outdated dependencies. The app is fairly small and only has a couple of dependencies. Updating it should be straightforward. See if you can update the app to take advantage of the latest features and if you find any vulnerabilities fix them while you are at it.
+Tailwind Traders has asked you to work on an app that has some outdated dependencies. The app is small and has only a couple of dependencies. Updating it should be straightforward. See if you can update the app to take advantage of the latest features. While you're at it, if you find any vulnerabilities, fix them.
 
-## Upgrading the app dependencies
+## Upgrade app dependencies
 
-1. Clone the following `https://github.com/MicrosoftDocs/node-essentials/` by typing the following command:
+1. Clone `https://github.com/MicrosoftDocs/node-essentials/` by running this command:
 
    ```bash
    git clone `https://github.com/MicrosoftDocs/node-essentials/`
    ```
 
-1. Navigate to your files by typing the following command:
+1. Go to your files by running this command:
 
    ```bash
    cd node-essentials/node-dependencies/7-exercise-dependency-management
    ```
 
-1. Install the dependencies with the following command:
+1. Install the dependencies by running this command:
 
    ```bash
    npm install
    ```
 
-1. Open up the `index.js` file. It should look like so:
+1. Open the index.js file. It should look like this file:
 
    ```javascript
    const fetch = require('node-fetch')
@@ -41,22 +41,22 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
     run();
    ```
 
-   The above code is pulling some data from a REST API using the `node-fetch` library. Then it goes on to process the response by sorting it and taking the top three results using the library `lodash`. The result is stored in a file.
+   This code pulls data from a REST API by using the `node-fetch` library. It then processes the response by sorting it and taking the top three results by using the `lodash` library. The result is stored in a file.
 
-1. Have a look at the `package.json` file and locate the `dependencies` section. It should look like so:
+1. Look at the `dependencies` section in the package.json file. It should look like this code:
 
    ```json
    "lodash": "^1.1.0",
    "node-fetch": "^1.0.2"
    ```
 
-   Type the following command to see what dependencies are outdated:
+1. Run this command to see what dependencies are outdated:
 
    ```bash
    npm outdated
    ```
 
-   The output should look something like this. There might be a slight variation on what number is listed as the `Latest` depending on when this module is taken.
+   The output should look something like the following output. You might see different values in the `Latest` column.
 
    ```output
    Package       Current    Wanted    Latest    Location
@@ -64,15 +64,15 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
    node-fetch    1.0.2      1.7.3     2.6.0     lock-test
    ```
 
-   The above tells you what version you are currently on `Current`. It also tells you what the latest minor version is in the `Wanted` column. Thirdly it states the latest version there is in the `Latest` column. This may differ depending on when you take this module. Finally it tells you the location of the dependency.
+   The `Current` column tells you what version you currently have. The `Wanted` column tells you the latest minor version. The `Latest` column tells you the most recent version. You might see a different value here. Finally, the `Location` column tells you the location of the dependency.
 
-1. You can, with a decent level of confidence, update to the `Wanted` version, it will ensure the dependencies get the latest features and patches in that major version. Type the following command:
+1. You can, with some level of confidence, update to the `Wanted` version. Doing so will ensure the dependencies get the latest features and patches in that major version. Run the following command:
 
    ```bash
    npm update
    ```
 
-   You should get an output looking something like this:
+   Your output should look something like this output:
 
    ```output
    + lodash@1.3.1
@@ -81,25 +81,23 @@ Tailwind Traders has tasked you with working on an app with some outdated depend
    found 4 vulnerabilities (2 low, 2 high)
    ```
 
-   Above it states that your project dependencies have been updated.
+   The output states that your project dependencies have been updated.
 
-1. At this point, you have upgraded the dependencies as far as the patterns in your `package.json` allows you. You can either install the latest version by specifically type `npm install <name of package>@<known latest version>` or use the *latest* keyword like so `npm install <name of package>@latest`. Another thing you can do is to alter the pattern in the `package.json` file, which is what you will be doing next.  
+   At this point, you've upgraded the dependencies as far as the patterns in your package.json will allow. You can either install the latest version by running `npm install <name of package>@<known latest version>` or use the `latest` keyword: `npm install <name of package>@latest`.
 
-1. Locate the entry `"node-fetch": "^1.7.3"` in `package.json` and change it to `"node-fetch": "*"`, additionally locate `"lodash": "^1.3.1"` and change it to `"lodash": "*"`.
-
-1. Run the following command in the terminal:
+1. In the terminal, run this command:
 
    ```bash
-   npm update
+   npm install node-fetch@latest lodash@latest
    ```
 
-   You should have gotten an output looking something like this:
+   Your output should look something like this output:
 
    ```output
    + node-fetch@2.6.0
    + lodash@4.17.19
    ```
 
-   Results may vary above depending on when this module is taken. The point is though that the listed versions above should correspond to the latest available versions of these two packages.
+   Your results might be slightly different. The versions listed should correspond to the latest available versions of the packages.
 
-Congratulations you've managed to upgrade the two dependencies in your app. Well done!
+Congratulations. You've upgraded the two dependencies in your app. Well done!

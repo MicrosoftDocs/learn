@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.5-exercise-general-purpose-high-availability
+metadata:
+  title: Exercise - General purpose high availability
+  description: Exercise - General purpose high availability
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - General purpose high availability
+durationInMinutes: 10
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/5-exercise-general-purpose-high-availability.md)]

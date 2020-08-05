@@ -30,9 +30,10 @@ quiz:
     - content: "Speech recognition"
       isCorrect: false
       explanation: "Incorrect. Speech recognition is one of the products and capabilities of AI: cognition, learning, and perception."
-  - content: "A professional baseball team wants to apply state-of-the-art AI technology to batting practice. They believe that through advanced AI capabilities like deep learning algorithms they can learn from thousands of at-bats to gain an understanding of the art of hitting a baseball.   
-Information about the pitcher’s pitch plus the batter’s stance and swing recorded by on-field cameras provide the input data. The goal is to successfully predict the results based the data. It will also enable them to teach pitchers and batters the best techniques based on the data.  
-Which of the three major capabilities of AI is able to make these predictions based on thousands of recorded at-bats?"
+  - content: |
+      A professional baseball team wants to apply state-of-the-art AI technology to batting practice. They believe that through advanced AI capabilities like deep learning algorithms they can learn from thousands of at-bats to gain an understanding of the art of hitting a baseball.   
+      Information about the pitcher’s pitch plus the batter’s stance and swing recorded by on-field cameras provide the input data. The goal is to successfully predict the results based the data. It will also enable them to teach pitchers and batters the best techniques based on the data.  
+      Which of the three major capabilities of AI is able to make these predictions based on thousands of recorded at-bats?
     choices:
     - content: "Cognition"
       isCorrect: true
@@ -46,9 +47,10 @@ Which of the three major capabilities of AI is able to make these predictions ba
     - content: "Interpretation"
       isCorrect: false
       explanation: "Incorrect. Interpretation in the form of real-time translation or speech/hand-writing recognition comes as a result of the three major capabilities. It is not one of the three major capabilities of AI."
-  - content: "A company that provides continuing professional education for nurses is attempting to integrate AI into their existing products to ensure that the education is tailored for the learners’ needs. They have invested millions of dollars into the online software that delivers these training modules.   
-They do not want to throw it all away and start from scratch to include AI technology.  
-Which Microsoft product would allow them to incorporate pre-built AI capabilities into their products?"
+  - content: |
+      A company that provides continuing professional education for nurses is attempting to integrate AI into their existing products to ensure that the education is tailored for the learners’ needs. They have invested millions of dollars into the online software that delivers these training modules.   
+      They do not want to throw it all away and start from scratch to include AI technology.  
+      Which Microsoft product would allow them to incorporate pre-built AI capabilities into their products?
     choices:
     - content: "Azure Cognitive Services"
       isCorrect: true
@@ -62,8 +64,9 @@ Which Microsoft product would allow them to incorporate pre-built AI capabilitie
     - content: "Machine learning"
       isCorrect: false
       explanation: "Incorrect. A machine learning is only a small part of an AI solution."
-  - content: "Last year a large national freight company incorporated pre-built AI services into some customer-facing products and some business processes for employees. Now the COO needs to enable all employees to utilize AI in their daily tasks.  
-How can the COO’s need be met?"
+  - content: |
+      Last year a large national freight company incorporated pre-built AI services into some customer-facing products and some business processes for employees. Now the COO needs to enable all employees to utilize AI in their daily tasks.  
+      How can the COO’s need be met?
     choices:
     - content: "Democratize data and knowledge."
       isCorrect: false

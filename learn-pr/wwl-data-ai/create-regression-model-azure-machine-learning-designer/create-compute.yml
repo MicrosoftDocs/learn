@@ -4,9 +4,9 @@ title: Create compute resources
 metadata:
   title: Create compute resources
   description: "Learn about regression algorithms that you can use to train a regression model."
-  ms.date: 07/16/2020
+  ms.date: 07/30/2020
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
