@@ -3,9 +3,9 @@ uid: learn.wwl.integrate-data-azure-data-factory
 metadata:
   title: Data integration with Azure Data Factory
   description: "Integrate data with Azure Data Factory"
-  ms.date: 07/26/2020
+  ms.date: 08/07/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Integrate data with Azure Data Factory

@@ -4,16 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/26/2020
+  ms.date: 08/07/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Which Azure Data Factory component contains the transformation logic or the analysis commands of the Azure Data Factory’s work?"
+  - content: "Which Azure Data Factory component orchestrates a transformation job or runs a data movement command?"
     choices:
     - content: "Linked Services"
       isCorrect: false

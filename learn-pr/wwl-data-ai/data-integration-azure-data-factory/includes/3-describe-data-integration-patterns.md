@@ -27,7 +27,7 @@ During the extraction process, data engineers define the data and its source:
 
 ## ETL tools
 
-As a data engineer, you'll use several tools for ETL. The most common tool is Azure Data Factory, which provides robust resources and nearly 100 enterprise connectors. Data Factory also allows you to transform data by using a wide variety of languages.
+As a data engineer, there are several available tools for ETL. Azure Data Factory provides nearly 100 enterprise connectors and robust resources for both code-free and code-based users to accomplish their data movement and transformation needs.
 
 ## Evolution from ETL
 
