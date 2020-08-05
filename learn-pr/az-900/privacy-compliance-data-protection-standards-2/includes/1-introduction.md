@@ -1,18 +1,17 @@
-Governing your own resources and how they are used is only part of the solution when using a cloud provider. You also have to understand how the provider manages the underlying resources you are building on.
+Being able to trust your cloud provider, trust the underlying cloud infrastructure and trust your solutions built on the cloud, are all key factors in your organization's responsibility to ensuring privacy and compliance. If your organization is a government department or agency, you may have also have additional considerations that aren't applicable to other Azure customers.
 
-Microsoft takes this management seriously and provides full transparency with four sources:
+Microsoft takes these topics seriously and provides full transparency with a number of sources:
 
 + Microsoft Privacy Statement
++ Online Services Terms
++ Data Protection Addendum  
 + Microsoft Trust Center
-+ Service Trust Portal
-+ Compliance Manager
++ Compliance documentation
 
-In this module, you will review about Microsoft Privacy statement and learn about the tools we provide to you to build trust and compliance into your solutions running in the cloud.
+In this module, you will learn about the Microsoft Privacy statement, the terms of the services that Azure provides and other resources that contain privacy and compliance information. You wil also learn about the Azure offerings specific to government and to the regions of China.
 
 In this module, you will:
-
-+ List compliance terms and requirements
-+ Review the Microsoft Privacy Statement
-+ Explore the Trust Center, Compliance Manager, and Service Trust Portal
++ Identify compliance terms and requirements
++ Review the Microsoft Privacy Statement, the Online Services Terms and the Data Protection Addendum
++ Explore the Trust Center and the compliance documentation 
 + Explain government-specific Azure capabilities
-
