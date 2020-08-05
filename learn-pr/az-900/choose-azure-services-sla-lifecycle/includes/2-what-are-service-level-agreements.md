@@ -7,7 +7,8 @@ In this part, you'll learn:
 * Why SLAs are important.
 * Where you can find the SLA for a specific Azure service.
 * What you'll find in a typical SLA.
-* What we mean by terms like "three nines" and "four nines" availability, and how SLA percentage relate to total downtime.
+* What we mean by terms like "three nines" and "four nines" availability.
+* How SLA percentages relate to total downtime.
 * How credits are applied when a service fails to perform to its specification.
 * How SLAs relate to free Azure services.
 * How to know when there's an outage.
@@ -28,8 +29,6 @@ You can access SLAs from the [Service Level Agreements](https://azure.microsoft.
 > You don't need an Azure subscription to review service SLAs.
 
 Each Azure service defines its own SLA. Azure services are organized by category.
-
-:::image type="content" source="../media/2-sla-home-categories.png" alt-text="A screenshot of the SLA landing page showing 21 Azure service categories." border="false":::
 
 Open the SLA for Azure Database for MySQL, a managed database that makes it easy for developers to work with MySQL databases. You'll refer back to this SLA in a moment.
 
