@@ -1,7 +1,7 @@
 ## Exercise - Manage access with Role Based Access Control
 
 > [!Note]
-> This lab requires and Azure subscription.  No sandbox is available to perform this lab.
+> This lab requires an Azure subscription.  No sandbox is available to perform this lab.
 
 In this walkthrough, we will assign roles and view activity logs. 
 

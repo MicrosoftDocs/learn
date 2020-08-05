@@ -1,14 +1,14 @@
-## What is It?
+**Denial of service** occurs when an attacker causes the system to be unavailable. 
 
-**Denial of service** occurs when an attacker causes the system to be unavailable. Examples include:
+Examples include:
 
 - Flooding the network with requests
 - Absorbing memory and CPU processes
 - Crashing data stores with an overwhelming number of requests
 
-## What's at Risk?
+## Elements and interactions at risk from denial of service
 
-### Elements
+### Element
 
 |Name|Shape|Definition|
 |----|-----|----------|
@@ -16,7 +16,7 @@
 |Data store|![Data Store](../media/data-store50.png)|Permanent or temporary data storage|
 |Data-flow|![Data-Flow](../media/data-flow50.png)|Data movement between elements|
 
-### Interactions
+### Interaction
 
 |Name|Interaction|Definition|
 |----|-----------|----------|
@@ -25,7 +25,7 @@
 |Process <-> Data Store|![Process to Data Store Interaction](../media/process-datastore.png)|A task sends or receives data to or from a data store|
 |Data Flow <-> Trust Boundary|![Data-Flow to Trust Boundary Interaction](../media/flow-trustboundary.png)|Data is transmitted from a trusted environment to someone over the internet (and vice-versa)|
 
-## How Can I Prevent It?
+## How to prevent denial of service
 
 **Availability** ensures your system is up and running for users. Examples include:
 
@@ -34,14 +34,14 @@
 - Monitoring the system to detect anomalies
 - Enabling operating system flags to handle memory and CPU processes
 
-### Common Security Controls to Reduce or Eliminate Risk
+### Common security controls to reduce or eliminate risk
 
-- Access Control Lists (ACL)
+- Access control lists (ACL)
 - Filtering
 - Quotas
 - Authorization
-- High Availability
+- High availability
 
 > [!TIP]
-> **Good Question to Ask**
+> **Good question to ask:**
 > Are there areas where my service is resource limited?

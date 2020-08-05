@@ -1,4 +1,4 @@
-Non-relational data is an all-encompassing term that means *anything not structured as a set of tables*. There are many different types of non-structured data, and the information is used for a wide variety of purposes. Consequently, there a number of different types of non-relational database management systems, each oriented towards a specific set of scenarios.
+Non-relational data is an all-encompassing term that means *anything not structured as a set of tables*. There are many different types of non-structured data, and the information is used for a wide variety of purposes. Consequently, there are many different types of non-relational database management systems, each oriented towards a specific set of scenarios.
 
 In this unit, you'll learn about some of the most common types of non-relational databases.
 
