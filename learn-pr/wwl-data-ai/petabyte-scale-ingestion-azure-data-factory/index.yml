@@ -3,9 +3,9 @@ uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory
 metadata:
   title: Petabyte-scale ingestion with Azure Data Factory
   description: "Petabyte-scale ingestion with Azure Data Factory"
-  ms.date: 07/26/2020
+  ms.date: 08/07/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Petabyte-scale ingestion with Azure Data Factory

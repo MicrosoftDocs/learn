@@ -4,9 +4,9 @@ title: Setup the Azure integration runtime
 metadata:
   title: Setup the Azure integration runtime
   description: "Setup the Azure integration runtime"
-  ms.date: 07/26/2020
+  ms.date: 08/07/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
