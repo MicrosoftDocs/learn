@@ -6,10 +6,10 @@ In this unit, you learn about using Azure Resource Manager templates (ARM templa
 
 With infrastructure as code, you can maintain both your application code and everything you need to deploy your application in a central code repository. The advantages to infrastructure as code are:
 
-- Consistent configurations.
-- Improved scalability.
-- Faster deployments.
-- Better traceability.
+- Consistent configurations
+- Improved scalability
+- Faster deployments
+- Better traceability
 
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Infrastructure-as-Code--One-Dev-Question/player?format=ny]
 

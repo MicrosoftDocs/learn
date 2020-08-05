@@ -8,12 +8,12 @@ In this module, you're introduced to ARM template structure. You also practice c
 
 In this module, you will:
 
-- Use Visual Studio Code to create an ARM template.
+- Implement an Azure Resource Manager template by using Visual Studio Code.
 - Declare resources and add flexibility to your template by adding parameters and outputs.
 
 ## Prerequisites
 
-- Familiarity with Azure, which includes the Azure portal, subscriptions, resource groups, and resource definitions.
+- Familiarity with Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
 - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.

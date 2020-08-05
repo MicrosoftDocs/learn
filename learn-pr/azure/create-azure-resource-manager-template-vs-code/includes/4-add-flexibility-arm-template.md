@@ -2,7 +2,7 @@ In the last unit, you created an Azure Resource Manager template (ARM template) 
 
 In this unit, you learn about the *parameters* and *outputs* sections of the template.
 
-## What are ARM template parameters?
+## ARM template parameters
 
 ARM template parameters enable you to customize the deployment by providing values that are tailored for a particular environment. For example, you pass in different values based on whether you're deploying to an environment for development, test, production, or others. For example, the previous template uses the *Standard_LRS* storage account SKU. You can reuse this template for other deployments that create a storage account by making the name of the storage account SKU a parameter. Then, you pass in the name of the SKU you want for this particular deployment when the template is deployed. You can do this step either at the command line or by using a parameter file.
 
@@ -43,7 +43,7 @@ Use parameters for settings that vary according to the environment, like SKU, si
 
 For security reasons, never hard code or provide default values for usernames and/or passwords in templates. Always use parameters for usernames and passwords (or secrets). Use *secureString* for all passwords and secrets. If you pass sensitive data in a JSON object, use the secureObject type. Template parameters with *secureString* or *secureObject* types can't be read or harvested after the deployment of the resource.
 
-### How do I use parameters in my ARM template?
+### Use parameters in an ARM template
 
 In the parameters section of the ARM template, specify the parameters that can be input when you deploy the resources. You're limited to 256 parameters in a template.
 
@@ -105,7 +105,7 @@ New-AzResourceGroupDeployment `
 
 ---
 
-## What are ARM template outputs?
+## ARM template outputs
 
 In the outputs section of your ARM template, you can specify values that will be returned after a successful deployment. Here are the elements that make up the outputs section.
 
@@ -129,7 +129,7 @@ In the outputs section of your ARM template, you can specify values that will be
 - *value*: (Optional) A template language expression that's evaluated and returned as an output value.
 - *copy*: (Optional) Copy is used to return more than one value for an output.
 
-### How do I use outputs in my ARM template?
+### Use outputs in an ARM template
 
 Here's an example to output the storage account's endpoints.
 
@@ -144,6 +144,6 @@ Here's an example to output the storage account's endpoints.
 
 Notice the ```reference``` part of the expression. This function gets the runtime state of the storage account.
 
-## What happens if I deploy an ARM template again?
+## Deploy an ARM template again
 
 Recall that ARM templates are idempotent, which means you can deploy the template to the same environment again and if nothing was changed in the template, nothing will change in the environment. If a change was made to the template, for example, you changed a parameter value, only that change will be deployed. Your template can contain all of the resources you need for your Azure solution, and you can safely execute a template again. Resources will be created only if they didn't already exist and updated only if there's a change.

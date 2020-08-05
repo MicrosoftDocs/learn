@@ -9,7 +9,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 
 1. Open Visual Studio Code, and create a new file called *azuredeploy.json*.
 1. The Visual Studio Code ARM template extension comes configured with snippets to help you develop templates. Let's start by adding a blank template. On the first line of the file, enter **arm**.
-1. You see an IntelliSense choice **!arm**. Choose that snippet by selecting the box next to it.
+1. You see the IntelliSense choice **!arm**. Choose that snippet by selecting the box next to it.
 
     :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
 
@@ -87,29 +87,29 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 When you set the default resource group as the same one created for you in the sandbox environment, you can omit that parameter from the rest of the Azure CLI commands in this exercise.
 
-    ```azurecli
-    az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
-    ```
+```azurecli
+az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
+```
 
 ### Deploy the template to Azure
 
 The following code deploys the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. You will see a successful deployment.
 
-1. Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
+Deploy the template by using Azure CLI commands in the Visual Studio Code terminal.
 
-    ```azurecli
-    templateFile="azuredeploy.json"
-    today=$(date +"%d-%b-%Y")
-    DeploymentName="blanktemplate-"$today
+```azurecli
+templateFile="azuredeploy.json"
+today=$(date +"%d-%b-%Y")
+DeploymentName="blanktemplate-"$today
 
-    az deployment group create \
-     --name $DeploymentName \
-     --template-file $templateFile
-    ```
+az deployment group create \
+ --name $DeploymentName \
+ --template-file $templateFile
+```
 
-  The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **blanktemplate** with the date as a suffix.
+The top section of the preceding code sets the Azure CLI variables, which include the path to the template file to deploy and the name of the deployment. The command ```az deployment group create``` deploys the template to Azure. Notice that the deployment name is **blanktemplate** with the date as a suffix.
 
-  You see ```Running...``` in the terminal.
+You see ```Running...``` in the terminal.
 
 ::: zone-end
 
@@ -164,18 +164,18 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 The following code deploys the template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. You will see a successful deployment.
 
-1. Deploy the template by using Azure PowerShell commands in the terminal.
+Deploy the template by using Azure PowerShell commands in the terminal.
 
-    ```azurepowershell
-    $templateFile = "azuredeploy.json"
-    $today=Get-Date -Format "MM-dd-yyyy"
-    $deploymentName="blanktemplate-"+"$today"
-    New-AzResourceGroupDeployment `
-      -Name $deploymentName `
-      -TemplateFile $templateFile
-    ```
+```azurepowershell
+$templateFile = "azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="blanktemplate-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+```
 
-  The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is *blanktemplate* with the date as a suffix.
+The top section of the preceding code sets Azure PowerShell variables, which include the path to the deployment path and the name of the deployment. Then the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is *blanktemplate* with the date as a suffix.
 
 ::: zone-end
 
@@ -201,10 +201,10 @@ When you've deployed your ARM template to Azure, go to the [Azure portal](https:
 
 In the previous task, you learned how to create a blank template and deploy it. Now, you're ready to deploy an actual resource. In this section, you add an Azure storage account resource to the ARM template by using a snippet from the Azure Resource Manager Tools for Visual Studio Code extension.
 
-1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the square brackets in the resources block ```"resources":[],```.
-1. Type **storage** inside the square brackets. A list of related snippets appears. Select **arm-storage**.
+1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the brackets in the resources block ```"resources":[],```.
+1. Enter **storage** inside the brackets. A list of related snippets appears. Select **arm-storage**.
 
-    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code arm-storage snippet shown below the types word storage." border="true":::
+    :::image type="content" source="../media/3-arm-storage.png" alt-text="Visual Studio Code arm-storage snippet shown under the typed word storage." border="true":::
 
 1. Your file will look like this:
 
@@ -215,7 +215,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
     Notice the ```tags:``` and ```location:``` attributes are filled in. The ```location:``` attribute uses a function to set the location of the resource to the location of the resource group. You learn about tags and functions in the next module.
 
 1. Change the values of the resource *name:* and *displayName:* to something unique. For example, **learnexercise12321**. This name must be unique across all of Azure, so choose something unique to you.
-1. Change the value of the sku *name* from **Premium_LRS** to **Standard_LRS**. Change the value of *tier* to **Standard**. Notice that Visual Studio Code gives you the proper choices for your attribute values in IntelliSense. Delete the default value including the quotes and type quotes to see this work.
+1. Change the value of the sku *name* from **Premium_LRS** to **Standard_LRS**. Change the value of *tier* to **Standard**. Notice that Visual Studio Code gives you the proper choices for your attribute values in IntelliSense. Delete the default value including the quotation marks and type quotation marks to see this work.
 
     :::image type="content" source="../media/3-vs-code-intellisense.png" alt-text="Visual Studio Code showing the IntelliSense choices for the name attribute of the storage SKU." border="true":::
 
@@ -228,32 +228,32 @@ Here, you change the name of the deployment to better reflect what this deployme
 
 ::: zone pivot="cli"
 
-1. Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
-    ```azurecli
-    templateFile="azuredeploy.json"
-    today=$(date +"%d-%b-%Y")
-    DeploymentName="addstorage-"$today
+```azurecli
+templateFile="azuredeploy.json"
+today=$(date +"%d-%b-%Y")
+DeploymentName="addstorage-"$today
 
-    az deployment group create \
-      --name $DeploymentName \
-      --template-file $templateFile
-    ```
+az deployment group create \
+  --name $DeploymentName \
+  --template-file $templateFile
+```
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="powershell"
+::: zone pivot="powershell"
 
-1. Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
+Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed.
 
-    ```azurepowershell
-    $templateFile = "azuredeploy.json"
-    $today=Get-Date -Format "MM-dd-yyyy"
-    $deploymentName="addstorage-"+"$today"
-    New-AzResourceGroupDeployment `
-      -Name $deploymentName `
-      -TemplateFile $templateFile
-    ```
+```azurepowershell
+$templateFile = "azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="addstorage-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile
+```
 
 ::: zone-end
 
@@ -268,4 +268,4 @@ Here, you change the name of the deployment to better reflect what this deployme
 
     :::image type="content" source="../media/3-show-resource-deployed.png" alt-text="Azure portal interface for the specific deployment with one resource listed." border="true":::
 
-1. See that the storage account has been deployed.
+1. Notice that the storage account has been deployed.
