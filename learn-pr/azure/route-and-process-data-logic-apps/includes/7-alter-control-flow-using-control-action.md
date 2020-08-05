@@ -34,8 +34,8 @@ Each type has a set of operators you can use in your comparisons. The following 
 
 Most of the operations are intuitive, but there are two cases worth mentioning:
 
-* String comparisons are all case sensitive.
-* JSON comparisons use what's called *deep* equals. This comparison means the equality operators will compare the entire objects, including any descendant tokens inside complex objects.
+- String comparisons are all case sensitive.
+- JSON comparisons use what's called *deep* equals. This comparison means the equality operators will compare the entire objects, including any descendant tokens inside complex objects.
 
 ### Combine expressions using **AND** and **OR**
 
@@ -57,8 +57,8 @@ if (score is-greater-than 0.7 AND TweetedBy does-not-contain "MyCompany")
 
 Suppose you want to build an expression to identify influential tweets. You decide that there are two criteria that would qualify:
 
-* The sentiment score is above 0.9 and the tweet has been marked as a favorite
-* The retweet count is greater than 1000.
+- The sentiment score is above 0.9 and the tweet has been marked as a favorite.
+- The retweet count is greater than 1000.
 
 You want to build an expression like the following pseudo-code to capture this idea:
 
@@ -85,7 +85,7 @@ if ([a AND b] OR c) // OK
 
 A *switch* action compares a value against several cases and executes only the one that matches. The supported types for a *switch* expression are *string* and *integer*. A *switch* can include a *default* action that runs if there's no match.
 
-For example, suppose you are processing an email message and want to respond differently based on the message **Importance**. The **Importance** in an Outlook email is an integer between 0 and 2. The following pseudo-code shows how you might build a *switch* action for email importance. 
+For example, suppose you are processing an email message and want to respond differently based on the message **Importance**. The **Importance** in an Outlook email is an integer between 0 and 2. The following pseudo-code shows how you might build a *switch* action for email importance.
 
 ```
 switch (Importance)
@@ -110,9 +110,9 @@ foreach url in MediaUrls
 
 The *until* loop action runs a group of actions multiple times. You can set three different stop criteria and the loop runs until one of them is true:
 
-* Condition: an expression evaluated after every iteration
-* Count: the maximum number of iterations (the default is 60)
-* Timeout: the maximum clock time allowed specified using ISO 8601 format (the default is one hour).
+- Condition: an expression evaluated after every iteration
+- Count: the maximum number of iterations (the default is 60).
+- Timeout: the maximum clock time allowed specified using ISO 8601 format (the default is one hour).
 
 This loop can be used to process data, but it's also a good option when you need to retry a networking operation until it succeeds or times out. For example, suppose your app needed to run an action that made an HTTP request. You could use an *until* loop similar to that shown in the following pseudo-code (the time value "PT5M" is equal to five minutes):
 

@@ -28,13 +28,13 @@ Our fictional shoe company needed to monitor social media, move old videos to ar
 
 There are a few interesting things to think about in this analysis.
 
-* The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process.
+- The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process.
 
-* The online sales process would likely include complex business logic. For example, we might have different approval processes based on the purchase amount or different shippers based on the destination. Logic Apps can easily handle these conditions. It's up to us whether we want to embed these business rules in our app.
+- The online sales process would likely include complex business logic. For example, we might have different approval processes based on the purchase amount or different shippers based on the destination. Logic Apps can easily handle these conditions. It's up to us whether we want to embed these business rules in our app.
 
-* The online sales process would probably use a mix of built-in and custom connectors. We could use built-in connectors for email notifications and database access but would probably need a custom connector to talk to our payment processing service.
+- The online sales process would probably use a mix of built-in and custom connectors. We could use built-in connectors for email notifications and database access but would probably need a custom connector to talk to our payment processing service.
 
-* The performance of Logic Apps will work well for all the tasks. Some of them may process large amounts of data, but Logic Apps scales automatically to handle high throughput or spikes in demand. None of these tasks require very low latency response time. We'd need to have near-realtime constraints for that to be an issue.
+- The performance of Logic Apps will work well for all the tasks. Some of them may process large amounts of data, but Logic Apps scales automatically to handle high throughput or spikes in demand. None of these tasks require very low latency response time. We'd need to have near-realtime constraints for that to be an issue.
 
 Logic Apps could work for all of these tasks. The online sales process is the only one where we'd want to weigh all our options. Logic Apps would be a good choice if we had the resources to build the custom connectors we'd need.
 

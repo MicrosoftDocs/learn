@@ -38,7 +38,7 @@ Compose: "https://twitter.com/" + [TweetedBy] + "/status/" + [TweetId]
 
 ### Alter control flow
 
-The *control action* feature of Logic Apps lets you add control constructs like conditional statements and loops to your app. The social-media monitor app will use a control action to branch based on whether the tweet sentiment is positive or negative. We'll see how this works and discuss all the control actions later in this module. 
+The *control action* feature of Logic Apps lets you add control constructs like conditional statements and loops to your app. The social-media monitor app will use a control action to branch based on whether the tweet sentiment is positive or negative. We'll see how this works and discuss all the control actions later in this module.
 
 ## Action parameters and return values
 

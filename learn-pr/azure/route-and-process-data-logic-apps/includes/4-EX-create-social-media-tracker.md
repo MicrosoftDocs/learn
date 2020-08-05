@@ -51,9 +51,9 @@ When you create an Azure Logic App in the Azure portal, you have the option of s
 
 Now that we have our Logic App created, we need to add a trigger. We're going to use the **When-a-new-tweet-is-posted** polling trigger from the Twitter connector. There are three required parameters:
 
-* **Search text**: Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
-* **Frequency**: Unit of time for search frequency. For example, Second, Minute, Hour, or Day.
-* **Interval**: How often to search. For example, an interval of "3" and a frequency of "Hour" would check for new tweets every three hours.
+- **Search text:** Text to look for in the tweet text. You can include a hashtag character at the beginning of the search text to search for hashtags.
+- **Frequency:** Unit of time for search frequency. For example, Second, Minute, Hour, or Day.
+- **Interval:** How often to search. For example, an interval of "3" and a frequency of "Hour" would check for new tweets every three hours.
 
 Let's now create the trigger and provide values for all required parameters.
 

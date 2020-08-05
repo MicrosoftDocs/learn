@@ -4,17 +4,17 @@ In this exercise, we're going to continue work on our social-media monitor app. 
 
 ## Get Text Analytics Key and endpoint
 
-The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. We'll run a script in this section to programmatically set up a Cognitive Services account in the sandbox, register the Text Analytics service, and return a key and the endpoint URL to us. We'll need those values in this exercise to make calls and get back sentiment scores. 
+The Azure Text Analytics API provides natural language processing of text. It lets you do sentiment analysis, key phrase extraction, language detection, and entity linking. We'll be using it for sentiment analysis. We'll run a script in this section to programmatically set up a Cognitive Services account in the sandbox, register the Text Analytics service, and return a key and the endpoint URL to us. We'll need those values in this exercise to make calls and get back sentiment scores.
 
-The Cognitive Services account is created in the sandbox environment and is, therefore, free for use in this module. 
+The Cognitive Services account is created in the sandbox environment and is, therefore, free for use in this module.
 
-1. In the Cloud Shell to the right, run the following curl command to copy the **setup-textanalytics.sh** script from GitHub
+1. In the Cloud Shell to the right, run the following curl command to copy the **setup-textanalytics.sh** script from GitHub.
 
     ```azurecli
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-textanalytics.sh > setup-textanalytics.sh
     ```
 
-1. Run the following command to execute the script. This command will take a couple of minutes. 
+1. Run the following command to execute the script. This command will take a couple of minutes.
 
     ```azurecli
     bash setup-textanalytics.sh
@@ -24,11 +24,11 @@ The Cognitive Services account is created in the sandbox environment and is, the
      - **Cognitive Services account key**
      - **Cognitive Services account endpoint**
 
-    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise when we update our app in the portal. 
+    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise when we update our app in the portal.
 
 ## Locate the Detect-sentiment action
 
-Here, we'll locate the Detect-sentiment action using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). 
+Here, we'll locate the Detect-sentiment action using the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
 
 1. Return to the Logic App designer by selecting **Logic app designer**. This button is located under the Development Tools section of the left navigation bar.
 

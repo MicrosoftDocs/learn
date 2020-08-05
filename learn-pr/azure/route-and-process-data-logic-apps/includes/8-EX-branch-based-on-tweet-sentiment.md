@@ -4,15 +4,15 @@ In this exercise, we're going to continue work on our social-media monitor app. 
 
 ## Create SQL Server database to store positive tweets
 
-When we receive a positive tweet, we want to save it to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs; the database runs in the sandbox and is free for the purposes of this exercise. 
+When we receive a positive tweet, we want to save it to a backend database. In this section, we'll run a script to create a database in the sandbox for us to use. You incur no costs; the database runs in the sandbox and is free for the purposes of this exercise.
 
-1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from GitHub
+1. In the Cloud Shell to the right, run the following curl command to copy the **setup-sql-database.sh** script from GitHub.
 
     ```azurecli
     curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-route-and-process-data-logic-apps/master/setup-sql-database.sh > setup-sql-database.sh
     ```
 
-1. Run the following command to run the script. This command will take a couple of minutes. 
+1. Run the following command to run the script. This command will take a couple of minutes.
 
     ```azurecli
     bash setup-sql-database.sh
@@ -24,7 +24,7 @@ When we receive a positive tweet, we want to save it to a backend database. In t
      - **SQL password**
      - **SQL database name**
 
-    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise as we update our app in the Azure portal. 
+    Save the values that are displayed in the Cloud Shell somewhere safe. We need them in this exercise as we update our app in the Azure portal.
 
 ## Create a Condition control action
 
@@ -74,9 +74,9 @@ Now that we have located the SQL Server action, let's create it. During creation
 
 1. Type **SQLConnection** in the Connection Name field.
 
-1. Select the SQL Server that you created earlier. 
+1. Select the SQL Server that you created earlier.
 
-1. in **SQL Database Name**, select `PositiveTweetDatabase`, which is the name of the database we created with our script. 
+1. in **SQL Database Name**, select `PositiveTweetDatabase`, which is the name of the database we created with our script.
 
 1. Enter the **SQL username** and **SQL password** that you saved earlier when the setup script finished.
 
@@ -109,7 +109,7 @@ The SQL Server action is now created; however, we need to specify how the tweet 
 When the **Score** value is greater than **0.7**, we add the tweet to a SQL database. Let's now take tweets that are **0.7** or less and forward them to customer support through email. To start, we need to locate the Outlook **Send an email** action.
 
 > [!NOTE]
-> If you do not have an Outlook.com email account and prefer not to create one, you can change the connectors search filter to *send an email* and select another email provider such as Gmail and Office 365 Outlook. 
+> If you do not have an Outlook.com email account and prefer not to create one, you can change the connectors search filter to *send an email* and select another email provider such as Gmail and Office 365 Outlook.
 
 1. In the **If false** section of the Condition action, select **Add an action**.
 
@@ -151,13 +151,13 @@ The control action is now properly configured and running. Let's examine the SQL
 
 1. In the left navigation bar, select **Query editor**.
 
-1. Sign in using the **Server admin login** and **Password** that you saved when the script in the preceding unit created 
+1. Sign in using the **Server admin login** and **Password** that you saved when the script in the preceding unit created.
 
 1. Click **OK**.
 
 1. Select **+ New Query** on the top navigation bar.
 
-1. In the query editor type `Select * from dbo.mentions` 
+1. In the query editor type `Select * from dbo.mentions`.
 
 1. Select  **Run** to run the query and list all positive tweets that have been written to the database.
 

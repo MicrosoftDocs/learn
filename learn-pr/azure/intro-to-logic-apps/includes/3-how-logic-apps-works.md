@@ -26,9 +26,9 @@ Workflows are built from different types of tasks. For example, in our social-me
 
 Let's be more specific about the definitions for trigger and action:
 
-* A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, when a timer expires or data becomes available.
+- A *trigger* is an event that occurs when a specific set of conditions is satisfied. Triggers activate automatically when conditions are met. For example, when a timer expires or data becomes available.
 
-* An *action* is an operation that executes a task in your business process. Actions run when a trigger activates or another action completes.
+- An *action* is an operation that executes a task in your business process. Actions run when a trigger activates or another action completes.
 
 A connector is a container for related triggers and actions. Let's look at a few examples.
 
@@ -68,10 +68,10 @@ Most workflows need to do different actions based on the data being processed. F
 
 *Control actions* are special actions built-in to Logic Apps that provides these control constructs:
 
-* *Condition* statements controlled by a Boolean expression
-* *Switch* statements
-* *For each* and *Until* loops
-* Unconditional *Branch* instructions.
+- *Condition* statements controlled by a Boolean expression
+- *Switch* statements
+- *For each* and *Until* loops.
+- Unconditional *Branch* instructions.
 
 The following illustration shows the use of a *Condition* statement in the social-media monitoring application.
 
