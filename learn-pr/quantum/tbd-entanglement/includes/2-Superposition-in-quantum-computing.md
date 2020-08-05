@@ -69,11 +69,12 @@ This linear combination of $\ket{\psi_1}$ and $\ket{\psi_2}$ is called a
 superposition of $\ket{\psi_1}$ and $\ket{\psi_2}$. Here, $a$ and $b$ are the
 probability amplitudes of $\ket{\psi_1}$ and $\ket{\psi_2}$, respectively.
 Remember that in the module [Create your first Q# program by using the Quantum
-Development Kit](todo) we already used superposition to create a quantum random
-number generator. We used the operator `H` to put a qubit in the state $\ket{0}$
-into superposition. Mathematically this is:
-$$ \hat H \ket{0} = \frac1{\sqrt2}
-\ket{0} + \frac1{\sqrt2} \ket{1}.$$
+Development
+Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit)
+we already used superposition to create a quantum random number generator. We
+used the operator `H` to put a qubit in the state $\ket{0}$ into superposition.
+Mathematically this is: $$ \hat H \ket{0} = \frac1{\sqrt2} \ket{0} +
+\frac1{\sqrt2} \ket{1}.$$
 
 Linearity is a fundamental property of
 quantum mechanics and therefore of quantum computing.
@@ -119,7 +120,7 @@ sum to one.
 
 In the example state we produced for the quantum random bit generator,
 $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability
-for each state is: 
+for each state is:
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
 $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
