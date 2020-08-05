@@ -11,7 +11,8 @@ You'll modify the app to include some Polly resiliency handling policies in a mi
 
 In this module, you will:
 
-* Understand the key resiliency concepts.
+* Understand foundational resiliency concepts.
+* Observe the behavior of a microservice with no resiliency strategy.
 * Implement failure handling code for HTTP requests in one microservice.
 * Deploy Linkerd to an AKS cluster to implement an infrastructure-based resiliency solution.
 
@@ -19,5 +20,5 @@ In this module, you will:
 
 * Familiarity C# and ASP.NET Core development at the beginner level
 * Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
-* Conceptual knowledge of containers at the beginner level
+* Conceptual knowledge of containers and AKS at the intermediate level
 * Access to an Azure subscription with **Owner** privilege
