@@ -61,4 +61,4 @@ You've now seen how to update firewall rules for specific IP addresses or ranges
 
 In the video that follows, you can see how to create, configure, and compare the various methods of connecting to Azure SQL Database: Allow access to Azure resources, Firewall rules Virtual Network rules, and Private Endpoint.
 
-> [!VIDEO https://channel9.msdn.com/Series/Azure-SQL-for-Beginners/Demo-Network-Security-for-Azure-SQL-Database-23-of-61/player?format=ny]`
+> [!VIDEO https://channel9.msdn.com/Series/Azure-SQL-for-Beginners/Demo-Network-Security-for-Azure-SQL-Database-23-of-61/player?format=ny]
