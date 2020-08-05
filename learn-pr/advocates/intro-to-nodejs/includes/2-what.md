@@ -24,6 +24,6 @@ The Node.js environment also offers an npm registry that you can use to share yo
 
 Node.js is fast, high-performing, and able to handle real-time applications and heavy data flows. An example use case might be building a device that can send control commands to your standing desk. You could install Node.js on your IoT board, or use a device that comes with Node.js preinstalled. You'd then write your application logic in JavaScript and deploy it on the device.
 
-:::image type="content" source="../media/iot-example.jpeg" alt-text="Example use case showing an Internet of Things (IoT) desktop controller that uses Node.js to run Javascript.":::
+:::image type="content" source="../media/iot-example.jpeg" alt-text="Example use case showing an Internet of Things (IoT) desktop controller that uses Node.js to run JavaScript.":::
 
 In the next unit, we'll take a closer look at the Node.js architecture and how it works.
