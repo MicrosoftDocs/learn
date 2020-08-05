@@ -2,7 +2,7 @@ In this module, you were introduced to Azure Resource Manager templates (ARM tem
 
 In summary, you:
 
-- Used Visual Studio Code to create an ARM template.
+- Implemented an ARM template by using Visual Studio Code.
 - Declared resources and added flexibility to your template by adding resources, parameters, and outputs.
 
 <!-- ## Next steps

@@ -108,7 +108,7 @@ Here, you use parameters to limit the values allowed for a parameter.
      }
     ```
 
-      Here you're listing the values that this parameter will allow. If the template runs with a value that isn't allowed, the deployment will fail.
+      Here, you're listing the values that this parameter will allow. If the template runs with a value that isn't allowed, the deployment will fail.
 
 1. Add a comment to this parameter.
 
@@ -132,7 +132,7 @@ Here, you use parameters to limit the values allowed for a parameter.
 
 ### Deploy the ARM template
 
-Here you deploy successfully by using a ```storageSKU``` parameter that's in the allowed list. Then you try to deploy the template by using a ```storageSKU``` parameter that isn't in the allowed list. The second deployment will fail as expected.
+Here, you deploy successfully by using a ```storageSKU``` parameter that's in the allowed list. Then you try to deploy the template by using a ```storageSKU``` parameter that isn't in the allowed list. The second deployment will fail as expected.
 
 ::: zone pivot="cli"
 
@@ -206,7 +206,7 @@ Here you deploy successfully by using a ```storageSKU``` parameter that's in the
 
 ## Add output to the ARM template
 
-Here you add to the ```outputs``` section of the ARM template to output the endpoints for the storage account resource.
+Here, you add to the ```outputs``` section of the ARM template to output the endpoints for the storage account resource.
 
 1. In the *azuredeploy.json* file in Visual Studio Code, place your curser inside the braces in the outputs attribute ```"outputs":{},```.
 1. Select <kbd>Enter</kbd>, and then enter **out**. You see a list of related snippets. Choose **arm-output**. It adds a generic output to the template. It will look like this:
@@ -278,6 +278,6 @@ Here, you deploy the template and see the endpoints output as JSON. You need to 
 
 ### Check your output deployment
 
-In the portal, go to your *addOutputs* deployment. You can find your output there as well.
+In the Azure portal, go to your *addOutputs* deployment. You can find your output there as well.
 
   :::image type="content" source="../media/3-portal-outputs.png" alt-text="Azure portal showing the output selection in the left menu." border="true":::

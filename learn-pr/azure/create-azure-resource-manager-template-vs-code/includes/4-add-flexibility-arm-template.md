@@ -123,11 +123,11 @@ In the outputs section of your ARM template, you can specify values that will be
 }
 ```
 
-- *output-name*: Must be a valid JavaScript identifier.
-- *condition*: (Optional) A Boolean value that indicates whether this output value is returned. When true, the value is included in the output for the deployment. When false, the output value is skipped for this deployment. When not specified, the default value is true.
-- *type*: The type of the output value.
-- *value*: (Optional) A template language expression that's evaluated and returned as an output value.
-- *copy*: (Optional) Copy is used to return more than one value for an output.
+- **output-name**: Must be a valid JavaScript identifier.
+- **condition**: (Optional) A Boolean value that indicates whether this output value is returned. When true, the value is included in the output for the deployment. When false, the output value is skipped for this deployment. When not specified, the default value is true.
+- **type**: The type of the output value.
+- **value**: (Optional) A template language expression that's evaluated and returned as an output value.
+- **copy**: (Optional) Copy is used to return more than one value for an output.
 
 ### Use outputs in an ARM template
 
