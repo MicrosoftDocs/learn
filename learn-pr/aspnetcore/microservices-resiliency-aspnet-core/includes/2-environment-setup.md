@@ -29,9 +29,9 @@ The script deploys a modified version of the *:::no-loc text="eShopOnContainers"
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
-This module focuses on making the coupon service resilient.
+This module focuses on adding resiliency to the coupon service depicted in the preceding diagram.
 
-The script will take several minutes to complete. While the script is running, continue to the next unit to review resiliency concepts.
+The script takes several minutes to complete. While the script is running, continue to the next unit to review resiliency concepts.
 
 > [!NOTE]
 > Non-blocking warnings are expected in the deployment process. If an unexpected exception occurs, you can reset any changes made by the script by running the following command:
