@@ -1,12 +1,12 @@
-Lets pick 5 random images and see if our model can tell what type of rock it is:
+Lets pick five random images and see if our model can tell what type of rock it is.
 
-The following code gets 5 random images and store their data in variables. We use 5 images to test our AI system, but you can choose any number. After you run the code, change the number to 10, and then run the code again.
+The following code gets five random images and stores their data in variables. We use five images to test our AI system, but you can choose any number. After you run the following code, change the number to 10, and then run the code again.
 
 ```python
 images, labels = get_random_images(5)
 ```
 
-This code visualizes the new images and add captions that indicate what type of rock the model determines the picture to be.
+This code visualizes the new images and add captions that indicate what type of rock the model determines the picture contains.
 
 ```python
 to_pil = transforms.ToPILImage()
@@ -25,6 +25,6 @@ for ii in range(len(images)):
 plt.show()
 ```
 
-The example images are labeled **Actual Rock Type : True / False**
+The example images are labeled **Actual Rock Type : True / False**.
 
 **True** and **False** indicate whether our AI system correctly classified it.
