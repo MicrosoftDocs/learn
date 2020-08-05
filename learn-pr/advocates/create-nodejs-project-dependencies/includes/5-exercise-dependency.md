@@ -1,29 +1,29 @@
-Tailwind Traders realize that they're about to put extensive development resources on developing apps for the Node.js platform. One thing all these apps is going to need is testing. After some analysis, they've found Node.js to have limited testing capabilities. You will therefore need to depend on a framework. They've found Jest at the NPM registry, it seems widely used and promises to be a zero-config test framework. All they want from you at this point is to install Jest, write a couple of tests and run them to see if it delivers on its promise. 
+The developers at Tailwind Traders realize that they're about to put extensive resources into developing apps for the Node.js platform. These apps are going to need testing. After some analysis, they find that Node.js has limited testing capabilities. So they need to use a framework. They've found Jest in the npm registry. It seems to be widely used and promises to be a zero-config test framework. At this point, they just want you to install Jest, write a couple tests, and run them to see if Jest delivers on its promise. 
 
-## Add a testing package using the NPM tool
+## Add a testing package by using the npm tool
 
-You've been given some app code that parses an address from a string. So your task should be fairly straightforward and involve installing the test framework, write a couple of tests and run them.
+You're given some code that parses an address from a string. Your task should be fairly straightforward. It involves installing the test framework, writing a couple tests, and running them.
 
-1. Clone the following `https://github.com/MicrosoftDocs/node-essentials/` by typing the following command:
+1. Clone `https://github.com/MicrosoftDocs/node-essentials/` by running this command:
 
    ```bash
    git clone `https://github.com/MicrosoftDocs/node-essentials/`
    ```
 
-1. Navigate to your files by typing the following command:
+1. Go to your files by running this command:
 
    ```bash
    cd node-essentials/node-dependencies/5-exercise-dependency
    ```
 
-1. You should now have access to the following files:
+   You should now have access to these files:
 
    ```bash
    -| address-parser.js
    -| package.json
    ```
 
-1. Open up `address-parser.js`, it should look like so:
+1. Open address-parser.js. It should look like this file:
 
    ```javascript
    exports.parse = function parseOrder(order) {
@@ -32,15 +32,15 @@ You've been given some app code that parses an address from a string. So your ta
    }
    ```
 
-   The above function takes a string and parses out information on what a customer orders, where it should be delivered to an how to pay for it. Let's add Jest and write some tests for it next.
+   The preceding function takes a string and parses out information about what a customer orders, where it should be delivered, and how it will be paid for. Let's add Jest and write some tests for the function.
 
-1. Install the Jest library with the following command
+1. Install the Jest library by running this command:
 
    ```bash
    npm install jest --save-dev
    ```
 
-   Open up `package.json` and locate the `devDependencies` section. You should now have an entry that looks like this:
+   Open the package.json file and find the `devDependencies` section. You should now have an entry that looks like this one:
 
    ```json
    "devDependencies": {
@@ -48,9 +48,9 @@ You've been given some app code that parses an address from a string. So your ta
     }
    ```
 
-1. Create the directory `__tests__` and inside of it the file `address-parser.js`
+1. Create a \_\_tests\_\_ folder. Inside of it, create an address-parser.js file.
 
-   Your project structure should now look like so:
+   Your project structure should now look like this one:
 
    ```bash
    -| package.json
@@ -59,7 +59,7 @@ You've been given some app code that parses an address from a string. So your ta
    ---| address-parser.js
    ```
 
-1. Add the following content to `__tests__/address-parser.js`:
+1. Add the following content to \_\_tests\_\_\/address-parser.js:
 
    ```javascript
    const { parse } = require("../address-parser");
@@ -79,21 +79,21 @@ You've been given some app code that parses an address from a string. So your ta
    })
    ```
 
-   The above is test written to test the parsing of `address-parser.js` and ensure it correctly parses out the needed information.
+   The preceding test is written to test the parsing of address-parser.js and ensure it correctly parses out the needed information.
 
-1. Open up the package.json file and locate the `scripts` section. Add the following entry:
+1. Open the package.json file and find the `scripts` section. Add this entry:
 
    ```json
    "test": "jest"
    ```
 
-1. Run the tests by typing the following command in the terminal:
+1. Run the tests by typing this command in the terminal:
 
    ```bash
    npm run test
    ```
 
-   You should get the following output
+   You should get the following output:
 
    ```output
    Address parser
@@ -106,6 +106,6 @@ You've been given some app code that parses an address from a string. So your ta
    Ran all test suites.
    ```
 
-   Success, your test passes and you've added a new capability *testing* by installing a dependency.
+   Success! Your test passes, and you've added testing by installing a dependency.
 
-Congrats you've managed to successfully install Jest, a dependency, write tests for application code and run the tests. Jest seems to deliver in on its promise and Tailwind Traders are likely to be happy with this evaluation.
+Congratulations. You've managed to successfully install Jest as a dependency, write tests for application code, and run the tests. Jest seems to deliver on its promise, and Tailwind Traders is likely to be happy with this evaluation.

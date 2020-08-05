@@ -19,11 +19,11 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Suppose you have a stateless service that process online orders running on an AKS cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. How does one add spot node pools to an AKS cluster."
+  - content: "Suppose you have a stateless service that process online orders running on an AKS cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. How does one add spot node pools to an AKS cluster?"
     choices:
     - content: "Run the `az aks update command` and specify the `convert-to-spot-vm` parameter."
       isCorrect: false
-      explanation: "It isn't impossible to convert and existing user node pool to a spot node pool."
+      explanation: "It isn't possible to convert an existing user node pool to a spot node pool."
     - content: "Use the Azure portal to add a new spot node pool to the AKS cluster."
       isCorrect: false
       explanation: "The Azure portal currently doesn't support the option to add spot node pools. "
@@ -31,7 +31,7 @@ quiz:
       isCorrect: true
       explanation: "Spot node pools must be added to an AKS cluster, can't be updated, and availability can't be guaranteed since Azure will allocate VMs to the underlying scale set only if there's capacity available."
 
-  - content: "Suppose you have a stateless service that process online orders running on an AKS cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. Which eviction policy will be the most cost effective option to use when configuring the spot node pool."
+  - content: "Suppose you have a stateless service that process online orders running on an AKS cluster. You decide to use spot node pools on the AKS cluster to optimize compute costs on the cluster. Which eviction policy will be the most cost effective option to use when configuring the spot node pool?"
     choices:
     - content: "Use the `az aks update command` and set the `--eviction-policy` to `Hibernate`."
       isCorrect: false
