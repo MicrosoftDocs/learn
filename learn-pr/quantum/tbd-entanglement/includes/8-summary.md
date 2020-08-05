@@ -4,7 +4,7 @@ served you as an introduction to the working principles of quantum computers.
 In this module, we presented a lot of new concepts. Here we list a few concepts
 worth remembering:
 
-- Quantum computers use superposition, interference and entanglement do some
+- Quantum computers use superposition, interference, and entanglement do some
   calculations faster than classical computers.
 - Superposition is a consequence of the linearity of quantum mechanics. We can
   put qubit registers into superpositions in our quantum algorithms.

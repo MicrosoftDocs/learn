@@ -163,7 +163,7 @@ We get a phase of $\frac\pi2$ for $\ket{0}$ and $-\frac\pi2$ for $\ket{1}$.
 Those angles correspond to the positive and negative parts of the imaginary
 y-axis of the complex plane.
 
-## Creating entanglement with Q#
+## Creating entanglement with Q\#
 
 Until now, we used only single qubit operations, this is, operations that act
 over single qubits individually. However, to get qubits entangled we need

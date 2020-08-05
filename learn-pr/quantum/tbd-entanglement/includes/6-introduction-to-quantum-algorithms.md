@@ -28,7 +28,7 @@ The oracle has to act on quantum states instead of classical bits. To enable
 this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
 can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 
-## Deutsch-Jozsa algorithm
+## Deutsch–Jozsa algorithm
 
 This quantum algorithm is famous for being one of the earliest examples of
 quantum computing solving a problem exponentially faster than its classical counterpart. It has very limited real-life applications, but its relative
