@@ -1,6 +1,6 @@
 Containers are an excellent choice when developing software based on microservice architectures. They make efficient use of hardware, provide security features to run multiple instances simultaneously on the same host without affecting each other, and allow a service to be scaled out by deploying more instances.
 
-:::image type="content" source="../../intro-to-docker-containers/media/container_benefits.png" alt-text="Benefits of containerization":::
+:::image type="content" source="../media/container_benefits.png" alt-text="Benefits of containerization":::
 
 The standard container management runtime focuses on managing individual containers. If you want to scale a complex system with multiple containers working together, it will become challenging. Consider the following aspects you'll have to take care of:
 
