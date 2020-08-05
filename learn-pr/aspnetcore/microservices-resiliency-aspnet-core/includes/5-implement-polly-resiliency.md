@@ -113,7 +113,7 @@ Complete the following steps to implement failure handling for the coupon servic
 
 Complete the following steps to deploy the changes that you've implemented:
 
-1. Run the following script to publish the updated Docker image to ACR:
+1. Run the following script to publish the aggregator's updated Docker image to ACR:
 
     ```bash
     ./deploy/k8s/build-to-acr.sh --services webshoppingagg
@@ -208,23 +208,27 @@ Complete the following steps to deploy the changes that you've implemented:
 
 ## Test the app again
 
+The Polly Retry and Circuit Breaker policies have been deployed. It's time to test the app's behavior.
+
 ### Retry policy
 
-Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service. Complete the following steps to test the retry policy:
+Complete the following steps to test the Retry policy:
+
+1. Place an item in the shopping bag and begin the checkout procedure.
 
 1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::**.
 1. Replace the existing discount code with *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective.
+    The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective. Notice that the 10 USD discount was applied.
 1. Run the following command to view the logging page URL. Select the **:::no-loc text="Centralized logging":::** link.
 
     ```bash
     cat ../deployment-urls.txt
     ```
 
-1. Check the log traces. You'll see a variation of the following output:
+1. Check the Seq log traces. You'll see a variation of the following output:
 
     :::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces" border="true" lightbox="../media/5-implement-polly-resiliency/configure-and-retry-logs.png":::
 
@@ -240,8 +244,7 @@ To test the Circuit Breaker policy, you'll configure the code for 20 failures. A
 
 :::image type="content" source="../media/5-implement-polly-resiliency/configure-severe-failure.png" alt-text="configure a severe failure" border="true" lightbox="../media/5-implement-polly-resiliency/configure-severe-failure.png":::
 
-Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service, this time for 20 consecutive failures. Complete the following steps:
-
+1. Place an item in the shopping bag and begin the checkout procedure.
 1. Enter the discount code *:::no-loc text="FAIL 20 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 20 failure(s) configured for code \"DISC-10\"!!":::**.

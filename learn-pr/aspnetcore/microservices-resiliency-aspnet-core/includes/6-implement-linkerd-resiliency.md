@@ -9,7 +9,7 @@ This unit focuses on replacing the code-based resiliency. An infrastructure-base
 
 ## Redeploy the app
 
-Before applying Linkerd, let's revert the app to a state before we added code-based resiliency. To revert, redeploy the unmodified `webshoppingagg` image using the following command:
+Before applying Linkerd, revert the app to a state before code-based resiliency was added. To revert, redeploy the unmodified `webshoppingagg` image using the following command:
 
 ```bash
 ./deploy/k8s/deploy-application.sh --registry eshopdev --charts webshoppingagg
@@ -21,7 +21,9 @@ You may verify the app is again failing as expected using the same steps as befo
 1. Select the basket icon.
 1. Select **:::no-loc text="CHECKOUT":::**.
 1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **:::no-loc text="APPLY":::**.
-1. Change the code to *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::** twice.
+
+    The message **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::** appears.
+1. Change the discount code to *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::** twice.
 1. Verify that you receive the message **:::no-loc text="ERROR: 500 - Internal Server Error!":::** immediately after selecting **:::no-loc text="APPLY":::** each time.
 
 ### Validate the AKS cluster
@@ -106,6 +108,56 @@ linkerd check
 The preceding command analyzes the configurations of the Linkerd CLI and control plane. If Linkerd is configured correctly, the following output is displayed:
 
 ```console
+kubernetes-api
+--------------
+√ can initialize the client
+√ can query the Kubernetes API
+
+kubernetes-version
+------------------
+√ is running the minimum Kubernetes API version
+√ is running the minimum kubectl version
+
+linkerd-existence
+-----------------
+√ 'linkerd-config' config map exists
+√ heartbeat ServiceAccount exist
+√ control plane replica sets are ready
+√ no unschedulable pods
+√ controller pod is running
+√ can initialize the client
+√ can query the control plane API
+
+linkerd-config
+--------------
+√ control plane Namespace exists
+√ control plane ClusterRoles exist
+√ control plane ClusterRoleBindings exist
+√ control plane ServiceAccounts exist
+√ control plane CustomResourceDefinitions exist
+√ control plane MutatingWebhookConfigurations exist
+√ control plane ValidatingWebhookConfigurations exist
+√ control plane PodSecurityPolicies exist
+
+linkerd-identity
+----------------
+√ certificate config is valid
+√ trust anchors are using supported crypto algorithm
+√ trust anchors are within their validity period
+√ trust anchors are valid for at least 60 days
+√ issuer cert is using supported crypto algorithm
+√ issuer cert is within its validity period
+√ issuer cert is valid for at least 60 days
+√ issuer cert is issued by the trust anchor
+
+linkerd-api
+-----------
+√ control plane pods are ready
+√ control plane self-check
+√ [kubernetes] control plane can talk to Kubernetes
+√ [prometheus] control plane can talk to Prometheus
+√ tap api service is running
+
 linkerd-version
 ---------------
 √ can determine the latest version
@@ -188,7 +240,7 @@ The preceding change instructs Nginx to add a request header named `l5d-dst-over
 
 ### Deploy the updated Helm charts
 
-Use the following command to redeploy the updated charts:
+Run the following command to redeploy the updated charts:
 
 ```bash
 ./deploy/k8s/deploy-application.sh --registry eshopdev --charts apigateway,coupon,webshoppingagg
@@ -200,8 +252,9 @@ The updated pods each have two containers now (`0/2`). One is the service contai
 
 ## Test the app again
 
-After the redeployed containers are healthy, test the app's behavior with Linkerd. Place an item in the shopping bag and begin the checkout procedure. Repeat the earlier steps to configure multiple failures from the coupon service. Complete the following steps to test the retry policy:
+After the redeployed containers are healthy, use the following steps to test the app's behavior with Linkerd:
 
+1. Place an item in the shopping bag and begin the checkout procedure.
 1. Select the **:::no-loc text=".NET FOUNDATION PIN":::**.
 1. Select the basket icon.
 1. Select **:::no-loc text="CHECKOUT":::**.

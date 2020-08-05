@@ -41,7 +41,7 @@ You can begin exploring these services (when ready):
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
 
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
+1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. A green checkmark icon denotes a healthy service. The page refreshes automatically, every 10 seconds.
 
     :::image type="content" source="../media/4-verify-deployment/health-checks-status-page.png" alt-text="health checks status dashboard" border="true" lightbox="../media/4-verify-deployment/health-checks-status-page.png":::
 
@@ -60,9 +60,11 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
     :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
 
+You've successfully verified that the app was deployed to AKS and is working properly.
+
 ## Explore the response of a non-resilient app
 
-You've successfully verified that the app was deployed to AKS and is working properly. Complete the following steps to see how the app responds without a resiliency solution in place.
+Complete the following steps to see how the app responds without a resiliency solution in place.
 
 ### Configure simulated failure
 
@@ -88,7 +90,7 @@ This configuration causes the next two requests for the *:::no-loc text="DISC-10
 1. Replace the existing discount code with *:::no-loc text="DISC-10":::*.
 1. Select the **:::no-loc text="APPLY":::** button. You'll receive the message **:::no-loc text="ERROR: 500 - Internal Server Error!":::**.
 1. Select the **:::no-loc text="APPLY":::** button again. You'll receive the same message once more.
-1. Select the **:::no-loc text="APPLY":::** button for a third time. This time, the code validation succeeds and the discount is applied to the order.
+1. Select the **:::no-loc text="APPLY":::** button for a third time. This time, the code validation succeeds and the 10 US dollar (USD) discount is applied to the order.
 1. Select the **:::no-loc text="Centralized logging":::** link in the command shell to view the Seq logs.
 
 In the two failed attempts to apply the *:::no-loc text="DISC-10":::* code, notice that you received the error message immediately. Check the log traces. You'll see a variation of the following output:
@@ -100,4 +102,4 @@ In the preceding image, you can see that:
 - The first two requests, labeled as ":::no-loc text="1":::" and ":::no-loc text="2":::", fail when getting the values.
 - The third request, labeled as ":::no-loc text="3":::", succeeds and returns the expected value, labeled as ":::no-loc text="4":::".
 
-In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll add code-based resiliency with Polly to the coupon service in the next unit.
+In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. Next, you'll add code-based resiliency with Polly to the coupon service.
