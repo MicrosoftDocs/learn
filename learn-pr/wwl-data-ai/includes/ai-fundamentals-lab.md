@@ -14,4 +14,4 @@ If you haven't already created a Visual Studio Codespace based on the **Microsof
 3. Wait for the codespace to be created. This will take around 3 minutes, during which time:
     - A script will initialize and configure your codespace.
     - A list of notebook (.ipynb) files will appear in the pane on the left.
-4. After the Codespace has been created, you can close the **Welcome** and **Creation Log** panes. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**. A light color theme is recommended to make it easier to read the Python code in the notebooks.
+4. After the Codespace has been created, you can close the **Welcome** pane, and others that were opened during setup. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**. A light color theme is recommended to make it easier to read the Python code in the notebooks.

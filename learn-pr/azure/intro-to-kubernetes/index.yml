@@ -16,7 +16,7 @@ abstract: |
   - Describe the difference between master nodes and nodes in a Kubernetes cluster
   - Describe how the components of Kubernetes work to support compute container orchestration
 prerequisites: |
-  - Basic understanding of microservices
+  - Basic concepts of microservice architectures
   - Basic understanding of how Docker containers work
   - Basic knowledge of how to install software by using a command-line interface
 iconUrl: /learn/achievements/introduction-to-kubernetes.svg
