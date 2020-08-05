@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-a-language-translator-mixed-reality-application.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Introduction
+  ms.date: 08/05/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

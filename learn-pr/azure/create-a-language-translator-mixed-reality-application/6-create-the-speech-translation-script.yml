@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.create-a-language-translator-mixed-reality-application.6-create-the-speech-translation-script
+title: Create the speech translation script
+metadata:
+  title: Create the speech translation script
+  description: Create the speech translation script
+  ms.date: 08/05/2020
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-create-the-speech-translation-script.md)]
