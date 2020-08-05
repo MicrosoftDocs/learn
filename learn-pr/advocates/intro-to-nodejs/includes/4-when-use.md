@@ -1,12 +1,12 @@
-Node.js is one of the most widely used technologies by many major companies, startups, and organizations, including Netflix, Trello, Walmart, Uber, eBay, and NASA.
+Node.js is one of the most widely used technologies by many companies, startups, and government organizations. These include major enterprises like Netflix, Trello, Walmart, Uber, eBay, and NASA.
 
-Node.js is a JavaScript runtime that can run and execute your JavaScript applications and code on a server in particular, and outside a browser in general. Node.js is a single-threaded non-blocking runtime based on the event-driven I/O paradigm. *Non-blocking* means that (for example) when a remote client makes a request, a server written in JavaScript and running on Node.js would handle the request, construct and send back a response, and then move on to the next request, without blocking and waiting for other tasks to finish.
+Node.js is a JavaScript runtime that can run your JavaScript applications and code on a server in particular, and outside a browser in general. Node.js is a single-threaded non-blocking runtime based on the event-driven I/O paradigm. *Non-blocking* means that (for example) when a remote client makes a request, a server written in JavaScript and running on Node.js would handle the request, construct and send back a response, and then move on to the next request, without blocking and waiting for other tasks to finish.
 
 This unit describes the main benefits of using Node.js, and when to use it.
 
 ## Multi-purpose technology
 
-You can use Node.js to build a wide variety of production-ready applications, from traditional lightweight, high-traffic chat applications to command-line tools and web servers. Node.js was designed from the ground up to handle a high number of concurrent requests.
+You can use Node.js to build a wide variety of production-ready applications. These can range from traditional lightweight, high-traffic chat applications to command-line tools and web servers. Node.js was designed from the ground up to handle a high number of concurrent requests.
 
 ## JavaScript
 

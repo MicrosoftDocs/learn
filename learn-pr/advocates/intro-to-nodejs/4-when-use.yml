@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!INCLUDE [Why might you need Node.js?](includes/4-when-use.md)]
+  [!include[](includes/4-when-use.md)]

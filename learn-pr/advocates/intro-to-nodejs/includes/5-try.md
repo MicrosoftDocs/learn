@@ -2,7 +2,7 @@ In this unit, you'll create and run a simple Hello World Node.js script.
 
 ## Node.js REPL
 
-Node.js has a built-in read-eval-print loop (REPL) mode that's useful for quick code evaluation and experimentation. REPL mode is an interactive console environment where you can enter JavaScript code and have Node.js interpret and execute the code and then print the output.
+Node.js has a built-in read-eval-print loop (REPL) mode that's useful for quick code evaluation and experimentation. REPL mode is an interactive console environment where you can enter JavaScript code and have Node.js interpret and run the code and then print the output.
 
 The Node.js REPL mode works as follows:
 
@@ -69,4 +69,4 @@ $ node index.js
 Hello World, from a script file.
 ```
 
-You have now executed your first Node.js JavaScript code.
+You have now run your first Node.js JavaScript code.

@@ -1,6 +1,6 @@
-Node.js, or Node for short, is an open-source, server-side JavaScript runtime environment. You can use Node.js to execute JavaScript applications and code in many places outside of a browser, such as on a server.
+Node.js, or Node for short, is an open-source, server-side JavaScript runtime environment. You can use Node.js to run JavaScript applications and code in many places outside of a browser, such as on a server.
 
-Node.js is a wrapper around a JavaScript engine called V8 that powers many browsers, including Google Chrome, Opera, and Microsoft Edge. You can use Node.js to execute JavaScript by using the V8 engine outside of a browser. Node.js also contains many V8 optimizations that applications running on a server might need. For example, Node.js adds a **Buffer** class that allows V8 to work with files. This feature makes Node.js a good choice for building something like a web server.
+Node.js is a wrapper around a JavaScript engine called V8 that powers many browsers, including Google Chrome, Opera, and Microsoft Edge. You can use Node.js to run JavaScript by using the V8 engine outside of a browser. Node.js also contains many V8 optimizations that applications running on a server might need. For example, Node.js adds a **Buffer** class that allows V8 to work with files. This feature makes Node.js a good choice for building something like a web server.
 
 Even if you've never used JavaScript as a primary programming language, it might be the right choice for writing robust, modular applications. JavaScript also offers some unique advantages. For example, because browsers use JavaScript, you can use Node.js to share logic like form-validation rules between the browser and the server.
 
@@ -18,12 +18,12 @@ You can build the following types of applications by using Node.js:
 - Shell scripts for file manipulation or network access
 - Machine learning libraries and models
 
-:::image type="content" source="../media/npm.png" alt-text="Node.js and Node Package Manager (NPM) registry":::
+:::image type="icon" source="../media/npm.png":::
 
-The Node.js environment also offers a Node Package Manager (NPM) that you can use to share your own Node.js library.
+The Node.js environment also offers an npm registry that you can use to share your own Node.js library.
 
-Node.js is fast, high-performing, and can handle real-time applications and heavy data flows. An example use case might be building a device that can send control commands to your standing desk. You could install Node.js on your IoT board, or use a device that comes with Node.js preinstalled. You'd then write your application logic in JavaScript and deploy it on the device.
+Node.js is fast, high-performing, and able to handle real-time applications and heavy data flows. An example use case might be building a device that can send control commands to your standing desk. You could install Node.js on your IoT board, or use a device that comes with Node.js preinstalled. You'd then write your application logic in JavaScript and deploy it on the device.
 
-:::image type="content" source="../media/iot-example.jpeg" alt-text="Node.js IoT example":::
+:::image type="content" source="../media/iot-example.jpeg" alt-text="Example use case showing an Internet of Things (IoT) desktop controller that uses Node.js to run Javascript.":::
 
 In the next unit, we'll take a closer look at the Node.js architecture and how it works.

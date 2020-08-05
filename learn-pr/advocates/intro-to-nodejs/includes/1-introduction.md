@@ -1,6 +1,6 @@
 You've been hired by Tailwind Traders, a large retail company that deals with lots of data and files and has many problems to solve. The company performs many operations by using Node.js, but you don’t know how to use this JavaScript runtime environment.
 
-In this module, you’ll learn what Node.js is and how you can use Node.js to execute JavaScript applications and code outside of a browser. By the end of this module, you'll be able to decide whether Node.js is the right tool for your project at Tailwind Traders.
+In this module, you’ll learn what Node.js is and how you can use Node.js to run JavaScript applications and code outside a browser. By the end of this module, you'll be able to decide whether Node.js is the right tool for your project at Tailwind Traders.
 
 ## Learning objectives
 

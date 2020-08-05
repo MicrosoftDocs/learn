@@ -23,7 +23,7 @@ quiz:
           explanation: "Node.js isn't a framework but is sometimes incorrectly described as one."
         - content: "A JavaScript runtime"
           isCorrect: true
-          explanation: "Node.js is a runtime that executes JavaScript applications."
+          explanation: "Node.js is a runtime that runs JavaScript applications."
         - content: "A JavaScript server"
           isCorrect: false
           explanation: "Node.js isn't a server but can be used to implement one."

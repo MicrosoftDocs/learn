@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!INCLUDE [How Node.js works](includes/3-how-works.md)]
+  [!include[](includes/3-how-works.md)]
