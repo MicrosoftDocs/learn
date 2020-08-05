@@ -184,7 +184,7 @@ Add the highlighted lines to the *:::no-loc text="deploy/k8s/helm-simple/apigate
 The preceding change instructs Nginx to add a request header named `l5d-dst-override`. The header's value is set dynamically to the destination service's DNS name and port. The `proxy_set_header` and `grpc_set_header` directives are used for HTTP and gRPC requests, respectively.
 
 > [!NOTE]
-> The *:::no-loc text="eShopOnContainers":::* app uses gRPC for service-to-service communication. More specifically, this synchronous communication is upgraded from HTTP and occurs between the aggregator and the services. Externally accessible endpoints, on the other hand, are RESTful.
+> The *:::no-loc text="eShopOnContainers":::* app uses gRPC for service-to-service communication. More specifically, this synchronous communication is upgraded from HTTP and occurs between the aggregator and the services. Externally accessible endpoints, on the other hand, are RESTful. gRPC is an RPC-based protocol characterized by its high performance and low bandwidth usage. These characteristics make gRPC the best candidate for internal services communication.
 
 ### Deploy the updated Helm charts
 
