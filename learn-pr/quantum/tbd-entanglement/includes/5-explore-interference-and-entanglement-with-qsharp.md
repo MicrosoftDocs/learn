@@ -63,18 +63,18 @@ And the result is:
 ```output
 At the beginning the qubit is in the state |0>.
 # wave function for qubits with ids (least to most significant): 0
-|0?:     1,000000 +  0,000000 i  ==     ******************** [ 1,000000 ]     --- [  0,00000 rad ]
-|1?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
+|0⟩:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
+|1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
 
 After applying H the qubit is in a uniform superposition.
 # wave function for qubits with ids (least to most significant): 0
-|0?:     0,707107 +  0,000000 i  ==     ***********          [ 0,500000 ]     --- [  0,00000 rad ]
-|1?:     0,707107 +  0,000000 i  ==     ***********          [ 0,500000 ]     --- [  0,00000 rad ]
+|0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+|1⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
 
 If we apply H again, interference gives back the state to |0>.
 # wave function for qubits with ids (least to most significant): 0
-|0?:     1,000000 +  0,000000 i  ==     ********************* [ 1,000000 ]     --- [  0,00000 rad ]
-|1?:     0,000000 +  0,000000 i  ==                           [ 0,000000 ]     --- [  0,00000 rad ]
+|0⟩:     1.000000 +  0.000000 i  ==     ********************* [ 1.000000 ]     --- [  0.00000 rad ]
+|1⟩:     0.000000 +  0.000000 i  ==                           [ 0.000000 ]     --- [  0.00000 rad ]
 
 If we measure we always obtain 'Zero'.
 Zero
@@ -119,8 +119,8 @@ And the output:
 
 ```output
 # wave function for qubits with ids (least to most significant): 0
-|0?:     0,707107 +  0,000000 i  ==     ***********          [ 0,500000 ]     --- [  0,00000 rad ]
-|1?:    -0,707107 +  0,000000 i  ==     ***********          [ 0,500000 ] ---     [  3,14159 rad ]
+|0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+|1⟩:    -0,707107 +  0.000000 i  ==     ***********          [ 0.500000 ] ---     [  3,14159 rad ]
 ```
 
 We see how the phase for the state $\ket{0}$ is $\pi$ radians. This is because
@@ -128,7 +128,7 @@ the negative numbers in the complex plane lie in the negative part of the
 x-axis, and so it's $\pi$ radians in polar coordinates. Note that, although
 the phase is non-zero, the probabilities remain the same.
 
-And what about complex amplitudes? If instead of using `X` we use the operation
+And what about complex amplitudes⟩ If instead of using `X` we use the operation
 `Y` we'll rotate the amplitudes to the imaginary axis. Let's see the effect.
 
 The code would be:
@@ -155,8 +155,8 @@ namespace ExploringInterference {
 And the output:
 
 ```output
-|0?:     0,000000 +  0,707107 i  ==     ***********          [ 0,500000 ]        [  1,57080 rad ]
-|1?:     0,000000 + -0,707107 i  ==     ***********          [ 0,500000 ]        [ -1,57080 rad ]
+|0⟩:     0.000000 +  0.707107 i  ==     ***********          [ 0.500000 ]        [  1.57080 rad ]
+|1⟩:     0.000000 + -0,707107 i  ==     ***********          [ 0.500000 ]        [ -1.57080 rad ]
 ```
 
 We get a phase of $\frac\pi2$ for $\ket{0}$ and $-\frac\pi2$ for $\ket{1}$.
@@ -213,17 +213,17 @@ And the output:
 ```output
 Entangled state before measurement:
 # wave function for qubits with ids (least to most significant): 0;1
-|0?:     0,707107 +  0,000000 i  ==     ***********          [ 0,500000 ]     --- [  0,00000 rad ]
-|1?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
-|2?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
-|3?:     0,707107 +  0,000000 i  ==     ***********          [ 0,500000 ]     --- [  0,00000 rad ]
+|0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+|1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
+|2⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
+|3⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
 
 Entangled state after measurement:
 # wave function for qubits with ids (least to most significant): 0;1
-|0?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
-|1?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
-|2?:     0,000000 +  0,000000 i  ==                          [ 0,000000 ]
-|3?:     1,000000 +  0,000000 i  ==     ******************** [ 1,000000 ]     --- [  0,00000 rad ]
+|0⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
+|1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
+|2⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
+|3⟩:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
 [One,One]
 ```
 
