@@ -1,4 +1,4 @@
-In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS).
+In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to AKS.
 
 [!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
