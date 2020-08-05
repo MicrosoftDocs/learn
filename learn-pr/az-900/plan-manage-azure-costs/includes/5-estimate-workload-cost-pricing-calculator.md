@@ -33,7 +33,7 @@ In practice, you would define your requirements in greater detail. But here are 
 * This application doesn't require a massive amount of computing power.
 * The virtual machines and the database run all the time (730 hours/month).
 * The network processes about 1 TB of data per month.
-* The database doesn't need to be configured for high-performance workloads, and requires no more than 32 GB of storage.
+* The database doesn't need to be configured for high-performance workloads and requires no more than 32 GB of storage.
 
 ## Explore the Pricing calculator
 

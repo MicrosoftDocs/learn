@@ -57,7 +57,7 @@ At the end of each month, you're billed for what you've used. At any time, you c
 
 ## What factors affect cost?
 
-The way you use resources, your subscription type, and pricing from from third-party vendors are common factors. Let's take a quick look at each.
+The way you use resources, your subscription type, and pricing from third-party vendors are common factors. Let's take a quick look at each.
 
 ### Resource usage
 
@@ -130,7 +130,7 @@ Think of usage meters similar to how you use electricity or water in your home. 
 
 The usage that a meter tracks correlates to a quantity of billable units. Those are charged to your account for each billing period, and the rate per billable unit depends on the resource type you are using.
 
-Lets look at a single virtual machine as an example. The following kinds of meters are relevant to tracking its usage:
+Let's look at a single virtual machine as an example. The following kinds of meters are relevant to tracking its usage:
 
 * Overall CPU time.
 * Time spent with a public IP address.
@@ -159,7 +159,7 @@ The options that you can configure in the Pricing calculator vary between produc
 
 * **Billing Options**
 
-    Billing options highlight the different ways you can pay for a service. Options can vary based on your customer type and subscription type, and can include options to save costs.
+    Billing options highlight the different ways you can pay for a service. Options can vary based on your customer type and subscription type and can include options to save costs.
 
 * **Support Options**
 

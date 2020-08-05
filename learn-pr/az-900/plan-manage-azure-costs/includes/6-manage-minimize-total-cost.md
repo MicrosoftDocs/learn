@@ -12,7 +12,7 @@ Calculate your projected costs by using the Pricing calculator and the Total Cos
 
 Ideally, you want your provisioned resources to match your actual usage.
 
-Azure Advisor identifies unused or under-utilized resources, and recommends unused resources that you can remove. This helps you configure your resources to match your actual workload.
+Azure Advisor identifies unused or under-utilized resources and recommends unused resources that you can remove. This helps you configure your resources to match your actual workload.
 
 The following image shows six recommendations from Azure Advisor:
 
