@@ -4,9 +4,9 @@ title: Create an Azure Machine Learning workspace
 metadata:
   title: Create an Azure machine learning workspace
   description: "Get ready to train machine learning models by creating an Azure Machine Learning workspace."
-  ms.date: 07/30/2020
+  ms.date: 08/07/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
