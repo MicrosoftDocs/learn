@@ -19,7 +19,7 @@ As Event Hubs receives communications, it divides them into partitions. Partitio
 The buffers are called partitions because the data is divided amongst them. Every event hub has at least two partitions, and each partition has a separate set of subscribers.
 
 #### Capture
-Event Hubs can send all your events immediately to Azure Data Lake or Azure Blob storage for inexpensive, permanent persistence.
+Event Hubs can send all your events immediately to Azure [Data Lake](https://azure.microsoft.com/services/storage/data-lake-storage/) or Azure Blob storage for inexpensive, permanent persistence.
 
 #### Authentication
 All publishers are authenticated and issued a token. This means Event Hubs can accept events from external devices and mobile apps, without worrying that fraudulent data from pranksters could ruin our analysis. 
