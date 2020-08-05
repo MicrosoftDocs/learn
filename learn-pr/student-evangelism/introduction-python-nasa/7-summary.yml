@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.introduction-python-nasa.7-summary
 metadata:
   title: Summary
-  description: Summary
+  description: Summary.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
@@ -20,7 +20,7 @@ quiz:
     - content: "To inspire the next generation to all become astronauts"
       isCorrect: false
       explanation: "That is not the goal of these modules"
-    - content: "To inspire scientists to focus on Space exploration"
+    - content: "To inspire scientists to focus on space exploration"
       isCorrect: false
       explanation: "That is not the goal of these modules"
     - content: "To inspire persistence and innovation in problem solvers of all industries"
@@ -47,7 +47,7 @@ quiz:
     choices:
     - content: "By 2024"
       isCorrect: true
-      explanation: "Correct! This is when Artemis will bring humans to the moon"
+      explanation: "Correct! This is when Artemis will take humans to the Moon"
     - content: "In 3000"
       isCorrect: false
       explanation: "Maybe, but nothing is planned that far ahead"

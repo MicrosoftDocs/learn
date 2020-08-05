@@ -1,14 +1,14 @@
-In this module, you learning about NASA and some of their future missions. You also learned how NASA uses STEM to solve some of their difficult problems and what learning STEM can do for you.
+In this module, you learned about NASA and some of their future missions. You also learned how NASA uses STEM to solve some of their difficult problems and what learning STEM can do for you.
 
-# Knowledge Check
+## Knowledge check
 
 Answers have an * at the end  
 
 What is the goal of NASA-themed Microsoft Learn Modules?  
 - To inspire the next generation to all become astronauts  
-- To inspire scientists to focus on Space exploration  
-- To inspire persistence and innocation in problem solvers of all industries*  
-- To inspire innovations for the Artemis program  
+- To inspire scientists to focus on space exploration  
+- To inspire persistence and innovation in problem solvers of all industries*  
+- To inspire innovations for the Artemis Program  
 
 When was the last time a human landed on the Moon?  
 - Over 300 years ago  
