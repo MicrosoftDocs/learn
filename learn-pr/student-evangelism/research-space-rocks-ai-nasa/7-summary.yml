@@ -15,20 +15,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is not a form space rocks can take?"
+  - content: "Which of the following isn't a form in which you'd find a space rock?"
     choices:
     - content: "Meteor"
       isCorrect: false
-      explanation: "Space rocks can be in this form"
+      explanation: "Space rocks are found in the form of a meteor."
     - content: "Meteorite"
       isCorrect: false
-      explanation: "Space rocks can be in this form"
+      explanation: "Space rocks are found in the form of a meteorite."
     - content: "Asteroid"
       isCorrect: false
-      explanation: "Space rocks can be in this form"
-    - content: "Space Boulder"
+      explanation: "Space rocks are found in the form of an asteroid."
+    - content: "Space boulder"
       isCorrect: true
-      explanation: "Correct! This is not a real thing"
+      explanation: "Correct! Space rocks aren't identified by scientits as space boulders."
   - content: "If an astronaut sees one black rock surrounded by white rocks, they should only take the black rock. True or False?"
     choices:
     - content: "True"
@@ -36,7 +36,7 @@ quiz:
       explanation: "This is not the way you should sample space rocks"
     - content: "False"
       isCorrect: true
-      explanation: "Correct! They should take a sample of every rock."
+      explanation: "Correct! The astronaut should take a sample of every rock."
   - content: "What is the goal of the OSIRIS-REx mission?"
     choices:
     - content: "Find out about our history"
