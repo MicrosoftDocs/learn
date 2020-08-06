@@ -1,35 +1,35 @@
-As a Node.js developer on Tailwind Traders, learning how to set up a new Node.js project becomes an important skill to have. Setup includes generating a manifest file but also be able to create some common scripts that you are likely to use throughout the project lifecycle to manage it.
+You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node.js project is an important skill to have. Setup includes generating a manifest file and creating some common scripts that you're likely to use throughout the project lifecycle.
 
 ## Set up a new Node.js project
 
-Open up a terminal window.
+1. Open a terminal window.
 
-1. Clone the following repo `https://github.com/MicrosoftDocs/node-essentials/` by typing the command:
+1. Clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials/
    ```
 
-1. Navigate to your files by typing the following command:
+1. Go to your files by running this command:
 
    ```bash
    cd node-essentials/node-dependencies/3-exercise-package-json
    ```
 
-1. You should now have access to the following files:
+   You should now have access to these files:
 
    ```bash
    -| src/
    ---| index.js
    ```
 
-1. Type the following command to initialize a Node.js project:
+1. Run the following command to initialize a Node.js project:
 
     ```bash
     npm init -y
     ```
 
-   This command will generate a `package.json` file. It should look something like this:
+   This command will generate a package.json file. It should look something like this one:
 
     ```json
     {
@@ -48,15 +48,15 @@ Open up a terminal window.
     }
     ```
 
-1. Fill out the following values like so:
+1. Add these values:
 
-    - `name`, give it the value `tailwind-trader-api`
-    - `description`, fill in the following description `An HTTP API that will manage items from Tailwind Traders database`
-    - `main`, fill in `index.js`.
-    - `keywords`, fill in the following `api`, `database`
-    - `author`, fill in `Sam`
+    - `name`. Enter `tailwind-trader-api`.
+    - `description`. Enter `An HTTP API that will manage items from Tailwind Traders database`.
+    - `main`. Enter `index.js`.
+    - `keywords`. Enter `api, database`.
+    - `author`. Enter `Sam`.
 
-   Your `package.json` should now look like this:
+   Your package.json should now look like this code:
 
     ```json
     {
@@ -81,19 +81,19 @@ Open up a terminal window.
    "start": "node ./src/index.js",
    ```
 
-1. Open up `src/index.js` and place the following code inside of it:
+1. Open src/index.js and add the following code to it:
 
    ```javascript
    console.log('Welcome to this application');
    ```
 
-   The above entry will define how the project is started up. You can now start it up by typing the following command:
+1. The previous entry will define how the project starts. You can now start it by running this command:
 
    ```bash
    npm start
    ```
 
-   You should see the following output:
+   You should see this output:
 
    ```output
    Welcome to this application
