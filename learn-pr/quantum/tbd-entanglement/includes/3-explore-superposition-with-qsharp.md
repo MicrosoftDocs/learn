@@ -423,7 +423,7 @@ each step:
 
 1. **Second measurement:** in the second measurement, the result was `Zero`, so
    all the amplitudes of the states whose second rightmost (middle) qubit is `One` get
-   vanished, this is $\ket{3}=\ket{011} and $\ket{7}=\ket{111}$. The rest of the
+   vanished, this is $\ket{3}=\ket{011}$, and $\ket{7}=\ket{111}$. The rest of the
    amplitudes increase to fulfill the normalization condition.
 
     ```qsharp
