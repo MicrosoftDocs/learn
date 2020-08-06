@@ -132,7 +132,7 @@ need. This makes `ResourcesEstimator` a very useful tool for quantum developers.
 To learn more about `ResourcesEstimator` and a detailed description of each of
 the parameters of the output and more estimation tools, you can read [the
 official
-documentation](https://docs.microsoft.com/en-us/quantum/user-guide/machines/resources-estimator).
+documentation](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator).
 
 In the next unit, we're going to present different quantum algorithms that make
 use of superposition, interference, and entanglement to outperform classical

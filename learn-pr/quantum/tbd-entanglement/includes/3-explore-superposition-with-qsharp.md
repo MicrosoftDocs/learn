@@ -24,7 +24,8 @@ into a file or some other location. If we omit the `location` in the argument,
 it will print the output in the console. We'll use this information to track the
 state of the qubit register.
 
-> [!NOTE] `DumpMachine` is only useful for simulations. In actual quantum
+> [!NOTE] 
+> `DumpMachine` is only useful for simulations. In actual quantum
 > hardware `DumpMachine` won't do anything at all since we can't access the
 > state of the qubit register during the execution. Remember that measuring the
 > state of a qubit may change its state. In simulated virtual quantum computers,

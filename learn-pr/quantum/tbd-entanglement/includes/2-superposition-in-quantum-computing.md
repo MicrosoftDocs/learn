@@ -2,7 +2,7 @@ For some computational tasks, quantum computing provides exponential speed-ups.
 This is rooted from the fact that quantum computing uses three phenomena from
 quantum mechanics: superposition, interference, and entanglement. In the last MS
 Learn module [Create your first Q# program by using the Quantum Development
-Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/),
+Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/),
 you have experienced superposition by creating a random number generator from
 qubits. In this unit, you will learn more about the concept.  
 
