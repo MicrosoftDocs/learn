@@ -35,6 +35,7 @@ units:
 - learn.student-evangelism.introduction-rocket-launch-nasa.6-choose-model
 - learn.student-evangelism.introduction-rocket-launch-nasa.7-train-test-model
 - learn.student-evangelism.introduction-rocket-launch-nasa.8-ethics-machine-learning
-- learn.student-evangelism.introduction-rocket-launch-nasa.9-summary
+- learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
+- learn.student-evangelism.introduction-rocket-launch-nasa.10-summary
 badge:
   uid: learn.student-evangelism.introduction-rocket-launch-nasa.badge 

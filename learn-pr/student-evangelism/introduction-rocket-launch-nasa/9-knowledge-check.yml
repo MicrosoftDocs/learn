@@ -1,17 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.introduction-rocket-launch-nasa.9-summary
+uid: learn.student-evangelism.introduction-rocket-launch-nasa.9-knowledge-check
 metadata:
-  title: Summary
-  description: Summary
+  title: Knowledge check
+  description: Check your knowledge.
   ms.date: 07/28/2020
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary
+title: Knowledge check
 durationInMinutes: 4
 content: |
-  [!include[](includes/9-summary.md)]
+  Choose the best response for each of the questions below. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
