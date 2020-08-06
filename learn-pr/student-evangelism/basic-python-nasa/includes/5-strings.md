@@ -1,6 +1,6 @@
-Out of all of the variables, strings are one of the most unique. This is because they can take on pretty much any key from your keyboard. Python also has a lot of pre-made code (functions) that you can call to manipulate your strings in various ways.
+Of of all of the variables, strings are one of the most unusual, because they can take on pretty much any key from your keyboard. Python also has a lot of pre-made code (called functions) that you can call to manipulate your strings in various ways.
 
-Lets start by making a string variable in your notebook. Copy the following line of code and click the run button:
+Let's start by making a string variable in your notebook. Copy the following line of code and click the run button:
 
 ```python
 astronaut = "Remy Morris"

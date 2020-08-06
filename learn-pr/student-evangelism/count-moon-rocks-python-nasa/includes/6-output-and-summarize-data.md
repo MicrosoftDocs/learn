@@ -1,15 +1,15 @@
-Let's start by printing the number of each type of rock we found. For example, to do this for Basalt rocks, paste in the following code:
+Let's start by printing the number of each type of rock we found. For example, to do this for basalt rocks, copy and paste in the following code:
 
 ```python
 # TODO Add a print statement for the other types of rocks: breccia, highland and regolith
 print("Number of Basalt: ", basalt)
 ```
 
-As you can see, we first output a string telling the user what they are going to be seeing and then we concatenate on the variable name which includes the number of how many Basalt rocks we found.
+As you can see, we first output a string telling the user what they're going to see and then we concatenate on the variable name that includes the number of basalt rocks we found.
 
-Try this for the other four types of rock variables we created.
+Try this for the four types of rock variables we created.
 
-Next, let's provide some more general data like the type of rock that was the most and least common. To do this, we will use the max() and min() functions that we learned about before.
+Next, let's provide some more general data like the type of rock that was the most and least common. To do this, we'll use the max() and min() functions that we learned about before.
 
 Try to figure this out and if you get stuck, read below for the answer:
 
@@ -31,4 +31,4 @@ print("The max number of one type of rock found was:", max(basalt, breccia, high
 print("The minimum number of one type of rock found was:", min(basalt, breccia, highland, regolith))
 ```
 
-Congratulations, you have now successfully programmed Artemis to give a summary about the different types of rock data that it found.
+Congratulations, you've successfully programmed Artemis to give a summary about the different types of rock data that it found.

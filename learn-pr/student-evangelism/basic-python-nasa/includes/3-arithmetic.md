@@ -1,8 +1,8 @@
-Math is used frequently in computer science and the concepts you will learn will be great tools to add to your coding arsenal. Python has many features that allow you to perform many different mathematical computations.
+Math is used frequently in computer science and the concepts you'll learn will be great tools to add to your coding arsenal. Python has many features that allow you to perform many different mathematical computations.
 
-## Simple Calculations
+## Simple calculations
 
-Similar to a calculator, you can use the operators + , - , * , and / in Python to add, subtract, multiply and divide numbers.
+As with a calculator, you can use the operators + , - , * , and / in Python to add, subtract, multiply and divide numbers.
 
 For example, write the following comment and code in a cell and then click the run button to see the output.
 
@@ -52,7 +52,7 @@ Try copying the code below into a Jupyter Notebook cell and running it. Notice h
 
 This is because the order of operations computes multiplication and division before addition and subtraction.
 
-## More Advanced Math
+## More advanced math
 
 There are also more advanced calculations that Python can compute listed below:
 

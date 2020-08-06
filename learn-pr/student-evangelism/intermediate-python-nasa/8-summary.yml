@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.intermediate-python-nasa.8-summary
 metadata:
   title: Summary
-  description: Summary
+  description: Summary.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
@@ -25,7 +25,7 @@ quiz:
       explanation: "Developers prefer simplicity"
     - content: "To make your code less redundant and cleaner"
       isCorrect: true
-      explanation: "Correct! This is the exact reason you would use functions in your code"
+      explanation: "Correct! This is the exact reason you'd use functions in your code"
   - content: "The two ways to change variables not made in functions are to make them global or pass them in as parameters. True or False?"
     choices:
     - content: "True"
