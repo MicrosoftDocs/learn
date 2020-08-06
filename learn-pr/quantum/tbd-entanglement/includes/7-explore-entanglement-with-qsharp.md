@@ -22,30 +22,7 @@ $$CNOT(\hat H\ket{0}),\ket{0})=CNOT(\frac1{\sqrt2}(\ket{0}+\ket{1}),\ket{0})=
 
 The code in Q# would be:
 
-```qsharp
-namespace ExploringEntanglement {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-
-    @EntryPoint()
-    operation TestInterference() : Result[] {
-        using (qubits = Qubit[2]) {
-            H(qubits[0]);
-            CNOT(qubits[0],qubits[1]);
-            Message("Entangled state before measurement:");
-            DumpMachine();
-            Message(" ");
-            let results = MultiM(qubits);
-            Message("Entangled state after measurement:");
-            DumpMachine();
-            ResetAll(qubits);
-            return results;
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/7-program-1.qs":::
 
 And the output:
 

@@ -27,34 +27,7 @@ superposing the states $\psi_1$ and $\psi_2$. We know how to code that with Q#.
 
 The code would be:
 
-```qsharp
-namespace ExploringInterference {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-    
-    @EntryPoint()
-    operation TestInterference() : Result {
-        using (q = Qubit()) {
-            Message(" ");
-            Message("At the beginning the qubit is in the state |0>.");
-            DumpMachine();
-            H(q);
-            Message(" ");
-            Message("After applying H the qubit is in a uniform superposition.");
-            DumpMachine();
-            H(q);
-            Message(" ");
-            Message("If we apply H again, interference gives back the state to |0>.");
-            DumpMachine();
-            Message(" ");
-            Message("If we measure we always obtain 'Zero'.");
-            return MResetZ(q);
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/5-program-1.qs":::
 
 And the result is:
 
@@ -94,24 +67,7 @@ $\ket{0}$ into $\ket{1}$ with help of the `[X]`(https://docs.microsoft.com/qshar
 
 The code would be:
 
-```qsharp
-namespace ExploringInterference {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-
-    @EntryPoint()
-    operation TestInterference() : Unit {
-        using (q = Qubit()) {
-            X(q);
-            H(q);
-            DumpMachine();
-            Reset(q);
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/5-program-2.qs":::
 
 And the output:
 
@@ -131,24 +87,7 @@ And what about complex amplitudes⟩ If instead of using `X` we use the operatio
 
 The code would be:
 
-```qsharp
-namespace ExploringInterference {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-
-    @EntryPoint()
-    operation TestInterference() : Unit {
-        using (q = Qubit()) {
-            Y(q);
-            H(q);
-            DumpMachine();
-            Reset(q);
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/5-program-3.qs":::
 
 And the output:
 
