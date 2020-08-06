@@ -75,7 +75,7 @@ quiz:
         - content: It can ensure resiliency for complex database transactions.
           isCorrect: false
           explanation: "Polly can protect complex transactions, including database transactions."
-        - content: It doesn't need any app code changes.
+        - content: It doesn't require app code changes.
           isCorrect: true
           explanation: "Polly does require code changes."
         - content: It must be configured via code for every `HttpClient`.
