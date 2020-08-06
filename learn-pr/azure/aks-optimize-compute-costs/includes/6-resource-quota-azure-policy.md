@@ -59,7 +59,7 @@ There are a few steps to registering the *Azure Policy Add-on for AKS* feature.
 
     - **Microsoft.ContainerService**. This provider is the same resource provider you used to register the *spotpoolpreview* feature with earlier.
     
-    - **Microsoft.PolicyInsights**. This resource provider allows actions such as querying information about policy events, query, create or update and delete policy remediation, and so on.
+    - **Microsoft.PolicyInsights**. This resource provider allows actions such as querying information about policy events as well as the ability to query, create or update, and delete policy remediation.
 
     Here is an example of the two registration commands.
     
@@ -93,18 +93,7 @@ There are a few steps to registering the *Azure Policy Add-on for AKS* feature.
         --resource-group myResourceGroup
     ```
 
-    Activating the addon will schedule workloads in two namespaces on your cluster.
-
-    The first namespace is **`kube-system`**. Here you'll find:
-
-    - `azure-policy`, and
-    - `azure-policy-webhook`
-
-    The second namespace is **`gatekeeper-system`**. Here you'll find:
-
-    - `gatekeeper-controller-manager`
-
-    These workloads are responsible for evaluating requests submitted to the AKS control plane. Based on your configured policies, the policy webhook will allow or deny requests.
+    Activating the addon will schedule workloads in two namespaces on your cluster. The first namespace is **`kube-system`** where you'll find `azure-policy` and `azure-policy-webhook`. The second namespace is **`gatekeeper-system`** where you'll find `gatekeeper-controller-manager`. These workloads are responsible for evaluating requests submitted to the AKS control plane. Based on your configured policies, the policy webhook will allow or deny requests.
 
 ## Assign a built-in policy definition
 
@@ -158,7 +147,7 @@ The first step requires you to select and enter basic information defining the n
 | **Assignment name** | The name by which to identify the assigned policy. |
 | **Description** | A free text description that describes the policy. |
 | **Policy enforcement** | This option switches between Enabled and Disabled. If disabled, the policy isn't applied, and requests are not denied with non-compliance. |
-| **Assigned by** | This value is a free text value that defaults to the user signed into the portal's details and can be changed. |
+| **Assigned by** | This value is a free text value that defaults to the registered user and can be changed. |
 
 ### Policy parameters
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-nodejs-project-dependencies.3-exercise-package-json
-title: Exercise - Configure package.json
+title: Exercise - Configure the package.json
 metadata:
-  title: Exercise - Configure package.json
-  description: Exercise in how to configure package.json to add metadata but also create and run scripts to manage your Node.js throughout its lifetime.
+  title: Exercise - Configure the package.json
+  description: Exercise on how to configure the package.json to add metadata but also create and run scripts to manage your Node.js throughout its lifetime.
   author: softchris
   ms.author: chnoring
   ms.date: 04/14/2020

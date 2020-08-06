@@ -2,7 +2,7 @@ Azure offers several ways to automate processes. Azure Functions and Logic Apps 
 
 For more complete control and granularity of your automation, Azure Automation allows for process automation, configuration management, full integration with Azure platform options (such as role-based access control and AAD) and can manage Azure and on-premises resources. One of the unique benefits of Azure Automation is that it can manage resources within Azure or on-premises VMs. For example, if you have a VM that is normally kept in a down state for cost savings (except when it needs to be used), you have the ability within Azure Automation, using a feature called hybrid runbooks, to execute a script to start the VM, then kick off a SQL Server backup from within the VM, and finally shut down the VM.
 
-## *Overview of Azure automation components*
+## Overview of Azure automation components
 
 Azure Automation supports both automation and configuration management activities. In this module, we are going to focus on the automation components, but you should be aware that Automation can also be used to manage server updates and desired state configuration. The components of Automation you will need to use to execute automated tasks are as follows:
 
