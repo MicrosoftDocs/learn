@@ -4,7 +4,7 @@ In this unit, you'll learn about the extension tab in Visual Studio Code and how
 
 To access all of the Python open-source tools that will be helpful for this learning path, click on the extension tab in Visual Studio Code. It looks like three blocks in the shape of an "L" and another block floating to the right.
 
-You can explore the extensions marketplace and install any extensions you would like, but for this tutorial, we'll be installing the Python extension. After you're inside of the extension marketplace, go to the search bar and type in "Python". You're looking for the extension named solely Python and published by Microsoft (it should be the first result). Click on the extension and then click **install**.
+You can explore the extensions marketplace and install any extensions you would like to have, but for this tutorial, we'll be installing the Python extension. When you're inside  the extension marketplace, go to the search bar and type in "Python". You're looking for the extension named solely Python and published by Microsoft (it should be the first result). Click on the extension and then click "install".
 
 :::image type="content" source="..\media\install-python.png" alt-text="Install Python extension":::
 
@@ -14,6 +14,6 @@ The Python extension is now installed. This extension lets you create Python and
 
 ## Install IntelliCode extension
 
-While in the extensions tab, go back to the search bar and type in "intellicode". Click on the specified box (which should be the first result) and click **install**. IntelliCode will recommend code when you're writing your programs. This is a great tool for beginners because you might not know the exact syntax for some code.
+While in the extensions tab, go back to the search bar and type in "intellicode". Click on the specified box (which should be the first result) and click "install". IntelliCode will recommend code when you're writing your programs. This is a great tool for beginners because you might not know the exact syntax for some code.
 
 :::image type="content" source="..\media\install-intellicode.png" alt-text="Install Intellicode":::

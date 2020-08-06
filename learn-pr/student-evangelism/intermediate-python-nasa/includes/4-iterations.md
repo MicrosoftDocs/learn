@@ -15,13 +15,15 @@ while countdown >= 0:
 print("Lift Off")
 ```
 
->5  
->4  
->3  
->2  
->1  
->0
->Lift off
+```Output
+5  
+4  
+3  
+2  
+1  
+0
+Lift off
+```
 
 In the example below, the condition is never met and the loop will continue forever (if we don't stop it). In this code, the developer forgot to decrease the timer variable so the condition is always true.
 
@@ -32,14 +34,16 @@ while  timer > 0:
     print("Hello, I am from Earth")
 ```
 
->Output was trimmed for performance reasons.
+```Output
+Output was trimmed for performance reasons.
 To see the full output set the setting "python.dataScience.textOutputLimit" to 0.
 ...  
->Hello, I am from Earth  
->Hello, I am from Earth  
->Hello, I am from Earth  
->Hello, I am from Earth  
+Hello, I am from Earth  
+Hello, I am from Earth  
+Hello, I am from Earth  
+Hello, I am from Earth  
 ...
+```
 
 This is an infinite loop and you must either wait for Python to terminate it or click the stop button at the top of the window. It's best to avoid these, if that wasn't already apparent.
 
@@ -54,6 +58,8 @@ for planet in planets:
     print(planet)
 ```
 
->Mars  
->Saturn  
->Jupiter  
+```Output
+Mars  
+Saturn  
+Jupiter  
+```

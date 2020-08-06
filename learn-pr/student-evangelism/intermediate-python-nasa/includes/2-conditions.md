@@ -23,8 +23,10 @@ print(temp >= 32)
 print(temp < 32)
 ```
 
->True  
->False
+```Output
+True  
+False
+```
 
 You can also use these operators on other variable types.
 
@@ -34,8 +36,10 @@ print("highland" == rock)
 print("basalt" == rock)
 ```
 
->False  
->True
+```Output
+False  
+True
+```
 
 For reasons that are beyond the scope of this module, sometimes when comparing variables, you must use commands like "in". This just checks whether a word is inside the variable.
 
@@ -45,7 +49,9 @@ print("highland" in rock)
 print("basalt" in rock)
 ```
 
->False  
->True
+```Output
+False  
+True
+```
 
 Now that we know how to write the conditions to determine whether we want an action to execute or not, we can begin to specify what action we want to occur.

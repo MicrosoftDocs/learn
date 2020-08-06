@@ -12,8 +12,10 @@ print(rocketNumber)
 
 ```
 
->Rocket will launch soon!  
->NameError: name 'rocketNumber' is not defined
+```Output
+Rocket will launch soon!  
+NameError: name 'rocketNumber' is not defined
+```
 
 Along with this, if you have variables created outside a function you can access them inside a function but you can't change them.
 
@@ -27,7 +29,9 @@ def OutputRocketText():
 OutputRocketText()
 ```
 
->UnboundLocalError: local variable 'rocketText' referenced before assignment
+```Output
+UnboundLocalError: local variable 'rocketText' referenced before assignment
+```
 
 As you can see, this code produces an error as well because we are trying to modify a variable that was created outside a function.
 
@@ -51,7 +55,9 @@ OutputRocketText()
 print(rocketText)
 ```
 
->We will launch in two days
+```Output
+We will launch in two days
+```
 
 Another way to modify variables inside a function is to use parameters. Parameters are when you give a function knowledge of a variable when you call it. To tell Python you want your functions to have parameters, use the following code:
 
@@ -67,6 +73,8 @@ newRocketText = OutputRocketText(rocketText)
 print(newRocketText)
 ```
 
->We will launch in two days
+```Output
+We will launch in two days
+```
 
 You can then use that variable inside the function, but it will have a new name, which is the name inside the parentheses. Also, the function will only change this new variable inside the function. To get the value from the function variable back into the code outside the function, you must return it. Do this by adding the variable name after the return keyword.

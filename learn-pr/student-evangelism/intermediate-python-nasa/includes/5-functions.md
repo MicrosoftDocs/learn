@@ -24,11 +24,13 @@ def OutputRocketText():
 OutputRocketText()
 ```
 
->5  
->4  
->3  
->2  
->1  
->Rocket will be launching soon!
+```Output
+5  
+4  
+3  
+2  
+1  
+Rocket will be launching soon!
+```
 
 As you can see in the code, we start by defining a function that prints the countdown and rocket launch announcement. Then we add code that will call the function. If we had multiple rocket launches, we could just call the OutputRocketText function instead of typing out the whole print line. This would make our code much cleaner and less redundant.

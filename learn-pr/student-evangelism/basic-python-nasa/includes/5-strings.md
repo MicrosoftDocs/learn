@@ -59,4 +59,6 @@ artemisRoverSounds = "beep beep "
 artemisRoverSounds * 3
 ```
 
->'beep beep beep beep beep beep '
+```Output
+'beep beep beep beep beep beep '
+```

@@ -18,21 +18,21 @@ Once the file changes to Jupyter Notebook, on the bottom left of the window, you
 
 :::image type="content" source="..\media\jupyter-environment.png" alt-text="Set Python environment":::
 
-Next, you'll need to add Jupyter Notebooks to your path. To do this, type "2+2" into the first line of the editor and click the green play button. At the bottom right of the screen you'll see a pop-up asking you to install Jupyter Notebooks, click **install** and the installation will begin. This may take up to 5 minutes, so you may have to wait a little.
+Next, you'll need to add Jupyter Notebooks to your path. To do this, type "2+2" into the first line of the editor and click the green play button. At the bottom right of the screen you'll see a pop-up asking you to install Jupyter Notebooks, click "install" and the installation will begin. This can take up to 5 minutes, so you may have to wait a while.
 
 :::image type="content" source="..\media\install-jupyter.png" alt-text="Set Python environment":::
 
-Now, Jupyter Notebooks should be installed on your computer. Before continuing, make sure that the Jupyter Notebook Kernel is also running with the version of Python that you expect. You can see this in the top right of Visual Studio Code where it says "Jupyter Server: local" followed by the instance of Python.
+Now, Jupyter Notebooks should be installed on your computer. Before you continue, make sure that the Jupyter Notebook Kernel is also running with the version of Python that you expect. You can see this in the top right of Visual Studio Code where it says "Jupyter Server: local" followed by the instance of Python.
 
 ## Information about Jupyter Notebooks
 
-The [Visual Studio Code Jupyter Notebooks docs](https://code.visualstudio.com/docs/python/jupyter-support) have good documentation on how to use this environment. Basically, in Jupyter notebooks there are cells where you write code. The plus button to the left of a cell will create a new cell below the current cell when you click on it. The garbage can to the right of it will delete the selected cell and the arrow buttons will move the cell up or down in relation to the cells around it.
+The [Visual Studio Code Jupyter Notebooks docs](https://code.visualstudio.com/docs/python/jupyter-support) have good documentation on how to use this environment. In Jupyter notebooks there are cells where you write code. Click on the plus button to the left of a cell to create a new cell below the current cell. Click on the garbage can to the right to delete the selected cell and use the arrow buttons to move the cell up or down in relation to the cells around it.
 
-Additionally, the green play button in each cell will run that cell. After you run a cell, a number will appear surrounded by square brackets. This helps you keep track of what cells you just ran. This is important because, as you remember, you can re-run cells within a Jupyter Notebook, which might change variables or program state.
+Additionally, use the green play button in each cell to run that cell. After you run a cell, a number will appear, surrounded by square brackets. This number is to help you keep track of which cells you run. This is important because, as you will remember, you can re-run cells within a Jupyter Notebook, which might change variables or program state.
 
 Looking at the top of the file, you can choose to run all cells above or below the current cell with the play button. Finally, you can click the red pause button to force stop the program at any time.
 
-## Write and Run a simple program
+## Write and run a simple program
 
 Now you'll test your setup by writing a simple "Hello World" program. In the first line of the editor type the following code and then click the green play button.
 
@@ -42,6 +42,6 @@ Now you'll test your setup by writing a simple "Hello World" program. In the fir
 
 :::image type="content" source="..\media\run-jupyter.png" alt-text="Run Jupyter":::
 
-Below the cell that you just ran, there should be an output saying Hello World.
+Below the cell that you ran, there should be an output saying Hello World.
 
 Congratulations! You just programmed a computer to output text. Next step: ~~hacking the mainframe~~ ... or maybe we'll start by learning more about Python fundamentals!

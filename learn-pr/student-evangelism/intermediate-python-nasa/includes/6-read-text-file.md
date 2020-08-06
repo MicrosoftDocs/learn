@@ -34,8 +34,10 @@ for line in textList:
     print(line)
 ```
 
->First Astronaut on the moon  
->Neil Armstrong
+```Output
+First Astronaut on the moon  
+Neil Armstrong
+```
 
 The example above teaches us how to read the full data into Python. We can also read a text file and only go through certain parts of. This is called parsing in programming. To parse through the text we just imported, let's go line by line and print every line out. Since every line is an element in our list we can get the first line by looking at the first element in the list.
 
@@ -44,7 +46,9 @@ firstLine = textList[0]
 print(firstLine)
 ```
 
->First Astronaut on the moon
+```Output
+First Astronaut on the moon
+```
 
 To read the second line from the text file, just get the second item in the list.
 
@@ -53,4 +57,6 @@ secondLine = textList[1]
 print(secondLine)
 ```
 
->Neil Armstrong
+```Output
+Neil Armstrong
+```

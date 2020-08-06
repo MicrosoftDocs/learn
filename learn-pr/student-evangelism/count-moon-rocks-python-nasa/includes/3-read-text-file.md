@@ -9,7 +9,9 @@ line = fileObject.readline()
 print(line)
 ```
 
->Reading Rocks
+```Output
+Reading Rocks
+```
 
 Now, we can call the readlines() function to put all of the lines into our rockList variable. We'll also print all of the rocks that are in the rockList and close the fileObject.
 

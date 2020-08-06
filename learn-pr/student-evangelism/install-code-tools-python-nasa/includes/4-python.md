@@ -2,11 +2,11 @@
 
 ## A little bit about Python
 
-Python was created in 1991 by Guido van Rossum and is named after the television show Monty Python. Python is a high level programming language which means, from the programmer's point of view, the code is closer to reading like a natural language (English) and therefore easier to read and write. Python does more heavy lifting behind the scenes to convert more natural language instructions into commands that a computer can execute.
+Python was created in 1991 by Guido van Rossum and is named after the television show Monty Python. Python is a high level programming language which means, from the programmer's point of view, the code is closer to reading like a natural language (English) and therefore is easier to read and write. Python does more heavy lifting behind the scenes to convert relatively natural language instructions into commands that a computer can execute.
 
 ## Why Python?
 
-You may be asking why we choose Python out of all the programming languages out there. Over the past 15 years, [Python has become increasingly more popular](https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages) and it is often known as a great beginner programming language. Moreover, it is very versatile and can be applied to many more advanced computing topics such as data science and machine learning. Finally, Python has many packages and libraries (code written by others) that you can include in your own projects to cut down on the code you need to write.
+You may be asking why we chose Python out of all the programming languages out there. Over the past 15 years, [Python has become increasingly more popular](https://insights.stackoverflow.com/survey/2020#technology-programming-scripting-and-markup-languages) and it is often known as a great beginner programming language. Moreover, it is very versatile and can be applied to many more advanced computing topics such as data science and machine learning. Finally, Python has many packages and libraries (code written by others) that you can include in your own projects to cut down on the code you need to write.
 
 ## Real world examples of Python at work
 

@@ -27,7 +27,9 @@ if(basalt == 0):
 print("Done checking basalt rocks")
 ```
 
->We have found no basalt rocks
+```Output
+We have found no basalt rocks
+```
 
 ```python
 basalt = 1
@@ -36,8 +38,10 @@ if(basalt == 0):
 print("Done checking basalt rocks")
 ```
 
->We have found no basalt rocks
->Done checking basalt rocks
+```Output
+We have found no basalt rocks
+Done checking basalt rocks
+```
 
 ## Else statement
 
@@ -52,8 +56,10 @@ else:
 print("Done checking basalt rocks")
 ```
 
->We have found no basalt rocks
->Done checking basalt rocks
+```Output
+We have found no basalt rocks
+Done checking basalt rocks
+```
 
 ```python
 basalt = 5
@@ -64,8 +70,10 @@ else:
 print("Done checking basalt rocks")
 ```
 
->We found some basalt rocks
->Done checking basalt rocks
+```Output
+We found some basalt rocks
+Done checking basalt rocks
+```
 
 ## ElseIf statement
 
@@ -82,5 +90,7 @@ else:
 print("Done checking basalt rocks")
 ```
 
->We found exactly 1 basalt rock
->Done checking basalt rocks
+```Output
+We found exactly 1 basalt rock
+Done checking basalt rocks
+```

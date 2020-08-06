@@ -49,7 +49,7 @@ As you recall, these lines will create a function that has a parameter of a stri
 
 The code above checks if the string we have passed through to the function has the text "basalt". If it does, we'll go into the if statement and print out that we have found a Basalt rock and then increment the variable for Basalt by one.
 
-[!NOTE]
-If the line of text had "basalt" in it, with other text, it would still be counted. For example, "No basalt here" would be counted as one for Basalt. This shouldn't be a problem in this case because we know where the data is coming from and what it will look like.
+> [!NOTE]
+> If the line of text had "basalt" in it, with other text, it would still be counted. For example, "No basalt here" would be counted as one for Basalt. This shouldn't be a problem in this case because we know where the data is coming from and what it will look like.
 
 Add elseif statements for the remaining types of rocks.
