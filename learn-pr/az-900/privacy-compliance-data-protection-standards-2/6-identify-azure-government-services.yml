@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.examine-privacy-compliance-data-protection-standards.identify-azure-government-services
+uid: learn.examine-privacy-compliance-data-protection-standards.6-identify-azure-government-services
 title: Identify Azure Government services
 metadata:
   title: Identify Azure Government services
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-identify-azure-government-services.md)]
+  [!include[](includes/6-identify-azure-government-services.md)]

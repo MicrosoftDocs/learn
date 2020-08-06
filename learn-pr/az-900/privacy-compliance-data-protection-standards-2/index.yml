@@ -31,14 +31,14 @@ roles:
 products:
 - azure
 units:
-- learn.examine-privacy-compliance-data-protection-standards.introduction
-- learn.examine-privacy-compliance-data-protection-standards.explore-compliance-terms-requirements
-- learn.examine-privacy-compliance-data-protection-standards.identify-microsoft-privacy-statement
-- learn.examine-privacy-compliance-data-protection-standards.explore-trust-center
-- learn.examine-privacy-compliance-data-protection-standards.explore-compliance-manager
-- learn.examine-privacy-compliance-data-protection-standards.identify-azure-government-services
-- learn.examine-privacy-compliance-data-protection-standards.identify-azure-china-21vianet
-- learn.examine-privacy-compliance-data-protection-standards.knowledge-check
-- learn.examine-privacy-compliance-data-protection-standards.summary
+- learn.examine-privacy-compliance-data-protection-standards.1-introduction
+- learn.examine-privacy-compliance-data-protection-standards.2-explore-compliance-terms-requirements
+- learn.examine-privacy-compliance-data-protection-standards.3-identify-microsoft-privacy-statement
+- learn.examine-privacy-compliance-data-protection-standards.4-explore-trust-center
+- learn.examine-privacy-compliance-data-protection-standards.5-explore-compliance-manager
+- learn.examine-privacy-compliance-data-protection-standards.6-identify-azure-government-services
+- learn.examine-privacy-compliance-data-protection-standards.7-identify-azure-china-21vianet
+- learn.examine-privacy-compliance-data-protection-standards.8-knowledge-check
+- learn.examine-privacy-compliance-data-protection-standards.9-summary
 badge:
   uid: learn.examine-privacy-compliance-data-protection-standards.badge

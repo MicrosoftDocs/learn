@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.examine-privacy-compliance-data-protection-standards.knowledge-check
+uid: learn.examine-privacy-compliance-data-protection-standards.8-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -12,7 +12,7 @@ metadata:
 azureSandbox: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
   questions:
