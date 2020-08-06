@@ -187,7 +187,7 @@ Here is an example `az aks nodepool add` command that adds a spot node pool. Not
 
 ## How to deploy pods to spot node pools
 
-When deploying workloads in Kubernetes, you can provide information to the scheduler restrict on which nodes the workloads may or may not run. You control workload scheduling by configuring taints, toleration, or node affinity. Spot nodes are configured with a specific label and taint.
+When deploying workloads in Kubernetes, you can provide information to the scheduler to specify which nodes the workloads may or may not run. You control workload scheduling by configuring taints, toleration, or node affinity. Spot nodes are configured with a specific label and taint.
 
 ## What is a taint?
 
@@ -210,7 +210,7 @@ Node taint toleration is specified by creating a `tolerations` dictionary entry 
 | `key` | The key identifies a node taint key-value pair specified on the node. For example, on a spot node pool, the key-value pair is `kubernetes.azure.com/scalesetpriority:spot`. The key is `kubernetes.azure.com/scalesetpriority`. |
 | `operator` | The operator allows the toleration to match a taint. The default operator is `Equal`. You may also specify `Exists` to match toleration. However, when using `Exists`, the following property, `value`, isn't specified. |
 | `value` | This item is the value part of the node taint key-value pair specified on the node. For example, on a spot node pool with a key-value pair of `kubernetes.azure.com/scalesetpriority:spot`. The value is `spot`. |
-| `effect` | This value indicates how the system how the scheduling of a pod is handled. There are three options to choose from, `NoSchedule`, `PreferNoSchedule`, and `NoExecute`. `NoSchedule` ensures the system won't schedule the pod, `PreferNoSchedule` allows the system to try and not schedule the pod, and `NoExecute` will either evict pods already running on the tainted node or not schedule the pod at all. |
+| `effect` | This value indicates how the scheduling of a pod is handled in the system. There are three options to choose from, `NoSchedule`, `PreferNoSchedule`, and `NoExecute`. `NoSchedule` ensures the system won't schedule the pod, `PreferNoSchedule` allows the system to try and not schedule the pod, and `NoExecute` will either evict pods already running on the tainted node or not schedule the pod at all. |
 
 Here is an example of a workload that has toleration added for spot node pools.
 
