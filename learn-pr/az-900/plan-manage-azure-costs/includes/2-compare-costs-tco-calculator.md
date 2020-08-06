@@ -6,7 +6,7 @@ In this part, you'll see how the Total Cost of Ownership (TCO) Calculator can he
 
 ## What's the TCO Calculator?
 
-The TCO Calculator is a web tool that helps you estimate the cost savings of operating your solution on Azure over time, instead of in your on-premises datacenter.
+The [TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator?azure-portal=true) helps you estimate the cost savings of operating your solution on Azure over time, instead of in your on-premises datacenter.
 
 While the term _total cost of ownership_ is commonly used in finance, it can be hard to truly see all of the hidden costs related to operating a technology capability on-premises, in addition to the cost of software licenses and hardware.
 
@@ -46,7 +46,7 @@ First, you enter the specifications of your on-premises infrastructure into the 
 
 ### Step 2: Adjust assumptions
 
-Next, you specify whether your current on-premises licenses are enrolled for Software Assurance, which can save you money by reusing them on Azure. You also specify whether you need to replicate your storage to another Azure region for greater redundancy.
+Next, you specify whether your current on-premises licenses are enrolled for [Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default?azure-portal=true), which can save you money by reusing those licenses on Azure. You also specify whether you need to replicate your storage to another Azure region for greater redundancy.
 
 Then, you can see the key operating cost assumptions across several different areas, which vary among teams and organizations. These costs have been certified by Nucleus Research, an independent research company. For example, these include:
 

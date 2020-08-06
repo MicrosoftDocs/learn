@@ -25,7 +25,11 @@ Then, use the [Azure documentation](https://docs.microsoft.com/azure/) to map yo
 
 ## Learn more
 
-In this module, you learned about the many factors that affect the total cost of running on Azure. Here are additional resources to help you go further.
+In this module, you learned about the many factors that affect the total cost of running on Azure. 
+
+The [Control Azure spending and manage bills with Azure Cost Management + Billing](https://docs.microsoft.com/learn/paths/control-spending-manage-bills/?azure-portal=true) learning path is a great next step towards learning how to monitor and control your Azure spending.
+
+Here are additional resources to help you go further.
 
 ### Purchase Azure services
 
@@ -46,4 +50,3 @@ In this module, you learned about the many factors that affect the total cost of
 * See [Azure spending limit](https://docs.microsoft.com/azure/billing/billing-spending-limit?azure-portal=true) to learn what happens when you reach your spending limit and how to remove it.
 * Learn how to [start and stop VMs during off-hours](https://docs.microsoft.com/azure/automation/automation-solution-vm-management?azure-portal=true).
 * See how [Azure Hybrid Benefit](https://azure.microsoft.com/pricing/hybrid-benefit/?azure-portal=true) can help save costs by bringing Windows Server and SQL Server on-premises licenses with Software Assurance to Azure.
-

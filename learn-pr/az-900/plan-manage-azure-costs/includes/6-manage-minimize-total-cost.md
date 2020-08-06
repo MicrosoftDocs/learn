@@ -2,7 +2,7 @@ As a home improvement retailer, the proverb "measure twice, cut once" is fitting
 
 Here are some recommended practices that can help you minimize your costs.
 
-## Perform cost analysis before you deploy
+## Understand estimated costs before you deploy
 
 To help you plan your solution on Azure, carefully consider the products, services, and resources you need, and read the relevant documentation to understand how each of your choices are metered and billed.
 
@@ -14,13 +14,13 @@ Ideally, you want your provisioned resources to match your actual usage.
 
 Azure Advisor identifies unused or under-utilized resources and recommends unused resources that you can remove. This helps you configure your resources to match your actual workload.
 
-The following image shows six recommendations from Azure Advisor:
+The following image shows some example recommendations from Azure Advisor:
 
-:::image type="content" source="../media/6-azure-advisor.png" alt-text="A screenshot of Azure Advisor showing six recommendations. Recommendations are sorted by high, medium, or low impact.":::
+:::image type="content" source="../media/6-azure-advisor.png" alt-text="A screenshot of Azure Advisor showing cost-savings recommendations. Recommendations are sorted by high, medium, or low impact. Also shown are potential yearly savings, the number of impacted resources, and the recommendation's creation date." lightbox="../media/6-azure-advisor-expanded.png":::
 
 Recommendations are sorted by impact: high, medium, or low. In some cases, Azure Advisor can automatically remediate, or fix, the underlying problem. Other issues, such as the two that are listed as high impact, require human intervention.
 
-## Use spending limits to prevent accidental spending
+## Use spending limits to restrict your spending
 
 If you have a Free Trial or a credit-based Azure subscription, you can use spending limits to prevent accidental overrun.
 
@@ -32,7 +32,7 @@ A related concept is _quotas_, or limits on the number of similar resources you 
 
 ## Use Azure Reservations to pre-pay in advance
 
-Azure Reservations offers discounted prices on certain Azure services. To receive a discount, you reserve services and resources by paying in advance.
+Azure Reservations offers discounted prices on certain Azure services. Azure Reservations can save you up to 72% as compared to pay-as-you-go prices. To receive a discount, you reserve services and resources by paying in advance.
 
 For example, you can pre-pay for one year or three years of use of virtual machines, database compute capacity, database throughput, and other Azure resources.
 
@@ -47,14 +47,6 @@ But remember, some resources are metered and billed according to how much outgoi
 ## Research available cost-saving offers
 
 Keep up-to-date with the latest Azure customer and subscription offers, and switch to offers that provide the greatest cost-saving benefit.
-
-## Apply tags to identify cost owners
-
-_Tags_ help you manage costs associated with the different groups of Azure products and resources. You can apply tags to groups of Azure resources to organize billing data.
-
-For example, if you run several virtual machines for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance, or by environment, such as Test or Production.
-
-Tags make it easier to identify groups that generate the biggest Azure costs, which can help you adjust your spending accordingly.
 
 ## Use Azure Cost Management + Billing to control spending
 
@@ -88,6 +80,18 @@ Azure Cost Management + Billing features include:
 
     Receive recommendations to eliminate idle resources and to optimize the Azure resources you provision.
 
+## Apply tags to identify cost owners
+
+_Tags_ help you manage costs associated with the different groups of Azure products and resources. You can apply tags to groups of Azure resources to organize billing data.
+
+For example, if you run several virtual machines for different teams, you can use tags to categorize costs by department, such as Human Resources, Marketing, or Finance, or by environment, such as Test or Production.
+
+Tags make it easier to identify groups that generate the biggest Azure costs, which can help you adjust your spending accordingly.
+
+The following image shows a year's worth of usage broken down by tags on the Azure Cost Management + Billing page:
+
+:::image type="content" source="../media/6-cost-management-tags.png" alt-text="A screenshot of Azure Cost Management + Billing showing usage broken down by tags.":::
+
 ## Resize underutilized virtual machines
 
 A common recommendation that you'll find from Azure Cost Management + Billing and Azure Advisor is to resize or shut down virtual machines that are underutilized or idle.
@@ -96,7 +100,7 @@ As an example, say you have a virtual machine whose size is **Standard_D4_v4**, 
 
 Virtual machine costs are linear and double for each size larger in the same series. So in this case, if you reduce the VM's size from **Standard_D4_v4** to **Standard_D2_v4**, which is the next size lower, you reduce your compute cost by 50%.
 
-Thee following image shows this idea:
+The following image shows this idea:
 
 :::image type="content" source="../media/6-vm-resize.png" alt-text="An illustration showing 50 percent savings by reducing the size of an underutilized virtual machine." border="false":::
 
@@ -136,6 +140,6 @@ Many Azure services provide a choice of running on Windows or Linux. In some cas
 
 ### Use Azure Hybrid Benefit to re-purpose software licenses on Azure
 
-If you've purchased licenses for Windows Server or SQL Server, and your licenses are covered by Software Assurance, you may be able to re-purpose those licenses on virtual machines on Azure.
+If you've purchased licenses for Windows Server or SQL Server, and your licenses are covered by [Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default?azure-portal=true), you may be able to re-purpose those licenses on virtual machines on Azure.
 
 Some of the details vary between Windows Server or SQL Server, and we'll provide resources at the end of this module where you can learn more.

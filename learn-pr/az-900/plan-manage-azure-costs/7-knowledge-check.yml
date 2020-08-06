@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which is the best first step the team should take to assess the cost of running these environments?"
+  - content: "Which is the best first step the team should take to compare the cost of running these environments on Azure versus in their datacenter?"
     choices:
     - content: "They're just test environments. Spin them up and check the bill at the end of the month."
       isCorrect: false
@@ -34,7 +34,7 @@ quiz:
     - content: "Apply spending limits to the development team's Azure subscription."
       isCorrect: true
       explanation: "If you exceed your spending limit, active resources are deallocated. You can then decide whether to increase your limit or provision fewer resources."
-    - content: "Give the development lead a budget and hold them accountable for overages."
+    - content: "Verbally give the development lead a budget and hold them accountable for overages."
       isCorrect: false
       explanation: "Although it's good for everyone to agree on a budget, are there controls you can put in place to _automatically_ check spending?"
   - content: "Which is the most efficient way for the testing team to save costs on virtual machines on weekends, when testers are not at work?"

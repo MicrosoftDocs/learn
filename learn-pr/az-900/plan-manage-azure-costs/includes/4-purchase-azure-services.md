@@ -41,7 +41,7 @@ There are three main ways to purchase services on Azure. They are:
 
 * **Directly from the web**
 
-    Here, you purchase Azure services directly from the Azure portal website and pay standard prices. You're billed monthly, as a credit card payment or via an invoice. This purchasing method is known as Web Direct.
+    Here, you purchase Azure services directly from the Azure portal website and pay standard prices. You're billed monthly, as a credit card payment or through an invoice. This purchasing method is known as Web Direct.
 
 * **Through a Cloud Solution Provider (CSP)**
 
