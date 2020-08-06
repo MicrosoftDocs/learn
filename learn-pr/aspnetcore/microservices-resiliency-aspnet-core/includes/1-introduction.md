@@ -21,6 +21,6 @@ In this module, you will:
 ## Prerequisites
 
 * Familiarity C# and ASP.NET Core development at the beginner level
-* Familiarity with RESTful service concepts and HTTP action verbs, such as GET, POST, PUT, and DELETE
+* Familiarity with RESTful service concepts
 * Conceptual knowledge of containers and AKS at the intermediate level
 * Access to an Azure subscription with **Owner** privilege
