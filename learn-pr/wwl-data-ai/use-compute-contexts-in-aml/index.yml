@@ -3,7 +3,7 @@ uid: learn.wwl.use-compute-contexts-in-aml
 metadata:
   title: Working with Compute Contexts in Azure Machine Learning
   description: "Learn how to manage compute contexts for experiments in Azure Machine Learning."
-  ms.date: 06/15/2020
+  ms.date: 07/16/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ roles:
 - student
 products:
 - azure
-- azure-machine-learning-service
+- azure-machine-learning
 units:
 - learn.wwl.use-compute-contexts-in-aml.introduction
 - learn.wwl.use-compute-contexts-in-aml.environments

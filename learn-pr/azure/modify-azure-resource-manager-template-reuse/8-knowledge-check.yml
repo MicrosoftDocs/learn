@@ -15,42 +15,42 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You can track costs by adding what to a resource?"
+  - content: "If you want to track costs, which of the following should you add to a resource?"
     choices:
-    - content: "Api Version"
+    - content: "The API version"
       isCorrect: false
-      explanation: "A resource tags value will be displayed in the overview page for that Azure resource and in cost reports."
+      explanation: "A resource tag's value will be displayed in the overview page for that Azure resource and in cost reports."
     - content: "Tags"
       isCorrect: true
-      explanation: "A resource tags value will be displayed in the overview page for that Azure resource and in cost reports."
+      explanation: "A resource tag's value will be displayed in the overview page for that Azure resource and in cost reports."
     - content: "A variable"
       isCorrect: false
-      explanation: "A resource tags value will be displayed in the overview page for that Azure resource and in cost reports."
-  - content: "A template expression always starts and ends with what characters?"
+      explanation: "A resource tag's value will be displayed in the overview page for that Azure resource and in cost reports."
+  - content: "A template expression always starts and ends with which characters?"
     choices:
     - content: "[]"
       isCorrect: true
-      explanation: "A template expression always starts and ends with square brackets []."
+      explanation: "A template expression always starts and ends with brackets: []."
     - content: "{}"
       isCorrect: false
-      explanation: "A template expression always starts and ends with square brackets []."
+      explanation: "A template expression always starts and ends with brackets: []."
     - content: "()"
       isCorrect: false
-      explanation: "A template expression always starts and ends with square brackets []."
-  - content: "Template expressions can be used what section or sections of the template?" 
+      explanation: "A template expression always starts and ends with brackets: []."
+  - content: "Template expressions can be used in which section or sections of a template?" 
     choices:
     - content: "The ```variables:{}``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
+      explanation: "Template expressions can be used in any section of an ARM template."
     - content: "The ```parameters:[]``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
-    - content: The ```resources:[]``` section"
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "The ```resources:[]``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
-    - content: The ```outputs:[]``` section"
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "The ```outputs:[]``` section"
       isCorrect: false
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
-    - content: All of the above"
+      explanation: "Template expressions can be used in any section of an ARM template."
+    - content: "All of the above"
       isCorrect: true
-      explanation: "Template expressions can be used in any of the sections of an ARM template."
+      explanation: "Template expressions can be used in any section of an ARM template."

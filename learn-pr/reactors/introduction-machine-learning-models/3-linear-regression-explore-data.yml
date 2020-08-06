@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.introduction-machine-learning-models.3-linear-regression-explore-data
+title: 'Linear regression: Data exploration'
+metadata:
+  title: 'Linear regression: Data exploration'
+  description: Learn how to explore data in linear regressions with machine learning models for data science.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-linear-regression-explore-data.md)] 
