@@ -2,7 +2,7 @@ Math is used frequently in computer science and the concepts you'll learn will b
 
 ## Simple calculations
 
-As with a calculator, you can use the operators + , - , * , and / in Python to add, subtract, multiply and divide numbers.
+As with a calculator, you can use the operators + , - , * , and / in Python to add, subtract, multiply, and divide numbers.
 
 For example, write the following comment and code in a cell and then click the run button to see the output.
 
@@ -34,7 +34,7 @@ For example, write the following comment and code in a cell and then click the r
 
 >25.0
 
-Furthermore, just like on calculators, the order of operations are in play when coding with Python. You can use parenthesis to combat this.
+Furthermore, just like on calculators, the order of operations are in play when coding with Python. You can use parentheses to combat this issue.
 
 Try copying the code below into a Jupyter Notebook cell and running it. Notice how you get two different numbers.
 
@@ -50,7 +50,7 @@ Try copying the code below into a Jupyter Notebook cell and running it. Notice h
 
 >21
 
-This is because the order of operations computes multiplication and division before addition and subtraction.
+You get two different numbers because the order of operations computes multiplication and division before addition and subtraction.
 
 ## More advanced math
 

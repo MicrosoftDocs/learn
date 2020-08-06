@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is not a variable type?"
+  - content: "Which of the following terms is not a variable type?"
     choices:
     - content: "Integer"
       isCorrect: false
@@ -41,7 +41,7 @@ quiz:
     choices:
     - content: "print(\"This is a variable\"; variable)"
       isCorrect: false
-      explanation: "The semi colon (;) should be a comma"
+      explanation: "The semicolon (;) should be a comma"
     - content: "print(\"This is a variable\", variable)"
       isCorrect: true
       explanation: "Correct! This is how to correctly print a variable and text."
