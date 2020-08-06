@@ -10,7 +10,9 @@ rockTypes = ["basalt", "highland", "breccia"]
 rockTypes
 ```
 
->['basalt', 'highland', 'breccia']
+```Output
+['basalt', 'highland', 'breccia']
+```
 
 As you can see, you must include square brackets and then include the values you want separated by commas.
 
@@ -22,7 +24,9 @@ rockTypeAndCount = ["basalt", 1, "highland", 2.5, "breccia", 5]
 rockTypeAndCount
 ```
 
->['basalt', 1, 'highland', 2.5, 'breccia', 5]
+```Output
+['basalt', 1, 'highland', 2.5, 'breccia', 5]
+```
 
 ## List Functions
 
@@ -35,7 +39,9 @@ rockTypes.append("soil")
 rockTypes
 ```
 
->['basalt', 'highland', 'breccia', 'soil']
+```Output
+['basalt', 'highland', 'breccia', 'soil']
+```
 
 We can also delete items from the end of a list by calling the .pop() function. We'll now delete soil from the rock types list.
 
@@ -44,7 +50,9 @@ rockTypes.pop()
 rockTypes
 ```
 
->['basalt', 'highland', 'breccia']
+```Output
+['basalt', 'highland', 'breccia']
+```
 
 Finally, we can look at and change the value from anywhere within the list. To see what value is at a certain point in the list, use square brackets after the list name to look at that specific value. Everything in Python is zero-indexed, meaning that counting begins at 0, not 1. So if we look at the value in the first position in a list, we would use:  `listName[0]`.  
 
@@ -54,7 +62,9 @@ In our rock type example, use the following code to look at the value in the sec
 rockTypes[1]
 ```
 
->'highland'
+```Output
+'highland'
+```
 
 We can also change a specific value in the list at a specific point by coding:
 
@@ -67,6 +77,8 @@ rockTypes[2] = "soil"
 rockTypes
 ```
 
->['basalt', 'highland', 'soil']
+```Output
+['basalt', 'highland', 'soil']
+```
 
 Doing this will change the current value at this position in the list, so the previous value will be gone.

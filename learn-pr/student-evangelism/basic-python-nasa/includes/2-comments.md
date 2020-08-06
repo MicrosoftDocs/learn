@@ -19,7 +19,9 @@ As noted previously, comments are not run by the computer. If you look at the co
 2 + 3
 ```
 
->5
+```Output
+5
+```
 
 > [!NOTE]
 > You're not expected to know what the code below does, it is used solely for the purpose of showing comments.

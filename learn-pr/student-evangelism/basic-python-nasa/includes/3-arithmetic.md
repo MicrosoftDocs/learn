@@ -11,28 +11,36 @@ For example, write the following comment and code in a cell and then click the r
 3 + 6
 ```
 
->9
+```Output
+9
+```
 
 ```python
 # Lose three units of oxygen
 15 - 3
 ```
 
->12
+```Output
+12
+```
 
 ```python
 # Finding how far a rocket has gone by multiplying speed by time travelling
 17000 * 2
 ```
 
->34000
+```Output
+34000
+```
 
 ```python
 # Number of rocks per pile if we separate 100 space rocks in 4 piles
 100 / 4
 ```
 
->25.0
+```Output
+25.0
+```
 
 Furthermore, just like on calculators, the order of operations are in play when coding with Python. You can use parentheses to combat this issue.
 
@@ -42,13 +50,17 @@ Try copying the code below into a Jupyter Notebook cell and running it. Notice h
 2 + 5 * 3
 ```
 
->17
+```Output
+17
+```
 
 ```python
 (2 + 5) * 3
 ```
 
->21
+```Output
+21
+```
 
 You get two different numbers because the order of operations computes multiplication and division before addition and subtraction.
 
@@ -63,7 +75,9 @@ There are also more advanced calculations that Python can compute listed below:
 10 % 3
 ```
 
->1
+```Output
+1
+```
 
 - To calculate exponents, use **
 
@@ -72,7 +86,9 @@ There are also more advanced calculations that Python can compute listed below:
 10 ** 5.37
 ```
 
->262144
+```Output
+262144
+```
 
 - To remove the remainder when dividing, use //
 
@@ -80,5 +96,6 @@ There are also more advanced calculations that Python can compute listed below:
 # How many even piles of 2 we can make with 5 rocks
 5 // 2
 ```
-
->2
+```Output
+2
+```

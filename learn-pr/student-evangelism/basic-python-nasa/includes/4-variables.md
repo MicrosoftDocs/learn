@@ -30,7 +30,9 @@ You can view the values of your variables by simply writing the variable's name 
 roverName
 ```
 
->'Artemis Rover'
+```Output
+'Artemis Rover'
+```
 
 A unique aspect of Python is that you don't need to tell the program what type of variable you're making. For example, in some languages, if you want to make an integer, you must first let the computer know that you're about to create an integer. In Java, for example, you might write: `int intVar = 0;`.
 
@@ -49,7 +51,9 @@ basaltRockCount = basaltRockCount + 1
 basaltRockCount
 ```
 
->4
+```Output
+4
+```
 
 This can be useful if we want to inform the computer that we've found three rocks so far and that we've just found another.
 
@@ -70,7 +74,9 @@ distanceTraveled = 10234
 distanceToMoon - distanceTraveled
 ```
 
->228621
+```Output
+228621
+```
 
 Although you can give a variable any name, it's recommended that you choose something that represents the data it holds. For example, you could have written the above code as:
 

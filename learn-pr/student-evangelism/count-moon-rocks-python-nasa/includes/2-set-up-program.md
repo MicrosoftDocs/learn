@@ -12,7 +12,9 @@ To start our program, we'll want to let the user know that the program is beginn
 print("Artemis Rover Rock Scanner Starting")
 ```
 
->Artemis Rover Rock Scanner Starting
+```Output
+Artemis Rover Rock Scanner Starting
+```
 
 Next, we want to create some variables that are going to represent the count of the different types of rocks that Artemis encountered on the Moon. The specific rocks that we are looking for are: Basalt: The Mare Rock, Breccia: Shocked Rock, Highland Rock: Anorthosite, and Regolith Soil/Surface Layer. These types are the four main types of rocks found on the Moon.
 

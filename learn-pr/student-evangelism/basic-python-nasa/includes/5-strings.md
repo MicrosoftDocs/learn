@@ -13,7 +13,9 @@ upperCase = astronaut.upper()
 upperCase
 ```
 
->'REMY MORRIS'
+```Output
+'REMY MORRIS'
+```
 
 In a similar way, we can call astronaut.lower() to make the string lower case.
 
@@ -22,7 +24,9 @@ lowerCase = astronaut.lower()
 lowerCase
 ```
 
->'remy morris'
+```Output
+'remy morris'
+```
 
 Another cool string function we can use is called .capitalize(). This function will make the first letter of a sentence capitalized and everything else lower-cased. Try copying the new variable below and calling the capitalize function.
 
@@ -31,7 +35,9 @@ rocketOutput = "rOckEt iS A laUncH!"
 rocketOutput.capitalize()
 ```
 
->'Rocket is a launch!'
+```Output
+'Rocket is a launch!'
+```
 
 Another neat thing you can do with strings in Python is concatenate or add them together. If you have two string variables, you can add them together by using the + sign.
 
@@ -42,7 +48,9 @@ launchLocationState = "Florida"
 launchLocationCity + launchLocationState
 ```
 
->'Cape Canaveral, Florida'
+```Output
+'Cape Canaveral, Florida'
+```
 
 Finally, you can use the * sign to repeat a string multiple times.
 
