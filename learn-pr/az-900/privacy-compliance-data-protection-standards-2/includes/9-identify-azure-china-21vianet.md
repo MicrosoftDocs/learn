@@ -4,15 +4,12 @@ According to the China Telecommunication Regulation (in Chinese), providers of c
 
 ![Screenshot of the Microsoft Azure China website home page.](../media/azure-china-21Vianet.png)
 
-As the first foreign public cloud service provider offered in China in compliance with government regulations, Azure China 21Vianet provides world-class security as discussed on the [Trust Center](https://www.trustcenter.cn/compliance/default.html?azure-portal=true), as required by Chinese regulations for all systems and applications built on its architecture. 
+As the first foreign public cloud service provider offered in China in compliance with government regulations, Azure China 21Vianet provides world-class security as discussed on the [Trust Center](https://www.trustcenter.cn/compliance/default.html?azure-portal=true), as required by Chinese regulations for all systems and applications built on its architecture.
 
 ## Azure products and services available in China
+
 The Azure services are based on the same Azure, Office 365, and Power BI technologies that make up the Microsoft global cloud service, with comparable service levels. Azure agreements and contracts in China, where applicable, are signed between customers and 21Vianet.
 
 Azure includes the core components of IaaS, PaaS, and SaaS. These components include network, storage, data management, identity management, and many other services.
 
-Azure China 21Vianet supports most of the same services that global Azure has, such as geosynchronous data replication and autoscaling. Even if you already use global Azure services, to operate in China you may need to rehost or refactor some or all your applications or services. 
-
-
-
-
+Azure China 21Vianet supports most of the same services that global Azure has, such as geosynchronous data replication and autoscaling. Even if you already use global Azure services, to operate in China you may need to rehost or refactor some or all your applications or services.

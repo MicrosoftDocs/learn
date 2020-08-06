@@ -1,32 +1,47 @@
-The [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true) is a website showcasing Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
-
-![Screenshot of the trust center website home page.](../media/trust-center.png)
 <div style="background:yellow;">
-TODO: Screenshot is out of date re GDPR heading, and is fuzzy. New page is unlikely to date except COVID-19 banner (can we edit out?) 
+TODO: In this part, ...
+
+TODO: TWT ...
 </div>
 
-The Trust Center site provides:
+The [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true) showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
 
-+ In-depth information about security, privacy, compliance offerings, policies, features, and practices across Microsoft cloud products.
-+ Recommended resources in the form of a curated list of the most applicable and widely used resources for each topic.
-+ Links to the security, privacy and compliance blogs, as well as upcoming related events.
+:::image type="content" source="../media/trust-center.png" alt-text="A screenshot that shows the trust center home page.":::
 
-The Trust Center is a great resource for other people in your organization who may play a role in security, privacy and compliance, including business managers, risk assessment and privacy officers and legal compliance teams. It does not require an Azure subscription or a Microsoft account. 
+The Trust Center provides:
 
-## Exercise - Explore the Trust Center
-This exercise is optional and does not require an Azure subscription.
+* In-depth information about security, privacy, compliance offerings, policies, features, and practices across Microsoft cloud products.
+* Additional resources for each topic.
+* Links to the security, privacy, and compliance blogs and upcoming events.
 
-1. In a browser, access the [Microsoft Trust Center compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?azure-portal=true) page.
+The Trust Center is a great resource for other people in your organization who may play a role in security, privacy, and compliance. These people include business managers, risk assessment and privacy officers, and legal compliance teams.
 
-2. Notice the offerings are grouped into **Global**, **US Government**, **Industry**, and **Regional**.
+## Explore the Trust Center
 
-3. In the **Global** group, click **ISO 27001**. 
+As an optional exercise, let's take a brief look at TODO. Access to the Trust Center doesn't require an Azure subscription or a Microsoft account.
 
-    > [!NOTE]
-    > The ISO 27001 Information Security Management Standards page is typical of the type of complaince information we provide.
+1. Go to the [Microsoft compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?azure-portal=true) for Microsoft 365.
 
-4. Notice there is an overview of the standard; in-scope cloud services; audits, reports and certificates; assessments and reports; FAQs; resources; and white papers. 
+    Note that the offerings are grouped into these categories: **Global**, **US Government**, **Industry**, and **Regional**.
 
-5. Browse through any content of interest to you. 
+1. Under **Global**, select **ISO 27001**.
 
+    :::image type="content" source="../media/4-iso-27001.png" alt-text="TODO.":::
 
+    The ISO 27001 Information Security Management Standards page is typical of the type of compliance information we provide.
+
+1. Briefly review the documentation for ISO/IEC 27001.
+
+    You see:
+
+    * An overview of the standard.
+    * Which cloud services are in scope.
+    * An overview of the audit cycle.
+    * Answers to frequently asked questions.
+    * Additional resources and white papers.
+
+<div style="background:yellow;">
+TODO: OK, so what?
+
+TODO: Tie back briefly to TWT. What did they learn or what will they do next?
+</div>
