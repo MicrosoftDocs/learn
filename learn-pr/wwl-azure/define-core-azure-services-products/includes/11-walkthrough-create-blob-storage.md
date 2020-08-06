@@ -1,7 +1,7 @@
 ## Exercise - Blob storage
 
 > [!NOTE]
-> A Sandox is provided to allow you to complete this lab.  Or, this Lab requires an Azure subscription. 
+> A Sandbox is provided to allow you to complete this lab.  Or, this Lab requires an Azure subscription. 
 
 ## Lab - Create blob storage
 
@@ -43,7 +43,7 @@ In this task, we will create a Blob container and upload a blob file.
 
 1. Click the name of the new storage account, scroll to the **Blob service** section, and then click **Containers**.
 
-2. Click **+ Container** and complete the information. Use the Information icons to learn more. When done click **OK**.
+2. Click **+ Container** and complete the information. Use the Information icons to learn more. When done click **Create**.
 
 
     | Setting | Value |
@@ -83,4 +83,6 @@ In this task, we will create a Blob container and upload a blob file.
 Congratulations! You have created a storage account, and then worked with storage blobs.
 
 > [!NOTE]
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

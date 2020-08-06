@@ -3,7 +3,7 @@ uid: learn.azure.debug-nodejs.3-run-your-code-step-by-step
 title: Debug with the Node.js built-in debugger
 metadata:
   title: Debug with the Node.js built-in debugger
-  description: Learn what is a breakpoint and how to run your code step by step using Node.js built-in debugger.
+  description: Learn what a breakpoint is and how to run your code step by step by using the Node.js built-in debugger.
   author: sinedied
   ms.author: yolasors
   ms.date: 06/04/2020

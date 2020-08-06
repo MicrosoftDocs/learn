@@ -99,7 +99,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
 
 1. Select the **Durable Functions HTTP starter** template. This template creates a durable function that runs in response to an HTTP request.
 
-1. Name the function **HttpStart**, and then click **Create**.
+1. Name the function **HttpStart**, select **Function** authorization level, and then click **Create**.
 
 1. When the function is created, the code for the **index.js** file appears in the editor. Your file should resemble the following example:
 
@@ -126,7 +126,7 @@ Since we are creating JavaScript Durable Functions, we need to install the `dura
     {
         "bindings": [
             {
-                "authLevel": "anonymous",
+                "authLevel": "function",
                 "name": "req",
                 "type": "httpTrigger",
                 "direction": "in",
@@ -236,6 +236,11 @@ JavaScript Durable Functions currently require Azure Functions version 2 compati
     You'll use this URL to run the **HttpStart** function.
 
 1. Open a new browser window and navigate to the URL that you copied. In the URL, replace the **{functionName}** placeholder with **OrchFunction**
+
+
+    ```
+    https://example.azurewebsites.net/api/orchestrators/OrchFunction?code=AbCdEfGhIjKlMnOpQrStUvWxYz==
+    ```
 
    The response message contains a set of URI endpoints that you can use to monitor and manage the execution, which should resemble the following example:
 
