@@ -1,4 +1,4 @@
-Before we look at what Kubernetes is, let's summarize a few concepts that are key to the containerzied workloads.
+Before we look at what Kubernetes is, let's summarize a few concepts that are key to containerzied workloads.
 
 ### Container management in the drone tracking solution
 
