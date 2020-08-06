@@ -1,6 +1,4 @@
-Suppose your company, Tailwind Traders, needs to understand how and where they should deploy their Azure workloads as they migrate to and adopt Azure. At present they are not fully sure about how they can deploy in such a way that they follow best practices as well as ensuring that they meet compliance requirements around high availability.
-
-The organizing structure for resources in Azure has four levels: management groups, subscriptions, resource groups, and resources. The following image shows the relationship of these levels i.e. the hierarchy of organization for the various objects
+Let's say that you've just been hired by a successful hardware manufacturing company, Tailwind Traders, to oversee their migration to the cloud. Your company's Chief Technology Officer (CTO) recently decided to adopt Microsoft Azure as the cloud computing platform, and you are currently in the planning stages for the migration. Before you begin the migration process, you decide to study the various Azure concepts, resources, and terminology in order to ensure that your migration is a success.
 
 ## Learning objectives
 

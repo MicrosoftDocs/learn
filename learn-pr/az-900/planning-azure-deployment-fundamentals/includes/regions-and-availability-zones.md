@@ -1,5 +1,3 @@
-Suppose you're <span style="background:yellow">TODO</span>...
-
 Microsoft Azure is made up of datacenters located around the globe. When you leverage a service or create a resource such as a SQL database or virtual machine, you are using physical equipment in one or more of these locations.
 
 The specific datacenters aren't exposed to end users directly; instead, Azure organizes them into _regions_.

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.planning-azure-deployment-fundamentals.overview
-title: Overview of Azure Subscriptions, Resources, and Regions
+title: Overview of Azure Subscriptions, Management Groups, Resources, and Regions
 metadata:
-  title: Overview of Azure Subscriptions, Resources, and Regions
-  description: TODO
+  title: Overview of Azure Subscriptions, Management Groups, Resources, and Regions
+  description: In this unit, you'll learn about Azure Subscriptions, Management Groups, Resources, and Regions.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm

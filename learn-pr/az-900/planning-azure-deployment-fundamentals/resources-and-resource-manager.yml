@@ -3,12 +3,12 @@ uid: learn.azure.planning-azure-deployment-fundamentals.resources-and-resource-m
 title: Azure Resources and Resource Manager
 metadata:
   title: Azure Resources and Resource Manager
-  description: TODO
+  description: In this unit, you'll learn about Azure Resources and the Azure Resource Manager.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/resources-and-resource-manager.md)]

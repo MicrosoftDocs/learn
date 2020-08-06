@@ -1,12 +1,15 @@
-The organizing structure for resources in Azure has four levels: **management groups**, **subscriptions**, **resource groups**, and **resources**. The following image shows the relationship of these levels i.e. the hierarchy of organization for the various objects
+As part of your research for Tailwind Traders, you need to learn the organizing structure for resources in Azure, which has four levels: **management groups**, **subscriptions**, **resource groups**, and **resources**. The following image shows the hierarchy of organization for these levels.
 
 [![Screenshot of the hierarchy for objects in Azure.](../media/hierarchy.png)](../media/hierarchy.png#lightbox)
 
 - **Management groups**: These are containers that help you manage access, policy, and compliance for multiple subscriptions. All subscriptions in a management group automatically inherit the conditions applied to the management group.
 
     - 10,000 management groups can be supported in a single directory.
-    - A management group tree can support up to six levels of depth. (This limit doesn't include the Root level or the subscription level.)
+
+    - A management group tree can support up to six levels of depth.
+
     - Each management group and subscription can only support one parent.
+
     - Each management group can have many children.
 
 - **Subscriptions**: A subscription groups together user accounts and the resources that have been created by those user accounts. For each subscription, there are limits or quotas on the amount of resources you can create and use. Organizations can use subscriptions to manage costs and the resources that are created by users, teams, or projects.
@@ -16,4 +19,7 @@ The organizing structure for resources in Azure has four levels: **management gr
 - **Resources**: Resources are instances of services that you create, like virtual machines, storage, or SQL databases.
 
     - Resources are created in **Regions**, which are different geopgraphical locations around the globe that contain Azure datacenters.
+
     - Some of these regions offer **Availability Zones**, which are different Azure datacenters within that region.
+
+You'll examine each of these levels in the next few units.

@@ -2,14 +2,14 @@
 uid: learn.azure.planning-azure-deployment-fundamentals
 metadata:
   title: Planning Azure Deployment Fundamentals
-  description: TBD
+  description: Learn about Azure Subscriptions, Management Groups, Resource Groups, Resource Manager, Azure Regions, and Availability zones.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Planning Azure Deployment Fundamentals
-summary: Tailwind Traders needs to understand how and where they should deploy their Azure workloads as they migrate to and adopt Azure. At present they are not fully sure about how they can deploy in such a way that they follow best practices as well as ensuring that they meet compliance requirements around high availability.
+summary: In this module, you'll examine the various concepts, resources, and terminology that are necessary to work with Azure. For example, you'll learn about Azure Subscriptions and Management Groups, Resource Groups and the Azure Resource Manager, as well as Azure Regions and Availability zones.
 abstract: | 
   Upon completion of this module, you'll be able to describe the benefits and usage of:
   - Azure Subscriptions
@@ -21,7 +21,7 @@ abstract: |
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
   - Familiarity with cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/control-and-organize-with-resource-manager.svg
 levels:
 - beginner
 roles:
