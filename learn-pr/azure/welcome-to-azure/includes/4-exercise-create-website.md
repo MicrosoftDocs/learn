@@ -90,6 +90,8 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
 1. Back on the **New App Service plan** panel, select **OK** to create the new plan and close the panel.
 
+    :::image source="../media/4-new-service-plan-config-set.png" alt-text="Screenshot of Azure portal showing New App Service Plan configuration after selecting the F1 free pricing tier.":::
+
 1. Finally, select the **Create** button to start the deployment of your new site.
 
 > [!NOTE]
