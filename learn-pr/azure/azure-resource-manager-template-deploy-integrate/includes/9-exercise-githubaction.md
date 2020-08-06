@@ -236,4 +236,4 @@ When the workflow is completed, go to the Azure portal to check the deployments 
 
 1. In the left pane, select Resource groups and select **`GitHubActionExercise-rg`**, navigate to the `Deplyments` pane and verify that your deployment succeeded.
 
-:::image type="content" source="../media/9-validate-deployment.png" alt-text="Deployment status" border="true":::
+:::image type="content" source="../media/9-validate-deployment.gif" alt-text="Deployment status" border="true":::
