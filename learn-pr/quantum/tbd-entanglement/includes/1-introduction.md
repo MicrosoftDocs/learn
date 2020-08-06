@@ -31,6 +31,6 @@ In this module, you'll:
 - The latest version of [.NET
   Core](https://dotnet.microsoft.com/download?azure-portal=true)
 - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
-- The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode)
-- Module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/).
-- Basic knowledge of [linear algebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra) and [complex numbers](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic).
+- The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode?azure-portal=true)
+- Module [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true).
+- Basic knowledge of [linear algebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra?azure-portal=true) and [complex numbers](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic?azure-portal=true).

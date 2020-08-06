@@ -62,7 +62,7 @@ has amplitudes with non-zero phases.
 
 We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
 $\ket{1}$. Let's observe it using `DumpMachine`. We should first transform
-$\ket{0}$ into $\ket{1}$ with help of the `[X]`(https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation, and then apply
+$\ket{0}$ into $\ket{1}$ with help of the [`X`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation, and then apply
 `H` to obtain $\ket{1}.$
 
 The code would be:

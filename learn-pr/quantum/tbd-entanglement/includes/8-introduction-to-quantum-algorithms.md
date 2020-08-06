@@ -92,7 +92,7 @@ This is, we solve the problem with just one query to the oracle, exponentially
 faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm).
+in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
 
 
 ![Figure6](../media/KittyYeungQ30.png)
@@ -148,11 +148,11 @@ $1-O(\frac1{2^n})$ using $O(\sqrt{2^n})$ queries.
 ![Figure7](../media/KittyYeungQ32.png)
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Grover's algorithm(https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm).
+in Q#, check our [quantum katas tutorial on Grover's algorithm(https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm?azure-portal=true).
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the tutorial [Implement Grover's search
-algorithm in Q#](https://docs.microsoft.com/quantum/tutorials/search).
+algorithm in Q#](https://docs.microsoft.com/quantum/tutorials/search?azure-portal=true).
 
 ## Shor's algorithm
 
@@ -198,7 +198,7 @@ prime factors is exponentially faster than the best known classical algorithm.
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the [Q# sample for integer
-factorization](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization#integer-factorization-sample).
+factorization](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization#integer-factorization-sample?azure-portal=true.
 
 In  the next unit, you'll take a knowledge check to test what you learned on
 this module.

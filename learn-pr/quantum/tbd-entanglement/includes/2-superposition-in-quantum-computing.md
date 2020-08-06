@@ -2,7 +2,7 @@ For some computational tasks, quantum computing provides exponential speed-ups.
 This is rooted from the fact that quantum computing uses three phenomena from
 quantum mechanics: superposition, interference, and entanglement. In the last MS
 Learn module [Create your first Q# program by using the Quantum Development
-Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/),
+Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true),
 you have experienced superposition by creating a random number generator from
 qubits. In this unit, you will learn more about the concept.  
 
@@ -70,7 +70,7 @@ superposition of $\ket{\psi_1}$ and $\ket{\psi_2}$. Here, $a$ and $b$ are the
 probability amplitudes of $\ket{\psi_1}$ and $\ket{\psi_2}$, respectively.
 Remember that in the module [Create your first Q# program by using the Quantum
 Development
-Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit)
+Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
 we already used superposition to create a quantum random number generator. We
 used the operator `H` to put a qubit in the state $\ket{0}$ into superposition.
 Mathematically this is: $$ \hat H \ket{0} = \frac1{\sqrt2} \ket{0} +

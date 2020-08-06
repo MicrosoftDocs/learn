@@ -191,9 +191,9 @@ instead of one qubit three times.
 
 In this code we introduced three concepts:
 
-* Now `qubits` represents a `Qubit` array of dimension 3. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types).
-* We use the functions [`ApplyToEach`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach), [`ResetAll`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall) and [`ForEach`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach) to perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions alike that make writing quantum programs more efficient. 
-* We use the functions [`BoolArrayAsInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint) and [`ResultArrayAsBoolArray`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray) from the library `Microsoft.Quantum.Convert` to
+* Now `qubits` represents a `Qubit` array of dimension 3. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types?azure-portal=true).
+* We use the functions [`ApplyToEach`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true), [`ResetAll`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall) and [`ForEach`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true) to perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions alike that make writing quantum programs more efficient. 
+* We use the functions [`BoolArrayAsInt`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [`ResultArrayAsBoolArray`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) from the library `Microsoft.Quantum.Convert` to
 transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer number.
 
 The output should be something like this:
@@ -232,7 +232,7 @@ slightly modify the code:
 
 :::code language="qsharp" source="code/3-program-4.qs":::
 
-In this block, we have introduced the use of the loop `for`. Q# as a full stack programming language has classical flow control capabilities. You can learn more about the different Q# flow control statements in the [Quantum Development Kit documentation](https://docs.microsoft.com/quantum/user-guide/using-qsharp/control-flow).
+In this block, we have introduced the use of the loop `for`. Q# as a full stack programming language has classical flow control capabilities. You can learn more about the different Q# flow control statements in the [Quantum Development Kit documentation](https://docs.microsoft.com/quantum/user-guide/using-qsharp/control-flow?azure-portal=true).
 
 The output of this code should be something like this:
 

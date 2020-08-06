@@ -10,7 +10,7 @@ over single qubits individually. However, to get qubits entangled we need
 what is called **multi-qubit gates**.
 
 The most prominent example of a multi-qubit gate is the
-[`CNOT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot)
+[`CNOT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.cnot?azure-portal=true)
 operation. This operation takes two qubits as input, and flips the state of the
 second qubit (target qubit) if and only if the state of the first qubit (control
 qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT`, we can
@@ -52,7 +52,7 @@ operation in the place of `X`. For example, `Controlled Y([control], target)`
 applies the `Y` gate conditioned on the state of the control qubit.
 
 To learn more about the `Controlled` functor and many other Q# features, you can
-take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations).
+take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations?azure-portal=true).
 
 > [!NOTE] 
 > A functor in Q# is a factory that defines a new operation from another
@@ -62,7 +62,7 @@ take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide
 
 The Quantum Development Kit has a built-in tool that allows you to estimate the
 resources required to run a given Q# code on a quantum computer. It's called
-[`ResourcesEstimator`](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator).
+[`ResourcesEstimator`](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
 It runs the quantum operation without actually simulating the state of a quantum
 computer. For this reason, it can estimate resources for Q# operations that use
 thousands of qubits, if the classical part of the code can be run in a
@@ -73,7 +73,7 @@ reasonable time.
 > Quantum Development Kit. The quantum trace simulator can run quantum programs
 > without actually simulating the state of a quantum computer. You can learn
 > more about the quantum trace simulator in the [Quantum Development Kit
-> documentation](https://docs.microsoft.com/quantum/user-guide/machines/qc-trace-simulator/).
+> documentation](https://docs.microsoft.com/quantum/user-guide/machines/qc-trace-simulator?azure-portal=true).
 
 To use a Resources Estimator, write in the command line:
 
@@ -108,7 +108,7 @@ need. This makes `ResourcesEstimator` a very useful tool for quantum developers.
 To learn more about `ResourcesEstimator` and a detailed description of each of
 the parameters of the output and more estimation tools, you can read [the
 official
-documentation](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator).
+documentation](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
 
 In the next unit, we're going to present different quantum algorithms that make
 use of superposition, interference, and entanglement to outperform classical
