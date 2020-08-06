@@ -74,7 +74,7 @@ Before you can download Data Migration Assistant, you need to disable Enhanced S
 
 Allow the analysis to run. When it finishes, it produces results and breaks them into SQL Server *feature parity* issues or *compatibility issues*. Start by looking at the SQL Server feature parity results, which are the default.
 
-    :::image type="content" source="../media/4-07-review-results.png" alt-text="Review results." loc-scope="azure-database-migration":::
+:::image type="content" source="../media/4-07-review-results.png" alt-text="Review results." loc-scope="azure-database-migration":::
 
 In the middle of the page, look for the section **Unsupported features**. The second and third items show **N/A** under the affected objects, meaning that nothing was found in the source system for these two items.
 

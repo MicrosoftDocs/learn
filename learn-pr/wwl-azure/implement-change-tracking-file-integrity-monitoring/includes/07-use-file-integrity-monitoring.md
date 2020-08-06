@@ -9,7 +9,7 @@ In this demonstration, you'll learn to:
 - Disable File Integrity Monitoring.
 
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ABTQ]
+>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4C2RP]
 
 
 
