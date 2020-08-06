@@ -3,12 +3,12 @@ uid: learn.azure.intro-to-azure-fundamentals.getting-started-with-azure-accounts
 title: Getting started with Azure accounts
 metadata:
   title: Getting started with Azure accounts
-  description: TODO
+  description: In this unit, you'll learn how to get started with Azure accounts.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 2
 content: |
   [!include[](includes/getting-started-with-azure-accounts.md)]

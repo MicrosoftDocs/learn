@@ -30,6 +30,9 @@ The exam measures your cloud skills in several study areas, which are listed in 
 
 This set of learning paths will take you step by step through the fundamentals of the Azure platform, and prepare you to start building solutions.
 
-- [TODO: LP1: Fundamental Cloud Concepts and Core Azure Services](https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/264941)
-- [TODO: LP2: Fundamental Azure Core Solutions and Management Tools](https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/264945)
-- [TODO: LP3: Fundamental Security, Identity, Governance, Privacy and Compliance Features, Cost Management, and SLA](https://ceapex.visualstudio.com/Microsoft%20Learn/_workitems/edit/264960)
+- [TODO: Azure Fundamentals: Describe cloud concepts](https://docs.microsoft.com/learn/)
+- [TODO: Azure Fundamentals: Describe core Azure services](https://docs.microsoft.com/learn/)
+- [TODO: Azure Fundamentals: Describe core solutions and management tools on Azure](https://docs.microsoft.com/learn/)
+- [TODO: Azure Fundamentals: Describe general security and network security features](https://docs.microsoft.com/learn/)
+- [TODO: Azure Fundamentals: Describe identity, governance, privacy, and compliance features](https://docs.microsoft.com/learn/)
+- [TODO: Azure Fundamentals: Describe Azure cost management and service level agreements](https://docs.microsoft.com/learn/)
