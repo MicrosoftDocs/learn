@@ -42,7 +42,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     This option takes you to the **Azure Marketplace**.
 
-    :::image source="../media/4-azure-marketplace.png" alt-text="Screenshot of Azure portal showing Azure marketplace categories in a left column and popular options in a right column.":::
+    :::image source="../media/4-azure-marketplace.png" alt-text="Screenshot of Azure portal showing Azure Marketplace categories in a left column and popular options in a right column.":::
 
 1. The Azure Marketplace has many services, solutions, and resources available for you to use. Since we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** box above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
 
