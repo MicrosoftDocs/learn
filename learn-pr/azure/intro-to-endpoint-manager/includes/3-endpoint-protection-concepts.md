@@ -1,4 +1,4 @@
-Microsoft Endpoint Manager helps you protect the digital resources that your organization uses. These resources include devices, apps, and data. You use the Microsoft Endpoint Manager admin center to configure the settings that are then applied based on the devices and users of your organization. Those settings are contained in policies that you create. You assign the policies to groups that you define. And, those groups are either users or devices.
+Microsoft Endpoint Manager helps you protect the digital resources that your organization uses. These resources include devices, apps, and data. You protect these resources based on settings related to these resources. You use the Microsoft Endpoint Manager admin center to configure the settings that are then applied based on the devices, apps, and users of your organization. Those settings are contained in policies that you create. You assign the policies to groups that you define. And, those groups are either users or devices.
 
 ## Manage and protect devices
 <!--
@@ -11,7 +11,7 @@ Microsoft Intune helps you protect the devices you manage and the data stored on
 Device policies allow you to perform several different types of actions to protect devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control, and retire many of the aspects of the devices at your organization.
 
 #### Examples of device configuration policies
-Intune configuration policies help you protect and configure devices by controlling a multitude of settings and features. For example, you can:
+Intune configuration policies help you protect and configure devices by allowing you to control a multitude of settings and features. For example, you can:
 - Restrict use of hardware features on the device such as the camera, or Bluetooth.
 - Reset passcodes when users are locked out of their devices.
 - Require devices to be compliant with the protection requirements implemented by your organization, such as requiring each device to use a PIN to access the device.
@@ -29,7 +29,7 @@ The following interactive guide steps you through the Microsoft Endpoint Manager
 </div>
 
 ## Manage and protect apps
-Microsoft Intune gives you a range of features to help you manage and protect apps and data. Intune supports mobile application management policies without managing the device. Intune MAM supports two configurations. The first involves Mobile Device Management (MDM) along with Mobile App Management (MAM). This configuration is where IT administrators can only manage apps using MAM and app protection policies on devices that are *enrolled* with Intune mobile device management (MDM). The second configuration involves MAM without device enrollment. MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices *not enrolled* with Intune MDM. This means apps could be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers.
+Microsoft Intune gives you a range of features to help you manage and protect apps and data. Intune supports mobile application management policies without managing the device. Intune MAM supports two configurations. The first involves mobile device management (MDM) along with Mobile App Management (MAM). This configuration is where IT administrators can only manage apps using MAM and app protection policies on devices that are *enrolled* with Intune mobile device management (MDM). The second configuration involves MAM without device enrollment. MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices *not enrolled* with Intune MDM. This means apps could be managed by Intune on devices enrolled with third-party enterprise mobility management (EMM) providers.
 
 ### Examples of app policies
 App policies allow you to perform several different types of actions to configure and protect apps. By using MAM policies in Intune you can configure, secure, publish, monitor, and update apps for devices and users of your organization. For example, you can:
@@ -54,14 +54,14 @@ https://docs.microsoft.com/mem/intune/protect/data-leak-prevention
 
 ### Prevent data leaks
 
-You can control how users share and save data without risking intentional or accidental data leaks. Microsoft Intune provides app protection policies that you set to secure you company data on user-owned devices. The devices do not need to be enrolled in the Intune service.
+You can control how users share and save data without risking intentional or accidental data leaks. Microsoft Intune provides app protection policies that you set to secure your company data on user-owned devices. The devices do not need to be enrolled in the Intune service.
 
 App protection policies set up with Intune also work on devices managed with a non-Microsoft device management solution. The personal data on the devices is not touched; only company data is managed by the IT department.
 
-You can set app protection policies for Office mobile apps on devices running Windows, iOS/iPadOS, or Android to protect company data. These policies let you set policies such as app-based PIN or company data encryption, or more advanced settings to restrict how you cut, copy, paste, and save-as features are used by users between managed and unmanaged apps. You can also remotely wipe company data without requiring users enroll devices.
+You can set app protection policies for Office mobile apps on devices running Windows, iOS/iPadOS, or Android to protect company data. These policies enforce device requirements such as an app-based PIN or company data encryption, or more advanced settings to restrict how cut, copy, paste, and save-as features are used by users between managed and unmanaged apps. You can also remotely wipe company data without requiring users enroll devices.
 
 ### Prevent unauthorized access
 <!--
 https://docs.microsoft.com/mem/intune/protect/data-outside-protect
 -->
-You can classify, label, and protect Office 365 documents and emails so only authorized users have access to the data. The settings are managed automatically after IT administrators or users set the rules and conditions. Alternatively, the IT team can provide recommended settings for users to follow. Administrators and users can also revoke access to data already shared with others without assistance from another authority. The result of this work is to control who opens or updates protected data, even when the data leaves the company's network.
+You can classify, label, and protect Office 365 documents and emails so only authorized users have access to the data. The settings are managed automatically after IT administrators or users set the rules and conditions. Alternatively, the IT team can provide recommended settings for users to follow. Administrators and users can also revoke access to data already shared with others without assistance from another authority. The goal of this work is to control who opens or updates protected data, even when the data leaves the company's network.

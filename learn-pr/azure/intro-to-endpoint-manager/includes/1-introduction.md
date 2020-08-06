@@ -2,7 +2,7 @@ Today, most companies are on the cloud. Software updates are needed continuously
 
 ![Modern workplace technology trends](../media/intro-to-endpoint-manager-00.png)
 
-Technology needs are evolving in the modern workplace. IT is adapting to this evolving modern workplace. These changes include the following:
+Technology needs are evolving in the modern workplace. IT is adapting to this evolving and changing modern workplace. These changes include the following:
 - End users that were using a single device are now using multiple devices.
 - Devices that were business owned are now both user and business owned.
 - End users that were solely using the corporate network with legacy apps are now using cloud managed and SaaS apps as well.
@@ -16,7 +16,7 @@ As an IT admin or business decision maker, you must find modern methods and tech
 
 You can start by implementing services and tools to protect the digital resources at your organization. Those resources often include devices, apps, and data that the people of your organization use to be productive. These same users may also be employees, coworkers, and students. They may open and share personal files, visit unsecure websites, and install potentially unsafe apps. They want to use their devices to access all of their information and resources, whether it is at work, school, or home.
 
-You can protect those resources and devices by using Mobile Device Management (MDM) and Mobile Application Management (MAM) services and tools. MDM enables organizations to protect and secure their resources and data, based on enrolled devices. Organization can make sure that only authorized people and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their device, such as a phone, because they know their device meets their organization's security requirements. MAM enables organizations to manage and protects their data within an application. 
+You can protect those resources and devices by using mobile device management (MDM) and mobile application management (MAM) services and tools. MDM enables organizations to protect and secure their resources and data, based on enrolled devices. Organization can make sure that only authorized people and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their device, such as a phone, because they know their device meets their organization's security requirements. MAM enables organizations to manage and protects their data within an application. 
 
 An MDM or MAM solution must accomplish the following tasks:
 

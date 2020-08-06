@@ -1,6 +1,6 @@
 Microsoft Endpoint Manager allows you to manage and secure your organization's cloud and on-premises devices, apps, and data. As part of this management, you can use Endpoint Manager to protect data, manage assignments, ensure proper access, implement security rules, and resolve compliance issues. Let's explore each of these concepts.
 
-Before you can safeguard the devices that access your organization's resources, you must enroll them. Enrolling means that the device is connected and recognized by Intune or Configuration Manager based on a Mobile Device Management (MDM) certificate. There are several methods to enroll your workforce's devices. Each method depends on **device ownership** (personal or corporate), **device type** (iOS/iPadOS, Windows, Android, macOS), and **device management requirements** (resets, affinity, locking). These methods are explained below.
+Before you can safeguard the devices that access your organization's resources, you must enroll them. Enrolling means that the device is connected and recognized by Intune or Configuration Manager based on a mobile device management (MDM) certificate. There are several methods to enroll your workforce's devices. Each method depends on **device ownership** (personal or corporate), **device type** (iOS/iPadOS, Windows, Android, macOS), and **device management requirements** (resets, affinity, locking). These methods are explained below.
 
 ## Device ownership
 
