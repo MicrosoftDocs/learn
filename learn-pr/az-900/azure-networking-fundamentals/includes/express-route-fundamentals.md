@@ -1,15 +1,13 @@
-As part of the project for the finance company, you need to understand:
-
-- What Azure ExpressRoute is.
-- How ExpressRoute integrates with on-premises and Azure networks. 
-- The benefits that ExpressRoute provides compared to other site-to-site connectivity options.
-- Whether ExpressRoute can provide the finance company with the best possible network performance.
-
-## ExpressRoute overview
-
 Azure ExpressRoute lets you seamlessly extend your on-premises networks into the Microsoft cloud. This connection between your organization and Azure is dedicated and private. Establishing an ExpressRoute connection enables you to connect to Microsoft cloud services like Azure, Office 365, and Dynamics 365. Security is enhanced, connections are more reliable, latency is minimal, and throughput is greatly increased.
 
-[![High-level overview of the Azure ExpressRoute service](../media/3-azure-expressroute-overview.svg)](../media/3-azure-expressroute-overview.svg#lightbox)
+[![High-level overview of the Azure ExpressRoute service](../media/azure-expressroute-overview.svg)](../media/azure-expressroute-overview.svg#lightbox)
+
+As part of your work for Tailwind Traders, you should understand what Azure ExpressRoute is, and how ExpressRoute integrates with on-premises and Azure networks. In this unit, you'll learn about the benefits that ExpressRoute provides compared to other site-to-site connectivity options, and whether ExpressRoute can provide your company with the best possible network performance.
+
+Throughout this unit, we will focus on two different layers of the Open Systems Interconnection (OSI) model:
+
+- **Layer 2 (L2)**: This is the _Data Link Layer_, which provides node-to-node communication between two nodes on the same network.
+- **Layer 3 (L3)**: This is the _Network Layer_, which provides addressing and routing between nodes on a multi-node network.
 
 ## Features and benefits of ExpressRoute
 
@@ -50,7 +48,7 @@ ExpressRoute supports three models that you can use to connect your on-premises 
 - Point-to-point Ethernet connection
 - Any-to-any connection
 
-[![Azure connectivity models](../media/2-azure-connectivity-models.svg)](../media/2-azure-connectivity-models.svg#lightbox)
+[![Azure connectivity models](../media/azure-connectivity-models.svg)](../media/azure-connectivity-models.svg#lightbox)
 
 ### Co-location at a cloud exchange
 

@@ -2,22 +2,22 @@
 uid: learn.azure.azure-networking-fundamentals
 metadata:
   title: Azure Networking Fundamentals
-  description: TODO
+  description: Learn about the core networking resources that are available in Azure, such as Virtual Networks, VPN Gateway, and ExpressRoute.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure Networking Fundamentals
-summary: Tailwind Traders has migrated some applications and is architecting new ones. As part of this process they need to be able to determine the correct approach to network infrastructure. In this session you'll learn about the different Azure networking options and the scenarios in which each is appropriate.
+summary: In this module, you'll take a look at several of the core networking resources that are available in Azure. You'll learn about Virtual Networks, which you can configure into a customized network environment that meets your company's needs. You'll also learn how you can use VPN Gateways and Azure ExpressRoute to create secure communication tunnels between your company's different locations.
 abstract: | 
   Upon completion of this module, you'll be able to:
-  - Describe the core networking resources tha are available in Azure
-  - Describe the benefits and usage of Virtual networks, VPN Gateway, Virtual Network peering, and Express Route
+  - Describe the core networking resources that are available in Azure
+  - Describe the benefits and usage of Virtual Networks, VPN Gateway, and ExpressRoute
 prerequisites: | 
-  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with basic network concepts and terminology
   - Familiarity with cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/network-fundamentals.svg
 levels:
 - beginner
 roles:

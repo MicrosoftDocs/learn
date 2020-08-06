@@ -3,12 +3,12 @@ uid: learn.azure.azure-networking-fundamentals.azure-virtual-network-fundamental
 title: Azure Virtual Network fundamentals
 metadata:
   title: Azure Virtual Network fundamentals
-  description: TODO
+  description: In this unit, you'll learn about Azure Virtual Networks.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/azure-virtual-network-fundamentals.md)]

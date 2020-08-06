@@ -1,10 +1,10 @@
-You have an on-premises datacenter that you plan to keep, but you want to use Azure to offload peak traffic using virtual machines (VMs) hosted in Azure. You want to keep your existing IP addressing scheme and network appliances, while ensuring that any data transfer is secure.
+Tailwind Traders has an on-premises datacenter that you plan to keep, but you want to use Azure to offload peak traffic using virtual machines (VMs) hosted in Azure. You want to keep your existing IP addressing scheme and network appliances, while ensuring that any data transfer is secure.
 
 ## What is Azure virtual networking?
 
-**Azure virtual networks** enable Azure resources, such as virtual machines, web apps, and databases, to communicate with: each other, users on the Internet, and on-premises client computers. You can think of an Azure network as a set of resources that links other Azure resources.
+**Azure virtual networks** enable Azure resources - such as virtual machines, web apps, and databases - to communicate with each other, users on the Internet, and on-premises client computers. You can think of an Azure network as a set of resources that links other Azure resources.
 
-Azure virtual networks provide key networking capabilities:
+Azure virtual networks provide the following key networking capabilities:
 
 - Isolation and segmentation
 - Internet communications
@@ -20,13 +20,13 @@ Azure virtual networks provide key networking capabilities:
 
 ### Isolation and segmentation
 
-Azure allows you to create multiple isolated virtual networks. When you set up a virtual network, you define a private Internet Protocol (IP) address space, using either public or private IP address ranges. You can then segment that IP address space into subnets, and allocate part of the defined address space to each named subnet.
+Azure allows you to create multiple isolated virtual networks. When you set up a virtual network, you define a private Internet Protocol (IP) address space, using either public or private IP address ranges. You can divide that IP address space into subnets, and allocate part of the defined address space to each named subnet.
 
 For name resolution, you can use the name resolution service that's built in to Azure, or you can configure the virtual network to use either an internal or an external Domain Name System (DNS) server.
 
 ### Internet communications
 
-A VM in Azure can connect out to the Internet by default. You can enable incoming connections from the Internet by defining a public IP address or a public load balancer. For VM management, you can connect via the Azure CLI, Remote Desktop Protocol (RDP), or Secure Shell (SSH).
+A VM in Azure can connect out to the Internet by default. You can enable incoming connections from the Internet by defining a public IP address or a public load balancer. For VM management, you can connect via the Azure Command Line Interface (CLI), Remote Desktop Protocol (RDP), or Secure Shell (SSH).
 
 ### Communicate between Azure resources
 
@@ -53,7 +53,7 @@ Azure virtual networks enable you to link resources together in your on-premises
 
 - **Azure ExpressRoute**
 
-    For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best approach. Azure ExpressRoute provides dedicated private connectivity to Azure that does not travel over the Internet.
+    For environments where you need greater bandwidth and even higher levels of security, Azure ExpressRoute is the best approach. Azure ExpressRoute provides dedicated private connectivity to Azure that does not travel over the Internet. (You'll learn more about ExpressRoute in a separate unit later in this module.)
 
 ### Route network traffic
 
@@ -77,11 +77,13 @@ Azure virtual networks enable you to filter traffic between subnets by using the
 
 - **Network virtual appliances**
 
-    A network virtual appliance is a specialized VM that can be compared to a hardened network appliance. A network virtual appliance carries out a particular network function, such as running a firewall or performing WAN optimization.
+    A network virtual appliance is a specialized VM that can be compared to a hardened network appliance. A network virtual appliance carries out a particular network function, such as running a firewall or performing Wide Area Network (WAN) optimization.
 
 ## Connect virtual networks
 
 You can link virtual networks together using virtual network _peering_. Peering enables resources in each virtual network to communicate with each other. These virtual networks can be in separate regions, allowing you to create a global interconnected network through Azure.
+
+![Illustration of a local or remote gateway in peered virtual network.](../media/local-or-remote-gateway-in-peered-virual-network.png)
 
 ## Azure virtual network settings
 
@@ -91,7 +93,7 @@ You can create and configure Azure virtual networks from the Azure portal, Azure
 
 When you create an Azure virtual network, you configure a number of basic settings. You'll have the option to configure advanced settings, such as multiple subnets, distributed denial of service (DDoS) protection, and service endpoints.
 
-![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/2-create-virtual-network.PNG)
+![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/create-virtual-network.PNG)
 
 You'll configure the following settings for a basic virtual network:
 
@@ -112,7 +114,7 @@ You'll configure the following settings for a basic virtual network:
 
 - **Subscription**
 
-    Only applies if you have multiple subscriptions to choose from.
+    This option only applies if you have multiple subscriptions to choose from.
 
 - **Resource group**
 
@@ -153,16 +155,15 @@ After creating a virtual network, you can then define further settings. These in
 
 You can also amend the service endpoints.
 
-![Screenshot of the Azure portal showing an example pane for editing virtual network settings.](../media/2-virtual-network-additional-settings.PNG)
+![Screenshot of the Azure portal showing an example pane for editing virtual network settings.](../media/virtual-network-additional-settings.PNG)
 
 ### Configure virtual networks
 
 When you have created a virtual network, you can change any further settings from the Virtual Networks pane in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
 
-![Screenshot of the Azure portal showing an example pane for configuring a virtual network.](../media/2-configure-virtual-network.PNG)
+![Screenshot of the Azure portal showing an example pane for configuring a virtual network.](../media/configure-virtual-network.PNG)
 
-You can then review and change settings in further sub-panes.
-These settings include:
+You can then review and change settings in further sub-panes. These settings include:
 
 - Address spaces: You can add further address spaces to the initial definition
 
