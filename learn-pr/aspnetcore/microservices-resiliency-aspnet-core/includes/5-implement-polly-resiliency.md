@@ -17,7 +17,7 @@ When validating a discount coupon, the HTTP request is sent to the web shopping 
 
 To make the coupon service resilient, you'll implement a Retry and a Circuit Breaker policy to handle failure within the web shopping aggregator. Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. The `IHttpClientFactory` is responsible for creating instances of `HttpClient`.
 
-The following sequence diagram depicts the flow of events from an `HttpClient` instance to Polly's Retry and Circuit Breaker policies:
+The following sequence diagram shows the flow of events from an `HttpClient` instance to Polly's Retry and Circuit Breaker policies:
 
 :::image type="content" source="../media/5-implement-polly-resiliency/policy-http-message-handlers.png" alt-text="An HttpClient call through multiple PolicyHttpMessageHandlers" border="true" lightbox="../media/5-implement-polly-resiliency/policy-http-message-handlers.png":::
 
@@ -60,13 +60,6 @@ Complete the following steps to implement failure handling for the coupon servic
         }
         ```
 
-        The preceding method creates a Retry policy that retries up to five times with an exponentially increasing delay in between each attempt. The delay:
-
-        - Increases as a power of 1.5 seconds after each attempt.
-        - Is a power of 2 seconds by default. To decrease wait times for this exercise, 1.5 seconds is used instead.
-
-        This policy's premise is that faults are transient and may self-correct after a short delay.
-
     1. Replace the comment `// Add the GetCircuitBreakerPolicy method` with the following method:
 
         ```csharp
@@ -75,19 +68,9 @@ Complete the following steps to implement failure handling for the coupon servic
                 .CircuitBreakerAsync(15, TimeSpan.FromSeconds(15));
         ```
 
-        The preceding method creates a Circuit Breaker policy. After 15 consecutive failures, the policy enforces a 15-second pause. This policy's premise is that protecting the service from overload can help it recover.
-
     1. In the `AddApplicationServices` method, call the `AddPolicyHandler` extension method twice. Chain the method calls to the `AddHttpMessageHandler` method call for the coupon service:
 
-        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/5-servicecollectionextensions.cs" highlight="7-8":::
-
-        With the preceding changes, the `HttpClient` instance used by the coupon service has been configured to apply a Retry and a Circuit Breaker policy. This particular `HttpClient` instance is provided to the `CouponService` class via constructor injection:
-
-        :::code language="csharp" source="../code/src/apigateways/services/5-couponservice.cs" highlight="8":::
-
-        The `AddApplicationServices` extension method is invoked from the `ConfigureServices` method in the project's *:::no-loc text="Startup.cs":::* file:
-
-        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/5-startup.cs" highlight="7":::
+        :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/extensions/5-servicecollectionextensions.cs" highlight="10-11":::
 
     1. Replace the comment `// Add the using statements` with the following `using` directives:
 
@@ -108,6 +91,20 @@ Complete the following steps to implement failure handling for the coupon servic
     ```bash
     popd
     ```
+
+With the preceding changes:
+
+- A Retry policy was defined that retries up to five times with an exponentially increasing delay in between each attempt. This policy's premise is that faults are transient and may self-correct after a short delay. The policy's delay:
+  - Increases as a power of 1.5 seconds after each attempt.
+  - Is a power of 2 seconds by default. To decrease wait times for this exercise, 1.5 seconds is used instead.
+- A Circuit Breaker policy was defined which enforces a 15-second pause after 15 consecutive failures. This policy's premise is that protecting the service from overload can help it recover.
+- The `HttpClient` instance used by the coupon service was configured to apply the Retry and Circuit Breaker policies. This particular `HttpClient` instance is provided to the `CouponService` class via constructor injection:
+
+    :::code language="csharp" source="../code/src/apigateways/services/5-couponservice.cs" highlight="8":::
+
+    The `AddApplicationServices` extension method is invoked from the `ConfigureServices` method in the project's *:::no-loc text="Startup.cs":::* file:
+
+    :::code language="csharp" source="../code/src/apigateways/aggregators/web.shopping.httpaggregator/5-startup.cs" highlight="7":::
 
 ## Deploy the updated microservice
 
@@ -161,21 +158,15 @@ Complete the following steps to deploy the changes that you've implemented:
 1. Run the following command to verify the URL of your ACR instance:
 
     ```bash
-    echo $ESHOP_REGISTRY
+    eval $(cat ~/clouddrive/aspnet-learn/create-acr-exports.txt) && \
+        echo $ESHOP_REGISTRY
     ```
 
-    You'll see a variation of the following output:
+    The setup script saved some environment variable declarations in a text file. The preceding command evaluates the text file to set the environment variables. You'll see a variation of the following output:
 
     ```console
     eshoplearn2020072900000000.azurecr.io
     ```
-
-    > [!IMPORTANT]
-    > If the output is blank, it's because the `ESHOP_REGISTRY` variable isn't defined. Run the following command to set the variable using output from the setup script and then run the `echo` command again to verify:
-    >
-    > ```bash
-    > eval $(cat ~/clouddrive/aspnet-learn/create-acr-exports.txt)
-    > ```
 
 1. Run the following script to deploy the updated image in ACR to AKS:
 
@@ -221,7 +212,7 @@ Complete the following steps to test the Retry policy:
     You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::**.
 1. Replace the existing discount code with *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective. Notice that the 10 USD discount was applied.
+    The operation appears to be successful on the first try after a brief wait. The resilient BFF will handle retries transparently from the user's perspective. Notice that the 10 USD discount was applied.
 1. Run the following command to view the logging page URL. Select the **:::no-loc text="Centralized logging":::** link.
 
     ```bash

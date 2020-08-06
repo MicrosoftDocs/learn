@@ -74,7 +74,7 @@ linkerd-version
 Status check results are √
 ```
 
-### Deploy Linkerd to the cluster
+### Deploy Linkerd to the AKS cluster
 
 Run the following command:
 
@@ -190,10 +190,14 @@ Status check results are √
 
 ## Configure the app to use Linkerd
 
-Linkerd has been deployed, but it hasn't been configured. The app's behavior is unchanged. Linkerd only retries routes configured in the `ServiceProfile` manifest. For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each service, you will:
+Linkerd has been deployed, but it hasn't been configured. The app's behavior is unchanged.
+
+Linkerd is unaware of service internals and can't determine whether it's appropriate to retry a failed request. For example, it would be a bad idea to retry a failed HTTP POST for a payment. A service profile is necessary for this reason. A *service profile* is a custom Kubernetes resource that defines routes for the service. It also enables per-route features, such as retries and timeouts. Linkerd only retries routes configured in the service profile manifest.
+
+For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each service, you will:
 
 * Modify the deployments so Linkerd creates its proxy container in the pods.
-* Add a `ServiceProfile` object to the cluster to configure the retries on the selected route.
+* Add a service profile object to the cluster to configure retries on the selected route.
 * Configure headers for the related Nginx ingress.
 
 ### Modify the `webshoppingagg` and `coupon` deployments
@@ -211,9 +215,18 @@ Linkerd has been deployed, but it hasn't been configured. The app's behavior is 
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/webshoppingagg/templates/6-deployment.yaml" highlight="18-19":::
 
-### Add the ServiceProfile for the HTTP GET coupon route
+### Apply the Linkerd service profile for the coupon service
 
-The `ServiceProfile` manifest content is shown next and is already included in the *:::no-loc text="deploy/k8s/linkerd":::* directory. Run the following command:
+The service profile manifest for the coupon service is provided in the *:::no-loc text="deploy/k8s/linkerd/coupon-serviceprofile.yaml":::* file:
+
+:::code language="yml" source="../code/deploy/k8s/linkerd/6-coupon-serviceprofile.yaml":::
+
+The preceding manifest is configured such that:
+
+* Any idempotent HTTP GET route matching the pattern `/coupon-api/api/v1/coupon/{code}` can be retried.
+* Retries can add no more than an extra 20 percent to the request load, plus an additional 10 "free" retries per second.
+
+Run the following command to use the service profile in the AKS cluster:
 
 ```bash
 kubectl apply -f ./deploy/k8s/linkerd/coupon-serviceprofile.yaml
@@ -233,7 +246,7 @@ Add the highlighted lines to the *:::no-loc text="deploy/k8s/helm-simple/apigate
 
 :::code language="yml" source="../code/deploy/k8s/helm-simple/apigateway/templates/6-ingress-gateway.yaml" highlight="13-15":::
 
-The preceding change instructs Nginx to add a request header named `l5d-dst-override`. The header's value is set dynamically to the destination service's DNS name and port. The `proxy_set_header` and `grpc_set_header` directives are used for HTTP and gRPC requests, respectively.
+The preceding change instructs Nginx to add a Linkerd destination override request header named `l5d-dst-override`. The header's value is set dynamically to the destination service's DNS name and port. The `proxy_set_header` and `grpc_set_header` directives are used for HTTP and gRPC requests, respectively.
 
 > [!NOTE]
 > The *:::no-loc text="eShopOnContainers":::* app uses gRPC for service-to-service communication. More specifically, this synchronous communication is upgraded from HTTP and occurs between the aggregator and the services. Externally accessible endpoints, on the other hand, are RESTful. gRPC is an RPC-based protocol characterized by its high performance and low bandwidth usage. These characteristics make gRPC the best candidate for internal services communication.
