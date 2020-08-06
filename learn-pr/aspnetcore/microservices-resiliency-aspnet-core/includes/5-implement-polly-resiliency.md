@@ -1,4 +1,4 @@
-In this exercise, you'll implement a resiliency handler with Polly. The initial *:::no-loc text="eShopOnContainers":::* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure how many times a request for a specific discount coupon code should fail.
+In this exercise, you'll implement a resiliency handler with Polly. The initial *:::no-loc text="eShopOnContainers":::* deployment includes a failure simulation feature when validating a coupon from the checkout basket. This feature allows you to configure the number of times a request for a specific discount code will fail.
 
 In this unit, you will:
 
@@ -201,6 +201,8 @@ Complete the following steps to deploy the changes that you've implemented:
 
 The Polly Retry and Circuit Breaker policies have been deployed. It's time to test the app's behavior.
 
+[!INCLUDE[Wait for healthy services](../../includes/microservices/wait-for-healthy-services.md)]
+
 ### Retry policy
 
 Complete the following steps to test the Retry policy:
@@ -219,7 +221,7 @@ Complete the following steps to test the Retry policy:
     cat ../deployment-urls.txt
     ```
 
-1. Check the Seq log traces. You'll see a variation of the following output:
+1. Check the log traces. You'll see a variation of the following output:
 
     :::image type="content" source="../media/5-implement-polly-resiliency/configure-and-retry-logs.png" alt-text="log traces" border="true" lightbox="../media/5-implement-polly-resiliency/configure-and-retry-logs.png":::
 

@@ -15,6 +15,10 @@ Before applying Linkerd, revert the app to a state before code-based resiliency 
 ./deploy/k8s/deploy-application.sh --registry eshopdev --charts webshoppingagg
 ```
 
+[!INCLUDE[Wait for healthy services](../../includes/microservices/wait-for-healthy-services.md)]
+
+### Verify failing behavior
+
 You may verify the app is again failing as expected using the same steps as before:
 
 1. Select the **:::no-loc text=".NET FOUNDATION PIN":::**.
@@ -194,13 +198,15 @@ Linkerd has been deployed, but it hasn't been configured. The app's behavior is 
 
 Linkerd is unaware of service internals and can't determine whether it's appropriate to retry a failed request. For example, it would be a bad idea to retry a failed HTTP POST for a payment. A service profile is necessary for this reason. A *service profile* is a custom Kubernetes resource that defines routes for the service. It also enables per-route features, such as retries and timeouts. Linkerd only retries routes configured in the service profile manifest.
 
-For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each service, you will:
+For brevity, you'll implement Linkerd only on the aggregator and coupon services. To implement Linkerd for those two services, you will:
 
-* Modify the deployments so Linkerd creates its proxy container in the pods.
-* Add a service profile object to the cluster to configure retries on the selected route.
+* Modify the aggregator and coupon deployments so Linkerd creates its proxy container in the pods.
 * Configure headers for the related Nginx ingress.
+* Add a service profile object to the cluster to configure retries on the coupon service's route.
 
 ### Modify the `webshoppingagg` and `coupon` deployments
+
+The coupon and aggregator services must be configured to use Linkerd proxy containers.
 
 1. Add the highlighted annotations to the `coupon` chart *:::no-loc text="deployment.yaml":::* file (*:::no-loc text="deploy/k8s/helm-simple/coupon/templates/deployment.yaml":::*). Save your changes.
 
@@ -209,7 +215,7 @@ For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and
     The `linkerd.io/inject: enabled` annotation instructs Linkerd to add the `linkerd-proxy` container when creating the pod.
 
     > [!IMPORTANT]
-    > It's important to maintain correct indentation in YAML manifests.
+    > It's critical to maintain correct indentation in YAML manifests.
 
 1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart *:::no-loc text="deployment.yaml":::* file (*:::no-loc text="deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml":::*). Save your changes.
 
@@ -265,6 +271,10 @@ The updated pods each have two containers now (`0/2`). One is the service contai
 
 ## Test the app again
 
+[!INCLUDE[Wait for healthy services](../../includes/microservices/wait-for-healthy-services.md)]
+
+### Test Linkerd resiliency
+
 After the redeployed containers are healthy, use the following steps to test the app's behavior with Linkerd:
 
 1. Place an item in the shopping bag and begin the checkout procedure.
@@ -275,7 +285,6 @@ After the redeployed containers are healthy, use the following steps to test the
 1. Change the code to *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     The correct response is received immediately. An error indicating that this coupon has already been redeemed is displayed.
-
 1. Check the log traces for the following messages:
 
     :::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd" border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
