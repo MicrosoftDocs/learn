@@ -16,14 +16,15 @@ worth remembering:
   interfere constructively.
 - Two qubits are entangled if their states are correlated and cannot be described as two independent qubits
 
-
 ## Learn more
 
 If you're interested in learning more, we recommend you to explore the different
-[quantum katas](todo) on different algorithms and quantum computing concepts.
+[quantum
+katas](https://docs.microsoft.com/en-us/quantum/tutorials/intro-to-katas?azure-portal=true) on
+different algorithms and quantum computing concepts.
 
 Also, be sure to explore the [Microsoft Quantum
-Documentation](/quantum/?azure-portal=true). There you'll find comprehensive
+Documentation](https://docs.microsoft.com/quantum/?azure-portal=true). There you'll find comprehensive
 reference material, including:
 
 - Fundamental concepts around quantum computing.

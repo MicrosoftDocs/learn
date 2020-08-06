@@ -79,7 +79,8 @@ applies the `Y` gate conditioned on the state of the control qubit.
 To learn more about the `Controlled` functor and many other Q# features, you can
 take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations).
 
-> [!NOTE] A functor in Q# is a factory that defines a new operation from another
+> [!NOTE] 
+> A functor in Q# is a factory that defines a new operation from another
 > operation.
 
 ## Estimating resources with Q\#
