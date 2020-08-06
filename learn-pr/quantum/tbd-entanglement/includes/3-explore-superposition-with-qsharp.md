@@ -50,36 +50,7 @@ how `DumpMachine` works. We just need to add `DumpMachine()` on every step we wa
 see the state of the register. In this case we'll call `DumpMachine()` three times:
 at the beginning before
 
-```
-namespace ExploringSuperposition {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-
-    @EntryPoint()
-    operation GenerateRandomBit() : Result {
-        using (q = Qubit()) {
-            Message("Initialized qubit:");
-            DumpMachine();
-            Message(" ");
-            H(q);
-            Message("Qubit after applying H:");
-            DumpMachine();
-            Message(" ");
-            let randomBit = M(q);
-            Message("Qubit after the measurement:");
-            DumpMachine();
-            Message(" ");
-            Reset(q);
-            Message("Qubit after resetting:");
-            DumpMachine();
-            Message(" ");
-            return randomBit;
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/3-program-1.qs":::
 
 Note that we split the operation `MResetZ` into two operations `M` and `Reset` since we want to observe the state after the measurement.
 
