@@ -1,23 +1,20 @@
-This is an introduction paragraph.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+## What's the opportunity?
 
-## What is "devops"?
+The software development team at Tailwind Traders wants to provide executive level reporting, including burndown charts, track progress against epics, and track custom information specific to Tailwind Traders in each work item and bug report.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+Furthermore, as Tailwind Traders grows and hires contractors and outside vendors for short-term work, upper management wants to ensure that these individuals have access to only the information they need to do their work.
 
-## What is Azure DevOps?
+### Which product option to choose?
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+Given the amount of work item customization and reporting they want, Azure DevOps would likely be a good choice.  
 
-## How does Azure DevOps work?
+Furthermore, using Azure DevOps, administrators would also have a more robust set of options to control permissions across the entire portfolio of work.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+### Why not choose GitHub?
 
-## When should you choose Azure DevOps?
+GitHub has a more streamlined and simplified approach to managing work, with less customization available, and fewer reporting options.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+### Why not choose Azure DevTest Labs?
 
-## Will Azure DevOps help Tailwind Traders?
-
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+For this scenario, Azure DevTest Labs is not a candidate since it does not have work management and reporting features.

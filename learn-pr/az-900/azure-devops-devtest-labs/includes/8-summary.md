@@ -1,14 +1,4 @@
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
-
-[Summarize the problem]
-[How the tech solved the problem]
-[Experience without product]
-[Business impact]
-Example
-
-[Summarize the problem]
-
-Our goal in this module was to build a simple software application that could accept input from the user and display information to the user.
+Our goal in this module was to be able to choose the best DevOps solution for a given set of requirements.
 
 [How the tech solved the problem]
 

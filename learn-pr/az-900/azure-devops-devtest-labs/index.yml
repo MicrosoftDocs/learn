@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.languages.azure-devops-devtest-labs
 metadata:
-  title: Fundamentals of Azure DevOps, DevTest Labs, GitHub, and GitHub Actions
+  title: Choose the best DevOps tools for your software and infrastructure environment
   description: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Fundamentals of Azure DevOps, DevTest Labs, GitHub, and GitHub Actions
+title: Choose the best DevOps tools for your software and infrastructure environment
 summary: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
 abstract: |
   In this module, you will:
@@ -29,9 +29,8 @@ units:
 - learn.languages.azure-devops-devtest-labs.identify-product-options
 - learn.languages.azure-devops-devtest-labs.analyze-decision-criteria
 - learn.languages.azure-devops-devtest-labs.use-azure-devops
-- learn.languages.azure-devops-devtest-labs.use-azure-devtest-labs
-- learn.languages.azure-devops-devtest-labs.use-git
 - learn.languages.azure-devops-devtest-labs.use-github
+- learn.languages.azure-devops-devtest-labs.use-azure-devtest-labs
 - learn.languages.azure-devops-devtest-labs.knowledge-check
 - learn.languages.azure-devops-devtest-labs.summary
 
