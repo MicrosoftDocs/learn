@@ -190,7 +190,7 @@ Status check results are √
 
 ## Configure the app to use Linkerd
 
-Linkerd has been deployed, but it hasn't been configured. The app's behavior is unchanged. Linkerd only retries routes configured in the `ServiceProfile` manifest. For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each, you will:
+Linkerd has been deployed, but it hasn't been configured. The app's behavior is unchanged. Linkerd only retries routes configured in the `ServiceProfile` manifest. For brevity, you'll implement Linkerd on two services only: `webshoppingagg` and `coupon-api`. For each service, you will:
 
 * Modify the deployments so Linkerd creates its proxy container in the pods.
 * Add a `ServiceProfile` object to the cluster to configure the retries on the selected route.
