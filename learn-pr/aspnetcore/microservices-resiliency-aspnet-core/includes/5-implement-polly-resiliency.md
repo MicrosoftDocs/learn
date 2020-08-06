@@ -2,9 +2,11 @@ In this exercise, you'll implement a resiliency handler with Polly. The initial 
 
 In this unit, you will:
 
-- Update the app's code to implement failure handling using Polly.
-- Create an ACR instance and deploy the updated app to AKS.
-- Explore the system response under failure after implementing resiliency.
+* Update the app's code to implement failure handling using Polly.
+* Create an ACR instance and deploy the updated app to AKS.
+* Explore the system response under failure after implementing resiliency.
+
+[!INCLUDE[reconnect to Azure Cloud Shell](../../includes/microservices/reconnect-to-cloud-shell-note.md)]
 
 ## Add failure handling code using Polly
 
@@ -12,8 +14,8 @@ In this section, you'll modify the app to automatically retry a failing operatio
 
 When validating a discount coupon, the HTTP request is sent to the web shopping aggregator. The web shopping aggregator is responsible for routing the request to the coupon service. This is an implementation of the [Backends For Frontends pattern](https://samnewman.io/patterns/architectural/bff) (BFF). The BFF implementation:
 
-- Sends another HTTP request to the coupon service to get the required information.
-- Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](http://www.thepollyproject.org).
+* Sends another HTTP request to the coupon service to get the required information.
+* Handles resiliency using [IHttpClientFactory](/aspnet/core/fundamentals/http-requests) and [Polly](http://www.thepollyproject.org).
 
 To make the coupon service resilient, you'll implement a Retry and a Circuit Breaker policy to handle failure within the web shopping aggregator. Using Polly with `IHttpClientFactory` to add resiliency to web apps is one of the archetypical failure handling solutions. The `IHttpClientFactory` is responsible for creating instances of `HttpClient`.
 
@@ -39,9 +41,9 @@ Complete the following steps to implement failure handling for the coupon servic
 
     The preceding command installs a NuGet package in the *:::no-loc text="Web.Shopping.HttpAggregator":::* project. The package integrates `IHttpClientFactory` with Polly and installs the actual `Polly` package as a dependency. The package is necessary to configure Polly policies to handle conditions representing transient faults when making HTTP requests. Such conditions are handled by invoking the package's `HttpPolicyExtensions.HandleTransientHttpError` method. The conditions include:
 
-    - Network failures, as indicated by exceptions of type `HttpRequestException`
-    - Server errors, as indicated by HTTP 5xx status codes
-    - Request timeouts, as indicated by the HTTP 408 status code
+    * Network failures, as indicated by exceptions of type `HttpRequestException`
+    * Server errors, as indicated by HTTP 5xx status codes
+    * Request timeouts, as indicated by the HTTP 408 status code
 
 1. Apply the following changes in the *:::no-loc text="src/ApiGateways/Aggregators/Web.Shopping.HttpAggregator/Extensions/ServiceCollectionExtensions.cs":::* file:
     1. Replace the comment `// Add the GetRetryPolicy method` with the following method:
@@ -94,11 +96,11 @@ Complete the following steps to implement failure handling for the coupon servic
 
 With the preceding changes:
 
-- A Retry policy was defined that retries up to five times with an exponentially increasing delay in between each attempt. This policy's premise is that faults are transient and may self-correct after a short delay. The policy's delay:
-  - Increases as a power of 1.5 seconds after each attempt.
-  - Is a power of 2 seconds by default. To decrease wait times for this exercise, 1.5 seconds is used instead.
-- A Circuit Breaker policy was defined which enforces a 15-second pause after 15 consecutive failures. This policy's premise is that protecting the service from overload can help it recover.
-- The `HttpClient` instance used by the coupon service was configured to apply the Retry and Circuit Breaker policies. This particular `HttpClient` instance is provided to the `CouponService` class via constructor injection:
+* A Retry policy was defined that retries up to five times with an exponentially increasing delay in between each attempt. This policy's premise is that faults are transient and may self-correct after a short delay. The policy's delay:
+  * Increases as a power of 1.5 seconds after each attempt.
+  * Is a power of 2 seconds by default. To decrease wait times for this exercise, 1.5 seconds is used instead.
+* A Circuit Breaker policy was defined which enforces a 15-second pause after 15 consecutive failures. This policy's premise is that protecting the service from overload can help it recover.
+* The `HttpClient` instance used by the coupon service was configured to apply the Retry and Circuit Breaker policies. This particular `HttpClient` instance is provided to the `CouponService` class via constructor injection:
 
     :::code language="csharp" source="../code/src/apigateways/services/5-couponservice.cs" highlight="8":::
 
@@ -227,8 +229,8 @@ Complete the following steps to test the Retry policy:
 
     In the preceding image, you can see:
 
-    - The log traces when configuring the simulated failures, labeled as ":::no-loc text="1":::".
-    - Three retries until the aggregator could finally get the value, labeled as ":::no-loc text="2":::".
+    * The log traces when configuring the simulated failures, labeled as ":::no-loc text="1":::".
+    * Three retries until the aggregator could finally get the value, labeled as ":::no-loc text="2":::".
 1. Complete the checkout procedure and select **:::no-loc text="CONTINUE SHOPPING":::**.
 
 ### Circuit Breaker policy
@@ -253,9 +255,9 @@ To test the Circuit Breaker policy, you'll configure the code for 20 failures. A
 
     In the preceding image, notice that:
 
-    - After waiting for 7.6 seconds, labeled as ":::no-loc text="1":::", you received the HTTP 500 error message with the Retry policy, labeled as ":::no-loc text="2":::".
-    - On the next try, you validate the code. You receive the HTTP 500 error message after waiting only 3.4 seconds, labeled as ":::no-loc text="3":::". You don't see the ":::no-loc text="Get coupon...":::" trace, meaning it failed without going to the server.
-    - If you check the details on this last trace, you should see a variation of the following output:
+    * After waiting for 7.6 seconds, labeled as ":::no-loc text="1":::", you received the HTTP 500 error message with the Retry policy, labeled as ":::no-loc text="2":::".
+    * On the next try, you validate the code. You receive the HTTP 500 error message after waiting only 3.4 seconds, labeled as ":::no-loc text="3":::". You don't see the ":::no-loc text="Get coupon...":::" trace, meaning it failed without going to the server.
+    * If you check the details on this last trace, you should see a variation of the following output:
 
         :::image type="content" source="../media/5-implement-polly-resiliency/severe-failure-log-detail.png" alt-text="severe failure log detail" border="true" lightbox="../media/5-implement-polly-resiliency/severe-failure-log-detail.png":::
 

@@ -7,6 +7,8 @@ This unit focuses on replacing the code-based resiliency. An infrastructure-base
 * Configure the app to use Linkerd for resiliency.
 * Explore the app behavior with Linkerd.
 
+[!INCLUDE[reconnect to Azure Cloud Shell](../../includes/microservices/reconnect-to-cloud-shell-note.md)]
+
 ## Redeploy the app
 
 Before applying Linkerd, revert the app to a state before code-based resiliency was added. To revert, redeploy the unmodified `webshoppingagg` image using the following command:
