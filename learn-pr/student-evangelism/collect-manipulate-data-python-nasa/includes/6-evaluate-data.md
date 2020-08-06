@@ -1,4 +1,4 @@
-The choices that were made in this module were simplistic at best. While a rocket didn't technically launch the day before or after the Space X Dragon launch on May 30, 2020, it doesn't mean that a rocket launch would have been pushed due to weather on those days. So putting `N` in the Launched column for those dates is not really accurate. 
+The choices that we made in this module were simplistic at best. Although a rocket didn't technically launch the day before or after the Space X Dragon launch on May 30, 2020, it doesn't mean that a rocket launch would have been pushed due to weather on those days. So putting `N` in the Launched column for those dates is not really accurate. 
 
 While the goal of these modules is to guide you through the practical steps to solving the problems faced during space exploration, you are also meant to discover your own path. The ultimate goal is to inspire you to create, ideate, and push limits to what we understand and the knowledge we collectively hold about our world and beyond. 
 

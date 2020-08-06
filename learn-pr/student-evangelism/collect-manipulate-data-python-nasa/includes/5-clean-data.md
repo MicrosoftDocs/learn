@@ -1,8 +1,8 @@
-Now that we have the data imported, will we need to apply a machine learning practice known as "cleaning the data". This pretty much means what you think it means: take data that looks incorrect or messy and clean it up by changing the value or deleting it altogether. Some common examples of cleaning data are ensuring that there are no null values or making every value in a column look the same. 
+Now that we have the data imported, we need to apply a machine learning practice known as "cleaning the data." This means taking data that looks incorrect or messy and cleaning it up by changing the value or deleting it altogether. Some common examples of cleaning data are ensuring that there are no null values or making every value in a column look the same. 
 
 We do this because computers will get confused if they look at inconsistent data or if lots of values in the data are null.
 
-## Data Cleansing
+## Data cleaning
 
 The first step that we will take to clean our data is to replaces all the missing values with something. Replacing these values usually requires subject matter expertise, but in this case you will use your best judgment. In our case, we have some rows (remember, rows represent days) where we are missing some weather or launch data. 
 
@@ -74,7 +74,7 @@ Try running `launch_data.info()` again to see the changes to the data you just m
 > [!NOTE]
 > You are changing the data that is stored in the launch_data variable, *not* the data saved in the Excel doc. So if you find that you can modified or removed any data that you didn't mean to, you can always re-run your notebook to bring the original data back in.
 
-## Data Manipulation
+## Data manipulation
 
 Next, since computations are best suited for numerical inputs, we will convert all text into numbers. As an example, we will use a "1" if a rocket is crewed and a "0" if a rocket is uncrewed.
 
