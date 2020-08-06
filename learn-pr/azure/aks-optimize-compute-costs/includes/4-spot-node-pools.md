@@ -1,77 +1,76 @@
 Your company's drone-tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. One of these services is a batch-processing service that schedules drone flight paths. With a sudden growth in your customer base, the batch-processing service gets inundated with requests and builds up a backlog of deliveries. This situation is causing delays and frustrating customers.
 
-Automatically scaling the number of batch processing service replicas provides for the timely processing of orders. However, it also requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you notice that these nodes are used only at specific times and not in a cost-effective way. The batch-processing service is stateless and doesn't save any client-session data. You realize that you can save money by using lower-cost node instances and by automatically scaling the node count in the node pool that's configured for batch processing.
+Automatically scaling the number of batch-processing service replicas provides for the timely processing of orders. However, it also requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you notice that these nodes are used only at specific times and not in a cost-effective way. The batch-processing service is stateless and doesn't save any client-session data. You realize that you can save money by:
 
-Azure provides Azure Virtual Machine instances that you can use to access unused Azure compute capacity at deep discounts. These VMs are ideal for workloads that can be interrupted, providing scalability while reducing costs.
+- Using lower-cost node instances.
+- Automatically scaling the node count in the node pool that's configured for batch processing.
 
-Let's look at the underlying infrastructure that allows for this cost-saving solution in AKS.
+Azure provides Azure Virtual Machines instances that you can use to access unused Azure compute capacity at deep discounts. These virtual machines (VMs) offer scalability while reducing costs, and are ideal for workloads that can be interrupted.
 
-## What is an Azure Spot Virtual Machine (Spot VM)?
+Let's look at the infrastructure that underlies this cost-saving solution in AKS.
 
-A Spot Virtual Machine is a VM that allows you access to unused Azure compute capacity at deep discounts. Spot VMs replace the existing low-priority VMs in Azure. You can use Spot VMs to run workloads that include:
+## What is a spot virtual machine (spot VM) in Azure?
 
-- High-performance computing scenarios, batch processing, or visual rendering applications
+A *spot virtual machine* is a VM that gives you access to unused Azure compute capacity at deep discounts. Spot VMs replace the existing low-priority VMs in Azure. You can use spot VMs to run workloads that include:
 
-- Large-scale stateless applications
+- High-performance computing scenarios, batch processing, or visual-rendering applications.
 
-- Developer/test environments, including continuous integration (CI) and continuous delivery (CD) workloads
+- Large-scale, stateless applications.
+
+- Developer/test environments, including continuous integration (CI) and continuous delivery (CD) workloads.
 
 ### Spot VM availability
 
-Spot VM availability depends on factors such as capacity size, region, and time of day. Azure will allocate VMs only if there's capacity available. As a result, no SLA is available for these types of VMs and they offer no high availability guarantees.
+Spot VM availability depends on factors such as capacity, size, region, and time of day. Azure allocates VMs only if capacity is available. As a result, there is no service-level agreement (SLA) for these types of VMs and they offer no high-availability guarantees.
 
 ### Spot VM eviction policy
 
-The default Spot VM eviction policy is **Deallocate**. Azure will evict Spot VMs with a 30 seconds notice once capacity in a region becomes limited. A VM set with the *Deallocate* policy, moves to the stopped-deallocated state when evicted. You may redeploy an evicted VM when Spot capacity becomes available again. A deallocated VM keeps counting to your Spot vCPU quota, and charges for the underlying allocated disks still apply.
+The default eviction policy for spot VMs is Deallocate. Azure will evict spot VMs with 30 seconds of notice when capacity in a region becomes limited. A VM that's set with the Deallocate policy moves to the stopped-deallocated state when evicted. You can redeploy an evicted VM when spot capacity becomes available again. A deallocated VM is still counted toward your Spot vCPU quota, and charges for the underlying allocated disks still apply.
 
-## What is a Spot Virtual machine scale set
+## What is a spot virtual machine scale set?
 
-A Spot Virtual machine scale set is Virtual machine scale sets that support Azure Spot VMs. These VMs have the same behavior as normal Spot VMs, but with one difference. You choose between two eviction policies when you use virtual machine scale set support for Azure Spot VMs. These policies are:
+A spot virtual machine scale set is a virtual machine scale set that supports Azure spot VMs. These VMs behave the same way as normal spot VMs, but with one difference: when you use virtual machine scale set support for spot VMs in Azure, you choose between two eviction policies:
 
-- **Deallocate**
+- **Deallocate**: The Deallocate policy functions exactly as described earlier.
 
-    The *Deallocate* policy functions exactly as described earlier.
+- **Delete**:  The Delete policy allows you to avoid the cost of disks and hitting quota limits. With the Delete eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for the eviction of VMs by creating new VMs. Although the creation of VMs isn't guaranteed, the evicted VMs don't count toward your vCPU quota or incur costs for underlying disks.  
 
-- **Delete**
+    A best practice is to use the autoscale feature only when you set the eviction policy to Delete on the scale set.
 
-    The **Delete** policy allows you to avoid the cost of disks and hitting quota limits. With the *Delete* eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for the eviction of VMs and create new VMs. Though the creation of VMs isn't guaranteed, the evicted VMs don't count towards your vCPU quota, and underlying disks cost.  
+## What is a spot node pool in Azure Kubernetes Service (AKS)?
 
-    Best practice advice is to only use the autoscale feature when you set the eviction policy to delete on the scale set.
+A spot node pool is a user node pool that uses a spot virtual machine scale set. AKS supports spot VMs when you need to create user node pools and want the cost benefits offered by virtual machine scale set support for Azure spot VMs.
 
-## What is a Spot node pool in Azure Kubernetes Service (AKS)?
+Use spot node pools to:
 
-A spot node pool is a user node pool that uses a spot virtual machine scale set. AKS supports *Spot VMs* when you need to create user node pools and want to use the cost benefits that *Virtual machine scale set support for Azure Spot VMs* offer.
+- Take advantage of unused capacity in Azure.
+- Use scale set features with the Delete eviction policy.
+- Define the maximum price you want to pay per hour.
+- Enable the recommended AKS Kubernetes cluster autoscaler when using spot node pools.
 
- These node pools allow you to:
+For example, to support the drone-tracking application's batch-processing service, you can create a spot node pool and enable the cluster autoscaler. You then configure the horizontal pod scaler to deploy additional batch-processing services to match resource demands.
 
-- Take advantage of unutilized capacity in Azure
-- Use scale set features with the *Delete* eviction policy
-- Define the maximum price you want to pay per hour
-- Enable the recommended AKS Kubernetes cluster autoscaler when using spot node pools
-
-For example, to support the drone tracking application's batch processing service, you can create a spot node pool and enable the **cluster autoscaler**. You then configure the **horizontal pod scaler** to deploy additional batching processing services to match resource demands.
-
-As the demand for nodes increase, the **cluster autoscaler** can scale the number of nodes up and down in the spot node pool. Should node evictions happen, the **cluster autoscaler** will continue to try to scale the node count up if additional nodes are still needed.
+As the demand for nodes increases, the cluster autoscaler can scale the number of nodes up and down in the spot node pool. If node evictions happen, the cluster autoscaler continues to try to scale the node count up if additional nodes are still needed.
 
 ## Spot node pool limitations
 
-Before you decide to add a spot node pool to your AKS cluster, consider the following limitations.
+Before you decide to add a spot node pool to your AKS cluster, consider the following limitations:
 
-- The underlying spot scale set is only deployed to a single fault domain and offers no high availability guarantees.
-- The AKS cluster needs multiple node pool support enabled.
-- You can only use spot node pools as secondary pools.
-- Spot node pool can't be upgraded.
-- The creation of Spot VMs isn't guaranteed. The creation of spot nodes depends on capacity and quota availability in the cluster's deployed Azure region.
+- The underlying spot scale set is deployed only to a single fault domain and offers no high-availability guarantees.
+- The AKS cluster needs multiple node-pool support to be enabled.
+- You can use spot node pools only as secondary pools.
+- Spot node pools can't be upgraded.
+- The creation of spot VMs isn't guaranteed. The creation of spot nodes depends on capacity and quota availability in the cluster's deployed Azure region.
 
-It's important to keep in mind that spot node pools should only be used for workloads that can be interrupted.
+Remember that spot node pools should be used only for workloads that can be interrupted.
 
 ## How to create a spot node pool
 
-Spot node pools are, at the time of creating this content, in preview. To complete the spot node pool configuration, you need to enable the preview feature on the *Microsoft.ContainerService* resource provider and installing the aks-preview CLI extension.
+Spot node pools are in preview at the time this module is being written. To complete configuration of the spot node pool, you need to enable the preview feature on the **Microsoft.ContainerService** resource provider and install the aks-preview CLI extension.
 
 >[!IMPORTANT]
 >
->In some subscriptions, such as sponsorship subscriptions, the ability to create Spot VMs and Spot node pools are limited. You may not be able to create a spot node pool for your cluster.
+>In some subscriptions, such as sponsorship subscriptions, the ability to create spot VMs and spot node pools is limited. You might not be able to create a spot node pool for your cluster.
 
 ## Enable preview features on your subscription
 
@@ -79,51 +78,53 @@ To use spot node pools, you must enable the **spotpoolpreview** feature on your 
 
 >[!CAUTION]
 >
->Once you enable some preview features in Azure, defaults may be used for all AKS clusters created in the subscription. Test preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
+>After you enable some preview features in Azure, you can use defaults for all AKS clusters created in the subscription. Test preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
 
-There are a couple of steps to registering the **spotpoolpreview** feature.
+To register the **spotpoolpreview** feature:
 
-1. You first register the **spotpoolpreview** feature using the `az feature register` command. This command takes two parameters. The *namespace* identifies the resource provider you're registering the feature, and the name of the *feature*.
+1. Use the `az feature register` command to register the **spotpoolpreview** feature. This command takes two parameters: *namespace* identifies the resource provider you're registering the feature with, and *name* identifies the feature.
 
     You register the **spotpoolpreview** feature with the **Microsoft Container Service** resource provider.
 
-    The **Microsoft Container Service** resource provider allows for actions that impact an AKS cluster's management. For example, reading details about creating or updating, and deleting container services, and so on.
+    The **Microsoft Container Service** resource provider enables actions that impact an AKS cluster's management. Examples of actions include creating, updating, and deleting container services, or reading details about them.
 
-    Here is an example of the `az feature register` command to register the *spotpoolpreview* feature.
+    Here's an example of the `az feature register` command to register the **spotpoolpreview** feature:
 
     ```azurecli
     az feature register --namespace "Microsoft.ContainerService" --name "spotpoolpreview"
     ```
 
-1. The registration of the resource provider requires a refresh when then feature is registered. To check the status of the registration, you query the resource providers' feature list. The `az feature list` query returns the value **Registered** once complete. Here is an example of the query command.
+1. The registration of the resource provider requires a refresh when the feature is registered. To check the status of the registration, query the resource provider's feature list. The `az feature list` query returns the value **Registered** what it's complete. Here's an example of the query command:
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/spotpoolpreview')].{Name:name,State:properties.state}"
     ```
 
-1. Once registered, the last step is to propagate the new feature registration. You run the `az provider register` command with the `--namespace` parameter using the same resource provider from earlier. Here is an example of the `az provider register` command.
+1. When the feature is registered, the last step is to propagate the new registration. Run the `az provider register` command with the `--namespace` parameter, specifying the same resource provider as before. Here's an example of the `az provider register` command.
 
     ```azurecli
     az provider register --namespace Microsoft.ContainerService
     ```
 
-## Install aks-preview CLI extension
+## Install the aks-preview CLI extension
 
 The AKS spot node pool command parameters are only available in the aks-preview CLI extension. Without the extension installed, you can't use the preview features.
 
-You can run the following two commands to install or update the extension if already installed.
+You can run the following commands to install the extension or, if it's already installed, to check its version and update it.
+
+If the extension isn't already installed, run this command to install it:
 
 ```azurecli
 az extension add --name aks-preview
 ```
 
-You need to install the aks-preview CLI extension version 0.4.53 or higher to create an AKS cluster that uses spot node pools. Check the installed version of the extension if you've already installed the preview version. Run the `az extension show` command to query the extension version.
+You must install the aks-preview CLI extension version 0.4.53 or later to create an AKS cluster that uses spot node pools. Check the installed version of the extension if you've already installed the preview version. Run the `az extension show` command to query the extension version:
 
 ```azurecli
 az extension show --name aks-preview --query [version]
 ```
 
-You update the extension by running the `az extension update` command if you've previously installed the extension and need to update it to a newer version.
+If you've previously installed the extension and need to update it to a newer version, run the `az extension update` command:
 
 ```azurecli
 az extension update --name aks-preview
@@ -135,17 +136,17 @@ A spot node pool can't be a primary node pool for an AKS cluster. You'll first c
 
 You set several parameters for a new node pool to configure it as a spot node pool.
 
-#### Priority
+### Priority
 
 The `--priority` parameter is set to `Regular` by default for a new node pool. You have set the value to `Spot` to indicate that the new pool you're creating is a spot node pool. This value can't be changed after creation.
 
-#### Eviction policy
+### Eviction policy
 
 A spot node pool must use a Virtual Machine Scale Set. Recall from earlier that the spot node pool is using a spot scale set. Set `--eviction-policy` to `Delete` to allow the scale set to remove the node and the underlying allocated disk used by the node. This value can't be changed after creation.
 
 You may set the eviction policy to `Deallocate`. However, when evicted, these nodes will count against your compute quota and impact later cluster scaling or upgrading.
 
-#### Spot max price
+### Spot max price
 
 Spot node pools allow you to optimize costs by setting the maximum amount you're willing to pay per spot node per hour. To set your safe amount, you use the `spot-max-price` parameter. Newly created spot nodes are evicted once this value is reached.
 
@@ -156,15 +157,15 @@ You can set this value to any positive amount up to five decimals, or set it to 
 
 For example, assume you set the value to 0.98765, then the max price for a node will be 0.98765 USD per hour. When the node's consumption exceeds this amount, it's evicted.
 
-#### Enable cluster autoscaler
+### Enable cluster autoscaler
 
 It's recommended to enable the cluster autoscaler. If you don't use the cluster autoscaler, you run the risk of the node count dropping to zero in the node pool as nodes are evicted because of Azure capacity constraints.
 
-#### Min count
+### Min count
 
 Set the minimum node count to a value between 1 and 100 by using the `--min-count`. Minimum node count is required when enabling the cluster autoscaler.
 
-#### Max count
+### Max count
 
 Set the maximum node count to a value between 1 and 100 by using the `--max-count`. Maximum node count is required when enabling the cluster autoscaler.
 
