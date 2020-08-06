@@ -4,7 +4,7 @@ Before they migrate their existing e-commerce system from their datacenter to pr
 
 Here's a diagram that shows the basic compute, database, and networking components found in each environment:
 
-:::image type="content" source="../media/7-dev-test-environments.png" alt-text="A diagram of the development and test environments. Each environment contains virtual machines, a database, and a virtual network. The development environment includes three virtual machines. The test environment contains six virtual machines." border="false":::
+:::image type="content" source="../media/7-dev-test-environments.svg" alt-text="A diagram of the development and test environments. Each environment contains virtual machines, a database, and a virtual network. The development environment includes three virtual machines. The test environment contains six virtual machines." border="false":::
 
 An e-commerce system might require a website, the products database, a payment system, and so on. Because developers can't always run the entire service from their local development environment, the _Dev_ environment is the first place where everything the app needs comes together.
 
