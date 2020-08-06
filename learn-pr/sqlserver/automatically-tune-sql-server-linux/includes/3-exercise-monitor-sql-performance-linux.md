@@ -14,7 +14,7 @@ Start by creating a virtual machine, and use an image that includes SQL Server 2
     export PASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name UbuntuSQLServer \
-        --image "MicrosoftSQLServer:sql2019-ubuntu1804:sqldev:15.0.200317" \
+        --image "MicrosoftSQLServer:sql2019-ubuntu1804:sqldev:latest" \
         --size Standard_D2s_v3 \
         --admin-username ubuntuadmin \
         --admin-password $PASSWORD \

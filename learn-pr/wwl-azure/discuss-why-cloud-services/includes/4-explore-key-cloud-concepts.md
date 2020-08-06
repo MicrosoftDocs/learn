@@ -16,7 +16,7 @@ Cloud services is a big shift from the traditional way businesses think about IT
 
 - **Customer latency capabilities**. If customers are experiencing slowness with a particular cloud service, they are said to be experiencing some latency. Even though modern fiber optics are fast, it can still take time for services to react to customer actions if the service is not local to the customer. Cloud services have the ability to deploy resources in datacenters around the globe, which addresses any customer latency issues.
 
-- **Predictive cost considerations**. The ability for users to predict the costs they will incur for a particular cloud service. Costs for individual services are made available, and tools are provided to allow you to predict the costs a service will incur. You can also perform analysis based on future growth.
+- **Predictive cost considerations**. The ability for users to predict the costs they will incur for a particular cloud service. Costs for individual services are made available, and tools are provided to allow you to predict the costs a service will incur. You can also perform analysis based on planned growth.
 
 - **Technical skill requirements and considerations**. Cloud services can provide and manage hardware and software for workloads. Getting a workload up and running with cloud services demands less technical resources than having IT teams build and maintain a physical infrastructure for handling the same workload. A user can be an expert in the application they want to run without requiring skills to build and maintain the underlying hardware and software infrastructure.
 

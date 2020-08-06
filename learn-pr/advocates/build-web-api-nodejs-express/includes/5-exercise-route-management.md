@@ -26,6 +26,7 @@ When building an API, it's common to construct it so that you have a number of r
    -| client-post.js
    -| client-put.js
    -| client-delete.js
+   -| client-delete-route.js
    -| package.json
    ```
 
@@ -64,6 +65,7 @@ When building an API, it's common to construct it so that you have a number of r
    app.get('/products', (req, res) => {
      // implement
    })
+   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
    What you are getting above is a skeleton of a program. Your job is to implement the routes. You will do so by adding a little code and testing it out, method by method until you have a fully functional API. Let's begin.
