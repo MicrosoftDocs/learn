@@ -4,9 +4,9 @@ After you have chosen which columns you want to use to predict whether a rocket 
 
 Remember your question:  
 *Can you predict whether a launch is likely to be able to happen given specific weather conditions?*  
-This is a two-choice question: A rocket will launch - Yes or No. So this would be considered a two-class classification problem. 
+This is a two-choice question: A rocket will launch - Yes or No. So this would be considered a two-class classification problem.
 
-Within this category of algorithm there are a lot of specific algorithms to choose from. In this case, you will be exploring a two-class decision tree. One of the biggest reasons it was chosen for this module is because visualizing the results of a decision tree yields insights that will help you iterate on future data collecting, cleansing, and manipulation in the future. 
+Within this category of algorithm there are a lot of specific algorithms to choose from. In this case, you will be exploring a two-class decision tree. One of the biggest reasons it was chosen for this module is because visualizing the results of a decision tree yields insights that will help you iterate on future data collecting, cleansing, and manipulation in the future.
 
 ## Create a Machine Learning Model in Python
 
