@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.provision-and-use-azure-dsvm
+hidden: true
 metadata:
   title: Provision and use an Azure Data Science Virtual Machine
   description: Learn how to create an Azure Data Science Virtual Machine using the Azure portal with code, its output, and explanatory text integrated into a Jupyter Notebook.

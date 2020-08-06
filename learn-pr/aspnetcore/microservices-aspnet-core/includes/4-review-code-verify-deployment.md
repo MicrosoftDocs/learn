@@ -23,7 +23,7 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 
 After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
 
-```
+```console
 The eShop-Learn application has been deployed.
 
 You can begin exploring these services (when available):

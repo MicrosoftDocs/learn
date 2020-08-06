@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.explore-azure-dsvm-types
+hidden: true
 metadata:
   title: Explore the types of Azure Data Science Virtual Machines
   description: Learn about the types of Azure Data Science Virtual Machines and the different capabilities of the Windows-based and Linux-based DSVMs.
