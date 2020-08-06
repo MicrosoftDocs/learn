@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.analyze-moon-rock-images-ai-nasa.6-show-imported-images
 metadata:
   title: Exercise - Display space rock images in a Python Notebook
-  description: Show the images that we just imported
+  description: Run code to classify images that you uploaded, and then print them, with the classifications shown.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals

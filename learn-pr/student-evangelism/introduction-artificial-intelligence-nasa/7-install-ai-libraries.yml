@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: >-
-  learn.student-evangelism.introduction-artificial-intelligence-nasa.7-install-ai-libraries
+uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.7-install-ai-libraries
 metadata:
   title: Exercise - Prepare to classify space rocks by downloading AI Python libraries
   description: Learn how to install the previously talked about libraries

@@ -1,18 +1,18 @@
 Now that we have all of the libraries downloaded, we can begin importing them into a Jupyter Notebooks file. We'll begin by opening or creating a Jupyter Notebooks file.
 
-First, we import matplotlib to help us plot our data:
+Next, we import Matplotlib to help us plot our data:
 
 ```python
 import matplotlib.pyplot as plt
 ```
 
-Next, we import numPy, which we will use to process large numerical matrixes (images):
+Then, we import NumPy, which we will use to process large numerical matrixes (images):
 
 ```python
 import numpy as np
 ```
 
-Import pyTorch to train and process deep learning and AI models:
+Import PyTorch to train and process deep learning and AI models:
 
 ```python
 import torch
@@ -21,20 +21,20 @@ from torch.autograd import Variable
 import torch.nn.functional as F
 ```
 
-Import torch vision (part of pyTorch) to process images and manipulate them (crop, resize):
+Import torchvision (part of pyTorch) to process images and manipulate them (crop, resize):
 
 ```python
 import torchvision
 from torchvision import datasets, transforms, models
 ```
 
-Import PIL to visualize images:
+Import Python Imaging Library (PIL) to visualize images:
 
 ```python
 from PIL import Image
 ```
 
-These two libraries ensure that the plots are shown inline and in high resolution:
+Finally, we add two libraries that ensure that the plots are shown inline and in high resolution:
 
 ```python
 %matplotlib inline

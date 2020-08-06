@@ -15,42 +15,42 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the point of separating data into a training and testing section?"
+  - content: "What is the point of separating data into training and testing groups?"
     choices:
-    - content: "So we can train the model with some and test the model with some"
+    - content: "We separated data into training and testing groups to train the model with one portion of the data and test the model with the rest of the data."
       isCorrect: true
-      explanation: "Correct! This is the reason"
-    - content: "Because the computer can't test that much data"
+      explanation: "Correct! We separate data into training and testing groups so we can split the data between the two groups."
+    - content: "We separated data into training and testing groups because the computer can't test that much data."
       isCorrect: false
-      explanation: "That is not the reason"
-    - content: "To train the model faster"
+      explanation: "Incorrect. The amount of data a computer can test isn't the reason we separate data into a training and testing groups."
+    - content: "We separated data into training and testing groups to train the model more quickly."
       isCorrect: false
-      explanation: "This is not the reason"
+      explanation: "Incorrect. The speed with with a computer can train the model isn't the reason we separate data into a training and testing groups."
   - content: "How do computers view images?"
     choices:
-    - content: "As .jpg files"
+    - content: "As .jpg files."
       isCorrect: false
-      explanation: "Computers can't just read a .jpg"
-    - content: "By reading the words off the picture"
+      explanation: "Incorrect. Computers can't read a .jpg without transforming it first."
+    - content: "Computers view images by reading photo captions."
       isCorrect: false
-      explanation: "This would lose a lot of information about the picture"
-    - content: "By breaking the picture up into fours and reading each of those sections"
+      explanation: "Incorrect. This approach would exclude a lot of information about the photo."
+    - content: "Computers view images by breaking up the photo into fours and reading each of the sections."
       isCorrect: false
-      explanation: "This is not how computers read images"
-    - content: "By breaking it down into ones and zeros"
+      explanation: "Incorrect. Computers don't read images breaking up the photo into fours and reading each of the sections.."
+    - content: "Computers view images by breaking down the photo into ones and zeros."
       isCorrect: true
-      explanation: "This is the only way computers can read image data"
+      explanation: "Correct! Computers can only read image data by breaking down the photo into ones and zero."
   - content: "How did we clean the data in our project?"
     choices:
-    - content: "By deleting images that were blurry"
+    - content: "We cleaned the data by deleting images that were blurry."
       isCorrect: false
-      explanation: "We did not do this"
-    - content: "By resizing all of the images so they were the same size."
+      explanation: "Incorrect. We didn't delete any images."
+    - content: "We cleaned the data by resizing all the images, so they were the same size."
       isCorrect: true
-      explanation: "Correct! This is what we did"
-    - content: "By retaking some pictures that we didn't like"
+      explanation: "Correct! We cleaned the data by resizing all the images, so they were the same size."
+    - content: "We cleaned the data by retaking some pictures that we didn't like."
       isCorrect: false
-      explanation: "We did not do this"
-    - content: "By editing some pictures with paint"
+      explanation: "Incorrect. We didn't retake pictures."
+    - content: "By editing some pictures by using Microsoft Paint."
       isCorrect: false
-      explanation: "We did not do this"
+      explanation: "Incorrect. We didn't edit pictures in Paint."

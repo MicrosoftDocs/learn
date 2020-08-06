@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-moon-rock-images-ai-nasa.5-how-computers-read-images
 metadata:
-  title: Discover how computers understand images
-  description: Learn how computers read images
+  title: Discover how computers can read images
+  description: Learn how a computer breaks down an image into binary form so that it can read an image.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Discover how computers understand images
+title: Discover how computers can read images
 durationInMinutes: 3
 content: |
   [!include[](includes/5-how-computers-read-images.md)]

@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: >-
-  learn.student-evangelism.introduction-artificial-intelligence-nasa.6-common-ai-libraries
+uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.6-common-ai-libraries
 metadata:
   title: Discover common Python libraries useful in AI projects
   description: Learn about some common ai libraries and what they do

@@ -15,44 +15,44 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is a Neural Network?"
+  - content: "What is a neural network?"
     choices:
-    - content: "A computer system that is modeled after the human brain and nervous system"
+    - content: "A neural network is a computer system that's modeled on the human brain and nervous system."
       isCorrect: true
-      explanation: "This is the definition of a neural network"
-    - content: "Giving a computer a brain of its own"
+      explanation: "Correct! This is the definition of a neural network."
+    - content: "A neural network means giving a computer a brain of its own."
       isCorrect: false
-      explanation: "A neural network is just modeled after a brain not an actual one"
-    - content: "Software that we install onto a computer"
+      explanation: "Incorrect. A neural network is just modeled on a brain; it's not an actual brain."
+    - content: "A neural network is software that we install on a computer."
       isCorrect: false
-      explanation: "This is not what a neural network is"      
-  - content: "What does the accuracy of a Artificial Intelligence Model mean?"
+      explanation: "Incorrect. A neural network isn't software."      
+  - content: "What does accuracy in an AI model mean?"
     choices:
-    - content: "What percentage of time the model made a incorrect prediction"
+    - content: "The percentage of time the model made an incorrect prediction."
       isCorrect: false
-      explanation: "This is not what accuracy means in our context"
-    - content: "What percentage of time the model made a correct prediction"
+      explanation: "Incorrect. This answer doesn't refer to measuring accuracy."
+    - content: "The percentage of time the model made a correct prediction."
       isCorrect: true 
-      explanation: "This is what accuracy means in our context"
-    - content: "How many more images you need to train the model with for it to be perfect"
+      explanation: "Correct! Accuracy in this context means how often the model was correct."
+    - content: "The number of images you need to train the model for the model's accuracy to be perfect."
       isCorrect: false
-      explanation: "This is not what accuracy means in our context"
-    - content: "What percentage of time the program will run"
+      explanation: "Incorrect. The accuracy rate of an AI model doesn't include the details of the testing itself."
+    - content: "The percentage of time the AI model will work."
       isCorrect: false
-      explanation: "The program should run every time."
-  - content: "How can you increase the accuracy of an artificial intelligence model?"
+      explanation: "Incorrect. The AI model should work every time you run it."
+  - content: "How can you increase the accuracy of an AI model?"
     choices:
-    - content: "Train the model 3 times instead of 5 times"
+    - content: "Train the model three times instead of five times."
       isCorrect: false
-      explanation: "This will not necessarily increase accuracy"
-    - content: "Decrease the epoch number"
+      explanation: "Incorrect. Training the model more times won't necessarily increase the accuracy of the model."
+    - content: "Decrease the number of epochs."
       isCorrect: false
-      explanation: "This will not necessarily increase the accuracy"
-    - content: "Adding more images and increasing the epoch number"
+      explanation: "Incorrect. Decreasing the number of epochs during training won't necessarily increase the accuracy of the model."
+    - content: "Add more images and increase the epoch number."
       isCorrect: true
-      explanation: "Correct! This is how to increase accuracy"
-    - content: "Decreasing the number of images"
+      explanation: "Correct! You can increase the accuracy of an AI model by adding more images and epochs when you train the model."
+    - content: "Decrease the number of images."
       isCorrect: false
-      explanation: "This won't necessarily increase the accuracy"
+      explanation: "Incorrect. Changing only the number of images during training won't necessarily increase the accuracy of the model."
 
 

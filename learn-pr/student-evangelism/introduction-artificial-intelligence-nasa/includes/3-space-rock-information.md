@@ -1,28 +1,30 @@
-Before we begin learning about how Artificial Intelligence can classify rocks, let's start by learning about the different types of rocks that we will be classifying and see how well *you* do at classifying rocks.
+Before we learn the details of how AI can be used to classify rocks, let's start by learning about the different types of rocks that we'll be working with. And, we'll see how well *you* do at classifying rocks.
 
-## Types of Rocks
+## Types of rocks
 
-In this lesson we will be classifying rocks into one of two types: Basalt and Crustal.
+In this lesson, we'll classifying photos of rocks into one of two types: basalt and crustal.
 
 > [!NOTE]
-> These rock types are also found on the Earth, but for this lesson we are only looking at the lunar variants or rocks that are from the moon.
+> These rock types are also found on Earth, but for this lesson, we are looking onlyat the lunar variants; that is, rocks that are from the moon.
 
-Basalt is the dark rock type that come from ancient volcanic eruptions on the moon. When you look up at the moon and see dark patches you are likely viewing Basalt. Nearly 26% of the near side of the Moon is basalt and only 2% of the far side is basalt. Most basalt in either hemisphere is found in areas of lowest elevation, particularly in the very large impact basins.
+Basalt is a dark rock that comes from ancient volcanic eruptions on the Earth's moon. When you look up at the moon and see dark spots and patches, you likely are seeing basalt rock on the moon's surface. Nearly 26% of the near side of the moon is basalt; only 2% of the far side is basalt. Most basalt in either of the moon's hemispheres is found in areas of low elevation. Basalt is especially common in the very large impact basins across the surface of the moon.
 
-<img src="..\introduction-artificial-intelligence-nasa\media\basalt-cristobalite-1.jpg" width="200" align="center">
-<img src="..\introduction-artificial-intelligence-nasa\media\basalt-cristobalite-2.jpg" width="200" align="center">
+:::image type="content" source="../media/basalt-cristobalite-1.png" alt-text="Image alt text." loc-scope="Azure":::
 
-Crustal are lighter rocks that form when there is a partial melt of mantle rocks. These rocks are less common than Basalts.
+:::image type="content" source="../media/basalt-cristobalite-2.png" alt-text="Image alt text." loc-scope="Azure":::
 
-<img src="..\introduction-artificial-intelligence-nasa\media\crustal-anorthosite-1.jpg" width="150" align="center">
-<img src="..\introduction-artificial-intelligence-nasa\media\crustal-anorthosite-2.jpg" width="200" align="center">
+Crustal is a lighter rock that forms after a partial melt of mantle rocks. Crustal is less common than basalt.
 
-Look carefully at the sample images for each rock type to learn how to classify a new rock that just arrived from Space.
+:::image type="content" source="../media/crustal-anorthosite-1.png" alt-text="Image alt text." loc-scope="Azure":::
+
+:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="Image alt text." loc-scope="Azure":::
+
+Look carefully at the sample images for each rock type to learn how to classify a new rock that just arrived from the moon.
 
 What type of rock do you think this newly arrived rock is?
 
-<img src="..\introduction-artificial-intelligence-nasa\media\basalt-cristobalite-3.jpg" width="200" align="center">
+:::image type="content" source="../media/basalt-cristobalite-3.png" alt-text="Image alt text." loc-scope="Azure":::
 
-This new rock that we just received is a Basalt rock. Did you get it right?
+This new rock that we just received is a basalt rock. Did you get it right?
 
-Notice how it is very hard to classify this rock because it looks like both a Crustal and Basalt rock. Computers are great at finding the smaller details that the human eye can miss. This is how artificial intelligence can assist us.
+Notice how it's very hard to classify this rock because it looks both like crustal and basalt rock. Computers are great at finding the smaller details that the human eye can miss. This is how artificial intelligence can assist us.

@@ -1,6 +1,6 @@
-Now that we have built a neural network and introduced the program to the different features of the rocks, we must now train the program. This will use our training data and make our program very accurate at classifying the rocks.
+Now that we have built a neural network and introduced the program to the different features of the rocks, we must now train the program. In this step, we use our training data to make our program very accurate in classifying space rocks.
 
-Copy the code below into a cell and run it. Some things to look for in this code are the `epochs` variable. This tells the program how many times to search for associations in features. It is initially at 5, but you could increase it to increase the accuracy. However, increasing it will make the code run a lot slower.
+Copy the following code into a cell, and then run it. One thing to look for in this code is the `epochs` variable. This variable tells the program how many times to search for associations in features. It's initially set to 5, but you can increase the number to increase the accuracy. However, increasing the number makes the code run significantly slower.
 
 ```python
 epochs = 5

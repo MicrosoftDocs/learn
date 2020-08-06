@@ -1,18 +1,18 @@
-You are a geologist working for NASA whose job is to let the astronauts know which rocks to pick up on their trip to the moon (You would go to the moon to pick them out yourself, but you have a fear of heights). Because the astronauts have many other things to learn, teaching them about different space rocks is not practical. Instead, you decide to create an artificial intelligence program that the astronauts can use to take a picture of a rock and find out what type it is. This will ensure that you get enough samples of every type you need.
+You are a geologist working for NASA. Your job is to let the astronauts know which rocks to pick up on their trip to the moon. (You would go to the moon to pick them out yourself, but you have a fear of heights.) Because the astronauts have many other things to learn, teaching them about different space rocks isn't practical. Instead, you decide to create an artificial intelligence (AI) program that the astronauts can use to take a picture of a rock and find out what type of rock it is. This will ensure that you get enough samples of every type of rock you need.
 
-In this Microsoft Learn module, you'll learn about what artificial intelligence is and some libraries that will help you create the program outlines above. The final project will use Visual Studio Code, Python and Jupyter Notebooks to create an artificial intelligence model that can identify the type of a rock in an image.
+In this Microsoft Learn module, you'll learn what AI is, and you'll use some libraries that will help you create a program that classifies rocks. The final project will use Visual Studio Code, Python, and Jupyter Notebooks to create an AI model that can identify the type of a rock in an image.
 
-The data is provided by NASA and you can even view their [sample collection](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm) to see more interesting pictures.
+The data is provided by NASA. You can even view NASA's [sample collection](https://curator.jsc.nasa.gov/lunar/samplecatalog/index.cfm?azure-portal=true) to see more interesting pictures.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
-- Get an introduction to artificial intelligence
+- Get an introduction to AI
 - See how humans classify objects
 - See how machines classify objects
-- Learn about artificial intelligence libraries
-- Install artificial intelligence libraries
+- Learn about AI libraries
+- Install AI libraries
 
 ## Prerequisites
 

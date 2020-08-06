@@ -7,11 +7,11 @@ In this Microsoft Learn module, you'll use Visual Studio Code, Python, and Jupyt
 In this module, you will:
 
 - Learn what neural networks are
-- Train an artificial intelligence model
+- Train an AI model
 - Test the model by having it classify various space rocks
 
 ## Prerequisites
 
 - Ability to write and run introductory Python programs
 - Visual Studio Code, Python Extension, and Jupyter Notebooks installed
-- Artificial intelligence libraries installed
+- AI libraries installed

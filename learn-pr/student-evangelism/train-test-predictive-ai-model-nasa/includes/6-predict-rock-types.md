@@ -5,14 +5,14 @@ Let's predict rock types. To predict the type of rock that's shown in a new imag
 3. Extract the features and characteristics of the image.
 4. Predict the type of rock that's shown in the image by using the associations we learned in step 2.
 
-The following code loads the neural network that we built in the preceding step:
+The following code loads our neural network:
 
 ```python
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model=torch.load('aerialmodel.pth')
 ```
 
-This code makes a function that predicts the new image type:
+This code creates a function that predicts the new image type:
 
 ```python
 def predict_image(image):

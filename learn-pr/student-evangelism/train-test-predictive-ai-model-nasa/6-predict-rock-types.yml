@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.train-test-predictive-ai-model-nasa.6-predict-rock-types
 metadata:
   title: Exercise - Predict the type of space rock in an image
-  description: Put the Ai model to use and predict rock types
+  description: Run code to use the AI model you created to predict rock types in a set of random images.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals

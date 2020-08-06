@@ -1,1 +1,1 @@
-In this module, you build the artificial intelligence model that would detect different types of space rocks. You assessed the accuracy of the model and put it to the test trying to predict what types certain rocks were.
+In this module, you built an AI model that detects different types of space rocks. You assessed the accuracy of the model and put it to the test trying to predict what types of rocks were shown in random photos.
