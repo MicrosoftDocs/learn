@@ -30,10 +30,12 @@ units:
 - learn.quantum.concepts.1-introduction
 - learn.quantum.concepts.2-superposition-in-quantum-computing
 - learn.quantum.concepts.3-explore-superposition-with-qsharp
-- learn.quantum.concepts.4-interference-and-entanglement-in-quantum-computing
-- learn.quantum.concepts.5-explore-interference-and-entanglement-with-qsharp
-- learn.quantum.concepts.6-introduction-to-quantum-algorithms
-- learn.quantum.concepts.7-knowledge-check
-- learn.quantum.concepts.8-summary
+- learn.quantum.concepts.4-interference-in-quantum-computing
+- learn.quantum.concepts.5-explore-interference-with-qsharp
+- learn.quantum.concepts.6-entanglement-in-quantum-computing
+- learn.quantum.concepts.7-explore-entanglement-with-qsharp
+- learn.quantum.concepts.8-introduction-to-quantum-algorithms
+- learn.quantum.concepts.9-knowledge-check
+- learn.quantum.concepts.10-summary
 badge:
   uid: learn.quantum.concepts.badge

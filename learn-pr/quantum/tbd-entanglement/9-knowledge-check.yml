@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.concepts.7-knowledge-check
+uid: learn.quantum.concepts.9-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 
 quiz:
   title: Check your knowledge

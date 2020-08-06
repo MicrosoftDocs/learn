@@ -1,9 +1,8 @@
-### YamlMime:ModuleUnit
-uid: learn.quantum.concepts.6-introduction-to-quantum-algorithms
-title: Introduction to quantum algorithms
+uid: learn.quantum.concepts.5-explore-interference-with-qsharp
+title: Exercise - Explore interference with Q#
 metadata:
-  title: Introduction to quantum algorithms
-  description: Short introduction to several famous quantum algorithms.
+  title: Exercise - Explore interference with Q#
+  description: Illustrates interference in quantum computing with different Q# examples.
   ms.date: 09/19/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -22,4 +21,4 @@ metadata:
     dd: "\\mathrm{d}"
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-introduction-to-quantum-algorithms.md)]
+  [!include[](includes/5-explore-interference-and-interference-with-qsharp.md)]
