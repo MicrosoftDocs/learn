@@ -154,27 +154,7 @@ to a qubit in the state $\ket{0}.$
 
 The operation would be:
 
-```qsharp
-namespace ExploringSuperposition {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-    open Microsoft.Quantum.Math;
-
-    @EntryPoint()
-    operation GenerateSpecificState(alpha : Double) : Result {
-        using (q = Qubit()) {
-            Rx(2.0 * ArcTan2(Sqrt(1.0-alpha), Sqrt(alpha)), q);
-            S(q);
-            Message("The qubit is in the desired state.");
-            DumpMachine();
-            Message("Your skewed random bit is:");
-            return MResetZ(q);
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/3-program-2.qs":::
 
 Let's try it out. If we choose $\alpha = \frac13$:
 
@@ -207,30 +187,7 @@ where $a_i$ are complex numbers that satisfy $\sum|a_i|^2=1$.
 For instance, we can put the qubits in a uniform superposition applying `H` to each qubit. We can use this uniform superposition to create a different version of the quantum random number generator that measures three qubits in superposition
 instead of one qubit three times.
 
-```qsharp
-namespace ExploringSuperposition {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Convert;
-    open Microsoft.Quantum.Arrays;
-
-    @EntryPoint()
-    operation GenerateRandomNumber() : Int {
-        using (qubits = Qubit[3]){
-            ApplyToEach(H, qubits);
-            Message("The qubit register in a uniform superposition: ");
-            DumpMachine();
-            let result = ForEach(M, qubits);
-            Message("Measuring the qubits collapses the superposition to a basis state.");
-            DumpMachine();
-            ResetAll(qubits);
-            return BoolArrayAsInt(ResultArrayAsBoolArray(result));
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/3-program-3.qs":::
 
 In this code we introduced three concepts:
 
@@ -273,36 +230,7 @@ What would happen if instead of measuring the three qubits at once with
 `ForEac(M, qubits)` we measure them sequentially? We can check it, we just need to
 slightly modify the code:
 
-```qsharp
-namespace ExploringSuperposition {
-    open Microsoft.Quantum.Canon;
-    open Microsoft.Quantum.Intrinsic;
-    open Microsoft.Quantum.Diagnostics;
-    open Microsoft.Quantum.Measurement;
-    open Microsoft.Quantum.Math;
-    open Microsoft.Quantum.Convert;
-
-    @EntryPoint()
-    operation GenerateUniformState() : Int {
-        using (qubits = Qubit[3]){
-        ApplyToEach(H, qubits);
-        Message("The qubit register in a uniform superposition: ");
-        DumpMachine();
-        mutable results = new Result[0];
-        for (q in qubits) {
-               Message(" ");
-               set results += [M(q)];
-               DumpMachine();
-        }
-
-        ResetAll(qubits);
-        Message(" ");
-        Message("Your random number is: ");
-        return BoolArrayAsInt(ResultArrayAsBoolArray(results));
-        }
-    }
-}
-```
+:::code language="qsharp" source="code/3-program-4.qs":::
 
 In this block, we have introduced the use of the loop `for`. Q# as a full stack programming language has classical flow control capabilities. You can learn more about the different Q# flow control statements in the [Quantum Development Kit documentation](https://docs.microsoft.com/quantum/user-guide/using-qsharp/control-flow).
 
@@ -361,7 +289,7 @@ each step:
 1. **State preparation:** after applying `H` to each qubit of the register we obtain
   a uniform superposition.
 
-    ```qsharp
+    ```output
     The qubit register in a uniform superposition: 
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0⟩:     0.353553 +  0.000000 i  ==     ***                  [ 0.125000 ]     --- [  0.00000 rad ]
@@ -380,7 +308,7 @@ each step:
    and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the
    normalization condition.
 
-    ```qsharp
+    ```output
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
     |1⟩:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
@@ -414,7 +342,7 @@ each step:
    vanished. The only compatible state is $\ket{5}=\ket{101}$, that get's an
    amplitude probability of $1$.
 
-    ```qsharp
+    ```output
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
     |1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
