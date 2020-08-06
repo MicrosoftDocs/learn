@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-storage-fundamentals.file-storage-fundamentals
+uid: learn.azure.azure-storage-fundamentals.azure-file-storage
 title: File storage fundamentals
 metadata:
   title: File storage fundamentals
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/file-storage-fundamentals.md)]
+  [!include[](includes/azure-file-storage.md)]

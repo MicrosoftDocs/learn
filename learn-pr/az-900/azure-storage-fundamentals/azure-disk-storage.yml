@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-storage-fundamentals.disk-storage-fundamentals
+uid: learn.azure.azure-storage-fundamentals.azure-disk-storage
 title: Disk Storage fundamentals
 metadata:
   title: Disk Storage fundamentals
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/disk-storage-fundamentals.md)]
+  [!include[](includes/azure-disk-storage.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-storage-fundamentals.understanding-storage-tiers
+uid: learn.azure.azure-storage-fundamentals.azure-storage-tiers
 title: Understanding storage tiers
 metadata:
   title: Understanding storage tiers
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/understanding-storage-tiers.md)]
+  [!include[](includes/azure-storage-tiers.md)]
