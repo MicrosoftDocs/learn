@@ -260,7 +260,7 @@ To test the Circuit Breaker policy, you'll configure the code for 20 failures. A
 
     In the preceding image, notice that:
 
-    - After waiting for 7.6 seconds, labeled as ":::no-loc text="1":::", you received the HTTP 500 error message with the retry policy, labeled as ":::no-loc text="2":::".
+    - After waiting for 7.6 seconds, labeled as ":::no-loc text="1":::", you received the HTTP 500 error message with the Retry policy, labeled as ":::no-loc text="2":::".
     - On the next try, you validate the code. You receive the HTTP 500 error message after waiting only 3.4 seconds, labeled as ":::no-loc text="3":::". You don't see the ":::no-loc text="Get coupon...":::" trace, meaning it failed without going to the server.
     - If you check the details on this last trace, you should see a variation of the following output:
 
