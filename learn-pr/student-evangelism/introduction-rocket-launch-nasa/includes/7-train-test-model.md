@@ -10,7 +10,7 @@ Then, you are asked to go into a new field of berries, which have the same five 
 
 *Picture is shared by [Pro2 on Wikipedia](https://commons.wikimedia.org/wiki/File:Raspberry.jpg?azure-portal=true)*
 
-:::image end:::
+:::image-end:::
 
 So you are successful at this. You collect ten raspberries successfully!
 
@@ -24,7 +24,7 @@ Then, you were given a test: given any input, identify the type of berry, and on
 
 *Picture is shared by [Jesse Taylor on Wikipedia](https://commons.wikimedia.org/wiki/File:Thimbleberry_(Rubus_parviflorus)_--_fruits.JPG?azure-portal=true)*
 
-:::image end:::
+:::image-end:::
 
 These look similar to raspberries, and they both look different from the other four types of berries. But they are *not* the same berry. The one you just brought back was a thimbleberry. (Dun dun duuuuuuuuuuun *cue dramatic music*)
 
