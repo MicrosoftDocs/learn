@@ -48,16 +48,16 @@ Here, you change the name of the deployment to better reflect what this deployme
 
 Run the following Azure CLI commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed. Fill in a unique name for the ```storageName``` parameter. Remember, this name must be unique across all of Azure. You can use the unique name you created in the last unit. In that case, Azure will update the resource instead of creating a new one.
 
-    ```azurecli
-    templateFile="azuredeploy.json"
-    today=$(date +"%d-%b-%Y")
-    DeploymentName="addnameparameter-"$today
+```azurecli
+templateFile="azuredeploy.json"
+today=$(date +"%d-%b-%Y")
+DeploymentName="addnameparameter-"$today
 
-    az deployment group create \
-      --name $DeploymentName \
-      --template-file $templateFile \
-      --parameters storageName={your-unique-name}
-    ```
+az deployment group create \
+  --name $DeploymentName \
+  --template-file $templateFile \
+  --parameters storageName={your-unique-name}
+```
 
   ::: zone-end
 
@@ -65,15 +65,15 @@ Run the following Azure CLI commands in the terminal. This snippet is the same c
 
 Run the following Azure PowerShell commands in the terminal. This snippet is the same code you used previously, but the name of the deployment is changed. Fill in a unique name for the ```storageName``` parameter. Remember, this name must be unique across all of Azure. You can use the unique name you created in the last unit. In that case, Azure will update the resource instead of creating a new one.
 
-    ```azurepowershell
-    $templateFile = "azuredeploy.json"
-    $today=Get-Date -Format "MM-dd-yyyy"
-    $deploymentName="addnameparameter-"+"$today"
-    New-AzResourceGroupDeployment `
-      -Name $deploymentName `
-      -TemplateFile $templateFile `
-      -storageName {your-unique-name}
-    ```
+```azurepowershell
+$templateFile = "azuredeploy.json"
+$today=Get-Date -Format "MM-dd-yyyy"
+$deploymentName="addnameparameter-"+"$today"
+New-AzResourceGroupDeployment `
+  -Name $deploymentName `
+  -TemplateFile $templateFile `
+  -storageName {your-unique-name}
+```
 
 ::: zone-end
 
