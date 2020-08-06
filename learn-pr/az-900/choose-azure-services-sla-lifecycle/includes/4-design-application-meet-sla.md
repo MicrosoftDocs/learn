@@ -78,14 +78,6 @@ Deploying two or more instances of an Azure VM across to or more Availability Zo
 
 To learn more about the SLA for virtual machines, visit [SLA for Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines?azure-portal=true).
 
-### Implement resiliency strategies for when failure happens
-
-*Resiliency* is the ability of a system to recover from failures and continue to function. It's not about avoiding failures, but rather responding to failures in a way that avoids downtime or data loss.
-
-A resilient system returns the application to a fully-functioning state following a failure. High availability and disaster recovery are two crucial components of resiliency.
-
-For their virtual machines, Tailwind Traders might use Azure Backup to back up their data. Azure Backup enables them to more quickly restore data in the case of an outage. We'll provide additional resources around building resilient systems at the end of this module.
-
 ### Include redundancy to increase availability
 
 To ensure a high availability, you might plan for your application to have duplicate components across several regions, known as *redundancy*, in case one fails. Conversely, to minimize costs during non-critical periods, you could run your application only in a single region. Tailwind Traders may want to consider this if there is a trend that the special order rates are much higher during certain months or seasons.
@@ -97,5 +89,3 @@ Consider how critical high availability is to your requirements before you add r
 ## Very high performance is difficult to achieve
 
 Performance targets above 99.99% are very difficult to achieve. Recall that an SLA of 99.99% means 1.01 minutes of downtime per week. It's difficult for humans to respond to failures quickly enough to meet SLA performance targets above 99.99%. Instead, your application must be able to self-diagnose and self-heal during an outage.
-
-We'll provide additional resources around designing for self healing systems at the end of this module.
