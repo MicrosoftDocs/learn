@@ -26,7 +26,7 @@ quiz:
       - content: "Azure SQL Database, single database"
         isCorrect: true
         explanation: "Azure SQL Database, single database, is currently the only deployment option that supports databases of that size, specifically with the Hyperscale service tier. If Azure SQL Managed Instance supports Hyperscale in the future, because the application doesn't currently need any instance-scoped features, Azure SQL Database might still be the right option."
-      - content: "Azure SQL Database, elastic pool"
+      - content: "Azure SQL Database, elastic database pool"
         isCorrect: false
         explanation: "62 TB is bigger than the maximum size allowed for this deployment option."
     - content: "Imagine you have Azure SQL Database with the serverless compute tier database deployed and an auto-pause delay of two hours. After two hours of no activity, what happens to your database and incurred charges?"
