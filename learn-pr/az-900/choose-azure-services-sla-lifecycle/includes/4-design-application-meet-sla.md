@@ -18,7 +18,7 @@ On Azure, the Special Orders application will require:
 
 Here's a diagram that shows the basic architecture:
 
-:::image type="content" source="../media/4-special-orders-architecture.png" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database." border="false":::
+:::image type="content" source="../media/4-special-orders-architecture.svg" alt-text="A diagram showing two virtual machines connected to Azure Load Balancer and Azure SQL Database." border="false":::
 
 ## Combine SLAs to compute the composite SLA
 
