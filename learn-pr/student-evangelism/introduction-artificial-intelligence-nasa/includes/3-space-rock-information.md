@@ -2,10 +2,10 @@ Before we learn the details of how AI can be used to classify rocks, let's start
 
 ## Types of rocks
 
-In this lesson, we'll classifying photos of rocks into one of two types: basalt and crustal.
+In this lesson, we'll classify photos of rocks into one of two types: basalt and crustal.
 
 > [!NOTE]
-> These rock types are also found on Earth, but for this lesson, we are looking onlyat the lunar variants; that is, rocks that are from the moon.
+> These rock types also are found on Earth, but for this lesson, we are looking onlyat the lunar variants; that is, rocks that are from the moon.
 
 Basalt is a dark rock that comes from ancient volcanic eruptions on the Earth's moon. When you look up at the moon and see dark spots and patches, you likely are seeing basalt rock on the moon's surface. Nearly 26% of the near side of the moon is basalt; only 2% of the far side is basalt. Most basalt in either of the moon's hemispheres is found in areas of low elevation. Basalt is especially common in the very large impact basins across the surface of the moon.
 

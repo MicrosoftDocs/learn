@@ -1,4 +1,4 @@
-Over the course of the project, we will be using the libraries listed below. They are all free and commonly used in real life artificial intelligence projects. Theses are just a few of the many libraries out there that may assist you in creating an artificial intelligence program. You can learn about other common artificial intelligence libraries and what they do [at this website](https://hackernoon.com/top-8-python-libraries-for-machine-learning-and-artificial-intelligence-y08id3031).
+Over the course of the project, we will be using the libraries listed below. They are all free and commonly used in real life artificial intelligence projects. Theses are just a few of the many libraries out there that may assist you in creating an artificial intelligence program. You can learn about other common artificial intelligence libraries and what they do [at this website](https://hackernoon.com/top-8-python-libraries-for-machine-learning-and-artificial-intelligence-y08id3031?azure-portal=true).
 
 ## Matplotlib
 
