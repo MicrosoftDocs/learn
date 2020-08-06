@@ -6,11 +6,11 @@ computing.
 
 Suppose we have a register with only two qubits. There are four possible states:
 
-$$\ket{00}, \ket{01}, \ket{10}, \ket{11}$$.
+$$\ket{00}, \ket{01}, \ket{10}, \ket{11}.$$
 
 It is possible to put two of these options into a superposition:
 
-$$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}$$.
+$$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}.$$
 
 In such a state, only two outcomes are possible: **00** and **11**, each with a
 probability of $\frac12$. There is zero probability of obtaining **01** and
@@ -20,7 +20,7 @@ measurement outcomes are correlated and the qubits are **entangled**.
 
 Similarly, we can set up a superposition state
 
-$$\ket{\psi}=\frac1{\sqrt2}\ket{01}+\frac1{\sqrt2}\ket{10}$$.
+$$\ket{\psi}=\frac1{\sqrt2}\ket{01}+\frac1{\sqrt2}\ket{10}.$$
 
 In this case, only **01** and **10** are possible outcomes. Again we would know
 by measuring one of the qubits, what the result of the other one would be. This

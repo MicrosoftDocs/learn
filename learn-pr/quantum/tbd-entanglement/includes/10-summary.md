@@ -20,7 +20,7 @@ worth remembering:
 
 If you're interested in learning more, we recommend you to explore the different
 [quantum
-katas](https://docs.microsoft.com/en-us/quantum/tutorials/intro-to-katas?azure-portal=true) on
+katas](https://docs.microsoft.com/quantum/tutorials/intro-to-katas?azure-portal=true) on
 different algorithms and quantum computing concepts.
 
 Also, be sure to explore the [Microsoft Quantum

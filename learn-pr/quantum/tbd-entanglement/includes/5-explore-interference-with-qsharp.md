@@ -15,12 +15,12 @@ $\ket{1}$, we obtain $\ket{\psi_2}$.
 
 If we then apply `H` twice to the state $\ket{0}$:
 
-$$\hat H \hat H \ket{0}= \hat H \frac1{\sqrt2}(\ket{0}+\ket{1})$$.
+$$\hat H \hat H \ket{0}= \hat H \frac1{\sqrt2}(\ket{0}+\ket{1}).$$
 
 Since $\hat H$ is a linear operator:
 
 $$=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
-\frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2})$$.
+\frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2}).$$
 
 Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as
 superposing the states $\psi_1$ and $\psi_2$. We know how to code that with Q#.

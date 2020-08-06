@@ -66,13 +66,13 @@ Qubit states follow the same mathematics as waves.
 We used the following superposition to create the quantum random number
 generator:
 
-$$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$$.
+$$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}.$$
 
 In this case, the probabilities of measuring **0** and **1** are both $\frac12$
 (remember each amplitude squared gives the probability of obtaining each state).
 The following state is probabilistically equivalent:
 
-$$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$$.
+$$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}.$$
 
 Notice the minus sign, which makes the relative phase between the $\ket{0}$ and
 $\ket{1}$ states different.
@@ -82,7 +82,7 @@ If we then put $\ket{\psi_1}$ and $\ket{\psi_2}$ in superposition:
 $$\ket{\psi}=\frac1{\sqrt2}\ket{\psi_1}+\frac1{\sqrt2}\ket{\psi_2}=
 \frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}\right)+\frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}\right)$$
 $$= \frac12 \left(\ket{0}+\ket{0}\right)+ \frac12\left(\ket{1}-\ket{1}\right)=
-\ket{0}$$.
+\ket{0}.$$
 
 The amplitudes of $\ket{0}$ had the same phase. Like waves, they constructively
 interfered doubling the probability of obtaining **0**. On the other hand, the
