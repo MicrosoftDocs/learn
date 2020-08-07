@@ -4,7 +4,7 @@ Within the umbrella of the Azure SQL platform, there are many deployment options
 
 ## SQL Server on Azure Virtual Machines
 
-SQL Server on a virtual machine is a version of SQL Server that runs in an Azure VM. It's just SQL Server, so all your SQL Server skills should directly transfer, though Azure can help automate backups and security patches. SQL Server on an Azure virtual machine is referred to as infrastructure as a service (IaaS). You're responsible for updating and patching the OS and SQL Server, apart from critical SQL Server security patches. But you have access to the full capabilities of SQL Server.
+SQL Server on a virtual machine is a version of SQL Server that runs in an Azure VM. It's just SQL Server, so all your SQL Server skills should directly transfer, though Azure can help automate backups and security patches. SQL Server on an Azure virtual machine is referred to as *infrastructure as a service (IaaS)*. You're responsible for updating and patching the OS and SQL Server, apart from critical SQL Server security patches. But you have access to the full capabilities of SQL Server.
 
 Here are some considerations for optimally deploying and managing SQL Server on virtual machines:  
 
@@ -54,21 +54,21 @@ SQL Server on a virtual machine is considered IaaS. The other deployment options
 
 ### Versionless database services
 
-*Versionless* SQL is an additional significant difference between IaaS and PaaS. Unlike IaaS, which is tied to a specific SQL Server version, like SQL Server 2019, SQL Database and SQL Managed Instance are versionless. The main "branch" of the SQL Server engine codebase powers SQL Server 2019, SQL Database, and SQL Managed Instance.  
+Versionless SQL is an additional significant difference between IaaS and PaaS. Unlike IaaS, which is tied to a specific SQL Server version, like SQL Server 2019, SQL Database and SQL Managed Instance are versionless. The main "branch" of the SQL Server engine codebase powers SQL Server 2019, SQL Database, and SQL Managed Instance.  
 
-Although SQL Server versions come out every few years, PaaS services allow Microsoft to continually update SQL databases/instances. Microsoft rolls out fixes and features as appropriate. As a consumer of the service, you don't have control over these updates, and the result of `@@VERSION` won't line up to a specific SQL Server version. But versionless SQL allows for *worry-free patching for both the underlying OS and SQL Server* and for Microsoft to give you the latest bits.  
+Although SQL Server versions come out every few years, PaaS services allow Microsoft to continually update SQL databases/instances. Microsoft rolls out fixes and features as appropriate. As a consumer of the service, you don't have control over these updates, and the result of `@@VERSION` won't line up to a specific SQL Server version. But versionless SQL allows for worry-free patching for both the underlying OS and SQL Server and for Microsoft to give you the latest bits.  
 
-As new features are developed, some customers can be granted access to specific features before they're publicly available through private previews. These new features then become available in public previews. Public previews allow everyone to access new features, but there's typically limited support and often discount pricing. 
+As new features are developed, some customers are granted access to specific features before they're publicly available through private previews. These new features then become available in public previews. Public previews allow everyone to access new features, but there's typically limited support and often discount pricing. 
 
 ## SQL Managed Instance
 
-SQL Managed Instance is a PaaS deployment option of Azure SQL. It gives you an instance of SQL Server but removes much of the overhead of managing a virtual machine. Most of the features available in SQL Server are available in SQL Managed Instance. This option is ideal for customers who want to use instance-scoped features and want to move to Azure without rearchitecting their applications. (Instance-scoped features are features that are tied to an instance of SQL Server, as opposed to features that are tied to a database in an instance of SQL Server.)  
+SQL Managed Instance is a PaaS deployment option of Azure SQL. It gives you an instance of SQL Server but removes much of the overhead of managing a virtual machine. Most of the features available in SQL Server are available in SQL Managed Instance. This option is ideal for customers who want to use instance-scoped features and want to move to Azure without rearchitecting their applications. (*Instance-scoped* features are features that are tied to an instance of SQL Server, as opposed to features that are tied to a database in an instance of SQL Server.)  
 
 SQL Managed Instance instance-scoped features include SQL Server Agent, Service Broker, common language runtime (CLR), Database Mail, linked servers, and Machine Learning Services Preview. SQL Managed Instance allows you to access instance-scoped features. But you don't have to worry about, nor do you have access to, the OS or the infrastructure underneath.  
 
 :::image type="content" source="../media/3-sql-managed-instance.png" alt-text="Diagram that describes when to choose Azure SQL Managed Instance." border="false":::
 
-Let's look at another industry scenario, this one from Komatsu. Komatsu is a manufacturing company that produces and sells heavy equipment for construction. The company had multiple mainframe applications for different types of data. Komatsu wanted to consolidate these applications to get an overall view. Additionally, Komatsu wanted a way to reduce overhead. Because Komatsu uses a large surface area of SQL Server features, the IT decision makers chose to move to Azure SQL Managed Instance. They were able to move about 1.5 terabytes of data smoothly and get benefits like automatic patching and version updates, automated backups, high availability, and reduced management overhead. After migrating, Komatsu reported about 49% cost reduction and about 25-30% performance gains.  
+Let's look at another industry scenario, this one from Komatsu. Komatsu is a manufacturing company that produces and sells heavy equipment for construction. The company had multiple mainframe applications for different types of data. Komatsu wanted to consolidate these applications to get an overall view. Additionally, Komatsu wanted a way to reduce overhead. Because the company uses a large surface area of SQL Server features, the IT decision makers chose to move to Azure SQL Managed Instance. They were able to move about 1.5 terabytes of data smoothly and get benefits like automatic patching and version updates, automated backups, high availability, and reduced management overhead. After migrating, Komatsu reported about 49% cost reduction and performance gains of about 25-30%.  
 
 ## SQL Database
 
@@ -76,7 +76,7 @@ Let's look at another industry scenario, this one from Komatsu. Komatsu is a man
 
 SQL Database is a PaaS deployment option of Azure SQL that abstracts both the OS and the SQL Server instance away from users. This deployment option allows you to just get a database and start developing applications. SQL Database is also the only deployment option that supports scenarios that require unlimited database storage (hyperscale) and autoscaling for unpredictable workloads (serverless). SQL Database has the industry's highest availability SLA. It provides other intelligent capabilities related to monitoring and performance, partly because Microsoft manages instances.
 
-AccuWeather provides a great example of using SQL Database. AccuWeather has been analyzing and predicting the weather for more than 55 years. The company wanted access Azure for its big data, machine learning, and AI capabilities. AccuWeather wants to focus on building new models and applications, not on managing databases. AccuWeather chose SQL Database to use with other services, like Azure Data Factory and Azure Machine Learning, to quickly and easily deploy new internal applications to make sales and customer predictions.  
+AccuWeather provides a great example of using SQL Database. AccuWeather has been analyzing and predicting the weather for more than 55 years. The company wanted access Azure for its big data, machine learning, and AI capabilities. AccuWeather wants to focus on building new models and applications, not on managing databases. The company chose SQL Database to use with other services, like Azure Data Factory and Azure Machine Learning, to quickly and easily deploy new internal applications to make sales and customer predictions.  
 
 ## Elastic database pool
 
@@ -86,7 +86,7 @@ You've now learned about the three main deployment options within Azure SQL: vir
 
 **SQL Managed Instance pools** allow you to host multiple managed instances and share resources. You can pre-provision compute resources. Doing so can reduce overall deployment time to make migrations easier. You can also host smaller managed instances in an instance pool than you can in a single managed instance. This offer is currently in public preview.
 
-Paychex is a good example of a customer using SQL Database elastic pools. Paychex is a human capital management firm that serves more than 650,000 businesses across the US and Europe. Paychex needed a way to separately manage the time and pay management for each of its customers and cut costs. The company chose SQL Database elastic pools, which allowed it to simplify management and enable resource sharing between separate databases to lower costs.  
+Paychex is a good example of a company that uses SQL Database elastic database pools. Paychex is a human capital management firm that serves more than 650,000 businesses across the US and Europe. Paychex needed a way to separately manage the time and pay management for each of its customers and cut costs. The company chose SQL Database elastic database pools, which allowed it to simplify management and enable resource sharing between separate databases to lower costs.  
 
 ## Azure SQL deployment options
 

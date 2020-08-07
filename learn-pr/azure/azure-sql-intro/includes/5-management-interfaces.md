@@ -14,7 +14,7 @@ SQL Server Management Studio (SSMS) is the most popular tool for SQL Server in t
 
 ### Azure Data Studio
 
-Azure Data Studio is an open-source, cross-platform tool for querying and working with various Azure data sources, including SQL Server and Azure SQL. Azure Data Studio supports a powerful concept called *notebooks* that you'll use in some of the exercises throughout this learning path. Notebooks allow you to mix runnable code cells and formatted text in one place. You can optionally save the results for future reference or analysis.
+Azure Data Studio is an open-source, cross-platform tool for querying and working with various Azure data sources, including SQL Server and Azure SQL. Azure Data Studio supports a powerful tool called *notebooks* that you'll use in some of the exercises throughout this learning path. Notebooks allow you to mix runnable code cells and formatted text in one place. You can optionally save the results for future reference or analysis.
 
 :::image type="content" source="../media/5-azure-data-studio.png" alt-text="Screenshot that shows Azure Data Studio.":::
 
