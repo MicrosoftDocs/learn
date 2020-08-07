@@ -7,7 +7,7 @@ Start by going to the [Anaconda Download page](https://www.anaconda.com/products
 > [!NOTE]
 > The following image depicts a user using Windows 10 with the Microsoft Edge browser, but you should choose the box that represents your system.
 
-:::image type="content" source="../media/anaconda.png" alt-text="How to download VSCode":::
+:::image type="content" source="../media/anaconda.png" alt-text="Screenshot of the Anaconda download webpage and an installation in progress on the computer.":::
 
 Next, walk through the steps to install Anaconda on your computer. You will be asked to read and agree to some license agreements and then wait for Anaconda to finish installing. After it is complete, you should have an application on your computer called "anaconda prompt". On Mac, you will not have this application because Anaconda is installed in your terminal.
 
@@ -31,12 +31,12 @@ To install torchvision, in the Anaconda prompt, enter: `conda install -c pytorch
 
 You'll be prompted to install the packages. Enter Y, and then press Enter.
 
-## Create a new folder and a Jupyter Notebooks file
+## Create a new folder and a Jupyter Notebook file
 
 You now have an environment built that can take you through the rest of the program. The last thing you need to do it create a folder and the files that we're going to be coding in. To do this, choose an easily accessible location on your computer and make a folder. For example, you might name it `ClassifyingSpaceRocks`.
 
 Next, open Visual Studio code and open the new folder that you just created. Create a new Jupyter Notebook file and name it something like `ClassifySpaceRockProgram`. Lastly, at the top right and bottom left of the file, change the environment to be the new environment you just created.
 
-:::image type="content" source="../media/set-environment.png" alt-text="How to download VSCode":::
+:::image type="content" source="../media/set-environment.png" alt-text="Screenshot of Visual Studio Code and setting the Anaconda environment.":::
 
 Congratulations, you just installed all of the libraries you need to make an AI program and told Visual Studio code where to find them.

@@ -10,4 +10,4 @@ In the following photo, you can see how we slide a filter over an image to extra
 
 We'll use 32 filters for our rock classification example, but many more filters are available.
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/filters.gif" loc-scope="Azure":::
+:::image type="content" source="../media/filters.gif" alt-text="Dynamic diagram that demonstrates the application of a filter."  loc-scope="Azure":::

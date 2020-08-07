@@ -1,25 +1,25 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.introduction-artificial-intelligence-nasa
 metadata:
-  title: Prepare to research space rocks with AI
-  description: Learn about artificial intelligence with a NASA context
+  title: Prepare to research space rocks by using artificial intelligence
+  description: Learn about the scientific research of space rocks and how artificial intelligence can enhance research.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Prepare to Research Space Rocks with AI
-summary: Learn about artificial intelligence with a NASA context
+title: Prepare to research space rocks by using artificial intelligence
+summary: Learn about the scientific research of space rocks and how artificial intelligence can enhance research.
 abstract: |
  In this module, you will:
  - Get an introduction to artificial intelligence
- - See how humans classify objects
- - See how machines classify objects
+ - Discover how humans classify objects
+ - Discover how machines classify objects
  - Learn about artificial intelligence libraries
  - Install artificial intelligence libraries
 prerequisites: |
  - Ability to write and run introductory Python programs
- - Visual Studio Code, Python Extension, and Jupyter Notebooks installed
+ - Visual Studio Code, a Python extension, and Jupyter Notebook installed
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner

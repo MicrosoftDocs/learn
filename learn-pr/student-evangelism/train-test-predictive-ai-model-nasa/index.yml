@@ -16,7 +16,7 @@ abstract: |
  - Test the model by using it to classify random photos of space rocks
 prerequisites: |
  - Ability to write and run introductory Python programs
- - Visual Studio Code, Python Extension, and Jupyter Notebooks installed
+ - Visual Studio Code, a Python extension, and Jupyter Notebook installed
  - Artificial intelligence libraries installed
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:

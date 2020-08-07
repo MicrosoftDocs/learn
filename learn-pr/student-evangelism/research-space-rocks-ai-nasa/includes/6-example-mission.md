@@ -8,4 +8,4 @@ The OSIRIS-Rex mission consists of launching a rocket to orbit an asteroid named
 
 This mission is unique compared to the other types of missions that we have talked about because the OSIRIS-Rex is not actually going to touch down onto the asteroid, rather take very high quality pictures while in orbit. These pictures will get sent to rock experts on Earth who will analyze features of them that could give us information about our solar system.
 
-[Check out their website](https://www.asteroidmission.org/galleries/?azure-portal=true) to learn more and see some amazing pictures captures from the spacecraft
+[Visit the OSIRIS-Rex website](https://www.asteroidmission.org/galleries/?azure-portal=true) to learn more and see some amazing pictures captures from the spacecraft.

@@ -1,24 +1,24 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.analyze-moon-rock-images-ai-nasa
 metadata:
-  title: Analyze images of moon rocks using AI
-  description: Read in that data that you will use to create an artificial intelligence program and modify it.
+  title: Analyze images of moon rocks by using artificial intelligence
+  description: Identify data to add to an artificial intelligence (AI) module that classifies space rocks in random photos.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Analyze images of moon rocks using AI
-summary: Read in that data that you will use to create an artificial intelligence program and modify it.
+title: Analyze images of moon rocks by using artificial intelligence
+summary: Identify data to add to an artificial intelligence (AI) module that classifies space rocks in random photos.
 abstract: |
  In this module, you will:
- - Import artificial libraries
+ - Import artificial intelligence libraries
  - Learn how to import data
  - Learn how to clean and separate data
  - Show the data you imported
 prerequisites: |
  - Ability to write and run introductory Python programs
- - Visual Studio Code, Python Extension, and Jupyter Notebooks installed
+ - Visual Studio Code, a Python extension, and Jupyter Notebook installed
  - Artificial intelligence libraries installed
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:

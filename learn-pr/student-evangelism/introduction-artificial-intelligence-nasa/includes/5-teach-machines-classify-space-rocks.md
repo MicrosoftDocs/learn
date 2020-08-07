@@ -26,7 +26,7 @@ Make associations between the image features and rock types. This is where compu
 
 ### Step 3
 
-Predict the rock type for a new rock
+Predict the rock type for a new rock:
 
 1. Given a new rock image we extract features out of it
 2. We use the associations we have learned to decide what type of rock it is

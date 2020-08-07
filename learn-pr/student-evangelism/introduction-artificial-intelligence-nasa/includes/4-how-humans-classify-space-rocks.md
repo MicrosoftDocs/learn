@@ -20,7 +20,7 @@ Our brains subconsciously do all of these visual searches and categorization wit
 
 The following image lists some features that we can extract from a photo of a motorcycle:
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/features.png" loc-scope="Azure":::
+:::image type="content" source="../media/features.png" alt-text="Figure of a motorcycle, the words Feature extraction algorithm, and nine boxes that show parts of a motorcycle under the headings Features." loc-scope="Azure":::
 
 ### Step 2
 
@@ -28,10 +28,10 @@ Next, we try to find the relationships between the features and the type of rock
 
 In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. For example, we determine that lighter rocks are usually crustals and that the texture of basalt rocks are more dense. These associations, and the links between them, are demonstrated in the following image:
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/links.png" loc-scope="Azure":::
+:::image type="content" source="../media/links.png" alt-text="Dynamic diagram that shows four sets of nine black dots, with colored lines being drawn between the dots in each set." loc-scope="Azure":::
 
 ### Step 3
 
 Last, we try to use these relationships to determine how to classify a new item. Given a new rock image to consider, our brains extract its characteristics. Then, our brain uses the associations we already made to determine what type of rock it is.
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/association-process.png" loc-scope="Azure":::
+:::image type="content" source="../media/association-process.png" alt-text="Dynamic diagaram that demonstrates the progression from pixel numbers to feature extraction to associations." loc-scope="Azure":::

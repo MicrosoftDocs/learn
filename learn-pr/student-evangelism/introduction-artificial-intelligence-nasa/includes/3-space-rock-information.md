@@ -9,21 +9,21 @@ In this lesson, we'll classify photos of rocks into one of two types: basalt and
 
 Basalt is a dark rock that comes from ancient volcanic eruptions on the Earth's moon. When you look up at the moon and see dark spots and patches, you likely are seeing basalt rock on the moon's surface. Nearly 26% of the near side of the moon is basalt; only 2% of the far side is basalt. Most basalt in either of the moon's hemispheres is found in areas of low elevation. Basalt is especially common in the very large impact basins across the surface of the moon.
 
-:::image type="content" source="../media/basalt-cristobalite-1.png" alt-text="Image alt text." loc-scope="Azure":::
+:::image type="content" source="../media/basalt-cristobalite-1.png" alt-text="Photo of a piece of basalt on a flat surface." loc-scope="Azure":::
 
-:::image type="content" source="../media/basalt-cristobalite-2.png" alt-text="Image alt text." loc-scope="Azure":::
+:::image type="content" source="../media/basalt-cristobalite-2.png" alt-text="Photo of two pieces of basalt on a flat surface." loc-scope="Azure":::
 
 Crustal is a lighter rock that forms after a partial melt of mantle rocks. Crustal is less common than basalt.
 
-:::image type="content" source="../media/crustal-anorthosite-1.png" alt-text="Image alt text." loc-scope="Azure":::
+:::image type="content" source="../media/crustal-anorthosite-1.png" alt-text="Photo of a piece of crustal rock on a transparent background." loc-scope="Azure":::
 
-:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="Image alt text." loc-scope="Azure":::
+:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="Photo of a piece of crustal rock on a flat surface, with a ruler and a numerical measurement." loc-scope="Azure":::
 
 Look carefully at the sample images for each rock type to learn how to classify a new rock that just arrived from the moon.
 
 What type of rock do you think this newly arrived rock is?
 
-:::image type="content" source="../media/basalt-cristobalite-3.png" alt-text="Image alt text." loc-scope="Azure":::
+:::image type="content" source="../media/basalt-cristobalite-3.png" alt-text="Photo of a piece of basalt on a flat surface with a ruler, a numerical measurement, and a cube that says T-1." loc-scope="Azure":::
 
 The new rock is a basalt rock. Did you get it right?
 

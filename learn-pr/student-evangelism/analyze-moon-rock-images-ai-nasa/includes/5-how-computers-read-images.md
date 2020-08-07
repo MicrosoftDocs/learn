@@ -4,8 +4,8 @@ If you know something about computers, you know that computers read things in bi
 
 An image will look like the following example after a computer transforms them into numbers:
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/lincoln.png" loc-scope="Azure":::
+:::image type="content" alt-text="Photo of the head of Abraham Lincoln." source="../media/lincoln.png" loc-scope="Azure":::
 
-:::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/pixels.png" loc-scope="Azure":::
+:::image type="content" alt-text="Three images that show pixelation, pixelation with a number overlay, and only numbers that represent a digital photo of Abraham Lincoln." source="../media/pixels.png" loc-scope="Azure":::
 
 The image is broken down into pixels, and each pixel has a specific color that is identified by a code. After a computer breaks down an image into these codes, it can read and decipher the image.

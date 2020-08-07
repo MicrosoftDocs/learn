@@ -19,40 +19,34 @@ quiz:
     choices:
     - content: "A neural network is a computer system that's modeled on the human brain and nervous system."
       isCorrect: true
-      explanation: "Correct! This is the definition of a neural network."
-    - content: "A neural network means giving a computer a brain of its own."
+      explanation: "Correct! A neural network is a computer system that's modeled on the human brain and nervous system."
+    - content: "A neural network is a network of linked computing servers."
       isCorrect: false
-      explanation: "Incorrect. A neural network is just modeled on a brain; it's not an actual brain."
-    - content: "A neural network is software that we install on a computer."
+      explanation: "Incorrect. A neural network isn't a network of servers."
+    - content: "A neural network is software that you install on a computer."
       isCorrect: false
       explanation: "Incorrect. A neural network isn't software."      
-  - content: "What does accuracy in an AI model mean?"
+  - content: "What does accuracy in an AI model refer to?"
     choices:
-    - content: "The percentage of time the model made an incorrect prediction."
+    - content: "Accuracy in an AI model refers to the percentage of time a model made an incorrect prediction."
       isCorrect: false
-      explanation: "Incorrect. This answer doesn't refer to measuring accuracy."
-    - content: "The percentage of time the model made a correct prediction."
+      explanation: "Incorrect. This answer doesn't address the measurement of accuracy."
+    - content: "Accuracy in an AI model refers to the percentage of time the model made a correct prediction."
       isCorrect: true 
-      explanation: "Correct! Accuracy in this context means how often the model was correct."
-    - content: "The number of images you need to train the model for the model's accuracy to be perfect."
+      explanation: "Correct! Accuracy in this context refers to how often the model was correct in its predictions."
+    - content: "Accuracy in an AI model refers to the number of images you need to train the model for the model to be perfect."
       isCorrect: false
-      explanation: "Incorrect. The accuracy rate of an AI model doesn't include the details of the testing itself."
-    - content: "The percentage of time the AI model will work."
-      isCorrect: false
-      explanation: "Incorrect. The AI model should work every time you run it."
+      explanation: "Incorrect. The accuracy of an AI model doesn't refer to the details of the testing itself, only to the success rate."
   - content: "How can you increase the accuracy of an AI model?"
     choices:
-    - content: "Train the model three times instead of five times."
+    - content: "You can increase the accuracy of an AI model by training the model an additional five times."
       isCorrect: false
       explanation: "Incorrect. Training the model more times won't necessarily increase the accuracy of the model."
-    - content: "Decrease the number of epochs."
+    - content: "You can increase the accuracy of an AI model by decreasing the number of epochs."
       isCorrect: false
       explanation: "Incorrect. Decreasing the number of epochs during training won't necessarily increase the accuracy of the model."
-    - content: "Add more images and increase the epoch number."
+    - content: "You can increase the accuracy of an AI model by adding more images and increasing the epoch number."
       isCorrect: true
       explanation: "Correct! You can increase the accuracy of an AI model by adding more images and epochs when you train the model."
-    - content: "Decrease the number of images."
-      isCorrect: false
-      explanation: "Incorrect. Changing only the number of images during training won't necessarily increase the accuracy of the model."
 
 
