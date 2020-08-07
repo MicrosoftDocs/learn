@@ -10,7 +10,7 @@ There are two fundamental approaches to resiliency: code and infrastructure. Eac
 
 ### Code-based resiliency
 
-To implement code-based resiliency, this module uses [Polly](https://github.com/App-vNext/Polly)&mdash;a .NET library for resilience and transient failure handling. It's used to build failure-handling code with a fluent, easy-to-understand syntax in a thread-safe manner. There are several [resilience policies](https://github.com/App-vNext/Polly#resilience-policies) that define failure-handling behavior. In this module, you'll apply the Retry and Circuit Breaker policies to HTTP client operations.
+To implement code-based resiliency, this module uses Polly&mdash;a .NET library for resilience and transient failure handling. It's used to build failure-handling code with a fluent, easy-to-understand syntax in a thread-safe manner. There are several resilience policies that define failure-handling behavior. In this module, you'll apply the Retry and Circuit Breaker policies to HTTP client operations.
 
 Resiliency with Polly is defined in code, but startup-time configuration for some parameters is supported.
 
@@ -26,17 +26,13 @@ A *Retry* policy is exactly what the name implies. The request is retried after 
 
 The Retry policy always has a maximum retry count. Once that number of retries has been satisfied, the policy gives up and throws an exception. The user experience for this policy is usually that the app takes longer to complete some operations. The app may also take some time before informing the user that it couldn't complete the operation.
 
-For an in-depth explanation of the Retry policy, see [Polly's wiki page on Retry policy](https://github.com/App-vNext/Polly/wiki/Retry).
-
 #### Circuit Breaker policy
 
 A *Circuit Breaker* policy gives the target service a break after a repeated number of failures. Such a state might indicate that the service is experiencing a serious problem and is temporarily unable to respond. After a defined number of consecutive failures, the connection attempts are paused temporarily, "opening" the circuit. During this wait, additional operations on the target service fail immediately without "bothering" the service. After the wait time has elapsed, the operation is attempted again. If the operation succeeds, the circuit is "closed" and the system goes back to normal.
 
-For an in-depth explanation of the Circuit Breaker policy, see [Polly's wiki page on Circuit Breaker policy](https://github.com/App-vNext/Polly/wiki/Circuit-Breaker).
-
 ### Infrastructure-based resiliency
 
-To implement infrastructure-based resiliency, you can use a *[service mesh](https://servicemesh.io)*. Aside from resiliency without changing code, a service mesh provides traffic management, policy, security, strong identity, and observability. Your app is decoupled from these operational capabilities, which are moved to the infrastructure layer. Architecturally speaking, a service mesh is composed of two components: a control plane and a data plane:
+To implement infrastructure-based resiliency, you can use a *service mesh*. Aside from resiliency without changing code, a service mesh provides traffic management, policy, security, strong identity, and observability. Your app is decoupled from these operational capabilities, which are moved to the infrastructure layer. Architecturally speaking, a service mesh is composed of two components: a control plane and a data plane.
 
 :::image type="content" source="../media/3-review-resiliency-concepts/service-mesh-architecture.png" alt-text="a typical service mesh architecture" border="true" lightbox="../media/3-review-resiliency-concepts/service-mesh-architecture.png":::
 
@@ -54,7 +50,7 @@ The *data plane* component consists of proxies that are transparently injected a
 * Apply policies to traffic.
 * Collect metrics and tracing information.
 
-Some popular service mesh options for Kubernetes clusters include [Linkerd](https://linkerd.io/2/overview), [Istio](https://istio.io), and [Consul](https://www.consul.io/intro). This module focuses on Linkerd. The following diagram shows interactions between components within the data and control planes:
+Some popular service mesh options for Kubernetes clusters include Linkerd, Istio, and Consul. This module focuses on Linkerd. The following diagram shows interactions between components within the data and control planes:
 
 :::image type="content" source="../media/3-review-resiliency-concepts/linkerd-architecture.png" alt-text="Linkerd architecture" border="true" lightbox="../media/3-review-resiliency-concepts/linkerd-architecture.png":::
 
