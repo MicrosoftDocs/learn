@@ -40,7 +40,7 @@ Mara creates the development database and populates it with test data. She expor
 1. Type **Storage accounts** in the *Search the Marketplace* box.
 1. You see this. Select **Create**.
 
-    :::image type="content" source="media/3-create-storage-account.png" alt-text="A screenshot of the storage account page highlighting the create button.":::
+    :::image type="content" source="../media/3-create-storage-account.png" alt-text="A screenshot of the storage account page highlighting the create button.":::
 
 1. On the **Basics** tab, fill in these fields:
 
@@ -57,7 +57,7 @@ Mara creates the development database and populates it with test data. She expor
 1. Wait for the storage account to be created and then select **Go to resource**.
 1. Select **containers**.
 
-    :::image type="content" source="media/3-select-containers.png" alt-text="A screenshot of the storage account page with containers highlighted.":::
+    :::image type="content" source="../media/3-select-containers.png" alt-text="A screenshot of the storage account page with containers highlighted.":::
 
 1. On the **Containers** page, select **+ Container**.
 1. In the **Name** field, enter *bacpac* and select **Create**.
