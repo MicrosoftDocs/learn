@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.recover-windows-iaas-vms
+title: Recover windows IaaS VMs
+metadata:
+  title: Recover windows IaaS VMs
+  description: "Recover windows IaaS VMs"
+  ms.date: 08/09/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-recover-windows-iaas-virtual-machines.md)]
