@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.describe-vm-scale-sets
+title: Describe VM scale sets
+metadata:
+  title: Describe VM scale sets
+  description: "Describe VM scale sets"
+  ms.date: 08/09/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-describe-virtual-machine-scale-sets.md)]
