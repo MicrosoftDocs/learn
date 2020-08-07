@@ -8,11 +8,9 @@ For the next 5, you'd be sure you could determine what they are. Maybe some blac
 
 Next, you're asked to collect only raspberries in a new field that contains the same five types of berries. You're pretty sure you know what raspberries look like:
 
-:::image type="complex" source="../media/raspberry.png" alt-text="Photo of a raspberry." loc-scope="azure":::
+:::image type="content" source="../media/raspberry.png" alt-text="Photo of a raspberry." loc-scope="azure":::
 
 *Picture is shared by [Pro2 on Wikipedia](https://commons.wikimedia.org/wiki/File:Raspberry.jpg?azure-portal=true)*
-
-:::image-end:::
 
 You complete this task and collect 10 raspberries successfully!
 
@@ -22,11 +20,9 @@ Then you had a test: given any input, identify the type of berry and only select
 
 *But then*, a new berry bush is added without you knowing. You go out to find more raspberries, but you also collect some of these berries:
 
-:::image type="complex" source="../media/thimbleberry.png" alt-text="Photo of a man's hand holding a thimbleberry." loc-scope="azure":::
+:::image type="content" source="../media/thimbleberry.png" alt-text="Photo of a man's hand holding a thimbleberry." loc-scope="azure":::
 
 *Picture is shared by [Jesse Taylor on Wikipedia](https://commons.wikimedia.org/wiki/File:Thimbleberry_(Rubus_parviflorus)_--_fruits.JPG?azure-portal=true)*
-
-:::image-end:::
 
 These berries look similar to raspberries. They also both look different from the other four types of berries. But they are *not* the same type of berry. The one you just brought back was a thimbleberry. (Dun dun duuuuuuuuuuun *cue dramatic music*) <!-- Sarah, this reference might not localize well -->
 

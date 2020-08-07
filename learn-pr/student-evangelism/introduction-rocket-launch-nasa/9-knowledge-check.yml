@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 4
 content: |
-  Choose the best response for each of the questions below. Then select **Check your answers**.
+  Answer the following questions to see what you've learned.  
 quiz:
   questions:
   - content: "Computers will always be more accurate than humans at data analysis."

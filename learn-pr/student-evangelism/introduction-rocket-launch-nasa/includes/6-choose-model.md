@@ -16,7 +16,7 @@ For rocket launches, you might not have access to some highly correlated data li
 
 A great resource for determining what kind of machine learning algorithm will be useful for your particular analysis is the [Algorithm cheat sheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?azure-portal=true).
 
-:::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Algorithm cheat sheet"  loc-scope="Azure":::
+:::image type="content" source="../media/algorithm-cheat-sheet.png" alt-text="Algorithm cheat sheet"  loc-scope="azure":::
 
 To revisit your central question:  *Will this day, with these weather conditions, yield a successful launch?*
 
