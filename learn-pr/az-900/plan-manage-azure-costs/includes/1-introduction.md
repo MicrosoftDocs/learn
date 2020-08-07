@@ -6,7 +6,7 @@ In this module, you'll learn about the major factors that influence the cost of 
 
 ## How will Tailwind Traders manage cloud costs?
 
-Tailwind Traders is planning their migration to the cloud. They've ran a few successful proof-of-concept projects and want to better understand how to understand and manage their costs before they move their workloads to Azure.
+Tailwind Traders is planning their migration to the cloud. They've run a few successful proof-of-concept projects and want to better understand how to understand and manage their costs before they move their workloads to Azure.
 
 Running in the datacenter requires you to maintain a facility as well as purchase, power, cool, and maintain your servers. Running in the cloud presents new ways to think about your IT expenses.
 
