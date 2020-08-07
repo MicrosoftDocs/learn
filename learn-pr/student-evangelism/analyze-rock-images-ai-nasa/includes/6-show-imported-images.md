@@ -1,4 +1,4 @@
-Now that we've loaded the images into the computer, let's look at a few of them. We'll give them labels that indicate what type of rock they are.
+Now that we've loaded the images into the computer, let's look at a few of them. We'll give them labels that indicate what type of rock the photos contain.
 
 The following code block reads images and then assigns each image with a corresponding rock type. The code looks long, but that's because it needs to match each rock image with the type of rock it is, based on the folder it is in.
 

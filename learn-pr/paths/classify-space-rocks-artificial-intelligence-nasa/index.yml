@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.classify-moon-rocks-azure-cognitive-services-nasa
+uid: learn.classify-space-rocks-artificial-intelligence-nasa
 metadata:
   title: Classify space rocks by using Python and artificial intelligence
   description: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
@@ -23,7 +23,7 @@ products:
 modules:
 - learn.student-evangelism.research-space-rocks-ai-nasa
 - learn.student-evangelism.introduction-artificial-intelligence-nasa
-- learn.student-evangelism.analyze-moon-rock-images-ai-nasa
+- learn.student-evangelism.analyze-rock-images-ai-nasa
 - learn.student-evangelism.train-test-predictive-ai-model-nasa
 trophy:
   uid: https://docs.microsoft.com/media/learn/module.svg
