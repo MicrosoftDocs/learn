@@ -12,7 +12,7 @@ In this exercise, you'll see how to deploy SQL Server on SUSE, install command-l
     export PASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name SUSESQLServer \
-        --image "SUSE:SLES:15:latest" \
+        --image "SUSE:openSUSE-Leap:15-2-gen2:latest" \
         --size Standard_D2s_v3 \
         --admin-username suseadmin \
         --admin-password $PASSWORD \
@@ -50,7 +50,7 @@ Now you'll install and configure SQL Server. The first task is installation:
 1. To download the Microsoft SLES repository configuration file, run this command:
 
     ```bash
-    sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12/mssql-server-2019.repo
+    sudo zypper addrepo -fc https://packages.microsoft.com/config/sles/12s/mssql-server-2019.repo
     ```
 
 1. If you're asked for a password, use the random password, and then press Enter.
