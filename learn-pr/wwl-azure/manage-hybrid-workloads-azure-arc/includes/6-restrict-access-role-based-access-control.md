@@ -25,7 +25,7 @@ To manage access using RBAC for on-premises resources, use the following procedu
 
 
 
-![A screenshot of the Access control (IAM) page in the Azure portal, for the selected VM, ContosoVM1. The details pane has five tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.](../media/m14-access-control1.png)
+![A screenshot of the Access control (IAM) page in the Azure portal, for the selected VM, ContosoVM1. The details pane has five tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.](../media/m14-access-control-1.png)
 
 The following table describes the five available tabs on the Access control (IAM) page, and the actions that you can perform on them.
 
