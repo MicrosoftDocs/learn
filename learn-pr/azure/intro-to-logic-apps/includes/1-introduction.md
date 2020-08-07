@@ -13,7 +13,7 @@ Here, you'll see how Logic Apps automates these types of business processes. You
 In this module, you will:
 
 - Evaluate whether Logic Apps is appropriate to automate your business processes
-- Describe how the components of a Logic App work together to automate a business process
+- Describe how the components of a logic app work together to automate a business process
 
 ## Prerequisites
 
