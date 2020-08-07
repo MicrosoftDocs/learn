@@ -61,7 +61,7 @@ The way you use resources, your subscription type, and pricing from third-party 
 
 ### Resource usage
 
-In Azure, you're always charged based on what you use. Let's look at how this applies to a deallocating a virtual machine (VM).
+In Azure, you're always charged based on what you use. Let's look at how this applies to deallocating a virtual machine (VM).
 
 In Azure, you can delete or deallocate a VM. Deleting a VM means that you no longer need it; the VM is removed from your subscription and then it's prepared for another customer.
 
@@ -77,7 +77,7 @@ For example, an Azure Free Trial subscription provides access to a number of Azu
 
 ### Azure Marketplace
 
-You can also purchase Azure-based solutions and services from third-party vendors through the Azure Marketplace. Examples include managed network firewall appliances or connectors to a third-party backup services. Billing structures are set by the vendor.
+You can also purchase Azure-based solutions and services from third-party vendors through the Azure Marketplace. Examples include managed network firewall appliances or connectors to third-party backup services. Billing structures are set by the vendor.
 
 ## Does location or network traffic affect cost?
 
