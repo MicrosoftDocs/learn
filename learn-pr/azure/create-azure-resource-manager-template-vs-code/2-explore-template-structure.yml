@@ -2,8 +2,8 @@
 uid: learn.azure.create-resource-manager-template-vs-code.2-explore-template-structure
 title: Explore Azure Resource Manager template structure
 metadata:
-  title: Explore Azure Resource Manager template
-  description: Understand Azure Resource Manager template structure, how to write them, and how to deploy them to Azure.
+  title: Explore Azure Resource Manager template structure
+  description: Understand Azure Resource Manager template structure and learn how to write templates and deploy them to Azure.
   ms.date: 07/08/2020
   author: jamcneil
   ms.author: jumcn
