@@ -1,6 +1,6 @@
-Lasty, it's important to understand that ethics play a role in every part of the data science lifecycle. From determining the question you want to answer, to the availability of your model, you should always be thinking about the ethics of your project.
+Lastly, it's important to understand that ethics play a role in every part of the data science lifecycle. You should consider the ethics of your decisions in each step. It begins with your central question and progresses through to the availability of your model.
 
-In the berry example from the previous unit, you learned about a big piece of missing data from the training and testing datasets: The presence of thimbleberries. While a particular type of berry might seem trivial, this phenomenon represents a much larger problem. In recent studies, huge populations of people have been left out of initial data collection, and the absence of this data can skew results and be life threatening. For example, did you know that the symptoms of heart attacks in men and women are often very different?
+In the berry example from the previous unit, you discovered that a significant piece of  data was missing from the training and testing datasets. You didn't know about thimbleberries. While a particular type of berry might seem trivial, this phenomenon represents a much larger problem. In recent studies, huge populations of people were omitted from initial data collection. The absence of this data can skew results and even be life-threatening. For example, did you know that men and women exhibit vastly different heart attack symptoms?
 
 ## Handling ethics around rocket launch safety predictions
 
