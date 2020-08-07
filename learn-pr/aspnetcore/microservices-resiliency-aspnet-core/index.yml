@@ -9,7 +9,7 @@ metadata:
   ms.prod: learning-aspnetcore
   ms.topic: interactive-tutorial
 title: Implement resiliency in a cloud-native ASP.NET Core microservice
-summary: Learn how to make your app fault-tolerant with minimal impact on the user.
+summary: Learn how to make your cloud-native ASP.NET Core microservices app fault-tolerant with minimal impact on the user.
 abstract: |
   In this module, you will:
   - Understand foundational resiliency concepts.
