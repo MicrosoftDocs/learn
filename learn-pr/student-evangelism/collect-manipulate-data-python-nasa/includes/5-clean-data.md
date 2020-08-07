@@ -51,8 +51,8 @@ You can see that `Hist Ave Max Wind Speed`, `Hist Ave Visibility`, and `Hist Ave
 It makes sense that `Wind Speed at Launch Time`, `Temp at Launch Time`, `Launched`, `Crewed or Uncrewed`, `Time`, and `Name` have only 60 values, because the data includes only 60 launches. The rest are the days before and after the launch. 
 
 Here are a few ways to clean the data: 
-- The rows that don't have a `Y` in the `Launched` column did not have a rocket launch, so make those missing values `N`.
-- For rows missing information on whether the rocket was crewed or uncrewed, assume uncrewed. Uncrewed is more likely, because there were fewer crewed missions.
+- The rows that don't have `Y` in the `Launched` column did not have a rocket launch, so make those missing values `N`.
+- For rows missing information on whether the rocket was crewed or uncrewed, assume uncrewed. Uncrewed is more likely because there were fewer crewed missions.
 - For missing wind direction, mark it as `unknown`.
 - For missing condition data, assume it was a typical day and use `fair`.
 - For any other data, use a value of `0`.
@@ -76,7 +76,7 @@ Try running `launch_data.info()` again to see the changes that you just made to 
 
 ## Data manipulation
 
-Because computations are best suited for numerical inputs, convert all text into numbers. As an example, we'll use "1" if a rocket is crewed and "0" if a rocket is uncrewed.
+Because computations are best suited for numerical inputs, convert all text into numbers. As an example, we'll use `1` if a rocket is crewed and `0` if a rocket is uncrewed.
 
 ```python
 ## As part of the data cleaning process, we have to convert text data to numerical because computers understand only numbers

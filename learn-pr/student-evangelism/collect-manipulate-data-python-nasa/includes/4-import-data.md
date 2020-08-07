@@ -91,7 +91,7 @@ launch_data.head()
 
 ## Begin exploring data
 
-Finally, we can use the `.columns` function call to view all of the columns in our data. This will show us the attributes that the data has. You'll see some common attributes like names of past rockets that have been scheduled to launch, the dates they were scheduled, if they actually launched, and many more. Look at these columns and try to guess which ones will have the greatest impact on determining if a rocket will launch.
+Finally, we can use the `.columns` function call to view all of the columns in our data. This will show us the attributes that the data has. You'll see some common attributes like names of past rockets that were scheduled to launch, the dates they were scheduled, if they actually launched, and many more. Look at these columns and try to guess which ones will have the greatest impact on determining if a rocket will launch.
 
 ```python
 launch_data.columns

@@ -1,12 +1,12 @@
-Machine learning models are trained by using enough data to avoid mistakes. Without enough data, a machine learning model might be too general. 
+Machine learning models are trained with enough data to avoid mistakes. Without enough data, a machine learning model might be too general. 
 
 For example, if you trained a machine learning model with only temperature data and nothing else, you might not discover that precipitation is more important and doesn't always correlate to lower temperatures in Florida, United States. If that happened, the model might indicate that it's safe to launch a rocket on a day that has a good temperature but a lot of precipitation, and therefore would be unsafe. 
 
 ## Collect data
 
-The first step in any data science or machine learning solution is to collect and understand the data. For this learning path, we collected publicly available data from [NOAA](https://www.noaa.gov/?azure-portal=true) and [Weather Underground](https://www.wunderground.com/history?azure-portal=true) for the dates of NASA rocket launches taken from the [list of NASA missions Wikipedia page](https://wikipedia.org/wiki/List_of_NASA_missions?azure-portal=true). We then compiled this data into one Excel file. 
+The first step in any data science or machine learning solution is to collect and understand the data. For this learning path, we collected publicly available data from [NOAA](https://www.noaa.gov/?azure-portal=true) and [Weather Underground](https://www.wunderground.com/history?azure-portal=true) for the dates of NASA rocket launches taken from the [list of NASA missions Wikipedia page](https://wikipedia.org/wiki/List_of_NASA_missions?azure-portal=true). We then compiled this data into one [Excel file that you can download](https://nasadata.blob.core.windows.net/rocketlaunches/RocketLaunchDataCompleted.xlsx?azure-portal=true). 
 
-The Excel file contains the weather data for the individual crewed and uncrewed launches, as well as the two days before and after each launch. We added data for the two days surrounding the launches to see if there were any patterns that might be interesting. Here's a screenshot from the [Excel file that you can download](https://nasadata.blob.core.windows.net/rocketlaunches/RocketLaunchDataCompleted.xlsx?azure-portal=true).
+The Excel file contains the weather data for the individual crewed and uncrewed launches, as well as the two days before and after each launch. We added data for the two days surrounding the launches to see if there were any patterns that might be interesting. Here's a screenshot from the Excel file.
 
 :::image type="content" source="../media/excel.png" alt-text="Screenshot that shows Excel data." loc-scope="Azure":::
 
