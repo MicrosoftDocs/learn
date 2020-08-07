@@ -2,7 +2,7 @@ While it was great reading about these technologies, a much more exciting way to
 
 ## Install Visual Studio Code
 
-As mentioned before, Visual Studio Code is free. You can download it [on the Visual Studio Code downloads page](https://code.visualstudio.com/Download). Click on the download box according to which operating system you're running - macOS, Windows, or Linux. When the program has finished downloading, click on the executable file in the grey box at the bottom left of the browser window to initiate the installation process.
+As mentioned before, Visual Studio Code is free. You can download it [on the Visual Studio Code downloads page](https://code.visualstudio.com/Download?azure-portal=true). Click on the download box according to which operating system you're running - macOS, Windows, or Linux. When the program has finished downloading, click on the executable file in the grey box at the bottom left of the browser window to initiate the installation process.
 
 > [!NOTE]
 > The picture below shows someone using Windows 10 with the Microsoft Edge browser, but you should choose the box that represents your system.

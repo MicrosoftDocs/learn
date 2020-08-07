@@ -1,4 +1,4 @@
-Of all of the variables, strings are one of the most unusual, because they can take on almost any key from your keyboard. Python also has much pre-made code (called functions) that you can call to manipulate your strings in various ways.
+Strings are one of the most unusual of all variables, because they can take on almost any key from your keyboard. Python also has much pre-made code (called functions) that you can call to manipulate your strings in various ways.
 
 Let's start by making a string variable in your notebook. Copy the following line of code and click the run button:
 

@@ -24,7 +24,7 @@ rocketOn = False
 
 ```
 
-You can view the values of your variables by simply writing the variable's name and clicking the run button (after you have created them).
+When you have created your variables, you can view the values by writing the variable's name and clicking the run button.
 
 ```python
 roverName

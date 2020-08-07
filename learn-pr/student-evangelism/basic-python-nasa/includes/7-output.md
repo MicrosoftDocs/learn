@@ -1,4 +1,4 @@
-Now that we've created some variables and given them values, we can learn how to view the values beyond running a notebook cell. To do this, we'll use a function called print(). Notebooks are useful because each cell will output the value of the final command without the need to do use the print() function. However, it might be useful to print values or messages between larger code blocks, for debugging, logging, or informational purposes. Without the print() function, the cell will print only the last value:
+Now that we've created some variables and given them values, we can learn how to view the values beyond running a notebook cell. We'll use a function called print(). Notebooks are useful because each cell will output the value of the final command without the need to do use the print() function. However, it might be useful to print values or messages between larger code blocks, for debugging, logging, or informational purposes. Without the print() function, the cell will print only the last value:
 
 ```python
 2 + 2

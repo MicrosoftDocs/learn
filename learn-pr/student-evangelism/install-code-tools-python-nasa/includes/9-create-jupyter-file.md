@@ -26,7 +26,7 @@ Now, Jupyter Notebooks should be installed on your computer. Before you continue
 
 ## Information about Jupyter Notebooks
 
-[Visual Studio Code Jupyter Notebooks](https://code.visualstudio.com/docs/python/jupyter-support) has good documentation about how to use the environment. In Jupyter notebooks, you write code in cells. Click on the plus button to the left of a cell to create a new cell below the current cell. Click on the garbage can to the right to delete the selected cell and use the arrow buttons to move the cell up or down in relation to the cells around it.
+[Visual Studio Code Jupyter Notebooks](https://code.visualstudio.com/docs/python/jupyter-support?azure-portal=true) has good documentation about how to use the environment. In Jupyter notebooks, you write code in cells. Click on the plus button to the left of a cell to create a new cell below the current cell. Click on the garbage can to the right to delete the selected cell and use the arrow buttons to move the cell up or down in relation to the cells around it.
 
 Use the green play button in each cell to run that cell. After you run a cell, a number will appear, surrounded by square brackets. This number is to help you keep track of which cells you run. This is important because, as you'll remember, you can re-run cells within a Jupyter Notebook, which might change variables or program state.
 

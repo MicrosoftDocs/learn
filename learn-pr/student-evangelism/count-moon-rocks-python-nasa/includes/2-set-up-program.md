@@ -1,4 +1,4 @@
-To start to create the program, make a folder somewhere on your computer that you'll be able to access easily. You can call the folder something like SpaceRockProject. Then open the file [rocks.txt](https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/includes/rocks.txt) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we are going to be reading in Python.
+To start to create the program, make a folder somewhere on your computer that you'll be able to access easily. You can call the folder something like SpaceRockProject. Then open the file [rocks.txt](https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/includes/rocks.txt?azure-portal=true) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we are going to be reading in Python.
 
 :::image type="content" source="..\media\save-rock-file.png" alt-text="How to save the rock text file":::
 

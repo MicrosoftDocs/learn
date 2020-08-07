@@ -1,4 +1,4 @@
-Math is used frequently in computer science and the concepts you'll learn will be great tools to add to your coding arsenal. Python has many features that allow you to perform many different mathematical computations.
+Math is used frequently in computer science and the concepts you'll learn here will be great tools to add to your coding arsenal. Python has features that allow you to perform many different mathematical computations.
 
 ## Simple calculations
 
@@ -70,32 +70,33 @@ There are also more advanced calculations that Python can compute listed below:
 
 - To calculate a remainder, use modulus (%)
 
-```python
-# How many rocks will be left when we divide 10 rocks into 3 even piles
-10 % 3
-```
+   ```python
+   # How many rocks will be left when we divide 10 rocks into 3 even piles
+   10 % 3
+   ```
 
-```Output
-1
-```
+   ```Output
+   1
+   ```
 
 - To calculate exponents, use **
 
-```python
-# The moon is just under 10^5.37 miles away
-10 ** 5.37
-```
+   ```python
+   # The moon is just under 10^5.37 miles away
+   10 ** 5.37
+   ```
 
-```Output
-262144
-```
+   ```Output
+   262144
+   ```
 
 - To remove the remainder when dividing, use //
 
-```python
-# How many even piles of 2 we can make with 5 rocks
-5 // 2
-```
-```Output
-2
-```
+   ```python
+   # How many even piles of 2 we can make with 5 rocks
+   5 // 2
+   ```
+
+   ```Output
+   2
+   ```
