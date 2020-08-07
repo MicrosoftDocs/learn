@@ -1,6 +1,6 @@
-Now that we have read the images into the computer, let's check out a few of them and give them labels that indicate what type of rock they are.
+Now that we've loaded the images into the computer, let's look at a few of them. We'll give them labels that indicate what type of rock they are.
 
-The following code block reads images and then assigns each image with a corresponding rock type. The code looks long, but this is just because it needs to match each rock image with the type of rock it is, based on the folder it comes from.
+The following code block reads images and then assigns each image with a corresponding rock type. The code looks long, but that's because it needs to match each rock image with the type of rock it is, based on the folder it comes from.
 
 ```python
 # Transform the new image into numbers and resize it.
@@ -24,7 +24,7 @@ def get_random_images(num):
     return images, labels
 ```
 
-The following code actually shows you some images that you have loaded into the program:
+The following code actually shows you some images that you loaded into the program:
 
 ```python
 # How many images do you want to see? It's set to 5, but you can change the number.

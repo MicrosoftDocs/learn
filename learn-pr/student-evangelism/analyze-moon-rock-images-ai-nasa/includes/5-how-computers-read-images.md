@@ -1,6 +1,6 @@
 Now that we have our data cleaned and separated, you might wonder how the computer reads these images. As somewhat of a spoiler, computer can't read images the same way you or I see images.
 
-If you know a little bit about computers, you know that computers read things in binary (0s and 1s). So, how can a computer read a complex image as only 0s and 1s? Well, if you break an image down far enough, it too, is just a combination of 0s and 1s.
+If you know something about computers, you know that computers read things in binary: 1s and 0s. So, how can a computer read a complex image as only 1s and 0s? If you break down an image far enough, it too, is just a combination of 1s and 0s.
 
 An image will look like the following example after a computer transforms them into numbers:
 

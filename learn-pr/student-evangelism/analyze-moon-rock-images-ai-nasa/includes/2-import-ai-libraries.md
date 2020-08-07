@@ -6,7 +6,7 @@ Next, we import Matplotlib to help us plot our data:
 import matplotlib.pyplot as plt
 ```
 
-Then, we import NumPy, which we will use to process large numerical matrixes (images):
+Then, we import NumPy, a library we'll use to process large numerical matrixes (images):
 
 ```python
 import numpy as np

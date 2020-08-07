@@ -25,6 +25,6 @@ What type of rock do you think this newly arrived rock is?
 
 :::image type="content" source="../media/basalt-cristobalite-3.png" alt-text="Image alt text." loc-scope="Azure":::
 
-This new rock that we just received is a basalt rock. Did you get it right?
+The new rock is a basalt rock. Did you get it right?
 
 Notice how it's very hard to classify this rock because it looks both like crustal and basalt rock. Computers are great at finding the smaller details that the human eye can miss. This is how artificial intelligence can assist us.

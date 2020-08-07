@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.analyze-moon-rock-images-ai-nasa.3-why-clean-and-separate-data
 metadata:
   title: Discover the importance of cleaning and separating data for AI projects
-  description: Learn why you need to clean and separate data as you prepare to test your AI model, and the specifics of how to do it.
+  description: Learn why cleaning and separating data is the first step when you plan to test your AI model, and how to do it.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals

@@ -1,8 +1,8 @@
-It may seem like there are a lot of libraries that we must download for this project. Luckily, there is a software called Anaconda that lets us download all of the libraries very quickly. Microsoft has a [video about downloading and configuring a similar environment](https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true) to the one we need, but continue reading to download the right libraries for this project.
+It might seem like you had to download an excessive number of libraries for this project. Luckily, Anaconda helps you quickly download all the libraries you need. Microsoft has a [video about downloading and configuring a similar environment](https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true) to the one we need, but continue reading to download the right libraries for this project.
 
 ## Download Anaconda
 
-Start by going to the [Anaconda Download page](https://www.anaconda.com/products/individual?azure-portal=true) to begin installing Anaconda. Click on the download button and you will be brought to the bottom of the page with all of the download links. Click on the link that corresponds to your computer type, wait for the download to finish, and click on the executable file at the bottom left of the screen to initiate installation.
+Start by going to the [Anaconda Download page](https://www.anaconda.com/products/individual?azure-portal=true) to begin installing Anaconda. Click on the download button and you will be brought to the bottom of the page with all the download links. Click on the link that corresponds to your computer type, wait for the download to finish, and click on the executable file at the bottom left of the screen to initiate installation.
 
 > [!NOTE]
 > The following image depicts a user using Windows 10 with the Microsoft Edge browser, but you should choose the box that represents your system.
@@ -13,31 +13,30 @@ Next, walk through the steps to install Anaconda on your computer. You will be a
 
 ## Create an environment by using AI libraries
 
-Now that we have Anaconda installed, bring up the anaconda prompt application (or terminal on Mac). You can do this by searing for "anaconda" on your computer. Once you have the anaconda prompt open type the following:
+Start the anaconda prompt application (or terminal on Mac). You can do this by searing for "anaconda" on your computer. At the Anaconda prompt, enter the following:
 
 `conda create -n myenv python=3.7 pandas jupyter seaborn scikit-learn keras pytorch pillow`
 
-This code will begin installing all of the libraries we need through Anaconda. Note, we are having you download a few other libraries, but these are good data science libraries that may be useful in the future.
-You will be prompted to install the packages, type 'y' and then enter.
+This code installs all the libraries we need through Anaconda. Note, we're having you download a few other libraries, but these are good data science libraries that may be useful in the future.
 
-Finally, you will have to activate your new environment. To do this type:
-`conda activate myenv`
+You'll be prompted to install the packages. Enter Y, and then press Enter.
 
-This new environment should be created and ready to use. There is one more library that we need to add to the environment that cannot be downloaded in this way.
+Finally, you will have to activate your new environment. Enter the following code: `conda activate myenv`
+
+This new environment should be created and ready to use. We need to add one more library to the environment.
 
 ## Install torchvision
 
-To install torchvision, in the anaconda prompt type:
-`conda install -c pytorch torchvision`
+To install torchvision, in the Anaconda prompt, enter: `conda install -c pytorch torchvision`
 
-You will once again be asked to type 'y' and then enter.
+You'll be prompted to install the packages. Enter Y, and then press Enter.
 
 ## Create a new folder and a Jupyter Notebooks file
 
-You now have an environment built that will be able to take you through the rest of the program. The last thing you need to do it create a folder and the files that we are going to be coding in. To do this, choose a easily accessible location on your computer and make a folder. This can be named something like `ClassifyingSpaceRocks`.
+You now have an environment built that can take you through the rest of the program. The last thing you need to do it create a folder and the files that we're going to be coding in. To do this, choose an easily accessible location on your computer and make a folder. For example, you might name it `ClassifyingSpaceRocks`.
 
 Next, open Visual Studio code and open the new folder that you just created. Create a new Jupyter Notebook file and name it something like `ClassifySpaceRockProgram`. Lastly, at the top right and bottom left of the file, change the environment to be the new environment you just created.
 
 :::image type="content" source="../media/set-environment.png" alt-text="How to download VSCode":::
 
-Congratulations, you just installed all of the libraries you need to make an Artificial Intelligence program and told Visual Studio code where to find them.
+Congratulations, you just installed all of the libraries you need to make an AI program and told Visual Studio code where to find them.
