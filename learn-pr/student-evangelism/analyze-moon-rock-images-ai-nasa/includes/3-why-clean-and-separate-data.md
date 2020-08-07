@@ -4,7 +4,7 @@ But before we import images, it's important to learn about some steps in the AI 
 
 ## Clean data
 
-When we clean data, we look at all the data and ensure that it's complete and uniform. In our rock example, many of the image files have different sizes. To clean this data, we must  resize every picture so that they are the same size. Other examples of cleaning data include filling in missing columns of a spreadsheet if there is no data recorded for that cell or deleting certain rows of data that have incorrect data.
+When we clean data, we look at all the data and ensure that it's complete and uniform. In our rock example, many of the image files have different sizes. To clean this data, we must  resize every image file, so they are the same size. Other examples of cleaning data include filling in missing columns of a spreadsheet if there is no data recorded for that cell or deleting certain rows of data that have incorrect data.
 
 ## Separate data
 

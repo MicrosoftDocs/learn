@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
  - Ability to write and run introductory Python programs
  - Visual Studio Code, Python Extension, and Jupyter Notebooks installed
- - Have artificial intelligence libraries installed
+ - Artificial intelligence libraries installed
 iconUrl: https://docs.microsoft.com/media/learn/module.svg
 levels:
 - beginner

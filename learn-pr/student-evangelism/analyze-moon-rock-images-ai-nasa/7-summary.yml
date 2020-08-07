@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the point of separating data into training and testing groups?"
+  - content: "What is the purpose of separating data into training and testing groups?"
     choices:
     - content: "We separated data into training and testing groups to train the model with one portion of the data and test the model with the rest of the data."
       isCorrect: true
@@ -28,7 +28,7 @@ quiz:
       explanation: "Incorrect. The speed with a computer can train the model isn't the reason we separate data into a training and testing groups."
   - content: "How do computers view images?"
     choices:
-    - content: "As .jpg files."
+    - content: "Computers view images as .jpg files."
       isCorrect: false
       explanation: "Incorrect. Computers can't read a .jpg without transforming it first."
     - content: "Computers view images by reading photo captions."
@@ -48,9 +48,9 @@ quiz:
     - content: "We cleaned the data by resizing all the images, so they were the same size."
       isCorrect: true
       explanation: "Correct! We cleaned the data by resizing all the images, so they were the same size."
-    - content: "We cleaned the data by retaking some pictures that we didn't like."
+    - content: "We cleaned the data by retaking some photos that we didn't like."
       isCorrect: false
-      explanation: "Incorrect. We didn't retake pictures."
-    - content: "By editing some pictures by using Microsoft Paint."
+      explanation: "Incorrect. We didn't retake photos."
+    - content: "We cleaned the data by editing some photos by using Microsoft Paint."
       isCorrect: false
-      explanation: "Incorrect. We didn't edit pictures in Paint."
+      explanation: "Incorrect. We didn't edit photos in Paint."

@@ -8,4 +8,4 @@ An image will look like the following example after a computer transforms them i
 
 :::image type="content" alt-text="ADD ALT TEXT HERE." source="../media/pixels.png" loc-scope="Azure":::
 
-The image is broken down into pixels, and each pixel has a specific color that is identified by a code. After a computer breaks down an image into these codes, it can read and decipher the picture.
+The image is broken down into pixels, and each pixel has a specific color that is identified by a code. After a computer breaks down an image into these codes, it can read and decipher the image.

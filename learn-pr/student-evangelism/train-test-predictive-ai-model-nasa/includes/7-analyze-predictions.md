@@ -6,7 +6,7 @@ The following code gets five random images and stores their data in variables. W
 images, labels = get_random_images(5)
 ```
 
-This code visualizes the new images and adds captions that indicate what type of rock the model determines the picture contains.
+This code visualizes the new images and adds captions that indicate what type of rock the model determines the photo contains.
 
 ```python
 to_pil = transforms.ToPILImage()
