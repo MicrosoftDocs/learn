@@ -1,5 +1,3 @@
-Suppose you're <span style="background:yellow">TODO</span>...
-
 ## What are Public, Private, and Hybrid clouds?
 
 There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
@@ -13,4 +11,3 @@ There are three deployment models for cloud computing: *public cloud*, *private 
 The following image illustrates several of the cloud computing concepts that are presented in this unit. In this example, several factors are demonstrated when you are considering where to deploy a database server in a Hybrid cloud environment: as your resources move from on-premises to off-premises, your costs are reduced, and your administration requirements decrease.
 
 ![Illustration showing the cloud computing continuum.](../media/cloud_computing_continuum.png)
-

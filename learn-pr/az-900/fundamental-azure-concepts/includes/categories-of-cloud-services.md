@@ -1,5 +1,3 @@
-Suppose you're <span style="background:yellow">TODO</span>...
-
 ## What are PaaS, IaaS, and SaaS?
 
 If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibility that a cloud provider and cloud tenent are responsible for.

@@ -15,19 +15,45 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Q: TODO"
+  - content: "Which of the following choices is not a cloud computing category?"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "TODO"
-    - content: "False"
+    - content: "Platform-as-a-Service (PaaS)"
       isCorrect: false
-      explanation: "TODO"
-  - content: "Q: TODO"
+      explanation: "PaaS is a valid cloud computing category."
+    - content: "Networking-as-a-Service (NaaS)"
+      isCorrect: true
+      explanation: "NaaS is not a cloud computing category."
+    - content: "Infrastructure-as-a-Service (IaaS)"
+      isCorrect: false
+      explanation: "IaaS is a valid cloud computing category."
+    - content: "Software-as-a-Service (SaaS)"
+      isCorrect: false
+      explanation: "SaaS is a valid cloud computing category."
+  - content: "Which of the following statements is true?"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "TODO"
-    - content: "False"
+    - content: "With Operating Expenses (CapEx), you are responsible for purchasing and maintaining your computing resources."
       isCorrect: false
-      explanation: "TODO"
+      explanation: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
+    - content: "With Operating Expenses (OpEx), you are only responsible for the computing resources that you use."
+      isCorrect: true
+    - content: "With Capital Expenses (CapEx), you are only responsible for the computing resources that you use."
+      isCorrect: false
+      explanation: "With Capital Expenses (CapEx), you are responsible for purchasing and maintaining your computing resources."
+  - content: "Which of the following options is not a type of cloud computing?"
+    choices:
+    - content: "Distributed cloud"
+      isCorrect: true
+      explanation: "A distributed cloud is not a valid type of cloud computing."
+    - content: "Hybrid cloud"
+      isCorrect: false
+      explanation: "A hybrid cloud is a is a valid type of cloud computing"
+    - content: "Private cloud"
+      isCorrect: false
+      explanation: "A private cloud is a is a valid type of cloud computing"
+    - content: "Public cloud"
+      isCorrect: false
+      explanation: "A public cloud is a is a valid type of cloud computing"
+
+
+
+
