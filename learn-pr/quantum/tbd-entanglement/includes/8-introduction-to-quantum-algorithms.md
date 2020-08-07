@@ -198,7 +198,7 @@ prime factors is exponentially faster than the best known classical algorithm.
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the [Q# sample for integer
-factorization](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization#integer-factorization-sample?azure-portal=true.
+factorization](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization#integer-factorization-sample?azure-portal=true.)
 
 In  the next unit, you'll take a knowledge check to test what you learned on
 this module.
