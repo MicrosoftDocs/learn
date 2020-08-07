@@ -69,7 +69,7 @@ Because the DNS suffix is different in each VNet, you use conditional forwarding
 
 The following diagram has two VNets and an on-premises network performing DNS resolution between VNets using forwarding.
 
-![A diagram has an on-premises network and two VNets, each configured with its own DNS server. Queries for VNet1 and VNet2 from on-premises clients are forwarded to these DNS servers. Queries are then forwarded between these two DNS servers, and also to Azure DNS.](../media/m13-inter-vnet-dns.png)
+![A diagram has an on-premises network and two VNets, each configured with its own DNS server. Queries for VNet1 and VNet2 from on-premises clients are forwarded to these DNS servers. Queries are then forwarded between these two DNS servers, and also to Azure DNS.](../media/m13-internet-vnet-domain-name-system.png)
 
 ## Additional reading
 
