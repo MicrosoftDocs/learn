@@ -1,4 +1,4 @@
-This module follows the previous two modules within the Rocket Launches learning path. 
+This module follows the previous two modules within the rocket launches learning path. 
 
 <!-- link -->
 

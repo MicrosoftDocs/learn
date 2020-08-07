@@ -36,7 +36,7 @@ This function creates the following image.
 
 :::image type="content" source="../media/decision-tree.png" alt-text="Visualization of decision tree." loc-scope="azure":::
 
-Overall, when we look at the data set, we have 240 samples:
+Overall, when we look at the dataset, we have 240 samples:
 - 192 are no launches
 - 48 are launches
 
