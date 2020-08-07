@@ -93,18 +93,7 @@ There are a few steps to registering the *Azure Policy Add-on for AKS* feature.
         --resource-group myResourceGroup
     ```
 
-    Activating the addon will schedule workloads in two namespaces on your cluster.
-
-    The first namespace is **`kube-system`**. Here you'll find:
-
-    - `azure-policy`, and
-    - `azure-policy-webhook`
-
-    The second namespace is **`gatekeeper-system`**. Here you'll find:
-
-    - `gatekeeper-controller-manager`
-
-    These workloads are responsible for evaluating requests submitted to the AKS control plane. Based on your configured policies, the policy webhook will allow or deny requests.
+    Activating the addon will schedule workloads in two namespaces on your cluster. The first namespace is **`kube-system`** where you'll find `azure-policy` and `azure-policy-webhook`. The second namespace is **`gatekeeper-system`** where you'll find `gatekeeper-controller-manager`. These workloads are responsible for evaluating requests submitted to the AKS control plane. Based on your configured policies, the policy webhook will allow or deny requests.
 
 ## Assign a built-in policy definition
 
