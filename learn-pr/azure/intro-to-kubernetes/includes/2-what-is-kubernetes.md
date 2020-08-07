@@ -9,9 +9,9 @@ The drone tracking application consists of multiple microservices, responsible f
 The decoupled design of microservices combined with the atomicity of containers make it possible to scale the application out and responsd to increased demand by deploying more container instances and to scale back in if demand is decreasing.
 In complex sokutions like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
 
-Suppose you want to scale the website. You find that at specific times during the day, you need more instances of the site's caching service to keep performance up. How would you solve it? That's right, by adding more caching service containers.
+You find that at specific times during the day, you need more instances of the site's caching service to keep performance up, so you add more caching service container instances.
 
-Now assume, that you have increased the number of caching instances and need to roll out a new version of the microservice. How do you make sure that you update **all** the active containers?
+Now assume, that you have increased the number of caching instances and need to roll out a new version of the microservice. You'll have to make sure to update **all** the active containers.
 
 The examples above justify a system to help you with these otherwise manual tasks.
 
@@ -19,15 +19,9 @@ The examples above justify a system to help you with these otherwise manual task
 
 ## What is container orchestration?
 
-When you realize that you must increase the number of caching containers to keep the site responsive, how many instances would you add? One? Five? Hundred?
-
-And how many instances would remove, if site demand decreases?
-
-**Container orchestration is a concept that describes all the tasks that you or a system performs to manage containers.**
+A container orchestrator is a system that automatically deploys and manages containerized applications. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed application. Or, it can ensure all deployed container instances get updated if a new version of a service is released.
 
 :::image type="content" source="../media/example_tasks_of_orchestrator.png" alt-text="Shows how number of deployed container instances is automatically increased if demand rises and how an orchestrator can ensure all deployed instances are updated with new software versions." border="false":::
-
-A container orchestrator is a system that deploys and manages containerized applications. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed application. Or, it can ensure all deployed container instances get updated if a new version of a service is released.
 
 ## Define Kubernetes
 
