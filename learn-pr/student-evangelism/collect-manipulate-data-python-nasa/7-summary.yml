@@ -33,10 +33,10 @@ quiz:
       explanation: "Correct! PyTorch is a machine learning library, but we're not using it in this module."
     - content: "pandas"
       isCorrect: false
-      explanation: "We are using the pandas library."
+      explanation: "We're using the pandas library."
     - content: "Sklearn"
       isCorrect: false
       explanation: "Sklearn is the main library we're using for making the machine learning model."
     - content: "NumPy"
       isCorrect: false
-      explanation: "We are using the NumPy library."
+      explanation: "We're using the NumPy library."
