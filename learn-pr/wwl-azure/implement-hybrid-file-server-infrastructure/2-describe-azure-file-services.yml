@@ -2,9 +2,9 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.describe-azure-file-services
 title: Describe Azure file services
 metadata:
-  title: 2-describe-azure-file-services.md
-  description: "2-describe-azure-file-services.md"
-  ms.date: 08/06/2020
+  title: Describe Azure file services
+  description: "Describe Azure file services"
+  ms.date: 08/09/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 15
 content: |
-  [!include[](includes/02-describe-azure-file-services.md)]
+  [!include[](includes/2-describe-azure-file-services.md)]

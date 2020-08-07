@@ -8,7 +8,7 @@ Azure File Sync is a service that allows you to cache Azure file shares on an on
 If you want to understand how File Sync works, you must understand the terms that relate to it. The diagram uses this terminology to depict how Azure File Sync works. 
 
 
-![A diagram depicts how Azure File Sync works, using the process described in the following text.](../media/m11-AzureFileSyncComponents-007.png)
+![A diagram depicts how Azure File Sync works, using the process described in the following text.](../media/m11-azure-file-synchronization-components-007.png)
 
 
 - The server running Windows Server in this diagram has the Azure File Sync agent and is registered with Azure File Sync.

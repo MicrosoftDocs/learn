@@ -13,7 +13,7 @@ Before users at Contoso can access Azure Files they must first authenticate, and
 
 You can enable identity-based authentication on Azure storage accounts. However, before you can do this you must first set up your domain environment. For Azure AD authentication, you must enable Azure AD DS. For AD DS authentication, you must ensure that AD DS is syncing with Azure AD and then domain join the storage account. In both cases, users can authenticate and access Azure file shares only from devices or VMs that are domain-joined.
 
-![The diagram depicts how identity-based authentication works with Azure file shares. A client computer has two-way communication with Active Directory Domain Services (AD DS) and with Microsoft Azure AD Domain Services. AD DS and Azure AD Domain Services are mutually exclusive—a client can use only one of them as an identity store. When the client wants to access an Azure file share, it contacts AD DS or Azure AD Domain Services, where it gets authenticates and receives a Kerberos ticket for accessing the Azure file share. The client computer sends the Kerberos ticket to the Azure file share, which grants access to the share's content.](../media/m11-AuthenticatingIdentities-003.png)
+![The diagram depicts how identity-based authentication works with Azure file shares. A client computer has two-way communication with Active Directory Domain Services (AD DS) and with Microsoft Azure AD Domain Services. AD DS and Azure AD Domain Services are mutually exclusive—a client can use only one of them as an identity store. When the client wants to access an Azure file share, it contacts AD DS or Azure AD Domain Services, where it gets authenticates and receives a Kerberos ticket for accessing the Azure file share. The client computer sends the Kerberos ticket to the Azure file share, which grants access to the share's content.](../media/m11-authenticate-identities-003.png)
 
 After you enable identity-based authentication for a storage account, users can access files on the Azure file share with their sign-in credentials. When a user tries to access data in Azure Files, the request is sent to Azure AD for authentication. If authentication succeeds, Azure AD returns a Kerberos token. The user then sends a request that includes the Kerberos token, and the Azure file share uses that token to authorize the request. AD DS authentication works in the same way, where AD DS provides the Kerberos token.
 
@@ -40,7 +40,7 @@ All data that's stored in an Azure storage account (which includes the data on A
 
 By default, all Azure storage accounts have encryption-in-transit enabled. This ensures that all data is encrypted when transferring from the Azure datacenter to your device. Unencrypted access by using SMB 2.1 and SMB 3.0 without encryption or HTTP isn't allowed by default, and clients aren't able to connect to Azure file shares without encryption. This can be configured for an Azure storage account and is effective for all storage account services.
 
-![Screenshot of the Secure transfer required setting for an Azure storage account. The setting is enabled.](../media/m11-SecureTransferRequired-004.png)
+![Screenshot of the Secure transfer required setting for an Azure storage account. The setting is enabled.](../media/m11-secure-transfer-required-004.png)
 
 ### Creating Azure file shares
 
@@ -48,7 +48,7 @@ Azure Files deploys as part of an Azure storage account. Settings that you speci
 
 After an Azure storage account is in place, you can create an Azure file share by using the Azure portal, Azure PowerShell, Azure Command-Line Interface (Azure CLI), or REST API. You can also create an Azure storage account by using Windows Admin Center when you're deploying Azure File Sync. When you're creating an Azure file share, you must provide the file share name and optionally set the quota. A quota limits the total size of files that can be stored on the file share.
 
-![The screenshot depicts creation of an Azure Files share by using the Azure portal. The user has selected +File share, and have named their new file share share 1.](../media/m11-CreatingAzureFileShare-001.png)
+![The screenshot depicts creation of an Azure Files share by using the Azure portal. The user has selected +File share, and have named their new file share share 1.](../media/m11-create-azure-file-share-001.png)
 
 To create an Azure file share, use the following procedure:
 

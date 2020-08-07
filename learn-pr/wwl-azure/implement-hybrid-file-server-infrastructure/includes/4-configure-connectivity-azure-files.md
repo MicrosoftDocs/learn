@@ -21,7 +21,7 @@ If user-identity authentication is enabled for the storage account and you're co
 > [!CAUTION]
 > Be aware that a storage access key provides unrestricted access to an Azure file share and that user-identity authentication should be used instead when possible.
 
-![A screenshot of the script that the Azure portal provides for connecting to an Azure file share, and Connect is selected.](../media/m11-ConnectingToAzureFileShare-005.png)
+![A screenshot of the script that the Azure portal provides for connecting to an Azure file share, and Connect is selected.](../media/m11-connect-to-azure-file-share-005.png)
 
 ## Azure file share snapshots
 
@@ -31,7 +31,7 @@ You create a share snapshot at the file share level. You can then restore indivi
 
 Share snapshots are incremental. Only the data that has changed after your most recent share snapshot is saved. This minimizes the time required to create the share snapshot and saves on storage and storage costs.
 
-![A screenshot of File share snapshots, with three snapshots. The Previous Versions tab of the Azure file share has the same three snapshots listed.](../media/m11-AzureFileShareSnapshots-006.png)
+![A screenshot of File share snapshots, with three snapshots. The Previous Versions tab of the Azure file share has the same three snapshots listed.](../media/m11-azure-file-share-snapshots-006.png)
 
 Use snapshots in the following situations:
 

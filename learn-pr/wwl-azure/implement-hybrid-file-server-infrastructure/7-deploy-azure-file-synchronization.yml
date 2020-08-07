@@ -2,9 +2,9 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.deploy-azure-file-sync
 title: Deploy Azure File Sync
 metadata:
-  title: 07-deploy-azure-file-sync.md
-  description: "07-deploy-azure-file-sync.md"
-  ms.date: 08/06/2020
+  title: Deploy Azure File Sync
+  description: "Deploy Azure File Sync"
+  ms.date: 08/09/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/07-deploy-azure-file-sync.md)]
+  [!include[](includes/7-deploy-azure-file-synchronization.md)]

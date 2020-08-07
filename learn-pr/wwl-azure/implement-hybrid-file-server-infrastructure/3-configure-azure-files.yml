@@ -2,9 +2,9 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.configure-azure-files
 title: Configure Azure files
 metadata:
-  title: 03-configure-azure-files.md
-  description: "03-configure-azure-files.md"
-  ms.date: 08/06/2020
+  title: Configure Azure files
+  description: "Configure Azure files"
+  ms.date: 08/09/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/03-configure-azure-files.md)]
+  [!include[](includes/3-configure-azure-files.md)]

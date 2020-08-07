@@ -20,7 +20,7 @@ Storage Sync Service is the top-level Azure resource for File Sync. You can have
 
 You deploy Storage Sync Service in the Azure portal by selecting **Create a resource**, searching for **Azure File Sync**, and then selecting **Create**. Enter a Resource group name, a Storage sync service name, and a Region, and then select **Review + Create**.
 
-![A screenshot the Deploy Azure File Sync page in the Azure portal. The Resource group name is ContosoResourceGroup, the Storage sync service name is contosoafs, and the region is EastUS.](../media/m11-deploy-azure-file-sync.png)
+![A screenshot the Deploy Azure File Sync page in the Azure portal. The Resource group name is ContosoResourceGroup, the Storage sync service name is contosoafs, and the region is EastUS.](../media/m11-deploy-azure-file-synchronization.png)
 
 > [!NOTE]
 > You deploy Storage Sync Service in Azure PowerShell by using the `New-AzStorageSyncService` cmdlet.
@@ -50,7 +50,7 @@ You can make changes in a cloud endpoint or any server endpoint because File Syn
 
 You create a sync group in the Azure portal by selecting **+ Sync Group** in the **Storage Sync Service** blade.
 
-![A screenshot of the Sync group page in the Azure portal. The Sync group name is ContosoSyncGrp1, and both the Storage account and Azure File Share values are configured.](../media/m11-deploy-sync-group.png)
+![A screenshot of the Sync group page in the Azure portal. The Sync group name is ContosoSyncGrp1, and both the Storage account and Azure File Share values are configured.](../media/m11-deploy-synchronization-group.png)
 
 You create a sync group in Azure PowerShell by using the `New-AzStorageSyncGroup` cmdlet.
 

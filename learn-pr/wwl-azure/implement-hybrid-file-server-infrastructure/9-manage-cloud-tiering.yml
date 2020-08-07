@@ -2,9 +2,9 @@
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.manage-cloud-tiering
 title: Manage cloud tiering
 metadata:
-  title: 09-manage-cloud-tiering.md
-  description: "09-manage-cloud-tiering.md"
-  ms.date: 08/06/2020
+  title: Manage cloud tiering
+  description: "Manage cloud tiering"
+  ms.date: 08/09/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 10
 content: |
-  [!include[](includes/09-manage-cloud-tiering.md)]
+  [!include[](includes/9-manage-cloud-tiering.md)]
