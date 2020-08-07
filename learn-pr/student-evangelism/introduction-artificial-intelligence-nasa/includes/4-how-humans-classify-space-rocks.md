@@ -34,4 +34,4 @@ In this step, our brain tries to separate or collate the characteristics and fea
 
 Last, we try to use these relationships to determine how to classify a new item. Given a new rock image to consider, our brains extract its characteristics. Then, our brain uses the associations we already made to determine what type of rock it is.
 
-:::image type="content" source="../media/association-process.png" alt-text="Dynamic diagaram that demonstrates the progression from pixel numbers to feature extraction to associations." loc-scope="Azure":::
+:::image type="content" source="../media/association-process.png" alt-text="Dynamic diagram that demonstrates the progression from pixel numbers to feature extraction to associations." loc-scope="Azure":::
