@@ -45,15 +45,15 @@ This logical server does not expose any instance-level access or features as wit
 
 ### Compute and storage
 
-In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. Additionally, you must determine the number of vCores and the maximum data size.
+In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and the maximum data size.
 
 Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU Recommender, to estimate the number of vCores and the maximum data size based on your current workload.  
 
-The maximum data size is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. This will also help you understand the allocation of log space, which scales with your maximum data size.  
+The maximum data size is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with your maximum data size.  
 
 ### Networking configuration
 
-Choices for networking for Azure SQL Database and Azure SQL Managed Instance are different. When you deploy an SQL database, currently the default is **No access**.  
+Choices for networking for Azure SQL Database and Azure SQL Managed Instance are different. When you deploy a SQL database, currently the default is **No access**.  
 
 You can then choose to select a public endpoint or private endpoint. In the exercise that follows this unit, you'll use the public endpoint and set the **Allow Azure services and resources to access this server** option to yes, meaning that other Azure services (for example, Azure Data Factory or Azure Virtual Machines) can access the database if you configure it. You can also select **Add current client IP address** if you want to be able to connect from the IP address from the client computer that you used to deploy Azure SQL Database.
 
@@ -63,7 +63,7 @@ You can also enable a public endpoint so you can connect to a managed instance f
 
 ### Data source
 
-In Azure SQL Database, upon deployment you have the option to select the AdventureWorksLT database as the sample in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside of it, so there's no option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on GitHub.
+In Azure SQL Database, upon deployment you have the option to select the AdventureWorksLT database as the sample in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside it, so there's no option to have the sample database upon deployment (similar to SQL Server). You can learn more about the AdventureWorks sample databases on GitHub.
 
 You can also deploy a blank database or create a database that's based on the restore from a geo-replicated backup.
 
@@ -87,7 +87,9 @@ Other options are available. Examples are character widths and UTF-8 encoding. Y
 
 ### Opt-in for Advanced Data Security
 
-When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Advanced Data Security in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. After you enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next security module of this learning path. 
+When you deploy Azure SQL Database in the portal, you're prompted about whether you want to enable Advanced Data Security in a free trial. Select **Start free trial**. After the free trial, it's billed according to the Azure Security Center Standard Tier pricing. 
+
+After you enable it, you get functionality related to data discovery and classification, identifying/mitigating potential database vulnerabilities, and threat detection. You'll learn more about these capabilities in the next security module of this learning path. 
 
 In Azure SQL Managed Instance, you can enable Advanced Data Security on the instance after deployment.  
 
@@ -126,9 +128,9 @@ In a later module of the learning path about Azure SQL fundamentals, you'll lear
 
 As you increase or decrease the resources in a service tier, the limits for dimensions such as CPU, storage, memory, and more might change up to a certain threshold. Although there's a multifaceted approach to governance in Azure SQL, primarily the following three technologies are used to govern your usage of resources in Azure SQL:  
 
-* Windows job objects allow a group of processes to be managed and governed as a unit. Job objects are used to govern the file virtual memory commit, working set caps, CPU affinity, and rate caps. You can use the `sys.dm_os_job_object` dynamic management view to see the limits in place.
-* Resource Governor is a SQL Server feature that helps users (and in this case, Azure) govern resources including CPU, physical I/O, memory, and more. Azure SQL Managed Instance also allows user-defined Resource Governor workload groups and pools.
-* File Server Resource Manager is available in Windows Server and is used to govern file directory quotas, which are used to manage max data sizes.
+* Windows job objects allow a group of processes to be managed and governed as a unit. Job objects are used to govern the file's virtual memory commit, working set caps, CPU affinity, and rate caps. You can use the `sys.dm_os_job_object` dynamic management view to see the limits in place.
+* Resource Governor is a SQL Server feature that helps users (and in this case, Azure) govern resources like CPU, physical I/O, and memory. Azure SQL Managed Instance also allows user-defined workload groups and pools for Resource Governor.
+* File Server Resource Manager is available in Windows Server and is used to govern file directory quotas, which are used to manage maximum data sizes.
 
 Additional implementations to govern transaction log rate are built into the database engine for Azure, through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds. They're tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
 
@@ -157,6 +159,6 @@ SELECT * FROM sys.dm_os_job_object -- Available only in Azure SQL Database and S
 
 Two queries related to OS system information and OS process memory are not supported in Azure SQL Database. They're not supported because with Azure SQL Database, you're just getting a database. Some things related to the OS are abstracted away from you.  
 
-Additionally, the last two queries are only available in Azure SQL Database and Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. The second, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
+The last two queries are available only in Azure SQL Database and Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. The second, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
 
-The next two exercises will go through all the details involved in deploying Azure SQL Database or an Azure SQL Managed Instance. You'll use the sandbox environment to deploy Azure SQL Database. After deployment, you'll use various verification queries and pre-run SQL notebooks in Azure Data Studio to compare SQL Database, SQL Managed Instance, and SQL Server 2019.  
+The next two exercises will go through all the details involved in deploying Azure SQL Database or Azure SQL Managed Instance. You'll use the sandbox environment to deploy Azure SQL Database. After deployment, you'll use various verification queries and pre-run SQL notebooks in Azure Data Studio to compare SQL Database, SQL Managed Instance, and SQL Server 2019.  
