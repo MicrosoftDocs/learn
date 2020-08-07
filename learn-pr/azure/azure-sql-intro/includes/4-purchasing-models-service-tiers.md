@@ -1,14 +1,20 @@
-Once you have an idea of what deployment option is best for your requirements, determining the purchasing model, service tier, and hardware, is next. Here, you'll get an overview of the purchasing options and when to chose them.  
+After you have an idea of which deployment option is best for your requirements, you need to determine the purchasing model, service tier, and hardware. In this unit, you'll get an overview of the purchasing options and when to choose them.  
 
 ## Purchasing model  
 
-You have two options for the Azure SQL purchasing model, virtual core (vCore)-based or database transaction unit (DTU)-based. The DTU model is not available in Azure SQL Managed Instance.  
+The Azure SQL purchasing model provides two options: 
+- Based on virtual cores (vCore-based) 
+- Based on database transaction units (DTU- based) 
 
-The vCore-based model is recommended because it allows you to independently select the compute and storage resources, while the DTU-based model is a bundled measure of compute, storage, and I/O resources.  In the vCore model, you pay for:  
+The DTU model isn't available in Azure SQL Managed Instance.  
 
-- Compute resources (the service tier + the number of vCores and the amount of memory + the generation of hardware).
+We recommend the vCore-based model because it allows you to independently select compute and storage resources. The DTU-based model is a bundled measure of compute, storage, and I/O resources. 
+
+In the vCore model, you pay for:  
+
+- Compute resources. (The service tier + the number of vCores and the amount of memory + the generation of hardware.)
 - The type and amount of data and log storage.
-- Backup storage (read-access, geo-redundant storage (RA-GRS)).  
+- Backup storage. (Read-access geo-redundant storage (RA-GRS)).  
 
 The vCore model also allows you to use Azure Hybrid Benefit for SQL Server and/or reserved capacity to gain cost savings. Neither options are available in the DTU model.
 
