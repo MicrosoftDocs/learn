@@ -2,7 +2,7 @@ In this module, you learned about Azure SQL, including the deployment options, p
 
 ## Learn more
 
-To learn more about the history of Azure SQl and the options, models, and management tools, see the following references.
+To learn more about the history of Azure SQL and the options, models, and management tools, see the following references.
 
 ### Video series: Azure SQL for beginners
 
@@ -23,7 +23,7 @@ To learn more about what you can get from infrastructure as a service (IaaS) ser
 - Always On Failover Cluster Instances is supported with [Azure premium file share](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-create-failover-cluster-premium-file-share?azure-portal=true).
 - [Always On availability groups](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview?azure-portal=true) is supported, including Cloud Witness.  
 
-If you're considering SQL Server on Azure Virtual Machines, you'll want to review the [guidance on images](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?azure-portal=true), the [quick checklist](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance?azure-portal=true) for getting optimal performance of SQL Server on Azure VMs, and the guidance for [storage configuration](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-storage-configuration?azure-portal=true).  
+If you're considering SQL Server on Azure Virtual Machines, you should review the [guidance on images](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-iaas-overview?azure-portal=true), the [quick checklist](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-performance?azure-portal=true) for getting optimal performance of SQL Server on Azure VMs, and the guidance for [storage configuration](https://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-sql-server-storage-configuration?azure-portal=true).  
 
 If you're specifically considering SQL Server on RHEL Azure VMs, check out the [operations guide](https://azure.microsoft.com/resources/sql-server-on-rhel-azure-vms-operations-guide/?azure-portal=true).  
 
@@ -40,7 +40,7 @@ There are many companies that have moved to Azure SQL. You can learn more about 
 
 You can read more about PaaS [here](https://azure.microsoft.com/overview/what-is-paas/?azure-portal=true).  
 
-Azure SQL Database and SQL Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. You can view a feed from Microsoft regarding those updates [here](https://azure.microsoft.com/updates/?category=databases&azure-portal=true). You also might find the [release notes](https://docs.microsoft.com/azure/sql-database/sql-database-release-notes?tabs=single-database&azure-portal=true) for Azure SQL Database helpful.  
+Azure SQL Database and SQL Managed Instance are versionless, meaning you get updates as they become available and never have to migrate. You can view a feed from Microsoft about those updates [here](https://azure.microsoft.com/updates/?category=databases&azure-portal=true). You also might find the [release notes](https://docs.microsoft.com/azure/sql-database/sql-database-release-notes?tabs=single-database&azure-portal=true) for Azure SQL Database helpful.  
 
 Learn more about pools in Azure SQL:
 

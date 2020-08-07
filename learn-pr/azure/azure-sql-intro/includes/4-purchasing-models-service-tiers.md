@@ -37,6 +37,6 @@ If you choose General Purpose and the vCore-based model, you have an additional 
 
 The default hardware generation at this time is referred to as Gen5 hardware. Gen4 hardware exists but will reach end of life in 2020. As technology advances, you can expect that the hardware options available will change as well. For example, Fsv2-series (compute optimized) and M-series (memory optimized) hardware options recently became available in public preview for SQL Database.
 
-If you choose General Purpose within SQL Database and want to use the serverless compute tier, Gen5 hardware is currently the only option and it currently can scale up to 16 vCores.  
+If you choose General Purpose within SQL Database and want to use the serverless compute tier, Gen5 hardware is currently the only option. It can currently scale up to 16 vCores.  
 
-The purchasing model, service tier, and hardware selections you make will have a big impact on the performance, availability, and cost of your deployment.  
+The purchasing model, service tier, and hardware selections you make will have a significant impact on the performance, availability, and cost of your deployment.  

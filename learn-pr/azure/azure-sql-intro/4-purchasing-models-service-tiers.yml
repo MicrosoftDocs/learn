@@ -19,7 +19,7 @@ quiz:
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false
-        explanation: "This will work, but is there a PaaS offering?"
+        explanation: "This option will work, but is there a PaaS offering?"
       - content: "Azure SQL Managed Instance"
         isCorrect: false
         explanation: "62 TB is bigger than the maximum size allowed for this deployment option."
@@ -29,7 +29,7 @@ quiz:
       - content: "Azure SQL Database, elastic database pool"
         isCorrect: false
         explanation: "62 TB is bigger than the maximum size allowed for this deployment option."
-    - content: "Imagine you have Azure SQL Database with the serverless compute tier database deployed and an auto-pause delay of two hours. After two hours of no activity, what happens to your database and incurred charges?"
+    - content: "Imagine you have Azure SQL Database with the serverless compute tier database deployed and an autopause delay of two hours. After two hours of no activity, what happens to your database and incurred charges?"
       choices:
       - content: "Azure will pause your database to stop compute costs and charge you only for storage."
         isCorrect: true
