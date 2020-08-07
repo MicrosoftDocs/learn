@@ -98,13 +98,13 @@ To create a circuit, sign in to the Azure portal, and then use the following pro
    - Choose the **Bandwidth**.
    - Select the **SKU**.
 
-![A screenshot of the Create ExpressRoute blade, Configuration tab. The Port type is set to Provider. The Provider is British Telecom. The Peering location is London. The bandwidth is 1 Gbps. The Standard SKU is selected.](../media/m13-expressroute-setup1.png)
+![A screenshot of the Create ExpressRoute blade, Configuration tab. The Port type is set to Provider. The Provider is British Telecom. The Peering location is London. The bandwidth is 1 Gbps. The Standard SKU is selected.](../media/m13-expressroute-setup-1.png)
 
 6. Select **Review + create**, and then select **Create**.
 
 It will take a few minutes to complete the provisioning of the circuit. After this completes, open the newly created resource. On the **Overview** page for your circuit, you should notice that that **Circuit status** is enabled but **Provider status** is **Not provisioned**. These values mean that the Microsoft side of the circuit is ready to accept connections, but that the  provider hasn't configured their side of the circuit yet.
 
-![A screenshot of the ContosoExpressRoute page in the Azure portal. The Circuit status is enabled but Provider status is Not provisioned.](../media/m13-expressroute-setup2.png)
+![A screenshot of the ContosoExpressRoute page in the Azure portal. The Circuit status is enabled but Provider status is Not provisioned.](../media/m13-expressroute-setup-2.png)
 
 ### Create a peering configuration
 
@@ -135,7 +135,7 @@ You use Microsoft peering to connect to Office 365 and its related services. To 
 
 To modify the Microsoft peering, in the **ExpressRoute circuit** blade, on the **Peerings** page, select **Microsoft**, and then configure the required values.
 
-![A screenshot pf the Microsoft peering blade. No values can be configured as the circuit is not provisioned. However, configurable values are as previously described.](../media/m13-expressroute-setup3.png)
+![A screenshot pf the Microsoft peering blade. No values can be configured as the circuit is not provisioned. However, configurable values are as previously described.](../media/m13-expressroute-setup-3.png)
 
 ### Connect a VNet to the circuit
 
@@ -147,7 +147,7 @@ After the provider status is provisioned, and after you have configured the peer
 4. On the **Create virtual network gateway** blade, create the gateway by specifying the appropriate properties: **Subscription**, **Name**, and **Region**.
 5. For **Gateway type**, select **ExpressRoute**.
 
-![A screenshot of the Create virtual network gateway blade. The administrator has configured the values described in the preceding text.](../media/m13-add-gateway3.png)
+![A screenshot of the Create virtual network gateway blade. The administrator has configured the values described in the preceding text.](../media/m13-add-gateway-3.png)
 
 6. Select the **SKU**, and then select the **Virtual network** to which you want to connect.
 7. Configure the **Gateway subnet address range** and the **Public IP address** settings.

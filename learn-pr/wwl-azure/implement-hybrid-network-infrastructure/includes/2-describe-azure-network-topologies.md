@@ -18,7 +18,7 @@ For example, some networking features, such as routing between subnets on the sa
 
 A *network interface* is the interconnection between a VM and a VNet. A VM must have at least one network interface (connected to a VNet), but can have more than one, depending on the size of the VM you create. You can create a VM with multiple network interfaces, and add or remove network interfaces throughout the lifecycle of a VM. Multiple network interfaces allow a VM to connect to different subnets in the same VNet, and send or receive traffic over the most appropriate interface.
 
-![A screenshot of the Overview page in the Azure portal, of a VNet interface called ContosoVM1VNET. Three connected devices are listed: ContosoVM1VMNIC, ContosoVM2VMNIC, and ContosoVM3VMNIC.](../media/m13-vnet1.png)
+![A screenshot of the Overview page in the Azure portal, of a VNet interface called ContosoVM1VNET. Three connected devices are listed: ContosoVM1VMNIC, ContosoVM2VMNIC, and ContosoVM3VMNIC.](../media/m13-vnet-1.png)
 
 Each network interface attached to a VM must:
 
@@ -36,7 +36,7 @@ You can assign an NSG to:
 
 You can also assign NSGs to both network interfaces and subnets. Then, each NSG is evaluated independently.
 
-![A subnet object contains two virtual machines: VM1 and VM2. VM1 is protected through the assignment of an NSG called NSG1. The entire subnet is protected by a network security group called NSG2.](../media/m13-nsg.png)
+![A subnet object contains two virtual machines: VM1 and VM2. VM1 is protected through the assignment of an NSG called NSG1. The entire subnet is protected by a network security group called NSG2.](../media/m13-network-security-group.png)
 
 
 ## What is Azure Firewall?

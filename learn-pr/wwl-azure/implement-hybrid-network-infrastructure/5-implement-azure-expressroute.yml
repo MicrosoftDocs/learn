@@ -2,9 +2,9 @@
 uid: learn.wwl.implement-hybrid-network-infrastructure.implement-azure-expressroute
 title: Implement Azure ExpressRoute
 metadata:
-  title: 5-implement-azure-expressroute.md
-  description: "5-implement-azure-expressroute.md"
-  ms.date: 08/06/2020
+  title: Implement Azure ExpressRoute
+  description: "Implement Azure ExpressRoute"
+  ms.date: 08/09/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

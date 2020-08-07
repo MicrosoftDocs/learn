@@ -18,7 +18,7 @@ Azure Virtual WAN is a networking service. It brings various networking, securit
 
 You can think of the Azure Virtual WAN architecture as being similar to a wheel, with a hub (Azure regions) and spokes (the functionalities previously listed).
 
-![A diagram depicts the hub and spoke nature of Azure Virtual WAN. The hub is at the center, and is surrounded by ExpressRoute, S2S, P2S, and VNet connections to a head office, branch offices, remote users, and VNets.](../media/m13-virtualwan1.png)
+![A diagram depicts the hub and spoke nature of Azure Virtual WAN. The hub is at the center, and is surrounded by ExpressRoute, S2S, P2S, and VNet connections to a head office, branch offices, remote users, and VNets.](../media/m13-virtual-wide-area-network-1.png)
 
 There are two available Azure Virtual WAN types, as described in the following table.
 
@@ -66,7 +66,7 @@ To create a Virtual WAN, in the Azure portal, use the following procedure:
 5. Enter a **Name**, and then select the **Type**.
 6. Select **Review + create**, and then select **Create**.
 
-![A screenshot of the Create WAN blade, Basics tab. The administrator has configured the basic properties of subscription, resource group, and location. The Name is defined as ContosoVirtualWAN, and the Type is Standard.](../media/m13-createWAN1.png)
+![A screenshot of the Create WAN blade, Basics tab. The administrator has configured the basic properties of subscription, resource group, and location. The Name is defined as ContosoVirtualWAN, and the Type is Standard.](../media/m13-create-wide-area-network-1.png)
 
 ### Create a hub
 
@@ -76,7 +76,7 @@ To create a hub:
 2. Under **Connectivity**, select **Hubs**.
 3. On the toolbar, select **+ New Hub**.
 
-![A screenshot of the Basics tab on the Create virtual hub blade. The administrator has selected the Region (East US) and entered the Name ContosoVH1. The hub private address space is 10.10.0.0/16..](../media/m13-createhub1.png)
+![A screenshot of the Basics tab on the Create virtual hub blade. The administrator has selected the Region (East US) and entered the Name ContosoVH1. The hub private address space is 10.10.0.0/16..](../media/m13-create-hub-1.png)
 
 4. Configure the settings described in the following table.
 
