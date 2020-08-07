@@ -26,7 +26,7 @@ quiz:
     - content: "Asteroid"
       isCorrect: false
       explanation: "Incorrect. Asteroids are seen moving through space, not on Earth."
-  - content: "If an astronaut sees one black rock surrounded by white rocks, the astronaut should take only the black rock."
+  - content: "If an astronaut sees one black rock surrounded by white rocks, the astronaut should collect only the black rock."
     choices:
     - content: "True."
       isCorrect: false

@@ -36,7 +36,7 @@ quiz:
       explanation: "Correct! Accuracy in this context refers to how often the model was correct in its predictions."
     - content: "The number of images you need to train the model for the model to be perfect."
       isCorrect: false
-      explanation: "Incorrect. The accuracy of an AI model doesn't refer to the details of the testing itself, only to the success rate."
+      explanation: "Incorrect. The accuracy of an AI model doesn't refer to the details of testing, only to the success rate of predictions."
   - content: "How can you increase the accuracy of an AI model?"
     choices:
     - content: "By training the model an additional five times."

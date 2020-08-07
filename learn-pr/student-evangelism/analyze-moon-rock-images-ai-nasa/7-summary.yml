@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct! We separate data into training and testing groups so we can split the data between the two groups."
     - content: "Data is separated into training and testing groups because the computer can't test that much data."
       isCorrect: false
-      explanation: "Incorrect. The amount of data a computer can test isn't the reason we separate data into a training and testing groups."
+      explanation: "Incorrect. The amount of data a computer can test isn't a factor in why we separate data into a training and testing groups."
     - content: "To train the model more quickly."
       isCorrect: false
       explanation: "Incorrect. The speed with a computer can train the model isn't the reason we separate data into a training and testing groups."
@@ -31,9 +31,9 @@ quiz:
     - content: "By reading photo captions."
       isCorrect: false
       explanation: "Incorrect. This approach would exclude a substantial amount of information about the photo."
-    - content: "By breaking up the photo into fours, and then reading each of the sections."
+    - content: "By separating the photo into four sections and reading them one section at a time."
       isCorrect: false
-      explanation: "Incorrect. Computers don't read images breaking up the photo into fours and reading each of the sections."
+      explanation: "Incorrect. Computers don't read images by separating the photo into four sections."
     - content: "By breaking down the photo into ones and zeros."
       isCorrect: true
       explanation: "Correct! Computers can only read image data by breaking down the photo into ones and zero."
