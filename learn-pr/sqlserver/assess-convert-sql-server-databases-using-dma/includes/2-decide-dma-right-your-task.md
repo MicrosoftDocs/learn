@@ -63,7 +63,7 @@ You'll be using a virtual machine in later exercises. Run these commands to set 
     PASSWORD=$(openssl rand -base64 32)
     az vm create \
         --name SQL2019Server \
-        --image "MicrosoftSQLServer:sql2019-ws2019:sqldev:15.0.200310" \
+        --image "MicrosoftSQLServer:sql2019-ws2019:sqldev:latest" \
         --size Standard_D2s_v3 \
         --admin-username azureadmin \
         --admin-password $PASSWORD \
