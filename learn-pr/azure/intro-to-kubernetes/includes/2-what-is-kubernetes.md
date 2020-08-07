@@ -1,15 +1,12 @@
 Before we look at what Kubernetes is, let's summarize a few concepts that are key to containerzied workloads.
 
-### Container management in the drone tracking solution
+## What is container management?
 
-The drone tracking application consists of multiple microservices, like caching, queuing, or data processing. Each of these services is hosted in a container and can be deployed, updated, and scaled independently from the other.
+The drone tracking application consists of multiple microservices, responsible for tasks like caching, queuing, or data processing. Each of these services is hosted in a container and can be deployed, updated, and scaled independently from the other.
 
 :::image type="content" source="../media/2-container.png" alt-text="An image of a server or application that is replicated as containers for cloud deployment." border="false":::
 
 The decoupled design of microservices combined with the atomicity of containers make it possible to scale the application out and responsd to increased demand by deploying more container instances and to scale back in if demand is decreasing.
-
-### What is container management?
-
 In complex sokutions like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
 
 Suppose you want to scale the website. You find that at specific times during the day, you need more instances of the site's caching service to keep performance up. How would you solve it? That's right, by adding more caching service containers.
@@ -20,25 +17,26 @@ The examples above justify a system to help you with these otherwise manual task
 
 **Container management is the process of organizing, adding, removing, or updating a big numbers of containers**.
 
-### What is container orchestration?
+## What is container orchestration?
 
-Let's look at another example. When you realize that you must increase the number of caching containers to keep the site responsive, how many instances would you add? One? Five? Hundred?
+When you realize that you must increase the number of caching containers to keep the site responsive, how many instances would you add? One? Five? Hundred?
 
 And how many instances would remove, if site demand decreases?
 
 **Container orchestration is a concept that describes all the tasks that you or a system performs to manage containers.**
 
-A container orchestrator is a system that deploys and manages containerized applications. The orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed application.
+:::image type="content" source="../media/example_tasks_of_orchestrator.png" alt-text="Shows how number of deployed container instances is automatically increased if demand rises and how an orchestrator can ensure all deployed instances are updated with new software versions." border="false":::
 
-## What is Kubernetes?
+A container orchestrator is a system that deploys and manages containerized applications. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed application. Or, it can ensure all deployed container instances get updated if a new version of a service is released.
+
+## Define Kubernetes
 
 Kubernetes is a portable, extensible open-source platform for managing and orchestrating containerized workloads.
+Kubernetes abstracts away complex container management tasks and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you may already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
 
 :::image type="content" source="../media/2-deploy-multiple-containers-k8s.png" alt-text="Diagram of replicated servers as multiple containers in a Kubernetes cluster." border="false":::
 
-Kubernetes abstracts away complex container management tasks and provides you with declarative configuration to orchestrate containers in different computing environments. This orchestration platform gives you the same ease of use and flexibility you may already know from platform as a service (PaaS) or infrastructure as a service (IaaS) offerings.
-
-### Kubernetes benefits
+## Kubernetes benefits
 
 The benefits of using Kubernetes are based on the abstraction of tasks. These tasks include:
 
@@ -57,7 +55,7 @@ The benefits of using Kubernetes are based on the abstraction of tasks. These ta
 > [!IMPORTANT]
 > Keep in mind that all of the preceding aspects of Kubernetes require configuration and a good understanding of the underlying technologies. For example, you need to understand concepts such as virtual networks, load balancers, and reverse proxies to configure Kubernetes networking.
 
-### Kubernetes considerations
+## Kubernetes considerations
 
 With Kubernetes, you can view your datacenter as one large compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed.
 
