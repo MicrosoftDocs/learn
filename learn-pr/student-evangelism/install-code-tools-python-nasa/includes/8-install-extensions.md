@@ -2,18 +2,18 @@ In this unit, you'll learn about the extension tab in Visual Studio Code and how
 
 ## Install Python extension
 
-To access all of the Python open-source tools that will be helpful for this learning path, click on the extension tab in Visual Studio Code. It looks like three blocks in the shape of an "L" and another block floating to the right.
+Click on the extension tab in Visual Studio Code to access all the Python open-source tools that'll be helpful for this learning path. The extension tab looks like three blocks in the shape of an "L" with another block floating to the right.
 
-You can explore the extensions marketplace and install any extensions you would like to have, but for this tutorial, we'll be installing the Python extension. When you're inside  the extension marketplace, go to the search bar and type in "Python". You're looking for the extension named solely Python and published by Microsoft (it should be the first result). Click on the extension and then click "install".
+If you want to, you can explore the extensions marketplace and install any extensions you'd like to have, but for this tutorial, we'll install the Python extension. When you're in the extension marketplace, go to the search bar and type "Python". Look for the extension named solely Python and published by Microsoft - it should be the first result. Click on the extension and then click "install".
 
 :::image type="content" source="..\media\install-python.png" alt-text="Install Python extension":::
 
-After installation, you should close out of Visual Studio Code and open it again to ensure that Visual Studio Code recognizes the Python extension as installed.
+After you've installed it, you should close Visual Studio Code and open it again to ensure that the Python extension is recognized.
 
-The Python extension is now installed. This extension lets you create Python and Jupyter Notebook files that can help you write correctly formatted code, fix typos, and allow you to run the code that you write.
+The Python extension lets you create Python and Jupyter Notebook files that can help you write correctly formatted code, fix typos, and enable you to run the code you write.
 
 ## Install IntelliCode extension
 
-While in the extensions tab, go back to the search bar and type in "intellicode". Click on the specified box (which should be the first result) and click "install". IntelliCode will recommend code when you're writing your programs. This is a great tool for beginners because you might not know the exact syntax for some code.
+While you're in the extensions tab, go back to the search bar and type in "intellicode". Click on the specified box - it should be the first result - and click "install". IntelliCode will recommend code when you're writing programs, which is a great tool for beginners who might not know the exact syntax.
 
 :::image type="content" source="..\media\install-intellicode.png" alt-text="Install Intellicode":::

@@ -2,7 +2,7 @@ Over the course of this module, we'll be using comments in our code. Learning ho
 
 ## What are comments?
 
-In programming, comments are words in code that the computer will not read when running the code. This means that their sole purpose is to help out developers who are reading and writing code. They are great for explaining complex code to others, helping you remember what a certain part of your code does, and reminding you of what needs to be added to your code.
+In programming, comments are words that the computer will not read when running the code. Their sole purpose is to help developers who are reading and writing code. Comments are great for explaining complex code to others, helping you remember what a certain part of your code does, and reminding you of what needs to be added to your code.
 
 ## How to use comments
 
@@ -26,7 +26,7 @@ As noted previously, comments are not run by the computer. If you look at the co
 > [!NOTE]
 > You're not expected to know what the code below does, it is used solely for the purpose of showing comments.
 
-Another great use of comments is to add TODO's to let you know what still needs to be done. In this example the comment is reminding a developer to finish a piece of code at a later time.
+Another great use of comments is to add TODOs to let you know what still needs to be done. In this example, the comment is reminding a developer to finish a piece of code at a later time.
 
 ```python
 # TODO Finish analyze space rock function
@@ -54,10 +54,10 @@ def countRocks(rockText):
 
 ## Inline comments
 
-Inline comments are written on the same line as written code. Use them sparingly because they can add a lot of clutter to your code. They're good at explaining a tricky line of code.
+Inline comments are written on the same line as written code. Use them sparingly because they can add clutter to your code. They're good at explaining a tricky line of code.
 
 ```python
 rocketSpeed = 17000 # rocket speed needed to reach orbit
 ```
 
-Now that you have learned about comments, we can carry on to learn about how to leverage math in Python.
+Now that you have learned about comments, you can carry on to learn about using math in Python.
