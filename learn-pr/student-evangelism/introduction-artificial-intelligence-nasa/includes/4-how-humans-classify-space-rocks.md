@@ -24,7 +24,7 @@ The following image lists some features that we can extract from a photo of a mo
 
 ### Step 2
 
-Next, we try to find the relationships between the features and the type of rock.
+Next, we try to find the relationships between the features and the type of rock is shown in a photo of a rock.
 
 In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. For example, we determine that lighter rocks are usually crustals and that the texture of basalt rocks are more dense. These associations, and the links between them, are demonstrated in the following image:
 

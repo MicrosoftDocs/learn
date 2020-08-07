@@ -34,4 +34,4 @@ print('done')
 
 The neural network goes back and forth many times until it learns the best associations (wiring) between features and rock types.
 
-<img src="../train-test-predictive-ai-model-nasa\media\dl.gif" width="650" align="center">
+:::image type="content" source="../media/neural-network-training.gif" alt-text="Dynamic diagram that demonstrates how neural networks are created to train a learning model."  loc-scope="Azure":::

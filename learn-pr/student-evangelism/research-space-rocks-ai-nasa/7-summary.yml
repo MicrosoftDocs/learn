@@ -15,39 +15,33 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following is *not* a form in which you'd find a space rock?"
+  - content: "Which of the following is a form in which you'd find a space rock on Earth?"
     choices:
     - content: "Meteor"
       isCorrect: false
-      explanation: "Space rocks are found in the form of a meteor."
+      explanation: "Incorrect. Meteors are seen moving through space, not on Earth."
     - content: "Meteorite"
-      isCorrect: false
-      explanation: "Space rocks are found in the form of a meteorite."
+      isCorrect: true
+      explanation: "Correct! A meteorite is the remnants of a meteor that crashed into Earth."
     - content: "Asteroid"
       isCorrect: false
-      explanation: "Space rocks are found in the form of an asteroid."
-    - content: "Space boulder"
-      isCorrect: true
-      explanation: "Correct! Space rocks aren't identified by scientits as space boulders."
-  - content: "If an astronaut sees one black rock surrounded by white rocks, the astronaut should take only the black rock. True or False?"
+      explanation: "Incorrect. Asteroids are seen moving through space, not on Earth."
+  - content: "If an astronaut sees one black rock surrounded by white rocks, the astronaut should take only the black rock."
     choices:
-    - content: "True, the astronaut should take only the black rock."
+    - content: "True."
       isCorrect: false
       explanation: "Incorrect. Taking the most unique rock isn't the preferable way to sample space rocks."
-    - content: "False, the astronaut should sample every rock."
+    - content: "False."
       isCorrect: true
       explanation: "Correct! The astronaut should take a sample of every rock."
   - content: "What is the goal of the OSIRIS-REx mission?"
     choices:
-    - content: "The goal of the OSIRIS-REx mission is to learn about our history."
+    - content: "To learn about human history."
       isCorrect: true
       explanation: "Correct! The goal of the OSIRIS-REx mission is to learn about human history."
-    - content: "The goal of the OSIRIS-REx mission is to find an asteroid that's suitable for humans to inhabit."
+    - content: "To find an asteroid that's suitable for humans to inhabit."
       isCorrect: false
-      explanation: "Incorrect. This isn't the goal of the OSIRIS-REx mission."
-    - content: "The goal of the OSIRIS-REx mission is to test a new rocket."
-      isCorrect: false
-      explanation: "Incorrect. This isn't the goal of the OSIRIS-REx mission."
+      explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to find an asteroid where humans might live."
     - content: "The goal of the OSIRIS-REx mission is to test a new camera."
       isCorrect: false
-      explanation: "Incorrect. This isn't the goal of the OSIRIS-REx mission."
+      explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to test a new camera."

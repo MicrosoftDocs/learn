@@ -1,32 +1,19 @@
-The job of an AI scientist is to teach machines to do the same 3 steps.
-Below we will walk through each step for machines:
+The job of the AI scientist in creating an AI model is to teach the computer to complete three steps. Let's walk through the three steps in the example of training a computer to predict types of rocks in random photos of rocks.
 
 ### Step 0
 
-Import the image data and pre-made libraries that help us process images. We will also have the computer transform the images so they are in a format that it can read.
-
-1. Import Libraries
-2. Import data
-3. Transform images to matrixes of numbers
+A preparatory step is to import image data and the libraries that help process them on the computer you're training. The computer transforms the images to matrixes of number so that the images are in a format the computer can read.
 
 ### Step 1
 
-Extract features out of images
-
-1. We Explore the Rock Images
-2. Extract features such as texture, size, color, and edges
-
-Scientists decide on what features should be used based on their intuition
+In photos of rocks that we'll examine, the computer extracts features like texture, size, color, and edges. Scientists use intuition and experience to choose which features to use.
 
 ### Step 2
 
-Make associations between the image features and rock types. This is where computers can be better than humans at picking out minute details because there are so many associations.
+The computer makes associations between image features and types of rock. Computers can be better than humans at the task of detecting minute details because there are so many associations to make.
 
-1. Build a network capable of keeping track of millions of associations
+The computer builds a network that's capable of keeping track of millions of associations.
 
 ### Step 3
 
-Predict the rock type for a new rock:
-
-1. Given a new rock image we extract features out of it
-2. We use the associations we have learned to decide what type of rock it is
+Given a new photo of a rock, the computer extracts features in the photo, and then uses associations between existing data and the new photo to predict the type of rock it is.

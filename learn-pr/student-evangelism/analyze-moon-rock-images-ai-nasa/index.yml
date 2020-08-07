@@ -2,14 +2,14 @@
 uid: learn.student-evangelism.analyze-moon-rock-images-ai-nasa
 metadata:
   title: Analyze images of moon rocks by using artificial intelligence
-  description: Identify data to add to an artificial intelligence (AI) module that classifies space rocks in random photos.
+  description: Identify data to add to an artificial intelligence module that classifies space rocks in random photos.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Analyze images of moon rocks by using artificial intelligence
-summary: Identify data to add to an artificial intelligence (AI) module that classifies space rocks in random photos.
+summary: Identify data to add to an artificial intelligence module that classifies space rocks in random photos.
 abstract: |
  In this module, you will:
  - Import artificial intelligence libraries

@@ -8,7 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Exercise - Test a neural network that classifies photos of space socks
+title: Exercise - Test a neural network that classifies photos of space rocks
 durationInMinutes: 4
 content: |
   [!include[](includes/7-analyze-predictions.md)]
