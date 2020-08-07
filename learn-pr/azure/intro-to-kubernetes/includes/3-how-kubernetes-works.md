@@ -2,11 +2,11 @@ A successfully configured Kubernetes installation depends on a good understandin
 
 ## What is a computer cluster?
 
+A cluster is a set of computers that you configure to work together and view as a single system. The computers configured in the cluster will typically do the same kinds of tasks. For example, they'll all host websites, APIs, or run compute-intensive work.
+
+A cluster uses centralized software that's responsible for scheduling and controlling these tasks. The **computers in a cluster that run the tasks are called nodes**, and the **computers that run the scheduling software are called control planes**.
+
 :::image type="content" source="../media/3-diagram-cluster.svg" alt-text="Diagram of a computer cluster." border="false":::
-
-A cluster is a set of computers that you configure to work together and view as a single system. The computers configured in the cluster will typically do the same kinds of tasks. For example, they'll all host websites, host APIs, or run compute-intensive work.
-
-A cluster uses centralized software that's responsible for scheduling and controlling these tasks. The computers in a cluster that run the tasks are called nodes, and the computers that run the scheduling software are called masters or control planes.
 
 ## Kubernetes architecture
 
@@ -14,27 +14,26 @@ Recall from earlier that an orchestrator is a system that deploys and manages ap
 
 :::image type="content" source="../media/3-cluster-arch-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
 
-A Kubernetes cluster contains at least one master and one or more nodes. Both the master and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads. 
+A Kubernetes cluster contains at least one main node and and one or more nodes. Both the master and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads.
 
 It's also possible to run Microsoft workloads by using Windows Server 2019 or later on cluster nodes. For example, assume that the data processing service in the drone tracking application is written as a .NET 4.5 application that uses specific Windows OS API calls. This service can run only on nodes that run a Windows Server OS.
 
 Let's look at both the master and worker nodes, and the software that runs on each, in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
 
-### Kubernetes master
+### Kubernetes control plane
 
-The Kubernetes master node, also known as the control plane in a Kubernetes cluster, runs a collection of services that manages the orchestration functionality in Kubernetes. All of the Kubernetes services can run in a single master node configuration. 
+The Kubernetes control plane in a Kubernetes cluster runs a collection of services that manage the orchestration functionality in Kubernetes.
 
-From a learning perspective, it makes sense to use a single master in your test environment as you explore Kubernetes functionality. However, in production and cloud deployments such as Azure Kubernetes Service (AKS), you'll find that the preferred configuration is a multi-master high-availability deployment with three to five replicated masters.
+From a learning perspective, it makes sense to use a single control plane in your test environment as you explore Kubernetes functionality. However, in production and cloud deployments such as Azure Kubernetes Service (AKS), you'll find that the preferred configuration is a high-availability deployment with three to five replicated control planes.
 
-The fact that a master node runs specific software to maintain the state of the cluster doesn't exclude the master node from running other compute workloads. However, you usually want to make sure to exclude the master from running noncritical and user application workloads.
+> [!NOTE]
+> The fact that a control plane runs specific software to maintain the state of the cluster doesn't exclude it from running other compute workloads. However, you usually want to exclude the control plane from running noncritical and user application workloads.
 
-### Kubernetes node
+## Kubernetes node
 
 A node in a Kubernetes cluster is where your compute workloads run. Each node communicates with the control plane via the API server to inform it about state changes on the node.
 
 ## Services that run in a control plane
-
-:::image type="content" source="../media/3-cluster-arch-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 The following services make up the control plane in a Kubernetes cluster:
 
@@ -43,24 +42,27 @@ The following services make up the control plane in a Kubernetes cluster:
 - Scheduler
 - Controller manager
 - Cloud controller manager
+ 
+:::image type="content" source="../media/3-cluster-arch-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 ### What is the API server?
 
-You can think of the API server as the front end to the control plane in your Kubernetes cluster. All the communication between the components in Kubernetes is done through this API. 
+You can think of the API server as the front end to the control plane in your Kubernetes cluster. All the communication between the components in Kubernetes is done through this API.
 
 For example, as a user, you use a command-line application called `kubectl` that allows you to run commands against your Kubernetes cluster's API server. The component that provides this API is called `kube-apiserver`, and you can deploy several instances of this component to support scaling in your cluster.
 
 This API exposes a RESTful API that you can use to post commands or YAML-based configuration files. YAML is a human-readable data serialization standard for programming languages. You use YAML files to define the intended state of all the objects within a Kubernetes cluster.
 
-For example, assume that you want to increase the number of instances of your application in the cluster. You'll define the new state by using a YAML-based file and submit this file to the API server. The API server will validate the configuration, save the configuration to the cluster, and finally enact the configured increase in application deployments.
+For example, assume that you want to increase the number of instances of your application in the cluster. You'll define the new state by using a YAML-based file and submit this file to the API server. The API server will validate the configuration, save it to the cluster, and finally enact the configured increase in application deployments.
 
 ### What is the backing store?
 
-The backing store is a persistence store that your Kubernetes cluster uses to store the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state as well as the desired state of all objects within your cluster.
-
-Keep in mind that `etcd` isn't responsible for data backup. It's your responsibility to ensure that an effective backup plan is in place to back up the `etcd` data.
+The backing store is a persistence store that your Kubernetes cluster uses to save the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state as well as the desired state of all objects within your cluster.
 
 In a production Kubernetes cluster, the official Kubernetes guidance is to have three to five replicated instances of the `etcd` database for high availability.
+
+> [!NOTE]
+> `etcd` isn't responsible for data backup. It's your responsibility to ensure that an effective backup plan is in place to back up the `etcd` data.
 
 ### What is the scheduler?
 
@@ -80,16 +82,15 @@ Let's assume that one of three containers running in your cluster stops respondi
 
 The cloud controller manager integrates with the underlying cloud technologies in your cluster when the cluster is running in a cloud environment. These services can be load balancers, queues, and storage, for example.
 
-
 ## Services that run in a node
-
-:::image type="content" source="../media/3-cluster-arch-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 The following services make up a node in a Kubernetes cluster:
 
 - Kubelet
 - Kube-proxy
 - Container runtime
+
+:::image type="content" source="../media/3-cluster-arch-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 ### What is the kubelet?
 
@@ -107,7 +108,7 @@ This proxy doesn't provide DNS services by itself. A DNS cluster add-on based on
 
 The container runtime is the underlying software that runs containers on a Kubernetes cluster. The runtime is responsible for fetching, starting, and stopping container images. Kubernetes supports several container runtimes, including but not limited to Docker, rkt, CRI-O, containerd, and frakti. The support for many container runtime types is based on the Container Runtime Interface (CRI). The CRI is a plug-in design that allows the kubelet to communicate with the available container runtime.
 
-The default container runtime in Azure Kubernetes Service is Docker. However, you can also use Kata Containers and containerd. Keep in mind that the Windows support for containerd is experimental.
+The default container runtime in Azure Kubernetes Service is Docker. However, you can also use Kata Containers and containerd.
 
 ## How to interact with a Kubernetes cluster
 
@@ -129,7 +130,7 @@ A pod represents a single instance of an application. A single pod can also hold
 
 A pod includes information about the shared storage and network configuration, and a specification on how to run its packaged containers. You use pod templates to define the information about the pods that run in your cluster. Pod templates are YAML coded files that you reuse and include in other objects to manage pod deployments.
 
-For example, assume that you want to deploy a pod that contains a website to a Kubernetes cluster. You create the pod definition file that specifies the application's container images and configuration. Then you deploy the pod definition file to Kubernetes.
+For example, assume that you want to deploy a website to a Kubernetes cluster. You create the pod definition file that specifies the application's container images and configuration. Then you deploy the pod definition file to Kubernetes.
 
 :::image type="content" source="../media/3-diagram-pod-with-website.svg" alt-text="Diagram of a pod with a website as the primary container." border="false":::
 

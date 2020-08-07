@@ -1,20 +1,15 @@
-The decision to use a container orchestration platform like Kubernetes depends on business and development requirements. Let's review the high-level architecture of your drone tracking solution.
+The decision to use a container orchestration platform like Kubernetes depends on business and development requirements. Let's review the high-level architecture of the drone tracking solution.
 
 The solution is built as microservices that are designed as loosely coupled, collaborative services. You're deploying these services separately from each other to simplify the solution's design and maintenance. Here is the current configuration of your solution.
 
 :::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that describes the drone tracking solution." border="false":::
 
-- A drone tracking website that includes maps and information about tracked assets
-
-- A cache service that stores frequently requested information displayed on the website
-
-- A RESTful API where tracked drones send data about their status, such as GPS location and battery charge levels
-
-- A queue that holds unprocessed data collected by the RESTful API
-
-- A data processing service that fetches and processes data from the queue
-
-- A NoSQL database that stores processed tracking data and user information captured from the website and the data processing service
+- Web front end: shows maps and information about tracked drones.
+- Cache service: stores frequently requested information displayed on the website.
+- RESTful API: used by tracked drones to send data about their status, such as a GPS location and battery charge levels.
+- Qeue: holds unprocessed data collected by the RESTful API.
+- Data processing service: fetches and processes data from the queue.
+- NoSQL database: stores processed tracking data and user information captured from the website and the data processing service.
 
 Separate teams in your company develop and own these services. Each team uses containers to build and deploy its service. This new strategy allows the development teams to keep up with the requirements of modern software development for automation, testing, and overall stability and quality.
 
