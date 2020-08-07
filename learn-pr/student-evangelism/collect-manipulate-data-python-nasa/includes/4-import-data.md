@@ -1,21 +1,21 @@
 You now have a goal: *Is a launch likely to happen given specific weather conditions?* You have a data set that contains weather data from successful launches and one pushed launch day, as well as the days leading up to and following each launch. Now you can start to code!
 
-You can use various tools and services to solve machine learning problems. These space-themed learning paths use Visual Studio Code, Python, scikit-learn, and Azure. Microsoft has a [video about downloading and configuring a similar environment](https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true) to the one we need. 
+## Machine learning in code
+
+You can use various tools and services to solve machine learning problems. These space-themed learning paths use Visual Studio Code, Python, scikit-learn, and Azure. Microsoft has a [video about downloading and configuring a similar environment](https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true) to the one we need.
+
+When you're setting up your local programming environment, we recommend creating an Anaconda environment to ensure you have exactly what you need for that project. If you have another way or set of tools that you prefer to use, the majority of these modules don't explicitly require Visual Studio Code or Azure. 
 
 ## Set up the local environment
 
-When you're setting up your local programming environment, we recommend creating an Anaconda environment to ensure you have exactly what you need for that particular project. If you have another way or set of tools that you prefer to use, the majority of these modules don't explicitly require Visual Studio Code or Azure.
-
 Before continuing, be sure that you have:
-- Visual Studio Code installed with the Python and Jupyter Notebook extensions
-- An Anaconda environment with Pandas, NumPy, scikit-learn, PyDotPlus, and Azure Machine Learning SDK
-- A folder to store all of the code and data
-- The data downloaded and saved to the folder
-- A blank Jupyter notebook saved in the folder
-- The folder open in Visual Studio Code
-- The Visual Studio Code Python environment set to the Anaconda environment
-
-### Local setup 
+- Visual Studio Code installed with the Python and Jupyter Notebook extensions.
+- An Anaconda environment with Pandas, NumPy, scikit-learn, PyDotPlus, and Azure Machine Learning SDK.
+- A folder to store all of the code and data.
+- The data downloaded and saved to the folder.
+- A blank Jupyter notebook saved in the folder.
+- The folder open in Visual Studio Code.
+- The Visual Studio Code Python environment set to the Anaconda environment.
 
 To set up your local environment:
 
@@ -49,9 +49,9 @@ To set up your local environment:
     pip install xlrd
     ```
 
-7. With the folder open in Visual Studio Code, make sure your Python interpreter and Jupyter kernel are both set to your Anaconda environment. Select both the upper-right Jupyter kernel Python version and the lower-left Python interpreter, and set them both to use the Anaconda environment that you created:  
+7. Open the folder in Visual Studio Code.  Select both the upper-right Jupyter kernel Python version and the lower-left Python interpreter, and set them both to use the Anaconda environment:  
 
-    :::image type="content" source="../media/ensure-python.png" alt-text="Visual Studio Code with Anaconda Environment" loc-scope="Azure":::
+    :::image type="content" source="../media/ensure-python.png" alt-text="Screenshot that shows Visual Studio Code with the Anaconda environment." loc-scope="Azure":::
 
 ## Import libraries
 
@@ -62,7 +62,7 @@ Copy the following code into a cell and run it to import the libraries.
 ```python
 # Pandas library is used for handling tabular data
 import pandas as pd
-# Numpy is used for handling numerical series operations (addition, multiplication, and ...)
+# NumPy is used for handling numerical series operations (addition, multiplication, and ...)
 import numpy as np
 # Sklearn library contains all the machine learning packages we need to digest and extract patterns from the data
 from sklearn import linear_model, model_selection, metrics
@@ -82,7 +82,7 @@ from IPython.display import Image
 
 ## Read data into a variable
 
-Now that we have all of the libraries imported, we can use the pandas library to import our data. Use the command `pd.read_excel` to read the data and save it in a variable. Then, use the `.head()` function to print out the first 5 rows of the data. This will ensure that we have read everything correctly.
+Now that we have all of the libraries imported, we can use the pandas library to import our data. Use the command `pd.read_excel` to read the data and save it in a variable. Then, use the `.head()` function to print out the first five rows of the data. This will ensure that we have read everything correctly.
 
 ```python
 launch_data = pd.read_excel('RocketLaunchDataCompleted.xlsx')
@@ -91,7 +91,7 @@ launch_data.head()
 
 ## Begin exploring data
 
-Finally, we can use the `.columns` function call to view all of the columns in our data. This will show us the attributes that the data has. You'll see some common attributes like names of past rockets that have been scheduled to launch, the date they were scheduled, if they actually launched, and many more. Look at these columns and try to guess which ones will have the greatest impact on determining if a rocket will launch.
+Finally, we can use the `.columns` function call to view all of the columns in our data. This will show us the attributes that the data has. You'll see some common attributes like names of past rockets that have been scheduled to launch, the dates they were scheduled, if they actually launched, and many more. Look at these columns and try to guess which ones will have the greatest impact on determining if a rocket will launch.
 
 ```python
 launch_data.columns
