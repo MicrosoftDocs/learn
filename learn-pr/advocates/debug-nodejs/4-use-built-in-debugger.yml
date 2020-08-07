@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.debug-nodejs.4-use-built-in-debugger
-title: Exercise - Use Node.js built-in debugger
+title: Exercise - Use the Node.js built-in debugger
 metadata:
-  title: Exercise - Use Node.js built-in debugger
-  description: Learn how to use Node.js built-in debugger with your programs.
+  title: Exercise - Use the Node.js built-in debugger
+  description: Learn how to use the Node.js built-in debugger with your programs.
   author: sinedied
   ms.author: yolasors
   ms.date: 12/04/2020

@@ -10,8 +10,8 @@ In this walkthrough, we will create an Azure Key vault and then create a passwor
 
     | Setting | Value | 
     | --- | --- |
-    | Subscription | **Use your subscription** |
-    | Resource group | **myRGKV** (create new) |
+    | Subscription | Use the **Concierge Subscription** |
+    | Resource group | Use the existing resource group **<rgn>[sandbox resource group name]</rgn>** |
     | Key vault name | **keyvaulttestxxx** |
     | Location | **East US** |
     | Pricing tier | **Standard** |
@@ -21,7 +21,7 @@ In this walkthrough, we will create an Azure Key vault and then create a passwor
 
 5. Once the new key vault is provisioned, click **Go to resource**. Or you can locate your new key vault by searching for it. 
 
-6. Click on the key vault **Overview** tab and examine of the **DNS name**. Applications that use your vault through the REST API will need this URI.
+6. Click on the key vault **Overview** tab and examine the **DNS name**. Applications that use your vault through the REST API will need this URI.
 
 7. Take a moment to browse through some of the other key vault options. Under **Settings** review **Keys**, **Secrets**, **Certificates**, **Access Policies**, **Firewalls and virtual networks**.
     > [!NOTE]
@@ -48,11 +48,13 @@ In this task, we will add a password to the key vault.
 
 4. Once the secret has been successfully created, click on the **ExamplePassword**, and confirm it has a status of **Enabled**
 
-5. Click the current version, and confirm the the **Secret Identifier**. This is the url value that you can now use with applications. It provides a centrally managed and securely stored password.
+5. Click the current version, and confirm the **Secret Identifier**. This is the url value that you can now use with applications. It provides a centrally managed and securely stored password.
 
 6. Click the button **Show Secret Value**, to display the password you specified earlier.
 
 Congratulations! You have created an Azure Key vault and then created a password secret in that key vault, providing a securely stored, centrally managed password for use with applications.
 
 > [!NOTE]
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
