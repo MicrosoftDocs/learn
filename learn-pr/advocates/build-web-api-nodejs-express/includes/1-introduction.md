@@ -23,5 +23,5 @@ By the end of this module, you’ll be able to:
 
 - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
 - Familiarity with editing text and code files in any text editor
-- Basic familiarity with the HTTP protocol
+- Basic familiarity with HTTP
 - Experience using the command line, including Git operations
