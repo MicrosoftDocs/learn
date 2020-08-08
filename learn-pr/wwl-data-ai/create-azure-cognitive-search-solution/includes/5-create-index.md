@@ -6,7 +6,7 @@ An index consists of a collection of JSON objects, each with one or more fields,
 
 ## Create an index for Margie's Travel
 
-The index for the Margie's Travel solution must fields that can be used to search for information in brochures and customer reviews. Choose your preferred language at the top of this page, and then follow the steps below to create an index for the Margie's Travel search solution.
+The index for the Margie's Travel solution must contain fields that can be used to search for information in brochures and customer reviews. Choose your preferred language at the top of this page, and then follow the steps below to create an index for the Margie's Travel search solution.
 
 :::zone pivot="csharp"
 
@@ -26,9 +26,9 @@ To create an index using C#, you must implement a class that represents the inde
     - **filterable**: Fields that can be included in filter expressions to return only documents that match specified constraints.
     - **sortable**: Fields that can be used to order the results.
     - **facetable**: Fields that can be used to determine values for *facets* (user interface elements used to filter the results based on a list of known field values).
-    - **retrievable**: Fields that can be included in search results (by default, all fields are retrievable).
+    - **retrievable**: Fields that can be included in search results (*by default, all fields are retrievable, so even though this attribute is omitted in the code, all of the index fields will be implicitly retrievable.*).
 3. Open the **Program.cs** code file and review the code in the **CreateIndex** function, which creates an index named **margies-index-cs** based on the **MargiesIndex** class.
-4. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
+4. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **C-Sharp/create-index** folder and select **Open in Integrated Terminal**.
 5. In the terminal for the **create-index** folder, enter the following command:
     ```bash
     dotnet run
@@ -58,8 +58,8 @@ To create an index using Python, you must use the **indexes** REST endpoint. You
     - **filterable**: Fields that can be included in filter expressions to return only documents that match specified constraints.
     - **sortable**: Fields that can be used to order the results.
     - **facetable**: Fields that can be used to determine values for *facets* (user interface elements used to filter the results based on a list of known field values).
-    - **retrievable**: Fields that can be included in search results (by default, all fields are retrievable)
-4. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
+    - **retrievable**: Fields that can be included in search results (*by default, all fields are retrievable, so even though this attribute is omitted in the JSON, all of the index fields will be implicitly retrievable.*)
+4. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **Python/create-index** folder and select **Open in Integrated Terminal**.
 5. In the terminal for the **create-index** folder, enter the following command:
     ```bash
     python3 submit-rest.py 'PUT' 'indexes/margies-index-py' 'index.json'

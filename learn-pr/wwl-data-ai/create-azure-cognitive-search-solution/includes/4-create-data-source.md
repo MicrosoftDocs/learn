@@ -9,17 +9,22 @@ In many scenarios, the index must be populated with data objects that represent 
 
 An Azure Cognitive Search data source can reference any of the following types of data store:
 
-- Azure Storage (blob or table)
-- Azure Cosmos DB
+- Azure Storage (blob or table).
+- Azure Cosmos DB.
 - Azure SQL Database, SQL Managed Instance, or SQL Server in a virtual machine.
 
 ![A data source.](../media/data-source.png)
+
+In this module, we'll use Azure Storage as the data source for a search solution, but it's important to consider the available options. Azure Storage is appropriate when the data to be indexed consists of files, such as Microsoft Office or PDF documents, while Cosmos DB is a great choice when you need to index JSON data structures and Azure SQL Database is ideal for relational data sources.
 
 ## Create a data source for Margie's Travel
 
 In the Margie's Travel scenario, the data consists of unstructured documents in Azure Storage, so you must create a data source for the blob container where the documents are stored.
 
 Choose the language you want to use at the top of this page, and follow the steps to create a data source.
+
+> [!NOTE]
+> The exercises in this module assume you will use the same language for each task to incrementally build a search solution. If you wish, you can repeat each task in both languages, but doing so will create two search solutions - you can't use a mix of language-specific instructions to create a single solution.
 
 :::zone pivot="csharp"
 
@@ -33,7 +38,7 @@ Azure Cognitive Search provides a software development kit (SDK) for Microsoft .
     - Creates a **SearchServiceClient** object for your Azure Cognitive Search service.
     - Prompts the user for input, calling the appropriate functions to create Azure Cognitive Search components.
 5. View the **CreateOrUpdateDataSource** function, which creates a data source named **margies-docs-cs** that references the Azure Storage blob container where the PDF documents are stored.
-6. Right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**. This will open a new bash terminal in this folder.
+6. Right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Integrated Terminal**. This will open a new bash terminal in this folder.
 7. In the terminal for the **create-index** folder, enter the following command:
     ```bash
     dotnet run
@@ -56,7 +61,7 @@ There is no Python SDK for creating Azure Cognitive Search objects, but you can 
     - **main**: This is the main entry-point function for the script. It loads environment variables for the secure credentials required to connect to your Azure Cognitive Search resource, and the JSON file specified in the parameters used to call the script. If the *data_source.json* file is specified, the Azure Storage blob container connection string is loaded from the environment variables and inserted into the JSON body. Then the JSON is submitted to the **az_search** function along with the specified HTTP operation and method endpoint. The response returned for the request is then displayed as JSON.
 5. Open the **.env** file, which contains environment variables for your Python code. Using environment variables enables you to specify variable parameters separately from the code that uses them, adding flexibility to your infrastructure-as-code solution. It also avoids hard-coding sensitive values, such as keys and passwords in your code - enabling you to manage code files in a shared source control repository without compromising secure data.
 6. Modify the values in the **.env** file to reflect the Azure Cognitive Search endpoint, Azure Cognitive Search admin key, and Azure Storage blob container connection string for the Azure resources you created previously.
-7. Right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**. This will open a new bash terminal in this folder.
+7. Right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Integrated Terminal**. This will open a new bash terminal in this folder.
 8. In the terminal for the **create-index** folder, enter the following command:
     ```bash
     python3 submit-rest.py 'POST' 'datasources' 'data_source.json'

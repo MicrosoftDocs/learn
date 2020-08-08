@@ -21,13 +21,12 @@ To create the Margie's Travel search solution, you'll need:
 
 To set up the Codespace:
 
-1. Open <a href = "https://online.visualstudio.com/environments/new?name=ml-basics&repo=MicrosoftDocs/km-search" target="_blank" rel="noopener">Visual Studio Codespaces</a> in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
+1. Open <a href = "https://online.visualstudio.com/environments/new?name=km-code&repo=MicrosoftDocs/km" target="_blank" rel="noopener">Visual Studio Codespaces</a> in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
 2. Create a Codespace with the following settings (if you don't already have a Visual Studio Codespaces billing plan, you'll be prompted to create one):
     - **Codespace name**: *A name for your Codespace - for example, **km-code**.*
     - **Git repository**: MicrosoftDocs/km
     - **Instance type**: Standard (Linux) 4 cores, 8GB RAM
     - **Suspend idle Codespace after**: 30 minutes
-3. Wait for the Codespace to be created. This will take around 3 minutes.
-4. If you are prompted to sign into GitHub to use the Pull Requests feature, ignore the prompt.
-5. When prompted to restore .NET dependencies, do so.
-6. After preparation is complete, you can close the **Welcome** and **Creation Log** panes. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**.
+3. Wait for the Codespace to be created. This will take around 3 minutes. Eventually the Visual Studio Code interface will open, the repository containing the code files will be cloned, and a terminal will open to install some C# components.
+4. After a few seconds, when prompted to restore .NET dependencies, do so.
+5. After preparation is complete, you can close the **Welcome** pane, and any others that have been opened during setup. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**.

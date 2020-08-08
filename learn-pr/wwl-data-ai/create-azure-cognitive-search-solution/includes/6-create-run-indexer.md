@@ -23,7 +23,7 @@ Indexing is an asynchronous operation. To check the status of an indexer, you us
 
 1. In the **C-Sharp/create-index** folder, open the **Program.cs** file and review the code in the **CreateIndexer** function, which creates an indexer that maps the metadata fields from the documents in the data source to the index fields.
 2. Review the code in the **CheckIndexerOverallStatus** function, which retrieves the indexer status.
-3. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
+3. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **C-Sharp/create-index** folder and select **Open in Integrated Terminal**.
 4. In the terminal for the **create-index** folder, enter the following command:
     ```bash
     dotnet run
@@ -42,9 +42,9 @@ The first time you submit a *PUT* request with an indexer definition, the index 
 
 Indexing is an asynchronous operation. To check the status of an indexer, you can submit a *GET* request to the indexer's **status** endpoint.
 
-1. In the **create-index** folder, open the **indexer.json** file. This file contains the JSON definition of an indexer.
+1. In the **Python/create-index** folder, open the **indexer.json** file. This file contains the JSON definition of an indexer.
 2. Review the indexer definition. It defines an indexer that maps fields from the *margies-docs-py* data source to the *margies-index-py* index. The source fields are standard fields that are extracted from blob data sources based on file metadata and the file contents after Azure Cognitive Search has performed the required document cracking to the PDF files to extract their content.
-3. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (CTRL+click if using a Mac) the **create-index** folder and select **Open in Terminal**.
+3. In the **Terminal** pane, select the bash terminal for the **create-index** folder. If you have closed this terminal, right-click (CTRL+click if using a Mac) the **Python/create-index** folder and select **Open in Integrated Terminal**.
 4. In the terminal for the **create-index** folder, enter the following command:
     ```bash
     python3 submit-rest.py 'PUT' 'indexers/margies-indexer-py' 'indexer.json'

@@ -3,13 +3,13 @@ uid: learn.wwl.create-azure-cognitive-search-solution.get-ready-to-develop
 title: Get ready to develop a search solution
 metadata:
   title: Get ready to develop a search solution
-  description: "Get ready to develop a search solution"
-  ms.date: 07/26/2020
+  description: "Prepare a development environment."
+  ms.date: 08/10/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/2-get-ready-to-develop.md)]
