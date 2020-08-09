@@ -1,25 +1,25 @@
-Development teams in your company are embracing AKS as a development platform. You realize you need to manage costs by enforcing business rules that define workload resource limits. You want to make sure developers can only deploy workloads within specific CPU and memory allocation limits. The system must prevent workloads that exceed the limits of running.
+Development teams in your company are embracing Azure Kubernetes Service (AKS) as a development platform. You realize you need to manage costs by enforcing business rules that define workload-resource limits. You want to make sure developers can deploy workloads only within specific limits for CPU and memory allocation. The system must prevent workloads that exceed those limits.
 
-In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You want to limit the resources requested by workloads deployed by your development teams. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceeds the policy's resource parameters.
+In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on your AKS cluster. You'll configure a **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy. Finally, you'll test that the policy denies the scheduling of workloads that exceed the policy's resource parameters.
 
 ## Enable the ContainerService and PolicyInsights resource providers
 
-1. Sign in to Azure Cloud Shell with your Azure Account. Select the Bash version of Cloud Shell.
+1. Sign in to Azure Cloud Shell by using your Azure account. Select the Bash version of Cloud Shell.
 
     >[!div class="nextstepaction"]
     >[Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
     >[!CAUTION]
     >
-    >This exercise makes use of preview features. Once you enable some preview features in Azure, defaults may be used for all AKS cluster created in the subscription. Test preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
+    >This exercise makes use of preview features. After you enable some preview features in Azure, defaults might be used for all AKS clusters created in the subscription. Test any preview features in non-production subscriptions to avoid unforeseen side effects in production deployments.
 
-1. Azure Policy for AKS requires the cluster version to be 1.14 or above. Run the following script to validate your AKS cluster version:
+1. Azure Policy for AKS requires the cluster version to be 1.14 or later. Run the following script to validate your AKS cluster version:
 
     ```azurecli
     az aks list
     ```
 
-    Make sure that the reported cluster version is >= 1.14
+    Make sure that the reported cluster version is 1.14 or later.
 
 1. Register the Azure Kubernetes Service provider by running the `az provider register` command:
 
@@ -39,15 +39,15 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     az feature register --namespace Microsoft.ContainerService --name AKS-AzurePolicyAutoApprove
     ```
 
-1. Check that the registration is successful by querying the feature list table using the `az feature list` command. The feature's registration can take several minutes to complete, and you'll have to check the result periodically.
+1. Check that the registration is successful by querying the feature-list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you'll have to check the result periodically.
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/AKS-AzurePolicyAutoApprove')].   {Name:name,State:properties.state}"
     ```
 
-    If the Cloud Shell session times out, then you can track the registration process via the Azure portal using the [preview onboarding page](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
+    If the Cloud Shell session times out, you can track the registration process via the Azure portal by using the [preview onboarding page](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
 
-1. Run the `az provider register` command to propagate the update once you confirmed the feature list query command shows 'Registered'
+1. Run the `az provider register` command to propagate the update after you confirm that the feature-list query command shows 'Registered'.
 
     ```azurecli
     az provider register -n Microsoft.ContainerService
@@ -55,7 +55,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
 
 ## Install the Azure CLI preview extensions
 
-1. To work with this preview, you have to use the `aks-preview` Azure CLI preview extension for AKS. You can ignore the step if you've completed it in the previous exercise.
+1. To work with this preview, you have to use the `aks-preview` Azure CLI preview extension for AKS. (You can ignore this step if you completed it in the previous exercise.)
 
     Install the latest version of the Azure CLI preview extension by running the `az extension add` command:
 
@@ -69,7 +69,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     az extension show --name aks-preview --query [version]
     ```
 
-    You can update the extension by running the `az extension update` command if you've previously installed the extension and need to update to a newer version.
+    If you've previously installed the extension and need to update it to a newer version, run the `az extension update` command:
 
     ```azurecli
     az extension update --name aks-preview

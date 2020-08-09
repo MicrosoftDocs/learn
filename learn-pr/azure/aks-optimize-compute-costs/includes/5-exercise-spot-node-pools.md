@@ -17,7 +17,7 @@ In the previous exercise, you created a standard user node pool, used the cluste
     az feature register --namespace "Microsoft.ContainerService" --name "spotpoolpreview"
     ```
 
-1. Check that the registration is successful by querying the feature list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, and you'll have to check the result periodically.
+1. Check that the registration is successful by querying the feature list table. Use the `az feature list` command to run the query. The feature's registration can take several minutes to finish, so you'll have to check the result periodically.
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/spotpoolpreview')].{Name:name,State:properties.state}"
@@ -211,7 +211,7 @@ The nodes in a spot node pool are assigned a taint that equals `kubernetes.azure
     pod/nginx created
     ```
 
-1. You can fetch more information about the running pod by using the `-o wide` flag with the `kubectl get pods` command. In this case, you want to see on which node the pod is scheduled. Make sure to query for pods in the `costsavings` namespace.
+1. You can fetch more information about the running pod by using the `-o wide` flag with the `kubectl get pods` command. In this case, you want to see which node the pod is scheduled on. Make sure to query for pods in the `costsavings` namespace.
 
     ```bash
     kubectl get pods --namespace costsavings -o wide
