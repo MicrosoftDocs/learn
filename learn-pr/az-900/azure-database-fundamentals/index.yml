@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.azure.azure-database-fundamentals
+metadata:
+  title: Azure Database Fundamentals
+  description: Learn about the database services that are available on Microsoft Azure - Azure Cosmos DB, Azure SQL, Azure Database for MySQL, and Azure Database for PostgresSQL.
+  ms.date: 09/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Azure Database Fundamentals
+summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, and Azure Database for PostgresSQL.
+abstract: | 
+  Upon completion of this module, you'll be able to describe the benefits and usage of:
+  - Azure Cosmos DB
+  - Azure SQL Database
+  - Azure Database fo MySQL
+  - Azure Database for PostgresSQL
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology
+  - Familiarity with cloud computing is helpful, but isn't necessary
+iconUrl: /learn/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+products:
+- azure
+- azure-database
+- azure-database-accounts
+- azure-sql-database
+- azure-cosmos-db
+units:
+- learn.azure.azure-database-fundamentals.introduction
+- learn.azure.azure-database-fundamentals.azure-cosmos-db
+- learn.azure.azure-database-fundamentals.azure-sql-database
+- learn.azure.azure-database-fundamentals.exercise-create-sql-database
+- learn.azure.azure-database-fundamentals.azure-mysql-database
+- learn.azure.azure-database-fundamentals.azure-postgresql-database
+- learn.azure.azure-database-fundamentals.knowledge-check
+- learn.azure.azure-database-fundamentals.summary
+badge:
+  uid: learn.azure.azure-database-fundamentals.badge
