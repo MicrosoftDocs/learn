@@ -1,22 +1,22 @@
 You can use Node.js to find and return information about files and folders.
 
-Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called "sales.json" that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
+Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
 
-In this exercise, you're going to write a Node.js program that can search for files called "sales.json" in a given folder.
+In this exercise, you'll write a Node.js program that can search for files called *sales.json* in a folder.
 
-## Sign into the sandbox
+## Sign in to the sandbox
 
-Make sure you activate the Microsoft Learn sandbox by clicking the "Activate Sandbox" at the top of this page.
+Activate the Microsoft Learn sandbox by selecting **Activate Sandbox** at the top of this page.
 
-## Setup the environment
+## Set up the environment
 
-Run the following command in the Cloud Shell on the right to ensure that you are working with the most current version of Node.js
+Run the following command in Azure Cloud Shell on the right to ensure that you're working with the most current version of Node.js:
 
 ```bash
 source <(curl -Ls https://aka.ms/install-node-lts)
 ```
 
-## Clone exercise
+## Clone the project
 
 1. Run the following command to clone the example project for this module:
 
@@ -24,25 +24,25 @@ source <(curl -Ls https://aka.ms/install-node-lts)
    git clone https://github.com/MicrosoftDocs/node-essentials && cd node-essentials/nodejs-files
    ```
 
-1. Open the Cloud Shell editor by typing the following command in the Cloud Shell and pressing "enter".
+1. Open the Cloud Shell editor by typing the following command in Cloud Shell and selecting the Enter key.
 
    ```bash
    code .
    ```
 
-1. Expand the "stores" folder and each of the numbered folders inside.
+1. Expand the *stores* folder and each of the numbered folders inside.
 
-   :::image type="content" source="../media/folder-structure.png" alt-text="project folder structure":::
+   :::image type="content" source="../media/folder-structure.png" alt-text="Screenshot that shows the project folder structure.":::
 
 ## Find the sales.json files
 
-You're going to need to find all of those files given only the top-most location - the stores folder.
+You need to find all the files in only the topmost location: the *stores* folder.
 
-### Including the "fs" module
+### Include the fs module
 
-1. Click on the "index.js" file to open it in the editor.
+1. Select the *index.js* file to open it in the editor.
 
-1. Include the "fs" module at the top of the file.
+1. Include the *fs* module at the top of the file.
 
    ```javascript
    const fs = require("fs").promises;
@@ -58,9 +58,9 @@ You're going to need to find all of those files given only the top-most location
    main();
    ```
 
-### Write a method to find the `sales.json` files
+### Write a method to find the sales.json files
 
-1. Create a new method called "findSalesFiles" that takes a "folderName" parameter
+1. Create a new method called `findSalesFiles` that takes a `folderName` parameter.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -68,7 +68,7 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-1. Add an array at the top which will hold the paths to all the sales files the program finds.
+1. Add an array at the top, which will hold the paths to all the sales files that the program finds.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -79,7 +79,7 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-1. Create a method within this function called "findFiles" that also takes a "folderName" parameter.
+1. Create a method within this function called `findFiles`, which also takes a `folderName` parameter.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -92,9 +92,9 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-   This new method "findFiles" is created inside of the main "findSalesMethod" so that it can execute as many times as necessary to find all the sales files and populate the "salesFiles" array. The "folderName" is the path to the current folder.
+   This new method `findFiles` is created inside the main `findSalesMethod` method so that it can run as many times as necessary to find all the sales files and populate the `salesFiles` array. The `folderName` value is the path to the current folder.
 
-1. Inside of the "findFiles" method, read the "currentFolder" path with the `readdirsync` method.
+1. Inside the `findFiles` method, read the `currentFolder` path with the `readdirsync` method.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -129,7 +129,7 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-1. Add an "if" statement to determine if the item is a file or a directory.
+1. Add an `if` statement to determine if the item is a file or a directory.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -152,7 +152,7 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-1. If the item _is_ a directory, call the "findFiles" method again, passing in the path to the item. If it's not, add a check to make sure the item name matches "sales.json".
+1. If the item is a directory, call the `findFiles` method again, passing in the path to the item. If it's not, add a check to make sure the item name matches *sales.json*.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -182,7 +182,7 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-1. Call this new "findSaleFiles" function from the "main" method, passing in the "stores" folder name as the location to search for files.
+1. Call this new `findSaleFiles` function from the `main` method. Pass in the *stores* folder name as the location to search for files.
 
    ```javascript
    async function main() {
@@ -191,15 +191,15 @@ You're going to need to find all of those files given only the top-most location
    }
    ```
 
-## Execute the program
+## Run the program
 
-1. Enter the following command into the Cloud Shell to run the program...
+1. Enter the following command into Cloud Shell to run the program.
 
    ```bash
    node index.js
    ```
 
-1. The program should show the following output...
+1. The program should show the following output.
 
    ```bash
    [
@@ -210,15 +210,15 @@ You're going to need to find all of those files given only the top-most location
    ]
    ```
 
-Excellent! You've successfully written a command-line program that will traverse any directory and find all the "sales.json" files inside.
+Excellent! You've successfully written a command-line program that will traverse any directory and find all the *sales.json* files inside.
 
-However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. Also, you may run into issues on other operating systems (like Windows) that use different path separators. 
+However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. Also, you might run into issues on other operating systems (like Windows) that use different path separators. 
 
-In the next section, you'll learn how to construct paths that work across operating systems using the "path" module.
+In the next section, you'll learn how to construct paths that work across operating systems by using the *path* module.
 
 ### Got stuck?
 
-If you got stuck at any point in this exercise, here is the completed code. Remove everything in `index.js` and replace it with this solution.
+If you got stuck at any point in this exercise, here's the completed code. Remove everything in *index.js* and replace it with this solution.
 
 ```javascript
 const fs = require("fs");

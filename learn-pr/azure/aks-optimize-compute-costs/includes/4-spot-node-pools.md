@@ -85,7 +85,7 @@ To use spot node pools, you must enable the **spotpoolpreview** feature on your 
 
 To register the **spotpoolpreview** feature:
 
-1. Use the `az feature register` command to register the **spotpoolpreview** feature. This command takes two parameters: *namespace* identifies the resource provider you're registering the feature with, and *name* identifies the feature.
+1. You first register the **spotpoolpreview** feature using the `az feature register` command. This command takes two parameters. The *namespace* identifies the resource provider you're registering the feature, and the *name* of the feature.
 
     You register the **spotpoolpreview** feature with the **Microsoft Container Service** resource provider.
 
