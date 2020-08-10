@@ -34,7 +34,7 @@ Additionally, Azure Monitor enables you to archive collected data in Azure Stora
 
 - Trigger notifications via SMS or email.
 - Trigger a remediation action implemented by Azure Logic Apps, Azure Functions, or a runbook in Azure Automation.
-- Raise an incident and work items by leveraging integration between Azure Monitor and your internal IT service Management (ITSM) platform.
+- Raise an incident and work items by leveraging integration between Azure Monitor and your internal IT Service Management (ITSM) platform.
 
 You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases the Dependency Agent as well. This agent-based approach enables you to monitor the operating system and its workloads using Azure Automation or Azure Monitor–based solutions such as Update Management or Change Tracking and Inventory. You can also leverage Azure Security Center to identify vulnerabilities and potential threats.
 
@@ -66,13 +66,13 @@ To enable monitoring of a single VM, use the following procedure:
 3. Select the appropriate VM, and then under **Monitoring**, select **Insights**.
 4. In the details pane, select **Enable**.
 
-![A screenshot of the Insights page for a VM in Azure, with the Enable button in the details pane.](../media/m16-enable-monitor-1.png)
+   [![A screenshot of the Insights page for a VM in Azure, with the Enable button in the details pane.](../media/m16-enable-monitor-1.png)](../media/m16-enable-monitor-1.png#lightbox)
 
 ## Review monitored data
 
 After you have enabled Insights, you can monitor your VM. In the Azure portal, navigate to and select the appropriate VM. Then, under **Monitoring**, select **Insights**. This will open the **Map** tab for your VM.
 
-![A screenshot of the Maps tab on the Insights page for the ContosoVM1 VM in Azure. A map has details of open TCP ports. A VM summary has information about the VM's OS, IP address, and links for Health, Machine properties, and Azure VM properties. There are also links to access Properties (selected), Log Events, Alerts, and Connections.](../media/m16-insights-map.png)
+[![A screenshot of the Maps tab on the Insights page for the ContosoVM1 VM in Azure. A map has details of open TCP ports. A VM summary has information about the VM's OS, IP address, and links for Health, Machine properties, and Azure VM properties. There are also links to access Properties (selected), Log Events, Alerts, and Connections.](../media/m16-insights-map.png)](../media/m16-insights-map.png#lightbox)
 
 Within the map, you can select items to retrieve additional details. For example, to review connections to DNS servers, select the Port: 53 node. This action displays current connections over port 53 (the port used for DNS name resolution).
 
@@ -95,4 +95,4 @@ To review performance data, select the **Performance** tab in **Insights**. The 
 - Bytes Sent Rate
 - Bytes Received Rate
 
-![A screenshot of the Performance tab on the Insights page for a VM in Azure. Disk performance data displays in a numeric table, along with charts for CPU Utilization % and Available Memory.](../media/m16-insights-performance.png)
+[![A screenshot of the Performance tab on the Insights page for a VM in Azure. Disk performance data displays in a numeric table, along with charts for CPU Utilization % and Available Memory.](../media/m16-insights-performance.png)](../media/m16-insights-performance.png#lightbox)

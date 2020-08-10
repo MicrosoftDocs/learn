@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/09/2020
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -16,17 +16,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Maria at Contoso has been tasked with enabling Azure Monitor on an on-premises VM workload. What information does Maria need to complete the process of installing the Log Analytics agent? Select the best answer."
+  - content: "Maria at Contoso has been tasked with enabling Azure Monitor on an on-premises VM workload. What information does Maria need to complete the process of installing the Log Analytics agent?"
     choices:
-    - content: "Maria needs the Workspace ID."
+    - content: "Maria needs ONLY the Workspace ID."
       isCorrect: false
       explanation: "That's incorrect. Maria needs both the Workspace ID and the Primary key."
-    - content: "Maria needs the Primary key."
+    - content: "Maria needs ONLY the Primary key."
       isCorrect: false
       explanation: "That's incorrect. Maria needs both the Workspace ID and the Primary key."
-    - content: "Maria needs both the Workspace ID and the Primary key."
+    - content: "Maria needs BOTH the Workspace ID and the Primary key."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. Maria needs both of these to configure the agent,"
   - content: "Maria decides to enable monitoring on a VM in Azure that's running Windows Server. She opens the Azure portal, navigates to the required VM, and selects the **Insights** page, but she cannot enable monitoring. Which of the following options is the most likely reason?"
     choices:
     - content: "Maria must install the Log Analytics agent first."
