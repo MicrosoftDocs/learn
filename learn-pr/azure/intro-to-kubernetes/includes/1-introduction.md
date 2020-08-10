@@ -27,9 +27,9 @@ You're using containerized instances to quickly deploy into new customer regions
 
 In this module, you will:
 
+- Describe how Kubernetes supports container orchestration
+- Describe the difference between control planes and nodes
 - Evaluate whether Kubernetes is an appropriate orchestration platform for a given workload
-- Describe the difference between master nodes and nodes in a Kubernetes cluster
-- Describe how the components of a Kubernetes cluster work and support compute container orchestration
 
 ## Prerequisites
 

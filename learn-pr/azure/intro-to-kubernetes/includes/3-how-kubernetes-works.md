@@ -14,11 +14,11 @@ Recall from earlier that an orchestrator is a system that deploys and manages ap
 
 :::image type="content" source="../media/3-cluster-arch-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
 
-A Kubernetes cluster contains at least one main node and and one or more nodes. Both the master and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads.
+A Kubernetes cluster contains at least one main node and and one or more nodes. Both the control planes and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads.
 
 It's also possible to run Microsoft workloads by using Windows Server 2019 or later on cluster nodes. For example, assume that the data processing service in the drone tracking application is written as a .NET 4.5 application that uses specific Windows OS API calls. This service can run only on nodes that run a Windows Server OS.
 
-Let's look at both the master and worker nodes, and the software that runs on each, in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
+Let's look at both the control planes and worker nodes, and the software that runs on each, in more detail. Understanding the role of each component and where each component runs in the cluster helps you when it comes to installing Kubernetes.
 
 ### Kubernetes control plane
 

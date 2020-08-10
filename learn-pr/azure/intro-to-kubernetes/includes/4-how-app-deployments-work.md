@@ -59,7 +59,7 @@ For example, each of the services in the drone tracking application has specific
 
 ## Kubernetes networking
 
-Assume that you have a cluster with one master and two nodes. When you add nodes to Kubernetes, an IP address is automatically assigned to each node from an internal private network range. For example, assume that your local network range is 192.168.1.0/24.
+Assume that you have a cluster with one control planes and two nodes. When you add nodes to Kubernetes, an IP address is automatically assigned to each node from an internal private network range. For example, assume that your local network range is 192.168.1.0/24.
 
 :::image type="content" source="../media/4-nodes-assigned-ip-addresses.svg" alt-text="Diagram of nodes with assigned IP addresses in a cluster." border="false":::
 
