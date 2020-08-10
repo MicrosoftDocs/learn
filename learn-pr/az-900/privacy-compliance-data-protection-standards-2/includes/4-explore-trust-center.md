@@ -1,7 +1,9 @@
 <div style="background:yellow;">
 TODO: In this part, ...
 
-TODO: TWT ...
+TODO: As a learner, I saw some compliance offerings, the Privacy policy, the OST and the DPA. The Trust Center feels like more words about the same things. How can we more strongly differentiate the TC from what we've discussed so far? How does this relate to TWT?
+
+Also, is this the same things we're talking about in unit 2? If so, should we combine the two?
 </div>
 
 The [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true) showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
@@ -18,9 +20,16 @@ The Trust Center is a great resource for other people in your organization who m
 
 ## Explore the Trust Center
 
-As an optional exercise, let's take a brief look at TODO. Access to the Trust Center doesn't require an Azure subscription or a Microsoft account.
+As an optional exercise, let's take a brief look at the Trust Center's entry for ISO 27001, a commonly-used information security standard.
 
-1. Go to the [Microsoft compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?azure-portal=true) for Microsoft 365.
+Access to the Trust Center doesn't require an Azure subscription or a Microsoft account.
+
+1. Go to the [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true).
+1. Locate the **Additional resources** section on the page. Under **Compliance offerings**, select **Learn more**.
+
+    :::image type="content" source="../media/4-trust-center-compliance.png" alt-text="A screenshot of the compliance offerings section on the trust center.":::
+
+    You're taken to [Microsoft compliance offerings](https://docs.microsoft.com/microsoft-365/compliance/offering-home?azure-portal=true).
 
     Note that the offerings are grouped into these categories: **Global**, **US Government**, **Industry**, and **Regional**.
 

@@ -1,8 +1,8 @@
 [Azure China 21Vianet](https://docs.microsoft.com/azure/china?azure-portal=true) is operated by 21Vianet is a physically separated instance of cloud services located in China, independently operated and transacted by Shanghai Blue Cloud Technology Co., Ltd. ("21Vianet"), a wholly owned subsidiary of Beijing 21Vianet Broadband Data Center Co., Ltd. 
 
-According to the China Telecommunication Regulation (in Chinese), providers of cloud services (IaaS and PaaS) must have value-added telecom permits. Only locally registered companies with less than 50-percent foreign investment qualify for these permits. To comply with this regulation, the Azure service in China is operated by 21Vianet, based on the technologies licensed from Microsoft. 
+According to the China Telecommunication Regulation (in Chinese), providers of cloud services (IaaS and PaaS) must have value-added telecom permits. Only locally registered companies with less than 50-percent foreign investment qualify for these permits. To comply with this regulation, the Azure service in China is operated by 21Vianet, based on the technologies licensed from Microsoft.
 
-![Screenshot of the Microsoft Azure China website home page.](../media/azure-china-21Vianet.png)
+:::image type="content" source="../media/azure-china-21vianet.png" alt-text="A screenshot of the Microsoft Azure China website home page.":::
 
 As the first foreign public cloud service provider offered in China in compliance with government regulations, Azure China 21Vianet provides world-class security as discussed on the [Trust Center](https://www.trustcenter.cn/compliance/default.html?azure-portal=true), as required by Chinese regulations for all systems and applications built on its architecture.
 

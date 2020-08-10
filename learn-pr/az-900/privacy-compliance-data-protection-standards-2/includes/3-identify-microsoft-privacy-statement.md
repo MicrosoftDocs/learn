@@ -1,8 +1,8 @@
-<div style="background:yellow;">
-TODO: In this part, ...
+In this part, you'll learn how the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum TODO.
 
-TODO: TWT ...
-</div>
+For Tailwind Traders, understanding Microsoft's commitment to privacy helps ensure that their customer and application data will be protected.
+
+Let's begin with a brief look at the Microsoft Privacy Statement.
 
 ## What's in the Microsoft Privacy Statement?
 
@@ -18,7 +18,11 @@ The [Online Services Terms](https://www.microsoft.com/licensing/terms/product/Fo
 
 ## What is the Data Protection Addendum?
 
-The [Online Services Data Protection Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67&azure-portal=true) (DPA) further defines the data processing and security terms for online services. These include:
+<div style="background:yellow;">
+TODO: The link doesn't say "Data Production Addendum" on it. We were given this link to use. Do we need to change this copy, or does this phrasing appear on the exam?
+</div>
+
+The [Data Protection Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67&azure-portal=true) (DPA) further defines the data processing and security terms for online services. These include:
 
 * Compliance with laws.
 * Disclosure of processed data.
@@ -27,7 +31,3 @@ The [Online Services Data Protection Addendum](https://www.microsoftvolumelicens
 * Data transfer, retention, and deletion.
 
 Transparency is important when it comes to how a cloud provider communicates its privacy policies and how it treats your data. The Microsoft Privacy Statement, the OST, and the DPA detail Microsoft's commitment to protecting data and privacy in the cloud.
-
-<div style="background:yellow;">
-TODO: Tie back briefly to TWT. What did they learn or what will they do next?
-</div>

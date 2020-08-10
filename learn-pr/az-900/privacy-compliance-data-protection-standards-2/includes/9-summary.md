@@ -2,6 +2,10 @@
 TODO: This is a WIP. Update this after we complete the units.
 </div>
 
+<div style="background:yellow;">
+TODO: One thought here is to *briefly* recap on each area we covered, but emphasize *when* you access each resource.
+</div>
+
 In this module you learned how to find out about Microsoft's approach to privacy, security and compliance. You've explored resources specific to online services, including Azure, and how governments can use Azure and meet their specific needs.
 
 You learned about:
@@ -14,6 +18,8 @@ You learned about:
 + Azure Government and Azure China capabilities
 
 Now you can pass on any of these Microsoft resources to other people in your organization with an interest in privacy, security and compliance, and you be confident building your solutions on Azure. 
+
+Keep in mind that compliance status for Azure products and services does not automatically translate to compliance for the service or application you build or host on Azure. Customers are responsible for ensuring that they achieve compliance with the appropriate legal and regulatory standards.
 
 ## Learn more
 

@@ -1,36 +1,30 @@
-Whether you run your applications in the datacenter or in the cloud, it's still your responsibility to ensure that your applications and infrastructure comply with applicable regulations and standards. In this part, you'll learn <span style="background:yellow;">TODO</span>.
-
-_Compliance_ means to adhere to a some law or standard.
-
-_Regulatory compliance_ refers to the discipline and process of ensuring that a company follows the laws enforced by governing bodies in their geography or rules required by voluntarily adopted industry standards.
-
-For IT regulatory compliance, people and processes monitor corporate systems in an effort to detect and prevent violations of policies and procedures established by these governing laws, regulations, and standards.
-
 As Tailwind Traders moves to running their applications in the cloud, they want to know what regulatory compliance frameworks Azure adheres to. They ask:
+
+<div style="background:yellow;">
+TODO: We don't really go into the third item. Remove it or say more?
+</div>
 
 * How compliant is Azure when it comes to the handling of personal data?
 * How compliant are each of Azure's individual services?
 * How can I deploy my own cloud-based solutions that have regulatory or compliance requirements?
 
 <div style="background:yellow;">
-TODO: Could this be a good video? From here to compliance offerings.
-
-(Tom) Yes!
+TODO: Consider replacing some bits or supplementing with a video.
 </div>
 
 Microsoft's online services build upon a common set of regulatory and compliance controls. These controls address today's regulations and adapt as regulations evolve.
 
+<div style="background:yellow;">
+TODO: Is it worth defining "controls" in this context, or should we leave it or reword it?
+</div>
+
 ## What compliance offerings are available on Azure?
 
-A _compliance offering_ is a <span style="background:yellow;">TODO</span>.
-
-<div style="background:yellow;">
-TODO: We say "offerings" a few times, but I'm still not sure what you -get-. For example, we say SOX compliance in the graphic below. So what, do I need to use or buy something? Does Azure adhere to this and you're simply telling me? Something else?
-</div>
+When we say _compliance offering_, we mean <span style="background:yellow;">TODO</span>.
 
 Although there are many more, the following image gives you a sense of the types of compliance offerings that are available on Azure.
 
-![Screenshot of some of the Azure compliance offerings grouped under categories of Global, US Gov, Industry, and Regional.](../media/compliance-matrix-1.png)
+:::image type="content" source="../media/compliance-matrix-1.png" alt-text="A screenshot of some of the Azure compliance offerings grouped under categories of Global, US Gov, Industry, and Regional.":::
 
 Let's look at just a few of the compliance offerings available on Azure:
 
@@ -67,7 +61,3 @@ TODO: This section is pretty dense. Is it worth reframing in more lay terms? In 
     The UK Government G-Cloud is a cloud computing certification for services used by government entities in the United Kingdom. Azure has received official accreditation from the UK Government.
 
 While not all of these compliance offerings will be relevant to you or your team, they show that Microsoft's commitment to compliance is comprehensive, ongoing, and independently tested and verified.
-
-<div style="background:yellow;">
-TODO: Tie back briefly to TWT. What did they learn or what will they do next?
-</div>

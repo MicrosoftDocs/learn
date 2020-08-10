@@ -12,12 +12,11 @@ TODO: Delete this, but it's the OD we need to cover:
 </div>
 
 ---
+In this module, you'll learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
 
-<div style="background:yellow;">
-TODO: 
+If your organization is a government department or agency, or you need to deploy to regions of China, you'll also learn about some additional considerations that you need to make that don't apply to other Azure users.
 
-In this module, you'll learn about the Microsoft Privacy Statement, the terms of the services that Azure provides, and other resources that contain privacy and compliance information. You wil also learn about the Azure offerings specific to government and to the regions of China.
-</div>
+In general, _compliance_ means to adhere to some law or standard. _Regulatory compliance_ refers to the discipline and process of ensuring that a company follows the laws that governing bodies enforce.
 
 ## Meet Tailwind Traders
 
@@ -29,12 +28,11 @@ Tailwind Traders is planning their migration to the cloud. They're used to havin
 
 Knowing that moving an application to the cloud means that data is now outside of their own walls, and understanding that the cloud provider has access to the server hardware and infrastructure, how is the privacy of their application data protected?
 
-In addition, 
-* Must adhere to X, Y, and Z compliance frameworks
+## How will Tailwind Traders stay compliant?
 
-And because Tailwind Traders operates globally, they want to understand  so wants to know about govt options.
+Tailwind Traders must also adhere to multiple regulatory and compliance frameworks. For example, they must follow certain rules to ensure that they properly handle credit card data. Although they'll still need to ensure that their applications comply with applicable regulations and standards, how does infrastructure on Azure already adhere to these same standards?
 
-To answer these question, you'll start with the three main sources that detail Microsoft's approach to privacy and data protection.
+To answer theses questions, you'll start with the three main sources that detail Microsoft's approach to privacy and data protection.
 
 ## Learning objectives
 
