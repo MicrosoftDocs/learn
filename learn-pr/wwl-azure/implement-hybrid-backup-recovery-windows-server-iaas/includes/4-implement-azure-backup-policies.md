@@ -19,7 +19,7 @@ You can download the MARS agent direct from the Azure portal using the following
 4. Select **Prepare Infrastructure**.
 5. For **Prepare infrastructure**, in the **Install Recovery Services agent** section, download the MARS agent.
 
-![A screenshot of the Prepare infrastructure blade in the Azure portal. Step 1 provides a link to download the MARS recovery services agent.](../media/m20-download-microsoft-azure-recovery-services.png)
+   ![A screenshot of the Prepare infrastructure blade in the Azure portal. Step 1 provides a link to download the MARS recovery services agent.](../media/m20-download-microsoft-azure-recovery-services.png)
 
 6. In the download menu, select **Save**. The **MARSagentinstaller.exe** file is saved automatically to your **Downloads** folder.
 7. Select **Already download or using the latest Recovery Services Agent**, and then selecting **Download** to download the vault credentials.
@@ -40,7 +40,7 @@ You can install the MARS agent on your computer using the following procedure. R
 7. After the agent is installed, select **Proceed to Registration**.
 8. In the **Register Server Wizard**, on the **Vault Identification** blade, browse to and select the credentials file that you downloaded.
 
-![A screenshot of the Vault Identification page of the Register Server Wizard. The Vault Credentials have been populated..](../media/m20-registration.png)
+   ![A screenshot of the Vault Identification page of the Register Server Wizard. The Vault Credentials have been populated..](../media/m20-registration.png)
 
 9. Select **Next**.
 10. On the **Encryption Setting** page, specify a passphrase that will be used to encrypt and decrypt backups for the machine:
@@ -69,13 +69,13 @@ To create a backup policy, use the following procedure:
    - Retention settings specify which recovery points to store and how long to store them.
    - For a daily retention setting, you indicate that at the time specified for the daily retention the latest recovery point will be retained for the specified number of days. For a monthly retention policy, you could indicate that the recovery point created on the 30th of every month should be stored for 12 months.
    - Retention for daily and weekly recovery points usually coincide with the backup schedule. When the schedule triggers a backup, the recovery point that the backup creates is stored for the duration that the daily or weekly retention policy specifies.
-1. After specifying how to store the copies, select **Next**.
+9. After specifying how to store the copies, select **Next**.
 
-![A screenshot of the Select Retention Policy (Files and Folders) page in the Schedule Backup Wizard. The administrator has selected Weekly Retention Policy, Monthly Retention Policy, and Yearly Retention Policy. ](../media/m20-retention.png)
+   [![A screenshot of the Select Retention Policy (Files and Folders) page in the Schedule Backup Wizard. The administrator has selected Weekly Retention Policy, Monthly Retention Policy, and Yearly Retention Policy. ](../media/m20-retention.png)](../media/m20-retention.png#lightbox)
 
-9. On the **Choose Initial Backup Type** page, decide whether you want to perform the initial backup over the network, or use an offline backup. To perform the initial backup over the network, select **Automatically over the network**, and then select **Next**.
-10. On the **Confirmation page**, review the information, and then select **Finish**.
-11. After the wizard finishes creating the backup schedule, select **Close**.
+10. On the **Choose Initial Backup Type** page, decide whether you want to perform the initial backup over the network, or use an offline backup. To perform the initial backup over the network, select **Automatically over the network**, and then select **Next**.
+11. On the **Confirmation page**, review the information, and then select **Finish**.
+12. After the wizard finishes creating the backup schedule, select **Close**.
 
 ## Create a policy through the Azure portal
 

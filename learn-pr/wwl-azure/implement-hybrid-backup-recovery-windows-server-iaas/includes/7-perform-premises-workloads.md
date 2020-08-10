@@ -20,7 +20,7 @@ By default, vaults use GRS. If the vault is your primary backup mechanism, we re
 2. On the **Properties** page, within **Backup Configuration**, select **Update**.
 3. Select the storage replication type, and then select **Save**.
 
-![A screenshot of the Backup Configuration blade in the Azure portal. The administrator has selected Geo-redundant.](../media/m20-backup-configuration.png)
+[![A screenshot of the Backup Configuration blade in the Azure portal. The administrator has selected Geo-redundant.](../media/m20-backup-configuration.png)](../media/m20-backup-configuration.png#lightbox)
 
 > [!CAUTION]
 > You can't modify the storage replication type after you set up the vault and it contains backup items. If you want to do this, you need to re-create the vault.
@@ -56,11 +56,11 @@ If you accidentally delete a file and want to restore it to the same machine fro
 3. On the **Getting Started** page, to restore the data to the same server or computer, select **This server**, and then select **Next**.
 4. On the **Select Recovery Mode** page, select **Individual files and folders**, and then select **Next**.
 
-> [!NOTE]
-> The option to restore individual files and folders requires Microsoft .NET Framework 4.5.2 or later. If you don't have the **Individual files and folders** option, you must upgrade .NET Framework to version 4.5.2 or later, and try again.
+   > [!NOTE]
+   > The option to restore individual files and folders requires Microsoft .NET Framework 4.5.2 or later. If you don't have the **Individual files and folders** option, you must upgrade .NET Framework to version 4.5.2 or later, and try again.
 
-> [!TIP]
-> The Individual files and folders option allows for quick access to the recovery point data. It's suitable for recovering individual files with sizes totaling less than 80 GB, and offers transfer or copy speeds up to 6 megabits per second (Mbps) during recovery. The Volume option recovers all backed up data in a specified volume. This option provides faster transfer speeds (up to 60 Mbps), which is ideal for recovering large-sized data or entire volumes.
+   > [!TIP]
+   > The Individual files and folders option allows for quick access to the recovery point data. It's suitable for recovering individual files with sizes totaling less than 80 GB, and offers transfer or copy speeds up to 6 megabits per second (Mbps) during recovery. The Volume option recovers all backed up data in a specified volume. This option provides faster transfer speeds (up to 60 Mbps), which is ideal for recovering large-sized data or entire volumes.
 
 5. On the **Select Volume and Date** page, select the volume that contains the files and folders you want to restore.
 6. On the calendar, select a recovery point. Dates in **bold** indicate the availability of at least one recovery point. If multiple recovery points are available within a single date, choose the specific recovery point from the **Time** drop-down menu.
@@ -87,10 +87,10 @@ To recover data from Azure Backup to a different machine:
 2. Ensure that the target machine and the source machine are registered to the same Recovery Services vault.
 3. Select **Recover Data**.
 4. In the **Recover Data Wizard**, on the **Getting Started** page, select **Another server**.
-5. Provide the vault credential file that corresponds to the sample vault, and then select **Next**.
+5. Provide the vault credential file that corresponds to the sample vault, and then select **Next**. After you provide a valid vault credential, the name of the corresponding backup vault should display.
 
-   If the vault credential file is invalid (or expired), download a new vault credential file from the sample vault in the Azure portal
-   After you provide a valid vault credential, the name of the corresponding backup vault should display.
+   > [!TIP]
+   > If the vault credential file is invalid (or expired), download a new vault credential file from the sample vault in the Azure portal.
 
 6. On the **Select Backup Server** page, select the source machine from the list of displayed machines, provide the passphrase, and then select **Next**.
 7. On the **Select Recovery Mode** page, select **Individual files and folders**, and then select **Next**.

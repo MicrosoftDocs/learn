@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-backup-recovery-with-windows-server-iaas.describe-azure-backup
-title: Describe azure backup
+title: Describe Azure Backup
 metadata:
-  title: Describe azure backup
-  description: "Describe azure backup"
-  ms.date: 08/09/2020
+  title: Describe Azure Backup
+  description: "Describe Azure Backup"
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

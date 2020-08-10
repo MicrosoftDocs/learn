@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/09/2020
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ quiz:
       explanation: "That's incorrect. Larissa can only change this setting before a Recovery Vault service starts providing protection for items."
     - content: "Larissa can change this setting, but only before a Recovery Vault service starts providing protection for items."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. Larissa can change this setting, but only before a Recovery Vault service starts providing protection for items."
     - content: "Larissa cannot change this setting at any time."
       isCorrect: false
       explanation: "That's incorrect. Larissa can change this setting, but only before a Recovery Vault service starts providing protection for items."
@@ -43,7 +43,7 @@ quiz:
       explanation: "That's incorrect. Deleted backup data is retained for an additional 14 days from the date of the deletion."
     - content: "Larissa can recover the removed backup data for up to 14 days after deletion."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. It's recoverable for only 14 days after deletion"
     - content: "Larissa can recover the removed backup data for up to 21 days after deletion."
       isCorrect: false
       explanation: "That's incorrect. It's recoverable for only 14 days after deletion."

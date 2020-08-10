@@ -34,12 +34,12 @@ To create a Recovery Services vault, complete the following steps.
    - **Vault name**. Enter a name to identify the vault. The name must be unique to the Azure subscription.
    - **Region**. Select the geographic region for the vault. To create a vault to protect any data source, the vault must be in the same region as the data source.
 
-> [!TIP]  
-> If you're not sure of the location of your data source, close the dialog box, then go to the list of your resources in the Azure portal. If you have data sources in multiple regions, create a Recovery Services vault for each region. Create the vault in the first location before you create the vault for another location. you don't need to specify storage accounts to store the backup data. The Recovery Services vault and Azure Backup does this automatically.
+   > [!TIP]  
+   > If you're not sure of the location of your data source, close the dialog box, then go to the list of your resources in the Azure portal. If you have data sources in multiple regions, create a Recovery Services vault for each region. Create the vault in the first location before you create the vault for another location. you don't need to specify storage accounts to store the backup data. The Recovery Services vault and Azure Backup does this automatically.
 
 7. When you're ready to create the Recovery Services vault, select **Create**.
 
-![A screenshot of the Create Recovery Services vault blade in the Azure portal. The administrator has defined the Subscription, Resource group, and Region, and entered the vault name ContosoRecoveryVault.](../media/m20-add-recovery-vault-1.png)
+   ![A screenshot of the Create Recovery Services vault blade in the Azure portal. The administrator has defined the Subscription, Resource group, and Region, and entered the vault name ContosoRecoveryVault.](../media/m20-add-recovery-vault-1.png)
 
 > [!TIP]
 > It can take a while to create the Recovery Services vault. Monitor the status notifications in the **Notifications** area. After your vault is created, it's added to the list of Recovery Services vaults. If your vault has not been added, select **Refresh**.
@@ -48,4 +48,4 @@ To create a Recovery Services vault, complete the following steps.
 
 You can learn more by reviewing the following document:
 
-- [Managing your Recovery Services vaults in the portal](https://aka.ms/recovery-services-vault-overview?azure-portal=true)
+- [Recovery Services vaults overview](https://aka.ms/recovery-services-vault-overview?azure-portal=true)

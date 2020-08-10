@@ -20,7 +20,7 @@ By the end of this module, you'll be ready to help the Contoso IT team use Azure
 After completing this module, you will be able to:
 
 - Describe Azure Backup.
-- Implement Recovery Vaults.
+- Implement Azure Recovery Services vaults.
 - Implement Azure Backup policies.
 - Recover Windows IaaS VMs.
 - Perform file and folder recovery.
