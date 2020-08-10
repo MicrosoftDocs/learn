@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/azure-functionsp.md)]
+  [!include[](includes/azure-functions.md)]
