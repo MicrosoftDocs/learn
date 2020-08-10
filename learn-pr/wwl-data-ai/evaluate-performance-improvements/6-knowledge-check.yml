@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/06/2020
+  ms.date: 08/07/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     - content: "3rd normal form"
       isCorrect: false
       explanation: "That's incorrect. 3rd normal form would not be a good fit for a data warehouse structure."
-  - content: "What is the minimum number rows do you need to bulk insert into a columnstore index?"
+  - content: "What is the minimum number of rows you need to bulk insert into a columnstore index?"
     choices:
     - content: "102,400"
       isCorrect: true

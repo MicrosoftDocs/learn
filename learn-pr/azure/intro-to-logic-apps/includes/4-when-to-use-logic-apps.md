@@ -8,7 +8,7 @@ Logic Apps helps you coordinate the flow of data through disparate systems. The 
 | --- | --- |
 | **Integration** | The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option. |
 | **Performance** | The next consideration is performance. The Logic Apps execution engine scales your apps automatically. Logic Apps can process large data-sets in parallel to let you achieve high throughput. However, they don't guarantee super-fast activation or enforce real-time constraints on execution time. If you're looking for low subsecond response time, then Logic Apps may not be the best fit. |
-| **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops so your apps can make decisions based on your data. You can build highly complex and deeply nested conditionals into your Logic Apps. There are two reasons you might prefer not to. First, it's often easier to write conditional logic in code rather than using the Logic Apps Designer. Second, embedded business rules aren't easily sharable with your other apps. Some people like including complex business rules directly in their Logic Apps. Others think it's simpler to write something like an Azure Function to encapsulate the conditional logic and invoke that Function from all their apps. |
+| **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops so your apps can make decisions based on your data. You can build highly complex and deeply nested conditionals into your Logic Apps. There are two reasons you might prefer not to. First, it's often easier to write conditional logic in code rather than using the Logic Apps Designer. Second, embedded business rules aren't easily sharable with your other apps. Some people like including complex business rules directly in their Logic Apps. Others think it's simpler to write something like an Azure function to encapsulate the conditional logic and invoke that function from all their apps. |
 | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. If so, then you're ready to go. If not, then you'll need to create a custom connector. If the service has an existing REST or SOAP API, you can make the custom connector in a few hours without writing any code. If not, then you'll need to create the API first before making the connector. |
 |   |   |
 
@@ -28,13 +28,13 @@ Our fictional shoe company needed to monitor social media, move old videos to ar
 
 There are a few interesting things to think about in this analysis.
 
-* The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process.
+- The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process.
 
-* The online sales process would likely include complex business logic. For example, we might have different approval processes based on the purchase amount or different shippers based on the destination. Logic Apps can easily handle these conditions. It's up to us whether we want to embed these business rules in our app.
+- The online sales process would likely include complex business logic. For example, we might have different approval processes based on the purchase amount or different shippers based on the destination. Logic Apps can easily handle these conditions. It's up to us whether we want to embed these business rules in our app.
 
-* The online sales process would probably use a mix of built-in and custom connectors. We could use built-in connectors for email notifications and database access but would probably need a custom connector to talk to our payment processing service.
+- The online sales process would probably use a mix of built-in and custom connectors. We could use built-in connectors for email notifications and database access but would probably need a custom connector to talk to our payment processing service.
 
-* The performance of Logic Apps will work well for all the tasks. Some of them may process large amounts of data, but Logic Apps scales automatically to handle high throughput or spikes in demand. None of these tasks require very low latency response time. We'd need to have near-realtime constraints for that to be an issue.
+- The performance of Logic Apps will work well for all the tasks. Some of them may process large amounts of data, but Logic Apps scales automatically to handle high throughput or spikes in demand. None of these tasks require very low latency response time. We'd need to have near-realtime constraints for that to be an issue.
 
 Logic Apps could work for all of these tasks. The online sales process is the only one where we'd want to weigh all our options. Logic Apps would be a good choice if we had the resources to build the custom connectors we'd need.
 
