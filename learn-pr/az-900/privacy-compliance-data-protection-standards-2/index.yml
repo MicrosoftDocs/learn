@@ -3,27 +3,29 @@ uid: learn.examine-privacy-compliance-data-protection-standards
 metadata:
   title: Examine privacy, compliance, and data protection standards
   description: "Being able to trust in your cloud, trust in your solutions, and being able to use Azure, even when in a government role, are all key factors to picking your cloud provider. AZ-900"
-  ms.date: 07/05/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Examine privacy, compliance, and data protection standards
 summary: Being able to trust in your cloud, trust in your solutions, and being able to use Azure, even when in a government role, are all key factors to picking your cloud provider.
 abstract: |
-  After completing this module, you will be able to:
-  * List compliance terms and requirements.
-  * Review the Microsoft Privacy Statement.
-  * Discuss the Trust Center, Compliance Manager, and Service Trust Portal.
-  * Explain government specific Azure capabilities.
+  After completing this module, you'll be able to:
+
+  * Explain the types of compliance offerings that are available on Azure.
+  * Access the Microsoft Privacy Statement to learn what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
+  * Gain insight into regulatory standards and compliance on Azure from the Trust Center and from the Azure compliance documentation.
+  * Explain Azure capabilities that are specific to government agencies.
 prerequisites: |
-  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+  There are no prerequisites for this module, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/examine-privacy-compliance-data-protection-standards.svg
 hidden: true
 levels:
 - beginner
 roles:
 - administrator
+- developer
 - business-owner
 - business-user
 - student
@@ -33,10 +35,10 @@ products:
 units:
 - learn.examine-privacy-compliance-data-protection-standards.1-introduction
 - learn.examine-privacy-compliance-data-protection-standards.2-explore-compliance-terms-requirements
-- learn.examine-privacy-compliance-data-protection-standards.3-identify-microsoft-privacy-statement
+- learn.examine-privacy-compliance-data-protection-standards.3-access-microsoft-privacy-statement
 - learn.examine-privacy-compliance-data-protection-standards.4-explore-trust-center
-- learn.examine-privacy-compliance-data-protection-standards.5-explore-compliance-manager
-- learn.examine-privacy-compliance-data-protection-standards.6-identify-azure-government-services
+- learn.examine-privacy-compliance-data-protection-standards.5-access-azure-compliance-documentation
+- learn.examine-privacy-compliance-data-protection-standards.6-what-is-azure-government
 - learn.examine-privacy-compliance-data-protection-standards.7-identify-azure-china-21vianet
 - learn.examine-privacy-compliance-data-protection-standards.8-knowledge-check
 - learn.examine-privacy-compliance-data-protection-standards.9-summary

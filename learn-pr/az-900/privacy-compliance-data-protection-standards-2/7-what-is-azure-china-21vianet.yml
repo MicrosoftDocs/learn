@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
-uid: learn.examine-privacy-compliance-data-protection-standards.7-identify-azure-china-21vianet
-title: Identify Azure China 21Vianet
+uid: learn.examine-privacy-compliance-data-protection-standards.7-what-is-azure-china-21vianet
+title: What is Azure China 21Vianet?
 metadata:
-  title: Identify Azure China 21Vianet
   description: Learn how Azure China 21Vianet provides cloud services to the regions of China.
   ms.date: 09/11/2020
   author: tpetchel
@@ -11,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-identify-azure-china-21vianet.md)]
+  [!include[](includes/7-what-is-azure-china-21vianet.md)]
