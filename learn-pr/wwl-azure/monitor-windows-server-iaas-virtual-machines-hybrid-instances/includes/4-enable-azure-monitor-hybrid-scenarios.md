@@ -1,6 +1,3 @@
-<!-- Editor, please update design doc with this revised topic title: Enable Azure Monitor in hybrid scenarios. -->
-
-<!--12 minutes minutes to read-->
 
 Contoso has a hybrid infrastructure; some compute workloads run as IaaS VMs in Azure, and others run on Windows Server VMs in Contoso datacenters. The process of monitoring on-premises Windows Servers using Azure Monitor is almost identical to the process of enabling monitoring on IaaS VMs.
 
@@ -13,7 +10,7 @@ To leverage the benefits provided by Azure Monitor in hybrid scenarios, you must
 3. Copy the **WORKSPACE ID** and **PRIMARY KEY** values. (You'll need them during installation.)
 4. In the details pane, select **Download Windows Agent (64-bit)** or **Download Windows Agent (32-bit)** as required.
 
-![A screenshot of the Advanced settings page of a Log Analytics workspace. In the details pane, links display for downloading various agents. Also displayed are the WORKSPACE ID and PRIMARY KEY values.](../media/m16-download-agent.png)
+[![A screenshot of the Advanced settings page of a Log Analytics workspace. In the details pane, links display for downloading various agents. Also displayed are the WORKSPACE ID and PRIMARY KEY values.](../media/m16-download-agent.png)](../media/m16-download-agent.png#lightbox)
 
 Next, run the **MMASetup-AMD64.exe** file and use the following instructions to install the agent:
 
@@ -54,7 +51,7 @@ Each workspace has a unique workspace ID and is associated with the primary and 
 
 When configuring the Log Analytics workspace, as part of its advanced settings you can specify types of data you intend to collect. This could include Windows event logs and performance counters, Microsoft Internet Information Services (IIS) logs, and custom logs.
 
-![A screenshot of the Advanced settings page of a Log Analytics workspace. The administrator has selected the Data tab. Available to configure are Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, Custom Fields, Custom Logs, and Syslog.](../media/m16-configure-data.png)
+[![A screenshot of the Advanced settings page of a Log Analytics workspace. The administrator has selected the Data tab. Available to configure are Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, Custom Fields, Custom Logs, and Syslog.](../media/m16-configure-data.png)](../media/m16-configure-data.png#lightbox)
 
 You also have the option to create computer groups. Computer groups can serve as one of criteria of Log Analytics queries, enabling you to narrow down the scope of results to a subset of servers based on their group membership. Computer groups are based on information collected from target computers, including:
 

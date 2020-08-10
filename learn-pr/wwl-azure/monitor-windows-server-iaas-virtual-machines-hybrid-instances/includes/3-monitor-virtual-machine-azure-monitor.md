@@ -1,5 +1,3 @@
-<!-- Duration: 2 minutes -->
-
 In this demonstration, you'll learn to:
 
 - Enable Azure Monitor for VMs.

@@ -11,8 +11,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 2
-content: |
-  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -26,7 +24,7 @@ quiz:
       explanation: "That's incorrect. Maria needs both the Workspace ID and the Primary key."
     - content: "Maria needs BOTH the Workspace ID and the Primary key."
       isCorrect: true
-      explanation: "That's correct. Maria needs both of these to configure the agent,"
+      explanation: "That's correct. Maria needs both of these to configure the agent."
   - content: "Maria decides to enable monitoring on a VM in Azure that's running Windows Server. She opens the Azure portal, navigates to the required VM, and selects the **Insights** page, but she cannot enable monitoring. Which of the following options is the most likely reason?"
     choices:
     - content: "Maria must install the Log Analytics agent first."

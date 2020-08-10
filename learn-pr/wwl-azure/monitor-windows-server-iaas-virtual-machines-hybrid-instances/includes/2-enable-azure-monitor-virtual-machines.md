@@ -1,6 +1,3 @@
-<!-- Editor, please update design doc with this revised topic title: Enable Azure Monitor for VMs -->
-
-<!-- 12 minutes minutes to read -->
 
 Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Customers such as Contoso that are maintaining their on-premises infrastructure can benefit from this functionality when tracking, auditing, or troubleshooting past events.
 
@@ -59,8 +56,8 @@ To enable monitoring of a single VM, use the following procedure:
 
 1. Sign in to the Azure portal, and select **Virtual machines**.
 
-> [!TIP]
-> Make sure your VM is running.
+   > [!TIP]
+   > Make sure your VM is running.
 
 2. If necessary, connect to your VM and install the Azure Monitor for VMs Map Dependency Agent. You can download the agent from [here](https://aka.ms/dependencyagentwindows), and install it by running `InstallDependencyAgent-Windows.exe` on your VM.
 3. Select the appropriate VM, and then under **Monitoring**, select **Insights**.

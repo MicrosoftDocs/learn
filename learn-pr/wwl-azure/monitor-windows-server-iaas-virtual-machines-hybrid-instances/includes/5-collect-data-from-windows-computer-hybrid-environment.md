@@ -1,5 +1,3 @@
-<!-- Duration: 5 minutes -->
-
 In this demonstration, you'll learn to:
 
 - Create a workspace.

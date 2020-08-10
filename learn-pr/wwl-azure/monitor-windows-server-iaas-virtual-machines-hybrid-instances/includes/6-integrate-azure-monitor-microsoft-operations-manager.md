@@ -1,6 +1,4 @@
-<!-- Editor, please update design doc with this revised topic title: Integrate Azure Monitor with Operations Manager. -->
 
-<!--7 minutes minutes to read-->
 
 Customers such as Contoso, who are running Operations Manager 2016 or newer and that want to leverage Azure Monitor capabilities, can integrate their existing deployment with Log Analytics. This provides the benefits described earlier in this module, while also using Operations Manager to:
 
