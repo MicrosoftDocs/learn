@@ -8,7 +8,7 @@ Also, is this the same things we're talking about in unit 2? If so, should we co
 
 The [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true) showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
 
-:::image type="content" source="../media/trust-center.png" alt-text="A screenshot that shows the trust center home page.":::
+:::image type="content" source="../media/4-trust-center.png" alt-text="A screenshot that shows the trust center home page.":::
 
 The Trust Center provides:
 

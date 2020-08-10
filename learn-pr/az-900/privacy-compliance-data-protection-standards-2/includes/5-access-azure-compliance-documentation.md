@@ -32,7 +32,7 @@ As an optional exercise, here you follow along.
 1. Go to the [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/?azure-portal=true).
 1. Under **Financial services**, select **PCI DSS**.
 
-    :::image type="content" source="../media/6-compliance-pci-dss.png" alt-text="A screenshot of the Azure compliance documentation page. The financial service category is shown, and PCI DSS is highlighted.":::
+    :::image type="content" source="../media/5-compliance-pci-dss.png" alt-text="A screenshot of the Azure compliance documentation page. The financial service category is shown, and PCI DSS is highlighted.":::
 
     There you see:
 
