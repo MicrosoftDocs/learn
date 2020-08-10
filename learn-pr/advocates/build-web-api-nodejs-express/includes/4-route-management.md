@@ -41,11 +41,11 @@ You learned in the previous unit how Express lets you associate an HTTP verb wit
 - **Routing parameters**: A routing parameter in a URL expresses that you want to access a specific resource. Looking at the route **/orders/1/items/2**, the routing parameters are **1** and **2**. The **1** signals we want a specific order with the unique key **1**. The **2** asks for a specific order item with the unique key **2**. These routing parameters return a specific resource rather than all resources of a specific type.
 - **Query parameters**: The query part of the URL is a set of key-value pairs that exist after the **?** character. The route example, **/products?page=1&pageSize=20**, shows the query parameters **page** and **pageSize**. These two parameters work in tandem to help you filter down the size of a returned response. Imagine if the route **/products** returned 2 million records from a database. That answer would be huge and it would also take a long time for the user to see the rendered response. That's a poor user experience and a strain on the app. A better approach is to use query parameters to limit the size of the response.
 - **General pattern management**: So far you've seen simple routes like **/products** and **/orders/1/items/2**. There are other patterns like  **`**`**, which could mean *catch-all*. You would normally define such a route to make sure that unexpected requests, like typos, are handled in a graceful way. This helps the user have a good experience.
-- **Read and write**: HTTP has different verbs like, **GET** and **POST** for example. These verbs represent different intentions. For example, that you want to read or write data. Express has specific methods that let's you associate a piece of code to a specific URL fragment and HTTP verb. You've seen so far how Express responds with data when a request asks for it. Express also handles when the client is trying to write data. It's relatively straight forward to instruct Express to handle incoming data.
+- **Read and write**: HTTP has different verbs like, **GET** and **POST**. These verbs represent different intentions. For example, to read or write data. Express has specific methods that let's you associate code to a specific URL fragment and HTTP verb.
 
 ### Routing parameters
 
-Express can define routes and associate different *handlers* to them. Handlers are code that is invoked when a certain path is matched. Express has a pattern handling mechanism to manage different looking routes. The following shows different routes expressed as route patterns.
+Express defines routes and associates different *handlers* with them. Handlers are code that is invoked when a certain path is matched. Express has a pattern handling mechanism to manage different looking routes. The following shows different routes expressed as route patterns.
 
 | Route                        | Express route pattern         |
 |------------------------------|-------------------------------|
@@ -54,7 +54,7 @@ Express can define routes and associate different *handlers* to them. Handlers a
 | /orders/1/items/2            | orders/:orderId/items/:itemId |
 | xyz                          | **                            |
 
-Based on the above you then write code like the below to match for example `/products/114`:
+Write code to match the table for **/products/114**, like this:
 
 ```javascript
 app.get('/products/:id', (req, res) => {
@@ -62,11 +62,11 @@ app.get('/products/:id', (req, res) => {
 })
 ```
 
-Route parameters would be written to a `params` property on the request object `res`. A request of `/products/114` would have `req.params.id` contain `114`.
+Route parameters are written to a **params** property on the request object **res**. A request of **/products/114** would have **req.params.id** contain **114**.
 
 ### Query parameters
 
-Express has an easy way of handling query parameters. Given a route like this `/products?page=1&pageSize=20`, the query parameters would be written to a `query` object on the request object `res`. Consider the below code:
+Express has an easy way of handling query parameters. Given the route **/products?page=1&pageSize=20**, the query parameters are written to a query object on the request object **res**. See the example:
 
 ```javascript
 app.get('/products', (req, res) => {
@@ -74,7 +74,7 @@ app.get('/products', (req, res) => {
 })
 ```
 
-Imagine you would create a request with the route `/products?page=1&pageSize=20`, then `req.query` would have following value:
+To create a request with the route **/products?page=1&pageSize=20**, **req.query** has the following value:
 
 ```javascript
 {
@@ -85,7 +85,7 @@ Imagine you would create a request with the route `/products?page=1&pageSize=20`
 
 ### Read and write
 
-So far you've seen example of requests being made towards a web application when the client wants to read data. It roughly looks like this using the `get()` method:
+So far you've seen examples of requests made toward a web application when the client wants to read data. It roughly looks like this using the **get()** method:
 
 ```javascript
 app.get('/<path>', (req, res) => {
@@ -93,9 +93,9 @@ app.get('/<path>', (req, res) => {
 })
 ```
 
-To handle a client sending data to the web application, you need to configure Express. You configure Express differently depending on the format of the incoming data. If you, for example,  expect the incoming data to come from an HTML form, you would configure it one way. If the data is of type JSON, you would configure it in another way. Regardless of the data format, there are some common steps namely:
+To handle a client sending data to the web application, configure Express differently depending on the format of the incoming data. For example, data from an HTML form, or data in JSON format. These are common steps, regardless of the data format:
 
-1. Import the library `body-parser` (it's installed with Express)
+1. Import the library **body-parser** (it's installed with Express):
 
    ```javascript
    let bodyParser = require('body-parser');
@@ -107,8 +107,8 @@ To handle a client sending data to the web application, you need to configure Ex
    app.use(bodyParser.json({ extended: false }));
    ```
 
-   Above the `bodyParser()` function is passed to the Express instance by calling `app.use()`. Note also how the `bodyParser` calls `.json()`, this call determines how the incoming data will be parsed. In this case, it's being parsed as JSON but can be parsed to some other format. What the `body parser` function will do is to listen to all the incoming data is it's being streamed a few bytes at a time. Once data is done being transmitted, it's placed on the `body` property of the request object.
-1. Handle the request, to handle an incoming request there are two different methods on the Express instance you could be using namely `post()` or `put()`. Both of these methods are capable of handling a request but `post()` is used to express that you want to create a resource. `put()` on the other hand is used to convey that a resource should be updated using the incoming data. Here's an example:
+   The **bodyParser()** function is passed to the Express instance by calling **app.use()**. The **bodyParser** function also calls **.json()** to determine how the incoming data is parsed. In this case, it's parsed as JSON, but can be parsed to some other format. The **bodyParser** function listens to the incoming data while it's being streamed, a few bytes at a time. Once data is transmitted, it's placed on the **body** property of the request object.
+1. To handle an incoming request, use either the **post** or **put()** method on the Express instance.  Both methods work, but **post()** is used to express that you want to create a resource. The **put()** method is used to convey that a resource should be updated using the incoming data. Here's an example:
 
    ```javascript
    app.post('/<path>', (req, res) => {

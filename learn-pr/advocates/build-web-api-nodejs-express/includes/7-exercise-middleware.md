@@ -1,18 +1,18 @@
-Tailwind Traders have realized they need an application that has some basic level of security. It doesn't need to be anything fancy at this point just a way to differentiate between users that have access and don't have access. This security can be improved later to be more efficient and you could at later stage add more features like role management etc. For now, make it simple, make it work.
+Tailwind Traders needs their application to have some basic security. At this point, it needs to differentiate between users that have access, and those that don't. Other features, like role management, might be added at a later date.
 
-## Add basic authorization to an Express
+## Add basic authorization to an Express framework
 
-Most applications have parts that it's ok for anyone to access but there are also parts that should be protected. There are different ways to accomplish this protection. You will implement a simple protection system to understand how the mechanism of *middleware* works in the Express framework.
+Most applications have parts that anyone can access. But, some parts need to be protected. There are different ways to protect an application. In this exercise, implement a simple protection system to understand how the mechanism of *middleware* works in the Express framework.
 
-1. Clone the repo at `https://github.com/MicrosoftDocs/node-essentials` with the following command:
+1. Clone the repo at **https://github.com/MicrosoftDocs/node-essentials** with the following command:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials
    ```
 
-   Now you have a good starter project. The project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
+   This starter project contains the product files and some starter application code. All you need to do is to fill in the missing parts.
 
-1. Let's inspect the repo you cloned. Type the following command:
+1. To inspect the repo you cloned, enter the following command:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-middleware
@@ -26,15 +26,15 @@ Most applications have parts that it's ok for anyone to access but there are als
    -| package.json
    ```
 
-   The `package.json` file contains a dependency `express`. Type the following command in the terminal to install that:
+1. The **package.json** file contains a dependency **express**. In the terminal, enter the following command to install it:
 
    ```bash
    npm install
    ```
 
-   `npm` reads from the `dependencies` section in our `package.json` and you should be ready to continue.
+   **npm** reads from the **dependencies** section in the **package.json**.
 
-1. Time to inspect `app.js`. Open up said file. You should see the following code:
+1. Open **app.js** to inspect it. The file should look like this:
 
    ```javascript
    const express = require('express')
@@ -60,9 +60,9 @@ Most applications have parts that it's ok for anyone to access but there are als
    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
-   The above application contains a functioning Express application containing the routes `/`, `/users`, and, `/products`.
+   The code contains a functioning Express application containing the routes **/**, **/users**, and **/products**.
 
-1. Open up the file `client.js`. It should look like this:
+1. Open the file **client.js**. It should look like this:
 
    ```javascript
    const http = require('http');
@@ -86,15 +86,15 @@ Most applications have parts that it's ok for anyone to access but there are als
    });
    ```
 
-   What the above code does, is to connect to the address `http://localhost:3000/users` and then listen to different events `chunk`, `end`, and `close`. You will use the client to verify that the server application works as expected.
+   The code connects to the address http://localhost:3000/users, and then listens to different events: **chunk**, **end**, and **close**. Use the client to verify that the server application works as expected.
 
-1. Run the server application by typing the following command in the terminal:
+1. In the terminal, run the server application by entering the following command:
 
    ```bash
    node app.js
    ```
 
-   Now run the client by typing the following command in a separate terminal window:
+1. In a separate terminal window, run the client by entering this command:
 
    ```bash
    node client.js
@@ -109,9 +109,9 @@ Most applications have parts that it's ok for anyone to access but there are als
    Closing connection
    ```
 
-   The server application responds with some user data above. All the parts work. Now you need to protect this route. So let's look at adding some code on the server application.
+   The server application responds with some user data. All the parts work. To protect this route, add some code on the server application.
 
-1. Open up `app.js` and add the following code right after the row that says `const app = expres()`:
+1. Open **app.js** and add the following code right after the row that says **const app = expres()**:
 
    ```javascript
    function isAuthorized(req,res, next) {
