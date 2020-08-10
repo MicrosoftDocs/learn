@@ -5,43 +5,37 @@ In this module, you:
 * Published the Docker image to Azure Container Registry.
 * Deployed the Docker container to the existing app in AKS.
 
-## Remove Azure resources
+[!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 
-> [!IMPORTANT]
-> It's important that you de-provision the Azure resources used in this module to avoid accruing unwanted charges.
+## Remove Azure service principal
 
-To de-provision all of the resources created in this module, run the following command:
+The initial setup script created an Azure service principal, which allows Azure resources to authenticate to each other.
 
-```azurecli
-az group delete --name eshop-learn-rg --yes
-```
-
-The preceding command deletes the resource group containing the AKS and Azure Container Registry resources. Another resource group that contains infrastructure resources (such as IP addresses) was previously created on behalf of the AKS resource. This group, and all resources contained within, are also deleted when the AKS resource is deleted.
-
-## Revert .NET Core SDK changes
-
-The setup script installs a newer version of the .NET Core SDK, alongside the default SDK version of Cloud Shell. You can choose to keep this configuration. To revert to your prior configuration, run the following commands:
+To remove the service principal, run the following script:
 
 ```bash
-cp ~/.bashrc.bak.microservices-aspnet-core ~/.bashrc
+./deploy/k8s/cleanup-service-principal.sh
 ```
 
-The preceding command restores your prior *:::no-loc text=".bashrc":::* profile startup file from a backup saved by the setup script.
+The preceding script:
+
+* Uses the following Azure CLI command to return a list of service principal identifiers from Azure Active Directory. The identifiers are filtered to those:
+  * Owned by the current user.
+  * Containing the string `eShop-Learn-AKS` in the display name.
+
+    ```azurecli
+    az ad sp list --show-mine --query "[?contains(displayName,'eShop-Learn-AKS')].appId" --output tsv
+    ```
+
+* Uses the `az ad sp delete` Azure CLI command to remove each matching service principal.
+
+> [!NOTE]
+> More than one service principal is expected if the setup script has been run more than once. Each time the setup script is run, it creates a new service principal.
+
+[!INCLUDE[revert the .NET Core SDK changes](../../includes/microservices/revert-dotnet-sdk-changes.md)]
 
 [!INCLUDE[download files](../../includes/summary-download-cloud-drive.md)]
 
-## Reset Azure Cloud Shell
+[!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
 
-The scripts used in this module make temporary changes to your Cloud Shell preferences. You don't need to reset your configuration if the scripts ran as intended. If you want to reset your Cloud Shell to its default configuration, see the [documentation on deleting personal data](/azure/cloud-shell/troubleshooting#delete).
-
-## Learn more about microservices
-
-* Free e-book: [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices/)
-* [Full eShopOnContainers reference app on GitHub](https://github.com/dotnet-architecture/eShopOnContainers)
-* Video: [Implement microservices patterns with .NET Core and Docker containers](https://aka.ms/microservices-video)
-  * Note: The above video doesn't reflect current .NET Core tooling. However, the architectural concepts and design patterns remain valid.
-
-## Learn more about .NET
-
-* [.NET Core 101](https://channel9.msdn.com/Series/NET-Core-101/?WT.mc_id=Educationaldotnet-c9-scottha&azure-portal=true)
-* [ASP.NET Core 101](https://channel9.msdn.com/Series/ASPNET-Core-101/?WT.mc_id=Educationaspnet-c9-niner&azure-portal=true)
+[!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]
