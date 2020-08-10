@@ -1,3 +1,5 @@
+In this part, you'll learn about types of compliance offerings that are available on Azure.
+
 As Tailwind Traders moves to running their applications in the cloud, they want to know what regulatory compliance frameworks Azure adheres to. They ask:
 
 <div style="background:yellow;">

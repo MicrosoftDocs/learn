@@ -3,13 +3,12 @@ uid: learn.examine-privacy-compliance-data-protection-standards.4-explore-trust-
 title: Explore trust center
 metadata:
   title: Explore trust center
-  description: "Explore trust center"
-  ms.date: 07/05/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how the Trust Center showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/4-explore-trust-center.md)]

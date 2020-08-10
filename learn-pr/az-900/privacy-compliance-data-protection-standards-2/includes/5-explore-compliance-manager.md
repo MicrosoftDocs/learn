@@ -1,3 +1,5 @@
+Here, you learn how to access detailed documentation about legal and regulatory standards and compliance on Azure.
+
 E-commerce is an important part of Tailwind Traders' sales strategy. Their [online retail store](https://www.tailwindtraders.com/?azure-portal=true) enables customers to easily browse and order products. Customers typically pay by credit card, so Tailwind Traders has a responsibility under the Payment Card Industry (PCI) Data Security Standard (DSS). This global standard, known as PCI DSS, seeks to prevent fraud through increased control of credit card data and applies to any organization that stores, processes, or transmits payment and cardholder data.
 
 You've been tasked with investigating whether hosting their e-commerce application on Azure would be compliant with PCI DSS. You start with the Azure compliance documentation.

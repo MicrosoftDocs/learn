@@ -3,13 +3,12 @@ uid: learn.examine-privacy-compliance-data-protection-standards.6-identify-azure
 title: Identify Azure Government services
 metadata:
   title: Identify Azure Government services
-  description: "Identify Azure Government services"
-  ms.date: 07/05/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how Azure Government addresses the security and compliance needs of US federal agencies, state and local governments, and their solution providers.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-identify-azure-government-services.md)]
