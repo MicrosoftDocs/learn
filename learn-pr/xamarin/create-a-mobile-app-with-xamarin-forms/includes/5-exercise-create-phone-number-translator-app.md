@@ -107,7 +107,7 @@ Next, we need to describe the user interface for Phoneword. Remember, we are usi
 1. Assign the `StackLayout` to the `Content` property of `MainPage`.
 
 ```csharp
-public partial class MainPage : ContentPage
+public class MainPage : ContentPage
 {
    Entry phoneNumberText;
    Button translateButton;
@@ -338,4 +338,4 @@ Many emulators and simulators will not properly simulate dialing the phone. Howe
 
 In this exercise, you've added a custom UI to your application by using pages and views. You also added support for placing a call by using platform-specific APIs available in iOS and Android, through the Xamarin.Essentials library.
 
-You can view the completed solution in the **exercise2** > **final** folder within your cloned or downloaded copy of the [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].
+You can view the completed solution in the **src** > **exercise1** > **final** folder within your cloned or downloaded copy of the [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].
