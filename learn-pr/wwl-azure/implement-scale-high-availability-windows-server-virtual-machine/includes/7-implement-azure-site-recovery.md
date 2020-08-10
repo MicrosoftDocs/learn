@@ -8,7 +8,7 @@ Contoso staff now want to implement their BCDR plan. Let's assume they're using 
 
 ![A diagram of both a source (in East US) and target (in Central US) environment. Their environment contains: In East US, in a single VNet, a storage account, storage account cache data, a availabilty set with in Subnet1 with two VMs. In Central US, in a VNet called VNet-asr, a storage account cache data and an empty availability set in Subnet1.](../media/m22-failover-2.png)
 
-The following section details the steps involved in implementing Contoso's BCDR plan using Azure site recovery.
+The following section details the steps involved in implementing Contoso's BCDR plan using Azure Site Recovery.
 
 ### Disaster recovery preparation with Azure Site Recovery
 
