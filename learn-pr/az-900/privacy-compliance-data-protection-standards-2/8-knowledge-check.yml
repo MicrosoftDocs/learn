@@ -9,32 +9,42 @@ metadata:
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 1
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
-  - content: "What tool or service allows download of published audit reports and how Microsoft builds and operates its cloud services?"
+  - content: Where can the team access details about the personal data Microsoft processes and how they process it, including for Cortana?
     choices:
-    - content: "Azure Policy"
-      isCorrect: false
-      explanation: "That's incorrect.  Policy lets you set rules for deploying your systems and monitoring their compliance."
-    - content: "Azure Service Health"
-      isCorrect: false
-      explanation: "That's incorrect.  Service health lets you check to see what Azure services are running currently."
-    - content: "Service Trust Portal"
+    - content: Microsoft Privacy Statement
       isCorrect: true
-      explanation: "That's correct. Service Trust Portal is the Microsoft public site for publishing audit reports and other compliance-related information relevant to Microsoft’s cloud services. STP users can download audit reports produced by external auditors and gain insight from Microsoft-authored reports that provide details on how Microsoft builds and operates its cloud services."
-  - content: "What site explains details about the personal data Microsoft processes, how Microsoft processes it, and for what purposes?"
+      explanation: The Microsoft Privacy Statement provides information that's relevant to specific services, including Cortana.
+    - content: The Azure compliance documentation
+      isCorrect: false
+      explanation: The compliance documentation helps you understand legal and regulatory standards on Azure.
+    - content: Microsoft compliance offerings
+      isCorrect: false
+      explanation: Microsoft compliance offerings help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data.
+  - content: Where can the legal team access information around how the Microsoft cloud helps them secure sensitive data and comply with applicable laws and regulations?
     choices:
-    - content: "Microsoft Privacy Statement"
+    - content: Microsoft Privacy Statement
+      isCorrect: false
+      explanation: The Microsoft Privacy Statement provides details about the personal data Microsoft processes and how they process it.
+    - content: Trust Center
       isCorrect: true
-      explanation: "That's correct. The Microsoft Privacy Statement explains what personal data Microsoft processes, how Microsoft processes it, and for what purposes."
-    - content: "Compliance Manager"
+      explanation: The Trust Center is a great resource for people in your organization who may play a role in security, privacy, and compliance.
+    - content: Online Services Terms (OST)
       isCorrect: false
-      explanation: "That's incorrect.  Compliance Manager is to help you set and maintain compliance rules."
-    - content: "Azure Service Health"
+      explanation: The OST is a legal agreement between Microsoft and the customer that details the obligations by both parties with respect to the processing and security of customer data and personal data.
+  - content: Where can the IT department find reference blueprints that they can apply directly to their Azure subscriptions?
+    choices:
+    - content: Online Services Terms (OST)
       isCorrect: false
-      explanation: "That's incorrect. Service health lets you check to see what Azure services are running currently."
+      explanation: The OST is a legal agreement between Microsoft and the customer that details the obligations by both parties with respect to the processing and security of customer data and personal data.
+    - content: Azure compliance documentation
+      isCorrect: true
+      explanation: The compliance documentation provides reference blueprints, or policy definitions, for common standards that you can apply to your Azure subscription.
+    - content: Microsoft Privacy Statement
+      isCorrect: false
+      explanation: The Microsoft Privacy Statement provides details about the personal data Microsoft processes and how they process it.
