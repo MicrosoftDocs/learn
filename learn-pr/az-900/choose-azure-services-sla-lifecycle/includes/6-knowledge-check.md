@@ -22,7 +22,7 @@ The team also needs more processing power to keep up with demand. For that, they
 
 Here's a diagram that shows their proposed plan:
 
-:::image type="content" source="../media/6-special-orders-architecture-maps.png" alt-text="A diagram showing three virtual machines connected to Azure Load Balancer, Azure SQL Database, and Azure Maps." border="false":::
+:::image type="content" source="../media/6-special-orders-architecture-maps.svg" alt-text="A diagram showing three virtual machines connected to Azure Load Balancer, Azure SQL Database, and Azure Maps." border="false":::
 
 Recall that you can access SLAs from the [Service Level Agreements](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) page.
 
