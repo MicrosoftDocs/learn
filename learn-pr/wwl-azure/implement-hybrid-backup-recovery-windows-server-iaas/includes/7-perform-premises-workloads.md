@@ -1,4 +1,3 @@
-<!-- 12 minutes minutes to read -->
 
 The Azure Backup service provides simple, secure, and cost-effective solutions to back up your data and recover it from the Azure cloud.
 

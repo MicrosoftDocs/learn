@@ -1,4 +1,3 @@
-<!-- 10 minutes minutes to read -->
 
 The Contoso IT Team wants control over its backup policy. They can use the Microsoft Azure Recovery Services (MARS) agent to configure this policy. The team can specify when to take snapshots of their data to create recovery points. They can also specify how long to keep recovery points.
 
@@ -44,8 +43,8 @@ You can install the MARS agent on your computer using the following procedure. R
 
 9. Select **Next**.
 10. On the **Encryption Setting** page, specify a passphrase that will be used to encrypt and decrypt backups for the machine:
-   - Save the passphrase in a secure location. You will need it to restore a backup.
-   - If you lose or forget the passphrase, Microsoft can't help you recover the backup data.
+    - Save the passphrase in a secure location. You will need it to restore a backup.
+    - If you lose or forget the passphrase, Microsoft can't help you recover the backup data.
 11. Select **Finish**.
 
 The agent is now installed, and your machine is registered to the vault. You're now ready to configure and schedule your backup.

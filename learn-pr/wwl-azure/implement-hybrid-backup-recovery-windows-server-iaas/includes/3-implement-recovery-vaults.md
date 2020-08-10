@@ -1,4 +1,3 @@
-<!-- 7 minutes minutes to read -->
 
 Contoso could use Recovery Services vaults to keep backup data for their various Azure services, such as IaaS VMs (Linux or Windows) and Azure SQL databases. Recovery Services vault is a storage entity in Azure that houses data, which typically is copies of data, or configuration information for VMs, workloads, servers, or workstations.
 

@@ -1,4 +1,3 @@
-<!--2 minutes to read-->
 
 Contoso historically relied on tape backups for restores and disaster recovery. As part of the move to Azure, they needed to consider alternative backup and recovery procedures.
 

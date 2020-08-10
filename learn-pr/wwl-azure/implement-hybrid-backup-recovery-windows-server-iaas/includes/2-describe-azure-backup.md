@@ -1,4 +1,3 @@
-<!-- 8 minutes minutes to read -->
 
 Contoso depends on computing resources for their operations and needs to maintain business continuity. To develop a business continuity plan, the IT team must identify the necessary steps to recover from a disaster that impacts computing resources availability. The two most common means of facilitating business continuity are implementing a comprehensive backup, and developing a disaster recovery strategy. Azure offers dedicated services that not only considerably simplify these tasks.
 

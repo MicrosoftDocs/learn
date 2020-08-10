@@ -1,4 +1,3 @@
-<!-- 4 minutes minutes to read -->
 
 You need to know how to back up files and folders to an Azure Recovery vault, and when necessary, how to restore those files and folders.
 

@@ -1,4 +1,3 @@
-<!-- 8 minutes minutes to read -->
 
 You can protect your data by making backups at regular intervals. There are several backup options available for VMs, depending on your use-case, as described in the following table.
 

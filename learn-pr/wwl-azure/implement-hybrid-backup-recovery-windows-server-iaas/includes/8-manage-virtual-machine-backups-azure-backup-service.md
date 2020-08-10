@@ -1,4 +1,3 @@
-<!-- Duration: 4 minutes  -->
 
 In this demonstration, you'll learn how to:
 
