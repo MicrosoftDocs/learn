@@ -59,15 +59,38 @@ At the end of each month, you're billed for what you've used. At any time, you c
 
 The way you use resources, your subscription type, and pricing from third-party vendors are common factors. Let's take a quick look at each.
 
+### Resource type
+
+Azure resources have a number of factors which influence their cost, depending on the type of resource or how you customize it.
+
+For example, with a storage account you would specify a type (such as block blob storage or table storage), a performance tier (standard or premium), and an access tier (hot, cool or archive). These selections present different costs.
+
+### Usage meters
+
+When you provision a resource, Azure creates _meters_ to track usage of that resource. Azure uses these meters to generate a usage record that's later used to help calculate your bill.
+
+Think of usage meters similar to how you use electricity or water in your home. You might pay a base price each month for electricity or water service, but your final bill is based on the total amount that you have consumed.
+
+Let's look at a single virtual machine as an example. The following kinds of meters are relevant to tracking its usage:
+
+* Overall CPU time.
+* Time spent with a public IP address.
+* Incoming (ingress) and outgoing (egress) network traffic in and out of the VM.
+* Disk size and amount of disk read and disk write operations.
+
+Each meter tracks a specific type of usage.  For example, a meter might track bandwidth usage (ingress or egress network traffic in bits-per-second), number of operations, or its size (storage capacity in bytes).
+
+The usage that a meter tracks correlates to a quantity of billable units. Those are charged to your account for each billing period, and the rate per billable unit depends on the resource type you are using.
+
 ### Resource usage
 
-In Azure, you're always charged based on what you use. Let's look at how this applies to deallocating a virtual machine (VM).
+In Azure, you're always charged based on what you use. As an example, let's look at how this applies to deallocating a virtual machine (VM).
 
 In Azure, you can delete or deallocate a VM. Deleting a VM means that you no longer need it; the VM is removed from your subscription and then it's prepared for another customer.
 
 Deallocating a VM means that the VM is no longer running, but the associated hard disks and data are still kept in Azure. The VM is not assigned to a CPU or network in Azure's datacenter, so it doesn't generate the costs associated with compute time or the VM's IP address. However, because the disks and data are still stored, and the resource is present in your Azure subscription, you are still billed for disk storage.
 
-Deallocating a VM when you don't plan on using it for some time is just one way to minimize costs. For example, you might deallocate the VMs you use for testing purposes on weekends when your testing team is not using them.
+Deallocating a VM when you don't plan on using it for some time is just one way to minimize costs. For example, you might deallocate the VMs you use for testing purposes on weekends when your testing team is not using them. You'll learn more about ways to minimize cost later in this module.
 
 ### Azure subscription types
 
@@ -108,34 +131,6 @@ A Zone is a geographical grouping of Azure regions for billing purposes. The fol
 * **Zone 3** - Brazil South, South Africa North, South Africa West, UAE Central, UAE North.
 
 * **DE Zone 1** - Germany Central, Germany Northeast.
-
-## What other factors affect the final cost?
-
-When you create a resource, the customization options you choose can impact its cost. Another factor is how much of that resource you use. Let's look at these two factors now.
-
-### Resource type
-
-Azure resources have a number of factors which influence their cost, depending on the type of resource or how you customize it.
-
-For example, with a storage account you would specify a type (such as block blob storage or table storage), a performance tier (standard or premium), and an access tier (hot, cool or archive). These selections present different costs.
-
-### Usage meters
-
-When you provision a resource, Azure creates _meters_ to track usage of that resource. Azure uses these meters to generate a usage record that's later used to help calculate your bill.
-
-Think of usage meters similar to how you use electricity or water in your home. You might pay a base price each month for electricity or water service, but your final bill is based on the total amount that you have consumed.
-
-> [!NOTE]
-> Each meter tracks a specific type of usage.  For example, a meter might track bandwidth usage (ingress or egress network traffic in bits-per-second), number of operations, size (storage capacity in bytes), or similar items.
-
-The usage that a meter tracks correlates to a quantity of billable units. Those are charged to your account for each billing period, and the rate per billable unit depends on the resource type you are using.
-
-Let's look at a single virtual machine as an example. The following kinds of meters are relevant to tracking its usage:
-
-* Overall CPU time.
-* Time spent with a public IP address.
-* Incoming (ingress) and outgoing (egress) network traffic in and out of the VM.
-* Disk size and amount of disk read and disk write operations.
 
 ## How can I estimate the total cost?
 

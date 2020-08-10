@@ -114,9 +114,9 @@ If you have virtual machine workloads that are only used during certain periods,
 
 This approach is an excellent strategy for development and testing environments, where the virtual machines are needed only during business hours. Azure even provides a way to automatically start and stop your VMs on a schedule.
 
-## Delete unused virtual machines
+## Delete unused resources
 
-This might sound obvious, but if you aren't using a service, you should shut it down. It's not uncommon to find non-production or proof-of-concept systems that are no longer needed following the completion of a project.
+This might sound obvious, but if you aren't using a resource, you should shut it down. It's not uncommon to find non-production or proof-of-concept systems that are no longer needed following the completion of a project.
 
 Regularly review your environment and work to identify these systems. Shutting down these systems can have a dual benefit by saving you not only on infrastructure costs but also potential savings on licensing and operating costs.
 
@@ -126,17 +126,17 @@ As you move your workloads to the cloud, a natural evolution is to start with in
 
 Over time, one way to reduce costs is to gradually move IaaS workloads to run on platform as a service (PaaS) services. While you can think of IaaS as direct access to compute infrastructure, PaaS provides ready-made development and deployment environments that are managed for you.
 
-As an example, say you run SQL Server on a virtual machine running on Azure. This requires you to manage the underlying operating system, set up a SQL Server license, manage software and security updates, and so on. You also pay for the VM whether or not the database is processing queries.
+As an example, say you run SQL Server on a virtual machine running on Azure. This requires you to manage the underlying operating system, set up a SQL Server license, manage software and security updates, and so on. You also pay for the VM whether or not the database is processing queries. One way to potentially save costs is to move your database from SQL Server on a virtual machine to Azure SQL Database. Azure SQL Database is based on SQL Server.
 
-Not only are PaaS services often less expensive to run, but because they're managed for you, you don't need to worry about software updates, security patches, or optimizing physical storage for read and write operations.
+Not only are PaaS services such as Azure SQL Database often less expensive to run, but because they're managed for you, you don't need to worry about software updates, security patches, or optimizing physical storage for read and write operations.
 
 ## Save on licensing costs
 
 Licensing is another area that can dramatically impact your cloud spending. Let's look at some ways you can reduce your licensing costs.
 
-### Choose Windows versus Linux
+### Choose cost-effective operating systems
 
-Many Azure services provide a choice of running on Windows or Linux. In some cases, the cost depends on which you choose. When you have a choice, and your application doesn't depend on the underlying OS, it's useful to compare pricing to see whether you can save money.
+Many Azure services provide a choice of running on Windows or Linux. In some cases, the cost depends on which you choose. When you have a choice, and your application doesn't depend on the underlying operating system, it's useful to compare pricing to see whether you can save money.
 
 ### Use Azure Hybrid Benefit to re-purpose software licenses on Azure
 
