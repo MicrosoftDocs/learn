@@ -62,7 +62,7 @@ az aks nodepool scale \
 
 ## How to scale a cluster automatically
 
-:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Screenshot that shows the information captured in the basic tab.":::
+:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Diagram that shows the how the cluster autoscaler adds nodes, and the horizontal pod autoscaler adds pods.":::
 
 AKS uses the Kubernetes cluster autoscaler to automatically scale workloads. The cluster can scale by using two options:
 

@@ -1,4 +1,4 @@
-In this module, you explored some of the cost optimization strategies to optimize Azure Kubernetes Service (AKS) compute costs. You were evaluating strategies to manage the deployment of many workloads needed to match customer demands cost-effectively. You also want to introduce business policies that govern how your development teams create and use AKS compute resources.
+In this module, you explored some strategies to optimize Azure Kubernetes Service (AKS) compute costs. You were looking for ways to manage the cost-effective deployment of many workloads needed to meet customer demands. You also wanted to introduce business policies that govern how your development teams create and use AKS compute resources.
 
 By configuring multiple node pools on your AKS cluster, you can identify specific node pools to run specific workloads. You saw how to configure these node pools and manually scale the node count to zero in scenarios where you have control over usage intervals.
 
