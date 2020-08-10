@@ -35,7 +35,7 @@ Access to the Trust Center doesn't require an Azure subscription or a Microsoft 
 
 1. Under **Global**, select **ISO 27001**.
 
-    :::image type="content" source="../media/4-iso-27001.png" alt-text="TODO.":::
+    :::image type="content" source="../media/4-iso-27001.png" alt-text="A screenshot of the Microsoft compliance offerings page. The global category is shown, and ISO 27001 is highlighted.":::
 
     The ISO 27001 Information Security Management Standards page is typical of the type of compliance information we provide.
 
