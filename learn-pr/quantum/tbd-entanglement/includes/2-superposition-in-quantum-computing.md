@@ -38,13 +38,14 @@ a qubit is in the state $\ket{\psi} =\ket{1}$, it yields `One` after a
 measurement.
 
 > [!NOTE]
-> The concept of *measurement* is delicate and has been historically
-> controversial. But for quantum computing you don't have to worry about it.
-> Here we will understand by measurement the informal idea of "looking" at a
-> qubit, which immediately collapses the quantum superposition to one of the two
-> classical states. If you want to learn more about the historical discussion
-> about measurements in the context of quantum mechanics, you will find a
-> detailed discussion in the [Wikipedia article on the measurement
+> There are many interpretations of the concept of *measurement* in
+> quantum mechanics but the details are out of the scope of this module. But for
+> quantum computing you don't have to worry about it. Here we will understand by
+> measurement the informal idea of "observing" a qubit, which immediately
+> collapses the quantum superposition to one of the two classical states. If you
+> want to learn more about the historical discussion about measurements in the
+> context of quantum mechanics, you will find a detailed discussion in the
+> [Wikipedia article on the measurement
 > problem](https://en.wikipedia.org/wiki/Measurement_problem).
 
 ## Linear operators
