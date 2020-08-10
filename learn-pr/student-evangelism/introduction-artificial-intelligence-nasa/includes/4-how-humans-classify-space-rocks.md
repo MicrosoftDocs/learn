@@ -27,7 +27,7 @@ The following image lists some features that we can extract from a photo of a mo
 
 Next, we try to find the relationships between the features and the type of rock is shown in a photo of a rock.
 
-In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. For example, we determine that lighter rocks are usually crustals and that the texture of basalt rocks are more jagged. These associations, and the links between them, are demonstrated in the following image:
+In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. For example, we determine that lighter rocks are usually highlands and that the texture of basalt rocks are more jagged. These associations, and the links between them, are demonstrated in the following image:
 
 :::image type="content" source="../media/links.png" alt-text="Dynamic diagram that shows four sets of nine black dots, with colored lines being drawn between the dots in each set." loc-scope="Azure":::
 

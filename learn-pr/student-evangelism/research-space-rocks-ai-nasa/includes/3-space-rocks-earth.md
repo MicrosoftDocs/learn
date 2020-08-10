@@ -1,4 +1,4 @@
-As we mentioned earlier, a prominent place to gather space rocks (e.g., meterorites) is actually on Earth. But, while planned missions try to gather specific types of space rocks, on Earth, we are at the mercy of the type of meteorite that happens to crash onto the surface of our planet. Furthermore, meteorites are covered with a fusion crust, (burnt crust formed when the meteor travls through our atmosphere) that covers the rock. The fusion crust makes it difficult to identify what type of meteorite it is until it is brought to the lab to be cleaned and analyzed.
+As we mentioned earlier, a prominent place to gather space rocks (e.g., meteorites) is actually on Earth. But, while planned missions try to gather specific types of space rocks, on Earth, we are at the mercy of the type of meteorite that happens to crash onto the surface of our planet. Furthermore, meteorites are covered with a fusion crust, (burnt crust formed when the meteor travls through our atmosphere) that covers the rock. The fusion crust makes it difficult to identify what type of meteorite it is until it is brought to the lab to be cleaned and analyzed.
 
 ## Where space rocks are found
 

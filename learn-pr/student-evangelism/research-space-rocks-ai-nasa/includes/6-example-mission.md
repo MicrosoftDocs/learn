@@ -2,7 +2,7 @@ Many space missions have taken astronauts and rovers into space to search for sp
 
 :::image type="content" source="../media/osiris-rex-launch.png" alt-text="Photo of a rocket launching during the OSIRIS-REx mission.":::
 
-The OSIRIS-REx mission consists of launching a spacecraft to orbit an asteroid named Bennu. Bennu's regolith space rock might record the earliest history of our solar system. The OSIRIS-Rex mission is all about finding out more about where humans came from and what our destiny is.
+The OSIRIS-REx mission consists of launching a spacecraft to orbit and gather samples from an asteroid named Bennu. Bennu's regolith space rock might record the earliest history of our Solar System. The OSIRIS-Rex mission is all about finding out more about where humans came from and what our destiny is.
 
 :::image type="content" source="../media/osiris-rex-regolith.png" alt-text="Photo of the surface of an asteroid and patches of fine-grain regolith.":::
 

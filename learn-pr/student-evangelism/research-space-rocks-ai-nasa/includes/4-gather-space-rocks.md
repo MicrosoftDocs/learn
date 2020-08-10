@@ -11,8 +11,8 @@ For example, there are common rocks on the Moon, like basalt and highland (origi
 Here's a photo of basalt rock:  
 :::image type="content" source="../media/basalt-cristobalite-1.png" alt-text="Photo of basalt rock sitting on a flat surface.":::
 
-Here's a photo of crustal rock:  
-:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="Photo of crustal rock sitting next to a ruler on a flat surface.":::
+Here's a photo of highland rock:  
+:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="Photo of highland rock sitting next to a ruler on a flat surface.":::
 
 Here's a photo of an area an astronaut might survey for rocks:
 :::image type="content" source="..\media\MoonSurface.jpg" alt-text="Photo from Apollo mission of Moon Surface.":::
