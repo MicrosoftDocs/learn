@@ -2,18 +2,18 @@ Before we learn the details of how AI can be used to classify rocks, let's start
 
 ## Types of rocks
 
-In this lesson, we'll classify photos of rocks into one of two types: basalt and crustal.
+In this lesson, we'll classify photos of rocks into one of two types: basalt and crustal (also known as highland).
 
 > [!NOTE]
-> These rock types also are found on Earth, but for this lesson, we are looking onlyat the lunar variants; that is, rocks that are from the moon.
+> These rock types also are found on Earth, but for this lesson, we are looking only at the lunar variants; that is, rocks that are from the moon.
 
-Basalt is a dark rock that comes from ancient volcanic eruptions on the Earth's moon. When you look up at the moon and see dark spots and patches, you likely are seeing basalt rock on the moon's surface. Nearly 26% of the near side of the moon is basalt; only 2% of the far side is basalt. Most basalt in either of the moon's hemispheres is found in areas of low elevation. Basalt is especially common in the very large impact basins across the surface of the moon.
+Basalt is a dark rock that comes from ancient volcanic eruptions on the Earth's moon. When you look up at the moon and see dark spots and patches, you likely are seeing basalt rock on the moon's surface. Nearly 17% of the near side of the moon is basalt; only 2% of the far side is basalt. Most basalt in either of the moon's hemispheres is found in basins or large craters.
 
 :::image type="content" source="../media/basalt-cristobalite-1.png" alt-text="Photo of a piece of basalt on a flat surface." loc-scope="Azure":::
 
 :::image type="content" source="../media/basalt-cristobalite-2.png" alt-text="Photo of two pieces of basalt on a flat surface." loc-scope="Azure":::
 
-Crustal is a lighter rock that forms after a partial melt of mantle rocks. Crustal is less common than basalt.
+Crustal rocks are lighter than basalts due to the heavier elements in basalts (e.g., Fe, Mg). But they were made when a large magma ocean, that covered the entire Moon when it was forming, crystallized and because the crustal rocks are lighter they floated to the top and became the crust of the Moon.
 
 :::image type="content" source="../media/crustal-anorthosite-1.png" alt-text="Photo of a piece of crustal rock on a transparent background." loc-scope="Azure":::
 
