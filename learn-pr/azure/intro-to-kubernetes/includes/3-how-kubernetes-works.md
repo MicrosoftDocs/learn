@@ -110,7 +110,7 @@ The container runtime is the underlying software that runs containers on a Kuber
 
 The default container runtime in Azure Kubernetes Service is Docker. However, you can also use Kata Containers and containerd.
 
-## How to interact with a Kubernetes cluster
+## Interact with a Kubernetes cluster
 
 Kubernetes provides a command-line tool called `kubectl` that you use to manage your cluster. You use `kubectl` to send commands to the cluster's control plane or fetch information about all Kubernetes objects via the API server.
 
