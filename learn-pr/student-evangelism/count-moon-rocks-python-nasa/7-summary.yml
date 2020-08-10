@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.count-moon-rocks-python-nasa.7-summary
 metadata:
   title: Summary
-  description: Summary
+  description: Summary.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "In order to modify the rock count variables in the function we created we had to make them global variables. True or False?"
+  - content: "In order to modify the rock count variables in the function we created, we had to make them global variables. True or False?"
     choices:
     - content: "True"
       isCorrect: true
       explanation: "Correct! This is how we modified our variables in the function"
     - content: "False"
       isCorrect: false
-      explanation: "We actually did make them global variables."
+      explanation: "We did make them global variables."
   - content: "How did we call the countMoonRocks function?"
     choices:
     - content: "for rock in rockList:
@@ -52,6 +52,6 @@ quiz:
     - content: "`.end`"
       isCorrect: false
       explanation: "Close but not correct"
-    - content: "`.done()"
+    - content: "`.done()`"
       isCorrect: false
       explanation: "Close but not correct"

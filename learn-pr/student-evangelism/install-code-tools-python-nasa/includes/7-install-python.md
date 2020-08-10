@@ -1,20 +1,20 @@
-With Visual Studio Code installed, you will need to download Python so your computer knows how to run and interpret the code we write.
+Now that you have Visual Studio Code installed, you will need to download Python so your computer knows how to run and interpret the code you write.
 
 > [!NOTE]
 > Most Mac and Linux computers will come with Python pre-installed, however it might not be up to date.
 
-To start, install [Python 3.7 (or later) from python.org](https://www.python.org/downloads/). Click on the download button to begin the installation of Python. Click on the executable located at the bottom left of your screen and click run. Again, these instructions are for a Windows computer, if you have Linux or Mac, use the links that correspond to your operating system.
+To start, install [Python 3.7 (or later) from python.org](https://www.python.org/downloads/?azure-portal=true). Click on the download button to begin the installation of Python. Click on the executable located at the bottom left of your screen and click run. These instructions are for a Windows computer, if you have Linux or Mac, use the links that correspond to your operating system.
 
 :::image type="content" source="..\media\download-python.png" alt-text="Download Python":::
 
-You will now be taken to a setup window where you should follow the installation steps below:
+When that's finished, you'll be taken to a setup window where you should follow the installation steps below:
 
-- Ensure that you have checked the box saying add Python X.XX to path then click the "Install Now" box.
+1. Check the box saying add Python X.XX to path then click the "Install Now" box.
 
-:::image type="content" source="..\media\python-preferences.png" alt-text="Python Preferences":::
+   :::image type="content" source="..\media\python-preferences.png" alt-text="Python Preferences":::
 
-- Finally, wait for the program to finish installing and then click close.
+1. Wait for the program to finish installing and then click close.
 
-:::image type="content" source="..\media\python-finish-install.png" alt-text="Finish Installation":::
+   :::image type="content" source="..\media\python-finish-install.png" alt-text="Finish Installation":::
 
-Python is now installed and in the next unit, you will learn how to get a Python program running in Visual Studio Code.
+Python is now installed. In the next unit you'll learn how to run a Python program in Visual Studio Code.

@@ -1,10 +1,10 @@
-In the real world, we sometimes will only perform some action if a certain condition is met. This is the gist of conditionals in coding. For example we may only want to launch a rocket if the temperature is above 32 degrees. Let's start by learning about the different conditions we can check to decide whether to perform an action or not.
+In the real world, we sometimes will only perform an action if a certain condition is met. This is the gist of conditionals in coding. For example, we may want to launch a rocket only if the temperature is above 32 degrees. Let's start by learning about the different conditions we can check to help us decide whether to perform an action or not.
 
 ## Conditions
 
-Conditions are what needs to be met before we change tasks. We can find if a condition is met by comparing two values and to do this we use something called logical operators. Logical operators will return either a True, if the statement is true, or a False, if the statement is false. Remember: True and False values are called booleans.
+Conditions are what need to be met before we change tasks. We can find out if a condition is met by comparing two values and to do this we use something called logical operators. Logical operators will return either True, if the statement is true, or False, if the statement is false. Remember: True and False values are called booleans.
 
-For example if our condition is to check if the temperature is above freezing (to see if a rocket launch would be delayed) our condition would be `temperature > 32`. This would give us True if the temperature is above freezing and False if the temperature is at or below freezing.
+For example, if our condition is to check whether the temperature is above freezing (to see if a rocket launch would be delayed) our condition would be `temperature > 32`. This would give us True if the temperature is above freezing and False if the temperature is at or below freezing.
 
 Below are some common logical operator:
 
@@ -23,8 +23,10 @@ print(temp >= 32)
 print(temp < 32)
 ```
 
->True  
->False
+```Output
+True  
+False
+```
 
 You can also use these operators on other variable types.
 
@@ -34,10 +36,12 @@ print("highland" == rock)
 print("basalt" == rock)
 ```
 
->False  
->True
+```Output
+False  
+True
+```
 
-For reasoning that is beyond this module, sometimes when comparing variables, you must use commands like "in". This just checks if a word is inside of the variable.
+For reasons that are beyond the scope of this module, sometimes when comparing variables, you must use commands like "in". This just checks whether a word is inside the variable.
 
 ```python
 rock = "basaltrock"
@@ -45,7 +49,9 @@ print("highland" in rock)
 print("basalt" in rock)
 ```
 
->False  
->True
+```Output
+False  
+True
+```
 
-After we know how to write the conditions for if we want an action to execute or not, we can begin actually specifying what action we want to occur.
+Now that we know how to write the conditions to determine whether we want an action to execute or not, we can begin to specify what action we want to occur.
