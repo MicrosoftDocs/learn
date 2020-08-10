@@ -1,5 +1,4 @@
 
-<!--2 minutes to read-->
 
 It's become increasingly obvious that Contoso will need to continue to operate an on-premises environment for some time after they begin migrating workloads to Azure IaaS VMs. Consequently, having the ability to apply Azure policies to on-premises Windows Server workloads is proving to be important. In addition, administrators need be able to review on-premises Windows Server instances in the Azure console.
 

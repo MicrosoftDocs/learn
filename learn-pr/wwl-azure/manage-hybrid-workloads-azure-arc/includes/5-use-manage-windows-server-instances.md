@@ -1,6 +1,3 @@
-<!-- Editor, please update design doc with this revised topic title: Use Azure Arc to manage Windows Server instances. -->
-
-<!--12 minutes minutes to read-->
 
 After you have onboarded a Windows Server computer, you can use Azure Arc to manage and configure that device. A number of options are available, including those described in the following table.
 
@@ -81,7 +78,7 @@ To manage and assign Azure Arc policies for a computer:
    - Description.
    - Policy enforcement (Enabled or Disabled)
 
-![A screenshot of the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies.](../media/m14-assign-policy-1.png)
+   ![A screenshot of the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies.](../media/m14-assign-policy-1.png)
 
 5. Select either **Review + create**, or the **Parameters** and **Remediation** tabs to configure additional behaviors.
 

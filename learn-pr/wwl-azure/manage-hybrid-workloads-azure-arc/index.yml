@@ -3,7 +3,7 @@ uid: learn.wwl.manage-hybrid-workloads-with-azure-arc
 metadata:
   title: Manage hybrid workloads with Azure Arc
   description: "You will learn to describe Azure Arc, implement Azure Arc with on-premises server instances, deploy Azure policies with Azure Arc, and use role-based access control (RBAC) to restrict access to Log Analytics data."
-  ms.date: 08/09/2020
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

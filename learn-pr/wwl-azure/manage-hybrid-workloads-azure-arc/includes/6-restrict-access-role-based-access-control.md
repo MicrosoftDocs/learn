@@ -1,6 +1,4 @@
-<!-- Editor, please update design doc with this revised topic title: Restrict access with RBAC. -->
 
-<!--7 minutes minutes to read-->
 
 Azure Monitor stores logs collected from managed systems in a Log Analytics workspace. Each workspace constitutes a security boundary that you can protect with RBAC on the workspace level. However, the content of each workspace is also subject to an access control mechanism that reviews permissions assigned to individual resources from which logs were collected.
 
@@ -25,7 +23,7 @@ To manage access using RBAC for on-premises resources, use the following procedu
 
 
 
-![A screenshot of the Access control (IAM) page in the Azure portal, for the selected VM, ContosoVM1. The details pane has five tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.](../media/m14-access-control-1.png)
+    ![A screenshot of the Access control (IAM) page in the Azure portal, for the selected VM, ContosoVM1. The details pane has five tabs: Check access (selected), Role assignments, Deny assignments, Classic administrators, and Roles.](../media/m14-access-control-1.png)
 
 The following table describes the five available tabs on the Access control (IAM) page, and the actions that you can perform on them.
 

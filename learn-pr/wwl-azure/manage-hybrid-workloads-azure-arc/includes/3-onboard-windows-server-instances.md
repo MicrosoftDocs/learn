@@ -1,6 +1,4 @@
-<!-- Editor, please update design doc with this revised topic title: Onboard Windows Server instances. -->
 
-<!--10 minutes minutes to read-->
 
 Azure Arc expands the support for Azure Resource Manager to resources running outside of Azure. This means that a physical server or a VM running in an on-premises datacenter can be registered with Azure Resource Manager and presented as a compute resource to the fabric controller. This applies to any server running the Windows Server or Linux server in an on-premises datacenter or hosted by a third-party cloud provider.
 
@@ -70,12 +68,12 @@ A typical way to onboard a computer is to generate and download a Windows PowerS
    - Operating system
    - Optionally, proxy server URL
 
-![A screenshot of the Generate script page with the Subscription, Resource group, Region, and Operating system fields selected.](../media/m14-generate-script-2.png)
+     ![A screenshot of the Generate script page with the Subscription, Resource group, Region, and Operating system fields selected.](../media/m14-generate-script-2.png)
 
 6. When prompted, select **Download**.
 7. Sign in as a local administrator on computers that you want to onboard, and then run the downloaded script.
 
-![A screenshot of the Generate script page, with the script displaying.](../media/m14-generate-script-3.png)
+     ![A screenshot of the Generate script page, with the script displaying.](../media/m14-generate-script-3.png)
 
 When you install the script on target computers, the script downloads the Azure Arc agent, installs it, and then onboards the server. The script prompts you to authenticate to the target Azure subscription where the corresponding resources will be created. You must also enter a generated security code and also verify your request with multifactor authentication; for example, by using the Microsoft Authenticator app.
 
