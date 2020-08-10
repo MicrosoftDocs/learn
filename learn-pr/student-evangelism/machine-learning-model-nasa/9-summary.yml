@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "A decision tree is the most complex and accurate algorithm."
       isCorrect: false
-      explanation: "Incorrect; decisions trees are not the most complex and accurate algorithm."
-    - content: "A decision tree is easy to visualize, and it fits well because the model can make only two choices: yes or no."
+      explanation: "Incorrect. Decision trees aren't the most complex and accurate algorithm."
+    - content: "A decision tree is easy to visualize. It fits well because the model can make only two choices: yes or no."
       isCorrect: true
-      explanation: "Correct! We chose a decision tree because a decision tree is easy to visualize, and it's easy to use because the model can make only two choices."
-    - content: "A decision tree has lots of branches and the model can make lots of choices."
+      explanation: "Correct! We chose a decision tree because a decision tree is easy to visualize. It's easy to use because the model can make only two choices."
+    - content: "A decision tree has lots of branches, and the model can make lots of choices."
       isCorrect: false
-      explanation: "Incorrect; in a decision tree, the model can make only two choices: yes or no."
+      explanation: "Incorrect. In a decision tree, the model can make only two choices: yes or no."
