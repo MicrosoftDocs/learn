@@ -26,14 +26,14 @@ quiz:
     - content: "Virtual machine scale sets"
       isCorrect: true
       explanation: "That's correct. Virtual machine scale sets let you deploy and manage a set of identical virtual machines."
-  - content: "Which of the following should be used when the primary concern is to perform work in response to an event (often via a REST command) that needs a response in a few seconds?"
+  - content: "Which of the following services should be used when the primary concern is to perform work in response to an event (often via a REST command) that needs a response in a few seconds?"
     choices:
     - content: "Azure App Service"
       isCorrect: false
-      explanation: "That's incorrect.  App Service is the blade in Azure where you find Azure Functions."
+      explanation: "That's incorrect. App Service is the blade in Azure where you find Azure Functions."
     - content: "Azure Container Instances"
       isCorrect: false
-      explanation: "That's incorrect.  In this case you are still running a full application that may not be designed for quick responses to events."
+      explanation: "That's incorrect. In this case, you are still running a full application that may not be designed for quick responses to events."
     - content: "Azure Functions"
       isCorrect: true
-      explanation: "That's correct. Azure Functions are used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less."
+      explanation: "That's correct. Azure Functions is used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less."
