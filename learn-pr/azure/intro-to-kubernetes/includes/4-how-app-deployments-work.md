@@ -25,7 +25,7 @@ For example, assume that you deploy the drone tracking front-end website and use
 
 ## What is a replica set?
 
-A replica set replace the replication controller as the preferred way to deploy replicas. A replica set includes the same functionality as a replication controller. However, it has an extra configuration option to include a selector value.
+A replica set replaces the replication controller as the preferred way to deploy replicas. A replica set includes the same functionality as a replication controller. However, it has an extra configuration option to include a selector value.
 
 A selector allows the replica set to identify all the pods running underneath it. This feature allows you to manage pods labeled with the same value as the selector value, but not created with the replicated set.
 
