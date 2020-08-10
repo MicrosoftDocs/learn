@@ -1,5 +1,3 @@
-<!-- Duration: 4 minutes  -->
-
 In this demonstration, you'll learn to:
 
 - Create a load balancer

@@ -2,9 +2,9 @@
 uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.create-vm-scale-set-azure-portal
 title: Create a VM scale set in the azure portal
 metadata:
-  title: Create a VM scale set in the azure portal
+  title: Create a virtual machine scale set in the azure portal
   description: "Create a VM scale set in the azure portal"
-  ms.date: 08/09/2020
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

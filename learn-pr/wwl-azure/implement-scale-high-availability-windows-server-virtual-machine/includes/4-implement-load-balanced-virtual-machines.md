@@ -1,4 +1,4 @@
-<!-- 5 minutes minutes to read -->
+
 
 You can use *Load balancing* to evenly distribute inbound network traffic across a group of resources or servers. In this scenario, the load balancers are considered *front end* devices, while the Azure resources to which clients want to connect are the *backend pool* instances.
 
@@ -45,7 +45,7 @@ The nature of the IP address determines the type of load balancer created, as de
 
 A backend pool can be associated to Azure VMs or virtual machine scale set. VMs in the backend pool serve the incoming requests.  
 
-When you scale instances up or down, the load balancer instantly reconfigures itself by using automatic reconfiguration. Adding or removing VMs from the backend pool reconfigures the load balancer without additional operations. The load balancer can balance requests to VMs and VM scale set instances that are connected to the same VNet as the load balancer only.
+When you scale instances up or down, the load balancer instantly reconfigures itself by using automatic reconfiguration. Adding or removing VMs from the backend pool reconfigures the load balancer without additional operations. The load balancer can balance requests to VMs and virtual machine scale set instances that are connected to the same VNet as the load balancer only.
 
 > [!NOTE]
 > A load balancer doesn't automatically balance request to all VMs that are connected to the same VNet; you must specify them by associating them to the backend pool.

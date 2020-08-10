@@ -1,4 +1,4 @@
-<!-- 10 minutes minutes to read -->
+
 
 For Contoso, virtual machine scale sets might solve their need to quickly create and manage VMs for fluctuating workloads. They can use either vertical scaling or horizontal scaling to meet their needs.
 

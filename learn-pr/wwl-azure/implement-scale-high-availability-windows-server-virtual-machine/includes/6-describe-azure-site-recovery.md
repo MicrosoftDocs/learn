@@ -1,10 +1,10 @@
-<!-- 14 minutes minutes to read -->
+
 
 Contoso must adopt a business continuity and disaster recovery strategy that keeps their data safe and their apps and workloads online even when planned and unplanned outages occur. Contoso can use Azure Site Recovery to help ensure business continuity by keeping business apps and workloads running during outages.
 
-Site Recovery replicates workloads running on physical servers and VMs from a primary site to a secondary location. If an outage occurs at the Contoso primary site, workloads fail over to a secondary location and users can access apps from there. After the primary location is running again, an administrator can fail back workloads to the primary location.
+Azure Site Recovery replicates workloads running on physical servers and VMs from a primary site to a secondary location. If an outage occurs at the Contoso primary site, workloads fail over to a secondary location and users can access apps from there. After the primary location is running again, an administrator can fail back workloads to the primary location.
 
-Site Recovery can manage replication for:
+Azure Site Recovery can manage replication for:
 
 - Azure VMs replicating between Azure regions.
 - On-premises VMs, Azure Stack VMs, and physical servers.
@@ -13,27 +13,27 @@ Site Recovery can manage replication for:
 
 By using Azure Site Recovery, you can replicate your VMs between Azure regions. It's also possible to use Azure Site Recovery to migrate on-premises VMs and physical servers from your on-premises infrastructure to Azure. Suppose Contoso suffered an outage in their New York offices, perhaps due to flooding. They could use Azure Site Recovery to mitigate such outages by performing failover to Azure.
 
-It's the Site Recovery features in Azure Site Recovery that enable you to manage around future outages. Site Recovery is designed to replicate your workloads from a designated primary site or region, to a secondary site or region that you have chosen. In the following graphic, the primary region is in East US, while the secondary region is Central US. 
+It's the site recovery features in Azure Site Recovery that enable you to manage around future outages. Azure Site Recovery is designed to replicate your workloads from a designated primary site or region, to a secondary site or region that you have chosen. In the following graphic, the primary region is in East US, while the secondary region is Central US. 
 
 ![A diagram depicts a site outage in the East US region with failover to a site in the Central US region.](../media/m22-failover.png)
 
-Site Recovery manages the replication of:
+Azure Site Recovery manages the replication of:
 
 - Azure VMs between regions.
 - On-premises VMs to Azure and back again.
 
 > [!TIP]
-> Because Site Recovery is a built-in component of Azure, it can run seamless tests, known as *disaster recovery drills*, without affecting your production workloads. This means that you can verify that your disaster recovery plans will be effective should they be needed.
+> Because Azure Site Recovery is a built-in component of Azure, it can run seamless tests, known as *disaster recovery drills*, without affecting your production workloads. This means that you can verify that your disaster recovery plans will be effective should they be needed.
 
 Azure site recovery provides the features described in the following table.
 
 |Feature|Description|
 |-------------------------------------|------------------------------------------------------------|
-|Azure virtual machine protection|Site Recovery enable you to automatically protect your VMs in Azure. Site Recovery mirrors the source VM configuration to a secondary Azure region, and creates any required or associated resource groups, storage accounts, VNets, and availability sets. The resources that Site Recovery creates are appended with a Site Recovery suffix.|
-|Snapshots and recovery points|Site Recovery has replication policies that you can customize. These policies enable you to define the retention history of recovery points and the frequency of snapshots. You create a recovery point from a snapshot of a VM's disk. There are two types of snapshots available: Crash-consistent and App-consistent. *Crash-consistent* recovery represents the data on-disk at the time the snapshot is taken. *App-consistent* recovery captures the same data as crash-consistent, but also includes all in-memory data and in-process transactions. By including the in-memory data, Site Recovery can restore a VM and any running apps without any data loss. All recovery points are kept for 24 hours by default, but you can extend this to 72 hours.|
-|Replication to a secondary region|When you enable replication for an Azure VM, the Site Recovery mobility service is installed. This extension registers the VM with Site Recovery. Continuous VM replication then begins, with any writes to the disk being immediately transferred to a local storage account. Site Recovery uses this account, replicating the cache to a storage account in the destination environment. Site Recovery copies data stored in the cache and syncs it with either the target storage account or replicated managed disks. After the data is processed, crash-consistent recovery points are created. If app-consistent recovery points are enabled, they'll be generated on a schedule as set in the Site Recovery replication policy.|
-|Disaster recovery (DR) drills|Site Recovery enables you to perform disaster recovery drills after you have completed all the prerequisite configuration tasks. By running a drill, you can validate the replication strategy for your environment without losing data, experiencing downtime, or compromising your production environment.|
-|Flexible failover and failback|You can quickly start Site Recovery failover and failback by using the Azure portal. When running a failover, you select a recovery point, then let Site Recovery manage the failover. Failback is simply a reverse of this process. When a failover is successfully committed, it's available to failback.|
+|Azure virtual machine protection|Azure Site Recovery enable you to automatically protect your VMs in Azure. Azure Site Recovery mirrors the source VM configuration to a secondary Azure region, and creates any required or associated resource groups, storage accounts, VNets, and availability sets. The resources that Azure Site Recovery creates are appended with a Azure Site Recovery suffix.|
+|Snapshots and recovery points|Azure Site Recovery has replication policies that you can customize. These policies enable you to define the retention history of recovery points and the frequency of snapshots. You create a recovery point from a snapshot of a VM's disk. There are two types of snapshots available: Crash-consistent and App-consistent. *Crash-consistent* recovery represents the data on-disk at the time the snapshot is taken. *App-consistent* recovery captures the same data as crash-consistent, but also includes all in-memory data and in-process transactions. By including the in-memory data, Azure Site Recovery can restore a VM and any running apps without any data loss. All recovery points are kept for 24 hours by default, but you can extend this to 72 hours.|
+|Replication to a secondary region|When you enable replication for an Azure VM, the Azure Site Recovery mobility service is installed. This extension registers the VM with Azure Site Recovery. Continuous VM replication then begins, with any writes to the disk being immediately transferred to a local storage account. Azure Site Recovery uses this account, replicating the cache to a storage account in the destination environment. Azure Site Recovery copies data stored in the cache and syncs it with either the target storage account or replicated managed disks. After the data is processed, crash-consistent recovery points are created. If app-consistent recovery points are enabled, they'll be generated on a schedule as set in the Azure Site Recovery replication policy.|
+|Disaster recovery (DR) drills|Azure Site Recovery enables you to perform disaster recovery drills after you have completed all the prerequisite configuration tasks. By running a drill, you can validate the replication strategy for your environment without losing data, experiencing downtime, or compromising your production environment.|
+|Flexible failover and failback|You can quickly start Azure Site Recovery failover and failback by using the Azure portal. When running a failover, you select a recovery point, then let Azure Site Recovery manage the failover. Failback is simply a reverse of this process. When a failover is successfully committed, it's available to failback.|
 
 ## Failover and failback using Azure Site Recovery
 

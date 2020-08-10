@@ -1,4 +1,4 @@
-<!-- 11 minutes minutes to read -->
+
 
 Contoso can use the Azure Site Recovery to help protect access to their critical resources in Azure. After IT staff complete the disaster recovery setup, Contoso's Azure VMs continuously replicate to a secondary region. If an outage occurs, IT staff at Contoso can fail over VMs to the secondary region, and users can access those resources from the new region. After any problems are resolved and everything is running normally again, IT support staff can fail back the VMs, enabling users to continue working in the primary region.
 
@@ -29,16 +29,16 @@ A *Recovery Services vault* enables Azure Site Recovery to complete disaster rec
 
 ### What are target resources?
 
-When you enable VM replication, Site Recovery gives you the option of creating target resources. These resources are described in the following table.
+When you enable VM replication, Azure Site Recovery gives you the option of creating target resources. These resources are described in the following table.
 
 |Target resource|Default setting|
 |---|---|
 |**Target subscription**|This is the same as the source subscription.|
-|**Target resource group**|This is the resource group to which VMs belong after failover. It can be in any Azure region except the source region. Site Recovery creates a new resource group in the target region, which has the suffix "asr".|
-|**Target VNet**|This is the VNet in which replicated VMs are located after failover. A network mapping is created between source and target VNets<!-- Deleted "and vice versa" (Tarina: "vice versa we would only use "vice versa" if we had just referred to a unidirectional action. But when we say "between," that implies it's bidirectional, so I think we can delete "vice versa.") -->. Site Recovery creates a new VNet and subnet with the suffix "asr".|
-|**Target storage account**|This is the storage account to which data is replicated. Site Recovery creates a new storage account in the target region to mirror the source storage account.|
-|**Replica managed disks**|If the VM uses a managed disk, this is the managed disks to which data is replicated. Site Recovery creates replica managed disks in the storage region to mirror the source.|
-|**Target availability sets**|This is the availability set in which replicating VMs are located after failover. For VMs that are located in an availability set in the source location, Site Recovery creates an availability set in the target region with the suffix "asr". If an availability set exists, it's used and a new one isn't created.|
+|**Target resource group**|This is the resource group to which VMs belong after failover. It can be in any Azure region except the source region. Azure Site Recovery creates a new resource group in the target region, which has the suffix "asr".|
+|**Target VNet**|This is the VNet in which replicated VMs are located after failover. A network mapping is created between source and target VNets. Azure Site Recovery creates a new VNet and subnet with the suffix "asr".|
+|**Target storage account**|This is the storage account to which data is replicated. Azure Site Recovery creates a new storage account in the target region to mirror the source storage account.|
+|**Replica managed disks**|If the VM uses a managed disk, this is the managed disks to which data is replicated. Azure Site Recovery creates replica managed disks in the storage region to mirror the source.|
+|**Target availability sets**|This is the availability set in which replicating VMs are located after failover. For VMs that are located in an availability set in the source location, Azure Site Recovery creates an availability set in the target region with the suffix "asr". If an availability set exists, it's used and a new one isn't created.|
 |**Target availability zones**|If the target region supports availability zones, Site Recovery assigns the same zone number as that used in the source region.|
 
 ### Configure outbound connectivity
@@ -50,9 +50,9 @@ Azure Site Recovery doesn't support controlling network connectivity via an auth
 |URL|Details|
 |-----------------------------------------|------------------------------------------------------------|
 |`*.blob.core.windows.net`|Enables data to be written from the VM to the cache storage account in the source region.|
-|`login.microsoftonline.com`|Provides authorization and authentication to Site Recovery service URLs.|
-|`*.hypervrecoverymanager.windowsazure.com`|Enables the VM to communicate with the Site Recovery service.|
-|`*.servicebus.windows.net`|Enables the VM to write Site Recovery monitoring and diagnostics data.|
+|`login.microsoftonline.com`|Provides authorization and authentication to Azure Site Recovery service URLs.|
+|`*.hypervrecoverymanager.windowsazure.com`|Enables the VM to communicate with the Azure Site Recovery service.|
+|`*.servicebus.windows.net`|Enables the VM to write Azure Site Recovery monitoring and diagnostics data.|
 |`*.vault.azure.net`|Enables access to enable replication for ADE-enabled VMs via Azure portal.|
 |`*.automation.ext.azure.com`|Enables enabling auto-upgrade of mobility agent for a replicated item via Azure portal.|
 
@@ -62,21 +62,21 @@ Azure Site Recovery uses Role-Based Access Control (RBAC) in Azure by default. R
 
 |Role|Description|
 |----|-----------|
-|Site Recovery Contributor|A contributor has full permissions for Azure Site Recovery operations in a recovery services vault. This role is suitable for disaster recovery admins.|
-|Site Recovery Operator|An operator has permissions to run and administer Azure Site Recovery failover and failback operations. This role is suitable for disaster recovery operators.|
-|Site Recovery Reader|A reader has permissions to review Azure Site Recovery operations. This role is suitable for IT monitoring executives.|
+|Azure Site Recovery Contributor|A contributor has full permissions for Azure Site Recovery operations in a recovery services vault. This role is suitable for disaster recovery admins.|
+|Azure Site Recovery Operator|An operator has permissions to run and administer Azure Site Recovery failover and failback operations. This role is suitable for disaster recovery operators.|
+|Azure Site Recovery Reader|A reader has permissions to review Azure Site Recovery operations. This role is suitable for IT monitoring executives.|
 
 To enable replication on a VM, a user must have permission to create a VM in both the VNet and resource group.
 
-## Enable replication for the Azure VM
+## Enable replication for the Azure virtual machine
 
 The following steps enable VM replication to a secondary location:
 
 1. In the Azure portal, select **Virtual machines**, and then select the VM to replicate.
-2. On the selected VM's blade, within <!-- used to be "under--> **Operations**, select **Disaster recovery**.
+2. On the selected VM's blade, within **Operations**, select **Disaster recovery**.
 3. From **Basics**, select **Target region**, and then select the target region.
 
-![A screenshot of the Disaster recovery blade for the ContosoVM1 virtual machine. Central US has been selected as the Target region. A map displays with this region highlighted.](../media/m22-disaster-1.png)
+   ![A screenshot of the Disaster recovery blade for the ContosoVM1 virtual machine. Central US has been selected as the Target region. A map displays with this region highlighted.](../media/m22-disaster-1.png)
 
 4. To review the replication settings, select **Review + Start replication**. If you need to change any defaults, select **Next: Advanced settings**. 
 5. To start the job that enables VM replication, select **Start replication**.

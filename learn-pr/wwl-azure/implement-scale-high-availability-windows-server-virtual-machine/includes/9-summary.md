@@ -1,10 +1,10 @@
-<!-- 2 minutes to read -->
+
 
 The Contoso IT Engineering team needed to ensure that VMs dynamically adapt to fluctuating workloads and remain available if an Azure datacenter fails.
 
-In this module, you learned how to implement VM scale sets, scaling, and load-balanced VMs. You also learned to implement Azure Site Recovery.
+In this module, you learned how to implement virtual machine scale sets, scaling, and load-balanced VMs. You also learned to implement Azure Site Recovery.
 
-Now you can assist the IT team in using Azure VM scale sets to adapt to variable workloads. You can also assist the team in using Azure Site Recovery to keep apps and workloads running during outages.
+Now you can assist the IT team in using Azure virtual machine scale sets to adapt to variable workloads. You can also assist the team in using Azure Site Recovery to keep apps and workloads running during outages.
 
 ## Learn more
 

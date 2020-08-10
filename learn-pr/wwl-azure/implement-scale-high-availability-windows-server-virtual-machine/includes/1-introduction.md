@@ -11,13 +11,13 @@ As part of the initial design, the Contoso IT team asked you, their lead system 
 
 Contoso's customer-facing website uses a VM running Microsoft Internet Information Services (IIS) and manages large workloads. Because the site's demand is unpredictable, the IT Engineering team would like to ensure that their Windows Server IaaS VMs are able to dynamically adjust to increases and decreases in workloads. Also, as part of a business continuity and disaster recovery (BCDR) plan, the IT team also needs to ensure that this site and other VMs remain available in the event that an Azure datacenter fails.
 
-In this module, you'll learn how to implement scaling for VM scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery. By the end of this module, you'll be able to help Contoso dynamically adjust to increases and decreases in workloads while ensuring business continuity.
+In this module, you'll learn how to implement scaling for virtual machine scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery. By the end of this module, you'll be able to help Contoso dynamically adjust to increases and decreases in workloads while ensuring business continuity.
 
 ## Learning objectives
 
 After completing this module, you will be able to:
 
-- Describe VM scale sets.
+- Describe virtual machine scale sets.
 - Implement scaling.
 - Implement load-balancing VMs.
 - Implement Azure Site Recovery.

@@ -2,9 +2,9 @@
 uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm.implement-azure-site-recovery
 title: Implement azure site recovery
 metadata:
-  title: Implement azure site recovery
-  description: "Implement azure site recovery"
-  ms.date: 08/09/2020
+  title: Implement Azure Site Recovery
+  description: "Implement Azure Site Recovery"
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

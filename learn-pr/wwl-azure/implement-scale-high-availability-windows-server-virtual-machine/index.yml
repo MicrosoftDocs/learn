@@ -3,18 +3,18 @@ uid: learn.wwl.implement-scale-high-availability-with-windows-server-vm
 metadata:
   title: Implement scale and high availability with Windows Server VM
   description: "You'll learn how to implement scaling for VM scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery."
-  ms.date: 08/09/2020
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Implement scale and high availability with Windows Server VM
-summary: You'll learn how to implement scaling for VM scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery.
+summary: You'll learn how to implement scaling for virtual machine scale sets and load-balanced VMs. You'll also learn how to implement Azure Site Recovery.
 abstract: |
   After completing this module, you will be able to:
-  - Describe VM scale sets.
+  - Describe virtual machine scale sets.
   - Implement scaling.
-  - Implement load-balancing VMs.
+  - Implement load-balancing virtual machines.
   - Implement Azure Site Recovery.
 prerequisites: |
   In order to get the best learning experience from this module, it's important that you have knowledge and experience of the following:
@@ -42,7 +42,7 @@ products:
 - azure-virtual-machines
 units:
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm.introduction
-- learn.wwl.implement-scale-high-availability-with-windows-server-vm.describe-vm-scale-sets
+- learn.wwl.implement-scale-high-availability-with-windows-server-vm.describe-virtual-machine-scale-sets
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm.implement-scaling
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm.implement-load-balancing-vms
 - learn.wwl.implement-scale-high-availability-with-windows-server-vm.create-vm-scale-set-azure-portal
