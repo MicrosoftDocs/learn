@@ -15,36 +15,33 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is Artificial Intelligence?"
+  - content: "What is artificial intelligence (AI)?"
     choices:
-    - content: "A way for computers to take over the world"
+    - content: "A method that computers might use to take over the world."
       isCorrect: false
-      explanation: "This is not the definition"
-    - content: "Teaching a computer how to have intelligence and make basic decisions"
+      explanation: "Incorrect. AI requires humans for computers to be trained in AI."
+    - content: "A way to teach a computer how to learn and make basic decisions."
       isCorrect: true
-      explanation: "That is the definition of artificial intelligence"
-    - content: "To perform every task in our lives"
+      explanation: "Correct! AI is a way to teach a computer how to learn and make basic decisions."
+    - content: "A way to computerize unpleasant tasks in our lives."
       isCorrect: false
-      explanation: "This is not the definition"
-  - content: "What is the purpose of anaconda?"
+      explanation: "Incorrect. AI is more complex than providing only convenience."
+  - content: "What is the role of Anaconda in Python?"
     choices:
-    - content: "To mimic a snake on the computer"
+    - content: "You can use Anaconda to download one Python library at a time."
       isCorrect: false
-      explanation: "This is what Anaconda is for"
-    - content: "To download one library at a time"
-      isCorrect: false
-      explanation: "This is not what Anaconda is for"
-    - content: "To download lots of libraries at once"
+      explanation: "Incorrect. Anaconda doesn't download Python libraries individually."
+    - content: "You can use Anaconda to download many Python libraries at once."
       isCorrect: true
-      explanation: "Correct! This is what Anaconda is for"
-    - content: "To download programs without going on the internet"
+      explanation: "Correct! Anaconda is useful for downloading many Python libraries in one package."
+    - content: "You can use Anaconda to download programs without going online."
       isCorrect: false
-      explanation: "Anaconda still needs the internet to download the libraries"
-  - content: "Humans are better than computers at finding minute details of objects. True or False?"
+      explanation: "Incorrect. You need internet connection to download Anaconda."
+  - content: "Humans are better than computers at finding minute details of objects."
     choices:
-    - content: "True"
+    - content: "True."
       isCorrect: false
-      explanation: "Computers are much better than humans in this aspect"
-    - content: "False"
+      explanation: "Incorrect. Humans are not better than computers in finding minute details."
+    - content: "False."
       isCorrect: true
-      explanation: "Correct! Computers are a lot better than humans in this aspect"
+      explanation: "Correct! Computers are much better than humans in finding minute details."

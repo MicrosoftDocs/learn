@@ -1,42 +1,37 @@
-Before we build an AI system to detect the rock types, lets see how we 'humans' classify things.
+Before we build an AI system to detect the rock types, let's consider how humans classify things.
 
-This is the likely process that our brain goes through to do this:
+Our thought process usually goes something like this:
 
 ### Step 0
 
-We have to collect as many rock images as possible. This will let us see lots of different variations of the items we are trying to classify. Fortunately, this project, there are lots of space rock pictures openly available online that you can use.
+We want to collect as many rock images as possible. Having a large number of images helps us see a large number of variation in the items we are trying to classify. Fortunately, in this project, we can choose from a large number of relevant images online.
 
 ### Step 1
 
-Our brain first tries to extract patterns from each image, patterns such as:
+First, our brain tries to extract patterns from each image. The patterns include the following factors:
 
-Color combinations  
-Sharp edges  
-Circular patterns  
-Texture of the rock  
-Size of the rock  
+- Color combinations  
+- Sharp edges  
+- Circular patterns  
+- Texture in the rock's surface  
+- The size of the rock  
 
-Our brains subconsciously do all of these without us noticing. We call these 'Features' in AI.
+Our brains subconsciously do all of these visual searches and categorization without our notice. In AI, we refer to these factors as *features*.
 
-Below are some features that we can extract from a motorcycle. You can see there are wheels, handle-bars, throttle, etc.
+The following image lists some features that we can extract from a photo of a motorcycle:
 
-<img src="../introduction-artificial-intelligence-nasa\media\features.png" width="350" align="center">  
+:::image type="content" source="../media/features.png" alt-text="Figure of a motorcycle, the words Feature extraction algorithm, and nine boxes that show parts of a motorcycle under the headings Features." loc-scope="Azure":::
 
 ### Step 2
 
-Next, we try to find the relationships between the features and rock types.
+Next, we try to find the relationships between the features and the type of rock is shown in a photo of a rock.
 
-In this step our brain tries to figure out what are the characteristics/features of each rock type.
+In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. For example, we determine that lighter rocks are usually crustals and that the texture of basalt rocks are more dense. These associations, and the links between them, are demonstrated in the following image:
 
-As a result of this, we will come up with some rules, for example : "Lighter rocks are usually Crustals". "Basalt rocks have more dense textures", ...
-We show these associations with links such as shown below:
-
-<img src="../introduction-artificial-intelligence-nasa\media\links.png" width="350" align="center">
+:::image type="content" source="../media/links.png" alt-text="Dynamic diagram that shows four sets of nine black dots, with colored lines being drawn between the dots in each set." loc-scope="Azure":::
 
 ### Step 3
 
-Lastly we try to use these relationships to figure out what to classify a new item as.
+Last, we try to use these relationships to determine how to classify a new item. Given a new rock image to consider, our brains extract its characteristics. Then, our brain uses the associations we already made to determine what type of rock it is.
 
-Given a new rock image, our brain extracts all of its characteristics we discussed above, and then uses the associations we made in the second step to decides what type of rock it is.
-
-<img src="../introduction-artificial-intelligence-nasa\media\dl.png" width="550" align="center">
+:::image type="content" source="../media/association-process.png" alt-text="Dynamic diagram that demonstrates the progression from pixel numbers to feature extraction to associations." loc-scope="Azure":::
