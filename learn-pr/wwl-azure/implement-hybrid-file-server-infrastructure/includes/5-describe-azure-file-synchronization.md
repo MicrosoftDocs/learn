@@ -1,5 +1,5 @@
 
-<!--14 minutes minutes to read-->
+
 
 Azure File Sync is a service that allows you to cache Azure file shares on an on-premises Windows Server file server. With cloud tiering enabled, Azure File Sync helps ensure that a file server always has free available space while making more files available than a file server could store locally. It presents the whole folder structure and files as if they were available locally, although some files might be tiered to the Azure file share. If a user tries to access such a file, the file is recalled (transparently downloaded from the Azure file share) in the background and then presented to user. By doing that, File Sync transforms an on-premises Windows Server into a quick cache of your Azure file share. File Sync supports the multi-master model and can sync data between multiple file servers.
 

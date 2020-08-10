@@ -1,5 +1,4 @@
 
-<!--10 minutes minutes to read-->
 
 Before users at Contoso can access Azure Files they must first authenticate, and anonymous access isn't supported. As lead system engineer, you'll need to know the authentications methods that Azure Files supports, described in the following table.
 

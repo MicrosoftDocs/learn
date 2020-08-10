@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.configure-azure-files
-title: Configure Azure files
+title: Configure Azure Files
 metadata:
-  title: Configure Azure files
-  description: "Configure Azure files"
-  ms.date: 08/09/2020
+  title: Configure Azure Files
+  description: "Configure Azure Files"
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

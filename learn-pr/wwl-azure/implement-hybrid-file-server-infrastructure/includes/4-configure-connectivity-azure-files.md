@@ -1,5 +1,5 @@
 
-<!--8 minutes minutes to read-->
+
 
 Users at Contoso will likely connect to Azure Files using the SMB protocol, although NFS is also supported. SMB uses TCP port 445 for establishing connections. Many companies and internet service providers block that port, which is a common reason why users can't access Azure Files. If unblocking port 455 isn't an option, you can still access Azure Files by first establishing a point-to-site (P2S) virtual private network (VPN), a site-to-site (S2S) VPN, or by using an Azure ExpressRoute connection to Azure. Alternatively, the company can use Azure File Sync to sync an Azure file share to an on-premises file server, which users can always access.
 

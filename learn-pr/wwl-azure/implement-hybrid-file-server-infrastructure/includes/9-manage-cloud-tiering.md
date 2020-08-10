@@ -1,5 +1,5 @@
 
-<!--10 minutes minutes to read-->
+
 
 *Cloud tiering* is an optional feature of Microsoft Azure File Sync that helps ensure that on-premises file servers always have enough free space. It can also help ensure that frequently accessed files are cached locally on a file server while all other files are tiered to an Azure file share. When a file is tiered, the File Sync file system filter replaces the file locally with a pointer called *reparse point*, which represents a URL to the file on an Azure file share. When a user requests a tiered file, File Sync seamlessly recalls the file data from Azure Files without the user needing to know that the file date is stored on an Azure file share.
 
@@ -25,7 +25,7 @@ For cloud tiering, the File Sync system filter builds a map of your namespace on
 
 With cloud tiering, files can be cached locally or tiered to an Azure file share. Some file formats, such as multimedia files or compressed zip files, can also be in a third state, which is *partially tiered*. In a partially tiered file, only part of the file caches locally. This occurs when you open a tiered file and the file format supports partial read, which means that you can use the file without downloading it completely. For example, you can start referring to a multimedia file, and while you go through it, only the needed parts of the media file cache locally.
 
-### Recognizing tiered files
+### Recognize tiered files
 
 Tiered files are seamlessly accessible, and you can use them in the same way as files that cache locally on a file server. You can recognize a tiered file in several ways, including:
 
@@ -39,7 +39,7 @@ fsutil reparsepoint query <file-name>
 
 If the file has a reparse point, the output includes "Reparse Tag Value: 0x8000001e".
 
-### Tiering or recalling files manually
+### Tier or recall files manually
 
 When cloud tiering is enabled, files are automatically tiered based on the volume free space policy and date policy. You can manually force a file to be tiered; for example, if you just saved a large file that you don't intend to use again for a long time and you don't want to wait for the policy to tier the file. You can trigger tiering by running the `Invoke-StorageSyncCloudTiering` cmdlet.
 

@@ -1,6 +1,5 @@
 
 
-<!--5 minutes minutes to read-->
 
 Contoso, like many companies, has multiple file servers in separate locations. With DFS, you can replicate folder content between file servers, and publish file shares in a single namespace. Windows Server has the following two DFS-related role services:
 

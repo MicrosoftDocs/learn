@@ -1,4 +1,4 @@
-<!-- Duration: 6 minutes -->
+
 
 In this demonstration, you'll learn to:
 

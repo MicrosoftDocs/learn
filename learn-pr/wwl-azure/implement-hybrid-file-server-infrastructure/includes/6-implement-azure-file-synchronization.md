@@ -1,6 +1,5 @@
 
 
-<!--11 minutes minutes to read-->
 
 You can implement Azure File Sync manually, or by using Windows Admin Center. When you use Windows Admin Center, you only need to provide basic configuration settings because this method satisfies all the prerequisites. For manual deployment, you use either Azure portal or Azure PowerShell. However, for manual deployment, you must already have an Azure storage account with an Azure file share that's going to be a cloud endpoint. In both cases, you must have on-premises Windows file servers that you want to use as server endpoints. In this unit, you'll learn how to implement Azure File Sync using both methods.
 
@@ -8,7 +7,7 @@ You can implement Azure File Sync manually, or by using Windows Admin Center. Wh
 
 To implement Azure File sync manually, you must complete the following high-level steps:
 
-1. Deploy the storage sync service
+1. Deploy the Storage Sync Service
 1. Install the Azure File Sync agent
 1. Register Windows Server with Storage Sync Service
 1. Create a sync group
@@ -20,7 +19,7 @@ Storage Sync Service is the top-level Azure resource for File Sync. You can have
 
 You deploy Storage Sync Service in the Azure portal by selecting **Create a resource**, searching for **Azure File Sync**, and then selecting **Create**. Enter a Resource group name, a Storage sync service name, and a Region, and then select **Review + Create**.
 
-![A screenshot the Deploy Azure File Sync page in the Azure portal. The Resource group name is ContosoResourceGroup, the Storage sync service name is contosoafs, and the region is EastUS.](../media/m11-deploy-azure-file-synchronization.png)
+![A screenshot the Deploy Azure File Sync page in the Azure portal. The Resource group name is ContosoResourceGroup, the Storage Sync Service name is contosoafs, and the region is EastUS.](../media/m11-deploy-azure-file-synchronization.png)
 
 > [!NOTE]
 > You deploy Storage Sync Service in Azure PowerShell by using the `New-AzStorageSyncService` cmdlet.

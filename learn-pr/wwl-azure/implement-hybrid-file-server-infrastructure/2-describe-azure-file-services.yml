@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.implement-hybrid-file-server-infrastructure.describe-azure-file-services
-title: Describe Azure file services
+title: Describe Azure File services
 metadata:
-  title: Describe Azure file services
-  description: "Describe Azure file services"
-  ms.date: 08/09/2020
+  title: Describe Azure File services
+  description: "Describe Azure File services"
+  ms.date: 08/12/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial

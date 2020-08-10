@@ -1,5 +1,4 @@
 
-<!-- 15 minutes minutes to read -->
 
 The IT staff at Contoso plan to migrate its file sharing and have asked you to investigate options for moving this shared content to Azure. You discover that Azure Storage offers four types of storage services, depending on the characteristics of data you store. The following table summarizes these storage services.
 
@@ -7,7 +6,7 @@ The IT staff at Contoso plan to migrate its file sharing and have asked you to i
 |---------------|------------------------------------------------------------|
 |Blobs|Blobs typically represent unstructured files such as media content, virtual machine (VM) disks, backups, or logs. Blobs facilitate locking mechanisms, ensuring exclusive file access that IaaS VM disks require.|
 |Tables|Tables host nonrelational, semi-structured content, which consists of multiple rows of data. In the context of Azure Table storage, these rows are referred to as *entities*. Developers frequently implement table storage as the backend data store for App Service or Azure Cloud Services.|
-|Queues|Queues offer temporary storage for messages that components of distributed applications use to asynchronously communicate with each other. For example, rather than sending a message directly to a destination component, a source component can place the message in a queue. This way, the destination component can process all messages in the queue according to its own schedule, without forcing the source component to wait for an acknowledgement.|
+|Queues|Queues offer temporary storage for messages that components of distributed applications use to asynchronously communicate with each other. For example, rather than sending a message directly to a destination component, a source component can place the message in a queue. This way, the destination component can process all messages in the queue according to its own schedule, without forcing the source component to wait for an acknowledgment.|
 |Files|Like blobs, files provide storage for unstructured data. However, their locking mechanism allows file sharing in a manner that is similar to on-premises Windows file shares.|
 
 In this unit, you'll learn about using Azure Files.
