@@ -1,6 +1,6 @@
 Now that we know about cleaning and separating the data, we can actually apply these principles to our rock classification project.
 
-Let's start by downloading all the data we have about rock images. Then, we'll put it in the same folder as your Jupyter Notebook file. Go to [this Azure Blob storage](https://portal.azure.com/#blade/Microsoft_Azure_Storage/ContainerMenuBlade/overview/storageAccountId/%2Fsubscriptions%2F4c3c2dd8-b391-4b47-9ba2-57f760bf278c%2FresourceGroups%2FNASA-Learn%2Fproviders%2FMicrosoft.Storage%2FstorageAccounts%2Fnasadata/path/nasarocks/etag/%220x8D817FE9313AD8B%22/defaultEncryptionScope/%24account-encryption-key/denyEncryptionScopeOverride//defaultId//publicAccessVal/Container?azure-portal=true) and download the *Data.zip* folder. Unzip it and put it in the same folder as your Jupyter Notebook file.
+Let's start by downloading all the data we have about rock images. Then, we'll put it in the same folder as your Jupyter Notebook file. Go to [this Azure Blob storage](https://nasadata.blob.core.windows.net/nasarocks/Data.zip) and download the *Data.zip* folder. Unzip it and put it in the same folder as your Jupyter Notebook file.
 
 Because our photos of rocks come in different sizes (small, medium, and large), we crop the images so that they are the same size (224 &times; 224 pixels). We resize the images because computers expect images to be same size. If images vary in size, they're not as easy for the computer to process.
 
