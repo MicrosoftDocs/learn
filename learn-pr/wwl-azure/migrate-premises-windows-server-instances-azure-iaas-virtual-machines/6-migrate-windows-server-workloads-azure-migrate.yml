@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms.migrate-workloads-by-using-azure-migrate
+title: Migrate windows server workloads by using azure migrate
+metadata:
+  title: Migrate windows server workloads by using azure migrate
+  description: "Migrate windows server workloads by using azure migrate"
+  ms.date: 08/12/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-migrate-windows-server-workloads-azure-migrate.md)]
