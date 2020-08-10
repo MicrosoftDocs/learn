@@ -1,26 +1,27 @@
 ### YamlMime:Module
 uid: learn.azure.azure-compute-fundamentals
 metadata:
-  title: Describe core resources available in Azure
-  description: TBD
+  title: Describe services available in Azure Compute
+  description: Learn about the different services that are available in Azure Compute.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe core resources available in Azure
-summary: Tailwind Traders is thinking of migrating workloads from their on-prem datacenter to Azure and wants to know which options they have for their existing VM, web application, container and VDI workloads.
+summary: In this module, you'll learn how to take advantage of several virtualization services in Azure Compute, which can help your applications scale out quickly and efficiently in order to meet increasing demands.
 abstract: | 
-  Upon completion of this module, the learner will be able to describe the benefits and usage of:
+  Upon completion of this module, you'll be able to describe the benefits and usage of:
   - Azure Virtual Machines (VMs)
   - Azure App Services
   - Azure Container Instances (ACI)
   - Azure Kubernetes Service (AKS)
+  - Azure Functions
   - Windows Virtual Desktop
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
   - Familiarity with cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/define-core-azure-services-products.svg
 levels:
 - beginner
 roles:
@@ -38,9 +39,9 @@ products:
 units:
 - learn.azure.azure-compute-fundamentals.introduction
 - learn.azure.azure-compute-fundamentals.azure-virtual-machines
+- learn.azure.azure-compute-fundamentals.azure-container-services
 - learn.azure.azure-compute-fundamentals.azure-app-services
-- learn.azure.azure-compute-fundamentals.azure-container-instances
-- learn.azure.azure-compute-fundamentals.azure-kubernetes-services
+- learn.azure.azure-compute-fundamentals.azure-functions
 - learn.azure.azure-compute-fundamentals.windows-virtual-desktop
 - learn.azure.azure-compute-fundamentals.knowledge-check
 - learn.azure.azure-compute-fundamentals.summary

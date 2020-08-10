@@ -1,21 +1,22 @@
-Suppose your company, Tailwind Traders, is thinking of migrating workloads from their on-prem datacenter to Azure, and wants to know which options they have for their existing Virtual Machines (VMs), web applications, containers and Virtual desktop infrastructure (VDI) workloads.
+Imagine that you've landed your dream job as a development lead at Tailwind Traders, a company that specializes in hardware manufacturing. On your first day, your new manager tells you that the company's website has been having a difficult time keeping up with the application demands, and he wants you to investigate a solution. The front-end webservers are operating near capacity during peak periods of the day, and time is of the essence to get a solution in place. But there's a problem; you don't have any free servers to scale out your application.
 
-[Azure compute](https://azure.microsoft.com/product-categories/compute) is an on-demand computing service for running cloud-based applications. It provides computing resources such as disks, processors, memory, networking and operating systems.
+![Tailwind Traders company logo.](../../shared/media/tailwind-traders-logo.png)
 
-The resources are available on-demand and can typically be made available in minutes or even seconds. You pay only for the resources you use and only for as long as you're using them. While there are many compute services, two of the most common are virtual machines and containers.
+Of course, you could ask to buy new equipment, but your department's budget is tight. And even if you were able to procure several servers, you'd need to invest a lot of time to set them up and install software. Plus, you don't want to buy more hardware than needed, not only because you want to make a good impression with leadership, but also because you just don't know how many servers are necessary for this project.
 
-![Screenshot of the portal compute services page including virtual machines and containers.](../media/compute-services.png)
+Ideally, you'd obtain the resources you need to do the work without too much administration, and simply configure them to do the work. In addition, you'd pay only for the compute resources you need while you're using them.
 
-By the end of this module, you'll <span style="background:yellow">TODO: TBD</span>...
+This is exactly what you can do in Azure. You can can create compute resources, configure them to do the work that is needed, and pay for only what you use.
 
 ## Learning objectives
 
-Upon completion of this module, the learner will be able to describe the benefits and usage of:
+Upon completion of this module, you'll be able to describe the benefits and usage of:
 
 - Azure Virtual Machines (VMs)
 - Azure App Services
 - Azure Container Instances (ACI)
 - Azure Kubernetes Service (AKS)
+- Azure Functions
 - Windows Virtual Desktop
 
 ## Prerequisites
