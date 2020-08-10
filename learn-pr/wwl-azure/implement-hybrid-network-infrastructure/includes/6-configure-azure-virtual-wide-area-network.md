@@ -1,4 +1,4 @@
-<!-- 10 minutes minutes to read -->
+
 
 The Contoso IT team has various choices about how best to implement networking services in a hybrid environment. Azure Virtual WAN is a service that consolidates many of these networking services, and provides a consistent operational interface to network security, routing, and infrastructure.
 
@@ -66,7 +66,7 @@ To create a Virtual WAN, in the Azure portal, use the following procedure:
 5. Enter a **Name**, and then select the **Type**.
 6. Select **Review + create**, and then select **Create**.
 
-![A screenshot of the Create WAN blade, Basics tab. The administrator has configured the basic properties of subscription, resource group, and location. The Name is defined as ContosoVirtualWAN, and the Type is Standard.](../media/m13-create-wide-area-network-1.png)
+   ![A screenshot of the Create WAN blade, Basics tab. The administrator has configured the basic properties of subscription, resource group, and location. The Name is defined as ContosoVirtualWAN, and the Type is Standard.](../media/m13-create-wide-area-network-1.png)
 
 ### Create a hub
 
@@ -76,17 +76,17 @@ To create a hub:
 2. Under **Connectivity**, select **Hubs**.
 3. On the toolbar, select **+ New Hub**.
 
-![A screenshot of the Basics tab on the Create virtual hub blade. The administrator has selected the Region (East US) and entered the Name ContosoVH1. The hub private address space is 10.10.0.0/16..](../media/m13-create-hub-1.png)
+   ![A screenshot of the Basics tab on the Create virtual hub blade. The administrator has selected the Region (East US) and entered the Name ContosoVH1. The hub private address space is 10.10.0.0/16..](../media/m13-create-hub-1.png)
 
 4. Configure the settings described in the following table.
 
-|Tab|Settings|
-|-------------|------------------------------------------------------------|
-|**Basics**|Select the virtual hub's **Region**, enter a  **Name**, and configure the **Hub private address space**.|
-|**Site to site**|If you want to enable S2S, select **Yes**, and then select both **ASN** and **Gateway scale units**.|
-|**Point to site**|If you want to enable P2S, select **Yes**, select **Gateway scale units**, and then select a **Point to site configuration**. Also enter the **Client address pool**.|
-|**ExpressRoute**|If you want to enable ExpressRoute, select **Yes**, and then select **Gateway scale units**.|
-|**Routing**|If you plan to use routing, then enter the **If destination prefix is** and **Send to next hop address** information.|
+   |Tab|Settings|
+   |-------------|------------------------------------------------------------|
+   |**Basics**|Select the virtual hub's **Region**, enter a  **Name**, and configure the **Hub private address space**.|
+   |**Site to site**|If you want to enable S2S, select **Yes**, and then select both **ASN** and **Gateway scale units**.|
+   |**Point to site**|If you want to enable P2S, select **Yes**, select **Gateway scale units**, and then select a **Point to site configuration**. Also enter the **Client address pool**.|
+   |**ExpressRoute**|If you want to enable ExpressRoute, select **Yes**, and then select **Gateway scale units**.|
+   |**Routing**|If you plan to use routing, then enter the **If destination prefix is** and **Send to next hop address** information.|
 
 5. Select **Review + create**, and then select **Create**.
 
@@ -98,10 +98,10 @@ Use the following procedure to create a site.
 2. On the toolbar, select **+ Create site**.
 3. On the **Create a VPN site** blade, configure the settings described in the following table.
 
-|Tab|Settings|
-|------|------------------------------------------------------------|
-|**Basics**|Select the site's **Region**, enter a  **Name**, and then enter a **Device vendor**. Enable or disable **Border gateway protocol**, and then enter the **Private address space**.|
-|**Links**|Add the required links to the **Links** tab. Specify **Link name**, **Provider name**, **Speed**, **IP address**, **BGP address**, and **ASN**.|
+   |Tab|Settings|
+   |------|------------------------------------------------------------|
+   |**Basics**|Select the site's **Region**, enter a  **Name**, and then enter a **Device vendor**. Enable or disable **Border gateway protocol**, and then enter the **Private address space**.|
+   |**Links**|Add the required links to the **Links** tab. Specify **Link name**, **Provider name**, **Speed**, **IP address**, **BGP address**, and **ASN**.|
 
 4. Select **Review + create**, and then select **Create**.
 

@@ -1,4 +1,4 @@
-<!-- 9 minutes minutes to read -->
+
 
 Currently, Contoso uses Windows Server VMs in its on-premises datacenter to implement DNS. As lead system engineer, you must decide whether to implement Azure DNS to replace the functionality of these on-premises workloads, or to implement DNS in Windows Server VMs.
 

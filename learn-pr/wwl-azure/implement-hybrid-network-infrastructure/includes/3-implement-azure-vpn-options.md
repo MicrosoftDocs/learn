@@ -1,8 +1,8 @@
-<!-- 13 minutes minutes to read -->
+
 
 Contoso's datacenters support remote connectivity so users can work remotely. Also, some branch offices are connected to the head office datacenter through site-to-site VPNs. As lead system engineer, you must implement a VPN solution that enables ongoing support for the current use scenarios.
 
-## VPN Gateway design
+## VPN gateway design
 
 Using an Azure gateway, you can implement the following various types of VPN connections to address your organizational needs:
 
@@ -63,7 +63,7 @@ It's also possible to combine ExpressRoute and S2S connections, as indicated in 
 
 ![A diagram of a dual connection from VNet1, East US, via both an ExpressRoute gateway and a VPN Gateway (IP: 131.1.1.1). The ExpressRoute connection provides private connectivity to On-premises HQ site (IP: 141.4.4.4). The HQ site also has an IPsec/IKE tunnel that connects to VNet1. Finally, VNet1 uses the VPN Gateway to connect to LocalSite2 through an IPsec/IKE tunnel..](../media/m13-expressroute-vpn-gateway-coexisting-connections-diagram.png)
 
-## Implement VPN Gateway
+## Implement VPN gateway
 
 When you configure your VPN gateway, you must select and configure a number of settings. First, you must decide whether to implement a policy-based or route-based configuration.  
 
@@ -101,7 +101,7 @@ To implement a VPN Gateway, you must have a VNet. You can create this before or 
 2. On the **Virtual Network** blade, select **Create**.
 3. Create a VNet by specifying the appropriate properties: **Subscription**, **Resource group**, **Name**, and **Region**.
 
-![A screenshot of the Create a virtual network page. The administrator has defined the subscription, and selected the ContosoResourceGroup. The VNet name is ContosoVPN1 in the East US region.](../media/m13-add-vnet-1.png)
+   ![A screenshot of the Create a virtual network page. The administrator has defined the subscription, and selected the ContosoResourceGroup. The VNet name is ContosoVPN1 in the East US region.](../media/m13-add-vnet-1.png)
 
 4. Select **Next: IP Addresses >**.
 5. Configure the subnet that you want to associate with the VNet by either accepting the default settings, or configuring your own.
@@ -117,12 +117,12 @@ After you have created the appropriate VNet, you must now create the VPN gateway
 4. Then choose whether you're implementing a **VPN** or **ExpressRoute** connection.
 5. For a VPN, select either **Route-based** or **Policy-based**.
 
-![A screenshot of the Create a virtual network gateway page. The administrator has defined the subscription. The Name is ContosoVPNGateway, in the East US region. Gateway type is VPN, and VPN type is Route-based.](../media/m13-add-gateway-1.png)
+   ![A screenshot of the Create a virtual network gateway page. The administrator has defined the subscription. The Name is ContosoVPNGateway, in the East US region. Gateway type is VPN, and VPN type is Route-based.](../media/m13-add-gateway-1.png)
 
 6. Select the virtual network you earlier created.
 7. Configure the **Gateway subnet address range** and the **Public IP address** settings.
 
-![A screenshot of the Create a virtual network gateway page. The administrator has selected the Gateway subnet address range (10.3.1.0/24) and has opted to create a new Public IP address called ContosoVPNPublic. Other options are disabled..](../media/m13-add-gateway-2.png)
+   ![A screenshot of the Create a virtual network gateway page. The administrator has selected the Gateway subnet address range (10.3.1.0/24) and has opted to create a new Public IP address called ContosoVPNPublic. Other options are disabled..](../media/m13-add-gateway-2.png)
 
 8. Select **Review + create**, and then select **Create**.
 

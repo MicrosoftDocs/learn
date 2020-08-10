@@ -1,5 +1,4 @@
 
-<!-- 15 minutes minutes to read -->
 
 The Contoso IT security team is concerned about implementing a VPN connection from their datacenters to the Microsoft Cloud. While investigating VPN Gateway options, you discovered that ExpressRoute is one potential solution. With ExpressRoute, connections don't pass through the internet, thereby reducing the possible security threats for data in transit between the corporate infrastructure at Contoso, and Azure resources in Microsoft datacenters.
 
@@ -98,7 +97,7 @@ To create a circuit, sign in to the Azure portal, and then use the following pro
    - Choose the **Bandwidth**.
    - Select the **SKU**.
 
-![A screenshot of the Create ExpressRoute blade, Configuration tab. The Port type is set to Provider. The Provider is British Telecom. The Peering location is London. The bandwidth is 1 Gbps. The Standard SKU is selected.](../media/m13-expressroute-setup-1.png)
+   ![A screenshot of the Create ExpressRoute blade, Configuration tab. The Port type is set to Provider. The Provider is British Telecom. The Peering location is London. The bandwidth is 1 Gbps. The Standard SKU is selected.](../media/m13-expressroute-setup-1.png)
 
 6. Select **Review + create**, and then select **Create**.
 
@@ -147,7 +146,7 @@ After the provider status is provisioned, and after you have configured the peer
 4. On the **Create virtual network gateway** blade, create the gateway by specifying the appropriate properties: **Subscription**, **Name**, and **Region**.
 5. For **Gateway type**, select **ExpressRoute**.
 
-![A screenshot of the Create virtual network gateway blade. The administrator has configured the values described in the preceding text.](../media/m13-add-gateway-3.png)
+   ![A screenshot of the Create virtual network gateway blade. The administrator has configured the values described in the preceding text.](../media/m13-add-gateway-3.png)
 
 6. Select the **SKU**, and then select the **Virtual network** to which you want to connect.
 7. Configure the **Gateway subnet address range** and the **Public IP address** settings.

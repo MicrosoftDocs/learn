@@ -1,5 +1,5 @@
 
-<!-- Duration: 3 minutes -->
+
 
 In this demonstration, you'll learn to:
 

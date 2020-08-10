@@ -1,5 +1,4 @@
 
-<!-- 3 minutes to read -->
 
 Before the Contoso IT team can modernize the current operational model, they'll need to configure networking between their on-premises environment and any Windows Server IaaS VMs running in Azure.
 

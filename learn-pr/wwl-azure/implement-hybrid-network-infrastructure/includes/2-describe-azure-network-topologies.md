@@ -1,4 +1,4 @@
-<!--  10 minutes minutes to read -->
+
 
 Contoso has an extensive on-premises network that provides a foundation for communications between resources deployed in various datacenters and offices. It's important that IT staff can deploy network components in Azure to enable communications between Azure resources, and between Azure resources and on-premises resources.
 
