@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/12/2020
+  ms.date: 08/13/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -29,10 +29,10 @@ quiz:
     choices:
     - content: "VMware VMs, physical Unix, and physical Windows Server."
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect. Azure Migrate: Server Migration doesn't support the migration of physical Unix hosts."
     - content: "Azure VMs, physical Unix, and physical Sun Solaris."
       isCorrect: false
-      explanation: "That's incorrect."
+      explanation: "That's incorrect. Azure Migrate: Server Migration doesn't support the migration of physical Unix hosts or Sun Solaris hosts."
     - content: "Azure VMs, VMware VMs, Hyper-V VMs, and physical Windows Server."
       isCorrect: true
       explanation: "That's correct."

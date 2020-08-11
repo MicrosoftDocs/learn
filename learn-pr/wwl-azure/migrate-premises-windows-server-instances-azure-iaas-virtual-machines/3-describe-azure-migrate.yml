@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms.describe-azure-migrate
-title: Describe azure migrate
+title: Describe Azure Migrate
 metadata:
   title: Describe azure migrate
   description: "Describe azure migrate"
-  ms.date: 08/12/2020
+  ms.date: 08/13/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
