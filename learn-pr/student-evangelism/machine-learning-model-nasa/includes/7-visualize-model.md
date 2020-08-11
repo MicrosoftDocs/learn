@@ -44,12 +44,7 @@ This result is because of our data cleaning strategy, where we assumed all non-l
 
 Using the new labels, we can say "If the wind speed was less than 1.0, then 191 of the 240 samples guessed that no launch was possible on that day."
 This result might seem odd, but based on the data it's correct. Here's the evidence:
-Plotting the launch versus no-launch distribution for days that the Wind Speed at Launch Time <=1.0 shows that for nearly all times we don't launch:
-
-```python
-%matplotlib inline
-launch_data[launch_data['Wind Speed at Launch Time'] <= 1]['Launched?'].value_counts().plot(kind = 'bar)
-```
+We plotted the launch versus no-launch distribution for days that the Wind Speed at Launch Time <= 1 prior to dropping the column earlier in this notebook and it shows that for nearly all times we don’t launch:
 
 :::image type="content" source="../media/plot-launches.png" alt-text="Plot of launches versus no launches." loc-scope="azure":::
 
@@ -64,7 +59,7 @@ As you continue to look at the tree, you can see that `Max Wind Speed` is the ne
 This data might be more interesting with some real-world context. There was only one day where a launch was planned and the `Max Wind Speed` value was greater than 30.5, which was May 27, 2020. The Space X Dragon launch was then postponed to May 30, 2020. Here's the evidence:
 
 ```python
-launch_data([launch_data['Wind Speed at Launch Time'] > 1) & (launch_data['Max Wind Speed'] > 30.5)]
+launch_data[(launch_data['Wind Speed at Launch Time'] > 1) & (launch_data['Max Wind Speed'] > 30.5)]
 ```
 
 :::image type="content" source="../media/only-no.png" alt-text="Only launch with greater than 1.0 wind speed at launch time and greater than 30 max wind speed." loc-scope="azure":::
