@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-arc
+metadata:
+  title: Introduction to Azure Arc
+  description: Introduction to Azure Arc
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Arc
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+- azure-arc
+units:
+- learn.azure.intro-to-azure-arc.1-introduction
+- learn.azure.intro-to-azure-arc.2-azure-arc-overview
+- learn.azure.intro-to-azure-arc.3-arc-for-servers
+- learn.azure.intro-to-azure-arc.4-connect-hybrid-server-to-arc
+- learn.azure.intro-to-azure-arc.5-manage-windows-servers
+- learn.azure.intro-to-azure-arc.6-arc-for-kubernetes
+- learn.azure.intro-to-azure-arc.7-azure-policy-with-arc
+- learn.azure.intro-to-azure-arc.8-arc-integration-with-monitor
+- learn.azure.intro-to-azure-arc.9-summary
+badge:
+  uid: learn.azure.intro-to-azure-arc.badge
