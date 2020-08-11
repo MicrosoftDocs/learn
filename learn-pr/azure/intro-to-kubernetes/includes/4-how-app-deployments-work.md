@@ -25,7 +25,7 @@ For example, assume that you deploy the drone tracking front-end website and use
 
 ## What is a replica set?
 
-A replica set replace the replication controller as the preferred way to deploy replicas. A replica set includes the same functionality as a replication controller. However, it has an extra configuration option to include a selector value.
+A replica set replaces the replication controller as the preferred way to deploy replicas. A replica set includes the same functionality as a replication controller. However, it has an extra configuration option to include a selector value.
 
 A selector allows the replica set to identify all the pods running underneath it. This feature allows you to manage pods labeled with the same value as the selector value, but not created with the replicated set.
 
@@ -59,7 +59,7 @@ For example, each of the services in the drone tracking application has specific
 
 ## Kubernetes networking
 
-Assume that you have a cluster with one master and two nodes. When you add nodes to Kubernetes, an IP address is automatically assigned to each node from an internal private network range. For example, assume that your local network range is 192.168.1.0/24.
+Assume that you have a cluster with one control planes and two nodes. When you add nodes to Kubernetes, an IP address is automatically assigned to each node from an internal private network range. For example, assume that your local network range is 192.168.1.0/24.
 
 :::image type="content" source="../media/4-nodes-assigned-ip-addresses.svg" alt-text="Diagram of nodes with assigned IP addresses in a cluster." border="false":::
 

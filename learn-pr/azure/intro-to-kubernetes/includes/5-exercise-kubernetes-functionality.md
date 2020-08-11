@@ -190,7 +190,7 @@ MicroK8s provides a version of `kubectl` that you can use to interact with your 
 
 ### Display cluster node information
 
-Recall from earlier that a Kubernetes cluster exists out of master and worker nodes. Let's explore the new cluster to see what's installed.
+Recall from earlier that a Kubernetes cluster exists out of control planes and worker nodes. Let's explore the new cluster to see what's installed.
 
 1. Check the nodes that are running in your cluster. 
 
