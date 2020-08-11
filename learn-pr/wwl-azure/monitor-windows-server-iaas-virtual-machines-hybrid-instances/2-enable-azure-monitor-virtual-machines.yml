@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.monitor-windows-server-iaas-vms-hybrid-instances.enable-azure-monitor-for-vms
-title: Enable Azure Monitor for VMs
+title: Enable Azure Monitor for Virtual Machines
 metadata:
-  title: Enable Azure Monitor for VMs
-  description: "Enable Azure Monitor for VMs"
-  ms.date: 08/12/2020
+  title: Enable Azure Monitor for Virtual Machines
+  description: "Enable Azure Monitor for Virtual Machines"
+  ms.date: 08/13/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
