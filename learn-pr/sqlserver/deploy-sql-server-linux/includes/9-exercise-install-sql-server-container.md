@@ -85,7 +85,7 @@ To use SQL Server in Docker containers, the easiest method is to use the Microso
 
     ```bash
     sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=Pa55w.rd' \
-    -p 1433:1433 --name sql-server-image \
+    -p 1435:1435 --name sql-server-image \
     -d mcr.microsoft.com/mssql/server:2019-latest
     ```
 
