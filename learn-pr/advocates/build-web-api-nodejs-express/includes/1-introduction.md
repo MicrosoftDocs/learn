@@ -1,6 +1,6 @@
 Use the Web as a platform to run your application. This platform lets anyone reach your application by using a browser, client, or software that speaks HTTP.
 
-In this module, you are a developer for an online retailer called Tailwind Traders. Tailwind is building a new set of HTTP APIs for their application. The application is built on Node.js. Your job is to build an API that lists the products they sell. The API you build lets applications work with the product data.
+In this module, you are a developer for an online retailer. The retailer is building a new set of HTTP APIs for their application. The application is built on Node.js. Your job is to build an API that lists the products they sell. The API you build lets applications work with the product data.
 
 You can construct a Web page by using HTML pages, JavaScript, and CSS. Node.js has a core module called HTTP that helps you construct web applications. It supports requests for reading, writing, and working with different types of content.
 

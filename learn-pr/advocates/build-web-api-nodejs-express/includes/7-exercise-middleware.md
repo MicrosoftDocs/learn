@@ -1,4 +1,4 @@
-Tailwind Traders needs their application to have some basic security. At this point, it needs to differentiate between users that have access, and those that don't. Other features, like role management, might be added at a later date.
+The online retailer needs their application to have some basic security. At this point, it needs to differentiate between users that have access, and those that don't. Other features, like role management, might be added at a later date.
 
 ## Add basic authorization to an Express framework
 
@@ -111,7 +111,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
 
    The server application responds with some user data. All the parts work. To protect this route, add some code on the server application.
 
-1. Open **app.js** and add the following code right after the row that says **const app = expres()**:
+1. Open **app.js**. After the row that says **const app = expres()**, add the following code:
 
    ```javascript
    function isAuthorized(req,res, next) {
@@ -125,7 +125,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
    }
    ```
 
-   Locate this part of the code:
+1. Locate this part of the code:
 
    ```javascript
    app.get('/users', (req,res) => {
@@ -136,7 +136,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
     })
    ```
 
-   And replace it with this code:
+1. Replace that code with this code:
 
    ```javascript
    app.get('/users', isAuthorized, (req,res) => {
@@ -147,21 +147,21 @@ Most applications have parts that anyone can access. But, some parts need to be 
     })
    ```
 
-   Note how `isAuthorized` is added as the second argument.
+   In the code, **isAuthorized** is added as the second argument.
 
-1. Restart the `app.js` file by typing the following command in the terminal:
+1. In the terminal, enter the following command to restart the **app.js** file:
 
    ```bash
    node app.js
    ```
 
-1. Now in the same terminal window as you ran the client before, type the following command:
+1. In the terminal window where you previously ran the client, enter the following command:
 
    ```bash
    node client.js
    ```
 
-   You should now see the following output:
+   You should see the following output:
 
    ```output
    connected
@@ -170,15 +170,15 @@ Most applications have parts that anyone can access. But, some parts need to be 
    Closing connection
    ```
 
-   This time around the middleware `isAuthorized()` is being invoked and is looking for an `authorization` header having a specific value. You didn't provide that as part of your request and that's why you get the response above. Next, let's add said `authorization` header.
+   This time, the middleware **isAuthorized()** is invoked and looks for an **authorization** header that has a specific value. Because you didn't provide a value as part of your request, the code didn't respond with user data. Add an **authorization** header next.
 
-1. Open up `client.js` and locate the part of the code looking like this:
+1. Open **client.js** and locate the part of the code that looks like this:
 
    ```javascript
    headers: {}
    ```
 
-   Change it to this code:
+1. Change it to this code:
 
    ```javascript
    headers: {
@@ -186,7 +186,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
    }
    ```
 
-1. Run the client again by typing the following command in the terminal:
+1. In the terminal, enter the following command to run the client again:
 
    ```bash
    node client.js
@@ -201,9 +201,9 @@ Most applications have parts that anyone can access. But, some parts need to be 
    Closing connection
    ```
 
-   The user data is now returned because you passed an `authorization` header with an accepted value.
+   The user data is returned because you passed an **authorization** header with an accepted value.
 
-Congrats you learned how to use the middleware construct in Express to add some rudimentary authorization to your Express app.
+Congratulations, you learned how to use the middleware construct in Express to add some basic authorization to your Express app.
 
 > [!CAUTION]
-> Be mindful though that an authentication/authorization meant for real world usage needs to be a bit more robust than the above. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library `bcrypt` to ensure your app has a decent level of protection.
+> Be aware that an authentication/authorization meant for real world usee needs to be a bit more robust than our example. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library **bcrypt** to make sure your app has a decent level of protection.

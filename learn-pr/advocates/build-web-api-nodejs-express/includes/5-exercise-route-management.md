@@ -1,4 +1,4 @@
-Tailwind Traders is impressed with your first web application. Now they want you to build an API that you can read and write from. Their data might be stored in a database and might contain millions of records. For that reason, Tailwind wants to see an app that uses different techniques that limit how much data is asked for.
+The online retailer is impressed with your first web application. Now they want you to build an API that you can read and write from. Their data might be stored in a database and might contain millions of records. For that reason, the retailer wants to see an app that uses different techniques that limit how much data is asked for.
 
 ## Implement support to read and write data
 

@@ -1,4 +1,4 @@
-You've been tasked with creating a simple API using the framework Express. Tailwind Traders would like to evaluate Express and see if it's easy to work with. As part of that evaluation, they would like you to build a web application that serves different routes. 
+You've been tasked with creating a simple API using the framework Express. The online retailer wants to evaluate Express to see if it's easy to work with. As part of that evaluation, they want you to build a web application that serves different routes. 
 
 ## Create a basic web app with Express
 
