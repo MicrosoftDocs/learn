@@ -19,3 +19,4 @@ You can complete your mixed reality experience by building the Unity project and
 - Get the latest Mixed Reality Toolkit Unity packages from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases).
 - Learn more about mixed reality [interaction models](https://docs.microsoft.com/windows/mixed-reality/interaction-fundamentals).
 - Explore [core concepts](https://docs.microsoft.com/windows/mixed-reality/core-concepts-landingpage) to consider when designing a mixed reality experience.
+- Learn how to [configure the Mixed Reality Toolkit](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CrossPlatform/UsingARFoundation.html) for iOS and Android.
