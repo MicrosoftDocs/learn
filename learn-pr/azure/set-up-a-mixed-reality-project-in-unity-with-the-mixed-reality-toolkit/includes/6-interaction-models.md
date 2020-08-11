@@ -1,4 +1,4 @@
-The Mixed Reality Toolkit enables you to consume inputs from a variety of input sources such as 6DoF (degrees of freedom) controllers, articulated hands or speech. Choosing the interaction model best suited for your mixed reality experience requires you to identify your user, their goals and consider any situational or environmental factors which may impact their experience. Here you will learn about the three primary interaction models for mixed reality experiences and how to simulate input in Unity.
+The Mixed Reality Toolkit enables you to consume inputs from a variety of input sources such as 6DoF (degrees of freedom) controllers, articulated hands, or speech. Choosing the interaction model thats best suited for your mixed reality experience requires you to identify your user, their goals and consider any situational or environmental factors, which may impact their experience. Here you'll learn about the three primary interaction models for mixed reality experiences and how to simulate input in Unity.
 
 ## Interaction models
 
@@ -9,11 +9,11 @@ There are three primary interaction models which suit the majority of mixed real
 |---------|---------|---------|
 |Hands and motion controllers     | 3D spatial experiences, such as spatial layout and design, content manipulation, or simulation.        |    Great for new users coupled with voice, eye tracking or head gaze. Low learning curve. Consistent UX across hand tracking and 6DoF controllers.     |
 |Hands-free     |     Contextual experiences where a user's hands are occupied, such as on-the-job learning and maintenance.    |    Some learning required. If hands are unavailable, the device pairs well with voice and natural language.     |
-|Gaze and commit     |     Click-through experiences, e.g. 3D presentations, demos.    |   Requires training on head mounted devices but not on mobile. Best for accessible controllers.       |
+|Gaze and commit     |     Click-through experiences, for example, 3D presentations, demos.    |   Requires training on head-mounted devices but not on mobile. Best for accessible controllers.       |
 
 Although you could combine parts of multiple interaction models into your mixed reality experience, be aware that doing so creates the risk of competing user input, such as simultaneous hand rays and a head-gaze cursor. This can overwhelm and confuse users.
 
-If your experience does require multiple interaction models, please keep in mind that many users might encounter difficulty when transitioning from one model to another, especially users who are new to mixed reality.
+If your experience does require multiple interaction models, keep in mind that many users might encounter difficulty when transitioning from one model to another, especially users who are new to mixed reality.
 
 ## Hands and motion controllers model
 
@@ -22,7 +22,7 @@ The hands and motion controllers model requires users to use one or two hands to
 Some specific scenarios include:
 
 - Providing information workers 2D virtual screens with UI affordances to display and control content
-- Providing first line workers tutorials and guides for factory assembly lines
+- Providing Firstline Workers tutorials and guides for factory assembly lines
 - Developing professional tools for assisting and educating medical professionals
 - Using 3D virtual objects to decorate the real world or to create a second world
 - Creating location-based services and games using the real world as a background
@@ -44,7 +44,7 @@ Some specific scenarios include:
 - Hand fatigue
 - Gloves that can't be tracked
 - Carrying something in their hands
-- Social awkwardness to perform large hand gestures
+- Social awkwardness to do large hand gestures
 - Tight spaces
 
 There are two hands-free modalities:
@@ -54,7 +54,7 @@ There are two hands-free modalities:
 
 ## Gaze and commit
 
-Gaze and commit is an input model that is closely related to the way we interact with computers by using a mouse to point and click. Gaze and commit is considered a far input model with indirect manipulation. Therefore, it is best to use gaze and commit when interacting with holographic content that is out of reach. There are two types of gaze input (head- and eye-gaze) and different commit actions.
+Gaze and commit is an input model that is closely related to the way we interact with computers by using a mouse to point and click. Gaze and commit is considered a far input model with indirect manipulation. Therefore, its best to use gaze and commit when interacting with holographic content that is out of reach. There are two types of gaze input (head- and eye-gaze) and different commit actions.
 
 After the user uses gaze to target an object or UI element, the user can interact or click on it using a secondary input. This is known as the commit step of the input model. Commit methods include voice commands, a button press, or a hand gesture.
 
