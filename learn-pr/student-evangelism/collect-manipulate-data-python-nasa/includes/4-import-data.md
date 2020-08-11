@@ -28,7 +28,7 @@ To set up your local environment:
 3. In the Anaconda prompt, create a new Anaconda environment:  
 
     ```bash
-    create -n myenv python=3.7 pandas numpy jupyter seaborn scikit-learn pydotplus
+    conda create -n myenv python=3.7 pandas numpy jupyter seaborn scikit-learn pydotplus
     ```
 
 4. In the Anaconda prompt, activate the new environment:  

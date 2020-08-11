@@ -33,7 +33,7 @@ The following example uses hypothetical data:
 #        'Visibility', 'Wind Speed at Launch Time', 'Hist Ave Max Wind Speed',
 #        'Hist Ave Visibility', 'Condition']
 
-data_input = [ 1.  , 75.  , 68.  , 71.  ,  0.  , 75.  , 55.  , 65.  ,  0.  , 0.08,  0.  , 16.  , 15.  ,  0.  ,  0.  ,  0.  ,  0.  ]
+data_input = [ 1.  , 75.  , 68.  , 71.  ,  0.  , 75.  , 55.  , 65.  ,  0.  , 0.08,  0.  , 16.  , 15.  ,  0.  ,  0. ]
 
 tree_model.predict([data_input])
 ```
