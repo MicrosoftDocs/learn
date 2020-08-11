@@ -44,9 +44,9 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-Suppose you're the IT administrator for an internal HR app that's on your organization's internal network. The app runs on an Azure Virtual Machine (VM) that's not publically exposed. You're using a jumpbox to be able to manage the VM and app remotely. This jumpbox is an Azure VM that has a public IP which you connect to over the internet. It's on the same Azure Virtual Network as the app VM. So from the jumpbox, you can connect to the app VM that's on the internal network.
+Suppose you're the IT administrator for an internal HR app that's on your organization's internal network. The app runs on an Azure Virtual Machine (VM) that's not publically exposed. You're using a jumpbox to be able to manage the VM and app remotely. This jumpbox is an Azure VM that has a public IP, which you connect to over the internet. It's on the same Azure Virtual Network as the app VM. So from the jumpbox, you can connect to the app VM that's on the internal network.
 
-Recently, you've noticed some suspicious sign-in attempts on the jumpbox. You'd like to investigate a more secure way to remotely connect and manage the app VM.
+Recently, you've noticed some suspicious sign in attempts on the jumpbox. You'd like to investigate a more secure way to remotely connect and manage the app VM.
 
 1. **What is Azure Bastion?**
 
@@ -59,14 +59,14 @@ Recently, you've noticed some suspicious sign-in attempts on the jumpbox. You'd 
 
    How it works
 
-   - Diagram that shows the highlevel architecture. Reuse: diagram from 
+   - Diagram that shows the high-level architecture. Reuse: diagram from 
 https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps. Cynthia's version has numbered steps that could be simplified.
 
    Security points:
 
    - Doesn't expose RDP or SSH ports or public IP. (Protection against port scanning)
    - Provides a single hardened access point.
-   - Can integrate with existing firewalls and your security perimeter using a HTML5 based web client and standard SSL ports.
+   - Can integrate with existing firewalls and your security perimeter using an HTML5 based web client and standard SSL ports.
    - Network traffic stays within the virtual network.
    - Configure network security groups (NSGs) to allow connections only from the Bastion host. (Best practice) Don't need to manage other NSGs.
 
@@ -80,13 +80,13 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
    Roles required (include?)
 
-   How to create (very high level overview)
+   How to create (high-level overview)
 
    - Create in portal (which will show in first exercise)
-   - Create by using Azure PowerShell: show sample comands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
+   - Create by using Azure PowerShell: show sample commands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
    - CLI: https://docs.microsoft.com/azure/bastion/create-host-cli
 
-   **What are the most important take-aways from this unit for the KC?**
+   **What are the most important takeaways from this unit for the KC?**
 
    **Knowledge check**
 
@@ -96,15 +96,14 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
 1. **Exercise – Connect to a virtual machine using the Bastion Service**
 
-    List the steps which apply the learning content from previous unit:
-
-    1. Customer runs script that creates existing enviroment: jumpbox + "app" VM (Ubuntu) that's on a private network. Jumpbox has public IP. (Modify script from: https://docs.microsoft.com/learn/modules/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment and https://github.com/MicrosoftDocs/mslearn-troubleshoot-inbound-network-connectivity-azure-load-balancer/blob/master/src/scripts/setup.sh)
+    
+    1. Customer runs script that creates existing environment: jumpbox + "app" VM (Ubuntu) that's on a private network. Jumpbox has public IP. (Modify script from: https://docs.microsoft.com/learn/modules/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment and https://github.com/MicrosoftDocs/mslearn-troubleshoot-inbound-network-connectivity-azure-load-balancer/blob/master/src/scripts/setup.sh)
     1. Connect to jumpbox using SSH and then ping the "app" VM.
     1. Remove public IP from jumpbox.
-    1. Use "jumpbox" as target VM to spin up Bastion. (Create subnet, etc)
+    1. Use "jumpbox" as target VM to spin up Bastion. (Create subnet, etc.) - (Question about adding address space - why do I have to do this every time but it's not in docs directions? What am I doing wrong?)
     1. Connect to app VM using bastion. Show what info you need to have for SSH connection.
-    1. Have then do some small tasks on VM? What? Copy/paste something? (Note: "As IT/app admin, you might need to deploy code, manage files, update app.")
-    1. Should we do something else with the jumpbox like decomission it??
+    1. Have them do some small tasks on VM? What? Copy/paste something? (Note: "As IT/app admin, you might need to deploy code, manage files, update app.")
+    1. Should we do something else with the jumpbox like decommission it?
 
 1. **Secure Azure Bastion with a network security group**
 
@@ -118,7 +117,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
    Include diagram that shows how NSG fits in & describe diagram.
 
-   Highlevel overview of what you need to add and how.
+   High-level overview of what you need to add and how.
    From Cynthia's doc (and again aren't these the defaults?: 
    "To configure the NSG you will need to add inbound and outbound rules.
 
@@ -140,13 +139,13 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
 1. **Monitor and manage remote sessions**
 
-   Diagnotic logs - What, why, how. Reference: https://docs.microsoft.com/azure/bastion/diagnostic-logs
+   Diagnostic logs - What, why, how. Reference: https://docs.microsoft.com/azure/bastion/diagnostic-logs
 
    Monitor sessions - what, why, & how. Reference: https://docs.microsoft.com/azure/bastion/session-monitoring
 
-1. **Exercise - Enable diagnotic logs and monitor remote sessions**
+1. **Exercise - Enable diagnostic logs and monitor remote sessions**
    
-   Enable diagnotics: https://docs.microsoft.com/azure/bastion/diagnostic-logs
+   Enable diagnostics: https://docs.microsoft.com/azure/bastion/diagnostic-logs
    1. Enable resource log.
    1. Sign in via Bastion to get something generated? Leave connection open?
    1. View diagnostic log.
