@@ -1,0 +1,38 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-stack
+metadata:
+  title: Introduction to Azure Stack
+  description: TODO
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Stack
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.intro-to-azure-stack.1-introduction
+- learn.azure.intro-to-azure-stack.2-azure-stack-portfolio
+- learn.azure.intro-to-azure-stack.3-hub-features
+- learn.azure.intro-to-azure-stack.4-edge-features
+- learn.azure.intro-to-azure-stack.5-hci-features
+- learn.azure.intro-to-azure-stack.6-hub-use-cases
+- learn.azure.intro-to-azure-stack.7-edge-use-cases
+- learn.azure.intro-to-azure-stack.8-hci-use-cases
+- learn.azure.intro-to-azure-stack.9-summary
+badge:
+  uid: learn.azure.intro-to-azure-stack.badge
