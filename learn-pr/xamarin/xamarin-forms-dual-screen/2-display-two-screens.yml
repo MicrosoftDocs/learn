@@ -29,12 +29,12 @@ quiz:
       explanation: "`ContentPage` offers no methods to modify the dataset of a `ListView` control."
   - content: "For apps to run on Surface Duo they..."
     choices:
-    - content: "must use the TwoPaneView control as their root layout on the main page."
+    - content: "...must use the TwoPaneView control as their root layout on the main page."
       isCorrect: false
       explanation: "All Xamarin.Forms apps built for Android can run on the Surface Duo. Optimizing the layout for dual-screens is optional."
-    - content: "must implement DualScreenInfo to modify every page layout for dual-screens."
+    - content: "...must implement DualScreenInfo to modify every page layout for dual-screens."
       isCorrect: false
       explanation: "All Xamarin.Forms apps built for Android can run on the Surface Duo. Optimizing the layout for dual-screens is optional."
-    - content: "simply need to be Android apps. You can optionally enhance some (or all) layouts for dual-screen displays."
+    - content: "...simply need to be Android apps. You can optionally enhance some (or all) layouts for dual-screen displays."
       isCorrect: true
       explanation: "The Surface Duo is an Android device, capable of running any compatible app. Enhancing for the two screens is optional."
