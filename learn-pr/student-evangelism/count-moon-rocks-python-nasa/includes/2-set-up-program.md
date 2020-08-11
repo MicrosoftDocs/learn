@@ -2,7 +2,7 @@ To start to create the program, make a folder somewhere on your computer that yo
 
 :::image type="content" source="..\media\save-rock-file.png" alt-text="How to save the rock text file":::
 
-Next, open Visual Studio Code and click **File** then **New File**. Once the blank file is open, make the keystrokes "Ctrl s" to save it. Navigate to the folder you created, name the file something informative such as ArtemisRockClassifier, and change the file type to Jupyter from the drop-down menu. Now we have everything created, we can start coding!
+Next, open Visual Studio Code and select **File** then **New File**. Once the blank file is open, make the keystrokes "Ctrl+S" to save it. Navigate to the folder you created, name the file something informative such as ArtemisRockClassifier, and change the file type to Jupyter from the drop-down menu. Now we have everything created, we can start coding!
 
 :::image type="content" source="..\media\create-final-project.png" alt-text="How to create the final project Jupyter Notebook":::
 
