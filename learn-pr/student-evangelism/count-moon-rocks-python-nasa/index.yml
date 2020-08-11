@@ -11,7 +11,7 @@ metadata:
 title: Count the number of Moon rocks by type using Python
 summary: Use Python and Visual Studio Code to make a simple program to count the number of each type of space rock.
 abstract: |
-  In this module, you will learn:
+  In this module, you'll learn:
   - How to write variables in the context of a program
   - How to use prebuilt functions to read data from a text file
   - How to create a function and call it in the context of a program

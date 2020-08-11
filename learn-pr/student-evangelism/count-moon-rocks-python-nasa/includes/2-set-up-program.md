@@ -1,8 +1,8 @@
-To start to create the program, make a folder somewhere on your computer that you'll be able to access easily. You can call the folder something like SpaceRockProject. Then open the file [rocks.txt](https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/includes/rocks.txt?azure-portal=true) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we are going to be reading in Python.
+To start to create the program, make a folder somewhere on your computer that you can access easily. Call the folder something like SpaceRockProject. Then open the file [rocks.txt](https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/includes/rocks.txt?azure-portal=true) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we're going to be reading in Python.
 
 :::image type="content" source="..\media\save-rock-file.png" alt-text="How to save the rock text file":::
 
-Next, open Visual Studio Code and click **File** then **New File**. Once the blank file is open, make the keystrokes "ctrl s" to save it. Navigate to the folder you created, name the file something informative like ArtemisRockClassifier, and change the file type to Jupyter from the drop-down menu. Now that we have everything created, we can start coding!
+Next, open Visual Studio Code and select **File** then **New File**. Once the blank file is open, make the keystrokes "Ctrl+S" to save it. Navigate to the folder you created, name the file something informative such as ArtemisRockClassifier, and change the file type to Jupyter from the drop-down menu. Now we have everything created, we can start coding!
 
 :::image type="content" source="..\media\create-final-project.png" alt-text="How to create the final project Jupyter Notebook":::
 
@@ -16,7 +16,7 @@ print("Artemis Rover Rock Scanner Starting")
 Artemis Rover Rock Scanner Starting
 ```
 
-Next, we want to create some variables that are going to represent the count of the different types of rocks that Artemis encountered on the Moon. The specific rocks that we are looking for are: Basalt: The Mare Rock, Breccia: Shocked Rock, Highland Rock: Anorthosite, and Regolith Soil/Surface Layer. These types are the four main types of rocks found on the Moon.
+Next, we want to create some variables that will represent the count of the different types of rocks that Artemis found on the Moon. The specific rocks that we're looking for are: Basalt: The Mare Rock, Breccia: Shocked Rock, Highland Rock: Anorthosite, and Megalith Soil/Surface Layer. These types are the four main types of rocks found on the Moon.
 
 Let's make some variables with names of "basalt", "breccia", "highland", and "regolith". We can also set these variables to 0 since we've not yet counted any rocks. Finally, make a list called rockList that will store the names of every rock the rover found. We can make the list empty, setting it equal to brackets with nothing inside them.
 

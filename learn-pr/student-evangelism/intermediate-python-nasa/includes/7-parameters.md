@@ -33,14 +33,14 @@ OutputRocketText()
 UnboundLocalError: local variable 'rocketText' referenced before assignment
 ```
 
-As you can see, this code produces an error as well because we are trying to modify a variable that was created outside a function.
+As you can see, this code produces an error as well, because we are trying to modify a variable that was created outside a function.
 
-To combat this we can do one of two things:
+To combat this, we can do one of two things:
 
 - Make a variable a global variable
 - Give a variable to the function, so it knows what the variable is and then return it
 
-The easiest way to change the value of a variable inside a function is to make it a global variable. Everything in the program can modify a global variable even if it is modified inside a function. To make something a global variable, you must make a variable before you call the function and then include a line in your function that gives the global variable name:
+The easiest way to change the value of a variable inside a function is to make it a global variable. Everything in the program can modify a global variable, even if it is modified inside a function. To make something a global variable, you must make a variable before you call the function and then include a line in your function that gives the global variable name:
 
 ```python
 rocketText = "We will launch in"
