@@ -191,7 +191,7 @@ The API responds with an empty array because you haven't written any data to it 
    });
    ```
 
-   The code locates the record in the **products** array that matches the **id** property and updates that record. 
+   The code locates the record in the **products** array that matches the **id** property and updates that record.
 
 1. To test the code, start the server application:
 
@@ -293,7 +293,7 @@ The API responds with an empty array because you haven't written any data to it 
 
 ### Implement CRUD
 
-Implementing CRUD for a resource is common thing to do. Express has a method **route()** meant just for this purpose. By using **route()** method, your code is grouped so that it's easier to read.
+Implementing CRUD for a resource is common thing to do. Express has a method **route()** meant just for this purpose. By using the **route()** method, your code is grouped so that it's easier to read.
 
 1. To implement CRUD, replace the code in **app.js** with this code:
 
@@ -385,7 +385,7 @@ Both techniques are taught in this exercise.
 1. Clone the repo at the URL with the following command:
 
     > [!NOTE]
-    > If you completed the previous exercise, you do not need to do this again.
+    > If you completed the previous exercise, you don't need to do this again.
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials

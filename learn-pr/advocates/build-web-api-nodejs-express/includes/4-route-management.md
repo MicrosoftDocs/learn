@@ -1,6 +1,6 @@
 An application has different resources like products or orders. Divide your application into different sections for the different resources. This makes it easy to maintain and extend the app.
 
-A way to easily extend a web application is to make sure that different resources are accessible through dedicated URLs. Two different URLs trigger two different parts of code in your web application.  
+An easy way to extend a web application is to make sure that different resources are accessible through dedicated URLs. Two different URLs trigger two different parts of code in your web application.  
 
 It's important to understand what a URL is, as well as, other concepts used to build an API:
 

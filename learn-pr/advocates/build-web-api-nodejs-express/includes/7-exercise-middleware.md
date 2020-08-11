@@ -86,7 +86,7 @@ Most applications have parts that anyone can access. But, some parts need to be 
    });
    ```
 
-   The code connects to the address http://localhost:3000/users, and then listens to different events: **chunk**, **end**, and **close**. Use the client to verify that the server application works as expected.
+   The code connects to the address **http://localhost:3000/users**, and then listens to different events: **chunk**, **end**, and **close**. Use the client to verify that the server application works as expected.
 
 1. In the terminal, run the server application by entering the following command:
 

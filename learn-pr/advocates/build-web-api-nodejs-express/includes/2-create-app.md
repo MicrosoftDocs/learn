@@ -1,11 +1,11 @@
 Companies often store data a lot of data in file systems and databases. They access that data by serving it through web applications and APIs using HTTP.
 
-The following are important concepts to consider when building web applications and APIs:
+The following are important concepts to consider when you build web applications and APIs:
 
 - **Routing**: Your application is divided into different sections based on parts of the URL address.
-- **Supporting different content types**: The data to serve up might exist in different file formats. Such as, plain text, JSON, HTML, CSV, and more.
+- **Support for different content types**: The data to serve up might exist in different file formats. Such as, plain text, JSON, HTML, CSV, and more.
 - **Authentication/Authorization**: Some data might be sensitive. A user might need to sign in or have a specific role or permission level to access the data.
-- **Reading/Writing data**: Users usually need to both view and add data to the system. To add data, users might type data in a form or upload files.
+- **Read/Write data**: Users usually need to both view and add data to the system. To add data, users might type data in a form or upload files.
 - **Time to market**: To create web applications and APIs efficiently, choose tools and libraries that provide solutions to common problems. These choices help the developer spend as much time as possible on the business requirements of the job.  
 
 ## HTTP module in Node.js
@@ -47,7 +47,7 @@ The example shows:
 
 ## Streams
 
-*Streams* are not a Node.js concept, but rather an operating system concept. Streams define the way data is transported back and forth. Data is sent, chunk by chunk, from client to server and from server to client. Streams make the server capable of handling many concurrent requests.
+*Streams* is not a Node.js concept, but rather an operating system concept. Streams define the way data is transported back and forth. Data is sent, chunk by chunk, from client to server and from server to client. Streams make the server capable of handling many concurrent requests.
 
  A stream is a fundamental data structure in Node.js that can read and write data and send and receive messages, or *events*. The way streaming is implemented in the HTTP module is by having classes that are streams.
 
@@ -67,7 +67,9 @@ res.end('some data')
 
 ## Express framework
 
-So far you've learned about the capabilities of the HTTP module in Node.js. It's a perfectly valid choice for smaller web applications. If an application becomes large, a framework such as Express can help you build your architecture in a scalable way.  After you've built a few web applications you'll notice that you solve the same problems over and over again. Problems like route management, authentication and authorization, and error management are common. At this point, you start looking for a library or framework that addresses some or all of these problems.
+So far you've learned about the capabilities of the HTTP module in Node.js. It's a perfectly valid choice for smaller web applications. If an application becomes large, a framework such as Express can help you build your architecture in a scalable way.  
+
+After you've built a few web applications you'll notice that you solve the same problems over and over again. Problems like route management, authentication and authorization, and error management are common. At this point, you start looking for a library or framework that addresses some or all of these problems.
 
 Why should you go with Express as the framework for your next app?
 

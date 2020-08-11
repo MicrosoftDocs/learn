@@ -6,7 +6,7 @@ Create a basic application that handles requests.
 
 1. Create a file **app.js**.
 1. Go to the terminal and enter **npm init -y**. This command creates a default **package.json** file for your Node.js project.
-1. In the terminal type **npm install express**. This command installs the Express framework.
+1. In the terminal enter **npm install express**. This command installs the Express framework.
 1. Open the file **package.json**. In the **dependencies** section, there is an **express** entry. This entry means that Express framework is installed.
 1. Add the following code to **app.js**:
 
@@ -33,7 +33,7 @@ Create a basic application that handles requests.
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
-1. Start the web application by typing the following command in the terminal:
+1. In the terminal, enter the following command to start the web application:
 
    ```bash
    node app.js
