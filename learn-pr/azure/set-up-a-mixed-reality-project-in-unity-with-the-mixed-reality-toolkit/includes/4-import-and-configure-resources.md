@@ -1,8 +1,8 @@
-The Mixed Reality Toolkit is an open source toolkit which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you will learn about the contents of the Mixed Reality Toolkit.
+The Mixed Reality Toolkit is an open-source toolkit, which can be imported into your Unity mixed reality project. Although you could create Windows Mixed Reality apps without the Mixed Reality Toolkit, consider importing the toolkit to accelerate your development. Here you'll learn about the contents of the Mixed Reality Toolkit.
 
 ## What is the Mixed Reality Toolkit?
 
-The MRTK v2 with Unity is an open source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets and OpenVR platform. Android and iOS device support is also available.
+The MRTK v2 with Unity is an open-source cross-platform development kit for mixed reality applications. MRTK version 2 is intended to accelerate development of applications targeting Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. Android and iOS device support is also available.
 
 ## MRTK Unity
 
@@ -41,14 +41,14 @@ One of the main ways that MRTK is configured is through the many profiles availa
 
 :::image type="content" source="../media/configure-profile-organization.png" alt-text="Screenshot of the Mixed Reality Toolkit parameters for the Configuration Profile. The default mixed reality toolkit configuration profile is selected.":::
 
-MRTK provides additional default profiles which cover most platforms and scenarios that MRTK supports. Note that because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it is not optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
+MRTK provides additional default profiles, which cover most platforms and scenarios that MRTK supports. Because **DefaultMixedRealityToolkitConfigurationProfile** is a general use profile, it isn't optimized for any particular use case. If you want to use settings optimized for a specific platform, consider selecting the respective default profile.
 
 ## How are Configuration Profiles organized
 
-There is essentially an entire tree of connected profiles that make up the configuration information for how to start the MRTK sub-systems and features. The top level MRTK Configuration Profile contains sub-profile data for each of the primary core systems. Each primary core system is designed to configure the behavior of their corresponding sub-systems. Furthermore, these sub-profiles can contain references to other profile objects one level below them.
+There is essentially an entire tree of connected profiles that make up the configuration information for how to start the MRTK subsystems and features. The top-level MRTK Configuration Profile contains sub-profile data for each of the primary core systems. Each primary core system is designed to configure the behavior of their corresponding subsystems. Furthermore, these sub-profiles can contain references to other profile objects one level below them.
 
 ## How to customize and configure the default MRTK Profiles
 
-The default MRTK profiles cannot be modified. Instead, you must clone the profile if you would like to make a change. Cloning a MRTK profile creates a new profile with the same settings and assigns the profile as the Configuration Profile for the scene. Given the format of how Configuration Profiles are organized, you must also clone the sub-profiles if you would like to modify sub-profile settings.
+The default MRTK profiles can't be modified. Instead, you must clone the profile if you would like to make a change. Cloning an MRTK profile creates a new profile with the same settings and assigns the profile as the Configuration Profile for the scene. Given the format of how Configuration Profiles are organized, you must also clone the sub-profiles if you would like to modify sub-profile settings.
 
 :::image type="content" source="../media/clone-profile.png" alt-text="Screenshot of  the Mixed Reality Toolkit parameters for the Configuration Profile. The default mixed reality toolkit configuration profile is selected. The clone button is highlighted.":::
