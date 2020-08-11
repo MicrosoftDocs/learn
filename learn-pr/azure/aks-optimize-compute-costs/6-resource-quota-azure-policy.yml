@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.aks-optimize-compute-costs.resource-quota-azure-policy
-title: How to configure AKS resource quota policies by using Azure Policy for Kubernetes
+title: How to configure AKS resource-quota policies by using Azure Policy for Kubernetes
 
 metadata:
   title: How to configure AKS resource-quota policies by using Azure Policy for Kubernetes

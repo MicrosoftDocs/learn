@@ -102,7 +102,7 @@ For each policy, the following overview information is listed:
 
 | Item  | Description |
 | --- | --- |
-| **Name** | The name of the policy. For example, "[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster".
+| **Name** | The name of the policy. For example, **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster**.
 | **Scope** | The subscription resource group to which this policy applies. For example, "Visual Studio Enterprise/akscostsavinggrp".
 | **Compliance state** | The status of assigned policies. The value can be **Compliant**, **Conflicted**, **Not started**, or **Not Registered**. |
 | **Resource compliance** | The percentage of resources that comply with the policy. This calculation takes into account compliant, non-compliant, and conflicting resources. |
@@ -123,13 +123,13 @@ An initiative assignment is a collection of Azure policy definitions grouped tog
 
 ### Policy assignment
 
-A policy assignment assigns a single policy, such as "don't enable privileged containers in the Kubernetes cluster."
+A policy assignment assigns a single policy, such as **Do not allow privileged containers in Kubernetes cluster**.
 
 ## How to assign a policy
 
 Each policy is defined by using a series of configuration steps. The amount of information you capture depends on the type of policy you select.  
 
-For example, to limit resource deployment by developers in the company's cloud environment, you can assign one of the built-in Azure policies for Azure Kubernetes Service. The name of the policy is "Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster".
+For example, to limit resource deployment by developers in the company's cloud environment, you can assign one of the built-in Azure policies for Azure Kubernetes Service. The name of the policy is **Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster**.
 
 The policy requires you to set the limit on the allowed resources requested by deployment requests.
 
@@ -152,13 +152,13 @@ The first step requires you to select and enter basic information that defines t
 
 Policies require you to configure the business rules that apply to each specific policy. Not all policies have the same business rules, and that's why each policy has different parameters.
 
-For example, the "Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster" policy requires you to set three parameters:
+For example, the **Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy requires you to set three parameters:
 
 - The maximum CPU units allowed for a container.
 - The maximum memory bytes allowed for a container.
 - A list of Kubernetes namespaces to exclude from the policy.
 
-Compare that policy with the "Web Application should only be accessible over HTTPS" policy, which has no custom parameters to configure.
+Compare that policy with the **Web Application should only be accessible over HTTPS** policy, which has no custom parameters to configure.
 
 All policies have an **Effect** setting. This setting enables or disables the execution of the policy. As with parameters, policies can also have different **Effect** options.
 
@@ -180,4 +180,4 @@ This table lists all the effects currently supported in policy definitions:
 
 The final step is to consider policy remediation. When you assign policies, it's possible that resources already exist and are impacted by the new policy. By default, only newly created resources are affected by the new policy. You can update existing resources by using a remediation task after you assign the policy. Remediation tasks will differ depending on the types of policies applied.
 
-In the next exercise, let's assign the *Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster* policy.
+In the next exercise, let's assign the **Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster** policy.

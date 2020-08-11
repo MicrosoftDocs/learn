@@ -1,4 +1,4 @@
-Your company's drone tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. Your team developed a new predictive-modeling service that processes flight-path information in extreme weather conditions and creates optimal flight routes. This service requires GPU-based virtual-machine (VM) support and runs only on specific days during the week.
+Your company's drone-tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. Your team developed a new predictive-modeling service that processes flight-path information in extreme weather conditions and creates optimal flight routes. This service requires GPU-based virtual-machine (VM) support and runs only on specific days during the week.
 
 You want to configure a cluster node pool dedicated to processing flight-path information. The process runs for only a couple of hours a day and you want to use a GPU-based node pool. However, you want to pay for the nodes only when you use them.
 

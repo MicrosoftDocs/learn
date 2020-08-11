@@ -4,7 +4,7 @@ By configuring multiple node pools on your AKS cluster, you can identify specifi
 
 Next, you configured a spot node pool to access unused Azure compute capacity at a discount or predefined price. You also scheduled workloads to run on nodes in the node pool. You configured the cluster autoscaler to scale the number of nodes up or down based on computing resource requirements. This configuration handles increased customer demands without creating many nodes that aren't used.
 
-Finally, you enabled and configured the Azure Policy Add-on for AKS. The add-on manages resource quotas to govern the deployment of AKS compute resources. You enabled the built-in "Ensure CPU and memory resource limits" policy. This policy configures parameters to deny workloads that exceed predefined resource limits for CPU and memory.
+Finally, you enabled and configured the Azure Policy Add-on for AKS. The add-on manages resource quotas to govern the deployment of AKS compute resources. You enabled the built-in **Ensure CPU and memory resource limits** policy. This policy configures parameters to deny workloads that exceed predefined resource limits for CPU and memory.
 
 Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure and to optimize computing costs when many workloads are running.
 
