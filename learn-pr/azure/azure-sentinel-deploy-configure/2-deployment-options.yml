@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-sentinel-deploy-connect.2-deployment-options
+metadata:
+  title: Unit title
+  description: TODO
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Unit title
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-deployment-options.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Question 1'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
+    - content: 'Answer 4'
+      isCorrect: true
+      explanation: 'Explanation 4'
+
+  - content: 'Question 2'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
+    - content: 'Answer 4'
+      isCorrect: true
+      explanation: 'Explanation 4'
