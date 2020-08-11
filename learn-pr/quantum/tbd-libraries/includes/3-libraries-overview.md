@@ -12,18 +12,24 @@ These consist of:
 
     Beyond molecular dynamics, this ability to simulate *other* quantum systems *on* a quantum computer will also open new frontiers in fundamental physics research. For example, many theorized fermionic and bosonic interactions remain out of reach of observation because of experimental limitations. Mapping those systems to a quantum computer will allow them to be isolated and studied without such complications.
 
-- The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer. This includes advanced signed/unsigned integer arithmetic, as well as support for fixed-point representations and polynomial evaluation. 
-    (words about oracle evaluation and e.g. cryptography)
-
 - The new *quantum machine learning library*, which provides an implementation of the sequential classifiers that take advantage of quantum computing to understand data.
-    (words go here)
+    (WORDS GO HERE)
 
+- The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer. This includes advanced signed/unsigned integer arithmetic, as well as support for fixed-point representations and polynomial evaluation. 
+    (WORDS GO HERE: oracle evaluation and e.g. cryptography)
+	(ALSO NOTE: the numerics library *is* the Arithmetic namespace?? Need clarification on the relationship)
+
+
+## Accessing the libraries 
 Unlike the standard libraries, your Q# projects do not automatically access to the contents of these domain-specific libraries.
 That is, such an `open Microsoft.Quantum.<>;` statement at the beginning of your Q# file will not recognize the namespace by default.
-However, as you will see in a few units, adding these libraries to your project requires only a single step (and no further installation), and you will immediately have access to the types and callables (operations and functions) defined therein.
+However, adding these libraries to your project requires only a single step (and no further installation), and you immediately have access to the types and callables (operations and functions) defined therein.
+In the following units, you will see some applications of each library without having to follow along locally. 
+But, if you would like to get started exploring, you can learn how to add libraries to your project at [Using additional Q# libraries](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/additional-libraries?view=qsharp-preview&tabs=tabid-csproj).
 
-In the rest of this module we use (a very small part of) the quantum chemistry library to demonstrate how these QDK libraries can be applied in solving such domain-specific problems.
-Future modules will dive further into using each library, but they are all fully ready for you to get started developing.
+## Next units
 
-(Maybe include the first step of adding the library to the project here?)
-(Better idea: additional, but small, page on specifically that? Would go after this page, before any chemistry concept details)
+Describe what they will see in the next units: 
+- Chemistry library: estimate the ground state energy of a molecule from an imported molecular data file 
+- Machine learning: TBD 
+- Numerics: TBD 
