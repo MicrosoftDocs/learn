@@ -6,6 +6,6 @@ The OSIRIS-REx mission consists of launching a spacecraft to orbit and gather sa
 
 :::image type="content" source="../media/osiris-rex-regolith.png" alt-text="Photo of the surface of an asteroid and patches of fine-grain regolith.":::
 
-The OSIRIS-REx mission is unique compared to the other types of missions that we have talked. The OSIRIS-REx will take high-quality photos while it is in orbit along with landing and gathering samples. The photos will be sent to rock experts on Earth, who will analyze features of the photos that might give us information about our Solar System.
+The OSIRIS-REx mission is unique compared to the other types of missions that we have talked. The OSIRIS-REx will take high-quality photos while it is in orbit, along with landing and gathering samples. The photos will be sent to rock experts on Earth, who will analyze features of the photos that might give us information about our Solar System.
 
 [Visit the OSIRIS-REx website](https://www.asteroidmission.org/galleries/?azure-portal=true) to learn more and see some amazing pictures captures from the spacecraft.
