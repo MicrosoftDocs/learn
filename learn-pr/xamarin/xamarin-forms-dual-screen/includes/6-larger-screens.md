@@ -67,7 +67,7 @@ The two properties `MinTallModeHeight` and `MinWideModeWidth` determine whether 
 
 1. If the width of the screen exceeds `MinWideModeWidth`, the panes will be positioned side by side ("wide mode"). This is the default on the Surface Duo.
 1. If the screen width is smaller than the `MinWideModeWidth` _and_ the screen height exceeds `MinTallModeHeight`, the panes will be positioned one above the other ("tall mode").
-1. If neither the screen width nor height exceeds the minimums required, only a single pane will bs shown.
+1. If neither the screen width nor height exceeds the minimums required, only a single pane will be shown.
 
 When the app is spanned across both screens of a dual-screen device, these properties are ignored. Each pane will fill an entire screen unless forced into `SinglePane` mode.
 
