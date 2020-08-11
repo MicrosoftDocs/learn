@@ -39,7 +39,7 @@ def countMoonRocks(rockToID):
         print("Found a highland\n")
         highland += 1
     elif("regolith" in rockToID):
-        print("Found a basalt\n")
+        print("Found a regolith\n")
         regolith += 1
 
     return
