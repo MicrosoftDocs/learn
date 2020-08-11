@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "In order to modify the rock count variables in the function we created, we had to make them global variables. True or False?"
+  - content: "To modify the rock count variables in the function we created, we had to make them global variables. True or False?"
     choices:
     - content: "True"
       isCorrect: true

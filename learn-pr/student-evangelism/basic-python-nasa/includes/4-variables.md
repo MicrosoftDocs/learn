@@ -4,7 +4,7 @@ There are four main types of data variables that you'll encounter throughout thi
 
 - Integers (int): These are whole numbers like 1, 4, 10, -5.
 - Floats: These are decimal numbers like 0.3, 1.6, 17.4, -3.5.
-- String: These are chains of characters which are surrounded by single or double quotes like "hi", "NASA", "Space Rocks", "54321".
+- String: These are chains of characters that are surrounded by single or double quotes like "hi", "NASA", "Space Rocks", "54321".
 - Boolean: Represents either True or False.
 
 Try copying the code below and clicking the run button to create some of your own variables:
@@ -55,7 +55,7 @@ basaltRockCount
 4
 ```
 
-This can be useful if we want to inform the computer that we've found three rocks so far and that we've just found another.
+This can be useful if we want to inform the computer that we've found three rocks so far and we've just found another.
 
 An easy way to perform an operation on a variable is to use the operation you want to apply and then add an equal sign after it. This will perform the action and set the variable to the new value. For example:
 

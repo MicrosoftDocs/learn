@@ -1,6 +1,6 @@
-You are a geologist working at NASA, responsible for analyzing the different types of rocks found by the Artemis Rover and producing a report. The rover will send a text document of the different types of rocks found that you'll need to parse through. Instead of doing it by hand, your friend tells you about how the Python programming language can make this task much easier and more automated.
+You're a geologist working at NASA. You're responsible for analyzing the different types of rocks found by the Artemis Rover and producing a report. The rover will send a text document of the different types of rocks, which you'll need to parse through. Your friend tells you how the Python programming language can make the task much easier than doing it by hand, and more automated. 
 
-In this module, you'll build a simple notebook with Python to complete the task. Along the way, you'll apply a variety of introductory computer science topics. You'll use Visual Studio Code with the Python extension to run the code and use pre-build functions that will help complete this exercise.
+In this module, you'll build a simple notebook with Python to complete the task. Along the way, you'll apply a variety of introductory computer science topics. You'll use Visual Studio Code with the Python extension, to run the code and use pre-built functions that will help you complete this exercise.
 
 ## Learning objectives
 

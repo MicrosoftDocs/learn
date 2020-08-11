@@ -55,4 +55,4 @@ print("On", date, "number of rocks found:", numRocks)
 On February 26 number of rocks found: 15
 ```
 
-The print function is very helpful because the people using our programs won't always be able see our code or know how to read it. The print function allows us to show them only the values we want them to see.
+The print function is very helpful, because the people using our programs won't always be able see our code or know how to read it. The print function allows us to show them only the values we want them to see.

@@ -5,11 +5,11 @@ Let's start by printing the number of each type of rock we found. For example, t
 print("Number of Basalt: ", basalt)
 ```
 
-As you can see, we first output a string that tells the user what they will see. Then we concatenate on the variable name that includes the number of basalt rocks we found.
+As you can see, we first output a string that tells the user what they'll see. Then we concatenate on the variable name that includes the number of basalt rocks we found.
 
 Do the same thing for the four types of rock variables we created.
 
-Next, let's provide some more general data like the type of rock that was the most and least common. In this case, we'll use the max() and min() functions that we learned about before.
+Next, let's provide some more general data, such as the type of rock that was the most and least common. In this case, we'll use the max() and min() functions that we learned about before.
 
 Try to figure out what you need to do, but if you get stuck read below for the answer:
 

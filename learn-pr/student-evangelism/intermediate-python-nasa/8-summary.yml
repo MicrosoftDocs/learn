@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "To make it harder for others to read your code"
       isCorrect: false
-      explanation: "We would not want to do this to our code"
+      explanation: "We wouldn't want to make our code harder to read"
     - content: "To make your code look more sophisticated"
       isCorrect: false
       explanation: "Developers prefer simplicity"
