@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.azure.azure-stack-hci-plan-deploy
+metadata:
+  title: Plan and deploy Azure Stack HCI
+  description: TODO
+  ms.date: 09/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Plan and deploy Azure Stack HCI
+summary: TODO
+abstract: | 
+  In this module, you will:
+  - TODO
+  - TODO
+  - TODO
+prerequisites: | 
+  - TODO
+iconUrl: http://via.placeholder.com/120x120
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure.azure-stack-hci-plan-deploy.1-introduction
+- learn.azure.azure-stack-hci-plan-deploy.2-workloads
+- learn.azure.azure-stack-hci-plan-deploy.3-hardware
+- learn.azure.azure-stack-hci-plan-deploy.4-integration-options
+- learn.azure.azure-stack-hci-plan-deploy.5-deploy
+- learn.azure.azure-stack-hci-plan-deploy.6-verify-deployment
+- learn.azure.azure-stack-hci-plan-deploy.7-summary
+badge:
+  uid: learn.azure.azure-stack-hci-plan-deploy.badge
