@@ -1,11 +1,27 @@
-Use the following unit structure:
+Tailwind Traders owns a fleet of delivery vehicles that transport products from warehouses to distribution centers, and from distribution centers to stores and homes.  They are looking for a complete logistics solution that takes data sent from an onboard vehicle computer built by a third-party vendor and turns it into actionable alerts, analytics, reporting, and more.  Furthermore, shipments can be outfitted with sensors from a third-party vendor to collect and monitor ambient conditions such as temperature, humidity, tilt, shock, light, and the location of a shipment.  A few goals of this logicistics system include:
 
-Title format: Use <product> to <solve problem>
+- Shipment monitoring with real-time tracing and tracking.
+- Shipment integrity with real-time ambient condition monitoring.
+- Security from theft, loss, or damage of shipments.
+- Geo-fencing, route optimization, fleet management, and vehicle analytics.
+- Forecasting for predictable departure and arrival of shipments.
 
-Introduction: Statement of the sub-task using a scenario based on unit 1.
+They would prefer a pre-built solution to collect the sensor and vehicle computer data, and provide a graphical user interface where they can view reports about shipments and vehicles.
 
-Problem analysis: Analyze the sub-task using criteria from unit 3.
+## Which service should we choose?
 
-Analysis of the criteria: Explain how it leads to the product best suited for the problem.
+Here again, let's apply the decision criteria from a previous unit.
 
-Analysis of why other option(s) are sub optimal: Explain why the other products are not best suited for the problem.
+Is it critical to ensure that the device, in this case, each appliance, is not compromised?  Ideally, each sensor and vehical computer would be impervious to interference.  However, security was not mentioned as a critical concern at this point.  The vehical computers and sensors are built by a third-party vendor, and unless Tailwind Traders wants to manufacture their own devices (which they don't), they will be forced to use the hardware already available.
+
+Next, do they need a dashboard for reporting and management?  Yes, this is a requirement from Tailwind Traders.
+
+So, given the responses to the decision criteria, Azure IoT Central is the best choice in this scenario.  The Connected Logistics starter template provides an out-of-the-box dashboard that will accomplish many of these requirements.  This dashboard is pre-configured to showcase the critical logistics device operations activity.  Admittedly, it might need to be re-configured to remove sea vessel gateways, but the truck gateway functionality would be almost exactly what Tailwind Traders needs.
+
+## Why not use IoT Hub?
+
+Actually, by using IoT Central, Tailwind Traders would be using IoT Hub, preconfigred for their specific needs by the Connected Logistics starter template.
+
+## Why not use Azure Sphere?
+
+Azure Sphere provides a complete solution for scenarios where security is critial.  In this scenario, security is ideal, but perhaps not a critical priority.  Azure Sphere provides an end-to-end solution including hardware.  However, Tailwind Traders will use hardware from a third-party vendor.  So, in this scenario, Azure Sphere is not necessary.
