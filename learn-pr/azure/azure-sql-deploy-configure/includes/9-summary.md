@@ -38,7 +38,7 @@ You can find more information on connectivity for [Azure SQL Database](https://d
 
 #### Azure Marketplace terms
 
-Similar to the Microsoft Software License Terms for SQL Server, you must accept [Azure Marketplace terms](https://azure.microsoft.com/en-us/support/legal/marketplace-terms/) before you deploy Azure SQL.
+Similar to the Microsoft Software License Terms for SQL Server, you must accept [Azure Marketplace terms](https://azure.microsoft.com/support/legal/marketplace-terms/) before you deploy Azure SQL.
 
 #### Resource governance
 

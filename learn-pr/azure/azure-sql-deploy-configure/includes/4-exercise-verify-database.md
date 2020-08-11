@@ -31,7 +31,7 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
 
     :::image type="content" source="../media/4-azure-data-studio-servers.png" alt-text="Screenshot that compares SQL Server and SQL Database in Azure Data Studio.":::  
 
-1. Finally, to run queries in Azure Data Studio, it's very similar to SSMS. Right-click a database or server name and select **New query**.
+1. To run queries in Azure Data Studio, it's similar to SSMS. Right-click a database or server name and select **New query**.
 
 1. For Azure SQL Database, since you're not getting a full "server", **USE [DatabaseName]** is not supported to change the database context. You must either change the connection to specifically connect to the database that you want to run a query on or use the drop-down menu. Change to the context of your **AdventureWorks** database by selecting the drop-down box next to **master** and run `SELECT @@VERSION`.  
 
@@ -141,7 +141,7 @@ In this option, you'll walk through some common queries against system functions
 
     :::image type="content" source="../media/4-dm-exec-requests.png" alt-text="Screenshot of the results showing dm_exec_requests.":::
 
-    Using sys.dm_exec_requests for Azure SQL Database is different from using it for SQL Server or SQL Managed Instance. This DMV shows only active requests related to your database, including background tasks (or background tasks that don't have a database context that show up as "master"). This is because of the nature of an Azure SQL Database deployment where each database is deployed on its own SQL Server instance.
+    Using sys.dm_exec_requests for Azure SQL Database is different from using it for SQL Server or SQL Managed Instance. This DMV shows only active requests related to your database, including background tasks (or background tasks that don't have a database context that shows up as "master"). This is because of the nature of an Azure SQL Database deployment where each database is deployed on its own SQL Server instance.
 
 ### Option 2: SQL Notebooks in Azure Data Studio
 
