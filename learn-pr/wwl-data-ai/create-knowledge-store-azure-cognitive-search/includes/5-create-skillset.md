@@ -1,4 +1,4 @@
-To create a knowledge store, you must define the skills that extract enriched data and the projectsions in which it is to be stored in a *skillset*.
+To create a knowledge store, you must define the skills that extract enriched data and the projections in which it is to be stored in a *skillset*.
 
 Choose the language you want to use at the top of this page, and follow the steps to create a skillset.
 

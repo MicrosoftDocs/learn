@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Check your learning."
-  ms.date: 08/12/2020
+  ms.date: 08/13/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   questions:
-  - content: "You want to create a skillset that includes a knowledge store definition. Which type of skill should you use to map the enriched fields extracted by your skillset to the desired structure for the knowledge store data."
+  - content: "You want to create a skillset that includes a knowledge store definition. Which type of skill should you use to map the enriched fields extracted by your skillset to the desired structure for the knowledge store data?"
     choices:
     - content: "Merge"
       isCorrect: false
