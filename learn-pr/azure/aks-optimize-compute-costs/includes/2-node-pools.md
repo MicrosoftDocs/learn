@@ -62,7 +62,7 @@ az aks nodepool scale \
 
 ## How to scale a cluster automatically
 
-:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Diagram that shows the how the cluster autoscaler adds nodes, and the horizontal pod autoscaler adds pods.":::
+:::image type="content" source="../media/2-cluster-autoscaler.png" alt-text="Diagram that shows how the cluster autoscaler adds nodes and how the horizontal pod autoscaler adds pods.":::
 
 AKS uses the Kubernetes cluster autoscaler to automatically scale workloads. The cluster can scale by using two options:
 
@@ -74,15 +74,15 @@ Let's look at each option, starting with the horizontal pod autoscaler.
 
 ### Horizontal pod autoscaler
 
-Use the Kubernetes horizontal pod autoscaler (HPA) to monitor the resource demand on a cluster and automatically scale the number of workload replicas.
+Use the Kubernetes horizontal pod autoscaler to monitor the resource demand on a cluster and automatically scale the number of workload replicas.
 
-The Kubernetes Metrics Server collects memory and processor metrics from controllers, nodes, and containers that run on the AKS cluster. One way to access this information is to use the Metrics API. The HPA checks the Metrics API every 30 seconds to decide whether your application needs additional instances to meet the required demand.
+The Kubernetes Metrics Server collects memory and processor metrics from controllers, nodes, and containers that run on the AKS cluster. One way to access this information is to use the Metrics API. The horizontal pod autoscaler checks the Metrics API every 30 seconds to decide whether your application needs additional instances to meet the required demand.
 
 Assume that your company also has a batch-processing service that schedules drone flight paths. You see that the service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch-processing service replicas will enable the timely processing of orders.
 
-To solve the problem, you configure HPA to scale up the number of service replicas when needed, and then to scale down the replica count when batch requests decrease.
+To solve the problem, you configure the horizontal pod autoscaler to scale up the number of service replicas when needed. When batch requests decrease, it scales the replica count down.
 
-However, HPA scales pods only on available nodes in the configured node pools of the cluster.
+However, the horizontal pod autoscaler scales pods only on available nodes in the configured node pools of the cluster.
 
 ### Cluster autoscaler
 

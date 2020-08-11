@@ -27,18 +27,18 @@ quiz:
     - content: "Deploy three node pools on the AKS cluster. Create the first and second node pools with standard-sized virtual machines (VMs), and create the third node pool with specialized, GPU-based VMs. Enable the cluster autoscaler on all three node pools."
       isCorrect: false
       explanation: "An AKS cluster with three node pools does give you flexibility to scale the node count in each pool independently. However, you can't scale a node pool to zero after you enable the autoscaler. Use of the GPU-based node pool won't be cost effective for workloads that run only as needed."
-    - content: "Deploy three node pools on the AKS cluster. Create the first and second node pools with standard-sized VMs and the third node pool with specialized, GPU-based VMs. Enabled autoscaling on the first two node pools. Scale the GPU-based node pool manually."
+    - content: "Deploy three node pools on the AKS cluster. Create the first and second node pools with standard-sized VMs and the third node pool with specialized, GPU-based VMs. Enable autoscaling on the first two node pools. Scale the GPU-based node pool manually."
       isCorrect: true
       explanation: "An AKS cluster with three node pools gives you flexibility to scale the node count in each pool independently for each component in the solution. Because you didn't enable the autoscaler on the GPU-based node pool, that pool's node count can be scaled to zero to optimize compute costs."
 
-  - content: "Complete the following statement. The Kubernetes cluster autoscaler scales ..."
+  - content: "Complete the following statement. The Kubernetes cluster autoscaler scales..."
     choices:
-    - content: "... the number of workload replicas on an AKS cluster. It monitors the Metrics API every 30 seconds to decide whether your application needs additional instances to meet demand."
+    - content: "...the number of workload replicas on an AKS cluster. It monitors the Metrics API every 30 seconds to decide whether your application needs additional instances to meet demand."
       isCorrect: false
       explanation: "The horizontal pod autoscaler is responsible for scaling the number of workload replicas on an AKS cluster."
-    - content: "... the number of nodes by monitoring the Metrics API. It scales the number of nodes up or down based on computing resources required."
+    - content: "...the number of nodes by monitoring the Metrics API. It scales the number of nodes up or down based on computing resources required."
       isCorrect: true
       explanation: "The Kubernetes cluster autoscaler scales the number of nodes up or down based on computing resources required."
-    - content: "... the number of node pools on an AKS cluster. It monitors the Metrics API every 30 seconds to decide whether your application needs additional node pools to meet demand."
+    - content: "...the number of node pools on an AKS cluster. It monitors the Metrics API every 30 seconds to decide whether your application needs additional node pools to meet demand."
       isCorrect: false
       explanation: "The decision to add node pools to an AKS cluster is the responsibility of the cluster operator."

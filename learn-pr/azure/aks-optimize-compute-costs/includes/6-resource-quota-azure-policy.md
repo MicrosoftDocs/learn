@@ -56,7 +56,7 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature.
 
 1. Register two resource providers by using the `az provider register` command:
 
-    - **Microsoft.ContainerService**: This resource provider is the same one you used to register the **spotpoolpreview** feature with earlier.
+    - **Microsoft.ContainerService**: This resource provider is the same one you used to register the **spotpoolpreview** feature with previously.
     
     - **Microsoft.PolicyInsights**: This resource provider supports actions such as querying information about policy events. It also provides the ability to query, create or update, and delete policy remediation.
 
@@ -67,7 +67,7 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature.
     az provider register --namespace Microsoft.PolicyInsights
     ```
 
-1. Register the `AKS-AzurePolicyAutoApprove` feature with the **Microsoft Container Service** resource provider. Here's an example of the command:
+1. Register the `AKS-AzurePolicyAutoApprove` feature with the `Microsoft. ContainerService` resource provider. Here's an example of the command:
     
     ```azurecli
     az feature register --namespace Microsoft.ContainerService --name AKS-AzurePolicyAutoApprove

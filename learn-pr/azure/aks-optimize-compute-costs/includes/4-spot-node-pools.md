@@ -25,7 +25,7 @@ Spot VM availability depends on factors such as capacity, size, region, and time
 
 ### Spot VM eviction policy
 
-The default eviction policy for spot VMs is Deallocate. Azure will evict spot VMs with 30 seconds of notice when capacity in a region becomes limited. A VM that's set with the Deallocate policy moves to the stopped-deallocated state when evicted. You can redeploy an evicted VM when spot capacity becomes available again. A deallocated VM is still counted toward your Spot vCPU quota, and charges for the underlying allocated disks still apply.
+The default eviction policy for spot VMs is "Deallocate". Azure will evict spot VMs with 30 seconds of notice when capacity in a region becomes limited. A VM that's set with the "Deallocate" policy moves to the stopped-deallocated state when evicted. You can redeploy an evicted VM when spot capacity becomes available again. A deallocated VM is still counted toward your spot virtual CPU (vCPU) quota, and charges for the underlying allocated disks still apply.
 
 ## What is a spot virtual machine scale set?
 
@@ -35,7 +35,7 @@ A spot virtual machine scale set is a virtual machine scale set that supports Az
 
 - **Delete**:  The Delete policy allows you to avoid the cost of disks and hitting quota limits. With the Delete eviction policy, evicted VMs are deleted together with their underlying disks. The scale set's autoscaling feature can now automatically try to compensate for the eviction of VMs by creating new VMs. Although the creation of VMs isn't guaranteed, the evicted VMs don't count toward your vCPU quota or incur costs for underlying disks.  
 
-    A best practice is to use the autoscale feature only when you set the eviction policy to Delete on the scale set.
+    A best practice is to use the autoscale feature only when you set the eviction policy to "Delete" on the scale set.
 
 ## What is a spot node pool in Azure Kubernetes Service (AKS)?
 

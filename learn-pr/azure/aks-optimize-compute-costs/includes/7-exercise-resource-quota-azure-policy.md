@@ -45,7 +45,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/AKS-AzurePolicyAutoApprove')].   {Name:name,State:properties.state}"
     ```
 
-    If the Cloud Shell session times out, you can track the registration process via the Azure portal by using the [preview onboarding page](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
+    If the Cloud Shell session times out, you can track the registration process via the Azure portal by using the [preview onboarding pane](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyMenuBlade/JoinPreview/?azure-portal=true).
 
 1. Run the `az provider register` command to propagate the update after you confirm that the feature-list query command shows 'Registered'.
 
@@ -86,7 +86,7 @@ In this exercise, you'll configure Azure Policy for Azure Kubernetes Service on 
         --resource-group $RESOURCE_GROUP
     ```
 
-1. Verify that the azure-policy pod is installed in the **kube-system** namespace and that the gatekeeper pod is installed in the **gatekeeper-system** namespace. To do so, run the following `kubectl get pods` commands:
+1. Verify that the azure-policy pod is installed in the `kube-system` namespace and that the gatekeeper pod is installed in the `gatekeeper-system` namespace. To do so, run the following `kubectl get pods` commands:
 
     ```bash
     kubectl get pods -n kube-system

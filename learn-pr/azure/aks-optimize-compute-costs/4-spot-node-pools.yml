@@ -41,7 +41,7 @@ quiz:
       explanation: "The `Delete` eviction policy enables you to avoid both paying disk costs and hitting quota limits. This option is the most cost effective one to use with spot node pools."
     - content: "Use the `az aks update` command and set the `--eviction-policy` to `Deallocate`."
       isCorrect: false
-      explanation: "A deallocated VM keeps counting toward your spot vCPU quota, and charges for the underlying, allocated disks still apply. This option isn't the most cost-effective one to use with spot node pools."
+      explanation: "A deallocated VM keeps counting toward your spot virtual CPU quota, and charges for the underlying, allocated disks still apply. This option isn't the most cost-effective one to use with spot node pools."
 
   - content: "For the service described in the preceding questions, how do you ensure that workloads are scheduled on the nodes of the spot node pool?"
     choices:
