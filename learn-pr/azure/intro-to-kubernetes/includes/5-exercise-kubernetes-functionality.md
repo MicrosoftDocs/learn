@@ -396,6 +396,8 @@ You can remove everything you've deployed so far, and even the VM, to recover sp
     sudo snap remove microk8s
     ```
 
+There are a few additional steps to take on Windows and macOS if you want to remove the Multipass VM manager from your machine.
+
 1. Exit the VM by running the `exit` command.
 
     ```bash
