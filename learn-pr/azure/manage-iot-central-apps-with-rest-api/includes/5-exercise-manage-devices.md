@@ -46,8 +46,7 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/deviceTempla
               "description": "Current temperature on the device",
               "displayName": "Temperature",
               "name": "temp",
-              "schema": "double",
-              "unit": "Units/Temperature/fahrenheit"
+              "schema": "double"
             },
             {
               "@type": [
@@ -56,8 +55,7 @@ az rest -m put -u https://$APP_NAME.azureiotcentral.com/api/preview/deviceTempla
               "description": "Current humidity on the device",
               "displayName": "Humidity",
               "name": "humid",
-              "schema": "double",
-              "unit": "Units/Humidity/percent"
+              "schema": "double"
             },
             {
               "@type": [

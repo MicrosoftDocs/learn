@@ -3,7 +3,7 @@ uid: learn.azure.create-nodejs-project-dependencies.6-dependency-management
 title: Manage dependency updates in your Node.js project
 metadata:
   title: Manage dependency updates in your Node.js project
-  description: This unit will explain how to update the dependencies in your app and how to do so in a predictable way.
+  description: This unit explains how to update the dependencies in your app and how to do so in a predictable way.
   author: softchris
   ms.author: chnoring
   ms.date: 06/25/2020

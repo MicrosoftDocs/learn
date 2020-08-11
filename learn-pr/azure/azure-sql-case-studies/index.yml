@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure-sql-case-studies
+metadata:
+  title: Putting it all together with Azure SQL
+  description: Putting it all together with Azure SQL
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Putting it all together with Azure SQL
+summary: In this learning path, you have covered deploying and configuring a secure, performant, and highly available solution with Azure SQL. There are many elements in a single solution, and in this module you'll learn how to take the business scenario and determine the best resources and processes to use to satisfy the requirements while considering the constraints within the scenario. You'll also learn what else you should consider when it comes to Azure SQL and opportunities in the cloud.
+abstract: | 
+  In this module, you will:
+  - Apply your Azure SQL knowledge to any scenario and determine what to use when
+  - Architect a solution involving Azure SQL
+  - Understand the other cloud opportunities that become available once you're leveraging Azure SQL
+  - Leverage the resources to go deeper
+prerequisites: | 
+  - Experience working with, maintaining, and developing with SQL Server and Azure SQL
+  - Experience with Azure, such as deploying and managing resources
+iconUrl: /learn/achievements/azure-sql-case-studies.svg
+levels:
+- beginner
+roles:
+- solution-architect
+- database-administrator
+products:
+- azure
+- azure-sql-database
+units:
+- learn.azure-sql-case-studies.1-introduction
+- learn.azure-sql-case-studies.2-scenario-1
+- learn.azure-sql-case-studies.3-solution-1
+- learn.azure-sql-case-studies.4-scenario-2
+- learn.azure-sql-case-studies.5-solution-2
+- learn.azure-sql-case-studies.6-cloud-opportunities
+- learn.azure-sql-case-studies.7-summary
+badge:
+  uid: learn.azure-sql-case-studies.badge

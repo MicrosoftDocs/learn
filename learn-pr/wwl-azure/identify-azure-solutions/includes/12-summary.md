@@ -1,15 +1,3 @@
-## Summary
+In this module, you explored the many different Azure solutions, available to help build your applications.  From Internet of Things (IoT) to Artificial Intelligence and many others, Azure provides the tools you need.  During this module, you built out an IoT Hub and saw a Raspberry Pi device communicate with it.  Then you implemented an Azure Function, and built your first web app in the cloud.
 
-This module introduces the process of publishing to Learn.
-
-> [!TIP]
-> This module focuses on publishing to Learn process.
-
-
-## Clean up
-
-Let's clean up the resources that we created. Since we deployed everything in a single resource group, cleaning up is easy.
-
-1. Go ahead and pull up the [Azure portal](https://portal.azure.com/?azure-portal=true) in a web browser if you haven't already. In the search box in the top navigation bar, search for **msftlearn-core-infrastructure-rg** and click on the resource group.
-
-1. In the **Overview** pane, click **Delete resource group**. Enter the **msftlearn-core-infrastructure-rg** resource group name to confirm, and click **Delete**.
+Each of these solutions helps you build compelling applications for your business needs and for your customers.
