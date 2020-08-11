@@ -7,7 +7,7 @@ Before you start deploying things in Azure, it's important to understand what yo
 * Deployment method: Azure portal or command-line interface?
 * Deployment option: virtual machine (VM), database, elastic pool, managed instance, or instance pool?
 * Purchasing model (Azure SQL Database only): DTU or vCore?
-* Service tier (service-level objective): General purpose, business critical, or hyperscale?
+* Service tier (service-level objective): General Purpose, Business Critical, or Hyperscale?
 * Hardware: Gen5, or something new?
 * Sizing: number of vCores and maximum data size?  
 
@@ -47,7 +47,7 @@ This logical server does not expose any instance-level access or features as wit
 
 In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and the maximum data size.
 
-Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU Recommender, to estimate the number of vCores and the maximum data size based on your current workload.  
+Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU recommender, to estimate the number of vCores and the maximum data size based on your current workload.  
 
 The maximum data size is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with your maximum data size.  
 

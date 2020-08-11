@@ -18,7 +18,7 @@ In Azure SQL, you can use packages to connect with SSIS on-premises. You can hos
 
 ### Other options
 
-Other interesting options include using technologies like Spark or Azure Data Factory to load data into Azure SQL Database or Azure SQL Managed Instance. Though not directly related to "loading", it's possible to create a database by using an existing database for a copy or doing an import of a BACPAC file. In Azure SQL Managed Instance, you can use T-SQL commands to restore a database natively from a URL.  
+Other interesting options include using technologies like Spark or Azure Data Factory to load data into Azure SQL Database or Azure SQL Managed Instance. Though not directly related to "loading," it's possible to create a database by using an existing database for a copy or doing an import of a BACPAC file. In Azure SQL Managed Instance, you can use T-SQL commands to restore a database natively from a URL.  
 
 ## Considerations for loading data
 

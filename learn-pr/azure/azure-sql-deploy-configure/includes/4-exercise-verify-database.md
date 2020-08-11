@@ -33,7 +33,7 @@ Now that you've seen how Azure SQL appears in SQL Server Management Studio (SSMS
 
 1. To run queries in Azure Data Studio, it's similar to SSMS. Right-click a database or server name and select **New query**.
 
-1. For Azure SQL Database, since you're not getting a full "server", **USE [DatabaseName]** is not supported to change the database context. You must either change the connection to specifically connect to the database that you want to run a query on or use the drop-down menu. Change to the context of your **AdventureWorks** database by selecting the drop-down box next to **master** and run `SELECT @@VERSION`.  
+1. For Azure SQL Database, because you're not getting a full "server," **USE [DatabaseName]** is not supported to change the database context. You must either change the connection to specifically connect to the database that you want to run a query on or use the drop-down menu. Change to the context of your **AdventureWorks** database by selecting the drop-down box next to **master** and run `SELECT @@VERSION`.  
 
     :::image type="content" source="../media/4-new-query-azure-data-studio.png" alt-text="Screenshot of querying in Azure Data Studio.":::
 
@@ -49,13 +49,13 @@ Now that you're connected, you might want an easy way to access scripts and Jupy
 
 1. Browse to where you extracted the zip file of the resources for this exercise. If you followed the prerequisites, the path should be similar to `C:\Users\<machine-username>\mslearn-azure-sql-fundamentals`. When you're there, select **Select Folder**.  
 
-1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. Note that this zip file contains all of the necessary resources for the Azure SQL Fundamentals learning path, so you need to download and configure this only once!
+1. Next, select the **Explorer** icon from the left taskbar to browse through the files in the module. Note that this zip file contains all of the necessary resources for the learning path about Azure SQL fundamentals, so you need to download and configure this only once!
 
     Throughout the module and learning path exercises, you'll be instructed at various points to open a notebook (file ending in `.ipynb`). You can access the notebook from here directly. Alternatively, you can access it from the **Notebook** icon tab.  
 
 ## Verify deployment
 
-After you've deployed an instance of SQL (Azure SQL or SQL Server), you's typically run queries to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you'll see what and how things change from SQL Server, and what's new.  
+After you've deployed an instance of SQL (Azure SQL or SQL Server), you typically run queries to verify your deployment. In Azure SQL, some of these queries vary from SQL Server. In this step, you'll see what and how things change from SQL Server, and what's new.  
 
 There are two options for completing this exercise:
 
@@ -78,7 +78,7 @@ In this option, you'll walk through some common queries against system functions
 
     :::image type="content" source="../media/4-version.png" alt-text="Screenshot of the result of the SELECT @@VERSION function.":::  
 
-    The result looks a bit different from SQL Server. You can tell that this is Azure SQL, which doesn't have versions. Azure SQL Database includes the most up-to-date changes in line with the latest release of SQL Server. However, using the system function @@VERSION is a common method to verify that you can "query" SQL Server.
+    The result looks a bit different from SQL Server. You can tell that this is Azure SQL, which doesn't have versions. Azure SQL Database includes the most up-to-date changes in line with the latest release of SQL Server. However, using the system function `@@VERSION` is a common method to verify that you can "query" SQL Server.
 
 1. Determine the specific type of Azure SQL deployment, based on the number returned:
 
@@ -121,7 +121,7 @@ In this option, you'll walk through some common queries against system functions
 
     :::image type="content" source="../media/4-schedulers.png" alt-text="Screenshot of the results for sys.dm_os_schedulers.":::  
 
-    Two VISIBLE ONLINE schedulers are what you would expect when two vCores are available for the SQL Server instance where your SQL database is deployed.
+    Two `VISIBLE ONLINE` schedulers are what you would expect when two vCores are available for the SQL Server instance where your SQL database is deployed.
 
 1. For a SQL Server deployment, you might normally look at DMVs like sys.dm_os_sys_info and sys.dm_process_memory to see limits for CPU, memory, and workers. These DMVs are not supported with Azure SQL Database, because the user doesn't expose or control the details of the host that supports the database. So you can use the DMV sys.dm_user_db_resource_governance to review capacities and limits for your deployed SQL database. 
 

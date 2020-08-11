@@ -32,7 +32,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
     |**Server**     |  Select **Create new**, fill out the  **New server** pane as follows, and select **OK**:      |
     |         |**Server name**:  Enter a unique name for the server (for example, **aw-server0406**).  |
     | | **Server admin login**: cloudadmin |
-    | | **Password/Confirm Password**:  A complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
+    | | **Password/Confirm Password**:  Use a complex password that meets [strong password requirements](https://docs.microsoft.com/sql/relational-databases/security/strong-passwords?azure-portal=true). Note this password for later use.|
     || **Location**: Use a region that's close to you. |
     |**Want to use SQL elastic pool?**     |   No      |
     |**Compute + storage**     |  Leave the default of **General Purpose**, **Gen5, 2 vCores, 32 GB storage**.       |

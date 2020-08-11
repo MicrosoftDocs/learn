@@ -26,7 +26,7 @@ SQL Server Agent provides a configuring and scheduling system for SQL Server use
 
 ### SQL Agent in SQL Managed Instance
 
-SQL Agent is a fully supported service with Azure SQL Managed Instance. SQL Agent jobs are supported only for T-SQL and SSIS job steps. Command shell steps are not supported. Although alerts are not supported, email notifications are supported through database mail.
+SQL Agent is a fully supported service with Azure SQL Managed Instance. SQL Agent jobs are supported only for T-SQL and SQL Server Integration Services job steps. Command shell steps are not supported. Although alerts are not supported, email notifications are supported through database mail.
 
 ### Elastic jobs for SQL Database
 
