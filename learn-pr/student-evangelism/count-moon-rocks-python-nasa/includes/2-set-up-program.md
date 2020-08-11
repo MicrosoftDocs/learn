@@ -1,10 +1,10 @@
-To start to create the program, make a folder somewhere on your computer that you can access easily. Call the folder something like SpaceRockProject. Then open the file [rocks.txt](https://docs.microsoft.com/learn/modules/count-moon-rocks-python-nasa/includes/rocks.txt?azure-portal=true) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we're going to be reading in Python.
+To start to create the program, make a folder somewhere on your computer that you can access easily. Call the folder something like SpaceRockProject. Then open the file [rocks.txt](../rocks.txt) and use `file -> save as` to save a copy in your folder. This file contains all of the rocks data that we're going to be reading in Python.
 
-:::image type="content" source="..\media\save-rock-file.png" alt-text="How to save the rock text file":::
+:::image type="content" source="../media/save-rock-file.png" alt-text="How to save the rock text file":::
 
 Next, open Visual Studio Code and select **File** then **New File**. Once the blank file is open, make the keystrokes "Ctrl+S" to save it. Navigate to the folder you created, name the file something informative such as ArtemisRockClassifier, and change the file type to Jupyter from the drop-down menu. Now we have everything created, we can start coding!
 
-:::image type="content" source="..\media\create-final-project.png" alt-text="How to create the final project Jupyter Notebook":::
+:::image type="content" source="../media/create-final-project.png" alt-text="How to create the final project Jupyter Notebook":::
 
 To start our program, we'll want to let the user know that the program is beginning, by using the print command to output a string of text.
 
