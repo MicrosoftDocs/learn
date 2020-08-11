@@ -2,7 +2,7 @@
 
 You can use the Azure portal to configure update jobs, and to schedule them to run against onboarded VMs and physical servers. To create an update deployment, in the Azure portal, navigate to your automation account, select **Update management**, and then select **Schedule update deployment**.
 
-## Create an Update Deployment
+## Create an update deployment
 
 In the Azure portal, on the **Schedule update management** blade, you must configure the update deployment properties. This requires configuring the update deployment using the settings described in the following table.
 

@@ -43,7 +43,7 @@ To enable Update Management from your Automation Account, use the following proc
 3. On the **Update Management** blade, you can verify that the Log Analytics workspace location, the Log Analytics workspace subscription, and the Automation account are already selected.
 4. In the Log Analytics workspace list, select a suitable workspace, or select **Create New Workspace**, and then select **Enable**.
 
-![A screenshot of the administrator selecting Update Management on a Log Analytics workspace account and Automation account.](../media/m3-update-management-1.png)
+    ![A screenshot of the administrator selecting Update Management on a Log Analytics workspace account and Automation account.](../media/m3-update-management-1.png)
 
 
 ## Onboard your servers
@@ -60,7 +60,7 @@ To add Azure VMs to Update management, use the following procedure:
 2. Select  **+ Add Azure VMs**.
 3. Select the VMs you want to onboard, and then select **Enable**.
 
-![A screenshot displays the Enable Update Management blade of the Azure portal. The administrator has selected three VMs for onboarding.](../media/m3-update-management-3.png)
+    ![A screenshot displays the Enable Update Management blade of the Azure portal. The administrator has selected three VMs for onboarding.](../media/m3-update-management-3.png)
 
 > [!NOTE]
 > The VMs must use the Log Analytics workspace that you have configured for your Automation account, otherwise you cannot onboard the VMs.
