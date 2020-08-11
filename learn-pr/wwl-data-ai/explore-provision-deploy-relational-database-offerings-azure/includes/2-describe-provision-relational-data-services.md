@@ -1,6 +1,6 @@
 In the sample scenario, Contoso has decided that the organization will require several different relational stores. As the data engineer, you've been asked to set up data stores using Azure SQL Database, PostgreSQL, and MySQL.
 
-In this unit, you'll learn how to provision these services. 
+In this module, you'll learn how to provision these services. 
 
 ## What is provisioning?
 
