@@ -48,14 +48,14 @@ quiz:
         - content: "The Main Camera object is deleted as it is not needed for mixed reality development."
           isCorrect: false
           explanation: "The Main Camera object is needed to capture and display the world to the user."
-    - content: "A mixed reality experience guides construction workers through a task that requires the use of two hands. Which modality would be best suited so that the worker can interact with the experience?"
+    - content: "A mixed reality experience guides construction workers through a task that requires the use of two hands for the real world task. Which modality would be best suited so that the worker can interact with the experience?"
       choices:
         - content: "Voice input"
           isCorrect: true
           explanation: "Correct. The use of voice input would eliminate the need of the user to use their hands to interact with the experience."
         - content: "Gaze and commit with hand gestures"
           isCorrect: false
-          explanation: "Although the user could use their head or eyes to gaze, the user would be required to use their hands to interact with the experience."
+          explanation: "Although the user could use their head or eyes to gaze, the user would be required to use their hands to interact with the mixed reality experience."
         - content: "Motion controllers"
           isCorrect: false
           explanation: "The use of a motion controller would require the user to hold a device with their hands to interact with the experience."
