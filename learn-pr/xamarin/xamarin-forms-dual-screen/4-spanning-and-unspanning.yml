@@ -27,11 +27,11 @@ quiz:
     - content: "Only when app is moved from one to two screens (or vice versa), such as when folded/unfolded or spanned/unspanned."
       isCorrect: false
       explanation: "PropertyChanged is called for more than one type of change."
-  - content: "TwoPaneView is the only way to show content side by side on a dual-screen device."
+  - content: "What control should you use to show content side by side on a dual-screen device?"
     choices:
-    - content: "True - TwoPaneView should be the root view in all your content pages to work on a dual-screen device."
+    - content: "Only TwoPaneView can properly render your layouts across two screens."
       isCorrect: false
       explanation: "Any layout can be made dual-screen aware using the information available in the DualScreenInfo helper class."
-    - content: "False - you can use DualScreenInfo to detect the hinge and screen coordinates and adjust any layout for two screens."
+    - content: "You can use DualScreenInfo to detect the hinge and screen coordinates and adjust any layout for two screens."
       isCorrect: true
       explanation: "While TwoPaneView is optimized for dual-screens, any layout can be made dual-screen aware."
