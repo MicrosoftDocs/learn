@@ -97,5 +97,5 @@ We'll start by downloading the latest version of AzCopy; currently version 10. T
 1. Copying a blob to *Cool* storage doesn't remove the blob from *Hot* storage. You must delete these blobs manually. As an example, run the following command to delete the "specification01.md" blob from the source (hot) storage account.
 
     ```bash
-    ./azcopy remove https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specifications01.md$HOT_SAS_TOKEN
+    ./azcopy remove https://$HOT_STORAGE_NAME.blob.core.windows.net/specifications/specification01.md$HOT_SAS_TOKEN
     ```
