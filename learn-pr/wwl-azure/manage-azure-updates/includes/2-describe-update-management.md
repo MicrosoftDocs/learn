@@ -1,4 +1,4 @@
-<!-- 6 minutes minutes to read -->
+
 
 Updates to Windows are, of course, a recurring series of events. Updates can come quickly and frequently when newly discovered security flaws or attack vectors are addressed. Updates also arrive periodically based on events such as changes in device drivers or planned roll-outs of new system features.
 
@@ -47,7 +47,7 @@ WSUS improves the security of the systems at Contoso by applying security update
 
 Update Management in Azure supports WSUS settings. You can specify sources for scanning and downloading updates using instructions in **Specify intranet Microsoft Update service location**. By default, the Windows Update client is configured to download updates from Windows Update. When you specify a WSUS server as a source for your machines, if the updates aren't approved in WSUS, update deployment fails.
 
-![A screenshot of the Group Policy Editor in Windows. The administrator has navigated to the Windows Update folder and configured the Configure Automatic Updates, Specify intranet Microsoft Update service location, and Do not connect to any Windows Update Internet locations values.](../media/m3-windowsupdate.png)
+![A screenshot of the Group Policy Editor in Windows. The administrator has navigated to the Windows Update folder and configured the Configure Automatic Updates, Specify intranet Microsoft Update service location, and Do not connect to any Windows Update Internet locations values.](../media/m3-windows-update.png)
 
 > [!TIP]
 > To restrict machines to the internal update service, set **Do not connect to any Windows Update Internet locations**.

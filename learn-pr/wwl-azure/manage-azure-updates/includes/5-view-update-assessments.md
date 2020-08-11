@@ -1,5 +1,3 @@
-<!-- Duration: 3 minutes  -->
-
 In this demonstration, you'll learn to:
 
 - Create an automation account.
@@ -9,7 +7,7 @@ In this demonstration, you'll learn to:
 
 ## Next steps
 
-You can review the steps for this demonstration at [View update assessments](https://docs.microsoft.com/en-us/azure/automation/update-management/update-mgmt-view-update-assessments?azure-portal=true)
+You can review the steps for this demonstration at [View update assessments](https://aka.ms/update-mgmt-view-update-assessments?azure-portal=true)
 
 If you want to repeat these steps, [get a free trial Azure subscription](https://aka.ms/Azure_free_account?azure-portal=true).
 

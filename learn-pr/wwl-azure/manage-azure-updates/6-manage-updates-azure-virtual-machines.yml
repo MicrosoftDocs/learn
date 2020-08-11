@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-azure-updates.manage-updates-for-your-azure-vms
-title: Manage updates for your azure VMs
+title: Manage updates for your Azure virtual machines
 metadata:
-  title: Manage updates for your azure VMs
-  description: "Manage updates for your azure VMs"
-  ms.date: 08/12/2020
+  title: Manage updates for your Azure virtual machines
+  description: "Manage updates for your Azure virtual machines"
+  ms.date: 08/13/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,7 +12,7 @@ metadata:
 azureSandbox: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-manage-updates-for-your-azure-vms.md)]
+  [!include[](includes/6-manage-updates-azure-virtual-machines.md)]
 quiz:
   title: "Quick quiz"
   questions:
@@ -23,7 +23,7 @@ quiz:
       explanation: "That's incorrect. An alert rule monitors update deployments."
     - content: "An alert rule can monitor update deployments."
       isCorrect: true
-      explanation: "That's correct."
+      explanation: "That's correct. An alert rule can monitor update deployments"
     - content: "An alert rule can create update deployments."
       isCorrect: false
       explanation: "That's incorrect. An alert rule monitors update deployments."

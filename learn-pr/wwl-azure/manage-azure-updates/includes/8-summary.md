@@ -1,5 +1,4 @@
 
-<!-- 3 minutes to read -->
 
 Contoso IT staff were eager to find out how to manage their updates for both on-premises and cloud-based servers. They realized this could  be challenging because few tools can manage both environments. However, by using the Azure Update Management service, they can manage updates for both cloud-based and on-premises servers.
 

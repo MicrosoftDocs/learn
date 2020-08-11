@@ -1,5 +1,3 @@
-<!-- Duration: 8 minutes  -->
-
 In this demonstration, you'll learn to:
 
 - View update assessment.

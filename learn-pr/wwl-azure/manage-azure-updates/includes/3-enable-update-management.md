@@ -1,4 +1,4 @@
-<!-- 10 minutes minutes to read -->
+
 
 *Azure Automation* is a cloud-based service that provides process automation, configuration management, update management, and other management features for both Azure and non-Azure environments, including on-premises environments. Contoso can use Update Management, which is a free service in Automation to manage OS updates for Windows and Linux computers, both in the cloud and on-premises.
 
@@ -16,7 +16,7 @@ To implement Update Management in a hybrid environment, complete the following h
 
 When creating an Automation account, you'll choose an Azure region for the account. While the resources that are associated with the account are located in that region, the Automation account can manage any resources in your subscription. You can also choose to create a Run As account, which is a way to manage authentication for runbooks that use PowerShell. You don't need to create a Run As account to enable Update Management.
 
-![A screenshot of the Azure portal. The administrator is adding an Azure Automation account. The name is ContosoAutomation in the ContosoResourceGroup, and the location is East US.](../media/m3-automation-acc.png)
+![A screenshot of the Azure portal. The administrator is adding an Azure Automation account. The name is ContosoAutomation in the ContosoResourceGroup, and the location is East US.](../media/m3-automation-account.png)
 
 To create an Automation account, perform the following steps:
 
@@ -43,14 +43,14 @@ To enable Update Management from your Automation Account, use the following proc
 3. On the **Update Management** blade, you can verify that the Log Analytics workspace location, the Log Analytics workspace subscription, and the Automation account are already selected.
 4. In the Log Analytics workspace list, select a suitable workspace, or select **Create New Workspace**, and then select **Enable**.
 
-![A screenshot of the administrator selecting Update Management on a Log Analytics workspace account and Automation account.](../media/m3-update-management1.png)
+![A screenshot of the administrator selecting Update Management on a Log Analytics workspace account and Automation account.](../media/m3-update-management-1.png)
 
-<!-- Account Automation appears with init caps for both and for one word in the ui- do not edit -->
+
 ## Onboard your servers
 
 The next step is to onboard your Azure VMs and on-premises machines. To complete this task, return to your Automation Account, and then select **Update management**. You can review the details, and then select the **+ Add Azure VMs**, **Add non-Azure machine**, and **Manage machines** links from the menu.
 
-![A screenshot of the Update management blade of the Azure portal. The administrator has enabled Update management, but no servers are yet onboarded.](../media/m3-update-management2.png)
+![A screenshot of the Update management blade of the Azure portal. The administrator has enabled Update management, but no servers are yet onboarded.](../media/m3-update-management-2.png)
 
 ### Onboard Azure VMs
 
@@ -60,7 +60,7 @@ To add Azure VMs to Update management, use the following procedure:
 2. Select  **+ Add Azure VMs**.
 3. Select the VMs you want to onboard, and then select **Enable**.
 
-![A screenshot displays the Enable Update Management blade of the Azure portal. The administrator has selected three VMs for onboarding.](../media/m3-update-management3.png)
+![A screenshot displays the Enable Update Management blade of the Azure portal. The administrator has selected three VMs for onboarding.](../media/m3-update-management-3.png)
 
 > [!NOTE]
 > The VMs must use the Log Analytics workspace that you have configured for your Automation account, otherwise you cannot onboard the VMs.
