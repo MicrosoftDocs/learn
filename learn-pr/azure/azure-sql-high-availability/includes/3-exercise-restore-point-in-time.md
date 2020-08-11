@@ -114,34 +114,34 @@ In this exercise, you'll learn how to use auditing through Log Analytics to dete
 
 1. Select **Create New Workspace**.  
 
-1. Enter the information for the subscription, resource group, and location that you're using to complete this module. We recommend that you name your Log Analytics workspace **azuresql\<unique ID>-la**, using your unique ID for your resources. Select **OK**.  
+1. Enter the information for the subscription, resource group, and location that you're using to complete this module. We recommend that you name your Log Analytics workspace **azuresql\<unique ID>-la**, filling in the unique ID for your resources. Select **OK**.  
 
-    This may take a few moments to validate and create. You should now see your Log Analytics account.  
+    It might take some time to validate and create your Log Analytics account. You should see it soon. 
 
 1. Select **Save**.  
 
-> [!IMPORTANT]
-> Make sure you select **Save**. If you don't, auditing with Log Analytics won't start to collect logs.
+   > [!IMPORTANT]
+   > Be sure to select **Save**. If you don't, Log Analytics won't collect logs.
 
-## Process for PITR
+## Complete PITR
 
 Before you go any further, it's important to understand the recommended process for doing PITR:  
 
-1. A table or database is deleted on accident.
-1. Determine the time that you need to go back to. This should be **before** the error or mistake took place.  
-1. Complete PITR via PowerShell or the Azure portal to go back to this time. This deploys a new database and restores a copy of your database, e.g. **AdventureWorks-copy**.  
-1. Confirm the new database (e.g. **AdventureWorks-copy**) is in the correct state (before the accident occurred).  
-1. Rename the original database, e.g. **AdventureWorks** to **AdventureWorks-old**.
-1. Rename the new database to the original database name, e.g. **AdventureWorks-copy** to **AdventureWorks**.  
-1. Delete the original database, e.g. **AdventureWorks-old**.  
+1. A table or database is deleted by accident.
+1. Determine the time that you need to go back to. It should be before the error happened.  
+1. Complete PITR via PowerShell or the Azure portal to go back to this time. This process deploys a new database and restores a copy of your database. For example, AdventureWorks-copy.  
+1. Confirm the new database (for example, AdventureWorks-copy) is in the correct state (as it was before the accident occurred).  
+1. Rename the original database. For example, rename AdventureWorks to AdventureWorks-old.
+1. Rename the new database with the original database name. For example, rename AdventureWorks-copy to AdventureWorks.  
+1. Delete the original database. For example, AdventureWorks-old.  
 
-In this exercise, you'll follow the steps that go along with the process above.  
+In this exercise, you'll complete these steps.  
 
 ### Simulate deletion of data
 
-1. First, let's confirm that the table we'll *accidentally* delete does exist and have data in it. Let's take a look at some of the values in `SalesLT.OrderDetail`.  
+1. First, let's confirm that the table we'll *accidentally* delete exists and has data in it. Let's look at some of the values in SalesLT.OrderDetail.  
 
-    **Navigate to SSMS** and **check/update your connection**. You'll want to make sure that the connection you use is connecting to the logical server, but not a specific database (e.g. set to `<default>` in screenshot below). You should also confirm that **Additional Connection Parameters** is contains no text.  
+    Go to SSMS and check/update your connection. Make sure the connection you use is connecting to the logical server but not to a specific database (for example, set to **\<default>** in the following screenshot). You should also confirm that **Additional Connection Parameters** is contains no text.  
 
     :::image type="content" source="../media/3-default.png" alt-text="Screenshot of the default connection.":::
 
