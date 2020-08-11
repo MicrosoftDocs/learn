@@ -84,7 +84,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
    - Create in portal (which will show in first exercise)
    - Create by using Azure PowerShell: show sample comands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
-   - CLI? Do we have this yet?
+   - CLI: https://docs.microsoft.com/azure/bastion/create-host-cli
 
    **What are the most important take-aways from this unit for the KC?**
 
@@ -98,7 +98,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
     List the steps which apply the learning content from previous unit:
 
-    1. Customer runs script that creates existing enviroment: jumpbox + "app" VM (Ubuntu) that's on a private network. Jumpbox has public IP. 
+    1. Customer runs script that creates existing enviroment: jumpbox + "app" VM (Ubuntu) that's on a private network. Jumpbox has public IP. (Modify script from: https://docs.microsoft.com/learn/modules/troubleshoot-inbound-connectivity-azure-load-balancer/4-exercise-set-up-environment and https://github.com/MicrosoftDocs/mslearn-troubleshoot-inbound-network-connectivity-azure-load-balancer/blob/master/src/scripts/setup.sh)
     1. Connect to jumpbox using SSH and then ping the "app" VM.
     1. Remove public IP from jumpbox.
     1. Use "jumpbox" as target VM to spin up Bastion. (Create subnet, etc)
@@ -108,7 +108,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
 1. **Secure Azure Bastion with a network security group**
 
-   Talk about the default - what's gets setup and what best practice changes you should make?
+   Talk about the default - what's gets set up and what best practice changes you should make?
 
    "As a best practice, you should have a network security group to restrict what ports and source IP addresses can connect to your Bastion service. This hardens the service and provides another level of security."  (Copied from Cynthia's draft and this is a bit confusing to me. Isn't this the default?)
    
