@@ -6,7 +6,7 @@ Let's start by making a string variable in your notebook. Copy the following lin
 astronaut = "Remy Morris"
 ```
 
-Say that we want to have this astronaut's name in all caps to print on their space suit. Instead of having to make a new variable, we can use the.upper() function to print the name in capital letters. To call a function, type the variable followed by a period, the name of the function, and then parenthesis. Calling this upper function won't change the astronaut variable, since we want to preserve their name with the correct capitalization. You must set a new variable or current variable equal to the function that you've called.
+Say that we want to have this astronaut's name in all caps to print on their space suit. Instead of having to make a new variable, we can use the .upper() function to print the name in capital letters. To call a function, type the variable followed by a period, the name of the function, and then parenthesis. Calling this upper function won't change the astronaut variable, since we want to preserve their name with the correct capitalization. You must set a new variable or current variable equal to the function that you've called.
 
 ```python
 upperCase = astronaut.upper()
