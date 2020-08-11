@@ -1,14 +1,14 @@
-In this, you'll see how a common error can be recovered using point in time restore (PITR). This is easy to do in the portal or programmatically, but in this exercise you'll see how to do it with the Azure CLI.
+In this exercise, you'll see how you can recover from a common error by using point in time restore (PITR). This process is easy to do in the portal or programmatically, but in this exercise you'll learn how to do it by using the Azure CLI.
 
-## Set up: Use scripts to deploy Azure SQL Database
+## Setup: Use scripts to deploy Azure SQL Database
 
-In the right-hand terminal, you'll see the Azure Cloud Shell, which is a way to interact with Azure using a browser. Before you start the labs, you will run a script there in order to create your environment, an Azure SQL Database with the AdventureWorks database. In the script, there will be some prompts, for a password and your local IP address.  
+In the terminal on the right side, you'll see Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercises, you need to run a script there to create your environment: an Azure SQL Database that contains the AdventureWorks database. There will be some prompts in the script for a password and your local IP address.  
 
-These scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region as it will not be shown again.
+These scripts should take 3-5 minutes to complete. Make sure to note your password, unique ID, and region because they won't be shown again.
 
-1. In order to get the IP address required, you must disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser). Note the resulting IP address.
+1. To get the IP address that's required, you need to disconnect from any VPN service and run `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` in a local PowerShell window (not in this browser). Note the resulting IP address.
 
-1. Run the following in the Azure Cloud Shell, which is in the right-hand side of this page. Fill in a complex password and public IP address when prompted.
+1. Run the following script in Azure Cloud Shell on the right side of this page. Enter a complex password and public IP address when prompted.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -25,7 +25,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following in the Azure Cloud Shell. You'll likely need to press `ENTER` after you paste in the code, as the last line will not be run by default.
+1. Output and store (in a text file or similar location) the information you'll need throughout this module by running the following script in Azure Cloud Shell. You'll probably need to select **Enter** after you paste in the code because the last line won't run by default.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -37,10 +37,10 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
     Write-Host "Your server name is:"
     Write-Host $serverName
     ```
+   > [!IMPORTANT]
+   > Don't forget to note your password, unique ID, and region. You'll need this information throughout the module.
 
-    **Don't forget to note your password, unique ID, and region. You will need these throughout the module.**
-
-1. Run the following script to deploy an Azure SQL Database and logical server with the AdventureWorks sample. This will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units.
+1. Run the following script to deploy an Azure SQL database and logical server with the AdventureWorks sample. This script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in upcoming units.
 
     ```powershell
     # The logical server name has to be unique in the system
@@ -49,7 +49,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
     $databaseName = "AdventureWorks"
     # The storage account name has to be unique in the system
     $storageAccountName = $("sql$($uniqueID)")
-    # Create a new server with a system wide unique server name
+    # Create a new server with a system-wide unique server name
     $server = New-AzSqlServer -ResourceGroupName $resourceGroupName `
         -ServerName $serverName `
         -Location $location `
@@ -70,51 +70,51 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
         -DatabaseName $databaseName `
         -SampleName "AdventureWorksLT" `
         -Edition "GeneralPurpose" -Vcore 2 -ComputeGeneration "Gen5"
-    # Enable Advanced data security
+    # Enable Advanced Data Security
     $advancedDataSecurity = Enable-AzSqlServerAdvancedDataSecurity `
         -ResourceGroupName $resourceGroupName `
         -ServerName $serverName
-    # Create a Storage Account
+    # Create a storage account
     $storageAccount = New-AzStorageAccount -ResourceGroupName $resourceGroupName `
         -AccountName $storageAccountName `
         -Location $location `
         -Type "Standard_LRS"
     ```
 
-1. On your local device, open SSMS and create a new connection to your logical server. For server name, input the name of your Azure SQL Database logical server. If you did not save it above, you may need to refer to the Azure portal to get this, for example, *aw-server`<unique ID>`.database.windows.net*.  
+1. On your local computer, open SSMS and create a new connection to your logical server. For the server name, enter the name of your Azure SQL Database logical server. If you didn't save the name earlier, you might need to refer to the Azure portal to get it. For example, **aw-server\<unique ID>.database.windows.net**.  
 
     > [!div class="nextstepaction"]
-    > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-    Once you're in the Azure portal you can search in the top bar for `AdventureWorks` to find your database and its associated logical server.
+    1. When you're in the Azure portal, you can enter **AdventureWorks** in the search box to find your database and its associated logical server.
 
-    Change the authentication to **SQL Server Authentication**, and input the corresponding Server Admin Login and Password (the one you provided during deployment in the previous exercise).  
+    1. In the **Authentication** box, enter **SQL Server Authentication**. Enter the corresponding Server Admin **Login** and **Password** (the one you provided during deployment in the previous exercise).  
 
-    Check the **Remember password** box and select **Connect**.  
+    1. Select **Remember password**, and then select **Connect**.  
 
-    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot of how to connect to SQL Database in SSMS.":::  
+    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot that shows how to connect to SQL Database in SSMS.":::  
 
     > [!NOTE]
-    > Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get a pop-up which reads "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign-in using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps using the pop-up wizard in SSMS.  
+    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address the Azure portal used during deployment. If it does, you'll see a message that says "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you're using for the sandbox and add a firewall rule for your client IP address. You can complete these steps by using the pop-up wizard in SSMS.  
 
-## Set up: Configure Auditing with Log Analytics
+## Setup: Configure auditing by using Log Analytics
 
-In this exercise, you'll learn how to use auditing through Log Analytics to determine when `DROP` statements have occurred. In order to do this, you must first configure auditing.
+In this exercise, you'll learn how to use auditing through Log Analytics to determine when DROP statements have occurred. To do this, you must first configure auditing.
 
-1. Open the Azure portal and navigate to your Azure SQL Database.
+1. Go to the Azure portal, and then go to your Azure SQL database.
 
     > [!div class="nextstepaction"]
-    > [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
-1. In the left-hand task menu, under Security, select **Auditing**. Select **View server settings**. You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server.  
+1. In the left pane, under **Security**, select **Auditing**. Select **View server settings**. You can apply auditing at the server level. It then applies to all databases in the Azure SQL Database logical server.  
 
 1. Set **Auditing** to **ON**.  
 
-1. Select **Log Analytics (Preview)** and the **Configure** button.  
+1. Select **Log Analytics (Preview)**, and then select **Configure**.  
 
-1. Select **+ Create New Workspace**.  
+1. Select **Create New Workspace**.  
 
-1. Fill in the information according to the subscription, resource group, and location, that you are using to complete this module.  We recommend naming your Log Analytics Workspace `azuresql<unique ID>-la`, using your unique ID for your resources. Select **OK**.  
+1. Enter the information for the subscription, resource group, and location that you're using to complete this module. We recommend that you name your Log Analytics workspace **azuresql\<unique ID>-la**, using your unique ID for your resources. Select **OK**.  
 
     This may take a few moments to validate and create. You should now see your Log Analytics account.  
 
