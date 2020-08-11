@@ -1,15 +1,17 @@
 ### YamlMime:Module
 uid: learn.examine-privacy-compliance-data-protection-standards
 metadata:
-  title: Examine privacy, compliance, and data protection standards
-  description: "Being able to trust in your cloud, trust in your solutions, and being able to use Azure, even when in a government role, are all key factors to picking your cloud provider. AZ-900"
+  description: Learn about Microsoft's commitment to privacy, how Azure adheres to common regulatory and compliance standards, and additional considerations government agencies need to make.
   ms.date: 09/11/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Examine privacy, compliance, and data protection standards
-summary: Being able to trust in your cloud, trust in your solutions, and being able to use Azure, even when in a government role, are all key factors to picking your cloud provider.
+summary: |
+  Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
+
+  If your organization is a government department or agency, or you need to deploy to regions of China, you'll also learn about some additional considerations that you need to make.
 abstract: |
   After completing this module, you'll be able to:
 
