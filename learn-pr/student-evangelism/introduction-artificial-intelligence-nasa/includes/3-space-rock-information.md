@@ -13,7 +13,7 @@ Basalt is a dark rock that comes from ancient volcanic eruptions on the Earth's 
 
 :::image type="content" source="../media/basalt-cristobalite-2.png" alt-text="Photo of two pieces of basalt on a flat surface." loc-scope="Azure":::
 
-Highland rocks are lighter than basalts due to the heavier elements in basalts (e.g., Fe, Mg). But they were made when a large magma ocean, that covered the entire Moon when it was forming, crystallized and because the highland rocks are lighter they floated to the top and became the crust of the Moon.
+Highland rock is lighter than basalt because basalt is made of heavier elements, like iron and magnesium. Highland rock was made when a large magma ocean, which covered the entire Moon as it formed, crystallized. Highland rock is lighter, so it floated to the top of the ocean and became the crust of the Moon.
 
 :::image type="content" source="../media/crustal-anorthosite-1.png" alt-text="Photo of a piece of highland rock on a transparent background." loc-scope="Azure":::
 
