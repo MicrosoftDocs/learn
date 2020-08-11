@@ -1,4 +1,4 @@
-Before we look at what Kubernetes is, let's summarize a few concepts that are key to containerzied workloads.
+Before we look at what Kubernetes is, let's summarize a few concepts that are key to containerized workloads.
 
 ## What is container management?
 
@@ -6,16 +6,16 @@ The drone tracking application consists of multiple microservices, responsible f
 
 :::image type="content" source="../media/2-container.png" alt-text="An image of a server or application that is replicated as containers for cloud deployment." border="false":::
 
-The decoupled design of microservices combined with the atomicity of containers make it possible to scale the application out and responsd to increased demand by deploying more container instances and to scale back in if demand is decreasing.
-In complex sokutions like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
+The decoupled design of microservices combined with the atomicity of containers make it possible to scale out the application and respond to increased demand by deploying more container instances and to scale back in if demand is decreasing.
+In complex solutions like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
 
 You find that at specific times during the day, you need more instances of the site's caching service to keep performance up, so you add more caching service container instances.
 
-Now assume, that you have increased the number of caching instances and need to roll out a new version of the microservice. You'll have to make sure to update **all** the active containers.
+Now assume, that you've increased the number of caching instances and need to roll out a new version of the microservice. You'll have to make sure to update **all** the active containers.
 
 The examples above justify a system to help you with these otherwise manual tasks.
 
-**Container management is the process of organizing, adding, removing, or updating a big numbers of containers**.
+**Container management is the process of organizing, adding, removing, or updating a significant number of containers**.
 
 ## What is container orchestration?
 

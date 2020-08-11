@@ -19,9 +19,9 @@ A pod template is used to deploy pods manually. A manually deployed pod isn't re
 
 ## What is a replication controller?
 
-A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod and ensures that the specified number of pods are always running on one or more nodes in the cluster. A replication controller will replace pods launched in this way with new pods if they fail, are deleted, or are terminated.
+A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod and ensures the specified number of pods are always running on one or more nodes in the cluster. A replication controller will replace pods launched in this way with new pods if they fail, are deleted, or are terminated.
 
-For example, assume that you deploy the drone tracking front-end website and users start accessing the website. If all the pods fail for any reason, the website is unavailable to your users unless you launch new pods. A replication controller helps you make sure that your website is always available.
+For example, assume you deploy the drone tracking front-end website and users start accessing the website. If all the pods fail for any reason, the website is unavailable to your users unless you launch new pods. A replication controller helps you make sure your website is always available.
 
 ## What is a replica set?
 
@@ -43,7 +43,7 @@ What you instead want to do is execute a rolling update, where you launch pods r
 
 :::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods running on a node with two of the same version and three of a later version." border="false":::
 
-Deployments, by default, provide a rolling update strategy for updating pods. You also have the option to use a re-create strategy. This strategy will terminate pods before launching new pods.
+Deployments, by default, provide a rolling update strategy for updating pods. You can also use a re-create strategy. This strategy will terminate pods before launching new pods.
 
 Deployments also provide you with a rollback strategy, which you can execute by using `kubectl`.
 
