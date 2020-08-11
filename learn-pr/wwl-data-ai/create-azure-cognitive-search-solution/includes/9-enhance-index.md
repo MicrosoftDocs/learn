@@ -31,9 +31,8 @@ Often, the same thing can be referred to in multiple ways. For example, someone 
 - UK
 - Great Britain\*
 - GB\*
-- British Isles\*
 
-*\*To be accurate, the UK, Great Britain, and the British Isles are different entities - but they're commonly confused with one another; so it's reasonable to assume that someone searching for "United Kingdom" might be interested in results that reference "Great Britain".*
+*\*To be accurate, the UK and Great Britain are different entities - but they're commonly confused with one another; so it's reasonable to assume that someone searching for "United Kingdom" might be interested in results that reference "Great Britain".*
 
 To help users find the information they need, you can define *synonym maps* that link related terms together. You can then apply those synonym maps to individual fields in an index, so that when a user searches for a particular term, documents with fields that contain the term or any of its synonyms will be included in the results.
 
@@ -55,7 +54,7 @@ Select your preferred language at the top of this page, and then follow the step
     ```
 3. Follow the link for the `https://localhost:5000/` address to open the web site in a new browser tab. Then in the Margie's Travel website, enter **"United Kingdom"** into the search box and click **Search**. Then review the results.
 4. Enter **UK** into the search box and click **Search** and review the results. The results are different, even though a user might commonly use *UK* as an alternative term for *United Kingdom*. To address this issue, you will add a synonym map to your index.
-5. Leaving the Margie's Travel website running, switch to the Codespace tab in your browser and in the **C-Sharp/create-index** folder, open the **Program.cs** file and review the code in the **AddSymonyms** function, which creates a synonym map and applies it to the **content** field of the index.
+5. Leaving the Margie's Travel website running, switch to the Codespace tab in your browser and in the **C-Sharp/create-index** folder, open the **Program.cs** file and review the code in the **AddSynonyms** function, which creates a synonym map and applies it to the **content** field of the index.
 6. In the **Terminal** pane, select the bash terminal for the **C-Sharp/create-index** folder. If you have closed this terminal, right-click (Ctrl+click if using a Mac) the **C-Sharp/create-index** folder and select **Open in Integrated Terminal**.
 7. In the terminal for the **create-index** folder, enter the following command:
     ```bash
@@ -80,7 +79,7 @@ Select your preferred language at the top of this page, and then follow the step
 5. Leaving the Margie's Travel website running, switch to the Codespace tab in your browser and in the **create-index** folder, open the **synonyms.json** file. This file contains a JSON definition for a synonym map that includes alternative terms for the United States, United Kingdom, and United Arab Emirates.
 6. in the **create-index** folder, open the **updated_index.json** file. This file contains a JSON definition for the index in which the synonym map has been added to the **content** field.
 7. In the **Terminal** pane, select the bash terminal for the **Python/create-index** folder. If you have closed this terminal, right-click (CTRL+click if using a Mac) the **Python/create-index** folder and select **Open in Integrated Terminal**.
-8. In the terminal for the **create-index** folder, enter the following command to create the synomym map:
+8. In the terminal for the **create-index** folder, enter the following command to create the synonym map:
     ```bash
     python3 submit-rest.py 'PUT' 'synonymmaps/margies-synonyms-py' 'synonyms.json'
     ```
