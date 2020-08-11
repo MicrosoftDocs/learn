@@ -16,7 +16,7 @@ quiz:
     title: Check your knowledge
     questions:
 
-    - content: "True or false: If you already have Windows Server licenses, you have to pay for them again on Azure."
+    - content: "True or false: If you already have unused Windows Server licenses, you have to pay for them again on Azure."
       choices:
       - content: "True"
         isCorrect: false
