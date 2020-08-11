@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.aspnet-session.2-exercise-deploy-resources
-title: Exercise - Set up application and deploy Azure resources
+title: Exercise - Set up an application and deploy Azure resources
 metadata:
-  title: Exercise - Set up application and deploy Azure resources
-  description: Exercise - Set up application and deploy Azure resources
+  title: Exercise - Set up an application and deploy Azure resources
+  description: Exercise - Set up an application and deploy Azure resources
   ms.date: 06/30/2020
   author: coderandhiker
   ms.author: chrisrt

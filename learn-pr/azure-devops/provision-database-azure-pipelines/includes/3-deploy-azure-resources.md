@@ -268,7 +268,7 @@ For learning purposes, here you generate a random number and assign it to the `U
 
 Here, you generate a random password to use with your SQL database.
 
-There are many ways generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** tool to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
+There are many ways to generate random passwords. The method you choose depends on your workflow and requirements. This method uses the **openssl** tool to generate 32 random bytes and base64 encode the output. Base64 encoding ensures that the result contains only printable characters.
 
 Run the **openssl** tool to generate a random password.
 

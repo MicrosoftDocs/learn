@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check - Use the SQL Server Query Tuning Assistant
   description: Knowledge check - Use the SQL Server Query Tuning Assistant
   ms.date: 01/31/2019
-  author: geoffallix
-  ms.author: v-gea
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 10
@@ -101,14 +101,15 @@ quiz:
     - content: "Depends on the Query Store version"
       isCorrect: false
       explanation: "That's incorrect. You would typically let Query Store run for a day to gather workload information on a database."
-  - content: "For the Query Tuning Assistant to function correctly, you must apply the following steps in the correct order. Select the answer that places those steps in that correct order.
-    A. Leave the compatibility level unchanged (at the previous SQL Server version).
-    B. Migrate the database to SQL Server 2019.
-    C. Make the database live so Query Store can gather baseline metrics on the queries.
-    D. Enable Query Store on the database.
-    E. Use QTA to find regressing queries.
-    F. Continue to use Query Store to gather post-upgrade query performance.
-    G. Upgrade the compatibility level."
+  - content: |
+      For the Query Tuning Assistant to function correctly, you must apply the following steps in the correct order. Select the answer that places those steps in that correct order.
+      A. Leave the compatibility level unchanged (at the previous SQL Server version).
+      B. Migrate the database to SQL Server 2019.
+      C. Make the database live so Query Store can gather baseline metrics on the queries.
+      D. Enable Query Store on the database.
+      E. Use QTA to find regressing queries.
+      F. Continue to use Query Store to gather post-upgrade query performance.
+      G. Upgrade the compatibility level.
     choices:
     - content: "DABCEGF"
       isCorrect: false

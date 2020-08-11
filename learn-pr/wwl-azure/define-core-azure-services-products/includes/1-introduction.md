@@ -10,7 +10,7 @@ This is exactly what we can do in Azure. We can create compute resources, config
 
 ## Learning objectives
 
-In this module, you will:
+In this module, you will: 
 
 - Identify compute options in Azure.
 - Select compute options that are appropriate for your business.
