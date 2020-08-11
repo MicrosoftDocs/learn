@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms.assess-physical-servers-with-azure-migrate
-title: Assess physical servers with Azure Migrate
+title: Assess physical servers with Azure migrate
 metadata:
-  title: Assess physical servers with azure migrate
-  description: "Assess physical servers with azure migrate"
+  title: Assess physical servers with Azure migrate
+  description: "Assess physical servers with Azure migrate"
   ms.date: 08/13/2020
   author: wwlpublish
   ms.author: tonyj
