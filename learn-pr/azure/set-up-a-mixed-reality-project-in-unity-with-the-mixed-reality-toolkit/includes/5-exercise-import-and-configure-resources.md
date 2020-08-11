@@ -1,4 +1,4 @@
-The Mixed Reality Toolkit provides a set of components and features which could be used to accelerate your Windows Mixed Reality app development. To use the toolkit in your mixed reality project, you must import the package and configure the resources added to the project. Here you will import and configure resources to add the Mixed Reality Tookit to your project.
+The Mixed Reality Toolkit provides a set of components and features which could be used to accelerate your Windows Mixed Reality app development. To use the toolkit in your mixed reality project, you must import the package and configure the resources added to the project. Here you'll import and configure resources to add the Mixed Reality Tookit to your project.
 
 ## Import TextMesh Pro Essential Resources
 
