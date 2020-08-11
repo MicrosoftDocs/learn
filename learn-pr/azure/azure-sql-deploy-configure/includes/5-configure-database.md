@@ -24,11 +24,11 @@ In Azure SQL Database specifically, "stale" page detection is enabled and the de
 
 SQL Server Agent provides a configuring and scheduling system for SQL Server users. You can achieve equivalent functionality in Azure SQL through the following options.
 
-### SQL Agent in Managed Instance
+### SQL Agent in SQL Managed Instance
 
 SQL Agent is a fully supported service with Azure SQL Managed Instance. SQL Agent jobs are supported only for T-SQL and SSIS job steps. Command shell steps are not supported. Although alerts are not supported, email notifications are supported through database mail.
 
-### Elastic jobs for Azure SQL Database
+### Elastic jobs for SQL Database
 
 Azure SQL Database does not support SQL Server Agent. However, you can use the Elastic Job Agent service in Azure to create and schedule jobs. Jobs are T-SQL scripts that you can run against many databases, including parallel execution.
 
