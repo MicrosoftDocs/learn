@@ -9,13 +9,16 @@ Have you ever walked along a beach looking for rocks that are pretty or unusual?
 For example, there are common rocks on the Moon, like basalt and highland (original crusts of the Moon) rocks, but then there is a layer of rock and soil, known as the regolith, which has been broken up by impacts. But there is also a kind of a rock known as a breccia which are a combination of these rocks smashed together. So the chemical composition of these rocks may be similar to the original rock types, but they may not be what the astronaut was instructed to get. Furthermore, the photos of rocks that you'll see in this learning path have already been cleaned. The photos were taken in a studio, with good lighting and really close-up. Being able to identify these rocks on the surface of the Moon, in a space suit, without being to touch the rock, and with less than ideal lighting, makes it even more of a challenge.
 
 Here's a photo of basalt rock:  
-:::image type="content" source="../media/basalt-cristobalite-1.png" alt-text="Photo of basalt rock sitting on a flat surface.":::
+
+:::image type="content" source="../media/basalt-cristobalite-1.png" alt-text="Photo of basalt rock sitting on a flat surface." loc-scope="Azure":::
 
 Here's a photo of highland rock:  
-:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="Photo of highland rock sitting next to a ruler on a flat surface.":::
+
+:::image type="content" source="../media/crustal-anorthosite-2.png" alt-text="Photo of highland rock sitting next to a ruler on a flat surface." loc-scope="Azure":::
 
 Here's a photo of an area an astronaut might survey for rocks:
-:::image type="content" source="..\media\MoonSurface.jpg" alt-text="Photo from Apollo mission of Moon Surface.":::
+
+:::image type="content" source="../media/moon-surface.png" alt-text="Photo of the Moon's surface from the Apollo mission, showing a measuring device." loc-scope="Azure":::
 
 ## Being unique isn't always a good thing
 
