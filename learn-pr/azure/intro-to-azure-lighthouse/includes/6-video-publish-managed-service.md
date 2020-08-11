@@ -23,7 +23,7 @@ When defining an Azure Marketplace managed service offer, you'll need to decide 
 
 ## The walkthrough
 
-Since not everyone can access the Cloud Partner Portal, this unit will showcase how to create and publish a service offer to the Azure Marketplace through a video walkthrough.
+Since not everyone can access Partner Center, this unit will showcase how to create and publish a service offer to the Azure Marketplace through a video walkthrough.
 
 This content will look at:
 
