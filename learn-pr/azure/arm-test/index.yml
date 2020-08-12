@@ -1,4 +1,4 @@
-### YamlMime:ModuleUnit
+### YamlMime:Module
 uid: learn.arm-test
 metadata:
   title: Ensure a valid infrastructure before deployment using the Test toolkit.
@@ -11,8 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to
-summary: Learn how to
-abstract: >
+abstract: |
   In this module you will:
 
   - Evaluate the What-if operation so can preview the changes that will happen as you deploy your templates. 
@@ -27,7 +26,7 @@ roles:
   - developer
 products:
   - vs
-prerequisites: >
+prerequisites: |
   - Familiarity with Azure, including the Azure portal, subscriptions, resource
   groups, and resource definitions.
 
