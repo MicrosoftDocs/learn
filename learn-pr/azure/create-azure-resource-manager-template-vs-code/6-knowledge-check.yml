@@ -23,7 +23,7 @@ quiz:
     - content: "A JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your deployment."
       isCorrect: true
       explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
-    - content: "A script held in Azure Resource Manager to manage your Azure Storage account."
+    - content: "A script held in Azure Resource Manager to manage your Azure storage account."
       isCorrect: false
       explanation: "An Azure Resource Manager template is a JSON file that defines the infrastructure and configuration for your deployment. ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it."
   - content: "Which one of these is *not* an element of an Azure Resource Manager template?"
