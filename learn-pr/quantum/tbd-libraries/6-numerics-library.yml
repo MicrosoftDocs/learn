@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.4-tbd
-title: TBD, but maybe another knowledge unit?
+uid: learn.quantum.tbd-libraries.6-tbd
+title: TBD, the world is your oyster! 
 metadata:
-  title: TBD, but maybe another knowledge unit?
+  title: TBD, the world is your oyster! 
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-tbd.md)]
+  [!include[](includes/6-numerics-library.md)]

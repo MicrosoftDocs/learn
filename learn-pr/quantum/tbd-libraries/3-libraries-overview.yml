@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.tbd-libraries.2-tbd
-title: TBD, but likely a knowledge unit
+uid: learn.quantum.tbd-libraries.3-tbd
+title: TBD, but likely an exercise unit
 metadata:
-  title: TBD, but likely a knowledge unit
+  title: TBD, but likely an exercise unit
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-tbd.md)]
+  [!include[](includes/3-libraries-overview.md)]

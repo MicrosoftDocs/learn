@@ -1,6 +1,6 @@
 The Quantum Development Kit includes several libraries which allow you to develop high-level quantum applications in Q# without worrying about the nitty-gritty details of the actual implementation on target machines.
 
-First and foremost, the *Q# standard libraries* (do we include links or no?) comprise much of the core functionality of Q#.
+First and foremost, the *Q# standard libraries* comprise much of the core functionality of Q#.
 Automatically accessible in all Q# projects, the types, operations, and functions defined in them span from the basics of initializing arrays and single qubit operations to high-level quantum subroutines.
 Up to this point in the modules you have already gained some familiarity with them, but know that there is always more to explore.
 
@@ -16,8 +16,8 @@ These consist of:
     (WORDS GO HERE)
 
 - The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer. This includes advanced signed/unsigned integer arithmetic, as well as support for fixed-point representations and polynomial evaluation. 
-    (WORDS GO HERE: oracle evaluation and e.g. cryptography)
-	(ALSO NOTE: the numerics library *is* the Arithmetic namespace?? Need clarification on the relationship)
+    (WORDS GO HERE: e.g. oracle evaluation and cryptography?)
+	(ALSO NOTE: Need clarification on the relationship to th numerics)
 
 
 ## Accessing the libraries 
