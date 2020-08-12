@@ -1,24 +1,22 @@
-In this exercise, you'll upgrade your database to the Business critical tier and explore the offering, including read-replicas and increased performance.
+In this exercise, you'll upgrade your database to the Business critical tier. You'll see how it provides read replicas and increased performance.
 
-The exercise will use the ostress tool you used in the previous exercise create a workload. You'll then initiate a failover using the Azure PowerShell module in the Azure Cloud Shell, and observe the effect it has on the ostress workload.  
+You'll use the OStress tool you used in the previous exercise to create a workload. You'll then initiate a failover by using the Azure PowerShell module in the Azure Cloud Shell. Finally, you'll view the effect the failover has on the OStress workload.  
 
-## Basic high availability (with no configuration!) in Azure SQL - Business critical service tier
+## Basic high availability in the Azure SQL Business critical service tier
 
-In order to complete this exercise, you will complete the following steps:
+In this exercise, you'll complete the following steps:
 
-1. Deploy an identical database with Business critical
-1. Run the ostress workload  
-1. Use PowerShell to initiate a failover  
-1. Observe the results in ostress  
-1. Connect to a readable secondary
+1. Deploy the database from the previous exercise in the Business critical tier.
+1. Run the OStress workload.  
+1. Use PowerShell to initiate a failover.  
+1. View the results in OStress.  
+1. Connect to a readable secondary.
 
-This exercise will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
+## Deploy the same database in the Business critical tier
 
-## Deploy an identical database with Business critical
+In a previous module of this learning path, you learned how to scale a database by using T-SQL. The goal of this exercise is to upgrade the database that you used in the previous exercise from General purpose to Business critical. You'll use Azure CLI commands in the Azure Cloud Shell to upgrade the database. Because there's a limit on the frequency of failovers, you'll use the same sample database but name it AdventureWorks-bc.  
 
-In a previous module of the learning path, you learned how to scale a database using T-SQL. For this exercise, the goal is to upgrade the same database from General purpose to Business critical using the Azure CLI commands in the Azure Cloud Shell. However, since there is a limit between the frequency of failovers, you will deploy the same sample database as Business critical with the name `AdventureWorks-bc`  
-
-1. In the Azure Cloud Shell terminal on the right, run the following PowerShell to configure your environment.  
+1. In the Azure Cloud Shell terminal on the right side of this page, run the following PowerShell script to configure your environment:  
 
     ```powershell
     $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
@@ -29,11 +27,11 @@ In a previous module of the learning path, you learned how to scale a database u
     # Specify your default resource group and Azure SQL Database logical server
     az configure --defaults group=$resourceGroup sql-server=$server
 
-    # Confirm the defaults have been set
+    # Confirm the defaults are set
     az configure --list-defaults
     ```
 
-1. Next, run the following command to create a database on the business critical service tier.  
+1. Run this command to create a database in the Business critical service tier:
 
     ```powershell
     az sql db create --name $database `
@@ -45,34 +43,34 @@ In a previous module of the learning path, you learned how to scale a database u
     --zone-redundant false
     ```
 
-    This will take a few moments to complete, but while it's running to can review some of the parameters used:
+    It will take some time for this command to finish. While it's running, you can review some of the parameters used:
 
-    * `family`: This term specifies the hardware generation. To be consistent with the previous exercise, `Gen5` is used.
-    * `capacity`: This term is used to specify the number of DTUs or vCores. To be consistent with the previous exercise, `2` vCores are used.
-    * `sample-name`: To be consistent with the previous exercise, the `AdventureWorksLT` database sample used.
-    * `edition`: This term is a bit misleading, because it is really referring to the service tier, which is not the same as what edition means in the SQL Server box product.  
-    * `read-scale`: This is not enabled by default, but there is no additional cost associated with it. By enabling it, you're enabling one of your secondary replicas to be used as a readable secondary.  
-    * `zone-redundant`: By default, this is set to false, but you can set it to true if you want a "multi-az" deployment, with no additional cost. You'll learn more about availability zones in the next unit.
+    * `family`: This parameter specifies the generation of the hardware. To be consistent with the previous exercise, we used `Gen5`.
+    * `capacity`: This parameter specifies the number of DTUs or vCores. To be consistent with the previous exercise, we used `2` vCores.
+    * `sample-name`: To be consistent with the previous exercise, we used the `AdventureWorksLT` database sample.
+    * `edition`: This parameter name is a bit misleading. It really refers to the service tier, which isn't the same the edition that's used in SQL Server.  
+    * `read-scale`: This option isn't enabled by default, but there's no additional cost associated with it. By enabling it, you're enabling one of your secondary replicas to be used as a readable secondary.  
+    * `zone-redundant`: By default, this parameter is set to false. You can set it to true if you want a "Multi-Az" deployment at no additional cost. You'll learn more about Availability Zones in the next unit.
 
-    > [!NOTE]
-    > This is only available in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true) and is not yet available in Azure SQL managed instance.  
+      > [!NOTE]
+      > Availability Zones are available only in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true). They're not currently available in Azure SQL Managed Instance.  
 
-1. After the database is created, you should see detailed information about the updates in the Azure Cloud Shell output under two main categories (though you'll also see indicators under several other properties):  
-    * `currentServiceObjectiveName`: should be `BC_Gen5_2` where `BC` stands for Business critical  
+1. After the database is created, you should see detailed information about the updates in the Azure Cloud Shell output. You'll see two main categories (though you'll also see indicators under several other properties):  
+    * `currentServiceObjectiveName`: Should be `BC_Gen5_2`. `BC` stands for Business critical.  
     * `currentSku`:  
-        * `name`: should be `BC_Gen5`
-        * `tier`: should be `BusinessCritical`  
+        * `name`: Should be `BC_Gen5`.
+        * `tier`: Should be `BusinessCritical`.  
 
-1. Another way to check the service tier is to navigate to your database in the Azure portal and review the **Overview** tab, locating the **Pricing tier**.  
+1. Another way to check the service tier is to go to your database in the Azure portal. On the **Overview** tab, see the **Pricing tier**.  
 
     > [!TIP]
-    > There are many other ways to check this, but another way is through SSMS. If you right-click on your database and select **Properties** > **Configure SLO**, you can also view the changes.  
+    > There are many other ways to view these updates. One other way is by using SSMS. If you right-click your database and select **Properties** > **Configure SLO**, you can view the changes.  
 
-## Run the ostress workload
+## Run the OStress workload
 
-Just like in the previous exercise, you will leverage `ostress` to repeatedly query your Azure SQL Database.
+As in the previous exercise, you'll use OStress to repeatedly query your Azure SQL database.
 
-1. Open a new Command Prompt window on your local machine. Use `cd` to change directories to where the availability module is in the repository you cloned or downloaded earlier. For example, you might use
+1. Open a new Command Prompt window on your local computer. Use `cd` to change directories to where the availability module is in the repository you cloned or downloaded earlier. For example, you might use
 
     ```cmd
     cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability

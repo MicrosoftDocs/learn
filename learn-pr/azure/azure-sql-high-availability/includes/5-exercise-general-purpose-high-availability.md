@@ -1,6 +1,6 @@
 You've learned about the high-availability architecture of Azure SQL. In this exercise, you'll see how the General purpose tier of Azure SQL Database behaves similarly to a failover cluster instance on-premises. This functionality can be time consuming or tricky to set up on-premises, but you get it out of the box with Azure SQL.
 
-In this exercise, you'll use the OStress tool that you might have used in the previous module to create a workload. You'll then initiate a failover by using the Azure PowerShell module in the Azure Cloud Shell and observe the effect it has on the OStress workload.  
+In this exercise, you'll use the OStress tool that you might have used in the previous module to create a workload. You'll then initiate a failover by using the Azure PowerShell module in the Azure Cloud Shell. Finally, you'll view the effect the failover has on the OStress workload.  
 
 ## Basic high availability in the Azure SQL General purpose service tier
 
@@ -9,7 +9,7 @@ In this exercise, you'll complete the following steps:
 1. Run the OStress workload.  
 1. Confirm that the environment is properly configured.
 1. Use PowerShell to initiate a failover of Azure SQL Database.  
-1. Observe the results in OStress.  
+1. View the results in OStress.  
 1. Look for signs in the portal that a failover occurred.  
 
 ### Run the OStress workload
@@ -38,7 +38,7 @@ The first step is to create a long-running workload. This workload will allow yo
 
 ### Use PowerShell in the Azure Cloud Shell to initiate a failover and observe the results
 
-1. In the Azure Cloud Shell terminal (on the right side of this page), run this PowerShell script to configure your environment:  
+1. In the Azure Cloud Shell terminal on the right side of this page, run this PowerShell script to configure your environment:  
 
     ```powershell
     $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
@@ -49,38 +49,40 @@ The first step is to create a long-running workload. This workload will allow yo
     # Specify your default resource group and Azure SQL Database logical server
     az configure --defaults group=$resourceGroup sql-server=$server
 
-    # Confirm the defaults have been set
+    # Confirm the defaults are set
     az configure --list-defaults
     ```
 
-1. Configure your windows so that you can see this browser and the Command Prompt in one view.  
+1. Configure your windows so that you can see this browser and the Command Prompt window in one view.  
 
-1. Run the following code in the Azure Cloud Shell terminal.
+1. Run this code in the Azure Cloud Shell terminal:
 
     ```powershell
-    # create a failover
+    # Create a failover
     Invoke-AzSqlDatabaseFailover -ResourceGroupName $resourceGroup `
         -ServerName $server `
         -DatabaseName $database
     ```
 
-1. Now observe the results in ostress from Command Prompt. While this command is running, you should observe any changes that appear in the Command Prompt. You'll notice that while the failover occurs, for some time you cannot access the database. After approximately 30 seconds, the failover completes, and you can see the workload runs successfully again. The importance of retry logic in your application is very important, because if Azure decides to fail you over (for a number of reasons), you don't want your application to crash or become down for any longer than it takes for the failover to occur.  
+1. Observe the results in OStress from the Command Prompt window. While this command is running, you should observe any changes that appear in the Command Prompt window. You'll notice that you can't access the database while the failover occurs. The failover will finish after about 30 seconds, and you'll see that the workload runs successfully again. The retry logic in your application is important because if Azure fails over (for a number of reasons), you don't want the application to fail or experience downtime for longer than it takes for the failover to occur.  
 
-1. This ability to create a failover on command can be useful in certain scenarios. It's important to note that the service does throttle you from doing this too often. Run the following command to attempt another failover.  
+1. This ability to create a failover on command can be useful in certain scenarios. Note that the service throttles you from doing so too often. Run the following command to try another failover:
 
     ```powershell
-    # create a failover again
+    # Create a failover again
     Invoke-AzSqlDatabaseFailover -ResourceGroupName $resourceGroup `
         -ServerName $server `
         -DatabaseName $database
     ```
 
-    You will see an error similar to `Invoke-AzSqlDatabaseFailover: Long running operation failed with status 'Failed'. Additional Info:'There was a recent failover on the database or pool if database belongs in an elastic pool.  At least 30 minutes must pass between database failovers.'`.
+    You'll see an error similar to this one: 
 
-1. You can now stop the workload in Command Prompt by clicking on the window and selecting `CTRL+C`. You can leave this window open, as you will use this same workload in the next exercise.
+    `Invoke-AzSqlDatabaseFailover: Long running operation failed with status 'Failed'. Additional Info:'There was a recent failover on the database or pool if database belongs in an elastic pool.  At least 30 minutes must pass between database failovers.'`
 
-1. You might be wondering if there's a way to check if potentially a failover occurred. There is no clear "Failover occurred" message that exists today, however, checking the Resource Health can be a good indicator.  
+1. You can now stop the workload in the Command Prompt window by selecting the window and then selecting **Ctrl+C**. You can leave the window open because you'll use the same workload in the next exercise.
 
-    In the Azure portal, navigate to your Azure SQL Database, and in the left-hand menu, under "Support + troubleshooting", select **Resource Health**. Some time after a failover (can be 5-15 minutes), you may see a health event similar to below. This can indicate several things, but one is that something has happened and Azure has decided to failover.
+   You might wonder if there's a way to check whether a failover occurred. There's currently no clear "Failover occurred" message, but the Resource Health can be a good indicator.  
 
-    :::image type="content" source="../media/5-health-history-inline.png" alt-text="Screenshot of the health history details." lightbox="../media/5-health-history-expanded.png":::
+1. In the Azure portal, go to your Azure SQL database. In the left pane, under **Support + troubleshooting**, select **Resource Health**. Between 5 and 15 minutes after a failover, you might see a health event similar the one shown in the following screenshot. This event can indicate several things, but one possibility is that something has happened and Azure has failed over.
+
+    :::image type="content" source="../media/5-health-history-inline.png" alt-text="Screenshot that shows a health event in the Azure portal." lightbox="../media/5-health-history-expanded.png":::
