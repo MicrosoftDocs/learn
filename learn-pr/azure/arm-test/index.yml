@@ -1,0 +1,49 @@
+uid: learn.arm-test
+metadata:
+  title: Ensure a valid infrastructure before deployment using the Test toolkit.
+  description: Leverage the Test toolkit and apply it on your Azure Resource
+    Manager templates to ensure the templates follow best practices before
+    deployment.
+  ms.date: 06/04/2020
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to
+summary: Learn how to
+abstract: >
+  In this module you will:
+
+  - Evaluate the What-if operation so can preview the changes that will happen as you deploy your templates. 
+
+  - Use the ARM Template Test Toolkit to check templates for standards 
+
+  - Create a custom test for an ARM Template 
+iconUrl: /learn/achievements/undefined.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  - vs
+prerequisites: >
+  - Familiarity with Azure, including the Azure portal, subscriptions, resource
+  groups, and resource definitions.
+
+  - An Azure account. You can get a free account [here](https://azure.microsoft.com/free?azure-portal=true).
+
+  - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
+
+  - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true) extension installed locally.
+units:
+  - learn.arm-test.1-introduction
+  - learn.arm-test.2-what-if
+  - learn.arm-test.3-exercise-what-if
+  - learn.arm-test.4-test-toolkit
+  - learn.arm-test.5-exercise-test-toolkit
+  - learn.arm-test.6-custom-tests
+  - learn.arm-test.7-exercise-custom-tests
+  - learn.arm-test.8-knowledge-check
+  - learn.arm-test.9-summary
+badge:
+  uid: learn.arm-test.badge
