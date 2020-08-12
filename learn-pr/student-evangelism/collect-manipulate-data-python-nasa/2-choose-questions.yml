@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.collect-manipulate-data-python-nasa.2-choose-questions
+metadata:
+  title: Determine the rocket launch questions to ask
+  description: Find out how to analyze data about weather to predict if a rocket will launch
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Determine the rocket launch questions to ask
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-choose-questions.md)]
