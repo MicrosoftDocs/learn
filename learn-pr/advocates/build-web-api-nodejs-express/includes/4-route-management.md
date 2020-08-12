@@ -2,12 +2,12 @@ An application has different resources like products or orders. Divide your appl
 
 An easy way to extend a web application is to make sure that different resources are accessible through dedicated URLs. Two different URLs trigger two different parts of code in your web application.  
 
-It's important to understand what a URL is, as well as, other concepts used to build an API:
+It's important to understand what a URL is, as well as other concepts used to build an API:
 
 - **URL**: A URL is an address that a user would enter into a into a client, like a browser, to locate your specific server and a specific resource.
 - **Routes**: A route is a subsection of a URL that usually points to a specific resource. Other concepts for routes help the user be more intentional:
   - **Route parameters**: A route parameter identifies a specific resource item from a collection, for instance, **/products/123**.
-  - **Query parameters**: Query parameters are located at the very end of the URL and filter down the size of the response. For instance **/products?sort=desc**
+  - **Query parameters**: Query parameters are located at the very end of the URL and filter down the size of the response. For instance, **/products?sort=desc**.
   - **HTTP verbs**: HTTP verbs express the *what*. By using the verb *get* the user says they want to read data from the resource. The verb *post* means that they want to write data toward the resource.
 
 ## URL
@@ -28,7 +28,7 @@ Let's explain the parts:
 
 - **Scheme**: This part indicates the protocol used. In this case, the scheme is **http**. Other examples of schemes are **https**, **ftp**, **irc**, and **file**.
 - **Authority**: The authority consists of two parts:
-  - **User info**: It consists of an optional **username@password** part and also a **host** part. In the example, **localhost** is the host part. The **localhost** points to your own machine as the web server. On the web, the **host** part is usually a domain name like **google** or **microsoft**.
+  - **User info**: It consists of an optional username@password part and also a **host** part. In the example, **localhost** is the host part. The **localhost** points to your own machine as the web server. On the web, the **host** part is usually a domain name like **google** or **microsoft**.
   - **Host**:  The host is a friendly name that you specify instead of an IP address. The IP address is the actual web address. It's a series of numbers, such as **127.0.0.1**. An IP address makes it easy for routers to *route* requests from one part of the web to another. However, they're not human friendly. Hosts and domain names exist so that we can remember them.
 - **Path**: The path portion of the URL consists of 0 to many segments. Each segment is separated by a **/**. In the example, the only segment is **/products**. A segment filters down the exact resources you're interested in.
 - **Query**: The query portion is an optional part of the URL that is defined after the **?** character. It consists of a number of query parameter-value pairs delimited by either **&** or **;**. It filters down data further by asking for a number of records from a specific page. The query in the example is **?page=1&pageSize=20**. Imagine you have two million records on this resource. It would take a long time to return all those records. If you specify that you want 20 records, the data returns quickly and is small in size.
