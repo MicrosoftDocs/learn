@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github.2-what-is-github
+title: What is GitHub?
+metadata:
+  title: What is GitHub?
+  description: Learn to use key GitHub features, including issues, notifications, branches, commits, and pull requests.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-what-is-github.md)]

@@ -14,7 +14,7 @@ In a second step, we'll code and execute a program to simulate data coming from 
     > In order to paste code and commands in the Azure Shell terminal, you need to right click and select "Paste"
 
     ```Azure CLI
-    az extension add --name azure-cli-iot-ext
+    az extension add --name azure-iot
 
     ```
 

@@ -21,7 +21,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 
     Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
 
-4. The inference pipeline assumes that new data will match the schema of the original training data, so the **iris** dataset from the training pipeline is included. However, this input data includes a column for the iris species, which the model does not use. Delete both the **iris** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which includes feature values for three new iris observations:
+4. The inference pipeline assumes that new data will match the schema of the original training data, so the **iris** dataset from the training pipeline is included. However, this input data includes a column for the iris species, which the model does not use. Delete both the **iris** dataset and the **Select Columns in Dataset** modules, and replace them with an **Enter Data Manually** module from the **Data Input and Output** section of the **Modules** tab. Then modify the settings of the **Enter Data Manually** module to use the following CSV input, which includes feature values for three new iris observations:
 
     ```CSV
     Column1,Column2,Column3,Column4
@@ -38,6 +38,10 @@ After creating and running a pipeline to train the clustering model, you can cre
 > ![Inference pipeline for clustering](../media/inference-clusters.png)
 
 8. Submit the pipeline as a new experiment named **predict-iris-cluster** on your compute cluster. This may take a while!
+
+    > [!NOTE]
+    > If an **invalid dataset(s)** error is displayed, refresh the browser page and resubmit the experiment.
+
 9. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three iris observations in the input data.
 
 Your inference pipeline assigns iris observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.

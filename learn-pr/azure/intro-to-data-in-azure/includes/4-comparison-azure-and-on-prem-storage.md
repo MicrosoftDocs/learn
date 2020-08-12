@@ -4,7 +4,7 @@ The term "on-premises" refers to the storage and maintenance of data on local ha
 
 :::row:::
   :::column:::
-    ![Paper bill and a cloud representing cost effectiveness](../media/4-cost-effectiveness.png)
+    :::image type="icon" source="../media/4-cost-effectiveness.png" border="false":::
   :::column-end:::
   :::column span="3":::
 
@@ -18,7 +18,7 @@ Azure data storage provides a pay-as-you-go pricing model, which is often appeal
 :::row-end:::
 :::row:::
   :::column:::
-    ![A certificate representing reliability](../media/4-reliability.png)
+    :::image type="icon" source="../media/4-reliability.png" border="false":::
   :::column-end:::
   :::column span="3":::
 
@@ -32,7 +32,7 @@ Azure data storage provides data backup, load balancing, disaster recovery, and 
 :::row-end:::
 :::row:::
   :::column:::
-    ![A uniquely shaped building representing different storage types](../media/4-storage-types.png)
+    :::image type="icon" source="../media/4-storage-types.png" border="false":::
   :::column-end:::
   :::column span="3":::
 
@@ -46,7 +46,7 @@ Azure data storage provides a variety of different storage options including dis
 :::row-end:::
 :::row:::
   :::column:::
-    ![A sports playbook representing agility](../media/4-agility.png)
+    :::image type="icon" source="../media/4-agility.png" border="false":::
   :::column-end:::
   :::column span="3":::
 

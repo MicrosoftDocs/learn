@@ -1,6 +1,7 @@
-Ever worder what is cloud computing? Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale. You typically pay only for cloud services you use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change.
+Ever wonder, "what is cloud computing?" Cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”) to offer faster innovation, flexible resources, and economies of scale. You typically pay only for cloud services you use, helping you lower your operating costs, run your infrastructure more efficiently, and scale as your business needs change.
 
 ## Why Azure
+
 With help from Azure, you have everything you need to build your next great solution. You can easily **Invent with purpose**.
 
 | Azure Benefits | |
@@ -15,7 +16,8 @@ With help from Azure, you have everything you need to build your next great solu
 How do you get ready to Invent with purpose?  Just follow the Azure Fundamentals path.
 
 ## Azure Fundamentals (AZ-900)
-The  [AZ-900, Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true), certification exam is designed for candidates looking to demonstrate foundational level knowledge of cloud services and how those services are provided with Microsoft Azure. The exam is intended for candidates with non-technical backgrounds, such as candidates involved in selling or purchasing cloud-based solutions and services. It is also designed for candidates have some involvement with cloud-based solutions and services, as well as candidates with a technical background who have a need to validate their foundational level knowledge around cloud services. Technical IT experience is not required however some general IT knowledge or experience would be beneficial.
+
+The  [AZ-900, Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900?azure-portal=true), certification exam is designed for candidates looking to demonstrate foundational level knowledge of cloud services and how those services are provided with Microsoft Azure. The exam is intended for candidates with non-technical backgrounds, such as candidates involved in selling or purchasing cloud-based solutions and services. It is also designed for candidates who have some involvement with cloud-based solutions and services, as well as candidates with a technical background who have a need to validate their foundational level knowledge around cloud services. Technical IT experience is not required however some general IT knowledge or experience would be beneficial.
 
 This exam can be taken as an optional first step in learning concepts about cloud services and how those concepts are exemplified by Microsoft Azure. It can be taken as a precursor to Microsoft Azure or Microsoft cloud services exams. While it would be a beneficial first step in validating foundational level knowledge, taking this exam is not a pre-requisite for taking any other Azure-based certifications. 
 

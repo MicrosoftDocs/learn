@@ -1,4 +1,4 @@
-Calculating a regression line for a simple binomial (two-variable) function from first principles is possible, but involves some mathematical effort. When you consider a real-world dataset in which ***x*** is not a single feature value such as temperature, but a vector of multiple variables such as temperature, day of week, month, rainfall, and so on; and the calculations become more complex.
+Calculating a regression line for a simple binomial (two-variable) function from first principles is possible, but involves some mathematical effort. When you consider a real-world dataset in which ***x*** is not a single feature value such as temperature, but a vector of multiple variables such as temperature, day of week, month, rainfall, and so on; the calculations become more complex.
 
 For this reason, data scientists generally use specialized machine learning frameworks to perform model training and evaluation. Such frameworks encapsulate common algorithms and provide useful functions for preparing data, fitting data to a model, and calculating model evaluation metrics.
 
@@ -22,11 +22,11 @@ If you have not already created a Codespace based on the **MicrosoftDocs/ml-basi
 3. Wait for the Codespace to be created. This will take around 3 minutes. You'll see the following things happen:
     - A script will initialize and configure your Codespace.
     - A list of notebook (.ipynb) files will appear in the pane on the left.
-4. After preparation is complete, you can close the **Welcome** and **Creation Log** panes. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**. A light color theme may make it easier to read the Python code in the notebooks.
+4. After preparation is complete, you can close the **Welcome** pane, and any others that have opened during setup. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**. A light color theme may make it easier to read the Python code in the notebooks.
 
-After you've created the environment, open the **Regression.ipynb** notebook and follow the instructions it contains.
+After you've created the environment, open the **Regression.ipynb** notebook and follow the instructions it contains. If a page welcoming you to the Python extension is displayed, close it.
 
 > [!NOTE]
 > We highly recommend using a Visual Studio Codespace hosted in Azure for this exercise - this setup ensures the correct version of Python and the various packages you will need are installed. If you prefer to complete the exercise using your own computer, and you have experience configuring Python development environments, you can find details for configuring a local development environment at [Running the labs on your own computer](https://github.com/MicrosoftDocs/ml-basics/blob/master/local-setup.md?azure-portal=true).
 
-When you've finished working through the notebook, return to this module and more to the next unit to check your knowledge.
+When you've finished working through the notebook, return to this module and move on to the next unit to check your knowledge.

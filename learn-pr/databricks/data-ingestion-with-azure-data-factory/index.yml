@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
 title: Data ingestion with Azure data factory
 summary: In this module, you use Azure Databricks to work with multiple data sources. Learn how to combine inputs from files and data stores, such as Azure SQL Database, and transform and store that data for advanced analytics.
-cardDescription: Learn how to read and write data by using Azure Databricks and multiple data sources and destinations.
 abstract:  | 
   In this module, you'll:
   - Use Azure Databricks to work with multiple data sources.

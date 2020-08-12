@@ -61,7 +61,7 @@ From the Azure DevOps Demo Generator site, follow these steps to run the templat
 
 ## Move the work item to Doing
 
-Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would assign work items at the start of each *sprint*, or work iteration.
+Here you assign a work item to yourself on Azure Boards. You also move the work item to the **Doing** state. In practice, you and your team would create work items at the start of each *sprint*, or work iteration.
 
 This work assignment gives you a checklist to work from. It gives other team members visibility into what you're working on and how much work is left. The work item also helps enforce work-in-progress (WIP) limits so that the team doesn't take on too much work at one time.
 
@@ -88,8 +88,6 @@ To set up the work item:
     ![Azure Boards showing the card in the Doing column](../media/3-azure-boards-wi1-doing.png)
 
 At the end of this module, you'll move the card to the **Done** column after you complete the task.
-
-[!include[](../../shared/includes/enable-multi-stage-pipelines.md)]
 
 [!include[](../../shared/includes/deploy-local-setup.md)]
 

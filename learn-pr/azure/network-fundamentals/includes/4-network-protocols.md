@@ -82,7 +82,7 @@ To implement a secure network, you must match the right security protocols for y
 
 ## Network management protocols
 
-In your network, it's perfectly acceptable to have multiple different protocols running concurrently. Previously, we discussed communications and network protocols. Equally important to the successful day-to-day running and operating of a network are the management protocols. The focus of this type of protocol is the sustainability of the network by looking at faults and performance.
+In your network, it's perfectly acceptable to have multiple different protocols running concurrently. Previously, we discussed communications and security protocols. Equally important to the successful day-to-day running and operating of a network are the management protocols. The focus of this type of protocol is the sustainability of the network by looking at faults and performance.
 
 Network administrators need to monitor their networks and any devices attached to them. Each device in your network exposes some indicators about the state and health of the device. These indicators are requested by the network administrator tool and can be used for monitoring and reporting.
 

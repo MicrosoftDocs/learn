@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/20/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -16,9 +16,9 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following defines performance targets, like uptime, for an Azure product or service?"
+  - content: "Which of the following answers define performance targets, like uptime, for an Azure product or service?"
     choices:
-    - content: "Service Level Agreements"
+    - content: "Service-Level Agreements"
       isCorrect: true
       explanation: "That's correct. The SLA defines performance targets for an Azure product or service."
     - content: "Support Plans"
@@ -34,7 +34,7 @@ quiz:
       explanation: "That's incorrect.  You need to multiply the values."
     - content: "Multiplying the SLAs percentages together"
       isCorrect: true
-      explanation: "That's correct. To determine a composite SLA you multiply the individual SLAs together."
+      explanation: "That's correct. To determine a composite SLA, you multiply the individual SLAs together."
     - content: "Taking the lowest SLA percentage"
       isCorrect: false
       explanation: "That's incorrect.  You need to multiply the different SLA values together."
@@ -53,21 +53,21 @@ quiz:
     choices:
     - content: "Geography distribution"
       isCorrect: false
-      explanation: "That's incorrect.  This helps make sure that your app stays up even if a failure in a datacenter occurs."
+      explanation: "That's incorrect. Geography distribution helps make sure that your app stays up even if a failure in a datacenter occurs."
     - content: "Service-Level Agreements (SLAs)"
       isCorrect: false
-      explanation: "That's incorrect.  This is a process to ensure how much up time is guaranteed for your app once deployed."
+      explanation: "That's incorrect. Service-Level Agreements ensure how much up time is guaranteed for your app once deployed."
     - content: "Availability Zones"
       isCorrect: true
       explanation: "That's Correct. Availability Zones are datacenters set up to be an isolation boundary from others in the region, with their own power, cooling, and networking. If one zone in a region goes down, other Availability Zones in the region continue to work."
   - content: "Application availability refers to what?"
     choices:
-    - content: "The service level agreement of the associated resource."
+    - content: "The Service-Level Agreement of the associated resource."
       isCorrect: false
-      explanation: "That's incorrect.  This is your estimate of how much up time your application will have based on the services it is running on."
+      explanation: "That's incorrect.  Service-Level Agreement is your estimate of how much up time your application will have based on the services it is running on."
     - content: "Application support for an availability zone."
       isCorrect: false
-      explanation: "That's incorrect.  This is how you would get support for your application if it goes down for some reason."
+      explanation: "That's incorrect. Application support for an availability zone is how you would get support for your application if it goes down for some reason."
     - content: "The overall time that a system is functional and working."
       isCorrect: true
       explanation: "That's Correct. The time that a system is working is referred to as the application availability."

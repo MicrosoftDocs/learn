@@ -1,6 +1,6 @@
 ## Availability sets
 
-**Availability sets** are a way for you to ensure your application remains online if a high-impact maintenance event is required, or a hardware a failure occurs. 
+**Availability sets** are a way for you to ensure your application remains online if a high-impact maintenance event is required, or if a hardware failure occurs. 
 
 Availability sets are made up of **Update domains (UD)** and **Fault domains (FD)**.
 

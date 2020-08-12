@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-service-level-agreements
 metadata:
   title: Explore Azure service level agreements (SLAs)
   description: "You are placing an application into a cloud-providers hardware versus on-premises. How reliable will your solution be? AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
    - Review how you can calculate your SLA based on components you choose.
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/explore-azure-service-level-agreements.svg
 hidden: true
 levels:
 - beginner

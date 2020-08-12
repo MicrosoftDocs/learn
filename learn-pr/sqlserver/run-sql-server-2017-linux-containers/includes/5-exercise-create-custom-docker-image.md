@@ -37,7 +37,7 @@ You'll use a Dockerfile to copy a backup of the database into the new container.
     CMD ["/opt/mssql/bin/sqlservr"]
     ```
 
-1. Press Escape, and then press ALT-X. When asked if you want to save changes, press **y**, and then press Enter.
+1. Press <kbd>Escape</kbd>, and then press <kbd>CTRL</kbd>-<kbd>X</kbd>. When asked if you want to save changes, press **y**, and then press Enter.
 1. To check the contents of the **Dockerfile**, type the following command, and then press Enter:
 
     ```bash

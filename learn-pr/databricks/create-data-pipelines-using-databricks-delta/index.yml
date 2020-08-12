@@ -11,7 +11,6 @@ metadata:
   ms.prod: learning-azure
 title: Create data pipelines by using Databricks Delta
 summary: Learn how to use Databricks Delta in Azure to manage the flow of data (a data pipeline) to and from a data lake. This system includes mechanisms to create, append, and upsert data to Apache Spark tables, taking advantage of built-in reliability and optimizations. Learn how Databricks Delta architecture helps speed up reads, and how it lets multiple writers modify a dataset simultaneously and see consistent views. Finally, implement a Lambda Architecture by processing batch and streaming data with Delta.
-cardDescription: Learn how to manage the flow of data to and from a data lake by using Databricks Delta.
 abstract:  | 
   In this module, you will:
   - Use Databricks Delta to create, append, and upsert tables.

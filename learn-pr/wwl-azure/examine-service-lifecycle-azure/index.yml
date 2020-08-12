@@ -3,7 +3,7 @@ uid: learn.wwl.examine-service-lifecycle-azure
 metadata:
   title: Examine service lifecycle in Azure
   description: "Everyone wants to use the next great feature in their solutions before their competitors; explore how to see what is coming next. AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 08/06/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
    - Preview a few of the upcoming features.
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/examine-service-lifecycle-azure.svg
 hidden: true
 levels:
 - beginner

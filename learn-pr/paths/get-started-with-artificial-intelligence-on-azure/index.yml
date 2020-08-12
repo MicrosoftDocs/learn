@@ -3,10 +3,10 @@ uid: learn.wwl.get-started-with-artificial-intelligence-on-azure
 metadata:
   title: Get started with artificial intelligence on Azure
   description: Artificial Intelligence (AI) empowers amazing new solutions and experiences; and Microsoft Azure provides easy to use services to help you get started.
-  ms.date: 06/14/2020
+  ms.date: 07/17/2020
   author: wwlpublish
   ms.author: gmalc
-  ms.topic: learning-azure
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Get started with artificial intelligence on Azure
 prerequisites: |
@@ -24,7 +24,7 @@ roles:
 products:
 - azure-bot-service
 - azure-cognitive-services
-- azure-machine-learning-service
+- azure-machine-learning
 modules:
 - learn.wwl.get-started-ai-fundamentals
 trophy:

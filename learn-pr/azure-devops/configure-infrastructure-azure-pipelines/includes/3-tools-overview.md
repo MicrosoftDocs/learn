@@ -150,7 +150,7 @@ az vm extension set \
   --vm-name my-vm \
   --name customScript \
   --publisher Microsoft.Azure.Extensions \
-  --version 2.0 \
+  --version 2.1 \
   --settings '{"fileUris":["https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh"]}' \
   --protected-settings '{"commandToExecute": "./configure-nginx.sh"}'
 ```

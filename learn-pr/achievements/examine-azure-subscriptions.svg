@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Review Microsoft Azure pricing and support/azure-subscriptions</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <rect id="path-6" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-7"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#71BDF9" offset="0%"></stop>
+            <stop stop-color="#C8EEFF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-10" x="0.0736704446" y="0" width="36" height="26" rx="2"></rect>
+        <filter x="-19.4%" y="-19.2%" width="138.9%" height="153.8%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-12">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#E1F9F6" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-13" x="0.702702703" y="0" width="44" height="31" rx="2"></rect>
+        <filter x="-15.9%" y="-16.1%" width="131.8%" height="145.2%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-15">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-16" x="0.914893617" y="0" width="52" height="37" rx="2"></rect>
+        <filter x="-13.5%" y="-13.5%" width="126.9%" height="137.8%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-50.0%" y="-56.5%" width="204.2%" height="213.0%" filterUnits="objectBoundingBox" id="filter-18">
+            <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-19" points="0 0.154875 3.73973333 0.154875 3.73973333 2.837625 0 2.837625"></polygon>
+        <rect x="20" y="22" width="13" height="10" id="rect-21"></rect>
+        <filter x="-61.5%" y="-50.0%" width="207.7%" height="240.0%" filterUnits="objectBoundingBox" id="filter-22">
+            <feOffset dx="-1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Review-Microsoft-Azure-pricing-and-support" transform="translate(-159.000000, -509.000000)">
+            <g id="Review-Microsoft-Azure-pricing-and-support/azure-subscriptions" transform="translate(160.000000, 510.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                            <g id="Rectangle-Copy">
+                                <use fill="#0078D4" xlink:href="#path-6"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-7"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-8)" fill="#27C0F5">
+                            <g transform="translate(-1.886792, -1.886792)" id="Rectangle">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-8" transform="translate(23.000000, 25.000000)">
+                    <g id="Credit-Card" transform="translate(8.926330, 0.000000)">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-11)" xlink:href="#path-10"></use>
+                            <use fill="url(#linearGradient-9)" fill-rule="evenodd" xlink:href="#path-10"></use>
+                        </g>
+                    </g>
+                    <g id="Credit-Card" transform="translate(4.297297, 4.000000)">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-14)" xlink:href="#path-13"></use>
+                            <use fill="url(#linearGradient-12)" fill-rule="evenodd" xlink:href="#path-13"></use>
+                        </g>
+                    </g>
+                    <g id="Credit-Card" transform="translate(0.000000, 9.000000)">
+                        <g id="Rectangle">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-17)" xlink:href="#path-16"></use>
+                            <use fill="url(#linearGradient-15)" fill-rule="evenodd" xlink:href="#path-16"></use>
+                        </g>
+                    </g>
+                    <g id="Group-6" filter="url(#filter-18)" transform="translate(14.000000, 17.000000)">
+                        <g id="Group-3">
+                            <path d="M1.48374194,8.18874194 C2.90603226,3.45148387 7.29977419,0 12.5,0 C18.8509677,0 24,5.14829032 24,11.5 C24,17.8509677 18.8509677,23 12.5,23 C6.14829032,23 1,17.8509677 1,11.5" id="Stroke-1" stroke="#0070DD" stroke-width="2"></path>
+                            <polygon id="Rectangle" fill="#0073DA" transform="translate(2.500000, 6.500000) rotate(-90.000000) translate(-2.500000, -6.500000) " points="0 4 5 4 0 9"></polygon>
+                        </g>
+                        <g id="Group-5" transform="translate(0.000000, 7.000000)">
+                            <mask id="mask-20" fill="white">
+                                <use xlink:href="#path-19"></use>
+                            </mask>
+                            <g id="Clip-4"></g>
+                        </g>
+                    </g>
+                    <g id="microsoft-azure-logo-png-7">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-22)" xlink:href="#rect-21"></use>
+                        <image x="20" y="22" width="13" height="10" xlink:href="data:image/png;base64,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"></image>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -3,7 +3,7 @@ Evaluating a clustering model is made difficult by the fact that there are no pr
 ## Add an Evaluate Model module
 
 1. Open the **Iris Training** pipeline you created in the previous unit if it's not already open.
-2. In the pane on the left, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Assign Data to Clusters** module, and connect the output of the **Assign Data to Clusters** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
+2. In the pane on the left, on the **Modules** tab, in the **Model Scoring & Evaluation** section, drag an **Evaluate Model** module to the canvas, under the **Assign Data to Clusters** module, and connect the output of the **Assign Data to Clusters** module to the **Scored dataset** (left) input of the **Evaluate Model** module.
 3. Ensure your pipeline looks like this:
 
 > [!div class="centered"]

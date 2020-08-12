@@ -189,6 +189,19 @@
                 "dest": "modules"
             },
             {
+                "src": "reactors",
+                "files": [
+                    "**/*.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**",
+                    "**/design/**",
+                    "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "src": "ai-business",
                 "files": [
                     "**/*.yml",
@@ -315,6 +328,17 @@
                     "**/includes/**",
                     "**/design/**",
                     "**/resources/**"
+                ],
+                "dest": "modules"
+            },
+            {
+                "src": "cmu-cloud-developer",
+                "files": [
+                    "**.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**"
                 ],
                 "dest": "modules"
             },

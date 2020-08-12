@@ -3,7 +3,7 @@ uid: learn.wwl.define-core-azure-services-products
 metadata:
   title: Define core Azure services and products
   description: "In this module we'll learn about compute services, the use of virtual machines, and containers. We'll identify networking services such as Virtual Network, Azure Load Balancer, VPN Gateway, Application Gateway, and Azure Content Delivery Network. AZ-900"
-  ms.date: 06/21/2020
+  ms.date: 08/08/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ abstract: |
   * Compare Azure data storage with on-premises storage
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/define-core-azure-services-products.svg
 hidden: true
 levels:
 - beginner
