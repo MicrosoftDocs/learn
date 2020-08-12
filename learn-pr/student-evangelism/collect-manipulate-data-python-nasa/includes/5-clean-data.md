@@ -46,11 +46,13 @@ Data columns (total 26 columns):
  24  Condition                     298 non-null    object        
  25  Notes                         3 non-null      object 
 ```
+
 You can see that `Hist Ave Max Wind Speed`, `Hist Ave Visibility`, and `Hist Ave Sea Level Pressure` have no data. 
 
-It makes sense that `Wind Speed at Launch Time`, `Temp at Launch Time`, `Launched`, `Crewed or Uncrewed`, `Time`, and `Name` have only 60 values, because the data includes only 60 launches. The rest are the days before and after the launch. 
+It makes sense that `Wind Speed at Launch Time`, `Temp at Launch Time`, `Launched`, `Crewed or Uncrewed`, `Time`, and `Name` have only 60 values, because the data includes only 60 launches. The rest are the days before and after the launch.
 
-Here are a few ways to clean the data: 
+Here are a few ways to clean the data:
+
 - The rows that don't have `Y` in the `Launched` column did not have a rocket launch, so make those missing values `N`.
 - For rows missing information on whether the rocket was crewed or uncrewed, assume uncrewed. Uncrewed is more likely because there were fewer crewed missions.
 - For missing wind direction, mark it as `unknown`.

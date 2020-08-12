@@ -1,6 +1,6 @@
 After you've clearly defined what you want to know, you can evaluate the data you have and the data you might need to collect. From there, you can prepare your data in a way that supports the discovery you're interested in.
 
-## Step 2: Gather the Data
+## Step 2: Gather the data
 
 With constraints, scopes, and prioritization of data based on subject matter expertise, you can begin to gather useful data. This step can present its own challenges. You could grow 10 heads of lettuce under slightly different conditions, and then determine which conditions yield the best results.
 

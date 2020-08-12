@@ -4,11 +4,12 @@ You now have a goal: *Is a launch likely to happen given specific weather condit
 
 You can use various tools and services to solve machine learning problems. These space-themed learning paths use Visual Studio Code, Python, scikit-learn, and Azure. Microsoft has a [video about downloading and configuring a similar environment](https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true) to the one we need.
 
-When you're setting up your local programming environment, we recommend creating an Anaconda environment to ensure you have exactly what you need for that project. If you have another way or set of tools that you prefer to use, the majority of these modules don't explicitly require Visual Studio Code or Azure. 
+When you're setting up your local programming environment, we recommend creating an Anaconda environment to ensure you have exactly what you need for that project. If you have another way or set of tools that you prefer to use, the majority of these modules don't explicitly require Visual Studio Code or Azure.
 
 ## Set up the local environment
 
 Before continuing, be sure that you have:
+
 - Visual Studio Code installed with the Python and Jupyter Notebook extensions.
 - An Anaconda environment with Pandas, NumPy, scikit-learn, PyDotPlus, and Azure Machine Learning SDK.
 - A folder to store all of the code and data.
@@ -22,7 +23,7 @@ To set up your local environment:
 1. Install [Anaconda](https://www.anaconda.com/products/individual?azure-portal=true)
 
 2. Open the Anaconda prompt.
-   
+
     :::image type="content" source="../media/anaconda-prompt.png" alt-text="Screenshot that shows the Anaconda prompt." loc-scope="Azure":::
 
 3. In the Anaconda prompt, create a new Anaconda environment:  

@@ -2,14 +2,14 @@
 uid: learn.student-evangelism.machine-learning-model-nasa
 metadata:
   title: Build a machine learning model
-  description: ...
+  description: In this module you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
   ms.date: 07/24/2020
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a machine learning model
-summary: ...
+summary: In this module you focus on a local analysis of your data by using scikit-learn, and use a decision tree classifier to gain knowledge from raw weather and rocket launch data.
 abstract: |
  In this module, you'll begin to discover: 
  - The importance of column choosing.

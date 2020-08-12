@@ -25,6 +25,7 @@ X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_s
 ```
 
 This code randomly separates the data into four groups: `X_train`, `X_test`, `y_train`, and `y_test`. With scikit-learn's `train_test_split` function, you specify four important parameters:
+
 - Input data: `X` - All of the columns that we want to use to predict a launch.
 - Output data: `y` - The outcome of each row (whether a rocket launched or not).
 - Test size: `0.2` - Training your data on 80% and testing on 20% is a common split in data science.

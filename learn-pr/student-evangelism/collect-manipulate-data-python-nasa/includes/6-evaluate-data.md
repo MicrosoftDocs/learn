@@ -1,8 +1,9 @@
-The choices that we made in this module were simplistic at best. Although a rocket didn't launch the day before or after the SpaceX Dragon launch on May 30, 2020, it doesn't mean that a rocket launch would have been pushed due to weather on those days. So putting `N` in the `Launched` column for those dates is not really accurate. 
+The choices that we made in this module were simplistic at best. Although a rocket didn't launch the day before or after the SpaceX Dragon launch on May 30, 2020, it doesn't mean that a rocket launch would have been pushed due to weather on those days. So putting `N` in the `Launched` column for those dates is not really accurate.
 
-These modules guide you through the practical steps to solving the problems faced during space exploration, but you're also meant to discover your own path. The ultimate goal is to inspire you to create, ideate, and push limits to what we understand and the knowledge we collectively hold about our world and beyond. 
+These modules guide you through the practical steps to solving the problems faced during space exploration, but you're also meant to discover your own path. The ultimate goal is to inspire you to create, ideate, and push limits to what we understand and the knowledge we collectively hold about our world and beyond.
 
 Here are some ways to continue your learning and data journey:
+
 - Explore the data further: Look up articles and reports on each launch. Were there considerations made regarding weather before launch? Were there weather conditions around these dates that might have been worrisome?
 - Explore the missing weather data: What about the dates that NASA didn't choose to launch rockets? Beyond individual days, were there seasons that NASA avoided? What kind of weather profile do those seasons tend to have?
 - Explore the missing launch data: Can you find data on launches that were pushed due to weather? Is there data from other countries on their launches that you might be able to incorporate? 

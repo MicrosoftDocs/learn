@@ -3,6 +3,7 @@ One of the benefits of using a decision tree classifier is the visualization tha
 ## Create the visual tree
 
 To create a visual representation of the model, you'll create a function that takes in as parameters:
+
 - Data: `tree` - The machine learning model
 - Columns: `feature_names` - A list of the columns in the input data
 - Output: `class_names` - A list of the options for classification (in this case, yes or no)
@@ -22,6 +23,7 @@ def tree_graph_to_png(tree, feature_names,class_names, png_file_to_save):
 ```
 
 Calling this function is fairly straightforward:
+
 - Data: `tree_model` - The model you trained and tested earlier
 - Columns: `X.columns.values` - The list of columns in the input
 - Output: [`yes`,`no`] - The two possible outcomes
@@ -37,6 +39,7 @@ This function creates the following image.
 :::image type="content" source="../media/decision-tree.png" alt-text="Visualization of decision tree." loc-scope="azure":::
 
 Overall, when we look at the dataset, we have 240 samples:
+
 - 192 are no launches
 - 48 are launches
 

@@ -24,7 +24,7 @@ Then you had a test: given any input, identify the type of berry and only select
 
 *Picture is shared by [Jesse Taylor on Wikipedia](https://commons.wikimedia.org/wiki/File:Thimbleberry_(Rubus_parviflorus)_--_fruits.JPG?azure-portal=true)*
 
-These berries look similar to raspberries. They also both look different from the other four types of berries. But they are *not* the same type of berry. The one you just brought back was a thimbleberry. (Dun dun duuuuuuuuuuun *cue dramatic music*) <!-- Sarah, this reference might not localize well -->
+These berries look similar to raspberries. They also both look different from the other four types of berries. But they are *not* the same type of berry. The one you just brought back was a thimbleberry. (Dun dun duuuuuuuuuuun *cue dramatic music*)
 
 In this case, your data set isn't extensive enough. You think you're more accurate at identifying berries than you actually are.
 

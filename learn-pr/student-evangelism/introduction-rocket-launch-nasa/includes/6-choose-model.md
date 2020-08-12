@@ -6,12 +6,6 @@ For your lettuce garden, some aspects of the environment are likely to be more i
 
 For rocket launches, you might not have access to some highly correlated data like the shape, size, and classification of clouds. However, you'll have three main pieces of data that are likely to be highly correlated - temperature, precipitation, and humidity. In this learning path, the goal is to use past launch data, past weather data, and predicted weather data to determine if a launch is likely to be successful in the future.
 
-<!-- This type of analysis uses a two-class classification algorithm because we are asking a yes-or-no question: Will this day, with these weather conditions, yield a successful launch? 
-
-<Editor's note - the above sentence is repeated below so I've removed this mention. It can be added back if needed>
-
--->
-
 ## The algorithm cheat sheet
 
 A great resource for determining what kind of machine learning algorithm will be useful for your particular analysis is the [Algorithm cheat sheet](https://docs.microsoft.com/azure/machine-learning/algorithm-cheat-sheet?azure-portal=true).
