@@ -3,7 +3,7 @@ uid: learn.wwl.implement-hybrid-network-infrastructure
 metadata:
   title: Implement hybrid network infrastructure
   description: "You'll learn to connect your on-premises environment to Azure, implement subnets and routing between your on-premises and cloud environments, and ensure that workloads in the cloud and on-premises perform DNS resolution to locate each other."
-  ms.date: 08/12/2020
+  ms.date: 08/14/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
