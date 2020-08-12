@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.arm-test
 metadata:
   title: Ensure a valid infrastructure before deployment using the Test toolkit.
