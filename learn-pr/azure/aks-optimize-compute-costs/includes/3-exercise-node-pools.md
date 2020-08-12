@@ -13,7 +13,7 @@ In this exercise, you'll create an Azure Kubernetes Service (AKS)-managed Kubern
 
     ```azurecli
     REGION_NAME=eastus
-    RESOURCE_GROUP=aks-costsaving-grp
+    RESOURCE_GROUP=akscostsavinggrp
     AKS_CLUSTER_NAME=akscostsaving-$RANDOM
     ```
 

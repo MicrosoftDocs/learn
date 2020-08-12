@@ -298,7 +298,7 @@ The final step is to test the new policy. You'll deploy a test workload that inc
     pod/nginx created
     ```
 
-1. You can watch the pods roll out by using the `-w` flag with the `kubectl get pods` command. Make sure to query for pods in the `costsavings` namespace.
+1. Use the `kubectl get pods` command to view the newly created pod. Make sure to query for pods in the `costsavings` namespace.
 
     ```bash
     kubectl get pods --namespace costsavings

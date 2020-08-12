@@ -19,7 +19,7 @@ In this module, you created resources by using your Azure subscription. The foll
 
 1. Select **Resource groups** on the left.
 
-1. Find the **aks-costsaving-grp** resource group, or the resource group name you used, and select it.
+1. Find the **akscostsavinggrp** resource group, or the resource group name you used, and select it.
 
 1. On the **Overview** tab of the resource group, select **Delete resource group**.
 
