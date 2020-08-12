@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.install-code-tools-python-nasa.2-about-programming-language
+metadata:
+  title: Understand what defines a programming language
+  description: Learn what a programming language is.
+  ms.date: 07/17/2020
+  author: angevin17
+  ms.author: vincentangellotti
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Understand what defines a programming language
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-about-programming-language.md)]

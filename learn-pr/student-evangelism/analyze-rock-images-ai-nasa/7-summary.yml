@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-rock-images-ai-nasa.7-summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-summary.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the purpose of separating data into training and testing groups?"
+    choices:
+    - content: "To train the model with one portion of the data and test the model with the rest of the data."
+      isCorrect: true
+      explanation: "Correct! We separate data into training and testing groups so we can split the data between the two groups."
+    - content: "Data is separated into training and testing groups because the computer can't test that much data."
+      isCorrect: false
+      explanation: "Incorrect. The amount of data a computer can test isn't a factor in why we separate data into a training and testing groups."
+    - content: "To train the model more quickly."
+      isCorrect: false
+      explanation: "Incorrect. The speed with a computer can train the model isn't the reason we separate data into a training and testing groups."
+  - content: "How do computers view images?"
+    choices:
+    - content: "By reading photo captions."
+      isCorrect: false
+      explanation: "Incorrect. This approach would exclude a substantial amount of information about the photo."
+    - content: "By separating the photo into four sections and reading them one section at a time."
+      isCorrect: false
+      explanation: "Incorrect. Computers don't read images by separating the photo into four sections."
+    - content: "By breaking down the photo into ones and zeros."
+      isCorrect: true
+      explanation: "Correct! Computers can only read image data by breaking down the photo into ones and zero."
+  - content: "How did we clean the data in our project?"
+    choices:
+    - content: "By deleting images that were blurry."
+      isCorrect: false
+      explanation: "Incorrect. We didn't delete any images."
+    - content: "By resizing all the images, so they were the same size."
+      isCorrect: true
+      explanation: "Correct! We cleaned the data by resizing all the images, so they were the same size."
+    - content: "By editing some photos by using Microsoft Paint."
+      isCorrect: false
+      explanation: "Incorrect. We didn't edit photos in Paint."
