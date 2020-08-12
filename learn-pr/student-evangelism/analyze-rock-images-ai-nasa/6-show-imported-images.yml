@@ -7,7 +7,7 @@ metadata:
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
-  ms.prod: learning.azure
+  ms.prod: learning-azure
 title: Exercise - Display photos of space rocks in Jupyter Notebook
 durationInMinutes: 4
 content: |
