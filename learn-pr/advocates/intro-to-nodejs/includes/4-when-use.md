@@ -10,7 +10,7 @@ You can use Node.js to build a wide variety of production-ready applications. Th
 
 ## JavaScript
 
-*"Any application that can be written in JavaScript, will eventually be written in JavaScript.* – Jeff Atwood, Author, Entrepreneur, Cofounder of StackOverflow.
+*"Any application that can be written in JavaScript, will eventually be written in JavaScript."* – Jeff Atwood, Author, Entrepreneur, Cofounder of StackOverflow.
 
 Today, many applications written outside the browser are in JavaScript or support JavaScript as a first-class citizen language, including:
 
