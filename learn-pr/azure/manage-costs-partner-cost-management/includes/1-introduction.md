@@ -8,11 +8,11 @@ Azure Cost Management is a set of tools that you can use to help Fabrikam better
 
 In this module, you'll learn how to:
 
-  - Understand cost management scopes
-  - Reconcile your bill
-  - Determine which resources receive partner-earned credit
-  - Enable Cost Management for customers
-  - Set cost thresholds
+- Understand cost management scopes
+- Reconcile your bill
+- Determine which resources receive partner-earned credit
+- Enable Cost Management for customers
+- Set cost thresholds
 
 ## Prerequisites
 
