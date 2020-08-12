@@ -63,7 +63,7 @@ take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide
 The Quantum Development Kit has a built-in tool that allows you to estimate the
 resources required to run a given Q# code on a quantum computer. It's called
 [`ResourcesEstimator`](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
-It runs the quantum operation without actually simulating the state of a quantum
+It "runs" the quantum operation without actually simulating the state of a quantum
 computer. For this reason, it can estimate resources for Q# operations that use
 thousands of qubits, if the classical part of the code can be run in a
 reasonable time.
@@ -101,7 +101,7 @@ We need 1 CNOT gate, 1 Clifford gate to apply `H` and 4 measurements: 2 to
 obtain the qubits results, and two to reset them. The width of the circuit, this
 is the number of qubits used, is 2 since we only used two qubits. For this
 example, it was very simple to know how many resources we needed without having
-to use `ResourcesEstimator`. But Q# has high-level functionality and for most
+to use `ResourcesEstimator`. But Q# is a high-level programming language, and for most
 programs it's virtually impossible to know directly how many resources they
 need. This makes `ResourcesEstimator` a very useful tool for quantum developers.
 

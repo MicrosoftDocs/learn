@@ -42,7 +42,7 @@ measurement.
 > quantum mechanics but the details are out of the scope of this module. But for
 > quantum computing you don't have to worry about it. Here we will understand by
 > measurement the informal idea of "observing" a qubit, which immediately
-> collapses the quantum superposition to one of the two classical states. If you
+> collapses the quantum superposition to one of the two basis states that correspond to classical values 0 and 1. If you
 > want to learn more about the historical discussion about measurements in the
 > context of quantum mechanics, you will find a detailed discussion in the
 > [Wikipedia article on the measurement

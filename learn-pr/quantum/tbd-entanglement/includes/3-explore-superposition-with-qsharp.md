@@ -47,7 +47,7 @@ To add the library, we open `Microsoft.Quantum.Diagnostic` in the namespace:
 
 We can use the `GenerateRandomBit` operation we defined in the previous module to see
 how `DumpMachine` works. We just need to add `DumpMachine()` on every step we want to
-see the state of the register. In this case we'll call `DumpMachine()` three times:
+see the state of the register. In this case we'll call `DumpMachine()` four times:
 at the beginning before
 
 :::code language="qsharp" source="code/3-program-1.qs":::
@@ -150,7 +150,7 @@ to a qubit in the state $\ket{0}.$
 > [!TIP]
 > If you want to learn more about the math behind single qubit operations, 
 > you can check the
-> [Single qubit gates quantum katas](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates?azure-portal=true).
+> [Single qubit gates quantum kata](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates?azure-portal=true).
 
 The operation would be:
 
@@ -174,7 +174,7 @@ and displays the correct probabilities.
 ### Multi-qubit superposition
 
 Now let's explore superpositions of a register of many qubits. For example, if we have a 
-register with 3 qubits we have 8 different states:
+register with 3 qubits we have 8 different basis states:
 
 $$\ket{000},\ket{001},\ket{010},\ket{011},\ket{100},\ket{101},\ket{110},\ket{111} $$
 
@@ -184,7 +184,7 @@ $$\ket{\psi}=a_0\ket{000}+a_1\ket{001}+a_3\ket{010}+a_4\ket{011}+a_5\ket{100}+a_
 
 where $a_i$ are complex numbers that satisfy $\sum|a_i|^2=1$.
 
-For instance, we can put the qubits in a uniform superposition applying `H` to each qubit. We can use this uniform superposition to create a different version of the quantum random number generator that measures three qubits in superposition
+For instance, we can put the qubits in a uniform superposition applying `H` to each qubit. We can use this uniform superposition to create a different version of the quantum random number generator that generates 3-bit numbers by measuring three qubits in superposition
 instead of one qubit three times.
 
 :::code language="qsharp" source="code/3-program-3.qs":::
@@ -227,7 +227,7 @@ We can see with `DumpMachine` how the act of measuring the three qubits
 collapses the state of the register to one of the eight possible basis states. 
 
 What would happen if instead of measuring the three qubits at once with
-`ForEac(M, qubits)` we measure them sequentially? We can check it, we just need to
+`ForEach(M, qubits)` we measure them sequentially? We can check it, we just need to
 slightly modify the code:
 
 :::code language="qsharp" source="code/3-program-4.qs":::

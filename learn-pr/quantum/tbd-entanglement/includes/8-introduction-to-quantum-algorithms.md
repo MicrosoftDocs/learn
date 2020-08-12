@@ -6,7 +6,7 @@ will be able to explore in detail some of these algorithms.
 ## Quantum oracle
 
 First, we need to introduce the concept of *quantum oracle*. In many problems, we
-are interested in solving a problem while making the fewest number of uses of a
+are interested in solving a problem while making the fewest number of evaluations of a
 function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For example, if we're searching an element in
 a database we can encode the problem in a binary function $f:
 \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$ can be considered as a
@@ -17,7 +17,7 @@ A quantum oracle is
 a quantum operation that is used to implement some black-box function $f:
 \\{0,1\\}^n \rightarrow \\{0,1\\}^m$. This
 operation is implemented in a way that allows to evaluate the black-box function
-not only on individual inputs, but also on superposition of qubits.
+not only on individual inputs, but also on superposition of basis states.
 
 > [!NOTE]
 > This is not the same as being able to calculate the function on all

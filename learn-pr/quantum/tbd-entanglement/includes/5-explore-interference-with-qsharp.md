@@ -3,7 +3,7 @@ with Q# and the `DumpMachine` function.
 
 ## An example of interference with Q\#
 
-In unit 3, when putting the states $\ket{\psi_1}=
+In unit 4, when putting the states $\ket{\psi_1}=
 \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$ and $\ket{\psi_2}=
 \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ in a superposition, the probability
 amplitude of $\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
@@ -57,7 +57,7 @@ We can see that it behaves just as we expected.
 
 You may have noticed that `DumpMachine` also gives us
 information about the phase of each amplitude. However, so far we have
-only seen amplitudes with zero phase. Let's see how it looks like when a state
+only seen amplitudes with zero phase (i.e., real positive amplitudes). Let's see how it looks like when a state
 has amplitudes with non-zero phases.
 
 We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
@@ -82,8 +82,8 @@ the negative numbers in the complex plane lie in the negative part of the
 x-axis, and so it's $\pi$ radians in polar coordinates. Note that, although
 the phase is non-zero, the probabilities remain the same.
 
-And what about complex amplitudes⟩ If instead of using `X` we use the operation
-`Y` we'll rotate the amplitudes to the imaginary axis. Let's see the effect.
+And what about complex amplitudes? If instead of using `X` we use the operation
+`Y`, we'll rotate the amplitudes to the imaginary axis. Let's see the effect.
 
 The code would be:
 

@@ -4,7 +4,7 @@ computing.
 
 ### Correlations between qubits
 
-Suppose we have a register with only two qubits. There are four possible states:
+Suppose we have a register with only two qubits. There are four possible basis states:
 
 $$\ket{00}, \ket{01}, \ket{10}, \ket{11}.$$
 
@@ -15,7 +15,7 @@ $$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}.$$
 In such a state, only two outcomes are possible: **00** and **11**, each with a
 probability of $\frac12$. There is zero probability of obtaining **01** and
 **10**. If we measure the first qubit to be **0**, we would know the second
-qubit would be **1** as well, without even having to measure it. We say that the
+qubit would be **0** as well, without even having to measure it. We say that the
 measurement outcomes are correlated and the qubits are **entangled**. 
 
 Similarly, we can set up a superposition state

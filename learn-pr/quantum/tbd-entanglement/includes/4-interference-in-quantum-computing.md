@@ -31,7 +31,7 @@ were already used to describe waves long before the discovery of quantum
 mechanics. They provide intuition to understand interference. 
 
 But, what is wave interference? Waves are governed by a linear equation
-(remember, waves, and quantum states are mathematically the same thing). This
+(remember, waves and quantum states are mathematically the same thing). This
 implies that waves can be superposed, just like we discussed for quantum states
 in the previous units. Superposition of different waves enables their amplitudes
 to interfere, resulting in different effects on the overall state. There are two
@@ -41,7 +41,7 @@ types of interference:
   the resulting wave. For example, in our daily experience, when two water waves
   meet in a pool, we may see a bigger wave when their peaks add up.
 - **Destructive interference**: two waves subtract to decrease the amplitude of
-  the resulting wave. Again in our daily experience, some fancy headphones use
+  the resulting wave. Again in our daily experience, noise-cancelling headphones use
   an external microphone to catch the noise in the environment. It then
   reproduces sound waves that have the same magnitude but opposite phase to the
   noise and plays them in the inner speakers to cancel the noise for the
@@ -85,7 +85,7 @@ $$= \frac12 \left(\ket{0}+\ket{0}\right)+ \frac12\left(\ket{1}-\ket{1}\right)=
 \ket{0}.$$
 
 The amplitudes of $\ket{0}$ had the same phase. Like waves, they constructively
-interfered doubling the probability of obtaining **0**. On the other hand, the
+interfered, doubling the probability of obtaining **0**. On the other hand, the
 amplitudes of $\ket{1}$ had the opposite phase and destructively interfered,
 eliminating the probability of obtaining **1**.
 
