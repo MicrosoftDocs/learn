@@ -12,8 +12,8 @@ summary: Learn how Grover's algorithm can help you solve search problems such as
 abstract: |
   In this module, you will:
   - Understand the roles _interference_ and _entanglement_ play in building quantum algorithms.
-  - Define _inverse functions_ and learn how quantum _oracles_ help you build them.
-  - Create a Q# program that applies Grover's algorithm to a graph coloring problem.
+  - Learn to build _quantum oracles_ to use in quantum search algorithm.
+  - Create a Q# program that uses Grover's search algorithm to solve a graph coloring problem.
 prerequisites: |
   - [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
 iconUrl: /learn/achievements/generic-badge.svg
@@ -26,7 +26,7 @@ products:
 - azure-quantum
 units:
 - learn.quantum.solve-graph-coloring-problems-grovers-search.1-introduction
-- learn.quantum.solve-graph-coloring-problems-grovers-search.2-inverse-functions
+- learn.quantum.solve-graph-coloring-problems-grovers-search.2-problem-description
 - learn.quantum.solve-graph-coloring-problems-grovers-search.3-quantum-oracles
 - learn.quantum.solve-graph-coloring-problems-grovers-search.4-implement-quantum-oracle
 - learn.quantum.solve-graph-coloring-problems-grovers-search.5-grovers-algorithm

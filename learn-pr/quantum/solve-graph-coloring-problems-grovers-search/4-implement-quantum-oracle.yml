@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.solve-graph-coloring-problems-grovers-search.4-implement-quantum-oracle
-title: Exercise - Solve a basic graph coloring problem by using a quantum oracle
+title: Exercise - Implement a quantum oracle for graph coloring problem
 metadata:
   description: TBD.
   ms.date: 09/19/2020

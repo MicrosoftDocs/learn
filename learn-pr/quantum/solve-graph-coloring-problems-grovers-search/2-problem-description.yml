@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.solve-graph-coloring-problems-grovers-search.2-inverse-functions
-title: What are inverse functions?
+uid: learn.quantum.solve-graph-coloring-problems-grovers-search.2-problem-description
+title: The search problem
 metadata:
   description: TBD.
   ms.date: 09/19/2020
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-quantum
 durationInMinutes: 1
 content: |
-  [!include[](includes/2-inverse-functions.md)]
+  [!include[](includes/2-problem-description.md)]

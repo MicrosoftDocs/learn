@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.solve-graph-coloring-problems-grovers-search.7-grovers-algorithm-in-practice
-title: Apply Grover's algorithm to real-world problems
+title: Applying Grover's algorithm in practice
 metadata:
   description: TBD.
   ms.date: 09/19/2020
