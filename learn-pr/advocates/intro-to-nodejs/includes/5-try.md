@@ -11,7 +11,7 @@ The Node.js REPL mode works as follows:
 - **Print**: Prints the computed results.
 - **Loop**: Loops and waits for the user to enter a new command (or exits if the user enters **ctrl-c** twice).
 
-To start REPL mode, run the `node` program in the Azure Cloud Shell:
+To start REPL mode, run the `node` program in Azure Cloud Shell:
 
 ```bash
 node
