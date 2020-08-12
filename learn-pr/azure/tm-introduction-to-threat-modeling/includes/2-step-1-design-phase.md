@@ -24,7 +24,7 @@ Ask as many questions as possible about your system. Here are a few questions to
 |**Operating system**|Which Operating System will the system use? What default security configuration options does it offer? How do these options affect the system security requirements?|
 |**First- and third-party**|Which first- and third-party services will the system use? What default security configuration options do they offer? How do these options affect the system security requirements?|
 |**Accounts**|What are the account types that will be used in the system, like users and administrators? Will these accounts be local or cloud enabled? What access do they need and why?|
-|**Identity & access control**|How will the system help secure those accounts? Will it rely on Azure Active Directory (Azure Active Directory)? Will it use features like Access Control Lists (ACL), Multi-Factor Authentication (MFA) and Session control?|
+|**Identity & access control**|How will the system help secure those accounts? Will it rely on Azure Active Directory (Azure AD)? Will it use features like Access Control Lists (ACL), Multi-Factor Authentication (MFA) and Session control?|
 |**Tokens & sessions**|Will the system process requests like SOAP or REST APIs? How will it handle different sessions?|
 |**Bypass**|Will the system use or require back-doors? If so, how will it work?|
 |**Logging, monitoring and backing up**|What are the mechanisms used by the system to log security events, monitor for anomalies and back up system data? Which event types will it capture?|

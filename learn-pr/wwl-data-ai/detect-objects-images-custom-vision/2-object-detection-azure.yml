@@ -4,9 +4,9 @@ title: Get started with object detection on Azure
 metadata:
   title: Get started with object detection on Azure
   description: "Learn how to use the Custom Vision service to create an object detection solution."
-  ms.date: 07/30/2020
+  ms.date: 08/13/2020
   author: benjiang
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

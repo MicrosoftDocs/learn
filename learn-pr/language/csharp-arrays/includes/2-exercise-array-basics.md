@@ -84,7 +84,7 @@ You get a value from an element of an array in the same manner.  Use the index o
 
 ### Step 4 - Retrieve values of an array
 
-Modify the code from Step 4 to write out the value of each fraudulent Order ID using string interpolation.  Your code should match the following passage of code.
+Modify the code from Step 3 to write out the value of each fraudulent Order ID using string interpolation.  Your code should match the following passage of code.
 
 ```csharp-interactive
 string[] fraudulentOrderIDs = new string[3];
