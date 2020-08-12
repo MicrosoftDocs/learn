@@ -8,6 +8,8 @@ For more information about the details shown on your invoice, see [Terms in your
 
 You can use Cost Analysis to intuitively analyze the pre-tax costs that are on your invoice and estimate the current unbilled open period costs.
 
+The following images are examples with fictitious costs.
+
 1. To [analyze costs](https://docs.microsoft.com/azure/cost-management-billing/costs/quick-acm-cost-analysis) on your invoice, select Cost Management +Billing and then select Cost Analysis.
 1. In Cost Analysis, you can select the scope of the billing account and then select the appropriate billing profile associated to the invoice and the invoiced currency.  
     :::image type="content" source="../media/03-select-billing-account.png" alt-text="Example showing how to select a billing account scope in Cost Management" lightbox="../media/03-select-billing-account.png" :::
