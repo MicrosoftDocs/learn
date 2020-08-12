@@ -43,7 +43,9 @@ Be sure you are signing in to the same account that activated the sandbox.
     Get-AzResourceGroup
     ```
 
-    and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise. 
+    and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
+
+    > [!NOTE] Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0&WT.mc_id=MSlearn-ARM-pierrer)** Powershell command.
 
     ```powershell
     Set-AzDefault -ResourceGroupName {Resource Group Name}
@@ -67,52 +69,52 @@ In this exercise, we will review and deploy a template that includes two linked 
     The second linked template is configured to depend on the storage deployment, and to deploy a virtual network template.
 
     ```json
+    {
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "type": "string",
+            "defaultValue": "linkeddemo001"
+        }
+    },
+    "variables": {
+        "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json",
+        "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
+    },
+    "resources": [
         {
-        "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-        "contentVersion": "1.0.0.0",
-        "parameters": {
-            "name": {
-                "type": "string",
-                "defaultValue": "linkeddemo001"
-            }
-        },
-        "variables": {
-            "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json",
-            "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
-        },
-        "resources": [
-            {
-                "name": "storage",
-                "type": "Microsoft.Resources/deployments",
-                "apiVersion": "2019-10-01",
-                "properties": {
-                    "mode": "Incremental",
-                    "templateLink": {
-                        "uri": "[variables('linked-template')]",
-                        "contentVersion": "1.0.0.0"
-                    },
-                    "parameters": {
-                         "location": {"value": "[resourceGroup().location]"}
-                    }
-                }
-            },
-            {
-                "name": "identity",
-                "type": "Microsoft.Resources/deployments",
-                "apiVersion": "2019-10-01",
-                "dependsOn": [
-                    "[resourceId('Microsoft.Resources/deployments','storage')]"
-                ],
-                "properties": {
-                    "mode": "Incremental",
-                    "templateLink": {
-                        "uri": "[variables('linked-template-2')]",
-                        "contentVersion": "1.0.0.0"
-                    }
+            "name": "storage",
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2019-10-01",
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linked-template')]",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parameters": {
+                    "location": { "value": "[resourceGroup().location]" }
                 }
             }
-        ],
-        "outputs": {}
+        },
+        {
+            "name": "identity",
+            "type": "Microsoft.Resources/deployments",
+            "apiVersion": "2019-10-01",
+            "dependsOn": [
+                "[resourceId('Microsoft.Resources/deployments','storage')]"
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "[variables('linked-template-2')]",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        }
+    ],
+    "outputs": {}
     }
     ```
 
@@ -132,7 +134,7 @@ In this exercise, we will review and deploy a template that includes two linked 
 
     Once it completes, you should have results like this:
 
-:::image type="content" source="../media/6-linked-template-results.png" alt-text="Results from deploying linked template." border="true":::
+    ![esults from deploying linked template](../media/6-linked-template-results.png)
 
 1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 

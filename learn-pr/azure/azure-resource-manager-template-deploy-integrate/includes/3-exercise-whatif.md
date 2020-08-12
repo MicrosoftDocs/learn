@@ -83,6 +83,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
     and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
+    > [!NOTE] Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0&WT.mc_id=MSlearn-ARM-pierrer)** Powershell command.
+
     ```powershell
     Set-AzDefault -ResourceGroupName {Resource Group Name}
     ```
@@ -90,6 +92,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 ### Deploy the first template to Azure
 
 Now that you have setup your subscription in the Visual Studio Code (VS Code) terminal, you deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see resources created. However, you'll see a successful deployment.
+
+For every deployment you need a **deployment name**, if you don't provide a name for the deployment, the name of the template file is used by default. For example, if you deploy a template named azuredeploy.json and don't specify a deployment name, the deployment is named azuredeploy.  However, using unique meaningful deployment names for each deployment provides you with additional simplicity when reviewing deployments and troubleshooting events and  maintain unique entries in the deployment history.  Since every time you run a deployment, an entry is added to the resource group's deployment history with the deployment name. If you run another deployment and give it the same name, the earlier entry is replaced with the current deployment.  Also, when you specify a unique name for each deployment, you can run them concurrently without conflict.
 
 1. Deploy the template using the following PowerShell AZ module commands in the terminal.
 
@@ -100,7 +104,8 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
 
     You see ```Running...``` in the terminal. When that finishes, the results of the above command should be something like the following
 
-:::image type="content" source="../media/whatif-before-result.png" alt-text="Results from before template." border="true":::
+    ![Results from before template.](../media/whatif-before-result.png)
+
 
 1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 

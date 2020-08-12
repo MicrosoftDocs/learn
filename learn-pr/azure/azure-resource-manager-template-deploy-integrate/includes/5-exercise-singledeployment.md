@@ -45,6 +45,8 @@ Be sure you are signing in to the same account that activated the sandbox.
 
     and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This command allows you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
+    > [!NOTE] Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0&WT.mc_id=MSlearn-ARM-pierrer)** Powershell command.
+
     ```powershell
     Set-AzDefault -ResourceGroupName {Resource Group Name}
     ```
@@ -53,7 +55,7 @@ Be sure you are signing in to the same account that activated the sandbox.
 
 In the following exercise, you will deploy a template from your local machine. The name of the resource group normally used when deploying in your own environment is not needed here since we already defined the default Resource Group context in the section above.
 
-1. To get started copy and paste the content of the following template code, into a file in a local directory.  **C:\JSON\deploymenttemplate.json** for example.
+1. To get started copy and paste the content of the following template code, into a file in a local directory.  **C:\JSON\maintemplate.json** for example.
 
     ```json
     {
@@ -124,13 +126,13 @@ In the following exercise, you will deploy a template from your local machine. T
 1. Once you have saved that file locally, you can proceed to deploy it using the PowerShell command to deploy at the resource group level we talked about in the last unit. Namely, [New-AzResourceGroupDeployment](https://docs.microsoft.com/powershell/module/az.resources/new-azresourcegroupdeployment?view=azps-4.4.0&WT.mc_id=MSLearn-ARM-pierrer)
 
     ```powershell
-        $templateFile="C:\JSON\deploymenttemplate.json"
-        $today=Get-Date -Format "MM-dd-yyyy"
-        $DeploymentName="DeployLocalTemplate-"+"$today"
+    $templateFile="C:\JSON\maintemplate.json"
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $DeploymentName="DeployLocalTemplate-"+"$today"
 
-        New-AzResourceGroupDeployment `
-        -Name $DeploymentName `
-        -TemplateFile $templateFile
+    New-AzResourceGroupDeployment `
+    -Name $DeploymentName `
+    -TemplateFile $templateFile
     ```
 
     Once it completes, you should have results like this:
@@ -147,7 +149,7 @@ To pass inline parameters to your deployment, you need to provide the names of t
 
     ```powershell
     $parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
-    $templateFile="C:\JSON\deploymenttemplate.json"
+    $templateFile="C:\JSON\maintemplate.json"
     $today=Get-Date -Format "MM-dd-yyyy"
     $DeploymentName="DeployLocalTemplate-2-"+"$today"
 
@@ -173,8 +175,8 @@ Rather than passing parameters as inline values in your script, you may find it 
 
     ```powershell
     $parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
-    $templateFile="C:\JSON\deploymenttemplate.json"
-    $TemplateParameterFile= "C:\JSON\deploymenttemplate.parameters.json"
+    $templateFile="C:\JSON\maintemplate.json"
+    $TemplateParameterFile= "C:\JSON\maintemplate.parameters.json"
     $today=Get-Date -Format "MM-dd-yyyy"
     $DeploymentName="DeployLocalTemplate-3-"+"$today"
 
@@ -190,7 +192,7 @@ Rather than passing parameters as inline values in your script, you may find it 
 
 ## Deploy an external or remote template
 
-I some instances you will need to deploy from an external or remote location instead of from a template on your local machine. You can store templates in a source control repository (such as GitHub). Or, you can store them in an Azure storage account for shared access in your organization.
+In some instances you will need to deploy from an external or remote location instead of from a template on your local machine. You can store templates in a source control repository (such as GitHub). Or, you can store them in an Azure storage account for shared access in your organization.
 
 1. To deploy an external template, use the TemplateUri parameter.
     In the next exercise, you will deploy an ARM template from a GitHub repo. The repo is public, therefore you don't need to worry about deploying a template that requires a shared access signature (SAS) token.  Details about using a private or secured remote location can be found in the following article. [Deploy private template with SAS token](https://docs.microsoft.com/azure/azure-resource-manager/templates/secure-template-with-sas-token?tabs=azure-powershell&WT.mc_id=MSLearn-ARM-pierrer).
