@@ -32,16 +32,16 @@ products:
 - azure
 units:
 - learn.describe-azure-governance-methodologies.introduction
-- learn.describe-azure-governance-methodologies.define-azure-policy
-- learn.describe-azure-governance-methodologies.implement-azure-policy
-- learn.describe-azure-governance-methodologies.define-policy-initiatives
-- learn.describe-azure-governance-methodologies.walkthrough-create-an-azure-policy
+- learn.describe-azure-governance-methodologies.explore-cloud-adoption-framework
+- learn.describe-azure-governance-methodologies.define-subscription-governance
 - learn.describe-azure-governance-methodologies.explore-role-based-access-control-rbac
 - learn.describe-azure-governance-methodologies.walkthrough-manage-access-with-rbac
 - learn.describe-azure-governance-methodologies.define-resource-locks
 - learn.describe-azure-governance-methodologies.walkthrough-manage-resource-locks
+- learn.describe-azure-governance-methodologies.define-resource-tags
+- learn.describe-azure-governance-methodologies.define-azure-policy
+- learn.describe-azure-governance-methodologies.walkthrough-create-azure-policy
 - learn.describe-azure-governance-methodologies.explore-azure-blueprints
-- learn.describe-azure-governance-methodologies.define-subscription-governance
 - learn.describe-azure-governance-methodologies.knowledge-check
 - learn.describe-azure-governance-methodologies.summary
 badge:
