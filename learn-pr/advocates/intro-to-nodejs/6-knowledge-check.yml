@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-nodejs.6-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge about Node.js and its ecosystem
+  description: Check your knowledge of the Node.js runtime and its development environment.
   ms.date: 03/23/2020
   author: manekinekko
   ms.author: wachegha
@@ -15,43 +15,43 @@ quiz:
   questions:
     - content: "What is Node.js?"
       choices:
-        - content: "Node.js is a Java framework."
+        - content: "A Java framework"
           isCorrect: false
-          explanation: "Node.js is neither a framework not a Java runtime."
-        - content: "A JavaScript framework."
+          explanation: "Node.js isn't a framework or a Java runtime."
+        - content: "A JavaScript framework"
           isCorrect: false
-          explanation: "Node.js is wrongly presented as a framework but it's not."
-        - content: "A JavaScript runtime."
+          explanation: "Node.js isn't a framework but is sometimes incorrectly described as one."
+        - content: "A JavaScript runtime"
           isCorrect: true
-          explanation: "Node.js is a runtime that can execute JavaScript applications."
-        - content: "A JavaScript server."
+          explanation: "Node.js is a runtime that runs JavaScript applications."
+        - content: "A JavaScript server"
           isCorrect: false
-          explanation: "Although Node.js can be used to implement a server, it's not a server."
+          explanation: "Node.js isn't a server but can be used to implement one."
     - content: "How does Node.js handle concurrent tasks?"
       choices:
-        - content: "Node.js cannot handle concurrent tasks."
+        - content: "Node.js can't handle concurrent tasks."
           isCorrect: false
-          explanation: "Node.js was designed from the ground up to handle concurrent operations."
-        - content: "Node.js use multiple threads for concurrent tasks."
+          explanation: "Node.js was designed to handle concurrent operations."
+        - content: "Node.js uses multiple threads for concurrent tasks."
           isCorrect: false
-          explanation: "Node.js does not use multiple threads. It"
-        - content: "Node.js use a single event-loop for concurrent tasks."
+          explanation: "Node.js doesn't use multiple threads."
+        - content: "Node.js uses a single event loop for concurrent tasks."
           isCorrect: true
-          explanation: "Node.js use a single thread and an event loop to handle concurrent non-blocking I/O tasks."
-        - content: "Node.js use multiple event-loops for concurrent tasks."
+          explanation: "Node.js uses a single thread and an event loop to handle concurrent, non-blocking I/O tasks."
+        - content: "Node.js uses multiple event loops for concurrent tasks."
           isCorrect: false
-          explanation: "Node.js use only one single event loop."
+          explanation: "Node.js uses only a single event loop."
     - content: "For which of these scenarios would a Node.js app be a good fit?"
       choices:
-        - content: "If my app requires a non-blocking, event-driven server."
+        - content: "The app requires a non-blocking, event-driven server."
           isCorrect: true
-          explanation: "Node.js is perfect for implementing back-end API services and real-time applications."
-        - content: "If my app needs a Java runtime."
+          explanation: "Node.js works well for implementing back-end API services and real-time applications."
+        - content: "The app needs a Java runtime."
           isCorrect: false
-          explanation: "Node.js applications are usually written in JavaScript, not Java."
-        - content: "If I need to build a mobile application."
+          explanation: "Node.js apps are written in JavaScript, not Java."
+        - content: "You need to build a mobile app."
           isCorrect: false
-          explanation: "Mobile applications can be built with many languages including JavaScript. Node.js is a runtime not a language."
-        - content: "If my app requires CPU intensive computations."
+          explanation: "You can build mobile apps by using many languages, including JavaScript. Node.js is a runtime, not a language."
+        - content: "The app requires CPU-intensive computations."
           isCorrect: false
-          explanation: "Node.js is great for I/O. However, it is not well optimized for CPU intensive computations."
+          explanation: "Node.js works well for I/O but isn't well optimized for CPU-intensive computations."
