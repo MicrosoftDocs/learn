@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.audit-security-of-windows-server-iaas-vms.implement-azure-sentinel
+title: Implement azure sentinel
+metadata:
+  title: Implement azure sentinel
+  description: "Implement azure sentinel"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-implement-azure-sentinel.md)]
