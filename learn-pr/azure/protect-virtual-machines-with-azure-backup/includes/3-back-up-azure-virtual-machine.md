@@ -8,7 +8,7 @@ In this unit, you'll explore all the methods of backing up Azure virtual machine
 
 ## Recovery Services vault
 
-Azure Backup uses a Recovery Services vault to manage and store the backup data. A vault is a storage-management entity, which provides a simple experience to  carry out and monitor backup and restore operations. With Azure Backup, you need not worry about deploying or managing storage accounts. In fact all you need to specify is the vault you want to back up the VM to. The backup data is transferred to the Azure Backup storage accounts (in a separate fault domain) in the background. The vault also acts as an RBAC boundary to allow secure access to the data.
+Azure Backup uses a Recovery Services vault to manage and store the backup data. A vault is a storage-management entity, which provides a simple experience to  carry out and monitor backup and restore operations. With Azure Backup, you need not worry about deploying or managing storage accounts. In fact, all you need to specify is the vault you want to back up the VM to. The backup data is transferred to the Azure Backup storage accounts (in a separate fault domain) in the background. The vault also acts as an RBAC boundary to allow secure access to the data.
 
 ![Screenshot that highlights the Recovery Services vaults that are available in context to the resources they're protecting](../media/3-recovery-vault-in-context.png)
 
@@ -38,7 +38,7 @@ Depending on how the snapshot is taken and what it includes, you can achieve dif
 
 You can define the backup frequency and retention duration for your backups. Currently, the VM backup can be triggered daily or weekly, and can be stored for multiple years. The backup policy supports two access tiers - snapshot tier and the vault tier.
 
-**Snapshot tier**: All the snapshots are stored locally for a maximum period of five days. This is referred to as the snapshot tier. For all types of operation recoveries, it is recommended that you restore from the snapshots since it is much faster to do so. This capability is called **Instant Restore**.
+**Snapshot tier**: All the snapshots are stored locally for a maximum period of five days. This is referred to as the snapshot tier. For all types of operation recoveries, it's recommended that you restore from the snapshots since it's much faster to do so. This capability is called **Instant Restore**.
 
 **Vault tier**: All snapshots are additionally transferred to the vault for additional security and longer retention. At this point, the recovery point type changes to “snapshot and vault”.
 
@@ -51,7 +51,7 @@ Here's how Azure Backup completes a backup for Azure VMs:
 
    - For Windows VMs, the [VMSnapshot extension](https://docs.microsoft.com/azure/virtual-machines/extensions/vmsnapshot-windows) is installed.
    - For Linux VMs, the [VMSnapshotLinux extension](https://docs.microsoft.com/azure/virtual-machines/extensions/vmsnapshot-linux) is installed.
-3. After the snapshot is taken, it is stored locally as well transferred to the vault.
+3. After the snapshot is taken, it's stored locally as well transferred to the vault.
 
    - The backup is optimized by backing up each VM disk in parallel.
    - For each disk that's being backed up, Azure Backup reads the blocks on the disk and identifies and transfers only the data blocks that changed (the delta) since the previous backup.
