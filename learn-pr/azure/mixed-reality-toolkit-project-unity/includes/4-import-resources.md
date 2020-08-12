@@ -12,11 +12,11 @@ MRTK-Unity is a Microsoft-driven project that provides a set of components and f
 - Enables rapid prototyping via in-editor simulation that allows you to see changes immediately.
 - Operates as an extensible framework that provides developers the ability to swap out core components.
 - Supports a wide range of platforms, including
-    - Microsoft HoloLens
-    - Microsoft HoloLens 2
-    - Windows Mixed Reality headsets
-    - OpenVR headsets (HTC Vive / Oculus Rift)
-    - Ultraleap Hand Tracking
+  - Microsoft HoloLens
+  - Microsoft HoloLens 2
+  - Windows Mixed Reality headsets
+  - OpenVR headsets (HTC Vive / Oculus Rift)
+  - Ultraleap Hand Tracking
 
 ## TextMesh Pro
 

@@ -9,9 +9,9 @@ You can continue to add objects to your scene and try different interaction mode
 - Point to an object that's far away to make the object rotate
 - Configure a motion controller to select an object and scale to a larger size
 - Use eye gaze to select an object and move with your hands
-- Target a large object with head gaze and change it's color with a voice command
+- Target a large object with head gaze and change its color with a voice command
 
-You can complete your mixed reality experience by building the Unity project and deploying to your preferred device. In Unity, ensure that you first save the scene and add to the **Scences in Build** window within **Build Settings**.
+You can complete your mixed reality experience by building the Unity project and deploying to your preferred device. In Unity, ensure that you first save the scene and add to the **Scenes in Build** window within **Build Settings**.
 
 ## Further Reading
 

@@ -1,4 +1,4 @@
-The Mixed Reality Toolkit provides a set of components and features which could be used to accelerate your Windows Mixed Reality app development. To use the toolkit in your mixed reality project, you must import the package and configure the resources added to the project. Here you'll import and configure resources to add the Mixed Reality Tookit to your project.
+The Mixed Reality Toolkit provides a set of components and features which could be used to accelerate your Windows Mixed Reality app development. To use the toolkit in your mixed reality project, you must import the package and configure the resources added to the project. Here you'll import and configure resources to add the Mixed Reality Toolkit to your project.
 
 ## Import TextMesh Pro Essential Resources
 
@@ -26,7 +26,7 @@ The Mixed Reality Toolkit provides a set of components and features which could 
 
 ## Open the MRTK Project Configurator window
 
-After the MRTK Foundation package is imported, the **MRTK Project Configurator** window will appear. If the window does not appear, you can open via the Unity menu. 
+After the MRTK Foundation package is imported, the **MRTK Project Configurator** window will appear. If the window does not appear, you can open via the Unity menu.
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**.
 
@@ -36,7 +36,7 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 
 1. In the **MRTK Project Configurator** window, click the **Audio spatializer** dropdown and select **MS HRTF Spatializer**.
 
-    :::image type="content" source="../media/audio-spatializer.png" alt-text="Screenshot of the M R T K Project Configurator window. Audio spatializer and the drop down options for the settings are highlighted. The M S H R T F spatializer option is highlighted in blue.":::
+    :::image type="content" source="../media/audio-spatializer.png" alt-text="Screenshot of the M R T K Project Configurator window. Audio spatializer and the drop-down options for the settings are highlighted. The M S H R T F spatializer option is highlighted in blue.":::
 
 1. Ensure all options are checked, and click the **Apply** button to apply the settings.
 
