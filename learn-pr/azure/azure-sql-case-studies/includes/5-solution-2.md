@@ -1,6 +1,6 @@
-In the previous unit, you worked through a scenario involving high availability for a 911 dispatch system. In this unit, you'll review one potential solution and some other items to consider.
+In the previous unit, you worked through a scenario that involved high availability for a 911 dispatch system. In this unit, you'll review one potential solution and some other items to consider.
 
-As you review, you should compare the solution provided to the one you developed in the previous unit. Often, more than one correct solution exists for any problem, but there are always tradeoffs. Which items in your solution differ from the proposed? Is there anything in your solution you might rethink? Is there anything in the provided solution that you think is addressed more thoroughly in your solution?
+As you review, you should compare the provided solution to the one that you developed in the previous unit. Often, more than one correct solution exists for any problem, but there are always tradeoffs. Which items in your solution differ from the proposed one? Is there anything in your solution you might rethink? Is there anything in the provided solution that you think is addressed more thoroughly in your solution?
 
 ## Deployment option and configuration
 
