@@ -79,7 +79,7 @@ To implement Sentinel:
 3. Select **Add Azure Sentinel**. The workspace is modified to include Sentinel.
 4. On the **Azure Sentinel** blade, in **News & guides**, select the **Get started** tab.
 
-![A screenshot of the Azure Sentinel blade. The administrator has selected the News & guides page, Get started tab.](../media/m1-sentine-l.png)
+![A screenshot of the Azure Sentinel blade. The administrator has selected the News & guides page, Get started tab.](../media/m1-sentinel.png)
 
 5. Select **Connect** to begin collecting data.
 6. Select the appropriate connector. For example, select **Azure Security Center**.
