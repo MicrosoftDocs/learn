@@ -139,32 +139,32 @@ In this exercise, you'll complete these steps.
 
 ### Simulate deletion of data
 
-1. First, let's confirm that the table we'll *accidentally* delete exists and has data in it. Let's look at some of the values in SalesLT.OrderDetail.  
+First, let's confirm that the table we'll *accidentally* delete exists and has data in it. Let's look at some of the values in SalesLT.OrderDetail.  
 
-    Go to SSMS and check/update your connection. Make sure the connection you use is connecting to the logical server but not to a specific database (for example, set to **\<default>** in the following screenshot). You should also confirm that **Additional Connection Parameters** is contains no text.  
+1. Go to SSMS and check/update your connection. Make sure the connection you use connects to the logical server but not to a specific database. (For example, use **\<default>** as shown in the following screenshot). You should also confirm that **Additional Connection Parameters** doesn't contains any text.  
 
-    :::image type="content" source="../media/3-default.png" alt-text="Screenshot of the default connection.":::
+    :::image type="content" source="../media/3-default.png" alt-text="Screenshot that shows the default connection.":::
 
-1. Right-click on your AdventureWorks database and create a new query. Run the following query and review the results.  
+1. Right-click your AdventureWorks database and create a query. Run this query and review the results:  
 
     ```sql
     SELECT TOP 10 * from SalesLT.SalesOrderDetail
     ```
 
-    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Screenshot of the sales order detail table.":::  
+    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Screenshot that shows the sales order detail table.":::  
 
-1. Now, let's simulate the loss of data by dropping a table in the database.  
+1. Simulate the loss of data by dropping a table in the database.  
 
-    **Using the same query window**, run the following query and note the completion time.
+    In the same query window, run this query and note the completion time:
 
     ```sql
     DROP TABLE SalesLT.SalesOrderDetail
     ```
 
     > [!IMPORTANT]
-    > Save the completion time, you may need it later, for example `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
+    > Save the completion time. You might need it later. Here's an example: `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
 
-1. Finally, before you get into the steps to restore, run the follow code in Azure Cloud Shell on the right to configure your environment in the Azure Cloud Shell.  
+1. Finally, before you start the steps to restore the database, run the following code in Azure Cloud Shell on the right to configure your environment in the Azure Cloud Shell: 
 
     ```powershell
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
@@ -175,25 +175,25 @@ In this exercise, you'll complete these steps.
     # Specify your default resource group and Azure SQL Database logical server
     az configure --defaults group=$resource_group sql-server=$logical_server
 
-    # Confirm the defaults have been set
+    # Confirm the defaults are set
     az configure --list-defaults
     ```
 
-    The `group` and `sql-server` parameters returned should match the name of your Microsoft Learn resource group and your Azure SQL Database logical server.
+    The `group` and `sql-server` parameters returned should match the names of your Microsoft Learn resource group and your Azure SQL Database logical server.
 
 ### Identify the time to restore the database to
 
-1. The first step is to figure out when you should restore the database. In order to complete step 1, you need to know when the last "good" transaction occurred, before the "bad" one, so you can restore to before the "bad" transaction but after the last "good" one.  
+The first step is to figure out the time to restore the database to. You need to know when the last "good" transaction occurred before the "bad" one. You'll restore before the bad transaction but after the last good one.  
 
-    One way to determine the drop time, is if you have access to the `Completion time` of the `DROP` statement, which you noted in the previous step.  
+1. One way to determine the drop time is by looking at the completion time of the DROP statement, which you noted in the previous step.  
 
-    A new way may be to use the Audit logs in the Azure portal. Navigate to your Azure SQL Database in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), e.g. **AdventureWorks**. In the left-hand menu, under Security, select **Auditing** and then select **View audit logs**.  
+    A new way is to use the Audit logs in the Azure portal. Go to your Azure SQL database in the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). For example, AdventureWorks. In the left pane, under **Security**, select **Auditing** and then select **View audit logs**.  
 
-1. Select **Log Analytics**. If you see a **Get Started** screen, select **OK**. This then takes you to a query editor that allows you to query logs using Kusto query language (KQL), which is meant to be easy to use for querying logs for SQL professionals.  
+1. Select **Log Analytics**. If you see a **Get Started** screen, select **OK**. This action takes you to a query editor that allows you to query logs by using Kusto Query Language (KQL). SQL professionals can use this query language to easily query logs.  
 
-    :::image type="content" source="../media/3-log-analytics.png" alt-text="Screenshot of how to select log analytics.":::  
+    :::image type="content" source="../media/3-log-analytics.png" alt-text="Screenshot that shows the Log Analytics button.":::  
 
-1. Copy the below KQL query and paste it into the query editor in the Log Analytics view in the Azure portal (replace the existing query).
+1. Copy the following KQL query and paste it into the query editor in the Log Analytics view in the Azure portal. (Replace the existing query.)
 
     ```kql
     search database_name_s == "AdventureWorks"
@@ -202,19 +202,20 @@ In this exercise, you'll complete these steps.
     | sort by event_time_t desc
     ```
 
-1. Select **Run** and review the results. It should be similar to below, but with a different date/time.
+1. Select **Run** and review the results. The results should be similar to the following results, but with a different date and time.
 
-    If you see other `DROP`s, you should select the one related to the table you just dropped.  
+    If you see other DROPs, select the one related to the table you just dropped.  
 
-    :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Screenshot of the Log analytics results.":::
+    :::image type="content" source="../media/3-log-analytics-results.png" alt-text="Screenshot that shows Log Analytics results.":::
 
     > [!NOTE]
-    > The logs can take a 5-10 minutes to show up here. If you are waiting for longer than 3-5 minutes, you can leverage the `Completion time` you noted in the previous step (but you need to convert to GMT). But know, that in a real world situation, it is highly unlikely you will be able to get to that window with the completion time, so using auditing can help greatly.  
+    > It can take 5-10 minutes for the logs to appear. If you're waiting for more than 3-5 minutes, you can use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
 
-1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Update it using this example as a reference and to the definition of `$before_error_time`. You also may want to subtract `.001` seconds, to ensure you restore to *before* the error occurred.  
-
+1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Use the following example to determine the correct format. You might also want to subtract .001 seconds to ensure you restore to a time *before* the error occurred:
     * Log Analytics format: `2020-07-24 08:06:24.386`
-    * Required format: `2020-07-24T20:06:24.385`  
+    * Required format: `2020-07-24T20:06:24.385` 
+ 
+1. Set `$before_error_time` to the resulting value:
 
     ```powershell
     $before_error_time ="2020-07-24T20:06:24.385"
@@ -222,66 +223,69 @@ In this exercise, you'll complete these steps.
 
 ### Restore the database and confirm missing data
 
-1. In this step you'll use `az cli db restore` to restore to before the table was deleted. Run the following in the terminal to your right in this window.
+In this step, you'll use `az cli db restore` to restore the database to a time before the table was deleted. 
+
+1. Run the following script in the terminal on the right side of this window:
 
     ```powershell
-    # Restore the database to the time before the database was deleted
+    # Restore the database to a time before the database was deleted
     az sql db restore --dest-name "AdventureWorks-copy" --name "AdventureWorks" --time $before_error_time --verbose
     ```
 
-    The restore will take about 5-10 minutes. When you run a restore, Azure deploys a new Azure SQL Database in your Azure SQL Database logical server that has all the same configuration options as the original. After it's deployed, it will then restore the database into that new Azure SQL Database.  
+    The restore will take about 5-10 minutes. When you run a restore, Azure deploys a new Azure SQL database in your Azure SQL Database logical server. The new database has the same configuration options as the original. After the Azure SQL database is deployed, Azure will restore the database into the new Azure SQL database.  
 
-    You can check the status by refreshing your view of databases in **SSMS** by right-clicking on **Databases** and selecting **Refresh**. Once the database has been deployed, you will see the restore is now in progress.  
+1. You can check the status by refreshing your view of databases in SSMS. Right-click **Databases** and select **Refresh**. After the database is deployed, you'll see that the restore is in progress:  
 
-    :::image type="content" source="../media/3-db-restore.png" alt-text="Screenshot of a database restoring in SSMS.":::  
+    :::image type="content" source="../media/3-db-restore.png" alt-text="Screenshot that shows a database restoring in SSMS.":::  
 
-    Once you see this, it should only be 2-3 minutes more. You will know it is done, because the command will complete. Also, you will no longer see "(Restoring...)" next to the copy database when you initiate a refresh.  
+    After you see that the restore is in progress, the restore should take 2-3 minutes more. You'll know when it's done because the command will complete. Also, you'll no longer see "(Restoring...)" next to the copy database when you initiate a refresh.  
 
-    If you notice it is taking longer than above stated times, it could be due to your Microsoft Learn environment. There are a limited number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details for PITR while you wait, you can [read more to learn the details related to recovering an Azure SQL database by using automated database backups](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups?azure-portal=true).  
+    If you notice that the restore is taking longer than the times described earlier, that could be because of your Microsoft Learn environment. There's a limit to the number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details about PITR while you wait, see [Recover using automated database backups](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups?azure-portal=true).  
 
-1. In order to confirm the new database is in the correct state (before the accident occurred), right-click on the logical server in SSMS and select **Refresh** to refresh your connection to the Azure SQL Database logical server.  
+1. To confirm that the new database is in the correct state (as it was before the accident occurred), right-click the logical server in SSMS and select **Refresh** to refresh your connection to the Azure SQL Database logical server.  
 
-1. Then, right-click on your new database, e.g. **AdventureWorks-copy** and select **New Query**.  
+1. Right-click your new database (for example, **AdventureWorks-copy**) and then select **New Query**.  
 
-    :::image type="content" source="../media/3-new-query.png" alt-text="Screenshot of creating a new query.":::  
+    :::image type="content" source="../media/3-new-query.png" alt-text="Screenshot that shows how to create a query.":::  
 
-1. Use the following query to confirm the table exists.  
+1. Use this query to confirm that the table exists:  
 
     ```sql
     SELECT TOP 10 * from SalesLT.SalesOrderDetail
     ```
 
-    You should get something similar to the following screenshot, which confirms your database has been restored to where you want it to be.
+    You should get results similar to the results shown in the following screenshot. This result confirms that your database is restored to where you want it to be.
 
-    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Screenshot of the sales order detail table.":::  
+    :::image type="content" source="../media/3-sales-detail-ssms.png" alt-text="Screenshot that shows the sales order detail table.":::  
 
 ### Swap the databases and clean up
 
-1. Next, you'll rename the original database to **AdventureWorks-old** so you can later rename the new database to the original database name. As long as your applications use retry logic, this will make it so no connection strings need to be changed.
+Next, you'll rename the original database to AdventureWorks-old so you can later rename the new database to use the original database name. As long as your applications use retry logic, this change will make it so you don't need to change any connection strings.
 
-    If at any point your database appears unavailable (e.g. you can't connect to the databases in SSMS if you refresh the connection), it could be due to updates happening to the DNS table. So while the database isn't physically unavailable, it is unresolvable. If you wait a minute or so, you should be able to resume normal activities.  
+If at any point your database appears unavailable (for example, you can't connect to the databases in SSMS if you refresh the connection), it could be because of updates happening to the DNS table. So although the database isn't physically unavailable, it is unresolvable. If you wait a minute or so, you should be able to resume normal activities.  
 
+1. Use this command to change the database name: 
     ```powershell
     az sql db rename --name "AdventureWorks" --new-name "AdventureWorks-old"
     ```
 
-1. Now that the original database name is no longer taken, you can rename the copy database to that of the original, again using the Azure Cloud Shell.  
+1. Now that the original database name is no longer taken, you can rename the copy database to the name of the original, again by using the Azure Cloud Shell:  
 
     ```powershell
     az sql db rename --name "AdventureWorks-copy" --new-name "AdventureWorks"
     ```
 
-1. Finally, you have no need for the old database, so you can delete it with `az sql db delete`.
+1. You don't need the old database, so you can delete it by using `az sql db delete`:
 
     ```powershell
     az sql db delete --name "AdventureWorks-old" --yes
     Write-Host "Database deleted"
     ```
 
-1. You can confirm it no longer exists with the following command.
+1. You can confirm that it no longer exists by using this command:
 
     ```powershell
     az sql db list -o table
     ```
 
-You've now seen how you can leverage PITR in Azure SQL Database. PITR is also available in Azure SQL Managed Instance, **for databases not the whole instance**. You can use almost the same commands except with `az sql midb` as opposed to `az sql db`.
+You've now seen how you can use PITR in Azure SQL Database. PITR is also available in Azure SQL Managed Instance for databases, but not for the whole instance. You can use almost the same commands, except that you need to use `az sql midb` instead of `az sql db`.

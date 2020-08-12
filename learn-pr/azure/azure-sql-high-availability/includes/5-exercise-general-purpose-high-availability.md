@@ -1,48 +1,44 @@
-In the module, you learned about the high availability architecture of Azure SQL. In this exercise, you'll get to see how the General purpose tier of Azure SQL Database behaves similarly to a Failover Cluster Instance on-prem. The difference is that on-prem, this can be time-consuming or tricky to set up, but with Azure SQL, you get it out of the box.
+You've learned about the high-availability architecture of Azure SQL. In this exercise, you'll see how the General purpose tier of Azure SQL Database behaves similarly to a failover cluster instance on-premises. This functionality can be time consuming or tricky to set up on-premises, but you get it out of the box with Azure SQL.
 
-This exercise will use the *ostress* tool you might have used in the previous module to create a workload. You'll then initiate a failover using the Azure PowerShell module in the Azure Cloud Shell, and observe the effect it has on the ostress workload.  
+In this exercise, you'll use the OStress tool that you might have used in the previous module to create a workload. You'll then initiate a failover by using the Azure PowerShell module in the Azure Cloud Shell and observe the effect it has on the OStress workload.  
 
-## Basic high availability (with no configuration!) in Azure SQL - General purpose service tier
+## Basic high availability in the Azure SQL General purpose service tier
 
-In order to complete this exercise, you will complete the following steps:
+In this exercise, you'll complete the following steps:
 
-1. Run the ostress workload  
-1. Confirm environment is properly configured
-1. Use PowerShell to initiate a failover  
-1. Observe the results in ostress  
-1. (Bonus) Look for signs in the portal that a failover occurred  
+1. Run the OStress workload.  
+1. Confirm that the environment is properly configured.
+1. Use PowerShell to initiate a failover of Azure SQL Database.  
+1. Observe the results in OStress.  
+1. Look for signs in the portal that a failover occurred.  
 
-This exercise will guide you through getting ostress configured, and then you'll see how to use both ostress and PowerShell together to initiate and analyze a failover of Azure SQL Database.  
+### Run the OStress workload
 
-### Run the ostress workload
+The first step is to create a long-running workload. This workload will allow you to see how a failover affects the ability to read and write data, and how long a failover takes in the General purpose service tier for Azure SQL Database. You'll use OStress.
 
-The first step is to create a long-running workload so you can see how a failover affects the ability to read/write data, and how long a failover takes in the General purpose service tier for Azure SQL Database. You will leverage a tool called `ostress`.
-
-1. Open a new Command Prompt window on your local machine. Use `cd` to change directories to where the availability module is in the repository you cloned or downloaded earlier. For example, you might use
+1. Open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command:
 
     ```cmd
     cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability
     ```
 
-    If `C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability` was the filepath to the folder.
+    The OStress executable file is in this folder. (It's small.) The OStress workload connects and runs a simple query 50,000 times.
 
-    Within the folder, is the ostress executable (very small). The ostress workload will essentially connect and runs a simple query 50,000 times.
-
-1. Before running the workload, you will need to update the below ostress script by replacing `serverName` with the name of your Azure SQL Database logical server, and `password` with your password.
+1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server and `password` with your password.
 
     ```cmd
     .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50000
     ```
 
-    If your workload is running properly, you should be seeing the result of the query `847` repeatedly appearing in the Command Prompt.
+    If your workload is running properly, you should see the result of the query, `847`, repeatedly appearing in the Command Prompt window.
 
-    If at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
+    If you want to stop running the OStress workload before it's done, you can select **Ctrl+C** in the terminal.  
 
-    If at any time, you want to run the workload again, you can run the command again.  
+    If you want to run the workload again, you can run the command again.  
 
-### Use PowerShell in Azure Cloud Shell to initiate a failover and observe the results
+### Use PowerShell in the Azure Cloud Shell to initiate a failover and observe the results
 
-1. In the Azure Cloud Shell terminal (to your right on this page), run the following PowerShell to configure your environment.  
+1. In the Azure Cloud Shell terminal (on the right side of this page), run this PowerShell script to configure your environment:  
 
     ```powershell
     $resourceGroup = "<rgn>Sandbox resource group name</rgn>"
