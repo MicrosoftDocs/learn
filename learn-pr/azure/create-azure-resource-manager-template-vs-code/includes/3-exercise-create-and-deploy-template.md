@@ -11,7 +11,7 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
 1. The Visual Studio Code ARM template extension comes configured with snippets to help you develop templates. Let's start by adding a blank template. On the first line of the file, enter **arm**.
 1. You see the IntelliSense choice **!arm**. Choose that snippet by selecting the box next to it.
 
-   :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
+    :::image type="content" source="../media/3-arm-snippet.png" alt-text="Visual Studio Code azuredeploy.json file showing the snippet choices for Azure Resource Manager templates." border="true":::
 
 1. Your file will now look like this:
 
@@ -29,7 +29,6 @@ This exercise uses [Azure Resource Manager Tools for Visual Studio Code](https:/
     ```
 
       Notice that this file has all of the sections of an ARM template that we discussed in the last unit.
-
 
 1. Save the changes to the file.
 
@@ -69,7 +68,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
    > [!NOTE]
    > If you've used more than one sandbox recently, there might be more than one *Concierge Subscription* listed. In this case, use the next two steps to set the default subscription. If the previous command was successful, skip the next two steps.
 
-1. Set the default subscription for all of the Azure CLI commands you run in this session.
+1. Get the *Concierge Subscription* IDs.
 
    ```azurecli
     az account list \
@@ -80,23 +79,9 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. Set the default subscription by using the subscription ID. Replace *{your subscription ID}* with the latest Concierge Subscription ID.
 
-> [!NOTE]
-> If you used more than one sandbox recently, there may be more than one *Concierge Subscription* listed. In this case, you can set the default subscription with the following steps:
->
->1. Get the *Concierge Subscription* IDs.
->
->    ```azurecli
->    az account list \
->      --refresh \
->      --query "[?contains(name, 'Concierge Subscription')].id" \
->      --output table
->    ```
->
->1. Set the default subscription using the subscription ID. Replace the *{your subscription ID}* with the latest Concierge Subscription ID.
->
->    ```azurecli
->    az account set --subscription {your subscription ID}
->    ```
+    ```azurecli
+    az account set --subscription {your subscription ID}
+    ```
 
 ### Set the default resource group
 
