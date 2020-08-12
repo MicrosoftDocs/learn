@@ -115,7 +115,7 @@ Like all resources, services also have manifest files describing how they should
 
 To expose your website to the world via DNS, you must create an ingress controller.
 
-1. In the Cloud Shell, create a manifest file for the Kubernetes service called `service.yaml`.
+1. In the Cloud Shell, create a manifest file for the Kubernetes service called `ingress.yaml`.
 
     ```bash
     touch ingress.yaml
@@ -123,7 +123,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
 1. Open the integrated editor in Cloud Shell by typing `code .`
 
-1. Open the `service.yaml` file and add the following code section of YAML.
+1. Open the `ingress.yaml` file and add the following code section of YAML.
 
     ```yaml
     #ingress.yaml
@@ -151,7 +151,7 @@ To expose your website to the world via DNS, you must create an ingress controll
 
 1. Set the Fully Qualified Domain Name (FQDN) of the host allowed access to the cluster.
 
-	In the Cloud Shell,  run  the `az network dns zone list` command to query the Azure DNS zone list.
+  In the Cloud Shell,  run  the `az network dns zone list` command to query the Azure DNS zone list.
 
     ```bash
     az network dns zone list --output table
