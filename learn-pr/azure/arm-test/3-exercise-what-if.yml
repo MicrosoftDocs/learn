@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.3-exercise-what-if
-title: Execise - Unit
+title: Exercise - What-if
 metadata:
-  title: Exercise - Unit
-  description: Describe Exercise
+  title: Exercise - What-if
+  description: Use the What-if tool to predict what a deployment will carry out if applied.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 08/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

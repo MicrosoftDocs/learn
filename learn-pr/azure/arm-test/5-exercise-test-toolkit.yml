@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.5-exercise-test-toolkit
-title: Unit
+title: Exercise - Test toolkit
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Exercise - Test toolkit
+  description: Use the test toolkit to apply some best practices to your templates.
   author: softchris
   ms.author:  chnoring
-  ms.date: 04/14/2020
+  ms.date: 08/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.2-what-if
-title: Unit
+title: Predict what a deployment will do with What-if
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Predict what a deployment will do with What-if
+  description: The What-if tool lets you see what a deployment template will carry out if it was deployed. Knowing what will happen is an important part of your workflow.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 08/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

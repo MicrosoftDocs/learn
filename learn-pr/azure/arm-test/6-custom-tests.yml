@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.6-custom-tests
-title: Unit
+title: Author custom tests
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Author custom tests
+  description: The testing tool comes with a set of tests that it runs at every invocation of the tool. However, you might want to apply org-specific tests to your templates. This is exactly what you can do by authoring custom tests that can also be run by the testing toolkit.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 08/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

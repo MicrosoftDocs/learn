@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.7-exercise-custom-tests
-title: Unit
+title: Exercise - Author and run Custom tests with the test toolkit
 metadata:
-  title: Unit
-  description: Describe unit
+  title: Exercise - Author and run Custom tests with the test toolkit
+  description: Author and run custom tests to ensure your templates complies with org-specific requirements.
   author: softchris
   ms.author: chnoring
-  ms.date: 04/14/2020
+  ms.date: 08/12/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
