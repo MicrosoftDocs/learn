@@ -15,7 +15,7 @@ prerequisites: |
  - Visual Studio Code installed
  - Python installed
  - Ability to code simple programs in Python
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/machine-learning-predict-launch-delay-nasa.svg
 levels:
 - beginner
 roles:
@@ -27,4 +27,4 @@ modules:
 - learn.student-evangelism.collect-manipulate-data-python-nasa
 - learn.student-evangelism.machine-learning-model-nasa
 trophy:
-  uid: https://docs.microsoft.com/media/learn/module.svg
+  uid: learn.student-evangelism.machine-learning-predict-launch-delay-nasa.trophy

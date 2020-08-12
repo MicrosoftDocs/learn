@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
  - Basic Python experience
  - Have clean data about rocket launches
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/student-evangelism/machine-learning-model-nasa.svg
 levels:
 - beginner
 roles:

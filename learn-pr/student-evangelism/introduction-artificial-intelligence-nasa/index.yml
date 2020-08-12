@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
  - Ability to write and run introductory Python programs
  - Visual Studio Code, a Python extension, and Jupyter Notebook installed
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/student-evangelism/introduction-artificial-intelligence-nasa.svg
 levels:
 - beginner
 roles: 

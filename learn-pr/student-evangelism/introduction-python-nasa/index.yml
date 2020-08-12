@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - A Windows, Mac, or Linux computer
   - Knowledge of how to download programs from the Internet
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/student-evangelism/introduction-python-nasa.svg
 levels: 
 - beginner
 roles: 

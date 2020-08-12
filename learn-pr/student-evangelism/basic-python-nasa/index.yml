@@ -21,7 +21,7 @@ prerequisites: |
   - Visual Studio Code installed
   - Python installed
   - Python extension installed
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/student-evangelism/basic-python-nasa.svg
 levels:
 - beginner
 roles:

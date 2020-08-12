@@ -21,7 +21,7 @@ summary: |
   - See actual NASA employees talk about their job and give advice
 
 prerequisites: None
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/introduction-python-space-exploration-nasa.svg
 levels:
 - beginner
 roles:
@@ -35,4 +35,4 @@ modules:
 - learn.student-evangelism.intermediate-python-nasa
 - learn.student-evangelism.count-moon-rocks-python-nasa
 trophy:
-  uid: https://docs.microsoft.com/media/learn/module.svg
+  uid: learn.introduction-python-space-exploration-nasa.trophy
