@@ -3,7 +3,7 @@ uid: learn.wwl.review-microsoft-azure-pricing-slas-lifecycles
 metadata:
   title: Review Microsoft Azure pricing, Service Level Agreements, and lifecycles (AZ-900)
   description: We will examine factors that affect Azure costs and how you can minimize costs. Additionally, we will explore Azure support plans, Azure SLAs, and the service lifecycle in Azure. AZ-900
-  ms.date: 06/25/2020
+  ms.date: 07/03/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

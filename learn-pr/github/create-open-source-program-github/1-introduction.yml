@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.create-open-source-program-github.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn to create a successful open-source program by establishing contributor guidance, following proven processes, and leveraging community standards.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

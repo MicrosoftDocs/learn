@@ -21,13 +21,17 @@ You might need to consider the language of the package and the process for acces
 * [Maven documentation](https://maven.apache.org/guides/?azure-portal=true)
 * [Chocolatey documentation](https://chocolatey.org/docs?azure-portal=true)
 
-## More about dependency management
+## Appendix
+
+The following sections are optional. They provide additional information beyond what's covered in this module.
+
+### More about dependency management
 
 Now that you've got some practical experience with using packages in the pipeline, let's talk about some general principles of dependency management.
 
 Codebases are always growing larger and more complex. It's unusual for a team to write all the code that their application uses. Instead, the team includes existing code written by other developers and there can be many of these packages, or dependencies, in an application. It's important to actively manage these dependencies to be able to maintain them properly and make sure they meet security requirements.
 
-### Elements of a dependency management strategy
+#### Elements of a dependency management strategy
 
 A good dependency management strategy depends on these three elements:
 
@@ -40,7 +44,7 @@ A good dependency management strategy depends on these three elements:
 * Versioning.
     You need to keep track of the changes that occur over time in dependencies just as you do with your own code. This means that dependencies should be versioned.
 
-### Identify dependencies
+#### Identify dependencies
 
 If the goal is to reorganize your code into separate components, you need to identify those pieces of your application that can be removed, packaged to be reusable, stored in a central location, and versioned. You may even want to replace your own code with third-party components that are either open source or that you license.
 
@@ -64,7 +68,7 @@ There are a number of ways to identify the potential dependencies in your codeba
 
 You can use a variety of tools to assist you in scanning and examining your codebase. These range from tools that scan for duplicate code and draw solution dependency graphs to tools that can compute metrics for coupling and cohesion.
 
-### Types of packages
+#### Types of packages
 
 Earlier in this module, we discussed some of the formats that are available. Here's more information about them. 
 
@@ -81,7 +85,7 @@ Earlier in this module, we discussed some of the formats that are available. Her
 
     Docker packages are called images and contain complete, self-contained deployments. Most commonly, a Docker image represents a software component that can be hosted and executed by itself, without any dependencies on other images. Docker images are layered and might be dependent on other images. See also, [Docker](https://www.docker.com/?azure-portal=true).
 
-### Include a versioning strategy in the build pipeline
+#### Include a versioning strategy in the build pipeline
 
 When you use a build pipeline, packages need versions before they can be consumed and tested. However, only after you've tested the package can you know its quality. Since package versions should never be changed, it becomes challenging to choose a certain version beforehand.
 
@@ -93,21 +97,21 @@ Feeds in Azure Artifacts have three different views by default. These views are 
 * Prerelease. The @prerelease view contains all packages that have a label in their version number.
 * Local. The @local view contains all release and prerelease packages as well as the packages downloaded from upstream sources.
 
-### Using views
+#### Using views
 
 You can use views to help consumers of a package feed to filter between released and unreleased versions of packages. Essentially, views allow a consumer to make a conscious decision to choose from released packages, or opt-in to prereleases of a certain quality level.
 
-## Package security in Azure Artifacts
+### Package security in Azure Artifacts
 
 Ensuring the security of your packages is as important as ensuring the security of the rest of your code. One aspect of package security is securing access to the package feeds where a feed, in Azure Artifacts, is where you store packages. Setting permissions on the feed allows you to share your packages with as many or as few people as your scenario requires.
 
-### Feed permissions overview
+#### Feed permissions overview
 
 Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Each level of access has a certain set of permissions. For example, Owners can add any type of identity-individuals, teams, and groups-to any access level. By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
 
 To learn more about how to configure secure access to package feeds, see [Secure and share packages using feed permissions](https://docs.microsoft.com/azure/devops/artifacts/feeds/feed-permissions?view=azure-devops?azure-portal=true).
 
-### Configure the pipeline to access security and license ratings
+#### Configure the pipeline to access security and license ratings
 
 There are several tools available from third parties to help you assess the security and license rating of the software packages you use.
 

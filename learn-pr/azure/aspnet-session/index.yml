@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.azure.aspnet-session
+metadata:
+  title: Improve session scalability in a .NET Framework ASP.NET web application by using Azure Cache for Redis
+  description: Learn how to use Azure Cache for Redis to store session data and improve the scalability of web applications. 
+  ms.date: 06/30/2020
+  author: coderandhiker
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Improve session scalability in a .NET Framework ASP.NET web application by using Azure Cache for Redis
+summary: Learn how to use Azure Cache for Redis to store session data and improve the scalability of web applications.
+abstract: |
+  In this module, you will:
+  - Configure ASP.NET to store session data by using Azure Cache for Redis
+prerequisites: |
+  - Some C# programming experience
+  - Familiarity with ASP.NET development
+  - A development environment that has Windows 10 and Visual Studio 2019 with the latest updates
+  - Git for Windows installed on your desktop 
+iconUrl: /learn/achievements/aspnet-session.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- aspnet
+- azure-web-apps
+- azure-cache-redis
+- dotnet
+units:
+- learn.azure.aspnet-session.1-introduction
+- learn.azure.aspnet-session.2-exercise-deploy-resources
+- learn.azure.aspnet-session.3-aspnet-session-overview
+- learn.azure.aspnet-session.4-exercise-aspnet-session
+- learn.azure.aspnet-session.5-summary
+badge:
+  uid: learn.azure.aspnet-session.badge

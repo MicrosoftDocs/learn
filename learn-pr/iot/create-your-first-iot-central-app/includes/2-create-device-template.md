@@ -14,7 +14,7 @@ In this unit, you'll create a device template for a refrigerated truck.
     > [!TIP]
     > Take note of the other options. You may want to use those prebuilt template options in a future project!
 
-1. Click **Next: Customize**, then **Next: Review**. Do not select the **Gateway device** box. Then click **Create**.
+1. Click **Next: Customize**, then **Next: Review**. Don't select the **Gateway device** box. Then click **Create**.
 
 1. Enter the name for your device template, "RefrigeratedTruck", and hit Enter.
 
@@ -22,16 +22,16 @@ In this unit, you'll create a device template for a refrigerated truck.
 
     [![Screenshot showing the most important controls when creating a device template](../media/refrigerated-trucks-new-template.png)](../media/refrigerated-trucks-new-template.png#lightbox)
 
-    > [!NOTE]
-    > Take note of a few important elements of the above image. Including that the template is in Draft form, and the locations of the **+ Add interface**, **Views**, and **Publish** controls.
+    > [!TIP]
+    > Take note of a few important elements of the above image. Including that the template is in **Draft** form, and the locations of the **+ Add interface**, **Views**, and **Publish** controls.
 
-1. You are now ready to add the specifics of the device template. Click **Add interface**, then **Custom**, to start building from a blank interface.
+1. You're now ready to add the specifics of the device template. Click **Add interface**, then **Custom**, to start building from a blank interface.
 
 An interface defines a set of _capabilities_. We have quite a few to create, to define a refrigerated truck.
 
 ### Add sensor telemetry
 
-Telemetry is the data values transmitted by sensors. The most important sensor in our refrigerated truck, monitors the temperature of the contents.
+Telemetry is the data values transmitted by sensors. The most important sensor in our refrigerated truck monitors the temperature of the contents.
 
 1. Click **+ Add capability**, and enter the following values:
 
@@ -48,8 +48,11 @@ Telemetry is the data values transmitted by sensors. The most important sensor i
 
     [![Screenshot showing how to create temperature telemetry for the simulated device](../media/refrigerated-trucks-temperature.png)](../media/refrigerated-trucks-temperature.png#lightbox)
 
-    > [!IMPORTANT]
+    > [!NOTE]
     > The names entered for the interface must be entered _exactly_ as shown in this unit. This is because an exact match is needed between these names, and entries in the code you'll be adding later in this module.
+
+    > [!IMPORTANT]
+    > In all locales, capability names can currently _only_ contain characters **A** through **Z**, upper or lower case, the digits **0** through **9**, and the underscore **_**. No spaces, special characters, or localized characters, are allowed.
 
 Let's add the rest of the template.
 
@@ -85,7 +88,7 @@ States are important, they let the operator know what is going on. A state in Io
     | Semantic type | State |
     | Value schema | String |
 
-1. Now add three values: on, off, and failed. Make sure that each word appears in the **Display name**, **Name**, and **Value** fields.
+1. Now add three values: "on", "off", and "failed". Make sure that each word appears in the **Display name**, **Name**, and **Value** fields.
 
     [![Screenshot showing how to create cooling system state for the simulated device](../media/refrigerated-trucks-cooling.png)](../media/refrigerated-trucks-cooling.png#lightbox)
 
@@ -139,11 +142,11 @@ A location is probably the most important, and yet one of the easiest measuremen
 
 ### Add properties
 
-A property of a device is typically a constant value, that is communicated to the IoT Central app when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
+A property of a device is typically a constant value, that is sent to the IoT Central app when communication is first initiated. In our refrigerated truck scenario, a good example of a property is the license plate of the truck, or some similar unique truck ID.
 
-Properties can also be device configuration data. We will define an _optimal temperature_ for the truck contents as a property. This optimal temperature might change with different types of content, different weather conditions, or whatever might be appropriate. A setting has an initial default value, which may not need to be changed, but the ability to change it easily and quickly is there, if needed. This kind of property is called a _writable property_.
+Properties can also be device configuration data. We will define an _optimal temperature_ for the truck contents as a property. This optimal temperature might change with different types of content, different weather conditions, or whatever might be appropriate. This kind of property is called a _writable property_.
 
-A property is a single value. If more complex sets of data need to be transmitted to a device, a Command (see below) is the more appropriate way of handling it.
+A property is a single value. If more complex sets of data need to be transmitted to a device, a **Command** (see below) is the more appropriate way of handling it.
 
 1. Use **+ Add capability**, and add the truck ID property.
 
@@ -164,7 +167,7 @@ A property is a single value. If more complex sets of data need to be transmitte
     | Display Name | Optimal Temperature |
     | Name | OptimalTemperature |
     | Capability Type | Property |
-    | Semantic type | None |
+    | Semantic type | Temperature |
     | Schema | Double |
     | Writable | On |
     | Unit |  <sup>o</sup>C  |
@@ -175,7 +178,7 @@ A property is a single value. If more complex sets of data need to be transmitte
 
 ### Add commands
 
-Commands are sent by the operator of the IoT Central app to the remote devices. Commands are similar to writable properties, but a command can contain any number of input fields, whereas a writable property is limited to a single value.
+Commands are sent by the operator of the IoT Central app, to the remote devices. Commands are similar to writable properties, but a command can contain any number of input fields, whereas a writable property is limited to a single value.
 
 For refrigerated trucks, there are two commands you should add: a command to deliver the contents to a customer, and a command to recall the truck to base.
 
@@ -213,7 +216,7 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
     [![Screenshot to help validate the two commands for the simulated device have been entered correctly](../media/refrigerated-trucks-commands.png)](../media/refrigerated-trucks-commands.png#lightbox)
 
-1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are very limited editing options. It's important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
+1. Click **Save**. Before going any further carefully double check your interface. After an interface has been published, there are limited editing options. It's important to get it right before publishing. If you click on the name of the device template, in the menu that ends with the **Views** option, you'll get a summary of the capabilities.
 
     [![Screenshot to help validate the capabilities of the simulated device](../media/refrigerated-trucks-capabilities.png)](../media/refrigerated-trucks-capabilities.png#lightbox)
 
@@ -223,6 +226,6 @@ For refrigerated trucks, there are two commands you should add: a command to del
 
 1. Click **Publish**. You should see that the annotation changes from **Draft** to **Published**.
 
-Preparing a device template does take some care and some time.
+Preparing a device template does take some care, and some time.
 
-In the next unit, you use the capabilities of the device template to prepare a controllers dashboard. Preparing views can be done before, or after, a device template is published.
+In the next unit, you use the capabilities of the device template to prepare a controller's dashboard. Preparing views can be done before, or after, a device template is published.

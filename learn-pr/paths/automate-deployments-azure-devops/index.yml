@@ -18,8 +18,6 @@ summary: |
   - Build and apply a Terraform plan that automatically provisions Azure App Service in Azure Pipelines.
   - Run an Ansible playbook that automatically configures virtual machines running on Azure.
   - Use an Azure Resource Manager template to automatically provision and configure Azure SQL Database in Azure Pipelines.
-
-  Take this learning path to help prepare for [Exam AZ-400: Microsoft Azure DevOps Solutions](https://www.microsoft.com/learning/exam-az-400.aspx).
 prerequisites: |
   - [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices)
   - [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops)

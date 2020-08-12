@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.build-web-api-nodejs-express.6-middleware
+title: Manage a request lifecycle with middleware
+metadata:
+  title: Manage a request lifecycle with middleware
+  description: This unit explains how you can manage the lifecycle of a request using middleware.
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-middleware.md)]

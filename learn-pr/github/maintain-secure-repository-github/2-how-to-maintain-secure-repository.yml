@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.maintain-secure-repository-github.2-how-to-maintain-secure-repository
+title: How to maintain a secure GitHub repository
+metadata:
+  title: How to maintain a secure GitHub repository
+  description: Learn best practices for maintaining a secure GitHub repository.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-how-to-maintain-secure-repository.md)]

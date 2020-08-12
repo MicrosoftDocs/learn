@@ -19,8 +19,8 @@ In this task, we will create a new container instance for the web application.
 
 	| Setting| Value|
 	|----|----|
-	| Subscription | Ensure **Concierge Subscription** |
-	| Resource group | **[sandbox resource group name]** |
+	| Subscription | Select your Subscription |
+	| Resource group | **(Create New)** a resource group called **myContainerRG** |
 	| Container name| **mycontainer**|
 	| Region | **(US) East US** |
 	| Image source| **Docker Hub or other registry**|

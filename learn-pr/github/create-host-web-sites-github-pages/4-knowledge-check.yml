@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.github.create-host-web-sites-github-pages.4-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check what you've learned.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How do you enable GitHub Pages for your repository?"
+    choices:
+    - content: "Email GitHub support and ask for your free web site installation kit."
+      isCorrect: false
+      explanation: "GitHub Pages can be enabled from the **Settings** tab of the repository."
+    - content: "Subscribe to GitHub Enterprise and wait for further instructions in email."
+      isCorrect: false
+      explanation: "There's no need to subscribe or wait for anything. Simply enable GitHub Pages **Settings** tab of your repository."
+    - content: "Select a **Source** from the **GitHub Pages** section of the **Settings** tab of your repository."
+      isCorrect: true
+      explanation: "Correct! After a moment or two, your site will be provisioned and ready to go."
+  - content: "Which of the following **cannot** be hosted on GitHub Pages?"
+    choices:
+    - content: "Personal sites, like your resume or portfolio."
+      isCorrect: false
+      explanation: "GitHub Pages are an excellent option for personal sites. It's the perfect one-two punch. First everyone will be impressed that you have GitHub Pages configured, and then they'll be blown away by your other accomplishments."
+    - content: "Dynamic server-side applications."
+      isCorrect: true
+      explanation: "GitHub Pages only hosts static content. However, you can still use JavaScript to add dynamic behavior and even integrate with external services from your site. For server-side apps, step up to Azure Web Apps."
+    - content: "Professional sites, like product pages and marketing campaigns."
+      isCorrect: false
+      explanation: "GitHub Pages are a great solution for sites hosting any content that can be stored in your repository."
+  - content: "Which of the following would you most likely use to edit the body content of your GitHub Pages site?"
+    choices:
+    - content: "Markdown"
+      isCorrect: true
+      explanation: "Markdown is the preferred syntax for creating and editing the core content of your site. You can also use HTML and the Liquid templating language."
+    - content: "Jekyll"
+      isCorrect: false
+      explanation: "Jekyll is the static site generator that consumes the Markdown and HTML pages in your site and produces the final site HTML."
+    - content: "YAML"
+      isCorrect: false
+      explanation: "YAML is the syntax used to configure the settings and metadata for your web site in **_config.yml** and the front matter of pages."

@@ -3,7 +3,7 @@ uid: learn.wwl.train-evaluate-deep-learn-models
 metadata:
   title: Train and evaluate deep learning models
   description: "Deep learning is an advanced form of machine learning that emulates the way the human brain learns through networks of connected neurons."
-  ms.date: 06/27/2020
+  ms.date: 08/13/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   - Basic mathematical concepts
   - Understanding of classical machine learning techniques.
   - Programming with Python
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/train-and-evaluate-deep-learning-models.svg
 levels:
 - advanced
 roles:

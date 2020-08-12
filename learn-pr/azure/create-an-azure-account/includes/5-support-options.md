@@ -31,6 +31,7 @@ Ask questions, get answers, and connect with Microsoft engineers and community e
 > |---------|-------------|
 > | **Azure Knowledge Center** | The Azure Knowledge Center is a searchable database that contains answers to common support questions. |
 > | **Microsoft Tech Community** | Get support by reading responses to Azure technical questions from Microsoft's developers and testers. |
+> | **Microsoft Q&A** | Find answers to your technical questions about selected Azure products. |
 > | **Stack Overflow** | You can review answers to questions from the development community. |
 > | **Server Fault** | Review community responses to questions about System and Network Administration in Azure.|
 > | **Azure Feedback Forums** | Read ideas and suggestions for improving Azure made by Azure users. |

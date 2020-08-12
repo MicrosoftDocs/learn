@@ -15,9 +15,10 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "The public relations division of a major European automobile manufacturer would like to gain an understanding of public perception of its company and products. The company has numerous social media accounts for all of their products and services.   
-Those accounts receive millions of comments from the public about their products every day. The PR Director would like to utilize Microsoft AI to summarize public opinion from social media and design marketing materials accordingly.  
-Which aspect of Azure Cognitive Services will provide what the PR Director wants?"
+  - content: |
+      The public relations division of a major European automobile manufacturer would like to gain an understanding of public perception of its company and products. The company has numerous social media accounts for all of their products and services.   
+      Those accounts receive millions of comments from the public about their products every day. The PR Director would like to utilize Microsoft AI to summarize public opinion from social media and design marketing materials accordingly.  
+      Which aspect of Azure Cognitive Services will provide what the PR Director wants?
     choices:
     - content: "Vision Capabilities"
       isCorrect: false
@@ -31,11 +32,12 @@ Which aspect of Azure Cognitive Services will provide what the PR Director wants
     - content: "Expose Search"
       isCorrect: false
       explanation: "Incorrect. Expose Search applies a Bing-type search to input from a user to provide relative information on that input. It does not summarize millions of comments."
-  - content: "A company runs a call center for the sole purpose of answering customer questions. Over the years, they have developed an extensive FAQ document, addressing most of the questions they receive at the call center.  
+  - content: |
+      A company runs a call center for the sole purpose of answering customer questions. Over the years, they have developed an extensive FAQ document, addressing most of the questions they receive at the call center.  
     
-The COO of the company would like to use Microsoft AI to enhance the automated attendant to hear and answer questions over the phone.  
+      The COO of the company would like to use Microsoft AI to enhance the automated attendant to hear and answer questions over the phone.  
   
-Which aspect of Azure Cognitive Services can provide this functionality for the call center?"
+      Which aspect of Azure Cognitive Services can provide this functionality for the call center?
     choices:
     - content: "Knowledge Understanding"
       isCorrect: true
@@ -49,11 +51,12 @@ Which aspect of Azure Cognitive Services can provide this functionality for the 
     - content: "Vision Capabilities"
       isCorrect: false
       explanation: "Incorrect. Vision Capabilities is designed to look at pictures or even handwritten forms and interpret or convert to text what is seen in the picture."
-  - content: "A national cellular phone carrier operates an extensive wireless network all across North America. Every cellular tower and communications center produces significant volumes of log data, recordings of all the activity for that location. The logs include calls, SMS messaging, errors, warnings, etc. It is all logged in a very cryptic and abbreviated format.  
+  - content: |
+      A national cellular phone carrier operates an extensive wireless network all across North America. Every cellular tower and communications center produces significant volumes of log data, recordings of all the activity for that location. The logs include calls, SMS messaging, errors, warnings, etc. It is all logged in a very cryptic and abbreviated format.  
     
-Across the entire network, about 10 terabytes of log data are aggregated each day. The company is required by law to store this log data for three years. They want to find a way to extract some useful information from all this data, such as usage patterns, error and critical failure patterns, etc.  
+      Across the entire network, about 10 terabytes of log data are aggregated each day. The company is required by law to store this log data for three years. They want to find a way to extract some useful information from all this data, such as usage patterns, error and critical failure patterns, etc.  
     
-Which Microsoft AI service can provide this?"
+      Which Microsoft AI service can provide this?
     choices:
     - content: "Cognitive Search"
       isCorrect: true
@@ -67,9 +70,10 @@ Which Microsoft AI service can provide this?"
     - content: "Machine Learning"
       isCorrect: false
       explanation: "Incorrect. Machine learning can process tons of data but its purpose to predict results based on input. It needs some structure in the data to show which inputs produce certain outputs."
-  - content: "The Inking feature of Windows 10 can read things drawn on the screen with a pen and interpret them into the letters/numbers/images intended by the artist.  
+  - content: |
+      The Inking feature of Windows 10 can read things drawn on the screen with a pen and interpret them into the letters/numbers/images intended by the artist.  
     
-Which type of Microsoft AI technology provides this functionality?"
+      Which type of Microsoft AI technology provides this functionality?
     choices:
     - content: "Automated Machine Learning"
       isCorrect: false

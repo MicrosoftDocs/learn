@@ -19,7 +19,7 @@ Azure Security Center is available in two tiers:
 
 To access the full suite of Azure Security Center services you will need to upgrade to a Standard tier subscription. You can access the 30-day free trial from within the Azure Security Center dashboard in the Azure portal.
 
-[![Showing the Azure Security Center - Getting Started dashboard in the Azure portal. Information about a free 30-day trial displays.](../media/security-center-dashboard.png)](../media/security-center-dashboard.png#lightbox)
+:::image type="content" source="../media/azure-security-center-free-trial.png" alt-text="Showing the Azure Security Center - Getting Started dashboard in the Azure portal. Information about a free 30-day trial displays.":::
 
 + To upgrade a subscription to the Standard tier, you must be assigned the role of *Subscription Owner*, *Subscription Contributor*, or *Security Admin*.
 + After the 30-day trial period is over, Azure Security Center is priced as per details on the [Security Center pricing](https://azure.microsoft.com/pricing/details/security-center?azure-portal=true) page.

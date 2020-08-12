@@ -5,11 +5,7 @@ In this section, we'll use the [SMS Spam Collection dataset](https://archive.ics
 | ham |	What you doing?how are you? |
 | ham |	Ok lar... Joking wif u oni... |
 
-Let’s import pandas and load the dataset. The path name in the following code is case-sensitive.
-
-> [!TIP]
-> If you haven't set up a Visual Studio Code environment with Jupyter Notebooks using Python and libraries like pandas, the [Introduction to Python](https://review.docs.microsoft.com/learn/reactors/python-data-science/1-introduction?branch=new-data-science-1) module might be a useful first step.
->
+Let's import pandas and load the dataset. The path name in the following code is case-sensitive.
 
 ```python
 import pandas as pd 
@@ -24,11 +20,11 @@ What do the `sep` and `names` parameters do in the preceding code?
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  If you are unsure, you can refer to the built-in Help documentation by using <code>pd.read_csv?</code> in a new code cell.
+  If you're unsure, you can refer to the built-in Help documentation by using <code>pd.read_csv?</code> in a new code cell.
 
   *Answer*:
 
-  In the preceding code, `sep='\t'` displays the output elements separated by a tab character and `names` creates column names in the output.
+  In the preceding code, `sep='\t'` displays the output elements separated by a tab character, and `names` creates column names in the output.
 
 </details>
 
@@ -89,12 +85,12 @@ df.head()
 
 ### Try it yourself
 
-What do you think the purpose of the `-1` parameter passed to `pd.set_option()` is in the code cell above?
+What do you think the purpose of the `-1` parameter passed to `pd.set_option()` is in the preceding code cell?
 
 <details>
   <summary>Hint <i>(expand to reveal)</i></summary>
 
-  The `-1` parameter chooses the last column in the dataframe to  make sure that the message column has the most accommodating width.
+  The `-1` parameter chooses the last column in the dataframe to make sure that the message column has the most accommodating width.
 
 </details>
 

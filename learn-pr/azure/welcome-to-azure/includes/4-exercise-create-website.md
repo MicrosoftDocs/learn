@@ -42,7 +42,7 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     This option takes you to the **Azure Marketplace**.
 
-    :::image source="../media/4-azure-marketplace.png" alt-text="Screenshot of Azure portal showing Azure marketplace categories in a left column and popular options in a right column.":::
+    :::image source="../media/4-azure-marketplace.png" alt-text="Screenshot of Azure portal showing Azure Marketplace categories in a left column and popular options in a right column.":::
 
 1. The Azure Marketplace has many services, solutions, and resources available for you to use. Since we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** box above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
 
@@ -89,6 +89,8 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
     [![Screenshot of Azure portal showing the App Service Plan Spec Picker pane with the Dev/Test section selected and the free F1 tier and apply button highlighted.](../media/4-select-pricing-tier.png)](../media/4-select-pricing-tier-expanded.png#lightbox)
 
 1. Back on the **New App Service plan** panel, select **OK** to create the new plan and close the panel.
+
+    :::image source="../media/4-new-service-plan-config-set.png" alt-text="Screenshot of Azure portal showing New App Service Plan configuration after selecting the F1 free pricing tier.":::
 
 1. Finally, select the **Create** button to start the deployment of your new site.
 

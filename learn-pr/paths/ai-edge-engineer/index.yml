@@ -57,7 +57,7 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
-- azure-machine-learning-service
+- azure-machine-learning
 - azure-resource-manager
 - azure-virtual-machines
 modules:
@@ -68,7 +68,12 @@ modules:
 - learn.oxford.train-package-azure-ml-module-iot-edge
 - learn.oxford.intro-iot-funtions-iot
 - learn.oxford.deploy-cognitive-service-iot-edge-azure-func
+- learn.oxford.run-cognitive-services-iot-edge
 - learn.oxford.intro-mlops-iot-edge
+- learn.oxford.implement-cicd-iot-edge
 - learn.oxford.intro-azure-sphere
+- learn.oxford.image-classification-azure-sphere
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere-iot-hub
+- learn.oxford.develop-secure-iot-solutions-for-azure-sphere
 trophy:
   uid: learn.oxford.ai-edge-engineer.trophy

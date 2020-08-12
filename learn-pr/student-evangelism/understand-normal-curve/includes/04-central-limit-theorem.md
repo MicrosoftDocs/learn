@@ -198,8 +198,8 @@ approximately normal, with an average and an SD that we can approximate.
 ### Average flight delay
 
 The table `united` contains data on departure delays of 13,825 United
-Airlines domestic flights out of San Francisco airport in the summer of
-2015. As we have seen before, the distribution of delays has a long
+Airlines domestic flights out of San Francisco airport in the summer of 2015.
+As we have seen before, the distribution of delays has a long
 right-hand tail.
 
 ``` python

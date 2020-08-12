@@ -497,5 +497,3 @@ important to keep some points in mind.
     -   The probability distribution of the statistic is not roughly
         bell shaped.
     -   The original sample is small, say less than 10 or 15.
-e probability distribution of the statistic is not roughly
-        bell shaped.

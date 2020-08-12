@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.resource-manager-template-reuse.2-azure-resource-manager-functions
+title: Add flexibility to your Azure Resource Manager template by using template functions
+metadata:
+  title: Add flexibility to your Azure Resource Manager template by using template functions
+  description: Discover how to work with several Azure Resource Manager functions to create useful expressions.
+  ms.date: 07/10/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-azure-resource-manager-functions.md)]
