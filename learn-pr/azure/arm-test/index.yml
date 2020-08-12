@@ -19,6 +19,7 @@ abstract: |
   - Use the ARM Template Test Toolkit to check templates for standards 
 
   - Create a custom test for an ARM Template 
+summary: TBD
 iconUrl: /learn/achievements/undefined.svg
 levels:
   - beginner
