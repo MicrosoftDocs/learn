@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.count-moon-rocks-python-nasa.2-set-up-program
+metadata:
+  title: Exercise - Create a Jupyter Notebook to explore data about Moon rocks
+  description: Set up the project to explore data about Moon rocks.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create a Jupyter Notebook to explore data about Moon rocks
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-set-up-program.md)]

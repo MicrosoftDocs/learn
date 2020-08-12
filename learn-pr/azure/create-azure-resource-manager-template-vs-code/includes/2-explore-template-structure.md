@@ -11,6 +11,8 @@ With infrastructure as code, you can maintain both your application code and eve
 - Faster deployments
 - Better traceability
 
+Watch this video to get an introduction to infrastructure as code:
+
 > [!VIDEO https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Infrastructure-as-Code--One-Dev-Question/player?format=ny]
 
 ## What is an ARM template?
@@ -19,7 +21,7 @@ ARM templates are JavaScript Object Notation (JSON) files that define the infras
 
 ARM templates allow you to declare what you intend to deploy without having to write the sequence of programming commands to create it. In an ARM template, you specify the resources and the properties for those resources. Then [Azure Resource Manager](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true) uses that information to deploy the resources in an organized and consistent manner.
 
-### Benefits of using ARM templates
+### Benefits of ARM templates
 
 ARM templates allow you to automate deployments and use the practice of infrastructure as code (IaC). The template code becomes part of your infrastructure and development projects. Just like application code, you can store the IaC files in a source repository and version it.
 
