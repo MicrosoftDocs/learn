@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
  - Visual Studio Code with Python and Jupyter Extensions
  - Some Python experience
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/student-evangelism/collect-manipulate-data-python-nasa.svg
 levels:
 - beginner
 roles:

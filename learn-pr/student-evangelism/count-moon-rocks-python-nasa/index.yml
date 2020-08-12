@@ -21,7 +21,7 @@ prerequisites: |
   - Python extension installed in Visual Studio Code
   - Python and Jupyter Notebooks installed
   - Knowledge about introductory Python topics
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/student-evangelism/count-moon-rocks-python-nasa.svg
 levels:
 - beginner
 roles:

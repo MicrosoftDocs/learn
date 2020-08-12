@@ -18,7 +18,7 @@ prerequisites: |
  - Ability to write and run introductory Python programs
  - Visual Studio Code, a Python extension, and Jupyter Notebook installed
  - Artificial intelligence libraries installed
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/student-evangelism/train-test-predictive-ai-model-nasa.svg
 levels:
 - beginner
 roles:

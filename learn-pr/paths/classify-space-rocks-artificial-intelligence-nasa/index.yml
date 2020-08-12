@@ -12,7 +12,7 @@ metadata:
 title: Classify space rocks by using Python and artificial intelligence
 summary: This learning path gives you a view into the worlds of AI and space. Learn how to create an AI model that can classify the type of space rock in a random photo.
 prerequisites: A basic understanding of Python for Data Science (placeholder link to previous learning path)
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+iconUrl: /learn/achievements/classify-space-rocks-artificial-intelligence-nasa.svg
 levels:
 - beginner
 roles:
@@ -26,4 +26,4 @@ modules:
 - learn.student-evangelism.analyze-rock-images-ai-nasa
 - learn.student-evangelism.train-test-predictive-ai-model-nasa
 trophy:
-  uid: https://docs.microsoft.com/media/learn/module.svg
+  uid: learn.classify-space-rocks-artificial-intelligence-nasa.trophy
