@@ -1,19 +1,19 @@
-Azure SQL Database and Azure SQL Managed Instance provide great availability options by default among the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances, and you can directly see the impact on the service level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
+Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances, and you can directly see the impact on the service-level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
 
-## Availability zones
+## Availability Zones
 
-In the Business critical tier in Azure SQL Database, you can opt in (for no additional fee) for a zone redundant configuration if your region supports that. At a high level, the Always On Availability Group (AG) that is running behind Business critical databases and managed instances is deployed across three different availability zones (AZ) within a region. An AZ is basically a separate datacenter within a given region with some distance between another AZ. This capability protects against catastrophic failures that may occur in a region to a datacenter.
+In the Business critical tier in Azure SQL Database, you can opt in (for no additional fee) for a zone-redundant configuration if your region supports that. At a high level, the Always On availability group (AG) that runs behind Business critical databases and managed instances is deployed across three Availability Zones within a region. An Availability Zone is basically a separate datacenter within a given region. There's always a physical separation between Availability Zones. This capability protects against catastrophic failures that might occur to a datacenter in a region.
 
 
-:::image type="content" source="../media/7-availability-zones.png" alt-text="Screenshot of the availability zone architecture." border="false":::
+:::image type="content" source="../media/7-availability-zones.png" alt-text="Diagram that shows the Availability Zone architecture." border="false":::
 
-From performance standpoint, there may be a small increase in network latency, since your AG is now spread across datacenters with some distance between them. For this reason, leveraging AZs is not turned on by default. You have the choice to opt for what's commonly called a "multi-az" or "single-az" deployment. Making this decision is as simple as adding a parameter to a PowerShell/Azure CLI command or checking a box in the portal.  
+From performance standpoint, there might be a small increase in network latency because your AG is now spread across datacenters that have some distance between them. For this reason, Availability Zones isn't turned on by default. You can choose to use what's commonly called a "Multi-Az" or a "Single-Az" deployment. Configuring this option is as simple as adding a parameter to a PowerShell/Azure CLI command or selecting a check box in the portal.  
 
-Availability zones are relatively new to Azure SQL, so are currently only available in select regions and service tiers. Over time, this capability will likely change to be supported in more regions and potentially more service tiers.
+Availability Zones are relatively new to Azure SQL, so they're currently  available only in certain regions and service tiers. Over time, this capability is likely to be supported in more regions and potentially more service tiers.
 
 ## Azure SQL SLA
 
-Azure SQL maintains a Service Level Agreement (SLA), which provides financial backing to the commitment to achieve and maintain Service Levels for the service. If your Service Level is not achieved and maintained as described in the SLA, you may be eligible for a credit towards a portion of your monthly service fees.
+Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit towards a portion of your monthly service fees.
 
 Currently, the highest availability (99.995%) can be achieved from an Azure SQL Database Business critical deployment with Availability Zones configured. Additionally, the Business critical tier is the only option in the industry, which supplies RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for recovery point object, which represents how much data one is potentially prepared and willing to lose in the worst case scenario. RTO stands for recovery time objective, which represents how much time it takes, if or when a disaster occurs, to be back up and running again.
 

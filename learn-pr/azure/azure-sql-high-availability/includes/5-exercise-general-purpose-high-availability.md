@@ -53,7 +53,7 @@ The first step is to create a long-running workload. This workload will allow yo
     az configure --list-defaults
     ```
 
-1. Configure your windows so that you can see this browser and the Command Prompt window in one view.  
+1. Configure your windows so that you can see this browser and the Command Prompt window at the same time.  
 
 1. Run this code in the Azure Cloud Shell terminal:
 

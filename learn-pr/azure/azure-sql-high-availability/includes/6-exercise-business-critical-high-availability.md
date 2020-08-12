@@ -70,33 +70,31 @@ In a previous module of this learning path, you learned how to scale a database 
 
 As in the previous exercise, you'll use OStress to repeatedly query your Azure SQL database.
 
-1. Open a new Command Prompt window on your local computer. Use `cd` to change directories to where the availability module is in the repository you cloned or downloaded earlier. For example, you might use
+1. Open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command: 
 
     ```cmd
     cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability
     ```
 
-    If `C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability` was the filepath to the folder.
+    The OStress workload connects and runs a simple query 50,000 times.
 
-    The ostress workload will essentially connect and runs a simple query 50,000 times.
-
-1. Before running the workload, you will need to update the below ostress script by replacing `serverName` with the name of your Azure SQL Database logical server, and `password` with your password. Note that this command is slightly different because the database name is now `AdventureWorks-bc`.
+1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server and `password` with your password. Note that this command is slightly different from the one in the previous exercise. The database name is now `AdventureWorks-bc`.
 
     ```cmd
     .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks-bc" -P"password" -n1 -r50000
     ```
 
-    If your workload is running properly, you should be seeing the result of the query `847` repeatedly appearing in the Command Prompt.
+    If your workload is running properly, you should be seeing the result of the query, `847`, repeatedly appearing in the Command Prompt window.
 
-    If at any time, you want to stop running the ostress workload before it is complete, you can go into the terminal and press `CTRL` + `c`.  
+    If you want to stop running the OStress workload before it's done, you can select **Ctrl+C** in the terminal.  
 
-    If at any time, you want to run the workload again, you can run the command again.  
+    If you want to run the workload again, you can run the command again.  
 
-## Initiate a failover and observe the results
+## Initiate a failover and view the results
 
-1. Configure your windows so that you can see this browser and the Command Prompt in one view.  
+1. Configure your windows so that you can see this browser and the Command Prompt window at the same time.  
 
-1. Next, run the following code in the Azure Cloud Shell terminal. Note this is the same command you used in the previous exercise.
+1. Run the following code in the Azure Cloud Shell terminal. This command is the same as the one you used in the previous exercise.
 
     ```powershell
     # create a failover
@@ -105,44 +103,44 @@ As in the previous exercise, you'll use OStress to repeatedly query your Azure S
         -DatabaseName $database
     ```
 
-1. While this cell is running, you should observe any changes that appear in the terminal. You'll notice that while the failover occurs, for some time you cannot access the database. However, the time where you're unavailable is very short. Once you become disconnected, you should be reconnected after approximately 5 seconds! This failover is 6+ times faster that in the General purpose tier.  
+1. While this command is running, you should observe any changes that appear in the terminal. You'll notice that you can't access the database while the failover occurs. This time is very short. After you become disconnected, you should be reconnected after about 5 seconds! This failover is more than six times faster than the one in the General purpose tier.  
 
-    Recall that databases or managed instances in the Business critical service tier essentially have an Always On Availability Group deployed behind the scenes. This means that when you failover, all that happens is a change in pointers in the backend as we redirect you to one of the secondaries. Because of this, it can be very fast, much faster than General purpose.
+    Remember that databases or managed instances in the Business critical service tier essentially have an Always On availability group deployed behind the scenes. So when you fail over, all that happens is a change in pointers in the back end as Azure redirects you to one of the secondaries. That's why the failover is so much faster than it would be in General purpose.
 
 ## Connect to the read-only replica
 
-Since you enabled the `read-scale` parameter, you have the ability to use one of the secondary replicas for read-only workloads. In order to access the read-only replica in applications, you just have to add the following parameter to your connection string for a database:  
+Because you enabled the `read-scale` parameter, you can use one of the secondary replicas for read-only workloads. To access the read-only replica in applications, you just have to add this parameter to your connection string for a database:  
 
 ```text
 ApplicationIntent=ReadOnly;
 ```
 
-1. In SSMS, create a new query connection (select **File** > **New** > **Database Engine Query**).  
+1. In SSMS, create a new query connection. (Select **File** > **New** > **Database Engine Query**.)  
 
-    :::image type="content" source="../media/6-new-db-engine-query.png" alt-text="Screenshot of a new database engine query.":::  
+    :::image type="content" source="../media/6-new-db-engine-query.png" alt-text="Screenshot that shows how to create a query connection.":::  
 
-1. Using the same way you've been connecting to your Azure SQL Database logical server (with SQL Auth), select **Options**.  
+1. In the Connect the Server dialog box, use the configuration that you've been using to connect to your Azure SQL Database logical server. (That is, use **SQL Server Authentication**.) Select **Options**.  
 
-    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot of the options in SSMS.":::  
+    :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot that shows the Connect to Server dialog box.":::  
 
-1. Select **Connection Properties**, and select **Reset All**. Then, under "Connect to database" select **Browse server** and select your **AdventureWorks-bc** database.  
+1. Select **Connection Properties**, and then select **Reset All**. Under **Connect to database**, select **Browse server** and then select your **AdventureWorks-bc** database.  
 
-1. Then select **Additional Connection Parameters** and copy and paste the following into the text box. Finally, select **Connect**.  
+1. Select **Additional Connection Parameters** and paste the following into the text box. Select **Connect**.  
 
     ```sql
     ApplicationIntent=ReadOnly;
     ```  
 
-    With SSMS, you have to specify the server and database to which you want to connect read-only, because there may be multiple databases in a server with different capabilities as far as readable secondaries goes.
+    With SSMS, you have to specify the server and database to which you want to connect read-only. That's because there might be multiple databases in a server that have different capabilities as far as readable secondaries goes.
 
-1. To test, try the following query on your new database engine query, and observe the results. Is it what you would expect?  
+1. As a test, try the following query on your new database engine query. Observe the results. Are they what you'd expect?  
 
     ```sql
     SELECT DATABASEPROPERTYEX(DB_NAME(), 'Updateability')
     ```
 
-    :::image type="content" source="../media/6-read-only.png" alt-text="Screenshot of the read only response.":::
+    :::image type="content" source="../media/6-read-only.png" alt-text="Screenshot that shows the read-only response.":::
 
-1. You can optionally re-connect and update the Additional Connection Parameters (replace `ReadOnly` with `ReadWrite`), and confirm you are accessing the read-write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in.
+1. You can optionally re-connect and update the Additional Connection Parameters. (Replace `ReadOnly` with `ReadWrite`.) Confirm that you're accessing the read/write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in:
 
-    :::image type="content" source="../media/6-read-write.png" alt-text="Screenshot of the read write response.":::
+    :::image type="content" source="../media/6-read-write.png" alt-text="Screenshot that shows the read/write response.":::
