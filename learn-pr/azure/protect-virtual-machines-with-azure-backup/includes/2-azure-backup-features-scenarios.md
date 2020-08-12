@@ -1,4 +1,3 @@
-Azure Backup is a suite of components that make it easy to back up machines and workloads in Azure or on-premises. Azure Backup also enables workloads like SQL Server or SharePoint to have additional backup and restore options.
 
 To address your company's business continuity and disaster recovery (BCDR) plan, there must be a full backup and restore capability for all of your high-risk servers. You've been asked to enable and test backup and restore functionality for these critical Windows and Linux assets.
 
@@ -6,16 +5,17 @@ In this unit, you'll look at how Azure Backup works, and study some of the suppo
 
 ## What is Azure Backup?
 
-Azure Backup provides cloud-based backup and restore services for both Azure and on-premises virtual machines. Data, workloads, and machine state can all be backed up automatically at a granular level. Azure Backup offers integration with Microsoft-specific applications such as SQL Server, SharePoint, and Exchange. 
+Azure Backup is a built-in Azure service which provides secure backup for all Azure-managed data assets, using zero-infrastructure solutions to enable self-service backups and restores, with at-scale management at a lower and predictable cost. At present, Azure Backup offers specialized backup solutions for Azure and on-premises virtual machines. Azure Backup also enables workloads like SQL Server or SAP HANA running in Azure VMs to have enterprise-class backup and restore options.
 
-In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal. Backups are stored in an Azure Recovery Services vault after you set up the appropriate component on the target machine.
+In contrast to traditional backup solutions that can take considerable effort to set up, Azure Backup is easily managed through the Azure portal.
 
 ### Azure Backup versus Azure Site Recovery
 
-The Azure Backup and Azure Site Recovery services both provide system recovery, but they have their differences:
+Both backup and site recovery aim to make the system more resilient to faults and failures. However, while the primary objective of backup is to maintain copies of stateful data that allow you to go back in time, site-recovery replicates the data in almost real-time and allows for a failover.
 
-- **Azure Site Recovery**: Replicates virtual machine workloads to secondary locations for failover if a disaster affects a whole site.
-- **Azure Backup**: Recovers data more granularly. For example, it recovers virtual machine disks, or files and folders that became corrupted or were accidentally deleted by users.
+In that sense, if there are issues like network or power outages, one can use availability zones. For a region-wide disaster (such as natural disasters), site recovery is used. Backups are used in case of accidental data loss, data corruption or ransomware attacks.
+
+Additionally, the choice of a recovery approach depends on the criticality of the application, RPO and RTO requirements, as well as the cost implications.
 
 ### Why use Azure Backup?
 
@@ -35,30 +35,12 @@ Traditional backup solutions, such as disk and tape, don't offer the highest lev
   - Locally redundant storage (LRS): Replicates data three times within the same region.
   - Geo-redundant storage (GRS): Replicates data to another region within the geography. This is the default. We recommend this option in most cases, because it uses LRS in a primary region and a secondary region.
 
-### Azure Backup types
+### Azure Backup supported scenarios
 
-Azure Backup supports several backup scenarios, for both virtual machines and on-premises machines. Each scenario requires a combination of backup type and agent to make the backup happen.
+- **Azure VMs** - [Back up Windows or Linux Azure virtual machines](https://docs.microsoft.com/azure/backup/backup-azure-vms-introduction)<br> Azure Backup provides independent and isolated backups to guard against un-intended destruction of the data on your VMs. Backups are stored in a Recovery Services vault with built-in management of recovery points. Configuration and scaling are simple, backups are optimized, and you can easily restore as needed.
+- **On-premises** - Back up files, folders, and system state using the [Microsoft Azure Recovery Services (MARS) agent](https://docs.microsoft.com/azure/backup/backup-support-matrix-mars-agent). Or use [Azure Backup Server (MABS)](https://docs.microsoft.com/azure/backup/backup-mabs-protection-matrix) or [DPM](https://docs.microsoft.com/azure/backup/backup-azure-dpm-introduction) server to protect on-premises VMs (Hyper-V and VMWare) and other on-premises workloads.
+- **Azure Files shares** - [Azure Files - Snapshot management by Azure Backup](https://docs.microsoft.com/azure/backup/backup-afs)
+- **SQL Server in Azure VMs** - [Back up SQL Server databases running on Azure VMs](https://docs.microsoft.com/azure/backup/backup-azure-sql-database)
+- **SAP HANA databases in Azure VMs** - [Backup SAP HANA databases running on Azure VMs](https://docs.microsoft.com/azure/backup/backup-azure-sap-hana-database)
 
-| Location | OS | Environment | Level | Notes |
-|:---|:---:|:---:|:---|:---|
-| On-premises | Windows | Virtual | Files, folders, volumes, system state, and app data | Uses System Center Data Protection Manager (DPM) or Microsoft Azure Backup Server (MABS). This scenario supports app-aware snapshots. |
-| On-premises | Windows | Physical | Files, folders, volumes, system state, and app data | Uses DPM or MABS. This scenario supports app-aware snapshots. |
-| On-premises | Windows | Both | Direct backup of files, folders, and system state | Uses the Microsoft Azure Recovery Services (MARS) agent. This is *not* an app-aware backup. |
-| On-premises | Linux | Virtual | Direct backup of files | Not supported with MARS. |
-| On-premises | Linux | Physical | Direct backup of files | Not supported with MARS. |
-| On-premises | Linux | Virtual | Files, folders, volumes, system state, and app data | Uses DPM or MABS. This scenario supports app-aware snapshots. |
-| On-premises | Linux | Physical | Files, folders, volumes, system state, and app data | Not supported. |
-| Azure | Windows | Virtual | Entire virtual machine | Uses the Azure Backup virtual machine extension. This scenario provides app-aware backups. |
-| Azure | Windows | Virtual | Files, folders, and system state | Uses the virtual machine extension and MARS. This scenario provides app-aware backups. |
-| Azure | Linux | Virtual | Entire virtual machine | Uses the Azure Backup virtual machine extension. This scenario provides file-consistent backups. |
-| Azure | Linux | Virtual | Files, folders, volumes, system state, and app data | Uses DPM or MARS. This scenario provides app-aware snapshots. |
-
-### SQL Server backups
-
-If you need to back up SQL Server workloads, other options are available. Azure Backup can install a workload backup extension on a SQL Server instance on Windows to support the following options:
-
-- **Full**: Backs up the entire database and file groups. It also contains enough logs to do a restore. Transaction logs hold records of the most recent additions or removals of records in the database. Recent transaction logs are needed to perform an up-to-date restore of a database.
-- **Differential**: Based on the last full backup that was performed, and captures only blocks of data that changed since the last full backup.
-- **Transaction log**: Allows a point-in-time restoration of a database.
-
-SQL Server on Linux does not currently integrate with Azure Backup.
+[Azure Backup](https://docs.microsoft.com/azure/backup/backup-overview) offers stream-based, specialized solutions to back up SQL Server or SAP HANA running in Azure VMs. These solutions take workload-aware backups that support different backup types such as full, differential and log, 15-minute RPO, and point-in-time recovery.
