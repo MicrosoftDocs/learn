@@ -32,7 +32,7 @@ units:
 - learn-xamarin.xamarin-forms-dual-screen.1-introduction
 - learn-xamarin.xamarin-forms-dual-screen.2-display-two-screens
 - learn-xamarin.xamarin-forms-dual-screen.3-exercise-add-twopaneview
-- learn-xamarin.xamarin-forms-dual-screen.4-spanning-and-unspanning
+- learn-xamarin.xamarin-forms-dual-screen.4-span-unspan
 - learn-xamarin.xamarin-forms-dual-screen.5-exercise-use-dualscreeninfo
 - learn-xamarin.xamarin-forms-dual-screen.6-larger-screens
 - learn-xamarin.xamarin-forms-dual-screen.7-exercise-tablet-support
