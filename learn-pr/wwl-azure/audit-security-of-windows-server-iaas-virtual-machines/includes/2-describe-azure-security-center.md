@@ -10,7 +10,7 @@ To address the unique security challenges that a hybrid environment presents, su
 - Protect your environment. Monitor for security threats to your cloud and on-premises servers, including identifying misconfigurations and providing server Endpoint Detection and Response (EDR) with Microsoft Defender Advanced Threat Protection (ATP).
 - Protect your data. Identify suspicious activity such as potential data breaches within your servers, files, databases, data warehouses, and storage accounts. Security Center can also perform automatic data classification in your Azure SQL databases.
 
-![A screenshot of the Overview page on the Azure Security Center blade.](../media/m1-security-center.png)
+[![A screenshot of the Overview page on the Azure Security Center blade.](../media/m1-security-center.png)](../media/m1-security-center.png#lightbox)
 
 ## How Security Center works in hybrid environments
 

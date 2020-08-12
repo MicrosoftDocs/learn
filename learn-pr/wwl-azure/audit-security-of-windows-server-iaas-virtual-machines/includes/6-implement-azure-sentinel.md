@@ -20,8 +20,8 @@ To enable Sentinel, you'll need:
 
 - A **Log Analytics** workspace.
 
-> [!TIP]
-> Sentinel can't use the same **Log Analytics** workspace as Security Center.
+    > [!TIP]
+    > Sentinel can't use the same **Log Analytics** workspace as Security Center.
 
 - Contributor permissions or greater in the subscription and workgroup for your Sentinel workspace.
 - Appropriate permissions on any resources that you connect to Sentinel.
@@ -79,14 +79,14 @@ To implement Sentinel:
 3. Select **Add Azure Sentinel**. The workspace is modified to include Sentinel.
 4. On the **Azure Sentinel** blade, in **News & guides**, select the **Get started** tab.
 
-![A screenshot of the Azure Sentinel blade. The administrator has selected the News & guides page, Get started tab.](../media/m1-sentinel.png)
+    [![A screenshot of the Azure Sentinel blade. The administrator has selected the News & guides page, Get started tab.](../media/m1-sentinel.png)](../media/m1-sentinel.png#lightbox)
 
 5. Select **Connect** to begin collecting data.
 6. Select the appropriate connector. For example, select **Azure Security Center**.
 7. Select **Open connector page**.
 8. Review the prerequisite information, and when ready, select **Connect**.
 
-![A screenshot of the Azure Sentinel Data connectors blade. The administrator has selected the Instructions tab.](../media/m1-sentinel-2.png)
+    [![A screenshot of the Azure Sentinel Data connectors blade. The administrator has selected the Instructions tab.](../media/m1-sentinel-2.png)](../media/m1-sentinel-2.png#lightbox)
 
 ## What is SIEM?
 

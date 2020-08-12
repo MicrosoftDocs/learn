@@ -33,7 +33,7 @@ To enable automatic provisioning, use the following procedure:
 4. In the details pane, under **Auto Provisioning**, select **On**. You can also select the preferred Log Analytics workspace under the **Workspace configuration** heading.
 5. Select **Save**.
 
-![A screenshot of the Data Collection tab of the Pricing & settings blade in the Azure Security Center. Auto Provisioning is on, and the default Workspace configuration, which is to use workspaces created by Security Center, is selected.](../media/m1-automatic-provision.png)
+    ![A screenshot of the Data Collection tab of the Pricing & settings blade in the Azure Security Center. Auto Provisioning is on, and the default Workspace configuration, which is to use workspaces created by Security Center, is selected.](../media/m1-automatic-provision.png)
 
 ## Onboard your on-premises servers and computers
 
@@ -48,24 +48,24 @@ After upgrading Security Center to the Standard tier for your subscriptions, you
 7. Create a new Log Analytics workspace.
 8. Select **+ Add Servers** in the selected workspace.
 
-![A screenshot of the Onboard servers to Security Center blade in the Azure portal. The administrator has selected the ContosoDemoAnalytics workspace.](../media/m1-onboard.png)
+    ![A screenshot of the Onboard servers to Security Center blade in the Azure portal. The administrator has selected the ContosoDemoAnalytics workspace.](../media/m1-onboard.png)
 
-8. On the **Agents management** blade, select the appropriate link for the agent you require. Typically, you will select **Download Windows Agent (64 bit)**.
-9. Copy the **Workspace ID** and **Primary key**. You'll need those to install the agent.
+9. On the **Agents management** blade, select the appropriate link for the agent you require. Typically, you will select **Download Windows Agent (64 bit)**.
+10. Copy the **Workspace ID** and **Primary key**. You'll need those to install the agent.
 
-![A screenshot of the Agents management blade in the Azure portal. Links are provided to download the Windows agents, and Workspace ID and keys are generated.](../media/m1-agent.png)
+    ![A screenshot of the Agents management blade in the Azure portal. Links are provided to download the Windows agents, and Workspace ID and keys are generated.](../media/m1-agent.png)
 
-10. Copy the downloaded agent to your on-premises servers.
-11. Run the **MMASetup-AMD64.exe** file to install the agent.
-12. When prompted, in the **Microsoft Monitoring Agent Setup wizard** on the **Azure Setup Options** page, select the **Connect the agent to Azure Log Analytics (OMS) check box**, and then select **Next**.
+11. Copy the downloaded agent to your on-premises servers.
+12. Run the **MMASetup-AMD64.exe** file to install the agent.
+13. When prompted, in the **Microsoft Monitoring Agent Setup wizard** on the **Azure Setup Options** page, select the **Connect the agent to Azure Log Analytics (OMS) check box**, and then select **Next**.
 
-![A screenshot of the Agent Setup Options page in the Microsoft Monitoring Agent Setup Wizard. The administrator has selected the Connect the agent to Azure Log Analytics (OMS) check box.](../media/m1-agent-2.png)
+    ![A screenshot of the Agent Setup Options page in the Microsoft Monitoring Agent Setup Wizard. The administrator has selected the Connect the agent to Azure Log Analytics (OMS) check box.](../media/m1-agent-2.png)
 
-13. On the **Azure Log Analytics** page, enter the **Workspace ID** and the  **Primary key** that you previously copied.
+14. On the **Azure Log Analytics** page, enter the **Workspace ID** and the  **Primary key** that you previously copied.
 
-![A screenshot of the Azure Log Analytics page in the Microsoft Monitoring Agent Setup Wizard. The administrator has entered the Workspace ID and Workspace key.](../media/m1-agent-3.png)
+    ![A screenshot of the Azure Log Analytics page in the Microsoft Monitoring Agent Setup Wizard. The administrator has entered the Workspace ID and Workspace key.](../media/m1-agent-3.png)
 
-14. Go through the remaining steps to complete the installation process.
+15. Go through the remaining steps to complete the installation process.
 
 ## Onboard Windows servers and computers to Defender ATP
 
