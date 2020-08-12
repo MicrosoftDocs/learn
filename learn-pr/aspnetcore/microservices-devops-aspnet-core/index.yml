@@ -35,10 +35,9 @@ products:
 - github
 units:
 - learn.microservices-devops-aspnet-core.1-introduction
-- learn.microservices-devops-aspnet-core.2-environment-setup
-- learn.microservices-devops-aspnet-core.3-review-devops-concepts
-- learn.microservices-devops-aspnet-core.4-implement-github-action-deploy-aks
-- learn.microservices-devops-aspnet-core.5-knowledge-check
-- learn.microservices-devops-aspnet-core.6-summary
+- learn.microservices-devops-aspnet-core.2-review-devops-concepts
+- learn.microservices-devops-aspnet-core.3-implement-github-action-deploy-aks
+- learn.microservices-devops-aspnet-core.4-knowledge-check
+- learn.microservices-devops-aspnet-core.5-summary
 badge:
   uid: learn.microservices-devops-aspnet-core.badge

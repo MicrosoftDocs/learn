@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-devops-aspnet-core.4-implement-github-action-deploy-aks
+uid: learn.microservices-devops-aspnet-core.3-implement-github-action-deploy-aks
 metadata:
   title: Exercise - Implement a GitHub Action to build and deploy to ACR and AKS
   description: Implement and test a simple CI/CD pipeline
@@ -12,5 +12,5 @@ metadata:
 title: Exercise - Implement a GitHub Action to build and deploy to ACR and AKS
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-implement-github-action-deploy-aks.md)]
+  [!include[](includes/3-implement-github-action-deploy-aks.md)]
 

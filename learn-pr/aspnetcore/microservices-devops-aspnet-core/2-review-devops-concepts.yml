@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-devops-aspnet-core.3-review-devops-concepts
+uid: learn.microservices-devops-aspnet-core.2-review-devops-concepts
 metadata:
   title: Review DevOps concepts
   description: Understand the basics of DevOps principles and practices.
@@ -12,5 +12,5 @@ metadata:
 title: Review DevOps concepts
 durationInMinutes: 1
 content: |
-  [!include[](includes/3-review-devops-concepts.md)]
+  [!include[](includes/2-review-devops-concepts.md)]
 
