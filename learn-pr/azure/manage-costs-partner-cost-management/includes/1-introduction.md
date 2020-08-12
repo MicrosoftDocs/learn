@@ -1,7 +1,5 @@
-Add scenario
+You're a global administrator for Fabrikam, a Microsoft CSP partner who consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You started receiving bills and want to better understand and manage costs. You also need to optimize costs to ensure that they're kept under control. Your CEO expressed concern about last month's bill, which was $15,000 larger than the previous month. You want to analyze your company's customers and resources to determine the primary costs on your bill. You're also interested in maximizing the Partner Earned Credits (PEC) that Fabrikam receives. You'll identify the resources across your customers that don't have the credit applied.
 
-## Learning objectives
+One of your firms, Contoso, wants you to set budgets and thresholds. Budgets can turn off and automate actions for VMs when cost thresholds are exceeded. You decide that you'll enable cost management for them. It will enable them to set budgets and manage costs at pay-as-you-go retail rates.
 
-In this module, you'll:
-
-## Prerequisites
+Azure Cost Management is a set of tools that you can use to help Fabrikam better understand, manage, and optimize the costs across all of its end customers. Azure makes it easy to build and deploy cloud solutions. However, it's important that the solutions are optimized to minimize the cost to Fabrikam and its customers. The methodologies and tools covered in this module help you identify and fix the changes that led to the $15,000 increase in expenditures. They help maximize your savings through Partner Earned credits. And they help you proactively manage Contoso's spending to meet their demands for more stringent budgeting.

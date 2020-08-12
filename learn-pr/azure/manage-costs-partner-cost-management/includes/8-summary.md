@@ -1,0 +1,13 @@
+You're a global administrator for Fabrikam, a Microsoft CSP partner who consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You started receiving bills and want to better understand and manage costs. You also need to optimize costs to ensure that they're kept under control. Your CEO expressed concern about last month's bill, which was $15,000 larger than the previous month. You want to analyze your company's customers and resources to determine the primary costs on your bill. You're also interested in maximizing the Partner Earned Credits (PEC) that Fabrikam receives. You'll identify the resources across your customers that don't have the credit applied.
+
+One of your firms, Contoso, wants you to set budgets and thresholds. Budgets can turn off and automate actions for VMs when cost thresholds are exceeded. You decide that you'll enable cost management for them. It will enable them to set budgets and manage costs at pay-as-you-go retail rates.
+
+In this module, you learned how to use Azure Cost Management to help Fabrikam better understand, manage, and optimize the costs across all of its end customers, including Contoso. You learned what scopes are applicable to partners and customers and can now apply the correct tools and techniques to analyze your costs for Contoso to reconcile your bill. You also now know how to determine what resources have partner earned credits applied and how to enable Cost Management for Contoso at pay-as-you-go rates so they can keep an eye on things themselves. Finally, you learned how to create budgets for both Fabrikam and Contoso to manage your costs.
+
+**Learn more**
+
+To learn more about Azure Cost Management for partners, see the following articles:
+
+- [Cost Management for partners](https://docs.microsoft.com/azure/cost-management-billing/costs/get-started-partners?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
+- [Start analyzing costs](https://docs.microsoft.com/azure/cost-management-billing/costs/quick-acm-cost-analysis?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
+- [Create and manage budgets](https://docs.microsoft.com/azure/cost-management-billing/costs/tutorial-acm-create-budgets?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn)
