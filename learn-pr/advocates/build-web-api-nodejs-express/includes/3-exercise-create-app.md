@@ -39,11 +39,11 @@ Create a basic application that handles requests.
    node app.js
    ```
 
-     You should see the following output. This output means your app is up and running and ready to receive requests.
+   You should see the following output. This output means your app is up and running and ready to receive requests.
 
-       ```output
-       Example app listening on port 3000!
-       ```
+   ```output
+   Example app listening on port 3000!
+   ```
 
 1. Open a browser and go to **http://localhost:3000**. In the browser window, you should see the following text displayed **Hello World!**.
 1. Select the **Ctrl**+**C** keys in the terminal to stop the program.
