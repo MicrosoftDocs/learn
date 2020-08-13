@@ -18,7 +18,7 @@ Configure and manage costs as a Microsoft Partner by using Azure Cost Management
 
 ## Prerequisites
 
-- A basic understanding of the Microsoft Customer Agreement, Azure Plan and Azure Cost Management configuration.
+- A basic understanding of the Microsoft Customer Agreement, Azure Plan, and Azure Cost Management configuration.
 - You have confirmed your customers’ acceptance of the Microsoft Customer Agreement 
 - You have transitioned your customers to Azure plan 
 - You have enabled Azure Cost Management for your customers 
@@ -55,9 +55,9 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    You are a global admin or an admin agent for Fabrikam, a CSP partner who consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You have begun receiving bills and want to use Azure Cost Management to better understand, manage and optimize your costs to ensure that they are kept in line. Your CEO expressed concern about the bill last month, which was $15K larger than the previous month. He has asked you to analyze your company’s customers and resources to determine the primary cost drivers on your bill.  You also are interested in maximizing the Partner Earned Credits (PEC) that Fabrikam receives by identifying the resources across your customers that do not have the credit applied.
+    You are a global admin or an admin agent for Fabrikam, a CSP partner who consults with law firms to provide solutions for them to move their infrastructure presence to the cloud. You have begun receiving bills and want to use Azure Cost Management to better understand, manage, and optimize your costs to ensure that they are kept in line. Your CEO expressed concern about the bill last month, which was $15 K larger than the previous month. He has asked you to analyze your company’s customers and resources to determine the primary cost drivers on your bill.  You also are interested in maximizing the Partner Earned Credits (PEC) that Fabrikam receives by identifying the resources across your customers that do not have the credit applied.
 
-    One of your firms, Contoso, also reached out to you this week and wants to set budgets and thresholds that can turn down and automate actions on VMs when a certain cost thresholds are exceeded. You decide to enable cost management for them to enable them to set budgets and manage costs at pay as you go retail rates. 
+    One of your firms, Contoso, also reached out to you this week and wants to set budgets and thresholds that can turn down and automate actions on VMs when certain cost thresholds are exceeded. You decide to enable cost management for them to enable them to set budgets and manage costs at pay as you go retail rates. 
 
     Notes from review: 
 
@@ -71,15 +71,15 @@ Identify the subtasks of *module title*
 
 1. **Understand cost management scopes for partners**
 
-    - Discuss partner specific billing scopes 
+    - Discuss partner-specific billing scopes 
       - Consider defining scopes or make this a pre-requisite
     - Discuss RBAC scopes nuance for partners and their customers
  
 1. **Reconcile your bill and attribute the cost to the customer's resources**
 
    - Use invoice filter in cost analysis for billing scopes to reconcile bill 
-     - Use an image of a bill with arrows an diagram 
-     - Make it downloadable? (right click ‘save as’) 
+     - Use an image of a bill with arrows a diagram 
+     - Make it downloadable? (right-click ‘save as’) 
 
 1. **Take advantage of applied partner earned credits for resources**
 
@@ -88,7 +88,7 @@ Identify the subtasks of *module title*
 
 1. **Enable cost management for your customers at retail pay-as-you-go rates**
 
-     - Enable cost visibility policy for customers from the Azure Portal 
+     - Enable cost visibility policy for customers from the Azure portal 
      - Manage costs at subscription scope as an RBAC user 
 
 1. **Set cost thresholds for customers and their subscription expenses to stay within budget**
