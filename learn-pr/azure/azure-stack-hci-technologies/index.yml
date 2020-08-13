@@ -35,6 +35,7 @@ units:
 - learn.azure.azure-stack-hci-technologies.8-software-defined-networking
 - learn.azure.azure-stack-hci-technologies.9-guarded-fabric
 - learn.azure.azure-stack-hci-technologies.10-cluster-sets
-- learn.azure.azure-stack-hci-technologies.11-summary
+- learn.azure.azure-stack-hci-technologies.11-knowledge-check
+- learn.azure.azure-stack-hci-technologies.12-summary
 badge:
   uid: learn.azure.azure-stack-hci-technologies.badge
