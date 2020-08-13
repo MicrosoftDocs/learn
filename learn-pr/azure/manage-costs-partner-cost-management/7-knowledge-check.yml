@@ -4,47 +4,46 @@ uid: >-
 metadata:
   title: Knowledge check
   description: Review what you've learned
-  ms.date: ...
+  ms.date: 08/12/2020
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: ...
-  ROBOTS: NOINDEX
+  ms.prod: learning-azure
 title: Knowledge check
 durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: "How often does the cloud endpoint change detection job run?"
+  - content: "Which of the following scope can Contoso use to analyze pay-as-you-go costs after the cost visibility policy is enabled?"
     choices:
-    - content: Every 12 hours.
+    - content: Billing account
       isCorrect: false
-      explanation: The detection job runs every 24 hours.
-    - content: Every 8 hours.
+      explanation: The billing account scope is only available to Fabrikam users with the correct role and it is located in the billing hierarchy of the Fabrikam tenant. Contoso doesn't have access to the billing account scope.
+    - content: Customer
       isCorrect: false
-      explanation: The detection job runs every 24 hours. 
-    - content: Every 24 hours.
+      explanation: The customer scope is only available to Fabrikam users with the correct role and it is located in the billing hierarchy of the Fabrikam tenant. Contoso doesn't have access to the customer scope. 
+    - content: Subscription
       isCorrect: true
-      explanation: The detection job runs every 24 hours. 
-  - content: "What is the Azure File Sync agent?"
+      explanation: The subscription scope is in the Contoso tenant so any user with the correct RBAC access to the subscription can see costs after the cost visibility policy is enabled. 
+  - content: "Which scope is most directly related to Fabrikam's invoices?"
     choices:
-    - content: It's installed on a server to enable Azure File Sync replication between the local file share and an Azure File share.
+    - content: Billing account
+      isCorrect: false
+      explanation: The billing account scope includes all of Fabrikam 's costs across every customer. It isn't related to any particular invoice.
+    - content: Customer
+      isCorrect: false
+      explanation: The customer scope is the scope for a particular customer. It doesn't directly relate to their invoice.
+    - content: Billing profile
       isCorrect: true
-      explanation: Azure File Sync agent is a downloadable package that enables Windows Server to be synced with an Azure file share.
-    - content: It is installed on a server to set NTFS permissions on files and folders.
-      isCorrect: false
-      explanation: The Azure File Sync agent doesn't set permissions.
-    - content: It is installed on a Azure File share to control on-premises file and folder replication traffic.
-      isCorrect: false
-      explanation: The Azure File Sync agent isn't installed on an Azure File share.
-  - content: "How do you access your on-premises server's compatibility with Azure File Sync?"
+      explanation: Every invoice is directly linked to a billing profile. The billing profile scope is used when you want to work with invoices.
+  - content: "Which of the following is a role used to manage costs in Fabrikam's billing hierarchy?"
     choices:
-    - content: Download and run the Azure File Sync agent to assess the file share and server.
-      isCorrect: false
-      explanation: The Azure File Sync agent doesn't check the compatibility of the server.
-    - content: Install the Azure PowerShell module on the server and use the cmdlet Invoke-AzStorageSyncCompatibilityCheck.
+    - content: Global admin agent
       isCorrect: true
-      explanation: The results of the cmdlet can tell you if the OS, filesystem, file names, or folder names have compatibility issues.
-    - content: Register the server with the Storage Sync Service to have the server evaluated for compatibility.
+      explanation: The global admin agent role can manage costs for Fabrikam. The admin agent role can also manage costs.
+    - content: Owner
       isCorrect: false
-      explanation: The Storage Sync Service doesn't check the compatibility of the server.
+      explanation: Owner is an Azure role-based-access-control (RBAC) role. It isn't applicable to the billing hierarchy.
+    - content: Billing profile admin
+      isCorrect: false
+      explanation: The billing profile admin isn't a role in any Azure hierarchy.
