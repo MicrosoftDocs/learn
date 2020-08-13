@@ -12,7 +12,7 @@ In this configuration, it's also important to think about the role that colocati
 
 ## DBAs and sensitive data
 
-The 911 dispatch system coordinators have expressed concern about protecting sensitive data (like health history and other personal information), while allowing DBAs to do their jobs.
+The 911 dispatch system coordinators have expressed concern about protecting sensitive data (like health history and other personal information), while allowing database analysts (DBAs) to do their jobs.
 
 To ensure that DBAs can't see sensitive data stored in specific columns and that all access to tables that contain sensitive data is monitored, you can use a few Azure SQL technologies. Using SQL Audit is a best practice to monitor access, but DBAs will still be able to see the data. Classifying the sensitive data by using Data Classification will help, because the sensitive data will be labeled and you can track it with SQL Audit. However, with these implemented, DBAs will still be able to see sensitive data. You can use dynamic data masking to help mask sensitive data, but it's not possible to keep a db_owner from viewing user data with permissions only. 
 

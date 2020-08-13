@@ -8,7 +8,7 @@ You're hired to build a mission-critical cloud application that requires 99.995 
 
 In this case, you'll focus on a 911 dispatch system. High performance is required, because any delay in response carries high risk and can be life-threatening. Given the sensitivity of the collected personal information, data sovereignty must be guaranteed. Your main mission is to ensure that the app is designed and deployed with the appropriate data redundancy and fault resilience to meet the availability and data sovereignty goals.
 
-The 911 dispatch system coordinators are concerned about protecting sensitive data (like health history and personally identifiable information) while allowing DBAs to perform their jobs. In this scenario, DBAs must not be able to see sensitive data stored in specific columns, and all access to tables that contain sensitive data must be monitored. 
+The 911 dispatch system coordinators are concerned about protecting sensitive data (like health history and personally identifiable information) while allowing database analysts (DBAs) to perform their jobs. In this scenario, DBAs must not be able to see sensitive data stored in specific columns, and all access to tables that contain sensitive data must be monitored. 
 
 At the same time, DBAs need to be able to troubleshoot performance by using the Azure portal, SQL Server Management Studio, and Azure Data Studio. They also need the ability to create new contained database users who must be mapped to Azure AD principals.  
 

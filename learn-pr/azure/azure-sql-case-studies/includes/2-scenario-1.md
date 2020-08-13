@@ -35,10 +35,10 @@ The customer also needs the ability to perform real-time analytics on the data, 
 The customer is also trying to determine which authentication methods to use in its hybrid environment. Although the main solution and application will live in Azure, the customer also needs to accommodate the following:
 
 - An application on a non-Azure machine
-- An older application that will not allow the change of the driver or connection string on a non-Azure machine.
+- An older application that won't allow the change of the driver or connection string on a non-Azure machine.
 - Multiple users that run reports from SQL admin tools (SQL Server Management Studio, Azure Data Studio, PowerShell) on non-Azure machines.
 
-Wherever possible, the customer wants to eliminate hard coding passwords or secrets in the connection strings and app configuration files. And it wants to eliminate using passwords in SQL tools or find a way to enhance that authentication.
+Wherever possible, the customer wants to eliminate hard-coding passwords or secrets in the connection strings and app configuration files. And it wants to eliminate using passwords in SQL tools or find a way to enhance that authentication.
 
 ### Scenario guidance
 
