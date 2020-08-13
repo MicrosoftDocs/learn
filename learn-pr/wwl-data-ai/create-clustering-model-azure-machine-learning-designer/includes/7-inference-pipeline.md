@@ -6,9 +6,6 @@ After creating and running a pipeline to train the clustering model, you can cre
 2. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Iris Training-real time inference** will be opened.
 3. Rename the new pipeline to **Predict Iris Cluster**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. The clustering model is encapsulated in this pipeline based on the statistics from your training data, and will be used to score the new data.
 
-    > [!NOTE]
-    > If your new pipeline doesn't contains web service input and web service output modules, go back to the **Designer** page and then re-open the new inference pipeline.
-
     You are going to make the following changes to the inference pipeline:
 
     > [!div class="centered"]
@@ -38,10 +35,6 @@ After creating and running a pipeline to train the clustering model, you can cre
 > ![Inference pipeline for clustering](../media/inference-clusters.png)
 
 8. Submit the pipeline as a new experiment named **predict-iris-cluster** on your compute cluster. This may take a while!
-
-    > [!NOTE]
-    > If an **invalid dataset(s)** error is displayed, refresh the browser page and resubmit the experiment.
-
 9. When the pipeline has finished, visualize the **Results dataset** output of the **Assign Data to Clusters** module to see the predicted cluster assignments and metrics for the three iris observations in the input data.
 
 Your inference pipeline assigns iris observations to clusters based on their features. Now you're ready to publish the pipeline so that client applications can use it.
