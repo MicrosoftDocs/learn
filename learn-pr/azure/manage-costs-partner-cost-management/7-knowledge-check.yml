@@ -4,7 +4,7 @@ uid: >-
 metadata:
   title: Knowledge check
   description: Review what you've learned
-  ms.date: 08/12/2020
+  ms.date: 08/14/2020
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
       explanation: The customer scope is only available to Fabrikam users with the correct role and it is located in the billing hierarchy of the Fabrikam tenant. Contoso doesn't have access to the customer scope. 
     - content: Subscription
       isCorrect: true
-      explanation: The subscription scope is in the Contoso tenant so any user with the correct RBAC access to the subscription can see costs after the cost visibility policy is enabled. 
+      explanation: The subscription scope is in the Contoso tenant so any user with the correct role-based access control (RBAC) access to the subscription can see costs after the cost visibility policy is enabled. 
   - content: "Which scope is most directly related to Fabrikam's invoices?"
     choices:
     - content: Billing account
@@ -43,7 +43,7 @@ quiz:
       explanation: The global admin agent role can manage costs for Fabrikam. The admin agent role can also manage costs.
     - content: Owner
       isCorrect: false
-      explanation: Owner is an Azure role-based-access-control (RBAC) role. It isn't applicable to the billing hierarchy.
+      explanation: Owner is an Azure role-based access control (RBAC) role. It isn't applicable to the billing hierarchy.
     - content: Billing profile admin
       isCorrect: false
       explanation: The billing profile admin isn't a role in any Azure hierarchy.
