@@ -1,5 +1,10 @@
 ## Exercise - Manage access with Role Based Access Control
 
+<div style="background: yellow;">
+TODO: 
+Recommend dropping this exercise. Cannot sandbox and potentially can cause damage in production environments.
+</div>
+
 > [!Note]
 > This lab requires and Azure subscription.  No sandbox is available to perform this lab.
 
