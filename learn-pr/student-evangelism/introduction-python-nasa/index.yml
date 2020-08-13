@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.student-evangelism.introduction-python-nasa
 metadata:
-  title: Discover the role of Python in space exploration
+  title: Introduction to Python for space exploration
   description: Get an introduction to the types of space exploration problems that Python and data science can influence.
   ms.date: 07/22/2020
   author: angevin17
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Discover the role of Python in space exploration
+title: Introduction to Python for space exploration
 summary: Get an introduction to the types of space exploration problems that Python and data science can influence.
 abstract: |
   In this module, you will learn:
