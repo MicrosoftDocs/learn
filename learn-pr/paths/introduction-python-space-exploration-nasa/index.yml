@@ -9,15 +9,15 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Discover the role of Python in space exploration - an introduction
+title: Discover the role of Python in space exploration
 summary: | 
   This learning path introduces you to the world of Python. But the goal is not to learn Python, the goal is to understand how Python plays a role in the innovative solutions that NASA creates. Through the lens of space discovery, this learning path could ignite a passion to persistently learn, discover, and create so that you too can one day help us all understand a little more about the world beyond our Earth.
   
   Through these modules, you will:
   
-  - Learn about and install the tools needed to begin to learn programming
+  - Understand and install the tools needed to learn programming
   - Learn core programming concepts and apply them to real-life NASA problems
-  - Learn about cutting-edge technologies like machine learning and artificial intelligence
+  - Gain knowledge about cutting-edge technologies like machine learning and artificial intelligence
   - See actual NASA employees talk about their job and give advice
 
 prerequisites: None
