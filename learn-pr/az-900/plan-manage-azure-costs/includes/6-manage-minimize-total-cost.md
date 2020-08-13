@@ -36,6 +36,10 @@ Azure Reservations offers discounted prices on certain Azure services. Azure Res
 
 For example, you can pre-pay for one year or three years of use of virtual machines, database compute capacity, database throughput, and other Azure resources.
 
+The following example shows estimated savings on virtual machines. In this example, you save an estimated 72% by committing to a three-year term.
+
+:::image type="content" source="../media/6-azure-reservations.png" alt-text="A screenshot of Azure Reservations showing an estimated cost savings of 72% by committing to a three-year term on seven virtual machines.":::
+
 Azure Reservations are available to customers with an Enterprise Agreement, Cloud Solution Providers, and Pay-As-You-Go subscriptions.
 
 ## Choose low-cost locations and regions
