@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit.2-configure-unity-for-windows-mixed-reality
+uid: learn.mixed-reality-toolkit-project-unity.2-configure
 title: Configure Unity for Windows Mixed Reality
 metadata:
   title: Configure Unity for Windows Mixed Reality
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/2-configure-unity-for-windows-mixed-reality.md)]
+  [!include[](includes/2-configure.md)]

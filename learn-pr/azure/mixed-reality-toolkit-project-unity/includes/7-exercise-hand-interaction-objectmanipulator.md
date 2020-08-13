@@ -4,23 +4,23 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
 1. In the **Hierarchy** window, click the **+** icon and select **3D Object** > **Cube**.
 
-    :::image type="content" source="../media/add_cube_to_scene.png" alt-text="Screenshot of the Unity Hierarchy window with the plus icon selected and 3D object, Cube selected.":::
+    :::image type="content" source="../media/add-cube-scene.png" alt-text="Screenshot of the Unity Hierarchy window with the plus icon selected and 3D object, Cube selected.":::
 
 1. Adjust the Scene view camera using the Scene Gizmo to view the front of the cube.
 
-    :::image type="content" source="../media/adjust_scene_view.png" alt-text="Screenshot of the Unity editor with the Scene Gizmo object highlighted.":::
+    :::image type="content" source="../media/adjust-scene-view.png" alt-text="Screenshot of the Unity editor with the Scene Gizmo object highlighted.":::
 
 1. Select the **Cube** object in the **Hierarchy** window. The Cube's properties will display in the **Inspector** window.
 
-    :::image type="content" source="../media/cube_inspector_window.png" alt-text="Screenshot of the Unity editor with the Cube object highlighted and the Inspector window highlighted.":::
+    :::image type="content" source="../media/cube-inspector-window.png" alt-text="Screenshot of the Unity editor with the Cube object highlighted and the Inspector window highlighted.":::
 
 1. In the **Inspector** window, change the Cube's **Transform Scale** to **.25**, **.25**, **.25**. This will make the cube smaller.
 
-    :::image type="content" source="../media/cube_transform_scale.png" alt-text="Screenshot of the Inspector window with the Scale parameters highlighted. The value of x, y, and z are 0.25.":::
+    :::image type="content" source="../media/cube-transform-scale.png" alt-text="Screenshot of the Inspector window with the Scale parameters highlighted. The value of x, y, and z are 0.25.":::
 
 1. Change the Cube **Transform Position** to **0**, **0**, **.8**. This will move the cube object further back on the z-axis.
 
-    :::image type="content" source="../media/cube_transform_position.png" alt-text="Screenshot of the Inspector window with the Position parameters highlighted. The value of x and y are 0. The value of z is 0.8.":::
+    :::image type="content" source="../media/cube-transform-position.png" alt-text="Screenshot of the Inspector window with the Position parameters highlighted. The value of x and y are 0. The value of z is 0.8.":::
 
 ## Add a material to the Cube
 
@@ -74,7 +74,7 @@ The ObjectManipulator script makes an object movable, scalable, and rotatable us
 
 1. While pressing the space bar, use your mouse scroll wheel to adjust the hand's distance to the cube. Left click the mouse to grab the cube and drag.
 
-    :::image type="content" source="../media/grab-cube-drag.PNG" alt-text="Screenshot of the Game window with the blue cube dragged to the right by a right simulated hand. The diagnostics tools display below the cube.":::
+    :::image type="content" source="../media/grab-cube-drag.png" alt-text="Screenshot of the Game window with the blue cube dragged to the right by a right simulated hand. The diagnostics tools display below the cube.":::
 
 ## Rotate the Cube in play mode
 
@@ -105,4 +105,4 @@ To scale an object, at least one hand needs to grab the object while the other i
 
 1. While grabbing the cube with the left hand active, left click the mouse and drag to the left to increase the size of the cube. Likewise, to decrease the size of the cube, drag the mouse to the right.
 
-    :::image type="content" source="../media/scale-cube.png" alt-text="Screenshot of the Game window with the blue cube slightly dragged to the left and larger in size. The right simulated hand is grabbing the right middle side of the cube. The left simulated hand is grabbing the lower left side of the cube.The diagnostics tools display below the cube.":::
+    :::image type="content" source="../media/scale-cube.png" alt-text="Screenshot of the Game window with the blue cube slightly dragged to the left and larger in size. The right simulated hand is grabbing the right middle side of the cube. The left simulated hand is grabbing the lower left side of the cube. The diagnostics tools display below the cube.":::

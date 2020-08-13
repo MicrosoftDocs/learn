@@ -1,9 +1,8 @@
-The Mixed Reality Toolkit enables you to consume inputs from a variety of input sources such as 6DoF (degrees of freedom) controllers, articulated hands, or speech. Choosing the interaction model thats best suited for your mixed reality experience requires you to identify your user, their goals and consider any situational or environmental factors, which may impact their experience. Here you'll learn about the three primary interaction models for mixed reality experiences and how to simulate input in Unity.
+The Mixed Reality Toolkit enables you to consume inputs from a variety of input sources such as 6DoF (degrees of freedom) controllers, articulated hands, or speech. Choosing the interaction model that's best suited for your mixed reality experience requires you to identify your user, their goals and consider any situational or environmental factors, which may impact their experience. Here you'll learn about the three primary interaction models for mixed reality experiences and how to simulate input in Unity.
 
 ## Interaction models
 
 There are three primary interaction models which suit the majority of mixed reality experiences.
-
 
 |Model  |Example scenarios  |Fit  |
 |---------|---------|---------|
@@ -54,7 +53,7 @@ There are two hands-free modalities:
 
 ## Gaze and commit
 
-Gaze and commit is an input model that is closely related to the way we interact with computers by using a mouse to point and click. Gaze and commit is considered a far input model with indirect manipulation. Therefore, its best to use gaze and commit when interacting with holographic content that is out of reach. There are two types of gaze input (head- and eye-gaze) and different commit actions.
+Gaze and commit is an input model that is closely related to the way we interact with computers by using a mouse to point and click. Gaze and commit is considered a far input model with indirect manipulation. Therefore, it's best to use gaze and commit when interacting with holographic content that is out of reach. There are two types of gaze input (head- and eye-gaze) and different commit actions.
 
 After the user uses gaze to target an object or UI element, the user can interact or click on it using a secondary input. This is known as the commit step of the input model. Commit methods include voice commands, a button press, or a hand gesture.
 
