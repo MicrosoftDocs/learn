@@ -33,6 +33,7 @@ units:
 - learn.azure.intro-to-azure-stack.6-hub-use-cases
 - learn.azure.intro-to-azure-stack.7-edge-use-cases
 - learn.azure.intro-to-azure-stack.8-hci-use-cases
-- learn.azure.intro-to-azure-stack.9-summary
+- learn.azure.intro-to-azure-stack.9-knowledge-check
+- learn.azure.intro-to-azure-stack.10-summary
 badge:
   uid: learn.azure.intro-to-azure-stack.badge
