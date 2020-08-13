@@ -44,7 +44,7 @@ At the highest level, SQL Vulnerability Assessment is a scanning service that pr
 
 ### Advanced Threat Protection
 
-Advanced Threat Protection enables you to detect and respond to potential threats as they occur by providing security alerts on anomalous activities. Advanced Threat Protectio applies advanced monitoring and machine learning technologies to detect whether any of the following threats have occurred:
+Advanced Threat Protection enables you to detect and respond to potential threats as they occur by providing security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine learning technologies to detect whether any of the following threats have occurred:
 
 * SQL injection
 * SQL injection vulnerability
