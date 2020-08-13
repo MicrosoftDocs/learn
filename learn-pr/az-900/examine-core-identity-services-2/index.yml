@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.examine-core-identity-services
+uid: learn.secure-access-azure-identity-services
 metadata:
   description: Learn how Azure Active Directory, single sign-on (SSO), multi-factor authentication (MFA), and Conditional Access can help you manage and secure identities on Azure.
   ms.date: 09/11/2020
@@ -22,7 +22,7 @@ abstract: |
   * Explain the role single sign-on (SSO), multi-factor authentication (MFA), and Conditional Access play in managing user identity.
 prerequisites: |
   There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
-iconUrl: /learn/achievements/examine-core-identity-services.svg
+iconUrl: /learn/achievements/secure-access-azure-identity-services.svg
 levels:
 - beginner
 roles:
@@ -35,11 +35,11 @@ roles:
 products:
 - azure
 units:
-- learn.examine-core-identity-services.introduction
-- learn.examine-core-identity-services.compare-authentication-authorization
-- learn.examine-core-identity-services.explore-azure-active-directory
-- learn.examine-core-identity-services.explore-azure-multi-factor-authentication
-- learn.examine-core-identity-services.knowledge-check
-- learn.examine-core-identity-services.summary
+- learn.secure-access-azure-identity-services.1-introduction
+- learn.secure-access-azure-identity-services.2-compare-authentication-authorization
+- learn.secure-access-azure-identity-services.3-what-is-azure-active-directory
+- learn.secure-access-azure-identity-services.4-what-are-mfa-conditional-access
+- learn.secure-access-azure-identity-services.5-knowledge-check
+- learn.secure-access-azure-identity-services.6-summary
 badge:
-  uid: learn.examine-core-identity-services.badge
+  uid: learn.secure-access-azure-identity-services.badge
