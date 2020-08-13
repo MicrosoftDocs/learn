@@ -11,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-explore-azure-active-directory.md)]
+  [!include[](includes/3-what-is-azure-active-directory.md)]
