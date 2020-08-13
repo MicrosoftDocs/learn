@@ -6,7 +6,7 @@ In this part, you'll learn about two processes that enable secure authentication
 
 ## What is Azure Multi-Factor Authentication?
 
-[Azure Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks?azure-portal=true) (MFA) provides additional security for your identities by requiring two or more elements to fully authenticate.
+Azure Multi-Factor Authentication (MFA) provides additional security for your identities by requiring two or more elements to fully authenticate.
 
 These elements fall into three categories:
 

@@ -1,4 +1,4 @@
-[Azure Active Directory](https://azure.microsoft.com/services/active-directory?azure-portal=true) (Azure AD) is a Microsoft cloud-based identity and access management service.
+Azure Active Directory (Azure AD) is a Microsoft cloud-based identity and access management service.
 
 Active Directory Domain Services (Active Directory) provides the ability to manage on-premises infrastructure components and systems by using a single identity per user. In contrast, think of Azure AD as the next evolution of identity and access management solutions for the cloud.
 
@@ -30,16 +30,16 @@ Azure AD helps users access both external and internal resources.
 
 Azure AD provides services such as:
 
-+ **Authentication**
+* **Authentication**
 
     This includes verifying identity to access applications and resources, and providing functionality such as self-service password reset, multi-factor authentication (MFA), a custom banned password list, and smart lockout services.
-+ **Single sign-on (SSO)**
+* **Single sign-on (SSO)**
 
     As mentioned earlier, SSO enables you to remember only one ID and one password to access multiple applications. A single identity is tied to a user, which simplifies the security model. As users change roles or leave an organization, access modifications are tied to that identity, which greatly reduces the effort needed to change or disable accounts.
-+ **Application management**
+* **Application management**
 
     You can manage your cloud and on-premises apps by using Azure AD Application Proxy, single sign-on, the My apps portal (also referred to as *Access panel*), and SaaS apps.
-+ **Device management**
+* **Device management**
 
     Manage how your cloud or on-premises devices access your corporate data.
 
@@ -47,13 +47,13 @@ Azure AD provides services such as:
 
 Azure AD is for:
 
-+ **IT administrators**
+* **IT administrators**
 
     Administrators can use Azure AD to control access to apps and resources based on their business requirements.
-+ **App developers**
+* **App developers**
 
     Developers can use Azure AD to provide a standards-based approach for adding functionality to applications that they build, such as adding SSO functionality to an app or enabling an app to work with a user's existing credentials.
-+ **Online service subscribers**
+* **Online service subscribers**
 
     Microsoft 365, Microsoft Office 365, Azure, and  Microsoft Dynamics CRM Online subscribers are already using Azure AD.
 
