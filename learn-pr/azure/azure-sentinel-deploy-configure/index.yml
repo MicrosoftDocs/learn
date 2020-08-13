@@ -32,6 +32,7 @@ units:
 - learn.azure.azure-sentinel-deploy-connect.5-data-connection-methods
 - learn.azure.azure-sentinel-deploy-connect.6-manage-logs
 - learn.azure.azure-sentinel-deploy-connect.7-deploy-demo
-- learn.azure.azure-sentinel-deploy-connect.8-summary
+- learn.azure.azure-sentinel-deploy-connect.8-knowledge-check
+- learn.azure.azure-sentinel-deploy-connect.9-summary
 badge:
   uid: learn.azure.azure-sentinel-deploy-connect.badge
