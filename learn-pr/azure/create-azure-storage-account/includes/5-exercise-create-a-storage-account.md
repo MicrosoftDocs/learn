@@ -39,7 +39,7 @@ Under **INSTANCE DETAILS**:
 
 1. Select a **Location** near to you from the list above.
 
-1. Select _Standard_ for the **Performance** option. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access. However, remember that Premium only supports _page blobs_. You'll need _block blobs_ for your videos, and a queue for buffering - both of which are only available with the _Standard_ option.
+1. Select _Standard_ for the **Performance** option. This option decides the type of disk storage used to hold the data in the Storage account. Standard uses traditional hard disks, and Premium uses solid-state drives (SSD) for faster access.
 
 1. Select _StorageV2 (general purpose v2)_ for the **Account kind**. This option provides access to the latest features and pricing. In particular, Blob storage accounts have more options available with this account type. You need a mix of blobs and a queue, so the _Blob storage_ option won't work. For this application, there would be no benefit to choosing a _Storage (general purpose v1)_ account, since that would limit the features you could access and would be unlikely to reduce the cost of your expected workload.
 
