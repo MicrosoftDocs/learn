@@ -2,13 +2,12 @@
 uid: learn.secure-access-azure-identity-services.3-what-is-azure-active-directory
 title: What is Azure Active Directory?
 metadata:
-  description: "Explore Azure Active Directory"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn about how Azure Active Directory (Azure AD) works and how Azure AD works with single sign-on (SSO).
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-what-is-azure-active-directory.md)]

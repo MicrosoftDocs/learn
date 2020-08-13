@@ -2,13 +2,12 @@
 uid: learn.secure-access-azure-identity-services.4-what-are-mfa-conditional-access
 title: What are MFA and Conditional Access?
 metadata:
-  description: "Explore Azure Multi-Factor Authentication"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how Azure Multi-Factor Authentication (MFA) and Conditional Access enable secure authentication.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
   [!include[](includes/4-what-are-mfa-conditional-access.md)]
