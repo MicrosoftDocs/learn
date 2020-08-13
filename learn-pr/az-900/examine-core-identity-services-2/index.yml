@@ -1,28 +1,33 @@
 ### YamlMime:Module
 uid: learn.examine-core-identity-services
 metadata:
-  title: Examine core identity services
-  description: "Understanding who is using your systems and what they have permission to do on your systems is a critical process for any solutions. Lets explore what that means in Azure. AZ-900"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how Azure Active Directory, SSO, MFA, and Conditional Access can help you manage and secure identities on Azure.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Examine core identity services
-summary: Understanding who is using your systems and what they have permission to do on your systems is a critical process for any solutions. Lets explore what that means in Azure.
+title: Secure access to your applications by using Azure identity services
+summary: |
+  With the rise of remote work, bring your own device (BYOD), mobile applications, and cloud applications, the primary security boundary has shifted from firewalls and physical access controls to _identity_.
+
+  Understanding who is using your systems and what they have permission to do are critical to keeping your data safe from attackers.
+
+  Learn how Azure Active Directory helps you manage and secure identities. Also see how single sign-on, multi-factor authentication, and Conditional Access enable your users to securely access resources and applications from your intranet and from public networks.
 abstract: |
-  After completing this module, you will be able to:
-   - Review authentication versus authorization.
-   - Explain Azure Active Directory.
-   - Explore Azure Multi-factor authentication (MFA).
+  After completing this module, you'll be able to:
+
+  * Explain the difference between authentication and authorization.
+  * Describe how Azure Active Directory provides identity and access management.
+  * Explain the role single sign-on (SSO), multi-factor authentication (MFA), and Conditional Access play in managing user identity.
 prerequisites: |
-  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
 iconUrl: /learn/achievements/examine-core-identity-services.svg
-hidden: true
 levels:
 - beginner
 roles:
 - administrator
+- developer
 - business-owner
 - business-user
 - student
