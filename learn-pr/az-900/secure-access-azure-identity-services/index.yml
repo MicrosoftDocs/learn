@@ -22,7 +22,7 @@ abstract: |
   * Explain the role single sign-on (SSO), multi-factor authentication (MFA), and Conditional Access play in managing user identity.
 prerequisites: |
   There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
-iconUrl: /learn/achievements/secure-access-azure-identity-services.svg
+iconUrl: /learn/achievements/examine-core-identity-services.svg
 levels:
 - beginner
 roles:
