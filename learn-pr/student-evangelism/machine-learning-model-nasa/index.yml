@@ -35,6 +35,7 @@ units:
 - learn.student-evangelism.machine-learning-model-nasa.6-score-model
 - learn.student-evangelism.machine-learning-model-nasa.7-visualize-model
 - learn.student-evangelism.machine-learning-model-nasa.8-test-model
+- learn.student-evangelism.machine-learning-model-nasa.8a-knowledge-check
 - learn.student-evangelism.machine-learning-model-nasa.9-summary
 badge:
   uid: learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge 
