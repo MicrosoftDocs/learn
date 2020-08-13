@@ -15,11 +15,11 @@ Availability Zones are relatively new to Azure SQL, so they're currently  availa
 
 Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit towards a portion of your monthly service fees.
 
-Currently, the highest availability (99.995%) can be achieved from an Azure SQL Database Business critical deployment with Availability Zones configured. Additionally, the Business critical tier is the only option in the industry, which supplies RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for recovery point object, which represents how much data one is potentially prepared and willing to lose in the worst case scenario. RTO stands for recovery time objective, which represents how much time it takes, if or when a disaster occurs, to be back up and running again.
+Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business critical deployment that has Availability Zones configured. The Business critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for *recovery point object*, which represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for *recovery time objective*, which represents how long it takes to be back up and running again if a disaster occurs.
 
-For General purpose or single zone Business critical deployments, the SLA is 99.99%.
+For General purpose or single-zone Business critical deployments, the SLA is 99.99%.
 
-The Hyperscale tier's SLA depends on the number of replicas. Recall, in Hyperscale you choose how many replicas you have, and if there are zero, when you fail over, it is more similar to that of General purpose. If you have replicas, then a failover is more similar to that of Business critical. The corresponding SLA depending on number of replicas is:  
+The Hyperscale tier's SLA depends on the number of replicas. Remember that you choose how many replicas you have in Hyperscale. If you don't have any, the failover behavior is more like that of General purpose. If you have replicas, the failover behavior is more like that of Business critical. Here are the SLAs, based on the number of replicas:  
 
 * 0 replicas: 99.5%
 * 1 replica: 99.9%
@@ -27,11 +27,11 @@ The Hyperscale tier's SLA depends on the number of replicas. Recall, in Hypersca
 
 ## Geo-replication and auto-failover groups
 
-Outside of making a selection of service tier (and availability zones where applicable), there are some other options for getting read scale or the ability to fail over to another region: geo-replication and auto-failover groups. In SQL Server on-premises, configuring either of these options is something that would take much planning, coordination, and time.
+After you choose a service tier (and consider Availability Zones as applicable), you can consider some other options for getting read scale or the ability to fail over to another region: geo-replication and auto-failover groups. In SQL Server on-premises, configuring either of these options is something that would take a lot of planning, coordination, and time.
 
-The cloud, and Azure SQL specifically, have made this process easier for you. For both geo-replication and auto-failover groups, you can get configured with a few clicks in the Azure portal or a few commands in PowerShell/Azure CLI.
+The cloud, and Azure SQL specifically, have made this process easier. For both geo-replication and auto-failover groups, you can get configured with a few clicks in the Azure portal or a few commands in the PowerShell/Azure CLI.
 
-There are some decision points that can help you decide if geo-replication or auto-failover groups are best for your scenario.
+Here are some considerations to help you decide if geo-replication or auto-failover groups are best for your scenario:
 
 |                                              | Geo-replication | Failover groups  |
 |:---------------------------------------------| :-------------- | :----------------|

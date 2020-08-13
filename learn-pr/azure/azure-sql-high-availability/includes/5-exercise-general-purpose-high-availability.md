@@ -1,4 +1,4 @@
-You've learned about the high-availability architecture of Azure SQL. In this exercise, you'll see how the General purpose tier of Azure SQL Database behaves similarly to a failover cluster instance on-premises. This functionality can be time consuming or tricky to set up on-premises, but you get it out of the box with Azure SQL.
+In the previous unit, you learned about the high-availability architecture of Azure SQL. In this exercise, you'll see how the General purpose tier of Azure SQL Database behaves similarly to a failover cluster instance on-premises. This functionality can be time consuming or tricky to set up on-premises, but you get it out of the box with Azure SQL.
 
 In this exercise, you'll use the OStress tool that you might have used in the previous module to create a workload. You'll then initiate a failover by using the Azure PowerShell module in the Azure Cloud Shell. Finally, you'll view the effect the failover has on the OStress workload.  
 
