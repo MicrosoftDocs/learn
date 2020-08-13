@@ -373,6 +373,18 @@
                 "dest": "modules"
             },
             {
+                "src": "student-evangelism",
+                "files": [
+                    "**/*.gif",
+                    "**/*.png",
+                    "**/*.svg",
+                    "**/*.jpg",
+                    "**/*.jpeg",
+                    "**/*.txt"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.gif",
                     "**/*.png",

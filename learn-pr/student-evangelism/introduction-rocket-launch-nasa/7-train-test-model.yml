@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-rocket-launch-nasa.7-train-test-model
+metadata:
+  title: How machine learning models learn
+  description: Learn more steps in building a machine learning model.
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: How machine learning models learn
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-train-test-model.md)]
