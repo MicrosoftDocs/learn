@@ -34,7 +34,7 @@ quiz:
       explanation: "Incorrect. Computers don't read images by separating the photo into four sections."
     - content: "By breaking down the photo into ones and zeros."
       isCorrect: true
-      explanation: "Correct! Computers can only read image data by breaking down the photo into ones and zero."
+      explanation: "Correct! Computers can read image data only by breaking down the photo into ones and zero."
   - content: "How did we clean the data in our project?"
     choices:
     - content: "By deleting images that were blurry."
