@@ -34,6 +34,7 @@ units:
 - learn.azure.intro-to-azure-arc.6-arc-for-kubernetes
 - learn.azure.intro-to-azure-arc.7-azure-policy-with-arc
 - learn.azure.intro-to-azure-arc.8-arc-integration-with-monitor
-- learn.azure.intro-to-azure-arc.9-summary
+- learn.azure.intro-to-azure-arc.9-knowledge-check
+- learn.azure.intro-to-azure-arc.10-summary
 badge:
   uid: learn.azure.intro-to-azure-arc.badge
