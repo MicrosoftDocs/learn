@@ -20,7 +20,7 @@ These elements fall into three categories:
 
     This is typically some sort of biometric property, such as a fingerprint or face scan that's used on many mobile devices.
 
-![Image of a username and password entry screen, mobile phone, USB key, smart card, image representing various types of biometric authentication, and certificate all in a line, representing how they can all be tied together to provide MFA.](../media/4-multi-factor-authentication.png)
+:::image type="content" source="../media/4-multi-factor-authentication.png" alt-text="An image of a username and password entry screen, mobile phone, USB key, smart card, image representing various types of biometric authentication, and certificate all in a line, representing how they can all be tied together to provide MFA." border="false":::
 
 MFA increases identity security by limiting the impact of credential exposure. For example, to fully authenticate, an attacker who has a user's password would also need to have possession of their phone or their fingerprint. Authentication with only a single factor is insufficient and, without MFA, an attacker would be unable to use those credentials to authenticate. MFA should be enabled wherever possible as MFA adds enormous benefits to security.
 
@@ -51,7 +51,7 @@ Conditional Access collects signals from the user, makes decisions based on thos
 
 Here's a diagram that illustrates this flow:
 
-:::image type="content" source="../media/4-conditional-access-signal-decision-enforcement.png" alt-text="TODO" border="false":::
+:::image type="content" source="../media/4-conditional-access-signal-decision-enforcement.png" alt-text="A flow diagram that shows how signals inform decisions, which become enforcement policies." border="false":::
 
 ### When can I use Conditional Access?
 
