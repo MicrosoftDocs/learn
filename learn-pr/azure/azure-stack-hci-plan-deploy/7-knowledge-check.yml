@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-verify-deployment.md)]
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
