@@ -13,7 +13,7 @@ To use the Azure Machine Learning designer, you create a *pipeline* that you wil
 In this module, you'll train a regression model that predicts the price of an automobile based on its characteristics. Azure Machine Learning includes a sample dataset that you can use for this model.
 
 1. On the left side of the designer, select the **Datasets** (&#8981;) tab, and drag the **Automobile price data (Raw)** dataset from the **Samples** section onto the canvas.
-2. Select the **Automobile price data (Raw)** dataset on the canvas, and view its settings (the settings pane for the dataset may open automatically and cover the canvas). On the **outputs** tab, select the **Visualize** icon (which looks like a column chart).
+2. Right-click (Ctrl+click on a Mac) the **Automobile price data (Raw)** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
 3. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 4. Scroll to the right of the dataset until you see the **Price** column. This is the label your model will predict.
 5. Select the column header for the **price** column and view the details that are displayed in the pane to the right. These include various statistics for the column values, and a histogram showing the distribution of the column values.
