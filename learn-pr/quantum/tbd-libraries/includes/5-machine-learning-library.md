@@ -67,7 +67,7 @@ A simple outline of the process would be:
 1. Repeat the sequence.
 
 ![Deep learning vs circuit centric
-classifier](deeplearning-vs-circuitcentric.png)
+classifier](../media/deeplearning-vs-circuitcentric.png)
 
 ## Use the Quantum Machine Learning Library
 
