@@ -1,6 +1,6 @@
-In this module and throughout the exercises, you got hands-on with many security capabilities and scenarios that are enabled for Azure SQL. 
+In this module and throughout the exercises, you got hands on with many security capabilities and scenarios that are enabled for Azure SQL. 
 
-When you're securing Azure SQL, you should first consider your network and identity access, allowing only connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and apply security management tools such as those available in the Advanced Data Security suite.
+When you're securing Azure SQL, you should first consider your network and identity access, allowing only connections and access from the right places, people, and applications, depending on your organization and infrastructure. Additionally, you can encrypt and mask sensitive data and apply security management tools, such as those available in the Advanced Data Security suite.
 
 In the next module in this learning path, you'll take a look at the performance capabilities and tasks that can help you monitor and tune performance for Azure SQL as it compares to SQL Server. You'll also learn new capabilities in Azure SQL that can help you automate and accelerate performance.
 
@@ -10,7 +10,7 @@ You'll find general and detailed guidance on security for Azure SQL in the [Azur
 
 ### Video series: Azure SQL for beginners
 
-People learn in different ways. With that in mind, a video series related to this learning path was created with Channel 9 on YouTube. [Access all 60+ videos](https://aka.ms/azuresql4beginnersyt?azure-portal=true).
+People learn in different ways. With that in mind, we created a video series related to this learning path with Channel 9 on YouTube. [Access all 60+ videos](https://aka.ms/azuresql4beginnersyt?azure-portal=true).
 
 #### Network security
 
@@ -35,7 +35,7 @@ To learn more about authentication, see:
 * [Azure role-based access control (RBAC) roles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true)
 * [Security best practices related to RBAC](https://docs.microsoft.com/azure/security/fundamentals/database-best-practices#protect-your-data-by-using-encryption-and-row-level-security?azure-portal=true)
 
-For information about contained database users in SQL Server and Azure, see [Contained database users: Making your database portable](https://docs.microsoft.com/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-ver15&azure-portal=true).  
+For information about contained database users in SQL Server and Azure, see [Contained database users: Make your database portable](https://docs.microsoft.com/sql/relational-databases/security/contained-database-users-making-your-database-portable?view=sql-server-ver15&azure-portal=true).  
 
 #### Data protection
 
