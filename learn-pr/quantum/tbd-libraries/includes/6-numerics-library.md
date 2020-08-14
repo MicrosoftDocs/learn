@@ -1,25 +1,28 @@
-In this unit we will introduce  to you the Numerics library and the arithmetic
-
+In this unit we will introduce to you the Numerics library and the arithmetic
 capabilities of the Quantum Development Kit. The library is an API, written in
 Q#, that gives you the ability to perform arithmetic operations with quantum
 computers and qubit registers.
+
 
 ## Introduction to the Numerics library
 
 Q# is a language that offers high and low level capabilities. For example,
 you can use Q# to select individually what gates to apply directly at the qubit
-level (`H`, `CNOT`, etc), but you can also use the already built in operations
+level (`H`, `CNOT`, etc), but you can also use the already built-in operations
+
 to perform high-level operations without worrying about the specific gates. An
 example of this high-level functionality would be the quantum Fourier transform
 operation,
-[`QFT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.qft).
+[`QFT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.qft), which is used in Shor's algorithm, for example, as you might have learned in module []().
+
 
 The Numerics library provides you a set of arithmetic operations and fixed-point
 arithmetic operations for integers encoded in qubit registers. You can leverage
 this low-level optimized implementations of basic arithmetic operations to
 implement sophisticated algorithms.
 
-This library is especially useful for skilled researchers and developers that
+This library is especially useful for researchers and developers who
+
 want to translate algorithms and circuits to Q# without having to deal with the
 low-level implementation of basic arithmetic operations.
 
@@ -53,13 +56,15 @@ library](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/numerics/
 It's not rare that quantum computing algorithms require to compute arithmetic
 operations such as the evaluation of oracles or the application of mathematical
 functions to quantities encoded in the qubit registers. The numerics library
-provide you with functionality to perform these operations.
+provides you with functionality to perform these operations.
+
 
 For example, in Shor's factoring algorithm, a part of the algorithm consists in
 finding the *order* (period) of a periodic function $f(x)=a^x mod N$, where $N$
 is the number to factorize and $a$ is a random number used previously in the
-algorithm. This implies that at some point we need to compute the operation
+algorithm. To find the periodicity of $f(x)$, we need to compute the operation
 $\ket{x}\rightarrow\ket{xa \text{mod} N$.
+
 
 Fortunately, the `Microsoft.Quantum.Arithmetic` namespace provides a function to
 perform modular multiplications on qubit registers with `LittleEndian` encoding.
