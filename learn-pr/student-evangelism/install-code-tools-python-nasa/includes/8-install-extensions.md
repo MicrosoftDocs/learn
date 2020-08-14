@@ -6,7 +6,7 @@ Click on the extension tab in Visual Studio Code to access all the Python open-s
 
 If you want to, you can explore the extensions marketplace and install any extensions you'd like to have, but for this tutorial, we'll install the Python extension. When you're in the extension marketplace, go to the search bar and type "Python". Look for the extension named solely Python and published by Microsoft - it should be the first result. Click on the extension and then click "install".
 
-:::image type="content" source="../media/install-python.png" alt-text="Install Python extension":::
+:::image type="content" source="../media/install-python.png" alt-text="Screenshot showing the Python extension for Visual Studio Code":::
 
 After you've installed it, you should close Visual Studio Code and open it again to ensure that the Python extension is recognized.
 
@@ -14,6 +14,6 @@ The Python extension lets you create Python and Jupyter Notebook files that can 
 
 ## Install IntelliCode extension
 
-While you're in the extensions tab, go back to the search bar and type in "intellicode". Click on the specified box - it should be the first result - and click "install". IntelliCode will recommend code when you're writing programs, which is a great tool for beginners who might not know the exact syntax.
+While you're in the extensions tab, go back to the search bar and type in "intellicode". Select the specified box. It should be the first result. Select **Install**. IntelliCode will recommend code when you're writing programs, which is a great tool for beginners who might not know the exact syntax.
 
 :::image type="content" source="../media/install-intellicode.png" alt-text="Install Intellicode":::

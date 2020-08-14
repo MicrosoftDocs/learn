@@ -37,6 +37,7 @@ units:
 - learn.student-evangelism.basic-python-nasa.5-strings
 - learn.student-evangelism.basic-python-nasa.6-lists
 - learn.student-evangelism.basic-python-nasa.7-output
+- learn.student-evangelism.basic-python-nasa.7a-knowledge-check
 - learn.student-evangelism.basic-python-nasa.8-summary
 badge:
   uid: learn.student-evangelism.basic-python-nasa.badge
