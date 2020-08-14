@@ -59,7 +59,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     Your resulting view should be similar to what is shown here:  
 
-    :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="New Vulnerability Assessment dashboard after scan" lightbox="../media/8-vulnerability-scan-results.png":::
+    :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="New Vulnerability Assessment dashboard after scan." lightbox="../media/8-vulnerability-scan-results.png":::
 
 1. Every security risk has a risk level (high, medium, or low) and additional information. The rules in place are based on benchmarks that are provided by the [Center for Internet Security](https://www.cisecurity.org/benchmark/microsoft_sql_server/?azure-portal=true). In the table, select the security check ID **VA2065** to get a detailed view that's similar to that shown in the following image. Review the status and other available information.  
 
@@ -123,7 +123,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     Within a few minutes, you should receive an email message similar to the following:  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection "threat detected" email.":::
+    :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection threat detected email.":::
 
 1. In the Azure portal, go to your AdventureWorks database. On the left pane, under **Security**, select **Advanced data security**. 
 
