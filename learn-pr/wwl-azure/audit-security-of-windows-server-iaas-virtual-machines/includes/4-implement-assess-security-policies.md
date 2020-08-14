@@ -35,7 +35,7 @@ To review compliance remediation details, on the **Regulatory Compliance** blade
 
 2. To review additional details about a recommendation, select it from the **Assessment** list, and then select **View affected machines**.
 
-    ![A screenshot of the Logs blade in the Log Analytics workspace. A query has executed to return the result of machines that fail a specific security requirement.](../media/m1-compliance-3.png) 
+    [![A screenshot of the Logs blade in the Log Analytics workspace. A query has executed to return the result of machines that fail a specific security requirement.](../media/m1-compliance-3.png)](../media/m1-compliance-3.png#lightbox) 
 
 ## Remediate security recommendations
 
