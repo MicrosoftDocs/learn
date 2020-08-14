@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.audit-security-of-windows-server-iaas-vms.describe-azure-security-center
-title: Describe azure security center
+title: Describe Azure Security Center
 metadata:
-  title: Describe azure security center
-  description: "Describe azure security center"
+  title: Describe Azure Security Center
+  description: "Describe Azure Security Center"
   ms.date: 08/16/2020
   author: wwlpublish
   ms.author: tonyj
