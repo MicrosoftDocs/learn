@@ -12,7 +12,7 @@ With such critical decisions in the balance, it's important to have confidence t
 
 ## Learning objectives
 
-In this module, you will learn how to:
+In this module, you will learn how to:   
 
 - Evaluate machine learning models for fairness.
 - Mitigate predictive disparity in a machine learning model.
