@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-artificial-intelligence-nasa.7a-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What is artificial intelligence (AI)?"
+    choices:
+    - content: "A method that computers might use to take over the world."
+      isCorrect: false
+      explanation: "Incorrect. AI requires humans for computers to be trained in AI."
+    - content: "A way to teach a computer how to learn and make basic decisions."
+      isCorrect: true
+      explanation: "Correct! AI is a way to teach a computer how to learn and make basic decisions."
+    - content: "A way to computerize unpleasant tasks in our lives."
+      isCorrect: false
+      explanation: "Incorrect. AI is more complex than providing only convenience."
+  - content: "What is the role of Anaconda in Python?"
+    choices:
+    - content: "You can use Anaconda to download one Python library at a time."
+      isCorrect: false
+      explanation: "Incorrect. Anaconda doesn't download Python libraries individually."
+    - content: "You can use Anaconda to download many Python libraries at once."
+      isCorrect: true
+      explanation: "Correct! Anaconda is useful for downloading many Python libraries in one package."
+    - content: "You can use Anaconda to download programs without going online."
+      isCorrect: false
+      explanation: "Incorrect. You need internet connection to download Anaconda."
+  - content: "Humans are better than computers at finding minute details of objects."
+    choices:
+    - content: "True."
+      isCorrect: false
+      explanation: "Incorrect. Humans are not better than computers in finding minute details."
+    - content: "False."
+      isCorrect: true
+      explanation: "Correct! Computers are much better than humans in finding minute details."
