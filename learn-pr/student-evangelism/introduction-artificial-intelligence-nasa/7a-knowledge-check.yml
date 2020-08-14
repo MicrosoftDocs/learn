@@ -15,13 +15,13 @@ quiz:
   questions:
   - content: "What is artificial intelligence (AI)?"
     choices:
-    - content: "A method that computers might use to take over the world."
+    - content: "A method that computers might possibly use to take over the world."
       isCorrect: false
-      explanation: "Incorrect. AI requires humans for computers to be trained in AI."
+      explanation: "Incorrect. AI requires humans to train, test, and validate computers."
     - content: "A way to teach a computer how to learn and make basic decisions."
       isCorrect: true
-      explanation: "Correct! AI is a way to teach a computer how to learn and make basic decisions."
-    - content: "A way to computerize unpleasant tasks in our lives."
+      explanation: "Correct! AI is a way to teach a computer how to learn and make basic decisions based on what it knows."
+    - content: "Primarily a way to automate unpleasant tasks in our lives."
       isCorrect: false
       explanation: "Incorrect. AI is more complex than providing only convenience."
   - content: "What is the role of Anaconda in Python?"
@@ -35,11 +35,14 @@ quiz:
     - content: "You can use Anaconda to download programs without going online."
       isCorrect: false
       explanation: "Incorrect. You need internet connection to download Anaconda."
-  - content: "Humans are better than computers at finding minute details of objects."
+  - content: "How do humans and machines compare in the way they observe and classify items?"
     choices:
-    - content: "True."
+    - content: "Like machines, humans have to be trained to see patterns and make associations visually."
       isCorrect: false
-      explanation: "Incorrect. Humans are not better than computers in finding minute details."
-    - content: "False."
+      explanation: "Incorrect. The human brain subconsciously searches for patterns and categorizes items we see without our notice."
+    - content: "Humans are better than computers at finding minute details in objects."
+      isCorrect: false
+      explanation: "Incorrect. If trained well, computers usually can detect more minute details more quickly than humans."
+    - content: "Like the human brain, machines use patterns and associations between identified items to classify a new item."
       isCorrect: true
-      explanation: "Correct! Computers are much better than humans in finding minute details."
+      explanation: "Correct! Both humans and machines use patterns and associations observed in identified items to classify or identify a new item."
