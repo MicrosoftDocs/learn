@@ -1,4 +1,4 @@
-Monitoring and troubleshooting are key elements to deliver consistent performance. Azure SQL Database has the same tools and features as SQL Server to monitor and troubleshoot performance, plus additional capabilities. This includes features like dynamic management views (DMVs), extended events, and Azure Monitor. It's also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL Database. Thes scenarios include high CPU or waiting on a resource.
+Monitoring and troubleshooting are key elements to deliver consistent performance. Azure SQL Database has the same tools and features as SQL Server to monitor and troubleshoot performance, plus additional capabilities. This includes features like dynamic management views (DMVs), extended events, and Azure Monitor. It's also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL Database. These scenarios include high CPU or waiting on a resource.
 
 ## Tools and capabilities to monitor performance
 

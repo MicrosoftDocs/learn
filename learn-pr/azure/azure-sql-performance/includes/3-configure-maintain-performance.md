@@ -21,7 +21,7 @@ Currently, the tempdb metadata optimization feature in SQL Server 2019, which ca
 
 ## Database configuration
 
-Commonly, you configure a databse with the T-SQL ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION statements. Many of the configuration options for performance are available for Azure SQL Database. Consult the ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION T-SQL reference for the differences between SQL Server, Azure SQL Database, and Azure SQL Managed Instance.
+Commonly, you configure a database with the T-SQL ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION statements. Many of the configuration options for performance are available for Azure SQL Database. Consult the ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION T-SQL reference for the differences between SQL Server, Azure SQL Database, and Azure SQL Managed Instance.
 
 For performance, one option that you can't change is the recovery model of the database. The default is full recovery. This ensures your database can meet Azure service level agreements (SLAs). Therefore, minimal logging for bulk operations isn't supported. Minimal logging for bulk operations is supported for tempdb.
 
