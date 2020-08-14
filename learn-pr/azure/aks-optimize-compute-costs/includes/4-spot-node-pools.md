@@ -67,7 +67,7 @@ Before you decide to add a spot node pool to your AKS cluster, consider the foll
 
 Remember that spot node pools should be used only for workloads that can be interrupted.
 
-## How to create a spot node pool
+## Create a spot node pool
 
 Spot node pools are in preview at the time this module is being written. To complete configuration of the spot node pool, you need to enable the preview feature on the **Microsoft.ContainerService** resource provider and install the aks-preview CLI extension.
 
@@ -174,21 +174,21 @@ Set the maximum node count to a value between 1 and 100 by using the `--max-coun
 
 Here's an example `az aks nodepool add` command that adds a spot node pool. Notice the use of the additional parameters to enable the spot node features.
 
-    ```azurecli
-    az aks nodepool add \
-        --resource-group resourceGroup \
-        --cluster-name aksCluster \
-        --name spotpool01 \
-        --enable-cluster-autoscaler \
-        --max-count 3 \
-        --min-count 1 \
-        --priority Spot \
-        --eviction-policy Delete \
-        --spot-max-price -1 \
-        --no-wait
-    ```
+```azurecli
+az aks nodepool add \
+    --resource-group resourceGroup \
+    --cluster-name aksCluster \
+    --name spotpool01 \
+    --enable-cluster-autoscaler \
+    --max-count 3 \
+    --min-count 1 \
+    --priority Spot \
+    --eviction-policy Delete \
+    --spot-max-price -1 \
+    --no-wait
+```
 
-## How to deploy pods to spot node pools
+## Deploy pods to spot node pools
 
 When deploying workloads in Kubernetes, you can provide information to the scheduler to specify which nodes the workloads can or can't run. You control workload scheduling by configuring *taints*, *toleration*, or *node affinity*. Spot nodes are configured with a specific label and taint.
 
@@ -204,7 +204,7 @@ Toleration is a specification applied to a pod to allow it to tolerate a node's 
 
 You use node affinity to describe which pods are scheduled on a node. Affinity is specified by using labels defined on the node. For example, in AKS, system pods are configured with anti-affinity towards spot nodes to prevent the pods from being scheduled on these nodes.
 
-## How to define toleration in a pod manifest file
+## Define toleration in a pod manifest file
 
 You specify node taint toleration by creating a `tolerations` dictionary entry in your workload manifest file. In this dictionary, you set the following properties for each node taint the workload has to tolerate in this section:
 
