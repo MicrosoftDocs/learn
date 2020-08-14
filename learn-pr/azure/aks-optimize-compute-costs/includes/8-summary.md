@@ -6,7 +6,7 @@ Next, you configured a spot node pool to access unused Azure compute capacity at
 
 Finally, you enabled and configured the Azure Policy Add-on for AKS. The add-on manages resource quotas to govern the deployment of AKS compute resources. You enabled the built-in **Ensure CPU and memory resource limits** policy. This policy configures parameters to deny workloads that exceed predefined resource limits for CPU and memory.
 
-Azure Kubernetes Service (AKS) makes it simple to deploy a managed Kubernetes cluster in Azure and to optimize computing costs when many workloads are running.
+AKS makes it simple to deploy a managed Kubernetes cluster in Azure and to optimize computing costs when many workloads are running.
 
 ## Clean up resources
 
