@@ -15,7 +15,7 @@ content: |
 quiz:
     title: Knowledge check
     questions:
-    - content: "Which of the following T-SQL for auditing is not supported in Azure SQL Managed Instance?"
+    - content: "Which of the following T-SQL commands for auditing is not supported in Azure SQL Managed Instance?"
       choices:
       - content: "With `CREATE SERVER AUDIT` there is syntax `TO URL`"
         isCorrect: false
