@@ -1,6 +1,6 @@
 Auditing is an important piece of any security strategy. In this unit, you'll start by enabling auditing, which will give you auditing data to work with in later exercises.
 
-The auditing feature tracks database and server events and writes events to an audit log in either Azure storage, Azure Monitor logs, or to an Azure event hub. Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate potential security violations. In this activity, you'll set up auditing at the server level, though it's also available at the database level.  
+The auditing feature tracks database and server events and writes events to an audit log in either Azure storage or Azure Monitor logs, or to an Azure event hub. Auditing can help you maintain regulatory compliance, understand database activity, and gain insight into discrepancies and anomalies that could indicate potential security violations. In this activity, you'll set up auditing at the server level, though it's also available at the database level.  
 
 ### Set up: Use scripts to deploy Azure SQL Database
 
@@ -8,13 +8,13 @@ At the right is Azure Cloud Shell, which is a way to interact with Azure by usin
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
-1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command and note the resulting IP address.
+1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and open a local PowerShell terminal on your device. Run the following command, and note the resulting IP address.
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Next, run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
+1. Run the following commands in Cloud Shell. Enter a complex password and, at the prompt, enter your local public IP address, which you obtained in the preceding step.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -31,7 +31,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     $serverName = "aw-server$($uniqueID)"
     ```
 
-1. Output and store (in a text file or similar) the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
+1. Output and store in a text file the information you'll need throughout the module by running the following code in Cloud Shell. You'll likely need to press Enter after you paste the code, because the last line won't be run by default.
 
     ```powershell
     Write-Host "Please note your unique ID for future exercises in this module:"  
@@ -44,7 +44,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
     Write-Host $serverName
     ```
 
-    **Remember to note your password, unique ID, and region. You'll need them throughout the module.**
+    Remember to note your password, unique ID, and region. You'll use them throughout the module.
 
 1. Run the following script to deploy an Azure SQL Database instance and logical server with the AdventureWorks sample. The script will also add your IP address as a firewall rule, enable Advanced Data Security, and create a storage account for use in future units.
 
@@ -87,14 +87,14 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -Type "Standard_LRS"
     ```
 
-1. Open SQL Server Management Studio (SSMS) and create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *aw-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to refer to the Azure portal to get it.  
+1. Open SQL Server Management Studio (SSMS), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *aw-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
 
     > [!div class="nextstepaction"]
     > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
 
     In the Azure portal, search for **AdventureWorks** to find your database and its associated logical server.
 
-    Change the authentication to **SQL Server Authentication**, and enter the corresponding Server Admin Login and Password, which you provided during deployment in the previous exercise.  
+    Change the authentication to **SQL Server Authentication**, and enter the corresponding server admin login and password, which you provided during deployment in the previous exercise.  
 
     Select the **Remember password** check box, and then select **Connect**.  
 
@@ -114,7 +114,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     :::image type="content" source="../media/3-db-audit.png" alt-text="Screenshot of the database-level auditing blade.":::  
 
-    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you won't do in this unit, the two audits would happen in parallel. One does not override the other. Alternatively, you could audit only at the database level.
+    You can apply auditing at the server level, which then applies to all databases within the Azure SQL Database logical server. If you also apply auditing at the database level, which you won't do in this unit, the two audits would happen in parallel. One does not override the other. Alternately, you could audit only at the database level.
 
 1. Select **Log Analytics (Preview)**, and then select **Configure**.  
 
@@ -144,4 +144,4 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
     :::image type="content" source="../media/3-db-audit-off.png" alt-text="Screenshot of Auditing set to OFF.":::  
 
-You've now enabled auditing for a storage account and an Azure Monitor workspace. Later on, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  
+You've now enabled auditing for a storage account and an Azure Monitor workspace. Later, you'll dive deeper into the auditing capabilities in Azure SQL. You'll see how to analyze the audit logs to view all the changes you've made throughout the module, as well as some other interesting use cases.  
