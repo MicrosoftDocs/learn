@@ -80,7 +80,7 @@ Under this initiative, the following policy definitions are included:
 In fact, the *Enable Monitoring in Azure Security Center* initiative contains over 100 separate policy definitions. 
 
 ### Defining an initiative
-You can define initiatives using the Azure portal, or command-line tools. In the portal, you use the "Authoring" section. Search the list of built-in initiatives that are already provided by Azure, or create your own.
+You can define initiatives using the Azure portal, or command-line tools. In the portal, you use the "Authoring" section. Search the list of built-in initiatives that are already provided by Azure, or you can create your own, custom policy definition. [Creating a custom policy definition](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition) is an advanced topic.
 
 ![Screenshot showing Azure portal defining initiatives and definitions](../media/3-define-initiatives.png)
 
