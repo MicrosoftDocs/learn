@@ -35,6 +35,7 @@ units:
 - learn.student-evangelism.analyze-rock-images-ai-nasa.4-import-and-clean-data
 - learn.student-evangelism.analyze-rock-images-ai-nasa.5-how-computers-read-images
 - learn.student-evangelism.analyze-rock-images-ai-nasa.6-show-imported-images
+- learn.student-evangelism.analyze-rock-images-ai-nasa.6a-knowledge-check
 - learn.student-evangelism.analyze-rock-images-ai-nasa.7-summary
 badge:
   uid: learn.student-evangelism.analyze-rock-images-ai-nasa.badge
