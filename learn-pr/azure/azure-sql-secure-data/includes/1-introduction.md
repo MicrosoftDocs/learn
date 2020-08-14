@@ -1,9 +1,9 @@
-Ensuring the security and compliance of your data is always a top priority. In this module, you'll learn how to:
+Ensuring the security and compliance of your data is always a top priority. In this module, you will:
 * Use Azure SQL to secure your data.
 * Configure logins and users.
 * Use tools and techniques for monitoring security.
 * Ensure that your data meets industry and regulatory compliance standards.
-* Apply the extra benefits and intelligence that are available only in Azure.
+* Take advantage of the extra benefits and intelligence provided by Azure.
 
 This module also covers some of the networking considerations for securing SQL.
 
@@ -14,7 +14,7 @@ At the end of this module, you should be able to:
 * Make informed decisions about securing your network.
 * Manage and deliver access management and authorization.  
 * Protect, encrypt, and mask data.
-* Manage and monitor security for Azure SQL Database and Azure SQL Managed Instance.
+* Manage and monitor security for your Azure SQL Database instance and Azure SQL managed instance.
 
 ## Prerequisites  
 
