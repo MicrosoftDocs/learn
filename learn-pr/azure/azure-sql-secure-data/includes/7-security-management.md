@@ -6,18 +6,18 @@ Auditing can help you maintain regulatory compliance, understand database activi
 
 Traditional SQL Server auditing by using Transact-SQL (T-SQL) is available, with some differences, only in an Azure SQL managed instance. The primary differences are:  
 
-* With `CREATE SERVER AUDIT`, new syntax `TO URL` and `TO EXTERNAL MONITOR` allow you to specify an Azure Blob storage container and enable event hub and Azure Monitor logs targets, respectively.  
+* With `CREATE SERVER AUDIT`, you can use new syntax `TO URL` and `TO EXTERNAL MONITOR` to specify an Azure Blob storage container and enable event hub and Azure Monitor logs targets, respectively.  
 * `TO FILE`, shutdown option, and `queue_delay=0` are not supported in Azure SQL.
 
-As an alternative to SQL Server audit, in Azure SQL Database there is *Azure SQL auditing*. It is powered by SQL Server audit, and supports Audit Action Groups and Actions like SQL Server. Azure SQL auditing tracks database and server events, and it writes events to an audit log in either Azure Blob storage, Azure Monitor logs (also referred to as Log Analytics), or to an event hub. If you point to an Azure Blob storage account, you can store and analyze your results in XEvents files. With Log Analytics, you unlock the ability to query your logs with Kusto Query Language (KQL) and take advantage of the Log Analytics auditing dashboards.
+As an alternative to SQL Server audit, Azure SQL Database has *Azure SQL auditing*. It's powered by SQL Server audit and, like SQL Server, it supports Audit Action Groups and Actions. Azure SQL auditing tracks database and server events, and it writes events to an audit log in either Azure Blob storage, Azure Monitor logs (also referred to as Log Analytics), or to an event hub. If you point to an Azure Blob storage account, you can store and analyze your results in XEvents files. With Log Analytics, you unlock the ability to query your logs with Kusto Query Language (KQL) and take advantage of the Log Analytics auditing dashboards.
 
-In an earlier exercise, you set up auditing at the server level, but it's also available at the database level. In a future exercise, you will see how to access and utilize the files that are sent to Azure Blob storage, KQL, and the Log Analytics dashboards.
+In an earlier exercise, you set up auditing at the server level, but it's also available at the database level. In a future exercise, you'll see how to access and utilize the files that are sent to Azure Blob storage, KQL, and the Log Analytics dashboards.
 
 ## Monitoring
 
 There are two aspects to monitoring and managing security: the Azure level and the database or server level. In Azure, you can apply tools such as activity logs and role-based access control auditing.
 
-In your Azure SQL managed instance, you can configure SQL Server audit, and the engine can track the failed and successful logins. Failed logins for the Azure SQL managed instance are also tracked in the ERRORLOG. In your Azure SQL Database instance, you can configure Azure SQL auditing and apply dynamic management views, metrics, and alerts to monitor security-related events (for example, `sys.event_log` will allow you to track the number of failed and successful connections and the number of connections blocked by the firewall).  
+In your Azure SQL managed instance, you can configure SQL Server audit, and the engine can track the failed and successful logins. Failed logins for the Azure SQL managed instance are also tracked in the ERRORLOG. In your Azure SQL Database instance, you can configure Azure SQL auditing and apply dynamic management views, metrics, and alerts to monitor security-related events. For example, `sys.event_log` will allow you to track the number of failed and successful connections and the number of connections blocked by the firewall.  
 
 For both services, Microsoft recommends that you configure Advanced Data Security, including setting up alerts for Advanced Threat Protection. These security elements are discussed in the next section and exercise. Finally, you can use Azure Security Center to monitor, manage, and receive recommendations on all the resources in your Azure estate.
 
@@ -44,7 +44,7 @@ At the highest level, SQL Vulnerability Assessment is a scanning service that pr
 
 ### Advanced Threat Protection
 
-Advanced Threat Protection enables you to detect and respond to potential threats as they occur by providing security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine learning technologies to detect whether any of the following threats have occurred:
+With Advanced Threat Protection, you can detect and respond to potential threats as they occur by receiving security alerts on anomalous activities. Advanced Threat Protection applies advanced monitoring and machine learning technologies to detect whether any of the following threats have occurred:
 
 * SQL injection
 * SQL injection vulnerability
