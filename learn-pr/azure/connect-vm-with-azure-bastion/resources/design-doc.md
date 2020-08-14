@@ -1,5 +1,5 @@
 # Title
-Connect to virtual machines securely (over the internet?) using Azure Bastion
+Connect to virtual machines through the Azure portal by using Azure Bastion
 
 ## Role(s)
 
@@ -44,9 +44,11 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-Suppose you're the IT administrator for an internal HR app that's on your organization's internal network. The app runs on an Azure Virtual Machine (VM) that's not publically exposed. You're using a jumpbox to be able to manage the VM and app remotely. This jumpbox is an Azure VM that has a public IP, which you connect to over the internet. It's on the same Azure Virtual Network as the app VM. So from the jumpbox, you can connect to the app VM that's on the internal network.
+Suppose you're the IT administrator for an internal HR app that's on your organization's internal network. The app runs on an Azure Virtual Machine (VM) that's not publicly exposed. You're using a jumpbox to be able to manage the VM and app remotely. This jumpbox is an Azure VM that has a public IP, which you connect to by using RDP. The jumpbox is on the same Azure Virtual Network as the app VM. So from the jumpbox, you can connect to the app VM that's on the internal network.
 
-Recently, you've noticed some suspicious sign in attempts on the jumpbox. You'd like to investigate a more secure way to remotely connect and manage the app VM.
+You've locked down network traffic to the jumpbox by using an Azure network security group. The network security group allows RDP but denies all other network traffic.
+
+Periodically, you maintain the jumpbox by applying updates and security patches. You'd rather use that time for other projects. So you'd like to investigate other ways to remotely connect and manage the app VM without having to publicly expose the internal HR app or manage an additional VM.
 
 1. **What is Azure Bastion?**
 
