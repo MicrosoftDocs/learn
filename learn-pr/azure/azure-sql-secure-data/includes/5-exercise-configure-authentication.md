@@ -1,10 +1,10 @@
-In this exercise, you'll create logins, users, and admins, and you'll grant Azure Active Directory (Azure AD) users access to the database, like normal users in SQL Server.
+In this exercise, you'll create logins, users, and admins, and you'll grant Azure Active Directory (Azure AD) users access to the database, as you would for normal users in SQL Server.
 
 1. Open SQL Server Management Studio (SSMS), and connect to your Azure SQL Database server, if you aren't already connected.
 
 1. After you've configured and connected to your database, your next step might be to add other users and grant them access. As in SQL Server, you can add new logins and users.
 
-    In SSMS, right-click your *database server* and then create a new query by running the following command.
+    In SSMS, right-click your *database server* and then create a new query by running the following command:
 
     ```sql
     -- Create a new SQL login and give them a password
@@ -12,9 +12,9 @@ In this exercise, you'll create logins, users, and admins, and you'll grant Azur
     ```
 
     > [!TIP]
-    > For most queries in Azure SQL Database, you must right-click the *database* within your Azure SQL Database logical server. In SQL Server and your Azure SQL managed instance, you can query at the server level and use `USE DatabaseName`, but in your Azure SQL Database instance, you must query the database directly, because the `USE` statement is not supported. There are a few exceptions to querying your Azure SQL Database instance, and one is logins. You must connect to the *master* database to create and alter logins.
+    > For most queries in Azure SQL Database, you must right-click the *database* within your Azure SQL Database logical server. In SQL Server and your Azure SQL managed instance, you can query at the server level and use `USE DatabaseName` but, in your Azure SQL Database instance, you must query the database directly. This is because the `USE` statement is not supported. There are a few exceptions to querying your Azure SQL Database instance, and one is logins. You must connect to the *master* database to create and alter logins.
 
-    Now you have a login at the server level. The next step is to create users in the AdventureWorks database and give them read/write access, if necessary. Right-click your AdventureWorks *database* and create a new query by running the following command.  
+    Now you have a login at the server level. The next step is to create users in the AdventureWorks database and give them read/write access, if necessary. Right-click your AdventureWorks *database* and create a new query by running the following command:  
 
     ```sql
     -- Create a new SQL user from that login
@@ -25,11 +25,11 @@ In this exercise, you'll create logins, users, and admins, and you'll grant Azur
     ALTER ROLE db_datawriter ADD MEMBER ApplicationUser;
     ```
 
-    Users will be able to log in to only the AdventureWorks database, not the entire server.
+    Users will be able to log in only to the AdventureWorks database, not the entire server.
 
     The best practice is to create non-admin accounts at the database level, unless the users need to be able to execute administrator tasks.  
 
-1. In SQL Server, you might be familiar with the concept of a contained database user. This means that a user has access to only specific databases, but doesn't have a login to the server. In your Azure SQL Database instance, you can create contained database users with SQL authentication or Azure AD authentication. You must be in the context of the user database that you want to create user access to (as opposed to being in master). In SSMS, right-click your *database* and then create a new query by running the following command.
+1. In SQL Server, you might be familiar with the concept of a contained database user. This means that a user has access only to specific databases and doesn't have a login to the server. In your Azure SQL Database instance, you can create contained database users with SQL authentication or Azure AD authentication. You must be in the context of the user database that you want to create user access to (as opposed to being in master). In SSMS, right-click your *database*, and then create a new query by running the following command:
 
     ```sql
     CREATE USER MyDatabaseUser WITH PASSWORD = 'C0mpl3xPa55word!'
@@ -43,7 +43,7 @@ In this exercise, you'll create logins, users, and admins, and you'll grant Azur
 
 1. As a clean-up step, right-click the connection from *MyDatabaseUser*, and then select **Disconnect**.  
 
-## Grant other users access (Azure AD)  
+## Grant access to other Azure AD users  
 
 Azure AD authentication is a little different. From the documentation:
 
