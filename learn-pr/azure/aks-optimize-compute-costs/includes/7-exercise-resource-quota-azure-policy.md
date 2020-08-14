@@ -137,7 +137,7 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
 1. Locate the **Policy** service in the Azure portal. To do so, enter the term "policy" in the search bar at the top of the portal.
-1. 
+ 
 1. Select the **Policy** service from the list of services, as shown here:
 
     :::image type="content" source="../media/7-search-result.png" alt-text="Screenshot of the general Azure portal search box with a result that shows the Azure Policy service.":::
@@ -174,10 +174,10 @@ To configure the new Azure Policy, use the Policy service in the Azure portal.
 
     | Option | Value
     | --- | --- |
-    | **Max allowed CPU units** | Set the value to "200m". The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
-    | **Max allowed memory bytes** | Set the value to "256Mi". The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
+    | **Max allowed CPU units** | Set the value to **200m**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
+    | **Max allowed memory bytes** | Set the value to **256Mi**. The policy matches this value to both the workload resource-request value and the workload limit value specified in the workload's manifest file. |
     | **Effect** | Set the value to **deny**. |
-    | **Namespace exclusions** | Leave the default values set to "kube-system; gatekeeper-system;azure-arc". |
+    | **Namespace exclusions** | Leave the default values set to **kube-system; gatekeeper-system;azure-arc**. |
 
     Here's an example of the completed **Parameters** tab:
 
