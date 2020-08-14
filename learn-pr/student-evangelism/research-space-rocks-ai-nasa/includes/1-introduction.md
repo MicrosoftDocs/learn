@@ -10,8 +10,8 @@ Although there are complexities and levels we won't cover in the Microsoft Learn
 
 In this module, you'll use AI to build an aid to Moon rock classification techniques. Along the way, you'll:
 
-- Learn what space rocks are and what we do with them.
-- Learn why classifying space rocks is challenging and important.
+- Learn what space rocks are and what we do with them
+- Learn why classifying space rocks is challenging and important
 
 ## Prerequisites
 
