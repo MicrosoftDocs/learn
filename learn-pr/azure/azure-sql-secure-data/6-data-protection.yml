@@ -29,7 +29,7 @@ quiz:
       - content: "You can use the `ADD MASKED WITH` T-SQL command to allow certain users access."
         isCorrect: false
         explanation: "Review the Dynamic Data Masking section."
-    - content: "When doing equality comparisons on data encrypted with Always Encrypted, which operators are currently supported in Azure SQL?"
+    - content: "When you're doing equality comparisons on data that's encrypted with Always Encrypted, which operators are currently supported in Azure SQL?"
       choices:
       - content: "`JOIN`"
         isCorrect: false
