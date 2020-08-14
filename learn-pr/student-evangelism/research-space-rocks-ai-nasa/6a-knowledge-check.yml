@@ -15,23 +15,26 @@ quiz:
   questions:
   - content: "Which of the following is a form in which you'd find a space rock on Earth?"
     choices:
-    - content: "Meteor"
+    - content: "Meteoroid"
       isCorrect: false
-      explanation: "Incorrect. Meteors are seen moving through space, not on Earth."
+      explanation: "Incorrect. Meteors are observed moving through space, not on Earth."
     - content: "Meteorite"
       isCorrect: true
       explanation: "Correct! A meteorite is the remnants of a meteor that crashed into Earth."
     - content: "Asteroid"
       isCorrect: false
-      explanation: "Incorrect. Asteroids are seen moving through space, not on Earth."
-  - content: "If an astronaut sees one black rock surrounded by white rocks, the astronaut should collect only the black rock."
+      explanation: "Incorrect. Asteroids are observed moving through space, not on Earth."
+  - content: "What steps should an astronaut take if they see one black rock in a field of white rocks on a space mission, the astronaut should collect the black rock because it's unique."
     choices:
-    - content: "True."
+    - content: "Take a photo of the black rock, and add a comment about why they think this rock is important."
       isCorrect: false
-      explanation: "Incorrect. Taking the most unique rock isn't the preferable way to sample space rocks."
-    - content: "False."
+      explanation: "Incorrect. The goal is to collect rock specimens that can be examined in detail by scientists on Earth."
+    - content: "Collect the black rock because it's clearly unique in some way that might be important."
+      isCorrect: false
+      explanation: "Incorrect. Collecting only the atypical rock wouldn't help us understand the average rock in the area and why this one is unique."
+    - content: "Collect samples of the white rocks to get an accurate representation of the area, and also collect the black rock."
       isCorrect: true
-      explanation: "Correct! The astronaut should take a sample of every rock."
+      explanation: "Correct! Common advice to astronauts is to pick up 10 average rocks in an area, and then collect rocks that appear unique."
   - content: "What is the goal of the OSIRIS-REx mission?"
     choices:
     - content: "To learn about human history."
@@ -40,6 +43,6 @@ quiz:
     - content: "To find an asteroid that's suitable for humans to inhabit."
       isCorrect: false
       explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to find an asteroid where humans might live."
-    - content: "The goal of the OSIRIS-REx mission is to test a new camera."
+    - content: "To test a new long-distance camera."
       isCorrect: false
       explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to test a new camera."
