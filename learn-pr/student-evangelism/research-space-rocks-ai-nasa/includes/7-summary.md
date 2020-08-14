@@ -2,4 +2,4 @@ In this module, you learned about different types of space rocks and the forms t
 
 ## Next steps
 
-Continue with the series and [prepare to research space rocks by using artificial intelligence](https://docs.microsoft.com/learn/modules/analyze-rock-images-ai-nasa/).
+Continue with the series and [prepare to research space rocks by using artificial intelligence](https://review.docs.microsoft.com/learn/modules/introduction-artificial-intelligence-nasa/).
