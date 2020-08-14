@@ -15,11 +15,11 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. You can also configure your Advanced Threat Protection settings. To check the available Advanced Threat Protection alert types, select **All** under **Advanced Threat Protection types**.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-types.png" alt-text="Screenshot of the types of protection in Advanced Threat Protection.":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-types.png" alt-text="Screenshot of the types of protection in Advanced Threat Protection.":::
 
 1. Just as you can configure who receives Vulnerability Assessment scans, you can configure who receives Advanced Threat Protection alerts. Review the options and, in the **Send alerts to** box, add your personal email address so that you can view the alerts in a later step of this exercise.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-settings.png" alt-text="Screenshot of Advanced Threat Protection settings information.":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-settings.png" alt-text="Screenshot of Advanced Threat Protection settings information.":::
 
 1. After you've updated all your settings, select **Save**.  
 
@@ -43,7 +43,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. Finally, select **Overview** to view the overview dashboard and review the classifications you've added.  
 
-    :::image type="content" source="../media/8-data-classification-overview.png" alt-text="Screenshot of the Data Discovery & Classification overview.":::  
+    :::image type="content" source="../media/8-data-classification-overview.png" alt-text="Screenshot of the Data Discovery & Classification overview.":::
 
 ## Vulnerability Assessment
 
@@ -51,30 +51,30 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. To begin reviewing the Vulnerability Assessment capabilities, select the **Vulnerability Assessment** tile.  
 
-    :::image type="content" source="../media/8-azure-data-studio-dashboard-2.png" alt-text="Screenshot of how to return to the main Advanced Data Security dashboard.":::  
+    :::image type="content" source="../media/8-azure-data-studio-dashboard-2.png" alt-text="Screenshot of how to return to the main Advanced Data Security dashboard.":::
 
 1. Select **Scan** to get the most current Vulnerability Assessment results. This process takes a few moments while Vulnerability Assessment scans all the databases in your Azure SQL Database logical server.
 
-    :::image type="content" source="../media/8-vulnerability-scan.png" alt-text="Screenshot of how to kick off a Vulnerability Assessment scan.":::  
+    :::image type="content" source="../media/8-vulnerability-scan.png" alt-text="Screenshot of how to kick off a Vulnerability Assessment scan.":::
 
     Your resulting view should be similar to what is shown here:  
 
-    :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="New Vulnerability Assessment dashboard after scan" lightbox="../media/8-vulnerability-scan-results.png":::  
+    :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="New Vulnerability Assessment dashboard after scan" lightbox="../media/8-vulnerability-scan-results.png":::
 
 1. Every security risk has a risk level (high, medium, or low) and additional information. The rules in place are based on benchmarks that are provided by the [Center for Internet Security](https://www.cisecurity.org/benchmark/microsoft_sql_server/?azure-portal=true). In the table, select the security check ID **VA2065** to get a detailed view that's similar to that shown in the following image. Review the status and other available information.  
 
     > [!NOTE]
     > If **VA2065** doesn't fail, you can perform a similar exercise later, depending on any failed security checks that occur.  
 
-    :::image type="content" source="../media/8-va20652-details.png" alt-text="Screenshot of the VA2065 security risk.":::  
-
+    :::image type="content" source="../media/8-va20652-details.png" alt-text="Screenshot of the VA2065 security risk.":::
+    
     In this image, Vulnerability Assessment is suggesting that you configure a baseline of what firewall rules have been set. After you have a baseline, you can monitor and assess any changes.  
 
 1. Depending on the security check, there will be alternate views and recommendations. Review the information that's provided. For this security check, you can select the **Approve as Baseline** button and then select **Yes** at the top of the details page. Now that a baseline is in place, this security check will fail in any future scans where the results are different from the baseline. Select **X** to close the pane for the specific rule.  
 
 1. You can then complete another scan by selecting **Scan** and confirming that VA2065 is now showing up as a *Passed* security check.  
 
-    :::image type="content" source="../media/8-va2065-passed.png" alt-text="Screenshot of the VA2109 security risk being passed." lightbox="../media/8-va2065-passed.png":::  
+    :::image type="content" source="../media/8-va2065-passed.png" alt-text="Screenshot of the VA2109 security risk being passed." lightbox="../media/8-va2065-passed.png":::
 
     If you click into the preceding passed security check, you should be able to see the baseline you configured. If anything changes in the future, Vulnerability Assessment scans will pick it up and the security check will fail.  
 
@@ -82,7 +82,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. Select the **X** at the upper right to close the Vulnerability Assessment pane and return to the **Advanced Data Security** dashboard. Select the **Advanced Threat Protection** tile to display more detail and review the results. Advanced Threat Protection detects anomalous activities that indicate unusual and potentially harmful attempts to access or exploit databases.  
 
-    :::image type="content" source="../media/8-azure-data-studio-dashboard-3.png" alt-text="Screenshot of how to return to the Advanced Data Security dashboard.":::  
+    :::image type="content" source="../media/8-azure-data-studio-dashboard-3.png" alt-text="Screenshot of how to return to the Advanced Data Security dashboard.":::
 
     You aren't likely to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
 
@@ -103,7 +103,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. In the main login window, log in to AdventureWorks as you usually would, with SQL authentication. Before you connect, select **Options** > **Connection Properties**. After you're logged in, select the **AdventureWorks** database in the **Connect to database** drop-down list.  
 
-    :::image type="content" source="../media/8-connect-db.png" alt-text="Screenshot of how to connect to a specific database.":::  
+    :::image type="content" source="../media/8-connect-db.png" alt-text="Screenshot of how to connect to a specific database.":::
 
 1. Select the **Additional Connection Parameters** tab, and then insert the following connection string in the empty text box:  
 
@@ -113,7 +113,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. Select **Connect**.  
 
-    :::image type="content" source="../media/8-app-name.png" alt-text="Screenshot of how to connect with an app name.":::  
+    :::image type="content" source="../media/8-app-name.png" alt-text="Screenshot of how to connect with an app name.":::
 
 1. In the new query window, run the following query:  
 
@@ -123,17 +123,17 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     Within a few minutes, you should receive an email message similar to the following:  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection "threat detected" email.":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection "threat detected" email.":::
 
 1. In the Azure portal, go to your AdventureWorks database. On the left pane, under **Security**, select **Advanced data security**. 
 
     The **Advanced Threat Protection** tile now displays an alert.  
 
-    :::image type="content" source="../media/8-advanced-threat-protection-alert.png" alt-text="Screenshot of an Advanced Threat Protection alert.":::  
+    :::image type="content" source="../media/8-advanced-threat-protection-alert.png" alt-text="Screenshot of an Advanced Threat Protection alert.":::
 
 1. Select the **Advanced Threat Protection** tile to see the overall security alerts.  
 
-    :::image type="content" source="../media/8-security-alerts.png" alt-text="Screenshot of the security alerts." lightbox="../media/8-security-alerts.png":::  
+    :::image type="content" source="../media/8-security-alerts.png" alt-text="Screenshot of the security alerts." lightbox="../media/8-security-alerts.png":::
 
 1. Select **Potential SQL injection** to display more specific alerts and receive investigation steps.  
 
