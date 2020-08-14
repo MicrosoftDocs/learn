@@ -21,7 +21,7 @@ In this exercise, you'll see how to view and edit your firewall rules. Setting t
 
 1. Select **Save**. You can select **Overview** on the left pane to go back to the overview of your database.  
 
-1. To confirm you still have access from your local machine, go to SQL Server Management Studio (SSMS) and refresh your connection to the Azure SQL Database logical server. If no errors occur, you have successfully configured access to your Azure SQL Database logical server for your IP address only.  
+1. To confirm that you still have access from your local machine, go to SQL Server Management Studio (SSMS) and refresh your connection to the Azure SQL Database logical server. If no errors occur, you have successfully configured access to your Azure SQL Database logical server for your IP address only.  
 
     :::image type="content" source="../media/4-db-refresh.png" alt-text="Screenshot of how to refresh database connection.":::  
 
@@ -31,7 +31,7 @@ In this exercise, you'll see how to view and edit your firewall rules. Setting t
     SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
     ```  
 
-    The result should be the *public* IP address of your local machine. You can confirm this address by opening a PowerShell terminal on your local machine and running the following command:
+    The result should be the *public* IP address of your local machine. You can confirm this address by opening an Azure PowerShell terminal on your local machine and running the following command:
     
     `(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content` 
     
@@ -39,9 +39,9 @@ In this exercise, you'll see how to view and edit your firewall rules. Setting t
 
 ### Manage firewall rules with Azure Cloud Shell  
 
-You can also use the command `az sql server firewall-rule` to create, delete, and view server-level firewall rules. You can use the Azure CLI through the command-line interface of your Azure VM or through a PowerShell notebook. For this part of the exercise, you'll experiment with Cloud Shell.  
+You can also use the command `az sql server firewall-rule` to create, delete, and view server-level firewall rules. You can use the Azure CLI through the command-line interface of your Azure virtual machine (VM) or through a PowerShell notebook. For this part of the exercise, you'll experiment with Cloud Shell.  
 
-1. You can access Cloud Shell through the portal, but in this unit, you'll use the built-in terminal at the right, which is essentially the same thing. To configure your environment, run the following command:  
+1. You can access Cloud Shell through the portal but, in this unit, you'll use the built-in terminal at the right, which is essentially the same thing. To configure your environment, run the following command:  
 
     ```powershell
     $database_name = "AdventureWorks"
@@ -57,11 +57,11 @@ You can also use the command `az sql server firewall-rule` to create, delete, an
 
     Your client IP address rule should match what you displayed in the preceding section by using the Azure portal.  
 
-This method of setting the firewall rules (using the Azure portal or Cloud Shell) grants your client IP address access to all the databases that are in that logical server. After you've configured the server-level firewall rule, which you did above, you can optionally configure database-level firewall rules that apply to individual databases. This can be done only with T-SQL, by using the command `EXECUTE sp_set_database_firewall_rule`. For more information, see the references in the summary of this module.  
+Setting up firewall rules by using either the Azure portal or Cloud Shell grants your client IP address access to all the databases in your logical server. After you've configured the server-level firewall rule, you can optionally configure database-level firewall rules that apply to individual databases. This can be done only with T-SQL, by using the command `EXECUTE sp_set_database_firewall_rule`. For more information, see the references in the summary of this module.  
 
 ## Go further
 
-You've now seen how to update firewall rules for specific IP addresses or ranges of IP addresses on the server or database level. If you were running in production, you might also need access from various virtual networks or resources, such as Azure apps or Azure virtual machines (VMs). For example, Azure VMs have dynamic IP addresses, which means that the addresses change. You can set up static IP addresses, but even this can be difficult to maintain by using firewall rules. You can, alternatively, use virtual network rules to manage access from specific subnets that contain your VMs or other services. Or you could configure a private endpoint, the most secure way to connect to an Azure SQL Database instance.
+You've now seen how to update firewall rules for specific IP addresses or ranges of IP addresses on the server or database level. If you were running in production, you might also need access from various virtual networks or resources, such as Azure apps or Azure VMs. For example, Azure VMs have dynamic IP addresses, which means that the addresses change. You can set up static IP addresses, but even this can be difficult to maintain by using firewall rules. You can, alternatively, use virtual network rules to manage access from specific subnets that contain your VMs or other services. Or you could configure a private endpoint, the most secure way to connect to an Azure SQL Database instance.
 
 In the video that follows, you can see how to create, configure, and compare the various methods of connecting to a database in Azure SQL Database: 
 * Allow access to Azure resources
