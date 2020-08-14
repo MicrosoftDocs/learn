@@ -1,4 +1,5 @@
-In this unit we will introduce you to the Numerics library and the arithmetic
+In this unit we will introduce  to you the Numerics library and the arithmetic
+
 capabilities of the Quantum Development Kit. The library is an API, written in
 Q#, that gives you the ability to perform arithmetic operations with quantum
 computers and qubit registers.

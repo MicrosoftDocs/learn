@@ -1,4 +1,4 @@
-In this unit we will introduce you to the Quantum Machine Learning Library
+In this unit we will introduce the Quantum Machine Learning Library
 of the Quantum Development Kit. The library is an API, written in Q#, that gives
 you the ability to run hybrid quantum/classical machine learning experiments.
 
@@ -12,10 +12,10 @@ and hinders the development and scope of the field. This is why researches are
 exploring how to use quantum technology to train models and potentially provide
 some advantage over classical machine learning algorithms.
 
-For the moment, the Quantum Machine Learning Library provides the necessary
+The Quantum Machine Learning Library available today provides the necessary
 tools to implement a circuit-centric quantum classifier. This classifier is a
 new hybrid quantum-classical algorithm to solve supervised classification
-problems. It is research library to explore this model of quantum machine
+problems. It is currently a research library to explore this model of quantum machine
 learning, rather than a production-ready tool.
 
 ### Classification problem
@@ -48,12 +48,12 @@ known as *overfitting*.
 The general goal of machine learning classification is to find the optimal set of
 parameters $\theta$ that yields the best performance.
 
-#### Circuit centric classifier
+#### Circuit-centric classifier
 
-The model implemented in the Quantum Machine Learning Library is called *circuit
+The model implemented in the Quantum Machine Learning Library is called *circuit-
 centric classifier* and follows a similar logic. In this model, instead of using
 a classical function to predict the probabilities, we apply parametrized
-operations to a register of qubits encoding the sample $x$. Then by by measuring
+operations to a register of qubits encoding the sample $x$. Then by measuring
 one of the qubits and repeating this sequence multiple times we can infer the
 probabilities associated to each class.
 
