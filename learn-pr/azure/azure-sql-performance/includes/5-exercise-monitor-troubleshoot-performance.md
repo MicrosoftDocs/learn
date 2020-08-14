@@ -88,7 +88,7 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
 
 1. On your local device, open SQL Server Management Studio (SSMS) and create a new connection to your logical server.  
 
-    For server name, input the name of your Azure SQL Database logical server that was displayed from the Cloud Shell. For example: *aw-server`<unique ID>`.database.windows.net*.
+    For server name, input the name of your Azure SQL Database logical server that was shown from the Cloud Shell. For example: *aw-server`<unique ID>`.database.windows.net*.
 
     Change the authentication to **SQL Server Authentication**, and input the corresponding sign-in and password you provided for the script.  
 
@@ -97,7 +97,7 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
     :::image type="content" source="../media/5-connect-azure-sql.png" alt-text="Screenshot of connecting to Azure SQL Database in SSMS."::: 
 
     > [!NOTE]
-    > Depending on your local configuration (for example, VPN), your client IP address may differ from the IP address the Azure portal used during deployment. If it does, you'll get the following message: "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in by using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps by using the wizard in SSMS.  
+    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address the Azure portal used during deployment. If it does, you'll get the following message: "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in by using the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps by using the wizard in SSMS.  
 
 ## Prepare the exercise by loading and editing scripts
 
@@ -220,7 +220,7 @@ Let's now use the DMV queries you loaded earlier to observe performance.
     You should see many of the requests have a status of RUNNABLE, and `last_wait_type` is SOS_SCHEDULER_YIELD. One indicator of many RUNNABLE requests and many SOS_SCHEDULER_YIELD waits is a possible lack of CPU resources for active queries.
 
     > [!NOTE]
-    > You might see one or more active requests with a command of SELECT and a `wait_type` of XE_LIVE_TARGET_TVF. These are queries run by services managed by Microsoft. They help with capabilities like performance insights by using Extended Events. Microsoft doesn't publish the details of these sessions.
+    > You might see one or more active requests with a command of SELECT and a `wait_type` of XE_LIVE_TARGET_TVF. These are queries run by services managed by Microsoft. They help with capabilities like performance insights by using extended events. Microsoft doesn't publish the details of these sessions.
 
     Leave this query editor window open. You'll run it again in the next exercise.
 
@@ -246,9 +246,9 @@ Let's now use the DMV queries you loaded earlier to observe performance.
     [datetime] [ostress PID] OSTRESS exiting normally, elapsed time: 00:01:22.637
     ```
 
-    Your duration time may vary but this typically takes at least 1-3 minutes. Make sure to let this run to completion. When the workload is done, you will be returned to the command prompt.
+    Your duration time might vary but this typically takes at least 1-3 minutes. Make sure to let this run to completion. When the workload is done, you will be returned to the command prompt.
 
-## Use the Query Store for further analysis
+## Use the query store for further analysis
 
 Query store is a capability in SQL Server to track performance execution of queries. Performance data is stored in the user database. Query store isn't enabled by default for databases created in SQL Server, but is on by default for Azure SQL Database (and Azure SQL Managed Instance).
 
@@ -338,4 +338,4 @@ Your results would look like the following image:
 
 Azure Monitor logs have a delay when you're first configuring log diagnostics for a database, so these results can take some time to appear.
 
-In this exercise, you learned how to observe a common SQL performance scenario and dive into details to decide on a possible solution to improve performance. In the next unit, you learn methods to accelerate and tune performance.
+In this exercise, you learned how to observe a common SQL Server performance scenario and dive into details to decide on a possible solution to improve performance. In the next unit, you learn methods to accelerate and tune performance.

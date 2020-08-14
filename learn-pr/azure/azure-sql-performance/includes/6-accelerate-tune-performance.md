@@ -19,7 +19,7 @@ I/O latency is another key component for I/O performance. For faster I/O latency
 
 ## Increase memory or workers
 
-Having enough memory or workers might be important to your application and deployment. For Azure SQL Database, scale up vCores for higher memory limits or workers. For SQL Managed Instance, scale up vCores for higher memory limits. Currently, Managed Instance also supports increasing workers with "max worker threads."
+Having enough memory or workers might be important to your application and deployment. For Azure SQL Database, scale up vCores for higher memory limits or workers. For SQL Managed Instance, scale up vCores for higher memory limits. Currently, SQL Managed Instance also supports increasing workers with "max worker threads."
 
 ## Improve application latency
 

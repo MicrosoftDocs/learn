@@ -8,7 +8,7 @@ Finally, you learned the unique capabilities of intelligent performance in Azure
 
 Learn more about Azure SQL Database performance with these resources:
 
-- Fixed capacities to choose from for CPU, memory, and I/O. Study the resource limits for Azure SQL [Managed Instances](https://docs.microsoft.com/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [Databases](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
+- Fixed capacities to choose from for CPU, memory, and I/O. Study the resource limits for [Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [Databases](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
 - [I/O configuration](https://techcommunity.microsoft.com/t5/datacat/storage-performance-best-practices-and-considerations-for-azure/ba-p/305525?azure-portal=true) for SQL Managed Instance might improve performance.
 - Familiar tools exist, like [extended events](https://docs.microsoft.com/azure/azure-sql/database/xevent-db-diff-from-svr?azure-portal=true).
 - [Query store](https://docs.microsoft.com/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store?azure-portal=true) is on by default and provides automatic tuning.

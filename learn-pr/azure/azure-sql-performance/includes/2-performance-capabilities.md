@@ -37,7 +37,7 @@ With SQL Server, you often use partitions for tables with a large number of rows
 
 ## SQL Server 2019 performance enhancements
 
-Many of the performance features in SQL Server 2019, such as intelligent query processing, are also available in Azure SQL Database. However, there are some exceptions. For example, Tempdb metadata optimization isn't yet available for Azure SQL Database.
+Many of the performance features in SQL Server 2019, such as intelligent query processing, are also available in Azure SQL Database. However, there are some exceptions. For example, tempdb metadata optimization isn't yet available for Azure SQL Database.
 
 ## Intelligent performance
 

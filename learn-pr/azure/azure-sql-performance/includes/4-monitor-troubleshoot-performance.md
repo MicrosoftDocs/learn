@@ -1,4 +1,4 @@
-Monitoring and troubleshooting are key elements to deliver consistent performance. Azure SQL Database has the same tools and features as SQL Server to monitor and troubleshoot performance, plus additional capabilities. This includes features like dynamic management views (DMV), extended events, and Azure Monitor. It's also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL Database. Thes scenarios include high CPU or waiting on a resource.
+Monitoring and troubleshooting are key elements to deliver consistent performance. Azure SQL Database has the same tools and features as SQL Server to monitor and troubleshoot performance, plus additional capabilities. This includes features like dynamic management views (DMVs), extended events, and Azure Monitor. It's also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL Database. Thes scenarios include high CPU or waiting on a resource.
 
 ## Tools and capabilities to monitor performance
 
@@ -22,7 +22,7 @@ You use lightweight query profiling to examine the query plan and running state 
 
 ### Query plan debug capabilities
 
-In some situations, you may need additional details about query performance for an individual T-SQL statement. T-SQL SET statements, such as SHOWPLAN and STATISTICS, can provide these details and are fully supported for Azure SQL Database, as they are for SQL Server.
+In some situations, you might need additional details about query performance for an individual T-SQL statement. T-SQL SET statements, such as SHOWPLAN and STATISTICS, can provide these details and are fully supported for Azure SQL Database, as they are for SQL Server.
 
 ### Query store
 
@@ -63,7 +63,7 @@ You'll need the following DMVs to solve certain performance scenarios for Azure 
 
 These DMVs provide deeper insight into resource limits and resource governance for Azure SQL Database. They aren't meant to be used for common scenarios, but might be helpful when looking deep into complex performance problems. Consult the documentation for all the details of these DMVs:
 
-- **sys.dm_user_db_resource_governance_internal** (Managed Instance only)
+- **sys.dm_user_db_resource_governance_internal** (SQL Managed Instance only)
 - **sys.dm_resource_governor_resource_pools_history_ex**
 - **sys.dm_resource_governor_workload_groups_history_ex**
 
@@ -165,7 +165,7 @@ To perform analysis on waiting scenarios, you typically look at the following to
 
 - `sys.dm_exec_requests`
 
-    Use this DMV to find specific wait types for active queries to see what resource they are waiting on. This could be a standard blocking scenario waiting on locks from other users.
+    Use this DMV to find specific wait types for active queries to see what resource they are waiting on. This can be a standard blocking scenario, waiting on locks from other users.
 
 - `sys.dm_os_waiting_tasks`
 
@@ -180,7 +180,7 @@ To perform analysis on waiting scenarios, you typically look at the following to
 
 ### Scenarios specific to Azure SQL Database
 
-There are some performance scenarios, both running and waiting, that are specific to Azure SQL Database. These include log governance, worker limits, waits encountered for Business Critical service tiers, and waits specific to a Hyperscale deployment.
+There are some performance scenarios, both running and waiting, that are specific to Azure SQL Database. These include log governance, worker limits, waits encountered for business critical service tiers, and waits specific to a hyperscale deployment.
 
 #### Log governance
 
@@ -189,7 +189,7 @@ Azure SQL Database can use log rate governance to enforce resource limits on tra
 - LOG_RATE_GOVERNOR - waits for Azure SQL Database
 - POOL_LOG_RATE_GOVERNOR - waits for Elastic Pools
 - INSTANCE_LOG_GOVERNOR - waits for Azure SQL Managed Instance
-- HADR_THROTTLE_LOG_RATE* - waits for Business Critical and geo-replication latency
+- HADR_THROTTLE_LOG_RATE* - waits for business critical and geo-replication latency
 
 #### Worker limits
 
@@ -198,18 +198,18 @@ SQL Server uses a worker pool of threads but has limits on the maximum number of
 - Azure SQL Database has limits based on service tier and size. If you exceed this limit, a new query receives an error.
 - At the current time, SQL Managed Instance uses `max worker threads`, so workers past this limit might see THREADPOOL waits.
 
-#### Business Critical HADR waits
+#### Business critical HADR waits
 
-If you use a Business Critical service tier, you might unexpectedly see the following wait types:
+If you use a business critical service tier, you might unexpectedly see the following wait types:
 
 - HADR_SYNC_COMMIT
 - HADR_DATABASE_FLOW_CONTROL
 - HADR_THROTTLE_LOG_RATE_SEND_RECV
 
-Even though these waits might not slow down your application, you might not be expecting to see these. They're normally specific to using an Always On availability group. Business Critical tiers use availability group technology to implement SLA and availability features of a Business Critical service tier, so these wait types are expected. Note that long wait times might indicate a bottleneck such as I/O latency or replica behind.
+Even though these waits might not slow down your application, you might not be expecting to see these. They're normally specific to using an Always On availability group. Business critical tiers use availability group technology to implement SLA and availability features of a business critical service tier, so these wait types are expected. Note that long wait times might indicate a bottleneck such as I/O latency or replica behind.
 
 #### Hyperscale
 
-The Hyperscale architecture can result in some unique wait types that are prefixed with **RBIO** (a possible indication of log governance). In addition, DMVs, catalog views, and extended events have been enhanced to show metrics for page server reads.
+The hyperscale architecture can result in some unique wait types that are prefixed with **RBIO** (a possible indication of log governance). In addition, DMVs, catalog views, and extended events have been enhanced to show metrics for page server reads.
 
 You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL Database by using the tools and knowledge you have gained in this unit.

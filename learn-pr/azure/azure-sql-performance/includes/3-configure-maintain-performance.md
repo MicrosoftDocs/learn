@@ -1,4 +1,4 @@
-Understanding the capabilities of Azure SQL Database is important for delivering consistent performance. It's also important to understand the options and restrictions you have to configure in Azure SQL Managed Instance and Azure SQL Database that can impact performance. This includes the following:
+Understanding the capabilities of Azure SQL Database is important for delivering consistent performance. It's also important to understand the options and restrictions you have to configure in Azure SQL Managed Instance and Azure SQL Database that can affect performance. This includes the following:
 
 - Topics of the tempdb database.
 - Configuring databases.

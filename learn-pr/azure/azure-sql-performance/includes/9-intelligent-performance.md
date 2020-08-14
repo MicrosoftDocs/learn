@@ -1,6 +1,6 @@
-SQL Server and Azure SQL Database include automation to help deliver consistent performance for your application. These automation capabilities are called, collectively, Intelligent Performance.
+SQL Server and Azure SQL Database include automation to help deliver consistent performance for your application. These automation capabilities are called, collectively, intelligent performance.
 
-Intelligent Performance for Azure SQL includes intelligent query processing, automatic plan correction, and automatic tuning.
+Intelligent performance for Azure SQL Database includes intelligent query processing, automatic plan correction, and automatic tuning.
 
 ## Intelligent query processing
 
@@ -31,7 +31,7 @@ The main scenario automatic tuning is designed to address pertains to indexes. A
 
 Automatic tuning for Azure SQL Database takes a conservative approach to recommending indexes. This means that recommendations that might appear in a DMV like sys.dm_db_missing_index_details, or a query show plan, might not show up immediately as recommendations for automatic tuning. Automatic tuning services monitor queries over time, and use machine learning algorithms to make recommendations to truly affect query performance.
 
-Be aware that automatic tuning for index recommendations doesn't account for any overhead performance an index could cause on your operations, such as inserts, updates, or deletes.
+Be aware that automatic tuning for index recommendations doesn't account for any overhead performance an index can cause on your operations, such as inserts, updates, or deletes.
 
 Parameterized queries represent an additinal scenario for automatic tuning. Queries with non-parameterized values can lead to performance overhead because the execution plan is recompiled each time the non-parameterized values are different. In many cases, the same queries with different parameter values generate the same execution plans. These plans, however, are still separately added to the plan cache. The process of recompiling execution plans uses database resources, increases the query duration time, and overflows the plan cache. These events, in turn, cause plans to be evicted from the cache.
 
