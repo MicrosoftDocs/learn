@@ -14,6 +14,6 @@ The Python extension lets you create Python and Jupyter Notebook files that can 
 
 ## Install IntelliCode extension
 
-While you're in the extensions tab, go back to the search bar and type in "Screenshot showing the Visual Studio Code intellicode extension". Click on the specified box - it should be the first result - and click "install". IntelliCode will recommend code when you're writing programs, which is a great tool for beginners who might not know the exact syntax.
+While you're in the extensions tab, go back to the search bar and type in "intellicode". Select the specified box. It should be the first result. Select **Install**. IntelliCode will recommend code when you're writing programs, which is a great tool for beginners who might not know the exact syntax.
 
 :::image type="content" source="../media/install-intellicode.png" alt-text="Install Intellicode":::
