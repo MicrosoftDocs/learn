@@ -22,7 +22,7 @@ Admission webhooks are available in two kinds: either a *validating webhook* or 
 
 The *Open Policy Agent (OPA)* is an open-source, general-purpose policy engine that gives you a high-level declarative language to author policies. These policies enable you to define rules that oversee how your system should behave.
 
-## What is the Open Policy Agent (OPA) Gatekeeper?
+## What is the OPA Gatekeeper?
 
 The *OPA Gatekeeper* is an open-source, validating, Kubernetes admission-controller webhook that enforces Custom Resource Definition (CRD)-based policies by using the Open Policy Agent.
 
@@ -40,7 +40,7 @@ You can use the OPA Gatekeeper to define organization-wide policies. For example
 
 The current version of the OPA Gatekeeper (version 3) is supported by Azure Kubernetes Service.
 
-## Azure Policy for Azure Kubernetes Service (AKS)
+## Azure Policy for AKS
 
 Azure Policy extends OPA Gatekeeper version 3 and integrates with AKS through built-in policies. These policies apply at-scale enforcements and safeguards on your cluster in a centralized and consistent manner.
 
