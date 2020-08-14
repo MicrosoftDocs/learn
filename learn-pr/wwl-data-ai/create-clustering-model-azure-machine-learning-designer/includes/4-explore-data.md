@@ -35,7 +35,7 @@ To get started with Azure machine Learning designer, first you must create a pip
 2. In the **Settings** pane, change the default pipeline name (**Pipeline-Created-on-*date***) to **Iris Training** (if the **Settings** pane is not visible, click the **&#9881;** icon next to the pipeline name at the top).
 3. Note that you need to specify a compute target on which to run the pipeline. In the **Settings** pane, click **Select compute target** and select the compute cluster you created previously.
 4. On the left side of the designer, select the **Datasets** (&#8981;) tab, expand the **Datasets** section, and drag the **iris** dataset you created in the previous exercise onto the canvas.
-5. Select the **iris** module on the canvas, and view its settings (the settings pane for the dataset may open automatically and cover the canvas). Then on the **outputs** tab, in the **Dataset output** section, click the **Visualize** icon (which looks like a column chart).
+5. Right-click (Ctrl+click on a Mac) the **iris** dataset on the canvas, and on the **Visualize** menu, select **Dataset output**.
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms. The dataset contains measurements of sepals and petals for three different species of iris flower, and consists of the following five columns:
     - **Column1**: Sepal length
     - **Column2**: Sepal width
