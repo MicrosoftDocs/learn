@@ -13,7 +13,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     This storage account was deployed as part of the deployment script for your Azure SQL Database instance. Review the options, and add your email address if you want to receive the results of the weekly recurring scan.  
 
-1. You can also configure your Advanced Threat Protection settings. To check the available Advanced Threat Protection alert types, select **All** under **Advanced Threat Protection types**.  
+1. You can also configure your Advanced Threat Protection settings. To view the available Advanced Threat Protection alert types, select **All** under **Advanced Threat Protection types**.  
 
     :::image type="content" source="../media/8-advanced-threat-protection-types.png" alt-text="Screenshot of the types of protection in Advanced Threat Protection.":::
 
@@ -23,7 +23,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. After you've updated all your settings, select **Save**.  
 
-    Configuring these settings will enable you to complete some of the other steps in this activity. You'll see more of Vulnerability Assessment and Advanced Threat Protection later.  
+    By configuring these settings, you'll be able to complete some of the other steps in this activity. You'll see more of Vulnerability Assessment and Advanced Threat Protection later.  
 
 ## Data Discovery & Classification
 
@@ -31,11 +31,11 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
 1. Review Data Discovery & Classification, which provides advanced capabilities for discovering, classifying, labeling, and reporting the sensitive data in your database.
 
-    For this step, select the **Data Discovery & Classification** box. This wizard type of view is similar (but not exactly matching) to the Data Discovery & Classification tool that exists in SQL Server today through SQL Server Management Studio (SSMS). Using the SSMS wizard is *supported* for Azure SQL Managed Instance but *not supported* for Azure SQL Database. You can achieve similar functionality by using the Azure portal (supported for both Azure SQL Database and SQL Managed Instance).  
+    For this step, select **Data Discovery & Classification**. This wizard type of view is similar but not identical to the Data Discovery & Classification tool that exists in SQL Server today through SQL Server Management Studio (SSMS). Using the SSMS wizard is *supported* for Azure SQL Managed Instance but *not supported* for Azure SQL Database. You can achieve similar functionality by using the Azure portal, which is supported for both Azure SQL Database and SQL Managed Instance.  
 
     You can use Transact-SQL across all deployment options to add or drop column classifications and to retrieve classifications.
 
-1. Select the information bar that displays **We have found XX columns with classification recommendations**.  
+1. Select the information bar that displays **We have found \<x> columns with classification recommendations**.  
 
 1. Data Discovery & Classification tries to identify potential sensitive data based on the column names in your tables. Review some of the suggested labels, and then select **Select all** > **Accept selected recommendations**.  
 
@@ -57,7 +57,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     :::image type="content" source="../media/8-vulnerability-scan.png" alt-text="Screenshot of how to kick off a Vulnerability Assessment scan.":::
 
-    Your resulting view should be similar to what is shown here:  
+    Your resulting view should be similar to what's shown here:  
 
     :::image type="content" source="../media/8-vulnerability-scan-results.png" alt-text="New Vulnerability Assessment dashboard after scan." lightbox="../media/8-vulnerability-scan-results.png":::
 
@@ -95,9 +95,9 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
     * Brute force
     * Anomalous client login
 
-    In this section, you will see how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom-written applications, not for standard tools like SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection, you need to "set" the **Application Name** (which is a connection property for clients connecting to SQL Server or Azure SQL).
+    In this section, you can see how a SQL Injection alert can be triggered through SSMS. SQL Injection alerts are intended for custom-written applications, not for standard tools such as SSMS. Therefore, to trigger an alert through SSMS as a test for a SQL Injection, you need to "set" the **Application Name**, which is a connection property for clients that connect to SQL Server or Azure SQL.
 
-    To get the full experience of this section, you'll need access to the email address you provided for Advanced Threat Protection alerts in the first part of this exercise. If you need to update it, do so before proceeding.  
+    To get the full experience of this section, you need access to the email address you provided for Advanced Threat Protection alerts in the first part of this exercise. If you need to update it, do so before proceeding.  
 
 1. In SSMS, select **File** > **New** > **Database Engine Query** to create a query by using a new connection.  
 
@@ -105,7 +105,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     :::image type="content" source="../media/8-connect-db.png" alt-text="Screenshot of how to connect to a specific database.":::
 
-1. Select the **Additional Connection Parameters** tab, and then insert the following connection string in the empty text box:  
+1. Select the **Additional Connection Parameters** tab, and then insert the following connection string in the text box:  
 
     ```sql
     Application Name=webappname
@@ -121,7 +121,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
     SELECT * FROM sys.databases WHERE database_id like '' or 1 = 1 --' and family = 'test1';
     ```
 
-    Within a few minutes, you should receive an email message similar to the following:  
+    Within a few minutes, you should receive an email message that's similar to the following:  
 
     :::image type="content" source="../media/8-advanced-threat-protection-email.png" alt-text="Screenshot of an Advanced Threat Protection threat detected email.":::
 
