@@ -7,16 +7,16 @@ As mentioned before, Visual Studio Code is free. You can download it [on the Vis
 > [!NOTE]
 > The picture below shows someone using Windows 10 with the Microsoft Edge browser, but you should choose the box that represents your system.
 
-:::image type="content" source="../media/download-vs-code.png" alt-text="How to download VSCode":::
+:::image type="content" source="../media/download-vs-code.png" alt-text="Screenshot of the VS Code download page on the Visual Studio Code website":::
 
 After you click on the box, you'll be asked to accept the license agreement and fill out preferences for the application. You'll also be asked where to install the program. Read over the license agreement and then click **agree**.
 
-:::image type="content" source="../media/vs-code-license.png" alt-text="Accept agreement":::
+:::image type="content" source="../media/vs-code-license.png" alt-text="Screenshot of the accept agreement dialogue box in the Visual Studio Code installation process":::
 
 > [!NOTE]
 > On the preferences window, be sure to click the **Add to Path** box.
 
-:::image type="content" source="../media/vs-code-preferences.png" alt-text="Download preferences":::
+:::image type="content" source="../media/vs-code-preferences.png" alt-text="Screenshot of the download preferences selection dialogue box in the Visual Studio Code installation process":::
 
 Finally, click **install** on the last window to finish the installation.
 
@@ -24,7 +24,7 @@ Finally, click **install** on the last window to finish the installation.
 
 After Visual Studio Code is installed, you may have the option to have it open on its own. If you can't see the start dialogue, just find the application on your computer and start it. When you first come into Visual Studio Code, you'll be greeted with a welcome window. Let's start by closing this window. You'll see on the left side of the screen that there are various icons that, when you click on them, open other features of Visual Studio Code. Below is a brief overview of a few of the sections we'll be using.
 
-:::image type="content" source="../media/vs-code-welcome-screen.png" alt-text="Welcome to VS Code":::
+:::image type="content" source="../media/vs-code-welcome-screen.png" alt-text="Screenshot of the Welcome to VS Code home page":::
 
 - Explorer: Shows which file(s) you have open and the contents of the folder, if you're in one
 - Search: Allows you to look for a certain word or collection of words in your file

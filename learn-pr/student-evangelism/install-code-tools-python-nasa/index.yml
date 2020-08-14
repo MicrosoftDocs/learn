@@ -37,6 +37,7 @@ units:
 - learn.student-evangelism.install-code-tools-python-nasa.7-install-python
 - learn.student-evangelism.install-code-tools-python-nasa.8-install-extensions
 - learn.student-evangelism.install-code-tools-python-nasa.9-create-jupyter-file
+- learn.student-evangelism.install-code-tools-python-nasa.9a-knowledge-check
 - learn.student-evangelism.install-code-tools-python-nasa.10-summary
 badge:
   uid: learn.student-evangelism.install-code-tools-python-nasa.badge

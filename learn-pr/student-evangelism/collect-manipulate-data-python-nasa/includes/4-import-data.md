@@ -2,7 +2,11 @@ You now have a goal: *Is a launch likely to happen given specific weather condit
 
 ## Machine learning in code
 
-You can use various tools and services to solve machine learning problems. These space-themed learning paths use Visual Studio Code, Python, scikit-learn, and Azure. Microsoft has a [video about downloading and configuring a similar environment](https://www.youtube.com/watch?v=5E3WMb8_T3s&list=PLlrxD0HtieHjDop2DtiCmwTTcrlwKAVHE&index=8?azure-portal=true) to the one we need.
+You can use various tools and services to solve machine learning problems. These space-themed learning paths use Visual Studio Code, Python, scikit-learn, and Azure.
+
+Watch this Microsoft video to learn how to download and configure a similar environment to the one you'll need.
+
+> [!VIDEO https://www.youtube.com/embed/5E3WMb8_T3s]
 
 When you're setting up your local programming environment, we recommend creating an Anaconda environment to ensure you have exactly what you need for that project. If you have another way or set of tools that you prefer to use, the majority of these modules don't explicitly require Visual Studio Code or Azure.
 
