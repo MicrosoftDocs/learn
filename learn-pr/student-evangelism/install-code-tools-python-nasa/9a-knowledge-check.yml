@@ -18,28 +18,28 @@ quiz:
     choices:
     - content: "English"
       isCorrect: false
-      explanation: "Computers need more of a concrete language than English"
+      explanation: "Computers need more of a concrete language than English."
     - content: "Programming languages"
       isCorrect: true
-      explanation: "Correct! Computers can follow the code written in programming languages"
+      explanation: "Correct! Computers can follow the code written in programming languages."
     - content: "Technology languages"
       isCorrect: false
-      explanation: "Sounds right, but unfortunately technology language is a made-up term"
+      explanation: "Sounds right, but unfortunately technology language is a made-up term."
     - content: "Numbers"
       isCorrect: false
       explanation: "Close! While computers can read binary, they cannot work with just numbers."
   - content: "When software is open-source it means"
     choices:
-    - content: "You need a friend to give you access to it"
+    - content: "You need a friend to give you access to it."
       isCorrect: false
-      explanation: "While your friend could help you find the software, you don't need anyone to give you access to it"
-    - content: "If you pay, your features will be added"
+      explanation: "While your friend could help you find the software, you don't need anyone to give you access to it."
+    - content: "If you pay, your features will be added."
       isCorrect: false
       explanation: "Paying someone will not necessarily mean that they will make the feature for you. Anyone can make whatever they want."
-    - content: "No one can see the code"
+    - content: "No one can see the code."
       isCorrect: false
       explanation: "Actually, open-source is the opposite: everyone can see the code."
-    - content: "Anyone can develop it and add content to it"
+    - content: "Anyone can develop it and add content to it."
       isCorrect: true
       explanation: "Correct! This is exactly what open-source means."
   - content: "Visual Studio Code is all of the following except?"

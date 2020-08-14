@@ -21,7 +21,7 @@ To run Python using Jupyter Notebooks from within Visual Studio Code, you'll use
 
 Once you're connected to Visual Studio Codespaces, you'll be greeted with a welcome window. Let's start by closing this window. You'll see on the left side of the screen that there are various icons you can click on. Below is a brief overview of a few of the sections that we'll be using.
 
-:::image type="content" source="../media/code-space-start.png" alt-text="Screenshot of the Visual Studio Code Welcome page":::
+:::image type="content" source="../media/code-space-start.png" alt-text="Screenshot of the Visual Studio Code Welcome page.":::
 
 - Explorer: Shows which file(s) you have open and the contents of the folder, if you're in one
 - Search: Allows you to look for a certain word or collection of words in your file

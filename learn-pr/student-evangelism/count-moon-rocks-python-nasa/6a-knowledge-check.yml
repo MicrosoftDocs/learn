@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "To modify the rock count variables in the function we created, we had to make them global variables. True or False?"
+  - content: "How did we modify the rock count variables in the function we created?"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Correct! This is how we modified our variables in the function"
-    - content: "False"
+    - content: "We passed them in as parameters."
       isCorrect: false
-      explanation: "We did make them global variables."
+      explanation: "Incorrect. We made them global variables."
+    - content: "We made them global variables."
+      isCorrect: true
+      explanation: "Correct! This is how we modified our variables in the function."
   - content: "How did we call the countMoonRocks function?"
     choices:
     - content: "for rock in rockList:
@@ -45,13 +45,13 @@ quiz:
     choices:
     - content: "`.finish()`"
       isCorrect: false
-      explanation: "Close but not correct."
+      explanation: "Close, but not correct."
     - content: "`.close()`"
       isCorrect: true
       explanation: "Correct! This is what we called to close the file after we read data from it."
     - content: "`.end`"
       isCorrect: false
-      explanation: "Close but not correct"
+      explanation: "Close, but not correct."
     - content: "`.done()`"
       isCorrect: false
-      explanation: "Close but not correct"
+      explanation: "Close, but not correct."
