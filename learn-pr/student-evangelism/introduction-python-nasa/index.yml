@@ -34,6 +34,7 @@ units:
 - learn.student-evangelism.introduction-python-nasa.4-nasa-stem
 - learn.student-evangelism.introduction-python-nasa.5-nasa-inspiration
 - learn.student-evangelism.introduction-python-nasa.6-why-coding
+- learn.student-evangelism.introduction-python-nasa.6a-knowledge-check
 - learn.student-evangelism.introduction-python-nasa.7-summary
 badge:
   uid: learn.student-evangelism.introduction-python-nasa.badge
