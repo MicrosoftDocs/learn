@@ -4,7 +4,7 @@ One of the benefits of Azure SQL is that Azure can take care of all of this for 
 
 By default, a full database backup is taken once a week. Log backups are taken every 5-10 minutes, and differential backups every 12 hours. The backup files are stored in Azure Storage in read-access geo-redundant storage (RA-GRS). On an ongoing basis, the Azure SQL engineering team automatically tests the restore of automated backups of databases placed in logical servers and elastic database pools. For migrations to Azure SQL Managed Instance, an automatic initial backup with checksum of databases restored with the native RESTORE command or the Azure Database Migration Service is completed. And in Azure SQL Managed Instance, you can take a native copy-only backup and store it in Azure Blob storage.
 
-## Creating a backup strategy for Azure SQL Managed Instance and Azure SQL Database
+## Create a backup strategy for Azure SQL Managed Instance and Azure SQL Database
 
 Even though Azure SQL takes care of the heavy lifting, it's still important to understand how backups are stored and processed and what your options for retention and restoring are. Ultimately, you're still responsible for the overall strategy for point in time restore, long-term retention, and geo-restore.
 
