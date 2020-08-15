@@ -13,18 +13,18 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: "Which of the following is a form in which you'd find a space rock on Earth?"
+  - content: "Which is a form in which you'd find a space rock on Earth?"
     choices:
     - content: "Meteoroid"
       isCorrect: false
-      explanation: "Incorrect. Meteors are observed moving through space, not on Earth."
+      explanation: "Incorrect. Meteors are seen moving through space, not on Earth."
     - content: "Meteorite"
       isCorrect: true
       explanation: "Correct! A meteorite is the remnants of a meteor that crashed into Earth."
     - content: "Asteroid"
       isCorrect: false
-      explanation: "Incorrect. Asteroids are observed moving through space, not on Earth."
-  - content: "What steps should an astronaut take if they see one black rock in a field of white rocks on a space mission, the astronaut should collect the black rock because it's unique."
+      explanation: "Incorrect. Asteroids are seen moving through space, not on Earth."
+  - content: "What should an astronaut do if they see one black rock in a field of white rocks on a space mission that includes collecting rock specimens?"
     choices:
     - content: "Take a photo of the black rock, and add a comment about why they think this rock is important."
       isCorrect: false
@@ -43,6 +43,6 @@ quiz:
     - content: "To find an asteroid that's suitable for humans to inhabit."
       isCorrect: false
       explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to find an asteroid where humans might live."
-    - content: "To test a new long-distance camera."
+    - content: "To test a new long-range camera."
       isCorrect: false
       explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to test a new camera."

@@ -18,10 +18,10 @@ quiz:
     - content: "A computer system that's modeled on the human brain and nervous system."
       isCorrect: true
       explanation: "Correct! A neural network is a computer system that's modeled on the human brain and nervous system."
-    - content: "A system of linked computing servers."
+    - content: "An intricate system of linked computing servers."
       isCorrect: false
       explanation: "Incorrect. A neural network isn't a network of computers or servers."
-    - content: "Software that's installed on a computer."
+    - content: "A bundle of software that's installed on a computer."
       isCorrect: false
       explanation: "Incorrect. A neural network isn't software."      
   - content: "What does accuracy in an AI model refer to?"

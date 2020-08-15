@@ -32,7 +32,7 @@ quiz:
     - content: "You can use Anaconda to download many Python libraries at once."
       isCorrect: true
       explanation: "Correct! Anaconda is useful for downloading many Python libraries in one package."
-    - content: "You can use Anaconda to download programs without going online."
+    - content: "Anaconda allows you to download Python libraries without going online."
       isCorrect: false
       explanation: "Incorrect. You need an internet connection to download Anaconda and the Python libraries in it."
   - content: "How do humans and machines compare in the way they observe and classify items?"
