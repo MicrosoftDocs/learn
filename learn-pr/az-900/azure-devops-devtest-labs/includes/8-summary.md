@@ -1,15 +1,7 @@
-Our goal in this module was to be able to choose the best DevOps solution for a given set of requirements.
+Our goal in this module was to help Tailwind Traders choose the best DevOps solution for a given set of requirements across different software development and testing needs.
 
-[How the tech solved the problem]
+We identified different product options and their capabilities, including Azure DevOps Services, GitHub (including GitHub Actions), and Azure DevTest Labs.  We analyzed the decision criteria for choosing one option over another in a given scenario.  Then we applied that decision criteria to three different challenges at Tailwind Traders, helping them find the best service option for the given scenario.
 
-By using basic C# syntax, the dotnet CLI, the Console class in the .NET Base Class Library and several developer tools already installed into the Azure Cloud Shell, we were able to ask the user to enter their name, store it in a variable and combine it with literal string data to display a new message.
+Without DevOps tools from Microsoft, Tailwind Traders might have difficulty in realizing the benefits of DevOps practices like CI/CD, source code management, and automated testing.
 
-[Experience without product]
-
-
-[Business impact]
-
-While our application may seem mundane as modern games go, most applications will perform these same basic features, including:
-Displaying output to a user
-Requesting input from a user
-Processing information -- combining it, formatting it, calculating it, etc.
+DevOps practices and processes have changed the software development landscape, accelerating software development while improving the deployability and quality of software systems.

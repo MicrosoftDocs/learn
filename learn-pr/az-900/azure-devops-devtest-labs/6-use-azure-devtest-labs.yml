@@ -3,13 +3,13 @@ uid: learn.languages.azure-devops-devtest-labs.use-azure-devtest-labs
 title: Use Azure DevTest Labs to manage testing environments
 metadata:
   title: Use Azure DevTest Labs to manage testing environments
-  description: Explore tooling that helps automate the creation of environments that quality assurance professionals can use to test software.
+  description: Analyze a scenario that requires the easy management, provisioning, and automatic de-provisioning of VMs for testing.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 azureSandbox: false
 content: |
   [!include[](includes/5-use-azure-devtest-labs.md)]

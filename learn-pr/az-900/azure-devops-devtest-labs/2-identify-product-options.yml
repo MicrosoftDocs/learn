@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.azure-devops-devtest-labs.identify-product-options
-title: What is Azure DevOps?
+title: Identify the product options
 metadata:
-  title: What is Azure DevOps?
-  description: Explore the features of Azure DevOps that enable a software deployment pipeline.
+  title: Identify the product options
+  description: Examine each DevOps product or service available from Microsoft Azure.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 azureSandbox: false
 content: |
   [!include[](includes/2-identify-product-options.md)]

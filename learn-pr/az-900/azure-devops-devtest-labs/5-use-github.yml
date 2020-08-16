@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.azure-devops-devtest-labs.use-github
-title: Use GitHub to utilize and contribute to open source software
+title: Use GitHub to utilize and contribute to open-source software
 metadata:
-  title: Use GitHub to utilize and contribute to open source software
-  description: Explore tooling that helps automate the creation of environments that quality assurance professionals can use to test software.
+  title: Use GitHub to utilize and contribute to open-source software
+  description: Analyze a scenario that requires a platform for sharing code and gathering input.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 azureSandbox: false
 content: |
   [!include[](includes/7-use-github.md)]

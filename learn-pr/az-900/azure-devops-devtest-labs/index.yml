@@ -11,10 +11,8 @@ metadata:
 title: Choose the best DevOps tools for your software and infrastructure environment
 summary: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
 abstract: |
-  In this module, you will:
-  - Discover a range of tools that helps technical people plan, manage, collaborate, and test code.
-  - Uncover key differences between similar code repository offerings from Microsoft.
-  - Build a publishing pipeline for testing and deploying code.
+  By the end of this module, you will be able to:
+  - Choose the appropriate DevOps tool or service for a given business scenario.
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/azure-devops-devtest-labs.svg
