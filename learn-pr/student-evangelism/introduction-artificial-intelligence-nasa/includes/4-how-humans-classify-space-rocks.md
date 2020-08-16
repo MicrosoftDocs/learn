@@ -29,10 +29,10 @@ Next, we try to find the relationships between the features and the type of rock
 
 In this step, our brain tries to separate or collate the characteristics and features of each type of rock. Because of the associations we make, we come up with some rules. For example, we determine that lighter rocks usually are highland rocks and that the texture of basalt rocks is more jagged. These associations and the links between them are demonstrated in the following image:
 
-:::image type="content" source="../media/links.png" alt-text="Dynamic diagram that shows four sets of nine black dots, with colored lines being drawn between the dots in each set to demonstrate dynamic associations." loc-scope="Azure":::
+:::image type="content" source="../media/links.png" alt-text="Diagram that shows four sets of nine black dots, with colored lines being drawn between the dots in each set to demonstrate dynamic associations." loc-scope="Azure":::
 
 ### Step 3
 
 Last, we try to use these relationships between known items to determine how to classify a new item. Given a new rock image to consider, our brains extract its characteristics. Then, our brain uses the associations we already made to determine what type of rock it is.
 
-:::image type="content" source="../media/association-process.png" alt-text="Dynamic diagram that demonstrates the progression from pixel numbers to feature extraction to associations." loc-scope="Azure":::
+:::image type="content" source="../media/association-process.png" alt-text="Diagram that demonstrates the progression from pixel numbers to feature extraction to associations." loc-scope="Azure":::

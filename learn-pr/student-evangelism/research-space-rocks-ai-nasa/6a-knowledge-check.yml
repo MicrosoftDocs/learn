@@ -15,9 +15,9 @@ quiz:
   questions:
   - content: "Which is a form in which you'd find a space rock on Earth?"
     choices:
-    - content: "Meteoroid"
+    - content: "Meteor"
       isCorrect: false
-      explanation: "Incorrect. Meteors are seen moving through space, not on Earth."
+      explanation: "Incorrect. Meteors are seen moving through the Earth's atmosphere, not on Earth."
     - content: "Meteorite"
       isCorrect: true
       explanation: "Correct! A meteorite is the remnants of a meteor that crashed into Earth."
@@ -26,9 +26,9 @@ quiz:
       explanation: "Incorrect. Asteroids are seen moving through space, not on Earth."
   - content: "What should an astronaut do if they see one black rock in a field of white rocks on a space mission that includes collecting rock specimens?"
     choices:
-    - content: "Take a photo of the black rock, and add a comment about why they think this rock is important."
+    - content: "Send a photo of the black rock to NASA, with a comment about why they think this rock is important."
       isCorrect: false
-      explanation: "Incorrect. The goal is to collect rock specimens that can be examined in detail by scientists on Earth."
+      explanation: "Incorrect. The goal is to collect a variety of rock specimens that can be examined in detail in a laboratory on Earth."
     - content: "Collect the black rock because it's clearly unique in some way that might be important."
       isCorrect: false
       explanation: "Incorrect. Collecting only the atypical rock wouldn't help us understand the average rock in the area and why this one is unique."
