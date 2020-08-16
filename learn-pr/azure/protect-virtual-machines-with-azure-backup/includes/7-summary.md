@@ -12,6 +12,12 @@ You can now use Azure Backup to help protect your environment against data loss 
 
 For more information on Azure Backup, see the following articles:
 
-- [Latest Azure Backup pricing and availability](https://azure.microsoft.com/pricing/details/backup)
-- [Documentation for the Azure Backup service](https://docs.microsoft.com/azure/backup/)
-- [Support matrix for Azure VM backup](https://docs.microsoft.com/azure/backup/backup-support-matrix-iaas)
+- [Latest Azure Backup pricing and availability](https://azure.microsoft.com/pricing/details/backup?azure-portal=true)
+- [Documentation for the Azure Backup service](https://docs.microsoft.com/azure/backup?azure-portal=true)
+- [Support matrix for Azure VM backup](https://docs.microsoft.com/azure/backup/backup-support-matrix-iaas?azure-portal=true)
+- [Security features in Azure Backup](https://docs.microsoft.com/azure/backup/security-overview?azure-portal=true)
+- [Built-in monitoring and alerting capabilities](https://docs.microsoft.com/azure/backup/backup-azure-monitoring-built-in-monitor?azure-portal=true)
+- [Azure Files - Snapshot management by Azure Backup](https://docs.microsoft.com/azure/backup/backup-afs?azure-portal=true)
+- [Back up SQL Server databases running on Azure VMs](https://docs.microsoft.com/azure/backup/backup-azure-sql-database?azure-portal=true)
+- [Backup SAP HANA databases running on Azure VMs](https://docs.microsoft.com/azure/backup/backup-azure-sap-hana-database?azure-portal=true)
+- [Azure Data Protection Manager (DPM)](https://docs.microsoft.com/azure/backup/backup-azure-dpm-introduction?azure-portal=true) and [Azure Backup Server (MABS)](https://docs.microsoft.com/azure/backup/backup-mabs-protection-matrix?azure-portal=true)

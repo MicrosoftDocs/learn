@@ -4,8 +4,7 @@ In this unit, you'll learn about the options for restoring an Azure VM from a pr
 
 ## Restore types
 
-Azure Backup provides a number of ways to [restore](https://docs.microsoft.com//azure/backup/backup-azure-arm-restore-vms) a VM. As explained earlier, you can either instantly restore from the snapshot tier (optimal for operational recoveries) or from the vault tier.
-
+Azure Backup provides a number of ways to restore a VM. As explained earlier, you can either instantly restore from the snapshot tier (optimal for operational recoveries) or from the vault tier.
 
 |Restore option |Details |
 |---------|---------|

@@ -49,8 +49,8 @@ Here's how Azure Backup completes a backup for Azure VMs:
 1. For Azure VMs that are selected for backup, Azure Backup starts a backup job according to the backup frequency you specify in the backup policy.
 2. During the first backup, a backup extension is installed on the VM, if the VM is running.
 
-   - For Windows VMs, the [VMSnapshot extension](https://docs.microsoft.com/azure/virtual-machines/extensions/vmsnapshot-windows) is installed.
-   - For Linux VMs, the [VMSnapshotLinux extension](https://docs.microsoft.com/azure/virtual-machines/extensions/vmsnapshot-linux) is installed.
+   - For Windows VMs, the VMSnapshot extension is installed.
+   - For Linux VMs, the VMSnapshotLinux extension is installed.
 3. After the snapshot is taken, it's stored locally as well transferred to the vault.
 
    - The backup is optimized by backing up each VM disk in parallel.
@@ -59,4 +59,4 @@ Here's how Azure Backup completes a backup for Azure VMs:
 
 ![Azure Backup architecture](../media/3-azure-vm-backup-architecture.png)
 
-You may additionally enable [vault encryption with customer-managed keys (CMK)](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk#configuring-a-vault-to-encrypt-using-customer-managed-keys).
+You may additionally enable [vault encryption with customer-managed keys (CMK)](https://docs.microsoft.com/azure/backup/encryption-at-rest-with-cmk#configuring-a-vault-to-encrypt-using-customer-managed-keys?azure-portal=true).
