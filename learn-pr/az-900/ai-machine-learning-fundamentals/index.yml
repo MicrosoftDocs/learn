@@ -11,10 +11,8 @@ metadata:
 title: Choose the best artificial intelligence service for decision support and customer interaction
 summary: Examine Azure's artificial intelligence services choose the right service for your scenario.
 abstract: |
-  In this module, you will:
-  - Discover the Azure's Artificial Intelligence services like Machine Learning, Cognitive Services and Bot Service.
-  - Choose the correct Artifical Intelligence service to address different kinds of business challenges.
-  - 
+  By the end of this module, you will be able to:
+  - Choose the correct Azure Artifical Intelligence service to address different kinds of business challenges.
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
@@ -33,6 +31,5 @@ units:
 - learn.languages.ai-machine-learning-fundamentals.use-bot-services
 - learn.languages.ai-machine-learning-fundamentals.knowledge-check
 - learn.languages.ai-machine-learning-fundamentals.summary
-
 badge:
   uid: learn.languages.ai-machine-learning-fundamentals.badge
