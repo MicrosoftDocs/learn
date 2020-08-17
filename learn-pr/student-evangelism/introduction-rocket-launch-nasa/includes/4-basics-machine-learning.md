@@ -4,7 +4,7 @@ For example, let's imagine you have a garden where you're trying to plant lettuc
 
 The [data science lifecycle](https://docs.microsoft.com/azure/machine-learning/team-data-science-process/lifecycle?azure-portal=true) can help guide you on your journey to the creation of new knowledge from data sources.
 
-:::image type="content" source="../media/data-science-lifecyle.png" alt-text="Diagram of the Data Science Lifecyle." loc-scope="azure":::
+:::image type="content" source="../media/data-science-lifecyle.png" alt-text="Diagram of the Data Science Lifecycle." loc-scope="Azure":::
 
 The four steps, discussed throughout these units are:
 
