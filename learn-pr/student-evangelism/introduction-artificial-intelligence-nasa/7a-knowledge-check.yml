@@ -42,4 +42,4 @@ quiz:
       explanation: "Incorrect. Humans are not better than computers in finding minute details."
     - content: "False."
       isCorrect: true
-      explanation: "Correct! Computers are much better than humans in finding minute details."
+      explanation: "Correct! Computers are much better than humans in finding minute details." 
