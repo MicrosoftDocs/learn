@@ -46,4 +46,3 @@ quiz:
     - content: "To test a new long-range camera."
       isCorrect: false
       explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to test a new camera."
-
