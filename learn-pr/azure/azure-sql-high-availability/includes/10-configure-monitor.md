@@ -55,12 +55,12 @@ Any database restore that uses point in time restore creates a new database. You
 
 ### Replica status
 
-Replicas are used for Business Critical service tiers. You can view the status of a replica through the DMV **sys.dm_database_replica_states**.
+Replicas are used for Business critical service tiers. You can view the status of a replica by using the DMV **sys.dm_database_replica_states**.
 
-### Failover reasons
+### Failover causes
 
-To check the reasons for a failover event for Azure SQL Managed Instance or database deployment, check the Resource Health through the Azure portal or REST APIs.
+To determine the cause of a failover event for an Azure SQL Managed Instance or database deployment, check the resource health by using the Azure portal or REST APIs.
 
 ### System Center Management Pack for Azure SQL
 
-System Center provides management packs to monitor Azure SQL Managed Instance and Azure SQL Database. Consult the management pack documentation for requirements and usage.
+System Center provides management packs to monitor Azure SQL Managed Instance and Azure SQL Database. See the management pack documentation for requirements and details.
