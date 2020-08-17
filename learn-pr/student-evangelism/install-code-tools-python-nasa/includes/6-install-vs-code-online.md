@@ -12,7 +12,7 @@ To start using this code editor in your browser, you must first create a free Mi
 
 ## Instructions to set up Codespaces
 
-To run Python using Jupyter Notebooks from within Visual Studio Code, you'll use Visual Studio Codespaces. As with most Visual Studio Code features, you can find [a quick startup guide to Codespaces here](https://docs.microsoft.com/visualstudio/online/quickstarts/browser/?azure-portal=true).
+To run Python using Jupyter Notebooks from within Visual Studio Code, you'll use Visual Studio Codespaces. As with most Visual Studio Code features, you can find [a quick startup guide to Codespaces here](https://docs.microsoft.com/visualstudio/codespaces/how-to/browser).
 
 > [!WARNING]
 > [Visual Studio Codespaces does have a minimal fee](https://azure.microsoft.com/pricing/details/visual-studio-online/?azure-portal=true) paid for through your Azure subscription. The cost for a basic instance at the time of publishing this module is $0.085 per hour. For a comprehensive list of the costs, you can check out the [Visual Studio Codespaces pricing calculator](https://azure.microsoft.com/pricing/calculator/?service=visual-studio-online?azure-portal=true). With the use of either a [professionals/individuals](https://azure.microsoft.com/free/?azure-portal=true) or [students](https://azure.microsoft.com/free/students/?azure-portal=true) free account, you shouldn't have to pay for anything to complete this learning path.
