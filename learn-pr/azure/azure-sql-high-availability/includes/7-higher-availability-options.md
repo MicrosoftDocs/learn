@@ -1,4 +1,4 @@
-Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances, and you can directly see the impact on the service-level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
+Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances. You can directly see the impact on the service-level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
 
 ## Availability Zones
 
@@ -15,7 +15,7 @@ Availability Zones are relatively new to Azure SQL, so they're currently  availa
 
 Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit towards a portion of your monthly service fees.
 
-Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business critical deployment that has Availability Zones configured. The Business critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for *recovery point object*, which represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for *recovery time objective*, which represents how long it takes to be back up and running again if a disaster occurs.
+Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business critical deployment that has Availability Zones configured. The Business critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for *recovery point object*. It represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for *recovery time objective*. It represents how long it takes to be back up and running again if a disaster occurs.
 
 For General purpose or single-zone Business critical deployments, the SLA is 99.99%.
 

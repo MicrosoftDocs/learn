@@ -14,7 +14,7 @@ In this exercise, you'll complete the following steps:
 
 ### Run the OStress workload
 
-The first step is to create a long-running workload. This workload will allow you to see how a failover affects the ability to read and write data, and how long a failover takes in the General purpose service tier for Azure SQL Database. You'll use OStress.
+The first step is to create a long-running workload. This workload allows you to see how a failover affects the ability to read and write data, and how long a failover takes in the General purpose service tier for Azure SQL Database. You'll use OStress.
 
 1. Open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command:
 

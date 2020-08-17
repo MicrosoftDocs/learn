@@ -95,7 +95,7 @@ This exercise will guide you through configuring auto-failover groups for your A
 
     It will take some time for this script to run. You're restoring the database in the other region, which involves copying the data from the original region to the disaster recovery region. You can work on the steps in the next section and then check back to see if this script has completed.  
 
-You've just deployed and configured an auto-failover group for your AdventureWorks database.
+You've now deployed and configured an auto-failover group for your AdventureWorks database.
 
 ### Configure your command prompt applications
 
@@ -141,7 +141,7 @@ In the next steps, you'll examine what happens to both servers when a failover o
 
     The result tells you if the secondary server in the auto-failover group is being used as the primary or secondary database.  
 
-1. You can now see what happens when a failover occurs. Start a manual failover by entering these Azure PowerShell commands in the Azure Cloud Shell terminal:  
+1. You can now see what happens when a failover occurs. Initiate a manual failover by entering these Azure PowerShell commands in the Azure Cloud Shell terminal:  
 
     ```powershell
     Switch-AzSqlDatabaseFailoverGroup -ResourceGroupName $resourceGroup `
@@ -168,7 +168,7 @@ In the next steps, you'll examine what happens to both servers when a failover o
      -ServerName $server -FailoverGroupName $failoverGroup
     ```
 
-1. Finally, you can check the status of the secondary server yet again by running this script in the Azure Cloud Shell:
+1. Finally, you can check the status of the secondary server yet again. Run this script in the Azure Cloud Shell:
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `

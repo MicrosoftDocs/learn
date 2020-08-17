@@ -78,7 +78,7 @@ As in the previous exercise, you'll use OStress to repeatedly query your Azure S
 
     The OStress workload connects and runs a simple query 50,000 times.
 
-1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server and `password` with your password. Note that this command is slightly different from the one in the previous exercise. The database name is now `AdventureWorks-bc`.
+1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server and `password` with your password. This command is slightly different from the one in the previous exercise. The database name is now `AdventureWorks-bc`.
 
     ```cmd
     .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks-bc" -P"password" -n1 -r50000
@@ -141,6 +141,6 @@ ApplicationIntent=ReadOnly;
 
     :::image type="content" source="../media/6-read-only.png" alt-text="Screenshot that shows the read-only response.":::
 
-1. You can optionally re-connect and update the Additional Connection Parameters. (Replace `ReadOnly` with `ReadWrite`.) Confirm that you're accessing the read/write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in:
+1. You can optionally reconnect and update the Additional Connection Parameters. (Replace `ReadOnly` with `ReadWrite`.) Confirm that you're accessing the read/write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in:
 
     :::image type="content" source="../media/6-read-write.png" alt-text="Screenshot that shows the read/write response.":::

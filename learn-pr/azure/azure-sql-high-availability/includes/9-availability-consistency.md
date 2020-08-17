@@ -6,7 +6,7 @@ In Azure SQL Database and Azure SQL Managed Instance, you can't set a database s
 
 Accelerated Database Recovery (ADR) is built into the engine. With ADR, the transaction log is aggressively truncated and a persisted version store (PVS) is used. This technology allows you to perform a transaction rollback instantly, solving a well-known problem with long running transactions. It also allows Azure SQL to recover databases quickly.
 
-In Azure SQL Database and Azure SQL Managed Instance, ADR greatly increases general database availability. It's a big factor in the SLA. For these reasons, ADR is on by default and can't be turned off.
+In Azure SQL Database and Azure SQL Managed Instance, ADR greatly increases general database availability. It's a significant factor in the SLA. For these reasons, ADR is on by default and can't be turned off.
 
 ## Database consistency
 

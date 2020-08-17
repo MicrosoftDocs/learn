@@ -1,4 +1,4 @@
-In this exercise, you'll see how you can recover from a common error by using point in time restore (PITR). This process is easy to do in the portal or programmatically, but in this exercise you'll learn how to do it by using the Azure CLI.
+In this exercise, you'll see how you can recover from a common error by using point in time restore (PITR). This process is easy to do in the portal or programmatically. In this exercise, you'll learn how to do it by using the Azure CLI.
 
 ## Setup: Use scripts to deploy Azure SQL Database
 
@@ -99,7 +99,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
 
 ## Setup: Configure auditing by using Log Analytics
 
-In this exercise, you'll learn how to use auditing through Log Analytics to determine when DROP statements have occurred. To do this, you must first configure auditing.
+In this exercise, you'll learn how to use auditing through Log Analytics to determine when DROP statements have occurred. To use auditing in this way, you must first configure auditing.
 
 1. Go to the Azure portal, and then go to your Azure SQL database.
 
@@ -141,7 +141,7 @@ In this exercise, you'll complete these steps.
 
 First, let's confirm that the table we'll *accidentally* delete exists and has data in it. Let's look at some of the values in SalesLT.OrderDetail.  
 
-1. Go to SSMS and check/update your connection. Make sure the connection you use connects to the logical server but not to a specific database. (For example, use **\<default>** as shown in the following screenshot). You should also confirm that **Additional Connection Parameters** doesn't contains any text.  
+1. Go to SSMS and check/update your connection. Make sure the connection you use connects to the logical server but not to a specific database. (For example, use **\<default>** as shown in the following screenshot). Also, confirm that **Additional Connection Parameters** doesn't contain any text.  
 
     :::image type="content" source="../media/3-default.png" alt-text="Screenshot that shows the default connection.":::
 
@@ -193,7 +193,7 @@ The first step is to figure out the time to restore the database to. You need to
 
     :::image type="content" source="../media/3-log-analytics.png" alt-text="Screenshot that shows the Log Analytics button.":::  
 
-1. Copy the following KQL query and paste it into the query editor in the Log Analytics view in the Azure portal. (Replace the existing query.)
+1. Paste the following KQL query into the query editor in the Log Analytics view in the Azure portal. (Replace the existing query.)
 
     ```kql
     search database_name_s == "AdventureWorks"
@@ -211,7 +211,7 @@ The first step is to figure out the time to restore the database to. You need to
     > [!NOTE]
     > It can take 5-10 minutes for the logs to appear. If you're waiting for more than 3-5 minutes, you can use the completion time you noted in the previous step. (You need to convert it to GMT.) In a real-world situation, you're not likely to be able to get to the window with the completion time, so auditing can be a great help.  
 
-1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Use the following example to determine the correct format. You might also want to subtract .001 seconds to ensure you restore to a time *before* the error occurred:
+1. In this example, the date/time is `2020-07-24 08:06:24.386`. The required format is slightly different. Use the following example to determine the correct format. You might also want to subtract 0.001 seconds to ensure you restore to a time *before* the error occurred:
     * Log Analytics format: `2020-07-24 08:06:24.386`
     * Required format: `2020-07-24T20:06:24.385` 
  
@@ -238,11 +238,11 @@ In this step, you'll use `az cli db restore` to restore the database to a time b
 
     :::image type="content" source="../media/3-db-restore.png" alt-text="Screenshot that shows a database restoring in SSMS.":::  
 
-    After you see that the restore is in progress, the restore should take 2-3 minutes more. You'll know when it's done because the command will complete. Also, you'll no longer see "(Restoring...)" next to the copy database when you initiate a refresh.  
+    After you see that the restore is in progress, the restore should take 2-3 minutes more. You'll know when it's done because the command will complete. Also, you'll no longer see "(Restoring...)" next to the copy database when you start a refresh.  
 
     If you notice that the restore is taking longer than the times described earlier, that could be because of your Microsoft Learn environment. There's a limit to the number of restore requests that can be processed/submitted at once for a single subscription. If you want to learn more about the limits and related details about PITR while you wait, see [Recover using automated database backups](https://docs.microsoft.com/azure/sql-database/sql-database-recovery-using-backups?azure-portal=true).  
 
-1. To confirm that the new database is in the correct state (as it was before the accident occurred), right-click the logical server in SSMS and select **Refresh** to refresh your connection to the Azure SQL Database logical server.  
+1. You'll now confirm that the new database is in the correct state (as it was before the accident occurred). Right-click the logical server in SSMS and then select **Refresh** to refresh your connection to the Azure SQL Database logical server.  
 
 1. Right-click your new database (for example, **AdventureWorks-copy**) and then select **New Query**.  
 
