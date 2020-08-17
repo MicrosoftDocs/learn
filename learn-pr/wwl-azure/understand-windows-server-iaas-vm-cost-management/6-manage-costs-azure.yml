@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-windows-server-iaas-vm-cost-management.manage-costs-azure
+title: Manage costs in Azure
+metadata:
+  title: 6-manage-costs-azure.md
+  description: "6-manage-costs-azure.md"
+  ms.date: 08/20/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-manage-costs-azure.md)]
