@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 3
 azureSandbox: false
 content: |
-  [!include[](includes/7-use-github.md)]
+  [!include[](includes/5-use-github.md)]
