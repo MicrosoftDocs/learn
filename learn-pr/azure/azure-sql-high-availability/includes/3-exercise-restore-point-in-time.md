@@ -13,7 +13,7 @@ These scripts should take 3-5 minutes to complete. Make sure to note your passwo
     ```powershell
     $adminSqlLogin = "cloudadmin"
     $password = Read-Host "Your username is 'cloudadmin'. Please enter a password for your Azure SQL Database server that meets the password requirements"
-    # Prompt for local ip address
+    # Prompt for local IP address
     $ipAddress = Read-Host "Disconnect your VPN, open PowerShell on your machine and run '(Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content'. Please enter the value (include periods) next to 'Address': "
     # Get resource group and location and random string
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like "<rgn>Sandbox resource group name</rgn>"
@@ -164,7 +164,7 @@ First, let's confirm that the table we'll *accidentally* delete exists and has d
     > [!IMPORTANT]
     > Save the completion time. You might need it later. Here's an example: `Completion time: 2020-06-22T09:20:27.1859237-07:00`.
 
-1. Finally, before you start the steps to restore the database, run the following code in Azure Cloud Shell on the right to configure your environment in the Azure Cloud Shell: 
+1. Finally, before you start the steps to restore the database, run the following code in Azure Cloud Shell on the right side of this page to configure your environment in Azure Cloud Shell: 
 
     ```powershell
     $resourceGroup = Get-AzResourceGroup | Where ResourceGroupName -like <rgn>Sandbox resource group name</rgn>
@@ -223,7 +223,7 @@ The first step is to figure out the time to restore the database to. You need to
 
 ### Restore the database and confirm missing data
 
-In this step, you'll use `az cli db restore` to restore the database to a time before the table was deleted. 
+In this section, you'll use `az cli db restore` to restore the database to a time before the table was deleted. 
 
 1. Run the following script in the terminal on the right side of this window:
 
@@ -269,7 +269,7 @@ If at any point your database appears unavailable (for example, you can't connec
     az sql db rename --name "AdventureWorks" --new-name "AdventureWorks-old"
     ```
 
-1. Now that the original database name is no longer taken, you can rename the copy database to the name of the original, again by using the Azure Cloud Shell:  
+1. Now that the original database name is no longer taken, you can rename the copy database to the name of the original, again by using Azure Cloud Shell:  
 
     ```powershell
     az sql db rename --name "AdventureWorks-copy" --new-name "AdventureWorks"
@@ -282,10 +282,10 @@ If at any point your database appears unavailable (for example, you can't connec
     Write-Host "Database deleted"
     ```
 
-1. You can confirm that it no longer exists by using this command:
+1. You can confirm that the old database no longer exists by using this command:
 
     ```powershell
     az sql db list -o table
     ```
 
-You've now seen how you can use PITR in Azure SQL Database. PITR is also available in Azure SQL Managed Instance for databases, but not for the whole instance. You can use almost the same commands, except that you need to use `az sql midb` instead of `az sql db`.
+You've now seen how you can use PITR in Azure SQL Database. PITR is also available in Azure SQL Managed Instance for databases, but not for a whole instance. You can use almost the same commands, except that you need to use `az sql midb` instead of `az sql db`.
