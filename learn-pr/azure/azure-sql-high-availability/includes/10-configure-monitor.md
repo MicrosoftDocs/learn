@@ -1,4 +1,4 @@
-Now that you know about all the possibilities, you'll need to create a strategy for the specific workload that your Azure SQL database or Azure SQL managed instance is a part of.
+Now that you know about all the possibilities, you need to create a strategy for the specific workload that your Azure SQL database or Azure SQL managed instance is a part of.
 
 ## Make the right choices
 
@@ -13,13 +13,15 @@ A large part of creating a strategy is stepping back and thinking about the requ
 
 The answers to these questions will help you narrow down the configuration you should deploy to meet your availability requirements.
 
-The last question is often overlooked by the data professional: *Is your application ready?* This consideration is crucial to achieving the SLA that you want. You need to make sure your database is meeting your availability requirements. But you also need to be sure your application is meeting those requirements. And you need to make sure the connectivity between the data and the applications meets your requirements. For example, if your application and database are in different regions, that placement will increase network latency. You should place your application and data as close together as possible. Throughout this module, you've also seen how important implementing retry logic in your applications is for maintaining availability.
+The last question is often overlooked by the data professional: *Is your application ready?* This consideration is crucial to achieving the SLA that you want. 
+
+You need to make sure your database is meeting your availability requirements. But you also need to be sure your application is meeting those requirements. And you need to make sure the connectivity between the data and the applications meets your requirements. For example, if your application and database are in different regions, that placement will increase network latency. Place your application and data as close together as possible. Throughout this module, you've also seen how important implementing retry logic in your applications is for maintaining availability.
 
 ## Monitor availability
 
 Azure SQL provides several tools and capabilities to monitor certain aspects of availability. These tools include the Azure portal, T-SQL, and interfaces like PowerShell, az CLI, and REST APIs.
 
-The following sections describe some the examples of using these tools to monitor availability.
+The following sections describe some examples of using these tools to monitor availability.
 
 ### Region and datacenter availability
 

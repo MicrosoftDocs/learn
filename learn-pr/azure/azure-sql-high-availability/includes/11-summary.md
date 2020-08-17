@@ -1,4 +1,4 @@
-In this module, you got some hands-on experience with many availability-related features that are available for Azure SQL. In the next module in the Azure SQL fundamentals learning path, you'll look at two scenarios that challenge you to create solutions that use Azure SQL.  
+In this module and throughout the exercises, you gained some experience with many availability-related features that are available for Azure SQL. In the next module in the Azure SQL fundamentals learning path, you'll look at two scenarios that challenge you to create solutions that use Azure SQL.  
 
 ## Learn more
 

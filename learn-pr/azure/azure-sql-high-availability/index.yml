@@ -15,7 +15,7 @@ abstract: |
   - Create a backup and restore strategy for your organization
   - Evaluate the architectures associated with each service tier
   - Compare options for getting higher availability
-  - Describe how availability and consistency applies to Azure SQL
+  - Describe how availability and consistency apply to Azure SQL
   - Configure and monitor availability
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server

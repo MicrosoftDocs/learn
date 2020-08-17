@@ -7,7 +7,7 @@ By the end of this module, you'll be able to:
 * Create a backup and restore strategy for your organization
 * Evaluate the architectures associated with each service tier
 * Understand options for getting higher availability
-* Describe how availability and consistency applies to Azure SQL
+* Describe how availability and consistency apply to Azure SQL
 * Configure and monitor availability
 
 ## Prerequisites
