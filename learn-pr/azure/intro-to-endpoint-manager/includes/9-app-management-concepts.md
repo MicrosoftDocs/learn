@@ -20,7 +20,7 @@ When apps are managed in Intune, administrators can:
 The Microsoft app lifecycle for Intune and Configuration Manager apps begins when an app is added and progresses through additional phases until you remove the app. By understanding these phases, you'll have the details you need to get started with app management in Intune.
 
 ### Add
-The first step when providing apps to your organization is to add the apps to Intune and, if you're using co-management, you can create the app in Configuration Manager. While you can work with many different app types, the basic procedures are the same. With Intune, you can add different app types, including apps written in-house (line-of-business), apps from the store, apps that are built in, and apps on the web. With Configuration Manager, you can create the app and add requirements that must be met before the app is installed. 
+The first step when providing apps to your organization is to add the apps to Intune or create the app in Configuration Manager. While you can work with many different app types, the basic procedures are the same. With Intune, you can add different app types, including apps written in-house (line-of-business), apps from the store, apps that are built in, and apps on the web. With Configuration Manager, you can create the app and add requirements that must be met before the app is installed. 
 
 ### Deploy
 After you've added the app to either Intune or Configuration Manager, you can deploy the app. In Intune you assign the app to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from the Intune within the Azure portal. Additionally, in some app stores, you can purchase app licenses in bulk for your company. Intune can synchronize data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console. In Configuration Manager you deploy the app to a device collection based on the Windows OS requirements that you select.
@@ -96,20 +96,3 @@ The Intune APP data protection framework is organized into three distinct config
 
 Each level has specific recommendations about how and what to set to meet each level of app protection.
 
-<!--
-https://docs.microsoft.com/mem/intune/apps/app-management#mobile-application-management-mam-basics
-https://docs.microsoft.com/mem/intune/apps/mam-faq
--->
-<!--
-### Data protection 
-https://docs.microsoft.com/mem/intune/apps/app-protection-framework
-https://docs.microsoft.com/windows/security/information-protection/windows-information-protection/protect-enterprise-data-using-wip
--->
-<!--
-### Interactive guide - MEM applications
-https://mslearn.cloudguides.com/guides/Manage%20and%20protect%20mobile%20and%20desktop%20applications%20with%20Microsoft%20Endpoint%20Manager
--->
-<!--
-See:
-https://docs.microsoft.com/learn/modules/manage-applications-by-using-microsoft-intune/
--->

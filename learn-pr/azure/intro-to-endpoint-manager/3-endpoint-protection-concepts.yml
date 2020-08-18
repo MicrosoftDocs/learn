@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
   ROBOTS: NOINDEX
-durationInMinutes: 5
+durationInMinutes: 35
 content: |
   [!include[](includes/3-endpoint-protection-concepts.md)]

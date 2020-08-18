@@ -1,6 +1,6 @@
 Microsoft Endpoint Manager supports several device platforms. The available platforms that can be managed by Endpoint Manager include iOS/iPadOS, Windows, Android, and macOS. These platforms are often referred to as device types. Because each platform is different, each offers sightly different enrollment methods, devices settings, protection policy settings, configuration policy settings, custom policy settings, and remote actions.
 
-You need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether each platform is supported by Intune when you create your endpoint management design. 
+You need to determine the platforms that must be supported in your endpoint environment. Once you know the platforms you need to support, you must verify whether each platform is supported by Intune when you create your endpoint management design.
 
 ## Intune supported operating systems
 
@@ -28,9 +28,41 @@ For more information about Intune supported devices, platforms, and operating sy
 
 ## Configuration Manager supported operating systems
 
-### Microsoft
-- **Windows 10**  
-- **Windows 8.1** (x86, x64): Professional, Enterprise
+The supported OS versions for clients and devices that can be managed by Configuration Manager include the following operating systems:
 
+- Windows computers
+    - **Windows 10**  
+    - **Windows 8.1** (x86, x64): Professional, Enterprise
+- Windows Servers
+    - **Windows Server 2019**: Standard, Datacenter
+        (Starting with Configuration Manager version 1806.)
+    - **Windows Server 2016**: Standard, Datacenter
+    - **Windows Storage Server 2016**: Workgroup, Standard  
+    - **Windows Server 2012 R2** (x64): Standard, Datacenter 
+    - **Windows Storage Server 2012 R2** (x64)
+    - **Windows Server 2012** (x64): Standard, Datacenter 
+    - **Windows Storage Server 2012** (x64)
+- Windows Server Core
+    - **Windows Server 2019** (x64)
+    - **Windows Server 2016** (x64)
+    - **Windows Server 2012 R2** (x64)
+    - **Windows Server 2012** (x64)
+- Windows Virtual Desktop
+- Windows Embedded computers
+    - **Windows 10 Enterprise** (x86, x64)  
+    - **Windows 10 IoT Enterprise** (x86, x64)  
+    - **Windows Embedded 8.1 Industry** (x86, x64)
+    - **Windows Embedded 8 Standard** (x86, x64)
+    - **Windows Thin PC** (x86, x64)
+    - **Windows Embedded POSReady 7** (x86, x64)
+    - **Windows Embedded Standard 7 with SP1** (x86, x64)
+- Windows CE computers
+    - Windows CE 7.0 (ARM and x86 processors)  
+- Mac computers 
+    - **macOS Catalina (10.15)** 
+    - **macOS Mojave (10.14)**
+    - **macOS High Sierra (10.13)**
+- Linux and UNIX servers  
+ 
 For more information about Configuration Manager supported devices, servers, platforms, and operating systems, see [Supported configurations for Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/plan-design/configs/supported-configurations).
 

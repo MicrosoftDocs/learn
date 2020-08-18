@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-endpoint-manager
   ROBOTS: NOINDEX
-durationInMinutes: 7
+durationInMinutes: 18
 content: |
   [!include[](includes/11-understand-conditional-access.md)]
