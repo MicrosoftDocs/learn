@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Unit title
-durationInMinutes: 10
+durationInMinutes: 3
 content: |
-  [!include[](includes/2-azure-arc-overview.md)]
+  [!include[](includes/2-describe-azure-arc.md)]
