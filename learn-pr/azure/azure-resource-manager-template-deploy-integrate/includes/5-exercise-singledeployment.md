@@ -13,13 +13,13 @@ To perform each deployment in this unit, you need to sign in to your Azure accou
 
 Be sure you are signing in to the same account that activated the sandbox.
 
-::: zone pivot="PowerShell"
+::: zone pivot="powershell"
 
 [!include[](./powershell/5-exercise-singledeployment-powershell.md)]
 
 ::: zone-end
 
-::: zone pivot="Azure CLI"
+::: zone pivot="cli"
 
 [!include[](./azurecli/5-exercise-singledeployment-azurecli.md)]
 

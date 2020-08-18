@@ -9,6 +9,7 @@ metadata:
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: azure-shell-interface
 azureSandbox: true
 durationInMinutes: 10
 content: |
