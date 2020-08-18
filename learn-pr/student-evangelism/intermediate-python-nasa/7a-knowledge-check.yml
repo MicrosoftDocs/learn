@@ -18,21 +18,21 @@ quiz:
     choices:
     - content: "To make it harder for others to read your code"
       isCorrect: false
-      explanation: "We wouldn't want to make our code harder to read"
+      explanation: "You wouldn't want to make your code harder to read."
     - content: "To make your code look more sophisticated"
       isCorrect: false
       explanation: "Developers prefer simplicity"
     - content: "To make your code less redundant and cleaner"
       isCorrect: true
-      explanation: "Correct! This is the exact reason you'd use functions in your code"
-  - content: "The two ways to change variables not made in functions are to make them global or pass them in as parameters. True or False?"
+      explanation: "Correct! This is the exact reason you'd use functions in your code."
+  - content: "What are two ways to change variables not made in functions?"
     choices:
-    - content: "True"
+    - content: "To make them global or pass them in as parameters."
       isCorrect: true
       explanation: "Correct! These are the two ways."
-    - content: "False"
+    - content: "To create variables outside the function or pass them in as parameters."
       isCorrect: false
-      explanation: "Those ways were correct."
+      explanation: "Incorrect. The two ways are to make them global or pass them in as parameters."
   - content: "What is the proper code for an if-statement?"
     choices:
     - content: "if(condition):<br /> &nbsp; &nbsp; &nbsp; do something"
