@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-arc.4-connect-hybrid-server-to-arc
+uid: learn.azure.intro-to-azure-arc.5-describe-azure-arc-enabled-kubernetes
 metadata:
   title: Unit title
   description: TODO
@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Unit title
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
-  [!include[](includes/4-connect-hybrid-server-to-arc.md)]
+  [!include[](includes/5-describe-azure-arc-enabled-kubernetes.md)]

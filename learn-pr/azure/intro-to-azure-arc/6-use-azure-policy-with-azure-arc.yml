@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-arc.3-arc-for-servers
+uid: learn.azure.intro-to-azure-arc.6-use-azure-policy-with-azure-arc
 metadata:
   title: Unit title
   description: TODO
@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Unit title
-durationInMinutes: 10
+durationInMinutes: 6
 content: |
-  [!include[](includes/3-arc-for-servers.md)]
+  [!include[](includes/6-use-azure-policy-with-azure-arc.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-arc.9-knowledge-check
+uid: learn.azure.intro-to-azure-arc.8-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
@@ -11,7 +11,7 @@ metadata:
 title: Knowledge check
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
