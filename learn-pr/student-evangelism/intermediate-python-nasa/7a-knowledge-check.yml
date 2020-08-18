@@ -27,7 +27,7 @@ quiz:
       explanation: "Correct! This is the exact reason you'd use functions in your code."
   - content: "What are two ways to change variables not made in functions?"
     choices:
-    - content: "To make them global or pass them in as parameters"
+    - content: "To make them global or pass them in as parameters."
       isCorrect: true
       explanation: "Correct! These are the two ways."
     - content: "To create variables outside the function or pass them in as parameters."
