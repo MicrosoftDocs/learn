@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.create-a-language-translator-mixed-reality-application
 metadata:
-  title: Create a language translator mixed reality application
+  title: Create a language translator mixed reality application with Unity and Azure Cognitive Services
   description: Create a language translator application for your Mixed Reality device (WMR, HoloLens 2 etc.) using Cognitive Services.
   ms.date: 08/05/2020
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create a language translator mixed reality application
+title: Create a language translator mixed reality application with Unity and Azure Cognitive Services
 summary: >
   Create a language translator application for your Mixed Reality device (WMR, HoloLens 2 etc.) using Cognitive Services.
 abstract: | 
@@ -28,7 +28,7 @@ levels:
 roles:
 - developer
 products:
-- vs
+- azure
 units:
 - learn.create-a-language-translator-mixed-reality-application.1-introduction
 - learn.create-a-language-translator-mixed-reality-application.2-overview-of-speech-translation
