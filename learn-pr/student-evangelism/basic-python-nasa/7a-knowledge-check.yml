@@ -30,7 +30,7 @@ quiz:
       explanation: "Correct! Decimals are called floats."
   - content: "Which statement is correct?"
     choices:
-    - content: "Lists can store only one type of data?"
+    - content: "Lists can store only one type of data."
       isCorrect: false
       explanation: "Incorrect. Lists can store all types of data."
     - content: "Lists can store all types of data."
