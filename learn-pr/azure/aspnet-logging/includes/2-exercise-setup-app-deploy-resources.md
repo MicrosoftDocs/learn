@@ -47,17 +47,17 @@ First, you'll download and test the application locally, and then you'll create 
     ...
     ```
 
-1. Press **F5** to build and run the application. The application opens a web browser and displays the Catalog manager page in the web application:
+1. Press **F5** to build and run the application. The application opens a web browser and displays the **Catalog manager** page in the web application:
 
     :::image type="content" source="../media/2-catalog-manager.png" alt-text="Screenshot of the Catalog manager page in the eShop onContainers sample web application in a web browser window.":::
 
-    You can use the Catalog manager page to view the products that are sold by the organization, add new products, modify the details of existing products, and delete products.
+    You can use the **Catalog manager** page to view the products that are sold by the organization, add new products, modify the details of existing products, and delete products.
 
 1. Experiment with the application. Try adding, editing, and removing products. Close the web browser when you're finished. This action stops the application and returns you to Visual Studio.
 
 ## Create Azure resources to run the application as an Azure web app
 
-1. In the Cloud Shell window on the right, run the next commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace ***\<your-initials-with-suffix\>*** with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace ***\<your-password\>*** with a password that you choose. The password will be used by the instance of Azure SQL Database that the application connects to.  
+1. In the Cloud Shell window on the right, run the next commands to define PowerShell variables. The commands that create the Azure resources in subsequent steps use these variables to name the resources. Replace *\<your-initials-with-suffix\>* with your own initials and a numeric suffix of your choice. The purpose of the numeric suffix is to prevent two students with the same initials attempting to use the same alias. Also, replace *\<your-password\>* with a password that you choose. The password will be used by the instance of Azure SQL Database that the application connects to.  
 
     > [!NOTE]
     > The resource group *[sandbox resource group name]* is automatically created. Use this as your resource group name. You don't have permissions in the sandbox to create additional resource groups.
