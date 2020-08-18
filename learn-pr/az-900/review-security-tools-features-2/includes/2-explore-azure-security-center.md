@@ -9,6 +9,16 @@
 + Analyze and identify potential inbound attacks and help to investigate threats and any post-breach activity that might have occurred.
 + Provide just-in-time access control for ports, reducing your attack surface by ensuring the network only allows traffic that you require.
 
+> [!Tip]
+> 
+> ### Contoso shipping case study
+>
+> At Contoso shipping, you are just getting started with some virtual machines and a web application to support your drone delivery system and delivery drivers.  You have customer information stored in the system that you will need to keep safe. You will want to make sure that all your systems meet a minimum level of security, that your communication certificates are protected, and that information is protected from attacks.
+
+There are many tools in Azure to help you support your company security needs. From tools to assess your current security stance and vulnerabilities, to tools that can help you store and encrypt your secrets, data, and documents.  In this module, we will look at those security tools, when and why you would use them, and what they can do for you.
+
+By the end of this module, you will understand what tools Azure provides to both evaluate and help to protect your solutions running in the cloud.
+
 
 **Azure Security Center versions**
 

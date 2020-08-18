@@ -13,8 +13,10 @@ summary: Discuss the basic concepts for protecting your infrastructure and data 
 abstract: |
   After completing this module, you will be able to:
    - Describe Azure Security Center.
+   - Describe Azure Sentinel.
    - List the capabilities of Azure Key Vault.
-   - Discuss Azure Information Protection and Azure Threat Protection.
+   - Describe Azure Dedicated Hosts.
+
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/review-security-tools-features.svg
@@ -33,10 +35,10 @@ units:
 - learn.review-security-tools-features.introduction
 - learn.review-security-tools-features.explore-azure-security-center
 - learn.review-security-tools-features.walkthrough-azure-security-center-usage-scenario
+- learn.review-security-tools-features.explore.azure.sentinel
 - learn.review-security-tools-features.explore-key-vault
 - learn.review-security-tools-features.walkthrough-implement-azure-key-vault
-- learn.review-security-tools-features.define-azure-information-protection-aip
-- learn.review-security-tools-features.define-azure-advanced-threat-protection-atp
+- learn.review-security-tools-features.describe-dedicated-hosts
 - learn.review-security-tools-features.knowledge-check
 - learn.review-security-tools-features.summary
 badge:
