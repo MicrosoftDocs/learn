@@ -52,7 +52,7 @@ Some popular products like Azure Application Insights, a service for sending tel
 
 ### Azure Service Health
 
-Azure Service Health provides a personalized view of the health of the Azure services, regions, and resources you rely on.  http://status.azure.com doesn't provide the full picture because it only shows major issues broadly impacting Azure customers. On the other hand, Service Health shows you everything impacting you, including major issues and smaller, localized issues.  Service issues are rare, but it's important to be prepared for the unexpected. You can set up alerts that help you triage outages and planned maintenance.  After an outage, it provides official incident reports that you can share with stakeholders called "root cause analyses", or RCAs.
+Azure Service Health provides a personalized view of the health of the Azure services, regions, and resources you rely on.  The site status.azure.com doesn't provide the full picture because it only shows major issues broadly impacting Azure customers. On the other hand, Service Health shows you everything impacting you, including major issues and smaller, localized issues.  Service issues are rare, but it's important to be prepared for the unexpected. You can set up alerts that help you triage outages and planned maintenance.  After an outage, it provides official incident reports that you can share with stakeholders called "root cause analyses", or RCAs.
 
 There are several different event types that you can keep an eye on:
 
