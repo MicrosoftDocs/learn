@@ -1,4 +1,4 @@
-## Enterprise-scale architecture design principles
+# Enterprise-scale architecture design principles
 
 Evaluate options for the following critical design areas:
 
@@ -33,6 +33,6 @@ Evaluate the critical design areas for enterprise enrollment and Azure AD tenant
 
 1. Determine the need for single or multiple Azure AD tenants
 1. Define the Azure enterprise enrollment hierarchy
-1. Define the requirements for Privilege Identity Management 
-1. Determine what RBAC roles are necessary for Enterprise-scale architecture 
+1. Define the requirements for Privilege Identity Management
+1. Determine what RBAC roles are necessary for Enterprise-scale architecture
 1. Define a management group hierarchy
