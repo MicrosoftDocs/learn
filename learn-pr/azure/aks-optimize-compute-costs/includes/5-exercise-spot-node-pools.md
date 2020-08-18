@@ -75,7 +75,7 @@ You want to create a separate node pool that supports the batch processing servi
         --priority Spot \
         --eviction-policy Delete \
         --spot-max-price -1 \
-        --node-vm-size Standard_B2ms \
+        --node-vm-size Standard_DS2_v2 \
         --no-wait
     ```
 

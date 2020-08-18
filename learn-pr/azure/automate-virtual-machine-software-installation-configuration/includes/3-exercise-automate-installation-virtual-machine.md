@@ -283,7 +283,7 @@ Not that you have created all of the necessary networking infrastructure, your n
 
 Check to see if a webpage is returned for the public IP address:
 
-1. In your browser, open a tab using the web address **http://eee.eee.eee.eee**. Replace the IP address in the URL with the `publicIpAddress` value that you copied earlier.
+1. In your browser, open a tab using the web address `http://eee.eee.eee.eee`. Replace the IP address in the URL with the `publicIpAddress` value that you copied earlier.
 
 1. Your browser will return an error page that the connection is refused. This is because you have not yet installed a web server in your virtual machine.
 

@@ -31,7 +31,7 @@ Follow the remaining steps below, using the image and information above for refe
     ```
 
 5. Connect the new **Enter Data Manually** module to the same **dataset** input of the **Select Columns in Dataset** module as the **Web Service Input**.
-6. Now that you've changed the schema of the incoming data to exclude the **price** field, you need to remove any explicit uses of this field in the remaining modules. Select the **Select Columns in Dataset** module and then in the settings pane, edit the columns to remove the **Price** field.
+6. Now that you've changed the schema of the incoming data to exclude the **price** field, you need to remove any explicit uses of this field in the remaining modules. Select the **Select Columns in Dataset** module and then in the settings pane, edit the columns to remove the **price** field.
 7. The inference pipeline includes the **Evaluate Model** module, which is not useful when predicting from new data, so delete this module.
 8. The output from the **Score Model** module includes all of the input features as well as the predicted label. To modify the output to include only the prediction:
     - Delete the connection between the **Score Model** module and the **Web Service Output**.
@@ -55,6 +55,10 @@ Follow the remaining steps below, using the image and information above for refe
 > ![A visual inference pipeline](../media/inference-pipeline.png)
 
 10. Submit the pipeline as a new experiment named **predict-auto-price** on your compute cluster. This may take a while!
+
+    > [!NOTE]
+    > If an **invalid dataset(s)** error is displayed, refresh the browser page and resubmit the experiment.
+
 11. When the pipeline has completed, select the **Execute Python Script** module, and in the settings pane, on the **Output + logs** tab, visualize the **Result dataset** to see the predicted prices for the three cars in the input data.
 12. Close the visualization window.
 
