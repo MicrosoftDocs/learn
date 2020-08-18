@@ -14,29 +14,7 @@ durationInMinutes: 2
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following scope can Contoso use to analyze pay-as-you-go costs after the cost visibility policy is enabled?"
-    choices:
-    - content: Billing account
-      isCorrect: false
-      explanation: The billing account scope is only available to Fabrikam users with the correct role and it is located in the billing hierarchy of the Fabrikam tenant. Contoso doesn't have access to the billing account scope.
-    - content: Customer
-      isCorrect: false
-      explanation: The customer scope is only available to Fabrikam users with the correct role and it is located in the billing hierarchy of the Fabrikam tenant. Contoso doesn't have access to the customer scope. 
-    - content: Subscription
-      isCorrect: true
-      explanation: The subscription scope is in the Contoso tenant so any user with the correct role-based access control (RBAC) access to the subscription can see costs after the cost visibility policy is enabled. 
-  - content: "Which scope is most directly related to Fabrikam's invoices?"
-    choices:
-    - content: Billing account
-      isCorrect: false
-      explanation: The billing account scope includes all of Fabrikam 's costs across every customer. It isn't related to any particular invoice.
-    - content: Customer
-      isCorrect: false
-      explanation: The customer scope is the scope for a particular customer. It doesn't directly relate to their invoice.
-    - content: Billing profile
-      isCorrect: true
-      explanation: Every invoice is directly linked to a billing profile. The billing profile scope is used when you want to work with invoices.
-  - content: "Which of the following is a role used to manage costs in Fabrikam's billing hierarchy?"
+  - content: "Which of the following roles is used to manage costs in Fabrikam's billing hierarchy?"
     choices:
     - content: Global admin agent
       isCorrect: true
@@ -47,3 +25,47 @@ quiz:
     - content: Billing profile admin
       isCorrect: false
       explanation: The billing profile admin isn't a role in any Azure hierarchy.
+  - content: "What filter should you use in Cost Analysis to determine the costs for a specific bill within the billing profile scope?"
+    choices:
+    - content: InvoiceID
+      isCorrect: true
+      explanation: This filter only includes costs that roll up to the specified Invoice ID.
+    - content: MyInvoice
+      isCorrect: false
+      explanation: MyInvoice isn't a dimensional filter supported by Cost Analysis.
+    - content: BillID
+      isCorrect: false
+      explanation: BillID isn't a dimensional filter supported by Cost Analysis.
+  - content: "What dimension in Cost Analysis can be used to determine whether a resource charge has received Partner Earned Credit?"
+    choices:
+      - content: PartnerCredit
+        isCorrect: false
+        explanation: PartnerCredit isn't a dimension that you use to filter costs in Cost Analysis.
+      - content: PartnerEarnedCredit
+        isCorrect: true
+        explanation: In Cost Analysis, the PartnerEarnedCredit dimension is shown as True when the credit is applicable. It's shown as False when it isn't applicable.
+      - content: IsPartnerCreditApplied
+        isCorrect: false
+        explanation: IsPartnerCreditApplied isn't a dimension that you use to filter costs in Cost Analysis.
+  - content: "What happens when you enable the policy that allows Fabrikam's customers to see costs?"
+    choices:
+      - content: Customers can see costs at Fabrikam's reduced rates.
+        isCorrect: false
+        explanation: Customers can't see Fabrikam's reduced partner pricing.
+      - content: Customers can see costs depending on their role in the Fabrikam billing hierarchy.
+        isCorrect: false
+        explanation: Customer roles aren't in the Fabrikam billing hierarchy. Their roles are determined by Azure RBAC.
+      - content: Customers can see costs in their own tenant at pay-as-you-go rates.
+        isCorrect: true
+        explanation: When the policy is enabled, customers can view costs based on the retail (pay-as-you-go) rates instead of the costs that are billed to Fabrikam directly.
+  - content: "Which of the following choices are all the supported budget evaluation periods?"
+    choices:
+      - content: Weekly, hourly, and monthly
+        isCorrect: false
+        explanation: Although monthly is a supported budget period, weekly and hourly budgets aren't supported.
+      - content: Monthly, quarterly, and annual
+        isCorrect: true
+        explanation: A budget can be created with any of the evaluation periods above.
+      - content: Monthly and quarterly
+        isCorrect: false
+        explanation: Although both of the evaluation periods above are supported, the annual period is also supported.
