@@ -4,7 +4,7 @@ The sample logger currently is set to write to a local file. Although this appro
 
 ## Create a Blob storage account to hold log data
 
-1. In the Cloud Shell on the right, run the following command to define PowerShell variables that contain the names of the storage account and the blob container to create: 
+1. In Azure Cloud Shell on the right, run the following command to define PowerShell variables that contain the names of the storage account and the blob container to create: 
 
     ```powershell
     $storageaccountname = (-join($useralias, "storage"))
@@ -52,7 +52,7 @@ The sample logger currently is set to write to a local file. Although this appro
 1. Create an Application Insights instance. 
 
     > [!NOTE]
-    > Currently, Azure PowerShell and Azure CLI don't have direct commands for creating this resource type. You must use the general purpose Azure resource creation command that's used in the following code. When prompted, select **Y**, and then press Enter to create the Application Insights instance.
+    > Currently, Azure PowerShell and the Azure CLI don't have direct commands for creating this resource type. You must use the general purpose Azure resource creation command that's used in the following code. When prompted, select **Y**, and then press Enter to create the Application Insights instance.
 
     ```powershell
     $appinsights = New-AzResource `
@@ -100,7 +100,7 @@ The sample logger currently is set to write to a local file. Although this appro
     - The logging level is set to **ALL** so that all events are recorded.
     - The log is implemented by using a single file appender.
     - The log file is written to the *myapp.log* file in the *logFiles* folder.
-    - The ***\<layout\>*** element sets the formatting for the log data.
+    - The **\<layout\>** element sets the formatting for the log data.
 
 1. In Solution Explorer, expand the **Default.aspx** node, and then select **Default.aspx.cs**. This file contains the C# code that runs when the home page is viewed.
 
@@ -159,7 +159,7 @@ The sample logger currently is set to write to a local file. Although this appro
     
 1. Verify that the *logFiles* folder contains a text file named *myapp*. This file is a log file that was created when you ran the web app in the setup unit.
 
-1. Use Notepad to open the *myapp* file. The file should contain text that resembles the following example. Each line is a log message that contains the date, time, log level, and text output for pages in the app that were loaded in a browser. The messages are formatted in the layout that's described by the ***\<layout\>*** element in the *log4Net.xml* file.
+1. Use Notepad to open the *myapp* file. The file should contain text that resembles the following example. Each line is a log message that contains the date, time, log level, and text output for pages in the app that were loaded in a browser. The messages are formatted in the layout that's described by the **\<layout\>** element in the *log4Net.xml* file.
 
     ```text
     2020-04-29 12:53:42,629 [26] (null) DEBUG eShopLegacyWebForms.Global - /, Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.18363
@@ -296,7 +296,7 @@ The sample logger currently is set to write to a local file. Although this appro
 
    :::image type="content" source="../media/4-project-publish.png" alt-text="Screenshot of Solution Explorer, with the Publish command in the context menu for the eShopLegacyWebForms project highlighted.":::
 
-1. If you didn't previously deploy the web app and configure the connection to Azure SQL Database, complete the following substeps; otherwise, go to step 7.
+1. If you didn't previously deploy the web app and configure the connection to Azure SQL Database, complete the following substeps. Otherwise, go to step 7.
 
     1. In the Azure PowerShell window, run the following command to give your computer access the SQL Database server you created in the setup unit. Replace *YourIPAddress* with the public IP address of your computer.
 
