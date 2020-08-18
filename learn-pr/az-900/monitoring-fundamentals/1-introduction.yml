@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.monitoring-fundamentals.introduction
-title: Monitoring Fundamentals
+title: Introduction
 metadata:
-  title: Monitoring Fundamentals
-  description: Discover solutions that help IT organizations with insights into the health and performance of their applications running in the cloud.
+  title: Introduction
+  description: Begin your exploration of monitoring services from Azure.
   ms.date: 07/29/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

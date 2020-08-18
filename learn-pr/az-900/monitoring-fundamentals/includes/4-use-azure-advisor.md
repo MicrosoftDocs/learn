@@ -1,21 +1,17 @@
-This is an introduction paragraph.
+Tailwind Traders wants to optimize their cloud spend. Also, they're concerned about security breaches since they store customer data and historic purchase data in cloud-based databases. As they ramp up their cloud expertise, they want to better understand their use of the cloud, better understand best practices, and pinpoint "easy wins" where they can tighten up their cloud spend and their security practices.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+## Which service should we choose?
 
-## This is the first heading
+Let's apply the decision criteria we learned about in the previous unit to find the right option.
 
-This explains the purpose of this section.
+First, in this scenario, does Tailwind Traders need an analysis of their Azure usage for the sake of optimization?  Yes, Tailwind Traders understands they may be spending too much and is concerned about their security practices and would like to have their use of the cloud analyzed against industry best practices.  Therefore, Azure Advisor is the perfect option for this scenario.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+While we may have found the right product option, let's continue evaluating our decision criteria for this scenario.
 
-### Step 1 - Do the first thing
+Second, in this scenario, does Tailwind Traders want to monitor the health of Azure's services affecting all customers or the resources deployed on Azure? This scenario is not concerned with operations. However, Azure Advisor does analyze and provide recommendations for achieving operational excellence.
 
-Instructions for the first thing go here.
+Third, in this scenario, does Tailwind Traders want to measure custom events along side other usage metrics? No, measuring custom events is not mentioned as a requirement and is not a consideration in this scenario.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+Fourth, in this scenario, does Tailwind Traders want to set up alerts for outages or when autoscaling is about to deploy new instances? Again, this scenario is not concerned with operations. However, Azure Advisor does analyze and provide recommendations for achieving operational excellence.
 
-### Step 2 - Do the second thing
-
-Instructions for the second thing go here.
-
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+Azure Advisor is the right product option to help Tailwind Traders better understand and optimize both their cloud spend and their cloud security posture, and may help them with other areas of their cloud usage as well.

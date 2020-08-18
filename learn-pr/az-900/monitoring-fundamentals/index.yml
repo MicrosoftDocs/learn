@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.languages.monitoring-fundamentals
 metadata:
-  title: Choose an Azure monitoring service for your solution
-  description: TODO
+  title: Choose the best monitoring service for visibility, insight, and mitigation of service outages
+  description: Discover solutions that help IT organizations with insights into the health and performance of their applications running in the cloud.
   ms.date: 07/29/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose an Azure monitoring service for your solution
-summary: TODO
+title: Choose the best monitoring service for visibility, insight, and mitigation of service outages
+summary: Discover solutions that help IT organizations with insights into the health and performance of their applications running in the cloud.
 abstract: |
-  In this module, you will:
-  - Install and configure Visual Studio 2019 Community Edition.
+  By the ned of this module, you will be able to:
+  - Choose the correct cloud monitoring service to address different kinds of business challenges.  
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/monitoring-fundamentals.svg
