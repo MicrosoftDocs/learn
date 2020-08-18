@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.create-a-language-translator-mixed-reality-application
+uid: learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services
 metadata:
   title: Create a language translator mixed reality application with Unity and Azure Cognitive Services
   description: Create a language translator application for your Mixed Reality device (WMR, HoloLens 2 etc.) using Cognitive Services.
@@ -30,14 +30,14 @@ roles:
 products:
 - azure
 units:
-- learn.create-a-language-translator-mixed-reality-application.1-introduction
-- learn.create-a-language-translator-mixed-reality-application.2-overview-of-speech-translation
-- learn.create-a-language-translator-mixed-reality-application.3-exercise-create-an-azure-speech-resource
-- learn.create-a-language-translator-mixed-reality-application.4-configure-capabilities-and-the-configuration-profile
-- learn.create-a-language-translator-mixed-reality-application.5-exercise-configure-capabilities-and-the-configuration-profile
-- learn.create-a-language-translator-mixed-reality-application.6-create-the-speech-translation-script
-- learn.create-a-language-translator-mixed-reality-application.7-exercise-create-the-speech-translation-script
-- learn.create-a-language-translator-mixed-reality-application.8-knowledge-check
-- learn.create-a-language-translator-mixed-reality-application.9-summary
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.1-introduction
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.2-overview-of-speech-translation
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.3-exercise-create-an-azure-speech-resource
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.4-configure-capabilities-and-the-configuration-profile
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.5-exercise-configure-capabilities-and-the-configuration-profile
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.6-create-the-speech-translation-script
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.7-exercise-create-the-speech-translation-script
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.8-knowledge-check
+- learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.9-summary
 badge:
   uid: learn.undefined.badge
