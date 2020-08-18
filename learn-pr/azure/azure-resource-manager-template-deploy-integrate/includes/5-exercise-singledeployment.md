@@ -15,12 +15,12 @@ Be sure you are signing in to the same account that activated the sandbox.
 
 ::: zone pivot="PowerShell"
 
-[!include[](../include/powershell/5-exercise-singledeployment-powershell.md)]
+[!include[](./powershell/5-exercise-singledeployment-powershell.md)]
 
 ::: zone-end
 
 ::: zone pivot="Azure CLI"
 
-[!include[](../include/azurecli/5-exercise-singledeployment-azurecli.md)]
+[!include[](./azurecli/5-exercise-singledeployment-azurecli.md)]
 
 ::: zone-end

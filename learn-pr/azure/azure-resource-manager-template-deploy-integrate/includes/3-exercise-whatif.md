@@ -15,12 +15,12 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 ::: zone pivot="PowerShell"
 
-[!include[](../include/powershell/3-exercise-whatif-powershell.md)]
+[!include[](./powershell/3-exercise-whatif-powershell.md)]
 
 ::: zone-end
 
 ::: zone pivot="Azure CLI"
 
-[!include[](../include/azurecli/3-exercise-whatif-azurecli.md)]
+[!include[](./azurecli/3-exercise-whatif-azurecli.md)]
 
 ::: zone-end
