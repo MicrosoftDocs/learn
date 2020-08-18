@@ -1,9 +1,9 @@
 Our goal was to help you evaluate whether Logic Apps would be a good choice for your business process. We developed some criteria you can use to guide your decision:
 
-* Integration
-* Performance
-* Conditionals
-* Connectors
+- Integration
+- Performance
+- Conditionals
+- Connectors
 
 You'd analyze your business process against each of these criteria. The results should give you an idea of how close a match Logic Apps is to your needs.
 

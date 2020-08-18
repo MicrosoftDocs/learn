@@ -4,9 +4,9 @@ title: Walkthrough - Deploy Azure Container Instances
 metadata:
   title: Walkthrough - Deploy Azure Container Instances
   description: "Walkthrough - Deploy Azure Container Instances"
-  ms.date: 07/26/2020
+  ms.date: 08/08/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-environment

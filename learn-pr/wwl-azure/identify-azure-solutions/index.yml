@@ -3,7 +3,7 @@ uid: learn.wwl.identify-azure-solutions
 metadata:
   title: Identify Azure solutions
   description: "In this module we’ll discuss solutions such as IoT, Azure IoT Hub, and Microsoft IoT Central. We’ll also explore big data analytics services (Azure SQL Data Warehouse, HDInsight, Azure Data Lake Analytics). AZ-900"
-  ms.date: 07/11/2020
+  ms.date: 08/15/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
