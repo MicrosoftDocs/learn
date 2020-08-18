@@ -14,7 +14,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "You need to predict future behavior based on previous actions? Which product option should you eliminate as a candidate?"
+  - content: "You need to predict future behavior based on previous actions. Which product option should you eliminate as a candidate?"
     choices:
     - content: "Azure Machine Learning"
       isCorrect: false
