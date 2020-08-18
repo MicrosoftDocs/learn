@@ -16,32 +16,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: 'Which Azure service should be used to enforce the controls necessary for an organization to meet their compliance requirements?'
     choices:
-    - content: 'Answer 1'
+    - content: 'Azure Monitor'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
+      explanation: 'Azure Policy helps to enforce organizational standards and to assess compliance at-scale.'
+    - content: 'Azure Traffic Manager'
       isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'Azure Policy helps to enforce organizational standards and to assess compliance at-scale.'
+    - content: 'Azure Policy'
       isCorrect: true
-      explanation: 'Explanation 4'
-
-  - content: 'Question 2'
-    choices:
-    - content: 'Answer 1'
+      explanation: 'Azure Policy helps to enforce organizational standards and to assess compliance at-scale.'
+    - content: 'Azure Security Center'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'Azure Policy helps to enforce organizational standards and to assess compliance at-scale.'

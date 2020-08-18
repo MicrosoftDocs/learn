@@ -72,12 +72,3 @@ The goal of alerting is notification for significant events. Azure Monitor provi
 ## Security monitoring
 
 Azure Security Center also plays an important part in the Enterprise Scale monitoring strategy. It can help monitor the security of VMs, networks, storage, data services, and applications. Security Center provides advanced threat detection by using machine learning and behavioral analytics to help identify active threats targeting Azure resources. It also provides threat protection that blocks malware or other unwanted code and reduces the surface area exposed to brute force and other network attacks. Enterprise Scale recommends endabling the Standard SKU for Security Center on all subcriptions via policy.
-
-## Knowledge Check
-
-An organization runs Azure services in Japan East, UK South, East US2, and West US2. They have no sovereignty requirements for their management and monitoring data. How many Log Analytics workspaces should they use for platform management and monitoring log data?
-
-    A. 1
-    B. 2
-    C. 3
-    D. 4

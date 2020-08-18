@@ -16,32 +16,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: 'An application with low latency network requirements between the service tiers must withstand an Azure data center outage. Which feature should be included in the architecture?'
     choices:
-    - content: 'Answer 1'
+    - content: 'Azure Front Door'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'Availability Zones are tolerant to datacenter failures through redundancy and logical isolation of services.'
+    - content: 'Availability Zones'
       isCorrect: true
-      explanation: 'Explanation 4'
-
-  - content: 'Question 2'
-    choices:
-    - content: 'Answer 1'
+      explanation: 'Availability Zones are tolerant to datacenter failures through redundancy and logical isolation of services.'
+    - content: 'Availability Sets'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
+      explanation: 'Availability Zones are tolerant to datacenter failures through redundancy and logical isolation of services.'
+    - content: 'Read Access Geo-Redundant Storage'
       isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'Availability Zones are tolerant to datacenter failures through redundancy and logical isolation of services.'
