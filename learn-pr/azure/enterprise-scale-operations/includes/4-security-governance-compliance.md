@@ -13,14 +13,15 @@ Design Recommendations:
 
 ## Governance
 
-    Governance focuses on the mechanisms and processes to maintain control over applications and resources in Azure. Within Enteprise Scale, Azure Policy is an essential service to ensuring security and compliance within the enterprise estate. Policies enforce vital management and security conventions across Azure resources and platform services.
-    
-    A well planned combination of RBAC assignments and policies will ensure the appropriate guard rails are in place to control who can deploy and configure resources and what resources they can deploy and configure.
+Governance focuses on the mechanisms and processes to maintain control over applications and resources in Azure. Within Enteprise Scale, Azure Policy is an essential service to ensuring security and compliance within the enterprise estate. Policies enforce vital management and security conventions across Azure resources and platform services.
 
-    Design Recommendations:
-    - Map regulatory and compliance requirements to Azure Policy definitions and Azure AD role-based access control assignments.
-    - Manage policy assignments at the highest appropriate level with exclusions at bottom levels, if required.
-    - Define regulatory and compliance standards at the landing zone level. Not all applications within an enterprise estate must adhere to the same standards.
+A well planned combination of RBAC assignments and policies will ensure the appropriate guard rails are in place to control who can deploy and configure resources and what resources they can deploy and configure.
+
+Design Recommendations:
+
+- Map regulatory and compliance requirements to Azure Policy definitions and Azure AD role-based access control assignments.
+- Manage policy assignments at the highest appropriate level with exclusions at bottom levels, if required.
+- Define regulatory and compliance standards at the landing zone level. Not all applications within an enterprise estate must adhere to the same standards.
 
 ## Security monitoring and an audit policy
 
