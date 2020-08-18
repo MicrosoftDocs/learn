@@ -1,22 +1,22 @@
 Deploying Azure Resource Manager (ARM) Templates is the easy part of the equation.  Writing them is the template is the critical part. and you can go over the basics in one of our other Microsoft Learn modules namely [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?WT.mc_id=MSLearn-ARM-pierrer) and [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?WT.mc_id=MSLearn-ARM-pierrer).
 
-Wether you are deploying your templates in your test environment or in productions. The ability to deploying from a web interface or  a command line / terminal is crucial.  This unit will cover the ways to deploy your templates.
+Whether you are deploying your templates in your test environment or in productions. The ability to deploying from a web interface or  a command line / terminal is crucial.  This unit will cover the ways to deploy your templates.
 
-1. Powershell command and/or scripts
+1. PowerShell command and/or scripts
 1. Azure CLI command and/or scripts
-1. Directly in the Azure Portal
+1. Directly in the Azure portal
 1. Using Partner tools such as Terraform *(Not covered in this module)*
 
 There will be times where you need to deploy from different locations
 
 1. From a local file
-1. From a external or remote location using a Uniform Resource Identifier (URI)
+1. From an external or remote location using a Uniform Resource Identifier (URI)
 
 And always with the option of using a parameter file.
 
-So far you've already used some of these deployment command in other units of this module or in previous modules. But let's drill down a bit deeper in the process.
+So far you've already used some of these deployment commands in other units of this module or in previous modules. But let's drill down a bit deeper in the process.
 
-For every deployment you need a **deployment name**, if you don't provide a name for the deployment, the name of the template file is used by default. For example, if you deploy a template named azuredeploy.json and don't specify a deployment name, the deployment is named azuredeploy.  However, using unique meaningful deployment names for each deployment provides you with additional simplicity when reviewing deployments and troubleshooting events and  maintain unique entries in the deployment history.  Since every time you run a deployment, an entry is added to the resource group's deployment history with the deployment name. If you run another deployment and give it the same name, the earlier entry is replaced with the current deployment.  Also, when you specify a unique name for each deployment, you can run them concurrently without conflict.
+For every deployment, you need a **deployment name**, if you don't provide a name for the deployment, the name of the template file is used by default. For example, if you deploy a template named azuredeploy.json and don't specify a deployment name, the deployment is named azuredeploy.  However, using unique meaningful deployment names for each deployment provides you with additional simplicity when reviewing deployments and troubleshooting events and  maintain unique entries in the deployment history.  Since every time you run a deployment, an entry is added to the resource group's deployment history with the deployment name. If you run another deployment and give it the same name, the earlier entry is replaced with the current deployment.  Also, when you specify a unique name for each deployment, you can run them concurrently without conflict.
 
 ## PowerShell
 
@@ -42,7 +42,7 @@ The same deployment scopes exist for an Azure CLI deployment
 
 ## Portal
 
-You see several options for deploying resources using a template in the Azure Portal.
+You see several options for deploying resources using a template in the Azure portal.
 
 1. Build your own template in editor: create a template using the portal template editor. The editor is capable to add a resource template schema
 1. Common templates: There are four common templates for creating a Linux virtual machine, Windows virtual machine, a web application, and a database in Azure SQL Database
