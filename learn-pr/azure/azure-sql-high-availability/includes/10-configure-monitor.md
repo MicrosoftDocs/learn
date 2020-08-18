@@ -29,7 +29,7 @@ The availability of regions and datacenters is critical for the availability of 
 
 Azure status is a dashboard that shows any service that's causing problems in any Azure global region. You can use an RSS feed to get notifications of changes to Azure status.
 
-You can view Azure Service Health on the Azure portal. Azure Service Health provides information about service problems, planned maintenance events, health advisories, and health history. You can also set up alerts that notify you through email or SMS of any event that might affect availability.
+You can view Azure Service Health in the Azure portal. Azure Service Health provides information about service problems, planned maintenance events, health advisories, and health history. You can also set up alerts that notify you through email or SMS of any event that might affect availability.
 
 ### Instance, server, and database availability
 

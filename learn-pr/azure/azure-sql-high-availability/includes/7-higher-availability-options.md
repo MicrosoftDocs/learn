@@ -1,4 +1,4 @@
-Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances. You can directly see the impact on the service-level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
+Azure SQL Database and Azure SQL Managed Instance provide great availability options by default in the various service tiers. There are some additional things you can do to increase or modify the availability of your databases/instances. You'll be able to directly see the impact on the service-level agreement (SLA). In this unit, you'll see how you can go further with various options for availability in Azure SQL.
 
 ## Availability Zones
 
@@ -13,7 +13,7 @@ Availability Zones are relatively new to Azure SQL, so they're currently  availa
 
 ## Azure SQL SLA
 
-Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit towards a portion of your monthly service fees.
+Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit toward a portion of your monthly service fees.
 
 Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business critical deployment that has Availability Zones configured. The Business critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for *recovery point object*. It represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for *recovery time objective*. It represents how long it takes to be back up and running again if a disaster occurs.
 
@@ -27,7 +27,7 @@ The Hyperscale tier's SLA depends on the number of replicas. Remember that you c
 
 ## Geo-replication and auto-failover groups
 
-After you choose a service tier (and consider Availability Zones as applicable), you can consider some other options for getting read scale or the ability to fail over to another region: geo-replication and auto-failover groups. In SQL Server on-premises, configuring either of these options is something that would take a lot of planning, coordination, and time.
+After you choose a service tier (and consider Availability Zones as applicable), you can consider some other options for getting read-scale or the ability to fail over to another region: geo-replication and auto-failover groups. In SQL Server on-premises, configuring either of these options is something that would take a lot of planning, coordination, and time.
 
 The cloud, and Azure SQL specifically, have made this process easier. For both geo-replication and auto-failover groups, you can get configured with a few clicks in the Azure portal or a few commands in the PowerShell/Azure CLI.
 

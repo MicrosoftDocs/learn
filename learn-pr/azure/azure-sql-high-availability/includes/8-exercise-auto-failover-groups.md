@@ -45,7 +45,7 @@ This exercise will guide you through configuring auto-failover groups for your A
     Write-Host "Variables Received"
     ```
 
-1. Create an empty Azure SQL Database server in the failover region by running this script in the Azure Cloud Shell:
+1. Create an empty Azure SQL Database server in the failover region by running this script in Azure Cloud Shell:
 
     ```powershell
     # Create a backup server in the failover region
@@ -57,7 +57,7 @@ This exercise will guide you through configuring auto-failover groups for your A
     Write-Host "New Azure SQL Database logical server Created in different region"
     ```
 
-1. Create a failover group between the servers by running this script in the Azure Cloud Shell:
+1. Create a failover group between the servers by running this script in Azure Cloud Shell:
 
     ```powershell
     # Create a failover group between the servers
@@ -68,10 +68,10 @@ This exercise will guide you through configuring auto-failover groups for your A
     Write-Host "New auto-failover group created between the two Azure SQL Database logical servers"
     ```
 
-1. Configure the network by running this script in the Azure Cloud Shell:
+1. Configure the network by running this script in Azure Cloud Shell:
 
     ```powershell
-    # Add a firewall rules that gives your VM access to the new server
+    # Add a firewall rule that gives your VM access to the new server
     New-AzSqlServerFirewallRule -ResourceGroupName $resourceGroup `
         -ServerName $drServer `
         -FirewallRuleName $firewallRule `
@@ -81,7 +81,7 @@ This exercise will guide you through configuring auto-failover groups for your A
 
     For purpose of illustrating auto-failover groups, this network setup is sufficient. It's slightly different from what you'd do in an enterprise environment. In an enterprise environment, the machine that needs access would probably be a set of resources that make up some type of application. If your database fails over, you might want to fail over your application, VMs, or other resources to the new region as well. Both sets of resources will need access to the resources, servers, and databases in the other region. To do this, you can use virtual network peering, virtual-network-to-virtual-network connections, or potentially something else (like Azure ExpressRoute). It will depend on your scenario.
 
-1. Add one or more databases to the failover group by running this script in the Azure Cloud Shell:
+1. Add one or more databases to the failover group by running this script in Azure Cloud Shell:
 
     ```powershell
     # Add the database or databases to the failover group
@@ -128,7 +128,7 @@ The result of the first command should be `READ_WRITE` because it checks the pri
 
 The result of the second command should be `READ_ONLY` because it checks the disaster recovery or secondary server that you configured. You should only be able to write from one of the servers at any given time.  
 
-In the next steps, you'll examine what happens to both servers when a failover occurs.  
+In the next steps, you'll see what happens to both servers when a failover occurs.  
 
 ### Initiate a failover and view the results
 
@@ -152,7 +152,7 @@ In the next steps, you'll examine what happens to both servers when a failover o
 
     One of the benefits of auto-failover groups in Azure SQL Database and Azure SQL Managed Instance is that you don't have to update the connection strings after a failover. You continue to connect to the primary (`<failover-group>.database.windows.net`) for write workloads and the secondary (`<failover-group>.secondary.database.windows.net`) for read workloads. Azure takes care of routing you to the appropriate database in the corresponding region/server.
 
-1. Check the status of the secondary server by running this script in the Azure Cloud Shell:
+1. Check the status of the secondary server by running this script in Azure Cloud Shell:
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `
@@ -161,14 +161,14 @@ In the next steps, you'll examine what happens to both servers when a failover o
 
     This server should now be in the primary role.
 
-1. Fail back by running this script in the Azure Cloud Shell:
+1. Fail back by running this script in Azure Cloud Shell:
 
     ```powershell
     Switch-AzSqlDatabaseFailoverGroup -ResourceGroupName $resourceGroup `
      -ServerName $server -FailoverGroupName $failoverGroup
     ```
 
-1. Finally, you can check the status of the secondary server yet again. Run this script in the Azure Cloud Shell:
+1. Finally, you can check the status of the secondary server yet again. Run this script in Azure Cloud Shell:
 
     ```powershell
     (Get-AzSqlDatabaseFailoverGroup -FailoverGroupName $failoverGroup `

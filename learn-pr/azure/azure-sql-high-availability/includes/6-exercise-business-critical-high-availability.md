@@ -1,6 +1,6 @@
 In this exercise, you'll upgrade your database to the Business critical tier. You'll see how it provides read replicas and increased performance.
 
-You'll use the OStress tool you used in the previous exercise to create a workload. You'll then initiate a failover by using the Azure PowerShell module in the Azure Cloud Shell. Finally, you'll view the effect the failover has on the OStress workload.  
+You'll use the OStress tool you used in the previous exercise to create a workload. You'll then initiate a failover by using the Azure PowerShell module in Azure Cloud Shell. Finally, you'll view the effect the failover has on the OStress workload.  
 
 ## Basic high availability in the Azure SQL Business critical service tier
 
@@ -14,7 +14,7 @@ In this exercise, you'll complete the following steps:
 
 ## Deploy the same database in the Business critical tier
 
-In a previous module of this learning path, you learned how to scale a database by using T-SQL. The goal of this exercise is to upgrade the database that you used in the previous exercise from General purpose to Business critical. You'll use Azure CLI commands in the Azure Cloud Shell to upgrade the database. Because there's a limit on the frequency of failovers, you'll use the same sample database but name it AdventureWorks-bc.  
+In a previous module of this learning path, you learned how to scale a database by using T-SQL. The goal of this exercise is to upgrade the database that you used in the previous exercise from General purpose to Business critical. You'll use Azure CLI commands in Azure Cloud Shell to upgrade the database. Because there's a limit on the frequency of failovers, you'll use the same sample database but name it AdventureWorks-bc.  
 
 1. In the Azure Cloud Shell terminal on the right side of this page, run the following PowerShell script to configure your environment:  
 
@@ -48,7 +48,7 @@ In a previous module of this learning path, you learned how to scale a database 
     * `family`: This parameter specifies the generation of the hardware. To be consistent with the previous exercise, we used `Gen5`.
     * `capacity`: This parameter specifies the number of DTUs or vCores. To be consistent with the previous exercise, we used `2` vCores.
     * `sample-name`: To be consistent with the previous exercise, we used the `AdventureWorksLT` database sample.
-    * `edition`: This parameter name is a bit misleading. It really refers to the service tier, which isn't the same the edition that's used in SQL Server.  
+    * `edition`: This parameter name is a bit misleading. It really refers to the service tier, which isn't the same as the edition that's used in SQL Server.  
     * `read-scale`: This option isn't enabled by default, but there's no additional cost associated with it. By enabling it, you're enabling one of your secondary replicas to be used as a readable secondary.  
     * `zone-redundant`: By default, this parameter is set to false. You can set it to true if you want a "Multi-Az" deployment at no additional cost. You'll learn more about Availability Zones in the next unit.
 
@@ -78,13 +78,13 @@ As in the previous exercise, you'll use OStress to repeatedly query your Azure S
 
     The OStress workload connects and runs a simple query 50,000 times.
 
-1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server and `password` with your password. This command is slightly different from the one in the previous exercise. The database name is now `AdventureWorks-bc`.
+1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server. Replace `password` with your password. This command is slightly different from the one in the previous exercise. The database name is now `AdventureWorks-bc`.
 
     ```cmd
     .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks-bc" -P"password" -n1 -r50000
     ```
 
-    If your workload is running properly, you should be seeing the result of the query, `847`, repeatedly appearing in the Command Prompt window.
+    If your workload is running properly, you should see the result of the query, `847`, repeatedly appearing in the Command Prompt window.
 
     If you want to stop running the OStress workload before it's done, you can select **Ctrl+C** in the terminal.  
 
@@ -119,7 +119,7 @@ ApplicationIntent=ReadOnly;
 
     :::image type="content" source="../media/6-new-db-engine-query.png" alt-text="Screenshot that shows how to create a query connection.":::  
 
-1. In the Connect the Server dialog box, use the configuration that you've been using to connect to your Azure SQL Database logical server. (That is, use **SQL Server Authentication**.) Select **Options**.  
+1. In the **Connect to Server** dialog box, use the configuration that you've been using to connect to your Azure SQL Database logical server. (That is, use **SQL Server Authentication**.) Select **Options**.  
 
     :::image type="content" source="../media/3-connect-azure-sql.png" alt-text="Screenshot that shows the Connect to Server dialog box.":::  
 
@@ -131,7 +131,7 @@ ApplicationIntent=ReadOnly;
     ApplicationIntent=ReadOnly;
     ```  
 
-    With SSMS, you have to specify the server and database to which you want to connect read-only. That's because there might be multiple databases in a server that have different capabilities as far as readable secondaries goes.
+    With SSMS, you have to specify the server and database to which you want to connect read-only. That's because there might be multiple databases in a server that have different capabilities for readable secondaries.
 
 1. As a test, try the following query on your new database engine query. Observe the results. Are they what you'd expect?  
 
@@ -141,6 +141,6 @@ ApplicationIntent=ReadOnly;
 
     :::image type="content" source="../media/6-read-only.png" alt-text="Screenshot that shows the read-only response.":::
 
-1. You can optionally reconnect and update the Additional Connection Parameters. (Replace `ReadOnly` with `ReadWrite`.) Confirm that you're accessing the read/write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll be in:
+1. You can optionally reconnect and update the Additional Connection Parameters. (Replace `ReadOnly` with `ReadWrite`.) Confirm that you're accessing the read/write primary replica. `ReadWrite` is the default, so if you don't select anything, that's what you'll get:
 
     :::image type="content" source="../media/6-read-write.png" alt-text="Screenshot that shows the read/write response.":::

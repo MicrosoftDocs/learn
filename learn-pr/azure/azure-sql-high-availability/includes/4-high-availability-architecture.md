@@ -1,4 +1,4 @@
-To understand the availability options and capabilities in Azure SQL, you need to understand the service tier. The service tier you select will determine the underlying architecture of the database or managed instance that you deploy. 
+To understand the availability options and capabilities in Azure SQL, you need to understand service tiers. The service tier you select will determine the underlying architecture of the database or managed instance that you deploy. 
 
 There are two purchasing models to consider: DTU and vCore. This unit will focus on the vCore service tiers and their architectures for high availability. You can equate the DTU model’s Basic and Standard tiers to General purpose, and its Premium tiers to Business critical.  
 
@@ -31,7 +31,7 @@ The Hyperscale service tier is available only in Azure SQL Database. It's in dev
 
 Because this architecture uses paired page servers, you can scale horizontally to put all the data in caching layers. This new architecture also allows Hyperscale to support databases as large as 100 TB. Because it uses snapshots, nearly instantaneous database backups can occur regardless of size. Database restores take minutes rather than hours or days. You can also scale up or down in constant time to accommodate your workloads.
 
-It's also interesting to note how the log service was pulled out in this architecture. The log service is used to feed the replicas and the page servers. Transactions can commit when the log service hardens to the landing zone. So the consumption of the changes by a secondary compute replica isn't required for a commit. Unlike in other service tiers, you can determine whether you want secondary replicas. You can configure zero to four secondary replicas, which can all be used for read-scale.
+It's interesting to note how the log service was pulled out in this architecture. The log service is used to feed the replicas and the page servers. Transactions can commit when the log service hardens to the landing zone. So the consumption of the changes by a secondary compute replica isn't required for a commit. Unlike in other service tiers, you can determine whether you want secondary replicas. You can configure zero to four secondary replicas, which can all be used for read-scale.
 
 As in the other service tiers, an automatic failover will happen if service fabric determines it needs to. But the recovery time will depend on the existence of secondary replicas. For example, if you don't have replicas and a failover occurs, the scenario will be similar to that of the General purpose service tier: the service fabric first needs to find spare capacity. If you have one or more replicas, recovery is faster and more closely aligns to that of the Business critical service tier.
 
