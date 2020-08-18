@@ -14,6 +14,6 @@ In this module, you've learned about Microsoft Endpoint Manager, what it is and 
 
 ## Learn more
 
-For addiitonal information about Microsoft Endpoint Manager, see the following resources:
+For additional information about Microsoft Endpoint Manager, see the following resources:
 
 - [Microsoft Endpoint Manager documentation](https://docs.microsoft.com/mem/)
