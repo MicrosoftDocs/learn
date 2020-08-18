@@ -1,0 +1,35 @@
+<!-- Describe Azure Arc. -->
+
+<!--3 minutes to read-->
+
+*Azure Arc* is a service that provides a set of technologies for organizations such as Contoso that want to simplify their complex and distributed environments. Azure Arc provides a centralized, unified, and self-service approach to managing:
+
+- Windows Server
+- Linux servers
+- Kubernetes clusters
+- Azure data services
+
+Azure Arc also extends adoption of cloud practices such as DevOps and Azure security across the on-premises, multiple-cloud, and edge environments. In addition to extending the control plane for management, Azure Arc enables organizations to run Azure data services anywhere.
+
+Continuous improvements have been made to the Azure fabric controller (the Azure *control plane*). This control plane is responsible for managing the lifecycle of resources such as VMs, database instances, Kubernetes clusters, and Apache Hadoop clusters.
+
+For example, every time Contoso provisions, scales, stops, or terminates a resource, such as an Azure VM, the Azure fabric controller processes this operation. In between the fabric controller and the resources is the *Azure Resource Manager*, which is another layer that automates the resource lifecycle. Azure has resource providers for each of the resource types that Azure hosts.
+
+> [!NOTE]
+> Resource Manager provides a management layer that enables you to create, update, and delete Azure resources.
+
+## Azure Arc capabilities
+
+While Azure Arc has the potential to dramatically alter the management strategy in hybrid scenarios, it's currently limited to two features available to registered systems, described in the following table.
+
+|Feature|Description|
+|------------------------------------------------------|------------------------------------------------------------|
+|Azure Policy guest configuration|Azure Policy supports auditing Azure Arc resources to validate such settings as configurations of the operating system, applications, and environment settings. The only exception to this is the ability to configure the time zone on the Windows operating system.|
+|Support for resource context access Log Analytics data|Resource context enables you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because Azure Arc presents individual on-premises Windows computers as Azure resources, you can control access to their respective logs by applying role-based access control permissions on these resources.|
+
+## Additional reading
+
+You can learn more by reviewing the following documents:
+
+- [What is Azure Resource Manager?](https://aka.ms/azure-resource-manager-management-overview?azure-portal=true)
+- [What is Azure Arc enabled servers (preview)?](https://aka.ms/azure-arc-servers?azure-portal=true)
