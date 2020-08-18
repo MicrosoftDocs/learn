@@ -25,3 +25,14 @@ quiz:
     - content: "A decision tree has lots of branches, and the model can make lots of choices."
       isCorrect: false
       explanation: "Incorrect. In a decision tree, the model can make only two choices: yes or no."
+  - content: "What is the purpose of splitting your dataset?"
+    choices:
+    - content: "To make your model more accurate by getting rid of bad data."
+      isCorrect: false
+      explanation: "Incorrect. If you train and test your machine learning model with the same data, it'll only be effective at telling you what data you have. It won't yield accurate predictions."
+    - content: "To try out different algorithms with different data."
+      isCorrect: false
+      explanation: "Incorrect. If you train and test your machine learning model with the same data, it'll only be effective at telling you what data you have. It won't yield accurate predictions."
+    - content: "To have different data for training and testing your model."
+      isCorrect: true
+      explanation: "Correct. If you train and test your machine learning model with the same data, it'll only be effective at telling you what data you have. It won't yield accurate predictions."
