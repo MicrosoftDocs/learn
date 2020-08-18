@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.research-space-rocks-ai-nasa.6a-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "Which of the following is a form in which you'd find a space rock on Earth?"
+    choices:
+    - content: "Meteor"
+      isCorrect: false
+      explanation: "Incorrect. Meteors are seen moving through space, not on Earth."
+    - content: "Meteorite"
+      isCorrect: true
+      explanation: "Correct! A meteorite is the remnants of a meteor that crashed into Earth."
+    - content: "Asteroid"
+      isCorrect: false
+      explanation: "Incorrect. Asteroids are seen moving through space, not on Earth."
+  - content: "If an astronaut sees one black rock surrounded by white rocks, the astronaut should collect only the black rock."
+    choices:
+    - content: "True."
+      isCorrect: false
+      explanation: "Incorrect. Taking the most unique rock isn't the preferable way to sample space rocks."
+    - content: "False."
+      isCorrect: true
+      explanation: "Correct! The astronaut should take a sample of every rock."
+  - content: "What is the goal of the OSIRIS-REx mission?"
+    choices:
+    - content: "To learn about human history."
+      isCorrect: true
+      explanation: "Correct! The goal of the OSIRIS-REx mission is to learn about human history."
+    - content: "To find an asteroid that's suitable for humans to inhabit."
+      isCorrect: false
+      explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to find an asteroid where humans might live."
+    - content: "The goal of the OSIRIS-REx mission is to test a new camera."
+      isCorrect: false
+      explanation: "Incorrect. The goal of the OSIRIS-REx mission isn't to test a new camera."

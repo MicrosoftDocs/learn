@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: coupon
+  labels:
+    app: eshop
+    service: coupon
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      service: coupon
+  template:
+    metadata:
+      labels:
+        app: eshop
+        service: coupon
+      annotations:
+        linkerd.io/inject: enabled
+    spec:
+      # remainder of file omitted for brevity
