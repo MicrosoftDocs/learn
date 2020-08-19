@@ -9,7 +9,6 @@ metadata:
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 1
 content: |
   [!include[](includes/12-summary.md)]
