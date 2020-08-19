@@ -34,10 +34,11 @@ The library provides a set of arithmetic operations signed and
 in the LittleEndian representation, and a new type to store fixed-point
 LittleEndian integers. We have three types:
 
--  `LittleEndian`: A qubit array that represents an integer where the index 0-th
+- `LittleEndian`: A qubit array that represents an integer where the index 0-th
      index denotes the least significant bit.
--  `SingedLittleEndian`: Same as `LittleEndian` but with a sign stored in [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement).
--  `FixedPoint`: Represents a real number consisting of a qubit array representing
+     
+- `SingedLittleEndian`: Same as `LittleEndian` but with a sign stored in [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement).
+- `FixedPoint`: Represents a real number consisting of a qubit array representing
    number of binary digits to the left of the binary point.
 
 For each of the types, several operations are available, for example: addition,
