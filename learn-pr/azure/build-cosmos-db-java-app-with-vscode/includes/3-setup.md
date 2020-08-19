@@ -1,16 +1,18 @@
-Visual Studio Code enables you to create a console application by using the integrated terminal and a few short commands.
+This section assumes 
 
-In this unit, you will create a basic console app using the integrated terminal, retrieve your Azure Cosmos DB connection string from the extension, and then configure the connection from your application to Azure Cosmos DB.
+1. You have already created a Maven project directory with a **src/** directory and an empty **pom.xml** file at the top level.
 
-## Create a console app
+1. In your Azure Cosmos DB account, you have created a database named **Users** with a container named **WebCustomers**
 
-1. In Visual Studio Code, select **File** > **Open Folder**.
+In this unit, you will create a basic console app using an IDE of your choice to edit code, and optionally using the terminal of your choice to run the code.
 
-1. Create a new folder named `learning-module` in the location of your choice, and then click **Select Folder**.
+The terminal commands in this lab are assuming a Windows OS.
 
-1. Ensure that file auto-save is enabled by clicking on the File menu and checking **Auto Save** if it is blank. You will be copying in several blocks of code, and this will ensure you are always operating against the latest edits of your files.
+## Build the skeleton of your app
 
-1. Create a pom.xml file with the default dependencies as shown below
+1. First you will create the app directory structure. Under the **src/** directory of your Maven project, create the following directory structure: **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn**
+
+1. Second, you will set up your Maven **pom.xml**. In your IDE, open the pom.xml file. Paste in the following dependencies shown below:
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -20,9 +22,9 @@ In this unit, you will create a basic console app using the integrated terminal,
         <modelVersion>4.0.0</modelVersion>
 
         <groupId>com.azure</groupId>
-        <artifactId>azure-cosmos-java-sql-api-samples</artifactId>
+        <artifactId>azure-cosmos-java-sql-app-mslearn</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <name>Get Started With Sync / Async Java SDK for SQL API of Azure Cosmos DB Database Service
+        <name>MSLearn sample Java app
         </name>
         <properties>
             <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -62,7 +64,7 @@ In this unit, you will create a basic console app using the integrated terminal,
             <dependency>
                 <groupId>com.azure</groupId>
                 <artifactId>azure-cosmos</artifactId>
-                <version>4.3.0</version>
+                <version>latest</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
@@ -93,15 +95,35 @@ In this unit, you will create a basic console app using the integrated terminal,
     </project>
     ```
 
-1. Allow Maven to automatically download the dependencies specified in pom.xml. If prompted by Maven to permit this, allow automatic download.
+1. Save your changes to **pom.xml**. Depending on your IDE, it may automatically detect the **pom.xml** changes and ask to automatically download the new dependencies using Maven. Allow Maven to automatically download the dependencies specified in **pom.xml**.
 
-1. Create a Java source file named **CosmosApp.java**
-
-## Connect the app to Azure Cosmos DB
+1. Third, you will build and run Hello World. Using your IDE or the terminal, navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and create a Java source file named **CosmosApp.java**
 
 1. Create a class **CosmosApp** in **CosmosApp.java**
 
-1. Create the following class variables
+1. Create a `main` method in the class. In the main method add `logger.info("Hello world.");`.
+
+1. **If your IDE offers tools to build and run your Maven application** - then build and run your application using the IDE, and confirm that the application logs `Hello World` to the terminal.
+
+1. **If you will use the terminal to build and run** -
+
+    Execute
+
+    ```bash
+    mvn clean package
+    ```
+
+    to build the Maven project. Then execute
+
+    ```bash
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"  
+    ```
+
+    and confirm that the application logs `Hello World` to the terminal.
+
+## Connect the app to Azure Cosmos DB
+
+1. Create the following static class variables for your Azure Cosmos DB connection details
 
     ```java
     private static String endpointUri = "<your-cosmosdb-hostname>"
@@ -110,17 +132,25 @@ In this unit, you will create a basic console app using the integrated terminal,
 
 1. Copy your connection string by clicking the Azure icon on the left, expanding your Concierge Subscription, right-clicking your new Azure Cosmos DB account, and then clicking **Copy Connection String**. Substitute in your Azure Cosmos DB hostname and master key. For example, if your uri is `https://cosmosacct.documents.azure.com:443/`, your new variable assignment will look like this: `private static String endpointUri = "https://cosmosacct.documents.azure.com:443/";`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, your new variable assignment will look like this: `private static String primaryKey = "elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==";`.
 
+## Add asynchronous logging to our application
+
+With async logging our application thread will not block on log activity.
+
+1. Underneath the `endpointUri`/`primaryKey` static variables, create a log4j2 Logger instance:
+
+    ```java
+    protected static Logger logger = LoggerFactory.getLogger(SampleChangeFeedProcessor.class.getSimpleName());
+    ```
+
 ## Create the CosmosAsyncClient
 
 Now it's time to create an instance of the `CosmosAsyncClient`, which is the client-side representation of the Azure Cosmos DB service. This client is used to configure and execute requests against the service.
 
-1. In CosmosApp.java, add the following to the beginning of the `CosmosApp` class.
+1. In **CosmosApp.java**, add the following static variable to the beginning of the `CosmosApp` class, underneath the `logger` variable declaration:
 
-    ```csharp
-    private CosmosAsyncClient client;
+    ```java
+    private static CosmosAsyncClient client;
     ```
-
-1. Create a `main` method in the class. In the main method add `System.out.println("Hello world.");`.
 
 1. Create a `basicOperations` method in the class. 
 
@@ -142,9 +172,18 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
      client.close();
     ```
 
-1. Right-click CosmosApp.java and run the program. You should see a message `Hello world.` as the `basicOperations` method is not being called.
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
-1. Copy and paste the following code into the `main` method, overwriting the current `System.out.println("Hello world.");` line.
+    ```bash
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"  
+    ```
+
+    and confirm that the app logs `Hello world` to the terminal.
+
+    This build confirms syntactic correctness - the `basicOperations` method is not being called, so we have not created an Azure Cosmos DB client yet.
+
+1. Copy and paste the following code into the `main` method, overwriting the current `logger.info("Hello world.");` line.
 
     ```java
     try
@@ -163,13 +202,18 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
     }
     ```
 
-1. In VSCode, again run `CosmosApp.java`
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
-    The console displays the following output.
+    ```bash
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"  
+    ```
+
+    and confirm that the app logs to the terminal:
 
     ```output
     Database and collection validation complete
     End of demo, press any key to exit.
     ```
 
-In this unit, you set up the groundwork for your Azure Cosmos DB application. You set up your development environment in Visual Studio Code, created a basic "Hello World" project, connected the project to the Azure Cosmos DB endpoint, and ensured your database and collection exist.
+In this unit, you set up the groundwork for your Azure Cosmos DB application. You set up your Maven application, created a basic "Hello World" project, and extended it to connect the project to the Azure Cosmos DB endpoint.
