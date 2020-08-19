@@ -31,7 +31,8 @@ Add a resource lock to the resource group. To do so:
 1. From the Azure portal, select your resource group, *my-test-rg*.
 1. Under **Settings**, select **Locks**, then select **Add**.
 
-    ![TODO Screenshot of the myRGLocks resource group with the Locks pane displaying.](../media/7-portal-add-lock.png)
+    :::image type="content" source="../media/7-portal-add-lock.png" alt-text="TODO Screenshot of the myRGLocks resource group with the Locks pane displaying.":::
+
 1. Fill in these fields:
 
     | Setting | Value |
@@ -43,7 +44,7 @@ Add a resource lock to the resource group. To do so:
 
     You see that the resource lock is applied to your resource group.
 
-    ![TODO](../media/7-portal-rg-lock.png)
+    :::image type="content" source="../media/7-portal-rg-lock.png" alt-text="TODO.":::
 
 ## Verify that the resource group is protected from deletion
 
@@ -51,16 +52,17 @@ Here, you verify protection by attempting to delete the resource group.
 
 1. From the top of the page, select *my-test-rg* to go to your resource group's overview page.
 
-    ![TODO](../media/7-portal-select-rg.png)
+    :::image type="content" source="../media/7-portal-select-rg.png" alt-text="TODO.":::
+
 1. Select **Delete resource group**.
 
-    ![TODO](../media/7-portal-delete-rg.png)
+    :::image type="content" source="../media/7-portal-delete-rg.png" alt-text="TODO.":::
 
 1. At the prompt, enter *my-test-rg* and then select **OK**.
 
     You see a message that tells you that the resource group is locked and can't be deleted.
 
-    ![Screenshot of the delete locks failed.](../media/delete-locks-failed.png)
+    :::image type="content" source="../media/delete-locks-failed.png" alt-text="Screenshot of the delete locks failed.":::
 
 ## Protect a storage account from accidental deletion
 
@@ -91,11 +93,11 @@ Here you add a storage account to your resource group and see how the lock from 
 1. Select **Go to resource**.
 1. At the top of the page, select **Delete**.
 
-    ![TODO](../media/7-portal-delete-sa.png)
+    :::image type="content" source="../media/7-portal-delete-sa.png" alt-text="TODO.":::
 
     You see a message that tells you the resource or its parent is locked and can't be deleted.
 
-    ![TODO Screenshot of the error deleting the storage account.](../media/error.png)
+    :::image type="content" source="../media/error.png" alt-text="TODO Screenshot of the error deleting the storage account.":::
 
 Although you did not create a lock specifically for the storage account, the lock you created for the parent resource group prevents you from deleting the resource. In other words, the storage account inherits the lock from the parent resource group.
 

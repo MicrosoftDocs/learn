@@ -37,7 +37,7 @@ Let's examine each step in more detail.
 <!--
 TODO: Remove, as it's only text? It's nice eye candy, but can burden localization.
 
-![Three-step process for implementing policy definitions as discussed in the text](../media/policy-process.png)
+:::image type="content" source="../media/policy-process.png" alt-text="Three-step process for implementing policy definitions as discussed in the text.":::
 -->
 
 ### 1. Create a policy definition
@@ -110,9 +110,9 @@ In fact, the **Enable Monitoring in Azure Security Center** initiative contains 
 
 You define initiatives by using the Azure portal or by using command-line tools. From the Azure portal, you can search the list of built-in initiatives that are already provided by Azure or you can create your own custom policy definition.
 
-The following image shows a few example Azure Policy initiatives in the Azure portal. 
+The following image shows a few example Azure Policy initiatives in the Azure portal.
 
-![Screenshot showing Azure portal defining initiatives and definitions](../media/3-define-initiatives.png)
+:::image type="content" source="../media/3-define-initiatives.png" alt-text="Screenshot showing Azure portal defining initiatives and definitions.":::
 
 ### How do I assign an initiative?
 

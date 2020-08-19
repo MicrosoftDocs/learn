@@ -49,7 +49,7 @@ After reviewing their business requirements, Tailwind Traders decides on the fol
 
 Here's an example that shows these tags as they're applied to a virtual machine during provisioning:
 
-![TODO](../media/8-vm-tags.png)
+:::image type="content" source="../media/8-vm-tags.png" alt-text="TODO.":::
 
 The Tailwind Traders team can run queries, for example from PowerShell or the Azure CLI, to list all resources that contain these tags.
 
