@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.review-security-tools-features.describe-dedicated-hosts
+title: Describe Azure Dedicated Hosts
+metadata:
+  title: Describe Azure Dedicated Hosts
+  description: "Describe Azure Dedicated Hosts"
+  ms.date: 07/05/2020
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-describe-dedicated-hosts.md)]
