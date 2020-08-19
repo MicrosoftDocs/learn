@@ -18,11 +18,11 @@ If the VM isn't already JIT-enabled, and isn't assigned to an NSG, and also isn'
 
 The following diagram describes the flow process.
 
-![A diagram that displays the flow logic of the Security Center when determining recommendations for the application of JIT to VMs.](../media/m23-jit-logic-flow.png)
+![A diagram that displays the flow logic of the Security Center when determining recommendations for the application of JIT to VMs.](../media/m23-just-time-logic-flow.png)
 
 Using this logic, Security Center might decide that a VM can benefit from JIT. As a result of this determination, the VM is moved to the **Unhealthy resources** tab in the Security Center **Recommendations** blade for **Management ports of virtual machines should be protected with just-in-time network access control**.
 
-![A screenshot of the Unhealthy resources tab on the Management ports of virtual machines should be protected with just-in-time network access control blade. Four VMs are listed.](../media/m23-unhealthy.png)
+[![A screenshot of the Unhealthy resources tab on the Management ports of virtual machines should be protected with just-in-time network access control blade. Four VMs are listed.](../media/m23-unhealthy.png)](../media/m23-unhealthy.png#lightbox)
 
 > [!TIP]
 > You can access this information in Security Center by selecting the **Compute & apps** link in **RESOURCE SECURITY HYGIENE** section. Then select **Management ports of virtual machines should be protected with just-in-time network access control**.
@@ -33,7 +33,7 @@ You can enable JIT from within Security Center. Use the following procedure:
 
 1. From the list of VMs displaying on the **Unhealthy resources** tab, select any that you want to enable for JIT, and then select **Remediate**.
 
-     ![A screenshot of the JIT VM access configuration blade in the Azure portal. The administrator is configuring the ContosoVM4 VM.](../media/m23-remediate.png)
+     [![A screenshot of the JIT VM access configuration blade in the Azure portal. The administrator is configuring the ContosoVM4 VM.](../media/m23-remediate.png)](../media/m23-remediate.png#lightbox)
 
 2. On the **JIT VM access configuration** blade, for each of the ports listed:
      1. Select and configure the port using one of the following ports:
