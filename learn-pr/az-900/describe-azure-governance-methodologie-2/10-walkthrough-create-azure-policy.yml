@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-azure-governance-methodologies.walkthrough-create-azure-policy
-title: Walkthrough - Create an Azure policy
+title: Exercise - Restrict deployments to a specific location by using Azure Policy
 metadata:
-  title: Walkthrough - Create an Azure policy
   description: "Walkthrough - Create an Azure policy"
   ms.date: 06/21/2020
   author: wwlpublish

@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-azure-governance-methodologies.define-subscription-governance
-title: Define subscription governance
+title: Create a subscription governance strategy
 metadata:
-  title: Define subscription governance
   description: "Define subscription governance"
   ms.date: 06/21/2020
   author: wwlpublish

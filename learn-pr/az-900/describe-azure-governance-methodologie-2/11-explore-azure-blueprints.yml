@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-azure-governance-methodologies.explore-azure-blueprints
-title: Explore Azure blueprints
+title: Govern multiple subscriptions by using Azure Blueprints
 metadata:
-  title: Explore Azure blueprints
   description: "Explore Azure blueprints"
   ms.date: 06/21/2020
   author: wwlpublish

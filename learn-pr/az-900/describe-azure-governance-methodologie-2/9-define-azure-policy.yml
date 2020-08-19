@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-azure-governance-methodologies.define-azure-policy
-title: Define Azure policy
+title: Control and audit your resources by using Azure Policy
 metadata:
-  title: Define Azure policy
   description: "Define Azure policy"
   ms.date: 06/21/2020
   author: wwlpublish
