@@ -26,7 +26,8 @@ when exploring Q#, some "advanced" workflows and applications of Q# actually
 *rely* on the use of host programs. Among these are some uses of the
 domain-specific libraries which you will see in later units—for example,
 importing molecular data files for use with the quantum chemistry library, or
-(something about machine learning lib)
+importing the data and visualizing the classification in with the quantum 
+machine learning library.
 
 Whether it's for curiosity, convenience, or a critical function, the ability to
 use Q# through host programs is a great skill to have on hand. Next, we show you
