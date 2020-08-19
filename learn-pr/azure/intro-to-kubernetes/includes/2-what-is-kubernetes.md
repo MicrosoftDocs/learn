@@ -34,7 +34,7 @@ Kubernetes abstracts away complex container management tasks and provides you wi
 
 The benefits of using Kubernetes are based on the abstraction of tasks.
 
-:::image type="content" source="../media/2-kubernetes-benefits.svg" alt-text="Image that lists three Kubernetes benefits that includes self-healing, dynamic scaling, and rolling updates." border="false":::
+:::image type="content" source="../media/2-kubernetes-benefits.svg" alt-text="Image that lists three Kubernetes benefits that include self-healing, dynamic scaling, and rolling updates." border="false":::
 
 These tasks include:
 
@@ -57,7 +57,7 @@ These tasks include:
 
 With Kubernetes, you can view your datacenter as one large compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed.
 
-:::image type="content" source="../media/2-kubernetes-considerations.svg" alt-text="Image that shows a list of Kubernetes components that including monitoring, microservices, databases and the Docker runtime." border="false":::
+:::image type="content" source="../media/2-kubernetes-considerations.svg" alt-text="Image that shows a list of Kubernetes components that including monitoring, microservices, databases, and the Docker runtime." border="false":::
 
 However, it's important to understand that Kubernetes isn't a single installed application that comes with all possible components needed to manage and orchestrate a containerized solution.
 

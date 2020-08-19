@@ -4,7 +4,7 @@ Containers are an excellent choice when developing software based on microservic
 
 The standard container management runtime focuses on managing individual containers. If you want to scale a complex system with multiple containers working together, it will become challenging. Consider the following aspects you'll have to take care of:
 
-- Configure and meintain load balancing
+- Configure and maintain load balancing
 - Network connectivity
 - Orchestration of the deployment process
 
@@ -17,7 +17,7 @@ Suppose you work at a drone management company. Your company provides a drone tr
 - Web front end: shows maps and information about tracked drones.
 - Cache service: stores frequently requested information displayed on the website.
 - RESTful API: used by tracked drones to send data about their status, such as a GPS location and battery charge levels.
-- Qeue: holds unprocessed data collected by the RESTful API.
+- Queue: holds unprocessed data collected by the RESTful API.
 - Data processing service: fetches and processes data from the queue.
 - NoSQL database: stores processed tracking data and user information captured from the website and the data processing service.
 

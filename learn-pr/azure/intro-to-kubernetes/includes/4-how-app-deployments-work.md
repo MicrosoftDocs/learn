@@ -15,9 +15,9 @@ You can use any of these four Kubernetes object type definitions to deploy a pod
 
 ## What is a pod template?
 
-A pod template allows you to define the configuration of the pod you wish to deploy. The template contains information such as the name of container image, which container registry to use to fetch the images, as well as configuration images such as ports to use. Templates are defined by using YAML in the same way as when you create Docker files.
+A pod template allows you to define the configuration of the pod you wish to deploy. The template contains information such as the name of container image, which container registry to use to fetch the images, and runtime configuration information such as ports to use. Templates are defined by using YAML in the same way as when you create Docker files.
 
-You can use templates to deploy pods manually. However, a manually deployed pod isn't relaunched after it fails, is deleted, or is terminated. To manage the lifecycle of a pod, you need to create a higher level Kubernetes object.
+You can use templates to deploy pods manually. However, a manually deployed pod isn't relaunched after it fails, is deleted, or is terminated. To manage the lifecycle of a pod, you need to create a higher-level Kubernetes object.
 
 ## What is a replication controller?
 
@@ -43,7 +43,7 @@ If you decide to update your application manually, you can terminate all pods an
 
 What you instead want to do is execute a rolling update, where you launch pods running the new version of your application before you terminate the pods running the older version of your application. Rolling updates will launch one pod at a time instead of taking down all the older pods at once. Deployments honor the number of replicas configured in the section that describes information about replica sets. It will maintain the number of pods specified in the replica set as it terminates old pods and launches new pods.
 
-:::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods running on a node with two of the same version and three of a later version." border="false":::
+:::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods running on a node with two of the same versions and three of a later versions." border="false":::
 
 Deployments, by default, provide a rolling update strategy for updating pods. You can also use a re-create strategy. This strategy will terminate pods before launching new pods.
 
