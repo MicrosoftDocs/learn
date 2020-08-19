@@ -81,7 +81,7 @@ To test a runbook, in the Azure portal, use the following procedure:
 
 3. In the **Runbook** blade, select **Edit**.
 
-     ![A screenshot of the Edit Graphical Runbook blade in the Azure portal.](../media/m2-runbooks-2.png)
+     [![A screenshot of the Edit Graphical Runbook blade in the Azure portal.](../media/m2-runbooks-2.png)](../media/m2-runbooks-2.png#lioghtbox)
 
 4. In the selected runbook, select **Test pane**.
 

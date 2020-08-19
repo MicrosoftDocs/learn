@@ -41,7 +41,7 @@ There are some restrictions to using **Run Command**. Because it's designed to q
 
 You can launch a number of PowerShell commands against your Windows VMs.
 
-![A screenshot of the Run command blade for the ContosoVM4 VM. A list of PowerShell commands is listed.](../media/m2-run-script.png)
+[![A screenshot of the Run command blade for the ContosoVM4 VM. A list of PowerShell commands is listed.](../media/m2-run-script.png)](../media/m2-run-script.png#lightbox)
 
 The following table describes the list of commands available for Windows VMs.
 

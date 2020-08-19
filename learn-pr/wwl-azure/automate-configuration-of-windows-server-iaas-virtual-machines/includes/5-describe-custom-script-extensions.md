@@ -23,7 +23,7 @@ To use custom script extensions for Windows, you must be running one of the supp
 - Windows Server 2019
 - Windows Server 2019 Core
 
-## Script Location
+## Script location
 
 You can configure Custom Script Extension to use your Azure Blob storage credentials to access Azure Blob storage. You can store the script anywhere (for example, GitHub or an internal file server), providing the VM can access that end point.
 

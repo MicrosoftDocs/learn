@@ -25,7 +25,7 @@ You can deploy DSC configuration in either push mode or pull mode, as described 
 
 |Mode|Description|
 |----|------------------------------------------------------------|
-|Push| n this mode, you manually send, or *push*, the desired configurations toward one or more managed computers. The LCM component makes sure that the state on each managed computer matches what your configuration specifies.|
+|Push|In this mode, you manually send, or *push*, the desired configurations toward one or more managed computers. The LCM component makes sure that the state on each managed computer matches what your configuration specifies.|
 |Pull|In this mode, a *pull server* holds your configuration information. The LCM component on each managed computer polls the pull server periodically (the default is 15 minutes intervals), to get the latest configuration details. The pull server then sends the details about any configuration changes back to each managed computer.|
 
 > [!TIP]
@@ -38,7 +38,7 @@ You can deploy DSC configuration in either push mode or pull mode, as described 
 
 There are a number of requirements that your environment must meet in order to use DSC with Windows. These are:
 
-- operating system. The managed computers must be running Windows 8.1 or later, or Windows Server 2012 R2 or later.
+- Operating system. The managed computers must be running Windows 8.1 or later, or Windows Server 2012 R2 or later.
 - Windows Remote Management. Windows Remote Management (WinRM) must be enabled on managed computers.
 - Network. If managed computers are in a private network, DSC needs the following port and URLs to communicate with Azure Automation:
 
@@ -83,7 +83,7 @@ To control a VM with DSC, you must first onboard the VM, or *node*, with Azure A
 
 After you have onboarded the appropriate VMs to DSC, you can start using DSC to manage your VMs' desired state.
 
-![A screenshot of the State configuration (DSC) blade in the Azure portal. The administrator has onboarded a single VM: ContosoVM4.](../media/m2-view-state-configuration.png)
+[![A screenshot of the State configuration (DSC) blade in the Azure portal. The administrator has onboarded a single VM: ContosoVM4.](../media/m2-view-state-configuration.png)](../media/m2-view-state-configuration.png#lightbox)
 
 With DSC, you can define the desired state of:
 
@@ -166,4 +166,4 @@ To assign a compiled configuration, regardless of how you created it, use the fo
 
 4. Close the **VM_name** blade, and from the **State configuration (DSC)** blade, monitor the assignment.
 
-    ![A screenshot of the State configuration (DSC) blade in the Azure portal. The administrator has onboarded a single VM: ContosoVM4. It's status displays as Pending.](../media/m2-view-state-configuration-2.png)
+    [![A screenshot of the State configuration (DSC) blade in the Azure portal. The administrator has onboarded a single VM: ContosoVM4. It's status displays as Pending.](../media/m2-view-state-configuration-2.png)](../media/m2-view-state-configuration-2.png#lightbox)
