@@ -4,7 +4,7 @@ Before exploring how to train a deep neural network (DNN) machine learning model
 
 For example, suppose your observation consists of some measurements of a penguin.
 
-![A penguin with a ruler and scales](../media/penguin.png)
+![A penguin with a ruler and weighing scales](../media/penguin.png)
 
 Specifically, the measurements are:
 
