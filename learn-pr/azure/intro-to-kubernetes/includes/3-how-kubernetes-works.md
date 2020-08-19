@@ -14,7 +14,7 @@ Recall from earlier that an orchestrator is a system that deploys and manages ap
 
 :::image type="content" source="../media/3-cluster-arch-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
 
-A Kubernetes cluster contains at least one main node and and one or more nodes. Both the control planes and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads.
+A Kubernetes cluster contains at least one main node and one or more nodes. Both the control planes and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads.
 
 It's also possible to run Microsoft workloads by using Windows Server 2019 or later on cluster nodes. For example, assume that the data processing service in the drone tracking application is written as a .NET 4.5 application that uses specific Windows OS API calls. This service can run only on nodes that run a Windows Server OS.
 
@@ -35,6 +35,10 @@ A node in a Kubernetes cluster is where your compute workloads run. Each node co
 
 ## Services that run on a control plane
 
+Kubernetes relies on several administrative services running on the control plane. These services manage aspects such as cluster component communication, workload scheduling, and cluster state persistence.
+
+:::image type="content" source="../media/3-cluster-arch-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
+
 The following services make up the control plane for a Kubernetes cluster:
 
 - API server
@@ -42,8 +46,6 @@ The following services make up the control plane for a Kubernetes cluster:
 - Scheduler
 - Controller manager
 - Cloud controller manager
-
-:::image type="content" source="../media/3-cluster-arch-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 ### What is the API server?
 
@@ -57,7 +59,7 @@ For example, assume that you want to increase the number of instances of your ap
 
 ### What is the backing store?
 
-The backing store is a persistence store that your Kubernetes cluster uses to save the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state as well as the desired state of all objects within your cluster.
+The backing store is a persistence store that your Kubernetes cluster uses to save the complete configuration of a Kubernetes cluster. Kubernetes uses a high-availability, distributed, and reliable key-value store called `etcd`. This key-value store stores the current state and the desired state of all objects within your cluster.
 
 In a production Kubernetes cluster, the official Kubernetes guidance is to have three to five replicated instances of the `etcd` database for high availability.
 
@@ -84,11 +86,11 @@ The cloud controller manager integrates with the underlying cloud technologies i
 
 ## Services that run on a node
 
-The are several services that runs on a Kubernetes node to control how workloads run.
+The are several services that run on a Kubernetes node to control how workloads run.
 
 :::image type="content" source="../media/3-cluster-arch-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on a Kubernetes node." border="false":::
 
-The following services runs on the Kubernetes node:
+The following services run on the Kubernetes node:
 
 - Kubelet
 - Kube-proxy
