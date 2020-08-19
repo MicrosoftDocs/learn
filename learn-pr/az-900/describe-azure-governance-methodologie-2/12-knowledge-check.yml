@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check.md)]
 quiz:
-  title: "Knowledge check"
+  title: Check your knowledge
   questions:
   - content: How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
     choices:
@@ -40,12 +40,12 @@ quiz:
       explanation: Azure RBAC enables you to create roles that define access permissions, but it doesn't enable you to define allowed virtual machine SKU sizes.
   - content: Which is likely the best way for Tailwind Traders to identify which billing department each Azure resource belongs to?
     choices:
-    - content: Apply a tag to each resource that includes the associated billing department.
-      isCorrect: true
-      explanation: Tags provide extra information, or metadata, about your resources. The team might create a tag that's named **BillingDept** whose value would be the name of the billing department. You can use Azure Policy to ensure that the proper tags are assigned when resources are provisioned.
     - content: Track resource usage in a spreadsheet.
       isCorrect: false
       explanation: This form of tracking is manual and prone to errors. Is there a more automated way to track resource usage?
     - content: Split the deployment into separate Azure subscriptions, where each subscription belongs to its own billing department.
       isCorrect: false
       explanation: Although you can use subscriptions to separate billing by department, is there another method that allows all resources to stay within the same subscription?
+    - content: Apply a tag to each resource that includes the associated billing department.
+      isCorrect: true
+      explanation: Tags provide extra information, or metadata, about your resources. The team might create a tag that's named **BillingDept** whose value would be the name of the billing department. You can use Azure Policy to ensure that the proper tags are assigned when resources are provisioned.
