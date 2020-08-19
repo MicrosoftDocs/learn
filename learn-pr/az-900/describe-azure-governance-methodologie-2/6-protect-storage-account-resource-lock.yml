@@ -8,6 +8,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/6-protect-storage-account-resource-lock.md)]
