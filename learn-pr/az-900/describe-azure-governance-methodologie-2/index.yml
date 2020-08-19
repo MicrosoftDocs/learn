@@ -35,7 +35,6 @@ units:
 - learn.describe-azure-governance-methodologies.explore-cloud-adoption-framework
 - learn.describe-azure-governance-methodologies.define-subscription-governance
 - learn.describe-azure-governance-methodologies.explore-role-based-access-control-rbac
-- learn.describe-azure-governance-methodologies.walkthrough-manage-access-with-rbac
 - learn.describe-azure-governance-methodologies.define-resource-locks
 - learn.describe-azure-governance-methodologies.walkthrough-manage-resource-locks
 - learn.describe-azure-governance-methodologies.define-resource-tags
