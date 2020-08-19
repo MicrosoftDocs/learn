@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.automate-configuration-of-windows-server-iaas-vms.implement-azure-automation-with-dsc
+title: Implement Azure automation with DSC
+metadata:
+  title: Implement Azure automation with DSC
+  description: "Implement Azure automation with DSC"
+  ms.date: 08/21/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 14
+content: |
+  [!include[](includes/3-implement-azure-automation-dsc.md)]
