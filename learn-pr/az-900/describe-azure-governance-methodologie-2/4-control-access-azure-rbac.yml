@@ -4,9 +4,9 @@ title: Control access to cloud resources by using Azure role-based access contro
 metadata:
   title: Control access to cloud resources by using Azure role-based access control (Azure RBAC)
   description: Learn how Azure RBAC enables you to define who can access cloud resources.
-  ms.date: 06/21/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

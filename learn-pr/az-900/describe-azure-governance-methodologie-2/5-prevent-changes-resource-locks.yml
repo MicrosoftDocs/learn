@@ -3,9 +3,9 @@ uid: learn.describe-azure-governance-methodologies.5-prevent-changes-resource-lo
 title: Prevent accidental changes by using resource locks
 metadata:
   description: Learn how resource locks prevent accidental deletion of your Azure resources.
-  ms.date: 06/21/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
