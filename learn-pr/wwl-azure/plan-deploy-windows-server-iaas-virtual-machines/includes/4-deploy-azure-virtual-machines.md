@@ -36,7 +36,7 @@ az vm create \
     --admin-username azureuser
 ```
 
-![A screenshot of the Azure CLI with the preceding command completed. Output indicates the VM was successfully deployed.](../media/m8-add-shell-1.png)
+[![A screenshot of the Azure CLI with the preceding command completed. Output indicates the VM was successfully deployed.](../media/m8-add-shell-1.png)](../media/m8-add-shell-1.png#lightbox)
 
 ## Additional reading
 

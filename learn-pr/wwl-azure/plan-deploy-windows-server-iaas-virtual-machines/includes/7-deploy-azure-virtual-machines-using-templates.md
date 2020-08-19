@@ -1,7 +1,7 @@
 
 Contoso can use Azure Resource Manager to help deploy their VMs. Azure Resource Manager supports a declarative deployment methodology based on deployment templates. The resulting deployment populates the target resource group or the subscription according to the template's content.
 
-### Benefits of templates
+## Benefits of templates
 
 Compared to traditional deployment methods that rely on the graphical user interface (GUI) or scripting and programming languages, templates offer some unique benefits. Similar to scripts, they facilitate deployment of multi-component solutions in an automated manner. However, unlike scripts, they don't explicitly specify individual steps required to provision these solutions. Instead, they simply define their intended end state. By doing this, they rely on the intelligence built into the Azure platform to deploy all necessary resources in the most optimal way. This results in minimized deployment time and reduces the potential for errors. If needed, you have the option to define dependencies between resources to control the resource-provisioning sequence.
 
@@ -19,7 +19,7 @@ An Azure Resource Manager template contains a JSON-formatted definition of one o
 - Whether there are dependencies between resources.
 - When you will specify values of resource properties. While you can include these values in the template, it's generally preferable to specify them during deployment by using their corresponding parameters.
 
-## Authoring Azure Resource Manager templates
+## Author Azure Resource Manager templates
 
 A resource template consists of the following sections:
 
@@ -47,7 +47,7 @@ The following table describes the sections in the preceding code sample.
 |**resources**|Resources that will be provisioned or modified as the result of the deployment.|
 |**outputs**|Values returned by the deployment.|
 
-### Deploying Azure VMs by using Azure Resource Manager templates
+## Deploy Azure VMs by using Azure Resource Manager templates
 
 After you have an Azure Resource Manager template, you can deploy its resources by using any of the methods described in the following table.
 
