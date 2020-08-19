@@ -2,8 +2,8 @@
 uid: learn.wwl.customize-windows-server-iaas-vm-images.create-managed-image-of-generalized-vm-azure
 title: Create a managed image of a generalized virtual machine in Azure
 metadata:
-  title: Create a managed image of a generalized Virtual Machine in azure
-  description: "Create a managed image of a generalized Virtual Machine in azure"
+  title: Create a managed image of a generalized virtual machine in Azure
+  description: "Create a managed image of a generalized virtual machine in Azure"
   ms.date: 08/22/2020
   author: wwlpublish
   ms.author: tonyj

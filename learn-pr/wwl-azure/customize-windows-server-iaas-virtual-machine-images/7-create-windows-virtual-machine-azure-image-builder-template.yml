@@ -2,8 +2,8 @@
 uid: learn.wwl.customize-windows-server-iaas-vm-images.create-windows-vm-using-azure-image-builder-template
 title: Create a windows Virtual Machine using Azure Image Builder template
 metadata:
-  title: Create a windows Virtual Machine using azure image builder template
-  description: "Create a windows Virtual Machine using azure image builder template"
+  title: Create a windows Virtual Machine using Azure Image Builder template
+  description: "Create a windows Virtual Machine using Azure Image Builder template"
   ms.date: 08/22/2020
   author: wwlpublish
   ms.author: tonyj
