@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.summary
+uid: learn.describe-azure-governance-methodologies.12-summary
 title: Summary
 metadata:
   title: Summary
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 1
 content: |
-  [!include[](includes/13-summary.md)]
+  [!include[](includes/12-summary.md)]

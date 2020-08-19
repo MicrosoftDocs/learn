@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.explore-cloud-adoption-framework
+uid: learn.describe-azure-governance-methodologies.2-accelerate-cloud-adoption-framework
 title: Accelerate your cloud adoption journey by using the Cloud Adoption Framework for Azure
 metadata:
   description: "Explore the Cloud Adoption Framework"
@@ -11,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-explore-cloud-adoption-framework.md)]
+  [!include[](includes/2-accelerate-cloud-adoption-framework.md)]

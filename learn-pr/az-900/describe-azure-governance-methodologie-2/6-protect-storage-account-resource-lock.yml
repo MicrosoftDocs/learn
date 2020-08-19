@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.walkthrough-manage-resource-locks
+uid: learn.describe-azure-governance-methodologies.6-protect-storage-account-resource-lock
 title: Exercise - Protect a storage account from accidental deletion by using a resource lock
 metadata:
   description: "Walkthrough - Manage resource locks"
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-walkthrough-manage-resource-locks.md)]
+  [!include[](includes/6-protect-storage-account-resource-lock.md)]

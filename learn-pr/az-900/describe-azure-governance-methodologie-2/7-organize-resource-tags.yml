@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.define-resource-tags
+uid: learn.describe-azure-governance-methodologies.7-organize-resource-tags
 title: Organize your Azure resources by using tags
 metadata:
   description: "Define resource tags"
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-define-resource-tags.md)]
+  [!include[](includes/7-organize-resource-tags.md)]

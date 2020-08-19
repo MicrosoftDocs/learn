@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.walkthrough-create-azure-policy
+uid: learn.describe-azure-governance-methodologies.9-restrict-location-azure-policy
 title: Exercise - Restrict deployments to a specific location by using Azure Policy
 metadata:
   description: "Walkthrough - Create an Azure policy"
@@ -11,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/10-walkthrough-create-azure-policy.md)]
+  [!include[](includes/9-restrict-location-azure-policy.md)]

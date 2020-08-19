@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.explore-role-based-access-control-rbac
+uid: learn.describe-azure-governance-methodologies.4-control-access-azure-rbac
 title: Control access to cloud resources by using Azure role-based access control
 metadata:
   title: Control access to cloud resources by using Azure role-based access control (Azure RBAC)
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-explore-role-based-access-control.md)]
+  [!include[](includes/4-control-access-azure-rbac.md)]

@@ -31,17 +31,17 @@ roles:
 products:
 - azure
 units:
-- learn.describe-azure-governance-methodologies.introduction
-- learn.describe-azure-governance-methodologies.explore-cloud-adoption-framework
-- learn.describe-azure-governance-methodologies.define-subscription-governance
-- learn.describe-azure-governance-methodologies.explore-role-based-access-control-rbac
-- learn.describe-azure-governance-methodologies.define-resource-locks
-- learn.describe-azure-governance-methodologies.walkthrough-manage-resource-locks
-- learn.describe-azure-governance-methodologies.define-resource-tags
-- learn.describe-azure-governance-methodologies.define-azure-policy
-- learn.describe-azure-governance-methodologies.walkthrough-create-azure-policy
-- learn.describe-azure-governance-methodologies.explore-azure-blueprints
-- learn.describe-azure-governance-methodologies.knowledge-check
-- learn.describe-azure-governance-methodologies.summary
+- learn.describe-azure-governance-methodologies.1-introduction
+- learn.describe-azure-governance-methodologies.2-accelerate-cloud-adoption-framework
+- learn.describe-azure-governance-methodologies.3-create-subscription-governance-strategy
+- learn.describe-azure-governance-methodologies.4-control-access-azure-rbac
+- learn.describe-azure-governance-methodologies.5-prevent-changes-resource-locks
+- learn.describe-azure-governance-methodologies.6-protect-storage-account-resource-lock
+- learn.describe-azure-governance-methodologies.7-organize-resource-tags
+- learn.describe-azure-governance-methodologies.8-control-audit-resources-azure-policy
+- learn.describe-azure-governance-methodologies.9-restrict-location-azure-policy
+- learn.describe-azure-governance-methodologies.10-govern-subscriptions-azure-blueprints
+- learn.describe-azure-governance-methodologies.11-knowledge-check
+- learn.describe-azure-governance-methodologies.12-summary
 badge:
   uid: learn.describe-azure-governance-methodologies.badge

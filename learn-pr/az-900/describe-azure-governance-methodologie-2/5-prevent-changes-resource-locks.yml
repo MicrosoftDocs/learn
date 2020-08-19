@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.define-resource-locks
-title: Prevents accidental changes by using resource locks
+uid: learn.describe-azure-governance-methodologies.5-prevent-changes-resource-locks
+title: Prevent accidental changes by using resource locks
 metadata:
   description: "Define resource locks"
   ms.date: 06/21/2020
@@ -11,4 +11,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-define-resource-locks.md)]
+  [!include[](includes/5-prevent-changes-resource-locks.md)]
