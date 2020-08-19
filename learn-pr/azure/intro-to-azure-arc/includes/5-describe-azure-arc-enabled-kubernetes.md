@@ -1,7 +1,3 @@
-<!-- 5 minutes to read
-Title for unit:
-Describe Azure Arc-enabled Kubernetes
--->
 
 In addition to managing servers, you can use Azure Arc to configure Kubernetes clusters. These clusters can be hosted on Azure or elsewhere.
 

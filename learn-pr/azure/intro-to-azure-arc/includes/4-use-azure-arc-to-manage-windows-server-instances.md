@@ -1,7 +1,3 @@
-<!-- topic title: Use Azure Arc to manage Windows Server instances. -->
-
-
-<!-- 4 minutes to read -->
 
 After you onboard a Windows Server computer, you can use Azure Arc to manage and configure that device. A number of options are available, described in the following table, and others will be available soon.
 

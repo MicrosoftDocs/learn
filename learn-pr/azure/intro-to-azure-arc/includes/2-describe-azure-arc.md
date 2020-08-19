@@ -1,6 +1,3 @@
-<!-- Describe Azure Arc. -->
-
-<!--3 minutes to read-->
 
 *Azure Arc* is a service that provides a set of technologies for organizations such as Contoso that want to simplify their complex and distributed environments. Azure Arc provides a centralized, unified, and self-service approach to managing:
 

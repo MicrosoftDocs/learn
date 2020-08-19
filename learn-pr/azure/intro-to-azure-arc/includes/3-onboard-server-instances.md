@@ -1,6 +1,3 @@
-<!--  topic title: Onboard server instances. -->
-
-<!--6 minutes to read-->
 
 Azure Arc expands the support for Resource Manager to resources that run outside of Azure. This means that a physical server or a VM that's running in an on-premises datacenter can be registered with Resource Manager and presented as a compute resource to the fabric controller. This applies to any server that's running the Windows Server OS or Linux server in an on-premises datacenter or that's hosted by Azure or another cloud provider.
 
@@ -13,7 +10,7 @@ Before a physical server or VM can register, you must install the Azure Connecte
 
 For smaller-scale deployments, you can use the onboarding script that's available on the Azure portal.
 
-![Screenshot that depicts the Select a method page of the Azure Arc Machines node. Two options are available: add machines using an interactive script and add machines at scale.](../media/gen-script.png)
+:::image type="content" source="../media/gen-script.png" alt-text="Screenshot that depicts the Select a method blade of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale." border="false":::
 
 ### Azure Arc for servers agent
 
@@ -56,7 +53,7 @@ A typical way to onboard a server is to generate and download a script from the 
 3. On the **Select a method** page, select **Generate script**.
 4. On the **Generate script** page, configure the subscription, resource group, region, operating system (OS), and optionally, the proxy server URL. Then select **Review + generate**.
 
-    ![Screenshot that depicts the Generate script page with a Windows PowerShell script on it.](../media/gen-script2.png)
+    :::image type="content" source="../media/gen-script2.png" alt-text="Screenshot that depicts the Generate script page with a Windows PowerShell script on it." border="false":::
 
     > [!NOTE]
     > Although the script displayed after step 4 is Windows PowerShell, you can also use this procedure to onboard Linux servers.
@@ -70,4 +67,4 @@ In larger environments, you can use the Desired State Configuration (DSC) manage
 
 When you onboard a server, it becomes a connected machine and is represented by a corresponding Azure resource. That resource has a unique **resource ID** property. It belongs to a resource group inside a subscription, and it can benefit from Resource Manager-based mechanisms such as Azure Policy and tags.
 
-![Screenshot that depicts the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed.](../media/onboard.png)
+:::image type="content" source="../media/onboard.png" alt-text="Screenshot that depicts the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed." border="false":::

@@ -1,7 +1,3 @@
-<!-- topic title: Use Azure Policy with Azure Arc. -->
-
-
-<!-- 6 minutes to read -->
 
 Azure Arc enables you to extend some capabilities of *Azure Policy* to operating systems of computers that are in on-premises datacenters or are hosted on Azure or another cloud provider. This functionality applies to auditing the compliance of settings for the OS, applications, and environment.
 
@@ -47,7 +43,7 @@ To manage and assign Azure Arc policies for a computer, browse to Azure Arc in t
 - Scope and any exclusions from the scope of the policy.
 - Policy definition.
 
-    ![The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies.](../media/assign-policy1.png)
+    :::image type="content" source="../media/assign-policy1.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
 
 - Assignment name.
 - Description.
@@ -58,11 +54,11 @@ To manage and assign Azure Arc policies for a computer, browse to Azure Arc in t
 
 You can select and apply a number of Kubernetes policies.
 
-![The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies.](../media/assign-policy2.png)
+:::image type="content" source="../media/assign-policy2.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
 
 After assigning policies, you can review the policy settings on the selected server from Azure Arc.
 
-![The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other.](../media/review-policies.png)
+:::image type="content" source="../media/review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
 
 ## Additional reading
 
