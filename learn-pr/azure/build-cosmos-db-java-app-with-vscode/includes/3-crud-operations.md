@@ -101,18 +101,18 @@ Once you have those classes created to represent your users, you'll create new u
 1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
 
     ```csharp
-    private async Task CreateUserDocumentIfNotExists(string databaseName, string collectionName, User user)
+    private async Task CreateUserDocumentIfNotExists(string databaseName, string containerName, User user)
     {
         try
         {
-            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
+            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
             this.WriteToConsoleAndPromptToContinue("User {0} already exists in the database", user.Id);
         }
         catch (DocumentClientException de)
         {
             if (de.StatusCode == HttpStatusCode.NotFound)
             {
-                await this.client.CreateDocumentAsync(UriFactory.CreateDocumentCollectionUri(databaseName, collectionName), user);
+                await this.client.CreateDocumentAsync(UriFactory.CreateDocumentContainerUri(databaseName, containerName), user);
                 this.WriteToConsoleAndPromptToContinue("Created User {0}", user.Id);
             }
             else
@@ -211,7 +211,7 @@ Once you have those classes created to represent your users, you'll create new u
     The terminal will display output as the application creates each new user document. Press any key to complete the program.
 
     ```output
-    Database and collection validation complete
+    Database and container validation complete
     Created User 1
     Press any key to continue ...
     Created User 2
@@ -224,11 +224,11 @@ Once you have those classes created to represent your users, you'll create new u
 1. To read documents from the database, copy in the following code and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
 
     ```csharp
-    private async Task ReadUserDocument(string databaseName, string collectionName, User user)
+    private async Task ReadUserDocument(string databaseName, string containerName, User user)
     {
         try
         {
-            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
+            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
             this.WriteToConsoleAndPromptToContinue("Read user {0}", user.Id);
         }
         catch (DocumentClientException de)
@@ -260,7 +260,7 @@ Once you have those classes created to represent your users, you'll create new u
     The terminal displays the following output, where the output "Read user 1" indicates the document was retrieved.
 
     ```output
-    Database and collection validation complete
+    Database and container validation complete
     User 1 already exists in the database
     Press any key to continue ...
     User 2 already exists in the database
@@ -277,11 +277,11 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 1. Copy and paste the **ReplaceUserDocument** method after the **ReadUserDocument** method in the Program.cs file.
 
     ```csharp
-    private async Task ReplaceUserDocument(string databaseName, string collectionName, User updatedUser)
+    private async Task ReplaceUserDocument(string databaseName, string containerName, User updatedUser)
     {
         try
         {
-            await this.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, updatedUser.Id), updatedUser, new RequestOptions { PartitionKey = new PartitionKey(updatedUser.UserId) });
+            await this.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, updatedUser.Id), updatedUser, new RequestOptions { PartitionKey = new PartitionKey(updatedUser.UserId) });
             this.WriteToConsoleAndPromptToContinue("Replaced last name for {0}", updatedUser.LastName);
         }
         catch (DocumentClientException de)
@@ -314,7 +314,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     The terminal displays the following output, where the output "Replaced last name for Suh" indicates the document was replaced.
 
     ```output
-    Database and collection validation complete
+    Database and container validation complete
     User 1 already exists in the database
     Press any key to continue ...
     Replaced last name for Suh
@@ -331,11 +331,11 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 1. Copy and paste the **DeleteUserDocument** method underneath your **ReplaceUserDocument** method.
 
     ```csharp
-    private async Task DeleteUserDocument(string databaseName, string collectionName, User deletedUser)
+    private async Task DeleteUserDocument(string databaseName, string containerName, User deletedUser)
     {
         try
         {
-            await this.client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(databaseName, collectionName, deletedUser.Id), new RequestOptions { PartitionKey = new PartitionKey(deletedUser.UserId) });
+            await this.client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, deletedUser.Id), new RequestOptions { PartitionKey = new PartitionKey(deletedUser.UserId) });
             Console.WriteLine("Deleted user {0}", deletedUser.Id);
         }
         catch (DocumentClientException de)
@@ -367,7 +367,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     The terminal displays the following output, where the output "Deleted user 1" indicates the document was deleted.
 
     ```output
-    Database and collection validation complete
+    Database and container validation complete
     User 1 already exists in the database
     Press any key to continue ...
     Replaced last name for Suh

@@ -167,7 +167,7 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
      database = client.getDatabase("Users");
      container = database.getContainer("WebCustomers");            
 
-     System.out.println("Database and collection validation complete");
+     System.out.println("Database and container validation complete");
 
      client.close();
     ```
@@ -212,7 +212,7 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
     and confirm that the app logs to the terminal:
 
     ```output
-    Database and collection validation complete
+    Database and container validation complete
     End of demo, press any key to exit.
     ```
 

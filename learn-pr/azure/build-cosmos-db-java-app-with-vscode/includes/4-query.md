@@ -20,14 +20,14 @@ The following table shows how LINQ queries are translated into SQL.
 1. The following sample shows how a query could be performed in SQL, LINQ, or LINQ lambda from your .NET code. Copy the code and add it to the end of the Program.cs file.
 
     ```csharp
-    private void ExecuteSimpleQuery(string databaseName, string collectionName)
+    private void ExecuteSimpleQuery(string databaseName, string containerName)
     {
         // Set some common query options
         FeedOptions queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
 
         // Here we find nelapin via their LastName
         IQueryable<User> userQuery = this.client.CreateDocumentQuery<User>(
-                UriFactory.CreateDocumentCollectionUri(databaseName, collectionName), queryOptions)
+                UriFactory.CreateDocumentContainerUri(databaseName, containerName), queryOptions)
                 .Where(u => u.LastName == "Pindakova");
 
         // The query is executed synchronously here, but can also be executed asynchronously via the IDocumentQuery<T> interface
@@ -39,7 +39,7 @@ The following table shows how LINQ queries are translated into SQL.
 
         // Now execute the same query via direct SQL
         IQueryable<User> userQueryInSql = this.client.CreateDocumentQuery<User>(
-                UriFactory.CreateDocumentCollectionUri(databaseName, collectionName),
+                UriFactory.CreateDocumentContainerUri(databaseName, containerName),
                 "SELECT * FROM User WHERE User.lastName = 'Pindakova'", queryOptions );
 
         Console.WriteLine("Running direct SQL query...");
