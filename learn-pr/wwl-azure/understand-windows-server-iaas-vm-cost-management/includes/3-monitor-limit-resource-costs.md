@@ -27,7 +27,7 @@ Advisor makes cost recommendations, including those described in the following t
 Advisor considers shutting down VMs when the following statements are true:
 
 - 95 percent of the time, the maximum value of CPU utilization is less than 3 percent.
-- Network utilization is less than 2 percent over a seven-day period
+- Network utilization is less than 2 percent over a seven-day period.
 - Memory pressure is lower than the threshold values.
   
 Advisor considers resizing VMs when it's possible to fit the current load in a smaller SKU (within the same SKU family), or a smaller number of instances providing:
@@ -49,15 +49,15 @@ To use Azure Advisor to review cost recommendations, use the following procedure
      > [!NOTE]
      > Advisor might not return any cost recommendations, either because assessments might not have completed, or because Advisor doesn't have any.
 
-     ![Screenshot of Azure portal Advisor blade with five category boxes for recommendations: Cost, Security, Reliability, Operational excellence, and Performance.](../media/m21-advisor-recommendations.png)
+     [![Screenshot of Azure portal Advisor blade with five category boxes for recommendations: Cost, Security, Reliability, Operational excellence, and Performance.](../media/m21-advisor-recommendations.png)](../media/m21-advisor-recommendations.png#lightbox)
 
 4. Select the **Cost** tile. This action takes you to detailed recommendations from Advisor.
 
-     ![Screenshot of Azure portal Advisor recommendations blade with the cost recommendations. Currently there are two high-impact VM recommendations for using reserved instances, and right-size or shutdown of underutilized VMs.](../media/m21-advisor-cost-recommendations.png)
+     [![Screenshot of Azure portal Advisor recommendations blade with the cost recommendations. Currently there are two high-impact VM recommendations for using reserved instances, and right-size or shutdown of underutilized VMs.](../media/m21-advisor-cost-recommendations.png)](../media/m21-advisor-cost-recommendations.png#lightbox)
 
 5. Selecting a recommendation takes you to the details for that specific recommendation. You can then take a specific action, such as resizing VMs to reduce cost.
 
-     ![Screenshot of Azure portal Advisor with several specific VMs to resize or shut down, and their potential savings.](../media/m21-advisor-resize-virtual-machine.png)
+     [![Screenshot of Azure portal Advisor with several specific VMs to resize or shut down, and their potential savings.](../media/m21-advisor-resize-virtual-machine.png)](../media/m21-advisor-resize-virtual-machine.png#lightbox)
 
 ## What is Azure Cost Management?
 
@@ -70,11 +70,11 @@ You can use Azure *Cost Management* to gain greater insights into where your gre
 5. In the **Date** field, select the period that you want to review.
 6. You can also choose between the types of charts you want to use to review your costs. The default is **Area**, but you can also choose **Line**, **Column**, or **Table**.
 
-![Screenshot of Azure portal Cost analysis section of the Cost Management pane in which an area cost chart is rising steadily.](../media/m21-cost-management.png)
+[![Screenshot of Azure portal Cost analysis section of the Cost Management pane in which an area cost chart is rising steadily.](../media/m21-cost-management.png)](../media/m21-cost-management.png#lightbox)
 
 If you want to configure budgets to control spending, in the **Cost management** section, select **Budgets**. You can then create a budget for various Azure resources by selecting **+ Add**. If you also want to configure an alert for spending, select the **Set alerts** tab. From there you select the action group that is used when your action is triggered. Action groups define the appropriate action to be taken when your budget limit is approached.
 
-![Screenshot of Azure portal Set alerts tab in the Create budget blade.](../media/m21-budget-alert.png)
+[![Screenshot of Azure portal Set alerts tab in the Create budget blade.](../media/m21-budget-alert.png)](../media/m21-budget-alert.png#lightbox)
 
 > [!NOTE]
 > Although you can set a budget and create alerts when spending approaches your budgetary limit, this doesn't prevent charges from being incurred. It merely alerts you to your current spending.

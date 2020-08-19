@@ -6,7 +6,7 @@ With Azure's cloud-based subscription model, most of Contoso's IT costs are oper
 
 The Pricing calculator is a webpage that you can use to get estimates of Azure costs. The calculator provides links that enable you to select the specific services that you intend to use, and then determine estimated costs based on planned configurations.
 
-![A screenshot of the Azure Pricing calculator webpage.](../media/m21-price-calculator.png)
+[![A screenshot of the Azure Pricing calculator webpage.](../media/m21-price-calculator.png)](../media/m21-price-calculator.png#lightbox)
 
 > [!TIP]
 > You can access the Pricing calculator here. `https://azure.microsoft.com/pricing/calculator/`.
@@ -30,7 +30,7 @@ Products are grouped into collections, such as Compute, Networking, Storage, and
 
 These example scenarios identify all the components that you'll need to create the scenario, and then provide an easy way to estimate the costs for that scenario.
 
-![A screenshot of the Azure Pricing calculator webpage. The administrator has selected the Example scenarios tab, and chosen the Real-time analytics scenario. In the details pane, an diagram represents the scenario's components together with a text list of those components.](../media/m21-price-calculator-2.png)
+[![A screenshot of the Azure Pricing calculator webpage. The administrator has selected the Example scenarios tab, and chosen the Real-time analytics scenario. In the details pane, an diagram represents the scenario's components together with a text list of those components.](../media/m21-price-calculator-2.png)](../media/m21-price-calculator-2.png#lightbox)
 
 ## Create an estimate
 
@@ -43,7 +43,7 @@ To create an estimate, browse to the **Pricing calculator** webpage. Sign in, so
 5. You can now configure the details. For example, in the **Virtual Machines** section, select the **OPERATING SYSTEM**, **TYPE**, **TIER**, **INSTANCE**, and number of **VIRTUAL MACHINES**.
 6. In the **Savings options** section, select any **Compute** savings. For example, select **1 year reserved (~32% discount)**.
 
-    ![A screenshot of the Azure Pricing calculator site. The administrator has added a number of components, as described in the preceding text, and is reviewing the Your Estimate details.](../media/m21-price-calculator-3.png)
+    [![A screenshot of the Azure Pricing calculator site. The administrator has added a number of components, as described in the preceding text, and is reviewing the Your Estimate details.](../media/m21-price-calculator-3.png)](../media/m21-price-calculator-3.png#lightbox)
 
 7. Scroll down and review the information for additional products and components. In this case, review the **Virtual Network**, **Azure DNS**, and **Azure Bastion** pricing.
 8. Make any changes to reflect your specific configuration.
@@ -52,12 +52,12 @@ To create an estimate, browse to the **Pricing calculator** webpage. Sign in, so
 
 You can choose to save the estimate for future reference. If you save the estimate, when you return to **Pricing calculator** you'll find the saved estimate on the **Saved estimates** tab.
 
-![A screenshot of the Azure Pricing calculator site. The administrator is reviewing the estimate monthly cost. Options are available to Save and Export the estimate](../media/m21-price-calculator-4.png)
+[![A screenshot of the Azure Pricing calculator site. The administrator is reviewing the estimate monthly cost. Options are available to Save and Export the estimate](../media/m21-price-calculator-4.png)](../media/m21-price-calculator-4.png#lightbox)
 
 > [!TIP]
 > You can also export the estimate to Microsoft Excel by selecting **Export**.
 
-![A screenshot of Excel. The administrator is reviewing the estimate in a workbook in Excel.](../media/m21-price-calculator-5.png)
+[![A screenshot of Excel. The administrator is reviewing the estimate in a workbook in Excel.](../media/m21-price-calculator-5.png)](../media/m21-price-calculator-5.png#lightbox)
 
 ### Try it with Pricing calculator
 
