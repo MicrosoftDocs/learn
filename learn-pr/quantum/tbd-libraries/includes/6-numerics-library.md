@@ -2,15 +2,7 @@ In this unit we will introduce to you the Numerics library a
 
 ## Introduction to the Numerics library
 
-Q# is a language that offers high and low level capabilities. For example,
-you can use Q# to select individually what gates to apply directly at the qubit
-level (`H`, `CNOT`, etc), but you can also use the already built-in operations
-
-to perform high-level operations without worrying about the specific gates. An
-example of this high-level functionality would be the quantum Fourier transform
-operation,
-[`QFT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.qft), which is used in Shor's algorithm, for example, as you might have learned in module []().
-
+Q# is a language that offers high and low level capabilities. For example, you can use Q# to select individually what gates to apply directly at the qubit level (`H`, `CNOT`, etc), but you can also use the already built-in operations to perform high-level operations without worrying about the specific gates. An example of this high-level functionality would be the quantum Fourier transform operation, [`QFT`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.qft), which is used in Shor's algorithm, for example, as you might have learned in module []().
 
 The Numerics library provides you a set of arithmetic operations and fixed-point
 arithmetic operations for integers encoded in qubit registers. You can leverage
