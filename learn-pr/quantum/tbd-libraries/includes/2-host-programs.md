@@ -332,7 +332,7 @@ Histogram:
 ```
 
 Congratulations! Now you can launch your own quantum casino. Jokes aside, this
-is a very simple representation of how the quantum kit offers high
+is a very simple representation of how the QDK offers high
 interoperability between different environments. This means that you can use
 the skills and tools that you have from other environments and combine them
 with Q# and the power of quantum computing.
