@@ -27,12 +27,16 @@ levels:
 - beginner
 roles:
 - administrator
+- developer
 - business-owner
 - business-user
 - student
 - technology-manager
 products:
 - azure
+- azure-policy
+- azure-blueprints
+- azure-rbac
 units:
 - learn.describe-azure-governance-methodologies.1-introduction
 - learn.describe-azure-governance-methodologies.2-accelerate-cloud-adoption-framework
