@@ -3,7 +3,7 @@ capabilities of the Quantum Development Kit. The library is an
 Q#, that gives you the ability to perform arithmetic operations with quantum
 computers and qubit registers.
 
-## Introduction to the numerics library
+## Introduction to the Numerics library
 
 Q# is a language that offers high and low level capabilities. For example,
 you can use Q# to select individually what gates to apply directly at the qubit
@@ -31,7 +31,7 @@ Standard and the Numerics library, is covered under the
 under the [official API
 reference](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.arithmetic?view=qsharp-preview).
 
-### Content of the Numerics library
+### Content of the Numerics library
 
 The library provides a set of arithmetic operations signed and unsigned integers
 in the LittleEndian representation, and a new type to store fixed-point
