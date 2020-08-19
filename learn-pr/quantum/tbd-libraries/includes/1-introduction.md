@@ -6,7 +6,7 @@ Q# provides you with an increasing number of libraries that will help you to lev
 
 In this module you'll:
 
-- Learn how to integrate your Q# applications with a Python or C# *host-program*, which can call Q# operations and then process the returned data.
+- Learn how to integrate your Q# applications with a Python or C# *host-program* that can call Q# operations and then process the returned data.
 - Roll the dice: use a host program to repeatedly call a quantum random number generator, collecting and visualizing the results.
 - Discover the additional domain-specific Q# libraries at your disposal.
 - See how the quantum chemistry library can be used to estimate the ground state energy of a molecular system
