@@ -12,7 +12,7 @@ The Mixed Reality Toolkit provides a set of components and features which could 
 
 ## Import the MRTK Unity Foundation package
 
-1. Download the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases).
+1. Download the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases?azure-portal=true).
 
 1. In the Unity menu, select **Assets** > **Import Package** > **Custom Package**.
 
