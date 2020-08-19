@@ -88,6 +88,9 @@ print(GenerateRandomBit.simulate())
 If your operation has input arguments, you can specify them by inserting them
 between the brackets of `.simulate()`.
 
+For more information about Python host programs in the QDK you can read the 
+following [section about host programs in Q#](https://docs.microsoft.com/quantum/user-guide/host-programs?tabs=tabid-python#q-with-host-programs).
+
 ### [C# setup](#tab/tabid-cs)
 
 To use C# you don't need to install anything else. The .NET Core SDK 3.1 already
@@ -122,6 +125,9 @@ C# is:
 
 Once you have your projects set up following the above instructions, you can call into Q# from your .NET console application.
 The Q# compiler will create .NET classes for each Q# operation and function that allow you to run your quantum programs on a simulator.
+
+For more information about C# host programs in the QDK you can read the 
+following [section about host programs in Q#](https://docs.microsoft.com/quantum/user-guide/host-programs?tabs=tabid-csharp#q-with-host-programs).
 
 ***
 
