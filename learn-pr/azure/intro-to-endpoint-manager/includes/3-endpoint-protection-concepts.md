@@ -1,16 +1,13 @@
 Microsoft Endpoint Manager helps you protect the digital resources that your organization uses. These resources include devices, apps, and data. You protect these resources based on settings related to these resources. You use the Microsoft Endpoint Manager admin center to configure the settings that are then applied based on the devices, apps, and users of your organization. Those settings are contained in policies that you create. You assign the policies to groups that you define. And, those groups are either users or devices.
 
 ## Manage and protect devices
-<!--
-https://docs.microsoft.com/mem/intune/protect/device-protect
--->
 
 Microsoft Intune helps you protect the devices you manage and the data stored on those devices. Protected devices are also known as managed devices. You can create and apply device policies as part of your efforts to protect endpoints. Intune includes settings and features you can enable or disable for different devices within your organization. These settings and features are added to "configuration profiles". You can create profiles for different devices and different platforms, including iOS/iPadOS, macOS, Android, Android Enterprise, and Windows. Then, use Intune to apply or "assign" the profile to the devices.
 
 ### Types of device policies
 Device policies allow you to perform several different types of actions to protect devices. For instance, device policies allow you to restricts, reset, require, configure, protect, control, and retire many of the aspects of the devices at your organization.
 
-#### Examples of device configuration policies
+### Examples of device configuration policies
 Intune configuration policies help you protect and configure devices by allowing you to control a multitude of settings and features. For example, you can:
 - Restrict use of hardware features on the device such as the camera, or Bluetooth.
 - Reset passcodes when users are locked out of their devices.
@@ -21,6 +18,7 @@ Intune configuration policies help you protect and configure devices by allowing
 - Control Windows Hello for Business settings, which is an alternative sign-in method for Windows 10 and later.
 - Retire devices and remove data.
 
+### Interactive guide to managing devices (optional)
 The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage and protect devices.
 
 </p>
@@ -40,6 +38,7 @@ App policies allow you to perform several different types of actions to configur
 - Restrict copy and paste actions to other apps.
 - Require a PIN to access an app.
 
+### Interactive guide to managing apps (optional)
 The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage devices enrolled in Intune, enforce compliance with policies, and protect your organization's data.
 
 </p>
@@ -48,9 +47,8 @@ The following interactive guide steps you through the Microsoft Endpoint Manager
 </div>
 
 ## Manage and protect your organization’s data
-<!--
-https://docs.microsoft.com/mem/intune/protect/data-leak-prevention
--->
+
+Using Endpoint Manager, you can prevent data leaks and prevent unauthorized access.
 
 ### Prevent data leaks
 
@@ -61,7 +59,5 @@ App protection policies set up with Intune also work on devices managed with a n
 You can set app protection policies for Office mobile apps on devices running Windows, iOS/iPadOS, or Android to protect company data. These policies enforce device requirements such as an app-based PIN or company data encryption, or more advanced settings to restrict how cut, copy, paste, and save-as features are used by users between managed and unmanaged apps. You can also remotely wipe company data without requiring users enroll devices.
 
 ### Prevent unauthorized access
-<!--
-https://docs.microsoft.com/mem/intune/protect/data-outside-protect
--->
+
 You can classify, label, and protect Office 365 documents and emails so only authorized users have access to the data. The settings are managed automatically after IT administrators or users set the rules and conditions. Alternatively, the IT team can provide recommended settings for users to follow. Administrators and users can also revoke access to data already shared with others without assistance from another authority. The goal of this work is to control who opens or updates protected data, even when the data leaves the company's network.

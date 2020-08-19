@@ -108,10 +108,11 @@ Every IT team is obsessed with network security. It's mandatory to make sure tha
 
 Conditional Access combines granular control over organizational data with a user experience that maximizes worker productivity on any device from any location.
 
-> [!OPTIONAL]
-> To learn more about how conditional access is integrated into common scenarios that you regularly experience, view the following video:
-> [!VIDEO https://www.youtube.com/embed/A7IrxAH87wc?start=178]
-
 With co-management, Intune can incorporate Configuration Manager's responsibilities for assessing your security standards compliance of required updates or apps. This behavior is important for any IT organization that wants to continue using Configuration Manager for complex app and patch management.
 
 Conditional Access is also a critical part of developing your Zero Trust Network architecture. With Conditional Access, compliant device access controls cover the foundational layers of Zero Trust Network. This functionality is a large part of how you secure your organization in the future.
+
+### Common Conditional Access scenarios (optional)
+
+To learn more about how conditional access is integrated into common scenarios that you regularly experience, view the following video:
+[!VIDEO https://www.youtube.com/embed/A7IrxAH87wc?start=178]
