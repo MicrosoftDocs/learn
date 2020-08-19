@@ -2,7 +2,7 @@
 uid: learn.describe-azure-governance-methodologies.7-organize-resource-tags
 title: Organize your Azure resources by using tags
 metadata:
-  description: "Define resource tags"
+  description: Understand how tags enable you to describe your Azure resources.
   ms.date: 06/21/2020
   author: wwlpublish
   ms.author: roberts

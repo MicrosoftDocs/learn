@@ -2,7 +2,7 @@
 uid: learn.describe-azure-governance-methodologies.8-control-audit-resources-azure-policy
 title: Control and audit your resources by using Azure Policy
 metadata:
-  description: "Define Azure policy"
+  description: Learn how Azure Policy helps you control and audit how your resources are created.
   ms.date: 06/21/2020
   author: wwlpublish
   ms.author: roberts

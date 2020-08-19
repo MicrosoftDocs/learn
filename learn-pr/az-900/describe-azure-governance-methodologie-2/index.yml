@@ -2,14 +2,17 @@
 uid: learn.describe-azure-governance-methodologies
 metadata:
   title: Describe Azure governance methodologies
-  description: "Governance of your resources in Azure is a major decision as you move into the cloud. There are several tools from Azure Policy, to Blueprints, to Resource Locks that can help with that governance. AZ-900"
+  description: Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
   ms.date: 06/21/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Describe Azure governance methodologies
-summary: Governance of your resources in Azure is a major decision as you move into the cloud. There are several tools from Azure Policy, to Blueprints, to Resource Locks that can help with that governance.
+summary: |
+  A good cloud governance strategy helps you stay organized, manage costs, and meet your compliance goals.
+
+  Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
 abstract: |
   In this module, you'll:
 
