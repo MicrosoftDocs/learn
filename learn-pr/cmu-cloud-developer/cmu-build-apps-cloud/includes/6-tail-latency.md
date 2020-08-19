@@ -68,7 +68,7 @@ Using these techniques, it's possible to significantly improve the experience of
 1. _Li, J., Sharma, N. K., Ports, D. R., & Gribble, S. D. (2014). [Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency](https://pdfs.semanticscholar.org/dede/f157ad3b5b4df21a6515b1b70ed8ad698422.pdf) from the Proceedings of the ACM Symposium on Cloud Computing, ACM_
 2. _Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). [ICTCP: Incast Congestion Control for TCP in Data-Center Networks](https://conferences.sigcomm.org/co-next/2010/CoNEXT_papers/13-Wu.pdf), IEEE/ACM Transactions on Networking (TON), IEEE Press_
 3. _Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). [Bobtail: Avoiding Long Tails in the Cloud](https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final77.pdf), 10th USENIX Conference on Networked Systems Design and Implementation, USENIX Association_
-4. _Dean, Jeffrey and Barroso, Luiz André (2013). [The tail at scale](https://cseweb.ucsd.edu/~gmporter/classes/sp18/cse124/post/schedule/p74-dean.pdf), Communications of the ACM, ACM_
+4. _Dean, Jeffrey and Barroso, Luiz André (2013). [The tail at scale](https://cacm.acm.org/magazines/2013/2/160173-the-tail-at-scale/fulltext), Communications of the ACM, ACM_
 5. _Tene, Gil (2014). [Understanding Latency - Some Key Lessons and Tools](https://www.azul.com/presentation/understanding-latency-pitfalls-lessons-and-tools/), QCon London_
 
 ***
@@ -76,5 +76,5 @@ Using these techniques, it's possible to significantly improve the experience of
 [^1]: <https://pdfs.semanticscholar.org/dede/f157ad3b5b4df21a6515b1b70ed8ad698422.pdf> "Li, J., Sharma, N. K., Ports, D. R., & Gribble, S. D. (2014). *Tales of the Tail: Hardware, OS, and Application-Level Sources of Tail Latency* from the Proceedings of the ACM Symposium on Cloud Computing, ACM"
 [^2]: <https://conferences.sigcomm.org/co-next/2010/CoNEXT_papers/13-Wu.pdf> "Wu, Haitao and Feng, Zhenqian and Guo, Chuanxiong and Zhang, Yongguang (2013). *ICTCP: Incast Congestion Control for TCP in Data-Center Networks*, IEEE/ACM Transactions on Networking (TON), IEEE Press"
 [^3]: <https://www.usenix.org/system/files/conference/nsdi13/nsdi13-final77.pdf> "Xu, Yunjing and Musgrave, Zachary and Noble, Brian and Bailey, Michael (2013). *Bobtail: Avoiding Long Tails in the Cloud*, 10th USENIX Conference on Networked Systems Design and Implementation, USENIX Association"
-[^4]: <https://cseweb.ucsd.edu/~gmporter/classes/sp18/cse124/post/schedule/p74-dean.pdf> "Dean, Jeffrey and Barroso, Luiz André (2013). *The tail at scale*, Communications of the ACM, ACM"
+[^4]: <https://cacm.acm.org/magazines/2013/2/160173-the-tail-at-scale/fulltext> "Dean, Jeffrey and Barroso, Luiz André (2013). *The tail at scale*, Communications of the ACM, ACM"
 [^5]: <https://www.azul.com/presentation/understanding-latency-pitfalls-lessons-and-tools/)> "Tene, Gil (2014). *Understanding Latency - Some Key Lessons and Tools*, QCon London"
