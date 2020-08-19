@@ -1,4 +1,6 @@
-So far, you've explored a number of Azure features that can help you implement your governance decisions, monitor the compliance of your cloud resources, and control access and protect critical resource from accidental deletion. What happens when your cloud environment starts to grow beyond just one subscription? How can you scale the configuration of these features, knowing they will be enforced for resources in new subscriptions? 
+So far, you've explored a number of Azure features that can help you implement your governance decisions, monitor the compliance of your cloud resources, and control access and protect critical resource from accidental deletion.
+
+What happens when your cloud environment starts to grow beyond just one subscription? How can you scale the configuration of these features, knowing they need to be enforced for resources in new subscriptions?
 
 Instead of having to configure features like Azure Policy for each new subscription, [Azure Blueprints](https://azure.microsoft.com/services/blueprints?azure-portal=true) enables you to define a repeatable set of governance tools and standard Azure resources that your organization requires. This enables development teams to rapidly build and deploy new environments with the knowledge that they're building within organizational compliance with a set of built-in components that speed up the development and deployment phases.
 
@@ -33,7 +35,7 @@ Blueprints are also versioned, so you can track and comment on changes to your b
 
 ## How do blueprints compare to ARM templates?
 
-If you're familiar with Azure Resource Manager (ARM) templates, you know TODO.
+If you're familiar with Azure Resource Manager (ARM) templates, you know that they define all the Azure resources in a deployment. In a single operation, you can use an ARM template to deploy multiple Azure resources.
 
 <div style="background: yellow;">
 TODO: Again, not sure what the following paragraph is telling me. I know ARM templates; just unclear what we mean by "active relationship" and "actioned" or how this relates to auditing and tracking capabilities. We also don't define "package".
@@ -45,7 +47,11 @@ Azure Blueprints are different from ARM templates. When an ARM template deploys 
 
 Each component in the blueprint definition is known as an _artifact_. Artifacts can either have no parameters (for example, the **Deploy threat detection on SQL servers** policy, which requires no further configuration), or they can contain one or more parameters that you can configure.
 
-The following TODO:
+<div style="background: yellow;">
+TODO: What are we showing here? We're talking about threat detection and now we show something about Allowed locations.
+
+The following image TODO.
+</div>
 
 ![Screenshot showing allowed locations parameters in blueprint creation](../media/BP-allowedlocations.png)
 
@@ -55,15 +61,15 @@ A parameter is a configuration setting that can be defined when the blueprint de
 
 [ISO 27001](https://www.iso.org/isoiec-27001-information-security.html?azure-portal=true) is a standard that applies to the security of Information Technology (IT) systems, published by the International Organization for Standardization. As part of its quality process, Tailwind Traders wants to certify that it complies with this standard. Azure Blueprints has several built-in blueprint definitions that relate to ISO 27001.
 
-As the IT administrator, you decide to investigate the **ISO 27001: Shared Services Blueprint** definition. Here an outline that describes your plan:
+As an IT administrator, you decide to investigate the **ISO 27001: Shared Services Blueprint** definition. Here an outline of your plan:
 
 1. Define a management group that's named **PROD-MG**.
 
-    Recall that a management group TODO. Every new Azure subscription is added to this management group when it's created.
+    Recall that a management group manages access, policies, and compliance across multiple Azure subscriptions. Every new Azure subscription is added to this management group when the subscription is created.
 1. Create a blueprint definition that's based on the **ISO 27001: Shared Services Blueprint** template and then publish the blueprint.
 1. Assign the blueprint to your **PROD-MG** management group.
 
-The following image shows TODO:
+The following image shows artifacts that are created when you run an ISO 27001 blueprint from a template:
 
 ![Screenshot showing artifacts listed when creating an ISO 27001 blueprint from template](../media/iso27001shared-blueprint.png)
 

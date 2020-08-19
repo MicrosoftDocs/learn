@@ -9,7 +9,7 @@ You then add a storage account to your resource group and see how the lock from 
 
 ## Create the resource group
 
-Here you TODO named *my-test-rg*.
+Here you create a resource group that's named *my-test-rg*.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. At the top of the page, select **Resource groups**.
@@ -47,7 +47,7 @@ Add a resource lock to the resource group. To do so:
 
 ## Verify that the resource group is protected from deletion
 
-TODO:
+Here, you verify protection by attempting to delete the resource group.
 
 1. From the top of the page, select *my-test-rg* to go to your resource group's overview page.
 
@@ -103,7 +103,7 @@ Although you did not create a lock specifically for the storage account, the loc
 
 You no longer need your resource group or storage account. Here you remove both.
 
-When you delete a resource group, you also delete it's child resources, such as the storage account you previously created.
+When you delete a resource group, you also delete its child resources, such as the storage account you previously created.
 
 To delete the resource group, you first need to remove the resource lock.
 

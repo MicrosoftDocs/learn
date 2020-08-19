@@ -30,13 +30,11 @@ For learning purposes, you use the same resource group name that you used in the
     | Name | *my-test-rg* |
     | Region | **(US) East US** |
 
-    You can also select a region that's closer to you.
-
 1. Select **Review + create** and then select **Create**.
 
 ## Explore predefined policies
 
-Before you configure your location policy, let's take a brief look at some predefined policies. As an example, you'll look at policies that relate to Azure Compute services. To do so:
+Before you configure your location policy, let's take a brief look at some predefined policies. As an example, you'll look at policies that relate to Azure Compute services.
 
 1. From the Azure portal, at the top of the page, select **Home** to return to the start page.
 1. At the top of the page, enter *policy* in the search bar. Then select **Policy** from the list of results to access Azure Policy.
@@ -81,13 +79,10 @@ Here you configure the allowed location policy by using Azure Policy and then yo
 
     ![TODO Screenshot of Available Definitions pane with various fields highlighted and the Audit VMs that do not use managed disks option selected.](../media/available-definitions-pane.png)
 
-    This policy definition will specify the location into which all resources must be deployed. If a different location is chosen, deployment will fail.
+    This policy definition specifies the location into which all resources must be deployed. If a different location is chosen, deployment will fail.
 
 1. Select **Next** to move to the **Parameters** tab.
 1. From **Allowed locations** drop-down box, select **East US**.
-
-    You can select a different location if you prefer. Just be sure to use that location later when you TODO.
-
 1. Select **Review + create**, and then select **Create**.
 
     You see that the **Allowed locations** policy assignment is now listed on the **Policy | Assignments** pane. It enforces the policy on the **my-test-rg** resource group.
@@ -96,7 +91,7 @@ Here you configure the allowed location policy by using Azure Policy and then yo
 
 ## Verify the location policy
 
-Here you attempt to add a storage account to your resource group at a location that violates your location policy. To do so:
+Here you attempt to add a storage account to your resource group at a location that violates your location policy.
 
 1. From the Azure portal, at the top of the page, select **Home** to return to the start page.
 1. Select **Storage accounts**. Then select **Add**.

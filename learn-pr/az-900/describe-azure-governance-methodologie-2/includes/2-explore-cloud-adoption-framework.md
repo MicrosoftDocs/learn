@@ -2,11 +2,11 @@
 TODO: Is the intent here to emphasize the Govern stage specifically? Or are we introducing the CAF in general? 
 </div>
 
-The Cloud Adoption Framework for Azure provides you with proven guidance to help with your cloud adoption journey. It's designed to help you create and implement the business and technology strategies needed to succeed in the cloud.
+The [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true) provides you with proven guidance to help with your cloud adoption journey. It's designed to help you create and implement the business and technology strategies needed to succeed in the cloud.
 
 Tailwind Traders needs to control their cloud environment so that they comply with several industry standards, but they're not sure where to start. They have existing business requirements and they understand how these requirements relate to their on-premises workloads. These requirements also need to be met by any workloads they run in the cloud.
 
-You've been tasked with investigating what is available on Azure and to define and implement the governance strategy for Tailwind Traders. You decide to start with Microsoft's Cloud Adoption Framework for Azure.
+You've been tasked with investigating what's available on Azure and to define and implement the governance strategy for Tailwind Traders. You decide to start with Microsoft's Cloud Adoption Framework for Azure.
 
 ## What's in the Cloud Adoption Framework?
 

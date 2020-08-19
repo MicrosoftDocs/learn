@@ -1,48 +1,34 @@
-Within this module we learned about how policy can and RBAC can help you govern you content.
+You've been tasked with defining and implementing the governance strategy for Tailwind Traders.
 
-During this module we explored:
-+ Apply policies to control and audit resource creation.
-+ Learn how role-based security can fine-tune access to your resources.
-+ Review Microsoft's policies.
-+ Learn how to monitor your resources.
+Fulfilling complete cloud governance requires good analysis and requirements gathering. Luckily, there are several services in Azure to support your efforts.
+
+Here are some key points to keep in mind:
+
+* The Cloud Adoption Framework for Azure provides you with proven guidance to help with your cloud adoption journey.
+* Cloud governance often starts at the subscription level. Billing, access control, and subscription limits are three top aspects to consider when creating and managing subscriptions.
+* Azure RBAC enables you to create roles that define access permissions.
+* Resource locks prevent resources from being accidentally deleted or changed.
+* Resource tags provide extra information, or metadata, about your resources.
+* Azure Policy is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources.
+* Azure Blueprints enables you to define a repeatable set of governance tools and standard Azure resources that your organization requires.
+
+With these points in mind, you're ready to take the next step towards building a good cloud governance strategy.
 
 ## Learn more
 
-TODO
+The 
+[Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true) module is a good next step. There you'll go deeper on how to use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
 
-Good next step:
+<div style="background: yellow;">
+TODO: Should we provide a link to Learn modules for each of the major services we covered here? Is that too much? We already have a bunch of links pulled from this module here.
+</div>
 
-[Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true)
+Here are additional resources to help you go further.
 
-Unit 2:
-
-[Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/)
-
-(From unit 3:)
-
-* Learn more about [subscription limits](https://docs.microsoft.com/azure/azure-subscription-service-limits?azure-portal=true).
-
-(From unit 4:)
-* [Role-based access control](https://docs.microsoft.com/azure/role-based-access-control/overview?azure-portal=true)
-
-(From unit 6:)
-
-* [Resource locks](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-lock-resources?azure-portal=true)
-
-(From unit 8 (tags):)
-
-* For further information policies for tag compliance, visit [Assign polcies for tag compliance[(https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies)]]
-
-For recommendations on how to implement your own tagging strategy, visit [Resource naming and tagging decision guide](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json)
-
-(From 9 - Azure Policy)
-
-More sample policies are available on the [Azure policy samples](https://docs.microsoft.com/azure/governance/policy/samples?azure-portal=true) page.
-
-[Creating a custom policy definition](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition) is an advanced topic.
-
-(From 10 - exercise policy)
-
-(In context of the Allowed locations policy)
-
-* For more information view the [Azure Policy Samples](https://docs.microsoft.com/azure/governance/policy/samples/index?azure-portal=true) page.
+* Get started with the [Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true).
+* Learn more about [Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/azure/azure-subscription-service-limits?azure-portal=true).
+* Review the complete list of [Azure built-in roles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles/?azure-portal=true) for Azure RBAC.
+* See [Assign policies for tag compliance](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies/?azure-portal=true) to learn how Azure Policy can enforce tagging rules and conventions.
+* For recommendations on how to implement your own tagging strategy, see [Resource naming and tagging decision guide](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging?azure-portal=true)
+* Explore additional [Azure Policy samples](https://docs.microsoft.com/azure/governance/policy/samples?azure-portal=true).
+* [Creating a custom policy definition](https://docs.microsoft.com/azure/governance/policy/tutorials/create-custom-policy-definition/?azure-portal=true) is a more advanced topic. This tutorial gets you started.

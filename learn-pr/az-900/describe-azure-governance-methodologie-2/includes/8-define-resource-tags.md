@@ -45,12 +45,12 @@ After reviewing their business requirements, Tailwind Traders decides on the fol
 |**CostCenter** |The internal cost center code.|
 |**Owner**      |The name of the business owner who's responsible for the resource.|
 |**Environment**|An environment name, such as "Prod", "Dev", or "Test".|
-|**Impact**     |How important the resource is business operations, such as "Mission-critical", "High-impact", or "Low-impact".|
+|**Impact**     |How important the resource is to business operations, such as "Mission-critical", "High-impact", or "Low-impact".|
 
 Here's an example that shows these tags as they're applied to a virtual machine during provisioning:
 
 ![TODO](../media/8-vm-tags.png)
 
-The Tailwind Traders team can run queries, for example from PowerShell or the Azure CLI, to list all resources that contain these tag values.
+The Tailwind Traders team can run queries, for example from PowerShell or the Azure CLI, to list all resources that contain these tags.
 
 Keep in mind that you don't need to enforce that a specific tag is present on all of your resources. For example, you might decide that only mission-critical resources have the **Impact** tag. All non-tagged resources would then not be considered as mission-critical.

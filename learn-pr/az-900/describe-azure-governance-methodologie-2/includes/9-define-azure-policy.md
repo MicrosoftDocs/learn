@@ -9,11 +9,11 @@ TWT scenario? Or leave for exercise?
 
 ## How does Azure Policy define policies?
 
-Azure Policy enables you to define both individual policies and groups of related policies, known as _initiatives_. Azure Policy evaluates your resources and highlights those which are not compliant with the policies you have created. Azure Policy can also block non-compliant resources from being created.
+Azure Policy enables you to define both individual policies and groups of related policies, known as _initiatives_. Azure Policy evaluates your resources and highlights those which are not compliant with the policies you've created. Azure Policy can also prevent non-compliant resources from being created.
 
 Azure Policy comes with a number of built-in policy and initiative definitions that you can use, under categories such as Storage, Networking, Compute, Security Center, and Monitoring.
 
-For example, say you define a policy that allows only a certain stock keeping unit (SKU) size of virtual machines (VMs) to be used in your environment. After you enable this policy, that policy is applied when you create new VMs or resize existing ones. Azure Policy also evaluates any current VMs in your environment.
+For example, say you define a policy that allows only a certain stock keeping unit (SKU) size of virtual machines (VMs) to be used in your environment. After you enable this policy, that policy is applied when you create new VMs or resize existing VMs. Azure Policy also evaluates any current VMs in your environment.
 
 In some cases, Azure Policy can automatically remediate non-compliant resources and configurations to ensure the integrity of the state of the resources. For example, if all resources in a certain resource group should be tagged with the **AppName** tag and a value of "SpecialOrders", Azure Policy can automatically reapply that tag if it has been removed.
 
@@ -79,7 +79,7 @@ Diagram?
 
 When a condition is evaluated against your existing resources, each resource is marked as compliant or non-compliant. You can review the non-compliant policy results and take any action that's needed.
 
-Policy evaluation happens about once an hour, which means that if you make changes to your policy definition and create a policy assignment, that policy is evaluated over your resources within the hour.
+Policy evaluation happens about once per hour, which means that if you make changes to your policy definition and create a policy assignment, that policy is evaluated over your resources within the hour.
 
 <div style="background: yellow;">
 TODO: 
@@ -110,7 +110,7 @@ In fact, the **Enable Monitoring in Azure Security Center** initiative contains 
 
 You define initiatives by using the Azure portal or by using command-line tools. From the Azure portal, you can search the list of built-in initiatives that are already provided by Azure or you can create your own custom policy definition.
 
-TODO: The following ...
+The following image shows a few example Azure Policy initiatives in the Azure portal. 
 
 ![Screenshot showing Azure portal defining initiatives and definitions](../media/3-define-initiatives.png)
 
