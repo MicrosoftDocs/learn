@@ -4,7 +4,7 @@ title: Create a Virtual Machine from a managed image
 metadata:
   title: Create a Virtual Machine from a managed image
   description: "Create a Virtual Machine from a managed image"
-  ms.date: 08/21/2020
+  ms.date: 08/22/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-create-virtual-machine-managed-image.md)]
+  [!include[](includes/5-demonstration-create-virtual-machine-managed-image.md)]
