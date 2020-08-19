@@ -34,7 +34,6 @@ products:
 units:
 - learn.review-security-tools-features.introduction
 - learn.review-security-tools-features.explore-azure-security-center
-- learn.review-security-tools-features.walkthrough-azure-security-center-usage-scenario
 - learn.review-security-tools-features.explore.azure.sentinel
 - learn.review-security-tools-features.explore-key-vault
 - learn.review-security-tools-features.walkthrough-implement-azure-key-vault
