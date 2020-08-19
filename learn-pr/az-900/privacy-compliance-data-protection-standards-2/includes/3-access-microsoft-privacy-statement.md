@@ -22,7 +22,6 @@ The Data Protection Addendum (DPA) further defines the data processing and secur
 
 * Compliance with laws.
 * Disclosure of processed data.
-* Processing of personal data following the European Union's General Data Protection Regulation (GDPR).
 * Data Security, which includes security practices and policies, data encryption, data access, customer responsibilities, and compliance with auditing.
 * Data transfer, retention, and deletion.
 

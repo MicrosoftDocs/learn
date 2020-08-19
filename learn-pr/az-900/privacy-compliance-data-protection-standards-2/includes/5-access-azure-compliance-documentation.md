@@ -17,7 +17,7 @@ Here you find compliance offerings across these categories:
 * Media and manufacturing
 * Regional
 
-There are also additional compliance resources, including audit reports, privacy and GDPR information, compliance implementations and mappings, and white papers and analyst reports, as well as country and region privacy and compliance guidelines. Some resources may require you to be signed in to your cloud service to access them.
+There are also additional compliance resources, including audit reports, privacy information, compliance implementations and mappings, and white papers and analyst reports, as well as country and region privacy and compliance guidelines. Some resources may require you to be signed in to your cloud service to access them.
 
 ## Examine PCI DSS compliance
 
