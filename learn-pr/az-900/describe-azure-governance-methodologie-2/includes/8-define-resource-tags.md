@@ -1,39 +1,56 @@
-## Resource tags
+As your cloud usage grows, it's increasingly important to stay organized. Having a good organization strategy in place helps you understand your cloud usage and can help you manage costs.
 
-Organizing your cloud-based resources can make management tasks and reporting significantly easier. As well as the ability to place related resources into resource groups and subscriptions, you can define and implement resource tags to provide extra information about a resource, that's relevant to your organization. This "metadata" is useful for:
+For example, as Tailwind Traders prototypes new ways to deploy their applications on Azure, they need a way to mark their test environments so that they can easily identify and delete resources in these environments when they're no longer needed.
 
-+ **Resource management** - Locating and acting on resources associated with specific workloads, environments, business units, ownership or other important information.
-+ **Cost management and optimization** - Grouping resources for cost reporting, internal cost center allocation, budget tracking and alerting, and estimated cost forecasting.
-+ **Operations management** - Grouping resources according to how critical their availability is to your business, for SLA visibility.
-+ **Security** - Tagging resources related to the classification of the data they hold and the security level of that data (such as public or confidential).
-+ **Governance and regulatory compliance** - Choosing a tagging pattern that aligns with any governance or regulatory compliance requirements. This can be used to identify resources that must comply to a particular standard (such as ISO27001), or the tag can be part of your standards enforcement (such as all resources must be tagged with an owner name).   
-+ **Workload optimization and automation** - Tagging resources with their associated workload or application name can make it easier to visualize all resources across a complex solution and act on those resources with tools like Azure DevOps. 
+One way to organize related resources is to place them in their own subscriptions. You can also use resource groups to manage related resources. Resource _tags_ are another way to organize resources. Tags provide extra information, or metadata, about your resources. This metadata is useful for:
 
-## Tailwind Traders tag structure
-Resource tags consist of a tag name and a tag value. Azure resources can have more than one tag assigned to them. After reviewing their business requirements, Tailwind Traders has decided to implement the following tags:
-| Tag Name  | Tag Value | 
-|-----------|-----------|
-|AppName    |*Name of the application the resource is part of*|
-|CostCenter |*Internal cost center code*|
-|Owner      |*Name of the business owner responsible for the resource*|
-|Environment|Prod, Dev or Test|
-|Impact     |Mission-critical, High-impact or Low-impact |
+* **Resource management**
 
-<div style="background: yellow;">
-TODO: 
-Maybe a screenshot of a tag? 
-</div>
+    Tags enable you to locate and act on resources that are associated with specific workloads, environments, business units, and owners.
+* **Cost management and optimization**
 
-> [!Note]
-> You do not have to enforce that a tag is present on all of your resources. For example, you could decide that only mission-critical resources have the Impact tag, and all non-tagged resources are then not deemed mission-critical.
+    Tags enable you to group resources so that you can report on costs, allocate internal cost centers, track budgets, and forecast estimated cost.
+* **Operations management**
 
-For recommendations on how to implement your own tagging strategy, visit [Resource naming and tagging decision guide](https://docs.microsoft.com/azure/cloud-adoption-framework/decision-guides/resource-tagging/?toc=/azure/azure-resource-manager/management/toc.json)
+    Tags enable you to group resources according to how critical their availability is to your business. This helps you formulate service-level agreements (SLAs). An SLA is an uptime or performance guarantee between you and your users.
+* **Security**
 
-## Deploying resource tags
-Tags can be added to resource via PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API or the Azure Portal.
+    Tags enable you to classify data by its security level (such as *public* or *confidential*).
+* **Governance and regulatory compliance**
 
-A resource group can have it's own tags, which will not be applied to the resources in that resource group. If you want resources to inherit the same tags as their parent resource group, you can achieve this using an Azure Policy.
+    Tags enable you to identify resources that align with governance or regulatory compliance requirements, such as ISO 27001.
 
-You can also use Azure Policy to enforce tagging rules and conventions - requiring tags on new resources during deployment, adding tags to existing resources or remediating (redeploying) tags which may have been removed.  
+    Tags can also be part of your standards enforcement efforts. For example, you might require that all resources be tagged with an owner or department name.
+* **Workload optimization and automation**
 
-For further information policies for tag compliance, visit [Assign polcies for tag compliance[(https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies)]]
+    Tags can help you visualize all of the resources that participate in complex deployments. For example, you might tag a resource with its associated workload or application name and use software such as Azure DevOps to perform automated tasks on those resources.
+
+## How do I manage resource tags?
+
+You can add, modify, or delete resource tags through PowerShell, the Azure CLI, Azure Resource Manager templates, the REST API, or the Azure portal.
+
+You can also manage tags by using Azure Policy (you'll learn more about Azure Policy later in this module.) For example, you can apply tags to a resource group, but those tags are not automatically applied to the resources within that resource group. However, you can use Azure Policy to ensure that a resource inherits the same tags as its parent resource group.
+
+You can also use Azure Policy to enforce tagging rules and conventions. For example, you can require that certain tags be added to new resources as they're provisioned. You can also define rules that reapply tags that have been removed.
+
+## An example tagging structure
+
+A resource tag consists of a name and a value. You can assign one or more tags to each Azure resource.
+
+After reviewing their business requirements, Tailwind Traders decides on the following tags:
+
+| Name          | Value |
+|---------------|-----------|
+|**AppName**    |The name of the application that the resource is part of.|
+|**CostCenter** |The internal cost center code.|
+|**Owner**      |The name of the business owner who's responsible for the resource.|
+|**Environment**|An environment name, such as "Prod", "Dev", or "Test".|
+|**Impact**     |How important the resource is business operations, such as "Mission-critical", "High-impact", or "Low-impact".|
+
+Here's an example that shows these tags as they're applied to a virtual machine during provisioning:
+
+![TODO](../media/8-vm-tags.png)
+
+The Tailwind Traders team can run queries, for example from PowerShell or the Azure CLI, to list all resources that contain these tag values.
+
+Keep in mind that you don't need to enforce that a specific tag is present on all of your resources. For example, you might decide that only mission-critical resources have the **Impact** tag. All non-tagged resources would then not be considered as mission-critical.

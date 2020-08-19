@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-azure-governance-methodologies.define-resource-locks
-title: Define resource locks
+title: What are resource locks?
 metadata:
-  title: Define resource locks
   description: "Define resource locks"
   ms.date: 06/21/2020
   author: wwlpublish

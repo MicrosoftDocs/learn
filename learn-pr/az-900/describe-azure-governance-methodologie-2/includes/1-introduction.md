@@ -1,42 +1,36 @@
-A good governance strategy helps you to maintain control over your applications and resources in Azure. This ensures they stay compliant with both external standards (like [PCI DSS](https://docs.microsoft.com/microsoft-365/compliance/offering-pci-dss?view=o365-worldwide)) and with internal standards you may wish to enforce (such as enforcing that a Data Lake Store account is encrypted.)    
+The term _governance_ describes the general process of establishing rules and policies and ensuring that those rules and policies are enforced.
 
-Governance is most beneficial when:
-+ You have multiple engineering teams working in Azure
-+ You have multiple subscriptions in your tenant
-+ You have regulatory requirements that must be enforced
-+ You want to ensure standards are followed for all cloud resources
+When running in the cloud, a good governance strategy helps you to maintain control over the applications and resources that you manage in the cloud. This ensures they stay compliant with:
 
-Governance involves planning y our initiatives and setting priorities on a strategic level to help manage and prevent issues. You can then configure Azure's governance tools to enforce or audit your required settings when a new resource is deployed. And finally, you can check the state of existing resources against your governance decisions, and automatically (in some cases) or manually correct configuration drift. 
+* Industry standards, like [PCI DSS](https://docs.microsoft.com/microsoft-365/compliance/offering-pci-dss?view=o365-worldwide?azure-portal=true).
+* Corporate or organizational standards, such as ensuring that network data is encrypted.
 
+Governance is most beneficial when you have:
 
-<div style="background: yellow;">
-TODO: 
-Replace next para with speed v control animation?
-</div>
-You could enforce your standards by not allowing teams to directly create Azure resources - and instead have the IT team define and deploy all cloud-based assets. While this approach is often used for production on-premises environments, it slows down deployment and reconfiguration timeframes, reducing team agility and the ability to innovate. Instead, Azure provides several tools you can use to enforce and validate your standards, while still allowing your engineering teams to create and own their own resources in the cloud.
+* Multiple engineering teams working in Azure.
+* Multiple subscriptions in your tenant.
+* Regulatory requirements that must be enforced.
+* Standards that must be followed for all cloud resources.
 
-**Level**: 
+## Meet Tailwind Traders
 
-Beginner
+[!include[](../../shared/tailwind-traders-overview.md)]
 
-**Learning Objectives**
+## TODO: How will Tailwind Traders ...?
 
-In this module, you will:
-+ Learn how the Cloud Adoption Framework can help you make organizational decisions about your cloud environment.
-+ Learn how role-based security can fine-tune access to your resources.
-+ Apply tags to add metadata to your Azure resources, for configuration control and reporting.
-+ Lock resources to prevent accidental deletion 
-+ Apply policies to control and audit resource creation.
-+ Apply governance at scale across multiple subscriptions.
+Tailwind Traders is planning their migration to the cloud. For their existing datacenter, development and test teams must submit support tickets to request access to virtual machines, storage, and networking components. It can take IT staff up to two weeks to purchase and provision these components.
 
+Going forward, Tailwind Traders could enforce standards that prevent teams from directly creating resources on Azure, similar to their existing approach. However, they already know that this reduces team agility and the ability to innovate.
 
+In this module, you'll help the team explore ways they can enforce standards while still enabling teams to create and manage the cloud resources they need.
 
-<div style="background: yellow;">
+## Learning Objectives
 
-TODO: 
-+ Introduce CAF (early)
-+ Add resource tags
-+ Maybe move RBAC to before Policy 
-+ Move subscription limits to near CAF (unit 11)
+TODO: In this module, you will:
 
-</div>
+* Learn how the Cloud Adoption Framework can help you make organizational decisions about your cloud environment.
+* Learn how role-based security can fine-tune access to your resources.
+* Apply tags to add metadata to your Azure resources, for configuration control and reporting.
+* Lock resources to prevent accidental deletion 
+* Apply policies to control and audit resource creation.
+* Apply governance at scale across multiple subscriptions.

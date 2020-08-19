@@ -1,8 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.describe-azure-governance-methodologies.explore-role-based-access-control-rbac
-title: Explore Role-Based Access Control (RBAC)
+title: What's Role-Based Access Control (RBAC)?
 metadata:
-  title: Explore Role-Based Access Control (RBAC)
   description: "Explore Role-Based Access Control (RBAC)"
   ms.date: 06/21/2020
   author: wwlpublish

@@ -1,24 +1,29 @@
-## Subscription governance
+Teams often start their Azure governance strategy at the subscription level. There are three main aspects to consider when creating and managing subscriptions: **Billing**, **Access control**, and **Subscription limits**.
 
-One of the highest, overarching areas you can apply governance controls to, in your Azure environment, is at the subscription level. There are three main aspects to consider in relation to creating and managing subscriptions: **Billing**, **Access Control**, and **Subscription limits**. 
+Let's look at each of these aspects in more detail:
 
-You should take these into account when designing your subscription architecture:
+* **Billing**
 
-+ **Billing**: Billing reports can be generated per subscription. If you have multiple internal departments and need to do a "chargeback" of cloud costs, a possible scenario is to create subscriptions by department or by project. Resource tags can also help here, and we will explore tags later in this module. When defining how many subscriptions you need and what they will be called, take into account your internal billing requirements.
+    You can create one billing report per subscription. If you have multiple departments and need to do a "chargeback" of cloud costs, one possible solution is to create subscriptions by department or by project.
 
-+ **Access Control**: A subscription is a deployment boundary for Azure resources.  Every subscription is associated with an Azure Active Directory tenant which provides administrators the ability to set up granular access via defined roles, using role-based access control (RBAC). When designing your subscription architecture, consider the deployment boundary factor.  Do you need separate subscriptions for development and for production environments, for example, so you can control access levels to each one separately and isolate their resources from each other.  
+    Resource tags can also help here, and you'll explore tags later in this module. When defining how many subscriptions you need and what to name them, take into account your internal billing requirements.
+* **Access control**
 
-+ **Subscription Limits**: Subscriptions also have some resource limitations. For example, the maximum number of network "Express Route circuits" per subscription is 10. Those limits should be considered during your design phase.  If you will need to exceed those limits for particular scenarios, then you may need to add additional subscriptions. If you hit a hard limit maximum, there is no flexibility to increase it. Learn more about [subscription limits](https://docs.microsoft.com/azure/azure-subscription-service-limits?azure-portal=true).
+    A subscription is a deployment boundary for Azure resources. Every subscription is associated with an Azure Active Directory (Azure AD) tenant. Each tenant provides administrators the ability to set up granular access through defined roles using role-based access control (RBAC).
+
+    When designing your subscription architecture, consider the deployment boundary factor. For example, do you need separate subscriptions for development and for production environments? Creating separate subscriptions enables you to control access to each one separately and therefore isolate their resources from one another.
+* **Subscription limits**
+
+    Subscriptions also have some resource limitations. For example, the maximum number of network Express Route circuits per subscription is 10. Those limits should be considered during your design phase. If you will need to exceed those limits, then you may need to add additional subscriptions. If you hit a hard limit maximum, there is no flexibility to increase it.
 
 <div style="background: yellow;">
 TODO: 
 Are management groups still included in this module re the exam OD?
 </div>
 
-Also available to assist with managing subscriptions are management groups, which manage access, policies, and compliance across multiple Azure subscriptions. We will discuss management groups in more detail later.
+Management groups are also available to assist with managing subscriptions. A management group manages access, policies, and compliance across multiple Azure subscriptions. You're learn more about management groups later in this module.
 
 <div style="background: yellow;">
 TODO: 
 Add what TWT has decided to do with their subscription architecture - diagram this.
 </div>
-

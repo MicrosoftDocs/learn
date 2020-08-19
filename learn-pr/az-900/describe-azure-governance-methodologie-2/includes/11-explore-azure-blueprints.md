@@ -1,53 +1,70 @@
-## Azure Blueprints
+So far, you've explored a number of Azure features that can help you implement your governance decisions, monitor the compliance of your cloud resources, and control access and protect critical resource from accidental deletion. What happens when your cloud environment starts to grow beyond just one subscription? How can you scale the configuration of these features, knowing they will be enforced for resources in new subscriptions? 
 
-So far in this module, you've explored a number of Azure features that can help you implement your governance decisions, monitor the compliance of your cloud resource, control access and protect critical resource from accidental deletion. What happens when your cloud environment starts to grow beyond just one subscription? How can you scale the configuration of these features, knowing they will be enforced for resources in new subscriptions? 
+Instead of having to configure features like Azure Policy for each new subscription, [Azure Blueprints](https://azure.microsoft.com/services/blueprints?azure-portal=true) enables you to define a repeatable set of governance tools and standard Azure resources that your organization requires. This enables development teams to rapidly build and deploy new environments with the knowledge that they're building within organizational compliance with a set of built-in components that speed up the development and deployment phases.
 
-Instead of having to configure features like Azure Policy for each new subscription, [Azure Blueprints](https://azure.microsoft.com/services/blueprints?azure-portal=true) enables you to define a repeatable set of governance tools and standard Azure resources that your organization requires. This allows development teams to rapidly build and deploy new environments with the knowledge that they're building within organizational compliance, with a set of built-in components that speed up development and delivery.
+Azure Blueprints orchestrates the deployment of various resource templates and other artifacts, such as:
 
-Azure Blueprint is a declarative way to orchestrate the deployment of various resource templates and other artifacts, such as:
-
-+ Role assignments
-
-+ Policy assignments
-
-+ Azure Resource Manager templates
-
-+ Resource groups
+* Role assignments
+* Policy assignments
+* Azure Resource Manager templates
+* Resource groups
 
 ## Blueprint process
 
-The process of implementing Azure Blueprint consists of the following high-level steps:
+Implementing a blueprint in Azure Blueprints involves these three steps:
 
 1. Create an Azure Blueprint.
-2. Assign the blueprint.
-3. Track the blueprint assignments.
+1. Assign the blueprint.
+1. Track the blueprint assignments.
 
 <div style="background: yellow;">
-TODO: 
-Could we make a diagram similar to the Azure Policy one? 
+TODO: Could we make a diagram similar to the Azure Policy one?
+
+(Tom): Maybe. I deleted the other one because it was only words and can be a loc burden. But yes, images add flavor. Let's discuss.
 </div>
 
-With Azure Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was actually deployed) is preserved. This connection supports improved deployment tracking and auditing. Blueprints also allow for versioning, so you can track and comment on changes to your Blueprint.
+<div style="background: yellow;">
+TODO: I'm not sure what the following paragraph is telling me.
+</div>
 
-Azure Blueprints are different from Azure Resource Manager Templates.  When Azure Resource Manager Templates deploy resources, they have no active relationship with the deployed resources once they have been actioned (the templates exist in a local environment or in source control). By contrast, with Azure Blueprint, each deployment is tied to an Azure Blueprint package.  This means that the relationship with resources will be maintained, even after deployment. Maintaining relationships, in this way, improves auditing and tracking capabilities.
+With Azure Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was actually deployed) is preserved. This connection supports improved deployment tracking and auditing.
 
-## How does Tailwind Traders use Azure Blueprints for ISO 27001 compliance?
+Blueprints are also versioned, so you can track and comment on changes to your blueprint.
 
-[ISO 27001](https://www.iso.org/isoiec-27001-information-security.html) is a standard regarding the security of Information Technology sytems, published by the International Organization for Standardization. As part of it's quality process, Tailwind Traders wishes to obtain and maintain certification that it complies with this standard. Azure Blueprints has several built-in blueprint definitions related to ISO 27001.
+## How do blueprints compare to ARM templates?
 
-As the IT Administrator, you decide to investigate the ISO 27001: Shared Services Blueprint definition. 
-1. You've started by defining a management group called *PROD-MG*, which all new subscriptions will be added to when they are created. 
-1. You then create your own blueprint definition based on the ISO 27001: Shared Services template and publish it.
-1. Then, you assign the blueprint to your *PROD-MG* management group. This blueprint deploys all associated, required resource groups, policy assignments and Azure Resource Manager templates to any existing subscriptions in this management group and to any new subscriptions created and added to this management group.
+If you're familiar with Azure Resource Manager (ARM) templates, you know TODO.
 
-![Screenshot showing artifacts listed when creating an ISO 27001 blueprint from template](../media/iso27001shared-blueprint.png)
+<div style="background: yellow;">
+TODO: Again, not sure what the following paragraph is telling me. I know ARM templates; just unclear what we mean by "active relationship" and "actioned" or how this relates to auditing and tracking capabilities. We also don't define "package".
+</div>
 
-The ISO 27001: Shared services blueprint template contains 16 policy assignments, 8 Azure Resource Manager templates and 5 resource groups.
+Azure Blueprints are different from ARM templates. When an ARM template deploys resources, they have no active relationship with the deployed resources once they have been actioned (the templates exist in a local environment or in source control). By contrast, with Azure Blueprint, each deployment is tied to an Azure Blueprint package. This means that the relationship with resources will be maintained, even after deployment. Maintaining relationships, in this way, improves auditing and tracking capabilities.
 
-### Blueprint artifacts
-Each component in the blueprint definition is known as an artifact. Artifacts can either have no parameters (for example, the *Deploy threat detection on SQL servers* policy, which requires no further configuration), or they can contain one or more parameters. 
+## What are blueprint artifacts?
+
+Each component in the blueprint definition is known as an _artifact_. Artifacts can either have no parameters (for example, the **Deploy threat detection on SQL servers** policy, which requires no further configuration), or they can contain one or more parameters that you can configure.
+
+The following TODO:
 
 ![Screenshot showing allowed locations parameters in blueprint creation](../media/BP-allowedlocations.png)
 
-A parameter is a configuration setting which can be defined when the blueprint definition is saved, or it can be defined when the blueprint definition is assigned to a scope. In this way, you can maintain one standard blueprint, but have the flexibility to specify the relevant configuration parameters at each scope where the definition is assigned.   
+A parameter is a configuration setting that can be defined when the blueprint definition is created or when the blueprint definition is assigned to a scope. In this way, you can maintain one standard blueprint, but have the flexibility to specify the relevant configuration parameters at each scope where the definition is assigned.
 
+## How will Tailwind Traders use Azure Blueprints for ISO 27001 compliance?
+
+[ISO 27001](https://www.iso.org/isoiec-27001-information-security.html?azure-portal=true) is a standard that applies to the security of Information Technology (IT) systems, published by the International Organization for Standardization. As part of its quality process, Tailwind Traders wants to certify that it complies with this standard. Azure Blueprints has several built-in blueprint definitions that relate to ISO 27001.
+
+As the IT administrator, you decide to investigate the **ISO 27001: Shared Services Blueprint** definition. Here an outline that describes your plan:
+
+1. Define a management group that's named **PROD-MG**.
+
+    Recall that a management group TODO. Every new Azure subscription is added to this management group when it's created.
+1. Create a blueprint definition that's based on the **ISO 27001: Shared Services Blueprint** template and then publish the blueprint.
+1. Assign the blueprint to your **PROD-MG** management group.
+
+The following image shows TODO:
+
+![Screenshot showing artifacts listed when creating an ISO 27001 blueprint from template](../media/iso27001shared-blueprint.png)
+
+You see that the blueprint template contains policy assignments, ARM templates, and resource groups. The blueprint deploys these artifacts to any existing subscriptions within the **PROD-MG** management group. The blueprint also deploys these artifacts to any new subscriptions as they are created and added to the management group.
