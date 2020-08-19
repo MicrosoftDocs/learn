@@ -2,7 +2,7 @@ You can use Microsoft Intune to manage the apps that your company's workforce us
 
 As we mentioned previously, Microsoft Endpoint Manager supports two MAM configurations:
 - **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Microsoft Endpoint Manager admin center.
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Microsoft Endpoint Manager admin center. Also, apps can be managed by Intune on devices enrolled with third-party enterprise mobility management (EMM) providers or not enrolled with an MDM at all. 
+- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Microsoft Endpoint Manager admin center. Also, apps can be managed by Intune on devices enrolled with third-party enterprise mobility management (EMM) providers or not enrolled with an MDM at all.
 
 When apps are managed in Intune, administrators can:
 - **Protect company data at the app level.** You can add and assign mobile apps to user groups and devices. This allows your company data to be protected at the app level. You can protect company data on both managed and unmanaged devices because mobile app management doesn't require device management. The management is centered on the user identity, which removes the requirement for device management.
@@ -26,11 +26,12 @@ The first step when providing apps to your organization is to add the apps to In
 After you've added the app to either Intune or Configuration Manager, you can deploy the app. In Intune you assign the app to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from the Intune within the Azure portal. Additionally, in some app stores, you can purchase app licenses in bulk for your company. Intune can synchronize data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console. In Configuration Manager you deploy the app to a device collection based on the Windows OS requirements that you select.
 
 ### Configure
-As part of the app lifecycle, new versions of apps are regularly released. 
-
-Intune provides tools to easily update apps that you have deployed to a newer version. Additionally, you can configure extra functionality for some apps, for example:
+Intune and Configuration Manager both provide methods to configure app installation and updates. You can configure extra functionality for some apps, for example:
 - iOS/iPadOS app configuration policies supply settings for compatible iOS/iPadOS apps that are used when the app is run. For example, an app might require specific branding settings or the name of a server to which it must connect.
 - Managed browser policies help you to configure settings for the  Microsoft Edge, which replaces the default device browser and lets you restrict the websites that your users can visit.
+- You can set specific setting for Microsoft Outlook when you install it.
+- Whether certain apps should be installed in User or System context.
+- Rules to detect if the app is already installed, needs to be udpated, or has specific insallation depenencies.
 
 ### Protect
 Intune gives you many ways to help protect the data in your apps. The main methods are:

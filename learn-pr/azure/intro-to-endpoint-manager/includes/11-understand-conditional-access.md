@@ -112,7 +112,8 @@ With co-management, Intune can incorporate Configuration Manager's responsibilit
 
 Conditional Access is also a critical part of developing your Zero Trust Network architecture. With Conditional Access, compliant device access controls cover the foundational layers of Zero Trust Network. This functionality is a large part of how you secure your organization in the future.
 
-### Common Conditional Access scenarios (optional)
+### Video - Common Conditional Access scenarios (optional)
 
 To learn more about how conditional access is integrated into common scenarios that you regularly experience, view the following video:
+
 [!VIDEO https://www.youtube.com/embed/A7IrxAH87wc?start=178]

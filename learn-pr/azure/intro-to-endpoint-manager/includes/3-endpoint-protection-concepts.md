@@ -18,7 +18,7 @@ Intune configuration policies help you protect and configure devices by allowing
 - Control Windows Hello for Business settings, which is an alternative sign-in method for Windows 10 and later.
 - Retire devices and remove data.
 
-### Interactive guide to managing devices (optional)
+### Video - Interactive guide to managing devices (optional)
 The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage and protect devices.
 
 </p>
@@ -38,7 +38,7 @@ App policies allow you to perform several different types of actions to configur
 - Restrict copy and paste actions to other apps.
 - Require a PIN to access an app.
 
-### Interactive guide to managing apps (optional)
+### Video - Interactive guide to managing apps (optional)
 The following interactive guide steps you through the Microsoft Endpoint Manager admin center to show you how to manage devices enrolled in Intune, enforce compliance with policies, and protect your organization's data.
 
 </p>
