@@ -16,7 +16,7 @@ To back up your Azure Disk Encryption–protected VMs, create a Recovery Service
 8. On the **Backup Goal** blade, select **Backup**.
 9. You can force a manual backup of a protected VM by selecting that VM on the **Virtual machines** blade in the Azure portal. On the **Backup** blade, in the **Operations** section, select **Backup**, and then from the menu, select **Backup now**.
 
-![A screenshot of the Backup blade for ContosoVM6. The administrator has created a backup job. A single restore point displays.](../media/m4-backup.png)
+[![A screenshot of the Backup blade for ContosoVM6. The administrator has created a backup job. A single restore point displays.](../media/m4-backup.png)](../media/m4-backup.png#lightbox)
 
 ## Restore your Azure Disk Encryption–protected VMs
 
