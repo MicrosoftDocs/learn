@@ -1,17 +1,6 @@
-A *service-level agreement* (SLA) is a formal agreement between a service company and the customer.
+A *service-level agreement* (SLA) is a formal agreement between a service company and the customer. On Azure, this agreement defines the performance standards that Microsoft commits to for you, the customer.
 
-On Azure, this agreement defines the performance standards that Microsoft commits to for you, the customer.
-
-In this part, you'll learn:
-
-* Why SLAs are important.
-* Where you can find the SLA for a specific Azure service.
-* What you'll find in a typical SLA.
-* What we mean by terms like "three nines" and "four nines" availability.
-* How SLA percentages relate to total downtime.
-* How credits are applied when a service fails to perform to its specification.
-* How SLAs relate to free Azure services.
-* How to know when there's an outage.
+In this part, you'll learn more about Azure SLAs, including why SLAs are important, where you can find the SLA for a specific Azure service, and what you'll find in a typical SLA.
 
 ## Why are SLAs important?
 

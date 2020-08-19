@@ -78,5 +78,3 @@ From the Azure updates page, you can:
 * Search for updates by keyword.
 * Subscribe to an RSS feed to receive notifications.
 * Access the Microsoft Connect page to read Azure product news and announcements.
-
-In the next part, you'll help the Tailwind Traders team explore a new service that's currently in the Public preview phase.
