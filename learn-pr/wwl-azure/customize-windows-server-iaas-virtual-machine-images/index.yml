@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.customize-windows-server-iaas-vm-images
 metadata:
-  title: Customize Windows Server IaaS VM images
+  title: Customize Windows Server IaaS Virtual Machine images
   description: "You'll be able to create new VMs from generalized images and use Azure Image Builder templates to create and manage images in Azure."
   ms.date: 08/21/2020
   author: wwlpublish
