@@ -1,6 +1,6 @@
 The drone tracking application has several components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster. Here you'll look at some of the deployment options available to you to deploy these components.
 
-:::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that depicts the drone tracking solution components." border="false":::
+:::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that shows the drone tracking solution components." border="false":::
 
 ## Pod deployment options
 
@@ -15,13 +15,13 @@ You can use any of these four Kubernetes object type definitions to deploy a pod
 
 ## What is a pod template?
 
-A pod template allows you to define the configuration of the pod you wish to deploy. The template contains information such as the name of container image, which container registry to use to fetch the images, and runtime configuration information such as ports to use. Templates are defined by using YAML in the same way as when you create Docker files.
+A pod template allows you to define the configuration of the pod you wish to deploy. The template contains information such as the name of container image, which container registry to use to fetch the images. The template may also include runtime configuration information such as ports to use. Templates are defined by using YAML in the same way as when you create Docker files.
 
 You can use templates to deploy pods manually. However, a manually deployed pod isn't relaunched after it fails, is deleted, or is terminated. To manage the lifecycle of a pod, you need to create a higher-level Kubernetes object.
 
 ## What is a replication controller?
 
-A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod and ensures the specified number of pods are always running on one or more nodes in the cluster. The controller will replace pods launched in this way with new pods if they fail, are deleted, or are terminated.
+A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod and ensures pods are always running on one or more nodes in the cluster. The controller replaces running pods in this way with new pods if they fail, are deleted, or are terminated.
 
 For example, assume you deploy the drone tracking front-end website and users start accessing the website. If all the pods fail for any reason, the website is unavailable to your users unless you launch new pods. A replication controller helps you make sure your website is always available.
 
@@ -33,17 +33,17 @@ A selector allows the replica set to identify all the pods running underneath it
 
 ## What is a deployment?
 
-A deployment creates a management object one level higher than a replica set that allows you to deploy and manage how you update pods in a cluster.
+A deployment creates a management object one level higher than a replica set and allows you to deploy and manage updates for pods in a cluster.
 
 Assume that you have five instances of your application deployed in your cluster. There are five pods running version 1.0.0 of your application.
 
 :::image type="content" source="../media/4-pods-running-same-version.svg" alt-text="Diagram that shows five pods running on a node with the same pod version." border="false":::
 
-If you decide to update your application manually, you can terminate all pods and then launch new pods running version 2.0.0 of your application. With this strategy, your application will experience downtime.
+If you decide to update your application manually, you can remove all pods and then launch new pods running version 2.0.0 of your application. With this strategy, your application will experience downtime.
 
-What you instead want to do is execute a rolling update, where you launch pods running the new version of your application before you terminate the pods running the older version of your application. Rolling updates will launch one pod at a time instead of taking down all the older pods at once. Deployments honor the number of replicas configured in the section that describes information about replica sets. It will maintain the number of pods specified in the replica set as it terminates old pods and launches new pods.
+What you instead want to do is execute a rolling update, where you launch pods with the new version of your application before you remove the older app versioned pods. Rolling updates will launch one pod at a time instead of taking down all the older pods at once. Deployments honor the number of replicas configured in the section that describes information about replica sets. It will maintain the number of pods specified in the replica set as it replaces old pods with new pods.
 
-:::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods running on a node with two of the same versions and three of a later versions." border="false":::
+:::image type="content" source="../media/4-pods-running-different-version.svg" alt-text="Diagram that shows five pods, two pods set as version 1 and 3 pods set as version 2." border="false":::
 
 Deployments, by default, provide a rolling update strategy for updating pods. You can also use a re-create strategy. This strategy will terminate pods before launching new pods.
 
@@ -61,7 +61,7 @@ For example, each of the services in the drone tracking application has specific
 
 ## Kubernetes networking
 
-Assume that you have a cluster with one control planes and two nodes. When you add nodes to Kubernetes, an IP address is automatically assigned to each node from an internal private network range. For example, assume that your local network range is 192.168.1.0/24.
+Assume you have a cluster with one control planes and two nodes. When you add nodes to Kubernetes, an IP address is automatically assigned to each node from an internal private network range. For example, assume that your local network range is 192.168.1.0/24.
 
 :::image type="content" source="../media/4-nodes-assigned-ip-addresses.svg" alt-text="Diagram of nodes with assigned IP addresses in a cluster." border="false":::
 
@@ -107,7 +107,7 @@ To support these scenarios, you can configure three types of services to expose 
 | **NodePort** | The node port, between 30000 and 32767, that the Kubernetes control plane assigns to the service. An example is 192.169.1.11 on clusters01. You then configure the service with a target port on the pod that you want to expose. For example, configure port 80 on the pod running one of the front ends. You can now access the front end through a node IP and port address.  |
 | **LoadBalancer** | The load balancer that allows for the distribution of load between nodes running your application and exposing the pod to public network access. You typically configure load balancers when you use cloud providers. In this case, traffic from the external load balancer is directed to the pods running your application. |
 
-In the drone tracking application, you might decide to expose the tracking website and the RESTful API by using LoadBalancer services and the data processing service with a ClusterIP.
+In the drone tracking application, you might decide to expose the tracking website and the RESTful API by using a LoadBalancer and the data processing service by using a ClusterIP.
 
 ## How to group pods
 
@@ -141,6 +141,6 @@ Recall from earlier that Kubernetes doesn't provide any of the following service
 - Caches
 - Cluster storage systems
 
-In the example drone tracking solution, there are three services that provide middleware functionality. There's a NoSQL database, an in-memory cache service, and a message queue. You might choose to use MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
+In the example drone tracking solution, there are three services that provide middleware functionality. A NoSQL database, an in-memory cache service, and a message queue. You might choose to use MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
 
-When you're using a cloud environment such as Azure, it's a best practice to make use of services outside the Kubernetes cluster. This decision can simplify the cluster's configuration and management. For example, you can use *Azure Cache for Redis* for the in-memory caching services, *Azure Service Bus messaging* for the message queue, and *Azure Cosmos DB* for the NoSQL database.
+When you're using a cloud environment such as Azure, it's a best practice to use services outside the Kubernetes cluster. This decision can simplify the cluster's configuration and management. For example, you can use *Azure Cache for Redis* for the in-memory caching services, *Azure Service Bus messaging* for the message queue, and *Azure Cosmos DB* for the NoSQL database.
