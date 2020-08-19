@@ -200,12 +200,10 @@ Now that you've deployed the template, you're ready to test the *what-if* operat
     Resource changes: 1 to modify.
     ```
 
-
-You'll notice that the result is colour coded in addition to a "prefix"
-
-- Purple and "~" for any modifications
-- Green and "+" for new resources to be created
-- Orange and "-" for deletion.
+    You'll notice that the result is colour coded in addition to a "prefix"
+    - Purple and "~" for any modifications
+    - Green and "+" for new resources to be created
+    - Orange and "-" for deletion.
 
 ## Deploy using Complete mode and the confirm-with-what-if option
 
@@ -247,10 +245,9 @@ To preview changes before deploying a template, you need to be in  use the **--c
     Are you sure you want to execute the deployment? (y/n):
     ```
 
-The result will ask you to confirm with the following prompt:
+    The result will ask you to confirm with the following prompt:
 
     Are you sure you want to execute the deployment? (y/n):
-
 
 1. To execute and clean out your environment type "y" for "Yes".  Once it completes with the following results
 

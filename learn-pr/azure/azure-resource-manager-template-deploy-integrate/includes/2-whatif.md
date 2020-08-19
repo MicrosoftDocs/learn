@@ -19,13 +19,12 @@ One more benefits of this operation is that, unlike some of the other tools out 
 ## Change types
 
 When using the *what-if* operation it will lists six different types of changes:
-
-1. **Create**: The resource doesn't currently exist but is defined in the template. The resource will be created.
-1. **Delete**: This change type only applies when using complete mode for deployment. The resource exists, but isn't defined in the template. With [complete mode](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?WT.mc_id=MSLearn-ARM-pierrer), the resource will be deleted. **Only resources that support complete mode deletion are included in this change type**.
-1. **Ignore**: The resource exists, but isn't defined in the template. The resource won't be deployed or modified.
-1. **NoChange** : The resource exists, and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when ResultFormat is set to FullResourcePayloads, which is the default value.
-1. **Modify**: The resource exists, and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when ResultFormat is set to FullResourcePayloads, which is the default value.
-1. **Deploy**: The resource exists, and is defined in the template. The resource will be redeployed. The properties of the resource may or may not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You only see this condition when ResultFormat is set to ResourceIdOnly.
+* **Create**: The resource doesn't currently exist but is defined in the template. The resource will be created.
+* **Delete**: This change type only applies when using complete mode for deployment. The resource exists, but isn't defined in the template. With [complete mode](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?WT.mc_id=MSLearn-ARM-pierrer), the resource will be deleted. **Only resources that support complete mode deletion are included in this change type**.
+* **Ignore**: The resource exists, but isn't defined in the template. The resource won't be deployed or modified.
+* **NoChange** : The resource exists, and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when ResultFormat is set to FullResourcePayloads, which is the default value.
+* **Modify**: The resource exists, and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when ResultFormat is set to FullResourcePayloads, which is the default value.
+* **Deploy**: The resource exists, and is defined in the template. The resource will be redeployed. The properties of the resource may or may not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You only see this condition when ResultFormat is set to ResourceIdOnly.
 
 ## Result Format
 

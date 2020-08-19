@@ -189,11 +189,10 @@ Now that you've deployed the template, you're ready to test the *what-if* operat
     PS C:\>
     ```
 
-You'll notice that the result is colour coded in addition to a "prefix"
-
-- Purple and "~" for any modifications
-- Green and "+" for new resources to be created
-- Orange and "-" for deletion.
+    You'll notice that the result is colour coded in addition to a "prefix"
+    - Purple and "~" for any modifications
+    - Green and "+" for new resources to be created
+    - Orange and "-" for deletion.
 
 ## Deploy using the Complete mode and confirmation option
 
