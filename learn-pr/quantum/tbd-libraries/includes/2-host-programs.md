@@ -99,30 +99,30 @@ C# is:
 
 1. Create a new Q# library
 
-  ```dotnetcli
-  dotnet new classlib -lang Q# -o quantum
-  ```
+      ```dotnetcli
+      dotnet new classlib -lang Q# -o quantum
+      ```
 
 1. Create a new C# or F# console project
 
-  ```dotnetcli
-  dotnet new console -lang C# -o host  
-  ```
+      ```dotnetcli
+      dotnet new console -lang C# -o host  
+      ```
 
 1. Add your Q# library as a reference from your host program
 
-  ```dotnetcli
-  cd host
-  dotnet add reference ../quantum/quantum.csproj
-  ```
+     ```dotnetcli
+     cd host
+     dotnet add reference ../quantum/quantum.csproj
+     ```
 
 1. [Optional] Create a solution for both projects
 
-  ```dotnetcli
-  dotnet new sln -n quantum-dotnet
-  dotnet sln quantum-dotnet.sln add ./quantum/quantum.csproj
-  dotnet sln quantum-dotnet.sln add ./host/host.csproj
-  ```
+     ```dotnetcli
+     dotnet new sln -n quantum-dotnet
+     dotnet sln quantum-dotnet.sln add ./quantum/quantum.csproj
+     dotnet sln quantum-dotnet.sln add ./host/host.csproj
+     ```
 Once you have your projects set up following the above instructions, you can call into Q# from your .NET console application.
 The Q# compiler will create .NET classes for each Q# operation and function that allow you to run your quantum programs on a simulator.
 
