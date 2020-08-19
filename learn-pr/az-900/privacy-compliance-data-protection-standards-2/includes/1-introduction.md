@@ -8,13 +8,11 @@ In general, _compliance_ means to adhere to some law or standard. _Regulatory co
 
 [!include[](../../shared/tailwind-traders-overview.md)]
 
-## How will Tailwind Traders protect their data in the cloud?
+## How will Tailwind Traders protect their data in the cloud and stay compliant?
 
 Tailwind Traders is planning their migration to the cloud. They're used to having full control of all of their application data, which is stored on servers that they manage in their datacenter.
 
 Knowing that moving an application to the cloud means that data is now outside of their own walls, and understanding that the cloud provider has access to the server hardware and infrastructure, how is the privacy of their application data protected?
-
-## How will Tailwind Traders stay compliant?
 
 Tailwind Traders must also adhere to multiple regulatory and compliance frameworks. For example, they must follow certain rules to ensure that they properly handle credit card data. Although they'll still need to ensure that their applications comply with applicable regulations and standards, how does infrastructure on Azure already adhere to these same standards?
 

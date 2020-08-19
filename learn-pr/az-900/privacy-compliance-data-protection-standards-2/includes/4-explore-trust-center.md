@@ -1,10 +1,4 @@
-<div style="background:yellow;">
-TODO: In this part, ...
-
-TODO: As a learner, I saw some compliance offerings, the Privacy policy, the OST and the DPA. The Trust Center feels like more words about the same things. How can we more strongly differentiate the TC from what we've discussed so far? How does this relate to TWT?
-
-Also, is this the same things we're talking about in unit 2? If so, should we combine the two?
-</div>
+Tailwind Traders needs to stay up to date on the latest security standards for protecting their data. Today, the security team needs to verify whether Azure meets ISO 27001, a commonly-used information security standard. Where can they access this information?
 
 The [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true) showcases Microsoft's principles for maintaining data integrity in the cloud and how Microsoft implements and supports security, privacy, compliance, and transparency in all Microsoft cloud products and services. The Trust Center is an important part of the Microsoft Trusted Cloud Initiative and provides support and resources for the legal and compliance community.
 
@@ -20,7 +14,7 @@ The Trust Center is a great resource for other people in your organization who m
 
 ## Explore the Trust Center
 
-As an optional exercise, let's take a brief look at the Trust Center's entry for ISO 27001, a commonly-used information security standard.
+As an optional exercise, let's take a brief look at the Trust Center's entry for ISO 27001.
 
 Access to the Trust Center doesn't require an Azure subscription or a Microsoft account.
 
@@ -48,9 +42,3 @@ Access to the Trust Center doesn't require an Azure subscription or a Microsoft 
     * An overview of the audit cycle.
     * Answers to frequently asked questions.
     * Additional resources and white papers.
-
-<div style="background:yellow;">
-TODO: OK, so what?
-
-TODO: Tie back briefly to TWT. What did they learn or what will they do next?
-</div>

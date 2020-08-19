@@ -1,15 +1,11 @@
 In this module, you learned about Microsoft's approach to privacy, security, and compliance. You explored resources specific to online services, including Azure, and how governments can use Azure to meet their specific security and compliance needs.
 
-<div style="background:yellow;">
-TODO: Say more here. One thought here is to *briefly* recap on each area we covered, but emphasize *when* you access each resource. See earlier comments throughout this module.
-</div>
+The security team at Tailwind Traders now has a better understanding of what resource are available to help them protect their data in the cloud and stay compliant.
 
-Keep in mind that compliance status for Azure products and services does not automatically translate to compliance for the service or application you build or host on Azure. Customers are responsible for ensuring that they achieve compliance with the appropriate legal and regulatory standards.
+* The [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement?azure-portal=true) provides trust in how Microsoft collects, protects, and uses customer data.
+* The [Trust Center](https://www.microsoft.com/trustcenter?azure-portal=true) provides you with documentation about compliance standards and how Azure can support your business.
+* The [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/?azure-portal=true) includes detailed information about legal and regulatory standards and compliance on Azure.
 
-## Learn more
-
-<div style="background:yellow;">
-TODO: Any other pointers or resources?
-</div>
+Keep in mind that compliance status for Azure products and services does not automatically translate to compliance for the service or application you build or host on Azure. You are responsible for ensuring that you achieve compliance with the legal and regulatory standards that you must follow.
 
 Most services are the same on both Azure Government and global Azure. However, there are some differences that you should be aware of. [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure?azure-portal=true) to learn more.

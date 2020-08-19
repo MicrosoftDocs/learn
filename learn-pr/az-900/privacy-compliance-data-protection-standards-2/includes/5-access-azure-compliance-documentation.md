@@ -6,10 +6,6 @@ You've been tasked with investigating whether hosting their e-commerce applicati
 
 ## What is the Azure compliance documentation?
 
-<div style="background:yellow;">
-TODO: Again, so many things that seem similar. How can we better differentiate this from what we covered so far?
-</div>
-
 The [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/?azure-portal=true) provides you with detailed documentation about legal and regulatory standards and compliance on Azure.
 
 Here you find compliance offerings across these categories:
@@ -59,6 +55,4 @@ Under **Compliance blueprints**, you find reference blueprints, or policy defini
 
 You can then see if the Azure resources in your application architecture have been configured correctly for PCI DSS compliance, or which resources you need to remediate.
 
-<div style="background:yellow;">
-TODO: Tie back briefly to TWT. What did they learn or what will they do next?
-</div>
+Because standards evolve, the Tailwind Traders team might check the audit report periodically to ensure that Azure has kept up with any recent changes.

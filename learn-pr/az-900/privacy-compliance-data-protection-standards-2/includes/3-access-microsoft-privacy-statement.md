@@ -18,16 +18,22 @@ The [Online Services Terms](https://www.microsoft.com/licensing/terms/product/Fo
 
 ## What is the Data Protection Addendum?
 
-<div style="background:yellow;">
-TODO: The link doesn't say "Data Production Addendum" on it. We were given this link to use. Do we need to change this copy, or does this phrasing appear on the exam?
-</div>
-
-The [Data Protection Addendum](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?Mode=3&DocumentTypeId=67&azure-portal=true) (DPA) further defines the data processing and security terms for online services. These terms include:
+The Data Protection Addendum (DPA) further defines the data processing and security terms for online services. These terms include:
 
 * Compliance with laws.
 * Disclosure of processed data.
 * Processing of personal data following the European Union's General Data Protection Regulation (GDPR).
 * Data Security, which includes security practices and policies, data encryption, data access, customer responsibilities, and compliance with auditing.
 * Data transfer, retention, and deletion.
+
+To access the DPA:
+
+1. Go to the [Licensing Terms and Documentation](https://www.microsoftvolumelicensing.com/DocumentSearch.aspx?azure-portal=true).
+1. In the search bar, enter *DPA*.
+1. From the search results, locate the link to the DPA in your preferred language.
+
+    Alternatively, in the search bar that appears, enter your preferred language to filter the results. Here's an example that retrieves the English version of the DPA.
+
+:::image type="content" source="../media/3-dpa-english.png" alt-text="A screenshot of the Licensing Terms and Documentation page, showing how to download the English version of the Data Protection Addendum.":::
 
 Transparency is important when it comes to how a cloud provider communicates its privacy policies and how it treats your data. The Microsoft Privacy Statement, the OST, and the DPA detail Microsoft's commitment to protecting data and privacy in the cloud.
