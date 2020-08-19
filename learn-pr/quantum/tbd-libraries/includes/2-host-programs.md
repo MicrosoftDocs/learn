@@ -60,11 +60,13 @@ Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or
 1. Run `python -c "import qsharp"` from the same terminal to verify your
    installation and populate your local package cache with all required QDK
    components.
-
-In the same folder as `Program.qs`, create a Python program called `host.py` to
-simulate the Q# operations. You need to import the `qsharp` module. The Python
-client will treat Q# namespaces as if they were Python modules, and each Q#
-operation a Python function of the associated module. For example:
+   
+To implement Q# operations in Python programs you first need to create a Q# project
+as usual. In the the same folder as the `Program.qs` of the Q# project, create a 
+Python program called `host.py` to simulate the Q# operations. You need to import 
+the `qsharp` module. The Python client will treat Q# namespaces as if they 
+were Python modules, and each Q# operation a Python function of the 
+associated module. For example:
 
 ```python
 import qsharp
