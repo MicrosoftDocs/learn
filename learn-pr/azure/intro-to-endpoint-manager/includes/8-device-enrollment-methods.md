@@ -1,4 +1,4 @@
-Each device type (iOS/iPadOS, Windows, Android, macOS) provides a different set of enrollment methods. These methods range from users adding their own device, to using a special user account that's used to enroll and manage multiple corporate-owned devices. When a user adds their own device to Intune or Configuration Manager, it is called bring your own device (BYOD). When you use a special user account to enroll and manage multiple corporate-owned devices, you use the Device enrollment manager (DEM).
+Each device type (iOS/iPadOS, Windows, Android, macOS) provides a different set of enrollment methods. These methods range from users adding their own device, to using a special user account that's used to enroll and manage multiple corporate-owned devices. When a user adds their own device to Intune, it is called bring your own device (BYOD). When you use a special user account to enroll and manage multiple corporate-owned devices, you use the Device enrollment manager (DEM).
 
 ## iOS/iPadOS and macOS enrollment methods
 

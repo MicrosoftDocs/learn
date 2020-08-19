@@ -12,7 +12,7 @@ By using an on-premises endpoint management solution, you can manage your on-pre
 
 ## Cloud + on-premises endpoint management
 
-For Configuration Manager managed devices, data can also flow to Microsoft Endpoint Management through the ConfigMgr connector. This is called tenant attached, where the ConfigMgr connector is attached to the cloud. It  requires a connection to an Intune tenant, and doesn't require turning on co-management.
+For Configuration Manager managed devices, data can also flow to Microsoft Endpoint Management through the ConfigMgr connector. This is called tenant attach, where the ConfigMgr connector is attached to the cloud. It  requires a connection to an Intune tenant, and doesn't require turning on co-management.
  
 ## Co-managed endpoint management
 

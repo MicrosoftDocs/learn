@@ -32,8 +32,6 @@ Intune provides tools to easily update apps that you have deployed to a newer ve
 - iOS/iPadOS app configuration policies supply settings for compatible iOS/iPadOS apps that are used when the app is run. For example, an app might require specific branding settings or the name of a server to which it must connect.
 - Managed browser policies help you to configure settings for the  Microsoft Edge, which replaces the default device browser and lets you restrict the websites that your users can visit.
 
-Configuration Manager provides package definition files to help you automate the creation of app packages and programs. These package definition files provide all of the information that Configuration Manager needs to create a package and program, except for the location of package source files. 
-
 ### Protect
 Intune gives you many ways to help protect the data in your apps. The main methods are:
 - Conditional Access, which controls access to email and other services based on conditions that you specify. Conditions include device types or compliance with a device compliance policy that you deployed.

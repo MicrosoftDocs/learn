@@ -3,7 +3,7 @@ uid: learn.intro-to-endpoint-manager
 metadata:
   title: Endpoint management concepts 
   description: In this module, you'll learn about the basics of Microsoft Endpoint Manager. 
-  ms.date: 06/15/2020
+  ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
@@ -32,7 +32,7 @@ units:
 - learn.intro-to-endpoint-manager.4-understand-endpoint-environment
 - learn.intro-to-endpoint-manager.5-platform-considerations
 - learn.intro-to-endpoint-manager.6-understand-provisioning
-- learn.intro-to-endpoint-manager.7-device-enrollment-concepts
+- learn.intro-to-endpoint-manager.7-device-management-concepts
 - learn.intro-to-endpoint-manager.8-device-enrollment-methods
 - learn.intro-to-endpoint-manager.9-app-management-concepts
 - learn.intro-to-endpoint-manager.10-policy-management-based-on-groups

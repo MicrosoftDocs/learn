@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-endpoint-manager.7-device-management-concepts
+title: Device management concepts
+metadata:
+  title: Device management concepts
+  description: Understand device management concepts.
+  ms.date: 08/19/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-device-management-concepts.md)]
