@@ -24,13 +24,13 @@ Going forward, Tailwind Traders could enforce standards that prevent teams from 
 
 In this module, you'll help the team explore ways they can enforce standards while still enabling teams to create and manage the cloud resources they need.
 
-## Learning Objectives
+## Learning objectives
 
-TODO: In this module, you will:
+In this module, you'll:
 
 * Learn how the Cloud Adoption Framework can help you make organizational decisions about your cloud environment.
-* Learn how role-based security can fine-tune access to your resources.
-* Apply tags to add metadata to your Azure resources, for configuration control and reporting.
-* Lock resources to prevent accidental deletion 
-* Apply policies to control and audit resource creation.
-* Apply governance at scale across multiple subscriptions.
+* Learn how Azure RBAC enables you to define who can access cloud resources.
+* Apply a resource lock to prevent accidental deletion of your Azure resources.
+* Understand how tags enable you to describe your Azure resources.
+* Learn how Azure Policy helps you control and audit how your resources are created.
+* Explore how Azure Blueprints enables governance at scale across multiple Azure subscriptions.

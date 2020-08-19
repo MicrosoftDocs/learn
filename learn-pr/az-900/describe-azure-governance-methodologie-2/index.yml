@@ -11,11 +11,14 @@ metadata:
 title: Describe Azure governance methodologies
 summary: Governance of your resources in Azure is a major decision as you move into the cloud. There are several tools from Azure Policy, to Blueprints, to Resource Locks that can help with that governance.
 abstract: |
-  After completing this module, you will be able to:
-  * Apply policies to control and audit resource creation.
-  * Utilize role-based security to fine-tune access to your resources.
-  * Review Microsoft's policies and privacy guarantees.
-  * Monitor your Azure resources.
+  In this module, you'll:
+
+  * Learn how the Cloud Adoption Framework can help you make organizational decisions about your cloud environment.
+  * Learn how Azure RBAC enables you to define who can access cloud resources.
+  * Apply a resource lock to prevent accidental deletion of your Azure resources.
+  * Understand how tags enable you to describe your Azure resources.
+  * Learn how Azure Policy helps you control and audit how your resources are created.
+  * Explore how Azure Blueprints enables governance at scale across multiple Azure subscriptions.
 prerequisites: |
   There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/describe-azure-governance-methodologies.svg
