@@ -3,8 +3,7 @@ capabilities of the Quantum Development Kit. The library is an
 Q#, that gives you the ability to perform arithmetic operations with quantum
 computers and qubit registers.
 
-
-## Introduction to the Numerics library
+## Introduction to the numerics library
 
 Q# is a language that offers high and low level capabilities. For example,
 you can use Q# to select individually what gates to apply directly at the qubit
@@ -21,9 +20,8 @@ arithmetic operations for integers encoded in qubit registers. Y
 this low-level optimized implementations of basic arithmetic operations to
 implement sophisticated algorithms.
 
-This library is especially useful for researchers and developers who
-
-want to translate algorithms and circuits to Q# without having to deal with the
+This library is especially useful for researchers and developers who 
+want to translate algorithms and circuits to Q# without having to deal with the 
 low-level implementation of basic arithmetic operations.
 
 The Standard library also offers some important arithmetic functionality.
@@ -51,7 +49,7 @@ can obtain more information about the available operations in 
 documentation for the Numerics
 library](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/numerics/numerics).
 
-## Use the Numerics library  
+## Use the Numerics library  
 
 It's not rare that quantum computing algorithms require to compute arithmetic
 operations such as the evaluation of oracles or the application of mathematical
@@ -75,7 +73,7 @@ how the Numerics library is used to implement Shor's algorithm
 the [integer factorization
 sample](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization).
 
-## Explore the samples
+## Explore the samples
 
 If you want to learn more about the Numerics library, we invite you to explore
 the [Q# samples for the Numerics
@@ -84,7 +82,7 @@ There you can get hands on experience on how the library i
 custom modular additions, evaluation of polynomials using fixed-point
 arithmetic or counting the resources needed for each operation.
 
-## Stay tuned and contribute
+## Stay tuned and contribute
 
 The Q# community is constantly developing and adding new features to the
 existing libraries. For example, we plan to add more high-level functionality to
