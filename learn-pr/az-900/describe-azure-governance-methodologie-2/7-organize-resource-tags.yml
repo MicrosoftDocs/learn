@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.describe-azure-governance-methodologies.7-organize-resource-tags
+uid: learn.build-cloud-governance-strategy-azure.7-organize-resource-tags
 title: Organize your Azure resources by using tags
 metadata:
   description: Understand how tags enable you to describe your Azure resources.
