@@ -85,7 +85,7 @@ from QuantumRNG import GenerateRandomBit
 print(GenerateRandomBit.simulate())
 ```
 
-If your operation has input arguments, you can specify them by adding them
+If your operation has input arguments, you can specify them by inserting them
 between the brackets of `.simulate()`.
 
 ### [C# setup](#tab/tabid-cs)
