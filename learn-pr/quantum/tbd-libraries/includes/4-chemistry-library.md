@@ -97,14 +97,14 @@ With all of the heavy lifting taken care of by existing functions/operations in 
 1. Create Q# project, add the quantum chemistry library to it
 1. Get molecular data file
 1. Create Q# program which
-    - accepts properly encoded Hamiltonian from host program
-    - runs phase estimation algorithm
-    - returns energy level estimate
+    - accepts properly encoded Hamiltonian from host program.
+    - runs phase estimation algorithm.
+    - returns energy level estimate.
 1. Create host program to
-    - import molecular data file
-    - encode Hamiltonian to Q#-amenable form
-    - call Q# operation and receive returned energy estimate
-    - save, plot, or process that returned value to your heart's content
+    - import molecular data file.
+    - encode Hamiltonian to Q#-amenable form.
+    - call Q# operation and receive returned energy estimate.
+    - save, plot, or process that returned value to your heart's content.
 
 ## Explore further
 
