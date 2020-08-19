@@ -1,7 +1,7 @@
 ### YamlMime:Module
-uid: learn.quantum.tbd-entanglement
+uid: learn.quantum.concepts
 metadata:
-  title: TBD entanglement
+  title: Fundamental concepts of quantum computing with Q#
   description: TBD.
   ms.date: 09/19/2020
   author: KittyYeungQ
@@ -27,13 +27,15 @@ products:
 - qdk
 - azure-quantum
 units:
-- learn.quantum.tbd-entanglement.1-introduction
-- learn.quantum.tbd-entanglement.2-tbd
-- learn.quantum.tbd-entanglement.3-tbd
-- learn.quantum.tbd-entanglement.4-tbd
-- learn.quantum.tbd-entanglement.5-tbd
-- learn.quantum.tbd-entanglement.6-tbd
-- learn.quantum.tbd-entanglement.7-knowledge-check
-- learn.quantum.tbd-entanglement.8-summary
+- learn.quantum.concepts.1-introduction
+- learn.quantum.concepts.2-superposition-in-quantum-computing
+- learn.quantum.concepts.3-explore-superposition-with-qsharp
+- learn.quantum.concepts.4-interference-in-quantum-computing
+- learn.quantum.concepts.5-explore-interference-with-qsharp
+- learn.quantum.concepts.6-entanglement-in-quantum-computing
+- learn.quantum.concepts.7-explore-entanglement-with-qsharp
+- learn.quantum.concepts.8-introduction-to-quantum-algorithms
+- learn.quantum.concepts.9-knowledge-check
+- learn.quantum.concepts.10-summary
 badge:
-  uid: learn.quantum.tbd-entanglement.badge
+  uid: learn.quantum.concepts.badge

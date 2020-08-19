@@ -1,0 +1,66 @@
+### YamlMime:ModuleUnit
+uid: learn.quantum.concepts.9-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your understanding so far.
+  author: KittyYeungQ
+  ms.author: kitty
+  ms.date: 09/19/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-knowledge-check.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these statements is true about quantum computing.'
+    choices:
+    - content: 'A quantum computer uses superposition to calculate all inputs of an algorithm at once.'
+      isCorrect: false
+      explanation: 'Quantum computers do not calculate all inputs at once, but use superposition, interference, and entanglement to make more efficient algorithms.'
+    - content: 'A quantum computer is faster than classical computers for all tasks.'
+      isCorrect: false
+      explanation: 'Quantum computers provide an advantage only for certain tasks.'
+    - content: 'A quantum computer exploits superposition, interference, and entanglement to do calculations faster than classical computers.'
+      isCorrect: true
+      explanation: 'Learning how to exploit these phenomena is the key to design better quantum algorithms.'
+      
+  - content: 'The probability amplitude of a qubit state is:'
+    choices:
+    - content: 'The probability of obtaining such qubit state when measuring the qubit.'
+      isCorrect: false
+      explanation: 'The probability of obtaining the qubit state is the absolute value of the probability amplitude squared.'
+    - content: 'A complex number encoding the probability and the phase associated to such qubit state.'
+      isCorrect: true
+      explanation: 'We can obtain the probability by squaring the absolute value of the probability amplitude.'
+    - content: 'A complex number whose absolute value squared tells us the probability of the algorithm to succeed.'
+      isCorrect: false
+      explanation: 'Probability amplitudes do not tell us anything about the probability of the algorithm to succeed.'
+
+  - content: 'Qubit states behave similar to waves. Which of these statements is true about quantum interference:'
+    choices:
+    - content: 'Constructive interference occurs when two states of opposite phase superpose.'
+      isCorrect: false
+      explanation: 'Constructive interference occurs when we superpose two states of the same phase.'
+    - content: 'Quantum interference is a phenomenon in which electromagnetic waves produce noise in our quantum computations.'
+      isCorrect: false
+      explanation: 'Quantum interference is not related with electromagnetic interference.'
+    - content: 'We can exploit quantum interference to do calculations faster than with classical computers.'
+      isCorrect: true
+      explanation: 'Quantum interference is one of the key ingredients to achieve efficient quantum algorithms.'
+
+  - content: 'If two qubits are entangled:'
+    choices:
+    - content: 'Changing the state of one of the qubits directly changes the state of the other.'
+      isCorrect: false
+      explanation: 'Operations on one of the qubits do not modify the partial state of the other qubit.'
+    - content: 'The outcomes of measurements over those qubits are strongly correlated.'
+      isCorrect: true
+      explanation: 'Two qubits are entangled if measurements over the qubits present correlations that cannot be explained with classical physics alone.'
+    - content: 'Both qubits have always the same state, no matter how we manipulate them.'
+      isCorrect: false
+      explanation: 'Two qubits can be entangled but be in different states.'
