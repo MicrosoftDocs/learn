@@ -13,14 +13,14 @@ Design Recommendations:
 
 ## Governance
 
-Governance focuses on the mechanisms and processes to maintain control over applications and resources in Azure. Within Enteprise Scale, Azure Policy is an essential service to ensuring security and compliance within the enterprise estate. Policies enforce vital management and security conventions across Azure resources and platform services.
+Governance focuses on the mechanisms and processes to maintain control over applications and resources in Azure. Within Enterprise Scale, Azure Policy is an essential service to ensuring security and compliance within the enterprise estate. Policies enforce vital management and security conventions across Azure resources and platform services.
 
-A well planned combination of RBAC assignments and policies will ensure the appropriate guard rails are in place to control who can deploy and configure resources and what resources they can deploy and configure.
+A well-planned combination of RBAC assignments and policies will ensure the appropriate guard rails are in place to control who can deploy and configure resources and what resources they can deploy and configure.
 
 Design Recommendations:
 
 - Map regulatory and compliance requirements to Azure Policy definitions and Azure AD role-based access control assignments.
-- Manage policy assignments at the highest appropriate level with exclusions at bottom levels, if required.
+- Manage policy assignments at the highest appropriate level with exclusions at bottom levels, if necessary.
 - Define regulatory and compliance standards at the landing zone level. Not all applications within an enterprise estate must adhere to the same standards.
 
 ## Security monitoring and an audit policy
@@ -33,15 +33,15 @@ Design Recommendations:
 - Export Azure activity logs to Azure Monitor logs for long-term data retention and export to Azure Storage for long-term storage beyond two years, if necessary.
 - Use Azure Security Center and Azure Sentinel for monitoring and alerting.
 - Baseline security requirements for Azure services and desired state for VMs.
-- Determine patch level assessment, management and update process and responsibilities for VMs. Including emergency patch process.
+- Develop processes and assign responsibilities for patch management.
 
 ## Platform security
 
-It is essential to maintain a healthy security posture as you adopt Azure. Besides visibility, you must be able to control the initial settings and changes as the Azure services evolve. Therefore, planning for platform security is key.
+Planning for platform security is essential to maintain a healthy security posture in Azure. An organization must be able to control the initial platform settings and account for changes as the Azure services evolve.
 
 Design Recommendations
 
-- Develop a security allow-list plan to assess services security configuration, monitoring, alerts, and how to integrate these with existing systems.
+- Develop a security allow-list plan to assess a service's security configuration.
 - Determine incident response plan for Azure services before allowing.
 - Align your security requirements with Azure platform roadmaps to stay up to date with newly released security controls.
 - Implement a zero-trust approach for access to the Azure platform, where appropriate.
