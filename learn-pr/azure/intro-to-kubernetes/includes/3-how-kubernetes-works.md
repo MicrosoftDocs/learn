@@ -6,7 +6,7 @@ A cluster is a set of computers that you configure to work together and view as 
 
 A cluster uses centralized software that's responsible for scheduling and controlling these tasks. The **computers in a cluster that run the tasks are called nodes**, and the **computers that run the scheduling software are called control planes**.
 
-:::image type="content" source="../media/3-diagram-cluster.svg" alt-text="Diagram of a computer cluster." border="false":::
+:::image type="content" source="../media/3-diagram-cluster.svg" alt-text="Diagram of a computer cluster that shows how a task is distributed via the control plane to three nodes and the interaction between the nodes." border="false":::
 
 ## Kubernetes architecture
 
@@ -33,16 +33,16 @@ From a learning perspective, it makes sense to use a single control plane in you
 
 A node in a Kubernetes cluster is where your compute workloads run. Each node communicates with the control plane via the API server to inform it about state changes on the node.
 
-## Services that run in a control plane
+## Services that run on a control plane
 
-The following services make up the control plane in a Kubernetes cluster:
+The following services make up the control plane for a Kubernetes cluster:
 
 - API server
 - Backing store
 - Scheduler
 - Controller manager
 - Cloud controller manager
- 
+
 :::image type="content" source="../media/3-cluster-arch-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 ### What is the API server?
@@ -78,19 +78,21 @@ The controller communicates with the API server to determine the state of the ob
 
 Let's assume that one of three containers running in your cluster stops responding and has died. In this case, a controller decides whether you need to launch new containers to ensure that your applications are always available. If the wanted state is to run three containers at any time, then a new container is scheduled to run.
 
-#### What is the cloud controller manager?
+### What is the cloud controller manager?
 
 The cloud controller manager integrates with the underlying cloud technologies in your cluster when the cluster is running in a cloud environment. These services can be load balancers, queues, and storage, for example.
 
-## Services that run in a node
+## Services that run on a node
 
-The following services make up a node in a Kubernetes cluster:
+The are several services that runs on a Kubernetes node to control how workloads run.
+
+:::image type="content" source="../media/3-cluster-arch-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on a Kubernetes node." border="false":::
+
+The following services runs on the Kubernetes node:
 
 - Kubelet
 - Kube-proxy
 - Container runtime
-
-:::image type="content" source="../media/3-cluster-arch-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 ### What is the kubelet?
 
@@ -124,19 +126,19 @@ You can configure `kubectl` to connect to multiple clusters by providing the cor
 
 ## Kubernetes pods
 
-The workloads that you run on Kubernetes are containerized applications. However, unlike in a Docker environment, you can't run containers directly on Kubernetes. You package the container into a Kubernetes object. This object is called a pod and is the smallest object that you can create in Kubernetes.
-
-A pod represents a single instance of an application. A single pod can also hold a group of one or more containers. However, a pod typically doesn't contain multiples of the same application.
-
-A pod includes information about the shared storage and network configuration, and a specification on how to run its packaged containers. You use pod templates to define the information about the pods that run in your cluster. Pod templates are YAML coded files that you reuse and include in other objects to manage pod deployments.
-
-For example, assume that you want to deploy a website to a Kubernetes cluster. You create the pod definition file that specifies the application's container images and configuration. Then you deploy the pod definition file to Kubernetes.
+A pod represents a single instance of an application running in Kubernetes. The workloads that you run on Kubernetes are containerized applications. Unlike in a Docker environment, you can't run containers directly on Kubernetes. You package the container into a Kubernetes object called a pod. A pod is the smallest object that you can create in Kubernetes.
 
 :::image type="content" source="../media/3-diagram-pod-with-website.svg" alt-text="Diagram of a pod with a website as the primary container." border="false":::
 
-It's unlikely that a web application has a website as the only component in the solution. A web application typically has some kind of datastore and other supporting elements. Kubernetes pods can also contain more than one container.
+A single pod can hold a group of one or more containers. However, a pod typically doesn't contain multiples of the same application.
+
+A pod includes information about the shared storage and network configuration, and a specification on how to run its packaged containers. You use pod templates to define the information about the pods that run in your cluster. Pod templates are YAML coded files that you reuse and include in other objects to manage pod deployments.
 
 :::image type="content" source="../media/3-diagram-pod-with-website-database.svg" alt-text="Diagram of pod with a website as the primary container and a supporting container. The node has both an assigned IP address and a localhost host address." border="false":::
+
+For example, assume that you want to deploy a website to a Kubernetes cluster. You create the pod definition file that specifies the application's container images and configuration. Then you deploy the pod definition file to Kubernetes.
+
+It's unlikely that a web application has a website as the only component in the solution. A web application typically has some kind of datastore and other supporting elements. Kubernetes pods can also contain more than one container.
 
 Assume that your site uses a database. The website is packaged in the main container, and the database is packaged in the supporting container. For these two containers to function and communicate with each other, you expect them to run in an environment that provides a host OS, a network stack, kernel namespaces, shared memory, and volumes to persist data. The pod is the sandbox environment that provides all of these services to your application. The pod also allows the containers to share its assigned IP address.
 
@@ -144,9 +146,7 @@ Because you can potentially create many pods that are running on many nodes, it 
 
 ### Life cycle of a Kubernetes pod
 
-Kubernetes pods have a distinct life cycle that affects the way you deploy, run, and update pods.
-
-You start by submitting the pod YAML manifest to the cluster. After the manifest file is submitted and persisted to the cluster, it defines the wanted state of the pod. The scheduler schedules the pod to a healthy node that has enough resources to run the pod.
+Kubernetes pods have a distinct life cycle that affects the way you deploy, run, and update pods. You start by submitting the pod YAML manifest to the cluster. After the manifest file is submitted and persisted to the cluster, it defines the wanted state of the pod. The scheduler schedules the pod to a healthy node that has enough resources to run the pod.
 
 :::image type="content" source="../media/3-pod-lifecycle.svg" alt-text="Diagram that shows the life cycle of a pod." border="false":::
 

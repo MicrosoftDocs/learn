@@ -1,6 +1,6 @@
 The drone tracking application has several components that are deployed separately from each other. It's your job to configure deployments for these components on the cluster. Here you'll look at some of the deployment options available to you to deploy these components.
 
-:::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that describes the drone tracking solution." border="false":::
+:::image type="content" source="../media/1-drone-solution-arch.svg" alt-text="Diagram of the high-level architecture that depicts the drone tracking solution components." border="false":::
 
 ## Pod deployment options
 
@@ -15,11 +15,13 @@ You can use any of these four Kubernetes object type definitions to deploy a pod
 
 ## What is a pod template?
 
-A pod template is used to deploy pods manually. A manually deployed pod isn't relaunched after it fails, is deleted, or is terminated.
+A pod template allows you to define the configuration of the pod you wish to deploy. The template contains information such as the name of container image, which container registry to use to fetch the images, as well as configuration images such as ports to use. Templates are defined by using YAML in the same way as when you create Docker files.
+
+You can use templates to deploy pods manually. However, a manually deployed pod isn't relaunched after it fails, is deleted, or is terminated. To manage the lifecycle of a pod, you need to create a higher level Kubernetes object.
 
 ## What is a replication controller?
 
-A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod and ensures the specified number of pods are always running on one or more nodes in the cluster. A replication controller will replace pods launched in this way with new pods if they fail, are deleted, or are terminated.
+A replication controller uses pod templates and defines a specified number of pods that must run. The controller helps you run multiple instances of the same pod and ensures the specified number of pods are always running on one or more nodes in the cluster. The controller will replace pods launched in this way with new pods if they fail, are deleted, or are terminated.
 
 For example, assume you deploy the drone tracking front-end website and users start accessing the website. If all the pods fail for any reason, the website is unavailable to your users unless you launch new pods. A replication controller helps you make sure your website is always available.
 
@@ -31,7 +33,7 @@ A selector allows the replica set to identify all the pods running underneath it
 
 ## What is a deployment?
 
-A deployment creates a management object one level higher than a replica set. You can use deployment management updates to manage how you update pods in a cluster.
+A deployment creates a management object one level higher than a replica set that allows you to deploy and manage how you update pods in a cluster.
 
 Assume that you have five instances of your application deployed in your cluster. There are five pods running version 1.0.0 of your application.
 
@@ -121,13 +123,17 @@ For example, assume that you have many running pods. Only a few of these pods ar
 
 Kubernetes uses the same storage volume concept that you find when using Docker. Docker volumes are less managed than the Kubernetes volumes because Docker volume lifetimes aren't managed. The Kubernetes volume's lifetime is an explicit lifetime that matches the pod's lifetime. This lifetime match means a volume outlives the containers that run in the pod. However, if the pod is removed, so is the volume.
 
+:::image type="content" source="../media/4-kubernetes-storage.svg" alt-text="Diagram of a service with selector labels." border="false":::
+
 Kubernetes provides options to provision persistent storage with the use of *PersistentVolumes*. You can also request specific storage for pods by using *PersistentVolumeClaims*.
 
 Keep both of these options in mind when you're deploying application components that require persisted storage like message queues and databases.
 
 ## Cloud integration considerations
 
-Kubernetes doesn't dictate the technology stack you use in your cloud-native application. In a cloud environment such as Azure, you can use several services outside the Kubernetes cluster. Recall from earlier that Kubernetes doesn't provide any of the following services:
+Kubernetes doesn't dictate the technology stack you use in your cloud-native application. In a cloud environment such as Azure, you can use several services outside the Kubernetes cluster.
+
+Recall from earlier that Kubernetes doesn't provide any of the following services:
 
 - Middleware
 - Data-processing frameworks
@@ -135,6 +141,6 @@ Kubernetes doesn't dictate the technology stack you use in your cloud-native app
 - Caches
 - Cluster storage systems
 
-Let's review the drone tracking solution, there are three services that provide middleware functionality. There's a NoSQL database, an in-memory cache service, and a message queue. You might choose to use MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
+In the example drone tracking solution, there are three services that provide middleware functionality. There's a NoSQL database, an in-memory cache service, and a message queue. You might choose to use MongoDB Atlas for the NoSQL solution, Redis to manage in-memory cache and RabbitMQ, or Kafka, depending on your message queue needs.
 
 When you're using a cloud environment such as Azure, it's a best practice to make use of services outside the Kubernetes cluster. This decision can simplify the cluster's configuration and management. For example, you can use *Azure Cache for Redis* for the in-memory caching services, *Azure Service Bus messaging* for the message queue, and *Azure Cosmos DB* for the NoSQL database.

@@ -1,27 +1,27 @@
+The decoupled design of microservices combined with the atomicity of containers make it possible to scale out applications and respond to increased demand by deploying more container instances and to scale back in if demand is decreasing.
+In complex solutions like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
+
 Before we look at what Kubernetes is, let's summarize a few concepts that are key to containerized workloads.
 
 ## What is container management?
+
+Container management is the process of organizing, adding, removing, or updating a significant number of containers.
 
 The drone tracking application consists of multiple microservices, responsible for tasks like caching, queuing, or data processing. Each of these services is hosted in a container and can be deployed, updated, and scaled independently from the other.
 
 :::image type="content" source="../media/2-container.png" alt-text="An image of a server or application that is replicated as containers for cloud deployment." border="false":::
 
-The decoupled design of microservices combined with the atomicity of containers make it possible to scale out the application and respond to increased demand by deploying more container instances and to scale back in if demand is decreasing.
-In complex solutions like the drone tracking app, the process of deploying, updating, monitoring, and removing containers introduces challenges.
-
-You find that at specific times during the day, you need more instances of the site's caching service to keep performance up, so you add more caching service container instances.
+For example, with the drone tracking app's website, you find that at specific times during the day, you need more instances of the site's caching service to keep performance up, so you add more caching service container instances.
 
 Now assume, that you've increased the number of caching instances and need to roll out a new version of the microservice. You'll have to make sure to update **all** the active containers.
 
-The examples above justify a system to help you with these otherwise manual tasks.
-
-**Container management is the process of organizing, adding, removing, or updating a significant number of containers**.
+Container management helps you with these otherwise manual tasks.
 
 ## What is container orchestration?
 
 A container orchestrator is a system that automatically deploys and manages containerized applications. For example, the orchestrator can dynamically respond to changes in the environment to increase or decrease the deployed instances of the managed application. Or, it can ensure all deployed container instances get updated if a new version of a service is released.
 
-:::image type="content" source="../media/example_tasks_of_orchestrator.png" alt-text="Shows how number of deployed container instances is automatically increased if demand rises and how an orchestrator can ensure all deployed instances are updated with new software versions." border="false":::
+:::image type="content" source="../media/2-tasks-of-orchestrator.svg" alt-text="Shows how number of deployed container instances is automatically increased if demand rises and how an orchestrator can ensure all deployed instances are updated with new software versions." border="false":::
 
 ## Define Kubernetes
 
@@ -32,7 +32,11 @@ Kubernetes abstracts away complex container management tasks and provides you wi
 
 ## Kubernetes benefits
 
-The benefits of using Kubernetes are based on the abstraction of tasks. These tasks include:
+The benefits of using Kubernetes are based on the abstraction of tasks.
+
+:::image type="content" source="../media/2-kubernetes-benefits.svg" alt-text="Image that lists three Kubernetes benefits that includes self-healing, dynamic scaling, and rolling updates." border="false":::
+
+These tasks include:
 
 - Self-healing of containers. Example would be restarting containers that fail or replacing containers.
 
@@ -52,6 +56,8 @@ The benefits of using Kubernetes are based on the abstraction of tasks. These ta
 ## Kubernetes considerations
 
 With Kubernetes, you can view your datacenter as one large compute resource. You don't worry about how and where you deploy your containers, only about deploying and scaling your applications as needed.
+
+:::image type="content" source="../media/2-kubernetes-considerations.svg" alt-text="Image that shows a list of Kubernetes components that including monitoring, microservices, databases and the Docker runtime." border="false":::
 
 However, it's important to understand that Kubernetes isn't a single installed application that comes with all possible components needed to manage and orchestrate a containerized solution.
 
