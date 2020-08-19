@@ -122,7 +122,7 @@ C# is:
   dotnet new sln -n quantum-dotnet
   dotnet sln quantum-dotnet.sln add ./quantum/quantum.csproj
   dotnet sln quantum-dotnet.sln add ./host/host.csproj
-
+  ```
 Once you have your projects set up following the above instructions, you can call into Q# from your .NET console application.
 The Q# compiler will create .NET classes for each Q# operation and function that allow you to run your quantum programs on a simulator.
 
