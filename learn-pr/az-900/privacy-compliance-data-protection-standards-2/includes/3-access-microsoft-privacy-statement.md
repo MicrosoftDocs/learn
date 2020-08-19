@@ -32,8 +32,8 @@ To access the DPA:
 1. In the search bar, enter *DPA*.
 1. From the search results, locate the link to the DPA in your preferred language.
 
-    Alternatively, in the search bar that appears, enter your preferred language to filter the results. Here's an example that retrieves the English version of the DPA.
+    Alternatively, in the search bar that appears, enter your preferred language to filter the results. Here's an example that retrieves the English version of the DPA:
 
-:::image type="content" source="../media/3-dpa-english.png" alt-text="A screenshot of the Licensing Terms and Documentation page, showing how to download the English version of the Data Protection Addendum.":::
+    :::image type="content" source="../media/3-dpa-english.png" alt-text="A screenshot of the Licensing Terms and Documentation page, showing how to download the English version of the Data Protection Addendum.":::
 
 Transparency is important when it comes to how a cloud provider communicates its privacy policies and how it treats your data. The Microsoft Privacy Statement, the OST, and the DPA detail Microsoft's commitment to protecting data and privacy in the cloud.
