@@ -57,7 +57,7 @@ To use Azure Advisor to review cost recommendations, use the following procedure
 
 5. Selecting a recommendation takes you to the details for that specific recommendation. You can then take a specific action, such as resizing VMs to reduce cost.
 
-     ![Screenshot of Azure portal Advisor with several specific VMs to resize or shut down, and their potential savings.](../media/m21-advisor-resize-vm.png)
+     ![Screenshot of Azure portal Advisor with several specific VMs to resize or shut down, and their potential savings.](../media/m21-advisor-resize-virtual-machine.png)
 
 ## What is Azure Cost Management?
 
@@ -114,4 +114,4 @@ If you've VM workloads that you don't use all of the time, but you're running th
 
 To deallocate a VM, from the Azure portal, locate the VM you want to configure, and in the **Operations** section, select **Auto-shutdown**. Then configure the auto-shutdown properties.
 
-![Screenshot of Azure portal Auto-shutdown section of a virtual machine pane, with a shutdown time enabled for 7:00:00 PM.](../media/m21-vm-auto-shutdown.png)
+![Screenshot of Azure portal Auto-shutdown section of a virtual machine pane, with a shutdown time enabled for 7:00:00 PM.](../media/m21-virtual-machine-auto-shutdown.png)

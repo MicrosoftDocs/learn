@@ -2,9 +2,9 @@
 uid: learn.wwl.understand-windows-server-iaas-vm-cost-management.use-azure-pricing-calculator-to-estimate-costs
 title: Use the Pricing calculator to estimate costs
 metadata:
-  title: 2-use-azure-pricing-calculator-to-estimate-costs.md
-  description: "2-use-azure-pricing-calculator-to-estimate-costs.md"
-  ms.date: 08/20/2020
+  title: Use the Pricing calculator to estimate costs
+  description: "Use the Pricing calculator to estimate costs"
+  ms.date: 08/21/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 5
 content: |
-  [!include[](includes/2-use-azure-pricing-calculator-to-estimate-costs.md)]
+  [!include[](includes/2-use-azure-pricing-calculator-estimate-costs.md)]

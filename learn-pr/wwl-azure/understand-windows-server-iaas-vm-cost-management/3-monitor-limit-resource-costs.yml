@@ -2,9 +2,9 @@
 uid: learn.wwl.understand-windows-server-iaas-vm-cost-management.monitor-limit-resource-costs
 title: Monitor and limit Azure resource costs
 metadata:
-  title: 3-monitor-limit-resource-costs.md
-  description: "3-monitor-limit-resource-costs.md"
-  ms.date: 08/20/2020
+  title: Monitor and limit Azure resource costs
+  description: "Monitor and limit Azure resource costs"
+  ms.date: 08/21/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
