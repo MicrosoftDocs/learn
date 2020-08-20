@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.6-linkedtemplates
+uid: learn.azure.resource-manager-template-deploy-integrate.4-linkedtemplates
 title: Deploying linked and nested ARM templates
 metadata:
   title: Deploying linked and nested ARM templates
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-linkedtemplates.md)]
+  [!include[](includes/4-linkedtemplates.md)]

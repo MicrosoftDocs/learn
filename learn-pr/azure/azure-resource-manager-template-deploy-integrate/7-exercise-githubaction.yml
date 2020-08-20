@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.9-exercise-githubaction
+uid: learn.azure.resource-manager-template-deploy-integrate.7-exercise-githubaction
 title: Exercise - Deploying your ARM templates as part of your CI\CD efforts with GitHub Actions
 metadata:
   title: Exercise - Deploying your ARM templates as part of your CI\CD efforts with GitHub Actions
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/9-exercise-githubaction.md)]
+  [!include[](includes/7-exercise-githubaction.md)]

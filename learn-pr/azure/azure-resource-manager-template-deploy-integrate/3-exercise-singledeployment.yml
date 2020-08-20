@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.5-exercise-singledeployment
+uid: learn.azure.resource-manager-template-deploy-integrate.3-exercise-singledeployment
 title: Exercise - Deploying your ARM templates
 metadata:
   title: Exercise - Deploying your Azure Manager Resource Templates
@@ -13,4 +13,4 @@ metadata:
 azureSandbox: true
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-singledeployment.md)]
+  [!include[](includes/3-exercise-singledeployment.md)]

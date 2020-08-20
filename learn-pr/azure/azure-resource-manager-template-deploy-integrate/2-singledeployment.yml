@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.resource-manager-template-deploy-integrate.4-singledeployment
+uid: learn.azure.resource-manager-template-deploy-integrate.2-singledeployment
 title: Deploying your ARM templates
 metadata:
   title: Deploying your ARM templates
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-singledeployment.md)]
+  [!include[](includes/2-singledeployment.md)]
