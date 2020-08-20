@@ -6,7 +6,7 @@ In building out their plan, Tailwind Traders learns that:
 * Authorization (AuthZ) establishes the level of access an authenticated user has.
 * Single sign-on (SSO) enables a user to sign in one time and use that credential to access multiple resources and applications.
 * Azure AD is a cloud-based identity and access management service. Azure AD enables you to control access to apps and resources based on your business requirements.
-* Multi-factor authentication (MFA) provides additional security for your identities by requiring two or more elements to fully authenticate. MFA can include something you know, something you possess, and something you are.
+* Multi-factor authentication (MFA) provides additional security for your identities by requiring two or more elements to fully authenticate. MFA can include something you know, something you have, and something you are.
 * Conditional Access is a tool that's used by Azure AD to allow or deny access to resources based on identity signals such as the user's location.
 
 With these ideas in place, the software development and IT administrator teams can begin to replace their existing authentication systems with ones that use multiple factors and allow access to multiple applications.
