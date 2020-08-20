@@ -56,7 +56,7 @@ To get started with Azure machine Learning designer, first you must create a pip
     - There are two missing values in the **CulmenLength** column (the **CulmenDepth**, **FlipperLength**, and **BodyMass** columns also have two missing values).
     - The measurement values are in different scales (from tens of millimeters to thousands of grams).
 
-7. Close the dataset visualization so you can see the dataset on the pipeline canvas.
+8. Close the dataset visualization so you can see the dataset on the pipeline canvas.
 
 ## Apply transformations
 
@@ -74,7 +74,7 @@ To cluster the penguin observations, we're going to use only the measurements; s
 > ![include column names CulmenLength, CulmenDepth, FlipperLength, and BodyMass](../media/select-columns.png)
 
 4. Save the **Select Columns in a Dataset** module settings to return to the designer canvas.
-5.Drag a **Clean Missing Data** module to the canvas, below the **Select columns in a dataset** module and connect them like this:
+5. Drag a **Clean Missing Data** module to the canvas, below the **Select columns in a dataset** module and connect them like this:
 
 > [!div class="centered"]
 > ![Connect the output of the Select Columns in Dataset module to the input of the Clean Missing Data module](../media/clean-missing-data.png)
@@ -84,22 +84,22 @@ To cluster the penguin observations, we're going to use only the measurements; s
 > [!div class="centered"]
 > ![Use the With rules option to Select all columns](../media/normalize-columns.png)
 
-6. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings:
+7. With the **Clean Missing Data** module still selected, in the settings pane, set the following configuration settings:
     - **Minimum missing value ratio**: 0.0
     - **Maximum missing value ratio**: 1.0
     - **Cleaning mode**: Remove entire row
 
-7.Drag a **Normalize Data** module to the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
+8. Drag a **Normalize Data** module to the canvas, below the **Clean Missing Data** module. Then connect the left-most output from the **Clean Missing Data** module to the input of the **Normalize Data** module.
 
 > [!div class="centered"]
 > ![Connect the output of the Clean Missing Data module to the input of the Normalize Data module](../media/dataset-normalize.png)
 
-8. Select the **Normalize Data** module, and in its **Settings** pane on the right, set the **Transformation method** to **MinMax** and select **Edit column**. Then in the **Select columns** window, select **With rules** and include **All columns**; like this:
+9. Select the **Normalize Data** module, and in its **Settings** pane on the right, set the **Transformation method** to **MinMax** and select **Edit column**. Then in the **Select columns** window, select **With rules** and include **All columns**; like this:
 
 > [!div class="centered"]
 > ![Use the With rules option to Select all columns](../media/normalize-columns.png)
 
-9. Save the **Normalize Data** module settings to return to the designer canvas.
+10. Save the **Normalize Data** module settings to return to the designer canvas.
 
 ## Run the pipeline
 
