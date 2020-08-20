@@ -2,14 +2,14 @@
 uid: learn.languages.serverless-fundamentals.use-azure-functions
 title: Use Azure Functions
 metadata:
-  title: Use Azure Functions
-  description: TODO
+  title: Use Azure Functions for building complex with imperative code
+  description: Analyze a scenario that requires custom code to be executed on demand.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 azureSandbox: false
 content: |
   [!include[](includes/4-use-azure-functions.md)]
