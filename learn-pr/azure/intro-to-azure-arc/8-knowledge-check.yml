@@ -47,10 +47,10 @@ quiz:
     - content: "Configuring the time zone on the Windows operating system."
       isCorrect: false
       explanation: "That's incorrect. You cannot use Azure Policy to perform this function."
-    - content: "Validating such settings as configurations of the operating system, applications, and environment settings."
+    - content: "Validating settings such as configuration of the operating system, applications, and environment settings."
       isCorrect: true
       explanation: "That's correct. You can use Azure Policy with Azure Arc resources to perform this function."
-    - content: "Restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource."
+    - content: "Restricting access to Log Analytics data based on the permissions to the corresponding Azure resource."
       isCorrect: false
       explanation: "That's incorrect. This is a function of RBAC permissions in Azure Arc."
 
