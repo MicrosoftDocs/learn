@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-python-nasa.7-summary
+metadata:
+  title: Summary
+  description: Summary of the role of Python in space exploration Learn module.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Summary
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

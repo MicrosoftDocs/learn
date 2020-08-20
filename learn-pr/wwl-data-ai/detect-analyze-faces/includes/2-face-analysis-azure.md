@@ -17,7 +17,7 @@ Azure Face Service currently supports the following functionality:
 - Group faces based on similarities
 - Identify people
 
-While you can ask the service to return the rectangle coordinates for any human faces that are found in an image, you can also request a series of attributes related to faces such as:
+The Face service can return the rectangle coordinates for any human faces that are found in an image, as well as a series of attributes related to those faces such as:
 
 - the head pose - orientation in a 3D space
 - the gender of the detected faces
@@ -48,17 +48,9 @@ Whichever type of resource you choose to create, it will provide two pieces of i
 
 ## Tips for more accurate results
 
-There are some considerations that can help improve the accuracy of the detection in the images.  
-
-For still images, such as photographs, consider:
+There are some considerations that can help improve the accuracy of the detection in the images:
 
 - image format - supported images are JPEG, PNG, GIF, and BMP
 - file size - 4 MB or smaller
 - face size range - from 36 x 36 up to 4096 x 4096.   Smaller or larger faces will not be detected
 - other issues - face detection can be impaired by extreme face angles, occlusion (objects blocking the face such as sunglasses or a hand).  Best results are obtained when the faces are full-frontal or as near as possible to full-frontal
-
-Improving detection when using video feeds can be accomplished by considering the following aspects:
-
-- smoothing - if your video camera applies this effect, turn it off.  The potential blur between frames tends to reduce clarity of the image in individual frames.
-- shutter speed - faster shutter speeds improves clarity of the images in each frame because the motion is reduced.
-- shutter angle - if your camera supports shutter angle, use a lower shutter angle to produce clearer frames, resulting in better clarity for recognition.
