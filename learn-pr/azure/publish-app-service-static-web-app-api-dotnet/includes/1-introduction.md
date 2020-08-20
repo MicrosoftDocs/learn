@@ -8,7 +8,7 @@ Azure Static Web Apps solves the hard problems all the way from your source code
 
 While you stay focused on developing your app, Azure Static Web Apps automatically builds and hosts it from a GitHub repository.
 
-Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
+Static web apps are commonly built using WebAssembly frameworks such as Blazor, as well as JavaScript frameworks and libraries. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
 With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points globally distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
 
@@ -35,25 +35,13 @@ Azure hosts and serves your web app while Azure Functions powers back-end API fu
 
 In this tutorial, you'll create, modify, and deploy a web app and API to Azure Static Web Apps.
 
-### Choose your own path
-
-This tutorial provides four variations of the sample application for you to choose from: Angular, React, Svelte, and Vue. The power of Azure Static Web Apps is that all of these flavors "just work".
-
-The starter code includes the four apps and the starting point for an API that you'll use.
-
-```files
-├ angular-app  👈 The Angular client app
-├ api-starter  👈 The API starter app. You'll use this later
-├ react-app    👈 The React client app
-├ svelte-app   👈 The Svelte client app
-└ vue-app      👈 The Vue client app
-```
+This tutorial provides a sample Blazor application, as well as an API written in C#.
 
 ### What you'll do
 
 Once you choose your client application, you'll:
 
-1. Build and run your front-end application
+1. Build and run your Blazor application
 1. Create your API with Azure Functions
 1. Modify your web app to make HTTP requests to your API
 1. Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions
