@@ -37,15 +37,13 @@ products:
 - vs-code
 units:
 - learn.azure.resource-manager-template-deploy-integrate.1-introduction
-- learn.azure.resource-manager-template-deploy-integrate.2-whatif
-- learn.azure.resource-manager-template-deploy-integrate.3-exercise-whatif
-- learn.azure.resource-manager-template-deploy-integrate.4-singledeployment
-- learn.azure.resource-manager-template-deploy-integrate.5-exercise-singledeployment
-- learn.azure.resource-manager-template-deploy-integrate.6-linkedtemplates
-- learn.azure.resource-manager-template-deploy-integrate.7-exercise-linkedtemplates
-- learn.azure.resource-manager-template-deploy-integrate.8-githubaction
-- learn.azure.resource-manager-template-deploy-integrate.9-exercise-githubaction
-- learn.azure.resource-manager-template-deploy-integrate.10-knowledge-check
-- learn.azure.resource-manager-template-deploy-integrate.11-summary
+- learn.azure.resource-manager-template-deploy-integrate.2-singledeployment
+- learn.azure.resource-manager-template-deploy-integrate.3-exercise-singledeployment
+- learn.azure.resource-manager-template-deploy-integrate.4-linkedtemplates
+- learn.azure.resource-manager-template-deploy-integrate.5-exercise-linkedtemplates
+- learn.azure.resource-manager-template-deploy-integrate.6-githubaction
+- learn.azure.resource-manager-template-deploy-integrate.7-exercise-githubaction
+- learn.azure.resource-manager-template-deploy-integrate.8-knowledge-check
+- learn.azure.resource-manager-template-deploy-integrate.9-summary
 badge:
   uid: learn.azure.resource-manager-template-deploy-integrate.badge

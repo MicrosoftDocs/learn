@@ -10,7 +10,7 @@ Unlike the last unit, When referencing a linked template, you cannot use a local
 
 To use linked templates, the templates must first be staged on a publicly accessible endpoint such as GitHub or an Azure Storage Blob. When using an Azure Storage account secured by a SAS token to keep your templates secure from public access.
 
-To add a linked template to your ARM template, add a *Microsoft.Resources/deployments* resource and the templateLink property configured with the location of the template. 
+To add a linked template to your ARM template, add a *Microsoft.Resources/deployments* resource and the templateLink property configured with the location of the template.
 
 :::code language="json" source="../Code/linkedtemplatesample.json" highlight="8-15":::
 

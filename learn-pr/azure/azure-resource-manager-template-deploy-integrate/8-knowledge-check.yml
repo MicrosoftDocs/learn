@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.resource-manager-template-deploy-integrate.10-knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge.
+  ms.date: 10/15/2020
+  author: pierreroman
+  ms.author: pierrer
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/10-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What scenario describes most accurately the benefits of using the what-if operation when deploying a resource in Azure?"
+    choices:
+    - content: "To validate if an ARM template uses recommended practices at the time of deployment"
+      isCorrect: false
+      explanation: "The ARM template test toolkit checks your template for recommended practices. The what-if operation lets you see how resources will change if you deploy the template.  "
+    - content: "To verify the effects and impact of the deployment of the template"
+      isCorrect: true
+      explanation: "the what-if operation to let you see how resources will change if you deploy the template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed."
+    - content: "To deploy the template in a sandbox environment in order to validate if the results of the deployment match expected results"
+      isCorrect: false
+      explanation: "The what-if operation evaluates the effects the deployment of the template against the target environment without making ANY changes to the environment"
+  - content: "When using linked templates, where can you store the linked artifacts?"
+    choices:
+    - content: "On a networked server accessible over SMB"
+      isCorrect: false
+      explanation: "When referencing a linked template, you cannot use a local file or a file that is only available on your local network"
+    - content: "On any publicly accessible endpoint accessible through http or https"
+      isCorrect: true
+      explanation: "When referencing a linked template, you must provide a URI value that downloadable as http or https."
+    - content: "On any publicly accessible endpoint accessible through FTP"
+      isCorrect: false
+      explanation: "When referencing a linked template, you must provide a URI value that downloadable as http or https."
+  - content: "When deploying a template through GitHub Actions, you must provide authentication credentials in what form?" 
+    choices:
+    - content: "You can provide your own username and template as part of a configured secret in your GitHub repository settings"
+      isCorrect: false
+      explanation: "you can automate your workflow to do an Azure login using an Azure service principal"
+    - content: "You cannot use users credentials part of a configured secret in your GitHub repository settings"
+      isCorrect: true
+      explanation: "You can provide Service Principal credentials part of a configured secret in your GitHub repository settings"
+    - content: "You can provide Shared Access Signature part of a configured secret in your GitHub repository settings"
+      isCorrect: false
+      explanation: "Shared Access Signature or SAS token are used to provides secure delegated access to resources in your storage account without compromising the security of your data."

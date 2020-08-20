@@ -1,7 +1,7 @@
 ﻿As we mentioned in previous modules,
 
-  1. [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/en-us/learn/modules/create-azure-resource-manager-template-vs-code/)
-  1. [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/en-us/learn/modules/modify-azure-resource-manager-template-reuse/)
+  1. [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/)
+  1. [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/)
 
 Microsoft Azure Resource Manager (ARM) templates allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and saved in the same source control as your development project.
 
