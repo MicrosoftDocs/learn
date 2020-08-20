@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.using-iaas-support-azure-sap-workloads.learn.wwl.deploy-sap-certified-offerings.high-availability-disaster-recovery-support-sap-workloads
+uid: learn.wwl.deploy-sap-certified-offerings.high-availability-disaster-recovery-support-sap-workloads
 title: High availability and disaster recovery support of Azure for SAP workloads
 metadata:
   title: High availability and disaster recovery support of Azure for SAP workloads
   description: "High availability and disaster recovery support of Azure for SAP workloads"
-  ms.date: 01/13/2020
+  ms.date: 08/23/2020
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
