@@ -16,7 +16,7 @@ print("Artemis Rover Rock Scanner Starting")
 Artemis Rover Rock Scanner Starting
 ```
 
-Next, we want to create some variables that will represent the count of the different types of rocks that Artemis found on the Moon. The specific rocks that we're looking for are: Basalt: The Mare Rock, Breccia: Shocked Rock, Highland Rock: Anorthosite, and Megalith Soil/Surface Layer. These types are the four main types of rocks found on the Moon.
+Next, we want to create some variables that will represent the count of the different types of rocks that Artemis found on the Moon. The specific rocks that we're looking for are: Basalt: The Mare Rock, Breccia: Shocked Rock, Highland Rock: Anorthosite, and Regolith Soil/Surface Layer. These types are the four main types of rocks found on the Moon.
 
 Let's make some variables with names of "basalt", "breccia", "highland", and "regolith". We can also set these variables to 0 since we've not yet counted any rocks. Finally, make a list called rockList that will store the names of every rock the rover found. We can make the list empty, setting it equal to brackets with nothing inside them.
 
