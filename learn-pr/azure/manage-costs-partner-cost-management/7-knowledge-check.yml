@@ -29,14 +29,14 @@ quiz:
     choices:
     - content: InvoiceID
       isCorrect: true
-      explanation: This filter only includes costs that roll up to the specified Invoice ID.
+      explanation: This filter includes only costs that roll up to the specified invoice ID.
     - content: MyInvoice
       isCorrect: false
-      explanation: MyInvoice isn't a dimensional filter supported by Cost Analysis.
+      explanation: MyInvoice isn't a dimensional filter that Cost Analysis supports.
     - content: BillID
       isCorrect: false
-      explanation: BillID isn't a dimensional filter supported by Cost Analysis.
-  - content: "What dimension in Cost Analysis can be used to determine whether a resource charge has received Partner Earned Credit?"
+      explanation: BillID isn't a dimensional filter that Cost Analysis supports.
+  - content: "What dimension can you use in Cost Analysis to determine whether a resource charge has received Partner Earned Credit?"
     choices:
       - content: PartnerCredit
         isCorrect: false
@@ -65,7 +65,7 @@ quiz:
         explanation: Although monthly is a supported budget period, weekly and hourly budgets aren't supported.
       - content: Monthly, quarterly, and annual
         isCorrect: true
-        explanation: A budget can be created with any of the evaluation periods above.
+        explanation: A budget can be created with any of these evaluation periods.
       - content: Monthly and quarterly
         isCorrect: false
-        explanation: Although both of the evaluation periods above are supported, the annual period is also supported.
+        explanation: Although both of these evaluation periods are supported, the annual period is also supported.
