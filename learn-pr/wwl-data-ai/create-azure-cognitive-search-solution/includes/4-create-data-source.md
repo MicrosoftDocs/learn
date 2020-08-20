@@ -15,7 +15,8 @@ An Azure Cognitive Search data source can reference any of the following types o
 
 ![A data source.](../media/data-source.png)
 
-In this module, we'll use Azure Storage as the data source for a search solution, but it's important to consider the available options. Azure Storage is appropriate when the data to be indexed consists of files, such as Microsoft Office or PDF documents, while Cosmos DB is a great choice when you need to index JSON data structures and Azure SQL Database is ideal for relational data sources.
+> [!NOTE]
+> In this module, we'll use Azure Storage as the data source for a search solution, but it's important to consider the available options. Azure Storage is appropriate when the data to be indexed consists of files, such as Microsoft Office or PDF documents. Cosmos DB is a great choice when you need to index JSON data documents, and includes native integration with Azure Cognitive Search in the Azure portal. Azure SQL Database is ideal for relational databases, commonly used for business application data storage.
 
 ## Create a data source for Margie's Travel
 

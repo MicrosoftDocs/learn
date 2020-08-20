@@ -102,8 +102,14 @@ Recall we will get an OS disk (C:) and Temporary disk (D:). Let's add a data dis
     - **Subnet range**: the first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
 
 1. Let's change the default ranges to use the `172.xxx` IP address space. Click **Create New** under Virtual Network.
+
+    In the **Address space** section:
+    
     - Change the **Address space** field to be `172.16.0.0/16` to give it the full range of addresses
-    - Change the **Subnet range** field to be `172.16.1.0/24` to give it 256 IP addresses of the space.
+    
+    In the **Subnets** section:
+    - Leave the **Subnet name** set as *default*.
+    - Change the **Address range** field to be `172.16.1.0/24` to give it 256 IP addresses of the space.
 
 1. Click **OK**.
 
