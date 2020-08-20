@@ -8,7 +8,6 @@
         -Virtual WAN hubs are locked down, and the only resources that you can deploy within them are virtual network gateways (Point-to-Site VPN, Site-to-Site VPN, and ExpressRoute), Azure Firewall via Firewall Manager, and route tables.
         -Virtual WAN increases the limit of up to 200 prefixes advertised from Azure to on-premises via ExpressRoute private peering to 10,000 prefixes per Virtual WAN hub. The limit of 10,000 prefixes also includes Site-to-Site VPN and Point-to-Site VPN. https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/azure-subscription-service-limits#virtual-wan-limits 
         ***Recommendations***
-        -Do not use Virtual WAN if more than 2000 VMs will be deployed as that is the current limit of VMs per VWAN. Use a hub and spoke model for these scenarios.
         -Deploy a VWAN hub per Azure region and connect them to large offices or data centers with ExpressRoute, use VPN for smaller locations and point-to-site VPN for remote users. 
         -Traffic in Azure should stay in Azure. Don't route back to on premises to move data between Azure regions or services as this increases complexity and latency.
         -Azure Firewalls can be deployed into the VWAN hub, but third party firewalls have to be deployed into a spoke VNet. https://docs.microsoft.com/en-us/azure/virtual-wan/scenario-route-through-nva 
