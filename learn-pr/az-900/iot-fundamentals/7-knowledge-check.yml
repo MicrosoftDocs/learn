@@ -14,17 +14,36 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "?"
+  - content: "A company wants to build a new voting kiosk for sales to governments around the world. Which IoT technologies should they choose to ensure the highest degree of security?"
     choices:
-    - content: ""
+    - content: "IoT Hub"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "IoT Hub will not ensure the security of the IoT device."
+    - content: "IoT Central"
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "IoT Central  will not ensure the security of the IoT device."
+    - content: "Azure Sphere"
       isCorrect: true
-      explanation: ""
+      explanation: "Azure Sphere provides the highest degree of security to ensure the device has not been tampered with."
+  - content: "A company wants to quickly manage their individual IoT devices. Which IoT technology should they choose?"
+    choices:
+    - content: "IoT Hub"
+      isCorrect: false
+      explanation: "IoT Hub is not an IoT device management solution."
+    - content: "IoT Central"
+      isCorrect: false
+      explanation: "IoT Central quickly creates a web-based management portal to enable reporting and communication with IoT devices."
+    - content: "Azure Sphere"
+      isCorrect: true
+      explanation: "Azure Sphere is not an IoT device management solution."
+  - content: "You want to send messages from the IoT device to the cloud and vice versa.  Which IoT technology can send and receive messages?"
+    choices:
+    - content: "IoT Hub"
+      isCorrect: true
+      explanation: "IoT Hub communicates to IoT devices sending and receiving messages."
+    - content: "IoT Central"
+      isCorrect: false
+      explanation: "IoT Central is not concerned with communication between device and cloud, though it can initiate this communication via a web-based portal."
+    - content: "Azure Sphere"
+      isCorrect: false
+      explanation: "Azure Sphere is not primarily concerned with communication between device and cloud."

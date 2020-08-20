@@ -1,6 +1,6 @@
-Our goal in this module was to help Tailwind Traders explore different Internet of Things (IoT) servces from Azure and choose the best service for a given business scenario.
+Our goal in this module was to help Tailwind Traders explore different Internet of Things (IoT) services from Azure and choose the best service for a given business scenario.
 
-Tailwind Traders was able to capture telemetry data from appliances, combine it with some Machine Learning to predict future maintenance, and create a significant value added service for customers by using Azure IoT Hub.   They were able to implement a complete real-time logicistics system to track deliveries and vehicles using Azure IoT Central and the Connected Logistics starter template.  And finally, they were able to design and build a secure modern point-of-sale self-checkout terminal using Azure Sphere.
+Tailwind Traders was able to capture telemetry data from appliances, combine it with some Machine Learning to predict future maintenance, and create a significant value added service for customers by using Azure IoT Hub.   They were able to implement a complete real-time logistics system to track deliveries and vehicles using Azure IoT Central and the Connected Logistics starter template.  And finally, they were able to design and build a secure modern point-of-sale self-checkout terminal using Azure Sphere.
 
 Without Azure's IoT services, receiving message from devices might still be possible, but it would likely be much less secure, would require custom development to implement a dashboard for reporting and management, and more difficult to push software or firmware updates to each device.
 

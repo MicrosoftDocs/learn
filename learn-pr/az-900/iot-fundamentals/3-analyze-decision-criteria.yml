@@ -3,13 +3,13 @@ uid: learn.languages.iot-fundamentals.analyze-decision-criteria
 title: Analyze the decision criteria
 metadata:
   title: Analyze the decision criteria
-  description: TODO come up with a better description
+  description: Choose the right technology for your scenario based on criteria from experts.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 azureSandbox: false
 content: |
   [!include[](includes/3-analyze-decision-criteria.md)]

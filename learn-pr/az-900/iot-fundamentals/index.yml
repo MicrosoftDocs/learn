@@ -2,17 +2,17 @@
 uid: learn.languages.iot-fundamentals
 metadata:
   title: Choose the best Azure IoT service for your application
-  description: TODO
+  description: Examine Azure's IoT services choose the right service for your scenario.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best Azure IoT service for your application
-summary: TODO
+summary: Examine Azure's IoT services choose the right service for your scenario.
 abstract: |
-  In this module, you will:
-  - Install and configure Visual Studio 2019 Community Edition.
+  By the end of this module, you will be able to:
+  - Choose the best Azure IoT service for a given business scenario.
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/iot-fundamentals.svg

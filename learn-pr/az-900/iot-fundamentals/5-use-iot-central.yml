@@ -2,14 +2,14 @@
 uid: learn.languages.iot-fundamentals.use-iot-central
 title: Use IoT Central
 metadata:
-  title: Use IoT Central
-  description: TODO come up with a better description
+  title: Use IoT Central to create a management portal for IoT devices
+  description: Analyze a scenario that requires a web-based portal for managing IoT devices.
   ms.date: 07/17/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 4
 azureSandbox: false
 content: |
   [!include[](includes/5-use-iot-central.md)]
