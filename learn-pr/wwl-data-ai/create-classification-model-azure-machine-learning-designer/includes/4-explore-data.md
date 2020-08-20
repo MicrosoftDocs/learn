@@ -36,7 +36,7 @@ To get started with Azure Machine Learning designer, first you must create a pip
 6. Review the schema of the data, noting that you can see the distributions of the various columns as histograms.
 7. Scroll to the right and select the column heading for the **Diabetic** column, and note that it contains two values **0** and **1**. These values represent the two possible classes for the *label* that your model will predict, with a value of **0** meaning that the patient does not have diabetes, and a value of **1** meaning that the patient is diabetic.
 8. Scroll back to the left and review the other columns, which represent the *features* that will be used to predict the label. Note that most of these columns are numeric, but each feature is on its own scale. For example, **Age** values range from 21 to 77, while **DiabetesPedigree** values range from 0.078 to 2.3016. When training a machine learning model, it is sometimes possible for larger values to dominate the resulting predictive function, reducing the influence of features that on a smaller scale. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
-9. Close the **diabetes-data result visualization** window, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon so that you can see the dataset on the canvas like this:
+9. Close the **diabetes-data result visualization** window so that you can see the dataset on the canvas like this:
 
 > [!div class="centered"]
 > ![The diabetes-data dataset on the designer canvas](../media/diabetes-data.png)
