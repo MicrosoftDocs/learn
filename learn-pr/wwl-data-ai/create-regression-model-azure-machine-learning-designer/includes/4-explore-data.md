@@ -20,7 +20,7 @@ In this module, you'll train a regression model that predicts the price of an au
 6. Scroll back to the left and select the **normalized-losses** column header. Then review the statistics for this column noting, there are quite a few missing values in this column. This will limit its usefulness in predicting the **price** label; so you might want to exclude it from training.
 7. View the statistics for the **bore**, **stroke**, and **horsepower** columns, noting the number of missing values. These columns have significantly fewer missing values than **normalized-losses**, so they may still be useful in predicting **price** if you exclude the rows where the values are missing from training.
 8. Compare the values in the **stroke**, **peak-rpm**, and **city-mpg** columns. These are all measured in different scales, and its possible that the larger values for **peak-rpm** might bias the training algorithm and create an over-dependency on this column compared to columns with lower values, such as **stroke**. Typically, data scientists mitigate this possible bias by *normalizing* the numeric columns so they're on the similar scales.
-9. Close the **Automobile price data (Raw) result visualization** window, and then close or resize the settings pane using the X or **<sub>&#8599;</sub><sup>&#8601;</sup>** icon so that you can see the dataset on the canvas like this:
+9. Close the **Automobile price data (Raw) result visualization** window so that you can see the dataset on the canvas like this:
 
 > [!div class="centered"]
 > ![The Automobile price data (Raw) dataset on the designer canvas](../media/dataset.png)
