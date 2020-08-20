@@ -16,32 +16,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: ' Contoso is creating their global connectivity subscription to support Azure services across 6 regions globally in the US, Europe, Australia and India. Contoso will mostly be using PaaS services with Private Link but also about 500 virtual machines. Contoso has small colo facilities and datacenters in 20 different countries on every populated continent. Contoso currently uses multiple MPLS networks from 3 different providers to provide datacenter and large office connectivity. Contoso requires firewalls for all traffic moving between on premises and Azure and needs to minimize latency for these connections. Contoso will have many applications that need to communicate across Azure regions and cross premises. Contoso also wants to minimize cost and complexity. Contoso should?'
     choices:
-    - content: 'Answer 1'
+    - content: '-A. Implement a hub and spoke network, with Azure Firewall in the hubs and a hub in each of the six Azure regions.'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'This will work, but Azure Virtual Wan is preferred over a hub and spoke unless the customer needs highly granular control of routing'
+    - content: 'Implement Virtual Wan with Secured Hubs (Azure Firewall) in each of the six Azure Regions'
       isCorrect: true
-      explanation: 'Explanation 4'
-
-  - content: 'Question 2'
-    choices:
-    - content: 'Answer 1'
+      explanation: 'Virtual WAN is the preferred enterprise solution over hub and spoke, Azure Firewall will meet the firewall requirement'
+    - content: 'Use only one very large Virtual Network in each region. Deploy Azure Firewall into that vnet and all services for that region.'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
+      explanation: 'This will technically work, but is cost and complexity prohibitive.'
+    - content: 'Deploy Virtual WAN'
       isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'Virtual WAN is part of the solution but misses the firewall requirement'

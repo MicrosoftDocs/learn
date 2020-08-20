@@ -16,32 +16,15 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: All Virtual Networks with Public Endpoints should have what?
     choices:
-    - content: 'Answer 1'
+    - content: 'Azure Front Door'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
+      explanation: 'Azure Front Door is not enabled on Virtual Networks'
+    - content: 'Azure Private DNS Zones'
       isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'Private DNS zones are not a universal recommendation'
+    - content: 'DDoS Standard Enabled'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'DDoS Standard provides proactive, SLA backed DDoS protection with Log Telemetry'
 
-  - content: 'Question 2'
-    choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
