@@ -28,31 +28,31 @@ quiz:
     - content: "Azure CLI"
       isCorrect: true
       explanation: "The Azure CLI allows you to use Bash to run one-off tasks on Azure."
-  - content: "You're a developer that needs to setup your first VM to host a process that runs nightly.  Which of the following tools is your best choice?"
+  - content: "You're a developer that needs to set up your first VM to host a process that runs nightly.  Which of the following tools is your best choice?"
     choices:
     - content: "ARM Templates"
       isCorrect: false
-      explanation: "ARM Templates could be used to setup a VM, but it's probably not the best choice for a first-time user."
+      explanation: "ARM Templates could be used to set up a VM, but it's probably not the best choice for a first-time user."
     - content: "Azure PowerShell"
       isCorrect: false
-      explanation: "Azure PowerShell could be used to setup a VM, but it's probably not the best choice for a first-time user."
+      explanation: "Azure PowerShell could be used to set up a VM, but it's probably not the best choice for a first-time user."
     - content: "Azure Portal"
       isCorrect: true
-      explanation: "The Azure Portal is a great place for newcomers to learn about Azure and setup their first resources."
+      explanation: "The Azure Portal is a great place for newcomers to learn about Azure and set up their first resources."
     - content: "Azure CLI"
       isCorrect: false
-      explanation: "The Azure CLI could be used to setup a VM, but it's probably not the best choice for a first-time user."
-  - content: "What is the best infrastructure-as-code option for quickly and reliably setting up your entire cloud infrastrcture declaratively?"
+      explanation: "The Azure CLI could be used to set up a VM, but it's probably not the best choice for a first-time user."
+  - content: "What is the best infrastructure-as-code option for quickly and reliably setting up your entire cloud infrastructure declaratively?"
     choices:
     - content: "ARM Templates"
       isCorrect: true
-      explanation: "ARM Templates is the best infrastructure-as-code option for quickly and reliably setting up your entire cloud infrastrcture declaratively."
+      explanation: "ARM Templates is the best infrastructure-as-code option for quickly and reliably setting up your entire cloud infrastructure declaratively."
     - content: "Azure PowerShell"
       isCorrect: false
-      explanation: "Azure PowerShell is not a declarative way to set up your entire cloud infrastrcture."
+      explanation: "Azure PowerShell is not a declarative way to set up your entire cloud infrastructure."
     - content: "Azure Portal"
       isCorrect: false
-      explanation: "The Azure Portal is not a declarative way to set up your entire cloud infrastrcture."
+      explanation: "The Azure Portal is not a declarative way to set up your entire cloud infrastructure."
     - content: "Azure CLI"
       isCorrect: false
-      explanation: "The Azure CLI is not a declarative way to set up your entire cloud infrastrcture."
+      explanation: "The Azure CLI is not a declarative way to set up your entire cloud infrastructure."

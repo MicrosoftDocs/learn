@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.management-fundamentals.use-azure-powershell
-title: Use Azure Powershell to perform one-off administrative tasks
+title: Use Azure PowerShell to perform one-off administrative tasks
 metadata:
-  title: Use Azure Powershell to perform one-off administrative tasks
+  title: Use Azure PowerShell to perform one-off administrative tasks
   description: Analyze a scenario that requires a team of Windows administrators to perform one-off Administration tasks.
   ms.date: 07/29/2020
   author: bobtabor-msft

@@ -4,6 +4,6 @@ Tailwind Traders experiences a surge in ecommerce traffic at certain times of th
 
 Let's run through our decision criteria again.
 
-First, does Tailwind Traders need to perform one-off management / administrative / reporting actions?  Yes. The real question is, how?  In this case, a phone or tablet solution could help key employees keep an eye on the health of the cloud environment. The Azure Mobile App is likely a good comprimise, allowing employees the freedom to be away from the office while still having the capability to perform one-off management and administrative tasks.
+First, does Tailwind Traders need to perform one-off management / administrative / reporting actions?  Yes. The real question is, how?  In this case, a phone or tablet solution could help key employees keep an eye on the health of the cloud environment. The Azure Mobile App is likely a good compromise, allowing employees the freedom to be away from the office while still having the capability to perform one-off management and administrative tasks.
 
-Frankly, we can skip the remainder of the decision criteria in this unique scenario.  The Azure Mobile App is the right choice.
+Frankly, we can skip the rest of the decision criteria in this unique scenario. The Azure Mobile App is the right choice.
