@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.languages.management-fundamentals
 metadata:
-  title: Choose the best Azure management tool for your cloud environment
-  description: TODO
+  title: Choose the best tool to manage your Azure environment
+  description: Survey the management, administration, and reporting tools for Azure and choose the best one for your technical need.
   ms.date: 07/29/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the best Azure management tool for your cloud environment
-summary: TODO
+title: Choose the best tool to manage your Azure environment
+summary: Survey the management, administration, and reporting tools for Azure and choose the best one for your technical need.
 abstract: |
-  In this module, you will:
-  - Install and configure Visual Studio 2019 Community Edition.
+  By the end of this module, you will be able to:
+  - Choose the correct Azure management tool to address different kinds of technical needs and challenges.
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/management-fundamentals.svg

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.management-fundamentals.use-azure-mobile-app
-title: Use the Azure Mobile App
+title: Use the Azure Mobile App to manage Azure on the go
 metadata:
-  title: Use the Azure Mobile App
-  description: TODO need a description
+  title: Use the Azure Mobile App to manage Azure on the go
+  description: Analyze a scenario that requires a administrators have Azure access via phone or tablet.
   ms.date: 07/29/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 2
 azureSandbox: false
 content: |
   [!include[](includes/7-use-azure-mobile-app.md)]

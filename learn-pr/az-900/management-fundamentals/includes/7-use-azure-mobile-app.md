@@ -1,21 +1,9 @@
-This is an introduction paragraph.
+Tailwind Traders experiences a surge in ecommerce traffic at certain times of the year that coincide with national holidays and weekends.  The first few years, the director of cloud operations has requested that everyone who manages a critical system come into the office during these important dates.  However, now that Tailwind Traders has successfully operationalized most critical systems, the director wants to relax this requirement and allow employees to spend these dates with their families. Is there a product that can help in this scenario?
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+## Which service should we choose?
 
-## What is the Azure Mobile App?
+Let's run through our decision criteria again.
 
-This explains the purpose of this section.
+First, does Tailwind Traders need to perform one-off management / administrative / reporting actions?  Yes. The real question is, how?  In this case, a phone or tablet solution could help key employees keep an eye on the health of the cloud environment. The Azure Mobile App is likely a good comprimise, allowing employees the freedom to be away from the office while still having the capability to perform one-off management and administrative tasks.
 
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
-
-## How does it work?
-
-Instructions for the first thing go here.
-
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
-
-## When would you use it?
-
-Instructions for the second thing go here.
-
-<div style="background='yellow'">TODO: Improve text, add image | video</div>
+Frankly, we can skip the remainder of the decision criteria in this unique scenario.  The Azure Mobile App is the right choice.

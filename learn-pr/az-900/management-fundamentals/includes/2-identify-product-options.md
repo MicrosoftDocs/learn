@@ -1,6 +1,8 @@
-For each product option, provide a 150-200 word overview, the product logo (optional), and a conceptual-explainer image (optional). The goal is to introduce what each product is and what it can do without describing how to use it.
+At a high level, there are two types of management tools: visual tools and code-based tools.  The visual tools provide full access to all of the functionality of Azure in a friendly visual manner.  However, visual tools may be less useful when trying to set up a large deployment of resources with interdepencies and configuration options.
 
+When attempting to quickly setup and configure Azure resources, a code-based tool is usually the better choice.  While it may take time to understand the right commands and parameters at first, once typed, they can be saved into files and used repeatedly as needed.  Furthermore, the code that performs setup and configuration can be stored, versioned and maintained along with application source code in a source code management tool like git.  This approach to managing hardware and cloud resources using the same mindset that developers use when they write application code is referred to as "infrastructure as code".
 
+There are two approaches to "infrastructure as code": imperative and declaritve code.  Imperative code details each individual step that should be performed to achieve the desired outcome.  By contrast, declarative code details only the desired outcome, and allows an interpretter to decide how to best achieve that outcome.  This is an important distinction because tools that are based on declarative code can provide a more robust approach to deploying dozens or hundreds of resources simultaneously and reliably.
 
 ## Azure Management Product Options
 
@@ -13,26 +15,13 @@ The Azure Portal is a web based user interface that allows you access virtually 
 
 ### Azure Mobile App
 
+The Azure Mobile App provides iOS and Android access to your Azure resources when you're away from your computer. You can do things like:
+
 - Monitor the health and status of your Azure resources
-- Quickly diagnose and fix issues
-- Run commands to manage your Azure resources
-
-Track the health and status of your Azure resources
-With the Azure mobile app, you don't need to be in front of your computer to keep an eye on your Azure resources such as VMs and web apps. Stay connected no matter where you are from your iOS or Android mobile device.
-
-Diagnose and fix issues quickly
-Check for alerts, view metrics, and take corrective actions to fix common issues. Restart a web app or connect to a VM directly. Be agile and respond to issues faster with the Azure mobile app.
-
-Run commands to manage your Azure resources
-Want to use the command line? Run ad hoc Azure CLI or PowerShell commands from the Azure mobile app.
-
-Data is secure and encrypted
-
-Apple App Store
-Google Play Store
+- Check for alerts, quickly diagnose and fix issues, restart a web app or VM
+- Run Azure CLI or PowerShell commands to manage your Azure resources
 
 <div style="background=yellow;">Add a pic here</div>
-
 
 ### Azure PowerShell
 
@@ -54,6 +43,6 @@ In many respects, it is almost identical to Azure Powershell in what you can do.
 
 ### Azure Resource Manager Templates
 
-While it's possible to write imperative code in Azure PowerShell or the Azure CLI to setup and tear-down one Azure resource or orchestrate an entire infrastructure containing dozens or hundreds of resources, there's a better way to do this.  Azure Resource Manager (ARM) Templates allow you to describe the resources you want to use in a declarative JSON format.  The benefit is that the entire ARM Template is verified first before any code is executed to ensure the resources will be created and connected correctly, then it orchestrates the .  Ultimately, the developer, DevOps or IT professional just needs to define the desired state and configuration of each resource in a template, and the Azure Resource Manager does the rest.  Templates can even execute PowerShell and Bash scripts before or after the setup of a resource.
+While it's possible to write imperative code in Azure PowerShell or the Azure CLI to setup and tear-down one Azure resource or orchestrate an entire infrastructure containing dozens or hundreds of resources, there's a better way to do this.  Azure Resource Manager (ARM) Templates allow you to describe the resources you want to use in a declarative JSON format.  The benefit is that the entire ARM Template is verified first before any code is executed to ensure the resources will be created and connected correctly, then it orchestrates the creation of those resources in parallel, meaning, if you need 50 instances of the same resource, all 50 instances are created at the same time.  Ultimately, the developer, DevOps or IT professional just needs to define the desired state and configuration of each resource in a template, and the Azure Resource Manager does the rest.  Templates can even execute PowerShell and Bash scripts before or after the setup of a resource.
 
 <div style="background=yellow;">Create some example code here</div>
