@@ -1,6 +1,6 @@
-The Tailwind Traders team is working on quite a variety of projects! In addition to their main website, they're adding a mapping feature to their Special Orders application so that they can calculate routes between suppliers and retail stores. They're also exploring how severe weather tracking can improve their drone guidance system.
-
 A service-level agreement (SLA) is the formal agreement between a service company and the customer. On Azure, this agreement defines the performance standards that Microsoft commits to for its customers.
+
+The Tailwind Traders team is working on quite a variety of projects! In addition to their main website, they're adding a mapping feature to their Special Orders application so that they can calculate routes between suppliers and retail stores. They're also exploring how severe weather tracking can improve their drone guidance system.
 
 As requirements evolve, it's important for the team to understand the how the SLA for each service they choose impacts the overall performance guarantees of their applications.
 
