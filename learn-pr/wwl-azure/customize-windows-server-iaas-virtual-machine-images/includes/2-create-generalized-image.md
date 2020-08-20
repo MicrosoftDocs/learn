@@ -11,7 +11,7 @@ When you create a VM, you must specify a VM image that contains a generalized op
 > [!NOTE]
 > A *VM image* is a template from which you can create the VHDs to run a VM. The VHDs for a typical VM image contain a preconfigured version of an operating system.
 
-To choose something more specific to your needs, you can select **Browse all public and private images**. You can choose from items in the Azure Marketplace or Contoso's own images. Azure Marketplace supplies many VM images that you can use as a starting point to build your own VM image. Examples include:
+To choose something more specific to your needs, you can select **Browse all public and private images**. You can choose from items in Azure Marketplace or Contoso's own images. Azure Marketplace supplies many VM images that you can use as a starting point to build your own VM image. Examples include:
 
 - Various versions of Windows Server, optionally with Microsoft SQL Server installed.
 - Linux variants with software such as MySQL, MongoDB, Cassandra, or other databases already configured.
