@@ -48,4 +48,4 @@ units:
   - learn.azure.publish-static-web-app-and-api-dotnet.11-knowledge-check
   - learn.azure.publish-static-web-app-and-api-dotnet.12-summary
 badge:
-  uid: learn.azure.publish-static-web-app-and-api.badge
+  uid: learn.azure.publish-static-web-app-and-api-dotnet.badge
