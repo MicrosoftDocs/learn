@@ -9,14 +9,17 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure Arc
-summary: TODO
+summary: By the end of this module, you'll be able to describe Azure Arc and implement it with on-premises servers. You'll also be able to describe Azure Arc-enabled Kubernetes.
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Onboard Windows Server instances into Azure Arc.
+  - Use Azure Arc to manage Window Server instances.
+  - Describe Azure Arc-enabled Kubernetes.
+  - Integrate Azure Arc with Azure Monitor.
 prerequisites: | 
-  - TODO
+  - Knowledge of personal computer operating systems
+  - Understanding of virtualization.
+  - Knowledge of Azure IaaS workloads.
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
