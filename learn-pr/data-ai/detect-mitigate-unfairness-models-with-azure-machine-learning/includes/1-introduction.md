@@ -15,4 +15,4 @@ With such critical decisions in the balance, it's important to have confidence t
 In this module, you will learn how to:   
 
 - Evaluate machine learning models for fairness.
-- Mitigate predictive disparity in a machine learning model.
+- Mitigate predictive disparity in a machine learning model. 
