@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following is the definition of the term network latency?'
+  - content: 'Which of the following is the definition of the term "network latency"?'
     choices:
     - content: 'The amount of throughput available on the network'
       isCorrect: false
@@ -26,22 +26,22 @@ quiz:
       explanation: 'Latency is a measure of network transit time.'
     - content: 'The TTL of an asset in a content delivery network'
       isCorrect: false
-      explanation: 'The TTL of an asset on a content delivery network relates to how often it is refreshed from the original source.'
+      explanation: "The TTL of an asset on a content delivery network relates to how often it's refreshed from the original source."
     - content: 'A private circuit between an on-premises network and Azure'
       isCorrect: false
-      explanation: 'ExpressRoute is a private circuit between an on-premises network and Azure, and while it can improve latency, it is not a definition of the term.'
+      explanation: "Azure ExpressRoute is a private circuit between an on-premises network and Azure, and while it can improve latency, it isn't a definition of the term."
  
-  - content: 'Suppose your web application is hosted in East US. Which of the following would be the most cost-effective way to optimize network latency for users around the world?'
+  - content: 'Suppose your web application is hosted in East US. Which of the following is the most cost-effective way to optimize network latency for users around the world?'
     choices:
-    - content: 'Deploy ExpressRoute to each of your users'
+    - content: 'Deploy Azure ExpressRoute to each of your users.'
       isCorrect: false
-      explanation: 'ExpressRoute is provisioned for a network location, not per user.'
-    - content: 'Use a content delivery network to place assets and content closer to your users'
+      explanation: 'Azure ExpressRoute is provisioned for a network location, not per user.'
+    - content: 'Use a content delivery network to place assets and content closer to your users.'
       isCorrect: true
-      explanation: 'By using a content delivery network, assets are cached at locations that are physically closer to end users and will reduce the amount of time to load them. This will cost-effectively improve network latency for users around the globe.'
-    - content: 'Use Traffic Manager in performance routing mode'
+      explanation: 'By using a content delivery network, assets are cached at locations physically closer to users, which reduces the amount of time to load them. A content delivery network cost-effectively improves network latency for users around the globe.'
+    - content: 'Use Azure Traffic Manager in performance routing mode.'
       isCorrect: false
-      explanation: 'Traffic Manager is a DNS load balancer that can help improve the time to connect to resources, but would also require locating web services in multiple locations and is not the most cost-effective way to address this problem.'
-    - content: 'Deploy more instances in East US to server the extra user load'
+      explanation: "Azure Traffic Manager is a DNS load balancer that can help improve the time to connect to resources. It also requires locating web services in multiple locations and isn't the most cost-effective way to address this problem."
+    - content: 'Deploy more instances in East US to serve the extra user load.'
       isCorrect: false
-      explanation: 'Adding more instances will increase the amount of load the service in East US can handle, but will not address the network latency for users distributed globally.'
+      explanation: "Adding more instances increases the amount of load the service in East US can handle but doesn't address the network latency for users distributed globally."

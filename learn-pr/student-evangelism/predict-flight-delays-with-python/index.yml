@@ -18,6 +18,7 @@ abstract:  |
   - Use Matplotlib to visualize the output
 prerequisites: Basic Python knowledge
 iconUrl: /learn/achievements/student-evangelism/predict-flight-delays-with-python-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

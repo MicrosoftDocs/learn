@@ -58,7 +58,7 @@ For full details of each offer, check out the offer links above. If you are a cu
 
 If you are a customer on an Enterprise Agreement and already have an investment in SQL Server licenses, and they have freed up as part of moving resources to Azure, you can provision **bring your own license** (BYOL) images off the Azure Marketplace, giving you the ability to take advantage of these unused licenses and reduce your Azure VM cost. You've always been able to use these licenses by provisioning a Windows VM and manually installing SQL Server, but this process simplifies the creation process by leveraging Microsoft certified images. Search for **BYOL** in the Marketplace to find these images.
 
-![Screenshot of Azure portal showing bring your own license SQL Server options.](../media/5-byol-sql-server.png)
+![Screenshot of Azure portal showing bring your own license SQL Server license options.](../media/5-byol-sql-server.png)
 
 > [!IMPORTANT]
 > An Enterprise Agreement subscription is required to use these certified BYOL images.

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.query-relational-data-azure.sql-database
+title: Query relational data in Azure SQL Database
+metadata:
+  title: Query relational data in Azure SQL Database
+  description: "Query relational data in Azure SQL Database"
+  ms.date: 08/06/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-sql-database.md)]

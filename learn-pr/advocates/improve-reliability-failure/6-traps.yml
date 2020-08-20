@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-failure.6-traps
+title: "Common traps to avoid"
+metadata:
+  title: "Common traps to avoid"
+  description: "Common traps to avoid"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-traps.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following refers to telling a story about events that did not happen in order to explain what did happen?'
+    choices:
+    - content: 'mechanistic reasoning'
+      isCorrect: false
+      explanation: 'Mechanistic reasoning refers to the concept that a particular outcome can be inferred from intervention.'
+    - content: 'normative language'
+      isCorrect: false
+      explanation: 'Normative language often implies that there was an "obviously-correct" course of action and judges people based on hindsight.'
+    - content: 'Counterfactual reasoning'
+      isCorrect: true
+      explanation: 'Correct.'
+
+  - content: 'Human error is a...'
+    choices:
+    - content: 'diagnosis'
+      isCorrect: false
+      explanation: 'Human error is a label.'
+    - content: 'cause of problems'
+      isCorrect: false
+      explanation: 'Human error is a label.'
+    - content: 'label that causes you to quit investigating at precisely the moment when you’re about to discover something interesting about your system'
+      isCorrect: true
+      explanation: 'Correct.'
+

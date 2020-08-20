@@ -4,7 +4,7 @@ The file output will be in .wav format so you can play the audio on any device t
 
 ::: zone pivot="csharp"
 
-## Using visual studio codespaces
+## Using Visual Studio Codespaces
 
 1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/)
 
@@ -16,19 +16,19 @@ The file output will be in .wav format so you can play the audio on any device t
 
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription.
-1. If this is the first time you have used Visual Studio Code online, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Environment**.
+1. If this is the first time you have used Visual Studio Codespaces, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
+1. Select **Create Codespace**.
 1. Select your Subscription in the **Select Billing** pane and choose a location for the service.
 1. Select **Create**.
-1. Once your plan is created, you can then create your first environment.  
-1. If the **Create Environment** panel does not open automatically, select **Create environment**.
-1. Enter an environment name of your choosing, example **TextToSpeechCS**.
-1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
+1. Once your plan is created, you can then create your first codespace.  
+1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
+1. Enter a name of your choosing, example **TextToSpeechCS**.
+1. Copy the following URL and paste it into the Git Repository area on the **Create Codespace** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
 1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
-1. Once the environment indicates that it is available, either select the title or select the three vertical dots in the lower right of the environment box and choose **Connect**.
+1. It will take a few minutes for the codespace to be created so while you wait, go to your Speech service in the Azure portal and copy one of your keys, and also note the region where the service was created.
+1. Once your codespace is available, either select the title or select the three vertical dots in the lower right of the codespace box and choose **Connect**.
 1. Refresh the browser window to apply the environment changes.
-1. We will be using C# and .NET Core for this exercise so once the VS Code window opens, start the Terminal by selecting the hamburger menu, **View**, and then **Terminal**.
+1. We will be using C# and .NET Core for this exercise so once the editor window opens, start the Terminal by selecting the hamburger menu, **View**, and then **Terminal**.
 1. Open the Program.cs file and edit the content to add a new function using this code
 
     ```csharp
@@ -72,7 +72,6 @@ The file output will be in .wav format so you can play the audio on any device t
                         }
                     }
                 }
-            }
         }
 
     ```
@@ -88,13 +87,13 @@ The file output will be in .wav format so you can play the audio on any device t
     ```csharp
     await SynthesisToAudioFileAsync();
     ```
-
+1. In the header, add the following using statement, ```csharp using Microsoft.CognitiveServices.Speech.Audio ```.
 1. Ensure your key and region from the Speech resource your created on Azure are in the **YourSubscriptionKey** and **YourServiceRegion** placeholders in the code.
 1. In the terminal, type ```dotnet run``` and press Enter.
 1. You will be prompted to enter some text.  Enter a phrase of your choosing and press Enter.
 1. A new file will be created in the media folder of your application. You may need to clone the repo locally so that you can open the file with an audio player to hear the contents that were generated from the text you entered.
 
-## Using visual studio code locally
+## Using Visual Studio Code locally
 
 If you want to run the code on your local computer and not use VS Code online, ensure you have the latest version of [Visual Studio Code](https://code.visualstudio.com/) installed.
 
@@ -118,7 +117,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 
 ::: zone pivot="python"
 
-## Using visual studio codespaces
+## Using Visual Studio Codespaces
 
 1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-codespaces/).
 
@@ -129,17 +128,17 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 1. Select the **Get started** button.
 1. Sign in using your Microsoft Account that is linked to your Azure subscription.
 1. If this is the first time you have used Visual Studio Codespaces, you will be required to create a new plan, which should be selected in the drop-down at the top of the page.
-1. Select **Create Environment**.
+1. Select **Create Codespace**.
 1. Select your **Subscription** in the **Select Billing** pane and choose a location for the service.
 1. Select **Create**.
-1. Once your plan is created, you can then create you first environment.  
-1. If the **Create Environment** panel does not open automatically, select **Create environment**.
-1. Enter an environment name of your choosing, example **TextToSpeechPython**.
+1. Once your plan is created, you can then create you first codespace.  
+1. If the **Create Codespace** panel does not open automatically, select **Create Codespace**.
+1. Enter a name of your choosing, example **TextToSpeechPython**.
 1. Copy the following URL and paste it into the Git Repository area on the **Create Environment** panel: `https://github.com/MicrosoftLearning/AI-102-Process-Speech`
 1. Leave the rest of the settings at their default and select **Create**.
-1. It will take a few minutes for the environment to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
-1. Once the environment indicates that it is available, either select the title, or select the three vertical dots in the lower right of the environment box and choose **Connect**.
-1. VS Code Online will now synchronize the GitHub repo and run the scripts that were present in the devcontainer.  This is required to set up the proper Python environment, in this case 3.5.3.
+1. It will take a few minutes for the codespace to be created so while you wait, go to your **Speech** service in the **Azure portal** and copy one of your keys, and also note the region where the service was created.
+1. Once the codespace is available, either select the title, or select the three vertical dots in the lower right of the codespace box and choose **Connect**.
+1. Visual Studio Codespaces will now synchronize the GitHub repo and run the scripts that were present in the devcontainer.  This is required to set up the proper Python environment, in this case 3.5.3.
 1. If you get any messages about installing additional extensions or components, choose to do so.
 1. Refresh the browser window to apply the environment changes.
 1. Expand the **python** folder
@@ -185,7 +184,7 @@ You will now need to add the Microsoft Cognitive Service Speech package to your 
 1. Type some text when you're prompted.
 1. A new file will be created at the root of your application folder. You can open the file with an audio player to hear the contents that were generated from the text you entered.
 
-## Using python or visual studio code locally
+## Using Python or Visual Studio Code locally
 
 If you do not already have Python and Visual Studio Code installed on your local computer. Follow these instructions to get your environment ready for the exercise.
 

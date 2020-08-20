@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Modern Operations for reliability/modern-operations-for-reliability-post-incident-retrospective</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M48.1132075,0.739331515 C74.2770768,0.739331515 95.4870836,21.9493383 95.4870836,48.1132075 C95.4870836,74.2770768 74.2770768,95.4870836 48.1132075,95.4870836 C21.9493383,95.4870836 0.739331515,74.2770768 0.739331515,48.1132075 C0.739331515,21.9493383 21.9493383,0.739331515 48.1132075,0.739331515 Z M48.1132075,4.71698113 C24.1461335,4.71698113 4.71698113,24.1461335 4.71698113,48.1132075 C4.71698113,72.0802816 24.1461335,91.509434 48.1132075,91.509434 C72.0802816,91.509434 91.509434,72.0802816 91.509434,48.1132075 C91.509434,24.1461335 72.0802816,4.71698113 48.1132075,4.71698113 Z" id="path-6"></path>
+        <filter x="-30.0%" y="-25.5%" width="160.0%" height="151.1%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#0062B3" offset="0%"></stop>
+            <stop stop-color="#00549B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-17.1%" y="-21.2%" width="137.1%" height="142.4%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <polygon id="path-12" points="0 0.464625 12.1541333 0.464625 12.1541333 8.512875 0 8.512875"></polygon>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Modern-Operations-for-reliability" transform="translate(-159.000000, -319.000000)">
+            <g id="Modern-Operations-for-reliability/modern-operations-for-reliability-post-incident-retrospective" transform="translate(160.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(1.886792, 1.886792)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(-1.886792, -1.886792)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Shield" filter="url(#filter-8)" transform="translate(30.235294, 28.000000)" fill-rule="nonzero">
+                    <path d="M39.7647059,21.9431398 C39.7647059,34.5728815 24.2858923,44.7430017 20.8981805,46.8157164 C20.5113617,47.0614279 20.0180501,47.0614279 19.6312313,46.8157164 C16.2435195,44.7706379 0.764705882,34.6005177 0.764705882,21.9431398 L0.764705882,6.74323188 C0.764705882,6.08230392 1.29051392,5.54226032 1.94902796,5.52723925 C14.0125873,5.22324109 11.2308076,0 20.2647059,0 C29.2986042,0 26.5168245,5.22324109 38.5803838,5.52723925 C39.2388978,5.54226032 39.7647059,6.08230392 39.7647059,6.74323188 L39.7647059,21.9431398 Z" id="Path" fill="url(#linearGradient-9)"></path>
+                    <path d="M36.7647059,22.1988462 C36.7647059,32.7126225 23.6723134,41.1486764 20.805181,42.8509069 C20.478534,43.0496977 20.0661681,43.0496977 19.7395211,42.8509069 C16.8723887,41.1486764 3.77999621,32.7126225 3.77999621,22.1988462 L3.77999621,9.68244579 C3.72787318,9.38575191 3.8104408,9.0814428 4.00583017,8.85011795 C4.20121953,8.61879309 4.48971677,8.48379208 4.79491036,8.48087135 C14.9947975,8.30564174 12.660495,4 20.272351,4 C27.8842071,4 25.5499046,8.30564174 35.7497917,8.48087135 C36.3046782,8.49406861 36.7513293,8.93473367 36.7647059,9.48218338 L36.7647059,22.1988462 Z" id="Path" fill="url(#linearGradient-10)"></path>
+                </g>
+                <g id="Group-8" transform="translate(39.000000, 37.000000)">
+                    <polygon id="Fill-1" fill="#293E9C" points="21.2312 17.0332 19.9812 14.8352 2.9802 14.8352 1.7112 17.0332"></polygon>
+                    <polygon id="Fill-2" fill="#0FA6FF" points="8.115 5.9341 6.847 8.1321 16.166 8.1321 14.915 5.9341"></polygon>
+                    <polygon id="Fill-3" fill="#00549B" points="4.6917 11.8682 3.4237 14.0662 19.5427 14.0662 18.2927 11.8682"></polygon>
+                    <polygon id="Fill-4" fill="#398CF0" points="6.4031 8.9009 5.1351 11.0989 17.8541 11.0989 16.6041 8.9009"></polygon>
+                    <polygon id="Fill-5" fill="#051D32" points="1.2681 17.8022 0.0001 20.0002 22.9191 20.0002 21.6691 17.8022"></polygon>
+                    <polygon id="Fill-6" fill="#63C4FE" points="9.8269 2.9668 8.5589 5.1648 14.4779 5.1648 13.2269 2.9668"></polygon>
+                    <polygon id="Fill-7" fill="#91DCFF" points="11.538 0.0002 10.27 2.1982 12.789 2.1982"></polygon>
+                </g>
+                <g id="Group-6" filter="url(#filter-11)" transform="translate(13.000000, 17.000000)">
+                    <path d="M5.38812903,23.498129 C9.46948387,9.90425806 22.0776129,0 37,0 C55.2245161,0 70,14.7733548 70,33 C70,51.2245161 55.2245161,66 37,66 C18.7733548,66 4,51.2245161 4,33" id="Stroke-1" stroke="#FFFFFF" stroke-width="3"></path>
+                    <g id="Group-5" transform="translate(0.000000, 19.000000)">
+                        <mask id="mask-13" fill="white">
+                            <use xlink:href="#path-12"></use>
+                        </mask>
+                        <g id="Clip-4"></g>
+                        <polyline id="Fill-3" fill="#FFFFFF" mask="url(#mask-13)" points="12.1541333 3.938625 4.40396667 8.512875 -0.000866666667 0.464625"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

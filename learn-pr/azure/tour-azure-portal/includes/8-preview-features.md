@@ -1,4 +1,4 @@
-Microsoft offer previews of Azure features for evaluation purposes. With _Azure Preview Features_, you can test beta and other pre-release features, products, services, software, and regions.
+Microsoft offers previews of Azure features for evaluation purposes. With _Azure Preview Features_, you can test beta and other pre-release features, products, services, software, and regions.
 
 Some of the common areas you will see previews for include:
 

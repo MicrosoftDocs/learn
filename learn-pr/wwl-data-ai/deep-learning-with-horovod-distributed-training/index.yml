@@ -16,7 +16,7 @@ abstract: |
   - Use Petastorm to read datasets in Apache Parquet format with Horovod for distributed model training
   - Work with Horovod and Petastorm for training a deep learning model
 prerequisites: ""
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/deep-learning-with-horovod-distributed-training.svg
 levels:
 - intermediate
 roles:

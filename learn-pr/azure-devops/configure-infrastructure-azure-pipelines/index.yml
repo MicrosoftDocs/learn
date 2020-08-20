@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.azdo.configure-infrastructure-azure-pipelines
 metadata:
-  title: Configure infrastructure in Azure Pipelines - Learn
+  title: Configure infrastructure in Azure Pipelines
   description: Run configuration management tools in Azure Pipelines to help keep your infrastructure configured as you need.
   ms.date: 12/09/2019
   author: tpetchel

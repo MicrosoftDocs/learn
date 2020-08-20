@@ -1,0 +1,57 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-incidents.4-foundations
+title: "Foundations of incident response"
+metadata:
+  title: "Foundations of incident response"
+  description: "Foundations of incident response"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-foundations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these things is a pillar of incident response?'
+    choices:
+    - content: 'rosters'
+      isCorrect: false
+      explanation: 'Rosters are one of the pillars, but this is not the most correct answer.'
+    - content: 'roles'
+      isCorrect: false
+      explanation: 'Roles are one of the pillars, but this is not the most correct answer.'
+    - content: 'rotations'
+      isCorrect: false
+      explanation: 'Rotations are one of the pillars, but this is not the most correct answer.'
+    - content: 'all of the above'
+      isCorrect: true
+      explanation: 'Correct, they are all pillars of effective incident response.'
+      
+
+  - content: 'What does the role of scribe do as part of incident response?'
+    choices:
+    - content: 'writes up the post-incident review'
+      isCorrect: false
+      explanation: 'Though they may do this later, this is not the main purpose of this role.'
+    - content: 'creates a verbatim transcript for a call bridge'
+      isCorrect: false
+      explanation: 'The scribe captures all the data possible – not just what team members are doing but also what they’re saying and even what they’re feeling or experiencing.'
+    - content: 'keeps track of the metrics in the monitoring system that are important'
+      isCorrect: false
+      explanation: 'This is not the role of the scribe during incident response.'
+    - content: 'documents the conversation around incident in as much detail as possible'
+      isCorrect: true
+      explanation: 'Correct.'
+
+  - content: 'Do you need all of the roles mentioned in this unit to do successful incident response?'
+    choices:
+    - content: 'Yes'
+      isCorrect: false
+      explanation: 'Especially in smaller organizations or during more minor incidents, not all roles will be needed.'
+    - content: 'No'
+      isCorrect: true
+      explanation: 'Correct, especially in smaller organizations or during more minor incidents, not all roles will be needed.'

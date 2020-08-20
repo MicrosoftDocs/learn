@@ -132,7 +132,7 @@ Your local code now needs to be committed and pushed up to the hosted repository
 :::row:::
     :::column span="8":::
 **Step 7**:
-You're finally ready to propose your changes to the remote `master` branch. To do this, you begin a pull request. This triggers your _continuous integration_ (CI) build process, such as Azure Pipelines, and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code is merged into the remote `master` branch.
+You're finally ready to propose your changes to the remote `master` branch. To do this, you begin a pull request. When configured in Azure Pipelines or another CI/CD system, this step triggers the build process and you can watch your changes move through the pipeline. After the build succeeds and others approve your pull request, your code can be merged into the remote `master` branch. (It's still up to a human to merge the changes.)
     :::column-end:::
     :::column:::
         ![A pull request](../media/2-github-paths-7.png)

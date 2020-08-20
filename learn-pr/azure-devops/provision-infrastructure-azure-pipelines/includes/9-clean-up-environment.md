@@ -18,19 +18,19 @@ To clean up your resource groups:
 
 1. Run the following `az group delete` command to delete the resource group for your App Service deployment, **tailspin-space-game-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name tailspin-space-game-rg --yes
     ```
 
 1. Run the following `az group delete` command to delete the resource group for your storage account, **tf-storage-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name tf-storage-rg --yes
     ```
 
 1. As an optional step, run the following `az group list` command after the previous command finishes.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 
@@ -89,13 +89,10 @@ This option disables the pipeline so that it doesn't process further build reque
 
 To disable the pipeline:
 
-1. From Azure Pipelines, go to your pipeline.
-1. Select the **Edit** button.
+1. In Azure Pipelines, navigate to your pipeline.
+1. From the drop-down menu, select **Settings**:
 
-    ![Azure Pipelines showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. From the menu in the upper-right corner, select **Settings**.
-
-    ![Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
+    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
 1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.

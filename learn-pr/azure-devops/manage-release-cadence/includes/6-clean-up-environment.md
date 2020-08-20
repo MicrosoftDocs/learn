@@ -16,7 +16,7 @@ To clean up your resource group:
 
 1. Run the following `az group delete` command to delete the resource group that you used in this module, **tailspin-space-game-rg**.
 
-    ```bash
+    ```azurecli
     az group delete --name tailspin-space-game-rg
     ```
 
@@ -24,7 +24,7 @@ To clean up your resource group:
 
 1. As an optional step, after the previous command finishes, run the following `az group list` command.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 
@@ -53,24 +53,21 @@ Running multiple templates gives you multiple Azure Pipelines projects. Each pro
 
 Choose one of the following options.
 
-### Option 1 - Disable the pipeline
+### Option 1: Disable the pipeline
 
 Here you disable the pipeline so that it processes no further build requests. You can reenable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and your build pipeline for future reference.
 
 To disable the pipeline:
 
-1. In Azure Pipelines, go to your pipeline.
-1. Select **Edit**.
+1. In Azure Pipelines, navigate to your pipeline.
+1. From the drop-down menu, select **Settings**:
 
-    ![Azure Pipelines, showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. On the menu in the upper corner, select **Settings**.
+    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
-    ![Azure Pipelines, showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
-1. Under **Processing of new run requests**, select **Disabled**, and then select **Save**.
+    Your pipeline will no longer process build requests.
 
-Your pipeline will no longer process build requests.
-
-### Option 2 - Delete the Azure DevOps project
+### Option 2: Delete the Azure DevOps project
 
 Here you delete your Azure DevOps project, including what's in Azure Boards and your build pipeline. In future modules, you can run another template that brings up a new project in a state where this module leaves off. Choose this option if you don't need your DevOps project for future reference.
 

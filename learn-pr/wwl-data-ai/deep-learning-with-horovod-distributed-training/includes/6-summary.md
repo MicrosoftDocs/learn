@@ -2,8 +2,8 @@ In this module you learned how to use Azure Databricks and HorovodRunner to run 
 
 Now that you have concluded this module, you should know:
 
-- Use Horovod to train a distributed neural network
-- Use Horovod to train a distributed neural network using Parquet files + Petastorm
+* Use Horovod to train a distributed neural network
+* Use Horovod to train a distributed neural network using Parquet files + Petastorm
 
 ## Cleanup
 

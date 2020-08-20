@@ -1,0 +1,37 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.read-text-computer-vision.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge."
+  ms.date: 07/30/2020
+  author: wwlpublish
+  ms.author: cwsuseng
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 2
+quiz:
+  questions:
+  - content: "You want to extract text from images and then use the Text Analytics service to analyze the text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
+    choices:
+    - content: "Computer Vision"
+      isCorrect: false
+      explanation: "Incorrect. This resource type only supports image analysis. A separate resource (with its own key and endpoint) would be required for text analytics."
+    - content: "Cognitive Services"
+      isCorrect: true
+      explanation: "Correct. A Cognitive Services resource support both Computer Vision for text extraction, and Text Analytics for text analysis."
+    - content: "Text Analytics"
+      isCorrect: false
+      explanation: "Incorrect. The Text Analytics service provides text analysis capabilities, but cannot extract text from images. A separate resource (with its own key and endpoint) would be required for text extraction."
+  - content: "You plan to use the Computer Vision service to read text in a  large PDF document. Which API should you use?"
+    choices:
+    - content: "The Read API"
+      isCorrect: true
+      explanation: "Correct: Not only is the Read API better suited for larger images but it runs asynchronously so it will not block your application while it is running"
+    - content: "The OCR API"
+      isCorrect: false
+      explanation: "Incorrect: The OCR API is not optimized for large documents and doesn't support PDF format."
+    - content: "The Recognize Text API"
+      isCorrect: false
+      explanation: "Incorrect: The Recognize Text API is deprecated."

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-incidents.3-lifecycle
+title: "Characteristics and lifecycle of an incident"
+metadata:
+  title: "Characteristics and lifecycle of an incident"
+  description: "Characteristics and lifecycle of an incident"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-lifecycle.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these can be considered the "pulse" of your system?'
+    choices:
+    - content: 'monitoring'
+      isCorrect: false
+      explanation: 'Monitoring is a way we can check and report on a system.'
+    - content: 'a service ticketing system.'
+      isCorrect: false
+      explanation: 'A ticket system might be a useful place to keep details about incidents, but does not offer a pulse.'
+    - content: 'incidents'
+      isCorrect: true
+      explanation: 'Correct, incidents do provide a pulse for you.'
+
+  - content: 'Which of these is not a phase of an incident?'
+    choices:
+    - content: 'Detection'
+      isCorrect: false
+      explanation: 'Detection is the first phase of an incident.'
+    - content: 'Response'
+      isCorrect: false
+      explanation: 'Response is the second phase of an incident.'
+    - content: 'Communication'
+      isCorrect: true
+      explanation: 'Correct, communication is important but is not a phase of an incident.'
+    - content: 'Remediation'
+      isCorrect: false
+      explanation: 'Remediation is the third phase of an incident.'
+    - content: 'Analysis'
+      isCorrect: false
+      explanation: 'Analysis is the fourth phase of an incident.'
+    - content: 'Readiness'
+      isCorrect: false
+      explanation: 'Readiness is the fifth and final phase of an incident.'

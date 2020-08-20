@@ -25,8 +25,12 @@ In this exercise, you'll install the MAP toolkit on a test computer, then restor
 
 1. On the Start menu, select **Microsoft Edge**.
 1. Go to [https://www.microsoft.com/download/details.aspx?id=7826](https://www.microsoft.com/download/details.aspx?id=7826).
+
+> [!IMPORTANT]
+> Due to sandbox restrictions you need to download a backed up version of the MAP toolkit form this git repo instead.
+> Go to [https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map/blob/master/MAPSetup.exe](https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map/blob/master/MAPSetup.exe) and click the **Download** link.
+
 1. On the **Microsoft Assessment and Planning Toolkit** page, select **Download**.
-1. In the pop-up, select **MAPSetup.exe**, then select **Next**.
 1. In the pop-up, select **Save**.
 
 ## Install the MAP toolkit
@@ -44,7 +48,7 @@ Start by using the installer to set up the MAP toolkit.
 
 ## Download the sample MAP database
 
-1. Use **Microsoft Edge** to go to [https://github.com/MicrosoftDocs/mslearn-sql-server-map-discovery/blob/master/MAP_updatedDB.bak](https://github.com/MicrosoftDocs/mslearn-sql-server-map-discovery/blob/master/MAP_updatedDB.bak).
+1. Use **Microsoft Edge** to go to [https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak](https://github.com/MicrosoftDocs/mslearn-sqlserver-sql-server-discovery-using-map/blob/master/MAP_updatedDB.bak).
 1. Select **Download**, and in the pop-up select **Save**.
 
 ## Connect to the sample MAP database

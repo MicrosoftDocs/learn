@@ -42,7 +42,7 @@ Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the 
 ![Specifying the HTTP request in Apache JMeter](../media/4-apache-jmeter-http-request.png)
 
 > [!TIP]
-> For reference, Microsoft hosts a version of the [*Space Game* website](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true). Go there if you want to follow along with Tim's load tests.
+> For reference, Microsoft hosts a version of the [Space Game website](http://tailspin-spacegame-web.azurewebsites.net?azure-portal=true). Go there if you want to follow along with Tim's load tests.
 
 **Tim:** This is a pretty basic test plan. We can explore many other options later. I think 100 requests is a good start to get meaningful results.
 
@@ -53,7 +53,7 @@ Next, Tim adds **Http Request Defaults** and an **Http Request** sampler to the 
 Tim opens a terminal window and runs the test plan:
 
 ```bash
-apache-jmeter-5.2/bin/./jmeter -n -t LoadTest.jmx -o Results.xml
+apache-jmeter-5.3/bin/./jmeter -n -t LoadTest.jmx -o Results.xml
 ```
 
 The `-n` argument specifies to run JMeter in non-GUI mode. The `-t` argument specifies the test plan file, *LoadTest.jmx*. The `-o` argument specifies the report file, *Results.xml*.

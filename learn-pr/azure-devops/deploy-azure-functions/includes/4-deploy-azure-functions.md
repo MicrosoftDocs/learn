@@ -14,7 +14,9 @@ Here you review the existing CI/CD pipeline defined in *azure-pipelines.yml*.
 
 1. From Azure DevOps, navigate to **Pipelines**.
 1. Select the pipeline.
-1. Select **Edit**. This will bring up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline. Because of the use of wildcards to the project paths, the highlighted tasks below will automatically restore, build, and publish the new Azure Functions project.
+1. Select **Edit**. This brings up the *azure-pipelines.yml* file that defines the existing CI/CD pipeline.
+
+    Because of the use of wildcards to the project paths, the highlighted tasks below will automatically restore, build, and publish the new Azure Functions project.
 
     [!code-yml[](code/4-1-azure-pipelines.yml?highlight=37-57)]
 
@@ -66,7 +68,7 @@ Add the highlighted code below to the end of your pipeline. Be sure to match the
 
     ![Locating the web site URL](../media/4-deploy-url.png)
 
-1. You see the site in production. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
+1. You see the site running on App Service. Scroll down to confirm that the leaderboard has real data in it. This is powered by the function app.
 
     ![Reviewing Space Game](../media/4-space-game.png)
 

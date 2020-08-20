@@ -3,7 +3,7 @@ uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 metadata:
   title: Build a bot with QnA Maker and Azure Bot Service
   description: "Learn how to create a bot that answers frequently asked questions."
-  ms.date: 04/23/2020
+  ms.date: 06/07/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
@@ -30,6 +30,7 @@ units:
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.introduction
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.get-started-qna-bot
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.create-bot
+- learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.knowledge-check
 - learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.summary
 badge:
   uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service.badge

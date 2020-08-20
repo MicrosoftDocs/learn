@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-non-relational-data-offerings-azure.explore-azure-cosmos-db
+title: Explore Azure Cosmos DB
+metadata:
+  title: Explore Azure Cosmos DB
+  description: "Explore Azure Cosmos DB"
+  ms.date: 08/22/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-explore-azure-cosmos-database.md)]

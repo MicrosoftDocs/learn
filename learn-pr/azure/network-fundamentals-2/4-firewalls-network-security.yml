@@ -34,7 +34,7 @@ quiz:
       explanation: This type of firewall checks your packets. Use a proxy server to hide details about your clients from the internet.
     - content: Circuit-level  firewall.
       isCorrect: false
-      explanation: This type of firewall helps you check whether TCP and DUP connections are valid. Use a proxy server to hide details about your clients from the internet.
+      explanation: This type of firewall helps you check whether TCP and UDP connections are valid. Use a proxy server to hide details about your clients from the internet.
     - content: Proxy server firewall.
       isCorrect: true
       explanation: A proxy server helps you hide details about the requesting client.

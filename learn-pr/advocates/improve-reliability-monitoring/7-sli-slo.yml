@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-monitoring.7-sli-slo
+title: "Service level indicators (SLIs) and service level objectives (SLOs)"
+metadata:
+  title: "Service level indicators (SLIs) and service level objectives (SLOs)"
+  description: "Service level indicators (SLIs) and service level objectives (SLOs)"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-sli-slo.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What does SLO stand for?'
+    choices:
+    - content: 'Service Level Observation'
+      isCorrect: false
+      explanation: 'SLO stands for "Service Level Objective".'
+    - content: 'System Level Objective'
+      isCorrect: false
+      explanation: 'SLO stands for "Service Level Objective".'
+    - content: 'Service Level Objective'
+      isCorrect: true
+      explanation: 'Correct, SLO stands for "Service Level Objective".'
+    
+  - content: 'Which of these could be a workable SLO for a web service?'
+    choices:
+    - content: '90% of HTTP requests succeeded in the last 30-day window.'
+      isCorrect: false
+      explanation: 'This SLO is missing where the data will be measured.'
+    - content: '90% of HTTP requests as reported by the load balancer succeeded.'
+      isCorrect: false
+      explanation: 'This SLO is missing the time horizon for the objective.'
+    - content: 'The webserver functioned well in the last 30-day window as reported by the load balancer'
+      isCorrect: false
+      explanation: 'This SLO is missing the actual service level indicator for the objective.'
+    - content: '90% of HTTP requests as reported by the load balancer succeeded in the last 30-day window.'
+      isCorrect: true
+      explanation: 'Correct, this is a workable SLO with all of the necessary parts.'

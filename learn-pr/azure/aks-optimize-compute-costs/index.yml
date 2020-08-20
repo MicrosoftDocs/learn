@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.aks-optimize-compute-costs
+metadata:
+  title: Optimize compute costs on Azure Kubernetes Service (AKS)
+  description: Explore strategies that you can use on Azure to optimize your cloud-native application-development process by using Azure Kubernetes Service (AKS).
+  ms.date: 7/10/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Optimize compute costs on Azure Kubernetes Service (AKS)
+summary: Explore cost-optimization strategies to use on Azure for your cloud-native application-development process. Azure Kubernetes Service (AKS) offers features that you can use to manage compute costs on your AKS cluster. These features include node autoscaling, AKS spot node pools, and Azure Policy.
+abstract: |
+  In this module, you will:
+  - Optimize costs on AKS by using zero-scaled node pools
+  - Optimize costs on AKS by using autoscaled spot node pools
+  - Manage costs with Azure Policy on AKS
+prerequisites: |
+  - Access to an Azure subscription
+  - Basic knowledge of executing commands by using the Azure CLI
+  - Knowledge of Kubernetes and its concepts
+  - Basic knowledge of creating Kubernetes YAML manifest files
+  - Basic knowledge of executing commands by using kubectl
+iconUrl: /learn/achievements/optimize-compute-costs-on-azure-kubernetes-service.svg
+badge:
+  uid: learn.aks-optimize-compute-costs.badge
+levels: 
+- beginner
+roles: 
+- developer
+- administrator
+- solution-architect
+- student
+products:
+- azure
+- azure-kubernetes-service
+- azure-policy
+units:
+- learn.aks-optimize-compute-costs.introduction
+- learn.aks-optimize-compute-costs.node-pools
+- learn.aks-optimize-compute-costs.exercise-node-pools
+- learn.aks-optimize-compute-costs.spot-node-pools
+- learn.aks-optimize-compute-costs.exercise-spot-node-pools
+- learn.aks-optimize-compute-costs.resource-quota-azure-policy
+- learn.aks-optimize-compute-costs.exercise-resource-quota-azure-policy
+- learn.aks-optimize-compute-costs.summary

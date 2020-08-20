@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.feature-importance
+title: Feature importance
+metadata:
+  title: Feature importance
+  description: "Learn how to interpret feature importance."
+  ms.date: 07/16/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-feature-importance.md)]

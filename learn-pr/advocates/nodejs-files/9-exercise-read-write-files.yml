@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.nodejs-files.9-exercise-read-write-files
+title: Exercise - Read and write to files
+metadata:
+  title: Exercise - Read and write to files
+  description: Exercise - Read and write to files
+  ms.date: 06/21/2020
+  author: burkeholland
+  ms.author: buhollan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+interactive: bash
+azureSandbox: true
+durationInMinutes: 5
+content: |
+  [!include[](includes/9-exercise-read-write-files.md)]

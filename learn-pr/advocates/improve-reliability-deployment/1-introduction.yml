@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-deployment.1-introduction
+title: "Introduction"
+metadata:
+  title: "Introduction"
+  description: "Introduction"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.create-pipelines-in-aml
 metadata:
   title: Orchestrating machine learning with pipelines
   description: "Create pipelines in Azure Machine Learning"
-  ms.date: 02/10/2020
+  ms.date: 07/19/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -16,11 +16,9 @@ abstract: |
   - Publish and run a pipeline
   - Schedule a pipeline
 prerequisites: |
-  - Experience training machine learning models with Python
-  - Experience running experiments in Azure Machine Learning
-  - Experience working with datastores and datasets in Azure Machine Learning
-  - Experience creating and using  compute targets in Azure Machine Learning
-iconUrl: /learn/achievements/data-ai/create-pipelines-in-aml-badge.svg
+  - Knowledge of Python
+  - Experience of training models using the Azure Machine Learning SDK
+iconUrl: /learn/achievements/create-pipelines-in-aml-badge.svg
 levels:
 - beginner
 roles:
@@ -28,7 +26,7 @@ roles:
 - student
 products:
 - azure
-- azure-machine-learning-service
+- azure-machine-learning
 units:
 - learn.wwl.create-pipelines-in-aml.introduction
 - learn.wwl.create-pipelines-in-aml.pipelines
@@ -38,6 +36,7 @@ units:
 - learn.wwl.create-pipelines-in-aml.pipeline-parameters
 - learn.wwl.create-pipelines-in-aml.scheduling-pipelines
 - learn.wwl.create-pipelines-in-aml.creating-a-pipeline
+- learn.wwl.create-pipelines-in-aml.knowledge-check
 - learn.wwl.create-pipelines-in-aml.summary
 badge:
   uid: learn.wwl.create-pipelines-in-aml.badge

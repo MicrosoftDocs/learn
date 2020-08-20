@@ -14,7 +14,7 @@ A _device set_ is a collection of device configurations. These collections provi
 
 ## What devices are available?
 
-App Center maintains a [list of available devices and their operating system version](https://docs.microsoft.com/appcenter/test-cloud/devices). Generally, you will find the most common device configurations, representing the most popular devices from major manufacturers. You can also find older configurations of popular devices that may have reached the end of their system updates.
+App Center maintains a [list of available devices and their operating system version](https://docs.microsoft.com/appcenter/test-cloud/devices/android). Generally, you will find the most common device configurations, representing the most popular devices from major manufacturers. You can also find older configurations of popular devices that may have reached the end of their system updates.
 
 ## What is a test run?
 

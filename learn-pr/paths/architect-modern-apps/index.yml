@@ -22,7 +22,7 @@ products:
 - azure-kubernetes-service
 - azure-container-instances
 - azure-app-service
-- azure-redis-cache
+- azure-cache-redis
 modules:
 - learn.intro-to-containers
 - learn.run-docker-containers-aci

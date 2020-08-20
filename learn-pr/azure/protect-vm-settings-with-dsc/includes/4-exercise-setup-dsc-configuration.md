@@ -69,7 +69,8 @@ Start by deploying a new VM from a Windows Server 2016 image.
     | Resource Group | The existing resource group |
     | Location | The default location |
 
-1. Select **Create**. Wait until the automation account is created before you continue.
+1. Ignore the message about permissions for the Run as account. You don't need it to be created as a Run As account in Azure Active Directory. 
+1. Scroll down and select **Create**. Wait until the automation account is created before you continue.
 
 ## Create a DSC configuration script
 

@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 It's important that your code doesn't open the door to an attacker. A vulnerability that's exploitable in your codebase is an operations nightmare. In this part, you learn about a vulnerability found in the _Space Game_ code. You see how the team plans to make sure that a vulnerability doesn't happen again.
 
 Let's check in on the discussion.
