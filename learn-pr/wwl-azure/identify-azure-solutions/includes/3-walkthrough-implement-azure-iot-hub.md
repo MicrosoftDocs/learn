@@ -21,8 +21,8 @@ In this task, we will create an IoT Hub.
 
     | Settings | Value |
     |--|--|
-    | Subscription | **Choose your subscription** |
-    | Resource Group |  **myRGIoT** (create new)|
+    | Subscription | **Choose the Concierge subscription** |
+    | Resource Group |  Choose **<rgn>[sandbox resource group name]</rgn>** |
     | Region | **East US** |
     | IoT Hub Name | **my-hub-groupxxxx** |
     | | |	
