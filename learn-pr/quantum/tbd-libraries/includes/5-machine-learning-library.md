@@ -8,9 +8,12 @@ Quantum machine learning is an emerging field of interest for those interested
 in quantum computing and how it will impact the future of computing. Classical
 machine learning is already revolutionizing the world of science and business.
 However, the training of Machine Learning algorithms is computationally costly
-and hinders the development and scope of the field. This is why researches are
-exploring how to use quantum technology to train models and potentially provide
-some advantage over classical machine learning algorithms.
+and hinders the development and scope of the field. There are some things that 
+are very useful in ML that are not very costly to compute, but in general, the 
+state-of-the-art models require huge processes of training that cost up to 
+millions of dollars in terms of cloud-computing resources. This is why 
+researches are exploring how to use quantum technology to train models and 
+potentially provide some advantage over classical machine learning algorithms.
 
 The Quantum Machine Learning Library available today provides the necessary
 tools to implement a circuit-centric quantum classifier. This classifier is a
