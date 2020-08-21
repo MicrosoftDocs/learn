@@ -1,5 +1,9 @@
 In this walk-through, we will configure a network security group.
 
+<div style="background:yellow;">
+TODO: Don't love having your own sub and needed to RDP. Does Sandbox support NSGs? Could we attempt a connection via CloudShell instead to show deny/allow?
+</div>
+
 ## Exercise - Secure network traffic
 
 > [!NOTE]

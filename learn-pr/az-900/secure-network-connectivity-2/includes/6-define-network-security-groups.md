@@ -1,4 +1,9 @@
-[Network Security Groups (NSG)](https://docs.microsoft.com/azure/virtual-network/security-overview#network-security-groups?azure-portal=true) allow you to filter network traffic to and from Azure resources in an Azure virtual network. An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol.
+[Network Security Groups (NSG)](https://docs.microsoft.com/azure/virtual-network/security-overview#network-security-groups?azure-portal=true) allow you to filter network traffic to and from Azure resources in an Azure virtual network. You can think of them like an internal firewall. An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol.
+
+<div style="background:yellow;">
+TODO: Needs an architecture diagram.
+</div>
+
 
 **Network security rule properties**
 

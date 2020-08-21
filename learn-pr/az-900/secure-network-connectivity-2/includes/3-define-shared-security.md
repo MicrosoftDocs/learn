@@ -1,5 +1,9 @@
 Organizations face many challenges with securing their datacenters, including recruiting and keeping security experts, using many security tools, and keeping pace with the volume and complexity of threats.
 
+<div style="background:yellow;">
+TODO: Shared security responsibility has been dropped from the OD - can we just remove this entire unit?
+</div>
+
 :::image type="content" source="../media/2-cloud-security.png" alt-text="Diagram that depicts the advantages of using cloud technology for security.":::
 
 As computing environments move from customer-controlled datacenters to the cloud, the responsibility of security also shifts. Security of the operational environment is now a concern shared by both cloud providers and customers. By shifting these responsibilities to a cloud service like Azure, organizations can reduce focus on activities that aren't core business competencies. Depending on the specific technology choices, some security protections will be built into the particular service, while addressing others will remain the customer's responsibility. To ensure that the proper security controls are provided, a careful evaluation of the services and technology choices becomes necessary.
