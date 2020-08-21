@@ -7,7 +7,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Examine privacy, compliance, and data protection standards on Azure
+title: Examine privacy, compliance, and data protection standards
 summary: |
   Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
 
@@ -22,6 +22,7 @@ abstract: |
 prerequisites: |
   There are no prerequisites for this module, however students with some IT knowledge or experience will find the concepts easier to understand.
 iconUrl: /learn/achievements/examine-privacy-compliance-data-protection-standards.svg
+hidden: true
 levels:
 - beginner
 roles:
