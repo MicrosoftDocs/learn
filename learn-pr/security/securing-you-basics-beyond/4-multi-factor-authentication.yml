@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.securing-you-basics-beyond.4-multi-factor-authentication
+metadata:
+  title: Multi-Factor Authentication (MFA) – It's easier than it sounds!
+  description: Understanding the basics of Multi-Factor Authentication (MFA), and using it for securing your identity.
+  ms.date: 05/30/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Multi-Factor Authentication (MFA) – It's easier than it sounds!
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-multi-factor-authentication.md)]
+quiz:
+  title: Knowledge check
+  questions:
+
+  - content: 'What are the minimum number of factors needed for Multi-Factor Authentication (MFA)?'
+    choices:
+    - content: 'One'
+      isCorrect: false
+      explanation: 'As implied by, Multi-Factor, more than one factor is required.'
+    - content: 'Two'
+      isCorrect: True
+      explanation: 'This is the minimum number of factors required for supporting MFA.'
+    - content: 'Three'
+      isCorrect: false
+      explanation: 'Though this makes accessing your account more secure, the minimum number of factors needed for MFA is two.'
+    - content: 'Zero'
+      isCorrect: false
+      explanation: 'At least two factors are needed for MFA. Zero factors means you did not have a password.'
+
+  - content: 'When should you use MFA?'
+    choices:
+    - content: 'Only for securing financial accounts.'
+      isCorrect: false
+      explanation: 'You should never restrict when to use MFA, if it is an available option.'
+    - content: 'Only for securing access to a password manager.'
+      isCorrect: false
+      explanation: 'Not bad, but you should not restrict when to use it if using MFA is available.'
+    - content: 'For all your accounts, and wherever you can use MFA'
+      isCorrect: true
+      explanation: 'Best option is to use MFA if it is available. Never restrict where you should use it if using MFA is available.'
+    - content: 'Never'
+      isCorrect: false
+      explanation: 'Always use MFA where it is available.'

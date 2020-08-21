@@ -32,7 +32,7 @@ units:
 - learn.securing-you-basics-beyond.1-introduction
 - learn.securing-you-basics-beyond.2-phishing
 - learn.securing-you-basics-beyond.3-passwords
-- learn.securing-you-basics-beyond.4-compromised-identity
+- learn.securing-you-basics-beyond.4-multi-factor-authentication
 - learn.securing-you-basics-beyond.5-summary
 badge:
   uid: learn.securing-you-basics-beyond.badge
