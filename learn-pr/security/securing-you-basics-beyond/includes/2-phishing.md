@@ -56,7 +56,7 @@ In the image below, you can see an example of an email with all of these red fla
 
 Watch the following video that goes into details of what to look for and how to avoid phishing.
 
-> [!VIDEO https://channel9.msdn.com/Shows/Learn-WWL/Securing-you-Phishing-emails]
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-WWL/Securing-you-Phishing-emails/player?format=ny]
 
 Now that you recognize phishing email, let’s talk about the second way to protect yourself. Don’t do anything! If you don’t click any links and don’t open any attachments in a phishing email, you should be safe.
 
