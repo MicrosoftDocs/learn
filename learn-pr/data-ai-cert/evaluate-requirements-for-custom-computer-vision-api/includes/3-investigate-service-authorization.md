@@ -1,4 +1,4 @@
-## Investigate Service Authorization
+
 
 The Custom Vision APIs use a pair of *subscription keys* to control access to the two APIs of the service:
 

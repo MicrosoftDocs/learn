@@ -1,4 +1,4 @@
-## Summary
+
 
 Your product assurance team needed a more efficient way to perform the final visual inspection of your products before shipping. You needed to design the solution for an automated process that would accurately evaluate the physical characteristics of your products to ensure your quality standard. The approach also needed to meet your architectural requirements and had to be something that the software development team could implement.
 
