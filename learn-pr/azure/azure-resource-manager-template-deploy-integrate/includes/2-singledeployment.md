@@ -2,12 +2,12 @@ Deploying Azure Resource Manager (ARM) Templates is the easy part of the equatio
 * [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?WT.mc_id=MSLearn-ARM-pierrer)
 * and [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?WT.mc_id=MSLearn-ARM-pierrer).
 
-Whether you are deploying your templates in your test environment or in productions. The ability to deploying from the Azure shell web interface or a command line / terminal is crucial. This unit will cover the ways to deploy your templates.
+Whether you are deploying your templates in your test environment or in production, the ability to deploy from the Azure shell web interface or a command line/terminal using native or partner tools is crucial. This unit will cover the ways to deploy your templates.
 
 1. PowerShell command and/or scripts
 1. Azure CLI command and/or scripts
 1. Directly in the Azure portal
-1. Using Partner tools such as Terraform *(Not covered in this module)*
+1. Using GitHub Actions
 
 There will be times where you need to deploy from different locations
 
