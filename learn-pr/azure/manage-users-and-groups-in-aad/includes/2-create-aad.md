@@ -2,7 +2,7 @@ While they share a similar name, Azure AD is _not_ a cloud version of Windows Se
 
 ![Conceptual art showing Windows AD and Azure AD controlling resources](../media/2-azure-vs-windows-ad.png)
 
-Azure AD can also be used independently of Windows AD. Smaller companies can use Azure AD as their only directory service, using it to control access to their applications and SaaS products such as Office 365, Salesforce, and Dropbox.
+Azure AD can also be used independently of Windows AD. Smaller companies can use Azure AD as their only directory service, using it to control access to their applications and SaaS products such as Microsoft 365, Salesforce, and Dropbox.
 
 > [!NOTE]
 > Keep in mind that this approach doesn't provide a completely centralized administrative model - for example, local Windows machines would authenticate using local credentials. But applications can be written to use Azure AD to provide authentication and authorization that can then be administered in a single place.
@@ -12,7 +12,7 @@ Azure AD can also be used independently of Windows AD. Smaller companies can use
 Microsoft offers several cloud-based offerings today - all of which can use Azure AD to identify users and control access.
 
 - Microsoft Azure
-- Microsoft Office 365
+- Microsoft Microsoft 365
 - Microsoft Intune
 - Microsoft Dynamics 365
 
