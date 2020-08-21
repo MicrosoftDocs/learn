@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.implement-cicd-iot-edge.how-create-release-pipeline-iot-edge
-title: How to create a release pipeline with a Smoke Test
+title: How to create a release pipeline with a smoke test
 metadata:
-  title: How to create a release pipeline with a Smoke Test
-  description: In this section, we help learner how to create a release pipeline with Smoke test.
+  title: How to create a release pipeline with a smoke test
+  description: In this section, we help the learner to create a release pipeline with smoke test.
   ms.date: 06/23/2020
   author: leestott
   ms.author: leestott

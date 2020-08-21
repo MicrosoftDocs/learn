@@ -5,8 +5,8 @@ metadata:
   title: Monitor SQL performance in Linux
   description: In this unit, you will learn about the tools you can use under Linux to monitor the performance of SQL Server.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 5

@@ -5,7 +5,7 @@ The dataset includes 199 observations with the following features:
 - **region:** Region of the world.
 - **group:** A factor (or categorical variable) with the following levels:
 
-  - **oecd:** Countries that were members of the [Organisation for Economic Co-operation and Development](https://render.githubusercontent.com/view/www.oecd.org?azure-portal=true) (OECD) as of May 25, 2012.
+  - **oecd:** Countries that were members of the [Organisation for Economic Co-operation and Development](http://www.oecd.org) (OECD) as of May 25, 2012.
   - **africa:** Countries on the continent of Africa. (Note that no OECD countries are located in Africa.)
   - **other:** All other countries.
 - **fertility:** The total number of children born or likely to be born to a woman in her lifetime if she were subject to the prevailing rate of age-specific fertility in the population.

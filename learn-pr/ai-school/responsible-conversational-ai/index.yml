@@ -25,7 +25,7 @@ roles:
 - business-user
 products: 
 - azure
-- dynamics
+- dynamics-365
 units: 
 - learn-wwl.responsible-conversational-ai.introduction
 - learn-wwl.responsible-conversational-ai.conversational-ai-bot-types
