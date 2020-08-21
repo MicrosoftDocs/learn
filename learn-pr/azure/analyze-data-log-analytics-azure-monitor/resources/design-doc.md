@@ -8,32 +8,29 @@ Analyze log data by using Log Analytics in Azure Monitor
 
 ## Level
 
-- Intermediate
+- Beginner
 
 ## Product(s)
 
-- Azure
-- Azure portal
 - Log Analytics
 - Azure Monitor
 
 ## Prerequisites
 
 - Experience using the Azure portal for accessing and creating resources
-- Knowledge of Azure compute
+- Knowledge of Azure virtual machines
 - Basic familiarity with SQL query language
 
 ## Summary
 
-A large financial services firm is building more workloads and applications in Azure, versus building on-premises. Alerting and trend analysis have become increasingly difficult as the management team will not sign off on moving the on-premises monitoring environment to Azure due to licensing costs. Additionally, the environments being built in Azure are a mixture of IaaS and PaaS resources, so even if the on-premises environment could be moved, it would not be able to monitor PaaS resources. The operations team is exploring using Azure Monitor and Log Analytics as a set of cloud native set of tools for monitoring deployed resources in Azure.
-
-A big driver behind picking a monitoring solution for both IaaS and PaaS resources is the operations team needs to understand any issues that may be affecting production in real time, along with understanding performance and trends over time. Resources in Azure generate a lot of log data, so leaning on Azure Monitor and Log Analytics will allow the team to collect granular performance and utilization data, activity and diagnostics logs, and configure notifications from Azure resources in a consistent manner.
-
-In this module, you will learn how to configure and interpret metrics, configure Log Analytics, and write queries that analyze logs so you cangit  fulfill monitoring needs of a cloud based environment.
+Assess Log Analytics and Azure Monitor. Deploy Log Analytics workspace. Enable Log Analytics extension on Azure virtual machines. Configure diagnostic settings for Azure VMs. Monitor performance of virtual machines using Log Analytics queries and create alerts. Save results of queries to a dashboard and interpret graphical representations of data extracted from queries. 
 
 ## Learning objectives
 
-1. *Add numbered Learning Objectives [(Learning objective guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives)*
+1. Describe relationship between Azure Monitor and Log Analytics
+1. Create Log Analytics workspace, configure with right access permissions, and decide upon resource-centric or workspace-centric model for deployment
+1. Write queries, set up alerts from queries, and configure diagnostic settings for Azure virtual machines
+1. Save queries to dashboards and interpret graphs of extracted data
 
 ## Chunk your content into subtasks
 
@@ -51,18 +48,12 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-    Provide a scenario of a real-world job-task that shows how the technology is used in practice:
+A financial services firm is building more workloads and applications in Azure, versus building on-premises. Alerting and trend analysis have become increasingly difficult as the management team won't approve moving the on-premises monitoring environment to Azure because of licensing costs. Additionally, the environments being built in Azure are a mixture of IaaS and PaaS resources. Even if the on-premises monitoring environment could be moved, it couldn't monitor PaaS resources. The operations team is exploring Azure Monitor and Log Analytics as cloud native tools for their Azure Resources.
 
-    *Add your scenario [(Scenario guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-scenarios)*
+1. **What is Azure Monitor and Log Analytics?**
 
-1. **Learning-content unit title**
-
-    List the content that will enable the learner to *subtask*:
-
-    - Enabling objective
-        - Information needed to accomplish the enabling objective
-        - Information needed to accomplish the enabling objective
-    - Enabling objective
+    - Introduce both Azure Monitor and Log Analytics        
+    - Walk students through
         - Information needed to accomplish the enabling objective
         - Information needed to accomplish the enabling objective
     - Enabling objective
@@ -76,7 +67,7 @@ Identify the subtasks of *module title*
     - Question type
     - Question type
 
-1. **Exercise - exercise unit title**
+1. **Set up Log Analytics Workspace**
 
     List the steps which apply the learning content from previous unit:
 
@@ -84,11 +75,13 @@ Identify the subtasks of *module title*
     1. Step
     1. Step
 
-1. **Summary**
+1. **Build log queries, set up diagnostics, and create alerts for Azure virtual machines**
 
     How did you solve the problem in the initial scenario with the knowledge learned in the module? 
     
     *Add your summary [(Summary guidance)](https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-module-summary-unit)*
+
+1. **Create dashboards and analyze graphical data from generated queries**
 
 ## Notes
 
