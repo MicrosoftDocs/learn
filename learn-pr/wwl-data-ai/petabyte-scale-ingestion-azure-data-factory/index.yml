@@ -16,7 +16,7 @@ abstract: |
   3. Describe data factory connectors
   4. Use the data factory copy activity
   5. Manage the self hosted integration runtime
-  6. Setup the azure integration runtime
+  6. Setup the Azure integration runtime
   7. Understand data ingestion security considerations
   8. Knowledge check
   9. Summary
