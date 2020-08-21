@@ -60,7 +60,7 @@ The example below shows the customers from the previous unit, formatted as JSON 
 }
 ```
 
-You're free to define whatever fields you like. The important point is that the data follows the JSON grammar. When an application reads a document, it can use a JSON parser to break up the document into its component fields and extact the individual pieces of data.
+You're free to define whatever fields you like. The important point is that the data follows the JSON grammar. When an application reads a document, it can use a JSON parser to break up the document into its component fields and extract the individual pieces of data.
 
 Other formats you might see include *Avro*, *ORC*, and *Parquet*:
 

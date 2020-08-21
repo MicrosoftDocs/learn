@@ -52,7 +52,7 @@ Non-relational databases are highly suitable for the following scenarios:
 
 - *IoT and telematics*. These systems typically ingest large amounts of data in frequent bursts of activity. Non-relational databases can store this information very quickly. The data can then be used by analytics services such as Azure Machine Learning, Azure HDInsight, and Microsoft Power BI. Additionally, you can process the data in real-time using Azure Functions that are triggered as data arrives in the database.
 
-- *Retail and marketing*. Microsoft uses CosmosDB for its own ecommerce platforms that run as part of Windows Store and XBox Live. It's also used in the retail industry for storing catalog data and for event sourcing in order processing pipelines.
+- *Retail and marketing*. Microsoft uses CosmosDB for its own ecommerce platforms that run as part of Windows Store and Xbox Live. It's also used in the retail industry for storing catalog data and for event sourcing in order processing pipelines.
 
 - *Gaming*. The database tier is a crucial component of gaming applications. Modern games perform graphical processing on mobile/console clients, but rely on the cloud to deliver customized and personalized content like in-game stats, social media integration, and high-score leaderboards. Games often require single-millisecond latencies for reads and write to provide an engaging in-game experience. A game database needs to be fast and be able to handle massive spikes in request rates during new game launches and feature updates.
 
