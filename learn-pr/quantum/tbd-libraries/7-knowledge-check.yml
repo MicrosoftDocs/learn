@@ -51,4 +51,4 @@ quiz:
       explanation: 'The quantum machine learning library is a research enviornment with a limited scope. It cannot compete with the current standard machine learning framworks.'
     - content: 'The quantum machine learning library is a suitable place to start running experiments of quantum machine learning, but does not provide commercial applications.'
       isCorrect: true
-      explanation: 'The samples and tutorials of the quantum machine learning library are a great starting point to get introduced to the field of quantum machine learning.'
+      explanation: 'The samples and tutorials of the quantum machine learning library are a great starting point to get you introduced to the field of quantum machine learning.'
