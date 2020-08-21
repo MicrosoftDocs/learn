@@ -1,20 +1,18 @@
-For on-premises environments, Active Directory running on Windows Server provides an identity and access management service, managed by your own organization. On Azure, Azure Active Directory (Azure AD) is Microsoft's cloud-based identity and access management service. With Azure AD, you control the identity accounts, but Microsoft ensures that the service is available globally.
+In this part, you learn how Azure Active Directory (Azure AD) provides identity services that enable your users to sign in and access both Microsoft cloud applications and cloud applications you develop. You also learn how supports single sign-on (SSO).
 
-Tailwind Traders already uses Active Directory to secure their on-premises environments and they don't want their users to have a different username and password to remember for accessing applications and data in the cloud. Can they integrate their existing Active Directory with Azure AD, to create a seamless experience for their users?
+Tailwind Traders already uses Active Directory Domain Services (ADDS) to secure their on-premises environments and they don't want their users to have a different username and password to remember for accessing applications and data in the cloud. Can they integrate their existing Active Directory with cloud identity services to create a seamless experience for their users?
 
-In this part, you'll learn more about how Azure AD works and how it supports single sign-on (SSO).
+Let's start with how Azure AD compares to Active Directory Domain Services.
 
-Let's start with a brief overview of SSO.
+## How does Azure AD compare to ADDS?
 
-## What's single sign-on (SSO)?
+Active Directory Domain Services is related to Azure AD, but they have some key differences.
 
-Single sign-on enables a user to sign in one time and use that credential to access multiple resources and applications from different providers.
+Microsoft introduced Active Directory Domain Services in Windows 2000 to give organizations the ability to manage multiple on-premises infrastructure components and systems by using a single identity per user.
 
-The more identities a user has to manage, the greater the risk of a credential-related security incident. More identities mean more passwords to remember and periodically change. Password policies can vary among applications and, as complexity requirements increase, it becomes increasingly difficult for users to remember them.
+For on-premises environments, Active Directory running on Windows Server provides an identity and access management service that's managed by your own organization. Azure AD is Microsoft's cloud-based identity and access management service. With Azure AD, you control the identity accounts, but Microsoft ensures that the service is available globally. If you've worked with Active Directory Domain Services, Azure AD will be familiar to you.
 
-Consider the process of managing all those identities. Additional strain is placed on help desks as they deal with account lockouts and password reset requests. If a user leaves an organization, tracking down all those identities and ensuring they are disabled can be challenging. If an identity is overlooked, this could allow access when it should have been eliminated.
-
-With SSO, you need to remember only one ID and one password. Access across applications is granted to a single identity that's tied to the user, which simplifies the security model. As users change roles or leave an organization, access is tied to a single identity, which greatly reduces the effort needed to change or disable accounts. Using SSO for accounts makes it easier for users to manage their identities and increases your security capabilities.
+When you secure identities on-premises with Active Directory, Microsoft doesn't monitor sign-in attempts. When you connect Active Directory with Azure AD, Microsoft can help protect you by detecting suspicious sign-in attempts at no extra cost. For example, Azure AD can detect sign-in attempts from unexpected locations or unknown devices.
 
 ## What kinds of resources can Azure AD help secure?
 
@@ -33,10 +31,10 @@ Azure AD provides services such as:
     This includes verifying identity to access applications and resources, and providing functionality such as self-service password reset, multi-factor authentication (MFA), a custom banned password list, and smart lockout services.
 * **Single sign-on (SSO)**
 
-    As mentioned earlier, SSO enables you to remember only one ID and one password to access multiple applications. A single identity is tied to a user, which simplifies the security model. As users change roles or leave an organization, access modifications are tied to that identity, which greatly reduces the effort needed to change or disable accounts.
+    SSO enables you to remember only one ID and one password to access multiple applications. A single identity is tied to a user, which simplifies the security model. As users change roles or leave an organization, access modifications are tied to that identity, which greatly reduces the effort needed to change or disable accounts.
 * **Application management**
 
-    You can manage your cloud and on-premises apps by using Azure AD Application Proxy, single sign-on, the My Apps portal (also referred to as *Access panel*), and SaaS apps.
+    You can manage your cloud and on-premises apps by using Azure AD Application Proxy, single sign-on, the My Apps portal (also referred to as *Access panel*), and SaaS applications.
 * **Device management**
 
     As well as accounts for individual people, Azure AD also supports the registration of devices. This enables devices to be managed through tools like Microsoft Intune. It also allows for device-based conditional access policies to restrict access attempts to only those coming from known, registered devices, regardless of the requesting user account.
@@ -59,8 +57,26 @@ Azure AD is for:
 
     Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant.
 
-## How does SSO work with Azure AD?
+## What's single sign-on (SSO)?
 
-By using Azure AD for single sign-on, you also have the ability to combine multiple data sources into an intelligent security graph. This security graph provides threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from your on-premises Active Directory. By using a single identity provider, you have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
+Single sign-on enables a user to sign in one time and use that credential to access multiple resources and applications from different providers.
 
-As Tailwind Traders integrates its existing Active Directory instance with Azure AD, they create a consistent access model across their organization. Doing so greatly simplifies their ability to sign in to different applications, manage changes to user identities and control, monitor and block unusual access attempts.
+The more identities a user has to manage, the greater the risk of a credential-related security incident. More identities mean more passwords to remember and periodically change. Password policies can vary among applications and, as complexity requirements increase, it becomes increasingly difficult for users to remember them.
+
+Consider the process of managing all those identities. Additional strain is placed on help desks as they deal with account lockouts and password reset requests. If a user leaves an organization, tracking down all those identities and ensuring they are disabled can be challenging. If an identity is overlooked, this could allow access when it should have been eliminated.
+
+With SSO, you need to remember only one ID and one password. Access across applications is granted to a single identity that's tied to the user, which simplifies the security model. As users change roles or leave an organization, access is tied to a single identity, which greatly reduces the effort needed to change or disable accounts. Using SSO for accounts makes it easier for users to manage their identities and increases your security capabilities.
+
+You'll find resources at the end of this module about how to enable SSO through Azure AD.
+
+## How can I connect ADDS with Azure AD?
+
+There are a few ways to connect your existing Active Directory Domain Services installation with Azure AD. One popular method is Azure AD Connect.
+
+Azure AD Connect synchronizes user identities between Active Directory running on-premises and Azure AD. Azure AD Connect synchronizes changes between both identity systems, which enables you to use features like SSO, MFA, and self-service password reset under both systems. Self-service password reset prevents users from using known compromised passwords.
+
+Here's a diagram that shows how Azure AD Connect fits between your on-premises Active Directory and Azure AD:
+
+:::image type="content" source="../media/3-azure-ad-connect.png" alt-text="A diagram showing two environments: Active Directory running on-premises and Azure AD. Azure AD Connect joins the two environments. Azure AD includes SSO, MFA, and self-service password reset." border="false":::
+
+As Tailwind Traders integrates its existing Active Directory instance with Azure AD, they create a consistent access model across their organization. Doing so greatly simplifies their ability to sign in to different applications, manage changes to user identities and control, and monitor and block unusual access attempts.

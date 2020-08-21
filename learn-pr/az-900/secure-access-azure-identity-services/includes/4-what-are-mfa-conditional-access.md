@@ -21,7 +21,9 @@ These elements fall into three categories:
 
 :::image type="content" source="../media/4-multi-factor-authentication.png" alt-text="Some various ways to authenticate over M F A, including a username and password, keys, smart cards, and certificates." border="false":::
 
-MFA increases identity security by limiting the impact of credential exposure (for example, stolen usernames and passwords). With MFA enabled, an attacker who has a user's password would also need to have possession of their phone or their fingerprint to fully authenticate. Authentication with only a single factor is insufficient and, without MFA, an attacker would be unable to use those credentials to authenticate. MFA should be enabled wherever possible as MFA adds enormous benefits to security.
+MFA increases identity security by limiting the impact of credential exposure (for example, stolen usernames and passwords). With MFA enabled, an attacker who has a user's password would also need to have possession of their phone or their fingerprint to fully authenticate.
+
+Compare MFA with single-factor authentication. Under single-factor authentication, an attacker would only need  your username and password to authenticate. Therefore, MFA should be enabled wherever possible as MFA adds enormous benefits to security.
 
 ### Which Azure services provide MFA?
 
