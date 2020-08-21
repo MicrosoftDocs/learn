@@ -289,7 +289,7 @@ Rather than passing parameters as inline values in your script, you may find it 
 
 1. Click the "New..." item in the menu and the extension will create a parameter file based on the template currently opened.
 
-:::image type="content" source="../../media/5-parameter-file-create-2.png" alt-text="Create parameter file in VS Code." border="true":::
+  ![Create parameter file in VS Code.](../../media/5-parameter-file-create-2.png)
 
 1. Once we have our local parameter file, we can use the following Azure CLI command with the **--parameters** parameters.
 
@@ -391,7 +391,7 @@ In some instances you will need to deploy from an external or remote location in
     parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
     today=$(date +"%Y-%m-%d")
     deploymentname="DeployLocalTemplate-4-"$today
-    
+
     az deployment group create \
     --name $deploymentname \
     --template-uri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
