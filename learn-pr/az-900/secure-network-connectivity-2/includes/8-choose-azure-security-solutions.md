@@ -1,4 +1,7 @@
 When considering your Azure security solution consider all the elements of defense in depth. 
+<div style="background:yellow;">
+TODO: While I like the scenario based approach, is this needed for the exam? It's a little repetitive. Perhaps could be replaced with a "What would TWT do" scenario.
+</div>
 
 ## Perimeter layer
 
