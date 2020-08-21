@@ -1,7 +1,14 @@
+
+
+
+
+
 Simulation of physical systems has long been a driving force in the push toward quantum computing.
 This is because quantum dynamics are widely believed to be intractable to simulate on classical computers, meaning that the complexity of simulating the system scales exponentially with the size of the quantum system in question. 
 Simulating problems in chemistry and material science remains perhaps the most evocative applications of quantum computing, and would allow us to probe processes and systems that were previously beyond our ability to measure or simulate. 
 Besides molecular problems in quantum chemistry, which our discussion below focuses on, this ability (and the Q# quantum chemistry library) will also allow us to simulate correlated electronic materials such as high-temperature superconductors.
+
+> [!VIDEO https://www.youtube.com/embed/Hxz0tH8jDfQ]
 
 ## Molecules and Hamiltonians
 
