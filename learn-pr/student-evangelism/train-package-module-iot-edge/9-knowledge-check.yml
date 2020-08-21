@@ -21,7 +21,7 @@ quiz:
     - content: "The company could use specific libraries per environment."
       isCorrect: false
       explanation: "The company could use containers."
-      isCorrect: true
+    - isCorrect: true
       explanation: "The use of libraries helps managing dependencies"
   - content: "The workflow for deploying models in production is:"
     choices:
