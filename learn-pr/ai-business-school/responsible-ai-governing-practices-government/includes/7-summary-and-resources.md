@@ -20,7 +20,7 @@ To help you consider how to leverage governance and external engagements in your
 1. **Engage in public and private partnerships** to advance the responsible use of AI. As the use of AI increases across the private and public sectors, it is essential that we continue to foster open dialogue among businesses, governments, NGOs (Non-Governmental Organizations), academic researchers, and all other interested individuals and organizations.
 1. **Leverage lessons learned from internal AI deployments** to inform broader social policies or regulations related to AI.
 
-### Additional tips for using third party AI systems
+### Additional tips for using third-party AI systems
 
 * Research the third party’s stance on responsible design before purchasing out-of-the-box AI solutions to ensure they were designed in a manner consistent with your principles, policies, and standards.
 * Include your principles in your request for proposal so the solution can be designed with your principles in mind.
@@ -43,9 +43,9 @@ To learn more about our perspective on responsible AI as well as the impact of A
 
 * [Download PDF](https://aka.ms/AA629xh) of Responsible AI in Government – Choosing a governance model to share with others.
 * [Download PDF](https://aka.ms/AA62hpi) of Responsible AI in Government – Policy considerations to share with others.
-* Understand your organization’s AI Maturity by taking Microsoft’s [AI Ready Assessment](https://info.microsoft.com/ww-landing-ai-maturity-model-website.html).
-* Check out reports, podcasts, and training resources in the [AI in Government content hub](https://info.microsoft.com/ww-landing-AI-in-Government-Playlist.html) to learn more about how governments can leverage AI to lower costs while providing higher quality services to citizens.
-* [To see how enterprises and other organizations are governing their use of responsible AI, review this module: Identify governing practices for responsible AI](https://docs.microsoft.com/learn/modules/responsible-ai-governing-practices/index).
+* [Download PDF](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4DIvg) of "AI Maturity and organizations: Understanding AI maturity."
+* Check out reports, podcasts, and training resources in the [AI in Government content hub](https://info.microsoft.com/ww-landing-AI-in-Government-Playlist.html) to learn more about how governments can leverage AI to lower costs while providing higher-quality services to citizens.
+* To see how enterprises and other organizations are governing their use of responsible AI, review this module: [Identify governing practices for responsible AI](https://docs.microsoft.com/learn/modules/responsible-ai-governing-practices/index).
 
 ## References
 

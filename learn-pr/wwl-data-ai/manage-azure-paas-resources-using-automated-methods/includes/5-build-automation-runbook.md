@@ -42,6 +42,6 @@ The image above shows the creation process for a new schedule. The default setti
 
 :::image type="content" source="../media/module-66-automation-final-26.png" alt-text="Link to Schedule in Azure Automation Runbook":::
 
-## *Configuration management*
+## Configuration management
 
 Azure Automation also supports using PowerShell Desired State Configuration (DSC) to manage changes in configuration across VMs in your environment. DSC operates as an extension to VMs and provides a consistent configuration state across all of the VMs that the configuration is applied to. Azure Automation integrates with DSC, allowing you to automatically update configuration across physical and virtual machines, and includes reporting capabilities.
