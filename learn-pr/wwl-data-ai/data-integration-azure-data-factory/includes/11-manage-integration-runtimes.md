@@ -2,7 +2,7 @@ In Data Factory, an activity defines the action to be performed. A linked servic
 
 Integration Runtime is referenced by the linked service or activity, and provides the compute environment where the activity either runs on or gets dispatched from. This way, the activity can be performed in the region closest possible to the target data store or compute service in the most performant way while meeting security and compliance needs. 
 
-In short, the Integration Runtime (IR) is the compute infrastructure used by Azure Data Factory. It provide the following data integration capabilities across different network environments, including:
+In short, the Integration Runtime (IR) is the compute infrastructure used by Azure Data Factory. It provides the following data integration capabilities across different network environments, including:
 
 - **Data Flow**: Execute a Data Flow in managed Azure compute environment.
 - **Data movement**: Copy data across data stores in public network and data stores in private network (on-premises or virtual private network). It provides support for built-in connectors, format conversion, column mapping, and performant and scalable data transfer.

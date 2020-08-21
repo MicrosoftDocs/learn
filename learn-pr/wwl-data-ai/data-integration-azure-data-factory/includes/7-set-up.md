@@ -1,7 +1,7 @@
-It is very easy to setup Azure Data Factory from within the Azure Portal, you only require the following information:
+It is very easy to setup Azure Data Factory from within the Azure portal, you only require the following information:
 
 - **Name**: The name of the Azure Data Factory instance
-- **Subscription**: The subscription in whch the ADF instance is created
+- **Subscription**: The subscription in which the ADF instance is created
 - **Resource group**: The resource group where the ADF instance will reside
 - **Version**: select V2 for the latest features
 - **Location**: The datacenter location in which the instance is stored
