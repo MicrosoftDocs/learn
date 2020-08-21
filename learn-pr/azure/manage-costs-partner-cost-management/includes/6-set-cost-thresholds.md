@@ -32,10 +32,12 @@ In the following example, an email alert gets generated and sent to admin@fabrik
 
 ## Create budgets for Contoso to monitor its own costs
 
-The budget and corresponding alert emails created in the previous section use Fabrikam's discounted partner rates and can send emails to people within the Fabrikam organization. Contoso wants to get similar emails, so you plan to create budgets for Contoso on each of its subscriptions that will send emails as its pay-as-you-go costs increase. To create budgets and notifications, you need to have an account with RBAC access to the subscriptions in Contoso's tenant.
+The budget and corresponding alert emails created in the previous section use Fabrikam's discounted partner rates. The budget can send emails to people within the Fabrikam organization. 
+
+Contoso wants to get similar emails, so you plan to create a budget for Contoso on each of its subscriptions. The budget will send emails as pay-as-you-go costs increase. To create budgets and notifications, you need to have an account with RBAC access to the subscriptions in Contoso's tenant.
 
 To create a budget, sign in to the Azure portal with an account that has the required permissions in the Contoso tenant. Select the **Subscriptions** area to view each of Contoso's subscriptions that you have access to.
 
 :::image type="content" source="../media/06-subscription-list.png" alt-text="Example that shows Contoso accessing its own subscription." lightbox="../media/06-subscription-list.png" :::
 
-From there, select a subscription and then select **Budgets** from the corresponding menu that appears. The budget creation process within the Contoso tenant follows the same process described in the previous section. If you're looking to create more fine-grained budgets for Contoso, you can also configure budgets for it at the scope of resource group.
+From there, select a subscription and then select **Budgets** from the corresponding menu that appears. The budget creation process within the Contoso tenant follows the same process described in the previous section. If you're looking to create more fine-grained budgets for Contoso, you can also configure budgets at the scope of resource group.
