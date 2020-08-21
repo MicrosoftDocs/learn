@@ -140,4 +140,4 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 ## Next steps
 
-Next you'll learn how handle all unmatched page requests to the server and map them to navigate to a valid page in your app.
+Next you'll learn how to handle all unmatched page requests to the server and map them to navigate to a valid page in your app.
