@@ -131,7 +131,7 @@ Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
 
-Your app's now globally available, but it's still stuck at **Loading data ...** because there's no data or API yet. You'll add the API for your web app in the next section.
+Your app's now globally available, but it's still stuck at **Loading data ...** because there's no data or API yet.
 
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 
@@ -140,4 +140,4 @@ Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 ## Next steps
 
-Your app is missing an API for its shopping list. Next, you'll explore how to add an Azure Functions API to your app that will publish to Azure alongside the static assets.
+Next you'll learn how handle all unmatched page requests to the server and map them to navigate to a valid page in your app.
