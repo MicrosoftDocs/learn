@@ -23,6 +23,12 @@ When you create an Azure Static Web Apps resource, Azure sets up a GitHub Action
 
 Azure hosts and serves your web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand.
 
+### Optional APIs
+
+Azure Static Web Apps is ideal for serving purely static content, but it also has great support for static web apps that need APIs behind them. This means you can host your static web app with or without an API.
+
+In this module's exercises, you'll be deploying an app that relies on an API to load its data, but you won't be creating the API here. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
+
 ### Key features
 
 - **Globally distributed web hosting** puts static content like HTML, CSS, JavaScript, and images closer to your users
