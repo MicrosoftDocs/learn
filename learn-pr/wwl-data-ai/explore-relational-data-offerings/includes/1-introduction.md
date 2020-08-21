@@ -7,9 +7,7 @@ Many organizations depend on the information stored in their databases to help m
 Suppose you're a database administrator at Wide World Importers. You're responsible for database design and maintenance, as well as providing information for leadership and creating customer lists for the marketing department. You have an existing SQL Server database that relies heavily on stored procedures and other advanced database features such as linked servers. The database is situated on your internal network. You've been asked to make it globally available to your partners worldwide.
 
 > [!NOTE]
-> A *stored procedure* is a block of code that runs inside your database. Applications often use stored procedures because they are optimized to run in the database envvironment, and can access data very quickly.
->
-> A *linked server* is a connection from one database server to another. SQL Server can use linked servers to run queries on one server that can include data retrieved from other servers; these are known as *distributed queries*. 
+> A *stored procedure* is a block of code that runs inside your database. Applications often use stored procedures because they are optimized to run in the database environment, and can access data very quickly. > A *linked server* is a connection from one database server to another. SQL Server can use linked servers to run queries on one server that can include data retrieved from other servers; these are known as *distributed queries*. 
 
 In this module, you'll explore the options available when choosing a relational data platform for hosting a database in Azure.
 
