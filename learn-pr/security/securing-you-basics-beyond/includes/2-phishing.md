@@ -2,7 +2,7 @@ Imagine you are looking through your emails and you see something from one of yo
 
 Unfortunately, in that moment, an attacker has successfully stolen your account login information.
 
-This email-based, *social engineering* technique is called *phishing*. Attackers successfully use this technique very frequently, regularly sending [over billions of phishing emails every year.](https://www.microsoft.com/security/blog/2019/12/11/the-quiet-evolution-of-phishing/)
+This email-based, *social engineering* technique is called *phishing*. Attackers successfully use this technique very frequently, regularly sending [over billions of phishing emails every year.](https://www.microsoft.com/security/blog/2019/12/11/the-quiet-evolution-of-phishing/?azure-portal=true)
 
 There are ways to identify and protect yourself from phishing. Let's take a closer look at phishing and how you can protect yourself to avoid becoming a victim.
 
@@ -20,9 +20,9 @@ Another common phishing goal is to deliver *malware*, a type of malicious softwa
 One of the most infamous types of *malware* is the dreaded *ransomware*, capable of permanently locking you out of your computer, without the ability to recover any of your personal files.
 
 > [!TIP]
-> If you are permanently locked out of your computer, and suspect it may be ransomware, there are rare cases where ransomware decryption keys are made available for free. These decryption keys allow you to unlock your computers and get your data back. You can get more information here: [NoMoreRansom.org](https://www.nomoreransom.org/). But this is no excuse to take a relaxed approach to phishing attachments. Most ransomware attacks will not be fixed with this option.
+> If you are permanently locked out of your computer, and suspect it may be ransomware, there are rare cases where ransomware decryption keys are made available for free. These decryption keys allow you to unlock your computers and get your data back. You can get more information here: [NoMoreRansom.org](https://www.nomoreransom.org/?azure-portal=true). But this is no excuse to take a relaxed approach to phishing attachments. Most ransomware attacks will not be fixed with this option.
 
-Phishing is one of the most common threats on the internet, and can affect anyone regardless of their background. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-internet-crime-report-released-021120) This only represents a small number of the actual cases. In other words, it is very popular, and unfortunately a very successful way for a criminal to steal your data.
+Phishing is one of the most common threats on the internet, and can affect anyone regardless of their background. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is very popular, and unfortunately a very successful way for a criminal to steal your data.
 
 :::image type="content" source="../media/2-phishing-stats.png" alt-text="Phishing Statistics.":::
 
