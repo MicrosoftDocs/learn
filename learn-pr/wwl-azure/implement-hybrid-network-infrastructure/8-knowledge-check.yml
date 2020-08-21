@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "It provides a direct connection from your on-premises network to an Azure datacenter."
       isCorrect: false
-      explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Office 365 services and Dynamics 365."
-    - content: "It enables you to connect your on-premises network to Office 365 services and Dynamics 365."
+      explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
+    - content: "It enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
       isCorrect: true
       explanation: "That's correct."
     - content: "It provides a connection between your on-premises network and an ExpressRoute provider."
       isCorrect: false
-      explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Office 365 services and Dynamics 365."
+      explanation: "That's incorrect. Microsoft peering enables you to connect your on-premises network to Microsoft 365 services and Dynamics 365."
