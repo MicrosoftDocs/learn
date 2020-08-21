@@ -12,7 +12,7 @@ Azure AD can also be used independently of Windows AD. Smaller companies can use
 Microsoft offers several cloud-based offerings today - all of which can use Azure AD to identify users and control access.
 
 - Microsoft Azure
-- Microsoft Microsoft 365
+- Microsoft 365
 - Microsoft Intune
 - Microsoft Dynamics 365
 
