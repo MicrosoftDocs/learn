@@ -17,9 +17,7 @@ abstract: |
   - Integrate Azure Speech Services with a Windows Mixed Reality application
   - Use speech recognition to translate text
 prerequisites: |
-  - A Unity project configured for Windows Mixed Reality development
-  - The Mixed Reality Toolkit imported and configured into a Unity project
-  - A computer connected to the Internet
+  - Familiarity with [setting up a Unity project for Windows Mixed Reality with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true)
   - Access to a microphone for audio capture
   - Basic familiarity of Unity - Unity interface, create a scene, import a package and add GameObjects to a scene
 iconUrl: /learn/achievements/generic-badge.svg
