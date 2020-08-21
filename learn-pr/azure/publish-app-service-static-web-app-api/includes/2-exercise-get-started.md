@@ -135,7 +135,10 @@ Browse to `http://localhost:8080`.
 
 :::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="Browsing to your web app":::
 
-Your app should say **Loading data ...** because there is no data or API yet. You'll add the API for your web app later on in this tutorial.
+Your app should say **Loading data ...** because there is no data or API yet.
+
+> [!NOTE]
+> In this module's exercises, you deployed an app that relies on an API to load its data, but you won't create the API here. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
 
 Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
