@@ -1,7 +1,14 @@
+
+
+
+
+
 Simulation of physical systems has long been a driving force in the push toward quantum computing.
 This is because quantum dynamics are widely believed to be intractable to simulate on classical computers, meaning that the complexity of simulating the system scales exponentially with the size of the quantum system in question. 
 Simulating problems in chemistry and material science remains perhaps the most evocative applications of quantum computing, and would allow us to probe processes and systems that were previously beyond our ability to measure or simulate. 
 Besides molecular problems in quantum chemistry, which our discussion below focuses on, this ability (and the Q# quantum chemistry library) will also allow us to simulate correlated electronic materials such as high-temperature superconductors.
+
+> [!VIDEO https://www.youtube.com/embed/Hxz0tH8jDfQ]
 
 ## Molecules and Hamiltonians
 
@@ -91,24 +98,22 @@ $$U \ket{\psi} = e^{i \phi} \ket{\psi}.$$
 So, given a molecule's ground state $\ket{\psi_0}$ and using $e^{-i H t}$ as $U$, we can immediately extract the ground state energy $E_0$ from the algorithm's output via $\phi = E_0 t$.
 
 ### Ground state estimation with Q#
+
 With all of the heavy lifting taken care of by existing functions/operations in the Q# standard and quantum chemistry libraries, the workflow to perform the task above could look like the following:
+
 1. Create Q# project, add the quantum chemistry library to it
-2. Get molecular data file
-3. Create Q# program which
-    - accepts properly encoded Hamiltonian from host program
-    - runs phase estimation algorithm
-    - returns energy level estimate
-3. Create host program to
-    - import molecular data file
-    - encode Hamiltonian to Q#-amenable form
-    - call Q# operation and receive returned energy estimate
-    - save, plot, or process that returned value to your heart's content
+1. Get molecular data file
+1. Create Q# program which
+    - accepts properly encoded Hamiltonian from host program.
+    - runs phase estimation algorithm.
+    - returns energy level estimate.
+1. Create host program to
+    - import molecular data file.
+    - encode Hamiltonian to Q#-amenable form.
+    - call Q# operation and receive returned energy estimate.
+    - save, plot, or process that returned value to your heart's content.
 
 ## Explore further
 
 - To get started using the quantum chemistry library with your Q# projects, see [Using additional Q# libraries](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/additional-libraries?view=qsharp-preview&tabs=tabid-csproj)
 - Learn how to use additional tools from the library at [Chemistry library installation](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/chemistry/installation?view=qsharp-preview), and explore the entire documentation section for more.
-- SAMPLES
-- ??
-
-

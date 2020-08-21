@@ -12,24 +12,16 @@ These consist of:
 
     Beyond molecular dynamics, this ability to simulate *other* quantum systems *on* a quantum computer will also open new frontiers in fundamental physics research. For example, many theorized fermionic and bosonic interactions remain out of reach of observation because of experimental limitations. Mapping those systems to a quantum computer will allow them to be isolated and studied without such complications.
 
-- The new *quantum machine learning library*, which provides an implementation of the sequential classifiers that take advantage of quantum computing to understand data.
-    (WORDS GO HERE)
+- The new *quantum machine learning library*, which provides an implementation of an hybrid quantum-classical algorithm that makes use of quantum computing to encode and process the data. This library is not meant to be ready for production but as a research environment for those interested in running experiments to explore the use of quantum computing in machine learning.
 
-- The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer. This includes advanced signed/unsigned integer arithmetic, as well as support for fixed-point representations and polynomial evaluation. 
-    (WORDS GO HERE: e.g. oracle evaluation and cryptography?)
-	(ALSO NOTE: Need clarification on the relationship to th numerics)
-
+- The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer. This includes advanced signed/unsigned integer arithmetic, as well as support for fixed-point representations and polynomial evaluation. Many quantum algorithms require some level of arithmetic manipulation for the information encoded in the qubit registers. The operations implemented in this library provide you the necessary arithmetic operations to implement algorithms like Shor's factoring algorithm.
 
 ## Accessing the libraries 
+
 Unlike the standard libraries, your Q# projects do not automatically access to the contents of these domain-specific libraries.
 That is, such an `open Microsoft.Quantum.<>;` statement at the beginning of your Q# file will not recognize the namespace by default.
 However, adding these libraries to your project requires only a single step (and no further installation), and you immediately have access to the types and callables (operations and functions) defined therein.
 In the following units, you will see some applications of each library without having to follow along locally. 
-But, if you would like to get started exploring, you can learn how to add libraries to your project at [Using additional Q# libraries](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/additional-libraries?view=qsharp-preview&tabs=tabid-csproj).
+But, if you would like to get started exploring, you can learn how to add libraries to your project at [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries?view=qsharp-preview&tabs=tabid-csproj).
 
-## Next units
-
-Describe what they will see in the next units: 
-- Chemistry library: estimate the ground state energy of a molecule from an imported molecular data file 
-- Machine learning: TBD 
-- Numerics: TBD 
+In the next units you are going to see an overview of these libraries and examples of their implementation.

@@ -1,60 +1,173 @@
-One of the Quantum Development Kit's greatest strengths is its flexibility across platforms and development environments.
-Much of this stems from the multiple ways in which users can run Q# programs.
-So far in this learning path, you have been running Q# as a standalone application, where Q# is the only language involved and the program is invoked directly.
-Specifically we have considered examples with the command-line interface, but for the sake of completeness note that Q# can also be used directly from [Q# Jupyter Notebooks](LINK).
+One of the Quantum Development Kit's greatest strengths is its flexibility
+across platforms and development environments. Much of this stems from the
+multiple ways in which users can run Q# programs. So far in this learning path,
+you have been running Q# as a standalone application, where Q# is the only
+language involved and the program is invoked directly. Specifically we have
+considered examples with the command-line interface, but for the sake of
+completeness note that Q# can also be used directly from [Q# Jupyter
+Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter?view=qsharp-preview&tabs=tabid-conda).
 
-While using Q# directly is sufficient for many purposes, there are also many applications which either require, or are drastically simplified by, the use of an additional *host program*.
-Written in either Python or a .NET language (e.g. C# or F#), a host program has the ability to invoke Q# programs---which are then run in the same manner as usual---and receive the returned results.
-An obvious benefit of host programs is therefore that those results can be easily collected and used in any manner such as plotting, post-processing, or file exporting.
+While using Q# directly is sufficient for many purposes, there are also many
+applications which either require, or are drastically simplified by, the use of
+an additional *host program*. Written in either Python or a .NET language (e.g.
+C# or F#), a host program has the ability to invoke Q# programs—which are then
+run in the same manner as usual—and receive the returned results. An obvious
+benefit of host programs is therefore that those results can be easily collected
+and used in any manner such as plotting, post-processing, or file exporting.
 
 ## Useful applications of host programs
-The Q# language was developed specifically around the quantum end of quantum computation---that is, around the processes which will be sent to run on quantum devices. 
-It therefore includes many quantum-specific features, but lacks some abilities which are "standard" to common languages; for example, plotting and the ability to import and export files.
-Besides visualization as a useful tool when exploring Q#, some "advanced" workflows and applications of Q# actually *rely* on the use of host programs.
-Among these are some uses of the domain-specific libraries which you will see in later units---for example, importing molecular data files for use with the quantum chemistry library, or (something about machine learning lib)
 
-Whether it's for curiosity, convenience, or a critical function, the ability to use Q# through host programs is a great skill to have on hand.
-Next, we show you how to set up your system to use either a Python or a C# host program, and then get you familiar with the workflow by rolling quantum dice.
+The Q# language was developed specifically around the quantum end of quantum
+computation that is, around the processes which will be sent to run on quantum
+devices. It therefore includes many quantum-specific features, but lacks some
+abilities which are "standard" to common languages; for example, plotting and
+the ability to import and export files. Besides visualization as a useful tool
+when exploring Q#, some "advanced" workflows and applications of Q# actually
+*rely* on the use of host programs. Among these are some uses of the
+domain-specific libraries which you will see in later units—for example,
+importing molecular data files for use with the quantum chemistry library, or
+importing the data and visualizing the classification in with the quantum 
+machine learning library.
+
+Whether it's for curiosity, convenience, or a critical function, the ability to
+use Q# through host programs is a great skill to have on hand. Next, we show you
+how to set up your system to use either a Python or a C# host program, and then
+get you familiar with the workflow by rolling quantum dice.
 
 ## Set up your host program
 
-NEED ZONE PIVOTS
+### [Python setup](#tab/tabid-python)
 
-### Python
+Install [Miniconda](https://docs.conda.io/en/latest/miniconda.html) or
+[Anaconda](https://www.anaconda.com/products/individual#Downloads). **Note:**
+64-bit installation required.
 
-Copy install info from here: (https://docs.microsoft.com/en-us/quantum/quickstarts/install-python?view=qsharp-preview&tabs=tabid-conda)
-- Should we just stick to the Conda side, or provide them with both options?
+1. Open an Anaconda Prompt.
 
+   - Or, if you prefer to use PowerShell or pwsh: open a shell, run `conda init
+     powershell`, then close and re-open the shell.
 
-### C#
+1. Create and activate a new conda environment named `qsharp-env` with the
+   required packages (including Jupyter Notebook and IQ#) by running the
+   following commands:
 
-Copy install info from here: (https://docs.microsoft.com/en-us/quantum/quickstarts/install-cs?view=qsharp-preview&tabs=tabid-cmdline%2Ctabid-csharp)
-- note they will already have the command-line application installed, so don't need to rehash that (it's linked back to on the .NET page)
+    ```bash
+    conda create -n qsharp-env -c quantum-engineering qsharp notebook
+
+    conda activate qsharp-env
+    ```
+
+1. Run `python -c "import qsharp"` from the same terminal to verify your
+   installation and populate your local package cache with all required QDK
+   components.
+   
+To implement Q# operations in Python programs you first need to create a Q# project
+as usual. In the the same folder as the `Program.qs` of the Q# project, create a 
+Python program called `host.py` to simulate the Q# operations. You need to import 
+the `qsharp` module. The Python client will treat Q# namespaces as if they 
+were Python modules, and each Q# operation a Python function of the 
+associated module. For example:
+
+```python
+import qsharp
+from MyNamespace import MyQuantumOperation
+```
+
+To simulate each operation you only need to use a Python method, `simulate`,
+that is generated for each operation. For example, for the operation
+`GenerateRandomBit` that we defined in the module [todo](todo), the following
+lines will output a random bit:
+
+```python
+import qsharp
+from QuantumRNG import GenerateRandomBit
+
+print(GenerateRandomBit.simulate())
+```
+
+If your operation has input arguments, you can specify them by inserting them
+between the brackets of `.simulate()`.
+
+For more information about Python host programs in the QDK you can read the 
+following [section about host programs in Q#](https://docs.microsoft.com/quantum/user-guide/host-programs?tabs=tabid-python#q-with-host-programs).
+
+### [C# setup](#tab/tabid-cs)
+
+To use C# you don't need to install anything else. The .NET Core SDK 3.1 already
+includes everything that you might need. The process to run Q# applications from
+C# is:
+
+1. Create a new Q# library
+
+      ```dotnetcli
+      dotnet new classlib -lang Q# -o quantum
+      ```
+
+1. Create a new C# or F# console project
+
+      ```dotnetcli
+      dotnet new console -lang C# -o host  
+      ```
+
+1. Add your Q# library as a reference from your host program
+
+     ```dotnetcli
+     cd host
+     dotnet add reference ../quantum/quantum.csproj
+     ```
+
+1. [Optional] Create a solution for both projects
+
+     ```dotnetcli
+     dotnet new sln -n quantum-dotnet
+     dotnet sln quantum-dotnet.sln add ./quantum/quantum.csproj
+     dotnet sln quantum-dotnet.sln add ./host/host.csproj
+     ```
+Once you have your projects set up following the above instructions, you can call into Q# from your .NET console application.
+The Q# compiler will create .NET classes for each Q# operation and function that allow you to run your quantum programs on a simulator.
+
+For more information about C# host programs in the QDK you can read the 
+following [section about host programs in Q#](https://docs.microsoft.com/quantum/user-guide/host-programs?tabs=tabid-csharp#q-with-host-programs).
+
+***
 
 
 ## Roll the quantum dice
 
-To demonstrate how a host program can be used to call Q# operations and collect/process the results, we will use the same Q# code used in the quantum random number generator to simulate and visualize the results of repeatedly rolling two dice.
+To demonstrate how a host program can be used to call Q# operations and
+collect/process the results, we will use the same Q# code used in the quantum
+random number generator to simulate and visualize the results of repeatedly
+rolling two dice.
 
-The Q# program may look familiar: it simply allocates a single qubit, puts it in superposition, measures it, and returns the result.
-Most of the bells and whistles are thus reserved for the host program, which simulates the roll of a single dice by repeatedly calling the Q# operation to generate a random bitstring and converting it to integer form (and repeating this if the random integer is higher than the number of sides on your dice).
-Supposing each roll consists of two dice, the program repeats this twice and collects the net sum of each roll.
-After repeating this for a given number of rolls, we are left with a list of results which we can process in any way we see fit.
-In this case, we will simply create a histogram to observe the relative probability of each roll, and perhaps give you a quantum helping hand for the next time you play Monopoly.
+The Q# program may look familiar: it simply allocates a single qubit, puts it in
+superposition, measures it, and returns the result.
+Most of the bells and whistles are thus reserved for the host program, which
+simulates the roll of a single dice by repeatedly calling the Q# operation to
+generate a random bit-string and converting it to integer form (and repeating
+this if the random integer is higher than the number of sides on your dice).
+Supposing each roll consists of two dice, the program repeats this twice and
+collects the net sum of each roll.
+After repeating this for a given number of rolls, we are left with a list of
+results which we can process in any way we see fit.
+In this case, we will simply create a histogram to observe the relative
+probability of each roll, and perhaps give you a quantum helping hand for
+the next time you play Monopoly.
 
-To avoid relying on external packages or other dependencies, we won't "plot" the histogram in a traditional sense.
-Instead, we'll use a few extra lines in the host program to print the histogram directly in the console.
+To avoid relying on external packages or other dependencies, we won't "plot" 
+the histogram in a traditional sense. Instead, we'll use a few extra lines in 
+the host program to print the histogram directly in the console.
 
 ### Q# program
 
-In your Q# project, create a Q# file with the following contents:
+In your Q# project, create a Q# file with the following contents. It is the
+familiar `GenerateRandomBit` operation. 
 
 ```qsharp
-namespace Qrng {
-    open Microsoft.Quantum.Measurement;
-    open Microsoft.Quantum.Intrinsic;
+namespace QuantumRNG {
+open Microsoft.Quantum.Measurement; 
+open Microsoft.Quantum.Intrinsic;
     
-    operation SampleQuantumRandomNumberGenerator() : Result {
+    operation GenerateRandomBit() : Result {
         using (q = Qubit())  {  // Allocate a qubit.
             H(q);               // Put the qubit to superposition. It now has a 50% chance of being 0 or 1.
             return MResetZ(q);  // Measure the qubit value.
@@ -63,13 +176,13 @@ namespace Qrng {
 }
 ```
 
-NEED ZONE PIVOTS FOR TWO SECTIONS BELOW
+Now let's write the quantum dice rolling simulation for each host program:
 
-### Python host
+### [Python host program](#tab/tabid-python)
 
 ```python
 import qsharp
-from Qrng import SampleQuantumRandomNumberGenerator 
+from QuantumRNG import GenerateRandomBit 
 
 dice_max = 6
 num_rolls = 1000
@@ -83,8 +196,8 @@ for roll in range(num_rolls):
         single_dice_result = dice_max
         while single_dice_result >= dice_max:
             bit_string = [] 
-            for i in range(0, dice_max.bit_length()): 
-                bit_string.append(SampleQuantumRandomNumberGenerator.simulate()) 
+            for i in range(0, dice_max.bit_length()):
+                bit_string.append(GenerateRandomBit.simulate())
             single_dice_result = int("".join(str(x) for x in bit_string), 2)
         # Add single dice result to total of roll:
         roll_sum += single_dice_result
@@ -111,10 +224,7 @@ for idx, res in enumerate(result_hist):
     print(label_str + star_str)
 ```
 
-
-### C# host
-
-Creating Q# project
+### [C# host program](#tab/tabid-python)
 
 ```csharp
 using System;
@@ -123,7 +233,7 @@ using System.Collections.Generic;
 using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
 
-using Qrng;
+using QuantumRNG;
 
 namespace host
 {
@@ -154,7 +264,7 @@ namespace host
                         {
                             bitString = "0"; 
                             bitString = String.Join("", Enumerable.Range(0, size).Select(idx =>
-                                                    SampleQuantumRandomNumberGenerator.Run(sim).Result == Result.One ? "1" : "0"
+                                                    GenerateRandomBit.Run(sim).Result == Result.One ? "1" : "0"
                                                                                         )
                                                     );
                             single_dice_result = Convert.ToInt32(bitString, 2);
@@ -197,6 +307,7 @@ namespace host
 }
 ```
 
+***
 
 ### Output
 
@@ -220,9 +331,17 @@ Histogram:
 12 : ****
 ```
 
-WORDS GO HERE
-
+Congratulations! Now you can launch your own quantum casino. Jokes aside, this
+is a very simple representation of how the QDK offers high
+interoperability between different environments. This means that you can use
+the skills and tools that you have from other environments and combine them
+with Q# and the power of quantum computing.
 
 ## Discover more
-- For more details on host programs, see [Ways to run a Q# program](https://docs.microsoft.com/en-us/quantum/user-guide/host-programs?view=qsharp-preview&tabs=tabid-python).
-- ??
+
+- For more details on host programs, see [Ways to run a Q#
+  program](https://docs.microsoft.com/en-us/quantum/user-guide/host-programs?view=qsharp-preview&tabs=tabid-python).
+
+In the next units we are going to explore the libraries of the Quantum
+Development Kit. Some of them make intensive use of host programs like Python or
+C#.
