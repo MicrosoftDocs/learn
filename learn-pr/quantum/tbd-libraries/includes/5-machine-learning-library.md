@@ -87,6 +87,8 @@ classification problems. The process would be the following:
 
 ### Try the library
 
+VIDEO PLACEHOLDER
+
 If you want to get hands-on experience with the library, we recommend you to try
 our [Q# samples for quantum machine
 learning](https://docs.microsoft.com/samples/microsoft/quantum/training-sequential-models-with-q-using-built-in-datasets/)
