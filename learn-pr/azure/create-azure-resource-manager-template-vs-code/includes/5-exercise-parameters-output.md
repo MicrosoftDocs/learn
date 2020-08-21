@@ -1,4 +1,4 @@
-In this exercise, you add a parameter to define the Azure Storage Account name during deployment. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the Azure Resource Manager template (ARM template) by adding an output that can be used later in the deployment process.
+In this exercise, you add a parameter to define the Azure Storage Account name during deployment. You then add a parameter to define what Storage Account SKU is allowed and define which one to use for this deployment. You also add usefulness to the Azure Resource Manager (ARM) template by adding an output that can be used later in the deployment process.
 
 ## Create parameters for the ARM template
 
