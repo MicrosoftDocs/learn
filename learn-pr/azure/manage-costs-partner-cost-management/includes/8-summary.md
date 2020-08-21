@@ -1,4 +1,4 @@
-In this module, you learned how to use Azure Cost Management to help Fabrikam better understand, manage, and optimize the costs across all of its end customers, including Contoso. 
+In this module, you learned how to use Azure Cost Management to help Fabrikam better understand, manage, and optimize costs across all of its customers, including Contoso. 
 
 You learned what scopes are applicable to partners and customers. You can now apply the correct tools and techniques to analyze your costs for Contoso to reconcile your bill. 
 

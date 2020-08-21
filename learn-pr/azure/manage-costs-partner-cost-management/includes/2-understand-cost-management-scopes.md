@@ -2,7 +2,7 @@ Costs are organized by different Azure entity hierarchies. It's important to und
 
 ## Scopes and hierarchies
 
-Two hierarchies are applicable to Azure Cost Management. Each node in either hierarchy is known as a *scope*. The scope that you select determines the group of costs that apply to the Cost Management tools that you use.
+Two hierarchies are applicable to Azure Cost Management. Each node in either hierarchy is known as a *scope*. The scope that you select determines the group of costs that apply to the Azure Cost Management tools that you use.
 
 The Azure *billing hierarchy* is in your partner tenant. Azure Cost Management uses the billing hierarchy specifically to manage your organization's billing data and invoices. Azure Cost Management uses the billing hierarchy's permission roles to manage payments, costs, and accounts. The permission roles are *global admin* and *admin agent* for a direct partner or an indirect partner, as set in Partner Center.
 
@@ -10,7 +10,7 @@ Contoso's subscriptions and resources themselves are in the Azure *resource enti
 
 We'll focus on only Fabrikam's billing hierarchy in this module. To learn more about the scopes available to Contoso in its tenant, see [Azure RBAC scopes](https://docs.microsoft.com/azure/cost-management-billing/costs/understand-work-scopes?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn#azure-rbac-scopes).
 
-The following diagram shows the full hierarchical structure of Cost Management scopes that are available to Microsoft CSP partners. Scopes for the Azure billing hierarchy are shown on the left in the partner tenant, your Fabrikam tenant. Scopes for the Azure resource entity are on the right in the customer's tenant, Contoso. They're colored orange.
+The following diagram shows the full hierarchical structure of Azure Cost Management scopes that are available to Microsoft Cloud Solution Provider (CSP) partners. Scopes for the Azure billing hierarchy are shown on the left in the partner tenant, your Fabrikam tenant. Scopes for the Azure resource entity are on the right in the customer's tenant, Contoso. They're colored orange.
 
 ![Diagram that shows Fabrikam's scopes for the billing hierarchy.](../media/02-hierarchy-diagram.png)
 
@@ -26,7 +26,7 @@ The billing account represents the root node of Fabrikam's presence within Azure
 
 The scope of billing profile defines subscriptions shown on invoices that Fabrikam receives. The invoices are billed against the scope. After you onboard Fabrikam's customers to a Microsoft Customer Agreement, you receive an invoice. It includes all charges for all products (consumption, purchases, and entitlements) for the customers on the Azure plan under the Microsoft Customer Agreement.
 
-Use the scope of billing profile to view pre-tax costs in the invoiced currency across all your customers for all products and subscriptions included in an invoice. We'll discuss how to analyze your invoice in more detail in the next unit.
+Use the scope of billing profile to view pretax costs in the invoiced currency across all your customers for all products and subscriptions included in an invoice. We'll discuss how to analyze your invoice in more detail in the next unit.
 
 Note the cost differences viewed at this scope:
 
@@ -35,7 +35,7 @@ Note the cost differences viewed at this scope:
 
 ### Customer
 
-The customer scope allows you to view pre-tax invoiced costs in invoiced currency for a specific customer, such as Contoso. You can also filter these costs for a specific subscription, resource group, or resource.
+The customer scope allows you to view pretax invoiced costs in invoiced currency for a specific customer, such as Contoso. You can also filter these costs for a specific subscription, resource group, or resource.
 
 The customer scope doesn't include customers who are in the classic CSP agreement. The scope supports only customers who have an Azure plan under Microsoft Customer Agreement.
 

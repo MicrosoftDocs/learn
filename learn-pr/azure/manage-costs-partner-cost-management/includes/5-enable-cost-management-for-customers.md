@@ -11,18 +11,16 @@ When you make cost visible for Contoso, any user with Azure Resource Manager acc
 
 To enable cost visibility for Contoso, follow these steps:
 
-1. In the Azure portal, sign into Fabrikam's tenant and select **Cost Management + Billing**. Select the relevant Microsoft Partner Agreement billing account, and then select **Customers**. The list of customers is associated with the billing account.
+1. In the Azure portal, sign in to Fabrikam's tenant and select **Cost Management + Billing**. Select the relevant Microsoft Partner Agreement billing account, and then select **Customers**. The list of customers is associated with the billing account.
 1. In the list of customers, select **Contoso**.  
     :::image type="content" source="../media/05-billing-account-customers.png" alt-text="Example that shows a list of customers." lightbox="../media/05-billing-account-customers.png" :::
 1. Under **Settings**, select **Policies**.
  1. The current cost visibility policy is shown for **Azure Usage** charges associated with the subscriptions for Contoso.  
     :::image type="content" source="../media/05-view-customer-cost-policy.png" alt-text="Example that shows the cost visibility policy." lightbox="../media/05-view-customer-cost-policy.png" :::
 
-When the policy is set to **No**, Azure Cost Management isn't available for subscription users associated with Contoso. Unless Fabrikam enables it, the cost visibility policy is disabled by default for all subscription users.
+When the cost visibility policy is set to **No**, Azure Cost Management isn't available for subscription users associated with Contoso. Unless Fabrikam enables it, the policy is disabled by default for all subscription users.
 
-When the cost policy is set to **Yes**, subscription users associated with Contoso's tenant can see usage charges at pay-as-you-go rates.
-
-When the cost visibility policy is enabled, all services that have subscription usage show costs at pay-as-you-go rates.
+When the cost visibility policy is set to **Yes**, subscription users associated with Contoso's tenant can see usage charges at pay-as-you-go rates. When the policy is enabled, all services that have subscription usage show costs at pay-as-you-go rates.
 
 ## View Contoso's costs in its tenant
 
