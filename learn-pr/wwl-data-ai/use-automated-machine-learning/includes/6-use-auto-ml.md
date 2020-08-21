@@ -9,7 +9,7 @@ In Azure Machine Learning, operations that you run are called *experiments*. Fol
     - **Select dataset**:
         - **Dataset**: bike-rentals
     - **Configure run**:
-        - **New experiment name**: auto-train-bike-rental
+        - **New experiment name**: mslearn-bike-rental
         - **Target column**: rentals (*this is the label the model will be trained to predict)*
         - **Training compute target**: *the compute cluster you created previously*
     - **Task type and settings**:
