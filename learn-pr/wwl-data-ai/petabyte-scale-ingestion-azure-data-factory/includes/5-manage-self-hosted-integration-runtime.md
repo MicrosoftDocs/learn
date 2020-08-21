@@ -27,23 +27,21 @@ The self-hosted integration runtime is logically registered to the Azure Data Fa
 
     ![The home page author button](../media/home-page-author-button.png)
 
-1. Select Connections at the bottom of the leftmost pane, and select Integration runtimes in the Connections window. Select +New.
+1. Select Manage in the leftmost pane, and select Integration runtimes. Select +New.
 
     ![Create an integration runtime](../media/create-integration-runtime.png)
 
 1. On the Integration runtime setup page, select Azure, Self-Hosted, and then select Continue.
 
-1. On the following page, select Self-Hosted to create a Self-Hosted IR, and then select Continue. 
-
     ![Create a selfhosted IR](../media/self-hosted-ir.png)
 
-1. Enter a name for your IR, and select Create.
-
-1. On the Integration runtime setup page, select the link under Option 1 to open the express setup on your computer. Or follow the steps under Option 2 to set up manually. The following instructions are based on manual setup:
+1. On the Integration runtime setup page, type in a name of MySelfHostedIR, and click Create 
 
     ![Integration runtime setup](../media/integration-runtime-setup.png)
 
 1. Copy and paste the authentication key. Select Download and install integration runtime.
+
+    ![Integration runtime setup](../media/integration-runtime-setup-keys.png)
 
 1. Download the self-hosted integration runtime on a local Windows machine. Run the installer.
 

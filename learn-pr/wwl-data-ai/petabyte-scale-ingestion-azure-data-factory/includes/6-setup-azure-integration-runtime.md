@@ -9,7 +9,7 @@ An Azure integration runtime is capable of:
 - Running copy activity **between cloud data stores**
 - Dispatching the following transform activities in **public network**: Databricks Notebook/ Jar/ Python activity, HDInsight Hive activity, HDInsight Pig activity, HDInsight MapReduce activity, HDInsight Spark activity, HDInsight Streaming activity, Machine Learning Batch Execution activity, Machine Learning Update Resource activities, Stored Procedure activity, Data Lake Analytics U-SQL activity, .NET custom activity, Web activity, Lookup activity, and Get Metadata activity.
 
-You can set a certain location of an Azure IR, in which case the data movement or activity dispatch will happen in that specific region. If you choose to use the auto-resolve Azure IR which is the default, ADF will make a best effort to automatically detect your sink and source data store to choose the best location either in the same region if available or the closest one in the same geography for the copy activity. For anything else, it will use the IR in the data factory region.
+You can set a certain location of an Azure IR, in which case the data movement or activity dispatch will happen in that specific region. If you choose to use the auto-resolve Azure IR which is the default, ADF will make a best effort to automatically detect your sink and source data store to choose the best location either in the same region if available or the closest one in the same geography for the copy activity. For anything else, it will use the IR in the data factory region. Azure Integration Runtime also has support got virtual networks. 
 
 ## Create and configure Azure Integration Runtime
 
@@ -21,7 +21,7 @@ Use the following steps to create an Azure IR using Azure Data Factory UI.
 
 1. Select Integration runtimes on the left pane, and then select +New.
 
-    ![Create an integration runtime](../media/create-integration-runtime-2.png)
+    ![Create an integration runtime](../media/create-integration-runtime.png)
 
 1. On the Integration runtime setup page, select Azure, Self-Hosted, and then select Continue.
 
@@ -31,7 +31,7 @@ Use the following steps to create an Azure IR using Azure Data Factory UI.
 
 1. Enter a name for your Azure IR, and select Create. 
 
-    ![Finish the creation an Azure IR](../media/finish-azure-integration-runtime.png)
+    ![Finish the creation an Azure IR](../media/finish-azur-integration-runtime.png)
 
 You'll see a pop-up notification when the creation completes. On the Integration runtimes page, make sure that you see the newly created IR in the list.
 
