@@ -14,7 +14,7 @@ abstract: |
   In this module, you'll learn how to:
   - Understand Azure Cost Management scopes
   - Reconcile your bill
-  - Determine which resources receive partner-earned credit
+  - Determine which resources receive partner earned credit
   - Enable Azure Cost Management for customers
   - Set cost thresholds
 prerequisites: | 
