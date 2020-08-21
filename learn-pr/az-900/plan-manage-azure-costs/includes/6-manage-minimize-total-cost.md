@@ -106,7 +106,7 @@ Virtual machine costs are linear and double for each size larger in the same ser
 
 The following image shows this idea:
 
-:::image type="content" source="../media/6-vm-resize.svg" alt-text="An illustration showing 50 percent savings by reducing the size of an underutilized virtual machine." border="false":::
+:::image type="content" source="../media/6-vm-resize.png" alt-text="An illustration showing 50 percent savings by reducing the size of an underutilized virtual machine." border="false":::
 
 Keep in mind that resizing a VM requires it to be stopped, resized, and then restarted. This may take a few minutes depending on how significant the size change is. Be sure to properly plan for an outage, or shift your traffic to another instance while you perform resize operations.
 

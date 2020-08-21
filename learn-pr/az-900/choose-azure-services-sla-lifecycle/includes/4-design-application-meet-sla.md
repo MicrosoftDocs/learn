@@ -74,7 +74,12 @@ For example, to improve the availability of the application, you should avoid ha
 
 An Availability Zone is a unique physical location within an Azure region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. These zones use different schedules for maintenance, so if one zone is impacted, your virtual machine instance in the other Availability Zone should be unaffected.
 
-Deploying two or more instances of an Azure VM across to or more Availability Zones raises the virtual machine SLA to 99.99%. Recalculating your composite SLA above with this Virtual Machines SLA would give you an application SLA of 99.96%, which exceeds your target.
+Deploying two or more instances of an Azure VM across two or more Availability Zones raises the virtual machine SLA to 99.99%. Recalculating your composite SLA above with this Virtual Machines SLA would give you an application SLA of:
+
+$$99.99\pct \times 99.99\pct \times 99.99\pct \times 99.99\pct$$
+$$= 99.96\pct$$
+
+This revised SLA of 99.96% exceeds your target of 99.9%.
 
 To learn more about the SLA for virtual machines, visit [SLA for Virtual Machines](https://azure.microsoft.com/support/legal/sla/virtual-machines?azure-portal=true).
 
