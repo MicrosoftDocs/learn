@@ -13,10 +13,9 @@ In addition, we have designed these activities to be easily shared with friends 
 By the end of this module, you will be able to:
 
 - Identify common threats to your online identity and account data
-- Apply simple strategies to recognize and avoid phishing
+- Apply techniques to recognize and avoid phishing
 - Secure your online accounts by using a password manager
 - Secure your online accounts by using multi-factor authentication
-- Share a list of simple steps with your family and friends, helping secure them too
 
 ## Prerequisites
 

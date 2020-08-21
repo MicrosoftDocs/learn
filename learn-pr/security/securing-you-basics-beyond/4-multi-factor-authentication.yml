@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.securing-you-basics-beyond.4-multi-factor-authentication
 metadata:
-  title: Multi-Factor Authentication (MFA) – It's easier than it sounds!
-  description: Understanding the basics of Multi-Factor Authentication (MFA), and using it for securing your identity.
+  title: Multi-factor authentication
+  description: Understanding the basics of multi-factor authentication, and using it for securing your identity.
   ms.date: 05/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Multi-Factor Authentication (MFA) – It's easier than it sounds!
+title: Multi-factor authentication
 durationInMinutes: 10
 content: |
   [!include[](includes/4-multi-factor-authentication.md)]
@@ -16,11 +16,11 @@ quiz:
   title: Knowledge check
   questions:
 
-  - content: 'What are the minimum number of factors needed for Multi-Factor Authentication (MFA)?'
+  - content: 'What are the minimum number of factors needed for multi-factor authentication (MFA)?'
     choices:
     - content: 'One'
       isCorrect: false
-      explanation: 'As implied by, Multi-Factor, more than one factor is required.'
+      explanation: 'As implied by, multi-factor, more than one factor is required.'
     - content: 'Two'
       isCorrect: True
       explanation: 'This is the minimum number of factors required for supporting MFA.'
