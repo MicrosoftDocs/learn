@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.publish-static-web-app-and-api.7-build-api
+uid: learn.azure.publish-api-for-static-web-app.7-build-api
 metadata:
   title: Build an API with Azure Functions
   description: Build an API with Azure Functions
-  ms.date: 05/08/2020
+  ms.date: 08/21/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
