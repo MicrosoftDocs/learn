@@ -25,7 +25,7 @@ quiz:
           explanation: "Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure."
         - content: "Create a new GitHub Actions workflow to build and publish your web app."
           isCorrect: false
-          explanation: "The existing GitHubs Actions workflow is capable of redeploying your web app."
+          explanation: "The existing GitHub Actions workflow is capable of redeploying your web app."
         - content: "Create and push a new branch to your git repository."
           isCorrect: false
           explanation: "A new branch will not be watched by the existing GitHub Actions workflow."
