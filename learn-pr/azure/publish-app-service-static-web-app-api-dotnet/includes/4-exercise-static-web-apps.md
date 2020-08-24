@@ -38,7 +38,7 @@ Next, configure your new app and link it to your GitHub repository.
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
    | _Repository_   | **my-static-web-app**                                    |
-   | _Branch_       | **master**                                               |
+   | _Branch_       | **main**                                                 |
 
 1. Click the **Next: Build >** button to edit the build configuration
 
@@ -48,52 +48,15 @@ Next, configure your new app and link it to your GitHub repository.
 
 Next, add configuration details specific to your preferred front-end framework.
 
-::: zone pivot="angular"
-
-| Setting                 | Value                |
-| ----------------------- | -------------------- |
-| _App location_          | **angular-app**      |
-| _Api location_          | **api**              |
-| _App artifact location_ | **dist/angular-app** |
-
-::: zone-end
-
-::: zone pivot="react"
-
-| Setting                 | Value         |
-| ----------------------- | ------------- |
-| _App location_          | **react-app** |
-| _Api location_          | **api**       |
-| _App artifact location_ | **build**     |
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-| Setting                 | Value          |
-| ----------------------- | -------------- |
-| _App location_          | **svelte-app** |
-| _Api location_          | **api**        |
-| _App artifact location_ | **public**     |
-
-::: zone-end
-
-::: zone pivot="vue"
-
 | Setting                 | Value       |
 | ----------------------- | ----------- |
-| _App location_          | **vue-app** |
-| _Api location_          | **api**     |
-| _App artifact location_ | **dist**    |
-
-::: zone-end
+| _App location_          | **/Client** |
+| _Api location_          | **/Api**     |
+| _App artifact location_ | **wwwroot**    |
 
 Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
 
 :::image type="content" source="../media/review-create-button.png" alt-text="Review + create button":::
-
-> [!NOTE]
-> Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
 ### Review + create
 
