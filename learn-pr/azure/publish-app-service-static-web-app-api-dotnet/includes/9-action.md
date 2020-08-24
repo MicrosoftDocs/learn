@@ -1,8 +1,8 @@
 You added your API to your web app and they're both running locally. Now it's time to publish your API and your app to Azure Static Web Apps.
 
-When you created the Azure Static Web Apps instance and asked it to watch your **master** branch, a GitHub Action was generated for you. The GitHub Action listens for commits and pull requests to your repository's **master** branch. Then when the GitHub Action detects these changes, it builds and publishes your app.
+When you created the Azure Static Web Apps instance and asked it to watch your **main** branch, a GitHub Action was generated for you. The GitHub Action listens for commits and pull requests to your repository's **main** branch. Then when the GitHub Action detects these changes, it builds and publishes your app.
 
-You may remember when you created the Azure Static Web Apps resource that you provided the folder location for your API. You provided the default value of _api_. However, since you didn't have an API in the _api_ folder at that time, Azure Static Web Apps didn't attempt to publish an API.
+You may remember when you created the Azure Static Web Apps resource that you provided the folder location for your API project. You provided the default value of _Api_. However, since you didn't have an API in the _Api_ folder at that time, Azure Static Web Apps didn't attempt to publish an API.
 
 Now, everything changes.
 
@@ -10,51 +10,17 @@ Now, everything changes.
 
 The folder _.github/workflows_ contains your GitHub Action file. The file contains the settings for the locations of your web app, API, and build artifacts. The locations you chose when you created your Azure Static Web Apps resource are now located in this file, as shown below:
 
-::: zone pivot="angular"
-
 ```yml
-app_location: 'angular-app' # App source code path
-api_location: 'api' # Api source code path - optional
-app_artifact_location: 'dist/angular-app' # Built app content directory - optional
+app_location: 'Client' # App source code path
+api_location: 'Api' # Api source code path - optional
+app_artifact_location: 'wwwroot' # Built app content directory - optional
 ```
 
-::: zone-end
-
-::: zone pivot="react"
-
-```yml
-app_location: 'react-app' # App source code path
-api_location: 'api' # Api source code path - optional
-app_artifact_location: 'build' # Built app content directory - optional
-```
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-```yml
-app_location: 'svelte-app' # App source code path
-api_location: 'api' # Api source code path - optional
-app_artifact_location: 'public' # Built app content directory - optional
-```
-
-::: zone-end
-
-::: zone pivot="vue"
-
-```yml
-app_location: 'vue-app' # App source code path
-api_location: 'api' # Api source code path - optional
-app_artifact_location: 'dist' # Built app content directory - optional
-```
-
-::: zone-end
-
-Your `api_location` is set to the correct value to point to your API in your _api_ folder.
+Your `api_location` is set to the correct value to point to your API in your _Api_ folder.
 
 ## Trigger the GitHub Action
 
-The GitHub Action is ready to build and publish your web app and API once it detects a change to your **master** branch. You could either commit directly or create a pull request to the **master** branch. Both of these will trigger the GitHub Action. Changes that are detected on the **master** branch will trigger the GitHub Action to publish the app at the same URL for your live web site.
+The GitHub Action is ready to build and publish your web app and API once it detects a change to your **main** branch. You could either commit directly or create a pull request to the **main** branch. Both of these will trigger the GitHub Action. Changes that are detected on the **main** branch will trigger the GitHub Action to publish the app at the same URL for your live web site.
 
 ## Preview URLs
 
@@ -64,10 +30,10 @@ The following table shows how Azure Static Web Apps will publish your app to dif
 
 | Source            | Description       | URL                                                    |
 | ----------------- | ----------------- | ------------------------------------------------------ |
-| **master** branch | Live web site URL | `https://purple-rain-062d03304.azurestaticapps.net/`   |
+| **main** branch   | Live web site URL | `https://purple-rain-062d03304.azurestaticapps.net/`   |
 | Pull Request #5   | Preview URL       | `https://purple-rain-062d03304-5.azurestaticapps.net/` |
 
-You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **master** branch. When you create the pull request against the **master** branch, the GitHub Action publishes the app to a preview URL.
+You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **main** branch. When you create the pull request against the **mamainster** branch, the GitHub Action publishes the app to a preview URL.
 
 Once the workflow has completed building and deploying your app, the GitHub bot adds a comment to your pull request, which contains the URL of the pre-production environment. You can click on this link to see your staged changes.
 
