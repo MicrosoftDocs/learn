@@ -13,7 +13,7 @@ durationInMinutes: 2
 content: |
   [!include[](includes/summary.md)]
 quiz:
-  title: Introduction to the Data Science Virtual Machine
+  title: Hardware and cost of the Data Science Virtual Machine
   questions:
     - content: "On what hardware does the Data Science Virtual Machine run?"
       choices:
