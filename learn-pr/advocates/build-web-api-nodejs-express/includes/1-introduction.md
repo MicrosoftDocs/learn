@@ -1,29 +1,27 @@
-Using the Web as a platform to run your application means anyone can reach it using a browser or by using a client or software that can speak HTTP - that is powerful.
+Use the web as a platform to run your application. This platform lets anyone reach your application by using a browser, client, or software that speaks HTTP.
 
-Clear your mind and picture this: you work as a developer for an enormous online retailer called “Tailwind Traders”. Tailwind is building a new set of HTTP APIs for their application built on Node.js. They’ve asked you to build them an API that lists all of the products that they sell so that applications can work with that data.
+In this module, you are a developer for an online retailer. The retailer is building a new set of HTTP APIs for their application. The application is built on Node.js. Your job is to build an API that lists the products they sell. The API you build lets applications work with the product data.
 
-It is entirely possible to construct a Web page using nothing but HTML pages, JavaScript, and CSS. Node.js has a core module called HTTP that helps you construct web applications. It supports most things you will try to do like handling requests for reading, writing, and working with different types of content.
+You can construct a webpage by using HTML pages, JavaScript, and CSS. Node.js has a core module called HTTP that helps you construct web applications. It supports requests for reading, writing, and working with different types of content.
 
-Being a developer is not only about solving problems but also being as fast and efficient as possible, doing so. That means you need to know your tools, how to version your code, and sometimes pick a framework that will achieve a faster and more reliable result. This is one of those times. Even though the HTTP module in Node.js is capable, it's not as fast as using a framework.
+Even though the HTTP module in Node.js is capable, it's not as fast as using a framework. For you to build an API that is efficient and handles complex topics like authentication and authorization, you will also use a framework.
 
-So for you to be fast and efficient and handle more complex topics like authentication/authorization - life will be a lot easier if you use a framework.
+There are many web frameworks for Node.js, such as, Hapi, Fastify, Koa, and Express. Express is used by many developers. It's been around for a long time. The APIs are well thought out, security issues are patched, etc.
 
-There are many web frameworks created for Node.js that you could use like Hapi, Fastify, Koa, and Express for example. The framework Express is used by many developers. It is also the framework you will use throughout this module. It has been around for a long time and had some time to mature. This means the APIs are well thought out, security issues have been patched, and so on and so forth.
-
-In this module, you’ll learn about how to handle HTTP requests with Node.js. You’ll also learn about the Express framework, which enables the building of websites and HTTP APIs.
+In this module, you’ll learn how to handle HTTP requests with Node.js. You'll also learn about the Express framework, which helps you build websites and HTTP APIs.
 
 ## Learning objectives
 
 By the end of this module, you’ll be able to:
 
-- Describe the core concepts of the web framework Express
-- Configure middleware to control how a request is handled
-- Respond to HTTP requests with different types of content like text and JSON
-- Send data to an Express endpoint
+- Describe the core concepts of the web framework Express.
+- Configure middleware to control how a request is handled.
+- Respond to HTTP requests with different types of content like text and JSON.
+- Send data to an Express endpoint.
 
 ## Prerequisites
 
 - [Git](https://git-scm.com/) and [Node.js](https://nodejs.org/en/) installed on your computer
 - Familiarity with editing text and code files in any text editor
-- Basic familiarity with the HTTP protocol
+- Basic familiarity with HTTP
 - Experience using the command line, including Git operations

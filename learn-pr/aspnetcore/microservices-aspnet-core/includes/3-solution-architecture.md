@@ -2,9 +2,9 @@ In this unit, you'll gain an understanding of the *:::no-loc text="eShopOnContai
 
 ## Solution architecture
 
-:::image type="content" source="../media/3-solution-architecture/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../media/3-solution-architecture/eshop-architecture.png":::
+:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
-The *:::no-loc text="eShopOnContainers":::* app is an online store that sells various products, including pins, t-shirts, and coffee mugs. The store includes the following features:
+The *:::no-loc text="eShopOnContainers":::* app is an online store that sells various products, including pins, T-shirts, and coffee mugs. The store includes the following features:
 
 * Catalog management
 * Shopping basket

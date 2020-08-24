@@ -3,7 +3,7 @@ uid: learn.azure.create-nodejs-project-dependencies.5-exercise-dependency
 title: Exercise - Install packages
 metadata:
   title: Exercise - Install packages
-  description: Exercise in how to add and remove packages in your Node.js project.
+  description: Exercise on how to add and remove packages in your Node.js project.
   author: softchris
   ms.author: chnoring
   ms.date: 06/25/2020

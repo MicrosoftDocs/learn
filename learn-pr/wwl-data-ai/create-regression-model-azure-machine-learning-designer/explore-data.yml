@@ -4,9 +4,9 @@ title: Explore data
 metadata:
   title: Explore data
   description: "How do you know if a regression model is accurate? Learn how to evaluate regression performance in this unit."
-  ms.date: 07/30/2020
+  ms.date: 08/23/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
