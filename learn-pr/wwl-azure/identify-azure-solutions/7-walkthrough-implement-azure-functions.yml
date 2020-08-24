@@ -4,9 +4,9 @@ title: Walkthrough - Implement Azure functions
 metadata:
   title: Walkthrough - Implement Azure functions
   description: "Walkthrough - Implement Azure functions"
-  ms.date: 07/31/2020
+  ms.date: 08/22/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

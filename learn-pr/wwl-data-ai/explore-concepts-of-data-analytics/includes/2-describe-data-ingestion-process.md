@@ -31,7 +31,7 @@ The aim of data processing is to convert the raw data into one or more business 
 > [!div class="mx-imgBorder"]
 > ![Processing ingested data to generate data models](../media/2-process-stage.png)
 
-## What is and ELT and ETL?
+## What is ELT and ETL?
 
 The data processing mechanism can take two approaches to retrieving the ingested data, processing this data to transform it and generate models, and then saving the transformed data and models. These approaches are known as ETL and ELT.
 

@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.machine-learning-model-nasa.8a-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Answer questions to see what you've learned.
+  ms.date: 07/24/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 3
+content: |
+  Answer the following questions to see what you've learned.  
+quiz:
+  questions:
+  - content: "Why did we choose a decision tree for our machine learning algorithm?"
+    choices:
+    - content: "A decision tree is the most complex and accurate algorithm."
+      isCorrect: false
+      explanation: "Incorrect. Decision trees aren't the most complex and accurate algorithm."
+    - content: "A decision tree is easy to visualize. It fits well because the model can make only two choices: yes or no."
+      isCorrect: true
+      explanation: "Correct! We chose a decision tree because a decision tree is easy to visualize. It's easy to use because the model can make only two choices."
+    - content: "A decision tree has lots of branches, and the model can make lots of choices."
+      isCorrect: false
+      explanation: "Incorrect. In a decision tree, the model can make only two choices: yes or no."
+  - content: "What is the purpose of splitting your dataset?"
+    choices:
+    - content: "To make your model more accurate by getting rid of bad data."
+      isCorrect: false
+      explanation: "Incorrect. If you train and test your machine learning model with the same data, it'll only be effective at telling you what data you have. It won't yield accurate predictions."
+    - content: "To try out different algorithms with different data."
+      isCorrect: false
+      explanation: "Incorrect. If you train and test your machine learning model with the same data, it'll only be effective at telling you what data you have. It won't yield accurate predictions."
+    - content: "To have different data for training and testing your model."
+      isCorrect: true
+      explanation: "Correct. If you train and test your machine learning model with the same data, it'll only be effective at telling you what data you have. It won't yield accurate predictions."

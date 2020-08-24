@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.install-code-tools-python-nasa.9-create-jupyter-file
+metadata:
+  title: Exercise - Create a Jupyter Notebook file in Visual Studio Code and run a simple program
+  description: Create a Jupyter Notebooks file to code.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Create a Jupyter Notebook file in Visual Studio Code and run a simple program
+durationInMinutes: 7
+content: |
+  [!include[](includes/9-create-jupyter-file.md)]

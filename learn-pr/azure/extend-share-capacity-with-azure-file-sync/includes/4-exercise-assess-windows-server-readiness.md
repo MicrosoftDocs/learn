@@ -33,7 +33,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Name Syncvnet `
     -AddressPrefix 10.0.0.0/16 `
     -Location $location `
-    -ResourceGroupName $resourceGroup`
+    -ResourceGroupName $resourceGroup `
     -Subnet $subnetConfig
 
     ```
