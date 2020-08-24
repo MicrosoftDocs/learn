@@ -130,7 +130,7 @@ In the last exercise, you deployed your template using the parameters "Default V
 
 To pass inline parameters to your deployment, you need to provide the names of the parameter with the New-AzResourceGroupDeployment command. In the next exercise, you will pass the parameters as Inline parameters and as a parameter file.
 
-1. Using the same template as the last exercise, you will construct an object that will contain the values for the required template parameters.
+1. Using the same template as the last exercise, you will construct an hashtable that will contain the values for the required template parameters.
 
     ```powershell
     $parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
