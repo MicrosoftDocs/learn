@@ -25,20 +25,24 @@ quiz:
       explanation: "Correct! This is how we modified our variables in the function."
   - content: "How did we call the countMoonRocks function?"
     choices:
-    - content: "for rock in rockList:
-    countMoonRocks(rock)"
+    - content: |
+        for rock in rockList:
+        countMoonRocks(rock)
       isCorrect: true
       explanation: "Correct! This is how we called the function."
-    - content: "for rockList in rock:
-    countMoonRocks(rockList)"
+    - content: |
+        for rockList in rock:
+        countMoonRocks(rockList)
       isCorrect: false
       explanation: "We called the function with rock not rockList."
-    - content: "while rock:
-    countMoonRocks(rock)"
+    - content: |
+        while rock:
+        countMoonRocks(rock)
       isCorrect: false
       explanation: "We used a for loop, not a while loop."
-    - content: "while rockList:
-    countMoonRocks(rock)"
+    - content: |
+        while rockList:
+        countMoonRocks(rock)
       isCorrect: false
       explanation: "We used a for loop, not a while loop."
   - content: "What code did we call after we finished reading data from the rocks.txt file?"
