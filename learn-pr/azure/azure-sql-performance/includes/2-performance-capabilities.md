@@ -24,7 +24,7 @@ Indexes are often critical to query performance for both SQL Server and Azure SQ
 
 In-memory OLTP is a capability for transaction latency sensitive applications, such as applications that involve a high number of concurrent users who are modifying data. Here are important points related to in-memory OLTP and Azure SQL Database:
 
-- Memory optimized tables are only available in business critical tiers.
+- Memory optimized tables are only available in Business Critical tiers.
 - The memory optimized FILEGROUP is pre-created in Azure SQL Database and SQL Managed Instance when a database is created (even for general purpose tiers).
 - The amount of memory for memory optimized tables is a percentage of the vCore dependent memory limit.
 

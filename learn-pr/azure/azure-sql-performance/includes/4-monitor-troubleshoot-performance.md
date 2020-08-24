@@ -180,7 +180,7 @@ To perform analysis on waiting scenarios, you typically look at the following to
 
 ### Scenarios specific to Azure SQL Database
 
-There are some performance scenarios, both running and waiting, that are specific to Azure SQL Database. These include log governance, worker limits, waits encountered for business critical service tiers, and waits specific to a hyperscale deployment.
+There are some performance scenarios, both running and waiting, that are specific to Azure SQL Database. These include log governance, worker limits, waits encountered for Business Critical service tiers, and waits specific to a hyperscale deployment.
 
 #### Log governance
 
@@ -189,7 +189,7 @@ Azure SQL Database can use log rate governance to enforce resource limits on tra
 - LOG_RATE_GOVERNOR - waits for Azure SQL Database
 - POOL_LOG_RATE_GOVERNOR - waits for Elastic Pools
 - INSTANCE_LOG_GOVERNOR - waits for Azure SQL Managed Instance
-- HADR_THROTTLE_LOG_RATE* - waits for business critical and geo-replication latency
+- HADR_THROTTLE_LOG_RATE* - waits for Business Critical and geo-replication latency
 
 #### Worker limits
 
@@ -198,15 +198,15 @@ SQL Server uses a worker pool of threads but has limits on the maximum number of
 - Azure SQL Database has limits based on service tier and size. If you exceed this limit, a new query receives an error.
 - At the current time, SQL Managed Instance uses `max worker threads`, so workers past this limit might see THREADPOOL waits.
 
-#### Business critical HADR waits
+#### Business Critical HADR waits
 
-If you use a business critical service tier, you might unexpectedly see the following wait types:
+If you use a Business Critical service tier, you might unexpectedly see the following wait types:
 
 - HADR_SYNC_COMMIT
 - HADR_DATABASE_FLOW_CONTROL
 - HADR_THROTTLE_LOG_RATE_SEND_RECV
 
-Even though these waits might not slow down your application, you might not be expecting to see these. They're normally specific to using an Always On availability group. Business critical tiers use availability group technology to implement SLA and availability features of a business critical service tier, so these wait types are expected. Note that long wait times might indicate a bottleneck such as I/O latency or replica behind.
+Even though these waits might not slow down your application, you might not be expecting to see these. They're normally specific to using an Always On availability group. Business Critical tiers use availability group technology to implement SLA and availability features of a Business Critical service tier, so these wait types are expected. Note that long wait times might indicate a bottleneck such as I/O latency or replica behind.
 
 #### Hyperscale
 

@@ -49,7 +49,7 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
     The various `slo_name` values aren't documented, but you can see from the string value that this database uses a general purpose service tier with 2 vCores:
 
     > [!NOTE]
-    > `SQLDB_OP_...` is the string used for business critical.
+    > `SQLDB_OP_...` is the string used for Business Critical.
 
     When you view the ALTER DATABASE documentation, notice the ability to select your target SQL Server deployment to get the right syntax options. Select **SQL Database single database/elastic pool** to see the options for Azure SQL Database. To match the compute scale you found in the portal, you need the service objective `'GP_Gen5_8'`.
 

@@ -111,11 +111,11 @@ WRITELOG wait types with higher wait times are indicative of latency flushing to
 The problem isn't a high percentage of log write activity. The Azure portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25 percent (you don't need to query these). The problem isn't an IOPS limit either. The issue is that this application workload is sensitive to low latency for transaction log writes, and the general purpose tier isn't designed for this type of latency requirement. The documentation for Azure SQL Database states that the resource limits for I/O latency are between 5-7 ms.
 
 > [!NOTE]
-> General purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads). You might experience latencies more like these numbers. Latencies for general purpose Azure SQL Managed Instance are similar. If your application is very sensitive to I/O latencies, consider business critical tiers.
+> General purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads). You might experience latencies more like these numbers. Latencies for general purpose Azure SQL Managed Instance are similar. If your application is very sensitive to I/O latencies, consider Business Critical tiers.
 
 Examine the workload T-SQL script **order_rating_insert_single.sql**. Each INSERT is a single transaction commit, which requires a transaction log flush.
 
-One commit for each insert isn't efficient, but the application wasn't affected on a local SSD because each commit was very fast. The business critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency. It's possible that there is an application optimization, so the workload isn't as sensitive to I/O latency for the transaction log.
+One commit for each insert isn't efficient, but the application wasn't affected on a local SSD because each commit was very fast. The Business Critical pricing tier (service objective or SKU) provides local SSD drives with a lower latency. It's possible that there is an application optimization, so the workload isn't as sensitive to I/O latency for the transaction log.
 
 You can change the T-SQL batch for the workload to wrap a BEGIN TRAN/COMMIT TRAN around the INSERT iterations.
 
