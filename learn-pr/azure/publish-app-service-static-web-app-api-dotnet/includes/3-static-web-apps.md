@@ -18,11 +18,11 @@ You also need to specify three folder paths within your repository so your app c
 
 | Location              | Location example | Description                                                               | Required |
 | --------------------- | ---------------- | ------------------------------------------------------------------------- | -------- |
-| App location          | /                | The location of the source code for your web app                          | Yes      |
-| App artifact location | dist             | The location of your app's build artifacts, relative to your app location | No       |
-| API location          | api              | The location of the source code for your API                              | No       |
+| App location          | /Client          | The location of the source code for your web app                          | Yes      |
+| App artifact location | wwwroot          | The location of your app's build artifacts, relative to your app location | No       |
+| API location          | /Api             | The location of the source code for your API                              | No       |
 
-The **App artifact location** is a relative path to the build output directory of your application. For example, consider we have an app at `my-app` that outputs its built assets to a `my-app/dist` folder. In this case, you specify `dist` for this location.
+The **App artifact location** is a relative path to the build output directory of your application. For example, consider we have an app at `Client` that outputs its built assets to a `bin/<build profile>/<framework>/publish/wwwroot` folder. In this case, you only need to specify `wwwroot` for this location, as the publish system will take care of the rest of the prefix.
 
 ### From source code to static assets with GitHub Actions
 
@@ -36,7 +36,7 @@ The GitHub Action is added to your repository in the _.github/workflows_ folder.
 
 If your app requires an API, you can implement it as an Azure Functions project in your repository and it will be automatically deployed and hosted by your Static Web Apps instance. The GitHub Actions workflow that builds and deploys your app locates the API within your repo by the name of the folder you specify.
 
-Typically you put the API app in a folder named _api_ or _functions_, but you can name it whatever you prefer.
+Typically, you'd name the project for your API with `Api` in it, and as such you'll need to ensure that's set to the _API location_ for the workflow file.
 
 What if you don't have an API? Don't worry. If Azure Static Web Apps can't find an API in the folder you indicate, it won't publish an API, but it will still publish your app.
 
