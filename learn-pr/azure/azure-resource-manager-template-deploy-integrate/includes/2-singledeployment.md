@@ -50,4 +50,5 @@ You see several options for deploying resources using a template in the Azure po
 1. Common templates: There are four common templates for creating a Linux virtual machine, Windows virtual machine, a web application, and a database in Azure SQL Database
 1. Load a [GitHub quickstart template](https://azure.microsoft.com/resources/templates/?WT.mc_id=MSLearn-ARM-pierrer)
 
-:::image type="content" source="../media/4-portal-options.png" alt-text="Azure portal template deployment options." border="true":::
+    ![Azure portal template deployment options.](../media/4-portal-options.png)
+

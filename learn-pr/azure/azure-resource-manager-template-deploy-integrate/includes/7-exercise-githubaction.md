@@ -19,7 +19,7 @@ Once you have the account created, sign-in and create a new repository where you
 1. Select Initialize this repository with a README.
 1. Click Create repository.
 
-    ![Create new repo details.](../media/../media/9-github-repo-creation-2.png)
+    ![Create new repo details.](../media/9-github-repo-creation-2.png)
 
 Now that you have created your new repository, you initialized it with a README file. it's time to commit a template and a template parameter file to the repo.
 
@@ -30,7 +30,7 @@ Now that you have created your new repository, you initialized it with a README 
 
 1. On GitHub, navigate to the main page of the repository
 1. Above the files listing, using the *Add file* drop-down, click Create new file.
-    ![Add new template to repo](9-github-file-creation.png)
+    ![Add new template to repo](../media/9-github-file-creation.png)
 1. In the file name field, type the name and extension for the template. In this case for our exercise, you will use the name `azuredeploy.json` and copy and paste the template in the code block below into your new GitHub file.
 
     ```json

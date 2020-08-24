@@ -26,7 +26,7 @@ In this module, you will:
   - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&WT.mc_id=MSLearn-ARM-pierrer) installed locally
 
 - For unit 8 and 9 a [GitHub](https://github.com) account with the ability to navigate and edit files in GitHub is required
-  - (For more information about GitHub, see [Introduction to GitHub](https://docs.microsoft.com/en-us/learn/modules/introduction-to-github/).)
+  - (For more information about GitHub, see [Introduction to GitHub](https://docs.microsoft.com/learn/modules/introduction-to-github/).)
 
 ## Recommended
 

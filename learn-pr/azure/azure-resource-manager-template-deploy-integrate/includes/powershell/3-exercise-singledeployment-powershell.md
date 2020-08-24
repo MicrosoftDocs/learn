@@ -122,7 +122,29 @@ In the following exercise, you will deploy a template from your local machine. T
 
     Once it completes, you should have results like this:
 
-:::image type="content" source="../../media/5-parameter-prompt.png" alt-text="Results from deploying local template." border="true":::
+    ```azurepowershell
+    PS C:\JSON> New-AzResourceGroupDeployment `
+    >> -Name $DeploymentName `
+    >> -TemplateFile $templateFile
+
+    DeploymentName          : DeployLocalTemplate-08-24-2020
+    ResourceGroupName       : learn-03f041a7-cd17-4f50-9c81-5f6678feb217
+    ProvisioningState       : Succeeded
+    Timestamp               : 2020-08-24 5:50:04 p.m.
+    Mode                    : Incremental
+    TemplateLink            :
+    Parameters              :
+                              Name             Type                       Value
+                              ===============  =========================  ==========
+                              vnetName         String                     VNet-001
+                              costCenterIO     String                     12345
+                              ownerName        String                     John Smith
+
+    Outputs                 :
+    DeploymentDebugLogLevel :
+
+    ```
+
 
 ### Deploy the same local template with parameter values
 
@@ -145,16 +167,40 @@ To pass inline parameters to your deployment, you need to provide the names of t
 
     Once it completes, you should have results like this:
 
-:::image type="content" source="../../media/5-parameter-inline.png" alt-text="Results from deploying local template with inline parameters." border="true":::
+    ```azurepowershell
+    PS C:\JSON> $parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
+    PS C:\JSON> $templateFile="C:\JSON\maintemplate.json"
+    PS C:\JSON> $today=Get-Date -Format "MM-dd-yyyy"
+    PS C:\JSON> $DeploymentName="DeployLocalTemplate-2-"+"$today"
+    PS C:\JSON>
+    PS C:\JSON> New-AzResourceGroupDeployment `
+    >>     -Name $DeploymentName `
+    >>     -TemplateFile $templateFile
 
-Rather than passing parameters as inline values in your script, you may find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI.  For more information about the parameter file, see [Create Resource Manager parameter file](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files?WT.mc_id=MSLearn-ARM-pierrer).
+    DeploymentName          : DeployLocalTemplate-2-08-24-2020
+    ResourceGroupName       : learn-03f041a7-cd17-4f50-9c81-5f6678feb217
+    ProvisioningState       : Succeeded
+    Timestamp               : 2020-08-24 5:51:55 p.m.
+    Mode                    : Incremental
+    TemplateLink            :
+    Parameters              :
+                              Name             Type                       Value
+                              ===============  =========================  ==========
+                              vnetName         String                     VNet-001
+                              costCenterIO     String                     12345
+                              ownerName        String                     John Smith
+
+    Outputs                 :
+    DeploymentDebugLogLevel :
+    ```
+
+    Rather than passing parameters as inline values in your script, you may find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI.  For more information about the parameter file, see [Create Resource Manager parameter file](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files?WT.mc_id=MSLearn-ARM-pierrer).
 
 1. To pass a local parameter file, use the TemplateParameterFile parameter in the same command we've been using.
 1. But first, you need to create and save your parameter file.  Because we're using Visual Studio Code with the Azure Resource Manager (ARM) Tools extension, you can open the ARM template you saved locally and click on the "**Select or create a parameter file to enable full validation**" link.
-
 1. Click the "New..." item in the menu and the extension will create a parameter file based on the template currently opened.
 
-:::image type="content" source="../../media/5-parameter-file-create-2.png" alt-text="Create parameter file in VS Code." border="true":::
+    ![Create parameter file in VS Code.](../../media/5-parameter-file-create-2.png)
 
 1. Once we have our local parameter file, we can use the following PowerShell command with the **TemplateParameterFile** parameters.
 
@@ -173,7 +219,35 @@ Rather than passing parameters as inline values in your script, you may find it 
 
     after the deployment you should have results like the following:
 
-:::image type="content" source="../../media/5-parameter-file-create-3.png" alt-text="Create parameter file in VS Code." border="true":::
+    ```azurepowershell-interactive
+    PS C:\JSON> $parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
+    PS C:\JSON> $templateFile="C:\JSON\maintemplate.json"
+    PS C:\JSON> $TemplateParameterFile= "C:\JSON\maintemplate.parameters.json"
+    PS C:\JSON> $today=Get-Date -Format "MM-dd-yyyy"
+    PS C:\JSON> $DeploymentName="DeployLocalTemplate-3-"+"$today"
+    PS C:\JSON>
+    PS C:\JSON> New-AzResourceGroupDeployment `
+    >>     -Name $DeploymentName `
+    >>     -TemplateFile $templateFile `
+    >>     -TemplateParameterFile $TemplateParameterFile
+
+    DeploymentName          : DeployLocalTemplate-3-08-24-2020
+    ResourceGroupName       : learn-03f041a7-cd17-4f50-9c81-5f6678feb217
+    ProvisioningState       : Succeeded
+    Timestamp               : 2020-08-24 5:54:40 p.m.
+    Mode                    : Incremental
+    TemplateLink            :
+    Parameters              :
+                              Name             Type                       Value
+                              ===============  =========================  ==========
+                              vnetName         String                     VNet-001
+                              costCenterIO     String                     12345
+                              ownerName        String                     John Smith
+
+    Outputs                 :
+    DeploymentDebugLogLevel :
+
+    ```
 
 ## Deploy an external or remote template
 
@@ -186,16 +260,48 @@ In some instances you will need to deploy from an external or remote location in
 1. The PowerShell command/process is exactly the same as for a local template for the exception of the **-TemplateUri** parameter replacing the **-TemplateFile** parameters.
 1. Use the following code to deploy in the provided sandbox
 
-```powershell
-$parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
-$today=Get-Date -Format "MM-dd-yyyy"
-$DeploymentName="DeployLocalTemplate-4-"+"$today"
+    ```powershell
+    $parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
+    $today=Get-Date -Format "MM-dd-yyyy"
+    $DeploymentName="DeployLocalTemplate-4-"+"$today"
 
-New-AzResourceGroupDeployment `
-    -Name $DeploymentName `
-    -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
-```
+    New-AzResourceGroupDeployment `
+        -Name $DeploymentName `
+        -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+    ```
 
-The results will be like the following screen capture. And they outline the details of the template location.
+    The results will be like the following screen capture. And they outline the details of the template location.
 
-:::image type="content" source="../../media/5-remote-template.png" alt-text="Create parameter file in VS Code." border="true":::
+    ```azurepowershell-interactive
+    PS C:\JSON> $parameters = @{vnetName = "VNet-001"; costCenterIO = "12345"; ownerName = "John Smith"}
+    PS C:\JSON> $today=Get-Date -Format "MM-dd-yyyy"
+    PS C:\JSON> $DeploymentName="DeployLocalTemplate-4-"+"$today"
+    PS C:\JSON>
+    PS C:\JSON> New-AzResourceGroupDeployment `
+    >>     -Name $DeploymentName `
+    >>     -TemplateUri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+
+    DeploymentName          : DeployLocalTemplate-4-08-24-2020
+    ResourceGroupName       : learn-03f041a7-cd17-4f50-9c81-5f6678feb217
+    ProvisioningState       : Succeeded
+    Timestamp               : 2020-08-24 5:56:55 p.m.
+    Mode                    : Incremental
+    TemplateLink            :
+                              Uri            :
+                              https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json
+                              ContentVersion : 1.0.0.0
+
+    Parameters              :
+                              Name                  Type                       Value
+                              ====================  =========================  ==========
+                              storageAccountType    String                     Standard_LRS
+                              location              String                     westus
+
+    Outputs                 :
+                              Name                  Type                       Value
+                              ====================  =========================  ==========
+                              storageAccountName    String                     storepgxosadmbq77e
+
+    DeploymentDebugLogLevel :
+
+    ```
