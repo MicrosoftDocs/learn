@@ -46,14 +46,13 @@ Next, configure your new app and link it to your GitHub repository.
 
 ### Build
 
-Next, add configuration details specific to your preferred front-end framework.
+Next, add configuration details specific to your preferred front-end framework and clear the default value from the _Api location_ box.
 
 ::: zone pivot="angular"
 
 | Setting                 | Value                |
 | ----------------------- | -------------------- |
 | _App location_          | **angular-app**      |
-| _Api location_          | **api**              |
 | _App artifact location_ | **dist/angular-app** |
 
 ::: zone-end
@@ -63,7 +62,6 @@ Next, add configuration details specific to your preferred front-end framework.
 | Setting                 | Value         |
 | ----------------------- | ------------- |
 | _App location_          | **react-app** |
-| _Api location_          | **api**       |
 | _App artifact location_ | **build**     |
 
 ::: zone-end
@@ -73,7 +71,6 @@ Next, add configuration details specific to your preferred front-end framework.
 | Setting                 | Value          |
 | ----------------------- | -------------- |
 | _App location_          | **svelte-app** |
-| _Api location_          | **api**        |
 | _App artifact location_ | **public**     |
 
 ::: zone-end
@@ -83,7 +80,6 @@ Next, add configuration details specific to your preferred front-end framework.
 | Setting                 | Value       |
 | ----------------------- | ----------- |
 | _App location_          | **vue-app** |
-| _Api location_          | **api**     |
 | _App artifact location_ | **dist**    |
 
 ::: zone-end
