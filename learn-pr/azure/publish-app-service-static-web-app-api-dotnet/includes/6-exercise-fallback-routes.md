@@ -38,7 +38,7 @@ Before publishing your app, you'll create routing rules that include a fallback 
 
 Now save, commit, and push your changes to Git by following these steps:
 
-1. Open the Git Changes window by pressiong <kbd>Ctrl 0, G</kbd>.
+1. Open the Git Changes window by pressing <kbd>Ctrl 0, G</kbd>.
 1. Enter a commit message such as **added routing rules for a fallback route**.
 1. Click _Commit All_.
 1. From the **Git** menu, select **Push**.
