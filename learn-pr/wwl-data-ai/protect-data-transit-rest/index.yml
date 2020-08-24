@@ -3,7 +3,7 @@ uid: learn.wwl.protect-data-transit-at-rest
 metadata:
   title: Protect data in-transit and at rest
   description: "Protect data in-transit and at rest"
-  ms.date: 08/02/2020
+  ms.date: 08/23/2020
   author: wwlpublish
   ms.author: kadelaney
   ms.topic: interactive-tutorial
@@ -22,7 +22,7 @@ prerequisites: |
   - Ability to use tools for running queries against a Microsoft SQL database, either on-premises on cloud-based.
   - Understanding of why security is a crucial part of database system planning.
   - Experience creating and configuring resources using the Azure portal.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/protect-data-in-transit-and-at-rest.svg
 levels:
 - intermediate
 roles:

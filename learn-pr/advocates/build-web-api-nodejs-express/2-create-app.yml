@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-web-api-nodejs-express.2-create-app
-title: Create a new Express web application
+title: Create a new Express framework web application
 metadata:
-  title: Create a new Express web application
-  description: This unit will explain what the Express framework is and what steps are needed to create a Web Application with it.
+  title: Create a new web application by using the Express framework.
+  description: This unit explains what the Express framework is and how to use it to create a web application.
   author: softchris
   ms.author: chnoring
   ms.date: 06/16/2020

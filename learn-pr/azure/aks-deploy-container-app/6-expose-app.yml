@@ -2,7 +2,7 @@
 uid: learn.aks-deploy-container-app.6-expose-app
 metadata:
   title: Enable network access to an application
-  description: Explore how to expose your application to clients outside your AKS cluster using services and ingresses. You see how to make use of Ingress rules and annotations to specify the routing of request and the selection of an ingress controller.
+  description: Explore how to expose your application to clients outside your Azure Kubernetes Service cluster by using services and ingresses. You see how to make use of ingress rules and annotations to specify the routing of requests and the selection of an ingress controller.
   ms.date: 07/31/2020
   author: khaosdoctor
   ms.author: ludossan
@@ -15,38 +15,38 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What's the purpose of the 'ClusterIP' service type?"
+    - content: "What's the purpose of the ClusterIP service type?"
       choices:
-        - content: "To freeze the cluster's IP. So we can access it directly."
+        - content: "To freeze the cluster's IP so that we can access it directly."
           isCorrect: false
-          explanation: "The cluster's IP is already a fixed IP present in the AKS dashboard."
-        - content: "To make services available to other AKS clusters within Azure network."
+          explanation: "The cluster's IP is already a fixed IP present in the Azure Kubernetes Service dashboard."
+        - content: "To make services available to other Azure Kubernetes Service clusters within the Azure network."
           isCorrect: false
           explanation: "Services don't work across clusters. Their work is focused on their current cluster."
         - content: "To group pods into one single IP that's only available within the cluster."
           isCorrect: true
-          explanation: "Correct, services of that type expose the selected pods internally."
+          explanation: "Correct. Services of that type expose the selected pods internally."
 
-    - content: "What's the purpose of the 'LoadBalancer' service type?"
+    - content: "What's the purpose of the LoadBalancer service type?"
       choices:
-        - content: "Exposes the service externally using Azure's load-balancing solution."
+        - content: "To expose the service externally by using Azure's load-balancing solution."
           isCorrect: true
-          explanation: "Correct, services of that type expose the selected pods externally using an Azure Load-Balancing solution."
+          explanation: "Correct. Services of that type expose the selected pods externally by using an Azure Load Balancer solution."
         - content: "To balance the flow of internal communication in the cluster."
           isCorrect: false
           explanation: "Services don't interfere with cluster traffic."
         - content: "To group several different pods into a reverse proxy that's used internally in the cluster."
           isCorrect: false
-          explanation: "It's not possible to group different pods and differentiate them using their IPs as a reverse proxy. That's how an ingress controller works."
+          explanation: "It's not possible to group different pods and differentiate them by using their IPs as a reverse proxy. That's how an ingress controller works."
 
-    - content: "What is an Ingress?"
+    - content: "What is an ingress?"
       choices:
         - content: "A workload to create DNS zone records in Azure via API access to the cloud."
           isCorrect: false
-          explanation: "Despite triggering the event that causes the creation of new DNS Zones, an Ingress isn't meant for that."
+          explanation: "Despite triggering the event that causes the creation of new DNS zones, an ingress isn't meant for that."
         - content: "A workload to define the set of rules that allow external applications into the cluster."
           isCorrect: true
-          explanation: "Correct, ingress defines a set of rules to allow external application into the cluster."
-        - content: "Groups pods into one single IP address so they don't lose their IPs when destroyed."
+          explanation: "Correct. Ingress defines a set of rules to allow external applications into the cluster."
+        - content: "Groups pods into one single IP address so they don't lose their IPs when they're destroyed."
           isCorrect: false
-          explanation: "That's not the job the ingress, this is the purpose of the service."
+          explanation: "That's not the job of the ingress. It's the purpose of the service."

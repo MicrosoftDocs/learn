@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.student-evangelism.introduction-artificial-intelligence-nasa
+metadata:
+  title: Prepare to research space rocks by using artificial intelligence
+  description: Learn about the scientific research of space rocks and how artificial intelligence can enhance research.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Prepare to research space rocks by using artificial intelligence
+summary: Learn about the scientific research of space rocks and how artificial intelligence can enhance research.
+abstract: |
+ In this module, you will:
+ - Get an introduction to artificial intelligence
+ - Discover how humans classify objects
+ - Discover how machines classify objects
+ - Learn about artificial intelligence libraries
+ - Install artificial intelligence libraries
+prerequisites: |
+ - Ability to write and run introductory Python programs
+ - Visual Studio Code, a Python extension, and Jupyter Notebook installed
+iconUrl: /learn/achievements/student-evangelism/introduction-artificial-intelligence-nasa.svg
+levels:
+- beginner
+roles: 
+- student
+- data-scientist
+products: 
+- vs-code
+units:
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.1-introduction
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.2-role-ai-space-rock-research
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.3-space-rock-information
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.4-how-humans-classify-space-rocks
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.5-teach-machines-classify-space-rocks
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.6-common-ai-libraries
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.7-install-ai-libraries
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.7a-knowledge-check
+- learn.student-evangelism.introduction-artificial-intelligence-nasa.8-summary
+badge:
+  uid: learn.student-evangelism.introduction-artificial-intelligence.nasa.badge
