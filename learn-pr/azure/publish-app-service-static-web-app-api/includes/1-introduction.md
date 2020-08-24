@@ -62,7 +62,7 @@ Once you choose your client application, you'll:
 1. Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions
 1. Finally, you'll explore and launch your application, as shown below
 
-:::image type="content" source="../media/my-shopping-list-app-loading.png" alt-text="A set of four screenshots illustrating the four sample applications":::
+:::image type="content" source="../media/my-shopping-list-app.png" alt-text="A set of four screenshots illustrating the four sample applications":::
 
 ## Next steps
 

@@ -131,8 +131,6 @@ Click on the _URL_ link in the Azure portal to visit your app in the browser.
 
 :::image type="content" source="../media/static-web-apps-resource-overview.png" alt-text="Azure Static Web Apps overview page":::
 
-Your app's now globally available, but it's still stuck at **Loading data ...** because there's no data or API yet.
-
 Congratulations! You've deployed your first app to Azure Static Web Apps!
 
 > [!NOTE]
