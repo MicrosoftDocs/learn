@@ -11,7 +11,7 @@ Open source cluster technologies have been developed, over time, to try to deal 
 [Azure Synapse Analytics]( https://docs.microsoft.com/azure/sql-data-warehouse ) (formerly Azure SQL Data Warehouse) is a limitless analytics service that brings together enterprise data warehousing and Big Data analytics. Azure Synapse gives you the freedom to query data on your terms, using either serverless or provisioned resources at scale. Azure Synapse brings these two worlds together with a unified experience to ingest, prepare, manage, and serve data for immediate BI and machine learning needs.
   :::column-end:::
   :::column:::
-    :::image type="icon" source="../media/icon-service-Azure-Synapse-Analytics" border="false":::
+    :::image type="icon" source="../media/icon-service-Azure-Synapse-Analytics.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -30,20 +30,20 @@ Open source cluster technologies have been developed, over time, to try to deal 
   :::column span="3":::
 ## Azure Databricks
 
-[Azure Databricks](https://azure.microsoft.com/services/databricks/) helps you unlock insights from all your data and build artificial intelligence (AI) solutions. You can set up your Apache Spark™ environment in minutes, then autoscale and collaborate on shared projects in an interactive workspace. Azure Databricks supports Python, Scala, R, Java, and SQL, as well as data science frameworks and libraries including TensorFlow, PyTorch, and scikit-learn.
+[Azure Databricks](https://azure.microsoft.com/services/databricks/) helps you unlock insights from all your data and build artificial intelligence (AI) solutions. You can set up your Apache Spark&trade; environment in minutes, then autoscale and collaborate on shared projects in an interactive workspace. Azure Databricks supports Python, Scala, R, Java, and SQL, as well as data science frameworks and libraries including TensorFlow, PyTorch, and scikit-learn.
   :::column-end:::
   :::column:::
-    :::image type="icon" source="../media/icon-service-Azure-Databricks" border="false":::
+    :::image type="icon" source="../media/icon-service-Azure-Databricks.png" border="false":::
   :::column-end:::
 :::row-end:::
 
 :::row:::
   :::column:::
-    :::image type="icon" source="../media/icon-service-Data-Lake.png" border="false":::
+    :::image type="icon" source="../media/icon-service-Data-Lake-Analytics.png" border="false":::
   :::column-end:::
   :::column span="3":::
 ## Azure Data Lake Analytics
 
-[Azure Data Lake Analytics](https://azure.microsoft.com/services/data-lake-analytics ) is an on-demand analytics job service that simplifies big data. Instead of deploying, configuring, and tuning hardware, you write queries to transform your data and extract valuable insights. The analytics service can handle jobs of any scale instantly by setting the dial for how much power you need. You only pay for your job when it is running, making it more cost-effective. 
+[Azure Data Lake Analytics](https://azure.microsoft.com/services/data-lake-analytics/) is an on-demand analytics job service that simplifies big data. Instead of deploying, configuring, and tuning hardware, you write queries to transform your data and extract valuable insights. The analytics service can handle jobs of any scale instantly by setting the dial for how much power you need. You only pay for your job when it is running, making it more cost-effective. 
   :::column-end:::
 :::row-end:::

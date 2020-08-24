@@ -1,4 +1,12 @@
+:::row:::
+  :::column span="3":::
 As part of its overall data strategy, Tailwind Traders has been using PostgreSQL for several years. As existing PostgreSQL users, you may already know the benefits of PostgreSQL. Part of your migration is to use Azure Database for PostgreSQL, and you want to make sure that you'll have access to the same benefits as your on-premises server before moving to the cloud.
+  :::column-end:::
+  :::column:::
+    :::image type="icon" source="../media/icon-service-Azure-Database-PostgreSQL-Server.png" border="false":::
+  :::column-end:::
+:::row-end:::
+
 
 Azure Database for PostgreSQL is a relational database service in the Microsoft cloud. The server software is based on the community version of the open-source PostgreSQL database engine. Your familiarity with tools and expertise with PostgreSQL is applicable when using Azure Database for PostgreSQL.
 

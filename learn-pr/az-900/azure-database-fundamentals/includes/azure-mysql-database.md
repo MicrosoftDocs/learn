@@ -1,4 +1,11 @@
+:::row:::
+  :::column span="3":::
 Tailwind Traders currently manages several websites on-premises that use the LAMP stack (Linux, Apache, MySQL, PHP). As part of your planning for your migration strategy, the different teams at Tailwind Traders have been researching the available service offerings that Azure provides. You've already discovered that Azure Web Apps provides built in functionality to create web applications that use PHP on a Linux server running Apache, and you've been tasked with investigating whether the database needs for the web development team will continue to be met after the migration to Azure.
+  :::column-end:::
+  :::column:::
+    :::image type="icon" source="../media/icon-service-Azure-Database-MySQL-Server.png" border="false":::
+  :::column-end:::
+:::row-end:::
 
 The good news is, the Azure Database for MySQL is a relational database service in the Microsoft cloud, which is based on the MySQL Community Edition database engine, versions 5.6, 5.7, and 8.0. Azure's industry leading 99.99% availability service level agreement (SLA), powered by a global network of Microsoft-managed datacenters, helps keep your app running 24/7. With every Azure Database for MySQL server, you take advantage of built-in security, fault tolerance, and data protection that you would otherwise have to buy or design, build, and manage. With Azure Database for MySQL, you can use point-in-time restore to recover a server to an earlier state, as far back as 35 days.
 

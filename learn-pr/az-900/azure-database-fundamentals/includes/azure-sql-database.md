@@ -3,7 +3,7 @@
 Azure SQL Database is a relational database that is based on the latest stable version of the Microsoft SQL Server database engine. SQL Database is a high-performance, reliable, fully managed and secure database. You can use it to build data-driven applications and websites in the programming language of your choice without needing to manage infrastructure.
   :::column-end:::
   :::column:::
-    :::image type="icon" source="../media/azure-sql-db.png" border="false":::
+    :::image type="icon" source="../media/icon-service-SQL-Database.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -19,6 +19,6 @@ Since Azure SQL Database is based on the latest stable version of the Microsoft 
 
 Tailwind Traders currently uses several on-premises SQL servers, which provide data storage for your public-facing website (for example: customer data, order history, product catalogs, etc.). In addition, your on-premises SQL servers also provide data storage for your internal-only training portal website (for example: study materials, certification details, training transcripts, etc.) The following illustration shows the types of data that your company might store in the Azure SQL database training portal website.
 
-![](../media/azure_sql.png)
+![Azure SQL databases in a training portal website.](../media/azure_sql.png)
 
 You can migrate your existing SQL Server databases with minimal downtime using the Azure Database Migration Service. The service uses the Microsoft Data Migration Assistant to generate assessment reports that provide recommendations to help guide you through required changes prior to performing a migration. Once you assess and resolve any remediation required, you're ready to begin the migration process. The Azure Database Migration Service performs all of the required steps. You just change the connection string in your apps.
