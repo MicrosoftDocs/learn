@@ -11,120 +11,88 @@ In this exercise, you'll complete the following steps:
 
 ## Get the Function app
 
-Now, you'll add an API and connect it to your front-end app. The _api-starter_ folder includes an incomplete Azure Functions project. You'll complete that now.
+Now, you'll add an API and connect it to your front-end app. The _Api_ project includes an incomplete Azure Functions project. You'll complete that now.
 
 ### Create an api branch
 
 Before making changes to an app, it's good practice to create a new branch for the changes. You're about to complete the API for your app, so now is a good time to create a branch.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Checkout to...**
-1. Select **Create new branch**
+1. In Visual Studio, navigate to the **Git** menu and click _New Branch_.
 1. Type **api** for the new branch name and press <kbd>Enter</kbd>
 
 You just created the **api** git branch.
 
 ### Complete the Azure Functions API
 
-To complete the API, you'll start by moving the starter API code to a folder named _api_. This is the folder name you entered for the **api_location** when you created the Static Web Apps instance.
+The **Api** project contains your Azure Functions project, along with three functions.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Terminal: Create New Integrated Terminal**
-1. Make sure you are in the root folder of the project
-1. Use git commands to rename the _api-starter_ folder to _api_
-
-   ```bash
-   git mv api-starter api
-   ```
-
-1. Open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Commit All**
-1. Type the commit message **api** and press <kbd>Enter</kbd>
-
-You'll now see an **api** folder in the Visual Studio Code explorer. The **api** folder contains your Azure Functions project, along with three functions.
-
-| Folder and file       | Method | Route          |
+| Class                 | Method | Route          |
 | --------------------- | ------ | -------------- |
-| _api/products-post_   | POST   | `products`     |
-| _api/products-put_    | PUT    | `products/:id` |
-| _api/products-delete_ | DELETE | `products/:id` |
+| _ProductsPost_        | POST   | `products`     |
+| _ProductsPut_         | PUT    | `products/:id` |
+| _ProductsDelete_      | DELETE | `products/:id` |
 
 Your API has routes for manipulating the products for the shopping list, but it lacks a route for getting the products. You'll add that next.
 
 ## Create the HTTP GET function
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Azure Functions: Create Function**
-1. When prompted to create a function, select **HTTP Trigger**
-1. Enter **products-get** as the name of the function
+1. In Visual Studio, right click on the **Api** project and choose _Add -> New Azure Function_
+1. Enter **ProductsGet** as the name of the function
+1. Use **Http trigger** as the function type
 1. Select **Anonymous** as the authentication level
+
+:::image type="content" source="../media/new-azure-function.png" alt-text="Creating a new Azure Function":::
 
 You just extended your Azure Function app with a function to get your products!
 
-> [!NOTE]
-> The function app is in the _api_ folder, which separates it from the individual web app projects. All of the web apps using the front-end frameworks make calls to the same API. You can decide how to structure your application, but for this sample it helps to see them separated.
-
 ### Configure the HTTP Method and route endpoint
 
-Notice the folder _api/products-get_ contains the file _function.json_. This file contains the configuration for your function.
+Notice the folder `Run` method of the newly created C# class has a `HttpTrigger` attribute on the first argument, the `HttpRequest`. This attribute is used to define the access level of the Function, as well as the HTTP method(s) to listen for and the route endpoint.
 
-The route endpoint has the same name as the folder that contains the function, by convention. Since the function is created in the _products-get_ folder, the route endpoint is generated as **products-get**, by default. However, you want the endpoint to be **products**.
+The route endpoint will be `null` by default, meaning that the endpoint will use the value of the `FunctionName` attribute, which is `ProductsGet`. However, you want the endpoint to be **products**, which you can do by setting the `HttpTrigger`'s `Route` property to `"products"`.
 
-Configure your function:
+Now your function is triggered on an HTTP `GET` request to **products**. Your `Run` method should look like the following code:
 
-1. Open the file _api/products-get/function.json_
-1. Notice the methods allow both `GET` and `POST`
-1. Change the methods array to only allow `GET` requests
-1. Go to the `bindings` section for `"name": "req"`
-1. Add a `"route": "products"` entry
-
-Now your function is triggered on an HTTP `GET` request to **products**. Your _function.json_ should look like the following code:
-
-```json
-{
-  "bindings": [
-    {
-      "authLevel": "anonymous",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": ["get"],
-      "route": "products"
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
-    }
-  ]
-}
+```csharp
+[FunctionName("ProductsGet")]
+public static async Task<IActionResult> Run(
+    [HttpTrigger(AuthorizationLevel.Function, "get", Route = "products")] HttpRequest req,
+    ILogger log)
 ```
 
 ### Update the route logic
 
-The file _index.js_ in the folder _api/products-get_ contains logic that runs when your make an HTTP request to the route.
+The body of the `Run` method is what will be executed when the Function is executed.
 
-You'll need to update the logic to get your products. There is data access logic in the JavaScript module _/shared/product-data.js_. The `product-data` module exposes a function `getProducts` to get the products for the shopping list.
+You'll need to update the logic to get your products. There is data access logic in the `ProductData.cs` file as a class called `ProductData`, which is available via Dependency Injection as the `IProductData` interface. The interface has a method on it called `GetProducts` which will return a `Task<IEnumerable<Product>>` that asynchronously returns a list of products.
 
 Now, change the function endpoint to return the products:
 
-1. Open the file _api/products-get/index.js_
+1. Open _ProductsGet.cs_
 1. Replace its contents with the following code:
 
-   ```javascript
-   const data = require('../shared/product-data');
+```csharp
+public class ProductsGet
+{
+    private readonly IProductData productData;
 
-   module.exports = async function (context, req) {
-     try {
-       const products = data.getProducts();
-       context.res.status(200).json(products);
-     } catch (error) {
-       context.res.status(500).send(error);
-     }
-   };
-   ```
+    public ProductsGet(IProductData productData)
+    {
+        this.productData = productData;
+    }
 
-Your function will get the products and return them with a status code of 200, when successful.
+    [FunctionName("ProductsGet")]
+    public async Task<IActionResult> Run(
+        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req,
+        ILogger log)
+    {
+        var products = await productData.GetProducts();
+        return new OkObjectResult(products);
+    }
+}
+```
+
+You have now turned the class from a static to an instance class, added the interface to the constructor so it can be injected by the Dependency Injection framework and configured the Function to return the product list when called.
 
 ### Configure CORS locally
 
@@ -132,226 +100,41 @@ You won't have to worry about CORS when you publish to Azure Static Web Apps. Az
 
 Now, tell Azure Functions to allow your web app to make HTTP requests to the API, on your computer.
 
-1. Create a file named _api/local.settings.json_
+1. Create a file named _local.settings.json_ in the **Api** project
 1. Add the following contents to the file
 
-   ::: zone pivot="angular"
-
    ```json
    {
      "Host": {
-       "CORS": "http://localhost:4200"
+       "CORS": "https://localhost:44382/"
      }
    }
    ```
-
-   ::: zone-end
-
-   ::: zone pivot="react"
-
-   ```json
-   {
-     "Host": {
-       "CORS": "http://localhost:3000"
-     }
-   }
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="svelte"
-
-   ```json
-   {
-     "Host": {
-       "CORS": "http://localhost:5000"
-     }
-   }
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="vue"
-
-   ```json
-   {
-     "Host": {
-       "CORS": "http://localhost:8080"
-     }
-   }
-   ```
-
-   ::: zone-end
 
 > [!NOTE]
 > The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why you had to create the file when you created your repo from the template.
 
-### Run the API
+### Run the API and web app
 
 Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
 
 > [!NOTE]
-> Please be sure to install the [Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) which will allow you to run Azure Functions locally.
+> Please be sure to install the [Azure Functions for Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs) support is installed.
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Terminal: Create New Integrated Terminal**
-1. Go to the _api_ folder
-
-   ```bash
-   cd api
-   ```
-
-1. Run the Azure Functions app locally
-
-   ```bash
-   func start
-   ```
-
-## Run the web app
-
-Your API is running. Now you need to configure your front-end app to make its HTTP request to your API. The front-end app runs on one port and the API runs on a different port (7071). Each front-end framework can be configured to proxy HTTP requests to a port safely.
-
-### Configure your proxy port
-
-Configure the proxy for your front-end app with the following steps:
-
-::: zone pivot="angular"
-
-1. Open the file _angular-app/proxy.conf.json_
-1. Locate the `target: 'http://localhost:7071'` setting
-1. Notice that the target's port points to 7071
-
-::: zone-end
-
-::: zone pivot="react"
-
-1. Open the file _react-app/package.json_
-1. Locate the `"proxy": "http://localhost:7071/",` setting
-1. Notice that the proxy's port points to 7071
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-1. Open the file _svelte-app/rollup.config.js_
-1. Locate the line of code `const api = 'http://localhost:7071/api';`
-1. Notice that the api's port points to 7071
-
-::: zone-end
-
-::: zone pivot="vue"
-
-1. Open the file _vue-app/vue.config.js_
-1. Locate the `target: 'http://localhost:7071',` setting
-1. Notice that the target's port points to 7071
-
-::: zone-end
-
-### Run your front-end web app
-
-Your API is already running on port 7071. Now when you run your web app it will make its HTTP requests to your API. Run your web app by following these steps:
-
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Terminal: Create New Integrated Terminal**
-1. Next, go to the folder of your preferred front-end framework, as shown below:
-
-   ::: zone pivot="angular"
-
-   ```bash
-   cd angular-app
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="react"
-
-   ```bash
-   cd react-app
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="svelte"
-
-   ```bash
-   cd svelte-app
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="vue"
-
-   ```bash
-   cd vue-app
-   ```
-
-   ::: zone-end
-
-1. Run the front-end client application
-
-   ::: zone pivot="angular"
-
-   ```bash
-   npm start
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="react"
-
-   ```bash
-   npm start
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="svelte"
-
-   ```bash
-   npm run dev
-   ```
-
-   ::: zone-end
-
-   ::: zone pivot="vue"
-
-   ```bash
-   npm run serve
-   ```
-
-   ::: zone-end
+1. In Visual Studio, right-click on the _ShopAtHome_ solution
+1. Select **Set Startup Projects**
+1. Choose the _Multiple startup projects_ option and set _Api_ and _Client_ to have **Start** as their _Action_ then click _Ok_
+1. Press <kbd>F5</kbd> to launch the debugger
 
 ### Browse to your app
 
 It's time to see your application running locally against the Azure Functions API.
 
-::: zone pivot="angular"
-
-Browse to `http://localhost:4200`.
-
-::: zone-end
-
-::: zone pivot="react"
-
-Browse to `http://localhost:3000`.
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-Browse to `http://localhost:5000`.
-
-::: zone-end
-
-::: zone pivot="vue"
-
-Browse to `http://localhost:8080`.
-
-::: zone-end
+Browse to `https://localhost:44382/`.
 
 You built your application and now it's running locally making HTTP GET requests to your API.
 
-Now stop your running app and API by pressing <kbd>Ctrl-C</kbd> in the terminals.
+Now stop your running app and API by disconnecting the debugger in Visual Studio.
 
 ## Next steps
 

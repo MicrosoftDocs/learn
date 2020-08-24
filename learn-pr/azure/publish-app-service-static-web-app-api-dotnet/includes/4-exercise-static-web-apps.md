@@ -51,8 +51,8 @@ Next, add configuration details specific to your preferred front-end framework.
 | Setting                 | Value       |
 | ----------------------- | ----------- |
 | _App location_          | **/Client** |
-| _Api location_          | **/Api**     |
-| _App artifact location_ | **wwwroot**    |
+| _Api location_          | **/Api**    |
+| _App artifact location_ | **wwwroot** |
 
 Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
 
