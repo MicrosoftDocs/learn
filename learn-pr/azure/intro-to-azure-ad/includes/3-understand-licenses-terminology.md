@@ -6,7 +6,7 @@ Here, you'll explore how Azure AD is licensed and which features fall under the 
 
 You can use different features of Azure AD, depending on the type of license you choose:
 
-- **Azure Active Directory Free**. You can manage users and groups, and you get basic reports, on-premises Active Directory synchronization, and self-service password reset for Azure AD users. You also get single sign-on for Office 365, Azure services, and many third-party SaaS applications.
+- **Azure Active Directory Free**. You can manage users and groups, and you get basic reports, on-premises Active Directory synchronization, and self-service password reset for Azure AD users. You also get single sign-on for Microsoft 365, Azure services, and many third-party SaaS applications.
 
 - **Azure Active Directory Premium P1**. You get all the features from the free tier, but you can also let users access on-premises and cloud-based services and resources. You can use self-service group management or dynamic groups, where users are added and removed automatically, based on your criteria. This tier supports on-premises identity management suites like Microsoft Identity Manager. Self-service password reset is also supported for users who are based on-premises.
 
@@ -34,9 +34,9 @@ Here's an explanation of some of those terms:
 |---------|---------|
 |Identity|Something that has to be identified and authenticated. An identity is typically a user who has username and password credentials, but the term can also apply to applications or services.|
 |Account|An identity and its associated data. An account can't exist without an identity.|
-|Azure AD account|An identity created in Azure AD or in services like Office 365. These identities are stored in Azure AD. For example, internal staff members might use Azure AD accounts daily at work.|
+|Azure AD account|An identity created in Azure AD or in services like Microsoft 365. These identities are stored in Azure AD. For example, internal staff members might use Azure AD accounts daily at work.|
 |Azure subscription| Your level of access to use Azure and its services. For pay-as-you-go access, use your credit card to set up an Azure subscription. There are several types of subscriptions. For example, enterprise-level customers can use Azure Enterprise Agreement subscriptions. Each account can use many subscriptions.|
-|Azure AD tenant|An instance of an Azure AD. This tenant is created for you automatically when you first sign up for Azure or other services like Office 365. A tenant, which represents an organization, holds your users, their groups, and applications.|
+|Azure AD tenant|An instance of an Azure AD. This tenant is created for you automatically when you first sign up for Azure or other services like Microsoft 365. A tenant, which represents an organization, holds your users, their groups, and applications.|
 |Multi-tenant|Multiple-tenant access to the same applications and services in a shared environment. These tenants represent multiple organizations.|
 |Azure AD directory|An Azure resource that's created for you automatically when you subscribe to Azure. You can create many Azure AD directories. Each of these directories represents a tenant.|
 |Custom domain|A domain that you customize for your Azure AD directory. When you create an Azure AD directory, Azure automatically assigns it a default domain like `<your-organization>.onmicrosoft.com`. But you can customize domain names. Your users could then have accounts like `joesmith@contoso.com` instead of `joesmith@contoso.onmicrosoft.com`.|
