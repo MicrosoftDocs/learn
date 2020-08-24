@@ -6,7 +6,7 @@ Many options are available for loading data into Azure SQL. Some overlap with wh
 
 ### Bulk Copy Program
 
-Bulk Copy Program (BCP) is a common tool for connecting to Azure SQL from on-premises, and for connecting to Azure SQL from an Azure virtual machine. You can then use it to move data into Azure SQL.  
+Bulk Copy Program (bcp) is a common tool for connecting to Azure SQL from on-premises, and for connecting to Azure SQL from an Azure virtual machine. You can then use it to move data into Azure SQL.  
 
 ### Bulk insert
 

@@ -45,11 +45,11 @@ This logical server does not expose any instance-level access or features as wit
 
 ### Compute and storage
 
-In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and the maximum data size.
+In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and maximum data size.
 
-Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU recommender, to estimate the number of vCores and the maximum data size based on your current workload.  
+Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU recommender, to estimate the number of vCores and maximum data size based on your current workload.  
 
-The maximum data size is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with your maximum data size.  
+The maximum data size is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with the maximum data size.  
 
 ### Networking configuration
 
@@ -130,7 +130,7 @@ As you increase or decrease the resources in a service tier, the limits for dime
 
 * Windows job objects allow a group of processes to be managed and governed as a unit. Job objects are used to govern the file's virtual memory commit, working set caps, CPU affinity, and rate caps. You can use the `sys.dm_os_job_object` dynamic management view to see the limits in place.
 * Resource Governor is a SQL Server feature that helps users (and in this case, Azure) govern resources like CPU, physical I/O, and memory. Azure SQL Managed Instance also allows user-defined workload groups and pools for Resource Governor.
-* File Server Resource Manager is available in Windows Server and is used to govern file directory quotas, which are used to manage maximum data sizes.
+* File Server Resource Manager is available in Windows Server and is used to govern file directory quotas, which are used to manage the maximum data size.
 
 Additional implementations to govern transaction log rate are built into the database engine for Azure, through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds. They're tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
 

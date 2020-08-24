@@ -15,14 +15,14 @@ content: |
 quiz:
     title: Knowledge check 
     questions:
-    - content: "If the maximum data size in Azure SQL Database is 10 GB, what's the maximum transaction log size?"
+    - content: "If your maximum data size in Azure SQL Database is 10 GB, what's the maximum transaction log size?"
       choices:
       - content: "1 GB"
         isCorrect: false
         explanation: "Review the section about space management and the examples."
       - content: "3 GB"
         isCorrect: true
-        explanation: "The transaction log is managed over and above the data size, and the log's maximum size is always 30 percent of the maximum data size."
+        explanation: "The transaction log is managed over and above the data size, and the log's maximum size is always 30 percent of maximum data size."
       - content: "5 GB"
         isCorrect: false
         explanation: "Review the section about space management and the examples."
