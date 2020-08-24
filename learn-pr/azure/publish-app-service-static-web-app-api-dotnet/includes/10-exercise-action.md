@@ -4,16 +4,15 @@ Your web app and API are both running locally. Now it's time to publish your web
 
 You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub by following these steps:
 
-1. In Visual Studio Code, open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
+1. In Visual Studio, open the Git Changes window by pressiong <kbd>Ctrl 0, G</kbd>.
 1. Enter a commit message such as **api changes**
-1. Open the command palette by pressing <kbd>F1</kbd>
-1. Type and select **Git: Push**
+1. Click _Commit All_.
+1. From the **Git** menu, select **Push**.
 1. If you are prompted with the message **The branch 'api' has no upstream branch. Would you like to publish this branch?** press the **OK** button
 
 ## Create a Pull Request
 
-You pushed your **api** branch to GitHub. Now you want the GitHub Action to publish your web app and API in a preview URL. So your next step is to create a pull request against the **master** branch.
+You pushed your **api** branch to GitHub. Now you want the GitHub Action to publish your web app and API in a preview URL. So your next step is to create a pull request against the **main** branch.
 
 1. Open a browser
 1. Navigate to your repository
@@ -22,7 +21,7 @@ You pushed your **api** branch to GitHub. Now you want the GitHub Action to publ
 
 1. Click on the **Pull requests** link
 1. Click the **New pull request** button
-1. Select the **master** branch from the **base** dropdown
+1. Select the **main** branch from the **base** dropdown
 1. Select the **api** branch from the **compare** dropdown
 1. Click the **Create pull request** button
 1. Again, click the second **Create pull request** button
@@ -50,29 +49,7 @@ Once the GitHub Action has completed successfully, you can view your running app
 
 Notice that the preview URL contains a hyphen followed by a number. The number matches the pull request number for the pull request you created. For every pull request you create, you'll get a unique and repeatable preview URL. The region is also used to form the preview URL, too
 
-::: zone pivot="angular"
-
-:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="Your angular web app":::
-
-::: zone-end
-
-::: zone pivot="react"
-
-:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="Your react web app":::
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="Your svelte web app":::
-
-::: zone-end
-
-::: zone pivot="vue"
-
-:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="Your vue web app":::
-
-::: zone-end
+:::image type="content" source="../media/my-shopping-list-app.png" alt-text="Your Blazor web app":::
 
 ## Next steps
 
