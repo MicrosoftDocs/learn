@@ -2,6 +2,7 @@ In this module, you learned how to help Tailwind Traders migrate their database 
 
 ## Learn more
 
+- [Azure Analytics Services](https://azure.microsoft.com/product-categories/analytics)
 - [Azure Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/)
 - [Azure SQL documentation](https://docs.microsoft.com/azure/sql-database/)
 - [Azure Database for MySQL documentation](https://docs.microsoft.com/azure/mysql/)

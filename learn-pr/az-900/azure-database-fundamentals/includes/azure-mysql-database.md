@@ -16,5 +16,3 @@ These capabilities require almost no administration and all are provided at no a
 ![Azure Database for MySQL conceptual diagram.](../media/azure-db-for-mysql-conceptual-diagram.png)
 
 The Azure Database for MySQL service offers several service tiers, and each tier offers different performance and capabilities to support lightweight to heavyweight database workloads. You can build your first app on a small database for a few dollars a month, and then adjust the scale to meet the needs of your solution. Dynamic scalability enables your database to transparently respond to rapidly changing resource requirements. You only pay for the resources you need, and only when you need them.
-
-
