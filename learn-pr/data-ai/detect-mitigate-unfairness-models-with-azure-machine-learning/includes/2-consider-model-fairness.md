@@ -1,4 +1,4 @@
-When we consider the concept of *fairness* in relation predictions made by machine learning models, it helps to clear about what we main by "fair".
+When we consider the concept of *fairness* in relation predictions made by machine learning models, it helps to clear about what we mean by "fair".
 
 For example, suppose a classification model is used to predict the probability of a successful loan repayment, and therefore influences whether or not the loan is approved. It's likely that the model will be trained using features that reflect characteristics of the applicant, such as:
 
@@ -20,7 +20,7 @@ One way to start evaluating the fairness of a model is to compare *predictions* 
 
 ![Four out of eleven applicants aged 25 or younger are predicted to repay, and seven out of eleven applicants aged over 25 are predicted to repay.](../media/prediction-disparity.png)
 
-let's say we find that the model predicts that 36% of applicants aged 25 or younger will repay a loan, but it predicts successful repayments for 54% of applicants aged over 25. There's a disparity in predictions of 18%.
+Let's say we find that the model predicts that 36% of applicants aged 25 or younger will repay a loan, but it predicts successful repayments for 54% of applicants aged over 25. There's a disparity in predictions of 18%.
 
 At first glance, this comparison seems to confirm that there's bias in the model that discriminates against younger applicants. However, when you consider the population as a whole, it may be that younger people generally earn less than people more established in their careers, have lower levels of savings and assets, and have a higher rate of defaulting on loans.
 
@@ -57,4 +57,4 @@ Optimizing for fairness in a machine learning model is a *sociotechnical* challe
 - Evaluate models for disparity based on significant features. You can't easily address the bias in a model if you can't quantify it.
 - Trade off overall predictive performance for lower disparity in predictive performance between sensitive feature groups. A model that is 99.5% accurate with comparable performance across all groups is often more desirable than a model that is 99.9% accurate, but discriminates against a particular subset of cases.
 
-The rest of this module explores the **FairLearn** package - a Python package that you can use to evaluate and mitigate unfairness in machine learning models.
+The rest of this module explores the **Fairlearn** package - a Python package that you can use to evaluate and mitigate unfairness in machine learning models.
