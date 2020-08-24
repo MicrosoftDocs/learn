@@ -6,11 +6,10 @@ Azure Static Web Apps added a GitHub Actions workflow file to the branch you sel
 
 Pull your code changes from Git by following these steps:
 
-1. Open the folder _my-static-web-app_ in Visual Studio Code.
-1. Open the command palette by pressing <kbd>F1</kbd>.
-1. Type and select **Git: Pull**.
+1. Open the **ShopAtHome** solution in Visual Studio.
+1. Open the _Git_ menu and select **Pull** .
 
-You can now see your workflow file in the folder _.github/workflows_.
+You can now see your workflow file in the folder _.github/workflows_ in Explorer.
 
 ## Create a routing rule
 
@@ -18,32 +17,9 @@ Before publishing your app, you'll create routing rules that include a fallback 
 
 ### Create the file routes.json
 
-::: zone pivot="angular"
-
-1. In Visual Studio Code, right-click the folder _angular-app/src/assets_
-
-::: zone-end
-
-::: zone pivot="react"
-
-1. In Visual Studio Code, right-click the folder _react-app/public_
-
-::: zone-end
-
-::: zone pivot="svelte"
-
-1. In Visual Studio Code, right-click the folder _svelte-app/public_
-
-::: zone-end
-
-::: zone pivot="vue"
-
-1. In Visual Studio Code, right-click the folder _vue-app/public_
-
-::: zone-end
-
-2. Select **New File**
-3. Type _routes.json_ and press <kbd>Enter</kbd>
+1. In Visual Studio, right-click the folder _wwwroot_ within the _Client_ project.
+2. Select **Add -> New Item**.
+3. Select **JSON File** from the available templates, name it _routes.json_ and press <kbd>Enter</kbd>.
 4. Update the _routes.json_ file to include the following fallback route:
 
    ```json
@@ -62,11 +38,10 @@ Before publishing your app, you'll create routing rules that include a fallback 
 
 Now save, commit, and push your changes to Git by following these steps:
 
-1. Open the command palette by pressing <kbd>F1</kbd>.
-1. Type and select **Git: Commit All**. If Visual Studio Code prompts you to automatically stage all of your changes and commit them directly, select **Yes**.
+1. Open the Git Changes window by pressiong <kbd>Ctrl 0, G</kbd>.
 1. Enter a commit message such as **added routing rules for a fallback route**.
-1. Open the command palette by pressing <kbd>F1</kbd>.
-1. Type and select **Git: Push**.
+1. Click _Commit All_.
+1. From the **Git** menu, select **Push**.
 
 ### Try the fallback route
 
