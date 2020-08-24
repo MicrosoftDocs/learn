@@ -82,7 +82,7 @@ AccuWeather provides a great example of using SQL Database. AccuWeather has been
 
 You've now learned about the three main deployment options within Azure SQL: virtual machines, managed instances, and SQL Database. For SQL Database and SQL Managed Instance, there are additional options if you have multiple instances or databases. These options are referred to as *elastic database pools*. Elastic database pools allow you to share resources among multiple instances and databases and optimize your costs.  
 
-**SQL Database elastic database pools** allow you to host many databases within a single set of provisioned SQL Database resources. This option is ideal for a software as a service (SaaS) application or provider because you can manage and monitor performance in a simplified way for many databases.
+**SQL Database elastic pools** allow you to host many databases within a single set of provisioned SQL Database resources. This option is ideal for a software as a service (SaaS) application or provider because you can manage and monitor performance in a simplified way for many databases.
 
 **SQL Managed Instance pools** allow you to host multiple managed instances and share resources. You can pre-provision compute resources. Doing so can reduce overall deployment time to make migrations easier. You can also host smaller managed instances in an instance pool than you can in a single managed instance. This offer is currently in public preview.
 

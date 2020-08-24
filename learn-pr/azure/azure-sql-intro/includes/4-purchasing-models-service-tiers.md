@@ -30,7 +30,7 @@ Next, you need to choose a service tier for performance and availability. We rec
 
 If you choose General Purpose and the vCore-based model, you have an additional decision to make regarding the compute that you pay for:
 
-- **Provisioned compute** is meant for more regular usage patterns with higher average compute utilization over time, or for multiple databases that use elastic database pools.
+- **Provisioned compute** is meant for more regular usage patterns with higher average compute utilization over time, or for multiple databases that use elastic pools.
 - **Serverless compute** is meant for intermittent, unpredictable usage with lower average compute utilization over time. Serverless has autopause and resume capabilities with a time delay that you set. When your database is paused, you pay only for storage.  
 
 ### Hardware

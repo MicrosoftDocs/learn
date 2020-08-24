@@ -34,7 +34,7 @@ There are many companies that have moved to Azure SQL. You can learn more about 
 - [Allscripts: SQL Server on Azure Virtual Machines](https://customers.microsoft.com/story/allscripts-partner-professional-services-azure?azure-portal=true)
 - [Komatsu: Azure SQL Managed Instance](https://customers.microsoft.com/story/komatsu-australia-manufacturing-azure?azure-portal=true)
 - [AccuWeather: Azure SQL Database](https://customers.microsoft.com/story/accuweather-partner-professional-services-azure?azure-portal=true)
-- [Paychex: Azure SQL Database elastic database pools](https://customers.microsoft.com/story/paychex-azure-sql-database-us?azure-portal=true)
+- [Paychex: Azure SQL Database elastic pools](https://customers.microsoft.com/story/paychex-azure-sql-database-us?azure-portal=true)
 
 ### Platform as a service (PaaS) capabilities
 
@@ -45,7 +45,7 @@ Azure SQL Database and SQL Managed Instance are versionless, meaning you get upd
 Learn more about pools in Azure SQL:
 
 - [Azure SQL Managed Instance pools](https://docs.microsoft.com/azure/sql-database/sql-database-instance-pools?azure-portal=true)
-- [Azure SQL Database elastic database pools](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool?azure-portal=true)  
+- [Azure SQL Database elastic pools](https://docs.microsoft.com/azure/sql-database/sql-database-elastic-pool?azure-portal=true)  
 
 If you want to learn more about deployment options and how to choose one, check out these resources:  
 
