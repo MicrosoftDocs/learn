@@ -45,7 +45,7 @@ This logical server does not expose any instance-level access or features as wit
 
 ### Compute and storage
 
-In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and maximum data size.
+In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and the maximum data size.
 
 Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU recommender, to estimate the number of vCores and maximum data size based on your current workload.  
 
