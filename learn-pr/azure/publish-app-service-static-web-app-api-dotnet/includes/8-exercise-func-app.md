@@ -119,7 +119,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
 Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
 
 > [!NOTE]
-> Please be sure to install the [Azure Functions for Visual Studio](https://docs.microsoft.com/en-us/azure/azure-functions/functions-develop-vs) support is installed.
+> Please be sure to install the [Azure Functions for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) support is installed.
 
 1. In Visual Studio, right-click on the _ShopAtHome_ solution
 1. Select **Set Startup Projects**

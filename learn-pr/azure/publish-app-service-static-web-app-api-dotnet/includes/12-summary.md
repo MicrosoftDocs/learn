@@ -10,4 +10,4 @@ Here are several resources where you can learn more about Azure Static Web Apps,
 
 - [Azure Static Web Apps on Microsoft Docs](https://docs.microsoft.com/azure/static-web-apps)
 - Learn how to [Deploy to Azure Using Azure Functions](https://code.visualstudio.com/tutorials/functions-extension/getting-started)
-- [Overview of Blazor](https://docs.microsoft.com/en-us/aspnet/core/blazor/?view=aspnetcore-3.1)
+- [Overview of Blazor](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1)
