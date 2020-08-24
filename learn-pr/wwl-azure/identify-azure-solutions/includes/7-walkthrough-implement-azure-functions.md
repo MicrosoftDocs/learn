@@ -22,7 +22,7 @@ In this task, we will create a Function app.
     | Settings | Value |
     | -- | --|
     | Subscription | Ensure the **Concierge Subscription** |
-    | Resource group | Choose **<rgn>[sandbox resource group name]</rgn>** (Create new) |
+    | Resource group | Choose **<rgn>[sandbox resource group name]</rgn>** |
     | Function App name | **function-xxxx** |
     | Publish | **Code** |
     | Runtime stack | **.NET Core** |

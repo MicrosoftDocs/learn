@@ -3,7 +3,7 @@ uid: learn.wwl.describe-high-availability-disaster-recovery-strategies
 metadata:
   title: Describe high-availability and disaster-recovery strategies
   description: "Plan appropriate HA/DR strategy based on RTO and RPO. Choose best solution for IaaS or PaaS deployments or hybrid workloads."
-  ms.date: 08/07/2020
+  ms.date: 08/23/2020
   author: wwlpublish
   ms.author: kadelane
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
 prerequisites: |
   - Experience creating and configuring resources using the Azure portal.
   - Basic understanding of SQL Server file storage.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/describe-high-availability-and-disaster-recovery-strategies.svg
 levels:
 - intermediate
 roles:
