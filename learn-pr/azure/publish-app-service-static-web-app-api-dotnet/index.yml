@@ -20,10 +20,8 @@ prerequisites: |
   - Familiarity with Blazor
   - Beginner-level experience with Azure Functions
   - A GitHub account
-  - [Node.js LTS and Git](https://nodejs.org/)
-  - [Visual Studio](https://visualstudio.microsoft.com/vs/) or [Visual Studio Code](https://code.visualstudio.com/) installed
-  - The [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed (if using Visual Studio Code)
-  - [The Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) installed (if using Visual Studio Code)
+  - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/)
+  - [Azure Functions for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs)
 iconUrl: /learn/achievements/publish-static-web-app-and-api.svg
 levels:
   - beginner
