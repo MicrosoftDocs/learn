@@ -2,7 +2,7 @@ Azure SQL Database and Azure SQL Managed Instance provide great availability opt
 
 ## Availability Zones
 
-In the Business critical tier in Azure SQL Database, you can opt in (for no additional fee) for a zone-redundant configuration if your region supports that. At a high level, the Always On availability group (AG) that runs behind Business critical databases and managed instances is deployed across three Availability Zones within a region. An Availability Zone is basically a separate datacenter within a given region. There's always a physical separation between Availability Zones. This capability protects against catastrophic failures that might occur to a datacenter in a region.
+In the Business Critical tier in Azure SQL Database, you can opt in (for no additional fee) for a zone-redundant configuration if your region supports that. At a high level, the Always On availability group (AG) that runs behind Business Critical databases and managed instances is deployed across three Availability Zones within a region. An Availability Zone is basically a separate datacenter within a given region. There's always a physical separation between Availability Zones. This capability protects against catastrophic failures that might occur to a datacenter in a region.
 
 
 :::image type="content" source="../media/7-availability-zones.png" alt-text="Diagram that shows the Availability Zone architecture." border="false":::
@@ -15,11 +15,11 @@ Availability Zones are relatively new to Azure SQL, so they're currently  availa
 
 Azure SQL maintains a service-level agreement (SLA) that provides financial backing to the commitment to achieve and maintain service levels. If your service level isn't achieved and maintained as described in the SLA, you might be eligible for a credit toward a portion of your monthly service fees.
 
-Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business critical deployment that has Availability Zones configured. The Business critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for *recovery point object*. It represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for *recovery time objective*. It represents how long it takes to be back up and running again if a disaster occurs.
+Currently, you can achieve the highest availability (99.995%) from an Azure SQL Database Business Critical deployment that has Availability Zones configured. The Business Critical tier is the only option in the industry that provides RPO and RTO SLAs of 5 seconds and 30 seconds, respectively. RPO stands for *recovery point object*. It represents the amount of data you're potentially willing to lose in a worst case scenario. RTO stands for *recovery time objective*. It represents how long it takes to be back up and running again if a disaster occurs.
 
-For General purpose or single-zone Business critical deployments, the SLA is 99.99%.
+For General Purpose or single-zone Business Critical deployments, the SLA is 99.99%.
 
-The Hyperscale tier's SLA depends on the number of replicas. Remember that you choose how many replicas you have in Hyperscale. If you don't have any, the failover behavior is more like that of General purpose. If you have replicas, the failover behavior is more like that of Business critical. Here are the SLAs, based on the number of replicas:  
+The Hyperscale tier's SLA depends on the number of replicas. Remember that you choose how many replicas you have in Hyperscale. If you don't have any, the failover behavior is more like that of General Purpose. If you have replicas, the failover behavior is more like that of Business Critical. Here are the SLAs, based on the number of replicas:  
 
 * 0 replicas: 99.5%
 * 1 replica: 99.9%
