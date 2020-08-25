@@ -14,7 +14,7 @@ To configure auto-failover groups for one or more databases and view the results
 1. Initiate a failover.
 1. Fail back.
 
-This exercise will guide you through configuring auto-failover groups for your AdventureWorks database. You'll then use a simple command-line application to understand where reads and writes occur and the importance of retry logic in your applications. Finally, you'll do a fun exercise to determine how many read replicas are associated with a Business critical database that also has an auto-failover group.  
+This exercise will guide you through configuring auto-failover groups for your AdventureWorks database. You'll then use a simple command-line application to understand where reads and writes occur and the importance of retry logic in your applications. Finally, you'll do a fun exercise to determine how many read replicas are associated with a Business Critical database that also has an auto-failover group.  
 
 ### Configure the environment
 
