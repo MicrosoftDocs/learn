@@ -9,14 +9,16 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure Sentinel and connect data sources
-summary: TODO
+summary: After completing this module, you'll be able to: enable Azure Sentinel, and understand how to deploy connectors to Azure Sentinel. You will also understand how to manage Sentinel log data.
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - On board Azure Sentinel.
+  - Understand how to connect to the services you want to monitor.
+  - Understand how to deploy and manage the log data that will be collected.
 prerequisites: | 
-  - TODO
+- Knowledge and experience of accessing Azure Portal.
+- Fundamental Azure Administration.
+- Knowledge of Azure Monitor and its Log Analytics workspace.
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
@@ -24,15 +26,16 @@ roles:
 - solution-architect
 products:
 - azure
+- azure sentinel
 units:
 - learn.azure.azure-sentinel-deploy-connect.1-introduction
-- learn.azure.azure-sentinel-deploy-connect.2-deployment-options
-- learn.azure.azure-sentinel-deploy-connect.3-permissions-roles
+- learn.azure.azure-sentinel-deploy-connect.2-consider-deployment-options
+- learn.azure.azure-sentinel-deploy-connect.3-describe-azure-sentinel-permissions-and-roles
 - learn.azure.azure-sentinel-deploy-connect.4-connect-data-sources
-- learn.azure.azure-sentinel-deploy-connect.5-data-connection-methods
+- learn.azure.azure-sentinel-deploy-connect.5-consider-data-connection-methods
 - learn.azure.azure-sentinel-deploy-connect.6-manage-logs
-- learn.azure.azure-sentinel-deploy-connect.7-deploy-demo
-- learn.azure.azure-sentinel-deploy-connect.8-knowledge-check
-- learn.azure.azure-sentinel-deploy-connect.9-summary
+- learn.azure.azure-sentinel-deploy-connect.7-deploy-azure-sentinel-and-connect-to-azure-active-directory
+- learn.azure.azure-sentinel-deploy-connect.8-summary
+- learn.azure.azure-sentinel-deploy-connect.9-knowledge-check
 badge:
   uid: learn.azure.azure-sentinel-deploy-connect.badge
