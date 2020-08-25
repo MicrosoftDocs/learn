@@ -99,7 +99,7 @@ You've now deployed and configured an auto-failover group for your AdventureWork
 
 ### Configure your command prompt applications
 
-In this section, you'll use two OStress workloads to check the `Updateability` (whether a database is in a `ReadWrite` or `ReadOnly` state) of the primary and secondary servers in your failover group. This scenario is intended to simulate an application for which you have read and write workloads.  
+In this section, you'll use two ostress workloads to check the `Updateability` (whether a database is in a `ReadWrite` or `ReadOnly` state) of the primary and secondary servers in your failover group. This scenario is intended to simulate an application for which you have read and write workloads.  
 
 1. Open two separate Command Prompt windows. Set up the windows so you can see this window (the browser) and both Command Prompt windows.  
 

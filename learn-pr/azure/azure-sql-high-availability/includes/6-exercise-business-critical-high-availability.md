@@ -1,15 +1,15 @@
 In this exercise, you'll upgrade your database to the Business critical tier. You'll see how it provides read replicas and increased performance.
 
-You'll use the OStress tool you used in the previous exercise to create a workload. You'll then initiate a failover by using the Azure PowerShell module in Azure Cloud Shell. Finally, you'll view the effect the failover has on the OStress workload.  
+You'll use the ostress tool you used in the previous exercise to create a workload. You'll then initiate a failover by using the Azure PowerShell module in Azure Cloud Shell. Finally, you'll view the effect the failover has on the ostress workload.  
 
 ## Basic high availability in the Azure SQL Business critical service tier
 
 In this exercise, you'll complete the following steps:
 
 1. Deploy the database from the previous exercise in the Business critical tier.
-1. Run the OStress workload.  
+1. Run the ostress workload.  
 1. Use PowerShell to initiate a failover.  
-1. View the results in OStress.  
+1. View the results in ostress.  
 1. Connect to a readable secondary.
 
 ## Deploy the same database in the Business critical tier
@@ -66,9 +66,9 @@ In a previous module of this learning path, you learned how to scale a database 
     > [!TIP]
     > There are many other ways to view these updates. One other way is by using SSMS. If you right-click your database and select **Properties** > **Configure SLO**, you can view the changes.  
 
-## Run the OStress workload
+## Run the ostress workload
 
-As in the previous exercise, you'll use OStress to repeatedly query your Azure SQL database.
+As in the previous exercise, you'll use ostress to repeatedly query your Azure SQL database.
 
 1. Open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command: 
 
@@ -76,9 +76,9 @@ As in the previous exercise, you'll use OStress to repeatedly query your Azure S
     cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability
     ```
 
-    The OStress workload connects and runs a simple query 50,000 times.
+    The ostress workload connects and runs a simple query 50,000 times.
 
-1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server. Replace `password` with your password. This command is slightly different from the one in the previous exercise. The database name is now `AdventureWorks-bc`.
+1. Use the following ostress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server. Replace `password` with your password. This command is slightly different from the one in the previous exercise. The database name is now `AdventureWorks-bc`.
 
     ```cmd
     .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks-bc" -P"password" -n1 -r50000
@@ -86,7 +86,7 @@ As in the previous exercise, you'll use OStress to repeatedly query your Azure S
 
     If your workload is running properly, you should see the result of the query, `847`, repeatedly appearing in the Command Prompt window.
 
-    If you want to stop running the OStress workload before it's done, you can select **Ctrl+C** in the terminal.  
+    If you want to stop running the ostress workload before it's done, you can select **Ctrl+C** in the terminal.  
 
     If you want to run the workload again, you can run the command again.  
 
