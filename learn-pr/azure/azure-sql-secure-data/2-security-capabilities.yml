@@ -33,10 +33,10 @@ quiz:
       choices:
       - content: "174.17.218.16"
         isCorrect: false
-        explanation: "This would be returned if firewall rules and/or Allow Azure Services are enabled."
+        explanation: "This would be returned if firewall rules and/or Allow Azure Services is enabled."
       - content: "10.0.0.2"
         isCorrect: true
-        explanation: "This will be returned if virtual network rules or private endpoint(s) are enabled."
+        explanation: "This will be returned if virtual network rules or private endpoints are enabled."
       - content: "Both IP addresses"
         isCorrect: false
         explanation: "Only one IP address will be returned."
