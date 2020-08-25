@@ -19,7 +19,7 @@ In addition to these main choices, you have the opportunity to block all public 
 
 #### Allow access to Azure services
 
-During the deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This option makes it easy to get up and running and get Azure SQL Database connected to other services, such as Azure Virtual Machines (VMs), Azure App Services, or even Azure Cloud Shell, because you're allowing anything that comes through Azure to have the potential to connect.
+During the deployment of Azure SQL Database, you have the option to set **Allow Azure services and resources access to this server** to **Yes**. If you choose this option, you're allowing any resource from any region or subscription the possibility to access your resource. This option makes it easy to get up and running and get Azure SQL Database connected to other services, such as Azure Virtual Machines, Azure App Service, or even Azure Cloud Shell, because you're allowing anything that comes through Azure to have the potential to connect.
 
 :::image type="content" source="../media/2-allow-access.png" alt-text="Diagram of allow access to Azure services." border="false":::
 
@@ -29,7 +29,7 @@ If you can switch **Allow Azure services and resources access to this server** t
 
 #### Firewall rules
 
-Your next option is to apply firewall rules. Your results might be similar to those of **Allow Azure services and resources access to this server** except that, for each service to connect (in the following image, a VM), you'll need to add a unique firewall rule to allow the VM to connect. Firewall rules also enable your on-premises environment, because you can add the rules for machines and applications in your on-premises environment.
+Your next option is to apply firewall rules. Your results might be similar to those of **Allow Azure services and resources access to this server** except that, for each service to connect (in the following image, a virtual machine [VM]), you'll need to add a unique firewall rule to allow the VM to connect. Firewall rules also enable your on-premises environment, because you can add the rules for machines and applications in your on-premises environment.
 
 :::image type="content" source="../media/2-firewall-rules.png" alt-text="Diagram of firewall rules." border="false":::
 
