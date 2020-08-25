@@ -1,5 +1,3 @@
-# Summary
-
 Our goal was to help you Evaluate the critical design areas for enterprise enrollment and Azure AD tenants, identity and access management, and management group and subscription organization.
 
 You learned:

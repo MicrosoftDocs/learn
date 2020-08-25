@@ -1,6 +1,6 @@
-# Enterprise-scale architecture design principles
+## Enterprise-scale architecture design principles
 
-Evaluate options for the following critical design areas:
+In this module we will evaluate options for the following critical design areas:
 
 - Enterprise enrollment and Azure AD tenants
 - Identity and access management
