@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.count-moon-rocks-python-nasa.6a-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Interactive questions that validate whether the learner achieved the learning objectives.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 4
+content: |
+  Answer the following questions to see what you've learned.
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How did we modify the rock count variables in the function we created?"
+    choices:
+    - content: "We passed them in as parameters."
+      isCorrect: false
+      explanation: "Incorrect. We made them global variables."
+    - content: "We made them global variables."
+      isCorrect: true
+      explanation: "Correct! This is how we modified our variables in the function."
+  - content: "How did we call the countMoonRocks function?"
+    choices:
+    - content: |
+        for rock in rockList:
+        countMoonRocks(rock)
+      isCorrect: true
+      explanation: "Correct! This is how we called the function."
+    - content: |
+        for rockList in rock:
+        countMoonRocks(rockList)
+      isCorrect: false
+      explanation: "We called the function with rock not rockList."
+    - content: |
+        while rock:
+        countMoonRocks(rock)
+      isCorrect: false
+      explanation: "We used a for loop, not a while loop."
+    - content: |
+        while rockList:
+        countMoonRocks(rock)
+      isCorrect: false
+      explanation: "We used a for loop, not a while loop."
+  - content: "What code did we call after we finished reading data from the rocks.txt file?"
+    choices:
+    - content: "`.finish()`"
+      isCorrect: false
+      explanation: "Close, but not correct."
+    - content: "`.close()`"
+      isCorrect: true
+      explanation: "Correct! This is what we called to close the file after we read data from it."
+    - content: "`.end`"
+      isCorrect: false
+      explanation: "Close, but not correct."
+    - content: "`.done()`"
+      isCorrect: false
+      explanation: "Close, but not correct."

@@ -7,6 +7,18 @@ You are now going to access the database to read actual product data.
 
 ## Instructions
 
+Our functions interact with a Cosmos DB database. Node.js supports Cosmos DB through an additional package.
+In your terminal, switch to the folder containing the functions project and execute the following command:
+
+`npm install @azure/cosmos`
+
+While we're already here, let's also add another Node.js package, that allows our functions app to read configuration parameters from either a local configuration file or from Azure's application settings.
+In your terminal, switch to the folder containing the functions project and execute the following command:
+
+`npm install @types/node`
+
+With the packages in place, we can now start accessing our data.
+
 - In Visual Studio Code, switch to the Azure tab in the sidebar
 - Expand the "Functions" pane and find `GetProduct` function
 - Right-click the function and select "Add binding"

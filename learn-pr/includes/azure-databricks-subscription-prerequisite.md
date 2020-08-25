@@ -1,4 +1,1 @@
   You'll need an Azure subscription. If you don't have an Azure subscription, create an [account](https://azure.microsoft.com/free/?azure-portal=true) and add a subscription before you begin. The *Azure free trial subscription* type will not work with Databricks, but the exercises can be completed for free using the Databricks *14 day free trial offer* on a *pay-as-you-go* subscription. Instructions for using the free trial offer are included in the exercises.
-
-> [!WARNING]
-> This module is based on a previous version of Databricks, and code may not run in the current environment. Updated content is being developed.

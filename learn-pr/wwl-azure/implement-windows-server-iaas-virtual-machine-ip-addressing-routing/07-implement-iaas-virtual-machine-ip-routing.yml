@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-windows-server-iaas-vm-ip-addressing-routing.implement-routing-iaas-virtual-machines
+title: Implement IaaS virtual machine IP routing
+metadata:
+  title: Implement IaaS virtual machine IP routing
+  description: "Implement IaaS virtual machine IP routing"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/07-implement-iaas-virtual-machine-ip-routing.md)]

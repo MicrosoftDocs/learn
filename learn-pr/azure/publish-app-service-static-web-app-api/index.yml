@@ -20,7 +20,7 @@ prerequisites: |
   - Familiarity with one of Angular, React, Svelte, or Vue
   - Beginner-level experience with Azure Functions
   - A GitHub account
-  - [Node.js and Git](https://nodejs.org/)
+  - [Node.js LTS and Git](https://nodejs.org/)
   - [Visual Studio Code](https://code.visualstudio.com/) installed
   - The [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
   - [The Azure Functions Core Tools](https://docs.microsoft.com/azure/azure-functions/functions-run-local) installed

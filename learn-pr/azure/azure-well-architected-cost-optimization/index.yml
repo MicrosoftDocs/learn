@@ -16,7 +16,7 @@ abstract:  |
     - Maximize the efficiency of your cloud environment
     - Provision resources that are optimized for cost
 prerequisites: |
-  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking.
+  - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
   - Experience building or operating technology systems to solve business problems
 iconUrl: /learn/achievements/azure-well-architected-cost-optimization.svg
 levels:

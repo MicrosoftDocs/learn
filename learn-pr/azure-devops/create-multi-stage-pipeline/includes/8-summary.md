@@ -23,7 +23,9 @@ In this module, you worked with conditions, triggers, and approvals. Explore the
 * [Build pipeline triggers](https://docs.microsoft.com/azure/devops/pipelines/build/triggers?view=azure-devops&tabs=yaml&azure-portal=true)
 * [Approvals and other checks](https://docs.microsoft.com/azure/devops/pipelines/process/approvals?view=azure-devops&azure-portal=true)
 
-## Explore additional build options
+## Appendix: Explore additional build options
+
+The following sections are optional. They provide additional information beyond what's covered in this module.
 
 Now that you're familiar with making your builds part of an automated pipeline, you might want to think about a few more possibilities.
 

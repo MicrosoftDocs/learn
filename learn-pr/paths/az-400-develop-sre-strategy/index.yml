@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.az-400-develop-sre-strategy
+metadata:
+  title: "AZ-400: Develop a Site Reliability Engineering (SRE) strategy"
+  description: "Sustainably achieve the appropriate level of reliability in your systems, services, and products and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+  brand: azure
+  ms.date: 06/25/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "AZ-400: Develop a Site Reliability Engineering (SRE) strategy"
+summary: |
+  Learn how Site Reliability Engineering enables you to sustainably achieve the appropriate level of reliability in your systems, services, and products.
+
+  Take this learning path to help prepare for [Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/learn/certifications/exams/az-400).
+prerequisites: None
+iconUrl: /learn/achievements/az-400-develop-sre-strategy.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- azure-monitor
+- azure-load-balancer
+- azure-virtual-machines
+modules:
+- learn.intro-to-site-reliability-engineering
+- learn.incident-response-with-alerting-on-azure
+- learn.azure.capture-application-logs-app-service
+- learn.azdo.manage-site-reliability
+- learn.cmu-cloud-admin.cmu-cloud-elasticity
+- learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud
+- troubleshoot-inbound-network-connectivity-azure-load-balancer
+- learn.azure.monitor-azure-vm-using-diagnostic-data
+trophy:
+  uid: az-400-develop-sre-strategy.trophy

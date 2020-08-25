@@ -17,12 +17,12 @@ In this task, we will create an IoT Hub.
 
 2. From the **All services** blade, search for and select **IoT Hub** and then click **+ Add**.
 
-3. On the **Basics** tab of the **IoT Hub** blade, fill in the fields with the following details (replace **xxxx** in the name of the storage account with letters and digits such that the name is globally unique):
+3. On the **Basics** tab of the **IoT Hub** blade, fill in the fields with the following details (replace **xxxx** in the name of the IoT Hub Name with letters and digits such that the name is globally unique):
 
     | Settings | Value |
     |--|--|
-    | Subscription | **Choose your subscription** |
-    | Resource Group |  **myRGIoT** (create new)|
+    | Subscription | **Choose the Concierge subscription** |
+    | Resource Group |  Choose **<rgn>[sandbox resource group name]</rgn>** |
     | Region | **East US** |
     | IoT Hub Name | **my-hub-groupxxxx** |
     | | |	
@@ -84,4 +84,6 @@ In this task, we will test our device using the Raspberry Pi Simulator.
 Congratulations! You have set up Azure IoT Hub to collect sensor data from an IoT device.
 
 > [!NOTE]
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

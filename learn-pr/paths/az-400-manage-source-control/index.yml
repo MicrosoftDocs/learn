@@ -1,0 +1,46 @@
+### YamlMime:LearningPath
+uid: learn.az-400-manage-source-control
+metadata:
+  title: "AZ-400: Manage source control"
+  description: "Use GitHub to build a modern source control strategy and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
+  brand: azure
+  ms.date: 06/25/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "AZ-400: Manage source control"
+summary: |
+  Learn how GitHub enables you to build a modern source control strategy that fosters collaboration and enables you to automate your build and deployment processes.
+
+  Take this learning path to help prepare for [Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions](https://docs.microsoft.com/learn/certifications/exams/az-400).
+prerequisites: None
+iconUrl: /learn/achievements/az-400-manage-source-control.svg
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- azure
+- github
+modules:
+- learn.github.introduction-to-github
+- learn.github.migrate-repository-github
+- learn.github.upload-project-github
+- learn.github.manage-changes-pull-requests-github
+- learn.github.merge-conflict-resolution-github
+- learn.github.search-organize-repository-history-github
+- learn.github.manage-innersource-program-github
+- learn.github.communicate-using-markdown
+- learn.github.maintain-secure-repository-github
+- learn.github.automate-devops-github-apps
+- learn.github.automate-github-using-github-script
+- learn.github.release-based-workflow-github
+- learn.github.github-actions-ci
+- learn.github.github-actions-cd
+- learn.azdo.implement-code-workflow
+trophy:
+  uid: az-400-manage-source-control.trophy

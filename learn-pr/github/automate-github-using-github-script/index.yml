@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.github.automate-github-using-github-script
+metadata:
+  title: "Automate GitHub by using GitHub Script"
+  description: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Automate GitHub by using GitHub Script"
+summary: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
+abstract: |
+  In this module, you will:
+  - Use GitHub Script in your workflow
+  - Comment on issues using octokit
+  - Add issues to a project board using octokit
+  - Use the workflow expression syntax to filter when jobs run in a workflow
+prerequisites: |
+  - A GitHub account
+  - The ability to navigate and edit files in GitHub
+  - Familiarity with GitHub Actions
+iconUrl: /learn/achievements/github/automate-github-using-github-script.svg
+ratingEnabled: true
+levels:
+- beginner
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+products:
+- github
+- azure
+units:
+- learn.github.automate-github-using-github-script.1-introduction
+- learn.github.automate-github-using-github-script.2-what-is-github-script
+- learn.github.automate-github-using-github-script.3-use-github-script
+- learn.github.automate-github-using-github-script.4-knowledge-check
+- learn.github.automate-github-using-github-script.5-summary
+badge:
+  uid: learn.github.automate-github-using-github-script.badge

@@ -29,18 +29,18 @@ In this task, we will configure Cloud Shell.
 
 In this task, we will use Azure CLI to create a resource group and a virtual machine.  
 
-1. Ensure you have a resource group [sandbox resource group name] and create a VM.
+1. Ensure you have a resource group <rgn>[sandbox resource group name]</rgn> and create a VM.
 
     ```cli
     az group list --output table
     ```
 
-2. Create a new virtual machine. Make sure that each line except for the last one is followed by the caret (`^`) character. If you type the whole command on the same line, do not use any backslash characters. 
+2. Create a new virtual machine. Make sure that each line except for the last one is followed by the backslash (`\`) character. If you type the whole command on the same line, do not use any backslash characters. 
 
     ```cli
     az vm create \
     --name myVMCLI \
-    --resource-group [sandbox resource group name] \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
     --image UbuntuLTS \
     --location EastUS \
     --admin-username azureuser \
@@ -61,19 +61,19 @@ In this task, we will practice executing CLI commands from the Cloud Shell.
 3. Retrieve information about the virtual machine you provisioned, including name, resource group, location, and status. Notice the PowerState is **running**.
 
     ```cli
-    az vm show --resource-group [sandbox resource group name] --name myVMCLI --show-details --output table 
+    az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVMCLI --show-details --output table 
     ```
 
 4. Stop the virtual machine. Notice the message that billing continues until the virtual machine is deallocated. 
 
     ```cli
-    az vm stop --resource-group [sandbox resource group name] --name myVMCLI
+    az vm stop --resource-group <rgn>[sandbox resource group name]</rgn> --name myVMCLI
     ```
 
 5. Verify your virtual machine status. The PowerState should now be **stopped**.
 
     ```cli
-    az vm show --resource-group [sandbox resource group name] --name myVMCLI --show-details --output table 
+    az vm show --resource-group <rgn>[sandbox resource group name]</rgn> --name myVMCLI --show-details --output table 
     ```
 
 ### Task 4: Review Azure Advisor Recommendations
@@ -107,4 +107,6 @@ In this task, we will review Azure Advisor recommendations.
 Congratulations! You have configured Cloud Shell, created a virtual machine using Azure CLI, practiced with Azure CLI commands, and viewed Advisor recommendations.
 
 > [!NOTE]
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

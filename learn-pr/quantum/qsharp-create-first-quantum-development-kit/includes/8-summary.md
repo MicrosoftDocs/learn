@@ -26,4 +26,4 @@ Once you're ready to dive deeper, you can [browse code samples](/samples/browse/
 
 To learn about real-world usage of the QDK, check out this blog post on Microsoft Quantum's collaboration with Pacific Northwest National Laboratory (PNNL), [Simulating nature with the new Microsoft Quantum Development Kit chemistry library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/?azure-portal=true).
 
-Be sure to [join the quantum community](/quantum/overview/how-to-learn-quantum-computing#join-the-quantum-community?azure-portal=true) if you have questions or want to contribute to Microsoft's many open source projects.
+Be sure to [join the quantum community](https://docs.microsoft.com/quantum/overview/understanding-quantum-computing) if you have questions or want to contribute to Microsoft's many open source projects.
