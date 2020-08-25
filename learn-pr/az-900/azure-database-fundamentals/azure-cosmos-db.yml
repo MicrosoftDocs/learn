@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-database-fundamentals.azure-cosmos-db
-title: Azure Cosmos DB Fundamentals
+title: Explore Azure Cosmos DB
 metadata:
-  title: Azure Cosmos DB Fundamentals
+  title: Explore Azure Cosmos DB
   description: In this unit, you'll learn the fundamentals about Azure Cosmos DB.
   ms.date: 09/15/2020
   author: rmcmurray

@@ -9,7 +9,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
 quiz:
@@ -22,24 +22,29 @@ quiz:
       explanation: "Azure Cosmos DB supports SQL, MongoDB, Cassandra, Tables, and Gremlin APIs."
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: ""
-    - content: "Azure Database for MySQL"
+    - content: "Azure Databricks"
       isCorrect: false
-      explanation: ""
-    - content: "Azure Database for PostgresSQL"
+    - content: "Azure Database for PostgreSQL"
       isCorrect: false
-      explanation: ""
   - content: "Tailwind Traders uses the LAMP stack for several of its websites. Which option would be ideal for migration?"
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: false
-      explanation: ""
     - content: "Azure SQL Database"
       isCorrect: false
-      explanation: ""
     - content: "Azure Database for MySQL"
       isCorrect: true
       explanation: "Azure Database for MySQL is the logical choice for existing LAMP stack applications."
-    - content: "Azure Database for PostgresSQL"
+    - content: "Azure Database for PostgreSQL"
       isCorrect: false
-      explanation: ""
+  - content: "Tailwind Traders millions of log entires that they would like to analyze. Which option would be ideal for analysis"
+    choices:
+    - content: "Azure Cosmos DB"
+      isCorrect: false
+    - content: "Azure SQL Database"
+      isCorrect: false
+    - content: "Azure Database for PostgreSQL"
+      isCorrect: false
+    - content: "Azure Synapse Analytics"
+      isCorrect: true
+      explanation: "Azure HDInsight is the logical choice for analyzing large volumes of data."

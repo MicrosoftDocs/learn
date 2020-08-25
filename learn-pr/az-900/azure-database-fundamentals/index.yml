@@ -1,35 +1,45 @@
 ### YamlMime:Module
 uid: learn.azure.azure-database-fundamentals
 metadata:
-  title: Azure Database Fundamentals
-  description: Learn about the database services that are available on Microsoft Azure - Azure Cosmos DB, Azure SQL, Azure Database for MySQL, and Azure Database for PostgresSQL.
+  title: Explore Azure database services
+  description: Learn about the database services that are available on Microsoft Azure: Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, as well as big data and analytics.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Azure Database Fundamentals
-summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, and Azure Database for PostgresSQL.
+title: Explore Azure database services
+summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, and Azure Database for PostgreSQL. In addition, you'll learn about several of Azure's big data and analysis sevices.
 abstract: | 
   Upon completion of this module, you'll be able to describe the benefits and usage of:
   - Azure Cosmos DB
   - Azure SQL Database
-  - Azure Database fo MySQL
-  - Azure Database for PostgresSQL
+  - Azure Database for MySQL
+  - Azure Database for PostgreSQL
+  - Azure Synapse Analytics
+  - Azure HDInsight
+  - Azure Databricks
+  - Azure Data Lake Analytics
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
   - Familiarity with cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/migrating-open-source-workloads-to-azure-dp0-70.svg
+  - Familiarity with basic database concepts and terminology
+iconUrl: /learn/achievements/azure-database-fundamentals.svg
 levels:
 - beginner
 roles:
 - administrator
 - solution-architect
 - developer
+- student
 products:
 - azure
 - azure-sql-database
 - azure-cosmos-db
+- azure-synapse-analytics
+- azure-hdinsight
+- azure-databricks
+- azure-data-lake
 units:
 - learn.azure.azure-database-fundamentals.introduction
 - learn.azure.azure-database-fundamentals.azure-cosmos-db
