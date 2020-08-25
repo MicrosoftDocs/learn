@@ -141,7 +141,7 @@ In this exercise, you'll complete these steps.
 
 First, let's confirm that the table we'll *accidentally* delete exists and has data in it. Let's look at some of the values in SalesLT.OrderDetail.  
 
-1. Go to SSMS and check/update your connection. Make sure the connection you use connects to the logical server but not to a specific database. (For example, use **\<default>** as shown in the following screenshot). Also, confirm that **Additional Connection Parameters** doesn't contain any text.  
+1. Go to SSMS and check/update your connection. Make sure the connection you use connects to the logical server but not to a specific database. (For example, use **\<default>** as shown in the following screenshot.) Also, confirm that **Additional Connection Parameters** doesn't contain any text.  
 
     :::image type="content" source="../media/3-default.png" alt-text="Screenshot that shows the default connection.":::
 
