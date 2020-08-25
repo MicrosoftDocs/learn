@@ -143,12 +143,12 @@ remaining* 15 patients.
 Here is a good way to visualize the setting. Each patient has a
 two-sided ticket:
 
-![Two-sided ticket](../media/causality1.png)
+![Two-sided ticket.](../media/causality1.png)
 
 After the randomization, we get to see the right half of a randomly
 selected set of tickets, and the left half of the remaining group.
 
-![Half-tickets](../media/causality2.png)
+![Half-tickets.](../media/causality2.png)
 
 The table `observed_outcomes` collects the information about every
 patient's potential outcomes, leaving the unobserved half of each
@@ -438,7 +438,7 @@ print('Empirical P-value:', round(empirical_P, 4) *100, '%')
 Observed Distance 0.475 Empirical P-value: 0.8500000000000001%
 ```
 
-![Causality example](../media/62-causality-30-1.png)
+![Causality example.](../media/62-causality-30-1.png)
 
 The study reports a P-value of 0.009, or 0.9%, which is not far from our
 empirical value.

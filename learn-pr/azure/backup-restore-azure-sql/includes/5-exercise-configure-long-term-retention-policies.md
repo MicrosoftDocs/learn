@@ -1,4 +1,4 @@
-Your retail organization must comply with data protection regulations in your jurisdiction. You need to keep all data for 2 years, and you want to keep one backup each month for 6 months. You've been asked to configure a long-term retention policy in Azure SQL Database to meet these requirements.
+Your retail organization must comply with data protection regulations in your jurisdiction. You've been asked to configure a long-term retention policy in Azure SQL Database to meet these requirements.
 
 Here, you'll use the Azure portal to set up a policy and then check it in PowerShell. You need to set up the following retention policy to meet your regulatory requirements:
 

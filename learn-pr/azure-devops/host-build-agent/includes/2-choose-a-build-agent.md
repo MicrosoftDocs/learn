@@ -22,13 +22,13 @@ Imagine that you have an Azure Pipelines project that receives build requests ma
 
 When a build is triggered, Azure Pipelines selects an available build agent from the pool. If all agents are busy, the process waits for one to become available.
 
-When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration that uses an Ubuntu 16.04 build agent:
+When you use a Microsoft-hosted agent, you specify the VM image to use from the pool. Here's an example from your existing build configuration that uses an Ubuntu 18.04 build agent:
 
 ```yml
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-18.04'
   demands:
-    - npm
+  - npm
 ```
 
 When you use a Microsoft-hosted agent, you use `vmImage` to specify which type of system you need. Microsoft provides many types of VM images, including ones that run Windows, macOS, and various flavors of Linux.
@@ -41,7 +41,7 @@ When you use a build agent from your own pool, also known as a _private pool_, y
 pool:
   name: 'MyAgentPool'
   demands:
-    - npm
+  - npm
 ```
 
 When you don't require a `demands` section, you can shorten the syntax like this:

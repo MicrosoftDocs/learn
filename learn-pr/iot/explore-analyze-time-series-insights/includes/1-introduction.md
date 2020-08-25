@@ -45,8 +45,3 @@ In the following units you'll go through these steps:
 - Set up an Azure IoT environment and execute code simulating the devices.
 - Set up a Time Series Insights environment and collect data from IoT Hub.
 - Create ad-hoc queries to explore data available
-
-> [!NOTE]
-> This module is targeting _Azure Time Series Insights Preview_. We will closely monitor 
-> the release of this version and update the content of this module accordingly.
-> Meanwhile, do not hesitate to report an issue with the link at the bottom of the page.

@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-your-migration-to-azure.4-migrate-servers
 metadata:
-  title: Migrate servers with Azure Site Recovery
-  description: Review Azure Site Recovery and see how to use it to migrate specific workloads to Azure.
+  title: Migrate servers with Azure Migrate
+  description: Review Azure Migrate and see how to use it to migrate specific workloads to Azure.
   ms.date: 07/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-title: Migrate servers with Azure Site Recovery
+title: Migrate servers with Azure Migrate
 durationInMinutes: 10
 content: |
   [!include[](includes/4-migrate-servers.md)]

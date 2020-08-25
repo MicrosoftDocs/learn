@@ -15,11 +15,11 @@ In this part, we'll use quantum-inspired optimization to solve the problem.
 
 Let's start by coming up with an equation for the weight of a given ship, which is the sum of all the containers on the ship. This sum is expressed in the following equation, where *w<sub>i</sub>* is the weight of container *i*:
 
-![Term](../media/example-1.png)
+![An equation that shows the sum of container weights](../media/example-1.png)
 
 Ideally, we want a solution where the weight difference between the ships is as small as possible.
 
-![Term](../media/example-2.png)
+![An equation that subtracts the total weights on one ship from the total weights on the other ship to produce a cost function](../media/example-2.png)
 
 This equation subtracts the sum of weights on ship _b_ from the sum of weights on ship _a_.
 
@@ -33,7 +33,7 @@ Because we can assign the container *i* to either ship, the variable *x<sub>i</s
 
 By introducing this variable *x<sub>i</sub>*, we can simplify the equation as follows:
 
-![Term](../media/example-3.png)
+![An equation that introduces a binary variable to simplify the calculation of the cost function](../media/example-3.png)
 
 ## Refine the problem again
 
@@ -41,7 +41,7 @@ There's one last change we need to make before we can solve our problem.
 
 If we look at our cost function *H*, there's a flaw: the solution with the least cost is to assign all containers to ship *b* by setting all of the *x<sub>i</sub>* variables equal to *-1*. But that's not correct! To fix this, we square the right-hand side of the equation to ensure that it cannot be negative.
 
-![Term](../media/example-4.png)
+![An equation that squares the previous computation to ensure that the cost function is not negative](../media/example-4.png)
 
 This final model gives us a cost function with the required properties.
 

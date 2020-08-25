@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ms-learn-live-foundations-serverless-dev.10-setup-cosmos-database
+
+title: Setup a Cosmos DB Instance
+
+metadata:
+  title: Setup a Cosmos DB Instance
+  description: Setup a Cosmos DB Instance
+  
+  ms.date: 04/29/2020
+  
+  author: krumelur
+
+  ms.author: renrup
+
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+azureSandbox: true
+interactive: bash
+
+durationInMinutes: 10
+
+content: |
+  [!include[](includes/10-setup-cosmos-database.md)]

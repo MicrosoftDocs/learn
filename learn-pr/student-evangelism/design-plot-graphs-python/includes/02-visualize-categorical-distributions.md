@@ -52,7 +52,7 @@ and the second is the column label of the frequencies.
 icecream.barh('Flavor', 'Number of Cartons')
 ```
 
-![png](../media/41-visualize-categorical-distributions-6-0.png)
+![Distribution of ice cream flavors](../media/41-visualize-categorical-distributions-6-0.png)
 
 If the table consists just of a column of categories and a column of
 frequencies, as in `icecream`, the method call is even simpler. You can
@@ -63,7 +63,7 @@ the values in the other column as frequencies.
 icecream.barh('Flavor')
 ```
 
-![png](../media/41-visualize-categorical-distributions-8-0.png)
+![Frequency of ice cream flavors](../media/41-visualize-categorical-distributions-8-0.png)
 
 ### Features of categorical distributions
 
@@ -95,7 +95,7 @@ then draw the bar chart.
 icecream.sort('Number of Cartons', descending=True).barh('Flavor')
 ```
 
-![png](../media/41-visualize-categorical-distributions-10-0.png)
+![Sorted distribution of ice cream flavors](../media/41-visualize-categorical-distributions-10-0.png)
 
 This bar chart contains exactly the same information as the previous
 ones, but it is a little easier to read. While this is not a huge gain
@@ -195,7 +195,7 @@ studio_distribution = movies_and_studios.group('Studio')
 studio_distribution.sort('count', descending=True).barh('Studio')
 ```
 
-![png](../media/41-visualize-categorical-distributions-19-0.png)
+![Number of movies per studio.](../media/41-visualize-categorical-distributions-19-0.png)
 
 Warner Brothers and Buena Vista are the most common studios among the
 top 200 movies. Warner Brothers produces the Harry Potter movies and
@@ -213,7 +213,7 @@ movies_and_years = top.select('Title', 'Year')
 movies_and_years.group('Year').sort('count', descending=True).barh('Year')
 ```
 
-![png](../media/41-visualize-categorical-distributions-22-0.png)
+![Distribution of top 200 movies by year of release.](../media/41-visualize-categorical-distributions-22-0.png)
 
 All of the longest bars correspond to years after 2000. This is
 consistent with our observation that recent years should be among the
@@ -237,7 +237,7 @@ So we will run the code without sorting by count.
 movies_and_years.group('Year').barh('Year')
 ```
 
-![png](../media/41-visualize-categorical-distributions-25-0.png)
+![Horizontal bar chart of movie counts per year.](../media/41-visualize-categorical-distributions-25-0.png)
 
 Now the years are in increasing order. But there is still something
 disquieting about this bar chart. The bars at 1921 and 1937 are just as
@@ -251,7 +251,4 @@ Bar charts are intended as visualizations of categorical variables. When
 the variable is numerical, the numerical relations between its values
 have to be taken into account when we create visualizations. That is the
 topic of the next section.
-intended as visualizations of categorical variables. When
-the variable is numerical, the numerical relations between its values
-have to be taken into account when we create visualizations. That is the
-topic of the next section.
+

@@ -277,7 +277,7 @@ rolls increases.
 results.scatter('Rolls')
 ```
 
-![png](../media/44-finding-probabilities-15-0.png)
+![Finding probabilities.](../media/44-finding-probabilities-15-0.png)
 
 In 50 rolls, you are almost certain to get at least one 6.
 

@@ -1,6 +1,6 @@
 Suppose you manage an online sales learning portal for your organization. The majority of your sales team is often in different geographical areas, so the online learning portal is an essential requirement. It's even more important as your organization continues to increase the skills and knowledge enhancement training for the sales staff.
 
-![An empty bag on a map of the world representing the need for a storage solution](../media/1-heading.png)
+:::image type="icon" source="../media/1-heading.png" border="false":::
 
 Your training data includes high-quality video, detailed sales simulations, and large repositories for maintaining student data and progress. Currently, all the training content is stored in your on-premises storage. You have an aggressive plan to add new courses and would like to avoid the need to continuously increase the local storage capacity.
 You're looking for a storage solution that is secure, durable, scalable, and easily accessible from across the globe.

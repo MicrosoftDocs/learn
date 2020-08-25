@@ -3,9 +3,9 @@
 
 If you haven't set up your online Visual Studio Codespaces environment for the Learning Path "Foundations of Data Science", refer to the first unit **Setup**
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open [Visual Studio Codespaces.](https://online.visualstudio.com/environments)
 
-[The Monty Hall problem](https://en.wikipedia.org/wiki/Monty_Hall_problem) has
+[The Monty Hall problem.](https://en.wikipedia.org/wiki/Monty_Hall_problem) has
 flummoxed many people over the years, [mathematicians
 included](https://web.archive.org/web/20140413131827/http://www.decisionsciences.org/DecisionLine/Vol30/30_1/vazs30_1.pdf).
 Let's see if we can work it out by simulation.
@@ -28,7 +28,7 @@ is, and has to attempt to find it under the following rules.
     its glory in
     [Wikipedia](https://en.wikipedia.org/wiki/Monty_Hall_problem):
 
-    ![Monty Hall goat](../media/monty-hall-goat.png)
+    ![Monty Hall goat.](../media/monty-hall-goat.png)
 
 - There are two doors left, one of which was the contestant's original
     choice. One of the doors has the car behind it, and the other one
@@ -268,7 +268,7 @@ combined
 combined.barh(0)
 ```
 
-![png](../media/49-monty-hall-problem-27-0.png)
+![Monty hall problem.](../media/49-monty-hall-problem-27-0.png)
 
 Notice how the three blue bars are almost equal--the original choice
 is equally likely to be any of the three available items. But the gold

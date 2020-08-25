@@ -14,7 +14,7 @@ To clean up your resource group:
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. From the menu, select Cloud Shell. When prompted, select the **Bash** experience.
 
-    ![Selecting Cloud Shell from the menu](../../shared/media/azure-portal-menu-cloud-shell.png)
+    ![Azure portal page showing selecting the Cloud Shell icon from the menu.](../../shared/media/azure-portal-menu-cloud-shell.png)
 
 1. Run the following `az group delete` command. This command deletes **tailspin-space-game-rg**, which is the resource group that you used in this module.
 
@@ -45,7 +45,7 @@ To complete the work item:
 1. In Azure DevOps, navigate to **Boards**. From the menu, select **Boards**.
 1. Move the **Connect the app to a database** work item from the **Doing** column to the **Done** column.
 
-    ![Azure Boards, showing the card in the Done column](../media/8-azure-boards-wi2-done.png)
+    ![Azure Boards showing the card in the Done column.](../media/8-azure-boards-wi2-done.png)
 
 ## Disable the pipeline or delete your project
 
@@ -55,24 +55,21 @@ Running multiple templates gives you multiple Azure Pipelines projects. Each pro
 
 Choose one of the following options.
 
-### Option 1 - Disable the pipeline
+### Option 1: Disable the pipeline
 
 Disable the pipeline so that it doesn't process further build requests. You can re-enable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and your build pipeline for future reference.
 
 To disable the pipeline:
 
 1. In Azure Pipelines, navigate to your pipeline.
-1. Select **Edit**.
+1. From the drop-down menu, select **Settings**:
 
-    ![Azure Pipelines, showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. From the menu in the upper corner, select **Settings**.
-
-    ![Azure Pipelines, showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
-1. Under **Processing of new run requests**, select **Disabled**. Then select **Save**.
+    ![The Settings menu option in Azure Pipelines.](../../shared/media/azure-pipelines-settings-button.png)
+1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
 
-### Option 2 - Delete the Azure DevOps project
+### Option 2: Delete the Azure DevOps project
 
 Delete your Azure DevOps project, including the contents of Azure Boards and your build pipeline. In future modules, you can run another template that brings up a new project in a state where this project leaves off. Choose this option if you don't need your DevOps project for future reference.
 
@@ -83,10 +80,10 @@ To delete the project:
 
     The icon might not appear until you move your mouse over that area.
 
-    ![Azure DevOps, showing the gear icon](../../shared/media/azure-devops-project-gear.png)
+    ![Azure DevOps showing the gear icon.](../../shared/media/azure-devops-project-gear.png)
 1. At the bottom of the **Project details** area, select **Delete**.
 
-    ![Azure DevOps, showing the Delete button to delete your project](../../shared/media/azure-devops-delete-project.png)
+    ![Azure DevOps showing the Delete button to delete your project.](../../shared/media/azure-devops-delete-project.png)
 1. In the window that appears, enter the project name. Select **Delete** again.
 
     Your project is now deleted.

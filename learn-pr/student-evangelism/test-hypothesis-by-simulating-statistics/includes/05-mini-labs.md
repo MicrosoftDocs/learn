@@ -3,7 +3,7 @@
 
 For convenience, you can launch your VS Codespaces environment by clicking the link below:
 
-Open [Visual Studio Codespaces](https://online.visualstudio.com/environments)
+Open [Visual Studio Codespaces.](https://online.visualstudio.com/environments)
 
 In your online Visual Studio Codespaces environment, you'll find "mini lab" Jupyter notebooks that will allow you to apply the concepts that you've learned from this module. You'll be able to code your solutions in the notebook directly and receive real-time feedback from our autograder by running the corresponding grader cells.
 
@@ -15,4 +15,4 @@ To access the mini labs for this module, you'll need to do the following:
 
 Here is what the mini-lab should look like in your virtual environment:
 
-![codespace example](../media/codespaces-example.png)
+![Visual Studio Codespace example.](../media/codespaces-example.png)

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-core-data-concepts.identify-types-of-data-data-storage
+title: Identify types of data and data storage
+metadata:
+  title: Identify types of data and data storage
+  description: "Identify types of data and data storage"
+  ms.date: 08/24/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/3-identify-types-storage.md)]

@@ -59,7 +59,7 @@ Let's say you want to find a Resource Manager template that brings up a basic VM
 
     * The resource's type is `Microsoft.Compute/virtualMachines`.
     * It's location, or Azure region, comes from the template parameter named `location`.
-    * The VM's size is **Standard_A2**.
+    * The VM's size comes from the template variable `vmSize`.
     * The computer name is read from a template variable and the username and password for the VM are read from template parameters.
 
 In practice, you might review the **README.md** file on GitHub and further inspect the source code to see whether this template suits your needs.

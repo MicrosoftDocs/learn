@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.reactors.text-classification-naive-bayes
+metadata:
+  title: Text classification for Naive Bayes
+  description: Use conditional probability and Bayes classification to analyze an email dataset for spam and ham.
+  ms.date: 06/30/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-python
+  show_latex: true
+  hidden: true
+title: Text classification for Naive Bayes
+summary: Learn how to use conditional probability and Bayes classification to analyze an actual dataset of email messages. You'll learn how to use and apply these machine learning principles as you analyze an email dataset for spam and ham.
+abstract:  | 
+  In this module, you will:
+  - Learn the strengths and limitations of conditional probability and Naive Bayes machine learning.
+  - Use pandas to evaluate a dataset of email messages for spam or ham.
+  - Use Matplotlib to generate a word cloud, and then use Natural Language Toolkit and scikit-learn for deeper analysis of the data.
+  - Use the Naive Bayes classifier to classify the data in a spam dataset and improve the accuracy of a machine learning model.
+  This is complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Introduction to Python for data science
+  
+iconUrl: /learn/achievements/reactors/text-classification-naive-bayes.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.text-classification-naive-bayes.1-introduction
+- learn.reactors.text-classification-naive-bayes.2-conditional-probability-bayes
+- learn.reactors.text-classification-naive-bayes.3-import-dataset
+- learn.reactors.text-classification-naive-bayes.4-explore-data
+- learn.reactors.text-classification-naive-bayes.5-prepare-data
+- learn.reactors.text-classification-naive-bayes.6-train-model
+- learn.reactors.text-classification-naive-bayes.7-explore-more
+badge:
+  uid: learn.reactors.text-classification-naive-bayes.badge 

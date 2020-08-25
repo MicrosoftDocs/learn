@@ -2,6 +2,64 @@ Before Andy and Amita run their tests in the pipeline, they want to verify that 
 
 Writing automated tests is an iterative process, just like writing any other type of code. For your own apps, you'll likely need to try a few approaches, refer to reference documentation and example code, and fix build errors.
 
+## Optional: Install the Selenium driver for Microsoft Edge
+
+Follow this part if you want to see the tests run locally on Edge.
+
+The NuGet package for Chrome and Firefox installs driver software under the *bin* directory, alongside the compiled test code. For Edge, you need to manually install the driver. To do so:
+
+1. Install [Microsoft Edge](https://www.microsoft.com/edge?azure-portal=true).
+1. Open Edge and navigate to `edge://settings/help`. Note the version number.
+
+    ![A screenshot of the Microsoft Edge setting page, showing the version number.](https://docs.microsoft.com/microsoft-edge/media/webdriver-chromium/edge-version.png)
+
+1. Navigate to the [Microsoft Edge Driver downloads](https://developer.microsoft.com/microsoft-edge/tools/webdriver/#downloads?azure-portal=true) page and download the driver that matches the Edge version number.
+
+    ![The Downloads section of the Microsoft Edge Driver page.](https://docs.microsoft.com/microsoft-edge/media/webdriver-chromium/edge-driver-install.png)
+
+1. Extract the *.zip* file to the *bin/Release/netcoreapp3.1* directory under your project's *Tailspin.SpaceGame.Web.UITests* directory. Create these directories if they don't exist.
+
+On macOS, you may need to update your system policy to allow **msedgedriver** to run. To do so, in Visual Studio Code, run the following `spctl` command from the terminal:
+
+```bash
+spctl --add Tailspin.SpaceGame.Web.UITests/bin/Release/netcoreapp3.1/msedgedriver
+```
+
+## Export environment variables
+
+Later in this module, you'll run Selenium tests on Windows Server 2019. The 
+[documentation](https://github.com/actions/virtual-environments/blob/master/images/win/Windows2019-Readme.md?azure-portal=true) lists the software that's preinstalled for you.
+
+The section **Selenium Web Drivers** lists the Selenium driver versions that are available for Chrome, Firefox, and Edge. Here's an example:
+
+![A screenshot showing the documentation for the installed Selenium drivers on the build agent.](../media/6-readme-selenium-drivers.png)
+
+For each driver, you see the environment variable that maps to the location of that driver. For example, `ChromeWebDriver` maps to the location of the Chrome driver.
+
+The unit tests code is already set up to read these environment variables. These variables tell Selenium where to find the driver executable files. To run the unit tests locally, you need to export these same environment variables.
+
+From Visual Studio Code, go to the terminal. Then run these commands. Replace the path shown with the full path to your **mslearn-tailspin-spacegame-web-deploy** project:
+
+# [Windows](#tab/export-windows)
+
+```bash
+driverDir="C:\Users\user\mslearn-tailspin-spacegame-web-deploy\Tailspin.SpaceGame.Web.UITests\bin\Release\netcoreapp3.1"
+export ChromeWebDriver=$driverDir
+export EdgeWebDriver=$driverDir
+export GeckoWebDriver=$driverDir
+```
+
+# [macOS](#tab/export-macos)
+
+```bash
+driverDir="/Users/user/mslearn-tailspin-spacegame-web-deploy/Tailspin.SpaceGame.Web.UITests/bin/Release/netcoreapp3.1"
+export ChromeWebDriver=$driverDir
+export EdgeWebDriver=$driverDir
+export GeckoWebDriver=$driverDir
+```
+
+---
+
 ## Run the UI tests locally
 
 The `Setup` method in *HomePageTest.cs* navigates to the _Space Game_ home page after it sets the `driver` member variable.
@@ -21,7 +79,7 @@ Because you haven't yet deployed the _Space Game_ website to your App Service en
 To run the tests locally:
 
 1. In Visual Studio Code, open the integrated terminal.
-1. From the terminal, ensure that you're in your project's root directory. The location of this directory depends on where you cloned it locally. Here's an example:
+1. From the terminal, ensure that you're in your project's root directory. Here's an example:
 
     ```bash
     cd ~/mslearn-tailspin-spacegame-web-deploy
@@ -46,7 +104,8 @@ To run the tests locally:
     As the tests run, one or more browsers appear. Selenium controls each browser and follows the test steps that you defined.
 
     > [!NOTE]
-    > Don't worry if all three browsers don't appear. For example, you won't see the tests run on Chrome if you don't have Chrome installed. You also won't see the Internet Explorer tests run on macOS or Linux. Seeing just one browser will help give you confidence that your tests are working. In practice, in your local development environment, you might want to set up all browsers that you want to test against. This setup will allow you to verify that your tests behave as expected in each configuration before you run your tests in the pipeline.
+    > Don't worry if all three browsers don't appear. For example, you won't see the tests run on Chrome if you don't have Chrome installed or have an incompatible version. Seeing just one browser will help give you confidence that your tests are working. In practice, in your local development environment, you might want to set up all browsers that you want to test against. This setup will allow you to verify that your tests behave as expected in each configuration before you run your tests in the pipeline.
+
 1. From the terminal, trace the output of each test. Also note the test-run summary at the end.
 
     This example shows that out of nine tests, six succeeded and three were skipped:
@@ -56,7 +115,7 @@ To run the tests locally:
     Total tests: 9
          Passed: 6
         Skipped: 3
-     Total time: 12.5375 Seconds
+     Total time: 1.8257 Seconds
     ```
 
 ## Add the SITE_URL variable to Azure Pipelines
@@ -69,7 +128,7 @@ Let's add the pipeline variable now, before you update your pipeline configurati
 1. Under **Pipelines**, select **Library**.
 1. Select the **Release** variable group.
 1. Under **Variables**, select **+ Add**.
-1. For the name of your variable, enter *SITE_URL*. As its value, enter the URL of the App Service instance that corresponds to your **test** environment, such as **http:\//tailspin-space-game-web-dev-10529.azurewebsites.net**.
+1. For the name of your variable, enter *SITE_URL*. As its value, enter the URL of the App Service instance that corresponds to your **test** environment, such as **http:\//tailspin-space-game-web-test-10529.azurewebsites.net**.
 1. Near the top of the page, select **Save** to save your variable to the pipeline.
 
     Your variable group resembles this one:
@@ -126,9 +185,9 @@ Here you watch the pipeline run. The pipeline runs the Selenium UI tests during 
     You see that the deployment and the UI tests finished successfully.
 1. Near the top of the page, note the summary.
 
-    You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests** section, which shows that the Selenium tests have passed.
+    You see that the build artifact for the _Space Game_ website is published just like always. Also note the **Tests and coverage** section, which shows that the Selenium tests have passed.
 
-    ![Azure Pipelines, showing the test summary](../media/6-build-summary-tests.png)
+    ![Azure Pipelines, showing the test summary](../../shared/media/azure-pipelines-build-summary-tests.png)
 
 1. Select the test summary to see the full report.
 

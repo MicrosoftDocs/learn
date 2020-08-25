@@ -111,43 +111,6 @@ Update the **Orders** collection to index none of the properties.
 
     You see that the consumption of this query without an index is about 10 to 11 RUs. The consumption depends on which property is in the query and how long it takes to find it in the collection. For example, if we run a query for a customer `State` instead of `OrderStatus`, the search consumes more RUs.
 
-## Measure RUs for lazy indexing
-
-In the previous exercises, the index is set to **consistent** so it's updated synchronously. In this exercise, we set the indexing mode to **lazy**. The index is updated when the collection isn't being used.
-
-1. Update the Orders collection to lazy index on all properties.
-
-    ```azurecli
-    az cosmosdb sql container update \
-        --resource-group <rgn>[sandbox resource group name]</rgn> \
-        --account-name $COSMOS_NAME \
-        --database-name mslearn \
-        --name Orders \
-        --idx @IndexConfig/index-lazy-all.json
-    ```
-
-1. Measure the consumption of adding a document with lazy indexing.
-
-    ```bash
-    dotnet run -- -c Orders -o InsertDocument -n 1 -r
-    ```
-
-    Review the output of this command. The write took about 5 RUs.
-
-   The RUs used are about the same as writing to an unindexed collection. With lazy indexing, the index isn't updated immediately.
-
-1. Now measure the consumption of querying a collection with lazy indexing.
-
-    Run a query on the `Item.id` value of the document that you just added.
-
-    ```bash
-    dotnet run -- -c Orders -o QueryCollection -q "SELECT TOP 1 * FROM c WHERE c.Item.id='<Item id value>'"
-    ```
-
-    You see that this query takes about 3 RUs.
-
-    The RUs that the query consumes are low because the collection index isn't immediately updated. The lazy configuration works well for a collection that isn't used at capacity all the time.
-
 ## Compare RUs across indexing strategies
 
 The following table summarizes the results you've gotten in previous exercises. These results apply to read, query, and insert operations for 1 KB of data that's within a single partition.

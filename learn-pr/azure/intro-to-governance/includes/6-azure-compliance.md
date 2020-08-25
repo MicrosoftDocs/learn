@@ -25,7 +25,7 @@ There is a link to the privacy statement in the summary of this module.
 - Cross-company document search, which is coming soon and will enable existing cloud service customers to search the Service Trust Portal.
 - Direct guidance and support for when you can't find what you're looking for.
 
-![Screenshot of the Trust Center website](../media/6-trustcenter.png)
+![Screenshot of the Trust Center website.](../media/6-trustcenter.png)
 
 ## What is the Service Trust Portal?
 
@@ -55,7 +55,7 @@ Service Trust Portal is a companion feature to the Trust Center, and allows you 
 
 ## Compliance Manager
 
-**Compliance Manager** is a workflow-based risk assessment dashboard within the Service Trust Portal that enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services such as Office 365, Dynamics 365, and Azure.
+**Compliance Manager** is a workflow-based risk assessment dashboard within the Service Trust Portal that enables you to track, assign, and verify your organization's regulatory compliance activities related to Microsoft professional services and Microsoft cloud services such as Microsoft 365, Dynamics 365, and Azure.
 
 Compliance Manager provides the following features:
 
@@ -68,7 +68,7 @@ Compliance Manager provides the following features:
 - Provides a secure repository in which to upload and manage evidence and other artifacts related to compliance activities.
 - Produces richly detailed reports in Microsoft Excel that document the compliance activities performed by Microsoft and your organization, which can be provided to auditors, regulators, and other compliance stakeholders.
 
-:::image type="content" source="../media/6-compliancemanager.png" alt-text="Screenshot showing Compliance Manager website." loc-scope="other":::
+:::image type="content" source="../media/6-compliancemanager.png" alt-text="Screenshot showing Compliance Manager website with a set of three sample assessments." loc-scope="other":::
 
 Compliance Manager provides ongoing risk assessments with a reference of risk-based scores for regulations and standards displayed in a dashboard view. Alternatively, you can create assessments for the regulations or standards that matter more to your organization.
 

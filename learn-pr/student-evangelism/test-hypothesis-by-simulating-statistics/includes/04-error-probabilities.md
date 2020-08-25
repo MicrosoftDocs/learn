@@ -69,7 +69,7 @@ results.hist(bins = np.arange(0, 101, 5))
 plots.plot([45, 45], [0, 0.035], color='gold', lw=2);
 ```
 
-![probabilities example](../media/59-error-probabilities-4-0.png)
+![Probabilities example.](../media/59-error-probabilities-4-0.png)
 
 The area to the right of 45 (where the gold line is) is about 5%. Large
 values of the test statistic favor the alternative. So if the test

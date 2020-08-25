@@ -45,7 +45,7 @@ You can filter the leaderboard by any combination of game type and game map.
 
 This test queries the leaderboard for high scores and verifies that each result matches the provided game map.
 
-In an NUnit test method, `TestCase` provides inline data to use to test that method. Here, NUnit calls the `FetchOnlyRequestedGameRegion` unit test method like this:
+In an NUnit test method, `TestCase`, provides inline data to use to test that method. Here, NUnit calls the `FetchOnlyRequestedGameRegion` unit test method like this:
 
 ```csharp
 FetchOnlyRequestedGameRegion("Milky Way");
@@ -71,7 +71,7 @@ You might read this line as:
 
 Here's the process to follow:
 
-1. Fetch a branch from the Microsoft GitHub repository that contains the unit tests.
+1. Fetch a branch from the GitHub repository that contains the unit tests.
 1. Run the tests locally to verify that they pass.
 1. Add tasks to your pipeline configuration to run the tests and collect the results.
 1. Push the branch to your GitHub repository.
@@ -120,9 +120,12 @@ It's a good idea to run all tests locally before you submit any tests to the pip
     ```output
     Starting test execution, please wait...
 
-    Total tests: 5. Passed: 5. Failed: 0. Skipped: 0.
+    A total of 1 test files matched the specified pattern.
+
     Test Run Successful.
-    Test execution time: 1.0939 Seconds
+    Total tests: 5
+         Passed: 5
+     Total time: 0.9320 Seconds
     ```
 
     In this example, the tests took about one second to run.
@@ -187,9 +190,6 @@ Here you see the tests run in the pipeline and then visualize the results from M
     ![Screenshot of Azure Pipelines showing console output from running unit tests.](../media/4-pipeline-task.png)
 
 1. Navigate back to the pipeline summary.
-
-    ![Screenshot of Azure Pipelines showing the pipeline summary pane with "100% passed" result and Tests tab highlighted.](../media/4-pipeline-summary-tests-tab.png)
-
 1. Move to the **Tests** tab.
 
     You see a summary of the test run. All five tests have passed.

@@ -77,7 +77,7 @@ Error prevention should be provided for legal or financial transactions. One opt
 
 People who use screen readers may navigate a web page by viewing a list of the web page\'s links.
 
-If several links on a web page have the same name but point to different URL's, people may become confused. Ensure link names are meaningful, unique, and descriptive, whether in or out of context.
+If several links on a web page have the same name but point to different URLs, people may become confused. Ensure link names are meaningful, unique, and descriptive, whether in or out of context.
 
 If generic, non-descriptive link names appear out of context, such as in an "Additional Resources" list, a person who is using a screen reader will not have any context or understanding as to what the link is or why
 it has been provided. These examples show a list with generic, inaccessible link names, and a list with accessible, descriptive link names.
@@ -120,11 +120,11 @@ code by adding a blank alt attribute.
 
 Figure 5. Example of image and decorative border
 
-**Accessible example:**
+**Inaccessible example:**
 
 \<img src=\"border.gif\" /\>
 
-**Inaccessible example:**
+**Accessible example:**
 
 \<img src=\"border.gif\" alt=\"\" /\>
 

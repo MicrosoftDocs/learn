@@ -1,0 +1,55 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-monitoring.6-log-analytics
+title: "Log analytics and KQL queries"
+metadata:
+  title: "Log analytics and KQL queries"
+  description: "Log analytics and KQL queries"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-log-analytics.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What language do you write log analytics queries in?'
+    choices:
+    - content: 'JavaScript'
+      isCorrect: false
+      explanation: 'Queries are written in Kusto Query Language (KQL).'
+    - content: 'Python'
+      isCorrect: false
+      explanation: 'Queries are written in Kusto Query Language (KQL).'
+    - content: 'Kusto Query Language (KQL)'
+      isCorrect: true
+      explanation: 'Correct, queries are written in KQL.'
+
+  - content: 'What does KQL stand for?'
+    choices:
+    - content: 'Kusto Query Language'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'Kusto Question Language'
+      isCorrect: false
+      explanation: 'KQL is a query language and has the word query in the name.'
+    - content: 'KQL is not an acronym'
+      isCorrect: false
+      explanation: 'KQL is indeed an acronym for Kusto Query Language'
+
+  - content: 'Where is data in Log Analytics stored and queried from in most KQL queries?'
+    choices:
+      - content: 'databases'
+        isCorrect: false
+        explanation: 'Data is stored in tables.'
+      - content: 'documents'
+        isCorrect: false
+        explanation: 'Data is stored in tables.'
+      - content: 'tables'
+        isCorrect: true
+        explanation: 'Correct, most KQL queries start with a table as a data source.'
+
+

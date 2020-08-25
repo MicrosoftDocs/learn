@@ -1,19 +1,19 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.introduction-ai-for-business-users
 metadata:
-  title: Introduction to AI for business users 
+  title: 'Introduction to AI for business users '
   description: Learn how to use machine learning in your organization with this online free course in Microsoft Business School
-  ms.date: 06/02/2020
+  ms.date: 08/05/2020
   author: wwlpublish
-  ms.author: v-admene
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to AI for business users 
+title: Introduction to AI for business users
 prerequisites: |
   None
 summary: |
   To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/introduction-ai-for-business-users.svg
 levels:
 - beginner
 roles:

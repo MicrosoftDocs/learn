@@ -56,7 +56,7 @@ heights
 heights.scatter('MidParent')
 ```
 
-![png](../media/75-prediction-5-0.png)
+![Scatterplot of midparent height.](../media/75-prediction-5-0.png)
 
 The primary reason for collecting the data was to be able to predict the
 adult height of a child born to parents similar to those in the dataset.
@@ -100,7 +100,7 @@ heights_with_predictions = heights.with_column(
 heights_with_predictions.scatter('MidParent')
 ```
 
-![prediction example](../media/75-prediction-10-0.png)
+![Scatterplot of midparent height predictions.](../media/75-prediction-10-0.png)
 
 The prediction at a given midparent height lies roughly at the center of
 the vertical strip of points at the given height. This method of
@@ -184,7 +184,7 @@ the horizontal.
 hybrid.scatter('acceleration', 'msrp')
 ```
 
-![Correlation Example](../media/76-correlation-7-0.png)
+![Scatterplot of acceleration and msrp.](../media/76-correlation-7-0.png)
 
 Notice the positive association. The scatter of points is sloping
 upwards, indicating that cars with greater acceleration tended to cost
@@ -201,7 +201,7 @@ scatter plot showed, those were also the cars that tended to cost more.
 hybrid.scatter('mpg', 'msrp')
 ```
 
-![Correlation Example](../media/76-correlation-9-0.png)
+![Scatterplot of mpg and msrp.](../media/76-correlation-9-0.png)
 
 Along with the negative association, the scatter diagram of price versus
 efficiency shows a non-linear relation between the two variables. The
@@ -217,13 +217,13 @@ suv = hybrid.where('class', 'SUV')
 suv.scatter('mpg', 'msrp')
 ```
 
-![correlation example](../media/76-correlation-11-0.png)
+![Scatterplto of mpg and msrp.](../media/76-correlation-11-0.png)
 
 ``` python
 suv.scatter('acceleration', 'msrp')
 ```
 
-![correlation example](../media/76-correlation-12-0.png)
+![Scatterplot of acceleration and msrp.](../media/76-correlation-12-0.png)
 
 You will have noticed that we can derive useful information from the
 general orientation and shape of a scatter diagram even without paying
@@ -254,7 +254,7 @@ plots.xlim(-3, 3)
 plots.ylim(-3, 3);
 ```
 
-![correlation example](../media/76-correlation-16-0.png)
+![Correlation example.](../media/76-correlation-16-0.png)
 
 ``` python
 Table().with_columns(
@@ -265,7 +265,7 @@ plots.xlim(-3, 3)
 plots.ylim(-3, 3);
 ```
 
-![correlation example](../media/76-correlation-17-0.png)
+![Correlation example.](../media/76-correlation-17-0.png)
 
 The associations that we see in these figures are the same as those we
 saw before. Also, because the two scatter diagrams are now drawn on
@@ -310,25 +310,25 @@ and the variables are said to be *uncorrelated*.
 r_scatter(0.9)
 ```
 
-![correlation example](../media/76-correlation-21-0.png)
+![scatterplot when r is 0.9](../media/76-correlation-21-0.png)
 
 ``` python
 r_scatter(0.25)
 ```
 
-![correlation](../media/76-correlation-22-0.png)
+![scatterplot when r is 0.25](../media/76-correlation-22-0.png)
 
 ``` python
 r_scatter(0)
 ```
 
-![correlation example](../media/76-correlation-23-0.png)
+![scatterplot when r is 0](../media/76-correlation-23-0.png)
 
 ``` python
 r_scatter(-0.55)
 ```
 
-![correlation example](../media/76-correlation-24-0.png)
+![scatterplot when r is -0.55](../media/76-correlation-24-0.png)
 
 ### Calculating $r$
 
@@ -374,7 +374,7 @@ not equal to 1.
 t.scatter(0, 1, s=30, color='red')
 ```
 
-![correlation example](../media/76-correlation-28-0.png)
+![scatterplot example.](../media/76-correlation-28-0.png)
 
 **Step 1.** Convert each variable to standard units.
 
@@ -449,7 +449,7 @@ The calculation shows that:
 t.scatter('y', 'x', s=30, color='red')
 ```
 
-![correlation examples](../media/76-correlation-37-0.png)
+![scatterplot of y and x.](../media/76-correlation-37-0.png)
 
 ### The `correlation` function
 
@@ -545,7 +545,7 @@ nonlinear = Table().with_columns(
 nonlinear.scatter('x', 'y', s=30, color='r')
 ```
 
-![correlation example](../media/76-correlation-51-0.png)
+![nonlinear scatterplot example.](../media/76-correlation-51-0.png)
 
 ``` python
 correlation(nonlinear, 'x', 'y')
@@ -567,7 +567,7 @@ line = Table().with_columns(
 line.scatter('x', 'y', s=30, color='r')
 ```
 
-![correlation example](../media/76-correlation-54-0.png)
+![outliers.](../media/76-correlation-54-0.png)
 
 ``` python
 correlation(line, 'x', 'y')
@@ -586,7 +586,7 @@ outlier = Table().with_columns(
 outlier.scatter('x', 'y', s=30, color='r')
 ```
 
-![png](../media/76-correlation-56-0.png)
+![outlier examples.](../media/76-correlation-56-0.png)
 
 ``` python
 correlation(outlier, 'x', 'y')
@@ -636,7 +636,7 @@ to 0.985.
 sat2014.scatter('Critical Reading', 'Math')
 ```
 
-![correlation example](../media/76-correlation-61-0.png)
+![2014 SAT scores scatterplot.](../media/76-correlation-61-0.png)
 
 ``` python
 correlation(sat2014, 'Critical Reading', 'Math')
@@ -684,14 +684,14 @@ from IPython.display import Image
 Image("../../../images/chocoNobel.png")
 ```
 
-![correlation example](../media/76-correlation-65-0.png)
+![choconobel](../media/76-correlation-65-0.png)
 
 ``` python
 from IPython.display import Image
 Image("../media/choco-nobel.png")
 ```
 
-![correlation example](../media/76-correlation-65-0.png)
+![choconobel](../media/76-correlation-65-0.png)
 
 ## Learning objectives
 

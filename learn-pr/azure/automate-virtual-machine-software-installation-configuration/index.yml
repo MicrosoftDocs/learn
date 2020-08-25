@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.automate-virtual-machine-software-installation-configuration
+metadata:
+  title: Automate the installation and configuration of software in your Virtual Machines
+  description: Learn how to automate the installation and configuration of software in your Azure Virtual Machines.
+  ms.date: 05/15/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Automate the installation and configuration of software in your Virtual Machines
+summary: Learn how to use the cross-platform Azure CLI to create a virtual machine in Azure, and use a custom script to install and configure a web server. Automate the installation of PHP and the creation of a dynamic home page, then use a web browser to test your installation.
+abstract: | 
+  In this module, you'll learn how to:
+  - Automate the creation of a Windows or Linux virtual machine
+  - Automate the installation and configuration of web server software on your virtual machine
+  - Connect to your virtual machine using a web browser to verify your installation
+prerequisites: | 
+  - Basic understanding of Azure Virtual Machines
+  - Experience using command-line tools to automate tasks
+iconUrl: /learn/achievements/automate-virtual-machine-software-installation-configuration.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+products:
+- azure
+- azure-virtual-machines
+- azure-clis
+units:
+- learn.azure.automate-virtual-machine-software-installation-configuration.introduction
+- learn.azure.automate-virtual-machine-software-installation-configuration.automate-installation-virtual-machine
+- learn.azure.automate-virtual-machine-software-installation-configuration.exercise-automate-installation-virtual-machine
+- learn.azure.automate-virtual-machine-software-installation-configuration.automate-configuration-web-server
+- learn.azure.automate-virtual-machine-software-installation-configuration.exercise-automate-configuration-web-server
+- learn.azure.automate-virtual-machine-software-installation-configuration.knowledge-check
+- learn.azure.automate-virtual-machine-software-installation-configuration.summary
+badge:
+  uid: learn.azure.automate-virtual-machine-software-installation-configuration.badge

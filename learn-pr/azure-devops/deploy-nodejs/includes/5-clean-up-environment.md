@@ -18,7 +18,7 @@ To clean up your resource group:
 
 1. Run the following `az group delete` command to delete the resource group that you used, `nodejs-cicd-rg`.
 
-    ```bash
+    ```azurecli
     az group delete --name nodejs-cicd-rg
     ```
 
@@ -26,7 +26,7 @@ To clean up your resource group:
 
 1. As an optional step, after the previous command finishes, run the following `az group list` command.
 
-    ```bash
+    ```azurecli
     az group list --output table
     ```
 
@@ -38,24 +38,21 @@ This project is configured to automatically run the pipeline each time you push 
 
 You can leave the project as it is for future reference. If you prefer, choose one of the following options to disable or delete the pipeline now.
 
-### Option 1 - Disable the pipeline
+### Option 1: Disable the pipeline
 
 Disable the pipeline so that it doesn't process build requests. You can re-enable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and your build pipeline for future reference.
 
 To disable the pipeline:
 
 1. In Azure Pipelines, navigate to your pipeline.
-1. Select **Edit**.
+1. From the drop-down menu, select **Settings**:
 
-    ![Azure Pipelines, showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. From the menu in the upper corner, select **Settings**.
-
-    ![Azure Pipelines, showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
-1. Under **Processing of new run requests**, select **Disabled** > **Save**.
+    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
 
-### Option 2 - Delete the Azure DevOps project
+### Option 2: Delete the Azure DevOps project
 
 Delete your Azure DevOps project, including the build pipeline. Choose this option if you don't need your DevOps project for future reference.
 

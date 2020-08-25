@@ -21,7 +21,6 @@ summary: |
     - Add logic to your code to enable complex business functionality
   
   Once you complete this learning path, you will have a great foundation to build upon in subsequent Python Learning Paths.
-cardDescription: Interested in learning a programming language but aren't sure where to start?  Start here!
 prerequisites: None
 iconUrl: /learn/achievements/python-first-steps.svg
 levels:
@@ -29,7 +28,7 @@ levels:
 roles:
 - developer
 products:
-- dotnet
+- vs-code
 modules:
 - learn.languages.python-introduction
 - learn.languages.python-install-vscode

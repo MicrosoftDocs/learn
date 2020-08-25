@@ -1,4 +1,4 @@
-There's no "easy button" for security and no solution that solves all your problems from a security perspective. Let's imagine you work for an organization has neglected security in its environment. The company has realized it needs to put some major focus in this area. They are not exactly sure where to start, or if it’s possible to just buy a solution to make the environment secure. The company knows it needs a holistic approach but is unsure what really fits into that. Here, we'll identify key concepts of defense in depth, identify key security technologies and approaches to support a defense in depth strategy, and discuss how to apply these concepts when architecting your own Azure services.
+There's no "easy button" for security and no solution that solves all your problems from a security perspective. Let's imagine you work for an organization that has neglected security in its environment. The company has realized it needs to put some major focus in this area. They are not exactly sure where to start, or if it’s possible to just buy a solution to make the environment secure. The company knows it needs a holistic approach but is unsure what really fits into that. Here, we'll identify key concepts of defense in depth, identify key security technologies and approaches to support a defense in depth strategy, and discuss how to apply these concepts when architecting your own Azure services.
 
 ## Zero Trust model
 
@@ -30,7 +30,7 @@ In almost all cases, attackers are after data:
 
 - Stored in a database
 - Stored on disk inside virtual machines
-- Stored on a SaaS application such as Office 365
+- Stored on a SaaS application such as Microsoft 365
 - Stored in cloud storage
 
 It's the responsibility of those storing and controlling access to data to ensure that it's properly secured. Often there are regulatory requirements that dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.

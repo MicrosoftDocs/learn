@@ -47,7 +47,7 @@ cell count.
 ckd.scatter('White Blood Cell Count', 'Glucose', group='Color')
 ```
 
-![Training and testing data](../media/89-training-testing-7-0.png)
+![Scatterplot of White Blood Cell Count and Glucose.](../media/89-training-testing-7-0.png)
 
 Earlier, we said that we expect to get some classifications wrong,
 because there's some intermingling of blue and gold points in the
@@ -126,7 +126,7 @@ plt.xlim(-2, 6)
 plt.ylim(-2, 6);
 ```
 
-![Training and testing data](../media/89-training-testing-13-0.png)
+![Scatterplot of white blood cell count and glucose.](../media/89-training-testing-13-0.png)
 
 We get the following classification regions and decision boundary:
 
@@ -159,7 +159,7 @@ plt.xlim(-2, 6)
 plt.ylim(-2, 6);
 ```
 
-![Training and testing data](../media/89-training-testing-17-0.png)
+![Test grid of classes.](../media/89-training-testing-17-0.png)
 
 Place the *test* data on this graph and you can see at once that while
 the classifier got almost all the points right, there are some mistakes.
@@ -177,7 +177,7 @@ plt.xlim(-2, 6)
 plt.ylim(-2, 6);
 ```
 
-![Error in training](../media/89-training-testing-19-0.png)
+![Error in training.](../media/89-training-testing-19-0.png)
 
 Some errors notwithstanding, it looks like the classifier does fairly
 well on the test set. Assuming that the original sample was drawn

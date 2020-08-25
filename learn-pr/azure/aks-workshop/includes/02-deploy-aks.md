@@ -23,7 +23,7 @@ You'll first need to create a resource group for your resources to deploy into.
     > [!div class="nextstepaction"]
     > [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true)
 
-1. We're going to reuse some values throughout the deployment scripts. For example, you need to choose a region where you want to create a resource group, for example, **East US**. If you select a different value, remember it for the rest of the exercises in this module. You may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
+1. We're going to reuse some values throughout the deployment scripts. For example, you need to choose a region where you want to create a resource group, such as **East US**. If you select a different value, remember it for the rest of the exercises in this module. You may need to redefine the value between Cloud Shell sessions. Run the following commands to record these values in Bash variables.
 
     ```azurecli
     REGION_NAME=eastus
@@ -73,7 +73,7 @@ Let's create the virtual network for your AKS cluster. We will use this virtual 
         --name $VNET_NAME \
         --address-prefixes 10.0.0.0/8 \
         --subnet-name $SUBNET_NAME \
-        --subnet-prefix 10.240.0.0/16
+        --subnet-prefixes 10.240.0.0/16
     ```
 
 1. Next, retrieve, and store the subnet ID in a Bash variable by running the command below.
@@ -118,6 +118,7 @@ With the new virtual network in place, you can go ahead and create your new clus
     --resource-group $RESOURCE_GROUP \
     --name $AKS_CLUSTER_NAME \
     --vm-set-type VirtualMachineScaleSets \
+    --node-count 2 \
     --load-balancer-sku standard \
     --location $REGION_NAME \
     --kubernetes-version $VERSION \
@@ -138,6 +139,8 @@ With the new virtual network in place, you can go ahead and create your new clus
     Note the following deployment configuration:
 
     - `--vm-set-type`: We're specifying that the cluster is created by using virtual machine scale sets. The virtual machine scale sets enable you to switch on the cluster autoscaler when needed.
+    
+    - `--node-count`: We're specifying that the cluster is created with two nodes. The default node count is three nodes. However, if you're running this exercise using a free trial account, cluster creation may fail due to quota limits if left at the default setting.
 
     - `--network-plugin`: We're specifying the creation of the AKS cluster by using the CNI plug-in.
 

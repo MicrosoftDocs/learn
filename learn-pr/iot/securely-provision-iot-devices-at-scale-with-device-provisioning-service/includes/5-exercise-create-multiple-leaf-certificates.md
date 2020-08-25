@@ -6,6 +6,7 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
     ```azurecli
      ./certGen.sh create_device_certificate cheesecave-device1
+
     ```
 
 1. Verify the leaf certificate was created correctly. You should see numerous console messages, ending in something like the following image.
@@ -16,9 +17,10 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
     ```azurecli
     download ~/certificates/certs/new-device.cert.pfx
+
     ```
 
-1. Copy the **new-device.cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device.cert1.pfx**.
+1. Copy the **new-device.cert.pfx** file from its downloaded location, in your `Downloads` folder, into the **cheese cave certs** folder, and rename it **new-device.cert1.pfx**.
 
 1. In the Cloud Shell, delete the **new-device.cert** files. This step is important so the tools can be used to create further certificates. You can delete the file, in the **certificates/certs** folder, by going through the following procedure:
     1. Type `cd certs`.
@@ -30,6 +32,7 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
     ```azurecli
      ./certGen.sh create_device_certificate cheesecave-device2
+
     ```
 
 1. If you get a `Permission denied` response, similar to the following, verify you've deleted the earlier certificates correctly.
@@ -40,6 +43,7 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
     ```azurecli
     download ~/certificates/certs/new-device.cert.pfx
+
     ```
 
 1. Copy the **new-device.cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device.cert2.pfx**.
@@ -54,12 +58,14 @@ In this unit, we need to create one leaf certificate for each device that we wan
 
     ```azurecli
      ./certGen.sh create_device_certificate cheesecave-device3
+
     ```
 
 1. Download the third certificate to your local machine, enter:
 
     ```azurecli
     download ~/certificates/certs/new-device.cert.pfx
+
     ```
 
 1. Copy the **new-device.cert.pfx** file from its downloaded location into the **cheese cave certs** folder, and rename it **new-device.cert3.pfx**.

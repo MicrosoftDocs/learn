@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.implement-cicd-iot-edge.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
+  ms.date: 06/19/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-edge
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-introduction.md)]

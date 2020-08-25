@@ -32,9 +32,9 @@ In this section, you modify the build configuration to switch from using a Micro
 
     ```yml
     pool:
-      vmImage: 'ubuntu-16.04'
+      vmImage: 'ubuntu-18.04'
       demands:
-        - npm
+      - npm
     ```
 
 1. Modify the `pool` section, as shown here:
@@ -43,7 +43,7 @@ In this section, you modify the build configuration to switch from using a Micro
     pool:
       name: 'MyAgentPool'
       demands:
-        - npm
+      - npm
     ```
 
     This version uses `name` to specify your agent pool, *MyAgentPool*. It maintains the `demands` section to specify that the build agent must have npm, the Node.js package manager, installed.
@@ -65,7 +65,7 @@ Watch the build run in the pipeline by using your build agent.
 1. Select **Builds**, and then select the running build.
 1. Trace the build through each of the steps.
 
-    You can see that the build has succeeded by using your build agent from your agent pool.
+    From the **Initialize job** task, you see that the build uses your build agent.
 
     ![Azure Pipelines showing the private agent running the build](../media/5-build-results-private-pool.png)
 
@@ -84,6 +84,6 @@ As an optional step, you can remove the build pool configuration from Azure DevO
 1. Under **Pipelines**, select **Agent pools**.
 
     ![Locating Agent pools in the menu](../media/4-project-settings-agent-pools.png)
-1. Under **MyAgentPool**. select the pool entry, select the trash can icon, and then select **Delete**.
+1. Under **MyAgentPool**, select the trash can icon, and then select **Delete**.
 
     ![Azure DevOps showing where to delete the private agent](../media/5-agent-pools-delete-agent.png)

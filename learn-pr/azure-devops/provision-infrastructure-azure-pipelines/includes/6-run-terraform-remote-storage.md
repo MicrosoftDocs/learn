@@ -192,7 +192,7 @@ terraform {
 }
 ```
 
-To specify your Blob storage account in this `backend` block, you can modify your plan like this:
+To specify your Blob storage account in this `backend` block, you can modify your plan like this (don't make this change just yet):
 
 ```terraform
 terraform {
@@ -382,7 +382,7 @@ During the process, you collect information about your service principal that yo
     echo $ARM_TENANT_ID
     ```
 
-    Each value is a GUID, or a long series of letters and numbers.
+    Each value is a GUID or a long series of letters and numbers.
 
 1. Export the variables so that Terraform can access them.
 

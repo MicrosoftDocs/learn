@@ -109,7 +109,7 @@ ckd.scatter('Hemoglobin', 'Glucose', group='Color')
 plots.scatter(alice.item(0), alice.item(1), color='red', s=30);
 ```
 
-![rows and tables](../media/90-rows-tables-12-0.png)
+![Alice scatterplot example.](../media/90-rows-tables-12-0.png)
 
 To find the distance between Alice's point and any of the other points,
 we only need the values of the attributes:
@@ -436,7 +436,7 @@ plots.xlim(-2, 2.5)
 plots.ylim(-2, 2.5);
 ```
 
-![rows and tables](../media/90-rows-tables-49-0.png)
+![Alice scatterplot example.](../media/90-rows-tables-49-0.png)
 
 We are well on our way to implementing our k-nearest neighbor
 classifier. In the next two sections we will put it together and assess

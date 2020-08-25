@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-failure.4-components
+title: "Characteristics and components of a good post-incident review"
+metadata:
+  title: "Characteristics and components of a good post-incident review"
+  description: "Characteristics and components of a good post-incident review"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-components.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What is the primary purpose of a post-incident review?'
+    choices:
+    - content: 'to pinpoint who is to blame for the failure'
+      isCorrect: false
+      explanation: 'Blaming and shaming will not create an environment conducive to improvement.'
+    - content: 'to create a punch list of items to be repaired'
+      isCorrect: false
+      explanation: 'While a secondary goal might be to create a list of action items, the primary purposes is to learn and improve.'
+    - content: 'to learn and improve'
+      isCorrect: true
+      explanation: 'Correct.'     
+
+  - content: 'Is it possible to fire your way to reliability?'
+    choices:
+    - content: 'yes'
+      isCorrect: false
+      explanation: 'It is not possible, it will only lead to an empty team.'
+    - content: 'no'
+      isCorrect: true
+      explanation: 'Correct.'
+
+  - content: 'What should a post-incident review focus on?'
+    choices:
+    - content: 'deficits in process and technology'
+      isCorrect: false
+      explanation: 'The focus needs to be on all of these items.'
+    - content: 'better understanding of the system we work within'
+      isCorrect: false
+      explanation: 'The focus needs to be on all of these items.'
+    - content: 'hearing the different perspectives people have about the same incident'
+      isCorrect: false
+      explanation: 'The focus needs to be on all of these items.'
+    - content: 'all of the above'
+      isCorrect: true
+      explanation: 'Correct, The focus needs to be on all of these items.'

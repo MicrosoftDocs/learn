@@ -20,7 +20,7 @@ united.hist('Delay', bins = delay_bins, unit = 'minute')
 plots.title('Population');
 ```
 
-![png](../media/53-empirical-distribution-statistic-3-0.png)
+![Empirical distribution statistic example.](../media/53-empirical-distribution-statistic-3-0.png)
 
 ``` python
 sample_1000 = united.sample(1000)
@@ -28,7 +28,7 @@ sample_1000.hist('Delay', bins = delay_bins, unit = 'minute')
 plots.title('Sample of Size 1000');
 ```
 
-![png](../media/53-empirical-distribution-statistic-4-0.png)
+![Empirical distribution statistic example.](../media/53-empirical-distribution-statistic-4-0.png)
 
 The two histograms clearly resemble each other, though they are not
 identical.
@@ -210,7 +210,7 @@ displays the *empirical distribution* of the statistic. Remember that
 simulated_medians.hist(bins=np.arange(0.5, 5, 1))
 ```
 
-![png](../media/53-empirical-distribution-statistic-26-0.png)
+![Simulated medians.](../media/53-empirical-distribution-statistic-26-0.png)
 
 You can see that the sample median is very likely to be about 2, which
 was the value of the population median. Since samples of 1000 flight

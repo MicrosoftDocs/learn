@@ -198,7 +198,7 @@ heights of all the points in the scatter plot and are more variable.
 scatter_fit(heights, 'MidParent', 'Child')
 ```
 
-![diagnostic example](../media/81-numerical-diagnostics-23-0.png)
+![Scatter fit of midparent and child heights.](../media/81-numerical-diagnostics-23-0.png)
 
 The fitted values range from about 64 to about 71, whereas the heights
 of all the children are quite a bit more variable, ranging from about 55

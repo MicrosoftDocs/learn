@@ -117,3 +117,43 @@ achievements:
   title: Design for security in Azure
   summary: Design for security in Azure
   iconUrl: /learn/achievements/design-for-security-in-azure.svg
+- uid: learn.data-ai.convert-speech-to-text.badge
+  type: badge
+  title: Transcribe speech in real time with Azure Cognitive Services
+  summary: Transcribe speech in real time with Azure Cognitive Services
+  iconUrl: /learn/achievements/data-ai/convert-speech-to-text.svg
+- uid: learn.data-ai.translate-speech-with-speech-services.trophy
+  type: trophy
+  title: Process and translate speech with Azure Cognitive Speech Services
+  summary: Process and translate speech with Azure Cognitive Speech Services
+  iconUrl: /learn/achievements/data-ai/translate-speech-with-speech-services.svg
+- uid: learn.introduction-to-classification.badge
+  type: badge
+  title: Predict categories with machine learning classification
+  summary: Predict categories with machine learning classification
+  iconUrl: /learn/achievements/introduction-to-classification.svg
+- uid: learn.unsupervised-learning.badge
+  type: badge
+  title: Use unsupervised learning to analyze unlabeled data
+  summary: Use unsupervised learning to analyze unlabeled data
+  iconUrl: /learn/achievements/introduction-to-unsupervised-learning.svg
+- uid: learn.deep-learning.badge
+  type: badge
+  title: Use deep learning models to make predictions about specialized data
+  summary: Use deep learning models to make predictions about specialized data
+  iconUrl: /learn/achievements/introduction-to-deep-learning.svg
+- uid: learn.neural-networks.badge
+  type: badge
+  title: Make predictions from complex data with neural networks
+  summary: Make predictions from complex data with neural networks
+  iconUrl: /learn/achievements/introduction-to-neural-networks.svg
+- uid: learn.ml-crash-course.trophy
+  type: trophy
+  title: Machine learning crash course
+  summary: Machine learning crash course
+  iconUrl: /learn/achievements/ml-crash-course.svg
+- uid: learn.introduction-to-regression.badge
+  type: badge
+  title: Predict numeric values with regression
+  summary: Predict numeric values with regression
+  iconUrl: /learn/achievements/introduction-to-regression.svg

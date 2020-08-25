@@ -1,8 +1,6 @@
 In this section, you help Andy and Amita write Selenium tests that verify the UI behaviors that Amita described.
 
-Although Amita normally runs tests on Chrome, Firefox, and Microsoft Edge, you'll set up tests that run on Chrome, Firefox, and Internet Explorer. For learning purposes, we choose these browsers because the Microsoft-hosted agent that you'll use is preconfigured to work with them. It doesn't yet support Microsoft Edge.
-
-You can check out [Use a Microsoft-hosted agent](https://docs.microsoft.com/azure/devops/pipelines/agents/hosted?view=azure-devops&azure-portal=true#use-a-microsoft-hosted-agent) to see the types and capabilities of agents that Microsoft hosts. In practice, you can install additional software on your agent. Or provide your own agent that's preinstalled with the software you need.
+Amita normally runs tests on Chrome, Firefox, and Microsoft Edge. Here, you do the same. The Microsoft-hosted agent that you'll use is preconfigured to work with each of these browsers.
 
 ## Fetch the branch from GitHub
 
@@ -64,7 +62,7 @@ This diagram shows the `IWebDriver` interface and a few of the classes that impl
 
 The diagram shows three of the methods that `IWebDriver` provides: `Navigate`, `FindElement`, and `Close`.
 
-The three classes shown here, `ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver`, each implement `IWebDriver` and its methods. There are other classes, such as `SafariDriver`, that also implement `IWebDriver`. Each driver class can control the web browser that it represents.
+The three classes shown here, `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver`, each implement `IWebDriver` and its methods. There are other classes, such as `SafariDriver`, that also implement `IWebDriver`. Each driver class can control the web browser that it represents.
 
 Andy adds a member variable named `driver` to the `HomePageTest` class, like this:
 
@@ -77,14 +75,14 @@ public class HomePageTest
 
 ### Define the test fixtures
 
-**Andy:** We want to run the entire set of tests on Chrome, Firefox, and Internet Explorer. In NUnit, we can use _test fixtures_ to run the entire set of tests multiple times, one time for each browser that we want to test on.
+**Andy:** We want to run the entire set of tests on Chrome, Firefox, and Edge. In NUnit, we can use _test fixtures_ to run the entire set of tests multiple times, one time for each browser that we want to test on.
 
 In NUnit, you use the `TestFixture` attribute to define your test fixtures. Andy adds these three test fixtures to the `HomePageTest` class:
 
 ```cs
 [TestFixture("Chrome")]
 [TestFixture("Firefox")]
-[TestFixture("IE")]
+[TestFixture("Edge")]
 public class HomePageTest
 {
     private IWebDriver driver;
@@ -96,7 +94,7 @@ public class HomePageTest
 ```cs
 [TestFixture("Chrome")]
 [TestFixture("Firefox")]
-[TestFixture("IE")]
+[TestFixture("Edge")]
 public class HomePageTest
 {
     private string browser;
@@ -113,7 +111,7 @@ public class HomePageTest
 
 ### Define the Setup method
 
-**Andy:** Next we need to assign our `IWebDriver` member variable to a class instance that implements this interface for the browser we're testing on. The `ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver` classes implement this interface for Chrome, Firefox, and Internet Explorer, respectively.
+**Andy:** Next we need to assign our `IWebDriver` member variable to a class instance that implements this interface for the browser we're testing on. The `ChromeDriver`, `FirefoxDriver`, and `EdgeDriver` classes implement this interface for Chrome, Firefox, and Edge, respectively.
 
 Let's create a method, named `Setup`, that sets the `driver` variable. We use the `OneTimeSetUp` attribute to tell NUnit to run this method one time per test fixture.
 
@@ -127,27 +125,36 @@ public void Setup()
 In the `Setup` method, we can use a `switch` statement to assign the `driver` member variable to the appropriate concrete implementation, based on the browser name. Let's add that code now.
 
 ```cs
-// The NuGet package for each browser installs driver software
-// in the bin directory, alongside the compiled test code.
-// This tells the driver class where to find the underlying driver software.
-var cwd = Environment.CurrentDirectory;
-
 // Create the driver for the current browser.
 switch(browser)
 {
     case "Chrome":
-        driver = new ChromeDriver(cwd);
-        break;
+    driver = new ChromeDriver(
+        Environment.GetEnvironmentVariable("ChromeWebDriver")
+    );
+    break;
     case "Firefox":
-        driver = new FirefoxDriver(cwd);
-        break;
-    case "IE":
-        driver = new InternetExplorerDriver(cwd);
-        break;
+    driver = new FirefoxDriver(
+        Environment.GetEnvironmentVariable("GeckoWebDriver")
+    );
+    break;
+    case "Edge":
+    driver = new EdgeDriver(
+        Environment.GetEnvironmentVariable("EdgeWebDriver"),
+        new EdgeOptions
+        {
+            UseChromium = true
+        }
+    );
+    break;
     default:
-        throw new ArgumentException($"'{browser}': Unknown browser");
+    throw new ArgumentException($"'{browser}': Unknown browser");
 }
 ```
+
+The constructor for each driver class takes an optional path to the driver software Selenium needs to control the web browser. Later, we'll discuss the role of the environment variables shown here.
+
+In this example, the `EdgeDriver` constructor also requires additional options to specify that we want to use the Chromium version of Edge.
 
 ### Define the helper methods
 
@@ -194,7 +201,7 @@ private IWebElement FindElement(By locator, IWebElement parent = null, int timeo
 
 **Andy:** Next let's write a helper method that clicks links. Selenium provides a few ways to write that method. One of them is the `IJavaScriptExecutor` interface. With it, we can programmatically click links by using JavaScript. This approach works well because it can click links without first scrolling them into view.
 
-`ChromeDriver`, `FirefoxDriver`, and `InternetExplorerDriver` each implement `IJavaScriptExecutor`. We need to cast the driver to this interface and then call `ExecuteScript` to run the JavaScript `click()` method on the underlying HTML object.
+`ChromeDriver`, `FirefoxDriver`, and `EdgeDriver` each implement `IJavaScriptExecutor`. We need to cast the driver to this interface and then call `ExecuteScript` to run the JavaScript `click()` method on the underlying HTML object.
 
 Andy and Amita code up the `ClickElement` helper method. It looks like this:
 
@@ -262,7 +269,7 @@ public void ClickLinkById_ShouldDisplayModalById(string linkId, string modalId)
     {
         // Click the close button that's part of the modal.
         ClickElement(FindElement(By.ClassName("close"), modal));
-        
+
         // Wait for the modal to close and for the main page to again be clickable.
         FindElement(By.TagName("body"));
     }

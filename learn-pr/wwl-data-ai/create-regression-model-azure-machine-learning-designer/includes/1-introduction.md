@@ -1,4 +1,4 @@
-*Regression* is a form of machine learning that is used to predict a numeric *label* based on an item's *features*. For example, an automobile sales company company might use the characteristics of car (such as engine size, number of seats, mileage, and so on) to predict its likely selling price. In this case, the characteristics of the car are the features, and the selling price is the label.
+*Regression* is a form of machine learning that is used to predict a numeric *label* based on an item's *features*. For example, an automobile sales company might use the characteristics of car (such as engine size, number of seats, mileage, and so on) to predict its likely selling price. In this case, the characteristics of the car are the features, and the selling price is the label.
 
 > [!div class="centered"]
 > ![A car priced at $9,999](../media/automobile.png)
@@ -13,4 +13,4 @@ In this module, you'll learn how to:
 - Use a regression model for inferencing.
 - Deploy a regression model as a service.
 
-To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
+To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true). 

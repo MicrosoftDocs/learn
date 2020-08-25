@@ -92,7 +92,7 @@ label of the column on the vertical.
 actors.scatter('Number of Movies', 'Total Gross')
 ```
 
-![png](../media/40-visualization-8-0.png)
+![Scatter plot of number of movies and total gross.](../media/40-visualization-8-0.png)
 
 The plot contains 50 points, one point for each actor in the table. You
 can see that it slopes upwards, in general. The more movies an actor has
@@ -119,7 +119,7 @@ the *average* gross receipt per movie.
 actors.scatter('Number of Movies', 'Average per Movie')
 ```
 
-![png](../media/40-visualization-11-0.png)
+![Scatter plot of number of movies against the average gross receipt per movie.](../media/40-visualization-11-0.png)
 
 This is a markedly different picture and shows a *negative* association.
 In general, the more movies an actor has been in, the *less* the average
@@ -142,7 +142,7 @@ no_outlier = actors.where('Number of Movies', are.above(10))
 no_outlier.scatter('Number of Movies', 'Average per Movie')
 ```
 
-![png](../media/40-visualization-14-0.png)
+![Average gross per movie for actors that have appeared in more than 10 movies.](../media/40-visualization-14-0.png)
 
 The negative association is still clearly visible. Let's identify the
 actors corresponding to the points that lie on the right-hand side of
@@ -252,7 +252,7 @@ movies released each year over the years 1980 through 2015.
 movies_by_year.plot('Year', 'Number of Movies')
 ```
 
-![png](../media/40-visualization-23-0.png)
+![Number of movies released per year from 1980 to 2015.](../media/40-visualization-23-0.png)
 
 The graph rises sharply and then has a gentle upwards trend though the
 numbers vary noticeably from year to year. The sharp rise in the early
@@ -271,7 +271,7 @@ century_21 = movies_by_year.where('Year', are.above(1999))
 century_21.plot('Year', 'Number of Movies')
 ```
 
-![png](../media/40-visualization-26-0.png)
+![Number of movies released per year from 2000 to 2015.](../media/40-visualization-26-0.png)
 
 The global financial crisis of 2008 has a visible effect--in 2009
 there is a sharp drop in the number of movies released.
@@ -282,7 +282,7 @@ The dollar figures, however, didn't suffer much.
 century_21.plot('Year', 'Total Gross')
 ```
 
-![png](../media/40-visualization-28-0.png)
+![Total movie gross per year from 2000 to 2015.](../media/40-visualization-28-0.png)
 
 The total domestic gross receipt was higher in 2009 than in 2008, even
 though there was a financial crisis and a much smaller number of movies

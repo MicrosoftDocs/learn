@@ -404,4 +404,4 @@ gender imbalance in favor of women among senior citizens.
 ratios.plot('AGE')
 ```
 
-![Example Gender Ratios US](../media/30-example-gender-ratio-us-population-34-0.png)
+![Example gender ratios in the United States.](../media/30-example-gender-ratio-us-population-34-0.png)

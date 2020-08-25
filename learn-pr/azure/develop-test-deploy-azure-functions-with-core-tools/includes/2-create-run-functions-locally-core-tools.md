@@ -77,6 +77,6 @@ Functions aren't programs that can be run on their own: they must be hosted by t
 
 You can use the Core Tools to run your own instance of the functions host and try out your functions locally before you publish them. By running your functions before publishing them, you can make sure your configuration and code loads correctly and test out your functions by making real HTTP calls to them without the need for Azure resources.
 
-To start the functions host locally, run `func start` from a functions project folder. At the end of the output, the Core Tools will display local URLs you can use to call of each of your functions. While the host is running, you can use any tools or libraries that make HTTP calls, like `curl`, to interact with your functions. The Core Tools will write any log output produced by the host to the terminal in real time.
+To start the functions host locally, run `func start` from a functions project folder. At the end of the output, the Core Tools will display local URLs you can use to call each of your functions. While the host is running, you can use any tools or libraries that make HTTP calls, like `curl`, to interact with your functions. The Core Tools will write any log output produced by the host to the terminal in real time.
 
 :::image type="content" source="../media/2-func-start-output.png" alt-text="func start output showing a function invocation URL." loc-scope="other":::

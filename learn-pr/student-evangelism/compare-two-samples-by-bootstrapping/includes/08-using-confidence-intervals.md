@@ -30,7 +30,7 @@ baby = Table.read_table(path_data + 'baby.csv')
 baby.select('Maternal Age').hist()
 ```
 
-![Confidence Interval Example](../media/67-using-confidence-intervals-6-1.png)
+![Distribution of maternal age.](../media/67-using-confidence-intervals-6-1.png)
 
 A small percent of the sampled ages are in the (26.9, 27.6) interval,
 and you would expect a similar small percent in the population. The
@@ -164,7 +164,7 @@ hodgkins
 hodgkins.select('drop').hist(bins=np.arange(-20, 81, 20))
 ```
 
-![png](../media/67-using-confidence-intervals-17-1.png)
+![Distribution of hodgkins drop.](../media/67-using-confidence-intervals-17-1.png)
 
 ``` python
 np.mean(hodgkins.column('drop'))
@@ -210,7 +210,7 @@ resampled_means.hist()
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
 
-![png](../media/67-using-confidence-intervals-21-1.png)
+![99 percent confidence interval for the average drop in the population.](../media/67-using-confidence-intervals-21-1.png)
 
 The 99% confidence interval for the average drop in the population goes
 from about 17 to about 40. The interval doesn't contain 0. So we reject

@@ -6,7 +6,7 @@ We also saw how AKS makes use of familiar concepts such as:
 - Popular development and management tools such as Helm, Draft, Kubernetes extension for Visual Studio Code and Visual Studio Kubernetes Tools
 - Integration with Azure DevOps Projects to simplify setting up a DevOps pipeline for your application
 
-You were looking for a container orchestration platform to quickly deploy your fleet management solution into new customer regions. AKS allows you to manage your hosted Kubernetes environment and makes it simple to develop, deploy, and managed containerized applications in Azure.
+You were looking for a container orchestration platform to quickly deploy your fleet management solution into new customer regions. AKS allows you to manage your hosted Kubernetes environment and makes it simple to develop, deploy, and manage containerized applications in Azure.
 
 You don't need to manage any of the clusters infrastructures and you only pay for what you use. It streamlines the installation process and takes care of most of the underlying cluster management tasks.
 

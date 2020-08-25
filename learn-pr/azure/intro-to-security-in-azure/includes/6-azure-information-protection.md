@@ -2,9 +2,9 @@
 
 Labels can be applied automatically based on rules and conditions. Labels can also be applied manually. You can also guide users to choose recommended labels with a combination of automatic and manual steps.
 
-The following screen capture is an example of AIP in action on a user's computer. In this example, the administrator has configured a label with rules that detect sensitive data. When a user saves a Microsoft Word document containing a credit card number, a custom tooltip is displayed. The tooltip recommends labeling the file as *Confidential - All Employees*. This label is configured by the administrator. Using this label classifies the document and protects it.
+The following screen capture is an example of AIP in action on a user's computer. In this example, the administrator has configured a label with rules that detect sensitive data. When a user saves a Microsoft Word document containing a credit card number, a custom tooltip is displayed. The tooltip recommends labeling the file as *Confidential \ All Employees*. This label is configured by the administrator. Using this label classifies the document and protects it.
 
-:::image type="content" source="../media/5-network-integration.png" alt-text="Screenshot of a Microsoft Word window with the previously described confidentiality message displayed.":::
+:::image type="content" source="../media/6-info-protect-recommend-callout.png" alt-text="Screenshot of Microsoft Word document showing the previously described confidentiality message displayed as a bar below the toolbar.":::
 
 After your content is classified, you can track and control how the content is used. For example, you can:
 

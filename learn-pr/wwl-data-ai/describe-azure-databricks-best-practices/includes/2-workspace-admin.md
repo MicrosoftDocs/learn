@@ -6,9 +6,9 @@ You can deploy Azure Databricks using Azure portal or using [Azure Resource Mana
 
 Each workspace is identified by a globally unique 53-bit number, called ***Workspace ID or Organization ID***. The URL that a customer sees after logging in always uniquely identifies the workspace they are using:
 
-*https://regionName.azuredatabricks.net/?o=workspaceId*
+`https://regionName.azuredatabricks.net/?o=workspaceId`
 
-Example: *https://eastus2.azuredatabricks.net/?o=12345*
+Example: `https://eastus2.azuredatabricks.net/?o=12345`
 
 Azure Databricks uses [Azure Active Directory (AAD)](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) as the exclusive Identity Provider and there's a seamless out of the box integration between them. This makes ADB tightly integrated with Azure just like its other core services. Any AAD member assigned to the Owner or Contributor role can deploy Databricks and is automatically added to the ADB members list upon first login. If a user is not a member of the Active Directory tenant, they can't log in to the workspace.
 

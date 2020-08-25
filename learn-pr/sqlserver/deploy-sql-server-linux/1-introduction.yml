@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: In this unit, you will learn about a business that is considering using SQL Server on its Linux servers.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 3

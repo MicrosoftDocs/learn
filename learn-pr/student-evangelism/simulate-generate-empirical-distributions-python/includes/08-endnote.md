@@ -61,7 +61,7 @@ conclusions about causality based on an observational study.
 **Good reads**
 
 [*The Strange Case of the Broad Street Pump: John Snow and the Mystery
-of Cholera*](http://www.ucpress.edu/book.php?isbn=9780520250499) by
+of Cholera*](https://www.goodreads.com/book/show/70921.The_Strange_Case_of_the_Broad_Street_Pump) by
 Sandra Hempel, published by our own University of California Press,
 reads like a whodunit. It was one of the main sources for this section's
 account of John Snow and his work. A word of warning: some of the

@@ -119,7 +119,7 @@ Here is a histogram of the ratios.
 ratios.select('Ratio BW/GD').hist()
 ```
 
-![Confidence Intervals](../media/66-confidence-intervals-9-1.png)
+![Histogram of ratios.](../media/66-confidence-intervals-9-1.png)
 
 At first, glance the histogram looks symmetric, with the density at
 its maximum over the interval 4 ounces per day to 4.5 ounces per day.
@@ -219,7 +219,7 @@ resampled_medians.hist(bins=15)
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
 
-![Confidence Intervals](../media/66-confidence-intervals-19-1.png)
+![Empirical histogram of bootstrapped medians.](../media/66-confidence-intervals-19-1.png)
 
 This histogram and interval resembles those we drew in the previous
 section, with one significant difference--there is no red dot showing where
@@ -246,7 +246,7 @@ is the distribution of their ages, and their average age, which was about
 baby.select('Maternal Age').hist()
 ```
 
-![Confidence Intervals](../media/66-confidence-intervals-23-1.png)
+![Distribution of ages and average age.](../media/66-confidence-intervals-23-1.png)
 
 ``` python
 np.mean(baby.column('Maternal Age'))
@@ -318,7 +318,7 @@ resampled_means.hist(bins=15)
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
 
-![Confidence Intervals](../media/66-confidence-intervals-29-1.png)
+![Empirical histogram of 5000 bootstrapped means.](../media/66-confidence-intervals-29-1.png)
 
 Once again, the average of the original sample (27.23 years) is close to
 the center of the interval. That's not surprising, because each
@@ -334,7 +334,7 @@ ages was not symmetric at all:
 baby.select('Maternal Age').hist()
 ```
 
-![Confidence Intervals](../media/66-confidence-intervals-32-1.png)
+![Histogram of maternal ages.](../media/66-confidence-intervals-32-1.png)
 
 This is a consequence of the Central Limit Theorem of probability and
 statistics. In later sections, we will see what the theorem says.w
@@ -363,7 +363,7 @@ resampled_means.hist(bins=15)
 plots.plot(make_array(left_80, right_80), make_array(0, 0), color='yellow', lw=8);
 ```
 
-![Confidence Intervals](../media/66-confidence-intervals-36-1.png)
+![Confidence interval example.](../media/66-confidence-intervals-36-1.png)
 
 This 80% confidence interval is much shorter than the 95% confidence
 interval. It only goes from about 27.0 years to about 27.4 years. While
@@ -466,7 +466,7 @@ resampled_proportions.hist(bins=15)
 plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=8);
 ```
 
-![Confidence Intervals](../media/66-confidence-intervals-47-1.png)
+![Confidence interval example.](../media/66-confidence-intervals-47-1.png)
 
 ### Care in using the bootstrap
 
@@ -497,5 +497,3 @@ important to keep some points in mind.
     -   The probability distribution of the statistic is not roughly
         bell shaped.
     -   The original sample is small, say less than 10 or 15.
-e probability distribution of the statistic is not roughly
-        bell shaped.

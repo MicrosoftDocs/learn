@@ -32,7 +32,7 @@ The following steps create an IoT Central application and generate an API token 
     ```azurecli
     az iot central app create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
-    --name $APP_NAME --sku S1 --location centralus \
+    --name $APP_NAME --sku ST2 --location centralus \
     --subdomain $APP_NAME --template iotc-pnp-preview@1.0.0 \
     --display-name 'Store Management'
     echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/admin/tokens"
@@ -60,12 +60,12 @@ The following steps create an IoT Central application and generate an API token 
 
     ```
 
-1. Run the following command in the Cloud Shell to list the IoT Central applications you have access to. The command adds an **Authorization** header with your API token to the **GET** request:
+1. Run the following command in the Cloud Shell to list the roles defined in your IoT Central application. The command adds an **Authorization** header with your API token to the **GET** request:
 
     ```azurecli
-    az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/applications \
+    az rest -m get -u https://$APP_NAME.azureiotcentral.com/api/preview/roles \
     --headers Authorization="$API_TOKEN"
 
     ```
 
-    The output from the previous command shows the IoT Central applications you have access to in the sandbox environment. In the sandbox environment, you only have access to the IoT Central application you created. If the previous command returns an error, check that you've correctly set the **API_TOKEN** environment variable.
+    The output from the previous command shows the roles defined in your IoT Central application  in the sandbox environment. An IoT Central application is created with three roles: **Operator**, **Administrator**, and **Builder**. If the previous command returns an error, check that you've correctly set the **API_TOKEN** environment variable.

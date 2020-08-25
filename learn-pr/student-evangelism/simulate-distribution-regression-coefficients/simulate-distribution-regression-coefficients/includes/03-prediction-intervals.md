@@ -31,7 +31,7 @@ plots.plot([300,300], [0, fit_300], color='red', lw=2)
 plots.ylim([0, 200]);
 ```
 
-![Example prediction](../media/86-prediction-intervals-6-0.png)
+![Example prediction.](../media/86-prediction-intervals-6-0.png)
 
 The height of the point where the red line hits the regression line is
 the fitted value at 300 gestational days.
@@ -103,7 +103,7 @@ for i in range(10):
     plots.scatter(x, fit_x[i], s=30)
 ```
 
-![Example prediction](../media/86-prediction-intervals-12-0.png)
+![Example prediction.](../media/86-prediction-intervals-12-0.png)
 
 The predictions vary from one line to the next. The table below shows
 the slope and intercept of each of the 10 lines, along with the
@@ -195,7 +195,7 @@ Height of regression line at x=300: 129.2129241703143 Approximate
 95%-confidence interval: 127.241239628963 131.32562696740675
 ```
 
-![Example prediction](../media/86-prediction-intervals-18-2.png)
+![Example prediction.](../media/86-prediction-intervals-18-2.png)
 
 The figure above shows a bootstrap empirical histogram of the predicted
 birth weight of a baby at 300 gestational days, based on 5,000
@@ -225,7 +225,7 @@ Height of regression line at x=285: 122.21457101607608 Approximate
 95%-confidence interval: 121.15227951418838 123.29668698463169
 ```
 
-![Example prediction](../media/86-prediction-intervals-21-2.png)
+![Example prediction.](../media/86-prediction-intervals-21-2.png)
 
 Notice that this interval is narrower than the prediction interval at
 300 gestational days. Let us investigate the reason for this.
@@ -277,7 +277,7 @@ for i in range(10):
     plots.scatter(x2, fit_x2[i], s=30)
 ```
 
-![Example prediction](../media/86-prediction-intervals-25-0.png)
+![Example prediction.](../media/86-prediction-intervals-25-0.png)
 
 ### Words of caution
 

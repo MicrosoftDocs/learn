@@ -34,7 +34,7 @@ You can combine weekly, monthly, and yearly retention values to create a flexibl
 
 - `W=0, M=0, Y=5, WeekOfYear=3`
 
-    This policy retains the third full backup of each year for 5 years.
+    This policy retains the full backup taken in the 3rd week of the year for 5 years.
 
 - `W=0, M=10, Y=0`
 

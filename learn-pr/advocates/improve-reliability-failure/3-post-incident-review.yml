@@ -1,0 +1,68 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-failure.3-post-incident-review
+title: "What is a post-incident review?"
+metadata:
+  title: "What is a post-incident review?"
+  description: "What is a post-incident review?"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-post-incident-review.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these is the correct name for the process that helps us learn from failure?'
+    choices:
+    - content: 'post-incident review'
+      isCorrect: false
+      explanation: 'There is no one correct name, it is the process that matters.'
+    - content: 'post-incident learning review'
+      isCorrect: false
+      explanation: 'There is no one correct name, it is the process that matters.'
+    - content: 'postmortem'
+      isCorrect: false
+      explanation: 'There is no one correct name, it is the process that matters.'
+    - content: 'retrospective'
+      isCorrect: false
+      explanation: 'There is no one correct name, it is the process that matters.'
+    - content: 'people have different names for the same thing, any of the above terms will work, it is the process that matters'
+      isCorrect: true
+      explanation: 'Correct, there is no one correct name, it is the process that matters.'
+
+  - content: 'A post-incident review takes place during which phase of the incident lifecycle?'
+    choices:
+    - content: 'Detection'
+      isCorrect: false
+      explanation: 'The post-incident review takes place during the analysis phase.'
+    - content: 'Response'
+      isCorrect: false
+      explanation: 'The post-incident review takes place during the analysis phase.'
+    - content: 'Remediation'
+      isCorrect: false
+      explanation: 'The post-incident review takes place during the analysis phase.'
+    - content: 'Analysis'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'Readiness'
+      isCorrect: false
+      explanation: 'The post-incident review takes place during the analysis phase.'
+
+  - content: 'Ideally, when should you do a post-incident review?'
+    choices:
+    - content: 'after every significant incident'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'once a month'
+      isCorrect: false
+      explanation: 'Reviewing incidents once a month could be a good start, but once this is an established practice it needs to happen after significant incidents.'
+    - content: 'after every incident'
+      isCorrect: false
+      explanation: 'Not all incidents require review (for example, minor ones).'
+    - content: 'at the beginning of the fiscal quarter'
+      isCorrect: false
+      explanation: 'Incident reviews should take place in connection to significant incidents.'

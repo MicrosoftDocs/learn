@@ -57,7 +57,7 @@ does not contain any houses that sold for less than \$35,000.
 sales.hist('SalePrice', bins=32, unit='$')
 ```
 
-![regression example](../media/82-multiple-regression-5-1.png)
+![Histogram of sale price.](../media/82-multiple-regression-5-1.png)
 
 #### Correlation
 
@@ -69,7 +69,7 @@ with sale price but only explains some of its variability.
 sales.scatter('1st Flr SF', 'SalePrice')
 ```
 
-![png](../media/82-multiple-regression-7-0.png)
+![Scatterplot of 1st floor SF and sale price](../media/82-multiple-regression-7-0.png)
 
 ``` python
 correlation(sales, 'SalePrice', '1st Flr SF')
@@ -276,7 +276,7 @@ test.with_column('Fitted', test.drop(0).apply(fit)).scatter('Fitted', 0)
 plots.plot([0, 5e5], [0, 5e5]);
 ```
 
-![regression example](../media/82-multiple-regression-26-0.png)
+![Scatterplot of predicted and actual values.](../media/82-multiple-regression-26-0.png)
 
 A residual plot for multiple regression typically compares the errors
 (residuals) to the actual values of the predicted variable. We see in
@@ -289,7 +289,7 @@ test.with_column('Residual', test_prices-test.drop(0).apply(fit)).scatter(0, 'Re
 plots.plot([0, 7e5], [0, 0]);
 ```
 
-![regression example](../media/82-multiple-regression-28-0.png)
+![Residual plot.](../media/82-multiple-regression-28-0.png)
 
 As with simple linear regression, interpreting the result of a predictor
 is at least as important as making predictions. There are many lessons
@@ -427,4 +427,4 @@ test.with_column('Residual', test_prices-nn_test_predictions).scatter(0, 'Residu
 plots.plot([0, 7e5], [0, 0]);
 ```
 
-![regression example](../media/82-multiple-regression-41-0.png)
+![Residual plot.](../media/82-multiple-regression-41-0.png)

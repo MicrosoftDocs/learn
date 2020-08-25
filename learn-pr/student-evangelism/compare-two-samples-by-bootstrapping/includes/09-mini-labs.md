@@ -15,4 +15,4 @@ To access the mini labs for this module, you'll need to do the following:
 
 Here is what the mini-lab should look like in your virtual environment:
 
-![png](../media/codespaces-example.png)
+![Visual studio codespaces example.](../media/codespaces-example.png)

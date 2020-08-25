@@ -104,7 +104,7 @@ those deaths are stacked on top of each other. The black discs mark the
 locations of water pumps. The map displays a striking revelation---the
 deaths are roughly clustered around the Broad Street pump.
 
-![snow's cholera map](../media/snow-map.jpg)
+![snow's cholera map.](../media/snow-map.jpg)
 
 Snow studied his map carefully and investigated the apparent anomalies.
 All of them implicated the Broad Street pump. For example: - There were
@@ -196,7 +196,7 @@ quite free from impurity."
 Confident that he would be able to arrive at a clear conclusion, Snow
 summarized his data in the table below.
 
-| Supply Area    | Number of Hours | Cholera Deaths | Deaths per 10,000 Houses |
+| Supply Area    | Number of Houses | Cholera Deaths | Deaths per 10,000 Houses |
 |----------------|-----------------|----------------|--------------------------|
 | S&V            | 40,046          | 1,263          | 315                      |
 | Lambeth        | 26,107          | 98             | 37                       |

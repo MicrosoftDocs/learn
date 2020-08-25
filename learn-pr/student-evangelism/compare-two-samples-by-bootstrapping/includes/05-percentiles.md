@@ -121,7 +121,7 @@ scores_and_sections
 scores_and_sections.select('Midterm').hist(bins=np.arange(-0.5, 25.6, 1))
 ```
 
-![Percentiles example](../media/64-percentiles-12-1.png)
+![Percentiles example.](../media/64-percentiles-12-1.png)
 
 What was the 85th percentile of the scores? To use the `percentile`
 function, create an array `scores` containing the midterm scores, and

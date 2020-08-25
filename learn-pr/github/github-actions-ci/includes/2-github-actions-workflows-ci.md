@@ -11,11 +11,11 @@ You'll learn to:
 
 ## Create a workflow from a template
 
-To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](https://docs.microsoft.com/learn/github/github-actions-automate-tasks/?azure-portal=true) module.
+To create a workflow, you start by using a template. A template has common jobs and steps pre-configured for the particular type of automation you're implementing. If you're not familiar with workflows, jobs and steps, check out the [Automate development tasks by using GitHub Actions](/learn/modules/github-actions-automate-tasks/) module.
 
 On the main page of your repository, click the *Actions* tab to create a new workflow. You'll see that you can choose from many different templates. Two examples are the *Node.js* template, which does a clean install of node dependencies, builds the source code and runs tests across different versions of Node, and the *Python package* template, which installs Python dependencies and runs tests, including lint, across different versions of Python.
 
-![GitHub Actions tab with the New Workflow button highlighted and the Node.js template selected](../media/2-workflow-template.png)
+:::image type="content" source="../media/2-workflow-template.png" alt-text="GitHub Actions tab with the New Workflow button highlighted and the Node.js template selected." border="true":::
 
 Take a look at the Node.js template workflow below.
 
@@ -69,7 +69,7 @@ To learn more about npm, check out the npm documentation:
 When a workflow runs, it produces a log that includes the details of what happened and any errors or test failures.
 If there is an error or if a test has failed, you see a red X rather than a green check mark ✔️ in the logs. You can examine the details of the error or failure to investigate what went wrong.
 
-![A GitHub Actions log with details on a failed test](../media/2-log-details.png)
+:::image type="content" source="../media/2-log-details.png" alt-text=" GitHub Actions log with details on a failed test." border="true":::
 
 In the exercise, you identify failed tests by examining the details in the logs. You can access the logs from the *Actions* tab.
 
@@ -179,4 +179,4 @@ Another action we could take is to add a label to the pull request. In this case
 
 Notice the block called ```env:```. This is where you set the environment variables for this action. For example, you can set the number of approvers needed. Here, it's one. The ```GITHUB_TOKEN``` variable is required because the action must make changes to your repository by adding a label. Finally, you supply the name of the label to add.
 
-Adding a label could be an event that starts another workflow, such as a a merge. We'll cover this in the next module TODO: (url here) on continuous delivery with GitHub Actions.
+Adding a label could be an event that starts another workflow, such as a a merge. We'll cover this in the next module on continuous delivery with GitHub Actions.

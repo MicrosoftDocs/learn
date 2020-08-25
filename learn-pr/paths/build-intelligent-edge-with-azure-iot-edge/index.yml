@@ -24,7 +24,6 @@ summary: |
   - Configure an IoT Edge device
   
   Once you complete this learning path, you will have the understanding on how Azure IoT Edge moves cloud analytics and custom business logic to devices so that your organization can focus on business insights instead of data management.
-cardDescription: Interested in building end to end IoT solutions or about Azure IoT, but aren't quite sure what it can do for you? This path is the place to start.
 prerequisites: None
 iconUrl: /learn/achievements/build-the-intelligent-edge-with-azure-iot-edge.svg
 levels:
@@ -46,7 +45,6 @@ products:
 - azure-cosmos-db
 - azure-blob-storage
 - azure-event-grid
-- azure-machine-learning-service
 - azure-resource-manager
 - azure-virtual-machines
 - azure-notebooks

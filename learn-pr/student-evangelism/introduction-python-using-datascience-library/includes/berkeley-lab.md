@@ -11,7 +11,7 @@ If you aren't interested in viewing the content interactively, feel free to skip
 
 ## To set up a Visual Studio Codespaces environment:
 
-1. Open [Visual Studio Codespaces](https://online.visualstudio.com/environments) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
+1. Open [Visual Studio Codespaces.](https://online.visualstudio.com/environments) in a new browser tab; and if prompted, sign in using the Microsoft account associated with your Azure subscription.
 
 1. If you don't already have a Visual Studio Codespaces billing plan, create one. Then create an environment with the following settings:
 

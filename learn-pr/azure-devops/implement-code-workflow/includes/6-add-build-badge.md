@@ -28,11 +28,20 @@ Here's an example build badge:
 
 For this exercise, you make your build badge visible to everyone. This might not be a good idea for your private projects since your build information will be made available to the public.
 
-1. To make sure your build badge is visible, navigate to **Project settings** in the left pane of your Microsoft Azure DevOps project.
-1. Under **Pipelines** select **Settings**.
+To make sure your build badge is visible:
+
+1. In Azure DevOps, navigate to your organization.
+1. Select **Organization settings** from the bottom corner.
+1. Under **Pipelines**, select **Settings**.
 1. Turn off **Disable anonymous access to badges**.
 
-You can do this for all projects in your organization if you wish by turning off the same setting in the organization's pipeline settings.
+    ![Azure DevOps showing how to disable anonymous access to badges](../media/6-devops-disable-anonymous-badge-access.png)
+
+You need to make a similar change to your project:
+
+1. Navigate to **Project settings** in the left pane of your Azure DevOps project.
+1. Under **Pipelines**, select **Settings**.
+1. Turn off **Disable anonymous access to badges**.
 
 ## Add the build badge
 

@@ -56,7 +56,7 @@ You'll now set up the application logging.
 1. Under **Application logging (Filesystem)**, click **On**, and in the **Level** box, click **Error**.
 1. Under **Application logging (Blob)**, click **On**, and in the **Level** box, click **Verbose**.
 1. Click **Storage Settings**, and on the **Storage Accounts** pane, click **sacontosofashions\<_your-number_\>**, where \<_your-number_\> is the number suffix you noted when you created your app.
-1. On the **Containers** pane, click **+ Container**, and in the **Name** box, type **asp logs**, and then click **OK**.
+1. On the **Containers** pane, click **+ Container**, and in the **Name** box, type **asplogs**, and then click **OK**.
 1. Click **asplogs**, and then click **Select**.
 1. In the **Retention Period (Days)** box, type **5**.
 1. Click **Save** to close the **Diagnostics logs** pane, and update the log settings.

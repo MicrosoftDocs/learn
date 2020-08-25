@@ -1,3 +1,5 @@
+[!include[](../../shared/includes/note-maintenance.md)]
+
 In this part, you add tasks to your Azure Pipelines configuration to run the SonarCloud scanner during the build.
 
 Here you will:

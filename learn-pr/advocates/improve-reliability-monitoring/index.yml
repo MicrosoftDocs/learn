@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.improve-reliability-monitoring
+title: "Improve your reliability with modern operations practices: Monitoring"
+metadata:
+  title: "Improve your reliability with modern operations practices: Monitoring"
+  description: Learn how to use monitoring to help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+summary: Monitoring is the foundational practice you must tackle before you can make any headway with reliability. Learn what (and what not) to monitor to improve it using the tools available on Azure.
+abstract: |
+  In this module you will:
+  - Learn how to increase your operational awareness as a precursor to reliability work
+  - Expand your understanding of reliability itself
+  - Change the way you frame your thinking about monitoring to make it more impactful
+  - Gain a basic understanding of the applicable monitoring platform and tools available on Azure
+  - Learn a practice from site reliability engineering that can immediately start to create an impact on reliability
+  - Learn to craft actionable alerts to make your operational practices sustainable
+iconUrl: /learn/achievements/improve-reliability-monitoring.svg
+levels:
+- beginner
+roles:
+- administrator
+- devops-engineer
+- solution-architect
+- technology-manager
+products:
+- azure
+prerequisites: None
+units:
+- learn.improve-reliability-monitoring.1-introduction
+- learn.improve-reliability-monitoring.2-operational-awareness
+- learn.improve-reliability-monitoring.3-expanding-understanding
+- learn.improve-reliability-monitoring.4-change-frame
+- learn.improve-reliability-monitoring.5-tools
+- learn.improve-reliability-monitoring.6-log-analytics
+- learn.improve-reliability-monitoring.7-sli-slo
+- learn.improve-reliability-monitoring.8-actionable-alerts
+- learn.improve-reliability-monitoring.9-summary
+
+badge:
+  uid: learn.improve-reliability-monitoring.badge

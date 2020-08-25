@@ -1,6 +1,6 @@
 :::row:::
 :::column:::
-![Icon showing buildings with scale up arrow](../media/3b-economiesofscale.png)
+:::image type="icon" border="false" source="../media/3b-economiesofscale.png":::
   :::column-end:::
   :::column span="3":::
 *Economies of scale* is the ability to do things more efficiently or at a lower-cost per unit when operating at a larger scale. This cost advantage is an important benefit in cloud computing.

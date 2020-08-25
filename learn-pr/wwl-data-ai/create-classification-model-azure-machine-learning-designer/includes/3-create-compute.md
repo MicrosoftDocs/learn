@@ -9,19 +9,19 @@ Compute targets are cloud-based resources on which you can run model training an
     - **Compute Clusters**: Scalable clusters of virtual machines for on-demand processing of experiment code.
     - **Inference Clusters**: Deployment targets for predictive services that use your trained models.
     - **Attached Compute**: Links to existing Azure compute resources, such as Virtual Machines or Azure Databricks clusters.
-2. On the **Compute Instances** tab, add a new compute instance with the following settings. You'll use this to train and test your model:
+2. On the **Compute Instances** tab, add a new compute instance with the following settings. You'll use this to test your model:
     - **Compute name**: *enter a unique name*
     - **Virtual Machine type**: CPU
-    - **Virtual Machine size**: Standard_DS3_v2
+    - **Virtual Machine size**: Standard_DS2_v2
 3. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
-    - **Compute name**: aml-cluster
+    - **Compute name**: *enter a unique name*
     - **Virtual Machine size**: Standard_DS2_v2
     - **Virtual Machine priority**: Dedicated
     - **Minimum number of nodes**: 2
     - **Maximum number of nodes**: 2
     - **Idle seconds before scale down**: 120
 4. While the compute cluster is being created, switch to the  **Inference Clusters** tab, and add a new cluster with the following settings. You'll use this to deploy your model as a service.
-    * **Compute name**: aks-cluster
+    * **Compute name**: *enter a unique name*
     * **Kubernetes Service**: Create new
     * **Region**: *Select a different region than the one used for your workspace*
     * **Virtual Machine size**: Standard_DS2_v2 (*Use the filter to find this in the list*)

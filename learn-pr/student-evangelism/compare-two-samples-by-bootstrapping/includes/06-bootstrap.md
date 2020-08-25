@@ -133,7 +133,7 @@ sf_bins = np.arange(0, 700000, 25000)
 sf2015.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![Bootstrap example](../media/65-bootstrap-14-0.png)
+![Bootstrap example.](../media/65-bootstrap-14-0.png)
 
 While most of the values are below $300,000, a few are quite a bit
 higher. For example, the total compensation of the Chief Investment
@@ -188,7 +188,7 @@ our_sample = sf2015.sample(500, with_replacement=False)
 our_sample.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![Bootstrap example](../media/65-bootstrap-21-0.png)
+![Bootstrap example.](../media/65-bootstrap-21-0.png)
 
 ``` python
 est_median = percentile(50, our_sample.column('Total Compensation'))
@@ -258,7 +258,7 @@ from IPython.display import Image
 Image("../../../images/bootstrap_pic.png")
 ```
 
-![Bootstrap example](../media/65-bootstrap-25-0.png)
+![Bootstrap example.](../media/65-bootstrap-25-0.png)
 
 ### A resampled median
 
@@ -276,7 +276,7 @@ resample_1 = our_sample.sample()
 resample_1.select('Total Compensation').hist(bins=sf_bins)
 ```
 
-![Bootstrap example](../media/65-bootstrap-28-0.png)
+![Bootstrap example.](../media/65-bootstrap-28-0.png)
 
 ``` python
 resampled_median_1 = percentile(50, resample_1.column('Total Compensation'))
@@ -352,7 +352,7 @@ resampled_medians.hist()
 plots.scatter(pop_median, 0, color='red', s=30);
 ```
 
-![Bootstrap example](../media/65-bootstrap-37-0.png)
+![Bootstrap example.](../media/65-bootstrap-37-0.png)
 
 It is important to remember that the red dot is fixed: it is
 \$110,305.79, the population median. The empirical histogram is the
@@ -404,7 +404,7 @@ plots.plot(make_array(left, right), make_array(0, 0), color='yellow', lw=3, zord
 plots.scatter(pop_median, 0, color='red', s=30, zorder=2);
 ```
 
-![Bootstrap example](../media/65-bootstrap-43-0.png)
+![Bootstrap example.](../media/65-bootstrap-43-0.png)
 
 The "middle 95%" interval of estimates captured the parameter in our
 example. But was that a fluke?
@@ -531,7 +531,7 @@ plots.ylabel('Replication')
 plots.title('Population Median and Intervals of Estimates');
 ```
 
-![Bootstrap example](../media/65-bootstrap-53-0.png)
+![Bootstrap example.](../media/65-bootstrap-53-0.png)
 
 To summarize what the simulation shows, suppose you are estimating the
 population median by the following process:

@@ -254,7 +254,7 @@ heights
 heights.scatter(0)
 ```
 
-![Apply Function](../media/32-apply-function-to-column-24-0.png)
+![Apply function.](../media/32-apply-function-to-column-24-0.png)
 
 Now suppose Galton encountered a new couple, similar to those in his
 dataset, and wondered how tall their child would be. What would be a
@@ -288,7 +288,7 @@ _ = plots.plot([68.5, 68.5], [50, 85], color='red', lw=2)
 _ = plots.scatter(68, 66.24, color='gold', s=40)
 ```
 
-![Apply Function](../media/32-apply-function-to-column-26-0.png)
+![Applying a function to a column.](../media/32-apply-function-to-column-26-0.png)
 
 In order to calculate exactly where the gold dot should be, we first
 need to identify all the points in the strip. These correspond to the
@@ -409,7 +409,7 @@ axis.
 heights_with_predictions.scatter('MidParent')
 ```
 
-![Apply Function](../media/32-apply-function-to-column-40-0.png)
+![Applying a function to a column.](../media/32-apply-function-to-column-40-0.png)
 
 The graph of gold dots is called a *graph of averages,* because each
 gold dot is the center of a vertical strip like the one we drew earlier.

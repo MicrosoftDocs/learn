@@ -51,11 +51,11 @@ Keep in mind you want to set your server storage size at 20 GB, compute Gen 5 su
    az postgres server create \
       --name $serverName \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
-      --location <location> \
+      --location eastus \
       --sku-name B_Gen5_1 \
       --storage-size 20480 \
       --backup-retention 15 \
-      --version 10 \
+      --version 11 \
       --admin-user $userName \
       --admin-password "P@ssw0rd"
    ```
