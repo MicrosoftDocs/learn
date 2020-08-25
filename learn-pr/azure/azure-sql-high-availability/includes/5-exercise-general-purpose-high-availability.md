@@ -36,7 +36,7 @@ The first step is to create a long-running workload. This workload allows you to
 
     If you want to run the workload again, you can run the command again.  
 
-### Use PowerShell in the Azure Cloud Shell to initiate a failover and observe the results
+### Use PowerShell in Azure Cloud Shell to initiate a failover and observe the results
 
 1. In the Azure Cloud Shell terminal on the right side of this page, run this PowerShell script to configure your environment:  
 
