@@ -6,15 +6,15 @@ In this exercise, you'll use the ostress tool that you might have used in the pr
 
 In this exercise, you'll complete the following steps:
 
-1. Run the OStress workload.  
+1. Run the ostress workload.  
 1. Confirm that the environment is properly configured.
 1. Use PowerShell to initiate a failover of Azure SQL Database.  
-1. View the results in OStress.  
+1. View the results in ostress.  
 1. Look for signs in the portal that a failover occurred.  
 
-### Run the OStress workload
+### Run the ostress workload
 
-The first step is to create a long-running workload. This workload allows you to see how a failover affects the ability to read and write data, and how long a failover takes in the General purpose service tier for Azure SQL Database. You'll use OStress.
+The first step is to create a long-running workload. This workload allows you to see how a failover affects the ability to read and write data, and how long a failover takes in the General purpose service tier for Azure SQL Database. You'll use ostress.
 
 1. Open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command:
 
@@ -22,9 +22,9 @@ The first step is to create a long-running workload. This workload allows you to
     cd C:\Users\username\mslearn-azure-sql-fundamentals\05-Availability
     ```
 
-    The OStress executable file is in this folder. (It's small.) The OStress workload connects and runs a simple query 50,000 times.
+    The ostress executable file is in this folder. (It's small.) The ostress workload connects and runs a simple query 50,000 times.
 
-1. Use the following OStress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server. Replace `password` with your password.
+1. Use the following ostress script to run the workload. Replace `serverName` with the name of your Azure SQL Database logical server. Replace `password` with your password.
 
     ```cmd
     .\ostress.exe -S"serverName.database.windows.net" -Q"SELECT COUNT(*) FROM SalesLT.Customer" -U"cloudadmin" -d"AdventureWorks" -P"password" -n1 -r50000
@@ -32,7 +32,7 @@ The first step is to create a long-running workload. This workload allows you to
 
     If your workload is running properly, you should see the result of the query, `847`, repeatedly appearing in the Command Prompt window.
 
-    If you want to stop running the OStress workload before it's done, you can select **Ctrl+C** in the terminal.  
+    If you want to stop running the ostress workload before it's done, you can select **Ctrl+C** in the terminal.  
 
     If you want to run the workload again, you can run the command again.  
 
@@ -64,7 +64,7 @@ The first step is to create a long-running workload. This workload allows you to
         -DatabaseName $database
     ```
 
-1. Observe the results in OStress from the Command Prompt window. While this command is running, you should observe any changes that appear in the Command Prompt window. You'll notice that you can't access the database while the failover occurs. The failover will finish after about 30 seconds, and you'll see that the workload runs successfully again. The retry logic in your application is important because if Azure fails over (for a number of reasons), you don't want the application to fail or experience downtime for longer than it takes for the failover to occur.  
+1. Observe the results in ostress from the Command Prompt window. While this command is running, you should observe any changes that appear in the Command Prompt window. You'll notice that you can't access the database while the failover occurs. The failover will finish after about 30 seconds, and you'll see that the workload runs successfully again. The retry logic in your application is important because if Azure fails over (for a number of reasons), you don't want the application to fail or experience downtime for longer than it takes for the failover to occur.  
 
 1. This ability to create a failover on command can be useful in certain scenarios. Note that the service throttles you from doing so too often. Run the following command to try another failover:
 
