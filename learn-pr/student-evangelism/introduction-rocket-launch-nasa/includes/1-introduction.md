@@ -4,7 +4,7 @@ NASA considers certain places safe for a rocket to enter space. To access these 
 
 Cape Canaveral incorporates all these features.
 
-:::image type="content" source="../media/cape-canaveral.png" alt-text="Cape Canaveral launch site" loc-scope="azure":::
+:::image type="content" source="../media/cape-canaveral.png" alt-text="Aerial photo of the Cape Canaveral launch site." loc-scope="azure":::
 
 Cape Canaveral is on the East coast of the Florida peninsula. The area experiences hurricanes, rain storms, and humidity - all factors that can cause issues during a rocket launch. Why not just launch from somewhere with no inclement weather, like San Diego, California? For other reasons, Cape Canaveral is most often the best US-based launch site  for maintaining the correct trajectory for entering space.
 

@@ -13,4 +13,4 @@ In this module, you'll learn how to:
 - Use a regression model for inferencing.
 - Deploy a regression model as a service.
 
-To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true).
+To complete this module, you'll need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com?azure-portal=true). 
