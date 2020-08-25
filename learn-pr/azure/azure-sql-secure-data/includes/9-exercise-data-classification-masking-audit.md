@@ -89,7 +89,7 @@ Next, you simulate someone querying the classified columns and explore Dynamic D
 
     What if, for some reason, Bob needs access to the names and gets permission to have it?  
 
-    You can update excluded users from masking in the Azure portal by going to the **Dynamic Data Masking** pane, under **Security**, but you can also do it by using Transact-SQL (T-SQL). 
+    You can update excluded users from masking in the Azure portal by going to the **Dynamic Data Masking** pane, under **Security**, but you can also do it by using T-SQL. 
     
 1. Use the following query to allow Bob to query the names results without masking.  
 
