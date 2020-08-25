@@ -36,15 +36,15 @@ To activate the desired conda environment:
 
 1. To initialize conda and activate it, run:
 
-```bash
-conda init && source ~/.bashrc
-```
+    ```bash
+    conda init && source ~/.bashrc
+    ```
 
 1. To list the installed conda environments, run: 
 
-```bash
-conda info --envs
-```
+    ```bash
+    conda info --envs
+    ```
 
 You should see output similar to: 
 
@@ -67,17 +67,17 @@ The asterisk indicates the `base` environment is currently active.
 
 1. Activate the environment we want to use with: 
 
-```bash
-conda activate azureml_py36_pytorch
-```
+    ```bash
+    conda activate azureml_py36_pytorch
+    ```
 
 Running `python --version` and `conda list` again to confirm that the python environment has changed. 
 
 To start a Jupyter server, run: 
 
-```bash
-jupyter notebook
-```
+    ```bash
+    jupyter notebook
+    ```
 
 After startup, the Firefox browser on your Data Science Virtual Machine should start and open to `localhost:8888/tree`, showing the home directory of your Data Science Virtual Machine user. While the **notebooks** directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Since in this module your Data Science Virtual Machine is running in a free, restricted Azure environment, you can't access that data at this time.
 

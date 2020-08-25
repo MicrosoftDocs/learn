@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-data-science-virtual-machine.exercise-connect
 metadata:
   title: "Exercise: Connect to your Data Science Virtual Machine"
   description: Connect to your Data Science Virtual Machine.
-  ms.date: 2020-07-01
+  ms.date: 08/24/2021
   author: lobrien
   ms.author: laobri
   ms.topic: interactive-tutorial
@@ -14,7 +14,7 @@ durationInMinutes: 8
 content: |
   [!include[](includes/exercise-connect.md)]
 quiz:
-  title: Connect to your Data Science Virtual Machine
+  title: Connecting to your Data Science Virtual Machine
   questions:
     - content: "How can you reach the command line of the Data Science Virtual Machine without launching a terminal from the Data Science Virtual Machine's graphical desktop?"
       choices:

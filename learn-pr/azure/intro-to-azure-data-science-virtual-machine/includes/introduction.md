@@ -29,3 +29,7 @@ In this module, you'll:
 * Connect to the graphical Desktop of the Data Science Virtual Machine with X2Go Client
 * Demonstrate the use of RStudio running inside the Data Science Virtual Machine
 * List custom Python environments, activate one, and run Jupyter notebook server
+
+## Prerequisites
+
+- None
