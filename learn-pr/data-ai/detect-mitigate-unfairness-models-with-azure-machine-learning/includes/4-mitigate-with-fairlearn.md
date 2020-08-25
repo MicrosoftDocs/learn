@@ -5,7 +5,7 @@ In addition to enabling you to analyze disparity in selection rates and predicti
 
 The mitigation support in Fairlearn is based on the use of algorithms to create alternative models that apply *parity constraints*  to produce comparable metrics across sensitive feature groups. Fairlearn supports the following mitigation techniques.
 
-| Technique | Description | Model Type Support |
+| Technique | Description | Model type support |
 | --------- | ----------- | ------------------ |
 | **Exponentiated Gradient** | A *reduction* technique that applies a cost-minimization approach to learning the optimal trade-off of overall predictive performance and fairness disparity | Binary classification and regression |
 | **Grid Search** | A simplified version of the Exponentiated Gradient algorithm that works efficiently with small numbers of constraints | Binary classification and regression |
@@ -18,7 +18,7 @@ The choice of parity constraint depends on the technique being used and the spec
 - **False positive rate parity**: Use this constraint with any of the mitigation algorithms to minimize disparity in *false positive rate* across sensitive feature groups. For example, in a binary classification scenario, this constraint tries to ensure that each group contains a comparable ratio of false positive predictions.
 - **Equalized odds**: Use this constraint with any of the mitigation algorithms to minimize disparity in combined *true positive rate* and *false positive rate* across sensitive feature groups. For example, in a binary classification scenario, this constraint tries to ensure that each group contains a comparable ratio of true positive and false positive predictions.
 - **Error rate parity**: Use this constraint with any of the reduction-based mitigation algorithms (**Exponentiated Gradient** and **Grid Search**) to ensure that the error for each sensitive feature group does not deviate from the overall error rate by more than a specified amount.
-- **Bounded group loss**: Use this constraint with the **Threshold Optimizer** mitigation algorithm to restrict the loss for each sensitive feature group in a regression model.
+- **Bounded group loss**: Use this constraint with any of the reduction-based mitigation algorithms to restrict the loss for each sensitive feature group in a *regression* model.
 
 ## Training and evaluating mitigated models
 
