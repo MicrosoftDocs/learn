@@ -43,7 +43,7 @@ Before you configure your location policy, let's take a brief look at some prede
 
     Notice that the **Allowed virtual machine SKUs** definition enables you to specify a set of virtual machine SKUs that your organization can deploy.
 
-    :::image type="content" source="../media/10-policy-category-compute.png" alt-text="TODO.":::
+    :::image type="content" source="../media/10-policy-category-compute.png" alt-text="A screenshot of the Azure portal showing policy definitions under the Compute category. The Allowed virtual machine SKUs definition is highlighted.":::
 
 As an optional step, explore any other policies or categories that interest you.
 
@@ -53,13 +53,13 @@ Here you configure the allowed location policy by using Azure Policy and then yo
 
 1. From the **Policy** page, under **Authoring**, select **Assignments**.
 
-    :::image type="content" source="../media/10-policy-assignments.png" alt-text="TODO.":::
+    :::image type="content" source="../media/10-policy-assignments.png" alt-text="A screenshot of the Azure portal showing the Assignments menu item.":::
 
     An assignment is a policy that has been assigned to take place within a specific scope. For example, a definition could be assigned to the subscription scope.
 
 1. Select **Assign Policy**.
 
-    :::image type="content" source="../media/10-assign-policy.png" alt-text="TODO.":::
+    :::image type="content" source="../media/10-assign-policy.png" alt-text="A screenshot of the Azure portal showing the Assign policy menu item.":::
 
     You are taken to the **Assign policy** page.
 
@@ -77,7 +77,7 @@ Here you configure the allowed location policy by using Azure Policy and then yo
     1. Select the **Allowed locations** definition.
     1. Select the **Select** button.
 
-    :::image type="content" source="../media/available-definitions-pane.png" alt-text="TODO Screenshot of Available Definitions pane with various fields highlighted and the Audit VMs that do not use managed disks option selected.":::
+    :::image type="content" source="../media/available-definitions-pane.png" alt-text="A screenshot of the Azure portal showing the search bar. In the results pane, the Allowed locations policy definition is highlighted.":::
 
     This policy definition specifies the location into which all resources must be deployed. If a different location is chosen, deployment will fail.
 
@@ -87,7 +87,7 @@ Here you configure the allowed location policy by using Azure Policy and then yo
 
     You see that the **Allowed locations** policy assignment is now listed on the **Policy | Assignments** pane. It enforces the policy on the **my-test-rg** resource group.
 
-    :::image type="content" source="../media/10-policy-assignment-result.png" alt-text="TODO.":::
+    :::image type="content" source="../media/10-policy-assignment-result.png" alt-text="A screenshot of the Azure portal showing the Allowed locations policy assignment listed in the Policy Assignments pane.":::
 
 ## Verify the location policy
 
@@ -116,7 +116,7 @@ Here you attempt to add a storage account to your resource group at a location t
 
     You see a message that states that the deployment failed due to the policy violation.
 
-    :::image type="content" source="../media/10-create-sa-error-policy-violation.png" alt-text="TODO.":::
+    :::image type="content" source="../media/10-create-sa-error-policy-violation.png" alt-text="A screenshot of the Azure portal showing the error message. The error message states that the deployment failed due to a policy violation.":::
 
 ## Delete the policy assignment
 
@@ -126,7 +126,7 @@ You no longer need your policy assignment. Here you remove it from your subscrip
 1. Under **Authoring**, select **Assignments**.
 1. On the **Allowed locations** row, select the ellipsis. Then select **Delete assignment**. When prompted, select **Yes**.
 
-    :::image type="content" source="../media/10-policy-delete-assignment.png" alt-text="TODO.":::
+    :::image type="content" source="../media/10-policy-delete-assignment.png" alt-text="A screenshot of the Azure portal showing the Delete assignment menu item.":::
 
     You see that the **Allowed locations** policy assignment no longer exists.
 

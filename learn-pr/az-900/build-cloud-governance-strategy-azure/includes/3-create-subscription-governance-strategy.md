@@ -19,8 +19,3 @@ When designing your subscription architecture, consider the deployment boundary 
 Subscriptions also have some resource limitations. For example, the maximum number of network Express Route circuits per subscription is 10. Those limits should be considered during your design phase. If you will need to exceed those limits, then you may need to add additional subscriptions. If you hit a hard limit maximum, there is no flexibility to increase it.
 
 Management groups are also available to assist with managing subscriptions. A management group manages access, policies, and compliance across multiple Azure subscriptions. You're learn more about management groups later in this module.
-
-<div style="background: yellow;">
-TODO: 
-Add what TWT has decided to do with their subscription architecture - diagram this.
-</div>

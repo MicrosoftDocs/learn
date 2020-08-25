@@ -10,12 +10,9 @@ You can manage resource locks from the Azure portal, PowerShell, the Azure CLI, 
 
 To view, add, or delete locks in the Azure portal, go to the **Settings** section of any resource's settings blade in the Azure portal.
 
-<div style="background: yellow;">
-TODO: 
-Describe this better or diagram the actual blade section (menu)
-</div>
+Here's an example that shows how to add a resource lock from the Azure portal. You'll apply a similar resource lock in the next part.
 
-:::image type="content" source="../media/resource-locks.png" alt-text="Screenshot of the add Lock page.":::
+:::image type="content" source="../media/7-portal-add-lock.png" alt-text="A screenshot of the Azure portal showing how to add a resource lock.":::
 
 ## What levels of locking are available?
 
@@ -32,10 +29,3 @@ Although locking helps prevent accidental changes, you can still make changes by
 To modify a locked resource, you must first remove the lock. After you remove the lock, you can apply any action you have permissions to perform. This additional step allows the action to be taken, but helps protect your administrators from doing something they may not have intended to do.
 
 Resource locks apply regardless of RBAC permissions. Even if you are an owner of the resource, you must still remove the lock before you you can perform the blocked activity.
-
-At Tailwind Traders, you have decided to implement the following resource locks:
-
-<div style="background: yellow;">
-TODO: 
-Diagram
-</div>

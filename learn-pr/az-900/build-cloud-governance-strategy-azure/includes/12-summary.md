@@ -16,16 +16,11 @@ With these points in mind, you're ready to take the next step towards building a
 
 ## Learn more
 
-The 
-[Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true) module is a good next step. There you'll go deeper on how to use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
-
-<div style="background: yellow;">
-TODO: Should we provide a link to Learn modules for each of the major services we covered here? Is that too much? We already have a bunch of links pulled from this module here.
-</div>
+The [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true) module is a good next step. There you'll go deeper on how to use Azure Resource Manager to organize resources, enforce standards, and protect critical assets from deletion.
 
 Here are additional resources to help you go further.
 
-* Get started with the [Cloud Adoption Framework for Azure](https://docs.microsoft.com/azure/cloud-adoption-framework/?azure-portal=true).
+* Get started with the [Microsoft Cloud Adoption Framework for Azure](https://docs.microsoft.com/learn/modules/microsoft-cloud-adoption-framework-for-azure/?azure-portal=true).
 * Learn more about [Azure subscription and service limits, quotas, and constraints](https://docs.microsoft.com/azure/azure-subscription-service-limits?azure-portal=true).
 * Review the complete list of [Azure built-in roles](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles/?azure-portal=true) for Azure RBAC.
 * See [Assign policies for tag compliance](https://docs.microsoft.com/azure/azure-resource-manager/management/tag-policies/?azure-portal=true) to learn how Azure Policy can enforce tagging rules and conventions.

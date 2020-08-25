@@ -42,12 +42,6 @@ Tailwind Traders has the following teams with an interest in some part of their 
 
     This team monitors and responds to any technology-related security incidents, and require ongoing access to log files and security alerts.
 
-You have decided to configure RBAC as follows:
-<div style="background: yellow;">
-TODO: 
-Diagram of TWT IT teams with RBAC & Scopes.
-</div>
-
 ## How do I manage Azure RBAC permissions?
 
 You manage access permissions on the **Access control (IAM)** blade in the Azure portal. This blade shows who has access to what scope and what roles apply. You can also grant or remove access from this blade.

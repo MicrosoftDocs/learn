@@ -1,10 +1,5 @@
 Now that you've identified your governance and business requirements, how do you ensure that your resources _stay_ compliant? How can you be alerted if a resource's configuration has changed? 
 
-<div style="background: yellow;">
-TODO: 
-TWT scenario? Or leave for exercise?
-</div 
-
 [Azure Policy](https://azure.microsoft.com/services/azure-policy?azure-portal=true) is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules and effects over your resources so that those resources stay compliant with corporate standards.
 
 ## How does Azure Policy define policies?
@@ -19,11 +14,6 @@ In some cases, Azure Policy can automatically remediate non-compliant resources 
 
 Azure Policy also integrates with Azure DevOps by applying any continuous integration and delivery pipeline policies that apply to the pre-deployment and post-deployment phases of your applications.
 
-<div style="background: yellow;">
-TODO: 
-Add a screenshot of Allowed SKUs policy or a non-compliant resource?
-</div>
-
 ## Azure Policy in action
 
 Implementing a policy in Azure Policy involves these three steps:
@@ -34,35 +24,31 @@ Implementing a policy in Azure Policy involves these three steps:
 
 Let's examine each step in more detail.
 
-<!--
-TODO: Remove, as it's only text? It's nice eye candy, but can burden localization.
-
-:::image type="content" source="../media/policy-process.png" alt-text="Three-step process for implementing policy definitions as discussed in the text.":::
--->
-
 ### 1. Create a policy definition
 
 A policy definition expresses what to evaluate and what action to take. For example, you could prevent VMs from being deployed in certain Azure regions. You also could audit your storage accounts to verify that they only accept connections from allowed networks.
 
 Every policy definition has conditions under which it is enforced. A policy definition also has an accompanying effect that takes place when the conditions are met. Here are some example policy definitions:
 
-* **Allowed storage account SKUs**
-
-    This policy determines whether a storage account that's being deployed is within a set of allowed SKU sizes. Its effect is to deny all storage accounts that do not adhere to the set of defined SKU sizes.
 * **Allowed Virtual Machine SKUs**
 
     This policy enables you to specify a set of VM SKUs that your organization can deploy.
-* **Allowed resource type**
 
-    This policy enables you to specify the resource types that your organization can deploy. Its effect is to deny all resources that are not part of the defined list.
 * **Allowed locations**
 
     This policy enables you to restrict the locations that your organization can specify when deploying resources. Its effect is used to enforce your geographic compliance requirements.
 
-<div style="background: yellow;">
-TODO: 
-Edit this list of example policies to include more variety (eg enforcing MFA, CORS, Azure Security Center enrollment, windows updates)
-</div>
+* **MFA should be enabled accounts with write permissions on your subscription**
+
+    This policy requires that Multi-Factor Authentication (MFA) be enabled for all subscription accounts with write privileges to prevent a breach of accounts or resources.
+
+* **CORS should not allow every resource to access your Web Applications**
+
+    CORS (Cross Origin Resource Sharing) is an HTTP feature that enables a web application running under one domain to access resources in another domain. For security reasons, modern web browsers restrict cross-site scripting by default. This policy allows only required domains to interact with your web app.
+
+* **System updates should be installed on your machines**
+
+    This policy enables Azure Security Center to recommend missing security system updates on your servers.
 
 ### 2. Assign the definition to resources
 
@@ -70,21 +56,11 @@ To implement your policy definitions, you assign definitions to resources. A _po
 
 Policy assignments are inherited by all child resources within that scope. This means that if a policy is applied to a resource group, that policy is applied to all resources within that resource group. However, you can exclude a sub-scope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
-<div style="background: yellow;">
-TODO: 
-Diagram?
-</div>
-
 ### 3. Review the policy evaluation results
 
 When a condition is evaluated against your existing resources, each resource is marked as compliant or non-compliant. You can review the non-compliant policy results and take any action that's needed.
 
 Policy evaluation happens about once per hour, which means that if you make changes to your policy definition and create a policy assignment, that policy is evaluated over your resources within the hour.
-
-<div style="background: yellow;">
-TODO: 
-Screenshot of non-compliance?
-</div>
 
 ## What are Azure Policy initiatives?
 

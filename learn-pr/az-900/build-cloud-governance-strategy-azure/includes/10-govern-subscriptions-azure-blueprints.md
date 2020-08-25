@@ -11,7 +11,7 @@ Azure Blueprints orchestrates the deployment of various resource templates and o
 * Azure Resource Manager templates
 * Resource groups
 
-## Blueprint process
+## Azure Blueprints in action
 
 Implementing a blueprint in Azure Blueprints involves these three steps:
 
@@ -19,43 +19,21 @@ Implementing a blueprint in Azure Blueprints involves these three steps:
 1. Assign the blueprint.
 1. Track the blueprint assignments.
 
-<div style="background: yellow;">
-TODO: Could we make a diagram similar to the Azure Policy one?
+With Azure Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was actually deployed) is preserved. In other words, Azure creates a record that associates a resource with the blueprint that defines it. This connection helps you track and audit your deployments.
 
-(Tom): Maybe. I deleted the other one because it was only words and can be a loc burden. But yes, images add flavor. Let's discuss.
-</div>
-
-<div style="background: yellow;">
-TODO: I'm not sure what the following paragraph is telling me.
-</div>
-
-With Azure Blueprints, the relationship between the blueprint definition (what should be deployed) and the blueprint assignment (what was actually deployed) is preserved. This connection supports improved deployment tracking and auditing.
-
-Blueprints are also versioned, so you can track and comment on changes to your blueprint.
-
-## How do blueprints compare to ARM templates?
-
-If you're familiar with Azure Resource Manager (ARM) templates, you know that they define all the Azure resources in a deployment. In a single operation, you can use an ARM template to deploy multiple Azure resources.
-
-<div style="background: yellow;">
-TODO: Again, not sure what the following paragraph is telling me. I know ARM templates; just unclear what we mean by "active relationship" and "actioned" or how this relates to auditing and tracking capabilities. We also don't define "package".
-</div>
-
-Azure Blueprints are different from ARM templates. When an ARM template deploys resources, they have no active relationship with the deployed resources once they have been actioned (the templates exist in a local environment or in source control). By contrast, with Azure Blueprint, each deployment is tied to an Azure Blueprint package. This means that the relationship with resources will be maintained, even after deployment. Maintaining relationships, in this way, improves auditing and tracking capabilities.
+Blueprints are also versioned. Versioning enables you to track and comment on changes to your blueprint.
 
 ## What are blueprint artifacts?
 
-Each component in the blueprint definition is known as an _artifact_. Artifacts can either have no parameters (for example, the **Deploy threat detection on SQL servers** policy, which requires no further configuration), or they can contain one or more parameters that you can configure.
+Each component in the blueprint definition is known as an _artifact_.
 
-<div style="background: yellow;">
-TODO: What are we showing here? We're talking about threat detection and now we show something about Allowed locations.
+Artifacts can either have no parameters (for example, the **Deploy threat detection on SQL servers** policy, which requires no further configuration), or they can contain one or more parameters that you can configure.
 
-The following image TODO.
-</div>
+The following screenshot shows the **Allowed locations** policy. This policy includes a parameter that specifies the allowed locations.
 
-:::image type="content" source="../media/BP-allowedlocations.png" alt-text="Screenshot showing allowed locations parameters in blueprint creation.":::
+:::image type="content" source="../media/BP-allowedlocations.png" alt-text="A screenshot showing the Allowed locations policy. This policy includes a parameter that specifies the allowed locations.":::
 
-A parameter is a configuration setting that can be defined when the blueprint definition is created or when the blueprint definition is assigned to a scope. In this way, you can maintain one standard blueprint, but have the flexibility to specify the relevant configuration parameters at each scope where the definition is assigned.
+You can specify a parameter's value when you crate the blueprint definition or when you assign the blueprint definition to a scope. This enables you to maintain one standard blueprint, but have the flexibility to specify the relevant configuration parameters at each scope where the definition is assigned.
 
 ## How will Tailwind Traders use Azure Blueprints for ISO 27001 compliance?
 
