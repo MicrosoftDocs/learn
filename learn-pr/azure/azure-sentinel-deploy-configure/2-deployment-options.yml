@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.azure-sentinel-deploy-connect.2-deployment-options
+uid: learn.azure.azure-sentinel-deploy-connect.2-consider-deployment-options
 metadata:
-  title: Unit title
-  description: TODO
+  title: Consider Deployment Options
+  description: Consider Deployment Options
   ms.date: 09/21/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Unit title
-durationInMinutes: 10
+title: Consider Deployment Options
+durationInMinutes: 6
 content: |
-  [!include[](includes/2-deployment-options.md)]
+  [!include[](includes/2-consider-deployment-options.md)]
