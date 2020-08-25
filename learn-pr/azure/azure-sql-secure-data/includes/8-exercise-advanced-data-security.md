@@ -86,7 +86,7 @@ In this exercise, you'll confirm that Advanced Data Security is enabled, and you
 
     You aren't likely to see any security alerts at this stage. In the next step, you'll run a test that will trigger an alert so that you can review the results in Advanced Threat Protection.  
 
-    Advanced Threat Protection can be used to identify threats and alert you when it suspects that any the following things is occurring:  
+    Advanced Threat Protection can be used to identify threats and alert you when it suspects that any of the following things is occurring:  
 
     * SQL injection
     * SQL injection vulnerability
