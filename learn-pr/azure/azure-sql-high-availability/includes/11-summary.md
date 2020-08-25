@@ -22,9 +22,9 @@ You've also used PowerShell in the availability exercises. To learn more about P
 
 ### High availability
 
- See the SQL Database documentation for more information about [business continuity](https://docs.microsoft.com/azure/sql-database/sql-database-business-continuity?azure-portal=true) and [high availability](https://docs.microsoft.com/azure/sql-database/sql-database-high-availability?azure-portal=true) in Azure SQL.
+See the SQL Database documentation for more information about [business continuity](https://docs.microsoft.com/azure/sql-database/sql-database-business-continuity?azure-portal=true) and [high availability](https://docs.microsoft.com/azure/sql-database/sql-database-high-availability?azure-portal=true) in Azure SQL.
 
-In the Business critical tier, you can opt in (for no additional fee) for a [zone-redundant configuration](https://docs.microsoft.com/azure/sql-database/sql-database-high-availability#zone-redundant-configuration?azure-portal=true) if your [region supports that](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true).
+In the Business Critical tier, you can opt in (for no additional fee) for a [zone-redundant configuration](https://docs.microsoft.com/azure/sql-database/sql-database-high-availability#zone-redundant-configuration?azure-portal=true) if your [region supports that](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true).
 
 ### Availability and consistency
 
