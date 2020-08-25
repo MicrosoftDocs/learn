@@ -1,8 +1,8 @@
-In the previous unit, you learned about the high-availability architecture of Azure SQL. In this exercise, you'll see how the General purpose tier of Azure SQL Database behaves similarly to a failover cluster instance on-premises. This functionality can be time consuming or tricky to set up on-premises, but you get it out of the box with Azure SQL.
+In the previous unit, you learned about the high-availability architecture of Azure SQL. In this exercise, you'll see how the General Purpose tier of Azure SQL Database behaves similarly to a failover cluster instance on-premises. This functionality can be time consuming or tricky to set up on-premises, but you get it out of the box with Azure SQL.
 
 In this exercise, you'll use the ostress tool that you might have used in the previous module to create a workload. You'll then initiate a failover by using the Azure PowerShell module in Azure Cloud Shell. Finally, you'll view the effect the failover has on the ostress workload.  
 
-## Basic high availability in the Azure SQL General purpose service tier
+## Basic high availability in the Azure SQL General Purpose service tier
 
 In this exercise, you'll complete the following steps:
 
@@ -14,7 +14,7 @@ In this exercise, you'll complete the following steps:
 
 ### Run the ostress workload
 
-The first step is to create a long-running workload. This workload allows you to see how a failover affects the ability to read and write data, and how long a failover takes in the General purpose service tier for Azure SQL Database. You'll use ostress.
+The first step is to create a long-running workload. This workload allows you to see how a failover affects the ability to read and write data, and how long a failover takes in the General Purpose service tier for Azure SQL Database. You'll use ostress.
 
 1. Open a new Command Prompt window on your local computer. Use `cd` to go to the directory in the repository you cloned or downloaded earlier that contains the availability module. For example, you might use this command:
 
