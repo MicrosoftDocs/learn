@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following statements is not true about cloud computing?"
+    - content: "Which of the following statements is NOT true about cloud computing?"
       choices:
         - content: "Iaas, Paas, and Saas are examples of cloud computing service models."
           isCorrect: false
           explanation: "Iaas, Paas, and Saas are common cloud computing service models, and are respectively Infrastructure-as-a-Service, Platform-as-a-Service, and Software-as-a-Service."
         - content: "Cloud computing resources are usually limited to specific geographic regions."
           isCorrect: true
-          explanation: "Most cloud computing resources can be distributed to global data centers."
+          explanation: "Most cloud computing resources can be distributed to global datacenters."
         - content: "Cloud computing typically decreases your operating expenses."
           isCorrect: false
           explanation: "Cloud computing typically increases your operating expenses."
