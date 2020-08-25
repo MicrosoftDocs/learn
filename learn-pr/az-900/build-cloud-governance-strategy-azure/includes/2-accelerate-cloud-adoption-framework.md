@@ -14,7 +14,7 @@ The Cloud Adoption Framework consists of tools, documentation, and proven practi
 1. Adopt the cloud
 1. Govern and manage your cloud environments
 
-:::image type="content" source="../media/caf-overview-new.png" alt-text="A flow diagram showing the cloud adoption framework stages: define strategy, plan, ready, adopt, govern, and manage." border="false":::
+:::image type="content" source="../media/2-framework-stages.png" alt-text="A flow diagram showing the cloud adoption framework stages: define strategy, plan, ready, adopt, govern, and manage." border="false":::
 
 The Govern stage focuses on cloud governance. You can refer back to the Cloud Adoption Framework for recommended guidance as you build your cloud governance strategy.
 

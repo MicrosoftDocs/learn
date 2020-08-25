@@ -48,4 +48,4 @@ You manage access permissions on the **Access control (IAM)** blade in the Azure
 
 The following screenshot shows an example of the **Access control (IAM)** blade for a resource group. In this example, Alain Charon has been assigned the **Backup Operator** role for this resource group.
 
-:::image type="content" source="../media/role-based-access-control-blade.png" alt-text="A screenshot that shows the access control role assignment blade. In the access control pane, settings and permissions for a user are shown.":::
+:::image type="content" source="../media/4-role-based-access-control-blade.png" alt-text="A screenshot that shows the access control role assignment blade. In the access control pane, settings and permissions for a user are shown.":::

@@ -31,7 +31,7 @@ Artifacts can either have no parameters (for example, the **Deploy threat detect
 
 The following screenshot shows the **Allowed locations** policy. This policy includes a parameter that specifies the allowed locations.
 
-:::image type="content" source="../media/BP-allowedlocations.png" alt-text="A screenshot showing the Allowed locations policy. This policy includes a parameter that specifies the allowed locations.":::
+:::image type="content" source="../media/10-allowed-locations.png" alt-text="A screenshot showing the Allowed locations policy. This policy includes a parameter that specifies the allowed locations.":::
 
 You can specify a parameter's value when you crate the blueprint definition or when you assign the blueprint definition to a scope. This enables you to maintain one standard blueprint, but have the flexibility to specify the relevant configuration parameters at each scope where the definition is assigned.
 
@@ -49,6 +49,6 @@ As an IT administrator, you decide to investigate the **ISO 27001: Shared Servic
 
 The following image shows artifacts that are created when you run an ISO 27001 blueprint from a template:
 
-:::image type="content" source="../media/iso27001shared-blueprint.png" alt-text="Screenshot showing artifacts listed when creating an ISO 27001 blueprint from template.":::
+:::image type="content" source="../media/10-iso-27001-shared-blueprint.png" alt-text="Screenshot showing artifacts listed when creating an ISO 27001 blueprint from template.":::
 
 You see that the blueprint template contains policy assignments, ARM templates, and resource groups. The blueprint deploys these artifacts to any existing subscriptions within the **PROD-MG** management group. The blueprint also deploys these artifacts to any new subscriptions as they are created and added to the management group.

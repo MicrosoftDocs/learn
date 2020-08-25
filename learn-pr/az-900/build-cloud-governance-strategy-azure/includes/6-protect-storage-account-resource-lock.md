@@ -62,7 +62,7 @@ Here, you verify protection by attempting to delete the resource group.
 
     You see a message that tells you that the resource group is locked and can't be deleted.
 
-    :::image type="content" source="../media/delete-locks-failed.png" alt-text="A screenshot of the failure message. The message tells you that the resource cannot be deleted because it is locked.":::
+    :::image type="content" source="../media/6-delete-locks-failed.png" alt-text="A screenshot of the failure message. The message tells you that the resource cannot be deleted because it is locked.":::
 
 ## Protect a storage account from accidental deletion
 
@@ -97,7 +97,7 @@ Here you add a storage account to your resource group and see how the lock from 
 
     You see a message that tells you the resource or its parent is locked and can't be deleted.
 
-    :::image type="content" source="../media/error.png" alt-text="A screenshot of the Azure portal showing the error message. The error message states that the storage account can't be deleted because the resource or its parent resource group is locked.":::
+    :::image type="content" source="../media/6-delete-failed.png" alt-text="A screenshot of the Azure portal showing the error message. The error message states that the storage account can't be deleted because the resource or its parent resource group is locked.":::
 
 Although you did not create a lock specifically for the storage account, the lock you created for the parent resource group prevents you from deleting the resource. In other words, the storage account inherits the lock from the parent resource group.
 

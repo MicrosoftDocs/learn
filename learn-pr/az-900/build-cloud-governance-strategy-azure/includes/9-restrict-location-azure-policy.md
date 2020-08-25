@@ -77,7 +77,7 @@ Here you configure the allowed location policy by using Azure Policy and then yo
     1. Select the **Allowed locations** definition.
     1. Select the **Select** button.
 
-    :::image type="content" source="../media/available-definitions-pane.png" alt-text="A screenshot of the Azure portal showing the search bar. In the results pane, the Allowed locations policy definition is highlighted.":::
+    :::image type="content" source="../media/9-available-definitions-pane.png" alt-text="A screenshot of the Azure portal showing the search bar. In the results pane, the Allowed locations policy definition is highlighted.":::
 
     This policy definition specifies the location into which all resources must be deployed. If a different location is chosen, deployment will fail.
 
