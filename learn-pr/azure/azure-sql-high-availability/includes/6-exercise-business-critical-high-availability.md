@@ -1,20 +1,20 @@
-In this exercise, you'll upgrade your database to the Business critical tier. You'll see how it provides read replicas and increased performance.
+In this exercise, you'll upgrade your database to the Business Critical tier. You'll see how it provides read replicas and increased performance.
 
 You'll use the ostress tool you used in the previous exercise to create a workload. You'll then initiate a failover by using the Azure PowerShell module in Azure Cloud Shell. Finally, you'll view the effect the failover has on the ostress workload.  
 
-## Basic high availability in the Azure SQL Business critical service tier
+## Basic high availability in the Azure SQL Business Critical service tier
 
 In this exercise, you'll complete the following steps:
 
-1. Deploy the database from the previous exercise in the Business critical tier.
+1. Deploy the database from the previous exercise in the Business Critical tier.
 1. Run the ostress workload.  
 1. Use PowerShell to initiate a failover.  
 1. View the results in ostress.  
 1. Connect to a readable secondary.
 
-## Deploy the same database in the Business critical tier
+## Deploy the same database in the Business Critical tier
 
-In a previous module of this learning path, you learned how to scale a database by using T-SQL. The goal of this exercise is to upgrade the database that you used in the previous exercise from General purpose to Business critical. You'll use Azure CLI commands in Azure Cloud Shell to upgrade the database. Because there's a limit on the frequency of failovers, you'll use the same sample database but name it AdventureWorks-bc.  
+In a previous module of this learning path, you learned how to scale a database by using T-SQL. The goal of this exercise is to upgrade the database that you used in the previous exercise from General Purpose to Business Critical. You'll use Azure CLI commands in Azure Cloud Shell to upgrade the database. Because there's a limit on the frequency of failovers, you'll use the same sample database but name it AdventureWorks-bc.  
 
 1. In the Azure Cloud Shell terminal on the right side of this page, run the following PowerShell script to configure your environment:  
 
@@ -31,7 +31,7 @@ In a previous module of this learning path, you learned how to scale a database 
     az configure --list-defaults
     ```
 
-1. Run this command to create a database in the Business critical service tier:
+1. Run this command to create a database in the Business Critical service tier:
 
     ```powershell
     az sql db create --name $database `
@@ -56,7 +56,7 @@ In a previous module of this learning path, you learned how to scale a database 
       > Availability Zones are available only in [certain regions](https://docs.microsoft.com/azure/availability-zones/az-overview#services-support-by-region?azure-portal=true). They're not currently available in Azure SQL Managed Instance.  
 
 1. After the database is created, you should see detailed information about the updates in the Azure Cloud Shell output. You'll see two main categories (though you'll also see indicators under several other properties):  
-    * `currentServiceObjectiveName`: Should be `BC_Gen5_2`. `BC` stands for Business critical.  
+    * `currentServiceObjectiveName`: Should be `BC_Gen5_2`. `BC` stands for Business Critical.  
     * `currentSku`:  
         * `name`: Should be `BC_Gen5`.
         * `tier`: Should be `BusinessCritical`.  
@@ -103,9 +103,9 @@ As in the previous exercise, you'll use ostress to repeatedly query your Azure S
         -DatabaseName $database
     ```
 
-1. While this command is running, you should observe any changes that appear in the terminal. You'll notice that you can't access the database while the failover occurs. This time is very short. After you become disconnected, you should be reconnected after about 5 seconds! This failover is more than six times faster than the one in the General purpose tier.  
+1. While this command is running, you should observe any changes that appear in the terminal. You'll notice that you can't access the database while the failover occurs. This time is very short. After you become disconnected, you should be reconnected after about 5 seconds! This failover is more than six times faster than the one in the General Purpose tier.  
 
-    Remember that databases or managed instances in the Business critical service tier essentially have an Always On availability group deployed behind the scenes. So when you fail over, all that happens is a change in pointers in the back end as Azure redirects you to one of the secondaries. That's why the failover is so much faster than it would be in General purpose.
+    Remember that databases or managed instances in the Business Critical service tier essentially have an Always On availability group deployed behind the scenes. So when you fail over, all that happens is a change in pointers in the back end as Azure redirects you to one of the secondaries. That's why the failover is so much faster than it would be in General Purpose.
 
 ## Connect to the read-only replica
 
