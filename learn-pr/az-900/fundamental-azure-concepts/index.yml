@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.azure.fundamental-azure-concepts
 metadata:
-  title: Fundamental Azure Concepts
-  description: TODO
+  title: Discuss Azure fundamental concepts
+  description: Learn about the different types and categories of cloud computing.
   ms.date: 09/15/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Fundamental Azure Concepts
-summary: TODO
+title: Discuss Azure fundamental concepts
+summary: Are you interested in the cloud, but aren't sure what it can do for you? In this module, you'll learn about the advantages of using cloud computing services, and you'll learn to differentiate between the categories and types of cloud computing.
 abstract: | 
   Upon completion of this module, you'll be able to:
   - Identify the benefits and considerations of using cloud services
@@ -18,13 +18,14 @@ abstract: |
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
   - Familiarity with cloud computing is helpful, but isn't necessary
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/fundamental-azure-concepts.svg
 levels:
 - beginner
 roles:
 - administrator
-- developer
 - solution-architect
+- developer
+- student
 products:
 - azure
 - azure-functions
