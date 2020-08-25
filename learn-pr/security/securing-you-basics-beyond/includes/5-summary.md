@@ -1,4 +1,4 @@
-In this module, you learned about phishing, how to identify it and what to do if you recieve an email that looks suspicious. 
+In this module, you learned about phishing, how to identify it and what to do if you receive an email that looks suspicious. 
 
 You learned about what makes a good password. You learned how to use passphrases to make your credentials even more secure, why you should ensure you use a unique password for each account, and how to store your credentials securely in a password manager.
 
@@ -15,7 +15,9 @@ As our online neighborhood continues to evolve, it is always important to contin
 
 The resources below highlight additional areas to explore, and even more ways to secure yourself online. As security truly starts with us, the more knowledge and understanding we have around securing our personal information, the harder it will be for criminals to get access to it.
 
-### Resources
+### Learn more
+
+To learn more about keeping yourself secure, visit the following resources:
 
 - *Check your current accounts*
   - [Have I Been Pwned](https://www.haveibeenpwned.com)

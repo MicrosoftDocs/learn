@@ -1,14 +1,14 @@
-Imagine you are looking through your emails and you see something from one of your social media accounts. Everything looks official. It asks you to log in to your account and verify your contact information is correct. You select the link in the email, and log into what looks like your account.
+Imagine you are looking through your emails and you see something from one of your social media accounts. Everything looks official. It asks you to log in to your account and verify your contact information is correct. You select the link in the email, and log in to what looks like your account.
 
 Unfortunately, in that moment, an attacker has successfully stolen your account login information.
 
-This email-based, *social engineering* technique is called *phishing*. Attackers successfully use this technique very frequently, regularly sending [over billions of phishing emails every year.](https://www.microsoft.com/security/blog/2019/12/11/the-quiet-evolution-of-phishing/?azure-portal=true)
+This email-based, *social engineering* technique is called *phishing*. Attackers successfully use this technique frequently, regularly sending [over billions of phishing emails every year.](https://www.microsoft.com/security/blog/2019/12/11/the-quiet-evolution-of-phishing/?azure-portal=true)
 
 There are ways to identify and protect yourself from phishing. Let's take a closer look at phishing and how you can protect yourself to avoid becoming a victim.
 
 ## What is phishing?
 
-Phishing is the attempt to obtain sensitive information from an individual or an organization through fraudulent emails that appear to be from legitimate senders. Phishing emails are usually written in a way to convince you to do one of two things:
+Phishing is the attempt to obtain sensitive information from an individual or an organization through fraudulent emails that appear to be from legitimate senders. Phishing emails are written in a way to convince you to do one of two things:
 
 - Select a link and navigate to a dangerous webpage.
 - Select an attachment, which runs a dangerous program.
@@ -22,7 +22,7 @@ One of the most infamous types of *malware* is the dreaded *ransomware*, capable
 > [!TIP]
 > If you are permanently locked out of your computer, and suspect it may be ransomware, there are rare cases where ransomware decryption keys are made available for free. These decryption keys allow you to unlock your computers and get your data back. You can get more information here: [NoMoreRansom.org](https://www.nomoreransom.org/?azure-portal=true). But this is no excuse to take a relaxed approach to phishing attachments. Most ransomware attacks will not be fixed with this option.
 
-Phishing is one of the most common threats on the internet, and can affect anyone regardless of their background. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is very popular, and unfortunately a very successful way for a criminal to steal your data.
+Phishing is one of the most common threats on the internet, and can affect anyone regardless of their background. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is popular, and unfortunately a successful way for a criminal to steal your data.
 
 :::image type="content" source="../media/2-phishing-stats.png" alt-text="Phishing Statistics.":::
 
@@ -46,7 +46,7 @@ First, recognize phishing! Here are some common features of phishing attacks tha
 
 - **Attachments**: If your email has an attachment that you don’t expect, it could be phishing, and that attachment could be dangerous.
 - **Unusual hyperlinks**: Be aware of any links in emails. If you hover over a link and the destination looks odd, it could be a dangerous website. One click is all it takes to go to a bad website, get ransomware, or other malware installed on your computer or smartphone.
-- **Urgency**: If something says you need to do something *right now*, it could be a phishing email. Remember, your bank usually doesn’t reach out to you with no warning using an email subject of *We are cancelling all of your accounts!*
+- **Urgency**: If something says you need to do something *right now*, it could be a phishing email. Remember, your bank usually doesn’t reach out to you with no warning using an email subject of *We are canceling all of your accounts!*
 - **Bad spelling or grammar**: Phishing emails are often full of unusual writing, spelling, and grammar errors. If the email looks suspicious, you should avoid interacting with it.
 - **Fake sender**: If the email address looks unusual or is someone you don’t recognize, best to treat it as a phishing email.
 
@@ -60,7 +60,7 @@ Watch the following video that goes into details of what to look for and how to 
 
 Now that you recognize phishing email, let’s talk about the second way to protect yourself. Don’t do anything! If you don’t click any links and don’t open any attachments in a phishing email, you should be safe.
 
-If you aren’t quite sure about an email from a friend or family member, you still don’t need to click any links or open any attachments. You can give them a call or send a text message and ask if they sent you anything.
+If you aren’t sure about an email from a friend or family member, you still don’t need to click any links or open any attachments. You can give them a call or send a text message and ask if they sent you anything.
 
 Use the *report phishing* feature that may be present in your email app or website. This will notify the email provider to the phishing email addresses used, permanently add them to a spam list if identified as phishing, and removes it from your inbox. You'll not only be protecting yourself, but everyone else that uses email.
 
