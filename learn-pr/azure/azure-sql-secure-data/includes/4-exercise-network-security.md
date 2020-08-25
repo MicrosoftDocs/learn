@@ -25,7 +25,7 @@ In this exercise, you'll see how to view and edit your firewall rules. Setting t
 
     :::image type="content" source="../media/4-db-refresh.png" alt-text="Screenshot of how to refresh database connection.":::  
 
-1. Optionally, you can create a new query and check to see how you're connecting to your Azure SQL Database instance by running the following Transact-SQL (T-SQL) query:  
+1. Optionally, you can create a new query and check to see how you're connecting to your Azure SQL Database instance by running the following T-SQL query:  
 
     ```sql
     SELECT client_net_address FROM sys.dm_exec_connections WHERE session_id=@@SPID;
