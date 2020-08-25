@@ -27,9 +27,9 @@ This exercise will guide you through configuring auto-failover groups for your A
     $ipAddress = "xx.xx.xx.xx"
     ```
 
-1. Run the updated command in the Azure Cloud Shell (on the right side of this page).
+1. Run the updated command in Azure Cloud Shell (on the right side of this page).
 
-1. Run this script in the Azure Cloud Shell to configure your variables for the steps that follow:
+1. Run this script in Azure Cloud Shell to configure your variables for the steps that follow:
 
     ```powershell
     $admin = "cloudadmin"
