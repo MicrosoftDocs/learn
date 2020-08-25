@@ -70,6 +70,6 @@ Multi-Factor Authentication comes as part of the following offerings:
 
 * **Azure Active Directory Premium** or **Microsoft 365 Business** - Both of these offerings support Azure Multi-Factor Authentication using Conditional Access policies to require multi-factor authentication.
 
-* **Azure AD Free** or standalone **Office 365** licenses - Use pre-created Conditional Access baseline protection policies to require multi-factor authentication for your users and administrators.
+* **Azure AD Free** or standalone **Microsoft 365** licenses - Use pre-created Conditional Access baseline protection policies to require multi-factor authentication for your users and administrators.
 
 * **Azure Active Directory Global Administrators** - A subset of Azure Multi-Factor Authentication capabilities are available as a means to protect global administrator accounts.
