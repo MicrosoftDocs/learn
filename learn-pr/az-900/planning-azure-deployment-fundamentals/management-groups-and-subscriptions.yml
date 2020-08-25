@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.planning-azure-deployment-fundamentals.management-groups-and-subscriptions
-title: Azure Management Groups and Subscriptions
+title: Azure Subscriptions and Management Groups
 metadata:
-  title: Azure Management Groups and Subscriptions
+  title: Azure Subscriptions and Management Groups
   description: In this unit, you'll learn about Azure Subscriptions and Management Groups.
   ms.date: 09/15/2020
   author: rmcmurray
