@@ -1,7 +1,7 @@
-Until now, we only have been using superpositions with real positive amplitudes.
+Until now, you've been using superpositions only with real positive amplitudes.
 You might be wondering, why not use directly the probabilities to represent the
 superposition? Well, this aspect is one of the main ingredients that makes
-quantum computing work. Let's explain it.
+quantum computing work. Let's examine this further.
 
 ## Waves of probabilities
 
