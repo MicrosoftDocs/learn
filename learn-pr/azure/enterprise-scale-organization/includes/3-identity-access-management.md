@@ -1,5 +1,3 @@
-# Identity and access management
-
 Identity provides the basis of a large percentage of security assurance. It enables access based on identity authentication and authorization controls in cloud services to protect data and resources and to decide which requests should be permitted.
 
 Identity and access management (IAM) is boundary security in the public cloud. It must be treated as the foundation of any secure and fully compliant public cloud architecture. Azure offers a comprehensive set of services, tools, and reference architectures to enable organizations to make highly secure, operationally efficient environments as outlined here.
@@ -68,27 +66,3 @@ A critical design decision that an enterprise organization must make when adopti
 
 - Consider centralized and delegated responsibilities to manage resources deployed inside the landing zone.
 - Applications that rely on domain services and use older protocols can use Azure AD DS.
-
-## Knowledge check
-
-Where should Azure Control Plane Groups live?
-
-- On-Premise AD – The group will not be able to 
-- On-premise AD synced to Azure AD
-- Azure AD only – You are managing your control plane on Azure only, so having this group on premise creates overhead with no functional benefit. Always create groups in Azure AD if they don’t manage anything on premise. 
-
-How should resource to resource authentication occur?
-
-- By using Managed Services Identities - The feature provides Azure services with an automatically managed identity in Azure AD. You can use the identity to authenticate to any service that supports Azure AD authentication, including Key Vault, without any credentials in your code.
-- By using Password Based Authentication – this is a static method and not best practice as securely storing these credentials creates management overhead
-- Use Azure Key Vault – key vault provides storage to your keys and secrets but it’s not responsible for initiating authentication
-
-It’s best practice to create as many custom roles as possible.
-
-- True
-- False - Custom roles should only be assigned as needed for specific use cases for your organization as built-in policies already cover most scenarios
-
-It’s best practice Subscription owners should have contributor rights to Microsoft Authorization rights
-
-- True
-- False - Subscription owners should have contributor rights to resources within the subscription that are not centrally shared. Granting Microsoft Authorization which is centrally managed will allow the owner modify perm

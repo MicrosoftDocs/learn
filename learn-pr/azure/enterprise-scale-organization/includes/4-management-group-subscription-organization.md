@@ -1,5 +1,3 @@
-# Management group and subscription organization
-
 ![Figure 1:  Management group hierarchy](../media/4-sub-org.png)
 
 ## Define a management group hierarchy
