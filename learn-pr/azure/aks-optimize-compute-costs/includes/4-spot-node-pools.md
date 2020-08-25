@@ -51,17 +51,17 @@ Use spot node pools to:
 - Define the maximum price you want to pay per hour.
 - Enable the recommended AKS Kubernetes cluster autoscaler when using spot node pools.
 
-For example, to support the batch-processing service of the drone-tracking application, you can create a spot node pool and enable the cluster autoscaler. You then configure the horizontal pod scaler to deploy additional batch-processing services to match resource demands.
+For example, to support the batch-processing service of the drone-tracking application, you can create a spot user node pool and enable the cluster autoscaler. You then configure the horizontal pod scaler to deploy additional batch-processing services to match resource demands.
 
 As the demand for nodes increases, the cluster autoscaler can scale the number of nodes up and down in the spot node pool. If node evictions happen, the cluster autoscaler keeps trying to scale up the node count if additional nodes are still needed.
 
 ## Spot node pool limitations
 
-Before you decide to add a spot node pool to your AKS cluster, consider the following limitations:
+Before you decide to add a spot user node pool to your AKS cluster, consider the following limitations:
 
 - The underlying spot scale set is deployed only to a single fault domain and offers no high-availability guarantees.
 - The AKS cluster needs multiple node-pool support to be enabled.
-- You can use spot node pools only as secondary pools.
+- You can use spot node pools only as user node pools.
 - Spot node pools can't be upgraded.
 - The creation of spot VMs isn't guaranteed. The creation of spot nodes depends on capacity and quota availability in the cluster's deployed Azure region.
 
@@ -97,7 +97,7 @@ To register the **spotpoolpreview** feature:
     az feature register --namespace "Microsoft.ContainerService" --name "spotpoolpreview"
     ```
 
-1. The registration of the resource provider requires a refresh when the feature is registered. To check the status of the registration, query the resource provider's feature list. The `az feature list` query returns the value **Registered** what it's complete. Here's an example of the query command:
+1. The registration of the resource provider requires a refresh when the feature is registered. To check the status of the registration, query the resource provider's feature list. The `az feature list` query returns the value **Registered** when it's complete. Here's an example of the query command:
 
     ```azurecli
     az feature list -o table --query "[?contains(name, 'Microsoft.ContainerService/spotpoolpreview')].{Name:name,State:properties.state}"
@@ -135,7 +135,7 @@ az extension update --name aks-preview
 
 ## Add a spot node pool to an AKS cluster
 
-A spot node pool can't be a primary node pool for an AKS cluster. You'll first create your cluster and then use the `az aks nodepool add` command to add a new user node pool.
+A spot node pool can't be a system node pool for an AKS cluster. You'll first create your cluster and then use the `az aks nodepool add` command to add a new user node pool.
 
 You set several parameters for a new node pool to configure it as a spot node pool.
 
@@ -221,16 +221,16 @@ Here's an example of a workload that has toleration added for spot node pools.
 apiVersion: v1
 kind: Pod
 metadata:
-    name: nginx
-    labels:
+  name: nginx
+  labels:
     env: test
 spec:
-    containers:
-    - name: nginx
+  containers:
+  - name: nginx
     image: nginx
     imagePullPolicy: IfNotPresent
-    tolerations:
-    - key: "kubernetes.azure.com/scalesetpriority"
+  tolerations:
+  - key: "kubernetes.azure.com/scalesetpriority"
     operator: "Equal"
     value: "spot"
     effect: "NoSchedule"
