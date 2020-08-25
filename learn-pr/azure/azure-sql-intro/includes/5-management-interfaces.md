@@ -28,7 +28,7 @@ Azure SQL also supports REST APIs for the management of SQL managed instances an
 
 Popular command-line interfaces like sqlcmd and bcp are supported with Azure SQL services.
 
-Also, Azure CLI and Azure PowerShell cmdlets are supported for specific Azure SQL service scenarios. All these CLIs are supported across Windows, macOS, and Linux clients. Tools like sqlcmd and az are pre-installed in the Azure Cloud Shell.
+Also, Azure CLI and Azure PowerShell cmdlets are supported for specific Azure SQL service scenarios. All these CLIs are supported across Windows, macOS, and Linux clients. Tools like sqlcmd and az are pre-installed in Azure Cloud Shell.
 
 :::image type="content" source="../media/5-cloud-shell.png" alt-text="Screenshot that shows the Azure Cloud Shell.":::
 
