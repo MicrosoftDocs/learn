@@ -90,7 +90,7 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature.
 
     az aks enable-addons \
         --addons azure-policy \
-        --name myAKSCuster \
+        --name myAKSCluster \
         --resource-group myResourceGroup
     ```
 
