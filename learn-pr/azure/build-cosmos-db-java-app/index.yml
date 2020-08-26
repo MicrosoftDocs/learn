@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.cosmos-db-java-app-with-vscode
+uid: learn.cosmos-db-java-app
 metadata:
-  title: Build a Java app for Azure Cosmos DB in Visual Studio Code
-  description: Learn how to create a Java application to store and query data in Azure Cosmos DB by using Visual Studio Code.
-  ms.date: 08/12/2020
+  title: Build a Java app for Azure Cosmos DB
+  description: Learn how to create a Java application to store and query data in Azure Cosmos DB
+  ms.date: 08/26/2020
   author: anfeldma-ms
   ms.author: anfeldma
   ms.topic: interactive-tutorial
@@ -29,13 +29,11 @@ roles:
 products:
 - azure
 - azure-cosmos-db
-- vs
-- vs-code
 units:
-- learn.cosmos-db-java-app-with-vscode.1-introduction
-- learn.cosmos-db-java-app-with-vscode.3-setup
-- learn.cosmos-db-java-app-with-vscode.4-crud-operations
-- learn.cosmos-db-java-app-with-vscode.5-query
-- learn.cosmos-db-java-app-with-vscode.7-summary
+- learn.cosmos-db-java-app.1-introduction
+- learn.cosmos-db-java-app.2-setup
+- learn.cosmos-db-java-app.3-crud-operations
+- learn.cosmos-db-java-app.4-query
+- learn.cosmos-db-java-app.5-summary
 badge:
   uid: learn.cosmos-db-java-app.badge
