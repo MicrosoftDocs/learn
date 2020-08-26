@@ -114,7 +114,7 @@ Here you attempt to add a storage account to your resource group at a location t
     If you previously selected **Japan East** in your location policy, select a different region from the list.
 1. Select **Review + Create**.
 
-    You see a message that states that the deployment failed due to the policy violation.
+    You see a message that states that the deployment failed due to the policy violation. Here's an example that shows the error message for a storage account that's named **mysa1234**:
 
     :::image type="content" source="../media/10-create-sa-error-policy-violation.png" alt-text="A screenshot of the Azure portal showing the error message. The error message states that the deployment failed due to a policy violation.":::
 

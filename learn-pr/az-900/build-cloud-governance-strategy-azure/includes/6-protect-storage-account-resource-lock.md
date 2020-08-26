@@ -95,7 +95,7 @@ Here you add a storage account to your resource group and see how the lock from 
 
     :::image type="content" source="../media/7-portal-delete-sa.png" alt-text="A screenshot of the Azure portal showing the location of the Delete button.":::
 
-    You see a message that tells you the resource or its parent is locked and can't be deleted.
+    You see a message that tells you the resource or its parent is locked and can't be deleted. Here's an example that shows the error message for a storage account that's named **mysa1234**:
 
     :::image type="content" source="../media/6-delete-failed.png" alt-text="A screenshot of the Azure portal showing the error message. The error message states that the storage account can't be deleted because the resource or its parent resource group is locked.":::
 
