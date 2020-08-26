@@ -41,10 +41,10 @@ Here are the steps that make up this stage:
 
 |  |  |
 |--|--|
-| <br> ![1](../media/1.png) | <br> **Digital estate**: Create an inventory of the existing digital assets and workloads that you plan to migrate to the cloud. |
-| <br> ![2](../media/2.png) | <br> **Initial organizational alignment**: Ensure that the right people are involved in your migration efforts, both from a technical standpoint as well as from a cloud governance standpoint. |
-| <br> ![3](../media/3.png) | <br> **Skills readiness plan**: Build a plan that helps individuals build the skills they need to operate in the cloud. |
-| <br> ![4](../media/4.png) | <br> **Cloud adoption plan**: Build a comprehensive plan that brings together the development, operations, and business teams towards a shared cloud adoption goal. |
+| <br> **Digital estate**: Create an inventory of the existing digital assets and workloads that you plan to migrate to the cloud. | <br> ![1](../media/1.png) |
+| <br> **Initial organizational alignment**: Ensure that the right people are involved in your migration efforts, both from a technical standpoint as well as from a cloud governance standpoint. | <br> ![2](../media/2.png) |
+| <br> **Skills readiness plan**: Build a plan that helps individuals build the skills they need to operate in the cloud. | <br> ![3](../media/3.png) |
+| <br> **Cloud adoption plan**: Build a comprehensive plan that brings together the development, operations, and business teams towards a shared cloud adoption goal. | <br> ![4](../media/4.png) |
 
 ### Ready your organization
 
@@ -69,10 +69,10 @@ Here are the steps that make up the migrate part of this stage:
 
 |  |  |
 |--|--|
-| <br> ![1](../media/1.png) | <br> **Migrate your first workload**: Use the Azure migration guide to deploy your first project to the cloud. |
-| <br> ![2](../media/2.png) | <br> **Migration scenarios**: Use additional in-depth guides to explore more complex migration scenarios. |
-| <br> ![3](../media/3.png) | <br> **Best practices**: Check in with the Azure cloud migration best practices checklist to verify that you're following recommended practices. |
-| <br> ![4](../media/4.png) | <br> **Process improvements**: Identify ways to make the migration process scale while requiring less effort. |
+| <br> **Migrate your first workload**: Use the Azure migration guide to deploy your first project to the cloud. | <br> ![1](../media/1.png) |
+| <br> **Migration scenarios**: Use additional in-depth guides to explore more complex migration scenarios. | <br> ![2](../media/2.png) |
+|<br> **Best practices**: Check in with the Azure cloud migration best practices checklist to verify that you're following recommended practices. | <br> ![3](../media/3.png) | 
+| <br> **Process improvements**: Identify ways to make the migration process scale while requiring less effort. | <br> ![4](../media/4.png) |
 
 Here are the steps that make up the innovate part of this stage:
 
@@ -91,10 +91,10 @@ Here are the steps that make up the govern part of this stage:
 
 |  |  |
 |--|--|
-| <br> ![1](../media/1.png) | <br> **Methodology**: Consider your end state solution. Then define a methodology incrementally takes you from your first steps all the way to full cloud governance. |
-| <br> ![2](../media/2.png) | <br> **Benchmark**: Use the [governance benchmark tool](https://cafbaseline.com/?azure-portal=true) to assess your current state and future state to establish a vision for applying the framework. |
-| <br> ![3](../media/3.png) | <br> **Initial governance foundation**: Create an MVP that captures the first steps of your governance plan. |
-| <br> ![4](../media/4.png) | <br> **Improve the initial governance foundation**: Iteratively add governance controls that address tangible risks as you progress toward your end state solution. |
+| <br> **Methodology**: Consider your end state solution. Then define a methodology incrementally takes you from your first steps all the way to full cloud governance. | <br> ![1](../media/1.png) |
+| <br> **Benchmark**: Use the [governance benchmark tool](https://cafbaseline.com/?azure-portal=true) to assess your current state and future state to establish a vision for applying the framework. | <br> ![2](../media/2.png) |
+| <br> **Initial governance foundation**: Create an MVP that captures the first steps of your governance plan. | <br> ![3](../media/3.png) |
+| <br> **Improve the initial governance foundation**: Iteratively add governance controls that address tangible risks as you progress toward your end state solution. | <br> ![4](../media/4.png) |
 
 Here are the steps that make up the manage part of this stage:
 
