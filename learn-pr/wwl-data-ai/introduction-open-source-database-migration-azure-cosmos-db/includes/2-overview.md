@@ -29,7 +29,7 @@ Azure Cosmos DB is a cloud-based multi-model, globally distributed database syst
 
 As well as hosting data close to users with more than 54 regions in the public cloud, you can add further Azure regions to your Cosmos DB solution at any time. By adding regions, you will then have automatic replication and the ability to host data close to users even if that user base is globally distributed. This replication uses a multi master model and so there does not need to be a publisher and subscribers. The model will appear to users as if they are all using a single centralized database.
 
-By integrating with Azure and replicating across multiple regions, Cosmos DB provides a service level agreement (SLA) for 99.999% availability. Cosmos DB is used by many Microsoft products and services including Skype, Xbox, and Office 365, and has therefore been thoroughly tested over a long period of time since its inception as Project Florence in 2010 and then public availability as Azure DocumentDB.
+By integrating with Azure and replicating across multiple regions, Cosmos DB provides a service level agreement (SLA) for 99.999% availability. Cosmos DB is used by many Microsoft products and services including Skype, Xbox, and Microsoft 365, and has therefore been thoroughly tested over a long period of time since its inception as Project Florence in 2010 and then public availability as Azure DocumentDB.
 
 Cosmos DB has a choice of APIs to interact with your data. These APIs include SQL, MongoDB, Cassandra, Gremlin, and Azure Table Storage and are likely to be joined by more APIs in the future.
 
