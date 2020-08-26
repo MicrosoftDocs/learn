@@ -17,4 +17,4 @@ After completing this module, you'll be able to:
 * Describe what a service-level agreement (SLA) is and why SLAs are important.
 * Identify factors, such as the service tier you choose, that can impact an SLA.
 * Combine SLAs to compute a composite SLA.
-* Describe the service lifecycle in Azure, including how preview features move to general availability.
+* Describe the service lifecycle in Azure, including how to access new capabilities that are coming to Azure.
