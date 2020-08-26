@@ -38,6 +38,13 @@ Once you have those classes created to represent your users, you'll create new u
 
         public User() {
             this.orderHistory = new ArrayList<OrderHistory>();
+            this.coupons = new ArrayList<CouponsUsed>();
+            this.id="";
+            this.userId="";
+            this.lastName="";
+            this.firstName="";
+            this.email="";
+            this.dividend="";
         }
 
         public String getId() { return this.id; }
@@ -62,9 +69,14 @@ Once you have those classes created to represent your users, you'll create new u
 
     public class OrderHistory
     {
-        public string orderId { get; set; }
-        public string dateShipped { get; set; }
-        public string total { get; set; }
+        public string orderId;
+        public string dateShipped;
+        public string total;
+
+        public String getOrderId(){return this.orderId;}
+        public void setOrderId(String orderId){this.orderId=orderId;}
+        public String getDateShipped(){return this.dateShipped;}
+        public void setDateShipped(String dateShipped){this.dateShipped=dateShipped;}
     }
 
     public class ShippingPreference
@@ -100,7 +112,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
 
-    ```csharp
+    ```java
     private async Task CreateUserDocumentIfNotExists(string databaseName, string containerName, User user)
     {
         try
@@ -125,7 +137,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 1. Then, return to the **BasicOperations** method and add the following to the end of that method.
 
-    ```csharp
+    ```java
     User yanhe = new User
     {
         Id = "1",
@@ -223,7 +235,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 1. To read documents from the database, copy in the following code and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
 
-    ```csharp
+    ```java
     private async Task ReadUserDocument(string databaseName, string containerName, User user)
     {
         try
@@ -247,7 +259,7 @@ Once you have those classes created to represent your users, you'll create new u
 
 1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
 
-    ```csharp
+    ```java
     await this.ReadUserDocument("Users", "WebCustomers", yanhe);
     ```
 
@@ -276,7 +288,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
 1. Copy and paste the **ReplaceUserDocument** method after the **ReadUserDocument** method in the Program.cs file.
 
-    ```csharp
+    ```java
     private async Task ReplaceUserDocument(string databaseName, string containerName, User updatedUser)
     {
         try
@@ -300,7 +312,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
 1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
 
-    ```csharp
+    ```java
     yanhe.LastName = "Suh";
     await this.ReplaceUserDocument("Users", "WebCustomers", yanhe);
     ```
@@ -330,7 +342,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
 1. Copy and paste the **DeleteUserDocument** method underneath your **ReplaceUserDocument** method.
 
-    ```csharp
+    ```java
     private async Task DeleteUserDocument(string databaseName, string containerName, User deletedUser)
     {
         try
@@ -354,7 +366,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
 1. Copy and paste the following code in the end of the **BasicOperations** method.
 
-    ```csharp
+    ```java
     await this.DeleteUserDocument("Users", "WebCustomers", yanhe);
     ```
 
