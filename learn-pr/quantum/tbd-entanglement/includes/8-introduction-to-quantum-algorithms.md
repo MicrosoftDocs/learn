@@ -135,7 +135,7 @@ A high-level outline of the algorithm is:
 
 1. Initialize the quantum register to a well-known superposition state.
 1. Apply a sequence of operations involving a call of the oracle for each
-   iteration. This sequence is designed to exploit interference and entanglement
+   iteration (repeating steps 3-6 in the figure below). This sequence is designed to exploit interference and entanglement
    to increase the probability amplitude of the target elements.
 1. Perform a measurement to obtain the desired target elements with high
    probability.
