@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Set up your Java app using Maven
 durationInMinutes: 15
 content: |
-  [!include[](includes/3-setup.md)]
+  [!include[](includes/2-setup.md)]

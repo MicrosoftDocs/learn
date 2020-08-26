@@ -48,67 +48,93 @@ Once you have those classes created to represent your users, you'll create new u
         }
 
         public String getId() { return this.id; }
-        public void setId(String id) {}
+        public void setId(String id) {this.id = id;}
         public String getUserId() { return this.userId; }
-        public void setUserId { get; set; }
+        public void setUserId(String userId) { this.userId = userId; }
         public String getLastName() { return this.lastName; }
-        public void setLastName { get; set; }
+        public void setLastName(String lastName) { this.lastName = lastName; }
         public String getFirstName() { return this.firstName; }
-        public void setFirstName { get; set; }
+        public void setFirstName(String firstName) { this.firstName = firstName; }
         public String getEmail() { return this.email; }
-        public void setEmail { get; set; } 
+        public void setEmail(String email) { this.email = email; } 
         public String getDividend() { return this.dividend; }
-        public void setDividend { get; set; }
+        public void setDividend(String dividend) { this.dividend = dividend; }
         public List<OrderHistory> getOrderHistory() { return this.orderHistory; }
-        public void setOrderHistory { get; set; }
+        public void setOrderHistory(List<OrderHistory> orderHistory) { this.orderHistory = orderHistory; }
         public List<ShippingPreference> getShippingPreference() { return this.shippingPreference; }
-        public void setShippingPreference { get; set; }
+        public void setShippingPreference(ShippingPreference shippingPreference) { this.shippingPreference = shippingPreference; }
         public List<CouponsUsed> getCoupons { return this.coupons; }
-        public void setCoupons { get; set; }
+        public void setCoupons(List<Couponsused> coupons) { this.coupons = coupons; }
     }
 
     public class OrderHistory
     {
-        public string orderId;
-        public string dateShipped;
-        public string total;
+        private string id;
+        private string orderId;
+        private string dateShipped;
+        private string total;
 
-        public String getOrderId(){return this.orderId;}
-        public void setOrderId(String orderId){this.orderId=orderId;}
-        public String getDateShipped(){return this.dateShipped;}
-        public void setDateShipped(String dateShipped){this.dateShipped=dateShipped;}
+        public String getId(){ return this.id; }
+        public String setId(String id){ this.id = id; }
+        public String getOrderId(){ return this.orderId; }
+        public void setOrderId(String orderId){ this.orderId=orderId; }
+        public String getDateShipped(){ return this.dateShipped; }
+        public void setDateShipped(String dateShipped){ this.dateShipped=dateShipped; }
+        public String getTotal(){ return this.total; }
+        public void setTotal(String total){ this.total = total; }
     }
 
     public class ShippingPreference
     {
-        public int priority { get; set; }
-        public string addressLine1 { get; set; }
-        public string addressLine2 { get; set; }
-        public string city { get; set; }
-        public string state { get; set; }
-        public string zipCode { get; set; }
-        public string country { get; set; }
+        private int priority;
+        private String addressLine1;
+        private String addressLine2;
+        private String city;
+        private String state;
+        private String zipCode;
+        private String country;
+
+        public int getPriority(){ return this.priority; }
+        public void setPriority(String priority){this.priority = priority;}
+        public String getAddressLine1(){ return this.addressLine1; }
+        public void setAddressLine1(String addressLine1){ this.addressLine1 = addressLine1; }
+        public String getAddressLine2(){ return this.addressLine2; }
+        public void setAddressLine2(String addressLine2){ this.addressLine1 = addressLine2; }
+        public String getCity(){ return this.city; }
+        public void setCity(String city){ this.city = city; }
+        public String getState(){ return this.state }
+        public void setState(String state){ this.state = state; }
+        public String getZipCode(){ return this.zipCode; }
+        public void setZipCode(String zipCode){ this.zipCode = zipCode; }
     }
 
     public class CouponsUsed
     {
-        public string couponCode { get; set; }
+        private string couponCode;
+
+        public String getCouponCode(){ return this.couponCode; }
+        public void setCouponCode(String couponCode){ this.couponCode = couponCode; }
 
     }
+    ```
+
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
+
+    ```bash
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
+    ```
+
+    and confirm that it executes without issue.
+
+1. a
 
     private void WriteToConsoleAndPromptToContinue(string format, params object[] args)
     {
-        Console.WriteLine(format, args);
-        Console.WriteLine("Press any key to continue ...");
+        System.out.println("Press any key to continue.");
         Console.ReadKey();
     }
-    ```
 
-1. In the integrated terminal, type the following command to run the program to ensure it runs.
-
-    ```bash
-    dotnet run
-    ```
 
 1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
 

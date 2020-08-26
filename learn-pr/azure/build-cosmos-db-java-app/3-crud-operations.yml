@@ -12,4 +12,4 @@ metadata:
 title: Exercise - Create, read, update, and delete NoSQL data programmatically
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-crud-operations.md)]
+  [!include[](includes/3-crud-operations.md)]
