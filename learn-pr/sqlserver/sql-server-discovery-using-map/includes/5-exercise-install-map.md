@@ -2,7 +2,8 @@ Suppose you're a new database administrator for a law firm with branch offices a
 
 In this exercise, you'll install the MAP toolkit on a test computer, then restore the sample backup database.
 
-[!NOTE] Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if MAP is right for your task**.
+> [!NOTE]
+> Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if MAP is right for your task**.
 
 ## Download the RDP connection file from Azure
 

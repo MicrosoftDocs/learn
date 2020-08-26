@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Putting it all together with Azure SQL
-summary: In this learning path, you have covered deploying and configuring a secure, performant, and highly available solution with Azure SQL. There are many elements in a single solution, and in this module you'll learn how to take the business scenario and determine the best resources and processes to use to satisfy the requirements while considering the constraints within the scenario. You'll also learn what else you should consider when it comes to Azure SQL and opportunities in the cloud.
+summary: In this learning path, you've deployed and configured a secure, performant, and highly available solution by using Azure SQL. There are many elements in a single solution. In this module, you'll learn how to take the business scenario and determine the best resources and processes to satisfy requirements while considering the constraints within the scenario. You'll also learn what else you should consider with Azure SQL and opportunities in the cloud.
 abstract: | 
   In this module, you will:
   - Apply your Azure SQL knowledge to any scenario and determine what to use when
-  - Architect a solution involving Azure SQL
-  - Understand the other cloud opportunities that become available once you're leveraging Azure SQL
-  - Leverage the resources to go deeper
+  - Build a solution that involves Azure SQL
+  - Understand the other cloud opportunities that become available after you're using Azure SQL
+  - Use the resources to go deeper
 prerequisites: | 
   - Experience working with, maintaining, and developing with SQL Server and Azure SQL
   - Experience with Azure, such as deploying and managing resources
