@@ -1,70 +1,51 @@
-Now that you've created documents in your application, let's query them from your application. Azure Cosmos DB uses SQL queries and LINQ queries. This unit focuses on running SQL queries and LINQ queries from your application, as opposed to the portal.
+Now that you've created documents in your application, let's query them from your application. Azure Cosmos DB Java SDK uses SQL queries; in .NET SDK is additionally support for LINQ queries but Java SDK has not analogue. This unit focuses on running SQL queries from your application, as opposed to the portal.
 
 We'll use the user documents you've created for your online retailer application to test these queries.
 
-## LINQ query basics
+## Run SQL queries
 
-LINQ is a .NET programming model that expresses computations as queries on streams of objects. You can create an **IQueryable** object that directly queries Azure Cosmos DB, which translates the LINQ query into an Azure Cosmos DB query. The query is then passed to the Azure Cosmos DB server to retrieve a set of results in JSON format. The returned results are deserialized into a stream of .NET objects on the client side. Many developers prefer LINQ queries, as they provide a single consistent programming model across how they work with objects in application code and how they express query logic running in the database.
+1. The following sample shows how a query could be performed in SQL from your Java code. Copy the code and add it to the end of the `CosmosApp.java` file.
 
-The following table shows how LINQ queries are translated into SQL.
-
-| LINQ expression | SQL translation |
-|---|---|
-| `input.Select(family => family.parents[0].familyName);`| `SELECT VALUE f.parents[0].familyName FROM Families f` |
-|`input.Select(family => family.children[0].grade + c); // c is an int variable` | `SELECT VALUE f.children[0].grade + c FROM Families f` |
-|`input.Select(family => new { name = family.children[0].familyName, grade = family.children[0].grade + 3});`| `SELECT VALUE {"name":f.children[0].familyName, "grade": f.children[0].grade + 3 } FROM Families f`|
-|`input.Where(family=> family.parents[0].familyName == "Smith");`|`SELECT * FROM Families f WHERE f.parents[0].familyName = "Smith"`|
-
-## Run SQL and LINQ queries
-
-1. The following sample shows how a query could be performed in SQL, LINQ, or LINQ lambda from your .NET code. Copy the code and add it to the end of the Program.cs file.
-
-    ```csharp
-    private void ExecuteSimpleQuery(string databaseName, string containerName)
+    ```java
+    private static void executeSimpleQuery()
     {
-        // Set some common query options
-        FeedOptions queryOptions = new FeedOptions { MaxItemCount = -1, EnableCrossPartitionQuery = true };
+        int preferredPageSize = 10;
+        CosmosQueryRequestOptions queryOptions = new CosmosQueryRequestOptions();
 
-        // Here we find nelapin via their LastName
-        IQueryable<User> userQuery = this.client.CreateDocumentQuery<User>(
-                UriFactory.CreateDocumentContainerUri(databaseName, containerName), queryOptions)
-                .Where(u => u.LastName == "Pindakova");
+        CosmosPagedFlux<Family> pagedFluxResponse = container.queryItems(
+                "SELECT * FROM User WHERE User.lastName = 'Pindakova'", queryOptions, User.class);
 
-        // The query is executed synchronously here, but can also be executed asynchronously via the IDocumentQuery<T> interface
-        Console.WriteLine("Running LINQ query...");
-        foreach (User user in userQuery)
-        {
-            Console.WriteLine("\tRead {0}", user);
-        }
+        logger.info("Running SQL query...");
 
-        // Now execute the same query via direct SQL
-        IQueryable<User> userQueryInSql = this.client.CreateDocumentQuery<User>(
-                UriFactory.CreateDocumentContainerUri(databaseName, containerName),
-                "SELECT * FROM User WHERE User.lastName = 'Pindakova'", queryOptions );
+        pagedFluxResponse.byPage(preferredPageSize).flatMap(fluxResponse -> {
+            logger.info("Got a page of query result with " +
+                    fluxResponse.getResults().size() + " items(s)"
+                    + " and request charge of " + fluxResponse.getRequestCharge());
 
-        Console.WriteLine("Running direct SQL query...");
-        foreach (User user in userQueryInSql)
-        {
-                Console.WriteLine("\tRead {0}", user);
-        }
+            logger.info("Item Ids " + fluxResponse
+                    .getResults()
+                    .stream()
+                    .map(User::getId)
+                    .collect(Collectors.toList()));
 
-        Console.WriteLine("Press any key to continue ...");
-        Console.ReadKey();
+            return Flux.empty();
+        }).blockLast();
     }
     ```
 
-1. Copy and paste the following code to your **BasicOperations** method, before the `await this.DeleteUserDocument("Users", "WebCustomers", yanhe);` line.
+1. Copy and paste the following code to your `basicOperations` method, **before** the document deletion code.
 
-    ```csharp
-    this.ExecuteSimpleQuery("Users", "WebCustomers");
+    ```java
+    executeSimpleQuery();
     ```
 
-1. In the integrated terminal, run the following command.
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
-    dotnet run
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
     ```
 
-    The console displays the output of the LINQ and SQL queries.
+    The console displays the output of the SQL query.
 
-In this unit you learned about LINQ queries, and then added a LINQ and SQL query to your application to retrieve user records.
+In this unit you learned about SQL queries, and then added a SQL query to your application to retrieve user records.
