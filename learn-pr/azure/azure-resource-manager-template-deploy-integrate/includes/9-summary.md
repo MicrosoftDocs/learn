@@ -2,7 +2,7 @@ In this module, you were introduced to one of the ways you can include your Azur
 
 In summary, you:
 
-- Evaluated the results of your template deployments before affecting any changes to your environment using the *What-if* operation.
+- You Learned to deploy your templates from a variety of methods.
 - You learned to modularize your ARM templates by creating linked templates.
 - And, you learned how to create Github Actions to deploy templates from a source code repo.
 

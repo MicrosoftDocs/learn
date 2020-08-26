@@ -6,8 +6,8 @@
     Connect-AzAccount
     ```
 
-1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox.
-1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for Concierge Subscription and copy the second column. It will look something like cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0
+1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox the *Concierge Subscription* should be in this list.
+1. To get the subscription ID. The command will list your subscriptions and their IDs in a easy to read table format. The subscription ID is the second column. Look for Concierge Subscription and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
 
     ```powershell
     Get-AzSubscription

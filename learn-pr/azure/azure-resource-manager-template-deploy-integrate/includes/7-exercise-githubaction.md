@@ -5,9 +5,9 @@ Here you'll deploy an Azure Resource Manager (ARM) template from a GitHub Action
 
 ## Create your GitHub account and repository
 
-First,  If you do not have a GitHub account, please create one now (It's free) by navigating to the [GitHub account creation page](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home&WT.mc_id=MSLearn-ARM-pierrer).
+First,  If you do not have a GitHub account, please create one now (It's free) by navigating to the [GitHub account creation page](https://github.com/join?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home).
 
-    ![Github account creation page](../media/9-github-account-creation.png)
+![Github account creation page](../media/9-github-account-creation.png)
 
 Once you have the account created, sign-in and create a new repository where you will keep your templates as part of Infrastructure as Code (IaC) model.  To create the repository (or *repo* as it's affectionately referred to in the industry) follow the steps below:
 
@@ -105,7 +105,7 @@ Now that you have created your new repository, you initialized it with a README 
 
 ## Configure authentication between GitHub Actions and your Azure subscription
 
-To deploy. Any resources to Azure using GitHub Actions, you need to create an Azure Service Principal and give it permissions to create resources defined in your templates.  You will perform that step in the Azure Shell section of your Azure portal once you are logged in to your subscription.
+To deploy any resources to Azure using GitHub Actions, you need to create an Azure Service Principal and give it permissions to create resources defined in your templates.  You will perform that step in the Azure Shell section of your Azure portal once you are logged in to your subscription.
 
 ### Create the service principal
 
@@ -156,7 +156,7 @@ The workflow file must be stored in the .github/workflows folder at the root of 
 You can either create a workflow file and then push/upload the file to the repository, or use the following procedure to create it in the GitHub interface:
 
 1. From your GitHub repository, select `Actions` from the top menu, and select **`set up a workflow yourself`**.
-    ![Add new Service Principal secret info to GitHub Secret](../media/9-github-workflow-creation.png)
+    ![Getting Started With GitHub Actions](../media/9-github-workflow-creation.png)
 1. Rename the workflow file if you prefer a different name other than main.yml. For example: deployARMTemplate.yml.
 1. Replace the content of the yml file with the following:
     > [!NOTE]

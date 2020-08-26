@@ -6,8 +6,8 @@
     Connect-AzAccount
     ```
 
-1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox.
-1. Get the subscription ID. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for Concierge Subscription and copy the second column. It will look something like cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0
+1. Once you are logged in, you see a list of the subscriptions associated with this account in the terminal. If you activated the sandbox the *Concierge Subscription* should be in this list.
+1. To get the subscription ID. The command will list your subscriptions and their IDs in a easy to read table format. The subscription ID is the second column. Look for Concierge Subscription and copy the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*
 
     ```powershell
     Get-AzSubscription
@@ -22,7 +22,7 @@
 
 ### Set the default resource group
 
-1. You now need to set the resource group created for you in the sandbox as the default resource group.  do perform that operation you first need to get the resource group name by using the following command.
+1. You now need to set the resource group created for you in the sandbox as the default resource group. To perform that operation you first need to get the resource group name by using the following command.
 
     ```powershell
     Get-AzResourceGroup
@@ -49,7 +49,7 @@ In this exercise, we will review and deploy a template that includes two linked 
 
     Review the template and note the *"type": "Microsoft.Resources/deployments"* sections that define where and how the linked templates will be deployed.
 
-    The fist linked template deploys a storage account.  it consumes the parent parameters and deploys the storage template.
+    The first linked template deploys a storage account.  It consumes the parent parameters and deploys the storage template.
 
     The second linked template is configured to depend on the storage deployment, and to deploy a virtual network template.
 
@@ -130,6 +130,6 @@ In this exercise, we will review and deploy a template that includes two linked 
 
     ![Azure portal interface for the deployments with the one deployment listed and a succeeded status.](../../media/7-portal-deployment-details.png)
 
-1. You will notice that you deployed one Template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the Main template and the two linked templates.
+1. You will notice that you deployed one template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the Main template and the two linked templates.
 
     ![Azure portal interface for the specific deployment with no resources listed.](../../media/7-portal-deployment-listing.png)

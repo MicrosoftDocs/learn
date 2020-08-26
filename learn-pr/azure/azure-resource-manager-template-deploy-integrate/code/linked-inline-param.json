@@ -1,17 +1,16 @@
-"resources": [
-    {
-     "type": "Microsoft.Resources/deployments",
-     "apiVersion": "2019-10-01",
-     "name": "linkedTemplate",
-     "properties": {
-       "mode": "Incremental",
-       "templateLink": {
-        "uri":"https://mystorageaccount.blob.core.windows.net/AzureTemplates/newStorageAccount.json",
-        "contentVersion":"1.0.0.0"
-       },
-       "parameters": {
-        "storageAccountName":{"value": "[parameters('storageAccountName')]"}
+{
+  "name": "storage",
+  "type": "Microsoft.Resources/deployments",
+  "apiVersion": "2019-10-01",
+  "properties": {
+      "mode": "Incremental",
+      "templateLink": {
+          "uri": "[variables('linked-template')]",
+          "contentVersion": "1.0.0.0"
+      },
+      "parameters": {
+          "name": { "value": "[parameters('name')]" },
+          "location": { "value": "[resourceGroup().location]" }
       }
-     }
-    }
-  ]
+  }
+}
