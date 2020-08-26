@@ -65,7 +65,7 @@ Here, you begin to migrate your applications to the cloud. Along the way, you mi
 
 In fact, the Cloud Adoption Framework breaks this stage into two parts: migrate and innovate.
 
-Here are the steps that make up the migrate part of this stage:
+**Migrate**: Here are the steps that make up the migrate part of this stage:
 
 |  |  |
 |--|--|
@@ -74,7 +74,7 @@ Here are the steps that make up the migrate part of this stage:
 |<br> **Best practices**: Check in with the Azure cloud migration best practices checklist to verify that you're following recommended practices. | <br> ![3](../media/3.png) | 
 | <br> **Process improvements**: Identify ways to make the migration process scale while requiring less effort. | <br> ![4](../media/4.png) |
 
-Here are the steps that make up the innovate part of this stage:
+**Innovate**: Here are the steps that make up the innovate part of this stage:
 
 |  |  |
 |--|--|
@@ -87,7 +87,7 @@ Here are the steps that make up the innovate part of this stage:
 
 Here, you begin to form your cloud governance and cloud management strategies. As the cloud estate changes over time, so do cloud governance processes and policies. Therefore, you need to create resilient solutions that are constantly optimized.
 
-Here are the steps that make up the govern part of this stage:
+**Govern**: Here are the steps that make up the govern part of this stage:
 
 |  |  |
 |--|--|
@@ -96,7 +96,7 @@ Here are the steps that make up the govern part of this stage:
 | <br> **Initial governance foundation**: Create an MVP that captures the first steps of your governance plan. | <br> ![3](../media/3.png) |
 | <br> **Improve the initial governance foundation**: Iteratively add governance controls that address tangible risks as you progress toward your end state solution. | <br> ![4](../media/4.png) |
 
-Here are the steps that make up the manage part of this stage:
+**Manage**: Here are the steps that make up the manage part of this stage:
 
 |  |  |
 |--|--|
