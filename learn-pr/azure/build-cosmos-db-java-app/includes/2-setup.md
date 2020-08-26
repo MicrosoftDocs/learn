@@ -1,107 +1,54 @@
-This section assumes 
-
-1. You have already created a Maven project directory with a **src/** directory and an empty **pom.xml** file at the top level.
-
-1. In your Azure Cosmos DB account, you have created a database named **Users** with a container named **WebCustomers**
-
 In this unit, you will create a basic console app using an IDE of your choice to edit code, and optionally using the terminal of your choice to run the code.
 
-The terminal commands in this lab are assuming a Windows OS.
+The terminal commands in this lab assume a Windows OS.
 
-## Build the skeleton of your app
+## Create Azure Cosmos DB resources
 
-1. First you will create the app directory structure. Under the **src/** directory of your Maven project, create the following directory structure: **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn**
+1. In your Azure Cosmos DB account, create a database named **Users** with a container named **WebCustomers**. Provision 400 RU/s throughput on the **Users** container.
 
-1. Second, you will set up your Maven **pom.xml**. In your IDE, open the pom.xml file. Paste in the following dependencies shown below:
+## Create your working directory
 
-    ```xml
-    <?xml version="1.0" encoding="UTF-8"?>
-    <project xmlns="http://maven.apache.org/POM/4.0.0"
-            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-            xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-        <modelVersion>4.0.0</modelVersion>
+1. We provide you with a template for your Java application. Clone the template repo onto your system
 
-        <groupId>com.azure</groupId>
-        <artifactId>azure-cosmos-java-sql-app-mslearn</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <name>MSLearn sample Java app
-        </name>
-        <properties>
-            <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        </properties>
-
-
-        <build>
-            <plugins>
-                <plugin>
-                    <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.1</version>
-                    <configuration>
-                        <source>1.8</source>
-                        <target>1.8</target>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <groupId>org.codehaus.mojo</groupId>
-                    <artifactId>exec-maven-plugin</artifactId>
-                    <version>1.6.0</version>
-                </plugin>
-                <plugin>
-                    <groupId>org.apache.maven.plugins</groupId>
-                    <artifactId>maven-eclipse-plugin</artifactId>
-                    <version>2.8</version>
-                    <configuration>
-                        <classpathContainers>
-                            <classpathContainer>
-                                org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8
-                            </classpathContainer>
-                        </classpathContainers>
-                    </configuration>
-                </plugin>
-            </plugins>
-        </build>
-        <dependencies>
-            <dependency>
-                <groupId>com.azure</groupId>
-                <artifactId>azure-cosmos</artifactId>
-                <version>latest</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-slf4j-impl</artifactId>
-                <version>2.13.0</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.logging.log4j</groupId>
-                <artifactId>log4j-api</artifactId>
-                <version>2.11.1</version>
-                <scope>test</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.slf4j</groupId>
-                <artifactId>slf4j-jdk14</artifactId>
-                <version>1.7.28</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>3.10</version>
-            </dependency>
-        </dependencies>
-    </project>
+    ```
+    https://github.com/Azure-Samples/azure-cosmos-spring-or-java-sql-mslearn-template.git
     ```
 
-1. Save your changes to **pom.xml**. Depending on your IDE, it may automatically detect the **pom.xml** changes and ask to automatically download the new dependencies using Maven. Allow Maven to automatically download the dependencies specified in **pom.xml**.
+1. Open the Windows Explorer and navigate to the cloned repo. Enter the **java** subdirectory.
 
-1. Third, you will build and run Hello World. Using your IDE or the terminal, navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and create a Java source file named **CosmosApp.java**
+    > [!IMPORTANT]  
+    > All of your work for this module will be under the **java** subdirectory. 
+    >
 
-1. Create a class **CosmosApp** in **CosmosApp.java**
+1. The template contains a Maven **pom.xml** which already pulls in the required dependencies for your project. Open this file and examine it to find the dependency below:
 
-1. Create a `main` method in the class. In the main method add `logger.info("Hello world.");`.
+    ```xml
+    <dependency>
+        <groupId>com.azure</groupId>
+        <artifactId>azure-cosmos</artifactId>
+        <version>latest</version>
+    </dependency>
+    ```
+
+    This depedency pulls in the Azure Cosmos DB Java SDK latest version. You can close this file.
+
+1. Next, you will build and run Hello World. Using your IDE or the terminal, navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn**. In this directory you will find a file named **CosmosApp.java** which is a template for the Java application we will develop, it should look something like this
+
+    ```java
+    import org.slf4j.Logger;
+    import org.slf4j.LoggerFactory;
+
+    public class CosmosApp {
+
+        protected static Logger logger = LoggerFactory.getLogger(CosmosApp.class.getSimpleName());
+
+        public static void main(String[] args) {
+        logger.info("Hello World.");
+        }
+    }
+    ```
+
+    As-is, the application code implements a simple "Hello world".
 
 1. **If your IDE offers tools to build and run your Maven application** - then build and run your application using the IDE, and confirm that the application logs `Hello World` to the terminal.
 
@@ -123,7 +70,7 @@ The terminal commands in this lab are assuming a Windows OS.
 
 ## Connect the app to Azure Cosmos DB
 
-1. Create the following static class variables for your Azure Cosmos DB connection details
+1. Within the `CosmosApp` class, create the following static class variables for your Azure Cosmos DB connection details:
 
     ```java
     private static String endpointUri = "<your-cosmosdb-hostname>"
@@ -136,13 +83,13 @@ The terminal commands in this lab are assuming a Windows OS.
 
 Now it's time to create an instance of the `CosmosAsyncClient`, which is the client-side representation of the Azure Cosmos DB service. This client is used to configure and execute requests against the service.
 
-1. In **CosmosApp.java**, add the following static variable to the beginning of the `CosmosApp` class, underneath the `logger` variable declaration:
+1. In **CosmosApp.java**, add the following static variable declaration to the `CosmosApp` class:
 
     ```java
     private static CosmosAsyncClient client;
     ```
 
-1. Create a `basicOperations` method in the class. 
+1. Create a method `basicOperations` in the class. 
 
 1. Add the following code to create a `CosmosAsyncClient` in the `basicOperations` method, and include code to check whether the **Users** database exists.
 
@@ -162,16 +109,16 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
      client.close();
     ```
 
-1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
+1. At this point, your `basicOperations` method contains the code to interact with Azure Cosmos DB. However this method is not called in `main`, so our application still serves to print "Hello World". As a check, build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
     mvn clean package
     mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"  
     ```
 
-    and confirm that the app logs `Hello world` to the terminal.
+    and confirm that the app still logs `Hello World` to the terminal.
 
-    This build confirms syntactic correctness - the `basicOperations` method is not being called, so we have not created an Azure Cosmos DB client yet.
+    This build confirms syntactic correctness.
 
 1. Copy and paste the following code into the `main` method, overwriting the current `logger.info("Hello world.");` line.
 
@@ -184,13 +131,15 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
     catch (CosmosException e)
     {
         Exception baseException = e.getBaseException();
-        System.err.println(String.format("Error: %s, Message: %s", e.message, baseException.message));
+        logger.error("Error: {}, Message: {}", e.message, baseException.message);
     }
     finally
     {
-        System.out.println("End of demo, press any key to exit.");
+        logger.info("End of demo, press any key to exit.");
     }
     ```
+
+    This will trigger the Azure Cosmos DB code in our application.
 
 1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 

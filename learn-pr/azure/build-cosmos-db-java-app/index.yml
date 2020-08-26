@@ -8,19 +8,19 @@ metadata:
   ms.author: anfeldma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Build a Java app for Azure Cosmos DB in Visual Studio Code
-summary: Learn how to build a database app to store and query data in Azure Cosmos DB by using Visual Studio Code.
+title: Build a Java app for Azure Cosmos DB
+summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB
 abstract: |
   In this module, you will:
+  - Learn how to send requests to Azure Cosmos DB from a Java application
   - Create an application to store and query data in Azure Cosmos DB
-  - Use the Integrated Terminal in Visual Studio Code to quickly create a console application
-  - Add Azure Cosmos DB functionality with the help of the Azure Cosmos DB extension for Visual Studio Code
 prerequisites: |
-  - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
-  - Must have [Apache Maven](https://maven.apache.org/) extension
+  - Must have an Azure Subscription with an Azure Cosmos DB account already created
+  - Must have [Apache Maven](https://maven.apache.org/) installed on your computer 
+  - Must have [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) installed on your computer
   - Must have [Java JDK 8 or later versions](https://www.microsoft.com/net/download) installed
-  - Must have the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account) extension installed in Visual Studio Code
-  - Must be familiar with building the file structure of a Java application
+  - Must be familiar with [creating and managing resources in Azure Cosmos DB]
+  - Must be familiar with using Maven, Git and Java JDK
 iconUrl: /learn/achievements/build-cosmos-db-app-with-vscode.svg
 levels:
 - beginner
@@ -33,11 +33,9 @@ products:
 - vs-code
 units:
 - learn.cosmos-db-java-app-with-vscode.1-introduction
-- learn.cosmos-db-java-app-with-vscode.2-setup-cosmosdb
 - learn.cosmos-db-java-app-with-vscode.3-setup
 - learn.cosmos-db-java-app-with-vscode.4-crud-operations
 - learn.cosmos-db-java-app-with-vscode.5-query
-- learn.cosmos-db-java-app-with-vscode.6-stored-procedure
 - learn.cosmos-db-java-app-with-vscode.7-summary
 badge:
   uid: learn.cosmos-db-java-app-with-vscode.badge
