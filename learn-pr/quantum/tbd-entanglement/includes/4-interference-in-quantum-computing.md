@@ -11,7 +11,7 @@ often use this term as a synonym to design the quantum state of a system. This
 is because the Schrödinger equation that we introduced at the beginning of this
 module has the same mathematical structure as classical wave equations.
 
-![Figure5](../media/KittyYeungQ35.png)
+![Figure5](../media/figure5_wave.svg)
 
 You might have also heard the term "probability wave". In fact, the term
 *probability amplitude* is inspired directly from the term *amplitude* of a

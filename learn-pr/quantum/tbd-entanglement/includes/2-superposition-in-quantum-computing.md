@@ -84,7 +84,7 @@ These characteristics mean that sometimes you have to run the algorithm several 
 
 ![Figure1](../media/Figure1_superposition.svg)
 
-![Figure2](../media/KittyYeungQ8.png)
+![Figure2](../media/figure2_probability.svg)
 
 How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
 
