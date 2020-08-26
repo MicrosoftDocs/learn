@@ -82,7 +82,7 @@ classical computing, where a bit can only be deterministically 0 or 1.
 
 These characteristics mean that sometimes you have to run the algorithm several times to ensure the highest probability result in the output. This repetition might seem inefficient. But in many cases, running quantum algorithms several times is much more efficient than solving the task classically.
 
-![Figure1](../media/KittyYeungQ7.png)
+![Figure1](../media/Figure1_superposition.svg)
 
 ![Figure2](../media/KittyYeungQ8.png)
 
@@ -93,12 +93,12 @@ absolute values, for example $|a|$, squared give the corresponding probabilities
 instance, the probability for observing $\ket{00}$ is $P(00)=|a|^2$. For
 $\ket{01}$, it's $P(01)=|b|^2$, and so on.
 
-![Figure3](../media/KittyYeungQ9.png)
+![Figure3](../media/Figure3_configurations.svg)
 
 There are no restrictions on the types of numbers the probability amplitudes can
 be. They can be positive, negative, or even complex numbers. However, for a valid quantum superposition all probabilities must sum to one: $|a|^2+|b|^2+|c|^2+|d|^2=1$. This constraint is often known as the _normalization condition_. You can think of the normalization condition as the fact that you always obtain an outcome when you measure, so the probabilities of measuring every possible outcome must sum to one.
 
-![Figure4](../media/KittyYeungQ10.png)
+![Figure4](../media/Figure4_scale)
 
 In the example state we produced for the quantum random bit generator,
 $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability

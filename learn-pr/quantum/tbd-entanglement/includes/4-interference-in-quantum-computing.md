@@ -37,6 +37,8 @@ in the previous units. Superposition of different waves enables their amplitudes
 to interfere, resulting in different effects on the overall state. There are two
 types of interference:
 
+![Figure6.1](../media/Figure6_1_interference.svg)
+
 - **Constructive interference**: two waves add up to increase the amplitude of
   the resulting wave. For example, in our daily experience, when two water waves
   meet in a pool, we may see a bigger wave when their peaks add up.
@@ -47,17 +49,17 @@ types of interference:
   noise and plays them in the inner speakers to cancel the noise for the
   listener. This is using destructive interference for noise cancellation.
 
-![Noise cancellation](../media/noise-cancellation.jpg)
+![Figure6](../media/Figure6_noise_cancellation.svg)
 
 Constructive and destructive interference are due to **relative phases** between
 the waves.
 
-![Relative phase](../media/relative-phase.jpg)
+![Figure7](../media/Figure7_relative_phase.svg)
 
 In general an amplitude is a complex number, which describes both the magnitude
 and the phase of the wave.
 
-![image.png](../media/complex-plane.jpg)
+![Figure8](../media/Figure8_complex_plane.svg)
 
 ## Interference in quantum computing
 

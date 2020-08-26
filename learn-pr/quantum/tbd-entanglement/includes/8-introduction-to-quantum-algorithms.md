@@ -95,7 +95,7 @@ If you're interested in the details of this algorithm and want to implement it
 in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
 
 
-![Figure6](../media/KittyYeungQ30.png)
+![Figure9](../media/Figure9_DJ.svg)
 
 ## Grover's algorithm
 
@@ -145,7 +145,7 @@ $\sqrt{2^n}$ queries to the oracle. This is a quadratic improvement over the
 classical method. More specifically, it obtains $x_0$ with a probability
 $1-O(\frac1{2^n})$ using $O(\sqrt{2^n})$ queries.
 
-![Figure7](../media/KittyYeungQ32.png)
+![Figure10](../media/Figure10_Grover.svg)
 
 If you're interested in the details of this algorithm and want to implement it
 in Q#, check our [quantum katas tutorial on Grover's algorithm(https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm?azure-portal=true).
@@ -181,6 +181,8 @@ function. This is known as the order finding problem. Shor's algorithm uses
 superposition and interference to apply the quantum Fourier transform - a
 version of the discrete Fourier transform for quantum computers - to find the 
 period of the function faster than any known classical algorithm.
+
+![Figure11](TODO)
 
 #### Outline of the algorithm
 
