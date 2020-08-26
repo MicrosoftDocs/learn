@@ -13,7 +13,7 @@ It captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $H$, of 
 
 Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when writing quantum algorithms. But we can use it to assist us in understanding some concepts of quantum computing.
 
-The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. Each wave function is associated with an important concept in quantum computing - **probability amplitude** of an observable. The probability amplitude determines the probability of obtaining a certain outcome when measuring
+The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. Each wave function is associated with an important concept in quantum computing - **probability amplitude** of the wave function. The probability amplitude determines the probability of obtaining a certain outcome when measuring
 the system. This is an important difference when compared to classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather we describe bits in terms of the probabilities of finding those states when we observe them.
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems with kets $\ket{ }$.
@@ -73,7 +73,7 @@ quantum mechanics and therefore of quantum computing.
 ## Quantum computers are probabilistic
 
 A fundamental difference between classical computers and quantum computers is
-that programs in quantum computers are probabilistic. Quantum algorithms consist
+that programs in quantum computers are probabilistic, whereas classical computers are deterministic. Quantum algorithms consist
 of linear operations to a register of qubits to modify their states to a
 particular superposition of all possibilities. Each possible state has an
 associated probability amplitude. When we make a measurement, we obtain one of

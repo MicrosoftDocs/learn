@@ -10,7 +10,7 @@ The key to understanding quantum computing is knowing three important concepts: 
 _interference_, and _entanglement_. In this module, you'll use Q# and some tools
 provided by the Quantum Development Kit to illustrate these ideas.
 
-Finally, you'll explore a few quantum algorithms to see how superposition, interference, and entanglement can outperform classical computers.
+Finally, you'll have an overview of a few quantum algorithms to see how superposition, interference, and entanglement can outperform classical computers.
 
 ## Learning objectives
 
@@ -19,7 +19,7 @@ After completing this module, you'll be able to:
 - Explain the basic theory behind the power of quantum computing, including concepts like superposition, interference, and entanglement.
 - Inspect quantum states in virtual quantum computers.
 - Estimate the quantum resources that are needed to run your programs.
-- TODO Learn about different algorithms that make use of quantum properties to outperform classical algorithms.
+- Learn about examples of algorithms that make use of quantum properties to outperform classical algorithms.
 
 ## Prerequisites
 
