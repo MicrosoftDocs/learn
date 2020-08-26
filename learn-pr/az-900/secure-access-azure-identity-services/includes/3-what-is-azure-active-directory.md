@@ -1,16 +1,16 @@
 In this part, you learn how Azure Active Directory (Azure AD) provides identity services that enable your users to sign in and access both Microsoft cloud applications and cloud applications you develop. You also learn how supports single sign-on (SSO).
 
-Tailwind Traders already uses Active Directory Domain Services (ADDS) to secure their on-premises environments and they don't want their users to have a different username and password to remember for accessing applications and data in the cloud. Can they integrate their existing Active Directory with cloud identity services to create a seamless experience for their users?
+Tailwind Traders already uses Active Directory to secure their on-premises environments and they don't want their users to have a different username and password to remember for accessing applications and data in the cloud. Can they integrate their existing Active Directory with cloud identity services to create a seamless experience for their users?
 
-Let's start with how Azure AD compares to Active Directory Domain Services.
+Let's start with how Azure AD compares to Active Directory.
 
-## How does Azure AD compare to ADDS?
+## How does Azure AD compare to Active Directory?
 
-Active Directory Domain Services is related to Azure AD, but they have some key differences.
+Active Directory is related to Azure AD, but they have some key differences.
 
-Microsoft introduced Active Directory Domain Services in Windows 2000 to give organizations the ability to manage multiple on-premises infrastructure components and systems by using a single identity per user.
+Microsoft introduced Active Directory in Windows 2000 to give organizations the ability to manage multiple on-premises infrastructure components and systems by using a single identity per user.
 
-For on-premises environments, Active Directory running on Windows Server provides an identity and access management service that's managed by your own organization. Azure AD is Microsoft's cloud-based identity and access management service. With Azure AD, you control the identity accounts, but Microsoft ensures that the service is available globally. If you've worked with Active Directory Domain Services, Azure AD will be familiar to you.
+For on-premises environments, Active Directory running on Windows Server provides an identity and access management service that's managed by your own organization. Azure AD is Microsoft's cloud-based identity and access management service. With Azure AD, you control the identity accounts, but Microsoft ensures that the service is available globally. If you've worked with Active Directory, Azure AD will be familiar to you.
 
 When you secure identities on-premises with Active Directory, Microsoft doesn't monitor sign-in attempts. When you connect Active Directory with Azure AD, Microsoft can help protect you by detecting suspicious sign-in attempts at no extra cost. For example, Azure AD can detect sign-in attempts from unexpected locations or unknown devices.
 
@@ -69,9 +69,9 @@ With SSO, you need to remember only one ID and one password. Access across appli
 
 You'll find resources at the end of this module about how to enable SSO through Azure AD.
 
-## How can I connect ADDS with Azure AD?
+## How can I connect Active Directory with Azure AD?
 
-There are a few ways to connect your existing Active Directory Domain Services installation with Azure AD. One popular method is Azure AD Connect.
+There are a few ways to connect your existing Active Directory installation with Azure AD. One popular method is Azure AD Connect.
 
 Azure AD Connect synchronizes user identities between Active Directory running on-premises and Azure AD. Azure AD Connect synchronizes changes between both identity systems, which enables you to use features like SSO, MFA, and self-service password reset under both systems. Self-service password reset prevents users from using known compromised passwords.
 
