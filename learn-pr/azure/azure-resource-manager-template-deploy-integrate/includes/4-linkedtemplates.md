@@ -22,6 +22,6 @@ For small to medium solutions, a single template is easier to understand and mai
 
 Nested template refers to the act of embedding template syntax within a main template. They allow for advanced deployments scenarios like deploying to multiple ARM scopes or multiple resource groups from a single template file. Unlike linked templates, where each template is stored in its own template files, nested templates allow you to store many individual templates in one file. There are several reasons where you might want to do this such as when deploying resources to multiple resource groups or deployment scopes.
 
-:::code language="json" source="../Code/nestedtemplatesample.json" highlight="7-17":::
+:::code language="json" source="../Code/nestedtemplatesample-update.json" highlight="19-30":::
 
 When using a nested template, you can specify whether template expressions are evaluated within the scope of the parent template or the nested template. The scope determines how parameters, variables, and functions like resourceGroup and subscription are resolved.
