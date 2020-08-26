@@ -26,11 +26,11 @@ In this module, you'll help the team explore ways they can enforce standards whi
 
 ## Learning objectives
 
-In this module, you'll:
+After completing this module, you'll be able to:
 
-* Learn how the Cloud Adoption Framework can help you make organizational decisions about your cloud environment.
-* Learn how Azure RBAC enables you to define who can access cloud resources.
+* Make organizational decisions about your cloud environment by using the Cloud Adoption Framework.
+* Define who can access cloud resources by using Azure RBAC.
 * Apply a resource lock to prevent accidental deletion of your Azure resources.
-* Understand how tags enable you to describe your Azure resources.
-* Learn how Azure Policy helps you control and audit how your resources are created.
-* Explore how Azure Blueprints enables governance at scale across multiple Azure subscriptions.
+* Apply tags to your Azure resources to help describe their purpose.
+* Control and audit how your resources are created by using Azure Policy.
+* Enable governance at scale across multiple Azure subscriptions by using Azure Blueprints.
