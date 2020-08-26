@@ -33,7 +33,7 @@ Here are additional resources to help you go further.
 
 ### Purchase Azure services
 
-* If you're just getting started with Azure, review commonly asked questions in the [Azure free account FAQ](https://azure.microsoft.com/free/free-account-faq/?azure-portal=true) to see whether a Free Trail account is right for you.
+* If you're just getting started with Azure, review commonly asked questions in the [Azure free account FAQ](https://azure.microsoft.com/free/free-account-faq/?azure-portal=true) to see whether a Free Trial account is right for you.
 * To learn more about how to purchase Azure products and services, see [Explore flexible purchasing options for Azure](https://azure.microsoft.com/pricing/purchase-options?azure-portal=true).
 
 ### Understand your bill
