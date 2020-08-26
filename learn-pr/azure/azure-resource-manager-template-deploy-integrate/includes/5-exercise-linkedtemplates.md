@@ -15,7 +15,7 @@ Be sure you are signing in to the same account that activated the sandbox.
 
 ::: zone pivot="powershell"
 
-[!include[](./powershell/5-exercise-linkedtemplates-azurecli.md)]
+[!include[](./powershell/5-exercise-linkedtemplates-powershell.md)]
 
 ::: zone-end
 
