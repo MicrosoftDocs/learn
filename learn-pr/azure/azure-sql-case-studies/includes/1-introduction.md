@@ -1,4 +1,4 @@
-In this learning path, you've deployed and configured a secure, efficient, and highly available solution by using Azure SQL.
+In this learning path, you've deployed and configured a secure, performant, and highly available solution by using Azure SQL.
 
 There are many elements in a single solution. In this module, you'll learn how to take the business scenario and determine the best resources and processes to satisfy requirements while considering the constraints within the scenario. You'll also learn about other opportunities for Azure SQL and the cloud.
 

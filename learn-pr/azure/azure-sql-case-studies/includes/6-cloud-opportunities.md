@@ -8,7 +8,7 @@ Satya Nadella, Microsoft CEO, once claimed that Azure is the world's computer. W
 
 ### Integration with other services
 
-Azure SQL is not the end of your Azure journey. Many other Azure services can connect to Azure SQL to help you build more efficient and intelligent applications.
+Azure SQL is not the end of your Azure journey. Many other Azure services can connect to Azure SQL to help you build more performant and intelligent applications.
 
 Azure SQL Database, for example, integrates with many other services. For example, the integration of Azure SQL Database with Microsoft Power Platform can make it easier for you to:
 

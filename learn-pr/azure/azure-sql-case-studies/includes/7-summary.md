@@ -1,6 +1,6 @@
 Congratulations, you have completed the final module in the learning path about Azure SQL fundamentals. You've taken your SQL Server expertise, and with some dedication, worked through translating those skills to Azure SQL. Hopefully, you understand the possibilities and benefits associated with moving to Azure SQL and the broader Azure ecosystem.
 
-For continuing your learning and going beyond Azure SQL, the following section lists a few useful resources. Additionally, after you complete all the exercises in the learning path, you might consider picking a workload that you have and running a proof of concept. You can start small and work through the tasks and considerations for deploying and configuring secure, efficient, and highly available Azure SQL solutions.
+For continuing your learning and going beyond Azure SQL, the following section lists a few useful resources. Additionally, after you complete all the exercises in the learning path, you might consider picking a workload that you have and running a proof of concept. You can start small and work through the tasks and considerations for deploying and configuring secure, performant, and highly available Azure SQL solutions.
 
 ## Learn more
 
