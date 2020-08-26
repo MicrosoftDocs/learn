@@ -40,10 +40,10 @@ If you need to, you can decrypt a disk by using either the Azure CLI, PowerShell
 
 ### Use Azure CLI to decrypt a disk
 
-For the Azure CLI, use the `vm encryption disable` command:
+For the Azure CLI, use the `az vmss encryption disable` command:
 
 ```AzureCLI
-Disable-AzVMDiskEncryption -ResourceGroupName ContosoResourceGroup -VMName ContosoVM6
+az vmss encryption disable --resource-group ContosoResourceGroup --name ContosoVM6 
 ```
 
 ### Use PowerShell to decrypt a disk
