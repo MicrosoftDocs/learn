@@ -12,9 +12,9 @@ There are three general types of factors:
 
 For example, to log into an account:
 
-    1. You enter your user name, this is your identity.
-    1. You enter your password. This is the first factor, something you know.
-    1. Then select an approval button on a smartphone app. This is the second factor, something you have.
+    - You enter your user name, this is your identity.
+    - You enter your password. This is the first factor, something you know.
+    - Then select an approval button on a smartphone app. This is the second factor, something you have.
 
 In the example, MFA was used to log into an account with two factors: a password and an app on a physical device you had in your possession.
 
@@ -35,7 +35,7 @@ What is the most important thing you should secure using MFA? You guessed it! Yo
 
 Here is another way of looking at MFA:
 
-:::image type="content" source="../media/4-mfa.png" alt-text="MFA":::
+:::image type="content" source="../media/4-mfa.png" alt-text="Diagram depicting two factors, a password and an authentication device, showcasing how an account is logged into.":::
 
 ## MFA apps and other options
 
