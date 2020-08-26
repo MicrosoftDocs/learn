@@ -186,6 +186,7 @@ Once you have those classes created to represent your users, you'll create new u
         {
             CosmosItemResponse<User> userReadResponse = container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class).block();
             logger.info("Read user {}", user.getId());
+            return userReadResponse;
         }
         catch (CosmosExceptioni de)
         {
@@ -223,41 +224,36 @@ Once you have those classes created to represent your users, you'll create new u
 
 Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a user record to account for a change to their last name.
 
-1. Copy and paste the **ReplaceUserDocument** method after the **ReadUserDocument** method in the Program.cs file.
+1. Add the `replaceUserDocument` method after the `readUserDocument` method in the `CosmosApp.java` file.
 
     ```java
-    private async Task ReplaceUserDocument(string databaseName, string containerName, User updatedUser)
+    private static CosmosItemResponse<User> updatedUserDocument(User user)
     {
         try
         {
-            await this.client.ReplaceDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, updatedUser.Id), updatedUser, new RequestOptions { PartitionKey = new PartitionKey(updatedUser.UserId) });
-            this.WriteToConsoleAndPromptToContinue("Replaced last name for {0}", updatedUser.LastName);
+            CosmosItemResponse<User> userReplaceResponse = container.replaceItem(user, user.getId(), new PartitionKey(user.getUserId()));
+            logger.info("Replaced last name for {}", updatedUser.getLastName());
+            return userReplaceResponse;
         }
-        catch (DocumentClientException de)
+        catch (CosmosException de)
         {
-            if (de.StatusCode == HttpStatusCode.NotFound)
-            {
-                this.WriteToConsoleAndPromptToContinue("User {0} not found for replacement", updatedUser.Id);
-            }
-            else
-            {
-                throw;
-            }
+            logger.error("Failed to read {}", user.getUserId());
         }
     }
     ```
 
-1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
+1. Copy and paste the following code to the end of the `basicOperations` method, after the document creation code.
 
     ```java
-    yanhe.LastName = "Suh";
-    await this.ReplaceUserDocument("Users", "WebCustomers", yanhe);
+    maxaxam.setLastName("Suh");
+    replaceUserDocument(maxaxam);
     ```
 
-1. In the integrated terminal, run the following command.
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
-    dotnet run
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
     ```
 
     The terminal displays the following output, where the output "Replaced last name for Suh" indicates the document was replaced.
@@ -265,52 +261,42 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     ```output
     Database and container validation complete
     User 1 already exists in the database
-    Press any key to continue ...
     Replaced last name for Suh
-    Press any key to continue ...
     User 2 already exists in the database
-    Press any key to continue ...
     Read user 1
-    Press any key to continue ...
     End of demo, press any key to exit.
     ```
 
 ## Delete documents
 
-1. Copy and paste the **DeleteUserDocument** method underneath your **ReplaceUserDocument** method.
+1. Copy and paste the `deleteUserDocument` method underneath your `replaceUserDocument` method.
 
     ```java
-    private async Task DeleteUserDocument(string databaseName, string containerName, User deletedUser)
+    private static CosmosItemResponse<User> deleteUserDocument(User deletedUser)
     {
         try
         {
-            await this.client.DeleteDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, deletedUser.Id), new RequestOptions { PartitionKey = new PartitionKey(deletedUser.UserId) });
-            Console.WriteLine("Deleted user {0}", deletedUser.Id);
+            CosmosItemResponse<User> userDeleteResponse = container.deleteItem(deletedUser.getId(), new PartitionKey(deletedUser.getUserId())).block();
+            logger.info("Deleted user {}", deletedUser.getId());
         }
-        catch (DocumentClientException de)
+        catch (CosmosException de)
         {
-            if (de.StatusCode == HttpStatusCode.NotFound)
-            {
-                this.WriteToConsoleAndPromptToContinue("User {0} not found for deletion", deletedUser.Id);
-            }
-            else
-            {
-                throw;
-            }
+            logger.error("User {} not found for deletion", deletedUser.getId());
         }
     }
     ```
 
-1. Copy and paste the following code in the end of the **BasicOperations** method.
+1. Copy and paste the following code in the end of the `basicOperations` method.
 
     ```java
-    await this.DeleteUserDocument("Users", "WebCustomers", yanhe);
+    deleteUserDocument(maxaxam);
     ```
 
-1. In the integrated terminal, run the following command.
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
-    dotnet run
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
     ```
 
     The terminal displays the following output, where the output "Deleted user 1" indicates the document was deleted.
@@ -318,13 +304,9 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
     ```output
     Database and container validation complete
     User 1 already exists in the database
-    Press any key to continue ...
     Replaced last name for Suh
-    Press any key to continue ...
     User 2 already exists in the database
-    Press any key to continue ...
     Read user 1
-    Press any key to continue ...
     Deleted user 1
     End of demo, press any key to exit.
     ```

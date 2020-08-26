@@ -17,7 +17,7 @@ quiz:
   title: Check your knowledge
   questions:
  
-  - content: "Which of the following are convenient ways to get the URI and master key for your account into your project?"
+  - content: "Which of the following is the most convenient way to get the URI and master key for your account into your project?"
     choices:
     - content: "The client will infer the connection string when it connects to the server"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       isCorrect: true
       explanation: "You can find the URI and key in the **Keys** blade of the Azure Portal."
     - content: "Using the Azure CLI"
-      isCorrect: true
+      isCorrect: false
       explanation: "While this is a good choice, especially since Visual Studio Code has a built-in terminal, it does require knowledge of the required commands. This may not be as convenient as the Visual Studio Code extension."
  
   - content: "When working with Azure Cosmos DB's SQL API, which of these can be used to perform CRUD operations from a Java application?"
