@@ -14,13 +14,26 @@ For on-premises environments, Active Directory running on Windows Server provide
 
 When you secure identities on-premises with Active Directory, Microsoft doesn't monitor sign-in attempts. When you connect Active Directory with Azure AD, Microsoft can help protect you by detecting suspicious sign-in attempts at no extra cost. For example, Azure AD can detect sign-in attempts from unexpected locations or unknown devices.
 
-## What kinds of resources can Azure AD help secure?
+## Who uses Azure AD?
 
-Azure AD helps users access both external and internal resources.
+Azure AD is for:
 
-**External resources** might include Microsoft Office 365, the Azure portal, and thousands of other software as a service (SaaS) applications.
+* **IT administrators**
 
-**Internal resources** might include apps on your corporate network and intranet, along with any cloud applications developed within your organization.
+    Administrators can use Azure AD to control access to applications and resources based on their business requirements.
+* **App developers**
+
+    Developers can use Azure AD to provide a standards-based approach for adding functionality to applications that they build, such as adding SSO functionality to an app or enabling an app to work with a user's existing credentials.
+* **End users**
+
+    End users can manage their identity. For example, self-service password reset enables users to change or reset their password with no involvement from an IT administrator or help desk.
+* **Online service subscribers**
+
+    Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers are already using Azure AD.
+
+    A _tenant_ is a representation of an organization. A tenant is typically separated from other tenants and has its own identity.
+
+    Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant.
 
 ## What services does Azure AD provide?
 
@@ -31,37 +44,27 @@ Azure AD provides services such as:
     This includes verifying identity to access applications and resources, and providing functionality such as self-service password reset, multi-factor authentication (MFA), a custom banned password list, and smart lockout services.
 * **Single sign-on (SSO)**
 
-    SSO enables you to remember only one ID and one password to access multiple applications. A single identity is tied to a user, which simplifies the security model. As users change roles or leave an organization, access modifications are tied to that identity, which greatly reduces the effort needed to change or disable accounts.
+    SSO enables you to remember only one username and one password to access multiple applications. A single identity is tied to a user, which simplifies the security model. As users change roles or leave an organization, access modifications are tied to that identity, which greatly reduces the effort needed to change or disable accounts.
 * **Application management**
 
-    You can manage your cloud and on-premises apps by using Azure AD Application Proxy, single sign-on, the My Apps portal (also referred to as *Access panel*), and SaaS applications.
+    You can manage your cloud and on-premises apps by using Azure AD. Features like Application Proxy, SaaS apps, the My Apps portal (also referred to as *Access panel*), and single-sign on provide a better user experience.
 * **Device management**
 
     As well as accounts for individual people, Azure AD also supports the registration of devices. This enables devices to be managed through tools like Microsoft Intune. It also allows for device-based conditional access policies to restrict access attempts to only those coming from known, registered devices, regardless of the requesting user account.
 
-## Who is Azure AD for?
+## What kinds of resources can Azure AD help secure?
 
-Azure AD is for:
+Azure AD helps users access both external and internal resources.
 
-* **IT administrators**
+**External resources** might include Microsoft Office 365, the Azure portal, and thousands of other software as a service (SaaS) applications.
 
-    Administrators can use Azure AD to control access to applications and resources based on their business requirements.
-* **App developers**
-
-    Developers can use Azure AD to provide a standards-based approach for adding functionality to applications that they build, such as adding SSO functionality to an app or enabling an app to work with a user's existing credentials.
-* **Online service subscribers**
-
-    Microsoft 365, Microsoft Office 365, Azure, and Microsoft Dynamics CRM Online subscribers are already using Azure AD.
-
-    A _tenant_ is a representation of an organization. A tenant is typically separated from other tenants and has its own identity.
-
-    Each Microsoft 365, Office 365, Azure, and Dynamics CRM Online tenant is automatically an Azure AD tenant.
+**Internal resources** might include apps on your corporate network and intranet, along with any cloud applications developed within your organization.
 
 ## What's single sign-on (SSO)?
 
 Single sign-on enables a user to sign in one time and use that credential to access multiple resources and applications from different providers.
 
-The more identities a user has to manage, the greater the risk of a credential-related security incident. More identities mean more passwords to remember and periodically change. Password policies can vary among applications and, as complexity requirements increase, it becomes increasingly difficult for users to remember them.
+More identities mean more passwords to remember and change. Password policies can vary among applications and, as complexity requirements increase, it becomes increasingly difficult for users to remember them. The more passwords a user has to manage, the greater the risk of a credential-related security incident.
 
 Consider the process of managing all those identities. Additional strain is placed on help desks as they deal with account lockouts and password reset requests. If a user leaves an organization, tracking down all those identities and ensuring they are disabled can be challenging. If an identity is overlooked, this could allow access when it should have been eliminated.
 
@@ -71,7 +74,9 @@ You'll find resources at the end of this module about how to enable SSO through 
 
 ## How can I connect Active Directory with Azure AD?
 
-There are a few ways to connect your existing Active Directory installation with Azure AD. One popular method is Azure AD Connect.
+Connecting Active Directory with Azure AD enables you to provide a consistent identity experience to your users.
+
+There are a few ways to connect your existing Active Directory installation with Azure AD. Perhaps the most popular method is to use Azure AD Connect.
 
 Azure AD Connect synchronizes user identities between Active Directory running on-premises and Azure AD. Azure AD Connect synchronizes changes between both identity systems, which enables you to use features like SSO, MFA, and self-service password reset under both systems. Self-service password reset prevents users from using known compromised passwords.
 

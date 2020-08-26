@@ -15,7 +15,7 @@ These elements fall into three categories:
 
 * **Something you know**
 
-    This could be a password or the answer to a security question.
+    This could be your email address and password.
 * **Something you have**
 
     This might be a code that's sent to your mobile phone.
