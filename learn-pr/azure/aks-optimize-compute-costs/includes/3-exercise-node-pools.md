@@ -63,13 +63,13 @@ With the resource group in place, you can now create the AKS cluster. Your first
         --name $AKS_CLUSTER_NAME \
         --location $REGION_NAME \
         --kubernetes-version $VERSION \
-        --node-count 3 \
+        --node-count 2 \
         --load-balancer-sku standard \
         --vm-set-type VirtualMachineScaleSets \
         --generate-ssh-keys
     ```
 
-    Notice that two nodes are configured in the default node pool by using the `--node-count 3` parameter. Recall from earlier discussion that essential system services run across this node pool. Additional nodes provide for reliability in cluster operation.
+    Notice that two nodes are configured in the default node pool by using the `--node-count 2` parameter. Recall from earlier discussion that essential system services run across this system node pool. It is important that production clusters use at least `--node-count 3` for reliability in cluster operation. We're using only two nodes here for cost considerations in this exercise.
 
 1. Run the `az aks nodepool list` command to list the node pools in your new cluster:
 
@@ -112,7 +112,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
         --resource-group $RESOURCE_GROUP \
         --cluster-name $AKS_CLUSTER_NAME \
         --name batchprocpl \
-        --node-count 3
+        --node-count 2
     ```
 
 1. Run the `az aks nodepool list` command to list the new node pool in your new cluster:
@@ -128,7 +128,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
       {
         "agentPoolType": "VirtualMachineScaleSets",
         "availabilityZones": null,
-        "count": 3,
+        "count": 2,
         "enableAutoScaling": null,
         "enableNodePublicIp": false,
         "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/rg-akscostsaving/providers/Microsoft.ContainerService/managedClusters/akscostsaving-17835/agentPools/batchprocpl",
