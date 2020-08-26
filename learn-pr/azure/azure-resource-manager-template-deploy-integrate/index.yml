@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.resource-manager-template-deploy-integrate
 metadata:
-  title: "Deploy and orchestrate Azure resources using Azure Resource Manager (ARM) templates  - Learn"
+  title: "Deploy and orchestrate Azure resources using Azure Resource Manager (ARM) templates"
   description: TBD
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Deploy and orchestrate Azure resources using Azure Resource Manager (ARM) templates  - Learn"
+title: "Deploy and orchestrate Azure resources using Azure Resource Manager (ARM) templates"
 summary: TBD.
 abstract: |
   In this module, you will:
-  - Evaluate the What-if operation so can preview the changes that will happen as you deploy your templates.
+  - Learn how you can deploy the templates you are authoring, from a variety of methods.
   - Modularize the template by creating a linked templates
   - Learn how to create a Github Action to deploy templates.
 prerequisites: |
@@ -27,7 +27,7 @@ prerequisites: |
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
-- beginner
+- intermediate
 roles:
 - administrator
 - developer

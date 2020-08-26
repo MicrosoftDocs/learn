@@ -1,4 +1,4 @@
-"GitHub Actions" helps your team to be agile and competitive in today's marketplace by allowing you to automate your system/solution development life-cycle tasks.
+"[GitHub Actions(https://docs.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions)]" helps your team to be agile and competitive in today's marketplace by allowing you to automate your system/solution development life-cycle tasks.
 
 Suppose you and your team are developing a solution that will require a significant number of resources in an Azure environment. You need to ensure the solution can be deployed quickly and automatically as part of a continuous integration/continuous delivery (CI/CD) pipeline.  That way you can automate the creation and teardown of the project's infrastructure. By including the resources management in your CI/CD pipeline You're adopting infrastructure as code (IaC) to automate the IT tasks.
 
@@ -20,26 +20,4 @@ A basic workflow for deploying a Resource Manager template can have at least thr
 2. Sign in to Azure.
 3. Deploy a Resource Manager template
 
-## GitHub Action input for deploying your ARM template
-
-* `creds` **Required**
-    The Service Principal information for authentication against your Azure subscription
-
-* `templateLocation` **Required**
-    The relative path to the Azure Resource Manager template in relation to the YAML workflow file
-
-* `resourceGroupName`
-    The name of the target resource group.  If you don't provide a resource group name the template will be deployed at subscription scope
-
-* `deploymentMode`
-    Incremental (only add resources to resource group) or Complete (remove extra resources from resource group). The default mode is `Incremental`.
-  
-* `deploymentName`
-    The name of the resource group deployment to create.
-
-* `parameters`
-    The path to the ARM template parameters file or the parameters themselves in a Key-Value Pairs format
-
-* `overrideParameters`
-    The path to the ARM override parameters file or pass the parameters themselves in a Key-Value Pairs format
-
+The Azure login action uses a service principal to authenticate against Azure. The principal of a CI/CD workflow typically needs the built-in contributor right in order to deploy Azure resources.

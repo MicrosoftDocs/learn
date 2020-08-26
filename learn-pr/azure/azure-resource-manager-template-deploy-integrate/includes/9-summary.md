@@ -33,5 +33,3 @@ Here are some links to learn more:
 - [Outputs in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-outputs?tabs=azure-powershell)
 
 - [Parameters in Azure Resource Manager templates](https://docs.microsoft.com/azure/azure-resource-manager/templates/template-parameters?azure-portal=true)
-
-- 
