@@ -25,5 +25,5 @@ quiz:
        explanation: "A product road map management tool helps you maintain a central, single source of truth, for your road map. Making it easier to share the data to a variety of audiences."
      - content: To make it easier to manage meetings
        isCorrect: false
-       content: To keep track of the names of the features you want to build
+     - content: To keep track of the names of the features you want to build
        isCorrect: false

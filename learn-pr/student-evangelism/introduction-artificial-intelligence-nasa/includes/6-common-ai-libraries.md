@@ -1,4 +1,4 @@
-As we complete the learning path, we'll be using the following libraries. The libraries are free, and they are commonly used in real-life AI projects. These libraries are just a few of the many libraries that you can use to create an AI model. To learn about other common AI libraries and what they do, see [Top 8 Python libraries for machine learning and artificial intelligence](https://hackernoon.com/top-8-python-libraries-for-machine-learning-and-artificial-intelligence-y08id3031?azure-portal=true).
+As we complete the learning path, we'll be using the following libraries. The libraries are free, and they are commonly used in real-life AI projects. These libraries are just a few of the many libraries you can use to create an AI model. To learn about other common AI libraries and what they do, see [Top 8 Python libraries for machine learning and artificial intelligence](https://hackernoon.com/top-8-python-libraries-for-machine-learning-and-artificial-intelligence-y08id3031?azure-portal=true).
 
 ## Matplotlib
 

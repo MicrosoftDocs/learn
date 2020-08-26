@@ -33,7 +33,7 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Inbound port rules - Allow select ports | **RDP (3389)** and **HTTP (80)**|
     | | |
 
-4. Switch to the Management tab, and in its **Monitoring** section, select the following setting:
+4. Switch to the Monitoring tab, and in its **Monitoring** section, select the following setting:
 
     | Settings | Values |
     | -- | -- |
