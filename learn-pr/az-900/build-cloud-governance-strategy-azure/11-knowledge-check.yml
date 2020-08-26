@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: How can Tailwind Traders allow some users to control the virtual machines in each environment but prevent them from modifying networking and other resources in the same resource group or Azure subscription?
     choices:
-    - content: Create a custom Azure RBAC policy.
+    - content: Create a role assignment through Azure RBAC.
       isCorrect: true
       explanation: Azure RBAC enables you to create roles that define access permissions. You might crate one role that limits access only to virtual machines and a second role that provides administrators with access to everything.
     - content: Create a policy in Azure Policy that audits resource usage.
