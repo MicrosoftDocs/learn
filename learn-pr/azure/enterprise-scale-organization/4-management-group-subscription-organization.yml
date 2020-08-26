@@ -16,32 +16,23 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: 'What authentication account type(s) is recommendations when planning for enterprise enrollment?'
     choices:
-    - content: 'Answer 1'
+    - content: 'Microsoft Account (MSA)'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.'
+    - content: 'Work or school account'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.'
 
-  - content: 'Question 2'
+  - content: 'Azure AD tenant provides identity and access management, when designing your solution which of the following are valid design considerations or recommendations?'
     choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+    - content: 'Multifactor authentication provides another layer of security and a second barrier of authentication.'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'Enforce multifactor authentication and conditional access policies for all privileged accounts for greater security.'
+    - content: 'Multiple Azure AD tenants can not function in the same enrollment.'
+      isCorrect: false
+      explanation: 'Multiple Azure AD tenants can function in the same enrollment.'
+    - content: 'Do not start by implementing an Azure-AD-only identity deployment if your organization already has an identity infrastructure.'
+      isCorrect: false
+      explanation: "If your organization doesn't have an identity infrastructure, start by implementing an Azure-AD-only identity deployment. Such deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices."
