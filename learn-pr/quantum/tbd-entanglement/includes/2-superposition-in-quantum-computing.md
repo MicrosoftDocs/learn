@@ -13,7 +13,7 @@ It captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $H$, of 
 
 Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when writing quantum algorithms. But we can use it to assist us in understanding some concepts of quantum computing.
 
-The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. Each wave function is associated with an important concept in quantum computing - **probability amplitude** of an observable. The probability amplitude determines the probability of obtaining a certain outcome when measuring
+The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. Each wave function is associated with an important concept in quantum computing - **probability amplitude** of the wave function. The probability amplitude determines the probability of obtaining a certain outcome when measuring
 the system. This is an important difference when compared to classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather we describe bits in terms of the probabilities of finding those states when we observe them.
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems with kets $\ket{ }$.
@@ -73,7 +73,7 @@ quantum mechanics and therefore of quantum computing.
 ## Quantum computers are probabilistic
 
 A fundamental difference between classical computers and quantum computers is
-that programs in quantum computers are probabilistic. Quantum algorithms consist
+that programs in quantum computers are probabilistic, whereas classical computers are deterministic. Quantum algorithms consist
 of linear operations to a register of qubits to modify their states to a
 particular superposition of all possibilities. Each possible state has an
 associated probability amplitude. When we make a measurement, we obtain one of
@@ -82,9 +82,9 @@ classical computing, where a bit can only be deterministically 0 or 1.
 
 These characteristics mean that sometimes you have to run the algorithm several times to ensure the highest probability result in the output. This repetition might seem inefficient. But in many cases, running quantum algorithms several times is much more efficient than solving the task classically.
 
-![Figure1](../media/KittyYeungQ7.png)
+![Figure1](../media/Figure1_superposition.png)
 
-![Figure2](../media/KittyYeungQ8.png)
+![Figure2](../media/figure2_probability.png)
 
 How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
 
@@ -93,12 +93,12 @@ absolute values, for example $|a|$, squared give the corresponding probabilities
 instance, the probability for observing $\ket{00}$ is $P(00)=|a|^2$. For
 $\ket{01}$, it's $P(01)=|b|^2$, and so on.
 
-![Figure3](../media/KittyYeungQ9.png)
+![Figure3](../media/Figure3_configurations.svg)
 
 There are no restrictions on the types of numbers the probability amplitudes can
 be. They can be positive, negative, or even complex numbers. However, for a valid quantum superposition all probabilities must sum to one: $|a|^2+|b|^2+|c|^2+|d|^2=1$. This constraint is often known as the _normalization condition_. You can think of the normalization condition as the fact that you always obtain an outcome when you measure, so the probabilities of measuring every possible outcome must sum to one.
 
-![Figure4](../media/KittyYeungQ10.png)
+![Figure4](../media/Figure4_scale.png)
 
 In the example state we produced for the quantum random bit generator,
 $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability

@@ -169,7 +169,7 @@ This state can be obtained by sequentially applying the operations [Rx](https://
     One
     ```
 
-    You can see how `DumpMachine` displays the wanted state after applying the operations and displays the correct probabilities.
+    You can see how `DumpMachine` displays the expected state after applying the operations and displays the associated probabilities.
 
 ### Multi-qubit superposition
 
@@ -305,7 +305,7 @@ Let's look briefly on each step:
     |7⟩:     0.353553 +  0.000000 i  ==     ***                  [ 0.125000 ]     --- [  0.00000 rad ]
     ```
 
-1. **First measurement:** in the first measurement, the result was `One`. Therefore, all the amplitudes of the states whose rightmost qubit is `Zero` get vanished, this is $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$ and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the normalization condition.
+1. **First measurement:** in the first measurement, the result was `One`. Therefore, all the amplitudes of the states whose rightmost qubit is `Zero` are no longer present, this is $\ket{0}=\ket{000}, \ket{2}=\ket{010}, \ket{4}=\ket{100}$ and $\ket{6}=\ket{110}$. The rest of the amplitudes increase to fulfill the normalization condition.
 
     ```output
     # wave function for qubits with ids (least to most significant): 0;1;2
