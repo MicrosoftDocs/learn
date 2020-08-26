@@ -43,7 +43,7 @@ The terminal commands in this lab assume a Windows OS.
         protected static Logger logger = LoggerFactory.getLogger(CosmosApp.class.getSimpleName());
 
         public static void main(String[] args) {
-        logger.info("Hello World.");
+            logger.info("Hello World.");
         }
     }
     ```
@@ -73,8 +73,8 @@ The terminal commands in this lab assume a Windows OS.
 1. Within the `CosmosApp` class, create the following static class variables for your Azure Cosmos DB connection details:
 
     ```java
-    private static String endpointUri = "<your-cosmosdb-hostname>"
-    private static String primaryKey = "<your-cosmosdb-master-key>"
+    private static String endpointUri = "<your-cosmosdb-hostname>";
+    private static String primaryKey = "<your-cosmosdb-master-key>";
     ```
 
 1. Copy your connection string by clicking the Azure icon on the left, expanding your Concierge Subscription, right-clicking your new Azure Cosmos DB account, and then clicking **Copy Connection String**. Substitute in your Azure Cosmos DB hostname and master key. For example, if your uri is `https://cosmosacct.documents.azure.com:443/`, your new variable assignment will look like this: `private static String endpointUri = "https://cosmosacct.documents.azure.com:443/";`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, your new variable assignment will look like this: `private static String primaryKey = "elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==";`.

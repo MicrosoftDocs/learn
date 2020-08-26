@@ -127,36 +127,20 @@ Once you have those classes created to represent your users, you'll create new u
 
     and confirm that it executes without issue.
 
-1. a
-
-    private void WriteToConsoleAndPromptToContinue(string format, params object[] args)
-    {
-        System.out.println("Press any key to continue.");
-        Console.ReadKey();
-    }
-
-
-1. Now copy and paste the **CreateUserDocumentIfNotExists** task under the **WriteToConsoleAndPromptToContinue** method at the end of the Program.cs file.
+1. Now add the following method to `CosmosApp.java`:
 
     ```java
-    private async Task CreateUserDocumentIfNotExists(string databaseName, string containerName, User user)
+    private static CosmosItemResponse<User> createUserDocumentIfNotExists(User user)
     {
-        try
-        {
-            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
-            this.WriteToConsoleAndPromptToContinue("User {0} already exists in the database", user.Id);
-        }
-        catch (DocumentClientException de)
-        {
-            if (de.StatusCode == HttpStatusCode.NotFound)
-            {
-                await this.client.CreateDocumentAsync(UriFactory.CreateDocumentContainerUri(databaseName, containerName), user);
-                this.WriteToConsoleAndPromptToContinue("Created User {0}", user.Id);
-            }
-            else
-            {
-                throw;
-            }
+        CosmosItemResponse<User> userReadResponse = container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class).block();
+
+        if (userReadResponse.getStatusCode() == 200) {
+            logger.info("User {} already exists in the database", user.getId());
+            return userReadResponse;
+        } else {
+            CosmosItemResponse<User> userCreateResponse = container.createItem(user, new PartitionKey(user.getUserId()), new CosmosItemRequestOptions()).block();
+            logger.info("Created User {}", user.getId());
+            return userCreateResponse;
         }
     }
     ```
@@ -164,135 +148,63 @@ Once you have those classes created to represent your users, you'll create new u
 1. Then, return to the **BasicOperations** method and add the following to the end of that method.
 
     ```java
-    User yanhe = new User
-    {
-        Id = "1",
-        UserId = "yanhe",
-        LastName = "He",
-        FirstName = "Yan",
-        Email = "yanhe@contoso.com",
-        OrderHistory = new OrderHistory[]
-            {
-                new OrderHistory {
-                    OrderId = "1000",
-                    DateShipped = "08/17/2018",
-                    Total = "52.49"
-                }
-            },
-            ShippingPreference = new ShippingPreference[]
-            {
-                    new ShippingPreference {
-                            Priority = 1,
-                            AddressLine1 = "90 W 8th St",
-                            City = "New York",
-                            State = "NY",
-                            ZipCode = "10001",
-                            Country = "USA"
-                    }
-            },
-    };
+    User maxaxam = new User();
 
-    await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", yanhe);
+    createUserDocumentIfNotExists(maxaxam);
 
-    User nelapin = new User
-    {
-        Id = "2",
-        UserId = "nelapin",
-        LastName = "Pindakova",
-        FirstName = "Nela",
-        Email = "nelapin@contoso.com",
-        Dividend = "8.50",
-        OrderHistory = new OrderHistory[]
-        {
-            new OrderHistory {
-                OrderId = "1001",
-                DateShipped = "08/17/2018",
-                Total = "105.89"
-            }
-        },
-         ShippingPreference = new ShippingPreference[]
-        {
-            new ShippingPreference {
-                    Priority = 1,
-                    AddressLine1 = "505 NW 5th St",
-                    City = "New York",
-                    State = "NY",
-                    ZipCode = "10001",
-                    Country = "USA"
-            },
-            new ShippingPreference {
-                    Priority = 2,
-                    AddressLine1 = "505 NW 5th St",
-                    City = "New York",
-                    State = "NY",
-                    ZipCode = "10001",
-                    Country = "USA"
-            }
-        },
-        Coupons = new CouponsUsed[]
-        {
-            new CouponsUsed{
-                CouponCode = "Fall2018"
-            }
-        }
-    };
+    User nelapin = new User();
 
-    await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);
+    createUserDocumentIfNotExists(nelapin);
     ```
 
-1. In the integrated terminal, again, type the following command to run the program.
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
-    dotnet run
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
     ```
 
-    The terminal will display output as the application creates each new user document. Press any key to complete the program.
+    The terminal will display output as the application creates each new user document.
 
     ```output
     Database and container validation complete
     Created User 1
-    Press any key to continue ...
     Created User 2
-    Press any key to continue ...
     End of demo, press any key to exit.
     ```
 
+    You may see some additional text emitted by the logger as well.
+
 ## Read documents
 
-1. To read documents from the database, copy in the following code and place after the **WriteToConsoleAndPromptToContinue** method in the Program.cs file.
+1. To read documents from the database, add the following method to `CosmosApp`
 
     ```java
-    private async Task ReadUserDocument(string databaseName, string containerName, User user)
+    private static CosmosItemResponse<User> readUserDocument(User user)
     {
         try
         {
-            await this.client.ReadDocumentAsync(UriFactory.CreateDocumentUri(databaseName, containerName, user.Id), new RequestOptions { PartitionKey = new PartitionKey(user.UserId) });
-            this.WriteToConsoleAndPromptToContinue("Read user {0}", user.Id);
+            CosmosItemResponse<User> userReadResponse = container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class).block();
+            logger.info("Read user {}", user.getId());
         }
-        catch (DocumentClientException de)
+        catch (CosmosExceptioni de)
         {
-            if (de.StatusCode == HttpStatusCode.NotFound)
-            {
-                this.WriteToConsoleAndPromptToContinue("User {0} not read", user.Id);
-            }
-            else
-            {
-                throw;
-            }
+            logger.error("Failed to read user {}", user.getId(), de);
         }
     }
     ```
 
-1. Copy and paste the following code to the end of the **BasicOperations** method, after the `await this.CreateUserDocumentIfNotExists("Users", "WebCustomers", nelapin);` line.
+1. Copy and paste the following code to the end of the `basicOperations` method, after the document creation code:
 
     ```java
-    await this.ReadUserDocument("Users", "WebCustomers", yanhe);
+    readUserDocument(maxaxam);
     ```
 
-1. In the integrated terminal, type the following command to run the program.
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
-    dotnet run
+    mvn clean package
+    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
     ```
 
     The terminal displays the following output, where the output "Read user 1" indicates the document was retrieved.
@@ -300,13 +212,12 @@ Once you have those classes created to represent your users, you'll create new u
     ```output
     Database and container validation complete
     User 1 already exists in the database
-    Press any key to continue ...
     User 2 already exists in the database
-    Press any key to continue ...
     Read user 1
-    Press any key to continue ...
     End of demo, press any key to exit.
     ```
+
+    You may see some additional text emitted by the logger as well.
 
 ## Replace documents
 
