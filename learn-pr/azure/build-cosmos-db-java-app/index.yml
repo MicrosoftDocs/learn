@@ -38,4 +38,4 @@ units:
 - learn.cosmos-db-java-app-with-vscode.5-query
 - learn.cosmos-db-java-app-with-vscode.7-summary
 badge:
-  uid: learn.cosmos-db-java-app-with-vscode.badge
+  uid: learn.cosmos-db-java-app.badge
