@@ -18,7 +18,7 @@ Delivery drivers are permitted to use their own mobile devices to access schedul
 
 Tailwind Traders uses Active Directory to secure their on-premises environments. They need to ensure that only employees can sign in and access their business applications. Tailwind Traders also needs to ensure that short-term staff can access these applications only when they're under active contract.
 
-How can Azure Active Directory (Azure AD), single sign-on (SSO), and multi-factor authentication (MFA) help Tailwind Traders consistently secure all of their applications, both when accessed from their intranet and from public networks?
+How can Azure Active Directory (Azure AD), single sign-on (SSO), and Azure Multi-Factor Authentication help Tailwind Traders consistently secure all of their applications, both when accessed from their intranet and from public networks?
 
 ## Learning objectives
 
