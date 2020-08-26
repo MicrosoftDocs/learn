@@ -10,7 +10,7 @@ Before we discuss how to use Azure Policy for Kubernetes, we need to cover a few
 
 An *admission* controller is a Kubernetes plug-in that intercepts authenticated and authorized requests to the Kubernetes API before the requested Kubernetes object's persistence. For example, suppose you deploy a new workload, and the deployment includes a pod request with specific memory requirements. The admission controller intercepts the deployment request and must authorize the deployment before it's persisted to the cluster.
 
-You can think of an admission controller as software that governs and enforces how the cluster is used and designed. It limits requests to create, delete, and modify Kubernetes objects
+You can think of an admission controller as software that governs and enforces how the cluster is used and designed. It limits requests to create, delete, and modify Kubernetes objects.
 
 ## What is an admission-controller webhook?
 
@@ -59,18 +59,18 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature.
 1. Register two resource providers by using the `az provider register` command:
 
     - **Microsoft.ContainerService**: This resource provider is the same one you used to register the **spotpoolpreview** feature with previously.
-    
+
     - **Microsoft.PolicyInsights**: This resource provider supports actions such as querying information about policy events. It also provides the ability to query, create or update, and delete policy remediation.
 
     Here's an example of the two registration commands:
-    
+
     ```azurecli
     az provider register --namespace Microsoft.ContainerService
     az provider register --namespace Microsoft.PolicyInsights
     ```
 
 1. Register the `AKS-AzurePolicyAutoApprove` feature with the `Microsoft. ContainerService` resource provider. Here's an example of the command:
-    
+
     ```azurecli
     az feature register --namespace Microsoft.ContainerService --name AKS-AzurePolicyAutoApprove
     ```
@@ -90,7 +90,7 @@ There are a few steps to registering the Azure Policy Add-on for AKS feature.
 
     az aks enable-addons \
         --addons azure-policy \
-        --name myAKSLCuster \
+        --name myAKSCluster \
         --resource-group myResourceGroup
     ```
 
@@ -105,11 +105,11 @@ For each policy, the following overview information is listed:
 | Item  | Description |
 | --- | --- |
 | **Name** | The name of the policy. For example, **[Preview]: Ensure container CPU and memory resource limits do not exceed the specified limits in Kubernetes cluster**.
-| **Scope** | The subscription resource group to which this policy applies. For example, "Visual Studio Enterprise/akscostsavinggrp".
+| **Scope** | The subscription resource group to which this policy applies. For example, "Visual Studio Enterprise/rg-akscostsaving".
 | **Compliance state** | The status of assigned policies. The value can be **Compliant**, **Conflicted**, **Not started**, or **Not Registered**. |
 | **Resource compliance** | The percentage of resources that comply with the policy. This calculation takes into account compliant, non-compliant, and conflicting resources. |
 | **Non-compliant resources** | The number of unique resources that violate one or more policy rules. |
-| **Non-compliant policies** | The number of non-compliant policies.
+| **Non-compliant policies** | The number of non-compliant policies. |
 
 From here, you drill down into the per-resource and per-policy details and events triggered. For example, you can examine details of a workload deployment that is denied.
 

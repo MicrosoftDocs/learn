@@ -6,13 +6,13 @@ Machine learning models are increasingly used to inform decisions that affect pe
 - Inclusion in a marketing promotion.
 - Selection for employment or promotion.
 
-With such critical decisions in the balance, it's important to have confidence that the machine learning models we relay on predict fairly, and don't discriminate for or against subsets of the population based on ethnicity, gender, age, or other factors.
+With such critical decisions in the balance, it's important to have confidence that the machine learning models we rely on predict fairly, and don't discriminate for or against subsets of the population based on ethnicity, gender, age, or other factors.
 
 ![A machine learning model influences a diverse selection of people.](../media/fairness.png)
 
 ## Learning objectives
 
-In this module, you will learn how to:   
+In this module, you will learn how to:
 
 - Evaluate machine learning models for fairness.
-- Mitigate predictive disparity in a machine learning model. 
+- Mitigate predictive disparity in a machine learning model.

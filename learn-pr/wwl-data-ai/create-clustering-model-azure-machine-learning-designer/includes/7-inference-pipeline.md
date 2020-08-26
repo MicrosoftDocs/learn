@@ -16,7 +16,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 
     - Replace the **penguin-data** dataset with an **Enter Data Manually** module that does not include the **Species** column.
     - Remove the **Select Columns in Dataset** module, which is now redundant.
-    - Connect the **web Service Input** and **Enter Data Manually** modules (which represent inputs for data to be clustered) to the **Assign Data to Clusters** module.
+    - Connect the **Web Service Input** and **Enter Data Manually** modules (which represent inputs for data to be clustered) to the first **Apply Transformation** module.
     - Remove the **Evaluate Model** module.
 
     Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.
