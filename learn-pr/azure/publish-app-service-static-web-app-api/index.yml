@@ -2,7 +2,7 @@
 uid: learn.azure.publish-static-web-app-and-api
 metadata:
   title: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps
-  description: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps
+  description: Publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps. Use Visual Studio Code to create and run Azure Functions locally.
   ms.date: 05/08/2020
   author: johnpapa
   ms.author: jopapa
