@@ -16,23 +16,23 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What authentication account type(s) is recommendations when planning for enterprise enrollment?'
+  - content: 'Management groups can be used to aggregate policy and initiative assignments via Azure Policy?'
     choices:
-    - content: 'Microsoft Account (MSA)'
-      isCorrect: false
-      explanation: 'Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.'
-    - content: 'Work or school account'
+    - content: 'True'
       isCorrect: true
-      explanation: 'Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.'
+      explanation: 'True, management groups can b e used to aggregate policies and initiative assignments via Azure Policy.'
+    - content: 'False'
+      isCorrect: false
+      explanation: 'True, management groups can b e used to aggregate policies and initiative assignments via Azure Policy.'
 
-  - content: 'Azure AD tenant provides identity and access management, when designing your solution which of the following are valid design considerations or recommendations?'
+  - content: "Subscriptions are a unit of management, billing and scale within Azure.  Which of the following follows Microsoft's Cloud Adaption Framework as a valid Design consideration or recommendation?"
     choices:
-    - content: 'Multifactor authentication provides another layer of security and a second barrier of authentication.'
+    - content: 'Multiple identity subscriptions to host Windows server Active Directory domain controllers.'
+      isCorrect: false
+      explanation: 'Establish a dedicated identity subscription in the Platform management group to host Windows server Active Directory domain controllers, when necessary.'
+    - content: 'Use the following principles when identifying requirements for new subscriptions: Scale Limits, Management boundary, Policy boundary, and target network topology.'
       isCorrect: true
-      explanation: 'Enforce multifactor authentication and conditional access policies for all privileged accounts for greater security.'
-    - content: 'Multiple Azure AD tenants can not function in the same enrollment.'
-      isCorrect: false
       explanation: 'Multiple Azure AD tenants can function in the same enrollment.'
-    - content: 'Do not start by implementing an Azure-AD-only identity deployment if your organization already has an identity infrastructure.'
+    - content: 'Use a rigid subscription model to hemp maintain proper governance across the organization'
       isCorrect: false
-      explanation: "If your organization doesn't have an identity infrastructure, start by implementing an Azure-AD-only identity deployment. Such deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices."
+      explanation: "Avoid a rigid subscription model, and opt instead for a set of flexible criteria to group subscriptions across the organization. This flexibility ensures that as your organization's structure and workload composition changes, you can create new subscription groups instead of using a fixed set of existing subscriptions. One size doesn't fit all for subscriptions. What works for one business unit might not work for another. Some apps might coexist within the same landing zone subscription while others might require their own subscription."
