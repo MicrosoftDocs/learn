@@ -1,11 +1,7 @@
 You've been tasked with defining and implementing the governance strategy for Tailwind Traders.
 
-Fulfilling complete cloud governance requires good analysis and requirements gathering. Luckily, there are several services in Azure to support your efforts.
+Cloud governance requires good analysis and requirement gathering. Luckily the Cloud Adoption Framework can help you define and implement your governance strategy. There are several services and features in Azure to support these efforts:
 
-Here are some key points to keep in mind:
-
-* The Cloud Adoption Framework for Azure provides you with proven guidance to help with your cloud adoption journey.
-* Cloud governance often starts at the subscription level. Billing, access control, and subscription limits are three top aspects to consider when creating and managing subscriptions.
 * Azure RBAC enables you to create roles that define access permissions.
 * Resource locks prevent resources from being accidentally deleted or changed.
 * Resource tags provide extra information, or metadata, about your resources.

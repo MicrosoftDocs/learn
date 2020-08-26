@@ -52,7 +52,7 @@ Every policy definition has conditions under which it is enforced. A policy defi
 
 ### 2. Assign the definition to resources
 
-To implement your policy definitions, you assign definitions to resources. A _policy assignment_ is a policy definition takes place within a specific scope. This scope could be a management group (a collection of multiple subscriptions), a single subscription, or a resource group.
+To implement your policy definitions, you assign definitions to resources. A _policy assignment_ is a policy definition that takes place within a specific scope. This scope could be a management group (a collection of multiple subscriptions), a single subscription, or a resource group.
 
 Policy assignments are inherited by all child resources within that scope. This means that if a policy is applied to a resource group, that policy is applied to all resources within that resource group. However, you can exclude a sub-scope from the policy assignment if there are specific child resources you need to be exempt from the policy assignment.
 
