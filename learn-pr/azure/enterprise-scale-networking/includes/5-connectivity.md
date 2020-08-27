@@ -1,18 +1,15 @@
-
-# Connectivity
-
 In this unit we will look at connectivity to Azure, to the internet and to PaaS services with design considerations and prescriptive recommendations for the enterprise.
 
 ## Connectivity to Azure
 
--ExpressRoute is private dedicated connectivity to Azure and the preferred approach for the enterprise over VPN. VPNs can be used as a source of backup. Because VPNs use the internet, latency can be very inconsistent. 
--Select ExpressRoute Direct or a provider by matching your requirements for peering locations. Connect to the Microsoft network with as little latency as possible. 
--If more than 10Gb is required or multiple circuits totalling over 10GB, consider ExpressRoute direct. ExpressRoute direct is a layer 2 connection from your hardware to Microsoft's inside a peering location and go up to 100Gbps. <https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about> 
+## ADD IMAGES this page needs at least 2
+ExpressRoute is private dedicated connectivity to Azure and the preferred approach for the enterprise over VPN. VPNs can be used as a source of backup. Because VPNs use the internet, latency can be very inconsistent. Select ExpressRoute Direct or a provider by matching your requirements for peering locations. Connect to the Microsoft network with as little latency as possible. 
+-If more than 10Gb is required or multiple circuits totalling over 10GB, consider ExpressRoute direct. ExpressRoute direct is a layer 2 connection from your hardware to Microsoft's inside a peering location and go up to 100Gbps. 
 -Ensure the right SKU is used for the ExpressRoute/VPN gateways based on bandwidth and performance requirements, otherwise you will either be paying too much or not getting full throughput. 
 -Deploy a zone redundant ExpressRoute gateway in the supported Azure region. Zone redundant Gateways provider better resilience. 
 -When throughput from on-premises to Azure must be greater than 10 Gbps, or latency minimized, enable FastPath to bypass the ExpressRoute gateway from the data path.
--Proactively monitor ExpressRoute circuits using Network Performance Monitor <https://docs.microsoft.com/azure/expressroute/how-to-npm> 
--Use multiple ExpressRoute peering locations for resiliency. <https://docs.microsoft.com/azure/expressroute/expressroute-locations> 
+-Proactively monitor ExpressRoute circuits using Network Performance Monitor  
+-Use multiple ExpressRoute peering locations for resiliency. 
 -Do not use the same ExpressRoute circuit to connect multiple environments that require isolation or dedicated bandwidth to avoid noisy-neighbor risks.
 
 ## Connectivity with the public Internet
@@ -23,7 +20,7 @@ In this unit we will look at connectivity to Azure, to the internet and to PaaS 
 -Create a global Azure Firewall policy to govern security posture across the global network environment and assign it to all Azure Firewall instances
 -When using Azure Front Door and Azure Application Gateway to protect HTTP/S apps, use WAF policies in Azure Front Door and lock down Azure Application Gateway to receive traffic only from Azure Front Door.
 -Use Azure DDoS Protection Standard protection plans to protect all public endpoints hosted within your VNets. DDoS Standard provides SLA backed DDoS protection and log telemetry. 
--Use Azure NAT Gateway to or a third party NVA to control what IP addresses Virtual Machines use to access the Internet. <https://docs.microsoft.com/azure/virtual-network/nat-gateway-resource> 
+-Use Azure NAT Gateway to or a third party NVA to control what IP addresses Virtual Machines use to access the Internet. 
 -Do not replicate on-premises perimeter network concepts and architectures into Azure. Similar security capabilities are available in Azure, but the implementation and architecture must be adapted to the cloud. This is a very common architecture mistake that leads to lowered performance and resiliency. 
 
 ## Connectivity to PaaS services
