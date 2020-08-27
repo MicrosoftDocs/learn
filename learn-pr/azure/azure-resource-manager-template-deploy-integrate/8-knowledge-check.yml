@@ -37,3 +37,14 @@ quiz:
     - content: "You can provide Shared Access Signature part of a configured secret in your GitHub repository settings"
       isCorrect: false
       explanation: "Shared Access Signature or SAS token are used to provides secure delegated access to resources in your storage account without compromising the security of your data."
+  - content: "what is the best way to modularize your resources for deployment?" 
+    choices:
+    - content: "To modularize your deployment using nested templates is the recommended way."
+      isCorrect: false
+      explanation: "Nested templates allow you to store many individual templates in one main template file.  But each file cannot be reused as easily as if they were separate files linked together."
+    - content: "To modularize your deployment using linked templates is the recommended way."
+      isCorrect: true
+      explanation: "Linked templates allow you to create reusable, composable, and modular deployments comprised of many individual arm templates."
+    - content: "The best way to modularize your deployment is to use GitHub Actions to control the deployment"
+      isCorrect: false
+      explanation: "GitHub Actions is a great way to deploy your Infrastructure as Code (IaC) in a controlled manner but it does not provide any benefits to modularize your templates"
