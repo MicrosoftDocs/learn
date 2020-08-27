@@ -283,17 +283,17 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
         }
     ```
 
-Rather than passing parameters as inline values in your script, you may find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI.  For more information about the parameter file, see [Create Resource Manager parameter file](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files?WT.mc_id=MSLearn-ARM-pierrer).
+    Rather than passing parameters as inline values in your script, you may find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI.  For more information about the parameter file, see [Create Resource Manager parameter file](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files?WT.mc_id=MSLearn-ARM-pierrer).
 
 1. To pass a local parameter file, we still use the **--parameters** parameter in the same command we've been using. But first, you need to create and save your parameter file.  Because we're using Visual Studio Code with the Azure Resource Manager (ARM) Tools extension, you can open the ARM template you saved locally and click on the "**Select or create a parameter file to enable full validation**" link.
 
 1. Click the "New..." item in the menu and the extension will create a parameter file based on the template currently opened.
 
-  ![Create parameter file in VS Code.](../../media/5-parameter-file-create-2.png)
+    ![Create parameter file in VS Code.](../../media/5-parameter-file-create-2.png)
 
 1. Once we have our local parameter file, we can use the following Azure CLI command with the **--parameters** parameters.
 
-    > [!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
+    > [!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2). Please adjust based your shell/OS of choice.
 
     ```bash
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
