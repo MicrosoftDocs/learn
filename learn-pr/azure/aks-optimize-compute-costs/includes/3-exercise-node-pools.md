@@ -1,4 +1,8 @@
-In this exercise, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster. You'll configure the cluster to support multiple node pools and make sure the cluster allows you to scale the nodes in the node pools. Then you'll add a second node pool to support user workloads. Finally, you'll scale the node count in the second node pool to zero to reduce the cost of the node used in your AKS cluster.
+Azure Kubernetes Service allows you to create different node pools to match specific workloads to the nodes running in each node pool.
+
+Recall from the drone tracking example. Your team developed a new predictive-modeling service that processes flight-path information in extreme weather conditions and creates optimal flight routes. This service requires GPU-based virtual-machine (VM) support and runs only on specific days during the week. The team wants to make sure no VMS are used when the service doesn't run.
+
+Here, you'll create an Azure Kubernetes Service (AKS)-managed Kubernetes cluster. You'll configure the cluster to support multiple node pools and make sure the cluster allows you to scale the nodes in the node pools. Then you'll add a second node pool to support user workloads. Finally, you'll scale the node count in the second node pool to zero to reduce the cost of the node used in your AKS cluster.
 
 ## Create a new resource group
 
@@ -69,7 +73,7 @@ With the resource group in place, you can now create the AKS cluster. Your first
         --generate-ssh-keys
     ```
 
-    Notice that two nodes are configured in the default node pool by using the `--node-count 2` parameter. Recall from earlier discussion that essential system services run across this system node pool. It is important that production clusters use at least `--node-count 3` for reliability in cluster operation. We're using only two nodes here for cost considerations in this exercise.
+    Notice that two nodes are configured in the default node pool by using the `--node-count 2` parameter. Recall from earlier discussion that essential system services run across this system node pool. It's important that production clusters use at least `--node-count 3` for reliability in cluster operation. We're using only two nodes here for cost considerations in this exercise.
 
 1. Run the `az aks nodepool list` command to list the node pools in your new cluster:
 
