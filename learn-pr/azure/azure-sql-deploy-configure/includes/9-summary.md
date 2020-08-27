@@ -28,9 +28,9 @@ You might also want to dive deeper into the resource limits based on service tie
 
 Two common command-line tools for deploying, verifying, and configuring Azure SQL are the [Azure CLI](https://docs.microsoft.com/cli/azure/?view=azure-cli-latest?azure-portal=true) and [Azure PowerShell](https://docs.microsoft.com/powershell/azure?azure-portal=true). You can also access both of these tools through [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview?azure-portal=true), which is an integrated terminal that supports Bash and PowerShell in the Azure portal.
 
-#### Maximum data size
+#### Data max size
 
-For more information about the difference between data space used, data space allocated, and maximum data size, see [Manage file space for databases in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database?azure-portal=true).
+For more information about the difference between data space used, data space allocated, and **Data max size**, see [Manage file space for databases in Azure SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-file-space-management#understanding-types-of-storage-space-for-a-database?azure-portal=true).
 
 #### Connectivity to Azure SQL
 

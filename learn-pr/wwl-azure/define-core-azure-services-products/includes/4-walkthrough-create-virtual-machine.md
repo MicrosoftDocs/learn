@@ -12,7 +12,7 @@ In this walkthrough, we will create a virtual machine in the Azure portal, conne
 
 ### Task 1: Create the virtual machine
 
-In this task, we will create a Windows Server 2019 Datacenter virtual machine. 
+In this task, we will create a Windows Server 2019 Datacenter - Gen1 virtual machine. 
 
 1. Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
 
@@ -26,7 +26,7 @@ In this task, we will create a Windows Server 2019 Datacenter virtual machine.
     | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
     | Virtual machine name | **myVM** |
     | Location | **(US) East US**|
-    | Image | **Windows Server 2019 Datacenter**|
+    | Image | **Windows Server 2019 Datacenter - Gen1**|
     | Size | Standard D2s v3|
     | Administrator account username | **azureuser** |
     | Administrator account password | **Pa$$w0rd1234**|

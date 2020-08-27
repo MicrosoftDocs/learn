@@ -9,7 +9,7 @@ Before you start deploying things in Azure, it's important to understand what yo
 * Purchasing model (Azure SQL Database only): DTU or vCore?
 * Service tier (service-level objective): General Purpose, Business Critical, or Hyperscale?
 * Hardware: Gen5, or something new?
-* Sizing: number of vCores and maximum data size?  
+* Sizing: number of vCores and **Data max size**?  
 
 In addition, and perhaps before answering the preceding questions, you need to pick a workload that's going to either be migrated to Azure SQL or be "born in the cloud." If you're migrating, many tools and resources are available to help you plan, assess, migrate, and optimize your databases and application. Resources are provided at the end of this module.  
 
@@ -45,11 +45,11 @@ This logical server does not expose any instance-level access or features as wit
 
 ### Compute and storage
 
-In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and the maximum data size.
+In the previous module of this learning path, you learned about options and recommendations for compute and storage, including service tiers, purchasing models, and hardware generations. You'll have to select the desired configuration during deployment. You also must determine the number of vCores and **Data max size**.
 
-Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU recommender, to estimate the number of vCores and maximum data size based on your current workload.  
+Generally, if you're migrating, you should use size that's similar to what you use on-premises. You can also use tools, like the Data Migration Assistant SKU recommender, to estimate the number of vCores and **Data max size** based on your current workload.  
 
-The maximum data size is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with the maximum data size.  
+**Data max size** is not necessarily the size of your data today. It's the maximum amount of data space that can be allocated for your database. It will also help you understand the allocation of log space, which scales with **Data max size**.  
 
 ### Networking configuration
 
@@ -130,7 +130,7 @@ As you increase or decrease the resources in a service tier, the limits for dime
 
 * Windows job objects allow a group of processes to be managed and governed as a unit. Job objects are used to govern the file's virtual memory commit, working set caps, CPU affinity, and rate caps. You can use the `sys.dm_os_job_object` dynamic management view to see the limits in place.
 * Resource Governor is a SQL Server feature that helps users (and in this case, Azure) govern resources like CPU, physical I/O, and memory. Azure SQL Managed Instance also allows user-defined workload groups and pools for Resource Governor.
-* File Server Resource Manager is available in Windows Server and is used to govern file directory quotas, which are used to manage the maximum data size.
+* File Server Resource Manager is available in Windows Server and is used to govern file directory quotas, which are used to manage **Data max size**.
 
 Additional implementations to govern transaction log rate are built into the database engine for Azure, through *transaction log rate governance*. This process limits high ingestion rates for workloads such as `BULK INSERT`, `SELECT INTO`, and index builds. They're tracked and enforced as the subsecond level. They currently scale within a service tier linearly.
 
@@ -140,7 +140,7 @@ After you've completed your deployment, it's time to verify that deployment. In 
 
 For Azure SQL Managed Instance and Azure SQL Database, the first thing you might do is check the status of the database or instance with the Azure portal or the Azure CLI. Next, you can review the deployment details and activity log to ensure there were no failures or active issues.
 
-For Azure SQL Managed Instance, you then might check ERRORLOG, which is a common thing to do in SQL Server on-premises or in an Azure VM. This capability is not available in Azure SQL Database.  
+For Azure SQL Managed Instance, you then might check the error log, which is a common thing to do in SQL Server on-premises or in an Azure VM. This capability is not available in Azure SQL Database.  
 
 Finally, you'd likely confirm that your network is configured properly, obtain the server name, and connect in a tool like SQL Server Management Studio or Azure Data Studio. You can run the following queries to better understand what you've deployed and to verify that it was deployed correctly:  
 
@@ -157,7 +157,7 @@ SELECT * FROM sys.dm_user_db_resource_governance -- Available only in Azure S
 SELECT * FROM sys.dm_os_job_object -- Available only in Azure SQL Database and SQL Managed Instance
 ```
 
-Two queries related to OS system information and OS process memory are not supported in Azure SQL Database. They're not supported because with Azure SQL Database, you're just getting a database. Some things related to the OS are abstracted away from you.  
+Two queries related to OS system information and OS process memory are not supported in Azure SQL Database, even though they might appear to work. These queries aren't supported because with Azure SQL Database, some things related to the OS are abstracted away from you so you can focus on the database.  
 
 The last two queries are available only in Azure SQL Database and Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. The second, `sys.dm_os_job_object`, will return a single row that describes the configuration of the job object that manages the SQL Server process, as well as resource consumption statistics.
 
