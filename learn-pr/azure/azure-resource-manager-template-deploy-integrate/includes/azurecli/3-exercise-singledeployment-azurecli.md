@@ -1,4 +1,4 @@
-> [!NOTE] This section was written using Azure CLI command in Windows Linux Subsystem (WSL2) on Windows 10. The commands are the same whether you are using Azure CLI in a PowerShell, CMD, or Bash shell.  But the way the variables are addressed may differ.
+>[!NOTE] This section was written using Azure CLI command in Windows Linux Subsystem (WSL2) on Windows 10. The commands are the same whether you are using Azure CLI in a PowerShell, CMD, or Bash shell.  But the way the variables are addressed may differ.
 
 ### Sign in to Azure
 
@@ -111,7 +111,7 @@ In the following exercise, you will deploy a template from your local machine. T
 
 1. Once you have saved that file locally, you can proceed to deploy it using the Azure CLI command to deploy at the resource group level we talked about in the last unit. Namely, **[az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer#az-deployment-group-create)**
 
-    > [!NOTE] In the example below, the template file is located in a **json** folder in the home drive in Windows Linux Subsystem (WSL2).  Please adjust based your shell of choice.
+  > [!NOTE] In the example below, the template file is located in a **json** folder in the home drive in Windows Linux Subsystem (WSL2).  Please adjust based your shell of choice.
 
     ```bash
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
@@ -200,7 +200,7 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
 1. Using the same template as the last exercise, you will construct an variable that will contain the parameters in a JSON string format for the required template parameters.  
 
-    >[!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
+  >[!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
 
     ```bash
     parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
@@ -293,7 +293,7 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
 1. Once we have our local parameter file, we can use the following Azure CLI command with the **--parameters** parameters.
 
-    > [!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2). Please adjust based your shell/OS of choice.
+  >[!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2). Please adjust based your shell/OS of choice.
 
     ```bash
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
