@@ -182,7 +182,8 @@ superposition and interference to apply the quantum Fourier transform - a
 version of the discrete Fourier transform for quantum computers - to find the 
 period of the function faster than any known classical algorithm.
 
-![Figure11](TODO)
+![Figure11](../media/figure11_Shor.svg)
+![Figure12](../media/figure12_Shor.svg)
 
 #### Outline of the algorithm
 
