@@ -200,7 +200,7 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
 1. Using the same template as the last exercise, you will construct an variable that will contain the parameters in a JSON string format for the required template parameters.  
 
-    > [!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
+    >[!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
 
     ```bash
     parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
