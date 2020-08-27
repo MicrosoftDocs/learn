@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.describe-storage-migration
+title: Describe storage migration
+metadata:
+  title: 4-describe-storage-migration.md
+  description: "4-describe-storage-migration.md"
+  ms.date: 08/30/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-describe-storage-migration.md)]
