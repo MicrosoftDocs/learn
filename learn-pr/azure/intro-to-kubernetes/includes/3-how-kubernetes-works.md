@@ -12,7 +12,7 @@ A cluster uses centralized software that's responsible for scheduling and contro
 
 Recall from earlier that an orchestrator is a system that deploys and manages applications. You also learned a cluster is a set of computers that work together and are viewed as a single system. You use Kubernetes as the orchestration and cluster software to deploy your apps and respond to changes in compute resource needs.
 
-:::image type="content" source="../media/3-cluster-arch-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
+:::image type="content" source="../media/3-cluster-architecture-components.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane and the worker nodes." border="false":::
 
 A Kubernetes cluster contains at least one main node and one or more nodes. Both the control planes and node instances can be physical devices, virtual machines, or instances in the cloud. The default host operating system in Kubernetes is Linux, with default support for Linux-based workloads.
 
@@ -37,7 +37,7 @@ A node in a Kubernetes cluster is where your compute workloads run. Each node co
 
 Kubernetes relies on several administrative services running on the control plane. These services manage aspects such as cluster component communication, workload scheduling, and cluster state persistence.
 
-:::image type="content" source="../media/3-cluster-arch-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
+:::image type="content" source="../media/3-cluster-architecture-master.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on the control plane." border="false":::
 
 The following services make up the control plane for a Kubernetes cluster:
 
@@ -88,7 +88,7 @@ The cloud controller manager integrates with the underlying cloud technologies i
 
 The are several services that run on a Kubernetes node to control how workloads run.
 
-:::image type="content" source="../media/3-cluster-arch-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on a Kubernetes node." border="false":::
+:::image type="content" source="../media/3-cluster-architecture-node.svg" alt-text="Diagram of a Kubernetes cluster architecture that shows the components installed on a Kubernetes node." border="false":::
 
 The following services run on the Kubernetes node:
 
