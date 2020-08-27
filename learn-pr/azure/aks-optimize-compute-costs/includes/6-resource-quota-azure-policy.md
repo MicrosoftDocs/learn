@@ -1,10 +1,8 @@
-Azure Kubernetes Service (AKS) enables you to orchestrate your cloud-native applications easily. This ease has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS to ensure a cost-effective approach to creating workloads.
+Azure Policy helps you to enforce standards and assess compliance at scale for your cloud environment. It's good practice for companies to implement business rules to define how employees are to use company software, hardware, and other resources in the organization. These business rules are often described by using policies that are put in place, enforced, and reviewed as defined within each policy. A policy helps an organization meet governance and legal requirements, implement best practices, and establish organizational conventions.
 
-Companies implement business rules to define how employees are to use company software, hardware, and other resources in the organization. These business rules are often described by using policies that are put in place, enforced, and reviewed as defined within each policy. A policy helps an organization meet governance and legal requirements, implement best practices, and establish organizational conventions.
+Azure Kubernetes Service (AKS) enables you to orchestrate your cloud-native applications efficiently. This ease has allowed more development teams in your company to embrace AKS as a development platform. You realize that you need to enforce business rules to manage how the teams use AKS to ensure a cost-effective approach to creating workloads. You can use Azure Policy to apply this same idea to how your Azure-based cloud resources are used.
 
-You can use Azure Policy to apply this same idea to how your Azure-based cloud resources are used. Azure Policy helps you to enforce standards and assess compliance at scale for your cloud environment.
-
-Before we discuss how to use Azure Policy for Kubernetes, we need to cover a few additional concepts that enable this feature from within Kubernetes.
+Before discussing how to use Azure Policy for Kubernetes, we need to cover a few additional concepts that enable this feature from within Kubernetes.
 
 ## What is a Kubernetes admission controller?
 

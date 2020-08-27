@@ -1,4 +1,8 @@
-In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage the creation of nodes, and scaled the node count manually. Here, you'll add a spot user node pool with automatic scaling to reduce your cluster's operational costs where usage still varies but isn't as predictable. You'll also deploy a workload with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
+Spot user node pools allow you to access unused Azure compute capacity at lower prices but still support high-performance computing scenarios.
+
+In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage the creation of nodes, and scaled the node count manually.
+
+Here, you'll add a spot user node pool with automatic scaling to reduce your cluster's operational costs where usage still varies but isn't as predictable. You'll also deploy a workload with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
 
 ## Enable preview features on your subscription
 
