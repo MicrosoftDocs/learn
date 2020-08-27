@@ -135,7 +135,7 @@ SELECT * FROM sys.dm_user_db_resource_governance -- Only available in Azure S
 SELECT * FROM sys.dm_os_job_object -- Only available in Azure SQL DB and MI
 ```
 
-There are two queries that are not supported in Azure SQL Database related to OS system information and OS process memory. These queries are not supported because with Azure SQL Database, some things related to the OS are abstracted away from you, since you're just getting a database.  
+There are two queries that are not supported in Azure SQL Database related to OS system information and OS process memory. These queries are not supported, even though they may appear to work, because with Azure SQL Database, some things related to the OS are abstracted away from you, since we allow you to focus on the database. 
 
 Additionally, the last two queries are only available in Azure SQL Database and Azure SQL Managed Instance. The first, `sys.dm_user_db_resource_governance`, will return the actual configuration and capacity settings used by resource governance mechanisms in the current database or elastic pool. The second, `sys.dm_os_job_object` will return a single row describing the configuration of the job object that managers the SQL Server process, as well as resource consumption statistics.
 
