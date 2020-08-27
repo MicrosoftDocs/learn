@@ -25,7 +25,7 @@ In this exercise, you'll combine your learnings from the module to walk through 
 
 1. Select **X** to close the **Add classification** pane.  
 
-   Dynamic Data Masking (DDM) is available in both Azure SQL and SQL Server. DDM limits data exposure by masking sensitive data to nonprivileged users at SQL Server instead of the application having to code those types of rules. Azure SQL recommends items for you to mask, or you can add masks manually. 
+   Dynamic Data Masking (DDM) is available in both Azure SQL and SQL Server. DDM limits data exposure by masking sensitive data to nonprivileged users at the SQL Server level instead of at the application level where you have to code those types of rules. Azure SQL recommends items for you to mask, or you can add masks manually. 
    
    In the next steps, you'll mask the FirstName, MiddleName, and LastName columns, which you reviewed in the previous step.  
 
