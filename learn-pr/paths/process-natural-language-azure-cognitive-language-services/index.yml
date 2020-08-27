@@ -11,7 +11,7 @@ metadata:
 title: Process natural language with Azure Cognitive Language Services
 prerequisites: |
   * Knowledge of navigating the Azure portal
-  * Knowledge of at least one programming language such as C#, Python, or JavaScript
+  * Knowledge of at least one programming language such as C# or Python
   * Basic understanding of REST APIs and JSON
 summary: |
   Learn to implement language services using APIs for sentiment analysis, extracting key phrases and entities from text, detect the languages, and implement deeper understanding of input through the use of natural language understanding with LUIS.
