@@ -20,7 +20,7 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
   
     You can also use a different method to scale your workload.
 
-1. For this exercise, so that you can see proper differences in reports, you must first flush the query store. In SQL Server Management Studio (SSMS), select the **AdventureWorks** database, and use the **File** > **Open** menu. Open the script in SSMS **flushhquerystore.sql** in the context of the **AdventureWorks** database. Your query editor window should look like the following text:
+1. For this exercise, so that you can see proper differences in reports, you must first flush the Query Store. In SQL Server Management Studio (SSMS), select the **AdventureWorks** database, and use the **File** > **Open** menu. Open the script in SSMS **flushhquerystore.sql** in the context of the **AdventureWorks** database. Your query editor window should look like the following text:
   
     ```sql
     EXEC sp_query_store_flush_db;
@@ -123,15 +123,15 @@ Now that the database has more CPU capacity, let's run the workload we did in th
 
 1. Observe the new workload duration. The workload duration from **sqlworkload.cmd** should now be much less, and should be approximately 25-30 seconds.
 
-## Observe query store reports
+## Observe Query Store reports
 
-Let's look at the same query store reports as we did in the previous exercise.
+Let's look at the same Query Store reports as we did in the previous exercise.
 
 1. Using the same techniques as the first exercise in this module, look at the **Top Resource Consuming Queries** report from SSMS:
 
     :::image type="content" source="../media/7-ssms-top-query-faster.png" alt-text="Screenshot of top query results running faster.":::
 
-    You will now see two queries (`query_id`). These are the same query, but show up as different `query_id` values in the query store, because the scale operation required a restart and the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
+    You will now see two queries (`query_id`). These are the same query, but show up as different `query_id` values in the Query Store, because the scale operation required a restart and the query had to be recompiled. You can see in the report the overall and average duration was significantly less.
 
 1. Look also at the **Query Wait Statistics** report as you did in the previous exercise. You can see the overall average wait time for the query is less, and it's a lower percentage of the overall duration. This is a good indication that the CPU isn't as much of a resource bottleneck when the database had a lower number of vCores:
 

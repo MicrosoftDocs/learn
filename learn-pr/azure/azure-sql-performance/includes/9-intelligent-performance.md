@@ -12,11 +12,11 @@ Azure SQL Database and Azure SQL Managed Instance support the same database comp
 
 Query plan regressions represent one of the most difficult performance problems to solve with SQL Server. A query plan regression occurs when the same query is recompiled and a new plan results in worse performance.
 
-SQL Server 2017 and Azure SQL Database introduced the concept of automatic plan correction by analyzing data in the query store. When you enable the query store with a database in SQL Server 2017 (or later) and in Azure SQL Database, the SQL Server engine looks for query plan regressions and provides recommendations. You can see these recommendations in the dynamic management view (DMV) **sys.dm_db_tuning_recommendations**. These recommendations include T-SQL statements to manually force a query plan when performance was in a good state.
+SQL Server 2017 and Azure SQL Database introduced the concept of automatic plan correction by analyzing data in the Query Store. When you enable the Query Store with a database in SQL Server 2017 (or later) and in Azure SQL Database, the SQL Server engine looks for query plan regressions and provides recommendations. You can see these recommendations in the dynamic management view (DMV) **sys.dm_db_tuning_recommendations**. These recommendations include T-SQL statements to manually force a query plan when performance was in a good state.
 
 If you gain confidence in these recommendations, you can enable SQL Server to force plans automatically when regressions are encountered. Enable automatic plan correction by using ALTER DATABASE and the AUTOMATIC_TUNING argument.
 
-For Azure SQL Database, you can also enable automatic plan correction through automatic tuning options in the Azure portal or REST APIs. Automatic plan correction recommendations are always enabled for any database where query store is enabled (which is the default for Azure SQL Database and Azure SQL Managed Instance). For new databases, automatic plan correction (FORCE_PLAN) is enabled by default for Azure SQL Database.
+For Azure SQL Database, you can also enable automatic plan correction through automatic tuning options in the Azure portal or REST APIs. Automatic plan correction recommendations are always enabled for any database where Query Store is enabled (which is the default for Azure SQL Database and Azure SQL Managed Instance). For new databases, automatic plan correction (FORCE_PLAN) is enabled by default for Azure SQL Database.
 
 ## Automatic tuning for Azure SQL Database
 
@@ -27,7 +27,7 @@ Automatic plan correction is an example of automatic tuning in Azure SQL Databas
 
 The cloud provides a method for Microsoft to provide additional services in form of performance recommendations and automation outside of plan recommendations. This capability is known as automatic tuning for Azure SQL Database. These services run as background programs that analyze performance data from an instance of Azure SQL Database. These services are included in the price of any database subscription.
 
-The main scenario automatic tuning is designed to address pertains to indexes. Automatic tuning analyzes data from the telemetry of a database, including the query store and DMVs, to recommend indexes to be created that can improve application performance. Additionally, you can enable automatic tuning to automatically create indexes that can improve query performance. Automatic tuning also monitors index changes, and recommends dropping or automatically drops indexes that don't improve query performance.
+The main scenario automatic tuning is designed to address pertains to indexes. Automatic tuning analyzes data from the telemetry of a database, including the Query Store and DMVs, to recommend indexes to be created that can improve application performance. Additionally, you can enable automatic tuning to automatically create indexes that can improve query performance. Automatic tuning also monitors index changes, and recommends dropping or automatically drops indexes that don't improve query performance.
 
 Automatic tuning for Azure SQL Database takes a conservative approach to recommending indexes. This means that recommendations that might appear in a DMV like sys.dm_db_missing_index_details, or a query show plan, might not show up immediately as recommendations for automatic tuning. Automatic tuning services monitor queries over time, and use machine learning algorithms to make recommendations to truly affect query performance.
 
@@ -43,11 +43,11 @@ The following is an example from the Azure portal, in which indexes are recommen
 
 :::image type="content" source="../media/9-index-recommendation-notification.png" alt-text="Screenshot of index recommendation notification.":::
 
-In the Azure portal, in **Performance Overview**, you can see performance information for the top 5 resource-consuming queries, as found in the query store. There's also a recommendation.
+In the Azure portal, in **Performance Overview**, you can see performance information for the top 5 resource-consuming queries, as found in the Query Store. There's also a recommendation.
 
 :::image type="content" source="../media/9-query-performance-overview.png" alt-text="Screenshot of Query Performance Overview.":::
 
-The Azure portal also offers Query Performance Insights, which is a visual reporting tool based on the query store. In this example, Query Performance Insights shows the specific query consuming the most resources, and advises how to improve query performance.
+The Azure portal also offers Query Performance Insights, which is a visual reporting tool based on the Query Store. In this example, Query Performance Insights shows the specific query consuming the most resources, and advises how to improve query performance.
 
 :::image type="content" source="../media/9-query-performance-insights.png" alt-text="Screenshot of Query Performance Insights.":::
 

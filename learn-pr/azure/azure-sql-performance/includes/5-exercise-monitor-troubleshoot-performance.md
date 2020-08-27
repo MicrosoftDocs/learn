@@ -248,15 +248,15 @@ Let's now use the DMV queries you loaded earlier to observe performance.
 
     Your duration time might vary but this typically takes at least 1-3 minutes. Make sure to let this run to completion. When the workload is done, you will be returned to the command prompt.
 
-## Use the query store for further analysis
+## Use the Query Store for further analysis
 
-Query store is a capability in SQL Server to track performance execution of queries. Performance data is stored in the user database. Query store isn't enabled by default for databases created in SQL Server, but is on by default for Azure SQL Database (and Azure SQL Managed Instance).
+Query Store is a capability in SQL Server to track performance execution of queries. Performance data is stored in the user database. Query Store isn't enabled by default for databases created in SQL Server, but is on by default for Azure SQL Database (and Azure SQL Managed Instance).
 
-Query store comes with a series of system catalog views to view performance data. SSMS provides reports by using these views.
+Query Store comes with a series of system catalog views to view performance data. SSMS provides reports by using these views.
 
 1. Using the **Object Explorer** in SSMS, open the **Query Store** folder to find the report for **Top Resource Consuming Queries**.
 
-    :::image type="content" source="../media/5-ssms-find-top-queries.png" alt-text="Screenshot of the query store.":::
+    :::image type="content" source="../media/5-ssms-find-top-queries.png" alt-text="Screenshot of the Query Store.":::
 
 1. Select the report to find out what queries have consumed the most average resources and execution details of those queries. Based on the workload run to this point, your report should look something like the following image:
 
@@ -282,7 +282,7 @@ Query store comes with a series of system catalog views to view performance data
 
     Because of the small number of rows in the tables in this database, this query plan isn't inefficient. There might be some tuning opportunities, but you won't gain much performance by tuning the query itself. You might see a warning in the plan about a lack of statistics for one of the columns in the query for the clustered index seek. This doesn't factor into overall performance.
 
-1. Below the **Top Resource Consuming Queries** report in SSMS is a report called **Query Wait Statistics**. You know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status, along with almost 100 percent CPU. Query store comes with reports to look at possible performance bottlenecks due to waits on resources. Select this report and hover over the bar chart. Your results should look like the following image:
+1. Below the **Top Resource Consuming Queries** report in SSMS is a report called **Query Wait Statistics**. You know from earlier diagnostics that a high number of requests constantly were in a RUNNABLE status, along with almost 100 percent CPU. Query Store comes with reports to look at possible performance bottlenecks due to waits on resources. Select this report and hover over the bar chart. Your results should look like the following image:
 
     :::image type="content" source="../media/5-ssms-top-wait-stats.png" alt-text="Screenshot of the top wait statistics.":::
 
@@ -296,7 +296,7 @@ Query store comes with a series of system catalog views to view performance data
 
     Considering the evidence to this point, without any query tuning, our workload requires more CPU capacity than we have deployed for our instance of Azure SQL Database.
 
-1. You can close both query store reports for now. You'll use the same reports in the next exercise.
+1. You can close both Query Store reports for now. You'll use the same reports in the next exercise.
 
 ## Observe performance with Azure Monitor
 

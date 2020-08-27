@@ -24,13 +24,13 @@ You use lightweight query profiling to examine the query plan and running state 
 
 In some situations, you might need additional details about query performance for an individual T-SQL statement. T-SQL SET statements, such as SHOWPLAN and STATISTICS, can provide these details and are fully supported for Azure SQL Database, as they are for SQL Server.
 
-### Query store
+### Query Store
 
-Query store is a historical record of performance execution for queries stored in the user database. Query store is on by default for Azure SQL Database, and is used to provide capabilities such as automatic plan correction and automatic tuning. SQL Server Management Studio (SSMS) reports for the store are available for Azure SQL Database. Use these reports to find top resource consuming queries, including query plan differences, and top wait types to look at resource wait scenarios.
+Query Store is a historical record of performance execution for queries stored in the user database. Query Store is on by default for Azure SQL Database, and is used to provide capabilities such as automatic plan correction and automatic tuning. SQL Server Management Studio (SSMS) reports for the store are available for Azure SQL Database. Use these reports to find top resource consuming queries, including query plan differences, and top wait types to look at resource wait scenarios.
 
 ### Performance visualizations
 
-For Azure SQL Database, you can see integrated query store performance information in the Azure portal through visualizations. This way you can see some of the same information for query store as you would with a client tool like SSMS. Use the Azure portal options called Performance Overview and Query Performance Insight.
+For Azure SQL Database, you can see integrated Query Store performance information in the Azure portal through visualizations. This way you can see some of the same information for Query Store as you would with a client tool like SSMS. Use the Azure portal options called Performance Overview and Query Performance Insight.
 
 ## DMV details
 
@@ -128,9 +128,9 @@ First, look at overall resource usage. For a standard SQL Server deployment you 
 
 If you have determined the problem is high CPU utilization, this is called a running scenario. A running scenario can involve queries that consume resources through compilation or execution. Use the following tools for further analysis:
 
-- Query store
+- Query Store
 
-    Use the Top Consuming Resource reports in SSMS, query store catalog views, or Query Performance Insight in the Azure portal (Azure SQL Database only) to find which queries are consuming the most CPU resources.
+    Use the Top Consuming Resource reports in SSMS, Query Store catalog views, or Query Performance Insight in the Azure portal (Azure SQL Database only) to find which queries are consuming the most CPU resources.
 
 - `sys.dm_exec_requests`
 
@@ -138,13 +138,13 @@ If you have determined the problem is high CPU utilization, this is called a run
 
 - `sys.dm_exec_query_stats`
 
-    This DMV can be used much like query store to find top resource consuming queries. Be aware that it's only available for query plans that are cached, whereas query store provides a persistent historical record of performance. This DMV also allows you to find the query plan for a cached query.
+    This DMV can be used much like Query Store to find top resource consuming queries. Be aware that it's only available for query plans that are cached, whereas Query Store provides a persistent historical record of performance. This DMV also allows you to find the query plan for a cached query.
 
 - `sys.dm_exec_procedure_stats`
 
     This DMV provides information much like `sys.dm_exec_query_stats`, except the performance information can be viewed at the stored procedure level.
 
-    After you determine what query or queries are consuming the most resources, you might have to examine whether you have enough CPU resources for your workload. You might debug query plans with tools like lightweight query profiling, SET statements, query store, or extended events tracing.
+    After you determine what query or queries are consuming the most resources, you might have to examine whether you have enough CPU resources for your workload. You might debug query plans with tools like lightweight query profiling, SET statements, Query Store, or extended events tracing.
 
 #### Waiting
 
@@ -171,16 +171,16 @@ To perform analysis on waiting scenarios, you typically look at the following to
 
     Queries that use parallelism use multiple tasks for a particular query. You might need to use this DMV to find wait types for a particular task for a specific query.
 
-- Query store
+- Query Store
 
-    Query store provides reports and catalog views that show an aggregation of the top waits for query plan execution. It's important to know that a wait of **CPU** is equivalent to a *running* problem.
+    Query Store provides reports and catalog views that show an aggregation of the top waits for query plan execution. It's important to know that a wait of **CPU** is equivalent to a *running* problem.
 
 > [!TIP]
 > You can use extended events for any running or waiting scenarios. To do so, you must set up an extended events session to trace queries. This method to debug a performance problem can be considered heavy.
 
 ### Scenarios specific to Azure SQL Database
 
-There are some performance scenarios, both running and waiting, that are specific to Azure SQL Database. These include log governance, worker limits, waits encountered for Business Critical service tiers, and waits specific to a hyperscale deployment.
+There are some performance scenarios, both running and waiting, that are specific to Azure SQL Database. These include log governance, worker limits, waits encountered for Business Critical service tiers, and waits specific to a Hyperscale deployment.
 
 #### Log governance
 
@@ -210,6 +210,6 @@ Even though these waits might not slow down your application, you might not be e
 
 #### Hyperscale
 
-The hyperscale architecture can result in some unique wait types that are prefixed with **RBIO** (a possible indication of log governance). In addition, DMVs, catalog views, and extended events have been enhanced to show metrics for page server reads.
+The Hyperscale architecture can result in some unique wait types that are prefixed with **RBIO** (a possible indication of log governance). In addition, DMVs, catalog views, and extended events have been enhanced to show metrics for page server reads.
 
 You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL Database by using the tools and knowledge you have gained in this unit.

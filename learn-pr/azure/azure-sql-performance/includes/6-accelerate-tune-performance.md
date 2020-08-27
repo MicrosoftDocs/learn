@@ -13,9 +13,9 @@ Downtime is typically required, but this can be very fast for Azure SQL Database
 
 I/O performance can be critical to a database application. Azure SQL Database abstracts you from physical file placement, but there are methods to ensure you get the I/O performance you need.
 
-Input/output per second (IOPS) might be important to your application. Be sure you have chosen the right service tier and vCores for your IOPS needs. Understand how to measure IOPS for your queries on-premises if you are migrating to Azure. If you have restrictions on IOPS, you might see long I/O waits. Scale up vCores or move to Business Critical or hyperscale if you don't have enough IOPS.
+Input/output per second (IOPS) might be important to your application. Be sure you have chosen the right service tier and vCores for your IOPS needs. Understand how to measure IOPS for your queries on-premises if you are migrating to Azure. If you have restrictions on IOPS, you might see long I/O waits. Scale up vCores or move to Business Critical or Hyperscale if you don't have enough IOPS.
 
-I/O latency is another key component for I/O performance. For faster I/O latency for Azure SQL Database, consider Business Critical or hyperscale. For faster I/O latency for SQL Managed Instance, move to Business Critical or increase the file size or the number of files for the database. Improving transaction log latency might require you to use multi-statement transactions.
+I/O latency is another key component for I/O performance. For faster I/O latency for Azure SQL Database, consider Business Critical or Hyperscale. For faster I/O latency for SQL Managed Instance, move to Business Critical or increase the file size or the number of files for the database. Improving transaction log latency might require you to use multi-statement transactions.
 
 ## Increase memory or workers
 
