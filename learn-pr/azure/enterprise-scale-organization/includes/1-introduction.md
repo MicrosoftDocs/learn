@@ -31,6 +31,8 @@ Evaluate the critical design areas for enterprise enrollment and Azure AD tenant
 
 ## Learning objectives
 
+After completing this module, you will be able to:
+
 1. Determine the need for single or multiple Azure AD tenants
 1. Define the Azure enterprise enrollment hierarchy
 1. Define the requirements for Privilege Identity Management
