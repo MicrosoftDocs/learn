@@ -1,4 +1,8 @@
-In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage the creation of nodes, and scaled the node count manually. Here, you'll add a spot node pool with automatic scaling to reduce your cluster's operational costs where usage still varies but isn't as predictable. You'll also deploy a workload with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
+Spot user node pools allow you to access unused Azure compute capacity at lower prices but still support high-performance computing scenarios.
+
+In the previous exercise, you created a standard user node pool, used the cluster autoscaler to manage the creation of nodes, and scaled the node count manually.
+
+Here, you'll add a spot user node pool with automatic scaling to reduce your cluster's operational costs where usage still varies but isn't as predictable. You'll also deploy a workload with node affinity enabled so that the pod is scheduled on nodes in the spot node pool.
 
 ## Enable preview features on your subscription
 
@@ -99,7 +103,7 @@ You want to create a separate node pool that supports the batch-processing servi
     "count": 3,
     "enableAutoScaling": true,
     "enableNodePublicIp": false,
-    "id": "/subscriptions/b04925ae-8450-4684-9d3c-fbbf71ebc383/resourcegroups/akscostsavinggrp/providers/Microsoft.ContainerService/managedClusters/costsaving-4398/agentPools/batchprocpl2",
+    "id": "/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourcegroups/rg-akscostsaving/providers/Microsoft.ContainerService/managedClusters/akscostsaving-17835/agentPools/batchprocpl2",
     "maxCount": 3,
     "maxPods": 110,
     "minCount": 1,
@@ -112,7 +116,7 @@ You want to create a separate node pool that supports the batch-processing servi
     "nodeTaints": [
         "kubernetes.azure.com/scalesetpriority=spot:NoSchedule"
     ],
-    "orchestratorVersion": "1.16.9",
+    "orchestratorVersion": "1.17.9",
     "osDiskSizeGb": 128,
     "osType": "Linux",
     "provisioningState": "Creating",
