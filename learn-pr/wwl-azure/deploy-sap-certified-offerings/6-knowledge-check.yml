@@ -24,7 +24,7 @@ quiz:
     - content: "Azure Service Fabric, Azure Container Service, Azure VMs."
       isCorrect: false
       explanation: "That's incorrect. Azure VMs are one of the options for deploying SAP in Azure, but the other two are not."
-    - content: "SAP HANA on Azure (Large Instances), SAP Cloud Appliance Library (CAL, and Azure Container Instances."
+    - content: "SAP HANA on Azure (Large Instances), SAP Cloud Appliance Library (CAL), and Azure Container Instances."
       isCorrect: false
       explanation: "That's incorrect. Azure Container Instances is not one of the options for deploying SAP in Azure."
   - content: "The which of the following SAP HANA products are supported on Azure VMs and SAP HANA on Azure (Large Instances)?"
