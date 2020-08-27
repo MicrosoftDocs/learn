@@ -3134,6 +3134,46 @@
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/index.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/3-analyze-model-fairness-with-fairlearn.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/3-analyze-model-fairness-with-fairlearn",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/2-consider-model-fairness.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/2-consider-model-fairness",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/5-exercise-use-fairlearn.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/5-exercise-use-fairlearn",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/6-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/6-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/4-mitigate-with-fairlearn.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/4-mitigate-with-fairlearn",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/7-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/7-summary",
+      "redirect_document_id": true
     }
   ]
 }
