@@ -297,7 +297,8 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
 1. Once we have our local parameter file, we can use the following Azure CLI command with the **--parameters** parameters.
 
-  >[!NOTE] In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2). Please adjust based your shell/OS of choice.
+> [!NOTE]
+> In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2). Please adjust based your shell/OS of choice.
 
     ```bash
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
