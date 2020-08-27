@@ -17,7 +17,7 @@ abstract: |
   * Evaluate the key phrases extracted from the text
 prerequisites: |
   - Knowledge of navigating the Azure portal
-  - Knowledge of at least one programming language such as C#, Python, or JavaScript
+  - Knowledge of at least one programming language such as C# or Python
   - Basic understanding of REST APIs and JSON
 iconUrl: /learn/achievements/extract-key-phrases-from-text-with-the-text-analytics-api.svg
 levels:
