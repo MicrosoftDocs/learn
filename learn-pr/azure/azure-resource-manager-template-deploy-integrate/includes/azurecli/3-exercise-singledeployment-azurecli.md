@@ -113,8 +113,8 @@ In the following exercise, you will deploy a template from your local machine. T
 
 1. Once you have saved that file locally, you can proceed to deploy it using the Azure CLI command to deploy at the resource group level we talked about in the last unit. Namely, **[az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer#az-deployment-group-create)**
 
-> [!NOTE]
-> In the example below, the template file is located in a **json** folder in the home drive in Windows Linux Subsystem (WSL2).  Please adjust based your shell of choice.
+  > [!NOTE]
+  > In the example below, the template file is located in a **json** folder in the home drive in Windows Linux Subsystem (WSL2).  Please adjust based your shell of choice.
 
     ```bash
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
