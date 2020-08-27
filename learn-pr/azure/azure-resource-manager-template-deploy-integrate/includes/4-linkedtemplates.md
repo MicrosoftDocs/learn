@@ -8,9 +8,9 @@ When referencing a linked template, you must provide a URI value that would be a
 
 To use linked templates, the templates must first be staged on a publicly accessible endpoint such as GitHub or an Azure Storage Blob. When using an Azure Storage account secured by a SAS token to keep your templates secure from public access.
 
-To add a linked template to your ARM template, add a *Microsoft.Resources/deployments* resource and the templateLink property configured with the location of the template.
+To add a linked template to your ARM template, add a *Microsoft.Resources/deployments* resource and the *templateLink* property configured with the location of the template.
 
-:::code language="json" source="../Code/6-Linked-template-sample.json" highlight="8-15":::
+:::code language="json" source="../Code/6-Linked-template-sample.json" highlight="10-13,21-28,40-43":::
 
 If needed, you can also pass parameter values into the linked template and get output out of the linked template at deployment time. Parameters can be passed either thought a parameter file of using inline parameters.
 
