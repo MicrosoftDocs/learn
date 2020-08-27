@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: 'True'
       isCorrect: true
-      explanation: 'True, management groups can b e used to aggregate policies and initiative assignments via Azure Policy.'
+      explanation: 'True, management groups can be used to aggregate policies and initiative assignments via Azure Policy.'
     - content: 'False'
       isCorrect: false
-      explanation: 'True, management groups can b e used to aggregate policies and initiative assignments via Azure Policy.'
+      explanation: 'True, management groups can be used to aggregate policies and initiative assignments via Azure Policy.'
 
   - content: "Subscriptions are a unit of management, billing and scale within Azure.  Which of the following follows Microsoft's Cloud Adaption Framework as a valid Design consideration or recommendation?"
     choices:
@@ -32,7 +32,7 @@ quiz:
       explanation: 'Establish a dedicated identity subscription in the Platform management group to host Windows server Active Directory domain controllers, when necessary.'
     - content: 'Use the following principles when identifying requirements for new subscriptions: Scale Limits, Management boundary, Policy boundary, and target network topology.'
       isCorrect: true
-      explanation: 'Multiple Azure AD tenants can function in the same enrollment.'
+      explanation: 'This is the correct answer.'
     - content: 'Use a rigid subscription model to hemp maintain proper governance across the organization'
       isCorrect: false
       explanation: "Avoid a rigid subscription model, and opt instead for a set of flexible criteria to group subscriptions across the organization. This flexibility ensures that as your organization's structure and workload composition changes, you can create new subscription groups instead of using a fixed set of existing subscriptions. One size doesn't fit all for subscriptions. What works for one business unit might not work for another. Some apps might coexist within the same landing zone subscription while others might require their own subscription."
