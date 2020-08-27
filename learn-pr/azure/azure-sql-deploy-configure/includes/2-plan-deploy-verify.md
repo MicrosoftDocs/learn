@@ -18,9 +18,9 @@ In addition, and perhaps before answering the preceding questions, you need to p
 The Azure SQL introduction module discussed limits, rates, and capabilities (like IOPS or in-memory OLTP). But there are other resource limits that are affected by your choice of Azure SQL Managed Instance, Azure SQL Database, or options within these choices:  
 
 * Memory
-* Maximum log size
+* Max log size
 * Size of tempdb
-* Maximum concurrent workers
+* Max concurrent workers
 * Backup retention
 
 The limits for Azure SQL Managed Instance and Azure SQL Database depend on your choice of purchasing model, service tier, and number of vCores (or DTU in Azure SQL Database only). Within a General Purpose Azure SQL Database instance, your choice of provisioned or serverless compute will also affect these limits. Before deploying, you should review what's included in what you plan to deploy, to ensure that you're starting out with what you need.  
