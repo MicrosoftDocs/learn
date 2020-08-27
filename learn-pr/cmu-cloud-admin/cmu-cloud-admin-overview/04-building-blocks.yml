@@ -114,7 +114,7 @@ quiz:
       - content: "Training machine-learning models that require substantial amounts of compute power"
         isCorrect: false
         explanation: "Incorrect. While most functions do offer limited scalability, they are not a substitute for HPC clusters."
-      - content: "Delivering software such as Office 365 and Google Docs over the web"
+      - content: "Delivering software such as Microsoft 365 and Google Docs over the web"
         isCorrect: false
         explanation: "Incorrect. Functions are ideal for tasks that run relatively infrequently or for short periods of time, not for applications that run 24/7."
       - content: "Performing nightly backups or weekly billing operations"
