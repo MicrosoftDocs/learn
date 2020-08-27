@@ -37,14 +37,14 @@ quiz:
       - content: "Place specific tables and indexes on different filegroups"
         isCorrect: false
         explanation: "You don't have access to create filegroups with Azure SQL Database."
-    - content: "How do you maintain indexes with Azure SQL Database?"
+    - content: "How do you maintain indexes with Azure SQL?"
       choices:
-      - content: "You can create, rebuild, and reorganize indexes in Azure SQL Database just like SQL Server"
+      - content: "You can create, rebuild, and reorganize indexes in Azure SQL just like SQL Server"
         isCorrect: true
-        explanation: "Azure SQL Database supports all options to create, rebuild, and reorganize indexes, just like SQL Server."
+        explanation: "Azure SQL supports all options to create, rebuild, and reorganize indexes, just like SQL Server."
       - content: "Use a specific deployment option that supports rebuilding indexes"
         isCorrect: false
         explanation: "All deployment options support rebuilding indexes."
-      - content: "Use an offline index rebuild because online index rebuilds aren't supported on Azure SQL Database"
+      - content: "Use an offline index rebuild because online index rebuilds aren't supported on Azure SQL"
         isCorrect: false
-        explanation: "Azure SQL Database supports online and resumable index rebuilds."
+        explanation: "Azure SQL supports online and resumable index rebuilds."

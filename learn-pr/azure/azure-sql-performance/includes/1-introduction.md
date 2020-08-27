@@ -1,13 +1,13 @@
-You've been responsible for getting your SQL Server fast, keeping it fast, and making it fast again when something is wrong. In this module, we'll show you how to use your existing performance skills, processes, and tools to apply them to Azure SQL Database. This includes taking advantage of the intelligence in Azure to deliver consistent performance for your application.
+You've been responsible for getting your SQL Server fast, keeping it fast, and making it fast again when something is wrong. In this module, we'll show you how to use your existing performance skills, processes, and tools to apply them to Azure SQL. This includes taking advantage of the intelligence in Azure to deliver consistent performance for your application.
 
 ## Learning objectives
 
 At the end of this module, you will be able to:
 
-* Identify and use the performance capabilities of Azure SQL Database.
-* Configure and maintain performance for Azure SQL Database.
-* Monitor and troubleshoot performance in Azure SQL Database.
-* Accelerate and tune performance in Azure SQL Database.
+* Identify and use the performance capabilities of Azure SQL.
+* Configure and maintain performance for Azure SQL.
+* Monitor and troubleshoot performance in Azure SQL.
+* Accelerate and tune performance in Azure SQL.
 * Use intelligent performance.
 
 ## Prerequisites  

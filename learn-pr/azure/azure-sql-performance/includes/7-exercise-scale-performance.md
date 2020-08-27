@@ -2,9 +2,9 @@ In this exercise, you will take the problem you encountered in the first exercis
 
 All scripts for this exercise can be found in the folder *04-Performance\monitor_and_scale* in the GitHub repository or the zip file that you downloaded.
 
-## Scale up Azure SQL Database performance
+## Scale up Azure SQL performance
 
-To scale performance for a problem that appears to be a CPU capacity problem, you should decide what your options are and then proceed to scale CPUs by using provided interfaces for Azure SQL Database.
+To scale performance for a problem that appears to be a CPU capacity problem, you should decide what your options are and then proceed to scale CPUs by using provided interfaces for Azure SQL.
 
 1. Decide how to scale performance. Since the workload is CPU *bound*, one way to improve performance is to increase CPU capacity or speed. A user of SQL Server would have to move to a different machine or reconfigure a VM to get more CPU capacity. In some cases, even an administrator of SQL Server might not have permission to make these scaling changes. The process might take time and even require a database migration.
   

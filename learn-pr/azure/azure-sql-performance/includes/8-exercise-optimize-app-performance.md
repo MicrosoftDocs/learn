@@ -1,6 +1,6 @@
 In this exercise, you observe a new performance scenario and resolve it by optimizing the application and queries.
 
-## Optimize application performance with Azure SQL Database
+## Optimize application performance with Azure SQL
 
 In some cases, migrating an existing application and SQL query workload to Azure can uncover opportunities to optimize and tune queries.
 
@@ -140,9 +140,9 @@ Make edits to scripts and run them to see a more efficient I/O performance. The 
 
     It's important to note that sys.dm_os_wait_stats can't be cleared in Azure SQL Database by using `DBCC SQLPERF`. This is a difference from SQL Server.
 
-    The concept of "batching" can help most applications, including those connected to Azure SQL Database.
+    The concept of "batching" can help most applications, including those connected to Azure SQL.
 
 > [!TIP]
 > Very large transactions can be affected by resource governance on Azure, and the symptoms will be LOG_RATE_GOVERNOR. In this example, the `char(500)` not null column pads spaces and causes large transaction log records. You can optimize performance even more by making that column a variable length column.
 
-In the next unit, you will learn about intelligent performance in Azure SQL Database.
+In the next unit, you will learn about intelligent performance in Azure SQL.

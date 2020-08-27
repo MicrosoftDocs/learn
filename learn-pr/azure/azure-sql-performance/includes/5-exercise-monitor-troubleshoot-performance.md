@@ -1,4 +1,4 @@
-In this exercise, you will learn how to monitor and troubleshoot a performance problem with Azure SQL Database by using familiar and new tools and capabilities.
+In this exercise, you will learn how to monitor and troubleshoot a performance problem with Azure SQL by using familiar and new tools and capabilities.
 
 ### Set up: Use scripts to deploy Azure SQL Database
 

@@ -19,7 +19,7 @@ quiz:
       choices:
       - content: "Automated statistics to improve inefficient query plans"
         isCorrect: false
-        explanation: "Statistics can be updated automatically with Azure SQL Database, but that isn't part of IQP."
+        explanation: "Statistics can be updated automatically with Azure SQL, but that isn't part of IQP."
       - content: "Background tasks that use the Query Store to fix inefficient query plans"
         isCorrect: false
         explanation: "IQP is built into the query processor and doesn't run through background tasks."

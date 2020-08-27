@@ -1,6 +1,6 @@
-SQL Server and Azure SQL Database include automation to help deliver consistent performance for your application. These automation capabilities are called, collectively, intelligent performance.
+SQL Server and Azure SQL include automation to help deliver consistent performance for your application. These automation capabilities are called, collectively, intelligent performance.
 
-Intelligent performance for Azure SQL Database includes intelligent query processing, automatic plan correction, and automatic tuning.
+Intelligent performance for Azure SQL includes intelligent query processing, automatic plan correction, and automatic tuning.
 
 ## Intelligent query processing
 
@@ -20,7 +20,7 @@ For Azure SQL Database, you can also enable automatic plan correction through au
 
 ## Automatic tuning for Azure SQL Database
 
-Automatic plan correction is an example of automatic tuning in Azure SQL Database and SQL Server. But a unique aspect to automatic tuning for Azure SQL Database is automatic indexing.
+Automatic plan correction is an example of automatic tuning in Azure SQL and SQL Server. But a unique aspect to automatic tuning for Azure SQL Database is automatic indexing.
 
 > [!NOTE]
 > Automatic indexing isn't currently available in SQL Managed Instance.

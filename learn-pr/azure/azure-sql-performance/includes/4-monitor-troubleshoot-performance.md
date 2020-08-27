@@ -1,32 +1,32 @@
-Monitoring and troubleshooting are key elements to deliver consistent performance. Azure SQL Database has the same tools and features as SQL Server to monitor and troubleshoot performance, plus additional capabilities. This includes features like dynamic management views (DMVs), extended events, and Azure Monitor. It's also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL Database. These scenarios include high CPU or waiting on a resource.
+Monitoring and troubleshooting are key elements to deliver consistent performance. Azure SQL has the same tools and features as SQL Server to monitor and troubleshoot performance, plus additional capabilities. This includes features like dynamic management views (DMVs), extended events, and Azure Monitor. It's also important to learn how to use these tools and capabilities across various performance scenarios for Azure SQL. These scenarios include high CPU or waiting on a resource.
 
 ## Tools and capabilities to monitor performance
 
-Azure SQL Database provides monitoring and troubleshooting capabilities in the Azure ecosystem, as well familiar tools that come with SQL Server. The following sections briefly describe these.
+Azure SQL provides monitoring and troubleshooting capabilities in the Azure ecosystem, as well familiar tools that come with SQL Server. The following sections briefly describe these.
 
 ### Azure Monitor
 
-Azure Monitor is part of the Azure ecosystem, and Azure SQL Database is integrated to support Azure metrics, alerts, and logs. You can visualize Azure Monitor data in the Azure portal, applications can access this data through Azure Event Hubs or APIs. Much like Windows Performance Monitor, Azure Monitor helps you access resource usage metrics for Azure SQL Database without the use of SQL Server tools.
+Azure Monitor is part of the Azure ecosystem, and Azure SQL is integrated to support Azure metrics, alerts, and logs. You can visualize Azure Monitor data in the Azure portal, applications can access this data through Azure Event Hubs or APIs. Much like Windows Performance Monitor, Azure Monitor helps you access resource usage metrics for Azure SQL without the use of SQL Server tools.
 
 ### Dynamic management views
 
-Azure SQL Database provides the same DMV infrastructure as SQL Server, with a few differences. DMVs are crucial to performance monitoring because you can view key SQL Server performance data by using standard T-SQL queries. For example, you can view information such as active queries, resource usage, query plans, and resource wait types. Learn more details about DMVs with Azure SQL Database later in this unit.
+Azure SQL provides the same DMV infrastructure as SQL Server, with a few differences. DMVs are crucial to performance monitoring because you can view key SQL Server performance data by using standard T-SQL queries. For example, you can view information such as active queries, resource usage, query plans, and resource wait types. Learn more details about DMVs with Azure SQL later in this unit.
 
 ### Extended events
 
-Azure SQL Database provides the same extended events infrastructure as SQL Server, with a few differences. Extended events give you the ability to trace key events of execution within SQL Server that powers Azure SQL Database. For performance, extended events allow you to trace the execution of individual queries. Learn more details about extended events with Azure SQL Database later in this unit.
+Azure SQL provides the same extended events infrastructure as SQL Server, with a few differences. Extended events give you the ability to trace key events of execution within SQL Server that powers Azure SQL. For performance, extended events allow you to trace the execution of individual queries. Learn more details about extended events with Azure SQL later in this unit.
 
 ### Lightweight query profiling
 
-You use lightweight query profiling to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems, compared to using tools like extended events to trace query performance. You access lightweight query profiling through DMVs, and it's on by default for Azure SQL Database as it is for SQL Server 2019.
+You use lightweight query profiling to examine the query plan and running state of an active query. This is a key feature to debug query performance for statements as they are running. This capability cuts down the time for you to solve performance problems, compared to using tools like extended events to trace query performance. You access lightweight query profiling through DMVs, and it's on by default for Azure SQL as it is for SQL Server 2019.
 
 ### Query plan debug capabilities
 
-In some situations, you might need additional details about query performance for an individual T-SQL statement. T-SQL SET statements, such as SHOWPLAN and STATISTICS, can provide these details and are fully supported for Azure SQL Database, as they are for SQL Server.
+In some situations, you might need additional details about query performance for an individual T-SQL statement. T-SQL SET statements, such as SHOWPLAN and STATISTICS, can provide these details and are fully supported for Azure SQL, as they are for SQL Server.
 
 ### Query Store
 
-Query Store is a historical record of performance execution for queries stored in the user database. Query Store is on by default for Azure SQL Database, and is used to provide capabilities such as automatic plan correction and automatic tuning. SQL Server Management Studio (SSMS) reports for the store are available for Azure SQL Database. Use these reports to find top resource consuming queries, including query plan differences, and top wait types to look at resource wait scenarios.
+Query Store is a historical record of performance execution for queries stored in the user database. Query Store is on by default for Azure SQL, and is used to provide capabilities such as automatic plan correction and automatic tuning. SQL Server Management Studio (SSMS) reports for the store are available for Azure SQL. Use these reports to find top resource consuming queries, including query plan differences, and top wait types to look at resource wait scenarios.
 
 ### Performance visualizations
 
@@ -34,7 +34,7 @@ For Azure SQL Database, you can see integrated Query Store performance informati
 
 ## DMV details
 
-DMVs have been a driving force to monitor and troubleshoot performance for many years with SQL Server. Common DMVs for SQL Server are available with Azure SQL Database, and some additional ones are specific to Azure.
+DMVs have been a driving force to monitor and troubleshoot performance for many years with SQL Server. Common DMVs for SQL Server are available with Azure SQL, and some additional ones are specific to Azure.
 
 ### Azure SQL Managed Instance
 
@@ -52,7 +52,7 @@ Most of the common DMVs you need for performance, including **sys.dm_exec_reques
 
 ### DMVs you need
 
-You'll need the following DMVs to solve certain performance scenarios for Azure SQL Database:
+You'll need the following DMVs to solve certain performance scenarios for Azure SQL:
 
 - **sys.dm_io_virtual_file_stats** is important because you don't have direct access to operating system metrics for I/O performance per file.
 - **sys.dm_os_performance_counters** is available for both Azure SQL Database and SQL Managed Instance to see SQL Server common performance metrics. Use this to view SQL Server performance counter information that is typically available in Performance Monitor.
@@ -61,7 +61,7 @@ You'll need the following DMVs to solve certain performance scenarios for Azure 
 
 ### DMVs for deeper insights
 
-These DMVs provide deeper insight into resource limits and resource governance for Azure SQL Database. They aren't meant to be used for common scenarios, but might be helpful when looking deep into complex performance problems. Consult the documentation for all the details of these DMVs:
+These DMVs provide deeper insight into resource limits and resource governance for Azure SQL. They aren't meant to be used for common scenarios, but might be helpful when looking deep into complex performance problems. Consult the documentation for all the details of these DMVs:
 
 - **sys.dm_user_db_resource_governance_internal** (SQL Managed Instance only)
 - **sys.dm_resource_governor_resource_pools_history_ex**
@@ -69,7 +69,7 @@ These DMVs provide deeper insight into resource limits and resource governance f
 
 ## Extended events details
 
-The extended events feature is the tracing mechanism for SQL Server. Extended events for Azure SQL Database is based on the SQL Server engine, and therefore is the same for Azure SQL Database, with a few notable differences. The next sections cover these differences.
+The extended events feature is the tracing mechanism for SQL Server. Extended events for Azure SQL is based on the SQL Server engine, and therefore is the same for Azure SQL, with a few notable differences. The next sections cover these differences.
 
 ### Extended events for Azure SQL Database
 
@@ -96,9 +96,9 @@ You can use extended events SQL Managed Instance, just like SQL Server, by creat
 
 You can use SSMS or T-SQL to create and start sessions. You can use SSMS to view extended event session target data or the system function **sys.fn_xe_file_target_read_file**. The ability with SSMS to view live data is supported for SQL Managed Instance.
 
-## Performance scenarios for Azure SQL Database
+## Performance scenarios for Azure SQL
 
-To decide how to apply monitoring and troubleshooting performance tools and capabilities, it's important to look at performance for Azure SQL Database through scenarios.
+To decide how to apply monitoring and troubleshooting performance tools and capabilities, it's important to look at performance for Azure SQL through scenarios.
 
 ### Common performance scenarios
 
@@ -110,11 +110,11 @@ Let's dive more into the details of each aspect of the diagram.
 
 #### Running vs. waiting
 
-First, look at overall resource usage. For a standard SQL Server deployment you might use tools such as Performance Monitor in Windows, or top in Linux. For Azure SQL Database, you can use the following methods:
+First, look at overall resource usage. For a standard SQL Server deployment you might use tools such as Performance Monitor in Windows, or top in Linux. For Azure SQL, you can use the following methods:
 
 - Azure portal/PowerShell/alerts
 
-    Azure Monitor has integrated metrics to view resource usage for Azure SQL Database. You can also set up alerts to look for resource usage conditions.
+    Azure Monitor has integrated metrics to view resource usage for Azure SQL. You can also set up alerts to look for resource usage conditions.
 
 - `sys.dm_db_resource_stats`
 
@@ -134,7 +134,7 @@ If you have determined the problem is high CPU utilization, this is called a run
 
 - `sys.dm_exec_requests`
 
-    Use this DMV in Azure SQL Database to get a snapshot of the state of active queries. Look for queries with a state of RUNNABLE and a wait type of `SOS_SCHEDULER_YIELD` to see if you have enough CPU capacity.
+    Use this DMV in Azure SQL to get a snapshot of the state of active queries. Look for queries with a state of RUNNABLE and a wait type of `SOS_SCHEDULER_YIELD` to see if you have enough CPU capacity.
 
 - `sys.dm_exec_query_stats`
 
@@ -180,11 +180,11 @@ To perform analysis on waiting scenarios, you typically look at the following to
 
 ### Scenarios specific to Azure SQL Database
 
-There are some performance scenarios, both running and waiting, that are specific to Azure SQL Database. These include log governance, worker limits, waits encountered for Business Critical service tiers, and waits specific to a Hyperscale deployment.
+There are some performance scenarios, both running and waiting, that are specific to Azure SQL. These include log governance, worker limits, waits encountered for Business Critical service tiers, and waits specific to a Hyperscale deployment.
 
 #### Log governance
 
-Azure SQL Database can use log rate governance to enforce resource limits on transaction log usage. You might need this enforcement to ensure resource limits and to meet promised SLA. Log governance might be seen from the following wait types:
+Azure SQL can use log rate governance to enforce resource limits on transaction log usage. You might need this enforcement to ensure resource limits and to meet promised SLA. Log governance might be seen from the following wait types:
 
 - LOG_RATE_GOVERNOR - waits for Azure SQL Database
 - POOL_LOG_RATE_GOVERNOR - waits for Elastic Pools
@@ -212,4 +212,4 @@ Even though these waits might not slow down your application, you might not be e
 
 The Hyperscale architecture can result in some unique wait types that are prefixed with **RBIO** (a possible indication of log governance). In addition, DMVs, catalog views, and extended events have been enhanced to show metrics for page server reads.
 
-You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL Database by using the tools and knowledge you have gained in this unit.
+You will now learn in an exercise how to monitor and solve a performance problem for Azure SQL by using the tools and knowledge you have gained in this unit.

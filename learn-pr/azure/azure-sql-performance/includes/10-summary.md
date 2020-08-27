@@ -1,4 +1,4 @@
-In this module you learned about the performance capabilities of Azure SQL Database compared to SQL Server. You also learned performance tasks such as configuration and maintenance.
+In this module you learned about the performance capabilities of Azure SQL compared to SQL Server. You also learned performance tasks such as configuration and maintenance.
 
 To deliver consistent performance, you need monitoring and troubleshooting. In this module, you learned the various methods and tools to monitor and troubleshoot performance with hands-on activities for a CPU scaling scenario. You then learned how to improve CPU scaling for your workload without any migration required for your database. Improving application performance doesn't always require a new scale in Azure, so you learned a common performance bottleneck scenario that you improved by tuning the query workload.
 
@@ -6,7 +6,7 @@ Finally, you learned the unique capabilities of intelligent performance in Azure
 
 ## Learn more
 
-Learn more about Azure SQL Database performance with these resources:
+Learn more about Azure SQL performance with these resources:
 
 - Fixed capacities to choose from for CPU, memory, and I/O. Study the resource limits for [Azure SQL Managed Instance](https://docs.microsoft.com/azure/azure-sql/managed-instance/resource-limits?azure-portal=true) and [Databases](https://docs.microsoft.com/azure/azure-sql/database/resource-limits-vcore-single-databases?azure-portal=true).
 - [I/O configuration](https://techcommunity.microsoft.com/t5/datacat/storage-performance-best-practices-and-considerations-for-azure/ba-p/305525?azure-portal=true) for SQL Managed Instance might improve performance.
