@@ -1,4 +1,5 @@
->[!NOTE] This section was written using Azure CLI command in Windows Linux Subsystem (WSL2) on Windows 10. The commands are the same whether you are using Azure CLI in a PowerShell, CMD, or Bash shell.  But the way the variables are addressed may differ.
+> [!NOTE]
+> This section was written using Azure CLI command in Windows Linux Subsystem (WSL2) on Windows 10. The commands are the same whether you are using Azure CLI in a PowerShell, CMD, or Bash shell.  But the way the variables are addressed may differ.
 
 ### Sign in to Azure
 
@@ -31,7 +32,8 @@
 
     And use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
-    > [!NOTE] Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer)** Azure CLI command.
+  > [!NOTE]
+  > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer)** Azure CLI command.
 
     ```azurecli
     az configure --defaults group={Resource Group Name}
@@ -111,7 +113,8 @@ In the following exercise, you will deploy a template from your local machine. T
 
 1. Once you have saved that file locally, you can proceed to deploy it using the Azure CLI command to deploy at the resource group level we talked about in the last unit. Namely, **[az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer#az-deployment-group-create)**
 
-  > [!NOTE] In the example below, the template file is located in a **json** folder in the home drive in Windows Linux Subsystem (WSL2).  Please adjust based your shell of choice.
+    > [!NOTE]
+    > In the example below, the template file is located in a **json** folder in the home drive in Windows Linux Subsystem (WSL2).  Please adjust based your shell of choice.
 
     ```bash
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
