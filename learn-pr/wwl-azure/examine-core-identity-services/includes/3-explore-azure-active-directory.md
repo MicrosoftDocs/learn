@@ -2,7 +2,7 @@
 
 [Azure Active Directory](https://azure.microsoft.com/services/active-directory?azure-portal=true) is a Microsoft cloud-based identity and access management service. Azure AD helps employees of an organization sign in and access resources:
 
-+ **External resources** might include Microsoft Office 365, the Azure portal, and thousands of other software as a service (SaaS) applications.
++ **External resources** might include Microsoft 365, the Azure portal, and thousands of other software as a service (SaaS) applications.
 + **Internal resources** might include apps on your corporate network and intranet, along with any cloud apps developed by your own organization.
 
 Azure AD provides services such as:
@@ -47,7 +47,7 @@ With single sign-on (SSO), users need to remember only one ID and one password. 
 
 By leveraging Azure AD for single sign-on you'll also have the ability to combine multiple data sources into an intelligent security graph. This security graph enables the ability to provide threat analysis and real-time identity protection to all accounts in Azure AD, including accounts that are synchronized from your on-premises AD. By using a centralized identity provider, you'll have centralized the security controls, reporting, alerting, and administration of your identity infrastructure.
 
-As Contoso Shipping integrates its existing Active Directory instance with Azure AD, you will make controlling access consistent across the organization. Doing so will also greatly simplify the ability to sign into email and Office 365 documents without having to reauthenticate.
+As Contoso Shipping integrates its existing Active Directory instance with Azure AD, you will make controlling access consistent across the organization. Doing so will also greatly simplify the ability to sign into email and Microsoft 365 documents without having to reauthenticate.
   :::column-end:::
 :::row-end:::
 

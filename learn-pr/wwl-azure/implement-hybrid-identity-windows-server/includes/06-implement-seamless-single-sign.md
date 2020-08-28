@@ -46,20 +46,20 @@ Although pass-through authentication supports most common authentication scenari
 
 ## How pass-through authentication works
 
-Before you deploy pass-through authentication, you should understand how it works and how this method of authentication differs from AD FS. Pass-through authentication is not just a simpler form of AD FS authentication. Both methods use the on-premises infrastructure to authenticate users when accessing resources such as Office 365, but not in the same way.
+Before you deploy pass-through authentication, you should understand how it works and how this method of authentication differs from AD FS. Pass-through authentication is not just a simpler form of AD FS authentication. Both methods use the on-premises infrastructure to authenticate users when accessing resources such as Microsoft 365, but not in the same way.
 
 ![A screenshot of the Microsoft Azure Active Directory Connect Configuration Wizard, Configure page. The wizard is ready to configure the following settings: install the Azure AD Connect Authentication Agent for pass-through authentication, enable pass-through authentication, enable managed authentication in Azure, enable SSO, and enable password hash synchronization. The administrator has selected the Start the synchronization process when configuration completes check box. ](../media/m12-active-directory-connect-5.png)
 
 Pass-through authentication uses a component called Authentication Agent to authenticate users. Azure AD Connect installs the Authentication Agent during configuration.
 
-After installation, the Authentication Agent registers itself in your Office 365 tenant’s Azure AD. During registration, Azure AD assigns the Authentication Agent a unique digital-identity certificate. This certificate (with a key pair) enables secure communication with Azure AD. The registration procedure also binds the Authentication Agent to your Azure AD tenant.
+After installation, the Authentication Agent registers itself in your Microsoft 365 tenant’s Azure AD. During registration, Azure AD assigns the Authentication Agent a unique digital-identity certificate. This certificate (with a key pair) enables secure communication with Azure AD. The registration procedure also binds the Authentication Agent to your Azure AD tenant.
 
   > [!NOTE]
   > Authentication requests are not pushed to the Authentication Agent. Instead, during its initialization, the Authentication Agent connects to Azure AD over port 443, an HTTPS channel that is secured by using mutual authentication. After establishing the connection, Azure AD provides the Authentication Agent with access to the Azure Service Bus queue. From this queue, the Authentication Agent retrieves and manages password validation requests. Because of this, there is no inbound traffic, so it's not necessary to install the Authentication Agent in the perimeter network.
 
 ### Example
 
-When Contoso IT staff enable pass-through authentication on their Office 365 tenant and a user tries to authenticate on Outlook Web App, the following steps occur:
+When Contoso IT staff enable pass-through authentication on their Microsoft 365 tenant and a user tries to authenticate on Outlook Web App, the following steps occur:
 
 1. If not already signed in, the user is redirected to the **Azure AD User Sign-in** page. On this page, the user signs in with a username and password. Azure AD receives the request to sign in and places the username and password in a queue. An Azure AD security token service (STS) uses the Authentication Agent public key to encrypt these credentials. The STS service retrieves this public key from the certificate that the Authentication Agent receives during the registration process.
 

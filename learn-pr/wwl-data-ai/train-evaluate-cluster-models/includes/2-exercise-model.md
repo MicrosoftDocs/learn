@@ -2,7 +2,7 @@ Data scientists generally use specialized machine learning frameworks to train a
 
 ## Try for yourself
 
-One of the most commonly used machine learning frameworks for Python is **scikit-learn**, and in this hands-on exercise, you'll use scikit-learn to train and evaluate a classification model. To complete the exercise, you'll need:
+One of the most commonly used machine learning frameworks for Python is **scikit-learn**, and in this hands-on exercise, you'll use scikit-learn to train and evaluate a clustering model. To complete the exercise, you'll need:
 
 - A Microsoft Azure subscription.
 - A Visual Studio Codespace based on the **MicrosoftDocs/ml-basics** GitHub repository.
