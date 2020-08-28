@@ -75,9 +75,9 @@ Running `python --version` and `conda list` again to confirm that the python env
 
 To start a Jupyter server, run: 
 
-    ```bash
-    jupyter notebook
-    ```
+```bash
+jupyter notebook
+```
 
 After startup, the Firefox browser on your Data Science Virtual Machine should start and open to `localhost:8888/tree`, showing the home directory of your Data Science Virtual Machine user. While the **notebooks** directory contains a number of tutorials on the various installed frameworks, almost all require downloading data from external sources. Since in this module your Data Science Virtual Machine is running in a free, restricted Azure environment, you can't access that data at this time.
 
