@@ -18,7 +18,7 @@ The Microsoft Endpoint Manager console helps keep your organization's cloud and 
 > If you already have Microsoft Intune or Microsoft Endpoint Configuration Manager you already have Microsoft Endpoint Manager. These are all now one management system.
 
 
-![Diagram of Microsoft Endpoint Manager](../media/mem.png)
+![Diagram of Microsoft Endpoint Manager](../media/intro-to-endpoint-manager-01.png)
 
 To quickly step through the areas of Microsoft Endpoint Manager, see [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
 
@@ -28,13 +28,13 @@ Microsoft Intune, which a part of Microsoft Endpoint Manager, provides the cloud
 
 In the following diagram, you can see how Intune interacts with other components in both your on-premises and cloud infrastructure:
 
-![Diagram of Intune infrastructure](../media/intune.png)
+![Diagram of Intune infrastructure](../media/intro-to-endpoint-manager-02.png)
 
 ## Microsoft Endpoint Configuration Manager
 
 Configuration Manager is the leading PC management solution on the market. You use it to manage desktops, servers, and laptops that are on your network or are internet-based. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud, which will provide integration with Intune, Azure AD, Microsoft Defender ATP, and other cloud services. Use Configuration Manager to deploy apps, software updates, and operating systems, as well as configure sites and clients, and run and monitor management tasks. Configuration Manager supports Windows and Mac OS versions. The devices you manage with Configuration Manager can run in virtual environments. This includes Hyper-V on Windows servers as well as Virtual Machines (VM) in Azure. If you run a server as an Azure based VM, you can install the Configuration Manager client on that device.
 
-![Diagram of Configuration Manager infrastructure](../media/configmanager.png)
+![Diagram of Configuration Manager infrastructure](../media/intro-to-endpoint-manager-03.png)
 
 ### Cloud Attach
 
@@ -61,14 +61,14 @@ When you enroll existing Configuration Manager clients in co-management, you gai
 
 In the following diagram, you can see how Windows 10 devices can be manged with both Configuration Manager and Microsoft Intune:
 
-![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-03.svg)
+![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-09.svg)
 
 ## Desktop Analytics
 
-Desktop Analytics is a cloud-based service that integrates with Configuration Manager to help you update devices. It provides insight and intelligence for you to make more informed decisions about the update readiness of your Windows clients. The service combines data from your organization with data aggregated from millions of devices connected to the Microsoft cloud. It provides information on security updates, apps, and devices in your organization, and identifies compatibility issues with apps and drivers. 
+Desktop Analytics is a cloud-based service that integrates with Configuration Manager to help you update devices. It provides insight and intelligence for you to make more informed decisions about the update readiness of your Windows clients. The service combines data from your organization with data aggregated from millions of devices connected to the Microsoft cloud. It provides information on apps, and devices in your organization, identifies compatibility issues with apps and drivers, suggest mitigations based on cloud enabled data insights, and create pilots that represent the entire application and driver state across a minimal set of devices.
 
 ## Endpoint Analytics
-Endpoint analytics is part of the [Microsoft Productivity Score](https://docs.microsoft.com/microsoft-365/admin/productivity/productivity-score). These analytics give you insights for measuring how your organization is working and the quality of the experience you're delivering to your users. Endpoint analytics can help identify policies or hardware issues that may be slowing down devices and proactively make changes without disrupting end users or generating a help desk ticket. 
+Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into how your organization is working and the quality of the experience you're delivering to your end users. Endpoint Analytics can help identify configuration or hardware issues that may be slowing down devices, provide recommended actions to remediate them and proactively make changes without disrupting end users or generating a help desk ticket.
 
 ## Windows Autopilot
 

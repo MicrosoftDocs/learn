@@ -10,7 +10,7 @@ You can define conditions that gate access to your corporate data based on locat
 
 Conditional Access is an Azure Active Directory capability that is included with an Azure Active Directory Premium license. Intune enhances this capability by adding mobile device compliance and mobile app management to the solution. 
 
-![Intune and Conditional Access when using EMS](../media/intune-with-ca.png)
+![Intune and Conditional Access when using EMS](../media/intro-to-endpoint-manager-05.png)
 
 Ways to use Conditional Access with Intune:
 

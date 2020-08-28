@@ -20,7 +20,7 @@ There are four types of Windows Autopilot deployment:
 - **Autopilot for existing devices** enables you to easily deploy the latest version of Windows 10 to your existing devices.
 - **User Driven Mode** for traditional users. This process is designed to be simple so that anyone can complete it, enabling devices to be shipped or distributed to the end user directly with simple instructions.
 
-There are a number of alternative ways to provision devices as well. Configuration Manager offers several methods to deploy Windows OS to windows devices, such as using Software Center, standlone media, a preboot execution environment (PXE), multicast, and more. Intune also offers provisioning using bulk enrollment for your Azure AD tenant. 
+There are a number of alternative ways to provision devices as well. Configuration Manager offers several methods to deploy Windows OS to windows devices, such as using Software Center, standalone media, a preboot execution environment (PXE), multicast, and more. Intune also offers provisioning using bulk enrollment for your Azure AD tenant. 
 
 ## Provisioning Apple devices
 
