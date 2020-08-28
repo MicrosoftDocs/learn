@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.review-security-tools-features.describe-dedicated-hosts
+uid: learn.review-security-tools-features.6-host-virtual-machines-dedicated-hosts
 title: Host your Azure virtual machines on dedicated physical servers by using Azure Dedicated Host
 metadata:
   description: Learn how Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-describe-dedicated-hosts.md)]
+  [!include[](includes/6-host-virtual-machines-dedicated-hosts.md)]

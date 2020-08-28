@@ -33,13 +33,13 @@ roles:
 products:
 - azure
 units:
-- learn.review-security-tools-features.introduction
-- learn.review-security-tools-features.explore-azure-security-center
-- learn.review-security-tools-features.explore.azure.sentinel
-- learn.review-security-tools-features.explore-key-vault
-- learn.review-security-tools-features.walkthrough-implement-azure-key-vault
-- learn.review-security-tools-features.describe-dedicated-hosts
-- learn.review-security-tools-features.knowledge-check
-- learn.review-security-tools-features.summary
+- learn.review-security-tools-features.1-introduction
+- learn.review-security-tools-features.2-protect-threats-security-center
+- learn.review-security-tools-features.3-detect-respond-threats-sentinel
+- learn.review-security-tools-features.4-manage-secrets-key-vault
+- learn.review-security-tools-features.5-manage-password-key-vault
+- learn.review-security-tools-features.6-host-virtual-machines-dedicated-hosts
+- learn.review-security-tools-features.7-knowledge-check
+- learn.review-security-tools-features.8-summary
 badge:
   uid: learn.review-security-tools-features.badge
