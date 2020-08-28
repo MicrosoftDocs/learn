@@ -10,31 +10,53 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 1
+durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
-  - content: "Which of the following enables stored passwords and secrets in Azure so you can centrally manage them for your services and applications?"
+  - content: How can Tailwind Traders enforce having only certain applications run on their VMs?
     choices:
-    - content: "Azure Advanced Threat Protection"
-      isCorrect: false
-      explanation: "That's incorrect.  This is a service to help monitor and diagnose threats to your Azure solutions."
-    - content: "Azure Key Vault"
+    - content: Create an application control rule in Azure Security Center.
       isCorrect: true
-      explanation: "That's correct. Azure Key Vault is a centralized cloud service for storing your applications' secrets. Key Vault helps you control your applications' secrets by keeping them in a single, central location and by providing secure access, permissions control, and access logging capabilities."
-    - content: "Azure Security Center"
+      explanation: With Azure Security Center, you can define a list of allowed applications to ensure that only applications you allow can run. Azure Security Center can also detect and block malware from being installed on your VMs.
+    - content: Connect your VMs to Azure Sentinel.
       isCorrect: false
-      explanation: "That's incorrect.  This is a tool that makes security recommendations for the Azure implementation."
-  - content: "What is Azure Information Protection (AIP)?"
+      explanation: Azure Sentinel enables you to aggregate security data from many different sources to provide additional capabilities for threat detection and responding to threats.
+    - content: Periodically run a script that lists the running processes on each VM. The IT manager can then shut down any applications that shouldn't be running.
+      isCorrect: false
+      explanation: Although you could follow this approach, it's tedious, time-consuming, and prone to errors. Is there a more automated approach they can take?
+  - content: What's the easiest way for Tailwind Traders to combine security data from all of their monitoring tools into a single report that they can take action on?
     choices:
-    - content: "AIP is a cloud-based solution that helps organizations classify and (optionally) protect its documents and emails by applying labels. Labels can be applied automatically (by administrators who define rules and conditions), manually (by users), or with a combination of both (where users are guided by recommendations)."
+    - content: Collect security data in Azure Sentinel.
       isCorrect: true
-      explanation: "That's correct.  AIP helps you to track and secure the usage of your company's intellectual property."
-    - content: "AIP is a cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
+      explanation: Azure Sentinel is Microsoft's cloud-based SIEM. A SIEM aggregates security data from many different sources to provide additional capabilities for threat detection and responding to threats.
+    - content: Build a custom tool that collects security data and displays a report through a web application.
       isCorrect: false
-      explanation: "That's incorrect.  This more closely aligns to a threat management tool."
-    - content: "AIP  is a monitoring service that provides threat protection across all of your services both in Azure, and on-premises."
+      explanation: Although you could take this approach, is there a fully-featured service on Azure that provides this functionality?
+    - content: Look through each security log daily and email a summary to your team.
       isCorrect: false
-      explanation: "That's incorrect.  This is really a description of threat protection, not information protection."
+      explanation: This approach is time-consuming. It might also delay important security events from being addressed.
+  - content: Which is the best way for Tailwind Traders to safely store their certificates so that they're accessible to their cloud VMs?
+    choices:
+    - content: Store the certificates in Azure Key Vault.
+      isCorrect: true
+      explanation: Azure Key Vault enables you to store your secrets in a single, central location. Key Vault also makes it easier to enroll and renew certificates from public Certificate Authorities (CAs).
+    - content: Place the certificates on a network share.
+      isCorrect: false
+      explanation: Although you could place your certificates on a network share, is there a service that can handle secure access and enrollment for you?
+    - content: Store them on a VM that's protected by a password.
+      isCorrect: false
+      explanation: Although you could do this, it's less secure. Plus, you now need a way to safely manage your password. Is there a service that can handle secure access and enrollment for you?
+  - content: How can Tailwind Traders ensure that certain VM workloads are physically isolated from workloads being run by other Azure customers?
+    choices:
+    - content: Run the VMs on Azure Dedicated Host.
+      isCorrect: true
+      explanation: Azure Dedicated Host provides dedicated physical servers to host your Azure VMs for Windows and Linux.
+    - content: Configure the network to ensure that VMs on the same physical host are isolated.
+      isCorrect: false
+      explanation: On Azure, it's not necessary to configure the network to isolate VMs on the same physical host. Doing so also might not satisfy regulatory requirements.
+    - content: This is not possible. These workloads need to be run on-premises.
+      isCorrect: false
+      explanation: Is there an Azure service that provides dedicated physical servers to host your VMs for Windows and Linux?
