@@ -4,26 +4,11 @@ metadata:
   title: Network encryption
   description: Network encryption
   ms.date: 09/30/2020
-  author: telmosampaio
-  ms.author: telmos
+  author: johnknightly
+  ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Network encryption
 durationInMinutes: 10
 content: |
   [!include[](includes/7-network-encryption.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: 'MACSec Encryption is Available:'
-    choices:
-    - content: 'With ExpressRoute Direct and traffic traversing the Microsoft Backbone'
-      isCorrect: true
-      explanation: ''
-    - content: 'With ExpressRoute through specific cloud exchanges'
-      isCorrect: false
-      explanation: 'MACSec is ExpressRoute Direct only'
-    - content: 'With Azure VPN'
-      isCorrect: false
-      explanation: 'VPNs use IPSec tunnels, MACSec is Layer 2 encryption'

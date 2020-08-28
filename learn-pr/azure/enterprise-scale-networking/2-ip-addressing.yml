@@ -4,11 +4,11 @@ metadata:
   title: IP addressing
   description: IP addressing
   ms.date: 09/30/2020
-  author: telmosampaio
-  ms.author: telmos
+  author: JohnKnightly
+  ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: IP addressing
-durationInMinutes: 10
+durationInMinutes: 5
 content: |
   [!include[](includes/2-ip-addressing.md)]
