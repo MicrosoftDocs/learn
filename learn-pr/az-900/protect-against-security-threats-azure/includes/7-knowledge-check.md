@@ -5,7 +5,7 @@ Tailwind Traders is moving their online payment system from their datacenter to 
 Here are a few of security requirements they identify as they plan their migration:
 
 * They want to ensure they'll have a good security posture across all of their systems, both on Azure and on-premises.
-* In their datacenter, access to virtual machines requires an SSL certificate. They need a place to safely store and manage their certificates.
+* In their datacenter, access to virtual machines requires a TLS certificate. They need a place to safely store and manage their certificates.
 
 Here are some additional requirements that relate to regulatory compliance:
 

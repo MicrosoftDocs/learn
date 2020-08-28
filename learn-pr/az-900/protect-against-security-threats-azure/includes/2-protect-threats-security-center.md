@@ -38,7 +38,7 @@ Under the **Resource security hygiene** section, they can see the health of thei
 
 Following the secure score recommendations can protect your organization from threats. From a centralized dashboard in the Azure Security Center, organizations can monitor and work on the security of their Azure resources like identities, data, apps, devices, and infrastructure.
 
-Secure score help you:
+Secure score helps you:
 
 * Report on the current state of your organization's security posture.
 * Improve your security posture by providing discoverability, visibility, guidance, and control.
@@ -46,14 +46,14 @@ Secure score help you:
 
 ## Protect against threats
 
-Security Center also includes advanced cloud defence capabilities for virtual machines, network security and file integrity. Let's take a look at how some of these capabilities apply to Tailwind Traders.
+Security Center also includes advanced cloud defense capabilities for virtual machines, network security, and file integrity. Let's take a look at how some of these capabilities apply to Tailwind Traders.
 
 * **Just in time VM access**
 
     Tailwind Traders will configure *just in time* access to virtual machines (VMs), which blocks traffic by default to specific network ports of their virtual machines, but allows it for a specified time when requested and approved by an administrator.
 * **Adaptive application controls**
 
-    Tailwind Traders can also control which applications are allowed to run on their virtual machines. In the background, Security Center uses machine learning to look at the processes running on a virtual machine. It creates exception rules for each resource group that holds the virtual machines and provides recommendations. This helps prevent unauthorized applications from running on their VMs.
+    Tailwind Traders can also control which applications are allowed to run on their virtual machines. In the background, Security Center uses machine learning to look at the processes running on a virtual machine. It creates exception rules for each resource group that holds the virtual machines and provides recommendations. This process helps prevent unauthorized applications from running on their VMs.
 * **Adaptive network hardening**
 
     Security Center can also monitor the internet traffic patterns of the VMs and compare those patterns with their current Network Security Group (NSG) settings. From there, Security Center can make recommendations on whether the NSGs should be locked down further and provide remediation steps.
@@ -80,7 +80,7 @@ Azure Security Center is available in two versions, known as tiers:
 
     This tier provides a full suite of security-related services including continuous monitoring, threat detection, just-in-time access control for ports, and more.
 
-To access the full suite of Azure Security Center services you will need to upgrade to a Standard tier Azure Security Center subscription. You can access a 30-day free trial of the Standard tier from within the Azure Security Center dashboard in the Azure portal.
+To access the full suite of Azure Security Center services, you will need to upgrade to a Standard tier Azure Security Center subscription. You can access a 30-day free trial of the Standard tier from within the Azure Security Center dashboard in the Azure portal.
 
 > [!NOTE]
 > * To upgrade a subscription to the Standard tier, you must be assigned the role of *Subscription Owner*, *Subscription Contributor*, or *Security Admin*.

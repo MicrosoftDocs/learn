@@ -1,6 +1,6 @@
 In this module, you'll learn about some of the security tools that can help keep your infrastructure and data safe when you work in the cloud.
 
-Security is a small word for a big concept. There are so many factors to consider in order to protect your applications and your data. How does Azure help you protect workloads you run in the cloud and in your on-premises data center?
+Security is a small word for a significant concept. There are so many factors to consider in order to protect your applications and your data. How does Azure help you protect workloads you run in the cloud and in your on-premises data center?
 
 ## Meet Tailwind Traders
 
@@ -10,7 +10,7 @@ Security is a small word for a big concept. There are so many factors to conside
 
 Tailwind Traders runs a mix of workloads on Azure and in their datacenter.
 
-The need to ensure that all of their systems meet a minimum level of security and that their information is protected from attacks. They also need a way to collect and act on security events from across their entire digital estate.
+The need to ensure that all of their systems meet a minimum level of security and that their information is protected from attacks. They also need a way to collect and act on security events from across their digital estate.
 
 Lets explore how Tailwind Traders can use some of the tools and features in Azure as part of their overall security strategy.
 

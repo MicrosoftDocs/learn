@@ -1,6 +1,6 @@
 In this exercise, you add a password to Azure Key Vault. A password is an example of sensitive information that you need to protect. You then read the password from Azure Key Vault to verify that the password is accessible.
 
-In practice, there are several ways to add secrets to and read secrets from Key Vault. These include the Azure portal, the Azure CLI, and Azure PowerShell. By using your favorite programming language, your applications can also securely access the secrets that they need.
+In practice, there are several ways to add secrets to and read secrets from Key Vault. You can use the Azure portal, the Azure CLI, or Azure PowerShell. By using your favorite programming language, your applications can also securely access the secrets that they need.
 
 Here, you create a secret in Key Vault by using the Azure portal. You then access the secret from the portal and from the Azure CLI in Azure Cloud Shell. 
 
@@ -26,12 +26,14 @@ The Azure CLI as a way to work with Azure resources from the command line or fro
     Leave the other settings at their current values.
 1. Select **Review + create**, then select **Create**.
 
-    Wait for the creation process to finish.
+    Wait for the creation process to complete.
 
 1. Select **Go to resource**.
 1. Note some of the details about your Key Vault.
 
-    For example, the **DNS name** field shows the URI your application can use to access your vault from the REST API. Here's an example for a Key Vault that's named **my-kv-1234**:
+    For example, the **DNS name** field shows the URI your application can use to access your vault from the REST API.
+
+    Here's an example for a Key Vault that's named **my-kv-1234**:
 
     :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="A screenshot of the Azure portal showing details about a key vault. Fields such as the parent resource group, location, and DNS name are shown.":::
 
@@ -69,7 +71,7 @@ Here, you access the password from Key Vault two times. First, you access it fro
 
 1. Select the current version.
 
-    Under **Secret Identifier**, you see a URI that you can now use with applications to access the secret. Remember, only authorized applications will be able to access this secret.
+    Under **Secret Identifier**, you see a URI that you can now use with applications to access the secret. Remember, only authorized applications can access this secret.
 
 1. Select **Show Secret Value**.
 

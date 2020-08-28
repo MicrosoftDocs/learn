@@ -43,4 +43,4 @@ The benefits of using Key Vault include:
     Key Vault makes it easier to enroll and renew certificates from public Certificate Authorities (CAs). You can also scale up and replicate content within regions and use standard certificate management tools.
 + **Integration with other Azure services**
 
-    You can integrate Key Vault with storage accounts, container registries, event hubs and many more Azure services. These services can then securely reference the secrets stored in the Key Vault.
+    You can integrate Key Vault with storage accounts, container registries, event hubs, and many more Azure services. These services can then securely reference the secrets stored in the Key Vault.
