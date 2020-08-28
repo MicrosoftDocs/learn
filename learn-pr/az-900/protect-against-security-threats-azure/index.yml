@@ -21,7 +21,7 @@ abstract: |
   * Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
 prerequisites: |
   There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
-iconUrl: /learn/achievements/r3view-security-tools-features.svg
+iconUrl: /learn/achievements/review-security-tools-features.svg
 levels:
 - beginner
 roles:
