@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What authentication account type(s) is recommendations when planning for enterprise enrollment?'
+  - content: 'What authentication account type is recommended when planning for enterprise enrollment?'
     choices:
     - content: 'Microsoft Account (MSA)'
       isCorrect: false
@@ -25,7 +25,7 @@ quiz:
       isCorrect: true
       explanation: 'Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.'
 
-  - content: 'Azure AD tenant provides identity and access management, when designing your solution which of the following are valid design considerations or recommendations?'
+  - content: 'Azure AD tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?'
     choices:
     - content: 'Multifactor authentication provides another layer of security and a second barrier of authentication.'
       isCorrect: true
