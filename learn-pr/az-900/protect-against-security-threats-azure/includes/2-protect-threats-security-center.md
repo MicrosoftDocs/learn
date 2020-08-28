@@ -18,29 +18,31 @@ Security Center can:
 
 ## Understand your security posture
 
-<div style="background:yellow;">
-TODO: Do we need a para about Secure Score?.
-</div>
-
 Tailwind Traders can use Security Center to get a detailed analysis of different components in their environment. Because their resources are analyzed against the security controls of any governance policies they have assigned, they can view their overall regulatory compliance from a security perspective all from one place.
 
 Here's an example of what you might see in Azure Security Center:
-
-<div style="background:yellow;">
-TODO: Replace image - too big.
-</div>
 
 :::image type="content" source="../media/2-security-center-compliance.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene, and threat protection.":::
 
 Let's say that Tailwind Traders must comply with the Payment Card Industry's Data Security Standard (PCI DSS). This report shows that they have resources that they need to remediate.
 
-Under the **Resource Security Hygiene** section, they can also see the health of their resources from a security perspective. To help you prioritize remediation actions, recommendations are categorized as low, medium, and high.
+Under the **Resource security hygiene** section, they can see the health of their resources from a security perspective. To help you prioritize remediation actions, recommendations are categorized as low, medium, and high. Here's an example:
 
-<div style="background:yellow;">
-TODO: Replace image - too big & doesnt mimic above para.
-</div>
+:::image type="content" source="../media/2-security-center-dashboard.png" alt-text="Azure security center dashboard showing the resource security hygiene section. Recommendations are categorized as low, medium, and high.":::
 
-:::image type="content" source="../media/2-security-center-dashboard.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene, and threat protection.":::
+### What's secure score?
+
+[Secure score](https://docs.microsoft.com/azure/security-center/secure-score-security-controls/?azure-portal=true) is a measurement of an organization's security posture, with a higher number indicating more improvement actions taken.
+
+:::image type="content" source="../media/2-single-secure-score-via-ui.png" alt-text="A screenshot of the Azure portal showing a score of 57 percent, or 34 out of 60 points.":::
+
+Following the secure score recommendations can protect your organization from threats. From a centralized dashboard in the Azure Security Center, organizations can monitor and work on the security of their Azure resources like identities, data, apps, devices, and infrastructure.
+
+Secure score help you:
+
+* Report on the current state of your organization's security posture.
+* Improve your security posture by providing discoverability, visibility, guidance, and control.
+* Compare with benchmarks and establish key performance indicators (KPIs).
 
 ## Protect against threats
 
