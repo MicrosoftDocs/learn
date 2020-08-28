@@ -23,16 +23,16 @@ quiz:
       explanation: 'The feature provides Azure services with an automatically managed identity in Azure AD. You can use the identity to authenticate to any service that supports Azure AD authentication, including Key Vault, without any credentials in your code.​'
     - content: 'By using Password Based Authentication'
       isCorrect: false
-      explanation: 'This is a static method and not best practice as securely storing these credentials creates management overhead​'
+      explanation: 'Password Based Authentication is a static method and not best practice as securely storing these credentials creates management overhead​'
     - content: 'Use Azure Key Vault'
       isCorrect: false
       explanation: 'Key vault provides storage to your keys and secrets but it’s not responsible for initiating authentication'
 
-  - content: 'It’s best practice that Subscription owners should have write permissions for Microsoft.Authorization in addition to Contributor role permissions.'
+  - content: 'It’s best practice that Subscription owners should have write permissions for Microsoft. Authorization also to Contributor role permissions.'
     choices:
     - content: 'True'
       isCorrect: false
       explanation: ''
     - content: 'False'
       isCorrect: true
-      explanation: 'Subscription owners should have Contributor rights to resources within the subscription that are not centrally shared. Granting write permissions for Microsoft.Authorization, which is centrally managed, will allow the owner to modify permissions that limit their scope, remove separation, and could pose security risks.'
+      explanation: 'Subscription owners should have Contributor rights to resources within the subscription that are not centrally shared. Granting write permissions for Microsoft.Authorization which is centrally managed.  This will allow the owner to modify permissions that limit their scope, remove separation, and could pose security risks.'
