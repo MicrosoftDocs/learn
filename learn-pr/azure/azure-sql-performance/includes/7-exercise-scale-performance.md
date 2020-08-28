@@ -93,7 +93,7 @@ To scale performance for a problem that appears to be a CPU capacity problem, yo
 
     During a change for the service objective, queries are allowed against the database until the final change is implemented. An application can't connect for a very brief period of time. For Azure SQL Managed Instance, a change of tier allows queries and connections, but prevents all database operations, like the creation of new databases. In these cases, you receive the following error message: "The operation could not be completed because a service tier change is in progress for managed instance '[server]'. Please wait for the operation in progress to complete and try again."
 
-1. When this is done, use the preceding queries listed from **get_service_objective.sql** in SSMS, to verify that the new service objective or service tier of 8 vCores has taken affect.
+1. When this is done, use the preceding queries listed from **get_service_objective.sql** in SSMS, to verify that the new service objective or service tier of 8 vCores has taken effect.
 
 ## Run the workload after scale up
 
