@@ -103,97 +103,97 @@ In this exercise, we will review and deploy a template that includes two linked 
 
 1. To get started copy and paste the content of the following template code, into a file in a local directory.  **C:\JSON\linkedtemplate.json** or **/mnt/c/Users/<UserName>/json/linkedtemplate.json** for example.
 
-  Once you have saved that file locally, you can proceed to deploy it using the Azure CLI command to deploy at the resource group level. Namely, **[az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer#az-deployment-group-create)**
+      Once you have saved that file locally, you can proceed to deploy it using the Azure CLI command to deploy at the resource group level. Namely, **[az deployment group create](https://docs.microsoft.com/cli/azure/deployment/group?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer#az-deployment-group-create)**
 
-  ```bash
-  templateFile=/mnt/c/Users/<UserName>/json/linkedtemplate.json
-  today=$(date +"%Y-%m-%d")
-  deploymentname="DeployLocalTemplate-3-"$today
+      ```bash
+      templateFile=/mnt/c/Users/<UserName>/json/linkedtemplate.json
+      today=$(date +"%Y-%m-%d")
+      deploymentname="DeployLocalTemplate-3-"$today
+    
+      az deployment group create \
+      --name $deploymentname \
+      --template-file $templateFile
+      ```
 
-  az deployment group create \
-  --name $deploymentname \
-  --template-file $templateFile
-  ```
+      Once it completes, you should have results like the example below.  Just check the **"provisioningState"** to ensure it succeeded.
 
-  Once it completes, you should have results like the example below.  Just check the **"provisioningState"** to ensure it succeeded.
-
-  ```json
-  {- Finished ..
-    "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
-    "location": null,
-    "name": "DeployLocalTemplate-3-2020-08-19",
-    "properties": {
-      "correlationId": "f127f689-badf-4063-ad55-dff549e63e48",
-      "debugSetting": null,
-      "dependencies": [
-        {
-          "dependsOn": [
+      ```json
+      {- Finished ..
+        "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/DeployLocalTemplate-3-2020-08-19",
+        "location": null,
+        "name": "DeployLocalTemplate-3-2020-08-19",
+        "properties": {
+          "correlationId": "f127f689-badf-4063-ad55-dff549e63e48",
+          "debugSetting": null,
+          "dependencies": [
             {
-              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/storage",
+              "dependsOn": [
+                {
+                  "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/storage",
+                  "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
+                  "resourceName": "storage",
+                  "resourceType": "Microsoft.Resources/deployments"
+                }
+              ],
+              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/identity",
               "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
-              "resourceName": "storage",
+              "resourceName": "identity",
               "resourceType": "Microsoft.Resources/deployments"
             }
           ],
-          "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Resources/deployments/identity",
-          "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
-          "resourceName": "identity",
-          "resourceType": "Microsoft.Resources/deployments"
-        }
-      ],
-      "duration": "PT16.4639167S",
-      "error": null,
-      "mode": "Incremental",
-      "onErrorDeployment": null,
-      "outputResources": [
-        {
-          "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/vnet-001",
-          "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
-        },
-        {
-          "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
-          "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
-        }
-      ],
-      "outputs": {},
-      "parameters": {
-        "name": {
-          "type": "String",
-          "value": "linkeddemo001"
-        }
-      },
-      "parametersLink": null,
-      "providers": [
-        {
-          "id": null,
-          "namespace": "Microsoft.Resources",
-          "registrationPolicy": null,
-          "registrationState": null,
-          "resourceTypes": [
+          "duration": "PT16.4639167S",
+          "error": null,
+          "mode": "Incremental",
+          "onErrorDeployment": null,
+          "outputResources": [
             {
-              "aliases": null,
-              "apiVersions": null,
-              "capabilities": null,
-              "locations": [
-                null
-              ],
-              "properties": null,
-              "resourceType": "deployments"
+              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Network/virtualNetworks/vnet-001",
+              "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
+            },
+            {
+              "id": "/subscriptions/76972a65-0cc5-4520-bd43-938429557ba6/resourceGroups/learn-159e2742-d3a1-4e71-84a3-16e19830242b/providers/Microsoft.Storage/storageAccounts/store7zk7eyqew54l4",
+              "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b"
             }
-          ]
-        }
-      ],
-      "provisioningState": "Succeeded",
-      "templateHash": "12700491000282730217",
-      "templateLink": null,
-      "timestamp": "2020-08-19T21:07:18.729310+00:00",
-      "validatedResources": null
-    },
-    "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
-    "tags": null,
-    "type": "Microsoft.Resources/deployments"
-  }
-  ```
+          ],
+          "outputs": {},
+          "parameters": {
+            "name": {
+              "type": "String",
+              "value": "linkeddemo001"
+            }
+          },
+          "parametersLink": null,
+          "providers": [
+            {
+              "id": null,
+              "namespace": "Microsoft.Resources",
+              "registrationPolicy": null,
+              "registrationState": null,
+              "resourceTypes": [
+                {
+                  "aliases": null,
+                  "apiVersions": null,
+                  "capabilities": null,
+                  "locations": [
+                    null
+                  ],
+                  "properties": null,
+                  "resourceType": "deployments"
+                }
+              ]
+            }
+          ],
+          "provisioningState": "Succeeded",
+          "templateHash": "12700491000282730217",
+          "templateLink": null,
+          "timestamp": "2020-08-19T21:07:18.729310+00:00",
+          "validatedResources": null
+        },
+        "resourceGroup": "learn-159e2742-d3a1-4e71-84a3-16e19830242b",
+        "tags": null,
+        "type": "Microsoft.Resources/deployments"
+      }
+      ```
 
 1. To validate the results in the Azure portal, navigate to [Azure](https://portal.azure.com?azure-portal=true) and make sure you are in the sandbox subscription. To do that, select your avatar in the upper right corner of the page. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
 
@@ -202,9 +202,9 @@ In this exercise, we will review and deploy a template that includes two linked 
     1. In the *Overview*, you see the deployment has succeeded.
     1. Select *3 Succeeded* to see the details of the deployment. *(There may be more completed deployment depending on whether you performed the previous unit's exercises)*
 
-  ![Azure portal interface for the deployments with the one deployment listed and a succeeded status.](../../media/7-portal-deployment-details.png)
+      ![Azure portal interface for the deployments with the one deployment listed and a succeeded status.](../../media/7-portal-deployment-details.png)
 
 1. You will notice that you deployed one Template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the Main template and the two linked templates.
 
-  ![Azure portal interface for the specific deployment with no resources listed.](../../media/7-portal-deployment-listing.png)
+      ![Azure portal interface for the specific deployment with no resources listed.](../../media/7-portal-deployment-listing.png)
 
