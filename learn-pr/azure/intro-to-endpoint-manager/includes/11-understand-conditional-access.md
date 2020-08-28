@@ -82,22 +82,6 @@ Conditional access for PCs provides capabilities similar to those available for 
 
 Intune and Azure Active Directory work together to make sure only managed apps can access corporate e-mail or other Office 365 services.
 
-### Intune Conditional access for Exchange on-premises
-
-Conditional access can be used to allow or block access to **Exchange on-premises** based on the device compliance policies and enrollment state. When conditional access is used in combination with a device compliance policy, only compliant devices are allowed access to Exchange on-premises.
-
-You can configure advanced settings in conditional access for more granular control such as:
-
-- Allow or block certain platforms.
-
-- Immediately block devices that aren't managed by Intune.
-
-Any device used to access Exchange on-premises is checked for compliance when device compliance and conditional access policies are applied.
-
-When devices don't meet the conditions set, the end user is guided through the process of enrolling the device to fix the issue that is making the device noncompliant.
-
-Conditional access for Exchange on-premises uses hybrid modern authentication from Microsoft 365, a method of identity management that offers secure user authentication and authorization.  
-
 ## Benefits of Conditional Access
 
 Every IT team is obsessed with network security. It's mandatory to make sure that every device meets your security and business requirements before accessing your network. With Conditional Access, you can determine the following factors:
@@ -111,9 +95,3 @@ Conditional Access combines granular control over organizational data with a use
 With co-management, Intune can incorporate Configuration Manager's responsibilities for assessing your security standards compliance of required updates or apps. This behavior is important for any IT organization that wants to continue using Configuration Manager for complex app and patch management.
 
 Conditional Access is also a critical part of developing your Zero Trust Network architecture. With Conditional Access, compliant device access controls cover the foundational layers of Zero Trust Network. This functionality is a large part of how you secure your organization in the future.
-
-### Video - Common Conditional Access scenarios (optional)
-
-To learn more about how conditional access is integrated into common scenarios that you regularly experience, view the following video:
-
-[!VIDEO https://www.youtube.com/embed/A7IrxAH87wc?start=178]

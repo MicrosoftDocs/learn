@@ -31,7 +31,7 @@ Intune and Configuration Manager both provide methods to configure app installat
 - Managed browser policies help you to configure settings for the  Microsoft Edge, which replaces the default device browser and lets you restrict the websites that your users can visit.
 - You can set specific setting for Microsoft Outlook when you install it.
 - Whether certain apps should be installed in User or System context.
-- Rules to detect if the app is already installed, needs to be udpated, or has specific insallation depenencies.
+- Rules to detect if the app is already installed, needs to be updated, or has specific installation dependencies.
 
 ### Protect
 Intune gives you many ways to help protect the data in your apps. The main methods are:
@@ -42,7 +42,7 @@ Intune gives you many ways to help protect the data in your apps. The main metho
 Eventually, it's likely that apps that you deployed become outdated and need to be removed. In Intune, you can uninstall apps by assigning an uninstall intent to a group of users or devices. In Configuration Manager, you can delete an app by first retiring the app, deleting all deployments, remove references to the application by other deployments, and then deleting all of the app's revisions.
 
 ## App configuration 
-App configuration policies can help you eliminate app setup up problems by letting you assign configuration settings to a policy that is assigned to end users before they run the app. The settings are then supplied automatically when the app is configured on the end-users device, and end users don't need to take action. The configuration settings are unique for each app. 
+App configuration policies can help you eliminate app setup up problems by letting you assign configuration settings to a policy that is assigned to end users before they run a specific app. The settings are then supplied automatically when the app is configured on the end-users device, and end users don't need to take action. The configuration settings are unique for each app. 
 
 You can create and use app configuration policies to provide configuration settings for both iOS/iPadOS or Android apps. These configuration settings allow an app to be customized by using app configuration and management. The configuration policy settings are used when the app checks for these settings, typically the first time the app is run. 
 
@@ -61,6 +61,9 @@ One of the primary ways that Intune provides mobile app security is through poli
 - Use Azure AD identity to isolate organization data from personal data. So personal information is isolated from organizational IT awareness. Data accessed using organization credentials are given additional security protection.
 - Help secure access on personal devices by restricting actions users can take with organizational data, such as copy-and-paste, save, and view.
 - Create and deploy on devices that are enrolled in Intune, enrolled in another mobile device management (MDM) service, or not enrolled in any MDM service. 
+
+> [!NOTE]
+> App protection policies are designed to apply uniformly across a group of apps, such as applying a policy across all Office mobile apps. 
 
 On enrolled devices, app protection policies can add an extra layer of protection. For example, a user signs in to a device with their organization credentials. Their organization identity allows access to data that's denied to their personal identity. As that organization data is used, app protection policies control how the data is saved and shared. When users sign in with their personal identity, those same protections (access and restrictions) aren't applied. In this way, IT has control of organization data, while end users maintain control and privacy over their personal data.
 
@@ -94,4 +97,3 @@ The Intune APP data protection framework is organized into three distinct config
 - **Enterprise high data protection** (Level 3) introduces advanced data protection mechanisms, enhanced PIN configuration, and APP Mobile Threat Defense. This configuration is desirable for users that are accessing high risk data.
 
 Each level has specific recommendations about how and what to set to meet each level of app protection.
-

@@ -52,6 +52,9 @@ You can also add an additional layer of protection to devices, such as:
 - **Multi-factor authentication** - Adding an extra layer of authentication to user sign-ins can help make devices even more secure. Many devices support multi-factor authentication that requires a second level of authentication, such as a phone call or text message, before users can gain access.
 - **Windows Hello for Business settings** - Windows Hello for Business is an alternative sign-in method that lets users use a *gesture*—such as a fingerprint or Windows Hello—to sign in without needing a password.
 
+> [!NOTE]
+> As part of protecting devices, you use Conditional Access. Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Later in this module we'll cover Conditional access.
+
 ### Software updates
 
 Intune can help you to secure your managed computers in a number of ways, including the management of software updates that keep your computers up-to-date by ensuring the latest patches and software updates are quickly installed. Software updates in Configuration Manager provides a set of tools and resources that can help manage the complex task of tracking and applying software updates to client computers in the enterprise. An effective software update management process is necessary to maintain operational efficiency, overcome security issues, and maintain the stability of the network infrastructure. However, because of the changing nature of technology and the continual appearance of new security threats, effective software update management requires consistent and continual attention. Both Intune and Configuration Manager can help you effectively update your organization's devices.

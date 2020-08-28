@@ -8,7 +8,7 @@ You can manage devices, apps, and data by using a cloud-based mobile device mana
 
 ## On-premises endpoint management
 
-By using an on-premises endpoint management solution, you can manage your on-premise Windows 10 devices, apps, and data. By restricting access and location, your environment is more secure. Your end users will not be able to access company apps and data using remote devices. If you only use an on-premises solution, those remote devices will not be protected as corporately recognized endpoints.
+By using an on-premises endpoint management solution, you can manage your on-premise Windows 10 devices, apps, data, and optimize downloads and content. By restricting access and location, your environment is more secure. Your end users will not be able to access company apps and data using remote devices. If you only use an on-premises solution, those remote devices will not be protected as corporately recognized endpoints. If you use Configuration Manager, you should attach your Configuration Manager deployment to the Microsoft 365 cloud (cloud attach), which will provide integration with Intune, Azure AD, Microsoft Defender ATP, and other cloud services.
 
 ## Cloud + on-premises endpoint management
 

@@ -5,9 +5,10 @@ Microsoft Endpoint Manager provides the services and tools you need in one locat
 Modern IT provides cloud intelligence at the core. Microsoft Endpoint Manager provides this modern management. Microsoft Endpoint Manager doesn't require you to make an either/or decision between on-prem and cloud management. You can do both, and modernize at your own pace, to manage risk in a smart way. To take advantage of the cloud and modern IT, but also give you the tools and capabilities to also manage your existing on-prem investments.
 
 Microsoft Endpoint Manager has the following attributes:
-- Secure and Intelligent
-- Streamlined and Flexible
-- Maximized Investment
+- Secure and intelligent
+- Streamlined and flexible
+- Maximized investment
+- Increased productivity
 
 ## Secure and Intelligent
 Endpoint manager provides native integration with cloud-powered security controls and risk-based conditional access for apps and data.
@@ -87,6 +88,10 @@ By using role-based administration, Graph API, PowerShell, and Cloud Content Opt
 - **Sophisticated PowerShell scripts to accomplish complex tasks easily**
 - **Cloud content optimization**
 - **Increased end user satisfaction through native platform experiences**
+
+## Increased productivity
+
+By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your end users to make them extremely productive. For instance, end users can automatically get their certs, WIFI profiles, and VPN settings without having to manually configure them. This allows end users be more productive because they don't have to do any manual configuration, but it also helps end users be protected because they have the right settings.
 
 ## Benefits of Co-Management
 

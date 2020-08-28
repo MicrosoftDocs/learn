@@ -1,6 +1,9 @@
 Before a device is enrolled with Intune or Configuration Manager, you may need to provision the device. Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. As part of the process, the individual user signs in to the device and steps through the process of connecting to your organization. You can either enroll the devices with Intune or Configuration Manager during the provisioning process or after, depending on the platform and your needs.
 
-Provisioning provides the following benefits:
+> [!IMPORTANT]
+> If you are familiar with provisioning and your organization currently uses image-based provisioning, where you get the devices and install specific configurations, you should consider modern provisions going forward.
+
+Modern provisioning provides the following benefits:
 - Decreases costly IT workload by autogenerating the creation of each device image
 - Provides self-service provisioning directly by end users
 - Provides faster time to productivity for end users

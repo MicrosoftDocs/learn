@@ -1,9 +1,11 @@
-Today, most companies are on the cloud. Software updates are needed continuously. Organizations often allow personal devices in the workplace. The majority of end users use mobile devices and apps for work-related activity. And, cybersecurity continues to be a growing concern when protecting corporate data. 
+Today, most companies are using cloud services of some kind. Software updates are needed continuously. Organizations often allow personal devices in the workplace. The majority of end users use mobile devices and apps for work-related activity. And, cybersecurity continues to be a growing concern when protecting corporate data. 
 
 ![Modern workplace technology trends](../media/intro-to-endpoint-manager-00.png)
 
 Technology needs are evolving in the modern workplace. IT is adapting to this evolving and changing modern workplace. These changes include the following:
-- End users that were using a single device are now using multiple devices.
+- End users and knowledge workers that were using a single device are now using multiple devices.
+- Shared devices, such as retail point of sale devices and ruggedized devices are becoming more common.
+- Specialized devices, such as digital interactive whiteboards, conference room devices, and holographic wearable computers are becoming more common.
 - Devices that were business owned are now both user and business owned.
 - End users that were solely using the corporate network with legacy apps are now using cloud managed and SaaS apps as well.
 - IT admins that were using manual processes are moving toward automated processes.
@@ -21,20 +23,23 @@ You can protect those resources and devices by using mobile device management (M
 An MDM or MAM solution must accomplish the following tasks:
 
 - Support a diverse mobile environment to securely manage iOS/iPadOS, Android, Windows, and macOS devices.
-- Make sure devices and apps are compliant with your organization's security requirements.
+- Make certain devices and apps are compliant with your organization's security requirements.
+- Ensure that all your corporate services are easily available to end users on all the devices they use.
 - Create and distribute digital policies that help keep your organization's data safe on organization-owned and personal devices.
+- Ensure that end users get the best possible experience based on first class support for all the products that they need to use, such as Office, Edge, and other products. 
 - Use a single, unified mobile solution to enforce these policies, and help manage devices, apps, users, and groups.
 - Protect your company information by helping to control the way your workforce accesses and shares its data.
 
-Microsoft Endpoint Manager combines these services and tools in one location. You may know and already be using these services and tools, including Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, co-management, and Windows Autopilot. These services are part of the Microsoft 365 stack of services to help protect your organization's endpoints, by securing access, protecting data, and responding to and managing risk.
+By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your end users to make them extremely productive. For instance, end users can automatically get their certs, WIFI profiles, and VPN settings without having to manually configure them. This allows end users be more productive because they don't have to do any manual configuration, but it also helps end users be protected because they have the right settings.
 
-<!-- https://docs.microsoft.com/mem/intune/fundamentals/what-is-intune#try-the-interactive-guide -->
+Microsoft Endpoint Manager combines these services and tools in one location. You may know and already be using these services and tools, including Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, co-management, and Windows Autopilot. These services are part of the Microsoft 365 stack of services to help protect your organization's endpoints, by securing access, protecting data, and responding to, as well as and managing risk.
 
 ## Learning objectives
 
 In this module, you will:
 
 - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
-- Learn about the different products and services that encompass Microsoft Endpoint Manager.
-- Consider the device types used by your organization and how they fit into your endpoint environment.
+- Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
+- Understand key endpoint management considerations, such as platform and provisioning.
+- Understand the management aspects and lifecycles of managed devices and apps.
 - Understand the benefits of Microsoft Endpoint Manager.

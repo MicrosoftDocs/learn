@@ -51,7 +51,7 @@ Many users ask when to use user groups and when to use device groups. The answer
 
 ### Device groups
 
-If you want to apply settings on a device, regardless of who's signed in, then assign your profiles to a devices group. Settings applied to device groups always go with the device, not the user.
+If you want to apply settings on a device, regardless of who's signed in, then assign your profiles to a devices group. Settings applied to device groups always go with the device, not the user. Device groups are commonly used for the shared and specialized devices.
 
 For example:
 - Device groups are useful for managing devices that don't have a dedicated user. For example, you have devices that print tickets, scan inventory, are shared by shift workers, are assigned to a specific warehouse, and so on. Put these devices in a devices group, and assign your profiles to this devices group.
@@ -62,7 +62,7 @@ To summarize, use device groups when you don't care who's signed in on the devic
 
 ### User groups
 
-Profile settings applied to user groups always go with the user, and go with the user when signed in to their many devices. It's normal for users to have many devices, such as a Surface Pro for work, and a personal iOS/iPadOS device. And, it's normal for a person to access email and other organization resources from these devices.
+Profile settings applied to user groups always go with the user, and go with the user when signed in to their many devices. It's normal for users to have many devices, such as a Surface Pro for work, and a personal iOS/iPadOS device. And, it's normal for a person to access email and other organization resources from these devices. User groups are typically used for information works and knowledge workers.
 
 For example:
 - You want to put a Help Desk icon for all users on all their devices. In this scenario, put these users in a user group, and assign your Help Desk icon profile to this user group.
