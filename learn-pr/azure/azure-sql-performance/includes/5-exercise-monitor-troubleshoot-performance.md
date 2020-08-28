@@ -308,7 +308,7 @@ Let's use one other method to view the resource usage of our workload. Azure Mon
 
     Notice in this example, the CPU utilization is near 100 percent for a recent time range. This chart shows resource usage (CPU and I/O are the defaults) over the last hour, and it's refreshed continually. If you select the chart, you can customize it and look at other resource usage.
 
-1. On the **Resource** menu, select **Metrics**. There's another way to see the same compute utilization metrics and other metrics automatically collected by Azure Monitor for Azure SQL Database. In the Azure portal, from the **Resources** pane, under **Monitoring**, use **Metrics Explorer**. (Note that **Compute Utilization** is a just a pre-defined view of the **Metrics Explorer**.). If you select **Metrics**, you'll see the following results:
+1. On the **Resource** menu, select **Metrics**. There's another way to see the same compute utilization metrics and other metrics automatically collected by Azure Monitor for Azure SQL Database. In the Azure portal, from the **Resources** pane, under **Monitoring**, use **Metrics Explorer**. (Note that **Compute Utilization** is just a pre-defined view of the **Metrics Explorer**.) If you select **Metrics**, you'll see the following results:
 
     :::image type="content" source="../media/5-azure-monitor-metrics.png" alt-text="Screenshot of Azure Monitor metrics.":::
 
