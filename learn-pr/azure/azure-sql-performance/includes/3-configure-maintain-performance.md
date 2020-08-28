@@ -31,7 +31,7 @@ SQL Server professionals often use files and filegroups to improve I/O performan
 
 Azure SQL Database only has one database file (Hyperscale typically has several), and the maximum size is configured through Azure interfaces. There's no functionality to create additional files.
 
-Azure SQL Managed Instance supports adding database files and configuring sizes but not physical placement of files. The number of files and file sizes for SQL Managed Instance can be used to improve I/O performance. In addition, user defined filegroups are supported for SQL Managed Instance for manageability purposes.
+Azure SQL Managed Instance supports adding database files and configuring sizes but not physical placement of files. The number of files and file sizes for SQL Managed Instance can be used to improve I/O performance. In addition, user-defined filegroups are supported for SQL Managed Instance for manageability purposes.
 
 ## MAXDOP configuration
 
@@ -44,7 +44,7 @@ Max degree of parallelism (MAXDOP) can affect the performance of individual quer
 
 ## Resource Governor
 
-Resource Governor is a feature in SQL Server that you can use to control resource usage for workloads through I/O, CPU, and memory. Note that for user defined workload groups and pools, Resource Governor is supported for SQL Managed Instance, but not supported for Azure SQL Database.
+Resource Governor is a feature in SQL Server that you can use to control resource usage for workloads through I/O, CPU, and memory. Note that for user-defined workload groups and pools, Resource Governor is supported for SQL Managed Instance, but not supported for Azure SQL Database.
 
 ## Index maintenance
 
