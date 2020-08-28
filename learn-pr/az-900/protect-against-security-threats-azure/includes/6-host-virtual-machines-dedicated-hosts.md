@@ -14,7 +14,7 @@ Azure Dedicated Host:
 
 After a dedicated host is provisioned, Azure assigns it to the physical server in Microsoft's cloud datacenter.
 
-For high availability, you can provision multiple hosts in a *host group* and deploy your virtual machines across this group. VMs on dedicated hosts can also take advantage of *maintenace control*, which enables you to control when regular maintenance updates occur, within a 35 day rolling window.
+For high availability, you can provision multiple hosts in a *host group* and deploy your virtual machines across this group. VMs on dedicated hosts can also take advantage of *maintenance control*, which enables you to control when regular maintenance updates occur, within a 35 day rolling window.
 
 ## Pricing considerations
 
