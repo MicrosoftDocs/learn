@@ -25,7 +25,7 @@ The key in an Azure Table Storage table comprises two elements; the partition ke
 
 This scheme enables an application to quickly perform *Point queries* that identify a single row, and *Range queries* that fetch a contiguous block of rows in a partition. 
 
-In a point query, when an application retrieves a single row, the partition key enables Azure to quickly home in on the correct partition, and the row key lets Azure identify the row in that partition. You might have hundreds of millions of rows, but if you've defined the partition and row keys carefully when you designed your application, data retrieval can be very quick. The partition key and row key effectively define a clustered index over the data.
+In a point query, when an application retrieves a single row, the partition key enables Azure to quickly hone in on the correct partition, and the row key lets Azure identify the row in that partition. You might have hundreds of millions of rows, but if you've defined the partition and row keys carefully when you designed your application, data retrieval can be very quick. The partition key and row key effectively define a clustered index over the data.
 
 > [!div class="mx-imgBorder"]
 > ![Image showing how a point query is performed against a table](../media/2-table-point-query.png)
@@ -45,7 +45,7 @@ Azure Table Storage tables are schemaless. It's easy to adapt your data as the n
 The primary advantages of using Azure Table Storage tables over other ways of storing data include:
 
 - It's simpler to scale. It takes the same time to insert data in an empty table, or a table with billions of entries. An Azure storage account can hold up to 500 TB of data. 
-- A table can hold unstructured and semi-structured data
+- A table can hold semi-structured data
 - There's no need to map and maintain the complex relationships typically required by a normalized relational database.
 - Row insertion is fast
 - Data retrieval is fast, if you specify the partition and row keys as query criteria
@@ -59,7 +59,7 @@ There are disadvantages to storing data this way though, including:
 Azure Table Storage is an excellent mechanism for:
 
 - Storing TBs of structured data capable of serving web scale applications. Examples include product catalogs for eCommerce applications, and customer information, where the data can be quickly identified and ordered by a composite key. In the case of a product catalog, the partition key could be the product category (such as footwear), and the row key identifies the specific product in that category (such as climbing boots).
-- Storing datasets that don't require complex joins, foreign keys, or stored procedures, and that can be denormalized for fast access. In an IoT system, you might use Azure Table Storage to capture device sensor data. Each device could have its own partition, and the data could be ordered by the data and time each measurement was captured.
+- Storing datasets that don't require complex joins, foreign keys, or stored procedures, and that can be denormalized for fast access. In an IoT system, you might use Azure Table Storage to capture device sensor data. Each device could have its own partition, and the data could be ordered by the date and time each measurement was captured.
 - Capturing event logging and performance monitoring data. Event log and performance information typically contain data that is structured according to the type of event or performance measure being recorded. The data could be partitioned by event or performance measurement type, and ordered by the date and time it was recorded. Alternatively, you could partition data by date, if you need to analyze an ordered series of events and performance measures chronologically. If you want to analyze data by type and date/time, then consider storing the data twice, partitioned by type, and again by date. Writing data is fast, and the data is static once it has been recorded.
 
 Azure Table Storage is intended to support very large volumes of data, up to several hundred TBs in size. As you add rows to a table, Azure Table Storage automatically manages the partitions in a table and allocates storage as necessary. You don't need to take any additional steps yourself.
@@ -82,7 +82,7 @@ The simplest way to create a table in Azure Table Storage is to use the Azure po
 3. On the **New** page, select **Storage account - blob, file, table, queue**
 
     > [!div class="mx-imgBorder"]
-    > ![Image of the **New** page in the Azure portal. The user has selected **Storage account - blob, file, table, queue**](../media/2-create-storage.png)
+    > ![Image of the **New** page in the Azure portal. The user has selected **Storage account**](../media/2-create-storage.png)
 
 4. On the **Create storage account** page, enter the following details, and then select **Review + create**.
 
