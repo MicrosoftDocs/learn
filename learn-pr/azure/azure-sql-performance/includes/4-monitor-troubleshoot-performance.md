@@ -69,7 +69,7 @@ These DMVs provide deeper insight into resource limits and resource governance f
 
 ## Extended events details
 
-The extended events feature is the tracing mechanism for SQL Server. Extended events for Azure SQL is based on the SQL Server engine, and therefore is the same for Azure SQL, with a few notable differences. The next sections cover these differences.
+The extended events feature is the tracing mechanism for SQL Server. Extended events for Azure SQL are based on the SQL Server engine, and therefore is the same for Azure SQL, with a few notable differences. The next sections cover these differences.
 
 ### Extended events for Azure SQL Database
 
