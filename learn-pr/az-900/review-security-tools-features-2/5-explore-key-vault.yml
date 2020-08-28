@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.review-security-tools-features.explore-key-vault
-title: Explore Key Vault
+title: Store and manage secrets by using Azure Key Vault
 metadata:
-  title: Explore Key Vault
-  description: "Explore Key Vault"
-  ms.date: 07/05/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: "Learn how Azure Key Vault stores your applications' secrets, such as passwords, encryption keys, and certificates, in a single, central location."
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/5-explore-key-vault.md)]

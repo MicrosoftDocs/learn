@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.review-security-tools-features.walkthrough-implement-azure-key-vault
-title: Walkthrough - Implement Azure Key Vault
+title: Exercise - Manage a password in Azure Key Vault
 metadata:
-  title: Walkthrough - Implement Azure Key Vault
-  description: "Walkthrough - Implement Azure Key Vault"
-  ms.date: 07/05/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how to add secrets to and read secrets from Azure Key Vault.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
-durationInMinutes: 5
+interactive: bash
+durationInMinutes: 10
 content: |
   [!include[](includes/6-walkthrough-implement-azure-key-vault.md)]

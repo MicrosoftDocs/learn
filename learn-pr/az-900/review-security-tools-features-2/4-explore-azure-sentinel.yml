@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.review-security-tools-features.explore.azure.sentinel
-title: Explore Azure Sentinel
+title: Detect and respond to security threats by using Azure Sentinel
 metadata:
-  title: Explore Azure Sentinel
-  description: "Explore Azure Sentinel"
-  ms.date: 07/05/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how Azure Sentinel aggregates security data from many different sources and provides additional capabilities for threat detection and response.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 3
 content: |
   [!include[](includes/4-explore-azure-sentinel.md)]
