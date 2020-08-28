@@ -15,7 +15,7 @@ Here are additional resources to help you go further.
 
 ### Azure Security Center
 
-Take the [Resolve security threats with Azure Security Center](https://docs.microsoft.com/en-us/learn/modules/resolve-threats-with-azure-security-center/?azure-portal=true) module to use the alert capabilities of Azure Security Center to watch for and respond to threats.
+Take the [Resolve security threats with Azure Security Center](https://docs.microsoft.com/learn/modules/resolve-threats-with-azure-security-center/?azure-portal=true) module to use the alert capabilities of Azure Security Center to watch for and respond to threats.
 
 Then review the [planning and operations guide](https://docs.microsoft.com/azure/security-center/security-center-planning-and-operations-guide?azure-portal=true) to optimize your use of Security Center based on your organization's security requirements and cloud management model.
 
