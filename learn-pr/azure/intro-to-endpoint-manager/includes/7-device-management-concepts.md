@@ -53,7 +53,7 @@ You can also add an additional layer of protection to devices, such as:
 - **Windows Hello for Business settings** - Windows Hello for Business is an alternative sign-in method that lets users use a *gesture*—such as a fingerprint or Windows Hello—to sign in without needing a password.
 
 > [!NOTE]
-> As part of protecting devices, you use Conditional Access. Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Later in this module we'll cover Conditional access.
+> As part of protecting devices, you use Conditional Access. Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Later in this module we'll cover Conditional Access.
 
 ### Software updates
 

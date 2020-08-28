@@ -17,7 +17,6 @@ The Microsoft Endpoint Manager console helps keep your organization's cloud and 
 > [!IMPORTANT]
 > If you already have Microsoft Intune or Microsoft Endpoint Configuration Manager you already have Microsoft Endpoint Manager. These are all now one management system.
 
-
 ![Diagram of Microsoft Endpoint Manager](../media/intro-to-endpoint-manager-01.png)
 
 To quickly step through the areas of Microsoft Endpoint Manager, see [Tutorial: Walkthrough Intune in Microsoft Endpoint Manager](https://docs.microsoft.com/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager).
@@ -42,8 +41,8 @@ There are two steps to cloud attach your on-premises devices. The first step of 
 
 #### Tenant attach
 
-Tenant attach allows you to recognize your Configuration Manager devices and infrastructure by the Intune cloud service and take actions from Microsoft Endpoint Manager. Once you connect Configuration Manager you gain instant cloud value. Configuration Manager uses the Configuration Manager connector to enable data flow to Microsoft Endpoint Manager. It  requires a connection to an Intune tenant, and doesn't require turning on co-management.
-- 
+Tenant attach allows you to recognize your Configuration Manager devices and infrastructure by the Intune cloud service and take actions from Microsoft Endpoint Manager. Once you connect Configuration Manager you gain instant cloud value. Configuration Manager uses the Configuration Manager connector to enable data flow to Microsoft Endpoint Manager. It requires a connection to an Intune tenant, and doesn't require turning on co-management.
+
 #### Co-management
 
 Co-management is where you concurrently manage Windows 10 devices with both Configuration Manager and Microsoft Intune. It combines your existing on-premises Configuration Manager and Active Directory investment with the cloud by using Intune, Azure AD, and other Microsoft 365 cloud services. You choose whether Configuration Manager or Intune is the management authority. You keep some tasks on-premises, while running other tasks in the cloud with Intune.
@@ -61,7 +60,7 @@ When you enroll existing Configuration Manager clients in co-management, you gai
 
 In the following diagram, you can see how Windows 10 devices can be manged with both Configuration Manager and Microsoft Intune:
 
-![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-09.svg)
+![Diagram of cloud and on-premises infrastructure](../media/intro-to-endpoint-manager-09.png)
 
 ## Desktop Analytics
 
