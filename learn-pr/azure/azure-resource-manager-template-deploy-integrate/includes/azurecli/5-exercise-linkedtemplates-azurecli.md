@@ -29,7 +29,8 @@
 
   And use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
-  > [!NOTE] Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer)** Azure CLI command.
+  > [!NOTE]
+  > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer)** Azure CLI command.
 
   ```azurecli
   az configure --defaults group={Resource Group Name}
@@ -44,27 +45,27 @@ In this exercise, we will review and deploy a template that includes two linked 
     - "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json"
     - "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
 
-  Review the template and note the **"type": "Microsoft.Resources/deployments"** sections that define where and how the linked templates will be deployed.
+    Review the template and note the **"type": "Microsoft.Resources/deployments"** sections that define where and how the linked templates will be deployed.
 
-  The fist linked template deploys a storage account.  it consumes the parent parameters and deploys the storage template.
+    The fist linked template deploys a storage account.  it consumes the parent parameters and deploys the storage template.
 
-  The second linked template is configured to depend on the storage deployment, and to deploy a virtual network template.
+    The second linked template is configured to depend on the storage deployment, and to deploy a virtual network template.
 
-  ```json
-  {
-  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
-  "parameters": {
-      "name": {
-          "type": "string",
-          "defaultValue": "linkeddemo001"
-      }
-  },
-  "variables": {
-      "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json",
-      "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
-  },
-  "resources": [
+    ```json
+    {
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "name": {
+            "type": "string",
+            "defaultValue": "linkeddemo001"
+        }
+    },
+    "variables": {
+        "linked-template": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-storage-account-create/azuredeploy.json",
+        "linked-template-2": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
+    },
+    "resources": [
       {
           "name": "storage",
           "type": "Microsoft.Resources/deployments",
@@ -95,10 +96,10 @@ In this exercise, we will review and deploy a template that includes two linked 
               }
           }
       }
-  ],
-  "outputs": {}
-  }
-  ```
+    ],
+    "outputs": {}
+    }
+    ```
 
 1. To get started copy and paste the content of the following template code, into a file in a local directory.  **C:\JSON\linkedtemplate.json** or **/mnt/c/Users/<UserName>/json/linkedtemplate.json** for example.
 
