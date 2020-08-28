@@ -29,5 +29,5 @@ NAT Gateway: <https://docs.microsoft.com/azure/virtual-network/nat-gateway-resou
 <https://docs.microsoft.com/azure/firewall/overview>
 
 # Encyption
-To enable ExpressRoute direct with MACSec, follow the guidance here: <https://docs.microsoft.com/en-us/azure/expressroute/expressroute-howto-macsec>
+To enable ExpressRoute direct with MACSec, follow the guidance here: <https://docs.microsoft.com/azure/expressroute/expressroute-howto-macsec>
 

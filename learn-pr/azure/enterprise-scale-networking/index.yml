@@ -18,7 +18,7 @@ abstract: |
 4. Determine how to connect to Azure
 5. Determine how to connect to the public Internet
 6. Determine how to connect to PaaS services
-prerequisites:
+prerequisites: | 
 Understanding of networking principles and Azure networking.
 iconUrl: http://via.placeholder.com/120x120
 levels:
