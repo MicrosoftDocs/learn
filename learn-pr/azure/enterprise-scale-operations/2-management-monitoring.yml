@@ -26,8 +26,8 @@ quiz:
       explanation: 'A single Log Analytics workspace is recommended for platform log data when not constrained by sovereignty requirements.'
     - content: '3'
       isCorrect: false
-      explanation: 'Explanation 3'
+      explanation: 'A single Log Analytics workspace is recommended for platform log data when not constrained by sovereignty requirements.'
     - content: '4'
       isCorrect: false
-      explanation: 'Explanation 4'
+      explanation: 'A single Log Analytics workspace is recommended for platform log data when not constrained by sovereignty requirements.'
 
