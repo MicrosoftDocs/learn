@@ -59,8 +59,3 @@ Ask basic security questions during the Azure AD design phase, such as how your 
 ***Considerations***
 
 - Multiple Azure AD tenants can function in the same enrollment.
-
-## Exercise
-
-- Define number of tenants
-- Define Azure enrollment group hierarchy

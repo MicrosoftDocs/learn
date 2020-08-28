@@ -84,7 +84,3 @@ Cost transparency across a technical estate is a critical management challenge f
 - Potential need for chargeback models where shared platform as a service (PaaS) resources are concerned, such as Azure App Service Environment and Azure Kubernetes Service, which might need to be shared to achieve higher density.
 - Use a shutdown schedule for nonproduction workloads to optimize costs.
 - Use Azure Advisor to check cost optimization recommendations.
-
-## Exercise
-
-- Define management group hierarchy
