@@ -4,9 +4,9 @@ Learn how to operationalize an Azure enterprise estate using centralized managem
 
 In this module, you will:
 
-1. Learn how to implement Enterprise Scale management and monitoring strategy
-1. Design platform-level BCDR capabilities to meet application requirements
-1. Determine plan for implementing a secure and compliant platform
+- Learn how to implement Enterprise Scale management and monitoring strategy
+- Design platform-level BCDR capabilities to meet application requirements
+- Determine plan for implementing a secure and compliant platform
 
 ## Prerequisites
 
