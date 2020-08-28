@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.protect-against-security-threats-azure.explore.3-detect-respond-threats-sentinel
+uid: learn.protect-against-security-threats-azure.3-detect-respond-threats-sentinel
 title: Detect and respond to security threats by using Azure Sentinel
 metadata:
   description: Learn how Azure Sentinel aggregates security data from many different sources and provides additional capabilities for threat detection and response.
