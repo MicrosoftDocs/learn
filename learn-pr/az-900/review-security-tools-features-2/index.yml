@@ -1,26 +1,27 @@
 ### YamlMime:Module
 uid: learn.review-security-tools-features
 metadata:
-  title: Review security tools and features
-  description: "Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. This module will help you understand the core security tools available to support you. AZ-900"
-  ms.date: 07/05/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how Azure can help you protect the workloads you run both in the cloud and in your on-premises datacenter.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Review security tools and features
-summary: Discuss the basic concepts for protecting your infrastructure and data when you work in the cloud. This module will help you understand the core security tools available to support you.
-abstract: |
-  After completing this module, you will be able to:
-   - Describe Azure Security Center.
-   - Describe Azure Sentinel.
-   - List the capabilities of Azure Key Vault.
-   - Describe Azure Dedicated Hosts.
+summary: |
+  Having a good security strategy is essential in today's digital world.
 
+  Learn how Azure can help you protect the workloads you run both in the cloud and in your on-premises datacenter.
+abstract: |
+  After completing this module, you'll be able to:
+
+  * Strengthen your security posture and protect against threats by using Azure Security Center.
+  * Aggregate and act on security data from many different sources by using Azure Sentinel.
+  * Store and access sensitive information such as passwords and encryption keys securely in Azure Key Vault.
+  * Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
 prerequisites: |
-  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
-iconUrl: /learn/achievements/review-security-tools-features.svg
-hidden: true
+  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
+iconUrl: /learn/achievements/r3view-security-tools-features.svg
 levels:
 - beginner
 roles:
