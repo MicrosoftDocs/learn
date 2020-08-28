@@ -12,7 +12,7 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
     ```
 
-1. Next, run the following commands in the Azure Cloud Shell on the right. Fill in a complex password and, when prompted, enter your local public IP address you retrieved.
+1. Next, run the following commands in Azure Cloud Shell on the right. Fill in a complex password and, when prompted, enter your local public IP address you retrieved.
 
     ```powershell
     $adminSqlLogin = "cloudadmin"
@@ -88,7 +88,7 @@ This script takes 3-5 minutes to complete. Make sure to note your password, uniq
 
 1. On your local device, open SQL Server Management Studio (SSMS) and create a new connection to your logical server.  
 
-    For server name, input the name of your Azure SQL Database logical server that was shown from the Cloud Shell. For example: *aw-server`<unique ID>`.database.windows.net*.
+    For server name, input the name of your Azure SQL Database logical server that was shown from Cloud Shell. For example: *aw-server`<unique ID>`.database.windows.net*.
 
     Change the authentication to **SQL Server Authentication**, and input the corresponding sign-in and password you provided for the script.  
 
