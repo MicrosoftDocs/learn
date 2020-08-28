@@ -1,4 +1,4 @@
-You've been responsible for getting your SQL Server fast, keeping it fast, and making it fast again when something is wrong. In this module, we'll show you how to use your existing performance skills, processes, and tools to apply them to Azure SQL. This includes taking advantage of the intelligence in Azure to deliver consistent performance for your application.
+You've been responsible for getting your SQL Server instance fast, keeping it fast, and making it fast again when something is wrong. In this module, we'll show you how to use your existing performance skills, processes, and tools to apply them to Azure SQL. This includes taking advantage of the intelligence in Azure to deliver consistent performance for your application.
 
 ## Learning objectives
 
