@@ -1,9 +1,9 @@
 Contoso has been emailing you repeatedly about its costs in recent weeks. You decided it would be best to allow Contoso to see and manage its own costs in the Azure portal. 
 
-Contoso has already been onboarded to the Microsoft Customer Agreement. You can now turn on a policy to allow Contoso to view its Azure consumption costs computed at pay-as-you-go retail rates. The same rates are shown in the Azure pricing calculator. Enabling the policy will keep Fabrikam's discounted costs hidden from Contoso while giving Contoso the capability to control its Azure spending.
+Contoso has already been onboarded to the Microsoft Customer Agreement. You can now turn on a policy to allow Contoso to view its Azure consumption costs computed at pay-as-you-go retail rates. The same rates are shown in the Azure Pricing Calculator. Enabling the policy will keep Fabrikam's discounted costs hidden from Contoso while giving Contoso the capability to control its Azure spending.
 
 > [!NOTE]
-> The price displayed to customers is the retail price in the pricing calculator. It doesn't include the partner earned credit, global Azure service discounts, the tier, and other discounts that are issued only to the partner.
+> The price displayed to customers is the retail price in the Pricing Calculator. It doesn't include the partner earned credit, global Azure service discounts, the tier, and other discounts that are issued only to the partner.
 
 When you make cost visible for Contoso, any user with Azure Resource Manager access to Contoso's subscription can manage and analyze costs at pay-as-you-go rates. Both Fabrikam resellers and Contoso employees who have the appropriate role-based access control (RBAC) access to the Azure subscriptions can view costs.
 
