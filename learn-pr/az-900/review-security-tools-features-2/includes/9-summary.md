@@ -1,10 +1,29 @@
-Azure has out-of-the-box help for a great deal of the security issues we face. One of the first steps we should take is assessing how much help from Azure we can use based on whether we're leveraging IaaS, PaaS, or SaaS.
+Tailwind Traders faces a number of security challenges. But in today's digital world, their needs aren't unique.
 
-Azure Security Center centralizes much of the help Azure has to offer. It provides a single dashboard, with a view into many of your services, and helps make sure you are following best practices. Continuously updated machine learning algorithms help identify whether the latest threats are aimed at your resources. And it helps your organization mitigate threats.
+Luckily, Azure provides a number of tools and services that can help you detect and act on important security events. It also provides ways to help keep your data safe, which can prevent security incidents from happening to begin with.
 
-This module is only introductory. Security is a deep and complex topic, so whatever your cloud approach, an ongoing security education is necessary. However, this module should get you started in the right direction.  We explored:
+In this module, you learned about a number of Azure services that relate to security. Here's a brief summary:
 
-+ Azure Security Center.
-+ Azure Key Vault.
-+ Azure Information Protection.
-+ Azure Threat Protection.
+* Azure Security Center provides visibility of your security posture across all of your services, both on Azure and on-premises.
+* Azure Sentinel aggregates security data from many different sources and provides additional capabilities for threat detection and response.
+* Azure Key Vault stores your applications' secrets, such as passwords, encryption keys, and certificates, in a single, central location.
+
+## Learn more
+
+Here are additional resources to help you go further.
+
+### Azure Security Center
+
+Take the [Resolve security threats with Azure Security Center](https://docs.microsoft.com/en-us/learn/modules/resolve-threats-with-azure-security-center/?azure-portal=true) module to use the alert capabilities of Azure Security Center to watch for and respond to threats.
+
+Then review the [planning and operations guide](https://docs.microsoft.com/azure/security-center/security-center-planning-and-operations-guide?azure-portal=true) to optimize your use of Security Center based on your organization's security requirements and cloud management model.
+
+### Azure Sentinel
+
+[Design a holistic monitoring strategy on Azure](https://docs.microsoft.com/learn/modules/design-monitoring-strategy-on-azure/?azure-portal=true) goes into greater depth on how Azure Sentinel can help monitor and respond to security threats across your organization.
+
+Also learn how to [connect data sources](https://docs.microsoft.com/azure/sentinel/connect-data-sources?azure-portal=true) to Azure Sentinel.
+
+### Azure Key Vault
+
+Gain additional hands-on experience with Azure Key Vault in [Manage secrets in your server apps with Azure Key Vault](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/?azure-portal=true) and [Configure and manage secrets in Azure Key Vault](https://docs.microsoft.com/learn/modules/configure-and-manage-azure-key-vault?azure-portal=true).

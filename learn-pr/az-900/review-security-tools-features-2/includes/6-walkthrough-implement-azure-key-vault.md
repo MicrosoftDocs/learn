@@ -1,58 +1,99 @@
-In this walkthrough, we will create an Azure Key vault and then create a password secret within that key vault, providing a securely stored, centrally managed password for use with applications.
+In this exercise, you add a password to Azure Key Vault. A password is an example of sensitive information that you need to protect. You then read the password from Azure Key Vault to verify that the password is accessible.
 
-## Task 1: Create an Azure Key Vault
+In practice, there are several ways to add secrets to and read secrets from Key Vault. These include the Azure portal, the Azure CLI, and Azure PowerShell. By using your favorite programming language, your applications can also securely access the secrets that they need.
 
-1. Sign in to the [Azure portal (https://portal.azure.com)](https://portal.azure.com?azure-portal=true).
+Here, you create a secret in Key Vault by using the Azure portal. You then access the secret from the portal and from the Azure CLI in Azure Cloud Shell. 
 
-2. From the **All services** blade, search for and select **Key vaults**, then select **+ Add**.
+The Azure CLI as a way to work with Azure resources from the command line or from scripts. Cloud Shell is a browser-based shell experience to manage and develop Azure resources. Think of Cloud Shell as an interactive console that runs in the cloud.
 
-3. Configure the key vault (replace **xxxx** in the name of the key vault with letters and digits such that the name is globally unique). Leave the defaults for everything else.
+## Create a Key Vault
 
-    | Setting | Value | 
-    | --- | --- |
-    | Subscription | **Use your subscription** |
-    | Resource group | **myRGKV** (create new) |
-    | Key vault name | **keyvaulttestxxx** |
-    | Location | **East US** |
-    | Pricing tier | **Standard** |
-    | | |
+1. Go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
+1. From the search bar, enter _Key Vault_. Then select **Key Vault** from the results.
+1. On the **Key Vault** pane, select **Create**.
+1. On the **Create key vault** pane, fill in these settings:
 
-4. Click **Review + create**, and then click **Create**. 
-
-5. Once the new key vault is provisioned, click **Go to resource**. Or you can locate your new key vault by searching for it. 
-
-6. Click on the key vault **Overview** tab and examine of the **DNS name**. Applications that use your vault through the REST API will need this URI.
-
-7. Take a moment to browse through some of the other key vault options. Under **Settings** review **Keys**, **Secrets**, **Certificates**, **Access Policies**, **Firewalls and virtual networks**.
     > [!NOTE]
-    > Your Azure account is the only one authorized to perform operations on this new vault. You can modify this if you wish in the **Settings** and then the **Access policies** section.
+    > Replace **NNN** with a series of numbers. This helps ensure that your Key Vault name is unique.
 
+    | Setting | Value |
+    | --- | --- |
+    | Subscription | **Concierge Subscription** |
+    | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+    | Key vault name | *my-kv-NNN* |
 
+    Leave the other settings at their current values.
+1. Select **Review + create**, then select **Create**.
 
-## Task 2: Add a secret to the Key Vault
-        
-In this task, we will add a password to the key vault. 
+    Wait for the creation process to finish.
 
-1. Under **Settings** click **Secrets**, then click **+ Generate/Import**.
+1. Select **Go to resource**.
+1. Note some of the details about your Key Vault.
 
-2. Configure the secret. Leave the other values at their defaults. Notice you can set an activation and expiration date. Notice you can also disable the secret.
+    For example, the **DNS name** field shows the URI your application can use to access your vault from the REST API. Here's an example for a Key Vault that's named **my-kv-1234**:
 
-    | Setting | Value | 
+    :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="TODO":::
+
+1. As an optional step, under **Settings**, examine some of the other settings.
+
+    Although they're initially empty, here you'll find places where you can store keys, secrets, and certificates.
+
+    > [!NOTE]
+    > Your Azure subscription is the only one that's authorized to access this vault. Under **Settings**, the **Access policies** section enables you to configure access to the vault.
+
+## Add a password to the Key Vault
+
+Here, you add a password to your Key Vault.
+
+1. Under **Settings**, select **Secrets**, then select **Generate/Import**.
+1. On the **Create a secret** pane, fill in these settings:
+
+    | Setting | Value |
     | --- | --- |
     | Upload options | **Manual** |
-    | Name | **ExamplePassword** |
+    | Name | **MyPassword** |
     | Value | **hVFkk96** |
-    | | |
 
-3. Click **Create**.
+    Leave the other settings at their default values. But notice that you can specify properties such as the activation date and the expiration date. You can also disable access to the secret.
 
-4. Once the secret has been successfully created, click on the **ExamplePassword**, and confirm it has a status of **Enabled**
+1. Select **Create**.
 
-5. Click the current version, and confirm the the **Secret Identifier**. This is the url value that you can now use with applications. It provides a centrally managed and securely stored password.
+## Show the password
 
-6. Click the button **Show Secret Value**, to display the password you specified earlier.
+Here, you access the password from Key Vault two times. First, you access it from the Azure portal. Then you access it from the Azure CLI.
 
-Congratulations! You have created an Azure Key vault and then created a password secret in that key vault, providing a securely stored, centrally managed password for use with applications.
+1. From your Key Vault, select **MyPassword**.
 
-> [!NOTE]
-> To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
+    You see that the current version is enabled.
+
+1. Select the current version.
+
+    Under **Secret Identifier**, you see a URI that you can now use with applications to access the secret. Remember, only authorized applications will be able to access this secret.
+
+1. Select **Show Secret Value**.
+
+    :::image type="content" source="../media/5-portal-secret-value.png" alt-text="TODO":::
+
+1. From the Cloud Shell pane to the side of the screen, run this command:
+
+    > [!NOTE]
+    > If you're not familiar with the Azure CLI, just follow along.
+
+    ```azurecli
+    az keyvault secret show \
+      --name "MyPassword" \
+      --vault-name $(az keyvault list --query [0].name --output tsv) \
+      --query value \
+      --output tsv
+    ```
+
+    You see the password in the output:
+
+    ```output
+    hVFkk96
+    ```
+
+Good work! At this point, you have a Key Vault that contains a password secret that's securely stored for use with your applications.
+
+[!include[](../../../includes/azure-sandbox-cleanup.md)]
