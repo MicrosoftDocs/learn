@@ -20,17 +20,17 @@ The billing account represents the root node of Fabrikam's presence within Azure
 
 - **Consumption-based costs**: Invoice costs are available in Azure Cost Management only for customers on the Azure plan under the Microsoft Customer Agreement. An example of a consumption-based product is a virtual machine that has been created for Contoso and is billed hourly.
 - **Purchase-based costs**: Invoice costs are available in Azure Cost Management for customers on the Azure plan for both the Microsoft Customer Agreement and the classic CSP agreement.
-- **Currency**: Regardless of different customer-billed currencies, budgets set at the scope of billing account are evaluated in US dollars across your customers, subscriptions, resources, and resource groups.
+- **Currency**: Regardless of different customer-billed currencies, budgets set at the billing account scope are evaluated in US dollars across your customers, subscriptions, resources, and resource groups.
 
 ### Billing profile
 
-The scope of billing profile defines subscriptions shown on invoices that Fabrikam receives. The invoices are billed against the scope. After you onboard Fabrikam's customers to a Microsoft Customer Agreement, you receive an invoice. It includes all charges for all products (consumption, purchases, and entitlements) for the customers on the Azure plan under the Microsoft Customer Agreement.
+The billing profile scope defines subscriptions shown on invoices that Fabrikam receives. The invoices are billed against the scope. After you onboard Fabrikam's customers to a Microsoft Customer Agreement, you receive an invoice. It includes all charges for all products (consumption, purchases, and entitlements) for the customers on the Azure plan under the Microsoft Customer Agreement.
 
-Use the scope of billing profile to view pretax costs in the invoiced currency across all your customers for all products and subscriptions included in an invoice. We'll discuss how to analyze your invoice in more detail in the next unit.
+Use the billing profile scope to view pretax costs in the invoiced currency across all your customers for all products and subscriptions included in an invoice. We'll discuss how to analyze your invoice in more detail in the next unit.
 
 Note the cost differences viewed at this scope:
 
-- **Currency**: Currently, the invoiced currency is the default currency when you're viewing costs in the scope of billing profile. Budgets set at this scope are in the invoiced currency.
+- **Currency**: Currently, the invoiced currency is the default currency when you're viewing costs in the billing profile scope. Budgets set at this scope are in the invoiced currency.
 - **CSP offer charges**: When billed in the same currency, these invoices also include the charges for entitlement and purchased products such as software as a service (SaaS), Azure Marketplace, and reservations for Fabrikam's customers who are still in the classic CSP agreement.
 
 ### Customer
