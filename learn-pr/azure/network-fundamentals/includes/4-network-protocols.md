@@ -32,7 +32,7 @@ A datagram is considered the same as a data packet. Datagrams commonly refer to 
 
 ### What is routing?
 
-Routing, in the context of networks, refers to the mechanism used to make sure that data packets follow the correct delivery path between the sending and receiving device on a network.
+Routing, in the context of networks, refers to the mechanism used to make sure that data packets follow the correct delivery path between the sending and receiving devices on different networks.
 
 For example, think about the PC you're using and the server that's serving the page you're currently reading. Multiple networks might connect your PC and the server, and various paths might be available between these two devices.
 
