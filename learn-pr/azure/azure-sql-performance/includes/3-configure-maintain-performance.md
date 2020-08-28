@@ -23,11 +23,11 @@ Currently, the tempdb metadata optimization feature in SQL Server 2019, which ca
 
 Commonly, you configure a database with the T-SQL ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION statements. Many of the configuration options for performance are available for Azure SQL. Consult the ALTER DATABASE and ALTER DATABASE SCOPED CONFIGURATION T-SQL reference for the differences between SQL Server, Azure SQL Database, and Azure SQL Managed Instance.
 
-For performance, one option that you can't change is the recovery model of the database. The default is full recovery. This ensures your database can meet Azure service level agreements (SLAs). Therefore, minimal logging for bulk operations isn't supported. Minimal logging for bulk operations is supported for tempdb.
+For performance, one option that you can't change is the recovery model of the database. The default is full recovery. This ensures your database can meet Azure service-level agreements (SLAs). Therefore, minimal logging for bulk operations isn't supported. Minimal logging for bulk operations is supported for tempdb.
 
 ## Files and filegroups
 
-SQL Server professionals often use files and filegroups to improve I/O performance through physical file placement. Azure SQL doesn't allow users to place files on specific disk systems. However, Azure SQL has resource commitments for I/O performance with regards to rates, IOPS, and latencies. In this way, abstracting the user from physical file placement can be a benefit.
+SQL Server professionals often use files and filegroups to improve I/O performance through physical file placement. Azure SQL doesn't allow users to place files on specific disk systems. However, Azure SQL has resource commitments for I/O performance with regard to rates, IOPS, and latencies. In this way, abstracting the user from physical file placement can be a benefit.
 
 Azure SQL Database only has one database file (Hyperscale typically has several), and the maximum size is configured through Azure interfaces. There's no functionality to create additional files.
 
