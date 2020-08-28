@@ -28,11 +28,11 @@ quiz:
       isCorrect: false
       explanation: 'Key vault provides storage to your keys and secrets but it’s not responsible for initiating authentication'
 
-  - content: 'It’s best practice Subscription owners should have contributor rights to Microsoft Authorization rights​'
+  - content: 'It’s best practice that Subscription owners should have write permissions for Microsoft.Authorization in addition to Contributor role permissions.'
     choices:
     - content: 'True'
       isCorrect: false
       explanation: ''
     - content: 'False'
       isCorrect: true
-      explanation: 'Subscription owners should have contributor rights to resources within the subscription that are not centrally shared. Granting Microsoft Authorization which is centrally managed will allow the owner modify permissions that limit their scope, remove separation, and could pose security risks.'
+      explanation: 'Subscription owners should have Contributor rights to resources within the subscription that are not centrally shared. Granting write permissions for Microsoft.Authorization, which is centrally managed, will allow the owner to modify permissions that limit their scope, remove separation, and could pose security risks.'
