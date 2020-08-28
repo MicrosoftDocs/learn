@@ -5,13 +5,13 @@ Enterprise network topology with Azure is recommended in two flavors. Either Azu
 
 ## Considerations
 
--Azure Virtual WAN is a Microsoft-managed solution where end-to-end global transit connectivity is provided by default. Virtual WAN hubs eliminate the need to manually configure network connectivity. Azure Virtual WAN is the preferred choice over hub and spoke because because their is no need for a customer to deploy and manage some sort of router service in the hub. Virtual WAN also offers communications between on premises locations using the Microsoft Network and ExpressRoute and VPN. As a design consideration for any networking in azure keep in mind the principle that Azure to Azure traffic should always stay in Azure.
+Azure Virtual WAN is a Microsoft-managed solution where global transit connectivity is provided by default. Virtual WAN hubs eliminate the need to manually configure network connectivity. Azure Virtual WAN is the preferred choice over hub and spoke because there is no need for a customer to deploy and manage some sort of router service in the hub. Virtual WAN also offers communications between on premises locations using the Microsoft Network and ExpressRoute and VPN. A design consideration for any networking in Azure keeps in mind the principle that Azure to Azure traffic should always stay in Azure.
 
 ![Diagram that illustrates a Virtual WAN network topology.](./media/virtual-wan-topology.png)
 
 ## Recommendations
 
-Deploy a VWAN hub per Azure region and connect them to large offices or data centers with ExpressRoute, use VPN for smaller locations and point-to-site VPN for remote users. Azure Firewalls can be deployed into the VWAN hub, but third party firewalls have to be deployed into a spoke VNet. There is no need to build a transit network on top of VWAN, as VWAN is the transit network. Azure Virtual WAN is limited to two thousand virtual machines per spoke. If the deployment will be higher than this, consider hub and spoke. 
+Deploy a VWAN hub per Azure region and connect them to large offices or data centers with ExpressRoute. Use VPN for smaller locations and point-to-site VPN for remote users. Azure Firewalls can be deployed into the VWAN hub, but third party firewalls have to be deployed into a spoke VNet. There's no need to build a transit network on top of VWAN. VWAN is the transit network. Azure Virtual WAN is limited to two thousand virtual machines per spoke. If the deployment will be higher than this, consider hub and spoke. 
 
 # Hub and spoke
 

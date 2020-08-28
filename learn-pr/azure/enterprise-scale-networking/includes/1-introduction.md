@@ -1,3 +1,5 @@
-Contoso is planning to implement Azure globally in the next months and realizes that enterprise grade network foundation, or plumbing is critical to deploying enterprise grade applications in a resilient and scalable way. IP Address schemas, connectivity options, segmentation and encyrption must all be well designed. The following units will explore these areas and provide prescriptive guidance for the global enterprise.
+Contoso is planning to implement Azure globally in the next months. Contoso's lead architect realizes that an enterprise grade network foundation is critical to deploying enterprise grade applications. 
 
-# Next Unit: IP Addressing
+IP Address schemas, connectivity options, segmentation, and encryption must all be well designed. The following units will explore these areas and provide prescriptive guidance for the global enterprise.
+
+### Next Unit: IP Addressing
