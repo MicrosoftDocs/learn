@@ -14,17 +14,17 @@ All scripts for this exercise can be found at *04-Performance\tuning_application
 
 In **Object Explorer**, select the **AdventureWorks** database. Use **File** > **Open** to open the **order_rating_ddl.sql** script to create a table in the `AdventureWorks` database. Your query editor window should look like the following text:
 
-    ```sql
-    DROP TABLE IF EXISTS SalesLT.OrderRating;
-    GO
-    CREATE TABLE SalesLT.OrderRating
-    (OrderRatingID int identity not null,
-    SalesOrderID int not null,
-    OrderRatingDT datetime not null,
-    OrderRating int not null,
-    OrderRatingComments char(500) not null);
-    GO
-    ```
+```sql
+DROP TABLE IF EXISTS SalesLT.OrderRating;
+GO
+CREATE TABLE SalesLT.OrderRating
+(OrderRatingID int identity not null,
+SalesOrderID int not null,
+OrderRatingDT datetime not null,
+OrderRating int not null,
+OrderRatingComments char(500) not null);
+GO
+```
 
 ## Load queries to monitor query execution
 
@@ -104,11 +104,11 @@ With these queries, you can observe the following facts:
 
 The duration of this workload on a SQL Server 2019 instance with an SSD drive is approximately 10-12 seconds. The total duration on Azure SQL Database with a Gen5 v8 core is approximately 25 seconds.
 
-WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. 2 ms per write doesn't seem like much, but on a local SSD drive these waits can be less than 1 ms.
+WRITELOG wait types with higher wait times are indicative of latency flushing to the transaction log. A wait time of 2 ms per write doesn't seem like much, but on a local SSD drive these waits can be less than 1 ms.
 
 ## Decide on a resolution
 
-The problem isn't a high percentage of log write activity. The Azure portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25 percent (you don't need to query these). The problem isn't an IOPS limit either. The issue is that this application workload is sensitive to low latency for transaction log writes, and the general purpose tier isn't designed for this type of latency requirement. The documentation for Azure SQL Database states that the resource limits for I/O latency are between 5-7 ms.
+The problem isn't a high percentage of log write activity. The Azure portal and **sys.dm_db_resource_stats** don't show any numbers higher than 20-25 percent (you don't need to query these). The problem isn't an IOPS limit either. The issue is that this application workload is sensitive to low latency for transaction log writes, and the general purpose tier isn't designed for this type of latency requirement. The documentation for Azure SQL Database states that the resource limits for I/O latency are 5-7 ms.
 
 > [!NOTE]
 > General purpose Azure SQL Database documents approximate I/O latency averages as 5-7 (writes) and 5-10 (reads). You might experience latencies more like these numbers. Latencies for general purpose Azure SQL Managed Instance are similar. If your application is very sensitive to I/O latencies, consider Business Critical tiers.
