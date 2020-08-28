@@ -1,6 +1,6 @@
 Our goal was to help you Evaluate the critical design areas for enterprise enrollment and Azure AD tenants, identity and access management, and management group and subscription organization.
 
-You learned:
+You have learned to:
 
 - Determine the need for single or multiple Azure AD tenants
 - Define the Azure enterprise enrollment hierarchy
