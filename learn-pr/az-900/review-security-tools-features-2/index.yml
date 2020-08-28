@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.review-security-tools-features
+uid: learn.protect-against-security-threats-azure
 metadata:
   description: Learn how Azure can help you protect the workloads you run both in the cloud and in your on-premises datacenter.
   ms.date: 09/11/2020
@@ -7,7 +7,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Review security tools and features
+title: Protect against security threats on Azure
 summary: |
   Having a good security strategy is essential in today's digital world.
 
@@ -33,13 +33,13 @@ roles:
 products:
 - azure
 units:
-- learn.review-security-tools-features.1-introduction
-- learn.review-security-tools-features.2-protect-threats-security-center
-- learn.review-security-tools-features.3-detect-respond-threats-sentinel
-- learn.review-security-tools-features.4-manage-secrets-key-vault
-- learn.review-security-tools-features.5-manage-password-key-vault
-- learn.review-security-tools-features.6-host-virtual-machines-dedicated-hosts
-- learn.review-security-tools-features.7-knowledge-check
-- learn.review-security-tools-features.8-summary
+- learn.protect-against-security-threats-azure.1-introduction
+- learn.protect-against-security-threats-azure.2-protect-threats-security-center
+- learn.protect-against-security-threats-azure.3-detect-respond-threats-sentinel
+- learn.protect-against-security-threats-azure.4-manage-secrets-key-vault
+- learn.protect-against-security-threats-azure.5-manage-password-key-vault
+- learn.protect-against-security-threats-azure.6-host-virtual-machines-dedicated-hosts
+- learn.protect-against-security-threats-azure.7-knowledge-check
+- learn.protect-against-security-threats-azure.8-summary
 badge:
-  uid: learn.review-security-tools-features.badge
+  uid: learn.protect-against-security-threats-azure.badge
