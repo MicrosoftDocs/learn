@@ -2,8 +2,8 @@
 uid: learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines.workloads-by-using-azure-migrate
 title: Migrate Windows Server workloads by using Azure Migrate
 metadata:
-  title: 3-workloads-by-using-azure-migrate.md
-  description: "3-workloads-by-using-azure-migrate.md"
+  title: Migrate Windows Server workloads by using Azure Migrate
+  description: "Migrate Windows Server workloads by using Azure Migrate"
   ms.date: 08/30/2020
   author: wwlpublish
   ms.author: tonyj
@@ -12,4 +12,4 @@ metadata:
 azureSandbox: false
 durationInMinutes: 12
 content: |
-  [!include[](includes/3-workloads-by-using-azure-migrate.md)]
+  [!include[](includes/3-workloads-using-azure-migrate.md)]

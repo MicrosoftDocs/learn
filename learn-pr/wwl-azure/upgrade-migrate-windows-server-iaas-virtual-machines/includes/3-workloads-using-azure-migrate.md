@@ -60,7 +60,7 @@ Before you can run a migration to Azure, you need to set up and enable replicati
 
 1. In the Azure Migrate project select **Servers**, select **Azure Migrate: Server Migration**, and then select **Replicate**.
 
-![A screenshot of the Azure Migrate blade in the Azure portal. The administrator has added Azure Migrate and selected the Azure Migrate: Server Assessment and Azure Migrate: Server Migration tools.](../media/m17-azure-migrate1.png)
+   ![A screenshot of the Azure Migrate blade in the Azure portal. The administrator has added Azure Migrate and selected the Azure Migrate: Server Assessment and Azure Migrate: Server Migration tools.](../media/m17-azure-migrate-1.png)
 
 2. In **Replicate**, select **Source settings**, select **Are your machines virtualized?**, and then select **Yes**.
 3. In **On-premises appliance**, select the name of the Azure Migrate appliance that you set up, and then select **OK**.  
@@ -100,8 +100,8 @@ This concludes the test migration. The following list is the full migration step
 2. In **Replicating machines**, right-click or access the context menu for **VM**, and then select **Migrate**.
 3. In **Migrate**, select to **Shut down virtual machines and perform a planned migration with no data loss**, select **Yes**, and then select **OK**.
 
-> [!NOTE]
-> By default, Azure Migrate shuts down the on-premises VM, and runs an on-demand replication to synchronize any VM changes that occurred since the last replication occurred. This ensures no data loss. If you don't want to shut down the VM, select **No**.
+    > [!NOTE]
+    > By default, Azure Migrate shuts down the on-premises VM, and runs an on-demand replication to synchronize any VM changes that occurred since the last replication occurred. This ensures no data loss. If you don't want to shut down the VM, select **No**.
 
 4. When the migration job starts for the VM, track the job in Azure notifications.
 5. After the job finishes, you can review and manage the VMs from the **Virtual Machines** page.

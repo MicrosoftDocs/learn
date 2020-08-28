@@ -56,7 +56,7 @@ In this step you transfer data from your old server to the destination server af
    If you are migrating from a domain-joined source computer, the destination server must be joined to the same domain.
    You can also select **Create a new Azure VM** then use the wizard to deploy a new destination server in Azure. This will automatically size your VM, provision storage, format disks, join the domain, and add the Storage Migration Service proxy to a Windows Server 2019 destination. You can choose from Windows Server 2019 (recommended), Windows Server 2016, and Windows Server 2012 R2 VMs of any size and use managed disks.
 
-    ![A screenshot of the Windows Admin Center in Microsoft Edge. The administrator has selected the Storage Migration Service. In the details pane, the administrator is executing step 2: Transfer data. A single server is listed: Engineering5.corp.contoso.com.](../media/m17-storage-migrate2.png)
+    ![A screenshot of the Windows Admin Center in Microsoft Edge. The administrator has selected the Storage Migration Service. In the details pane, the administrator is executing step 2: Transfer data. A single server is listed: Engineering5.corp.contoso.com.](../media/m17-storage-migrate-2.png)
 
     > [!NOTE]
     > Using **Create a new Azure VM** requires that you have: A valid Azure subscription, an existing Azure Compute resource group where you have Create rights, an existing Azure VNet and subnet, an Azure Express Route or VPN solution tied to the VNet and subnet that allows connectivity from this Azure IaaS VM to your on-premises clients, domain controllers, the Storage Migration Service Orchestrator computer, the Windows Admin Center computer, and the source computer to be migrated.
@@ -98,7 +98,7 @@ In this step you cut over from the source servers to the destination servers, mo
    If your destination is a clustered file server, you might need to provide credentials with permissions to remove the cluster from the domain and then add it back with the new name.
 3. On the **Configure cutover** page, specify which network adapter on the destination should take over the settings from each adapter on the source. This moves the IP address from the source to the destination as part of the cutover, giving the source server a new Dynamic Host Configuration Protocol (DHCP) or static IP address. You have the option to skip all network migrations or certain interfaces.
 
-    ![A screenshot of the Windows Admin Center in Microsoft Edge. The administrator has selected the Storage Migration Service. In the details pane, the administrator is executing step 3: Cut over to the new server. A single server is listed: Engineering5.corp.contoso.com.](../media/m17-storage-migrate3.png)
+    ![A screenshot of the Windows Admin Center in Microsoft Edge. The administrator has selected the Storage Migration Service. In the details pane, the administrator is executing step 3: Cut over to the new server. A single server is listed: Engineering5.corp.contoso.com.](../media/m17-storage-migrate-3.png)
 
 4. Specify what IP address to use for the source server after cutover moves its address to the destination. You can use DHCP or a static address. If using a static address, the new subnet must be the same as the old subnet or cutover will fail.
 5. Specify how to rename the source server after the destination server takes over its name. You can use a randomly generated name or enter one you choose yourself. Then select **Next**.
