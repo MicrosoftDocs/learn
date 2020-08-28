@@ -19,12 +19,11 @@ Azure Key Vault can help you:
 
     These secrets and keys can be protected either by software or by FIPS 140-2 Level 2 validated HSMs.
 
-:::image type="content" source="../media/4-key-vault-certificates.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene and threat protection.":::
-<div style="background:yellow;">
-TODO: replace image - too big?
+Here's an example that shows a certificate used for testing in Key Vault.
 
-(Tom) It is indeed. Plus, what are we showing specifically here? Something from the last bullet, or something more general?
-</div>
+:::image type="content" source="../media/4-key-vault-certificates.png" alt-text="A screenshot of the Azure portal showing a test certificate in Azure Key Vault.":::
+
+You'll add a secret to Key Vault later in this module.
 
 ## What are the benefits of Azure Key Vault?
 

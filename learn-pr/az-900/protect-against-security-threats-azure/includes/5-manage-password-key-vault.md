@@ -33,7 +33,7 @@ The Azure CLI as a way to work with Azure resources from the command line or fro
 
     For example, the **DNS name** field shows the URI your application can use to access your vault from the REST API. Here's an example for a Key Vault that's named **my-kv-1234**:
 
-    :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="TODO":::
+    :::image type="content" source="../media/5-portal-key-vault-overview.png" alt-text="A screenshot of the Azure portal showing details about a key vault. Fields such as the parent resource group, location, and DNS name are shown.":::
 
 1. As an optional step, under **Settings**, examine some of the other settings.
 
@@ -73,7 +73,7 @@ Here, you access the password from Key Vault two times. First, you access it fro
 
 1. Select **Show Secret Value**.
 
-    :::image type="content" source="../media/5-portal-secret-value.png" alt-text="TODO":::
+    :::image type="content" source="../media/5-portal-secret-value.png" alt-text="A screenshot of the Azure portal showing the secret value in key vault.":::
 
 1. From the Cloud Shell pane to the side of the screen, run this command:
 
