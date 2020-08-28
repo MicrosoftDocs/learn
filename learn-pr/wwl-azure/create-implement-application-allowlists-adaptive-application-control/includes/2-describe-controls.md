@@ -12,7 +12,7 @@ Adaptive application control uses machine learning to analyze the applications r
 > [!NOTE]
 > Security Center requires at least two weeks of data to perform this analysis.
 
-Using Adaptive application controls can help simplify the process of configuring and maintaining application policies. By using Adaptive application controls**, you can:
+Using Adaptive application controls can help simplify the process of configuring and maintaining application policies. By using Adaptive application controls, you can:
 
 - Block attempts to run potentially malicious applications.
 - Receive alerts when adaptive application control blocks an application.

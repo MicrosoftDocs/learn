@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/30/2020
+  ms.date: 08/31/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "It's removed and the VM has no policy."
       isCorrect: false
       explanation: "That's incorrect. It changes to the settings of the group to which you moved the VM."
-  - content: "When configuring **Group settings** for an application control policy, in the **File type protection mode** section, what file types can you protect? Select the most complete answer."
+  - content: "When configuring **Group settings** for an application control policy, in the **File type protection mode** section, what are all the file types can you protect?"
     choices:
     - content: ".exe and .cmd."
       isCorrect: false

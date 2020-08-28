@@ -21,7 +21,7 @@ To configure a new application control policy, in **Security Center**, use the f
 
 2. After selecting a group, review the **Configure application control rules** blade.
 
-    ![A screenshot of the Configure application control rules blade in the Azure portal. A number of recommended machines and applications are listed.](../media/m5-enable-control-2.png)
+    [![A screenshot of the Configure application control rules blade in the Azure portal. A number of recommended machines and applications are listed.](../media/m5-enable-control-2.png)](../media/m5-enable-control-2.png#lightbox)
 
 3. In the **Select Machines** section, review the list of recommended VMs, and deselect those to which you don't want to apply an application allow policy.
 
@@ -32,7 +32,7 @@ To configure a new application control policy, in **Security Center**, use the f
    |Recommended applications|A list of applications that are frequent on the VMs within this group, and  that Security Center recommends that you allow to run.|
    |More applications|A list of applications that are either less frequent on the VMs within this group, or that are known as *Exploitable* and that you should review.|
 
-    ![A screenshot of the Configure application control rules blade in the Azure portal. A number of applications are listed in the More applications section.](../media/m5-enable-control-3.png)
+    [![A screenshot of the Configure application control rules blade in the Azure portal. A number of applications are listed in the More applications section.](../media/m5-enable-control-3.png)](../media/m5-enable-control-3.png#lightbox)
 
 5. Review the applications in each list, and clear the check boxes of those that you don't want to apply. The following table describes the information that the lists contain.
 
