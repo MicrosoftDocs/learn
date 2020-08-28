@@ -19,7 +19,7 @@ Azure Key Vault can help you:
 
     These secrets and keys can be protected either by software or by FIPS 140-2 Level 2 validated HSMs.
 
-:::image type="content" source="../media/key-vault-certificates.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene and threat protection.":::
+:::image type="content" source="../media/5-key-vault-certificates.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene and threat protection.":::
 <div style="background:yellow;">
 TODO: replace image - too big?
 

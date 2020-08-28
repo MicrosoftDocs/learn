@@ -30,7 +30,7 @@ Here's an example of what you might see in Azure Security Center:
 TODO: Replace image - too big.
 </div>
 
-:::image type="content" source="../media/security-center-compliance.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene, and threat protection.":::
+:::image type="content" source="../media/2-security-center-compliance.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene, and threat protection.":::
 
 Let's say that Tailwind Traders must comply with the Payment Card Industry's Data Security Standard (PCI DSS). This report shows that they have resources that they need to remediate.
 
@@ -40,7 +40,7 @@ Under the **Resource Security Hygiene** section, they can also see the health of
 TODO: Replace image - too big & doesnt mimic above para.
 </div>
 
-:::image type="content" source="../media/security-center-dashboard-2.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene, and threat protection.":::
+:::image type="content" source="../media/2-security-center-dashboard.png" alt-text="Azure security center dashboard showing policy compliance, resource security hygiene, and threat protection.":::
 
 ## Protect against threats
 
