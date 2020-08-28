@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.enterprise-scale-organizational-design-principles
 metadata:
-  title: Enterprise-scale architecture organizational design principles
-  description: Enterprise-scale architecture organizational design principles
+  title: Enterprise-scale Architecture Organizational Design Principles
+  description: Enterprise-scale Architecture Organizational Design Principles
   ms.date: 09/30/2020
   author: kristopherjturner
   ms.author: krturner
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enterprise-scale architecture organizational design principles
+title: Enterprise-scale Architecture Organizational Design Principles
 summary: Evaluate the critical design areas for enterprise enrollment and Azure AD tenants, identity and access management, and management group and subscription organization.
 abstract: | 
   In this module we will evaluate options for the following critical design areas:
