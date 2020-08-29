@@ -18,7 +18,7 @@ Fortunately, everything related with arithmetic operations, both f
 Standard and the Numerics library, is covered under the
 `Microsoft.Quantum.Arithmetic` namespace. You can find all the documentation
 under the [official API
-reference](https://docs.microsoft.com/en-us/qsharp/api/qsharp/microsoft.quantum.arithmetic?view=qsharp-preview).
+reference](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithmetic?view=qsharp-preview).
 
 ### Content of the Numerics library
 
@@ -37,7 +37,7 @@ For each of the types, several operations are available, for�
 comparison, multiplication, squaring, polynomial evaluation, among others. You
 can obtain more information about the available operations in the [official
 documentation for the Numerics
-library](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/numerics/numerics).
+library](https://docs.microsoft.com/quantum/user-guide/libraries/numerics/numerics).
 
 ## Use the Numerics library  
 
@@ -85,4 +85,4 @@ Also remember that Q# is an open source project, so you ca
 example, if you plan to adapt your latest quantum computing project into Q#
 don't hesitate and share it with the community. To learn more about how you can
 contribute to the Quantum Development Kit, check out our [contribution
-guide](https://docs.microsoft.com/en-us/quantum/resources/contributing/?view=qsharp-preview).
+guide](https://docs.microsoft.com/quantum/resources/contributing/?view=qsharp-preview).

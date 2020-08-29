@@ -68,7 +68,7 @@ As such, most applications of the quantum chemistry library are ideally suited f
 Because the Hamiltonians of large and complex molecules can contain thousands or millions of terms, molecular data files are understandably a staple in computational chemistry.
 
 The quantum chemistry library is designed to work well with computational chemistry packages, most notably the [NWChem](https://nwchemgit.github.io/) computational chemistry platform.
-NWChem can export data files directly in the [Broombridge](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/chemistry/schema/broombridge?view=qsharp-preview) format schema used with Q#, and also has a web-based front-end to piece together your own molecules at [EMSL Arrows Builder](https://arrows.emsl.pnnl.gov/api/qsharp_chem).
+NWChem can export data files directly in the [Broombridge](https://docs.microsoft.com/quantum/user-guide/libraries/chemistry/schema/broombridge?view=qsharp-preview) format schema used with Q#, and also has a web-based front-end to piece together your own molecules at [EMSL Arrows Builder](https://arrows.emsl.pnnl.gov/api/qsharp_chem).
 
 The library provides host program tools for loading these files as instances of quantum simulation problems.
 
@@ -77,7 +77,7 @@ The library provides host program tools for loading these files as instances of 
 Although electrons are themselves quantum particles, they are very different from the qubits comprising a quantum computer.
 For example, the fermionic nature of electrons implies that they must be treated as *indistinguishable*, which distinct qubits most certainly are not. 
 Nevertheless, the properties of the electrons can be approximately embedded in the quantum computer by mapping them to specific states and interactions between qubits. 
-There exist numerous approaches to this mathematical mapping, such as the [Jordan-Wigner representation](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/chemistry/concepts/jordan-wigner?view=qsharp-preview), each with their own advantages and disadvantages.
+There exist numerous approaches to this mathematical mapping, such as the [Jordan-Wigner representation](https://docs.microsoft.com/quantum/user-guide/libraries/chemistry/concepts/jordan-wigner?view=qsharp-preview), each with their own advantages and disadvantages.
 
 Fortunately, these mappings are easily computed classically, and therefore the quantum chemistry library includes host program tools which perform this automatically. 
 With the Hamiltonian in a representation suitable for quantum simulation, the host program can then directly pass this encoding as an argument when calling the Q# operation to run the simulation.
@@ -115,5 +115,5 @@ With all of the heavy lifting taken care of by existing functions/operations in 
 
 ## Explore further
 
-- To get started using the quantum chemistry library with your Q# projects, see [Using additional Q# libraries](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/additional-libraries?view=qsharp-preview&tabs=tabid-csproj)
-- Learn how to use additional tools from the library at [Chemistry library installation](https://docs.microsoft.com/en-us/quantum/user-guide/libraries/chemistry/installation?view=qsharp-preview), and explore the entire documentation section for more.
+- To get started using the quantum chemistry library with your Q# projects, see [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries?view=qsharp-preview&tabs=tabid-csproj)
+- Learn how to use additional tools from the library at [Chemistry library installation](https://docs.microsoft.com/quantum/user-guide/libraries/chemistry/installation?view=qsharp-preview), and explore the entire documentation section for more.

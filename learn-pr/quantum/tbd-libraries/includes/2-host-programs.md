@@ -18,7 +18,7 @@ and used in any manner such as plotting, post-processing, or file exporting.
 ## Useful applications of host programs
 
 The Q# language was developed specifically around the quantum end of quantum
-computation that is, around the processes which will be sent to run on quantum
+computation—that is, around the processes which will be sent to run on quantum
 devices. It therefore includes many quantum-specific features, but lacks some
 abilities which are "standard" to common languages; for example, plotting and
 the ability to import and export files. Besides visualization as a useful tool
@@ -245,62 +245,62 @@ namespace host
             {
                 var bitString = "0";
 
-                int dice_max = 6;
-                int num_rolls = 1000;
+                int diceMax = 6;
+                int numRolls = 1000;
                 // Number of bits required:
-                int size = Convert.ToInt32(Math.Floor(Math.Log(dice_max, 2.0) + 1));
+                int size = Convert.ToInt32(Math.Floor(Math.Log(diceMax, 2.0) + 1));
                 
-                List<int> roll_result_list = new List<int>();
+                List<int> rollResultList = new List<int>();
 
-                for (int roll = 0; roll < num_rolls; roll++)
+                for (int roll = 0; roll < numRolls; roll++)
                 {
-                    var roll_sum = 0;
+                    var rollSum = 0;
                     // Each roll consists of two dice:
                     for (int dice = 0; dice < 2; dice++)
                     {
                         // Get random integer in 0-5 for each dice rolled:
-                        var single_dice_result = dice_max; 
-                        while (single_dice_result >= dice_max)  
+                        var singleDiceResult = diceMax; 
+                        while (singleDiceResult >= diceMax)  
                         {
                             bitString = "0"; 
                             bitString = String.Join("", Enumerable.Range(0, size).Select(idx =>
-                                                    GenerateRandomBit.Run(sim).Result == Result.One ? "1" : "0"
+                                                    SampleQuantumRandomNumberGenerator.Run(sim).Result == Result.One ? "1" : "0"
                                                                                         )
                                                     );
-                            single_dice_result = Convert.ToInt32(bitString, 2);
+                            singleDiceResult = Convert.ToInt32(bitString, 2);
                         }
                         // Add single dice result to total of roll:
-                        roll_sum += single_dice_result;
+                        rollSum += singleDiceResult;
                     }
                     // Add 2 so results correspond to the real dice range 1-6:
-                    roll_result_list.Add(roll_sum + 2);
+                    rollResultList.Add(rollSum + 2);
                 }     
 
                 // Create list with number of times each result appeared:
-                var result_hist = new List<int>(new int[2 * dice_max - 1]); // list of 0's
-                foreach (int res in roll_result_list)
+                var resultHist = new List<int>(new int[2 * diceMax - 1]); // list of 0's
+                foreach (int res in rollResultList)
                 {
-                    result_hist[res - 2]++;
+                    resultHist[res - 2]++;
                 }
 
-                Console.WriteLine($"Number of times rolling [2, 3, ..., {2 * dice_max}]:");
-                Console.WriteLine("[" + String.Join(", ", result_hist) + "]");
+                Console.WriteLine($"Number of times rolling [2, 3, ..., {2 * diceMax}]:");
+                Console.WriteLine("[" + String.Join(", ", resultHist) + "]");
                 Console.WriteLine("\nHistogram");
                     
-                int max_stars = 24;
-                double norm_factor = (double)num_rolls / (double)result_hist.Max();
+                int maxStars = 24;
+                double normFactor = (double)numRolls / (double)resultHist.Max();
 
-                string histogram_string = "";
+                string histogramString = "";
                 int i = 0;
-                foreach (int res in result_hist)
+                foreach (int res in resultHist)
                 {
-                    double pre_round = norm_factor * ((double)res / (double)num_rolls) * (double)max_stars;
-                    int num_stars = (int)Math.Round(pre_round);
-                    string star_str = new String('*', num_stars);
-                    histogram_string += String.Format("{0,-3}: {1} \n", i + 2, star_str);
+                    double preRound = normFactor * ((double)res / (double)numRolls) * (double)maxStars;
+                    int numStars = (int)Math.Round(preRound);
+                    string starStr = new String('*', numStars);
+                    histogramString += String.Format("{0,-3}: {1} \n", i + 2, starStr);
                     i++;
                 }
-                Console.WriteLine(histogram_string);
+                Console.WriteLine(histogramString);
             }
         }
     }
@@ -340,7 +340,7 @@ with Q# and the power of quantum computing.
 ## Discover more
 
 - For more details on host programs, see [Ways to run a Q#
-  program](https://docs.microsoft.com/en-us/quantum/user-guide/host-programs?view=qsharp-preview&tabs=tabid-python).
+  program](https://docs.microsoft.com/quantum/user-guide/host-programs?view=qsharp-preview&tabs=tabid-python).
 
 In the next units we are going to explore the libraries of the Quantum
 Development Kit. Some of them make intensive use of host programs like Python or
