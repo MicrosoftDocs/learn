@@ -6,7 +6,7 @@ Q# is a language that offers high and low level capabilities
 
 The Numerics library provides you a set of arithmetic operations and fixed-point
 arithmetic operations for integers encoded in qubit registers. You can leverage
-this low-level optimized implementations of basic arithmetic operations to
+these low-level, optimized implementations of basic arithmetic operations to
 implement sophisticated algorithms.
 
 This library is especially useful for researchers and developers who 
@@ -22,14 +22,14 @@ reference](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arithm
 
 ### Content of the Numerics library
 
-The library provides a set of arithmetic operations signed and unsigned integers
+The library provides a set of arithmetic operations for signed and unsigned integers
 in the LittleEndian representation, and a new type to store fixed-point
-LittleEndian integers. We have three types:
+LittleEndian integers. The library supports three types:
 
 - `LittleEndian`: A qubit array that represents an integer where the index 0-th
      index denotes the least significant bit.
      
-- `SingedLittleEndian`: Same as `LittleEndian` but with a sign stored in [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement).
+- `SignedLittleEndian`: Same as `LittleEndian` but with a sign stored in [two's complement](https://en.wikipedia.org/wiki/Two%27s_complement).
 - `FixedPoint`: Represents a real number consisting of a qubit array representing
    number of binary digits to the left of the binary point.
 
@@ -41,13 +41,13 @@ library](https://docs.microsoft.com/quantum/user-guide/libraries/numerics/numeri
 
 ## Use the Numerics library  
 
-It's not rare that quantum computing algorithms require to compute arithmetic
+It's not rare that quantum computing algorithms require the computation of arithmetic
 operations such as the evaluation of oracles or the application of mathematical
 functions to quantities encoded in the qubit registers. The numerics library
 provides you with functionality to perform these operations.
 
 
-For example, in Shor's factoring algorithm, a part of the algorithm consists in
+For example, in Shor's factoring algorithm, a part of the algorithm comprises
 finding the *order* (period) of a periodic function $f(x)=a^x mod N$, where $N$
 is the number to factorize and $a$ is a random number used previously in the
 algorithm. To find the periodicity of $f(x)$, we need to compute the operation

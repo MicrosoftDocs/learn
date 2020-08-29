@@ -12,7 +12,7 @@ and hinders the development and scope of the field. There are some things that
 are very useful in ML that are not very costly to compute, but in general, the 
 state-of-the-art models require huge processes of training that cost up to 
 millions of dollars in terms of cloud-computing resources. This is why 
-researches are exploring how to use quantum technology to train models and 
+researchers are exploring how to use quantum technology to train models and 
 potentially provide some advantage over classical machine learning algorithms.
 
 The Quantum Machine Learning Library available today provides the necessary
