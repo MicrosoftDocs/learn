@@ -6,12 +6,6 @@ High availability (HA) is the ability to handle the loss or severe degradation o
 
 ## Disaster recovery
 
-Disaster Recovery (DR) is the ability to recover from high-impact events that result in downtime and data loss. A disaster is a major event with an impact much larger and long-lasting than the application can mitigate through the HA portion of its design. From the platform perspective, ensuring an application team can meet their recovery targets means understanding their organization's application DR strategies and the infrastructure required to implement them. Typical DR strategies will require multi-region network redundancy, geo-replication, and recovery automation. As with HA, network architecture and region selection are critical. The network design must provide both the redundancy and throughput necessary to support replication requirements and survive disaster scenarios. Region selection must include planning for service availability, data replication, and capacity.
+Disaster Recovery (DR) is the ability to recover from high-impact events that result in downtime and data loss. A disaster is a major event with an impact much larger and long-lasting than the application can mitigate through the HA portion of its design.
 
-## Design Recommendations
-
-- Use multiple regions and peering locations for ExpressRoute connectivity.
-- Avoid single points of failure (SPOF) in platform services.
-- Use Azure Availability Zones when possible.
-- Use Azure paired regions when planning for business continuity and DR.
-- Avoid using overlapping IP address ranges for production and DR sites.
+From the platform perspective, ensuring an application team can meet their recovery targets means understanding their organization's application DR strategies and the infrastructure required to implement them. Typical DR strategies will require multi-region network redundancy, geo-replication, and recovery automation. As with HA, network architecture and region selection are critical. The network design must provide both the redundancy and throughput necessary to support replication requirements and survive disaster scenarios. Region selection must include planning for service availability, data replication, and capacity.
