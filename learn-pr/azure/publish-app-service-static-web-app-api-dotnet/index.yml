@@ -19,8 +19,8 @@ prerequisites: |
   - Familiarity with Blazor
   - Beginner-level experience with Azure Functions
   - A GitHub account
-  - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/)
-  - [Azure Functions for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs)
+  - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/), including the Azure workload
+  - Familiarity with basic Visual Studio operation, including interacting with Git repositories and basic debugging functions
 iconUrl: /learn/achievements/publish-static-web-app-and-api.svg
 levels:
   - beginner
