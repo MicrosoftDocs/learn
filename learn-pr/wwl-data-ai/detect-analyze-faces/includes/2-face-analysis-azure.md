@@ -1,7 +1,7 @@
 
 Microsoft Azure provides multiple cognitive services that you can use to detect and analyze faces, including:
 
-- The **Custom Vision** service, which offers face detection and some basic face analysis, such as determining gender and age.
+- The **Custom Vision** service, which offers face detection and some basic face analysis, such as determining age.
 - The **Video Indexer** service, which you can use to detect and identify faces in a video.
 - The **Face** service, which offers pre-built algorithms that can detect, recognize, and analyze faces.
 
@@ -20,7 +20,6 @@ Azure Face Service currently supports the following functionality:
 The Face service can return the rectangle coordinates for any human faces that are found in an image, as well as a series of attributes related to those faces such as:
 
 - the head pose - orientation in a 3D space
-- the gender of the detected faces
 - a guess at an age
 - what emotion is displayed
 - if there is facial hair or the person is wearing glasses
