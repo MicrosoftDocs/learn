@@ -24,9 +24,9 @@ Evaluate Azure Bastion. Deploy Azure Bastion to securely connect to Azure Virtua
 
 ## Learning objectives
 
-1. Describe the features and benefits of Azure Bastion
-1. Configure and use Azure Bastion to connect to an Azure Virtual Machine (Or something like "Demonstrate you can securely connect to VM by using the Azure portal and Bastion")
-1. Monitor and manage remote sessions  
+1. Evaluate Azure Bastion as a replacement for a VM jumpbox solution
+1. Configure Bastion to securely connect to VM
+1. Manage remote sessions by enabling diagnostic logs and monitoring remote sessions
 
 ## Chunk your content into subtasks
 
@@ -34,14 +34,13 @@ Identify the subtasks of *Connect to virtual machines through the Azure portal b
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| Evaluate Azure Bastion | Investigate a different way to remotely connect and manage the app VM | Knowledge check | Describe features and benefits | Yes  |
-| Create AzureBastionSubnet |Investigate a different way to remotely connect and manage the app VM | Exercise | Configure and use Azure Bastion to connect to an Azure Virtual Machine | No; combine w/ subtask for same objective |
-| Deploy Azure Bastion for VNet |Investigate a different way to remotely connect and manage the app VM | Exercise | Configure and use Azure Bastion to connect to an Azure Virtual Machine | No; combine w/ subtask for same objective  |
-| Connect to demo app VM |Investigate a different way to remotely connect and manage the app VM | Exercise | Configure and use Azure Bastion to connect to an Azure Virtual Machine | No; combine w/ subtask for same objective |
-| Configure network security group rules | Investigate a different way to remotely connect and manage the app VM | Knowledge check | Configure and use Azure Bastion to connect to an Azure Virtual Machine | Yes |
-| Enable diagnostic settings to get session logs | Investigate a different way to remotely connect and manage the app VM | Exercise | Monitor and manage remote sessions  |No w/ subtask for same objective |
-| View sessions | Investigate a different way to remotely connect and manage the app VM | Exercise | Monitor and manage remote sessions  | No combine w/ subtask for same objective  |
-| Force disconnect session | Investigate a different way to remotely connect and manage the app VM | Exercise | Monitor and manage remote sessions  | No combine w/ subtask for same objective |
+| Evaluate Azure Bastion | Investigate a different way to remotely connect and manage the app VM | Knowledge check | Evaluate Azure Bastion as a replacement... | Yes  |
+| Create AzureBastionSubnet |Investigate a different way to remotely connect and manage the app VM | Exercise | Configure Bastion to securely connect to VM | No; combine w/ subtask for same objective |
+| Deploy Azure Bastion for VNet |Investigate a different way to remotely connect and manage the app VM | Exercise | Configure Bastion to securely connect to VM | No; combine w/ subtask for same objective  |
+| Connect to demo app VM |Investigate a different way to remotely connect and manage the app VM | Exercise | Configure Bastion to securely connect to VM | No; combine w/ subtask for same objective |
+| Enable diagnostic settings to get session logs | Investigate a different way to remotely connect and manage the app VM | Exercise | Manage remote sessions by enabling diagnostic logs and monitoring remote sessions |No w/ subtask for same objective |
+| View sessions | Investigate a different way to remotely connect and manage the app VM | Exercise | Manage remote sessions by enabling diagnostic logs and monitoring remote sessions  | No combine w/ subtask for same objective  |
+| Force disconnect session | Investigate a different way to remotely connect and manage the app VM | Exercise | Manage remote sessions by enabling diagnostic logs and monitoring remote sessions  | No combine w/ subtask for same objective |
 
 ## Outline the units
 
@@ -53,7 +52,7 @@ Identify the subtasks of *Connect to virtual machines through the Azure portal b
 
    You've locked down network traffic to the jumpbox by using an Azure network security group. The network security group allows RDP and SSH requests from the local Azure virtual network and denies all other inbound requests to the public IP, across all ports.
 
-   Periodically, you maintain the jumpbox by applying updates and security patches. You'd rather use that time for other projects. So you'd like to investigate another way to remotely connect and manage the app VM without having to publicly expose the internal HR app or manage an additional VM.
+   To keep your internal app VMs remotely accessible, you have to maintain the VM jumpbox by applying updates and security patches. This maintenance work takes time away from other projects. So you'd like to investigate another way to remotely connect and manage the app VM without having to publicly expose the internal HR app or manage an additional VM.
 
 1. **What is Azure Bastion?**
 
@@ -112,13 +111,15 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
    - Prereqs: address space
    - Create in portal - two methods:
-     - Create the BastionSubnet and deploy the Bastion Host as a part of the VNet creation experience (new). Include screenshots to show how this is done and the resources you end up with.
+     - Create the BastionSubnet and deploy the Bastion Host as a part of the VNet creation experience (new). Include screenshots to show how this is done and the resources you end up with. ID suggests illustration that provides overview of process.
      - Or if you have existing VNet/VM, add subnet & then deploy bastion host from VM connection. (This is what we'll show in exercise.)
    - Create by using Azure PowerShell: show sample commands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
    - CLI: https://docs.microsoft.com/azure/bastion/create-host-cli
    -  What gets created when you deploy (Show this in next unit exercise?)
 
 1. **Exercise – Connect to a virtual machine using the Bastion Service**
+
+   ***Setup environment***
 
     1. Customer runs script that creates existing environment: 
        - Creates jumpbox (Windows) + "app" VM (Ubuntu) that's on a private network. 
@@ -128,12 +129,20 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
     1. Connect to jumpbox using RDP.
     1. From jumpbox SSH to app VM. Run some commands to demonstrate you're on the app VM.
     1. Exit from the VMs.
-    1. Go to the app VM in the Azure portal. 
-    1. Create the AzureBastionSubnet and connect to VM.
+
+   ***Create subnet for Azure Bastion***
+
+    1. Go to virtual network. 
+    1. Create the AzureBastionSubnet.
+
+   ***Deploy Bastion***
     1. Connect > Bastion.
     1. Run some commands to demonstrate you're on the app VM.
     1. Look at RG to see bastion resource(s) created.
-    1. Go to jumpbox in list.
+
+   ***Decommission jumpbox***
+
+    1. Go to jumpbox in resource group.
     1. Shut down and delete the jumpbox.
 
 1. **Monitor and manage remote sessions**
@@ -160,12 +169,13 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
    1. Force disconnect session?
 1. **Knowledge check**
 
-   Add three questions that measure the objective:
-   "Describe the features and benefits of Azure Bastion"
-   Break that down into what the top three takeaways:
-   1. What is Bastion/why you'd use it (have two wrong statements and one right)
+   Add three to five questions that measure the objectives.
+
+   Break that down into what the top takeaways:
+   1. Company x didn't choose bastion because xyz - was their decision/reason right in this situation? Answers are two nos (with reasons) and a yes. One no is the right answer. Why was that not the right choice? (Include scalability?)
    1. What does deployment apply to (sub, VNet, RG)
-   1. Have scenario and have them pick what stuff they'd configure/set up? Like you're creating a VNet that you'll use to deploy VMs. What are the steps involved to deploy a Bastion host? Include NSGs to cover NSG unit.
+   1. So Bob says to set up is xyz steps (use VNET setup steps) - what's wrong with that? Assumes no existing Vnet & VMs. What are the steps involved to deploy a Bastion host?
+   1. Some problem has come up & in order to track down issue need to troubleshoot. What's the process (using diagnostic logs & monitoring remote connections UI)?
 
 1. **Summary**
 
