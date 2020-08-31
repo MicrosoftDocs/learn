@@ -32,13 +32,8 @@ quiz:
     choices:
     - content: 'Azure VPN'
       isCorrect: false
-<<<<<<< HEAD
       explanation: 'A single VPN tunnel cannot do 10gbps'
     - content: 'Colocate their servers inside Azure Datacenters'
-=======
-      explanation: 'A single VPN tunnel cannot provide a throughput of 10 Gbps'
-    - content: 'Colocate their servers inside Azure Datacenters '
->>>>>>> 0353307da55d4fa8f1027a791931cdcc86a91679
       isCorrect: false
       explanation: 'This is not a possibility'
     - content: 'ExpressRoute Direct'
