@@ -72,14 +72,3 @@ For example:
   For example, you want to block untrusted ActiveX controls in your Office apps. You can create an Administrative Template in Intune, configure this setting, and then assign this profile to a user group.
 
 To summarize, use user groups when you want your settings and rules to always go with the user, whatever device they use.
-
-
-<!--
-https://docs.microsoft.com/mem/intune/fundamentals/groups-add
-
-https://docs.microsoft.com/mem/intune/apps/apps-deploy
-
-https://docs.microsoft.com/mem/intune/apps/apps-inc-exl-assignments
-
-https://docs.microsoft.com/mem/intune/enrollment/device-group-mapping
--->

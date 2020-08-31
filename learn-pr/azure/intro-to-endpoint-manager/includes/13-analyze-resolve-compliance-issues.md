@@ -74,11 +74,3 @@ The health of your network is directly connected to the health of the devices mo
 Assessing client health is a top priority. The **CCMeval** utility is external to the Configuration Manager client. It provides client health monitoring and auto remediation. However, this reporting relies on a device being physically or virtually on your internal network. Co-management helps to address this issue.
 
 With co-management, Intune can report on the client health state. It provides timestamp information for the validity of the data. This information tells you if your devices are healthy, able to connect, able to install apps, or can update to the required OS builds.
-
-<!--
-https://docs.microsoft.com/mem/intune/fundamentals/tenant-status
-https://docs.microsoft.com/mem/intune/fundamentals/help-desk-operators
-https://docs.microsoft.com/mem/intune/configuration/troubleshoot-policies-in-microsoft-intune
-https://docs.microsoft.com/mem/intune/fundamentals/reports
-https://docs.microsoft.com/mem/configmgr/comanage/quickstart-client-health 
--->

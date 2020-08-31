@@ -39,5 +39,4 @@ Intune admins can configure device enrollment to help users and enable Intune ca
 - Corporate identifiers - List international mobile equipment identifier (IMEI) numbers and serial numbers to identify corporate-owned devices.
 - Multi-factor authentication - Require users to use an additional verification method, such as a phone, PIN, or biometric data, when they enroll a device. 
 - Device enrollment manager - Make users device enrollment managers (DEM). DEM users can enroll large numbers of mobile devices with a single user account. 
-- Device categories - Use device categories to automatically add devices to groups based on categories that you define. Organizing devices into groups makes it easier for you to manage those devices. 
-
+- Device categories - Use device categories to automatically add devices to groups based on categories that you define. Organizing devices into groups makes it easier for you to manage those devices.
