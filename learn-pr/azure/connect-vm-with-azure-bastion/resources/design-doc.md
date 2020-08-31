@@ -20,7 +20,7 @@ Azure Bastion
  
 ## Summary
 
-Evaluate Azure Bastion. Deploy Azure Bastion to securely connect to Azure Virtual Machines directly within the Azure Portal, to effectively replace existing jumpbox solution. Monitor remote sessions by using diagnostic logs. Manage remote sessions by disconnecting a user session.
+Evaluate Azure Bastion. Deploy Azure Bastion to securely connect to Azure Virtual Machines directly within the Azure portal, to effectively replace existing jumpbox solution. Monitor remote sessions by using diagnostic logs. Manage remote sessions by disconnecting a user session.
 
 ## Learning objectives
 
@@ -68,7 +68,7 @@ Identify the subtasks of *Connect to virtual machines through the Azure portal b
 
    - Doesn't expose RDP or SSH ports or public IP addresses for the target VMs. (Protection against port scanning)
    - "Protect against zero-day exploits. Hardening in one place only: Azure Bastion is a fully platform-managed PaaS service. Because it sits at the perimeter of your virtual network, you don’t need to worry about hardening each of the virtual machines in your virtual network. The Azure platform protects against zero-day exploits by keeping the Azure Bastion hardened and always up to date for you.": From docs Bastion overview page.
-   - Integrate with native Azure Virtual Network security appliances - such as Azure Firewall. (Per Michael: "I don't think we should call out any HTML5 web based clients or services")
+   - Integrate with native Azure Virtual Network security appliances - such as Azure Firewall. (Per Michael: "I don't think we should call out any HTML5 web-based clients or services")
    - Traffic initiated from the Azure Bastion to target virtual machines stays within the virtual network. (The browser connects to the Bastion host over the internet via the public IP of the Bastion.)
    - Configure NSGs to only allow remote connections to the target Virtual Machines from the Bastion host.(Best practice) Don't need to manage other NSGs.
    - Can monitor and manage remote connections (by enabling diagnostics settings and viewing/managing sessions on Bastion resource)
@@ -93,7 +93,7 @@ Identify the subtasks of *Connect to virtual machines through the Azure portal b
 
    ***How it works***
 
-   - Diagram that shows the high-level architecture. Reuse: diagram from 
+   Diagram that shows the high-level architecture. Reuse: diagram from 
 https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps. Cynthia's version has numbered steps that could be simplified.
 
    ***NSGs***
@@ -111,7 +111,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
    ***How to deploy Bastion host (high-level overview)***
 
    - Prereqs: address space
-   - Create in portal - 2 methods:
+   - Create in portal - two methods:
      - Create the BastionSubnet and deploy the Bastion Host as a part of the VNet creation experience (new). Include screenshots to show how this is done and the resources you end up with.
      - Or if you have existing VNet/VM, add subnet & then deploy bastion host from VM connection. (This is what we'll show in exercise.)
    - Create by using Azure PowerShell: show sample commands from https://docs.microsoft.com/azure/bastion/bastion-create-host-powershell
@@ -123,7 +123,7 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
     1. Customer runs script that creates existing environment: 
        - Creates jumpbox (Windows) + "app" VM (Ubuntu) that's on a private network. 
        - Jumpbox has public IP.
-       - Need address space to use for AzureBastionSubnet as part of set up.
+       - Need address space to use for AzureBastionSubnet as part of setup.
     1. Explain what resources are created with script and have them look at the resource group in the portal (that shows list of resources).
     1. Connect to jumpbox using RDP.
     1. From jumpbox SSH to app VM. Run some commands to demonstrate you're on the app VM.
@@ -162,8 +162,8 @@ https://docs.microsoft.com/azure/bastion/bastion-overview. Include process steps
 
    Add three questions that measure the objective:
    "Describe the features and benefits of Azure Bastion"
-   Break that down into what the top 3 takeaways:
-   1. What is Bastion/why you'd use it (have 2 wrong statements and one right)
+   Break that down into what the top three takeaways:
+   1. What is Bastion/why you'd use it (have two wrong statements and one right)
    1. What does deployment apply to (sub, VNet, RG)
    1. Have scenario and have them pick what stuff they'd configure/set up? Like you're creating a VNet that you'll use to deploy VMs. What are the steps involved to deploy a Bastion host? Include NSGs to cover NSG unit.
 
