@@ -1,10 +1,10 @@
 
-Azure Arc enables you to extend some capabilities of *Azure Policy* to operating systems of computers that are in on-premises datacenters or are hosted on Azure or another cloud provider. This functionality applies to auditing the compliance of settings for the OS, applications, and environment.
+Azure Arc enables you to extend some capabilities of *Azure Policy* to operating systems of computers that are in on-premises datacenters or are hosted on another cloud provider. This functionality applies to auditing the compliance of settings for the OS, applications, and environment.
 
-Additionally, you can configure the time zone on servers that are running the Windows Server OS. You can also use Azure Policy to manage and evaluate compliance for Azure Arc-enabled Kubernetes clusters.
+Additionally, you can configure the time zone on servers that are running the Windows Server OS. You can also use Azure Policy to manage and evaluate compliance for Azure Arc enabled Kubernetes clusters. Enabling this functionality requires that you install the Azure Connected Machine agent on each computer in the scope of management.
 
 > [!NOTE]
-> Enabling this functionality requires that you install the Azure Connected Machine agent on each computer in the scope of management.
+> Currently, you can only audit settings in this context. Auto-remediation is not yet available.
 
 ## What is Azure Policy?
 
@@ -22,17 +22,7 @@ Azure Policy functionality groups into four main categories:
 > [!TIP]
 > The last of these categories implements by using the Azure Policy Guest Configuration client, which is available as an Azure VM extension. Azure Arc for servers uses the same client to provide auditing functionality in hybrid scenarios.
 
-Specifically, Contoso IT support could use Azure Policy to implement the following rules:
-
-- Restricting Azure regions into which they can deploy resources.
-- Restricting types of resources that they can deploy.
-- Restricting Azure VM sizes that they can deploy.
-- Assigning tags to resources during their deployment.
-- Installing Microsoft Antimalware extension to Azure VMs.
-- Identifying Azure VMs without Microsoft Antimalware extension installed.
-
-> [!NOTE]
-> Only assigning tags to resources during their deployment can implement with Azure Arc at the present time.
+Specifically, Contoso IT support could use Azure Policy to assign tags to resources during their deployment.
 
 After you install the agent, it requires outbound connectivity to Azure Arc over TCP port 443. At that point, any Azure Policy Guest Configuration client-based configuration that's in the assigned policy or initiative definition will automatically take effect.
 
@@ -42,28 +32,15 @@ To manage and assign Azure Arc policies for a computer, browse to Azure Arc in t
 
 - Scope and any exclusions from the scope of the policy.
 - Policy definition.
-
-    :::image type="content" source="../media/assign-policy1.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
-
 - Assignment name.
 - Description.
 - Policy enforcement (Enabled or Disabled).
 
-> [!NOTE]
-> Strictly speaking, by using this procedure, you're assigning the Azure policy to the resource group that has the configured server resource.
-
-You can select and apply a number of Kubernetes policies.
-
-:::image type="content" source="../media/assign-policy2.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
+:::image type="content" source="../media/assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
 
 After assigning policies, you can review the policy settings on the selected server from Azure Arc.
 
 :::image type="content" source="../media/review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
 
-## Additional reading
 
-You can learn more by reviewing the following documents:
 
-- [Azure Policy built-in definitions for Azure Arc enabled servers (preview)](https://aka.ms/azure-policy-definitions?azure-portal=true).
-- [Quickstart: Create a policy assignment to identify non-compliant resources](https://aka.ms/assign-policy-portal?azure-portal=true).
-- [Enable monitoring of Azure Arc enabled Kubernetes cluster](https://aka.ms/container-insights-enable-arc-enabled-clusters?azure-portal=true).

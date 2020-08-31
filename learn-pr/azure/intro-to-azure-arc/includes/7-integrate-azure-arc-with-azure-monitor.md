@@ -1,7 +1,6 @@
+Contoso could use Azure Monitor to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers. 
 
-You can use Azure Monitor to help monitor and manage your server resources. *Azure Monitor* is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and to Microsoft and other cloud providers.
-
-By maintaining their on-premises infrastructures, Contoso can benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, you can monitor resources such as your onboarded servers. For example, you can select **Insights** to review a map of your server resources.
+By maintaining their on-premises infrastructures, Contoso can benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, you can monitor resources such as your onboarded servers. For example, you can select **Insights** to review a map of your resources' network connections.
 
 :::image type="content" source="../media/insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
 
@@ -26,10 +25,7 @@ Both infrastructure and application monitoring services share capabilities that 
 - Designing custom dashboards.
 - Analyzing metrics by using tools such as Metrics Explorer or Power BI.
 
-Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers both in on-premises datacenters and with other cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights.
-
-> [!NOTE]
-> You can also access its data by using Azure PowerShell, the Azure CLI, REST APIs, and the Microsoft .NET SDK.
+Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from a wide range of Azure services and computers both in on-premises datacenters and with other cloud providers. It provides a quick way to assess the status of your environment by using the Azure portal. Monitor presents a summary of triggered alerts, logs, metrics, and application-related telemetry originating from Application Insights. You can also access its data by using Azure PowerShell, the Azure CLI, REST APIs, and the Microsoft .NET SDK.
 
 Additionally, Monitor enables you to archive collected data in Azure Storage for long-term analysis or compliance purposes. You can also route the data to Azure Stream Analytics or to services from Microsoft and others by using Azure Event Hubs. You set up and use alerts to:
 
@@ -39,13 +35,3 @@ Additionally, Monitor enables you to archive collected data in Azure Storage for
 
 You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases, the Dependency Agent as well. This agent-based approach enables you to monitor the OS and its workloads by using Automation-based or Monitor-based solutions such as Update Management or Change Tracking and Inventory. You can also use Azure Security Center to identify vulnerabilities and potential threats.
 
-To learn more, review this five-minute video tutorial on Monitor:
-
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4zf4p]
-
-## Additional reading
-
-You can learn more by reviewing the following documents:
-
-- [Enable monitoring of Azure Arc enabled Kubernetes cluster](https://aka.ms/container-insights-enable-arc-enabled-clusters?azure-portal=true).
-- [Azure Monitor for containers overview](https://aka.ms/container-insights?azure-portal=true).

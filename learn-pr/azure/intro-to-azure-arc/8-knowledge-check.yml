@@ -46,7 +46,7 @@ quiz:
     choices:
     - content: "Configuring the time zone on the Windows operating system."
       isCorrect: false
-      explanation: "That's incorrect. You cannot use Azure Policy to perform this function."
+      explanation: "That's incorrect. Azure Policy can help audit the time zone configuration, but can't change it."
     - content: "Validating settings such as configuration of the operating system, applications, and environment settings."
       isCorrect: true
       explanation: "That's correct. You can use Azure Policy with Azure Arc resources to perform this function."
