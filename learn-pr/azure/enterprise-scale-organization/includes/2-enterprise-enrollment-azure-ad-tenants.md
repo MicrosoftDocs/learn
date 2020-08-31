@@ -1,7 +1,7 @@
 ## Enterprise enrollment
 
 > [!NOTE]
-> During this module we will only focus on Enterprise Agreement customers who will be deploying an Enterprise-scale solution. Pay As You Go (PAYG) Subscriptions, Visual Studio Subscriptions, and Cloud Solution Provider (CSP) Subscriptions an be used but not recommended at this time.
+>During this module we will only focus on organizations with Enterprise Agreements who will be deploying with Enterprise-scale architecture. Pay As You Go (PAYG) Subscriptions, Visual Studio Subscriptions, and Cloud Solution Provider (CSP) Subscriptions can be used and guidance will be provided in later revisions.
 
 An Enterprise Agreement (EA) enrollment represents the commercial relationship between Microsoft and how your organization uses Azure. It provides the basis for billing across all your subscriptions and affects administration of your digital estate. Your EA enrollment is managed via an Azure enterprise portal. An enrollment often represents an organization's hierarchy, which includes departments, accounts, and subscriptions. This hierarchy represents cost-enrollment groups within an organization.
 
@@ -21,25 +21,27 @@ Subscriptions are the smallest unit in the Azure enterprise portal. They're cont
 
 Enterprise Agreement enrollment roles link users with their functional role. The roles work both in the Enterprise Portal and within the Azure Portal. These roles are:
 
-### Enterprise administrator
+#### Enterprise administrator
 
 This role has the highest level of access and can manage accounts and account owners, enterprise administrators, department administrators.  The account can also view usage across all accounts and unbilled charges.  You can also manage notification contacts.
 
-### Department administrator
+#### Department administrator
 
 With the department administrator you can create and manage departments, create new account owners, view usage details for departments that are managed by the department administrator, and view cost.  Deployment administrators can be granted read-only access.  You may have multiple department administrators for each enterprise enrollment.
 
-### Account owner
+#### Account owner
 
 Account owners can create and manage subscriptions, manage service administrators, and view usage for subscriptions.  
 
-### Service administrator
+#### Service administrator
 
 The service administrator role has permissions to manage services in Azure portal and assign users to co-administrator role.
 
-### Notification contact
+#### Notification contact
 
 This account receives notifications usage related to enrollment.
+
+### Enterprise Enrollment Design Recommendations and Considerations
 
 ***Recommendations***
 
