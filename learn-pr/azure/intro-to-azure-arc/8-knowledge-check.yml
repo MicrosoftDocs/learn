@@ -54,4 +54,32 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. This is a function of RBAC permissions in Azure Arc."
 
+  - content: "To onboard machines to Azure Arc, which of the following is the minimal permissions an administrator would need?"
+    choices:
+    - content: "Member of the Azure Connected Machine Onboarding role."
+      isCorrect: true
+      explanation: "That's correct. This is the minimum security permission required."
+    - content: "Member of the Azure Connected Machine Resource Administrator role."
+      isCorrect: false
+      explanation: "That's incorrect. This permission is required to read, modify, re-onboard, and delete a machine."
+    - content: "Member of the Azure Conributor role."
+      isCorrect: false
+      explanation: "That's incorrect. This permission would enable the administrator to achieve their objective, but is not the minimum permission required."
+
+  - content: "Which Windows Server extension could an administrator use through Azure Arc to enable Azure Monitor Insights on servers?"
+    choices:
+    - content: "CustomScriptExtension."
+      isCorrect: false
+      explanation: "That's incorrect. This extension downloads and runs scripts on servers."
+    - content: "Log Analytics agent."
+      isCorrect: false
+      explanation: "That's incorrect. This extension installs the Log Analytics agent on servers and enrolls the servers into an existing Log Analytics workspace."
+    - content: "Microsoft Dependency Agent."
+      isCorrect: true
+      explanation: "That's correct. This extension installs the Dependency Agent to enable Azure Monitor Insights on servers."
+
+
+
+
+
 
