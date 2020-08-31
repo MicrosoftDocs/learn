@@ -33,7 +33,7 @@ The following table shows how Azure Static Web Apps will publish your app to dif
 | **main** branch   | Live web site URL | `https://purple-rain-062d03304.azurestaticapps.net/`   |
 | Pull Request #5   | Preview URL       | `https://purple-rain-062d03304-5.azurestaticapps.net/` |
 
-You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **main** branch. When you create the pull request against the **mamainster** branch, the GitHub Action publishes the app to a preview URL.
+You're currently working in the **api** branch. You'll make a pull request from your **api** branch to the **main** branch. When you create the pull request against the **main** branch, the GitHub Action publishes the app to a preview URL.
 
 Once the workflow has completed building and deploying your app, the GitHub bot adds a comment to your pull request, which contains the URL of the pre-production environment. You can click on this link to see your staged changes.
 

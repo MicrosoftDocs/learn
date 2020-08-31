@@ -37,7 +37,7 @@ Next, configure your new app and link it to your GitHub repository.
    | Setting        | Value                                                    |
    | -------------- | -------------------------------------------------------- |
    | _Organization_ | Select the Organization where you created the repository |
-   | _Repository_   | **my-static-web-app**                                    |
+   | _Repository_   | **my-static-blazor-app**                                    |
    | _Branch_       | **main**                                                 |
 
 1. Click the **Next: Build >** button to edit the build configuration

@@ -9,6 +9,9 @@ In this exercise, you'll complete the following steps:
 1. Configure the web app to proxy HTTP requests to the API
 1. Run the API and the web app
 
+> [!NOTE]
+> Please be sure to have setup [Azure Functions for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs).
+
 ## Get the Function app
 
 Now, you'll add an API and connect it to your front-end app. The _Api_ project includes an incomplete Azure Functions project. You'll complete that now.
@@ -49,7 +52,7 @@ You just extended your Azure Function app with a function to get your products!
 
 Notice the `Run` method of the newly created C# class has a `HttpTrigger` attribute on the first argument, the `HttpRequest`. This attribute is used to define the access level of the Function, as well as the HTTP method(s) to listen for and the route endpoint.
 
-The route endpoint will be `null` by default, meaning that the endpoint will use the value of the `FunctionName` attribute, which is `ProductsGet`. However, you want the endpoint to be **products**, which you can do by setting the `HttpTrigger`'s `Route` property to `"products"`.
+The route endpoint will be `null` by default, meaning that the endpoint will use the value of the `FunctionName` attribute, which is `ProductsGet`. Settings the `Route` property to `"products"` will override the default behaviour.
 
 Now your function is triggered on an HTTP `GET` request to **products**. Your `Run` method should look like the following code:
 
@@ -72,22 +75,30 @@ Now, change the function endpoint to return the products:
 1. Replace its contents with the following code:
 
 ```csharp
-public class ProductsGet
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Azure.WebJobs;
+using Microsoft.Azure.WebJobs.Extensions.Http;
+using Microsoft.AspNetCore.Http;
+
+namespace Api
 {
-    private readonly IProductData productData;
-
-    public ProductsGet(IProductData productData)
+    public class ProductsGet
     {
-        this.productData = productData;
-    }
+        private readonly IProductData productData;
 
-    [FunctionName("ProductsGet")]
-    public async Task<IActionResult> Run(
-        [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req,
-        ILogger log)
-    {
-        var products = await productData.GetProducts();
-        return new OkObjectResult(products);
+        public ProductsGet(IProductData productData)
+        {
+            this.productData = productData;
+        }
+
+        [FunctionName("ProductsGet")]
+        public async Task<IActionResult> Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req)
+        {
+            var products = await productData.GetProducts();
+            return new OkObjectResult(products);
+        }
     }
 }
 ```
@@ -106,7 +117,7 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
    ```json
    {
      "Host": {
-       "CORS": "https://localhost:44382/"
+       "CORS": "https://localhost:44348"
      }
    }
    ```
@@ -118,19 +129,16 @@ Now, tell Azure Functions to allow your web app to make HTTP requests to the API
 
 Now it's time to watch your web app and Azure Functions project work together. Start by running your Azure Functions project locally by following these steps:
 
-> [!NOTE]
-> Please be sure to install the [Azure Functions for Visual Studio](https://docs.microsoft.com/azure/azure-functions/functions-develop-vs) support is installed.
-
-1. In Visual Studio, right-click on the _ShopAtHome_ solution
+1. In Visual Studio, right-click on the _ShoppingList_ solution
 1. Select **Set Startup Projects**
 1. Choose the _Multiple startup projects_ option and set _Api_ and _Client_ to have **Start** as their _Action_ then click _Ok_
-1. Press <kbd>F5</kbd> to launch the debugger
+1. Launch the debugger
 
 ### Browse to your app
 
 It's time to see your application running locally against the Azure Functions API.
 
-Browse to `https://localhost:44382/`.
+Browse to `https://localhost:44348/`.
 
 You built your application and now it's running locally making HTTP GET requests to your API.
 

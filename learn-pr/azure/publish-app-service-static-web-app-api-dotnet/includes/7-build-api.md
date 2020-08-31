@@ -29,14 +29,14 @@ Notice that your HTTP GET requests will route to _api/products_. The _api_ prefi
 
 ### Create an API for the web app
 
-So far you've been using a front-end framework. Soon you'll add an API and connect it to your front-end app. Your repository has an _api-starter_ folder that contains an incomplete Azure Functions project and HTTP endpoints for PUT, POST, and DELETE of your products.
+So far you've been using a front-end framework. Soon you'll add an API and connect it to your front-end app. Your repository has an _Api_ project that contains an incomplete Azure Functions project and HTTP endpoints for PUT, POST, and DELETE of your products.
 The API is missing the HTTP GET function. You'll complete the Azure Functions project's API and add the missing function. Then, you'll connect your API to your front-end web app.
 
 ### Previewing changes to your web app
 
 Before making changes to an app, it's good practice to create a new branch for the changes. You'll be making several changes when you complete the API for your app, so you'll create a branch for these changes.
 
-After you make the changes, you'll want to see them running before deciding to merge the changes. Once you create a pull request from your new branch to the **master** branch, the GitHub Action will build your app and API and deploy them both to a preview URL. This allows you to leave your web app running with Azure Static Web Apps, but also see a second preview URL with the results from your pull request.
+After you make the changes, you'll want to see them running before deciding to merge the changes. Once you create a pull request from your new branch to the **main** branch, the GitHub Action will build your app and API and deploy them both to a preview URL. This allows you to leave your web app running with Azure Static Web Apps, but also see a second preview URL with the results from your pull request.
 
 ### Configure communication between your web app and API
 

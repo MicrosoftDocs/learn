@@ -6,10 +6,10 @@ Azure Static Web Apps added a GitHub Actions workflow file to the branch you sel
 
 Pull your code changes from Git by following these steps:
 
-1. Open the **ShopAtHome** solution in Visual Studio.
+1. Open the **ShoppingList** solution in Visual Studio.
 1. Open the _Git_ menu and select **Pull** .
 
-You can now see your workflow file in the folder _.github/workflows_ in Explorer.
+You can now see your workflow file in the folder _.github/workflows_ in **Windows Explorer** (the file in not part of the Visual Studio solution).
 
 ## Create a routing rule
 

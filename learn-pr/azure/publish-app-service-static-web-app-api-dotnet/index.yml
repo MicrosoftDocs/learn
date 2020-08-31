@@ -16,10 +16,10 @@ abstract: |
     - Create an API for the app with Azure Functions
     - Publish the app and its API to Azure Static Web Apps
 prerequisites: |
-  - Familiarity with Blazor
-  - Beginner-level experience with Azure Functions
+  - Basic knowledge of web app concepts
+  - C# .NET experience at a beginner level
   - A GitHub account
-  - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/), including the Azure workload
+  - [Visual Studio 2019 (or newer)](https://visualstudio.microsoft.com/vs/), including the _Azure_ and _ASP.NET and web development_ workloads
   - Familiarity with basic Visual Studio operation, including interacting with Git repositories and basic debugging functions
 iconUrl: /learn/achievements/publish-static-web-app-and-api.svg
 levels:
