@@ -33,7 +33,7 @@ quiz:
     - content: 'Azure VPN'
       isCorrect: false
       explanation: 'A single VPN tunnel cannot do 10gbps'
-    - content: 'Colocate their servers inside Azure Datacenters '
+    - content: 'Colocate their servers inside Azure Datacenters'
       isCorrect: false
       explanation: 'This is not a possibility'
     - content: 'ExpressRoute Direct'
