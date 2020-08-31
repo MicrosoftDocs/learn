@@ -7,7 +7,7 @@ An Enterprise Agreement (EA) enrollment represents the commercial relationship b
 
 :::image type="content" source="../media/2-ea.png" alt-text="Enterprise Enrollment":::
 
-## Azure Enterprise Portal
+### Azure Enterprise Portal
 
 The Azure Enterprise portal you can help you manage your and reconcile the cost for your Enterprise Agreement services.  Within the portal you will be able to create departments, subscriptions and accounts.  You will also be able to create and manage API keys for your enrollment.
 
@@ -17,7 +17,7 @@ Accounts are organizational units in the Azure enterprise portal. They can be us
 
 Subscriptions are the smallest unit in the Azure enterprise portal. They're containers for Azure services managed by the service administrator  They're where your organization deploys Azure services.
 
-## Enterprise user roles
+### Enterprise user roles
 
 Enterprise Agreement enrollment roles link users with their functional role. The roles work both in the Enterprise Portal and within the Azure Portal. These roles are:
 
