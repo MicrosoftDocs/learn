@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: All Virtual Networks with Public Endpoints should have what?
+  - content: "All virtual networks with public endpoints should have what?"
     choices:
     - content: 'Azure Front Door'
       isCorrect: false
@@ -28,14 +28,14 @@ quiz:
       isCorrect: true
       explanation: 'DDoS Standard provides proactive, SLA backed DDoS protection with Log Telemetry'
 
-  - content: Contoso needs multiple 10gbps circuits in a single peering location. They should consider?
+  - content: "Contoso needs multiple 10 Gpbs circuits in a single peering location. Which of the following should they consider?"
     choices:
     - content: 'Azure VPN'
       isCorrect: false
-      explanation: 'A single VPN tunnel cannot do 10gbps'
+      explanation: 'A single VPN tunnel cannot provide a throughput of 10 Gbps'
     - content: 'Colocate their servers inside Azure Datacenters '
       isCorrect: false
       explanation: 'This is not a possibility'
     - content: 'ExpressRoute Direct'
       isCorrect: true
-      explanation: 'ExpressRoute Direct allows for a 100gb connection to Microsoft's Enterprise Edge routers which can be carved into multiple 10gb circuits'
+      explanation: "ExpressRoute Direct allows for a 100 Gb connection to Microsoft's Enterprise Edge routers which can be carved into multiple 10 Gb circuits"
