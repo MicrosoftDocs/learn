@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-hybrid-services.6-hybrid-cloud-apps
+metadata:
+  title: Hybrid cloud applications
+  description: Hybrid cloud applications
+  ms.date: 09/21/2019
+  author: Orin-Thomas
+  ms.author: orthomas
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Hybrid cloud applications
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-hybrid-cloud-apps.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Question 1'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
+    - content: 'Answer 4'
+      isCorrect: true
+      explanation: 'Explanation 4'
+
+  - content: 'Question 2'
+    choices:
+    - content: 'Answer 1'
+      isCorrect: false
+      explanation: 'Explanation 1'
+    - content: 'Answer 2'
+      isCorrect: false
+      explanation: 'Explanation 2'
+    - content: 'Answer 3'
+      isCorrect: false
+      explanation: 'Explanation 3'
+    - content: 'Answer 4'
+      isCorrect: true
+      explanation: 'Explanation 4'
