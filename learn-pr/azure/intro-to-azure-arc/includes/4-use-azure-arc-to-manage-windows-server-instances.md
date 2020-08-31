@@ -1,5 +1,5 @@
 
-After they onboard a Windows Server computer, Contoso adminsitrators can use Azure Arc to manage and configure that device. A number of options are available, described below, and others will be available soon.
+After they onboard a Windows Server computer, Contoso administrators can use Azure Arc to manage and configure that device. A number of options are available, described below, and others will be available soon.
 
 - Overview. Enables you to review basic information about the server, including status, location, subscription, computer name, operating system, and tags.
 - Activity log. Enables you to review a list of activities that were performed against the server and by whom the events were performed.

@@ -62,7 +62,7 @@ quiz:
     - content: "Member of the Azure Connected Machine Resource Administrator role."
       isCorrect: false
       explanation: "That's incorrect. This permission is required to read, modify, re-onboard, and delete a machine."
-    - content: "Member of the Azure Conributor role."
+    - content: "Member of the Azure Contributor role."
       isCorrect: false
       explanation: "That's incorrect. This permission would enable the administrator to achieve their objective, but is not the minimum permission required."
 
