@@ -30,3 +30,18 @@ quiz:
     - content: 'Read Access Geo-Redundant Storage'
       isCorrect: false
       explanation: 'Availability Zones are tolerant to datacenter failures through redundancy and logical isolation of services.'
+
+  - content: 'By what measure should an organization quantify their availability targets?'
+    choices:
+    - content: 'Service Level Objective and/or Service Level Agreement'
+      isCorrect: true
+      explanation: 'Availability targets are typically measured by Service Level Objectives (SLO) and Service Level Agreements (SLA).'
+    - content: 'Recovery Point Objective and Recovery Time Objective'
+      isCorrect: false
+      explanation: 'Availability targets are typically measured by Service Level Objectives (SLO) and Service Level Agreements (SLA).'
+    - content: 'Mean Time Between Failure'
+      isCorrect: false
+      explanation: 'Availability targets are typically measured by Service Level Objectives (SLO) and Service Level Agreements (SLA).'
+    - content: 'Mean Time To Recover'
+      isCorrect: false
+      explanation: 'Availability targets are typically measured by Service Level Objectives (SLO) and Service Level Agreements (SLA).'

@@ -31,3 +31,17 @@ quiz:
       isCorrect: false
       explanation: 'A single Log Analytics workspace is recommended for platform log data when not constrained by sovereignty requirements.'
 
+  - content: 'Where can you find a record of all write operations (PUT, POST, DELETE) for subscription resources?'
+    choices:
+    - content: 'Azure Security Center'
+      isCorrect: false
+      explanation: 'The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.'
+    - content: 'Azure Resource Graph'
+      isCorrect: false
+      explanation: 'The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.'
+    - content: 'Diagnostic log'
+      isCorrect: false
+      explanation: 'The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.'
+    - content: 'Azure Activity log'
+      isCorrect: true
+      explanation: 'The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.'

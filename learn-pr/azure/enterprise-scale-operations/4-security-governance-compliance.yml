@@ -30,3 +30,18 @@ quiz:
     - content: 'Azure Security Center'
       isCorrect: false
       explanation: 'Azure Policy helps to enforce organizational standards and to assess compliance at-scale.'
+
+  - content: 'At what level within the organizational hierarchy should compliance standards be defined?'
+    choices:
+    - content: 'Root management group'
+      isCorrect: false
+      explanation: 'The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.'
+    - content: 'Landing zone'
+      isCorrect: true
+      explanation: 'The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.'
+    - content: 'Subscription'
+      isCorrect: false
+      explanation: 'The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.'
+    - content: 'Resource Group'
+      isCorrect: false
+      explanation: 'The process of enforcing compliance begins with a defined set of regulatory and compliance standards at the landing zone level.'
