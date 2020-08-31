@@ -13,7 +13,7 @@ summary: Minimize the time and resources required to migrate your on-premises en
 abstract: | 
   In this module, you will:
   - Discover how Azure Migrate can assess your existing workloads and plan your migration to Azure.
-  - Discover how Azure Site Recovery and Azure Database Migration Service can migrate your systems to Azure. 
+  - Discover how Azure Migrate and Azure Database Migration Service can migrate your systems to Azure. 
 prerequisites: | 
   - Knowledge of cloud and traditional architecture concepts
   - Knowledge of networking, compute, and database systems
