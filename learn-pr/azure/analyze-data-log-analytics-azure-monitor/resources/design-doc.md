@@ -23,7 +23,7 @@ Analyze log data by using Log Analytics in Azure Monitor
 
 ## Summary
 
-Assess Log Analytics and Azure Monitor. Deploy Log Analytics workspace. Enable Log Analytics extension on Azure virtual machines. Configure diagnostic settings for Azure VMs. Monitor performance of virtual machines using Log Analytics queries and create alerts. Save results of queries to a dashboard and interpret graphical representations of data extracted from queries. 
+Assess Log Analytics and Azure Monitor. Deploy Log Analytics workspace. Enable Log Analytics extension on Azure virtual machines. Configure diagnostic settings for Azure VMs. Monitor performance of virtual machines using Log Analytics queries and create alerts. Save results of queries to a dashboard and interpret graphical representations of data extracted from queries.
 
 ## Learning objectives
 
@@ -38,9 +38,13 @@ Identify the subtasks of *module title*
 
 | Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it: **Exercise or Knowledge check**? | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
 | ---- | ---- | ---- | ---- | ---- |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
-| TODO | TODO | TODO | TODO | TODO |
+| Assess Log Analytics and Azure Monitor | Investigate tooling | Knowledge Check | Evaluate Azure Monitor and Log Analytics | Yes |
+| Evaluate diagnostics settings and metrics | Investigate tooling | Knowledge Check | Develop understanding of logs and metrics | Yes |
+| Deploy Log Analytics workspace | How-to deploy workspace | Exercise | Interactive deployment | Yes |
+| Enable Log Analytics extension for Azure VMs | How-to enable extension | Exercise | Interactive deployment | Yes |
+| Configure diagnostics settings for Azure VMs | How-to configure diagnostic settings for VMs | Exercise | Interactive configuration | Yes |
+| Monitor performance of VMs using Log Analytics queries + alerts | How-to monitor using queries and alerts | Exercise | Interactive configuration | Yes |
+| Save results of queries to a dashboard and interpret graphical representations of data extracted from queries | How-to save results of queries for analysis | Exercise | Interactive configuration | Yes |
 
 ## Outline the units
 
@@ -48,7 +52,7 @@ Identify the subtasks of *module title*
 
 1. **Introduction**
 
-A financial services firm is building more workloads and applications in Azure, versus building on-premises. Alerting and trend analysis have become increasingly difficult over time. The management team won't approve moving the on-premises monitoring environment to Azure because of licensing costs. Additionally, the environments being built in Azure are a mixture of IaaS and PaaS resources. Even if the on-premises monitoring environment could be moved, it couldn't monitor PaaS resources. The operations team is exploring Azure Monitor and Log Analytics as cloud native tools for their Azure Resources.
+Imagine you are hired into an IT department for a large financial services firm. From an operational perspective, the IT department has been building more workloads and applications in Azure, versus building on-premises. Monitoring these workloads and applications have become difficult over time because the management team won't approve moving the on-premises monitoring environment to Azure due to licensing costs. Additionally, the environments being built in Azure are a mixture of Azure virtual machines, web applications, and Azure SQL databases. Even if the on-premises monitoring environment could be moved, it couldn't monitor PaaS resources because the solution is designed to only monitor virtual machines. As part of the operations team, you will be tasked with exploring Azure Monitor and Log Analytics as cloud native tooling for monitoring deployed Azure Resources.
 
 1. **What is Azure Monitor and Log Analytics?**
 
@@ -64,7 +68,7 @@ A financial services firm is building more workloads and applications in Azure, 
 
     **Knowledge check**
 
-    1. Individual business units need to query logs generated from their resources only. Which access model would you select for your Log Analytics deployment?
+    1. After asking individual business units about monitoring wants and needs, you determine each unit needs to be able to query logs generated from their resources only. Which access model would you select for your Log Analytics deployment?
     1. What is the relationship between Log Analytics and Azure Monitor?
 
 1. **Exercise - Set up Log Analytics workspace**
@@ -78,7 +82,7 @@ A financial services firm is building more workloads and applications in Azure, 
     1. Once deployed, change to a resource-centric model.
     1. Deploy 2 VMs from portal and connect to Log Analytics workspace.
 
-1. **Log queries, metrics, and diagnostics settings**
+1. **Introduction to log queries**
 
     - Introduce and explain concept of log queries
         - Azure Monitor Logs is based on Azure Data Explorer; log queries are written using the Kusto Query Language (KQL)
@@ -88,22 +92,39 @@ A financial services firm is building more workloads and applications in Azure, 
     - Include detailed breakdown on insights and solutions
         - Insights and solutions allow an ability to process log data without exposing the user to underlying queries
         - Each of the insights and solutions provides a quick overview into health of deployed resources in Azure
-    - Introduce diagnostics settings
+
+    **Knowledge check**
+
+    1. What are Azure Monitor log queries based on?
+    1. What do Insights provide access to?
+
+1. **Introduction to Azure Monitor Metrics**
+
+    - Introduce metrics
+        - Focus on the difference between metrics and logs
+        - Indicate data collected by Azure Monitor Metrics is stored in a time-series database, which is optimized for analyzing time-stamped data
+        - Highlight multi-dimensional metrics and sources of Azure Monitor Metrics
+        - Cover near real time alerting and fast detection of issues
+        - Go over different ways to use metric data in Azure Monitor
+    
+    **Knowledge check**
+    1. What are the differences between metrics and logs captured in Azure?
+    1. What are the sources of Azure Monitor Metrics?
+
+1. **Introduction to diagnostics settings**
+
+     - Introduce diagnostics settings
         - Cover that diagnostic settings provide greater visibility into platform events that Azure resources depend on
         - Go over different types of platform logs (resource logs - previously diagnostic logs, Activity log, Azure Active Directory logs) and metrics related to detailed diagnostic settings
         - Platform logs are generated automatically, but not collected automatically unless a configuration setting is made
         - Discuss the ways to collect diagnostic settings (Log Analytics workspaces, Event hubs, or Azure Blob Storage)
-    - Introduce metrics
-        - Focus on the difference between metrics and logs.
-        - Cover near real time alerting and fast detection of issues
-        - Go over different ways to use metric data in Azure Monitor
 
     **Knowledge check**
 
     1. What are all the destinations you can send platform logs to for diagnostic settings of Azure resources?
-    1. What is Azure Monitor Logs based on?
+    1. What do Azure Active Directory logs showcase?
 
-1. **Exercise - Build log queries, set up diagnostic settings, and create alerts for Azure virtual machines**
+1. **Exercise - Build log queries**
 
     Follow these steps:
 
