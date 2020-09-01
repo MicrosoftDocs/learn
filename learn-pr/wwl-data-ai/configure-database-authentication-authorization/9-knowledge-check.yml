@@ -44,11 +44,11 @@ quiz:
       isCorrect: false
       explanation: "That's incorrect. This role only allows users to read all of the data in a given database, but not write any data."
     - content: "db_accessadmin"
-      isCorrect: false
-      explanation: "That's incorrect. Access admin can add users to the database, but cannot create them."
-    - content: "db_securityadmin"
       isCorrect: true
-      explanation: "That's correct. The security admin role is privileged and can create logins and users."
+      explanation: "That's correct. Access admin can add users to the database and create them."
+    - content: "db_securityadmin"
+      isCorrect: false
+      explanation: "That's incorrect. The security admin role is privileged, but can't create logins and users."
   - content: "Which permission allows the user to perform any option against a database object?"
     choices:
     - content: "Control"
