@@ -47,7 +47,7 @@ For example, a user who is assigned with the Azure Sentinel Reader and Azure Con
 The following table summarizes the roles and allowed actions in Azure Sentinel.
 
 |Roles|Create and run playbooks|Create and edit workbooks, analytic rules, and other Azure Sentinel resources|Manage incidents such as dismissing and assigning|View data incidents, workbooks, and other Azure Sentinel resources|
-|---------|----------------------------|------------------------------------------------------------|--------------------------------------------|------------------------------------------------------------|
+|---|---|---|---|---|
 |Azure Sentinel Reader|No|No|No|Yes|
 |Azure Sentinel Responder|No|No|Yes|Yes|
 |Azure Sentinel Contributor|No|Yes|Yes|Yes|
