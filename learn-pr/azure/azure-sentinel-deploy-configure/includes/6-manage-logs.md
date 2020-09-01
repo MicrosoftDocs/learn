@@ -1,7 +1,3 @@
-<!-- 5 minutes to read
-Title for unit: Manage logs
-REMOVE TEXT AFTER ADDED TO METADATA
--->
 As the Contoso administrator who is tasked with deploying a POC environment for Azure Sentinel, you must understand how to deploy and manage the log data that will be collected.
 
 ## Manage logs for Azure Sentinel
