@@ -37,8 +37,8 @@ In addition to Azure Sentinel-dedicated Azure RBAC roles, other Azure and Log An
 
 - Log Analytics roles grant access across all your Log Analytics workspaces:
 
-    - Log Analytics Contributor
-    - Log Analytics Reader
+  - Log Analytics Contributor
+  - Log Analytics Reader
 
 For example, a user who is assigned with the Azure Sentinel Reader and Azure Contributor (not Azure Sentinel Contributor) roles can edit data in Azure Sentinel, although they only have Sentinel Reader permissions. If you want to grant permissions to Azure Sentinel only, you should carefully remove the user's prior permissions, making sure you don't break any needed permission role for another resource.
 
