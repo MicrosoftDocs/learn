@@ -1,6 +1,6 @@
 Consider the following scenario. Then choose the best response for each question that follows and select "Check your answers."
 
-Tailwind Traders is moving their online payment system to Azure. The processing of online orders begins through their website, which Tailwind Traders manages through Azure App Service. (App Service is way to host web applications on Azure.)
+Tailwind Traders is moving their online payment system to Azure. The processing of online orders begins through their website, which Tailwind Traders manages through Azure App Service. (App Service is a way to host web applications on Azure.)
 
 The web application that runs the website passes order information to virtual machines (VMs), which further process each order. These virtual machines exist on an Azure Virtual Network (VNet), but need to access the internet to retrieve software packages and system updates.
 
