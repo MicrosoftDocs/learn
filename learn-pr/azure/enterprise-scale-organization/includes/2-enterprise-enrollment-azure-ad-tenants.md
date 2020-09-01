@@ -43,6 +43,8 @@ This account receives notifications usage related to enrollment.
 
 ### Enterprise Enrollment Design Recommendations and Considerations
 
+The following are design recommendations and considerations for designing Enterprise Enrollment:
+
 ***Recommendations***
 
 - Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.
