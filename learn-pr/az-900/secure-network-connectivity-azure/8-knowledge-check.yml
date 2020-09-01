@@ -14,7 +14,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: Which Azure service can help Tailwind Traders protect their App Service instance from a Distributed Denial of Service (DDoS) attack?
+  - content: An attacker can bring down your website by sending a large volume of network traffic to your servers. Which Azure service can help Tailwind Traders protect their App Service instance from this kind of attack?
     choices:
     - content: Azure Firewall
       isCorrect: false
