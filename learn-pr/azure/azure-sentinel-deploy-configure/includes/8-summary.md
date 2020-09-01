@@ -1,6 +1,3 @@
-<!-- 2 minutes to read
-Title: Summary
--->
 You have learned how Azure Sentinel can provide a means to address the Contoso IT director's pain points:
 
 - Alerts were from multiple products.
