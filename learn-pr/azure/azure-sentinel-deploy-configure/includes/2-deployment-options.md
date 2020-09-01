@@ -18,7 +18,7 @@ Azure Sentinel uses machine learning and AI to perform:
 To onboard Azure Sentinel, you must:
 
 1. Enable Azure Sentinel.
-2. Connect your data sources.
+1. Connect your data sources.
 
 Azure Sentinel comes with a number of connectors for Microsoft and other solutions that are available out of the box and provide real-time integration. There are connectors for:
 
