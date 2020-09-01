@@ -1,6 +1,3 @@
-<!-- 5 minutes to read
-Title for unit: Deployment considerations
--->
 As the Contoso lead system engineer and Azure administrator who is tasked with deploying a POC environment for Azure Sentinel, your first step is to understand its capabilities and deployment considerations.
 
 ## Overview
