@@ -61,6 +61,7 @@ The Azure Sentinel Reader can perform what actions?
 (X) Review data, incidents, workbooks, and other Azure Sentinel resources.{{That's correct. That role can review data, incidents, workbooks, and other Azure Sentinel resources.}}
 
 () Create and run playbooks.{{That's incorrect. Azure Sentinel Reader only can review data, incidents, workbooks, and other Azure Sentinel resources.}}
+
 ## Multiple Choice
 
 CEF is an abbreviation for what?
