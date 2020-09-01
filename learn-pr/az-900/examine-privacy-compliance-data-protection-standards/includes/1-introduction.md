@@ -23,6 +23,6 @@ To answer theses questions, you'll start by learning about the types of complian
 After completing this module, you'll be able to:
 
 * Explain the types of compliance offerings that are available on Azure.
-* Access the Microsoft Privacy Statement to learn what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
+* Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum to learn what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
 * Gain insight into regulatory standards and compliance on Azure from the Trust Center and from the Azure compliance documentation.
 * Explain Azure capabilities that are specific to government agencies.
