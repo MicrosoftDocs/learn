@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.solve-graph-coloring-problems-grovers-search.3-quantum-oracles
-title: Quantum oracles
+title: Quantum oracles: implementing classical functions on a quantum computer
 metadata:
   description: TBD.
   ms.date: 09/19/2020

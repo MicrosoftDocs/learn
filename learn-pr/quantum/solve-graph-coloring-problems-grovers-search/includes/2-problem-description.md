@@ -14,7 +14,7 @@ The search problem is by design very generic. Indeed, any problem that allows to
 
 Here are just some examples:
 
-* [Boolean satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem): is the set of Boolean variables $x$ an interpretation that satisfies the given Boolean formula?
+* [Boolean satisfiability problem](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem): is the set of Boolean values $x$ an interpretation (an assignment of values to variables) that satisfies the given Boolean formula?
 * [Traveling salesman problem](https://en.wikipedia.org/wiki/Travelling_salesman_problem): does $x$ describe the shortest possible loop that connects all cities?
 * Database search problem: does the database table contain a record $x$?
 * Integer factorization problem: is the fixed number $N$ divisible by the number $x$?
@@ -24,7 +24,7 @@ Some of these problems are better suited to benefit from using Grover's algorith
 
 ## Graph coloring problem
 
-Graph coloring problem (more precisely called [proper vertex coloring](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring)) is formulated as follows: given a graph, assign a label ("color") to each of the graph's vertices so that no two vertices connected by an edge have the same label.
+Graph coloring problem (more precisely called [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring)) is formulated as follows: given a graph, assign a label ("color") to each of the graph's vertices so that no two vertices connected by an edge have the same label.
 
 Here is an example graph:
 
