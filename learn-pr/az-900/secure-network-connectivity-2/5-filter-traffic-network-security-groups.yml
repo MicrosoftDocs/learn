@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity.5-filter-traffic-network-security-groups
+uid: learn.secure-network-connectivity-azure.5-filter-traffic-network-security-groups
 title: Filter network traffic by using network security groups
 metadata:
   description: Learn how network security groups enable you to filter network traffic to and from Azure resources within an Azure Virtual Network (VNet).

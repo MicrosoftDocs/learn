@@ -33,14 +33,14 @@ roles:
 products:
 - azure
 units:
-- learn.secure-network-connectivity.1-introduction
-- learn.secure-network-connectivity.2-what-is-defense-in-depth
-- learn.secure-network-connectivity.3-protect-network-azure-firewall
-- learn.secure-network-connectivity.4-protect-attacks-azure-ddos-protection
-- learn.secure-network-connectivity.5-filter-traffic-network-security-groups
-- learn.secure-network-connectivity.6-combine-services-complete-solution
-- learn.secure-network-connectivity.7-configure-access-network-security-group
-- learn.secure-network-connectivity.8-knowledge-check
-- learn.secure-network-connectivity.9-summary
+- learn.secure-network-connectivity-azure.1-introduction
+- learn.secure-network-connectivity-azure.2-what-is-defense-in-depth
+- learn.secure-network-connectivity-azure.3-protect-network-azure-firewall
+- learn.secure-network-connectivity-azure.4-protect-attacks-azure-ddos-protection
+- learn.secure-network-connectivity-azure.5-filter-traffic-network-security-groups
+- learn.secure-network-connectivity-azure.6-combine-services-complete-solution
+- learn.secure-network-connectivity-azure.7-configure-access-network-security-group
+- learn.secure-network-connectivity-azure.8-knowledge-check
+- learn.secure-network-connectivity-azure.9-summary
 badge:
-  uid: learn.secure-network-connectivity.badge
+  uid: learn.secure-network-connectivity-azure.badge

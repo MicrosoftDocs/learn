@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity.2-what-is-defense-in-depth
+uid: learn.secure-network-connectivity-azure.2-what-is-defense-in-depth
 title: What is defense in depth?
 metadata:
   description: Identify the various layers that make up a defense in depth strategy.
