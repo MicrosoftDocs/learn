@@ -54,6 +54,7 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
 
     > [!Note]
     > You can select what type of Azure AD logs you want to get:
+    >
     > - **Sign-in logs** provide information about the usage of managed applications and user sign-in activities.
     > - **Audit logs** provide system activity information about users and group management, managed applications, and directory activities.
 
