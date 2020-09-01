@@ -1,6 +1,3 @@
-<!-- 10 minutes to read
-Title for unit: Consider data-connection methods
--->
 As the Contoso administrator who is tasked with deploying a POC environment for Azure Sentinel, you must understand how connections that use agents differ from built-in connectors.
 
 ## External solution connections through an agent
