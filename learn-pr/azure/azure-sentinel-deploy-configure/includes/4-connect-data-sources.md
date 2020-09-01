@@ -1,7 +1,3 @@
-<!-- 10 minutes to read
-Title for unit: Connect data sources 
--->
-
 Now that you have enabled Azure Sentinel, the next step is to connect it to the services that you want to use.
 
 ## Service-to-service data connectors
