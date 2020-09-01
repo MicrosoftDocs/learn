@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-define-network-security-groups.md)]
+  [!include[](includes/5-filter-traffic-network-security-groups.md)]

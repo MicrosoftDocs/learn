@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/8-choose-azure-security-solutions.md)]
+  [!include[](includes/6-combine-services-complete-solution.md)]

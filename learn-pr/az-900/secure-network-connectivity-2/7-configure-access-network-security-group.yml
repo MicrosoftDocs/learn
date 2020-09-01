@@ -12,4 +12,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 8
 content: |
-  [!include[](includes/9-walkthrough-traffic.md)]
+  [!include[](includes/7-configure-access-network-security-group.md)]
