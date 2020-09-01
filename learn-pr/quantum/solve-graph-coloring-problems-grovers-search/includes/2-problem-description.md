@@ -4,7 +4,7 @@ In this unit we will define the problem solved by Grover's search algorithm - so
 
 ## The search problem
 
-The search problem is formulated as follows: you are given a function $f$ that takes an $N$-bit input and returns a 1-bit output, 0 or 1. Your goal is to find any input $x_0$ such that $f(x_0) = 1$.
+The search problem is formulated as follows: you are given a function $f$ that takes an $N$-bit input and returns a 1-bit output, 0 or 1. Your goal is to find any input $x_0$ for which $f(x_0) = 1$.
 
 > Notice that you are not given any information about the structure of the function you are given! You only have access to a "black box" that implements this function, i.e., takes the input and returns the corresponding output.
 
@@ -40,7 +40,7 @@ In fact, the vertices of this graph cannot be labeled using just three colors; y
 
 ![Figure 3. Valid vertex coloring](../media/2-valid-coloring.png)
 
-In general graph coloring is an NP-complete problem and the best known solutions take exponential time to run. 
+In general graph coloring is an [NP-complete problem](https://en.wikipedia.org/wiki/NP-completeness) and the best known solutions take exponential time to run. 
 
 In the next units of this module we'll see how quantum computing can help speed up solving this problem.
 
