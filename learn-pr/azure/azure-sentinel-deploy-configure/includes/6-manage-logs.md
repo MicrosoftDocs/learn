@@ -15,10 +15,10 @@ The Azure Monitor Analytics Workspace is the location where the data is sent. Da
 You can get the full benefit of the Azure Sentinel experience when using a single workspace. Even so, some circumstances might require you to have multiple workspaces. The following table lists some of these situations, and when possible, suggests how the requirement might be satisfied with a single workspace.
 
 |Requirement|Description|Ways to reduce workspace count|
-|-|--|---|
-|Sovereignty and regulatory compliance|A workspace is tied to a specific region. If data must be kept in different Azure geographies to satisfy regulatory requirements, it must be split into separate workspaces.|--|
-|Data ownership|The boundaries of data ownership, for example by subsidiaries or affiliated companies, are better delineated by using separate workspaces.|--|
-|Multiple Azure tenants|Azure Sentinel supports data collection from Microsoft and Azure software as a service resources only within its own Azure AD tenant boundary. Therefore, each Azure AD tenant requires a separate workspace.|--|
+|---|---|---|
+|Sovereignty and regulatory compliance|A workspace is tied to a specific region. If data must be kept in different Azure geographies to satisfy regulatory requirements, it must be split into separate workspaces.||
+|Data ownership|The boundaries of data ownership, for example by subsidiaries or affiliated companies, are better delineated by using separate workspaces.||
+|Multiple Azure tenants|Azure Sentinel supports data collection from Microsoft and Azure software as a service resources only within its own Azure AD tenant boundary. Therefore, each Azure AD tenant requires a separate workspace.||
 |Granular data access control|An organization might need to allow different groups, within or outside the organization, to access some of the data that Azure Sentinel collects.|Use resource Azure RBAC or table-level Azure RBAC|
 |Split billing|By placing workspaces in separate subscriptions, they can bill to different parties.|Usage reporting and cross-charging|
 |Legacy architecture|The use of multiple workspaces might stem from a historical design that took into consideration limitations or best practices that no longer hold true. It might also be an arbitrary design choice that can be modified to better accommodate Azure Sentinel.|Re-architect workspaces|
