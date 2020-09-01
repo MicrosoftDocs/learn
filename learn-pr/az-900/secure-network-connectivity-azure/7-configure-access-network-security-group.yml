@@ -10,6 +10,6 @@ metadata:
   ms.prod: learning-azure
 azureSandbox: true
 interactive: bash
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/7-configure-access-network-security-group.md)]
