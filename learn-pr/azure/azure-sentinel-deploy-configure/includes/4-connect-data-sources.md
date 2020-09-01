@@ -45,14 +45,14 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
 
 1. Read the prerequisites and make sure you have fulfilled them, and then follow the instructions to connect the data source.
 
-    > [!Note]
+    > [!NOTE]
     > Azure Sentinel provides recommendations for which workbooks you should install for each connector so that you can immediately get interesting insights from your data.
 
 1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
 
     :::image type="content" source="../media/Sentinel-AAD-connector-3.png" alt-text="The screenshot depicts the Azure Sentinel connector configuration options." border="true":::
 
-    > [!Note]
+    > [!NOTE]
     > You can select what type of Azure AD logs you want to get:
     >
     > - **Sign-in logs** provide information about the usage of managed applications and user sign-in activities.
