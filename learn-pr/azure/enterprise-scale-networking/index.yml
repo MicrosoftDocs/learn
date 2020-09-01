@@ -11,13 +11,13 @@ metadata:
 title: Enterprise-scale architecture networking design principles
 summary: This training examines key design considerations and recommendations surrounding networking and connectivity to, from, and within Microsoft Azure for the enterprise customer.
 abstract: | 
-In this module, you will
-1. Chose the right network topology
-2. Define the IP addressing for Azure resources
-3. Determine DNS recommendations
-4. Determine how to connect to Azure
-5. Determine how to connect to the public Internet
-6. Determine how to connect to PaaS services
+  In this module, you will
+  - Chose the right network topology
+  - Define the IP addressing for Azure resources
+  - Determine DNS recommendations
+  - Determine how to connect to Azure
+  - Determine how to connect to the public Internet
+  - Determine how to connect to PaaS services
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - advanced
