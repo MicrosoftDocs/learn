@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure Sentinel and connect data sources
-summary: After completing this module, you'll be able to: enable Azure Sentinel, and understand how to deploy connectors to Azure Sentinel. You will also understand how to manage Sentinel log data.
+summary: After completing this module, you'll be able to enable Azure Sentinel, and understand how to deploy connectors to Azure Sentinel. You will also understand how to manage Sentinel log data.
 abstract: | 
   In this module, you will:
   - On board Azure Sentinel.
