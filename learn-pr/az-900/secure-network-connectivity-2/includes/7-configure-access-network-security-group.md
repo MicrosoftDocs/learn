@@ -95,7 +95,7 @@ Here, you get the IP address for your VM and attempt to access your web server's
 
         After a few moments, you see that the connection isn't happening. If you wait for the browser to time out, you'll see something like this:
 
-        :::image type="content" source="../media/9-browser-timeout.png" alt-text="A web browser showing a connection timed out error message.":::
+        :::image type="content" source="../media/7-browser-timeout.png" alt-text="A web browser showing a connection timed out error message.":::
 
         Keep this browser tab open for later.
 
@@ -216,7 +216,7 @@ Now that you've configured network access to port 80, let's try to access the we
 
     You see this:
 
-    :::image type="content" source="../media/9-browser-success.png" alt-text="A web browser showing the home page from the web server. The home page displays a welcome message along with the web server's host name.":::
+    :::image type="content" source="../media/7-browser-success.png" alt-text="A web browser showing the home page from the web server. The home page displays a welcome message along with the web server's host name.":::
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
