@@ -26,7 +26,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure sentinel
+- azure-sentinel
 units:
 - learn.azure.azure-sentinel-deploy-connect.1-introduction
 - learn.azure.azure-sentinel-deploy-connect.2-deployment-options
