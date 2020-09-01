@@ -45,4 +45,3 @@ You can learn more by reviewing the following documents.
 
 - [Secure and use policies on virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/security-policy?azure-portal=true)
 - [Azure best practices for network security](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?azure-portal=true)
-
