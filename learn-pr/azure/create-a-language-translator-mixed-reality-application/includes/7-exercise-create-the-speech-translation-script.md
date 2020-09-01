@@ -6,33 +6,66 @@ A parent object **TranslationUI** is created to store the UI elements inside the
 
 The UI consists of a quad which serves as a flat surface for the text. Displayed on top of the quad is text. The top portion of the quad contains the recognized text whereas the bottom displays the translated speech.
 
-[insert picture]
+:::image type="content" source="../media/translator-ui-final.png" alt-text="A screenshot of the complete translator UI. The label Recognized Speech is at the top followed by the label Translation at the bottom. There is blank space after each label to provide room for the Azure result.":::
 
 ### Create a Translation UI GameObject to store the UI
 
 1. In the **Hierarchy** window, click the **+** icon and select **Create Empty**.
+
+    :::image type="content" source="../media/create-empty.png" alt-text="A screenshot of the hierarchy window. The plus icon and create empty menu option are highlighted.":::
+
 1. Select the **GameObject** object in the **Hierarchy** window. The **GameObject** properties will display in the **Inspector** window.
-1. In the **Inspector** window, name the GameObject **Translation UI** and change the **Transform Scale** to **.0**, **0**, **.8**. This moves the object away from the user which later helps to display the UI elements in front of the user.
+
+    :::image type="content" source="../media/gameobject-properties.png" alt-text="A screenshot of the hierarchy and inspector windows. The Game Object object is highlighted in the hierarchy window. The object's properties is highlighted in the inspector window.":::
+
+1. In the **Inspector** window, name the GameObject **Translation UI** and change the **Transform Position** to **.0**, **0**, **.8**. This moves the object away from the user which later helps to display the UI elements in front of the user.
+
+    :::image type="content" source="../media/translation-ui-properties.png" alt-text="A screenshot of the Translation UI object's properties. The name of the property is highlighted in addition to the transform position values. The x value is 0. The y value is 0. The z value is 0 point 8.":::
 
 ### Add a Quad GameObject
 
 1. To add the object as child of **Translation UI**, in the **Hierarchy** window, select the **Translation UI** object. Next, right click the object and select **3D Object** > **Quad**.
+
+    :::image type="content" source="../media/add-quad-object.png" alt-text="A screenshot of the Hierarchy window with the translation UI object highlighted. The menu is open with two selections highlighted. The first highlighted selection is 3 D object. The second highlighted selection is quad.":::
+
 1. Adjust the Scene view camera using the Scene Gizmo to view the front of the quad.
+
+    :::image type="content" source="../media/scene-gizmo.png" alt-text="A screenshot of the Unity editor Scene window. The play gizmo is highlighted.":::
+
 1. Select the **Quad** object in the **Hierarchy** window. The Quad's properties will display in the **Inspector** window.
 1. In the **Inspector** window, change the Quad's **Transform Scale** to **.8**, **.5**, **.1**. This will make the quad rectangular.
+
+    :::image type="content" source="../media/quad-properties.png" alt-text="A screenshot of the quad object's properties. In the hierarchy window, the quad object is highlighted. In the inspector window, the scale values are highlighted. The x value is 0 point 8. The y value is 0 point 5. The z value is 0 point 1.":::
+
+1. The Quad object's material should be a color that will make the text UI legible. MRTK is equipped with materials that can be applied to GameObjects. In the **Project** window, enter **MRTK_Standard_White** into the search bar to find the color white.
+
+    :::image type="content" source="../media/mrtk-standard-white.png" alt-text="A screenshot of the Project window. The search bar is highlighted. The phrase M R T K underscore Standard underscore White is entered into the search bar.":::
+
+1. Drag the **MRTK_Standard_White** material from the **Project** window to the **Quad** object. The color of the Quad object in the **Scene** window should now be white.
+
+    :::image type="content" source="../media/scene-white-quad.png" alt-text="A screenshot of the Scene window. A white rectangular quad object is in the middle of the scene.":::
 
 ### Add text to display on the Quad GameObject
 
 1. To add the text object as child of **Translation UI**, in the **Hierarchy** window, select the **Translation UI** object. Next, right click the object and select **3D Object** > **Text - TextMeshPro**.
+
+    :::image type="content" source="../media/add-text-object.png" alt-text="A screenshot of the Hierarchy window. The translation U I object is highlighted. A menu is shown with the selections 3 D object and Text dash Text Mesh Pro highlighted.":::
+
 1. Select the **Text - TextMeshPro** object in the **Hierarchy** window. The **Text - TextMeshPro** properties will display in the **Inspector** window.
 1. In the **Inspector** window, name the Text - TextMeshPro object **Recognition (Label)** and change the following **Rect Transform** properties:
     - **Pos X** = 0, **Pos Y** = 0.1, **Pos Z** = 0
     - **Width** = 0.74
     - **Height** = 0.2
+
+    :::image type="content" source="../media/recognition-label-transform-properties.png" alt-text="A screenshot of the recognition label properties. The recognition label object is highlighted in the hierarchy window. In the inspector window, the object and rect transform position, width, and height values are highlighted.":::
+
 1. With the **Recognition (Label)** object still selected, in the **Inspector** window, change the remaining properties:
     - **Text** = Recognized Speech:
     - **Font Size** = 0.3
     - **Face** = #000000
+
+    :::image type="content" source="../media/text-name-size-color-properties.png" alt-text="A screenshot of the inspector window for the Recognition label object. The text, font size and face color properties are highlighted.":::
+
 1. The **Recognition (Label)** object can be duplicated to create the remaining text UI. The **Pos Y** and **Text** properties will be changed for each object to position the text appropriately against the quad. With the **Recognition (Label)** object still selected, use the keyboard short-cut **Ctrl+D** to duplicate the object 3 times.
 1. In the **Hierarchy** window, rename each object as follows:
 1. For each duplicated object, change the **Pos Y** and **Text** properties as such:
@@ -78,12 +111,13 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
         public string SpeechServiceSubscriptionKey = "";
         public string SpeechServiceRegion = "";
     
-        private object threadLocker = new object();
         private bool waitingforReco;
         private string recognizedString;
         private string translatedString;
     
         private bool micPermissionGranted = false;
+
+        private object threadLocker = new object();
     
         public async void ButtonClick()
         {
