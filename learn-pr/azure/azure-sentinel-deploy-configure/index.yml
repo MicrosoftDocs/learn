@@ -15,10 +15,10 @@ abstract: |
   - On board Azure Sentinel.
   - Understand how to connect to the services you want to monitor.
   - Understand how to deploy and manage the log data that will be collected.
-prerequisites: | 
-- Knowledge and experience of accessing Azure Portal.
-- Fundamental Azure Administration.
-- Knowledge of Azure Monitor and its Log Analytics workspace.
+prerequisites: |
+  - Knowledge and experience of accessing Azure Portal.
+  - Fundamental Azure Administration.
+  - Knowledge of Azure Monitor and its Log Analytics workspace.
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
