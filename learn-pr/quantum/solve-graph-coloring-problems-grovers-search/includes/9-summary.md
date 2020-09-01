@@ -4,4 +4,7 @@ Reiterate the scenarios in which Grover's search is useful. Database search is n
 
 ## Learn more
 
-This is a placeholder. Link to related resources. Try not to link too much in the other units - save them for here.
+* Continue exploring the behavior of Grover's search algorithm in [this tutorial](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringGroversAlgorithm).
+* [Learn to solve Boolean satisfiability problems using Grover's algorithm](https://github.com/microsoft/QuantumKatas/blob/master/SolveSATWithGrover).
+* [Deep dive into solving graph coloring problems using Grover's algorithm](https://github.com/microsoft/QuantumKatas/blob/master/GraphColoring).
+* ["Is quantum search practical" paper by Viamontes, Markov, and Hayes](https://web.eecs.umich.edu/~imarkov/pubs/jour/cise05-grov.pdf) offers a great discussion of the practicality of various applications of Grover's search algorithm.

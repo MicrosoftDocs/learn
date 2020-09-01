@@ -21,6 +21,4 @@ This gives us the first part of the answer: the problems best poised to benefit 
 **TODO** 2nd part of the answer - problems that have a nice oracle implementation
 
 
-Resources: ExploringGroversAlgorithm tutorial
-
 ---
