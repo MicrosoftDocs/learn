@@ -1,14 +1,14 @@
 ### YamlMime:LearningPath
-uid: learn.wwl.implement-windows-server-iaas-vm-security
+uid: learn.wwl.deploy-configure-windows-server-iaas-vm
 metadata:
-  title: Implement Windows Server IaaS VM Security
-  description: This learning path deals with securing your Azure resources. After completing the learning path, you’ll be able to determine if your Azure IaaS workloads have any security vulnerabilities, and remediate those potential security vulnerabilities.
+  title: Deploy and configure Windows Server IaaS Virtual Machine
+  description: In this learning path, you’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads. After completing the learning path, you’ll know how to plan, deploy, and upgrade Windows Server Azure Virtual Machines.
   ms.date: 09/02/2020
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Implement Windows Server IaaS VM Security
+title: Deploy and configure Windows Server IaaS Virtual Machine
 prerequisites: |
   - Experience with managing Windows Server operating system and Windows Server workloads in on-premises scenarios, including AD DS, DNS, DFS, Hyper-V, and File and Storage Services.
   - Experience with common Windows Server management tools (implied by the first prerequisite).
@@ -23,8 +23,8 @@ prerequisites: |
     - Automation
     - Monitoring
 summary: |
-  This learning path deals with securing your Azure resources. After completing the learning path, you’ll be able to determine if your Azure IaaS workloads have any security vulnerabilities, and remediate those potential security vulnerabilities.
-iconUrl: /learn/achievements/implement-windows-server-iaas-vm-security.svg
+  In this learning path, you’ll learn how to deploy and configure Azure IaaS Virtual Machine workloads. After completing the learning path, you’ll know how to plan, deploy, and upgrade Windows Server Azure Virtual Machines.
+iconUrl: /learn/achievements/generic-trophy.svg
 levels:
 - intermediate
 roles:
@@ -34,16 +34,15 @@ roles:
 - technology-manager
 products:
 - azure
+- azure-clis
 - azure-cloud-shell
-- azure-monitor
 - azure-portal
+- azure-storage
 - azure-virtual-machines
 modules:
-- learn.wwl.audit-security-of-windows-server-iaas-vms
-- learn.wwl.manage-azure-updates
-- learn.wwl.create-implement-application-allowlists-with-adaptive-application-control
-- learn.wwl.configure-bitlocker-disk-encryption-for-windows-iaas-vms
-- learn.wwl.implement-change-tracking-file-integrity-monitoring-for-windows-iaas-vms
-- learn.wwl.implement-windows-server-iaas-vm-network-security
+- learn.wwl.plan-deploy-windows-server-iaas-vms
+- learn.wwl.customize-windows-server-iaas-vm-images
+- learn.wwl.automate-configuration-of-windows-server-iaas-vms
+- learn.wwl.upgrade-migrate-windows-server-iaas-virtual-machines
 trophy:
-  uid: learn.wwl.implement-windows-server-iaas-vm-security.trophy
+  uid: learn.wwl.deploy-configure-windows-server-iaas-vm.trophy
