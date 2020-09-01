@@ -9,7 +9,7 @@ metadata:
   ms.prod: learning-azure
 title: Secure network connectivity on Azure
 summary: |
-  Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. 
+  Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. Security needs to happen at the application level, at the data level, and at the network level.
 
   Learn about the various Azure services you can use to help ensure that your network is safe, secure, and trusted.
 abstract: |
@@ -19,7 +19,7 @@ abstract: |
   * Explain how Azure Firewall and network security groups enable you to control what traffic is allowed on the network.
   * Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
 prerequisites: |
-  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
+  [Protect against security threats on Azure](https://docs.microsoft.com/learn/modules/protect-against-security-threats-azure/?azure-portal=true)
 iconUrl: /learn/achievements/secure-network-connectivity.svg
 levels:
 - beginner
