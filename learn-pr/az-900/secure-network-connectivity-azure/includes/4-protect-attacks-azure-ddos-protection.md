@@ -14,9 +14,11 @@ When you combine DDoS Protection with recommended application design practices, 
 
 This diagram shows network traffic flowing into Azure from both customers and an attacker:
 
-:::image type="content" source="../media/4-distributed-denial-service.png" alt-text="An illustration showing Azure DDoS Protection installed between virtual network and external user requests. The Azure DDoS Protection blocks malicious traffic attack but forwards the legitimate traffic to the intended destination." border="false":::
+:::image type="content" source="../media/4-distributed-denial-service.png" alt-text="An illustration showing Azure DDoS Protection installed between virtual network and external user requests. DDoS Protection blocks malicious traffic attack but forwards the legitimate traffic to the intended destination." border="false":::
 
-Azure DDoS Protection identifies the attacker's attempt to overwhelm the network and blocks further traffic from them, ensuring that traffic never reaches Azure resources. Legitimate traffic from customers still flows into Azure without any interruption of service.
+DDoS Protection identifies the attacker's attempt to overwhelm the network and blocks further traffic from them, ensuring that traffic never reaches Azure resources. Legitimate traffic from customers still flows into Azure without any interruption of service.
+
+DDoS Protection can also help you manage your cloud consumption. When you run on-premises, you have a fixed number of compute resources. But in the cloud, elastic computing means that you can automatically scale out your deployment to meet demand. A cleverly designed DDoS attack can cause you to increase your resource allocation, which incurs unneeded expense. DDoS Protection helps ensure that the network load you process reflects customer usage.
 
 ## What service tiers are available to DDoS Protection?
 
@@ -24,7 +26,7 @@ DDoS Protection provides these service tiers:
 
 + **Basic**
 
-    The Basic service tier is automatically enabled for free as part of your Azure subscription. 
+    The Basic service tier is automatically enabled for free as part of your Azure subscription.
 
     Always-on traffic monitoring and real-time mitigation of common network-level attacks provide the same defenses that Microsoft's online services use.
 
