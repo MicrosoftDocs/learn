@@ -1,11 +1,11 @@
+Azure provides Azure Virtual Machine instances that offer scalability while reducing costs, and are ideal for workloads that can be interrupted. However, these virtual machines (VMs) access unused Azure compute capacity at lower prices but still support high-performance computing scenarios.
+
 Your company's drone-tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. One of these services is a batch-processing service that schedules drone flight paths. With a sudden growth in your customer base, the batch-processing service gets inundated with requests and builds up a backlog of deliveries. This situation is causing delays and frustrating customers.
 
 Automatically scaling the number of batch-processing service replicas provides for the timely processing of orders. However, it also requires you to deploy more nodes to keep up with computing resource needs. Analyzing usage trends in Azure Monitor, you notice that these nodes are used only at specific times and not in a cost-effective way. The batch-processing service is stateless and doesn't save any client-session data. You realize that you can save money by:
 
 - Using lower-cost node instances.
 - Automatically scaling the node count in the node pool that's configured for batch processing.
-
-Azure provides Azure Virtual Machines instances that you can use to access unused Azure compute capacity at deep discounts. These virtual machines (VMs) offer scalability while reducing costs, and are ideal for workloads that can be interrupted.
 
 Let's look at the infrastructure that underlies this cost-saving solution in AKS.
 

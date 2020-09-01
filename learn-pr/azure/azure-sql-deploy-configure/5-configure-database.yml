@@ -13,33 +13,33 @@ durationInMinutes: 10
 content: |
   [!include[](includes/5-configure-database.md)]
 quiz:
-    title: Knowledge Check 
+    title: Knowledge check 
     questions:
-    - content: "If your data max size in Azure SQL Database is 10GB, what is the maximum transaction log size?"
+    - content: "If **Data max size** in Azure SQL Database is 10 GB, what's the maximum transaction log size?"
       choices:
       - content: "1 GB"
         isCorrect: false
-        explanation: "Review the space management section and examples."
+        explanation: "Review the section about space management and the examples."
       - content: "3 GB"
         isCorrect: true
-        explanation: "The transaction log is managed over and above the data size and the log's maximum size is always 30% of the data max size."
+        explanation: "The transaction log is managed over and above the data size, and the log's maximum size is always 30 percent of **Data max size**."
       - content: "5 GB"
         isCorrect: false
-        explanation: "Review the space management section and examples."
+        explanation: "Review the section about space management and the examples."
       - content: "10 GB"
         isCorrect: false
-        explanation: "Review the space management section and examples."
-    - content: "What is the default connection policy for Azure SQL Database and Azure SQL Managed Instance?"
+        explanation: "Review the section about space management and the examples."
+    - content: "What's the default connection policy for Azure SQL Database and Azure SQL Managed Instance?"
       choices:
       - content: "Proxy for all connections"
         isCorrect: false
-        explanation: "Review the connectivity architecture and policy section"
+        explanation: "Review the section about connectivity architecture and policy."
       - content: "Redirect for all connections"
         isCorrect: false
-        explanation: "Review the connectivity architecture and policy section"
-      - content: "Proxy for connections within Azure and Redirect for connections outside of Azure"
+        explanation: "Review the section about connectivity architecture and policy."
+      - content: "Proxy for connections within Azure and redirect for connections outside Azure"
         isCorrect: false
-        explanation: "Review the connectivity architecture and policy section"
-      - content: "Proxy for connection outside of Azure and Redirect for connections within Azure"
+        explanation: "Review the section about connectivity architecture and policy."
+      - content: "Proxy for connections outside Azure and redirect for connections within Azure"
         isCorrect: true
         explanation: "Redirect can be used by default because the ports needed are open within Azure."
