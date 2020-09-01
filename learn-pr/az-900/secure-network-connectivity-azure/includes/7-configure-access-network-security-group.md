@@ -25,6 +25,8 @@ Here, you run Azure CLI commands to create a Linux VM and install Nginx. After y
       --generate-ssh-keys
     ```
 
+    Your VM will take a few moments to come up.
+
     You name the VM *my-vm*. You use this name to refer to the VM in later steps.
 
 1. Run the following `az vm extension set` command to configure Nginx on your VM:
@@ -181,7 +183,7 @@ Here, you create a network security rule that allows inbound access on port 80 (
 
     ```azurecli
     az network nsg rule list \
-      --resource-group learn-5f911ee5-6666-48fc-8751-45e426bc947e \
+      --resource-group <rgn>[sandbox resource group name]</rgn> \
       --nsg-name my-vmNSG \
       --query '[].{Name:name, Priority:priority, Port:destinationPortRange, Access:access}' \
       --output table
