@@ -3174,6 +3174,36 @@
       "source_path": "learn-pr/data-ai/detect-mitigate-unfairness-models-with-azure-machine-learning/7-summary.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/detect-mitigate-unfairness-models-with-azure-machine-learning/7-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/index.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/create-language-model-with-language-understanding",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/3-exercise-create-luis-application.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/create-language-model-with-language-understanding/3-exercise-create-language-understanding-application",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/2-get-started.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/create-language-model-with-language-understanding/2-get-started",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/1-introduction.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/create-language-model-with-language-understanding/1-introduction",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/3a-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/create-language-model-with-language-understanding/3a-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/create-language-model-with-luis/4-summary.md",
+      "redirect_url": "https://docs.microsoft.com/en-us/learn/modules/create-language-model-with-language-understanding/4-summary",
+      "redirect_document_id": true
     }
   ]
 }
