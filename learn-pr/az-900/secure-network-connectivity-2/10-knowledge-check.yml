@@ -10,31 +10,42 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
-  title: ""
+  title: "Check your knowledge"
   questions:
-  - content: "Which of the following could grant or deny access based on the originating IP address?"
+  - content: Which Azure service can help Tailwind Traders protect their App Service instance from a Distributed Denial of Service (DDoS) attack?
     choices:
-    - content: "Azure Active Directory"
+    - content: Azure Firewall
       isCorrect: false
-      explanation: "That's incorrect.  This is a tool to store directory items for use with authentication and authorization, it does not look at IP addresses."
-    - content: "Azure Firewall"
+      explanation: Azure Firewall enables you to create network rules that define source address, protocol, destination port, and destination address. It doesn't specifically help against DDoS attacks.
+    - content: Network security groups
+      isCorrect: false
+      explanation: Network security groups enable you to filter network traffic to and from Azure resources within a VNet. They don't specifically help against DDoS attacks.
+    - content: Azure DDoS Protection
       isCorrect: true
-      explanation: "That's correct. The Azure Firewall grants server access based on the originating IP address of each request. You create firewall rules that specify ranges of IP addresses. Only clients from these granted IP addresses will be allowed to access the server. Firewall rules also include specific network protocol and port information."
-    - content: "VPN Gateway"
-      isCorrect: false
-      explanation: "That's incorrect.  A VPN is a dedicated connection between two points, but does not look at the originating IP address to grant access."
-  - content: "Which of the following services would filter internet traffic in an Azure virtual network?"
+      explanation: DDoS Protection helps protect your Azure resources from DDoS attacks. A DDoS attack attempts to overwhelm and exhaust an application's resources, making the application slow or unresponsive to legitimate users.
+  - content: What's the best way for Tailwind Traders to limit all inbound traffic from the internet to port 443 (HTTPS) and all outbound traffic from VMs to known hosts?
     choices:
-    - content: "Azure Firewall"
+    - content: Configure Azure DDoS Protection to limit network access to trusted ports and hosts.
       isCorrect: false
-      explanation: "That's incorrect.  A firewall works before the request gets to the virtual network."
-    - content: "Network Security Group"
+      explanation: DDoS Protection helps protect your Azure resources from DDoS attacks, but it doesn't act as a general-purpose firewall.
+    - content: Create network rules in Azure Firewall.
       isCorrect: true
-      explanation: "That's correct. NSGs allow you to filter network traffic to and from Azure resources in an Azure virtual network. An NSG can contain multiple inbound and outbound security rules that enable you to filter traffic to and from resources by source and destination IP address, port, and protocol."
-    - content: "VPN Gateway"
+      explanation: Azure Firewall enables you to create network rules that define source address, protocol, destination port, and destination address.
+    - content: Ensure that all running applications only communicate with trusted ports and hosts.
       isCorrect: false
-      explanation: "That's incorrect. A VPN is a dedicated connection between two points, but does not filter traffic."
+      explanation: Is there a way to more easily configure network access without software modifications?
+  - content: How can Tailwind Traders most easily implement a _deny by default_ policy so that VMs cannot connect to each other?
+    choices:
+    - content: Allocate each VM on its own VNet.
+      isCorrect: false
+      explanation: Although you could isolate each VM by placing it on a separate VNet, is there an easier way that allows all VMs to safely exist on the same VNet?
+    - content: Create a network security group rule that prevents access from another VM on the same network.
+      isCorrect: true
+      explanation: A network security group rule enables you to filter traffic to and from resources by source and destination IP address, port, and protocol.
+    - content: Configure Azure DDoS Protection to limit network access within the VNet.
+      isCorrect: false
+      explanation: DDoS Protection helps protect your Azure resources from DDoS attacks, but it doesn't specify connection rules within a VNet.
