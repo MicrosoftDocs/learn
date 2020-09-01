@@ -21,7 +21,7 @@ You can learn more by reviewing the following documents.
 - [Tutorial: Visualize and monitor your data](https://docs.microsoft.com/azure/sentinel/tutorial-monitor-your-data?azure-portal=true)
 - [Quickstart: Get started with Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-get-visibility?azure-portal=true)
 - [What is Azure Lighthouse?](https://docs.microsoft.com/azure/lighthouse/overview?azure-portal=true)
-- [Extend Azure Sentinel accoss workspaces and tenants](https://docs.microsoft.com/azure/sentinel/extend-sentinel-across-workspaces-tenants#cross-workspace-monitoring?azure-portal=true)
+- [Extend Azure Sentinel across workspaces and tenants](https://docs.microsoft.com/azure/sentinel/extend-sentinel-across-workspaces-tenants#cross-workspace-monitoring?azure-portal=true)
 - [What is Azure Resource Manager?](https://docs.microsoft.com/azure/azure-resource-manager/management/overview?azure-portal=true)
 - [Azure Foundation 4-Week Implementation](https://azuremarketplace.microsoft.com/marketplace/consulting-services/servent.servent-azure-foundation?azure-portal=true)
 
