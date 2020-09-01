@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: 'Availability Zones are tolerant to datacenter failures through redundancy and logical isolation of services.'
 
-  - content: 'By what measure should an organization quantify their availability targets?'
+  - content: 'What metric should an organization use to quantify their availability targets?'
     choices:
     - content: 'Service Level Objective and/or Service Level Agreement'
       isCorrect: true

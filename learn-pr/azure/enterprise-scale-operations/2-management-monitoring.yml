@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Management and monitoring
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/2-management-monitoring.md)]
 quiz:
