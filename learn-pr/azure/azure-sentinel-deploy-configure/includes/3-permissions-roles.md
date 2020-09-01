@@ -31,9 +31,9 @@ In addition to Azure Sentinel-dedicated Azure RBAC roles, other Azure and Log An
 
 - Azure roles grant access across all your Azure resources, including Log Analytics workspaces and Azure Sentinel resources:
 
-    - Owner
-    - Contributor
-    - Reader
+  - Owner
+  - Contributor
+  - Reader
 
 - Log Analytics roles grant access across all your Log Analytics workspaces:
     - Log Analytics Contributor
