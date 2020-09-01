@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity.define-network-security-groups-nsg
-title: Define Network Security Groups
+uid: learn.secure-network-connectivity.5-filter-traffic-network-security-groups
+title: Filter network traffic by using network security groups
 metadata:
-  title: Define Network Security Groups
-  description: "Define Network Security Groups"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how network security groups enable you to filter network traffic to and from Azure resources within an Azure Virtual Network (VNet).
+  ms.date: 09/09/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 2
 content: |
   [!include[](includes/6-define-network-security-groups.md)]

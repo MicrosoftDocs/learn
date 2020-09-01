@@ -1,4 +1,6 @@
-In this exercise, you create a Linux virtual machine (VM) and install Nginx, a popular web server, on that VM. To make your web server accessible, you then create a network security group (NSG) rule that allows inbound access on port 80 (HTTP).
+In this exercise, you configure network access to a virtual machine running on Azure.
+
+You start by creating a Linux virtual machine (VM) and installing Nginx, a popular web server, on that VM. To make your web server accessible, you then create a network security group (NSG) rule that allows inbound access on port 80 (HTTP).
 
 There are many ways you can use to create and manage VMs, including their network settings. For example, you can use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
 

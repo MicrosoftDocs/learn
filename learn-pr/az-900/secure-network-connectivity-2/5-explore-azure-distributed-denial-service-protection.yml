@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity.explore-azure-ddos-protection
-title: Explore Azure Distributed Denial of Service protection
+uid: learn.secure-network-connectivity.4-protect-ddos-attacks-azure-ddos-protection
+title: Protect from DDoS attacks by using Azure DDoS Protection
 metadata:
-  title: Explore Azure Distributed Denial of Service protection
-  description: "Explore Azure Distributed Denial of Service protection"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learnhow Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
+  ms.date: 09/09/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-explore-azure-distributed-denial-service-protection.md)]

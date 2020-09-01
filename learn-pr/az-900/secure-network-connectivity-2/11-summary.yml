@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity.summary
+uid: learn.secure-network-connectivity.9-summary
 title: Summary
 metadata:
-  title: Summary
   description: "Summary"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 09/09/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/11-summary.md)]

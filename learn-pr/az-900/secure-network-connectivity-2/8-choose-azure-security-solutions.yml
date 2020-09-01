@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity.choose-azure-network-security-solutions
-title: Choose Azure network security solutions
+uid: learn.secure-network-connectivity.6-combine-services-complete-solution
+title: Combine Azure services to create a complete network security solution
 metadata:
-  title: Choose Azure network security solutions
-  description: "Choose Azure network security solutions"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Review recommendations on how to combine Azure services to create a complete network security solution.
+  ms.date: 09/09/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 2
 content: |
   [!include[](includes/8-choose-azure-security-solutions.md)]

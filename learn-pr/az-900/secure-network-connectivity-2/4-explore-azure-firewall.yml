@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity.explore-azure-firewall
-title: Explore Azure Firewall
+uid: learn.secure-network-connectivity.3-protect-vnet-azure-firewall
+title: Protect virtual networks by using Azure Firewall
 metadata:
-  title: Explore Azure Firewall
-  description: "Explore Azure Firewall"
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  description: Learn how Azure Firewall protects resources in your Azure Virtual Networks (VNets).
+  ms.date: 09/09/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
 durationInMinutes: 2
 content: |
   [!include[](includes/4-explore-azure-firewall.md)]

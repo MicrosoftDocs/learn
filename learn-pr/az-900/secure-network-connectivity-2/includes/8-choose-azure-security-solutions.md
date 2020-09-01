@@ -1,6 +1,6 @@
 When considering your Azure security solution, consider all the elements of defense in depth.
 
-Here are some recommendations on how to combine Azure services to create a holistic network security solution.
+Here are some recommendations on how to combine Azure services to create a complete network security solution.
 
 ## Secure the perimeter layer
 

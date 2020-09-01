@@ -2,9 +2,9 @@
 uid: learn.secure-network-connectivity-azure
 metadata:
   description: Learn about the various Azure services you can use to help ensure that your network is safe, secure, and trusted.
-  ms.date: 06/20/2020
-  author: wwlpublish
-  ms.author: roberts
+  ms.date: 09/09/2020
+  author: tpetchel
+  ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure network connectivity on Azure
@@ -33,14 +33,14 @@ roles:
 products:
 - azure
 units:
-- learn.secure-network-connectivity.introduction
-- learn.secure-network-connectivity.explore-defense-depth
-- learn.secure-network-connectivity.explore-azure-firewall
-- learn.secure-network-connectivity.explore-azure-ddos-protection
-- learn.secure-network-connectivity.define-network-security-groups-nsg
-- learn.secure-network-connectivity.choose-azure-network-security-solutions
-- learn.secure-network-connectivity.walkthrough-secure-network-traffic
-- learn.secure-network-connectivity.knowledge-check
-- learn.secure-network-connectivity.summary
+- learn.secure-network-connectivity.1-introduction
+- learn.secure-network-connectivity.2-what-is-defense-in-depth
+- learn.secure-network-connectivity.3-protect-vnet-azure-firewall
+- learn.secure-network-connectivity.4-protect-ddos-attacks-azure-ddos-protection
+- learn.secure-network-connectivity.5-filter-traffic-network-security-groups
+- learn.secure-network-connectivity.6-combine-services-complete-solution
+- learn.secure-network-connectivity.7-configure-access-network-security-group
+- learn.secure-network-connectivity.8-knowledge-check
+- learn.secure-network-connectivity.9-summary
 badge:
   uid: learn.secure-network-connectivity.badge
