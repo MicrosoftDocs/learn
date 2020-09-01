@@ -2,12 +2,7 @@ Your web app and API are both running locally. Now it's time to publish your web
 
 ## Push your changes to GitHub
 
-You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub by following these steps:
-
-1. In Visual Studio, open the Git Changes window by pressing <kbd>Ctrl 0, G</kbd>.
-1. Enter a commit message such as **api changes**
-1. Click _Commit All_.
-1. From the **Git** menu, select **Push**.
+You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub.
 
 ## Create a Pull Request
 

@@ -12,7 +12,7 @@ title: Publish a Blazor WebAssembly app and .NET API with Azure Static Web Apps
 summary: Automatically deploy and update a Blazor web application and its API from a GitHub repository.
 abstract: |
   In this module, you will:
-    - Clone an run an existing Blazor web app locally
+    - Clone and run an existing Blazor web app locally
     - Create an API for the app with Azure Functions
     - Publish the app and its API to Azure Static Web Apps
 prerequisites: |

@@ -18,12 +18,7 @@ Now, you'll add an API and connect it to your front-end app. The _Api_ project i
 
 ### Create an api branch
 
-Before making changes to an app, it's good practice to create a new branch for the changes. You're about to complete the API for your app, so now is a good time to create a branch.
-
-1. In Visual Studio, navigate to the **Git** menu and click _New Branch_.
-1. Type **api** for the new branch name and press <kbd>Enter</kbd>
-
-You just created the **api** git branch.
+Before making changes to an app, it's good practice to create a new branch for the changes. You're about to complete the API for your app, so create a new branch in Git named **api**.
 
 ### Complete the Azure Functions API
 

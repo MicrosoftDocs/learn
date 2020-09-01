@@ -7,7 +7,7 @@ Azure Static Web Apps added a GitHub Actions workflow file to the branch you sel
 Pull your code changes from Git by following these steps:
 
 1. Open the **ShoppingList** solution in Visual Studio.
-1. Open the _Git_ menu and select **Pull** .
+1. Pull the latest changes from GitHub.
 
 You can now see your workflow file in the folder _.github/workflows_ in **Windows Explorer** (the file in not part of the Visual Studio solution).
 
@@ -36,12 +36,7 @@ Before publishing your app, you'll create routing rules that include a fallback 
 
 ### Push your changes to Git
 
-Now save, commit, and push your changes to Git by following these steps:
-
-1. Open the Git Changes window by pressing <kbd>Ctrl 0, G</kbd>.
-1. Enter a commit message such as **added routing rules for a fallback route**.
-1. Click _Commit All_.
-1. From the **Git** menu, select **Push**.
+Now, save and commit your changes to your local Git repository, then push those changes to GitHub.
 
 ### Try the fallback route
 
