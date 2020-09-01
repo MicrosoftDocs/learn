@@ -1,17 +1,21 @@
-Every system, architecture, and application needs to be designed with security in mind, whether on-premises or in the cloud. There's too much at risk. For example, a denial of service attack could prevent your customer from reaching your web site or services and block you from doing business. Or, your website could be defaced, causing damage to your reputation. A data breach could be even worse, as it can ruin hard-earned trust, while causing significant personal and financial harm. 
+Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. There's too much at risk. For example, a denial of service attack could prevent customers from reaching your website or services and block you from doing business. Or, your website could be defaced, causing damage to your reputation. A data breach could be even worse, as it can ruin hard-earned trust while causing significant personal and financial harm.
 
-While security must be considered at every layer in your application  (from the physical servers through to the application data), there are factors specifically relevant to the network configuration and network traffic of your cloud-based workloads.  
+## Meet Tailwind Traders
 
-In this module, we will focus on the network security capabilities in Azure and review how they help you secure your solutions in the cloud, based on your business needs.  
+[!include[](../../shared/tailwind-traders-overview.md)]
 
-By the end of this module, you will be able to discuss the basic concepts for protecting your cloud workloads at the network layer. 
+## How will Tailwind Traders secure their networks?
 
-**Level**: 
+As Tailwind Traders moves to the cloud, they need to evaluate their security needs before they can deploy a single line of code to production.
 
-Beginner
+While security must be considered at every layer in their applications (all the way from the physical servers to the application data), there are factors that relate specifically to the network configuration and network traffic of their cloud-based workloads.
 
-**Learning Objectives**
+In this module, you'll focus on the network security capabilities in Azure and review how they help you secure your solutions in the cloud, based on your business needs.
 
-+ Describe the concept of defense in depth
-+ Explain the services and features available for network security in Azure
+## Learning objectives
 
+By the end of this module, you'll able to:
+
+* Identify the various layers that make up a *defense in depth* strategy.
+* Explain how Azure Firewall and network security groups enable you to control what traffic is allowed on the network.
+* Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.

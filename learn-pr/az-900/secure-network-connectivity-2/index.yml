@@ -1,30 +1,31 @@
 ### YamlMime:Module
-uid: learn.secure-network-connectivity
+uid: learn.secure-network-connectivity-azure
 metadata:
-  title: Secure network connectivity
-  description: "Securing your network and solution resources in the cloud is a must in this day and age. Azure provides a set of tools and resources to ensure your systems are safe, secure, and trusted. AZ-900"
+  description: Learn about the various Azure services you can use to help ensure that your network is safe, secure, and trusted.
   ms.date: 06/20/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Secure network connectivity
-summary: Securing your network and solution resources in the cloud is a must in this day and age.  Azure provides a set of tools and resources to ensure your systems are safe, secure, and trusted.
+title: Secure network connectivity on Azure
+summary: |
+  Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. 
+
+  Learn about the various Azure services you can use to help ensure that your network is safe, secure, and trusted.
 abstract: |
-  After completing this module, you will be able to:
-   - Describe how security responsibility is shared with Azure.
-   - Describe how identity management provides protection, even outside your network.
-   - Discuss how encryption capabilities built into Azure can protect your data.
-   - Describe how to protect your network and virtual networks.
-   - Describe the advanced services and features Azure provides to keep your services and data secure and safe.
+  By the end of this module, you'll able to:
+
+  * Identify the various layers that make up a *defense in depth* strategy.
+  * Explain how Azure Firewall and network security groups enable you to control what traffic is allowed on the network.
+  * Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
 prerequisites: |
-  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
 iconUrl: /learn/achievements/secure-network-connectivity.svg
-hidden: true
 levels:
 - beginner
 roles:
 - administrator
+- developer
 - business-owner
 - business-user
 - student
@@ -34,11 +35,9 @@ products:
 units:
 - learn.secure-network-connectivity.introduction
 - learn.secure-network-connectivity.explore-defense-depth
-- learn.secure-network-connectivity.define-shared-security
 - learn.secure-network-connectivity.explore-azure-firewall
 - learn.secure-network-connectivity.explore-azure-ddos-protection
 - learn.secure-network-connectivity.define-network-security-groups-nsg
-- learn.secure-network-connectivity.define-application-security-groups-asg
 - learn.secure-network-connectivity.choose-azure-network-security-solutions
 - learn.secure-network-connectivity.walkthrough-secure-network-traffic
 - learn.secure-network-connectivity.knowledge-check

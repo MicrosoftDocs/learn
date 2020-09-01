@@ -1,11 +1,9 @@
-In this module, we discussed the basic concepts for protecting your infrastructure and data when you work in the cloud.
+In this module, you learned about some of the ways you can secure network traffic both on Azure and in your on-premises datacenter.
 
-**Defense in depth** is the overriding theme. Think about security as a multi-layer, multi-vector concern. Threats come from places we don't expect, and they can come with strength that will surprise us.
+*Defense in depth* is the overriding theme. Think about security as a multi-layer, multi-vector concern. Threats come from places we don't expect, and they can come with surprising strength.
 
-![Picture is of a shield blocking arrows. It represents the concept of being safe from security threats.](../media/6-heading.png)
+Tailwind Trader now has a few tools and services that they can use to secure their networks. Here's a brief summary:
 
-Azure has out-of-the-box help for a great deal of the security issues we face. One of the first steps we should take is assessing how much help from Azure we can use, based on whether we're leveraging IaaS, PaaS, or SaaS.
-
-Azure Security Center centralizes much of the help Azure has to offer. It provides a single dashboard, with a view into many of your services, and helps make sure you are following best practices. Continuously updated machine learning algorithms help identify whether the latest threats are aimed at your resources. And, it helps your organization mitigate threats.
-
-This module is only introductory. Security is a deep and complex topic, so whatever your cloud approach, an ongoing security education is necessary. However, this module should get you started in the right direction so that you know what you need to learn next.
+* Azure Firewall is a managed, cloud-based, network security service that protects resources in your Azure Virtual Networks.
+* A Virtual Network (VNet) is similar to a traditional network that you'd operate in your own datacenter. It enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+* Azure DDoS Protection helps protect your Azure resources from DDoS attacks.

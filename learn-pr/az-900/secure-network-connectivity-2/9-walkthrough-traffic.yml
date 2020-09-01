@@ -9,7 +9,8 @@ metadata:
   ms.author: roberts
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-durationInMinutes: 5
+azureSandbox: true
+interactive: bash
+durationInMinutes: 10
 content: |
   [!include[](includes/9-walkthrough-traffic.md)]
