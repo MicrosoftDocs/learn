@@ -6,4 +6,5 @@ Tailwind Trader now has a few tools and services that they can use to secure the
 
 * Azure Firewall is a managed, cloud-based, network security service that protects resources in your Azure Virtual Networks.
 * A Virtual Network (VNet) is similar to a traditional network that you'd operate in your own datacenter. It enables virtual machines and other compute resources to securely communicate with each other, the internet, and on-premises networks.
+* A network security group (NSG) enables you to filter network traffic to and from Azure resources within an Azure Virtual Network (VNet).
 * Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
