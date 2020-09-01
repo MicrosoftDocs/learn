@@ -1,6 +1,3 @@
-<!-- 5 minutes to read
-Title for unit: Describe Azure Sentinel permissions and roles
--->
 As the Contoso administrator who is tasked with deploying a POC environment for Azure Sentinel, you must understand the permissions and roles that are necessary for a successful deployment.
 
 ## Overview of permissions in Azure Sentinel
