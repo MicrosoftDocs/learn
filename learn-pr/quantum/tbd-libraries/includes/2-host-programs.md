@@ -224,7 +224,7 @@ for idx, res in enumerate(result_hist):
     print(label_str + star_str)
 ```
 
-### [C# host program](#tab/tabid-python)
+### [C# host program](#tab/tabid-cs)
 
 ```csharp
 using System;
