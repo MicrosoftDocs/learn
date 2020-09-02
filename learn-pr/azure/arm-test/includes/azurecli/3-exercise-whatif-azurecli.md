@@ -54,7 +54,8 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
     and use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
-    > [!NOTE] Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer)** Azure CLI command.
+    > [!NOTE]
+    > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&WT.mc_id=mslearn-arm-pierrer)** Azure CLI command.
 
     ```azurecli-interactive
     az configure --defaults group={Resource Group Name}
