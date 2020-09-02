@@ -16,77 +16,67 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: 'Azure Sentinel uses machine learning and AI to perform what?'
     choices:
-    - content: 'Answer 1'
+    - content: 'Feedback loop detection.'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'That's incorrect. Azure Sentinel uses machine learning and AI for threat hunting and alert detection.'
+    - content: 'Alert detection.'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'That's correct. Azure Sentinel uses machine learning and AI for threat hunting and alert detection.'
+    - content: 'Security score.'
+      isCorrect: false
+      explanation: 'That's incorrect. The security score is a recommendation from Security Center.'
 
-  - content: 'Question 2'
-    choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
 
-  - content: 'Question 3'
+  - content: 'Azure Sentinel hunting and search-and-query tools are based on what?'
     choices:
-    - content: 'Answer 1'
+    - content: 'Center for Internet Security best practices'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'That's incorrect. Though an important security organization, its programs aren't used with Azure Sentinel.'
+    - content: 'MITRE ATT&CK framework.'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'That's correct. Azure Sentinel hunting is based on the MITRE ATT&CK framework.'
+    - content: 'Microsoft Security Development Lifecycle (SDL).'
+      isCorrect: false
+      explanation: 'That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for building more secure products and services.'
+  
 
-  - content: 'Question 4'
+  - content: 'There's a limit of how many custom roles per Azure AD?'
     choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+    - content: '5,000.'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'That's correct. There's a limit of 5,000 custom roles per directory.'
+    - content: 'No Limit.'
+      isCorrect: false
+      explanation: 'That's incorrect. There's a limit of 5,000 custom roles per directory.'
+    - content: '3.'
+      isCorrect: false
+      explanation: 'That's incorrect. There's a limit of 5,000 custom roles per directory.'
 
-  - content: 'Question 5'
+  - content: 'How many built-in connectors are available for Azure Sentinel?'
     choices:
-    - content: 'Answer 1'
+    - content: '100.'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
+      explanation: 'That's incorrect. Azure Sentinel has 32 built-in connectors.'
+    - content: '23.'
       isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'That's incorrect. Azure Sentinel has 32 built-in connectors.'
+    - content: '32.'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'That's correct. Azure Sentinel has 32 built-in connectors.'
+
+
+  - content: 'To connect Azure Sentinel to Azure AD, you need what for Azure AD?'
+    choices:
+    - content: 'You need an Azure AD P1 or P2 license.'
+      isCorrect: true
+      explanation: 'That's correct. If you want to export sign-in data from Azure AD to Azure Sentinel, you must have an Azure AD P1 or P2 license.'
+    - content: 'You must use Azure AD Connect.'
+      isCorrect: false
+      explanation: 'That's incorrect. Azure AD Connect is a tool for connecting on-premises identity infrastructure to Microsoft Azure AD.'
+    - content: 'Azure AD Domain Services must be enabled.'
+      isCorrect: false
+      explanation: 'That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for the Azure Sentinel to Azure AD connection.'
+
+
