@@ -1,8 +1,9 @@
+### YamlMime:Module
 uid: learn.microservices-devops-aspnet-core
 metadata:
   title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
   description: Implement a GitHub Actions pipeline to deploy to AKS from a GitHub repo.
-  ms.date: 07/08/2020
+  ms.date: 09/02/2020
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial

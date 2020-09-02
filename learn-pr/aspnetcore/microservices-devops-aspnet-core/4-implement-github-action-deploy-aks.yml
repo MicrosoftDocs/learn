@@ -1,3 +1,4 @@
+### YamlMime:ModuleUnit
 uid: learn.microservices-devops-aspnet-core.4-implement-github-action-deploy-aks
 metadata:
   title: Exercise - Implement a GitHub Action to build and deploy to ACR and AKS

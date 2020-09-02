@@ -1,8 +1,9 @@
+### YamlMime:ModuleUnit
 uid: learn.microservices-devops-aspnet-core.5-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge
-  ms.date: 07/08/2020
+  ms.date: 09/02/2020
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial
@@ -14,8 +15,7 @@ content: ""
 quiz:
   title: Check your knowledge
   questions:
-    - content: Is it necessary to have a microservices application to implement a
-        CI/CD pipeline?
+    - content: Is it necessary to have a microservices application to implement a CI/CD pipeline?
       choices:
         - content: Yes
           isCorrect: false
@@ -55,8 +55,7 @@ quiz:
             data-based decisions.
           isCorrect: true
           explanation: "TODO: Explanation"
-    - content: What do you need to ensure a pod is replaced with a `helm upgrade`
-        chart command?
+    - content: What do you need to ensure a pod is replaced with a `helm upgrade` chart command?
       choices:
         - content: Change the source code
           isCorrect: false
@@ -70,8 +69,7 @@ quiz:
         - content: Update the `appVersion` in the chart
           isCorrect: true
           explanation: "TODO: Explanation"
-    - content: What's the command to go back to the previous installed version of a
-        chart?
+    - content: What's the command to go back to the previous installed version of a chart?
       choices:
         - content: "`helm upgrade --version -1 {chart-name}`"
           isCorrect: false
