@@ -1,3 +1,5 @@
+Azure Kubernetes Service allows you to create different node pools to match specific workloads to the nodes running in each node pool. The process of matching workloads to nodes enables you to plan to compute consumption and optimize cost.
+
 Your company's drone-tracking solution is deployed on Azure Kubernetes Service (AKS) as many containerized applications and services. Your team developed a new predictive-modeling service that processes flight-path information in extreme weather conditions and creates optimal flight routes. This service requires GPU-based virtual-machine (VM) support and runs only on specific days during the week.
 
 You want to configure a cluster node pool dedicated to processing flight-path information. The process runs for only a couple of hours a day and you want to use a GPU-based node pool. However, you want to pay for the nodes only when you use them.
@@ -18,13 +20,13 @@ System node pools host critical system pods that make up the control plane of yo
 
 ### User node pools
 
-User node pools support custom workloads, and you can specify Windows or Linux as the node operating system. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone-tracking solution has a batch-processing service that you deploy to a node pool configured with general-purpose VMs. The new predictive-modeling service requires higher-capacity, GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU-enabled nodes.  
+User node pools support your workloads, and you can specify Windows or Linux as the node operating system. You can also define the underlying VM sizes for nodes and run specific workloads. For example, your drone-tracking solution has a batch-processing service that you deploy to a node pool configured with general-purpose VMs. The new predictive-modeling service requires higher-capacity, GPU-based VMs. You decide to configure a separate node pool and configure it to use GPU-enabled nodes.  
 
 ## Number of nodes in a node pool
 
 You can configure up to 100 nodes in a node pool. However, the number of nodes you choose to configure depends on the number of pods that run per node.
 
-For example, in a system node pool, it's essential to set the minimum number of pods that run on a single node to 30. This minimum value guarantees that enough space is available to run the system pods that are critical to cluster health. When the number of pods exceeds this minimum value, new nodes are required in the pool to schedule additional workloads. For this reason, a system node pool needs at least one node in the pool. For production environments, the recommended node count for a system node pool is a minimum of three nodes.
+For example, in a system node pool, it's essential to set the minimum number of pods that run on a single node to 30. This minimum value guarantees that enough space is available to run the system pods critical to cluster health. When the number of pods exceeds this minimum value, new nodes are required in the pool to schedule additional workloads. For this reason, a system node pool needs at least one node in the pool. For production environments, the recommended node count for a system node pool is a minimum of three nodes.
 
 User node pools are designed to run custom workloads and don't have the 30-pod requirement. User node pools allow you to set the node count for a pool to zero.
 
@@ -78,7 +80,7 @@ Use the Kubernetes horizontal pod autoscaler to monitor the resource demand on a
 
 The Kubernetes Metrics Server collects memory and processor metrics from controllers, nodes, and containers that run on the AKS cluster. One way to access this information is to use the Metrics API. The horizontal pod autoscaler checks the Metrics API every 30 seconds to decide whether your application needs additional instances to meet the required demand.
 
-Assume that your company also has a batch-processing service that schedules drone flight paths. You see that the service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch-processing service replicas will enable the timely processing of orders.
+Assume your company also has a batch-processing service that schedules drone flight paths. You see the service gets inundated with requests and builds up a backlog of deliveries, causing delays and frustrations for customers. Increasing the number of batch-processing service replicas will enable the timely processing of orders.
 
 To solve the problem, you configure the horizontal pod autoscaler to scale up the number of service replicas when needed. When batch requests decrease, it scales the replica count down.
 

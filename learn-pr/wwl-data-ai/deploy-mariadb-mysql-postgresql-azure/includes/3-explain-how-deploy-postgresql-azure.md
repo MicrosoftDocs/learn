@@ -12,7 +12,7 @@ You will supply the Resource Group, Server Name, Region, Version, Username, and 
 
 :::image type="content" source="../media/module-22-plan-implement-final-25.png" alt-text="Configuration Page for Azure Database for PostgreSQL":::
 
-Click on Configure Server. Select the appropriate service tier for your applications and/or workloads as shown in the image below. Click ok.
+Click on Configure Server. Select the appropriate service tier for your applications and/or workloads as shown in the image below. Click OK.
 
 :::image type="content" source="../media/module-22-plan-implement-final-26.png" alt-text="Creation and Tier Selection for Azure Database for PostgreSQL":::
 

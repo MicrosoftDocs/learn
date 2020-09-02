@@ -2,18 +2,18 @@
 uid: learn.design-your-migration-to-azure
 metadata:
   title: Design your migration to Azure
-  description: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Site Recovery and Azure Database Migration Service.
+  description: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
   ms.date: 07/30/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Design your migration to Azure
-summary: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Site Recovery and Azure Database Migration Service.
+summary: Minimize the time and resources required to migrate your on-premises environment to Azure. Assess your current systems with Azure Migrate, and migrate them with Azure Migrate and Azure Database Migration Service.
 abstract: | 
   In this module, you will:
   - Discover how Azure Migrate can assess your existing workloads and plan your migration to Azure.
-  - Discover how Azure Site Recovery and Azure Database Migration Service can migrate your systems to Azure. 
+  - Discover how Azure Migrate and Azure Database Migration Service can migrate your systems to Azure. 
 prerequisites: | 
   - Knowledge of cloud and traditional architecture concepts
   - Knowledge of networking, compute, and database systems
