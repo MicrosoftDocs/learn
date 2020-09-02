@@ -1,4 +1,4 @@
-The best way to learn about the Face service is to explore it for yourself.
+The best way to learn about Face is to explore it for yourself.
 
 ## Before you start
 
