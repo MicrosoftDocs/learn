@@ -31,7 +31,7 @@ quiz:
           explanation: "The Data Science Virtual Machine runs on Azure compute resources that you can match to your changing needs."
     - content: "Using GPU resources on the Data Science Virtual Machine requires:"
       choices:
-        - content: "The Data Science Virtual Machine doesn't support GPU scenarios"
+        - content: "The Data Science Virtual Machine doesn't support GPU scenarios."
           isCorrect: false
           explanation: "GPU support depends on the chosen compute resource. Preinstalled tools are configured to use the GPU on appropriate hardware."
         - content: "GPU support is universally available on Data Science Virtual Machines."
