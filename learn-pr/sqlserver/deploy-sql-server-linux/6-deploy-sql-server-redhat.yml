@@ -5,8 +5,8 @@ metadata:
   title: Deploy SQL Server on Red Hat
   description: In this unit, you will learn how to install, configure, and update SQL Server on Red Hat servers.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 durationInMinutes: 3

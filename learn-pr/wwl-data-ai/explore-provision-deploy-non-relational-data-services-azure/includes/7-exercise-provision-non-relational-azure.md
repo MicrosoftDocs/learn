@@ -68,7 +68,7 @@ You'll perform this exercise using the Azure portal.
 
     | Field | Value |
     |-|-|
-    | Database ID | Select **Create new**, and enter **contososb** |
+    | Database ID | Select **Create new**, and enter **contosodb** |
     | Provision database throughput| Check |
     | Throughput | Select **Manual**, and specify 400 RU/s (the default) |
     | Container ID | **productvolumes** |
@@ -198,7 +198,7 @@ You've now provisioned a new Cosmos DB account, and created a database and conta
     > [!div class="mx-imgBorder"]
     > ![Image of the **File shares** page for the storage account. The user has selected **+ File share**.](../media/7-new-file-share.png)
 
-3. Create a new container named **reports**. Leave the **Quota** empty.
+3. Create a new file share named **reports**. Leave the **Quota** empty.
 
     > [!div class="mx-imgBorder"]
     > ![Image of the **New file share** dialog box. The user has entered the name of the new file share.](../media/7-create-file-share.png)

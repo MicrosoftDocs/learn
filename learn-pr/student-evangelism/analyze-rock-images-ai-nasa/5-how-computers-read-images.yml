@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.analyze-rock-images-ai-nasa.5-how-computers-read-images
+metadata:
+  title: How a computer reads a photo as an image file
+  description: Learn how a computer converts a photo to binary form so it can read it as an image file.
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: How a computer reads a photo as an image file
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-how-computers-read-images.md)]

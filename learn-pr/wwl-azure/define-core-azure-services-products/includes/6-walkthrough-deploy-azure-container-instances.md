@@ -19,8 +19,8 @@ In this task, we will create a new container instance for the web application.
 
 	| Setting| Value|
 	|----|----|
-	| Subscription | Ensure **Concierge Subscription** |
-	| Resource group | **<rgn>[sandbox resource group name]</rgn>** |
+	| Subscription | Select your Subscription |
+	| Resource group | **(Create New)** a resource group called **myContainerRG** |
 	| Container name| **mycontainer**|
 	| Region | **(US) East US** |
 	| Image source| **Docker Hub or other registry**|
@@ -43,7 +43,7 @@ In this task, we will create a new container instance for the web application.
 
 	![Screenshot of the configuration pane of the create container instances blade, in Azure portal, with the DNS name label entered. ](../media/configuration-pane.png)
 
-5. **FAIL in Sandbox from this point forward** Click **Review and Create** to start the automatic validation process.
+5. **Fill in Sandbox from this point forward** Click **Review and Create** to start the automatic validation process.
 
 6. Click **Create** to create the container instance. 
 

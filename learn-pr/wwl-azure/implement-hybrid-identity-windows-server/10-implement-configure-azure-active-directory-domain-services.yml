@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-identity-with-windows-server.implement-configure-azure-ad-ds
+title: Implement and configure Azure Active Directory Domain Services
+metadata:
+  title: Implement and configure Azure Active Directory Domain Services
+  description: "Implement and configure Azure Active Directory Domain Services"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 12
+content: |
+  [!include[](includes/10-implement-configure-azure-active-directory-domain-services.md)]

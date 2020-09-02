@@ -30,7 +30,7 @@ As part of your cost estimation, it's also important to understand the subscript
 
 - Pay-as-you-go subscriptions give you the flexibility to purchase and use the services you need, with the advantage of having no up-front commitments.
 
-- Enterprise agreements enable organizations to take advantage of discounts through up-front commitments. These agreements enable organizations to centralize their Azure costs and billing. They can include other Microsoft services such as Office 365.
+- Enterprise agreements enable organizations to take advantage of discounts through up-front commitments. These agreements enable organizations to centralize their Azure costs and billing. They can include other Microsoft services such as Microsoft 365.
 
 There are additional billing models. Each gives you access to the full suite of Azure services with the flexibility to purchase only what you need, when you need it.
 

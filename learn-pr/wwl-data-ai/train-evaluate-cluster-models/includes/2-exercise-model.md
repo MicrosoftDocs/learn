@@ -2,7 +2,7 @@ Data scientists generally use specialized machine learning frameworks to train a
 
 ## Try for yourself
 
-One of the most commonly used machine learning frameworks for Python is **scikit-learn**, and in this hands-on exercise, you'll use scikit-learn to train and evaluate a classification model. To complete the exercise, you'll need:
+One of the most commonly used machine learning frameworks for Python is **scikit-learn**, and in this hands-on exercise, you'll use scikit-learn to train and evaluate a clustering model. To complete the exercise, you'll need:
 
 - A Microsoft Azure subscription.
 - A Visual Studio Codespace based on the **MicrosoftDocs/ml-basics** GitHub repository.
@@ -20,9 +20,9 @@ If you have not already created a Codespace based on the **MicrosoftDocs/ml-basi
 3. Wait for the Codespace to be created. This will take around 3 minutes. You'll see the following things happen:
     - A script will initialize and configure your Codespace.
     - A list of notebook (.ipynb) files will appear in the pane on the left.
-4. After preparation is complete, you can close the **Welcome** and **Creation Log** panes. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**. A light color theme may make it easier to read the Python code in the notebooks.
+4. After preparation is complete, you can close the **Welcome** pane, and any others that have opened during setup. You can also change the color scheme to suit your preference - just click the **&#9881;** icon at the bottom left and select a new **Color Theme**. A light color theme may make it easier to read the Python code in the notebooks.
 
-After you've created the environment, open the **Clustering.ipynb** notebook and follow the instructions it contains.
+After you've created the environment, open the **Clustering.ipynb** notebook and follow the instructions it contains. If a page welcoming you to the Python extension is displayed, close it.
 
 > [!NOTE]
 > We highly recommend using a Visual Studio Codespace hosted in Azure for this exercise - this setup ensures the correct version of Python and the various packages you will need are installed. If you prefer to complete the exercise using your own computer, and you have experience configuring Python development environments, you can find details for configuring a local development environment at [Running the labs on your own computer](https://github.com/MicrosoftDocs/ml-basics/blob/master/local-setup.md?azure-portal=true).

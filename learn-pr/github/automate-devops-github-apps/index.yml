@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.automate-devops-github-apps
 metadata:
-  title: "Automate DevOps processes by using GitHub Apps - Learn"
+  title: "Automate DevOps processes by using GitHub Apps"
   description: Learn to automate DevOps processes by using GitHub Apps that handle repetitive tasks, enforce team policies, and maintain a tidy repository.
   ms.date: 06/26/2020
   author: tpetchel

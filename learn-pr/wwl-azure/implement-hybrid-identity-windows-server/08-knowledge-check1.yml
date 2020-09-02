@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-hybrid-identity-with-windows-server.knowledge-check-1
+title: Knowledge check 1
+metadata:
+  title: Knowledge check 1
+  description: "Knowledge check 1"
+  ms.date: 08/16/2020
+  author: wwlpublish
+  ms.author: v-anwarr
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following statements about Azure AD is true?"
+    choices:
+    - content: "Azure AD implements the same authentication protocols as on-premises AD DS."
+      isCorrect: false
+      explanation: "That's incorrect. Azure AD does not use on-premises AD DS Kerberos authentication; instead, it uses HTTP and HTTPS protocols such as SAML, WS-Federation, and OpenID Connect for authentication, and OAuth for authorization."
+    - content: "Azure AD is essentially on-premises AD DS in the cloud."
+      isCorrect: false
+      explanation: "That's incorrect. Although Azure AD has many similarities to AD DS, there are also many differences. It's important to realize that using Azure AD is different from deploying an AD DS domain controller on an Azure VM and then adding it to your on-premises domain."
+    - content: "Azure AD users and groups are created in a flat structure."
+      isCorrect: true
+      explanation: "That's correct. Azure AD users and groups are created in a flat structure, and there are no OUs or GPOs."
+  - content: "Contoso IT staff have set up Azure AD Connect and are beginning to synchronize accounts. Maria in IT finds a new user account in Azure AD that has been created by the Azure AD Connect process. Which of the following accounts would Maria have found?"
+    choices:
+    - content: "Maria found an account called `MSOL_c778af008d92`."
+      isCorrect: false
+      explanation: "That's incorrect. The account with the MSOL prefix resides in on-premises AD DS, but it's created during setup of Azure AD Connect."
+    - content: "Marie found an account called `Sync_CONTOSO-DC1_c778af008d92@Contoso.com`."
+      isCorrect: true
+      explanation: "That's correct. An account with the prefix Sync is created in Azure AD as part of the Azure AD Connect setup."
+    - content: "Maria found an account called `AAD_c778af008d92`."
+      isCorrect: false
+      explanation: "That's incorrect. The account with the AAD prefix resides in on-premises AD DS, but is created during setup of Azure AD Connect."
+  - content: "Which of the following sign-in methods is NOT available for Contoso IT staff to combine with Seamless SSO?"
+    choices:
+    - content: "Password Hash Synchronization."
+      isCorrect: false
+      explanation: "That's incorrect. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication."
+    - content: "AD FS."
+      isCorrect: true
+      explanation: "That's correct. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication, but not AD FS."
+    - content: "Pass-through authentication."
+      isCorrect: false
+      explanation: "That's incorrect. You can combine Seamless SSO with both Password Hash Synchronization and Pass-Through Authentication."

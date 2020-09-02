@@ -3,7 +3,7 @@ uid: learn.wwl.distinguish-types-cloud-models
 metadata:
   title: Distinguish types of cloud models
   description: "There are three different cloud deployment models: Public Cloud, Private Cloud, and Hybrid Cloud. This module will enable you to decide how to work with different types of cloud deployments. AZ-900"
-  ms.date: 06/20/2020
+  ms.date: 07/18/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial

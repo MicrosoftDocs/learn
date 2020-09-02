@@ -1,8 +1,8 @@
-The Computer Vision service and API in the Microsoft Azure Cognitive Services offerings, provides pre-built algorithms that can process images that you upload. The service can return specific information about the content of the image supplied.
+The Computer Vision service is a cognitive service in Microsoft Azure that provides pre-built computer vision capabilities. The service can analyze images, and return detailed information about an image and the objects it depicts.
 
 ## Azure resources for Computer Vision
 
-The first step towards using the Computer Vision service is to create a resource for it in your Azure subscription. You can use either of the following resource types:
+To use the Computer Vision service, you need to create a resource for it in your Azure subscription. You can use either of the following resource types:
 
 - **Computer Vision**: A specific resource for the Computer Vision service. Use this resource type if you don't intend to use any other cognitive services, or if you want to track utilization and costs for your Computer Vision resource separately.
 - **Cognitive Services**: A general cognitive services resource that includes Computer Vision along with many other cognitive services; such as Text Analytics, Translator Text, and others. Use this resource type if you plan to use multiple cognitive services and want to simplify administration and development.
@@ -15,13 +15,13 @@ Whichever type of resource you choose to create, it will provide two pieces of i
 > [!NOTE]
 > If you create a Cognitive Services resource, client applications use the same key and endpoint regardless of the specific service they are using.
 
-## Analyzing an image for insights
+## Analyzing images with the Computer Vision service
 
-Exploring the many features that Computer Vision offers as pre-built functionality, will help you understand the variety of information that the service can provide.
+After you've created a suitable resource in your subscription, you can submit images to the Computer Vision service to perform a wide range of analytical tasks.
 
 ### Describing an image
 
-Computer Vision has the ability to analyze an image, evaluate the objects that are detected, and then generate a human-readable phrase or sentence that can describe what was detected in the image. Depending on the image contents, you may find multiple results, or phrases, returned.  Each returned phrase will have a confidence score next to it, based on how confident the algorithm is in the supplied description.  The highest confidence phrases will be listed first, or at the top of the returned results.
+Computer Vision has the ability to analyze an image, evaluate the objects that are detected, and generate a human-readable phrase or sentence that can describe what was detected in the image. Depending on the image contents, the service may return multiple results, or phrases.  Each returned phrase will have an associated confidence score, indicating how confident the algorithm is in the supplied description.  The highest confidence phrases will be listed first.
 
 To help you understand this concept, consider the following image of the Empire State building in New York. The returned phrases are listed below the image in the order of confidence.
 
@@ -47,76 +47,56 @@ The object detection capability is similar to tagging, in that the service can i
 
 ![black and white aerial picture of New York City with Empire State Building](../media/black-white-buildings-objects.png)
 
-If you provide an image that contains a family in a park with a dog, for example, the object detection would return the dog as an identified object and list the coordinates for the dog's location in the image but it will also return a person, or people object, with all the coordinates where the people were detected.  In this way, you can know if the image contains multiple instances of a certain object, and where in the image they are located.
-
-Consider a security system that uses cameras for perimeter security.  If you have motion detection enabled, you don't want to be alerted every time a squirrel or a small animal wanders past the area of view.  Instead, you would expect the system to recognize people and alert you only when a person is detected.  The bounding box coordinates could help the system to move and focus the camera on that specific area of the video, or even take a picture of only the person.
-
 ### Detecting brands
 
-This feature provides the ability to identify commercial brands.  The service has an existing database of thousands of globally recognized logos from commercial brands of products.
+This feature provides the ability to identify commercial brands. The service has an existing database of thousands of globally recognized logos from commercial brands of products.
 
-When you call this service and pass it an image, it will perform a detection task and determine if any of the identified objects in the image are recognized brands.  Recall that it compares the brands against its database of popular brands spanning clothing, consumer electronics, and many more categories.  If a known brand is detected, the service will return a response that contains the brand name, a confidence score (from 0 to 1 indicating how positive the identification is), and a bounding box (coordinates) for where in the image the detected brand was found.
+When you call the service and pass it an image, it performs a detection task and determine if any of the identified objects in the image are recognized brands.  The service compares the brands against its database of popular brands spanning clothing, consumer electronics, and many more categories.  If a known brand is detected, the service returns a response that contains the brand name, a confidence score (from 0 to 1 indicating how positive the identification is), and a bounding box (coordinates) for where in the image the detected brand was found.
+
+For example, in the following image, a laptop has a Microsoft logo on its lid, which is identified and located by the Computer Vision service.
+
+![A laptop with a Microsoft logo identified by the Computer Vision service with a confidence of 68%](../media/laptop.png)
+
+### Detecting faces
+
+The Computer Vision service can detect and analyze human faces in an image, including the ability to determine age and a bounding box rectangle for the location of the face(s). The facial analysis capabilities of the Computer Vision service are a subset of those provided by the dedicated [Face Service](https://docs.microsoft.com/azure/cognitive-services/face/). If you need basic face detection and analysis, combined with general image analysis capabilities, you can use the Computer Vision service; but for more comprehensive facial analysis and facial recognition functionality, use the Face service.
+
+The following example shows an image of a person with their face detected and approximate age estimated.
+
+![An image with a female face detected and her age estimated at 29](../media/face.png)
 
 ### Categorizing an image
 
-Computer Vision can actually categorize an entire image.  The service uses a parent/child hierarchy with a "current" limited set of categories.  When analyzing an image, detected objects are compared to the existing categories to determine the best way to provide the categorization.  As an example, one of the parent categories is **people_**. the image of a person on a roof with have a category of **people_**.
+Computer Vision can categorize images based on their contents.  The service uses a parent/child hierarchy with a "current" limited set of categories.  When analyzing an image, detected objects are compared to the existing categories to determine the best way to provide the categorization.  As an example, one of the parent categories is **people_**. This image of a person on a roof is assigned a category of **people_**.
 
 ![person on a commercial building roof](../media/woman-roof.png)
 
-You would see a slightly different categorization returned for the following image, **people_group**, because there are multiple people in the image:
+A slightly different categorization is returned for the following image, which is assigned to the category **people_group** because there are multiple people in the image:
 
 ![family picture with father, mother, son, and daughter](../media/family-photo.png)
 
 Review the 86-category list [here](https://docs.microsoft.com/azure/cognitive-services/computer-vision/category-taxonomy).
 
-### Detecting faces
-
-There is a dedicated Face API, Computer Vision includes a subset of that functionality to aid in face detection.  The capabilities include detecting the face but also includes the ability to determine age, gender, and a bounding box rectangle for the location of the face(s).  For more detailed information on the detected faces, use the [Face Service](https://docs.microsoft.com/azure/cognitive-services/face/) instead.
-
-### Detecting image types
-
-The Computer Vision service includes the ability to detect the *content type* of images. In other words, it can determine if the image is likely to be clip art or a line drawing.  If clip art is detected the service will return a value from 0 to 3 indicating how likely the image is of the type *clip art*.  For line drawings, the service will only return a boolean value, either 0 or 1, indicating if it believes the image is a line drawing.  The value 0 indicates a false, meaning the service hasn't detected the image as being a line drawing.
-
 ### Detecting domain-specific content
 
-The Computer Vision service  supports two specialized domain models:
+When categorizing an image, the Computer Vision service  supports two specialized domain models:
 
 - **Celebrities** - The service includes a model that has been trained to identify thousands of well-known celebrities from the worlds of sports, entertainment, and business.
-- **Landmarks** - The service can identify famous landmarks, such as the Eiffel Tower and the Statue of Liberty.
+- **Landmarks** - The service can identify famous landmarks, such as the Taj Mahal and the Statue of Liberty.
 
-### Detecting color scheme
+For example, when analyzing the following image for landmarks, the Computer Vision service identifies the Eiffel Tower, with a confidence of 99.41%.
 
-When you pass an image to the Detect Color API, Computer Vision will analyze the image for three main attributes. The attributes are:
+![An image of the Eiffel Tower](../media/landmark.png)
 
-- dominant foreground color
-- dominant background color
-- dominant colors for whole image.  
+### Optical character recognition
 
-The colors are limited to the following 12 colors:
+The Computer Vision service can use optical character recognition (OCR) capabilities to detect printed and handwritten text in images. This capability is explored in the [Read text with the Computer Vision service](https://docs.microsoft.com/learn/modules/read-text-computer-vision/) module on Microsoft Learn.
 
-- black
-- brown
-- blue
-- gray
-- green
-- orange
-- pink
-- purple
-- red
-- teal
-- white
-- yellow
+### Additional capabilities
 
-### Generating a thumbnail
+In addition to these capabilities, the Computer Vision service can:
 
-You can pass images to the Computer Vision service and have it generate reduced-size representations of the images, known as thumbnails.  Thumbnails help conserve space and you might find them used in a grocery store scenario where thumbnail images are used to represent fruit categories.  Clicking the thumbnail image might lead to another page with a larger image and detailed descriptions and prices, for example.
-
-The Computer Vision thumbnail generation algorithm works as follows:
-
-1. Remove distracting elements from the image and identify the area of interest (the area of the image in which the main subject appears).
-2. Crop the image based on the identified area of interest.
-3. Change the aspect ratio to fit the target thumbnail dimensions.
-
-## Other features
-
-Computer Vision can extract text from images using Optical Character Recognition (OCR) and provide some content moderation.  These additional features are not covered in this content.  For more information, visit the [OCR page](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-recognizing-text#ocr-optical-character-recognition-api) for text extraction or the [adult content page](https://docs.microsoft.com/azure/cognitive-services/computer-vision/concept-detecting-adult-content) for content moderation.
+- Detect image types - for example, identifying clip art images or line drawings.
+- Detect image color schemes - specifically, identifying the dominant foreground, background, and overall colors in an image.
+- Generate thumbnails - creating small versions of images.
+- Moderate content - detecting images that contain adult content or depict violent, gory scenes.

@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-dns-for-windows-server-iaas-vms.create-an-azure-dns-zone-record-using-azure-portal
+title: Create an Azure DNS zone and record using the Azure portal
+metadata:
+  title: Create an Azure DNS zone and record using the Azure portal
+  description: "Create an Azure DNS zone and record using the Azure portal"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/04-create-azure-domain-name-system-zone-record-with-azure-portal.md)]
+quiz:
+  title: "Quick review"
+  questions:
+  - content: "Towards the end of the demonstration, the instructor tests DNS by using which procedure?"
+    choices:
+    - content: "The instructor runs **nslookup** from a command line to verify DNS."
+      isCorrect: false
+      explanation: "That's incorrect."
+    - content: "The instructor runs **nslookup** from Azure CLI to verify DNS."
+      isCorrect: true
+      explanation: "That's correct."
+    - content: "The instructor runs **nslookup** from Windows PowerShell to verify DNS."
+      isCorrect: false
+      explanation: "That's incorrect."
