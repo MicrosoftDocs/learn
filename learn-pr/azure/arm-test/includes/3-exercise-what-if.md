@@ -2,7 +2,7 @@
 > [!NOTE]
 > The first time you activate a sandbox and accept the terms, your Microsoft account is associated with a new Azure directory named Microsoft Learn Sandbox. You're added to a special subscription named Concierge Subscription.
 
-Here, you will deploy an Azure Resource Manager (ARM) template from a sample repository that deploys a Virtual Network (VNet) in your sandbox subscription.  Once the deployment is complete, you will then deploy a template that is slightly different:
+In this exercise, you'll deploy an Azure Resource Manager (ARM) template. You'll use a template from a sample repository. The template contains a Virtual Network (VNet). A sandbox subscription will be used to ensure your own subscription isn't affected. Once the deployment is complete, you'll then deploy a template that is slightly different:
 
 1. A change od address space in a virtual subnet
 1. An additional Subnet in the virtual network
@@ -13,14 +13,14 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 ## What-if prerequisites
 
-::: zone pivot="powershell"
+::: zone pivot="PowerShell"
 
 [!include[](./powershell/3-exercise-whatif-powershell.md)]
 
 ::: zone-end
 
-::: zone pivot="azurecli"
+::: zone pivot="cli"
 
-[!include[](./powershell/3-exercise-whatif-azurecli.md)]
+[!include[](./azurecli/3-exercise-whatif-azurecli.md)]
 
 ::: zone-end

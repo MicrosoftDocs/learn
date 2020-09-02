@@ -2,10 +2,10 @@
 uid: learn.arm-test.2-what-if
 title: Predict what a deployment will do with What-if
 metadata:
-  title: Predict what a deployment will do with What-if
-  description: The What-if tool lets you see what a deployment template will carry out if it was deployed. Knowing what will happen is an important part of your workflow.
-  author: softchris
-  ms.author: chnoring
+  title: Using what-if to validate your ARM templates deployments
+  description: Deploying and hoping for the best is **NOT** the approach you should be taking.  The "what-if" operation is here to address this. this unit will cover what it is and how to use it.
+  author: pierreroman
+  ms.author: pierrer
   ms.date: 09/02/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

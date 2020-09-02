@@ -4,7 +4,7 @@ There are always questions on the mind of anyone deploying or modifying resource
 - How will this deployment affect existing resources?
 - Can I validate that what we are thinking will happen is actually what will happen deployment before hitting the deploy button?
 
-Deploying and hoping for the best is **NOT** the approach you should be taking.  The "what-if" operation is here to address this aspect.
+Deploying and hoping for the best is **NOT** the approach you should be taking.  The "what-if" operation helps you anticipate what consequences a new deployment will have, were it to be attempted.
 
 Azure Resource Manager now provides the *what-if* operation to highlight the changes when you deploy a template. The *what-if* operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed at a resource group and subscription level.
 
@@ -20,12 +20,12 @@ One more benefits of this operation are that, unlike some of the other tools out
 
 When using the what-if operation, it will list six different types of changes:
 
-1. **Create**: The resource doesn't currently exist but is defined in the template. The resource will be created.
-1. **Delete**: This change type only applies when using complete mode for deployment. The resource exists, but isn't defined in the template. With [complete mode](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?WT.mc_id=MSLearn-ARM-pierrer), the resource will be deleted. **Only resources that support complete mode deletion are included in this change type**.
-1. **Ignore**: The resource exists, but isn't defined in the template. The resource won't be deployed or modified.
-1. **NoChange: The resource exists, and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when ResultFormat is set to FullResourcePayloads, which is the default value.
-1. **Modify**: The resource exists, and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when ResultFormat is set to FullResourcePayloads, which is the default value.
-1. **Deploy**: The resource exists, and is defined in the template. The resource will be redeployed. The properties of the resource may or may not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You only see this condition when ResultFormat is set to ResourceIdOnly.
+- **Create**: The resource doesn't currently exist but is defined in the template. The resource will be created.
+- **Delete**: This change type only applies when using complete mode for deployment. The resource exists, but isn't defined in the template. With [complete mode](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?WT.mc_id=MSLearn-ARM-pierrer), the resource will be deleted. **Only resources that support complete mode deletion are included in this change type**.
+- **Ignore**: The resource exists, but isn't defined in the template. The resource won't be deployed or modified.
+- **NoChange**: The resource exists, and is defined in the template. The resource will be redeployed, but the properties of the resource won't change. This change type is returned when *ResultFormat* is set to *FullResourcePayloads*, which is the default value.
+- **Modify**: The resource exists, and is defined in the template. The resource will be redeployed, and the properties of the resource will change. This change type is returned when ResultFormat is set to FullResourcePayloads, which is the default value.
+- **Deploy**: The resource exists, and is defined in the template. The resource will be redeployed. The properties of the resource may or may not change. The operation returns this change type when it doesn't have enough information to determine if any properties will change. You only see this condition when ResultFormat is set to ResourceIdOnly.
 
 ## Result Format
 
@@ -48,10 +48,21 @@ More detailed information about the command usage can be found [here](https://do
 
 ## Removal or deletion of Resources and deployment modes
 
-There are times where you'll want to confirm the removal of deletion of resources as you deploy the template.  maybe is just a comfort thing.  Better safe than sorry!
+There are times where you'll want to confirm the removal or deletion of resources as you deploy the template, maybe is just a comfort thing. Better safe than sorry!
 
-To that end the *what-if* operation supports using [deployment mode](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?WT.mc_id=MSLearn-ARM-pierrer). The default deployment mode is Incremental. In incremental mode, Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are added to the resource group.
+To that end, the *what-if* operation supports using [deployment mode](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes?WT.mc_id=MSLearn-ARM-pierrer). The default deployment mode is *Incremental*. In incremental mode, Resource Manager leaves unchanged resources that exist in the resource group but aren't specified in the template. Resources in the template are added to the resource group.
 
-When set to complete mode, resources not in the template are deleted.
+When set to *complete mode*, resources not in the template are deleted.
 
 To preview changes before deploying a template, use the confirm switch parameter with the deployment command. If the changes are as you expected, acknowledge that you want the deployment to complete.
+
+## Deployment naming
+
+A deployment needs a name. For every deployment, you need a *deployment name*. You have two options:
+
+- **Provide a name when deploying**. You can provide the name as an argument when calling the deployment tool.
+- **Use default** if you don't provide a name for the deployment, the name of the template file is used by default. For example, if you deploy a template named **azuredeploy.json** and don't specify a deployment name, the deployment is named **azuredeploy**.  
+
+Good naming matters. Using unique meaningful deployment names for each deployment provides you with additional simplicity when reviewing deployments and troubleshooting events and  maintain unique entries in the deployment history.  
+
+Reusing the same name means something. Since every time you run a deployment, an entry is added to the resource group's deployment history with the deployment name. If you run another deployment and give it the same name, the previous entry is replaced with the current deployment.  Also, when you specify a unique name for each deployment, you can run them concurrently without conflict.
