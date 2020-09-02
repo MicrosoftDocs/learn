@@ -32,18 +32,20 @@ Think of the Function app as a workspace that contains our functions.
 
 Let's add a function you can call via a URL
 
-- Click "+New function"
-- Select "In-portal" and click "Continue"
-- Select "Webhook + API" for the trigger
-- Click "Create"
+- In the menu on the left select "Functions"
+- Click "+Add" in the top menu to add a new function
+- From the list of templates select "HTTP Trigger"
+- Click "Create Function"
 
-The editor shows the source code of the function. In our case, this is JavaScript, but we could have picked other languages, like C#. We can modify the source code directly in the browser, but for now, let's execute the function.
+Wait for the function to be created. This should only take some seconds.
+
+To see the source code of the function, select "Code + Test" in the left menu. In our case, this is JavaScript, but we could have picked other languages, like C#. We can modify the source code directly in the browser, but for now, let's execute the function.
 
 ### 3. Execute the Function
 
 We can run the function in the editor or get its URL because we chose to create something that is callable over HTTP.
 
-- Click "</> Get function URL"
+- In the top menu, click "Get function URL"
 - Click "Copy" to get the URL into the clipboard.
 - Open a new browser tab and paste the URL - Notice how the URL starts with the function name we specified earlier.
 - Notice the output it has generated.
@@ -56,4 +58,4 @@ We can run the function in the editor or get its URL because we chose to create 
 - Change the line that contains "Hello " to "Welcome to Learn Live, dear "
 - Click "Save"
 - Switch back to the tab with the function URL and refresh
-- The output will be "Welcome to Learn Live, dear YOUR_NAME"
+- The output will be "Welcome to Microsoft Learn, dear YOUR_NAME"
