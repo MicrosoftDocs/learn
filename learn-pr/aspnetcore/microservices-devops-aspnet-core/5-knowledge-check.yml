@@ -1,0 +1,87 @@
+uid: learn.microservices-devops-aspnet-core.5-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Check your knowledge
+  ms.date: 07/08/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.topic: interactive-tutorial
+  ms.prod: learning-aspnetcore
+  ROBOTS: NOINDEX
+title: Knowledge check
+durationInMinutes: 5
+content: ""
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: Is it necessary to have a microservices application to implement a
+        CI/CD pipeline?
+      choices:
+        - content: Yes
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: No
+          isCorrect: true
+          explanation: "TODO: Explanation"
+    - content: What's the key enabler for making DevOps available to anyone?
+      choices:
+        - content: The cloud
+          isCorrect: true
+          explanation: "TODO: Explanation"
+        - content: Microservices
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Containers
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Container orchestrators
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: All of the above
+          isCorrect: false
+          explanation: "TODO: Explanation"
+    - content: What's the main purpose behind DevOps?
+      choices:
+        - content: Testing all software
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Deploying automatically
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Getting software operation metrics
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Cycling fast from development to operation metrics to learn faster make
+            data-based decisions.
+          isCorrect: true
+          explanation: "TODO: Explanation"
+    - content: What do you need to ensure a pod is replaced with a `helm upgrade`
+        chart command?
+      choices:
+        - content: Change the source code
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Delete the pod manually
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Delete the chart before installing again
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: Update the `appVersion` in the chart
+          isCorrect: true
+          explanation: "TODO: Explanation"
+    - content: What's the command to go back to the previous installed version of a
+        chart?
+      choices:
+        - content: "`helm upgrade --version -1 {chart-name}`"
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: "`helm restore {chart-name}`"
+          isCorrect: false
+          explanation: "TODO: Explanation"
+        - content: "`helm rollback {chart-name}`"
+          isCorrect: true
+          explanation: "TODO: Explanation"
+        - content: "`helm install --version -1`"
+          isCorrect: false
+          explanation: "TODO: Explanation"

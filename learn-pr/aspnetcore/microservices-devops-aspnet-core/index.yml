@@ -1,4 +1,3 @@
-### YamlMime:Module
 uid: learn.microservices-devops-aspnet-core
 metadata:
   title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
@@ -10,11 +9,15 @@ metadata:
   ms.prod: learning-aspnetcore
 title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
 summary: Implement a GitHub Actions pipeline to deploy to AKS from a GitHub repo.
-abstract: |
+abstract: >
   In this module, you will:
+
   - Deploy an existing ASP.NET Core microservices application to AKS.
+
   - Review some key DevOps concepts.
+
   - Create a GitHub Action to deploy changes to the AKS cluster.
+
   - Implement a minor change to the SPA and verify it gets deployed to your AKS cluster.
 prerequisites: |
   - Familiarity with DevOps concepts
@@ -22,22 +25,23 @@ prerequisites: |
   - Access to a GitHub account
 iconUrl: https://docs.microsoft.com/../media/learn/module.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- developer
+  - developer
 products:
-- dotnet
-- aspnet-core
-- dotnet-core
-- azure
-- azure-container-registry
-- azure-kubernetes-service
-- github
+  - dotnet
+  - aspnet-core
+  - dotnet-core
+  - azure
+  - azure-container-registry
+  - azure-kubernetes-service
+  - github
 units:
-- learn.microservices-devops-aspnet-core.1-introduction
-- learn.microservices-devops-aspnet-core.2-review-devops-concepts
-- learn.microservices-devops-aspnet-core.3-implement-github-action-deploy-aks
-- learn.microservices-devops-aspnet-core.4-knowledge-check
-- learn.microservices-devops-aspnet-core.5-summary
+  - learn.microservices-devops-aspnet-core.1-introduction
+  - learn.microservices-devops-aspnet-core.2-setup-environment
+  - learn.microservices-devops-aspnet-core.3-review-devops-concepts
+  - learn.microservices-devops-aspnet-core.4-implement-github-action-deploy-aks
+  - learn.microservices-devops-aspnet-core.5-knowledge-check
+  - learn.microservices-devops-aspnet-core.6-summary
 badge:
   uid: learn.microservices-devops-aspnet-core.badge
