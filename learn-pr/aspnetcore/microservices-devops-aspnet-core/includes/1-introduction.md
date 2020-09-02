@@ -13,6 +13,6 @@ We'll begin with a *simplified* and *revamped* version of [eShopOnContainers](ht
 
 ## Prerequisites
 
-- Familiarity with DevOps concepts.
-- Access to an Azure subscription with **Owner** privilege.
+- Familiarity with DevOps concepts
+- Access to an Azure subscription with **Owner** privilege
 - Access to a GitHub account
