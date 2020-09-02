@@ -13,14 +13,14 @@ This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](htt
 
 ## What-if prerequisites
 
-::: zone pivot="PowerShell"
+::: zone pivot="powershell"
 
-[!include[](../include/powershell/3-exercise-whatif-powershell.md)]
+[!include[](./powershell/3-exercise-whatif-powershell.md)]
 
 ::: zone-end
 
-::: zone pivot="Azure CLI"
+::: zone pivot="azurecli"
 
-[!include[](../include/powershell/3-exercise-whatif-azurecli.md)]
+[!include[](./powershell/3-exercise-whatif-azurecli.md)]
 
 ::: zone-end
