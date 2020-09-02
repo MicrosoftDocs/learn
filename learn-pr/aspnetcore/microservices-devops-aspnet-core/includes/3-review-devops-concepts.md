@@ -1,6 +1,6 @@
 ## What's DevOps
 
-DevOps is a relatively new set of practices that allows for a much better collaboration between the development team (the Devs) and the operations team (the Ops), to achieve higher software quality and a shorter release cycle.
+DevOps is a relatively new set of practices that improves collaboration between the development team (the Devs) and the operations team (the Ops), to achieve higher software quality and a shorter release cycle.
 
 The cloud in general, and the container-related technologies, make this much easier than it was a few years ago. You could certainly say that it just wasn't possible a close as in year 2000.
 
