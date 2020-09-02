@@ -39,11 +39,11 @@ What is a *passphrase* and how is it different from a password?
 
 In the past, the recommendation for a strong password was to use eight characters, with at least one uppercase character, number, and a special character such as !, :, @, *, $, or #. The problem with this guidance is that it resulted in passwords that were easy for a hacker to crack and hard for people to remember. So when someone had to create a password to meet those requirements, they were more likely to come up with the simplest password possible that met those rules. To make matters worse, people often reused those weak passwords for other accounts.
 
-:::image type="content" source="../media/3-password-risks.png" alt-text="Diagram containing a list of common, high risk passwords.":::
+:::image type="content" source="../media/3-password-risks.svg" alt-text="Diagram containing a list of common, high risk passwords.":::
 
 One famous example is the password *Pa$$w0rd*. In this example, you can meet all of the criteria, yet this password is high on the list of the top 1,000 most commonly used passwords. Hackers also have access to other password lists (for example, the top 1,000,000 most common), and can plug them into their password-cracking software. And in case you think you have a password that has never been used, you should know that tools exist that will use *brute force*, to try every combination of all characters in order to guess your passwords. Computers are good at guessing quickly, so be careful to not assume your password can never be guessed.
 
-:::image type="content" source="../media/3-password-cracking.png" alt-text="Chart showcasing how quickly a password can be cracked, based on password length and the types of characters used.":::
+:::image type="content" source="../media/3-password-cracking.svg" alt-text="Chart showcasing how quickly a password can be cracked, based on password length and the types of characters used.":::
 
 ## Creating a secure and complex password/passphrase
 
@@ -80,7 +80,7 @@ With your accounts and passwords now stored and secured, you'll be able to view 
 
 Convenient, most of the steps from here onward are automated. For example, when you visit a website, your password manager can automatically fill in the username and password for you. As long as you unlock your vault with your passphrase, you can log into your other accounts automatically afterwards. If you are concerned about someone else being able to use your password manager if you step away from the computer, you can configure your password manager to automatically lock itself after a minute, or any amount of time you like.
 
-:::image type="content" source="../media/3-password-manager.png" alt-text="Diagram showing a person using a password manager for accessing their accounts.":::
+:::image type="content" source="../media/3-password-manager.svg" alt-text="Diagram showing a person using a password manager for accessing their accounts.":::
 
 When you're done using your online accounts, you can close or lock the password manager. This will make sure your passwords are unavailable to anyone else that you may share a computer with.
 
