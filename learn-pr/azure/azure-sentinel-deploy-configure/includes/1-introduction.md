@@ -1,4 +1,3 @@
-## Introduction
 
 By deploying Microsoft Azure Sentinel and connecting it to data sources, you can harness the power of the cloud and AI to provide real-time analysis for security alerts throughout an enterprise.
 
