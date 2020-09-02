@@ -86,7 +86,7 @@ You can begin exploring these services (when ready):
 
 A little while after the `seq` container becomes ready (1/1) you should be able to check the centralized logs at `http://###.###.###.###/seq/#/events?autorefresh` where you'll see all the transient errors that occur during the application startup, until they stop and all services are up and running.
 
-![Seq home page view, showing typical startup errors.](media/startup-errors-logging.png)
+:::image type="content" source="../media/2-setup-environment/startup-errors-logging.png" alt-text="Seq home page view, showing typical startup errors" border="true" lightbox="../media/2-setup-environment/startup-errors-logging.png":::
 
 You can also check the general application status at `http://###.###.###.###/webstatus/` until all health icons are green.
 
@@ -94,4 +94,4 @@ You can also check the general application status at `http://###.###.###.###/web
 
 All the services should be up and running in less than five minutes and then you should be able to browse to the home page and login using the credential in the login page.
 
-![WebSPA home page view.](media/home-page.png)
+:::image type="content" source="../media/2-setup-environment/home-page.png" alt-text="WebSPA home page view" border="true" lightbox="../media/2-setup-environment/home-page.png":::
