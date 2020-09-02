@@ -11,6 +11,6 @@ Using multi-factor authentication (MFA) increases identity security by limiting 
 Multi-factor authentication (MFA) comes as part of the following Azure service offerings:
 
 + **Azure Active Directory premium licenses**. These licenses provide full-featured use of Azure Multi-Factor Authentication Service (cloud) or Azure Multi-Factor Authentication Server (on-premises).
-+ **Multi-factor authentication for Office 365**. A subset of Azure Multi-Factor Authentication capabilities is available as a part of your Office 365 subscription.
++ **Multi-factor authentication for Microsoft 365**. A subset of Azure Multi-Factor Authentication capabilities is available as a part of your Microsoft 365 subscription.
 + **Azure Active Directory global administrators**. Because global administrator accounts are highly sensitive, a subset of Azure Multi-Factor Authentication capabilities are available to protect these accounts.
 

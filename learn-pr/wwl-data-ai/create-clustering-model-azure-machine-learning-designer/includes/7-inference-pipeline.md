@@ -4,6 +4,9 @@ After creating and running a pipeline to train the clustering model, you can cre
 
 1. In Azure Machine Learning Studio, open the **Train Penguin Clustering** pipeline you created previously.
 2. In the **Create inference pipeline** drop-down list, click **Real-time inference pipeline**. After a few seconds, a new version of your pipeline named **Train Penguin Clustering-real time inference** will be opened.
+
+   *If the pipeline does not include **Web Service Input** and **Web Service Output** modules, go back to the **Designer** page and then re-open the **Train Penguin Clustering-real time inference** pipeline.*
+
 3. Rename the new pipeline to **Predict Penguin Clusters**, and then review the new pipeline. It contains a web service input for new data to be submitted, and a web service output to return results. The transformations and clustering model in your training pipeline are encapsulated in this pipeline based on the statistics from your training data, and will be used to transform and score the new data.
 
     You are going to make the following changes to the inference pipeline:
@@ -13,7 +16,7 @@ After creating and running a pipeline to train the clustering model, you can cre
 
     - Replace the **penguin-data** dataset with an **Enter Data Manually** module that does not include the **Species** column.
     - Remove the **Select Columns in Dataset** module, which is now redundant.
-    - Connect the **web Service Input** and **Enter Data Manually** modules (which represent inputs for data to be clustered) to the **Assign Data to Clusters** module.
+    - Connect the **Web Service Input** and **Enter Data Manually** modules (which represent inputs for data to be clustered) to the first **Apply Transformation** module.
     - Remove the **Evaluate Model** module.
 
     Follow the remaining steps below, using the image and information above for reference as you modify the pipeline.

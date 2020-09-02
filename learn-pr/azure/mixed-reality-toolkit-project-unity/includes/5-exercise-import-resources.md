@@ -32,7 +32,7 @@ After the MRTK Foundation package is imported, the **MRTK Project Configurator**
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**.
 
-:::image type="content" source="../media/open-mrtk-project-configurator.png" alt-text="Open MRTK Project Configurator window":::
+:::image type="content" source="../media/open-mrtk-project-configurator.png" alt-text="Open MRTK Project Configurator window.":::
 
 ## Configure the Unity project for the Mixed Reality Toolkit
 
@@ -48,4 +48,4 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add MRTK to your current scene. Two new objects are added to the Hierarchy: **MixedRealityToolkit** and **MixedRealityPlayspace**.
 
-:::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects":::
+:::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects.":::

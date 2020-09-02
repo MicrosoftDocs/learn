@@ -1,6 +1,6 @@
 There are many options for securing identities in your application. Selecting the right technology for your application will help ensure that your application is secure, while maintaining a great experience for your users.
 
-At your transportation company, your drivers have identities in Office 365. You want to understand how you can use those identities to authenticate them in your scheduling app. You want to provide secure access to your application without requiring the drivers to manage extra user accounts and credentials.
+At your transportation company, your drivers have identities in Microsoft 365. You want to understand how you can use those identities to authenticate them in your scheduling app. You want to provide secure access to your application without requiring the drivers to manage extra user accounts and credentials.
 
 Let's look at the standards and services that you can use for authentication.
 
@@ -10,7 +10,7 @@ Azure Active Directory (Azure AD) is Microsoft's cloud-based identity and acces
 
 Azure AD allows users to sign in and view resources. And it has features to help secure your identities, such as Identity Protection and multi-factor authentication.
 
-Microsoft services such as Azure and Office 365 use Azure AD to store and manage users. Whenever Office 365 needs to verify a user, for example, Azure AD performs all identity and access management.
+Microsoft services such as Azure and Microsoft 365 use Azure AD to store and manage users. Whenever Microsoft 365 needs to verify a user, for example, Azure AD performs all identity and access management.
 
 ## Authentication in Azure Active Directory
 

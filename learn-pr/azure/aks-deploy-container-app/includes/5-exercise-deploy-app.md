@@ -17,7 +17,7 @@ You need to create and push your container image to a container registry to depl
     ```bash
     ACR_NAME=ContosoContainerRegistry$RANDOM
     ```
-    
+
 1. Make a note of the generated container registry name by running the following command and writing down the value. You'll use this value in your manifest files.
 
     ```bash
@@ -46,17 +46,10 @@ You need to create and push your container image to a container registry to depl
 
 ## Sign in and push a container image to Container Registry
 
-The new container registry requires authentication before you can push your container image. If you need this information in the future, you can access the container registry credentials in the [Azure portal](https://portal.azure.com).
+The new container registry requires authentication before you can push your container image. If you need this information in the future, you can access the container registry credentials in the [Azure portal](https://portal.azure.com). One of the benefits of using ACR is that we don't need to sign in to our registry once we are logged into our Azure account with Azure CLI.
 
-Go to your newly created container registry and select the **Access keys** tab. On this tab, you'll find the registry name, login server, username, and password information.
-
-1. In Cloud Shell, run the `az acr login` command to authenticate with your new container registry. There's no need to include `.azurecr.io` in the name of the container registry when you sign in.
-
-    ```azurecli
-    az acr login --name $ACR_NAME
-    ```
-
-    You're now ready to push images to the container registry.
+> [!TIP]
+> If you need to log in without Azure CLI, go to your newly created container registry and select the **Access keys** tab. On this tab, you'll find the registry name, login server, username, and password information. Then you can run `az acr login -n <registry-name>` command to authenticate with your registry, or `docker login <registry-name>` using the provided username and password.
 
 1. Clone the web app from the GitHub repository, and change into the `mslearn-aks-deploy-container-app` directory.
 

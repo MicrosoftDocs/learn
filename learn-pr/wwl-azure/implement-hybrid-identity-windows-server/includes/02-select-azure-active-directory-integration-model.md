@@ -28,7 +28,7 @@ With Azure AD, you also have access to a set of features that are not natively a
 
 ## Azure AD tenants
 
-Unlike on-premises AD DS, Azure AD is multitenant by design and is implemented specifically to ensure isolation between its individual directory instances. It is the world’s largest multitenant directory, hosting over a million directory services instances, with billions of authentication requests per week. The term *tenant* in this context typically represents a company or organization that signed up for a subscription to a Microsoft cloud-based service such as Microsoft Office 365, Microsoft Intune, or Azure, each of which uses Azure AD. 
+Unlike on-premises AD DS, Azure AD is multitenant by design and is implemented specifically to ensure isolation between its individual directory instances. It is the world’s largest multitenant directory, hosting over a million directory services instances, with billions of authentication requests per week. The term *tenant* in this context typically represents a company or organization that signed up for a subscription to a Microsoft cloud-based service such as Microsoft 365, Microsoft Intune, or Azure, each of which uses Azure AD. 
 
 However, from the technical standpoint, the term *tenant* represents an individual Azure AD instance. Within an Azure subscription, you can create multiple Azure AD tenants. Having multiple Azure AD tenants might be convenient if you want to test Azure AD functionality in one tenant without affecting the others.
 
