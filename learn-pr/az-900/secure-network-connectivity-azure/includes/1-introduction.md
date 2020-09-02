@@ -17,5 +17,6 @@ In this module, you'll focus on the network security capabilities in Azure and r
 By the end of this module, you'll able to:
 
 * Identify the various layers that make up a *defense in depth* strategy.
-* Explain how Azure Firewall and network security groups enable you to control what traffic is allowed on the network.
+* Explain how Azure Firewall enables you to control what traffic is allowed on the network.
+* Configure network security groups to filter network traffic to and from Azure resources within an Azure Virtual Network (VNet).
 * Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
