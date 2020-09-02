@@ -113,7 +113,17 @@ With all of the heavy lifting taken care of by existing functions/operations in 
     - call Q# operation and receive returned energy estimate.
     - save, plot, or process that returned value to your heart's content.
 
+We demonstrate this workflow with a Python host program in the video below. 
+Specifically we estimate the ground state energy of molecular hydrogen.
+
+VIDEO GOES HERE
+
+The Q#, Python, and molecular data files used are similar to those found in the [PythonIntegration](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/PythonIntegration) Q# sample. 
+
+MAYBE FILES GO HERE
+
 ## Explore further
 
 - To get started using the quantum chemistry library with your Q# projects, see [Using additional Q# libraries](https://docs.microsoft.com/quantum/user-guide/libraries/additional-libraries?view=qsharp-preview&tabs=tabid-csproj)
 - Learn how to use additional tools from the library at [Chemistry library installation](https://docs.microsoft.com/quantum/user-guide/libraries/chemistry/installation?view=qsharp-preview), and explore the entire documentation section for more.
+- If you want to get hands-on experience with the library, you can check out the [Q# samples for quantum chemistry](https://github.com/microsoft/Quantum/tree/master/samples/chemistry).
