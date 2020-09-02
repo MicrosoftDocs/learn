@@ -12,7 +12,7 @@ To connect to a Windows DSVM with Remote Desktop:
 1. Select **Download RDP File**. 
 1. Open the file in Microsoft Remote Desktop to connect.
 
-![Screenshot of portal showing the RDP file download page.](../media/download-rdp-file.png)
+![Screenshot of the portal showing the RDP file download page.](../media/download-rdp-file.png)
 
 ## Connect to the command line by using SSH
 
@@ -24,7 +24,7 @@ To access the command line of your Data Science Virtual Machine, you'll use:
 
 ### Install an SSH client on Windows, if necessary
 
-If you're running Linux or macOS, an SSH client is part of the OS standard utilities. If you're running Windows, you may not have an SSH client already installed on your machine. Open a PowerShell console with Administrative rights and see if you have the client installed:
+If you're running Linux or macOS, an SSH client is part of the OS standard utilities. If you're running Windows, you might not have an SSH client already installed on your machine. Open a PowerShell console with administrative rights and see if you have the client installed:
 
 ```powershell
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
@@ -37,15 +37,15 @@ Name  : OpenSSH.Server~~~~0.0.1.0
 State : NotPresent
 ```
 
-If the `State` of the `OpenSSH.Client` isn't `Installed`, run:
+If the `State` value of `OpenSSH.Client` isn't `Installed`, run:
 
 ```powershell
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-## Connect using an ssh client from the command line
+## Connect by using an SSH client from the command line
 
-From a terminal or PowerShell console, run the following, replacing your username and the IP address for `1.1.1.1`:
+From a terminal or a PowerShell console, run the following code. Replace your username and the IP address for `1.1.1.1`.
 
 ```bash
 ssh UserName@1.1.1.1
