@@ -8,7 +8,7 @@ There are ways to identify and protect yourself from phishing. Let's take a clos
 
 ## What is phishing?
 
-Phishing email is usually written to convince you to do one of two things:
+Phishing email is written to convince you to do one of two things:
 
 - Select a link and navigate to a dangerous webpage.
 - Open an attachment that runs a dangerous program.
@@ -17,7 +17,7 @@ One of the most common phishing goals is to collect your personal information, s
 
 Another common phishing goal is to deliver malicious software, called *malware*. Opening one of these dangerous attachments could result in running a program that could harm your computer, or even lock you out of it, unless you pay a ransom. This malicious software is known as *ransomware*.
 
-Phishing is one of the most common threats on the internet, and can affect anyone. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-Internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is a very popular and successful way for a criminal to steal your data.
+Phishing is one of the most common threats on the internet, and can affect anyone. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-Internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is a popular and successful way for a criminal to steal your data.
 
 :::image type="content" source="../media/2-phishing-stats.png" alt-text="Diagram showing a phishing attempt by an attacker with statistical descriptions the prevalence of phishing attacks.":::
 
@@ -43,7 +43,7 @@ First, recognize phishing. Here are some common features of phishing attacks tha
 - **Unusual hyperlinks**: Be aware of any links in emails. If you hover over a link and the destination looks odd, it could be a dangerous website. One link is all it takes to go to a website that looks just like a legitimate one, designed to capture your login information or even run malware.
 - **Urgency**: If something says you need to do something *right now*, it could be a phishing email. Remember, your bank usually doesn’t reach out to you with no warning using an email subject of *We are canceling all of your accounts!*
 - **Bad spelling or grammar**: Phishing emails are often full of unusual writing, spelling, and grammar errors. If the email looks suspicious, you should avoid interacting with it.
-- **Fake sender**: If the email address looks unusual or is someone you don’t recognize, you should to treat it as a phishing email.
+- **Fake sender**: If the email address looks unusual or is someone you don’t recognize, you should treat it as a phishing email.
 
 In the image below, you can see an example of an email with all of these red flags.
 

@@ -6,7 +6,7 @@ While most of your online activity probably doesn’t directly expose you to cri
 
 Securing your passwords, account information, and other sensitive data may be easier than you think. We will show you actions you can take to protect yourself from the most common threats.
 
-In addition, we have designed these activities to be easily shared with friends and family. If you’re the kind of person who likes to help others, we will share a set of tools and techniques you can pass along. And of course, you can share the link to this training.
+In addition, we have designed these activities to be easily shared with friends and family. If you’re the kind of person who likes to help others, we will share a set of tools and techniques you can pass along. And you can share the link to this training.
 
 ## Learning objectives
 

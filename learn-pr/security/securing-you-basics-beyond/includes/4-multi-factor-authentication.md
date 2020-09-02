@@ -2,9 +2,9 @@ There is another way to add another layer of security to the credentials you use
 
 ## Putting the "multi" in multi-factor authentication
 
-Having complex and unique passphrases and passwords is a great step toward securing your accounts. But that still doesn't protect you if a company has a data breach and exposes your password. For this type of scenario, you can further improve the security of your accounts by using multi-factor authentication. This approach gives you another completely different, very effective layer of security.
+Having complex and unique passphrases and passwords is a great step toward securing your accounts. But that still doesn't protect you if a company has a data breach and exposes your password. For this type of scenario, you can further improve the security of your accounts by using multi-factor authentication. This approach gives you another different, effective layer of security.
 
-Let's begin with *factors*. A factor in this scenario is just a type of secret. Using multi-factor authentication means using *more than one type of secret* to verify your identity. It’s like having another type of password required to log in, after providing the first password.
+Let's begin with *factors*. A factor in this scenario is just a type of secret. Using multi-factor authentication means using *more than one type of secret* to verify your identity. It’s like having another type of password required to sign in, after providing the first password.
 
 There are three general types of factors:
 
@@ -41,8 +41,8 @@ What is the most important thing you should secure using MFA? Your password mana
 
 How do you set up MFA? Follow the instructions for the account you want to secure. While they may be slightly different from account to account, they should provide clear, easy-to-follow instructions, and most of them will show you how to set up and use an authenticator app on your smartphone, such as [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator/?azure-portal=true). If you're not sure where to start, look in your account's security settings for terms like "MFA", "2FA" (two-factor authentication), or "multi-step verification".
 
-Your account may require a specific authenticator, or it may give you the option to choose from several. You should use the one(s) that works best for you.
+Your account may require a specific authenticator, or it may give you the option to choose from several. Use the option that works best for you.
 
-Lastly, your account may only give you the option to use cell phone text messages to receive a *one-time code* for use with MFA. This works by generating a new code, each time you attempt to log in. Without entering that code when the login screen asks for it, the login will not complete. While this is not as secure as using an authenticator application on your phone, since text messages can be intercepted, it is still much better than not using MFA at all. If that’s your only available option, you should still use it.
+Lastly, your account may only give you the option to use cell phone text messages to receive a *one-time code* for use with MFA. This works by generating a new code, each time you attempt to log in. Without entering that code when the sign-in screen asks for it, the sign-in will not complete. While this is not as secure as using an authenticator application on your phone, since text messages can be intercepted, it is still much better than not using MFA at all. If that’s your only available option, you should still use it.
 
-If you enable MFA for every account you can, your accounts will be more secure, even if you already use a strong password or passphrase. The extra security this gives your account is definitely worth the extra couple of seconds it will take to login.
+If you enable MFA for every account you can, your accounts will be more secure, even if you already use a strong password or passphrase. The extra security this gives your account is definitely worth the extra couple of seconds it will take to sign in.
