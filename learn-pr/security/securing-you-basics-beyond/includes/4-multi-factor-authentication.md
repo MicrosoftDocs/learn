@@ -2,47 +2,47 @@ There is another way to add another layer of security to the credentials you use
 
 ## Putting the "multi" in multi-factor authentication
 
-A *factor* in this scenario is just a type of secret. So using multi-factor authentication means using *more than one type of secret* to verify your identity. It’s another layer of security you can use to secure your accounts with more than just a password. MFA refers to the use of multiple factors for validating and verifying your account whenever you log in. This can include typing in a code from a text message to your personal phone number, or possibly through a biometric factor like your fingerprint.
+Having complex and unique passphrases and passwords is a great step toward securing your accounts. But that still doesn't protect you if a company has a data breach and exposes your password. For this type of scenario, you can further improve the security of your accounts by using multi-factor authentication. This approach gives you another completely different, very effective layer of security.
+
+Let's begin with *factors*. A factor in this scenario is just a type of secret. Using multi-factor authentication means using *more than one type of secret* to verify your identity. It’s like having another type of password required to log in, after providing the first password.
 
 There are three general types of factors:
 
 - *A thing you know*: Passwords, passphrases, personal identification number (PIN).
 - *A thing you have*: Your smartphone or a special USB security device.
-- *A thing you are*: Biometric information such as your fingerprints or your face, often used as ways to unlock smartphones.
+- *A thing you are*: Biometric information such as your fingerprint or your face (often used to as a way to unlock a smartphone).
 
-For example, to log into an account:
+Let's look at an example of using MFA to log into an account:
 
     - You enter your user name, this is your identity.
     - You enter your password. This is the first factor, something you know.
     - Then select an approval button on a smartphone app. This is the second factor, something you have.
 
-In the example, MFA was used to log into an account with two factors: a password and an app on a physical device you had in your possession.
-
-## Why MFA?
-
-Why is MFA so important? As we mentioned earlier, several billions of records have been leaked over the last few years. Let’s assume one of your usernames and passwords has been leaked. If you don’t use MFA, a criminal could take that username and password combination to log into one of your accounts and do bad things.
-
-This is where it MFA increases the security of your account. Even if your username and password have been stolen or leaked, if you have MFA turned on your account will still be safe. Why? Because nobody can log in without that last step. The thief may have your username and password, but not the other factor. It’s like another password, but one that isn’t stored with the information that was stolen. Most reputable sites now require you to enable MFA. Where you can, you should always be using MFA.
-
-Unless you are a special target of capable criminals, those intending to abuse your username and password will not have access to your fingerprints, your phone, or your USB security devices. Just having an additional factor as a part of logging into any of your accounts introduces a layer of security that most criminals will not be able to work around.
-
-When the next breach occurs, and more usernames and passwords are exposed to the world, all you will need to do is change the passwords belonging to any leaked accounts, and keep using MFA. Know that in continuing to use MFA, you are ensuring your exposed usernames and passwords are useless without one of your devices.
-
-What is the most important thing you should secure using MFA? You guessed it! Your password manager! All reputable password managers allow you to set up MFA to keep your secrets as secure as possible.
-
-> [!TIP]
-> You should always use MFA with any of your accounts. Don't like the idea of using an app on your smartphone? Yubico produces an easy-to-use device called a [Yubikey](https://www.yubico.com/products/). These can be used as personal security devices for supporting MFA-enabled accounts.
-
-Here is another way of looking at MFA:
+In the example, you used MFA to log into an account with two factors: a password and an app on a physical device you had in your possession.
 
 :::image type="content" source="../media/4-mfa.png" alt-text="Diagram depicting two factors, a password and an authentication device, showcasing how an account is logged into.":::
 
+## Why MFA?
+
+Why is MFA so important? As we mentioned earlier, many billions of records have been leaked over the last few years. Let’s assume one of your usernames and passwords has been leaked. If you don’t use MFA, a criminal could take that username and password combination and log into one of your accounts and do bad things.
+
+This is where MFA increases the security of your account. Even if your username and password have been stolen or leaked, if you have MFA turned on, your account information should still be safe. Why? Because nobody can log in without that last step. The thief may have your username and password, but not the other factor. It’s like another password, but one that is stored differently, not with the other information that is frequently stolen. Many reputable sites now encourage or even require that you turn on MFA. But even if they don't, you should turn on and use MFA wherever you can.
+
+Unless you are a special target of capable criminals, anyone intending to abuse your username and password will not have access to your fingerprints, your phone, or your USB security device. Just having an additional factor as a part of logging into any of your accounts introduces a layer of security that most criminals will not be able to work around.
+
+When the next breach occurs and more usernames and passwords are exposed to the world, all you will need to do is change the passwords for those accounts. Depending on the type of breach or attack, if you have MFA turned on, your data should still be secure.
+
+What is the most important thing you should secure using MFA? Your password manager. All reputable password managers allow you to set up MFA to keep your secrets as secure as possible.
+
+> [!TIP]
+> You should always use MFA with any accounts that allow it. If you don't like the idea of using an app on your smartphone, Yubico makes an easy-to-use device called a [Yubikey](https://www.yubico.com/products/?azure-portal=true). These can be used as very effective personal security devices for supporting MFA-enabled accounts.
+
 ## MFA apps and other options
 
-How do you set up MFA? Follow the instructions for the account you want to secure. They should provide clear, easy-to-follow instructions, and most of them will allow you to use an authenticator app on your smartphone, like [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator). You can often find these settings in the details of your account.
+How do you set up MFA? Follow the instructions for the account you want to secure. While they may be slightly different from account to account, they should provide clear, easy-to-follow instructions, and most of them will show you how to set up and use an authenticator app on your smartphone, such as [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator/?azure-portal=true). If you're not sure where to start, look in your account's security settings for terms like "MFA", "2FA" (two-factor authentication), or "multi-step verification".
 
-As other authenticator apps are available, you should use the one that works best for you. Any of these options should be good, and will add that important, extra layer of security.
+Your account may require a specific authenticator, or it may give you the option to choose from several. You should use the one(s) that works best for you.
 
-Lastly, your account may only give you the option to use text messages to receive a *one-time code* for use with MFA. This works by generating a new code, each time you attempt to log in. Without verifying the code that was sent to you in a text message, the log in will not complete. While this is not as secure as using an authenticator application on your phone, as text messages can be intercepted, it is still much better than not using MFA at all. If that’s your only available option, you should still use it.
+Lastly, your account may only give you the option to use cell phone text messages to receive a *one-time code* for use with MFA. This works by generating a new code, each time you attempt to log in. Without entering that code when the login screen asks for it, the login will not complete. While this is not as secure as using an authenticator application on your phone, since text messages can be intercepted, it is still much better than not using MFA at all. If that’s your only available option, you should still use it.
 
-If you enable MFA for every account you can, using any kind of MFA available, your accounts will always be more secure than they are without it, even if you already use a strong password or passphrase. Having two or more factors is greater than one, so you should always be using MFA wherever it's supported.
+If you enable MFA for every account you can, your accounts will be more secure, even if you already use a strong password or passphrase. The extra security this gives your account is definitely worth the extra couple of seconds it will take to login.

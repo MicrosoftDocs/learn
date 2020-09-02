@@ -1,12 +1,12 @@
-Staying secure online is a challenge. The internet and the devices connected to it are constantly changing and are adapting to modern advancements in technology. Unfortunately, the criminals keep changing their tactics too, adapting to the same advancements that make using the internet more convenient.
+Staying secure online is a challenge. The internet and the devices connected to it are constantly changing. Unfortunately, the criminals are changing their tactics too, constantly taking advantage of flaws wherever they can find them.
 
-If you think about the internet as a neighborhood, one where you do common tasks such as email, banking, or shopping, you should think about who your neighbors are. Some of these neighbors are dangerous. They include organized crime gangs intent on stealing personal account information, hackers who will use your computers to attack other victims, automated downloads that install ransomware to keep you from using your computer until you pay, and even government-backed hackers who may be on a mission to steal intellectual property or destabilize governments.
+If you think about the internet as a neighborhood, one where you do common tasks such as email, banking, or shopping, you should think about who your neighbors are. Some of these neighbors are dangerous. They include organized crime gangs intent on stealing personal account information, hackers who will use your computers to attack other victims, automated downloads that install ransomware to keep you from using your computer until you pay (or until you restore from a backup), and even government-backed hackers who may be on a mission to steal intellectual property or destabilize governments.
 
 While most of your online activity probably doesn’t directly expose you to crime, odds are good that you know someone who has been a victim of some kind of computer-related crime, including computer viruses, malware, identity theft, or data breaches. If it hasn’t happened to you and if you don’t protect yourself, it’s just a matter of time before you will be directly affected. So what can you do to keep yourself safe, without having to be a cybersecurity expert?
 
-Securing your passwords, account information, and other sensitive data may be easier than you think. We will show you actions you can take to protect yourself from the most common threats active today.
+Securing your passwords, account information, and other sensitive data may be easier than you think. We will show you actions you can take to protect yourself from the most common threats.
 
-In addition, we have designed these activities to be easily shared with friends and family. If you’re the kind of person who likes to help others, we’ll be sharing a set of tools and techniques you can pass along, including the link to this training.
+In addition, we have designed these activities to be easily shared with friends and family. If you’re the kind of person who likes to help others, we will share a set of tools and techniques you can pass along. And of course, you can share the link to this training.
 
 ## Learning objectives
 
