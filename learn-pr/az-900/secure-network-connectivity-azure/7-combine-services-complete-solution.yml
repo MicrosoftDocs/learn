@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity-azure.6-combine-services-complete-solution
+uid: learn.secure-network-connectivity-azure.7-combine-services-complete-solution
 title: Combine Azure services to create a complete network security solution
 metadata:
   description: Review recommendations on how to combine Azure services to create a complete network security solution.
@@ -10,4 +10,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-combine-services-complete-solution.md)]
+  [!include[](includes/7-combine-services-complete-solution.md)]

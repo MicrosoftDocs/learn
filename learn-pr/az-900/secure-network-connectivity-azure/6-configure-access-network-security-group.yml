@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity-azure.7-configure-access-network-security-group
+uid: learn.secure-network-connectivity-azure.6-configure-access-network-security-group
 title: Exercise - Configure network access to a VM by using a network security group
 metadata:
   description: Configure network access to a virtual machine running on Azure by using a network security group.
@@ -12,4 +12,4 @@ azureSandbox: true
 interactive: bash
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-configure-access-network-security-group.md)]
+  [!include[](includes/6-configure-access-network-security-group.md)]
