@@ -1,9 +1,8 @@
-In this unit, you're going to explore quantum interference and relative phases
-with Q# and the `DumpMachine` function.
+In this unit, you explore quantum interference and relative phases by using Q# and the `DumpMachine` function.
 
-## An example of interference with Q\#
+## An example of interference with Q#
 
-In unit 4, when putting the states $\ket{\psi_1}=
+In the previous part, when putting the states $\ket{\psi_1}=
 \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$ and $\ket{\psi_2}=
 \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ in a superposition, the probability
 amplitude of $\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
@@ -53,7 +52,7 @@ Zero
 
 We can see that it behaves just as we expected.
 
-## Exploring the relative phase with Q\#
+## Exploring the relative phase with Q#
 
 You may have noticed that `DumpMachine` also gives us
 information about the phase of each amplitude. However, so far we have

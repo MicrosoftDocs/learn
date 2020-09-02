@@ -43,7 +43,7 @@ To do so, you simply call `DumpMachine` at every step that you want to see the s
 
     :::code language="qsharp" source="code/3-program-1.qs":::
 
-    Here, you call `DumpMachine()` four times:
+    Here, you call `DumpMachine` four times:
 
     1. After the qubit is allocated.
     1. After placing the qubit in superposition.
