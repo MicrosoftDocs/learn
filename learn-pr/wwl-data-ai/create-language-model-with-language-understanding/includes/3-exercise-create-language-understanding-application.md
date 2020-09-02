@@ -1,4 +1,4 @@
-The best way to learn how to use LUIS is to explore it for yourself.
+The best way to learn how to use Language Understanding is to explore it for yourself.
 
 ## Before you start
 
