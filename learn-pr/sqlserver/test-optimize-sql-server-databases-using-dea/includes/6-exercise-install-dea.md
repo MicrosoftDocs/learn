@@ -4,7 +4,9 @@ You're upgrading several CRM databases to SQL Server 2019. These databases inclu
 
 In this exercise, you'll install the DEA on the virtual machine you created earlier.
 
-[!NOTE] Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if DEA is right for your task**.
+> [!NOTE]
+> Before beginning this exercise, you must complete the **Prepare for the exercises** steps in the unit **Decide if DEA is right for your task**.
+
 
 ## Download the RDP connection file from Azure
 
