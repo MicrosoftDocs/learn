@@ -17,7 +17,7 @@ One of the most common phishing goals is to collect your personal information, s
 
 Another common phishing goal is to deliver malicious software, called *malware*. Opening one of these dangerous attachments could result in running a program that could harm your computer, or even lock you out of it, unless you pay a ransom. This malicious software is known as *ransomware*.
 
-Phishing is one of the most common threats on the Internet, and can affect anyone. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-Internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is a very popular and successful way for a criminal to steal your data.
+Phishing is one of the most common threats on the internet, and can affect anyone. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-Internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is a very popular and successful way for a criminal to steal your data.
 
 :::image type="content" source="../media/2-phishing-stats.png" alt-text="Diagram showing a phishing attempt by an attacker with statistical descriptions the prevalence of phishing attacks.":::
 
