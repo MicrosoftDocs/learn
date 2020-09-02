@@ -20,14 +20,12 @@ To learn more about keeping yourself secure, visit the following resources:
 - *Check your current accounts*
   - [Have I Been Pwned](https://www.haveibeenpwned.com/?azure-portal=true)
   - [Firefox Monitor](https://monitor.firefox.com/?azure-portal=true)
-  - [Have I Been Sold](https://haveibeensold.app/?azure-portal=true)
 
 - *Install a Password Manager*
   - [1Password](https://1password.com/?azure-portal=true)
   - [BitWarden](https://www.bitwarden.com/?azure-portal=true)
   - [Dashlane](https://www.dashlane.com/?azure-portal=true)
   - [LastPass](https://www.lastpass.com/?azure-portal=true)
-  - [KeePassXC](https://keepassxc.org/?azure-portal=true)
 
 - *Learn more about MFA, Microsoft Authenticator, and MFA-supported devices*
   - [NIST - Back to basics: Multi-factor authentication (MFA)](https://www.nist.gov/itl/applied-cybersecurity/tig/back-basics-multi-factor-authentication/?azure-portal=true)
