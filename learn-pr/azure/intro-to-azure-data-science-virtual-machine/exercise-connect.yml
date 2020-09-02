@@ -35,7 +35,7 @@ quiz:
         - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images can be accessed with an XFCE client, such as X2Go Client."
           isCorrect: false
           explanation: "On Ubuntu, you must use an XFCE client, such as X2Go Client. On Windows, you must use Microsoft Remote Desktop client software."
-        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images can be accessed with a Remote Desktop Protocol (RDP) client."
+        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images can be accessed with an RDP client."
           isCorrect: false
           explanation: "On Ubuntu, you must use an XFCE client, such as X2Go Client. On Windows, you must use Microsoft Remote Desktop client software."
 

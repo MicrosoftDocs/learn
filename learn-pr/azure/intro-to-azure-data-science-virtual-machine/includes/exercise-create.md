@@ -34,7 +34,7 @@ We need to configure the basic parameters of our Ubuntu virtual machine.
     - The **Image** value should be the **Data Science Virtual Machine - Ubuntu 18.04** option that you selected from Azure Marketplace.
 
     - The **Size** value of the VM should be **Standard_DS1_v2**. If that's not the selected value:
-        1. Select **Choose size** .
+        1. Select **Choose size**.
         1. Enter **DS1\_** in the search box.
         1. Choose the **DS1\_v2** row.
         1. Click **Select** to choose that size and return to the configuration screen.

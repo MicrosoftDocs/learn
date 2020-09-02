@@ -34,6 +34,6 @@ The Data Science Virtual Machines are preconfigured with the drivers, library ve
 
 Within a type, machines are typically associated with a letter-based series. For instance, GPU sizes typically begin with an "N": NC6, NC12s v3, NC24, NV12, and so forth. 
 
-Before you create a Data Science Virtual Machine, you should decide on a storage strategy. You can choose to install the OS on a Premium SSD, a Standard SSD, or a Standard HDD. In addition, you can choose to create or attach to one or more data disks. Again, you can choose the hard-drive technology, trading off the higher speed of SSDs versus their cost per gigabyte.
+Before you create a Data Science Virtual Machine, you should decide on a storage strategy. You can install the OS on a Premium SSD, a Standard SSD, or a Standard HDD. In addition, you can either create or attach to one or more data disks. Again, you can choose the hard-drive technology, trading off the higher speed of SSDs versus their cost per gigabyte.
 
 You can resize your Data Science Virtual Machine as your requirements change. For instance, you might choose a general-purpose or memory-optimized size when data acquisition and understanding are your primary focus, but resize to a GPU offering when modeling becomes the bottleneck.
