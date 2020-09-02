@@ -9,15 +9,11 @@ metadata:
   ms.prod: learning-aspnetcore
 title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
 summary: Implement a GitHub Actions pipeline to deploy to AKS from a GitHub repo.
-abstract: >
+abstract: |
   In this module, you will:
-
   - Deploy an existing ASP.NET Core microservices application to AKS.
-
   - Review some key DevOps concepts.
-
   - Create a GitHub Action to deploy changes to the AKS cluster.
-
   - Implement a minor change to the SPA and verify it gets deployed to your AKS cluster.
 prerequisites: |
   - Familiarity with DevOps concepts

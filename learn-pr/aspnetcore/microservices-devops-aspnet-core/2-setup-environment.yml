@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.undefined.2-setup-environment
+uid: learn.microservices-devops-aspnet-core.2-setup-environment
 title: Unit
 metadata:
   title: Unit
   description: Describe unit
-  author: undefined
-  ms.author: undefined
-  ms.date: 04/14/2020
+  author: scottaddie
+  ms.author: scaddie
+  ms.date: 09/02/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
