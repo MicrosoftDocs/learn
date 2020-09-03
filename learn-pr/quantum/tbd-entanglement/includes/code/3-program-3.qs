@@ -15,7 +15,6 @@ namespace ExploringSuperposition {
             let result = ForEach(M, qubits);
             Message("Measuring the qubits collapses the superposition to a basis state.");
             DumpMachine();
-            ResetAll(qubits);
             return BoolArrayAsInt(ResultArrayAsBoolArray(result));
         }
     }

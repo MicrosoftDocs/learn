@@ -1,4 +1,5 @@
-Congratulations! You finished the module [Title of the module]. This module
+Congratulations! You finished the module Explore the key concepts of quantum
+computing by using Q#. This module
 served you as an introduction to the working principles of quantum computers.
 
 In this module, we presented a lot of new concepts. Here we list a few concepts
@@ -14,7 +15,11 @@ worth remembering:
 - The phase of a quantum state is relevant for quantum interference. States with
   opposite phase interfere destructively, whereas states with the same phase
   interfere constructively.
-- Two qubits are entangled if their states are correlated and cannot be described as two independent qubits
+- Two qubits are entangled if their states are correlated and cannot be described as two independent qubits.
+- The Quantum Development Kit offers many different tools to boost quantum
+  development. In this module we used the function `DumpMachine` to inspect quantum states in
+  simulated computers and the `ResourcesEstimator` to see what resources we need
+  to run a particular program.
 
 ## Learn more
 

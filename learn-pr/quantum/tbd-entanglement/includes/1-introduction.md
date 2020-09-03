@@ -1,8 +1,7 @@
 Quantum computers work in fundamentally different ways from classical computers.
 They can offer solutions when classical computers run into limitations. Quantum
 algorithms aren't always faster than their classical counterparts. But for
-certain tasks, such as factorizing large numbers or searching for items in an
-unordered list, quantum computers provide important speed-ups.
+certain tasks, such as factoring large numbers or inverting functions, quantum computers provide important speed-ups.
 
 How can quantum computers perform better than classical computers? In this module, you'll learn the fundamental concepts behind the power of quantum computing.
 
@@ -10,14 +9,16 @@ The key to understanding quantum computing is knowing three important concepts: 
 _interference_, and _entanglement_. In this module, you'll use Q# and some tools
 provided by the Quantum Development Kit to illustrate these ideas.
 
-Finally, you'll have an overview of a few quantum algorithms to see how superposition, interference, and entanglement can outperform classical computers.
+Finally, you'll have an overview of a few quantum algorithms to see how by
+exploiting superposition, interference, and entanglement quantum computers can outperform
+classical computers.
 
 ## Learning objectives
 
 After completing this module, you'll be able to:
 
 - Explain the basic theory behind the power of quantum computing, including concepts like superposition, interference, and entanglement.
-- Inspect quantum states in virtual quantum computers.
+- Inspect quantum states when running code in simulated quantum computers.
 - Estimate the quantum resources that are needed to run your programs.
 - Learn about examples of algorithms that make use of quantum properties to outperform classical algorithms.
 
@@ -29,6 +30,8 @@ After completing this module, you'll be able to:
 
 If you don't have these tools installed, we recommend that you go through the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) to get set up and learn the basics.
 
-You'll also need basic knowledge of linear algebra and complex numbers. These tutorials can help you understand the basics:
+You'll also need basic knowledge of linear algebra and complex numbers. These
+tutorials can help you understand the basics:
+
 - [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra?azure-portal=true)
 - [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic?azure-portal=true)

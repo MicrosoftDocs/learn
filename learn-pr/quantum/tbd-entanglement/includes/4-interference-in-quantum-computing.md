@@ -1,23 +1,25 @@
 Until now, you've been using superpositions only with real positive amplitudes.
-You might be wondering, why not directly use the probabilities to represent the superposition? This aspect is one of the main ingredients that makes
-quantum computing work. Let's examine this further.
+You might be wondering, why not directly use the probabilities to represent the
+superposition? Well, the ability to have negative and complex amplitudes is one
+of the main ingredients that makes quantum computing work. Let's examine this
+further.
 
 ## Waves of probabilities
 
 The term *wave function* might be familiar to you (in fact, the `DumpMachine` function you just used names the quantum state as a "wave function").
 
 Physicists often use this term as a synonym to design the quantum state of a system. This
-is because the Schrödinger equation that we introduced at the beginning of this
+is because the Schrödinger equation introduced at the beginning of this
 module has the same mathematical structure as classical wave equations.
 
-![Figure5](../media/figure5_wave.svg)
+![A diagram showing a wave function and the Schrödinger equation](../media/4-wave.svg)
 
 You might've also heard the term "probability wave". In fact, the term
 *probability amplitude* is inspired directly from the term *amplitude* of a
 wave.
 
 If probability amplitudes of qubits are governed by a wave-like equation, this
-implies that we'll observe many of the different well-known physical
+implies that you'll observe many of the different well-known physical
 properties of waves. Quantum algorithms exploit these properties to perform
 calculations. In particular, quantum computers exploit the phenomenon of *wave
 interference*.
@@ -35,7 +37,7 @@ implies that waves can be superposed, just like we discussed for quantum states 
 to interfere, resulting in different effects on the overall state. There are two
 types of interference:
 
-![Figure6.1](../media/Figure6_1_interference.svg)
+![An illustration explaining constructive and destructive interference](../media/4-interference.svg)
 
 - **Constructive interference**
 
@@ -44,21 +46,25 @@ types of interference:
 
     Two waves subtract to decrease the amplitude of the resulting wave. Again, in our daily experience, noise-cancelling headphones use an external microphone to catch the noise in the environment. It then reproduces sound waves that have the same magnitude but opposite phase to the noise and plays them in the inner speakers to cancel the noise for the listener. This is using destructive interference for noise cancellation.
 
-![Figure6](../media/Figure6_noise_cancellation.svg)
+![Diagram depicting noise cancellation](../media/4-noise-cancellation.svg)
 
-Constructive and destructive interference are due to *relative phases* between the waves.
+Constructive and destructive interference are due to *relative phases* between
+the waves. In the next figure you can see how the relative phase determines the
+distance between the peaks of the waves and therefore how they interfere.
 
-![Figure7](../media/Figure7_relative_phase.svg)
+![Diagram showing two waves with relative phases](../media/4-relative-phase.png)
 
-In general, an amplitude is a complex number, which describes both the magnitude and the phase of the wave.
+In general, an amplitude is a complex number, which describes both the magnitude
+and the phase of the wave. The following image shows the standard representation
+of complex numbers in the complex plane using polar coordinates.
 
-![Figure8](../media/Figure8_complex_plane.svg)
+![Diagram of the complex plane using polar coordinates](../media/4-complex-plane.png)
 
 ## Interference in quantum computing
 
 Qubit states follow the same mathematics as waves.
 
-We used the following superposition to create the quantum random number
+You used the following superposition to create the quantum random number
 generator:
 
 $$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}.$$
@@ -72,7 +78,8 @@ $$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}.$$
 Notice the minus sign, which makes the relative phase between the $\ket{0}$ and
 $\ket{1}$ states different.
 
-If we then put $\ket{\psi_1}$ and $\ket{\psi_2}$ in superposition:
+If you then consider an equal superposition of the states $\ket{\psi_1}$ and
+$\ket{\psi_2}$:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{\psi_1}+\frac1{\sqrt2}\ket{\psi_2}=
 \frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}\right)+\frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}\right)$$
@@ -85,8 +92,9 @@ amplitudes of $\ket{1}$ had the opposite phase and destructively interfered,
 eliminating the probability of obtaining **1**.
 
 Interference is one of the basic principles behind the power of quantum
-computing. Quantum interference can be harnessed to perform computations to
-bring advantage over classical algorithms.
+computing. Quantum interference can be harnessed to cancel the amplitudes
+of states that don't help us solve our problem, and to amplify the amplitudes
+of states that lead us to the solution.
 
 In the next unit, you are going to see how you can use Q# to
 explore quantum interference.

@@ -1,23 +1,35 @@
 ### YamlMime:Module
-uid: learn.quantum.concepts
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing
 metadata:
-  title: Fundamental concepts of quantum computing with Q#
-  description: TBD.
-  ms.date: 09/19/2020
+  title: Explore the key concepts of quantum computing by using Q#
+  description: Learn the fundamental concepts of quantum computing by using the different tools of Q# and the Quantum Development Kit.
+  ms.date: 03/09/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: tutorial
   ms.prod: learning-quantum
-title: TBD entanglement
-summary: TBD.
+title: Explore the key concepts of quantum computing by using Q#
+summary: Learn the fundamental concepts of quantum computing by using the different tools of Q# and the Quantum Development Kit.
 abstract: |
   In this module you will:
-  - A.
-  - B.
-  - C.
+  - Learn about fundamental concepts of quantum computing like superposition, interference, and entanglement and how they are exploited to create quantum algorithms.
+  - Use Q# and the Quantum Development Kit to explore these concepts.
+  - Examine the state of your quantum programs by using the `DumpMachine` function.
+  - Estimate the resources needed to run your quantum programs with the tool `ResourcesEstimator`.
+  - Learn about different algorithms that use quantum properties to outperform their classical counterparts.
 prerequisites: |
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
+  - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
+  - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
+  - The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode?azure-portal=true)
+
+  If you don't have these tools installed, we recommend that you go through the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) to get set up and learn the basics.
+  You'll also need basic knowledge of linear algebra and complex numbers. These
+  tutorials can help you understand the basics:
+
+  - [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra?azure-portal=true)
+  - [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic?azure-portal=true)
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -27,15 +39,15 @@ products:
 - qdk
 - azure-quantum
 units:
-- learn.quantum.concepts.1-introduction
-- learn.quantum.concepts.2-superposition-in-quantum-computing
-- learn.quantum.concepts.3-explore-superposition-with-qsharp
-- learn.quantum.concepts.4-interference-in-quantum-computing
-- learn.quantum.concepts.5-explore-interference-with-qsharp
-- learn.quantum.concepts.6-entanglement-in-quantum-computing
-- learn.quantum.concepts.7-explore-entanglement-with-qsharp
-- learn.quantum.concepts.8-introduction-to-quantum-algorithms
-- learn.quantum.concepts.9-knowledge-check
-- learn.quantum.concepts.10-summary
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.1-introduction
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.2-superposition-in-quantum-computing
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.3-explore-superposition-with-qsharp
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.4-interference-in-quantum-computing
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.5-explore-interference-with-qsharp
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.6-entanglement-in-quantum-computing
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.7-explore-entanglement-with-qsharp
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.8-introduction-to-quantum-algorithms
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.9-knowledge-check
+- learn.quantum.qsharp-explore-key-concepts-quantum-computing.10-summary
 badge:
-  uid: learn.quantum.concepts.badge
+  uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.badge

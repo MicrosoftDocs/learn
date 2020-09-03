@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.concepts.8-introduction-to-quantum-algorithms
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.8-introduction-to-quantum-algorithms
 title: Introduction to quantum algorithms
 metadata:
   title: Introduction to quantum algorithms
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 12
 content: |
   [!include[](includes/8-introduction-to-quantum-algorithms.md)]

@@ -5,13 +5,14 @@ will be able to explore in detail some of these algorithms.
 
 ## Quantum oracle
 
-First, we need to introduce the concept of *quantum oracle*. In many problems, we
-are interested in solving a problem while making the fewest number of evaluations of a
-function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For example, if we're searching an element in
-a database we can encode the problem in a binary function $f:
-\\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$ can be considered as a
-black-box that outputs $1$ if the consulted element $x$ is our target, and $0$
-otherwise. An efficient search finds the target element with few uses of $f$.
+First, let's introduce the concept of *quantum oracle*. In many problems, you
+are interested in solving a problem while making the fewest number of
+evaluations of a function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For
+example, if you're searching an element in a database you can encode the problem
+in a binary function $f: \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$
+can be considered as a black-box that outputs $1$ if the consulted element $x$
+is our target, and $0$ otherwise. An efficient search finds the target element
+with few uses of $f$.
 
 A quantum oracle is
 a quantum operation that is used to implement some black-box function $f:
@@ -37,7 +38,7 @@ improve classical results using superposition, interference and entanglement.
 
 ### Problem: finding out if a function is constant
 
-First let's introduce the problem we're going to solve. Suppose you're given a
+First let's introduce the problem to solve. Suppose you're given a
 function $f(x):\\{0,1\\}^n\rightarrow\\{0,1\\}$, this is, a binary function that
 takes a string of bits and outputs a single bit. You're guaranteed that the
 function is:
@@ -55,19 +56,19 @@ or balanced with the least amount of calls possible.
 
 ### Classical solution
 
-If we solve this problem classically, how many calls to the given function will
+If you solve this problem classically, how many calls to the given function will
 we need?
 
 The first call will give us no information - regardless of whether it returns 0
 or 1, the function could still be constant or balanced. In the best case
-scenario, the second call will return a different value and we'll be able to
-conclude that the function is balanced in just two calls. However, if we get the
-same value for the first two calls, we'll have to keep querying the function
-until either we get a different value or until we do $\frac{2^{n}}{2}+1$ queries
-that will return the same value - in this case we'll know for certain that the
+scenario, the second call will return a different value and you'll be able to
+conclude that the function is balanced in just two calls. However, if you get the
+same value for the first two calls, you'll have to keep querying the function
+until either you get a different value or until you do $\frac{2^{n}}{2}+1$ queries
+that will return the same value - in this case you'll know for certain that the
 function will be constant.
 
-This is, if the function is constant we need to use the function on half plus
+This is, if the function is constant you need to use the function on half plus
 one of the possible inputs to be completely sure that the function isn't balanced.
 
 ### Quantum solution: the Deutsch-Jozsa algorithm
@@ -88,71 +89,13 @@ The algorithm is as follows:
 1. Measure every qubit: if all measurements results are $0$, the function is
    constant, otherwise, it is balanced.
 
-This is, we solve the problem with just one query to the oracle, exponentially
+This is, you solve the problem with just one query to the oracle, exponentially
 faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
 in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
 
-
-![Figure9](../media/Figure9_DJ.svg)
-
-## Grover's algorithm
-
-Grover's search algorithm is one of the most popular quantum algorithms. The
-algorithm searches for an item in a list of unstructured data, for example the
-searching for a specific card in a deck of randomly-ordered cards.
-
-### Problem: Search in an unstructured database
-
-In this case, the function that we use to construct the oracle is a function
-$f(x):\\{0,1\\}^n\rightarrow\\{0,1\\}$, and our task is to find an input $x'$ for
-which $f(x')=1$. For example, in the card searching problem the input of $f(x)$
-would be any card of the deck, represented by $x$, and the function $f$ would be
-a comparison between our reference card and the drawn card. If the drawn card
-matches our reference card, $f$ outputs $1$, if not, it outputs $0$.
-
-### Classical solution
-
-If we don't know anything about the internal structure of the function, the best
-we can do is evaluate the function on different inputs until we find the desired
-output or we try all inputs and conclude that the desired input doesn't exist.
-
-In the worst case scenario, we need to try all the inputs and we need
-$2^n$ uses of $f(x)$.
-
-### Quantum solution: Grover's algorithm
-
-If we're given the number of bits in the function input $n$, and the function
-$f(x)$ implemented with a quantum oracle $U_f$, we can use Grover's algorithm to
-find the target efficiently. This algorithm exploit superposition and
-interference and the oracle $U_f$ to increase the probability of measuring the
-correct target $x_0$ when measuring the qubit register.
-
-#### Outline of the algorithm
-
-A high-level outline of the algorithm is:
-
-1. Initialize the quantum register to a well-known superposition state.
-1. Apply a sequence of operations involving a call of the oracle for each
-   iteration (repeating steps 3-6 in the figure below). This sequence is designed to exploit interference and entanglement
-   to increase the probability amplitude of the target elements.
-1. Perform a measurement to obtain the desired target elements with high
-   probability.
-
-This algorithm obtains the target element $x_0$ with very high probability using
-$\sqrt{2^n}$ queries to the oracle. This is a quadratic improvement over the
-classical method. More specifically, it obtains $x_0$ with a probability
-$1-O(\frac1{2^n})$ using $O(\sqrt{2^n})$ queries.
-
-![Figure10](../media/Figure10_Grover.svg)
-
-If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Grover's algorithm(https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm?azure-portal=true).
-
-If you want to know how to implement this algorithm with the Q# high-level
-functionality, you can also check the tutorial [Implement Grover's search
-algorithm in Q#](https://docs.microsoft.com/quantum/tutorials/search?azure-portal=true).
+![Diagram summarizing Deutsch-Jozsa algorithm](../media/8-dj.svg)
 
 ## Shor's algorithm
 
@@ -166,7 +109,7 @@ quantum computers.
 The factoring problem consists on finding the prime factors of any
 integer $N$.
 
-### Classical solution
+### Classical solution of the factoring problem
 
 There are many classical approaches to find the prime factors of an integer.
 They go from just trying the division for every prime number smaller than $N/2$
@@ -182,16 +125,16 @@ superposition and interference to apply the quantum Fourier transform - a
 version of the discrete Fourier transform for quantum computers - to find the 
 period of the function faster than any known classical algorithm.
 
-![Figure11](../media/figure11_Shor.svg)
-![Figure12](../media/figure12_Shor.svg)
+![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.svg)
+![Diagram explaining Shor's algorithm](../media/8-shor2.svg)
 
-#### Outline of the algorithm
+#### Outline of Shor's algorithm
 
 The algorithm consists of three parts:
 
 1. A classical part that transforms the factoring problem into a problem of
    finding the period $r$ of a periodic function $f(x)=a^x mod N$, where $a$ is
-a random number whose greater common divisor with $N$ is $1$.
+   a random number whose greater common divisor with $N$ is $1$.
 
 1. A quantum part that finds the period $r$ using the quantum Fourier transform.
 

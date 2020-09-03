@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.concepts.5-explore-interference-with-qsharp
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.5-explore-interference-with-qsharp
 title: Exercise - Explore interference with Q#
 metadata:
   title: Exercise - Explore interference with Q#
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 1
+durationInMinutes: 8
 content: |
   [!include[](includes/5-explore-interference-with-qsharp.md)]

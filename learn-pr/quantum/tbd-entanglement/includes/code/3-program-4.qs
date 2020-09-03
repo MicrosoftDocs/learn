@@ -18,8 +18,6 @@ namespace ExploringSuperposition {
                set results += [M(q)];
                DumpMachine();
         }
-
-        ResetAll(qubits);
         Message(" ");
         Message("Your random number is: ");
         return BoolArrayAsInt(ResultArrayAsBoolArray(results));
