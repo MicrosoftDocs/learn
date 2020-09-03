@@ -75,6 +75,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
   
    ![Screenshot that shows the "Email/SMS/Push/Voice" pane ](../media/8-create-action-group-notifications-email.png)
 
+1. Select **OK**.
 1. Select **Review + create** > **Create**
 
 ### Enter alert rule details
