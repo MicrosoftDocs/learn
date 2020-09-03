@@ -135,20 +135,45 @@ Here is the output of this code:
 The coloring is valid
 ```
 
-And indeed, we have provided a valid coloring. You can experiment with the colorings and the graph structures to see which ones are deemed valid and invalid; an example of invalid coloring for this graph would be `[false, false, true, false, false, true, true, true, true, true]`, which describes a graph with vertices 3 and 4 assigned the same color.
+You can experiment with the colorings and the graph structures to see which ones are deemed valid and invalid; an example of invalid coloring for this graph would be `[false, false, true, false, false, true, true, true, true, true]`, which describes a graph with vertices 3 and 4 assigned the same color. 
+You can also modify the code to run on superpositions of inputs and see what happens. 
 
 
-### Step 3. Convert state encoding into phase encoding
+### Step 3. Convert amplitude encoding into phase encoding
 
+Now, we have an operation that can mark the qubit states that represent valid colorings in the state of an extra qubit. How can we use it to implement another operation that would mark such states using their phases?
 
+We can do it using so-called "phase kickback trick": 
 
+1. Allocate an extra qubit in the $\frac{1}{\sqrt2}(|0\rangle - |1\rangle)$ state.
+2. Apply the marking operation $U^{state}$ with this extra qubit as target.  
+What happens to the register that encodes the coloring at this step? 
+   * If the basis state $|x\rangle$ encodes an invalid coloring, the state will not change.
+   * But if the basis state $|x\rangle$ encodes an valid coloring, the operation $U^{state}$ will flip the state of the extra qubit, converting it to $\frac{1}{\sqrt2}(|1\rangle - |0\rangle)$, which is equivalent to multiplying the whole state by $-1$.
 
-Notes from outline:
+If you apply these steps to a basis state, you won't be able to tell the difference - the global phase will not be observable. 
+But if you apply these steps to a superposition state, you'll see that the basis states that encode valid colorings will acquire the $-1$ relative phase - and that's exactly the effect we need the phase operation to have!
 
-Do an exercise to implement a quantum oracle for a simple graph coloring problem.
+Here is what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation.
 
-Resources: GraphColoring kata (and other oracle implementation resources).
+:::code language="qsharp" source="code/4-5-phase-kickback.qs":::
 
----
+```output
+The starting state of qubits c1:
+# wave function for qubits with ids (least to most significant): 2;3
+∣0❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
+∣1❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
+∣2❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
+∣3❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
 
-Now that we know how to build a quantum oracle for a graph coloring problem, in the next unit we will finally learn Grover's search algorithm itself.
+The state of qubits c1 after the equality check:
+# wave function for qubits with ids (least to most significant): 2;3
+∣0❭:    -0.500000 +  0.000000 i  ==     *****                [ 0.250000 ] ---     [  3.14159 rad ]
+∣1❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
+∣2❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
+∣3❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
+```
+
+You can see that indeed, the amplitude of the $|00\rangle$ state changed to $-\frac{1}{2}$, so now its relative phase compared to the other basis states is $-1$.
+
+Now you know how to build a complete quantum oracle for a graph coloring problem! In the next unit, we will finally learn Grover's search algorithm itself.
