@@ -33,14 +33,14 @@ You start the AKS cluster deployment by provisioning the cluster within Azure. P
     az aks create \
         --resource-group $RESOURCE_GROUP \
         --name $CLUSTER_NAME \
-        --node-count 3 \
+        --node-count 2 \
         --enable-addons http_application_routing \
         --dns-name-prefix contoso-kubernetes-$RANDOM \
         --generate-ssh-keys \
         --node-vm-size Standard_B2s
     ```
 
-    The previous command creates a new AKS cluster named `contoso-kubernetes-cluster` within the `contoso-aks` resource group. The cluster will have three nodes defined by the `--node-count` parameter. The `--node-vm-size` parameter configures the cluster nodes as `Standard_B2s`-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. Finally, the command sets the DNS name for your cluster to `contoso-kubernetes` by using the `--dns-name-prefix` parameter.
+    The previous command creates a new AKS cluster named `contoso-kubernetes-cluster` within the `contoso-aks` resource group. The cluster will have two nodes defined by the `--node-count` parameter. We're using only two nodes here for cost considerations in this exercise. The `--node-vm-size` parameter configures the cluster nodes as `Standard_B2s`-sized VMs. The HTTP application routing add-on is enabled via the `--enable-addons` flag. Finally, the command sets the DNS name for your cluster to `contoso-kubernetes` by using the `--dns-name-prefix` parameter.
 
 ## Link with kubectl
 
