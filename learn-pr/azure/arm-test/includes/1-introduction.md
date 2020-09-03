@@ -8,7 +8,8 @@ In this module, you gain an understanding to what practices are beneficial to fo
 
 ## Learning objectives
 
-In this module you will:
-- Evaluate the *What-if* operation so you can preview the changes that will happen as you deploy your templates. 
-- Use the ARM Template Test Toolkit to check templates for standards.
-- Create a custom test for an ARM Template to implement domain-specific rules.
+After completing this module, you'll be able to:
+
+- Preview what changes will happen before you deploy by using the what-if operation.
+- Validate your templates adherence to sound recommendations using ARM Template Test Toolkit.
+- Implement domain specific rules for deployments that can be run by ARM Template Test Toolkit.
