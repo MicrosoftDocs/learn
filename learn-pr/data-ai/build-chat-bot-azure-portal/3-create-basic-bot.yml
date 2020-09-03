@@ -9,6 +9,7 @@ metadata:
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  zone_pivot_groups: dev-lang-csharp-java
 azureSandbox: false
 durationInMinutes: 10
 content: |

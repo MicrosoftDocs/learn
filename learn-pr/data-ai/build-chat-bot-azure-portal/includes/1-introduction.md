@@ -24,7 +24,7 @@ Bots can be the basis of AI solutions for:
 - Health care consultations and self-diagnosis.
 - Home automation and personal digital assistants.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will learn:
 
