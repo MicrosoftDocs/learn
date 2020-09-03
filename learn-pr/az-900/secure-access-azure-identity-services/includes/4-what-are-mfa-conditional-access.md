@@ -59,11 +59,17 @@ Conditional Access helps IT administrators:
 
 Conditional Access also provides a more granular MFA experience for end users. For example, end users might not be challenged for second authentication factor if they are at a known location. However, they might be challenged for a second authentication factor if their sign-in signals are unusual or the user is at an unexpected location.
 
-During sign-in, Conditional Access collects signals from the user (such as location, device, and application being accessed), makes decisions based on those signals, and then enforces that decision by allowing or denying the access request or challenging for an MFA response.
+During sign-in, Conditional Access collects signals from the user, makes decisions based on those signals, and then enforces that decision by allowing or denying the access request or challenging for an MFA response.
 
 Here's a diagram that illustrates this flow:
 
 :::image type="content" source="../media/4-conditional-access-signal-decision-enforcement.png" alt-text="A flow diagram that shows how signals inform decisions, which become enforcement policies." border="false":::
+
+Here, the signal might be the user's location, device, or the application the user is trying to access.
+
+Based on these signals, the decision might be to allow full access if the user is signing in from their usual location. If the user is signing in from an unusual location or a location that's marked as high-risk, then access might be blocked entirely or possibly granted after the user provides a second form of authentication.
+
+Enforcement is the action that carries out the decision; for example, to allow access or require the user to provide a second form of authentication.
 
 ### When can I use Conditional Access?
 
