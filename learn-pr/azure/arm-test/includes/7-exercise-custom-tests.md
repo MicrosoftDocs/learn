@@ -47,13 +47,13 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    1. Import the **arm-ttk** module.
 
-      ```bash
+      ```powershell-interactive
       Import-Module ./arm-ttk.psd1
       ```
 
-   1. Run the **arm-ttk** tool by typing the following command in the terminal:
+   1. Run the **arm-ttk** tool by typing the following command in the terminal, don't forget to change the **-TemplatePath** argument to your path:
 
-      ```bash
+      ```powershell-interactive
       Test-AzTemplate -TemplatePath /path/to/deployment/template
       ```
 
@@ -106,7 +106,7 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
 1. Inspect the **azuredeploy.json** file located in your cloned directory. The file should have the following content:
 
-   ```powershell
+   ```json
    {
       "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
       "contentVersion": "1.0.0.0",
@@ -152,13 +152,13 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    1. Type the following to import the arm-ttk module:
 
-      ```bash
+      ```powershell-interactive
       Import-Module ./arm-ttk.psd1
       ```
 
    1. Run the **arm-ttk** tool by typing the following command in the terminal:
 
-      ```bash
+      ```powershell-interactive
       Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-Location
       ```
 
@@ -170,12 +170,12 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
       Validating custom\azuredeploy.json                                                          deploymentTemplate
       [-] Custom Location (1 ms)                                                                  Resource  Location must be be located in westeurope'
       ```
-   
+
       The result above seems to indicate that your test works. Let's ensure that is the case by altering the deployment file.
   
 1. Open up **azuredeploy.json** and change it to the following content:
 
-   ```powershell
+   ```json
    {
       "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
       "contentVersion": "1.0.0.0",
@@ -197,13 +197,13 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    1. Type the following to import the **arm-ttk** module:
 
-      ```bash
+      ```powershell-interactive
       Import-Module ./arm-ttk.psd1
       ```
 
    1. Run the **arm-ttk** tool by typing the following command in the terminal:
 
-      ```bash
+      ```powershell-interactive
       Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-Location
       ```
 

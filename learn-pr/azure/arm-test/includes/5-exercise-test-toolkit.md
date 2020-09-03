@@ -128,13 +128,13 @@ You will run the arm-ttk tool on a deployment template and fix any errors it det
 
       ```json
       "resources": [{
-      "location": "[parameters('location')]"
+        "location": "[parameters('location')]"
       }]
       ```
 
 1. **Verify the fix**. Run the test tool once again with the following command:
 
-   ```bash
+   ```powershell-interactive
    Test-AzTemplate -TemplatePath path/to/starter/template
    ```
 
