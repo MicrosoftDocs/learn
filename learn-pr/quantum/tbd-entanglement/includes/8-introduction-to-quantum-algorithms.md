@@ -125,8 +125,8 @@ superposition and interference to apply the quantum Fourier transform - a
 version of the discrete Fourier transform for quantum computers - to find the 
 period of the function faster than any known classical algorithm.
 
-![Diagram outlining RSA encryption and Shor's algorithm](../media/figure11_Shor.svg)
-![Diagram explaining Shor's algorithm](../media/figure12_Shor.svg)
+![Diagram outlining RSA encryption and Shor's algorithm](../media/8_shor.svg)
+![Diagram explaining Shor's algorithm](../media/8_shor2.svg)
 
 #### Outline of Shor's algorithm
 
