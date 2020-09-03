@@ -17,9 +17,11 @@ abstract: |
     - Publish the app to Azure Static Web Apps
 prerequisites: |
   - Familiarity with one of Angular, React, Svelte, or Vue
-  - A GitHub account
   - [Node.js LTS and Git](https://nodejs.org/)
-  - [Visual Studio Code](https://code.visualstudio.com/) installed
+  - [GitHub](https://github.com) account
+  - [Azure](https://portal.azure.com) account
+  - [Visual Studio Code](https://code.visualstudio.com)
+  - [Azure Static Web Apps extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps)
 iconUrl: /learn/achievements/publish-static-web-app-and-api.svg
 levels:
   - beginner
