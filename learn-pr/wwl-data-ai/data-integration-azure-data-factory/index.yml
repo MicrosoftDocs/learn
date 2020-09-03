@@ -3,7 +3,7 @@ uid: learn.wwl.integrate-data-azure-data-factory
 metadata:
   title: Data integration with Azure Data Factory
   description: "Integrate data with Azure Data Factory"
-  ms.date: 09/04/2020
+  ms.date: 09/05/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -12,16 +12,16 @@ title: Integrate data with Azure Data Factory
 summary: In this module, you will examine Azure Data Factory and the core components that enable you to create large scale data ingestion solutions in the cloud
 abstract: |
   In this module, you will:
-  1. Understand Azure Data Factory
-  2. Describe data integration patterns
-  3. Explain the data factory process
-  4. Understand Azure Data Factory components
-  5. Azure Data Factory security
-  6. Set up Azure Data Factory
-  7. Create linked services
-  8. Create datasets
-  9. Create data factory activities and pipelines
-  10. Manage integration runtime
+  * Understand Azure Data Factory
+  * Describe data integration patterns
+  * Explain the data factory process
+  * Understand Azure Data Factory components
+  * Azure Data Factory security
+  * Set up Azure Data Factory
+  * Create linked services
+  * Create datasets
+  * Create data factory activities and pipelines
+  * Manage integration runtime
 prerequisites: |
   The student should be able to:
   - Log into the Azure portal

@@ -8,7 +8,8 @@ It is very easy to setup Azure Data Factory from within the Azure portal, you on
 
 Enable Git provides the capability to integrate the code that you create with a Git repository enabling you to source control the code that you would create. Simply define the GIT url, repository name, branch name and the root folder. 
 
-![Creating an Azure Data Factory Instance](../media/create-azure-data-factory-instance.png)
+> [!div class="mx-imgBorder"]
+> ![Creating an Azure Data Factory Instance](../media/create-azure-data-factory-instance.png)
 
 Alternatively, there are a number of different ways that you can provision the service programmatically. In this example you can see PowerShell at work to setup the environment.
 
