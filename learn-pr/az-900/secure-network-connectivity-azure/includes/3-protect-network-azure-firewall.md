@@ -1,6 +1,6 @@
-A *firewall* is a service that grants access based on the originating IP address of each request. You can create firewall rules that specify ranges of IP addresses. Only clients granted IP addresses from within those ranges are allowed to access the destination server. Firewall rules can also include specific network protocol and port information.
+A *firewall* is a network security device that monitors incoming and outgoing network traffic and decides whether to allow or block specific traffic based on a defined set of security rules. You can create firewall rules that specify ranges of IP addresses. Only clients granted IP addresses from within those ranges are allowed to access the destination server. Firewall rules can also include specific network protocol and port information.
 
-Tailwind Traders currently runs firewall appliances, which combine hardware and software, to protect their on-premises network. These firewall appliances require a monthly licensing fee to operate, and require IT staff to perform routine maintenance. As Tailwind Traders moves to the cloud, the IT manager wants to know what Azure services can protect both their cloud networks as well as their on-premesis networks.
+Tailwind Traders currently runs firewall appliances, which combine hardware and software, to protect their on-premises network. These firewall appliances require a monthly licensing fee to operate, and require IT staff to perform routine maintenance. As Tailwind Traders moves to the cloud, the IT manager wants to know what Azure services can protect both their cloud networks as well as their on-premises networks.
 
 In this part, you explore Azure Firewall.
 
@@ -28,4 +28,4 @@ With Azure Firewall, you can configure:
 - Application rules that define fully qualified domain names (FQDNs) that can be accessed from a subnet.
 - Network rules that define source address, protocol, destination port, and destination address.
 
-[Azure Application Gateway](https://azure.microsoft.com/services/application-gateway?azure-portal=true) also provides a firewall, called the *web application firewall* (WAF). WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities.
+[Azure Application Gateway](https://azure.microsoft.com/services/application-gateway?azure-portal=true) also provides a firewall, called the *web application firewall* (WAF). WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities. [Azure Front Door](https://azure.microsoft.com/services/frontdoor/?azure-portal=true) and [Azure Content Delivery Network](https://azure.microsoft.com/services/cdn/?azure-portal=true) (CDN) also provide WAF services.
