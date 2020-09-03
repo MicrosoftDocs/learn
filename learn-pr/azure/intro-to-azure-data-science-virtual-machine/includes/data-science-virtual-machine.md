@@ -8,7 +8,7 @@ You can choose to run the Data Science Virtual Machine on different Azure virtua
 
 | Common series | Use case | 
 | --- | --- | 
-| General purpose | Balancing CPU/memory ratios |
+| General purpose | Balanced CPU/memory ratios |
 | Memory-optimized E series | In-memory data analytics | 
 | N-series GPU compute | Machine learning experimentation and inferencing |
 
