@@ -13,7 +13,7 @@ You've decided to author your own domain-specific test. There's a flow to how to
 
 ### Creating a custom test
 
-A custom test needs to be placed in the correct directory *<install directory>/arm-ttk/testcases/deploymentTemplate*. It also needs to following a naming standard with dashes and postfix of.test** and ending in **ps1**. A typical test file can therefore look like so:
+A custom test needs to be placed in the correct directory *<install directory>/arm-ttk/testcases/deploymentTemplate*. It also needs to follow a naming standard with dashes and postfix of.test** and ending in **ps1**. A typical test file can therefore look like so:
 
 ```bash
 Domain-Specific.test.ps1

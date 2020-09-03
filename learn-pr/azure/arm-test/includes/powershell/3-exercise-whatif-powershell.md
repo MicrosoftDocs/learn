@@ -22,13 +22,13 @@ To verify the PowerShell version you can use the following command in a PowerShe
 You should see a similar output:
 
 ```powershell-interactive
-PS C:\> (Get-Host).Version
+> (Get-Host).Version
 
 Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
 -----  -----  -----  -------- -----------------------    ------------------
 7      1      0      -1       preview.5
 
-PS C:\>
+>
 ```
 
 ### Install/Update module
@@ -119,7 +119,7 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
     You'll see the text **Running...** in the terminal. When the command finishes, the results of the above command should be something like the following
 
     ```powershell-interactive
-    PS C:\> New-AzResourceGroupDeployment `
+    > New-AzResourceGroupDeployment `
     >> -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
 
     DeploymentName          : what-if-before
@@ -136,7 +136,7 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
     DeploymentDebugLogLevel :
 
 
-    PS C:\>
+    >
     ```
 
 1. **Verify the deployment in the portal**. To validate that your deployment have been created and sent to Azure you can navigate to the the Azure portal, [Azure portal](https://portal.azure.com?azure-portal=true), make sure you are in the sandbox subscription.
@@ -179,7 +179,7 @@ The differences in the second template is:
     The what-if output appears similar to:
 
     ```powershell-interactive
-    PS C:\> New-AzResourceGroupDeployment `
+    > New-AzResourceGroupDeployment `
     >>   -Whatif `
     >>   -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json"
 
@@ -214,7 +214,7 @@ The differences in the second template is:
 
     Resource changes: 1 to modify, 1 to ignore.
 
-    PS C:\>
+    >
     ```
 
    You'll notice that the result is colour coded in addition to a "prefix"
@@ -239,7 +239,7 @@ In these next steps you will deploy an empty template over your existing environ
     The output will be similar to the below.
 
     ```powershell-interactive
-    PS C:\> New-AzResourceGroupDeployment `
+    > New-AzResourceGroupDeployment `
     >> -Mode Complete `
     >> -Confirm `
     >> -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/empty-template/azuredeploy.json"
@@ -302,7 +302,7 @@ In these next steps you will deploy an empty template over your existing environ
     DeploymentDebugLogLevel :
 
 
-    PS C:\>
+    >
     ```
 
 1. **Verify deployment**. Navigate back to the open browser you used earlier, and verify that there were 2 successful deployment.

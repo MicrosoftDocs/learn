@@ -168,10 +168,10 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
       ```output
       Validating custom\azuredeploy.json                                                          deploymentTemplate
-      [-] Custom Location (1 ms)                                                                  Resource  Location must be be located in westeurope'
+      [-] Custom Location (1 ms) Resource  Location must be be located in westeurope'
       ```
 
-      The result above seems to indicate that your test works. Let's ensure that is the case by altering the deployment file.
+      The result above indicates that your test works. Let's ensure that is the case by altering the deployment file.
   
 1. Open up **azuredeploy.json** and change it to the following content:
 
