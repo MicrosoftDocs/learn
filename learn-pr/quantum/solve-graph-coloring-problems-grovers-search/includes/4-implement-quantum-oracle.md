@@ -1,4 +1,4 @@
-﻿In this unit we will see how to implement a quantum oracle for our example graph coloring problem from unit 2.
+﻿In this unit, we will see how to implement a quantum oracle for our example graph coloring problem from unit 2.
 
 ## Implementing quantum oracles
 
@@ -8,7 +8,7 @@
 
 We need two parameters to represent a graph: the number of vertices and the list of edges. 
 
-In Q#, we will store the number of vertices `nVertices` as an integer, and the list of edges `edges` as an array of tuples. Each tuple describes one edge of the graph as a pair of indices of vertices connected by this edge; we will use zero-based indices, i.e., the index value can be between 0 and `nVertices` - 1.
+In Q#, we will store the number of vertices `nVertices` as an integer, and the list of edges `edges` as an array of tuples. Each tuple describes one edge of the graph as a pair of indices of vertices connected by this edge; we will use zero-based indices, so the index value can be between 0 and `nVertices` - 1.
 
 ![Figure 1. A graph](../media/2-valid-coloring.png)
 
@@ -19,7 +19,7 @@ The structure of our example graph can be represented as follows:
 ## Representing the vertex coloring
 
 Graph coloring is described by an array of `nVertices` colors. 
-To simplify the representation, we will look for a 4-coloring of the graph - a coloring that uses at most four colors, encoded with integers 0 through 3. 
+To simplify the representation, we will look for a four-coloring of the graph - a coloring that uses at most four colors, encoded with integers 0 through 3. 
 
 We need to represent our coloring in a bit string, so we'll use a bit string of length 2 * `nVertices`, with the first pair of bits encoding the color of vertex 0, the second pair - the color of vertex 1, and so on.
 
@@ -45,24 +45,24 @@ The same coloring would be represented as a 10-qubit state $|0010011101\rangle$.
 A typical approach to implementing a quantum oracle for a given function is as follows:
 
 1. Break down the classical function into small building blocks that are easy to implement.  
-  Any Boolean function can be implemented using [primitive logic gates](https://en.wikipedia.org/wiki/Logic_gate); you can either use this level of detail or a higher level that takes advantage of Q# library operations.
+  Any Boolean function can be implemented using [primitive logic gates](https://en.wikipedia.org/wiki/Logic_gate). You can either use primitive logic gates to get a low-level representation or higher level building blocks that take advantage of Q# library operations implementing them.
 
 2. Replace each classical block with a sequence of quantum gates that implement it using amplitudes encoding.  
-  Each of the primitive logic gates can be implemented using one or several quantum gates, possibly with an extra qubit allocated to hold the computation result. For example,  
+  Each of the primitive logic gates can be implemented using one or several quantum gates. Sometimes we'll need to allocate an extra qubit to hold the computation result of the gate. For example,  
    * Classical NOT gate is equivalent to the X gate.
    * Classical XOR gate can be implemented using the CNOT gate.
    * Classical AND gate can be realized using [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate) and an extra qubit.
 
 3. If the algorithm calls for phase encoding of the function, transform the operation to use phase encoding instead.  
-  This uses a standard trick called "phase kickback".
+  This step uses a standard trick called "phase kickback".
 
-Let's see how this approach works in the case of vertex coloring problem!
+Let's see how this approach works for our vertex coloring problem!
 
 ### Step 1. Check whether the colors of two vertices are the same
 
 The smallest building block for checking whether the given graph coloring is valid is taking a pair of vertices connected by an edge and checking whether their assigned colors are the same or different.
 
-The operation that implements this has to take two 2-qubit registers as inputs, representing the colors of the vertices, and a qubit we'll use to mark the result of the comparison by flipping its state if the colors are the same.
+The operation that implements this check has to take two 2-qubit registers as inputs, representing the colors of the vertices, and a qubit we'll use to mark the result of the comparison by flipping its state if the colors are the same.
 To compare the registers, we compare their corresponding bits to each other; if all pairs of bits are the same, then the registers are the same.
 And to compare a pair of bits, we can compute their XOR: if it is 0, the bits are the same, otherwise they are different.
 
@@ -120,7 +120,7 @@ Now that we know how to check that the colors of two vertices are different, we 
 2. For each pair, check that the colors of these vertices are different.
 3. If all pairs of vertices satisfy this condition, the coloring is valid.
 
-To implement this as quantum operations, we'll need to allocate extra qubits to store the results of pair-vise color comparisons, one qubit per edge. 
+To implement these steps as a quantum operation, we'll need to allocate extra qubits to store the results of pair-vise color comparisons, one qubit per edge. 
 We will start with those qubits in $|0\rangle$ state and compare colors of vertices in each pair using `MarkColorEquality` operation we've seen above; it will flip the state of the qubit to $|1\rangle$ if the colors of the corresponding pair of vertices are the same.
 
 Finally, we will compute the final result: if all extra qubits allocated are in $|0\rangle$ state, we flip the state of our target qubit to indicate that the vertex coloring is valid.

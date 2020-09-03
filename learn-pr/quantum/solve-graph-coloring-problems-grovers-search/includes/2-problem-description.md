@@ -1,6 +1,6 @@
 The first step of any algorithm discussion is introducing the problem this algorithm is designed to solve. 
 
-In this unit we will define the problem solved by Grover's search algorithm - so-called "search problem" - and take a closer look at the ways various real-life problems can be represented in terms of this problem.
+In this unit, we will define the problem solved by Grover's search algorithm - so-called "search problem" - and take a closer look at the ways various real-life problems can be represented in terms of this problem.
 
 ## The search problem
 
@@ -10,7 +10,7 @@ The search problem is formulated as follows: you are given a function $f$ that t
 
 ## What problems can be framed as search problems?
 
-The search problem is by design very generic. Indeed, any problem that allows to check whether a given value $x$ is a valid solution for it (a "yes/no problem") can be formulated in terms of the search problem, if we define $f(x)$ as "1 if and only if $x$ is a valid solution for our problem".
+The search problem is by design generic. Indeed, any problem that allows to check whether a given value $x$ is a valid solution for it (a "yes/no problem") can be formulated in terms of the search problem, if we define $f(x)$ as "1 if and only if $x$ is a valid solution for our problem".
 
 Here are just some examples:
 
@@ -34,7 +34,7 @@ Here is an attempt to color the vertices of this graph using three colors.
 
 ![Figure 2. Invalid vertex coloring](../media/2-invalid-coloring.png)
 
-We see that this is not a valid vertex coloring using our definition - vertices 0 and 3 are assigned the same color, even though they are connected by an edge.
+We see that this coloring is not valid using our definition - vertices 0 and 3 are assigned the same color, even though they are connected by an edge.
 
 In fact, the vertices of this graph cannot be labeled using just three colors; you'll need at least four colors to do that.
 
@@ -42,5 +42,5 @@ In fact, the vertices of this graph cannot be labeled using just three colors; y
 
 In general graph coloring is an [NP-complete problem](https://en.wikipedia.org/wiki/NP-completeness) and the best known solutions take exponential time to run. 
 
-In the next units of this module we'll see how quantum computing can help speed up solving this problem.
+In the next units of this module, we'll see how quantum computing can help speed up solving this problem.
 

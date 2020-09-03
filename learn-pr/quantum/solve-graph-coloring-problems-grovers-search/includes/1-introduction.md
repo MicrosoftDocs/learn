@@ -14,11 +14,12 @@ Finally, we'll outline some practical aspects of using Grover's search for solvi
 In this module, you will:
 
 - Learn to build _quantum oracles_ that implement classical functions on a quantum computer.
-- Understand the roles _superposition_, _interference_ and _entanglement_ play in building quantum algorithms.
+- Understand the roles _superposition_, _interference_, and _entanglement_ play in building quantum algorithms.
 - Write a Q# program that uses Grover's search algorithm to solve a graph coloring problem.
-- Consider the practical aspects of applying Grover's algorithm to solving problems and learn to recognize the kinds of problems for which it can offer speedup compared to classical algorithms.
+- Consider the practical aspects of applying Grover's algorithm to solving problems.
+- Learn to recognize the kinds of problems for which it can offer speedup compared to classical algorithms.
 
 ## Prerequisites
 
 - [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit)
-- [TODO: 2nd Q# module]()
+- [TODO: Second Q# module]()
