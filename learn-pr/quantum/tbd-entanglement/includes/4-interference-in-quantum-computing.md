@@ -1,6 +1,8 @@
 Until now, you've been using superpositions only with real positive amplitudes.
-You might be wondering, why not directly use the probabilities to represent the superposition? This aspect is one of the main ingredients that makes
-quantum computing work. Let's examine this further.
+You might be wondering, why not directly use the probabilities to represent the
+superposition? Well, the ability to have negative and complex amplitudes is one
+of the main ingredients that makes quantum computing work. Let's examine this
+further.
 
 ## Waves of probabilities
 
@@ -10,7 +12,7 @@ Physicists often use this term as a synonym to design the quantum state of a sys
 is because the Schrödinger equation that we introduced at the beginning of this
 module has the same mathematical structure as classical wave equations.
 
-![Figure5](../media/figure5_wave.svg)
+![A diagram showing a wave function and the Schrödinger equation](../media/4-wave.svg)
 
 You might've also heard the term "probability wave". In fact, the term
 *probability amplitude* is inspired directly from the term *amplitude* of a
@@ -35,7 +37,7 @@ implies that waves can be superposed, just like we discussed for quantum states 
 to interfere, resulting in different effects on the overall state. There are two
 types of interference:
 
-![Figure6.1](../media/Figure6_1_interference.svg)
+![An illustration explaining constructive and destructive interference](../media/4-interference.svg)
 
 - **Constructive interference**
 
@@ -44,15 +46,19 @@ types of interference:
 
     Two waves subtract to decrease the amplitude of the resulting wave. Again, in our daily experience, noise-cancelling headphones use an external microphone to catch the noise in the environment. It then reproduces sound waves that have the same magnitude but opposite phase to the noise and plays them in the inner speakers to cancel the noise for the listener. This is using destructive interference for noise cancellation.
 
-![Figure6](../media/Figure6_noise_cancellation.svg)
+![Diagram depicting noise cancellation](../media/4-noise-cancellation.svg)
 
-Constructive and destructive interference are due to *relative phases* between the waves.
+Constructive and destructive interference are due to *relative phases* between
+the waves. In the next figure you can see how the relative phase determines the
+distance between the peaks of the waves and therefore how they interfere.
 
-![Figure7](../media/Figure7_relative_phase.svg)
+![Diagram showing two waves with relative phases](../media/4-relative-phase.svg)
 
-In general, an amplitude is a complex number, which describes both the magnitude and the phase of the wave.
+In general, an amplitude is a complex number, which describes both the magnitude
+and the phase of the wave. The following image shows the standard representation
+of complex numbers in the complex plane using polar coordinates.
 
-![Figure8](../media/Figure8_complex_plane.svg)
+![Diagram of the complex plane using polar coordinates](../media/4-complex-plane.svg)
 
 ## Interference in quantum computing
 

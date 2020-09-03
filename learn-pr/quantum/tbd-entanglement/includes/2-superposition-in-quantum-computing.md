@@ -13,7 +13,11 @@ It captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $H$, of 
 
 Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when writing quantum algorithms. But we can use it to assist us in understanding some concepts of quantum computing.
 
-The Schrödinger equation determines the evolution of the state of the system, represented by the wave function $\psi$. Each wave function is associated with an important concept in quantum computing - **probability amplitude** of the wave function. The probability amplitude determines the probability of obtaining a certain outcome when measuring
+The Schrödinger equation determines the evolution of the state of the system,
+represented by the wave function $\psi$. Each wave function is associated with
+an important concept in quantum computing - **probability amplitude** of the
+wave function. The probability amplitude is a complex number that determines the probability of
+obtaining a certain outcome when measuring
 the system. This is an important difference when compared to classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather we describe bits in terms of the probabilities of finding those states when we observe them.
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems with kets $\ket{ }$.
@@ -37,12 +41,11 @@ An *operator* (sometimes known as *gate*) is a function that transforms the stat
 
 $$\hat A \ket{\psi} = \ket{\psi'}$$
 
-We say that an operator $\hat A$ is linear when it presents two simple properties, additivity:
+We say that an operator $\hat A$ is linear when it has the following properties
+for addition and multiplication by a complex number:
 
 $$\hat A(\ket{\psi_1} + \ket{\psi_2}) = \hat A\ket{\psi_1} + \hat
 A\ket{\psi_2}$$
-
-and homogeneity:
 
 $$\hat A(a\ket{\psi})=a \hat A(\ket{\psi})$$
 
@@ -80,11 +83,22 @@ associated probability amplitude. When we make a measurement, we obtain one of
 the possible states with a certain probability. This fact contrasts with
 classical computing, where a bit can only be deterministically 0 or 1.
 
-These characteristics mean that sometimes you have to run the algorithm several times to ensure the highest probability result in the output. This repetition might seem inefficient. But in many cases, running quantum algorithms several times is much more efficient than solving the task classically.
+These characteristics mean that sometimes you have to run the algorithm several
+times to ensure the highest probability result in the output. This repetition
+might seem inefficient. But in many cases, running quantum algorithms several
+times is much more efficient than solving the task classically.
+
+In the next figures you can see a simplified comparison between qubits and bits.
 
 ![Figure1](../media/Figure1_superposition.png)
 
 ![Figure2](../media/figure2_probability.png)
+
+Note that this examples don't represent actual qubits, since coins and marble
+vending machines can't exist in superposition, but they're useful to visualize
+the probabilities. Only quantum systems like ions or superconducting circuits
+can exists in the superposition states that enable the power of quantum
+computing.
 
 How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
 

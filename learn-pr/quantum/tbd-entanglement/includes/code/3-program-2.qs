@@ -8,12 +8,14 @@ namespace ExploringSuperposition {
     @EntryPoint()
     operation GenerateSpecificState(alpha : Double) : Result {
         using (q = Qubit()) {
-            Rx(2.0 * ArcTan2(Sqrt(1.0-alpha), Sqrt(alpha)), q);
-            S(q);
+            Message("");
+            Ry(2.0 * ArcCos(Sqrt(alpha)), q);
             Message("The qubit is in the desired state.");
+            Message("");
             DumpMachine();
+            Message("");
             Message("Your skewed random bit is:");
-            return MResetZ(q);
+            return M(q);
         }
     }
 }

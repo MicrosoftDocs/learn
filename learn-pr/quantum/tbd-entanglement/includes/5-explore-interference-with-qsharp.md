@@ -1,6 +1,18 @@
-In this unit, you explore quantum interference and relative phases by using Q# and the `DumpMachine` function.
+In this section, you explore quantum interference and relative phases by using Q# and the `DumpMachine` function.
 
-## An example of interference with Q#
+## Create the project
+
+Start by creating a Q# project like you did previously in this module. To do so:
+
+1. On the **View** menu, select **Command Palette**.
+1. Enter **Q#: Create New Project**.
+1. Select **Standalone console application**.
+1. Select a directory to hold your project, such as your home directory. Enter *ExploringInterference* as the project name, then select **Create Project**.
+1. From the window that appears at the bottom, select **Open new project**.
+
+Like before, you see two files: the project file and *Program.qs*, which contains starter code.
+
+## Make two states interfere
 
 In the previous part, when putting the states $\ket{\psi_1}=
 \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}$ and $\ket{\psi_2}=
@@ -22,37 +34,54 @@ $$=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
 \frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2}).$$
 
 Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as
-superposing the states $\psi_1$ and $\psi_2$. We know how to code that with Q#.
+superposing the states $\psi_1$ and $\psi_2$.
 
-The code would be:
+To do so with Q#:
 
-:::code language="qsharp" source="code/5-program-1.qs":::
+1. Modify *Program.qs* like this and then save the file:
 
-And the result is:
+   :::code language="qsharp" source="code/5-program-1.qs":::
 
-```output
-At the beginning the qubit is in the state |0>.
-# wave function for qubits with ids (least to most significant): 0
-|0⟩:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
-|1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
+   Here, you apply the operation `H` twice while inspecting the intermediate
+   states with `DumpMachine`.
 
-After applying H the qubit is in a uniform superposition.
-# wave function for qubits with ids (least to most significant): 0
-|0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
-|1⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+2. Open the integrated terminal. From the **Terminal** menu, select **New Terminal**.
 
-If we apply H again, interference gives back the state to |0>.
-# wave function for qubits with ids (least to most significant): 0
-|0⟩:     1.000000 +  0.000000 i  ==     ********************* [ 1.000000 ]     --- [  0.00000 rad ]
-|1⟩:     0.000000 +  0.000000 i  ==                           [ 0.000000 ]     --- [  0.00000 rad ]
+3. From the terminal, run `dotnet run`:
 
-If we measure we always obtain 'Zero'.
-Zero
-```
+   ```bash
+      dotnet run
+   ```
 
-We can see that it behaves just as we expected.
+   At the end of the program, you must get the result `Zero`. You should
+   see the following output
 
-## Exploring the relative phase with Q#
+   ```output
+   At the beginning the qubit is in the state |0>.
+   # wave function for qubits with ids (least to most significant): 0
+   |0⟩:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
+   |1⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
+
+   After applying H the qubit is in a uniform superposition.
+   # wave function for qubits with ids (least to most significant): 0
+   |0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+   |1⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+
+   If we apply H again, interference gives back the state to |0>.
+   # wave function for qubits with ids (least to most significant): 0
+   |0⟩:     1.000000 +  0.000000 i  ==     ********************* [ 1.000000 ]     --- [  0.00000 rad ]
+   |1⟩:     0.000000 +  0.000000 i  ==                           [ 0.000000 ]     --- [  0.00000 rad ]
+
+   If we measure we always obtain 'Zero'.
+   Zero
+   ```
+
+   We can see how applying `H` twice recovers the initial state of the qubit.
+   This occurs because the states of the superposition created by the first `H`
+   operation destructively interfere when we superpose them again with the 
+   second `H` operation.
+
+## Explore the relative phases with Q#
 
 You may have noticed that `DumpMachine` also gives us
 information about the phase of each amplitude. However, so far we have

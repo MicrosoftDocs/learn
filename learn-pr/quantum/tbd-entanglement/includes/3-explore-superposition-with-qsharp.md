@@ -1,4 +1,4 @@
-In this unit, you're going to explore how to create, manage, and inspect superpositions in Q#. We introduce a function from the Quantum Development Kit called `DumpMachine` that enables us to observe the probability amplitudes of the simulated qubit registers.
+Now you're going to explore how to create, manage, and inspect superpositions in Q#. We introduce a function from the Quantum Development Kit called `DumpMachine` that enables us to observe the probability amplitudes of the simulated qubit registers.
 
 ## Create the project
 
@@ -50,7 +50,8 @@ To do so, you simply call `DumpMachine` at every step that you want to see the s
     1. After measuring the qubit's state.
     1. After resetting the qubit.
 
-    Note that you split the operation `MResetZ` into two operations: `M` and `Reset`. You do so because you want to observe the state after the measurement.
+    Note that you split the operation `MResetZ` into two operations: `M` and `Reset`. You do so because 
+you want to inspect the state after the measurement.
 
 1. Open the integrated terminal. From the **Terminal** menu, select **New Terminal**.
 1. From the terminal, run `dotnet run`:
@@ -142,7 +143,7 @@ Suppose you want to create a random bit generator that is skewed. For example, y
 
 $$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
 
-This state can be obtained by sequentially applying the operations [Rx](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Rx?azure-portal=true)($2\arctan \sqrt{\frac\alpha{1-\alpha}}$) and [S](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.S?azure-portal=true) to a qubit in the state $\ket{0}.$
+This state can be obtained by sequentially applying the operations [Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)($2\arccos \sqrt{\alpha}$) to a qubit in the state $\ket{0}.$
 
 > [!TIP]
 > If you want to learn more about the math behind single qubit operations, check out the
@@ -179,7 +180,7 @@ $$\ket{000},\ket{001},\ket{010},\ket{011},\ket{100},\ket{101},\ket{110},\ket{111
 
 Therefore, an arbitrary 3-qubit state can be expressed as:
 
-$$\ket{\psi}=a_0\ket{000}+a_1\ket{001}+a_3\ket{010}+a_4\ket{011}+a_5\ket{100}+a_6\ket{101}+a_7\ket{110}+a_7\ket{111}$$
+$$\ket{\psi}=a_0\ket{000}+a_1\ket{001}+a_2\ket{010}+a_3\ket{011}+a_4\ket{100}+a_5\ket{101}+a_6\ket{110}+a_7\ket{111}$$
 
 where $a_i$ are complex numbers that satisfy $\sum|a_i|^2=1$.
 
@@ -205,7 +206,7 @@ instead of one qubit three times.
     Here's example output that produces the number four:
 
     ```output
-    The qubit register in a uniform superposition: 
+    The qubit register in a uniform superposition:
     # wave function for qubits with ids (least to most significant): 0;1;2
     ∣0❭:     0.353553 +  0.000000 i  ==     ***                  [ 0.125000 ]     --- [  0.00000 rad ]
     ∣1❭:     0.353553 +  0.000000 i  ==     ***                  [ 0.125000 ]     --- [  0.00000 rad ]
@@ -221,11 +222,11 @@ instead of one qubit three times.
     ∣1❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
     ∣2❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
     ∣3❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
-    ∣4❭:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
-    ∣5❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
+    ∣4❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
+    ∣5❭:     1.000000 +  0.000000 i  ==     ******************** [ 1.000000 ]     --- [  0.00000 rad ]
     ∣6❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
     ∣7❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
-    4
+    5
     ```
 
     You can see with `DumpMachine` how the act of measuring the three qubits collapses the state of the register to one of the eight possible basis states.
@@ -336,7 +337,10 @@ Let's look briefly on each step:
     |7⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
     ```
 
-1. **Third measurement:** in the third measurement, the result was `One`, so all the amplitudes of the states whose leftmost qubit is `Zero` get vanished. The only compatible state is $\ket{5}=\ket{101}$, that gets an amplitude probability of $1$.
+1. **Third measurement:** in the third measurement, the result was `One`, so all
+   the amplitudes of the states whose leftmost qubit is `Zero` clear out. The only
+   compatible state is $\ket{5}=\ket{101}$, that gets an amplitude probability
+   of $1$.
 
     ```output
     # wave function for qubits with ids (least to most significant): 0;1;2
