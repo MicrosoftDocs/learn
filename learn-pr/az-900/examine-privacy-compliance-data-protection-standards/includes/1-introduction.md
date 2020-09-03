@@ -2,7 +2,7 @@ In this module, you'll learn about Microsoft's commitment to privacy and how Azu
 
 If your organization is a government department or agency, or you need to deploy to regions of China, you'll also learn about some additional considerations that you need to make that don't apply to other Azure users.
 
-In general, _compliance_ means to adhere to some law or standard. _Regulatory compliance_ refers to the discipline and process of ensuring that a company follows the laws that governing bodies enforce.
+In general, _compliance_ means to adhere to some law, standard, or set of guidelines. _Regulatory compliance_ refers to the discipline and process of ensuring that a company follows the laws that governing bodies enforce.
 
 ## Meet Tailwind Traders
 

@@ -4,4 +4,4 @@
 
 Azure Government services handle data that is subject to certain government regulations and requirements, such as FedRAMP, NIST 800.171 (DIB), ITAR, IRS 1075, DoD L4, and CJIS. To provide the highest level of security and compliance, Azure Government uses physically isolated datacenters and networks (located only in the US). Azure Government customers (US federal, state, and local government or their partners) are subject to validation of eligibility.
 
-Azure Government provides the broadest compliance and Level 5 Department of Defense (DoD) approval. You can choose from six government-only datacenter regions, including two regions granted an Impact Level 5 Provisional Authorization. Azure Government also offers the most compliance certifications of any cloud provider.
+Azure Government provides the broadest compliance and Level 5 Department of Defense (DoD) approval. Azure Government is [available in eight geographies](https://azure.microsoft.com/global-infrastructure/geographies/#geographies?azure-portal=true) and offers the most compliance certifications of any cloud provider.

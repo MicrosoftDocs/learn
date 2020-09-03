@@ -39,6 +39,8 @@ Access to the Trust Center doesn't require an Azure subscription or a Microsoft 
 
     * An overview of the standard.
     * Which cloud services are in scope.
-    * An overview of the audit cycle.
+    * An overview of the audit cycle and links to audit reports.
     * Answers to frequently asked questions.
     * Additional resources and white papers.
+
+    The areas of documentation for other compliance offerings will vary, but this is the typical format that you'll find.
