@@ -29,7 +29,8 @@
             ApplyToEach(H, c1);
 
             // Output the initial state of qubits c1 and target. 
-            // We do not include the state of qubits in the register c0 for brevity, since they will remain |00⟩ throughout the program.
+            // We do not include the state of qubits in the register c0 for brevity, 
+            // since they will remain |00⟩ throughout the program.
             Message("The starting state of qubits c1 and target:");
             DumpRegister((), c1 + [target]);
 

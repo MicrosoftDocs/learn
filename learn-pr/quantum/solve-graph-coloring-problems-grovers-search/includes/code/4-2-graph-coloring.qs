@@ -14,7 +14,7 @@ namespace ExploringGroversSearchAlgorithm
         let coloring = [false, false, true, false, false, true, true, true, false, true];
         let colors = ["red", "green", "blue", "yellow"];
 
-        // Interpreting graph coloring: split the bit string into 2-bit fragments and convert them to color indices
+        // Interpret the coloring: split the bit string into 2-bit fragments and convert them to colors
         for (i in 0 .. nVertices - 1) {
             let colorIndex = BoolArrayAsInt(coloring[2 * i .. 2 * i + 1]);
             Message($"Vertex {i} - color #{colorIndex} ({colors[colorIndex]})");

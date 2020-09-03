@@ -20,7 +20,11 @@
     }
 
 
-    operation MarkValidVertexColoring (edges : (Int, Int)[], colorsRegister : Qubit[], target : Qubit) : Unit is Adj+Ctl {
+    operation MarkValidVertexColoring (
+        edges : (Int, Int)[], 
+        colorsRegister : Qubit[], 
+        target : Qubit
+    ) : Unit is Adj+Ctl {
         let nEdges = Length(edges);
         // Allocate one extra qubit per edge to mark the edges that connect vertices with the same color
         using (conflictQubits = Qubit[nEdges]) {
@@ -29,8 +33,8 @@
                     // Extract the parts of the qubit register that that store the colors of the endpoints
                     let startColorRegister = colorsRegister[start * 2 .. start * 2 + 1];
                     let endColorRegister = colorsRegister[end * 2 .. end * 2 + 1];
-                    // Check that endpoints of the edge have different colors:
-                    // apply MarkColorEquality operation; if the colors are the same, the result will be 1, indicating a conflict
+                    // Check that the endpoints have different colors: apply MarkColorEquality operation; 
+                    // if the colors are the same, the result will be 1, indicating a conflict
                     MarkColorEquality(startColorRegister, endColorRegister, conflictQubit);
                 }
             } apply {
@@ -51,8 +55,8 @@
         let coloring = [false, false, true, false, false, true, true, true, false, true];
 
         using ((coloringRegister, target) = (Qubit[2 * nVertices], Qubit())) {
-            // Encode the coloring in the quantum register and check whether it is valid.
-            // ApplyPauliFromBitString applies an X gate to each qubit that corresponds to "true" bit in the bit string
+            // Encode the coloring in the quantum register:
+            // apply an X gate to each qubit that corresponds to "true" bit in the bit string
             ApplyPauliFromBitString(PauliX, true, coloring, coloringRegister);
 
             // Apply the operation that will check whether the coloring is valid

@@ -102,9 +102,9 @@ $$|00\rangle\_{c0} \otimes \frac12\big(|00\rangle + |10\rangle + |01\rangle + |1
 
 > Remember that `DumpRegister` indices are encoded in little endian, so the index `1` corresponds to bit string `100`, with the least significant bit stored first.
 
-After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change: the amplitude of the $|00\rangle _{c1} \otimes |0\rangle_{target}$ state becomes 0, and the amplitude of the $|00\rangle _{c1} \otimes |1\rangle_{target}$ state becomes 0.25. In fact, these two amplitudes are swapped as the result of applying this check.
+After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change: the amplitude of the $|00\rangle\_{c1} \otimes |0\rangle\_{target}$ state becomes 0, and the amplitude of the $|00\rangle\_{c1} \otimes |1\rangle\_{target}$ state becomes 0.25. In fact, these two amplitudes are swapped as the result of applying this check.
 
-Indeed, since the colors encoded in the state $|00\rangle_{c0} \otimes |00\rangle _{c1} \otimes |0\rangle_{target}$ are equal, the state of the `target` qubit for this basis state gets flipped, giving us the resulting state
+Indeed, since the colors encoded in the state $|00\rangle\_{c0} \otimes |00\rangle\_{c1} \otimes |0\rangle\_{target}$ are equal, the state of the `target` qubit for this basis state gets flipped, giving us the resulting state
 
 $$|00\rangle_{c0} \otimes \frac12\big(|00\rangle_{c1} \otimes |1\rangle_{target} + |10\rangle_{c1} \otimes |0\rangle_{target} + |01\rangle_{c1} \otimes |0\rangle_{target} + |11\rangle_{c1}\big)$$
 
