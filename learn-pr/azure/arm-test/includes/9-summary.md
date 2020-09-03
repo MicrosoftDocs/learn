@@ -1,5 +1,5 @@
 
-You started by learning about the benefits of knowing beforehand about what would be deployed. This pre-knowledge helps with concerns like, for example,  if a new deploy would break the existing setup. It's also a good mental check to see if what you intend to happen is actually what will happen. You've furthermore learned that the **What-If** script is the tool that will help you address the above concerns.   
+You started by learning about the benefits of knowing beforehand about what would be deployed. This pre-knowledge helps with concerns like, for example,  if a new deploy would break the existing setup. It's also a good mental check to see if what you intend to happen is actually what will happen. You've furthermore learned that the *What-If* script is the tool that will help you address the above concerns.   
 
 You were then introduced to **arm-ttk**, a testing toolkit. The testing toolkit validates your deployment templates by comparing them to tried and tested, best practices and indicates where you are in *violation*. It's worth pointing out that the **arm-ttk** is not something you *must* abide to but is merely recommendations.
 
