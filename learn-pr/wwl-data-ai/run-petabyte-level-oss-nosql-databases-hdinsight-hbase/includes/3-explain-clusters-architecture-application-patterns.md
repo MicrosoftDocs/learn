@@ -8,7 +8,7 @@ Example of such implementations could involve chat messaging systems, content ma
 
 ![Highly available key value store architecture](../media/04-img03.png)   
 
-## Low latency Sensor Data
+## Low latency sensor data
 
 Low latency sensor data systems can be used for Social analytics, Time series Databases, and Interactive dashboards with trends, counters etc. The low latency read and write capabilities of HBase combined with the SQL querying capabilities of Apache Phoenix are used to run real time queries on sensor data. 
 

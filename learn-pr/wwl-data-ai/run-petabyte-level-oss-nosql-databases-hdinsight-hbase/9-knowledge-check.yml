@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 09/04/2020
+  ms.date: 09/05/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ azureSandbox: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "Contoso is migrating an on-premise HBase cluster to HDInsight and is concerned around possible Write latency issues with HBase and is looking to improve write performance on HBase .Which solution from the below list would you look to offer."
+  - content: "Contoso is migrating an on-premise HBase cluster to HDInsight and is concerned around possible Write latency issues with HBase and is looking to improve write performance on HBase .Which solution from the below list would you look to offer?"
     choices:
     - content: "Migrate to HBase on IaaS on Azure."
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
     - content: "Migrate to HDInsight HBase Regular."
       isCorrect: false
       explanation: "Incorrect. In the HDInsight HBase offering, HBase Write Ahead Logs (WAL) are stored in Azure Page Blobs."
-  - content: "Contoso is looking to improve the Read performance of HDInsight HBase clusters. Which solution from the below list would you look to offer in addition to Accelerated Writes."
+  - content: "Contoso is looking to improve the Read performance of HDInsight HBase clusters. Which solution from the below list would you look to offer in addition to Accelerated Writes?"
     choices:
     - content: "Use faster networking."
       isCorrect: false

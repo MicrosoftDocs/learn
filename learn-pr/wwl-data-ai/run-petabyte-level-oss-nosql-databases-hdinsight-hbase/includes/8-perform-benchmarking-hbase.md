@@ -157,7 +157,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 	- Run the write heavy workload to load 1 million rows into previously created HBase table.
 	
-	> ![NOTE]: Ignore the warnings that you may see after submitting the command.
+	> [!NOTE]: Ignore the warnings that you may see after submitting the command.
 
 ### Example results for HDInsight HBase with accelerated writes
 

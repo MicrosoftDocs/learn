@@ -4,7 +4,7 @@ A frequent challenge that customers face is migrating HBase clusters from on-pre
 
 The strategy of copying the /hbase folder is typically used for periodic backups or migrations. HDInsight HBase stores all its data and metadata files that have been flushed to disk under /hbase folder . 
 
->![NOTE]: This process does not offer the real time replication between clusters and neither does not offer granularity of migrating specific tables.
+>[!NOTE]: This process does not offer the real time replication between clusters and neither does not offer granularity of migrating specific tables.
 
 Run the below steps in sequence to backup/migrate a HDInsight cluster HDInsight /hbase is stored at the below location wasbs://<containername>@<accountname>.blob.core.windows.net/hbase
 

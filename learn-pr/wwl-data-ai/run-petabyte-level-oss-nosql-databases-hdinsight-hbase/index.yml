@@ -3,7 +3,7 @@ uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase
 metadata:
   title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
   description: "Run Petabyte level OSS NoSQL databases with HDInsight HBase"
-  ms.date: 09/04/2020
+  ms.date: 09/05/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -11,14 +11,14 @@ metadata:
 title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
 summary: Learn how HBase provides random access and strong consistency for large amounts of unstructured and semi structured data in a schema less database organized by column families.
 abstract: |
-  1. Introduction
-  2. Use HDInsight HBase clusters
-  3. Describe HBase Architecture Patterns
-  4. Exercise - Provisioning a HDInsight HBase cluster
-  5. Exercise – Run benchmarks in HBase
-  6. Understand HBase Best Practices
-  7. Summary
-  8. Knowledge Check
+  * Introduction
+  * Use HDInsight HBase clusters
+  * Describe HBase Architecture Patterns
+  * Exercise - Provisioning a HDInsight HBase cluster
+  * Exercise – Run benchmarks in HBase
+  * Understand HBase Best Practices
+  * Summary
+  * Knowledge Check
 prerequisites: |
   The following pre-requisite should be completed:
   1. Successfully login to the Azure Portal

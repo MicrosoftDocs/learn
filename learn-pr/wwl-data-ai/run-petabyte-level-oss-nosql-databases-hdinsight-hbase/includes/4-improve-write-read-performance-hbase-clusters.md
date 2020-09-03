@@ -12,7 +12,7 @@ Customer requirements for low latency writes and reads are constantly evolving o
 
 ## With Accelerated Writes Enabled 
 
-### Read Performance
+### Read performance
 
 By default, HDInsight HBase provisions a storage account of type Storage (general purpose v1). In order to improve Read performance, Premium Block Blob Storage can be set instead of Storage (general purpose V1) to improve the performance of Reads. 
 
@@ -26,7 +26,7 @@ During cluster creation, assign the Premium Block Blob as the Primary Storage ac
 
 To learn best practices around HDInsight HBase performance management page go to the [Troubleshooting HBase performance issues](https://docs.microsoft.com/en-us/azure/hdinsight/hbase/troubleshoot-hbase-performance-issues) page.
 
-### Write Performance
+### Write performance
 
 In the standard HDInsight HBase offering, HBase Write Ahead Logs (WAL) are stored in Azure Page Blobs. While this  works well for most business requirements ,  for some mission critical applications that require consistently low latency and high throughout I/O, inconsistent latencies in the WAL logs backed by Page Blobs can become a bottleneck for HBase write performance.
 
