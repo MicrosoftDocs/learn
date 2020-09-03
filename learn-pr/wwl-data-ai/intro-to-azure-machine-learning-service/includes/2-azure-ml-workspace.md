@@ -15,15 +15,14 @@ A workspace defines the boundary for a set of related machine learning assets. Y
 
 Workspaces are Azure resources, and as such they are defined within a resource group in an Azure subscription, along with other related Azure resources that are required to support the workspace.
 
-![An Azure Machine Learning workspace](../media/01-02-workspace.jpg)
+![An Azure Machine Learning workspace](../media/01-02-workspace.png)
 
 The Azure resources created alongside a workspace include:
 
 - A storage account - used to store files used by the workspace as well as data for experiments and model training.
 - An Application Insights instance, used to monitor predictive services in the workspace.
 - An Azure Key Vault instance, used to manage secrets such as authentication keys and credentials used by the workspace.
-- Virtual Machines, and their associated virtual hardware resources, used to provide compute for notebook development in the workspace.
-- A container registry, used to manage containers for deployed models.
+- A container registry, created as-needed to manage containers for deployed models.
 
 ### Role-Based Access Control
 
@@ -34,7 +33,7 @@ You can assign role-based authorization policies to a workspace, enabling you to
 You can create a workspace in any of the following ways:
 
 - In the Microsoft Azure portal, create a new **Machine Learning** resource, specifying the subscription, resource group, workspace name, and workspace edition.
-- Use the Azure Machine Learning Python SDK to run code that creates a workspace. For example:
+- Use the Azure Machine Learning Python SDK to run code that creates a workspace. For example,m the following code creates a workspace named *aml-workspace* (assuming the Azure ML SDK for Python is installed and a valid subscription ID is specified):
 
 ```Python
     from azureml.core import Workspace

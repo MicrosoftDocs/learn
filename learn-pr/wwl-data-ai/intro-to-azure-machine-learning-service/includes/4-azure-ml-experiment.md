@@ -84,7 +84,7 @@ metrics = run.get_metrics()
 print(json.dumps(metrics, indent=2))
 ```
 
-The previous code produces output similar to this:
+The previous code might produce output similar to this:
 
 ```JSON
 {
@@ -113,7 +113,7 @@ files = run.get_file_names()
 print(json.dumps(files, indent=2))
 ```
 
-The previous code produces output similar to this:
+The previous code would produce output similar to this:
 
 ```JSON
 [
@@ -125,7 +125,7 @@ The previous code produces output similar to this:
 
 You can run an experiment inline using the **start_logging** method of the **Experiment** object, but it's more common to encapsulate the experiment logic in a script and run the script as an experiment. The script can be run in any valid compute context, making this a more flexible solution for running experiments as scale.
 
-An experiment script is just a Python code file that contains the code you want to run in the experiment. To access the experiment run context (which is needed to log metrics) the script must import the **azureml.core.Run** class and call its **get_context** method. The script can then use the run context to log metrics, upload files, and complete the experiment, as shown here:
+An experiment script is just a Python code file that contains the code you want to run in the experiment. To access the experiment run context (which is needed to log metrics) the script must import the **azureml.core.Run** class and call its **get_context** method. The script can then use the run context to log metrics, upload files, and complete the experiment, as shown in the following example:
 
 ```Python
 from azureml.core import Run
