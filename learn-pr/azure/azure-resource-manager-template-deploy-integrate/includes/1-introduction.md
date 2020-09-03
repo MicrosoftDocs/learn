@@ -1,11 +1,9 @@
-﻿As we mentioned in previous modules,
+﻿"In the previous two modules, you learned how to create ARM templates.
 
-  1. [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/)
-  1. [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/)
+- [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/)
+- [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/)
 
-Microsoft Azure Resource Manager (ARM) templates allow you to specify your project's infrastructure in a declarative and reusable way. The templates can be versioned and stored in a source control system, perhaps even the same source control system for the rest of the development project it supports.
-
-As a developer or the operations person for your enterprise you always need to control the deployments of your resources. You'll need to control what, how, and when resources are being deployed.  In this module you are introduced to the different ways of deploying your ARM templates. We will also cover content from identifying the ways to reference the template to deploy, to deploying from complex infrastructure from single template or multiple linked templates, and finally how you can integrate your templates in your Infrastructure as Code (IaC) deployments through Github Actions.
+In this module, you'll focus on how you deploy templates. You'll start with deploying a local template, and then deploy an external template that is staged in GitHub. You'll learn how to deploy a template that links to other external templates. Finally, you'll learn how to automate template deployment by integrating it with your CI/CD pipeline."
 
 ## Learning objectives
 
@@ -19,7 +17,6 @@ In this module, you will:
 
 - Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions  
 - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
-- The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true&WT.mc_id=MSLearn-ARM-pierrer) tools installed locally
 - The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&WT.mc_id=MSLearn-ARM-pierrer) extension installed locally
 - Either:
   - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=MSLearn-ARM-pierrer) tools installed locally

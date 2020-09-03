@@ -8,8 +8,8 @@
         }
     },
     "variables": {
-        "linked-template": "https://raw.githubusercontent.com/neilpeterson/arm-deployment-demo/master/linked-tempate/artifacts/storage.json",
-        "linked-template-two": "https://raw.githubusercontent.com/neilpeterson/arm-deployment-demo/master/linked-tempate/artifacts/identity.json"
+        "linked-template": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/mslearn-arm-Module-sample/storage.json",
+        "linked-template-two": "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/mslearn-arm-Module-sample/identity.json"
     },
     "resources": [
         {

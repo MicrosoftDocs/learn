@@ -1,12 +1,7 @@
-Deploying Azure Resource Manager (ARM) Templates is the easy part of the equation.  Writing them is the template is the harder part, you can go over the basics in one of the other Microsoft Learn modules namely:
-* [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?WT.mc_id=MSLearn-ARM-pierrer)
-* and [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?WT.mc_id=MSLearn-ARM-pierrer).
-
 Whether you are deploying your templates in your test environment or in production, the ability to deploy from the Azure Cloud Shell or a command line/terminal using native or partner tools is crucial. This unit will cover the ways to deploy your templates.
 
 1. PowerShell command and/or scripts
 1. Azure CLI command and/or scripts
-1. Directly in the Azure portal
 1. Using GitHub Actions
 
 There will be times where you need to deploy from different locations
@@ -41,14 +36,3 @@ The same deployment scopes exist for an Azure CLI deployment
 1. To deploy to a subscription, use [az deployment sub create](https://docs.microsoft.com/cli/azure/deployment/sub?view=azure-cli-latest&WT.mc_id=MSLearn-ARM-pierrer#az-deployment-sub-create)
 1. To deploy to a management group, use [az deployment mg create](https://docs.microsoft.com/cli/azure/deployment/mg?view=azure-cli-latest&WT.mc_id=MSLearn-ARM-pierrer#az-deployment-mg-create)
 1. To deploy to a tenant, use [az deployment tenant create](https://docs.microsoft.com/cli/azure/deployment/tenant?view=azure-cli-latest&WT.mc_id=MSLearn-ARM-pierrer#az-deployment-tenant-create)
-
-## Portal
-
-You see several options for deploying resources using a template in the Azure portal.
-
-1. Build your own template in editor: create a template using the portal template editor. The editor is capable to add a resource template schema
-1. Common templates: There are four common templates for creating a Linux virtual machine, Windows virtual machine, a web application, and a database in Azure SQL Database
-1. Load a [GitHub quickstart template](https://azure.microsoft.com/resources/templates/?WT.mc_id=MSLearn-ARM-pierrer)
-
-    ![Azure portal template deployment options.](../media/4-portal-options.png)
-

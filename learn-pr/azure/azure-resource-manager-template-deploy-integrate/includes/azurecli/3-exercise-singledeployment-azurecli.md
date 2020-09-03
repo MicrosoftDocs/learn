@@ -206,85 +206,85 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 > [!NOTE]
 > In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
 
-    ```bash
-    parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
-    templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
-    today=$(date +"%Y-%m-%d")
-    deploymentname="DeployLocalTemplate-2-"$today
+  ```azurecli
+  parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
+  templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
+  today=$(date +"%Y-%m-%d")
+  deploymentname="DeployLocalTemplate-2-"$today
 
-    az deployment group create \
-    --name $deploymentname \
-    --template-file $templateFile \
-    --parameters "$parameters"
-    ```
+  az deployment group create \
+  --name $deploymentname \
+  --template-file $templateFile \
+  --parameters "$parameters"
+  ```
 
-    Once it completes, you should have results like the example below.  See the **"parameters"** section and the **"provisioningState"** to ensure the command was successful.
+  Once it completes, you should have results like the example below.  See the **"parameters"** section and the **"provisioningState"** to ensure the command was successful.
 
-    ```json
-        {- Finished ..
-          "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Resources/deployments/DeployLocalTemplate-2-2020-08-19",      
-          "location": null,
-          "name": "DeployLocalTemplate-2-2020-08-19",
-          "properties": {
-            "correlationId": "edb2992e-08be-4ec2-940e-df23b1c09453",
-            "debugSetting": null,
-            "dependencies": [],
-            "duration": "PT4.6990388S",
-            "error": null,
-            "mode": "Incremental",
-            "onErrorDeployment": null,
-            "outputResources": [
-              {
-                "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Network/virtualNetworks/VNet-001",
-                "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd"
-              }
-            ],
-            "outputs": null,
-            "parameters": {
-              "costCenterIO": {
-                "type": "String",
-                "value": "12345"
-              },
-              "ownerName": {
-                "type": "String",
-                "value": "John Smith"
-              },
-              "vnetName": {
-                "type": "String",
-                "value": "VNet-001"
-              }
+  ```json
+      {- Finished ..
+        "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Resources/deployments/DeployLocalTemplate-2-2020-08-19",      
+        "location": null,
+        "name": "DeployLocalTemplate-2-2020-08-19",
+        "properties": {
+          "correlationId": "edb2992e-08be-4ec2-940e-df23b1c09453",
+          "debugSetting": null,
+          "dependencies": [],
+          "duration": "PT4.6990388S",
+          "error": null,
+          "mode": "Incremental",
+          "onErrorDeployment": null,
+          "outputResources": [
+            {
+              "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Network/virtualNetworks/VNet-001",
+              "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd"
+            }
+          ],
+          "outputs": null,
+          "parameters": {
+            "costCenterIO": {
+              "type": "String",
+              "value": "12345"
             },
-            "parametersLink": null,
-            "providers": [
-              {
-                "id": null,
-                "namespace": "Microsoft.Network",
-                "registrationPolicy": null,
-                "registrationState": null,
-                "resourceTypes": [
-                  {
-                    "aliases": null,
-                    "apiVersions": null,
-                    "capabilities": null,
-                    "locations": [
-                      "westus"
-                    ],
-                    "properties": null,
-                    "resourceType": "virtualNetworks"
-                  }
-                ]
-              }
-            ],
-            "provisioningState": "Succeeded",
-            "templateHash": "11553431046699679955",
-            "templateLink": null,
-            "timestamp": "2020-08-19T16:40:20.249786+00:00",
-            "validatedResources": null
+            "ownerName": {
+              "type": "String",
+              "value": "John Smith"
+            },
+            "vnetName": {
+              "type": "String",
+              "value": "VNet-001"
+            }
           },
-          "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd",
-          "tags": null,
-          "type": "Microsoft.Resources/deployments"
-        }
+          "parametersLink": null,
+          "providers": [
+            {
+              "id": null,
+              "namespace": "Microsoft.Network",
+              "registrationPolicy": null,
+              "registrationState": null,
+              "resourceTypes": [
+                {
+                  "aliases": null,
+                  "apiVersions": null,
+                  "capabilities": null,
+                  "locations": [
+                    "westus"
+                  ],
+                  "properties": null,
+                  "resourceType": "virtualNetworks"
+                }
+              ]
+            }
+          ],
+          "provisioningState": "Succeeded",
+          "templateHash": "11553431046699679955",
+          "templateLink": null,
+          "timestamp": "2020-08-19T16:40:20.249786+00:00",
+          "validatedResources": null
+        },
+        "resourceGroup": "learn-e692001a-b605-48d4-97bd-7c05669db9dd",
+        "tags": null,
+        "type": "Microsoft.Resources/deployments"
+      }
     ```
 
     Rather than passing parameters as inline values in your script, you may find it easier to use a JSON file that contains the parameter values. The parameter file can be a local file or an external/remote file with an accessible URI.  For more information about the parameter file, see [Create Resource Manager parameter file](https://docs.microsoft.com/azure/azure-resource-manager/templates/parameter-files?WT.mc_id=MSLearn-ARM-pierrer).
