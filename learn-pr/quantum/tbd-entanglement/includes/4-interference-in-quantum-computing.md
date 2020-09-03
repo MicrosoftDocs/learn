@@ -78,7 +78,8 @@ $$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}.$$
 Notice the minus sign, which makes the relative phase between the $\ket{0}$ and
 $\ket{1}$ states different.
 
-If we then put $\ket{\psi_1}$ and $\ket{\psi_2}$ in superposition:
+If we then consider an equal superposition of the states $\ket{\psi_1}$ and
+$\ket{\psi_2}$:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{\psi_1}+\frac1{\sqrt2}\ket{\psi_2}=
 \frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}\right)+\frac1{\sqrt2}\left(\frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}\right)$$
@@ -91,8 +92,9 @@ amplitudes of $\ket{1}$ had the opposite phase and destructively interfered,
 eliminating the probability of obtaining **1**.
 
 Interference is one of the basic principles behind the power of quantum
-computing. Quantum interference can be harnessed to perform computations to
-bring advantage over classical algorithms.
+computing. Quantum interference can be harnessed to cancel the amplitudes
+of states that don't help us solve our problem, and to amplify the amplitudes
+of states that lead us to the solution.
 
 In the next unit, you are going to see how you can use Q# to
 explore quantum interference.

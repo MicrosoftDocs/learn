@@ -34,7 +34,7 @@ $$=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
 \frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2}).$$
 
 Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as
-superposing the states $\psi_1$ and $\psi_2$.
+superposing the states $\ket{\psi_1}$ and $\ket{\psi_2}$.
 
 To do so with Q#:
 
@@ -89,44 +89,61 @@ only seen amplitudes with zero phase (i.e., real positive amplitudes). Let's see
 has amplitudes with non-zero phases.
 
 We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
-$\ket{1}$. Let's observe it using `DumpMachine`. We should first transform
-$\ket{0}$ into $\ket{1}$ with help of the [`X`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation, and then apply
-`H` to obtain $\ket{1}.$
+$\ket{1}$. You can create such state with Q#.
 
-The code would be:
+1. First, modify *Program.qs* like this and save the file:
 
-:::code language="qsharp" source="code/5-program-2.qs":::
+   :::code language="qsharp" source="code/5-program-2.qs":::
 
-And the output:
+   In this code you:
+   1. Transform $\ket{0}$ into $\ket{1}$ with help of the [X](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.X?azure-portal=true) operation.
+   1. Apply `H` to obtain $\ket{\psi_2}$.
+   1. Use `DumpMachine` to inspect the phases of the state $\ket{\psi_2}$.
 
-```output
-# wave function for qubits with ids (least to most significant): 0
-|0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
-|1⟩:    -0,707107 +  0.000000 i  ==     ***********          [ 0.500000 ] ---     [  3,14159 rad ]
-```
+1. From the terminal, run `dotnet run`:
 
-We see how the phase for the state $\ket{0}$ is $\pi$ radians. This is because
-the negative numbers in the complex plane lie in the negative part of the
-x-axis, and so it's $\pi$ radians in polar coordinates. Note that, although
-the phase is non-zero, the probabilities remain the same.
+   ```bash
+      dotnet run
+   ```
+
+   Here you have an example of the output that you should expect:
+
+   ```output
+   # wave function for qubits with ids (least to most significant): 0
+   |0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
+   |1⟩:    -0,707107 +  0.000000 i  ==     ***********          [ 0.500000 ] ---     [  3,14159 rad ]
+   ```
+
+   We see how the phase for the state $\ket{0}$ is $\pi$ radians. This is because
+   the negative numbers in the complex plane lie in the negative part of the
+   x-axis, and so it's $\pi$ radians in polar coordinates. Note that, although
+   the phase is non-zero, the probabilities remain the same.
 
 And what about complex amplitudes? If instead of using `X` we use the operation
-`Y`, we'll rotate the amplitudes to the imaginary axis. Let's see the effect.
+`Y`, we'll rotate the amplitudes to the imaginary axis. To see this effect:
 
-The code would be:
+1. Modify the code of *Program.qs* to be:
 
-:::code language="qsharp" source="code/5-program-3.qs":::
+   :::code language="qsharp" source="code/5-program-3.qs":::
 
-And the output:
+   This code is the same code above by replacing `X` by `Y`.
 
-```output
-|0⟩:     0.000000 +  0.707107 i  ==     ***********          [ 0.500000 ]        [  1.57080 rad ]
-|1⟩:     0.000000 + -0,707107 i  ==     ***********          [ 0.500000 ]        [ -1.57080 rad ]
-```
+1. From the terminal, run `dotnet run`:
 
-We get a phase of $\frac\pi2$ for $\ket{0}$ and $-\frac\pi2$ for $\ket{1}$.
-Those angles correspond to the positive and negative parts of the imaginary
-y-axis of the complex plane.
+   ```bash
+      dotnet run
+   ```
 
-In the next unit we are going to introduce the concept of quantum entanglement
+   You should expect the following output.
+
+   ```output
+   |0⟩:     0.000000 +  0.707107 i  ==     ***********          [ 0.500000 ]        [  1.57080 rad ]
+   |1⟩:     0.000000 + -0,707107 i  ==     ***********          [ 0.500000 ]        [ -1.57080 rad ]
+   ```
+
+   We get a phase of $\frac\pi2$ for $\ket{0}$ and $-\frac\pi2$ for $\ket{1}$.
+   Those angles correspond to the positive and negative parts of the imaginary
+   y-axis of the complex plane.
+
+In the next section we are going to introduce the concept of quantum entanglement
 in the context of quantum computing.
