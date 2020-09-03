@@ -83,7 +83,7 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 ::: zone pivot="angular"
 
-1. Select **angular-app** as the location for the application code and press **Enter**.
+5. Select **angular-app** as the location for the application code and press **Enter**.
 
    :::image type="content" source="../media/extension-app-location.png" alt-text="Application code location":::
 
@@ -91,73 +91,73 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
 ::: zone pivot="react"
 
-1. Select **react-app** as the location for the application code and press **Enter**.
+5. Select **react-app** as the location for the application code and press **Enter**.
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-1. Select **svelte-app** as the location for the application code and press **Enter**.
+5. Select **svelte-app** as the location for the application code and press **Enter**.
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-1. Select **vue-app** as the location for the application code and press **Enter**.
+5. Select **vue-app** as the location for the application code and press **Enter**.
 
 ::: zone-end
 
-1. The extension is looking for the location of the API in your application. This article doesn't implement an API.
+6. The extension is looking for the location of the API in your application. This article doesn't implement an API.
 
    Select **Skip for now** and press **Enter**.
 
    :::image type="content" source="../media/extension-api-location.png" alt-text="API location":::
 
-1. Select the location where files are built for production in your app.
+7. Select the location where files are built for production in your app.
 
-::: zone pivot="angular"
+   ::: zone pivot="angular"
 
-Type **dist/angular-app** and press **Enter**.
+   Type **dist/angular-app** and press **Enter**.
 
-:::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
+   :::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="react"
+   ::: zone pivot="react"
 
-Type **build** and press **Enter**.
+   Type **build** and press **Enter**.
 
-:::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
+   :::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="svelte"
+   ::: zone pivot="svelte"
 
-Type **public** and press **Enter**.
+   Type **public** and press **Enter**.
 
-:::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
+   :::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
 
-::: zone-end
+   ::: zone-end
 
-::: zone pivot="vue"
+   ::: zone pivot="vue"
 
-Type **dist** and press **Enter**.
+   Type **dist** and press **Enter**.
 
-:::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
+   :::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
 
-::: zone-end
+   ::: zone-end
 
-1. Select a location nearest you and press **Enter**.
+8. Select a location nearest you and press **Enter**.
 
    :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
 
-1. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
 
    :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
 
-1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **Production** and select **Open in Portal** to view app in the Azure portal.
+10. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **Production** and select **Open in Portal** to view app in the Azure portal.
 
-   :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
+    :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
 > [!NOTE]
 > Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
