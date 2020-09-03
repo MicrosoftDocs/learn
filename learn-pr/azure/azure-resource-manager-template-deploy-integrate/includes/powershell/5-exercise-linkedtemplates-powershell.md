@@ -130,6 +130,6 @@ In this exercise, we will review and deploy a template that includes two linked 
 
     ![Azure portal interface for the deployments with the one deployment listed and a succeeded status.](../../media/7-portal-deployment-details.png)
 
-1. You will notice that you deployed one template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the Main template and the two linked templates.
+1. You will notice that you deployed one template but 3 are listed in the deployment pane of the portal. Those three deployments correspond to the main template and the two linked templates.
 
     ![Azure portal interface for the specific deployment with no resources listed.](../../media/7-portal-deployment-listing.png)

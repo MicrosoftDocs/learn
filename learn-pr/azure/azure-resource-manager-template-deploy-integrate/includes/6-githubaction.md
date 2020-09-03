@@ -1,4 +1,4 @@
-"[GitHub Actions(https://docs.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions)]" helps your team to be agile and competitive in today's marketplace by allowing you to automate your system/solution development life-cycle tasks.
+[GitHub Actions](https://docs.microsoft.com/azure/azure-resource-manager/templates/deploy-github-actions) helps your team to be agile and competitive in today's marketplace by allowing you to automate your system/solution development life-cycle tasks.
 
 Suppose you and your team are developing a solution that will require a significant number of resources in an Azure environment. You need to ensure the solution can be deployed quickly and automatically as part of a continuous integration/continuous delivery (CI/CD) pipeline.  That way you can automate the creation and teardown of the project's infrastructure. By including the resources management in your CI/CD pipeline You're adopting infrastructure as code (IaC) to automate the IT tasks.
 
