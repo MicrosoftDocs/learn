@@ -6,102 +6,161 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), making sure you use the same account to sign in as you did to activate the sandbox.
-1. Click **Create a Resource**
-1. Search for **Static Web Apps**
-1. Click **Static Web Apps (Preview)**
-1. Click **Create**
+## Customize Visual Studio Code
 
-### Basics
+Before you begin, you need to grants Visual Studio Code access to the Azure subscription used by the sandbox. This subscription was created when you activate the sandbox and allows you to use Azure services without incurring any costs.
 
-Next, configure your new app and link it to your GitHub repository.
+### Add concierge tenant to Visual Studio Code
 
-1. Enter the **Project Details**
+The following steps associate the free Azure subscription created for you with Visual Studio Code. At the end of the tutorial you'll follow steps to restore Visual Studio Code back to its original settings.
 
-   | Setting          | Value                                    |
-   | ---------------- | ---------------------------------------- |
-   | _Subscription_   | **Concierge subscription**               |
-   | _Resource Group_ | <rgn>[Sandbox resource group name]</rgn> |
+1. In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
 
-1. Enter the **Static Web Apps details**
+   ```bash
+   az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
+   ```
 
-   | Setting  | Value                                                                         |
-   | -------- | ----------------------------------------------------------------------------- |
-   | _Name_   | Name your app. Valid characters are `a-z` (case insensitive), `0-9`, and `_`. |
-   | _Region_ | Select the region closest to you                                              |
-   | _SKU_    | **Free**                                                                      |
+1. Open settings in Visual Studio Code. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
 
-1. Click the **Sign-in with GitHub** button and authenticate with GitHub
-1. Enter the **Source Control Details**
+1. Navigate through **User Settings > Extensions > Azure configuration**
 
-   | Setting        | Value                                                    |
-   | -------------- | -------------------------------------------------------- |
-   | _Organization_ | Select the Organization where you created the repository |
-   | _Repository_   | **my-static-web-app**                                    |
-   | _Branch_       | **master**                                               |
+1. Enter the tenant in the **Azure: Tenant** textbox.
 
-1. Click the **Next: Build >** button to edit the build configuration
+![Add tenant ID to Visual Studio Code Azure extension configuration](../media/vs-code-tenant.png)
 
-:::image type="content" source="../media/next-build-button.png" alt-text="Next: Build button":::
+### Sign out and back in
 
-### Build
+Now that you've made these changes, you need to sign out and back into the Azure extension.
 
-Next, add configuration details specific to your preferred front-end framework and clear the default value from the _Api location_ box.
+1. Press **F1** to open the Visual Studio Code command palette.
+
+1. Search for and select **Azure: Sign Out**.
+
+1. Press **F1** again.
+
+1. Search for and select **Azure: Sign In** and sign in with the same account you used to sign into the Learn sandbox.
+
+### Select subscription
+
+1. Click on the Azure extension icon.
+
+   ![Visual Studio Code Azure extension icon](../media/vs-code-azure-extension-icon.png)
+
+1. Under the _Functions_ heading, click on **Select Subscriptions**.
+
+   ![Visual Studio Code Azure extension: Functions section](../media/vs-code-select-subscriptions.png)
+
+1. Next, the command palette appears. Select **Concierge Subscription** and click **OK**.
+
+   ![Visual Studio Code Azure extension: Select concierge subscription](../media/vs-code-select-concierge.png)
+
+Now Visual Studio Code is configured to use the sandbox resources and avoid any billing against your account.
+
+## Create a static web app
+
+1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you just cloned to your machine in the editor.
+
+1. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
+
+   :::image type="content" source="../media/extension-azure-logo.png" alt-text="Azure Logo":::
+
+   > [!NOTE]
+   > Azure and GitHub sign in are required. If you are not already signed in to Azure and GitHub from Visual Studio Code, the extension will prompt you to sign in to both during the creation process.
+
+1. Place your mouse over the _Static Web Apps_ label and select the **plus sign**.
+
+   :::image type="content" source="../media/extension-create-button.png" alt-text="Application name":::
+
+1. The command palate opens at the top of the editor and prompts you to name your application.
+
+   Type **my-first-static-web-app** and press **Enter**.
+
+   :::image type="content" source="../media/extension-create-app.png" alt-text="Create Static Web App":::
+
+1. Select the **master** branch and press **Enter**.
+
+   :::image type="content" source="../media/extension-branch.png" alt-text="Branch name":::
 
 ::: zone pivot="angular"
 
-| Setting                 | Value                |
-| ----------------------- | -------------------- |
-| _App location_          | **angular-app**      |
-| _App artifact location_ | **dist/angular-app** |
+1. Select **angular-app** as the location for the application code and press **Enter**.
+
+   :::image type="content" source="../media/extension-app-location.png" alt-text="Application code location":::
 
 ::: zone-end
 
 ::: zone pivot="react"
 
-| Setting                 | Value         |
-| ----------------------- | ------------- |
-| _App location_          | **react-app** |
-| _App artifact location_ | **build**     |
+1. Select **react-app** as the location for the application code and press **Enter**.
 
 ::: zone-end
 
 ::: zone pivot="svelte"
 
-| Setting                 | Value          |
-| ----------------------- | -------------- |
-| _App location_          | **svelte-app** |
-| _App artifact location_ | **public**     |
+1. Select **svelte-app** as the location for the application code and press **Enter**.
 
 ::: zone-end
 
 ::: zone pivot="vue"
 
-| Setting                 | Value       |
-| ----------------------- | ----------- |
-| _App location_          | **vue-app** |
-| _App artifact location_ | **dist**    |
+1. Select **vue-app** as the location for the application code and press **Enter**.
 
 ::: zone-end
 
-Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
+1. The extension is looking for the location of the API in your application. This article doesn't implement an API.
 
-:::image type="content" source="../media/review-create-button.png" alt-text="Review + create button":::
+   Select **Skip for now** and press **Enter**.
+
+   :::image type="content" source="../media/extension-api-location.png" alt-text="API location":::
+
+1. Select the location where files are built for production in your app.
+
+::: zone pivot="angular"
+
+Type **dist/angular-app** and press **Enter**.
+
+:::image type="content" source="../media/extension-artifact-angular.png" alt-text="Angular app files path":::
+
+::: zone-end
+
+::: zone pivot="react"
+
+Type **build** and press **Enter**.
+
+:::image type="content" source="../media/extension-artifact-react.png" alt-text="React app files path":::
+
+::: zone-end
+
+::: zone pivot="svelte"
+
+Type **public** and press **Enter**.
+
+:::image type="content" source="../media/extension-artifact-svelte.png" alt-text="Svelte app files path":::
+
+::: zone-end
+
+::: zone pivot="vue"
+
+Type **dist** and press **Enter**.
+
+:::image type="content" source="../media/extension-artifact-vue.png" alt-text="Vue app files path":::
+
+::: zone-end
+
+1. Select a location nearest you and press **Enter**.
+
+   :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
+
+1. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+
+   :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
+
+1. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **Production** and select **Open in Portal** to view app in the Azure portal.
+
+   :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
 > [!NOTE]
 > Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
-
-### Review + create
-
-Continue to create the application.
-
-1. Click the **Create** button
-
-   :::image type="content" source="../media/create-button.png" alt-text="Create button":::
-
-1. Once the deployment is complete, click the **Go to resource** button
-
-   :::image type="content" source="../media/go-to-resource-button.png" alt-text="Go to resource button":::
 
 ### Review the GitHub Action
 
