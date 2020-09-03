@@ -18,15 +18,15 @@ This exercise requires that you have an Azure subscription.  If you do not have 
 1. Azure uses regions to store resources.  The proper selection for your bot should be in a region that is closest to you but that also provides the correct resource access.  Select the location that is closest to your actual location.
 1. There are typically two options available in the **Pricing tier**. Ensure you select the link for **View full pricing details** to better understand how an account will be billed for the bot service.
 
->[!TIP]
->If your subscription permits, select the F0 pricing tier. Many subscription levels only support one F0 pricing tier per subscription so you may receive errors during the creation process.  If that is the case, then select the S0 option.
+    >[!TIP]
+    >If your subscription permits, select the F0 pricing tier. Many subscription levels only support one F0 pricing tier per subscription so you may receive errors during the creation process.  If that is the case, then select the S0 option.
 
 1. Azure picks an **App name** for you.  The name is derived from the **bot handle** you created and you can change this name if you want to, but it is best to leave it as the recommended option to ensure it will be acceptable in the Azure environment.
 1. The next step is to choose the **bot template**.  The default is **Echo Bot (C#)**. Select the **Echo Bot (C#)** option to open the **Bot template** page.
 1. Currently there are two **SDK language** options available for the Echo bot.  Select your **SDK language** of choice and then select the **OK** button at the bottom of the page.  The SDK language will determine the code that is used in the bot solution that you can download after bot creation.
 
->[!NOTE]
->You can review the various bot types on this page, and select the links to visit information pages for other types of bot integrations but we are only focusing on an Echo bot for this exercise.
+    >[!NOTE]
+    >You can review the various bot types on this page, and select the links to visit information pages for other types of bot integrations but we are only focusing on an Echo bot for this exercise.
 
 1. Leave the **App service plan/Location** option at the default setting.
 1. **Application Insights** are not required for this exercise so turn them **Off**.
