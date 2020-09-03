@@ -2,7 +2,7 @@ Creating a basic bot is a relatively easy task in the Azure portal. This exercis
 
 There are many activities that are taking place behind the scenes so the exercise will also demonstrate how to download the source code for the bot.  The source code can help to evaluate the activities that are taking place in the bot interaction.  They also offer insight into the activity handling mechanisms.
 
-## Create an Echo Bot in the Azure portal
+## Create an echo Bot in the Azure portal
 
 This exercise requires that you have an Azure subscription.  If you do not have an existing subscription, you can [create one](https://azure.microsoft.com/free). Once you have you Azure account created, you can begin the exercise steps.
 
@@ -25,7 +25,7 @@ This exercise requires that you have an Azure subscription.  If you do not have 
 1. The next step is to choose the **bot template**.  The default is **Echo Bot (C#)**. Select the **Echo Bot (C#)** option to open the **Bot template** page.
 1. Currently there are two **SDK language** options available for the Echo bot.  Select your **SDK language** of choice and then select the **OK** button at the bottom of the page.  The SDK language will determine the code that is used in the bot solution that you can download after bot creation.
 
->[NOTE]
+>[!NOTE]
 >You can review the various bot types on this page, and select the links to visit information pages for other types of bot integrations but we are only focusing on an Echo bot for this exercise.
 
 1. Leave the **App service plan/Location** option at the default setting.
@@ -34,7 +34,7 @@ This exercise requires that you have an Azure subscription.  If you do not have 
 1. Select the **Create** button to create your echo bot.
 1. Once your bot resource is created, selected the **Go to resource**  button.  Your Echo bot opens in a new page.
 
-## Test your Bot with Web Chat
+## Test your Bot with web chat
 
 Azure provides a simple web chat interface to test your bot.  With an echo bot, there isn't a lot going on but you can at least see how the bot responds with your chat messages.
 
@@ -45,13 +45,13 @@ Azure provides a simple web chat interface to test your bot.  With an echo bot, 
 1. Your message should be relayed back to you in the chat window.
 1. When you are finished with your testing, select the **Overview** option to return to close the test window.
 
-## Download and Review the Bot Source Code
+## Download and review the Bot source code
 
 In the following exercise, you will download the source code for the echo bot you created and evaluate the code. The intent is to familiarize you with the events and activity handling in the bot source code.
 
 1. Ensure you are still signed in to the Azure portal.
 1. Locate the echo bot you created earlier in the unit.
-1. Select the **Build** option that is under the **Bot management* section.
+1. Select the **Build** option that is under the **Bot management** section.
 1. Select the **Download Bot source code** button.
 1. A dialog will display asking if you want to include the app settings in zip file, choose **Yes**. It will create the necessary app settings file in your source code and include the **MicrosoftAppId** and **MicrosoftAppPassword** that are necessary for the code to connect to the bot resource on Azure.
 1. A message will display indicating that a zip file is being created.  When completed, another message displays with a **Download Bot source code** button.  Select that button to download the source code locally.

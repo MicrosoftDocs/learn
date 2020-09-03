@@ -11,7 +11,7 @@ We've become so used to ubiquitous connectivity, that we expect the organization
 
 Think about how often you communicate with other people through instant messaging, social media, email, or other online technologies. For many of us, it's our go-to form of contact. When you have a question at work, you might reach out to a colleague using a chat message, which you can use on mobile devices, so you're always in touch.
 
-:::image type="content" source="../media/conversational_ai.jpg" alt-text="A human and a robot having a conversation":::
+:::image type="content" source="../media/conversational-ai.png" alt-text="A human and a robot having a conversation":::
 
 ## Conversational AI
 
