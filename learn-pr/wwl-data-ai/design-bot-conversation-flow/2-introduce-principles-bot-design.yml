@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-bot-conversation-flow.introduce-principles-of-bot-design
+title: Introduce principles of Bot design
+metadata:
+  title: Introduce principles of Bot design
+  description: "Introduce principles of Bot design"
+  ms.date: 09/05/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-introduce-principles-bot-design.md)]
