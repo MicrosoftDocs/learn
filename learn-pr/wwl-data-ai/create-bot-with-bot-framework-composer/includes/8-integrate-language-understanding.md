@@ -48,7 +48,7 @@ In this exercise, you will add triggers for each of our current inputs, *weather
 1. Select the **help** trigger, then select the **+** symbol, **Dialog management**, and finally **Begin a new dialog**.
 1. When the action is added to the **help** trigger, select **help** from the **Dialog name** drop-down.
 
-:::image type="content" source="../media/attach-dialog-to-trigger.png" alt-text="Attaching the help dialog to the help trigger":::
+:::image type="content" source="../media/attach-dialog-trigger.png" alt-text="Attaching the help dialog to the help trigger":::
 
 1. Repeat the same procedure to attach the **getWeather** and **cancel** dialogs to the proper triggers.
 
