@@ -19,12 +19,12 @@ In the previous part, when putting the states $\ket{\psi_1}=
 \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}$ in a superposition, the probability
 amplitude of $\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
 
-To see this effect in Q#, we can implement it with the help of the `H`
-operation. We already know that $\hat H \ket{0} = \ket{\psi_1}$, which we used
-for the quantum random bit generator. But if we apply $\hat H$ to the state
-$\ket{1}$, we obtain $\ket{\psi_2}$.
+To see this effect in Q#, you can implement it with the help of the `H`
+operation. you already know that $\hat H \ket{0} = \ket{\psi_1}$, which you used
+for the quantum random bit generator. But if you apply $\hat H$ to the state
+$\ket{1}$, you obtain $\ket{\psi_2}$.
 
-If we then apply `H` twice to the state $\ket{0}$:
+If you then apply `H` twice to the state $\ket{0}$:
 
 $$\hat H \hat H \ket{0}= \hat H \frac1{\sqrt2}(\ket{0}+\ket{1}).$$
 
@@ -67,28 +67,28 @@ To do so with Q#:
    |0⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
    |1⟩:     0.707107 +  0.000000 i  ==     ***********          [ 0.500000 ]     --- [  0.00000 rad ]
 
-   If we apply H again, interference gives back the state to |0>.
+   If you apply H again, interference gives back the state to |0>.
    # wave function for qubits with ids (least to most significant): 0
    |0⟩:     1.000000 +  0.000000 i  ==     ********************* [ 1.000000 ]     --- [  0.00000 rad ]
    |1⟩:     0.000000 +  0.000000 i  ==                           [ 0.000000 ]     --- [  0.00000 rad ]
 
-   If we measure we always obtain 'Zero'.
+   If you measure you always obtain 'Zero'.
    Zero
    ```
 
-   We can see how applying `H` twice recovers the initial state of the qubit.
+   You can see how applying `H` twice recovers the initial state of the qubit.
    This occurs because the states of the superposition created by the first `H`
-   operation destructively interfere when we superpose them again with the 
+   operation destructively interfere when you superpose them again with the 
    second `H` operation.
 
 ## Explore the relative phases with Q#
 
 You may have noticed that `DumpMachine` also gives us
-information about the phase of each amplitude. However, so far we have
+information about the phase of each amplitude. However, so far you have
 only seen amplitudes with zero phase (i.e., real positive amplitudes). Let's see how it looks like when a state
 has amplitudes with non-zero phases.
 
-We know that the state $\ket{\psi_2}$ has a negative amplitude for the state
+You know that the state $\ket{\psi_2}$ has a negative amplitude for the state
 $\ket{1}$. You can create such state with Q#.
 
 1. First, modify *Program.qs* like this and save the file:
@@ -114,13 +114,13 @@ $\ket{1}$. You can create such state with Q#.
    |1⟩:    -0,707107 +  0.000000 i  ==     ***********          [ 0.500000 ] ---     [  3,14159 rad ]
    ```
 
-   We see how the phase for the state $\ket{0}$ is $\pi$ radians. This is because
+   you see how the phase for the state $\ket{0}$ is $\pi$ radians. This is because
    the negative numbers in the complex plane lie in the negative part of the
    x-axis, and so it's $\pi$ radians in polar coordinates. Note that, although
    the phase is non-zero, the probabilities remain the same.
 
-And what about complex amplitudes? If instead of using `X` we use the operation
-`Y`, we'll rotate the amplitudes to the imaginary axis. To see this effect:
+And what about complex amplitudes? If instead of using `X` you use the operation
+`Y`, you'll rotate the amplitudes to the imaginary axis. To see this effect:
 
 1. Modify the code of *Program.qs* to be:
 
@@ -141,9 +141,9 @@ And what about complex amplitudes? If instead of using `X` we use the operation
    |1⟩:     0.000000 + -0,707107 i  ==     ***********          [ 0.500000 ]        [ -1.57080 rad ]
    ```
 
-   We get a phase of $\frac\pi2$ for $\ket{0}$ and $-\frac\pi2$ for $\ket{1}$.
+   you get a phase of $\frac\pi2$ for $\ket{0}$ and $-\frac\pi2$ for $\ket{1}$.
    Those angles correspond to the positive and negative parts of the imaginary
    y-axis of the complex plane.
 
-In the next section we are going to introduce the concept of quantum entanglement
+In the next section you are going to see the concept of quantum entanglement
 in the context of quantum computing.

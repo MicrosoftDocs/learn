@@ -9,7 +9,7 @@ further.
 The term *wave function* might be familiar to you (in fact, the `DumpMachine` function you just used names the quantum state as a "wave function").
 
 Physicists often use this term as a synonym to design the quantum state of a system. This
-is because the Schrödinger equation that we introduced at the beginning of this
+is because the Schrödinger equation introduced at the beginning of this
 module has the same mathematical structure as classical wave equations.
 
 ![A diagram showing a wave function and the Schrödinger equation](../media/4-wave.svg)
@@ -19,7 +19,7 @@ You might've also heard the term "probability wave". In fact, the term
 wave.
 
 If probability amplitudes of qubits are governed by a wave-like equation, this
-implies that we'll observe many of the different well-known physical
+implies that you'll observe many of the different well-known physical
 properties of waves. Quantum algorithms exploit these properties to perform
 calculations. In particular, quantum computers exploit the phenomenon of *wave
 interference*.
@@ -52,19 +52,19 @@ Constructive and destructive interference are due to *relative phases* between
 the waves. In the next figure you can see how the relative phase determines the
 distance between the peaks of the waves and therefore how they interfere.
 
-![Diagram showing two waves with relative phases](../media/4-relative-phase.svg)
+![Diagram showing two waves with relative phases](../media/4-relative-phase.png)
 
 In general, an amplitude is a complex number, which describes both the magnitude
 and the phase of the wave. The following image shows the standard representation
 of complex numbers in the complex plane using polar coordinates.
 
-![Diagram of the complex plane using polar coordinates](../media/4-complex-plane.svg)
+![Diagram of the complex plane using polar coordinates](../media/4-complex-plane.png)
 
 ## Interference in quantum computing
 
 Qubit states follow the same mathematics as waves.
 
-We used the following superposition to create the quantum random number
+You used the following superposition to create the quantum random number
 generator:
 
 $$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}.$$
@@ -78,7 +78,7 @@ $$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}.$$
 Notice the minus sign, which makes the relative phase between the $\ket{0}$ and
 $\ket{1}$ states different.
 
-If we then consider an equal superposition of the states $\ket{\psi_1}$ and
+If you then consider an equal superposition of the states $\ket{\psi_1}$ and
 $\ket{\psi_2}$:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{\psi_1}+\frac1{\sqrt2}\ket{\psi_2}=

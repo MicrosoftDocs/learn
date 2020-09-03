@@ -13,9 +13,8 @@ namespace ExploringEntanglement {
             DumpMachine();
             Message(" ");
             let results = MultiM(qubits);
-            Message("Entangled state after measurement:");
+            Message("State after measurement:");
             DumpMachine();
-            ResetAll(qubits);
             return results;
         }
     }
