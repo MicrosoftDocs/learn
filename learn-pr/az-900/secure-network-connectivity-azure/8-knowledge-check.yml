@@ -25,14 +25,14 @@ quiz:
     - content: Azure DDoS Protection
       isCorrect: true
       explanation: DDoS Protection helps protect your Azure resources from DDoS attacks. A DDoS attack attempts to overwhelm and exhaust an application's resources, making the application slow or unresponsive to legitimate users.
-  - content: What's the best way for Tailwind Traders to limit all inbound traffic from the internet to port 443 (HTTPS) and all outbound traffic from VMs to known hosts?
+  - content: What's the best way for Tailwind Traders to limit all outbound traffic from VMs to known hosts?
     choices:
     - content: Configure Azure DDoS Protection to limit network access to trusted ports and hosts.
       isCorrect: false
       explanation: DDoS Protection helps protect your Azure resources from DDoS attacks, but it doesn't act as a general-purpose firewall.
-    - content: Create network rules in Azure Firewall.
+    - content: Create application rules in Azure Firewall.
       isCorrect: true
-      explanation: Azure Firewall enables you to create network rules that define source address, protocol, destination port, and destination address.
+      explanation: Azure Firewall enables you to limit outbound HTTP/S traffic to a specified list of fully qualified domain names (FQDN).
     - content: Ensure that all running applications only communicate with trusted ports and hosts.
       isCorrect: false
       explanation: Is there a way to more easily configure network access without software modifications?

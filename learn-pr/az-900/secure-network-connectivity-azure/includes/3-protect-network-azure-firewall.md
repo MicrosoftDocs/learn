@@ -17,6 +17,7 @@ Azure Firewall provides many features, including:
 - Built-in high availability.
 - Unrestricted cloud scalability.
 - Inbound and outbound filtering rules.
+- Inbound Destination Network Address Translation (DNAT) support
 - Azure Monitor logging.
 
 You typically deploy Azure Firewall on a central virtual network to control general network access.
@@ -27,5 +28,6 @@ With Azure Firewall, you can configure:
 
 - Application rules that define fully qualified domain names (FQDNs) that can be accessed from a subnet.
 - Network rules that define source address, protocol, destination port, and destination address.
+- Network Address Translation (NAT) rules that define destination IP addresses and ports to translate inbound requests.
 
 [Azure Application Gateway](https://azure.microsoft.com/services/application-gateway?azure-portal=true) also provides a firewall, called the *web application firewall* (WAF). WAF provides centralized, inbound protection for your web applications against common exploits and vulnerabilities.
