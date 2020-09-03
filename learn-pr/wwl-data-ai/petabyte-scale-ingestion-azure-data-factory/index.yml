@@ -3,7 +3,7 @@ uid: learn.wwl.petabyte-scale-ingestion-azure-data-factory
 metadata:
   title: Petabyte-scale ingestion with Azure Data Factory
   description: "Petabyte-scale ingestion with Azure Data Factory"
-  ms.date: 09/04/2020
+  ms.date: 09/05/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -11,15 +11,15 @@ metadata:
 title: Petabyte-scale ingestion with Azure Data Factory
 summary: In this module, you will learn the various methods that can be used to ingest data between various data stores using Azure Data Factory. We will also discuss how to securely setup environments to transfer the data
 abstract: |
-  1. Introduction
-  2. List the data factory ingestion methods
-  3. Describe data factory connectors
-  4. Use the data factory copy activity
-  5. Manage the self hosted integration runtime
-  6. Setup the Azure integration runtime
-  7. Understand data ingestion security considerations
-  8. Knowledge check
-  9. Summary
+  * Introduction
+  * List the data factory ingestion methods
+  * Describe data factory connectors
+  * Use the data factory copy activity
+  * Manage the self hosted integration runtime
+  * Setup the Azure integration runtime
+  * Understand data ingestion security considerations
+  * Knowledge check
+  * Summary
 prerequisites: |
   The student should be able to:
   - Log into the Azure portal
