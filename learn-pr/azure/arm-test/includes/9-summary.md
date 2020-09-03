@@ -10,6 +10,10 @@ In summary, you should now have a good overall understanding of what scripts and
 ## Additional resources
 
 - Read more on **What-If** at the official [What-If](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/template-deploy-what-if?tabs=azure-powershell)
-- Docs on the [Test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit)
-- Test toolkit [GitHub repo](https://github.com/Azure/arm-ttk/blob/master/arm-ttk/README.md) 
 - Read more on the different test cases the toolkit is testing [Test cases](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-cases)
+- Docs on [Deployment modes](https://docs.microsoft.com/azure/azure-resource-manager/templates/deployment-modes)
+- VS Code [Integratd terminal](https://code.visualstudio.com/docs/editor/integrated-terminal)
+- Azure CLI command [az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest)
+- Installing [PowerShell Core](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit)
+- Docs on the [Test toolkit](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit)
+- The testing toolkit GitHub repository [ARM ttk](https://aka.ms/arm-ttk-latest)

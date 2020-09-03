@@ -1,25 +1,22 @@
 ### YamlMime:Module
 uid: learn.arm-test
 metadata:
-  title: Ensure a valid infrastructure before deployment using the Test toolkit.
+  title: Validate your deployments using What-if and the Test toolkit
   description: Leverage the Test toolkit and apply it on your Azure Resource
     Manager templates to ensure the templates follow best practices before
-    deployment.
-  ms.date: 06/04/2020
+    deployment. Apply the What-if command to see the impact of a deployment before it's applied. 
+  ms.date: 09/03/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Ensure a valid infrastructure before deployment using the Test toolkit.
+title: Validate your deployments using What-if and the Test toolkit
 summary: TBD
 abstract: |
-  In this module you will:
-
-  - Evaluate the What-if operation so can preview the changes that will happen as you deploy your templates. 
-
-  - Use the ARM Template Test Toolkit to check templates for standards 
-
-  - Create a custom test for an ARM Template 
+  After completing this module, you'll be able to:
+  - Preview what changes will happen before you deploy by using the what-if operation.
+  - Validate your templates adherence to sound recommendations using ARM Template Test Toolkit.
+  - Implement domain specific rules for deployments that can be run by ARM Template Test Toolkit.
 iconUrl: /learn/achievements/undefined.svg
 levels:
   - beginner

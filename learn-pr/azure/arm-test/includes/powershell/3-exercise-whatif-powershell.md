@@ -52,13 +52,13 @@ There are potentially two different paths here:
 You will be able to deploy your ARM Template by carrying out the following steps:
 
 1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-1. **Set the active subscription**. This can be accomplished by invoking a PowersHell command-let.
+1. **Set the active subscription**. This can be accomplished by invoking a PowerShell command-let.
 1. **Set default resource group**. Also this can be done by invoking a PowerShell command-let. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
 1. **Carry out the deployment**. This step involves using the command-let **New-AzResourceGroupDeployment** with a URL to a template as an argument.
 
 ### Sign in to Azure
 
-You can sign into your Azure account from the terminal. If you are on Windows, the terminal will default to PowerShell. On other OSs you can use the command line executable `pwsh` to launch a PowerShell shell from the terminal. For more information on this, check this docs link [Integrated terminal](https://code.visualstudio.com/docs/editor/integrated-terminal).
+You can sign into your Azure account from the terminal. If you are on Windows, the terminal will default to PowerShell. On other OSs you can use the command line executable `pwsh` to launch a PowerShell shell from the terminal.
 
 1. **Open the integrated terminal in Visual Studio Code**. Be sure you are signing in to the same account that activated the sandbox.
     1. If you have a non Windows OS, type `pwsh` to ensure the PowerShell shell is running.
@@ -90,20 +90,20 @@ You can sign into your Azure account from the terminal. If you are on Windows, t
 
 1. **Set the default resource group**. You need to set the resource group created for you in the sandbox as the default resource group. You will accomplish this task in two steps:
 
-   1. Get the resource group name by using the following command.
+   1. **Get the resource group name**. Type the following command.
 
       ```powershell
       Get-AzResourceGroup
       ```
 
-   1. Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**).
-
-      > [!NOTE]
-      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0&WT.mc_id=MSlearn-ARM-pierrer)** Powershell command.
+   1. **Set the default name**. Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**).
 
       ```powershell
       Set-AzDefault -ResourceGroupName {Resource Group Name}
       ```
+
+      > [!NOTE]
+      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0&WT.mc_id=MSlearn-ARM-pierrer)** Powershell command.
 
 ### Deploy the first template to Azure
 
@@ -225,7 +225,7 @@ The differences in the second template is:
 
 ## Deploy using the Complete mode and confirmation option
 
-In this next steps you will deploy an empty template over your existing environment.
+In these next steps you will deploy an empty template over your existing environment.
 
 1. **Run the deployment in complete mode**. Type the following PowerShell command:
 
@@ -236,8 +236,8 @@ In this next steps you will deploy an empty template over your existing environm
     -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/empty-template/azuredeploy.json"
     ```
 
-    The output will be similar to the below.   
-    
+    The output will be similar to the below.
+
     ```powershell-interactive
     PS C:\> New-AzResourceGroupDeployment `
     >> -Mode Complete `
@@ -282,9 +282,9 @@ In this next steps you will deploy an empty template over your existing environm
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
     ```
 
-1. To execute and clean out your environment type **A** for "[A] Yes to All".  Once it completes it will display the following results:
+1. **Confirm deployment**. Type **A** for "[A] Yes to All", to execute and clean out your environment. Once it completes it will display the following results:
 
-    ```powershell-interactive
+    ```output
     Are you sure you want to execute the deployment?
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"): A
 
@@ -297,7 +297,7 @@ In this next steps you will deploy an empty template over your existing environm
                               Uri            : https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/empty-template/azuredeploy.json
                               ContentVersion : 1.0.0.0
 
-    Parameters              : 
+    Parameters              :
     Outputs                 :
     DeploymentDebugLogLevel :
 
@@ -305,9 +305,9 @@ In this next steps you will deploy an empty template over your existing environm
     PS C:\>
     ```
 
-1. Navigate back to the open browser you used earlier, and verify that there were 2 successful deployment.
+1. **Verify deployment**. Navigate back to the open browser you used earlier, and verify that there were 2 successful deployment.
 
-    1. The first one you deployed
-    1. The complete one that removed all resources, and the VNet is no longer there.
+    - The first one you deployed.
+    - The complete one that removed all resources, and the VNet is no longer there.
 
    :::image type="content" source="../../media/3-portal-deployment-complete-details.png" alt-text="Azure portal interface for the complete deployment with VNet resource no longer listed." border="true":::

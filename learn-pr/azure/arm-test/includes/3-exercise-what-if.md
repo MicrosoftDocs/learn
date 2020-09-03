@@ -4,7 +4,7 @@
 
 In this exercise, you'll deploy an Azure Resource Manager (ARM) template. You'll use a template from a sample repository. The template contains a Virtual Network (VNet). A sandbox subscription will be used to ensure your own subscription isn't affected. Once the deployment is complete, you'll then deploy a template that is slightly different:
 
-1. A change od address space in a virtual subnet
+1. A change of address space in a virtual subnet
 1. An additional Subnet in the virtual network
 
 The second deployment will include the *what-if* operation in order to review the expected changes.

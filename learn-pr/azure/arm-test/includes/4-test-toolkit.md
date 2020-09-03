@@ -1,18 +1,18 @@
-You've learned so far how the *what-if* command can be used to preview changes to your existing deployment. There's another aspect that is important to test for as well, namely *best practices*. So what are these *best practices* and why are they important for your templates?
+You've learned so far how the *what-if* command can be used to preview changes to your existing deployment. There's another aspect that is important to test for as well, namely does my template follow sound recommendations? So what are these *recommendations* and why might they be beneficial for your template to adhere to?
 
 > [!NOTE]
 > Lets get one thing clear, these are recommendations, not requirements. You are highly encouraged to follow these recommendations however.
 
 There are recommendations on different levels, everything from parameters and variables to things applying to your resources. Let's try to look at these recommendations from a high level and see what can be gained from adhering to them:
 
-- **Maintainability**, as you develop your template, from authoring it the first time to updating it, *keeping a clean house* becomes challenging over time. As your template grows so does constructs like parameters and variables and it's important to ensure that you understand what each of them are used for, and that they are used properly. Imagine a scenario where the parameter name is badly named and you are struggling to understand what it does just by looking at it. Or you are using a hardcoded value where you shouldn't, and something changes in your operations and IT services goes down. The point is, all these issues constitutes a cognitive load of having to understand and later dismiss what you are looking at. Being disciplined with how you name things, and clean things up, can help mitigate the effects of those scenarios.
+- **Maintainability**, as you develop your template, from authoring it the first time to updating it, keeping your templates clean and orderly becomes challenging over time. As your template grows so does constructs like parameters and variables and it's important you understand what each of them are used for, and that they are used appropriately. Imagine a scenario where the parameter name is badly named and you are struggling to understand what it does, just by looking at it. Or you are using a hardcoded value where you shouldn't, and something changes in your operations and IT services goes down. The point is, all these issues constitutes a cognitive load of having to understand and later dismiss what you are looking at. Being disciplined with how you name things, and clean things up, can help mitigate the effects of those scenarios.
 - **Correctness**, say you have taken all precautions to name things in a good way, but there's too many rules to keep track of. Such situations are where you want a tool that enforces all these rules and regulations.
 - **Flexibility**, you want to ensure that your templates are flexible enough to be used in any environment.
-- **Add domain-specific rules**. You might need a way to apply domain-specific rules. Rules that only make sense in the domain you work in. These rules are not something a tool or script can know of beforehand but just like the bullets above it will help with deployment correctness if you are able to test for these rules.
+- **Extensibility**. Sometimes you want to add your own recommendations. Your domain you work in as a company or team might have domain specific rules. You want a way to apply these domain-specific rules. There's however a limit to what a tool or script can do, when looking for and highlighting issues.
 
 ## The test toolkit
 
-For the reasons mentioned above, using a testing tool is a good idea so you can focus on authoring while knowing that a tool *has your back*. There is such a testing tool called the ARM Template Test toolkit or **arm-ttk** for short.
+For the reasons mentioned above, using a testing tool is a good idea so you can focus on authoring while knowing that a tool will find any issues and make your templates better. There is such a testing tool called the ARM Template Test toolkit or **arm-ttk** for short.
 
 It addresses the problems mentioned above by running a series of tests. The tests can be grouped into the following categories:
 
@@ -24,8 +24,8 @@ It addresses the problems mentioned above by running a series of tests. The test
 
 The tool is a PowerShell script. To be able to run it, you would need to go through the following steps:
 
-1. **Install the PowerShell Core**, this task is done differently depending if you are on Linux, Mac, or Windows. See this link for more details on [installing PowerShell Core](https://docs.microsoft.com/en-us/azure/azure-resource-manager/templates/test-toolkit)
-1. **Download the script**. The script can be found at the GitHub [repository](https://aka.ms/arm-ttk-latest)
+1. **Install the PowerShell Core**, this task is done differently depending if you are on Linux, Mac, or Windows.
+1. **Download the script**. The script is hosted in a GitHub repository and can be downloaded from there or fetched via a `git clone` command.
 1. **Import the script**. This step is just a one-liner instruction that you enter in a terminal window and looks like this:
 
    ```bash
@@ -41,7 +41,7 @@ Now you are ready to run the tests on your template.
 Running the tests involves invoking the script with the appropriate arguments. The `-TemplatePath` is a mandatory argument that expects a string that points to the location of the starter deployment template, which is either `azuredeploy.json` or `maintemplate.json`. A typical test run can therefore look like the below command:
 
 ```bash
-Test-AzTemplate.sh -TemplatePath path/to/starter/template
+Test-AzTemplate.sh -TemplatePath path/to/template
 ```
 
 The tool then goes onto to test the starter template and then any templates in the same directory and its sub folders.
