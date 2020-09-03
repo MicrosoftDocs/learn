@@ -17,15 +17,15 @@ Scopes include:
 * A management group (a collection of multiple subscriptions.)
 * A single subscription.
 * A resource group.
-* An single resource.
+* A single resource.
 
-**Observers**, **Users managing resources**, **Admins**,and **Automated processes** illustrate the kinds of users or accounts who would typically be assigned each of the various roles.
+**Observers**, **Users managing resources**, **Admins**, and **Automated processes** illustrate the kinds of users or accounts who would typically be assigned each of the various roles.
 
 When you grant access at a parent scope, those permissions are inherited by all child scopes. For example:
 
-* When you assign the [Owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#owner?azure-portal=true) role to a user at the management group scope, that user can manage everything in all subscriptions within the management group.
-* When you assign the [Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#reader?azure-portal=true) role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
-* When you assign the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor?azure-portal=true) role to an application at the resource group scope, the application can manage resources of all types within that resource group, but not other resource groups within the subscription.
+* When you assign the [Owner](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#owner) role to a user at the management group scope, that user can manage everything in all subscriptions within the management group.
+* When you assign the [Reader](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#reader) role to a group at the subscription scope, the members of that group can view every resource group and resource within the subscription.
+* When you assign the [Contributor](https://docs.microsoft.com/azure/role-based-access-control/built-in-roles?azure-portal=true#contributor) role to an application at the resource group scope, the application can manage resources of all types within that resource group, but not other resource groups within the subscription.
 
 ## When should I use Azure RBAC?
 

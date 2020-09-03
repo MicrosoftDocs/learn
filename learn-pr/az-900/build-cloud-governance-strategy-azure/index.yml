@@ -2,7 +2,7 @@
 uid: learn.build-cloud-governance-strategy-azure
 metadata:
   title: Build a cloud governance strategy on Azure
-  description: Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
+  description: Learn how to access policies, resource locks, and tags, as well as how Azure services such as Azure Policy and Azure Blueprints can help you build a comprehensive cloud governance strategy.
   ms.date: 09/11/2020
   author: tpetchel
   ms.author: thpetche
