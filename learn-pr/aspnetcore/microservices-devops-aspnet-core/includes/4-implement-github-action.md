@@ -1,64 +1,40 @@
-# Exercise - Implement a GitHub Action to build and deploy to ACR and AKS
+In this exercise, you'll implement and test a simple CI/CD pipeline by doing the following:
 
-## Overview
-
-In this exercise you'll implement and test a simple CI/CD pipeline by doing the following:
-
-- Create an Azure Container Registry (ACR) instance
 - Set up permissions to deploy to ACR and AKS from GitHub
 - Create a GitHub Action to implement a simple CI/CD pipeline
-- Modify the SPA application
+- Modify the SPA
 - Update the SPA version in the Helm chart
-- Verify that the changes where deployed to the AKS cluster.
+- Verify that the changes where deployed to the AKS cluster
 - Rollback a deployment
 
-## Create an ACR instance
+## Set up permissions to deploy from GitHub
 
-We'll begin by setting up an ACR instance to deploy the images that AKS will use when deploying the updated microservice(s). That is, for this exercise AKS will pull the initial application images from the initial repository and the updated image from ACR.
+A GitHub Action will be used to deploy to ACR and AKS. You must set up permissions so the GitHub Action agent can connect to Azure. Complete the following steps:
 
-To create the ACR just run the following command from folder `deploy/k8s`:
+1. Run the following command to create a service principal to allow access from GitHub:
 
-```bash
-./create-acr.sh
-```
+    ```azurecli
+    az ad sp create-for-rbac --sdk-auth
+    ```
 
-The script above creates the ACR and grants permission to AKS to pull images from the ACR.
+    A variation of the following output appears:
 
-You should get an output similar to this:
+    <!--TODO: replace image with a JSON block-->
+    ![Output from the script in json format](media/create-sp.png)
 
-![Output from the create-acr script.](media/create-acr.png)
+Copy the whole json output because you'll need this and the credentials for the GitHub Action in next step.
 
-You'll use the values ESHOP_REGISTRY, ESHOP_ACRUSER, and ESHOP_ACRPASSWORD in short.
+1. Add action secrets to your GitHub repository:
 
-## Set up permissions so GitHub can deploy to ACR and AKS
-
-Since a GitHub Action is going to deploy to ACR and AKS you have to set up permissions so the GitHub Action agent can connect to Azure.
-
-### 1. Create a service principal to allow access from GitHub
-
-Execute the following command from the cloud shell:
-
-```bash
-az ad sp create-for-rbac --sdk-auth
-```
-
-You should get an output similar to this:
-
-![Output from the script in json format.](media/create-sp.png)
-
-Copy the whole json output because you'll need this a the credentials for the GitHub Action in next step.
-
-### 2. Add action secrets to your GitHub repo
-
-In the GitHub repository you just forked, go to **Settings > Secrets** and add the following secrets:
+In the GitHub repository you just forked, go to **Settings** > **Secrets** and add the following secrets:
 
 - **AZURE_CREDENTIALS**: Copy paste the output from the previous step.
 
 At this point you should have something like this:
 
-![Image description follows in text.](media/add-github-secrets.png)
+![Image description follows in text](media/add-github-secrets.png)
 
-In the image above you can see that secret named **AZURE_CREDENTIALS** was created and that the value is the json output from the "**az ad sp create-for-rbac**" command.
+In the preceding image, you can see that secret named **AZURE_CREDENTIALS** was created. The value is the JSON output from the `az ad sp create-for-rbac` command.
 
 - **REGISTRY_USERNAME**: The user name to access your Azure Registry Container (use **ESHOP_ACRUSER**'s value).
 
@@ -68,7 +44,7 @@ In the image above you can see that secret named **AZURE_CREDENTIALS** was creat
 
 ### 1. Disable GitHub actions in your repo
 
-The GitHub action you're about to create will be saved to your your repo and will trigger once you save it by pushing to the **develop** branch. To avoid this, you'll begin by disabling actions temporally.
+The GitHub action you're about to create will be saved to your your repo and will trigger once you save it by pushing to the **develop** branch. To avoid this, you'll begin by disabling actions temporarily.
 
 Go to the Settings tab in your repo and disable Actions, as shown in the next image.
 
@@ -123,7 +99,7 @@ on:
 env:
   IMAGE_NAME: webspa
   TAG: linux-latest
-  CONTEXT_PATH: module-05-devops
+  CONTEXT_PATH: .
   DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
   CHART_PATH: deploy/k8s/helm-simple/webspa
   CLUSTER_NAME: YOUR_CLUSTER_NAME
@@ -132,7 +108,6 @@ env:
   IP_ADDRESS: YOUR_CLUSTER_IP
 
 jobs:
-
   build-and-push-docker-image:
     runs-on: ubuntu-latest
     steps:
