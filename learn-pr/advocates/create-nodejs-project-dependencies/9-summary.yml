@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.create-nodejs-project-dependencies.9-summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  author: softchris
+  ms.author: chnoring
+  ms.date: 04/14/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/9-summary.md)]

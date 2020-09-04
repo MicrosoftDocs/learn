@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.numpy-data-science.3-about-arrays
+title: 'NumPy arrays: A specialized data structure for analysis'
+metadata:
+  title: 'NumPy arrays: A specialized data structure for analysis'
+  description: Get a basic understanding of what NumPy arrays are and how they differ from the other Python data structures.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 14
+content: |
+  [!include[](includes/3-about-arrays.md)]

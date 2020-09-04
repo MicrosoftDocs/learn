@@ -1,7 +1,7 @@
 
-You want the external team to collaborate with the internal developer team in a process that's easy and secure.
+You want the external team to collaborate with the internal developer team in a process that's easy and secure.  With Azure Active Directory (Azure AD) business to business (B2B), you can add people from other companies to your Azure AD tenant as guest users. 
 
-With Azure Active Directory (Azure AD) business to business (B2B), you can add people from other companies to your Azure AD tenant as guest users.
+If your organization has multiple Azure AD tenants, you may also want to use Azure AD B2B to give a user in tenant A access to resources in tenant B. Each Azure AD tenant is distinct and separate from other Azure AD tenants and has its own representation of identities and app registrations.
 
 ## Guest user access in Azure AD B2B
 

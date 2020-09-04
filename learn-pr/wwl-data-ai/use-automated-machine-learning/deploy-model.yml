@@ -4,9 +4,9 @@ title: Deploy a model as a service
 metadata:
   title: Deploy a model as a service
   description: "Deploy a model as a service"
-  ms.date: 06/10/2020
+  ms.date: 07/31/2020
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
