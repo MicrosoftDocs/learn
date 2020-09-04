@@ -19,48 +19,58 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
 
     A variation of the following output appears:
 
-    <!--TODO: replace image with a JSON block-->
-    ![Output from the script in json format](media/create-sp.png)
+    ```console
+    Creating a role assignment under the scope of "/subscriptions/<SUBSCRIPTION-ID>"
+    {
+      "clientId": "<CLIENT-ID>",
+      "clientSecret": "<CLIENT-SECRET>",
+      "subscriptionId": "<SUBSCRIPTION-ID>",
+      "tenantId": "<TENANT-ID>",
+      "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
+      "resourceManagerEndpointUrl": "https://management.azure.com/",
+      "activeDirectoryGraphResourceId": "https://graph.windows.net/",
+      "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
+      "galleryEndpointUrl": "https://gallery.azure.com/",
+      "managementEndpointUrl": "https://management.core.windows.net/"
+    }
+    ```
 
-Copy the whole json output because you'll need this and the credentials for the GitHub Action in next step.
+1. Copy the JSON output from the command shell. You'll need this and the credentials for the GitHub Action in next step.
+1. In the GitHub repository you forked, go to **Settings** > **Secrets**.
 
-1. Add action secrets to your GitHub repository:
+### Create secrets
 
-In the GitHub repository you just forked, go to **Settings** > **Secrets** and add the following secrets:
+1. Select the **New secret** button.
+1. Enter `AZURE_CREDENTIALS` and the JSON output you copied in the **Name** and **Value** text boxes, respectively.
 
-- **AZURE_CREDENTIALS**: Copy paste the output from the previous step.
+    At this point you should have something like this:
 
-At this point you should have something like this:
+    :::image type="content" source="../media/4-implement-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/add-github-secrets.png":::
+1. Select the **Add secret** button.
+1. Create two additional secrets representing the username and password for accessing the ACR instance. Run the following command to get the values to be used for the new secrets:
 
-:::image type="content" source="../media/4-implement-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/add-github-secrets.png":::
+    ```bash
+    cat ~/clouddrive/aspnet-learn-temp/config.txt
+    ```
 
-In the preceding image, you can see that secret named **AZURE_CREDENTIALS** was created. The value is the JSON output from the `az ad sp create-for-rbac` command.
-
-- **REGISTRY_USERNAME**: The user name to access your Azure Registry Container (use **ESHOP_ACRUSER**'s value).
-
-- **REGISTRY_PASSWORD**: The password to access your Azure Registry Container (use **ESHOP_ACRPASSWORD**'s value).
+    | Secret name              | Secret value   |
+    |--------------------------|--------------------|
+    | `REGISTRY_USERNAME`      | use the value of `ESHOP_ACRUSER` |
+    | `REGISTRY_PASSWORD`      | use the value of `ESHOP_ACRPASSWORD` |
 
 ## Create a GitHub Action to implement a CI/CD pipeline
 
-### 1. Disable GitHub actions in your repository
+### 1. Create a custom Action
 
-The GitHub Action you're about to create will be saved to your your repository and will trigger once you save it by pushing to the **develop** branch. To avoid this, you'll begin by disabling actions temporarily.
-
-Go to the Settings tab in your repository and disable Actions, as shown in the next image.
-
-:::image type="content" source="../media/4-implement-github-action/disable-actions.png" alt-text="View for the Settings > Action permissions, with the Disable Actions option selected" border="true" lightbox="../media/4-implement-github-action/disable-actions.png":::
-
-### 2. Create a custom action
-
-Click on the Actions tab in your repository and then click on the "**set up a workflow yourself**" link:
+Select the **Actions** tab in your repository and then select the **set up a workflow yourself** link:
 
 :::image type="content" source="../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="View for the Actions tab in the GitHub repository, highlighting the link 'set up an workflow yourself'" border="true" lightbox="../media/4-implement-github-action/set-up-custom-github-workflow.png":::
 
-### 3. Add the action specification
+### 1. Add the action specification
 
-The spec is already included in this document and needs some customization but we'll review it before continuing. It's relatively easy to understand, but we include a general description here, before getting to the actual YAML file:
+The specification is already included in this document and needs some customization but we'll review it before continuing. It's relatively easy to understand, but we include a general description here, before getting to the actual YAML file:
 
-- It's triggered when a commit is pushed to the **develop** branch.
+- It's triggered when a commit is pushed to the **main** branch.
 
 - Defines several variables that are used by the tasks below, there are a few that you have to set before the action can be run:
   - **CONTEXT_PATH** (use the relative path to the solution folder, use "." if it's the same)
@@ -79,7 +89,7 @@ The spec is already included in this document and needs some customization but w
   - **NOTE**: Both of the above steps are standard tasks, taken from [GitHub Action's marketplace](https://github.com/marketplace?type=actions).
 
 - The **deploy-to-aks** job depends on the **build-and-push-docker-image**, runs in **ubuntu-latest** agent, and has five steps:
-  - **Azure Kubernetes set context** that sets the AKS credentials in the agent's `.kube/config` file,
+  - **Azure Kubernetes set context** that sets the AKS credentials in the agent's *.kube/config* file,
   - **Get code from the repository** that checks out the code from the repository,
   - **Helm tool installer** that installs Helm,
   - **Azure Login** that logs in to Azure using the Service Principal's, and
@@ -94,7 +104,8 @@ name: eShop build & deploy
 
 on:
   push:
-    branches: [ develop ]
+    branches-ignore:
+      - '**'
 
 env:
   IMAGE_NAME: webspa
@@ -102,8 +113,8 @@ env:
   CONTEXT_PATH: .
   DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
   CHART_PATH: deploy/k8s/helm-simple/webspa
+  CLUSTER_RESOURCE_GROUP: eshop-learn-rg
   CLUSTER_NAME: YOUR_CLUSTER_NAME
-  CLUSTER_RESOURCE_GROUP: YOUR_RESOURCE_GROUP_NAME
   IP_ADDRESS: YOUR_CLUSTER_IP
   REGISTRY_LOGIN_SERVER: YOUR_ACR_LOGIN_SERVER
 
@@ -158,35 +169,42 @@ jobs:
         helm upgrade --install eshoplearn-webspa --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH , env.CHART_PATH ) }}
 ```
 
-Now copy the above yaml content and paste it into the edit view to move to the next step.
+Now copy the above YAML content and paste it into the edit view to move to the next step.
 
 ## Configure the Action
 
 ### 1. Set the environment variables for the Action
 
-Configure the following values in the action yaml editor view:
+1. Replace the default Action file name of *main.yml* with *build-and-deploy.yml*.
 
-- Action name: **build-and-deploy.yaml**
-- env:
-  - CONTEXT_PATH: (you might probably need to update this one to ".")
-  - CLUSTER_NAME: use the **ESHOP_AKSNAME**'s value you got when creating the ACR
-  - CLUSTER_RESOURCE_GROUP: use **ESHOP_RG**'s value
-  - REGISTRY_LOGIN_SERVER: use **ESHOP_REGISTRY**'s value
-  - IP_ADDRESS: use **ESHOP_LBIP**'s value
+    :::image type="content" source="../media/4-implement-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-implement-github-action/action-file-name.png":::
 
-At this point you should see something like this:
+1. In the Action YAML editor, apply the updates described in the following table to the `env` block. Run the following command to get the necessary values:
 
-:::image type="content" source="../media/4-implement-github-action/configure-github-action.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/configure-github-action.png":::
+    ```bash
+    cat ~/clouddrive/aspnet-learn-temp/config.txt
+    ```
 
-In the preceding image you can see the content of the *build-and-deploy.yaml* file, with the mentioned environment variables set.
+    | Variable name            | Variable value                    |
+    |--------------------------|-----------------------------------|
+    | `CLUSTER_RESOURCE_GROUP` | use the value of `ESHOP_RG`       |
+    | `CLUSTER_NAME`           | use the value of `ESHOP_AKSNAME`  |
+    | `IP_ADDRESS`             | use the value of `ESHOP_LBIP`     |
+    | `REGISTRY_LOGIN_SERVER`  | use the value of `ESHOP_REGISTRY` |
 
-To save the file click on the **Start commit** button.
+    At this point, you should see something like this:
 
-This will create a in the commit in the repository, and you can do it directly to **develop**, as shown next:
+    :::image type="content" source="../media/4-implement-github-action/configure-github-action.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/configure-github-action.png":::
+
+    In the preceding image, you can see the content of the *build-and-deploy.yml* file with the mentioned environment variables set.
+
+1. Select the **Start commit** button to save the Action file.
+
+This will create a commit in the repository. You can commit directly to **main**, as shown next:
 
 :::image type="content" source="../media/4-implement-github-action/commit-action-to-develop.png" alt-text="Commit confirmation popup view, with option 'Commit directly to the develop branch' option selected" border="true" lightbox="../media/4-implement-github-action/commit-action-to-develop.png":::
 
-This GitHub Action definition will be part of the repository from now on. If you want to make any change, you'll just have to update the file locally and push to **develop** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **develop**.
+This GitHub Action definition will be part of the repository from now on. If you want to make any change, you'll just have to update the file locally and push to **develop** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **main**.
 
 ### 2. Enable Actions for your repository
 
@@ -194,17 +212,17 @@ Now you have to enable back Actions in your repository, from the **Settings** ta
 
 :::image type="content" source="../media/4-implement-github-action/enabling-actions.png" alt-text="View for the Settings > Action permissions, with the 'Enable local and third party Actions' option selected" border="true" lightbox="../media/4-implement-github-action/enabling-actions.png":::
 
-The updated action will the be triggered next time a commit is pushed to **develop**. From now on, unless you disable Actions in your repository, the CI/CD pipeline you just created will be run automatically every time the develop branch is updated.
+The updated action will the be triggered next time a commit is pushed to **main**. From now on, unless you disable Actions in your repository, the CI/CD pipeline you just created will be run automatically every time the develop branch is updated.
 
 ## Modify the SPA microservice
 
 So you've just finished creating your first CI/CD pipeline and someone from the marketing department wants to start a campaign for the new discount coupon feature, so the customers can get whatever discount they want, if they just guess the correct codes and nobody has used them before (Somehow they think this is a good idea 😂)
 
-Since you can guess this won't last too long, that is, this is just a proof-of-concept (POC), you're doing the minimum possible changes, right in the **develop** branch:
+Since you can guess this won't last too long, that is, this is just a proof-of-concept (POC), you're doing the minimum possible changes, right in the **main** branch:
 
 ### 1. Add a call out in the home page
 
-Update the *src/Web/WebSPA/Client/src/modules/app.component.html* (line 4) like this:
+Update the *src/Web/WebSPA/Client/src/modules/app.component.html* file (line 4) like this:
 
 ```html
 <header class="esh-app-header" [ngClass]="{'esh-app-header':true, 'esh-app-header--expanded': router.url === '/catalog'}">
@@ -224,7 +242,6 @@ Update the *src/Web/WebSPA/Client/src/modules/app.component.html* (line 4) like 
 <footer class="esh-app-footer">
     ...
 </footer>
-
 ```
 
 ### 2. Update the discount coupon label in the checkout view
@@ -288,10 +305,9 @@ export class OrdersNewComponent implements OnInit {
 ### 4. Update the SPA version in the Helm chart
 
 > **NOTE**
->
 > It's important that you update the app version in the Helm chart, so that the pod is replaced when the chart is deployed to AKS with `helm upgrade`.
 
-Update the version to **1.1.0** in the chart, file *deploy/k8s/helm-simple/webspa/Chart.yaml* (line 21) as shown next:
+Update the version to `1.1.0` in the chart, file *deploy/k8s/helm-simple/webspa/Chart.yaml* (line 21) as shown next:
 
 ```yaml
 apiVersion: v2
@@ -315,7 +331,7 @@ If you click in the **Actions** tab in your repository, you should be able to mo
 
 :::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
 
-In the preceding image you can see the "Build and push Docker images" step running and the log output.
+In the preceding image, you can see the "Build and push Docker images" step running and the log output.
 
 If you monitor your pods using the command `kubectl get pods -w` you should see something like this:
 
