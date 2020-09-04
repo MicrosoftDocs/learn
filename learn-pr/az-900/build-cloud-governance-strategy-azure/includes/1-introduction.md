@@ -18,9 +18,11 @@ Governance is most beneficial when you have:
 
 ## How will Tailwind Traders improve agility while maintaining control?
 
-Tailwind Traders is continuing their migration to the cloud. For their existing datacenter, development and test teams must submit support tickets to request access to virtual machines, storage, and networking components. It can take IT staff up to two weeks to purchase and provision these components.
+Tailwind Traders is continuing their migration to the cloud. For their existing datacenter, development and test teams must submit support tickets to request access to virtual machines, storage, and networking components. It can take IT staff anywhere from two weeks to two months to purchase, provision, and configure these components.
 
-Going forward, Tailwind Traders could enforce standards that prevent teams from directly creating resources on Azure, similar to their existing approach. However, they already know that this reduces team agility and the ability to innovate.
+By working in the cloud, you essentially have immediate access to compute, storage, and networking components. Many kinds of group and users, including people from development, test, operations, and security teams, can potentially have direct access to cloud resources.
+
+Going forward, Tailwind Traders could enforce similar processes that prevent teams from directly creating or configuring resources on Azure, similar to their existing approach where central IT provisions infrastructure. However, they know that this reduces team agility and the ability to innovate. How can they enable innovation while still maintaining control?
 
 In this module, you'll help the team explore ways they can enforce standards while still enabling teams to create and manage the cloud resources they need.
 

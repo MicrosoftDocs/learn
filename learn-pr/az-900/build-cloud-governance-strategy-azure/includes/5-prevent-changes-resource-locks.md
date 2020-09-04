@@ -29,3 +29,11 @@ Although locking helps prevent accidental changes, you can still make changes by
 To modify a locked resource, you must first remove the lock. After you remove the lock, you can apply any action you have permissions to perform. This additional step allows the action to be taken, but helps protect your administrators from doing something they may not have intended to do.
 
 Resource locks apply regardless of RBAC permissions. Even if you are an owner of the resource, you must still remove the lock before you you can perform the blocked activity.
+
+## Combine resource locks with Azure Blueprints
+
+What if a cloud administrator accidentally deletes a resource lock? If the resource lock is removed, its associated resources can be changed or deleted.
+
+To make the protection process more robust, you can combine resource locks with Azure Blueprints. Azure Blueprints enables you to define the set of standard Azure resources that your organization requires. For example, you can define a blueprint that specifies that a certain resource lock must exist. Azure Blueprints can automatically replace the resource lock if that lock is removed.
+
+You'll learn more about Azure Blueprints later in this module.

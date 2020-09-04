@@ -1,6 +1,6 @@
 Now that you've identified your governance and business requirements, how do you ensure that your resources _stay_ compliant? How can you be alerted if a resource's configuration has changed? 
 
-[Azure Policy](https://azure.microsoft.com/services/azure-policy?azure-portal=true) is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules and effects over your resources so that those resources stay compliant with corporate standards.
+[Azure Policy](https://azure.microsoft.com/services/azure-policy?azure-portal=true) is a service in Azure that enables you to create, assign, and manage policies that control or audit your resources. These policies enforce different rules and effects over your resource configurations so that those configurations stay compliant with corporate standards.
 
 ## How does Azure Policy define policies?
 
@@ -81,6 +81,8 @@ Under this initiative, the following policy definitions are included:
     This policy monitors for servers that don't have an installed endpoint protection agent.
 
 In fact, the **Enable Monitoring in Azure Security Center** initiative contains over 100 separate policy definitions.
+
+Azure Policy also includes initiatives that support regulatory compliance standards such as HIPAA and ISO 27001.
 
 ### How do I define an initiative?
 

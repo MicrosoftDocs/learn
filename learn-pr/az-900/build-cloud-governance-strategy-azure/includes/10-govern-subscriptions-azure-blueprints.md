@@ -13,6 +13,8 @@ Azure Blueprints orchestrates the deployment of various resource templates and o
 
 ## Azure Blueprints in action
 
+When you form a cloud center of excellence team or a cloud custodian team, that team can use Azure Blueprints to scale their governance practices throughout the organization.
+
 Implementing a blueprint in Azure Blueprints involves these three steps:
 
 1. Create an Azure Blueprint.
