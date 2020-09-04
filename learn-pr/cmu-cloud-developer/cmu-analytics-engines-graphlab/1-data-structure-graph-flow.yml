@@ -1,0 +1,117 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-graphlab.1-data-structure-graph-flow
+title: Data structure and graph flow
+metadata:
+  title: Data structure and graph flow
+  description: Data structure and graph flow
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 17
+content: |
+  [!include[](includes/1-data-structure-graph-flow.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block question 1   
+# Original course uses interactive GUI not available in YAML. Using sample choices for now.
+# Original course has a text field for progress difference value. For yaml, made choices of possible values. 
+  - content: |
+      Complete the following sentences: <br><br>
+      Graph-parallel problems assume problems are modeled as ____________.<br>
+      Computation in GraphLab is represented as ____________.<br>
+      Data dependencies or communications are represented as ____________.
+    choices:
+    - content: "graphs, vertices, edges"
+      isCorrect: true
+      explanation: "Correct! GraphLab assumes problems are modeled as graphs. Computation is represented as vertices. Data dependencies or communications are represented as edges."
+    - content: "threads, edges, vertices"
+      isCorrect: false
+      explanation: "Incorrect. GraphLab problems aren't explicitly modeled as threads. Computation isn't represented as edges. Data dependencies or communications aren't represented as vertices."
+    - content: "tasks, vertices, edges"
+      isCorrect: false
+      explanation: "Incorrect. GraphLab problems aren't modeled as tasks."
+    - content: "threads, vertices, edges"
+      isCorrect: false
+      explanation: "Incorrect. GraphLab problems aren't modeled as threads."
+
+# Did I Get This block question 2      
+  - content: "What does atom generation entail?"
+    choices:
+    - content: "A graph is partitioned into individual atoms, which are encoded by using some form of binary representation."
+      isCorrect: false
+      explanation: "Incorrect. The atoms are not directly encoded in some binary format."
+    - content: "An atom consists of the actual vertices and edges that belong to a particular partition, which are stored as an adjacency matrix."
+      isCorrect: false
+      explanation: "Incorrect. Graphs are not represented using an adjacency matrix in GraphLab."
+    - content: "A graph is partitioned into individual atoms and is self-contained with instructions on how to generate the vertices and edges that belong to that partition."
+      isCorrect: true
+      explanation: "Correct! An atom in GraphLab is written using the **journal** format, which makes atoms self-contained and easy to manipulate to reflect changes in the graph structure. Thus graphs do not require repartitioning in GraphLab if any changes are made."
+    - content: "A graph is stored in its entirety as an atom and stored on a distributed file system."
+      isCorrect: false
+      explanation: "Incorrect. The graph needs to be partitioned and distributed among several nodes in the cluster."
+
+# Did I Get This block question 3      
+  - content: "What does partition generation entail?"
+    choices:
+    - content: "A graph is partitioned based on the definitions in the atom index file."
+      isCorrect: false
+      explanation: "Incorrect. The atom index is merely a map of the partitions contained in each atom. The partitions can be generated from each atom file."
+    - content: "A graph adjacency matrix is equally partitioned among nodes in the cluster."
+      isCorrect: false
+      explanation: "Incorrect. GraphLab does not use adjacency matrices to represent graphs or partitions."
+    - content: "The commands in an atom's journal are played to generate the partition associated with an atom."
+      isCorrect: true
+      explanation: "Correct! The atom is formatted as a journal, which contains the commands to generate a partition."
+
+# Did I Get This block question 4
+# Quiz uses image "quiz-units-2-and-4-vertices-graph.png"
+# LaTeX dollar sign syntax not supported in 'explanation' property. Using HTML 'sub' subscript syntax.
+  - content: |
+      Assume the following graph: <br><br>
+      <img src=./media/quiz-units-2-and-4-vertices-graph.png></img> <br><br>
+      Assume that the scope of a vertex $v$ in this graph is defined as the immediate neighboring vertices of $v$. <br>
+      Which vertices have the largest scope?
+    choices:
+    - content: "$V_{5}$"
+      isCorrect: false
+      explanation: "Incorrect. V<sub>5</sub> has a scope of 1."
+    - content: "$V_{2}$ and $V_{4}$"
+      isCorrect: false
+      explanation: "Incorrect. V<sub>2</sub> and V<sub>4</sub> each have a scope of 2."
+    - content: "$V_{1}$ and $V_{3}$"
+      isCorrect: true
+      explanation: "Correct! V<sub>1</sub> and V<sub>3</sub> each have a scope of 3."
+    - content: "$V_{6}$"
+      isCorrect: false
+      explanation: "Incorrect. V<sub>6</sub> has a scope of 1."
+
+# Did I Get This block question 5     
+  - content: "Assume a graph partitioning strategy simply divided up a graph vertex-wise, and sends individual vertices (along with their neighboring edges and ghost vertices) to individual machines in a cluster. In which of the following cases will this strategy be suboptimal in terms of work distributed among the machines in a cluster?"
+    choices:
+    - content: "Graphs with a heavily skewed distribution of edges to vertices"
+      isCorrect: true
+      explanation: "Correct! Such graphs will result in some vertices having a large number of edges, which means the machines assigned to process these vertices will be heavily loaded compared to other machines."
+    - content: "Graphs with directed edges"
+      isCorrect: false
+      explanation: "Incorrect. Which of the scenarios above results in a skewed distribution of work per machine in a cluster?"
+    - content: "Graphs with a very large number (> 1 million) of edges"
+      isCorrect: false
+      explanation: "Incorrect. Which of the scenarios above results in a skewed distribution of work per machine in a cluster?"    
+    - content: "Graphs with a very large number (> 1 million) of vertices"
+      isCorrect: false
+      explanation: "Incorrect. Which of the scenarios above results in a skewed distribution of work per machine in a cluster?"
+
+# Did I Get This block question 6      
+# Did I Get This block has only intro statement and no visible graphic      
+# content: "Order the descriptions of the operations in the **initialization phase** of a GraphLab program:"
+#
+
+# Did I Get This block question 7
+# Did I Get This block has only intro statement and no visible graphic      
+# content: "Order the descriptions of the various operations in the **execution phase** of a GraphLab program:"
+#

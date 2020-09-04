@@ -345,6 +345,17 @@
                 "dest": "modules"
             },
             {
+                "src": "cmu-cloud-developer",
+                "files": [
+                    "**.yml",
+                    "**/*.md"
+                ],
+                "exclude": [
+                    "**/includes/**"
+                ],
+                "dest": "modules"
+            },
+            {
                 "files": [
                     "**/*.md",
                     "**/*.yml"

@@ -4,9 +4,9 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/20/2020
+  ms.date: 07/20/2020
   author: wwlpublish
-  ms.author: roberts
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: ""
   questions:
-  - content: "Microsoft Office 365 is an example of?"
+  - content: "Microsoft Skype is an example of which cloud service type?"
     choices:
     - content: "Infrastructure as a Service"
       isCorrect: false

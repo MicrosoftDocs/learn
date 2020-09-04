@@ -28,4 +28,4 @@ The Azure Machine Learning service can auto-generate a model and auto-tune it fo
 
 
 > [!NOTE]
-> A full list of [Artificial Intelligence and Machine Learning services](https://azure.microsoft.com/services?azure-portal=true) is available.
+> A full list of [Artificial Intelligence and Machine Learning services](https://azure.microsoft.com/services?azure-portal=true#ai-machine-learning) is available.

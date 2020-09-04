@@ -3,7 +3,7 @@ uid: learn.wwl.create-machine-learn-models
 metadata:
   title: Create machine learning models
   description: Machine learning is the foundation for predictive modeling and artificial intelligence. Learn some of the core principles of machine learning and how to use common tools and frameworks to train, evaluate, and use machine learning models.
-  ms.date: 06/20/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   This learning path assumes knowledge of basic mathematical concepts. Some experience with Python is also beneficial. To get started with Python, complete the [Take your first steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/) learning path.
 summary: |
   Machine learning is the foundation for predictive modeling and artificial intelligence. Learn the core principles of machine learning and how to use common tools and frameworks to train, evaluate, and use machine learning models.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/create-machine-learning-models.svg
 levels:
 - intermediate
 roles:

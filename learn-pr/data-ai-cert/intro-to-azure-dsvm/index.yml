@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.data-ai.intro-to-azure-dsvm
+hidden: true
 metadata:
   title: Introduction to the Azure Data Science Virtual Machine
   description: Azure provides some pre-configured virtual machine images specifically designed for data science.  Learn how you can use these to get a jump start on your data science work.

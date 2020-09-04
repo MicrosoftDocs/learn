@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.choose-azure-services-sla-lifecycle
+metadata:
+  title: Choose the right Azure services by examining service-level agreements (SLAs) and service lifecycle
+  description: Learn about Azure's service-level agreements (SLAs) and how they can impact your application design decisions. Also see how to access preview services and learn how they impact your planning.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose the right Azure services by examining SLAs and service lifecycle
+summary: |
+  As you move to the cloud, you might ask:
+
+  * What guarantees does Azure provide around uptime and connectivity?
+  * How do preview services impact my production applications?
+
+  Learn about Azure's service-level agreements (SLAs) and how they can impact your application design decisions. Also see how to access preview services and learn how they impact your planning.
+abstract: |
+  After completing this module, you'll be able to:
+
+  * Describe what a service-level agreement (SLA) is and why SLAs are important.
+  * Identify factors, such as the service tier you choose, that can impact an SLA.
+  * Combine SLAs to compute a composite SLA.
+  * Describe the service lifecycle in Azure, including how to access new capabilities that are coming to Azure.
+prerequisites: |
+  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
+iconUrl: /learn/achievements/explore-azure-service-level-agreements.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-owner
+- business-user
+- student
+- technology-manager
+products:
+- azure
+units:
+- learn.choose-azure-services-sla-lifecycle.1-introduction
+- learn.choose-azure-services-sla-lifecycle.2-what-are-service-level-agreements
+- learn.choose-azure-services-sla-lifecycle.3-define-application-sla
+- learn.choose-azure-services-sla-lifecycle.4-design-application-meet-sla
+- learn.choose-azure-services-sla-lifecycle.5-access-preview-services
+- learn.choose-azure-services-sla-lifecycle.6-knowledge-check
+- learn.choose-azure-services-sla-lifecycle.7-summary
+badge:
+  uid: learn.choose-azure-services-sla-lifecycle.badge

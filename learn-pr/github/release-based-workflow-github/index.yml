@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.github.release-based-workflow-github
 metadata:
-  title: "Manage software delivery by using a release based workflow on GitHub - Learn"
+  title: "Manage software delivery by using a release based workflow on GitHub"
   description: Learn to implement a release based workflow on GitHub using project boards, branches, and releases.
   ms.date: 06/26/2020
   author: tpetchel
