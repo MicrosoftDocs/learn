@@ -26,10 +26,10 @@ The default view is shown in the previous image.  You can also select the **Edit
 
 1. Ensure that your weather bot is open in the Bot Framework Composer.
 1. Select the **Bot Responses** menu.
-1. Select the **getWeather entry in the list of actions.
+1. Select the **getWeather** entry in the list of actions.
 1. Move the **Edit mode** slider to the right to enable edit mode.  Your Composer interface should resemble the following image.
 
-:::image type="content" source="../media/edit-bot-responses.png" alt-text="Bot responses panel in edit mode with getWeather selected":::
+   [![Bot responses panel in edit mode with getWeather selected](../media/edit-bot-responses.png)](../media/edit-bot-responses.png#lightbox)
 
 1. To create a template for weather condition responses, copy and paste the following text at the end of the current text in the edit pane.
 

@@ -18,7 +18,7 @@ You can add help to your bot using a dialog. Ensure that you have your weather b
 1. Select **+ Add** and then **Add new trigger on GetWeatherBot**.
 1. Complete the dialog as shown here and select **Submit**.
 
-:::image type="content" source="../media/help-intent.png" alt-text="Entering Intent Recognized, help, and help in the dialog fields for the trigger.":::
+    :::image type="content" source="../media/help-intent.png" alt-text="Entering Intent Recognized, help, and help in the dialog fields for the trigger.":::
 
 1. In the **Authoring canvas**, select the **+** symbol on the newly added trigger.
 1. Select **Dialog management** and then select **Begin a new dialog**.

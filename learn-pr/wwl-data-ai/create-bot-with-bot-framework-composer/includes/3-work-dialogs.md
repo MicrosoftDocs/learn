@@ -17,7 +17,7 @@ When creating a trigger in your dialog, you select from the available trigger ty
 - Dialog events - The base type of triggers are dialog triggers. Almost all events start as dialog events that are related to the "lifecycle" of the dialog. Currently there are four different dialog events triggers in Composer:
 
     - Dialog started (Begin dialog event)
-    - Dialog cancelled (Cancel dialog event)
+    - Dialog canceled (Cancel dialog event)
     - Error occurred(Error event)
     - Reprompt for input(Reprompt dialog event)
 

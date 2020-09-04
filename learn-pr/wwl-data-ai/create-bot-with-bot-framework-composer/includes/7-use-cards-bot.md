@@ -15,8 +15,8 @@ In the next set of exercises, you will add buttons to the weather bot and then e
 ]
 ```
 
->[Tip]
->Ensure that you remove the dash (-) before the text in the **Bot Asks** text area, otherwise you will get an error.
+> [!Tip]
+> Ensure that you remove the dash (-) before the text in the **Bot Asks** text area, otherwise you will get an error.
 
 1. Restart the bot and test in the emulator to see the results of the suggested actions.
 

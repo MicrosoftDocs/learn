@@ -15,7 +15,7 @@ Language Understanding, and the LUIS service, will offer the ability to accept s
 1. Ensure that your weather bot is open in the Bot Framework Composer.
 1. In the **Navigation** pane, select the **GetWeatherBot** item. Ensure that none of the actions are selected.
 
-:::image type="content" source="../media/get-weather-bot-selection.png" alt-text="GetWeatherBot selected in navigation pane":::
+    :::image type="content" source="../media/get-weather-bot-selection.png" alt-text="GetWeatherBot selected in navigation pane":::
 
 1. In the **Properties** pane, select **LUIS** from the drop-down for **Recognizer Type**.
 1. The main dialog is now configured to use a LUIS recognizer as opposed to a regular expression recognizer.
@@ -48,7 +48,7 @@ In this exercise, you will add triggers for each of our current inputs, *weather
 1. Select the **help** trigger, then select the **+** symbol, **Dialog management**, and finally **Begin a new dialog**.
 1. When the action is added to the **help** trigger, select **help** from the **Dialog name** drop-down.
 
-:::image type="content" source="../media/attach-dialog-trigger.png" alt-text="Attaching the help dialog to the help trigger":::
+    :::image type="content" source="../media/attach-dialog-trigger.png" alt-text="Attaching the help dialog to the help trigger":::
 
 1. Repeat the same procedure to attach the **getWeather** and **cancel** dialogs to the proper triggers.
 

@@ -18,7 +18,7 @@ You will also need to install the [Bot Framework Emulator](https://github.com/mi
 
 Once you have the prerequisites installed, and have downloaded and installed the Bot Framework Composer, start the application. You will review some of the key features of the interface to get familiar with how to use it. When you first start the Composer, you will see the Home screen where you begin creating your bot.
 
-:::image type="content" source="../media/home-new-create.png" alt-text="Bot Framework Composer Home screen":::
+[![Bot Framework Composer Home screen](../media/home-new-create.png)](../media/home-new-create.png#lightbox)
 
 The first time you run the application, the product tour is displayed in the lower right corner. Take some time to run through that tour and get a basic understanding of some of the components of the interface. When you have completed all the steps, select the Done button to close it.
 
@@ -57,26 +57,26 @@ The Application settings portion allows you to configure Composer-specific behav
 1. Select **OK**.
 1. The Composer will generate some framework aspects of your bot and then open the bot in the interface.
 
-:::image type="content" source="../media/new-bot.png" alt-text="New bot with Composer":::
+    [![New bot with Composer](../media/new-bot.png)](../media/new-bot.png#lightbox)
 
 1. Under **Filter Dialog**, select **Greeting**.
 1. The designer opens in the middle of the Composer interface with some content already populated. This content in the designer, represents the *ConversationUpdate** activity that is called when a user joins a conversation with the bot. The designer shows that the bot will loop for each item (members added), includes a branch segment that will handle recipient IDs, and then a response item.
 1. You can edit the title of **Greeting** by selecting the word **Greeting** in the properties pane on the right and typing in a new value.  Select the **Greeting** text and change it to **WelcomeUsers**.
 
-:::image type="content" source="../media/change-greeting.png" alt-text="Editing Greeting text in properties pane":::
+    :::image type="content" source="../media/change-greeting.png" alt-text="Editing Greeting text in properties pane":::
 
 1. In the designer pane, select the **Send a response** component.
 1. In the **Properties** pane on the right, change the default text *${WelcomeUser()}*  to **Welcome to our basic bot.**
 1. In the **Designer** pane, locate the **+** symbol just above the circle in the bottom of the diagram and select it.
 
-:::image type="content" source="../media/plus-symbol.png" alt-text="plus symbol at bottom of designer diagram":::
+    :::image type="content" source="../media/plus-symbol.png" alt-text="plus symbol at bottom of designer diagram":::
 
 1. A list of components is displayed.  Select **Ask a question** from the list.
-1. In the designer, select the **Bot Asks (Text) component.
+1. In the designer, select the **Bot Asks (Text)** component.
 1. In the **Properties** pane on the right, enter the text, **Enter your first name** in the **Prompt for text** section.
 1. In the **Properties** pane, select the **User Input** option next to **Bot Asks** and enter **user.name**. The option will set up a variable that you can access later in the bot conversation.
 
-:::image type="content" source="../media/user-input.png" alt-text="User input option with user.name entered":::
+    :::image type="content" source="../media/user-input.png" alt-text="User input option with user.name entered":::
 
 1. Back in the **Designer** pane, select the **+** symbol under the **User Input(Text)** component.
 1. Select the **Send a response** option.
