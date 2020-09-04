@@ -72,7 +72,7 @@ These amounts are cumulative, which means that the duration of multiple differen
 
 ## What are service credits?
 
-A *service credit* is the percentage of the fees you paid that's credited back to you according to Microsoft's claim approval process.
+A *service credit* is the percentage of the fees you paid that are credited back to you according to Microsoft's claim approval process.
 
 An SLA describes how Microsoft responds when an Azure service fails to perform to its specification. For example, you may receive a discount on your Azure bill as compensation when a service fails to perform according to its SLA.
 

@@ -10,7 +10,7 @@ Here are a few factors that Tailwind Traders might consider:
 
 ## Business impact
 
-If the Special Orders application goes down, what would the business impact be? In this case, customers can't place new orders through the store and staff can't to check the status of existing orders. This can make customers unhappy. They'll either need to try again later or possibly go to a competitor.
+If the Special Orders application goes down, what would the business impact be? In this case, customers can't place new orders through the store and staff can't check the status of existing orders. This can make customers unhappy. They'll either need to try again later or possibly go to a competitor.
 
 ## Effect on other business operations
 
@@ -22,7 +22,7 @@ The Special Orders application does not affect other operations. So the majority
 
 One question to consider is whether the availability requirement differs between critical and non-critical time periods. For example, a tax-filing application can't fail during a filing deadline.
 
-For Tailwind Traders, retail stores are not open 24 hours a day, so if the application was down in the middle of the night, the impact would be minimal. However, because Tailwind Traders has retail locations all over the world, they will need to ensure that each location has access to the service during its retail hours.
+For Tailwind Traders, retail stores are not open 24 hours a day, so if the application were down in the middle of the night, the impact would be minimal. However, because Tailwind Traders has retail locations all over the world, they will need to ensure that each location has access to the service during its retail hours.
 
 ## What does the team decide?
 
