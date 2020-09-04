@@ -14,7 +14,7 @@ In Q#, we will store the number of vertices `nVertices` as an integer, and the l
 
 The structure of our example graph can be represented as follows:
 
-:::code language="qsharp" source="code/4-1-graph-description.qs" highlight="6":::
+:::code language="qsharp" source="code/4-1-graph-description.qs":::
 
 ## Representing the vertex coloring
 
@@ -102,7 +102,7 @@ $$|00\rangle\_{c0} \otimes \frac12\big(|00\rangle + |10\rangle + |01\rangle + |1
 
 > Remember that `DumpRegister` indices are encoded in little endian, so the index `1` corresponds to bit string `100`, with the least significant bit stored first.
 
-After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change: the amplitude of the $|00\rangle\_{c1} \otimes |0\rangle\_{target}$ state becomes 0, and the amplitude of the $|00\rangle\_{c1} \otimes |1\rangle\_{target}$ state becomes 0.25. In fact, these two amplitudes are swapped as the result of applying this check.
+After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change: the amplitude of the $|00\rangle\_{c1} \otimes |0\rangle\_{target}$ state becomes 0, and the amplitude of the $|00\rangle\_{c1} \otimes |1\rangle\_{target}$ state becomes $0.25$. In fact, these two amplitudes are swapped as the result of applying this check.
 
 Indeed, since the colors encoded in the state $|00\rangle\_{c0} \otimes |00\rangle\_{c1} \otimes |0\rangle\_{target}$ are equal, the state of the `target` qubit for this basis state gets flipped, giving us the resulting state
 
@@ -135,8 +135,10 @@ Here is the output of this code:
 The coloring is valid
 ```
 
-You can experiment with the colorings and the graph structures to see which ones are deemed valid and invalid; an example of invalid coloring for this graph would be `[false, false, true, false, false, true, true, true, true, true]`, which describes a graph with vertices 3 and 4 assigned the same color. 
-You can also modify the code to run on superpositions of inputs and see what happens. 
+#### Bonus exercises
+
+* Experiment with the colorings and the graph structures to see which ones are deemed valid and invalid. An example of invalid coloring for this graph would be `[false, false, true, false, false, true, true, true, true, true]`, which describes a graph with vertices 3 and 4 assigned the same color. 
+* Modify the code to run on superpositions of inputs and see what happens. 
 
 
 ### Step 3. Convert amplitude encoding into phase encoding
@@ -174,6 +176,6 @@ The state of qubits c1 after the equality check:
 ∣3❭:     0.500000 +  0.000000 i  ==     *****                [ 0.250000 ]     --- [  0.00000 rad ]
 ```
 
-You can see that indeed, the amplitude of the $|00\rangle$ state changed to $-\frac{1}{2}$, so now its relative phase compared to the other basis states is $-1$.
+You can see that indeed, the amplitude of the $|00\rangle$ state changed to $-0.5$, so now its relative phase compared to the other basis states is $-1$.
 
 Now you know how to build a complete quantum oracle for a graph coloring problem! In the next unit, we will finally learn Grover's search algorithm itself.
