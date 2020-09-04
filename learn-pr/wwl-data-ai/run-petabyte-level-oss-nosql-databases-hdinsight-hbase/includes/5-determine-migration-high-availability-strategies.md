@@ -15,23 +15,23 @@ Run the below steps in sequence to backup/migrate a HDInsight cluster HDInsight 
 1. If this for a DR scenario the data can be simply stored in a different region periodically for future use in the eventuality of a disaster.  
 1. If this a for a HBase migration the data can be copied to the /hbase folder freshly created HDInsight HBase cluster. 
 
-More information on the HBase hbase folder copy process can be found in the [HDInsight hbase folder Copy documentation](https://docs.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-backup-replication#snapshots). 
+More information on the HBase hbase folder copy process can be found in the [HDInsight hbase folder Copy documentation](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-backup-replication#snapshots). 
 
 ## Export and Import
 
-Export and Import offers better control of backup process and you can choose to backup specific tables instead of the entire folder. This process uses the Export utility of the HBase cluster to export selected tables to the local storage that is attached to the cluster. Post export the tables can then me imported from the target cluster. More information  on working with Export and Import can be found in the [HDInsight HBase Export and Import documentation](https://docs.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-backup-replication#export-then-import).
+Export and Import offers better control of backup process and you can choose to backup specific tables instead of the entire folder. This process uses the Export utility of the HBase cluster to export selected tables to the local storage that is attached to the cluster. Post export the tables can then me imported from the target cluster. More information  on working with Export and Import can be found in the [HDInsight HBase Export and Import documentation](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-backup-replication#export-then-import).
 
 
 ## Copy Tables
 
-Copy tables is efficient copy mechanism and enables fine grained control over full or partial table copy process and uses the HBase read and write paths to copy part or all of the table row by row from source to destination. The source and destination clusters can be the same or different clusters. More information on working with Copy Tables can be found in [HDInsight HBase Copy Tables documentation](https://docs.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-backup-replication#copy-tables). 
+Copy tables is efficient copy mechanism and enables fine grained control over full or partial table copy process and uses the HBase read and write paths to copy part or all of the table row by row from source to destination. The source and destination clusters can be the same or different clusters. More information on working with Copy Tables can be found in [HDInsight HBase Copy Tables documentation](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-backup-replication#copy-tables). 
 
 
 ## Snapshots
 
-Snapshots can enable point in time backups to enable table roll back requirements. A snapshot is not a copy of the actual table data but is metadata information that can help admins to go back to a previous state of the tables. Snapshots operate at an HDFS level and do not involve Master and Region servers this optimizing cluster resources. More information on working with Snapshots can be found in [HDInsight HBase Snapshots documentation](https://docs.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-backup-replication#snapshots).
+Snapshots can enable point in time backups to enable table roll back requirements. A snapshot is not a copy of the actual table data but is metadata information that can help admins to go back to a previous state of the tables. Snapshots operate at an HDFS level and do not involve Master and Region servers this optimizing cluster resources. More information on working with Snapshots can be found in [HDInsight HBase Snapshots documentation](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-backup-replication#snapshots).
 
 ## Replication 
 
-HBase replication feature can be used to ensure high availability and business continuity during a disaster. Data is copied data between clusters in an asynchronous manner and replications can work within regions and between Azure regions ensuring global HADR models. More information on working with HBase Replication can be found in [HDInsight HBase Replication documentation](https://docs.microsoft.com/en-us/azure/hdinsight/hbase/apache-hbase-backup-replication#replication). 
+HBase replication feature can be used to ensure high availability and business continuity during a disaster. Data is copied data between clusters in an asynchronous manner and replications can work within regions and between Azure regions ensuring global HADR models. More information on working with HBase Replication can be found in [HDInsight HBase Replication documentation](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-backup-replication#replication). 
 

@@ -1,24 +1,24 @@
-The **Yahoo! Cloud Serving Benchmark** (YCSB) is an open-source specification and program suite for evaluating relative performance of NoSQL database management systems. In this exercise you will run the benchmark to the performance of two HBase clusters one of which is using accelerated writes feature. You task is to understand the performance differences between the two options.
+The **Yahoo! Cloud Serving Benchmark** (YCSB) is an open-source specification and program suite for evaluating relative performance of NoSQL database management systems. In this exercise, you will run the benchmark to the performance of two HBase clusters one of which is using accelerated writes feature. Your task is to understand the performance differences between the two options.
 Exercise Prerequisites
 
-If you wish to perform the steps in the exercise, please ensure you have the below:
+If you wish to perform the steps in the exercise, ensure you have the below:
 
 - Azure subscription with authorization to create an HDInsight HBase cluster.
-- Access to an SSH client like Putty(Windows) /Terminal(Macbook)
+- Access to an SSH client like Putty(Windows) /Terminal(Mac book)
 
 ## Provision HDInsight HBase cluster with Azure Management Portal
 
 To provision HDInsight HBase with the new experience on Azure Management Portal, perform the below steps.
 
-1. Go to the [Azure Portal](http://portal.azure.com). Login using your azure account credentials.
+1. Go to the [Azure portal](http://portal.azure.com). Log in using your Azure account credentials.
 
 	![Logging into the Azure Portal.](../media/04-img23.png)
 
-1. We would start with creating a **Premium Block Blob Storage Account**. From the New Page , click on **Storage Account**.
+1. We would start with creating a **Premium Block Blob Storage Account**. From the New Page, click on **Storage Account**.
 
 	![Create a storage account in the Azure Portal.](../media/04-img24.png)
 
-1. In the Create Storage Account page populate the below fields
+1. In the Create Storage Account page, populate the below fields
 
 	- **Subscription**: Should be autopopulated with the subscription details
 	- **Resource Group**: Enter a resource group for holding your HDInsight HBase deployment
@@ -26,14 +26,14 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- **Region**: Enter the name of the region of deployment(ensure that cluster and storage account are in the same region)
 	- **Performance**: Premium
 	- **Account kind**: BlockBlobStorage
-	- **Replication**: Locally-redundant storage(LRS)
-	- **Cluster login username**:Enter username for cluster administrator(default:admin)
+	- **Replication**: Locally redundant storage(LRS)
+	- **Cluster log in username**: Enter username for cluster administrator(default:admin)
 
 		![Create storage account screen in the Azure Portal.](../media/04-img25.png)
 
 1. Leave all other tabs at default and click on **Review + create** to create the storage account.
 
-1. After the storage account is created click on **Access Keys** on the left and copy **key1**. We would use this later in the cluster creation process.
+1. After the storage account is created, click on **Access Keys** on the left and copy **key1**. We would use this later in the cluster creation process.
 
 	![Storage account Access Keys in the Azure Portal.](../media/04-img26.png)
 
@@ -41,17 +41,17 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 	![Create Azure HDInsight in the Azure Portal.](../media/04-img27.png)
 
-1. On the Basics Tab populate the below fields towards the creation of an HBase cluster.
+1. On the Basics Tab, populate the below fields towards the creation of an HBase cluster.
 	- **Subscription**: Should be autopopulated with the subscription details
 	- **Resource Group**: Enter a resource group for holding your HDInsight HBase deployment
 	- **Cluster Name**: Enter the cluster name. A green tick will appear if the cluster name is available.
 	- **Region**: Enter the name of the region of deployment
 	- **Cluster Type**: Cluster Type - HBase. Version- HBase 2.0.0(HDI 4.0)
-	- **Cluster login username**:Enter username for cluster administrator(default:admin)
-	- **Cluster login password**:Enter password for cluster login(default:sshuser)
-	- **Confirm Cluster login password**: Confirm the password entered in the last step
-	- **Secure Shell(SSH) username**: Enter the SSH login user (default:sshuser)
-	- **Use cluster login password for SSH**: Check the box to use the same password for both SSH logins and Ambari Logins etc.
+	- **Cluster log in username**: Enter username for cluster administrator(default:admin)
+	- **Cluster log in password**: Enter password for cluster login(default:sshuser)
+	- **Confirm Cluster log in password**: Confirm the password entered in the last step
+	- **Secure Shell(SSH) username**: Enter the SSH log in user (default:sshuser)
+	- **Use cluster log in password for SSH**: Check the box to use the same password for both SSH logins and Ambari Logins etc.
 
 		![Define Azure HDInsight settings in the Azure Portal.](../media/04-img28.png)
 
@@ -59,7 +59,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- **Primary Storage Type**: Azure Storage.
 	- **Selection Method**: Choose Radio button Use access key
 	- **Storage account name**: Enter the name of the Premium Block Blob storage account created earlier
-	- **Access Key**:Enter the key1 access key you copied earlier
+	- **Access Key**: Enter the key1 access key you copied earlier
 	- **Container**: HDInsight should propose a default container name. You could either choose this or create a name of your own.
 
 		![Define Storage settings for Azure HDInsight in the Azure Portal.](../media/04-img29.png)
@@ -72,7 +72,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 1. In the **Configuration + pricing** tab, note the **Node configuration** section now has a line Item titled **Premium disks per worker node**.
 
-1. Choose the Region node to **10** and **Node Size** to **DS14v2**(you could chooser smaller numbers of VMs and smaller VM SKU but ensure that the both clusters have identical number of nodes and VM SKU to ensure parity in comparison)
+1. Choose the Region node to **10** and **Node Size** to **DS14v2**(you could chooser smaller numbers of VMs and smaller VM SKU but ensure that both the clusters have identical number of nodes and VM SKU to ensure parity in comparison)
 
 	![Configuring nodes in Azure HDInsight in the Azure Portal.](../media/04-img31.png)
 
@@ -84,15 +84,15 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 1. Click **Create** to start deploying the first cluster with Accelerated Writes.
 
-1. Repeat the same steps again to create a second HDInsight HBase cluster , this time without Accelerated writes. Note the below changes
+1. Repeat the same steps again to create a second HDInsight HBase cluster, this time without Accelerated writes. Note the below changes
 	- Use a normal blob storage account that is recommended by default
 	- Keep the Enable Accelerated Writes checkbox unchecked on the Storage tab.
 
 		![Create Azure HDInsight in the Azure Portal.](../media/04-img33.png)
 
-1. In the **Configuration + pricing** tab for this cluster , note that the Node configuration section does NOT have a **Premium disks per worker node** line item.
+1. In the **Configuration + pricing** tab for this cluster, note that the Node configuration section does NOT have a **Premium disks per worker node** line item.
 
-1. Choose the Region node to **10** and Node Size to **D14v2**.(Also note the lack of DS series VM types like earlier). (As earlier you could chooser smaller numbers of VMs and smaller VM SKU but ensure that the both clusters have identical number of nodes and VM SKU to ensure parity in comparison)
+1. Choose the Region node to **10** and Node Size to **D14v2**.(Also note the lack of DS series VM types like earlier). (you could chooser smaller numbers of VMs and smaller VM SKU but ensure that both the clusters have identical number of nodes and VM SKU to ensure parity in comparison)
 
 	![Configure nodes on Azure HDInsight in the Azure Portal.](../media/04-img34.png)
 
@@ -103,18 +103,18 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 ##  Running YCSB tests
 
-1. Login to HDInsight shell
+1. Log in to HDInsight shell
 	- Steps to set up and run YCSB tests on both clusters are identical.
-	- On the cluster page on the Azure portal , navigate to the SSH + Cluster login and use the Hostname and SSH path to ssh into the cluster. The path should have below format.
+	- On the cluster page on the Azure portal , navigate to the SSH + Cluster log in and use the Hostname and SSH path to ssh into the cluster. The path should have below format.
 	- ssh <sshuser>@<clustername>.azurehdinsight.net 
 
 		![Connecting to the Azure HDInsight cluster in the Azure Portal.](../media/04-img35.png)
 
 
 1. Create the Table
-	- Run the below steps to create the HBase tables which will be used to load the datasets
+	- Run the below steps to create the HBase tables, which will be used to load the datasets
 	- Launch the HBase Shell and set a parameter for the number of table splits. Set the table splits (10 * Number of Region Servers)
-	- Create the HBase table which would be used to run the tests
+	- Create the HBase table, which would be used to run the tests
 	- Exit the HBase shell
 
 		```CMD
@@ -143,7 +143,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 1. Run a write heavy workload in both clusters
 
 	- Use the below command to initiate a write heavy workload with the below parameters
-		- **workloads/workloada** : Indicates that the append workload workloada needs to be run
+		- **workloads/workloada** : Indicates that the append workload/workloada needs to be run
 		- **table**: Populate the name of your HBase table created earlier
 		- **columnfamily**: Populate the value of the HBase columfamily name from the table you created
 		- **recordcount**: Number of records to be inserted( we use 1 Million)
@@ -251,23 +251,23 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 1. Compare the results:
 
-|Parameter | Unit | With Accelerated writes | Without Accelerated writes |
-|-|-|-|-|
-|[OVERALL], RunTime(ms) | Milliseconds |567478 | 2574273 |
-|[OVERALL], Throughput(ops/sec) | Operations/sec | 1770 | 388 |
-|[INSERT], Operations |	# of Operations | 1000000 | 1000000 |
-|[INSERT], 95thPercentileLatency(us) | Microseconds | 3623 | 18751 |
-|[INSERT], 99thPercentileLatency(us) | Microseconds | 7375 | 33759 |
-|[INSERT], Return=OK | # of records | 1000000 | 1000000 |
+	|Parameter | Unit | With Accelerated writes | Without Accelerated writes |
+	|-|-|-|-|
+	|[OVERALL], RunTime(ms) | Milliseconds |567478 | 2574273 |
+	|[OVERALL], Throughput(ops/sec) | Operations/sec | 1770 | 388 |
+	|[INSERT], Operations |	# of Operations | 1000000 | 1000000 |
+	|[INSERT], 95thPercentileLatency(us) | Microseconds | 3623 | 18751 |
+	|[INSERT], 99thPercentileLatency(us) | Microseconds | 7375 | 33759 |
+	|[INSERT], Return=OK | # of records | 1000000 | 1000000 |
 
 1. Some example observations that can be made of the comparisons include:
 
 	- [OVERALL], RunTime(ms) : Total execution time in milliseconds
 	- [OVERALL], Throughput(ops/sec) : Number of operations/sec across all threads
-	- [INSERT], Operations: Total number of insert operations,with associated average, min, max, 95th and 99th percentile latencies below
+	- [INSERT], Operations: Total number of insert operations, with associated average, min, max, 95th and 99th percentile latencies below
 	- [INSERT], 95thPercentileLatency(us): 95% of INSERT operations have a data point below this value
 	- [INSERT], 99thPercentileLatency(us): 99% of INSERT operations have a data point below this value
-	- [INSERT], Return=OK: Record OK indicates that all INSERT operations were succesfull with the count alongside
+	- [INSERT], Return=OK: Record OK indicates that all INSERT operations were succesful with the count alongside
 
 
 1. Consider trying out a range of other work loads to make comparisons. Examples include:

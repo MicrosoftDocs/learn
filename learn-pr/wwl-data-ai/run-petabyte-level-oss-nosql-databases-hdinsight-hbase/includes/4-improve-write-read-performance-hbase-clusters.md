@@ -24,7 +24,7 @@ During cluster creation, assign the Premium Block Blob as the Primary Storage ac
 
 ![Mapping the storage account in a HDInsight Cluster.](../media/04-img08.png)
 
-To learn best practices around HDInsight HBase performance management page go to the [Troubleshooting HBase performance issues](https://docs.microsoft.com/en-us/azure/hdinsight/hbase/troubleshoot-hbase-performance-issues) page.
+To learn best practices around HDInsight HBase performance management page go to the [Troubleshooting HBase performance issues](https://docs.microsoft.com/azure/hdinsight/hbase/troubleshoot-hbase-performance-issues) page.
 
 ### Write performance
 
