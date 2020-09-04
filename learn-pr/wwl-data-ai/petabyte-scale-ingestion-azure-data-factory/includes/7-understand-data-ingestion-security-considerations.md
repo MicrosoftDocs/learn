@@ -9,7 +9,7 @@ When using Azure-SSIS Integration runtime, you are given the option to join a vi
 
 ### Use services to detect and prevent intrusions
 You can deny communication with known IP addresses by enabling the distributed denial of service (DDoS) protection standard on the virtual networks on which the integration runtime in hosted. In addition, you can use the Azure Security Center Integrated Threat Intelligence to deny communications with known malicious or unused Internet IP addresses.
-Azure Firewall with Threat Intelligence can be used to control network access. If intrusion detection and/or prevention based on payload inspection is required, you can redirect traffic to a firewall appliance. via Azure ExpressRoute force tunnelling or to a Network Virtual Appliance (NVA) from Azure Marketplace that supports this capability
+Azure Firewall with Threat Intelligence can be used to control network access. If intrusion detection and/or prevention based on payload inspection is required, you can redirect traffic to a firewall appliance. via Azure ExpressRoute force tunneling or to a Network Virtual Appliance from Azure Marketplace that supports this capability
 
 ### Simplify the management of security rules using network service tags
 Virtual networks can be configured with service tags. Service tags enables you to group together IP address prefixes from a given Azure service for administrative purposes.  Using Service tags, you can create network security rules in Network Security Groups based on service tags to reduce the administrative overheads. By specifying the service tag name (e.g., DataFactoryManagement) in the appropriate source or destination field of a rule, you can allow or deny inbound traffic for the corresponding service.
@@ -19,12 +19,12 @@ Virtual networks can be configured with service tags. Service tags enables you t
 ### Administrative accounts
 The administrative accounts that are used to work and manage Azure Data Factory should be dedicated, known accounts that are monitored and managed on a regular basis to ensure they are not compromised. To create Data Factory instances, the user account that you use to sign in to Azure must be a member of the contributor or owner role, or an administrator of the Azure subscription. For high security environments, consider using dedicated machines for administrative access for any ADF administrative tasks
 
-### Use Active Directory to make use of Single Sign-on
+### Use Active Directory to make use of single sign-on
 Register service principals within Azure Active Directory to take advantage of token management so that your Azure Data Factory service streamline its authentication across Azure resources. A data factory can be associated with a managed identity for Azure resources that represents the specific data factory. You can use this managed identity for Azure SQL Database authentication. The designated factory can access and copy data from or to your database by using this identity.
 
 ## Data protection
 
-### Sensitive Data
+### Sensitive data
 There are a number of considerations that you should account for when working with sensitive data, including:
 -	Maintaining a list of the data stores that contain sensitive information
 -	Isolate the systems that store or process sensitive information

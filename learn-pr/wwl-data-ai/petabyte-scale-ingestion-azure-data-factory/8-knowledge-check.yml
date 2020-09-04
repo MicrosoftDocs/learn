@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/05/2020
+  ms.date: 09/06/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "Move & Transform"
       isCorrect: true
-      explanation: "Correct. The Move & Transform section contains activities that are specific to Azure Data Factory coying data and defining data flows."
+      explanation: "Correct. The Move & Transform section contains activities that are specific to Azure Data Factory copying data and defining data flows."
     - content: "Batch Service"
       isCorrect: false
       explanation: "Incorrect. The Batch Service section contains activities that are specific to Azure Data Factory interacting with Azure Batch activities."
@@ -39,7 +39,7 @@ quiz:
     choices:
     - content: "Azure-SSIS Integration Runtime"
       isCorrect: false
-      explanation: "Incorrect. The Azure-SSIS Integration Runtime is used when you need to intergrate deployed SSIS packages into Azure Data Factory."
+      explanation: "Incorrect. The Azure-SSIS Integration Runtime is used when you need to integrate deployed SSIS packages into Azure Data Factory."
     - content: "Self-Hosted Integration Runtime"
       isCorrect: true
       explanation: "Correct. A self-hosted integration runtime can run copy activities between a cloud data store and a data store in a private network. It also can dispatch transform activities against compute resources in an on-premises network or an Azure virtual network."

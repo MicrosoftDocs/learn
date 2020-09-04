@@ -56,7 +56,7 @@ With the source data defined, then you will define the sink into which the data 
 
     ![Defining the dataset](../media/define-dataset.png)
 
-1. In **Set Properties** sidenav, give your dataset an understandable **name** and click on the **Linked Service dropdown**. If you have not created your ADLS Linked Service, select **New**. 
+1. In **Set Properties** side nav, give your dataset an understandable **name** and click on the **Linked Service dropdown**. If you have not created your ADLS Linked Service, select **New**. 
 
     ![Setting the dataset properties](../media/dataset-properties.png)
 

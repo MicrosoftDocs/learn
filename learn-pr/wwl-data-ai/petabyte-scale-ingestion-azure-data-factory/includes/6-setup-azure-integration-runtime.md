@@ -11,7 +11,7 @@ An Azure integration runtime is capable of:
 
 You can set a certain location of an Azure IR, in which case the data movement or activity dispatch will happen in that specific region. If you choose to use the auto-resolve Azure IR which is the default, ADF will make a best effort to automatically detect your sink and source data store to choose the best location either in the same region if available or the closest one in the same geography for the copy activity. For anything else, it will use the IR in the data factory region. Azure Integration Runtime also has support got virtual networks. 
 
-## Create and configure Azure Integration Runtime
+## Create and configure Azure integration runtime
 
 Use the following steps to create an Azure IR using Azure Data Factory UI.
 
