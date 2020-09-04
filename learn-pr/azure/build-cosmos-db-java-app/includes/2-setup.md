@@ -68,7 +68,7 @@ The terminal commands in this lab assume a Windows OS.
 
     and confirm that the application logs
 
-    ```bash
+    ```output
     INFO: Hello World.
     ```
 
@@ -126,7 +126,7 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
 
     and confirm that the app still logs
 
-    ```bash
+    ```output
     INFO: Hello World.
     ```
 
