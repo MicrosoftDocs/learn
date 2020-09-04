@@ -71,4 +71,3 @@ In this step, you'll open the verbose logs that were saved into your Azure Blob 
 1. There should be several occurrences of this message in the log.
 
 1. Close the log file.
-1. 
