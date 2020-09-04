@@ -34,9 +34,7 @@ Here's how to see what preview service are available. You can follow along if ha
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
 1. Select **Create a resource**.
 1. Enter *preview* in the search box and select <kbd>Enter</kbd>.
-1. Select a service to learn more about it.
-
-    You can also bring up the service if you'd like to try it out.
+1. Select a service to learn more about it. You can also launch the service if you'd like to try it out.
 
 ## How can I access new features for an existing service?
 
