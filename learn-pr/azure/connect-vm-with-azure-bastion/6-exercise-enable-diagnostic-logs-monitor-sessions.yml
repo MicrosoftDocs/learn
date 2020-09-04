@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-vm-with-azure-bastion.exercise-enable-diagnostic-logs-monitor-sessions
+title: Exercise - Enable diagnostic logs and monitor remote sessions
+metadata:
+  title: Exercise - Enable diagnostic logs and monitor remote sessions
+  description: Exercise - Enable diagnostic logs and monitor remote sessions
+  ms.date: 09/04/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 25
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/6-exercise-enable-diagnostic-logs-monitor-sessions.md)]
