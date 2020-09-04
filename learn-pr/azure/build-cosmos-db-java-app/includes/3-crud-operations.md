@@ -27,7 +27,6 @@ Once you have those classes created to represent your users, you'll create new u
     import lombok.AllArgsConstructor;
     import lombok.Data;
     import lombok.NoArgsConstructor;
-
     import java.util.ArrayList;
     import java.util.List;
 
@@ -41,7 +40,7 @@ Once you have those classes created to represent your users, you'll create new u
         private String firstName = "";
         private String email = "";
         private String dividend = "";
-        private ShippingPreference shippingPreference = new ShippingPreference();
+        private List<ShippingPreference> shippingPreference = new ArrayList<ShippingPreference>();
         private List<OrderHistory> orderHistory = new ArrayList<OrderHistory>();
         private List<CouponsUsed> coupons = new ArrayList<CouponsUsed>();
     }
@@ -82,23 +81,90 @@ Once you have those classes created to represent your users, you'll create new u
     }
     ```
 
-1. Then, return to the **BasicOperations** method and add the following to the end of that method, *before* the `client.close()` call.
+1. Then, return to the **basicOperations** method and add the following to the end of that method, *before* the `client.close()` call.
 
     ```java
-    User maxaxam = new User();
+    User maxaxam = new User(
+            "1",
+            "maxaxam",
+            "Axam",
+            "Max",
+            "maxaxam@contoso.com",
+            "2.0",
+            new ArrayList<ShippingPreference>(Arrays.asList(
+            new ShippingPreference(
+                            1,
+                            "90 W 8th St",
+                            "",
+                            "New York",
+                            "NY",
+                            "10001",
+                            "USA"
+            )
+            )),
+            new ArrayList<OrderHistory>(Arrays.asList(
+                    new OrderHistory(
+                            "1000",
+                            "08/17/2018",
+                            "52.49"
+                    )
+            )),
+            new ArrayList<CouponsUsed>(Arrays.asList(
+                    new CouponsUsed(
+                            "A7B89F"
+                    )
+            ))
+    );
 
-    createUserDocumentIfNotExists(maxaxam);
+    User nelapin = new User(
+            "2",
+            "nelapin",
+            "Pindakova",
+            "Nela",
+            "nelapin@contoso.com",
+            "8.50",
+            new ArrayList<ShippingPreference>(Arrays.asList(
+                    new ShippingPreference(
+                    1,
+                    "505 NW 5th St",
+                    "",
+                    "New York",
+                    "NY",
+                    "10001",
+                    "USA"
+            ),
+                    new ShippingPreference(
+                            2,
+                            "505 NW 5th St",
+                            "",
+                            "New York",
+                            "NY",
+                            "10001",
+                            "USA"
+                    )
+            )),
+            new ArrayList<OrderHistory>(Arrays.asList(
+                    new OrderHistory(
+                            "1001",
+                            "08/17/2018",
+                            "105.89"
+                    )
+            )),
+            new ArrayList<CouponsUsed>(Arrays.asList(
+                    new CouponsUsed(
+                            "Fall 2018"
+                    )
+            ))
+    );
 
-    User nelapin = new User();
-
-    createUserDocumentIfNotExists(nelapin);
+    createUserDocumentsIfNotExist(new ArrayList(Arrays.asList(maxaxam,nelapin)));
     ```
 
 1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
     mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
+    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"
     ```
 
     The terminal will display output as the application creates each new user document.
