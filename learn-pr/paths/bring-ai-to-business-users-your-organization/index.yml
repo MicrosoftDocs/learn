@@ -3,10 +3,10 @@ uid: learn.wwl.bring-ai-to-business-users-your-organization
 metadata:
   title: Bring AI to business users in your organization
   description: Learn how to implement machine learning with this business development course in Microsoft business school
-  ms.date: 06/10/2020
+  ms.date: 08/05/2020
   author: wwlpublish
-  ms.author: v-admene
-  ms.topic: learning-azure
+  ms.author: japerena
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Bring AI to business users in your organization
 prerequisites: |
