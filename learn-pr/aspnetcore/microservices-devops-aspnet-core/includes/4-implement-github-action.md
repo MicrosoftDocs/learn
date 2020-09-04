@@ -32,7 +32,7 @@ In the GitHub repository you just forked, go to **Settings** > **Secrets** and a
 
 At this point you should have something like this:
 
-![Image description follows in text](media/add-github-secrets.png)
+:::image type="content" source="../../media/4-implement-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/add-github-secrets.png":::
 
 In the preceding image, you can see that secret named **AZURE_CREDENTIALS** was created. The value is the JSON output from the `az ad sp create-for-rbac` command.
 
@@ -42,23 +42,23 @@ In the preceding image, you can see that secret named **AZURE_CREDENTIALS** was 
 
 ## Create a GitHub Action to implement a CI/CD pipeline
 
-### 1. Disable GitHub actions in your repo
+### 1. Disable GitHub actions in your repository
 
-The GitHub action you're about to create will be saved to your your repo and will trigger once you save it by pushing to the **develop** branch. To avoid this, you'll begin by disabling actions temporarily.
+The GitHub action you're about to create will be saved to your your repository and will trigger once you save it by pushing to the **develop** branch. To avoid this, you'll begin by disabling actions temporarily.
 
-Go to the Settings tab in your repo and disable Actions, as shown in the next image.
+Go to the Settings tab in your repository and disable Actions, as shown in the next image.
 
-![View for the Settings > Action permissions, with the Disable Actions option selected.](media/disable-actions.png)
+:::image type="content" source="../../media/4-implement-github-action/disable-actions.png" alt-text="View for the Settings > Action permissions, with the Disable Actions option selected" border="true" lightbox="../../media/4-implement-github-action/disable-actions.png":::
 
 ### 2. Create a custom action
 
 Click on the Actions tab in your repository and then click on the "**set up a workflow yourself**" link:
 
-![View for the Actions tab in the GitHub repo, highlighting the link "set up an workflow yourself".](media/set-upg-custom-github-workflow.png)
+:::image type="content" source="../../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="View for the Actions tab in the GitHub repository, highlighting the link 'set up an workflow yourself'" border="true" lightbox="../../media/4-implement-github-action/set-up-custom-github-workflow.png":::
 
 ### 3. Add the action specification
 
-The spec is already included in this document and needs some customization but we'll review it before continuing. It's relatively easy to understand, but we include a general description here, before getting to the actual yaml file:
+The spec is already included in this document and needs some customization but we'll review it before continuing. It's relatively easy to understand, but we include a general description here, before getting to the actual YAML file:
 
 - It's triggered when a commit is pushed to the **develop** branch.
 
@@ -74,20 +74,20 @@ The spec is already included in this document and needs some customization but w
   - **deploy-to-aks** that upgrades the helm chart, so the new image is deployed.
 
 - The **build-and-push-docker-image** job runs in an **ubuntu-latest** agent and has two steps:
-  - **Get code from the repo** that checks out the develop branch and
+  - **Get code from the repository** that checks out the develop branch and
   - **Build and push Docker images** that builds the image a pushes it to the ACR.
-  - **NOTE**: Both of the above steps are standard tasks, taken from [GitHub Action's markeplace](https://github.com/marketplace?type=actions).
+  - **NOTE**: Both of the above steps are standard tasks, taken from [GitHub Action's marketplace](https://github.com/marketplace?type=actions).
 
 - The **deploy-to-aks** job depends on the **build-and-push-docker-image**, runs in **ubuntu-latest** agent, and has five steps:
   - **Azure Kubernetes set context** that sets the AKS credentials in the agent's `.kube/config` file,
-  - **Get code from the repo** that checks out the code from the repo,
+  - **Get code from the repository** that checks out the code from the repository,
   - **Helm tool installer** that installs Helm,
   - **Azure Login** that logs in to Azure using the Service Principal's, and
   - **Deploy** that upgrades the chart. There are a few important comments about this one:
     - It's a custom step that runs a script
     - Passes the ACR as the **registry** parameter to Helm, so this particular image is deployed to AKS from your ACR, instead of the initial deployment repository.
 
-You can see the yaml file details next:
+You can see the YAML file details next:
 
 ```yml
 name: eShop build & deploy
@@ -104,15 +104,15 @@ env:
   CHART_PATH: deploy/k8s/helm-simple/webspa
   CLUSTER_NAME: YOUR_CLUSTER_NAME
   CLUSTER_RESOURCE_GROUP: YOUR_RESOURCE_GROUP_NAME
-  REGISTRY_LOGIN_SERVER: YOUR_ACR_LOGIN_SERVER
   IP_ADDRESS: YOUR_CLUSTER_IP
+  REGISTRY_LOGIN_SERVER: YOUR_ACR_LOGIN_SERVER
 
 jobs:
   build-and-push-docker-image:
     runs-on: ubuntu-latest
     steps:
 
-    - name: Get code from the repo
+    - name: Get code from the repository
       uses: actions/checkout@v1
       with:
         ref: develop
@@ -140,7 +140,7 @@ jobs:
         resource-group: ${{env.CLUSTER_RESOURCE_GROUP}}
         cluster-name: ${{env.CLUSTER_NAME}}
 
-    - name: Get code from the repo
+    - name: Get code from the repository
       uses: actions/checkout@v1
       with:
         ref: develop
@@ -176,25 +176,25 @@ Configure the following values in the action yaml editor view:
 
 At this point you should see something like this:
 
-![Image description follows in text.](media/configure-github-action.png)
+:::image type="content" source="../../media/4-implement-github-action/configure-github-action.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/configure-github-action.png":::
 
-In the preceding image you can see the content of the `build-and-deploy.yaml` file, with the mentioned environment variables set.
+In the preceding image you can see the content of the *build-and-deploy.yaml* file, with the mentioned environment variables set.
 
-To save the file click on the **Start commit** button
+To save the file click on the **Start commit** button.
 
-This will create a in the commit in the repo, and you can do it directly to **develop**, as shown next:
+This will create a in the commit in the repository, and you can do it directly to **develop**, as shown next:
 
-![Commit confirmation popup view, with option "Commit directly to the develop branch" option selected.](media/commit-action-to-develop.png)
+:::image type="content" source="../../media/4-implement-github-action/commit-action-to-develop.png" alt-text="Commit confirmation popup view, with option 'Commit directly to the develop branch' option selected" border="true" lightbox="../../media/4-implement-github-action/commit-action-to-develop.png":::
 
-This GitHub Action definition will be part of the repo from now on. If you want to make any change, you'll just have to update the file locally and push to **develop** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **develop**.
+This GitHub Action definition will be part of the repository from now on. If you want to make any change, you'll just have to update the file locally and push to **develop** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **develop**.
 
 ### 2. Enable Actions for your repository
 
-Now you have to enable back Actions in your repo, from the **Settings** tab, as shown in the next image.
+Now you have to enable back Actions in your repository, from the **Settings** tab, as shown in the next image.
 
-![View for the Settings > Action permissions, with the "Enable local and third party Actions..." option selected.](media/enabling-actions.png)
+:::image type="content" source="../../media/4-implement-github-action/enabling-actions.png" alt-text="View for the Settings > Action permissions, with the 'Enable local and third party Actions' option selected" border="true" lightbox="../../media/4-implement-github-action/enabling-actions.png":::
 
-The updated action will the be triggered next time a commit is pushed to **develop**. From now on, unless you disable Actions in your repo, the CI/CD pipeline you just created will be run automatically every time the develop branch is updated.
+The updated action will the be triggered next time a commit is pushed to **develop**. From now on, unless you disable Actions in your repository, the CI/CD pipeline you just created will be run automatically every time the develop branch is updated.
 
 ## Modify the SPA microservice
 
@@ -204,7 +204,7 @@ Since you can guess this won't last too long, that is, this is just a proof-of-c
 
 ### 1. Add a call out in the home page
 
-Update the `src/Web/WebSPA/Client/src/modules/app.component.html` (line 4) like this:
+Update the *src/Web/WebSPA/Client/src/modules/app.component.html* (line 4) like this:
 
 ```html
 <header class="esh-app-header" [ngClass]="{'esh-app-header':true, 'esh-app-header--expanded': router.url === '/catalog'}">
@@ -229,7 +229,7 @@ Update the `src/Web/WebSPA/Client/src/modules/app.component.html` (line 4) like 
 
 ### 2. Update the discount coupon label in the checkout view
 
-Update the `src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.html` file (line 95) as shown next:
+Update the *src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.html* file (line 95) as shown next:
 
 ```html
 <div class="container">
@@ -260,9 +260,9 @@ Update the `src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.compo
 
 ### 3. Update the discount code validation message
 
-Update the `src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.ts` file (line 60), like this:
+Update the *src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.ts* file (line 60), like this:
 
-```ts
+```typescript
 import { Component, OnInit } from '@angular/core';
 ...
 @Component({
@@ -292,7 +292,7 @@ export class OrdersNewComponent implements OnInit {
 >
 > It's important that you update the app version in the Helm chart, so that the pod is replaced when the chart is deployed to AKS with `helm upgrade`.
 
-Update the version to **1.1.0** in the chart, file `deploy/k8s/helm-simple/webspa/Chart.yaml` (line 21) as shown next:
+Update the version to **1.1.0** in the chart, file *deploy/k8s/helm-simple/webspa/Chart.yaml* (line 21) as shown next:
 
 ```yaml
 apiVersion: v2
@@ -312,25 +312,25 @@ Since we are committing to **develop**, the action will run immediately and the 
 
 ## Wait for deployment
 
-If you click in the **Actions** tab in your repo, you should be able to monitor the progress, as shown in the next image.
+If you click in the **Actions** tab in your repository, you should be able to monitor the progress, as shown in the next image.
 
-![Image description follows in text.](media/monitor-github-action-progress.png)
+:::image type="content" source="../../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/monitor-github-action-progress.png":::
 
 In the preceding image you can see the "Build and push Docker images" step running and the log output.
 
 If you monitor your pods using the command `kubectl get pods -w` you should see something like this:
 
-![Image description follows in text.](media/replacing-pods.png)
+:::image type="content" source="../../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/replacing-pods.png":::
 
 In the preceding image you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
 
 You can also check the `webspa` microservice deployment history, with the command `helm history eshoplearn-webspa` to get something like this:
 
-![Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed.](media/deployment-history.png)
+:::image type="content" source="../../media/4-implement-github-action/deployment-history.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed" border="true" lightbox="../../media/4-implement-github-action/deployment-history.png":::
 
 At this point you just have to refresh the browser to see the changes, as shown in the next image.
 
-![WebSPA home page view, showing the "promotion message".](media/changes-deployed.png)
+:::image type="content" source="../../media/4-implement-github-action/changes-deployed.png" alt-text="WebSPA home page view, showing the 'promotion message'" border="true" lightbox="../../media/4-implement-github-action/changes-deployed.png":::
 
 ## Rollback a deployment
 
@@ -342,11 +342,11 @@ helm rollback eshoplearn-webspa
 
 Checking the deployment history again you know that everything is back to normal 😅:
 
-![Helm deployment history for eshoplearn-webspa, showing app version 1.0.0 is now deployed.](media/deployment-rollback.png)
+:::image type="content" source="../../media/4-implement-github-action/deployment-rollback.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.0.0 is now deployed" border="true" lightbox="../../media/4-implement-github-action/deployment-rollback.png":::
 
 > **NOTE**
 >
-> In a real-life scenario you'd include at least one tests step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
+> In a real-life scenario, you'd include at least one tests step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
 >
 > You'd usually also have the pipeline triggered on each PR, to make sure the PR builds correctly and tests run successfully, before reviewing the PR.
 
