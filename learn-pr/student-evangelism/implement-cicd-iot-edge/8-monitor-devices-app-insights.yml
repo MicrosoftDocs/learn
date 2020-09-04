@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.oxford.implement-cicd-iot-edge.exercise-monitor-devices-app-insights
-title: Exercise - Monitor devices with App Insights
+title: Exercise - Monitor devices with Application Insights
 metadata:
-  title: Exercise - Monitor devices with App Insights
-  description: In this section, we help learner to monitor devices using App Insight
+  title: Exercise - Monitor devices with Application Insights
+  description: In this section, we help the learner to monitor devices using Application Insights.
   ms.date: 06/19/2020
   author: leestott
   ms.author: leestott

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-azure-services-sla-lifecycle.4-design-application-meet-sla
+title: Design your application to meet your SLA
+metadata:
+  description: "Learn how technology choices can impact your application SLA."
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+  latex_macros:
+    pct: "\\%"
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-design-application-meet-sla.md)]

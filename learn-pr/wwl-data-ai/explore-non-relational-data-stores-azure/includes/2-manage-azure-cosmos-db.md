@@ -28,12 +28,12 @@ Cosmos DB manages data as set of documents. A document is a collection of fields
 
 ## Document 2 ##
 {
-  "customerID": "103249",
+  "customerID": "55151",
   "name": 
   { 
     "title": "Mr",
-    "forename": "AAA", 
-    "lastname": "BBB" 
+    "forename": "DDD", 
+    "lastname": "EEE" 
   },
   "address": 
   {
@@ -84,7 +84,7 @@ The principal use of the Table, MongoDB, and Cassandra APIs is to support existi
 Cosmos DB provides several options for uploading data to a Cosmos DB database, and querying that data. You can:
 
 - Use **Data Explorer** in the Azure portal to run ad-hoc queries. You can also use this tool to load data, but you can only load one document at a time. The data load functionality is primarily aimed at uploading a small number of documents (up to 2 MB in total size) for test purposes, rather than importing large quantities of data.
-- Use the [Cosmos DB Data Migration tool](https://docs.mic,rosoft.com/azure/cosmos-db/import-data) to perform a bulk-load or transfer of data from another data source.
+- Use the [Cosmos DB Data Migration tool](https://docs.microsoft.com/azure/cosmos-db/import-data) to perform a bulk-load or transfer of data from another data source.
 - Use [Azure Data Factory](https://docs.microsoft.com/azure/data-factory/connector-azure-cosmos-db) to import data from another source.
 - Write a custom application that imports data using the Cosmos DB [BulkExecutor](https://docs.microsoft.com/azure/cosmos-db/tutorial-sql-api-dotnet-bulk-import) library. This strategy is beyond the scope of this module.
 - Create your own application that uses the functions available through the [Cosmos DB SQL API client library](https://docs.microsoft.com/azure/cosmos-db/create-sql-api-dotnet-v4) to store data. This approach is also beyond the scope of this module.
