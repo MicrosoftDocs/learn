@@ -32,7 +32,7 @@ In the GitHub repository you just forked, go to **Settings** > **Secrets** and a
 
 At this point you should have something like this:
 
-:::image type="content" source="../../media/4-implement-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/add-github-secrets.png":::
+:::image type="content" source="../media/4-implement-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/add-github-secrets.png":::
 
 In the preceding image, you can see that secret named **AZURE_CREDENTIALS** was created. The value is the JSON output from the `az ad sp create-for-rbac` command.
 
@@ -44,17 +44,17 @@ In the preceding image, you can see that secret named **AZURE_CREDENTIALS** was 
 
 ### 1. Disable GitHub actions in your repository
 
-The GitHub action you're about to create will be saved to your your repository and will trigger once you save it by pushing to the **develop** branch. To avoid this, you'll begin by disabling actions temporarily.
+The GitHub Action you're about to create will be saved to your your repository and will trigger once you save it by pushing to the **develop** branch. To avoid this, you'll begin by disabling actions temporarily.
 
 Go to the Settings tab in your repository and disable Actions, as shown in the next image.
 
-:::image type="content" source="../../media/4-implement-github-action/disable-actions.png" alt-text="View for the Settings > Action permissions, with the Disable Actions option selected" border="true" lightbox="../../media/4-implement-github-action/disable-actions.png":::
+:::image type="content" source="../media/4-implement-github-action/disable-actions.png" alt-text="View for the Settings > Action permissions, with the Disable Actions option selected" border="true" lightbox="../media/4-implement-github-action/disable-actions.png":::
 
 ### 2. Create a custom action
 
 Click on the Actions tab in your repository and then click on the "**set up a workflow yourself**" link:
 
-:::image type="content" source="../../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="View for the Actions tab in the GitHub repository, highlighting the link 'set up an workflow yourself'" border="true" lightbox="../../media/4-implement-github-action/set-up-custom-github-workflow.png":::
+:::image type="content" source="../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="View for the Actions tab in the GitHub repository, highlighting the link 'set up an workflow yourself'" border="true" lightbox="../media/4-implement-github-action/set-up-custom-github-workflow.png":::
 
 ### 3. Add the action specification
 
@@ -69,7 +69,7 @@ The spec is already included in this document and needs some customization but w
   - **YOUR_CLUSTER_IP** (use **ESHOP_LBIP**'s value)
   - **REGISTRY_LOGIN_SERVER** (use **ESHOP_REGISTRY**'s value)
 
-- It has two jobs
+- It has two jobs:
   - **build-and-push-docker-image** that builds the image a pushes it to the ACR.
   - **deploy-to-aks** that upgrades the helm chart, so the new image is deployed.
 
@@ -176,7 +176,7 @@ Configure the following values in the action yaml editor view:
 
 At this point you should see something like this:
 
-:::image type="content" source="../../media/4-implement-github-action/configure-github-action.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/configure-github-action.png":::
+:::image type="content" source="../media/4-implement-github-action/configure-github-action.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/configure-github-action.png":::
 
 In the preceding image you can see the content of the *build-and-deploy.yaml* file, with the mentioned environment variables set.
 
@@ -184,7 +184,7 @@ To save the file click on the **Start commit** button.
 
 This will create a in the commit in the repository, and you can do it directly to **develop**, as shown next:
 
-:::image type="content" source="../../media/4-implement-github-action/commit-action-to-develop.png" alt-text="Commit confirmation popup view, with option 'Commit directly to the develop branch' option selected" border="true" lightbox="../../media/4-implement-github-action/commit-action-to-develop.png":::
+:::image type="content" source="../media/4-implement-github-action/commit-action-to-develop.png" alt-text="Commit confirmation popup view, with option 'Commit directly to the develop branch' option selected" border="true" lightbox="../media/4-implement-github-action/commit-action-to-develop.png":::
 
 This GitHub Action definition will be part of the repository from now on. If you want to make any change, you'll just have to update the file locally and push to **develop** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **develop**.
 
@@ -192,7 +192,7 @@ This GitHub Action definition will be part of the repository from now on. If you
 
 Now you have to enable back Actions in your repository, from the **Settings** tab, as shown in the next image.
 
-:::image type="content" source="../../media/4-implement-github-action/enabling-actions.png" alt-text="View for the Settings > Action permissions, with the 'Enable local and third party Actions' option selected" border="true" lightbox="../../media/4-implement-github-action/enabling-actions.png":::
+:::image type="content" source="../media/4-implement-github-action/enabling-actions.png" alt-text="View for the Settings > Action permissions, with the 'Enable local and third party Actions' option selected" border="true" lightbox="../media/4-implement-github-action/enabling-actions.png":::
 
 The updated action will the be triggered next time a commit is pushed to **develop**. From now on, unless you disable Actions in your repository, the CI/CD pipeline you just created will be run automatically every time the develop branch is updated.
 
@@ -283,7 +283,6 @@ export class OrdersNewComponent implements OnInit {
     }
     ...
 }
-
 ```
 
 ### 4. Update the SPA version in the Helm chart
@@ -314,23 +313,23 @@ Since we are committing to **develop**, the action will run immediately and the 
 
 If you click in the **Actions** tab in your repository, you should be able to monitor the progress, as shown in the next image.
 
-:::image type="content" source="../../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/monitor-github-action-progress.png":::
+:::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
 
 In the preceding image you can see the "Build and push Docker images" step running and the log output.
 
 If you monitor your pods using the command `kubectl get pods -w` you should see something like this:
 
-:::image type="content" source="../../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../../media/4-implement-github-action/replacing-pods.png":::
+:::image type="content" source="../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/replacing-pods.png":::
 
 In the preceding image you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
 
 You can also check the `webspa` microservice deployment history, with the command `helm history eshoplearn-webspa` to get something like this:
 
-:::image type="content" source="../../media/4-implement-github-action/deployment-history.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed" border="true" lightbox="../../media/4-implement-github-action/deployment-history.png":::
+:::image type="content" source="../media/4-implement-github-action/deployment-history.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed" border="true" lightbox="../media/4-implement-github-action/deployment-history.png":::
 
 At this point you just have to refresh the browser to see the changes, as shown in the next image.
 
-:::image type="content" source="../../media/4-implement-github-action/changes-deployed.png" alt-text="WebSPA home page view, showing the 'promotion message'" border="true" lightbox="../../media/4-implement-github-action/changes-deployed.png":::
+:::image type="content" source="../media/4-implement-github-action/changes-deployed.png" alt-text="WebSPA home page view, showing the 'promotion message'" border="true" lightbox="../media/4-implement-github-action/changes-deployed.png":::
 
 ## Rollback a deployment
 
@@ -342,7 +341,7 @@ helm rollback eshoplearn-webspa
 
 Checking the deployment history again you know that everything is back to normal 😅:
 
-:::image type="content" source="../../media/4-implement-github-action/deployment-rollback.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.0.0 is now deployed" border="true" lightbox="../../media/4-implement-github-action/deployment-rollback.png":::
+:::image type="content" source="../media/4-implement-github-action/deployment-rollback.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.0.0 is now deployed" border="true" lightbox="../media/4-implement-github-action/deployment-rollback.png":::
 
 > **NOTE**
 >
