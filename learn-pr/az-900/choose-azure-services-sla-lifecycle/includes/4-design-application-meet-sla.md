@@ -36,10 +36,10 @@ From the [Service Level Agreements](https://azure.microsoft.com/support/legal/sl
 
 Therefore, for the Special Orders application, the composite SLA would be:
 
-$$99.9\pct \times 99.9\pct \times 99.99\pct \times 99.99\pct$$
+$$99.9\% \times 99.9\% \times 99.99\% \times 99.99\%$$
 $$= 0.999 \times 0.999 \times 0.9999 \times 0.9999$$
 $$= 0.9978$$
-$$= 99.78\pct$$
+$$= 99.78\%$$
 
 Recall that you need two virtual machines. Therefore, you include the Virtual Machines SLA of 99.9% two times in the formula.
 
@@ -76,8 +76,8 @@ An Availability Zone is a unique physical location within an Azure region. Each 
 
 Deploying two or more instances of an Azure VM across two or more Availability Zones raises the virtual machine SLA to 99.99%. Recalculating your composite SLA above with this Virtual Machines SLA would give you an application SLA of:
 
-$$99.99\pct \times 99.99\pct \times 99.99\pct \times 99.99\pct$$
-$$= 99.96\pct$$
+$$99.99\% \times 99.99\% \times 99.99\% \times 99.99\%$$
+$$= 99.96\%$$
 
 This revised SLA of 99.96% exceeds your target of 99.9%.
 
