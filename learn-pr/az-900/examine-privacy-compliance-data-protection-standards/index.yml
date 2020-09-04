@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.examine-privacy-compliance-data-protection-standards
+metadata:
+  description: Learn about Microsoft's commitment to privacy, how Azure adheres to common regulatory and compliance standards, and additional considerations government agencies need to make.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Examine privacy, compliance, and data protection standards on Azure
+summary: |
+  Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
+
+  If your organization is a government department or agency, or you need to deploy to regions of China, you'll also learn about some additional considerations that you need to make.
+abstract: |
+  After completing this module, you'll be able to:
+
+  * Explain the types of compliance offerings that are available on Azure.
+  * Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum to learn what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
+  * Gain insight into regulatory standards and compliance on Azure from the Trust Center and from the Azure compliance documentation.
+  * Explain Azure capabilities that are specific to government agencies.
+prerequisites: |
+  There are no prerequisites for this module, however students with some IT knowledge or experience will find the concepts easier to understand.
+iconUrl: /learn/achievements/examine-privacy-compliance-data-protection-standards.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-owner
+- business-user
+- student
+- technology-manager
+products:
+- azure
+units:
+- learn.examine-privacy-compliance-data-protection-standards.1-introduction
+- learn.examine-privacy-compliance-data-protection-standards.2-explore-compliance-terms-requirements
+- learn.examine-privacy-compliance-data-protection-standards.3-access-microsoft-privacy-statement
+- learn.examine-privacy-compliance-data-protection-standards.4-explore-trust-center
+- learn.examine-privacy-compliance-data-protection-standards.5-access-azure-compliance-documentation
+- learn.examine-privacy-compliance-data-protection-standards.6-what-is-azure-government
+- learn.examine-privacy-compliance-data-protection-standards.7-what-is-azure-china-21vianet
+- learn.examine-privacy-compliance-data-protection-standards.8-knowledge-check
+- learn.examine-privacy-compliance-data-protection-standards.9-summary
+badge:
+  uid: learn.examine-privacy-compliance-data-protection-standards.badge
