@@ -8,7 +8,7 @@ This tutorial uses the Azure sandbox to provide you with a free, temporary Azure
 
 ## Customize Visual Studio Code
 
-Before you begin, you need to grants Visual Studio Code access to the Azure subscription used by the sandbox. This subscription was created when you activate the sandbox and allows you to use Azure services without incurring any costs.
+Before you begin, you need to grant Visual Studio Code access to the Azure subscription used by the sandbox. This subscription was created when you activate the sandbox and allows you to use Azure services without incurring any costs.
 
 ### Add concierge tenant to Visual Studio Code
 
@@ -19,6 +19,8 @@ The following steps associate the free Azure subscription created for you with V
    ```bash
    az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
    ```
+
+1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
 
 1. Open settings in Visual Studio Code. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
 
@@ -57,8 +59,6 @@ Now that you've made these changes, you need to sign out and back into the Azure
 Now Visual Studio Code is configured to use the sandbox resources and avoid any billing against your account.
 
 ## Create a static web app
-
-1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you just cloned to your machine in the editor.
 
 1. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
