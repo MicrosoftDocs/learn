@@ -21,14 +21,16 @@ Here you create a resource group that's named *my-test-rg*. This is the resource
 For learning purposes, you use the same resource group name that you used in the previous exercise. You can use the same name because you deleted the previous resource group.
 
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true) and sign in.
-1. At the top of the page, select **Resource groups**.
-1. Select **Add**. Then fill in these fields:
+1. Select **Create a resource**.
+1. Enter *resource group* in the search box and select <kbd>Enter</kbd>.
+1. If you are taken to a search results page, select **Resource group** from the results.
+1. Select **Create**. Then fill in these fields:
 
     | Setting | Value |
     | -- | -- |
-    | Subscription | (Your Azure subscription) |
-    | Name | *my-test-rg* |
-    | Region | **(US) East US** |
+    | **Subscription** | (Your Azure subscription) |
+    | **Subscription > Resource group** | *my-test-rg* |
+    | **Region** | **(US) East US** |
 
 1. Select **Review + create** and then select **Create**.
 
@@ -94,29 +96,33 @@ Here you configure the allowed location policy by using Azure Policy and then yo
 Here you attempt to add a storage account to your resource group at a location that violates your location policy.
 
 1. From the Azure portal, at the top of the page, select **Home** to return to the start page.
-1. Select **Storage accounts**. Then select **Add**.
-1. Fill in these fields:
+1. Select **Create a resource**.
+1. Enter *storage account* in the search box and select <kbd>Enter</kbd>.
+1. If you are taken to a search results page, select **Storage account** from the results.
+1. Select **Create**. Then fill in these fields:
 
     > [!NOTE]
     > Replace **NNN** with a series of numbers. This helps ensure that your storage account name is unique.
 
     | Setting | Value |
     | --- | --- |
-    | Subscription | (Your Azure subscription) |
-    | Resource group | **my-test-rg** |
-    | Storage account name | **mysaNNN** |
-    | Location | **(Asia Pacific) Japan East** |
-    | Performance | **Standard** |
-    | Account kind | **StorageV2 (general purpose v2)** |
-    | Replication | **Locally-redundant storage (LRS)** |
-    | Access tier (default) | **Hot** |
+    | **Subscription** | (Your Azure subscription) |
+    | **Subscription > Resource group** | **my-test-rg** |
+    | **Storage account name** | **mysaNNN** |
+    | **Location** | **(Asia Pacific) Japan East** |
+    | **Performance** | **Standard** |
+    | **Account kind** | **StorageV2 (general purpose v2)** |
+    | **Replication** | **Locally-redundant storage (LRS)** |
+    | **Access tier (default)** | **Hot** |
 
     If you previously selected **Japan East** in your location policy, select a different region from the list.
-1. Select **Review + Create**.
+1. Select **Review + create** and then select **Create**.
 
-    You see a message that states that the deployment failed due to the policy violation. Here's an example that shows the error message for a storage account that's named **mysa1234**:
+    You see a message that states that the deployment failed due to the policy violation. Below you see the deployment details.
 
-    :::image type="content" source="../media/10-create-sa-error-policy-violation.png" alt-text="A screenshot of the Azure portal showing the error message. The error message states that the deployment failed due to a policy violation.":::
+    Here's an example that shows the deployment details for a storage account named **mysa1234**:
+
+    :::image type="content" source="../media/10-create-sa-error-policy-violation.png" alt-text="A screenshot of the Azure portal showing the deployment details message. The details include the resource name, its type, and a status of Forbidden.":::
 
 ## Delete the policy assignment
 
@@ -141,7 +147,7 @@ You no longer need your resource group. Here you remove it from your subscriptio
 1. At the prompt, enter *my-test-rg* and then select **OK**.
 
     The deletion operation might take a few moments to complete.
-1. When the operation completes, select **Home** > **Resource groups**.
+1. After the operation completes, select **Home** > **Resource groups**.
 
     You see that the **my-test-rg** resource group no longer exists in your account.
 
