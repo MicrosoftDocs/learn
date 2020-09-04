@@ -107,6 +107,7 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
          .key(primaryKey)
          .consistencyLevel(ConsistencyLevel.EVENTUAL)
          .directMode()
+         .contentResponseOnWriteEnabled(true)
          .buildAsyncClient();
 
      database = client.getDatabase("Users");

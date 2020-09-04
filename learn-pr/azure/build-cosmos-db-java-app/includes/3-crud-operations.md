@@ -19,110 +19,43 @@ Once you have those classes created to represent your users, you'll create new u
 
 ## Create documents
 
-1. First, create a **User** class that represents the objects to store in Azure Cosmos DB. We will also create **OrderHistory** and **ShippingPreference** classes that are used within **User**. Note that documents must have an **id** property, which will be serialized as **id** in JSON.
-
-    To create these classes, copy and paste the following **User**, **OrderHistory**, and **ShippingPreference** classes underneath the **CosmosApp** class.
+1. Next we will insert documents into Azure Cosmos DB. Note that you can pass Azure Cosmos DB a Jackson `ObjectNode` that directly specifies the JSON document, however Azure Cosmos DB is also capable of serializing Java POJOs into JSON. We will utilize the latter functionality in this section.
+1. Examine the **com.azure.cosmos.examples.mslearnbasicapp.datatypes** package/directory and you will see several POJOs - **User**, **ShippingPreference**, **OrderHistory**, **CouponsUsed**. **User** depends on all of the other POJOs, and it is the **User** POJO which we will ultimately pass to Azure Cosmos DB Java SDK to be serialized as JSON.
+1. Open **User.java** and examine its contents. It should look something like 
 
     ```java
-    public class User
-    {
-        private String id;
-        private String userId;
-        private String lastName;
-        private String firstName;
-        private String email;
-        private String dividend;
-        private ShippingPreference shippingPreference;
-        private List<OrderHistory> orderHistory;
-        private List<CouponsUsed> coupons;
+    import lombok.AllArgsConstructor;
+    import lombok.Data;
+    import lombok.NoArgsConstructor;
 
-        public User() {
-            this.orderHistory = new ArrayList<OrderHistory>();
-            this.coupons = new ArrayList<CouponsUsed>();
-            this.id="";
-            this.userId="";
-            this.lastName="";
-            this.firstName="";
-            this.email="";
-            this.dividend="";
-        }
+    import java.util.ArrayList;
+    import java.util.List;
 
-        public String getId() { return this.id; }
-        public void setId(String id) {this.id = id;}
-        public String getUserId() { return this.userId; }
-        public void setUserId(String userId) { this.userId = userId; }
-        public String getLastName() { return this.lastName; }
-        public void setLastName(String lastName) { this.lastName = lastName; }
-        public String getFirstName() { return this.firstName; }
-        public void setFirstName(String firstName) { this.firstName = firstName; }
-        public String getEmail() { return this.email; }
-        public void setEmail(String email) { this.email = email; } 
-        public String getDividend() { return this.dividend; }
-        public void setDividend(String dividend) { this.dividend = dividend; }
-        public List<OrderHistory> getOrderHistory() { return this.orderHistory; }
-        public void setOrderHistory(List<OrderHistory> orderHistory) { this.orderHistory = orderHistory; }
-        public List<ShippingPreference> getShippingPreference() { return this.shippingPreference; }
-        public void setShippingPreference(ShippingPreference shippingPreference) { this.shippingPreference = shippingPreference; }
-        public List<CouponsUsed> getCoupons { return this.coupons; }
-        public void setCoupons(List<Couponsused> coupons) { this.coupons = coupons; }
-    }
-
-    public class OrderHistory
-    {
-        private string id;
-        private string orderId;
-        private string dateShipped;
-        private string total;
-
-        public String getId(){ return this.id; }
-        public String setId(String id){ this.id = id; }
-        public String getOrderId(){ return this.orderId; }
-        public void setOrderId(String orderId){ this.orderId=orderId; }
-        public String getDateShipped(){ return this.dateShipped; }
-        public void setDateShipped(String dateShipped){ this.dateShipped=dateShipped; }
-        public String getTotal(){ return this.total; }
-        public void setTotal(String total){ this.total = total; }
-    }
-
-    public class ShippingPreference
-    {
-        private int priority;
-        private String addressLine1;
-        private String addressLine2;
-        private String city;
-        private String state;
-        private String zipCode;
-        private String country;
-
-        public int getPriority(){ return this.priority; }
-        public void setPriority(String priority){this.priority = priority;}
-        public String getAddressLine1(){ return this.addressLine1; }
-        public void setAddressLine1(String addressLine1){ this.addressLine1 = addressLine1; }
-        public String getAddressLine2(){ return this.addressLine2; }
-        public void setAddressLine2(String addressLine2){ this.addressLine1 = addressLine2; }
-        public String getCity(){ return this.city; }
-        public void setCity(String city){ this.city = city; }
-        public String getState(){ return this.state }
-        public void setState(String state){ this.state = state; }
-        public String getZipCode(){ return this.zipCode; }
-        public void setZipCode(String zipCode){ this.zipCode = zipCode; }
-    }
-
-    public class CouponsUsed
-    {
-        private string couponCode;
-
-        public String getCouponCode(){ return this.couponCode; }
-        public void setCouponCode(String couponCode){ this.couponCode = couponCode; }
-
+    @Data
+    @NoArgsConstructor
+    @AllArgsConstructor
+    public class User {
+        private String id = "";
+        private String userId = "";
+        private String lastName = "";
+        private String firstName = "";
+        private String email = "";
+        private String dividend = "";
+        private ShippingPreference shippingPreference = new ShippingPreference();
+        private List<OrderHistory> orderHistory = new ArrayList<OrderHistory>();
+        private List<CouponsUsed> coupons = new ArrayList<CouponsUsed>();
     }
     ```
+
+    Observe that the access methods for the **id**, **userId**, etc. fields are *implicit*. This is possible because we use Project Lombok **@Data** annotation to create them automatically.
+
+    Note that documents must have an **id** property, which will be serialized as **id** in JSON.
 
 1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
     mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
+    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"
     ```
 
     and confirm that it executes without issue.
@@ -130,22 +63,26 @@ Once you have those classes created to represent your users, you'll create new u
 1. Now add the following method to `CosmosApp.java`:
 
     ```java
-    private static CosmosItemResponse<User> createUserDocumentIfNotExists(User user)
+    private static List<Object> createUserDocumentsIfNotExist(List<User> users)
     {
-        CosmosItemResponse<User> userReadResponse = container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class).block();
+        return Flux.fromIterable(users).flatMap(user -> {
+            return Mono.zip(container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class), Mono.just(user));
+        }).flatMap(userResponseTuple -> {
+            CosmosItemResponse<User> userReadResponse = userResponseTuple.getT1();
+            User user = userResponseTuple.getT2();
 
-        if (userReadResponse.getStatusCode() == 200) {
-            logger.info("User {} already exists in the database", user.getId());
-            return userReadResponse;
-        } else {
-            CosmosItemResponse<User> userCreateResponse = container.createItem(user, new PartitionKey(user.getUserId()), new CosmosItemRequestOptions()).block();
-            logger.info("Created User {}", user.getId());
-            return userCreateResponse;
-        }
+            if (userReadResponse.getStatusCode() == 200) {
+                logger.info("User {} already exists in the database", user.getId());
+                return Mono.just(userReadResponse);
+            } else {
+                logger.info("Creating User {}", user.getId());
+                return Mono.just(container.createItem(user, new PartitionKey(user.getUserId()), new CosmosItemRequestOptions()));
+            }
+        }).buffer().next().block();
     }
     ```
 
-1. Then, return to the **BasicOperations** method and add the following to the end of that method.
+1. Then, return to the **BasicOperations** method and add the following to the end of that method, *before* the `client.close()` call.
 
     ```java
     User maxaxam = new User();
