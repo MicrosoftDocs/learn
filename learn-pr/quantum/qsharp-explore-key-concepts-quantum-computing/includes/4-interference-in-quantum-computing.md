@@ -12,7 +12,7 @@ Physicists often use this term as a synonym to design the quantum state of a sys
 is because the Schrödinger equation introduced at the beginning of this
 module has the same mathematical structure as classical wave equations.
 
-![A diagram showing a wave function and the Schrödinger equation](../media/4-wave.svg)
+![A diagram showing a wave function and the Schrödinger equation](../media/4-wave.png)
 
 You might've also heard the term "probability wave". In fact, the term
 *probability amplitude* is inspired directly from the term *amplitude* of a
@@ -28,16 +28,13 @@ interference*.
 
 As mentioned earlier, probability amplitudes can be complex numbers.
 
-Complex numbers are a handy mathematical tool to describe waves. In fact, they
-were already used to describe waves long before the discovery of quantum
-mechanics. They provide intuition to understand interference.
+Complex numbers are a handy mathematical tool to describe waves. In fact, they were already used to describe waves long before the discovery of quantum mechanics. They provide intuition to understand interference.
 
 But what is wave interference? Waves are governed by a linear equation (remember, waves and quantum states are mathematically the same thing). This
 implies that waves can be superposed, just like we discussed for quantum states earlier. Superposition of different waves enables their amplitudes
-to interfere, resulting in different effects on the overall state. There are two
-types of interference:
+to interfere, resulting in different effects on the overall state. There are two types of interference:
 
-![An illustration explaining constructive and destructive interference](../media/4-interference.svg)
+![An illustration explaining constructive and destructive interference](../media/4-interference.png)
 
 - **Constructive interference**
 
@@ -46,7 +43,7 @@ types of interference:
 
     Two waves subtract to decrease the amplitude of the resulting wave. Again, in our daily experience, noise-cancelling headphones use an external microphone to catch the noise in the environment. It then reproduces sound waves that have the same magnitude but opposite phase to the noise and plays them in the inner speakers to cancel the noise for the listener. This is using destructive interference for noise cancellation.
 
-![Diagram depicting noise cancellation](../media/4-noise-cancellation.svg)
+![Diagram depicting noise cancellation](../media/4-noise-cancellation.png)
 
 Constructive and destructive interference are due to *relative phases* between
 the waves. In the next figure you can see how the relative phase determines the
@@ -64,8 +61,7 @@ of complex numbers in the complex plane using polar coordinates.
 
 Qubit states follow the same mathematics as waves.
 
-You used the following superposition to create the quantum random number
-generator:
+You used the following superposition to create the quantum random number generator:
 
 $$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}.$$
 
@@ -96,5 +92,4 @@ computing. Quantum interference can be harnessed to cancel the amplitudes
 of states that don't help us solve our problem, and to amplify the amplitudes
 of states that lead us to the solution.
 
-In the next unit, you are going to see how you can use Q# to
-explore quantum interference.
+In the next part, you'll see how you can use Q# to explore quantum interference.

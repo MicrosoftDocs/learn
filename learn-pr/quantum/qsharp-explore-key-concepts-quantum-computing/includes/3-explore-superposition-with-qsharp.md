@@ -56,7 +56,7 @@ you want to inspect the state after the measurement.
 1. Open the integrated terminal. From the **Terminal** menu, select **New Terminal**.
 1. From the terminal, run `dotnet run`:
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
@@ -155,7 +155,7 @@ This state can be obtained by sequentially applying the operations [Ry](https://
 
 1. From the terminal, run `dotnet run`. This example chooses $\alpha = \frac13$:
 
-    ```bash
+    ```dotnetcli
     dotnet run --alpha 0.333333
     ```
 
@@ -199,7 +199,7 @@ instead of one qubit three times.
 
 1. From the terminal, run `dotnet run`.
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 

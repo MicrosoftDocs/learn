@@ -41,8 +41,8 @@ To implement this in Q#:
 
 1. From the terminal, run `dotnet run`:
 
-   ```bash
-      dotnet run
+   ```dotnetcli
+   dotnet run
    ```
 
    Your output will be something like this:
@@ -104,7 +104,7 @@ reasonable time. To use a Resources Estimator:
    Note that you can use the `ResourcesEstimator` without any changes to your Q#
    code.
 
-2. This will output a list of the required quantum resources to execute the code.
+2. The program prints a list of the required quantum resources to execute the code.
 
    For example, if you execute it with the last Q# code block above, you get this:
 
@@ -134,11 +134,7 @@ reasonable time. To use a Resources Estimator:
    > estimate the amount of resources needed to perform a quantum computation. You 
    > can learn more about them in the [Wikipedia page on Clifford gates](https://en.wikipedia.org/wiki/Clifford_gates).
 
-   To learn more about `ResourcesEstimator` and a detailed description of each of
-   the parameters of the output and more estimation tools, you can read [the
-   official
-   documentation](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true).
+   To learn more about `ResourcesEstimator` and get a detailed description of each of
+   the parameters of the output and more estimation tools, see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true) in the user guide.
 
-   In the next unit, you're going to see two different quantum algorithms that
-   make use of superposition, interference, and entanglement to outperform
-   classical computers.
+   In the next part, you'll explore two different quantum algorithms that make use of superposition, interference, and entanglement to outperform classical computers.

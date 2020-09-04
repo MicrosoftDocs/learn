@@ -1,9 +1,8 @@
 ### YamlMime:Module
 uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing
 metadata:
-  title: Explore the key concepts of quantum computing by using Q#
   description: Learn the fundamental concepts of quantum computing by using the different tools of Q# and the Quantum Development Kit.
-  ms.date: 03/09/2020
+  ms.date: 09/09/2020
   author: KittyYeungQ
   ms.author: kitty
   ms.topic: tutorial
@@ -11,22 +10,19 @@ metadata:
 title: Explore the key concepts of quantum computing by using Q#
 summary: Learn the fundamental concepts of quantum computing by using the different tools of Q# and the Quantum Development Kit.
 abstract: |
-  In this module you will:
-  - Learn about fundamental concepts of quantum computing like superposition, interference, and entanglement and how they are exploited to create quantum algorithms.
-  - Use Q# and the Quantum Development Kit to explore these concepts.
-  - Examine the state of your quantum programs by using the `DumpMachine` function.
-  - Estimate the resources needed to run your quantum programs with the tool `ResourcesEstimator`.
-  - Learn about different algorithms that use quantum properties to outperform their classical counterparts.
+  After completing this module, you'll be able to:
+  - Explain the basic theory behind the power of quantum computing, including concepts like superposition, interference, and entanglement.
+  - Inspect quantum states when running code in simulated quantum computers.
+  - Estimate the quantum resources that are needed to run your programs.
+  - Explore algorithms that make use of quantum properties that outperform classical algorithms.
 prerequisites: |
-  - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
-  - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
   - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
   - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
   - The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode?azure-portal=true)
 
-  If you don't have these tools installed, we recommend that you go through the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) to get set up and learn the basics.
-  You'll also need basic knowledge of linear algebra and complex numbers. These
-  tutorials can help you understand the basics:
+  If you don't have these tools installed, we recommend that you go through [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) to get set up and learn the basics.
+
+  You also need basic knowledge of linear algebra and complex numbers. These tutorials can help you understand the basics:
 
   - [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra?azure-portal=true)
   - [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic?azure-portal=true)

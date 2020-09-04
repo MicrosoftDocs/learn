@@ -1,53 +1,28 @@
-Congratulations! You finished the module Explore the key concepts of quantum
-computing by using Q#. This module
-served you as an introduction to the working principles of quantum computers.
+In this module, you learned about three fundamental concepts behind the power of quantum computing: _superposition_, _interference_, and _entanglement_.
 
-In this module, we presented a lot of new concepts. Here we list a few concepts
-worth remembering:
+Here's a brief summary:
 
-- Quantum computers use superposition, interference, and entanglement do some
-  calculations faster than classical computers.
-- Superposition is a consequence of the linearity of quantum mechanics. We can
-  put qubit registers into superpositions in our quantum algorithms.
-- Each of the states of a superposition has associated a probability amplitude.
-  This probability amplitude is a complex number that encodes the probability of
-  measuring the state and the phase of the state.
-- The phase of a quantum state is relevant for quantum interference. States with
-  opposite phase interfere destructively, whereas states with the same phase
-  interfere constructively.
+- Superposition, interference, and entanglement can enable quantum computers to perform some calculations faster than classical computers.
+- Superposition is a consequence of the linearity of quantum mechanics. You can place qubit registers into superpositions in your quantum algorithms.
+- Each of the states of a superposition has an associated probability amplitude. This probability amplitude is a complex number that encodes the probability of measuring the state and the phase of that state.
+- The phase of a quantum state is relevant for quantum interference. States with opposite phase interfere destructively, whereas states with the same phase interfere constructively.
 - Two qubits are entangled if their states are correlated and cannot be described as two independent qubits.
-- The Quantum Development Kit offers many different tools to boost quantum
-  development. In this module we used the function `DumpMachine` to inspect quantum states in
-  simulated computers and the `ResourcesEstimator` to see what resources we need
-  to run a particular program.
+
+The Quantum Development Kit offers many different tools to boost quantum development. In this module, you used `DumpMachine` to inspect quantum states and `ResourcesEstimator` to see what resources you need  to run your program on a quantum computer.
 
 ## Learn more
 
-If you're interested in learning more, we recommend you to explore the different
-[quantum
-katas](https://docs.microsoft.com/quantum/tutorials/intro-to-katas?azure-portal=true) on
-different algorithms and quantum computing concepts.
+If you're new to quantum computing, the concepts of superposition, interference, and entanglement will become more intuitive as you explore example quantum programs and begin to write your own.
 
-Also, be sure to explore the [Microsoft Quantum
-Documentation](https://docs.microsoft.com/quantum/?azure-portal=true). There you'll find comprehensive
+[Learn quantum computing with the Quantum Katas](https://docs.microsoft.com/quantum/tutorials/intro-to-katas?azure-portal=true) introduces you to the Quantum Katas, which are a series of self-paced tutorials to help you learn quantum computing and Q# programming. You can also browse [browse code samples](https://docs.microsoft.com/samples/browse/?languages=qsharp&azure-portal=true).
+
+As you develop your own quantum programs, be sure to explore the [Microsoft Quantum
+Documentation](https://docs.microsoft.com/quantum/?azure-portal=true). There, you'll find comprehensive
 reference material, including:
 
 - Fundamental concepts around quantum computing.
 - Quickstarts and tutorials.
 - Q# language and API reference.
-- How to use Q# with C#, Python, and Jupyter Notebooks.
+- Resources on how to combine Q# with C#, Python, and Jupyter Notebooks.
 
-Once you're ready to dive deeper, you can [browse code
-samples](/samples/browse/?languages=qsharp&azure-portal=true) or [learn quantum
-computing with the Quantum Katas](/quantum/intro-to-katas?azure-portal=true).
-
-To learn about real-world usage of the QDK, check out this blog post on
-Microsoft Quantum's collaboration with Pacific Northwest National Laboratory
-(PNNL), [Simulating nature with the new Microsoft Quantum Development Kit
-chemistry
-library](https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/?azure-portal=true).
-
-Be sure to [join the quantum
-community](/quantum/overview/how-to-learn-quantum-computing#join-the-quantum-community?azure-portal=true)
-if you have questions or want to contribute to Microsoft's many open source
-projects.
+[Join the quantum community](https://docs.microsoft.com/quantum/resources/contributing/?azure-portal=true) to ask questions or contribute to Microsoft's many open source projects.

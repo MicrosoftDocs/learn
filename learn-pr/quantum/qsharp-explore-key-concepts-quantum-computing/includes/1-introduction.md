@@ -1,17 +1,11 @@
-Quantum computers work in fundamentally different ways from classical computers.
-They can offer solutions when classical computers run into limitations. Quantum
-algorithms aren't always faster than their classical counterparts. But for
-certain tasks, such as factoring large numbers or inverting functions, quantum computers provide important speed-ups.
+Quantum computers work in fundamentally different ways from classical computers. They can offer solutions when classical computers run into limitations.
 
-How can quantum computers perform better than classical computers? In this module, you'll learn the fundamental concepts behind the power of quantum computing.
+Quantum algorithms aren't always faster than their classical counterparts. But for certain tasks, such as factoring large numbers or inverting functions, quantum computers provide important speed-ups.
 
-The key to understanding quantum computing is knowing three important concepts: _superposition_,
-_interference_, and _entanglement_. In this module, you'll use Q# and some tools
-provided by the Quantum Development Kit to illustrate these ideas.
+How can quantum computers perform better than classical computers? In this module, you'll learn about three fundamental concepts behind the power of quantum computing: _superposition_,
+_interference_, and _entanglement_. You'll use Q# and some of the tools provided by the Quantum Development Kit to see these concepts in action.
 
-Finally, you'll have an overview of a few quantum algorithms to see how by
-exploiting superposition, interference, and entanglement quantum computers can outperform
-classical computers.
+You'll also explore a few quantum algorithms to see how superposition, interference, and entanglement enables you to create quantum algorithms that outperform classical computers.
 
 ## Learning objectives
 
@@ -20,7 +14,7 @@ After completing this module, you'll be able to:
 - Explain the basic theory behind the power of quantum computing, including concepts like superposition, interference, and entanglement.
 - Inspect quantum states when running code in simulated quantum computers.
 - Estimate the quantum resources that are needed to run your programs.
-- Learn about examples of algorithms that make use of quantum properties to outperform classical algorithms.
+- Explore algorithms that make use of quantum properties that outperform classical algorithms.
 
 ## Prerequisites
 

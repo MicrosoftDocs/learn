@@ -49,8 +49,8 @@ To do so with Q#:
 
 3. From the terminal, run `dotnet run`:
 
-   ```bash
-      dotnet run
+   ```dotnetcli
+   dotnet run
    ```
 
    At the end of the program, you must get the result `Zero`. You should
@@ -102,8 +102,8 @@ $\ket{1}$. You can create such state with Q#.
 
 1. From the terminal, run `dotnet run`:
 
-   ```bash
-      dotnet run
+   ```dotnetcli
+   dotnet run
    ```
 
    Here you have an example of the output that you should expect:
@@ -130,8 +130,8 @@ And what about complex amplitudes? If instead of using `X` you use the operation
 
 1. From the terminal, run `dotnet run`:
 
-   ```bash
-      dotnet run
+   ```dotnetcli
+   dotnet run
    ```
 
    You should expect the following output.
@@ -145,5 +145,4 @@ And what about complex amplitudes? If instead of using `X` you use the operation
    Those angles correspond to the positive and negative parts of the imaginary
    y-axis of the complex plane.
 
-In the next section you are going to see the concept of quantum entanglement
-in the context of quantum computing.
+Next, let's explore the concept of quantum entanglement in the context of quantum computing.

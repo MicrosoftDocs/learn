@@ -19,7 +19,7 @@ probability of $\frac12$. There is zero probability of obtaining **01** and
 qubit would be **0** as well, without even having to measure it. you say that the
 measurement outcomes are correlated and the qubits are **entangled**.
 
-Similarly, you can set up a superposition state
+Similarly, you can set up a superposition state:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{01}+\frac1{\sqrt2}\ket{10}.$$
 
@@ -69,4 +69,4 @@ achievable task. In a quantum computer, you can describe each atom using qubit
 registers that can directly be set into superposition and/or entangled states.
 You can simulate quantum systems using controllable quantum systems.
 
-In the next section, you are going to use Q# to explore quantum entanglement.
+In the next section, you'll use Q# to see quantum entanglement in action.

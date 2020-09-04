@@ -15,10 +15,12 @@ Fortunately, you don't need the Schrödinger equation to do quantum programming.
 
 The Schrödinger equation determines the evolution of the state of the system,
 represented by the wave function $\psi$. Each wave function is associated with
-an important concept in quantum computing - **probability amplitude** of the
+an important concept in quantum computing: the *probability amplitude* of the
 wave function. The probability amplitude is a complex number that determines the probability of
 obtaining a certain outcome when measuring
 the system. This is an important difference when compared to classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather we describe bits in terms of the probabilities of finding those states when we observe them.
+
+### What's Dirac bra-ket notation?
 
 A handy notation to describe quantum states is the Dirac bra-ket notation. In this notation, we describe the possible states of quantum systems with kets $\ket{ }$.
 
@@ -35,13 +37,13 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 > [Wikipedia article on the measurement
 > problem](https://wikipedia.org/wiki/Measurement_problem).
 
-## Linear operators
+## What are linear operators?
 
 An *operator* (sometimes known as *gate*) is a function that transforms the state of a quantum system to another state.
 
 $$\hat A \ket{\psi} = \ket{\psi'}$$
 
-We say that an operator $\hat A$ is linear when it has the following properties
+We say that an operator $\hat A$ is *linear* when it has the following properties
 for addition and multiplication by a complex number:
 
 $$\hat A(\ket{\psi_1} + \ket{\psi_2}) = \hat A\ket{\psi_1} + \hat
@@ -51,7 +53,7 @@ $$\hat A(a\ket{\psi})=a \hat A(\ket{\psi})$$
 
 where $a$ is a complex number.
 
-## Quantum superposition
+### How do linear operators relate to quantum superposition?
 
 The Schrödinger equation is a linear equation. It implies that if two states
 $\ket{\psi_1}$ and $\ket{\psi_2}$ are solutions of the Schrödinger equation
@@ -67,7 +69,7 @@ Remember that in the module [Create your first Q# program by using the Quantum
 Development
 Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
 you used superposition to create a quantum random number generator. You used the operator `H` to put a qubit in the state $\ket{0}$ into superposition.
-Mathematically this is: $$ \hat H \ket{0} = \frac1{\sqrt2} \ket{0} +
+Mathematically, this is: $$ \hat H \ket{0} = \frac1{\sqrt2} \ket{0} +
 \frac1{\sqrt2} \ket{1}.$$
 
 Linearity is a fundamental property of
@@ -88,7 +90,7 @@ times to ensure the highest probability result in the output. This repetition
 might seem inefficient. But in many cases, running quantum algorithms several
 times is much more efficient than solving the task classically.
 
-In the next figures you can see a simplified comparison between qubits and bits.
+In the next figures you can see a simplified comparison between qubits and bits:
 
 ![Representation of bits vs. qubits](../media/2-superposition.png)
 
