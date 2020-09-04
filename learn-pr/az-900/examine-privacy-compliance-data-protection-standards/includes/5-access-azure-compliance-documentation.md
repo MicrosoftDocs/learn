@@ -41,7 +41,7 @@ As an optional exercise, here you follow along.
 
 ### Access additional compliance resources
 
-From the Azure compliance documentation, you can access additional compliance resources.
+From the [Azure compliance documentation](https://docs.microsoft.com/azure/compliance/?azure-portal=true), you can access additional compliance resources.
 
 For example, from the **Audit reports** section, you find a link to audit reports for [PCI DSS](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_PCI_DSS?azure-portal=true).
 

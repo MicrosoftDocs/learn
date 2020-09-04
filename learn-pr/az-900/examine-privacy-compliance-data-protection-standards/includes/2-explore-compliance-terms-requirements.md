@@ -1,6 +1,6 @@
 In this part, you learn about the types of compliance offerings that are available on Azure.
 
-As Tailwind Traders moves to running their applications in the cloud, they want to know what regulatory compliance frameworks Azure adheres to. They ask:
+As Tailwind Traders moves to running their applications in the cloud, they want to know how Azure adheres to applicable regulatory compliance frameworks. They ask:
 
 * How compliant is Azure when it comes to the handling of personal data?
 * How compliant are each of Azure's individual services?
