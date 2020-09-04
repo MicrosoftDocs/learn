@@ -19,8 +19,3 @@ Remember that the complexity analysis of Grover's algorithm uses the number of f
 However, this analysis doesn't take into account the complexity of evaluating the function, both in classical and in quantum cases. If a function evaluation is a lot more complicated on a quantum computer than on a classical one, the overall algorithm runtime will be worse in the quantum case, even though technically it will use fewer queries.
 
 Thus, only the problems that allow to compute success criteria fast on a quantum computer can be a practical application for Grover's algorithm.
-
-
-## Conclusion
-
-Grover's search algorithm is one of the most widely studied algorithms in quantum computing. However, using it for solving practical problems covers several areas of active research, including methods for efficient implementation of quantum oracles and identifying problems that can demonstrate a practical speedup.
