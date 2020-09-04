@@ -12,7 +12,7 @@ The privacy statement covers all of Microsoft's services, websites, apps, softwa
 
 Microsoft's privacy statement also provides additional information that's relevant to specific products such as Windows and Xbox.
 
-## What is the Online Services Terms?
+## What's in the Online Services Terms?
 
 The [Online Services Terms](https://www.microsoft.com/licensing/terms/product/ForallOnlineServices?azure-portal=true) (OST) is a legal agreement between Microsoft and the customer. The OST details the obligations by both parties with respect to the processing and security of customer data and personal data. The OST applies specifically to Microsoft's online services that you license through a subscription, including Azure, Dynamics 365, Office 365, and Bing Maps.
 
