@@ -1,6 +1,6 @@
 Before you create a dataset, you must create a **linked service** to link your data store to the data factory. Linked services are much like connection strings, which define the connection information needed for Data Factory to connect to external resources. There are over 100 connectors that can be used to define a linked service.
 
-A linked service in Data Factory can be defined using the Copy Data Activity in the ADF designer, or you can create them independantly to point to a data store or a compute resources. The Copy Activity copies data between the source and destination, and when you run this activity you are asked to define a linked service as part of the copy activity definition
+A linked service in Data Factory can be defined using the Copy Data Activity in the ADF designer, or you can create them independently to point to a data store or a compute resources. The Copy Activity copies data between the source and destination, and when you run this activity you are asked to define a linked service as part of the copy activity definition
 
 Alternatively you can programmatically define a linked service in the JSON format to be used via REST APIs or the SDK, using the following notation:
 

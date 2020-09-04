@@ -1,4 +1,4 @@
-It is very easy to setup Azure Data Factory from within the Azure portal, you only require the following information:
+It is easy to set up Azure Data Factory from within the Azure portal, you only require the following information:
 
 - **Name**: The name of the Azure Data Factory instance
 - **Subscription**: The subscription in which the ADF instance is created
@@ -6,12 +6,12 @@ It is very easy to setup Azure Data Factory from within the Azure portal, you on
 - **Version**: select V2 for the latest features
 - **Location**: The datacenter location in which the instance is stored
 
-Enable Git provides the capability to integrate the code that you create with a Git repository enabling you to source control the code that you would create. Simply define the GIT url, repository name, branch name and the root folder. 
+Enable Git provides the capability to integrate the code that you create with a Git repository enabling you to source control the code that you would create. Define the GIT url, repository name, branch name, and the root folder. 
 
 > [!div class="mx-imgBorder"]
 > ![Creating an Azure Data Factory Instance](../media/create-azure-data-factory-instance.png)
 
-Alternatively, there are a number of different ways that you can provision the service programmatically. In this example you can see PowerShell at work to setup the environment.
+Alternatively, there are a number of different ways that you can provision the service programmatically. In this example you can see PowerShell at work to set up the environment.
 
 
 ``` PowerShell

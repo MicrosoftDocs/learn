@@ -1,4 +1,4 @@
-Activities within Azure Data Factory defines the actions that will be performed on the data and there are three categories including:
+Activities within Azure Data Factory define the actions that will be performed on the data and there are three categories including:
 
 - Data movement activities
 - Data transformation activities
@@ -6,17 +6,17 @@ Activities within Azure Data Factory defines the actions that will be performed 
 
 ## Data movement activities
 
-Data movement activities simply move data from one data store to another. You can use the Copy Activity to perform data dovement activities, or by using JSON. There are a wide range of data stores that are supported as a source and as a sink. This list is ever increasing, and you can find the [latest information here](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities#data-movement-activities). 
+Data movement activities simply move data from one data store to another. You can use the Copy Activity to perform data movement activities, or by using JSON. There are a wide range of data stores that are supported as a source and as a sink. This list is ever increasing, and you can find the [latest information here](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities#data-movement-activities). 
 
 ## Data transformation activities
 
-Data transformation activities can be performed natively within the authoring tool of Azure Data Factory using the Mapping Data Flow. Alternatively, you can call a compute resource to change or enhance data through transformation, or perform analysis of the data. These include compute technologies such as Azure Databricks, Azure Batch, SQL Database and Azure Synapse Analytics, Machine Learning Services, Azure Virtual machines and HDInsight. You can make use of any exising SQL Server Integration Services (SSIS) Packages stored in a Catalog to execute in Azure
+Data transformation activities can be performed natively within the authoring tool of Azure Data Factory using the Mapping Data Flow. Alternatively, you can call a compute resource to change or enhance data through transformation, or perform analysis of the data. These include compute technologies such as Azure Databricks, Azure Batch, SQL Database and Azure Synapse Analytics, Machine Learning Services, Azure Virtual machines and HDInsight. You can make use of any existing SQL Server Integration Services (SSIS) Packages stored in a Catalog to execute in Azure
 
 As this list is always evolving, you can get the [latest information here](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities#data-transformation-activities).
 
 ## Control activities
 
-When graphically authoring ADF psolutions, you can use the control flow within the designed to orchestrate pipeline activities that includes chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on-demand or from a trigger. The current capabilities include:
+When graphically authoring ADF solutions, you can use the control flow within the designed to orchestrate pipeline activities that include chaining activities in a sequence, branching, defining parameters at the pipeline level, and passing arguments while invoking the pipeline on-demand or from a trigger. The current capabilities include:
 
 | Control Activity | Description |
 |------------------|-------------|
@@ -31,11 +31,11 @@ When graphically authoring ADF psolutions, you can use the control flow within t
 
 You can get the [latest information here](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities#control-activities).
 
-## Activities and Pipelines 
+## Activities and pipelines 
 
-## Defining Activities
+## Defining activities
 
-When using JSON notation, the activities section can have one or more activities defined within it. There are two main types of activities: Execution and Control Activities. Execution (AKA Compute) activities include data movement and data transformation activities. They have the following top-level structure:
+When using JSON notation, the activities section can have one or more activities defined within it. There are two main types of activities: Execution and Control Activities. Execution (also known as Compute) activities include data movement and data transformation activities. They have the following top-level structure:
 
 ```JSON
 {
@@ -62,12 +62,12 @@ The following table describes properties in the above JSON:
 | name    | Name of the activity. |Yes |
 | description     | Text describing what the activity or is used for.   |   Yes |
 | type | Defines the type of the activity.     |    Yes |
-| linkedServiceName | Name of the linked service used by the activity.   |    Yes for HDInsight , Machine Learning Batch Scoring Activity and Stored Procedure Activity|
+| linkedServiceName | Name of the linked service used by the activity.   |    Yes for HDInsight, Machine Learning Batch Scoring Activity and Stored Procedure Activity|
 | typeProperties | Properties in the typeProperties section depend on each type of activity.      |    No |
 | policy | Policies that affect the run-time behavior of the activity. This property includes timeout and retry behavior.      |    No |
 | dependsOn | This property is used to define activity dependencies, and how subsequent activities depend on previous activities.      |    No |
 
-## Defining Control Activities
+## Defining control activities
 
 A Control Activity in Data Factory is defined in JSON format as follows:
 
@@ -95,7 +95,7 @@ The following table describes properties in the above JSON:
 | typeProperties | Properties in the typeProperties section depend on each type of activity.      |    No |
 | dependsOn | This property is used to define activity dependencies, and how subsequent activities depend on previous activities.      |    No |
 
-## Defining Pipelines
+## Defining pipelines
 
 Here is how a pipeline is defined in JSON format:
 
@@ -125,7 +125,7 @@ The following table describes properties in the above JSON:
 
 ## Example
 
-The following JSON defines pipeline named "MyFirstPipeline" that contains one activity type of HDInsightHive that will call a query from a script name "partitionweblogs.hql" that is stored in the  linked service named "StorageLinkedService", with an input named "AzureBlobInput" and an output named "AzureBlobOutput". It execute this against the compute resource defined in the linked service named "HDInsightOnDemandLinkedService" 
+The following JSON defines pipeline named "MyFirstPipeline" that contains one activity type of HDInsightHive that will call a query from a script name "partitionweblogs.hql" that is stored in the  linked service named "StorageLinkedService", with an input named "AzureBlobInput" and an output named "AzureBlobOutput". It executes this against the compute resource defined in the linked service named "HDInsightOnDemandLinkedService" 
 
 The pipeline is scheduled to execute on a monthly basis, and will attempt to execute 3 times should it fail. 
 

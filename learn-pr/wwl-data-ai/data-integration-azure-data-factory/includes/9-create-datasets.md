@@ -1,6 +1,6 @@
 A dataset is a named view of data that simply points or references the data you want to use in your activities as inputs and outputs. Datasets identify data within different data stores, such as tables, files, folders, and documents. For example, an Azure Blob dataset specifies the blob container and folder in Blob storage from which the activity should read the data.
 
-A dataset in Data Factory can be defined as an object within the Copy Data Activity, as a seperate object, or in a JSON format for programmatic creation as follows:
+A dataset in Data Factory can be defined as an object within the Copy Data Activity, as a separate object, or in a JSON format for programmatic creation as follows:
 
 ```JSON
 {
@@ -34,7 +34,7 @@ The following table describes properties in the above JSON:
 | structure | Schema of the dataset.     |    No |
 | typeProperties | The type properties are different for each type (for example: Azure Blob, Azure SQL table).   |    Yes|
 
-## Example of a Dataset
+## Example of a dataset
 
 ### Azure Blob
 
