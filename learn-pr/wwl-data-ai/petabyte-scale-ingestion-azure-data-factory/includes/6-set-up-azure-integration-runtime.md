@@ -31,7 +31,7 @@ Use the following steps to create an Azure IR using Azure Data Factory UI.
 
 1. Enter a name for your Azure IR, and select Create. 
 
-    ![Finish the creation an Azure IR](../media/finish-azur-integration-runtime.png)
+    ![Finish the creation an Azure IR](../media/finish-azure-integration-runtime.png)
 
 You'll see a pop-up notification when the creation completes. On the Integration runtimes page, make sure that you see the newly created IR in the list.
 

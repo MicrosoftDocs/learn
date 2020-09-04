@@ -39,7 +39,7 @@ units:
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.describe-connectors
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.use-copy-activity
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.manage-self-hosted-integration-runtime
-- learn.wwl.petabyte-scale-ingestion-azure-data-factory.setup-azure-integration-runtime
+- learn.wwl.petabyte-scale-ingestion-azure-data-factory.set-up-azure-integration-runtime
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.understand-data-ingestion-security-considerations
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.knowledge-check
 - learn.wwl.petabyte-scale-ingestion-azure-data-factory.summary
