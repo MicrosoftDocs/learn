@@ -9,8 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true
-  latex_macros:
-    pct: "\\%"
 durationInMinutes: 7
 content: |
   [!include[](includes/4-design-application-meet-sla.md)]
