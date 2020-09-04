@@ -3,7 +3,7 @@ uid: learn.wwl.design-bot-conversation-flow
 metadata:
   title: Design a bot conversation flow
   description: "Learn the principles of good bot design and implement conversational flows, knowledge bots, and how to hand-off interactions to a human."
-  ms.date: 09/05/2020
+  ms.date: 09/06/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial

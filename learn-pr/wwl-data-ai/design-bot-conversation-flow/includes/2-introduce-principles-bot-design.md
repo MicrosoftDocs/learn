@@ -26,7 +26,8 @@ Some bots don't require discoverability.  For example, your company's support we
 - Can users solve their problems with minimal use and bot interaction? Perhaps it sounds a bit counter-intuitive to success of a bot. Success doesn't equate to how long a user interacts with the bot. Users want answers to their issues or problems as quickly as possible. If the bot can solve the user's issue in the minimal number of steps, the user experience will be a pleasant one and users are more likely to come back to the bot again, or even help to promote the use of the bot on your behalf.
 - Does the bot solve the user issues better than alternative experiences? If a user can reach an answer with minimal effort through other means, they are less likely to use the bot.  For example, most company switchboards use an automated system of messages and options to choose when you call.  Many users continue to press 0 or some other key on the keypad in an attempt to bypass the options. The rational is to go directly to an operator or support technician.
 
-Note that the listed items relate to user experience.  No item listed relates to the logic of your bot, directly, or which AI services it might use. You might argue that language detection would be a key aspect, and you would be correct, but language detection can be categorized as a user experience element. It may rely on natural language processing, an Azure Cognitive Service, but it ultimately relates to the user experience.
+> [!Note]
+> The listed items relate to user experience.  No item listed relates to the logic of your bot, directly, or which AI services it might use. You might argue that language detection would be a key aspect, and you would be correct, but language detection can be categorized as a user experience element. It may rely on natural language processing, an Azure Cognitive Service, but it ultimately relates to the user experience.
 
 ### Factors that do not guarantee success
 
