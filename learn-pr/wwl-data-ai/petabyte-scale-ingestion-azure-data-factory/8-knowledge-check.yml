@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/06/2020
+  ms.date: 09/07/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
   questions:
   - content: "You want to start up a data platform service to execute as Spark job to ingest and process data and then shut down the service after the job is complete. What would be the best compute resource to use?"

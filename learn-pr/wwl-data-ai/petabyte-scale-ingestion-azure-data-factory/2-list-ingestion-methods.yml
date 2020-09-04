@@ -4,12 +4,12 @@ title: List the data factory ingestion methods
 metadata:
   title: List the data factory ingestion methods
   description: "List the data factory ingestion methods"
-  ms.date: 09/06/2020
+  ms.date: 09/07/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/2-list-ingestion-methods.md)]

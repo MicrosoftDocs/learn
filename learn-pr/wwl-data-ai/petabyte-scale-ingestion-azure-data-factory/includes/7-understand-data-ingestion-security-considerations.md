@@ -9,7 +9,7 @@ When using Azure-SSIS Integration runtime, you are given the option to join a vi
 
 ### Use services to detect and prevent intrusions
 You can deny communication with known IP addresses by enabling the distributed denial of service (DDoS) protection standard on the virtual networks on which the integration runtime in hosted. In addition, you can use the Azure Security Center Integrated Threat Intelligence to deny communications with known malicious or unused Internet IP addresses.
-Azure Firewall with Threat Intelligence can be used to control network access. If intrusion detection and/or prevention based on payload inspection is required, you can redirect traffic to a firewall appliance. via Azure ExpressRoute force tunneling or to a Network Virtual Appliance from Azure Marketplace that supports this capability
+Azure Firewall with Threat Intelligence can be used to control network access. If intrusion detection and/or prevention based on payload inspection is required, you can redirect traffic to a firewall appliance via Azure ExpressRoute force tunneling or to a Network Virtual Appliance that supports this capability
 
 ### Simplify the management of security rules using network service tags
 Virtual networks can be configured with service tags. Service tags enables you to group together IP address prefixes from a given Azure service for administrative purposes.  Using Service tags, you can create network security rules in Network Security Groups based on service tags to reduce the administrative overheads. By specifying the service tag name (e.g., DataFactoryManagement) in the appropriate source or destination field of a rule, you can allow or deny inbound traffic for the corresponding service.
