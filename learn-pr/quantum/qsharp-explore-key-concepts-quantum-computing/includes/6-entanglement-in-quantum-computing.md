@@ -8,16 +8,13 @@ Suppose you have a register with only two qubits. There are four possible basis 
 
 $$\ket{00}, \ket{01}, \ket{10}, \ket{11}.$$
 
-It is possible to put two of these options into a superposition:
+It's possible to put two of these options into superposition:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{00}+\frac1{\sqrt2}\ket{11}.$$
 
-In such a state, only two outcomes are possibl when measuring
-the state of both qubits in the standard basis: **00** and **11**, each with a
+In such a state, only two outcomes are possible when measuring the state of both qubits in the standard basis: **00** and **11**, each with a
 probability of $\frac12$. There is zero probability of obtaining **01** and
-**10**. If you measure the first qubit to be **0**, you would know the second
-qubit would be **0** as well, without even having to measure it. you say that the
-measurement outcomes are correlated and the qubits are **entangled**.
+**10**. If you measure the first qubit to be **0**, you would know the second qubit would be **0** as well, without even having to measure it. You say that the measurement outcomes are correlated and the qubits are *entangled*.
 
 Similarly, you can set up a superposition state:
 
@@ -25,18 +22,15 @@ $$\ket{\psi}=\frac1{\sqrt2}\ket{01}+\frac1{\sqrt2}\ket{10}.$$
 
 In this case, only **01** and **10** are the possible outcomes. Again you would know
 by measuring one of the qubits, what the result of the other one would be. This
-correlation can be very useful in algorithms.
+correlation can be useful in algorithms.
 
-These aren't the only entangled states. In general, we say that two sub-systems
-are entangled when the state of the global system, i.e. the joint system of
-both, cannot be represented as states of its sub-systems, but must be considered
+These aren't the only entangled states. In general, we say that two subsystems
+are entangled when the state of the global system, that is, the joint system of
+both, cannot be represented as states of its subsystems, but must be considered
 as one.
 
-Note that entanglement is different from classical correlations, since the state
-of the systems is not determined and you can talk only about the probabilities
-associated to the outcomes. In fact, you can say that two systems are entangled
-when the correlations between measurements of both systems can't be explained
-with local classical physics.
+Entanglement is different from classical correlations, since the state of the systems is not determined and you can talk only about the probabilities associated to the outcomes. In fact, you can say that two systems are entangled
+when the correlations between measurements of both systems can't be explained with local classical physics.
 
 ### Entangled states are difficult to simulate
 
