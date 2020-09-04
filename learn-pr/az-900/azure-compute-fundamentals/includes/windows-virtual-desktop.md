@@ -10,7 +10,7 @@ The following video gives you an overview of Windows Virtual Desktop.
 
 <div align="center">
 <video width="500" height="375" controls="controls">
-<source src="../media/windows-virtual-desktop.mp4" type="video/mp4">
+<source src="../../az-900/azure-compute-fundamentals/media/windows-virtual-desktop.mp4" type="video/mp4">
 <p><em>Your browser does not support the video tag.</em></p> </video>
 </div>
 
