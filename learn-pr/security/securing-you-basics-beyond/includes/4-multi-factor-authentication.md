@@ -14,9 +14,9 @@ There are three general types of factors:
 
 Let's look at an example of using MFA to log into an account:
 
-    - You enter your user name, this is your identity.
-    - You enter your password. This is the first factor, something you know.
-    - Then select an approval button on a smartphone app. This is the second factor, something you have.
+  - You enter your user name, this is your identity.
+  - You enter your password. This is the first factor, something you know.
+  - Then select an approval button on a smartphone app. This is the second factor, something you have.
 
 In the example, you used MFA to log into an account with two factors: a password and an app on a physical device you had in your possession.
 

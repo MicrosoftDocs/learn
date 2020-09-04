@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.securing-you-basics-beyond.4-multi-factor-authentication
 metadata:
-  title: Multi-factor authentication
+  title: Improve account security with multi-factor authentication
   description: Understanding the basics of multi-factor authentication, and using it for securing your identity.
   ms.date: 05/30/2020
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Multi-factor authentication
+title: Improve account security with multi-factor authentication
 durationInMinutes: 10
 content: |
   [!include[](includes/4-multi-factor-authentication.md)]
