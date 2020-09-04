@@ -1,4 +1,4 @@
-In this exercise, you'll implement and test a simple CI/CD pipeline by doing the following:
+In this exercise, you'll implement and test a CI/CD pipeline by performing the following tasks:
 
 - Set up permissions to deploy to ACR and AKS from GitHub
 - Create a GitHub Action to implement a simple CI/CD pipeline
@@ -66,7 +66,7 @@ Select the **Actions** tab in your repository and then select the **set up a wor
 
 :::image type="content" source="../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="View for the Actions tab in the GitHub repository, highlighting the link 'set up an workflow yourself'" border="true" lightbox="../media/4-implement-github-action/set-up-custom-github-workflow.png":::
 
-### 1. Add the action specification
+### 1. Add the Action specification
 
 The specification is already included in this document and needs some customization but we'll review it before continuing. It's relatively easy to understand, but we include a general description here, before getting to the actual YAML file:
 
@@ -135,7 +135,7 @@ jobs:
         password:  ${{ secrets.REGISTRY_PASSWORD }}
         registry: ${{ env.REGISTRY_LOGIN_SERVER }}
         path:  ${{ env.CONTEXT_PATH }}
-        dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH , env.DOCKER_FILE_PATH ) }}
+        dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH, env.DOCKER_FILE_PATH) }}
         repository:  ${{ env.IMAGE_NAME }}
         tags: ${{ env.TAG }}
         push: true
@@ -166,7 +166,7 @@ jobs:
 
     - name: Deploy
       run: |
-        helm upgrade --install eshoplearn-webspa --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH , env.CHART_PATH ) }}
+        helm upgrade --install eshoplearn-webspa --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
 ```
 
 Now copy the above YAML content and paste it into the edit view to move to the next step.
@@ -198,25 +198,15 @@ Now copy the above YAML content and paste it into the edit view to move to the n
 
     In the preceding image, you can see the content of the *build-and-deploy.yml* file with the mentioned environment variables set.
 
-1. Select the **Start commit** button to save the Action file.
+1. Select the **Start commit** button, select the **Commit directly to the main branch** radio button, and select **Commit new file** to save the Action file.
 
-This will create a commit in the repository. You can commit directly to **main**, as shown next:
+    :::image type="content" source="../media/4-implement-github-action/commit-action-to-develop.png" alt-text="Commit confirmation popup view, with option 'Commit directly to the develop branch' option selected" border="true" lightbox="../media/4-implement-github-action/commit-action-to-develop.png":::
 
-:::image type="content" source="../media/4-implement-github-action/commit-action-to-develop.png" alt-text="Commit confirmation popup view, with option 'Commit directly to the develop branch' option selected" border="true" lightbox="../media/4-implement-github-action/commit-action-to-develop.png":::
-
-This GitHub Action definition will be part of the repository from now on. If you want to make any change, you'll just have to update the file locally and push to **develop** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **main**.
-
-### 2. Enable Actions for your repository
-
-Now you have to enable back Actions in your repository, from the **Settings** tab, as shown in the next image.
-
-:::image type="content" source="../media/4-implement-github-action/enabling-actions.png" alt-text="View for the Settings > Action permissions, with the 'Enable local and third party Actions' option selected" border="true" lightbox="../media/4-implement-github-action/enabling-actions.png":::
-
-The updated action will the be triggered next time a commit is pushed to **main**. From now on, unless you disable Actions in your repository, the CI/CD pipeline you just created will be run automatically every time the develop branch is updated.
+This GitHub Action definition will be part of the repository from now on. If you want to make any change, update the file locally and push to **main** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **main**.
 
 ## Modify the SPA microservice
 
-So you've just finished creating your first CI/CD pipeline and someone from the marketing department wants to start a campaign for the new discount coupon feature, so the customers can get whatever discount they want, if they just guess the correct codes and nobody has used them before (Somehow they think this is a good idea 😂)
+You've just finished creating your first CI/CD pipeline and someone from the marketing department wants to start a campaign for the new discount coupon feature, so the customers can get whatever discount they want, if they just guess the correct codes and nobody has used them before (Somehow they think this is a good idea 😂)
 
 Since you can guess this won't last too long, that is, this is just a proof-of-concept (POC), you're doing the minimum possible changes, right in the **main** branch:
 
@@ -321,9 +311,9 @@ appVersion: 1.1.0
 
 ### 5. Save your changes
 
-Just commit and push to develop.
+Just commit and push to *main*.
 
-Since we are committing to **develop**, the action will run immediately and the app should be deployed after a few minutes.
+Since we are committing to *main*, the action will run immediately and the app should be deployed after a few minutes.
 
 ## Wait for deployment
 
