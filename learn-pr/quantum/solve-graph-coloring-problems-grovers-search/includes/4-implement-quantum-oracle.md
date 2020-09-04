@@ -1,9 +1,5 @@
 ﻿In this unit, we will see how to implement a quantum oracle for our example graph coloring problem from unit 2.
 
-## Implementing quantum oracles
-
-
-
 ## Representing the graph
 
 We need two parameters to represent a graph: the number of vertices and the list of edges. 
