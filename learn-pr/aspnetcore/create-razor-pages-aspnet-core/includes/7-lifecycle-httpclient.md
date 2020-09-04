@@ -2,7 +2,12 @@ In this unit, you will step through the lifecycle of the *:::no-loc text="Contos
 
 ## Advantages of using a typed *:::no-loc text="HTTPClient":::* service architecture
 
-As mentioned in the previous unit, the `ProductService` class is an example of a typed `HttpClient` service architecture and is responsible for managing HTTP requests to the web API. Provided as a typed service you have the advantage of injecting it as a constructor parameter directly into the PageModel classes in this project. Using this architecture provides the advantage of letting the framework take on the responsibility of creating an instance of the `HttpClient` class and disposing of it when it's no longer needed. This is a great feature for a project such as this one which will make use of `HttpClient` instances for each CRUD operation.
+As mentioned in the previous unit, the `ProductService` class is an example of a typed `HttpClient` service architecture and is responsible for managing HTTP requests to the web API.
+
+A typed `HttpClient` service architecture provides the following advantages:
+
+* The service class is injected as a constructor parameter directly into the PageModel classes in this project.
+* The framework takes the responsibility of creating an instance of the `HttpClient` class and disposing of it when it's no longer needed. An advantage for a project that makes use of `HttpClient` instances for each CRUD operation.
 
 ## Examine the structure of the *:::no-loc text="ProductService":::* class file and walk through its registration and instantiation as a typed service
 
@@ -91,7 +96,7 @@ services.AddHttpClient<ProductService>(config => {
 });
 ```
 
-The `BaseAddress` URI that the `HttpClient` instance will use for all requests to the web API are set in the following `ProductService` configuration entry in the *:::no-loc text="appsettings.json":::* file:
+The `BaseAddress` URI that the `HttpClient` instance will use for all requests to the web API are set in a `ProductService` configuration entry in the *:::no-loc text="appsettings.json":::* file, such as in the following example:
 
 ```json
   "ProductService": {
@@ -145,6 +150,6 @@ As pointed out previously, the `ProductService` service was injected directly in
   
 Once the ASP.NET Core runtime determines the `HTTPClient` instance is no longer in use, it automatically disposes of it.
 
-You now have a completed project that includes a new *:::no-loc text="Create":::* RazorPage and its `PageModel` class. We have also walked through how your new `Create` RazorPage and its `PageModel` injects and calls the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` class methods that encapsulates HTTP request logic.
+You now have a completed project that includes a new *:::no-loc text="Create":::* RazorPage and its `PageModel` class. We've also walked through how your new `Create` RazorPage and its `PageModel` injects and calls the *:::no-loc text="ContosoPets.UI":::* project's `ProductService` class methods that encapsulate HTTP request logic.
 
-Next let's build, deploy and test your updated ContosoPets.UI application.
+Next let's build, deploy, and test your updated ContosoPets.UI application.

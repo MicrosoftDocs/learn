@@ -49,13 +49,13 @@ In this task, we will use the Webhook + API function to display a message when t
 
 3. Review the default values of Function name = **HttpTrigger1** and Authorization Level = **Function**. Then click **Create Function**. This will run a function whenever the app receives an HTTP request. Review other templates that you can choose from.
 
-    :::image type="content" source="../media/function-lab-select-function-name.png" alt-text="Screenshot of the create a function step in the Azure functions for dot net getting started pane inside Azure portal. The HTTP Trigger button was chosen previously and now you need to enter the function name.  You will accept the defualt and click Create Function.":::
+    :::image type="content" source="../media/function-lab-select-function-name.png" alt-text="Screenshot of the create a function step in the Azure functions for dot net getting started pane inside Azure portal. The HTTP Trigger button was chosen previously and now you need to enter the function name.  You will accept the default and click Create Function.":::
 
 4. Your new **HttpTrigger1** function has been created, the overview page is opened. 
 
     :::image type="content" source="../media/function-lab-select-function-created.png" alt-text="Screenshot of the Function with your newly created HttpTrigger showing the overview page.":::
 
-5. Click on the **Code + Text** entry in the menu.  Notice the code is designed to run an HTTP request and log information. Also, notice the function returns a Hello message with a name. 
+5. Click on the **Code + Test** entry in the menu.  Notice the code is designed to run an HTTP request and log information. Also, notice the function returns a Hello message with a name. 
 
     :::image type="content" source="../media/function-lab-select-function-code.png" alt-text="Screenshot of the function code. The Hello message is highlighted.":::
 
@@ -86,4 +86,6 @@ In this task, we will use the Webhook + API function to display a message when t
 Congratulations! You have created a Function App to display a Hello message when there is an HTTP request. 
 
 > [!NOTE]
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
 > To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

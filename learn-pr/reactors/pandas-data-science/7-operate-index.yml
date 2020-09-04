@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.pandas-data-science.7-operate-index
+title: Operating on data in pandas
+metadata:
+  title: Operating on data in pandas
+  description: Operating on data in pandas.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 5
+content: |
+  [!include[](includes/7-operate-index.md)]
