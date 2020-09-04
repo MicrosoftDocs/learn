@@ -1,4 +1,4 @@
-In this exercise, you'll implement and test a CI/CD pipeline by performing the following tasks:
+In this unit, you'll implement and test a CI/CD pipeline by performing the following tasks:
 
 - Set up permissions to deploy to ACR and AKS from GitHub
 - Create a GitHub Action to implement a simple CI/CD pipeline
@@ -43,7 +43,7 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
 1. Select the **New secret** button.
 1. Enter `AZURE_CREDENTIALS` and the JSON output you copied in the **Name** and **Value** text boxes, respectively.
 
-    At this point you should have something like this:
+    At this point, you should have something like this:
 
     :::image type="content" source="../media/4-implement-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/add-github-secrets.png":::
 1. Select the **Add secret** button.
@@ -60,155 +60,144 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
 
 ## Create a GitHub Action to implement a CI/CD pipeline
 
-### 1. Create a custom Action
+Create a new GitHub Action with the following steps:
 
-Select the **Actions** tab in your repository and then select the **set up a workflow yourself** link:
+1. Select the **Actions** tab in your repository and select the **set up a workflow yourself** link:
 
-:::image type="content" source="../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="View for the Actions tab in the GitHub repository, highlighting the link 'set up an workflow yourself'" border="true" lightbox="../media/4-implement-github-action/set-up-custom-github-workflow.png":::
+    :::image type="content" source="../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="Actions tab in the GitHub repository, highlighting the workflow creation link" border="true" lightbox="../media/4-implement-github-action/set-up-custom-github-workflow.png":::
 
-### 1. Add the Action specification
+1. Add the Action specification by pasting the following YAML into the editor:
 
-The specification is already included in this document and needs some customization but we'll review it before continuing. It's relatively easy to understand, but we include a general description here, before getting to the actual YAML file:
+    ```yml
+    name: eShop build & deploy
 
-- It's triggered when a commit is pushed to the **main** branch.
+    on:
+      push:
+        branches: [ main ]
 
-- Defines several variables that are used by the tasks below, there are a few that you have to set before the action can be run:
-  - **CONTEXT_PATH** (use the relative path to the solution folder, use "." if it's the same)
-  - **YOUR_CLUSTER_NAME** (use **ESHOP_AKSNAME**'s value)
-  - **YOUR_RESOURCE_GROUP_NAME** (use **ESHOP_RG**'s value)
-  - **YOUR_CLUSTER_IP** (use **ESHOP_LBIP**'s value)
-  - **REGISTRY_LOGIN_SERVER** (use **ESHOP_REGISTRY**'s value)
+    env:
+      IMAGE_NAME: webspa
+      TAG: linux-latest
+      CONTEXT_PATH: .
+      DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
+      CHART_PATH: deploy/k8s/helm-simple/webspa
+      CLUSTER_RESOURCE_GROUP: YOUR_CLUSTER_RESOURCE_GROUP
+      CLUSTER_NAME: YOUR_CLUSTER_NAME
+      IP_ADDRESS: YOUR_CLUSTER_IP
+      REGISTRY_LOGIN_SERVER: YOUR_ACR_LOGIN_SERVER
 
-- It has two jobs:
-  - **build-and-push-docker-image** that builds the image a pushes it to the ACR.
-  - **deploy-to-aks** that upgrades the helm chart, so the new image is deployed.
+    jobs:
+      build-and-push-docker-image:
+        runs-on: ubuntu-latest
+        steps:
 
-- The **build-and-push-docker-image** job runs in an **ubuntu-latest** agent and has two steps:
-  - **Get code from the repository** that checks out the develop branch and
-  - **Build and push Docker images** that builds the image a pushes it to the ACR.
-  - **NOTE**: Both of the above steps are standard tasks, taken from [GitHub Action's marketplace](https://github.com/marketplace?type=actions).
+        - name: Get code from the repository
+          uses: actions/checkout@v1
+          with:
+            ref: main
 
-- The **deploy-to-aks** job depends on the **build-and-push-docker-image**, runs in **ubuntu-latest** agent, and has five steps:
-  - **Azure Kubernetes set context** that sets the AKS credentials in the agent's *.kube/config* file,
-  - **Get code from the repository** that checks out the code from the repository,
-  - **Helm tool installer** that installs Helm,
-  - **Azure Login** that logs in to Azure using the Service Principal's, and
-  - **Deploy** that upgrades the chart. There are a few important comments about this one:
-    - It's a custom step that runs a script
-    - Passes the ACR as the **registry** parameter to Helm, so this particular image is deployed to AKS from your ACR, instead of the initial deployment repository.
+        - name: Build and push Docker images
+          uses: docker/build-push-action@v1.1.0
+          with:
+            username: ${{ secrets.REGISTRY_USERNAME }}
+            password:  ${{ secrets.REGISTRY_PASSWORD }}
+            registry: ${{ env.REGISTRY_LOGIN_SERVER }}
+            path:  ${{ env.CONTEXT_PATH }}
+            dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH, env.DOCKER_FILE_PATH) }}
+            repository:  ${{ env.IMAGE_NAME }}
+            tags: ${{ env.TAG }}
+            push: true
 
-You can see the YAML file details next:
+      deploy-to-aks:
+        needs: [build-and-push-docker-image]
+        runs-on: ubuntu-latest
+        steps:
+        - name: Azure Kubernetes set context
+          uses: Azure/aks-set-context@v1
+          with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            resource-group: ${{env.CLUSTER_RESOURCE_GROUP}}
+            cluster-name: ${{env.CLUSTER_NAME}}
 
-```yml
-name: eShop build & deploy
+        - name: Get code from the repository
+          uses: actions/checkout@v1
+          with:
+            ref: main
 
-on:
-  push:
-    branches-ignore:
-      - '**'
+        - name: Helm tool installer
+          uses: Azure/setup-helm@v1
 
-env:
-  IMAGE_NAME: webspa
-  TAG: linux-latest
-  CONTEXT_PATH: .
-  DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
-  CHART_PATH: deploy/k8s/helm-simple/webspa
-  CLUSTER_RESOURCE_GROUP: eshop-learn-rg
-  CLUSTER_NAME: YOUR_CLUSTER_NAME
-  IP_ADDRESS: YOUR_CLUSTER_IP
-  REGISTRY_LOGIN_SERVER: YOUR_ACR_LOGIN_SERVER
+        - name: Azure Login
+          uses: Azure/login@v1.1
+          with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-jobs:
-  build-and-push-docker-image:
-    runs-on: ubuntu-latest
-    steps:
+        - name: Deploy
+          run: |
+            helm upgrade --install eshoplearn-webspa --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
+    ```
 
-    - name: Get code from the repository
-      uses: actions/checkout@v1
-      with:
-        ref: develop
+    The preceding YAML defines a GitHub Action that:
 
-    - name: Build and push Docker images
-      uses: docker/build-push-action@v1.1.0
-      with:
-        username: ${{ secrets.REGISTRY_USERNAME }}
-        password:  ${{ secrets.REGISTRY_PASSWORD }}
-        registry: ${{ env.REGISTRY_LOGIN_SERVER }}
-        path:  ${{ env.CONTEXT_PATH }}
-        dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH, env.DOCKER_FILE_PATH) }}
-        repository:  ${{ env.IMAGE_NAME }}
-        tags: ${{ env.TAG }}
-        push: true
-
-  deploy-to-aks:
-    needs: [build-and-push-docker-image]
-    runs-on: ubuntu-latest
-    steps:
-    - name: Azure Kubernetes set context
-      uses: Azure/aks-set-context@v1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-        resource-group: ${{env.CLUSTER_RESOURCE_GROUP}}
-        cluster-name: ${{env.CLUSTER_NAME}}
-
-    - name: Get code from the repository
-      uses: actions/checkout@v1
-      with:
-        ref: develop
-
-    - name: Helm tool installer
-      uses: Azure/setup-helm@v1
-
-    - name: Azure Login
-      uses: Azure/login@v1.1
-      with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-    - name: Deploy
-      run: |
-        helm upgrade --install eshoplearn-webspa --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
-```
-
-Now copy the above YAML content and paste it into the edit view to move to the next step.
-
-## Configure the Action
-
-### 1. Set the environment variables for the Action
+    - Is triggered when a commit is pushed to the `main` branch.
+    - Defines environment variables that are used tasks in the specification. In the next step, you will set new values for:
+      - `CLUSTER_NAME`
+      - `CLUSTER_RESOURCE_GROUP`
+      - `IP_ADDRESS`
+      - `REGISTRY_LOGIN_SERVER`
+    - Has two jobs&mdash;sets of steps that execute on the same runner:
+      - `build-and-push-docker-image` that builds the Docker image and pushes it to the ACR instance. The `build-and-push-docker-image` job runs in an `ubuntu-latest` agent and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
+        - `Get code from the repository` checks out the `main` branch.
+        - `Build and push Docker images` builds the image and pushes it to ACR.
+      - `deploy-to-aks` deploys new images. The `deploy-to-aks` job depends on the `build-and-push-docker-image` job, runs in an `ubuntu-latest` agent, and has five steps:
+        - `Azure Kubernetes set context` sets the AKS credentials in the agent's *.kube/config* file.
+        - `Get code from the repository` checks out the code from the repository.
+        - `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
+        - `Azure Login` logs in to Azure using the service principal credentials.
+        - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
 1. Replace the default Action file name of *main.yml* with *build-and-deploy.yml*.
 
     :::image type="content" source="../media/4-implement-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-implement-github-action/action-file-name.png":::
 
-1. In the Action YAML editor, apply the updates described in the following table to the `env` block. Run the following command to get the necessary values:
+1. Run the following command in Azure Cloud Shell to get values for the `env` block's environment variables:
 
     ```bash
     cat ~/clouddrive/aspnet-learn-temp/config.txt
     ```
 
-    | Variable name            | Variable value                    |
-    |--------------------------|-----------------------------------|
-    | `CLUSTER_RESOURCE_GROUP` | use the value of `ESHOP_RG`       |
-    | `CLUSTER_NAME`           | use the value of `ESHOP_AKSNAME`  |
-    | `IP_ADDRESS`             | use the value of `ESHOP_LBIP`     |
-    | `REGISTRY_LOGIN_SERVER`  | use the value of `ESHOP_REGISTRY` |
+1. In the Action YAML editor, replace the values for the following environment variables. Use the values from the output in the preceding step.
+    - `CLUSTER_RESOURCE_GROUP`
+    - `CLUSTER_NAME`
+    - `IP_ADDRESS`
+    - `REGISTRY_LOGIN_SERVER`
 
     At this point, you should see something like this:
 
-    :::image type="content" source="../media/4-implement-github-action/configure-github-action.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/configure-github-action.png":::
+    ```yml
+    env:
+      IMAGE_NAME: webspa
+      TAG: linux-latest
+      CONTEXT_PATH: .
+      DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
+      CHART_PATH: deploy/k8s/helm-simple/webspa
+      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
+      CLUSTER_NAME: eshop-learn-aks
+      IP_ADDRESS: 203.0.113.55
+      REGISTRY_LOGIN_SERVER: eshoplearn20200904000000000.azurecr.io
+    ```
 
-    In the preceding image, you can see the content of the *build-and-deploy.yml* file with the mentioned environment variables set.
+    In the preceding snippet, you can see a portion of the *build-and-deploy.yml* file with the mentioned environment variables set.
 
-1. Select the **Start commit** button, select the **Commit directly to the main branch** radio button, and select **Commit new file** to save the Action file.
+1. Select the **Start commit** button, select the **Commit directly to the `main` branch** radio button, and select **Commit new file** to save the Action file.
 
-    :::image type="content" source="../media/4-implement-github-action/commit-action-to-develop.png" alt-text="Commit confirmation popup view, with option 'Commit directly to the develop branch' option selected" border="true" lightbox="../media/4-implement-github-action/commit-action-to-develop.png":::
-
-This GitHub Action definition will be part of the repository from now on. If you want to make any change, update the file locally and push to **main** or create a pull request (PR). If you create a PR, the Action will be triggered when merging to **main**.
+This GitHub Action definition will be part of the repository from now on. If you want to make any change, update the file locally and push to `main` or create a pull request (PR). If you create a PR, the Action will be triggered when merging to `main`.
 
 ## Modify the SPA microservice
 
 You've just finished creating your first CI/CD pipeline and someone from the marketing department wants to start a campaign for the new discount coupon feature, so the customers can get whatever discount they want, if they just guess the correct codes and nobody has used them before (Somehow they think this is a good idea 😂)
 
-Since you can guess this won't last too long, that is, this is just a proof-of-concept (POC), you're doing the minimum possible changes, right in the **main** branch:
+Since you can guess this won't last too long, that is, this is just a proof-of-concept (POC), you're doing the minimum possible changes, right in the `main` branch:
 
 ### 1. Add a call out in the home page
 
@@ -299,7 +288,7 @@ export class OrdersNewComponent implements OnInit {
 
 Update the version to `1.1.0` in the chart, file *deploy/k8s/helm-simple/webspa/Chart.yaml* (line 21) as shown next:
 
-```yaml
+```yml
 apiVersion: v2
 name: webspa
 description: A Helm chart for Kubernetes
@@ -317,7 +306,7 @@ Since we are committing to *main*, the action will run immediately and the app s
 
 ## Wait for deployment
 
-If you click in the **Actions** tab in your repository, you should be able to monitor the progress, as shown in the next image.
+If you select the **Actions** tab in your repository, you should be able to monitor the progress, as shown in the next image.
 
 :::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
 
@@ -327,13 +316,13 @@ If you monitor your pods using the command `kubectl get pods -w` you should see 
 
 :::image type="content" source="../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/replacing-pods.png":::
 
-In the preceding image you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
+In the preceding image, you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
 
 You can also check the `webspa` microservice deployment history, with the command `helm history eshoplearn-webspa` to get something like this:
 
 :::image type="content" source="../media/4-implement-github-action/deployment-history.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed" border="true" lightbox="../media/4-implement-github-action/deployment-history.png":::
 
-At this point you just have to refresh the browser to see the changes, as shown in the next image.
+At this point, you just have to refresh the browser to see the changes, as shown in the next image.
 
 :::image type="content" source="../media/4-implement-github-action/changes-deployed.png" alt-text="WebSPA home page view, showing the 'promotion message'" border="true" lightbox="../media/4-implement-github-action/changes-deployed.png":::
 
@@ -350,7 +339,6 @@ Checking the deployment history again you know that everything is back to normal
 :::image type="content" source="../media/4-implement-github-action/deployment-rollback.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.0.0 is now deployed" border="true" lightbox="../media/4-implement-github-action/deployment-rollback.png":::
 
 > **NOTE**
->
 > In a real-life scenario, you'd include at least one tests step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
 >
 > You'd usually also have the pipeline triggered on each PR, to make sure the PR builds correctly and tests run successfully, before reviewing the PR.
