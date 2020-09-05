@@ -1,16 +1,75 @@
 In the previous units we have introduced the search problem and learned to implement its instances as quantum oracles. 
 
-In this unit we will learn Grover's algorithm for solving search problems.
+In this unit we will learn Grover's algorithm for solving search problems. 
+We will not dive deep into the gate-level implementation details, and will focus the discussion on the high-level logic instead.
 
----
+## Algorithm outline
 
-Notes from outline:
+Let's start with an outline of the algorithm, and then discuss what each step does in more details.
 
-Keep the description high-level – we don't want to go into the circuit-level discussion.
+1. We start by preparing an equal superposition of all basis states.
+   
+   > This is a very common first step for quantum algorithms in general.
+
+2. The main part of the algorithm is repeating a sequence of steps multiple times. This sequence is called "Grover's iteration" and consists of two steps:
+
+   * Apply the quantum oracle.  
+     This multiplies the phases of all states that are solutions to our problem by $-1$, as we've seen in the earlier units.
+
+     > Notice that this is the only step that uses the information about our problem.
+
+   * Apply the so-called "diffusion operator".  
+     This will change the amplitudes of the basis states as follows: the amplitudes that were greater than the average of the amplitudes will get smaller, and the amplitudes that were less than the average will get larger.
+
+     > This step does not depend on our problem.
+
+   Overall one iteration *decreases* the amplitudes of the basis states that are not solutions to our problem, and *increases* the amplitudes of the basis states that are solutions, while keeping both types of amplitudes positive.
+
+3. Finally, we measure the state of the system.  
+   Repeating the iteration several times will introduce significant difference between the two types of amplitudes, so the measurement will yield the answer with a high probability.
+
+## Algorithm visualization
+
+Now, let's take a look this algorithm from a slightly different angle, visualizing the system state at each step.
+
+Let's say that our search space (all possible values that our variables can take) has $N$ elements, and $M$ of them are solutions to our problem.
+
+We'll define two state vectors: 
+
+* an equal superposition of $M$ "good" basis states (states that are solutions to our problem)  
+
+  $$|good\rangle = \frac{1}{\sqrt{M}} \sum_{x : f(x) = 1} |x\rangle$$
+* and an equal superposition of $N - M$ "bad" basis states (states that are *not* solutions to our problem)
+
+  $$|bad\rangle = \frac{1}{\sqrt{N-M}} \sum_{x : f(x) = 0} |x\rangle$$
+
+The algorithm never distinguishes different "good" or different "bad" states until the final measurement, so all amplitudes of "good" states remain equal to each other, and all amplitudes of "bad" states remain equal to each other.
+This means that we can always represent the overall system state as a superposition of the states $|good\rangle$ and $|bad\rangle$.
+
+1. We start with an equal superposition of all basis states, both "good" and "bad". This state will be represented as follows:
+
+   $$|all\rangle = \sqrt{\frac{M}{N}} |good\rangle + \sqrt{\frac{N-M}{N}} |bad\rangle$$
+
+   If we imagine a plane on which $|good\rangle$ and $|bad\rangle$ vectors correspond to vertical and horizontal axes, respectively, we can plot this state on the plane like this:
+
+   ![Figure 1. A circle showing superposition of all states](../media/5-1-equal-superposition.png)
+
+   The angle $\theta$ depends on the proportion of "good" states among all basis states: $\sin \theta = \sqrt{\frac{M}{N}}$.
+
+2. Next, we apply the oracle. Remember that this operation multiplies the amplitudes of "good" states by $-1$. On the circle plot, this will leave horizontal component of the state vector unchanged and reverses its vertical component. In other words, this operation is a reflection along the horizontal axis:
+
+   ![Figure 2. A circle showing the result of the first reflection](../media/5-2-first-reflection.png)
+
+3. Now we apply the diffusion operator. Turns out that its effect is another reflection, this time along the vector $|all\rangle$:
+
+   ![Figure 3. A circle showing the result of the second reflection](../media/5-3-second-reflection.png)
+
+   Notice how this sequence of two reflections becomes a rotation counterclockwise by an angle $2\theta$. If we repeat this sequence again, reflecting the new state first along the horizontal axis and then along the $|all\rangle$ vector, it will perform a rotation by $2\theta$ again - the angle of this rotation depends only on the angle between the reflection axes and not on the state we reflect.
+
+4. So every iteration we do rotates our 
 
 Visuals:
 
-1. Circle superposition diagram with "solutions" and "non-solutions" axis, two reflections that sum up to a rotation, a sequence of rotations that bring the state closer to the "solutions" (the latter would be animated)
 1. Amplitudes diagram with amplitudes of various states changing during the phases of the algorithm (animated)
 
 ---
