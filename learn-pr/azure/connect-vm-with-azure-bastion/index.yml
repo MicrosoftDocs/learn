@@ -33,6 +33,7 @@ units:
 - learn.connect-vm-with-azure-bastion.exercise-connect-to-vm-with-bastion
 - learn.connect-vm-with-azure-bastion.manage-remote-sessions
 - learn.connect-vm-with-azure-bastion.exercise-enable-diagnostic-logs-monitor-sessions
+- learn.connect-vm-with-azure-bastion.knowledge-check
 - learn.connect-vm-with-azure-bastion.summary
 badge:
   uid: learn.connect-vm-with-azure-bastion.badge
