@@ -29,7 +29,7 @@ quiz:
       isCorrect: true
       explanation: 'You can combine them with programs in Python or .NET languages if you need additional funcionality not available for Q#.'
       
-   - content: 'Select which of the following sentences about the chemistry library is true.'
+  - content: 'Select which of the following sentences about the chemistry library is true.'
     choices:
     - content: 'The chemistry library is used to generate interactive 3D visualizations of molecules.'
       isCorrect: false
@@ -39,9 +39,9 @@ quiz:
       explanation: 'The energy levels of molecules are important to predict and understand properties of different materials.'
     - content: "The chemistry library uses Grover's search algorithm to find the energy levels of a molecule."
       isCorrect: false
-      explanation: "The chemistry library doesn't use Grover's algorihm. It uses the phase estimation algorithm to obtain the energy levels."
+      explanation: "The chemistry library doesn't use Grover's algorithm. It uses the phase estimation algorithm to obtain the energy levels."
       
-    - content: 'Select which of the following sentences about the quantum machine learning library is true.'
+  - content: 'Select which of the following sentences about the quantum machine learning library is true.'
     choices:
     - content: 'The quantum machine learning library allows you to run neural networks in quantum computers.'
       isCorrect: false
