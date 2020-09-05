@@ -14,7 +14,10 @@ These consist of:
 
 - The new *quantum machine learning library*, which provides an implementation of an hybrid quantum-classical algorithm that makes use of quantum computing to encode and process the data. This library is not meant to be ready for production but as a research environment for those interested in running experiments to explore the use of quantum computing in machine learning.
 
-- The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer. This includes advanced signed/unsigned integer arithmetic, as well as support for fixed-point representations and polynomial evaluation. Many quantum algorithms require some level of arithmetic manipulation for the information encoded in the qubit registers. The operations implemented in this library provide you the necessary arithmetic operations to implement algorithms like Shor's factoring algorithm.
+- The *quantum numerics library*, which provides tools to implement a host of mathematical functions in the native operations of a quantum computer.
+This includes advanced signed/unsigned integer arithmetic, as well as support for fixed-point representations and polynomial evaluation.
+Many quantum algorithms require some level of arithmetic manipulation for the information encoded in the qubit registers.
+The operations implemented in this library provide you the necessary arithmetic operations to implement algorithms like Shor's factoring algorithm.
 
 ## Accessing the libraries 
 
