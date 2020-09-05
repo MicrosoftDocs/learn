@@ -43,7 +43,7 @@ problem. Most of them work in the following way:
 
 A good classifier learns to classify the training data set $D_{\text{train}}$ so
 that it can be generalized to any $D_{\text{test}}$. For example, a classifier
-that predicts perfectly all the elements of $D_{\text{train}}}$ but performs
+that predicts perfectly all the elements of $D_{\text{train}}$ but performs
 badly on $D_{\text{test}}$ is a bad classifier, since it got very specialized in
 learning $D_{\text{train}}$ but is not able to generalize. This is commonly
 known as *overfitting*.
