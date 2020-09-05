@@ -1,6 +1,6 @@
-In the previous units we have introduced the search problem and learned to implement its instances as quantum oracles. 
+In the previous units, we have introduced the search problem and learned to implement its instances as quantum oracles. 
 
-In this unit we will learn Grover's algorithm for solving search problems. 
+In this unit, we will learn Grover's algorithm for solving search problems. 
 We will not dive deep into the gate-level implementation details, and will focus the discussion on the high-level logic instead.
 
 ## Algorithm outline
@@ -14,12 +14,12 @@ Let's start with an outline of the algorithm, and then discuss what each step do
 2. The main part of the algorithm is repeating a sequence of steps multiple times. This sequence is called "Grover's iteration" and consists of two steps:
 
    * Apply the quantum oracle.  
-     This multiplies the phases of all states that are solutions to our problem by $-1$, as we've seen in the earlier units.
+     This operation multiplies the phases of all states that are solutions to our problem by $-1$, as we've seen in the earlier units.
 
      > Notice that this is the only step that uses the information about our problem.
 
    * Apply the so-called "diffusion operator".  
-     This will change the amplitudes of the basis states as follows: the amplitudes that were greater than the average of the amplitudes will get smaller, and the amplitudes that were less than the average will get larger.
+     This operator will change the amplitudes of the basis states as follows: the amplitudes that were greater than the average of the amplitudes will get smaller, and the amplitudes that were less than the average will get larger.
 
      > This step does not depend on our problem.
 
@@ -27,6 +27,7 @@ Let's start with an outline of the algorithm, and then discuss what each step do
 
 3. Finally, we measure the state of the system.  
    Repeating the iteration several times will introduce significant difference between the two types of amplitudes, so the measurement will yield the answer with a high probability.
+
 
 ## Algorithm visualization
 
@@ -56,7 +57,7 @@ This means that we can always represent the overall system state as a superposit
 
    The angle $\theta$ depends on the proportion of "good" states among all basis states: $\sin \theta = \sqrt{\frac{M}{N}}$.
 
-2. Next, we apply the oracle. Remember that this operation multiplies the amplitudes of "good" states by $-1$. On the circle plot, this will leave horizontal component of the state vector unchanged and reverses its vertical component. In other words, this operation is a reflection along the horizontal axis:
+2. Next, we apply the oracle. Remember that this operation multiplies the amplitudes of "good" states by $-1$. On the circle plot, this transformation will leave horizontal component of the state vector unchanged and reverses its vertical component. In other words, this operation is a reflection along the horizontal axis:
 
    ![Figure 2. A circle showing the result of the first reflection](../media/5-2-first-reflection.png)
 
@@ -64,26 +65,30 @@ This means that we can always represent the overall system state as a superposit
 
    ![Figure 3. A circle showing the result of the second reflection](../media/5-3-second-reflection.png)
 
-   Notice how this sequence of two reflections becomes a rotation counterclockwise by an angle $2\theta$. If we repeat this sequence again, reflecting the new state first along the horizontal axis and then along the $|all\rangle$ vector, it will perform a rotation by $2\theta$ again - the angle of this rotation depends only on the angle between the reflection axes and not on the state we reflect.
+   Notice how this sequence of two reflections becomes a rotation counterclockwise by an angle $2\theta$. If we repeat this sequence again, reflecting the new state first along the horizontal axis and then along the $|all\rangle$ vector, it will perform a rotation by $2\theta$ again - the angle of this rotation depends only on the angle between the reflection axes and not on the state we reflect. 
 
-4. So every iteration we do rotates our 
+4. So, every iteration we do rotates our state vector $2\theta$ counterclockwise. When should we perform the measurement?  
+   
+   The probability of getting a certain basis state as the measurement outcome equals the squared amplitude of that state in the superposition. 
+   The bigger the amplitude, the higher is the chance of getting the corresponding state when doing the measurement.
 
-Visuals:
+   Our goal is to get one of the "good" states with probability as high as possible, so we need to amplify the amplitudes of "good" states as much as we can (and to reduce the amplitudes of "bad" states correspondingly).
+   Geometrically this means that we want to rotate our state vector as close to the vertical axis as possible.
 
-1. Amplitudes diagram with amplitudes of various states changing during the phases of the algorithm (animated)
+   ![Figure 4. A circle showing the several rotations](../media/5-4-measurement.png)
 
----
+   If we pick the right number of iterations (more on that later), we'll get to the point at which the measurement will produce a correct answer with sufficiently high probability.
 
 
 ## Algorithm analysis
 
-Grover's search algorithm has several important properties which are worth calling out explicitly.
+Grover's search algorithm has several important properties that are worth calling out explicitly.
 
 ### Grover's algorithm is probabilistic
 
 The final measurement will produce a result that solves our problem with high probability, but not with absolute certainty; in most cases there remains a small probability of failure.
 
-We have to deal with this in the same way we're dealing with classical randomized algorithms: check whether the result we got is indeed a solution to our problem, and if it's not, rerun the algorithm from scratch. 
+We have to deal with the possible failure in the same way we're dealing with classical randomized algorithms: check whether the result we got is indeed a solution to our problem, and if it's not, rerun the algorithm from scratch. 
 Unfortunately, there is no way to use the result we obtained to improve the chances of success for the next attempt.
 
 
@@ -95,16 +100,29 @@ If our problem has $N$ possible variable assignments, and $M$ of them are soluti
 
 $$R_{opt} \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}$$
 
-Continuing to iterate past that number will start reducing that probability, until we reach nearly-zero success probability on iteration $2R_{opt}$. 
-After that the probability will grow again and approach 100% on iteration $3R_{opt}$, and so on.
+Continuing to iterate past that number will start reducing that probability, until we reach nearly-zero success probability on iteration $2 R_{opt}$. 
+After that the probability will grow again and approach 100% on iteration $3 R_{opt}$, and so on.
 
-> TODO: quick circle-visual explanation why this is the case
+> To understand this behavior, recall our circle visualization. 
+> 
+> After $k$ iterations the angle between the horizontal axis and the state vector equals $2k+1$, and we want to get it as close to $\frac{\pi}{2}$ as we can. 
+> For most applications $M$ is much smaller than $N$, so we can approximate $\theta \approx \sin \theta = \sqrt{\frac{N}{M}}$. 
+> This allows us to estimate the optimal number of iterations.
+> 
+> The periodic behavior of the success probability can be explained using the same visualization.
+> Each iteration is a rotation in the same direction by a fixed angle. If we keep iterating, we'll over-rotate our state, and it will start getting further and further away from the vertical axis, thus reducing our success probability.
+>
+> ![Figure 5. A circle showing overrotation](../media/5-5-overrotation.png)
+> 
+> Once the state passes the horizontal axis, further rotations will bring it closer to the vertical axis from the opposite direction, which will increase our success probability again 
+> (remember that measurement probabilities are defined by *squares* of amplitudes, not just amplitudes).
+
 
 ### But I don't know how many solutions my problem has!
 
-In our case we have a very small and easy to analyze problem, so we can calculate the number of solutions by hand. 
-In practical applications you don't usually know how many solutions your problem has before you solve it.
+In our case, we have a very small and easy to analyze problem, so we can calculate the number of solutions by hand. 
+In practical applications, you don't usually know how many solutions your problem has before you solve it.
 
-To handle this, you can pick the number of iterations as a random number between $1$ and $R_{opt}$, run the algorithm, and if it doesn't yield an answer, retry with a different number of iterations.
+To handle this issue, you can pick the number of iterations as a random number between $1$ and $R_{opt}$, run the algorithm, and if it doesn't yield an answer, retry with a different number of iterations.
 
-In the next unit, we will see how to implement the algorithm we've just learned in Q#, and run it to solve our graph coloring problem!
+In the next unit, we will see how to implement the algorithm we've  learned in this unit in Q#, and run it to solve our graph coloring problem!
