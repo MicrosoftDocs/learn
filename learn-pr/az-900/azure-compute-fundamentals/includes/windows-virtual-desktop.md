@@ -11,7 +11,8 @@ The following video gives you an overview of Windows Virtual Desktop.
 <div align="center">
 
 <video width="500" height="375" controls="controls">
-<source src="https://1drv.ms/u/s!Av2sm7U9ljcjtKEuqPF1Mdk9vxC-9Q?e=pwcARb" type="video/mp4">
+<source src="http://www.geekybob.com/files/windows-virtual-desktop.mp4" type="video/mp4">
+<!-- source src="https://1drv.ms/u/s!Av2sm7U9ljcjtKEuqPF1Mdk9vxC-9Q?e=pwcARb" type="video/mp4" -->
 <p><em>Your browser does not support the video tag.</em></p>
 </video>
 
