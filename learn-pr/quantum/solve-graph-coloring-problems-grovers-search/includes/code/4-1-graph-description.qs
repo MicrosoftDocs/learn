@@ -1,5 +1,4 @@
-namespace ExploringGroversSearchAlgorithm
-{
+namespace ExploringGroversSearchAlgorithm {
     @EntryPoint()
     operation SolveGraphColoringProblem () : Unit {
         // Graph description: hardcoded from the example

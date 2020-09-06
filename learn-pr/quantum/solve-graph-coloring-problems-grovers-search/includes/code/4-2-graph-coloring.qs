@@ -1,5 +1,4 @@
-namespace ExploringGroversSearchAlgorithm
-{
+namespace ExploringGroversSearchAlgorithm {
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Intrinsic;
 

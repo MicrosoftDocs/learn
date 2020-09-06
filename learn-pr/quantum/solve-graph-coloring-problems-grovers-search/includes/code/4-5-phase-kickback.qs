@@ -1,5 +1,4 @@
-﻿namespace ExploringGroversSearchAlgorithm
-{
+﻿namespace ExploringGroversSearchAlgorithm {
     open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Convert;
