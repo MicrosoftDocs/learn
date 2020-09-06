@@ -37,17 +37,17 @@ Here is the full code.
 
 You will recognize the first three operations as the oracle implementation from unit 4, and the fourth one - as the generic search algorithm implementation we've seen earlier in this unit.
 
-This leaves us only the last operation, which defines the problem we're solving, creates all the necessary parameters, calls the generic search implementation and interprets the results.
+This leaves us only the last operation, which defines the problem we're solving, creates all the necessary parameters, calls the generic search implementation, and interprets the results.
 
 * Note the definition of variables `markingOracle` and `phaseOracle` - the two variants of implementing our problem as a quantum operation. 
   Both of them use _partial application_ - fixing several parameters of an operation to produce another operation that takes fewer parameters. 
-  Thus, `MarkValidVertexColoring` takes three parameters (the list of the graph edges, the input register and the target qubit), but `markingOracle` is an operation that takes only two, the input register and the target qubit, and the list of graph edges is fixed to the `edges` variable.
+  Thus, `MarkValidVertexColoring` takes three parameters (the list of the graph edges, the input register, and the target qubit), but `markingOracle` is an operation that takes only two, the input register and the target qubit, and the list of graph edges is fixed to the `edges` variable.
 
 * As we've seen in the previous unit, the optimal number of iterations depends both on the search space size and the number of solutions to the problem. 
   The first one is easy to define - any bit string of `2 * nVertices` bits can be interpreted as a potential coloring of `nVertices` vertices, so there are $2^{2 nVertices} = 1024$ candidates.
   The number of solutions is generally trickier to estimate, but in our case the graph structure is easy to analyze. 
-  Vertices 0 - 3 make up a full graph, so they have to be assigned distinct colors in any order - this can be done in $4!$ ways. 
-  Vertex 4 is connected only to vertex 3, so it can take any color except the color of vertex 3, which gives us 3 options for each coloring of the other vertices. 
+  Vertices 0 - 3 make up a full graph, so they have to be assigned distinct colors in any order - there are $4!$ ways to do this. 
+  Vertex 4 is connected only to vertex 3, so it can take any color except the color of vertex 3, which gives us three options for each coloring of the other vertices. 
   The total number of solutions is $4! \cdot 3 = 72$.
 
   > How many iterations do we end up doing? $\frac{\pi}{4} \sqrt{\frac{N}{M}} = 2.96 \approx 3$.
@@ -75,6 +75,6 @@ TODO:
 1. Amplitudes diagram with amplitudes of various states changing during the phases of the algorithm (animated)
 ---
 
-Congratulations! You've just implemented your first quantum search algorithm and used it to solve a small problem.
+Congratulations! You've implemented your first quantum search algorithm and used it to solve a small problem.
 
 In the next unit, we will take a look at what kinds of real-world problems are or are not a good fit for using Grover's search to solve them.
