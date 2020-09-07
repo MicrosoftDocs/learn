@@ -1,6 +1,6 @@
 To create and use Azure services, you need an Azure subscription. When you are completing modules on Microsoft Learn, most of the time a temporary subscription is created for you, which runs in an environment called the *Microsoft Learn Sandbox*. However, when you are working with your own applications and business needs, you need to create an Azure account, and a subscription will be created for you. Once you've created an Azure account, you are free to create additional subscriptions; for example: your company might use a single Azure account for your business, and separate subscriptions for development, marketing, and sales departments. Once you have created an Azure subscription, you can start creating Azure resources within each subscription.
 
-![Illustration showing the different levels of account scope.](../media/scope-levels.png)
+[![Illustration showing the different levels of account scope.](../media/scope-levels.png)](../media/scope-levels-expanded.png#lightbox)
 
 If you're new to Azure, you can sign up for a free account on the Azure website to start exploring at no cost to you. Once you're ready, you can choose to upgrade your free account and create a new subscription that enables you to start paying for Azure services you need to use that are beyond the limits of a free account.
 
@@ -19,4 +19,3 @@ The Azure free account includes free access to popular Azure products for 12 mon
 Many of the exercises on Microsoft Learn use a technology called the "Sandbox," which creates a temporary subscription that is added to your Azure account. This temporary subscription allows you to create Azure resources for the duration of a learning module, and Microsoft Learn will automatically clean up the temporary resources for you when you've completed the module.
 
 When you are completing a Microsoft Learn module, you are welcome to use your personal subscription to complete the exercises in a module, but the sandbox is the preferred method to use since it allows you to create and test Azure resources at no cost to you.
-
