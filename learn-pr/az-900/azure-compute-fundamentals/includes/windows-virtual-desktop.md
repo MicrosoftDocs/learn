@@ -13,7 +13,7 @@ The following video gives you an overview of Windows Virtual Desktop.
 </video>
 </div>
 
-[//]: # [!VIDEO https://www.microsoft.com/videoplayer/embed/RE3J9rw]
+[//]: # (VIDEO https://www.microsoft.com/videoplayer/embed/RE3J9rw )
 
 ## Why should you use Windows Virtual Desktop?
 
