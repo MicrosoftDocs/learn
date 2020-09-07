@@ -1,0 +1,63 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.5-knowledge-check
+title: Knowledge Check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 03/10/2020
+  author: deanobalino
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'What does Azure Sentinel provide?'
+    choices:
+    - content: 'A solution for checking your security posture in the cloud'
+      isCorrect: false
+      explanation: 'Being aware of  your security posture in the cloud is ver important. Azure Security Center is a product that helps you to understand this, not Azure Sentinel.'
+    - content: 'An end to end solution for Security Operations'
+      isCorrect:  true
+      explanation: 'Yes, Azure Sentinel give you and end to end solution for security operations, including visibility, analytics, hunting,incident and automation.'
+    - content: 'A solution for securely storing keys and secrets in the cloud'
+      isCorrect: false
+      explanation: 'Azure Key Vault helps you do this. Azure Sentinel is focused on security operations'
+
+  - content: 'Which Language is used to query data within Azure Sentinel?'
+    choices:
+    - content: 'SQL'
+      isCorrect: false
+      explanation: 'SQL is used to query SQL based relational databases.'
+    - content: 'GraphQL'
+      isCorrect: false
+      explanation: 'GraphQL is a specification for querying API data'
+    - content: 'KQL'
+      isCorrect: true
+      explanation: 'Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Azure Sentinel holds its data.'
+
+  - content: 'With Azure Sentinel, you can connect data from resources that reside in other cloud providers and on premises. True or False?'
+    choices:
+    - content: 'True'
+      isCorrect: true
+      explanation: 'You can connect data from Azure, On Premises or other cloud providers in to Azure Sentinel using Data Connectors.'
+    - content: 'False'
+      isCorrect: false
+      explanation: 'You can connect data from Azure, On Premises or other cloud providers in to Azure Sentinel using Data Connectors.'
+
+  - content: 'Within Azure Sentinel, which Azure product is used to run automated Playbooks in response to alerts?'
+    choices:
+    - content: 'Azure Log Analytics'
+      isCorrect: false
+      explanation: 'Azure Log Analytics is the underlying system that we use to store our log data within Azure Sentinel.'
+    - content: 'Azure Monitor'
+      isCorrect: false
+      explanation: 'Azure Monitor is used to infrastructure and application performance management.'
+    - content: 'Azure Logic Apps'
+      isCorrect: true
+      explanation: 'Azure Logic Apps is a serverless no code solution for automating workflows. It integrates with hundreds of other services, making it a really powerful solution for Security Orchestration, Automation and Response (SOAR).'

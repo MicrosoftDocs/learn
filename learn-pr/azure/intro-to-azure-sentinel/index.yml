@@ -8,13 +8,12 @@ metadata:
   ms.author: debryen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: luken
 title: Introduction to Azure Sentinel
 summary: Traditional Security Information and Event Management (SIEM) systems typically take a long time to get set up and configured. They are also not necessarily designed with cloud workloads in mind. Azure Sentinel enables you to start getting valuable security insights from your cloud and on premises data within very little time. This module will help you get started. 
 abstract: |
   By the end of this module you will:
   - Be able to understand the various components and functionality of Azure Sentinel.
-  - Be able to provision and perform basic configuration of Azure Sentinel within their Azure Subscription.
+  - Be able to decide if Azure Sentinel could be a good fit for your organization's needs.
 iconUrl: /learn/achievements/intro-to-azure-sentinel.svg
 levels:
 - beginner
@@ -29,10 +28,8 @@ prerequisites: None
 units:
 - learn.intro-to-azure-sentinel.1-introduction
 - learn.intro-to-azure-sentinel.2-what-is-azure-sentinel
-- learn.intro-to-azure-sentinel.3-initial-configuration
-- learn.intro-to-azure-sentinel.4-querying-data
-- learn.intro-to-azure-sentinel.5-visualizing-data
-- learn.intro-to-azure-sentinel.6-configure-alerts
-- learn.intro-to-azure-sentinel.7-summary
+- learn.intro-to-azure-sentinel.3-key-components
+- learn.intro-to-azure-sentinel.4-use-cases
+- learn.intro-to-azure-sentinel.5-summary
 badge:
   uid: learn.intro-to-azure-sentinel.badge

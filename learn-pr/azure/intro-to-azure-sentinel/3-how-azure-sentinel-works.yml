@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-sentinel.3-how-azure-sentinel-works
+title: Initial Sentinel Configuration
+metadata:
+  title: How Azure Sentinel Works
+  description: Understanding the key components of Azure Sentinel and how they tie together.
+  ms.date: 03/10/2020
+  author: deanobalino
+  ms.author: debryen
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-how-azure-sentinel-works.md)]
