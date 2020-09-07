@@ -28,7 +28,7 @@ qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT`, you can
 transform a register in the state $\ket{00}$ to the entangled state
 $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
 
-$$CNOT( H\ket{0}),\ket{0})=CNOT(\frac1{\sqrt2}(\ket{0}+\ket{1}),\ket{0})=
+$$CNOT( H\ket{0},\ket{0})=CNOT(\frac1{\sqrt2}(\ket{0}+\ket{1}),\ket{0})=
 \frac1{\sqrt2}(CNOT(\ket{0},\ket{0})+CNOT(\ket{1},\ket{0}))=\frac1{\sqrt2}(\ket{00}+\ket{11}).$$
 
 To implement this in Q#:
@@ -77,6 +77,23 @@ also be expressed as `Controlled X([control], target)`. In general, you can put 
 operation in the place of `X`. For example, `Controlled Y([control], target)`
 applies the `Y` gate conditioned on the state of the control qubit.
 
+Q# is a versatile language and you always have different ways to achieve the
+same. Now you are going to replicate the code using `Controlled X` instead of
+`CNOT`.
+
+1. Modify *Program.qs* like this and then save the file:
+
+   :::code language="qsharp" source="code/7-program-2.qs":::
+
+1. From the terminal, run `dotnet run`:
+
+   ```dotnetcli
+   dotnet run
+   ```
+
+   Your program should behave exactly like the program you created in the
+   previous example, since both operations are equivalent.
+
 To learn more about the `Controlled` functor and many other Q# features, you can
 take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations?azure-portal=true).
 
@@ -109,15 +126,15 @@ reasonable time. To use a Resources Estimator:
    For example, if you execute it with the last Q# code block above, you get this:
 
    ```output
-   Metric          Sum
-   CNOT            1
-   QubitClifford   1
-   R               0
-   Measure         2
-   T               0
-   Depth           0
-   Width           2
-   BorrowedWidth   0
+   Metric          Sum    Max
+   CNOT            1       1
+   QubitClifford   1       1
+   R               0       0
+   Measure         2       2
+   T               0       0
+   Depth           0       0
+   Width           2       2
+   BorrowedWidth   0       0
    ```
 
    We need 1 CNOT gate, 1 Clifford gate to apply `H` and 2 measurements to
@@ -129,10 +146,12 @@ reasonable time. To use a Resources Estimator:
    they need. You will find that `ResourcesEstimator` is a very useful tool as
    you advance in your path to become a Q# quantum developer.
 
-   >[!NOTE]
-   > Clifford gates are a basic kind of quantum operation and are useful to
-   > estimate the amount of resources needed to perform a quantum computation. You 
-   > can learn more about them in the [Wikipedia page on Clifford gates](https://en.wikipedia.org/wiki/Clifford_gates).
+   >[!NOTE] Clifford gates are a basic kind of quantum operation and are useful
+   > to estimate the amount of resources needed to perform a quantum
+   > computation. Both $H$ and $CNOT$ are examples of Clifford operations. The
+   > `QubitClifford` row includes only single-qubit Clifford operations. You can
+   > learn more about them in the [Wikipedia page on Clifford
+   > gates](https://en.wikipedia.org/wiki/Clifford_gates).
 
    To learn more about `ResourcesEstimator` and get a detailed description of each of
    the parameters of the output and more estimation tools, see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true) in the user guide.

@@ -26,6 +26,9 @@ The oracle has to act on quantum states instead of classical bits. To enable
 this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
 can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 
+You can learn more about quantum oracles in the [conceptual documentation of the
+Quantum Development Kit](https://docs.microsoft.com/quantum/concepts/oracles).
+
 ## Deutsch–Jozsa algorithm
 
 This quantum algorithm is famous for being one of the earliest examples of using quantum computing to solve a problem exponentially faster than its classical counterpart.
@@ -51,7 +54,7 @@ or balanced with the least amount of calls possible.
 If you solve this problem classically, how many calls to the given function will
 we need?
 
-The first call will give us no information - regardless of whether it returns $0$
+The first call will give you no information - regardless of whether it returns $0$
 or $1$, the function could still be constant or balanced.
 
 In the best case scenario, the second call will return a different value and you'll be able to
@@ -104,9 +107,9 @@ best known classical algorithm is the *general number field sieve* algorithm.
 Shor's algorithm takes advantage of the fact that the factoring problem can be
 transformed to a problem that consists on finding the period of a periodic
 function. This is known as the order finding problem. Shor's algorithm uses
-superposition and interference to apply the quantum Fourier transform - a
-version of the discrete Fourier transform for quantum computers - to find the 
-period of the function faster than any known classical algorithm.
+superposition and interference to apply *iterative phase estimation*, a kind of
+algorithm that finds a complex phase of an operation that enables you to find
+the period of the function.
 
 ![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.svg)
 ![Diagram explaining Shor's algorithm](../media/8-shor2.svg)
@@ -116,10 +119,10 @@ period of the function faster than any known classical algorithm.
 The algorithm consists of three parts:
 
 1. A classical part that transforms the factoring problem into a problem of
-   finding the period $r$ of a periodic function $f(x)=a^x mod N$, where $a$ is
+   finding the period $r$ of a periodic function $f(x)=a^x \mod N$, where $a$ is
    a random number whose greater common divisor with $N$ is $1$.
 
-1. A quantum part that finds the period $r$ using the quantum Fourier transform.
+1. A quantum part that finds the period $r$ using iterative phase estimation.
 
 Shor's algorithm succeeds in finding a prime factor with high probability but
 it can fail. However, repeating the algorithm several times until it finds the

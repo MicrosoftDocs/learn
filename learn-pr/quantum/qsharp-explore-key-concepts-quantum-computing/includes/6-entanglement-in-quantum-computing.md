@@ -32,7 +32,7 @@ as one.
 Entanglement is different from classical correlations, since the state of the systems is not determined and you can talk only about the probabilities associated to the outcomes. In fact, you can say that two systems are entangled
 when the correlations between measurements of both systems can't be explained with local classical physics.
 
-### Entangled states are difficult to simulate
+### Entanglement and superposition are difficult to simulate
 
 Entanglement is a phenomenon that happens in nature, not only in quantum
 computers. Quantum mechanical objects, such as atoms, electrons, and photons,
@@ -40,7 +40,7 @@ can all exist in entangled states.
 
 We would like to simulate these physical systems to learn and design material
 properties for drug development, industrial chemical processes, and many others.
-However, is possible to proof that this kind of entangled systems are difficult
+However, some of these entangled systems seem to be difficult
 to simulate with classical computers.
 
 Suppose you have a molecule with $n$ different atoms that are entangled. The
