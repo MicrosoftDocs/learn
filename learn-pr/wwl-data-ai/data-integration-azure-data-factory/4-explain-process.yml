@@ -4,12 +4,12 @@ title: Explain the data factory process
 metadata:
   title: Explain the data factory process
   description: "Explain the data factory process"
-  ms.date: 09/06/2020
+  ms.date: 09/09/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/4-explain-process.md)]
