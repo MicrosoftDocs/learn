@@ -1,15 +1,15 @@
-Let's start with a few definitions and a quick tour through Security Information and Event Management (SIEM) systems in general and Azure Sentinel.
+Let's start with a few definitions and a look at Security Information and Event Management (SIEM) systems and Azure Sentinel.
 
 ## What is Security Incident and Event Management (SIEM)?
 A SIEM is a tool that enables organizations to collect, analyze and perform Security Operations on their computer systems, wether those be hardware appliances, applications, or both.
 
-In it's simplest form, a SIEM will enable you to collect logs, query them, do some form of correlation or anomoly detection and create alerts and incidents based on findings.
+In it's simplest form, a SIEM will enable you to collect logs, query them, do some form of correlation or anomaly detection and create alerts and incidents based on findings.
 
 The functionality that a SIEM may offer could include: 
 
 **Log Management** - The ability to collect, store and query the log data from resources within our environment.
 
-**Alerting** - Proactively looking within the log data for potential security incidents and Anomolies.
+**Alerting** - Proactively looking within the log data for potential security incidents and Anomalies.
 
 **Visualization** - 
 Graphs and Dashboards that enable us to gain visual insights into our log data.
