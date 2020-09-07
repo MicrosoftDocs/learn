@@ -125,4 +125,4 @@ $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 Each state has a 50% probability of being measured and hence we have a balanced
 bit generator. We also can check that $\frac12 + \frac12 = 1$.
 
-In the next part, you'll use Q# to see how to create different superpositions of qubits and inspect their probabilities.
+In the next part, you'll use Q# to see how to prepare different superpositions of qubits and inspect their probabilities.
