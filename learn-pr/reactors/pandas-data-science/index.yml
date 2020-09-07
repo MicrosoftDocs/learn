@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.reactors.pandas-data-science
+metadata:
+  title: Introduction to the pandas library for data science
+  description: Learn about the pandas library for data science. Run statements and scripts, declare variables, and create a basic pandas app.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Introduction to the pandas library for data science
+summary: Learn about the pandas library for data science. Run statements and scripts, declare variables, and create a basic pandas app.
+abstract: |
+  In this module, you will:
+  - Import the pandas library into Jupyter Notebooks in Visual Studio Code
+  - Understand how to use Series and DataFrames to store remote data
+  - Learn how to clean and manipulate large, remote datasets
+  - Apply operations to Series and DataFrames for data science analysis
+
+  This module is complementary content for Microsoft Reactor Workshops.
+
+prerequisites: |
+  - Introduction to Python for data science
+  - Introduction to NumPy for data science
+# placeholder icon
+iconUrl: /learn/achievements/reactors/pandas-data-science.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.pandas-data-science.1-introduction
+- learn.reactors.pandas-data-science.2-data-structures-series
+- learn.reactors.pandas-data-science.3-data-structures-dataframes
+- learn.reactors.pandas-data-science.4-index-objects
+- learn.reactors.pandas-data-science.5-select-data-series
+- learn.reactors.pandas-data-science.6-select-data-dataframes
+- learn.reactors.pandas-data-science.7-operate-index
+- learn.reactors.pandas-data-science.8-index-series
+- learn.reactors.pandas-data-science.9-index-dataframes
+- learn.reactors.pandas-data-science.10-operations-dataframes-series
+badge:
+  uid: learn.reactors.pandas-data-science.badge

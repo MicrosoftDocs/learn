@@ -57,7 +57,7 @@ products:
 - azure-container-registry
 - azure-iot-edge
 - azure-iot-hub
-- azure-machine-learning-service
+- azure-machine-learning
 - azure-resource-manager
 - azure-virtual-machines
 modules:

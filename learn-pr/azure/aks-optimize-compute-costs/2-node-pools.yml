@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Suppose you have a software solution three critical components. The first component is a web application, the second is a service that process online orders, and the third is video rendering and analysis service that is run add-hoc and requires GPU-based VMs. How many node pools would you deploy in an Azure Kubernetes Service (AKS) cluster to manage the solution to optimize cost?"
+  - content: "Suppose you have a software solution with three critical components. The first component is a web application, the second is a service that process online orders, and the third is video rendering and analysis service that is run add-hoc and requires GPU-based VMs. How many node pools would you deploy in an Azure Kubernetes Service (AKS) cluster to manage the solution to optimize cost?"
 
     choices:
     - content: "Deploy a single node pool at the time of creating the AKS cluster. Assign three nodes per component for a total of nine nodes in the node pool using GPU-based VMs. Enabled autoscaling on the node pool."

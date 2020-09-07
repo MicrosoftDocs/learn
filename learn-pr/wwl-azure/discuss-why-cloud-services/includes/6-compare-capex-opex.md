@@ -1,4 +1,4 @@
-In previous years, startup companies needed to acquire a physical premises and infrastructure to start their business and begin trading. Large amounts of money were need to get a new business up and running, or to grow an existing company. A company would have to buy new datacenters or new servers in order to allow them build out new services, which they could then deliver to their customers. With cloud services, that is no longer the case. 
+In previous years, startup companies needed to acquire a physical premises and infrastructure to start their business and begin trading. Large amounts of money were needed to get a new business up and running, or to grow an existing company. A company would have to buy new datacenters or new servers in order to allow them build out new services, which they could then deliver to their customers. With cloud services, that is no longer the case. 
 
 Today, organizations can sign up for a service from a cloud provider to get up and running. This enables the company to begin selling or providing services to their customers quickly, without the need for a significant investment into up front costs.
 

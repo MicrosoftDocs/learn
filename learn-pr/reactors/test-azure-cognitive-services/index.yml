@@ -1,0 +1,49 @@
+### YamlMime:Module
+uid: learn.reactors.test-azure-cognitive-services
+metadata:
+  title: Test Azure Cognitive Services
+  description: Learn how to test Azure Cognitive Services for data science operations.
+  ms.date: 05/19/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+title: Test Azure Cognitive Services  
+summary: Learn how to test Azure Cognitive Services for data science operations.
+abstract: |
+  In this module, you will:
+  - Learn how to use Azure Cognitive Services for data science operations.
+  - Learn how to test Azure Cognitive Services Computer Vision data.
+  - Learn how to test Azure Cognitive Services Text Analytics data.
+  - Learn how to use the Azure Cognitive Services Text Analytics API.
+  - Learn how to use the Azure Cognitive Services Sentiment Analysis API.
+  - Learn how to use the Azure Cognitive Services Key Phrases API.
+  - Learn how to use the Azure Cognitive Services Entities API.
+
+  Complementary content for Microsoft Reactor Workshops.
+prerequisites: |
+  - Review the steps to manipulate and clean data.
+  - Understand machine learning models for data science.
+  - Know simple cloud-based machine learning models for data science.
+# placeholder icon
+iconUrl: /learn/achievements/reactors/test-azure-cognitive-services.svg
+hidden: true
+levels:
+- beginner
+roles:
+- developer
+- student
+- data-scientist
+products:
+- azure
+- vs-code
+units:
+- learn.reactors.test-azure-cognitive-services.1-introduction
+- learn.reactors.test-azure-cognitive-services.2-computer-vision
+- learn.reactors.test-azure-cognitive-services.3-text-analytics
+- learn.reactors.test-azure-cognitive-services.4-text-analytics-api
+- learn.reactors.test-azure-cognitive-services.5-sentiment-analysis-api
+- learn.reactors.test-azure-cognitive-services.6-key-phrases-api
+- learn.reactors.test-azure-cognitive-services.7-entities-api
+badge:
+  uid: learn.reactors.test-azure-cognitive-services.badge 
