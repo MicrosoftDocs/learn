@@ -69,9 +69,9 @@ the only information you have is that $f(x)$ takes a bit string of length $n$ as
 The algorithm is as follows:
 
 1. Start with a register of $n$ qubits initiated in the state \ket{0...0}.
-1. Apply $\hat H$ to every qubit to create a superposition of all possible states.
+1. Apply $H$ to every qubit to create a superposition of all possible states.
 1. Apply the oracle $U_f$ to the superposition to cause quantum interference.
-1. Apply $\hat H$ to every qubit again to get out of superposition.
+1. Apply $H$ to every qubit again to get out of superposition.
 1. Measure every qubit: if all measurements results are $0$, the function is
    constant, otherwise, it is balanced.
 

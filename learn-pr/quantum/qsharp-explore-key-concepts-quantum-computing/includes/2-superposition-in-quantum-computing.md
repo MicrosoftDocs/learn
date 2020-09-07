@@ -7,9 +7,9 @@ In the [Create your first Q# program by using the Quantum Development Kit](https
 
 Quantum computers are controllable quantum mechanical devices that exploit the properties of quantum physics to perform computations. You may have seen or heard about the Schrödinger equation that describes every quantum mechanical system:
 
-$$i \hbar \frac{\partial}{\partial t}\psi(t)= H \psi(t).$$
+$$i \hbar \frac{\partial}{\partial t}\psi(t)= \hat H \psi(t).$$
 
-It captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $H$, of the system, with $t$ being time and $\hbar$ being the Plank constant.
+It captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $\hat H$, of the system, with $t$ being time and $\hbar$ being the Plank constant.
 
 Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when writing quantum algorithms. But we can use it to assist us in understanding some concepts of quantum computing.
 
@@ -41,15 +41,14 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 
 An *operator* (sometimes known as *gate*) is a function that transforms the state of a quantum system to another state.
 
-$$\hat A \ket{\psi} = \ket{\psi'}$$
+$$ A \ket{\psi} = \ket{\psi'}$$
 
-We say that an operator $\hat A$ is *linear* when it has the following properties
+We say that an operator $ A$ is *linear* when it has the following properties
 for addition and multiplication by a complex number:
 
-$$\hat A(\ket{\psi_1} + \ket{\psi_2}) = \hat A\ket{\psi_1} + \hat
-A\ket{\psi_2}$$
+$$ A(\ket{\psi_1} + \ket{\psi_2}) =  A\ket{\psi_1} + A\ket{\psi_2}$$
 
-$$\hat A(a\ket{\psi})=a \hat A(\ket{\psi})$$
+$$ A(a\ket{\psi})=a  A(\ket{\psi})$$
 
 where $a$ is a complex number.
 
@@ -69,7 +68,7 @@ Remember that in the module [Create your first Q# program by using the Quantum
 Development
 Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
 you used superposition to create a quantum random number generator. You used the operator `H` to put a qubit in the state $\ket{0}$ into superposition.
-Mathematically, this is: $$ \hat H \ket{0} = \frac1{\sqrt2} \ket{0} +
+Mathematically, this is: $$  H \ket{0} = \frac1{\sqrt2} \ket{0} +
 \frac1{\sqrt2} \ket{1}.$$
 
 Linearity is a fundamental property of
