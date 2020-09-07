@@ -1,4 +1,4 @@
-In the previous unit, you learned about Azure resources and resource groups. Resources are created in **Regions**, which are different geopgraphical locations around the globe that contain Azure datacenters. Microsoft Azure is made up of datacenters located around the globe. When you leverage a service or create a resource such as a SQL database or virtual machine, you are using physical equipment in one or more of these locations. These specific datacenters aren't exposed to end users directly; instead, Azure organizes them into _regions_. As you will see later in this unit, some of these regions offer **Availability Zones**, which are different Azure datacenters within that region.
+In the previous unit, you learned about Azure resources and resource groups. Resources are created in **Regions**, which are different geographical locations around the globe that contain Azure datacenters. Microsoft Azure is made up of datacenters located around the globe. When you leverage a service or create a resource such as a SQL database or virtual machine, you are using physical equipment in one or more of these locations. These specific datacenters aren't exposed to end users directly; instead, Azure organizes them into _regions_. As you will see later in this unit, some of these regions offer **Availability Zones**, which are different Azure datacenters within that region.
 
 ## Azure Regions
 
@@ -14,15 +14,15 @@ A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Austr
 [//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/global-infrastructure/regions/, resampled smaller here for the initial view.)
 [ ![Global map of available Azure regions as of June 2020.](../media/regions-small.png) ](../media/regions-expanded.png#lightbox)
 
-### Why is this important?
+### Why are regions important?
 
-Azure has more global regions than any other cloud provider. This gives you the flexibility to bring applications closer to your users no matter where they are. It also provides better scalability, redundancy, and preserves data residency for your services.
+Azure has more global regions than any other cloud provider. These regions give you the flexibility to bring applications closer to your users no matter where they are. It also provides better scalability, redundancy, and preserves data residency for your services.
 
 ### Special Azure regions
 
-Azure has specialized regions that you might want to use when building out your applications for compliance or legal purposes. These include:
+Azure has specialized regions that you might want to use when building out your applications for compliance or legal purposes. These regions include:
 
-- *US DoD Central*, *US Gov Virginia*, *US Gov Iowa* and more: These are physical and logical network-isolated instances of Azure for US government agencies and partners. These datacenters are operated by screened US persons and include additional compliance certifications.
+- *US DoD Central*, *US Gov Virginia*, *US Gov Iowa* and more: These regions are physical and logical network-isolated instances of Azure for US government agencies and partners. These datacenters are operated by screened US persons and include additional compliance certifications.
 
 - *China East*, *China North* and more: These regions are available through a unique partnership between Microsoft and 21Vianet, whereby Microsoft does not directly maintain the datacenters.
 
@@ -30,7 +30,7 @@ Regions are what you use to identify the location for your resources, but there 
 
 ## Azure Availability Zones
 
-You want to ensure your services and data are redundant so you can protect your information in case of failure. When you are hosting your infrastructure, this requires creating duplicate hardware environments. Azure can help make your app highly available through _Availability Zones_.
+You want to ensure your services and data are redundant so you can protect your information in case of failure. When you are hosting your infrastructure, setting up your own redundancy requires creating duplicate hardware environments. Azure can help make your app highly available through _Availability Zones_.
 
 ### What is an Availability Zone?
 
