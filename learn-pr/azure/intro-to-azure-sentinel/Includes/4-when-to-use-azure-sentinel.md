@@ -1,5 +1,3 @@
-# When to use Azure Sentinel
-
 Azure Sentinel provides us with a solution to perform Security Operations on our Cloud and On Premises environments.
 
 Azure Sentinel should be used if you are looking to collect event data from various sources and you wish to perform security operations on that data to identify suspicious activity. Security operations could include:

@@ -1,5 +1,3 @@
-# What is Azure Sentinel 
-
 Let's start with a few definitions and a quick tour through Security Information and Event Management (SIEM) systems in general and Azure Sentinel.
 
 ## What is Security Incident and Event Management (SIEM)?

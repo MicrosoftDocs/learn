@@ -1,5 +1,3 @@
-# How Azure Sentinel works
-
 As we've already learned, Azure Sentinel is designed to help you enable end to end security operations starting from log ingestion, through to automated response to security alerts.
 
 Here are the key features and components of Azure Sentinel.
