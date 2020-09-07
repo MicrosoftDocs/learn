@@ -41,6 +41,3 @@ To manage and assign Azure Arc policies for a computer, browse to Azure Arc in t
 After assigning policies, you can review the policy settings on the selected server from Azure Arc.
 
 :::image type="content" source="../media/review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
-
-
-
