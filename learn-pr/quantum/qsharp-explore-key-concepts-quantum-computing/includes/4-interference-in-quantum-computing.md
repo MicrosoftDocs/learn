@@ -67,7 +67,7 @@ $$\ket{\psi_1}= \frac1{\sqrt2}\ket{0}+\frac1{\sqrt2}\ket{1}.$$
 
 In this case, the probabilities of measuring **0** and **1** are both $\frac12$
 (remember each amplitude squared gives the probability of obtaining each state).
-The following state is probabilistically equivalent:
+However, the following state also gives the same probabilities for each outcome:
 
 $$\ket{\psi_2}= \frac1{\sqrt2}\ket{0}-\frac1{\sqrt2}\ket{1}.$$
 

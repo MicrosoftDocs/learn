@@ -149,7 +149,11 @@ Suppose you want to create a random bit generator that is skewed. For example, y
 
 $$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
 
-This state can be obtained by sequentially applying the operations [Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)($2\arccos \sqrt{\alpha}$) to a qubit in the state $\ket{0}.$
+This state can be obtained by sequentially applying the operations $R_y(2\arccos
+\sqrt{\alpha})$ to a qubit in the state $\ket{0}.$ You can achieve this in Q#
+using operation
+[Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)
+of the Standard library.
 
 > [!TIP]
 > If you want to learn more about the math behind single qubit operations, check out the
@@ -159,7 +163,7 @@ This state can be obtained by sequentially applying the operations [Ry](https://
 
     :::code language="qsharp" source="code/3-program-2.qs":::
 
-1. From the terminal, run `dotnet run`. This example chooses $\alpha = \frac13$:
+1. From the terminal, run `dotnet run`. This example chooses $\alpha$ to be about $\frac13$:
 
     ```dotnetcli
     dotnet run --alpha 0.333333
@@ -200,7 +204,14 @@ instead of one qubit three times.
     Here, we introduce three concepts:
 
     * The `qubits` variable now represents a `Qubit` array with a length of three. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types?azure-portal=true).
-    * The [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true), [ResetAll](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall) and [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true) functions perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions that make writing quantum programs more efficient.
+    * The
+      [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true),
+      [ResetAll](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall)
+      and
+      [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
+      operations perform operations and measurements on multiple qubits with
+      less code. Q# libraries offer many different operations and functions that make writing
+      quantum programs more efficient.
     * The [BoolArrayAsInt](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) fucntions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer.
 
 1. From the terminal, run `dotnet run`.
@@ -331,7 +342,7 @@ Let's look briefly on each step:
    vanished, this is $\ket{3}=\ket{011}$, and $\ket{7}=\ket{111}$. The rest of the
    amplitudes increase to fulfill the normalization condition.
 
-    ```qsharp
+    ```output
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
     |1⟩:     0.707107 +  0.000000 i  ==     **********           [ 0.500000 ]     --- [  0.00000 rad ]

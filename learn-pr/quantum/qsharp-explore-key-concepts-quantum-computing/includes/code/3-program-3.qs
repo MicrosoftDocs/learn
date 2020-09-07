@@ -8,7 +8,7 @@ namespace ExploringSuperposition {
 
     @EntryPoint()
     operation GenerateRandomNumber() : Int {
-        using (qubits = Qubit[3]){
+        using (qubits = Qubit[3]) {
             ApplyToEach(H, qubits);
             Message("The qubit register in a uniform superposition: ");
             DumpMachine();
