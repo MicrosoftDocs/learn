@@ -33,7 +33,7 @@ To onboard and manage machines in Azure Arc, you must have certain minimal Azure
 |Read, modify, re-onboard, and delete a machine|Member of the Azure Connected Machine Resource Administrator role|
 
 > [!NOTE]
-> These are the minimum permissions required. Other role holders, such as contributors and administrators of the resource, resource group or subscription can also perform these actions. 
+> These are the minimum permissions required. Other role holders, such as contributors and administrators of the resource, resource group or subscription can also perform these actions.
 
 ### Installation process
 
@@ -49,7 +49,7 @@ The installation creates folders, services, and variables during installation.
 
 ### Use a script method to onboard a server
 
-One way to onboard a server is to generate and download a script from the Azure portal. 
+One way to onboard a server is to generate and download a script from the Azure portal.
 
 :::image type="content" source="../media/gen-script2.png" alt-text="Screenshot that depicts the Generate script page with a Windows PowerShell script on it." border="false":::
 
