@@ -2,7 +2,7 @@
 uid: learn.azure.azure-database-fundamentals
 metadata:
   title: Explore Azure database and analytics services
-  description: Learn about the database services that are available on Microsoft Azure: Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, as well as big data and analytics.
+  description: Learn about the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, as well as big data and analytics.
   ms.date: 09/11/2020
   author: rmcmurray
   ms.author: robmcm
