@@ -1,4 +1,4 @@
-Contoso could use Azure Monitor to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers. 
+Contoso could use Azure Monitor to help monitor and manage their existing on-premises server resources. By integrating with Azure Arc, Contoso could extend comprehensive, cloud-based monitoring functionality beyond Azure to their on-premises resources, or to those hosted by third-party providers.
 
 By maintaining their on-premises infrastructures, Contoso can benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, you can monitor resources such as your onboarded servers. For example, you can select **Insights** to review a map of your resources' network connections.
 
@@ -34,4 +34,3 @@ Additionally, Monitor enables you to archive collected data in Azure Storage for
 - Raise an incident and work items by taking advantage of the integration between Monitor and your internal IT service Management platform.
 
 You can also store and analyze near real-time and historical data by using Log Analytics. For on-premises computers and Azure VMs, this requires installing the Log Analytics agent, and in some cases, the Dependency Agent as well. This agent-based approach enables you to monitor the OS and its workloads by using Automation-based or Monitor-based solutions such as Update Management or Change Tracking and Inventory. You can also use Azure Security Center to identify vulnerabilities and potential threats.
-
