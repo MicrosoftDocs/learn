@@ -131,7 +131,11 @@ The `DumpMachine` function outputs a table with the information that describes t
    always need to leave the qubits you use in the state $\ket{0}$ so that it can be used by other operations.
 
 > [!TIP]
-> Q# can also be run in Jupyter Notebooks. These notebooks provide a better visualization of the `DumpMachine` outputs. You can install them and try them out by following the Quantum Development Kit documentation on [Q# Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter).
+> Q# can also be run in Jupyter Notebooks. These notebooks provide a better
+> visualization of the `DumpMachine` outputs. You can install them and try them
+> out by following the Quantum Development Kit documentation on [Q# Jupyter
+> Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter). 
+> ![Screenshot of DumpMachine function in a Jupyter notebook](../media/3-jupyter.png)
 
 ## Explore different superpositions
 
