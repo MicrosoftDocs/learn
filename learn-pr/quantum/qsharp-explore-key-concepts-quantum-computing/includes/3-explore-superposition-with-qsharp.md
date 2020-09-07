@@ -35,7 +35,9 @@ To add the library, you use the `open` directive. Modify *Program.qs* like this:
 
 ## Dump the state of the program
 
-You can use the `GenerateRandomBit` operation that you defined in the in the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module to see how `DumpMachine` works.
+In the module [Create your first Q# program by using the Quantum Development
+Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
+you defined the `GenerateRandomBit` operation. You can use it to see how `DumpMachine` works.
 
 To do so, you simply call `DumpMachine` at every step that you want to see the state of the register.
 
