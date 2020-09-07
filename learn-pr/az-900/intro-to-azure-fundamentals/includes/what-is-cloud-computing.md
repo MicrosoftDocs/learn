@@ -46,9 +46,9 @@ There are several benefits that a cloud environment has over a physical environm
 
 - **Disaster Recovery** - by taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event that disaster should occur
 
-## What are PaaS, IaaS, and SaaS?
+## What are cloud service models?
 
-If you've been around cloud computing for a while, you've probably seen these acronyms for the different *cloud service models*, which define the different level of shared responsibility that a cloud provider and cloud tenent are responsible for.
+Clouding computing falls into one of the following computing models. If you've been around cloud computing for a while, you've probably seen the *PaaS*, *IaaS*, and *SaaS* acronyms for the different *cloud service models*, which define the different level of shared responsibility that a cloud provider and cloud tenent are responsible for.
 
 | | Definition | Description |
 | --- | --- | --- |
@@ -58,7 +58,7 @@ If you've been around cloud computing for a while, you've probably seen these ac
 
 The following illustration demonstrates the services that might run in each of the cloud service models.
 
-[![Services separated by cloud service models.](../media/iaas-paas-saas.png)](../media/iaas-paas-saas.png#lightbox)
+[![Services separated by cloud service models.](../media/iaas-paas-saas.png)](../media/iaas-paas-saas-expanded.png#lightbox)
 
 The following chart illustrates the various levels of responsibility between a cloud provider and a cloud tenent.
 

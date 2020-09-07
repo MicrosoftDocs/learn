@@ -68,7 +68,7 @@ For example, Azure provides AI and machine-learning services that can naturally 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWlzQ6]
 
-## What is the Azure Portal?
+## What is the Azure portal?
 
 The Azure portal is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription using a graphical user interface. You can build, manage, and monitor everything from simple web apps to complex cloud deployments. Create custom dashboards for an organized view of resources. Configure accessibility options for an optimal experience.
 

@@ -3,7 +3,6 @@ In this module, you learned how to:
 - Describe the basic concepts of cloud computing
 - Determine whether Azure is the right solution for their business needs
 - Differentiate between the different methods of creating an Azure subscription
-- Explain the basic requirements for the Azure Fundamentals AZ-900 exam
 
 ## Learn more
 
