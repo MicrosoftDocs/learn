@@ -15,7 +15,7 @@ Azure Files can be used for many common scenarios:
 
 - Diagnostic logs, metrics, and crash dumps are just three examples of data that can be written to a file share and processed or analyzed later.
 
-The following illustration shows Azure Files being used to share data between two geographical locations. Azure Files uses the Server Message Block (SMB) protocol that ensures the data is encrypted at rest and in transit.
+The following illustration shows Azure Files being used to share data between two geographical locations. Azure Files ensures the data is encrypted at rest, and the Server Message Block (SMB) protocol ensures the data is encrypted in transit.
 
 ![Illustration showing the file sharing capabilities of Azure Files between a Western US Azure File Share and a European Azure File Share, each with their own SMB users.](../media/Azure_Files.png)
 

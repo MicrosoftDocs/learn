@@ -7,7 +7,7 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
   :::column-end:::
 :::row-end:::
 
-Blobs aren't limited to common file formats. A blob could contain gigabytes of binary data streamed from a scientific instrument, an encrypted message for another application, or data in a custom format for an app you're developing.
+Blobs aren't limited to common file formats. A blob could contain gigabytes of binary data streamed from a scientific instrument, an encrypted message for another application, or data in a custom format for an app you're developing. One advantage of blob storage over disk storage is that does not require developers to think about or manage disks; data is uploaded as blobs, and Azure takes care of the physical storage needs.
 
 Blob storage is ideal for:
 
@@ -19,6 +19,8 @@ Blob storage is ideal for:
 
 Azure Blob storage lets you stream large video or audio files directly to the user's browser from anywhere in the world. Blob storage is also used to store data for backup, disaster recovery, and archiving. It has the ability to store up to 8 TB of data for virtual machines.
 
-The following illustration shows an example usage of Azure blob storage to store and stream video or audio files to a web browser.
+Blobs are stored in *containers*, which you can use to organize your blobs depending on your business needs.
 
-![Illustration showing Azure blob storage used to store and stream video or audio files to a web browser.](../media/Azure_blob.png)
+The following illustration from an earlier unit shows an example usage of Azure accounts, containers, and blobs.
+
+![Hierarchy of a storage account.](../media/account-container-blob.png)

@@ -2,7 +2,11 @@ Suppose your company, Tailwind Traders, has a number of product brochures, datas
 
 ![Tailwind Traders company logo.](../../shared/media/tailwind-traders-logo.png)
 
-In this module, you'll learn about the different Azure storage options and the scenarios in which each is appropriate.
+In this module, you'll learn about the different Azure storage options and the scenarios in which each is appropriate. 
+
+> [!NOTE]
+>
+> Azure storage is not the same as Azure database services.
 
 ## Learning objectives
 
@@ -11,9 +15,9 @@ Upon completion of this module, the learner will be able to describe the benefit
 - Azure Container (Blob) Storage
 - Azure Disk Storage
 - Azure File Storage
-- Azure Storage Tiers 
+- Azure Storage Tiers
 
 ## Prerequisites
 
 - You should be familiar with basic computing concepts and terminology
-- Familiarity with cloud computing is helpful, but isn't necessary
+- You should be familiar with cloud computing is helpful, but isn't necessary

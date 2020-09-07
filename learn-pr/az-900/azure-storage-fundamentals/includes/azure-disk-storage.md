@@ -7,7 +7,7 @@ Disk storage provides disks for virtual machines, applications, and other servic
   :::column-end:::
 :::row-end:::
 
-Disks come in many different sizes and performance levels, from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs), with varying performance abilities. Details on pricing are available on the Managed Disks pricing page.
+Disks come in many different sizes and performance levels, from solid-state drives (SSDs) to traditional spinning hard disk drives (HDDs), with varying performance abilities. Details on pricing are available on the [managed disks pricing page](https://azure.microsoft.com/pricing/details/storage/).
 
 When working with VMs, you can use standard SSD and HDD disks for less critical workloads, and premium SSD disks for mission-critical production applications. Azure Disks have consistently delivered enterprise-grade durability, with an industry-leading ZERO% annualized failure rate.
 
