@@ -3,7 +3,7 @@ uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase
 metadata:
   title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
   description: "Run Petabyte level OSS NoSQL databases with HDInsight HBase"
-  ms.date: 09/06/2020
+  ms.date: 09/09/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
@@ -21,10 +21,10 @@ abstract: |
   * Knowledge Check
 prerequisites: |
   The following pre-requisite should be completed:
-  1. Successfully login to the Azure Portal
+  1. Successfully log in to the Azure portal
   2. Understand the Azure storage options
   3. Understand the Azure compute options
-  4. Create and configure a HDInsight Cluster in the Azure Portal
+  4. Create and configure a HDInsight Cluster in the Azure portal
 iconUrl: /learn/achievements/run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.svg
 levels:
 - beginner

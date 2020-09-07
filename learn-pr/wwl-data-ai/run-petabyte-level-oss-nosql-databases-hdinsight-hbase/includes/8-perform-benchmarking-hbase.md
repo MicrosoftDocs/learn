@@ -12,11 +12,11 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 1. Go to the [Azure portal](http://portal.azure.com). Log in using your Azure account credentials.
 
-	![Logging into the Azure Portal.](../media/04-img23.png)
+	![Logging into the Azure Portal.](../media/log-into-azure.png)
 
 1. We would start with creating a **Premium Block Blob Storage Account**. From the New Page, click on **Storage Account**.
 
-	![Create a storage account in the Azure Portal.](../media/04-img24.png)
+	![Create a storage account in the Azure Portal.](../media/create-azure-storage-account.png)
 
 1. In the Create Storage Account page, populate the below fields
 
@@ -29,17 +29,17 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- **Replication**: Locally redundant storage(LRS)
 	- **Cluster log in username**: Enter username for cluster administrator(default:admin)
 
-		![Create storage account screen in the Azure Portal.](../media/04-img25.png)
+		![Create storage account screen in the Azure Portal.](../media/create-storage-account-screen.png)
 
 1. Leave all other tabs at default and click on **Review + create** to create the storage account.
 
 1. After the storage account is created, click on **Access Keys** on the left and copy **key1**. We would use this later in the cluster creation process.
 
-	![Storage account Access Keys in the Azure Portal.](../media/04-img26.png)
+	![Storage account Access Keys in the Azure Portal.](../media/view-access-keys.png)
 
 1. Let’s now start deploying an HDInsight HBase cluster with Accelerated writes. Select **Create a resource -> Analytics -> HDInsight**
 
-	![Create Azure HDInsight in the Azure Portal.](../media/04-img27.png)
+	![Create Azure HDInsight in the Azure Portal.](../media/create-azure-hdinsight-azure-portal.png)
 
 1. On the Basics Tab, populate the below fields towards the creation of an HBase cluster.
 	- **Subscription**: Should be autopopulated with the subscription details
@@ -53,7 +53,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- **Secure Shell(SSH) username**: Enter the SSH log in user (default:sshuser)
 	- **Use cluster log in password for SSH**: Check the box to use the same password for both SSH logins and Ambari Logins etc.
 
-		![Define Azure HDInsight settings in the Azure Portal.](../media/04-img28.png)
+		![Define Azure HDInsight settings in the Azure Portal.](../media/define-hdinsight-settings.png)
 
 1. Click **Next:Storage** to launch the Storage Tab and populate the below fields
 	- **Primary Storage Type**: Azure Storage.
@@ -62,11 +62,11 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- **Access Key**: Enter the key1 access key you copied earlier
 	- **Container**: HDInsight should propose a default container name. You could either choose this or create a name of your own.
 
-		![Define Storage settings for Azure HDInsight in the Azure Portal.](../media/04-img29.png)
+		![Define Storage settings for Azure HDInsight in the Azure Portal.](../media/define-hdinsight-storage-settings.png)
 
 1. Leave the rest of the options untouched and scroll down to check the checkbox Enable HBase accelerated writes.(Note that we would later be creating a second cluster without accelerated writes using the same steps but with this box unchecked.)
 
-	![Enable HBase accelerated writes in Azure HDInsight in the Azure Portal.](../media/04-img30.png)
+	![Enable HBase accelerated writes in Azure HDInsight in the Azure Portal.](../media/enable-accelerated-writes.png)
 
 1. Leave the **Security + Networking** blade to its default settings with no changes and go to the **Configuration + pricing** tab.
 
@@ -74,13 +74,13 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 
 1. Choose the Region node to **10** and **Node Size** to **DS14v2**(you could chooser smaller numbers of VMs and smaller VM SKU but ensure that both the clusters have identical number of nodes and VM SKU to ensure parity in comparison)
 
-	![Configuring nodes in Azure HDInsight in the Azure Portal.](../media/04-img31.png)
+	![Configuring nodes in Azure HDInsight in the Azure Portal.](../media/configure-hdinsight-nodes.png)
 
 1. Click **Next: Review + Create**
 
 1. In the Review and Create tab, ensure that **HBase Accelerated Writes** is Enabled under the **Storage** section.
 
-	![Azure HDInsight validation in the Azure Portal.](../media/04-img32.png)
+	![Azure HDInsight validation in the Azure Portal.](../media/validate-hdinsight-creation.png)
 
 1. Click **Create** to start deploying the first cluster with Accelerated Writes.
 
@@ -88,13 +88,13 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- Use a normal blob storage account that is recommended by default
 	- Keep the Enable Accelerated Writes checkbox unchecked on the Storage tab.
 
-		![Create Azure HDInsight in the Azure Portal.](../media/04-img33.png)
+		![Create Azure HDInsight in the Azure Portal.](../media/hdinsight-azure-portal.png)
 
 1. In the **Configuration + pricing** tab for this cluster, note that the Node configuration section does NOT have a **Premium disks per worker node** line item.
 
 1. Choose the Region node to **10** and Node Size to **D14v2**.(Also note the lack of DS series VM types like earlier). (you could chooser smaller numbers of VMs and smaller VM SKU but ensure that both the clusters have identical number of nodes and VM SKU to ensure parity in comparison)
 
-	![Configure nodes on Azure HDInsight in the Azure Portal.](../media/04-img34.png)
+	![Configure nodes on Azure HDInsight in the Azure Portal.](../media/configure-nodes-hdinsight.png)
 
 1. Click **Create** to start deploying the second cluster without Accelerated Writes.
 
@@ -108,7 +108,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- On the cluster page on the Azure portal , navigate to the SSH + Cluster log in and use the Hostname and SSH path to ssh into the cluster. The path should have below format.
 	- ssh <sshuser>@<clustername>.azurehdinsight.net 
 
-		![Connecting to the Azure HDInsight cluster in the Azure Portal.](../media/04-img35.png)
+		![Connecting to the Azure HDInsight cluster in the Azure Portal.](../media/connect-hdinsight.png)
 
 
 1. Create the Table
