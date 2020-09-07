@@ -46,14 +46,14 @@ quiz:
       explanation: "A distributed cloud is not a valid type of cloud computing."
     - content: "Hybrid cloud"
       isCorrect: false
-      explanation: "A hybrid cloud is a is a valid type of cloud computing"
+      explanation: "A hybrid cloud is a valid type of cloud computing"
     - content: "Private cloud"
       isCorrect: false
-      explanation: "A private cloud is a is a valid type of cloud computing"
+      explanation: "A private cloud is a valid type of cloud computing"
     - content: "Public cloud"
       isCorrect: false
-      explanation: "A public cloud is a is a valid type of cloud computing"
-  - content: "Which of the following is not a benefit of using cloud services?"
+      explanation: "A public cloud is a valid type of cloud computing"
+  - content: "Which of the following choices is not a benefit of using cloud services?"
     choices:
     - content: "Scalability"
       isCorrect: false

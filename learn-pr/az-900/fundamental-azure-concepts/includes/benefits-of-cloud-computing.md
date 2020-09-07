@@ -37,12 +37,12 @@ A consumption-based model has many benefits, including:
 
 There are two different types of expenses that you should consider:
 
-- **Capital Expenditure (CapEx)**: This is the up front spending of money on physical infrastructure, and then deducting that up front expense over time. The up front cost from CapEx has a value that reduces over time.
+- **Capital Expenditure (CapEx)** is the up front spending of money on physical infrastructure, and then deducting that up front expense over time. The up front cost from CapEx has a value that reduces over time.
 
-- **Operational Expenditure (OpEx)**: This is spending money on services or products now and being billed for them now. You can deduct this expense in the same year you spend it. There is no up front cost, as you pay for a service or product as you use it.
+- **Operational Expenditure (OpEx)** is spending money on services or products now and being billed for them now. You can deduct this expense in the same year you spend it. There is no up front cost, as you pay for a service or product as you use it.
 
 In other words, when Tailwind Traders owns its infrastructure, it buys equipment that goes onto its balance sheets as assets. Because a capital investment was made, accountants categorize this transaction as a _Capital Expense_ (CapEx). Over time, to account for the assets' limited useful lifespan, assets are depreciated or amortized.
 
 Cloud services, on the other hand, are categorized as an _Operating Expense_ (OpEx), because of their consumption model. Under this scheme, there is no asset for Tailwind Traders to amortize, and its cloud service provider (Azure) manages the costs that are associated with the purchase and lifespan of the physical equipment. As a result, OpEx has a direct impact on net profit, taxable income, and the associated expenses on the balance sheet.
 
-To summarize, CapEx requires significant up-front financial costs, as well ongoing maintainence and support expenditures. Whereas OpEx is a consumption based model, so Tailwind Traders is only responsible for the cost of the computing resources that it uses.
+To summarize, CapEx requires significant up-front financial costs, as well ongoing maintainence and support expenditures. Whereas OpEx is a consumption-based model, so Tailwind Traders is only responsible for the cost of the computing resources that it uses.
