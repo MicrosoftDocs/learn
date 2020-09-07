@@ -32,7 +32,7 @@ When business analysts discuss and plan a business process, they may draw a flow
 
 :::image type="icon" border="false" source="../media/2-logic-apps-logo.png":::
 
-Logic Apps is a service within Azure that you can use to automate, orchestrate, and integrate disparate components of a distributed application. By using the design-first approach in Logic Apps, you can draw out complex workflows that model complex business processes. The following screenshot shows the Logic Apps Designer and design canvas that you use to define your workflow.
+[Logic Apps](https://azure.microsoft.com/services/logic-apps/) is a service within Azure that you can use to automate, orchestrate, and integrate disparate components of a distributed application. By using the design-first approach in Logic Apps, you can draw out complex workflows that model complex business processes. The following screenshot shows the Logic Apps Designer and design canvas that you use to define your workflow.
 
 ![Screenshot of the Logic Apps workflow designer in the Azure portal.](../media/2-logic-apps-workflow-designer.png)
 
@@ -40,13 +40,13 @@ Alternatively, if you prefer to work in code, you can create or edit a workflow 
 
 ![Screenshot of the Logic Apps code editor in the Azure portal.](../media/2-logic-apps-code-editor.png)
 
-One reason why Logic Apps is so good at integration is that over 200 connectors are included. A *connector* is a Logic Apps component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from a Logic Apps, you can create your own connector if your system exposes a REST API.
+One reason why Logic Apps is so good at integration is that [over 200 connectors are included](https://docs.microsoft.com/connectors/connector-reference/). A *connector* is a Logic Apps component that provides an interface to an external service. For example, the [Twitter connector](https://docs.microsoft.com/connectors/twitter/) allows you to send and retrieve tweets, while the [Office 365 Outlook connector](https://docs.microsoft.com/connectors/office365/) lets you manage your email, calendar, and contacts. Logic Apps provides hundreds of pre-built connectors that you can use to create your apps. If you have an unusual or unique system that you want to call from a Logic Apps, you can [create your own connector](https://docs.microsoft.com/connectors/custom-connectors/) if your system exposes a REST API.
 
 ### Microsoft Power Automate
 
 :::image type="icon" border="false" source="../media/2-microsoft-flow-logo.png":::
 
-Microsoft Power Automate is a service that you can use to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft Power Automate mobile app.
+Microsoft [Power Automate](https://flow.microsoft.com/) is a service that you can use to create workflows even when you have no development or IT Pro experience. You can create workflows that integrate and orchestrate many different components by using the website or the Microsoft [Power Automate mobile app](https://flow.microsoft.com/mobile/download/).
 
 There are four different types of flow that you can create:
 
@@ -59,7 +59,7 @@ Microsoft Power Automate provides an easy-to-use design surface that anyone can 
 
 ![Screenshot of the Microsoft Power Automate designer showing a workflow with a file trigger, an Office action to get a user's profile and an Outlook action to send an email.](../media/2-flow-designer.png)
 
-Under the hood, Microsoft Power Automate is built on Logic Apps. This fact means that Power Automate supports the same range of connectors and actions. You can also use custom connectors in Microsoft Power Automate.
+Under the hood, Microsoft Power Automate is built on Logic Apps. This fact means that Power Automate [supports the same range of connectors and actions](https://flow.microsoft.com/connectors/). You can also use [custom connectors](https://docs.microsoft.com/power-automate/get-started-flow-dev) in Microsoft Power Automate.
 
 ### Design-first technologies compared
 
@@ -80,9 +80,9 @@ The developers on your team will likely prefer to write code when they want to o
 
 :::image type="icon" border="false" source="../media/2-azure-webjobs-logo.png":::
 
-The Azure App Service is a cloud-based hosting service for web applications, mobile back-ends, and RESTful APIs. These applications often need to perform some kind of background task. For example, in your bike rental system, when a user uploads a photo of a bike, you may need to generate a smaller thumbnail photograph.
+The [Azure App Service](https://azure.microsoft.com/services/app-service/) is a cloud-based hosting service for web applications, mobile back-ends, and RESTful APIs. These applications often need to perform some kind of background task. For example, in your bike rental system, when a user uploads a photo of a bike, you may need to generate a smaller thumbnail photograph.
 
-WebJobs are a part of the Azure App Service that you can use to run a program or script automatically. There are two kinds of WebJob:
+[WebJobs](https://docs.microsoft.com/azure/app-service/webjobs-create) are a part of the Azure App Service that you can use to run a program or script automatically. There are two kinds of WebJob:
 
 - **Continuous.** These WebJobs run in a continuous loop. For example, you could use a continuous WebJob to check a shared folder for a new photo.
 - **Triggered.** These WebJobs run when you manually start them or on a schedule.
@@ -97,7 +97,7 @@ The WebJobs SDK only supports C# and the NuGet package manager.
 
 :::image type="icon" border="false" source="../media/2-azure-functions-logo.png":::
 
-An Azure Function is a simple way for you to run small pieces of code in the cloud, without having to worry about the infrastructure required to host that code. You can write the Function in C#, Java, JavaScript, PowerShell, Python, or any of the languages that are listed in the [Supported languages in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages) article. In addition, with the consumption plan option, you only pay for the time when the code runs. Azure automatically scales your function in response to the demand from users.
+An [Azure Function](https://azure.microsoft.com/services/functions/) is a simple way for you to run small pieces of code in the cloud, without having to worry about the infrastructure required to host that code. You can write the Function in C#, Java, JavaScript, PowerShell, Python, or any of the languages that are listed in the [Supported languages in Azure Functions](https://docs.microsoft.com/azure/azure-functions/supported-languages) article. In addition, with the consumption plan option, you only pay for the time when the code runs. Azure automatically scales your function in response to the demand from users.
 
 When you create an Azure Function, you can start by writing the code for it in the portal. Alternatively, if you need source code management, you can use GitHub or Azure DevOps Services.
 

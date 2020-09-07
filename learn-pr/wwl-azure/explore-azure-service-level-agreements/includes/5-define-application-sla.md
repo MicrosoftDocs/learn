@@ -48,5 +48,5 @@ Carefully consider the time window against which your application SLA performanc
 
 ---
 > [!div class="checklist"]
-> * Performance targets about 99.99% are going to be very difficult to achieve.
+> * Performance targets above 99.99% are going to be very difficult to achieve.
 
