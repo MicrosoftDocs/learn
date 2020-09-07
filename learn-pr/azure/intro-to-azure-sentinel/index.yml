@@ -28,8 +28,9 @@ prerequisites: None
 units:
 - learn.intro-to-azure-sentinel.1-introduction
 - learn.intro-to-azure-sentinel.2-what-is-azure-sentinel
-- learn.intro-to-azure-sentinel.3-key-components
-- learn.intro-to-azure-sentinel.4-use-cases
-- learn.intro-to-azure-sentinel.5-summary
+- learn.intro-to-azure-sentinel.3-how-azure-sentinel-works
+- learn.intro-to-azure-sentinel.4-when-to-use-azure-sentinel
+- learn.intro-to-azure-sentinel.5-knowledge-check
+- learn.intro-to-azure-sentinel.6-summary
 badge:
   uid: learn.intro-to-azure-sentinel.badge
