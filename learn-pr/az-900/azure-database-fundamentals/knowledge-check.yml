@@ -30,11 +30,11 @@ quiz:
     choices:
     - content: "Azure Cosmos DB"
       isCorrect: false
-    - content: "Azure SQL Database"
-      isCorrect: false
     - content: "Azure Database for MySQL"
       isCorrect: true
       explanation: "Azure Database for MySQL is the logical choice for existing LAMP stack applications."
+    - content: "Azure SQL Database"
+      isCorrect: false
     - content: "Azure Database for PostgreSQL"
       isCorrect: false
   - content: "Tailwind Traders millions of log entires that they would like to analyze. Which option would be ideal for analysis"
