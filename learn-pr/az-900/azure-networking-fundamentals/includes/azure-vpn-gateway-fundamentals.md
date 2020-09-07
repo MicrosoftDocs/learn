@@ -10,7 +10,7 @@ A VPN gateway is a type of Virtual Network Gateway. VPN gateways are deployed in
 - Connect individual devices to Azure virtual networks through a *point-to-site* connection.
 - Connect Azure virtual networks to other Azure virtual networks through a *network-to-network* connection.
 
-[![Visualization of a VPN connection to Azure](../media/vpngateway-site-to-site-connection-diagram.svg)](../media/vpngateway-site-to-site-connection-diagram.svg#lightbox)
+[![Visualization of a VPN connection to Azure](../media/vpngateway-site-to-site-connection-diagram.png)](../media/vpngateway-site-to-site-connection-diagram-expanded.png#lightbox)
 
 All transferred data is encrypted in a private tunnel as it crosses the internet. You can deploy only one VPN gateway in each virtual network, but you can use one gateway to connect to multiple locations, including other Azure virtual networks or on-premises datacenters.
 
@@ -91,7 +91,7 @@ You'll need these Azure resources before you can deploy an operational VPN gatew
 
 The following diagram shows this combination of resources and their relationships to help you better understand what's required to deploy a VPN gateway:
 
-[![Resource requirements for a VPN gateway](../media/resource-requirements-for-vpn-gateway.svg)](../media/resource-requirements-for-vpn-gateway.svg#lightbox)
+[![Resource requirements for a VPN gateway](../media/resource-requirements-for-vpn-gateway.png)](../media/resource-requirements-for-vpn-gateway-expanded.png#lightbox)
 
 ### Required on-premises resources
 
@@ -108,13 +108,13 @@ There are several ways to ensure you have a fault-tolerant configuration.
 
 By default, VPN gateways are deployed as two instances in an *active/standby* configuration, even if you only see one VPN gateway resource in Azure. When planned maintenance or unplanned disruption affects the active instance, the standby instance automatically assumes responsibility for connections without any user intervention. Connections are interrupted during this failover, but they're typically restored within a few seconds for planned maintenance and within 90 seconds for unplanned disruptions.
 
-[![Active/standby virtual network gateway](../media/active-standby.svg)](../media/active-standby.svg#lightbox)
+[![Active/standby virtual network gateway](../media/active-standby.png)](../media/active-standby-expanded.png#lightbox)
 
 ### Active/active
 
 With the introduction of support for the BGP routing protocol, you can also deploy VPN gateways in an *active/active* configuration. In this configuration, you assign a unique public IP address to each instance. You then create separate tunnels from the on-premises device to each IP address. You can extend the high availability by deploying an additional VPN device on-premises.
 
-[![Active/active virtual network Gateway](../media/dual-redundancy.svg)](../media/dual-redundancy.svg#lightbox)
+[![Active/active virtual network Gateway](../media/dual-redundancy.png)](../media/dual-redundancy-expanded.png#lightbox)
 
 ### ExpressRoute failover
 

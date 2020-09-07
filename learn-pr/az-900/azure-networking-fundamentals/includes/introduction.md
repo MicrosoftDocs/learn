@@ -16,4 +16,4 @@ Upon completion of this module, you'll be able to:
 ## Prerequisites
 
 - You should be familiar with basic network concepts and terminology
-- Familiarity with cloud computing is helpful, but isn't necessary
+- You should be familiar with cloud computing is helpful, but isn't necessary
