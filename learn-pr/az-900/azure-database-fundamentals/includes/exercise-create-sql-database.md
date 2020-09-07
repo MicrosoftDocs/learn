@@ -29,7 +29,7 @@ In this task, we will create a SQL database based on the _AdventureWorksLT_ samp
         | Password | **Pa$$w0rd1234** |
         | Location | **(US) East US** |
 
-        [![Screenshot of the Server pane and the New Server pane with fields filled in as per the table and the Review + create and OK buttons highlighted.](../media/server-pane.png)](../media/server-pane.png#lightbox)
+        [![Screenshot of the Server pane and the New Server pane with fields filled in as per the table and the Review + create and OK buttons highlighted.](../media/server-pane.png)](../media/server-pane-expanded.png#lightbox)
 
     1. Click **OK** when you have finished.
 
@@ -63,7 +63,7 @@ In this task, we will configure the SQL server and run a SQL query.
 
 1. From the **All services** pane, search and select **SQL databases** and ensure your new database was created. You may need to **Refresh** the page.
 
-    [![Screenshot of the SQL database and server that have just been deployed.](../media/sql-database.png)](../media/sql-database.png#lightbox)
+    ![Screenshot of the SQL database and server that have just been deployed.](../media/sql-database.png)
 
 1. Click the **db1** entry representing the SQL database you created, and then click **Query editor (preview)**.
 
@@ -77,7 +77,7 @@ In this task, we will configure the SQL server and run a SQL query.
 
 1. Click **Add client IP** to add the IP address referenced in the error, then click **Save**. 
 
-    [![Screenshot of the SQL server firewall settings page with the new IP rule highlighted.](../media/sql-server-firewall-settings.png)](../media/sql-server-firewall-settings.png#lightbox)
+    ![Screenshot of the SQL server firewall settings page with the new IP rule highlighted.](../media/sql-server-firewall-settings.png)
 
 1. Return to your SQL database and the Query Editor (Preview) login page. Try to login again as **sqluser** with the password **Pa$$w0rd1234**. This time you should succeed. It may take a couple of minutes for the new firewall rule to be deployed. 
 
@@ -94,6 +94,6 @@ In this task, we will configure the SQL server and run a SQL query.
 
 1. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 
-    [![Screenshot of the database Query Editor pane with the SQL code having been run successfully and the output visible in the results pane.](../media/database-query-editor-pane.png)](../media/database-query-editor-pane.png#lightbox)
+    ![Screenshot of the database Query Editor pane with the SQL code having been run successfully and the output visible in the results pane.](../media/database-query-editor-pane.png)
 
 Congratulations! You've created a SQL database in Azure and successfully queried the data in that database.

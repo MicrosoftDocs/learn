@@ -21,5 +21,5 @@ Upon completion of this module, you'll be able to describe the benefits and usag
 ## Prerequisites
 
 - You should be familiar with basic computing concepts and terminology
-- Familiarity with cloud computing is helpful, but isn't necessary
-- Familiarity with basic database concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary
+- You should be familiar with basic database concepts and terminology

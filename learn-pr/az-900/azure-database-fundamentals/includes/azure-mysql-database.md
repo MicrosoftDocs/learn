@@ -18,8 +18,8 @@ Azure Database for MySQL delivers:
 - Automatic backups and point-in-time-restore for up to 35 days.
 - Enterprise-grade security and compliance.
 
-These capabilities require almost no administration and all are provided at no additional cost. They allow you to focus on rapid app development and accelerating your time to market rather than allocating precious time and resources to managing virtual machines and infrastructure. In addition, you can continue to develop your application with the open-source tools and platform of your choice to deliver with the speed and efficiency your business demands, all without having to learn new skills.
+These capabilities require almost no administration and all are provided at no additional cost. They allow you to focus on rapid app development and accelerating your time to market rather than allocating precious time and resources to managing virtual machines and infrastructure. In addition, you can migrate your existing MySQL databases with minimal downtime using the Azure Database Migration Service. Once you have completed your migration, you can continue to develop your application with the open-source tools and platform of your choice to deliver with the speed and efficiency your business demands, all without having to learn new skills.
 
-![Azure Database for MySQL conceptual diagram.](../media/azure-db-for-mysql-conceptual-diagram.png)
+[![Azure Database for MySQL conceptual diagram.](../media/azure-db-for-mysql-conceptual-diagram.png)](../media/azure-db-for-mysql-conceptual-diagram-expanded.png#lightbox)
 
 The Azure Database for MySQL service offers several service tiers, and each tier offers different performance and capabilities to support lightweight to heavyweight database workloads. You can build your first app on a small database for a few dollars a month, and then adjust the scale to meet the needs of your solution. Dynamic scalability enables your database to transparently respond to rapidly changing resource requirements. You only pay for the resources you need, and only when you need them.
