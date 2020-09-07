@@ -9,7 +9,7 @@ You can learn more by reviewing the following documents:
 
 - [Azure Arc documentation](https://docs.microsoft.com/azure/azure-arc?azure-portal=true)
 - [What is Azure Arc enabled servers (preview)?](https://docs.microsoft.com/azure/azure-arc/servers/overview?azure-portal=true)
-- [What is Azure Arc-enabled Kubernetes Preview?](https://docs.microsoft.com/azure/azure-arc/kubernetes/overview?azure-portal=true)
+- [What is Azure Arc enabled Kubernetes Preview?](https://docs.microsoft.com/azure/azure-arc/kubernetes/overview?azure-portal=true)
 - [Deploy configurations using GitOps on Arc enabled Kubernetes cluster (Preview)](https://docs.microsoft.com/azure/azure-arc/kubernetes/use-gitops-connected-cluster?azure-portal=true).
 - [Azure Policy built-in definitions for Azure Arc enabled servers (preview)](https://docs.microsoft.com/azure/azure-arc/servers/policy-samples?azure-portal=true).
 - [Enable monitoring of Azure Arc enabled Kubernetes cluster](https://docs.microsoft.com/azure/azure-monitor/insights/container-insights-enable-arc-enabled-clusters?azure-portal=true).
