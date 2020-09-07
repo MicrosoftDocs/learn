@@ -14,7 +14,7 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 ## Include the Diagnostics namespace
 
-The Diagnostics namespace `Microsoft.Quantum.Diagnostics` under the [Standard
+The Diagnostics namespace [Microsoft.Quantum.Diagnostics](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics?azure-portal=true) under the [Standard
 library](https://docs.microsoft.com/quantum/user-guide/libraries/standard?azure-portal=true)
 of the Quantum Development Kit contains functions and operations that are useful for
 diagnostic purposes.
