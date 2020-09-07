@@ -50,5 +50,3 @@ Azure Arc-enabled Kubernetes provides a number of agents. These agents run in th
 > For more detailed information about connecting an Azure Arc-enabled Kubernetes cluster, follow the guidance in the [Connect an Azure Arc-enabled Kubernetes cluster (Preview)](https://docs.microsoft.com/azure/azure-arc/kubernetes/connect-cluster?azure-portal=true) tutorial.
 
 After you connect to your cluster, you can use GitOps in the connected cluster, or you can use Azure Policy to manage the cluster.
-
-
