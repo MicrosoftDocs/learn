@@ -8,7 +8,7 @@ As part of the initial design, the Contoso IT team asked you, as the lead system
 
 Contoso will continue to operate an on-premises environment for some time after it begins migrating workloads to Azure infrastructure as a service (IaaS) virtual machines (VMs). Consequently, the ability to apply Azure policies to on-premises Windows Server workloads will be important. Additionally, administrators will need to review on-premises Windows Server instances in the Azure portal. It's also important that administrators can use the Azure portal to review Kubernetes clusters.
 
-Using Arc enables Contoso's on-premises IT administrators to familiarize with the Azure management space. Azure Arc also enables Contoso's administrators that are already using Azure APIs to manage Azure resources also manage on-premises resources. 
+Using Arc enables Contoso's on-premises IT administrators to familiarize themselves with the Azure management space. Azure Arc also enables Contoso's administrators that are already using Azure APIs to manage Azure resources to also manage on-premises resources.
 
 By the end of this module, you'll be able to describe Azure Arc enabled servers. You'll also be able to describe Azure Arc enabled Kubernetes.
 
@@ -19,12 +19,10 @@ After completing this module, you'll be able to:
 - Describe Azure Arc enabled servers.
 - Describe Azure Arc enabled Kubernetes.
 
-
 ## Prerequisites
 
 To get the best learning experience from this module, you should have knowledge of, and experience with, the following:
 
 - Personal computer operating systems.
 - Fundamentals of virtualization.
-- Fundamentals of cloud computing. 
-
+- Fundamentals of cloud computing.
