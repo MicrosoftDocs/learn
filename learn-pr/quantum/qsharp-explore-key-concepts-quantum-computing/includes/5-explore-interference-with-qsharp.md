@@ -45,10 +45,10 @@ To do so with Q#:
    Here, you apply the operation `H` twice while inspecting the intermediate
    states with `DumpMachine`.
 
-   > [!NOTE] To apply an operation twice in Q# you invoke the operation twice to
-   > the target register in sequential lines. DON'T insert the applied operation
-   > in the argument of the second operation. `H(H(q))` yields a compilation
-   > error.
+   > [!NOTE] To apply an operation twice in Q# you apply the operation to the
+   > target register in sequential lines. DON'T insert the application of the
+   > operation as the argument of the second operation. `H(H(q))` yields a
+   > compilation error.
 
 2. Open the integrated terminal. From the **Terminal** menu, select **New Terminal**.
 

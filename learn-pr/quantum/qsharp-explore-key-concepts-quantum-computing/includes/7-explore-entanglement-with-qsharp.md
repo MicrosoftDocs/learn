@@ -146,7 +146,8 @@ reasonable time. To use a Resources Estimator:
    they need. You will find that `ResourcesEstimator` is a very useful tool as
    you advance in your path to become a Q# quantum developer.
 
-   >[!NOTE] Clifford gates are a basic kind of quantum operation and are useful
+   >[!NOTE]
+   > Clifford gates are a basic kind of quantum operation and are useful
    > to estimate the amount of resources needed to perform a quantum
    > computation. Both $H$ and $CNOT$ are examples of Clifford operations. The
    > `QubitClifford` row includes only single-qubit Clifford operations. You can

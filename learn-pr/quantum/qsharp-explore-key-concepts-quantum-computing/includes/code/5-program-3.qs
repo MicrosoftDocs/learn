@@ -5,7 +5,7 @@ namespace ExploringInterference {
     open Microsoft.Quantum.Measurement;
 
     @EntryPoint()
-    operation TestInterference() : Unit {
+    operation TestInterferenceC() : Unit {
         using (q = Qubit()) {
             Y(q);
             H(q);
