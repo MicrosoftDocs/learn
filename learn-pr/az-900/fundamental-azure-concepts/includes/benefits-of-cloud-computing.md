@@ -17,6 +17,22 @@ There are several advantages that a cloud environment has over a physical enviro
 
 - **Disaster Recovery** - by taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event that disaster should occur
 
+## Cloud computing is a consumption-based model
+
+Cloud service providers operate on a **consumption-based model**, which means that end users only pay for the resources that they use. Whatever they use is what they pay for.
+
+A consumption-based model has many benefits, including:
+
+- No upfront costs.
+
+- No need to purchase and manage costly infrastructure that they may or may not use to its fullest.
+
+- The ability to pay for additional resources when they are needed.
+
+- The ability to stop paying for resources that are no longer needed.
+
+![A large image of a money and an arrow to the right of this progressing to a series of smaller money images.](../media/consumption-based-model-1.png)
+
 ## Capital expenses versus operating expenses
 
 There are two different types of expenses that you should consider:

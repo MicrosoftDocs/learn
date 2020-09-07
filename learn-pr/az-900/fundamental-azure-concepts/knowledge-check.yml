@@ -4,7 +4,7 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: Knowledge Check
-  ms.date: 09/15/2020
+  ms.date: 09/11/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
@@ -53,7 +53,17 @@ quiz:
     - content: "Public cloud"
       isCorrect: false
       explanation: "A public cloud is a is a valid type of cloud computing"
-
-
-
-
+  - content: "Which of the following is not a benefit of using cloud services?"
+    choices:
+    - content: "Scalability"
+      isCorrect: false
+      explanation: "Cloud computing allows your resources to be scaled both vertically and horizontally."
+    - content: "Geographic isolation"
+      isCorrect: true
+      explanation: "You can choose to create resources in a single region; however, one of the primary advantages to cloud computing is geographic distribution."
+    - content: "Disaster Recovery"
+      isCorrect: false
+      explanation: "Cloud computing provides a wealth of different technologies that enable disaster recovery."
+    - content: "High Availability"
+      isCorrect: false
+      explanation: "One of the primary advantages to cloud computing is that it enables your applications to provide a continuous user experience with no apparent downtime even when things go wrong."
