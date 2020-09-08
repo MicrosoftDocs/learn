@@ -22,12 +22,13 @@ In this module, you'll learn about Azure Sentinel deployment considerations, inc
 After completing this module, you'll be able to:
 
 - Enable Azure Sentinel.
-- Understand how to deploy connectors to Azure Sentinel.
-- Understand how to manage Azure Sentinel log data.
+- Deploy connectors from Azure Sentinel to the services you want to monitor.
+- Manage Azure Sentinel log data collected by connectors.
 
 ## Prerequisites
 
 To get the best learning experience from this module, you should have knowledge of and experience with:
 
-- Fundamental Azure administration.
-- Azure Monitor and its Log Analytics workspace.
+- Performing fundamental Azure administration.
+- Working with Azure Monitor and its Log Analytics workspace.
+
