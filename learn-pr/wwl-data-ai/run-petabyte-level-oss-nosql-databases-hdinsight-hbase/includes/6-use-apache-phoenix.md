@@ -1,6 +1,6 @@
-HBase clusters on HDInsight come with Apache Phoenix. [Apache Phoenix](https://phoenix.apache.org/) is an open source, massively parallel relational database layer built on [Apache HBase](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview). Apache Pheonix allows you to use SQL-like queries over HBase. It uses JDBC drivers underneath to enable users to create, delete, and alter SQL tables. You can also index, create views and sequences, and upsert rows individually and in bulk. Phoenix uses noSQL native compilation rather than using MapReduce to compile queries, enabling the creation of low-latency applications on top of HBase. Phoenix adds coprocessors to support running client-supplied code in the address space of the server, executing the code colocated with the data. This approach minimizes client/server data transfer. For more information, see the [Apache Phoenix documentation](https://phoenix.apache.org/).
+HBase clusters on HDInsight come with Apache Phoenix. [Apache Phoenix](https://phoenix.apache.org/) is an open source, massively parallel relational database layer built on [Apache HBase](https://docs.microsoft.com/azure/hdinsight/hbase/apache-hbase-overview). Apache Phoenix allows you to use SQL-like queries over HBase. It uses JDBC drivers underneath to enable users to create, delete, and alter SQL tables. You can also index, create views and sequences, and upsert rows individually and in bulk. Phoenix uses noSQL native compilation rather than using MapReduce to compile queries, enabling the creation of low-latency applications on top of HBase. Phoenix adds coprocessors to support running client-supplied code in the address space of the server, executing the code colocated with the data. This approach minimizes client/server data transfer. For more information, see the [Apache Phoenix documentation](https://phoenix.apache.org/).
 
-![How Apache Pheonix interfaces with Apache HBase.](../media/apache-pheonix-interface.png) 
+![How Apache Phoenix interfaces with Apache HBase.](../media/apache-phoenix-interface.png) 
 
 Apache Phoenix on HDInsight HBase is typically used to enable self-service analytics and extract insights as depicted below. Phoenix can plug into any ODBC compatible BI tool and enable ad-hoc SQL analytics on HBase.  
 
@@ -55,7 +55,7 @@ ALTER TABLE my_other_table SET TRANSACTIONAL=true;
 
 ## Salted Tables
 
-Region Server hotspotting in HBase can occur during sequential writes if the row keys increase monotonically. Apache Pheonix can alleviate the hotspotting by providing a way to salt the row key with a salting byte for a particular table. For more information, refer to the Apache Phoenix Salted Table documentation. 
+Region Server hotspotting in HBase can occur during sequential writes if the row keys increase monotonically. Apache Phoenix can alleviate the hotspotting by providing a way to salt the row key with a salting byte for a particular table. For more information, refer to the Apache Phoenix Salted Table documentation. 
 
 ```SQL
 CREATE TABLE Saltedweblogs (
