@@ -20,10 +20,9 @@ To onboard Azure Sentinel, you must:
 1. Enable Azure Sentinel.
 1. Connect your data sources.
 
-Azure Sentinel comes with a number of connectors for Microsoft and other solutions that are available out of the box and provide real-time integration. There are connectors for:
+Azure Sentinel comes with a number of connectors for Microsoft and other solutions that are available out of the box. There are connectors for:
 
 - Security Center.
-- Microsoft threat-protection solutions.
 - Microsoft 365 sources, including Office 365.
 - Azure AD.
 - Azure ATP.
@@ -39,9 +38,9 @@ Additionally, there are built-in connectors to the broader security ecosystem fo
 
 The research by the lead system engineer at Contoso determined the following key points:
 
-- Azure Sentinel needs access to a Log Analytics workspace. Azure Sentinel can create its own Log Analytics workspace as it's enabled. This workspace is fully compatible with Log Analytics workspaces. The engineer decided to use this feature for Contoso's POC deployment.
+- Azure Sentinel needs access to a Log Analytics workspace. The process is to create a Log Analytics workspace and enable Azure Sentinel on top of that workspace. The engineer decided to use this feature for Contoso's POC deployment.
 - Azure Sentinel is a paid service.
-- Data retention for a customized workspace is based on the workspace pricing tier.
+- Data retention for a customized workspace is based on the workspace pricing tier. If the Log Analytics workspace is used with Azure Sentinel then the first 90 days of retention are free.
 
     > [!NOTE]
     > Azure Sentinel can run on workspaces in any general availability region of Log Analytics except the China and Germany regions. Data that Azure Sentinel generates such as incidents, bookmarks, and alert rules, which might contain some customer data that's sourced from these workspaces, is saved either in Europe for European workspaces, in Australia for Australian workspaces, or in East US for workspaces in any other region.
