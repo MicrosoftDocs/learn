@@ -19,9 +19,14 @@ iconUrl: /learn/achievements/azure-devops-devtest-labs.svg
 levels:
 - beginner
 roles:
+- administrator
 - developer
+- business-owner
+- student
+- technology-manager
 products:
-- dotnet
+- azure
+- azure-devops
 units:
 - learn.languages.azure-devops-devtest-labs.introduction
 - learn.languages.azure-devops-devtest-labs.identify-product-options

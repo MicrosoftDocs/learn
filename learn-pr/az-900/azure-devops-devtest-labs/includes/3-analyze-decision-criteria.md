@@ -12,13 +12,16 @@ While Azure DevOps can publish public code repositories, GitHub has long been th
 
 The remainder of the decision criteria is specific to choosing between either Azure DevOps or GitHub.
 
+> [!NOTE]
+> It's important to re-iterate the note from the previous unit: you are not limited to choosing either Azure DevOps Services or GitHub and GitHub Actions.  In practice, you can mix and match these services as needed.  For example, you can use GitHub repos with Azure Boards for work item tracking.
+
 ### Regarding source code management and DevOps tools, what level granularity do you need for permissions?
 
 GitHub works on a simple model of read/write permissions to every feature.  Meanwhile, Azure DevOps has a much more granular set of permissions that allow organizations to refine who is able to perform most operations across the entire toolset.
 
 ### Regarding source code management and DevOps tools, how sophisticated does your project management and reporting need to be?
 
-While GitHub has work items, issues, and a Kanban board, project management and reporting is the area where Azure DevOps excels.
+While GitHub has work items, issues, and a Kanban board, project management and reporting is the area where Azure DevOps excels.  Azure DevOps is highly customizable, allowing an administrator to add custom fields to capture metadata and other information along side each work item.  By contrast, GitHub Issues uses tags as its primary means of helping a team categorize issues.
 
 ### Regarding source code management and DevOps tools, how tightly do you need to integrate with third-party tools?
 
