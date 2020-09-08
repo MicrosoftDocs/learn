@@ -29,6 +29,5 @@ After completing this module, you'll be able to:
 
 To get the best learning experience from this module, you should have knowledge of and experience with:
 
-- Accessing the Azure portal.
 - Fundamental Azure administration.
 - Azure Monitor and its Log Analytics workspace.
