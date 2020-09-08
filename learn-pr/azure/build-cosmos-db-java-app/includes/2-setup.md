@@ -1,7 +1,5 @@
 In this unit, you will create a basic console app using an IDE of your choice to edit code, and optionally using the terminal of your choice to run the code.
 
-The terminal commands in this lab assume a Windows OS.
-
 ## Create Azure Cosmos DB resources
 
 1. In your Azure Cosmos DB account, create a database named **Users** with a container named **WebCustomers**. Provision 400 RU/s throughput on the **Users** container.
