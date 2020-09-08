@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.python-secret-message-decoder.introduction
+title: Introduction to Wonder Woman's secret message decoder
+metadata:
+  title: Introduction to Wonder Woman's secret message decoder
+  description: Introduction to the secret message decoder module inspired by the movie, Wonder Woman.
+  ms.date: 09/21/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/0-introduction.md)]
