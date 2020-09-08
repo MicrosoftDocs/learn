@@ -13,7 +13,7 @@ durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title:
+  title: " "
   questions:
   
   - content: "How does Azure Sentinel use machine learning and AI?"
