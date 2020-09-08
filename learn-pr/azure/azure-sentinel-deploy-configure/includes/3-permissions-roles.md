@@ -1,4 +1,4 @@
-As the Contoso administrator who is tasked with deploying a POC environment for Azure Sentinel, you must understand the permissions and roles that are necessary for a successful deployment.
+As the Contoso administrator who is tasked with deploying a proof of concept environment for Azure Sentinel, you must understand the permissions and roles that are necessary for a successful deployment.
 
 ## Overview of permissions in Azure Sentinel
 
@@ -19,11 +19,7 @@ The following are the three dedicated, built-in Azure Sentinel roles:
 
 - The Azure Sentinel Contributor role has all the permissions of the Azure Sentinel Reader and Azure Sentinel Responder roles, and it can create and edit workbooks, analytics rules, and other Azure Sentinel resources. To deploy Azure Sentinel on your tenant, you need Contributor permissions for the subscription where the Azure Sentinel workspace is deployed.
 
-    > [!TIP]
-    > All built-in Azure Sentinel roles grant read access to the data in your Azure Sentinel workspace.
-
-    > [!NOTE]
-    > For best results, these roles should be assigned to the resource group that contains the Azure Sentinel workspace. The roles then apply to all the resources that deploy to support Azure Sentinel if those resources are in the same resource group.
+All built-in Azure Sentinel roles grant read access to the data in your Azure Sentinel workspace. For best results, these roles should be assigned to the resource group that contains the Azure Sentinel workspace. The roles then apply to all the resources that deploy to support Azure Sentinel if those resources are in the same resource group.
 
 ### Azure roles and Log Analytics roles
 
