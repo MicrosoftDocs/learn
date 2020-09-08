@@ -13,69 +13,69 @@ durationInMinutes: 5
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
-  title: Check your knowledge
+  title:
   questions:
   
-  - content: "Azure Sentinel uses machine learning and AI to perform what?"
+  - content: "How does Azure Sentinel use machine learning and AI?"
     choices:
-    - content: "Feedback loop detection."
+    - content: "Feedback loop detection"
       isCorrect: false
       explanation: "That's incorrect. Azure Sentinel uses machine learning and AI for threat hunting and alert detection."
-    - content: "Alert detection."
+    - content: "Alert detection"
       isCorrect: true
       explanation: "That's correct. Azure Sentinel uses machine learning and AI for threat hunting and alert detection."
-    - content: "Security score."
+    - content: "Security score"
       isCorrect: false
       explanation: "That's incorrect. The security score is a recommendation from Security Center."
 
 
-  - content: "Azure Sentinel hunting and search-and-query tools are based on what?"
+  - content: "Azure Sentinel hunting and search-and-query tools are based on which of the following?"
     choices:
-    - content: "Center for Internet Security best practices."
+    - content: "Center for Internet Security best practices"
       isCorrect: false
       explanation: "That's incorrect. Though an important security organization, its programs aren't used with Azure Sentinel."
-    - content: "MITRE ATT&CK framework."
+    - content: "MITRE ATT&CK framework"
       isCorrect: true
       explanation: "That's correct. Azure Sentinel hunting is based on the MITRE ATT&CK framework."
-    - content: "Microsoft Security Development Lifecycle (SDL)."
+    - content: "Microsoft Security Development Lifecycle (SDL)"
       isCorrect: false
       explanation: "That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for building more secure products and services."
 
 
-  - content: "There's a limit of how many custom roles per Azure AD?"
+  - content: "The Azure Sentinel agent is actually the:" 
     choices:
-    - content: "5,000."
+    - content: "Log Analytics agent"
       isCorrect: true
-      explanation: "That's correct. There's a limit of 5,000 custom roles per directory."
-    - content: "No Limit."
+      explanation: "That's correct. The Azure Sentinel agent is actually a Log Analytics agent."
+    - content: "REST API"
       isCorrect: false
-      explanation: "That's incorrect. There's a limit of 5,000 custom roles per directory."
-    - content: "3."
+      explanation: "That's incorrect. The Azure Sentinel agent is actually a Log Analytics agent."
+    - content: "Certificate"
       isCorrect: false
-      explanation: "That's incorrect. There's a limit of 5,000 custom roles per directory."
+      explanation: "That's incorrect. The Azure Sentinel agent is actually a Log Analytics agent."
 
 
   - content: "How many built-in connectors are available for Azure Sentinel?"
     choices:
-    - content: "100."
+    - content: "100"
       isCorrect: false
       explanation: "That's incorrect. Azure Sentinel has 32 built-in connectors."
-    - content: "23."
+    - content: "23"
       isCorrect: false
       explanation: "That's incorrect. Azure Sentinel has 32 built-in connectors."
-    - content: "32."
+    - content: "56"
       isCorrect: true
       explanation: "That's correct. Azure Sentinel has 32 built-in connectors."
 
 
-  - content: "To connect Azure Sentinel to Azure AD, you need what for Azure AD?"
+  - content: "Which of the following is required in order to connect Azure Sentinel to Azure AD?"
     choices:
-    - content: "You need an Azure AD P1 or P2 license."
+    - content: "You need an Azure AD P1 or P2 license"
       isCorrect: true
       explanation: "That's correct. If you want to export sign-in data from Azure AD to Azure Sentinel, you must have an Azure AD P1 or P2 license."
-    - content: "You must use Azure AD Connect."
+    - content: "You must use Azure AD Connect"
       isCorrect: false
       explanation: "That's incorrect. Azure AD Connect is a tool for connecting on-premises identity infrastructure to Microsoft Azure AD."
-    - content: "Azure AD Domain Services must be enabled."
+    - content: "Azure AD Domain Services must be enabled"
       isCorrect: false
       explanation: "That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for the Azure Sentinel to Azure AD connection."
