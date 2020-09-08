@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a Java app for Azure Cosmos DB
-summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB
+summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
 abstract: |
   In this module, you will:
   - Learn how to send requests to Azure Cosmos DB from a Java application
