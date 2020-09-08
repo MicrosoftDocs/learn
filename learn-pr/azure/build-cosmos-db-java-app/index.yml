@@ -21,7 +21,7 @@ prerequisites: |
   - Must have [Java JDK 8 or later versions](https://www.microsoft.com/net/download) installed
   - Must be familiar with [creating and managing resources in Azure Cosmos DB]
   - Must be familiar with using Maven, Git and Java JDK
-iconUrl: /learn/achievements/build-cosmos-db-app-with-vscode.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
