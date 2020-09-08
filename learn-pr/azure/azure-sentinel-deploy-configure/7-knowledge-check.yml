@@ -59,13 +59,13 @@ quiz:
     choices:
     - content: "100"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel has 32 built-in connectors."
+      explanation: "That's incorrect. Azure Sentinel has 56 built-in connectors."
     - content: "23"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel has 32 built-in connectors."
+      explanation: "That's incorrect. Azure Sentinel has 56 built-in connectors."
     - content: "56"
       isCorrect: true
-      explanation: "That's correct. Azure Sentinel has 32 built-in connectors."
+      explanation: "That's correct. Azure Sentinel has 56 built-in connectors."
 
 
   - content: "Which of the following is required in order to connect Azure Sentinel to Azure AD?"
