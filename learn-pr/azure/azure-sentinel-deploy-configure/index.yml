@@ -9,15 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure Sentinel and connect data sources
-summary: In this module, you'll learn how to enable Azure Sentinel. You'll also learn how to and deploy connectors to Azure Sentinel for services that you want to monitor and then manage Sentinel log data collected by the connectors.
+summary: With Azure Sentinel, you can deploy connectors to services you want to monitor, retrieve log data from those services, and then manage the data using the Log Analytics workspace.
 abstract: | 
   In this module, you will:
-  - Enable Azure Sentinel.
+  - Onboard Azure Sentinel.
   - Connect to the services you want to monitor.
   - Manage the log data collected by connectors.
 prerequisites: |
-  - Perform fundamental Azure administration.
-  - Have knowledge of Azure Monitor and its Log Analytics workspace.
+  - Performing fundamental Azure administration.
+  - Working with Azure Monitor and its Log Analytics workspace.
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
