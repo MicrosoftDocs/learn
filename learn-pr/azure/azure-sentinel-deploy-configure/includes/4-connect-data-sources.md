@@ -4,8 +4,6 @@ Now that you have enabled Azure Sentinel, the next step is to connect it to the 
 
 At the time of writing, there are 56 out-of-the-box data connectors to support common data source integrations. These connectors are classified as *service-to-service* because a communication service layer that's built into these applications allows the connector service in Azure Sentinel to communicate with the communication service of the chosen application.
 
-Azure Sentinel uses a fusion technique to correlate alerts into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you can investigate and resolve.
-
 ### Native service-to-service connectors
 
 Azure Sentinel interoperates natively with the following Azure and non-Azure services:
@@ -28,7 +26,10 @@ Because these solutions use Azure Foundation for out-of-the-box interoperability
 
 ### Connect to Azure AD
 
-The most direct way to start collecting data is to use the built-in Azure Sentinel connectors. A list of the built-in connectors is accessible through the Azure Sentinel interface.
+The most direct way to start collecting data is to use the built-in Azure Sentinel connectors. A list of the built-in connectors is accessible through the Azure Sentinel interface. Azure Sentinel provides recommendations for which workbooks you should install for each connector so that you can immediately get interesting insights from your data.
+In addition, you can select what type of Azure AD logs you want to get:
+- **Sign-in logs** provide information about the usage of managed applications and user sign-in activities.
+- **Audit logs** provide system activity information about users and group management, managed applications, and directory activities.
 
 In this example, we'll connect to Azure AD from Azure Sentinel:
 
@@ -44,23 +45,15 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
     :::image type="content" source="../media/Sentinel-AAD-Connector-2.png" alt-text="The screenshot depicts the Azure Sentinel Azure Active Directory connector page." border="true":::
 
 1. Read the prerequisites and make sure you have fulfilled them, and then follow the instructions to connect the data source.
-
-    > [!NOTE]
-    > Azure Sentinel provides recommendations for which workbooks you should install for each connector so that you can immediately get interesting insights from your data.
-
 1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
 
     :::image type="content" source="../media/Sentinel-AAD-connector-3.png" alt-text="The screenshot depicts the Azure Sentinel connector configuration options." border="true":::
 
-    > [!NOTE]
-    > You can select what type of Azure AD logs you want to get:
-    >
-    > - **Sign-in logs** provide information about the usage of managed applications and user sign-in activities.
-    > - **Audit logs** provide system activity information about users and group management, managed applications, and directory activities.
-
 ### Threat detection rule templates
 
-After connecting your data sources to Azure Sentinel, you'll want to be notified when something suspicious occurs. To support this, Azure Sentinel provides out-of-the-box, built-in threat detection-rule templates that you can use as-is or customize. These templates were designed by Microsoft security experts and analysts based on known threats, common attack vectors, and suspicious activity escalation chains. Rules that are created from these templates will automatically search across your environment for any activity that looks suspicious. You can customize many of the templates to search for activities, or filter them out, according to your needs. The alerts that these rules generate will create incidents that you can assign and investigate in your environment. You can review the logs in the built-in dashboards and start building queries in Log Analytics to investigate the data.
+After connecting your data sources to Azure Sentinel, you'll want to be notified when something suspicious occurs. To support this, Azure Sentinel provides out-of-the-box, built-in threat detection-rule templates that you can use as-is or customize. These templates were designed by Microsoft security experts and analysts based on known threats, common attack vectors, and suspicious activity escalation chains. Rules that are created from these templates will automatically search across your environment for any activity that looks suspicious. You can customize many of the templates to search for activities, or filter them out, according to your needs. 
+
+Azure Sentinel uses a fusion technique to correlate the alerts that these rules generate into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you assign and investigate in your environment. You can review the logs in the built-in dashboards and start building queries in Log Analytics to investigate the data.
 
 ### External solution connections through APIs
 
