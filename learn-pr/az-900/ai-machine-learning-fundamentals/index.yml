@@ -19,9 +19,16 @@ iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
 levels:
 - beginner
 roles:
-- administrator, developer, business owner, sutdent, technology manager
+- administrator
+- developer
+- business owner
+- sutdent
+- technology manager
 products:
-- azure, azure-cognitive-services, azure-machine-learning, azure-bot-service
+- azure
+- azure-cognitive-services
+- azure-machine-learning
+- azure-bot-service
 units:
 - learn.languages.ai-machine-learning-fundamentals.introduction
 - learn.languages.ai-machine-learning-fundamentals.identify-product-options
