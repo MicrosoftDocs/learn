@@ -1,11 +1,10 @@
-As the Contoso lead system engineer and Azure administrator who is tasked with deploying a POC environment for Azure Sentinel, your first step is to understand its capabilities and deployment considerations.
+As the Contoso lead system engineer and Azure administrator who is tasked with deploying a proof of concept environment for Azure Sentinel, your first step is to understand its capabilities and deployment considerations.
 
-## Overview
+## What can Contoso do with Azure Sentinel?
 
-The role of Azure Sentinel is to:
+By deploying connectors from Azure Sentinel to services, you can retrieve data that the management at Contoso is interesting in monitoring. Because the data comes from different data sources, Azure Sentinel is ideal for this purpose. After Azure Sentinel retrieves the log data from those services, it can perform data correlation across the data sources, and then you can manage the data using the Log Analytics workspace. 
 
-- Ingest data from different data sources.
-- Perform data correlation across these data sources.
+((Phil - could use a sentence here to make the leap from "getting data" to "alerts/incidents".))
 
 Azure Sentinel uses machine learning and AI to perform:
 
