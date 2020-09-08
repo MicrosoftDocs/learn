@@ -2,7 +2,7 @@ Now that you have enabled Azure Sentinel, the next step is to connect it to the 
 
 ## Service-to-service data connectors
 
-At the time of writing, there are 32 out-of-the-box data connectors to support almost any data source integration. These connectors are classified as *service-to-service* because a communication service layer that's built into these applications allows the connector service in Azure Sentinel to communicate with the communication service of the chosen application.
+At the time of writing, there are 56 out-of-the-box data connectors to support common data source integrations. These connectors are classified as *service-to-service* because a communication service layer that's built into these applications allows the connector service in Azure Sentinel to communicate with the communication service of the chosen application.
 
 Azure Sentinel uses a fusion technique to correlate alerts into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you can investigate and resolve.
 
