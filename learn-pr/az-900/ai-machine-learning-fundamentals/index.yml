@@ -21,9 +21,9 @@ levels:
 roles:
 - administrator
 - developer
-- business owner
-- sutdent
-- technology manager
+- business-owner
+- student
+- technology-manager
 products:
 - azure
 - azure-cognitive-services
