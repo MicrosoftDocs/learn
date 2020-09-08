@@ -1,10 +1,10 @@
 As the Contoso administrator who is tasked with deploying a POC environment for Azure Sentinel, you must understand how to deploy and manage the log data that will be collected.
 
-## Manage logs for Azure Sentinel
+## Azure Monitor log management
 
-Azure Monitor and its Log Analytics feature are the underlying log management platform that powers Azure Sentinel. The workspace that Azure Sentinel creates is essentially a container where log data is collected from a variety of sources. You might have a single Log Analytics workspace for all your monitoring data, or you might have requirements for multiple workspaces.
+Azure Monitor and its Log Analytics feature are the underlying log management platform that powers Azure Sentinel. The workspace that Azure Sentinel creates is essentially a container where log data is collected from a variety of sources. You might have a single Log Analytics workspace for all your monitoring data, or you might have requirements for multiple workspaces. 
 
-As such, any source that sends logs to Monitor or Log Analytics inherently also supports Azure Sentinel. Most Azure and Microsoft solutions support sending telemetry to Monitor.
+Any source that sends logs to Monitor or Log Analytics inherently also supports Azure Sentinel. Most Azure and Microsoft solutions support sending telemetry to Monitor.
 
 ### Pricing model
 
