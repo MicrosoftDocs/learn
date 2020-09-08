@@ -4,32 +4,28 @@ There are two basic approaches to AI. The first is to employ a "deep learning" s
 
 The second approach is "machine learning", which is a data science technique that uses existing data to train and test a model, then apply that model to new data to forecast future behaviors, outcomes, and trends.
 
-Forecasts or predictions from machine learning can make apps and devices smarter. For example, when you shop online, machine learning helps product recommendation systems that offer a shopper additional products based on what you've bought in the past as well as what other shoppers have purchased who have purchased similar items. Or when your credit card is swiped, machine learning compares the transaction to a database of transactions to detect fraud.
+Forecasts or predictions from machine learning can make apps and devices smarter. For example, when you shop online, machine learning powers product recommendation systems that offer a shopper additional products based on what they've bought and what other shoppers bought who have purchased similar items in the past. Machine learning is also used to detect credit card fraud by analyzing each new transaction using what it has learned from analyzing millions of fraudulent transactions.
 
 Virtually every device or software system that collects textual, visual, and audio data could feed a machine learning model that makes that device or software system smarter about how it functions in the future.
 
 ## Azure Product Options
 
-At a high level, there are three primary offerings, each of which are aimed at a specific audience and use case, and provide a diverse set of tools, services, programmatic APIs, and more.
+At a high level, there are three primary offerings from Microsoft, each of which are designed for a specific audience and use case.  Furthermore, each product option provides a diverse set of tools, services, and programmatic APIs. We will merely be scracthing the surface of what each option is capable of in this module.
 
 ### Azure Machine Learning
-
-Think: "predict the future using a comprehensive data science platform"
 
 Azure Machine Learning is a platform for making predictions. It consists of tools and services that allow you to connect to data to train and test models to find one that will most accurately predict a future result. Once you've run experiments to test the model, you can then deploy the model and use it in real time via a web API endpoint.
 
 With Azure Machine Learning, you can:
 
 - Create a process that defines how to obtain data, how to handle missing or bad data, how to split the data into either a training set or test set, and deliver the data to the training process
-- Train and evaluate predictive models usiong tools and programming languages familiar to data scientists
+- Train and evaluate predictive models using tools and programming languages familiar to data scientists
 - Create pipelines that define where and when to run the compute-intensive experiments required to score the algorithms based on the training and test data
 - Deploy the best-performing algorithm as an API to an endpoint so it can be consumed in real time by other applications
 
 Choose Azure Machine Learning when your data scientists need complete control over the design and training of an algorithm using your own data.
 
 ### Azure Cognitive Services
-
-Think: "Your app can see, hear, speak, understand, and even begin to reason on its own"
 
 Azure Cognitive Services provides pre-built machine learning models that enable applications to see, hear, speak, understand, and even begin to reason. Use Azure Cognitive Services to solve general problems such as analyzing text for emotional sentiment or analyzing images to recognize objects or faces. You don't need special machine learning or data science knowledge to use these services. Developers access Azure Cognitive Services via APIs and can easily include these features in just a few lines of code.
 
@@ -47,8 +43,6 @@ Azure Cognitive Services can be divided into the following categories:
 
 ### Azure Bot Service
 
-Think: "build smart virtual agents"
-
-The Azure Bot Service and Bot Framework is a platform for creating virtual agents that understand and reply to questions just like a human.  Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case: namely, creating a virtual agent that can intelligently communicate with humans. Behind the scenes, the bot you build use other Azure services, like Azure Cognitive Services, to understand what their human counterparts are asking for.
+The Azure Bot Service and Bot Framework is a platform for creating virtual agents that understand and reply to questions just like a human. Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case: namely, creating a virtual agent that can intelligently communicate with humans. Behind the scenes, the bot you build uses other Azure services, like Azure Cognitive Services, to understand what their human counterparts are asking for.
 
 Bots can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.

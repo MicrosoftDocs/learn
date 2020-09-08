@@ -16,6 +16,6 @@ Third, does Tailwind Traders need to predict user behavior or provide users with
 
 Finally, will the Tailwind Trader app predict future outcomes based on private historical data?  Yes, and that is why in this scenario, Azure Machine Learning is likely the best choice.
 
-This success of this effort would depend primarily on the strength of the model to select just the right up-sale products to suggest to the shopper.  Given that the model would need to be tweaked and tuned over time, an off-the-shelf model would likely not suffice.
+The success of this effort would depend primarily on the strength of the model to select just the right up-sale products to suggest to the shopper.  Given that the model would need to be tweaked and tuned over time, an off-the-shelf model would likely not suffice.
 
 Furthermore, it sounds like the Marketing department already employs some data science experts, and they are willing to make at least a year-long commitment to building, testing, and tweaking the models to be used.
