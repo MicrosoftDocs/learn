@@ -2,8 +2,6 @@ Imagine you're managing storage for an online retailer. You need tools to create
 
 In this module, you will build a Java console application to create, update, and delete user records and query your data using Java.
 
-We have provided a GitHub repo which you may use as a template for your application.
-
 We will use the Maven package manager to structure our project and pull in dependencies.
 
 ## Learning objectives
