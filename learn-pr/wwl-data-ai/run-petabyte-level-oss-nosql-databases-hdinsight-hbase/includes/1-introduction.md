@@ -1,6 +1,6 @@
 Learn how HBase provides random access and strong consistency for large amounts of unstructured and semi structured data in a schema less database organized by column families. In this module, you will learn:
 
-- How Apache HBase works.
+- How Apache HBase works. 
 - HDInsight HBase cluster architectures and application patterns
 - The Read and Write performance of HBase clusters
 - Migration and high availability strategies in HDInsight HBase
