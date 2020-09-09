@@ -13,7 +13,7 @@ The IT director believes that Azure Sentinel could provide a means to address Co
 
 The IT director believes that Azure Sentinel will help the security analysts save time performing complex investigations and improve their SecOps.
 
-As Contoso's lead system engineer and Azure administrator, you've been asked to set up a proof-of-concept (POC) trial environment. This trial will verify whether Azure Sentinel can harness the power of the Azure and AI to help the Contoso SecOps team efficiently identify and stop cyberattacks before they cause harm.
+As Contoso's lead system engineer and Azure administrator, you've been asked to set up a proof-of-concept trial environment. This trial will verify whether Azure Sentinel can harness the power of Azure and AI to help the Contoso SecOps team efficiently identify and stop cyberattacks before they cause harm.
 
 In this module, you'll learn about Azure Sentinel deployment considerations, including configuring necessary roles and permissions. You'll also learn how to connect data sources to Azure Sentinel and how to manage its log data.
 
