@@ -1,4 +1,4 @@
-In this module, you learned about phishing, how to identify it and what to do if you receive an email that looks suspicious. 
+In this module, you learned about phishing, how to identify it and what to do if you receive an email that looks suspicious.
 
 You learned how to use passphrases to make your credentials even more secure, why you should ensure you use a unique password for each account, and how to store your credentials securely in a password manager.
 
@@ -8,12 +8,12 @@ What should you do now? Get started securing yourself today by taking the follow
 
 - Install a password manager and go through the setup instructions.
 - Set up MFA for your password manager.
-- Change any passwords or passphrases for accounts where you used the same ones and store the new ones in your password manager.
+- Change any passwords or passphrases for accounts where you used the same ones, and store the new ones in your password manager.
 - Set up MFA on every account that supports it.
 
-The resources below highlight additional areas to explore, and even more ways to secure yourself online. The more knowledge and understanding we have around securing our personal information, the harder it will be for criminals to get access to it.
+You can find more information at the links below. Also, please feel free to pass these ideas, tools, techniques, and the link to this training to your friends and family.
 
-### Learn more
+## Learn more
 
 To learn more about keeping yourself secure, visit the following resources:
 
@@ -29,5 +29,5 @@ To learn more about keeping yourself secure, visit the following resources:
 
 - *Learn more about MFA, Microsoft Authenticator, and MFA-supported devices*
   - [NIST - Back to basics: Multi-factor authentication (MFA)](https://www.nist.gov/itl/applied-cybersecurity/tig/back-basics-multi-factor-authentication/?azure-portal=true)
-  - [Microsoft Authenticator](https://www.microsoft.com/en-us/account/authenticator/?azure-portal=true)
+  - [Microsoft Authenticator](https://www.microsoft.com/account/authenticator/?azure-portal=true)
   - [Yubico Yubikey](https://www.yubico.com/?azure-portal=true)
