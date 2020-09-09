@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.languages.management-fundamentals
+uid: learn.azure.management-fundamentals
 metadata:
   title: Choose the best tool to manage your Azure environment
   description: Survey the management, administration, and reporting tools for Azure and choose the best one for your technical need.
@@ -23,16 +23,16 @@ roles:
 products:
 - dotnet
 units:
-- learn.languages.management-fundamentals.introduction
-- learn.languages.management-fundamentals.identify-product-options
-- learn.languages.management-fundamentals.analyze-decision-criteria
-- learn.languages.management-fundamentals.use-azure-portal
-- learn.languages.management-fundamentals.use-azure-powershell
-- learn.languages.management-fundamentals.use-azure-cli
-- learn.languages.management-fundamentals.use-azure-mobile-app
-- learn.languages.management-fundamentals.use-azure-resource-manager
-- learn.languages.management-fundamentals.knowledge-check
-- learn.languages.management-fundamentals.summary
+- learn.azure.management-fundamentals.introduction
+- learn.azure.management-fundamentals.identify-product-options
+- learn.azure.management-fundamentals.analyze-decision-criteria
+- learn.azure.management-fundamentals.use-azure-portal
+- learn.azure.management-fundamentals.use-azure-powershell
+- learn.azure.management-fundamentals.use-azure-cli
+- learn.azure.management-fundamentals.use-azure-mobile-app
+- learn.azure.management-fundamentals.use-azure-resource-manager
+- learn.azure.management-fundamentals.knowledge-check
+- learn.azure.management-fundamentals.summary
 
 badge:
-  uid: learn.languages.management-fundamentals.badge
+  uid: learn.azure.management-fundamentals.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.management-fundamentals.use-azure-resource-manager
+uid: learn.azure.management-fundamentals.use-azure-resource-manager
 title: Use Azure Resource Manager Templates to deploy an entire cloud infrastructure
 metadata:
   title: Use Azure Resource Manager Templates to deploy an entire cloud infrastructure
