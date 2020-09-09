@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.languages.serverless-fundamentals
+uid: learn.azure.serverless-fundamentals
 metadata:
   title: Choose the best Azure serverless technology for your compute scenario
   description: Examine Azure's serverless technologies and choose the right service for your scenario.
@@ -23,13 +23,13 @@ roles:
 products:
 - dotnet
 units:
-- learn.languages.serverless-fundamentals.introduction
-- learn.languages.serverless-fundamentals.identify-product-options
-- learn.languages.serverless-fundamentals.analyze-decision-criteria
-- learn.languages.serverless-fundamentals.use-azure-functions
-- learn.languages.serverless-fundamentals.use-azure-logic-apps
-- learn.languages.serverless-fundamentals.knowledge-check
-- learn.languages.serverless-fundamentals.summary
+- learn.azure.serverless-fundamentals.introduction
+- learn.azure.serverless-fundamentals.identify-product-options
+- learn.azure.serverless-fundamentals.analyze-decision-criteria
+- learn.azure.serverless-fundamentals.use-azure-functions
+- learn.azure.serverless-fundamentals.use-azure-logic-apps
+- learn.azure.serverless-fundamentals.knowledge-check
+- learn.azure.serverless-fundamentals.summary
 
 badge:
-  uid: learn.languages.serverless-fundamentals.badge
+  uid: learn.azure.serverless-fundamentals.badge

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.serverless-fundamentals.use-azure-functions
+uid: learn.azure.serverless-fundamentals.use-azure-functions
 title: Use Azure Functions
 metadata:
   title: Use Azure Functions for building complex with imperative code
