@@ -1,9 +1,9 @@
 
-Azure Arc expands the support to resources that run outside of Azure. This means that a Windows Server or Linux server that's running in Contoso's on-premises datacenter can be registered with Resource Manager and presented as a compute resource to the fabric controller. Contoso can also apply this capability to any server that's running Windows Server or Linux that's hosted by another cloud provider.
+Azure Arc expands the support to resources that run outside of Azure. This means that a Windows Server or Linux server that's running in Contoso's on-premises datacenter can be registered with Azure Arc and use many of the resource management capabilities available on Azure. Contoso can also apply this capability to any server that's running Windows Server or Linux that's hosted by another cloud provider.
 
 ## Deploy Azure Arc to on-premises servers
 
-Before a server can register, you must install the Azure Connected Machine agent on each of the operating systems that are targeted for Resource Manager-based management. The agent for Windows Server implements as a Windows Installer (.msi file), which is available from the Microsoft Download Center.
+Before a server can register, you must install the Azure Connected Machine agent on each of the operating systems that are targeted for Azure Arc management. The agent for Windows Server implements as a Windows Installer (.msi file), which is available from the Microsoft Download Center.
 
 > [!TIP]
 > Download the Azure Connected Machine agent for Windows from the [Microsoft Download Center](https://aka.ms/AzureConnectedMachineAgent?azure-portal=true).
@@ -53,12 +53,12 @@ One way to onboard a server is to generate and download a script from the Azure 
 
 :::image type="content" source="../media/gen-script2.png" alt-text="Screenshot that depicts the Generate script page with a Windows PowerShell script on it." border="false":::
 
-After you have generated and downloaded the script, you must install it. On servers that you want to onboard, sign in as a local administrator on Windows Server; for Linux, sign in as **sudo**. Then run the downloaded script.
+After you have generated and downloaded the script, you must install it. On servers that you want to onboard, sign in as a local administrator on Windows Server. For Linux systems, sign in with an account and use **sudo** to install with elevated privileges. Then run the downloaded script.
 
 When you run the script on target computers, the script downloads the Azure Arc agent, installs it, and onboards the server. The script prompts you to authenticate to the target Azure subscription where the corresponding resources will be created. You must also enter a generated security code.
 
 In larger environments, you can use the Desired State Configuration (DSC) management platform in PowerShell and an Azure AD principal to perform the installation and registration in an unattended manner.
 
-When you onboard a server, it becomes a connected machine and is represented by a corresponding Azure resource. That resource has a unique **resource ID** property. It belongs to a resource group inside a subscription, and it can benefit from Resource Manager-based mechanisms such as Azure Policy and tags.
+When you onboard a server, it becomes a connected machine and is represented by a corresponding Azure resource. That resource has a unique **resource ID** property. It belongs to a resource group inside a subscription, and it can benefit from Azure management features such as Azure Policy and tags.
 
 :::image type="content" source="../media/onboard.png" alt-text="Screenshot that depicts the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed." border="false":::
