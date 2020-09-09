@@ -39,7 +39,7 @@ The research by the lead system engineer at Contoso determined the following key
 
 - Azure Sentinel needs access to a Log Analytics workspace. The process is to create a Log Analytics workspace and enable Azure Sentinel on top of that workspace.
 - Azure Sentinel is a paid service.
-- Data retention for a customized workspace is based on the workspace pricing tier. If the Log Analytics workspace is used with Azure Sentinel then the first 90 days of retention are free.
+- Data retention for a customized workspace is based on the workspace pricing tier. If the Log Analytics workspace is used with Azure Sentinel, the first 90 days of retention are free.
 - To enable Azure Sentinel, you need Contributor permissions to the subscription in which the Azure Sentinel workspace resides.
 - To use Azure Sentinel, you need either Contributor or Reader permissions for the resource group to which the workspace belongs.
 
