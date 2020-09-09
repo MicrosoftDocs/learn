@@ -3,7 +3,7 @@ uid: learn.intro-to-azure-sentinel
 metadata:
   title: Introduction to Azure Sentinel
   description: Get familiar with Azure Sentinel, a cloud native security information and event management (SIEM) service.
-  ms.date: 09/26/2018
+  ms.date: 09/21/2020
   author: deanobalino
   ms.author: debryen
   ms.topic: interactive-tutorial
