@@ -20,7 +20,6 @@ prerequisites: |
   - Familiarity with DevOps concepts
   - Access to an Azure subscription with Owner privilege
   - Access to a GitHub account
-iconUrl: https://docs.microsoft.com/../media/learn/module.svg
 levels:
   - intermediate
 roles:
@@ -40,5 +39,6 @@ units:
   - learn.microservices-devops-aspnet-core.4-implement-github-action
   - learn.microservices-devops-aspnet-core.5-knowledge-check
   - learn.microservices-devops-aspnet-core.6-summary
+iconUrl: /learn/achievements/aspnetcore/microservices-devops-aspnet-core.svg
 badge:
   uid: learn.microservices-devops-aspnet-core.badge
