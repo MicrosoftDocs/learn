@@ -2,7 +2,7 @@
 uid: learn.secure-network-connectivity-azure.4-protect-attacks-azure-ddos-protection
 title: Protect from DDoS attacks by using Azure DDoS Protection
 metadata:
-  description: Learnhow Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
+  description: Learn how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
   ms.date: 09/09/2020
   author: tpetchel
   ms.author: thpetche
