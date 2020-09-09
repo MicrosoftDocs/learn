@@ -35,7 +35,7 @@ To implement this in Q#:
 
 1. Modify *Program.qs* like this and then save the file:
 
-   :::code language="qsharp" source="code/7-program-1.qs":::
+   :::code language="qsharp" source="code/7-program-1.qs" highlight="11":::
 
 1. Open the integrated terminal. From the **Terminal** menu, select **New Terminal**.
 
