@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-quiz-builder.python-basics
+uid: learn.student-evangelism.create-python-personality-test.python-basics
 metadata:
   title: Python basics needed for a Wonder Woman personality test
   description: This unit gives a high-level overview of some basic Python concepts used throughout this project. 

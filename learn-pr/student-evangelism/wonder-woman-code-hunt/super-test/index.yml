@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.python-quiz-builder
+uid: learn.student-evangelism.create-python-personality-test
 metadata:
   title: Create a test to determine your super personality by using Python and Visual Studio Code
   description: Which WONDER WOMAN 1984 character are you most like? Use the popular programming language Python to build a personality test inspired by WONDER WOMAN 1984 and share it with your friends. This lesson will teach you the basics of booleans, commands, and conditionals.
@@ -21,20 +21,21 @@ prerequisites: |
   - No coding experience required
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-  - beginner
+- beginner
 roles:
-  - student
-  - developer
+- student
+- developer
 products:
-  - vs-code
+- vs-code
 units:
-- learn.student-evangelism.python-quiz-builder.introduction
-- learn.student-evangelism.python-quiz-builder.set-up-visual-studio-code
-- learn.student-evangelism.python-quiz-builder.create-test-1
-- learn.student-evangelism.python-quiz-builder.create-test-2
-- learn.student-evangelism.python-quiz-builder.create-test-3
-- learn.student-evangelism.python-quiz-builder.score-test
-- learn.student-evangelism.python-quiz-builder.knowledge-check
-- learn.student-evangelism.python-quiz-builder.summary
+- learn.student-evangelism.create-python-personality-test.introduction
+- learn.student-evangelism.create-python-personality-test.set-up-visual-studio-code
+- learn.student-evangelism.create-python-personality-test.python-basics
+- learn.student-evangelism.create-python-personality-test.create-test-1
+- learn.student-evangelism.create-python-personality-test.create-test-2
+- learn.student-evangelism.create-python-personality-test.create-test-3
+- learn.student-evangelism.create-python-personality-test.score-test
+- learn.student-evangelism.create-python-personality-test.knowledge-check
+- learn.student-evangelism.create-python-personality-test.summary
 badge:
-  uid: learn.student-evangelism.python-quiz-builder.badge
+  uid: learn.student-evangelism.create-python-personality-test.badge

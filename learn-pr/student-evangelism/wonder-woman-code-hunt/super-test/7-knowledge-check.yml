@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.python-quiz-builder.knowledge-check
+uid: learn.student-evangelism.create-python-personality-test.knowledge-check
 metadata:
   title: Check your knowledge
   description: Answer a question to see what you've learned.
