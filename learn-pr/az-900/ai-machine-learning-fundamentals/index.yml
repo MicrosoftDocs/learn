@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.languages.ai-machine-learning-fundamentals
+uid: learn.azure.ai-machine-learning-fundamentals
 metadata:
   title: Choose the best artificial intelligence service for your needs
   description: Examine Azure's artificial intelligence services choose the right service for your scenario.
@@ -30,13 +30,13 @@ products:
 - azure-machine-learning
 - azure-bot-service
 units:
-- learn.languages.ai-machine-learning-fundamentals.introduction
-- learn.languages.ai-machine-learning-fundamentals.identify-product-options
-- learn.languages.ai-machine-learning-fundamentals.analyze-decision-criteria
-- learn.languages.ai-machine-learning-fundamentals.use-machine-learning
-- learn.languages.ai-machine-learning-fundamentals.use-cognitive-services
-- learn.languages.ai-machine-learning-fundamentals.use-bot-services
-- learn.languages.ai-machine-learning-fundamentals.knowledge-check
-- learn.languages.ai-machine-learning-fundamentals.summary
+- learn.azure.ai-machine-learning-fundamentals.introduction
+- learn.azure.ai-machine-learning-fundamentals.identify-product-options
+- learn.azure.ai-machine-learning-fundamentals.analyze-decision-criteria
+- learn.azure.ai-machine-learning-fundamentals.use-machine-learning
+- learn.azure.ai-machine-learning-fundamentals.use-cognitive-services
+- learn.azure.ai-machine-learning-fundamentals.use-bot-services
+- learn.azure.ai-machine-learning-fundamentals.knowledge-check
+- learn.azure.ai-machine-learning-fundamentals.summary
 badge:
-  uid: learn.languages.ai-machine-learning-fundamentals.badge
+  uid: learn.azure.ai-machine-learning-fundamentals.badge
