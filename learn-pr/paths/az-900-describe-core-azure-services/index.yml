@@ -1,0 +1,57 @@
+### YamlMime:LearningPath
+uid: learn.az-900-describe-core-azure-services
+metadata:
+  title: "AZ-900: Describe core Azure services"
+  description: "This learning path provides you with an introduction to the basics of Azure's core services for compute, network, storage, and database."
+  brand: azure
+  ms.date: 09/11/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "AZ-900: Describe core Azure services"
+summary: |
+  In this learning path, you'll:
+    - Understand the breadth of services available in Azure including compute, network, storage, and database
+    - Explore virtualization services such as Azure Virtual Machines, Azure Container Instances, Azure Kubernetes Service, and Windows Virtual Desktop
+    - Learn about database services such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure's big data and analysis services
+    - Examine Azure networking resources such as Virtual Networks, VPN Gateways, and Azure ExpressRoute
+    - Explore Azure storage services such Azure Blob Storage, Azure Disk Storage, and Azure File Storage
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with cloud computing is helpful, but isn't necessary
+iconUrl: /learn/achievements/az-900-describe-core-azure-services.svg
+levels:
+- beginner
+roles:
+- administrator
+- solution-architect
+- developer
+- student
+products:
+- azure
+- azure-app-service
+- azure-blob-storage
+- azure-container-instances
+- azure-container-registry
+- azure-cosmos-db
+- azure-databricks
+- azure-data-lake
+- azure-expressroute
+- azure-files
+- azure-hdinsight
+- azure-kubernetes-service
+- azure-sql-database
+- azure-storage
+- azure-storage-accounts
+- azure-synapse-analytics
+- azure-virtual-machines
+- azure-virtual-network
+- azure-vpn-gateway
+modules:
+- learn.azure.azure-database-fundamentals
+- learn.azure.azure-compute-fundamentals
+- learn.azure.azure-storage-fundamentals
+- learn.azure.azure-networking-fundamentals
+trophy:
+  uid: az-900-describe-core-azure-services.trophy
