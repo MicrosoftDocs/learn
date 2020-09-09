@@ -142,7 +142,8 @@ reasonable time. To use a Resources Estimator:
    BorrowedWidth   0       0
    ```
 
-   > [!NOTE] There are two columns in the output, but for the moment you don't need to
+   > [!NOTE] 
+   > There are two columns in the output, but for the moment you don't need to
    > worry about it since both columns will display the same content. This might
    > not be true for some advanced applications of the QDK out of the scope of
    > this module.
