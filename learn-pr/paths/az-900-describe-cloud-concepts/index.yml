@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-cloud-concepts
 metadata:
-  title: "Azure Fundamentals - 1 of 6: Describe core Azure concepts"
+  title: "Azure Fundamentals: Describe core Azure concepts (learning path 1 of 6)"
   description: "This learning path provides you with an introduction to the basics of Azure cloud computing and Azure architecture."
   brand: azure
   ms.date: 09/11/2020
@@ -9,13 +9,13 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Azure Fundamentals - 1 of 6: Describe core Azure concepts"
+title: "Azure Fundamentals: Describe core Azure concepts (learning path 1 of 6)"
 summary: |
-  In this learning path, you'll:
+  After completing this learning path, you'll be able to:
     - Understand the benefits of cloud computing in Azure and how it can save you time and money
-    - Learn cloud concepts such as high availability, scalability, elasticity, agility, and disaster recovery
-    - Explore core Azure architecture components such as subscriptions, management groups, resources and resource groups
-    - Learn about geographic distribution through Azure regions, region pairs, and availability zones
+    - Explain cloud concepts such as high availability, scalability, elasticity, agility, and disaster recovery
+    - Describe core Azure architecture components such as subscriptions, management groups, resources and resource groups
+    - Summarize geographic distribution concepts such as Azure regions, region pairs, and availability zones
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
   - You should be familiar with cloud computing is helpful, but isn't necessary
