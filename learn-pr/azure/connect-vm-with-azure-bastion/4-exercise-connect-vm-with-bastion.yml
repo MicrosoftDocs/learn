@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.connect-vm-with-azure-bastion.exercise-connect-to-vm-with-bastion
+title: Exercise – Connect to a virtual machine using the Bastion Service
+metadata:
+  title: Exercise – Connect to a virtual machine using the Bastion Service
+  description: Exercise – Connect to a virtual machine using the Bastion Service
+  ms.date: 09/04/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ROBOTS: NOINDEX
+durationInMinutes: 25
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-connect-vm-with-bastion.md)]
