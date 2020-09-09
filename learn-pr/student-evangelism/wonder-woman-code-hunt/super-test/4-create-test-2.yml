@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.wonder-woman-code-hunt.super-test.create-test-2
+uid: learn.student-evangelism.wonder-woman-python-create-personality-test.create-test-2
 metadata:
   title: Create a Wonder Woman test - part two
   description: This unit introduces if-, elif-, and else-statements in Python

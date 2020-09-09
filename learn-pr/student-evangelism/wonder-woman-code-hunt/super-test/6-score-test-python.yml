@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.wonder-woman-code-hunt.super-test.score-test
+uid: learn.student-evangelism.wonder-woman-python-create-personality-test.score-test
 metadata:
   title: Choose a Wonder Woman character based on a personality test 
   description: This unit walks you through scoring a test and assigning characters based on personality questions in Python.
