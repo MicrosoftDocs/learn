@@ -87,12 +87,13 @@ quantum mechanics and therefore of quantum computing.
 ## Quantum computers are probabilistic
 
 A fundamental difference between classical computers and quantum computers is
-that programs in quantum computers are probabilistic, whereas classical computers are deterministic. Quantum algorithms consist
-of linear operations to a register of qubits to modify their states to a
-particular superposition of all possibilities. Each possible state has an
-associated probability amplitude. When we make a measurement, we obtain one of
-the possible states with a certain probability. This fact contrasts with
-classical computing, where a bit can only be deterministically 0 or 1.
+that programs in quantum computers are probabilistic, whereas classical
+computers are deterministic. Quantum algorithms consist of linear operations
+applied to a register of qubits to modify the states to a particular
+superposition of all possibilities. Each possible state has an associated
+probability amplitude. When we make a measurement, we obtain one of the possible
+states with a certain probability. This fact contrasts with classical computing,
+where a bit can only be deterministically 0 or 1.
 
 These characteristics mean that sometimes you have to run the algorithm several
 times to ensure the highest probability result in the output. This repetition
