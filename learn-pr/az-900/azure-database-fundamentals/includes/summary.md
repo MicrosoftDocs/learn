@@ -4,12 +4,12 @@ In addition, you saw how Azure Cosmos DB a variety of popular APIs - SQL, MongoD
 
 ## Learn more
 
-- [Azure Analytics Services](https://azure.microsoft.com/product-categories/analytics)
-- [Azure Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/)
-- [Azure SQL documentation](https://docs.microsoft.com/azure/sql-database/)
-- [Azure Database for MySQL documentation](https://docs.microsoft.com/azure/mysql/)
-- [Azure Database for PostgreSQL documentation](https://docs.microsoft.com/azure/postgresql/)
-- [Create an Azure Database for PostgreSQL server](https://docs.microsoft.com/learn/modules/create-azure-db-for-postgresql-server/)
-- [Insert and query data in your Azure Cosmos DB database](https://docs.microsoft.com/learn/modules/access-data-with-cosmos-db-and-sql-api/)
-- [Migrate on-premises MySQL databases to Azure Database for MySQL](https://docs.microsoft.com/learn/modules/migrate-on-premises-mysql-databases/)
-- [Provision an Azure SQL database to store application data](https://docs.microsoft.com/learn/modules/provision-azure-sql-db/)
+- [Azure Analytics Services](https://azure.microsoft.com/product-categories/analytics/?azure-portal=true)
+- [Azure Cosmos DB documentation](https://docs.microsoft.com/azure/cosmos-db/?azure-portal=true)
+- [Azure SQL documentation](https://docs.microsoft.com/azure/sql-database/?azure-portal=true)
+- [Azure Database for MySQL documentation](https://docs.microsoft.com/azure/mysql/?azure-portal=true)
+- [Azure Database for PostgreSQL documentation](https://docs.microsoft.com/azure/postgresql/?azure-portal=true)
+- [Create an Azure Database for PostgreSQL server](https://docs.microsoft.com/learn/modules/create-azure-db-for-postgresql-server/?azure-portal=true)
+- [Insert and query data in your Azure Cosmos DB database](https://docs.microsoft.com/learn/modules/access-data-with-cosmos-db-and-sql-api/?azure-portal=true)
+- [Migrate on-premises MySQL databases to Azure Database for MySQL](https://docs.microsoft.com/learn/modules/migrate-on-premises-mysql-databases/?azure-portal=true)
+- [Provision an Azure SQL database to store application data](https://docs.microsoft.com/learn/modules/provision-azure-sql-db/?azure-portal=true)

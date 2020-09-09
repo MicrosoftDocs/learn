@@ -90,7 +90,7 @@ In this task, we will configure the SQL server and run a SQL query.
     ON pc.productcategoryid = p.productcategoryid;
     ```
 
-    ![Screenshot of the Query editor with the query pane and the commands executing successfully.](../media/query-editor.png)
+    [![Screenshot of the Query editor with the query pane and the commands executing successfully.](../media/query-editor.png)](../media/query-editor-expanded.png#lightbox)
 
 1. Click **Run**, and then review the query results in the **Results** pane. The query should run successfully.
 

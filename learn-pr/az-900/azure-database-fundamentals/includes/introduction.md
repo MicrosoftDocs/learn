@@ -8,7 +8,7 @@ In this module, you'll learn about several of the primary database services that
 
 ## Learning objectives
 
-Upon completion of this module, you'll be able to describe the benefits and usage of:
+After completing this module, you'll be able to describe the benefits and usage of:
 - Azure Cosmos DB
 - Azure SQL Database
 - Azure Database for MySQL

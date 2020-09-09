@@ -13,6 +13,6 @@ Azure Cosmos DB supports schema-less data, which lets you build highly responsiv
 
 For example, Tailwind Traders provides a public training portal that is used by customers across the globe to learn about the different tools that Tailwind Traders creates, and the data is maintained and updated by Tailwind Traders' developers. The following illustration shows a sample Azure Cosmos DB database that's used to store data for Tailwind Traders training portal website.
 
-[![Azure Cosmos DB databases in a training portal website.](../media/azure_cosmos_db.png)](../media/azure_cosmos_db-expanded.png#lightbox)
+[![Azure Cosmos DB databases in a training portal website.](../media/azure-cosmos-db.png)](../media/azure-cosmos-db-expanded.png#lightbox)
 
 Azure Cosmos DB makes a great choice in a variety of scenarios because it is flexible. At the lowest level, Azure Cosmos DB stores data in atom-record-sequence (ARS) format. The data is then abstracted and projected as an API, which you specify when you are creating your database. Your choices include SQL, MongoDB, Cassandra, Tables, and Gremlin. This level of flexibility means that as you migrate your company's databases to Azure Cosmos DB, your developers can stick with the API where they're most comfortable.

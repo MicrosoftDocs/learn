@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-database-fundamentals.azure-mysql-database
-title: Explore Azure Database for MySQL
+title: Explore Azure database for MySQL
 metadata:
-  title: Explore Azure Database for MySQL
-  description: In this unit, you'll learn the fundamentals about Azure Database fo MySQL.
+  title: Explore Azure database for MySQL
+  description: In this unit, you'll learn the fundamentals about Azure database for MySQL.
   ms.date: 09/11/2020
   author: rmcmurray
   ms.author: robmcm
