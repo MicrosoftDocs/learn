@@ -136,7 +136,7 @@ Browse to `http://localhost:8080`.
 :::image type="content" source="../media/my-shopping-list-app.png" alt-text="Browsing to your web app":::
 
 > [!NOTE]
-> In this module's exercises, you deployed an app without an API. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
+> In this module's exercises, you will deploy an app without an API. See the Next Steps section in the final unit for information about the next tutorial, where you'll deploy an API alongside your app.
 
 Now stop your running app by pressing <kbd>Ctrl-C</kbd> in the terminal.
 
