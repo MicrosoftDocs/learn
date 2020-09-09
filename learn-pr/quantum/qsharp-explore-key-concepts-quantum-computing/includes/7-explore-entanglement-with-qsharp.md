@@ -65,7 +65,7 @@ To implement this in Q#:
    ```
 
    You can see how you obtained the same outcome for both qubits, as you might
-   expect if the state were entangled. However, check entanglement you must
+   expect if the state were entangled. However, to check entanglement you must
    run this code multiple times to see that it wasn't just luck. Try to run the
    code several times to see if the results are consistent.
 
