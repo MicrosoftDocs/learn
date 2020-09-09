@@ -98,8 +98,14 @@ To learn more about the `Controlled` functor and many other Q# features, you can
 take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations?azure-portal=true).
 
 > [!NOTE]
-> A functor in Q# is a factory that defines a new operation from another
-> operation.
+> A functor in Q# is a map from the implementations of operations to new
+> operations. For example, by adding the keyword `Controlled` in front of an
+> operation `OperationA` you define a new operation `Controlled OperationA`.In
+> Q# there are only two functors: `Controlled` to create controlled versions of
+> the operations, and `Adjoint` to create the adjoint version. To learn more
+> about these functors you can check the [Q# user
+> guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions?view=qsharp-preview#calling-operation-specializations?azure-portal=true).
+
 
 ## Estimate resources with Q\#
 
@@ -137,14 +143,28 @@ reasonable time. To use a Resources Estimator:
    BorrowedWidth   0       0
    ```
 
-   We need 1 CNOT gate, 1 Clifford gate to apply `H` and 2 measurements to
-   obtain the qubits results. The width of the circuit is the number of qubits
-   used, 2 in this case since you only used two qubits. For this example, it was
-   very simple to know how many resources you needed without having to use
-   `ResourcesEstimator`. But Q# is a high-level programming language, and for
-   most programs it's virtually impossible to know directly how many resources
-   they need. You will find that `ResourcesEstimator` is a very useful tool as
-   you advance in your path to become a Q# quantum developer.
+   There are two columns in the output. This is because Q# programs may consist
+   in the sequential application of many operations. The column `Sum` displays
+   the total sum of the resources used by the complete run of the program. The
+   column `Max` displays the maximum number of uses of a resource by any single
+   operation. For example, the `Width` represents the number of qubits used by a
+   program or operation. However, different operations in a program may use a
+   different number of qubits. Imagine a program that consist of two operations
+   `OperationA` and `OperationB` that are run sequentially. `OperationA` uses
+   four qubits while `OperationB` needs six. The output for `Width` for this
+   program will be `10` for `Sum` (4+6) and `6` for `Max` since the operation
+   that uses most qubits uses six qubits.
+
+   In the previous example the program only contains one operation, so both
+   colums are equal. It says that you need 1 CNOT gate, 1 Clifford gate to apply
+   `H` and 2 measurements to obtain the qubits results. The width of the circuit
+   is the number of qubits used, 2 in this case since you only used two qubits.
+   For this example, it was very simple to know how many resources you needed
+   without having to use `ResourcesEstimator`. But Q# is a high-level
+   programming language, and for most programs it's virtually impossible to know
+   directly how many resources they need. You will find that
+   `ResourcesEstimator` is a very useful tool as you advance in your path to
+   become a Q# quantum developer.
 
    >[!NOTE]
    > Clifford gates are a basic kind of quantum operation and are useful

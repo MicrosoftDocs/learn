@@ -74,6 +74,18 @@ Mathematically, this is: $$  H \ket{0} = \frac1{\sqrt2} \ket{0} +
 Linearity is a fundamental property of
 quantum mechanics and therefore of quantum computing.
 
+> [!NOTE]
+> In this module and the documentation for Q# we always use $\LaTeX$
+> fonts to design mathematical linear operations that take qubit states to qubit
+> states. On the other hand, we use the `code` font to represent Q# operations
+> that take qubit registers as inputs to transform their state. For example, the
+> linear operator $H$ maps the input state $\ket{0}$ to the state
+> $H\ket{0}=\frac{1}{\sqrt2}(\ket{0}+\ket{1})$, while the operation `H` acts on
+> a qubit as `H(qubit)` to change the state of `qubit` from $\ket{0}$ to
+> $\frac{1}{\sqrt2}(\ket{0}+\ket{1})$.
+
+For example, the matrix $H$ maps the input state $\ket{0}$ to the state $H\ket{0} = \frac{1}{\sqrt{2}} ...$, while the operation `H` acts on a qubit as `H(qubit)` to change the state of `qubit` from $\ket{0}$ to ...
+
 ## Quantum computers are probabilistic
 
 A fundamental difference between classical computers and quantum computers is

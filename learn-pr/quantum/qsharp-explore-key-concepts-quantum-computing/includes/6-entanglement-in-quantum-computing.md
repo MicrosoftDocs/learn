@@ -16,6 +16,13 @@ In such a state, only two outcomes are possible when measuring the state of both
 probability of $\frac12$. There is zero probability of obtaining **01** and
 **10**. If you measure the first qubit to be **0**, you would know the second qubit would be **0** as well, without even having to measure it. You say that the measurement outcomes are correlated and the qubits are *entangled*.
 
+> [!NOTE] Not every correlation between the measurements of two qubits means
+> that two qubits are entangled. Classical bits can also be correlated. Two
+> qubits are entangled when they present correlations that cannot be reproduced
+> using classical bits. This difference between classical and quantum
+> correlations is subtle but essential for the speedup provided by quantum
+> computers. This difference has the details are out of the scope of this module.
+
 Similarly, you can set up a superposition state:
 
 $$\ket{\psi}=\frac1{\sqrt2}\ket{01}+\frac1{\sqrt2}\ket{10}.$$
@@ -29,8 +36,11 @@ are entangled when the state of the global system, that is, the joint system of
 both, cannot be represented as states of its subsystems, but must be considered
 as one.
 
-Entanglement is different from classical correlations, since the state of the systems is not determined and you can talk only about the probabilities associated to the outcomes. In fact, you can say that two systems are entangled
-when the correlations between measurements of both systems can't be explained with local classical physics.
+Entanglement is different from classical correlations, since the state of the
+systems is not determined and you can talk only about the probabilities
+associated to the outcomes. In fact, you can say that two systems are entangled
+when the correlations between measurements of both systems can't be explained
+with local classical physics.
 
 ### Entanglement and superposition are difficult to simulate
 
