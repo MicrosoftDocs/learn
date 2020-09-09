@@ -93,8 +93,8 @@ amplitudes of $\ket{1}$ had the opposite phase and destructively interfered,
 eliminating the probability of obtaining **1**.
 
 Interference is one of the basic principles behind the power of quantum
-computing. Quantum interference can be harnessed to cancel the amplitudes
-of states that don't help us solve our problem, and to amplify the amplitudes
-of states that lead us to the solution.
+computing. Quantum interference can be harnessed to cancel the amplitudes of
+states that don't help you to solve the problem, and to amplify the amplitudes
+of states that lead you to the solution.
 
 In the next part, you'll see how you can use Q# to explore quantum interference.

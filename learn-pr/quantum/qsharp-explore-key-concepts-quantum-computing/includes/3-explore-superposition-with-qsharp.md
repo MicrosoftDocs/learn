@@ -1,4 +1,4 @@
-Now you're going to explore how to create, manage, and inspect superpositions in Q#. We introduce a function from the Quantum Development Kit called `DumpMachine` that enables us to observe the probability amplitudes of the simulated qubit registers.
+Now you're going to explore how to create, manage, and inspect superpositions in Q#. We introduce a function from the Quantum Development Kit called `DumpMachine` that enables you to observe the probability amplitudes of the simulated qubit registers.
 
 ## Create the project
 
