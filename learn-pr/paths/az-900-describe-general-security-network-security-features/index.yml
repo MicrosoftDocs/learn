@@ -8,7 +8,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Azure Fundamentals: Describe general security and network security features"
+title: "Azure Fundamentals: Describe general security and network security features (learning path 4 of 6)"
 summary: |
   Having a good security strategy is essential in today's digital world. Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. Security needs to happen at the application level, at the data level, and at the network level.
 

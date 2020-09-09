@@ -8,7 +8,7 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Azure Fundamentals: Describe identity, governance, privacy, and compliance features"
+title: "Azure Fundamentals: Describe identity, governance, privacy, and compliance features (learning path 5 of 6)"
 summary: |
   With the rise of remote work, bring your own device (BYOD), mobile applications, and cloud applications, the primary security boundary has shifted from firewalls and physical access controls to _identity_. Understanding who is using your systems and what they have permission to do are critical to keeping your data safe from attackers. To stay organized, manage costs, and meet your compliance goals, you need a good cloud governance strategy.
 
