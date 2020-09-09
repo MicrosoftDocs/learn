@@ -65,7 +65,7 @@ With the Azure-SSIS integration runtime enabled, you are able to manage, monitor
 
 1. For **Catalog Database Server Endpoint**, select the endpoint of your database server to host SSISDB.
 
-1. Select the **Use Azure Active Directory (AAD) authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
+1. Select the **Use Azure Active Directory (Azure AD) authentication with the managed identity for your ADF** check box to choose the authentication method for your database server to host SSISDB.
 
 1. For **Admin Username**, enter the SQL authentication username for your database server to host SSISDB.
 
