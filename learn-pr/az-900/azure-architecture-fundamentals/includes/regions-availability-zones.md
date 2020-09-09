@@ -11,7 +11,7 @@ When you deploy a resource in Azure, you will often need to choose the region wh
 
 A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Australia East*, and *Japan West*. Here's a view of all the available regions as of February 2020:
 
-[//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/global-infrastructure/regions/ or https://azure.microsoft.com/en-us/global-infrastructure/geographies/, resampled smaller here for the initial view.)
+[//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/global-infrastructure/regions/ or https://azure.microsoft.com/global-infrastructure/geographies/, resampled smaller here for the initial view.)
 [ ![Global map of available Azure regions as of June 2020.](../media/regions-small.png) ](../media/regions-expanded.png#lightbox)
 
 ### Why are regions important?
