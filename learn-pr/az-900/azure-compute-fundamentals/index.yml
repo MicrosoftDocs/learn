@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.azure.azure-compute-fundamentals
 metadata:
-  title: Explore Azure Compute services
+  title: Explore Azure compute services
   description: Learn about the different services that are available in Azure Compute.
   ms.date: 09/11/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Explore Azure Compute services
+title: Explore Azure compute services
 summary: In this module, you'll learn how to take advantage of several virtualization services in Azure Compute, which can help your applications scale out quickly and efficiently in order to meet increasing demands.
 abstract: | 
-  Upon completion of this module, you'll be able to describe the benefits and usage of:
+  After completing this module, you'll be able to describe the benefits and usage of:
   - Azure Virtual Machines (VMs)
   - Azure App Services
   - Azure Container Instances (ACI)

@@ -11,7 +11,7 @@ Azure App Service enables you to build and host web apps, background jobs, mobil
 
 This Platform as a Service (PaaS) allows you to focus on the website and API logic while Azure handles the infrastructure to run and scale your web applications.
 
-## App Service costs
+## Azure App Service costs
 
 You pay for the Azure compute resources your app uses while it processes requests based on the App Service Plan you choose. The App Service plan determines how much hardware is devoted to your host - for example, whether it's dedicated or shared hardware, and how much memory is reserved for it. There is even a _free_ tier you can use to host small, low-traffic sites.
 
@@ -32,7 +32,7 @@ App Service includes full support for hosting web apps using ASP.NET, ASP.NET Co
 
 ### API apps
 
-Much like hosting a website, you can build REST-based Web APIs using your choice of language and framework. You get full Swagger support, and the ability to package and publish your API in the Azure Marketplace. The produced apps can be consumed from any HTTP(S)-based client.
+Much like hosting a website, you can build REST-based Web APIs using your choice of language and framework. You get full Swagger support, and the ability to package and publish your API in Azure Marketplace. The produced apps can be consumed from any HTTP(S)-based client.
 
 ### Web jobs
 

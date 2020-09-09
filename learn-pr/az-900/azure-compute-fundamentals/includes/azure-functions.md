@@ -51,10 +51,10 @@ Azure provides over 200 different connectors and processing blocks to interact w
 
 As an example, let's say a ticket arrives in ZenDesk. You could:
 
-1. Detect the intent of the message with cognitive services
-1. Create an item in SharePoint to track the issue
-1. If the customer isn't in your database, add them to your Dynamics 365 CRM system
-1. Send a follow-up email to acknowledge their request
+- Detect the intent of the message with cognitive services
+- Create an item in SharePoint to track the issue
+- If the customer isn't in your database, add them to your Dynamics 365 CRM system
+- Send a follow-up email to acknowledge their request
 
 All of that could be designed in a visual designer making it easy to see the logic flow, which is ideal for a business analyst role.
 
@@ -68,7 +68,7 @@ Functions and Logic Apps can both create complex orchestrations, which is a coll
 You can mix and match services when you build an orchestration, calling functions from logic apps and calling logic apps from functions. Here are some common differences between the two.
 
 | | Functions | Logic Apps |
-|--- | --- | --- |
+|---|---|---|
 | State | Normally stateless, but Durable Functions provide state | Stateful |
 | Development | Code-first (imperative) | Designer-first (declarative) |
 | Connectivity | About a dozen built-in binding types, write code for custom bindings | Large collection of connectors, Enterprise Integration Pack for B2B scenarios, build custom connectors |

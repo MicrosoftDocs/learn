@@ -51,9 +51,9 @@ Virtual machines (VMs) are software emulations of physical computers. They inclu
   :::column-end:::
   :::column span="3":::
 
-## App services
+## App Services
 
-With [App services](https://azure.microsoft.com/services/app-service), you can quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. You can meet rigorous performance, scalability, security, and compliance requirements while using a fully managed platform to perform infrastructure maintenance. App Services is a platform as a service (PaaS) offering. 
+With [App Services](https://azure.microsoft.com/services/app-service), you can quickly build, deploy, and scale enterprise-grade web, mobile, and API apps running on any platform. You can meet rigorous performance, scalability, security, and compliance requirements while using a fully managed platform to perform infrastructure maintenance. App Services is a platform as a service (PaaS) offering. 
 
   :::column-end:::
 :::row-end:::

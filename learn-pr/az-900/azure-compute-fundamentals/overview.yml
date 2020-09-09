@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-compute-fundamentals.overview
-title: Overview of Azure Compute services
+title: Overview of Azure compute services
 metadata:
-  title: Overview of Azure Compute services
-  description: In this unit, you'll learn about Azure Compute Services.
+  title: Overview of Azure compute services
+  description: In this unit, you'll learn about Azure compute services.
   ms.date: 09/11/2020
   author: rmcmurray
   ms.author: robmcm

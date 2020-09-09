@@ -10,7 +10,7 @@ This scenario is exactly what you can do in Azure. You can create compute resour
 
 ## Learning objectives
 
-Upon completion of this module, you'll be able to describe the benefits and usage of:
+After completing this module, you'll be able to describe the benefits and usage of:
 
 - Azure Virtual Machines (VMs)
 - Azure App Services
