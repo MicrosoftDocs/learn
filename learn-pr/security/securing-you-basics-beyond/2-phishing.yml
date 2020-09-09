@@ -33,13 +33,13 @@ quiz:
     choices:
     - content: 'Go ahead and click, it’s probably safe.'
       isCorrect: false
-      explanation: 'If it looks suspicious, you should never interact with it directly, and report it.'
+      explanation: 'If it looks suspicious, you should never interact with it directly. Just report it.'
     - content: 'You can open attachments and/or links as long as email sender seems legitimate.'
       isCorrect: false
-      explanation: 'Attackers will make phishing emails look as legitimate as possible to make you interact with it.'
-    - content: 'Don’t open any attachments or click any links, and report it.'
+      explanation: 'Attackers will make phishing emails look as legitimate as possible.'
+    - content: 'Don’t open any attachments or click any links. Just report it.'
       isCorrect: true
-      explanation: 'Perfect! Identifying the email as suspicious, and not interacting with it, is the best way to protect yourself from phishing.'
+      explanation: 'Perfect! Identifying the email as suspicious and not interacting with it otherwise is the best way to protect yourself from phishing.'
     - content: 'Don’t open any attachments or click any links unless the email says you need to take immediate action.'
       isCorrect: false
-      explanation: 'Attackers will use a false sense of urgency to get you to interact with their email and not use better judgment.'
+      explanation: 'Attackers will use a false sense of urgency to get you to interact with their email.'
