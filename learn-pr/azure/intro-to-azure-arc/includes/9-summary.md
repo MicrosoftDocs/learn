@@ -5,7 +5,7 @@ In this module, you learned about Azure Arc enabled servers. You also learned ab
 
 ## Learn more
 
-You can learn more by reviewing the following documents:
+You can learn more by reviewing the following articles:
 
 - [Azure Arc documentation](https://docs.microsoft.com/azure/azure-arc?azure-portal=true)
 - [What is Azure Arc enabled servers (preview)?](https://docs.microsoft.com/azure/azure-arc/servers/overview?azure-portal=true)

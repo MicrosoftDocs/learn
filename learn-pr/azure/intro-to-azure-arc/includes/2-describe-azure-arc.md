@@ -1,4 +1,3 @@
-
 *Azure Arc* is a service that provides a set of technologies for organizations such as Contoso that want to simplify their complex and distributed environments. Azure Arc provides a centralized, unified, and self-service approach to managing:
 
 - Windows Server
@@ -11,11 +10,11 @@ You can also use Azure Arc to introduce Azure data services to hybrid environmen
 
 Azure Arc enables you to extend Azure management capabilities to hybrid environments, including on-premises datacenters and third-party cloud providers. You can use Azure Arc to manage and configure your Windows and Linux server machines and Kubernetes clusters that are hosted outside of Azure.
 
-:::image type="content" source="../media/arc-overview.png" alt-text="An administrator using Azure management tools via Azure Arc to connect and manage resources in multi-cloud, edge, and on-premises scenarios." border="false":::
+:::image type="content" source="../media/2-arc-overview.png" alt-text="An administrator using Azure management tools via Azure Arc to connect and manage resources in multi-cloud, edge, and on-premises scenarios." border="false":::
 
 By using Azure Arc, you can manage your IT resources, wherever they are hosted, by using the same Azure management tools and practices you use to manage Azure hosted resources. This means you can manage resources with tools such as Azure Resource Manager, Azure Cloud Shell, the Azure portal, and Azure Policy regardless of where the managed resources are located.
 
-:::image type="content" source="../media/arc-management.png" alt-text="Azure management tools being used to manage both Azure hosted resources, and through Azure Arc, resources located elsewhere." border="false":::
+:::image type="content" source="../media/2-arc-management.png" alt-text="Azure management tools being used to manage both Azure hosted resources, and through Azure Arc, resources located elsewhere." border="false":::
 
 Azure Arc also extends adoption of cloud practices such as DevOps and Azure security across the on-premises, multiple-cloud, and edge environments. In addition to extending the control plane for management, Azure Arc enables organizations to run Azure data services anywhere.
 

@@ -2,7 +2,7 @@ Contoso could use Azure Monitor to help monitor and manage their existing on-pre
 
 By maintaining their on-premises infrastructures, Contoso can benefit from this functionality when tracking, auditing, or troubleshooting past events. Using Monitor, you can monitor resources such as your onboarded servers. For example, you can select **Insights** to review a map of your resources' network connections.
 
-:::image type="content" source="../media/insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
+:::image type="content" source="../media/7-insights-map.png" alt-text="Screenshot that depicts the Map tab on the Insights page for a VM in Azure. ContosoVM1 is displayed with details of open TCP ports. A VM summary is also displayed, detailing the VM's operating system, IP address, and links for Health, Machine properties, and Azure VM properties. Three buttons are displayed for access to Properties (selected), Log Events, Alerts, and Connections." border="false":::
 
 ## How can you use Azure Monitor?
 

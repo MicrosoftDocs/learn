@@ -1,4 +1,3 @@
-
 Azure Arc expands the support to resources that run outside of Azure. This means that a Windows Server or Linux server that's running in Contoso's on-premises datacenter can be registered with Azure Arc and use many of the resource management capabilities available on Azure. Contoso can also apply this capability to any server that's running Windows Server or Linux that's hosted by another cloud provider.
 
 ## Deploy Azure Arc to on-premises servers
@@ -10,7 +9,7 @@ Before a server can register, you must install the Azure Connected Machine agent
 
 For smaller-scale deployments, you can use the onboarding script that's available on the Azure portal.
 
-:::image type="content" source="../media/gen-script.png" alt-text="Screenshot that depicts the Select a method blade of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale." border="false":::
+:::image type="content" source="../media/3-gen-script.png" alt-text="Screenshot that depicts the Select a method blade of the Azure Arc Machines node. Two options are available: Add machines using an interactive script and Add machines at scale." border="false":::
 
 ### Azure Arc for servers agent
 
@@ -44,14 +43,13 @@ You can install the agent in two ways:
 
 The installation creates folders, services, and variables during installation.
 
-> [!NOTE]
-> The Azure Connected Machine agent sends a heartbeat message to the Azure Arc service every five minutes. If the Azure Arc service stops receiving heartbeat messages from the connected machine, it considers it offline. The machine is then marked as **Disconnected** until heartbeats resume, at which time the machine is marked as **Connected**.
+The Azure Connected Machine agent sends a heartbeat message to the Azure Arc service every five minutes. If the Azure Arc service stops receiving heartbeat messages from the connected machine, it considers it offline. The machine is then marked as **Disconnected** until heartbeats resume, at which time the machine is marked as **Connected**.
 
 ### Use a script method to onboard a server
 
 One way to onboard a server is to generate and download a script from the Azure portal.
 
-:::image type="content" source="../media/gen-script2.png" alt-text="Screenshot that depicts the Generate script page with a Windows PowerShell script on it." border="false":::
+:::image type="content" source="../media/3-gen-script-2.png" alt-text="Screenshot that depicts the Generate script page with a Windows PowerShell script on it." border="false":::
 
 After you have generated and downloaded the script, you must install it. On servers that you want to onboard, sign in as a local administrator on Windows Server. For Linux systems, sign in with an account and use **sudo** to install with elevated privileges. Then run the downloaded script.
 
@@ -61,4 +59,4 @@ In larger environments, you can use the Desired State Configuration (DSC) manage
 
 When you onboard a server, it becomes a connected machine and is represented by a corresponding Azure resource. That resource has a unique **resource ID** property. It belongs to a resource group inside a subscription, and it can benefit from Azure management features such as Azure Policy and tags.
 
-:::image type="content" source="../media/onboard.png" alt-text="Screenshot that depicts the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed." border="false":::
+:::image type="content" source="../media/3-onboard.png" alt-text="Screenshot that depicts the Machines - Azure Arc page in the Azure portal. A single computer, ContosoVM1, is listed." border="false":::

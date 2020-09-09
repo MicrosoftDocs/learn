@@ -1,4 +1,3 @@
-
 Contoso currently host a number of Kubernetes clusters in a datacenter in London. They want to be able to manage these resources using a consistent collection of tools and processes. In addition to managing servers, Contoso could use Azure Arc to configure Kubernetes clusters. These clusters can be hosted on Azure or elsewhere.
 
 ## What is Azure Arc enabled Kubernetes?

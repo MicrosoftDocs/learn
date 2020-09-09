@@ -1,4 +1,3 @@
-
 Azure Arc enables you to extend some capabilities of *Azure Policy* to operating systems of computers that are in on-premises datacenters or are hosted on another cloud provider. This functionality applies to auditing the compliance of settings for the OS, applications, and environment.
 
 Additionally, you can configure the time zone on servers that are running the Windows Server OS. You can also use Azure Policy to manage and evaluate compliance for Azure Arc enabled Kubernetes clusters. Enabling this functionality requires that you install the Azure Connected Machine agent on each computer in the scope of management.
@@ -36,8 +35,8 @@ To manage and assign Azure Arc policies for a computer, browse to Azure Arc in t
 - Description.
 - Policy enforcement (Enabled or Disabled).
 
-:::image type="content" source="../media/assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
+:::image type="content" source="../media/6-assign-policy.png" alt-text="The screenshot depicts the Assign policy page in the Azure portal. The administrator is selecting from a list of available policies." border="false":::
 
 After assigning policies, you can review the policy settings on the selected server from Azure Arc.
 
-:::image type="content" source="../media/review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::
+:::image type="content" source="../media/6-review-policies.png" alt-text="The screenshot depicts the applied policies on ContosoVM1. Two policies are applied, and the VM is compliant with one but not the other." border="false":::

@@ -1,16 +1,15 @@
-
 After they onboard a Windows Server computer, Contoso administrators can use Azure Arc to manage and configure that device. A number of options are available, described below, and others will be available soon.
 
-- Overview. Enables you to review basic information about the server, including status, location, subscription, computer name, operating system, and tags.
-- Activity log. Enables you to review a list of activities that were performed against the server and by whom the events were performed.
-- Access control. Enables you to review and manage access to Azure resources for users, groups, service principals, and managed identities at this scope by creating role assignments.
-- Tags. Name/value pairs that enable you to categorize resources.
-- Extensions. Enables you to add and remove extensions for the server.
-- Policies. Enables you to add, configure, and remove policies for the server.
-- Update management. Enables you to maintain consistent control and compliance of the server with Update Management.
-- Change Tracking and Inventory. Enables you to review change tracking and inventory configuration for the server. Change Tracking and Inventory helps enable consistent control and compliance of your resources.
-- Insights. Enables you to use Azure Monitor to review host CPU, disk, and the online/offline state of your Azure Arc servers.
-- Logs. Enables you to run queries against logs to gather information about the server.
+- **Overview**: Enables you to review basic information about the server, including status, location, subscription, computer name, operating system, and tags.
+- **Activity log**: Enables you to review a list of activities that were performed against the server and by whom the events were performed.
+- **Access control**: Enables you to review and manage access to Azure resources for users, groups, service principals, and managed identities at this scope by creating role assignments.
+- **Tags**: Name/value pairs that enable you to categorize resources.
+- **Extensions**: Enables you to add and remove extensions for the server.
+- **Policies**: Enables you to add, configure, and remove policies for the server.
+- **Update management**: Enables you to maintain consistent control and compliance of the server with Update Management.
+- **Change Tracking and Inventory**: Enables you to review change tracking and inventory configuration for the server. Change Tracking and Inventory helps enable consistent control and compliance of your resources.
+- **Insights**: Enables you to use Azure Monitor to review host CPU, disk, and the online/offline state of your Azure Arc servers.
+- **Logs**: Enables you to run queries against logs to gather information about the server.
 
 ## Manage extensions
 
