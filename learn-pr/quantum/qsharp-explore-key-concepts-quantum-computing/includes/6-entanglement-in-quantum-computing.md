@@ -16,7 +16,8 @@ In such a state, only two outcomes are possible when measuring the state of both
 probability of $\frac12$. There is zero probability of obtaining **01** and
 **10**. If you measure the first qubit to be **0**, you would know the second qubit would be **0** as well, without even having to measure it. You say that the measurement outcomes are correlated and the qubits are *entangled*.
 
-> [!NOTE] Not every correlation between the measurements of two qubits means
+> [!NOTE]
+> Not every correlation between the measurements of two qubits means
 > that two qubits are entangled. Classical bits can also be correlated. Two
 > qubits are entangled when they present correlations that cannot be reproduced
 > using classical bits. This difference between classical and quantum
