@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.secure-cognitive-services.keys-with-azure-key-vault
+title: Secure cognitive services keys with Azure Key Vault
+metadata:
+  title: Secure cognitive services keys with Azure Key Vault
+  description: "Secure cognitive services keys with Azure Key Vault"
+  ms.date: 09/11/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-keys.md)]
