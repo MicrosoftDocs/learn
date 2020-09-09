@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-core-azure-services
 metadata:
-  title: "Azure Fundamentals - 2 of 6: Describe core Azure services"
+  title: "Azure Fundamentals: Describe core Azure services (learning path 2 of 6)"
   description: "This learning path provides you with an introduction to the basics of Azure's core services for compute, network, storage, and database."
   brand: azure
   ms.date: 09/11/2020
@@ -9,14 +9,14 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Azure Fundamentals - 2 of 6: Describe core Azure services"
+title: "Azure Fundamentals: Describe core Azure services (learning path 2 of 6)"
 summary: |
-  In this learning path, you'll:
+  After completing this learning path, you'll be able to:
     - Understand the breadth of services available in Azure including compute, network, storage, and database
-    - Explore virtualization services such as Azure Virtual Machines, Azure Container Instances, Azure Kubernetes Service, and Windows Virtual Desktop
-    - Learn about database services such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure's big data and analysis services
+    - Identify virtualization services such as Azure Virtual Machines, Azure Container Instances, Azure Kubernetes Service, and Windows Virtual Desktop
+    - Compare Azure's database services such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure's big data and analysis services
     - Examine Azure networking resources such as Virtual Networks, VPN Gateways, and Azure ExpressRoute
-    - Explore Azure storage services such Azure Blob Storage, Azure Disk Storage, and Azure File Storage
+    - Summarize Azure storage services such Azure Blob Storage, Azure Disk Storage, and Azure File Storage
 prerequisites: | 
   - You should be familiar with basic computing concepts and terminology
   - You should be familiar with cloud computing is helpful, but isn't necessary
