@@ -13,3 +13,11 @@ azureSandbox: true
 durationInMinutes: 12
 content: |
   [!include[](includes/exercise-create-sql-database.md)]
+tasks:
+tasks:
+- action: exists
+  environment: azure
+  azure:
+    resource:
+      type: "Microsoft.Sql/servers"
+  hint: "Make sure you have followed all the steps to create your SQL database."
