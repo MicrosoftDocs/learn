@@ -25,7 +25,7 @@ The following table describes the extensions that you can add to Azure Arc-onboa
 
 |Extension|Additional information|
 |--------------------------|------------------------------------------------------------|
-|CustomScriptExtension|Downloads and runs scripts on servers. Learn more at [Custom Script Extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/custom-script-windows?azure-portal=true).|
-|DSC|Uploads and applies a PowerShell DSC configuration on servers. Learn more at [PowerShell DSC Extension](https://docs.microsoft.com/azure/virtual-machines/extensions/dsc-windows?azure-portal=true).|
-|Log Analytics agent|Installs the Log Analytics agent on servers and enrolls VMs into an existing Log Analytics workspace. Learn more at [Log Analytics virtual machine extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/oms-windows?azure-portal=true).|
-|Microsoft Dependency Agent|Installs the Dependency Agent to enable Azure Monitor Insights on servers. Learn more at [Azure Monitor Dependency virtual machine extension for Windows](https://docs.microsoft.com/azure/virtual-machines/extensions/agent-dependency-windows?azure-portal=true).|
+|CustomScriptExtension|Downloads and runs scripts on servers.|
+|DSC|Uploads and applies a PowerShell DSC configuration on servers.|
+|Log Analytics agent|Installs the Log Analytics agent on servers and enrolls VMs into an existing Log Analytics workspace.|
+|Microsoft Dependency Agent|Installs the Dependency Agent to enable Azure Monitor Insights on servers.|
