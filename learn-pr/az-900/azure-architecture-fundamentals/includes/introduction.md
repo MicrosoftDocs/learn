@@ -6,7 +6,7 @@ In this module, you'll learn about several of the components that are necessary 
 
 ## Learning objectives
 
-Upon completion of this module, you'll be able to describe the benefits and usage of:
+After completing this module, you'll be able to describe the benefits and usage of:
 
 - Azure Subscriptions and Management Groups
 - Azure Resources, Resource Groups, and the Azure Resource Manager

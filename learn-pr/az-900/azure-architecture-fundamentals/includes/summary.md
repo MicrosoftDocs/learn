@@ -8,10 +8,10 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
-- [Apply and monitor infrastructure standards with Azure Policy](https://docs.microsoft.com/learn/modules/intro-to-governance/)
-- [ARM template documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/)
-- [Core Cloud Services - Azure architecture and service guarantees](https://docs.microsoft.com/learn/modules/explore-azure-infrastructure/)
-- [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/)
-- [Examine Azure subscriptions](https://docs.microsoft.com/learn/modules/examine-azure-subscriptions/)
-- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview)
-- [What are Azure management groups?](https://docs.microsoft.com/azure/governance/management-groups/overview)
+- [Apply and monitor infrastructure standards with Azure Policy](https://docs.microsoft.com/learn/modules/intro-to-governance/?azure-portal=true)
+- [Azure Resource Manager template documentation](https://docs.microsoft.com/azure/azure-resource-manager/templates/?azure-portal=true)
+- [Core Cloud Services - Azure architecture and service guarantees](https://docs.microsoft.com/learn/modules/explore-azure-infrastructure/?azure-portal=true)
+- [Control and organize Azure resources with Azure Resource Manager](https://docs.microsoft.com/learn/modules/control-and-organize-with-azure-resource-manager/?azure-portal=true)
+- [Examine Azure subscriptions](https://docs.microsoft.com/learn/modules/examine-azure-subscriptions/?azure-portal=true)
+- [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
+- [What are Azure management groups?](https://docs.microsoft.com/azure/governance/management-groups/overview?azure-portal=true)

@@ -2,7 +2,7 @@ As a developer for Tailwind Traders, you likely have expertise creating applicat
 
 In this exercise, you'll create an Azure App Service to host a WordPress website.
 
-## Azure terminology and concepts.
+## Azure terminology and concepts
 
 Before you get started, let's review and discuss some basic terms and concepts that you'll need to know when you create your website.
 
@@ -10,13 +10,13 @@ Before you get started, let's review and discuss some basic terms and concepts t
 
 Azure App Service is an HTTP-based service that enables you to build and host many types of web-based solutions without managing infrastructure. For example, you can host web apps, mobile back ends, and RESTful APIs in several supported programming languages. Applications developed in .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python can run in and scale with ease on both Windows and Linux-based environments.
 
-For this exercise, we want create a website in less than the time it takes to eat lunch. Therefore, we're not going to write any code. Instead, you'll deploy a predefined application from the Microsoft Azure Marketplace.
+For this exercise, we want create a website in less than the time it takes to eat lunch. Therefore, we're not going to write any code. Instead, you'll deploy a predefined application from Microsoft Azure Marketplace.
 
-### What is the Microsoft Azure Marketplace?
+### What is Microsoft Azure Marketplace?
 
-The Microsoft Azure Marketplace is an online store that hosts applications that are certified and optimized to run in Azure. Many types of applications are available, ranging from AI + Machine Learning to Web applications. As you'll see in a couple of minutes, deployments from the store are done via the Azure portal using a wizard-style user interface. This user interface makes evaluating different solutions easy.
+Microsoft Azure Marketplace is an online store that hosts applications that are certified and optimized to run in Azure. Many types of applications are available, ranging from AI + Machine Learning to Web applications. As you'll see in a couple of minutes, deployments from the store are done via the Azure portal using a wizard-style user interface. This user interface makes evaluating different solutions easy.
 
-We're going to use one of the WordPress application options from the Azure Marketplace for our website.
+We're going to use one of the WordPress application options from Azure Marketplace for our website.
 
 ### Creating resources in Azure
 
@@ -42,11 +42,11 @@ In the free Azure sandbox environment, you'll use the pre-created resource group
 
     [![Screenshot of Azure portal showing left-hand navigation with Create a resource option option highlighted.](../media/create-resource.png)](../media/create-resource-expanded.png#lightbox)
 
-    This option takes you to the **Azure Marketplace**.
+    This option takes you to **Azure Marketplace**.
 
     [![Screenshot of Azure portal showing Azure marketplace categories in a left column and popular options in a right column.](../media/azure-marketplace.png)](../media/azure-marketplace-expanded.png#lightbox)
 
-1. The Azure Marketplace has many services, solutions, and resources available for you to use. Since we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** box above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
+1. Azure Marketplace has many services, solutions, and resources available for you to use. Since we know that we want to install WordPress, we can do a quick search for it. In the **Search the Marketplace** box above the listed application options, type in **WordPress**. Select the default *WordPress* option from the list of options available.
 
     [![Screenshot of Azure portal showing search results for the term WordPress with the WordPress option highlighted.](../media/search-select-wordpress.png)](../media/search-select-wordpress-expanded.png#lightbox)
 

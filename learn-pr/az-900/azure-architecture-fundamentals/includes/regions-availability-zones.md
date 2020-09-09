@@ -1,6 +1,6 @@
 In the previous unit, you learned about Azure resources and resource groups. Resources are created in **Regions**, which are different geographical locations around the globe that contain Azure datacenters. Microsoft Azure is made up of datacenters located around the globe. When you leverage a service or create a resource such as a SQL database or virtual machine, you are using physical equipment in one or more of these locations. These specific datacenters aren't exposed to end users directly; instead, Azure organizes them into _regions_. As you will see later in this unit, some of these regions offer **Availability Zones**, which are different Azure datacenters within that region.
 
-## Azure Regions
+## Azure regions
 
 A **region** is a geographical area on the planet containing at least one, but potentially multiple datacenters that are nearby and networked together with a low-latency network. Azure intelligently assigns and controls the resources within each region to ensure workloads are appropriately balanced.
 
@@ -11,7 +11,7 @@ When you deploy a resource in Azure, you will often need to choose the region wh
 
 A few examples of regions are *West US*, *Canada Central*, *West Europe*, *Australia East*, and *Japan West*. Here's a view of all the available regions as of February 2020:
 
-[//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/global-infrastructure/regions/, resampled smaller here for the initial view.)
+[//]: # (Maintainer note: the latest version of this image is available as an SVG from https://azure.microsoft.com/global-infrastructure/regions/ or https://azure.microsoft.com/en-us/global-infrastructure/geographies/, resampled smaller here for the initial view.)
 [ ![Global map of available Azure regions as of June 2020.](../media/regions-small.png) ](../media/regions-expanded.png#lightbox)
 
 ### Why are regions important?
@@ -20,7 +20,7 @@ Azure has more global regions than any other cloud provider. These regions give 
 
 ### Special Azure regions
 
-Azure has specialized regions that you might want to use when building out your applications for compliance or legal purposes. These regions include:
+Azure has specialized regions that you might want to use when building out your applications for compliance or legal purposes. A few examples include:
 
 - *US DoD Central*, *US Gov Virginia*, *US Gov Iowa* and more: These regions are physical and logical network-isolated instances of Azure for US government agencies and partners. These datacenters are operated by screened US persons and include additional compliance certifications.
 
@@ -28,11 +28,11 @@ Azure has specialized regions that you might want to use when building out your 
 
 Regions are what you use to identify the location for your resources, but there are two other terms you should also be aware of: _geographies_ and _availability zones_.
 
-## Azure Availability Zones
+## Azure availability zones
 
 You want to ensure your services and data are redundant so you can protect your information in case of failure. When you are hosting your infrastructure, setting up your own redundancy requires creating duplicate hardware environments. Azure can help make your app highly available through _Availability Zones_.
 
-### What is an Availability Zone?
+### What is an availability zone?
 
 Availability Zones are physically separate datacenters within an Azure region. Each Availability Zone is made up of one or more datacenters equipped with independent power, cooling, and networking. It is set up to be an _isolation boundary_. If one zone goes down, the other continues working. Availability Zones are connected through high-speed, private fiber-optic networks.
 
@@ -40,20 +40,9 @@ Availability Zones are physically separate datacenters within an Azure region. E
 
 ### Supported regions
 
-Not every region has support for Availability Zones. The following regions have a minimum of three separate zones to ensure resiliency.
+Not every region has support for Availability Zones. For an updated list, see [Regions that support Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-region?azure-portal=true).
 
-- Central US
-- East US 2
-- West US 2
-- West Europe
-- France Central
-- North Europe
-- Southeast Asia
-
-> [!TIP]
-> The list of supported regions is expanding - check the documentation for the latest information.
-
-### Using Availability Zones in your apps
+### Using availability zones in your apps
 
 You can use Availability Zones to run mission-critical applications and build high-availability into your application architecture by co-locating your compute, storage, networking, and data resources within a zone and replicating in other zones. Keep in mind that there could be a cost to duplicating your services and transferring data between zones.
 
@@ -65,7 +54,7 @@ Availability Zones are primarily for VMs, managed disks, load balancers, and SQL
 
 Check the documentation to determine which elements of your architecture you can associate with an Availability Zone.
 
-## Azure Region Pairs
+## Azure region pairs
 
 Availability zones are created using one or more datacenters, and there is a minimum of three zones within a single region. However, it's possible that a large enough disaster could cause an outage large enough to affect even two datacenters. That's why Azure also creates _region pairs_.
 

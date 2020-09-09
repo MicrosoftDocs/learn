@@ -4,7 +4,7 @@ As Tailwind Traders gets started with Azure, one of your first steps will be to 
 >
 > An Azure *resource* is a manageable item that is available through Azure. Virtual machines, storage accounts, web apps, databases, and virtual networks are all examples of resources.
 
-## Azure Subscriptions
+## Azure subscriptions
 
 Using Azure requires an Azure subscription which provides you with authenticated and authorized access to Azure products and services and allows you to provision resources. An Azure subscription is a logical unit of Azure services that links to an Azure account, which is an identity in Azure Active Directory (Azure AD) or in a directory that an Azure AD trusts.
 
@@ -40,7 +40,7 @@ The following diagram shows an overview of how billing is structured. If you've 
 
 [![Flowchart style diagram showing an example of setting up a billing structure where different groups like marketing or development have their own Azure Subscription, that rolls up into a larger company paid Azure billing account.](../media/billing-structure-overview.png)](../media/billing-structure-overview-expanded.png#lightbox)
 
-## Azure Management Groups
+## Azure management groups
 
 If your organization has many subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called "management groups" and apply your governance conditions to the management groups. All subscriptions within a management group automatically inherit the conditions applied to the management group. Management groups give you enterprise-grade management at a large scale no matter what type of subscriptions you might have. All subscriptions within a single management group must trust the same Azure Active Directory tenant.
 
