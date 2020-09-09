@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure Sentinel and connect data sources
-summary: In this course you'll learn how to deploy Azure Sentinel, connect it to data sources, and harness the power of the Azure and AI to provide analysis of security alerts.
+summary: In this course you'll learn how to deploy Azure Sentinel, connect it to data sources, and harness the power of Azure and AI to provide analysis of security alerts.
 abstract: | 
   After completing this module, you'll be able
   - Deploy Azure Sentinel.
