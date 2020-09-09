@@ -1,4 +1,4 @@
-As the Contoso lead system engineer and Azure administrator who is tasked with deploying a proof of concept environment for Azure Sentinel, your first step is to understand its capabilities and deployment considerations.
+As the Contoso lead system engineer and Azure administrator who is tasked with deploying a proof-of-concept environment for Azure Sentinel, your first step is to understand its capabilities and deployment considerations.
 
 ## Use Azure Sentinel to retrieve data and monitor incidents
 
