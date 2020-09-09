@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.wonder-woman-code-hunt.super-test.introduction
+metadata:
+  title: 'The Super Test: Making your own personality test. Inspired by WONDER WOMAN 1984, coming to theaters.'
+  description: Introduction to the Super Test module where you learn how to make your own personality test.
+  ms.date: 9/21/20
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'The Super Test: Making your own personality test. Inspired by WONDER WOMAN 1984, coming to theaters.'
+durationInMinutes: 5
+content: |
+  [!include[](includes/0-introduction.md)]

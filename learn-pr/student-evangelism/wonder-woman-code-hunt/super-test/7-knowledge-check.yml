@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.wonder-woman-code-hunt.super-test.knowledge-check
+metadata:
+  title: Check your knowledge
+  description: Answer a question to see what you've learned.
+  ms.date: 9/21/20
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Check your knowledge
+durationInMinutes: 10
+content: |
+  Answer the following question to see what you've learned:
+quiz:
+  questions:
+  - content: "If you have an `elif` statement, what does the last conditional statement need to be?"
+    choices:
+    - content: "An if-statement"
+      isCorrect: false
+      explanation: "Incorrect, the first statement always has to be an if-statement."
+    - content: "An elif-statement"
+      isCorrect: false
+      explanation: "Incorrect, but you can have as many elif-statements as you want."
+    - content: "An else-statement"
+      isCorrect: true
+      explanation: "Correct, you must end an elif-statement with an else-statement"
+    - content: "Any; if-, elif-, or else-statement"
+      isCorrect: false
+      explanation: "Incorrect, only one is correct."

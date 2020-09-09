@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.student-evangelism.wonder-woman-code-hunt.super-test
+metadata:
+  title: Create a test to determine your super personality by using Python and Visual Studio Code
+  description: Which WONDER WOMAN 1984 character are you most like? Use the popular programming language Python to build a personality test inspired by WONDER WOMAN 1984 and share it with your friends. This lesson will teach you the basics of booleans, commands, and conditionals.
+  ms.date: 9/21/20
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create a Test to Determine Your Super Personality with Python and Visual Studio Code
+summary: Which WONDER WOMAN 1984 character are you most like? Use the popular programming language Python to build a test inspired by WONDER WOMAN 1984 and share it with your friends. This lesson will teach you the basics of booleans, commands, and conditionals. No prior background in computer science is needed.
+abstract: |
+ In this module, you will begin to discover: 
+  - Write your first lines of Python code
+  - Create a program that allows users to interact with your code
+  - Discover if-, elif-, and else-statements
+prerequisites: |
+  - Python installed
+  - Visual Studio Code with Python Extension
+  - No coding experience required
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - student, developer
+products:
+  - vs-code
+units:
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.introduction
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.set-up-visual-studio-code
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.create-test-1
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.create-test-2
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.create-test-3
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.score-test
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.knowledge-check
+- learn.student-evangelism.wonder-woman-code-hunt.super-test.summary
+badge:
+  uid: learn.student-evangelism.wonder-woman-code-hunt.super-test.badge
