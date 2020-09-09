@@ -5,3 +5,15 @@ We identified different product options and their capabilities, including Azure 
 Without AI services, Tailwind Traders would spend more time and effort on manual tasks, respond to customers less quickly, offer weak product recommendations, and be unable to fully support customers who speak different languages.
 
 Artificial intelligence is one area that could literally transform every area of a business and is limited only by the creativity and imagination of the organization.
+
+## Further Reading
+
+Throughout this module, products and services were referenced that 
+
+To see an exhaustive list of services available in Azure Cognitive Services, see [What are Azure Cognitive Services?](https://docs.microsoft.com/azure/cognitive-services/what-are-cognitive-services?azure-portal=true).
+
+The Cognitive Services Personalizer service was mentioned as a possible solution for one of the scenarios.  For more information, see [Cognitive Services Personalizer](https://azure.microsoft.com/en-us/services/cognitive-services/personalizer/?azure-portal=true).
+
+Azure Language Understanding (LUIS) was mentioned as a way to interact with the Bot Service using natural language.  For more information, see [Azure Language Understanding (LUIS)](https://www.luis.ai/?azure-portal=true).
+
+QnA Maker was mentioned as a pre-packaged virtual assistant solution available from the Azure Marketplace.  For more information, see [QnA Maker](https://www.qnamaker.ai/?azure-portal=true).

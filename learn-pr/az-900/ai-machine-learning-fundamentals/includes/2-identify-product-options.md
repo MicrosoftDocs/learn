@@ -14,7 +14,7 @@ At a high level, there are three primary offerings from Microsoft, each of which
 
 ### Azure Machine Learning
 
-Azure Machine Learning is a platform for making predictions. It consists of tools and services that allow you to connect to data to train and test models to find one that will most accurately predict a future result. Once you've run experiments to test the model, you can then deploy the model and use it in real time via a web API endpoint.
+[Azure Machine Learning](https://azure.microsoft.com/services/machine-learning/?azure-portal=true) is a platform for making predictions. It consists of tools and services that allow you to connect to data to train and test models to find one that will most accurately predict a future result. Once you've run experiments to test the model, you can then deploy the model and use it in real time via a web API endpoint.
 
 With Azure Machine Learning, you can:
 
@@ -27,22 +27,22 @@ Choose Azure Machine Learning when your data scientists need complete control ov
 
 ### Azure Cognitive Services
 
-Azure Cognitive Services provides pre-built machine learning models that enable applications to see, hear, speak, understand, and even begin to reason. Use Azure Cognitive Services to solve general problems such as analyzing text for emotional sentiment or analyzing images to recognize objects or faces. You don't need special machine learning or data science knowledge to use these services. Developers access Azure Cognitive Services via APIs and can easily include these features in just a few lines of code.
+[Azure Cognitive Services](https://azure.microsoft.com/services/cognitive-services/?azure-portal=true) provides pre-built machine learning models that enable applications to see, hear, speak, understand, and even begin to reason. Use Azure Cognitive Services to solve general problems such as analyzing text for emotional sentiment or analyzing images to recognize objects or faces. You don't need special machine learning or data science knowledge to use these services. Developers access Azure Cognitive Services via APIs and can easily include these features in just a few lines of code.
+
+While Azure Machine Learning requires you to bring your own data and train models over that data, Azure Cognitive Services, for the most part, provides you with pre-trained models so that you can bring in your live data to get predictions on.
 
 Azure Cognitive Services can be divided into the following categories:
 
 **Language** services -	Allow your apps to process natural language with pre-built scripts, evaluate sentiment, and learn how to recognize what users want.
 
-**Search** services - Add Cognitive Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call.
-
 **Speech** services - Convert speech into text and text into natural-sounding speech. Translate from one language to another and enable speaker verification and recognition.
 
 **Vision** services - Add recognition and identification capabilities when analyzing pictures, videos, and other visual content.
 
-**Personalizer** services -	Add personalized recommendations for each user, that automatically improve each time they are used.
+**Decision** services -	Add personalized recommendations for each user that automatically improve each time they're used, moderate content to monitor and remove offensive or risky content, and detect abnormalities in your time series data.
 
 ### Azure Bot Service
 
-The Azure Bot Service and Bot Framework is a platform for creating virtual agents that understand and reply to questions just like a human. Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case: namely, creating a virtual agent that can intelligently communicate with humans. Behind the scenes, the bot you build uses other Azure services, like Azure Cognitive Services, to understand what their human counterparts are asking for.
+The [Azure Bot Service](https://azure.microsoft.com/services/bot-service/?azure-portal=true) and [Bot Framework](https://dev.botframework.com/?azure-portal=true) is a platform for creating virtual agents that understand and reply to questions just like a human. Azure Bot Service is a bit different from Azure Machine Learning and Azure Cognitive Services in that it has a specific use case: namely, creating a virtual agent that can intelligently communicate with humans. Behind the scenes, the bot you build uses other Azure services, like Azure Cognitive Services, to understand what their human counterparts are asking for.
 
 Bots can be used to shift simple, repetitive tasks, such as taking a dinner reservation or gathering profile information, on to automated systems that may no longer require direct human intervention. Users converse with a bot using text, interactive cards, and speech. A bot interaction can be a quick question and answer, or it can be a sophisticated conversation that intelligently provides access to services.

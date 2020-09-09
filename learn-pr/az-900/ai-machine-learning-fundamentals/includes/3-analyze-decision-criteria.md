@@ -12,7 +12,6 @@ Before jumping in to build a custom chat experience using Azure Bot Service, it 
 
 Use Azure Cognitive Services when it comes to general purpose tasks like performing speech to text, integrating with search, identifying the objects in an image, and so on. Azure Cognitive Services is "general purpose", meaning that many different kinds of customers can benefit from the work Microsoft has already done to train and test these models and offer them inexpensively at scale.
 
-
 ## Do you need to predict user behavior or provide users with personalized recommendations in your app?
 
 Azure Cognitive Services' Personalizer service watches your users' actions within an application and can be used to predict their behavior and provide relevant experiences as it identifies usage patterns. Here again, you could capture and store user behavior and create your own custom Azure Machine Learning solution to do these things, but this approach would require much effort and expense.

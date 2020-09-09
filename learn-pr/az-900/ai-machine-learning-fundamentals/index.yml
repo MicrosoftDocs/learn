@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.languages.ai-machine-learning-fundamentals
 metadata:
-  title: Choose the best artificial intelligence service for decision support and customer interaction
+  title: Choose the best artificial intelligence service for your needs
   description: Examine Azure's artificial intelligence services choose the right service for your scenario.
-  ms.date: 07/17/2020
+  ms.date: 09/11/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the best artificial intelligence service for decision support and customer interaction
+title: Choose the best artificial intelligence service for your needs
 summary: Examine Azure's artificial intelligence services choose the right service for your scenario.
 abstract: |
   By the end of this module, you will be able to:
