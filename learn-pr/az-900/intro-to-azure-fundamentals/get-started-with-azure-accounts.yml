@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-azure-fundamentals.getting-started-with-azure-accounts
+uid: learn.azure.intro-to-azure-fundamentals.get-started-with-azure-accounts
 title: Getting started with Azure accounts
 metadata:
   title: Getting started with Azure accounts
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/getting-started-with-azure-accounts.md)]
+  [!include[](includes/get-started-with-azure-accounts.md)]

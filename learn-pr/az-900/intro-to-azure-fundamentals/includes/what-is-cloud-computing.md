@@ -31,7 +31,7 @@ To power your services and deliver innovative and novel user experiences more qu
 
 There are several benefits that a cloud environment has over a physical environment. For example, cloud-based applications employ a myriad of related strategies:
 
-- **High Availability** - depending on the service-level agreement (SLA) that you choose, your cloud-based applications can provide a continuous user experience with no apparent downtime even when things go wrong
+- **High availability** - depending on the service-level agreement (SLA) that you choose, your cloud-based applications can provide a continuous user experience with no apparent downtime even when things go wrong
 
 - **Scalability** - applications in the cloud can be scaled two ways:
 
@@ -44,7 +44,7 @@ There are several benefits that a cloud environment has over a physical environm
 
 - **Geo-distribution** - applications and data can be deployed to regional datacenters around the globe, thereby ensuring that your customers always have the best performance in their region
 
-- **Disaster Recovery** - by taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event that disaster should occur
+- **Disaster recovery** - by taking advantage of cloud-based backup services, data replication, and geo-distribution, you can deploy your applications with the confidence that comes from knowing that your data is safe in the event that disaster should occur
 
 ## What are cloud service models?
 
@@ -70,11 +70,11 @@ Overlapping with PaaS, serverless computing enables developers to build applicat
 
 In understanding the definition of serverless computing, it's important to note that servers are still running the code. The serverless name comes from the fact that the tasks associated with infrastructure provisioning and management are invisible to the developer. This approach enables developers to increase their focus on the business logic and deliver more value to the core of the business. Serverless computing helps teams increase their productivity and bring products to market faster, and it allows organizations to better optimize resources and stay focused on innovation.
 
-## What are Public, Private, and Hybrid clouds?
+## What are public, private, and hybrid clouds?
 
 There are three deployment models for cloud computing: *public cloud*, *private cloud*, and *hybrid cloud*. Each deployment model has different aspects that you should consider as you migrate to the cloud.
 
-| Deployment Model | Description |
+| Deployment model | Description |
 | --- | --- |
 | <nobr>**Public cloud**</nobr> | Services are offered over the public internet and available to anyone who wants to purchase them. Cloud resources - such as servers and storage - are owned and operated by a third-party cloud service provider, and delivered over the internet. |
 | <nobr>**Private cloud**</nobr> | A private cloud consists of computing resources used exclusively by users from one business or organization. A private cloud can be physically located at your organization's on-site datacenter, or it can be hosted by a third-party service provider. |

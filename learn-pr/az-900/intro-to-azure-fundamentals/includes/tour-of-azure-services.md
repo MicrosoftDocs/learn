@@ -2,7 +2,7 @@ Azure can help you tackle tough business challenges. You bring your requirements
 
 Let's take a quick tour of the high-level services Azure offers.
 
-#### Azure: overall picture
+## Azure overview
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2yuas]
 
@@ -28,8 +28,8 @@ Let's take a closer look at the most commonly used categories:
 
 - Web
 - Internet of Things
-- Big Data
-- Artificial Intelligence
+- Big data
+- Artificial intelligence
 - DevOps
 
   :::column-end:::
@@ -134,7 +134,7 @@ Having a great web experience is critical in today's business world. Azure inclu
 > | Web Apps feature of Azure App Service | Create and deploy mission-critical web apps at scale. |
 > | Azure SignalR Service | Add real-time web functionalities easily. |
 
-### Internet of Things
+### Internet of Things (IoT)
 
 People are able to access more information than ever before. It began with personal digital assistants (PDAs), then morphed into smartphones. Now there are smart watches, smart thermostats, even smart refrigerators. Personal computers used to be the norm. Now the internet allows any item that's online-capable to access valuable information. This ability for devices to garner and then relay information for data analysis is referred to as the Internet of Things (IoT).
 
@@ -147,9 +147,9 @@ There are a number of services that can assist and drive end-to-end solutions fo
 > | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
 > | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
 
-### Big Data
+### Big data
 
-Data comes in all formats and sizes. When we talk about Big Data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions. It's often so large that traditional forms of processing and analysis are no longer appropriate.
+Data comes in all formats and sizes. When we talk about big data, we're referring to _large_ volumes of data. Data from weather systems, communications systems, genomic research, imaging platforms, and many other scenarios generate hundreds of gigabytes of data. This amount of data makes it hard to analyze and make decisions. It's often so large that traditional forms of processing and analysis are no longer appropriate.
 
 Open source cluster technologies have been developed to deal with these large data sets. Microsoft Azure supports a broad range of technologies and services to provide big data and analytic solutions.
 
@@ -158,15 +158,15 @@ Open source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure Synapse Analytics | Run analytics at a massive scale using a cloud-based Enterprise Data Warehouse (EDW) that leverages massive parallel processing (MPP) to run complex queries quickly across petabytes of data |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud |
-> | Azure Databricks | Collaborative Apache Spark-based analytics service that can be integrated with other Big Data services in Azure. |
+> | Azure Databricks | Collaborative Apache Spark-based analytics service that can be integrated with other big data services in Azure. |
 
-### Artificial Intelligence
+### Artificial intelligence
 
-Artificial Intelligence, in the context of cloud computing, is based around a broad range of services, the core of which is Machine Learning. Machine Learning is a data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends. Using machine learning, computers learn without being explicitly programmed.
+Artificial intelligence, in the context of cloud computing, is based around a broad range of services, the core of which is machine learning. Machine learning is a data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends. Using machine learning, computers learn without being explicitly programmed.
 
 Forecasts or predictions from machine learning can make apps and devices smarter. For example, when you shop online, machine learning helps recommend other products you might like based on what you've purchased. Or when your credit card is swiped, machine learning compares the transaction to a database of transactions and helps detect fraud. And when your robot vacuum cleaner vacuums a room, machine learning helps it decide whether the job is done.
 
-Some of the most common Artificial Intelligence and Machine Learning service types in Azure are:
+Some of the most common artificial intelligence and machine learning service types in Azure are:
 
 > [!div class="mx-tableFixed"]
 > | Service Name | Description |
