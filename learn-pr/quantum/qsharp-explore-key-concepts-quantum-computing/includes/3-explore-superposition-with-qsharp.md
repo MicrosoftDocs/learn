@@ -139,7 +139,8 @@ The `DumpMachine` function outputs a table with the information that describes t
 
 ## Explore different superpositions
 
-Now that you know how to inspect the state of a register, you can see operations that modify the state of your qubits and put them into a superposition.
+Now that you know how to inspect the state of a register, you can see operations
+that modify the state of your qubits and prepare them into a superposition.
 
 The current random number generator produces either `Zero` or `One` with a 50% probability. Let's look at a second example that generates random numbers with a different probability.
 
