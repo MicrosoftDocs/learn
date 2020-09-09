@@ -3,7 +3,7 @@
 Disk storage provides disks for virtual machines, applications, and other services to access and use as they need, similar to how they would in on-premises scenarios. Disk storage allows data to be persistently stored and accessed from an attached virtual hard disk. The disks can be managed or unmanaged by Azure, and therefore managed and configured by the user. Typical scenarios for using disk storage are if you want to lift and shift applications that read and write data to persistent disks, or if you are storing data that is not required to be accessed from outside the virtual machine to which the disk is attached.
   :::column-end:::
   :::column:::
-    :::image type="icon" source="../media/azure-standard-storage.png" border="false":::
+    :::image type="icon" source="../media/icon-azure-standard-storage.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -13,4 +13,4 @@ When working with VMs, you can use standard SSD and HDD disks for less critical 
 
 The following illustration shows an Azure virtual machine using separate disks to store different data.
 
-![Illustration showing two disks inside a virtual machine, one that stores the operating system and one that stores data.](../media/Azure_disks.png)
+![Illustration showing two disks inside a virtual machine, one that stores the operating system and one that stores data.](../media/Azure-disks.png)

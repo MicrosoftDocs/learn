@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-storage-fundamentals.azure-blob-container-storage
-title: Azure Blob and Container Storage fundamentals
+title: Azure blob and container storage fundamentals
 metadata:
-  title: Azure Blob and Container Storage fundamentals
+  title: Azure blob and container storage fundamentals
   description: In this unit, you'll learn about Azure Blob Storage and Containers.
   ms.date: 09/11/2020
   author: rmcmurray

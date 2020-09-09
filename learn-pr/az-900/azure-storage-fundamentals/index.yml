@@ -9,10 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Explore Azure Storage services
-summary: In this module, you'll learn about the different storage options that are available in Azure's Storage services, and the scenarios in which each storage option is appropriate. As you complete the individual units in this module, you'll learn about Azure Container (Blob) Storage, Azure Disk Storage, Azure File Storage, and Azure Storage Tiers.
+summary: In this module, you'll learn about the different storage options that are available in Azure's Storage services, and the scenarios in which each storage option is appropriate. As you complete the individual units in this module, you'll learn about Azure Blob Storage, Azure Disk Storage, Azure File Storage, and Azure Storage Tiers.
 abstract: | 
-  Upon completion of this module, the learner will be able to describe the benefits and usage of:
-  - Azure Container (Blob) Storage
+  After completing this module, you'll be able to describe the benefits and usage of:
+  - Azure Blob Storage
   - Azure Disk Storage
   - Azure File Storage
   - Azure Storage Tiers 

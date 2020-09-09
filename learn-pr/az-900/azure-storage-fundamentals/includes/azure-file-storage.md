@@ -3,7 +3,7 @@
 Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) protocol. Azure file shares can be mounted concurrently by cloud or on-premises deployments of Windows, Linux, and macOS. Applications running in Azure virtual machines or cloud services can mount a file storage share to access file data, just as a desktop application would mount a typical SMB share. Any number of Azure virtual machines or roles can mount and access the file storage share simultaneously. Typical usage scenarios would be to share files anywhere in the world, diagnostic data, or application data sharing.
   :::column-end:::
   :::column:::
-    :::image type="icon" source="../media/azure-files.png" border="false":::
+    :::image type="icon" source="../media/icon-azure-files.png" border="false":::
   :::column-end:::
 :::row-end:::
 
@@ -17,7 +17,7 @@ Azure Files can be used for many common scenarios:
 
 The following illustration shows Azure Files being used to share data between two geographical locations. Azure Files ensures the data is encrypted at rest, and the Server Message Block (SMB) protocol ensures the data is encrypted in transit.
 
-![Illustration showing the file sharing capabilities of Azure Files between a Western US Azure File Share and a European Azure File Share, each with their own SMB users.](../media/Azure_Files.png)
+![Illustration showing the file sharing capabilities of Azure Files between a Western US Azure File Share and a European Azure File Share, each with their own SMB users.](../media/icon-azure-files.png)
 
 One thing that distinguishes Azure Files from files on a corporate file share is that you can access the files from anywhere in the world using a URL that points to the file. You can also use Shared Access Signature (SAS) tokens to allow access to a private asset for a specific amount of time.
 

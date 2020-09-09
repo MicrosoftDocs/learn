@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-storage-fundamentals.azure-storage-accounts
-title: Azure Storage Account fundamentals
+title: Azure storage account fundamentals
 metadata:
-  title: Azure Storage Account fundamentals
+  title: Azure storage account fundamentals
   description: In this unit, you'll learn about Azure storage accounts.
   ms.date: 09/11/2020
   author: rmcmurray

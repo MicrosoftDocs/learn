@@ -10,9 +10,9 @@ In this module, you'll learn about the different Azure storage options and the s
 
 ## Learning objectives
 
-Upon completion of this module, the learner will be able to describe the benefits and usage of:
+After completing this module, you'll be able to describe the benefits and usage of:
 
-- Azure Container (Blob) Storage
+- Azure Blob Storage
 - Azure Disk Storage
 - Azure File Storage
 - Azure Storage Tiers
