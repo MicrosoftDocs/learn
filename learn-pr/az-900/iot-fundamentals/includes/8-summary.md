@@ -5,3 +5,11 @@ Tailwind Traders was able to capture telemetry data from appliances, combine it 
 Without Azure's IoT services, receiving message from devices might still be possible, but it would likely be much less secure, would require custom development to implement a dashboard for reporting and management, and more difficult to push software or firmware updates to each device.
 
 IoT is an exciting evolution in computing that bridges the physical and digital worlds.  Azure's IoT services provide a significant amount of functionality for organizations that want to build device and sensor-driven solutions.
+
+
+
+## Further reading
+
+
+Azure Sphere development kits provide everything you need to start prototyping and developing Azure Sphere applications. Order yours today and start taking advantage of the rich development experience in Visual Studio.
+[Get started with Azure Sphere](https://azure.microsoft.com/en-us/services/azure-sphere/get-started/)

@@ -22,33 +22,33 @@ There are many services that can assist and drive end-to-end solutions for IoT o
 
 ## Azure IoT Hub
 
-Think: "Message receiver, an end point for device messages".
+[Azure IoT Hub](https://azure.microsoft.com/services/iot-hub/?azure-portal=true) is a managed service hosted in the cloud that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution backend. You can connect virtually any device to your IoT Hub.
 
-Azure IoT Hub is a managed service hosted in the cloud that acts as a central message hub for bi-directional communication between your IoT application and the devices it manages. You can use Azure IoT Hub to build IoT solutions with reliable and secure communications between millions of IoT devices and a cloud-hosted solution backend. You can connect virtually any device to your IoT Hub.
+IoT Hub supports communications both from the device to the cloud and from the cloud to the device. It also supports multiple messaging patterns such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. Once the IoT Hub receives messages from a device it can route that message to other Azure services.
 
-IoT Hub supports communications both from the device to the cloud and from the cloud to the device. It also supports multiple messaging patterns such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. IoT Hub monitoring helps you maintain the health of your solution by tracking events such as device creation, device failures, and device connections.
+From a cloud-to-device perspective, IoT Hub allows for "command and control", in other words, either manual or automated remote control of connected devices so you can instruct the device to open valves, setting target temperatures, restarting stuck devices, etc.
 
-The IoT Hub is a platform as a service (PaaS) that you build your company's solutions on top of by writing custom code and calling methods on IoT Hub's API.
+IoT Hub monitoring helps you maintain the health of your solution by tracking events such as device creation, device failures, and device connections.
 
 ## Azure IoT Central
 
-Think: "Pre-built Graphical User Interface (GUI) portal to monitor device health and control devices remotely."
+[Azure IoT Central](https://azure.microsoft.com/services/iot-central/?azure-portal=true) builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices.  The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.  You can watch the overall performance across all devices in aggregate, and set up alerts that send notifications when a specific device needs maintenance.  Finally, you can push hardware updates to the device.
 
-Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices.  The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.  You can watch the overall performance across all devices in aggregate, and set up alerts that send notifications when a specific device needs maintenance.  Finally, you can push hardware updates to the device.
+To help you get up and running quickly, IoT Central provides starter templates for common scenarios across different industries, like retail, energy, healthcare, and government. You then customize the design starter templates directly in the UI by choosing from existing themes or creating your own custom theme, setting the logo, and so on. IoT Central allows you to tailor the starter templates for the specific data that's sent from your devices, the reports you want to see, and the alerts you want to send.
 
-To help you get up and running quickly, IoT Central provides starter templates for common scenarios across different industries, like retail, energy, healthcare, and government. You then customize the starter templates using a programmatic SDK via Node, Python, C#, or other popular programming languages.  IoT Central allows you to tailor the starter templates for the specific data that's sent from your devices, the reports you want to see, and the alerts you want to send.
+![Screenshot of IoT Central's graphical user interface displaying templates you can choose to create a new app.](../media/2-identify-product-options-01.png)
 
-Finally, you can use the UI to control your devices remotely.  This feature allows you to push a software update or modify a property of the device.  You could update the desired temperature for one or all of your refrigerated vending machines from directly inside of IoT Central.
+Finally, you can use the UI to control your devices remotely. This feature allows you to push a software update or modify a property of the device. You could update the desired temperature for one or all of your refrigerated vending machines from directly inside of IoT Central.
 
 ## Azure Sphere
 
-Think: "secure end-to-end platform".
-
-Azure Sphere creates an end-to-end highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device, to the secure method of sending messages from the device to the message hub.  It has built-in communication and security features for internet-connected devices.
+[Azure Sphere](https://azure.microsoft.com/services/azure-sphere/?azure-portal=true) creates an end-to-end highly secure IoT solution for customers that encompasses everything from the hardware and operating system on the device, to the secure method of sending messages from the device to the message hub.  It has built-in communication and security features for internet-connected devices.
 
 There are three parts to Azure Sphere:
 
-- The first part is the Azure Sphere MCU (micro-controller unit) which is responsible for processing the operating system and signals from attached sensors.
+- The first part is the Azure Sphere MCU (micro-controller unit) which is responsible for processing the operating system and signals from attached sensors. The following is a picture of the Seeed Azure Sphere MT3620 Development Kit MCU, one of several different starter kits available for prototyping and developing Azure Sphere applications.
+
+![Picture of a Azure Sphere development kit micro-controller unit.](../media/2-identify-product-options-01.png)
 
 - The second part is a customized Linux operating system (OS) that handles communication with the security service and can run the vendor's software.
 

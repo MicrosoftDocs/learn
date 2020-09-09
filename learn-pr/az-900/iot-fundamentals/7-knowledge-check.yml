@@ -25,17 +25,17 @@ quiz:
     - content: "Azure Sphere"
       isCorrect: true
       explanation: "Azure Sphere provides the highest degree of security to ensure the device has not been tampered with."
-  - content: "A company wants to quickly manage their individual IoT devices. Which IoT technology should they choose?"
+  - content: "A company wants to quickly manage their individual IoT devices using a web-based user interface. Which IoT technology should they choose?"
     choices:
     - content: "IoT Hub"
       isCorrect: false
-      explanation: "IoT Hub is not an IoT device management solution."
+      explanation: "IoT Hub does not provide a graphical user interface for device management."
     - content: "IoT Central"
       isCorrect: true
       explanation: "IoT Central quickly creates a web-based management portal to enable reporting and communication with IoT devices."
     - content: "Azure Sphere"
-      isCorrect: true
-      explanation: "Azure Sphere is not an IoT device management solution."
+      isCorrect: false
+      explanation: "Azure Sphere does not provide a graphical user interface for device management."
   - content: "You want to send messages from the IoT device to the cloud and vice versa.  Which IoT technology can send and receive messages?"
     choices:
     - content: "IoT Hub"
