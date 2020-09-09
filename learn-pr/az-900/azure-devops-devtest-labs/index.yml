@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.languages.azure-devops-devtest-labs
+uid: learn.azure.azure-devops-devtest-labs
 metadata:
   title: Choose the best DevOps tools for your software and infrastructure environment
   description: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
@@ -28,14 +28,14 @@ products:
 - azure
 - azure-devops
 units:
-- learn.languages.azure-devops-devtest-labs.introduction
-- learn.languages.azure-devops-devtest-labs.identify-product-options
-- learn.languages.azure-devops-devtest-labs.analyze-decision-criteria
-- learn.languages.azure-devops-devtest-labs.use-azure-devops
-- learn.languages.azure-devops-devtest-labs.use-github
-- learn.languages.azure-devops-devtest-labs.use-azure-devtest-labs
-- learn.languages.azure-devops-devtest-labs.knowledge-check
-- learn.languages.azure-devops-devtest-labs.summary
+- learn.azure.azure-devops-devtest-labs.introduction
+- learn.azure.azure-devops-devtest-labs.identify-product-options
+- learn.azure.azure-devops-devtest-labs.analyze-decision-criteria
+- learn.azure.azure-devops-devtest-labs.use-azure-devops
+- learn.azure.azure-devops-devtest-labs.use-github
+- learn.azure.azure-devops-devtest-labs.use-azure-devtest-labs
+- learn.azure.azure-devops-devtest-labs.knowledge-check
+- learn.azure.azure-devops-devtest-labs.summary
 
 badge:
-  uid: learn.languages.azure-devops-devtest-labs.badge
+  uid: learn.azure.azure-devops-devtest-labs.badge
