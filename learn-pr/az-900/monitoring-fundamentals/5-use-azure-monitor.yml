@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.monitoring-fundamentals.use-azure-monitor
+uid: learn.azure.monitoring-fundamentals.use-azure-monitor
 title: Use Azure Monitor
 metadata:
   title: Use Azure Monitor to identify the cause of intermittent website issues
