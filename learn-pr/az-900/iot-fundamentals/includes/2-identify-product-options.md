@@ -34,7 +34,7 @@ The IoT Hub is a platform as a service (PaaS) that you build your company's solu
 
 Think: "Pre-built Graphical User Interface (GUI) portal to monitor device health and control devices remotely."
 
-Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices.  The visual UI makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.  You can watch the overall performance across all devices in aggregate, and set up alerts that send notifications when a specific device needs maintenance.  Finally, you can push hardware updates to the device.
+Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices.  The visual user interface (UI) makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.  You can watch the overall performance across all devices in aggregate, and set up alerts that send notifications when a specific device needs maintenance.  Finally, you can push hardware updates to the device.
 
 To help you get up and running quickly, IoT Central provides starter templates for common scenarios across different industries, like retail, energy, healthcare, and government. You then customize the starter templates using a programmatic SDK via Node, Python, C#, or other popular programming languages.  IoT Central allows you to tailor the starter templates for the specific data that's sent from your devices, the reports you want to see, and the alerts you want to send.
 
