@@ -11,28 +11,28 @@ metadata:
 title: Enterprise enrollment and Azure AD tenants
 durationInMinutes: 10
 content: |
-  [!include[](includes/2-enterprise-enrollment-azure-ad-tenants.md)]
+  [!include[](./includes/2-enterprise-enrollment-azure-ad-tenants.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'What authentication account type is recommended when planning for enterprise enrollment?'
+  - content: What authentication account type is recommended when planning for enterprise enrollment?
     choices:
-    - content: 'Microsoft Account (MSA)'
+    - content: Microsoft account
       isCorrect: false
-      explanation: 'Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.'
-    - content: 'Work or school account'
+      explanation: Only use the authentication type _work or school account_ for all account types. Avoid using the _Microsoft account_ account type.
+    - content: Work or school account
       isCorrect: true
-      explanation: 'Only use the authentication type Work or school account for all account types. Avoid using the Microsoft account (MSA) account type.'
+      explanation: Only use the authentication type _work or school account_ for all account types. Avoid using the _Microsoft account_ account type.
 
-  - content: 'Azure AD tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?'
+  - content: An Azure AD tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?
     choices:
-    - content: 'Multifactor authentication provides another layer of security and a second barrier of authentication.'
+    - content: Multi-factor authentication provides another layer of security and a second barrier of authentication.
       isCorrect: true
-      explanation: 'Enforce multifactor authentication and conditional access policies for all privileged accounts for greater security.'
-    - content: 'Multiple Azure AD tenants can not function in the same enrollment.'
+      explanation: Enforce multi-factor authentication and conditional access policies for all privileged accounts for greater security.
+    - content: Multiple Azure AD tenants can not function in the same enrollment.
       isCorrect: false
-      explanation: 'Multiple Azure AD tenants can function in the same enrollment.'
-    - content: 'Do not start by implementing an Azure-AD-only identity deployment if your organization already has an identity infrastructure.'
+      explanation: Multiple Azure AD tenants can function in the same enrollment.
+    - content: Do not start by implementing an Azure-AD-only identity deployment if your organization already has an identity infrastructure.
       isCorrect: false
-      explanation: "If your organization doesn't have an identity infrastructure, start by implementing an Azure-AD-only identity deployment. Such deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices."
+      explanation: If your organization doesn't have an identity infrastructure, start by implementing an Azure-AD-only identity deployment. Such a deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices.
