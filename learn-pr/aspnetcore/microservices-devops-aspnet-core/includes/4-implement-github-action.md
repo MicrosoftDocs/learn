@@ -14,7 +14,7 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
 1. Run the following command to create a service principal to allow access from GitHub:
 
     ```azurecli
-    az ad sp create-for-rbac --sdk-auth
+    az ad sp create-for-rbac --sdk-auth --name http://eshop-learn-sp
     ```
 
     A variation of the following output appears:
@@ -36,10 +36,10 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
     ```
 
 1. Copy the JSON output from the command shell. You'll need this and the credentials for the GitHub Action in next step.
-1. In the GitHub repository you forked, go to **Settings** > **Secrets**.
 
 ### Create secrets
 
+1. In the GitHub repository you forked, go to **Settings** > **Secrets**.
 1. Select the **New secret** button.
 1. Enter `AZURE_CREDENTIALS` and the JSON output you copied in the **Name** and **Value** text boxes, respectively.
 
@@ -53,10 +53,9 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
     cat ~/clouddrive/aspnet-learn-temp/config.txt
     ```
 
-    | Secret name              | Secret value   |
-    |--------------------------|--------------------|
-    | `REGISTRY_USERNAME`      | use the value of `ESHOP_ACRUSER` |
-    | `REGISTRY_PASSWORD`      | use the value of `ESHOP_ACRPASSWORD` |
+    Name the secrets as follows and use the values provided in the text output.
+    - `REGISTRY_USERNAME`
+    - `REGISTRY_PASSWORD`
 
 ## Create GitHub Actions to implement CI and CD pipelines
 

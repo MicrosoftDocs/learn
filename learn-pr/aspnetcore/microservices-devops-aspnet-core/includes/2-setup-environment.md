@@ -28,7 +28,7 @@ The script deploys a modified version of the *:::no-loc text="eShopOnContainers"
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
-This module focuses on adding CI/CD to the app depicted in the preceding diagram.
+This module focuses on adding CI/CD for the coupon service depicted in the preceding diagram.
 
 The script takes several minutes to complete. While the script is running, continue to the next unit to review DevOps concepts.
 
