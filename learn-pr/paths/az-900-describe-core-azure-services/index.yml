@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-core-azure-services
 metadata:
-  title: "AZ-900: Describe core Azure services"
+  title: "Azure Fundamentals - 2 of 6: Describe core Azure services"
   description: "This learning path provides you with an introduction to the basics of Azure's core services for compute, network, storage, and database."
   brand: azure
   ms.date: 09/11/2020
@@ -9,7 +9,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "AZ-900: Describe core Azure services"
+title: "Azure Fundamentals - 2 of 6: Describe core Azure services"
 summary: |
   In this learning path, you'll:
     - Understand the breadth of services available in Azure including compute, network, storage, and database
