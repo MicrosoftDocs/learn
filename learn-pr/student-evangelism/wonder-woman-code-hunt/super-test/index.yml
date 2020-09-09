@@ -8,7 +8,7 @@ metadata:
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create a Test to Determine Your Super Personality with Python and Visual Studio Code
+title: Create a test to determine your super personality by using Python and Visual Studio Code
 summary: Which WONDER WOMAN 1984 character are you most like? Use the popular programming language Python to build a test inspired by WONDER WOMAN 1984 and share it with your friends. This lesson will teach you the basics of booleans, commands, and conditionals. No prior background in computer science is needed.
 abstract: |
  In this module, you will begin to discover: 
