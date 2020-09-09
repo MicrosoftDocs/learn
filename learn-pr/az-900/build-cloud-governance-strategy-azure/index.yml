@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.build-cloud-governance-strategy-azure
+metadata:
+  title: Build a cloud governance strategy on Azure
+  description: Learn how to access policies, resource locks, and tags, as well as how Azure services such as Azure Policy and Azure Blueprints can help you build a comprehensive cloud governance strategy.
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Build a cloud governance strategy on Azure
+summary: |
+  A good cloud governance strategy helps you stay organized, manage costs, and meet your compliance goals.
+
+  Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
+abstract: |
+  After completing this module, you'll be able to:
+
+  * Make organizational decisions about your cloud environment by using the Cloud Adoption Framework.
+  * Define who can access cloud resources by using Azure RBAC.
+  * Apply a resource lock to prevent accidental deletion of your Azure resources.
+  * Apply tags to your Azure resources to help describe their purpose.
+  * Control and audit how your resources are created by using Azure Policy.
+  * Enable governance at scale across multiple Azure subscriptions by using Azure Blueprints.
+prerequisites: |
+  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+iconUrl: /learn/achievements/describe-azure-governance-methodologies.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-owner
+- business-user
+- student
+- technology-manager
+products:
+- azure
+- azure-policy
+- azure-blueprints
+- azure-rbac
+units:
+- learn.build-cloud-governance-strategy-azure.1-introduction
+- learn.build-cloud-governance-strategy-azure.2-accelerate-cloud-adoption-framework
+- learn.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
+- learn.build-cloud-governance-strategy-azure.4-control-access-azure-rbac
+- learn.build-cloud-governance-strategy-azure.5-prevent-changes-resource-locks
+- learn.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
+- learn.build-cloud-governance-strategy-azure.7-organize-resource-tags
+- learn.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
+- learn.build-cloud-governance-strategy-azure.9-restrict-location-azure-policy
+- learn.build-cloud-governance-strategy-azure.10-govern-subscriptions-azure-blueprints
+- learn.build-cloud-governance-strategy-azure.11-knowledge-check
+- learn.build-cloud-governance-strategy-azure.12-summary
+badge:
+  uid: learn.build-cloud-governance-strategy-azure.badge
