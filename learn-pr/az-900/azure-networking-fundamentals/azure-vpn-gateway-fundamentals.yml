@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.azure-networking-fundamentals.azure-vpn-gateway-fundamentals
+title: Azure VPN gateway fundamentals
+metadata:
+  title: Azure VPN gateway fundamentals
+  description: In this unit, you'll learn about Azure VPN gateways.
+  ms.date: 09/11/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/azure-vpn-gateway-fundamentals.md)]
