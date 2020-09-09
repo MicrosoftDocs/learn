@@ -28,7 +28,7 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 
 > [!NOTE]
 > There are many interpretations of the concept of *measurement* in
-> quantum mechanics, but the details beyond the scope of this module. But for
+> quantum mechanics, but the details are beyond the scope of this module. But for
 > quantum computing you don't have to worry about it. Here we will understand by
 > measurement the informal idea of "observing" a qubit, which immediately
 > collapses the quantum superposition to one of the two basis states that correspond to classical values 0 and 1. If you
@@ -83,8 +83,6 @@ quantum mechanics and therefore of quantum computing.
 > $H\ket{0}=\frac{1}{\sqrt2}(\ket{0}+\ket{1})$, while the operation `H` acts on
 > a qubit as `H(qubit)` to change the state of `qubit` from $\ket{0}$ to
 > $\frac{1}{\sqrt2}(\ket{0}+\ket{1})$.
-
-For example, the matrix $H$ maps the input state $\ket{0}$ to the state $H\ket{0} = \frac{1}{\sqrt{2}} ...$, while the operation `H` acts on a qubit as `H(qubit)` to change the state of `qubit` from $\ket{0}$ to ...
 
 ## Quantum computers are probabilistic
 
