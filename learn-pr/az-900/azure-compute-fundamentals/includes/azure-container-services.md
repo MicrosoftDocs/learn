@@ -19,7 +19,7 @@ Containers are managed through a container orchestrator, which can start, stop, 
 
 ### Azure Container Instances (ACI)
 
-[Azure Container Instances](https://azure.microsoft.com/services/container-instances) offers the fastest and simplest way to run a container in Azure without having to manage any virtual machines or adopt any additional services. It is a PaaS offering that allows you to upload your containers, which it will run for you. 
+[Azure Container Instances](https://azure.microsoft.com/services/container-instances?azure-portal=true) offers the fastest and simplest way to run a container in Azure without having to manage any virtual machines or adopt any additional services. It is a PaaS offering that allows you to upload your containers, which it will run for you. 
 
   :::column-end:::
   :::column:::
@@ -35,7 +35,7 @@ Containers are managed through a container orchestrator, which can start, stop, 
 
 ### Azure Kubernetes Service (AKS)
 
-The task of automating, managing, and interacting with a large number of containers is known as orchestration. [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service) is a complete orchestration service for containers with distributed architectures and large volumes of containers. Orchestration is the task of automating and managing a large number of containers and how they interact. 
+The task of automating, managing, and interacting with a large number of containers is known as orchestration. [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service?azure-portal=true) is a complete orchestration service for containers with distributed architectures and large volumes of containers. Orchestration is the task of automating and managing a large number of containers and how they interact. 
 
   :::column-end:::
 :::row-end:::

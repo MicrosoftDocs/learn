@@ -2,12 +2,12 @@ In this module, you learned how you can use several of Azure's Compute services 
 
 ## Learn more
 
-- [Azure compute](https://azure.microsoft.com/product-categories/compute)
-- [Virtual Machines Documentation](https://docs.microsoft.com/azure/virtual-machines/)
-- [Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/)
-- [Linux virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/)
-- [Azure App Service documentation](https://docs.microsoft.com/azure/app-service/)
-- [Azure Container Instances](https://azure.microsoft.com/services/container-instances)
-- [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service)
-- [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/)
-- [Windows Virtual Desktop documentation](https://docs.microsoft.com/azure/virtual-desktop/)
+- [Azure compute](https://azure.microsoft.com/product-categories/compute?azure-portal=true)
+- [Virtual Machines Documentation](https://docs.microsoft.com/azure/virtual-machines/?azure-portal=true)
+- [Windows virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/windows/?azure-portal=true)
+- [Linux virtual machines in Azure](https://docs.microsoft.com/azure/virtual-machines/linux/?azure-portal=true)
+- [Azure App Service documentation](https://docs.microsoft.com/azure/app-service/?azure-portal=true)
+- [Azure Container Instances](https://azure.microsoft.com/services/container-instances?azure-portal=true)
+- [Azure Kubernetes Service (AKS)](https://azure.microsoft.com/services/kubernetes-service?azure-portal=true)
+- [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/?azure-portal=true)
+- [Windows Virtual Desktop documentation](https://docs.microsoft.com/azure/virtual-desktop/?azure-portal=true)
