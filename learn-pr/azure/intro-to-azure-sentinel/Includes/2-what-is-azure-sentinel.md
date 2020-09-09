@@ -28,6 +28,6 @@ For example, Azure Sentinel supports Role Based Access control, so you can give 
 
 It is designed to help you enable end to end security operations including collection, detection, investigation and response.
 
-![Diagram showing the end to end functionality of Azure Sentinel](../media/02_end-to-end.png)
+:::image type="content" source="../media/02-end-to-end.png" alt-text="Diagram showing the end to end functionality of Azure Sentinel":::
 
 Let's take a look at the key components that make up Azure Sentinel.
