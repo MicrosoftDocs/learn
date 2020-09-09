@@ -10,9 +10,9 @@ In addition, Azure provides several Storage Tiers that you can use to balance yo
 
 ## Learn more
 
-- [Azure data storage options](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/)
-- [Azure Files documentation](https://docs.microsoft.com/azure/storage/files/)
-- [Azure Storage documentation](https://docs.microsoft.com/azure/storage/)
-- [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/)
-- [Create an Azure Storage account](https://docs.microsoft.com/learn/modules/create-azure-storage-account/)
-- [Introduction to Azure managed disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview)
+- [Azure data storage options](https://docs.microsoft.com/learn/modules/intro-to-data-in-azure/?azure-portal=true)
+- [Azure Files documentation](https://docs.microsoft.com/azure/storage/files/?azure-portal=true)
+- [Azure Storage documentation](https://docs.microsoft.com/azure/storage/?azure-portal=true)
+- [Choose a data storage approach in Azure](https://docs.microsoft.com/learn/modules/choose-storage-approach-in-azure/?azure-portal=true)
+- [Create an Azure Storage account](https://docs.microsoft.com/learn/modules/create-azure-storage-account/?azure-portal=true)
+- [Introduction to Azure managed disks](https://docs.microsoft.com/azure/virtual-machines/windows/managed-disks-overview?azure-portal=true)
