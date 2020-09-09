@@ -19,7 +19,11 @@ iconUrl: /learn/achievements/management-fundamentals.svg
 levels:
 - beginner
 roles:
+- administrator
 - developer
+- business-owner
+- student
+- technology-manager
 products:
 - azure
 - azure-portal
