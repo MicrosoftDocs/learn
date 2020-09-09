@@ -3,7 +3,7 @@ Before you jump in to writing a program to decode messages, you should make sure
 Let's start by creating a folder on your computer where you can find easily it. Call it "WW84". For example, you might create it in your Documents folder.
 
 > [!NOTE]
-> If you already followed the previous module in this learning path where you [decoded a secret message](../../secret-message/), you can use the same folder as before.
+> If you already followed the previous module in this learning path where you [decoded a secret message](<!-- ../../secret-message/-->), you can use the same folder as before.
 
 > [!div class="mx-imgBorder"]
 > ![WW84 folder creation](../media/test-create-folder.png)
