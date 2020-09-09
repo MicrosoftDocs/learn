@@ -32,7 +32,7 @@ The IoT Hub is a platform as a service (PaaS) that you build your company's solu
 
 ## Azure IoT Central
 
-Think: "Pre-built GUI portal to monitor device health and control devices remotely."
+Think: "Pre-built Graphical User Interface (GUI) portal to monitor device health and control devices remotely."
 
 Azure IoT Central builds on top of IoT Hub by adding a dashboard that allows you to connect, monitor, and manage your IoT devices.  The visual UI makes it easy to quickly connect new devices and watch as they begin sending telemetry or error messages.  You can watch the overall performance across all devices in aggregate, and set up alerts that send notifications when a specific device needs maintenance.  Finally, you can push hardware updates to the device.
 
