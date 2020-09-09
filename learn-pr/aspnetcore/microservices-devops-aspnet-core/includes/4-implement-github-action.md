@@ -58,9 +58,11 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
     | `REGISTRY_USERNAME`      | use the value of `ESHOP_ACRUSER` |
     | `REGISTRY_PASSWORD`      | use the value of `ESHOP_ACRPASSWORD` |
 
-## Create a GitHub Action to implement a CI/CD pipeline
+## Create GitHub Actions to implement CI and CD pipelines
 
-Create a new GitHub Action with the following steps:
+### Create the build Action
+
+Create a GitHub Action for the build with the following steps:
 
 1. Select the **Actions** tab in your repository and select the **set up a workflow yourself** link:
 
@@ -69,28 +71,29 @@ Create a new GitHub Action with the following steps:
 1. Add the Action specification by pasting the following YAML into the editor:
 
     ```yml
-    name: eShop build & deploy
+    name: eShop build
 
     on:
       push:
+        paths-ignore:
+        - './deploy/k8s/helm-simple/**'
         branches: [ main ]
 
     env:
-      IMAGE_NAME: webspa
+      IMAGE_NAME: coupon.api
       TAG: linux-latest
       CONTEXT_PATH: .
-      DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
-      CHART_PATH: deploy/k8s/helm-simple/webspa
-      CLUSTER_RESOURCE_GROUP: YOUR_CLUSTER_RESOURCE_GROUP
-      CLUSTER_NAME: YOUR_CLUSTER_NAME
-      IP_ADDRESS: YOUR_CLUSTER_IP
-      REGISTRY_LOGIN_SERVER: YOUR_ACR_LOGIN_SERVER
+      DOCKER_FILE_PATH: src/Services/Coupon.API/Dockerfile.acr
+      CHART_PATH: deploy/k8s/helm-simple/coupon
+      CLUSTER_NAME: eshop-learn-aks
+      CLUSTER_RESOURCE_GROUP: sumit-eshop-aks-rg
+      REGISTRY_LOGIN_SERVER: eshoplearn20200908125010311.azurecr.io
+      IP_ADDRESS: 52.246.72.46
 
     jobs:
       build-and-push-docker-image:
         runs-on: ubuntu-latest
         steps:
-
         - name: Get code from the repository
           uses: actions/checkout@v1
           with:
@@ -107,56 +110,25 @@ Create a new GitHub Action with the following steps:
             repository:  ${{ env.IMAGE_NAME }}
             tags: ${{ env.TAG }}
             push: true
-
-      deploy-to-aks:
-        needs: [build-and-push-docker-image]
-        runs-on: ubuntu-latest
-        steps:
-        - name: Azure Kubernetes set context
-          uses: Azure/aks-set-context@v1
-          with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-            resource-group: ${{env.CLUSTER_RESOURCE_GROUP}}
-            cluster-name: ${{env.CLUSTER_NAME}}
-
-        - name: Get code from the repository
-          uses: actions/checkout@v1
-          with:
-            ref: main
-
-        - name: Helm tool installer
-          uses: Azure/setup-helm@v1
-
-        - name: Azure Login
-          uses: Azure/login@v1.1
-          with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-        - name: Deploy
-          run: |
-            helm upgrade --install eshoplearn-webspa --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
     ```
 
     The preceding YAML defines a GitHub Action that:
 
-    - Is triggered when a commit is pushed to the `main` branch.
+    - Is triggered when:
+        - A commit is pushed to the `main` branch.
+        - A Helm chart hasn't been modified.
     - Defines environment variables that are used tasks in the specification. In the next step, you will set new values for:
       - `CLUSTER_NAME`
       - `CLUSTER_RESOURCE_GROUP`
       - `IP_ADDRESS`
       - `REGISTRY_LOGIN_SERVER`
-    - Has two jobs&mdash;sets of steps that execute on the same runner:
-      - `build-and-push-docker-image` that builds the Docker image and pushes it to the ACR instance. The `build-and-push-docker-image` job runs in an `ubuntu-latest` agent and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
-        - `Get code from the repository` checks out the `main` branch.
-        - `Build and push Docker images` builds the image and pushes it to ACR.
-      - `deploy-to-aks` deploys new images. The `deploy-to-aks` job depends on the `build-and-push-docker-image` job, runs in an `ubuntu-latest` agent, and has five steps:
-        - `Azure Kubernetes set context` sets the AKS credentials in the agent's *.kube/config* file.
-        - `Get code from the repository` checks out the code from the repository.
-        - `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
-        - `Azure Login` logs in to Azure using the service principal credentials.
-        - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
+    - Has one job&mdash;a set of steps that execute on the same runner&mdash;named `build-and-push-docker-image`. The job:
+        - Builds the Docker image and pushes it to the ACR instance.
+        - Runs in an `ubuntu-latest` agent and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
+            - `Get code from the repository` checks out the `main` branch.
+            - `Build and push Docker images` builds the image and pushes it to ACR.
 
-1. Replace the default Action file name of *main.yml* with *build-and-deploy.yml*.
+1. Replace the default Action file name of *main.yml* with *build.yml*:
 
     :::image type="content" source="../media/4-implement-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-implement-github-action/action-file-name.png":::
 
@@ -187,130 +159,160 @@ Create a new GitHub Action with the following steps:
       REGISTRY_LOGIN_SERVER: eshoplearn20200904000000000.azurecr.io
     ```
 
-    In the preceding snippet, you can see a portion of the *build-and-deploy.yml* file with the mentioned environment variables set.
+    In the preceding snippet, you can see a portion of the *build.yml* file with the mentioned environment variables set.
 
 1. Select the **Start commit** button, select the **Commit directly to the `main` branch** radio button, and select **Commit new file** to save the Action file.
 
-This GitHub Action definition will be part of the repository from now on. If you want to make any change, update the file locally and push to `main` or create a pull request (PR). If you create a PR, the Action will be triggered when merging to `main`.
+### Create the deployment Action
 
-## Modify the SPA microservice
+1. Select the **Actions** tab in your repository and select the **set up a workflow yourself** link.
+1. Add the Action specification by pasting the following YAML into the editor:
+
+    ```yml
+    name: eShop deploy
+
+    on:
+      push:
+        paths:
+        - './deploy/k8s/helm-simple/coupon/*'
+        branches: [ main ]
+
+    env:
+      IMAGE_NAME: coupon.api
+      TAG: linux-latest
+      CONTEXT_PATH: .
+      DOCKER_FILE_PATH: src/Services/Coupon/Coupon.API/Dockerfile.acr
+      CHART_PATH: deploy/k8s/helm-simple/coupon
+      CLUSTER_NAME: eshop-learn-aks
+      CLUSTER_RESOURCE_GROUP: sumit-eshop-aks-rg
+      REGISTRY_LOGIN_SERVER: eshoplearn20200908125010311.azurecr.io
+      IP_ADDRESS: 52.246.72.46
+
+    jobs:  
+      deploy-to-aks:
+        runs-on: ubuntu-latest
+        steps:
+        - name: Azure Kubernetes set context
+          uses: Azure/aks-set-context@v1
+          with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            resource-group: ${{env.CLUSTER_RESOURCE_GROUP}}
+            cluster-name: ${{env.CLUSTER_NAME}}
+
+        - name: Get code from the repository
+          uses: actions/checkout@v1
+          with:
+            ref: main
+
+        - name: Helm tool installer
+          uses: Azure/setup-helm@v1
+
+        - name: Azure Login
+          uses: Azure/login@v1.1
+          with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+        - name: Deploy
+          run: |
+            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
+    ```
+
+    The preceding YAML defines a GitHub Action that:
+
+    - Is triggered when:
+        - A commit is pushed to the `main` branch.
+        - The coupon service's Helm chart has been modified.
+    - Defines environment variables that are used tasks in the specification. In the next step, you will set new values for:
+      - `CLUSTER_NAME`
+      - `CLUSTER_RESOURCE_GROUP`
+      - `IP_ADDRESS`
+      - `REGISTRY_LOGIN_SERVER`
+    - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` agent and has five steps:
+        - `Azure Kubernetes set context` sets the AKS credentials in the agent's *.kube/config* file.
+        - `Get code from the repository` checks out the code from the repository.
+        - `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
+        - `Azure Login` logs in to Azure using the service principal credentials.
+        - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
+
+1. Replace the default Action file name of *main.yml* with *deploy.yml*:
+
+    :::image type="content" source="../media/4-implement-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-implement-github-action/action-file-name.png":::
+
+1. Run the following command in Azure Cloud Shell to get values for the `env` block's environment variables:
+
+    ```bash
+    cat ~/clouddrive/aspnet-learn-temp/config.txt
+    ```
+
+1. In the Action YAML editor, replace the values for the following environment variables. Use the values from the output in the preceding step.
+    - `CLUSTER_RESOURCE_GROUP`
+    - `CLUSTER_NAME`
+    - `IP_ADDRESS`
+    - `REGISTRY_LOGIN_SERVER`
+
+    At this point, you should see something like this:
+
+    ```yml
+    env:
+      IMAGE_NAME: webspa
+      TAG: linux-latest
+      CONTEXT_PATH: .
+      DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
+      CHART_PATH: deploy/k8s/helm-simple/webspa
+      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
+      CLUSTER_NAME: eshop-learn-aks
+      IP_ADDRESS: 203.0.113.55
+      REGISTRY_LOGIN_SERVER: eshoplearn20200904000000000.azurecr.io
+    ```
+
+    In the preceding snippet, you can see a portion of the *deploy.yml* file with the mentioned environment variables set.
+
+1. Select the **Start commit** button, select the **Commit directly to the `main` branch** radio button, and select **Commit new file** to save the Action file.
+
+These two GitHub Action definitions will be part of the repository from now on. If you want to make any changes, update the appropriate file locally and push to `main` or create a pull request (PR). If you create a PR, the Action will be triggered when merging to `main`.
+
+## Modify the Coupon.API microservice
 
 You've just finished creating your first CI/CD pipeline and someone from the marketing department wants to start a campaign for the new discount coupon feature, so the customers can get whatever discount they want, if they just guess the correct codes and nobody has used them before (Somehow they think this is a good idea 😂)
 
 Since you can guess this won't last too long, that is, this is just a proof-of-concept (POC), you're doing the minimum possible changes, right in the `main` branch:
 
-### 1. Add a call out in the home page
+1. In the *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs* file, replace the comment `// Add LogInformation call` with the following code:
 
-Update the *src/Web/WebSPA/Client/src/modules/app.component.html* file (line 4) like this:
+    ```csharp
+    _logger.LogInformation("Applying coupon {CouponCode}", code);
+    ```
 
-```html
-<header class="esh-app-header" [ngClass]="{'esh-app-header':true, 'esh-app-header--expanded': router.url === '/catalog'}">
-    <div class="esh-app-header-promo">
-        <span class="esh-app-header-promo-title">All T-SHIRTS</span>
-        <span class="esh-app-header-promo-subtitle">On sale this weekend -
-            Use the new DISCOUNT-COUPON on checkout and pay whatever you want!</span>
-    </div>
-    <div class="container">
-        ...
-    </div>
-</header>
+    The preceding code logs the coupon code being applied.
+1. Commit and push this change to the `main` branch.
 
-<!-- component routing placeholder -->
-<router-outlet></router-outlet>
+    The build workflow is triggered automatically. If the build completes successfully, you'll see a variation of the following output:
 
-<footer class="esh-app-footer">
+    :::image type="content" source="../media/4-implement-github-action/eshop-build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-implement-github-action/eshop-build-workflow-success.png":::
+1. In the *deploy/k8s/helm-simple/coupon/Chart.yaml* file, update the `appVersion` property value to `1.1.0`.
+
+    ```yml
+    apiVersion: v2
+    name: webspa
+    description: A Helm chart for Kubernetes
     ...
-</footer>
-```
+    # This is the version number of the application being deployed. This version number should be
+    # incremented each time you make changes to the application.
+    appVersion: 1.1.0
+    ```
 
-### 2. Update the discount coupon label in the checkout view
+    It's important that you update the app version in the Helm chart. This change causes the pod to be replaced when the chart is deployed to AKS with `helm upgrade`.
+1. Commit and push this change to the `main` branch.
 
-Update the *src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.html* file (line 95) as shown next:
-
-```html
-<div class="container">
-    ...
-    <form [formGroup]="newOrderForm" (ngSubmit)="submitForm(newOrderForm.value)">
-        <section class="u-background-brightest p-5">
-            <h2 class="mb-4">Shipping Address</h2>
-            ...
-            <h2 class="mt-5 mb-4">Payment method</h2>
-            ...
-            <h2 class="mt-5 mb-4">Order details</h2>
-            ...
-            <div class="d-flex flex-nowrap justify-content-between align-items-center mb-3 mt-3">
-                <div>
-                    <div *ngIf="!coupon">
-                        <div class="u-text-uppercase">Have a discount code? (DISC-##, up to 30)</div>
-                        ...
-                    </div>
-                </div>
-                ...
-            </div>
-
-            ...
-        </section>
-    </form>
-</div>
-```
-
-### 3. Update the discount code validation message
-
-Update the *src/Web/WebSPA/Client/src/modules/orders/orders-new/orders-new.component.ts* file (line 60), like this:
-
-```typescript
-import { Component, OnInit } from '@angular/core';
-...
-@Component({
-    selector: 'esh-orders_new .esh-orders_new .mb-5',
-    styleUrls: ['./orders-new.component.scss'],
-    templateUrl: './orders-new.component.html'
-})
-export class OrdersNewComponent implements OnInit {
-    ...
-    checkValidationCoupon(discountCode: string) {
-        this.couponValidationMessage = null;
-        this.coupon = null;
-        this.orderService
-            .checkValidationCoupon(discountCode)
-            .subscribe(
-                coupon => this.coupon = coupon,
-                error => this.couponValidationMessage = 'But only some are valid... until used 😉!' );
-    }
-    ...
-}
-```
-
-### 4. Update the SPA version in the Helm chart
-
-> **NOTE**
-> It's important that you update the app version in the Helm chart, so that the pod is replaced when the chart is deployed to AKS with `helm upgrade`.
-
-Update the version to `1.1.0` in the chart, file *deploy/k8s/helm-simple/webspa/Chart.yaml* (line 21) as shown next:
-
-```yml
-apiVersion: v2
-name: webspa
-description: A Helm chart for Kubernetes
-...
-# This is the version number of the application being deployed. This version number should be
-# incremented each time you make changes to the application.
-appVersion: 1.1.0
-```
-
-### 5. Save your changes
-
-Just commit and push to *main*.
-
-Since we are committing to *main*, the action will run immediately and the app should be deployed after a few minutes.
+    The deployment workflow is triggered automatically. The app should be deployed after a few minutes.
 
 ## Wait for deployment
 
-If you select the **Actions** tab in your repository, you should be able to monitor the progress, as shown in the next image.
+If you select the **Actions** tab in your repository, you can monitor the progress, as shown in the next image:
 
 :::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
 
-In the preceding image, you can see the "Build and push Docker images" step running and the log output.
+In the preceding image, you can see the `Build and push Docker images` step running and the log output.
 
 If you monitor your pods using the command `kubectl get pods -w` you should see something like this:
 
