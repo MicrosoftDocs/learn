@@ -106,19 +106,22 @@ You won't have to worry about CORS when you publish to Azure Static Web Apps. Az
 
 Now, tell Azure Functions to allow your web app to make HTTP requests to the API, on your computer.
 
-1. Create a file named _local.settings.json_ in the **Api** project
+1. Create a file named _launchSettings.json_ in the **Properties** folder of the **Api** project
 1. Add the following contents to the file
 
    ```json
-   {
-     "Host": {
-       "CORS": "https://localhost:44348"
-     }
-   }
+    {
+        "profiles": {
+            "Api": {
+                "commandName": "Project",
+                "commandLineArgs": "start --cors *"
+            }
+        }
+    }
    ```
 
 > [!NOTE]
-> The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why you had to create the file when you created your repo from the template.
+> This file is used to control how Visual Studio will launch the Azure Functions tooling. If you are wanting to use the Azure Functions command line tool then you need a _local.settings.json_ file as describe [on the Azure Functions Core Tools docs](https://docs.microsoft.com/azure/azure-functions/functions-run-local?tabs=windows%2Ccsharp%2Cbash#local-settings-file). The _local.settings.json_ file is listed in the _.gitignore_ file, which prevents this file from being pushed to GitHub. This is because you could store secrets in this file you would not want that in GitHub. This is why you had to create the file when you created your repo from the template.
 
 ### Run the API and web app
 
