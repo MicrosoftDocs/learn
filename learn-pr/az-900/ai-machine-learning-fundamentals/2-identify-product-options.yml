@@ -9,7 +9,7 @@ metadata:
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 5
 azureSandbox: false
 content: |
   [!include[](includes/2-identify-product-options.md)]
