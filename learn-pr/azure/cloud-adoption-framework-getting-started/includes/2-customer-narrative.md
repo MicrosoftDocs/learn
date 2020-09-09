@@ -7,7 +7,7 @@ TODO: Add an image representing innovation & potential
 Tailwind Traders’ Retail Innovation team reports to the companies Chief Technology Officer (CTO), who was the CEO of the acquired ecommerce start up. That team leverages technology to continually redefine Tailwind’s position as a leader in modern commerce. Those technology solutions are the primary hub for interactions with customers. Those solutions impact 60% of global revenue, and produces 30% of gross sales annually. A few examples of those innovations include:
 
 - Boundless commerce: Originally a simple ecommerce solution, this custom-built platform now provides online and offline experiences for customers. Purchases can be made from the platform. But the customer’s viewing history is also used by the mobile app to customize the retail experience with in-store ads, shopping lists, and other interactions.
-- Analytics, AI, and robotics innovation: The team is experimenting with drove delivery, autonomous warehousing, and other AI lead approaches to reduce cost, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and artificial intelligence solutions.
+- Analytics, AI, and robotics innovation: The team is experimenting with drone delivery, autonomous warehousing, and other AI lead approaches to reduce cost, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and artificial intelligence solutions.
 
 ## Information Technology
 
