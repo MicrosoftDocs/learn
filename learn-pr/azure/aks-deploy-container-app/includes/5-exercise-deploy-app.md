@@ -15,7 +15,7 @@ You need to create and push your container image to a container registry to depl
 1. Create variables for the configuration values you'll reuse in this exercise.
 
     ```bash
-    ACR_NAME=ContosoContainerRegistry$RANDOM
+    ACR_NAME=acrContosoVideo$RANDOM
     ```
 
 1. Make a note of the generated container registry name by running the following command and writing down the value. You'll use this value in your manifest files.
