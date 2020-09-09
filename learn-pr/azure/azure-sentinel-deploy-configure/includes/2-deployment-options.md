@@ -1,10 +1,10 @@
 As the Contoso lead system engineer and Azure administrator who is tasked with deploying a proof of concept environment for Azure Sentinel, your first step is to understand its capabilities and deployment considerations.
 
-## What can Contoso do with Azure Sentinel?
+## Use Azure Sentinel to retrieve data and monitor incidents
 
-By deploying connectors from Azure Sentinel to services, you can retrieve data that the management at Contoso is interested in monitoring. Because the data comes from different data sources, Azure Sentinel is ideal for this purpose. After Azure Sentinel retrieves the log data from those services, it can perform data correlation across the data sources, and then you can manage the data using the Log Analytics workspace. 
+By deploying connectors from Azure Sentinel to services, you can retrieve data from different data sources that the management at Contoso is interested in monitoring. After Azure Sentinel retrieves the log data from the services, it performs data correlation across the data sources. You then can use the Log Analytics workspace to manage the data.
 
-Azure Sentiinel can detect incidents in the data from those connected data sources and alert you that something needs your attention. You can get insights into the raw data and potential malicious events and incidents through overviews, dashboards and custom queries. 
+Azure Sentinel can detect incidents in the data from connected data sources and alert you when something needs your attention. You can get insights into the raw data and potential malicious events and incidents through overviews, dashboards, and custom queries. 
 
 Azure Sentinel uses machine learning and AI to perform:
 
