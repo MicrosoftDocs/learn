@@ -1,28 +1,28 @@
 Until now, you've been using superpositions only with real positive amplitudes.
 You might be wondering, why not directly use the probabilities to represent the
 superposition? Well, the ability to have negative and complex amplitudes is one
-of the main ingredients that makes quantum computing work. Let's examine this
+of the main ingredients that makes quantum computing work. Let's examine it
 further.
 
 ## Waves of probabilities
 
 The term *wave function* might be familiar to you (in fact, the `DumpMachine` function you just used names the quantum state as a "wave function").
 
-Physicists often use this term as a synonym to design the quantum state of a system. This
-is because the Schrödinger equation introduced at the beginning of this
+Physicists often use this term as a synonym to design the quantum state of a
+system. It's because the Schrödinger equation introduced at the beginning of
+this
 module has the same mathematical structure as classical wave equations.
 
 ![A diagram showing a wave function and the Schrödinger equation](../media/4-wave.png)
 
-You might've also heard the term "probability wave". In fact, the term
+You might have also heard the term "probability wave". In fact, the term
 *probability amplitude* is inspired directly from the term *amplitude* of a
 wave.
 
-If probability amplitudes of qubits are governed by a wave-like equation, this
-implies that you'll observe many of the different well-known physical
-properties of waves. Quantum algorithms exploit these properties to perform
-calculations. In particular, quantum computers exploit the phenomenon of *wave
-interference*.
+If probability amplitudes of qubits follow a wave-like equation, it implies that
+you'll observe many of the different well-known properties of waves. Quantum
+algorithms exploit these properties to perform calculations. In particular,
+quantum computers exploit the phenomenon of *wave interference*.
 
 ## Complex numbers to describe waves
 
@@ -41,12 +41,17 @@ to interfere, resulting in different effects on the overall state. There are two
     Two waves add up to increase the amplitude of the resulting wave. For example, in our daily experience, when two water waves meet in a pool, we may see a bigger wave when their peaks add up.
 - **Destructive interference**
 
-    Two waves subtract to decrease the amplitude of the resulting wave. Again, in our daily experience, noise-cancelling headphones use an external microphone to catch the noise in the environment. It then reproduces sound waves that have the same magnitude but opposite phase to the noise and plays them in the inner speakers to cancel the noise for the listener. This is using destructive interference for noise cancellation.
+    Two waves subtract to decrease the amplitude of the resulting wave. Again,
+    in our daily experience, noise-cancelling headphones use an external
+    microphone to catch the noise in the environment. It then reproduces sound
+    waves that have the same magnitude but opposite phase to the noise and plays
+    them in the inner speakers to cancel the noise for the listener. This
+    technique is using destructive interference for noise cancellation.
 
 ![Diagram depicting noise cancellation](../media/4-noise-cancellation.png)
 
-Constructive and destructive interference are due to *relative phases* between
-the waves. In the next figure you can see how the relative phase determines the
+Constructive and destructive interferences are due to *relative phases* between
+the waves. In the next figure, you can see how the relative phase determines the
 distance between the peaks of the waves and therefore how they interfere.
 
 ![Diagram showing two waves with relative phases](../media/4-relative-phase.png)
