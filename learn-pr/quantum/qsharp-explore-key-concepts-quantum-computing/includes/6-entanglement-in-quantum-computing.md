@@ -1,5 +1,5 @@
 Another effect that superposition enables is quantum entanglement. In this part,
-you explore this effect, which proves to be a powerful tool in quantum
+you explore this effect, which proves to be a powerful resource in quantum
 computing.
 
 ### Correlations between qubits
