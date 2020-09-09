@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.az-900-describe-azure-cost-management-service-level-agreements
 metadata:
-  description: TBD
+  description: Learn about the factors that influence cost, tools you can use to help estimate and manage your cloud spend, and how Azure's service-level agreements (SLAs) can impact your application design decisions.
   brand: azure
   ms.date: 09/11/2020
   author: tpetchel
@@ -10,9 +10,15 @@ metadata:
   ms.prod: learning-azure
 title: "Azure Fundamentals: Describe Azure cost management and service level agreements"
 summary: |
-  TBD.
+  Migration to the cloud presents new ways to think about your IT expenses. The cloud also removes the burden of supporting IT infrastructure. 
 
-  Take this learning path to help prepare for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
+  As you move to the cloud, you might ask:
+
+  * How much will it cost?
+  * What guarantees does Azure provide around uptime and connectivity?
+  * How do preview services impact my production applications?
+
+  Learn about the factors that influence cost, tools you can use to help estimate and manage your cloud spend, and how Azure's service-level agreements (SLAs) can impact your application design decisions.
 prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
