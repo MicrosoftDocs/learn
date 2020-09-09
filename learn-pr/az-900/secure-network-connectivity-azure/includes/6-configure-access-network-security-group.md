@@ -48,7 +48,7 @@ Here, you run Azure CLI commands to create a Linux VM and install Nginx. After y
 
     To summarize, the script:
 
-    1. Runs `apt-get update` to download the latest package information from the internet. This step helps ensure that the command that follows can locate the latest version of the Nginx package.
+    1. Runs `apt-get update` to download the latest package information from the internet. This step helps ensure that the next command can locate the latest version of the Nginx package.
     1. Installs Nginx.
     1. Sets the home page, */var/www/html/index.html*, to print a welcome message that includes your VM's hostname.
 
@@ -74,13 +74,13 @@ Here, you get the IP address for your VM and attempt to access your web server's
 
     The `--connect-timeout` argument specifies to allow up to five seconds for the connection to occur.
 
-    After five seconds, you see a message similar to this:
+    After five seconds, you see an error message that states that the connection timed out:
 
     ```output
     curl: (28) Connection timed out after 5001 milliseconds
     ```
 
-    This means that the VM was not accessible within the timeout period.
+    This message means that the VM was not accessible within the timeout period.
 
 1. As an optional step, try to access the web server from a browser. To do so:
 
@@ -222,4 +222,4 @@ Now that you've configured network access to port 80, let's try to access the we
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-Nice work. In practice, you can create a standalone network security group that includes the inbound and outbound network access rules you need. If you have multiple VMs that serve the same purpose, you can assign that NSG to each VM at the time you create it. This enables you to control network access to multiple VMs under a single, central set of rules.
+Nice work. In practice, you can create a standalone network security group that includes the inbound and outbound network access rules you need. If you have multiple VMs that serve the same purpose, you can assign that NSG to each VM at the time you create it. This technique enables you to control network access to multiple VMs under a single, central set of rules.

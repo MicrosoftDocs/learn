@@ -1,4 +1,4 @@
-Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. There's too much at risk. For example, a denial of service attack could prevent customers from reaching your website or services and block you from doing business. Or, your website could be defaced, causing damage to your reputation. A data breach could be even worse, as it can ruin hard-earned trust while causing significant personal and financial harm.
+Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. There's too much at risk. For example, a denial of service attack might prevent customers from reaching your website or services and block you from doing business. Or, your website could be defaced, causing damage to your reputation. A data breach would be even worse, as it can ruin hard-earned trust while causing significant personal and financial harm.
 
 ## Meet Tailwind Traders
 
@@ -18,5 +18,5 @@ By the end of this module, you'll able to:
 
 * Identify the various layers that make up a *defense in depth* strategy.
 * Explain how Azure Firewall enables you to control what traffic is allowed on the network.
-* Configure network security groups to filter network traffic to and from Azure resources within an Azure Virtual Network (VNet).
+* Configure network security groups to filter network traffic to and from Azure resources within a Microsoft Azure Virtual Network.
 * Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.

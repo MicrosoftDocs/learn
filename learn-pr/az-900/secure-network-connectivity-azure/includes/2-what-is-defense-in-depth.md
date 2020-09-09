@@ -158,4 +158,4 @@ Your *security posture* is your organization's ability to protect from and respo
     The prevention of unauthorized changes to information at rest (when it is stored) or in transit (when it is being transferred from one place to another, including from a local computer to the cloud). A common approach used in data transmission is for the sender to create a unique fingerprint of the data using a one-way hashing algorithm. The hash is sent to the receiver along with the data. The data's hash is recalculated and compared to the original by the receiver to ensure the data wasn't lost or modified in transit.
 + **Availability**
 
-    Ensure services are functioning and are able to be accessed only by authorized users. *Denial of service attacks* are specifically designed to degrade the availability of a system, impacting its users.
+    Ensure services are functioning and are able to be accessed only by authorized users. *Denial of service attacks* are designed to degrade the availability of a system, impacting its users.

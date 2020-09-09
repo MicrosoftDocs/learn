@@ -32,7 +32,7 @@ You can also combine Azure networking and security services to manage your netwo
 
     Azure Firewall is a fully stateful, centralized network firewall as a service, which provides network and application-level protection across different subscriptions and virtual networks.
 
-+ **Azure Application Gateway WAF and Azure Firewall**
++ **Azure Application Gateway web application firewall and Azure Firewall**
 
     Web application firewall (WAF) is a feature of Application Gateway that provides your web applications with centralized, inbound protection against common exploits and vulnerabilities.
 

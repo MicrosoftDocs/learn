@@ -10,7 +10,7 @@ A [Distributed Denial of Service](https://azure.microsoft.com/services/ddos-prot
 
 [Azure DDoS Protection](https://azure.microsoft.com/services/ddos-protection/?azure-portal=true) (Standard) helps protect your Azure resources from DDoS attacks.
 
-When you combine DDoS Protection with recommended application design practices, you help provide a defense against DDoS attacks. DDoS Protection leverages the scale and elasticity of Microsoft's global network to bring DDoS mitigation capacity to every Azure region. The DDoS Protection service protects your Azure applications by analyzing and discarding DDoS traffic at the Azure network edge, before it can impact your service's availability.
+When you combine DDoS Protection with recommended application design practices, you help provide a defense against DDoS attacks. DDoS Protection utilizes the scale and elasticity of Microsoft's global network to bring DDoS mitigation capacity to every Azure region. The DDoS Protection service protects your Azure applications by analyzing and discarding DDoS traffic at the Azure network edge, before it can impact your service's availability.
 
 This diagram shows network traffic flowing into Azure from both customers and an attacker:
 
@@ -33,7 +33,7 @@ DDoS Protection provides these service tiers:
     Azure's global network is used to distribute and mitigate attack traffic across Azure regions.
 + **Standard**
 
-    The Standard service tier provides additional mitigation capabilities that are tuned specifically to Azure Virtual Network (VNet) resources. DDoS Protection Standard is relatively easy to enable and requires no changes to your applications.
+    The Standard service tier provides additional mitigation capabilities that are tuned specifically to Azure Virtual Network resources. DDoS Protection Standard is relatively easy to enable and requires no changes to your applications.
 
     The Standard tier provides always-on traffic monitoring and real-time mitigation of common network-level attacks. It provides the same defenses that Microsoft's online services use.
 
@@ -51,6 +51,6 @@ The Standard service tier can help prevent:
 + **Protocol attacks**
 
     These attacks render a target inaccessible by exploiting a weakness in the layer 3 and layer 4 protocol stack.
-+ **Resource (application) layer attacks (only with WAF)**
++ **Resource (application) layer attacks (only with web application firewall)**
 
     These attacks target web application packets to disrupt the transmission of data between hosts. You need a web application firewall to protect against L7 attacks. DDoS Protection Standard protects the web application firewall (WAF) from volumetric and protocol attacks.
