@@ -1,7 +1,7 @@
 The Internet of Things (IoT) is the ability for devices to gather and then relay information for data analysis.  Smart devices are equipped with sensors that collect data.  A few common sensors that measure attributes of the physical world include:
 
 - Environmental sensors that capture temperature and humidity levels
-- Barcode, QR code, or OCR scanners
+- Barcode, QR code, or Optical Character Recognition (OCR) scanners
 - Geo-location and proximity sensors
 - Light, color, and infrared sensors
 - Sound and ultrasonic sensors
