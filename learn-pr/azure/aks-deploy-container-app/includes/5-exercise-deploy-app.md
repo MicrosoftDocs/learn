@@ -271,6 +271,10 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
 1. Run the `kubectl get pods` command to check if the pod is running.
 
+    ```bash
+    kubectl get pods
+    ```
+
     The command should output a table similar to the following example.
 
     ```output
