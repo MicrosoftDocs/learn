@@ -1,0 +1,35 @@
+### YamlMime:LearningPath
+uid: learn.az-900-describe-identity-governance-privacy-compliance-features
+metadata:
+  description: TBD
+  brand: azure
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Azure Fundamentals: Describe identity, governance, privacy, and compliance features"
+summary: |
+  TBD.
+
+  Take this learning path to help prepare for [Exam AZ-900: Microsoft Azure Fundamentals](https://docs.microsoft.com/learn/certifications/exams/az-900).
+prerequisites: None
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- data-engineer
+- developer
+- devops-engineer
+- business-analyst
+- business-user
+- solution-architect
+products:
+- azure
+modules:
+- learn.secure-access-azure-identity-services
+- learn.build-cloud-governance-strategy-azure
+- learn.examine-privacy-compliance-data-protection-standards
+trophy:
+  uid: learn.az-900-describe-identity-governance-privacy-compliance-features
