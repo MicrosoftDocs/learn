@@ -24,8 +24,9 @@ After completing this module, you'll be able to:
 
 If you don't have these tools installed, we recommend that you go through the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) to get set up and learn the basics.
 
-You'll also need basic knowledge of linear algebra and complex numbers. These
-tutorials can help you understand the basics:
+You also need basic knowledge of linear algebra and complex numbers. These
+Python tutorials in the form of Jupyter notebooks can help you to understand the
+basics. You can run them locally or online.
 
 - [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra?azure-portal=true)
 - [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic?azure-portal=true)
