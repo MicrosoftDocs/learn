@@ -53,7 +53,7 @@ To provision HDInsight HBase with the new experience on Azure Management Portal,
 	- **Secure Shell(SSH) username**: Enter the SSH log in user (default:sshuser)
 	- **Use cluster log in password for SSH**: Check the box to use the same password for both SSH logins and Ambari Logins etc.
 
-		![Define Azure HDInsight settings in the Azure Portal.](../media/define-hdinsight-settings.png)
+		[![Define Azure HDInsight settings in the Azure Portal.](../media/define-hdinsight-settings.png)](../media/define-hdinsight-settings.png#lightbox)
 
 1. Click **Next:Storage** to launch the Storage Tab and populate the below fields
 	- **Primary Storage Type**: Azure Storage.

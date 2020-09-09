@@ -4,7 +4,7 @@ Below is a sample architecture pattern that customers have used with HDInsight H
 
 Highly available low latency Key value stores are used in messaging and content management systems. The global availability of HDInsight HBase with real-time replication capabilities has been used to create a real time highly available Key value stores  data store.
 
-Example of such implementations could involve chat messaging systems, content management systems, and webtables.
+Example of such implementations could involve chat messaging systems, content management systems, and web tables.
 
 ![Highly available key value store architecture](../media/highly-available-key-value-stores.png)   
 

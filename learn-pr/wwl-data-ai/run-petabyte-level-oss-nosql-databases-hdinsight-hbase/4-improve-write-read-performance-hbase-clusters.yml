@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.improve-write-read-performance-of-hbase-clusters
-title: Improve the Write and Read performance of HBase clusters
+title: Improve the write and read performance of HBase clusters
 metadata:
-  title: Improve the Write and Read performance of HBase clusters
-  description: "Improve the Write and Read performance of HBase clusters"
-  ms.date: 09/10/2020
+  title: Improve the write and read performance of HBase clusters
+  description: "Improve the write and read performance of HBase clusters"
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
