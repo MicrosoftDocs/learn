@@ -4,7 +4,7 @@ You can create and configure Azure virtual networks from the Azure portal, Azure
 
 When you create an Azure virtual network, you configure a number of basic settings. You'll have the option to configure advanced settings, such as multiple subnets, distributed denial of service (DDoS) protection, and service endpoints.
 
-![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/create-virtual-network.PNG)
+![Screenshot of the Azure portal showing an example of the Create virtual network pane fields.](../media/create-virtual-network.png)
 
 You'll configure the following settings for a basic virtual network:
 
@@ -44,7 +44,7 @@ You'll configure the following settings for a basic virtual network:
 
 - **Distributed Denial of Service (DDoS) protection**
 
-    You can select either Basic or Standard DDoS protection. Standard DDoS Protection is a premium service. The [Azure DDoS Protection Standard](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview) provides for more information on Standard DDoS protection.
+    You can select either Basic or Standard DDoS protection. Standard DDoS Protection is a premium service. The [Azure DDoS Protection Standard](https://docs.microsoft.com/azure/virtual-network/ddos-protection-overview?azure-portal=true) provides for more information on Standard DDoS protection.
 
 - **Service Endpoints**
 
@@ -66,13 +66,13 @@ After creating a virtual network, you can then define further settings. These in
 
 You can also amend the service endpoints.
 
-![Screenshot of the Azure portal showing an example pane for editing virtual network settings.](../media/virtual-network-additional-settings.PNG)
+![Screenshot of the Azure portal showing an example pane for editing virtual network settings.](../media/virtual-network-additional-settings.png)
 
 ### Configure virtual networks
 
 When you have created a virtual network, you can change any further settings from the Virtual Networks pane in the Azure portal. Alternatively, you can use PowerShell commands or commands in Cloud Shell to make changes.
 
-![Screenshot of the Azure portal showing an example pane for configuring a virtual network.](../media/configure-virtual-network.PNG)
+![Screenshot of the Azure portal showing an example pane for configuring a virtual network.](../media/configure-virtual-network.png)
 
 You can then review and change settings in further sub-panes. These settings include:
 
