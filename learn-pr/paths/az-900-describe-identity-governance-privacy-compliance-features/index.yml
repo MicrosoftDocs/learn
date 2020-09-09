@@ -28,6 +28,7 @@ roles:
 products:
 - azure
 modules:
+- learn.azure.intro-to-azure-fundamentals
 - learn.secure-access-azure-identity-services
 - learn.build-cloud-governance-strategy-azure
 - learn.examine-privacy-compliance-data-protection-standards
