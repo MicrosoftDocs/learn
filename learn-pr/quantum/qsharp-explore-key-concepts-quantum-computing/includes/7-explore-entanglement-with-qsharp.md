@@ -117,7 +117,7 @@ thousands of qubits, if the classical part of the code can be run in a
 reasonable time. To use a Resources Estimator:
 
 1. Run your program from the command line selecting the `ResourcesEstimator` as
-   yout simulator.
+   your simulator.
 
    ```dotnetcli
    dotnet run --simulator ResourcesEstimator
@@ -142,27 +142,22 @@ reasonable time. To use a Resources Estimator:
    BorrowedWidth   0       0
    ```
 
-   There are two columns in the output. This is because Q# programs may consist
-   in the sequential application of many operations. The column `Sum` displays
-   the total sum of the resources used by the complete run of the program. The
-   column `Max` displays the maximum number of uses of a resource by any single
-   operation. For example, the `Width` represents the number of qubits used by a
-   program or operation. However, different operations in a program may use a
-   different number of qubits. Imagine a program that consist of two operations
-   `OperationA` and `OperationB` that are run sequentially. `OperationA` uses
-   four qubits while `OperationB` needs six. The output for `Width` for this
-   program will be `10` for `Sum` (4+6) and `6` for `Max` since the operation
-   that uses most qubits uses six qubits.
+   > [!NOTE] There are two columns in the output, but for the moment you don't need to
+   > worry about it since both columns will display the same content. This might
+   > not be true for some advanced applications of the QDK out of the scope of
+   > this module.
 
-   In the previous example, the program only contains one operation, so both
-   columns are equal. It says that you need 1 CNOT gate, 1 Clifford gate to
-   apply `H` and 2 measurements to obtain the qubits results. The width of the
-   circuit is 2 since you only used two qubits. For this example, it was very
-   simple to know how many resources you needed without having to use
-   `ResourcesEstimator`. But Q# is a high-level programming language, and for
-   most programs it's virtually impossible to know directly how many resources
-   they need. You will find that `ResourcesEstimator` is a very useful tool as
-   you advance in your path to become a Q# quantum developer.
+   In the previous example, the program only contains one operation. It says
+   that you need 1 CNOT gate, 1 Clifford gate to apply `H` and 2 measurements to
+   obtain the qubits results. The width of the circuit is the number of qubits
+   needed to run a program. It's 2 since you only used two qubits.
+
+   For this example, it was very simple to know how many resources you needed
+   without having to use `ResourcesEstimator`. But Q# is a high-level
+   programming language, and for most programs it's virtually impossible to know
+   directly how many resources they need. You will find that
+   `ResourcesEstimator` is a very useful tool as you advance in your path to
+   become a Q# quantum developer.
 
    >[!NOTE]
    > Clifford gates are a basic kind of quantum operation and are useful
@@ -172,7 +167,7 @@ reasonable time. To use a Resources Estimator:
    > learn more about them in the [Wikipedia page on Clifford
    > gates](https://en.wikipedia.org/wiki/Clifford_gates).
 
-   To learn more about `ResourcesEstimator` and get a detailed description of each of
-   the parameters of the output and more estimation tools, see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true) in the user guide.
+To learn more about `ResourcesEstimator` and get a detailed description of each of
+the parameters of the output and more estimation tools, see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true) in the user guide.
 
-   In the next part, you'll explore two different quantum algorithms that make use of superposition, interference, and entanglement to outperform classical computers.
+In the next part, you'll explore two different quantum algorithms that make use of superposition, interference, and entanglement to outperform classical computers.

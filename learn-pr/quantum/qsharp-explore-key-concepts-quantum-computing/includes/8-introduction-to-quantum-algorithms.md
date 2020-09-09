@@ -107,9 +107,12 @@ best known classical algorithm is the *general number field sieve* algorithm.
 Shor's algorithm takes advantage of the fact that the factoring problem can be
 transformed to a problem that consists on finding the period of a periodic
 function. This is known as the order finding problem. Shor's algorithm uses
-superposition and interference to apply *iterative phase estimation*, a kind of
-algorithm that finds a complex phase of an operation that enables you to find
-the period of the function.
+superposition and interference to apply to apply the quantum Fourier transform -
+a version of the discrete Fourier transform for quantum computers - to find the
+period of the function faster than any known classical algorithm. Some version
+of the algorithm use instead *iterative phase estimation*, a kind of algorithm
+that finds a complex phase of an operation that enables you to find the period
+of the function.
 
 ![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.svg)
 ![Diagram explaining Shor's algorithm](../media/8-shor2.svg)
@@ -122,7 +125,8 @@ The algorithm consists of three parts:
    finding the period $r$ of a periodic function $f(x)=a^x \mod N$, where $a$ is
    a random number whose greater common divisor with $N$ is $1$.
 
-1. A quantum part that finds the period $r$ using iterative phase estimation.
+1. A quantum part that finds the period $r$ using the quantum Fourier transform
+   or iterative phase estimation.
 
 Shor's algorithm succeeds in finding a prime factor with high probability but
 it can fail. However, repeating the algorithm several times until it finds the
