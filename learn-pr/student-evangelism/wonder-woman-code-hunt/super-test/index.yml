@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.wonder-woman-python-create-personality-test
+uid: learn.student-evangelism.python-quiz-builder
 metadata:
   title: Create a test to determine your super personality by using Python and Visual Studio Code
   description: Which WONDER WOMAN 1984 character are you most like? Use the popular programming language Python to build a personality test inspired by WONDER WOMAN 1984 and share it with your friends. This lesson will teach you the basics of booleans, commands, and conditionals.
@@ -28,13 +28,13 @@ roles:
 products:
   - vs-code
 units:
-- learn.student-evangelism.wonder-woman-python-create-personality-test.introduction
-- learn.student-evangelism.wonder-woman-python-create-personality-test.set-up-visual-studio-code
-- learn.student-evangelism.wonder-woman-python-create-personality-test.create-test-1
-- learn.student-evangelism.wonder-woman-python-create-personality-test.create-test-2
-- learn.student-evangelism.wonder-woman-python-create-personality-test.create-test-3
-- learn.student-evangelism.wonder-woman-python-create-personality-test.score-test
-- learn.student-evangelism.wonder-woman-python-create-personality-test.knowledge-check
-- learn.student-evangelism.wonder-woman-python-create-personality-test.summary
+- learn.student-evangelism.python-quiz-builder.introduction
+- learn.student-evangelism.python-quiz-builder.set-up-visual-studio-code
+- learn.student-evangelism.python-quiz-builder.create-test-1
+- learn.student-evangelism.python-quiz-builder.create-test-2
+- learn.student-evangelism.python-quiz-builder.create-test-3
+- learn.student-evangelism.python-quiz-builder.score-test
+- learn.student-evangelism.python-quiz-builder.knowledge-check
+- learn.student-evangelism.python-quiz-builder.summary
 badge:
-  uid: learn.student-evangelism.wonder-woman-python-create-personality-test.badge
+  uid: learn.student-evangelism.python-quiz-builder.badge
