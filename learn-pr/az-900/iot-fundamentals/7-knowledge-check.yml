@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: "IoT Hub is not an IoT device management solution."
     - content: "IoT Central"
-      isCorrect: false
+      isCorrect: true
       explanation: "IoT Central quickly creates a web-based management portal to enable reporting and communication with IoT devices."
     - content: "Azure Sphere"
       isCorrect: true
