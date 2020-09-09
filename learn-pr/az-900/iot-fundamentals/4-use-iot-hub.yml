@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.languages.iot-fundamentals.use-iot-hub
+uid: learn.azure.iot-fundamentals.use-iot-hub
 title: Use IoT Hub
 metadata:
   title: Use IoT Hub to receive messages from IoT devices

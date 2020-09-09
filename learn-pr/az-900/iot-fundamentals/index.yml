@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.languages.iot-fundamentals
+uid: learn.azure.iot-fundamentals
 metadata:
   title: Choose the best Azure IoT service for your application
   description: Examine Azure's IoT services choose the right service for your scenario.
@@ -23,14 +23,14 @@ roles:
 products:
 - dotnet
 units:
-- learn.languages.iot-fundamentals.introduction
-- learn.languages.iot-fundamentals.identify-product-options
-- learn.languages.iot-fundamentals.analyze-decision-criteria
-- learn.languages.iot-fundamentals.use-iot-hub
-- learn.languages.iot-fundamentals.use-iot-central
-- learn.languages.iot-fundamentals.use-azure-sphere
-- learn.languages.iot-fundamentals.knowledge-check
-- learn.languages.iot-fundamentals.summary
+- learn.azure.iot-fundamentals.introduction
+- learn.azure.iot-fundamentals.identify-product-options
+- learn.azure.iot-fundamentals.analyze-decision-criteria
+- learn.azure.iot-fundamentals.use-iot-hub
+- learn.azure.iot-fundamentals.use-iot-central
+- learn.azure.iot-fundamentals.use-azure-sphere
+- learn.azure.iot-fundamentals.knowledge-check
+- learn.azure.iot-fundamentals.summary
 
 badge:
-  uid: learn.languages.iot-fundamentals.badge
+  uid: learn.azure.iot-fundamentals.badge
