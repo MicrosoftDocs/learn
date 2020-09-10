@@ -45,7 +45,7 @@ Subscriptions are a unit of management, billing, and scale within Azure. They pl
 - Establish a dedicated connectivity subscription in the platform management group to host an Azure Virtual WAN hub, private domain name system (DNS), ExpressRoute circuit, and other networking resources. A dedicated subscription ensures that all foundation network resources are billed together and isolated from other workloads.
 - Avoid a rigid subscription model, and opt instead for a set of flexible criteria to group subscriptions across the organization. This flexibility ensures that as your organization's structure and workload composition changes, you can create new subscription groups instead of using a fixed set of existing subscriptions. One size doesn't fit all for subscriptions. What works for one business unit might not work for another. Some applications might coexist within the same landing zone subscription while others might require their own subscription.
 
-***Considerations***
+**Considerations:**
 
 - Subscriptions serve as boundaries for assigning Azure policies. For example, secure workloads such as Payment Card Industry (PCI) workloads typically require additional policies to achieve compliance. Instead of using a management group to group workloads that require PCI compliance, you can achieve the same isolation with a subscription. This way, you won't have too many management groups with a small number of subscriptions.
 - Subscriptions serve as a scale unit so that component workloads can scale within the platform subscription limits. Make sure to consider subscription resource limits during your workload design sessions.
@@ -56,7 +56,7 @@ Subscriptions are a unit of management, billing, and scale within Azure. They pl
 
 Each Azure region contains a finite number of resources. When you consider an enterprise-scale Azure adoption that involves large resource quantities, ensure that sufficient capacity and SKUs are available and the attained capacity can be understood and monitored.
 
-***Recommendations***
+**Recommendations:**
 
 - Use subscriptions as scale units, and scale out resources and subscriptions as required. Your workload can then use the required resources for scaling out, when needed, without hitting subscription limits in the Azure platform.
 - Use reserved instances to prioritize reserved capacity in required regions. Then your workload will have the required capacity even when there's a high demand for that resource in a specific region.
@@ -64,7 +64,7 @@ Each Azure region contains a finite number of resources. When you consider an en
 - Raise support requests for quota increase as a part of subscription provisioning (for example, total available VM cores within a subscription). This approach ensures your quota limits are set before your workloads require going over the default limits.
 - Ensure required services and features are available within the chosen deployment regions.
 
-***Considerations***
+**Considerations:**
 
 - Consider limits and quotas within the Azure platform for each service that your workloads require
 - Consider the availability of required SKUs within chosen Azure regions. For example, new features might be available only in certain regions. The availability of certain SKUs for given resources such as VMs might be different from one region to another.
@@ -74,12 +74,12 @@ Each Azure region contains a finite number of resources. When you consider an en
 
 Cost transparency across a technical estate is a critical management challenge faced by every large enterprise organization. This section explores key aspects associated with how cost transparency can be achieved across large Azure environments.
 
-***Recommendations***
+**Recommendations:**
 
 - Use Azure Cost Management + Billing for cost aggregation. Make it available to application owners.
 - Use Azure resource tags for cost categorization and resource grouping. Using tags allows you to have a chargeback mechanism for workloads that share a subscription or for a given workload that spans across multiple subscriptions.
 
-***Considerations***
+**Considerations:**
 
 - Consider a potential need for chargeback models where shared platform as a service (PaaS) resources are concerned, such as Azure App Service Environment and Azure Kubernetes Service, which might need to be shared to achieve higher density.
 - Use a shutdown schedule for nonproduction workloads to optimize costs.

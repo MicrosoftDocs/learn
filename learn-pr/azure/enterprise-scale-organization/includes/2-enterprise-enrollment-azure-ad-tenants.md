@@ -77,7 +77,7 @@ Azure AD is also used by software as a service applications such as Microsoft 36
 
 Ask basic security questions during the Azure AD design phase, such as how your organization manages credentials and how it controls human, application, and programmatic access.
 
-***Recommendations***
+**Recommendations:**
 
 - Use Azure AD seamless single sign-on based on the selected planning topology.
 - If your organization doesn't have an identity infrastructure, start by implementing an Azure-AD-only identity deployment. Such deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices.

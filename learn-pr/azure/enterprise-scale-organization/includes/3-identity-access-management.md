@@ -24,7 +24,7 @@ When planning for role-based access, use custom RBAC role definitions within the
 
 ### Identity and access management design recommendations and considerations
 
-***Recommendations***
+**Recommendations:**
 
 - Use Azure AD RBAC to manage data-plane access to resources, where possible. Examples are Azure Key Vault, a storage account, or a SQL Database.
 - Deploy Azure AD conditional-access policies for any user with rights to Azure environments. Doing so provides another mechanism to help protect a controlled Azure environment from unauthorized access.
