@@ -8,7 +8,6 @@ metadata:
   ms.author: scaddie
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
-  ROBOTS: NOINDEX
 title: Exercise - Implement a GitHub Action to build and deploy to ACR and AKS
 durationInMinutes: 1
 content: |

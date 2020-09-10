@@ -14,8 +14,9 @@ abstract: |
   In this module, you will:
   - Deploy an existing ASP.NET Core microservices app to AKS.
   - Review some key DevOps concepts.
-  - Create a GitHub Action to deploy changes to the AKS cluster.
-  - Implement a minor change to the SPA and verify it gets deployed to your AKS cluster.
+  - Create a GitHub Action to build coupon service changes.
+  - Create a GitHub Action to deploy coupon service changes to AKS.
+  - Modify the coupon service and verify its deployment to AKS.
 prerequisites: |
   - Familiarity with DevOps concepts
   - Access to an Azure subscription with Owner privilege

@@ -38,11 +38,11 @@ There are two key reasons here:
 
 By routinizing the deployment process, getting out a new release becomes something that can be done in an almost continuous way and this is key to deliver value to the business or customer as fast as possible.
 
-The other key idea behind DevOps is to make it easy to apply the [Scientific Method](https://en.wikipedia.org/wiki/Scientific_method) to guide the software development process. The Scientific Method is based on hypothesis, observation, experimentation, measurement and repeating the process. This is a know process to learn effectively.
+The other key idea behind DevOps is to make it easy to apply the [Scientific Method](https://wikipedia.org/wiki/Scientific_method) to guide the software development process. The Scientific Method is based on hypothesis, observation, experimentation, measurement and repeating the process. This is a know process to learn effectively.
 
 DevOps aims to shorten the cycle time so it's easy (that is, not expensive) to make experiments and verify an hypothesis by measuring some key values and decide if the results improve on what you expect or not, based on actual measurements and not just vague ideas or a hunch.
 
-What kind of hypothesis are we talking about here? For example, a business hypothesis could be, "If we show this call out in the home page we're going to get higher [conversion](https://en.wikipedia.org/wiki/Conversion_marketing)". A technical hypothesis could be something like "If we change this key component, the e-commerce response time should improve by at least 10%".
+What kind of hypothesis are we talking about here? For example, a business hypothesis could be, "If we show this call out in the home page we're going to get higher [conversion](https://wikipedia.org/wiki/Conversion_marketing)". A technical hypothesis could be something like "If we change this key component, the e-commerce response time should improve by at least 10%".
 
 Applying DevOps practices is an effective way to improve software quality and learn faster. This also means that getting metrics from your software operation is a key factor in the DevOps mindset.
 

@@ -163,6 +163,8 @@ Create a GitHub Action for the build with the following steps:
 
 Create a GitHub Action for the deployment with the following steps:
 
+1. Select the **Actions** tab again, select the **New workflow** button, and select the **set up a workflow yourself** link.
+
 1. Replace the YAML in the editor with the following YAML:
 
     ```yml
@@ -249,10 +251,10 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
     The preceding code logs the coupon code being applied.
 1. Select the **Commit directly to the `main` branch** radio button and select the **Commit changes** button.
 
-    The build workflow is triggered automatically. If the build completes successfully, you'll see a variation of the following output in the **Actions** tab:
+    The build workflow is triggered automatically. You can track the progress of the build in real-time by selecting the **Actions** tab, selecting the most recent workflow run listed, and selecting the **build-and-push-docker-image** task. If the build completes successfully, you'll see a variation of the following:
 
     :::image type="content" source="../media/4-implement-github-action/eshop-build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-implement-github-action/eshop-build-workflow-success.png":::
-1. Edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
+1. On the **Code** tab, edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
     ```yml
     apiVersion: v2
@@ -286,37 +288,38 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
     kubectl get pods -w
     ```
 
-    :::image type="content" source="../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/replacing-pods.png":::
+    A variation of the following output appears:
 
     ```console
-    NAME                              READY   STATUS    RESTARTS   AGE
-    backgroundtasks-c4fdf75bb-kz9sw   1/1     Running   4          41m
-    basket-78bdff857f-zlzhh           1/1     Running   4          40m
-    basketdata-66d657d89d-8sgc5       1/1     Running   0          40m
-    catalog-569786957c-cn49j          1/1     Running   6          39m
-    coupon-6bb646c97f-494f8           1/1     Running   0          7m51s
-    identity-556cb7b974-657ww         1/1     Running   7          38m
-    nosqldata-5ccc5d7747-fb7kn        1/1     Running   0          38m
-    ordering-6c456f5d4c-ckz7v         1/1     Running   6          37m
-    payment-7677755767-4dgqb          1/1     Running   1          37m
-    rabbitmq-7877fcd685-bbq46         1/1     Running   0          37m
-    seq-669f9cf486-ldxkk              1/1     Running   0          36m
-    signalr-64d9c95564-nkcsh          1/1     Running   0          36m
-    sqldata-6f8c8c577-bl64h           1/1     Running   0          35m
-    webshoppingagg-78445b66f5-hm58x   1/1     Running   0          35m
-    webspa-64786f994f-tttqg           1/1     Running   0          34m
-    webstatus-8887f6f55-mnm97         1/1     Running   0          34m
+    NAME                              READY   STATUS              RESTARTS   AGE
+    backgroundtasks-c4fdf75bb-2zfpl   1/1     Running             1          31m
+    basket-78bdff857f-s9x9p           1/1     Running             1          31m
+    basketdata-66d657d89d-ksr54       1/1     Running             0          31m
+    catalog-569786957c-kww64          1/1     Running             3          31m
+    coupon-5b9597995-7s4hh            1/1     Running             1          31m
+    coupon-74fd48bbd-rqgfd            0/1     ContainerCreating   0          22s
+    identity-556cb7b974-j84hh         1/1     Running             2          31m
+    nosqldata-5ccc5d7747-h79fw        1/1     Running             0          31m
+    ordering-6c456f5d4c-xrjbx         1/1     Running             2          31m
+    payment-7677755767-s6s98          1/1     Running             1          31m
+    rabbitmq-7877fcd685-5drsq         1/1     Running             0          31m
+    seq-669f9cf486-46q6r              1/1     Running             0          31m
+    signalr-64d9c95564-b2wjx          1/1     Running             1          31m
+    sqldata-6f8c8c577-2vckd           1/1     Running             0          31m
+    webshoppingagg-78445b66f5-gpllh   1/1     Running             0          31m
+    webspa-64786f994f-xmsc4           1/1     Running             0          31m
+    webstatus-8887f6f55-bvq76         1/1     Running             0          31m
     ```
 
-    In the preceding image, you can see that a new `coupon` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
+    In the preceding output, you can see that a new `coupon` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible. Press <kbd>Ctrl+C</kbd> to terminate `kubectl`.
 
-1. Run the following command to check the `coupon` service deployment history:
+1. Run the following command to check the coupon service deployment history:
 
     ```bash
     helm history eshoplearn-coupon
     ```
 
-    The history shows the new `coupon` service has been deployed.
+    The history shows the new coupon service version has been deployed.
 
     ```console
     REVISION        UPDATED                         STATUS          CHART           APP VERSION     DESCRIPTION
@@ -324,13 +327,19 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
     2               Thu Sep 10 19:51:10 2020        deployed        coupon-0.1.0    1.1.0           Upgrade complete
     ```
 
-1. Refresh the browser to see the changes, as shown in the next image:
+1. Run the following command:
 
-    :::image type="content" source="../media/4-implement-github-action/changes-deployed.png" alt-text="WebSPA home page view, showing the 'promotion message'" border="true" lightbox="../media/4-implement-github-action/changes-deployed.png":::
+    ```bash
+    cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
+    ```
+
+<!-- TODO - Have the student buy a product using a coupon code before checking the Seq logs page -->
+
+:::image type="content" source="../media/4-implement-github-action/seq-log.png" alt-text="A screen capture of the Seq log output.":::
 
 ## Roll back a deployment
 
-During production issues, one common mitigation is to rollback a deployment to a known good deployment. Use the following command to rollback from version 1.1.0 to 1.0.0.
+During production issues, one common mitigation is to revert a deployment to a known good deployment. Use the following command to roll back from version 1.1.0 to 1.0.0.
 
 ```bash
 helm rollback eshoplearn-coupon
@@ -342,7 +351,7 @@ The deployment history confirms that everything is back to normal:
 Rollback was a success! Happy Helming!
 ```
 
-> **NOTE**
+> [!NOTE]
 > In a real-life scenario, you'd include at least one test step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also, the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
 >
 > You'd usually also have the pipeline triggered on each PR, to make sure the PR builds correctly and tests run successfully, before reviewing the PR.
