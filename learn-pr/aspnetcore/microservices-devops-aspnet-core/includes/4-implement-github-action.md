@@ -163,7 +163,7 @@ Create a GitHub Action for the build with the following steps:
 
 Create a GitHub Action for the deployment with the following steps:
 
-1. Add the Action specification by pasting the following YAML into the editor:
+1. Replace the YAML in the editor with the following YAML:
 
     ```yml
     name: eShop deploy
@@ -233,7 +233,7 @@ Create a GitHub Action for the deployment with the following steps:
     - `REGISTRY_LOGIN_SERVER`
 1. Commit the *deploy.yml* file directly to the `main` branch.
 
-These two GitHub Action definitions will be part of the repository from now on. If you want to make any changes, update the appropriate file locally and push to `main` or create a pull request (PR). If you create a PR, the Action will be triggered when merging to `main`.
+These two GitHub Action definitions will be part of the repository from now on. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
 
 ## Modify the Coupon.API microservice
 
