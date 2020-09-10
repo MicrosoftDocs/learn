@@ -1,21 +1,22 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.azure.intro-to-java-azure.6-knowledge-check
 metadata:
-  title: Check your Knowledge
-  description: knowledge check
-  ms.date: 
+  title: Check your knowledge
+  description: Knowledge check
+  ms.date: 9/10/2020
   author: SandraAhlgrimm
   ms.author: sakriema
-  ms.topic: introduction-to module
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Check your Knowledge
+title: Check your knowledge
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-knowledge-check.md)]
+  [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
   - content: "Question1"
+    choices:
     - content: "Answer1"
       isCorrect: false
       explanation: "Explanation1"
@@ -29,6 +30,7 @@ quiz:
       isCorrect: true
       explanation: "Explanation4"
   - content: "Question2"
+    choices:
     - content: "Answer1"
       isCorrect: false
       explanation: "Explanation1"

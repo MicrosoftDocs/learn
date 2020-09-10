@@ -1,28 +1,43 @@
 ### YamlMime:Module
-uid: 
+uid: learn.azure.intro-to-java-azure
 metadata:
   title: Introduction to Java on Azure
-  description: 
-  ms.date: 
-  author: 
-  ms.author: 
+  description: This field's contents are not rendered anywhere, but it's used for SEO and searches on the Browse Learn page. It should contain 2-4 complete sentences, with a focus on key search terms that should surface this module as a result.
+  ms.date: 9/10/2020
+  author: SandraAhlgrimm
+  ms.author: sakriema
   ms.topic: interactive-tutorial
-  ms.prod: 
-title: 
-summary: 
+  ms.prod: learning-azure
+title: Introduction to Java on Azure
+summary: See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master
 abstract: |
- In this module, you will begin to discover: 
- - 
+ See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives?branch=master. 
+
+ By the end of this module, you will be able to:
+ - One
+ - Two
+ - Three
 prerequisites: |
- - 
-iconUrl: https://docs.microsoft.com/media/learn/module.svg
+ See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master.
+
+ - One
+ - Two
+ - Three
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- student
+- developer
+- administrator
 products:
-- 
+- azure
 units:
-- 
+- learn.azure.intro-to-java-azure.1-introduction
+- learn.azure.intro-to-java-azure.2-role
+- learn.azure.intro-to-java-azure.3-app-types
+- learn.azure.intro-to-java-azure.4-deployment-opportunities
+- learn.azure.intro-to-java-azure.5-sample-deployment
+- learn.azure.intro-to-java-azure.6-knowledge-check
+- learn.azure.intro-to-java-azure.7-summary
 badge:
-  uid: 
+  uid: learn.azure.intro-to-java-azure.badge

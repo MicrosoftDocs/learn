@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: 
+uid: learn.azure.intro-to-java-azure.2-role
 metadata:
   title: The role of Java at Microsoft
   description: Proof of Javas importance with examples
-  ms.date: 
+  ms.date: 9/10/2020
   author: SandraAhlgrimm
   ms.author: sakriema
-  ms.topic: introduction-to module
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: The role of Java at Microsoft
 durationInMinutes: 4
 content: |
-  [!include[](includes/1-role-of-java.md)]
+  [!include[](includes/2-role.md)]
