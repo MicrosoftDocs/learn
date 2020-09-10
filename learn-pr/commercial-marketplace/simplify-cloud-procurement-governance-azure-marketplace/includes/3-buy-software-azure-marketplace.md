@@ -54,7 +54,7 @@ You can find the applicable terms and conditions on the product detail page unde
 
 Software vendors can add amendments to the Standard Contract. If you've previously reviewed and accepted terms of the Standard Contract, you can save time by only reviewing the amendment.
 
-You can also ask the provider to include a custom amendment for your specific needs. A custom amendment is a change to the Standard Contract negotiated between the customer and the software vendor that only applies to that purchase. You can review the custom amendment when acquiring the software application in the Azure Portal.
+You can also ask the provider to include a custom amendment for your specific needs. A custom amendment is a change to the Standard Contract negotiated between the customer and the software vendor that only applies to that purchase. You can review the custom amendment when acquiring the software application in the Azure portal.
 
 ### Negotiating custom deals with software providers
 
@@ -62,11 +62,11 @@ When procuring software, you might want to negotiate custom pricing or special c
 
 A private offer gives you, and the software vendor, the ability to negotiate special terms, custom pricing, and special product configurations. For example, a vendor can customize an Azure Virtual Machine, an Azure Application or a Software as a Service subscription to your specific needs using a private offer.
 
-Once a vendor has created a private offer for you, you can view the offer in the Azure Marketplace experience in the Azure Portal. Private offers are not visible in the online store.
+Once a vendor has created a private offer for you, you can view the offer in the Azure Marketplace experience in the Azure portal. Private offers are not visible in the online store.
 
-Log into the Azure Portal and navigate to the Azure Marketplace, where you will see a notification at the top of the screen and a link to view your private offers.
+Log into the Azure portal and navigate to the Azure Marketplace, where you will see a notification at the top of the screen and a link to view your private offers.
 
-![Screenshot of a private offer notification in the Azure Marketplace experience in the Azure Portal](../media/9-privateoffer-notif.png)
+![Screenshot of a private offer notification in the Azure Marketplace experience in the Azure portal](../media/9-private-offer-notification.png)
 
 ### Consolidated invoicing
 
@@ -80,9 +80,9 @@ You want to make sure that any solution you purchase for your cloud infrastructu
 
 With Azure Marketplace, it’s easy to find solutions that accrue towards your company’s Microsoft Azure Consumption Commitment.
 
-If your organization has signed a Microsoft Azure Consumption Commitment, you can filter for Azure benefit eligible software in the Azure Portal marketplace experience. Eligible offers will also have an “Azure benefit eligible” badge on the product details page.
+If your organization has signed a Microsoft Azure Consumption Commitment, you can filter for Azure benefit eligible software in the Azure portal marketplace experience. Eligible offers will also have an “Azure benefit eligible” badge on the product details page.
 
-![Screenshot of Azure benefit eligible filter in the Azure Marketplace experience in the Azure Portal](../media/10-macc.png)
+![Screenshot of Azure benefit eligible filter in the Azure Marketplace experience in the Azure portal](../media/10-macc.png)
 
 ![Screenshot of Azure benefit eligible badge in Azure Marketplace](../media/21-macc-eligible-detail.png)
 
@@ -102,7 +102,7 @@ If you want to get a solution from the Azure Marketplace online store, you'll ne
 
 Once you log in, you'll be re-directed to the product in the Azure portal to complete your purchase.
 
-![Screenshot of user redirection to Azure Portal after signing into their Azure account from the Azure Marketplace online store](../media/14-taking-you-to-sql.png)
+![Screenshot of user redirection to Azure portal after signing into their Azure account from the Azure Marketplace online store](../media/14-taking-you-to-sql.png)
 
 ## Summary
 

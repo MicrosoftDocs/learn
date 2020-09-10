@@ -8,21 +8,21 @@ Let’s start by reviewing what you find about using Azure Marketplace to find a
 
 Azure Marketplace has thousands of software products, certified to run on Azure, built by Microsoft and a vast network of industry leading technology companies. You can also use Azure Marketplace to connect with certified Microsoft partners who provide consulting services to help with cloud migration, systems integration, data management and analytics, and other cloud projects.
 
-Azure Marketplace is a part of Azure and can be accessed from the Azure Portal or the Azure Marketplace online store.
+Azure Marketplace is a part of Azure and can be accessed from the Azure portal or the Azure Marketplace online store.
 
-To access Azure Marketplace from the Azure Portal, log in with your Azure account credentials at <https://portal.azure.com> and click “create a resource” on the homepage. This will open the Azure Marketplace experience in the Azure Portal, where you’ll be able to start browsing the catalog of software and services.
+To access Azure Marketplace from the Azure portal, log in with your Azure account credentials at <https://portal.azure.com> and click “create a resource” on the homepage. This will open the Azure Marketplace experience in the Azure portal, where you’ll be able to start browsing the catalog of software and services.
 
-![Screenshot of the "create a resource" button on the home page of the Azure Portal](../media/1-azure-portal-homepage-create-resource.png)
+![Screenshot of the "create a resource" button on the home page of the Azure portal](../media/1-azure-portal-homepage-create-resource.png)
 
-![Screenshot of the Azure Marketplace experience in the Azure Portal](../media/2-azure-marketplace-azure-portal1.png)
+![Screenshot of the Azure Marketplace experience in the Azure portal](../media/2-azure-marketplace-azure-portal-1.png)
 
 You can also get to Azure Marketplace by visiting the online store at <https://azuremarketplace.microsoft.com>. In addition to software and services found in the Azure Marketplace experience in the Azure portal, the online store includes consulting services from certified Microsoft partners, including industry leading systems integrators. You can browse the consulting services section of the online store by selecting “consulting services” from the menu at the top of the page.
 
 ![Screenshot of the consulting services section in the Azure Marketplace online store](../media/3-consulting-services-store.png)
 
-Azure Marketplace streamlines the process of finding IT solutions by organizing products and services into categories like analytics, networking, security, databases, and other common cloud solution areas. In addition to browsing by category, you can also use the search filters in both the Azure Portal and the Azure Marketplace online store to narrow your search results to products that fit your organization’s needs.
+Azure Marketplace streamlines the process of finding IT solutions by organizing products and services into categories like analytics, networking, security, databases, and other common cloud solution areas. In addition to browsing by category, you can also use the search filters in both the Azure portal and the Azure Marketplace online store to narrow your search results to products that fit your organization’s needs.
 
-![Screenshot of app categories and search filters from the Azure Marketplace online store](../media/4-azure-marketplace-searcha-filter-store.png)
+![Screenshot of app categories and search filters from the Azure Marketplace online store](../media/4-azure-marketplace-search-filter-store.png)
 
 ## Trying software from Azure Marketplace
 
@@ -32,11 +32,11 @@ Azure Marketplace has two kinds of trial experiences—**free trials** and **tes
 
 ![Screenshot of free trial filter in the Azure Marketplace online store](../media/5-free-trial-test-drive-store.png)
 
-### Free Trials
+### Free trials
 
 Free trials are offered for 30 or 90-day periods, depending on the product. Free software trials let you use the software for the trial period without paying any subscription fees and seamlessly transition to a paid subscription when the trial period expires.
 
-### Test Drives
+### Test drives
 
 Another way to try software is to start a test drive. Test drives are ready to go, pre-provisioned environments that let you try a solution without configuring any settings or uploading any data. Instead you can focus on evaluating the user experience, key product features, and the benefits the solution offers. Once provisioned, the test drive will be available for a limited time, typically a few hours.
 

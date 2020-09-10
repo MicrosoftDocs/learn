@@ -15,15 +15,15 @@ quiz:
   questions:
   - content: 'You can browse the Azure Marketplace catalog of software and services by doing which of the following?'
     choices:
-    - content: 'Logging into the Azure Portal and clicking "create a resource" from the Azure Portal homepage'
+    - content: 'Logging into the Azure portal and clicking "create a resource" from the Azure portal homepage'
       isCorrect: false
-      explanation: 'Customers can access Azure Marketplace from both the Azure Portal and the Azure Marketplace online store.'
+      explanation: 'Customers can access Azure Marketplace from both the Azure portal and the Azure Marketplace online store.'
     - content: 'Visiting the online store at https://azuremarketplace.microsoft.com'
       isCorrect: false
-      explanation: 'Customers can access Azure Marketplace from both the Azure Portal and the Azure Marketplace online store.'
+      explanation: 'Customers can access Azure Marketplace from both the Azure portal and the Azure Marketplace online store.'
     - content: 'Both of the above'
       isCorrect: true
-      explanation: 'Great job! Customers can access Azure Marketplace from both the Azure Portal and the Azure Marketplace online store.'
+      explanation: 'Great job! Customers can access Azure Marketplace from both the Azure portal and the Azure Marketplace online store.'
   - content: 'You can evaluate software from Azure Marketplace by doing which of the following?'
     choices:
     - content: 'Starting a 30 or 90-day free software trial' 

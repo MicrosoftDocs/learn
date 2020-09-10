@@ -6,7 +6,7 @@ Your manager is counting on you to control costs, while also keeping the agility
 
 Azure Marketplace is designed to help you be efficient when finding, trying, and buying cloud applications. In this module, we’ll explore some of the ways that Microsoft can help simplify procurement through Azure Marketplace.
 
-## Learning Objectives
+## Learning objectives
 
 In this module, you will:
 
