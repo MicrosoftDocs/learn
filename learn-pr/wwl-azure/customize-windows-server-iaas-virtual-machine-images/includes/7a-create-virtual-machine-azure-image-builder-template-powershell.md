@@ -187,7 +187,7 @@ The next steps will create an image, and then create the VM from the image. To c
    >[!NOTE]
    > After the image creation completes, Azure Image Builder displays a success message in the console, and creates an Image Builder Configuration Template in the `$imageResourceGroup`. 
 
-   > [!TIP}
+   > [!TIP]
    > To verify that the template creation process was successful, run the following command: `Get-AzImageBuilderTemplate -ImageTemplateName $imageTemplateName -ResourceGroupName $imageResourceGroup | Select-Object -Property Name, LastRunStatusRunState, LastRunStatusMessage, ProvisioningState`
 
 9. Finally, start the image build: 
