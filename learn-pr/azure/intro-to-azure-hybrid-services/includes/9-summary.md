@@ -1,4 +1,3 @@
-# Summary
 
 Tailwind Traders has begun the process of migrating some existing workloads to the cloud and ensuring that new workloads are cloud native where appropriate. Instead of having all workloads hosted on-premises or in Azure, Tailwind Traders will be taking advantage of the technologies that best suit their needs.
 

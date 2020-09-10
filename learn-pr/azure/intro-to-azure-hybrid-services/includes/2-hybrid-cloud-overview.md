@@ -1,5 +1,3 @@
-# What is a hybrid cloud?
-
 Hybrid clouds combine private clouds and on-premises datacenters with public clouds like Azure in a way that allows applications and data to interact without the location of either being significant. Hybrid clouds allow businesses to seamlessly scale their on-premises infrastructure up into the cloud when processing demand increases and scale them back when demand decreases. Hybrid clouds give organizations the flexibility to use new cloud-first technologies for new workloads while keeping business-critical applications and data on-premises for certain workloads. Those might include applications or data that are too difficult or expensive to migrate, or the can’t be moved for compliance reasons.
 
 A hybrid-cloud strategy allows your organization to make on-premises and cloud workloads work well together. Hybrid clouds shouldn’t be considered a temporary middle ground that organizations inhabit only as long as necessary while they are transitioning from on-premises to Azure. Instead, a hybrid cloud can be a strategy that allows organizations to find a stable middle ground that best addresses their information-technology needs.

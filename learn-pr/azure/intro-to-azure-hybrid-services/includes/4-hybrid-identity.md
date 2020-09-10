@@ -1,5 +1,3 @@
-# Hybrid identity
-
 Tailwind Traders has used Active Directory Domain Services as their on-premises identity provider on their on-premises network environment since they migrated from Windows NT 4.0 in the early 2000s. Many existing Tailwind Traders applications have a dependency on Active Directory. Some of these applications have a simple dependency on Active Directory as an identity provider. Others have deeper dependencies, such as complex Group Policy requirements, custom domain partitions, and custom schema extensions. As Tailwind Traders starts to move some resources and develop new applications in Azure, the company wishes to avoid creating a parallel identity solution that would require separate login information for on-premises and cloud resources.
 
 In this unit, you’ll learn about the different ways of implementing hybrid identity.

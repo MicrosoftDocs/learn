@@ -1,5 +1,3 @@
-# Hybrid cloud networking
-
 Just as a traditional multisite on-premises network might need to connect multiple branch offices to a head office, hybrid-cloud networking involves using appropriate technologies to seamlessly interconnect on-premises users, applications, and data to applications and data hosted in the cloud.
 
 From the perspective of the Tailwind Traders scenario, Tailwind Traders must be able to connect their on-premises locations in a secure manner to the resources that they’re running in Azure. They need to accomplish this so that, for Tailwind Traders staff, there’s no real difference between accessing a workload that’s running in a Tailwind Traders on-premises datacenter and one that’s running in Azure.

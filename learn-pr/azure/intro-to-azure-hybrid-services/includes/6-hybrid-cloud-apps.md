@@ -1,4 +1,3 @@
-# Hybrid-cloud applications
 
 Tailwind Traders has several applications that have front-end components that currently run on-premises in their perimeter network with the back-end elements on a protected internal network. One of Tailwind Traders’ aims in moving to a hybrid cloud is to retire their perimeter network and host any public-facing workloads in the cloud. Because of compliance concerns and workload owners’ concerns, some of these applications should remain physically in Tailwind Traders facilities instead of being hosted in an Azure datacenter.
 

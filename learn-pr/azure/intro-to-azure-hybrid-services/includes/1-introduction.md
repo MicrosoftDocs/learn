@@ -1,5 +1,3 @@
-# Introduction
-
 Many organizations that use Azure have some workloads that run on-premises in traditional datacenters or server rooms and other workloads that run completely in the cloud. And increasing number of organizations migrate the all their workloads to the cloud, while some start as cloud native, Many organizations, however, are either on a slower migration journey toward the cloud or are seeking a balance between having some workloads remain on-premises and others in the cloud. Instead of being an all-or-nothing proposition, a properly architected hybrid Azure deployment allows organizations to find a balance between cloud and on-premises deployments that best fits their needs.
 
 In this module, you’ll get an introductory overview of various hybrid-cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.

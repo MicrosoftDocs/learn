@@ -1,4 +1,3 @@
-# Hybrid-cloud files and data
 
 One of the biggest challenges that Tailwind Traders faces with its existing file server infrastructure is ensuring that the same file share content is reliably available in each branch office. Some smaller branch offices, such as the Tailwind Traders retail outlet in Wangaratta, Australia, don’t have local file server endpoints. This means that retail outlets file and folder access occurs across a VPN connection to a file server in the Melbourne Office.
 

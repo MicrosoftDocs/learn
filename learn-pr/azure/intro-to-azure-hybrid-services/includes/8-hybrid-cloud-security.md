@@ -1,4 +1,3 @@
-# Security in hybrid-cloud environments
 
 As Tailwind Traders adopts a hybrid cloud posture, their environment will become even more complicated than it was when workloads were only deployed on-premises. The increased complexity of the workloads and their architecture means that observing the security configuration and telemetry of those workloads is also increasingly challenging.
 

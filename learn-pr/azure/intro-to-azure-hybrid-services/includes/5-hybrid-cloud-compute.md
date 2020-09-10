@@ -1,4 +1,3 @@
-# Hybrid-cloud compute workloads
 
 Tailwind Traders has a mix of compute workloads running as physical servers, virtual machines, or containers across datacenters in Sydney, Melbourne, and Auckland. These workloads are running a mix of Windows Server and Linux, with Hyper-V configured as the primary virtualization platform. Managing this diverse set of operating systems is already a challenge for Tailwind Traders. As such, the company is concerned that migrating into a hybrid posture where workloads are running both on-premises and in the cloud will make it even more difficult to keep track of server operating system workloads and their compliance state.
 
