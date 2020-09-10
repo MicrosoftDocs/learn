@@ -84,7 +84,7 @@ If your organization has signed a Microsoft Azure Consumption Commitment, you ca
 
 ![Screenshot of Azure benefit eligible filter in the Azure Marketplace experience in the Azure Portal](../media/10-macc.png)
 
-![Detailed view of Azure benefit eligible badge in Azure Marketplace](../media/21-macc-eligible-detail.png)
+![Screenshot of Azure benefit eligible badge in Azure Marketplace](../media/21-macc-eligible-detail.png)
 
 ### Completing your purchase
 

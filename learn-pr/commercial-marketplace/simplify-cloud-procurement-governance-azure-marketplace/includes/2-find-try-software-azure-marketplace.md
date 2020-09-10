@@ -12,13 +12,13 @@ Azure Marketplace is a part of Azure and can be accessed from the Azure Portal o
 
 To access Azure Marketplace from the Azure Portal, log in with your Azure account credentials at <https://portal.azure.com> and click “create a resource” on the homepage. This will open the Azure Marketplace experience in the Azure Portal, where you’ll be able to start browsing the catalog of software and services.
 
-![Image of the "create a resource" button on the home page of the Azure Portal](../media/1-azure-portal-homepage-create-resource.png)
+![Screenshot of the "create a resource" button on the home page of the Azure Portal](../media/1-azure-portal-homepage-create-resource.png)
 
-![Image of the Azure Marketplace experience in the Azure Portal](../media/2-azure-marketplace-azure-portal1.png)
+![Screenshot of the Azure Marketplace experience in the Azure Portal](../media/2-azure-marketplace-azure-portal1.png)
 
 You can also get to Azure Marketplace by visiting the online store at <https://azuremarketplace.microsoft.com>. In addition to software and services found in the Azure Marketplace experience in the Azure portal, the online store includes consulting services from certified Microsoft partners, including industry leading systems integrators. You can browse the consulting services section of the online store by selecting “consulting services” from the menu at the top of the page.
 
-![Image of the consulting services section in the Azure Marketplace online store](../media/3-consulting-services-store.png)
+![Screenshot of the consulting services section in the Azure Marketplace online store](../media/3-consulting-services-store.png)
 
 Azure Marketplace streamlines the process of finding IT solutions by organizing products and services into categories like analytics, networking, security, databases, and other common cloud solution areas. In addition to browsing by category, you can also use the search filters in both the Azure Portal and the Azure Marketplace online store to narrow your search results to products that fit your organization’s needs.
 
@@ -30,7 +30,7 @@ When deciding if an application is the right fit for your team, it’s helpful t
 
 Azure Marketplace has two kinds of trial experiences—**free trials** and **test drives**.
 
-![Image of free trial filter in the Azure Marketplace online store](../media/5-free-trial-test-drive-store.png)
+![Screenshot of free trial filter in the Azure Marketplace online store](../media/5-free-trial-test-drive-store.png)
 
 ### Free Trials
 

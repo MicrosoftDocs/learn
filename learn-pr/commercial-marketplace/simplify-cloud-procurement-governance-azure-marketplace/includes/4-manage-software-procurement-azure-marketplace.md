@@ -73,7 +73,7 @@ As you add products to your catalog, you can select the allowed plans under each
 
 - **Select specific plans:** choose the specific plan or subset of plans you want users to purchase.
 
-![Detailed screenshot of Azure Private Marketplace selection process in the Azure portal](../media/18-private-marketplace-build.png)
+![Screenshot of Azure Private Marketplace selection process in the Azure portal](../media/18-private-marketplace-build.png)
 
 ### Purchasing allowed products
 
