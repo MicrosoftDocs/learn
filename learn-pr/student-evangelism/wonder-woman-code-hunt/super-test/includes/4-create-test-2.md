@@ -1,6 +1,6 @@
-So far your code asks one question to the user, stores their response, and if their response was 'A' it prints out a message. In this unit you will explore how to handle the user choosing 'B' and create the rest of the questions for your test.
+So far your code asks one question to the user, stores their response, and if their response was 'A' it prints out a message. In this unit, you will explore how to handle the user choosing 'B' and create the rest of the questions for your test.
 
-To account for the user choosing 'B' insetad of 'A' you can choose from a few ways to do this; multiple if-statements, an else-statement, or an elif-statement.
+To account for the user choosing 'B' instead of 'A', you can choose from a few possibilities; multiple if-statements, an else-statement, or an elif-statement.
 
 ## Multiple if-statements
 
@@ -19,7 +19,7 @@ if weapon == "B":
     print( "You're brave!" )
 ```
 
-What is happening here is the code will store the response to the input asking which weapon the user wants in the variable called `weapon`. Then, the following will happen:
+What is happening here is the code will store the response to the input asking which weapon the user wants in the variable called `weapon`. Then, the following thing will happen:
 
 - The code will check if `weapon` is "A"
 - If it is, it will print: "Nice choice!"
@@ -32,7 +32,7 @@ That's where the other two methods come in.
 
 ## Else-statement
 
-You've already seen an else-statement in the Python Basics unit in this module, it was just written in English and not in code. You can write else-statements in code too:
+You've already seen an else-statement in the Python Basics unit in this module, it was written in English and not in code. You can write else-statements in code too:
 
 ```python
 # ask the candidate a question
@@ -47,7 +47,7 @@ else:
     print( "You're brave!" )
 ```
 
-This will work the same as the two if-statements above, if the user types either "A" or "B". The only difference if that *now* if the user chooses "A" then the code won't even check if they chose "B". So code doesn't get run unnecessarily. This is an *optimization*.
+This approach will work the same as the two if-statements above, if the user types either "A" or "B". The only difference if that now if the user chooses "A", then the code won't even check if they chose "B". So code doesn't get run unnecessarily. It's an *optimization*.
 
 The only issue here is that if the user actually types "C", the program would still print "You're brave!" because the code doesn't check what value `weapon` has, it just prints "You're brave!" if `weapon` is anything but "A".
 
