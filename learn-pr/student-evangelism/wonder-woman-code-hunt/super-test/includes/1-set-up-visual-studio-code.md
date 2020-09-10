@@ -13,10 +13,10 @@ Then open Visual Studio Code and select "Open folder..." from the start screen; 
 > [!div class="mx-imgBorder"]
 > ![Select open folder in VSCode](../media/test-open-folder.png)
 
-Next create a file called "test.py".
+Next create a file called `quiz.py`.
 
 > [!div class="mx-imgBorder"]
-> ![Create a new file called test.py](../media/test-file.png)
+> ![Create a new file called quiz.py](../media/test-file.png)
 
 Also feel free to close the Welcome tab now.
 
