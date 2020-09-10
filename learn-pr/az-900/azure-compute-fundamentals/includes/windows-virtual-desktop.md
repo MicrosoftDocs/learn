@@ -6,14 +6,7 @@ Windows Virtual Desktop on Microsoft Azure is a desktop and application virtuali
 
 The following video gives you an overview of Windows Virtual Desktop.
 
-<div align="center">
-<video width="500" height="375" controls="controls">
-<source src="http://www.geekybob.com/files/windows-virtual-desktop.mp4" type="video/mp4">
-<p><em>Your browser does not support the video tag.</em></p>
-</video>
-</div>
-
-[//]: # (VIDEO https://www.microsoft.com/videoplayer/embed/RE3J9rw )
+> [!VIDEO https://channel9.msdn.com/Shows/Learn-Azure/Windows-Virtual-Desktop-Overview/player?format=ny]
 
 ## Why should you use Windows Virtual Desktop?
 
