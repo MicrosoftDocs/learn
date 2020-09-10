@@ -1,4 +1,4 @@
-![Figure 1: Management group hierarchy](../media/4-sub-org.png)
+![Figure 1: Management group and subscription organization.](../media/4-sub-org.png)
 
 ## Define a management group hierarchy
 
