@@ -17,7 +17,7 @@ abstract: |
 prerequisites: | 
   - Knowledge of personal computer operating systems.
   - Fundamentals of cloud computing.
-iconUrl: http://via.placeholder.com/120x120
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
