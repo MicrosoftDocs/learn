@@ -17,7 +17,7 @@ When prompted, select **Y** and select Enter.
 
 The first thing you must do to use Azure Image Builder in public preview is to register the features in your Azure subscription. The following steps provide guidance on this process: 
 
-1. Open the Azure Portal, and then on the menu, select **Cloud Shell**. 
+1. Open the Azure portal, and then on the menu, select **Cloud Shell**. 
 2. In Cloud Shell, switch to **PowerShell**. 
 3. Select your Azure subscription by running the following PowerShell command:
 
