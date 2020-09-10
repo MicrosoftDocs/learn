@@ -43,13 +43,3 @@ Figure 8. Azure AD DS architecture.
 One Azure AD DS drawback is that the Group Policy implementation is basic—it includes a fixed set of Group Policies and offers no ability to create Group Policy Objects (GPOs). Even though the identities used on-premises will be available in Azure, any Group Policies configured on-premises won’t be available.
 
 For Tailwind Traders, Azure AD DS provides a good middle ground for hybrid workloads. It enables domain-joined identities usage and a substantial amount Group Policy configuration, but it won’t support applications that require complex Active Directory functionality such as custom domain partitions and schema extensions.
-
-## Knowledge check
-
-Among the virtual machines that Tailwind Traders is planning to migrate out of the Auckland datacenter, several host applications have dependencies on AD DS that include several custom schema extensions and the use of several custom AD DS partitions. Which of the following hybrid-identity solutions could the company use to support these applications if the virtual machines that hosted the applications were migrated to run as Azure infrastructure as a service (IaaS) VMs?
-
-1\. Configure Azure AD Connect to replicate the on-premises AD DS identities to Azure. Create a subnet in an Azure Virtual Network. Migrate the VMs from the Auckland datacenter to this subnet. Join the migrated VMs to the Azure AD Domain. \[Incorrect. Azure AD DS doesn’t provide the ability to host the custom AD partitions or schema extensions required for the applications to function.\]
-
-2\. Create a subnet in an Azure Virtual Network. Configure a VPN connection between this virtual network and the on-premises network. Deploy two AD DS domain controllers on VMs running Windows Server 2019 on this subnet. Configure a separate AD DS site for the Azure subnet. Migrate the VMs from the Auckland datacenter to this subnet. \[Correct. Deploying AD DS domain controllers on Azure IaaS VMs and configuring those domain controllers to be part of the on-premises forest is one way of ensuring that the applications have access to the required schema extensions and custom AD partitions.\]
-
-3\. Configure Azure AD Connect to replicate the on-premises AD DS identities to Azure. Create a subnet in an Azure Virtual Network. Configure Azure AD DS and configure it to be available to this newly created subnet. Migrate the VMs from the Auckland datacenter to this subnet. Join the migrated VMs to the Azure AD Domain. \[Incorrect. Azure AD DS doesn’t provide the ability to host the custom AD partitions or schema extensions required for the applications to function.\]

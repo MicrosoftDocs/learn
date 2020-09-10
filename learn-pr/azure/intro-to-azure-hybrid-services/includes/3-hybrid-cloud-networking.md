@@ -49,15 +49,3 @@ Figure 4. Azure Virtual WAN topology.
 
 Azure Virtual WAN enables Tailwind Traders to move away from using VPN connections to connect branch offices and the datacenter locations in Sydney, Melbourne, and Auckland. It provides a topology where each
 branch office and datacenter have a VPN or ExpressRoute connection to Azure and the Azure Virtual WAN service manages the routing of traffic between locations.
-
-## Knowledge check
-
-Tailwind Traders must ensure that the data transmitted from the Canberra office to workloads running in Azure doesn’t pass across the public internet, even in an encrypted tunnel. Which of the following
-technologies can Tailwind Traders use to connect this office to workloads running in Azure?
-
-1\. Azure VPN \[Incorrect. Tailwind Traders can’t use this solution because Azure VPN has traffic pass across the public internet in an encrypted tunnel.\]
-
-2\. Azure Virtual WAN. \[Incorrect. Azure Virtual WAN allows you to set up hub-and-spoke traffic routing. While compatible with both Azure VPN and Azure ExpressRoute, it doesn’t by itself carry traffic from an
-on-premises location to workloads running in Azure.\]
-
-3\. Azure ExpressRoute. \[Correct. Azure ExpressRoute allows you to have a dedicated connection from your organization’s on-premises location to an Azure datacenter. Traffic that passes across an ExpressRoute circuit never crosses the public internet.\]

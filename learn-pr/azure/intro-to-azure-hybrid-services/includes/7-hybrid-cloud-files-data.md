@@ -35,15 +35,3 @@ Tailwind Traders currently uses a distributed file system (DFS) to replicate a s
 SQL Server Stretch Database has the advantage over other solutions of removing infrequently accessed data from the database in that the data itself remains online. It’s not necessary to modify any existing queries and the application remains unaware of the data’s location.
 
 Tailwind Traders can enable Stretch Database on databases where they’ve had to keep adding storage to accommodate table growth. When Stretch Database is enabled, infrequently accessed table data will be transparently migrated to Azure on a continuous basis. This allows new data to be written to tables, remaining on-premises and close to the application performing the query while shifting colder data into Azure.
-
-## Knowledge check
-
-Tailwind Traders needs to ensure that the volumes on file servers don’t run out of disk space. At present, natural activity at Tailwind Traders offices weekly adds approximately 500 megabytes (MB) of data to the volumes that host important company. Historically, this has meant that IT pros must remove approximately 100 gigabytes (GB) of old files every few months to allow sufficient storage space for new files.
-
-Tailwind Traders has configured Azure File Sync for all existing file shares and the file shares have all replicated to corresponding Azure File Shares in Azure. Which of the following strategies should Tailwind Traders pursue to ensure that it won’t be necessary to remove disused files and folders from file servers in future?
-
-1\. Enable deduplication on each file server that’s configured with Azure File Sync. \[Incorrect. While deduplication saves space, it won’t stop all the available space on the file share from eventually being consumed.\]
-
-2\. Enable cloud tiering on the Azure File Share. \[Incorrect. You don’t enable cloud tiering on the Azure File Share, because the file share hosts the primary copy of all files. You enable cloud tiering on each file server that participates in Azure File Sync as a way of ensuring that the volumes that host the file shares don’t run out of storage space.\]
-
-3\. Enable cloud tiering on each file server file share that’s configured with Azure File Sync. \[Correct. When you enable cloud tiering, you can specify an amount of free space that must be kept available or specify that files that haven’t been accessed for a certain amount of time be automatically tiered, or both. If you specify that a certain amount of free space must be kept available on the volume, any time the limit is approached, the least recently accessed files on the volume will automatically be tiered to the Azure File Share.\]

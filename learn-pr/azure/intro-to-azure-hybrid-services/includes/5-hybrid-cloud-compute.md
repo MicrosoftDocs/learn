@@ -86,13 +86,3 @@ From Tailwind Traders’ perspective, Azure Arc enabled data services provides a
 Figure 11. Azure Site Recovery.
 
 Azure Site Recovery allows Tailwind Traders to move from using the Melbourne and Sydney datacenters as disaster-recovery sites in their on-premises only implementation, to using Azure as a disaster-recovery site for a large number of workloads as their deployment becomes hybrid. The challenge for Tailwind Traders is that some workloads have physical or other dependencies that have blocked them from being migrated to Azure. This means that they won’t be able to use Azure as a disaster-recovery site for the same reasons.
-
-## Knowledge check
-
-As a part of their hybrid strategy, Tailwind Traders wants to manage container orchestration through the Azure Portal instead of using on-premises tools. Which of the following hybrid-cloud compute technologies allows Tailwind Traders to accomplish this goal?
-
-1\. Azure Arc enabled Kubernetes. \[Correct. Azure Arc enabled Kubernetes is a container orchestration service that allows you to manage container orchestration through the Azure Portal.\]
-
-2\. Azure Stack HCI. \[Incorrect. Azure Stack HCI is an on-premises hyperconverged virtualization host solution. While it’s possible to host a container orchestration solution on those virtual machines, Azure Stack HCI isn’t a container orchestration solution.\]
-
-3\. Azure Arc enabled servers. \[Incorrect. Azure Arc enabled servers are servers that exist outside the Azure IaaS environment and are connected to Azure, and for which Azure can provide some limited management functionality.\]

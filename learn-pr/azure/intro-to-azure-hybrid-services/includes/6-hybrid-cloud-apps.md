@@ -76,13 +76,3 @@ Figure 13. Application Proxy.
 **Note:** Users of internal networks that allow direct connection to applications should avoid using Application Proxy.
 
 At Tailwind Traders, Azure AD Application proxy can be used to provide external users access to internal applications that use Active Directory authentication.
-
-## Knowledge check
-
-Tailwind Traders has several multitiered apps that they will migrate to their hybrid cloud that currently exist with the web tiers on the Tailwind Traders perimeter network and the database tier residing on virtual machines in the Sydney datacenter. The new application architecture will have web apps running in Azure. Which of the following technologies should Tailwind Traders use to allow communication between the web app tier in Azure and the database tier running on VMs in the Sydney datacenter?
-
-1\. Azure Relay. \[Incorrect. Use Azure Relay when you want to securely expose an application running on an internal network to clients on the internet.\]
-
-2\. Azure App Service Hybrid Connection. \[Correct. Use Azure App Service Hybrid Connection to configure a connection between a web app running in an App Service in Azure and a back-end service running on a protected internal network.\]
-
-3\. Azure AD Application Proxy. \[Incorrect. Use Azure AD Application Proxy as a way of publishing internal applications that use Azure AD authentication to hosts on the internet.\]

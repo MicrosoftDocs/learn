@@ -57,13 +57,3 @@ You can target Azure Update Management update deployments for either Linux or Wi
 - Restart options that determine whether the system should restart if required for updates to complete installation.
 
 Tailwind Traders currently uses WSUS and several other tools to manage the updates to its on-premises Windows and Linux operating systems. By configuring all their on-premises and cloud IaaS VM operating system workloads to connect to Azure Software Update, Tailwind Traders can ensure that all operating systems that host critical workloads are kept up to date.
-
-## Knowledge check
-
-Tailwind Traders wants to ensure that a test group of Windows and Linux servers automatically gets updates as they are published each week. In addition, the company wants the production groups of Windows and Linux servers to get updates only once a month, after it’s known that they don’t cause problems on test group servers. How many update deployments need to be configured to support this plan?
-
-1\. One. \[Incorrect. You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems.\]
-
-2\. Four. \[Correct. You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems.\]
-
-3\. Two. \[Incorrect. You need separate deployments for Windows and Linux servers, and separate deployments for test and production systems.\]
