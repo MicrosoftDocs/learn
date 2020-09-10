@@ -8,7 +8,7 @@ Every alert or notification available in Azure Monitor is the product of a rule.
 
 The exercise will cover how to create a simple alert.  Once the alert is in place, an Azure CLI command will be executed against the resource to trigger the alert.  A review of the alert page will show the details of what occurred.  To get a deeper insight into the severity levels and how to work with the various other types of alerts, visit the [alerts overview](https://docs.microsoft.com/azure/azure-monitor/platform/alerts-overview?toc=%2Fazure%2Fazure-monitor%2Ftoc.json) page.
 
-### Configure an Alert
+### Configure an alert
 
 1. Sign in to the Azure portal
 1. Locate your Cognitive Service resource in your dashboard or the resources page.
@@ -46,7 +46,7 @@ Metrics are numerical values that describe some aspect of a system at a point in
 
 Metrics are stored in a time-series database. This data store is most effective for analyzing time-stamped data. Metrics are suited for alerting and fast detection of issues. They can tell you about system performance. If needed, you can combine them with logs to identify the root cause of issues.
 
-### Create a Metric
+### Create a metric
 
 1. Ensure you are signed in to you Azure subscription with the Azure portal open
 1. Locate you Cognitive Service resource, in this example we use the myMultiCogService that we have used in the module
@@ -61,17 +61,17 @@ Metrics are stored in a time-series database. This data store is most effective 
 1. In the **Aggregation** list, select **Count**.  This will allow you to monitor the total calls to you Cognitive Service resource which is useful in determining how much the service is being used over a period of time.
 1. You can also choose a different chart type, look into the logs, or pin the chart to the dashboard for easy viewing, with the options in the chart header bar.
 
-    ![Chart options to change style, view logs, or pin to dashboard](../media/metric_chart_options.png)
+    ![Chart options to change style, view logs, or pin to dashboard](../media/metric-chart-options.png)
 
 1. You can leave this metric in your Cognitive Service and view the results when you create an application that accesses the resource. 
 
-## Diagnostic Settings
+## Diagnostic settings
 
 You can configure diagnostic settings in your Cognitive Service resource to provide detailed information for diagnostics and auditing. The platform logs and metrics will be sent to a logging destination that you choose when configuring the settings.  The available data that can be logged includes audit information, RequestResponse data, and AllMetrics.
 
 Currently, you can have the diagnostic information sent to a Log Analytics workspace, Event Hubs, or Azure Storage.  Each diagnostic setting that you configure, can only send data to one destination. If you need to send data to more than one destination, you will need to configure a new diagnostic setting for that destination.
 
-### Diagnostic Destinations
+### Diagnostic destinations
 
 | Destination | Description |
 |---|---|
@@ -79,7 +79,7 @@ Currently, you can have the diagnostic information sent to a Log Analytics works
 | **Event Hubs** | Sending logs and metrics to Event Hubs allows you to stream data to external systems such as third-party SIEMs and other log analytics solutions. |
 | **Azure Storage** | Archiving logs and metrics to an Azure storage account is useful for audit, static analysis, or backup. Compared to Azure Monitor Logs and a Log Analytics workspace, Azure storage is less expensive and logs can be kept there indefinitely. |
 
-### Create a Diagnostic Setting
+### Create a diagnostic setting
 
 >[!NOTE]
 >You must have an existing storage account created before completing this exercise.  If you do not have any storage accounts configured yet, follow the instructions on [this page](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal) to create one, before proceeding with the exercise.
@@ -125,7 +125,7 @@ You log data from Azure Monitor in a Log Analytics workspace. Azure provides an 
 1. Once the workspace is deployed, select the **Go to resource** button.
 1. To learn about the various options for accessing the logs collected, follow the links in the **Get started with Log Analytics** section to explore all the options available.  This course does not teach how to connect to or query the log analytics workspace data.
 
-### Test your Metrics Report
+### Test your metrics report
 
 1. Start by opening a browser tab or window and navigating to [Visual Studio Codespaces](https://visualstudio.microsoft.com/services/visual-studio-online/).
 

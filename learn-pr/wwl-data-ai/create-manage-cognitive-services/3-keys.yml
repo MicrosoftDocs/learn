@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-cognitive-services.keys
-title: Manage Cognitive Services Keys
+title: Manage Cognitive Services keys
 metadata:
-  title: Manage Cognitive Services Keys
-  description: "Manage Cognitive Services Keys"
-  ms.date: 09/11/2020
+  title: Manage Cognitive Services keys
+  description: "Manage Cognitive Services keys"
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
   [!include[](includes/3-keys.md)]

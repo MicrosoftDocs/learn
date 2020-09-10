@@ -31,7 +31,7 @@ If you choose the single-service resource option, you get access to all the Cogn
 - Ink Recognizer
 - Personalizer
 
-## Resource Fields
+## Resource fields
 
 During the creation of these services, you will be asked for several pieces of information.  Correctly configuring the service is critical to ensuring you are able to properly manage the resources later.  There are also key considerations around naming the service to ensure unique service names within regions and subscriptions. The table outlines the key fields with information regarding usage.
 
@@ -43,7 +43,7 @@ During the creation of these services, you will be asked for several pieces of i
 | **Pricing tier** | The cost of your Cognitive Services account depends on the options you choose and your usage. For more information, see the API [pricing details](https://azure.microsoft.com/pricing/details/cognitive-services/).
 | **Resource group** | The Azure resource group that will contain your Cognitive Services resource. You can create a new group or add it to a pre-existing group. |
 
-## Create a Cognitive Services Resource using the Azure portal
+## Create a Cognitive Services resource using the Azure portal
 
 1. To create a new Cognitive Services resource using the Azure portal, sign in to the Azure portal
 1. Select the + Create a resource option in the left nav pane or on the Home page of the Azure portal
@@ -52,7 +52,7 @@ During the creation of these services, you will be asked for several pieces of i
 1. Select the **Create** button
 1. Complete the information required in the dialog according to the descriptions provided in the table
 
-## Creating a Cognitive Services Resource using the Azure Command Line Interface (CLI)
+## Create a Cognitive Services resource using the Azure Command Line Interface (CLI)
 
 Creating the necessary Cognitive Services using the Azure portal is only one method available.  If your organization uses a DevOps process or requires automation for consistency in deployments, updates, and removal of services, the Azure portal is not the ideal choice.  Microsoft offers different options for scripting the creation of Cognitive Services.  One of these options is the Azure Command Line Interface (CLI).
 
@@ -63,15 +63,15 @@ You can use the CLI locally or from within the Azure portal. Accessing the CLI f
 1. Sign in to the Azure portal
 1. Locate and select the **Cloud Shell** button on the top nav bar of the Azure portal
 
-    ![Cloud Shell Button in top nav bar](../media/cloud_shell.png)
+    ![Cloud Shell Button in top nav bar](../media/cloud-shell.png)
 
 1. If this is the first time you have opened **Cloud Shell**, you will be prompted to create a storage account.  Follow the procedure to do so
 1. Once the storage account is created, Azure requests a Cloud Shell and then connects to the terminal
 1. You are now ready to issue CLI commands
 
-    ![Cloud Shell terminal opened in the bottom of the browser window](../media/shell_terminal.png)
+    ![Cloud Shell terminal opened in the bottom of the browser window](../media/shell-terminal.png)
 
-### Install and Use the CLR Locally
+### Install and use the CLR Locally
 
 If you need to automate Cognitive Service creation or removal, using the portal is not the best choice. Automation through scripting and the CLI is best done by installing the CLI on your local computer, or the computer in which the scripts will execute. Using the Azure CLI requires installing the tool on the local computer.  Visit the [Azure CLI Installer](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) page to begin the installation.
 
@@ -82,7 +82,7 @@ The scenario presented here will make the assumption that you are creating a new
 
 Once the CLI is installed, your first step is to sign in to the Azure subscription.  Signing in is required before you can execute any commands against an Azure subscription. Once you are logged in, you will have access to your Azure subscription.  If you have multiple subscriptions, you will also need to switch to the proper subscription that will contain the resources you will create.
 
-### Exercise - Create a Multi-service Cognitive Service Resource using the CLI
+### Exercise - Create a Multi-service Cognitive Service resource using the CLI
 
 1. Open a command prompt, or terminal, on your local computer
 1. Enter the command
@@ -137,7 +137,7 @@ Once the CLI is installed, your first step is to sign in to the Azure subscripti
 
 1. If you want to validate these commands, log into the Azure portal to view the newly created items. You can find the new service in the All Resources section of the portal
 
-    ![Newly created Cognitive Service from the Azure portal](../media/new_cognitive_service.png)
+    ![Newly created Cognitive Service from the Azure portal](../media/new-cognitive-service.png)
 
 1. The image shows myMultiCogService resource, in the cog-services-staging resource group, hosted in the westus region.
 1. The next article will discuss the management of keys for your service

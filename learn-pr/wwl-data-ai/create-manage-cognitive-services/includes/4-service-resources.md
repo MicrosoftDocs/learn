@@ -1,10 +1,10 @@
 There are various aspects to your new Cognitive Service resource that you should be aware of.  Most of the tasks are for the management aspect of your service, including updating the service, monitoring the service, and controlling access. The focus of this topic is on the **Resource Management** section of the Cognitive Service.
 
-![Resource Management options from Cognitive Service resource page](../media/resource_management.png)
+![Resource Management options from Cognitive Service resource page](../media/resource-management.png)
 
 After creating our Cognitive Service resource and it has been deployed, going to the resource will direct you to the **Quick Start** page where you can find links to various information on how to work with these services on Azure.  Note the section numbered 3, contains a list of services that you can use with a multi-service resource, if that is what you created.  The links will take you to the landing pages for each resource listed.
 
-## Keys and Endpoints
+## Keys and endpoints
 
 To access your service from an application, you will need to know the endpoint URL and have access to at least one of the keys.  The Keys and Endpoint section provides this information.  Depending on the service, you are working with, the endpoint will be unique to that specific service and the associated keys will provide authorization to use only the service at that endpoint. For a multi-service resource, the endpoint is typically of the form ``` https://westus.api.cognitive.microsoft.com/ ```.  The endpoint makes use of the region, in this example **westus**.  The rest of the endpoint is fairly generic.  
 
@@ -22,7 +22,7 @@ Regenerate Key 2 in the myMultiCogService resource in the cog-services-staging r
 az cognitiveservices account keys regenerate --name myMultiCogService --resource-group cog-services-staging --key-name key2
 ```
 
-## Pricing Tier
+## Pricing tier
 
 The pricing tier is set when you create the resource.  If there are other available pricing tiers, you can select one of them in the **Pricing Tier** page.  You would change your pricing tier to match your anticipated usage needs for that service.  As an example, if you select F0 during creation of the service but your needs extend beyond the free tier, you could then change to the S0 pricing tier.
 
@@ -55,7 +55,7 @@ As you might expect, you can also update your pricing tier from the Azure CLI wi
 az cognitiveservices account update --name myMultiCogService -g cog-services-staging --sku S0
 ```
 
-## Managing Properties
+## Manage properties
 
 The properties of the Cognitive Service resource are concerned with the subscription, resource group, location, and pricing tier.  You can list and manage many of these attributes using the Azure CLI.  The portal also allows you to change some of the options such as the subscription and resource group.
 

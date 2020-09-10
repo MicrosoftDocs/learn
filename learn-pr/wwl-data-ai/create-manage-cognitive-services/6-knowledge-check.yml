@@ -4,21 +4,20 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/11/2020
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
-  title: "Knolwedge check"
   questions:
   - content: "You have an Azure Cognitive Service resource created. You want to prevent users from changing the properties. Which lock would you use?"
     choices:
     - content: "Read-Only"
       isCorrect: true
-      explanation: "Correct. Authorized users are able to read properties on the resource but they cannot modify or delete the resourcet."
+      explanation: "Correct. Authorized users are able to read properties on the resource but they cannot modify or delete the resource."
     - content: "Locked"
       isCorrect: false
       explanation: "Incorrect. There is no Locked type of lock to add on a resource."

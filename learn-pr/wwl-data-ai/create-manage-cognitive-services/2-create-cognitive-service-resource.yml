@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-manage-cognitive-services.create-an-account
-title: Create an Account
+title: Create an account
 metadata:
-  title: Create an Account
-  description: "Create an Account"
-  ms.date: 09/11/2020
+  title: Create an account
+  description: "Create an account"
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/2-create-cognitive-service-resource.md)]
