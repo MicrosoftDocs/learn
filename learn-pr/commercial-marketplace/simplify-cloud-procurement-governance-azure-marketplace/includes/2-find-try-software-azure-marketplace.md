@@ -1,8 +1,8 @@
-While drinking your morning coffee and reading your LinkedIn feed, you come across a post from a friend recommending an application she bought from Azure Marketplace. In the post, she talks about how Azure Marketplace made it easy to not only find software, but also try it and buy it.
+While drinking your morning coffee and reading your LinkedIn feed, you come across a post from a friend recommending an application she bought from Azure Marketplace. In the post, she talks about how Azure Marketplace made it easy find, try, and buy the software.
 
-Excited by the possibilities, you decide to do some research to find out more about Azure Marketplace and how you can use it to accomplish your cloud migration goals.
+Excited by the possibilities, you decide to do some research to find out how Azure Marketplace can help accomplish your cloud migration goals.
 
-Let’s start by reviewing what you find about using Azure Marketplace to help you find and try the cloud applications your organization needs.
+Let’s start by reviewing what you find about using Azure Marketplace to find and try the software your organization needs.
 
 ## Finding software and services in Azure Marketplace
 
