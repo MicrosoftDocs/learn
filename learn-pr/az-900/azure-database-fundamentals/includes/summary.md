@@ -4,7 +4,7 @@ In addition, you saw how Azure Cosmos DB a variety of popular APIs - SQL, MongoD
 
 ## Azure Fundamentals learning path
 
-This module is part of the [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/) learning path, which is one of six Azure Fundamentals learning paths.
+This module is part of the [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/) learning path, which is one of six learning paths for Azure Fundamentals.
 
 - [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
 - [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
