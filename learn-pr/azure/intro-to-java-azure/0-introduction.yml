@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid:
+metadata:
+  title: Introduction to Java on Azure
+  description: Introduction
+  ms.date: 
+  author: SandraAhlgrimm
+  ms.author: sakriema
+  ms.topic: introduction-to module
+  ms.prod: learning-azure
+title: Introduction to Java on Azure
+durationInMinutes: 30
+content: |
+  [!include[](includes/0-introduction.md)]
