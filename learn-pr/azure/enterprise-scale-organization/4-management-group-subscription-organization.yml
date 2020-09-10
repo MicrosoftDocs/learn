@@ -25,7 +25,7 @@ quiz:
       isCorrect: false
       explanation: True, management groups can be used to aggregate policies and initiative assignments via Azure Policy.
 
-  - content: Subscriptions are a unit of management, billing, and scale within Azure.  Which one of these items follows the Microsot Cloud Adaption Framework for Azure as a valid design consideration or recommendation?
+  - content: Subscriptions are a unit of management, billing, and scale within Azure.  Which one of these items follows the Microsoft Cloud Adaption Framework for Azure as a valid design consideration or recommendation?
     choices:
     - content: Use multiple identity subscriptions to host Windows Server Active Directory domain controllers.
       isCorrect: false
