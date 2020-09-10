@@ -14,9 +14,6 @@ abstract: |
   In this module, you will:
   - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
   - Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
-  - Understand key endpoint management considerations, such as platform and provisioning.
-  - Understand the management aspects and lifecycles of managed devices and apps.
-  - Understand the benefits of Microsoft Endpoint Manager.
 prerequisites: None
 iconUrl: http://via.placeholder.com/120x120
 ratingEnabled: false
@@ -29,19 +26,13 @@ products:
 units:
 - learn.intro-to-endpoint-manager.1-introduction
 - learn.intro-to-endpoint-manager.2-what-is-endpoint-manager
-- learn.intro-to-endpoint-manager.3-endpoint-protection-concepts
-- learn.intro-to-endpoint-manager.4-understand-endpoint-environment
-- learn.intro-to-endpoint-manager.5-platform-considerations
-- learn.intro-to-endpoint-manager.6-understand-provisioning
-- learn.intro-to-endpoint-manager.7-device-management-concepts
-- learn.intro-to-endpoint-manager.8-device-enrollment-methods
-- learn.intro-to-endpoint-manager.9-app-management-concepts
-- learn.intro-to-endpoint-manager.10-policy-management-based-on-groups
-- learn.intro-to-endpoint-manager.11-understand-conditional-access
-- learn.intro-to-endpoint-manager.12-understand-endpoint-security
-- learn.intro-to-endpoint-manager.13-analyze-resolve-compliance-issues
-- learn.intro-to-endpoint-manager.14-benefits-of-endpoint-manager
-- learn.intro-to-endpoint-manager.15-knowledge-check
-- learn.intro-to-endpoint-manager.16-summary
+- learn.intro-to-endpoint-manager.3-intune
+- learn.intro-to-endpoint-manager.4-endpoint-configuration-manager
+- learn.intro-to-endpoint-manager.5-cloud-attach
+- learn.intro-to-endpoint-manager.6-desktop-analytics
+- learn.intro-to-endpoint-manager.7-endpoint-analytics
+- learn.intro-to-endpoint-manager.8-windows-autopilot
+- learn.intro-to-endpoint-manager.9-knowledge-check
+- learn.intro-to-endpoint-manager.10-summary
 badge:
   uid: learn.intro-to-endpoint-manager.badge

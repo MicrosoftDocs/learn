@@ -40,6 +40,3 @@ In this module, you will:
 
 - Learn what endpoints are and what Microsoft Endpoint Manager can do for you and your organization.
 - Learn about the different products, services, and capabilities that encompass Microsoft Endpoint Manager.
-- Understand key endpoint management considerations, such as platform and provisioning.
-- Understand the management aspects and lifecycles of managed devices and apps.
-- Understand the benefits of Microsoft Endpoint Manager.

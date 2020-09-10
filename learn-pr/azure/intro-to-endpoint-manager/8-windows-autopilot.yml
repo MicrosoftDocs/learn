@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-endpoint-manager.8-device-enrollment-methods
+uid: learn.intro-to-endpoint-manager.8-windows-autopilot
 title: Device enrollment methods
 metadata:
   title: Device enrollment methods
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
-  [!include[](includes/8-device-enrollment-methods.md)]
+  [!include[](includes/8-windows-autopilot.md)]

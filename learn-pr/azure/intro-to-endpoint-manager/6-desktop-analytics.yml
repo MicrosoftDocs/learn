@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.intro-to-endpoint-manager.6-understand-provisioning
+uid: learn.intro-to-endpoint-manager.6-desktop-analytics
 title: Understand provisioning
 metadata:
   title: Understand provisioning
@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-understand-provisioning.md)]
+  [!include[](includes/6-desktop-analytics.md)]
