@@ -1,6 +1,6 @@
 Now it's time to really score the test and assign your user a character from Wonder Woman 1984!
 
-With five questions and different choices, you'll use some variables to guide the response. You'll add and subtract points from each of the four characters depending on what the user choses to answer. At the end, you'll tally up all the points and tell the user which character they are most like.
+With five questions and different choices, you'll use some variables to guide the response. You'll add and subtract points from each of the four characters depending on what the user chose to answer. At the end, you'll tally up all the points and tell the user which character they are most like.
 
 Add this code to the bottom of your file. Notice that this time you can use else-statements because in this code you wrote in the last unit if the user chose something other than "A" or "B" you set each variable to "A". 
 

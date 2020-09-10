@@ -47,7 +47,7 @@ else:
     print( "You're brave!" )
 ```
 
-This approach will work the same as the two if-statements above, if the user types either "A" or "B". The only difference if that now if the user chooses "A", then the code won't even check if they chose "B". So code doesn't get run unnecessarily. It's an *optimization*.
+This approach will work the same as the two if-statements above, if the user types either "A" or "B". The only difference is that now if the user chooses "A", then the code won't even check if they chose "B". So code doesn't get run unnecessarily. It's an *optimization*.
 
 The only issue here is that if the user actually types "C", the program would still print "You're brave!" because the code doesn't check what value `weapon` has, it just prints "You're brave!" if `weapon` is anything but "A".
 

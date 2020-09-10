@@ -1,6 +1,6 @@
 It's finally time to ask the user all of your questions. 
 
-For now, you will just confirm what the user choses with print statements and in the next unit you will actually assign values to each choice and present them with their character!
+For now, you will just confirm what the user chose with print statements and in the next unit you will actually assign values to each choice and present them with their character!
 
 One additional piece included in this code is that when the user chose something other than "A" or "B", you will also assign that value, so that they can still get their character.
 
