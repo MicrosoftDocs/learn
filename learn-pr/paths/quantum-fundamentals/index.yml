@@ -1,0 +1,26 @@
+### YamlMime:LearningPath
+uid: learn.quantum-fundamentals
+metadata:
+  description: TODO
+  brand: azure
+  ms.date: 09/20/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Quantum computing fundamentals
+summary: TODO
+prerequisites: None
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- qdk
+- azure-quantum
+modules:
+- learn.quantum.qsharp-create-first-quantum-development-kit
+- learn.quantum.solve-quantum-inspired-optimization-problems
+trophy:
+  uid: learn.quantum-fundamentals.trophy
