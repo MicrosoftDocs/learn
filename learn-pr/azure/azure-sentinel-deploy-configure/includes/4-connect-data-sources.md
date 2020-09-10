@@ -26,7 +26,7 @@ Because these solutions use Azure Foundation for out-of-the-box interoperability
 
 ### External solution connections through APIs
 
-Some data sources are connected by using APIs that the connected data source provides. Typically, most security technologies provide a set of APIs through which event logs can be retrieved. These APIs connect to Azure Sentinel, gather specific data types, and store the data in the selected Log Analytics workspace:
+Some data sources are connected by using APIs that the connected data source provides. Typically, most security technologies provide a set of APIs through which event logs can be retrieved. These APIs connect to Azure Sentinel, gather specific data types, and store the data in the selected Azure Monitor Log Analytics workspace:
 
 - Alcide kAudit
 - Barracuda Web Application Firewall
