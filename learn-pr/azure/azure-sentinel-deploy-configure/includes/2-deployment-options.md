@@ -2,7 +2,7 @@ As the Contoso lead system engineer and Azure administrator who is tasked with d
 
 ## Use Azure Sentinel to retrieve data and monitor incidents
 
-By deploying connectors from Azure Sentinel to services, you can retrieve data from different data sources that Contoso's management wants to monitor. After Azure Sentinel retrieves the log data from the services, it performs correlation across data sources, and you can manage that data by using the Log Analytics workspace.
+By deploying connectors from Azure Sentinel to services, you can retrieve data from different data sources that Contoso's management wants to monitor. After Azure Sentinel retrieves the log data from the services, it performs correlation across data sources, and you can manage that data by using the Azure Monitor Log Analytics workspace.
 
 Azure Sentinel detects data incidents from connected sources and alerts you when action is necessary. Additionally, you can use its overviews, dashboards, and custom queries to gain insights into your raw data and potentially malicious events.
 
