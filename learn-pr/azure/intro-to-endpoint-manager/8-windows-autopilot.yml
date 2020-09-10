@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.8-windows-autopilot
-title: Device enrollment methods
+title: Windows autopilot
 metadata:
-  title: Device enrollment methods
-  description: Understand the enrollment methods available for each platform.
+  title: Windows autopilot
+  description: Windows Autopilot simplifies enrolling devices in Intune.
   ms.date: 08/27/2020
   author: Erikre
   ms.author: erikre

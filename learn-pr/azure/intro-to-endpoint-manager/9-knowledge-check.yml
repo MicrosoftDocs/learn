@@ -36,28 +36,6 @@ quiz:
     - content: "Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses."
       isCorrect: true
       explanation: "Microsoft Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses. Additionally, endpoints also include the apps used by an organization. These endpoints are managed in different environments based on where these endpoints are located. Microsoft Endpoint Manager manages multiple endpoint environments, including cloud endpoints, on-premises endpoints, and co-managed endpoints."
-  - content: "What is conditional access?"
-    choices:
-    - content: "Conditional access allows anonymous users to access access organizational resources on trusted devices. "
-      isCorrect: false
-      explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
-    - content: "Conditional access prevents trusted users from accessing trusted devices or trusted apps."
-      isCorrect: false
-      explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
-    - content: "Conditional access ensures that only trusted users can access organizational resources on trusted devices using trusted apps."
-      isCorrect: true
-      explanation: "Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. Conditional Access is an Azure Active Directory capability. With Conditional Access, you can control the devices and apps that can connect to an email and company resources."
-  - content: "What does the data protection framework using Intune app protection policies provide?"
-    choices:
-    - content: "The data protection framework provides a code-based approach to help implement enterprise level app protection policies."
-      isCorrect: false
-      explanation: "When configuring App Protection Policies in Intune, the number of various settings and options enable organizations to tailor the protection to their specific needs. Due to this flexibility, it may not be obvious which permutation of policy settings are required to implement a complete scenario. To help organizations prioritize client endpoint hardening endeavors, Intune guidance provides a taxonomy for its APP data protection framework for mobile app management."
-    - content: "The data protection framework provides a methodology for end-users, allowing them to follow safe data protection rules and practices."
-      isCorrect: false
-      explanation: "When configuring App Protection Policies in Intune, the number of various settings and options enable organizations to tailor the protection to their specific needs. Due to this flexibility, it may not be obvious which permutation of policy settings are required to implement a complete scenario. To help organizations prioritize client endpoint hardening endeavors, Intune guidance provides a taxonomy for its APP data protection framework for mobile app management."
-    - content: "The data protection framework provides enterprise configuration levels to help implement a guided approach to app protection."
-      isCorrect: true
-      explanation: "When configuring App Protection Policies in Intune, the number of various settings and options enable organizations to tailor the protection to their specific needs. Due to this flexibility, it may not be obvious which permutation of policy settings are required to implement a complete scenario. To help organizations prioritize client endpoint hardening endeavors, Intune guidance provides a taxonomy for its APP data protection framework for mobile app management."
   - content: "What is co-management as it applies to Microsoft Endpoint Manager?"
     choices:
     - content: "Co-management describes how an organization can concurrently manage Windows 10 devices using both Configuration Manager and Microsoft Intune. "

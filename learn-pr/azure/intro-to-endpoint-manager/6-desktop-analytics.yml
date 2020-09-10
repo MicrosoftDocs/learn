@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-endpoint-manager.6-desktop-analytics
-title: Understand provisioning
+title: Desktop Analytics
 metadata:
-  title: Understand provisioning
-  description: Understand provisioning.
+  title: Desktop Analytics
+  description: Desktop Analytics is a cloud-based service that integrates with Configuration Manager to help you update devices.
   ms.date: 08/27/2020
   author: Erikre
   ms.author: erikre
