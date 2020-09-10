@@ -1,6 +1,6 @@
-Tailwind Traders wants to be more methodical and careful when pushing new versions of their ecommerce website to production.  They will expand their quality assurance team, and use the cloud to create 
+Tailwind Traders wants to be more methodical and careful when pushing new versions of their ecommerce website to production.  They will expand their quality assurance team, and use the cloud to create and host VMs to create testing environments that match the production environment.
 
-Management has concerns around costs of a more automated test environment. For instance, they want to make sure that the QA professionals are not wasting time configuring the testing environment to match the production environment. They want to ensure that VMs are destroyed when no longer in use.  They want to limit the number of VMs that each quality assurance professional is allowed to spin up.  Also, they want to ensure that each environment is configured correctly and consistently with their production environment.
+Management has concerns around costs of a more automated test environment. For instance, they want to make sure that the QA professionals are not wasting time configuring the testing environment to match the production environment. They want to ensure that VMs are destroyed when no longer in use. They want to limit the number of VMs that each quality assurance professional is allowed to spin up. Also, they want to ensure that each environment is configured correctly and consistently with their production environment.
 
 ### Which service should we choose?
 
