@@ -7,7 +7,7 @@ Once your Cognitive Services are deployed, applications consume from the contain
     export COGNITIVE_SERVICE_KEY=<subscription_key>
     ```
 
-    :::zone pivot="python"
+    ::: zone pivot="python"
 
     Let’s run a sample application that consumes from our language detection container:
 
@@ -56,9 +56,9 @@ Once your Cognitive Services are deployed, applications consume from the contain
     Language used:  Spanish
     ```
 
-    :::zone-end
+    ::: zone-end
 
-    :::zone pivot="csharp"
+    ::: zone pivot="csharp"
 
     Let’s run a sample application that consumes from our language detection container:
 
@@ -109,7 +109,7 @@ Once your Cognitive Services are deployed, applications consume from the contain
     Language used: Spanish
     ```
 
-    :::zone-end
+    ::: zone-end
 
 ## Cleanup
 

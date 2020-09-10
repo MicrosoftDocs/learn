@@ -4,13 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/11/2020
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
   questions:
   - content: "When submitting data to Cognitive Services in a container, where is the data processed?"
@@ -24,7 +24,7 @@ quiz:
     - content: "In both the container and the Azure service."
       isCorrect: false
       explanation: "Incorrect. When submitting data to the container it is not sent to the Azure service."
-  - content: "Which of the following is NOT a reason for choosing Kubernetes?"
+  - content: "Which of the following is an invalid reason for choosing Kubernetes?"
     choices:
     - content: "Scripted deployment."
       isCorrect: false

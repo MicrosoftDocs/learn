@@ -4,13 +4,13 @@ title: Consume Cognitive Services from a container
 metadata:
   title: Consume Cognitive Services from a container
   description: "Consume Cognitive Services from a container"
-  ms.date: 09/11/2020
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-python
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/5-consume-container.md)]

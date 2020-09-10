@@ -73,9 +73,9 @@ Required configuration settings for all Cognitive Services containers:
 
 You will need to retrieve two required values: **subscription key** and **endpoint**. The Azure Cognitive Service, in this scenario Text Analytics, should have been created in Azure. The Azure endpoint needs to exist even though the model is included in the container. The endpoint is used for billing and metering only, not for processing data.
 
-Your specific Cognitive Services subscription key and service endpoint (for billing purposes) need to be provided. These can be retrieved by browsing to the Cognitive Services instance in Azure Portal and copying the values from the Keys and Endpoint section. You will need these values for building the custom image in the next exercise.
+Your specific Cognitive Services subscription key and service endpoint (for billing purposes) need to be provided. These can be retrieved by browsing to the Cognitive Services instance in Azure portal and copying the values from the Keys and Endpoint section. You will need these values for building the custom image in the next exercise.
 
-:::image type="content" source="../media/keys-endpoint.png" alt-text="Screenshot showing where to find KEY 1 and ENDPOINT on the Cognitive Services Keys and Endpoint screen.":::
+:::image type="content" source="../media/03-container-reuse-key-and-endpoint-ssm.png" alt-text="Screenshot showing where to find KEY 1 and ENDPOINT on the Cognitive Services Keys and Endpoint screen.":::
 
 ## Create Containers for Reuse
 
@@ -89,17 +89,21 @@ Let’s build a docker image for language detection:
 
 1. Copy and paste the following text into a file named Dockerfile.
 
+    ```
     FROM mcr.microsoft.com/azure-cognitive-services/language
     ARG key
     ARG billing_endpoint
     ENV apikey=$key
     ENV billing=$billing_endpoint
     ENV eula=accept
+    ```
 
 1. Set two environment variables, replacing <subscription_key> and <service-name> with your own values. You will use these each time you build your image.
 
+    ```
     export COGNITIVE_SERVICE_KEY=<subscription_key>
     export COGNITIVE_SERVICE_ENDPOINT=https://<service-name>.cognitiveservices.azure.com/
+    ```
 
 1. Build the image from the Dockerfile, using the image name cog-svc-language which is used in the next section.
 

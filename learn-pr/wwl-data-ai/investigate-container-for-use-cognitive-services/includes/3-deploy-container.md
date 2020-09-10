@@ -64,7 +64,7 @@ For the first step in deployment, you will tag the Docker image and publish to A
     docker push <login-server>/cog-svc:v1
     ```
 
-### Deploy to Azure Kubernetes Service
+### Deploy container to Azure Kubernetes Service
 
 To deploy to Kubernetes, you need a manifest file. This file defines the desired deploy state, including which image, port, billing endpoint, and API key will be used. In a complete project, the file will include additional resources that interact with your Cognitive Services container. However, for this example you will deploy the single Cognitive Service container and use it from your local application.
 
@@ -134,7 +134,9 @@ To deploy to Kubernetes, you need a manifest file. This file defines the desired
 
 1. You will authenticate to Azure Kubernetes Service before deploying the containers. Azure CLI provides a way to store Kubernetes Service credentials by appending to the file <user-home>/.kube/config. Retrieve and store the credentials for the Azure Kubernetes Service with the following command, replacing <resource-group> and <aks-name> with your values.
     
+    ```
     az aks get-credentials --resource-group <resource-group> --name <aks-name>
+    ```
 
 1. Run the deploy with the apply command.
 
@@ -156,7 +158,6 @@ To deploy to Kubernetes, you need a manifest file. This file defines the desired
     ```azurecli
     kubectl get service cog-svc
     ```
-    kubectl get service cog-svc
 
     The output from this command includes the EXTERNAL-IP and PORT:
 
