@@ -14,7 +14,6 @@ durationInMinutes: 12
 content: |
   [!include[](includes/exercise-create-sql-database.md)]
 tasks:
-tasks:
 - action: exists
   environment: azure
   azure:
