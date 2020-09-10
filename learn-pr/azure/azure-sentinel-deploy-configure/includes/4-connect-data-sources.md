@@ -24,6 +24,22 @@ Azure Sentinel interoperates natively with the following Azure and non-Azure ser
 
 Because these solutions use Azure Foundation for out-of-the-box interoperability, you can connect Azure Sentinel to them with only a few steps.
 
+### External solution connections through APIs
+
+Some data sources are connected by using APIs that the connected data source provides. Typically, most security technologies provide a set of APIs through which event logs can be retrieved. These APIs connect to Azure Sentinel, gather specific data types, and then send them to Azure Monitor Logs:
+
+- Alcide kAudit
+- Barracuda Web Application Firewall
+- Barracuda CloudGen Firewall
+- Citrix Analytics for Security
+- F5 BIG-IP
+- Forcepoint DLP
+- Perimeter 81 activity logs
+- Squadra Technologies secRMM
+- Symantec ICDx
+- Zimperium Mobile Threat Defense
+
+
 ### Connect to Azure AD
 
 The most direct way to start collecting data is to use the built-in Azure Sentinel connectors. A list of the built-in connectors is accessible through the Azure Sentinel interface. Azure Sentinel provides recommendations for which workbooks you should install for each connector so that you can immediately get interesting insights from your data.
@@ -49,26 +65,6 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
 
     :::image type="content" source="../media/Sentinel-AAD-connector-3.png" alt-text="The screenshot depicts the Azure Sentinel connector configuration options." border="true":::
 
-### Threat detection rule templates
-
-After connecting your data sources to Azure Sentinel, you'll want to be notified when something suspicious occurs. To support this, Azure Sentinel provides out-of-the-box, built-in threat detection-rule templates that you can use as-is or customize. These templates were designed by Microsoft security experts and analysts based on known threats, common attack vectors, and suspicious activity escalation chains. Rules that are created from these templates will automatically search across your environment for any activity that looks suspicious. You can customize many of the templates to search for activities, or filter them out, according to your needs. 
-
-Azure Sentinel uses a fusion technique to correlate the alerts that these rules generate into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you assign and investigate in your environment. You can review the logs in the built-in dashboards and start building queries in Log Analytics to investigate the data.
-
-### External solution connections through APIs
-
-Some data sources are connected by using APIs that the connected data source provides. Typically, most security technologies provide a set of APIs through which event logs can be retrieved. These APIs connect to Azure Sentinel, gather specific data types, and then send them to Azure Monitor Logs:
-
-- Alcide kAudit
-- Barracuda Web Application Firewall
-- Barracuda CloudGen Firewall
-- Citrix Analytics for Security
-- F5 BIG-IP
-- Forcepoint DLP
-- Perimeter 81 activity logs
-- Squadra Technologies secRMM
-- Symantec ICDx
-- Zimperium Mobile Threat Defense
 
 ### Validate your data source connection
 
@@ -83,6 +79,12 @@ The main body of the overview page provides insight into the security status of 
 The events and alerts over time section lists the number of events and how many alerts were created from those events. If events are being registered, you know your connectors are working.
 
 Depending on what service the Contoso administrator initially connected to, there could be a delay before some alerts display. Informational alerts should be the first to display.
+
+### Threat detection rule templates
+
+After connecting your data sources to Azure Sentinel, you'll want to be notified when something suspicious occurs. To support this, Azure Sentinel provides out-of-the-box, built-in threat detection-rule templates that you can use as-is or customize. These templates were designed by Microsoft security experts and analysts based on known threats, common attack vectors, and suspicious activity escalation chains. Rules that are created from these templates will automatically search across your environment for any activity that looks suspicious. You can customize many of the templates to search for activities, or filter them out, according to your needs. 
+
+Azure Sentinel uses a fusion technique to correlate the alerts that these rules generate into *incidents*. Incidents are groups of related alerts that together create an actionable incident that you assign and investigate in your environment. You can review the logs in the built-in dashboards and start building queries in Log Analytics to investigate the data.
 
 ### Built-in workbooks
 
