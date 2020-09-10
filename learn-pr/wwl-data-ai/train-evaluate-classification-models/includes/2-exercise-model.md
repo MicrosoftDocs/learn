@@ -34,7 +34,7 @@ To run the notebook used in this exercise, you will need a compute instance in y
 2. On the **Compute Instances** tab, if you already have a compute instance, start it; otherwise create a new compute instance with the following settings:
     - **Compute name**: *enter a unique name*
     - **Virtual Machine type**: CPU
-    - **Virtual Machine size**: Standard_DS2_v2
+    - **Virtual Machine size**: Standard_DS11_v2
 3. Wait for the compute instance to start (this may take a minute or so)
 
 ### Clone the **ml-basics** repository
@@ -56,7 +56,7 @@ The files used in this module (and other related modules) are published in the *
 > [!NOTE]
 > We highly recommend using Jupyter in an Azure Machine Learning workspace for this exercise. This setup ensures the correct version of Python and the various packages you will need are installed; and after creating the workspace once, you can reuse it in other modules. If you prefer to complete the exercise in a Python environment on your own computer, you can do so. You'll find details for configuring a local development environment that uses Visual Studio Code at [Running the labs on your own computer](https://github.com/MicrosoftDocs/ml-basics/blob/master/local-setup.md?azure-portal=true). Be aware that if you choose to do this, the instructions in the exercise may not match your notebooks user interface.
 
-## Explore data in a Jupyter notebook
+## Explore classification
 
 After you've created a Jupyter environment and cloned the **ml-basics** repository, you're ready to explore classification.
 
