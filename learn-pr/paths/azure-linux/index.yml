@@ -35,6 +35,7 @@ modules:
 - learn.wwl.introduction-open-source-database-migration-azure
 - learn.build-and-run-a-web-application-with-the-mean-stack-on-an-azure-linux-vm
 - learn.host-a-web-application-with-azure-web-apps
+- learn.optimize-web-app-with-redis
 - learn.create-serverless-logic-with-functions
 - learn.intro-to-azure-kubernetes-service
 - learn.run-docker-containers-aci

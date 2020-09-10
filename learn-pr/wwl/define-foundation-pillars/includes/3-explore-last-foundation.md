@@ -134,4 +134,4 @@ These DevOps technologies, combined with people and processes, enable teams to c
 
 Using the robust integration of these DevOps capabilities in Azure allows us to bootstrap our **Dojo Classroom** labs with auto-provisioning to provide hands-on experiences during the master class.
 
-The Dojo Classroom environment includes everything you need in the immersive Dojo classroom, including tracking with ACR!
+The Dojo Classroom environment includes everything you need in the immersive Dojo classroom, including tracking with ACR (Azure Consumed Revenue)!
