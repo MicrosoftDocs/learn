@@ -3,12 +3,12 @@ uid: learn.simplify-cloud-procurement-governance-azure-marketplace.2-find-try-so
 title: Find and try software in Azure Marketplace
 metadata:
   title: Find and try software in Azure Marketplace
-  description: In this unit, we'll explain how you can use Azure Marketplace to find and try IT products and services from Azure Marketplace
-  ms.date: 9/9/2020
+  description: In this unit, we'll explain how you can use Azure Marketplace to find and try IT products and services from Azure marketplace
+  ms.date: 09/10/2020
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 8
+durationInMinutes: 6
 content: |
   [!include[](includes/2-find-try-software-azure-marketplace.md)]
