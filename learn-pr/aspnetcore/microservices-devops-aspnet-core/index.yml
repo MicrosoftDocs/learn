@@ -2,14 +2,14 @@
 uid: learn.microservices-devops-aspnet-core
 metadata:
   title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
-  description: Implement a GitHub Actions pipeline to deploy to Azure Kubernetes Service from a GitHub repository.
+  description: Implement GitHub Actions to build and deploy to Azure Kubernetes Service from a GitHub repository.
   ms.date: 09/02/2020
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
-summary: Implement a GitHub Actions pipeline to deploy to Azure Kubernetes Service from a GitHub repository.
+summary: Implement GitHub Actions to build and deploy to Azure Kubernetes Service from a GitHub repository.
 abstract: |
   In this module, you will:
   - Deploy an existing ASP.NET Core microservices app to AKS.
