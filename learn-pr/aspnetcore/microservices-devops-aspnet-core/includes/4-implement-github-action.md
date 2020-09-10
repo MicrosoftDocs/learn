@@ -2,10 +2,10 @@ In this unit, you'll implement and test a CI/CD pipeline by performing the follo
 
 - Set up permissions to deploy to ACR and AKS from GitHub
 - Create a GitHub Action to implement a simple CI/CD pipeline
-- Modify the SPA
-- Update the SPA version in the Helm chart
+- Modify the coupon service
+- Update the coupon service version in the Helm chart
 - Verify that the changes where deployed to the AKS cluster
-- Rollback a deployment
+- Roll back a deployment
 
 ## Set up permissions to deploy from GitHub
 
@@ -53,7 +53,7 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
     cat ~/clouddrive/aspnet-learn-temp/config.txt
     ```
 
-    Name the secrets as follows and use the values provided in the text output.
+    Name the secrets as follows and use the values provided in the text output:
     - `REGISTRY_USERNAME`
     - `REGISTRY_PASSWORD`
 
@@ -235,25 +235,24 @@ Create a GitHub Action for the deployment with the following steps:
 
 These two GitHub Action definitions will be part of the repository from now on. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
 
-## Modify the Coupon.API microservice
+## Modify the coupon service
 
-You've just finished creating your first CI/CD pipeline and someone from the marketing department wants to start a campaign for the new discount coupon feature, so the customers can get whatever discount they want, if they just guess the correct codes and nobody has used them before (Somehow they think this is a good idea 😂)
+You've just finished creating your first CI/CD pipeline. The Marketing department wants to start a campaign to better track coupon code usage. With this feature, Marketing can better understand which coupon codes are most effective in driving sales. To support this feature, make the following changes in the `main` branch:
 
-Since you can guess this won't last too long, that is, this is just a proof-of-concept (POC), you're doing the minimum possible changes, right in the `main` branch:
-
-1. In the *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs* file, replace the comment `// Add LogInformation call` with the following code:
+1. Select the **Code** tab in your fork of the repository.
+1. Edit the *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs* file by clicking the pencil (edit) icon. In the *CouponController.cs* file, replace the comment `// Add LogInformation call` with the following code:
 
     ```csharp
     _logger.LogInformation("Applying coupon {CouponCode}", code);
     ```
 
     The preceding code logs the coupon code being applied.
-1. Commit and push this change to the `main` branch.
+1. Select the **Commit directly to the `main` branch** radio button and select the **Commit changes** button.
 
     The build workflow is triggered automatically. If the build completes successfully, you'll see a variation of the following output:
 
     :::image type="content" source="../media/4-implement-github-action/eshop-build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-implement-github-action/eshop-build-workflow-success.png":::
-1. In the *deploy/k8s/helm-simple/coupon/Chart.yaml* file, update the `appVersion` property value to `1.1.0`.
+1. Edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
     ```yml
     apiVersion: v2
@@ -272,40 +271,48 @@ Since you can guess this won't last too long, that is, this is just a proof-of-c
 
 ## Wait for deployment
 
-If you select the **Actions** tab in your repository, you can monitor the progress, as shown in the next image:
+1. Select the **Actions** tab in your repository to monitor the deployment's progress.
 
-:::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
+    :::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
 
-In the preceding image, you can see the `Build and push Docker images` step running and the log output.
+    In the preceding image, you can see the `Build and push Docker images` step running and the log output.
 
-If you monitor your pods using the command `kubectl get pods -w` you should see something like this:
+1. Run the following command to monitor your pods:
 
-:::image type="content" source="../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/replacing-pods.png":::
+    ```bash
+    kubectl get pods -w
+    ```
 
-In the preceding image, you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
+    :::image type="content" source="../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/replacing-pods.png":::
 
-You can also check the `webspa` microservice deployment history, with the command `helm history eshoplearn-webspa` to get something like this:
+    In the preceding image, you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
 
-:::image type="content" source="../media/4-implement-github-action/deployment-history.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed" border="true" lightbox="../media/4-implement-github-action/deployment-history.png":::
+1. Run the following command to check the `webspa` service deployment history:
 
-At this point, you just have to refresh the browser to see the changes, as shown in the next image.
+    ```bash
+    helm history eshoplearn-webspa
+    ```
 
-:::image type="content" source="../media/4-implement-github-action/changes-deployed.png" alt-text="WebSPA home page view, showing the 'promotion message'" border="true" lightbox="../media/4-implement-github-action/changes-deployed.png":::
+    :::image type="content" source="../media/4-implement-github-action/deployment-history.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed" border="true" lightbox="../media/4-implement-github-action/deployment-history.png":::
 
-## Rollback a deployment
+1. Refresh the browser to see the changes, as shown in the next image:
 
-Once the deployment is completed and customer feedback starts coming in, you receive a "visit" from the Marketing head... and after a very short "conversation" you are "requested" to fix the issue because "the experiment" didn't go well enough, so you just run the following command:
+    :::image type="content" source="../media/4-implement-github-action/changes-deployed.png" alt-text="WebSPA home page view, showing the 'promotion message'" border="true" lightbox="../media/4-implement-github-action/changes-deployed.png":::
+
+## Roll back a deployment
+
+Once the deployment is completed and customer feedback starts coming in, you receive a change request from the Marketing department. The request is to remove the coupon code tracking campaign. Run the following command to revert the campaign changes:
 
 ```bash
 helm rollback eshoplearn-webspa
 ```
 
-Checking the deployment history again you know that everything is back to normal 😅:
+The deployment history confirms that everything is back to normal:
 
 :::image type="content" source="../media/4-implement-github-action/deployment-rollback.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.0.0 is now deployed" border="true" lightbox="../media/4-implement-github-action/deployment-rollback.png":::
 
 > **NOTE**
-> In a real-life scenario, you'd include at least one tests step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
+> In a real-life scenario, you'd include at least one test step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also, the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
 >
 > You'd usually also have the pipeline triggered on each PR, to make sure the PR builds correctly and tests run successfully, before reviewing the PR.
 
