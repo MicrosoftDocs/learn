@@ -20,7 +20,7 @@ One of the most common phishing goals is to collect your personal information, s
 
 Another common phishing goal is to deliver malicious software, called *malware*. Opening one of these dangerous attachments could result in running a program that could harm your computer, or even lock you out of it, unless you pay a ransom. This malware is known as *ransomware*.
 
-Phishing is one of the most common threats on the internet. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-Internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is a popular and successful way for a criminal to steal your data.
+Phishing is one of the most common threats on the internet. In 2019 alone, the [FBI's Internet Crime Complaint Center (IC3) reported over 450,000 complaints, recording more than $3.5 billion in losses to individuals and businesses.](https://www.fbi.gov/news/stories/2019-internet-crime-report-released-021120?azure-portal=true) This only represents a small number of the actual cases. In other words, it is a popular and successful way for a criminal to steal your data.
 
 :::image type="content" source="../media/2-phishing-stats.svg" alt-text="Diagram showing a phishing attempt by an attacker with statistical descriptions the prevalence of phishing attacks.":::
 
@@ -34,7 +34,7 @@ Another common approach is to offer something too good to be true. The attacker 
 
 One other common approach that attackers will use is to take advantage of your curiosity. For example, they may be making a fake job offer, pretending to be an old friend, or asking for help for their fake nonprofit.
 
-:::image type="content" source="../media/2-phishing-examples.svg" alt-text="Diagram describing common social engineering tactics. Examples describe taking advantage of human emotions and leveraging human curiosity. Includes an example with valued goods as a common item phishing attackers will leverage.":::
+:::image type="content" source="../media/2-phishing-examples.png" alt-text="Diagram describing common social engineering tactics. Examples describe taking advantage of human emotions and leveraging human curiosity. Includes an example with valued goods as a common item phishing attackers will leverage.":::
 
 ## What can you do to protect yourself?
 

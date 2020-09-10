@@ -20,7 +20,7 @@ Let's look at an example of using MFA to log into an account:
 
 In the example, you used MFA to log into an account with two factors: a password and an app on a physical device you had in your possession.
 
-:::image type="content" source="../media/4-mfa.svg" alt-text="Diagram depicting two factors, a password and an authentication device, showcasing how an account is logged into.":::
+:::image type="content" source="../media/4-multi-factor-authentication.png" alt-text="Diagram depicting two factors, a password and an authentication device, showcasing how an account is logged into.":::
 
 ## Why MFA?
 
