@@ -1,13 +1,13 @@
 Once your Cognitive Services are deployed, applications consume from the containerized Cognitive Services endpoint rather than the default Azure endpoint. Your sample application can be a list of documents representing health worker notes. The application will use the correct Cognitive Services library to consume a prediction from the containerized endpoint. In this case, you will use the text analytics client library. The detected language retrieved from the service will be printed out for each document. Let’s run a sample application that connects through the exposed endpoint of our Kubernetes deployment.
 
+::: zone pivot="python"
+
 1. First, set the environment variables we will use to connect, CONTAINER_ENDPOINT and COGNITIVE_SERVICE_KEY (if not already set).  Set the environment variables for your session using console window (bash) with the following command.
 
     ```bash
     export CONTAINER_ENDPOINT=https://<EXTERNAL-IP>:5000
     export COGNITIVE_SERVICE_KEY=<subscription_key>
     ```
-
-    ::: zone pivot="python"
 
     Let’s run a sample application that consumes from our language detection container:
 
@@ -56,9 +56,16 @@ Once your Cognitive Services are deployed, applications consume from the contain
     Language used:  Spanish
     ```
 
-    ::: zone-end
+::: zone-end
 
-    ::: zone pivot="csharp"
+::: zone pivot="csharp"
+
+1. First, set the environment variables we will use to connect, CONTAINER_ENDPOINT and COGNITIVE_SERVICE_KEY (if not already set).  Set the environment variables for your session using console window (bash) with the following command.
+
+    ```bash
+    export CONTAINER_ENDPOINT=https://<EXTERNAL-IP>:5000
+    export COGNITIVE_SERVICE_KEY=<subscription_key>
+    ```
 
     Let’s run a sample application that consumes from our language detection container:
 
@@ -109,7 +116,7 @@ Once your Cognitive Services are deployed, applications consume from the contain
     Language used: Spanish
     ```
 
-    ::: zone-end
+::: zone-end
 
 ## Cleanup
 
