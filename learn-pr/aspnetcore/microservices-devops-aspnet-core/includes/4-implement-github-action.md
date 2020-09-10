@@ -274,7 +274,7 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
 1. Select the **Actions** tab in your repository to monitor the deployment's progress.
 
-    :::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Deployment action output from the deploy-to-aks job" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
+    :::image type="content" source="../media/4-implement-github-action/deployment-action-output.png" alt-text="Deployment action output from the deploy-to-aks job" border="true" lightbox="../media/4-implement-github-action/deployment-action-output.png":::
 
     In the preceding image, you can see the `deploy-to-aks` job was completed in the log output. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-ask` job. You'll see a variation of the following screen when the deployment completes:
 
