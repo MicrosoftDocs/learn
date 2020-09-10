@@ -1,6 +1,6 @@
 As the Contoso administrator who is tasked with deploying a POC environment for Azure Sentinel, you must understand how connections that use agents differ from built-in connectors.
 
-## External solution connections through an agent
+## Connect to variety of sources using industry standard Syslog or CEF agents
 
 Azure Sentinel can be connected via an agent to any other data source that can perform real-time log streaming using the Syslog protocol.
 
