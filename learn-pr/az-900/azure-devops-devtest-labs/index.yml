@@ -2,18 +2,21 @@
 uid: learn.azure.azure-devops-devtest-labs
 metadata:
   title: Choose the best tools to help organizations build better solutions
-  description: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
+  description: Learn about the tools and services that help developers and operations engineers use build modern solutions for the cloud and on-premises.
   ms.date: 09/11/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best tools to help organizations build better solutions
-summary: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
+summary: Learn about the tools and services that help developers and operations engineers use build modern solutions for the cloud and on-premises.
 abstract: |
   By the end of this module, you will be able to:
   - Choose the best software development process tools and services for a given business scenario.
-prerequisites: None
+prerequisites: |
+  - A development or operations background is valuable but not required.
+  - It would be helpful for you to already be familiar with the concept of DevOps, it's larger purpose in the organization, it's goals, outcomes, etc.
+  - Likewise, familiarity with concepts like the Software Development Lifecycle, Source Code Management / Version Control, the different forms of testing, Continuous Integration / Continuous Delivery, Continuous Deployment, Infrastructure as Code, and so on, will help you immediately understand the value of the tools covered in this module.
 ratingEnabled: true
 iconUrl: /learn/achievements/azure-devops-devtest-labs.svg
 levels:

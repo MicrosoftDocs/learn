@@ -4,15 +4,15 @@ DevOps is a new approach that helps to align technical teams to work towards the
 
 DevOps requires a fundamental mindset change from the top down. Organizations cannot merely install software tools or adopt services and hope to get all of the benefits promised by DevOps.
 
-In this module, however, we will only focus on just the tools from Microsoft that can help accomplish some of the objectives of DevOps.  Alternatively, for organizations that are not ready to fully embrace the power of DevOps, they can support technical teams in their cloud development activities.
+In this module, however, we will only focus on just the tools from Microsoft that can help accomplish some of the objectives of DevOps.  Alternatively, for organizations that are not ready to fully embrace the power of DevOps, they can support technical teams in their cloud development activities.  If you're interested in learning more about DevOps in general, Microsoft Learn has [several learning paths and modules](https://docs.microsoft.com/learn/browse/?terms=DevOps) that can help you.
 
 Microsoft offers tools to enable source code management, Continuous Integration / Continuous Delivery, and automating the creation of testing environments.  Sometimes it seems as though these tools overlap in functionality, so in this module you'll learn about the product options and when to choose one product over another.
 
-## DevOps product options
+## Product options
 
 At a high level, there are three primary offerings, each of which are aimed at a specific audience and use case, and provide a diverse set of tools, services, programmatic APIs, and more.
 
-### Azure DevOps Services
+### Azure DevOps services
 
 Azure DevOps is a suite of services that address every stage of the Software Development Lifecycle (SDL).
 
