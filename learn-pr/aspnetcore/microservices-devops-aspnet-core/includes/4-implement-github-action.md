@@ -75,7 +75,7 @@ Create a GitHub Action for the build with the following steps:
     on:
       push:
         paths:
-        - './src/Services/Coupon/**'
+        - 'src/Services/Coupon/**'
         branches: [ main ]
 
     env:
@@ -171,7 +171,7 @@ Create a GitHub Action for the deployment with the following steps:
     on:
       push:
         paths:
-        - './deploy/k8s/helm-simple/coupon/*'
+        - 'deploy/k8s/helm-simple/coupon/*'
         branches: [ main ]
 
     env:
@@ -185,7 +185,7 @@ Create a GitHub Action for the deployment with the following steps:
       REGISTRY_LOGIN_SERVER: <PASTE_VALUE_HERE>
       IP_ADDRESS: <PASTE_VALUE_HERE>
 
-    jobs:  
+    jobs:
       deploy-to-aks:
         runs-on: ubuntu-latest
         steps:
@@ -249,16 +249,17 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
     The preceding code logs the coupon code being applied.
 1. Select the **Commit directly to the `main` branch** radio button and select the **Commit changes** button.
 
-    The build workflow is triggered automatically. If the build completes successfully, you'll see a variation of the following output:
+    The build workflow is triggered automatically. If the build completes successfully, you'll see a variation of the following output in the **Actions** tab:
 
     :::image type="content" source="../media/4-implement-github-action/eshop-build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-implement-github-action/eshop-build-workflow-success.png":::
 1. Edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
     ```yml
     apiVersion: v2
-    name: webspa
-    description: A Helm chart for Kubernetes
-    ...
+    name: coupon
+
+    # YAML omitted for brevity
+
     # This is the version number of the application being deployed. This version number should be
     # incremented each time you make changes to the application.
     appVersion: 1.1.0
@@ -267,7 +268,7 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
     It's important that you update the app version in the Helm chart. This change causes the pod to be replaced when the chart is deployed to AKS with `helm upgrade`.
 1. Commit and push this change to the `main` branch.
 
-    The deployment workflow is triggered automatically. The app should be deployed after a few minutes.
+    The deployment workflow is triggered automatically. The app is deployed after a few minutes.
 
 ## Wait for deployment
 
@@ -275,7 +276,9 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
     :::image type="content" source="../media/4-implement-github-action/monitor-github-action-progress.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/monitor-github-action-progress.png":::
 
-    In the preceding image, you can see the `Build and push Docker images` step running and the log output.
+    In the preceding image, you can see the `Build and push Docker images` step running and the log output. You'll see a variation of the following screen when the deployment completes:
+
+    :::image type="content" source="../media/4-implement-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/4-implement-github-action/deployment-action-completed.png":::
 
 1. Run the following command to monitor your pods:
 
@@ -285,15 +288,41 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
     :::image type="content" source="../media/4-implement-github-action/replacing-pods.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/replacing-pods.png":::
 
-    In the preceding image, you can see that a new `webspa` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
-
-1. Run the following command to check the `webspa` service deployment history:
-
-    ```bash
-    helm history eshoplearn-webspa
+    ```console
+    NAME                              READY   STATUS    RESTARTS   AGE
+    backgroundtasks-c4fdf75bb-kz9sw   1/1     Running   4          41m
+    basket-78bdff857f-zlzhh           1/1     Running   4          40m
+    basketdata-66d657d89d-8sgc5       1/1     Running   0          40m
+    catalog-569786957c-cn49j          1/1     Running   6          39m
+    coupon-6bb646c97f-494f8           1/1     Running   0          7m51s
+    identity-556cb7b974-657ww         1/1     Running   7          38m
+    nosqldata-5ccc5d7747-fb7kn        1/1     Running   0          38m
+    ordering-6c456f5d4c-ckz7v         1/1     Running   6          37m
+    payment-7677755767-4dgqb          1/1     Running   1          37m
+    rabbitmq-7877fcd685-bbq46         1/1     Running   0          37m
+    seq-669f9cf486-ldxkk              1/1     Running   0          36m
+    signalr-64d9c95564-nkcsh          1/1     Running   0          36m
+    sqldata-6f8c8c577-bl64h           1/1     Running   0          35m
+    webshoppingagg-78445b66f5-hm58x   1/1     Running   0          35m
+    webspa-64786f994f-tttqg           1/1     Running   0          34m
+    webstatus-8887f6f55-mnm97         1/1     Running   0          34m
     ```
 
-    :::image type="content" source="../media/4-implement-github-action/deployment-history.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.1.0 is deployed" border="true" lightbox="../media/4-implement-github-action/deployment-history.png":::
+    In the preceding image, you can see that a new `coupon` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible.
+
+1. Run the following command to check the `coupon` service deployment history:
+
+    ```bash
+    helm history eshoplearn-coupon
+    ```
+
+    The history shows the new `coupon` service has been deployed.
+
+    ```console
+    REVISION        UPDATED                         STATUS          CHART           APP VERSION     DESCRIPTION
+    1               Thu Sep 10 19:19:31 2020        superseded      coupon-0.1.0    1.0.0           Install complete
+    2               Thu Sep 10 19:51:10 2020        deployed        coupon-0.1.0    1.1.0           Upgrade complete
+    ```
 
 1. Refresh the browser to see the changes, as shown in the next image:
 
@@ -301,15 +330,17 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
 ## Roll back a deployment
 
-Once the deployment is completed and customer feedback starts coming in, you receive a change request from the Marketing department. The request is to remove the coupon code tracking campaign. Run the following command to revert the campaign changes:
+During production issues, one common mitigation is to rollback a deployment to a known good deployment. Use the following command to rollback from version 1.1.0 to 1.0.0.
 
 ```bash
-helm rollback eshoplearn-webspa
+helm rollback eshoplearn-coupon
 ```
 
 The deployment history confirms that everything is back to normal:
 
-:::image type="content" source="../media/4-implement-github-action/deployment-rollback.png" alt-text="Helm deployment history for eshoplearn-webspa, showing app version 1.0.0 is now deployed" border="true" lightbox="../media/4-implement-github-action/deployment-rollback.png":::
+```console
+Rollback was a success! Happy Helming!
+```
 
 > **NOTE**
 > In a real-life scenario, you'd include at least one test step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also, the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
