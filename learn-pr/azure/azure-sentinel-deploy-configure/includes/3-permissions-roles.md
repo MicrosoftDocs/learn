@@ -21,7 +21,7 @@ The following are the three dedicated, built-in Azure Sentinel roles:
 
 All built-in Azure Sentinel roles grant read access to the data in your Azure Sentinel workspace. For best results, these roles should be assigned to the resource group that contains the Azure Sentinel workspace. The roles then apply to all the resources that deploy to support Azure Sentinel if those resources are in the same resource group.
 
-### Azure roles and Log Analytics roles
+### Azure roles and Azure Monitor Log Analytics roles
 
 In addition to Azure Sentinel-dedicated Azure RBAC roles, other Azure and Log Analytics Azure RBAC roles can grant a wider set of permissions that include access to your Azure Sentinel workspace and other resources:
 
