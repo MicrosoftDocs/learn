@@ -12,12 +12,15 @@ metadata:
 title: "Azure Fundamentals part 2: Describe core Azure services"
 summary: |
   After completing this learning path, you'll be able to:
+
     - Understand the breadth of services available in Azure including compute, network, storage, and database
     - Identify virtualization services such as Azure Virtual Machines, Azure Container Instances, Azure Kubernetes Service, and Windows Virtual Desktop
     - Compare Azure's database services such as Azure Cosmos DB, Azure SQL, Azure Database for MySQL, Azure Database for PostgreSQL, and Azure's big data and analysis services
     - Examine Azure networking resources such as Virtual Networks, VPN Gateways, and Azure ExpressRoute
     - Summarize Azure storage services such Azure Blob Storage, Azure Disk Storage, and Azure File Storage
+
   Here are the learning paths in this series:
+
     - [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
     - Azure Fundamentals part 2: Describe core Azure services
     - [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](/learn/paths/)
