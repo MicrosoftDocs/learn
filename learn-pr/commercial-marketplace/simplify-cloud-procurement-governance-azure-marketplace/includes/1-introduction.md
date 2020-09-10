@@ -2,7 +2,7 @@ Imagine you’re the Director of IT at a company that’s migrating to the cloud
 
 Finding and evaluating the right cloud solutions for your team is challenging with so many options from thousands of software and open source providers available across the web. Reading through hundreds of websites and product catalogs is time-consuming. Purchasing from multiple providers is complicated, as managing long lists of subscriptions and contracts has become a multi-departmental nightmare.
 
-Your manager is counting on you to control costs, while also keeping the agility your team needs to innovate throughout your cloud migration journey. You must limit risks for your organization by enforcing sustainable management, security, and governance policies that will scale as your cloud infrastructure grows.
+Your manager is counting on you to control costs, while also keeping the agility your team needs to innovate throughout your cloud migration journey. You have to limit risks for your organization by enforcing sustainable management, security, and governance policies that will scale as your cloud infrastructure grows.
 
 Azure Marketplace is designed to help you be efficient when finding, trying, and buying cloud applications. In this module, we’ll explore some of the ways that Microsoft can help simplify procurement through Azure Marketplace.
 
