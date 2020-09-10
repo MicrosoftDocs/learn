@@ -85,9 +85,9 @@ Create a GitHub Action for the build with the following steps:
       DOCKER_FILE_PATH: src/Services/Coupon.API/Dockerfile.acr
       CHART_PATH: deploy/k8s/helm-simple/coupon
       CLUSTER_NAME: eshop-learn-aks
-      CLUSTER_RESOURCE_GROUP: sumit-eshop-aks-rg
-      REGISTRY_LOGIN_SERVER: eshoplearn20200908125010311.azurecr.io
-      IP_ADDRESS: 52.246.72.46
+      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
+      REGISTRY_LOGIN_SERVER: <PASTE_VALUE_HERE>
+      IP_ADDRESS: <PASTE_VALUE_HERE>
 
     jobs:
       build-and-push-docker-image:
@@ -117,8 +117,6 @@ Create a GitHub Action for the build with the following steps:
         - A commit is pushed to the `main` branch.
         - A Helm chart hasn't been modified.
     - Defines environment variables that are used tasks in the specification. In the next step, you will set new values for:
-      - `CLUSTER_NAME`
-      - `CLUSTER_RESOURCE_GROUP`
       - `IP_ADDRESS`
       - `REGISTRY_LOGIN_SERVER`
     - Has one job&mdash;a set of steps that execute on the same runner&mdash;named `build-and-push-docker-image`. The job:
@@ -138,8 +136,6 @@ Create a GitHub Action for the build with the following steps:
     ```
 
 1. In the Action YAML editor, replace the values for the following environment variables. Use the values from the output in the preceding step.
-    - `CLUSTER_RESOURCE_GROUP`
-    - `CLUSTER_NAME`
     - `IP_ADDRESS`
     - `REGISTRY_LOGIN_SERVER`
 
@@ -147,15 +143,15 @@ Create a GitHub Action for the build with the following steps:
 
     ```yml
     env:
-      IMAGE_NAME: webspa
+      IMAGE_NAME: coupon.api
       TAG: linux-latest
       CONTEXT_PATH: .
-      DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
-      CHART_PATH: deploy/k8s/helm-simple/webspa
-      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
+      DOCKER_FILE_PATH: src/Services/Coupon.API/Dockerfile.acr
+      CHART_PATH: deploy/k8s/helm-simple/coupon
       CLUSTER_NAME: eshop-learn-aks
+      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
+      REGISTRY_LOGIN_SERVER: eshoplearn20200908125010311.azurecr.io
       IP_ADDRESS: 203.0.113.55
-      REGISTRY_LOGIN_SERVER: eshoplearn20200904000000000.azurecr.io
     ```
 
     In the preceding snippet, you can see a portion of the *build.yml* file with the mentioned environment variables set.
@@ -164,7 +160,8 @@ Create a GitHub Action for the build with the following steps:
 
 ### Create the deployment Action
 
-1. Select the **Actions** tab in your repository and select the **set up a workflow yourself** link.
+Create a GitHub Action for the deployment with the following steps:
+
 1. Add the Action specification by pasting the following YAML into the editor:
 
     ```yml
@@ -183,9 +180,9 @@ Create a GitHub Action for the build with the following steps:
       DOCKER_FILE_PATH: src/Services/Coupon/Coupon.API/Dockerfile.acr
       CHART_PATH: deploy/k8s/helm-simple/coupon
       CLUSTER_NAME: eshop-learn-aks
-      CLUSTER_RESOURCE_GROUP: sumit-eshop-aks-rg
-      REGISTRY_LOGIN_SERVER: eshoplearn20200908125010311.azurecr.io
-      IP_ADDRESS: 52.246.72.46
+      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
+      REGISTRY_LOGIN_SERVER: <PASTE_VALUE_HERE>
+      IP_ADDRESS: <PASTE_VALUE_HERE>
 
     jobs:  
       deploy-to-aks:
@@ -222,8 +219,6 @@ Create a GitHub Action for the build with the following steps:
         - A commit is pushed to the `main` branch.
         - The coupon service's Helm chart has been modified.
     - Defines environment variables that are used tasks in the specification. In the next step, you will set new values for:
-      - `CLUSTER_NAME`
-      - `CLUSTER_RESOURCE_GROUP`
       - `IP_ADDRESS`
       - `REGISTRY_LOGIN_SERVER`
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` agent and has five steps:
@@ -233,40 +228,11 @@ Create a GitHub Action for the build with the following steps:
         - `Azure Login` logs in to Azure using the service principal credentials.
         - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
-1. Replace the default Action file name of *main.yml* with *deploy.yml*:
-
-    :::image type="content" source="../media/4-implement-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-implement-github-action/action-file-name.png":::
-
-1. Run the following command in Azure Cloud Shell to get values for the `env` block's environment variables:
-
-    ```bash
-    cat ~/clouddrive/aspnet-learn-temp/config.txt
-    ```
-
-1. In the Action YAML editor, replace the values for the following environment variables. Use the values from the output in the preceding step.
-    - `CLUSTER_RESOURCE_GROUP`
-    - `CLUSTER_NAME`
+1. Replace the default Action file name of *main.yml* with *deploy.yml*.
+1. In the Action YAML editor, replace the values for the following environment variables with the same values used for *build.yml*:
     - `IP_ADDRESS`
     - `REGISTRY_LOGIN_SERVER`
-
-    At this point, you should see something like this:
-
-    ```yml
-    env:
-      IMAGE_NAME: webspa
-      TAG: linux-latest
-      CONTEXT_PATH: .
-      DOCKER_FILE_PATH: src/Web/WebSPA/Dockerfile
-      CHART_PATH: deploy/k8s/helm-simple/webspa
-      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
-      CLUSTER_NAME: eshop-learn-aks
-      IP_ADDRESS: 203.0.113.55
-      REGISTRY_LOGIN_SERVER: eshoplearn20200904000000000.azurecr.io
-    ```
-
-    In the preceding snippet, you can see a portion of the *deploy.yml* file with the mentioned environment variables set.
-
-1. Select the **Start commit** button, select the **Commit directly to the `main` branch** radio button, and select **Commit new file** to save the Action file.
+1. Commit the *deploy.yml* file directly to the `main` branch.
 
 These two GitHub Action definitions will be part of the repository from now on. If you want to make any changes, update the appropriate file locally and push to `main` or create a pull request (PR). If you create a PR, the Action will be triggered when merging to `main`.
 
