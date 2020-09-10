@@ -67,22 +67,22 @@ Create a GitHub Action for the build with the following steps:
 
     :::image type="content" source="../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="Actions tab in the GitHub repository, highlighting the workflow creation link" border="true" lightbox="../media/4-implement-github-action/set-up-custom-github-workflow.png":::
 
-1. Add the Action specification by pasting the following YAML into the editor:
+1. Replace the YAML in the editor with the following YAML:
 
     ```yml
     name: eShop build
 
     on:
       push:
-        paths-ignore:
-        - './deploy/k8s/helm-simple/**'
+        paths:
+        - './src/Services/Coupon/**'
         branches: [ main ]
 
     env:
       IMAGE_NAME: coupon.api
       TAG: linux-latest
       CONTEXT_PATH: .
-      DOCKER_FILE_PATH: src/Services/Coupon.API/Dockerfile.acr
+      DOCKER_FILE_PATH: src/Services/Coupon/Coupon.API/Dockerfile.acr
       CHART_PATH: deploy/k8s/helm-simple/coupon
       CLUSTER_NAME: eshop-learn-aks
       CLUSTER_RESOURCE_GROUP: eshop-learn-rg
@@ -113,10 +113,8 @@ Create a GitHub Action for the build with the following steps:
 
     The preceding YAML defines a GitHub Action that:
 
-    - Is triggered when:
-        - A commit is pushed to the `main` branch.
-        - A Helm chart hasn't been modified.
-    - Defines environment variables that are used tasks in the specification. In the next step, you will set new values for:
+    - Is triggered when a commit is pushed to the coupon service in the `main` branch.
+    - Defines environment variables that are used tasks in the specification. Placeholder values are used for now.
       - `IP_ADDRESS`
       - `REGISTRY_LOGIN_SERVER`
     - Has one job&mdash;a set of steps that execute on the same runner&mdash;named `build-and-push-docker-image`. The job:
@@ -124,6 +122,9 @@ Create a GitHub Action for the build with the following steps:
         - Runs in an `ubuntu-latest` agent and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
             - `Get code from the repository` checks out the `main` branch.
             - `Build and push Docker images` builds the image and pushes it to ACR.
+
+    > [!IMPORTANT]
+    > Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice is kept in a separate repository.
 
 1. Replace the default Action file name of *main.yml* with *build.yml*:
 
@@ -215,10 +216,8 @@ Create a GitHub Action for the deployment with the following steps:
 
     The preceding YAML defines a GitHub Action that:
 
-    - Is triggered when:
-        - A commit is pushed to the `main` branch.
-        - The coupon service's Helm chart has been modified.
-    - Defines environment variables that are used tasks in the specification. In the next step, you will set new values for:
+    - Is triggered when a commit is pushed to the coupon service's Helm chart in the `main` branch.
+    - Defines environment variables that are used tasks in the specification. Placeholder values are used for now.
       - `IP_ADDRESS`
       - `REGISTRY_LOGIN_SERVER`
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` agent and has five steps:
