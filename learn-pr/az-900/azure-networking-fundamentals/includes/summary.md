@@ -2,6 +2,17 @@ In this module, you used the Tailwind Traders scenario to learn about the core n
 
 Armed with this new knowledge, you can apply this information to help your business use Azure's networking resources to configure its network infrastructure.
 
+## Azure Fundamentals learning path
+
+This module is part of the [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/) learning path, which is one of six Azure Fundamentals learning paths.
+
+- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+- [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+- [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](/learn/paths/)
+- [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/)
+- [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/)
+- [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/)
+
 ## Learn more
 
 - [Azure networking services overview](https://docs.microsoft.com/azure/networking/networking-overview?azure-portal=true)

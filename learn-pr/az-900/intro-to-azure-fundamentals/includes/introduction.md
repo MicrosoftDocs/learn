@@ -2,12 +2,12 @@ Microsoft Azure is a cloud computing platform with an ever expanding set of serv
 
 In this module, you'll take an entry level end-to-end look at Azure and its capabilities, which will provide you with a solid foundation for completing the available learning paths for Azure Fundamentals.
 
-**Prerequisites**
+## Prerequisites
 
 - You should be familiar with basic computing concepts and terminology
 - You should be familiar with cloud computing is helpful, but isn't necessary
 
-**Learning objectives**
+## Learning objectives
 
 After completing this module, you'll be able to:
 - Describe the basic concepts of cloud computing

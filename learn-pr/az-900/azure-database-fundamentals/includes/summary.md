@@ -2,6 +2,17 @@ In this module, you learned how to help Tailwind Traders migrate their database 
 
 In addition, you saw how Azure Cosmos DB a variety of popular APIs - SQL, MongoDB, Cassandra, Tables, and Gremlin - which you can use to migrate your data to the cloud and retain or enhance your developer skillsets. You also learned how you can use Azure's big data and analysis services like Azure Synapse Analytics, Azure HDInsight, Azure Databricks, and Azure Data Lake Analytics to analyze large volumes of data.
 
+## Azure Fundamentals learning path
+
+This module is part of the [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/) learning path, which is one of six Azure Fundamentals learning paths.
+
+- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+- [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+- [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](/learn/paths/)
+- [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/)
+- [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/)
+- [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/)
+
 ## Learn more
 
 - [Azure Analytics Services](https://azure.microsoft.com/product-categories/analytics/?azure-portal=true)
