@@ -4,11 +4,11 @@ title: Buy software from Azure Marketplace
 metadata:
   title: Buy software from Azure Marketplace
   description: In this unit, we'll go over the ways that Microsoft makes buying software simpler with Azure Marketplace
-  ms.date: 9/9/2020
+  ms.date: 09/10/2020
   author: marleva
   ms.author: maevan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 9
 content: |
   [!include[](includes/3-buy-software-azure-marketplace.md)]
