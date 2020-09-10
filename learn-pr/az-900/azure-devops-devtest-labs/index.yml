@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.azure-devops-devtest-labs
 metadata:
-  title: Choose the best DevOps tools for your software and infrastructure environment
+  title: Choose the best tools to help organizations build better solutions
   description: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
   ms.date: 09/11/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the best DevOps tools for your software and infrastructure environment
+title: Choose the best tools to help organizations build better solutions
 summary: Get started learning how developers, admins, DevOps engineers, and content creators use tools to manage and collaborate.
 abstract: |
   By the end of this module, you will be able to:
-  - Choose the appropriate DevOps tool or service for a given business scenario.
+  - Choose the best software development process tools and services for a given business scenario.
 prerequisites: None
 ratingEnabled: true
 iconUrl: /learn/achievements/azure-devops-devtest-labs.svg
