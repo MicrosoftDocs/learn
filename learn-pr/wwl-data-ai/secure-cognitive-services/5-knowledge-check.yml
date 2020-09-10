@@ -4,15 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/11/2020
+  ms.date: 09/12/2020
   author: wwlpublish
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 3
+durationInMinutes: 5
 quiz:
-  title: "Knolwedge check"
   questions:
   - content: "Which property related to your Cognitive Services instance is most important to keep secret?"
     choices:

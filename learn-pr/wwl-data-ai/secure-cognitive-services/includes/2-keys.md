@@ -21,7 +21,7 @@ You will need an Azure Key Vault instance within your subscription and environme
 
 1. Select **Review + create**.
 
-   Now let’s create the secret cognitive-services-subscription-key in the Azure Key Vault instance using the Azure portal:
+Now let’s create the secret cognitive-services-subscription-key in the Azure Key Vault instance using the Azure portal:
 
 1. Navigate to your Key Vault instance.
 1. In the left navigation pane, select **Secrets** (in the Settings section).
@@ -32,7 +32,7 @@ You will need an Azure Key Vault instance within your subscription and environme
 
    :::image type="content" source="../media/02-key-vault-secret-name-value.png" alt-text="Screenshot showing add secret pane with Name and Value populated. ":::
 
-Your application will retrieve the development service **endpoint** and **Key Vault** name from environment variables. Set the environment variables for your session using console window (bash) with the following command. Replace <key-vault-name> and <service-name> with the correct values for your environment.
+Your application will retrieve the development service **endpoint** and **Key Vault** name from environment variables. Set the environment variables for your session using console window (bash) with the following command. Replace `<key-vault-name>` and `<service-name>` with the correct values for your environment.
 
 ```bash
 export KEY_VAULT_NAME=<key-vault-name>
@@ -45,7 +45,7 @@ Now you need access to Azure Key Vault from your application.  In your code, you
 
 Let’s create the Service Principal we will use for authentication.
 
-1. To create a service principal with owner role on the resource group, run the following Azure CLI command. Replace <new-sp-name> with a new service principal name. Also replace <subscription-id> and <resource-group> with the correct values for your environment.
+1. To create a service principal with owner role on the resource group, run the following Azure CLI command. Replace `<new-sp-name>` with a new service principal name. Also replace `<subscription-id>` and `<resource-group>` with the correct values for your environment.
 
    ```azurecli
    az ad sp create-for-rbac -n "https://<new-sp-name>" --role owner --scopes subscriptions/<subscription-id>/resourceGroups/<resource-group>
@@ -63,7 +63,7 @@ Let’s create the Service Principal we will use for authentication.
    }
    ```
 
-1. For DefaultAzureCredential to work with your service principal, set the following environment variables by replacing <appId>, <tenant>, and, <password> with the output from the previous step.
+1. For DefaultAzureCredential to work with your service principal, set the following environment variables by replacing `<appId>`, `<tenant>`, and, `<password>` with the output from the previous step.
 
    ```azurecli
    export AZURE_CLIENT_ID=<appId>
@@ -73,7 +73,7 @@ Let’s create the Service Principal we will use for authentication.
 
    The Service Principal password should be kept secret so setting an environment variable is not ideal. It is intended to be a development solution only. When your application is deployed to Azure, the preferred approach is to use a Managed Identity instead of saving the Service Principal password in an environment variable.
 
-1. To add permissions for your new service principal to access Key Vault, run the following Azure CLI command with <new-sp-name> replaced with the same value you provided when creating the service principal.
+1. To add permissions for your new service principal to access Key Vault, run the following Azure CLI command with `<new-sp-name>` replaced with the same value you provided when creating the service principal.
 
    ```azurecli
    az keyvault set-policy -n $KEY_VAULT_NAME --spn "https://<new-sp-name>" --secret-permissions get list

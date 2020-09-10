@@ -10,21 +10,21 @@ Encountered exception. (AccessDenied) Access denied due to Virtual Network/Firew
 
 You configure network security from the Azure portal. You can set access to only allow certain network locations. Your options are from an existing virtual network, from a new virtual network, or from a specific range of IP addresses. The following steps will configure access from your current machine’s network location.
 
-1. Navigate to your Cognitive Services instance
-1. In the left pane, select **Networking**
+1. Navigate to your Cognitive Services instance.
+1. In the left pane, select **Networking**.
 
    :::image type="content" source="../media/02-network-selection.png" alt-text="Screenshot showing Networking option in a Cognitive Services settings pane.":::
 
-1. Choose **Selected Networks** and **Private Endpoints**
-1. Select **Add your client IP address**
+1. Choose **Selected Networks** and **Private Endpoints**.
+1. Select **Add your client IP address**.
 
    :::image type="content" source="../media/02-network-add-client-ip.png" alt-text="Screenshot showing Firewall selection of Add your client IP address.":::
 
 1. Select **Save**.
 
-   When you are ready to deploy an application that uses Cognitive Services, you will need an Azure virtual network with access. This virtual network can be created from the same Networking settings of your Cognitive Services instance with the following steps.
+When you are ready to deploy an application that uses Cognitive Services, you will need an Azure virtual network with access. This virtual network can be created from the same Networking settings of your Cognitive Services instance with the following steps.
 
-1. Select **+ Add new virtual network**
+1. Select **+ Add new virtual network**.
 1. Provide **name**, **address space**, **resource group**, **subnet address range**. For a real-world deployment, you have the option to add additional DDoS protection and a firewall if desired.
 
    :::image type="content" source="../media/02-network-create-virtual-network.png" alt-text="Screenshot showing creation of virtual network with fields populated.":::

@@ -12,7 +12,8 @@ Let’s take a look at the Cognitive Services built-in policy definitions in the
 
 1. To see available policy definitions, select Definitions and search for Cognitive Services.
 
-   :::image type="content" source="../media/02-policy-definitions-search.png" alt-text="Screenshot of Policy Definitions screen with search for Cognitive Services. ":::
+   > [!div class="mx-imgBorder"]
+   > [![Screenshot of Policy Definitions screen with search for Cognitive Services.](../media/02-policy-definitions-search.png)](../media/02-policy-definitions-search.png#lightbox)
 
 You can choose a definition by clicking on the name. You can assign the built-in policy as is or create a custom definition. To customize it, you duplicate and edit the policy.
 
@@ -23,6 +24,7 @@ You can assign a policy from the Assignments section or from a selected policy d
 To assign a policy, provide the following inputs:
 
 | Scope	| Assign to a subscription or resource group |
+|---|---|
 | Exclusions | Exclude resource groups or resources from policy (optional) |
 | Assignment name |	Name the assignment, defaults to policy name |
 | Description | Describe the assignment (optional) |
@@ -37,11 +39,14 @@ You can duplicate a built-in policy and customize it. It is helpful if you want 
 
 The Policy Overview screen will show resource compliance. Let’s view an example of the policy Cognitive Services accounts should restrict network access assigned with the default settings. In this example, there are two Cognitive Services resources, which have not had the network security configured.
 
-:::image type="content" source="../media/02-policy-overview-alert.png" alt-text="Screenshot of policy alerts highlighting non-compliance of Cognitive Services network access.":::
+> [!div class="mx-imgBorder"]
+> [![Screenshot of policy alerts highlighting non-compliance of Cognitive Services network access.](../media/02-policy-overview-alert.png)](../media/02-policy-overview-alert.png#lightbox)
+
 
 You select a policy assignment for details, which include the resources that are non-compliant.
 
-:::image type="content" source="../media/02-policy-detail-alert.png" alt-text="Screenshot of policy alert detail for Cognitive Services network access non-compliance.":::
+> [!div class="mx-imgBorder"]
+> [![Screenshot of policy alert detail for Cognitive Services network access non-compliance.](../media/02-policy-detail-alert.png)](../media/02-policy-detail-alert.png#lightbox)
 
 Now you can add and review Cognitive Services policies to keep your environment in a secured state.
 
@@ -57,13 +62,13 @@ az group delete --name <resource-group> --yes --no-wait
 
 Alternatively, you could remove individual services with the following commands:
 
-1. Azure Text Analytics Service
+* Azure Text Analytics Service
 
    ```azurecli
    az cognitiveservices account delete --resource-group <resource-group> --name <service-name>
    ```
 
-1. Azure Key Vault
+* Azure Key Vault
 
    ```azurecli
    az keyvault delete --name <key-vault-name>

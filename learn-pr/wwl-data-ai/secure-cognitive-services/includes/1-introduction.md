@@ -6,7 +6,7 @@ In this module, you will walk through several key methods of enhancing security 
 
 - Secure the subscription key in Azure Key Vault.
 - Configure network security to only allow access from trusted network locations.
-- Manage Azure Policies to ensure resources are compliant
+- Manage Azure Policies to ensure resources are compliant.
 
 ## Pre-requisites
 
