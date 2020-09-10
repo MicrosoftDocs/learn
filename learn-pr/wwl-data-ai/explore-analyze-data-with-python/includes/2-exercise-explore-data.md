@@ -42,7 +42,7 @@ To run the notebook used in this exercise, you will need a compute instance in y
 2. On the **Compute Instances** tab, if you already have a compute instance, start it; otherwise create a new compute instance with the following settings:
     - **Compute name**: *enter a unique name*
     - **Virtual Machine type**: CPU
-    - **Virtual Machine size**: Standard_DS2_v2
+    - **Virtual Machine size**: Standard_DS11_v2
 3. Wait for the compute instance to start (this may take a minute or so)
 
 ### Clone the **ml-basics** repository
