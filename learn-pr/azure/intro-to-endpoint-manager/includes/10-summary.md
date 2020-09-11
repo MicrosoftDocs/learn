@@ -1,8 +1,9 @@
-In this module, you've learned about Microsoft Endpoint Manager, what it is and its key capabilities. Here are some of the things you covered.
+In this module, you've learned about Microsoft Endpoint Manager, what it is and its key services. Here are some of the things you covered.
 
-- Endpoint Manager integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, and Windows Autopilot. 
-- Endpoint Manager helps keep your organization's cloud and on-premises devices, apps, and data secure.
 - Endpoint Manager is used to manage an organization's endpoints. Endpoints include mobile devices, desktop computers, servers, and apps that an organization uses. Additionally, endpoints also include the apps used by an organization. These endpoints are managed in different environments based on where these endpoints are located.
+- Endpoint Manager helps you manage and protect your organization against advanced digital threats, while still being productive.
+- By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your end users to make them extremely productive.
+- Endpoint Manager integrates Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, Endpoint analytics and Windows Autopilot.
 
 ## Learn more
 
