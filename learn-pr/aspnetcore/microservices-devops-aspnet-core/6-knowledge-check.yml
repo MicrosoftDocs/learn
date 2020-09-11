@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-devops-aspnet-core.5-knowledge-check
+uid: learn.microservices-devops-aspnet-core.6-knowledge-check
 metadata:
   title: Knowledge check
   description: Check your knowledge
@@ -16,10 +16,10 @@ quiz:
   questions:
     - content: Is it necessary to have a microservices application to implement a CI/CD pipeline?
       choices:
-        - content: Yes
+        - content: "Yes"
           isCorrect: false
           explanation: "TODO: Explanation"
-        - content: No
+        - content: "No"
           isCorrect: true
           explanation: "TODO: Explanation"
     - content: What's the key enabler for making DevOps available to anyone?

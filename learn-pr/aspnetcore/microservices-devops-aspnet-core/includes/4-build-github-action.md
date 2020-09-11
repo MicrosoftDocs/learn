@@ -335,7 +335,7 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
 <!-- TODO - Have the student buy a product using a coupon code before checking the Seq logs page -->
 
-:::image type="content" source="../media/4-implement-github-action/seq-log.png" alt-text="A screen capture of the Seq log output.":::
+:::image type="content" source="../media/4-build-github-action/seq-log.png" alt-text="A screen capture of the Seq log output." border="true" lightbox="../media/4-build-github-action/seq-log.png":::
 
 ## Roll back a deployment
 

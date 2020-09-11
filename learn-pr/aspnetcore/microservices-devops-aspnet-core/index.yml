@@ -13,7 +13,7 @@ summary: Implement GitHub Actions to build and deploy to Azure Kubernetes Servic
 abstract: |
   In this module, you will:
   - Deploy an existing ASP.NET Core microservices app to AKS.
-  - Review some key DevOps concepts.
+  - Configure GitHub Action permissions and secrets.
   - Create a GitHub Action to build coupon service changes.
   - Create a GitHub Action to deploy coupon service changes to AKS.
   - Modify the coupon service and verify its deployment to AKS.
@@ -36,10 +36,11 @@ products:
 units:
   - learn.microservices-devops-aspnet-core.1-introduction
   - learn.microservices-devops-aspnet-core.2-setup-environment
-  - learn.microservices-devops-aspnet-core.3-review-devops-concepts
-  - learn.microservices-devops-aspnet-core.4-implement-github-action
-  - learn.microservices-devops-aspnet-core.5-knowledge-check
-  - learn.microservices-devops-aspnet-core.6-summary
+  - learn.microservices-devops-aspnet-core.3-permissions-secrets
+  - learn.microservices-devops-aspnet-core.4-build-github-action
+  - learn.microservices-devops-aspnet-core.5-deploy-github-action
+  - learn.microservices-devops-aspnet-core.6-knowledge-check
+  - learn.microservices-devops-aspnet-core.7-summary
 iconUrl: /learn/achievements/aspnetcore/microservices-devops-aspnet-core.svg
 badge:
   uid: learn.microservices-devops-aspnet-core.badge

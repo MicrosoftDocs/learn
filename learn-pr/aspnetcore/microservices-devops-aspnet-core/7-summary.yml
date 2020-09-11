@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.microservices-devops-aspnet-core.6-summary
+uid: learn.microservices-devops-aspnet-core.7-summary
 metadata:
   title: Summary
   description: Summary
@@ -11,4 +11,4 @@ metadata:
 title: Summary
 durationInMinutes: 1
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/7-summary.md)]
