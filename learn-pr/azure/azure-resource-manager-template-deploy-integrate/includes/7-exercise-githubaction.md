@@ -223,6 +223,6 @@ You can either create a workflow file and then push/upload the file to the repos
 
 When the workflow is completed, go to the Azure portal to check the deployments status.
 
-1. In the left pane, select Resource groups and select **`GitHubActionExercise-rg`**, navigate to the `Deplyments` pane and verify that your deployment succeeded.
+1. In the left pane, select Resource groups and select **GitHubActionExercise-rg**, navigate to the `Deployments` pane and verify that your deployment succeeded.
 
     ![Deployment status](../media/9-validate-deployment.gif)
