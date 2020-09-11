@@ -132,7 +132,7 @@ The algorithm consists of three parts:
 
 Shor's algorithm succeeds in finding a prime factor with high probability but
 it can fail. However, repeating the algorithm several times until it finds the
-prime factors is exponentially faster than the best known classical algorithm.
+prime factors is exponentially faster than the best known classical algorithm. 
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the [Q# sample for integer
