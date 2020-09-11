@@ -119,7 +119,7 @@ computing.
 How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
 
 Remember that $a,b,c$ and $d$ are probability amplitudes for each state. Their
-absolute values, for example $|a|$, squared give the corresponding probabilities. For
+absolute values, for example $|a|$, squared, give the corresponding probabilities. For
 instance, the probability for observing $\ket{00}$ is $P(00)=|a|^2$. For
 $\ket{01}$, it's $P(01)=|b|^2$, and so on.
 

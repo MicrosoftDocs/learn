@@ -7,15 +7,15 @@ We outline how they use superposition, interference, and entanglement to achieve
 First, let's introduce the concept of *quantum oracle*. In many problems, you're
 interested in solving a problem while making the fewest number of evaluations of
 a function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For example, if you're
-checking wether a number $x$ fulfils a property, you can encode the problem in a
+checking wether a number $x$ fulfills a property, you can encode the problem in a
 binary function $f: \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$ can
-be considered as a black-box that outputs $1$ if the number $x$ fulfils the
+be considered as a black-box that outputs $1$ if the number $x$ fulfills the
 property, and $0$ otherwise. This can be used, for example, to brute-force
 search solutions for mathematical problems.
 
 A quantum oracle is a quantum operation that implements some black-box function $f:
 \\{0,1\\}^n \rightarrow \\{0,1\\}^m$. This
-operation is implemented in a way that allows to evaluate the black-box function
+operation is implemented in a way that enables you to evaluate the black-box function
 not only on individual inputs, but also on superposition of basis states.
 
 > [!NOTE]
@@ -79,8 +79,8 @@ The algorithm is as follows:
 1. Measure every qubit: if all measurements results are $0$, the function is
    constant, otherwise, it is balanced.
 
-This is, you solve the problem with just one query to the oracle, exponentially
-faster than the classical solution.
+Using this algorithm you solve the problem with just one query to the oracle,
+exponentially faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
 in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
