@@ -73,6 +73,12 @@ Linearity is a fundamental property of
 quantum mechanics and therefore of quantum computing.
 
 > [!NOTE]
+> Note that $H$ (without the hat) refers to the quantum operator,
+> also known as the *Hadamard gate*, that you used to create quantum
+> superpositions, while $\hat H$ (with the hat) refers to the Hamiltonian
+> operator that is part of the Schrödinger equation.
+
+> [!NOTE]
 > In this module and the documentation for Q# we always use $\LaTeX$
 > fonts to design mathematical linear operations that take qubit states to qubit
 > states. On the other hand, we use the `code` font to represent Q# operations
@@ -127,6 +133,12 @@ $\ket{01}$, it's $P(01)=|b|^2$, and so on.
 
 There are no restrictions on the types of numbers the probability amplitudes can
 be. They can be positive, negative, or even complex numbers. However, for a valid quantum superposition all probabilities must sum to one: $|a|^2+|b|^2+|c|^2+|d|^2=1$. This constraint is often known as the _normalization condition_. You can think of the normalization condition as the fact that you always obtain an outcome when you measure, so the probabilities of measuring every possible outcome must sum to one.
+
+In the next figure you can see how the number of parameters needed to simulate a
+quantum superposition grows exponentially with the number of qubits. Note that
+it doesn't mean that the information that we can store in a superposition grows
+exponentially with the number of qubits, since we can't obtain the complete
+information of the superposition but just the results after a measurement.
 
 ![Figure explaining the scale of parameters with the number of qubits](../media/2-scale.png)
 

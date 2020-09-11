@@ -69,7 +69,7 @@ struggle. For n≈80, you'll need more parameters than the number of transistors
 have been ever made on Earth. For n≈280, you need more parameters than the
 estimated number of atoms in the Universe.
 
-Simulating entanglement would be difficult for classical systems. But because
+Simulating entanglement can be difficult for classical systems. But because
 quantum computers are intrinsically built on quantum systems, this becomes an
 achievable task. In a quantum computer, you can describe each atom using qubit
 registers that can directly be set into superposition and/or entangled states.

@@ -25,7 +25,7 @@ not only on individual inputs, but also on superposition of basis states.
 
 The oracle has to act on quantum states instead of classical bits. To enable
 this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
-can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
+can be encoded into an $n$-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 
 You can learn more about quantum oracles in the [conceptual documentation of the
 Quantum Development Kit](https://docs.microsoft.com/quantum/concepts/oracles?azure-portal=true).
@@ -83,7 +83,8 @@ Using this algorithm you solve the problem with just one query to the oracle,
 exponentially faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
+in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true) and
+the [sample on Deutsch-Jozsa algorithm](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/simple-algorithms/DeutschJozsa.qs?azure-portal=true).
 
 ![Diagram summarizing Deutsch-Jozsa algorithm](../media/8-dj.svg)
 

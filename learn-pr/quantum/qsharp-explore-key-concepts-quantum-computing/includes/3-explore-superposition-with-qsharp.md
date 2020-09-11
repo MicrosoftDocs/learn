@@ -150,7 +150,7 @@ Suppose you want to create a random bit generator that is skewed. For example, y
 
 $$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
 
-This state can be obtained by sequentially applying the operations $R_y(2\arccos
+This state can be obtained by sequentially applying the operator $R_y(2\arccos
 \sqrt{\alpha})$ to a qubit in the state $\ket{0}.$ You can achieve this in Q#
 using operation
 [Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)
