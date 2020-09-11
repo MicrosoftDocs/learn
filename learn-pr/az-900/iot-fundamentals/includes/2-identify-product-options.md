@@ -38,7 +38,9 @@ To help you get up and running quickly, IoT Central provides starter templates f
 
 ![Screenshot of IoT Central's graphical user interface displaying templates you can choose to create a new app.](../media/2-identify-product-options-01.png)
 
-Finally, you can use the UI to control your devices remotely. This feature allows you to push a software update or modify a property of the device. You could update the desired temperature for one or all of your refrigerated vending machines from directly inside of IoT Central.
+You can use the UI to control your devices remotely. This feature allows you to push a software update or modify a property of the device. You could update the desired temperature for one or all of your refrigerated vending machines from directly inside of IoT Central.
+
+A key part of IoT Central is the use of device templates.  Device templates let you connect a device without any service-side coding. IoT Central uses the templates to construct the dashboards, alerts, and so on. Device developers still need to create code to run on the devices and that code must match the device template specification.
 
 ## Azure Sphere
 

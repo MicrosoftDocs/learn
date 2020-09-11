@@ -24,7 +24,7 @@ So, given the responses to the decision criteria, Azure IoT Central is the best 
 
 ## Why not use IoT Hub?
 
-Actually, by using IoT Central, Tailwind Traders would be using IoT Hub, preconfigured for their specific needs by the Connected Logistics starter template.
+Actually, if Tailwind Traders uses IoT Central, they would be using IoT Hub, preconfigured for their specific needs by the Connected Logistics starter template.  Otherwise, they would need to do a lot of custom development to build their own cloud-based dashboards and management systems on top of IoT Hub.
 
 ## Why not use Azure Sphere?
 

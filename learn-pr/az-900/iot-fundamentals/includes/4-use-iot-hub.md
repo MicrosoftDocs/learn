@@ -22,4 +22,4 @@ Azure IoT Central provides a dashboard that allows companies to manage IoT devic
 
 ## Why not use Azure Sphere?
 
-Azure Sphere provides a complete solution for scenarios where security is critical.  In this scenario, security is not critical, it is preferred.  The appliances cannot be updated with new software remotely.  The sensors merely report usage data.  As a result, Azure Sphere is not necessary.
+Azure Sphere provides a complete solution for scenarios where security is critical. In this scenario, security is not critical, it is preferred. The appliances cannot be updated with new software remotely. The sensors merely report usage data.  As a result, Azure Sphere is not necessary.
