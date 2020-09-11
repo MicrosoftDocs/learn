@@ -93,10 +93,10 @@ amplitudes of $\ket{1}$ had the opposite phase and destructively interfered,
 eliminating the probability of obtaining **1**.
 
 > [!NOTE]
-> Note that qubits do not interfere physically with each other, but the
-> probability amplitudes associated with the qubit states do. Recall that
-> amplitudes are governed by a wave-like equation and therefore they show
-> wave like properties like interference.
+> Note that qubits do not necessarily interfere with each other, but their
+> probability amplitudes do. Recall that probability
+> amplitudes are associated with wave-like equations and therefore they show
+> wave like properties, such as interference.
 
 Interference is one of the basic principles behind the power of quantum
 computing. Quantum interference can be harnessed to cancel the amplitudes of
