@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.azure.serverless-fundamentals
+metadata:
+  title: Choose the best Azure serverless technology for your compute scenario
+  description: Examine Azure's serverless technologies and choose the right service for your scenario.
+  ms.date: 09/11/2020
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Choose the best Azure serverless technology for your compute scenario
+summary: Examine Azure's serverless technologies and choose the right service for your scenario.
+abstract: |
+  By the time you finish this module, you will be able to:
+  - Choose the right serverless computing technology for your business scenario.  
+prerequisites: None
+ratingEnabled: true
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-owner
+- student
+- technology-manager
+products:
+- azure
+- azure-functions
+- azure-logic-apps
+units:
+- learn.azure.serverless-fundamentals.introduction
+- learn.azure.serverless-fundamentals.identify-product-options
+- learn.azure.serverless-fundamentals.analyze-decision-criteria
+- learn.azure.serverless-fundamentals.use-azure-functions
+- learn.azure.serverless-fundamentals.use-azure-logic-apps
+- learn.azure.serverless-fundamentals.knowledge-check
+- learn.azure.serverless-fundamentals.summary
+
+badge:
+  uid: learn.azure.serverless-fundamentals.badge
