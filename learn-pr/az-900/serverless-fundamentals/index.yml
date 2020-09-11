@@ -15,7 +15,7 @@ abstract: |
   - Choose the right serverless computing technology for your business scenario.  
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/serverless-fundamentals.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
