@@ -17,9 +17,9 @@ In this unit, you'll create an initial AKS deployment of the simplified version 
 
     * Installs the required version of the .NET Core SDK.
     * Clones the *:::no-loc text="eShopOnContainers":::* app from your fork of the GitHub repository.
-    * Provisions AKS and Azure Container Registry (ACR) resources.
+    * Provisions Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) resources.
     * Launches the Cloud Shell editor to view the code.
-    * Deploys the containers to a fully managed Kubernetes service in Azure, known as AKS.
+    * Deploys the containers to AKS.
     * Displays connection information upon completion.
 
     [!INCLUDE[Instructions for restoring the default Cloud Shell configuration](../../includes/microservices/revert-cloud-shell-configuration.md)]

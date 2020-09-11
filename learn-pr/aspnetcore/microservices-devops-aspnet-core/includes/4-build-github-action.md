@@ -11,6 +11,8 @@ Create a GitHub Action for the build with the following steps:
 
     :::image type="content" source="../media/4-build-github-action/set-up-custom-github-workflow.png" alt-text="Actions tab in the GitHub repository, highlighting the workflow creation link" border="true" lightbox="../media/4-build-github-action/set-up-custom-github-workflow.png":::
 
+<!-- TODO: have the user create 2 additional secrets in unit 3 (1 for REGISTRY_LOGIN_SERVER and 1 for IP_ADDRESS). After doing so, update this YAML to pull those values from the secret store. -->
+
 1. Replace the YAML in the editor with the following YAML:
 
     ```yml
@@ -63,7 +65,7 @@ Create a GitHub Action for the build with the following steps:
       - `REGISTRY_LOGIN_SERVER`
     - Has one job&mdash;a set of steps that execute on the same runner&mdash;named `build-and-push-docker-image`. The job:
         - Builds the Docker image and pushes it to the ACR instance.
-        - Runs in an `ubuntu-latest` agent and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
+        - Runs in an `ubuntu-latest` runner and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
             - `Get code from the repository` checks out the `main` branch.
             - `Build and push Docker image` builds the image and pushes it to ACR.
 
@@ -120,3 +122,5 @@ You've just finished creating the "build" action for your CI/CD pipeline. The Ma
     The build workflow is triggered automatically. You can track the progress of the build in real-time by selecting the **Actions** tab, selecting the most recent workflow run listed, and selecting the **build-and-push-docker-image** task. If the build completes successfully, you'll see a variation of the following:
 
     :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
+
+In this unit, you created a GitHub action to push the

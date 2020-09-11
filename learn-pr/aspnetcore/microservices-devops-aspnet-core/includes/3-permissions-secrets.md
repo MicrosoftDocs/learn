@@ -9,9 +9,9 @@ In this unit, you'll complete the following tasks:
 After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
 
 ```console
-The eShop-Learn application has been deployed.
+The eShop-Learn application has been deployed to "http://203.0.113.55" (IP: 203.0.113.55).
 
-You can begin exploring these services (when available):
+You can begin exploring these services (when ready):
 - Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
 - General application status: http://203.0.113.55/webstatus/ (See overall service status)
 - Web SPA application       : http://203.0.113.55/
@@ -41,15 +41,20 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
     1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
-    1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
+    1. Scroll to the **HAVE A DISCOUNT CODE?** field.
+
+        :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the coupon code text box" border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
+
+    1. Enter the code *:::no-loc text="DISC-15":::* for a 15 USD discount, and select **APPLY**.
+    1. Select **PLACE ORDER** to complete the purchase.
 
     :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
 
-In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll review the design of the new coupon service in the next unit.
+You've verified the app is deployed and functional. The coupon code feature is supported by the coupon service. In this module, you'll build a CI/CD pipeline to automate the build and deployment of the coupon service.
 
 ## Set up permissions to deploy from GitHub
 
-A GitHub Action will be used to deploy to ACR and AKS. You must set up permissions so the GitHub Action agent can connect to Azure. Complete the following steps:
+GitHub Actions will be used to publish the container image to ACR. You must set up permissions so the GitHub Action runner can connect to Azure. Complete the following steps:
 
 1. Run the following command to create a service principal to allow access from GitHub:
 
@@ -79,13 +84,15 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
 
 ### Create secrets
 
+The service principal and the credentials for the container registry are sensitive authentication credentials that the GitHub Actions runner will need. Sensitive information should be stored in a secure location that is only accessible to the repo maintainers and the GitHub Actions runner.
+
 1. In the GitHub repository you forked, go to **Settings** > **Secrets**.
 1. Select the **New secret** button.
 1. Enter `AZURE_CREDENTIALS` and the JSON output you copied in the **Name** and **Value** text boxes, respectively.
 
     At this point, you should have something like this:
 
-    :::image type="content" source="../media/4-build-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-build-github-action/add-github-secrets.png":::
+    :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
 1. Select the **Add secret** button.
 1. Create two additional secrets representing the username and password for accessing the ACR instance. Run the following command to get the values to be used for the new secrets:
 
@@ -96,3 +103,9 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
     Name the secrets as follows and use the values provided in the text output:
     - `REGISTRY_USERNAME`
     - `REGISTRY_PASSWORD`
+
+With all three secrets configured, you'll see the following page:
+
+:::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Page displaying three GitHub secrets" border="true" lightbox="../media/3-permissions-secrets/github-secrets.png":::
+
+In this unit, you verified the app was deployed correctly. You then created an Azure service principal and stored related sensitive information as GitHub secrets.

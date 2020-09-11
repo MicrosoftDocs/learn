@@ -69,8 +69,8 @@ Create a GitHub Action for the deployment with the following steps:
     - Defines environment variables that are used tasks in the specification. Placeholder values are used for now.
       - `IP_ADDRESS`
       - `REGISTRY_LOGIN_SERVER`
-    - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` agent and has five steps:
-        - `Azure Kubernetes set context` sets the AKS credentials in the agent's *.kube/config* file.
+    - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` runner and has five steps:
+        - `Azure Kubernetes set context` sets the AKS credentials in the runner's *.kube/config* file.
         - `Get code from the repository` checks out the code from the repository.
         - `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
         - `Azure Login` logs in to Azure using the service principal credentials.
@@ -172,15 +172,11 @@ These two GitHub Action definitions will be part of the repository from now on. 
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**.
     1. Scroll to the **HAVE A DISCOUNT CODE?** field.
-
-        :::image type="content" source="../media/5-deploy-github-action/discount-code-field.png" alt-text="Shopping basket with the coupon code text box" border="true" lightbox="../media/5-deploy-github-action/discount-code-field.png":::
-
-    1. Enter the code *:::no-loc text="DISC-15":::* for a 15 USD discount, and select **APPLY**.
+    1. Enter the code *:::no-loc text="DISC-10":::* for a 10 USD discount, and select **APPLY**.
     1. Select **PLACE ORDER** to complete the purchase.
     1. Back in the console, select the **Centralized logging** URL.
     1. Observe an entry in the logs similar to the following:
 
-        <!-- TODO: update screenshot -->
         :::image type="content" source="../media/5-deploy-github-action/seq-log.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-log.png":::
 
 ## Roll back a deployment
