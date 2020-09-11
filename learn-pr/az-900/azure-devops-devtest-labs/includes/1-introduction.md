@@ -6,7 +6,7 @@ In this module, you'll discover the different software development process tools
 
 By the end of this module, you'll be able to choose the best software development process tools and services that align to your organization's goals and practices.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you will be able to:
 
