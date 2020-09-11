@@ -8,4 +8,6 @@ Use Desktop Analytics with Configuration Manager to:
 - Create pilot groups that represent the entire application and driver estate across a minimal set of devices.
 - Deploy Windows 10 to pilot and production-managed devices.
 
-![Screenshot of the Desktop Analytics home page in the Azure portal](../media/portal-home.png)
+In the following screenshot displays the Desktop Analytics pane:
+
+![Screenshot of the Desktop Analytics pane](../media/portal-home.png)
