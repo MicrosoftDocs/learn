@@ -1,12 +1,14 @@
-First of all, the term "serverless computing" is a misnomer.  After all, there *is* a server (or a group of servers) that executes your code or desired functionality.  The key idea is that you are not responsible for setting up or maintaining that server.  You don't have to worry about scaling the server when there's an increased demand, and you don't have to worry about outages. The cloud vendor takes care of all of maintenance and scaling concerns for you.
+Serverless computing is a cloud-hosted execution environment that runs your code but abstracts the underlying hosting environment. The term "serverless computing" is a misnomer. After all, there *is* a server (or a group of servers) that executes your code or desired functionality.  The key idea is that you are not responsible for setting up or maintaining that server. You don't have to worry about scaling the server when there's an increased demand, and you don't have to worry about outages. The cloud vendor takes care of all of maintenance and scaling concerns for you.
 
-Typically "serverless computing" is used to handle "backend" scenarios.  In other words, it's responsible for sending message from one system to another, or processing messages that were sent from other systems.  It's not used for end-user facing systems, but rather works in the background.
+You create an instance of the service and you add your code. No infrastructure configuration or maintenance is required, or even allowed. You configure your serverless apps to respond to events. An event could be a REST endpoint, a periodic timer, or even a message received from another Azure service. The serverless app runs only when it's triggered by an event. Scaling and performance are handled automatically, and you are billed only for the exact resources you use. You don't even need to reserve resources.
 
-There are two Azure serverless computing services available: Azure Functions and Azure Logic Apps.
+Typically "serverless computing" is used to handle "backend" scenarios. In other words, it's responsible for sending message from one system to another, or processing messages that were sent from other systems.  It's not used for end-user facing systems, but rather works in the background.
+
+There are two Azure serverless computing services that we'll cover in this module: Azure Functions and Azure Logic Apps.
 
 ## Azure Functions
 
-Azure Functions allows you to host a single method or function using a popular programming language in the cloud that runs in response to an event, like an HTTP request, a new message on a queue, or on a timer.  Due to their atomic nature, Azure Functions can serve many purposes in an application's design.  They can be written using many common programming languages like C#, Python, JavaScript, Typescript, Java, and PowerShell.
+[Azure Functions](https://azure.microsoft.com/services/functions/?azure-portal=true) allows you to host a single method or function using a popular programming language in the cloud that runs in response to an event, like an HTTP request, a new message on a queue, or on a timer.  Due to their atomic nature, Azure Functions can serve many purposes in an application's design.  They can be written using many common programming languages like C#, Python, JavaScript, Typescript, Java, and PowerShell.
 
 Azure Functions scale automatically, and charges accrue only when a function is triggered, so they're a solid choice when demand is variable. For example, you may be receiving messages from an IoT solution that monitors a fleet of delivery vehicles. You'll likely have more data arriving during business hours. Azure Functions can scale out to accommodate these busier times.
 
@@ -18,7 +20,7 @@ Azure Functions is ideal when you're only concerned with the code running your s
 
 ## Azure Logic Apps
 
-Logic Apps is a low-code/no-code development platform hosted as a cloud service that helps you automate and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations. Logic Apps simplifies how you design and build scalable solutions, whether in the cloud, on premises, or both, for app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) integration.
+[Logic Apps](https://azure.microsoft.com/services/logic-apps/?azure-portal=true) is a low-code/no-code development platform hosted as a cloud service that helps you automate and orchestrate tasks, business processes, and workflows when you need to integrate apps, data, systems, and services across enterprises or organizations. Logic Apps simplifies how you design and build scalable solutions, whether in the cloud, on premises, or both, for app integration, data integration, system integration, enterprise application integration (EAI), and business-to-business (B2B) integration.
 
 Azure Logic Apps is designed in a web-based designer and can execute logic triggered by Azure services without writing any code.  You build an app by linking triggers to  actions with connectors.  A trigger is an event that causes your app to execute, like a timer, a new message sent to a queue, or an HTTP request. An action is a task or step that can execute.  There are logic actions like you would find in most programming languages like working with variables, decision statements and loops, as well as tasks to parse and modify data.
 
