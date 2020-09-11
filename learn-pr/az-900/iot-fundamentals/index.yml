@@ -15,7 +15,7 @@ abstract: |
   - Choose the best Azure IoT service for a given business scenario.
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/iot-fundamentals.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

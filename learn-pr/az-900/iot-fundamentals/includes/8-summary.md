@@ -12,4 +12,4 @@ IoT is an exciting evolution in computing that bridges the physical and digital 
 
 
 Azure Sphere development kits provide everything you need to start prototyping and developing Azure Sphere applications. Order yours today and start taking advantage of the rich development experience in Visual Studio.
-[Get started with Azure Sphere](https://azure.microsoft.com/en-us/services/azure-sphere/get-started/)
+[Get started with Azure Sphere](https://azure.microsoft.com/services/azure-sphere/get-started/)
