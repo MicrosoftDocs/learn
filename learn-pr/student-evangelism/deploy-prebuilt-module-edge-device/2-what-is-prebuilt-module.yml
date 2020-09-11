@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.oxford.deploy-prebuilt-module-edge-device.2-use-prebuilt-module-to-generate-test-data
+uid: learn.oxford.deploy-prebuilt-module-edge-device.2-what-is-prebuilt-module
 title: Use a pre-built module to generate test data
 metadata:
   title: Use a pre-built module to generate test data
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure-iot-hub
 durationInMinutes: 4 # dummy number at present
 content: |
-  [!include[](includes/2-use-prebuilt-module-to-generate-test-data.md)]
+  [!include[](includes/2-what-is-prebuilt-module.md)]
