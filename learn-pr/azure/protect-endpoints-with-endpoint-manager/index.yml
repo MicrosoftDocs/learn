@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.intro-to-endpoint-manager
+metadata:
+  title: Protect your endpoint environment with Microsoft Endpoint Manager
+  description: In this module, you'll learn protecting devices, apps, and data. Additionally, you understand the endpoint environment and the support platforms available with Microsoft Endpoint Manager. 
+  ms.date: 08/20/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Protect your endpoint environment with Microsoft Endpoint Manager
+summary: In this module, you'll learn protecting devices, apps, and data. Additionally, you understand the endpoint environment and the support platforms available with Microsoft Endpoint Manager. 
+abstract: | 
+  In this module, you will:
+  - Learn managing and protecting your organization's devices, apps and data.
+  - Understand key endpoint management considerations involving the endpoint environment and platform considerations.
+
+prerequisites: None
+iconUrl: http://via.placeholder.com/120x120
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.intro-to-endpoint-manager.1-introduction
+- learn.intro-to-endpoint-manager.2-manage-protect-devices
+- learn.intro-to-endpoint-manager.3-manage-protect-apps
+- learn.intro-to-endpoint-manager.4-manage-protect-data
+- learn.intro-to-endpoint-manager.5-understand-endpoint-environment
+- learn.intro-to-endpoint-manager.6-platform-considerations
+- learn.intro-to-endpoint-manager.7-knowledge-check
+- learn.intro-to-endpoint-manager.8-summary
+badge:
+  uid: learn.intro-to-endpoint-manager.badge
