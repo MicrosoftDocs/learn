@@ -1,10 +1,10 @@
-In this module, you'll create an initial AKS deployment of the simplified version of *eShopOnContainers* with a public IP address over HTTP. This step requires user input, so watch for the prompt in Azure Cloud Shell.
+In this unit, you'll create an initial AKS deployment of the simplified version of *eShopOnContainers* with a public IP address over HTTP. This step requires user input, so watch for the prompt in Azure Cloud Shell.
 
 [!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
 ## Run deployment script
 
-1. In a new browser window, fork the repository `https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core` to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking/).
+1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking/).
 1. Run the following command in the command shell. When prompted for **Repo URL**, enter the URL of your fork created in the first step.
 
     ```bash
