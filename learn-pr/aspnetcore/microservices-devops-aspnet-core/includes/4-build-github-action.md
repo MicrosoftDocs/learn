@@ -45,7 +45,7 @@ A GitHub Action will be used to deploy to ACR and AKS. You must set up permissio
 
     At this point, you should have something like this:
 
-    :::image type="content" source="../media/4-implement-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-implement-github-action/add-github-secrets.png":::
+    :::image type="content" source="../media/4-build-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-build-github-action/add-github-secrets.png":::
 1. Select the **Add secret** button.
 1. Create two additional secrets representing the username and password for accessing the ACR instance. Run the following command to get the values to be used for the new secrets:
 
@@ -65,7 +65,7 @@ Create a GitHub Action for the build with the following steps:
 
 1. Select the **Actions** tab in your repository and select the **set up a workflow yourself** link:
 
-    :::image type="content" source="../media/4-implement-github-action/set-up-custom-github-workflow.png" alt-text="Actions tab in the GitHub repository, highlighting the workflow creation link" border="true" lightbox="../media/4-implement-github-action/set-up-custom-github-workflow.png":::
+    :::image type="content" source="../media/4-build-github-action/set-up-custom-github-workflow.png" alt-text="Actions tab in the GitHub repository, highlighting the workflow creation link" border="true" lightbox="../media/4-build-github-action/set-up-custom-github-workflow.png":::
 
 1. Replace the YAML in the editor with the following YAML:
 
@@ -128,7 +128,7 @@ Create a GitHub Action for the build with the following steps:
 
 1. Replace the default Action file name of *main.yml* with *build.yml*:
 
-    :::image type="content" source="../media/4-implement-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-implement-github-action/action-file-name.png":::
+    :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-build-github-action/action-file-name.png":::
 
 1. Run the following command in Azure Cloud Shell to get values for the `env` block's environment variables:
 
@@ -253,7 +253,7 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
     The build workflow is triggered automatically. You can track the progress of the build in real-time by selecting the **Actions** tab, selecting the most recent workflow run listed, and selecting the **build-and-push-docker-image** task. If the build completes successfully, you'll see a variation of the following:
 
-    :::image type="content" source="../media/4-implement-github-action/eshop-build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-implement-github-action/eshop-build-workflow-success.png":::
+    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/eshop-build-workflow-success.png":::
 1. On the **Code** tab, edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
     ```yml
@@ -276,11 +276,11 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
 1. Select the **Actions** tab in your repository to monitor the deployment's progress.
 
-    :::image type="content" source="../media/4-implement-github-action/deployment-action-output.png" alt-text="Deployment action output from the deploy-to-aks job" border="true" lightbox="../media/4-implement-github-action/deployment-action-output.png":::
+    :::image type="content" source="../media/4-build-github-action/deployment-action-output.png" alt-text="Deployment action output from the deploy-to-aks job" border="true" lightbox="../media/4-build-github-action/deployment-action-output.png":::
 
     In the preceding image, you can see the `deploy-to-aks` job was completed in the log output. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-ask` job. You'll see a variation of the following screen when the deployment completes:
 
-    :::image type="content" source="../media/4-implement-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/4-implement-github-action/deployment-action-completed.png":::
+    :::image type="content" source="../media/4-build-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/4-build-github-action/deployment-action-completed.png":::
 
 1. Run the following command to monitor your pods:
 
