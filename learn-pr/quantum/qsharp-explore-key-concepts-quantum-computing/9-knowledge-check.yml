@@ -19,27 +19,27 @@ quiz:
 
   - content: 'Which of these statements is true about quantum computing.'
     choices:
-    - content: 'A quantum computer uses superposition to calculate all inputs of an algorithm at once.'
+    - content: 'A quantum computer uses superposition to calculate all outputs of an algorithm at once.'
       isCorrect: false
-      explanation: 'Quantum computers do not calculate all inputs at once, but use superposition, interference, and entanglement to make more efficient algorithms.'
+      explanation: 'Quantum computers do not calculate all outputs at once, but use superposition, interference, and entanglement to make more efficient algorithms.'
     - content: 'A quantum computer is faster than classical computers for all tasks.'
       isCorrect: false
       explanation: 'Quantum computers provide an advantage only for certain tasks.'
     - content: 'A quantum computer exploits superposition, interference, and entanglement to do calculations faster than classical computers.'
       isCorrect: true
-      explanation: 'Learning how to exploit these phenomena is the key to design better quantum algorithms.'
+      explanation: 'Learning how to exploit these phenomena is the key to designing better quantum algorithms.'
       
   - content: 'The probability amplitude of a qubit state is:'
     choices:
     - content: 'The probability of obtaining such qubit state when measuring the qubit.'
       isCorrect: false
       explanation: 'The probability of obtaining the qubit state is the absolute value of the probability amplitude squared.'
-    - content: 'A complex number encoding the probability and the phase associated to such qubit state.'
+    - content: 'A complex number encoding the phase and the probability of obtaining such qubit state when measuring the qubit.'
       isCorrect: true
       explanation: 'We can obtain the probability by squaring the absolute value of the probability amplitude.'
     - content: 'A complex number whose absolute value squared tells us the probability of the algorithm to succeed.'
       isCorrect: false
-      explanation: 'Probability amplitudes do not tell us anything about the probability of the algorithm to succeed.'
+      explanation: 'Probability amplitudes are associated with quantum states rather than with algorithms.'
 
   - content: 'Qubit states behave similar to waves. Which of these statements is true about quantum interference:'
     choices:
@@ -61,6 +61,6 @@ quiz:
     - content: 'The outcomes of measurements over those qubits are strongly correlated.'
       isCorrect: true
       explanation: 'Two qubits are entangled if measurements over the qubits present correlations that cannot be explained with classical physics alone.'
-    - content: 'Both qubits have always the same state, no matter how we manipulate them.'
+    - content: 'Both qubits give always the same results when we measure their individual state, no matter how we manipulate them.'
       isCorrect: false
-      explanation: 'Two qubits can be entangled but be in different states.'
+      explanation: 'Two qubits can be entangled but be in different partial states and output different results when measure them. For example, state $\frac{1}{sqrt{2}}(\ket{01}+\ket{10})$ is entangled but bot qubits will yield opposite results when we measure them in the computational basis.'
