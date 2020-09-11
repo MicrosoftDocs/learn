@@ -15,7 +15,7 @@ abstract: |
   - Choose the correct cloud monitoring service to address different kinds of business challenges.  
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/monitoring-fundamentals.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

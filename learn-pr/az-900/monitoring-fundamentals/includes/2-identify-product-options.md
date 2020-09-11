@@ -22,15 +22,11 @@ The recommendations are available via the Azure portal, as well as via API, and 
 
 When in the Azure portal, the Advisor dashboard displays personalized recommendations for all your subscriptions, and you can use filters to hone into recommendations for specific subscriptions, resource groups, or services. The recommendations are divided into five categories:
 
-**Reliability** - Used to ensure and improve the continuity of your business-critical applications.
-
-**Security** - Used to detect threats and vulnerabilities that might lead to security breaches.
-
-**Performance** - Used to improve the speed of your applications.
-
-**Cost** - Used to optimize and reduce your overall Azure spending.
-
-**Operational Excellence** - Used to help you achieve process and workflow efficiency, resource manageability, and deployment best practices.
+- **Reliability** - Used to ensure and improve the continuity of your business-critical applications.
+- **Security** - Used to detect threats and vulnerabilities that might lead to security breaches.
+- **Performance** - Used to improve the speed of your applications.
+- **Cost** - Used to optimize and reduce your overall Azure spending.
+- **Operational Excellence** - Used to help you achieve process and workflow efficiency, resource manageability, and deployment best practices.
 
 ### Azure Monitor
 
