@@ -1,10 +1,10 @@
-This exercise uses Azure CLI in Azure Cloud Shell to issue the required commands. To get started, open [**https://shell.azure.com**](https://shell.azure.com).
+This exercise uses Azure CLI in Azure Cloud shell to issue the required commands. To get started, open [**https://shell.azure.com**](https://shell.azure.com).
 
-![An illustration is showing how to connect azure cloud shell.](../media/cloud-shell.png)
+![An illustration is showing how to connect azure Cloud shell.](../media/cloud-shell.png)
 
 ## Install Azure IoT extension
 
-You need to add the Azure IoT extension to the cloud shell instance Azure CLI.
+You need to add the Azure IoT extension to the Cloud shell instance Azure CLI.
 First, check which extensions you already have installed by running the following command:
 
 ```azurecli
@@ -77,14 +77,14 @@ az iot hub create --resource-group IoTEdgeResources --name {hub_name} --sku F1 -
 
 ## Register an IoT Edge device
 
-In the Azure cloud shell, use the following instructions to create a device named "myEdgeDevice" in your hub.
+In the Azure Cloud shell, use the following instructions to create a device named "myEdgeDevice" in your hub.
 
 ### Create a device identity
 
 Since IoT Edge devices behave and can be managed differently compared to typical IoT devices, declare this identity to be for an IoT Edge device with the `--edge-enabled` flag.
 
 > [!IMPORTANT]
-> If you get an error about "iothubowner policy keys", make sure that your cloud shell is running the latest version of the `azure-cli-iot-ext` extension.
+> If you get an error about "iothubowner policy keys", make sure that your Cloud shell is running the latest version of the `azure-cli-iot-ext` extension.
 
 The following command creates the device identity:
 
