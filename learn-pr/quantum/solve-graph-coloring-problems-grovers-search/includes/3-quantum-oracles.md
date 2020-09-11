@@ -1,6 +1,6 @@
 Now that we understand the problem we're trying to solve, let's see how to implement it in a way that will be useful to the quantum algorithm.
 
-In this unit, we will discuss the ways to convert the search problem description into a quantum operation that can be used by Grover's algorithm and executed on a quantum computer.
+Now, we will discuss the ways to convert the search problem description into a quantum operation that can be used by Grover's algorithm and executed on a quantum computer.
 
 
 ## How to do computations on a superposition state?
@@ -21,16 +21,16 @@ In other words, the operation $U_f^{state}$ doesn't change the basis states for 
 The full effect on the superposition can be deduced using the fact that quantum operations are linear: our starting state will be transformed to $a_{00} |0\rangle_x|f(0)\rangle_y + a_{01} |0\rangle_x|1 \oplus f(0)\rangle_y + a_{10} |1\rangle_x|f(1)\rangle_y + a_{11} |1\rangle_x|1 \oplus f(1)\rangle_y$. 
 In this case, the extra qubit will often end up entangled with the data qubits.
 
-> Note that performing computations this way is not the same as "being able to evaluate the function on all inputs at once"! 
+> [!NOTE]
+> Performing computations this way is not the same as "being able to evaluate the function on all inputs at once"! 
 > Recall that quantum measurements limit the amount of information we can extract from a quantum systems, so in both cases we won't be able to extract all of the function values from such a computation. 
 > We need to construct a clever algorithm that will take advantage of performing the computation in superposition to find the answer we're looking for.
 
-Which way to represent the classical computations in a quantum algorithm is better? 
-That really depends on the goals. 
+The best way to represent classical computations in a quantum algorithm depends on the goals. 
 
 * Many quantum algorithms call for using the first approach, encoding the classical function values in phases of basis states, since this approach simplifies expressing the algorithm. 
 * The second approach, encoding the classical function values in the states of extra qubits, makes implementing the classical computations easier.
-* In practice we'll often see the second approach used to implement the classical computations, and then converted to the first format as the last step before the operation is plugged into the rest of the quantum algorithm.
+In practice we'll often see the second approach used to implement the classical computations, and then converted to the first format as the last step before the operation is plugged into the rest of the quantum algorithm.
 
 ## Quantum oracles
 
@@ -40,4 +40,4 @@ For such algorithms, their runtime analysis is done in terms of the number of or
 
 The branch of quantum computing that studies the techniques of implementing classical computations on a quantum computer is called *reversible computing*. We will return to the question of implementing quantum oracles efficiently in the last unit when we discuss the types of problems that can benefit from Grover's algorithm.
 
-In the next unit we will see how to implement our example problem, graph coloring problem, as a quantum oracle using Q#.
+In the next section you'll see how to implement the example problem, graph coloring problem, as a quantum oracle using Q#.

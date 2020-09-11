@@ -1,12 +1,12 @@
-The first step of any algorithm discussion is introducing the problem this algorithm is designed to solve. 
-
-In this unit, we will define the problem solved by Grover's search algorithm - so-called "search problem" - and take a closer look at the ways various real-life problems can be represented in terms of this problem.
+In this section, we define the problem solved by Grover's search algorithm - so-called "search problem" - and take a closer look at the ways various real-life problems can be represented in terms of this problem.
 
 ## The search problem
 
 The search problem is formulated as follows: you are given a function $f$ that takes an $N$-bit input and returns a 1-bit output, 0 or 1. Your goal is to find any input $x_0$ for which $f(x_0) = 1$.
 
-> Notice that you are not given any information about the structure of the function you are given! You only have access to a "black box" that implements this function, i.e., takes the input and returns the corresponding output.
+> [!NOTE] 
+> Notice that you are not given any information about the structure of the function you are given! You only have 
+> access to a "black box" that implements this function, this is, takes the input and returns the corresponding output.
 
 ## What problems can be framed as search problems?
 
@@ -42,5 +42,4 @@ In fact, the vertices of this graph cannot be labeled using just three colors; y
 
 In general graph coloring is an [NP-complete problem](https://en.wikipedia.org/wiki/NP-completeness) and the best known solutions take exponential time to run. 
 
-In the next units of this module, we'll see how quantum computing can help speed up solving this problem.
-
+In the next parts of this module, you'll see how quantum computing can help speed up solving this problem.

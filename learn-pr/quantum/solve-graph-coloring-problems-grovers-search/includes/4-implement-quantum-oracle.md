@@ -1,4 +1,4 @@
-﻿In this unit, we will see how to implement a quantum oracle for our example graph coloring problem from unit 2.
+Now, you will implement a quantum oracle for the graph coloring problem.
 
 ## Representing the graph
 
@@ -116,7 +116,7 @@ Now that we know how to check that the colors of two vertices are different, we 
 2. For each pair, check that the colors of these vertices are different.
 3. If all pairs of vertices satisfy this condition, the coloring is valid.
 
-To implement these steps as a quantum operation, we'll need to allocate extra qubits to store the results of pair-vise color comparisons, one qubit per edge. 
+To implement these steps as a quantum operation, we'll need to allocate extra qubits to store the results of pairwise color comparisons, one qubit per edge. 
 We will start with those qubits in $|0\rangle$ state and compare colors of vertices in each pair using `MarkColorEquality` operation we've seen above; it will flip the state of the qubit to $|1\rangle$ if the colors of the corresponding pair of vertices are the same.
 
 Finally, we will compute the final result: if all extra qubits allocated are in $|0\rangle$ state, we flip the state of our target qubit to indicate that the vertex coloring is valid.

@@ -1,10 +1,10 @@
 Quantum computing promises to enable algorithms that are much faster than their classical counterparts for certain types of problems. 
-Identifying the problems for which quantum speedup is possible and coming up with algorithms that offer it is an area of ongoing research.
+Identifying the problems for which a quantum speedup is possible and coming up with algorithms that offer it is an area of ongoing research.
 
 One of such algorithms is Grover's search algorithm - one of the most famous algorithms in quantum computing. 
 The problem it solves is often referred to as "searching a database", but it is more accurate to think of it as "search problem" or "inverting a function": given a function that returns 0 or 1, find any input for which the function returns 1. 
 This formulation seems rather mathematical at first, but it is powerful enough to express a broad class of problems. 
-The core idea of Grover's algorithm also turns out to be an important building block of other, more complicated quantum algorithms.
+The core idea of Grover's algorithm also turns out to be an important building block of other, more complex quantum algorithms.
 
 In this module, we'll introduce the necessary concepts and tools for implementing Grover's algorithm and applying it to solving a simple problem. Then we'll demonstrate the implementation in Q#.
 Finally, we'll outline some practical aspects of using Grover's search for solving problems.

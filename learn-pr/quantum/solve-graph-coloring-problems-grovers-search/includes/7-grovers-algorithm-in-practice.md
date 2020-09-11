@@ -6,9 +6,7 @@ It turns out that this is not the case. In this unit, we will look into the type
 
 We've seen that Grover's algorithm doesn't rely on the internal structure of the function $f$. However, when you try to solve a problem, you try to approach it from different angles, including analyzing the problem structure and looking for the ways to use it to speed up your solution. It turns out that search problems often have a well-defined problem structure that a classical algorithm can exploit to run much faster.
 
-> For example, database search is frequently mentioned as a potential application of Grover's algorithm. 
-> In practice real-life databases that store information don't perform search by trying each of the records to see whether it matches the query; instead they rely on [indexes](https://en.wikipedia.org/wiki/Database_index) that enable much faster lookup.
-> Large databases can also take advantage of distributed storage and processing.
+ For example, database search is frequently mentioned as a potential application of Grover's algorithm. In practice real-life databases that store information don't perform search by trying each of the records to see whether it matches the query; instead they rely on [indexes](https://en.wikipedia.org/wiki/Database_index) that enable much faster lookup. Large databases can also take advantage of distributed storage and processing.
 
 This observation gives us the first part of the answer: the problems that are best poised to benefit from Grover's algorithm are the ones for which we can easily check whether the given $x$ is the answer, but we cannot easily exploit problem structure or parallel processing to find the answer.
 
