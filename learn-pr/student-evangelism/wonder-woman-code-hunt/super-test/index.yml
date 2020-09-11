@@ -1,14 +1,14 @@
 ### YamlMime:Module
-uid: learn.student-evangelism.create-python-personality-test
+uid: learn.student-evangelism.wonder-woman-personality-quiz
 metadata:
-  title: Program your own personality test
+  title: Program your own personality quiz
   description: Which WONDER WOMAN 1984 character are you most like? Use Python once again to build a quiz to share with your friends, this time with Boolean commands and conditionals. No prior background in computer science is needed. For the best experience, download Visual Studio Code.
   ms.date: 9/21/20
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Program your own personality test
+title: Program your own personality quiz
 summary: Which WONDER WOMAN 1984 character are you most like? Use Python once again to build a quiz to share with your friends, this time with Boolean commands and conditionals. No prior background in computer science is needed. For the best experience, download Visual Studio Code.
 abstract: |
  In this module, you will begin to discover: 
@@ -28,14 +28,14 @@ roles:
 products:
 - vs-code
 units:
-- learn.student-evangelism.create-python-personality-test.introduction
-- learn.student-evangelism.create-python-personality-test.set-up-visual-studio-code
-- learn.student-evangelism.create-python-personality-test.python-basics
-- learn.student-evangelism.create-python-personality-test.create-test-1
-- learn.student-evangelism.create-python-personality-test.create-test-2
-- learn.student-evangelism.create-python-personality-test.create-test-3
-- learn.student-evangelism.create-python-personality-test.score-test
-- learn.student-evangelism.create-python-personality-test.knowledge-check
-- learn.student-evangelism.create-python-personality-test.summary
+- learn.student-evangelism.wonder-woman-personality-quiz.introduction
+- learn.student-evangelism.wonder-woman-personality-quiz.set-up-visual-studio-code
+- learn.student-evangelism.wonder-woman-personality-quiz.python-basics
+- learn.student-evangelism.wonder-woman-personality-quiz.create-quiz-1
+- learn.student-evangelism.wonder-woman-personality-quiz.create-quiz-2
+- learn.student-evangelism.wonder-woman-personality-quiz.create-quiz-3
+- learn.student-evangelism.wonder-woman-personality-quiz.score-quiz
+- learn.student-evangelism.wonder-woman-personality-quiz.knowledge-check
+- learn.student-evangelism.wonder-woman-personality-quiz.summary
 badge:
-  uid: learn.student-evangelism.create-python-personality-test.badge
+  uid: learn.student-evangelism.wonder-woman-personality-quiz.badge

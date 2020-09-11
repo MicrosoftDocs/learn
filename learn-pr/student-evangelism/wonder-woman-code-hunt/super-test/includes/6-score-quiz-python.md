@@ -1,4 +1,4 @@
-Now it's time to really score the test and assign your user a character from Wonder Woman 1984!
+Now it's time to really score the quiz and assign your user a character from Wonder Woman 1984!
 
 With five questions and different choices, you'll use some variables to guide the response. You'll add and subtract points from each of the four characters depending on what the user chose to answer. At the end, you'll tally up all the points and tell the user which character they are most like.
 

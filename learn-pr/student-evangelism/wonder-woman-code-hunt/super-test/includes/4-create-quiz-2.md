@@ -1,4 +1,4 @@
-So far your code asks one question to the user, stores their response, and if their response was 'A' it prints out a message. In this unit, you will explore how to handle the user choosing 'B' and create the rest of the questions for your test.
+So far your code asks one question to the user, stores their response, and if their response was 'A' it prints out a message. In this unit, you will explore how to handle the user choosing 'B' and create the rest of the questions for your quiz.
 
 To account for the user choosing 'B' instead of 'A', you can choose from a few possibilities; multiple if-statements, an else-statement, or an elif-statement.
 

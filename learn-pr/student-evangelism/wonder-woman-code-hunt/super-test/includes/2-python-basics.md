@@ -1,4 +1,4 @@
-Before you dive into the full personality test, let's walk you through the basics for commanding the Python. If you already know how to use variables, functions, and conditionals, you can skip to the next unit in this module.
+Before you dive into the full personality quiz, let's walk you through the basics for commanding the Python. If you already know how to use variables, functions, and conditionals, you can skip to the next unit in this module.
 
 ## Comments
 
@@ -39,7 +39,7 @@ print( f"The year is {year}..." )
 Press the **Play** button, and you should see the year print out.
 
 > [!div class="mx-imgBorder"]
-> ![The output to printing the value of a variable](../media/test-print-variable.png)
+> ![The output to printing the value of a variable](../media/quiz-print-variable.png)
 
 We can update the value of a variable using the same assignment (`=` sign) operator. The Python will figure out the right-hand side before storing it in the variable. Since "year" already has a value, this command will ask the Python to first substitute the current value of "year" (which is 1984), add 36 to it, then store that value in the variable "year". This effectively overwrites the value that was written down originally. Try it out by replacing the commands in your file with the following.
 
@@ -104,7 +104,7 @@ There are a few more possible scenarios, but let's move on to how we can use con
 
 ## Conditionals in Python
 
-Python expects a particular "syntax" (formulation of the commands). We won't go into depth here; instead, just try out this example by adding the following to your file. (If you're wondering what the `==` is doing, that is how we test if two numbers are equal; remember that a single `=` means assignment of a variable, so the computer would be confused).
+Python expects a particular "syntax" (formulation of the commands). We won't go into depth here; instead, just try out this example by adding the following to your file. (If you're wondering what the `==` is doing, that is how we quiz if two numbers are equal; remember that a single `=` means assignment of a variable, so the computer would be confused).
 
 ```python
 # if we're in 1984
@@ -118,7 +118,7 @@ if year == 2020:
 Press the **Play** button, and you should see the state-of-the-art in messaging.
 
 > [!div class="mx-imgBorder"]
-> ![The output from the conditional statement](../media/test-output-conditionals.png)
+> ![The output from the conditional statement](../media/quiz-output-conditionals.png)
 
 How would you change the year so that you get a message on your answering machine instead?
 
@@ -128,6 +128,6 @@ Python puts a special meaning on the words "true" and "false", and calls them bo
 
 You might be comfortable with arithmetic, where numbers are operated on to produce other numbers; 1 + 2 is 3. The operands are the numbers 1 and 2, and the operator is the addition operator (+).  In boolean logic, boolean values (True or False) are operated on to produce other boolean values. We might say, "if it is cold outside AND it is raining, then grab a parka." Then both conditions must be met (must be True) for us to grab a parka. Here the operands are whether or not it is cold outside and whether or not it is raining; the AND operator
 
-Now that we have the handle on some of the basics, let's move on to making the test.
+Now that we have the handle on some of the basics, let's move on to making the quiz.
 
 *WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

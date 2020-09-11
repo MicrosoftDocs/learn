@@ -6,17 +6,17 @@ Let's start by creating a folder on your computer where you can find easily it. 
 > If you already followed the previous module in this learning path where you <!--link this to the secret message module -->decoded a secret message, you can use the same folder as before.
 
 > [!div class="mx-imgBorder"]
-> ![WW84 folder creation](../media/test-create-folder.png)
+> ![WW84 folder creation](../media/quiz-create-folder.png)
 
 Then open Visual Studio Code and select "Open folder..." from the start screen; open your WW84 folder.
 
 > [!div class="mx-imgBorder"]
-> ![Select open folder in VSCode](../media/test-open-folder.png)
+> ![Select open folder in VSCode](../media/quiz-open-folder.png)
 
 Next create a file called `quiz.py`.
 
 > [!div class="mx-imgBorder"]
-> ![Create a new file called quiz.py](../media/test-file.png)
+> ![Create a new file called quiz.py](../media/quiz-file.png)
 
 Also feel free to close the Welcome tab now.
 
@@ -32,10 +32,10 @@ print( "Hello, Themyscira!" )
 Your editor should resemble this:
 
 > [!div class="mx-imgBorder"]
-> ![Hello, Themyscira code](../media/test-hello-world.png)
+> ![Hello, Themyscira code](../media/quiz-hello-world.png)
 
 To have the Python follow your commands, press the green **Play** button in the upper right corner. You should see a message from the Python below.
 
-Now you're ready to learn some of the Python basics needed to build your test.
+Now you're ready to learn some of the Python basics needed to build your quiz.
 
 *WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

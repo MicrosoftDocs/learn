@@ -1,6 +1,6 @@
-Now it's time to create the outline of your test code!
+Now it's time to create the outline of your quiz code!
 
-![Test promo](../media/ww84-edu-02-github-program-test.png)
+![quiz promo](../media/ww84-edu-02-github-program-quiz.png)
 
 To start, you will ask five questions and have only two options for each:
 
@@ -27,13 +27,13 @@ We'll use these questions to determine which of the following four you are most 
 - Steve Trevor
 - Max Lord
 
-## Ask the test taker for input
+## Ask the quiz taker for input
 
 You probably already know how to print text to the console from the last unit in this module on Python basics, but now you have to write code to enable a human write text *back* to the program.
 
 Python's input command is for this exact scenario; it gives back (returns) the user's answer, which you can then store in a variable.
 
-If you have code from the Python basics unit, you can delete them if you want so that this file is only the code for the test.
+If you have code from the Python basics unit, you can delete them if you want so that this file is only the code for the quiz.
 
 > [!NOTE]
 > The `\n` in the text below is putting in a new line so that the question and answer choices are each on their own line. Think of it like hitting the "return" key.

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.student-evangelism.create-python-personality-test.summary
+uid: learn.student-evangelism.wonder-woman-personality-quiz.summary
 metadata:
-  title: Summary - What's next in the world of personality tests?
-  description: Summary of the module for creating  a test to determine your super personality by using Python and Visual Studio Code.
+  title: Summary - What's next in the world of personality quizzes?
+  description: Summary of the module for creating  a quiz to determine your super personality by using Python and Visual Studio Code.
   ms.date: 9/21/20
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary - What's next in the world of personality tests?
+title: Summary - What's next in the world of personality quizzes?
 durationInMinutes: 5
 content: |
   [!include[](includes/8-summary.md)]
