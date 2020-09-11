@@ -9,16 +9,16 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enterprise-scale architecture operational design principles
-summary: Learn how to operationalize an Azure enterprise estate using centralized management to provide the guard rails needed to enable the business' path to the cloud.
+summary: Learn how to operationalize an Azure enterprise estate using centralized management to provide the guardrails needed to enable the organization's path to the cloud.
 abstract: | 
   In this module, you will:
-  - Learn how to implement Enterprise Scale management and monitoring strategy
+  - Learn how to implement an enterprise-scale management and monitoring strategy
   - Design platform-level BCDR capabilities to meet application requirements
-  - Determine plan for implementing a secure and compliant platform
+  - Develop a plan for implementing a secure and compliant platform
 
 prerequisites: | 
   - Intermediate knowledge of Azure Log Analytics
-  - Intermediate knowledge of Azure Security Center and Sentinel
+  - Intermediate knowledge of Azure Security Center and Azure Sentinel
   - Advanced knowledge of Azure Policy
 iconUrl: http://via.placeholder.com/120x120
 levels:
