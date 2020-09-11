@@ -29,7 +29,7 @@ transform a register in the state $\ket{00}$ to the entangled state
 $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
 
 $$CNOT( H\ket{0},\ket{0})=CNOT(\frac1{\sqrt2}(\ket{0}+\ket{1}),\ket{0})=
-\frac1{\sqrt2}(CNOT(\ket{0},\ket{0})+CNOT(\ket{1},\ket{0}))=\frac1{\sqrt2}(\ket{00}+\ket{11}).$$
+\frac1{\sqrt2}(CNOT(\ket{0},\ket{0})+CNOT(\ket{1},\ket{0}))=\frac1{\sqrt2}(\ket{00}+\ket{11})$$
 
 To implement this in Q#:
 

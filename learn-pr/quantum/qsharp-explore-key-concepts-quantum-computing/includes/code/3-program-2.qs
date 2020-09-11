@@ -8,7 +8,6 @@ namespace ExploringSuperposition {
     @EntryPoint()
     operation GenerateSpecificState(alpha : Double) : Result {
         using (q = Qubit()) {
-            Message("");
             Ry(2.0 * ArcCos(Sqrt(alpha)), q);
             Message("The qubit is in the desired state.");
             Message("");

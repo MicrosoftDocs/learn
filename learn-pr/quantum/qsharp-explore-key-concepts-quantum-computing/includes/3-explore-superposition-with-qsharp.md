@@ -27,7 +27,7 @@ into a file or some other location. If you omit the `location`, this function pr
 > hardware, `DumpMachine` won't do anything since we can't access the
 > state of the qubit register during execution. Remember that measuring the
 > state of a qubit can change its state. In simulated virtual quantum computers,
-> we can use tools like `DumpMachine` and to explore the state of the system.
+> we can use tools like `DumpMachine` to explore the state of the system.
 
 To add the library, you use the `open` directive. Modify *Program.qs* like this:
 
@@ -90,7 +90,7 @@ you want to inspect the state after the measurement.
     One
     ```
 
-The `DumpMachine` function outputs a table with the information that describes the state of the qubit register. Specifically, it gives the probability amplitude, the probability, and the phase in radians for each state. Let's look at each step:
+The `DumpMachine` function outputs a table with the information that describes the state of the qubit register. Specifically, it gives the probability amplitude, the probability, and the phase in radians for each basis state. Let's look at each step:
 
 1. ```output
        Initialized qubit:
@@ -158,7 +158,7 @@ of the Standard library.
 
 > [!TIP]
 > If you want to learn more about the math behind single qubit operations, check out the
-> [Single qubit gates quantum kata](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates?azure-portal=true).
+> [Single qubit gates quantum kata](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates?azure-portal=true).
 
 1. Modify *Program.qs* like this and then save the file:
 
@@ -174,9 +174,11 @@ of the Standard library.
 
     ```output
     The qubit is in the desired state.
+
     # wave function for qubits with ids (least to most significant): 0
     |0⟩:     0.577350 +  0.000000 i  ==     *******              [ 0.333333 ]     --- [  0.00000 rad ]
     |1⟩:     0.816497 +  0.000000 i  ==     **************       [ 0.666667 ]     --- [  0.00000 rad ]
+
     Your skewed random bit is:
     One
     ```
@@ -249,7 +251,7 @@ instead of one qubit three times.
 
     You can see with `DumpMachine` how the act of measuring the three qubits collapses the state of the register to one of the eight possible basis states.
 
-    What would happen if instead of measuring the three qubits at once with `ForEach(M, qubits)`, you measure them sequentially? To do so, you just need to modify the code slightly.
+    `ForEach(M, qubit)` measures each qubit in turn, gradually collapsing the state. Can we look at the intermediary states after each measurement? To do so, you just need to modify the code slightly.
 
 1. Modify *Program.qs* like this and then save the file:
 

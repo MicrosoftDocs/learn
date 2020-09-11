@@ -5,7 +5,7 @@ Quantum algorithms aren't always faster than their classical counterparts. But f
 How can quantum computers perform better than classical computers? In this module, you'll learn about three fundamental concepts behind the power of quantum computing: _superposition_,
 _interference_, and _entanglement_. You'll use Q# and some of the tools provided by the Quantum Development Kit to see these concepts in action.
 
-You'll also explore a few quantum algorithms to see how superposition, interference, and entanglement enables you to create quantum algorithms that outperform classical computers.
+You'll also explore a few quantum algorithms to see how superposition, interference, and entanglement enable you to create quantum algorithms that outperform classical computers.
 
 ## Learning objectives
 
@@ -14,7 +14,7 @@ After completing this module, you'll be able to:
 - Explain the basic theory behind the power of quantum computing, including concepts like superposition, interference, and entanglement.
 - Inspect quantum states when running code in simulated quantum computers.
 - Estimate the quantum resources that are needed to run your programs.
-- Explore algorithms that make use of quantum properties that outperform classical algorithms.
+- Explore algorithms that make use of quantum properties to outperform classical algorithms.
 
 ## Prerequisites
 

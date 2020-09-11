@@ -32,8 +32,8 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 > quantum computing you don't have to worry about it. Here we will understand by
 > measurement the informal idea of "observing" a qubit, which immediately
 > collapses the quantum superposition to one of the two basis states that correspond to classical values 0 and 1. If you
-> want to learn more about the historical discussion about measurements in the
-> context of quantum mechanics, you will find a detailed discussion in the
+> want to learn more about measurements in the
+> context of quantum mechanics its historical discussion, you will find detailed information in the
 > [Wikipedia article on the measurement
 > problem](https://wikipedia.org/wiki/Measurement_problem).
 
@@ -44,13 +44,11 @@ An *operator* (sometimes known as *gate*) is a function that transforms the stat
 $$ A \ket{\psi} = \ket{\psi'}$$
 
 We say that an operator $ A$ is *linear* when it has the following properties
-for addition and multiplication by a complex number:
+for addition and multiplication by a complex number $a$:
 
 $$ A(\ket{\psi_1} + \ket{\psi_2}) =  A\ket{\psi_1} + A\ket{\psi_2}$$
 
 $$ A(a\ket{\psi})=a  A(\ket{\psi})$$
-
-where $a$ is a complex number.
 
 ### How do linear operators relate to quantum superposition?
 
@@ -87,13 +85,19 @@ quantum mechanics and therefore of quantum computing.
 ## Quantum computers are probabilistic
 
 A fundamental difference between classical computers and quantum computers is
-that programs in quantum computers are probabilistic, whereas classical
-computers are deterministic. Quantum algorithms consist of linear operations
+that programs in quantum computers are intrinsically probabilistic, whereas classical
+computers are usually deterministic. Quantum algorithms consist of linear operations
 applied to a register of qubits to modify the states to a particular
 superposition of all possibilities. Each possible state has an associated
 probability amplitude. When we make a measurement, we obtain one of the possible
 states with a certain probability. This fact contrasts with classical computing,
 where a bit can only be deterministically 0 or 1.
+
+> [!NOTE]
+> Whereas some programs for classical computers are also probabilistic,
+> probabilistic classical programs can't provide the same speedup that you can
+> obtain with quantum computers. This is fundamentally due to superposition,
+> interference, and entanglement.
 
 These characteristics mean that sometimes you have to run the algorithm several
 times to ensure the highest probability result in the output. This repetition
@@ -106,8 +110,8 @@ In the next figures you can see a simplified comparison between qubits and bits:
 
 ![Figure depicting the probability associated to each simplified qubit](../media/2-probability.png)
 
-Note that this examples don't represent actual qubits, since coins and marble
-vending machines can't exist in superposition, but they're useful to visualize
+Note that these examples don't represent actual qubits, since coins and marble
+vending machines can't exist in superposition states, but they're useful to visualize
 the probabilities. Only quantum systems like ions or superconducting circuits
 can exists in the superposition states that enable the power of quantum
 computing.

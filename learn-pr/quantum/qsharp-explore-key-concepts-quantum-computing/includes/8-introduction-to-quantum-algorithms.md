@@ -4,13 +4,14 @@ We outline how they use superposition, interference, and entanglement to achieve
 
 ## Quantum oracle
 
-First, let's introduce the concept of *quantum oracle*. In many problems, you're interested in solving a problem while making the fewest number of
-evaluations of a function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For
-example, if you're searching an element in a database, you can encode the problem
-in a binary function $f: \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$
-can be considered as a black-box that outputs $1$ if the consulted element $x$
-is our target, and $0$ otherwise. An efficient search finds the target element
-with few uses of $f$.
+First, let's introduce the concept of *quantum oracle*. In many problems, you're
+interested in solving a problem while making the fewest number of evaluations of
+a function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For example, if you're
+checking wether a number $x$ fulfils a property, you can encode the problem in a
+binary function $f: \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$ can
+be considered as a black-box that outputs $1$ if the number $x$ fulfils the
+property, and $0$ otherwise. This can be used, for example, to brute-force
+search solutions for mathematical problems.
 
 A quantum oracle is a quantum operation that implements some black-box function $f:
 \\{0,1\\}^n \rightarrow \\{0,1\\}^m$. This
@@ -27,7 +28,7 @@ this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
 can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
 
 You can learn more about quantum oracles in the [conceptual documentation of the
-Quantum Development Kit](https://docs.microsoft.com/quantum/concepts/oracles).
+Quantum Development Kit](https://docs.microsoft.com/quantum/concepts/oracles?azure-portal=true).
 
 ## Deutsch–Jozsa algorithm
 
@@ -82,7 +83,7 @@ This is, you solve the problem with just one query to the oracle, exponentially
 faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
+in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
 
 ![Diagram summarizing Deutsch-Jozsa algorithm](../media/8-dj.svg)
 
@@ -134,4 +135,4 @@ prime factors is exponentially faster than the best known classical algorithm.
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the [Q# sample for integer
-factorization](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization#integer-factorization-sample?azure-portal=true).
+factorization](https://github.com/microsoft/Quantum/tree/main/samples/algorithms/integer-factorization#integer-factorization-sample?azure-portal=true).

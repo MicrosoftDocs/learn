@@ -5,7 +5,7 @@ namespace ExploringEntanglement {
     open Microsoft.Quantum.Measurement;
 
     @EntryPoint()
-    operation TestEntanglementB() : Result[] {
+    operation TestEntanglement2() : Result[] {
         using (qubits = Qubit[2]) {
             H(qubits[0]);
             Controlled X([qubits[0]],qubits[1]);
