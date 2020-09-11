@@ -26,18 +26,18 @@
 
 1. You now need to set the resource group created for you in the sandbox as the default resource group.  To perform that operation you first need to get the resource group name by using the following command.
 
-  ```azurecli
-  az group list -o table
-  ```
+    ```azurecli
+    az group list -o table
+    ```
 
-  And use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
+    And use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**) This allows you to omit that parameter from the rest of the Azure CLI commands in this exercise.
 
-  > [!NOTE]
-  > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true)** Azure CLI command.
+    > [!NOTE]
+    > Normally, when you use an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[az configure](https://docs.microsoft.com/cli/azure/azure-cli-configuration?view=azure-cli-latest&azure-portal=true)** Azure CLI command.
 
-  ```azurecli
-  az configure --defaults group={Resource Group Name}
-  ```
+    ```azurecli
+    az configure --defaults group={Resource Group Name}
+    ```
 
 ## Deploy local template
 
@@ -203,15 +203,15 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
 1. Using the same template as the last exercise, you will construct a variable that will contain the parameters in a JSON string format for the required template parameters.  
 
-> [!NOTE]
-> In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
+    > [!NOTE]
+    > In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
 
     ```azurecli
     parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
     today=$(date +"%Y-%m-%d")
     deploymentname="DeployLocalTemplate-2-"$today
-    
+
     az deployment group create \
     --name $deploymentname \
     --template-file $templateFile \
