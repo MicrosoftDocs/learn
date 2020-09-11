@@ -34,7 +34,7 @@ But what is wave interference? Waves are governed by a linear equation (remember
 implies that waves can be superposed, just like we discussed for quantum states earlier. Superposition of different waves enables their amplitudes
 to interfere, resulting in different effects on the overall state. There are two types of interference:
 
-![An illustration explaining constructive and destructive interference](../media/4-interference.png)
+![An illustration explaining constructive and destructive interference](../media/4-interference.svg)
 
 - **Constructive interference**
 

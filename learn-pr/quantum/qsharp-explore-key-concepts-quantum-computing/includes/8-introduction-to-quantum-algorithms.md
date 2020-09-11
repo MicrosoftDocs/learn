@@ -116,7 +116,7 @@ of the algorithm use instead *iterative phase estimation*, a kind of algorithm
 that finds a complex phase of an operation that enables you to find the period
 of the function.
 
-![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.svg)
+![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.png)
 ![Diagram explaining Shor's algorithm](../media/8-shor2.svg)
 
 #### Outline of Shor's algorithm
