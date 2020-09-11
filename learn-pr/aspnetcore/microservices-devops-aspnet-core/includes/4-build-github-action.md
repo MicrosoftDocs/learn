@@ -1,61 +1,10 @@
 In this unit, you'll implement and test a CI/CD pipeline by performing the following tasks:
 
-- Set up permissions to deploy to ACR and AKS from GitHub
 - Create a GitHub Action to implement a simple CI/CD pipeline
 - Modify the coupon service
 - Update the coupon service version in the Helm chart
 - Verify that the changes where deployed to the AKS cluster
 - Roll back a deployment
-
-## Set up permissions to deploy from GitHub
-
-A GitHub Action will be used to deploy to ACR and AKS. You must set up permissions so the GitHub Action agent can connect to Azure. Complete the following steps:
-
-1. Run the following command to create a service principal to allow access from GitHub:
-
-    ```azurecli
-    az ad sp create-for-rbac --sdk-auth --name http://eshop-learn-sp
-    ```
-
-    A variation of the following output appears:
-
-    ```console
-    Creating a role assignment under the scope of "/subscriptions/<SUBSCRIPTION-ID>"
-    {
-      "clientId": "<CLIENT-ID>",
-      "clientSecret": "<CLIENT-SECRET>",
-      "subscriptionId": "<SUBSCRIPTION-ID>",
-      "tenantId": "<TENANT-ID>",
-      "activeDirectoryEndpointUrl": "https://login.microsoftonline.com",
-      "resourceManagerEndpointUrl": "https://management.azure.com/",
-      "activeDirectoryGraphResourceId": "https://graph.windows.net/",
-      "sqlManagementEndpointUrl": "https://management.core.windows.net:8443/",
-      "galleryEndpointUrl": "https://gallery.azure.com/",
-      "managementEndpointUrl": "https://management.core.windows.net/"
-    }
-    ```
-
-1. Copy the JSON output from the command shell. You'll need this and the credentials for the GitHub Action in next step.
-
-### Create secrets
-
-1. In the GitHub repository you forked, go to **Settings** > **Secrets**.
-1. Select the **New secret** button.
-1. Enter `AZURE_CREDENTIALS` and the JSON output you copied in the **Name** and **Value** text boxes, respectively.
-
-    At this point, you should have something like this:
-
-    :::image type="content" source="../media/4-build-github-action/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/4-build-github-action/add-github-secrets.png":::
-1. Select the **Add secret** button.
-1. Create two additional secrets representing the username and password for accessing the ACR instance. Run the following command to get the values to be used for the new secrets:
-
-    ```bash
-    cat ~/clouddrive/aspnet-learn-temp/config.txt
-    ```
-
-    Name the secrets as follows and use the values provided in the text output:
-    - `REGISTRY_USERNAME`
-    - `REGISTRY_PASSWORD`
 
 ## Create GitHub Actions to implement CI and CD pipelines
 
@@ -98,7 +47,7 @@ Create a GitHub Action for the build with the following steps:
           with:
             ref: main
 
-        - name: Build and push Docker images
+        - name: Build and push Docker image
           uses: docker/build-push-action@v1.1.0
           with:
             username: ${{ secrets.REGISTRY_USERNAME }}
@@ -121,7 +70,7 @@ Create a GitHub Action for the build with the following steps:
         - Builds the Docker image and pushes it to the ACR instance.
         - Runs in an `ubuntu-latest` agent and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
             - `Get code from the repository` checks out the `main` branch.
-            - `Build and push Docker images` builds the image and pushes it to ACR.
+            - `Build and push Docker image` builds the image and pushes it to ACR.
 
     > [!IMPORTANT]
     > Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice is kept in a separate repository.
@@ -253,7 +202,7 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
     The build workflow is triggered automatically. You can track the progress of the build in real-time by selecting the **Actions** tab, selecting the most recent workflow run listed, and selecting the **build-and-push-docker-image** task. If the build completes successfully, you'll see a variation of the following:
 
-    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/eshop-build-workflow-success.png":::
+    :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
 1. On the **Code** tab, edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
     ```yml
@@ -335,7 +284,7 @@ You've just finished creating your first CI/CD pipeline. The Marketing departmen
 
 <!-- TODO - Have the student buy a product using a coupon code before checking the Seq logs page -->
 
-:::image type="content" source="../media/4-build-github-action/seq-log.png" alt-text="A screen capture of the Seq log output." border="true" lightbox="../media/4-build-github-action/seq-log.png":::
+:::image type="content" source="../media/4-build-github-action/seq-log.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/4-build-github-action/seq-log.png":::
 
 ## Roll back a deployment
 
