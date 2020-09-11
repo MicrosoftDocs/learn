@@ -1,6 +1,6 @@
 The first generation of the Tailwind Trader's ecommerce website was available exclusively in English.  However, the Marketing department sponsored a demographics study for their brick-and-mortar locations.  On average, only 80% of potential customers spoke English, and that proportion falls to 50% in some neighborhoods.  The Marketing department sees the addition of multiple languages as a wonderful opportunity to serve non-English speakers with the same online ecommerce experience as English speakers. 
 
-### Which service should we choose?
+## Which service should we choose?
 
 Just like we did in the previous unit, let's apply the decision criteria we learned about in the previous unit to find the right option.
 
@@ -14,4 +14,4 @@ Third, does Tailwind Traders need to predict user behavior or provide users with
 
 Finally, will the Tailwind Trader app predict future outcomes based on private historical data? No. While it would be possible to create a Machine Learning model to perform multi-language translation, it would be expensive and time consuming for Tailwind Traders to attempt to do build translation models themselves. They do not have the deep learning competency, nor the linguistic data required to train the models.
 
-Now that we've examined all of the expert criteria, we can confidently select Congnitive Services as the best product option for this scenario.
+Now that we've examined all of the expert criteria, we can confidently select Cognitive Services as the best product option for this scenario.

@@ -12,10 +12,10 @@ title: Choose the best artificial intelligence service for your needs
 summary: Examine Azure's artificial intelligence services choose the right service for your scenario.
 abstract: |
   By the end of this module, you will be able to:
-  - Choose the correct Azure Artifical Intelligence service to address different kinds of business challenges.
+  - Choose the correct Azure Artificial Intelligence service to address different kinds of business challenges.
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/ai-machine-learning-fundamentals.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

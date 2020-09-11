@@ -4,7 +4,7 @@ The Customer Service team would want the shopper to feel as though they were int
 
 A virtual agent would decrease the amount of time it takes for all shoppers to receive answers.  The virtual agent could answer the vast majority of questions, which would free up human customer service agents to provide support for more difficult questions or thorny account-related issues.
 
-### Which service should we choose?
+## Which service should we choose?
 
 Once again, let's apply the decision criteria we learned about in the previous unit to find the right product.
 

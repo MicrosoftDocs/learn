@@ -10,7 +10,7 @@ Virtually every device or software system that collects textual, visual, and aud
 
 ## Azure Product Options
 
-At a high level, there are three primary offerings from Microsoft, each of which are designed for a specific audience and use case.  Furthermore, each product option provides a diverse set of tools, services, and programmatic APIs. We will merely be scracthing the surface of what each option is capable of in this module.
+At a high level, there are three primary offerings from Microsoft, each of which are designed for a specific audience and use case.  Furthermore, each product option provides a diverse set of tools, services, and programmatic APIs. We will merely be scratching the surface of what each option is capable of in this module.
 
 ### Azure Machine Learning
 
@@ -33,13 +33,10 @@ While Azure Machine Learning requires you to bring your own data and train model
 
 Azure Cognitive Services can be divided into the following categories:
 
-**Language** services -	Allow your apps to process natural language with pre-built scripts, evaluate sentiment, and learn how to recognize what users want.
-
-**Speech** services - Convert speech into text and text into natural-sounding speech. Translate from one language to another and enable speaker verification and recognition.
-
-**Vision** services - Add recognition and identification capabilities when analyzing pictures, videos, and other visual content.
-
-**Decision** services -	Add personalized recommendations for each user that automatically improve each time they're used, moderate content to monitor and remove offensive or risky content, and detect abnormalities in your time series data.
+- **Language** services -	Allow your apps to process natural language with pre-built scripts, evaluate sentiment, and learn how to recognize what users want.
+- **Speech** services - Convert speech into text and text into natural-sounding speech. Translate from one language to another and enable speaker verification and recognition.
+- **Vision** services - Add recognition and identification capabilities when analyzing pictures, videos, and other visual content.
+- **Decision** services -	Add personalized recommendations for each user that automatically improve each time they're used, moderate content to monitor and remove offensive or risky content, and detect abnormalities in your time series data.
 
 ### Azure Bot Service
 
