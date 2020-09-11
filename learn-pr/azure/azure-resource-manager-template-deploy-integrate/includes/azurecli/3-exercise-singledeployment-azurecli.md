@@ -43,7 +43,7 @@
 
 In the following exercise, you will deploy a template from your local machine. The name of the resource group normally used when deploying in your own environment is not needed here since we already defined the default Resource Group context in the section above.
 
-1. To get started copy and paste the content of the following template code, into a file in a local directory.  **C:\JSON\maintemplate.json** or **/mnt/c/Users/<UserName>/json/maintemplate.json** for example.
+1. To get started copy and paste the content of the following template code, into a file in a local directory.  **C:\JSON\maintemplate.json** or **/mnt/c/Users/you/json/maintemplate.json** for example.
 
     ```json
     {
@@ -120,9 +120,7 @@ In the following exercise, you will deploy a template from your local machine. T
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
     today=$(date +"%Y-%m-%d")
     deploymentname="DeployLocalTemplate-"$today
-    ```
 
-    ```azurecli
     az deployment group create \
       --name $deploymentname \
       --template-file $templateFile
@@ -208,21 +206,21 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 > [!NOTE]
 > In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2).  Please adjust based your shell/OS of choice.
 
-  ```azurecli
-  parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
-  templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
-  today=$(date +"%Y-%m-%d")
-  deploymentname="DeployLocalTemplate-2-"$today
+    ```azurecli
+    parameters="{\"vnetName\":{\"value\":\"VNet-001\"},\"costCenterIO\":{\"value\":\"12345\"},\"ownerName\":{\"value\":\"John Smith\"}}"
+    templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
+    today=$(date +"%Y-%m-%d")
+    deploymentname="DeployLocalTemplate-2-"$today
+    
+    az deployment group create \
+    --name $deploymentname \
+    --template-file $templateFile \
+    --parameters "$parameters"
+    ```
 
-  az deployment group create \
-  --name $deploymentname \
-  --template-file $templateFile \
-  --parameters "$parameters"
-  ```
+    Once it completes, you should have results like the example below.  See the **"parameters"** section and the **"provisioningState"** to ensure the command was successful.
 
-  Once it completes, you should have results like the example below.  See the **"parameters"** section and the **"provisioningState"** to ensure the command was successful.
-
-  ```json
+    ```json
       {- Finished ..
         "id": "/subscriptions/082d0d73-f197-45c5-9884-581c8f0ce102/resourceGroups/learn-e692001a-b605-48d4-97bd-7c05669db9dd/providers/Microsoft.Resources/deployments/DeployLocalTemplate-2-2020-08-19",      
         "location": null,
@@ -299,8 +297,8 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
 
 1. Once we have our local parameter file, we can use the following Azure CLI command with the **--parameters** parameters.
 
-> [!NOTE]
-> In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2). Please adjust based your shell/OS of choice.
+    > [!NOTE]
+    > In the example below, the template file is located in a **json** folder in Windows Linux Subsystem (WSL2). Please adjust based your shell/OS of choice.
 
     ```bash
     templateFile=/mnt/c/Users/<UserName>/json/maintemplate.json
@@ -314,7 +312,7 @@ In the next exercise you will pass inline parameters to your deployment, you'll 
     --parameters $templateparameterfile
     ```
 
-    after the deployment you should have results like the following:
+    After the deployment you should have results like the following:
 
     ```json
       {- Finished ..

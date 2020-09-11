@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.resource-manager-template-deploy-integrate
 metadata:
-  description: TBD
+  description: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions.
   ms.date: 10/15/2020
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Deploy Azure resources by using Azure Resource Manager (ARM) templates"
-summary: TBD.
+summary: Learn how to deploy Azure Resource Manager (ARM) templates by using Azure PowerShell, the Azure CLI, and from GitHub Actions. Use linked templates to break down complex templates into templates that are more modular. 
 abstract: |
   After completing this module, you'll be able to:
 
