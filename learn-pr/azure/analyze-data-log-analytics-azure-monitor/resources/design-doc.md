@@ -74,7 +74,7 @@ Imagine you're newly hired into an IT department for a large financial services 
     1. You start out by talking to individual business units about monitoring wants and needs at the start of your assignment. You determine each business unit only needs to query logs generated from their resources. Which access model would you select for your Log Analytics deployment?
     1. What do Insights provide access to?
 
-1. **Exercise - Set up Log Analytics workspace**
+1. **Exercise - Set up Log Analytics workspace and VM Insights**
 
     Follow these steps:
 
