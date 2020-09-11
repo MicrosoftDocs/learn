@@ -30,6 +30,6 @@ The script deploys a modified version of the *:::no-loc text="eShopOnContainers"
 
 This module focuses on adding CI/CD for the coupon service depicted in the preceding diagram.
 
-The script takes several minutes to complete. While the script is running, continue to the next unit to review DevOps concepts.
+The script takes several minutes to complete.
 
 [!INCLUDE [A note about non-blocking script warnings](../../includes/microservices/non-blocking-warnings-note.md)]

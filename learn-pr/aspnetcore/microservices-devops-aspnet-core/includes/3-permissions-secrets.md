@@ -1,7 +1,51 @@
 In this unit, you'll complete the following tasks:
 
+- Verify the app is deployed correctly
 - Set up permissions to deploy to ACR and AKS from GitHub
 - Create secrets to store sensitive data used by the GitHub Actions
+
+## Verify deployment to AKS
+
+After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
+
+```console
+The eShop-Learn application has been deployed.
+
+You can begin exploring these services (when available):
+- Centralized logging       : http://203.0.113.55/seq/#/events?autorefresh (See transient failures during startup)
+- General application status: http://203.0.113.55/webstatus/ (See overall service status)
+- Web SPA application       : http://203.0.113.55/
+```
+
+> [!TIP]
+> To display these URLs again, run the following command:
+>
+> ```bash
+> cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+> ```
+
+Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
+
+1. Select the **General application status** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
+
+    :::image type="content" source="../media3-permissions-secrets/health-check.png" alt-text="Health check page" border="true" lightbox="../media3-permissions-secrets/health-check.png":::
+
+    > [!NOTE]
+    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
+
+1. After all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
+
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
+
+1. Complete a purchase as follows:
+    1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
+    1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
+    1. Select the shopping bag icon in the upper right.
+    1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
+
+    :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
+
+In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll review the design of the new coupon service in the next unit.
 
 ## Set up permissions to deploy from GitHub
 

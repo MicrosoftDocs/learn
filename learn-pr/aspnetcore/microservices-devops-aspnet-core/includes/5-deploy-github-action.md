@@ -159,15 +159,28 @@ These two GitHub Action definitions will be part of the repository from now on. 
     2               Thu Sep 10 19:51:10 2020        deployed        coupon-0.1.0    1.1.0           Upgrade complete
     ```
 
-1. Run the following command:
+1. Follow these steps to verify your change is deployed:
+    1. In the console, run the following command:
 
-    ```bash
-    cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
-    ```
+        ```bash
+        cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
+        ```
 
-<!-- TODO - Have the student buy a product using a coupon code before checking the Seq logs page -->
+    1. Select the **Web SPA application** URL to launch the app.
+    1. Select the **LOGIN** link in the upper right (the credentials are provided on the sign-in page).
+    1. Add your favorite products to the shopping bag by selecting the images.
+    1. Select the shopping bag icon in the upper right.
+    1. Select **CHECKOUT**.
+    1. Scroll to the **HAVE A DISCOUNT CODE?** field.
 
-:::image type="content" source="../media/5-deploy-github-action/seq-log.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-log.png":::
+        :::image type="content" source="../media/5-deploy-github-action/discount-code-field.png" alt-text="Shopping basket with the coupon code text box" border="true" lightbox="../media/5-deploy-github-action/discount-code-field.png":::
+
+    1. Enter the code *:::no-loc text="DISC-15":::* for a 15 USD discount, and select **APPLY**.
+    1. Select **PLACE ORDER** to complete the purchase.
+    1. Back in the console, select the **Centralized logging** URL.
+    1. Observe an entry in the logs similar to the following:
+
+        :::image type="content" source="../media/5-deploy-github-action/seq-log.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-log.png":::
 
 ## Roll back a deployment
 
