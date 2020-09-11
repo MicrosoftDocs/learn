@@ -37,7 +37,7 @@ quiz:
     - content: 'A complex number encoding the phase and the probability of obtaining such qubit state when measuring the qubit.'
       isCorrect: true
       explanation: 'We can obtain the probability by squaring the absolute value of the probability amplitude.'
-    - content: 'A complex number whose absolute value squared tells us the probability of the algorithm to succeed.'
+    - content: 'A complex number whose absolute value squared tells you the probability of the algorithm to succeed.'
       isCorrect: false
       explanation: 'Probability amplitudes are associated with quantum states rather than with algorithms.'
 
@@ -45,7 +45,7 @@ quiz:
     choices:
     - content: 'Constructive interference occurs when two states of opposite phase superpose.'
       isCorrect: false
-      explanation: 'Constructive interference occurs when we superpose two states of the same phase.'
+      explanation: 'Constructive interference occurs when two states of the same phase superpose.'
     - content: 'Quantum interference is a phenomenon in which electromagnetic waves produce noise in our quantum computations.'
       isCorrect: false
       explanation: 'Quantum interference is not related with electromagnetic interference.'
@@ -61,6 +61,6 @@ quiz:
     - content: 'The outcomes of measurements over those qubits are strongly correlated.'
       isCorrect: true
       explanation: 'Two qubits are entangled if measurements over the qubits present correlations that cannot be explained with classical physics alone.'
-    - content: 'Both qubits give always the same results when we measure their individual state, no matter how we manipulate them.'
+    - content: 'Both qubits give always the same results when you measure their individual state, no matter how you manipulate them.'
       isCorrect: false
-      explanation: 'Two qubits can be entangled but be in different partial states and output different results when measure them.'
+      explanation: 'Two qubits can be entangled but also be in different partial states and yield different results when you measure their state.'
