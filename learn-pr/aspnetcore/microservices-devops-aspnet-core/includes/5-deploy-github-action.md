@@ -180,6 +180,7 @@ These two GitHub Action definitions will be part of the repository from now on. 
     1. Back in the console, select the **Centralized logging** URL.
     1. Observe an entry in the logs similar to the following:
 
+        <!-- TODO: update screenshot -->
         :::image type="content" source="../media/5-deploy-github-action/seq-log.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-log.png":::
 
 ## Roll back a deployment
