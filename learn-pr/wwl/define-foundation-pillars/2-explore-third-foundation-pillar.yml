@@ -4,12 +4,12 @@ title: Explore DevOps Architecture
 metadata:
   title: Explore DevOps Architecture
   description: "Explore the third foundation pillar of DevOps, architecture."
-  ms.date: 09/12/2020
+  ms.date: 09/14/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 4
+durationInMinutes: 15
 content: |
   [!include[](includes/2-explore-third-foundation-pillar.md)]
