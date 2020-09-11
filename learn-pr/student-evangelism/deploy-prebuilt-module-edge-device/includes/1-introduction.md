@@ -25,6 +25,6 @@ In this module, you'll:
 ## Prerequisites
 
 - Ability to use IoT Hub in Azure
-- Ability to use Azure Cloud shell
-- Experience creating and managing resources using the Azure portal or Azure Cloud shell at the beginner level
+- Ability to use Azure Cloud Shell
+- Experience creating and managing resources using the Azure portal or Azure Cloud Shell at the beginner level
 - Basic knowledge of Azure IoT Edge
