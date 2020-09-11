@@ -12,7 +12,8 @@ This observation gives us the first part of the answer: the problems that are be
 
 ## Problems that allow efficient oracle implementation
 
-Remember that the complexity analysis of Grover's algorithm uses the number of function evaluations necessary to find the answer as a metric: $O(\sqrt{N})$, as opposed to $O(N)$ used by an exhaustive classical search.
+Remember that the complexity analysis of Grover's algorithm uses the number of function evaluations necessary to find the answer as a metric: approximately $\sqrt{\frac{N}{M}}$, where $N$ is the size of the search space and $M$ is the number of solutions to the problem. 
+For comparison, doing an exhaustive classical search (choosing a random input, calculating the value of the function for it and checking whether it is 1) will take approximately $\frac{N}{M}$ function evaluations.
 
 However, this analysis doesn't take into account the complexity of evaluating the function, both in classical and in quantum cases. If a function evaluation is a lot more complicated on a quantum computer than on a classical one, the overall algorithm runtime will be worse in the quantum case, even though technically it will use fewer queries.
 

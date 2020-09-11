@@ -123,6 +123,6 @@ After that the probability will grow again and approach 100% on iteration $3 R_{
 In our case, we have a very small and easy to analyze problem, so we can calculate the number of solutions by hand. 
 In practical applications, you don't usually know how many solutions your problem has before you solve it.
 
-To handle this issue, you can pick the number of iterations as a random number between $1$ and $R_{opt}$, run the algorithm, and if it doesn't yield an answer, retry with a different number of iterations.
+To handle this issue, you can pick the number of iterations as a random number between $1$ and $R_{opt}^{max}=\frac{\pi}{4}\sqrt{N}$, run the algorithm, and if it doesn't yield an answer, retry with a different number of iterations.
 
 In the next unit, we will see how to implement the algorithm we've  learned in this unit in Q#, and run it to solve our graph coloring problem!

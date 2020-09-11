@@ -101,7 +101,7 @@
                 GroversSearchLoop(register, phaseOracle, nIterations);
                 let res = MultiM(register);
                 // check whether the result is correct
-                oracle(register, output);
+                markingOracle(register, output);
                 if (MResetZ(output) == One) {
                     set isCorrect = true;
                     set answer = ResultArrayAsBoolArray(res);

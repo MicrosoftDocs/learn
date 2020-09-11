@@ -102,7 +102,7 @@ After we apply the equality check, the state of the register `c0` doesn't change
 
 Indeed, since the colors encoded in the state $|00\rangle\_{c0} \otimes |00\rangle\_{c1} \otimes |0\rangle\_{target}$ are equal, the state of the `target` qubit for this basis state gets flipped, giving us the resulting state
 
-$$|00\rangle_{c0} \otimes \frac12\big(|00\rangle_{c1} \otimes |1\rangle_{target} + |10\rangle_{c1} \otimes |0\rangle_{target} + |01\rangle_{c1} \otimes |0\rangle_{target} + |11\rangle_{c1}\big)$$
+$$|00\rangle_{c0} \otimes \frac12\big(|00\rangle_{c1} \otimes |1\rangle_{target} + |10\rangle_{c1} \otimes |0\rangle_{target} + |01\rangle_{c1} \otimes |0\rangle_{target} + |11\rangle_{c1} \otimes |0\rangle_{target} \big)$$
 
 > Note that the `target` qubit becomes entangled with the register `c1`: you can no longer separate their states!
 > If the value of the function we're evaluating is the same for all inputs, the target qubit will stay not entangled with the input register, storing this value instead. 

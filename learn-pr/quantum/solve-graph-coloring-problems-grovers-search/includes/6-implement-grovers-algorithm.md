@@ -46,7 +46,7 @@ This leaves us only the last operation, which defines the problem we're solving,
 * As we've seen in the previous unit, the optimal number of iterations depends both on the search space size and the number of solutions to the problem. 
   The first one is easy to define - any bit string of `2 * nVertices` bits can be interpreted as a potential coloring of `nVertices` vertices, so there are $2^{2 nVertices} = 1024$ candidates.
   The number of solutions is generally trickier to estimate, but in our case the graph structure is easy to analyze. 
-  Vertices 0 - 3 make up a full graph, so they have to be assigned distinct colors in any order - there are $4!$ ways to do this. 
+  Vertices 0 - 3 make up a full graph, so they have to be assigned distinct colors in any order - since we have a total of four colors available, there are $4!$ ways to do this. 
   Vertex 4 is connected only to vertex 3, so it can take any color except the color of vertex 3, which gives us three options for each coloring of the other vertices. 
   The total number of solutions is $4! \cdot 3 = 72$.
 

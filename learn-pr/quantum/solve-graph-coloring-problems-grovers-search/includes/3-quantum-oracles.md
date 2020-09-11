@@ -1,6 +1,4 @@
-Now that we understand the problem we're trying to solve, let's see how to implement it in a way that will be useful to the quantum algorithm.
-
-Now, we will discuss the ways to convert the search problem description into a quantum operation that can be used by Grover's algorithm and executed on a quantum computer.
+Now that we understand the classical problem we're trying to solve, let's see how to convert this problem description into a quantum operation that can be used by Grover's algorithm and executed on a quantum computer.
 
 
 ## How to do computations on a superposition state?
@@ -23,20 +21,22 @@ In this case, the extra qubit will often end up entangled with the data qubits.
 
 > [!NOTE]
 > Performing computations this way is not the same as "being able to evaluate the function on all inputs at once"! 
-> Recall that quantum measurements limit the amount of information we can extract from a quantum systems, so in both cases we won't be able to extract all of the function values from such a computation. 
+> Recall that quantum measurements limit the amount of information we can extract from a quantum system, so in both cases we won't be able to extract all of the function values from such a computation. 
 > We need to construct a clever algorithm that will take advantage of performing the computation in superposition to find the answer we're looking for.
 
 The best way to represent classical computations in a quantum algorithm depends on the goals. 
 
 * Many quantum algorithms call for using the first approach, encoding the classical function values in phases of basis states, since this approach simplifies expressing the algorithm. 
 * The second approach, encoding the classical function values in the states of extra qubits, makes implementing the classical computations easier.
-In practice we'll often see the second approach used to implement the classical computations, and then converted to the first format as the last step before the operation is plugged into the rest of the quantum algorithm.
+* In practice we'll often see the second approach used to implement the classical computations, and then converted to the first format as the last step before the operation is plugged into the rest of the quantum algorithm.
 
 ## Quantum oracles
 
 A quantum oracle is a "black box" operation that is used as input to another algorithm (in this case Grover's search algorithm, but the term is broadly used [in classical computing](https://en.wikipedia.org/wiki/Oracle_machine) as well). 
 Some quantum algorithms are described in terms of quantum oracles to emphasize that they can be applied to a broad class of problems and do not depend on the specific problem, as long as it can be efficiently implemented as a quantum oracle. 
 For such algorithms, their runtime analysis is done in terms of the number of oracle calls (that is, function evaluations), rather than in terms of primitive operations the algorithm will do.
+
+When we use an algorithm described in terms of quantum oracles to solve a specific problem, we need to implement the quantum oracle for this problem - in case of Grover's search algorithm, the oracle computes the value of the function $f(x)$ that we're trying to invert.
 
 The branch of quantum computing that studies the techniques of implementing classical computations on a quantum computer is called *reversible computing*. We will return to the question of implementing quantum oracles efficiently in the last unit when we discuss the types of problems that can benefit from Grover's algorithm.
 
