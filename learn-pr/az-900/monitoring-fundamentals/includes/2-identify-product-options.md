@@ -16,7 +16,7 @@ At a high level, there are three primary monitoring offerings, each of which are
 
 ### Azure Advisor
 
-Azure Advisor evaluates your Azure resources and makes recommendations to help you improve reliability, security, and performance, achieve operational excellence, and reduce costs.  Advisor is designed to help you save you time on cloud optimization. The recommendation service includes suggested actions you can take right away, postpone, or dismiss.
+[Azure Advisor](https://azure.microsoft.com/services/advisor/?azure-portal=true) evaluates your Azure resources and makes recommendations to help you improve reliability, security, and performance, achieve operational excellence, and reduce costs.  Advisor is designed to help you save you time on cloud optimization. The recommendation service includes suggested actions you can take right away, postpone, or dismiss.
 
 The recommendations are available via the Azure portal, as well as via API, and you can set up notifications to alert you to new recommendations.
 
@@ -34,7 +34,7 @@ When in the Azure portal, the Advisor dashboard displays personalized recommenda
 
 ### Azure Monitor
 
-Azure Monitor is a platform for collecting, analyzing, visualizing, and potentially taking action based on the metric and logging data from your entire Azure and on-prem environment.
+[Azure Monitor](https://azure.microsoft.com/services/monitor/?azure-portal=true) is a platform for collecting, analyzing, visualizing, and potentially taking action based on the metric and logging data from your entire Azure and on-prem environment.
 
 The diagram below illustrates just how comprehensive Azure Monitor is.
 
@@ -52,11 +52,11 @@ Some popular products like Azure Application Insights, a service for sending tel
 
 ### Azure Service Health
 
-Azure Service Health provides a personalized view of the health of the Azure services, regions, and resources you rely on.  The site status.azure.com doesn't provide the full picture because it only shows major issues broadly impacting Azure customers. On the other hand, Service Health shows you everything impacting you, including major issues and smaller, localized issues.  Service issues are rare, but it's important to be prepared for the unexpected. You can set up alerts that help you triage outages and planned maintenance.  After an outage, it provides official incident reports that you can share with stakeholders called "root cause analyses", or RCAs.
+[Azure Service Health](https://azure.microsoft.com/features/service-health/?azure-portal=true) provides a personalized view of the health of the Azure services, regions, and resources you rely on.  The site status.azure.com doesn't provide the full picture because it only shows major issues broadly impacting Azure customers. On the other hand, Service Health shows you everything impacting you, including major issues and smaller, localized issues.  Service issues are rare, but it's important to be prepared for the unexpected. You can set up alerts that help you triage outages and planned maintenance.  After an outage, it provides official incident reports that you can share with stakeholders called "root cause analyses", or RCAs.
 
 There are several different event types that you can keep an eye on:
 
-- **Service issues** are problems in Azure tha affect you right now. For example, outages. You can drill into the impacted services, regions, updates from the engineering teams, and ways you can share and track the latest information.
+- **Service issues** are problems in Azure that affect you right now. For example, outages. You can drill into the impacted services, regions, updates from the engineering teams, and ways you can share and track the latest information.
 
 - **Planned maintenance** events can affect your availability.  You can drill into the impacted services, regions, and details on how that will impact you, and what you need to do.  Most of these events are performed without any impact to you and won't be shown here.  In the rare case that a reboot will be required, Service Health will allow you to choose when to perform the maintenance to minimize the impacted downtime.
 

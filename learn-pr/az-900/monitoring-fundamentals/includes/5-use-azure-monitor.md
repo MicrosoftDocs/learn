@@ -4,7 +4,7 @@ Tailwind Traders' ecommerce website is experiencing intermittent errors and they
 
 Just like we did in the previous unit, let's apply the decision criteria we learned about in the previous unit to find the right option.
 
-First, in this scenario, does Tailwind Traders need an analysis of their Azure usage for the sake of optimization? No, optimization is not their objective in this scenario, so Azure Service Health is not a candidate.
+First, in this scenario, does Tailwind Traders need an analysis of their Azure usage for the sake of optimization? No, optimization is not their objective in this scenario, so Azure Advisor is not a candidate.
 
 Second, in this scenario, does Tailwind Traders want to monitor the health of Azure's services affecting all customers or the resources deployed on Azure? Given that this issue happens intermittently, it's unlikely that it affects an entire Azure region or service.  It's more likely that there's a logic issue somewhere in their ecommerce website code, or some other issue causing database failures or caching locks.  In this scenario, Azure Monitor could be used to pinpoint a specific user session, and look at the performance of each service involved in the issue to identify the underlying issue.
 
