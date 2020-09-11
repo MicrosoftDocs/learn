@@ -28,5 +28,5 @@ You also need basic knowledge of linear algebra and complex numbers. These
 Python tutorials in the form of Jupyter notebooks can help you to understand the
 basics. You can run them locally or online.
 
-- [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra?azure-portal=true)
-- [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic?azure-portal=true)
+- [LinearAlgebra](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/LinearAlgebra?azure-portal=true)
+- [ComplexArithmetic](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ComplexArithmetic?azure-portal=true)

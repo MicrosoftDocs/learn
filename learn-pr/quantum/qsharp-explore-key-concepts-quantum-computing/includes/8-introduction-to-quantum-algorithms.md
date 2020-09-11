@@ -71,7 +71,7 @@ the only information you have is that $f(x)$ takes a bit string of length $n$ as
 
 The algorithm is as follows:
 
-1. Start with a register of $n$ qubits initiated in the state \ket{0...0}.
+1. Start with a register of $n$ qubits initiated in the state $\ket{0...0}$.
 1. Apply $H$ to every qubit to create a superposition of all possible states.
 1. Apply the oracle $U_f$ to the superposition to cause quantum interference.
 1. Apply $H$ to every qubit again to get out of superposition.
@@ -107,9 +107,9 @@ best known classical algorithm is the *general number field sieve* algorithm.
 Shor's algorithm takes advantage of the fact that the factoring problem can be
 transformed to a problem that consists on finding the period of a periodic
 function. This is known as the order finding problem. Shor's algorithm uses
-superposition and interference to apply to apply the quantum Fourier transform -
+superposition and interference to apply the quantum Fourier transform -
 a version of the discrete Fourier transform for quantum computers - to find the
-period of the function faster than any known classical algorithm. Some version
+period of the function faster than any known classical algorithm. Some versions
 of the algorithm use instead *iterative phase estimation*, a kind of algorithm
 that finds a complex phase of an operation that enables you to find the period
 of the function.

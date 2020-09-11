@@ -145,7 +145,7 @@ reasonable time. To use a Resources Estimator:
    > [!NOTE] 
    > There are two columns in the output, but for the moment you don't need to
    > worry about it since both columns will display the same content. This might
-   > not be true for some advanced applications of the QDK out of the scope of
+   > not be true for some advanced applications of the QDK that are out of the scope of
    > this module.
 
    In the previous example, the program only contains one operation. It says
