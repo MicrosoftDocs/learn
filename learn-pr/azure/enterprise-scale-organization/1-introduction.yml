@@ -2,7 +2,7 @@
 uid: learn.azure.enterprise-scale-organizational-design-principles.1-introduction
 metadata:
   title: Introduction
-  description: Introduction Enterprise-scale Organizational Design Principles
+  description: Introduction to enterprise-scale organizational design principles
   ms.date: 09/30/2020
   author: kristopherjturner
   ms.author: krturner
@@ -11,4 +11,4 @@ metadata:
 title: Introduction
 durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](./includes/1-introduction.md)]
