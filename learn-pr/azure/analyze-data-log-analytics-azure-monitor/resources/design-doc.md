@@ -31,7 +31,7 @@ Assess Log Analytics tooling. Deploy Log Analytics workspace. Onboard VMs to Log
 1. Assess Log Analytics workspaces and VM Insights.
 1. Create Log Analytics workspace, configure with right access permissions, and decide upon resource-centric or workspace-centric model for deployment.
 1. After workspace is provisioned, link 2 VMs to Log Analytics workspace and onboard both VMs to VM Insights.
-1. Build familiarity with query language of Azure Monitor logs. Focus on standard operators and syntax.
+1. Build familiarity with query language of Azure Monitor logs.
 1. Focus on heartbeat and perf tables. Build queries off of both tables, highlighting syntax, operators, and format of Kusto Query Language.
 
 
