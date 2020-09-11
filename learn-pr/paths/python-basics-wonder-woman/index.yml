@@ -32,7 +32,7 @@ roles:
 products:
 - vs-code
 modules:
-- learn.student-evangelism.python-secret-message-decoder
+# - learn.student-evangelism.python-secret-message-decoder
 - learn.student-evangelism.wonder-woman-personality-quiz
 - learn.languages.python-install-vscode
 trophy:
