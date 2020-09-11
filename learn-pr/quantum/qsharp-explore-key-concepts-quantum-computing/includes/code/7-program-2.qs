@@ -8,7 +8,7 @@ namespace ExploringEntanglement {
     operation TestEntanglement2() : Result[] {
         using (qubits = Qubit[2]) {
             H(qubits[0]);
-            Controlled X([qubits[0]],qubits[1]);
+            Controlled X([qubits[0]], qubits[1]);
             Message("Entangled state before measurement:");
             DumpMachine();
             Message(" ");
