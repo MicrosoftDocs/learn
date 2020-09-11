@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.management-fundamentals
 metadata:
-  title: Choose the best tool to manage your Azure environment
+  title: Choose the best tool to manage and configure your Azure environment
   description: Survey the management, administration, and reporting tools for Azure and choose the best one for your technical need.
   ms.date: 09/11/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Choose the best tool to manage your Azure environment
+title: Choose the best tool to manage and configure your Azure environment
 summary: Survey the management, administration, and reporting tools for Azure and choose the best one for your technical need.
 abstract: |
   By the end of this module, you will be able to:

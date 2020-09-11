@@ -14,6 +14,6 @@ Second, does Tailwind Traders need a repeatable and reliable means of deploying 
 
 We could possibly use Azure PowerShell or the Azure CLI, however these scripting technologies have significant limitations when it comes to deploying your infrastructure. ARM Templates overcome these limitations.
 
-The third decision criteria assumes we need to write a script using imperative code.  However, using ARM Templates, you define your infrastructure declaratively using JSON.  However, in some instances, you still may need imperative code for configuration or clean-up tasks.  In these cases, you can trigger the execution of scripts, either Azure PowerShell or Azure CLI, to perform these tasks.
+The third decision criteria assumes we need to write a script using imperative code. However, using ARM Templates, you define your infrastructure declaratively using JSON. In some instances, you still may need imperative code for configuration or clean-up tasks.  In these cases, you can trigger the execution of scripts, either Azure PowerShell or Azure CLI, to perform these tasks.
 
 In this scenario, Azure ARM Templates is the correct choice.
