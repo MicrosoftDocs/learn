@@ -12,4 +12,4 @@ metadata:
   ROBOTS: NOINDEX
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-platform-considerations.md)]
+  [!include[](includes/6-platform-considerations.md)]
