@@ -66,7 +66,7 @@ Alerting raises notifications about significant events. Azure Monitor provides a
 
 - Metric alerts in Azure Monitor work on top of multidimensional metrics. These metrics can be platform metrics, custom metrics, popular logs from Azure Monitor converted to metrics, or Application Insights metrics. Metric alerts are evaluated at regular intervals to check if conditions on one or more metric time-series are true and notify when the evaluations are met. Metric alerts are stateful, so they only send out notifications when the state changes.
 - Log search rules are created by Azure alerts to automatically run specified log queries at regular intervals. If the log query results meet certain criteria, then an alert record is created.
-- Activity log alerts activate when a new activity log event  matches the conditions specified in the alert.
+- Activity log alerts activate when a new activity log event matches the conditions specified in the alert.
 
 ## Security monitoring
 
