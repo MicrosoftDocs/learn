@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.management-fundamentals.use-azure-portal
-title: Use the Azure Portal to visually understand and manage your cloud environment
+title: Use the Azure portal to visually understand and manage your cloud environment
 metadata:
-  title: Use the Azure Portal to visually understand and manage your cloud environment
+  title: Use the Azure portal to visually understand and manage your cloud environment
   description: Analyze a scenario that requires a visual reporting tool that can help executives understand costs.
   ms.date: 09/11/2020
   author: bobtabor-msft

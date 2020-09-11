@@ -1,5 +1,5 @@
 Our goal in this module was to help Tailwind Traders choose the right cloud management tool from Microsoft for different technical needs.
 
-We identified different product options and their capabilities, including the Azure Portal, the Azure Mobile App, Azure PowerShell, the Azure CLI, and Azure ARM Templates. We analyzed decision criteria for choosing one option over another in a given scenario.  Then we applied that decision criteria to three different initiatives in Tailwind Traders, helping them find the best service option for the given scenario.
+We identified different product options and their capabilities, including the Azure portal, the Azure mobile app, Azure PowerShell, the Azure CLI, and Azure ARM templates. We analyzed decision criteria for choosing one option over another in a given scenario.  Then we applied that decision criteria to three different initiatives in Tailwind Traders, helping them find the best service option for the given scenario.
 
 Without a full suite of management tools, we would be severely limited in how we could interact with Azure.  Fortunately, Azure provides a powerful mix of visual management tools, imperative scripting tools, and declarative infrastrcture-as-code tools.

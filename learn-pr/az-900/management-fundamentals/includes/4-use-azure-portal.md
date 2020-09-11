@@ -4,8 +4,8 @@ Tailwind Traders uses Azure extensively throughout their entire organization. To
 
 Let's apply the decision criteria we learned about in the previous unit to find the right option.
 
-First, in this scenario, does Tailwind Traders need to perform one-off management / administrative / reporting actions?  Yes, and given the requirement to view data visually and create custom reports during the meeting, the Azure Portal is the best choice.  The meeting attendees can quickly find answers to questions that they're looking for using a wealth of reporting options.
+First, in this scenario, does Tailwind Traders need to perform one-off management / administrative / reporting actions?  Yes, and given the requirement to view data visually and create custom reports during the meeting, the Azure portal is the best choice.  The meeting attendees can quickly find answers to questions that they're looking for using a wealth of reporting options.
 
 The next two decision criteria do not apply to this scenario since the director of cloud operations and the CFO will not be deploying or configuring any resources.
 
-The Azure Portal is the correct product option for this scenario.
+The Azure portal is the correct product option for this scenario.

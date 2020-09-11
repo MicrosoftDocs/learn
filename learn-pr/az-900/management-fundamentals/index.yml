@@ -15,7 +15,7 @@ abstract: |
   - Choose the correct Azure management tool to address different kinds of technical needs and challenges.
 prerequisites: None
 ratingEnabled: true
-iconUrl: /learn/achievements/management-fundamentals.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

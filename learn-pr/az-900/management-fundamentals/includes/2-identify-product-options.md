@@ -4,17 +4,17 @@ When attempting to quickly set up and configure Azure resources, a code-based to
 
 There are two approaches to "infrastructure as code": imperative and declarative code.  Imperative code details each individual step that should be performed to achieve the desired outcome.  By contrast, declarative code details only the desired outcome, and allows an interpreter to decide how to best achieve that outcome.  This distinction is important because tools that are based on declarative code can provide a more robust approach to deploying dozens or hundreds of resources simultaneously and reliably.
 
-## Product Options
+## Product options
 
 Microsoft offers several different tools and services to manage your cloud environment, each aimed at different scenarios and users.
 
-### Azure Portal
+### Azure portal
 
-The Azure Portal is a web-based user interface that allows you access virtually every feature of Azure. The Azure Portal provides a friendly GUI to view all the services you're using, create new services, configure your services, and view reports. The Azure Portal is how most users first experience Azure, though as your Azure usage grows, you'll likely choose a more repeatable code-centric approach to managing your Azure resources.
+The Azure portal is a web-based user interface that allows you access virtually every feature of Azure. The Azure portal provides a friendly GUI to view all the services you're using, create new services, configure your services, and view reports. The Azure portal is how most users first experience Azure, though as your Azure usage grows, you'll likely choose a more repeatable code-centric approach to managing your Azure resources.
 
-### Azure Mobile App
+### Azure mobile app
 
-The Azure Mobile App provides iOS and Android access to your Azure resources when you're away from your computer. You can do things like:
+The Azure mobile app provides iOS and Android access to your Azure resources when you're away from your computer. You can do things like:
 
 - Monitor the health and status of your Azure resources
 - Check for alerts, quickly diagnose and fix issues, restart a web app or VM

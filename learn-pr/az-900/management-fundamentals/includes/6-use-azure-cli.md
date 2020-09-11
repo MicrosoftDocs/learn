@@ -4,7 +4,7 @@ As we noted in the previous scenario, Tailwind Traders employs technologists wit
 
 Once again, we'll apply the decision criteria we learned about in a previous unit to find the right option.
 
-Given that this scenario is almost identical to the one in the previous unit, we can skip over the first two criteria.  In other words, we can quickly eliminate ARM templates and the Azure Portal as viable options for this scenario.  So, let's skip to the third decision criteria.
+Given that this scenario is almost identical to the one in the previous unit, we can skip over the first two criteria.  In other words, we can quickly eliminate ARM templates and the Azure portal as viable options for this scenario.  So, let's skip to the third decision criteria.
 
 Choosing the right option in this scenario should be determined by the team's background.  Since this team has a Linux administration background, they would likely be most comfortable using the Azure CLI.  The Azure CLI allows them to use the Bash shell and its syntax to perform their one-off administration tasks.
 

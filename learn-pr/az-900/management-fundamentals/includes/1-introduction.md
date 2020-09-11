@@ -4,7 +4,7 @@ Tailwind Traders, a traditional brick-and-mortar retailer who has found explosiv
 
 In this module, you will learn about Microsoft Azure's different management tools, and will analyze decision criteria that experts use to select the right tool for a given scenario.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you will be able to:
 
