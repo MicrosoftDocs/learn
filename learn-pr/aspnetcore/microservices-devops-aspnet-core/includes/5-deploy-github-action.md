@@ -1,12 +1,12 @@
-In this unit, you'll implement and test a CI/CD pipeline by performing the following tasks:
+In this unit, you'll complete the following tasks:
 
-- Create a GitHub Action to implement a CD pipeline
+- Create a GitHub Action to implement a deployment pipeline
 - Modify the coupon service
 - Update the coupon service version in the Helm chart
 - Verify that the changes where deployed to the AKS cluster
 - Roll back a deployment
 
-### Create the deployment Action
+## Create the deployment Action
 
 Create a GitHub Action for the deployment with the following steps:
 
@@ -104,7 +104,7 @@ These two GitHub Action definitions will be part of the repository from now on. 
 
     The deployment workflow is triggered automatically. The app is deployed after a few minutes.
 
-## Wait for deployment
+## Wait for the deployment
 
 1. Select the **Actions** tab in your repository to monitor the deployment's progress.
 
