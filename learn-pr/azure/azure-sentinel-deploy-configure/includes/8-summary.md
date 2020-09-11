@@ -15,7 +15,7 @@ You can learn more by reviewing the following documents.
 ### Getting started
 
 - [Azure Sentinel documentation](https://docs.microsoft.com/azure/sentinel?azure-portal=true)
-- [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com//azure/sentinel/quickstart-onboard?azure-portal=true)
+- [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com/azure/sentinel/quickstart-onboard?azure-portal=true)
 - [Azure Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel?azure-portal=true)
 - [Permissions in Azure Sentinel](https://docs.microsoft.com/azure/sentinel/roles?azure-portal=true)
 - [Tutorial: Visualize and monitor your data](https://docs.microsoft.com/azure/sentinel/tutorial-monitor-your-data?azure-portal=true)
