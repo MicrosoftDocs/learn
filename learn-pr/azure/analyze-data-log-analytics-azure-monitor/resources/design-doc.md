@@ -28,7 +28,7 @@ Assess Log Analytics tooling. Deploy Log Analytics workspace. Onboard VMs to Log
 
 ## Learning objectives
 
-1. Assess Log Analytics workspaces.
+1. Assess Log Analytics workspaces and VM Insights.
 1. Create Log Analytics workspace, configure with right access permissions, and decide upon resource-centric or workspace-centric model for deployment. Onboard 2 VMs to Log Analytics and VM Insights.
 1. Build familiarity with query language of Azure Monitor logs.
 1. Create custom queries from heartbeat and perf tables.
