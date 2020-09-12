@@ -1,12 +1,11 @@
-If you completed the [Wonder Woman code hunt challenge](https://www.microsoft.com/inculture/wonderwoman-1984/#codehunt?azure-portal=true) or the [Wonder Woman and the power of technology Learn module](LINK TBD), then you already have an introduction to different ways of how to decode messages. Take a look at this message:
+Remember, the code you're trying to decode:
 
 ![Graphic of the encoded secret message from Wonder Woman.](../media/encoded-secret-message.png)
 
-With your new decoding knowledge, which decoder do you think would work best to decipher the true meaning of the phrases "WHY," "oskza," "ohupo," and "ED"?
+It looks like the message might be encrypted with something called a “Caesar cipher,” where all the letters are shifted in the alphabet by some amount. Similar to Wonder Woman’s golden lasso, I’ll need you to give the Python the power to find the true meaning of the words “WHY”, “oskza”, “ohupo”, and “ED”.
 
-## Ceasar cipher function
+If you're not familiar with Ceasar ciphers, you can explore more on [Smithsonian Learning Labs](https://learninglab.si.edu/collections/decode-a-secret-message/Y4F5099N4wjRAEmz#r/).
 
-It looks like the message might be encrypted with the [Caesar cipher](https://learninglab.si.edu/collections/decode-a-secret-message/y4f5099n4wjraemz#r/857650?azure-portal=true), where all the letters are shifted in the alphabet by some amount. Let's get into the super hero universe mindset and imagine that these phrases are on a big wall with wheels of letters. Wonder Woman is standing in front of the wall and has to use her lasso to whip the wheels around until the correct letter is showing, which will then reveal the secret.
 
 To decipher this message, we need to start by giving our code the power to shift a single letter. First, we create a function called `lassoLetter()` that takes in two parameters. The first parameter is `letter` and it holds the letter to decode. The second parameter is `shiftAmount` and it says how far to shift the letter:
 

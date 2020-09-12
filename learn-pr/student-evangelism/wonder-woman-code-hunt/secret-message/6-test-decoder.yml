@@ -3,7 +3,7 @@ uid: learn.student-evangelism.python-secret-message-decoder.test-decoder
 title: Use the Lasso decoder to reveal the secret message
 metadata:
   title: Use the Lasso decoder to reveal the secret message
-  description: Use the Lasso decode to reveal the secret message sent by Wonder Woman.
+  description: Use the Lasso decoder to reveal the WONDER WOMAN 1984 secret message.
   ms.date: 09/21/2020
   author: sguthals
   ms.author: sguthals
@@ -46,7 +46,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. The code you wrote can't convert a lowercase letter to upper case."
   
-  - content: "Wonder Woman wants you to meet when and where?"
+  - content: "The secret time and place inspired by the WONDER WOMAN 1984 film is when and where?"
     choices:  
     - content: "June in Washington, USA"
       isCorrect: false

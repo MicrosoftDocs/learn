@@ -1,15 +1,14 @@
 
 ![Film card from the 1984 movie, Wonder Woman.](../media/wonder-woman-1984-education-github-title-card.png)
 
-Wonder Woman has left you a secret message with a time and place for the next super hero meeting. The only problem is... the message has been encoded to avoid enemies discovering it.
+There’s a secret message encoded with a location inspired by WONDER WOMAN 1984. 
 
 ![Graphic of the encoded secret message from Wonder Woman.](../media/encoded-secret-message.png)
 
-With [Visual Studio Code](https://code.visualstudio.com/learn/?azure-portal=true) and the power of Python, you can write a decoder program to figure out when and where you need to meet up with Wonder Woman! Inspired by the 1984 film, [Wonder Woman](https://www.wonderwomanfilm.com/?azure-portal=true),<sup>[1][^1]</sup> write your first lines of Python code and have fun while earning your coding super powers!
+Crack the code using Python programming language and find the easter egg in this beginner’s lesson. For the best experience, make sure your local developer environment is ready with [Visual Studio Code](https://code.visualstudio.com/learn/?azure-portal=true)). Follow the steps in the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
 ![Screenshot of Python code in Visual Studio Code.](../media/wonder-woman-1984-education-github-decode-message.png)
 
-Before you can start to crack the code, make sure your local developer environment is ready. Follow the steps in the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
 ## Learning objectives
 
@@ -17,7 +16,7 @@ In this module, you'll:
 - Write your first lines of Python code
 - Create a function to decode a character with a cipher
 - Create a function to decode a word with a cipher
-- Discover the location for the next super hero meeting
+- Discover the easter egg hidden in this module based on the WONDER WOMAN 1984 film
 
 ## Prerequisites
 
@@ -27,7 +26,7 @@ In this module, you'll:
 > [!Note]
 > No coding experience is required to complete these lessons!
 
-## Partnership
+WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13
 
 The Wonder Woman 1984 learn-to-code lessons are provided as a partnership between Microsoft and the creators of Wonder Woman, the movie.
 
