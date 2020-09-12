@@ -122,7 +122,7 @@ In the blank app.js file, insert the following code. Each additional section of 
     var provisioningHost = 'global.azure-devices-provisioning.net';
 
     // Enter your Azure IoT keys
-    var idScope = '<your scope ID>';
+    var idScope = '<your ID Scope>';
     var registrationId = '<your device ID>';
     var symmetricKey = '<your primary key>';
 
@@ -859,7 +859,7 @@ In the blank Program.cs file, insert the following code. Each additional section
             static TwinCollection reportedProperties = new TwinCollection();
     
             // User IDs.
-            static string ScopeID = "<your Scope ID>";
+            static string IDScope = "<your ID Scope>";
             static string DeviceID = "<your Device ID>";
             static string PrimaryKey = "<your device Primary Key>";
             static string AzureMapsKey = "<your Azure Maps key>";
@@ -1416,7 +1416,7 @@ In the blank Program.cs file, insert the following code. Each additional section
                 using (var transport = new ProvisioningTransportHandlerMqtt(TransportFallbackType.TcpOnly))
                 {
                     ProvisioningDeviceClient provClient =
-                              ProvisioningDeviceClient.Create(GlobalDeviceEndpoint, ScopeID, security, transport);
+                              ProvisioningDeviceClient.Create(GlobalDeviceEndpoint, IDScope, security, transport);
     
                     Console.WriteLine($"RegistrationID = {security.GetRegistrationID()}");
     

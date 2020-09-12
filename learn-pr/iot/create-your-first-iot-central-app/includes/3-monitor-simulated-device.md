@@ -77,7 +77,7 @@ The next step is to create the keys that will allow a remote device to communica
 
 1. Click **Connect** in the top-right menu. Do _not_ click **Attach to gateway**.
 
-1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. The **Scope ID** identifies the app, the **Device ID** the real device, and the **Primary Key** gives you permission for the connection. Typically, use a tool like Notepad, and save the text file with a meaningful name, say "Truck keys.txt". 
+1. In the **Device connection** dialog that follows, carefully copy the **ID scope**, **Device ID**, and **Primary key** to a text file. The **ID Scope** identifies the app, the **Device ID** the real device, and the **Primary Key** gives you permission for the connection. Typically, use a tool like Notepad, and save the text file with a meaningful name, say "Truck keys.txt".
 
 1. Leave the **Connect method** as **Shared access signature (SAS)**.
 
