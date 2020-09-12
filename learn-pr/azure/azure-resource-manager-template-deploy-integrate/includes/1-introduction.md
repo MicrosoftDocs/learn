@@ -1,33 +1,24 @@
-﻿"In the previous two modules, you learned how to create ARM templates.
+﻿In [Deploy consistent infrastructure in Azure by using ARM templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?azure-portal-true) and [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?azure-portal=true), you learned the basics around creating Azure Resource Manager (ARM) templates.
 
-- [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/)
-- [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/)
+In this module, you focus on some of the ways you can deploy your templates. You start by deploying a template that's stored on your local computer. Then you deploy a template that's stored on GitHub.
 
-In this module, you'll focus on how you deploy templates. You'll start with deploying a local template, and then deploy an external template that is staged in GitHub. You'll learn how to deploy a template that links to other external templates. Finally, you'll learn how to automate template deployment by integrating it with your CI/CD pipeline."
+Along the way, you deploy a template that links to other external templates. Finally, you automate the process by deploying a template through GitHub Actions.
 
 ## Learning objectives
 
-In this module, you will:
+After completing this module, you'll be able to:
 
-- Learn how you can deploy the templates you are authoring, from a variety of methods.
-- Modularize the template by creating a linked templates.
-- Learn how to create a Github Action to deploy templates.
+- Choose the best way to deploy ARM templates, based on your needs.
+- Modularize your templates by using linked templates.
+- Learn how to create a GitHub Actions to deploy templates.
 
 ## Prerequisites
 
-- Familiar with Azure including the Azure portal, subscriptions, resource groups, and resource definitions  
-- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
-- The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&WT.mc_id=MSLearn-ARM-pierrer) extension installed locally
+- Ability to navigate the Azure the portal
+- [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
+- The [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools&azure-portal=true)
 - Either:
-  - The latest [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&WT.mc_id=MSLearn-ARM-pierrer) tools installed locally
-  - The latest [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.3.0&WT.mc_id=MSLearn-ARM-pierrer) installed locally
-
-- For unit 6 and 7 a [GitHub](https://github.com) account with the ability to navigate and edit files in GitHub is required
-  - (For more information about GitHub, see [Introduction to GitHub](https://docs.microsoft.com/learn/modules/introduction-to-github/).)
-
-## Recommended
-
-The following are not required, but are recommended to understand and complete this module:
-
-- [Deploy consistent infrastructure in Azure by using Azure Resource Manager (ARM) templates](https://docs.microsoft.com/learn/modules/create-azure-resource-manager-template-vs-code/?WT.mc_id=MSlearn-ARM-pierrer)
-- [Deploy to multiple Azure environments by using ARM templates](https://docs.microsoft.com/learn/modules/modify-azure-resource-manager-template-reuse/?WT.mc_id=MSlearn-ARM-pierrer)
+  - The latest version of the [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest&azure-portal=true)
+  - The latest version of [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azure-cli-latest&azure-portal=true)
+- A [GitHub](https://github.com?azure-portal=true) account
+- An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)

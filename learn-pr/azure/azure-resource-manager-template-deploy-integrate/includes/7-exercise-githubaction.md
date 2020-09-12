@@ -155,7 +155,7 @@ The workflow file must be stored in the .github/workflows folder at the root of 
 
 You can either create a workflow file and then push/upload the file to the repository, or use the following procedure to create it in the GitHub interface:
 
-1. From your GitHub repository, select `Actions` from the top menu, and select **`set up a workflow yourself`**.
+1. From your GitHub repository, select `Actions` from the top menu, and select **set up a workflow yourself**.
     ![Getting Started With GitHub Actions](../media/9-github-workflow-creation.png)
 1. Rename the workflow file if you prefer a different name other than main.yml. For example: deployARMTemplate.yml.
 1. Replace the content of the yml file with the following:
@@ -223,6 +223,6 @@ You can either create a workflow file and then push/upload the file to the repos
 
 When the workflow is completed, go to the Azure portal to check the deployments status.
 
-1. In the left pane, select Resource groups and select **`GitHubActionExercise-rg`**, navigate to the `Deplyments` pane and verify that your deployment succeeded.
+1. In the left pane, select Resource groups and select **GitHubActionExercise-rg**, navigate to the `Deployments` pane and verify that your deployment succeeded.
 
     ![Deployment status](../media/9-validate-deployment.gif)
