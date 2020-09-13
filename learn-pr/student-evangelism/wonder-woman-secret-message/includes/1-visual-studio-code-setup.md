@@ -1,7 +1,3 @@
-![Film card from the film, WONDER WOMAN 1984.](../../wonder-woman-common/media/wonder-woman-1984-education-github-title-card.png)
-
-There's a secret message that's encoded with a location and date inspired by the film, WONDER WOMAN 1984. Crack the code using Python programming language and find it in this lesson. For optimal experience, set up Visual Studio Code and Python first by following the reference module in this learning path, [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true).
-
 Start by creating a folder for your code on your computer where you can easily find it. Name the folder **WW84**. In our example, we created our folder in the **Documents** folder.
 
 ![Screenshot of the W W 84 folder in the Documents folder.](../media/1-create-folder.png)
