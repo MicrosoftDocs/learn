@@ -2,7 +2,7 @@ Remember, the code you're trying to decode:
 
 ![Graphic of the encoded secret message from Wonder Woman.](../media/encoded-secret-message.png)
 
-It looks like the message might be encrypted with something called a “Caesar cipher,” where all the letters are shifted in the alphabet by some amount. Similar to Wonder Woman’s golden lasso, I’ll need you to give the Python the power to find the true meaning of the words “WHY”, “oskza”, “ohupo”, and “ED”.
+It looks like the message might be encrypted with something called a "Caesar cipher," where all the letters are shifted in the alphabet by some amount. Similar to Wonder Woman's golden lasso, I’ll need you to give the Python the power to find the true meaning of the words "WHY," "oskza," "ohupo," and "ED."
 
 If you're not familiar with Ceasar ciphers, you can explore more on [Smithsonian Learning Labs](https://learninglab.si.edu/collections/decode-a-secret-message/Y4F5099N4wjRAEmz#r/).
 
@@ -26,72 +26,36 @@ You would expect the function to return the letter `c`.
 
 ## Convert a character to a number
 
-Next, you need to convert your letter into a number. If you recall from the code hunt challenge, when you [convert Binary to letters and numbers](https://www.bing.com/search?q=binary+to+text+converter&qs=SC&pq=binary+to+text+coner&sc=8-20&cvid=4F01F15EE0D540698C86EF6B95AFD7C7&FORM=QBLH&sp=1?azure-portal=true), a binary number represents an ASCII character code (letter or number). It also represents a decimal number:
+Next, you need to convert your letter (also called a _character_, or _char_) into a number. If you recall from the code hunt challenge, when you [convert Binary to letters and numbers](https://www.bing.com/search?q=binary+to+text+converter&qs=SC&pq=binary+to+text+coner&sc=8-20&cvid=4F01F15EE0D540698C86EF6B95AFD7C7&FORM=QBLH&sp=1?azure-portal=true), a binary number represents an ASCII character code (letter or number). It also represents a decimal number:
 
-| Character | ASCII |&nbsp;&nbsp;Binary |
-|:-------:|-------:|-------:|
-| 0 | 48 | 00110000 |
-| 1 | 49 | 00110001 |
-| 2 | 50 | 00110010 |
-| 3 | 51 | 00110011 |
-| 4 | 52 | 00110100 |
-| 5 | 53 | 00110101 |
-| 6 | 54 | 00110110 |
-| 7 | 55 | 00110111 |
-| 8 | 56 | 00111000 |
-| 9 | 57 | 00111001 |
-| A | 65 | 01000001 |
-| B | 66 | 01000010 |
-| C | 67 | 01000011 |
-| D | 68 | 01000100 |
-| E | 69 | 01000101 |
-| F | 70 | 01000110 |
-| G | 71 | 01000111 |
-| H | 72 | 01001000 |
-| I | 73 | 01001001 |
-| J | 74 | 01001010 |
-| K | 75 | 01001011 |
-| L | 76 | 01001100 |
-| M | 77 | 01001101 |
-| N | 78 | 01001110 |
-| O | 79 | 01001111 |
-| P | 80 | 01010000 |
-| Q | 81 | 01010001 |
-| R | 82 | 01010010 |
-| S | 83 | 01010011 |
-| T | 84 | 01010100 |
-| U | 85 | 01010101 |
-| V | 86 | 01010110 |
-| W | 87 | 01010111 |
-| X | 88 | 01011000 |
-| Y | 89 | 01011001 |
-| Z | 90 | 01011010 |
-| a | 97 | 01100001 |	
-| b | 98 | 01100010 |	
-| c | 99 | 01100011 |	
-| d | 100 | 01100100 |	
-| e | 101 | 01100101 |	
-| f | 102 | 01100110 |	
-| g | 103 | 01100111 |	
-| h | 104 | 01101000 |	
-| i | 105 | 01101001 |	
-| j | 106 | 01101010 |	
-| k | 107 | 01101011 |	
-| l | 108 | 01101100 |	
-| m | 109 | 01101101 |	
-| n | 110 | 01101110 |	
-| o | 111 | 01101111 |	
-| p | 112 | 01110000 |	
-| q | 113 | 01110001 |	
-| r | 114 | 01110010 |	
-| s | 115 | 01110011 |	
-| t | 116 | 01110100 |	
-| u | 117 | 01110101 |	
-| v | 118 | 01110110 |	
-| w | 119 | 01110111 |	
-| x | 120 | 01111000 |	
-| y | 121 | 01111001 |	
-| z | 122 | 01111010 |	
+| Char | ASCII | Binary | Char | ASCII | Binary | Char | ASCII | Binary |
+|:--:|--:|:--------:|:--:|--:|:--------:|:--:|---:|:--------:|
+| 0 | 48 | 00110000 | A | 65 | 01000001 | a |  97 | 01100001 |	
+| 1 | 49 | 00110001 | B | 66 | 01000010 | b |  98 | 01100010 |
+| 2 | 50 | 00110010 | C | 67 | 01000011 | c |  99 | 01100011 |
+| 3 | 51 | 00110011 | D | 68 | 01000100 | d | 100 | 01100100 |
+| 4 | 52 | 00110100 | E | 69 | 01000101 | e | 101 | 01100101 |
+| 5 | 53 | 00110101 | F | 70 | 01000110 | f | 102 | 01100110 |
+| 6 | 54 | 00110110 | G | 71 | 01000111 | g | 103 | 01100111 |
+| 7 | 55 | 00110111 | H | 72 | 01001000 | h | 104 | 01101000 |
+| 8 | 56 | 00111000 | I | 73 | 01001001 | i | 105 | 01101001 |
+| 9 | 57 | 00111001 | J | 74 | 01001010 | j | 106 | 01101010 |
+|   |    |          | K | 75 | 01001011 | k | 107 | 01101011 |
+|   |    |          | L | 76 | 01001100 | l | 108 | 01101100 |
+|   |    |          | M | 77 | 01001101 | m | 109 | 01101101 |
+|   |    |          | N | 78 | 01001110 | n | 110 | 01101110 |
+|   |    |          | O | 79 | 01001111 | o | 111 | 01101111 |
+|   |    |          | P | 80 | 01010000 | p | 112 | 01110000 |
+|   |    |          | Q | 81 | 01010001 | q | 113 | 01110001 |
+|   |    |          | R | 82 | 01010010 | r | 114 | 01110010 |
+|   |    |          | S | 83 | 01010011 | s | 115 | 01110011 |	
+|   |    |          | T | 84 | 01010100 | t | 116 | 01110100 |
+|   |    |          | U | 85 | 01010101 | u | 117 | 01110101 |
+|   |    |          | V | 86 | 01010110 | v | 118 | 01110110 |
+|   |    |          | W | 87 | 01010111 | w | 119 | 01110111 |
+|   |    |          | X | 88 | 01011000 | x | 120 | 01111000 |
+|   |    |          | Y | 89 | 01011001 | y | 121 | 01111001 |
+|   |    |          | Z | 90 | 01011010 | z | 122 | 01111010 |	
 
 > [!NOTE]
 > This table shows only numbers and letters, but every key on the keyboard has an ASCII character code and a Binary representation of that number. 
@@ -185,3 +149,5 @@ The code won't return the expected result because a Ceasar cipher loops back to 
 To take into account the loop behavior, you have to change the formula for getting the `decodedLetterCode` value. Instead of simply adding the `shiftAmount` to the `letterCode`, you have to figure out what the **true** letter code is for the decoded letter.
 
 We'll take a look at that formula in the next unit.
+
+*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

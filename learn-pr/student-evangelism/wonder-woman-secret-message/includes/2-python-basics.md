@@ -10,7 +10,7 @@ Try adding the following code to your **decrypt.py** file:
 # This is a comment that won't be interpreted as a command.
 ```
 
-Press the green **Play** button and you should see the same behavior as before.
+Press the **Play** button and you should see the same behavior as before.
 
 ![Screenshot that shows that comments in Python do not change code execution.](../media/python-comments.png)
  
@@ -20,18 +20,18 @@ Coding is essentially the movement and manipulation of data. Imagine writing a m
 
 In Python, we have "variables," which are like containers that have a name and store data. You can think of variables like codenames for information that we want our program to remember and have access to later.
 
-The following command tells Python to associate the codename or variable `diana` with the information "Wonder Woman 1984." To do this, you use the assignment equals sign `=` operator. Any time after this command, when Python sees the variable `diana`, it will substitute the value "Wonder Woman 1984"!
+The following command tells Python to associate the codename or variable `diana` with the information "WONDER WOMAN 1984." To do this, you use the assignment equals sign `=` operator. Any time after this command, when Python sees the variable `diana`, it will substitute the value "WONDER WOMAN 1984"!
 
 ```python
-# Associate variable diana with the value "Wonder Woman 1984"
-diana = "Wonder Woman 1984"
+# Associate variable diana with the value "WONDER WOMAN 1984"
+diana = "WONDER WOMAN 1984"
 ```
 
 Try it out! Replace the following commands in your **decrypt.py** file. (If you're wondering what the plus sign `+` is for: it "glues together" phrases into a longer phrase.)
 
 ```python
-# Associate variable diana with the value "Wonder Woman 1984"
-diana = "Wonder Woman 1984"
+# Associate variable diana with the value "WONDER WOMAN 1984"
+diana = "WONDER WOMAN 1984"
 
 # Print a message with the true identity of Diana.
 print( "I believe Diana is actually " + diana )
@@ -67,8 +67,8 @@ def chant( phrase ):
     print( phrase + phrase + phrase )
 
 
-# Invoke the power chant on the phrase "Wonder Woman 1984!"
-chant( "Wonder Woman 1984!" )
+# Invoke the power chant on the phrase "WONDER WOMAN 1984!"
+chant( "WONDER WOMAN 1984!" )
 ```
 
 Press the green **Play** button. You should see the chant printed in the console at the bottom of the Visual Studio Code window.
@@ -76,3 +76,5 @@ Press the green **Play** button. You should see the chant printed in the console
 ![Screenshot of the output from the call to the chant function.](../media/chant-output.png)
 
 Great! Now that you know the basics, let's go decrypt the note!
+
+*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*
