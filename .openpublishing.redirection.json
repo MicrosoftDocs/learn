@@ -3136,11 +3136,6 @@
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/index",
       "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/paths/azure-fundamentals/index.md",
-      "redirect_url": "https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/",
-      "redirect_document_id": true
     }
   ]
 }
