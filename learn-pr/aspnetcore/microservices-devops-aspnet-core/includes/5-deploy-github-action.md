@@ -117,7 +117,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
     kubectl get pods -w
     ```
 
-    A variation of the following output appears:
+    The preceding command retrieves the status for all the pods in a Kubernetes deployment. The `-w` flag instructs `kubectl` to watch for changes. The status of the existing and newly deployed pods will be displayed in real time. A variation of the following output appears:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
@@ -142,7 +142,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
     In the preceding output, notice that a new `coupon` pod was created. While the old pod is still running and when the new pod is ready, the old one is terminated. This should make the transition to the new version as smooth as possible.
 
-1. One the new pod's status is *Running* and its *Ready* status displays `1/1`, press <kbd>Ctrl+C</kbd> to exit `kubectl`.
+1. Once the new pod's *Ready* status displays `1/1`, press <kbd>Ctrl+C</kbd> to exit `kubectl`.
 1. Run the following command to check the coupon service deployment history:
 
     ```bash
@@ -193,8 +193,4 @@ Rollback was a success! Happy Helming!
 ```
 
 > [!NOTE]
-> In a real-life scenario, you'd include at least one test step and separate the build (CI) and the deploy (CD) pipelines. You'd usually have multiple environments where each build could be deployed (for example, dev, test, staging). Also, the deployment jobs would usually be triggered by different events, typically requiring some sort of approval so you don't get surprises in production.
->
-> You'd usually also have the pipeline triggered on each PR, to make sure the PR builds correctly and tests run successfully, before reviewing the PR.
-
-For more information, see the [GitHub Action documentation site](https://help.github.com/actions).
+> In a real-life scenario, you'll have multiple environments to which the build's artifacts can be deployed. For example, development, testing, and staging. The deployment workflows can be triggered by events like merging PRs. Quality or approval gates, such as a stakeholder's PR approval, can be added to prevent unexpected deployments to production.

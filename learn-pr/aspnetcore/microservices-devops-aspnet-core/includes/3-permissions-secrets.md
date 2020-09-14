@@ -78,7 +78,7 @@ GitHub Actions will be used to publish the container image to ACR. You must set 
     }
     ```
 
-1. Copy the JSON output from the command shell. You'll need this and the credentials for the GitHub Action in next step.
+1. Copy the JSON output from the command shell. Be sure not to include the text output above the JSON. You'll need this and the credentials for the GitHub Action in next step.
 
 ## Create secrets
 
