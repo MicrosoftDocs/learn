@@ -45,11 +45,11 @@ To connect an external appliance to Azure Sentinel, the agent must deploy on a d
 
 The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Azure Sentinel agent.
 
-:::image type="content" source="../media/Sentinel-agent1.png" alt-text="The diagram depicts the data flow between on-premises systems that are using automatic deployment of the Syslog agent." border="false":::
+:::image type="content" source="../media/sentinel-agent-1.png" alt-text="The diagram depicts the data flow between on-premises systems that are using automatic deployment of the Syslog agent." border="false":::
 
 Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or on an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system that's running the Azure Sentinel agent.
 
-:::image type="content" source="../media/Sentinel-agent2.png" alt-text="The diagram depicts the data flow between on-premises systems that are using manual deployment of the Syslog agent." border="false":::
+:::image type="content" source="../media/sentinel-agent-2.png" alt-text="The diagram depicts the data flow between on-premises systems that are using manual deployment of the Syslog agent." border="false":::
 
 ### Security considerations
 
