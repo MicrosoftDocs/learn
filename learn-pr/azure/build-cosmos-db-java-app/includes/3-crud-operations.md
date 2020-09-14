@@ -73,6 +73,10 @@ Next we will create some entities and perform some basic CRUD operations on the 
 1. Now add the following method to `CosmosApp.java`:
 
     ```java
+    /**
+     * Take in list of Java POJOs, check if each exists, and if not insert it.
+     * @param users List of User POJOs to insert.
+     */
     private static void createUserDocumentsIfNotExist(final List<User> users) {
         Flux.fromIterable(users).flatMap(user -> {
             try {
@@ -177,18 +181,22 @@ Next we will create some entities and perform some basic CRUD operations on the 
 1. To read documents from the database, add the following method to `CosmosApp`
 
     ```java
-    private static CosmosItemResponse<User> readUserDocument(User user)
-    {
-        try
-        {
-            CosmosItemResponse<User> userReadResponse = container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class).block();
+    /**
+     * Take in a Java POJO argument, extract id and partition key, and read the corresponding document from the container.
+     * In this case the id is the partition key.
+     * @param user User POJO to pull id and partition key from.
+     */
+    private static CosmosItemResponse<User> readUserDocument(final User user) {
+        CosmosItemResponse<User> userReadResponse = null;
+
+        try {
+            userReadResponse = container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class).block();
             logger.info("Read user {}", user.getId());
-            return userReadResponse;
-        }
-        catch (CosmosExceptioni de)
-        {
+        } catch (CosmosException de) {
             logger.error("Failed to read user {}", user.getId(), de);
         }
+
+        return userReadResponse;
     }
     ```
 
@@ -202,17 +210,16 @@ Next we will create some entities and perform some basic CRUD operations on the 
 
     ```bash
     mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
+    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"
     ```
 
     The terminal displays the following output, where the output "Read user 1" indicates the document was retrieved.
 
     ```output
-    Database and container validation complete
-    User 1 already exists in the database
-    User 2 already exists in the database
-    Read user 1
-    End of demo, press any key to exit.
+    INFO: Database and container validation complete
+    INFO: User 1 already exists in the database
+    INFO: User 2 already exists in the database
+    INFO: Read user 1
     ```
 
     You may see some additional text emitted by the logger as well.
@@ -250,18 +257,17 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
     ```bash
     mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
+    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"
     ```
 
     The terminal displays the following output, where the output "Replaced last name for Suh" indicates the document was replaced.
 
     ```output
-    Database and container validation complete
-    User 1 already exists in the database
-    Replaced last name for Suh
-    User 2 already exists in the database
-    Read user 1
-    End of demo, press any key to exit.
+    INFO: Database and container validation complete
+    INFO: User 1 already exists in the database
+    INFO: User 2 already exists in the database
+    INFO: Read user 1
+    INFO: Replaced last name for Suh
     ```
 
 ## Delete documents
@@ -293,19 +299,18 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
     ```bash
     mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.azure-cosmos-java-sql-app-mslearn.CosmosApp"
+    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"
     ```
 
     The terminal displays the following output, where the output "Deleted user 1" indicates the document was deleted.
 
     ```output
-    Database and container validation complete
-    User 1 already exists in the database
-    Replaced last name for Suh
-    User 2 already exists in the database
-    Read user 1
-    Deleted user 1
-    End of demo, press any key to exit.
+    INFO: Database and container validation complete
+    INFO: User 1 already exists in the database
+    INFO: User 2 already exists in the database
+    INFO: Read User 1
+    INFO: Replaced last name for Suh
+    INFO: Deleted User 1
     ```
 
 In this unit you created, replaced, and deleted documents in your Azure Cosmos DB database.
