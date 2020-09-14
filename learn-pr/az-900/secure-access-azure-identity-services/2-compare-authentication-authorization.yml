@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-access-azure-identity-services.2-compare-authentication-authorization
+uid: learn.azure.secure-access-azure-identity-services.2-compare-authentication-authorization
 title: Compare authentication and authorization
 metadata:
   description: Understand the difference between authentication and authorization.

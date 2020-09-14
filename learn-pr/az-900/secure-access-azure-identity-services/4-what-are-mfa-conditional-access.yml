@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-access-azure-identity-services.4-what-are-mfa-conditional-access
+uid: learn.azure.secure-access-azure-identity-services.4-what-are-mfa-conditional-access
 title: What are Azure Multi-Factor Authentication and Conditional Access?
 metadata:
   description: Learn how Azure Multi-Factor Authentication and Conditional Access enable secure authentication.

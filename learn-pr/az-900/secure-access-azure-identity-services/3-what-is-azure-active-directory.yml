@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-access-azure-identity-services.3-what-is-azure-active-directory
+uid: learn.azure.secure-access-azure-identity-services.3-what-is-azure-active-directory
 title: What is Azure Active Directory?
 metadata:
   description: Learn about how Azure Active Directory (Azure AD) works and how Azure AD works with single sign-on (SSO).

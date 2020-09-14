@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.secure-access-azure-identity-services
+uid: learn.azure.secure-access-azure-identity-services
 metadata:
   description: Learn how Azure Active Directory, single sign-on (SSO), multi-factor authentication (MFA), and Conditional Access can help you manage and secure identities on Azure.
   ms.date: 09/11/2020
@@ -32,11 +32,11 @@ products:
 - azure
 - azure-active-directory
 units:
-- learn.secure-access-azure-identity-services.1-introduction
-- learn.secure-access-azure-identity-services.2-compare-authentication-authorization
-- learn.secure-access-azure-identity-services.3-what-is-azure-active-directory
-- learn.secure-access-azure-identity-services.4-what-are-mfa-conditional-access
-- learn.secure-access-azure-identity-services.5-knowledge-check
-- learn.secure-access-azure-identity-services.6-summary
+- learn.azure.secure-access-azure-identity-services.1-introduction
+- learn.azure.secure-access-azure-identity-services.2-compare-authentication-authorization
+- learn.azure.secure-access-azure-identity-services.3-what-is-azure-active-directory
+- learn.azure.secure-access-azure-identity-services.4-what-are-mfa-conditional-access
+- learn.azure.secure-access-azure-identity-services.5-knowledge-check
+- learn.azure.secure-access-azure-identity-services.6-summary
 badge:
-  uid: learn.secure-access-azure-identity-services.badge
+  uid: learn.azure.secure-access-azure-identity-services.badge
