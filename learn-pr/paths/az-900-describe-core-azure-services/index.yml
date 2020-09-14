@@ -59,6 +59,7 @@ products:
 - azure-virtual-network
 - azure-vpn-gateway
 modules:
+- learn.azure.intro-to-azure-fundamentals
 - learn.azure.azure-database-fundamentals
 - learn.azure.azure-compute-fundamentals
 - learn.azure.azure-storage-fundamentals

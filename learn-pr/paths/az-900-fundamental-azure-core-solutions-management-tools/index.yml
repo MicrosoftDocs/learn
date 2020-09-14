@@ -50,6 +50,7 @@ products:
 - azure-iot-hub
 - azure-iot-central
 modules:
+- learn.azure.intro-to-azure-fundamentals
 - learn.azure.ai-machine-learning-fundamentals
 - learn.azure.azure-devops-devtest-labs
 - learn.azure.monitoring-fundamentals
