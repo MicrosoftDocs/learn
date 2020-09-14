@@ -1,5 +1,5 @@
 ### YamlMime:LearningPath
-uid: learn.az-900-fundamental-azure-core-solutions-management-tools
+uid: learn.az-900-describe-core-solutions-management-tools-azure
 metadata:
   description: "Learn how to choose the best services from Azure to build and manage cloud solutions."
   brand: azure
@@ -8,7 +8,7 @@ metadata:
   ms.author: rotabor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Azure Fundamentals part 3: Fundamental Azure core solutions and management tools"
+title: "Azure Fundamentals part 3: Describe core solutions and management tools on Azure"
 summary: |
   Core solutions encompass a wide array of tools and services from Microsoft Azure. In this learning path, you'll be introduced to many of these tools and services and will be asked to help choose the best one for a given business scenario.
   
@@ -24,7 +24,7 @@ summary: |
 
     - [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
     - [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
-    - Azure Fundamentals part 3: Fundamental Azure core solutions and management tools
+    - Azure Fundamentals part 3: Describe core solutions and management tools on Azure
     - [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
     - [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/)
     - [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
@@ -66,4 +66,4 @@ modules:
 - learn.azure.serverless-fundamentals
 - learn.azure.iot-fundamentals
 trophy:
-  uid: az-900-fundamental-azure-core-solutions-management-tools.trophy
+  uid: learn.az-900-describe-core-solutions-management-tools-azure.trophy
