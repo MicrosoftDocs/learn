@@ -12,7 +12,7 @@ def lassoWord( word, shiftAmount ):
 
 One way to think about words is that they're really just collections of letters. For example, you could think of the word "Hello" as:
 
-'H' - 'e' - 'l' - 'l' - 'o'
+> 'H' - 'e' - 'l' - 'l' - 'o'
 
 A variable can be a name for one piece of data: one word, one letter, one formula, one function, and so on. Python has many ways to represent collections of data. One way is with a "list."
 
@@ -76,13 +76,13 @@ You can trace the code to see how this works:
 - `word` = "hello"  
 - `shiftAmount` = 1
 
-| Loop iteration | `letter` | `decodedLetter` |
-|:--------------:|:------:|:-------------:|
-| 1 | 'h' | 'i' |
-| 2 | 'e' | 'f' |
-| 3 | 'l' | 'm' |
-| 4 | 'l' | 'm' |
-| 5 | 'o' | 'p' |
+| Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|---------------|--------|---------------|-------------|---------------|
+| 1 | 'h' | 'i' | |
+| 2 | 'e' | 'f' | |
+| 3 | 'l' | 'm' | |
+| 4 | 'l' | 'm' | |
+| 5 | 'o' | 'p' | |
 
 What you're left with is a variable named `decodedLetter` with a value of just the letter 'p'. But, what you wanted was a variable named `decodedWord` to have the value "ifmmp." Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign `+` between two words or letters to combine them together.
 
@@ -100,13 +100,13 @@ def lassoWord( word, shiftAmount ):
 
 With this code, the entire word is now stored in the variable `decodedWord`. You can send back this value to the line where this function was invoked. You can trace the code like before:
 
-| Loop iteration | `letter` | `decodedLetter` | `decodedWord` |
-|:--------------:|:--------:|:---------------:|:-------------:|
-| 1 | 'h' | 'i' | "i" |
-| 2 | 'e' | 'f' | "if" |
-| 3 | 'l' | 'm' | "ifm" |
-| 4 | 'l' | 'm' | "ifmm" |
-| 5 | 'o' | 'p' | "ifmmp" |
+| Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` | Value of <br>`decodedWord` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|----------------|----------|-----------------|---------------|---------------|
+| 1 | 'h' | 'i' | "i" | |
+| 2 | 'e' | 'f' | "if" | |
+| 3 | 'l' | 'm' | "ifm" | |
+| 4 | 'l' | 'm' | "ifmm" | |
+| 5 | 'o' | 'p' | "ifmmp" | |
 
 ### Comment your code
 
