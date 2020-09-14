@@ -13,6 +13,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- An Azure Subscription with an Azure Cosmos DB account already created
+- Experience creating and managing Azure Cosmos DB resources such as an **account**, a **database** and a **container**.
 - Local installations of [Apache Maven](https://maven.apache.org/), [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), and [Java JDK 8 or later versions](https://www.microsoft.com/net/download), and beginner-level familiarity with all three.
-- Experience creating and managing resources in Azure Cosmos DB, including creation and configuration of Cosmos DB accounts, databases, and containers.
