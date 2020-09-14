@@ -39,7 +39,7 @@ products:
 modules:
 - learn.azure.intro-to-azure-fundamentals
 - learn.azure.intro-to-azure-fundamentals
-- learn.protect-against-security-threats-azure
+- learn.azure.protect-against-security-threats-azure
 - learn.secure-network-connectivity-azure
 trophy:
   uid: learn.az-900-describe-general-security-network-security-features.trophy
