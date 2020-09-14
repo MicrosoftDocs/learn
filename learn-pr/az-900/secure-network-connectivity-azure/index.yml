@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.secure-network-connectivity-azure
+uid: learn.azure.secure-network-connectivity-azure
 metadata:
   description: Learn about the various Azure services you can use to help ensure that your network is safe, secure, and trusted.
   ms.date: 09/09/2020
@@ -32,14 +32,14 @@ roles:
 products:
 - azure
 units:
-- learn.secure-network-connectivity-azure.1-introduction
-- learn.secure-network-connectivity-azure.2-what-is-defense-in-depth
-- learn.secure-network-connectivity-azure.3-protect-network-azure-firewall
-- learn.secure-network-connectivity-azure.4-protect-attacks-azure-ddos-protection
-- learn.secure-network-connectivity-azure.5-filter-traffic-network-security-groups
-- learn.secure-network-connectivity-azure.6-configure-access-network-security-group
-- learn.secure-network-connectivity-azure.7-combine-services-complete-solution
-- learn.secure-network-connectivity-azure.8-knowledge-check
-- learn.secure-network-connectivity-azure.9-summary
+- learn.azure.secure-network-connectivity-azure.1-introduction
+- learn.azure.secure-network-connectivity-azure.2-what-is-defense-in-depth
+- learn.azure.secure-network-connectivity-azure.3-protect-network-azure-firewall
+- learn.azure.secure-network-connectivity-azure.4-protect-attacks-azure-ddos-protection
+- learn.azure.secure-network-connectivity-azure.5-filter-traffic-network-security-groups
+- learn.azure.secure-network-connectivity-azure.6-configure-access-network-security-group
+- learn.azure.secure-network-connectivity-azure.7-combine-services-complete-solution
+- learn.azure.secure-network-connectivity-azure.8-knowledge-check
+- learn.azure.secure-network-connectivity-azure.9-summary
 badge:
-  uid: learn.secure-network-connectivity-azure.badge
+  uid: learn.azure.secure-network-connectivity-azure.badge

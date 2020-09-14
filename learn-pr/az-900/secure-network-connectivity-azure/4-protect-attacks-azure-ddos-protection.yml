@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity-azure.4-protect-attacks-azure-ddos-protection
+uid: learn.azure.secure-network-connectivity-azure.4-protect-attacks-azure-ddos-protection
 title: Protect from DDoS attacks by using Azure DDoS Protection
 metadata:
   description: Learn how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.

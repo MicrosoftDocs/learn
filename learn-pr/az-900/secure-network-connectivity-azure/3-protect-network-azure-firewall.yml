@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-network-connectivity-azure.3-protect-network-azure-firewall
+uid: learn.azure.secure-network-connectivity-azure.3-protect-network-azure-firewall
 title: Protect virtual networks by using Azure Firewall
 metadata:
   description: Learn how Azure Firewall protects resources in your Azure Virtual Networks (VNets).
