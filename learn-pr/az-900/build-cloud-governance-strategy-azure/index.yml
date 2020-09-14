@@ -9,10 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build a cloud governance strategy on Azure
-summary: |
-  A good cloud governance strategy helps you stay organized, manage costs, and meet your compliance goals.
-
-  Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
+summary: Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
 abstract: |
   After completing this module, you'll be able to:
 

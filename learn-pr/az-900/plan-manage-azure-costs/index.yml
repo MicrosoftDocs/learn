@@ -8,10 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and manage your Azure costs
-summary: |
-  Migration to the cloud presents new ways to think about your IT expenses.
-
-  "How much will it cost?" is a common question organizations ask when moving to the cloud. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
+summary: Learn about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
 abstract: |
   After completing this module, you'll be able to:
 

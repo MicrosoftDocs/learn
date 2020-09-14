@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.az-900-describe-general-security-network-security-features
+metadata:
+  description: Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted.
+  brand: azure
+  ms.date: 09/11/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: "Azure Fundamentals: Describe general security and network security features (learning path 4 of 6)"
+summary: |
+  Having a good security strategy is essential in today's digital world. Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. Security needs to happen at the application level, at the data level, and at the network level.
+
+  Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted.
+prerequisites: None
+iconUrl: /learn/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- developer
+- business-analyst
+- business-user
+- solution-architect
+products:
+- azure
+modules:
+- learn.azure.intro-to-azure-fundamentals
+- learn.protect-against-security-threats-azure
+- learn.secure-network-connectivity-azure
+trophy:
+  uid: learn.az-900-describe-general-security-network-security-features.trophy

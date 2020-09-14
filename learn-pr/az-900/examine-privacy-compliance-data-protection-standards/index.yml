@@ -8,10 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Examine privacy, compliance, and data protection standards on Azure
-summary: |
-  Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
-
-  If your organization is a government department or agency, or you need to deploy to regions of China, you'll also learn about some additional considerations that you need to make.
+summary: Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
 abstract: |
   After completing this module, you'll be able to:
 

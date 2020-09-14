@@ -8,10 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Protect against security threats on Azure
-summary: |
-  Having a good security strategy is essential in today's digital world.
-
-  Learn how Azure can help you protect the workloads you run both in the cloud and in your on-premises datacenter.
+summary: Learn how Azure can help you protect the workloads you run both in the cloud and in your on-premises datacenter.
 abstract: |
   After completing this module, you'll be able to:
 
