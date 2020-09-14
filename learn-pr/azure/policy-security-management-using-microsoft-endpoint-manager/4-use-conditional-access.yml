@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.paths-to-modern-endpoint-management.4-use-conditional-access
+title: Common ways to use Conditional Access
+metadata:
+  title: Common ways to use Conditional Access
+  description: Understand the two common types of conditional access.
+  ms.date: 08/19/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-use-conditional-access.md)]
