@@ -52,29 +52,29 @@ In this example, we'll connect to Azure AD from Azure Sentinel:
 1. On the Azure portal, under the **All service** option, select **Azure Sentinel**.
 1. From the **navigation** menu, select **Data Connectors**. This page lists all the connectors that Azure Sentinel provides and their status.
 
-    :::image type="content" source="../media/Sentinel-AAD-connector-page.png" alt-text="The screenshot depicts the Azure Sentinel connector page with the list of connectors." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="The screenshot depicts the Azure Sentinel connector page with the list of connectors." border="true":::
 
 1. On the **Data Connectors** page is a tile for each data source to which you can connect. Select the **Azure Active Directory** tile.
 
 1. The Azure Sentinel **Azure Active Directory** connector page will display, as the following screenshot depicts.
 
-    :::image type="content" source="../media/Sentinel-AAD-Connector-2.png" alt-text="The screenshot depicts the Azure Sentinel Azure Active Directory connector page." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-2.png" alt-text="The screenshot depicts the Azure Sentinel Azure Active Directory connector page." border="true":::
 
 1. Read the prerequisites and make sure you have fulfilled them, and then follow the instructions to connect the data source.
 1. Select both **Azure Active Directory Sign-in logs** and **Azure Active Directory Audit logs**.
 
-    :::image type="content" source="../media/Sentinel-AAD-connector-3.png" alt-text="The screenshot depicts the Azure Sentinel connector configuration options." border="true":::
+    :::image type="content" source="../media/sentinel-azure-ad-connector-3.png" alt-text="The screenshot depicts the Azure Sentinel connector configuration options." border="true":::
 
 
 ### Validate your data source connection
 
 After connecting your data sources to Azure Sentinel, you get data visualizations and analysis so that you can know what's happening across all your connected data sources. To confirm that your connectors are working, go to the Azure portal. In the Azure portal, after selecting **Azure Sentinel**, select the workspace that you used when you enabled Azure Sentinel.
 
-:::image type="content" source="../media/Sentinel-analytics.png" alt-text="The screenshot depicts the Azure Sentinel - Analytics overview page." border="false":::
+:::image type="content" source="../media/sentinel-analytics.png" alt-text="The screenshot depicts the Azure Sentinel - Analytics overview page." border="false":::
 
 The main body of the overview page provides insight into the security status of your workspace. The following screenshot depicts the events and alerts over time section.
 
-:::image type="content" source="../media/Sentinel-analytics 2.png" alt-text="The screenshot depicts the events and alerts over time section." border="false":::
+:::image type="content" source="../media/sentinel-analytics-2.png" alt-text="The screenshot depicts the events and alerts over time section." border="false":::
 
 The events and alerts over time section lists the number of events and how many alerts were created from those events. If events are being registered, you know your connectors are working.
 
