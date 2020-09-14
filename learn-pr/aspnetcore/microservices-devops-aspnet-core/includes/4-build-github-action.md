@@ -1,7 +1,8 @@
 In this unit, you'll complete the following tasks:
 
 - Create a GitHub Action to implement a build pipeline
-- Modify the coupon service
+- Modify the coupon service code to trigger the build workflow
+- Monitor the build workflow's progress in real time
 
 ## Create the build action
 
@@ -101,5 +102,5 @@ You've finished creating the "build" action for your CI/CD pipeline. The Marketi
 
     :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
 
-<!-- TODO: finish writing this -->
-In this unit, you created a GitHub action to push the
+
+In this unit, you created a GitHub action to build the coupon service. You added logging to the coupon service and saw how committing that code triggered the build workflow. Finally, you learned how to monitor the build's progress in real time.

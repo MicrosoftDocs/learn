@@ -1,8 +1,7 @@
 In this unit, you'll complete the following tasks:
 
 - Create a GitHub Action to implement a deployment pipeline
-- Modify the coupon service
-- Update the coupon service version in the Helm chart
+- Increment the coupon service version in the Helm chart
 - Verify that the changes were deployed to the AKS cluster
 - Roll back a deployment
 
@@ -11,7 +10,6 @@ In this unit, you'll complete the following tasks:
 Create a GitHub Action for the deployment with the following steps:
 
 1. Select the **Actions** tab again, select the **New workflow** button, and select the **set up a workflow yourself** link.
-
 1. Replace the YAML in the editor with the following YAML:
 
     ```yml
