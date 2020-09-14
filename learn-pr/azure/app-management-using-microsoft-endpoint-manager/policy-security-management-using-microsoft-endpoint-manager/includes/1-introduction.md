@@ -6,7 +6,7 @@ Intune uses Azure Active Directory (Azure AD) groups to manage devices and users
 
   In this module, you will:
 
-  - Understand how to manage devices, apps, and policies based on groups.
+  - Understand how manage devices, apps, and policies based on groups.
   - Understand how trusted users can access organizational resources on trusted devices using trusted apps.
-  - Learn about common ways to use Conditional Access.
-  - Learn about configuring and managing device security.
+  - Learn about the common ways to use Conditional Access.
+  - Learn about configuring device security and to managing security tasks for devices.
