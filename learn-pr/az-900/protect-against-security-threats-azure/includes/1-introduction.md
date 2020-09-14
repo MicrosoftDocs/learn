@@ -1,6 +1,6 @@
 In this module, you'll learn about some of the security tools that can help keep your infrastructure and data safe when you work in the cloud.
 
-Security is a small word for a significant concept. There are so many factors to consider in order to protect your applications and your data. How does Azure help you protect workloads you run in the cloud and in your on-premises data center?
+Security is a small word for a significant concept. There are so many factors to consider in order to protect your applications and your data. How does Azure help you protect workloads you run in the cloud and in your on-premises datacenter?
 
 ## Meet Tailwind Traders
 
