@@ -28,14 +28,24 @@ qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT`, you can
 transform a register in the state $\ket{00}$ to the entangled state
 $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
 
-$$CNOT(\hat H\ket{0}),\ket{0})=CNOT(\frac1{\sqrt2}(\ket{0}+\ket{1}),\ket{0})=
-\frac1{\sqrt2}(CNOT(\ket{0},\ket{0})+CNOT(\ket{1},\ket{0}))=\frac1{\sqrt2}(\ket{00}+\ket{11}).$$
+1. First we prepare a superposition in the control qubit applying $H$.
+
+   $$H \ket{0_c}= \frac{1}{\sqrt{2}}(\ket{0_c}+\ket{1_c})$$
+   
+   > [!NOTE]
+   > We use the subscripts ${}_c$ and ${}_t$ to specify the control and target qubits for the $CNOT$ operator.
+   > By convention the first qubit always refers to the control qubit and the second qubit always refers to the target qubit.
+
+1. Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
+the target qubit in the state $\ket{0_t}$.
+
+   $$CNOT \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c0_t})=\frac{1}{\sqrt2}(CNOT\ket{0_c0_t}+CNOT\ket{1_c0_t})= \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$$
 
 To implement this in Q#:
 
 1. Modify *Program.qs* like this and then save the file:
 
-   :::code language="qsharp" source="code/7-program-1.qs":::
+   :::code language="qsharp" source="code/7-program-1.qs" highlight="11":::
 
 1. Open the integrated terminal. From the **Terminal** menu, select **New Terminal**.
 
@@ -65,9 +75,22 @@ To implement this in Q#:
    ```
 
    You can see how you obtained the same outcome for both qubits, as you might
-   expect if the state were entangled. However, check entanglement you must
+   expect if the state were entangled. However, to check entanglement you must
    run this code multiple times to see that it wasn't just luck. Try to run the
    code several times to see if the results are consistent.
+   
+The state $\frac1{\sqrt2}(\ket{00}+\ket{11})$ is not the only entangled state
+you can obtain by applying the operators $H$ and $CNOT$ sequentially. For example,
+you can obtain the state $\frac1{\sqrt2}(\ket{01}+\ket{10})$ if your initial
+state is $\ket{01}$. The following table summarizes the four possiblities:
+
+| Initial state  | After applying $H$ to the control qubit        | After applying $CNOT$                           |   |   |
+|----------------|------------------------------------------------|-------------------------------------------------|---|---|
+| $\ket{0_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}+\ket{1_c0_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}+\ket{1_c1_t})$ |   |   |
+| $\ket{0_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}+\ket{1_c1_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}+\ket{1_c0_t})$ |   |   |
+| $\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}-\ket{1_c0_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}-\ket{1_c1_t})$ |   |   |
+| $\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}-\ket{1_c1_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}-\ket{1_c0_t})$ |   |   |
+   
 
 ### Controlled operations
 
@@ -77,12 +100,34 @@ also be expressed as `Controlled X([control], target)`. In general, you can put 
 operation in the place of `X`. For example, `Controlled Y([control], target)`
 applies the `Y` gate conditioned on the state of the control qubit.
 
+Q# is a versatile language and you always have different ways to achieve the
+same. Now you are going to replicate the code using `Controlled X` instead of
+`CNOT`.
+
+1. Modify *Program.qs* like this and then save the file:
+
+   :::code language="qsharp" source="code/7-program-2.qs":::
+
+1. From the terminal, run `dotnet run`:
+
+   ```dotnetcli
+   dotnet run
+   ```
+
+   Your program should behave exactly like the program you created in the
+   previous example, since both operations are equivalent.
+
 To learn more about the `Controlled` functor and many other Q# features, you can
 take a look to the [Q# user guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions#calling-operation-specializations?azure-portal=true).
 
 > [!NOTE]
-> A functor in Q# is a factory that defines a new operation from another
-> operation.
+> A functor in Q# is a map from the implementations of operations to new
+> operations. For example, by adding the keyword `Controlled` in front of an
+> operation `OperationA` you define a new operation `Controlled OperationA`. In
+> Q# there are only two functors: `Controlled` to create controlled versions of
+> the operations, and `Adjoint` to create the adjoint version. To learn more
+> about these functors you can check the [Q# user
+> guide](https://docs.microsoft.com/quantum/user-guide/using-qsharp/operations-functions?view=qsharp-preview#calling-operation-specializations?azure-portal=true).
 
 ## Estimate resources with Q\#
 
@@ -95,7 +140,7 @@ thousands of qubits, if the classical part of the code can be run in a
 reasonable time. To use a Resources Estimator:
 
 1. Run your program from the command line selecting the `ResourcesEstimator` as
-   yout simulator.
+   your simulator.
 
    ```dotnetcli
    dotnet run --simulator ResourcesEstimator
@@ -109,32 +154,44 @@ reasonable time. To use a Resources Estimator:
    For example, if you execute it with the last Q# code block above, you get this:
 
    ```output
-   Metric          Sum
-   CNOT            1
-   QubitClifford   1
-   R               0
-   Measure         2
-   T               0
-   Depth           0
-   Width           2
-   BorrowedWidth   0
+   Metric          Sum    Max
+   CNOT            1       1
+   QubitClifford   1       1
+   R               0       0
+   Measure         2       2
+   T               0       0
+   Depth           0       0
+   Width           2       2
+   BorrowedWidth   0       0
    ```
 
-   We need 1 CNOT gate, 1 Clifford gate to apply `H` and 2 measurements to
+   > [!NOTE] 
+   > There are two columns in the output, but for the moment you don't need to
+   > worry about it since both columns will display the same content. This might
+   > not be true for some advanced applications of the QDK that are out of the scope of
+   > this module.
+
+   In the previous example, the program only contains one operation. It says
+   that you need 1 CNOT gate, 1 Clifford gate to apply `H` and 2 measurements to
    obtain the qubits results. The width of the circuit is the number of qubits
-   used, 2 in this case since you only used two qubits. For this example, it was
-   very simple to know how many resources you needed without having to use
-   `ResourcesEstimator`. But Q# is a high-level programming language, and for
-   most programs it's virtually impossible to know directly how many resources
-   they need. You will find that `ResourcesEstimator` is a very useful tool as
-   you advance in your path to become a Q# quantum developer.
+   needed to run a program. It's 2 since you only used two qubits.
+
+   For this example, it was very simple to know how many resources you needed
+   without having to use `ResourcesEstimator`. But Q# is a high-level
+   programming language, and for most programs it's virtually impossible to know
+   directly how many resources they need. You will find that
+   `ResourcesEstimator` is a very useful tool as you advance in your path to
+   become a Q# quantum developer.
 
    >[!NOTE]
-   > Clifford gates are a basic kind of quantum operation and are useful to
-   > estimate the amount of resources needed to perform a quantum computation. You 
-   > can learn more about them in the [Wikipedia page on Clifford gates](https://en.wikipedia.org/wiki/Clifford_gates).
+   > Clifford gates are a basic kind of quantum operation and are useful
+   > to estimate the amount of resources needed to perform a quantum
+   > computation. Both $H$ and $CNOT$ are examples of Clifford operations. The
+   > `QubitClifford` row includes only single-qubit Clifford operations. You can
+   > learn more about them in the [Wikipedia page on Clifford
+   > gates](https://en.wikipedia.org/wiki/Clifford_gates).
 
-   To learn more about `ResourcesEstimator` and get a detailed description of each of
-   the parameters of the output and more estimation tools, see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true) in the user guide.
+To learn more about `ResourcesEstimator` and get a detailed description of each of
+the parameters of the output and more estimation tools, see [QDK resources estimator](https://docs.microsoft.com/quantum/user-guide/machines/resources-estimator?azure-portal=true) in the user guide.
 
-   In the next part, you'll explore two different quantum algorithms that make use of superposition, interference, and entanglement to outperform classical computers.
+In the next part, you'll explore two different quantum algorithms that make use of superposition, interference, and entanglement to outperform classical computers.

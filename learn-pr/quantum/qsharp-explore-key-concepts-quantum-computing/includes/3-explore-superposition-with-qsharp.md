@@ -1,4 +1,4 @@
-Now you're going to explore how to create, manage, and inspect superpositions in Q#. We introduce a function from the Quantum Development Kit called `DumpMachine` that enables us to observe the probability amplitudes of the simulated qubit registers.
+Now you're going to explore how to create, manage, and inspect superpositions in Q#. We introduce a function from the Quantum Development Kit called `DumpMachine` that enables you to observe the probability amplitudes of the simulated qubit registers.
 
 ## Create the project
 
@@ -14,7 +14,7 @@ Like before, you see two files: the project file and *Program.qs*, which contain
 
 ## Include the Diagnostics namespace
 
-The Diagnostics namespace `Microsoft.Quantum.Diagnostics` under the [Standard
+The Diagnostics namespace [Microsoft.Quantum.Diagnostics](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics?azure-portal=true) under the [Standard
 library](https://docs.microsoft.com/quantum/user-guide/libraries/standard?azure-portal=true)
 of the Quantum Development Kit contains functions and operations that are useful for
 diagnostic purposes.
@@ -27,7 +27,7 @@ into a file or some other location. If you omit the `location`, this function pr
 > hardware, `DumpMachine` won't do anything since we can't access the
 > state of the qubit register during execution. Remember that measuring the
 > state of a qubit can change its state. In simulated virtual quantum computers,
-> we can use tools like `DumpMachine` and to explore the state of the system.
+> we can use tools like `DumpMachine` to explore the state of the system.
 
 To add the library, you use the `open` directive. Modify *Program.qs* like this:
 
@@ -35,7 +35,9 @@ To add the library, you use the `open` directive. Modify *Program.qs* like this:
 
 ## Dump the state of the program
 
-You can use the `GenerateRandomBit` operation that you defined in the in the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module to see how `DumpMachine` works.
+In the module [Create your first Q# program by using the Quantum Development
+Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
+you defined the `GenerateRandomBit` operation. You can use it to see how `DumpMachine` works.
 
 To do so, you simply call `DumpMachine` at every step that you want to see the state of the register.
 
@@ -88,7 +90,7 @@ you want to inspect the state after the measurement.
     One
     ```
 
-The `DumpMachine` function outputs a table with the information that describes the state of the qubit register. Specifically, it gives the probability amplitude, the probability, and the phase in radians for each state. Let's look at each step:
+The `DumpMachine` function outputs a table with the information that describes the state of the qubit register. Specifically, it gives the probability amplitude, the probability, and the phase in radians for each basis state. Let's look at each step:
 
 1. ```output
        Initialized qubit:
@@ -129,11 +131,16 @@ The `DumpMachine` function outputs a table with the information that describes t
    always need to leave the qubits you use in the state $\ket{0}$ so that it can be used by other operations.
 
 > [!TIP]
-> Q# can also be run in Jupyter Notebooks. These notebooks provide a better visualization of the `DumpMachine` outputs. You can install them and try them out by following the Quantum Development Kit documentation on [Q# Jupyter Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter).
+> Q# can also be run in Jupyter Notebooks. These notebooks provide a better
+> visualization of the `DumpMachine` outputs. You can install them and try them
+> out by following the Quantum Development Kit documentation on [Q# Jupyter
+> Notebooks](https://docs.microsoft.com/quantum/quickstarts/install-jupyter). 
+> ![Screenshot of DumpMachine function in a Jupyter notebook](../media/3-jupyter.png)
 
 ## Explore different superpositions
 
-Now that you know how to inspect the state of a register, you can see operations that modify the state of your qubits and put them into a superposition.
+Now that you know how to inspect the state of a register, you can see operations
+that modify the state of your qubits and prepare them into a superposition.
 
 The current random number generator produces either `Zero` or `One` with a 50% probability. Let's look at a second example that generates random numbers with a different probability.
 
@@ -143,17 +150,21 @@ Suppose you want to create a random bit generator that is skewed. For example, y
 
 $$\ket{\psi}=\sqrt\alpha\ket{0}+\sqrt{1-\alpha}\ket{1}$$
 
-This state can be obtained by sequentially applying the operations [Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)($2\arccos \sqrt{\alpha}$) to a qubit in the state $\ket{0}.$
+This state can be obtained by sequentially applying the operator $R_y(2\arccos
+\sqrt{\alpha})$ to a qubit in the state $\ket{0}.$ You can achieve this in Q#
+using operation
+[Ry](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.Ry?azure-portal=true)
+of the Standard library.
 
 > [!TIP]
 > If you want to learn more about the math behind single qubit operations, check out the
-> [Single qubit gates quantum kata](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates?azure-portal=true).
+> [Single qubit gates quantum kata](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/SingleQubitGates?azure-portal=true).
 
 1. Modify *Program.qs* like this and then save the file:
 
     :::code language="qsharp" source="code/3-program-2.qs":::
 
-1. From the terminal, run `dotnet run`. This example chooses $\alpha = \frac13$:
+1. From the terminal, run `dotnet run`. This example chooses $\alpha$ to be about $\frac13$:
 
     ```dotnetcli
     dotnet run --alpha 0.333333
@@ -163,9 +174,11 @@ This state can be obtained by sequentially applying the operations [Ry](https://
 
     ```output
     The qubit is in the desired state.
+
     # wave function for qubits with ids (least to most significant): 0
     |0⟩:     0.577350 +  0.000000 i  ==     *******              [ 0.333333 ]     --- [  0.00000 rad ]
     |1⟩:     0.816497 +  0.000000 i  ==     **************       [ 0.666667 ]     --- [  0.00000 rad ]
+
     Your skewed random bit is:
     One
     ```
@@ -194,7 +207,14 @@ instead of one qubit three times.
     Here, we introduce three concepts:
 
     * The `qubits` variable now represents a `Qubit` array with a length of three. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types?azure-portal=true).
-    * The [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true), [ResetAll](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall) and [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true) functions perform operations and measurements on multiple qubits with less code. Q# libraries offer many different functions that make writing quantum programs more efficient.
+    * The
+      [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true),
+      [ResetAll](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall)
+      and
+      [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
+      operations perform operations and measurements on multiple qubits with
+      less code. Q# libraries offer many different operations and functions that make writing
+      quantum programs more efficient.
     * The [BoolArrayAsInt](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) fucntions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer.
 
 1. From the terminal, run `dotnet run`.
@@ -231,7 +251,7 @@ instead of one qubit three times.
 
     You can see with `DumpMachine` how the act of measuring the three qubits collapses the state of the register to one of the eight possible basis states.
 
-    What would happen if instead of measuring the three qubits at once with `ForEach(M, qubits)`, you measure them sequentially? To do so, you just need to modify the code slightly.
+    `ForEach(M, qubit)` measures each qubit in turn, gradually collapsing the state. Can we look at the intermediary states after each measurement? To do so, you just need to modify the code slightly.
 
 1. Modify *Program.qs* like this and then save the file:
 
@@ -325,7 +345,7 @@ Let's look briefly on each step:
    vanished, this is $\ket{3}=\ket{011}$, and $\ket{7}=\ket{111}$. The rest of the
    amplitudes increase to fulfill the normalization condition.
 
-    ```qsharp
+    ```output
     # wave function for qubits with ids (least to most significant): 0;1;2
     |0⟩:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
     |1⟩:     0.707107 +  0.000000 i  ==     **********           [ 0.500000 ]     --- [  0.00000 rad ]

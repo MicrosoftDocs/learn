@@ -20,20 +20,20 @@ In the previous part, when putting the states $\ket{\psi_1}=
 amplitude of $\ket{1}$ vanishes, and for $\ket{0}$ it doubles.
 
 To see this effect in Q#, you can implement it with the help of the `H`
-operation. you already know that $\hat H \ket{0} = \ket{\psi_1}$, which you used
-for the quantum random bit generator. But if you apply $\hat H$ to the state
+operation. You already know that $ H \ket{0} = \ket{\psi_1}$, which you used
+for the quantum random bit generator. But if you apply $ H$ to the state
 $\ket{1}$, you obtain $\ket{\psi_2}$.
 
 If you then apply `H` twice to the state $\ket{0}$:
 
-$$\hat H \hat H \ket{0}= \hat H \frac1{\sqrt2}(\ket{0}+\ket{1}).$$
+$$ H  H \ket{0}=  H \frac1{\sqrt2}(\ket{0}+\ket{1}).$$
 
-Since $\hat H$ is a linear operator:
+Since $ H$ is a linear operator:
 
-$$=\frac1{\sqrt2}(\hat H \ket{0}+\hat H \ket{1})=
+$$=\frac1{\sqrt2}( H \ket{0}+ H \ket{1})=
 \frac1{\sqrt2}(\ket{\psi_1}+\ket{\psi_2}).$$
 
-Thus, applying $\hat H$ twice to $\ket{0}$ is mathematically the same as
+Thus, applying $ H$ twice to $\ket{0}$ is mathematically the same as
 superposing the states $\ket{\psi_1}$ and $\ket{\psi_2}$.
 
 To do so with Q#:
@@ -44,6 +44,12 @@ To do so with Q#:
 
    Here, you apply the operation `H` twice while inspecting the intermediate
    states with `DumpMachine`.
+
+   > [!NOTE]
+   > To apply an operation twice in Q# you apply the operation to the
+   > target register in sequential lines. DON'T insert the application of the
+   > operation as the argument of the second operation. `H(H(q))` yields a
+   > compilation error.
 
 2. Open the integrated terminal. From the **Terminal** menu, select **New Terminal**.
 

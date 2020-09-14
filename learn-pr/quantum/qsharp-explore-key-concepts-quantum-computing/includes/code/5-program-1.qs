@@ -5,7 +5,7 @@ namespace ExploringInterference {
     open Microsoft.Quantum.Measurement;
     
     @EntryPoint()
-    operation TestInterference() : Result {
+    operation TestInterference1() : Result {
         using (q = Qubit()) {
             Message(" ");
             Message("At the beginning the qubit is in the state |0>.");

@@ -4,17 +4,18 @@ We outline how they use superposition, interference, and entanglement to achieve
 
 ## Quantum oracle
 
-First, let's introduce the concept of *quantum oracle*. In many problems, you're interested in solving a problem while making the fewest number of
-evaluations of a function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For
-example, if you're searching an element in a database, you can encode the problem
-in a binary function $f: \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$
-can be considered as a black-box that outputs $1$ if the consulted element $x$
-is our target, and $0$ otherwise. An efficient search finds the target element
-with few uses of $f$.
+First, let's introduce the concept of *quantum oracle*. In many problems, you're
+interested in solving a problem while making the fewest number of evaluations of
+a function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For example, if you're
+checking wether a number $x$ fulfills a property, you can encode the problem in a
+binary function $f: \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$ can
+be considered as a black-box that outputs $1$ if the number $x$ fulfills the
+property, and $0$ otherwise. This can be used, for example, to brute-force
+search solutions for mathematical problems.
 
 A quantum oracle is a quantum operation that implements some black-box function $f:
 \\{0,1\\}^n \rightarrow \\{0,1\\}^m$. This
-operation is implemented in a way that allows to evaluate the black-box function
+operation is implemented in a way that enables you to evaluate the black-box function
 not only on individual inputs, but also on superposition of basis states.
 
 > [!NOTE]
@@ -24,7 +25,10 @@ not only on individual inputs, but also on superposition of basis states.
 
 The oracle has to act on quantum states instead of classical bits. To enable
 this, the input $x$ with binary representation $x=(x_0,x_1,...,x_{n-1})$
-can be encoded into an n-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
+can be encoded into an $n$-qubit register: $\ket{x}=\ket{x_0x_1...x_{n-1}}$.
+
+You can learn more about quantum oracles in the [conceptual documentation of the
+Quantum Development Kit](https://docs.microsoft.com/quantum/concepts/oracles?azure-portal=true).
 
 ## Deutsch–Jozsa algorithm
 
@@ -51,7 +55,7 @@ or balanced with the least amount of calls possible.
 If you solve this problem classically, how many calls to the given function will
 we need?
 
-The first call will give us no information - regardless of whether it returns $0$
+The first call will give you no information - regardless of whether it returns $0$
 or $1$, the function could still be constant or balanced.
 
 In the best case scenario, the second call will return a different value and you'll be able to
@@ -68,18 +72,19 @@ the only information you have is that $f(x)$ takes a bit string of length $n$ as
 
 The algorithm is as follows:
 
-1. Start with a register of $n$ qubits initiated in the state \ket{0...0}.
-1. Apply $\hat H$ to every qubit to create a superposition of all possible states.
+1. Start with a register of $n$ qubits initiated in the state $\ket{0...0}$.
+1. Apply $H$ to every qubit to create a superposition of all possible states.
 1. Apply the oracle $U_f$ to the superposition to cause quantum interference.
-1. Apply $\hat H$ to every qubit again to get out of superposition.
+1. Apply $H$ to every qubit again to get out of superposition.
 1. Measure every qubit: if all measurements results are $0$, the function is
    constant, otherwise, it is balanced.
 
-This is, you solve the problem with just one query to the oracle, exponentially
-faster than the classical solution.
+Using this algorithm you solve the problem with just one query to the oracle,
+exponentially faster than the classical solution.
 
 If you're interested in the details of this algorithm and want to implement it
-in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true).
+in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true) and
+the [sample on Deutsch-Jozsa algorithm](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/simple-algorithms/DeutschJozsa.qs?azure-portal=true).
 
 ![Diagram summarizing Deutsch-Jozsa algorithm](../media/8-dj.svg)
 
@@ -104,11 +109,14 @@ best known classical algorithm is the *general number field sieve* algorithm.
 Shor's algorithm takes advantage of the fact that the factoring problem can be
 transformed to a problem that consists on finding the period of a periodic
 function. This is known as the order finding problem. Shor's algorithm uses
-superposition and interference to apply the quantum Fourier transform - a
-version of the discrete Fourier transform for quantum computers - to find the 
-period of the function faster than any known classical algorithm.
+superposition and interference to apply the quantum Fourier transform -
+a version of the discrete Fourier transform for quantum computers - to find the
+period of the function faster than any known classical algorithm. Some versions
+of the algorithm use instead *iterative phase estimation*, a kind of algorithm
+that finds a complex phase of an operation that enables you to find the period
+of the function.
 
-![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.svg)
+![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.png)
 ![Diagram explaining Shor's algorithm](../media/8-shor2.svg)
 
 #### Outline of Shor's algorithm
@@ -116,15 +124,16 @@ period of the function faster than any known classical algorithm.
 The algorithm consists of three parts:
 
 1. A classical part that transforms the factoring problem into a problem of
-   finding the period $r$ of a periodic function $f(x)=a^x mod N$, where $a$ is
+   finding the period $r$ of a periodic function $f(x)=a^x \mod N$, where $a$ is
    a random number whose greater common divisor with $N$ is $1$.
 
-1. A quantum part that finds the period $r$ using the quantum Fourier transform.
+1. A quantum part that finds the period $r$ using the quantum Fourier transform
+   or iterative phase estimation.
 
 Shor's algorithm succeeds in finding a prime factor with high probability but
 it can fail. However, repeating the algorithm several times until it finds the
-prime factors is exponentially faster than the best known classical algorithm.
+prime factors is exponentially faster than the best known classical algorithm. 
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the [Q# sample for integer
-factorization](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/integer-factorization#integer-factorization-sample?azure-portal=true).
+factorization](https://github.com/microsoft/Quantum/tree/main/samples/algorithms/integer-factorization#integer-factorization-sample?azure-portal=true).

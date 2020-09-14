@@ -5,10 +5,10 @@ namespace ExploringEntanglement {
     open Microsoft.Quantum.Measurement;
 
     @EntryPoint()
-    operation TestEntanglement1() : Result[] {
+    operation TestEntanglement2() : Result[] {
         using (qubits = Qubit[2]) {
             H(qubits[0]);
-            CNOT(qubits[0], qubits[1]);
+            Controlled X([qubits[0]], qubits[1]);
             Message("Entangled state before measurement:");
             DumpMachine();
             Message(" ");
