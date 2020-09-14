@@ -8,13 +8,22 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "Azure Fundamentals: Describe identity, governance, privacy, and compliance features (learning path 5 of 6)"
+title: "Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features"
 summary: |
   With the rise of remote work, bring your own device (BYOD), mobile applications, and cloud applications, the primary security boundary has shifted from firewalls and physical access controls to _identity_.
 
   Understanding who is using your systems and what they have permission to do are critical to keeping your data safe from attackers. To stay organized, manage costs, and meet your compliance goals, you need a good cloud governance strategy.
 
   Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards.
+
+  Here are the learning paths in this series:
+
+    - [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
+    - [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
+    - [Azure Fundamentals part 3: Fundamental Azure core solutions and management tools](/learn/paths/az-900-fundamental-azure-core-solutions-management-tools/)
+    - [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
+    - Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features
+    - [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
 prerequisites: None
 iconUrl: /learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
 levels:
