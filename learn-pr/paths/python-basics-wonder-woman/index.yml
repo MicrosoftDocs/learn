@@ -17,7 +17,7 @@ summary: |
     - Discover all the ways you can engage with the WONDER WOMAN 1984 film with code
     - Write your first lines in Python
     - Build a message decoder program
-    - Create a super power quiz to determine what super powers you would have if you were in the DC Universe
+    - Create a personality quiz to determine what character you would be in the Wonder Woman 1984 film
   
   Once you complete this learning path, you will have a great foundation to build upon in subsequent Python Learning Paths.
   
@@ -32,7 +32,7 @@ roles:
 products:
 - vs-code
 modules:
-# - learn.student-evangelism.python-secret-message-decoder
+- learn.student-evangelism.python-secret-message-decoder
 - learn.student-evangelism.wonder-woman-personality-quiz
 - learn.languages.python-install-vscode
 trophy:

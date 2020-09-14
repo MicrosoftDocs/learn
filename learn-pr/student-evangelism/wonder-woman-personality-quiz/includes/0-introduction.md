@@ -1,6 +1,6 @@
-![Wonder Woman 1984 Film Card](../media/ww84-edu-github-title-card.png)
+![Film card from WONDER WOMAN 1984.](../../wonder-woman-common/media/wonder-woman-1984-coming-to-theaters.png)
 
-![quiz promotional banner showing four of the movie characters.](../media/ww84-edu-02-github-program-quiz.png)
+![Quiz promotional banner showing four of the movie characters.](../media/ww84-edu-02-github-program-quiz.png)
 
 Have you ever taken a personality quiz? Where you answer a series of multiple-choice questions and find out things like... "What type of emoji are you?"
 
@@ -30,7 +30,7 @@ And maybe you have 3 personalities:
 - 10-14 pts: You are passionate and intense
 - 15+ pts: You are compassionate and opinionated
 
-You can see that it really doesn't matter what kind of food the quiz-taker chooses if they choose the color red, because that will automatically put them in the "compassionate and opinionated" category (sounds like a super hero I know...). 
+You can see that it really doesn't matter what kind of food the quiz-taker chooses if they choose the color red, because that will automatically put them in the "compassionate and opinionated" category (sounds like a character I know...). 
 
 With [Visual Studio Code](https://code.visualstudio.com/learn/?azure-portal=true) and the power of Python and inspired by the [WONDER WOMAN 1984](https://www.wonderwomanfilm.com/?azure-portal=true) film, you're going to get a chance to make your own "Which WONDER WOMAN 1984 Character are you most like?" quiz. Now you'll have the power to control the outcome of who your friends and family are most like from the movie, and maybe you can even add in an easter egg so that you ALWAYS get Wonder Woman!
 

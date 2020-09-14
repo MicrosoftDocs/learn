@@ -11,13 +11,13 @@ metadata:
 title: Program your own personality quiz
 summary: Which WONDER WOMAN 1984 character are you most like? Use Python once again to build a quiz to share with your friends, this time with Boolean commands and conditionals. No prior background in computer science is needed. For the best experience, download Visual Studio Code.
 abstract: |
- In this module, you will begin to discover: 
+ In this module, you will begin to discover how to: 
   - Write your first lines of Python code
   - Create a program that allows users to interact with your code
-  - Discover if-, elif-, and else-statements
+  - Use if-, elif-, and else-statements
 prerequisites: |
-  - Python installed
-  - Visual Studio Code with Python Extension
+  - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-porta=true)
+  - [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-porta=true)
   - No coding experience required
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
