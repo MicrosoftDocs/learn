@@ -8,10 +8,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure network connectivity on Azure
-summary: |
-  Every application and service, whether on-premises or in the cloud, needs to be designed with security in mind. Security needs to happen at the application level, at the data level, and at the network level.
-
-  Learn about the various Azure services you can use to help ensure that your network is safe, secure, and trusted.
+summary: Learn about the various Azure services you can use to help ensure that your network is safe, secure, and trusted.
 abstract: |
   By the end of this module, you'll able to:
 
