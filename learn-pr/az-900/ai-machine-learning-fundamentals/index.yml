@@ -14,8 +14,8 @@ abstract: |
   By the end of this module, you will be able to:
   - Choose the correct Azure Artificial Intelligence service to address different kinds of business challenges.
 prerequisites: | 
-- You should be familiar with the idea of an Application Programming Interface, or API. Programmers use APIs to utilize functionality contained in code libraries.
-- You should be familiar with what a "web API" is. You should understand that a web API is an API that is accessible from servers that accept requests via HTTP. Also, you should understand that a "web API endpoint" is the location of the code library and that REST APIs refer to the design of the URL style used to expose the API's functionality.
+  - You should be familiar with the idea of an Application Programming Interface, or API. Programmers use APIs to utilize functionality contained in code libraries.
+  - You should be familiar with what a "web API" is. You should understand that a web API is an API that is accessible from servers that accept requests via HTTP. Also, you should understand that a "web API endpoint" is the location of the code library and that REST APIs refer to the design of the URL style used to expose the API's functionality.
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
