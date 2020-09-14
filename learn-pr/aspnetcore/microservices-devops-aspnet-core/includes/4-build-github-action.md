@@ -88,19 +88,19 @@ You've finished creating the "build" action for your CI/CD pipeline. The Marketi
 
 ## Monitor the build
 
-1. View the real-time progress of the build by completing the following steps:
-    1. Select the **Actions** tab.
-    1. Select the most recent workflow run listed for the *eShop build* workflow. The commit message used in the previous step becomes the run's name.
+View the real-time progress of the build by completing the following steps:
 
-        :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
+1. Select the **Actions** tab.
+1. Select the most recent workflow run listed for the *eShop build* workflow. The commit message used in the previous step becomes the run's name.
 
-    1. Select the **build-and-push-docker-image** task:
+    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
 
-        :::image type="content" source="../media/4-build-github-action/build-push-docker-image-task.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/build-push-docker-image-task.png":::
+1. Select the **build-and-push-docker-image** task:
 
-    When the build completes successfully, all steps are prefixed with a green check mark. Expand any task for the output generated during its execution. For example:
+    :::image type="content" source="../media/4-build-github-action/build-push-docker-image-task.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/build-push-docker-image-task.png":::
 
-    :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
+When the build completes successfully, all steps are prefixed with a green check mark. Expand any task for the output generated during its execution. For example:
 
+:::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
 
 In this unit, you created a GitHub action to build the coupon service. You added logging to the coupon service and saw how committing that code triggered the build workflow. Finally, you learned how to monitor the build's progress in real time.
