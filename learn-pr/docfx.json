@@ -85,7 +85,7 @@
                 "dest": "modules"
             },
             {
-                "src": "az-900",
+                "src": "azure-fundamentals",
                 "files": [
                     "**/*.yml",
                     "**/*.md"
@@ -432,7 +432,7 @@
                     "tr-tr",
                     "sv-se"
                 ],
-                "az-900/**/*.yml": [
+                "azure-fundamentals/**/*.yml": [
                     "de-de",
                     "es-es",
                     "fr-fr",
