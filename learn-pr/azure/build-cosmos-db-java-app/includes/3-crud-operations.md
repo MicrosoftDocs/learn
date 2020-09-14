@@ -2,9 +2,9 @@ Once the connection to Azure Cosmos DB has been made, the next step is to create
 
 ## Working with documents programmatically
 
-Data is stored in JSON documents in Azure Cosmos DB. [Documents](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal, as shown in the previous module, or programmatically, as described in this module. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the Java SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
+Data is stored in JSON documents in Azure Cosmos DB. [Documents](https://docs.microsoft.com/azure/cosmos-db/databases-containers-items#azure-cosmos-items) can be created, retrieved, replaced, or deleted in the portal or programmatically. This lab focuses on programmatic operations. Azure Cosmos DB provides client-side SDKs for .NET, .NET Core, Java, Node.js, and Python, each of which supports these operations. In this module, we'll be using the Java SDK to perform CRUD (create, retrieve, update, and delete) operations on the NoSQL data stored in Azure Cosmos DB.
 
-The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncContainer](https://docs.microsoft.com/dotnet/api/microsoft.azure.documents.client.documentclient?view=azure-dotnet) class:
+The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncContainer](https://docs.microsoft.com/java/api/com.azure.cosmos.cosmosasynccontainer?view=azure-java-stable) class:
 * [createItem](https://docs.microsoft.com/java/api/com.azure.cosmos.cosmosasynccontainer.createitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_createItem_T_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
 * [readItem](https://docs.microsoft.com/java/api/com.azure.cosmos.cosmosasynccontainer.readitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_readItem_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_java_lang_Class_T__)
 * [replaceItem](https://docs.microsoft.com/java/api/com.azure.cosmos.cosmosasynccontainer.replaceitem?view=azure-java-stable#com_azure_cosmos_CosmosAsyncContainer__T_replaceItem_T_java_lang_String_com_azure_cosmos_models_PartitionKey_com_azure_cosmos_models_CosmosItemRequestOptions_)
@@ -13,64 +13,74 @@ The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncCo
 
 Upsert performs a create or replace operation depending on whether the document already exists.
 
-To perform any of these operations, you need to create a class that represents the object stored in the database. Because we're working with a database of users, you'll want to create a **User** class to store primary data such as their first name, last name, and user id (which is required, as that's the partition key to enable horizontal scaling) and classes for shipping preferences and order history.
+To perform any of these operations, you will need helper classes (Java POJO classes) that represent the objects stored in the database. Because we're working with a database of users, you'll want to have a **User** class representing user entities. This class will store primary data such as their first name, last name, and user id (which is required, as that's the partition key to enable horizontal scaling). Each user has some shipping preferences and coupons associated, so you will want **ShippingPreference** and **CouponsUsed** datatypes to represent those as well. Finally, each user may have some order history that is potentially unbounded, so want to have separate **OrderHistory** entities with a corresponding Java POJO class.
 
-Once you have those classes created to represent your users, you'll create new user documents for each instance, and then we'll perform some basic CRUD operations on the documents.
+Navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and take a look in the **datatypes** folder - you will see several POJOs - **User**, **ShippingPreference**, **OrderHistory**, **CouponsUsed**. So we have provided all of the entity POJOs and their helper classes!
+
+Next we will create some entities and perform some basic CRUD operations on the Azure Cosmos DB container and the documents it contains. Note that while you can pass Azure Cosmos DB a Jackson `ObjectNode` that directly specifies the JSON document, Azure Cosmos DB is also capable of serializing Java POJOs into JSON and we recommend this as the simplest approach all else being equal.
 
 ## Create documents
 
-1. Next we will insert documents into Azure Cosmos DB. Note that you can pass Azure Cosmos DB a Jackson `ObjectNode` that directly specifies the JSON document, however Azure Cosmos DB is also capable of serializing Java POJOs into JSON. We will utilize the latter functionality in this section.
-1. Examine the **com.azure.cosmos.examples.mslearnbasicapp.datatypes** package/directory and you will see several POJOs - **User**, **ShippingPreference**, **OrderHistory**, **CouponsUsed**. **User** depends on all of the other POJOs, and it is the **User** POJO which we will ultimately pass to Azure Cosmos DB Java SDK to be serialized as JSON.
 1. Open **User.java** and examine its contents. It should look something like 
 
     ```java
     import lombok.AllArgsConstructor;
     import lombok.Data;
     import lombok.NoArgsConstructor;
-    import java.util.ArrayList;
+
     import java.util.List;
 
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
     public class User {
-        private String id = "";
-        private String userId = "";
-        private String lastName = "";
-        private String firstName = "";
-        private String email = "";
-        private String dividend = "";
-        private List<ShippingPreference> shippingPreference = new ArrayList<ShippingPreference>();
-        private List<OrderHistory> orderHistory = new ArrayList<OrderHistory>();
-        private List<CouponsUsed> coupons = new ArrayList<CouponsUsed>();
+
+        /** Document ID (required by Azure Cosmos DB). */
+        private String id;
+
+        /** User ID. */
+        private String userId;
+
+        /** User last name. */
+        private String lastName;
+
+        /** User first name. */
+        private String firstName;
+
+        /** User email address. */
+        private String email;
+
+        /** User dividend setting. */
+        private String dividend;
+
+        /** User shipping preferences. */
+        private ShippingPreference shippingPreference;
+
+        /** User order history. */
+        private List<OrderHistory> orderHistory;
+
+        /** Coupons recorded by the user. */
+        private List<CouponsUsed> coupons;
     }
     ```
 
-    Observe that the access methods for the **id**, **userId**, etc. fields are *implicit*. This is possible because we use Project Lombok **@Data** annotation to create them automatically.
+    Observe that the access methods for the **id**, **userId**, etc. fields are *implicit* (not defined in code.) This is possible because we use Project Lombok **@Data** annotation to create them automatically.
 
-    Note that documents must have an **id** property, which will be serialized as **id** in JSON.
+    The **@NoArgsConstructor** and **@AllArgsConstructor** annotations will, respectively, generate a constructor with no arguments that sets default field values, and another constructor with a full set of arguments to specify all field values directly.
 
-1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
-
-    ```bash
-    mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"
-    ```
-
-    and confirm that it executes without issue.
+    Note **User** has an **id** property; all Azure Cosmos DB documents require an **id** property, therefore all POJO we intend to serialize into JSON documents must have an **id** field.
 
 1. Now add the following method to `CosmosApp.java`:
 
     ```java
-    private static List<Object> createUserDocumentsIfNotExist(List<User> users)
-    {
+    private static List<Object> createUserDocumentsIfNotExist(final List<User> users) {
         return Flux.fromIterable(users).flatMap(user -> {
             return Mono.zip(container.readItem(user.getId(), new PartitionKey(user.getUserId()), User.class), Mono.just(user));
         }).flatMap(userResponseTuple -> {
             CosmosItemResponse<User> userReadResponse = userResponseTuple.getT1();
             User user = userResponseTuple.getT2();
 
-            if (userReadResponse.getStatusCode() == 200) {
+            if (userReadResponse.getStatusCode() == HttpConstants.StatusCodes.OK) {
                 logger.info("User {} already exists in the database", user.getId());
                 return Mono.just(userReadResponse);
             } else {
@@ -85,35 +95,34 @@ Once you have those classes created to represent your users, you'll create new u
 
     ```java
     User maxaxam = new User(
-            "1",
-            "maxaxam",
-            "Axam",
-            "Max",
-            "maxaxam@contoso.com",
-            "2.0",
-            new ArrayList<ShippingPreference>(Arrays.asList(
-            new ShippingPreference(
-                            1,
-                            "90 W 8th St",
-                            "",
-                            "New York",
-                            "NY",
-                            "10001",
-                            "USA"
+        "1",
+        "maxaxam",
+        "Axam",
+        "Max",
+        "maxaxam@contoso.com",
+        "2.0",
+        new ShippingPreference(
+            1,
+            "90 W 8th St",
+            "",
+            "New York",
+            "NY",
+            "10001",
+            "USA"
+        ),
+        new ArrayList<OrderHistory>(Arrays.asList(
+            new OrderHistory(
+                "3",
+                "1000",
+                "08/17/2018",
+                "52.49"
             )
-            )),
-            new ArrayList<OrderHistory>(Arrays.asList(
-                    new OrderHistory(
-                            "1000",
-                            "08/17/2018",
-                            "52.49"
-                    )
-            )),
-            new ArrayList<CouponsUsed>(Arrays.asList(
-                    new CouponsUsed(
-                            "A7B89F"
-                    )
-            ))
+        )),
+        new ArrayList<CouponsUsed>(Arrays.asList(
+            new CouponsUsed(
+                "A7B89F"
+            )
+        ))
     );
 
     User nelapin = new User(
@@ -123,41 +132,31 @@ Once you have those classes created to represent your users, you'll create new u
             "Nela",
             "nelapin@contoso.com",
             "8.50",
-            new ArrayList<ShippingPreference>(Arrays.asList(
-                    new ShippingPreference(
-                    1,
-                    "505 NW 5th St",
-                    "",
-                    "New York",
-                    "NY",
-                    "10001",
-                    "USA"
+            new ShippingPreference(
+                1,
+                "505 NW 5th St",
+                "",
+                "New York",
+                "NY",
+                "10001",
+                "USA"
             ),
-                    new ShippingPreference(
-                            2,
-                            "505 NW 5th St",
-                            "",
-                            "New York",
-                            "NY",
-                            "10001",
-                            "USA"
-                    )
-            )),
             new ArrayList<OrderHistory>(Arrays.asList(
-                    new OrderHistory(
-                            "1001",
-                            "08/17/2018",
-                            "105.89"
-                    )
+                new OrderHistory(
+                    "4",
+                    "1001",
+                    "08/17/2018",
+                    "105.89"
+                )
             )),
             new ArrayList<CouponsUsed>(Arrays.asList(
-                    new CouponsUsed(
-                            "Fall 2018"
-                    )
+                new CouponsUsed(
+                    "Fall 2018"
+                )
             ))
     );
 
-    createUserDocumentsIfNotExist(new ArrayList(Arrays.asList(maxaxam,nelapin)));
+    createUserDocumentsIfNotExist(new ArrayList(Arrays.asList(maxaxam, nelapin)));
     ```
 
 1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
