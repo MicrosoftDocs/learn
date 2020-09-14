@@ -29,11 +29,13 @@ transform a register in the state $\ket{00}$ to the entangled state
 $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
 
 1. First we prepare a superposition in the control qubit applying $H$.
-   $$H \ket{0}= \frac{1}{\sqrt{2}}(\ket{0}_{\text{control}}+\ket{1}_{\text{control}})$$
+
+   $$H \ket{0}= \frac{1}{\sqrt{2}}(\ket{0}+\ket{1}_{\text{control}})$$
 
 1. Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
-the target qubit in the state $\ket{0}_{\text{target}}$.
-   $$CNOT \frac{1}{\sqrt2}(\ket{00}+\ket{10})=\frac{1}{\sqrt2}(CNOT\ket{00}+CNOT\ket{10})= \frac{1}{\sqrt2}(\ket{00}+\ket{1}\ket{1})$$
+the target qubit in the state $\ket{0}$.
+
+   $$CNOT \frac{1}{\sqrt2}(\ket{00}+\ket{10})=\frac{1}{\sqrt2}(CNOT\ket{00}+CNOT\ket{10})= \frac{1}{\sqrt2}(\ket{00}+\ket{11})$$
 
 To implement this in Q#:
 
