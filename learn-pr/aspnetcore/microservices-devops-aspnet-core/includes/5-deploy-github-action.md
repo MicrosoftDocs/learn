@@ -3,7 +3,7 @@ In this unit, you'll complete the following tasks:
 - Create a GitHub Action to implement a deployment pipeline
 - Modify the coupon service
 - Update the coupon service version in the Helm chart
-- Verify that the changes where deployed to the AKS cluster
+- Verify that the changes were deployed to the AKS cluster
 - Roll back a deployment
 
 ## Create the deployment Action
@@ -24,15 +24,10 @@ Create a GitHub Action for the deployment with the following steps:
         branches: [ main ]
 
     env:
-      IMAGE_NAME: coupon.api
-      TAG: linux-latest
-      CONTEXT_PATH: .
-      DOCKER_FILE_PATH: src/Services/Coupon/Coupon.API/Dockerfile.acr
       CHART_PATH: deploy/k8s/helm-simple/coupon
+      CONTEXT_PATH: .
       CLUSTER_NAME: eshop-learn-aks
       CLUSTER_RESOURCE_GROUP: eshop-learn-rg
-      REGISTRY_LOGIN_SERVER: <PASTE_VALUE_HERE>
-      IP_ADDRESS: <PASTE_VALUE_HERE>
 
     jobs:
       deploy-to-aks:
@@ -42,8 +37,8 @@ Create a GitHub Action for the deployment with the following steps:
           uses: Azure/aks-set-context@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-            resource-group: ${{env.CLUSTER_RESOURCE_GROUP}}
-            cluster-name: ${{env.CLUSTER_NAME}}
+            resource-group: ${{ env.CLUSTER_RESOURCE_GROUP }}
+            cluster-name: ${{ env.CLUSTER_NAME }}
 
         - name: Get code from the repository
           uses: actions/checkout@v1
@@ -60,15 +55,13 @@ Create a GitHub Action for the deployment with the following steps:
 
         - name: Deploy
           run: |
-            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ env.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{env.IP_ADDRESS}} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
+            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{ secrets.IP_ADDRESS }} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
     ```
 
     The preceding YAML defines a GitHub Action that:
 
     - Is triggered when a commit is pushed to the coupon service's Helm chart in the `main` branch.
-    - Defines environment variables that are used tasks in the specification. Placeholder values are used for now.
-      - `IP_ADDRESS`
-      - `REGISTRY_LOGIN_SERVER`
+    - Defines environment variables that are used tasks in the specification.
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` runner and has five steps:
         - `Azure Kubernetes set context` sets the AKS credentials in the runner's *.kube/config* file.
         - `Get code from the repository` checks out the code from the repository.
@@ -77,9 +70,6 @@ Create a GitHub Action for the deployment with the following steps:
         - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
 1. Replace the default Action file name of *main.yml* with *deploy.yml*.
-1. In the Action YAML editor, replace the values for the following environment variables with the same values used for *build.yml*:
-    - `IP_ADDRESS`
-    - `REGISTRY_LOGIN_SERVER`
 1. Commit the *deploy.yml* file directly to the `main` branch.
 
 These two GitHub Action definitions will be part of the repository from now on. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
@@ -143,8 +133,9 @@ These two GitHub Action definitions will be part of the repository from now on. 
     webstatus-8887f6f55-bvq76         1/1     Running             0          31m
     ```
 
-    In the preceding output, you can see that a new `coupon` pod is created while the old one is still running and when the new one is ready the old one is terminated. This should make the transition to the new version as smooth as possible. Press <kbd>Ctrl+C</kbd> to terminate `kubectl`.
+    In the preceding output, notice that a new `coupon` pod was created. While the old pod is still running and when the new pod is ready, the old one is terminated. This should make the transition to the new version as smooth as possible.
 
+1. Press <kbd>Ctrl+C</kbd> to exit `kubectl`.
 1. Run the following command to check the coupon service deployment history:
 
     ```bash
@@ -175,7 +166,7 @@ These two GitHub Action definitions will be part of the repository from now on. 
     1. Enter the code *:::no-loc text="DISC-10":::* for a 10 USD discount, and select **APPLY**.
     1. Select **PLACE ORDER** to complete the purchase.
     1. Back in the console, select the **Centralized logging** URL.
-    1. Observe an entry in the logs similar to the following:
+    1. Observe an entry in the logs similar to the following content:
 
         :::image type="content" source="../media/5-deploy-github-action/seq-log.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-log.png":::
 
@@ -198,4 +189,4 @@ Rollback was a success! Happy Helming!
 >
 > You'd usually also have the pipeline triggered on each PR, to make sure the PR builds correctly and tests run successfully, before reviewing the PR.
 
-For further information, see the [GitHub Action documentation site](https://help.github.com/actions).
+For more information, see the [GitHub Action documentation site](https://help.github.com/actions).

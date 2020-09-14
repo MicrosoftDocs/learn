@@ -29,11 +29,6 @@ Create a GitHub Action for the build with the following steps:
       TAG: linux-latest
       CONTEXT_PATH: .
       DOCKER_FILE_PATH: src/Services/Coupon/Coupon.API/Dockerfile.acr
-      CHART_PATH: deploy/k8s/helm-simple/coupon
-      CLUSTER_NAME: eshop-learn-aks
-      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
-      REGISTRY_LOGIN_SERVER: <PASTE_VALUE_HERE>
-      IP_ADDRESS: <PASTE_VALUE_HERE>
 
     jobs:
       build-and-push-docker-image:
@@ -49,7 +44,7 @@ Create a GitHub Action for the build with the following steps:
           with:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password:  ${{ secrets.REGISTRY_PASSWORD }}
-            registry: ${{ env.REGISTRY_LOGIN_SERVER }}
+            registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             path:  ${{ env.CONTEXT_PATH }}
             dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH, env.DOCKER_FILE_PATH) }}
             repository:  ${{ env.IMAGE_NAME }}
@@ -60,9 +55,7 @@ Create a GitHub Action for the build with the following steps:
     The preceding YAML defines a GitHub Action that:
 
     - Is triggered when a commit is pushed to the coupon service in the `main` branch.
-    - Defines environment variables that are used tasks in the specification. Placeholder values are used for now.
-      - `IP_ADDRESS`
-      - `REGISTRY_LOGIN_SERVER`
+    - Defines environment variables that are used tasks in the specification.
     - Has one job&mdash;a set of steps that execute on the same runner&mdash;named `build-and-push-docker-image`. The job:
         - Builds the Docker image and pushes it to the ACR instance.
         - Runs in an `ubuntu-latest` runner and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
@@ -76,38 +69,11 @@ Create a GitHub Action for the build with the following steps:
 
     :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-build-github-action/action-file-name.png":::
 
-1. Run the following command in Azure Cloud Shell to get values for the `env` block's environment variables:
-
-    ```bash
-    cat ~/clouddrive/aspnet-learn-temp/config.txt
-    ```
-
-1. In the Action YAML editor, replace the values for the following environment variables. Use the values from the output in the preceding step.
-    - `IP_ADDRESS`
-    - `REGISTRY_LOGIN_SERVER`
-
-    At this point, you should see something like this:
-
-    ```yml
-    env:
-      IMAGE_NAME: coupon.api
-      TAG: linux-latest
-      CONTEXT_PATH: .
-      DOCKER_FILE_PATH: src/Services/Coupon.API/Dockerfile.acr
-      CHART_PATH: deploy/k8s/helm-simple/coupon
-      CLUSTER_NAME: eshop-learn-aks
-      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
-      REGISTRY_LOGIN_SERVER: eshoplearn20200908125010311.azurecr.io
-      IP_ADDRESS: 203.0.113.55
-    ```
-
-    In the preceding snippet, you can see a portion of the *build.yml* file with the mentioned environment variables set.
-
 1. Select the **Start commit** button, select the **Commit directly to the `main` branch** radio button, and select **Commit new file** to save the Action file.
 
 ## Modify the coupon service
 
-You've just finished creating the "build" action for your CI/CD pipeline. The Marketing department wants to start a campaign to better track coupon code usage. With this feature, Marketing can better understand which coupon codes are most effective in driving sales. To support this feature, make the following changes in the `main` branch:
+You've finished creating the "build" action for your CI/CD pipeline. The Marketing department wants to start a campaign to better track coupon code usage. With this feature, Marketing can better understand which coupon codes are most effective in driving sales. To support this feature, make the following changes in the `main` branch:
 
 1. Select the **Code** tab in your fork of the repository.
 1. Edit the *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs* file by clicking the pencil (edit) icon. In the *CouponController.cs* file, replace the comment `// Add LogInformation call` with the following code:
@@ -119,8 +85,16 @@ You've just finished creating the "build" action for your CI/CD pipeline. The Ma
     The preceding code logs the coupon code being applied.
 1. Select the **Commit directly to the `main` branch** radio button and select the **Commit changes** button.
 
-    The build workflow is triggered automatically. You can track the progress of the build in real-time by selecting the **Actions** tab, selecting the most recent workflow run listed, and selecting the **build-and-push-docker-image** task. If the build completes successfully, you'll see a variation of the following:
+    The build workflow is triggered automatically.
+
+1. View the real-time progress of the build by completing the following steps:
+    1. Select the **Actions** tab.
+    1. Select the most recent workflow run listed.
+    1. Select the **build-and-push-docker-image** task.
+
+    If the build completes successfully, you'll see a variation of the following output:
 
     :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
 
+<!-- TODO: finish writing this -->
 In this unit, you created a GitHub action to push the

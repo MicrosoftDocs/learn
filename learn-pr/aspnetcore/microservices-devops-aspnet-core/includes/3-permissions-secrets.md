@@ -82,9 +82,9 @@ GitHub Actions will be used to publish the container image to ACR. You must set 
 
 1. Copy the JSON output from the command shell. You'll need this and the credentials for the GitHub Action in next step.
 
-### Create secrets
+## Create secrets
 
-The service principal and the credentials for the container registry are sensitive authentication credentials that the GitHub Actions runner will need. Sensitive information should be stored in a secure location that is only accessible to the repo maintainers and the GitHub Actions runner.
+The service principal and the credentials for the container registry are sensitive authentication credentials that the GitHub Actions runner will need. Sensitive information should be stored in a secure location that is only accessible to the repository maintainers and the GitHub Actions runner.
 
 1. In the GitHub repository you forked, go to **Settings** > **Secrets**.
 1. Select the **New secret** button.
@@ -94,18 +94,22 @@ The service principal and the credentials for the container registry are sensiti
 
     :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
 1. Select the **Add secret** button.
-1. Create two additional secrets representing the username and password for accessing the ACR instance. Run the following command to get the values to be used for the new secrets:
+1. Create four additional secrets. Run the following command to get the values for the new secrets:
 
     ```bash
     cat ~/clouddrive/aspnet-learn-temp/config.txt
     ```
 
     Name the secrets as follows and use the values provided in the text output:
-    - `REGISTRY_USERNAME`
+
+    - `IP_ADDRESS`
+    - `REGISTRY_LOGIN_SERVER`
     - `REGISTRY_PASSWORD`
+    - `REGISTRY_USERNAME`
 
-With all three secrets configured, you'll see the following page:
+With all five secrets configured, you'll see the following page:
 
+<!-- TODO: update screenshot to show 5 secrets -->
 :::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Page displaying three GitHub secrets" border="true" lightbox="../media/3-permissions-secrets/github-secrets.png":::
 
 In this unit, you verified the app was deployed correctly. You then created an Azure service principal and stored related sensitive information as GitHub secrets.
