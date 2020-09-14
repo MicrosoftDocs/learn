@@ -1,6 +1,6 @@
-Throughout the Azure Fundamentals Learning Paths, we'll be working with a fictional company named *Tailwind Traders*, which manufactures hardware products. They operate a chain of retail hardware stores across the globe, and they have a website for online purchases.
+Throughout the Azure Fundamentals learning paths, we'll be working with a fictional company named [Tailwind Traders](https://www.tailwindtraders.com/?azure-portal=true), a fictitious home improvement retailer. They operate retail hardware stores across the globe and online.
 
-![Screenshot of the Tailwind Traders website.](../media/tailwind-traders-web-top.png)
+:::image type="content" source="../media/tailwind-traders-web-top.png" alt-text="A screenshot of the Tailwind Traders website. You can upload a photo to the smart shopping feature or browse recommended products." border="false":::
 
 Tailwind Traders currently manages an on-premises datacenter that hosts the company's retail website, and stores all of the data and streaming video for its applications. The IT department is currently responsible for all of management tasks for their computing hardware and software. For example, let's suppose that you work as an Information Technology (IT) specialist for the company's IT department. Your IT team handles the procurement process to buy new hardware, installs and configures software, and deploys everything throughout the datacenter.
 
@@ -8,4 +8,4 @@ However, these management responsibilities create numerous obstacles for deliver
 
 In the other units of this learning module, you've learned about some of the cloud-based services that Tailwind Traders can use to address each of their technology challenges. With that in mind, the services that are available through Microsoft Azure can help Tailwind Traders conduct its business more efficiently.
 
-As you complete the various modules in the Azure Fundamentals Learning Paths, we'll analyze the challenges that Tailwind Traders is facing, and how you can Microsoft Azure services to address each of those issues as they arise. When you've completed each of the modules, the knowledge that you will have gained from resolving the hypothetical challenges that the fictional Tailwind Traders company was encountering should benefit you in your real world environments.
+As you complete the various modules in the Azure Fundamentals learning paths, we'll analyze the challenges that Tailwind Traders is facing, and how you can Microsoft Azure services to address each of those issues as they arise. When you've completed each of the modules, the knowledge that you will have gained from resolving the hypothetical challenges that the fictional Tailwind Traders company was encountering should benefit you in your real world environments.
