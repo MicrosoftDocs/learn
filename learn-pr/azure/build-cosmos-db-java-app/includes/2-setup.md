@@ -2,14 +2,19 @@ In this unit, you will create a basic console app using an IDE of your choice to
 
 ## Create Azure Cosmos DB resources
 
-1. In your Azure Cosmos DB account, create a database named **Users** with a container named **WebCustomers**. Provision 400 RU/s throughput on the **Users** container.
+For completing this lab, Microsoft Learn provides you with a Concierge subscription to Azure in which you can create accounts and resources. You will set up an Azure Cosmos DB account in this subscription and then create a database and container.
+
+1. Click [here]() to go to the Concierge subscription on Azure Portal, logging in if necessary. 
+1. Using the Azure Portal, create an Azure Cosmos DB account with the name of your choice. When the opportunity arrives to choose a Resource Group for your account, find the concierge Resource Group <rgn>[Sandbox resource group]</rgn> and select that.
+1. In your Azure Cosmos DB account, create a database **Users**.
+1. In the database **Users**, create a container **WebCustomers**. Provision **400 RU/s** for **WebCustomers**.
 
 ## Create your working directory
 
 1. We provide you with a template for your Java application. Clone the template repo onto your system
 
     ```
-    https://github.com/Azure-Samples/azure-cosmos-java-sql-mslearn.git
+    https://github.com/MicrosoftDocs/mslearn-cosmos-java-sql.git
     ```
 
 1. Open the Windows Explorer and navigate to the cloned repo. Enter the **java** subdirectory.

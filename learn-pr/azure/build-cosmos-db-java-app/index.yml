@@ -3,7 +3,7 @@ uid: learn.cosmos-db-java-app
 metadata:
   title: Build a Java app for Azure Cosmos DB
   description: Learn how to create a Java application to store and query data in Azure Cosmos DB
-  ms.date: 08/26/2020
+  ms.date: 09/13/2020
   author: anfeldma-ms
   ms.author: anfeldma
   ms.topic: interactive-tutorial
