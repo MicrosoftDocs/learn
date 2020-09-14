@@ -3,7 +3,7 @@ uid: learn.az-900-describe-identity-governance-privacy-compliance-features
 metadata:
   description: Learn how Azure can help you secure access to cloud resources, what it means to build a cloud governance strategy, and how Azure adheres to common regulatory and compliance standards.
   brand: azure
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

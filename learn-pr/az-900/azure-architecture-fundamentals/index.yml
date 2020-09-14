@@ -3,7 +3,7 @@ uid: learn.azure.azure-architecture-fundamentals
 metadata:
   title: Describe core Azure architectural components
   description: Learn about Azure Subscriptions, Management Groups, Resource Groups, Resource Manager, Azure Regions, and Availability zones.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

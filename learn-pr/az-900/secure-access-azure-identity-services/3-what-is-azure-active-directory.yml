@@ -3,7 +3,7 @@ uid: learn.azure.secure-access-azure-identity-services.3-what-is-azure-active-di
 title: What is Azure Active Directory?
 metadata:
   description: Learn about how Azure Active Directory (Azure AD) works and how Azure AD works with single sign-on (SSO).
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

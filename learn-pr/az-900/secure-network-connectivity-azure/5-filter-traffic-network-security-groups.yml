@@ -3,7 +3,7 @@ uid: learn.azure.secure-network-connectivity-azure.5-filter-traffic-network-secu
 title: Filter network traffic by using network security groups
 metadata:
   description: Learn how network security groups enable you to filter network traffic to and from Azure resources within an Azure Virtual Network (VNet).
-  ms.date: 09/09/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

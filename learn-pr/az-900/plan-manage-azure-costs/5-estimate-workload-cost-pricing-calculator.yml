@@ -3,7 +3,7 @@ uid: learn.azure.plan-manage-azure-costs.5-estimate-workload-cost-pricing-calcul
 title: Exercise - Estimate workload cost by using the Pricing calculator
 metadata:
   description: Use the Pricing calculator to estimate the cost of running a basic web application on Azure.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

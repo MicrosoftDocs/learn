@@ -4,7 +4,7 @@ title: Use Azure Logic Apps
 metadata:
   title: Use Azure Logic Apps for building workflows across well-known APIs
   description: Analyze a scenario that requires orchestration across popular business applications.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial

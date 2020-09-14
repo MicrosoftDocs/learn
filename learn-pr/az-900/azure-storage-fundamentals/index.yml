@@ -3,7 +3,7 @@ uid: learn.azure.azure-storage-fundamentals
 metadata:
   title: Explore Azure Storage services
   description: Learn about the different storage options that are available in Azure Storage.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial

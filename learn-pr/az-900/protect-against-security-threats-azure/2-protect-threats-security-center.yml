@@ -3,7 +3,7 @@ uid: learn.azure.protect-against-security-threats-azure.2-protect-threats-securi
 title: Protect against security threats by using Azure Security Center
 metadata:
   description: Learn how Azure Security Center provides visibility of your security posture across all of your services, both on Azure and on-premises.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

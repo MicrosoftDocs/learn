@@ -3,7 +3,7 @@ uid: learn.azure.plan-manage-azure-costs.2-compare-costs-tco-calculator
 title: Compare costs by using the Total Cost of Ownership (TCO) Calculator
 metadata:
   description: See how the Total Cost of Ownership (TCO) Calculator can help you compare the cost of running in the datacenter versus running on Azure.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

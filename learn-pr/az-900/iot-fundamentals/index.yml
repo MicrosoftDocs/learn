@@ -3,7 +3,7 @@ uid: learn.azure.iot-fundamentals
 metadata:
   title: Choose the best Azure IoT service for your application
   description: Examine Azure's IoT services choose the right service for your scenario.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: bobtabor-msft
   ms.author: rotabor
   ms.topic: interactive-tutorial

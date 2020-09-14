@@ -3,7 +3,7 @@ uid: learn.az-900-describe-azure-cost-management-service-level-agreements
 metadata:
   description: Learn about the factors that influence cost, tools you can use to help estimate and manage your cloud spend, and how Azure's service-level agreements (SLAs) can impact your application design decisions.
   brand: azure
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

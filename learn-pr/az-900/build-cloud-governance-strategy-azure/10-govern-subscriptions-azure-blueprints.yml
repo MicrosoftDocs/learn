@@ -3,7 +3,7 @@ uid: learn.azure.build-cloud-governance-strategy-azure.10-govern-subscriptions-a
 title: Govern multiple subscriptions by using Azure Blueprints
 metadata:
   description: Explore how Azure Blueprints enables governance at scale across multiple Azure subscriptions.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

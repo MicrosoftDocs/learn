@@ -3,7 +3,7 @@ uid: learn.azure.secure-access-azure-identity-services.2-compare-authentication-
 title: Compare authentication and authorization
 metadata:
   description: Understand the difference between authentication and authorization.
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial

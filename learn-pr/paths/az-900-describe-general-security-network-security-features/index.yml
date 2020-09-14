@@ -3,7 +3,7 @@ uid: learn.az-900-describe-general-security-network-security-features
 metadata:
   description: Learn about the various Azure services you can use to help ensure that your cloud resources are safe, secure, and trusted.
   brand: azure
-  ms.date: 09/11/2020
+  ms.date: 09/14/2020
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
