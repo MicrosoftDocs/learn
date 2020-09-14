@@ -1,4 +1,4 @@
-In this exercise, you will review common operating models to see which ones best align to Tailspin Traders narrative. You will also learn how to evaluate and map the operating model that best fits your cloud adoption plans. This information will help you choose the most relevant Azure Landing Zone to begin building your cloud environment.
+In this exercise, you will review common operating models to see which ones best align to Tailwind Traders narrative. You will also learn how to evaluate and map the operating model that best fits your cloud adoption plans. This information will help you choose the most relevant Azure Landing Zone to begin building your cloud environment.
 
 ## Comparing common operating models
 

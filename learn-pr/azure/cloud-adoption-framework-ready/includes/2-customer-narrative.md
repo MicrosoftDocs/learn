@@ -1,4 +1,4 @@
-In the getting started module, we shared the narrative for Tailspin Traders. The central operations/infrastructure team at Tailspin is experienced at managing their existing data centers. The on-going project to migrate 2 of their data centers to Azure is already exposing a few critical learning curves that their current skillsets can't address.
+In the getting started module, we shared the narrative for Tailwind Traders. The central operations/infrastructure team at Tailspin is experienced at managing their existing data centers. The on-going project to migrate 2 of their data centers to Azure is already exposing a few critical learning curves that their current skillsets can't address.
 
 ## Operations
 
@@ -10,11 +10,19 @@ Licensing for the operations management tooling (including hypervisors) consumes
 
 ### Operations Processes
 
-Additionally, the IT Manager has requested two new hires to support the central operations team. That staff would help balance the workload on the over-stressed team. The CIO believes that cloud native operations tools would help reduce the workload by placing a number of those responsibilities on the cloud provider. She will be watching for operational shifts to improve employee satisfaction and reduce workload across the central operations team.
+Additionally, the IT Manager has requested two new hires to support the central operations team. That staff would help balance the load on the over-stressed team. In particular additional staff is requested to support business continuity / disaster recovery (BCDR) practices and patch compliance processes.
+
+Collectively, the business is not ready for a full scale shift to cloud native operations, especially for mission critical applications. The CIO believes that some investment in cloud native operations tools would help reduce strain on the team by shifting a number of those responsibilities to the cloud provider. The CIO will be watching for operational shifts to improve employee satisfaction and reduced load across the central operations team. She will frequently request updates on how the adoption plan will impact BCDR & patching efforts.
 
 ### Low SLA
 
-In spite of all the hardwork & costs associated with operations, the team periodically fails to meet the 90% uptime SLA (Service Level Agreement) for mission critical systems in the primary data center. This is a costly concern for the CIO and CEO. Outdated hardware and an overdue refresh cycle in the data center have resulted in frequent but brief outages. While the company has begrudgingly accepted this SLA, the new CIO is not impressed. Regardless of the financial savings, she is expecting the operations team to deliver a much higher SLA after the migration. 
+In spite of all the hardwork & costs associated with operations, the team periodically fails to meet the 90% uptime SLA (Service Level Agreement) for mission critical systems in the primary data center. This is a costly concern for the CIO and CEO. Outdated hardware and an overdue refresh cycle in the data center have resulted in frequent but brief outages. While the company has begrudgingly accepted this SLA, the new CIO is not impressed. Regardless of the financial savings, she is expecting the operations team to deliver a much higher SLA after the migration.
+
+### Retail Innovation
+
+In the customer narrative from the getting started module, you were introduced to the Retail Innovation team within Tailwind Traders. That team was originally a start up which was acquired by Tailwind Traders. Their original CEO is now Tailwind's CTO. He still runs that division like a start up, prioritizing experimentation and innovation.
+
+The current operations management processes requires that all new innovations from that team must go through a release process. The Central Operations team within IT reviews the architecture for security, governance, and ops management concerns. Once they are comfortable with the solution, it is released into a centrally managed production environment by the Central Operations team. This process is expected to continue in the cloud.
 
 ## Identity management
 
@@ -32,4 +40,4 @@ The primary and secondary data centers have consistent IP address schemas that a
 
 Segmentation of resources between each data center treated each collection of workloads as a big block of assets. They were then divided by risk profile to create isolated and controlled segments to allow limited networking flow between workloads. Workloads that require any ingress network connection from any unprotected network are isolated into one or more de-millitarized zone (DMZ) segments of each data center.
 
-Beyond that basic organization, there are inconsistencies in the CMDB so it's difficult to tell which assets are associated with which workloads. Workload owners and incident escalation chains are well-defined for mission critical workloads, but missing for most other workloads. For less critical workloads, it's common for the identified owner to be an ex-employee of Tailspin Traders. Often times the configuration mapping references VMs that have been terminated. Likewise, over 30% of the supported assets are not clearly mapped to a single workload. During migration a dependency analysis and proper resource organization practices will be required.
+Beyond that basic organization, there are inconsistencies in the CMDB so it's difficult to tell which assets are associated with which workloads. Workload owners and incident escalation chains are well-defined for mission critical workloads, but missing for most other workloads. For less critical workloads, it's common for the identified owner to be an ex-employee of Tailwind Traders. Often times the configuration mapping references VMs that have been terminated. Likewise, over 30% of the supported assets are not clearly mapped to a single workload. During migration a dependency analysis and proper resource organization practices will be required.

@@ -15,36 +15,12 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Which platform development velocity best fits Tailwind Trader?"
     choices:
-    - content: "A"
-      isCorrect: false
-      explanation: "."
-    - content: "B"
+    - content: "Start Small & Expand"
       isCorrect: true
       explanation: "."
-    - content: "C"
+    - content: "Start with Enterprise-Scale"
       isCorrect: false
-      explanation: "."
-  - content: "TBD"
-    choices:
-    - content: "A"
-      isCorrect: true
-      explanation: "."
-    - content: "B"
-      isCorrect: false
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
-  - content: "TBD" 
-    choices:
-    - content: "A"
-      isCorrect: false
-      explanation: "."
-    - content: "B"
-      isCorrect: true
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
+      explanation: "In the last knowledge check, we reviewed why an Enterprise Operations would be problematic for Tailwind. The same answer would suggest that their development velocity would best align with a Start small approach."
+

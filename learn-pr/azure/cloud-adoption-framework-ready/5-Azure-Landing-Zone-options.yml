@@ -15,36 +15,42 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "TBD"
+  - content: "Which Implementation Option should Tailwind Trader use to start their Azure Landing Zone deployment?"
     choices:
-    - content: "A"
-      isCorrect: false
-      explanation: "."
-    - content: "B"
+    - content: "CAF Migration landing zone blueprint"
       isCorrect: true
       explanation: "."
-    - content: "C"
+    - content: "CAF Enterprise-scale foundation"
       isCorrect: false
-      explanation: "."
-  - content: "TBD"
+      explanation: "For this customer, the learning curve and complexity of an enterprise-scale approach may be a bit too steep."
+    - content: "CAF Terraform modules"
+      isCorrect: false
+      explanation: "There is no indication of existing terraform dependency in this customer narrative"
+  - content: "Which of the following indicators would make you consider an alternative implementation option?"
     choices:
-    - content: "A"
+    - content: "Openness to embrace cloud-Native operations tools & processes"
+      isCorrect: false
+      explanation: "This is a great indicator. Are there others that may stand out more?"
+    - content: "Multiple teams accessing production environments"
+      isCorrect: false
+      explanation: "This is a great indicator. Are there others that may stand out more?"
+    - content: "Need to meet 3rd compliance requirements before adopting the cloud"
+      isCorrect: false
+      explanation: "This is a great indicator. Are there others that may stand out more?"
+    - content: "Security posture requires protection for all workloads (even low risk, non-critical apps & data)"
+      isCorrect: false
+      explanation: "This is a great indicator. Are there others that may stand out more?"
+    - content: "All of the above"
       isCorrect: true
       explanation: "."
-    - content: "B"
-      isCorrect: false
-      explanation: "."
-    - content: "C"
-      isCorrect: false
-      explanation: "."
-  - content: "TBD" 
+  - content: "If all of the indicators in the prior question were observed, which would be a better starting point for Tailwind Trader?" 
     choices:
-    - content: "A"
+    - content: "CAF Migration landing zone blueprint"
       isCorrect: false
-      explanation: "."
-    - content: "B"
+      explanation: "Eventually, you could expand a start small approach to meet all of those needs. Risk and effort would be materially reduced with an Enterprise-Scale approach."
+    - content: "CAF Enterprise-scale foundation"
       isCorrect: true
       explanation: "."
-    - content: "C"
+    - content: "CAF Terraform modules"
       isCorrect: false
-      explanation: "."
+      explanation: "There is no indication of existing terraform dependency in this customer narrative"

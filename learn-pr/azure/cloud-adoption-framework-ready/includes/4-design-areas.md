@@ -37,7 +37,7 @@ Azure Policy should be used to provide guardrails and ensure continued complianc
 
 Enterprise-scale architecture shouldn't consider any abstraction layers, such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operation teams and dedicated workload operations teams. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels subject to role-based access and policy-driven controls. Azure can be used to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
-**Design impact:** RBAC and Azure Policy are used to ensure that all workload deployments adhere to governance requirements.
+**Design impact:** RBAC and Azure Policy are used to ensure that all workload deployments adhere to seperation of duty and other governance requirements.
 
 ### Application-centric and archetype-neutral
 

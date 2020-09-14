@@ -12,3 +12,62 @@ metadata:
 durationInMinutes: 20
 content: |
   [!include[](includes/3-common-operating-models.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following best describes the operating model at Tailwind Traders?"
+    choices:
+    - content: "Decentralized Operations"
+      isCorrect: false
+      explanation: "Since all production operations are supported by a centralized team, this isn't an operating model that Tailwind could support."
+    - content: "Centralized Operations"
+      isCorrect: true
+      explanation: "."
+    - content: "Enterprise Operations"
+      isCorrect: false
+      explanation: "See the last question in the knowledge check to understand why Enterprise Operations isn't a good fit for Tailwind Traders, right now."
+    - content: "Distributed Operations"
+      isCorrect: false
+      explanation: "Operations at Tailwind isn't nearly complex enough to fit this operating model."
+  - content: "In the customer narrative, there is a controlled process for release of the solutions coming from the Retail Innovation team. If that process were improved to allow that team to manage their own workloads in a controlled landing zone, which operating model would better describe the new arrangement?"
+    choices:
+    - content: "Decentralized Operations"
+      isCorrect: false
+      explanation: "The Central Operations team isn't going way, so Decentralized still wouldn't quite fit."
+    - content: "Centralized Operations"
+      isCorrect: false
+      explanation: "When additional teams are allowed to manage production operations, the centralized model becomes unruly. If that increased pace of innovation is required, Tailwind should consider an Enterprise Operations model."
+    - content: "Enterprise Operations"
+      isCorrect: true
+      explanation: "."
+    - content: "Distributed Operations"
+      isCorrect: false
+      explanation: "Fortunately, this change wouldn't suggest a distributed operations approach. Try again."
+  - content: "Before the Retail Innovation team was acquired by Tailwind Trader, they were entirely workload focused. Based on our limited knowledge, what operating model best describes how that team operated prior to the acquisition?" 
+    choices:
+    - content: "Decentralized Operations"
+      isCorrect: true
+      explanation: "."
+    - content: "Centralized Operations"
+      isCorrect: false
+      explanation: "Before the acquisition, there were no centralized support services. Try again."
+    - content: "Enterprise Operations"
+      isCorrect: true
+      explanation: "Enterprise operations would required centralized operations + innovative workload teams. Before the acquisition, there were no centralized support services."
+    - content: "Distributed Operations"
+      isCorrect: false
+      explanation: "While they may become distributed after a few more acquisitions, Tailwind isn't there today. Nor was the start up prior to acquisition."
+  - content: "Which of the following is an indicator that Centralized Operations is the better fit for Tailwind Traders?"
+    choices:
+    - content: "Openness to embrace cloud-Native operations tools & processes"
+      isCorrect: false
+      explanation: "The narrative suggests limited appetite for cloud native tools & processes. This customer needs a best of breed approach, for now."
+    - content: "Multiple teams accessing production environments"
+      isCorrect: false
+      explanation: "Only the Central Operations team has access to production. There is no need for a more complex approach to separation of duty, for now."
+    - content: "Central operations' team size"
+      isCorrect: true
+      explanation: "There are indicators that an Enterprise operations approach could provide advantages. But the strained staff & lack of well organized teams outside of central operations would add strain to the current team structure. Organizational change would be required to adopt Enterprise Operations."
+    - content: "Scope of the portfolio"
+      isCorrect: false
+      explanation: "The overall scope of the portfolio is large enough to qualify for Enterprise Operations. This is an indicator that an Enterprise operations approach might be beneficial."
