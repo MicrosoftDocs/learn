@@ -77,14 +77,12 @@ provided to make each deployment of the copy of the blueprint sample unique.
        Change as needed or leave as is.
      - **Location**: Select a region for the managed identity to be created in.
      - Azure Blueprint uses this managed identity to deploy all artifacts in the assigned blueprint.
-       To learn more, see
-       [managed identities for Azure resources](../../../../active-directory/managed-identities-azure-resources/overview.md).
      - **Blueprint definition version**: Pick a **Published** version of your copy of the blueprint
        sample.
 
    - Lock Assignment
 
-     Select the blueprint lock setting for your environment. For more information, see [blueprints resource locking](../../concepts/resource-locking.md).
+     Select the blueprint lock setting for your environment.
 
    - Managed Identity
 
@@ -102,9 +100,8 @@ provided to make each deployment of the copy of the blueprint sample unique.
    - Artifact parameters
 
      The parameters defined in this section apply to the artifact under which it's defined. These
-     parameters are [dynamic parameters](../../concepts/parameters.md#dynamic-parameters) since
-     they're defined during the assignment of the blueprint. For a full list or artifact parameters
-     and their descriptions, see [Artifact parameters table](#artifact-parameters-table).
+     parameters are dynamic parameters since
+     they're defined during the assignment of the blueprint.
 
 1. Once all parameters have been entered, select **Assign** at the bottom of the page. The blueprint
    assignment is created and artifact deployment begins. Deployment takes roughly five minutes. To

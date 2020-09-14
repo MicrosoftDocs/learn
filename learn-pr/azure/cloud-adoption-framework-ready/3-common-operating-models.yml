@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.cloud-adoption-framework-ready.3-exercise-TBD
+uid: learn.azure.cloud-adoption-framework-ready.3-common-operating-models
 title: Exercise - TBD
 metadata:
   title: Exercise - TBD
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |
-  [!include[](includes/3-exercise-TBD.md)]
+  [!include[](includes/3-common-operating-models.md)]
