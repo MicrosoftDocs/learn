@@ -36,6 +36,8 @@ We'll use the user documents you've created for your online retailer application
     }
     ```
 
+    Examining this code, you will notice that we are once again employing Project Reactor's declarative dataflow programming model, this time to handle query response pages asynchronously. We demonstrate an async approach because in a real use-case, they may be hundreds or thousands of responses to a query, and aggregating query responses can be a CPU intensive task which benefits from the increased thread-efficiency of async programming. In short we want high throughput of handling query response pages, or high pages/sec per thread. `queryitems` returns the `CosmosPagedFlux` instance `pagedFluxResponse`, and `pagedFluxResponse.byPage(preferredPageSize)` creates a `Flux` which is a source of async page events. The pipeline of operations inside of `.flatMap( ... ).blockLast();` operates asynchronously and in pseudo-parallel on the query response page associated with each event emitted by the `Flux`.
+
 1. Copy and paste the following code to your `basicOperations` method, **before** the document deletion code.
 
     ```java

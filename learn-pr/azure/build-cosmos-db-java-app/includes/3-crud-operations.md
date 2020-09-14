@@ -64,9 +64,9 @@ Next we will create some entities and perform some basic CRUD operations on the 
     }
     ```
 
-    Observe that the access methods for the **id**, **userId**, etc. fields are *implicit* (not defined in code.) This is possible because we use Project Lombok **@Data** annotation to create them automatically.
+    Observe that the access methods for the **id**, **userId**, etc. fields are *implicit* (not defined in code.) This is possible because we use Project Lombok @**Data** annotation to create them automatically.
 
-    The **@NoArgsConstructor** and **@AllArgsConstructor** annotations will, respectively, generate a constructor with no arguments that sets default field values, and another constructor with a full set of arguments to specify all field values directly.
+    The @**NoArgsConstructor** and @**AllArgsConstructor** annotations will, respectively, generate a constructor with no arguments that sets default field values, and another constructor with a full set of arguments to specify all field values directly.
 
     Note **User** has an **id** property; all Azure Cosmos DB documents require an **id** property, therefore all POJO we intend to serialize into JSON documents must have an **id** field.
 
@@ -175,6 +175,22 @@ Next we will create some entities and perform some basic CRUD operations on the 
     ```
 
     You may see some additional text emitted by the logger as well, for example timestamps.
+
+1. Congratulations! You have created your first data in Azure Cosmos DB from a Java application. Let's pause and evaluate what you did here.
+
+   In **basicOperations** there are three new actions - create the *maxaxam* `User` instance, create the *nelapin* `User` instance, and finally call `createUserDocumentsIfNotExist` passing in *maxaxam* and *nelapin* in a list. Calling `createUserDocumentsIfNotExist` inserts both `User` instances as items/documents in Azure Cosmos DB. In having you pass the `User` instances as a list, our intent is to model a performant method for ingesting POJOs quickly into Azure Cosmos DB, using minimum compute resources. `createUserDocumentsIfNotExist` implements efficient async insertion of an list of POJOs. 
+
+   Suppose that our goal is to maximize requests/second per thread. For comparison, the sync approach to writing `createUserDocumentsIfNotExist` - ignoring for a moment the `readItem` check - would be to iterate over each `User` in `users`, and for each `User` `u` make a *blocking* call to `createItem` as shown:
+
+    ```java
+    container.createItem(u, new PartitionKey(u.getUserId()), new CosmosItemRequestOptions()).block(); // <= Note the .block() which hangs until request response.
+    ```
+
+    This sync style implements an intuitive process - *issue request*, *wait for response*, *issue next request*, ... However `createUserDocumentsIfNotExist` does not employ this approach because blocking calls will essentially waste CPU cycles during the request response time, causing low requests/second. You may get around this requests/second issue by spawning multiple threads to make parallel blocking request calls. This will bring an execution-time improvement however if your goal is to be thrifty with thread resources, then this is still wasteful - each thread hangs during request response time when it could instead be multitasking to something else, giving you low requests/second per thread.
+
+    For this reason, and for the purpose of showing you thread-efficient insertion of Java POJOs, we have instead provided an async example of document insertion. Azure Cosmos DB Java SDK v4 async support comes from [Project Reactor](https://projectreactor.io/), a Java framework which provides a stream-based, *declarative dataflow* programming model for async event-driven programming. `createDocumentsIfNotExist` implements Project Reactor async programming. In `createUserDocumentsIfNotExist`, `Flux.fromIterable(users)` is a Project Reactor factory method which creates a `Flux` instance which is a source of async events. In this case, each async "event" includes a `User` instance argument, and the `Flux` contains two such events, one for *maxaxam* and one for *nelapin*. The code inside of `.flatMap( ... ).blockLast();` defines a *pipeline* of sequential operations to be performed on the events emitted by the `Flux`; `createItem` is one of those operations, and the idea is that this pipeline is more or less identical to the synchronous implementation *except we do not block on the `createItem` call*. Specifically, the call to `blockLast()` *subscribes* to the assembled pipeline, causing the `Flux` to *asynchronously* emit its two events, and then the pipeline inside of `.flatMap( ... ).blockLast();` processes each of those events in a pseudo-parallel fashion. When one request is issued and waits for a response, Project Reactor will process other requests in the background, *which is the critical factor in maxing out requests/second per thread*.
+
+    Now that we have demonstrated efficient async database requests with Project Reactor, for simplicity the rest of this lab will use blocking (sync) calls. To learn more about Project Reactor, take a look at the Azure Cosmos DB [Reactor Pattern Guide](https://github.com/Azure-Samples/azure-cosmos-java-sql-api-samples/blob/master/reactor-pattern-guide.md).
 
 ## Read documents
 
