@@ -74,6 +74,8 @@ These two GitHub Action definitions are stored in the repository's *.github/work
 
 ## Trigger a deployment
 
+To trigger a deployment, you'll increment the `appVersion` in the coupon service's Helm chart. Helm charts are used to define the service specification in a YAML template format.
+
 1. On the **Code** tab, edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
     ```yml
@@ -133,7 +135,7 @@ These two GitHub Action definitions are stored in the repository's *.github/work
 
     In the preceding output, notice that a new `coupon` pod was created. While the old pod is still running and when the new pod is ready, the old one is terminated. This should make the transition to the new version as smooth as possible.
 
-1. Press <kbd>Ctrl+C</kbd> to exit `kubectl`.
+1. One the new pod's status is *Running* and its *Ready* status displays `1/1`, press <kbd>Ctrl+C</kbd> to exit `kubectl`.
 1. Run the following command to check the coupon service deployment history:
 
     ```bash
