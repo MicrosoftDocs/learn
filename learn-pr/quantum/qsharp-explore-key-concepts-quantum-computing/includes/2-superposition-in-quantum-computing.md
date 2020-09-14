@@ -39,7 +39,7 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 
 ## What are linear operators?
 
-An *operator* (sometimes known as *gate*) is a function that transforms the state of a quantum system to another state.
+An *operator* is a function that transforms the state of a quantum system to another state.
 
 $$ A \ket{\psi} = \ket{\psi'}$$
 
