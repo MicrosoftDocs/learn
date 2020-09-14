@@ -5,13 +5,13 @@ metadata:
   title: Knowledge check
   description: Check your knowledge.
   ms.date: 09/22/2020
-  author: jamcneil
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-knowledge-check.md)]
+  [!include[](includes/4-Azure-Landing-Zone-options.md)]
 quiz:
   title: Check your knowledge
   questions:
