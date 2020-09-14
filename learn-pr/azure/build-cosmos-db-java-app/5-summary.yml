@@ -27,7 +27,7 @@ quiz:
       explanation: "It is trivial to find the URI and key in the **Keys** blade of the Azure Portal."
     - content: "Using the Azure CLI"
       isCorrect: false
-      explanation: "While this approach is a good choice, especially since Visual Studio Code has a built-in terminal, it does demand knowledge of the required commands. There is a more convenient alternative.
+      explanation: "While this approach is a good choice, especially since Visual Studio Code has a built-in terminal, it does demand knowledge of the required commands. There is a more convenient alternative."
  
   - content: "When working with Azure Cosmos DB's SQL API, which of these packages can be used to perform CRUD operations from a Java application?"
     choices:
