@@ -52,7 +52,7 @@ quiz:
       isCorrect: false
       explanation: "Before the acquisition, there were no centralized support services. Try again."
     - content: "Enterprise Operations"
-      isCorrect: true
+      isCorrect: false
       explanation: "Enterprise operations would required centralized operations + innovative workload teams. Before the acquisition, there were no centralized support services."
     - content: "Distributed Operations"
       isCorrect: false
