@@ -231,17 +231,17 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 1. Add the `replaceUserDocument` method after the `readUserDocument` method in the `CosmosApp.java` file.
 
     ```java
-    private static CosmosItemResponse<User> updatedUserDocument(User user)
-    {
-        try
-        {
-            CosmosItemResponse<User> userReplaceResponse = container.replaceItem(user, user.getId(), new PartitionKey(user.getUserId()));
-            logger.info("Replaced last name for {}", updatedUser.getLastName());
-            return userReplaceResponse;
-        }
-        catch (CosmosException de)
-        {
-            logger.error("Failed to read {}", user.getUserId());
+    /**
+     * Take in a Java POJO argument, extract id and partition key,
+     * and replace the existing document with the same id and partition key to match.
+     * @param user User POJO representing the document update.
+     */
+    private static void replaceUserDocument(final User user) {
+        try {
+            CosmosItemResponse<User> userReplaceResponse = container.replaceItem(user, user.getId(), new PartitionKey(user.getUserId())).block();
+            logger.info("Replaced User {}", user.getId());
+        } catch (CosmosException de) {
+            logger.error("Failed to replace User {}", user.getUserId());
         }
     }
     ```
