@@ -215,7 +215,7 @@ instead of one qubit three times.
       operations perform operations and measurements on multiple qubits with
       less code. Q# libraries offer many different operations and functions that make writing
       quantum programs more efficient.
-    * The [BoolArrayAsInt](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) fucntions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer.
+    * The [BoolArrayAsInt](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer.
 
 1. From the terminal, run `dotnet run`.
 

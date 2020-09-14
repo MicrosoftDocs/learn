@@ -42,7 +42,7 @@ to interfere, resulting in different effects on the overall state. There are two
 - **Destructive interference**
 
     Two waves subtract to decrease the amplitude of the resulting wave. Again,
-    in our daily experience, noise-cancelling headphones use an external
+    in our daily experience, noise-canceling headphones use an external
     microphone to catch the noise in the environment. It then reproduces sound
     waves that have the same magnitude but opposite phase to the noise and plays
     them in the inner speakers to cancel the noise for the listener. This

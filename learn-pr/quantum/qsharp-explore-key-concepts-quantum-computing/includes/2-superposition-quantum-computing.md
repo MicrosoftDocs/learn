@@ -147,7 +147,8 @@ it doesn't mean that the information that we can store in a superposition grows
 exponentially with the number of qubits, since we can't obtain the complete
 information of the superposition but just the results after a measurement.
 
-![Figure explaining the scale of parameters with the number of qubits](../media/2-scale.png)
+![Figure explaining the scale of parameters with the number of qubits. The following text can be read: Not only does the number of possible configurations grow exponentially with the number of qubits as two to the N, the number of possible combinations of amplitude is infinite, as long as their squares---the probabilities---add up to 1. N qubits will have
+two to the N possible configurations in superposition.](../media/2-scale.png)
 
 In the example state we produced for the quantum random bit generator,
 $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability

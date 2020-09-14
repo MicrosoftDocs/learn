@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.3-explore-superposition-with-qsharp
-title: Exercise - Explore superposition with Q#
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.8-introduction-quantum-algorithms
+title: Introduction to quantum algorithms
 metadata:
-  title: Exercise - Explore superposition with Q#
-  description: Illustrates how to use Q# to build and inspect different superpositions.
+  title: Introduction to quantum algorithms
+  description: Short introduction to several famous quantum algorithms.
   ms.date: 09/09/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 11
+durationInMinutes: 12
 content: |
-  [!include[](includes/3-explore-superposition-with-qsharp.md)]
+  [!include[](includes/8-introduction-quantum-algorithms.md)]
