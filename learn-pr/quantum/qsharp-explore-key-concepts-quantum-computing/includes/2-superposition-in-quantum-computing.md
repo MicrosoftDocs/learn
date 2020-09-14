@@ -76,17 +76,24 @@ quantum mechanics and therefore of quantum computing.
 > Note that $H$ (without the hat) refers to the quantum operator,
 > also known as the *Hadamard gate*, that you used to create quantum
 > superpositions, while $\hat H$ (with the hat) refers to the Hamiltonian
-> operator that is part of the Schrödinger equation.
+> operator that is part of the Schrödinger equation. 
 
 > [!NOTE]
 > In this module and the documentation for Q# we always use $\LaTeX$
-> fonts to design mathematical linear operations that take qubit states to qubit
-> states. On the other hand, we use the `code` font to represent Q# operations
+> fonts to design mathematical **linear operators** that take qubit states to qubit
+> states. On the other hand, we use the `code` font to represent **Q# operations**
 > that take qubit registers as inputs to transform their state. For example, the
 > linear operator $H$ maps the input state $\ket{0}$ to the state
 > $H\ket{0}=\frac{1}{\sqrt2}(\ket{0}+\ket{1})$, while the operation `H` acts on
 > a qubit as `H(qubit)` to change the state of `qubit` from $\ket{0}$ to
 > $\frac{1}{\sqrt2}(\ket{0}+\ket{1})$.
+
+> [!NOTE]  
+> Sometimes people talk about **quantum gates** instead of **operations**, 
+> in analogy to classical logic gates. This is rooted in the early 
+> days of quantum computing when algorithms were merely a theoretical 
+> construct and visualized as diagrams similarly to circuit diagrams in classical computing.
+
 
 ## Quantum computers are probabilistic
 
