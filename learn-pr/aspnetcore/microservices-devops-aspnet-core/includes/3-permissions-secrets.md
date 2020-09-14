@@ -52,7 +52,7 @@ You've verified the app is deployed and functional. The coupon code feature is s
 
 ## Set up permissions to deploy from GitHub
 
-GitHub Actions will be used to publish the container image to ACR. You must set up permissions so the GitHub Action runner can connect to Azure. Complete the following steps:
+GitHub Actions will be used to publish the container image to ACR. To configure permissions so the GitHub Actions runner can connect to Azure, complete the following steps:
 
 1. Run the following command to create a service principal to allow access from GitHub:
 
@@ -78,11 +78,11 @@ GitHub Actions will be used to publish the container image to ACR. You must set 
     }
     ```
 
-1. Copy the JSON output from the command shell. Be sure not to include the text output above the JSON. You'll need this and the credentials for the GitHub Action in next step.
+1. Copy the JSON output from the command shell. Be sure not to include the text output above the JSON. You'll need the JSON and the credentials for the GitHub Action in next step.
 
 ## Create secrets
 
-The service principal and the credentials for the container registry are sensitive authentication credentials that the GitHub Actions runner will need. Sensitive information should be stored in a secure location that is only accessible to the repository maintainers and the GitHub Actions runner.
+The service principal and the credentials for the container registry are sensitive information. The GitHub Actions runner will need the credentials to interact with ACR and AKS. As a best practice, sensitive information should be stored as encrypted *secrets* in a secure location. The secrets should be managed by repository administrators and accessed by the GitHub Actions runner. Complete the following steps to securely store the sensitive information as environment variables in your repository:
 
 1. In the GitHub repository you forked, go to **Settings** > **Secrets**.
 1. Select the **New secret** button.

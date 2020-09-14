@@ -140,7 +140,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
     webstatus-8887f6f55-bvq76         1/1     Running             0          31m
     ```
 
-    In the preceding output, notice that a new `coupon` pod was created. While the old pod is still running and when the new pod is ready, the old one is terminated. This should make the transition to the new version as smooth as possible.
+    In the preceding output, notice that a new `coupon` pod was created. While the old pod is still running and when the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
 1. Once the new pod's *Ready* status displays `1/1`, press <kbd>Ctrl+C</kbd> to exit `kubectl`.
 1. Run the following command to check the coupon service deployment history:

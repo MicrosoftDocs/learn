@@ -50,8 +50,7 @@ quiz:
         - content: Getting software operation metrics
           isCorrect: false
           explanation: "TODO: Explanation"
-        - content: Cycling fast from development to operation metrics to learn faster make
-            data-based decisions.
+        - content: Cycling fast from development to operation metrics to make data-based decisions.
           isCorrect: true
           explanation: "TODO: Explanation"
     - content: What do you need to ensure a pod is replaced with a `helm upgrade` chart command?

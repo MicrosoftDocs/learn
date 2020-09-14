@@ -24,7 +24,7 @@ The preceding script:
     az ad sp list --show-mine --query "[?contains(displayName,'eshop-learn-sp')].appId" --output tsv
     ```
 
-  The identifiers are filtered to those:
+  The service principals are filtered to those identifiers:
 
   - Owned by the current user.
   - Containing the string `eshop-learn-sp` in the display name.

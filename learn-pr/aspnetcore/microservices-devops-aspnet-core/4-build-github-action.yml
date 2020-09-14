@@ -2,7 +2,7 @@
 uid: learn.microservices-devops-aspnet-core.4-build-github-action
 metadata:
   title: Exercise - Create a GitHub Action to build a container image
-  description: Implement a GitHub Action to build and deploy a Docker image to ACR.
+  description: Implement and test a GitHub Action to build and deploy a Docker image to ACR.
   ms.date: 07/08/2020
   author: scottaddie
   ms.author: scaddie

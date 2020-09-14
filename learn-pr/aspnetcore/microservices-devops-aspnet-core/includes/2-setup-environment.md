@@ -1,4 +1,4 @@
-In this unit, you'll create an initial AKS deployment of the simplified version of *eShopOnContainers* with a public IP address over HTTP. This step requires user input, so watch for the prompt in Azure Cloud Shell.
+In this unit, you'll deploy the simplified version of *eShopOnContainers* to Azure Kubernetes Service (AKS). This step requires user input. Watch for the prompt in the Azure Cloud Shell's command shell.
 
 [!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
@@ -17,19 +17,17 @@ In this unit, you'll create an initial AKS deployment of the simplified version 
 
     * Installs the required version of the .NET Core SDK.
     * Clones the *:::no-loc text="eShopOnContainers":::* app from your fork of the GitHub repository.
-    * Provisions Azure Kubernetes Service (AKS) and Azure Container Registry (ACR) resources.
+    * Provisions AKS and Azure Container Registry (ACR) resources.
     * Launches the Cloud Shell editor to view the code.
     * Deploys the containers to AKS.
     * Displays connection information upon completion.
 
     [!INCLUDE[Instructions for restoring the default Cloud Shell configuration](../../includes/microservices/revert-cloud-shell-configuration.md)]
 
-The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
+The script takes several minutes to complete. It deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
 This module focuses on adding CI/CD for the coupon service depicted in the preceding diagram.
-
-The script takes several minutes to complete.
 
 [!INCLUDE [A note about non-blocking script warnings](../../includes/microservices/non-blocking-warnings-note.md)]
