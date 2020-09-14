@@ -12,4 +12,5 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-None
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

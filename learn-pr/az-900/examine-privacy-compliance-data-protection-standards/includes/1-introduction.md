@@ -26,3 +26,8 @@ After completing this module, you'll be able to:
 * Access the Microsoft Privacy Statement, the Online Services Terms, and the Data Protection Addendum to learn what personal data Microsoft collects, how Microsoft uses it, and for what purposes.
 * Gain insight into regulatory standards and compliance on Azure from the Trust Center and from the Azure compliance documentation.
 * Explain Azure capabilities that are specific to government agencies.
+
+## Prerequisites
+
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

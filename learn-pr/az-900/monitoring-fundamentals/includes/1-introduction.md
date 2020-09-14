@@ -4,7 +4,7 @@ Tailwind Traders, a traditional brick-and-mortar retailer who has experienced ex
 
 In this module, you will learn about Microsoft's different monitoring solutions, and will analyze decision criteria that experts use to select the right service for a given scenario.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you will be able to:
 
@@ -12,4 +12,5 @@ By the end of this module, you will be able to:
 
 ## Prerequisites
 
-None
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

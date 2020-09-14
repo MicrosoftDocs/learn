@@ -27,3 +27,8 @@ After completing this module, you'll be able to:
 * Explain the difference between authentication and authorization.
 * Describe how Azure Active Directory provides identity and access management.
 * Explain the role single sign-on (SSO), multi-factor authentication (MFA), and Conditional Access play in managing user identity.
+
+## Prerequisites
+
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

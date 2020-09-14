@@ -20,3 +20,8 @@ After completing this module, you'll be able to:
 * Describe the different ways you can purchase Azure products and services.
 * Use the Pricing calculator to estimate the monthly cost of running your cloud workloads.
 * Define some of the major factors that affect total cost and apply recommended practices to minimize cost.
+
+## Prerequisites
+
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

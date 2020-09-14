@@ -20,7 +20,8 @@ abstract: |
   * Control and audit how your resources are created by using Azure Policy.
   * Enable governance at scale across multiple Azure subscriptions by using Azure Blueprints.
 prerequisites: |
-  There are no prerequisites for this course, however students with some IT knowledge or experience will find the concepts easier to understand.
+  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with cloud computing is helpful, but isn't necessary
 iconUrl: /learn/achievements/describe-azure-governance-methodologies.svg
 levels:
 - beginner

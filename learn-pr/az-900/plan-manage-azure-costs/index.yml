@@ -17,7 +17,8 @@ abstract: |
   * Use the Pricing calculator to estimate the monthly cost of running your cloud workloads.
   * Define some of the major factors that affect total cost and apply recommended practices to minimize cost.
 prerequisites: |
-  There are no prerequisites for this module. However, having some IT knowledge or experience will make the concepts easier to understand.
+  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with cloud computing is helpful, but isn't necessary
 iconUrl: /learn/achievements/review-planning-managing-costs.svg
 levels:
 - beginner

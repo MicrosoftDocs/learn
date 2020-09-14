@@ -13,7 +13,10 @@ summary: Examine Azure's serverless technologies and choose the right service fo
 abstract: |
   By the time you finish this module, you will be able to:
   - Choose the right serverless computing technology for your business scenario.  
-prerequisites: None
+prerequisites: |
+  - You should understand the idea of orchestration and workflows.
+  - You should understand what an API, or Application Programming Interface is.
+  - You should be familiar with other Microsoft products at a high level, like Dynamics 365 and Office 365.
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

@@ -13,7 +13,9 @@ summary: Survey the management, administration, and reporting tools for Azure an
 abstract: |
   By the end of this module, you will be able to:
   - Choose the correct Azure management tool to address different kinds of technical needs and challenges.
-prerequisites: None
+prerequisites: |
+  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with cloud computing is helpful, but isn't necessary
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

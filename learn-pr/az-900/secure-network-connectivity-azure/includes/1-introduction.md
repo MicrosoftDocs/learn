@@ -20,3 +20,8 @@ By the end of this module, you'll able to:
 * Explain how Azure Firewall enables you to control what traffic is allowed on the network.
 * Configure network security groups to filter network traffic to and from Azure resources within a Microsoft Azure Virtual Network.
 * Explain how Azure DDoS Protection helps protect your Azure resources from DDoS attacks.
+
+## Prerequisites
+
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

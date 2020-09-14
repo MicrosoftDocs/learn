@@ -6,11 +6,12 @@ In this module, you'll help Tailwind Traders select the right Azure IoT service 
 
 By the end of this module, you will be able to choose the best Azure IoT service for a given business scenario.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you will be able to:
 - Choose the best Azure IoT service for a given business scenario.
 
 ## Prerequisites
 
-None
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

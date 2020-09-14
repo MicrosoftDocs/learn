@@ -17,7 +17,8 @@ abstract: |
   * Gain insight into regulatory standards and compliance on Azure from the Trust Center and from the Azure compliance documentation.
   * Explain Azure capabilities that are specific to government agencies.
 prerequisites: |
-  There are no prerequisites for this module, however students with some IT knowledge or experience will find the concepts easier to understand.
+  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with cloud computing is helpful, but isn't necessary
 iconUrl: /learn/achievements/examine-privacy-compliance-data-protection-standards.svg
 levels:
 - beginner

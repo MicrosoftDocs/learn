@@ -6,12 +6,13 @@ In this module, you will learn about two serverless computing solutions on Azure
 
 By the end of this module, you will be able to choose the right serverless computing service from Azure for a specific business scenario.
 
-## Learning Objectives
+## Learning objectives
 
 By the time you finish this module, you will be able to:
 - Choose the right serverless computing technology for your business scenario.
 
 ## Prerequisites
+
 - You should understand the idea of orchestration and workflows.
 - You should understand what an API, or Application Programming Interface is.
 - You should be familiar with other Microsoft products at a high level, like Dynamics 365 and Office 365.

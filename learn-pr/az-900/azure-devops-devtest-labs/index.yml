@@ -15,7 +15,7 @@ abstract: |
   - Choose the best software development process tools and services for a given business scenario.
 prerequisites: |
   - A development or operations background is valuable but not required.
-  - It would be helpful for you to already be familiar with the concept of DevOps, it's larger purpose in the organization, it's goals, outcomes, etc.
+  - It would be helpful for you to already be familiar with the concept of DevOps, it's larger purpose in the organization, it's goals, outcomes, and so on.
   - Likewise, familiarity with concepts like the Software Development Lifecycle, Source Code Management / Version Control, the different forms of testing, Continuous Integration / Continuous Delivery, Continuous Deployment, Infrastructure as Code, and so on, will help you immediately understand the value of the tools covered in this module.
 ratingEnabled: true
 iconUrl: /learn/achievements/generic-badge.svg

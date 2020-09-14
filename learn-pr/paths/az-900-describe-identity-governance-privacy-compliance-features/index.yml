@@ -24,7 +24,9 @@ summary: |
     - [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/)
     - Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features
     - [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/)
-prerequisites: None
+prerequisites: | 
+  - You should be familiar with basic computing concepts and terminology
+  - You should be familiar with cloud computing is helpful, but isn't necessary
 iconUrl: /learn/achievements/examine-microsoft-azure-security-privacy-compliance-trust.svg
 levels:
 - beginner

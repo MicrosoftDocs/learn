@@ -22,3 +22,8 @@ After completing this module, you'll be able to:
 * Collect and act on security data from many different sources by using Azure Sentinel.
 * Store and access sensitive information such as passwords and encryption keys securely in Azure Key Vault.
 * Manage dedicated physical servers to host your Azure VMs for Windows and Linux by using Azure Dedicated Host.
+
+## Prerequisites
+
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary

@@ -18,3 +18,8 @@ After completing this module, you'll be able to:
 * Identify factors, such as the service tier you choose, that can impact an SLA.
 * Combine SLAs to compute a composite SLA.
 * Describe the service lifecycle in Azure, including how to access new capabilities that are coming to Azure.
+
+## Prerequisites
+
+- You should be familiar with basic computing concepts and terminology
+- You should be familiar with cloud computing is helpful, but isn't necessary
