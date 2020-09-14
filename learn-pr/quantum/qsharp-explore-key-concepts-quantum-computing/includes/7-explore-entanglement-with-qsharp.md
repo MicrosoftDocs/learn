@@ -33,16 +33,13 @@ $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
    $$H \ket{0_c}= \frac{1}{\sqrt{2}}(\ket{0_c}+\ket{1_c})$$
    
    > [!NOTE]
-   > We use the subscripts ${}_c$ and ${}_t$ to specify the control and target qubit in for the $CNOT$ operation.
-   > By convention the first qubit alwasys refers to the control qubit and the second qubit refers to the target qubit.
+   > We use the subscripts ${}_c$ and ${}_t$ to specify the control and target qubits for the $CNOT$ operator.
+   > By convention the first qubit always refers to the control qubit and the second qubit always refers to the target qubit.
 
 1. Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
 the target qubit in the state $\ket{0_t}$.
 
    $$CNOT \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c0_t})=\frac{1}{\sqrt2}(CNOT\ket{0_c0_t}+CNOT\ket{1_c0_t})= \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$$
-
-
-
 
 To implement this in Q#:
 
@@ -81,6 +78,19 @@ To implement this in Q#:
    expect if the state were entangled. However, to check entanglement you must
    run this code multiple times to see that it wasn't just luck. Try to run the
    code several times to see if the results are consistent.
+   
+The state $\frac1{\sqrt2}(\ket{00}+\ket{11})$ is not the only entangled state
+you can obtain applying the operators $H$ and $CNOT$ sequentially. For example,
+you can obtain the state $\frac1{\sqrt2}(\ket{01}+\ket{10})$ if your initial
+state is $\ket{01}$. The following table summarizes the four possiblities:
+
+| Initial state  | After applying $H$ to the control qubit        | After applying $CNOT$                           |   |   |
+|----------------|------------------------------------------------|-------------------------------------------------|---|---|
+| $\ket{0_c0_t}$ | $(\frac{1}{\sqrt{2}}\ket{0_c0_t}+\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t)+\ket{1_c1_t})$ |   |   |
+| $\ket{0_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}+\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t)+\ket{1_c0_t})$ |   |   |
+| $\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}-\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t)-\ket{1_c1_t})$ |   |   |
+| $\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}-\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t)-\ket{1_c0_t})$ |   |   |
+   
 
 ### Controlled operations
 
