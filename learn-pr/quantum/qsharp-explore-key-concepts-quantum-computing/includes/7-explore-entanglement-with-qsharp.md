@@ -86,10 +86,10 @@ state is $\ket{01}$. The following table summarizes the four possiblities:
 
 | Initial state  | After applying $H$ to the control qubit        | After applying $CNOT$                           |   |   |
 |----------------|------------------------------------------------|-------------------------------------------------|---|---|
-| $\ket{0_c0_t}$ | $(\frac{1}{\sqrt{2}}\ket{0_c0_t}+\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}+\ket{1_c1_t})$ |   |   |
-| $\ket{0_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}+\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}+\ket{1_c0_t})$ |   |   |
-| $\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}-\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}-\ket{1_c1_t})$ |   |   |
-| $\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}-\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}-\ket{1_c0_t})$ |   |   |
+| $\ket{0_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}+\ket{1_c0_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}+\ket{1_c1_t})$ |   |   |
+| $\ket{0_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}+\ket{1_c1_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}+\ket{1_c0_t})$ |   |   |
+| $\ket{1_c0_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}-\ket{1_c0_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c0_t}-\ket{1_c1_t})$ |   |   |
+| $\ket{1_c1_t}$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}-\ket{1_c1_t})$ | $\frac{1}{\sqrt{2}}(\ket{0_c1_t}-\ket{1_c0_t})$ |   |   |
    
 
 ### Controlled operations
