@@ -13,4 +13,4 @@ By the end of this module, you will be able to:
 ## Prerequisites
 
 - You should be familiar with the idea of an Application Programming Interface, or API. Programmers use APIs to utilize functionality contained in code libraries.
-- You should be familiar with what a "web API" is. when those code libraries are accessible from servers that accept requests via HTTP. Also, a "web API endpoint" is the location of the code library and that REST APIs refer to the design of the URL style used to expose functionality that can be accessed programmatically.
+- You should be familiar with what a "web API" is. You should understand that a web API is an API that is accessible from servers that accept requests via HTTP. Also, you should understand that a "web API endpoint" is the location of the code library and that REST APIs refer to the design of the URL style used to expose the API's functionality.
