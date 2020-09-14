@@ -30,12 +30,12 @@ $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
 
 1. First we prepare a superposition in the control qubit applying $H$.
 
-   $$H \ket{0}= \frac{1}{\sqrt{2}}(\ket{0}+\ket{1}_{\text{control}})$$
+   $$H \ket{0}_c= \frac{1}{\sqrt{2}}(\ket{0}_c+\ket{1}_c)$$
 
 1. Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
-the target qubit in the state $\ket{0}$.
+the target qubit in the state $\ket{0}_t$.
 
-   $$CNOT \frac{1}{\sqrt2}(\ket{00}+\ket{10})=\frac{1}{\sqrt2}(CNOT\ket{00}+CNOT\ket{10})= \frac{1}{\sqrt2}(\ket{00}+\ket{11})$$
+   $$CNOT \frac{1}{\sqrt2}(\ket{0}_c\ket{0}_t+\ket{1}_c\ket{0}_t)=\frac{1}{\sqrt2}(CNOT\ket{0}_c\ket{0}_t+CNOT\ket{1}_c\ket{0}_t)= \frac{1}{\sqrt2}(\ket{0}_c{0}_t+\ket{1}_c{1}_t)$$
 
 To implement this in Q#:
 
