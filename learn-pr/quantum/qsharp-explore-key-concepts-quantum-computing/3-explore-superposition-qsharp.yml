@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.5-explore-interference-with-qsharp
-title: Exercise - Explore interference with Q#
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.3-explore-superposition-qsharp
+title: Exercise - Explore superposition with Q#
 metadata:
-  title: Exercise - Explore interference with Q#
-  description: Illustrates interference in quantum computing with different Q# examples.
+  title: Exercise - Explore superposition with Q#
+  description: Illustrates how to use Q# to build and inspect different superpositions.
   ms.date: 09/09/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 8
+durationInMinutes: 11
 content: |
-  [!include[](includes/5-explore-interference-with-qsharp.md)]
+  [!include[](includes/3-explore-superposition-qsharp.md)]

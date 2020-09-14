@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.8-introduction-to-quantum-algorithms
-title: Introduction to quantum algorithms
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.2-superposition-quantum-computing
+title: Superposition in quantum computing
 metadata:
-  title: Introduction to quantum algorithms
-  description: Short introduction to several famous quantum algorithms.
+  title: Superposition in quantum computing
+  description: Explanation of what is quantum superposition and provides physical context.
   ms.date: 09/09/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 12
+durationInMinutes: 6
 content: |
-  [!include[](includes/8-introduction-to-quantum-algorithms.md)]
+  [!include[](includes/2-superposition-quantum-computing.md)]

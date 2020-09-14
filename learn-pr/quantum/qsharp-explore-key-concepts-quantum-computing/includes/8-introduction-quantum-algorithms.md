@@ -7,7 +7,7 @@ We outline how they use superposition, interference, and entanglement to achieve
 First, let's introduce the concept of *quantum oracle*. In many problems, you're
 interested in solving a problem while making the fewest number of evaluations of
 a function $f:\\{ 0,1 \\}^n \rightarrow \\{0,1\\}^m$. For example, if you're
-checking wether a number $x$ fulfills a property, you can encode the problem in a
+checking whether a number $x$ fulfills a property, you can encode the problem in a
 binary function $f: \\{0,1\\}^n \rightarrow \\{0,1\\}$. The function $f(x)$ can
 be considered as a black-box that outputs $1$ if the number $x$ fulfills the
 property, and $0$ otherwise. This can be used, for example, to brute-force
@@ -123,16 +123,18 @@ of the function.
 
 The algorithm consists of three parts:
 
-1. A classical part that transforms the factoring problem into a problem of
+- A classical part that transforms the factoring problem into a problem of
    finding the period $r$ of a periodic function $f(x)=a^x \mod N$, where $a$ is
    a random number whose greater common divisor with $N$ is $1$.
 
-1. A quantum part that finds the period $r$ using the quantum Fourier transform
+- A quantum part that finds the period $r$ using the quantum Fourier transform
    or iterative phase estimation.
+
+- A classical part that infers the factors of $N$ from the period $r$ using number theory techniques.
 
 Shor's algorithm succeeds in finding a prime factor with high probability but
 it can fail. However, repeating the algorithm several times until it finds the
-prime factors is exponentially faster than the best known classical algorithm. 
+prime factors is exponentially faster than the best known classical algorithm.
 
 If you want to know how to implement this algorithm with the Q# high-level
 functionality, you can also check the [Q# sample for integer

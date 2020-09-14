@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.4-interference-in-quantum-computing
-title: Interference in quantum computing
+uid: learn.quantum.qsharp-explore-key-concepts-quantum-computing.7-explore-entanglement-qsharp
+title: Exercise - Explore entanglement with Q#
 metadata:
-  title: Interference in quantum computing.
-  description: Explanation of quantum interference in the context of quantum computing.
+  title: Exercise - Explore entanglement with Q#
+  description: Illustrates entanglement in quantum computing with different Q# examples.
   ms.date: 09/09/2020
   author: KittyYeungQ
   ms.author: kitty
@@ -20,6 +20,6 @@ metadata:
     variance: "\\operatorname{Var}"
     defeq: "\\mathrel{:=}"
     dd: "\\mathrm{d}"
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
-  [!include[](includes/4-interference-in-quantum-computing.md)]
+  [!include[](includes/7-explore-entanglement-qsharp.md)]
