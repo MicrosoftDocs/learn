@@ -21,7 +21,7 @@ You can begin exploring these services (when ready):
 > To display these URLs again, run the following command:
 >
 > ```bash
-> cat ~/clouddrive/aspnet-learn/deployment-urls.txt
+> cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
 > ```
 
 Even though the app has been deployed, it might take a few minutes to come online. Verify that the app is deployed and online with the following steps:
