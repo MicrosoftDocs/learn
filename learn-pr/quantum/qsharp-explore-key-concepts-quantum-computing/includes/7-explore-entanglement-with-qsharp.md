@@ -80,7 +80,7 @@ To implement this in Q#:
    code several times to see if the results are consistent.
    
 The state $\frac1{\sqrt2}(\ket{00}+\ket{11})$ is not the only entangled state
-you can obtain applying the operators $H$ and $CNOT$ sequentially. For example,
+you can obtain by applying the operators $H$ and $CNOT$ sequentially. For example,
 you can obtain the state $\frac1{\sqrt2}(\ket{01}+\ket{10})$ if your initial
 state is $\ket{01}$. The following table summarizes the four possiblities:
 
