@@ -77,7 +77,7 @@ You can trace the code to see how this works:
 - `shiftAmount` = 1
 
 | Loop<br>iteration | Value of <br>`letter` | Value of <br>`decodedLetter` |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
-|---------------|--------|---------------|-------------|---------------|
+|---------------|--------|---------------|-------------|
 | 1 | 'h' | 'i' | |
 | 2 | 'e' | 'f' | |
 | 3 | 'l' | 'm' | |
