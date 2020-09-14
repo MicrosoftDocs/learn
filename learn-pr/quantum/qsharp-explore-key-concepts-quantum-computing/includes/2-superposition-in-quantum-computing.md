@@ -41,14 +41,14 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 
 An *operator* is a function that transforms the state of a quantum system to another state.
 
-$$ A \ket{\psi} = \ket{\psi'}$$
+$$A \ket{\psi} = \ket{\psi'}$$
 
-We say that an operator $ A$ is *linear* when it has the following properties
+We say that an operator $A$ is *linear* when it has the following properties
 for addition and multiplication by a complex number $a$:
 
-$$ A(\ket{\psi_1} + \ket{\psi_2}) =  A\ket{\psi_1} + A\ket{\psi_2}$$
+$$A(\ket{\psi_1} + \ket{\psi_2}) =  A\ket{\psi_1} + A\ket{\psi_2}$$
 
-$$ A(a\ket{\psi})=a  A(\ket{\psi})$$
+$$A(a\ket{\psi})=a  A(\ket{\psi})$$
 
 ### How do linear operators relate to quantum superposition?
 
