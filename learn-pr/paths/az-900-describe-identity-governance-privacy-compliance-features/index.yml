@@ -48,6 +48,6 @@ modules:
 - learn.azure.intro-to-azure-fundamentals
 - learn.secure-access-azure-identity-services
 - learn.azure.build-cloud-governance-strategy-azure
-- learn.examine-privacy-compliance-data-protection-standards
+- learn.azure.examine-privacy-compliance-data-protection-standards
 trophy:
   uid: learn.az-900-describe-identity-governance-privacy-compliance-features.trophy

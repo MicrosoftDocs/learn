@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.examine-privacy-compliance-data-protection-standards
+uid: learn.azure.examine-privacy-compliance-data-protection-standards
 metadata:
   description: Learn about Microsoft's commitment to privacy, how Azure adheres to common regulatory and compliance standards, and additional considerations government agencies need to make.
   ms.date: 09/11/2020
@@ -32,14 +32,14 @@ roles:
 products:
 - azure
 units:
-- learn.examine-privacy-compliance-data-protection-standards.1-introduction
-- learn.examine-privacy-compliance-data-protection-standards.2-explore-compliance-terms-requirements
-- learn.examine-privacy-compliance-data-protection-standards.3-access-microsoft-privacy-statement
-- learn.examine-privacy-compliance-data-protection-standards.4-explore-trust-center
-- learn.examine-privacy-compliance-data-protection-standards.5-access-azure-compliance-documentation
-- learn.examine-privacy-compliance-data-protection-standards.6-what-is-azure-government
-- learn.examine-privacy-compliance-data-protection-standards.7-what-is-azure-china-21vianet
-- learn.examine-privacy-compliance-data-protection-standards.8-knowledge-check
-- learn.examine-privacy-compliance-data-protection-standards.9-summary
+- learn.azure.examine-privacy-compliance-data-protection-standards.1-introduction
+- learn.azure.examine-privacy-compliance-data-protection-standards.2-explore-compliance-terms-requirements
+- learn.azure.examine-privacy-compliance-data-protection-standards.3-access-microsoft-privacy-statement
+- learn.azure.examine-privacy-compliance-data-protection-standards.4-explore-trust-center
+- learn.azure.examine-privacy-compliance-data-protection-standards.5-access-azure-compliance-documentation
+- learn.azure.examine-privacy-compliance-data-protection-standards.6-what-is-azure-government
+- learn.azure.examine-privacy-compliance-data-protection-standards.7-what-is-azure-china-21vianet
+- learn.azure.examine-privacy-compliance-data-protection-standards.8-knowledge-check
+- learn.azure.examine-privacy-compliance-data-protection-standards.9-summary
 badge:
-  uid: learn.examine-privacy-compliance-data-protection-standards.badge
+  uid: learn.azure.examine-privacy-compliance-data-protection-standards.badge
