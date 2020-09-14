@@ -86,7 +86,7 @@ If you're interested in the details of this algorithm and want to implement it
 in Q#, check our [quantum katas tutorial on Deutsch-Jozsa algorithm](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ExploringDeutschJozsaAlgorithm?azure-portal=true) and
 the [sample on Deutsch-Jozsa algorithm](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/simple-algorithms/DeutschJozsa.qs?azure-portal=true).
 
-![Diagram summarizing Deutsch-Jozsa algorithm](../media/8-dj.svg)
+![Diagram summarizing Deutsch-Jozsa algorithm](../media/8-deutsch–jozsa.svg)
 
 ## Shor's algorithm
 
@@ -117,7 +117,7 @@ that finds a complex phase of an operation that enables you to find the period
 of the function.
 
 ![Diagram outlining RSA encryption and Shor's algorithm](../media/8-shor.png)
-![Diagram explaining Shor's algorithm](../media/8-shor2.svg)
+![Diagram explaining Shor's algorithm](../media/8-shor-2.svg)
 
 #### Outline of Shor's algorithm
 
