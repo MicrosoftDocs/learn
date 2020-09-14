@@ -31,7 +31,7 @@ Azure Sentinel comes with a number of connectors for Microsoft and other solutio
 
 Additionally, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use Common Event Format (CEF), Syslog, or a REST API to connect your data sources with Azure Sentinel. The following image depicts this connectivity capability.
 
-:::image type="content" source="../media/Sentinel-connections.png" alt-text="The diagram depicts multiple data connections to Azure Sentinel." border="false":::
+:::image type="content" source="../media/sentinel-connections.png" alt-text="The diagram depicts multiple data connections to Azure Sentinel." border="false":::
 
 ### Key factors for Azure Sentinel deployment
 
@@ -77,4 +77,4 @@ The lead system engineer at Contoso discovered that after connecting security so
 
 The following screenshot depicts the **Azure Sentinel - Overview** page, which contains charts and graphs to help you understand events, alerts, and incidents.
 
-:::image type="content" source="../media/Azure-Sentinel-dashboard.png" alt-text="The screenshot depicts the Azure Sentinel - Overview page with several graphs and charts, including events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." border="false":::
+:::image type="content" source="../media/azure-sentinel-dashboard.png" alt-text="The screenshot depicts the Azure Sentinel - Overview page with several graphs and charts, including events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." border="false":::
