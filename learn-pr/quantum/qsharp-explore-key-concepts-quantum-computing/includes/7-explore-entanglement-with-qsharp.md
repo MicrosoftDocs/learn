@@ -25,17 +25,24 @@ The most prominent example of a multi-qubit gate is the
 operation. This operation takes two qubits as input, and flips the state of the
 second qubit (target qubit) if and only if the state of the first qubit (control
 qubit) is $\ket{1}$. With the help of the `H` operation and the `CNOT`, you can
-transform a register in the state $\ket{0_c0_t}$ to the entangled state
-$\frac1{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$. You can see how:
+transform a register in the state $\ket{00}$ to the entangled state
+$\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
 
 1. First we prepare a superposition in the control qubit applying $H$.
 
    $$H \ket{0_c}= \frac{1}{\sqrt{2}}(\ket{0_c}+\ket{1_c})$$
+   
+   > [!NOTE]
+   > We use the subscripts ${}_c$ and ${}_t$ to specify the control and target qubit in for the $CNOT$ operation.
+   > By convention the first qubit alwasys refers to the control qubit and the second qubit refers to the target qubit.
 
 1. Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
 the target qubit in the state $\ket{0_t}$.
 
    $$CNOT \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c0_t})=\frac{1}{\sqrt2}(CNOT\ket{0_c0_t}+CNOT\ket{1_c0_t})= \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$$
+
+
+
 
 To implement this in Q#:
 
