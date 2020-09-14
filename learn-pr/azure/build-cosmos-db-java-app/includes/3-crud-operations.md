@@ -275,16 +275,17 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 1. Copy and paste the `deleteUserDocument` method underneath your `replaceUserDocument` method.
 
     ```java
-    private static CosmosItemResponse<User> deleteUserDocument(User deletedUser)
-    {
-        try
-        {
-            CosmosItemResponse<User> userDeleteResponse = container.deleteItem(deletedUser.getId(), new PartitionKey(deletedUser.getUserId())).block();
-            logger.info("Deleted user {}", deletedUser.getId());
-        }
-        catch (CosmosException de)
-        {
-            logger.error("User {} not found for deletion", deletedUser.getId());
+    /**
+     * Take in a Java POJO argument, extract id and partition key,
+     * and delete the corresponding document.
+     * @param user User POJO representing the document update.
+     */
+    private static void deleteUserDocument(final User user) {
+        try {
+            container.deleteItem(user.getId(), new PartitionKey(user.getUserId())).block();
+            logger.info("Deleted user {}", user.getId());
+        } catch (CosmosException de) {
+            logger.error("User {} could not be deleted.", user.getId());
         }
     }
     ```
