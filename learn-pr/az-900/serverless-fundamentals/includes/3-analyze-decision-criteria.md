@@ -10,7 +10,7 @@ It's possible to create the same workflow using Azure Functions, but it might ta
 
 Azure Functions allows you to use the full expressiveness of a programming language in a compact form, allowing you to concisely build complex algorithms, or data lookup and parsing operations.  You would be responsible for maintaining the code, handling exceptions resiliently, and so on.
 
-While Azure Logic Apps has the ability to perform logic (loops, decisions, etc.) if you had a logic intensive orchestration that required a complex algorithm, the implementation of that algorithm might be more verbose and visually overwhelming.
+While Azure Logic Apps has the ability to perform logic (loops, decisions, and so on) if you had a logic intensive orchestration that required a complex algorithm, the implementation of that algorithm might be more verbose and visually overwhelming.
 
 ## Do you have existing automated tasks written in an imperative programming language?
 

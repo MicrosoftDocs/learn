@@ -17,7 +17,7 @@ Since Azure SQL Database is based on the latest stable version of the Microsoft 
 
 ## SQL migration
 
-Tailwind Traders currently uses several on-premises SQL servers, which provide data storage for your public-facing website (for example: customer data, order history, product catalogs, etc.). In addition, your on-premises SQL servers also provide data storage for your internal-only training portal website that Tailwind Traders uses for new employee training materials (for example: study materials, certification details, training transcripts, etc.) The following illustration shows the types of data that your company might store in the Azure SQL database training portal website.
+Tailwind Traders currently uses several on-premises SQL servers, which provide data storage for your public-facing website (for example: customer data, order history, product catalogs, and so on.) In addition, your on-premises SQL servers also provide data storage for your internal-only training portal website that Tailwind Traders uses for new employee training materials (for example: study materials, certification details, training transcripts, and so on.) The following illustration shows the types of data that your company might store in the Azure SQL database training portal website.
 
 [![Azure SQL databases in a training portal website.](../media/azure-sql.png)](../media/azure-sql-expanded.png#lightbox)
 

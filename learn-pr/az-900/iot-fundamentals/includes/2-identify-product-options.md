@@ -26,7 +26,7 @@ There are many services that can assist and drive end-to-end solutions for IoT o
 
 IoT Hub supports communications both from the device to the cloud and from the cloud to the device. It also supports multiple messaging patterns such as device-to-cloud telemetry, file upload from devices, and request-reply methods to control your devices from the cloud. Once the IoT Hub receives messages from a device it can route that message to other Azure services.
 
-From a cloud-to-device perspective, IoT Hub allows for "command and control", in other words, either manual or automated remote control of connected devices so you can instruct the device to open valves, setting target temperatures, restarting stuck devices, etc.
+From a cloud-to-device perspective, IoT Hub allows for "command and control", in other words, either manual or automated remote control of connected devices so you can instruct the device to open valves, setting target temperatures, restarting stuck devices, and so on.
 
 IoT Hub monitoring helps you maintain the health of your solution by tracking events such as device creation, device failures, and device connections.
 
