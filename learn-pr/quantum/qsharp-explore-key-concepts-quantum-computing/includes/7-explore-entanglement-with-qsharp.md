@@ -30,7 +30,7 @@ $\frac1{\sqrt2}(\ket{00}+\ket{11})$. You can see how:
 
 1- First we prepare a superposition in the control qubit applying $H$.
 
-$$H \ket{0}= \frac{1}{\sqrt{2}}(\ket{0}+\ket{1})$$
+$$H \ket{0}= \frac{1}{\sqrt{2}}(\ket{0}_{\text{control}}+\ket{1})$$
 
 1- Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
 the target qubit in the state $\ket{0}_{\text{target}}$.
