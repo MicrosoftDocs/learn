@@ -136,13 +136,13 @@ return decodedLetter
 
 Let's see what would happen if you ran this code with the first letter of the actual secret message, **W**, and the shift amount, **13**.
 
-| Variable | Value | 
-|:---------|:------|
-| `letter` | W |
-| `shiftAmount` | 13 |
-| `letterCode` | `ord('W')` = 119 |
-| `decodedLetterCode` | 119 + 13 = 132 |
-| `decodedLetter` | chr(132) = `error` |
+| Variable | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|:---------|:------|-------|
+| `letter` | W | |
+| `shiftAmount` | 13 | |
+| `letterCode` | `ord('W')` = 119 | |
+| `decodedLetterCode` | 119 + 13 = 132 | |
+| `decodedLetter` | chr(132) = `error` | |
 
 The code won't return the expected result because a Ceasar cipher loops back to lowercase 'a' when it reaches lowercase 'z'.
 
