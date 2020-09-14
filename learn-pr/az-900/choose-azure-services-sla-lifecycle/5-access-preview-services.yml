@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-azure-services-sla-lifecycle.5-access-preview-services
+uid: learn.azure.choose-azure-services-sla-lifecycle.5-access-preview-services
 title: Access preview services and preview features
 metadata:
   description: "Learn how Azure services go from the preview phase to being generally available."

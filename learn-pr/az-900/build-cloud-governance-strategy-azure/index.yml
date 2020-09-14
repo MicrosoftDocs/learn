@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.build-cloud-governance-strategy-azure
+uid: learn.azure.build-cloud-governance-strategy-azure
 metadata:
   title: Build a cloud governance strategy on Azure
   description: Learn how to access policies, resource locks, and tags, as well as how Azure services such as Azure Policy and Azure Blueprints can help you build a comprehensive cloud governance strategy.
@@ -38,17 +38,17 @@ products:
 - azure-blueprints
 - azure-rbac
 units:
-- learn.build-cloud-governance-strategy-azure.1-introduction
-- learn.build-cloud-governance-strategy-azure.2-accelerate-cloud-adoption-framework
-- learn.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
-- learn.build-cloud-governance-strategy-azure.4-control-access-azure-rbac
-- learn.build-cloud-governance-strategy-azure.5-prevent-changes-resource-locks
-- learn.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
-- learn.build-cloud-governance-strategy-azure.7-organize-resource-tags
-- learn.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
-- learn.build-cloud-governance-strategy-azure.9-restrict-location-azure-policy
-- learn.build-cloud-governance-strategy-azure.10-govern-subscriptions-azure-blueprints
-- learn.build-cloud-governance-strategy-azure.11-knowledge-check
-- learn.build-cloud-governance-strategy-azure.12-summary
+- learn.azure.build-cloud-governance-strategy-azure.1-introduction
+- learn.azure.build-cloud-governance-strategy-azure.2-accelerate-cloud-adoption-framework
+- learn.azure.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
+- learn.azure.build-cloud-governance-strategy-azure.4-control-access-azure-rbac
+- learn.azure.build-cloud-governance-strategy-azure.5-prevent-changes-resource-locks
+- learn.azure.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
+- learn.azure.build-cloud-governance-strategy-azure.7-organize-resource-tags
+- learn.azure.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
+- learn.azure.build-cloud-governance-strategy-azure.9-restrict-location-azure-policy
+- learn.azure.build-cloud-governance-strategy-azure.10-govern-subscriptions-azure-blueprints
+- learn.azure.build-cloud-governance-strategy-azure.11-knowledge-check
+- learn.azure.build-cloud-governance-strategy-azure.12-summary
 badge:
-  uid: learn.build-cloud-governance-strategy-azure.badge
+  uid: learn.azure.build-cloud-governance-strategy-azure.badge

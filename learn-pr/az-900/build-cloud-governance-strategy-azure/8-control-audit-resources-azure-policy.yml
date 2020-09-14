@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
+uid: learn.azure.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
 title: Control and audit your resources by using Azure Policy
 metadata:
   description: Learn how Azure Policy helps you control and audit how your resources are created.

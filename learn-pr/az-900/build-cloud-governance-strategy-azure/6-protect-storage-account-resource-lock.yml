@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
+uid: learn.azure.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
 title: Exercise - Protect a storage account from accidental deletion by using a resource lock
 metadata:
   description: Apply a resource lock to prevent accidental deletion of your Azure resources.

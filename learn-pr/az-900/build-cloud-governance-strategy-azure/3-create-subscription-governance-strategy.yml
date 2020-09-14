@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
+uid: learn.azure.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
 title: Create a subscription governance strategy
 metadata:
   description: "Learn about the three main aspects to consider when creating and managing subscriptions: billing, access control, and subscription limits."

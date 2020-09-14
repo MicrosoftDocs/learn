@@ -48,6 +48,6 @@ products:
 modules:
 - learn.azure.intro-to-azure-fundamentals
 - learn.plan-manage-azure-costs
-- learn.choose-azure-services-sla-lifecycle
+- learn.azure.choose-azure-services-sla-lifecycle
 trophy:
   uid: learn.az-900-describe-azure-cost-management-service-level-agreements.trophy

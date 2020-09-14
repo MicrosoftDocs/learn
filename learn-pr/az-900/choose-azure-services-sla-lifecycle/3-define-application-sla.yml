@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-azure-services-sla-lifecycle.3-define-application-sla
+uid: learn.azure.choose-azure-services-sla-lifecycle.3-define-application-sla
 title: Define your application SLA
 metadata:
   description: "Learn about a few factors you might consider when defining your application SLA."
