@@ -36,18 +36,20 @@ With [Visual Studio Code](https://code.visualstudio.com/learn/?azure-portal=true
 
 If you haven't already, make sure you have setup your local developer environment by following the [Set up your Python beginner development environment with Visual Studio Code](https://docs.microsoft.com/en-us/learn/modules/python-install-vscode/?azure-portal=true) Learn module.
 
-*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*
-
 ## Learning objectives
 
-In this module, you will begin to discover:
+In this module, you will begin to discover how to:
 
 - Write your first lines of Python code
 - Create a program that allows users to interact with your code
-- Discover if-, elif-, and else-statements
+- Use if-, elif-, and else-statements
 
 ## Prerequisites
 
-- Python installed
-- Visual Studio Code with Python Extension
-- No coding experience required
+- [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
+- [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
+
+> [!Note]
+> No coding experience is required to complete these lessons!
+
+*WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*

@@ -1,4 +1,4 @@
-![Wonder Woman 1984 Film Card](../media/ww84-edu-github-title-card.png)
+![Film card from WONDER WOMAN 1984.](../../wonder-woman-common/media/wonder-woman-1984-coming-to-theaters.png)
 
 With your `quiz.py` file, you can now truly know who your friends and family are. Well, kind of. :)
 

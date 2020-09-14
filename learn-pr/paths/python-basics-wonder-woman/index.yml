@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.python-basics-wonder-woman
 metadata:
   title: Learn Python basics with Wonder Woman
-  description: Have you been interested in learning Python, but looking for some inspiration? We've got you covered! Microsoft has excited to partner with the WONDER WOMAN 1984 film to make learning Python a bit more...powerful.
+  description: Have you been interested in learning Python, but are looking for some inspiration? We've got you covered! Microsoft is excited to partner with the WONDER WOMAN 1984 film to make learning Python a bit more...powerful.
   brand: azure
   ms.date: 09/21/2020
   author: sguthals
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Learn Python basics with Wonder Woman
 summary: |
-  Have you been interested in learning Python, but looking for some inspiration? We've got you covered! Microsoft has excited to partner with the WONDER WOMAN 1984 film to make learning Python a bit more...powerful.
+  Have you been interested in learning Python, but are looking for some inspiration? We've got you covered! Microsoft is excited to partner with the WONDER WOMAN 1984 film to make learning Python a bit more...powerful.
   
   In this learning path, you'll:
     - Discover all the ways you can engage with the WONDER WOMAN 1984 film with code
@@ -19,7 +19,7 @@ summary: |
     - Build a message decoder program
     - Create a personality quiz to determine what character you would be in the Wonder Woman 1984 film
   
-  Once you complete this learning path, you will have a great foundation to build upon in subsequent Python Learning Paths.
+  Once you complete this learning path, you'll have a great foundation to build upon in subsequent Python Learning Paths.
   
 prerequisites: |
   None.

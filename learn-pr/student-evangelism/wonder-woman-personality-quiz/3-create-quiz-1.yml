@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.wonder-woman-personality-quiz.create-quiz-1
 metadata:
-  title: Create a Wonder Woman quiz - part one
+  title: Part 1 - Create a Wonder Woman quiz
   description: This unit introduces how to interact with users in Python.
   ms.date: 9/21/20
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Create a Wonder Woman quiz - part one
+title: Part 1 - Create a Wonder Woman quiz
 durationInMinutes: 5
 content: |
   [!include[](includes/3-create-quiz-1.md)]

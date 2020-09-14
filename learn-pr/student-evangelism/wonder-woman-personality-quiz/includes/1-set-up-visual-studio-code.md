@@ -32,7 +32,7 @@ print( "Hello, Themyscira!" )
 Your editor should resemble this:
 
 > [!div class="mx-imgBorder"]
-> ![Hello, Themyscira code](../media/quiz-hello-world.png)
+> ![Hello, them mess scare ah code](../media/quiz-hello-world.png)
 
 To have the Python follow your commands, press the green **Play** button in the upper right corner. You should see a message from the Python below.
 
