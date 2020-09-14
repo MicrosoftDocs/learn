@@ -6,7 +6,7 @@ In this unit, you'll complete the following tasks:
 - Verify that the changes were deployed to the AKS cluster
 - Roll back a deployment
 
-## Create the deployment Action
+## Create the deployment action
 
 Create a GitHub Action for the deployment with the following steps:
 
@@ -72,7 +72,7 @@ Create a GitHub Action for the deployment with the following steps:
 1. Replace the default Action file name of *main.yml* with *deploy.yml*.
 1. Commit the *deploy.yml* file directly to the `main` branch.
 
-These two GitHub Action definitions will be part of the repository from now on. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
+These two GitHub Action definitions are stored in the repository's *.github/workflows* directory. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
 
 ## Trigger a deployment
 
@@ -94,11 +94,11 @@ These two GitHub Action definitions will be part of the repository from now on. 
 
     The deployment workflow is triggered automatically. The app is deployed after a few minutes.
 
-## Wait for the deployment
+## Monitor the deployment
 
 1. Select the **Actions** tab in your repository to monitor the deployment's progress.
 
-    :::image type="content" source="../media/5-deploy-github-action/deployment-action-output.png" alt-text="Deployment action output from the deploy-to-aks job" border="true" lightbox="../media/5-deploy-github-action/deployment-action-output.png":::
+    :::image type="content" source="../media/5-deploy-github-action/eshop-deploy-workflow.png" alt-text="eShop deploy workflow listed on the workflows page" border="true" lightbox="../media/5-deploy-github-action/eshop-deploy-workflow.png":::
 
     In the preceding image, you can see the `deploy-to-aks` job was completed in the log output. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-ask` job. You'll see a variation of the following screen when the deployment completes:
 

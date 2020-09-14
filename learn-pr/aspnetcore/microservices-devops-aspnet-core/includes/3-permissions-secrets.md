@@ -31,7 +31,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     :::image type="content" source="../media/3-permissions-secrets/health-check.png" alt-text="Health check page" border="true" lightbox="../media/3-permissions-secrets/health-check.png":::
 
     > [!NOTE]
-    > While the app is starting up, you might initially receive an HTTP 503 response from the server. Retry after a few seconds. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
+    > While the app is starting up, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The Seq logs, which are viewable at the **Centralized logging** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
@@ -41,14 +41,12 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
     1. Add the **.NET BLUE HOODIE** to the shopping bag by selecting the image.
     1. Select the shopping bag icon in the upper right.
-    1. Scroll to the **HAVE A DISCOUNT CODE?** field.
+    1. Select the **CHECKOUT** button.
+    1. Enter the code *:::no-loc text="DISC-10":::* in the **HAVE A DISCOUNT CODE?** text box for a 10 USD discount, and select **APPLY**.
 
         :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the coupon code text box" border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
 
-    1. Enter the code *:::no-loc text="DISC-15":::* for a 15 USD discount, and select **APPLY**.
     1. Select **PLACE ORDER** to complete the purchase.
-
-    :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
 
 You've verified the app is deployed and functional. The coupon code feature is supported by the coupon service. In this module, you'll build a CI/CD pipeline to automate the build and deployment of the coupon service.
 
@@ -109,7 +107,6 @@ The service principal and the credentials for the container registry are sensiti
 
 With all five secrets configured, you'll see the following page:
 
-<!-- TODO: update screenshot to show 5 secrets -->
 :::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Page displaying three GitHub secrets" border="true" lightbox="../media/3-permissions-secrets/github-secrets.png":::
 
 In this unit, you verified the app was deployed correctly. You then created an Azure service principal and stored related sensitive information as GitHub secrets.

@@ -3,15 +3,13 @@ In this unit, you'll complete the following tasks:
 - Create a GitHub Action to implement a build pipeline
 - Modify the coupon service
 
-## Create the build Action
+## Create the build action
 
 Create a GitHub Action for the build with the following steps:
 
 1. Select the **Actions** tab in your repository and select the **set up a workflow yourself** link:
 
     :::image type="content" source="../media/4-build-github-action/set-up-custom-github-workflow.png" alt-text="Actions tab in the GitHub repository, highlighting the workflow creation link" border="true" lightbox="../media/4-build-github-action/set-up-custom-github-workflow.png":::
-
-<!-- TODO: have the user create 2 additional secrets in unit 3 (1 for REGISTRY_LOGIN_SERVER and 1 for IP_ADDRESS). After doing so, update this YAML to pull those values from the secret store. -->
 
 1. Replace the YAML in the editor with the following YAML:
 
@@ -71,7 +69,7 @@ Create a GitHub Action for the build with the following steps:
 
 1. Select the **Start commit** button, select the **Commit directly to the `main` branch** radio button, and select **Commit new file** to save the Action file.
 
-## Modify the coupon service
+## Trigger a build
 
 You've finished creating the "build" action for your CI/CD pipeline. The Marketing department wants to start a campaign to better track coupon code usage. With this feature, Marketing can better understand which coupon codes are most effective in driving sales. To support this feature, make the following changes in the `main` branch:
 
@@ -87,12 +85,19 @@ You've finished creating the "build" action for your CI/CD pipeline. The Marketi
 
     The build workflow is triggered automatically.
 
+## Monitor the build
+
 1. View the real-time progress of the build by completing the following steps:
     1. Select the **Actions** tab.
-    1. Select the most recent workflow run listed.
-    1. Select the **build-and-push-docker-image** task.
+    1. Select the most recent workflow run listed for the *eShop build* workflow. The commit message used in the previous step becomes the run's name.
 
-    If the build completes successfully, you'll see a variation of the following output:
+        :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
+
+    1. Select the **build-and-push-docker-image** task:
+
+        :::image type="content" source="../media/4-build-github-action/build-push-docker-image-task.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/build-push-docker-image-task.png":::
+
+    When the build completes successfully, all steps are prefixed with a green check mark. Expand any task for the output generated during its execution. For example:
 
     :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
 
