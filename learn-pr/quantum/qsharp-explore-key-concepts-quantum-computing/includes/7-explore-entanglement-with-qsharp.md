@@ -35,7 +35,7 @@ $\frac1{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$. You can see how:
 1. Now apply the $CNOT$ operator to the joint state of the control qubit in superposition and
 the target qubit in the state $\ket{0}_t$.
 
-   $$CNOT \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c0_t})=\frac{1}{\sqrt2}(CNOT\ket{0_c0_t+CNOT\ket{1_c0_t})= \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$$
+   $$CNOT \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c0_t})=\frac{1}{\sqrt2}(CNOT\ket{0_c0_t}+CNOT\ket{1_c0_t})= \frac{1}{\sqrt2}(\ket{0_c0_t}+\ket{1_c1_t})$$
 
 To implement this in Q#:
 
