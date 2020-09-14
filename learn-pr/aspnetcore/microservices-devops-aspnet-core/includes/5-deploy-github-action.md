@@ -95,10 +95,17 @@ These two GitHub Action definitions are stored in the repository's *.github/work
 ## Monitor the deployment
 
 1. Select the **Actions** tab in your repository to monitor the deployment's progress.
+1. Select the most recent workflow run listed for the *eShop deploy* workflow. The commit message used in the previous step becomes the run's name.
 
     :::image type="content" source="../media/5-deploy-github-action/eshop-deploy-workflow.png" alt-text="eShop deploy workflow listed on the workflows page" border="true" lightbox="../media/5-deploy-github-action/eshop-deploy-workflow.png":::
 
-    In the preceding image, you can see the `deploy-to-aks` job was completed in the log output. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-ask` job. You'll see a variation of the following screen when the deployment completes:
+1. Select the **deploy-to-aks** task:
+
+    :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
+
+    In the preceding image, you can see the `deploy-to-aks` job running. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-ask` job.
+
+1. Select the **Actions** tab again. You'll see a variation of the following screen when the deployment completes:
 
     :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
 
@@ -148,25 +155,26 @@ These two GitHub Action definitions are stored in the repository's *.github/work
     2               Thu Sep 10 19:51:10 2020        deployed        coupon-0.1.0    1.1.0           Upgrade complete
     ```
 
-1. Follow these steps to verify your change is deployed:
-    1. In the console, run the following command:
+## Verify the deployment
 
-        ```bash
-        cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
-        ```
+Complete the following steps to verify your change is deployed:
 
-    1. Select the **Web SPA application** URL to launch the app.
-    1. Select the **LOGIN** link in the upper right (the credentials are provided on the sign-in page).
-    1. Add your favorite products to the shopping bag by selecting the images.
-    1. Select the shopping bag icon in the upper right.
-    1. Select **CHECKOUT**.
-    1. Scroll to the **HAVE A DISCOUNT CODE?** field.
-    1. Enter the code *:::no-loc text="DISC-10":::* for a 10 USD discount, and select **APPLY**.
-    1. Select **PLACE ORDER** to complete the purchase.
-    1. Back in the console, select the **Centralized logging** URL.
-    1. Observe an entry in the logs similar to the following content:
+1. In the console, run the following command:
 
-        :::image type="content" source="../media/5-deploy-github-action/seq-log.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-log.png":::
+    ```bash
+    cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
+    ```
+
+1. Select the **Web SPA application** URL to launch the app.
+1. Log in from the **LOGIN** page.
+1. Add your favorite products to the shopping bag by selecting the images.
+1. Select the shopping bag icon in the upper right, and select **CHECKOUT**.
+1. Enter the code *:::no-loc text="DISC-5":::* in the **HAVE A DISCOUNT CODE?** text box for a five USD discount, and select **APPLY**.
+1. Select **PLACE ORDER** to complete the purchase.
+1. Back in the command shell, select the **Centralized logging** URL.
+1. Observe an entry in the logs similar to the following content:
+
+    :::image type="content" source="../media/5-deploy-github-action/seq-logs.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-logs.png":::
 
 ## Roll back a deployment
 
