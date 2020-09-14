@@ -6,17 +6,6 @@ You learned how to describe the benefits and usage of:
 - Azure Resources, Resource Groups, and the Azure Resource Manager
 - Azure Regions, Region Pairs, and Availability zones
 
-## Azure Fundamentals learning path
-
-This module is part of the [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/) learning path, which is one of six learning paths for Azure Fundamentals.
-
-- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/)
-- [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/)
-- [Azure Fundamentals part 3: Describe core solutions and management tools on Azure](/learn/paths/)
-- [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/)
-- [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/)
-- [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/)
-
 ## Learn more
 
 - [Apply and monitor infrastructure standards with Azure Policy](https://docs.microsoft.com/learn/modules/intro-to-governance/?azure-portal=true)
@@ -26,3 +15,16 @@ This module is part of the [Azure Fundamentals part 1: Describe core Azure conce
 - [Examine Azure subscriptions](https://docs.microsoft.com/learn/modules/examine-azure-subscriptions/?azure-portal=true)
 - [Regions and Availability Zones in Azure](https://docs.microsoft.com/azure/availability-zones/az-overview?azure-portal=true)
 - [What are Azure management groups?](https://docs.microsoft.com/azure/governance/management-groups/overview?azure-portal=true)
+
+## Azure Fundamentals learning path
+
+This module is part of the [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/) learning path, which is one of six learning paths for Azure Fundamentals.
+
+Here are the learning paths in this series:
+
+- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/?azure-portal=true)
+- [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/?azure-portal=true)
+- [Azure Fundamentals part 3: Fundamental Azure core solutions and management tools](/learn/paths/az-900-fundamental-azure-core-solutions-management-tools/?azure-portal=true)
+- [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/?azure-portal=true)
+- [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/?azure-portal=true)
+- [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/?azure-portal=true)

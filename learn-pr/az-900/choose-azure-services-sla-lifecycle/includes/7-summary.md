@@ -26,3 +26,16 @@ In this module, you learned about several factors that affect service guarantees
 
 * Review [Supplemental Terms of Use for Microsoft Azure Previews](https://azure.microsoft.com/support/legal/preview-supplemental-terms?azure-portal=true).
 * Learn about updates and new product features on the [Azure announcements blog](https://azure.microsoft.com/blog/topics/announcements?azure-portal=true).
+
+## Azure Fundamentals learning path
+
+This module is part of the [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/?azure-portal=true) learning path, which is one of six learning paths for Azure Fundamentals.
+
+Here are the learning paths in this series:
+
+- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/?azure-portal=true)
+- [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/?azure-portal=true)
+- [Azure Fundamentals part 3: Fundamental Azure core solutions and management tools](/learn/paths/az-900-fundamental-azure-core-solutions-management-tools/?azure-portal=true)
+- [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/?azure-portal=true)
+- [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/?azure-portal=true)
+- [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/?azure-portal=true)

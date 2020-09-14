@@ -9,3 +9,16 @@ The security team at Tailwind Traders now has a better understanding of what res
 Keep in mind that compliance status for Azure products and services does not automatically translate to compliance for the service or application you build or host on Azure. You are responsible for ensuring that you achieve compliance with the legal and regulatory standards that you must follow.
 
 Most services are the same on both Azure Government and global Azure. However, there are some differences that you should be aware of. [Compare Azure Government and global Azure](https://docs.microsoft.com/azure/azure-government/compare-azure-government-global-azure?azure-portal=true) to learn more.
+
+## Azure Fundamentals learning path
+
+This module is part of the [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/?azure-portal=true) learning path, which is one of six learning paths for Azure Fundamentals.
+
+Here are the learning paths in this series:
+
+- [Azure Fundamentals part 1: Describe core Azure concepts](/learn/paths/az-900-describe-cloud-concepts/?azure-portal=true)
+- [Azure Fundamentals part 2: Describe core Azure services](/learn/paths/az-900-describe-core-azure-services/?azure-portal=true)
+- [Azure Fundamentals part 3: Fundamental Azure core solutions and management tools](/learn/paths/az-900-fundamental-azure-core-solutions-management-tools/?azure-portal=true)
+- [Azure Fundamentals part 4: Describe general security and network security features](/learn/paths/az-900-describe-general-security-network-security-features/?azure-portal=true)
+- [Azure Fundamentals part 5: Describe identity, governance, privacy, and compliance features](/learn/paths/az-900-describe-identity-governance-privacy-compliance-features/?azure-portal=true)
+- [Azure Fundamentals part 6: Describe Azure cost management and service level agreements](/learn/paths/az-900-describe-azure-cost-management-service-level-agreements/?azure-portal=true)
