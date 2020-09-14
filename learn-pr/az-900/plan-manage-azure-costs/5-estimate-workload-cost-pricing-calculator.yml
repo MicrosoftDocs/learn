@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.plan-manage-azure-costs.5-estimate-workload-cost-pricing-calculator
+uid: learn.azure.plan-manage-azure-costs.5-estimate-workload-cost-pricing-calculator
 title: Exercise - Estimate workload cost by using the Pricing calculator
 metadata:
   description: Use the Pricing calculator to estimate the cost of running a basic web application on Azure.

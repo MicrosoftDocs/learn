@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.plan-manage-azure-costs
+uid: learn.azure.plan-manage-azure-costs
 metadata:
   description: Migration to the cloud presents new ways to think about your IT expenses. This module teaches you about the factors that influence cost and tools you can use to help estimate and manage your cloud spend.
   ms.date: 07/03/2020
@@ -32,13 +32,13 @@ roles:
 products:
 - azure
 units:
-- learn.plan-manage-azure-costs.1-introduction
-- learn.plan-manage-azure-costs.2-compare-costs-tco-calculator
-- learn.plan-manage-azure-costs.3-compare-workload-costs-tco-calculator
-- learn.plan-manage-azure-costs.4-purchase-azure-services
-- learn.plan-manage-azure-costs.5-estimate-workload-cost-pricing-calculator
-- learn.plan-manage-azure-costs.6-manage-minimize-total-cost
-- learn.plan-manage-azure-costs.7-knowledge-check
-- learn.plan-manage-azure-costs.8-summary
+- learn.azure.plan-manage-azure-costs.1-introduction
+- learn.azure.plan-manage-azure-costs.2-compare-costs-tco-calculator
+- learn.azure.plan-manage-azure-costs.3-compare-workload-costs-tco-calculator
+- learn.azure.plan-manage-azure-costs.4-purchase-azure-services
+- learn.azure.plan-manage-azure-costs.5-estimate-workload-cost-pricing-calculator
+- learn.azure.plan-manage-azure-costs.6-manage-minimize-total-cost
+- learn.azure.plan-manage-azure-costs.7-knowledge-check
+- learn.azure.plan-manage-azure-costs.8-summary
 badge:
-  uid: learn.plan-manage-azure-costs.badge
+  uid: learn.azure.plan-manage-azure-costs.badge
