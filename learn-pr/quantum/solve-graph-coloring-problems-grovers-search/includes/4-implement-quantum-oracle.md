@@ -26,7 +26,7 @@ We need two parameters to represent a graph: the number of vertices and the list
 
 In Q#, we will store the number of vertices `nVertices` as an integer, and the list of edges `edges` as an array of tuples. Each tuple describes one edge of the graph as a pair of indices of vertices connected by this edge; we will use zero-based indices, so the index value can be between 0 and `nVertices` - 1.
 
-![Figure 1. A graph](../media/2-valid-coloring.png)
+![Figure 1. A graph](../media/2-valid-labeling.png)
 
 The structure of our example graph can be represented as follows:
 
