@@ -72,7 +72,7 @@ If we call the `ord()` function and pass in the lowercase letter `a`:
 ord('a')
 ```
 
-The output is `97`. `97` is the ASCII character code for the character `a`.
+The output is `97`. The number `97` is the ASCII character code for the character `a`.
 
 
 If we call the `ord()` function and pass in the uppercase letter `W`:
@@ -81,7 +81,7 @@ If we call the `ord()` function and pass in the uppercase letter `W`:
 ord('W')
 ```
 
-The output is `87`. `87` is the ASCII character code for the character `W`.
+The output is `87`. The number `87` is the ASCII character code for the character `W`.
 
 
 If we call the `ord()` function and pass in the number `6`:
@@ -90,10 +90,10 @@ If we call the `ord()` function and pass in the number `6`:
 ord('6')
 ```
 
-The output is `54`. `54` is the ASCII character code for the number `6`.
+The output is `54`. The number `54` is the ASCII character code for the number `6`.
 
 
-We couldn't add a letter and number together: `a + 2`, but we can add two numbers together. If we add `97` for the letter `a` with the number `2`, we get `99`. `99` is the ASCII number representation for the character `c`. The output makes sense!
+We couldn't add a letter and number together (`a + 2`), but we can add two numbers together. If we add `97` for the letter `a` with the number `2`, we get `99`. The number `99` is the ASCII representation for the character `c`. The output makes sense!
 
 Here's the next bit of code to add to your function:
 
@@ -118,7 +118,7 @@ To decode this message, we need to shift the letter `W` by `13`. To do this shif
 Now it's time to calculate the new character. First, review the original example. If you start with the letter `a` and want to get the letter `c`, then you do the following steps:
 
 1. Confirm that the value passed in the `letter` parameter is lowercase. In this case, it's `a`.
-1. Use the `ord()` function to convert the letter `a` to its ASCII code `97`. Save the code value `97` in the `letterCode` variable.
+1. Use the `ord()` function to convert the letter `a` to its ASCII code, `97`. Save the code value `97` in the `letterCode` variable.
 1. Add a `shiftAmount` value of `2` to the `letterCode` value of `97` to get the new number value: `99`. Store the value `99` in the `decodedLetterCode` variable.
 1. Use the `chr()` function to _decode_ the number value `99` into a character to get `c`. (The `chr()` function simply does the opposite of the `ord()` function.) Store the decoded value `c` in the `decodedLetter` variable.
 1. Return the `decodedLetter` value: `c`.

@@ -35,7 +35,7 @@ quiz:
     choices:  
     - content: "`Error`"
       isCorrect: false
-      explanation: "Incorrect. The code you wrote works with any whole number. If you pass in a negative number, the decoder function parses the word backward."
+      explanation: "Incorrect. The code you wrote works with any whole number. If you pass in a negative number, the decoder function parses the word backwards."
     - content: "`o`"
       isCorrect: false
       explanation: "Incorrect. For a return value of `o`, you would pass in a `shiftAmount` value of `-1`."

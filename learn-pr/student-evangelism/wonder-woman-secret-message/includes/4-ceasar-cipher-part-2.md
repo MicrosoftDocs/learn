@@ -1,4 +1,4 @@
-How to figure out the *true* letter code that matches the decoded letter involves cycling around the alphabet. If your `letterCode` + `shiftAmount` value is equal to or greater than 123, you need to return back to 97 to continue counting.
+How to figure out the *true* letter code that matches the decoded letter involves cycling around the alphabet. If your `letterCode` + `shiftAmount` value is equal to or greater than 123, you need to return to 97 to continue counting.
 
 How do you get 123? It's just 97 (the letter code for the 'a' character) plus 26 (the number of letters in the alphabet). If you look at the ASCII number for 'z', you'll see that it's 122.
 

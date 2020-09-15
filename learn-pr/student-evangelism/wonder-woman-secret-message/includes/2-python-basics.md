@@ -2,7 +2,7 @@ Before you can uncover the true meaning of the secret message, let's walk throug
 
 ## Comments
 
-We can write comments to ourselves that Python will ignore. On any line where we use the number or *hash* symbol (`#`), Python ignores everything after the symbol.
+We can write comments to ourselves that Python will ignore. On any line where we use the number (or *hash*) symbol (`#`), Python ignores everything after the symbol.
 
 Try adding the following code to your **decrypt.py** file:
 
@@ -10,7 +10,7 @@ Try adding the following code to your **decrypt.py** file:
 # This is a comment that won't be interpreted as a command.
 ```
 
-Press the **Play** button and you should see the same behavior as before.
+Press the **Play** button, and you should see the same behavior as before.
 
 ![Screenshot that shows that comments in Python do not change code execution.](../media/python-comments.png)
  
@@ -20,7 +20,7 @@ Coding is essentially the movement and manipulation of data. Imagine writing a m
 
 In Python, we have *variables*, which are like containers that have a name and store data. You can think of variables as code names for information that we want our program to remember and have access to later.
 
-The following command tells Python to associate the code name or variable `diana` with the information "WONDER WOMAN 1984." To do this, you use the assignment equals sign `=` operator. Anytime after this command, when Python sees the variable `diana`, it will substitute the value "WONDER WOMAN 1984"!
+The following command tells Python to associate the code name or variable `diana` with the information "WONDER WOMAN 1984." To do this, you use the assignment equal sign (`=`) operator. Anytime after this command, when Python sees the variable `diana`, it will substitute the value "WONDER WOMAN 1984"!
 
 ```python
 # Associate variable diana with the value "WONDER WOMAN 1984"
@@ -33,7 +33,7 @@ Try it out! Replace the following commands in your **decrypt.py** file. (If you'
 # Associate the variable diana with the value "WONDER WOMAN 1984"
 diana = "WONDER WOMAN 1984"
 
-# Print a message with the true identity of Diana.
+# Print a message with the true identity of Diana
 print( "I believe Diana is actually " + diana )
 ```
 
@@ -43,7 +43,7 @@ Press the green **Play** button, and you should see Diana's identity revealed.
  
 ## Functions
 
-Similar to how variables are containers for single bits of information, functions are like containers for lines of code. Typically, programs run from top to bottom, and each line of code is run in order. However, if you write a function, you can invoke it by calling the function name whenever and however many times you want! Invoking a function means to tell the program to run the code within that function, even if it's in a different part of the file. 
+Similar to how variables are containers for single bits of information, functions are like containers for lines of code. Typically, programs run from top to bottom, and each line of code is run in order. However, if you write a function, you can invoke it by calling the function name whenever and however many times you want. Invoking a function means to tell the program to run the code within that function, even if it's in a different part of the file. 
 
 You can also add data to a function as parameters. Parameters are variables that contain data that you want to use to specify the behavior of the function.
 
