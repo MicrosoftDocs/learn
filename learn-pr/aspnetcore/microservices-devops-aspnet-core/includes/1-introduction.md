@@ -12,7 +12,7 @@ In this module, you will:
 - Securely store sensitive information, used by the GitHub Actions, in a GitHub repository.
 - Implement a GitHub Action to build the container image for a microservice.
 - Modify and commit the microservice code to trigger a build.
-- Implement a GitHub Action to deploy a container image to Kubernetes from a container registry.
+- Implement a GitHub Action to deploy a container to a Kubernetes cluster.
 - Modify and commit a Helm chart to trigger a deployment.
 - Revert the microservice to a previous deployment.
 

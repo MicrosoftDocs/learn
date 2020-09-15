@@ -4,7 +4,7 @@ In this unit, you'll deploy the simplified version of *eShopOnContainers* to Azu
 
 ## Run deployment script
 
-1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking).
+1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core?azure-portal=true) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking).
 1. Run the following command in the command shell. When prompted for **Repo URL**, enter the URL of your fork created in the first step.
 
     ```bash
