@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.enterprise-scale-networking.5-connectivity
 metadata:
-  title: Connectivity
+  title: Connectivity Options for Enterprise Scale
   description: Connectivity
   ms.date: 09/30/2020
   author: jknightly
   ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Connectivity
+title: Connectivity Options for Enterprise Scale
 durationInMinutes: 10
 content: |
   [!include[](includes/5-connectivity.md)]
