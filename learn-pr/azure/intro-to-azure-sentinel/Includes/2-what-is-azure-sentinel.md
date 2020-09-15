@@ -20,13 +20,17 @@ The functionality that a SIEM may offer could include:
 
 ## What is Azure Sentinel?
 
-Azure Sentinel is a cloud-native SIEM solution. This means that, unlike traditional SIEM solutions, you don't need to install any servers either on premises or in the cloud. Azure Sentinel is a service you deploy in Azure. You can get up and running with Sentinel in just a few clicks in the Azure portal.
+Azure Sentinel is a cloud-native SIEM that empowers the security operations team to:
 
-It also means that Azure Sentinel is tightly integrated with other cloud services, enabling you to not only ingest logs at the click of a button, but to leverage other cloud services natively such as authorization and automation.
+- Get security insights across the enterprise by collecting data from virtually any source.
+- Detect and investigate threats quickly with built-in machine learning and Microsoft threat intelligence.
+- Automate threat responses with playbooks and integration of Azure Logic Apps.
 
-For example, Azure Sentinel supports Role Based Access control, so you can give different people in your team different permissions depending on their role.
+Unlike traditional SIEM solutions, you don't need to install any servers either on-premises or in the cloud to run the solution. Azure Sentinel is a service you deploy in Azure. You can get up and running with Sentinel in just a few clicks in the Azure portal.
 
-It is designed to help you enable end to end security operations including collection, detection, investigation and response.
+Azure Sentinel is tightly integrated with other cloud services, enabling you to not only ingest logs at the click of a button, but to leverage other cloud services natively such as authorization and automation.
+
+Azure Sentinel is designed to help you enable end to end security operations including collection, detection, investigation and response.
 
 :::image type="content" source="../media/02-end-to-end.png" alt-text="Diagram showing the end to end functionality of Azure Sentinel":::
 
