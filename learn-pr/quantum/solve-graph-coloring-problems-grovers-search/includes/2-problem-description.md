@@ -21,24 +21,23 @@ Here are just some examples:
 
 Some of these problems are better suited to benefit from using Grover's algorithm than the others. We'll use graph coloring problem as an example throughout this module, and the last unit we will return to the question of the quantum speedup and the types of problems that can be solved using Grover's algorithm faster than using a classical algorithm.
 
-
 ## Graph coloring problem
 
 Graph coloring problem (more precisely called [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring)) is formulated as follows: given a graph, assign a label ("color") to each of the graph's vertices so that no two vertices connected by an edge have the same label.
 
 Here is an example graph with five vertices and seven edges:
 
-![Figure 1. A graph](../media/2-uncolored-graph.png)
+![Figure 1. A graph](../media/2-unlabeled-graph.png)
 
 Here is an attempt to color the vertices of this graph using three colors. 
 
-![Figure 2. Invalid vertex coloring](../media/2-invalid-coloring.png)
+![Figure 2. Invalid vertex coloring](../media/2-invalid-labeling.png)
 
 We see that this coloring is not valid using our definition - vertices 0 and 3 are assigned the same color, even though they are connected by an edge.
 
 In fact, the vertices of this graph cannot be labeled using just three colors; you'll need at least four colors to do that.
 
-![Figure 3. Valid vertex coloring](../media/2-valid-coloring.png)
+![Figure 3. Valid vertex coloring](../media/2-valid-labeling.png)
 
 In this module we'll consider the problem of finding a 4-coloring of the graph - a coloring that uses at most four colors. (Without any constraint on the number of colors used, finding a valid graph coloring is trivial - just assign a new label to each vertex you see!)
 

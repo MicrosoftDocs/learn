@@ -38,7 +38,7 @@ units:
 - learn.quantum.solve-graph-coloring-problems-grovers-search.4-implement-quantum-oracle
 - learn.quantum.solve-graph-coloring-problems-grovers-search.5-grovers-algorithm
 - learn.quantum.solve-graph-coloring-problems-grovers-search.6-implement-grovers-algorithm
-- learn.quantum.solve-graph-coloring-problems-grovers-search.7-grovers-algorithm-in-practice
+- learn.quantum.solve-graph-coloring-problems-grovers-search.7-grovers-algorithm-practice
 - learn.quantum.solve-graph-coloring-problems-grovers-search.8-knowledge-check
 - learn.quantum.solve-graph-coloring-problems-grovers-search.9-summary
 badge:

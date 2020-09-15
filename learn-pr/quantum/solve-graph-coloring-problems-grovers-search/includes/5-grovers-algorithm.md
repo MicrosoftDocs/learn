@@ -53,17 +53,17 @@ This means that we can always represent the overall system state as a superposit
 
    If we imagine a plane on which $|good\rangle$ and $|bad\rangle$ vectors correspond to vertical and horizontal axes, respectively, we can plot this state on the plane like this:
 
-   ![Figure 1. A circle showing superposition of all states](../media/5-1-equal-superposition.png)
+   ![Figure 1. A circle showing superposition of all states](../media/5-equal-superposition.png)
 
    The angle $\theta$ depends on the proportion of "good" states among all basis states: $\sin \theta = \sqrt{\frac{M}{N}}$.
 
 2. Next, we apply the oracle. Remember that this operation multiplies the amplitudes of "good" states by $-1$. On the circle plot, this transformation will leave horizontal component of the state vector unchanged and reverses its vertical component. In other words, this operation is a reflection along the horizontal axis:
 
-   ![Figure 2. A circle showing the result of the first reflection](../media/5-2-first-reflection.png)
+   ![Figure 2. A circle showing the result of the first reflection](../media/5-first-reflection.png)
 
 3. Now we apply the diffusion operator. Turns out that its effect is another reflection, this time along the vector $|all\rangle$:
 
-   ![Figure 3. A circle showing the result of the second reflection](../media/5-3-second-reflection.png)
+   ![Figure 3. A circle showing the result of the second reflection](../media/5-second-reflection.png)
 
    Notice how this sequence of two reflections becomes a rotation counterclockwise by an angle $2\theta$. If we repeat this sequence again, reflecting the new state first along the horizontal axis and then along the $|all\rangle$ vector, it will perform a rotation by $2\theta$ again - the angle of this rotation depends only on the angle between the reflection axes and not on the state we reflect. 
 
@@ -75,7 +75,7 @@ This means that we can always represent the overall system state as a superposit
    Our goal is to get one of the "good" states with probability as high as possible, so we need to amplify the amplitudes of "good" states as much as we can (and to reduce the amplitudes of "bad" states correspondingly).
    Geometrically this means that we want to rotate our state vector as close to the vertical axis as possible.
 
-   ![Figure 4. A circle showing the several rotations](../media/5-4-measurement.png)
+   ![Figure 4. A circle showing the several rotations](../media/5-measurement.png)
 
    If we pick the right number of iterations (more on that later), we'll get to the point at which the measurement will produce a correct answer with sufficiently high probability.
 
@@ -113,7 +113,7 @@ After that the probability will grow again and approach 100% on iteration $3 R_{
 > The periodic behavior of the success probability can be explained using the same visualization.
 > Each iteration is a rotation in the same direction by a fixed angle. If we keep iterating, we'll over-rotate our state, and it will start getting further and further away from the vertical axis, thus reducing our success probability.
 >
-> ![Figure 5. A circle showing overrotation](../media/5-5-overrotation.png)
+> ![Figure 5. A circle showing overrotation](../media/5-overrotation.png)
 > 
 > Once the state passes the horizontal axis, further rotations will bring it closer to the vertical axis from the opposite direction, which will increase our success probability again 
 > (remember that measurement probabilities are defined by *squares* of amplitudes, not just amplitudes).
