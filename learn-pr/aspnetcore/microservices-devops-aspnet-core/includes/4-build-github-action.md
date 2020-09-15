@@ -41,6 +41,8 @@ Create a GitHub Action for the build with the following steps:
 
         - name: Build and push Docker image
           uses: docker/build-push-action@v1.1.0
+          env:
+            CONTEXT_PATH: .
           with:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
@@ -50,8 +52,6 @@ Create a GitHub Action for the build with the following steps:
             repository: 'coupon.api'
             tags: 'linux-latest'
             push: true
-            env:
-              CONTEXT_PATH: .
     ```
 
     The preceding YAML defines a GitHub Action that:
