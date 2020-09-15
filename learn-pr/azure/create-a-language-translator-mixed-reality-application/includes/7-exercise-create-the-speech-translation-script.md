@@ -4,7 +4,7 @@ In Unity, displaying the result from an API integration within a Mixed Reality a
 
 A parent object **TranslationUI** is created to store the UI elements inside the object as it's children. Storing the UI elements as the children of **TranslationUI** not only helps keep the project hierarchy organized but also enables the UI elements to inherit properties from the parent such as the Transform.
 
-The UI consists of a quad which serves as a flat surface for the text. Displayed on top of the quad is text. The top portion of the quad contains the recognized text whereas the bottom displays the translated speech.
+The UI consists of a quad which serves as a flat surface for the text. Displayed on top of the quad is text. The top portion of the quad contains the recognized text whereas the bottom displays the translated speech. The UI text elements are similar in setup. Once one text element is created and configured, you can duplicate to save time creating the others.
 
 :::image type="content" source="../media/translator-ui-final.png" alt-text="A screenshot of the complete translator UI. The label Recognized Speech is at the top followed by the label Translation at the bottom. There is blank space after each label to provide room for the Azure result.":::
 
