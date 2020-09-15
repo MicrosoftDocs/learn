@@ -1,6 +1,6 @@
 ![Film card from WONDER WOMAN 1984.](../../wonder-woman-common/media/wonder-woman-1984-coming-to-theaters.png)
 
-With your **decrypt.py** file, you now have the ability to decode any secret message that uses the English alphabet. Your decoded messages will be in all lower case, but that shouldn't take away from the meaning behind them!
+With your **decrypt.py** file, you now have the ability to decode any secret message that uses the English alphabet. Your decoded messages will be in all lowercase, but that shouldn't take away from the meaning behind them.
 
 Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/people/audrey-stjohn?azure-portal=true) for the inspiration for this lesson! 
 
@@ -13,11 +13,11 @@ As an added challenge, you can explore how to:
 
 ## Discover the next coding challenge
 
-With the location and time of the next super hero meeting decoded, it's time to figure out which super hero you really are! In the next module in this learning path, you'll [create a test to determine your super power with Python and Visual Studio Code](LINK TBD).
+With the location and time of the next superhero meeting decoded, it's time to figure out which superhero you really are! In the next module in this learning path, you'll [create a test to determine your superpower with Python and Visual Studio Code](LINK TBD).
 
 ## Dive deeper into Python
 
-If Python has peaked your interest, check out the rest of the [Take your first steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/?azure-portal=true) learning path.
+If Python has piqued your interest, check out the rest of the [Take your first steps with Python](https://docs.microsoft.com/learn/paths/python-first-steps/?azure-portal=true) learning path.
 
 After you complete this learning path, look for other Learn modules to continue your learning journey on our [Student page](https://docs.microsoft.com/learn/roles/student?azure-portal=true). From [tracking global air quality with Azure Maps](https://docs.microsoft.com/learn/modules/azure-maps-track-air-pollution/?azure-portal=true) to [helping remote farmers protect their crops with text message weather alerts by using Azure Functions](https://docs.microsoft.com/learn/modules/send-crop-weather-alerts/?azure-portal=true), we're here to guide you as you explore new technology, develop new coding skills, and solve challenging problems!
 

@@ -35,16 +35,16 @@ quiz:
     choices:  
     - content: "`Error`"
       isCorrect: false
-      explanation: "Incorrect. The code you wrote works with any whole number. If you pass in a negative number, the decoder function parses the word backwards."
+      explanation: "Incorrect. The code you wrote works with any whole number. If you pass in a negative number, the decoder function parses the word backward."
     - content: "`o`"
       isCorrect: false
-      explanation: "Incorrect. For a return value of **o**, you would pass in a `shiftAmount` of **-1**."
+      explanation: "Incorrect. For a return value of **o**, you would pass in a `shiftAmount` value of **-1**."
     - content: "`n`"
       isCorrect: true
       explanation: "Correct. The code you wrote takes the ASCII number value of **p** and adds **-2** to it, which basically subtracts 2!"
     - content: "`P`"
       isCorrect: false
-      explanation: "Incorrect. The code you wrote can't convert a lowercase letter to upper case."
+      explanation: "Incorrect. The code you wrote can't convert a lowercase letter to uppercase."
   
   - content: "The secret time and place inspired by the WONDER WOMAN 1984 film is when and where?"
     choices:  

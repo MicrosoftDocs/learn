@@ -2,7 +2,7 @@ Before you can uncover the true meaning of the secret message, let's walk throug
 
 ## Comments
 
-We can write comments to ourselves that Python will ignore. On any line where we use the number (or, *hash*) `#` symbol, Python ignores everything after the symbol.
+We can write comments to ourselves that Python will ignore. On any line where we use the number or *hash* symbol (`#`), Python ignores everything after the symbol.
 
 Try adding the following code to your **decrypt.py** file:
 
@@ -16,9 +16,9 @@ Press the **Play** button and you should see the same behavior as before.
  
 ## Variables
 
-Coding is essentially the movement and manipulation of data. Imagine writing a message decoder on a calculator where the only data you have access to is the last result of an equation. While that's not impossible, it does seem unnecessarily difficult! 
+Coding is essentially the movement and manipulation of data. Imagine writing a message decoder on a calculator where the only data you have access to is the last result of an equation. Though that's not impossible, it does seem unnecessarily difficult! 
 
-In Python, we have "variables," which are like containers that have a name and store data. You can think of variables like codenames for information that we want our program to remember and have access to later.
+In Python, we have *variables*, which are like containers that have a name and store data. You can think of variables as codenames for information that we want our program to remember and have access to later.
 
 The following command tells Python to associate the codename or variable `diana` with the information "WONDER WOMAN 1984." To do this, you use the assignment equals sign `=` operator. Any time after this command, when Python sees the variable `diana`, it will substitute the value "WONDER WOMAN 1984"!
 
@@ -27,10 +27,10 @@ The following command tells Python to associate the codename or variable `diana`
 diana = "WONDER WOMAN 1984"
 ```
 
-Try it out! Replace the following commands in your **decrypt.py** file. (If you're wondering what the plus sign `+` is for: it "glues together" phrases into a longer phrase.)
+Try it out! Replace the following commands in your **decrypt.py** file. (If you're wondering what the plus sign (`+`) is for: it "glues together" phrases into a longer phrase.)
 
 ```python
-# Associate variable diana with the value "WONDER WOMAN 1984"
+# Associate the variable diana with the value "WONDER WOMAN 1984"
 diana = "WONDER WOMAN 1984"
 
 # Print a message with the true identity of Diana.
@@ -39,7 +39,7 @@ print( "I believe Diana is actually " + diana )
 
 Press the green **Play** button, and you should see Diana's identity revealed.
 
-![Screenshot of the output of the command to print the string value of the variable Diana.](../media/output-string-variables.png)
+![Screenshot of the output of the command to print the string value of the variable diana.](../media/output-string-variables.png)
  
 ## Functions
 
@@ -56,7 +56,7 @@ def chant( phrase ):
     print( phrase + phrase + phrase )
 ```
 
-In this code, the function is called `chant`. The parameter is a variable called `phrase`. The code within the function invokes another function that you didn't write, but which is available to you as part of the Python language `print()` capability. If you were to invoke this function, the value you pass in as the parameter is printed to the console three times.
+In this code, the function is called `chant`. The parameter is a variable called `phrase`. The code within the function invokes another function that you didn't write, but which is available to you as part of the Python language `print()` capability. If you invoke this function, the value you pass in as the parameter is printed to the console three times.
 
 Try it out! Update the commands in your **decrypt.py** file to call the power chant.
 
@@ -75,6 +75,6 @@ Press the green **Play** button. You should see the chant printed in the console
 
 ![Screenshot of the output from the call to the chant function.](../media/chant-output.png)
 
-Great! Now that you know the basics, let's go decrypt the note!
+Great! Now that you know the basics, let's go decrypt the note.
 
 *WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*
