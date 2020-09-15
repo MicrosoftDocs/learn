@@ -21,6 +21,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Experience creating and managing Azure Cosmos DB resources such as an **account**, a **database** and a **container**.
-- Local installation of [Apache Maven](https://maven.apache.org/), [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), and [Java JDK 8 or later versions](https://www.microsoft.com/net/download), and beginner-level familiarity with all three.
-- A Java-language IDE which is installed and which the user knows how to use.
+- Experience creating and managing resources in Azure Cosmos DB, including creation and configuration of Cosmos DB accounts, databases, and containers.
+- Beginner-level familiarity with and local installations of the following tools: [Apache Maven](https://maven.apache.org/), [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), Java JDK 8 or later, and a Java IDE or text editor.
