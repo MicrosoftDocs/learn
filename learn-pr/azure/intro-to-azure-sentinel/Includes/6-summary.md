@@ -1,4 +1,4 @@
-You have learned how Azure Sentinel can meet the requirements of Contoso's SOC Analyst:
+You have learned how Azure Sentinel can meet the requirements of the SOC Analyst's organization:
 
 - Support for data connectors for cloud and hybrid services.
 - Provide the features and functionality that you need, without minimal administration.
