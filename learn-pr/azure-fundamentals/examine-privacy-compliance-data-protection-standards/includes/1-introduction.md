@@ -6,7 +6,7 @@ In general, _compliance_ means to adhere to some law, standard, or set of guidel
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/tailwind-traders-overview.md)]
+[!include[](../../shared/includes/tailwind-traders-overview.md)]
 
 ## How will Tailwind Traders protect their data in the cloud and stay compliant?
 

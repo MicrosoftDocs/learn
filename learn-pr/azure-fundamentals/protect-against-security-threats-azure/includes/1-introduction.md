@@ -4,7 +4,7 @@ Security is a small word for a significant concept. There are so many factors to
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/tailwind-traders-overview.md)]
+[!include[](../../shared/includes/tailwind-traders-overview.md)]
 
 ## How will Tailwind Traders run securely in the cloud and in the datacenter?
 

@@ -2,7 +2,7 @@ Every application and service, whether on-premises or in the cloud, needs to be 
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/tailwind-traders-overview.md)]
+[!include[](../../shared/includes/tailwind-traders-overview.md)]
 
 ## How will Tailwind Traders secure their networks?
 

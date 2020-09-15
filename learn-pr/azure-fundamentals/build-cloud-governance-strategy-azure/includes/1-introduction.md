@@ -14,7 +14,7 @@ Governance is most beneficial when you have:
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/tailwind-traders-overview.md)]
+[!include[](../../shared/includes/tailwind-traders-overview.md)]
 
 ## How will Tailwind Traders improve agility while maintaining control?
 

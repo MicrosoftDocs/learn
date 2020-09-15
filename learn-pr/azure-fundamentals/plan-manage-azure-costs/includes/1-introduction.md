@@ -2,7 +2,7 @@ In this module, you'll learn about the major factors that influence the cost of 
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/tailwind-traders-overview.md)]
+[!include[](../../shared/includes/tailwind-traders-overview.md)]
 
 ## How will Tailwind Traders manage cloud costs?
 

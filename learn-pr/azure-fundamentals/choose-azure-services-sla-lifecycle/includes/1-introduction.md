@@ -2,7 +2,7 @@ In this module, you'll learn about Azure's service-level agreements (SLAs) and h
 
 ## Meet Tailwind Traders
 
-[!include[](../../shared/tailwind-traders-overview.md)]
+[!include[](../../shared/includes/tailwind-traders-overview.md)]
 
 ## How will moving to the cloud impact Tailwind Traders' availability agreements?
 
