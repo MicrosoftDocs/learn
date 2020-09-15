@@ -1,9 +1,8 @@
 ## Enterprise enrollment
 
-> [!NOTE]
-> This module focuses on organizations with Enterprise Agreements who will be deploying into an enterprise-scale architecture. Pay-as-you-go subscriptions, Visual Studio subscriptions, and Cloud Solution Provider (CSP) subscriptions can be used and guidance will be provided in later revisions.
-
 An Enterprise Agreement (EA) enrollment represents the commercial relationship between Microsoft and how your organization uses Azure. It provides the basis for billing across all your subscriptions and affects administration of your digital estate. Your EA enrollment is managed via an Azure EA portal. An enrollment often represents an organization's hierarchy, which includes departments, accounts, and subscriptions. This hierarchy represents cost-enrollment groups within an organization.
+
+This module focuses on organizations with Enterprise Agreements who will be deploying into an enterprise-scale architecture. Pay-as-you-go subscriptions, Visual Studio subscriptions, and Cloud Solution Provider (CSP) subscriptions can be used and guidance will be provided in later revisions.
 
 :::image type="content" source="../media/2-ea.png" alt-text="An Azure EA enrollment hierarchy.":::
 
