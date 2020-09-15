@@ -27,6 +27,9 @@ roles:
 - developer
 products:
 - azure
+- azure-speech
+- azure-speech-translation
+- azure-cognitive-services
 units:
 - learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.1-introduction
 - learn.create-a-language-translator-mixed-reality-application-with-Unity-and-Azure-Cognitive-Services.2-overview-of-speech-translation
