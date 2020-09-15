@@ -102,6 +102,10 @@ If you want to run the code on your local computer and not use VS Code online, e
 1. Type in the command ```dotnet new console``` and press Enter.
 1. A new C# dotnet core project structure is set up for you complete with a Program.cs file, a workspace.csproj file, and the obj folder.
 1. Open the Program.cs file and replace its contents with the C# code above.
+
+    >[!NOTE]
+    >You will need to modify the ``` var fileName = "../media/text_to_speech.wav";``` line to point to the file on your local machine.
+
 1. Review the code and the comments to understand what is taking place when the program runs.
 
 You will now need to add the Microsoft Cognitive Service Speech package to your application.
@@ -195,6 +199,10 @@ If you do not already have Python and Visual Studio Code installed on your local
 1. In Visual Studio Code, select the File icon. Then open the folder you created.
 1. Create a new Python source file, texttospeech.py, by selecting the new file icon.
 1. Copy and paste the Python code from above in the Visual Studio Code Online section.
+
+    >[!NOTE]
+    >You will need to modify the ``` audio_filename = "transcribe_speech_to_text/media/text-to-speech-py.wav" ``` line to point to the file on your local machine.
+
 1. Get your key and region from the Speech resource your created on Azure and paste them in the **YourSubscriptionKey** and **YourServiceRegion** placeholders in the code.
 1. If selected, a Python interpreter displays on the left side of the status bar at the bottom of the window. Otherwise, bring up a list of available Python interpreters. Open the command palette (Ctrl+Shift+P) and enter Python: Select Interpreter. Choose an appropriate one.
 1. You can install the Speech SDK Python package from within Visual Studio Code. Do that if it's not installed yet for the Python interpreter you selected. To install the Speech SDK package, open a terminal. Bring up the command palette again (Ctrl+Shift+P) and enter Terminal: Create New Integrated Terminal. In the terminal that opens, enter the command ```python -m pip install azure-cognitiveservices-speech```.

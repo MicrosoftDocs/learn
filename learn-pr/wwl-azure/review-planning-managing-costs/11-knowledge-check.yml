@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/03/2020
+  ms.date: 08/23/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -23,7 +23,7 @@ quiz:
       explanation: "That's correct. Azure Cost Management is an Azure product that provides a set of tools for monitoring, allocating, and optimizing your Azure costs."
     - content: "Azure Pricing Calculator"
       isCorrect: false
-      explanation: "That's incorrect. The Pricining Calculator only lets to calculate estimated costs."
+      explanation: "That's incorrect. The Pricing Calculator only lets to calculate estimated costs."
     - content: "Total Cost of Ownership Calculator (TCO)"
       isCorrect: false
       explanation: "That's incorrect.  The TCO Calculator is a cost estimate tool for migrating to Azure, not for monitoring."

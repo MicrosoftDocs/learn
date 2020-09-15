@@ -12,11 +12,13 @@ The Mixed Reality Toolkit provides a set of components and features which could 
 
 ## Import the MRTK Unity Foundation package
 
+1. Download the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** from the [MRTK release page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases?azure-portal=true).
+
 1. In the Unity menu, select **Assets** > **Import Package** > **Custom Package**.
 
     :::image type="content" source="../media/import-custom-package.png" alt-text="Screenshot of the Unity editor with the Assets menu expanded. The Import Package and Custom Package options are highlighted.":::
 
-1. In the **Import package...** window, select the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.2.0.unitypackage** you downloaded and click **Open**.
+1. In the **Import package...** window, select the **Microsoft.MixedReality.Toolkit.Unity.Foundation.2.X.X.unitypackage** you downloaded and click **Open**.
 
     :::image type="content" source="../media/select-mrtk-package.png" alt-text="Screenshot of the Import package explorer window open. The Mixed Reality Toolkit foundation package is highlighted in the explorer. The Open button is highlighted.":::
 
@@ -30,7 +32,7 @@ After the MRTK Foundation package is imported, the **MRTK Project Configurator**
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configure Unity Project**.
 
-:::image type="content" source="../media/open-mrtk-project-configurator.png" alt-text="Open MRTK Project Configurator window":::
+:::image type="content" source="../media/open-mrtk-project-configurator.png" alt-text="Open MRTK Project Configurator window.":::
 
 ## Configure the Unity project for the Mixed Reality Toolkit
 
@@ -46,4 +48,4 @@ In the Unity menu, select **Mixed Reality Toolkit** > **Utilities** > **Configur
 
 In the Unity menu, select **Mixed Reality Toolkit** > **Add to Scene and Configure...** to add MRTK to your current scene. Two new objects are added to the Hierarchy: **MixedRealityToolkit** and **MixedRealityPlayspace**.
 
-:::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects":::
+:::image type="content" source="../media/new-mrtk-objects.png" alt-text="New MRTK objects.":::

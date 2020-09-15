@@ -4,9 +4,9 @@ title: Create compute resources
 metadata:
   title: Create compute resources
   description: "Learn about the algorithms used to train machine learning models."
-  ms.date: 07/31/2020
+  ms.date: 09/11/2020
   author: wwlpublish
-  ms.author: cwsuseng
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

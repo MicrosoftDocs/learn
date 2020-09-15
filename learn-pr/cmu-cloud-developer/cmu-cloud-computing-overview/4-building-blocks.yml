@@ -20,17 +20,17 @@ quiz:
 #  - content: "Given below are a set of software and hardware entities. Please associate them with a layer in the cloud building blocks:"
 
 # Learn by doing block question 1
-#  - content: "What kind of service model would you classify Office 365 as?"
+#  - content: "What kind of service model would you classify Microsoft 365 as?"
 #    choices:
 #    - content: "Infrastructure as a service (IaaS)"
 #      isCorrect: false
-#      explanation: "Incorrect. Think about what Office 365 offers to the end user."
+#      explanation: "Incorrect. Think about what Microsoft 365 offers to the end user."
 #    - content: "Platform as a service (PaaS)"
 #      isCorrect: false
-#      explanation: "Incorrect. Think about what Office 365 offers to the end user."
+#      explanation: "Incorrect. Think about what Microsoft 365 offers to the end user."
 #    - content: "Software as a service (SaaS)"
 #      isCorrect: true
-#      explanation: "Correct! Office 365 and other web-based productivity services are examples of software as a service. Software (in this case, document management and collaborative editing) is developed in a web-based form and served to users over the internet."
+#      explanation: "Correct! Microsoft 365 and other web-based productivity services are examples of software as a service. Software (in this case, document management and collaborative editing) is developed in a web-based form and served to users over the internet."
 #  
 
 # Learn by doing block question 2

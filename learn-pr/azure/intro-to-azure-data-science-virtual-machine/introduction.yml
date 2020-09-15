@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-data-science-virtual-machine.introduction
+metadata:
+  title: Introduction to the Data Science Virtual Machine
+  description: You'll learn about the features of the Data Science Virtual Machine and the options available for creating them. 
+  ms.date: 08/28/2020
+  author: lobrien
+  ms.author: laobri
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+title: Introduction to the Data Science Virtual Machine
+durationInMinutes: 2
+content: |
+  [!include[](includes/introduction.md)]
