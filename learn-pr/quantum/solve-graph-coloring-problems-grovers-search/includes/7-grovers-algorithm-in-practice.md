@@ -17,4 +17,6 @@ For comparison, doing an exhaustive classical search (choosing a random input, c
 
 However, this analysis doesn't take into account the complexity of evaluating the function, both in classical and in quantum cases. If a function evaluation is a lot more complicated on a quantum computer than on a classical one, the overall algorithm runtime will be worse in the quantum case, even though technically it will use fewer queries.
 
+For example, if the function is defined as a classical "black box", you can't use the internal structure of the function to implement the quantum oracle, so each quantum query will have to evaluate the classical function for each of the $N$ inputs - you'd be better off with just doing an exhaustive classical search in the first place.
+
 Thus, only the problems that allow to compute success criteria fast on a quantum computer can be a practical application for Grover's algorithm.

@@ -6,20 +6,21 @@
     open Microsoft.Quantum.Intrinsic;
 
 
-    operation MarkColorEquality (c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
+    operation MarkColorEquality(c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
         within {
+            // Iterate over pairs of qubits in matching positions in c0 and c1.
             for ((q0, q1) in Zip(c0, c1)) {
-                // compute XOR of bits q0 and q1 in place (storing it in q1)
+                // Compute XOR of bits q0 and q1 in place (storing it in q1).
                 CNOT(q0, q1);
             }
         } apply {
-            // if all computed XORs are 0, the bit strings are equal
+            // If all computed XORs are 0, the bit strings are equal - flip the state of the target.
             (ControlledOnInt(0, X))(c1, target);
         }
     }
 
 
-    operation MarkValidVertexColoring (
+    operation MarkValidVertexColoring(
         edges : (Int, Int)[], 
         colorsRegister : Qubit[], 
         target : Qubit
@@ -45,7 +46,7 @@
 
 
     @EntryPoint()
-    operation ShowColoringValidationCheck () : Unit {
+    operation ShowColoringValidationCheck() : Unit {
         // Graph description: hardcoded from the example
         let nVertices = 5;
         let edges = [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (3, 4)];

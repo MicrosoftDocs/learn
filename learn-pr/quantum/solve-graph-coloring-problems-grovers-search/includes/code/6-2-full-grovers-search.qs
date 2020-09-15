@@ -8,7 +8,7 @@
     open Microsoft.Quantum.Intrinsic;
 
 
-    operation MarkColorEquality (c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
+    operation MarkColorEquality(c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
         within {
             for ((q0, q1) in Zip(c0, c1)) {
                 CNOT(q0, q1);
@@ -19,7 +19,7 @@
     }
 
 
-    operation MarkValidVertexColoring (
+    operation MarkValidVertexColoring(
         edges : (Int, Int)[], 
         colorsRegister : Qubit[], 
         target : Qubit
@@ -39,7 +39,7 @@
     }
 
 
-    operation MarkingOracleAsPhaseOracle (
+    operation MarkingOracleAsPhaseOracle(
         markingOracle : ((Qubit[], Qubit) => Unit is Adj), 
         register : Qubit[]
     ) : Unit is Adj {
@@ -54,7 +54,7 @@
     }
 
 
-    operation GroversSearchLoop (register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
+    operation GroversSearchLoop(register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
         ApplyToEach(H, register);
         
         for (_ in 1 .. iterations) {
@@ -70,7 +70,7 @@
 
 
     @EntryPoint()
-    operation SolveGraphColoringProblem () : Unit {
+    operation SolveGraphColoringProblem() : Unit {
         // Graph description: hardcoded from the example
         let nVertices = 5;
         let edges = [(0, 1), (0, 2), (0, 3), (1, 2), (1, 3), (2, 3), (3, 4)];

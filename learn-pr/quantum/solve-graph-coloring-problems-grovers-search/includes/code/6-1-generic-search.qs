@@ -3,7 +3,7 @@
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Intrinsic;
 
-    operation GroversSearchLoop (register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
+    operation GroversSearchLoop(register : Qubit[], phaseOracle : ((Qubit[]) => Unit is Adj), iterations : Int) : Unit {
         // Prepare an equal superposition of all basis states
         ApplyToEach(H, register);
         

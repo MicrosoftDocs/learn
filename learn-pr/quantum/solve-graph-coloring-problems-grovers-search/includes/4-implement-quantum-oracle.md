@@ -1,5 +1,25 @@
 Now, you will implement a quantum oracle for the graph coloring problem.
 
+## Create the project
+
+Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. To do so:
+
+1. On the **View** menu, select **Command Palette**.
+1. Enter **Q#: Create New Project**.
+1. Select **Standalone console application**.
+1. Select a directory to hold your project, such as your home directory. Enter *ExploringGroversSearch* as the project name, then select **Create Project**.
+1. From the window that appears at the bottom, select **Open new project**.
+
+Like before, you see two files: the project file and *Program.qs*, which contains starter code. 
+
+For each of the code snippets in this module, you should copy the whole snippet to replace the contents of the file *Program.qs*. 
+After that, open the integrated terminal (from the **Terminal** menu, select **New Terminal**) and run `dotnet run`:
+
+```dotnetcli
+dotnet run
+```
+
+
 ## Representing the graph
 
 We need two parameters to represent a graph: the number of vertices and the list of edges. 
@@ -66,6 +86,14 @@ Here is the Q# code that implements this check and uses it to compare two regist
 
 :::code language="qsharp" source="code/4-3-color-equality.qs":::
 
+> [!NOTE]
+> [`DumpRegister`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpregister) function is similar to `DumpMachine` you've seen in the previous modules, but it prints the information about the state of a subset of qubits (a register), rather than all qubits used by the program. 
+> It can only be used if that register is not entangled with the rest of the qubits.
+
+> [!NOTE]
+> In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 
+> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](https://docs.microsoft.com/quantum).
+
 Here is the output of this code:
 
 ```output
@@ -92,11 +120,12 @@ The state of qubits c1 and target after the equality check:
 ∣7❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]
 ```
 
+> [!NOTE]
+> As a reminder, the indices in `DumpMachine`/`DumpRegister` output are encoded in little endian, so the index `|1❭` corresponds to bit string `100`, with the least significant bit stored first.
+
 We see that in the beginning the state of the system is 
 
 $$|00\rangle\_{c0} \otimes \frac12\big(|00\rangle + |10\rangle + |01\rangle + |11\rangle\big)\_{c1} \otimes |0\rangle\_{target}$$
-
-> Remember that `DumpRegister` indices are encoded in little endian, so the index `1` corresponds to bit string `100`, with the least significant bit stored first.
 
 After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change: the amplitude of the $|00\rangle\_{c1} \otimes |0\rangle\_{target}$ state becomes 0, and the amplitude of the $|00\rangle\_{c1} \otimes |1\rangle\_{target}$ state becomes $0.25$. In fact, these two amplitudes are swapped as the result of applying this check.
 
@@ -104,6 +133,7 @@ Indeed, since the colors encoded in the state $|00\rangle\_{c0} \otimes |00\rang
 
 $$|00\rangle_{c0} \otimes \frac12\big(|00\rangle_{c1} \otimes |1\rangle_{target} + |10\rangle_{c1} \otimes |0\rangle_{target} + |01\rangle_{c1} \otimes |0\rangle_{target} + |11\rangle_{c1} \otimes |0\rangle_{target} \big)$$
 
+> [!NOTE]
 > Note that the `target` qubit becomes entangled with the register `c1`: you can no longer separate their states!
 > If the value of the function we're evaluating is the same for all inputs, the target qubit will stay not entangled with the input register, storing this value instead. 
 > In our case, some inputs yield $f(x) = 0$ and some yield $f(x) = 1$, so you cannot separate the information about the inputs from the information about the output any longer.

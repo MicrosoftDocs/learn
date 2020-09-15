@@ -6,20 +6,21 @@
     open Microsoft.Quantum.Intrinsic;
 
 
-    operation MarkColorEquality (c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
+    operation MarkColorEquality(c0 : Qubit[], c1 : Qubit[], target : Qubit) : Unit is Adj+Ctl {
         within {
+            // Iterate over pairs of qubits in matching positions in c0 and c1.
             for ((q0, q1) in Zip(c0, c1)) {
-                // compute XOR of bits q0 and q1 in place (storing it in q1)
+                // Compute XOR of bits q0 and q1 in place (storing it in q1).
                 CNOT(q0, q1);
             }
         } apply {
-            // if all computed XORs are 0, the bit strings are equal
+            // If all computed XORs are 0, the bit strings are equal - flip the state of the target.
             (ControlledOnInt(0, X))(c1, target);
         }
     }
 
 
-    operation MarkingOracleAsPhaseOracle (
+    operation MarkingOracleAsPhaseOracle(
         markingOracle : ((Qubit[], Qubit[], Qubit) => Unit is Adj), 
         c0 : Qubit[],
         c1 : Qubit[]
@@ -40,7 +41,7 @@
 
 
     @EntryPoint()
-    operation ShowPhaseKickbackTrick () : Unit {
+    operation ShowPhaseKickbackTrick() : Unit {
         using ((c0, c1) = (Qubit[2], Qubit[2])) {
             // Leave register c0 in the |00⟩ state.
 

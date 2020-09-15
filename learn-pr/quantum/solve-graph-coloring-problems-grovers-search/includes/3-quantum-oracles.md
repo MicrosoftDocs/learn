@@ -32,7 +32,7 @@ The best way to represent classical computations in a quantum algorithm depends 
 
 ## Quantum oracles
 
-A quantum oracle is a "black box" operation that is used as input to another algorithm (in this case Grover's search algorithm, but the term is broadly used [in classical computing](https://en.wikipedia.org/wiki/Oracle_machine) as well). 
+A quantum oracle is a "black box" operation that is used as input to another algorithm (in this case Grover's search algorithm, but the term is broadly used in classical computing as well). 
 Some quantum algorithms are described in terms of quantum oracles to emphasize that they can be applied to a broad class of problems and do not depend on the specific problem, as long as it can be efficiently implemented as a quantum oracle. 
 For such algorithms, their runtime analysis is done in terms of the number of oracle calls (that is, function evaluations), rather than in terms of primitive operations the algorithm will do.
 

@@ -7,18 +7,25 @@ metadata:
   ms.author: mamykhai
   ms.topic: tutorial
   ms.prod: learning-quantum
-title: Solve graph coloring problems by using Grover's search
+title: Solve graph coloring problems using Grover's search
 summary: Learn how Grover's algorithm can help you solve search problems such as graph coloring problems.
 abstract: |
-  In this module, you will:
-  - Understand the roles _interference_ and _entanglement_ play in building quantum algorithms.
-  - Learn to build _quantum oracles_ to use in quantum search algorithm.
-  - Create a Q# program that uses Grover's search algorithm to solve a graph coloring problem.
+After completing this module, you'll be able to:
+ - Build _quantum oracles_ that implement classical functions on a quantum computer.
+ - Explain the roles _superposition_, _interference_, and _entanglement_ play in building quantum algorithms.
+ - Write a Q# program that uses Grover's search algorithm to solve a graph coloring problem.
+ - Recognize the kinds of problems for which Grover's search algorithm can offer speedup compared to classical algorithms.
 prerequisites: |
-  - [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
+  - The latest version of [.NET Core](https://dotnet.microsoft.com/download?azure-portal=true)
+  - [Visual Studio Code](https://code.visualstudio.com/download?azure-portal=true)
+  - The [Quantum Development Kit](https://docs.microsoft.com/quantum/quickstarts/install-command-line?view=qsharp-preview&tabs=tabid-vscode?azure-portal=true)
+
+You will need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement.
+
+You will also need some familiarity with Q# and the Quantum Development Kit.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-- beginner
+- intermediate
 roles:
 - developer
 products:
