@@ -33,13 +33,13 @@ quiz:
     choices:
     - content: "Center for Internet Security best practices"
       isCorrect: false
-      explanation: "That's incorrect. Though an important security organization, its programs aren't used with Azure Sentinel."
+      explanation: "That's incorrect. Though an important security organization, Azure Sentinel doesn't use its tools."
     - content: "MITRE ATT&CK framework"
       isCorrect: true
       explanation: "That's correct. Azure Sentinel hunting is based on the MITRE ATT&CK framework."
     - content: "Microsoft Security Development Lifecycle (SDL)"
       isCorrect: false
-      explanation: "That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for building more secure products and services."
+      explanation: "That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for helping to build more secure products and services."
 
 
   - content: "The Azure Sentinel agent is actually a:" 
@@ -59,16 +59,16 @@ quiz:
     choices:
     - content: "Edit workbooks"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader can only review data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
     - content: "Review data, incidents, workbooks, and other Azure Sentinel resources."
       isCorrect: true
-      explanation: "That's correct. Azure Sentinel Reader can review data, incidents, workbooks, and other Azure Sentinel resources."
-    - content: "Create and run PlayBook"
+      explanation: "That's correct. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
+    - content: "Create and manage an incident log"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader can only review data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
 
 
-  - content: "Which of the following is required in order to connect Azure Sentinel to Azure AD?"
+  - content: "Which of the following is required to connect Azure Sentinel to Azure AD?"
     choices:
     - content: "You need an Azure AD P1 or P2 license"
       isCorrect: true
@@ -78,4 +78,4 @@ quiz:
       explanation: "That's incorrect. Azure AD Connect is a tool for connecting on-premises identity infrastructure to Microsoft Azure AD."
     - content: "Azure AD Domain Services must be enabled"
       isCorrect: false
-      explanation: "That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for the connection between Azure Sentinel and Azure AD."
+      explanation: "That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for connecting Azure Sentinel and Azure AD."
