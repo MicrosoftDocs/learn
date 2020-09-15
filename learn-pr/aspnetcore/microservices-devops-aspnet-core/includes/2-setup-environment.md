@@ -4,7 +4,7 @@ In this unit, you'll deploy the simplified version of *eShopOnContainers* to Azu
 
 ## Run deployment script
 
-1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core?azure-portal=true) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking).
+1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core?azure-portal=true) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking?azure-portal=true).
 1. Run the following command in the command shell. When prompted for **Repo URL**, enter the URL of your fork created in the first step.
 
     ```bash
@@ -24,7 +24,7 @@ In this unit, you'll deploy the simplified version of *eShopOnContainers* to Azu
 
     [!INCLUDE[Instructions for restoring the default Cloud Shell configuration](../../includes/microservices/revert-cloud-shell-configuration.md)]
 
-The script takes several minutes to complete. It deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
+The script takes several minutes to complete. It deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers?azure-portal=true). The solution architecture of the app is pictured in the following diagram:
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 

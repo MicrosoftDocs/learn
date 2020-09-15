@@ -57,7 +57,7 @@ Create a GitHub Action for the build with the following steps:
     - Defines environment variables that are used tasks in the specification.
     - Has one job&mdash;a set of steps that execute on the same runner&mdash;named `build-and-push-docker-image`. The job:
         - Builds the Docker image and pushes it to the ACR instance.
-        - Runs in an `ubuntu-latest` runner and has two steps, both of which are standard actions available from [GitHub Action's marketplace](https://github.com/marketplace?type=actions):
+        - Runs in an `ubuntu-latest` runner and has two steps, both of which are standard actions available from the [GitHub Actions marketplace](https://github.com/marketplace?type=actions&azure-portal=true):
             - `Get code from the repository` checks out the `main` branch.
             - `Build and push Docker image` builds the image and pushes it to ACR.
 
