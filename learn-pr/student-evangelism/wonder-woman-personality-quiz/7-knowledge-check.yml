@@ -36,7 +36,7 @@ quiz:
     - content: "if x is 10"
       isCorrect: false
       explanation: "Incorrect, Python does not have an is keyword"
-     - content: "if x equals 10"
+    - content: "if x equals 10"
        isCorrect: false
        explanation: "Incorrect, Python does not have an equals keyword."
     - content: "if x == 10"
