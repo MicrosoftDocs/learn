@@ -28,3 +28,32 @@ quiz:
     - content: "Any; if-, elif-, or else-statement"
       isCorrect: false
       explanation: "Incorrect, only one is correct."
+  - content: "How do you test if variable x has a value of 10?"
+    choices:
+    - content: "if x = 10"
+      isCorrect: false
+      explanation: "Incorrect, if you only have one = sign, you are assigning the value to the variable, even if it's in an if-statement"
+    - content: "if x is 10"
+      isCorrect: false
+      explanation: "Incorrect, Python does not have an is keyword"
+    - content: "if x equals 10"
+      isCorrect: false
+      explanation: "Incorrect, Python does not have an equals keyword."
+    - content: "if x == 10"
+      isCorrect: true
+      explanation: "Correct, you must use two = signs when comparing a value to a variable."
+  - content: "What's true about coding?"
+    choices:
+    - content: "Coding isn't a part of live-action movie making."
+      isCorrect: false
+      explanation: "False. Almost every industry has software built by coders that impacts it. Even live-action movies use software for special effects, editing, sound, and so much more!"
+    - content: "Coding is only for experts."
+      isCorrect: false
+      explanation: "False. While the folks who build the software that lands space shuttles on the moon are experts, the beauty of learning to code is, if you mess up, you can just re-run your code!"
+    - content: "You have to have a Windows computer to code."
+      isCorrect: false
+      explanation: "False. Coding can be done on almost any computer, even netbooks! With software-live Visual Studio Code, you can even have the same editor across multiple devices!"
+    - content: "Coding is for everyone."
+      isCorrect: true
+      explanation: "True! Even if you don't want to be a developer as your career, learning to code helps you develop problem-solving skills and gives you insight into the software you use everyday."
+
