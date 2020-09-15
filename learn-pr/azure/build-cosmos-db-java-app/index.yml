@@ -15,7 +15,6 @@ abstract: |
   - Learn how to send requests to Azure Cosmos DB from a Java application
   - Create an application to store and query data in Azure Cosmos DB
 prerequisites: |
-  - An Azure Subscription with an Azure Cosmos DB account already created
   - Local installations of [Apache Maven](https://maven.apache.org/), [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git), and [Java JDK 8 or later versions](https://www.microsoft.com/net/download), and beginner-level familiarity with all three.
   - Experience creating and managing resources in Azure Cosmos DB, including creation and configuration of Cosmos DB accounts, databases, and containers.
 iconUrl: /learn/achievements/generic-badge.svg
