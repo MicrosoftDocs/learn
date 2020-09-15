@@ -9,7 +9,7 @@ In this module, you will implement Grover's search algorithm end-to-end - from t
 
 Here is the Q# code that implements the core of Grover's algorithm we've learned in the previous unit.
 
-:::code language="qsharp" source="code/6-1-generic-search.qs":::
+:::code language="qsharp" source="code/6-program-1.qs":::
 
 Let's take a moment to highlight an important property of this code (the full code analysis is outside of scope of this module): this code is generic - it can be used to solve *any* search problem!  
 
@@ -36,7 +36,7 @@ Now we are ready to put together everything we've learned so far and to solve th
 
 Here is the full code.
 
-:::code language="qsharp" source="code/6-2-full-grovers-search.qs":::
+:::code language="qsharp" source="code/6-program-2.qs":::
 
 You will recognize the first three operations as the oracle implementation from unit 4, and the fourth one - as the generic search algorithm implementation we've seen earlier in this unit.
 

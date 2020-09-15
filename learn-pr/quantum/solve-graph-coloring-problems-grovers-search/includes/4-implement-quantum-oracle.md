@@ -30,7 +30,7 @@ In Q#, we will store the number of vertices `nVertices` as an integer, and the l
 
 The structure of our example graph can be represented as follows:
 
-:::code language="qsharp" source="code/4-1-graph-description.qs":::
+:::code language="qsharp" source="code/4-program-1.qs":::
 
 ## Representing the vertex coloring
 
@@ -41,7 +41,7 @@ We need to represent our coloring in a bit string, so we'll use a bit string of 
 
 Here is how the coloring of the example graph above will be encoded and interpreted:
 
-:::code language="qsharp" source="code/4-2-graph-coloring.qs":::
+:::code language="qsharp" source="code/4-program-2.qs":::
 
 This code will produce the following output:
 
@@ -84,7 +84,7 @@ And to compare a pair of bits, we can compute their XOR: if it is 0, the bits ar
 
 Here is the Q# code that implements this check and uses it to compare two registers: the first one in the $|00\rangle$ state and the second one in an equal superposition of all basis states.
 
-:::code language="qsharp" source="code/4-3-color-equality.qs":::
+:::code language="qsharp" source="code/4-program-3.qs":::
 
 > [!NOTE]
 > [`DumpRegister`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpregister) function is similar to `DumpMachine` you've seen in the previous modules, but it prints the information about the state of a subset of qubits (a register), rather than all qubits used by the program. 
@@ -153,7 +153,7 @@ Finally, we will compute the final result: if all extra qubits allocated are in 
 
 Here is the Q# code that validates that the vertex coloring is valid.
 
-:::code language="qsharp" source="code/4-4-validate-coloring.qs":::
+:::code language="qsharp" source="code/4-program-4.qs":::
 
 Here is the output of this code:
 
@@ -184,7 +184,7 @@ But if you apply these steps to a superposition state, you'll see that the basis
 
 Here is what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation.
 
-:::code language="qsharp" source="code/4-5-phase-kickback.qs":::
+:::code language="qsharp" source="code/4-program-5.qs":::
 
 ```output
 The starting state of qubits c1:
