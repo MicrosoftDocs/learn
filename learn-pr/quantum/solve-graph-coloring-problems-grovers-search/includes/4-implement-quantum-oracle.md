@@ -46,11 +46,11 @@ Here is how the coloring of the example graph above will be encoded and interpre
 This code will produce the following output:
 
 ```output
-Vertex 0 - color 0 (red)
-Vertex 1 - color 1 (green)
-Vertex 2 - color 2 (blue)
-Vertex 3 - color 3 (yellow)
-Vertex 4 - color 2 (blue)
+Vertex 0 - color #0 (red)
+Vertex 1 - color #1 (green)
+Vertex 2 - color #2 (blue)
+Vertex 3 - color #3 (yellow)
+Vertex 4 - color #1 (green)
 ```
 
 When we work with graph coloring in a quantum program, we use the same encoding, but with basis states $|0\rangle$ and $|1\rangle$ instead of classical bits `false` and `true`. 
