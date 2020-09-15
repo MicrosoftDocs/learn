@@ -4,21 +4,25 @@ Now it's time to create the outline of your quiz code!
 
 To start, you will ask five questions and have only two options for each:
 
-1. How would you prefer to spend your evening? 
-    1. Reading a book
-    2. Attending a party
-2. What's your dream job?
-    1. Curator at the Smithsonian
-    2. Running a business
-3. What's more important? 
-    1. Money
-    2. Love
-4. What's your favorite decade?
-    1. 1910s
-    2. 1980s
-5. What's your favorite way to travel?
-    1. Driving
-    2. Flying
+1. How would you prefer to spend your evening?
+   1. Reading a book
+   2. Attending a party
+
+1. What's your dream job?
+   1. Curator at the Smithsonian
+   2. Running a business
+
+1. What's more important?
+   1. Money
+   2. Love
+
+1. What's your favorite decade?
+   1. 1910s
+   1. 1980s
+
+1. What's your favorite way to travel?
+   1. Driving
+   2. Flying
 
 We'll use these questions to determine which of the following four you are most like:
 
