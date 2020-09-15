@@ -27,7 +27,7 @@ Your editor should resemble this:
 
 To have Python follow your commands, press the **Play** button at the upper right. You should see a message from Python:
 
-![Screenshot of the Python confirmation message: Hello, them mess scare ah execution.](../media/output-for-hello-themyscira.png)
+![Screenshot of the Python confirmation message: Hello, them mess scare ah execution.](../media/hello-themyscira-output.png)
 
 Now you're ready to learn some of the Python basics that you need to build your decoder.
 
