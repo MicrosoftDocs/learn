@@ -23,7 +23,7 @@ Let's start with an outline of the algorithm, and then discuss what each step do
 
      > This step does not depend on our problem.
 
-   Overall one iteration *decreases* the amplitudes of the basis states that are not solutions to our problem, and *increases* the amplitudes of the basis states that are solutions, while keeping both types of amplitudes positive.
+   Overall, one iteration *decreases* the amplitudes of the basis states that are not solutions to our problem, and *increases* the amplitudes of the basis states that are solutions, while keeping both types of amplitudes positive.
 
 3. Finally, we measure the state of the system.  
    Repeating the iteration several times will introduce significant difference between the two types of amplitudes, so the measurement will yield the answer with a high probability.
@@ -86,7 +86,7 @@ Grover's search algorithm has several important properties that are worth callin
 
 ### Grover's algorithm is probabilistic
 
-The final measurement will produce a result that solves our problem with high probability, but not with absolute certainty; in most cases there remains a small probability of failure.
+The final measurement will produce a result that solves our problem with high probability, but not usually with absolute certainty; in most cases there remains a small probability of failure.
 
 We have to deal with the possible failure in the same way we're dealing with classical randomized algorithms: check whether the result we got is indeed a solution to our problem, and if it's not, rerun the algorithm from scratch. 
 Unfortunately, there is no way to use the result we obtained to improve the chances of success for the next attempt.
@@ -101,7 +101,7 @@ If our problem has $N$ possible variable assignments, and $M$ of them are soluti
 $$R_{opt} \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}$$
 
 Continuing to iterate past that number will start reducing that probability, until we reach nearly-zero success probability on iteration $2 R_{opt}$. 
-After that the probability will grow again and approach 100% on iteration $3 R_{opt}$, and so on.
+After that, the probability will grow again and approach 100% on iteration $3 R_{opt}$, and so on.
 
 > [!NOTE]
 > To understand this behavior, recall our circle visualization. 

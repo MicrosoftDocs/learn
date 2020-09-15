@@ -53,7 +53,7 @@ Vertex 3 - color #3 (yellow)
 Vertex 4 - color #1 (green)
 ```
 
-When we work with graph coloring in a quantum program, we use the same encoding, but with basis states $|0\rangle$ and $|1\rangle$ instead of classical bits `false` and `true`. 
+When we work with graph coloring in a quantum program, we use the same encoding, but with the basis states $|0\rangle$ and $|1\rangle$ instead of the classical bits `false` and `true`. 
 The same coloring would be represented as a 10-qubit state $|0010011101\rangle$.
 
 ## Implementing the oracle
@@ -63,7 +63,7 @@ A typical approach to implementing a quantum oracle for a given function is as f
 1. Break down the classical function into small building blocks that are easy to implement.  
   Any Boolean function can be implemented using [primitive logic gates](https://en.wikipedia.org/wiki/Logic_gate). You can either use primitive logic gates to get a low-level representation or higher level building blocks that take advantage of Q# library operations implementing them.
 
-2. Replace each classical block with a sequence of quantum gates that implement it using amplitudes encoding.  
+2. Replace each classical block with a sequence of quantum gates that implement it using amplitude encoding.  
   Each of the primitive logic gates can be implemented using one or several quantum gates. Sometimes we'll need to allocate an extra qubit to hold the computation result of the gate. For example,  
    * Classical NOT gate is equivalent to the X gate.
    * Classical XOR gate can be implemented using the CNOT gate.
@@ -80,14 +80,14 @@ The smallest building block for checking whether the given graph coloring is val
 
 The operation that implements this check has to take two 2-qubit registers as inputs, representing the colors of the vertices, and a qubit we'll use to mark the result of the comparison by flipping its state if the colors are the same.
 To compare the registers, we compare their corresponding bits to each other; if all pairs of bits are the same, then the registers are the same.
-And to compare a pair of bits, we can compute their XOR: if it is 0, the bits are the same, otherwise they are different.
+To compare a pair of bits, we can compute their XOR: if it is 0, the bits are the same, otherwise they are different.
 
 Here is the Q# code that implements this check and uses it to compare two registers: the first one in the $|00\rangle$ state and the second one in an equal superposition of all basis states.
 
 :::code language="qsharp" source="code/4-program-3.qs":::
 
 > [!NOTE]
-> [`DumpRegister`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpregister) function is similar to `DumpMachine` you've seen in the previous modules, but it prints the information about the state of a subset of qubits (a register), rather than all qubits used by the program. 
+> The [`DumpRegister`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpregister) function is similar to `DumpMachine` you've seen in the previous modules, but it prints the information about the state of a subset of qubits (a register), rather than all qubits used by the program. 
 > It can only be used if that register is not entangled with the rest of the qubits.
 
 > [!NOTE]
@@ -177,7 +177,7 @@ We can do it using so-called "phase kickback trick":
 2. Apply the marking operation $U^{state}$ with this extra qubit as target.  
 What happens to the register that encodes the coloring at this step? 
    * If the basis state $|x\rangle$ encodes an invalid coloring, the state will not change.
-   * But if the basis state $|x\rangle$ encodes an valid coloring, the operation $U^{state}$ will flip the state of the extra qubit, converting it to $\frac{1}{\sqrt2}(|1\rangle - |0\rangle)$, which is equivalent to multiplying the whole state by $-1$.
+   * On the other hand, if the basis state $|x\rangle$ encodes an valid coloring, the operation $U^{state}$ will flip the state of the extra qubit, converting it to $\frac{1}{\sqrt2}(|1\rangle - |0\rangle)$, which is equivalent to multiplying the whole state by $-1$.
 
 If you apply these steps to a basis state, you won't be able to tell the difference - the global phase will not be observable. 
 But if you apply these steps to a superposition state, you'll see that the basis states that encode valid colorings will acquire the $-1$ relative phase - and that's exactly the effect we need the phase operation to have!

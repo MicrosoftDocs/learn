@@ -1,4 +1,4 @@
-In this section, we define the problem solved by Grover's search algorithm - so-called "search problem" - and take a closer look at the ways various real-life problems can be represented in terms of this problem.
+In this section, we define the problem solved by Grover's search algorithm — the so-called "search problem"  — and take a closer look at the ways various real-life problems can be represented in terms of this problem.
 
 ## The search problem
 
@@ -41,6 +41,6 @@ In fact, the vertices of this graph cannot be labeled using just three colors; y
 
 In this module we'll consider the problem of finding a 4-coloring of the graph - a coloring that uses at most four colors. (Without any constraint on the number of colors used, finding a valid graph coloring is trivial - just assign a new label to each vertex you see!)
 
-In general graph coloring is an [NP-complete problem](https://en.wikipedia.org/wiki/NP-completeness) and the best known solutions take exponential time to run. 
+In general, graph coloring is an [NP-complete problem](https://en.wikipedia.org/wiki/NP-completeness) and the best known solutions take exponential time to run.
 
 In the next parts of this module, you'll see how quantum computing can help speed up solving this problem.

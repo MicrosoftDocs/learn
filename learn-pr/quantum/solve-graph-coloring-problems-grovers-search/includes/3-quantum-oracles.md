@@ -14,7 +14,7 @@ In this case, applying the operation $U_f^{phase}$ converts the state $a_0 |0\ra
 
 2. Alternatively, we can allocate an extra qubit $y$ and encode the values $f(0)$ and $f(1)$ in the state of that qubit.  
 In this case, we split the joint state of our data qubit and the extra qubit into a linear combination of basis states $a_{00} |0\rangle_x|0\rangle_y + a_{01} |0\rangle_x|1\rangle_y + a_{10} |1\rangle_x|0\rangle_y + a_{11} |1\rangle_x|1\rangle_y$ and apply the operation $U_f^{state}$ to each of the basis states separately. 
-This operation will convert a basis state $|x\rangle|y\rangle$ into $|x\rangle|y \oplus f(x)\rangle$ ($\oplus$ is addition modulo 2). 
+This operation will transform a basis state $|x\rangle|y\rangle$ into $|x\rangle|y \oplus f(x)\rangle$ ($\oplus$ is addition modulo 2). 
 In other words, the operation $U_f^{state}$ doesn't change the basis states for which $f(x) = 0$, and flips the state of the extra qubit for the states for which $f(x) = 1$. 
 The full effect on the superposition can be deduced using the fact that quantum operations are linear: our starting state will be transformed to $a_{00} |0\rangle_x|f(0)\rangle_y + a_{01} |0\rangle_x|1 \oplus f(0)\rangle_y + a_{10} |1\rangle_x|f(1)\rangle_y + a_{11} |1\rangle_x|1 \oplus f(1)\rangle_y$. 
 In this case, the extra qubit will often end up entangled with the data qubits.
@@ -32,11 +32,11 @@ The best way to represent classical computations in a quantum algorithm depends 
 
 ## Quantum oracles
 
-A quantum oracle is a "black box" operation that is used as input to another algorithm (in this case Grover's search algorithm, but the term is broadly used in classical computing as well). 
+A quantum oracle is a "black box" operation that is used as input to another algorithm (in this case Grover's search algorithm, but the term "oracle" is broadly used in classical computing as well). 
 Some quantum algorithms are described in terms of quantum oracles to emphasize that they can be applied to a broad class of problems and do not depend on the specific problem, as long as it can be efficiently implemented as a quantum oracle. 
-For such algorithms, their runtime analysis is done in terms of the number of oracle calls (that is, function evaluations), rather than in terms of primitive operations the algorithm will do.
+For such algorithms, their runtime analysis is usually done in terms of the number of oracle calls (that is, function evaluations), rather than in terms of primitive operations the algorithm will do.
 
-When we use an algorithm described in terms of quantum oracles to solve a specific problem, we need to implement the quantum oracle for this problem - in case of Grover's search algorithm, the oracle computes the value of the function $f(x)$ that we're trying to invert.
+When we use an algorithm described in terms of quantum oracles to solve a specific problem, we need to implement the quantum oracle for this problem — in case of Grover's search algorithm, the oracle computes the value of the function $f(x)$ that we're trying to invert.
 
 The branch of quantum computing that studies the techniques of implementing classical computations on a quantum computer is called *reversible computing*. We will return to the question of implementing quantum oracles efficiently in the last unit when we discuss the types of problems that can benefit from Grover's algorithm.
 
