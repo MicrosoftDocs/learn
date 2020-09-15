@@ -18,11 +18,11 @@ fiveTen = 5 % 10
 
 The result is:
 
-| Variable | Formula | Value |
-|----------|---------|:-----:|
-| `threeTwo`   | 3/2 = 1 remainder 1  | 1 |
-| `elevenFour` | 11/4 = 8 remainder 3 | 3 |
-| `fiveTen`    | 5/10 = 0 remainder 5 | 5 |
+| Variable | Formula | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|----------|---------|:-----:|-------|
+| `threeTwo`   | 3/2 = 1 remainder 1  | 1 | |
+| `elevenFour` | 11/4 = 8 remainder 3 | 3 | |
+| `fiveTen`    | 5/10 = 0 remainder 5 | 5 | |
 
 ## Calculate a decoded character: The right way 
 
@@ -42,24 +42,25 @@ Start with these two values:
 - `letter` = 'a'
 - `shiftAmount` = 2
 
-| Variable | Formula | Value | 
-|----------|---------|------:|
-| `letter`         |            | 'a' |
-| `shiftAmount`    |            | 2   |
-| `letterCode`     | `ord('a')` | 97  |
-| `aAscii`         | `ord('a')` | 97  |
-| `alphabetSize`   |            | 26  |
-| `trueLetterCode` | 97 + (((97 - 97) + 2) % 26)  | 2 (See explanation) |
-| `decodedLetter`  | `chr(99)`  | `c` |
+| Variable | Formula | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|----------|---------|-------|-------|
+| `letter`         |            | 'a' | |
+| `shiftAmount`    |            | 2   | |
+| `letterCode`     | `ord('a')` | 97  | |
+| `aAscii`         | `ord('a')` | 97  | |
+| `alphabetSize`   |            | 26  | |
+| `trueLetterCode` | 97 + (((97 - 97) + 2) % 26)  | 2 <br>**Note:** See the detailed explanation for this calculation after the table. | |
+| `decodedLetter`  | `chr(99)`  | `c` | |
 
 You can review the formula for `trueLetterCode` just like you would any other math formula (remember to follow _PEMDAS_ order of operations):
 
-`aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
-97 + (((97 - 97) + 2) % 26) 
-97 + ((0 + 2) % 26)
-97 + (2 % 26)
-97 + 2
-99
+> `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
+> 
+> 97 + (((97 - 97) + 2) % 26) 
+> 97 + ((0 + 2) % 26)
+> 97 + (2 % 26)
+> 97 + 2
+> 99
 
 ### Example 2: Letter 'W' and shift by 13
 
@@ -67,23 +68,25 @@ Start with these two values:
 - `letter` = 'W'
 - `shiftAmount` = 13
 
-| Variable | Formula | Value | 
-|----------|---------|------:|
-| `letter`         |            | 'W' |
-| `shiftAmount`    |            | 13  |
-| `letterCode`     | `ord('w')` | 119 |
-| `aAscii`         | `ord('a')` | 97  |
-| `alphabetSize`   |            | 26  |
-| `trueLetterCode` | 97 + (((119 - 97) + 13) % 26)  | 106 (See explanation) |
-| `decodedLetter`  | `chr(106)` | `j` |
+| Variable | Formula | Value |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |
+|----------|---------|-------|-------|
+| `letter`         |            | 'W' | |
+| `shiftAmount`    |            | 13  | |
+| `letterCode`     | `ord('w')` | 119 | |
+| `aAscii`         | `ord('a')` | 97  | |
+| `alphabetSize`   |            | 26  | |
+| `trueLetterCode` | 97 + (((119 - 97) + 13) % 26)  | 106 <br>**Note:** See the detailed explanation for this calculation after the table. | |
+| `decodedLetter`  | `chr(106)` | `j` | |
 
 You can review the formula for `trueLetterCode` just like you would any other math formula (remember PEMDAS):
-`aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
-97 + (((119 - 97) + 13) % 26)
-97 + ((22 + 13) % 26)
-97 + (35 % 26)
-97 + 9
-106
+
+> `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
+> 
+> 97 + (((119 - 97) + 13) % 26)
+> 97 + ((22 + 13) % 26)
+> 97 + (35 % 26)
+> 97 + 9
+> 106
 
 ## Final code
 

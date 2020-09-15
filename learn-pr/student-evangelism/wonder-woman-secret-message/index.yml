@@ -37,6 +37,7 @@ units:
 - learn.student-evangelism.wonder-woman-secret-message.ceasar-cipher-part-2
 - learn.student-evangelism.wonder-woman-secret-message.ceasar-cipher-full-word
 - learn.student-evangelism.wonder-woman-secret-message.test-decoder
+- learn.student-evangelism.wonder-woman-secret-message.knowledge-check
 - learn.student-evangelism.wonder-woman-secret-message.summary
 badge:
   uid: learn.student-evangelism.wonder-woman-secret-message.badge
