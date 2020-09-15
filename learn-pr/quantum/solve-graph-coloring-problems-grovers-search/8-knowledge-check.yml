@@ -9,7 +9,7 @@ metadata:
   ms.date: 09/19/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
-durationInMinutes: 1
+durationInMinutes: 7
 content: |
   [!include[](includes/8-knowledge-check.md)]
 
@@ -36,7 +36,7 @@ quiz:
       explanation: 'This is the success probability behavior in a typical case. Is there anything special about this problem that would cause a different behavior? You might want to think about the algorithm visualization from unit 5.'
     - content: 'The success probability will remain the same regardless of the iterations number.'
       isCorrect: true
-      explanation: 'Indeed, if you recall the circle visualization from unit 5, you''ll see that the angle θ will be exactly 45 degrees, and each iteration will rotate the state by 90 degrees, keeping the success probability constant and equal to 50%.'
+      explanation: 'Indeed, if you recall the circle visualization from unit 5, you''ll see that the angle θ will be exactly 45 degrees. Each iteration will rotate the state by 90 degrees, keeping the success probability constant and equal to 50%.'
     - content: 'The success probability will first decrease to nearly 0%, then start increasing to nearly 100%, then start decreasing again, and so on.'
       isCorrect: false
       explanation: 'This is the success probability behavior if the solutions comprise more than half of the possible inputs.'
@@ -46,9 +46,9 @@ quiz:
     - content: 'Database search: checking whether a table contains the given element'
       isCorrect: false
       explanation: 'Searching databases has efficient classical approaches, such as indexes and distributed databases, and is hard to implement on a quantum computer.'
-    - content: '2-SAT problem: Boolean satisfiability problem with at most 2 literals per clause'
+    - content: '2-SAT problem: Boolean satisfiability problem with at most two literals per clause'
       isCorrect: false
-      explanation: '2-SAT problem can be solved in polynomial time classically, and Grover''s algorithm has exponential complexity, so it does not offer a speedup over the classical solution.'
+      explanation: '2-SAT problem has a classical solution that runs in polynomial time. Grover''s algorithm has exponential complexity, so it does not offer a speedup over the classical solution.'
     - content: 'Cryptographic problems: decrypting symmetric cryptography keys'
       isCorrect: true
-      explanation: 'These problems are indeed a candidate for practical quantum search tasks, though smaller instances can be solved using massively parallel classical computation. The field of post-quantum cryptography researches cryptosystems that will be secure from quantum algorithms.'
+      explanation: 'These problems are indeed a candidate for a practical application of quantum search, though smaller instances can be solved using massively parallel classical computation. The field of post-quantum cryptography researches cryptosystems that will be secure from quantum algorithms.'

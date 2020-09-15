@@ -103,6 +103,7 @@ $$R_{opt} \approx \frac{\pi}{4} \sqrt{\frac{N}{M}}$$
 Continuing to iterate past that number will start reducing that probability, until we reach nearly-zero success probability on iteration $2 R_{opt}$. 
 After that the probability will grow again and approach 100% on iteration $3 R_{opt}$, and so on.
 
+> [!NOTE]
 > To understand this behavior, recall our circle visualization. 
 > 
 > After $k$ iterations the angle between the horizontal axis and the state vector equals $2k+1$, and we want to get it as close to $\frac{\pi}{2}$ as we can. 

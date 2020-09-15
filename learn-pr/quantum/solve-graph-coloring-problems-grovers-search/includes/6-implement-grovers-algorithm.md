@@ -1,5 +1,6 @@
 In this module, you will implement Grover's search algorithm end-to-end - from the oracle definition for the vertex coloring problem to the logic of dealing with the randomized nature of the algorithm.
 
+> [!NOTE]
 > The overall code is necessarily rather long, since it includes not only the generic Grover's algorithm implementation but also the problem-specific oracle implementation. 
 >
 > We will focus this unit on discussing the most important elements of the code, and point you to the materials that will allow you to dig deeper into various topics touched upon in this unit in the summary section.
@@ -14,6 +15,7 @@ Let's take a moment to highlight an important property of this code (the full co
 
 We pass the quantum oracle - the only operation that relies on the knowledge of the problem instance we want to solve - as a parameter to the search code.
 
+> [!NOTE]
 > Q# allows to manipulate operations and functions as values, defining variables that store callables and passing them as arguments to other operations.
 > The callable arguments can then be called in the code, same as other operations, as we see in step 1 in the loop body.
 > 
@@ -24,7 +26,8 @@ The code also takes the number of iterations to perform as a parameter. Again, t
 Finally, the problem-specific logic of measuring the result and interpreting it is also kept outside. 
 Instead, the operation takes a qubit register as one of the inputs, and the code that calls it can measure the state of that register afterwards.
 
-> Note that this code doesn't define an `@EntryPoint`, since running it on its own wouldn't do anything interesting. 
+> [!NOTE]
+> This code doesn't define an `@EntryPoint`, since running it on its own wouldn't do anything interesting. 
 > In the next section we'll see how to prepare all the parameters it will use and pass them to this code.
 
 ## Let's solve the graph coloring problem!
