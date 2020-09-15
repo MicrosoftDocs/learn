@@ -2,6 +2,8 @@ _What you cannot see, you cannot measure. What you cannot measure, you cannot im
 
 Platform-level holistic (horizontal) resource monitoring and alerting must be designed, deployed, and integrated. Operational tasks such as patching, and backup must also be defined and streamlined. Security operations, monitoring, and logging must be integrated with resources on Azure and any existing on-premises systems. All subscription activity logs that capture control plane operations across resources should be streamed into Log Analytics to make them available for query and analysis, subject to role-based access control (RBAC) permissions.
 
+This diagram shows a dedicated management subscription to support global management capabilities such as Azure Monitor Log Analytics workspaces and Azure Automation runbooks.
+
 ![A diagram of enterprise-scale management and monitoring.](../media/management-and-monitoring.png)
 
 ## Log Analytics workspace design
@@ -12,7 +14,7 @@ In the context of the enterprise-scale architecture, centralized logging is prim
 
 ## Auditing and log retention
 
-The activity log is a platform log in Azure that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations includes such information as when a resource is modified or when a VM is started. The activity log can be viewed in the Azure portal or entries can be retrieved with PowerShell and CLI. Subscription diagnostic settings should be configured via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and provides the ability to retain log data past the default 90 days.
+The activity log is a platform login Azure that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations includes such information as when a resource is modified or when a VM is started. The activity log can be viewed in the Azure portal or entries can be retrieved with PowerShell and CLI. Subscription diagnostic settings should be configured via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and provides the ability to retain log data past the default 90 days.
 
 When a customer requires log data retention greater than two years, the subscription diagnostic setting should also be configured for export to Azure Storage. Use immutable storage with WORM (write once, read many) policy to make data non-erasable and non-modifiable for a user-specified interval.
 

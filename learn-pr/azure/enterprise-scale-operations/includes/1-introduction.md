@@ -1,4 +1,4 @@
-Learn how to operationalize an Azure enterprise estate using centralized management to provide the guardrails needed to enable the organization's path to the cloud.
+Learn how to operationalize an Azure enterprise estate using centralized management to provide the guardrails needed to enable the organization's path to the cloud. This approach reduces gaps in observability and accelerates landing zone creation times.
 
 ## Learning objectives
 
