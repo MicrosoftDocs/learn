@@ -1,5 +1,5 @@
 
-Tailwind Traders plans to adopt a hybrid cloud posture. This move will make their environment more complicated than it was when workloads were only deployed on-premises. The increased complexity of the workloads and their architecture means that observing the security configuration and telemetry of those workloads is also increasingly challenging.
+Tailwind Traders plans to adopt a hybrid cloud posture. This move will make their environment more complicated than it was when workloads were only deployed on-premises. Also, the security configuration and telemetry of these workloads will be increasingly complex.
 
 In this unit, you’ll learn how Tailwind Traders can monitor the configuration of their on-premises and cloud workloads and be alerted to any suspicious activity. You’ll also learn how Tailwind Traders can streamline updates to their on-premises and cloud server operating systems.
 
