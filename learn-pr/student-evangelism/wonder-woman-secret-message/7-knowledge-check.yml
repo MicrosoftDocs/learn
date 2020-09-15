@@ -31,17 +31,17 @@ quiz:
       isCorrect: true
       explanation: "English letters, numbers 0-9, and punctuation are all represented as numbers in ASCII."
   
-  - content: "If you call your `lassoLetter()` function and pass in **p** as the `letter` parameter and **-2** as the `shiftAmount` parameter, what letter is returned?"
+  - content: "If you call your `lassoLetter()` function and pass in `p` as the `letter` parameter and `-2` as the `shiftAmount` parameter, what letter is returned?"
     choices:  
     - content: "`Error`"
       isCorrect: false
       explanation: "Incorrect. The code you wrote works with any whole number. If you pass in a negative number, the decoder function parses the word backward."
     - content: "`o`"
       isCorrect: false
-      explanation: "Incorrect. For a return value of **o**, you would pass in a `shiftAmount` value of **-1**."
+      explanation: "Incorrect. For a return value of `o`, you would pass in a `shiftAmount` value of `-1`."
     - content: "`n`"
       isCorrect: true
-      explanation: "Correct. The code you wrote takes the ASCII number value of **p** and adds **-2** to it, which basically subtracts 2!"
+      explanation: "Correct. The code you wrote takes the ASCII number value of `p` and adds `-2` to it, which basically subtracts 2!"
     - content: "`P`"
       isCorrect: false
       explanation: "Incorrect. The code you wrote can't convert a lowercase letter to uppercase."

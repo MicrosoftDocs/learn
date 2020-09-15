@@ -18,9 +18,9 @@ Press the **Play** button and you should see the same behavior as before.
 
 Coding is essentially the movement and manipulation of data. Imagine writing a message decoder on a calculator where the only data you have access to is the last result of an equation. Though that's not impossible, it does seem unnecessarily difficult! 
 
-In Python, we have *variables*, which are like containers that have a name and store data. You can think of variables as codenames for information that we want our program to remember and have access to later.
+In Python, we have *variables*, which are like containers that have a name and store data. You can think of variables as code names for information that we want our program to remember and have access to later.
 
-The following command tells Python to associate the codename or variable `diana` with the information "WONDER WOMAN 1984." To do this, you use the assignment equals sign `=` operator. Any time after this command, when Python sees the variable `diana`, it will substitute the value "WONDER WOMAN 1984"!
+The following command tells Python to associate the code name or variable `diana` with the information "WONDER WOMAN 1984." To do this, you use the assignment equals sign `=` operator. Anytime after this command, when Python sees the variable `diana`, it will substitute the value "WONDER WOMAN 1984"!
 
 ```python
 # Associate variable diana with the value "WONDER WOMAN 1984"

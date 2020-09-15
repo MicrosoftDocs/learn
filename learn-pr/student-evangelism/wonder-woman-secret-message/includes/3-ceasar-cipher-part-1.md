@@ -93,7 +93,7 @@ ord('6')
 The output is `54`. `54` is the ASCII character code for the number `6`.
 
 
-We couldn't add a letter and number together: `a + 2`, but we can add two numbers together. If we add `97` for the letter `a` with the number `2`, we get `99`. `99` is the ASCII number representation for the character `c`. The output make sense!
+We couldn't add a letter and number together: `a + 2`, but we can add two numbers together. If we add `97` for the letter `a` with the number `2`, we get `99`. `99` is the ASCII number representation for the character `c`. The output makes sense!
 
 Here's the next bit of code to add to your function:
 

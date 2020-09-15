@@ -110,7 +110,7 @@ With this code, the entire word is now stored in the variable `decodedWord`. You
 
 ### Comment your code
 
-Don't forget to add comments to your code, so you know exactly what's happening! (If you return to this exercise later on, you don't want to have to decipher your own code, pun intended.)
+Don't forget to add comments to your code, so you know exactly what's happening! (If you return to this exercise later on, you don't want to have to decipher your own code.)
 
 ```python
 # Define a function to find the truth in a secret message

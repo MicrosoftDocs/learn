@@ -1,6 +1,6 @@
 ![Film card from WONDER WOMAN 1984.](../../wonder-woman-common/media/wonder-woman-1984-coming-to-theaters.png)
 
-With your **decrypt.py** file, you now have the ability to decode any secret message that uses the English alphabet. Your decoded messages will be in all lowercase, but that shouldn't take away from the meaning behind them.
+With your **decrypt.py** file, you can now decode any secret message that uses the English alphabet. Your decoded messages will be in all lowercase, but that shouldn't take away from the meaning behind them.
 
 Special thanks to [Audrey St. John from Mount Holyoke College](https://www.mtholyoke.edu/people/audrey-stjohn?azure-portal=true) for the inspiration for this lesson! 
 
