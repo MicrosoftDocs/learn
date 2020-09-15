@@ -1,4 +1,4 @@
-To complete the exercises in this module, you must have a Speech resource created in Azure. The following steps outline how to create a Speech resource and access your subscription keys and endpoint. Creating the Speech resource on Azure is required for the speech translation service to work.
+A Speech resource must be created in Azure to integrate the Azure Cognitive Services Speech Translation service into a Mixed Reality app. The Speech resource will later be used to translate speech and return a string to the app's UI. Here, you'll learn how to create a Speech resource and locate the subscription keys and endpoint.
 
 ## Create a speech resource
 
