@@ -4,7 +4,7 @@ In this unit, you'll complete the following tasks:
 - Set up permissions to deploy to ACR and AKS from GitHub
 - Create secrets to store sensitive data used by the GitHub Actions
 
-## Verify deployment to AKS
+## Verify the deployment to AKS
 
 After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
 
@@ -80,7 +80,7 @@ GitHub Actions will be used to publish the container image to ACR. To configure 
 
 1. Copy the JSON output from the command shell. Don't include the text output above the JSON. You'll need the JSON and the credentials for the GitHub Action in next step.
 
-## Create secrets
+## Create the secrets
 
 The service principal and the credentials for the container registry are sensitive information. The GitHub Actions runner will need the credentials to interact with ACR and AKS. As a best practice, sensitive information should be stored as encrypted *secrets* in a secure location. The secrets should be managed by repository administrators and accessed by the GitHub Actions runner. Complete the following steps to securely store the sensitive information as environment variables in your repository:
 

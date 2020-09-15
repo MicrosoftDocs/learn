@@ -2,7 +2,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 [!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
-## Run deployment script
+## Run the deployment script
 
 1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core?azure-portal=true) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking?azure-portal=true).
 1. Run the following command in the command shell. When prompted for **Repo URL**, enter the URL of your fork created in the first step.
