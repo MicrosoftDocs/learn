@@ -42,7 +42,7 @@ quiz:
       explanation: "That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for building more secure products and services."
 
 
-  - content: "The Azure Sentinel agent is actually the:" 
+  - content: "The Azure Sentinel agent is actually a:" 
     choices:
     - content: "Log Analytics agent"
       isCorrect: true
