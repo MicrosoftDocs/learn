@@ -55,17 +55,17 @@ quiz:
       explanation: "That's incorrect. The Azure Sentinel agent is actually a Log Analytics agent."
 
 
-  - content: "How many built-in connectors are available for Azure Sentinel?"
+  - content: "The Azure Sentinel Reader can perform what actions?"
     choices:
-    - content: "100"
+    - content: "Edit workbooks"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel has 56 built-in connectors."
-    - content: "23"
-      isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel has 56 built-in connectors."
-    - content: "56"
+      explanation: "That's incorrect. Azure Sentinel Reader only can review data, incidents, workbooks, and other Azure Sentinel resources."
+    - content: "Review data, incidents, workbooks, and other Azure Sentinel resources."
       isCorrect: true
-      explanation: "That's correct. Azure Sentinel has 56 built-in connectors."
+      explanation: "That's correct. That role can review data, incidents, workbooks, and other Azure Sentinel resources."
+    - content: "Create and run playbook"
+      isCorrect: false
+      explanation: "That's incorrect. Azure Sentinel Reader only can review data, incidents, workbooks, and other Azure Sentinel resources."
 
 
   - content: "Which of the following is required in order to connect Azure Sentinel to Azure AD?"
