@@ -52,7 +52,7 @@ Start with these two values:
 | `trueLetterCode` | 97 + (((97 - 97) + 2) % 26)  | 2 <br>**Note:** See the detailed explanation for this calculation after the table. | |
 | `decodedLetter`  | `chr(99)`  | `c` | |
 
-You can review the formula for `trueLetterCode` just as you would any other math formula (remember to follow _PEMDAS_ order of operations):
+You can review the formula for `trueLetterCode` just as you would any other math formula. Follow [PEMDAS](https://www.bing.com/search?q=pemdas&form=QBLH&sp=-1&pq=&sc=0-0&qs=n&sk=&cvid=AC7B1BB83E3C4E5B9C6F4AAEF3A32874), where you evaluate a mathematical expression in the order of parenthesis, exponents, multiplication, division, addition, and subtraction.
 
 > `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 > 
@@ -78,7 +78,7 @@ Start with these two values:
 | `trueLetterCode` | 97 + (((119 - 97) + 13) % 26)  | 106 <br>**Note:** See the detailed explanation for this calculation after the table. | |
 | `decodedLetter`  | `chr(106)` | `j` | |
 
-You can review the formula for `trueLetterCode` just as you would any other math formula (remember [PEMDAS](https://www.bing.com/search?q=pemdas&form=QBLH&sp=-1&pq=&sc=0-0&qs=n&sk=&cvid=AC7B1BB83E3C4E5B9C6F4AAEF3A32874) - where you evaluate a mathematical expression in the order of parenthesis, exponents, multiplication, division, addition, and subtraction):
+You can review the formula for `trueLetterCode` just as you would any other math formula (remember PEMDAS):
 
 > `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 > 
