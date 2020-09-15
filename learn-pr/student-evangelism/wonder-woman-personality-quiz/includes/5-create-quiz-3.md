@@ -11,22 +11,21 @@ Make sure your code matches this code:
 
 ```python
 # ask the candidate a question
-weapon = input( "Which weapon?\n(A) Lasso\n(B) No weapon, thank you\n" )
-if weapon == "A":
-    print( "Lasso, Nice choice!" )
-elif weapon =="B":
-    print( "No weapon? You're brave!" )
+activity = input( "How would you like to spend your evening?\n(A) Reading a book\n(B) Attending a party\n" )
+if activity == "A":
+    print( "Reading a book, Nice choice!" )
+elif activity == "B":
+    print( "Attending a party? Sounds fun!" )
 else:
-    print("You must type A or B, let's just say you wanted the Lasso")
-    weapon = "A"
-
+    print("You must type A or B, let's just say you like to read.")
+    activity = "A"
 
 # ask the candidate a second question
 job = input( "What's your dream job?\n(A) Curator at the Smithsonian\n(B) Running a business\n" )
 if job == "A":
     print( "Curator, Nice choice!" )
 elif job =="B":
-    print( "Running a business? You're brave!" )
+    print( "Running a business? Sounds fun!" )
 else:
     print("You must type A or B, let's just say you want to be a curator at the Smithsonian")
     job = "A"
@@ -36,7 +35,7 @@ value = input( "What's more important?\n(A) Money\n(B) Love\n" )
 if value == "A":
     print( "Money, Nice choice!" )
 elif value =="B":
-    print( "Love? You're brave!" )
+    print( "Love? Sounds fun!" )
 else:
     print("You must type A or B, let's just say money is more important to you.")
     value = "A"
@@ -46,23 +45,23 @@ decade = input( "What's your favorite decade?\n(A) 1910s\n(B) 1980s\n" )
 if decade == "A":
     print( "1910s, Nice choice!" )
 elif decade =="B":
-    print( "1980s? You're brave!" )
+    print( "1980s? Sounds fun!" )
 else:
     print("You must type A or B, let's just say the 1910s is your favorite decade.")
     decade = "A"
 
 # ask the candidate a fifth question
-animal = input( "What's your favorite big cat?\n(A) Tiger\n(B) Cheetah\n" )
-if animal == "A":
-    print( "Tiger, Nice choice!" )
-elif animal =="B":
-    print( "Cheetah? You're brave!" )
+travel = input( "What's your favorite way to travel?\n(A) Driving\n(B) Flying\n" )
+if travel == "A":
+    print( "Driving, Nice choice!" )
+elif travel =="B":
+    print( "Flying? Sound fun!" )
 else:
-    print("You must type A or B, let's just say your favorite big cat is a Tiger")
-    animal = "A"
+    print("You must type A or B, let's just say your favorite way to travel is by driving")
+    travel = "A"
 
 # print out their choices
-print( f"You chose {weapon}, then {job}, then {value}, then {decade}, then {animal}.")
+print( f"You chose {activity}, then {job}, then {value}, then {decade}, then {travel}.")
 ```
 
 Press the **Play** button and make sure your responses are recorded correctly.

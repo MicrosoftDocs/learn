@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.python-basics-wonder-woman
 metadata:
   title: Learn Python basics with Wonder Woman
-  description: Have you been interested in learning Python, but are looking for some inspiration? We've got you covered! Microsoft is excited to partner with the WONDER WOMAN 1984 film to make learning Python a bit more...powerful.
+  description: 1984 is bold, grand, and electric. It’s an era of excess and corruption, where Wonder Woman must harness the power of technology to restore balance to the world. And Microsoft is partnering with the WONDER WOMAN 1984 film to empower coders and creators to learn technology skills they can use for greater good.
   brand: azure
   ms.date: 09/21/2020
   author: sguthals
@@ -11,13 +11,15 @@ metadata:
   ms.prod: learning-azure
 title: Learn Python basics with Wonder Woman
 summary: |
-  Have you been interested in learning Python, but are looking for some inspiration? We've got you covered! Microsoft is excited to partner with the WONDER WOMAN 1984 film to make learning Python a bit more...powerful.
+1984 is bold, grand, and electric. It’s an era of excess and corruption, where Wonder Woman must harness the power of technology to restore balance to the world. And Microsoft is partnering with the WONDER WOMAN 1984 film to empower coders and creators to learn technology skills they can use for greater good.
   
   In this learning path, you'll:
-    - Discover all the ways you can engage with the WONDER WOMAN 1984 film with code
+    - Discover ways you can engage with the WONDER WOMAN 1984 film with code
     - Write your first lines in Python
     - Build a message decoder program
-    - Create a personality quiz to determine what character you would be in the Wonder Woman 1984 film
+    - Create a personality quiz to determine which character you're most like from the WONDER WOMAN 1984 film
+  
+  <strong>No coding experience is required to complete this learn module.</strong>
   
   Once you complete this learning path, you'll have a great foundation to build upon in subsequent Python Learning Paths.
   

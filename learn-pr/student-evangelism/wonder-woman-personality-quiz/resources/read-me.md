@@ -1,15 +1,15 @@
 # Module
 
 Module Title:  
-Program your own personality quiz with Python and Visual Studio Code
+Which WONDER WOMAN 1984 character are you most like?
 
 Unit Titles:
 
-- The personality quiz: Making Your Own Personality quiz
+- Create your own Super Quiz inspired by WONDER WOMAN 1984, coming to theaters
 - Ensure Visual Studio Code is Ready to Create a Personality quiz
-- Python Basics Needed for a Wonder Woman Personality quiz
-- The Making of a Wonder Woman quiz Part 1
-- The Making of a Wonder Woman quiz Part 2
-- The Making of a Wonder Woman quiz Part 3
-- Choosing a Wonder Woman Character Based on a Personality quiz
+- Python basics needed for a WONDER WOMAN 1984 personality quiz
+- Part 1 - Asking the user a question in your WONDER WOMAN 1984 personality 
+- Part 2 - Checking the users response in your WONDER WOMAN 1984 personality 
+- Part 3 - Completing WONDER WOMAN 1984 personality quiz
+- Choose a WONDER WOMAN 1984 character based on a personality quiz score
 - What's Next in the World of Personality quizzes?
