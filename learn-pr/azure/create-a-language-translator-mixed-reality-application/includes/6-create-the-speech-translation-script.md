@@ -49,31 +49,6 @@ public async void ButtonClick()
         var translationConfig = SpeechTranslationConfig.FromSubscription(SpeechServiceSubscriptionKey, SpeechServiceRegion);
         translationConfig.SpeechRecognitionLanguage = "en-US";
         translationConfig.AddTargetLanguage("fr");
-    }
-```
-
-The `ButtonClick()` method contains two objects that are created to perform speech translation: `SpeechTranslationConfig` and `TranslationRecognizer`.
-
-### SpeechTranslationConfig object
-
-The `SpeechTranslationConfig` class in the Cognitive Services Speech SDK is used to create a `SpeechTranslationConfig` object. The Speech resource created for speech translation contains the subscription key and region (referred to as **Location** in the Azure portal) that must be included as parameters of the `SpeechTranslationConfig` class.  
-
-
-In addition, the recognition language and target language must be specified. The recognition language is the language in which the translation service uses to recognize the utterance. The recognition language is set by assigning the locale to the `SpeechRecognitionLanguage` property. The target language is the language in which the translation service uses to translate the utterance. The target language is set using the `AddTargetLanguage` method and the language code.
-
-> [!NOTE]
-> The recognition and target languages must be [one of the supported locales and/or language codes](https://aka.ms/speech/sttt-languages) for Speech Translation.
-
-### TranslationRecognizer object
-
-The `TranslationRecognizer` class in the Cognitive Services SDK performs speech recognition from either a microphone, file, or other audio input stream, and gets the translated string as a result. This class is used to create a `TranslationRecognizer` object. The `TranslationRecognizer` class takes the `SpeechTranslationConfig` as an argument to create an instance of a translation recognizer.
-
-```csharp
-public async void ButtonClick()
-    {
-        var translationConfig = SpeechTranslationConfig.FromSubscription(SpeechServiceSubscriptionKey, SpeechServiceRegion);
-        translationConfig.SpeechRecognitionLanguage = "en-US";
-        translationConfig.AddTargetLanguage("fr");
 
         using (var recognizer = new TranslationRecognizer(translationConfig))
         {
@@ -98,6 +73,21 @@ public async void ButtonClick()
     }
 ```
 
+The `ButtonClick()` method contains two objects that are created to perform speech translation: `SpeechTranslationConfig` and `TranslationRecognizer`.
+
+### SpeechTranslationConfig object
+
+The `SpeechTranslationConfig` class in the Cognitive Services Speech SDK is used to create a `SpeechTranslationConfig` object. The Speech resource created for speech translation contains the subscription key and region (referred to as **Location** in the Azure portal) that must be included as parameters of the `SpeechTranslationConfig` class.  
+
+
+In addition, the recognition language and target language must be specified. The recognition language is the language in which the translation service uses to recognize the utterance. The recognition language is set by assigning the locale to the `SpeechRecognitionLanguage` property. The target language is the language in which the translation service uses to translate the utterance. The target language is set using the `AddTargetLanguage` method and the language code.
+
+> [!NOTE]
+> The recognition and target languages must be [one of the supported locales and/or language codes](https://aka.ms/speech/sttt-languages) for Speech Translation.
+
+### TranslationRecognizer object
+
+The `TranslationRecognizer` class in the Cognitive Services SDK performs speech recognition from either a microphone, file, or other audio input stream, and gets the translated string as a result. This class is used to create a `TranslationRecognizer` object. The `TranslationRecognizer` class takes the `SpeechTranslationConfig` as an argument to create an instance of a translation recognizer.
 
 The `TranslationRecognizer` object is then used to start speech recognition and return the speech translation. After speech recognition starts, it returns after a single utterance is recognized. The end of a single utterance is determined by listening for silence at the end of the utterance or until a maximum of 15 seconds of audio is processed. The task returns the recognition text translated into the target language as a dictionary. The key reflects the target language and the value reflects the translation. To display the translation in the Unity UI, assign the value of the dictionary to the `translatedString` variable.
 
