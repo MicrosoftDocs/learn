@@ -49,10 +49,10 @@ quiz:
       explanation: "That's correct. The Azure Sentinel agent is actually a Log Analytics agent."
     - content: "REST API"
       isCorrect: false
-      explanation: "That's incorrect. The Azure Sentinel agent is actually a Log Analytics agent."
+      explanation: "That's incorrect. A REST API uses HTTP requests to GET, PUT, POST and DELETE data."
     - content: "Certificate"
       isCorrect: false
-      explanation: "That's incorrect. The Azure Sentinel agent is actually a Log Analytics agent."
+      explanation: "That's incorrect. A digital certificate is an electronic document used to prove the ownership of a public key."
 
 
   - content: "Azure Sentinel Reader can perform what action(s)?"
@@ -63,7 +63,7 @@ quiz:
     - content: "Review data, incidents, workbooks, and other Azure Sentinel resources."
       isCorrect: true
       explanation: "That's correct. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
-    - content: "Create and manage an incident log"
+    - content: "Create and run Azure Sentinel security playbooks"
       isCorrect: false
       explanation: "That's incorrect. Azure Sentinel Reader can review, but not edit, data, incidents, workbooks, and other Azure Sentinel resources."
 
