@@ -9,29 +9,29 @@ An Enterprise Agreement (EA) enrollment represents the commercial relationship b
 
 ### Azure EA portal
 
-The Azure EA portal you can help you manage your hierarchy and reconcile the cost for your Enterprise Agreement services. Within the portal, you can create departments, subscriptions and accounts. You can also create and manage API keys for your enrollment.
+The Azure EA portal can help to manage hierarchy and reconcile the cost for your Enterprise Agreement services. Within the portal, you can create departments, accounts and subscriptions. You can also create and manage API keys for your enrollment to consume financial data in external systems.
 
 Departments help to segment costs into logical groupings and to set a budget or quota at the department level. The quota isn't enforced firmly and is used for reporting purposes.
 
-Accounts are organizational units in the Azure EA portal. They can be used to manage subscriptions and access reports.
+Accounts are organizational units in the Azure EA portal. They are used to manage subscriptions and access reports.
 
-Subscriptions are the smallest unit in the Azure EA portal. Subscription act as containers for Azure services managed by the service administrator. Your organization deploys Azure services into its subscriptions.
+Subscriptions are the smallest unit in the Azure EA portal. Subscription act as containers for Azure services managed by the Account owner. Your organization deploys Azure services into its subscriptions.
 
 ### Enterprise user roles
 
-EA enrollment roles link users with their functional role. The roles work in both the enterprise portal and the Azure portal. These roles are:
+EA enrollment roles link users with their functional role. The users can be used in both the enterprise portal and the Azure portal. These EA portal roles are:
 
 #### Enterprise administrator
 
-This role has the highest level of access and can manage accounts and account owners, enterprise administrators, and department administrators. The account can also view usage across all accounts as well as unbilled charges. You can also manage notification contacts.
+This role has the highest level of access and can manage account owners, enterprise administrators, and department administrators. The account can also view usage across departments and accounts as well as billed and unbilled charges. This role can also manage notification contacts.
 
 #### Department administrator
 
-This role allows you to create and manage departments, create new account owners, view usage details for departments that are managed by the department administrator, and view cost. Deployment administrators can be granted read-only access. You may have multiple department administrators for each enterprise enrollment.
+This role allows manage own departments, create new account owners under a department, view usage details for departments that are managed by the department administrator, and view cost. Deployment administrators can be granted read-only access. You may have multiple department administrators for each enterprise enrollment.
 
 #### Account owner
 
-Account owners can create and manage subscriptions, manage service administrators, and view usage for subscriptions.  
+Account owners can create and manage subscriptions and view usage for subscriptions. Account Owner is the only EA portal role with direct access to all resources in a subscription. This user will be assigned as service administrator on subscription scope.
 
 #### Service administrator
 
@@ -39,7 +39,7 @@ The service administrator role has permissions to manage services in the Azure p
 
 #### Notification contact
 
-This account receives notifications about usage related to enrollment.
+This account receives notifications about usage and general communication such as enrollment lifecycle information related to enrollment.
 
 ### Enterprise enrollment design recommendations and considerations
 
