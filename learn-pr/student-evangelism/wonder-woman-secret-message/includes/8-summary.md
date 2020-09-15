@@ -13,7 +13,7 @@ As an added challenge, you can explore how to:
 
 ## Discover the next coding challenge
 
-With the location and time of the next superhero meeting decoded, it's time to figure out which superhero you really are! In the next module in this learning path, you'll [create a test to determine your superpower with Python and Visual Studio Code](LINK TBD).
+Having decoded secret messages from the WONDER WOMAN 1984 film world, it's time to figure out which character you're most like! In the next module in this learning path, you'll create a test to determine your superpower with Python and Visual Studio Code.
 
 ## Dive deeper into Python
 
