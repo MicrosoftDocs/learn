@@ -1,4 +1,4 @@
-In this unit, you'll deploy the simplified version of *eShopOnContainers* to Azure Kubernetes Service (AKS). This step requires user input. Watch for the prompt in the Azure Cloud Shell's command shell.
+In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS).
 
 [!INCLUDE[Azure Cloud Shell instructions](../../includes/use-az-cloud-shell.md)]
 
@@ -24,7 +24,7 @@ In this unit, you'll deploy the simplified version of *eShopOnContainers* to Azu
 
     [!INCLUDE[Instructions for restoring the default Cloud Shell configuration](../../includes/microservices/revert-cloud-shell-configuration.md)]
 
-The script takes several minutes to complete. It deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers?azure-portal=true). The solution architecture of the app is pictured in the following diagram:
+The script takes several minutes to complete. It deploys a modified version of the *:::no-loc text="eShopOnContainers":::* reference app. The solution architecture of the app is pictured in the following diagram:
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram" border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
