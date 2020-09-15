@@ -1,7 +1,7 @@
 
-As Tailwind Traders adopts a hybrid cloud posture, their environment will become even more complicated than it was when workloads were only deployed on-premises. The increased complexity of the workloads and their architecture means that observing the security configuration and telemetry of those workloads is also increasingly challenging.
+As Tailwind Traders adopts a hybrid cloud posture, their environment will become more complicated than it was when workloads were only deployed on-premises. The increased complexity of the workloads and their architecture means that observing the security configuration and telemetry of those workloads is also increasingly challenging.
 
-In this unit, you’ll learn how Tailwind Traders can monitor the configuration of their on-premises and cloud workloads and be alerted to any suspicious activity that might indicate that a security incident is occurring. You’ll also learn how Tailwind Traders can ensure that on-premises and cloud server workloads running Windows and Linux can be kept up to date with operating system updates without requiring a multiple tools.
+In this unit, you’ll learn how Tailwind Traders can monitor the configuration of their on-premises and cloud workloads and be alerted to any suspicious activity. You’ll also learn how Tailwind Traders can streamline updates to their on-premises and cloud server operating systems.
 
 ## What is Azure Security Center?
 
@@ -34,17 +34,17 @@ Azure Sentinel can perform the following tasks when supporting hybrid environmen
 
 Sentinel includes built-in workbooks that assist in the analysis of data and can provide recommendations for you. This allows you to quickly comprehend suspicious security telemetry instead of sorting through it to try to understand its meaning. You can also import or use custom workbooks based on the experiences of other security researchers who’ve found effective methods of security telemetry analysis that differ from those currently included in Sentinel.
 
-Tailwind Traders currently has an on-premises SIEM system that collects and analyses event-log data from a variety of computers and devices. While this SIEM system was adequate when Tailwind Traders only had an on-premises deployment, adopting Azure Sentinel will allow Tailwind Traders to extend this capacity into their hybrid cloud. It’s also likely that Tailwind Traders will be able to connect their existing SIEM solution to Sentinel. This gives them all the benefits of Sentinel’s AI and deep learning without having to substantially modifying their existing on-premises configuration.
+Tailwind Traders currently has an on-premises SIEM system that collects and analyses event-log data from a variety of computers and devices. While this SIEM system was adequate when Tailwind Traders only had an on-premises deployment, adopting Azure Sentinel will allow Tailwind Traders to extend this capacity into their hybrid cloud. It’s also likely that Tailwind Traders will be able to connect their existing SIEM solution to Sentinel. This gives them the benefits of Sentinel’s AI and deep learning without having to substantially modify their existing on-premises configuration.
 
 ## What is Azure Update Management?
 
-[Azure Update Management](https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview) allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Azure Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually. Azure Update Management can use Microsoft Update or Windows Server Update Services (WSUS) as a source of updates for Windows Server operating systems. Azure Update Management can also use a public or custom Linux package repository for Linux operating system updates. Azure Update Management allows you to determine which updates are currently missing from enrolled operating systems. The diagram in Figure 17 indicates how Azure Update Management integrates with Azure Automation and Log Analytics workspaces.
+[Azure Update Management](https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview) allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually. Update Management can use Microsoft Update or Windows Server Update Services (WSUS) as a source of updates for Windows Server operating systems. Update Management can also use a public or custom Linux package repository for Linux operating system updates. Update Management allows you to determine which updates are currently missing from enrolled operating systems. The diagram in Figure 17 indicates how Update Management integrates with Azure Automation and Log Analytics workspaces.
 
-:::image type="content" source="../media/image17.png" alt-text="Figure presents a collection of on-premises and Azure VMs connecting to Azure Automation runbooks, log analytics workspaces and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Azure Update Management architecture." border="false":::
+:::image type="content" source="../media/image17.png" alt-text="Figure presents a collection of on-premises and Azure VMs connecting to Azure Automation runbooks, log analytics workspaces and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Update Management architecture." border="false":::
 
-Figure 17. Hybrid Azure Update Management.
+Figure 17. Hybrid Update Management.
 
-You can target Azure Update Management update deployments for either Linux or Windows systems, but not both at the same time. When you configure an update deployment, you specify:
+You can target Update Management update deployments for either Linux or Windows systems, but not both at the same time. When you configure an update deployment, you specify:
 
 - Whether the update deployment targets Windows or Linux computers.
 - The specific enrolled servers that you wish to target with the deployment.
@@ -55,4 +55,4 @@ You can target Azure Update Management update deployments for either Linux or Wi
 - The maximum maintenance-window length, with the last 20 minutes of the window devoted to system restart.
 - Restart options that determine whether the system should restart if required for updates to complete installation.
 
-Tailwind Traders currently uses WSUS and several other tools to manage the updates to its on-premises Windows and Linux operating systems. By configuring all their on-premises and cloud IaaS VM operating system workloads to connect to Azure Software Update, Tailwind Traders can ensure that all operating systems that host critical workloads are kept up to date.
+Tailwind Traders currently uses WSUS and other tools to manage the updates to its on-premises Windows and Linux operating systems. By configuring their on-premises and cloud IaaS VM operating system workloads to connect to Azure Software Update, Tailwind Traders can ensure that all operating systems that host critical workloads are kept up to date.
