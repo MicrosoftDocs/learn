@@ -72,7 +72,7 @@ Create a GitHub Action for the build with the following steps:
 
 ## Trigger a build
 
-You've finished creating the "build" action for your CI/CD pipeline. The Marketing department wants to start a campaign to better track coupon code usage. With this feature, Marketing can better understand which coupon codes are most effective in driving sales. To support this feature, make the following changes in the `main` branch:
+You've finished creating the "build" action for your CI/CD pipeline. The Marketing department wants to start a campaign to better track discount code usage. With this feature, Marketing can better understand which discount codes are most effective in boosting sales. To support this feature, make the following changes in the `main` branch:
 
 1. Select the **Code** tab in your fork of the repository.
 1. Edit the *src/Services/Coupon/Coupon.API/Controllers/CouponController.cs* file by clicking the pencil (edit) icon. In the *CouponController.cs* file, replace the comment `// Add LogInformation call` with the following code:
@@ -81,7 +81,7 @@ You've finished creating the "build" action for your CI/CD pipeline. The Marketi
     _logger.LogInformation("Applying coupon {CouponCode}", code);
     ```
 
-    The preceding code logs the coupon code being applied.
+    The preceding code logs the discount code being applied.
 1. Select the **Commit directly to the `main` branch** radio button and select the **Commit changes** button.
 
     The build workflow is triggered automatically.

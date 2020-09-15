@@ -44,11 +44,11 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the **CHECKOUT** button.
     1. Enter the code *:::no-loc text="DISC-10":::* in the **HAVE A DISCOUNT CODE?** text box for a 10 USD discount, and select **APPLY**.
 
-        :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the coupon code text box" border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
+        :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the discount code text box" border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
 
     1. Select **PLACE ORDER** to complete the purchase.
 
-You've verified the app is deployed and functional. The coupon code feature is supported by the coupon service. In this module, you'll build a CI/CD pipeline to automate the build and deployment of the coupon service.
+You've successfully verified that the app was deployed to AKS and is working properly. The discount code feature is supported by the coupon service. In this module, you'll build a CI/CD pipeline to automate the build and deployment of the coupon service.
 
 ## Set up permissions to deploy from GitHub
 
