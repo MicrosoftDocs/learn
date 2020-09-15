@@ -37,11 +37,11 @@ quiz:
       isCorrect: false
       explanation: "Incorrect, Python does not have an is keyword"
     - content: "if x equals 10"
-       isCorrect: false
-       explanation: "Incorrect, Python does not have an equals keyword."
+      isCorrect: false
+      explanation: "Incorrect, Python does not have an equals keyword."
     - content: "if x == 10"
-       isCorrect: true
-       explanation: "Correct, you *must* use two = signs when comparing a value to a variable."  
+      isCorrect: true
+      explanation: "Correct, you must use two = signs when comparing a value to a variable."
   - content: "What's true about coding?"
     choices:
     - content: "Coding isn't a part of live-action movie making."
@@ -56,3 +56,4 @@ quiz:
     - content: "Coding is for everyone."
       isCorrect: true
       explanation: "True! Even if you don't want to be a developer as your career, learning to code helps you develop problem-solving skills and gives you insight into the software you use everyday."
+
