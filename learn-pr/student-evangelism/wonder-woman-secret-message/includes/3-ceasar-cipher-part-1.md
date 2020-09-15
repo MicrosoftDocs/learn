@@ -28,34 +28,34 @@ You would expect the function to return the letter `c`.
 
 Next, you need to convert your letter (also called a _character_, or _char_) into a number. Letters and numbers in code have a numerical representation because computers, ultimately, compute numbers. ASCII character codes are the numerical codes that represent letters and numbers (and other punctuation too, but that's beyond the scope of this lesson). Here's a chart that matches the letter and number that humans understand to the decimal number that computers understand:
 
-| Char | ASCII | Char | ASCII | Char | ASCII |
-|:--:|--:|:--:|--:|:--:|---:|
-| 0 | 48 | A | 65 | a |  97 |
-| 1 | 49 | B | 66 | b |  98 |
-| 2 | 50 | C | 67 | c |  99 |
-| 3 | 51 | D | 68 | d | 100 |
-| 4 | 52 | E | 69 | e | 101 |
-| 5 | 53 | F | 70 | f | 102 |
-| 6 | 54 | G | 71 | g | 103 |
-| 7 | 55 | H | 72 | h | 104 |
-| 8 | 56 | I | 73 | i | 105 |
-| 9 | 57 | J | 74 | j | 106 |
-|   |    | K | 75 | k | 107 |
-|   |    | L | 76 | l | 108 |
-|   |    | M | 77 | m | 109 |
-|   |    | N | 78 | n | 110 |
-|   |    | O | 79 | o | 111 |
-|   |    | P | 80 | p | 112 |
-|   |    | Q | 81 | q | 113 |
-|   |    | R | 82 | r | 114 |
-|   |    | S | 83 | s | 115 |	
-|   |    | T | 84 | t | 116 |
-|   |    | U | 85 | u | 117 |
-|   |    | V | 86 | v | 118 |
-|   |    | W | 87 | w | 119 |
-|   |    | X | 88 | x | 120 |
-|   |    | Y | 89 | y | 121 |
-|   |    | Z | 90 | z | 122 |	
+| Char | ASCII | Char | ASCII | Char | ASCII |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+|---|----|---|----|---|----:|-----|
+| 0 | 48 | A | 65 | a |  97 | |
+| 1 | 49 | B | 66 | b |  98 | |
+| 2 | 50 | C | 67 | c |  99 | |
+| 3 | 51 | D | 68 | d | 100 | |
+| 4 | 52 | E | 69 | e | 101 | |
+| 5 | 53 | F | 70 | f | 102 | |
+| 6 | 54 | G | 71 | g | 103 | |
+| 7 | 55 | H | 72 | h | 104 | |
+| 8 | 56 | I | 73 | i | 105 | |
+| 9 | 57 | J | 74 | j | 106 | |
+|   |    | K | 75 | k | 107 | |
+|   |    | L | 76 | l | 108 | |
+|   |    | M | 77 | m | 109 | |
+|   |    | N | 78 | n | 110 | |
+|   |    | O | 79 | o | 111 | |
+|   |    | P | 80 | p | 112 | |
+|   |    | Q | 81 | q | 113 | |
+|   |    | R | 82 | r | 114 | |
+|   |    | S | 83 | s | 115 | |	
+|   |    | T | 84 | t | 116 | |
+|   |    | U | 85 | u | 117 | |
+|   |    | V | 86 | v | 118 | |
+|   |    | W | 87 | w | 119 | |
+|   |    | X | 88 | x | 120 | |
+|   |    | Y | 89 | y | 121 | |
+|   |    | Z | 90 | z | 122 | |	
 
 > [!NOTE]
 > This table shows only numbers and letters, but every key on the keyboard has an ASCII character code. 
