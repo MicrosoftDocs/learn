@@ -55,17 +55,17 @@ quiz:
       explanation: "That's incorrect. The Azure Sentinel agent is actually a Log Analytics agent."
 
 
-  - content: "The Azure Sentinel Reader can perform what actions?"
+  - content: "Azure Sentinel Reader can perform what action(s)?"
     choices:
     - content: "Edit workbooks"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader only can review data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. Azure Sentinel Reader can only review data, incidents, workbooks, and other Azure Sentinel resources."
     - content: "Review data, incidents, workbooks, and other Azure Sentinel resources."
       isCorrect: true
-      explanation: "That's correct. That role can review data, incidents, workbooks, and other Azure Sentinel resources."
-    - content: "Create and run playbook"
+      explanation: "That's correct. Azure Sentinel Reader can review data, incidents, workbooks, and other Azure Sentinel resources."
+    - content: "Create and run PlayBook"
       isCorrect: false
-      explanation: "That's incorrect. Azure Sentinel Reader only can review data, incidents, workbooks, and other Azure Sentinel resources."
+      explanation: "That's incorrect. Azure Sentinel Reader can only review data, incidents, workbooks, and other Azure Sentinel resources."
 
 
   - content: "Which of the following is required in order to connect Azure Sentinel to Azure AD?"
@@ -78,4 +78,4 @@ quiz:
       explanation: "That's incorrect. Azure AD Connect is a tool for connecting on-premises identity infrastructure to Microsoft Azure AD."
     - content: "Azure AD Domain Services must be enabled"
       isCorrect: false
-      explanation: "That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for the Azure Sentinel to Azure AD connection."
+      explanation: "That's incorrect. Although Azure AD Domain Services works with Azure AD, it isn't a requirement for the connection between Azure Sentinel and Azure AD."
