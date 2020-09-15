@@ -182,7 +182,7 @@ What happens to the register that encodes the coloring at this step?
 If you apply these steps to a basis state, you won't be able to tell the difference - the global phase will not be observable. 
 But if you apply these steps to a superposition state, you'll see that the basis states that encode valid colorings will acquire the $-1$ relative phase - and that's exactly the effect we need the phase operation to have!
 
-Here is what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation.
+Here is what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation that implements a bit-flip or marking oracle.
 
 :::code language="qsharp" source="code/4-program-5.qs":::
 

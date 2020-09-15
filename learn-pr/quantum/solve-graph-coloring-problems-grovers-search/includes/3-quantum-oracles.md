@@ -38,6 +38,6 @@ For such algorithms, their runtime analysis is usually done in terms of the numb
 
 When we use an algorithm described in terms of quantum oracles to solve a specific problem, we need to implement the quantum oracle for this problem — in case of Grover's search algorithm, the oracle computes the value of the function $f(x)$ that we're trying to invert.
 
-The branch of quantum computing that studies the techniques of implementing classical computations on a quantum computer is called *reversible computing*. We will return to the question of implementing quantum oracles efficiently in the last unit when we discuss the types of problems that can benefit from Grover's algorithm.
+A branch of classical computer science called *reversible computing* gives us the techniques we need to implement classical computations on a quantum computer as well. We will return to the question of implementing quantum oracles efficiently in the last unit when we discuss the types of problems that can benefit from Grover's algorithm.
 
 In the next section you'll see how to implement the example problem, graph coloring problem, as a quantum oracle using Q#.
