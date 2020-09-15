@@ -28,7 +28,7 @@ You would expect the function to return the letter `c`.
 
 Next, you need to convert your letter (also called a _character_, or _char_) into a number. Letters and numbers in code have a numerical representation because computers, ultimately, compute numbers. ASCII character codes are the numerical codes that represent letters and numbers (and other punctuation too, but that's beyond the scope of this lesson). Here's a chart that matches the letter and number that humans understand to the decimal number that computers understand:
 
-| Char | ASCII | Char | ASCII | Char | ASCII |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+| Char | ASCII | Char | ASCII | Char | ASCII |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
 |---|----|---|----|---|----:|-----|
 | 0 | 48 | A | 65 | a |  97 | |
 | 1 | 49 | B | 66 | b |  98 | |
