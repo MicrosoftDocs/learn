@@ -26,39 +26,39 @@ You would expect the function to return the letter `c`.
 
 ## Convert a character to a number
 
-Next, you need to convert your letter (also called a _character_, or _char_) into a number. If you recall from the code hunt challenge, when you [convert binary to letters and numbers](https://www.bing.com/search?q=binary+to+text+converter&qs=SC&pq=binary+to+text+coner&sc=8-20&cvid=4F01F15EE0D540698C86EF6B95AFD7C7&FORM=QBLH&sp=1?azure-portal=true), a binary number represents an ASCII character code (letter or number). It also represents a decimal number:
+Next, you need to convert your letter (also called a _character_ or _char_) into a number. Letters and numbers in code have a numerical representation because computers, ultimately, compute numbers. ASCII character codes are the numerical codes that represent letters and numbers (and other punctuation, but that's beyond the scope of this lesson). Here's a chart that matches the letter and number that humans understand to the decimal number that computers understand:
 
-| Char | ASCII | Binary | Char | ASCII | Binary | Char | ASCII | Binary |
-|:--:|--:|:--------:|:--:|--:|:--------:|:--:|---:|:--------:|
-| 0 | 48 | 00110000 | A | 65 | 01000001 | a |  97 | 01100001 |	
-| 1 | 49 | 00110001 | B | 66 | 01000010 | b |  98 | 01100010 |
-| 2 | 50 | 00110010 | C | 67 | 01000011 | c |  99 | 01100011 |
-| 3 | 51 | 00110011 | D | 68 | 01000100 | d | 100 | 01100100 |
-| 4 | 52 | 00110100 | E | 69 | 01000101 | e | 101 | 01100101 |
-| 5 | 53 | 00110101 | F | 70 | 01000110 | f | 102 | 01100110 |
-| 6 | 54 | 00110110 | G | 71 | 01000111 | g | 103 | 01100111 |
-| 7 | 55 | 00110111 | H | 72 | 01001000 | h | 104 | 01101000 |
-| 8 | 56 | 00111000 | I | 73 | 01001001 | i | 105 | 01101001 |
-| 9 | 57 | 00111001 | J | 74 | 01001010 | j | 106 | 01101010 |
-|   |    |          | K | 75 | 01001011 | k | 107 | 01101011 |
-|   |    |          | L | 76 | 01001100 | l | 108 | 01101100 |
-|   |    |          | M | 77 | 01001101 | m | 109 | 01101101 |
-|   |    |          | N | 78 | 01001110 | n | 110 | 01101110 |
-|   |    |          | O | 79 | 01001111 | o | 111 | 01101111 |
-|   |    |          | P | 80 | 01010000 | p | 112 | 01110000 |
-|   |    |          | Q | 81 | 01010001 | q | 113 | 01110001 |
-|   |    |          | R | 82 | 01010010 | r | 114 | 01110010 |
-|   |    |          | S | 83 | 01010011 | s | 115 | 01110011 |	
-|   |    |          | T | 84 | 01010100 | t | 116 | 01110100 |
-|   |    |          | U | 85 | 01010101 | u | 117 | 01110101 |
-|   |    |          | V | 86 | 01010110 | v | 118 | 01110110 |
-|   |    |          | W | 87 | 01010111 | w | 119 | 01110111 |
-|   |    |          | X | 88 | 01011000 | x | 120 | 01111000 |
-|   |    |          | Y | 89 | 01011001 | y | 121 | 01111001 |
-|   |    |          | Z | 90 | 01011010 | z | 122 | 01111010 |	
+| Char | ASCII | Char | ASCII | Char | ASCII |
+|:--:|--:|:--:|--:|:--:|---:|
+| 0 | 48 | A | 65 | a |  97 |
+| 1 | 49 | B | 66 | b |  98 |
+| 2 | 50 | C | 67 | c |  99 |
+| 3 | 51 | D | 68 | d | 100 |
+| 4 | 52 | E | 69 | e | 101 |
+| 5 | 53 | F | 70 | f | 102 |
+| 6 | 54 | G | 71 | g | 103 |
+| 7 | 55 | H | 72 | h | 104 |
+| 8 | 56 | I | 73 | i | 105 |
+| 9 | 57 | J | 74 | j | 106 |
+|   |    | K | 75 | k | 107 |
+|   |    | L | 76 | l | 108 |
+|   |    | M | 77 | m | 109 |
+|   |    | N | 78 | n | 110 |
+|   |    | O | 79 | o | 111 |
+|   |    | P | 80 | p | 112 |
+|   |    | Q | 81 | q | 113 |
+|   |    | R | 82 | r | 114 |
+|   |    | S | 83 | s | 115 |	
+|   |    | T | 84 | t | 116 |
+|   |    | U | 85 | u | 117 |
+|   |    | V | 86 | v | 118 |
+|   |    | W | 87 | w | 119 |
+|   |    | X | 88 | x | 120 |
+|   |    | Y | 89 | y | 121 |
+|   |    | Z | 90 | z | 122 |	
 
 > [!NOTE]
-> This table shows only numbers and letters, but every key on the keyboard has an ASCII character code and a binary representation of that number. 
+> This table shows only numbers and letters, but every key on the keyboard has an ASCII character code. 
 
 Suppose you pass in the letter `a` and a `shiftAmount` value of `2` to the `lassoLetter()` function, and you expect it to return the letter `c`. How would you update your code to return that output? 
 
