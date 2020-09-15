@@ -9,6 +9,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Exercise - Create a GitHub Action to build a container image
-durationInMinutes: 8
+durationInMinutes: 10
 content: |
   [!include[](includes/4-build-github-action.md)]

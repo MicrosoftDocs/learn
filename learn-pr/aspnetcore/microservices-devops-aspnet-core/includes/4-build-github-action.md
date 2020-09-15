@@ -21,13 +21,8 @@ Create a GitHub Action for the build with the following steps:
       push:
         paths:
         - 'src/Services/Coupon/**'
+        - 'tests/Services/Coupon/**'
         branches: [ main ]
-
-    env:
-      IMAGE_NAME: coupon.api
-      TAG: linux-latest
-      CONTEXT_PATH: .
-      DOCKER_FILE_PATH: src/Services/Coupon/Coupon.API/Dockerfile.acr
 
     jobs:
       build-and-push-docker-image:
@@ -38,26 +33,35 @@ Create a GitHub Action for the build with the following steps:
           with:
             ref: main
 
+        - name: Run unit tests
+          run: dotnet test tests/Services/Coupon/*.Tests/*.csproj
+          env:
+            DOTNET_CLI_TELEMETRY_OPTOUT: true
+            DOTNET_NOLOGO: true
+
         - name: Build and push Docker image
           uses: docker/build-push-action@v1.1.0
           with:
             username: ${{ secrets.REGISTRY_USERNAME }}
-            password:  ${{ secrets.REGISTRY_PASSWORD }}
+            password: ${{ secrets.REGISTRY_PASSWORD }}
             registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-            path:  ${{ env.CONTEXT_PATH }}
-            dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH, env.DOCKER_FILE_PATH) }}
-            repository:  ${{ env.IMAGE_NAME }}
-            tags: ${{ env.TAG }}
+            path: ${{ env.CONTEXT_PATH }}
+            dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH, 'src/Services/Coupon/Coupon.API/Dockerfile.acr') }}
+            repository: 'coupon.api'
+            tags: 'linux-latest'
             push: true
+            env:
+              CONTEXT_PATH: .
     ```
 
     The preceding YAML defines a GitHub Action that:
 
-    - Is triggered when a commit is pushed to the coupon service in the `main` branch.
-    - Defines environment variables that are used tasks in the specification.
-    - Has one job&mdash;a set of steps that execute on the same runner&mdash;named `build-and-push-docker-image`. The job:
+    - Is triggered when a commit is pushed to the coupon service's source code or unit tests in the `main` branch.
+    - Defines step-specific environment variables.
+    - Has one job&mdash;a set of steps that execute on the same workflow runner&mdash;named `build-and-push-docker-image`. The job:
+        - Executes the xUnit tests for the coupon service.
         - Builds the Docker image and pushes it to the ACR instance.
-        - Runs in an `ubuntu-latest` runner and has two steps, both of which are standard actions available from the [GitHub Actions marketplace](https://github.com/marketplace?type=actions&azure-portal=true):
+        - Runs in an `ubuntu-latest` runner and has three steps, two of which are standard actions available from the [GitHub Actions marketplace](https://github.com/marketplace?type=actions):
             - `Get code from the repository` checks out the `main` branch.
             - `Build and push Docker image` builds the image and pushes it to ACR.
 
@@ -99,8 +103,33 @@ View the real-time progress of the build by completing the following steps:
 
     :::image type="content" source="../media/4-build-github-action/build-push-docker-image-task.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/build-push-docker-image-task.png":::
 
+1. Wait a few minutes. Notice that:
+
+    - The build fails on the `Run unit tests` step.
+    - The `Build and push Docker image` step doesn't run due to the failure of the previous step.
+
+## Fix the build
+
+1. Select the **Code** tab.
+1. Edit the *tests/Services/Coupon/Coupon.API.Tests/Controllers/CouponControllerTests.cs* file. In the *CouponControllerTests.cs* file, notice that `Assert.True(false);` causes the unit test to fail. Replace that line with the following code:
+
+    ```csharp
+    Assert.True(true);
+    ```
+
+    The preceding code causes the test to always pass. This test is for illustrative purposes only. Real tests should test actual functionality.
+1. Commit and push this change to the `main` branch.
+
+    The build workflow is triggered automatically.
+
 When the build completes successfully, all steps are prefixed with a green check mark. Expand any task for the output generated during its execution. For example:
 
 :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build" border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
+
+> [!NOTE]
+> It's possible to move the `dotnet test` command to the *Dockerfile*. In this example, you're running `dotnet test` in the GitHub Action to:
+>
+> - Understand how to execute .NET Core CLI commands in GitHub Actions.
+> - Understand how the failure of a step can prevent execution of the remaining build steps.
 
 In this unit, you created a GitHub action to build the coupon service. You added logging to the coupon service and saw how committing that code triggered the build workflow. Finally, you learned how to monitor the build's progress in real time.

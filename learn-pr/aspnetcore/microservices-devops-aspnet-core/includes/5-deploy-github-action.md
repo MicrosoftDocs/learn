@@ -21,12 +21,6 @@ Create a GitHub Action for the deployment with the following steps:
         - 'deploy/k8s/helm-simple/coupon/*'
         branches: [ main ]
 
-    env:
-      CHART_PATH: deploy/k8s/helm-simple/coupon
-      CONTEXT_PATH: .
-      CLUSTER_NAME: eshop-learn-aks
-      CLUSTER_RESOURCE_GROUP: eshop-learn-rg
-
     jobs:
       deploy-to-aks:
         runs-on: ubuntu-latest
@@ -35,8 +29,8 @@ Create a GitHub Action for the deployment with the following steps:
           uses: Azure/aks-set-context@v1
           with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
-            resource-group: ${{ env.CLUSTER_RESOURCE_GROUP }}
-            cluster-name: ${{ env.CLUSTER_NAME }}
+            resource-group: 'eshop-learn-rg'
+            cluster-name: 'eshop-learn-aks'
 
         - name: Get code from the repository
           uses: actions/checkout@v1
@@ -53,13 +47,12 @@ Create a GitHub Action for the deployment with the following steps:
 
         - name: Deploy
           run: |
-            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{ secrets.IP_ADDRESS }} --set protocol=http ${{ format('{0}/{1}', env.CONTEXT_PATH, env.CHART_PATH) }}
+            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{ secrets.IP_ADDRESS }} --set protocol=http ${{ format('{0}/{1}', '.', 'deploy/k8s/helm-simple/coupon') }}
     ```
 
     The preceding YAML defines a GitHub Action that:
 
     - Is triggered when a commit is pushed to the coupon service's Helm chart in the `main` branch.
-    - Defines environment variables that are used tasks in the specification.
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` runner and has five steps:
         - `Azure Kubernetes set context` sets the AKS credentials in the runner's *.kube/config* file.
         - `Get code from the repository` checks out the code from the repository.
@@ -193,4 +186,4 @@ Rollback was a success! Happy Helming!
 ```
 
 > [!NOTE]
-> In a real-life scenario, you'll have multiple environments to which the build's artifacts can be deployed. For example, development, testing, and staging. The deployment workflows can be triggered by events like merging PRs. Quality or approval gates, such as a stakeholder's PR approval, can be added to prevent unexpected deployments to production.
+> In a real-life scenario, you'll have multiple environments to which the build's artifacts can be deployed. For example, you might have development, testing, and staging environments. The deployment workflows can be triggered by events like merging PRs. Quality or approval gates, such as a stakeholder's PR approval, can be added to prevent unexpected deployments to production.

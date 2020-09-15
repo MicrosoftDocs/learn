@@ -4,7 +4,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 ## Run the deployment script
 
-1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core?azure-portal=true) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking?azure-portal=true).
+1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking).
 1. Run the following command in the command shell. When prompted for **Repo URL**, enter the URL of your fork created in the first step.
 
     ```bash
@@ -30,4 +30,4 @@ The script takes several minutes to complete. It deploys a modified version of t
 
 This module focuses on adding CI/CD for the coupon service depicted in the preceding diagram.
 
-[!INCLUDE [A note about non-blocking script warnings](../../includes/microservices/non-blocking-warnings-note.md)]
+[!INCLUDE[A note about non-blocking script warnings](../../includes/microservices/non-blocking-warnings-note.md)]
