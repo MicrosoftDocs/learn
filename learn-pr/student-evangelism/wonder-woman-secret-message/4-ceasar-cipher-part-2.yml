@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.wonder-woman-secret-message.ceasar-cipher-part-2
-title: 'Part 2: Decode one letter at a time with a Ceasar cipher'
+title: 'Part 2: Decode one letter with a Ceasar cipher by wrapping around the English alphabet'
 metadata:
-  title: 'Part 2: Decode one letter at a time with a Ceasar cipher'
+  title: 'Part 2: Decode one letter with a Ceasar cipher by wrapping around the English alphabet'
   description: Expand your Ceasar cipher that decodes one letter at a time to correctly wrap around the entire alphabet.
   ms.date: 09/21/2020
   author: sguthals
