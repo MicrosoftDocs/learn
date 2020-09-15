@@ -5,7 +5,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 ## Run the deployment script
 
 1. In a new browser window, fork the repository [github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) to your own GitHub account. For instructions on forking, see [Forking Projects](https://guides.github.com/activities/forking).
-1. Run the following command in the command shell. When prompted for **Repo URL**, enter the URL of your fork created in the first step.
+1. Run the following command in the command shell. When prompted for **:::no-loc text="Repo URL":::**, enter the URL of your fork created in the first step.
 
     ```bash
     . <(wget -q -O - https://aka.ms/microservices-devops-aspnet-core-setup)

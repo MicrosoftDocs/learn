@@ -9,7 +9,7 @@ In this unit, you'll complete the following tasks:
 
 Create a GitHub Action for the deployment with the following steps:
 
-1. Select the **Actions** tab again, select the **New workflow** button, and select the **set up a workflow yourself** link.
+1. Select the **:::no-loc text="Actions":::** tab again, select the **:::no-loc text="New workflow":::** button, and select the **:::no-loc text="set up a workflow yourself":::** link.
 1. Replace the YAML in the editor with the following YAML:
 
     ```yml
@@ -54,22 +54,22 @@ Create a GitHub Action for the deployment with the following steps:
 
     - Is triggered when a commit is pushed to the coupon service's Helm chart in the `main` branch.
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` runner and has five steps:
-        - `Azure Kubernetes set context` sets the AKS credentials in the runner's *.kube/config* file.
+        - `Azure Kubernetes set context` sets the AKS credentials in the runner's *:::no-loc text=".kube/config":::* file.
         - `Get code from the repository` checks out the code from the repository.
         - `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
         - `Azure Login` logs in to Azure using the service principal credentials.
         - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
-1. Replace the default Action file name of *main.yml* with *deploy.yml*.
+1. Replace the default Action file name of *:::no-loc text="main.yml":::* with *:::no-loc text="deploy.yml":::*.
 1. Commit the *deploy.yml* file directly to the `main` branch.
 
-These two GitHub Action definitions are stored in the repository's *.github/workflows* directory. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
+These two GitHub Action definitions are stored in the repository's *:::no-loc text=".github/workflows":::* directory. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
 
 ## Trigger a deployment
 
 To trigger a deployment, you'll increment the `appVersion` in the coupon service's Helm chart. Helm charts are used to define the service specification in a YAML template format.
 
-1. On the **Code** tab, edit the *deploy/k8s/helm-simple/coupon/Chart.yaml* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
+1. From the **:::no-loc text="Code":::** tab, edit the *:::no-loc text="deploy/k8s/helm-simple/coupon/Chart.yaml":::* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
     ```yml
     apiVersion: v2
@@ -89,18 +89,18 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
 ## Monitor the deployment
 
-1. Select the **Actions** tab in your repository to monitor the deployment's progress.
+1. Select the **:::no-loc text="Actions":::** tab in your repository to monitor the deployment's progress.
 1. Select the most recent workflow run listed for the *eShop deploy* workflow. The commit message used in the previous step becomes the run's name.
 
     :::image type="content" source="../media/5-deploy-github-action/eshop-deploy-workflow.png" alt-text="eShop deploy workflow listed on the workflows page" border="true" lightbox="../media/5-deploy-github-action/eshop-deploy-workflow.png":::
 
-1. Select the **deploy-to-aks** task:
+1. Select the **:::no-loc text="deploy-to-aks":::** task:
 
     :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
 
-    In the preceding image, you can see the `deploy-to-aks` job running. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-ask` job.
+    In the preceding image, you can see details of the `deploy-to-aks` job for this particular workflow run. The `Set up job` and `Complete job` steps are listed. In between those two steps are the custom steps defined within the `deploy-to-aks` job.
 
-1. Select the **Actions** tab again. You'll see a variation of the following screen when the deployment completes:
+1. Select the **:::no-loc text="Actions":::** tab again. You'll see a variation of the following screen when the deployment completes:
 
     :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
 
@@ -160,13 +160,13 @@ Complete the following steps to verify your change is deployed:
     cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
     ```
 
-1. Select the **Web SPA application** URL to launch the app.
-1. Log in from the **LOGIN** page.
+1. Select the **:::no-loc text="Web SPA application":::** URL to launch the app.
+1. Log in from the **:::no-loc text="LOGIN":::** page.
 1. Add your favorite products to the shopping bag by selecting the images.
-1. Select the shopping bag icon in the upper right, and select **CHECKOUT**.
-1. Enter the code *:::no-loc text="DISC-5":::* in the **HAVE A DISCOUNT CODE?** text box for a five USD discount, and select **APPLY**.
-1. Select **PLACE ORDER** to complete the purchase.
-1. Back in the command shell, select the **Centralized logging** URL.
+1. Select the shopping bag icon in the upper right, and select **:::no-loc text="CHECKOUT":::**.
+1. Enter the code *:::no-loc text="DISC-5":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a five USD discount, and select **:::no-loc text="APPLY":::**.
+1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
+1. Back in the command shell, select the **:::no-loc text="Centralized logging":::** URL.
 1. Observe an entry in the logs similar to the following content:
 
     :::image type="content" source="../media/5-deploy-github-action/seq-logs.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-logs.png":::
