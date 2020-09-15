@@ -7,7 +7,7 @@ Enterprise network topology with Azure is recommended in two flavors. Either Azu
 
 Azure Virtual WAN is a Microsoft-managed solution where global transit connectivity is provided by default. Virtual WAN hubs eliminate the need to manually configure network connectivity. Azure Virtual WAN is the preferred choice over hub and spoke because there is no need for a customer to deploy and manage some sort of router service in the hub. Virtual WAN also offers communications between on premises locations using the Microsoft Network and ExpressRoute and VPN. A design consideration for any networking in Azure keeps in mind the principle that Azure to Azure traffic should always stay in Azure.
 
-![Diagram that illustrates a Virtual WAN network topology.](./media/virtual-wan-top.png)
+![Diagram that illustrates a Virtual WAN network topology.](../media/virtual-wan-top.png)
 
 ## Recommendations
 
@@ -21,7 +21,7 @@ Use the hub and spoke model if there are no requirements for branch to branch co
 
 When multiple ExpressRoute circuits are connected to the same VNet, connection weights or BGP techniques must be used to ensure an optimal path for traffic between on-premises and Azure. If connection weights are used, BGP AS prepending is ignored. 
 
-![Diagram that illustrates a hub-and-spoke network topology.](./media/hub-and-spoke-topology.png)
+![Diagram that illustrates a hub-and-spoke network topology.](../media/hub-and-spoke-topology.png)
 
 # Recommendations
 

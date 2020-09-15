@@ -10,4 +10,4 @@ Delegate subnet creation to the landing zone owner. This will enable them to def
 
 The following figure shows a sample global enterprise deployment with datacenters spread across Europe and the United States. The deployment also has a large number of branch offices within both regions. The environment is globally connected via Virtual WAN and ExpressRoute Global Reach and segmentation is managed by Azure Firewall. 
 
-![VWAN with Azure Firewall.](./media/secvwan.png)
+![VWAN with Azure Firewall.](../media/secvwan.png)

@@ -6,7 +6,7 @@ Expressroute private peering traffic isn't currently encrypted. Traffic on MIcro
 
 Third-party VPN appliances are available in the marketplace and OS based encryption for Virtual Machines are also viable options for network encryption.
 
-![Diagram that illustrates encryption flows.](./media/enc-flows.png)
+![Diagram that illustrates encryption flows.](../media/enc-flows.png)
 
 # Recommendations
 
