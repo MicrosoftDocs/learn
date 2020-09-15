@@ -178,7 +178,7 @@ To perform analysis on waiting scenarios, you typically look at the following to
 > [!TIP]
 > You can use extended events for any running or waiting scenarios. To do so, you must set up an extended events session to trace queries. This method to debug a performance problem can be considered heavy.
 
-### Scenarios specific to Azure SQL Database
+### Scenarios specific to Azure SQL
 
 There are some performance scenarios, both running and waiting, that are specific to Azure SQL. These include log governance, worker limits, waits encountered for Business Critical service tiers, and waits specific to a Hyperscale deployment.
 
