@@ -9,7 +9,7 @@ This module guides you through the process of implementing a CI/CD pipeline usin
 In this module, you will:
 
 - Create an Azure service principal to authenticate GitHub Actions to a container registry.
-- Securely store sensitive information, used by the GitHub Actions, in a GitHub repository.
+- Securely store sensitive information used by the GitHub Actions.
 - Implement a GitHub Action to build the container image for a microservice.
 - Modify and commit the microservice code to trigger a build.
 - Implement a GitHub Action to deploy a container to a Kubernetes cluster.
