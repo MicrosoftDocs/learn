@@ -9,75 +9,50 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-aspnetcore
 title: Knowledge check
-durationInMinutes: 10
-content: ""
+durationInMinutes: 5
+content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: Is it necessary to have a microservices application to implement a CI/CD pipeline?
+    - content: "Without using the GitHub Actions Marketplace, where should sensitive information, such as credentials, be stored for Actions?"
       choices:
-        - content: "Yes"
+        - content: "*appsettings.json*"
           isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: "No"
+          explanation: "The *appsettings.json* file in an ASP.NET Core project stores information in plain text and is inaccessible to GitHub Actions."
+        - content: "*web.config*"
+          isCorrect: false
+          explanation: "The *web.config* file is inaccessible to GitHub Actions and is better suited for other purposes, such as IIS configuration."
+        - content: Azure Key Vault
+          isCorrect: false
+          explanation: "There's an Azure Key Vault action available in the GitHub Marketplace. However, GitHub also provides built-in secrets functionality."
+        - content: GitHub secrets
           isCorrect: true
-          explanation: "TODO: Explanation"
-    - content: What's the key enabler for making DevOps available to anyone?
+          explanation: "You can define secrets at the repository or the organization level. This information is encrypted and made accessible to GitHub Actions."
+    - content: "What is the purpose of creating an Azure Active Directory service principal for use in GitHub Actions?"
       choices:
-        - content: The cloud
+        - content: "The service principal is for storing application logs."
+          isCorrect: false
+          explanation: "The service principal isn't required for logging."
+        - content: "The service principal is the name of the AKS resource."
+          isCorrect: false
+          explanation: "The AKS resource name isn't related to the service principal."
+        - content: "The service principal is the GitHub Action's identity for performing tasks in Azure."
           isCorrect: true
-          explanation: "TODO: Explanation"
-        - content: Microservices
+          explanation: "GitHub Actions that interact with Azure must use a service principal."
+        - content: "The service principal is the web URL of the app."
           isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Containers
-          isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Container orchestrators
-          isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: All of the above
-          isCorrect: false
-          explanation: "TODO: Explanation"
-    - content: What's the main purpose behind DevOps?
+          explanation: "Service principals are unrelated to URLs."
+    - content: "During deployment, what is the purpose of Kubernetes creating a new container while the old one is still running?"
       choices:
-        - content: Testing all software
-          isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Deploying automatically
-          isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Getting software operation metrics
-          isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Cycling fast from development to operation metrics to make data-based decisions.
+        - content: "Reduce downtime"
           isCorrect: true
-          explanation: "TODO: Explanation"
-    - content: What do you need to ensure a pod is replaced with a `helm upgrade` chart command?
-      choices:
-        - content: Change the source code
+          explanation: "The old container isn't terminated until the new container is ready."
+        - content: "Scaling up"
           isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Delete the pod manually
+          explanation: "Scaling operations aren't required during a regular deployment."
+        - content: "Redundancy"
           isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Delete the chart before installing again
+          explanation: "The new and old containers aren't identical. Redundancy requires identical containers."
+        - content: "Scaling out"
           isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: Update the `appVersion` in the chart
-          isCorrect: true
-          explanation: "TODO: Explanation"
-    - content: What's the command to go back to the previous installed version of a chart?
-      choices:
-        - content: "`helm upgrade --version -1 {chart-name}`"
-          isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: "`helm restore {chart-name}`"
-          isCorrect: false
-          explanation: "TODO: Explanation"
-        - content: "`helm rollback {chart-name}`"
-          isCorrect: true
-          explanation: "TODO: Explanation"
-        - content: "`helm install --version -1`"
-          isCorrect: false
-          explanation: "TODO: Explanation"
+          explanation: "Scaling operations aren't required during a regular deployment."

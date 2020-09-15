@@ -154,7 +154,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
 Complete the following steps to verify your change is deployed:
 
-1. In the console, run the following command:
+1. Run the following command in the command shell:
 
     ```bash
     cat ~/clouddrive/aspnet-learn-temp/deployment-urls.txt
