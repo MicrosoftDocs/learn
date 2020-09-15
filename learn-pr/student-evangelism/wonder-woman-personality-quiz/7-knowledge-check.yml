@@ -31,11 +31,11 @@ quiz:
   - content: "How do you test if variable x has a value of 10?"
     choices:
     - content: "if x = 10"
-       isCorrect: false
-       explanation: "Incorrect, if you only have one = sign, you are assigning the value to the variable, even if it's in an if-statement"
+      isCorrect: false
+      explanation: "Incorrect, if you only have one = sign, you are assigning the value to the variable, even if it's in an if-statement"
     - content: "if x is 10"
-       isCorrect: false
-       explanation: "Incorrect, Python does not have an is keyword"
+      isCorrect: false
+      explanation: "Incorrect, Python does not have an is keyword"
      - content: "if x equals 10"
        isCorrect: false
        explanation: "Incorrect, Python does not have an equals keyword."
