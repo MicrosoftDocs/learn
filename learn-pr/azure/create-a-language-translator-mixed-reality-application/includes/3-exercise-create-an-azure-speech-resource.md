@@ -19,7 +19,7 @@ Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?a
     |**Subscription**    |   Concierge Subscription      |    The resource you are creating must belong to a resource group. Here, you select the Azure subscription to which the resource group belongs (or will belong, if you are creating the resource group within the wizard).     |
     |**Location**     |    Geographical location near you     |   The geographical location from which your app will be used.      |
     |**Pricing tier**     |     Free F0    |    The pricing tier of the plan being created. The selected tier corresponds to the usage of the resource. The Free F0 tier currently provides 5 audio hours free per month for Speech Translation.    |
-    |**Resource group**     |   Select the resource group created by the sandbox (starts with **learn**).      |    The resource group to which the Speech service will belong. All Azure resources must belong to a resource group.     |
+    |**Resource group**     |   <rgn>[Sandbox resource group]</rgn>      |    The resource group to which the Speech service will belong. All Azure resources must belong to a resource group.     |
 
    :::image type="content" source="../media/create-speech-resource.PNG" alt-text="A screenshot of the values provided for the Create Speech resource wizard.":::
 
