@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: An application with low latency network requirements between the service tiers must withstand an Azure datacenter outage. Which feature should be included in the architecture?
+  - content: An application with in-region network requirements between the service tiers must withstand an Azure data center outage. Which feature should be included in the architecture?
     choices:
     - content: Azure Front Door
       isCorrect: false
