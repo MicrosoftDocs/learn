@@ -14,4 +14,4 @@ By the end of this module, you will be able to integrate Speech Translation as a
 
 - Familiarity with [setting up a Unity project for Windows Mixed Reality with the Mixed Reality Toolkit](https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/?azure-portal=true).
 - Access to a microphone for audio capture
-- Basic familiarity of Unity - Unity interface, create a scene, import a package and add GameObjects to a scene
+- Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
