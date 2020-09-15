@@ -1,33 +1,43 @@
 ### YamlMime:Module
 uid: learn.azure.enterprise-scale-introduction
 metadata:
-  title: Introduction to CAF Ready enterprise-scale architecture
-  description: TODO
+  title: Introduction to enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure
+  description: The Microsoft Cloud Adoption Framework for Azure provides many landing zone options. In this module, we'll focus on enterprise-scale landing zones.
   ms.date: 09/30/2020
-  author: telmosampaio
-  ms.author: telmos
+  author: jeffmitchell
+  ms.author: jemitche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Introduction to CAF Ready enterprise-scale architecture
-summary: TODO
+title: Introduction to enterprise-scale landing zones in the Microsoft Cloud Adoption Framework for Azure
+summary: The Microsoft Cloud Adoption Framework for Azure has many landing zone options. In this module, you'll learn how enterprise-scale landing zones help organizations build the strategic design path and target technical state for your Azure environment.
 abstract: | 
-  In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  In this module, you'll learn to:
+   - Explain the vision for the enterprise-scale architecture in the Cloud Adoption Framework
+   - Describe the top customer challenges for enterprise-scale Azure adoption
+   - Define the architectural approach to enterprise-scale landing zones
+   - Explain enterprise-scale architecture design principles
 prerequisites: | 
-  - TODO
+  - Basic knowledge of Azure Policy
+  - Basic knowledge of Azure Enterprise Agreements
+  - Basic knowledge of management groups and subscriptions
+  - Intermediate knowledge of Azure networking
+  - Basic knowledge of Azure Security Center and Azure Sentinel
+  - Basic knowledge of Azure Log Analytics
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
 roles:
 - solution-architect
+- devops-engineer
+- administrator
 products:
 - azure
+- azure-policy
+- azure-resource-manager
 units:
 - learn.azure.enterprise-scale-introduction.1-introduction
 - learn.azure.enterprise-scale-introduction.2-vision-customer-challenges
-- learn.azure.enterprise-scale-introduction.3-microsoft-approach
+- learn.azure.enterprise-scale-introduction.3-enterprise-scale-architecture-approach
 - learn.azure.enterprise-scale-introduction.4-enterprise-scale-design-principles
 - learn.azure.enterprise-scale-introduction.5-summary
 badge:

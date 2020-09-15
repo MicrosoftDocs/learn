@@ -1,12 +1,12 @@
 # Enterprise-scale architecture overview
 
-## Introduction to CAF Ready Enterprise-scale architecture
+## Introduction to enterprise-scale architecture in the Microsoft Cloud Adoption Framework for Azure
 
-Describe the vision, approach, and design principles behind the CAF Ready Enterprise-scale architecture. 
+Describe the vision, approach, and design principles behind the enterprise-scale architecture of the Microsoft Cloud Adoption Framework for Azure.
 
 ## Role(s)
 
-- Solution Architect
+- Solution architect
 
 ## Level
 
@@ -18,27 +18,27 @@ Describe the vision, approach, and design principles behind the CAF Ready Enterp
 
 ## Prerequisites
 
-- Basic knowledge of Azure Policies
-- Basic knowledge of Azure Enterprise agreements
-- Basic knowledge of Management Groups and subscriptions
-- Intermediate knowledge of Azure networking, including cross region and on-premises connectivity
-- Basic knowledge of Azure Security Center, and Azure Sentinel
+- Basic knowledge of Azure Policy
+- Basic knowledge of Azure Enterprise Agreements
+- Basic knowledge of management groups and subscriptions
+- Intermediate knowledge of Azure networking, including cross-region and on-premises connectivity
+- Basic knowledge of Azure Security Center and Azure Sentinel
 - Basic knowledge of Azure Log Analytics
 
 ## Summary
 
-Define the vision and design principles used to govern an Enterprise-scale architecture.
+Define the vision and design principles used to govern an enterprise-scale architecture.
 
 ## Learning objectives
 
-1. Explain the vision for CAF Ready Enterprise-scale architecture
+1. Explain the vision for enterprise-scale architecture of the Cloud Adoption Framework
 1. Describe the top customer challenges for enterprise-scale Azure adoption
-1. Define the Microsoft approach for Enterprise-scale landing zones
-1. Explain the Enterprise-scale architecture design principles
+1. Define the Cloud Adoption Framework approach for enterprise-scale landing zones
+1. Explain the enterprise-scale architecture design principles
 
 ## Subtasks
 
-Identify the subtasks of *Introduction to CAF Ready Enterprise-scale architecture*
+Identify the subtasks of _Introduction to enterprise-scale architecture in the Microsoft Cloud Adoption Framework for Azure_.
 
 | Subtask | Type | Learning objective | Single unit? |
 |---------|------|--------------------|--------------|
@@ -58,35 +58,33 @@ Identify the subtasks of *Introduction to CAF Ready Enterprise-scale architectur
     - Top customer challenges
         - Architecture complexity
         - Operating compatibility
-        - Lack of trust/Desire for control
+        - Lack of trust/desire for control
     - What must be true for customer success
         - Platform architecture in production
         - Cloud operating model
         - Democratization
         - Application centric migration
     - What must be designed and built
-        - Platform Operations and Management
+        - Platform operations and management
         - Platform DevOps
-        - Subscription Organization and Governance
-        - Application Landing Zones
-        - Identity and Access Management
-        - Policy Management
-        - Security and Compliance
-        - Network Topology and Connectivity
-        - Shared Services Infrastructure
-        - Business Continuity and Disaster Recovery
-        - Service Management
-        - Service Catalog
+        - Subscription organization and governance
+        - Application landing zones
+        - Identity and access management
+        - Policy management
+        - Security and compliance
+        - Network topology and connectivity
+        - Shared services infrastructure
+        - Business continuity and disaster recovery
+        - Service management
+        - Service catalog
     - Sustainable engineering and migration
 
+    **Knowledge check**
+        - Identify aspects of the enterprise-scale architecture vision
+        - Identify top customer challenges
+        - Identify what must be designed and built
 
-   **Knowledge check**
-    
-    - Identify aspects of the Enterprise-scale architecture vision
-    - Identify top customer challenges
-    - Identify what must be designed and built
-
-1. **Microsoft approach**
+1. **Enterprise-scale Architecture approach**
 
     Content to be added:
 
@@ -95,7 +93,7 @@ Identify the subtasks of *Introduction to CAF Ready Enterprise-scale architectur
         - Policy-driven governance
         - Single control and management plane
         - Application-centric and archetype neutral approach
-        - azure native design and platform roadmap alignment
+        - Azure native design and platform roadmap alignment
     - Enterprise-scale architecture definition
     - Critical design areas
         - Enterprise enrollment and Azure AD tenants
@@ -109,12 +107,11 @@ Identify the subtasks of *Introduction to CAF Ready Enterprise-scale architectur
     - Architecture composition
     - Landing zones
     - Key technical functions
-    
-   **Knowledge check**
-    
-    - Identify design principles
-    - Identify critical design areas
-    - Identify technical functions
+
+    **Knowledge check**
+        - Identify design principles
+        - Identify critical design areas
+        - Identify technical functions
 
 1. **Enterprise-scale design principles**
 
@@ -124,7 +121,7 @@ Identify the subtasks of *Introduction to CAF Ready Enterprise-scale architectur
         - Subscriptions as unit of scale
         - Subscriptions as unit of cost
         - Agility for business units
-    - Policy driven governance
+    - Policy-driven governance
         - Management group level policies
         - Infrastructure deployment by policy
     - Single control and management plane
@@ -138,9 +135,8 @@ Identify the subtasks of *Introduction to CAF Ready Enterprise-scale architectur
         - Use Azure native services as much as possible
         - Stay in touch with preview and upcoming features
 
-   **Knowledge check**
-    
-    - Explain reasons for subscription democratization
-    - Explain how policy driven governance works 
+    **Knowledge check**
+        - Explain reasons for subscription democratization
+        - Explain how policy-driven governance works
 
 1. **Summary**
