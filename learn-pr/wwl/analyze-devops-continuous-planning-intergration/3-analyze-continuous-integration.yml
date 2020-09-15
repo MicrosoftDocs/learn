@@ -4,12 +4,12 @@ title: Analyze Continuous Integration
 metadata:
   title: Analyze Continuous Integration
   description: "Analyze Continuous Integration"
-  ms.date: 09/06/2020
+  ms.date: 09/17/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 4
+durationInMinutes: 12
 content: |
   [!include[](includes/3-analyze-continuous-integration.md)]
