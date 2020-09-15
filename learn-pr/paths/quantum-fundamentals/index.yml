@@ -1,7 +1,7 @@
 ### YamlMime:LearningPath
 uid: learn.quantum-fundamentals
 metadata:
-  description: TODO
+  description: Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
   brand: azure
   ms.date: 09/20/2020
   author: tpetchel
@@ -9,16 +9,14 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Quantum computing fundamentals
-Intrigued by quantum computing but don't know where to start? This learning path enables you to build up your skills to work on this next generation of computation. 
+summary: | 
+  Intrigued by quantum computing but don't know where to start? This learning path helps prepare you for this exciting next generation of computing.
 
-In this learning path, you will:
+  After completing this learning path, you'll be able to:
 
-- Understand the fundamental quantum computing concepts
-- Learn the quantum programming tool set and the programming language Q# 
-- Practice hands-on quantum computing programming and writing quantum algorithms 
-- Explore running your quantum algorithms on hardware through the Azure Quantum cloud service
-- Understand the benefits of quantum computing and types of problems it can help solve
-
+  - Explain the fundamental concepts of quantum computing.
+  - Build basic quantum programs by using the Quantum Development Kit and Q#.
+  - Identify the kinds of problems quantum algorithms can solve more efficiently than classical algorithms.
 prerequisites: None
 iconUrl: /learn/achievements/generic-trophy.svg
 levels:
