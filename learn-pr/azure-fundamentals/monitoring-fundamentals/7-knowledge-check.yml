@@ -42,7 +42,7 @@ quiz:
       explanation: "Azure Monitor is not the platform used by Application Insights, nor does it provide monitoring for VMs, containers, and Kubernetes."
     - content: "Azure Monitor"
       isCorrect: true
-      explanation: "Azure Monitor is the platform used by Application Insights, nor does it provide monitoring for VMs, containers, and Kubernetes."
+      explanation: "Azure Monitor is the platform used by Application Insights."
     - content: "Azure Service Health"
       isCorrect: false
       explanation: "Azure Service Health is not the platform used by Application Insights, nor does it provide monitoring for VMs, containers, and Kubernetes."

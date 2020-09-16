@@ -37,9 +37,9 @@ quiz:
       explanation: "Azure Bot Service creates virtual agent solutions that utilize natural language. It should not be eliminated as a candidate."
   - content: "You need to identify the content of product images to automatically create alt tags for images formatted properly.  Which production option is the best candidate?"
     choices:
-    - content: "Azure Machine Learning could be used to identify the content of product images, however creating a model to do identify the content of images would be cost and time prohibitive.  Azure Machine Learning is not the best candidate."
+    - content: "Azure Machine Learning"
       isCorrect: false
-      explanation: "Azure Machine Learning"
+      explanation: "Azure Machine Learning could be used to identify the content of product images, however creating a model to do identify the content of images would be cost and time prohibitive.  Azure Machine Learning is not the best candidate."
     - content: "Azure Cognitive Services"
       isCorrect: true
       explanation: "Azure Cognitive Services includes Vision services that can identify the content of an image.  Azure Cognitive Services is the best candidate."
