@@ -46,8 +46,14 @@ Create a GitHub Action for deployment of the coupon service with the following s
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
         - name: Deploy
-          run: |
-            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{ secrets.IP_ADDRESS }} --set protocol=http './deploy/k8s/helm-simple/coupon'
+          run: >
+            helm upgrade 
+            --install eshoplearn-coupon
+            --namespace=default 
+            --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }} 
+            --set imagePullPolicy=Always 
+            --set host=${{ secrets.IP_ADDRESS }} 
+            --set protocol=http './deploy/k8s/helm-simple/coupon'
     ```
 
     The preceding YAML defines a GitHub Action that:
