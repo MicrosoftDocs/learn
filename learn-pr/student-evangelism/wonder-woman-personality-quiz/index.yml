@@ -2,24 +2,24 @@
 uid: learn.student-evangelism.wonder-woman-personality-quiz
 metadata:
   title: Which WONDER WOMAN 1984 character are you most like?
-  description: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends using Boolean commands and conditionals.
+  description: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
   ms.date: 9/21/20
   author: sguthals
   ms.author: sguthals
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Which WONDER WOMAN 1984 character are you most like?
-summary: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends using Boolean commands and conditionals.
+summary: Which WONDER WOMAN 1984 character are you most like? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
 abstract: |
- In this module, you will begin to discover how to: 
+ In this module, you'll discover how to: 
   - Write your first lines of Python code
   - Create a program that allows users to interact with your code
-  - Use if-, elif-, and else-statements
+  - Use `if`, `elif`, and `else` statements
 
   <strong>No coding experience is required to complete this learn module.</strong>
 prerequisites: |
   - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
-  - [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
+  - [Visual Studio Code with the Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:

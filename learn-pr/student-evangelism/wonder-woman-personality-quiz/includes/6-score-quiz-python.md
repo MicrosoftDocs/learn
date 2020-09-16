@@ -1,8 +1,8 @@
 Now it's time to really score the quiz and assign your user a character from the WONDER WOMAN 1984 film!
 
-With five questions and different choices, you'll use some variables to guide the response. You'll add and subtract points from each of the four characters depending on what the user chose to answer. At the end, you'll tally up all the points and tell the user which character they are most like.
+With five questions and different choices, you'll use some variables to guide the response. You'll add and subtract points from each of the four characters, depending on what the user chose to answer. At the end, you'll tally up all the points and tell the user which character they are most like.
 
-Add this code to the bottom of your file. Notice that this time you can use else-statements because in this code you wrote in the last unit if the user chose something other than "A" or "B" you set each variable to "A". 
+Add this code to the bottom of your file. Notice that this time, you can use else-statements. The reason is that in this code you wrote in the last unit, if the user chose something other than **A** or **B**, you set each variable to `A`. 
 
 ```python
 # create some variables for scoring
