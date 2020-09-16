@@ -32,7 +32,7 @@ In addition to the cloud products and services available through both the web st
 
 ## Microsoft AppSource
 
-The Microsoft AppSource storefront is geared toward business users and business decision makers, and contains business software that extends directly into Azure, Dynamics 365, Office 365, and the Power Platform. Microsoft AppSource also contains web applications, which are hosted on the cloud and accessed over the internet. Solutions are organized by category and industry and are easy to filter, making it simple for customers to find the right app or service.
+The Microsoft AppSource storefront is geared toward business users and business decision makers, and contains business software that extends directly into Azure, Dynamics 365, Microsoft 365, and the Power Platform. Microsoft AppSource also contains web applications, which are hosted on the cloud and accessed over the internet. Solutions are organized by category and industry and are easy to filter, making it simple for customers to find the right app or service.
 
 Your customers can access Microsoft AppSource online through the web storefront at <https://appsource.microsoft.com>.
 
@@ -43,7 +43,7 @@ Your customers can access Microsoft AppSource online through the web storefront 
 |![Screenshot of Microsoft AppSource apps landing page with emphasis on application categories and filters](..\media\8-microsoft-appsource-apps.png)|
 |*Screenshots of the Microsoft AppSource web storefront*|
 
-AppSource apps are also available within Microsoft products by clicking “Get more apps” from the homepage in Dynamics 365, “Get apps” in Power BI, “Apps” in Teams, and “Insert\>Get Add-ins” in Office 365 products (excluding Teams).
+AppSource apps are also available within Microsoft products by clicking “Get more apps” from the homepage in Dynamics 365, “Get apps” in Power BI, “Apps” in Teams, and “Insert\>Get Add-ins” in Microsoft 365 products (excluding Teams).
 
 |  |
 |---|

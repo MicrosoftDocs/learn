@@ -4,12 +4,12 @@ title: Explore Continuous Operations
 metadata:
   title: Explore Continuous Operations
   description: "Explore Continuous Operations"
-  ms.date: 07/17/2020
+  ms.date: 09/17/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 8
+durationInMinutes: 20
 content: |
   [!include[](includes/3-explore-continuous-operations.md)]

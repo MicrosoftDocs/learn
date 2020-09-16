@@ -20,9 +20,9 @@ To get started with Marketplace Rewards:
 
 1. Register to become a Microsoft partner and join the Microsoft commercial marketplace at <https://aka.ms/joinmarketplace>
 
-2. Publish an offer in either Microsoft AppSource or Azure Marketplace through [Partner Center](https://partner.microsoft.com/en-us/dashboard/mpn/membership/benefits/commercialmarketplace)
+2. Publish an offer in either Microsoft AppSource or Azure Marketplace through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace)
 
-3. Access and activate benefits directly through [Partner Center](https://partner.microsoft.com/en-us/dashboard/mpn/membership/benefits/commercialmarketplace)
+3. Access and activate benefits directly through [Partner Center](https://partner.microsoft.com/dashboard/mpn/membership/benefits/commercialmarketplace)
 
 ## Summary
 

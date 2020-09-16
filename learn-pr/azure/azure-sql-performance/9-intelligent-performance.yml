@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-performance.9-intelligent-performance
+metadata:
+  title: Intelligent performance
+  description: Intelligent performance
+  ms.date: 08/05/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Intelligent performance
+durationInMinutes: 10
+content: |
+  [!include[](includes/9-intelligent-performance.md)]
+quiz:
+    title: "Knowledge check"
+    questions:
+    - content: "Which best describes Intelligent Query Processing (IQP)?"
+      choices:
+      - content: "Automated statistics to improve inefficient query plans"
+        isCorrect: false
+        explanation: "Statistics can be updated automatically with Azure SQL, but that isn't part of IQP."
+      - content: "Background tasks that use the Query Store to fix inefficient query plans"
+        isCorrect: false
+        explanation: "IQP is built into the query processor and doesn't run through background tasks."
+      - content: "Built-in capability in the query processor enabled through database compatibility levels"
+        isCorrect: true
+        explanation: "IQP is built into the query processor and can improve performance with no code changes."
+    - content: "Automatic Plan Correction can help recommend and fix which type of performance scenario?"
+      choices:
+      - content: "Indexes that might be needed to improve query performance"
+        isCorrect: false
+        explanation: "Automatic Plan Correction doesn't recommend indexes."
+      - content: "Inefficient query plans chosen due to out-of-date statistics"
+        isCorrect: false
+        explanation: "Automatic Plan Correction doesn't look at statistics for a query plan."
+      - content: "Query plan regressions that might be caused by parameter sensitive plans"
+        isCorrect: true
+        explanation: "Automatic Plan Correction does look at query plan regressions from the Query Store, and can recommend or fix problems by reverting to a previous good plan."
+    - content: "Automatic Tuning for Azure SQL Database can recommend and create indexes based on what information?"
+      choices:
+      - content: "Information from the Query Store and Dynamic Management Views (DMV)"
+        isCorrect: true
+        explanation: "Automatic Tuning uses machine learning to examine Query Store and DMV data over time to recommend and create indexes."
+      - content: "Query plan details captured from Dynamic Management Views"
+        isCorrect: false
+        explanation: "Automatic Tuning doesn't look at query plan details."
+      - content: "Extended events traces of query plan information over time"
+        isCorrect: false
+        explanation: "Automatic Tuning doesn't use extended events to look at query plan details."

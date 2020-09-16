@@ -3,7 +3,7 @@ uid: learn-xamarin.customize-your-xamarin-forms-apps
 metadata:
   title: Customize and add advanced features to Xamarin.Forms apps
   description: Take this learning path to discover how to use professional touches and development techniques that result in more beautiful and maintainable apps.
-  ms.date: 05/01/2019
+  ms.date: 08/12/2020
   author: patridge
   ms.author: adpatrid
   ms.topic: interactive-tutorial
@@ -30,5 +30,6 @@ modules:
 - learn-xamarin.display-relationships-in-xamarin-forms-with-master-detail-navigation
 - learn-xamarin.create-custom-controls-with-forms-renderers
 - learn-xamarin.use-effects-in-xamarin-forms
+- learn-xamarin.xamarin-forms-dual-screen
 trophy:
   uid: learn-xamarin.customize-your-xamarin-forms-apps.trophy

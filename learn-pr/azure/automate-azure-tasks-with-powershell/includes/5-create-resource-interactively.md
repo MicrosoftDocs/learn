@@ -62,7 +62,7 @@ To install the latest Azure PowerShell module, run the following commands:
 1. Type the following command, and then press Enter:
 
     ```powershell
-    Install-Module -Name Az -AllowClobber
+    Install-Module -Name Az -AllowClobber -SkipPublisherCheck
     ```
 
 This installs the module for all users by default (controlled by the scope parameter).
