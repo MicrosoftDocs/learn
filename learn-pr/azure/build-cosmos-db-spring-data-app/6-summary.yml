@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.cosmos-db-java-app.6-summary
+uid: learn.cosmos-db-spring-data-app.6-summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 09/15/2020
+  ms.date: 09/16/2020
   author: anfeldma-ms
   ms.author: anfeldma
   ms.topic: interactive-tutorial
