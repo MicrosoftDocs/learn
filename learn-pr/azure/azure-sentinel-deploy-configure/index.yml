@@ -16,9 +16,9 @@ abstract: |
   - Connect to the services you want to monitor.
   - Manage the log data collected by connectors.
 prerequisites: |
-  - Performing fundamental Azure administration.
-  - Working with Azure Monitor and its Log Analytics workspace.
-iconUrl: http://via.placeholder.com/120x120
+  - Experience performing fundamental Azure administration
+  - Experience working with Azure Monitor and its Log Analytics workspace
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:

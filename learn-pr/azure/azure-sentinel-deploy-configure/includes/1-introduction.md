@@ -27,8 +27,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-To get the best learning experience from this module, you should have knowledge of and experience with:
+To get the best learning experience from this module, you should have:
 
-- Performing fundamental Azure administration.
-- Working with Azure Monitor and its Azure Monitor Log Analytics.
-
+- Experience performing fundamental Azure administration.
+- Experience working with Azure Monitor and its Azure Monitor Log Analytics.

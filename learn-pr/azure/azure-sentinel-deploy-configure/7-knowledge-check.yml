@@ -42,7 +42,7 @@ quiz:
       explanation: "That's incorrect. The guidance, best practices, and processes in the SDL are internal Microsoft practices for helping to build more secure products and services."
 
 
-  - content: "The Azure Sentinel agent is actually a:" 
+  - content: "The Azure Sentinel agent is actually which of the following?" 
     choices:
     - content: "Log Analytics agent"
       isCorrect: true
@@ -55,7 +55,7 @@ quiz:
       explanation: "That's incorrect. A digital certificate is an electronic document used to prove the ownership of a public key."
 
 
-  - content: "Azure Sentinel Reader can perform what action(s)?"
+  - content: "Which of the following actions can the Azure Sentinel Reader role perform?"
     choices:
     - content: "Edit workbooks"
       isCorrect: false
