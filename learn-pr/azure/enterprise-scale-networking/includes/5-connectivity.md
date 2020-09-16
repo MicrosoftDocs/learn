@@ -9,7 +9,7 @@ ExpressRoute is private dedicated connectivity to Azure and the preferred approa
 
 Azure-native network security services such as Azure Firewall, Azure Web Application Firewall (WAF) on Azure Application Gateway, and Azure Front Door are fully managed services, so you don't incur the operational and management costs associated with infrastructure deployments, which can become complex at scale. However, the enterprise-scale architecture is fully compatible with third-party Network Virtual Appliances (NVAs), should your organization prefer to use NVAs or for situations where native services don't satisfy your organization's specific requirements. When using Azure Firewall, use Firewall Manager with Virtual WAN to deploy and manage Azure Firewalls across Virtual WAN hubs or in hub VNets. Firewall Manager is now in general availability (GA) for both Virtual WAN and regular VNets. Firewall Manager allows for Azure Firewall to be managed at scale. Create a global Azure Firewall policy to govern security posture across the global network environment and assign it to all Azure Firewall instances
 
-![Diagram that shows a basic Azure Firewall Implementation.](../media/firewall-overview.png)
+:::image type="content" source="../media/firewall-overview.png" alt-text="Diagram that shows a basic Azure Firewall Implementation.":::
 
 When using Azure Front Door and Azure Application Gateway to protect HTTP/S apps, use WAF policies in Azure Front Door and lock down Azure Application Gateway to receive traffic only from Azure Front Door. Use Azure DDoS Protection Standard protection plans to protect all public endpoints hosted within your VNets. DDoS Standard provides SLA backed DDoS protection and log data. Also, Azure Firewall or a third party NVA to control what IP addresses Virtual Machines use to access the Internet. Do not replicate on-premises perimeter network concepts and architectures into Azure. Similar security capabilities are available in Azure, but the implementation and architecture must be adapted to the cloud. This is a very common architecture mistake that leads to lowered performance and resiliency. 
 
@@ -17,4 +17,4 @@ When using Azure Front Door and Azure Application Gateway to protect HTTP/S apps
 
 Private Link provides dedicated access using private IP addresses to Azure PaaS instances, or custom services behind an Azure Load Balancer standard. VNet injection provides dedicated private deployments for supported services. With VNET injections, management plane traffic flows through public IP addresses. Private Link is the preferred solution to secure PaaS services.
 
-![Private Link.](../media/privatelink.png)
+:::image type="content" source="../media/privatelink.png" alt-text="Private Link.":::

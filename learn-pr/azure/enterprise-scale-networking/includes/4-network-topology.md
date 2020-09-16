@@ -6,7 +6,7 @@ Enterprise-scale recommends two approaches for network topologies in Azure. A ne
 
 Azure Virtual WAN is a Microsoft-managed solution where global transit connectivity is provided by default. Virtual WAN hubs eliminate the need to manually configure network connectivity. Virtual WAN also offers communications between on premises locations using the Microsoft Network and ExpressRoute and VPN. Virtual WAN greatly simplifies end-to-end network connectivity in Azure and cross-premises by creating a hub-and-spoke network architecture. The architecture spans multiple Azure regions and on-premises locations (any-to-any connectivity) out of the box. A design consideration for any networking in Azure keeps in mind the principle that Azure to Azure traffic should always stay in Azure.
 
-![Diagram that illustrates a Virtual WAN network topology.](../media/virtual-wan-top.png)
+:::image type="content" source="../media/virtual-wan-top.png" alt-text="Diagram that illustrates a Virtual WAN network topology.":::
 
 The diagram above shows fully deployed Enterprise Scale landing zone. The connectivity subscription contains Virtual WAN and the Landing Zone subscription has specific applications and their components.
 
@@ -26,7 +26,7 @@ When multiple ExpressRoute circuits are connected to the same VNet, connection w
 
 The diagram below shows a basic hub and spoke topology, where ExpressRoute is deployed and connected to the hub. Application landing zones are deployed in vnets and connected to the hub with vnet peering.
 
-![Diagram that illustrates a hub-and-spoke network topology.](../media/hub-and-spoke-topology.png)
+:::image type="content" source="../media/hub-and-spoke-topology.png" alt-text="Diagram that illustrates a hub-and-spoke network topology.":::
 
 ## Recommendations
 

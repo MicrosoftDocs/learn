@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.enterprise-scale-networking.4-network-topology
 metadata:
-  title: Network Topology for Enterprise Scale
-  description: Network topology
-  ms.date: 09/30/2020
+  title: Network topology for enterprise-scale
+  description: Network topology for enterprise-scale
+  ms.date: 09/21/2020
   author: jknightly
   ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Network Topology for Enterprise Scale
+title: Network topology for enterprise-scale
 durationInMinutes: 10
 content: |
   [!include[](includes/4-network-topology.md)]

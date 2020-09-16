@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.enterprise-scale-networking.5-connectivity
 metadata:
-  title: Connectivity Options for Enterprise Scale
-  description: Connectivity
-  ms.date: 09/30/2020
+  title: Connectivity options for enterprise-scale
+  description: Connectivity options for enterprise-scale
+  ms.date: 09/21/2020
   author: jknightly
   ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Connectivity Options for Enterprise Scale
+title: Connectivity options for enterprise-scale
 durationInMinutes: 10
 content: |
   [!include[](includes/5-connectivity.md)]
@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "All virtual networks with public endpoints should have what?"
+  - content: "Which of the following should be used for all virtual networks with public endpoints?"
     choices:
     - content: 'Azure Front Door'
       isCorrect: false
@@ -38,4 +38,4 @@ quiz:
       explanation: 'This solution is not a possibility'
     - content: 'ExpressRoute Direct'
       isCorrect: true
-      explanation: "ExpressRoute Direct allows for a 100 Gb connection to Microsoft's Enterprise Edge routers that can be carved into multiple 10-Gb circuits"
+      explanation: "ExpressRoute Direct allows for a 100 Gbps connection to Microsoft's Enterprise Edge routers that can be carved into multiple 10 Gbps circuits"
