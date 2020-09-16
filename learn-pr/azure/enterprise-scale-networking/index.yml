@@ -19,8 +19,8 @@ abstract: |
   - Determine how to connect to the public Internet
   - Determine how to connect to PaaS services
 prerequisites: | 
-  - TODO
-  - TODO
+  - Understanding of Azure networking concepts like ExpressRoute and Virtual Networks
+  - Understanding of networking concepts like IP Addressing, DNS and routing
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - advanced
