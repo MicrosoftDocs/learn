@@ -24,7 +24,7 @@ To start, you'll ask five questions and have only two options for each:
    1. Driving
    1. Flying
 
-We'll use these questions to determine which of the following four you are most like:
+We'll use these questions to determine which of the following four characters you're most like:
 
 - Diana Prince / Wonder Woman
 - Barbara Minerva
@@ -55,7 +55,7 @@ Press the **Play** button, and you should see the question print out, along with
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows question 1 printed in the console.](../media/question-1-output.png)
 
-Notice that the activity variable simply stores whatever you typed. Try entering **lion** instead and see what happens.
+Notice that the activity variable simply stores whatever you entered. Try entering **lion** instead and see what happens.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot that shows answering with lion instead of A or B.](../media/lion-answer.png)

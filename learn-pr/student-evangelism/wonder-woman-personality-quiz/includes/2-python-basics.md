@@ -1,4 +1,4 @@
-Before you dive into the full personality quiz, let's walk through the basics for commanding Python. If you already know how to use variables, functions, and conditionals, you can skip to the next unit in this module.
+Before you dive in to the full personality quiz, let's walk through the basics for commanding Python. If you already know how to use variables, functions, and conditionals, you can skip to the next unit in this module.
 
 ## Comments
 
@@ -26,7 +26,7 @@ The following command tells Python to remember the value `1984` by using a varia
 year = 1984
 ```
 
-Try it out by replacing the commands in your file with the following. The `print` command can, if you put an `f` before what you want printed, use curly braces ({}) to surround a variable name. This will make Python print out the value of the variable.
+Try it out by replacing the commands in your file with the following. The `print` command can, if you put an `f` before what you want printed, use curly braces (`{}`) to surround a variable name. This will make Python print out the value of the variable.
 
 ```python
 # use a variable named year to "remember" the value 1984
@@ -63,7 +63,7 @@ Press the **Play** button, and you should see the years print out.
 
 ## Conditionals
 
-Python can perform commands depending on some condition. We're used to conditionals in the real world: "If you've been lassoed, then you're compelled to tell the truth." The keyword here is `if`, which is followed by a condition, where we check whether or not the lasso of truth is around you. When the condition is met, the subsequent command must be followed. Python code only expects a condition to either be met or not — it's either true or false.
+Python can perform commands depending on some condition. We're used to conditionals in the real world: "If you've been lassoed, then you're compelled to tell the truth." The keyword here is `if`, which is followed by a condition where we check whether or not the lasso of truth is around you. When the condition is met, the subsequent command must be followed. Python code expects a condition to either be met or not—it's either true or false.
 
 To get a little more comfortable, consider the following strategy for how to spend a day. (The following is not code. It's just plain text to explain a scenario.)
 
@@ -97,7 +97,7 @@ What if instead:
 
 In this scenario, you'll do two things:
 
-- You are happy that it's not raining animals.
+- You're happy that it's not raining animals.
 - You frolic outside.
 
 There are a few more possible scenarios, but let's move on to how we can use conditionals to command Python in our year example.
@@ -128,7 +128,7 @@ Python puts a special meaning on the words "true" and "false," and calls them Bo
 
 You might be comfortable with arithmetic, where numbers are operated on to produce other numbers: 1 + 2 is 3. The operands are the numbers 1 and 2, and the operator is the addition operator (+). 
 
-In Boolean logic, Boolean values (true or false) are operated on to produce other Boolean values. We might say, "If it is cold outside AND it is raining, then grab a parka." Then both conditions must be met (must be true) for us to grab a parka. Here the operands are whether or not it is cold outside and whether or not it is raining; the AND operator
+In Boolean logic, Boolean values (true or false) are operated on to produce other Boolean values. We might say, "If it's cold outside AND it's raining, then grab a parka." Then both conditions must be met (must be true) for us to grab a parka. Here the operands are whether or not it's cold outside and whether or not it's raining; the AND operator
 
 Now that we have a handle on some of the basics, let's move on to making the quiz.
 

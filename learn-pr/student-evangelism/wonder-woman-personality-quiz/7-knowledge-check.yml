@@ -25,7 +25,7 @@ quiz:
     - content: "An `else` statement"
       isCorrect: true
       explanation: "Correct. You must end an `elif` statement with an `else` statement."
-    - content: "Any; a `if`, `elif`, or `else` statement"
+    - content: "Any; an `if`, `elif`, or `else` statement"
       isCorrect: false
       explanation: "Incorrect. Only one is correct."
   - content: "How do you test if variable x has a value of 10?"

@@ -53,7 +53,7 @@ The only issue here is that if the user enters **C**, the program will still pri
 
 ## An `elif` statement
 
-The last way to handle this situation is to use an `elif` statement, also called an "else-if statement." With an `elif` statement, you get the benefit of stopping the code from running if a choice was already identified. But it also ensures that the user did in fact enter either **A** or **B**:
+The last way to handle this situation is to use an `elif` statement, also called an "else-if statement." With an `elif` statement, you get the benefit of stopping the code from running if a choice was already identified. But it also ensures that the user did enter either **A** or **B**:
 
 ```python
 # ask the candidate a question
