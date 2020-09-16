@@ -6,13 +6,13 @@ In this unit, you’ll learn about the different ways of implementing hybrid ide
 
 The simplest way of providing the same Active Directory Domain Services (AD DS) environment in Azure that an organization has on-premises is to deploy a pair of AD DS domain controllers on a subnet on an Azure Virtual Network, connect that virtual network to the on-premises network, then configure that subnet as a new Active Directory Domain Services site, as depicted in Figure 5.
 
-:::image type="content" source="../media/image5.png" alt-text="Replication of on-premises identity hosted in AD DS to Azure AD" border="false":::
+:::image type="content" source="../media/image5.png" alt-text="Replication of on-premises identity hosted in AD DS to Azure AD" lightbox="../media/image5.png":::
 
 Figure 5. Identity replication.
 
 Another option is to configure the cloud-hosted AD DS domain as a child domain of the on-premises domain’s forest. An additional option is to configure the AD DS domain controllers running in the cloud as a separate forest that has a trust relationship with the on-premises forest. Figure 6 depicts this resource forest topology.
 
-:::image type="content" source="../media/image6.png" alt-text=" On-premises AD DS configured in a trust relationship with an AD DS deployment hosted on an Azure subnet." border="false":::
+:::image type="content" source="../media/image6.png" alt-text=" On-premises AD DS configured in a trust relationship with an AD DS deployment hosted on an Azure subnet." lightbox="../media/image6.png":::
 
 Figure 6. Resource forest topology.
 
@@ -24,7 +24,7 @@ For Tailwind Traders, extending their on-premises Active Directory domain or for
 
 [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/whatis-azure-ad-connect) allows organizations to synchronize the identities present in their on-premises Active Directory instance to Azure Active Directory. This allows you to use the same identity for cloud resources and on-premises resources. Azure AD Connect is most often used when organizations adopt Microsoft 365 to permit applications such as Microsoft SharePoint and Exchange running in the cloud to be accessed via on-premises applications. Figure 7 indicates an on-premises AD DS instance synchronizing with an Azure AD instance.
 
-:::image type="content" source="../media/image7.png" alt-text="Identity synchronization between on-premises AD DS instances and Azure Active Directory tenant." border="false":::
+:::image type="content" source="../media/image7.png" alt-text="Identity synchronization between on-premises AD DS instances and Azure Active Directory tenant." lightbox="../media/image7.png":::
 
 Figure 7. Identity synchronization.
 
@@ -34,7 +34,7 @@ If Tailwind Traders plans to adopt Microsoft 365 technologies such as Exchange O
 
 [Azure AD DS](https://docs.microsoft.com/azure/active-directory-domain-services/overview) allows you to project an Azure AD domain onto an Azure virtual subnet. When you do this, services including domain join, Group Policy, lightweight directory access protocol (LDAP), and Kerberos and NTLM authentication become available to any virtual machine deployed on the subnet. Azure AD DS allows you to have a basic managed Active Directory environment available to virtual machines without worrying about managing, maintaining, and paying for the virtual machines that run as domain controllers. Azure AD DS also allows you to use on-premises identities through Azure AD Connect to interact with virtual machines running on a specially configured Azure virtual network subnet. Figure 8 depicts an Azure AD DS architecture.
 
-:::image type="content" source="../media/image8.png" alt-text="On-premises AD DS synchronizes with an Azure AD tenant which populates an Azure AD DS managed domain." border="false":::
+:::image type="content" source="../media/image8.png" alt-text="On-premises AD DS synchronizes with an Azure AD tenant which populates an Azure AD DS managed domain." lightbox="../media/image8.png":::
 
 Figure 8. Azure AD DS architecture.
 

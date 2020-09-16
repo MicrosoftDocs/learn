@@ -43,7 +43,7 @@ For Tailwind Traders, Azure Stack HCI provides a future platform to which they c
 
 Organizations that have an existing on-premises HPC solution can connect that solution to Azure. This structure allows them to burst into the cloud. Bursting to the cloud involves adding cloud-based HPC nodes to an existing on-premises HPC node deployment. When you use this approach, depicted in Figure 7, HPC compute nodes can be instantiated in Azure as necessary to perform calculation tasks and then discarded when the task is complete. Being able to burst HPC calculations into the cloud allows organizations to maintain a minimum amount of hardware for common HPC tasks on-premises. Organizations can then deploy extra nodes as necessary if the benefit of the calculation justifies the expense.
 
-:::image type="content" source="../media/image9.png" alt-text="On premises HPC deployment with job queue using worker nodes on-premises and as required in Azure." border="false":::
+:::image type="content" source="../media/image9.png" alt-text="On premises HPC deployment with job queue using worker nodes on-premises and as required in Azure." lightbox="../media/image9.png":::
 
 Figure 9. HPC with burst to Azure.
 
@@ -60,7 +60,7 @@ Tailwind Traders already has an HPC deployment. However, their capacity to perfo
 
 Azure Arc enabled Kubernetes will work with any Cloud Native Computing Foundation (CNCF) certified Kubernetes cluster. Azure Arc enabled Kubernetes allows your organization to manage Kubernetes clusters both on-premises and in the cloud in a hybrid environment as depicted in Figure 10.
 
-:::image type="content" source="../media/image10.png" alt-text=" Hybrid Kubernetes clusters managed through Azure Monitor, Azure Policy and Azure Arc-enabled Kubernetes clusters." border="false":::
+:::image type="content" source="../media/image10.png" alt-text=" Hybrid Kubernetes clusters managed through Azure Monitor, Azure Policy and Azure Arc-enabled Kubernetes clusters." lightbox="../media/image10.png":::
 
 Figure 10. Hybrid Kubernetes cluster management.
 
@@ -80,7 +80,7 @@ From Tailwind Traders’ perspective, Azure Arc enabled data services provides a
 
 [Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) allows organizations to replace disaster-recovery sites by replicating physical and virtual operating systems and the workloads they host into the Azure cloud. Azure Site Recovery allows failover to Azure. Importantly, Azure Site Recovery can also perform failback of workloads to an on-premises datacenter from Azure. Figure 11 depicts a basic Azure Site Recovery configuration.
 
-:::image type="content" source="../media/image11.png" alt-text="Azure Site Recovery configuration with on-premises VMs replicated to recovery vault in Azure." border="false":::
+:::image type="content" source="../media/image11.png" alt-text="Azure Site Recovery configuration with on-premises VMs replicated to recovery vault in Azure." lightbox="../media/image11.png":::
 
 Figure 11. Azure Site Recovery.
 

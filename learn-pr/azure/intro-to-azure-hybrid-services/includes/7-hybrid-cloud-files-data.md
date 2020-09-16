@@ -9,7 +9,7 @@ In this unit, you’ll learn how certain hybrid technologies allow Tailwind Trad
 
 [Azure File Share](https://docs.microsoft.com/azure/storage/files/storage-how-to-create-file-share) allows you to create a secure SMB 3.0 file share hosted in Azure. You can integrate Azure Files with Azure Active Directory and Azure AD Connect to allow people to use their on-premises account credentials or their Azure AD credentials to securely access the Azure File Share endpoint. Azure File Shares can also be configured to support access control list (ACL) permissions. This allows you to limit access to files and folders in the same manner that you would use when securing files and folders for an on-premises file server. As Azure Files is backed by Azure Storage, Azure File Shares can store substantially more files and folders than their on-premises counterparts. Azure File Shares can also be backed up by using Azure Backup, with files and folders backed up and recovered in the cloud instead of requiring a separate on-premises backup and recovery solution. Figure 14 depicts clients connecting to Azure File Shares.
 
-:::image type="content" source="../media/image14.png" alt-text="Clients connect to Azure File Shares using authentication of credentials synchronized to an Azure AD tenant." border="false":::
+:::image type="content" source="../media/image14.png" alt-text="Clients connect to Azure File Shares using authentication of credentials synchronized to an Azure AD tenant." lightbox="../media/image14.png":::
 
 Figure 14. Azure File Shares.
 
@@ -21,7 +21,7 @@ An Azure File Share endpoint might provide a solution to some of the challenges 
 
 When you configure cloud tiering, you can specify that a certain amount of disk space remain free on the volume that hosts the share. You can also specify that files that haven’t been accessed in a certain amount of time are automatically tiered, or enable both options at the same time. Figure 15 depicts a basic Azure File Sync deployment.
 
-:::image type="content" source="../media/image15.png" alt-text="On-premises file servers synchronize with Azure File shares in the cloud through storage sync agents." border="false":::
+:::image type="content" source="../media/image15.png" alt-text="On-premises file servers synchronize with Azure File shares in the cloud through storage sync agents." lightbox="../media/image15.png":::
 
 Figure 15. Azure File Sync.
 

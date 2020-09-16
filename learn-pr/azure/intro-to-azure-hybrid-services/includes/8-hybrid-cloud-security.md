@@ -21,7 +21,7 @@ Tailwind Traders currently uses a variety of tools to assess whether the securit
 [Microsoft Azure Sentinel](https://docs.microsoft.com/azure/sentinel) allows organizations with hybrid cloud solutions to ingest telemetry from on-premises and cloud security event logs. Azure Sentinel is both a SIEM and a Security Orchestration, Automation, and Response(SOAR) solution. SIEM solutions store and analyze log data and event telemetry that they ingest from external sources. Azure Sentinel supports the ingestion of data from on-premises, Azure, and third-party cloud locations, including from other SIEM systems. SOAR solutions allow you to orchestrate
 analysis of data, assisting you in creating an automated response to known threats. Figure 16 displays a Sentinel hybrid architecture.
 
-:::image type="content" source="../media/image16.png" alt-text=" On-premises workloads and workloads in third party clouds log telemetry is forwarded to Azure Security Center and Azure Sentinel." border="false":::
+:::image type="content" source="../media/image16.png" alt-text=" On-premises workloads and workloads in third party clouds log telemetry is forwarded to Azure Security Center and Azure Sentinel." lightbox="../media/image16.png":::
 
 Figure 16. Azure Sentinel.
 
@@ -40,7 +40,7 @@ Tailwind Traders currently has an on-premises SIEM system that collects and anal
 
 [Azure Update Management](https://docs.microsoft.com/azure/automation/update-management/update-mgmt-overview) allows you to manage the updates to your on-premises and cloud server operating systems by using a single console in the cloud. Update Management works with Microsoft Windows Server workloads and with supported Linux operating system workloads running physically and virtually. Update Management can use Microsoft Update or Windows Server Update Services (WSUS) as a source of updates for Windows Server operating systems. Update Management can also use a public or custom Linux package repository for Linux operating system updates. Update Management allows you to determine which updates are currently missing from enrolled operating systems. The diagram in Figure 17 indicates how Update Management integrates with Azure Automation and Log Analytics workspaces.
 
-:::image type="content" source="../media/image17.png" alt-text="Figure presents a collection of on-premises and Azure VMs connecting to Azure Automation runbooks, log analytics workspaces and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Update Management architecture." border="false":::
+:::image type="content" source="../media/image17.png" alt-text="Figure presents a collection of on-premises and Azure VMs connecting to Azure Automation runbooks, log analytics workspaces and Automation Hybrid Worker solutions over TCP port 443 in a hybrid Update Management architecture." lightbox="../media/image17.png":::
 
 Figure 17. Hybrid Update Management.
 

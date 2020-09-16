@@ -28,7 +28,7 @@ Azure Relay allows Tailwind Traders to publish some applications that run on the
 
 Hybrid Connections use a relay agent that you deploy in a location where the agent can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured by using Transport Layer Security (TLS) 1.2 and shared access signature (SAS) keys are used for authentication and authorization. Figure 12 depicts an App Service Hybrid Connection between a web app running in Azure and a database endpoint running on-premises.
 
-:::image type="content" source="../media/image12.png" alt-text="App Service Hybrid Connection between Web App in Azure and database endpoint on-premises." border="false":::
+:::image type="content" source="../media/image12.png" alt-text="App Service Hybrid Connection between Web App in Azure and database endpoint on-premises." lightbox="../media/image12.png":::
 
 Figure 12. App Service Hybrid Connection.
 
@@ -68,7 +68,7 @@ Application Proxy functions in the following manner depicted in Figure 13:
 5. The Application Proxy Connector forwards request to the on-premises application.
 6. The response is sent through connector and Application Proxy service to user.
 
-:::image type="content" source="../media/image13.png" alt-text=" Application Proxy functionality with user outside organizational network making connection through Application Proxy Service to on-premises application." border="false":::
+:::image type="content" source="../media/image13.png" alt-text=" Application Proxy functionality with user outside organizational network making connection through Application Proxy Service to on-premises application." lightbox="../media/image13.png":::
 
 Figure 13. Application Proxy.
 
