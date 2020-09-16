@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cosmos-db-spring-data-app.2-setup
+metadata:
+  title: Exercise - Set up your Spring Data app using Maven
+  description: Exercise - Set up your Spring Data app using Maven
+  ms.date: 09/16/2020
+  author: anfeldma-ms
+  ms.author: anfeldma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Set up your Spring Data app using Maven
+azureSandbox: true
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-setup.md)]

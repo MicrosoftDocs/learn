@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.cosmos-db-spring-data-app.5-knowledge-check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/16/2020
+  author: anfeldma-ms
+  ms.author: anfeldma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Knowledge check
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+ 
+  - content: "Which of the following approaches is the most convenient way to get the URI and master key for your account into your project?"
+    choices:
+    - content: "The client will infer the connection string when it connects to the server"
+      isCorrect: false
+      explanation: "Specify the access credentials for your Azure Cosmos DB account."
+    - content: "From the Azure portal"
+      isCorrect: true
+      explanation: "It is trivial to find the URI and key in the **Keys** blade of the Azure portal."
+    - content: "Using the Azure CLI"
+      isCorrect: false
+      explanation: "While this approach is a good choice, especially since Visual Studio Code has a built-in terminal, it does demand knowledge of the required commands. There is a more convenient alternative."
+ 
+  - content: "When working with Azure Cosmos DB's SQL API, which of these packages can be used to perform CRUD operations from a Spring application?"
+    choices:
+    - content: "Spring Data Azure Cosmos DB connector"
+      isCorrect: true
+      explanation: "The Spring Data Azure Cosmos DB connector is designed for the SQL API."
+    - content: "Spring Data Apache Cassandra"
+      isCorrect: false
+      explanation: "Apache Cassandra libraries can work with Azure Cosmos DB’s Cassandra API but not with the SQL API."
+    - content: "Spring Data MongoDB"
+      isCorrect: false
+      explanation: "MongoDB libraries can work with Azure Cosmos DB's MongoDB API but not with the SQL API."
+ 
+  - content: "When working with the Azure Cosmos DB Java SDK User class, you use a NoSQL model. What is the best way to change the firstName field of a Person Document from 'Ann' to 'Fran'?"
+    choices:
+    - content: "Call upsertItem with FirstName=Fran"
+      isCorrect: false
+      explanation: "While the SDK does have an upsertItem method, there is currently not a patch API to update specific fields"
+    - content: "Call upsertItem with an updated Person object"
+      isCorrect: false
+      explanation: "While this way would work, it isn't the minimum necessary access to meet our requirements. Upsert operations will replace a document if its key already exists or add a new document if not. We don't want to add a new one, so using this method risks introducing subtle, hard to track bugs."
+    - content: "Call replaceItem with an updated Person object"
+      isCorrect: true
+      explanation: "replaceItem will replace the existing document with the new one. In this case, we'd intend the old and new to be the same other than firstName."

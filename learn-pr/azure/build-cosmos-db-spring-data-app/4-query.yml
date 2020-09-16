@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cosmos-db-spring-data-app.4-query
+metadata:
+  title: Exercise - Query using the Spring Data Azure Cosmos DB connector
+  description: Exercise - Query using the Spring Data Azure Cosmos DB connector
+  ms.date: 09/16/2020
+  author: anfeldma-ms
+  ms.author: anfeldma
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Query using the Spring Data Azure Cosmos DB connector
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-query.md)]
