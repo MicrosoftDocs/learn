@@ -27,35 +27,39 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
 
     ```xml
     <dependency>
-        <groupId>com.azure</groupId>
-        <artifactId>azure-cosmos</artifactId>
-        <version>latest</version>
+      <groupId>com.azure</groupId>
+      <artifactId>azure-spring-data-2-3-cosmos</artifactId>
+      <version>latest</version>
     </dependency>
     ```
 
-    This dependency pulls in the Azure Cosmos DB Java SDK latest version. You can close this file.
+    This dependency pulls in the latest version of Spring Data Azure Cosmos DB. You can close this file.
 
-1. Next, you will build and run Hello World. Using your IDE or the terminal, open this project. Depending on your IDE, there may be an option to open the **pom.xml** file in the **java** subdirectory as a project. Once the project is open, navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and open **CosmosApp.java** which is a template for the Java application we will develop. It should look something like this
+1. Next, you will build and run Hello World. Using your IDE or the terminal, open this project. Depending on your IDE, there may be an option to open the **pom.xml** file in the **spring** subdirectory as a project. Once the project is open, navigate to **src\main\java\com\azure\spring\data\cosmos** and open **CosmosApp.java** which is a template for the Java application we will develop. It should look something like this
 
     ```java
     import org.slf4j.Logger;
     import org.slf4j.LoggerFactory;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.boot.CommandLineRunner;
+    import org.springframework.boot.SpringApplication;
+    import org.springframework.boot.autoconfigure.SpringBootApplication;
+    import reactor.core.publisher.Flux;
 
-    public final class CosmosApp {
+    import java.util.Iterator;
 
-        /** For application to log INFO and ERROR. */
-        private static Logger logger = LoggerFactory.getLogger(CosmosApp.class.getSimpleName());
+    @SpringBootApplication
+    public class SampleApplication implements CommandLineRunner {
 
-        private CosmosApp() {
-            // not called
+        private final Logger logger = LoggerFactory.getLogger(SampleApplication.class);
+
+        public static void main(String[] args) {
+            SpringApplication.run(SampleApplication.class, args);
         }
 
-        /**
-        * Main.
-        * @param args Command line arguments
-        */
-        public static void main(final String[] args) {
-            logger.info("Hello World.");
+        public void run(String... var1) {
+
+            logger.info("Hello world.");
         }
     }
     ```
@@ -75,7 +79,7 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
     to build the Maven project. Then execute
 
     ```bash
-    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"  
+    mvn spring-boot:run
     ```
 
     and confirm that the application logs
@@ -88,100 +92,33 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
 
 ## Connect the app to Azure Cosmos DB
 
-1. Within the `CosmosApp` class, create the following static class variables for your Azure Cosmos DB connection details:
+1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the **Keys** blade, and find your Azure Cosmos DB connection details (URI and master key). 
+1. Navigate to **src\main\resources**
+1. Open **application.properties**. Find the `cosmos.uri` and `cosmos.key` properties and input your Azure Cosmos DB connection details. For example, if your uri is `https://cosmosacct.documents.azure.com:443/`, your property assignment will look like this: `cosmos.uri=https://cosmosacct.documents.azure.com:443/`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, your property assignment will look like this: `cosmos.key=${ACCOUNT_KEY}=elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`.
+    
+    > [!IMPORTANT]  
+    > This demonstrates a major benefit of the Spring Data interface - your dataset endpoint, credentials, database and container names live in a properties file and write no code to handle this basic configuration. Spring Data automatically connects to your Azure Cosmos DB endpoint and accesses your database and container.
+    >
 
-    ```java
-    /** Azure Cosmos DB endpoint URI. */
-    private static String endpointUri = "<your-cosmosdb-hostname>";
-
-    /** Azure Cosmos DB primary key. */
-    private static String primaryKey = "<your-cosmosdb-master-key>";
-    ```
-
-1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the **Keys** blade, and copy-paste your Azure Cosmos DB endpoint URI and primary key into the variable definitions above. For example, if your uri is `https://cosmosacct.documents.azure.com:443/`, your new variable assignment will look like this: `private static String endpointUri = "https://cosmosacct.documents.azure.com:443/";`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, your new variable assignment will look like this: `private static String primaryKey = "elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==";`.
-
-## Create the CosmosAsyncClient
-
-Now it's time to create an instance of the `CosmosAsyncClient`, which is the client-side representation of the Azure Cosmos DB service. This client is used to configure and execute requests against the service.
-
-1. In **CosmosApp.java**, add the following static variable declaration to the `CosmosApp` class:
-
-    ```java
-    /** Azure Cosmos DB client instance. */
-    private static CosmosAsyncClient client;
-
-    /** Azure Cosmos DB database instance. */
-    private static CosmosAsyncDatabase database;
-
-    /** Azure Cosmos DB container instance. */
-    private static CosmosAsyncContainer container;
-    ```
-
-    Most likely the `client`, `database` and `container` classes are not yet imported into your Java file, so it is a good time to take care of that now. Some IDEs may allow you to auto-import dependencies based on the code you type and that can be useful here. Regardless, in general, expect that when we give you a block of code to paste in, you may need to add some `import` statements in order for it to work.
-
-
-1. Create a `private void` method `basicOperations` with no arguments in the class. 
-
-1. Add the following code to create a `CosmosAsyncClient` in the `basicOperations` method, and include code to check whether the **Users** database exists.
-
-    ```java
-     client = new CosmosClientBuilder()
-         .endpoint(endpointUri)
-         .key(primaryKey)
-         .consistencyLevel(ConsistencyLevel.EVENTUAL)
-         .directMode()
-         .contentResponseOnWriteEnabled(true)
-         .buildAsyncClient();
-
-     database = client.getDatabase("Users");
-     container = database.getContainer("WebCustomers");            
-
-     logger.info("Database and container validation complete");
-
-     client.close();
-    ```
-
-1. At this point, your `basicOperations` method contains the code to interact with Azure Cosmos DB. However this method is not called in `main`, so our application still serves to print "Hello World". As a check, build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
-
-    ```bash
-    mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"  
-    ```
-
-    and confirm that the app still logs
-
-    ```output
-    INFO: Hello World.
-    ```
-
-    to the terminal.
-
-1. Copy and paste the following code into the `main` method, overwriting the current `logger.info("Hello world.");` line.
-
-    ```java
-    try {
-        CosmosApp p = new CosmosApp();
-        p.basicOperations();
-    } catch (CosmosException e) {
-        logger.error("Failed while executing app.", e);
-    } finally {
-        logger.info("End of demo, press any key to exit.");
-    }
-    ```
-
-    This will trigger the Azure Cosmos DB code in our application.
+## Test your app's connection to Azure Cosmos DB
 
 1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
 
     ```bash
     mvn clean package
-    mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"  
+    mvn spring-boot:run
     ```
 
-    You may see a large number of log messages in the terminal, some of which are generated by the SDK itself. Read through and confirm that the app logs to the terminal:
+    and if all is well your application will log
 
     ```output
-    INFO: Database and container validation complete
+    INFO: Hello World.
     ```
 
-In this unit, you set up the groundwork for your Azure Cosmos DB Java application. You set up your Maven application, created a basic "Hello World" project, and extended it to connect the project to the Azure Cosmos DB endpoint.
+    to the terminal, and you will see no error messages recording Azure Cosmos DB connectivity. If that is the case, congratulations! Your Spring Data app is connected to Azure Cosmos DB.
+
+    > [!IMPORTANT]  
+    > This demonstrates a major benefit of the Spring Data interface - your dataset endpoint, credentials, database and container names live in a properties file. Unlike when you work directly with Azure Cosmos DB Java SDK, with Spring Data you write no code to handle these basic configurations. At startup Spring Data automatically connects to the specified Azure Cosmos DB endpoint and accesses your database and container, based on the configuration in your properties file. This kind of simplicity is an attractive aspect of Spring Data Azure Cosmos DB and the Spring Data interface in general.
+    >
+
+In this unit, you set up the groundwork for your Spring Data Azure Cosmos DB application. You set up your Maven application, created a basic "Hello World" project, and with a little bit of very simple configuration, extended it to connect the project to your Azure Cosmos DB endpoint.
