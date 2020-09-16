@@ -31,7 +31,7 @@ quiz:
       isCorrect: false
       explanation: Azure Policy helps to enforce organizational standards and to assess compliance at scale.
 
-  - content: At what level within the organizational hierarchy should compliance standards be defined?
+  - content: At what level within the organizational hierarchy should compliance standards for workloads be defined?
     choices:
     - content: Root management group
       isCorrect: false
