@@ -1,6 +1,6 @@
 Imagine you're managing storage for an online retailer. You need tools to create, update, and delete your user and product data. You also need the ability to query your data in order to make business or operations decisions.
 
-In this module, you will build a Java console application to create, update, and delete user records and query your data using Java.
+In this module, you will build a Spring Data console application to create, update, and delete user records and query your data using the Spring framework, Spring Data Azure Cosmos DB, and Java.
 
 We will use the Maven package manager to structure our project and pull in dependencies.
 
@@ -16,7 +16,7 @@ To help users get started with Azure Cosmos DB, this lab guides you through deve
 
 In this module, you will:  
 
-- Learn how to send requests to Azure Cosmos DB from a Java application
+- Learn how to send requests to Azure Cosmos DB from a Spring framework application using Spring Data Azure Cosmos DB
 - Create an application to store and query data in Azure Cosmos DB
 
 ## Prerequisites

@@ -17,10 +17,10 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
     git clone https://github.com/MicrosoftDocs/mslearn-cosmos-java-sql.git
     ```
 
-1. Open the Windows Explorer and navigate to the cloned repo. Enter the **java** subdirectory.
+1. Open the Windows Explorer and navigate to the cloned repo. Enter the **spring** subdirectory.
 
     > [!IMPORTANT]  
-    > All of your work for this module will be under the **java** subdirectory. 
+    > All of your work for this module will be under the **spring** subdirectory. 
     >
 
 1. The template contains a Maven **pom.xml** which already pulls in the required dependencies for your project. Open this file and examine it to find the dependency below:
