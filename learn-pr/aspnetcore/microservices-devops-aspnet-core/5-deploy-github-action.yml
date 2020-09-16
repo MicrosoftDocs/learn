@@ -3,7 +3,7 @@ uid: learn.microservices-devops-aspnet-core.5-deploy-github-action
 metadata:
   title: Exercise - Create a GitHub Action to deploy to AKS
   description: Implement and test a GitHub Action to deploy an ACR image to AKS.
-  ms.date: 07/08/2020
+  ms.date: 09/16/2020
   author: scottaddie
   ms.author: scaddie
   ms.topic: interactive-tutorial
