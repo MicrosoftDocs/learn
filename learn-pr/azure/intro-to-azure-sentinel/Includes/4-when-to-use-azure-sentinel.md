@@ -17,12 +17,12 @@ Azure Sentinel offers some other capabilities that could help you make the decis
 * Support for hybrid cloud and on-premises.
 * SIEM and a data lake all in one.
 
-Contoso had some clear requirements when they began investigating if Azure Sentinel would be the right fit for them:
+Your organization had some clear requirements when you began investigating if Azure Sentinel would be the right fit for them:
 
 * Support for data from multiple cloud environments
 * Features and functionality required of a SOC, without too much administrative overhead
 
-Contoso have found that by leveraging data connectors for syslog, AWS and others as well as the  ability to achieve effortless scale without provisioning servers, that Azure Sentinel could be a good fit for them. During their analysis, they also realized that they should make automation a key part of their SOC strategy and will be looking to leverage playbooks too. This was something they had not considered before. 
+You have found that by leveraging data connectors for syslog, AWS and others as well as the  ability to achieve effortless scale without provisioning servers, that Azure Sentinel could be a good fit for them. During your analysis, you also realized that they should make automation a key part of their SOC strategy and will be looking to leverage playbooks too. This was something they had not considered before. 
 
 If you are collecting infrastructure or application logs for performance monitoring purposes, then you should also consider using Azure Monitor and Azure Log Analytics for that purpose.
 
