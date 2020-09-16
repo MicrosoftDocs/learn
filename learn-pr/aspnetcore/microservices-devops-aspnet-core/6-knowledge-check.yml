@@ -44,7 +44,7 @@ quiz:
           explanation: "Service principals are unrelated to URLs."
     - content: "During deployment, what is the purpose of Kubernetes creating a new container while the old one is still running?"
       choices:
-        - content: "Reduce downtime"
+        - content: "Avoid downtime"
           isCorrect: true
           explanation: "The old container isn't terminated until the new container is ready."
         - content: "Scaling up"
