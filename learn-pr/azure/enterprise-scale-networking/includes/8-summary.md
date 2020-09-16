@@ -1,32 +1,36 @@
 
-To build highly resilient enterprise grade applications on Azure, a well-designed network is critical. Carefully the IP schema, being sure to not conflict with existing private IP space. Carefully choose the connectivity type, Virtual WAN or Hub and Spoke. Select ExpressRoute providers or ExpressRoute Direct and peering locations to get onto the MIcrosoft backbone with the least latency possible. Finally, plan segmentation and secure connectivity to PaaS services. 
+To build highly resilient enterprise grade applications on Azure, a well-designed network is critical. Carefully plan the IP schema, being sure to not conflict with existing private IP space. Carefully choose the connectivity type, Virtual WAN or hub and spoke. Select ExpressRoute providers or ExpressRoute Direct and peering locations to get onto the Microsoft backbone with the least latency possible. Finally, plan segmentation and secure connectivity to PaaS services.
 
-## Helpful Links
+## Learn more
 
-Full Enterprise Scale Landing Zone networking documentation: https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity
+To Learn more about enterprise-scale architecture networking design principles, visit the following articles:
+
+[Full enterprise-scalelLanding zone networking documentation](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/network-topology-and-connectivity)
 
 ### DNS
-For detailed information on this DNS configuration see here: <https://docs.microsoft.com/azure/private-link/private-endpoint-dns>
-For more information on private DNS, see <https://docs.microsoft.com/azure/dns/private-dns-scenarios>
+
+[Azure Private Endpoint DNS configuration](https://docs.microsoft.com/azure/private-link/private-endpoint-dns)
+[Azure DNS Private zones scenarios](https://docs.microsoft.com/azure/dns/private-dns-scenarios)
 
 ### Topology
 
-Network Virtual Appliance routing: <https://docs.microsoft.com/azure/virtual-wan/scenario-route-through-nva> 
-To move from hub and spoke to VWAN see: <https://docs.microsoft.com/azure/virtual-wan/migrate-from-hub-spoke-topology>
-VWAN Limits <https://docs.microsoft.com/azure/virtual-wan/virtual-wan-faq#is-there-a-network-throughput-or-connection-limit-when-using-azure-virtual-wan>
-Azure Limits https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits  
+[Network Virtual Appliance routing](https://docs.microsoft.com/azure/virtual-wan/scenario-route-through-nva)
+[Migrate to Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/migrate-from-hub-spoke-topology)
+[Azure Virtual WAN limits](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-faq#is-there-a-network-throughput-or-connection-limit-when-using-azure-virtual-wan)
+[Azure subscription and service limits](https://docs.microsoft.com/azure/azure-resource-manager/management/azure-subscription-service-limits)
 
 ### Connectivity
 
-ExpressRoute: https://docs.microsoft.com/azure/expressroute/expressroute-introduction 
-ExpressRoute Direct: <https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about> 
-NPM <https://docs.microsoft.com/azure/expressroute/how-to-npm>
-Peering locations: <https://docs.microsoft.com/azure/expressroute/expressroute-locations> 
+[ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction)
+[ExpressRoute Direct](https://docs.microsoft.com/azure/expressroute/expressroute-erdirect-about)
+[Configure Network Performance Manager for ExpressRoute](https://docs.microsoft.com/azure/expressroute/how-to-npm)
+[ExpressRoute connectivity partners and peering locations](https://docs.microsoft.com/azure/expressroute/expressroute-locations) 
 
 ### Segmentation
-<https://docs.microsoft.com/azure/virtual-network/security-overview>
-<https://docs.microsoft.com/azure/firewall/overview>
+
+[Network security groups](https://docs.microsoft.com/azure/virtual-network/security-overview)
+[What is Azure Firewall?](https://docs.microsoft.com/azure/firewall/overview)
 
 ### Encryption
-To enable ExpressRoute direct with MACSec, follow the guidance here: <https://docs.microsoft.com/azure/expressroute/expressroute-howto-macsec>
 
+[Configure MACsec on ExpressRoute Direct ports](https://docs.microsoft.com/azure/expressroute/expressroute-howto-macsec)
