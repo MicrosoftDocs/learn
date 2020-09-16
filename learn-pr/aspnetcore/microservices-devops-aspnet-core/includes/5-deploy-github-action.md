@@ -173,7 +173,7 @@ Complete the following steps to verify your change is deployed:
 
     :::image type="content" source="../media/5-deploy-github-action/seq-logs.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-logs.png":::
 
-## Roll back a deployment
+## Roll back the deployment
 
 During production issues, one common mitigation is to revert a deployment to a known good deployment. Use the following command to roll back from version 1.1.0 to 1.0.0.
 

@@ -90,7 +90,7 @@ The service principal and the credentials for the container registry are sensiti
 
     At this point, you should have something like this:
 
-    :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="Image description follows in text" border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
+    :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="AZURE_CREDENTIALS environment variable secrets page" border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
 1. Select the **:::no-loc text="Add secret":::** button.
 1. Create four additional secrets. Run the following command to get the values for the new secrets:
 
