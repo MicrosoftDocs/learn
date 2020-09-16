@@ -63,14 +63,14 @@ A typical approach to implementing a quantum oracle for a given function is as f
 1. Break down the classical function into small building blocks that are easy to implement.  
   Any Boolean function can be implemented using [primitive logic gates](https://en.wikipedia.org/wiki/Logic_gate). You can either use primitive logic gates to get a low-level representation or higher level building blocks that take advantage of Q# library operations implementing them.
 
-2. Replace each classical block with a sequence of quantum gates that implement it using amplitude encoding.  
+2. Replace each classical block with a sequence of quantum gates that implement it as a marking oracle.  
   Each of the primitive logic gates can be implemented using one or several quantum gates. Sometimes we'll need to allocate an extra qubit to hold the computation result of the gate. For example,  
    * Classical NOT gate is equivalent to the X gate.
    * Classical XOR gate can be implemented using the CNOT gate.
    * Classical AND gate can be realized using [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate) and an extra qubit.
 
-3. If the algorithm calls for phase encoding of the function, transform the operation to use phase encoding instead.  
-  This step uses a standard trick called "phase kickback".
+3. If the algorithm calls for a phase oracle, transform the marking oracle into a phase oracle.  
+  This step uses a standard trick called "phase kickback": applying a marking oracle to an input register and a target qubit in a certain state will have the same effect on the input register as applying a phase oracle to it.
 
 Let's see how this approach works for our vertex coloring problem!
 
@@ -125,13 +125,13 @@ The state of qubits c1 and target after the equality check:
 
 We see that in the beginning the state of the system is 
 
-$$|00\rangle\_{c0} \otimes \frac12\big(|00\rangle + |10\rangle + |01\rangle + |11\rangle\big)\_{c1} \otimes |0\rangle\_{target}$$
+$$|00\rangle\_\textrm{c0} \otimes \frac12\big(|00\rangle + |10\rangle + |01\rangle + |11\rangle\big)\_\textrm{c1} \otimes |0\rangle\_\textrm{target}.$$
 
-After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change: the amplitude of the $|00\rangle\_{c1} \otimes |0\rangle\_{target}$ state becomes 0, and the amplitude of the $|00\rangle\_{c1} \otimes |1\rangle\_{target}$ state becomes $0.25$. In fact, these two amplitudes are swapped as the result of applying this check.
+After we apply the equality check, the state of the register `c0` doesn't change (you can verify this by adding another `DumpRegister` call), but the amplitudes of the combined state of the register `c1` and the `target` qubit change: the amplitude of the $|00\rangle\_\textrm{c1} \otimes |0\rangle\_\textrm{target}$ state becomes 0, and the amplitude of the $|00\rangle\_\textrm{c1} \otimes |1\rangle\_\textrm{target}$ state becomes $0.25$. In fact, these two amplitudes are swapped as the result of applying this check.
 
-Indeed, since the colors encoded in the state $|00\rangle\_{c0} \otimes |00\rangle\_{c1} \otimes |0\rangle\_{target}$ are equal, the state of the `target` qubit for this basis state gets flipped, giving us the resulting state
+Indeed, since the colors encoded in the state $|00\rangle\_\textrm{c0} \otimes |00\rangle\_\textrm{c1} \otimes |0\rangle\_\textrm{target}$ are equal, the state of the `target` qubit for this basis state gets flipped, giving us the resulting state
 
-$$|00\rangle_{c0} \otimes \frac12\big(|00\rangle_{c1} \otimes |1\rangle_{target} + |10\rangle_{c1} \otimes |0\rangle_{target} + |01\rangle_{c1} \otimes |0\rangle_{target} + |11\rangle_{c1} \otimes |0\rangle_{target} \big)$$
+$$|00\rangle_\textrm{c0} \otimes \frac12\big(|00\rangle_\textrm{c1} \otimes |1\rangle_\textrm{target} + |10\rangle_\textrm{c1} \otimes |0\rangle_\textrm{target} + |01\rangle_\textrm{c1} \otimes |0\rangle_\textrm{target} + |11\rangle_\textrm{c1} \otimes |0\rangle_\textrm{target} \big).$$
 
 > [!NOTE]
 > Note that the `target` qubit becomes entangled with the register `c1`: you can no longer separate their states!
@@ -174,7 +174,7 @@ Now, we have an operation that can mark the qubit states that represent valid co
 We can do it using so-called "phase kickback trick": 
 
 1. Allocate an extra qubit in the $\frac{1}{\sqrt2}(|0\rangle - |1\rangle)$ state.
-2. Apply the marking operation $U^{state}$ with this extra qubit as target.  
+2. Apply the marking oracle $U_\textrm{mark}$ with this extra qubit as target.  
 What happens to the register that encodes the coloring at this step? 
    * If the basis state $|x\rangle$ encodes an invalid coloring, the state will not change.
    * On the other hand, if the basis state $|x\rangle$ encodes an valid coloring, the operation $U^{state}$ will flip the state of the extra qubit, converting it to $\frac{1}{\sqrt2}(|1\rangle - |0\rangle)$, which is equivalent to multiplying the whole state by $-1$.
@@ -182,7 +182,7 @@ What happens to the register that encodes the coloring at this step?
 If you apply these steps to a basis state, you won't be able to tell the difference - the global phase will not be observable. 
 But if you apply these steps to a superposition state, you'll see that the basis states that encode valid colorings will acquire the $-1$ relative phase - and that's exactly the effect we need the phase operation to have!
 
-Here is what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation that implements a bit-flip or marking oracle.
+Here is what the phase kickback trick looks like in Q#. We'll use the operation that implements color check, which makes the effects easier to see in the output, but you can use the same trick on any operation that implements a marking oracle.
 
 :::code language="qsharp" source="code/4-program-5.qs":::
 

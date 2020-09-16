@@ -7,17 +7,19 @@ One of the key properties of quantum computing is the ability to perform calcula
 
 There are two most common ways to encode the effects of computing a function for a superposition state. 
 
-Let's say we start with a superposition state $a_0 |0\rangle + a_1 |1\rangle$, and want to implement a quantum operation $U_f$ that computes a function $f(x)$ that takes a single bit as an input and produces a single bit as an output.
+Let's say we start with a superposition state $a_0 |0\rangle + a_1 |1\rangle$, and want to implement a quantum operator $U$ that computes a function $f(x)$ that takes a single bit as an input and produces a single bit as an output.
 
 1. We can encode the values $f(0)$ and $f(1)$ in the *relative phases* of basis states $|0\rangle$ and $|1\rangle$, respectively.  
-In this case, applying the operation $U_f^{phase}$ converts the state $a_0 |0\rangle + a_1 |1\rangle$ into a state $(-1)^{f(0)} a_0 |0\rangle + (-1)^{f(1)} a_1 |1\rangle$. In other words, the operation $U_f^{phase}$ doesn't change the phase of the basis states for which $f(x) = 0$, and multiplies the phase of the basis states for which $f(x) = 1$ by $-1$.
+In this case, applying the operator $U_\textrm{phase}$ converts the state $a_0 |0\rangle + a_1 |1\rangle$ into a state $(-1)^{f(0)} a_0 |0\rangle + (-1)^{f(1)} a_1 |1\rangle$. In other words, the operator $U_\textrm{phase}$ doesn't change the phase of the basis states for which $f(x) = 0$, and multiplies the phase of the basis states for which $f(x) = 1$ by $-1$.  
+The operator $U_\textrm{phase}$ is called *phase oracle*.
 
 2. Alternatively, we can allocate an extra qubit $y$ and encode the values $f(0)$ and $f(1)$ in the state of that qubit.  
-In this case, we split the joint state of our data qubit and the extra qubit into a linear combination of basis states $a_{00} |0\rangle_x|0\rangle_y + a_{01} |0\rangle_x|1\rangle_y + a_{10} |1\rangle_x|0\rangle_y + a_{11} |1\rangle_x|1\rangle_y$ and apply the operation $U_f^{state}$ to each of the basis states separately. 
-This operation will transform a basis state $|x\rangle|y\rangle$ into $|x\rangle|y \oplus f(x)\rangle$ ($\oplus$ is addition modulo 2). 
-In other words, the operation $U_f^{state}$ doesn't change the basis states for which $f(x) = 0$, and flips the state of the extra qubit for the states for which $f(x) = 1$. 
-The full effect on the superposition can be deduced using the fact that quantum operations are linear: our starting state will be transformed to $a_{00} |0\rangle_x|f(0)\rangle_y + a_{01} |0\rangle_x|1 \oplus f(0)\rangle_y + a_{10} |1\rangle_x|f(1)\rangle_y + a_{11} |1\rangle_x|1 \oplus f(1)\rangle_y$. 
-In this case, the extra qubit will often end up entangled with the data qubits.
+In this case, we split the joint state of our data qubit and the extra qubit into a linear combination of basis states $a_{00} |0\rangle_x|0\rangle_y + a_{01} |0\rangle_x|1\rangle_y + a_{10} |1\rangle_x|0\rangle_y + a_{11} |1\rangle_x|1\rangle_y$ and apply the operator $U_\textrm{mark}$ to each of the basis states separately. 
+This operator will transform a basis state $|x\rangle|y\rangle$ into $|x\rangle|y \oplus f(x)\rangle$ ($\oplus$ is addition modulo 2). 
+In other words, the operator $U_\textrm{mark}$ doesn't change the basis states for which $f(x) = 0$, and flips the state of the extra qubit for the states for which $f(x) = 1$. 
+The full effect on the superposition can be deduced using the fact that quantum operators are linear: our starting state will be transformed to $a_{00} |0\rangle_x|f(0)\rangle_y + a_{01} |0\rangle_x|1 \oplus f(0)\rangle_y + a_{10} |1\rangle_x|f(1)\rangle_y + a_{11} |1\rangle_x|1 \oplus f(1)\rangle_y$. 
+In this case, the extra qubit will often end up entangled with the data qubits.  
+The operator $U_\textrm{mark}$ is called *marking oracle*.
 
 > [!NOTE]
 > Performing computations this way is not the same as "being able to evaluate the function on all inputs at once"! 
@@ -28,7 +30,7 @@ The best way to represent classical computations in a quantum algorithm depends 
 
 * Many quantum algorithms call for using the first approach, encoding the classical function values in phases of basis states, since this approach simplifies expressing the algorithm. 
 * The second approach, encoding the classical function values in the states of extra qubits, makes implementing the classical computations easier.
-* In practice we'll often see the second approach used to implement the classical computations, and then converted to the first format as the last step before the operation is plugged into the rest of the quantum algorithm.
+* In practice we'll often see a marking oracle used to implement the classical computations, and then converted to a phase oracle as the last step before the operation is plugged into the rest of the quantum algorithm.
 
 ## Quantum oracles
 

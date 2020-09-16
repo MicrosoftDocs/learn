@@ -7,21 +7,17 @@ We will not dive deep into the gate-level implementation details, and will focus
 
 Let's start with an outline of the algorithm, and then discuss what each step does in more details.
 
-1. We start by preparing an equal superposition of all basis states.
-   
-   > This is a very common first step for quantum algorithms in general.
+1. We start by preparing an equal superposition of all basis states.  
+  This is a very common first step for quantum algorithms in general.
 
 2. The main part of the algorithm is repeating a sequence of steps multiple times. This sequence is called "Grover's iteration" and consists of two steps:
 
    * Apply the quantum oracle.  
-     This operation multiplies the phases of all states that are solutions to our problem by $-1$, as we've seen in the earlier units.
-
-     > Notice that this is the only step that uses the information about our problem.
+     This operation multiplies the phases of all states that are solutions to our problem by $-1$, as we've seen in the earlier units. Notice that this is the only step that uses the information about our problem.
 
    * Apply the so-called "diffusion operator".  
      This operator will change the amplitudes of the basis states as follows: the amplitudes that were greater than the average of the amplitudes will get smaller, and the amplitudes that were less than the average will get larger.
-
-     > This step does not depend on our problem.
+     This step does not depend on our problem.
 
    Overall, one iteration *decreases* the amplitudes of the basis states that are not solutions to our problem, and *increases* the amplitudes of the basis states that are solutions, while keeping both types of amplitudes positive.
 
@@ -39,17 +35,17 @@ We'll define two state vectors:
 
 * an equal superposition of $M$ "good" basis states (states that are solutions to our problem)  
 
-  $$|good\rangle = \frac{1}{\sqrt{M}} \sum_{x : f(x) = 1} |x\rangle$$
+  $$|\textrm{good}\rangle = \frac{1}{\sqrt{M}} \sum_{x : f(x) = 1} |x\rangle$$
 * and an equal superposition of $N - M$ "bad" basis states (states that are *not* solutions to our problem)
 
-  $$|bad\rangle = \frac{1}{\sqrt{N-M}} \sum_{x : f(x) = 0} |x\rangle$$
+  $$|\textrm{bad}\rangle = \frac{1}{\sqrt{N-M}} \sum_{x : f(x) = 0} |x\rangle$$
 
 The algorithm never distinguishes different "good" or different "bad" states until the final measurement, so all amplitudes of "good" states remain equal to each other, and all amplitudes of "bad" states remain equal to each other.
 This means that we can always represent the overall system state as a superposition of the states $|good\rangle$ and $|bad\rangle$.
 
 1. We start with an equal superposition of all basis states, both "good" and "bad". This state will be represented as follows:
 
-   $$|all\rangle = \sqrt{\frac{M}{N}} |good\rangle + \sqrt{\frac{N-M}{N}} |bad\rangle$$
+   $$|\textrm{all}\rangle = \sqrt{\frac{M}{N}} |\textrm{good}\rangle + \sqrt{\frac{N-M}{N}} |\textrm{bad}\rangle$$
 
    If we imagine a plane on which $|good\rangle$ and $|bad\rangle$ vectors correspond to vertical and horizontal axes, respectively, we can plot this state on the plane like this:
 
@@ -61,11 +57,11 @@ This means that we can always represent the overall system state as a superposit
 
    ![Figure 2. A circle showing the result of the first reflection](../media/5-first-reflection.png)
 
-3. Now we apply the diffusion operator. Turns out that its effect is another reflection, this time along the vector $|all\rangle$:
+3. Now we apply the diffusion operator. Turns out that its effect is another reflection, this time along the vector $|\textrm{all}\rangle$:
 
    ![Figure 3. A circle showing the result of the second reflection](../media/5-second-reflection.png)
 
-   Notice how this sequence of two reflections becomes a rotation counterclockwise by an angle $2\theta$. If we repeat this sequence again, reflecting the new state first along the horizontal axis and then along the $|all\rangle$ vector, it will perform a rotation by $2\theta$ again - the angle of this rotation depends only on the angle between the reflection axes and not on the state we reflect. 
+   Notice how this sequence of two reflections becomes a rotation counterclockwise by an angle $2\theta$. If we repeat this sequence again, reflecting the new state first along the horizontal axis and then along the $|\textrm{all}\rangle$ vector, it will perform a rotation by $2\theta$ again - the angle of this rotation depends only on the angle between the reflection axes and not on the state we reflect. 
 
 4. So, every iteration we do rotates our state vector $2\theta$ counterclockwise. When should we perform the measurement?  
    
@@ -90,6 +86,7 @@ The final measurement will produce a result that solves our problem with high pr
 
 We have to deal with the possible failure in the same way we're dealing with classical randomized algorithms: check whether the result we got is indeed a solution to our problem, and if it's not, rerun the algorithm from scratch. 
 Unfortunately, there is no way to use the result we obtained to improve the chances of success for the next attempt.
+Fortunately, the average number of algorithm reruns doesn't depend on the size of the problem.
 
 
 ### More iterations does not mean better!
@@ -124,6 +121,7 @@ After that, the probability will grow again and approach 100% on iteration $3 R_
 In our case, we have a very small and easy to analyze problem, so we can calculate the number of solutions by hand. 
 In practical applications, you don't usually know how many solutions your problem has before you solve it.
 
-To handle this issue, you can pick the number of iterations as a random number between $1$ and $R_{opt}^{max}=\frac{\pi}{4}\sqrt{N}$, run the algorithm, and if it doesn't yield an answer, retry with a different number of iterations.
+To handle this issue, you can pick a small number, run the algorithm with that many iterations, and if it doesn't yield an answer, retry with a different, larger number of iterations. 
+An efficient strategy of picking gradually increasing iteration numbers will find the solution with an average number of iterations still around $\sqrt{\frac{N}{M}}$.
 
 In the next unit, we will see how to implement the algorithm we've  learned in this unit in Q#, and run it to solve our graph coloring problem!
