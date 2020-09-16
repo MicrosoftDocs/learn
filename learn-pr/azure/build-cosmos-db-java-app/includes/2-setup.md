@@ -1,11 +1,11 @@
-In this unit, you will create a basic console app using an IDE of your choice to edit code, and optionally using the terminal of your choice to run the code.
+In this unit, you'll create a basic console app by using an IDE of your choice to edit code, and optionally using the terminal of your choice to run the code.
 
 ## Create Azure Cosmos DB resources
 
 For completing this lab, Microsoft Learn provides you with a free Azure sandbox in which you can create accounts and resources. You will set up an Azure Cosmos DB account in this subscription and then create a database and container.
 
-1. Log in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. Using the Azure portal, create an Azure Cosmos DB account with the name of your choice. When the opportunity arrives to choose a resource group for your account, find the resource group <rgn>[Sandbox resource group]</rgn> and select that.
+1. Log in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using the same account you activated the sandbox with.
+1. By using the Azure portal, create an Azure Cosmos DB account with the name of your choice. When the opportunity arrives to choose a resource group for your account, find the resource group <rgn>[Sandbox resource group]</rgn> and select that.
 1. In your Azure Cosmos DB account, create a database **Users**.
 1. In the database **Users**, create a container **WebCustomers**. Provision **400 RU/s** for **WebCustomers**.
 
@@ -35,7 +35,7 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
 
     This dependency pulls in the Azure Cosmos DB Java SDK latest version. You can close this file.
 
-1. Next, you will build and run Hello World. Using your IDE or the terminal, open this project. Depending on your IDE, there may be an option to open the **pom.xml** file in the **java** subdirectory as a project. Once the project is open, navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and open **CosmosApp.java** which is a template for the Java application we will develop. It should look something like this
+1. Next, you will build and run Hello World. By using your IDE or the terminal, open this project. Depending on your IDE, there might be an option to open the **pom.xml** file in the **java** subdirectory as a project. Once the project is open, navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and open **CosmosApp.java** which is a template for the Java application we will develop. It should look something like this
 
     ```java
     import org.slf4j.Logger;
@@ -62,7 +62,7 @@ For completing this lab, Microsoft Learn provides you with a free Azure sandbox 
 
     As-is, the application code implements a simple "Hello world".
 
-1. **If your IDE offers tools to build and run your Maven application** - then build and run your application using the IDE, and confirm that the application logs `Hello World` to the terminal.
+1. **If your IDE offers tools to build and run your Maven application** - then build and run your application by using the IDE, and confirm that the application logs `Hello World` to the terminal.
 
 1. **If you will use the terminal to build and run** -
 
@@ -117,7 +117,7 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
     private static CosmosAsyncContainer container;
     ```
 
-    Most likely the `client`, `database` and `container` classes are not yet imported into your Java file, so it is a good time to take care of that now. Some IDEs may allow you to auto-import dependencies based on the code you type and that can be useful here. Regardless, in general, expect that when we give you a block of code to paste in, you may need to add some `import` statements in order for it to work.
+    Most likely the `client`, `database` and `container` classes are not yet imported into your Java file, so it is a good time to take care of that now. Some IDEs might allow you to auto-import dependencies based on the code you type and that can be useful here. Regardless, in general, expect that when we give you a block of code to paste in, you might need to add some `import` statements in order for it to work.
 
 
 1. Create a `private void` method `basicOperations` with no arguments in the class. 
@@ -141,7 +141,7 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
      client.close();
     ```
 
-1. At this point, your `basicOperations` method contains the code to interact with Azure Cosmos DB. However this method is not called in `main`, so our application still serves to print "Hello World". As a check, build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
+1. At this point, your `basicOperations` method contains the code to interact with Azure Cosmos DB. However this method is not called in `main`, so our application still serves to print "Hello World". As a check, build and run **CosmosApp.java** in the IDE or execute the program in the terminal by using 
 
     ```bash
     mvn clean package
@@ -171,14 +171,14 @@ Now it's time to create an instance of the `CosmosAsyncClient`, which is the cli
 
     This will trigger the Azure Cosmos DB code in our application.
 
-1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal using 
+1. Build and run **CosmosApp.java** in the IDE or execute the program in the terminal by using 
 
     ```bash
     mvn clean package
     mvn exec:java -Dexec.mainClass="com.azure.cosmos.examples.mslearnbasicapp.CosmosApp"  
     ```
 
-    You may see a large number of log messages in the terminal, some of which are generated by the SDK itself. Read through and confirm that the app logs to the terminal:
+    You might see a large number of log messages in the terminal, some of which are generated by the SDK itself. Read through and confirm that the app logs to the terminal:
 
     ```output
     INFO: Database and container validation complete
