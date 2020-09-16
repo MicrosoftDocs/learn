@@ -65,9 +65,9 @@ A typical approach to implementing a quantum oracle for a given function is as f
 
 2. Replace each classical block with a sequence of quantum gates that implement it as a marking oracle.  
   Each of the primitive logic gates can be implemented using one or several quantum gates. Sometimes we'll need to allocate an extra qubit to hold the computation result of the gate. For example,  
-   * Classical NOT gate is equivalent to the X gate.
-   * Classical XOR gate can be implemented using the CNOT gate.
-   * Classical AND gate can be realized using [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate) and an extra qubit.
+   * The classical NOT gate is equivalent to the X gate.
+   * The classical XOR gate can be implemented using the CNOT gate (controlled X gate).
+   * The classical AND gate can be realized using the [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate) (double-controlled X gate) and an extra qubit.
 
 3. If the algorithm calls for a phase oracle, transform the marking oracle into a phase oracle.  
   This step uses a standard trick called "phase kickback": applying a marking oracle to an input register and a target qubit in a certain state will have the same effect on the input register as applying a phase oracle to it.
@@ -88,7 +88,7 @@ Here is the Q# code that implements this check and uses it to compare two regist
 
 > [!NOTE]
 > The [`DumpRegister`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpregister) function is similar to `DumpMachine` you've seen in the previous modules, but it prints the information about the state of a subset of qubits (a register), rather than all qubits used by the program. 
-> It can only be used if that register is not entangled with the rest of the qubits.
+> In the current implementation of the full-state simulator `DumpRegister` can only be used if that register is not entangled with the rest of the qubits.
 
 > [!NOTE]
 > In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 

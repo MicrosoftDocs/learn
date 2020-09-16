@@ -26,16 +26,15 @@
         target : Qubit
     ) : Unit is Adj+Ctl {
         let nEdges = Length(edges);
+        // Split the register that encodes the colors into an array of two-qubit registers, one per color
+        let colors = Chunks(2, colorsRegister);
         // Allocate one extra qubit per edge to mark the edges that connect vertices with the same color
         using (conflictQubits = Qubit[nEdges]) {
             within {
                 for (((start, end), conflictQubit) in Zip(edges, conflictQubits)) {
-                    // Extract the parts of the qubit register that that store the colors of the endpoints
-                    let startColorRegister = colorsRegister[start * 2 .. start * 2 + 1];
-                    let endColorRegister = colorsRegister[end * 2 .. end * 2 + 1];
                     // Check that the endpoints have different colors: apply MarkColorEquality operation; 
                     // if the colors are the same, the result will be 1, indicating a conflict
-                    MarkColorEquality(startColorRegister, endColorRegister, conflictQubit);
+                    MarkColorEquality(colors[start], colors[end], conflictQubit);
                 }
             } apply {
                 // If there are no conflicts (all qubits are in 0 state), the vertex coloring is valid

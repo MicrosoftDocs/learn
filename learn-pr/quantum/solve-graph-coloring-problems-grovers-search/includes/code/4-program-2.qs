@@ -1,4 +1,5 @@
 namespace ExploringGroversSearchAlgorithm {
+    open Microsoft.Quantum.Arrays;
     open Microsoft.Quantum.Convert;
     open Microsoft.Quantum.Intrinsic;
 
@@ -14,8 +15,9 @@ namespace ExploringGroversSearchAlgorithm {
         let colors = ["red", "green", "blue", "yellow"];
 
         // Interpret the coloring: split the bit string into 2-bit fragments and convert them to colors
+        let colorBits = Chunks(2, coloring);
         for (i in 0 .. nVertices - 1) {
-            let colorIndex = BoolArrayAsInt(coloring[2 * i .. 2 * i + 1]);
+            let colorIndex = BoolArrayAsInt(colorBits[i]);
             Message($"Vertex {i} - color #{colorIndex} ({colors[colorIndex]})");
         }
     }

@@ -25,12 +25,11 @@
         target : Qubit
     ) : Unit is Adj+Ctl {
         let nEdges = Length(edges);
+        let colors = Chunks(2, colorsRegister);
         using (conflictQubits = Qubit[nEdges]) {
             within {
                 for (((start, end), conflictQubit) in Zip(edges, conflictQubits)) {
-                    let startColorRegister = colorsRegister[start * 2 .. start * 2 + 1];
-                    let endColorRegister = colorsRegister[end * 2 .. end * 2 + 1];
-                    MarkColorEquality(startColorRegister, endColorRegister, conflictQubit);
+                    MarkColorEquality(colors[start], colors[end], conflictQubit);
                 }
             } apply {
                 (ControlledOnInt(0, X))(conflictQubits, target);
@@ -111,9 +110,10 @@
         }
 
         // Convert the answer to readable format (actual graph coloring)
+        let colorBits = Chunks(2, answer);
         Message("The resulting graph coloring:");
         for (i in 0 .. nVertices - 1) {
-            Message($"Vertex {i} - color {BoolArrayAsInt(answer[2 * i .. 2 * i + 1])}");
+            Message($"Vertex {i} - color {BoolArrayAsInt(colorBits[i])}");
         }
     }
 }
