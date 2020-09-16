@@ -9,7 +9,7 @@ In this unit, you’ll learn about various methods of supporting compute workloa
 
 ## What are Azure Arc enabled servers?
 
-[Azure Arc–enabled servers](https://docs.microsoft.com/azure/azure-arc/servers/overview) allows organizations to manage Windows and Linux servers on networks outside Azure. This capability includes servers hosted on internal organizational networks and those hosted on third-party cloud IaaS infrastructure.
+Azure Arc–enabled servers allows organizations to manage Windows and Linux servers on networks outside Azure. This capability includes servers hosted on internal organizational networks and those hosted on third-party cloud IaaS infrastructure.
 
 When you hybrid connect a computer to Azure by using Azure Arc to install the Azure Arc for servers agent, the server can be treated as an Azure resource. This allows you to manage it as part of a resource group within a subscription. It also allows you to apply Azure Policy for configuration and management gives you the ability to apply tags. The Azure Arc for servers agent supports the following Windows and Linux operating systems:
 
@@ -31,7 +31,7 @@ For Tailwind Traders, having a single location to manage Windows Server and Linu
 
 ## What is Azure Stack HCI?
 
-[Azure Stack HCI](https://docs.microsoft.com/azure-stack/hci/overview) is a hyper-converged infrastructure operating system that allows you to host Hyper-V virtual machines running Windows and Linux operating systems. Unlike running on a hyperconverged Windows Server Hyper-V cluster, Azure Stack HCI is designed to provide you the option of deploying and managing virtual machines through the Azure Portal or Windows Admin Center.
+Azure Stack HCI is a hyper-converged infrastructure operating system that allows you to host Hyper-V virtual machines running Windows and Linux operating systems. Unlike running on a hyperconverged Windows Server Hyper-V cluster, Azure Stack HCI is designed to provide you the option of deploying and managing virtual machines through the Azure Portal or Windows Admin Center.
 
 Unlike a traditional Windows Server virtualization deployment in which the local operations team maintain responsibility for managing the host operating system, Azure Stack HCI is an Azure service. A customer acquires a validated hardware configuration from an approved vendor, connects the system to an internet-connected network, and an Azure service manages the infrastructure. Because they’re fully connected to Azure, all hybrid Azure services, such as Azure Update Management, Azure Site Recovery, and Azure Backup are automatically integrated.
 
@@ -39,7 +39,7 @@ For Tailwind Traders, Azure Stack HCI provides a future platform to which they c
 
 ## What is hybrid high-performance computing?
 
-[High-performance computing (HPC)](https://docs.microsoft.com/azure/architecture/topics/high-performance-computing) uses large numbers of CPUs or GPUs to perform complex mathematical tasks, such as certain scientific and engineering calculations. Instead of having these CPUs or GPUs attached to the same computer, HPC uses an arrangement in which a controlling computer allocates tasks to separate computers running Windows and Linux operating systems as nodes to perform discrete segments of a large and repetitive compute calculation. The more nodes in an HPC cluster, the faster the HPC cluster performs the calculation.
+High-performance computing (HPC) uses large numbers of CPUs or GPUs to perform complex mathematical tasks, such as certain scientific and engineering calculations. Instead of having these CPUs or GPUs attached to the same computer, HPC uses an arrangement in which a controlling computer allocates tasks to separate computers running Windows and Linux operating systems as nodes to perform discrete segments of a large and repetitive compute calculation. The more nodes in an HPC cluster, the faster the HPC cluster performs the calculation.
 
 Organizations that have an existing on-premises HPC solution can connect that solution to Azure. This structure allows them to burst into the cloud. Bursting to the cloud involves adding cloud-based HPC nodes to an existing on-premises HPC node deployment. When you use this approach, depicted in Figure 7, HPC compute nodes can be instantiated in Azure as necessary to perform calculation tasks and then discarded when the task is complete. Being able to burst HPC calculations into the cloud allows organizations to maintain a minimum amount of hardware for common HPC tasks on-premises. Organizations can then deploy extra nodes as necessary if the benefit of the calculation justifies the expense.
 
@@ -51,7 +51,7 @@ Tailwind Traders already has an HPC deployment. However, their capacity to perfo
 
 ## What is Azure Arc enabled Kubernetes?
 
-[Azure Arc enabled Kubernetes](https://docs.microsoft.com/azure/azure-arc/kubernetes/overview) allows you to attach and configure Kubernetes clusters so that they can be managed through the Azure Portal. When you use Azure Arc enabled Kubernetes, you can:
+Azure Arc enabled Kubernetes allows you to attach and configure Kubernetes clusters so that they can be managed through the Azure Portal. When you use Azure Arc enabled Kubernetes, you can:
 
 - Connect Kubernetes clusters running outside of Azure and perform inventory, grouping, and tagging tasks.
 - Deploy applications and apply configuration to Azure Arc enabled Kubernetes clusters by using GitOps–based configuration management.
@@ -68,7 +68,7 @@ The benefit for Tailwind Traders of using Azure Arc for Kubernetes is that it al
 
 ## What is Azure Arc enabled data services?
 
-[Azure Arc enabled data services](https://azure.microsoft.com/en-au/blog/bring-azure-data-services-to-your-infrastructure-with-azure-arc/) allows organizations to manage supported databases running in Azure and on-premises by using one set of tools. Azure Arc enabled data services allows organizations to run Azure Database for PostgreSQL Servers and SQL Managed Instances on-premises while managing those instances through Azure Data Studio, the Azure Portal, or Azure CLI.
+Azure Arc enabled data services allows organizations to manage supported databases running in Azure and on-premises by using one set of tools. Azure Arc enabled data services allows organizations to run Azure Database for PostgreSQL Servers and SQL Managed Instances on-premises while managing those instances through Azure Data Studio, the Azure Portal, or Azure CLI.
 
 When enabled, Azure Arc enabled data services allows you to automate the patching and update processes for these on-premises database instances in the same way that Microsoft manages these processes when you deploy PostgreSQL and SQL managed instances in Azure. Azure Arc enabled data services also allows organizations to apply the database advanced threat protection functionality available in Azure Security Center for Azure SQL databases to database server instances running on-premises.
 
@@ -78,7 +78,7 @@ From Tailwind Traders’ perspective, Azure Arc enabled data services provides a
 
 ## What is Azure Site Recovery?
 
-[Azure Site Recovery](https://docs.microsoft.com/azure/site-recovery/site-recovery-overview) allows organizations to replace disaster-recovery sites by replicating physical and virtual operating systems and the workloads they host into the Azure cloud. Azure Site Recovery allows failover to Azure. Importantly, Azure Site Recovery can also perform failback of workloads to an on-premises datacenter from Azure. Figure 11 depicts a basic Azure Site Recovery configuration.
+Azure Site Recovery allows organizations to replace disaster-recovery sites by replicating physical and virtual operating systems and the workloads they host into the Azure cloud. Azure Site Recovery allows failover to Azure. Importantly, Azure Site Recovery can also perform failback of workloads to an on-premises datacenter from Azure. Figure 11 depicts a basic Azure Site Recovery configuration.
 
 :::image type="content" source="../media/image11.png" alt-text="Azure Site Recovery configuration with on-premises VMs replicated to recovery vault in Azure." lightbox="../media/image11.png":::
 

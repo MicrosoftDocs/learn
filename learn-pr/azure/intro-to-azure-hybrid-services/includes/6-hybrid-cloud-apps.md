@@ -7,7 +7,7 @@ In this unit, you’ll learn about the technologies that allow Tailwind Traders 
 
 ## What is Azure Relay?
 
-[Azure Relay](https://docs.microsoft.com/azure/azure-relay/relay-what-is-it), previously called Service Bus Relay, is a service that allows you to securely expose workloads that run on your organization’s internal network to the public cloud. The service enables you to do this without opening an inbound port on a perimeter network firewall.
+Azure Relay, previously called Service Bus Relay, is a service that allows you to securely expose workloads that run on your organization’s internal network to the public cloud. The service enables you to do this without opening an inbound port on a perimeter network firewall.
 
 Azure Relay supports the following scenarios between on-premises services and applications running in Azure:
 
@@ -24,7 +24,7 @@ Azure Relay allows Tailwind Traders to publish some applications that run on the
 
 ## What are Azure App Service Hybrid Connections?
 
-[App Service Hybrid Connections](ttps://docs.microsoft.com/azure/app-service/app-service-hybrid-connections) can use any application resource in any network that’s able to send outbound requests to Azure on port 443. For example, you can use Azure App Service Hybrid Connections to allow a web app running in Azure to use a SQL Server database running on-premises. Hybrid Connections provide access from an app running in Azure to a Transmission Control Protocol (TCP) endpoint. App Service Hybrid Connections aren’t limited to workloads running on Windows Server platforms and you can configure App Service Hybrid Connections to access any resource provided it functions as a TCP endpoint, regardless of which application protocol is being used. For example, you could configure an App Service Hybrid Connection between a web app running in Azure and a MySQL database running on an on-premises Linux virtual machine.
+App Service Hybrid Connections can use any application resource in any network that’s able to send outbound requests to Azure on port 443. For example, you can use Azure App Service Hybrid Connections to allow a web app running in Azure to use a SQL Server database running on-premises. Hybrid Connections provide access from an app running in Azure to a Transmission Control Protocol (TCP) endpoint. App Service Hybrid Connections aren’t limited to workloads running on Windows Server platforms and you can configure App Service Hybrid Connections to access any resource provided it functions as a TCP endpoint, regardless of which application protocol is being used. For example, you could configure an App Service Hybrid Connection between a web app running in Azure and a MySQL database running on an on-premises Linux virtual machine.
 
 Hybrid Connections use a relay agent that you deploy in a location where the agent can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured by using Transport Layer Security (TLS) 1.2 and shared access signature (SAS) keys are used for authentication and authorization. Figure 12 depicts an App Service Hybrid Connection between a web app running in Azure and a database endpoint running on-premises.
 
@@ -50,14 +50,14 @@ For Tailwind Traders, App Service Hybrid connections will allow them to retire s
 
 ## What is Azure AD Application Proxy?
 
-[Azure AD Application Proxy](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy) allows you to provide secure remote access to a web application that’s
+Azure AD Application Proxy allows you to provide secure remote access to a web application that’s
 running in an on-premises environment through an external URL. Application Proxy can be configured to allow remote access and single sign-on to SharePoint, Teams, IIS web applications and Remote Desktop. Application Proxy can be implemented as a replacement for VPNs to internal networks or reverse proxies.
 
 Application Proxy functions with the following applications:
 
-- Web applications that use [Integrated Windows Authentication](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-kcd)
-- Web applications that use [header-based or form-based authentication](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-configure-single-sign-on-with-ping-access)
-- Applications hosted through [Remote Desktop Gateway](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services)
+- Web applications that use Integrated Windows Authentication
+- Web applications that use header-based or form-based authentication
+- Applications hosted through Remote Desktop Gateway
 
 Application Proxy functions in the following manner depicted in Figure 13:
 

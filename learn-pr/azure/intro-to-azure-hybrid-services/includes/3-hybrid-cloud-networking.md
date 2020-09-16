@@ -6,7 +6,7 @@ In this unit, you’ll learn about several different networking technologies tha
 
 ## What is an Azure VPN?
 
-An [Azure VPN gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) allows you to connect your on-premises network to Azure by using a secure VPN tunnel across the public internet. Azure VPN connections are like traditional VPN connections that might exist between a branch office and a head office location. Each virtual network can only have a single VPN gateway, but each VPN gateway supports multiple connections. Figure 1 indicates a connection between an on-premises network’s perimeter gateway device and a VPN gateway on an Azure virtual network. It depicts the connection between an Azure Stack device and a VPN gateway.
+An Azure VPN gateway allows you to connect your on-premises network to Azure by using a secure VPN tunnel across the public internet. Azure VPN connections are like traditional VPN connections that might exist between a branch office and a head office location. Each virtual network can only have a single VPN gateway, but each VPN gateway supports multiple connections. Figure 1 indicates a connection between an on-premises network’s perimeter gateway device and a VPN gateway on an Azure virtual network. It depicts the connection between an Azure Stack device and a VPN gateway.
 
 :::image type="content" source="../media/image1.png" alt-text="Diagram of a hybrid network spanning on-premises and Azure infrastructures." lightbox="../media/image1.png":::
 
@@ -16,7 +16,7 @@ When considering the Tailwind Traders example, Tailwind Traders might use Azure 
 
 ## What is Azure ExpressRoute?
 
-[Microsoft Azure ExpressRoute](https://docs.microsoft.com/azure/expressroute/expressroute-introduction) allows an organization to have a dedicated private high-speed connection from their on-premises network to Azure. This connection doesn’t cross the public internet and is functionally a dedicated fiber optic line straight from an on-premises location to the nearest Azure datacenter. Unlike a VPN gateway, the equipment that provides this connection is managed by the ExpressRoute provider. Because the ExpressRoute provider manages all the equipment, they’re able to provide a service-level agreement (SLA) in terms of reliability and bandwidth that’s not available Azure VPN gateway connections users. Figure 2 indicates the ExpressRoute connection between the on-premises environment and workloads running in Azure, with the ExpressRoute circuit and local edge routers managed by the ExpressRoute provider.
+Microsoft Azure ExpressRoute allows an organization to have a dedicated private high-speed connection from their on-premises network to Azure. This connection doesn’t cross the public internet and is functionally a dedicated fiber optic line straight from an on-premises location to the nearest Azure datacenter. Unlike a VPN gateway, the equipment that provides this connection is managed by the ExpressRoute provider. Because the ExpressRoute provider manages all the equipment, they’re able to provide a service-level agreement (SLA) in terms of reliability and bandwidth that’s not available Azure VPN gateway connections users. Figure 2 indicates the ExpressRoute connection between the on-premises environment and workloads running in Azure, with the ExpressRoute circuit and local edge routers managed by the ExpressRoute provider.
 
 :::image type="content" source="../media/image2.png" alt-text="Hybrid network architecture using Azure ExpressRoute" lightbox="../media/image2.png":::
 
@@ -38,7 +38,7 @@ For the Tailwind Traders hybrid-cloud deployment, it’s likely that a virtual m
 
 ## What is Azure Virtual WAN?
 
-[Azure Virtual WAN](https://docs.microsoft.com/azure/virtual-wan/virtual-wan-about) allows an organization to use Azure’s network in a hub-and-spoke architecture. Azure’s network functions as a hub for transitive connectivity between endpoints that function as spokes. Traditionally, you might have a network topology where each branch office has a VPN connection to the head office site. If traffic is to pass from one branch office to another, it would pass through the hub site to get there. If the head office and branch office sites are all connected to Azure, either by VPN or ExpressRoute, these connections can form the
+Azure Virtual WAN allows an organization to use Azure’s network in a hub-and-spoke architecture. Azure’s network functions as a hub for transitive connectivity between endpoints that function as spokes. Traditionally, you might have a network topology where each branch office has a VPN connection to the head office site. If traffic is to pass from one branch office to another, it would pass through the hub site to get there. If the head office and branch office sites are all connected to Azure, either by VPN or ExpressRoute, these connections can form the
 spokes and Azure Virtual WAN can function as the routing hub for traffic between on-premises locations. Figure 4 indicates an Azure Virtual WAN topology.
 
 :::image type="content" source="../media/image4.png" alt-text="Azure Virtual WAN topology with multiple sites connected to in a hub and spoke topology through Azure to each other." lightbox="../media/image4.png":::
