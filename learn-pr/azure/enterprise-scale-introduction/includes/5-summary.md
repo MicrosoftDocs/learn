@@ -1,8 +1,8 @@
-Enterprise-scale architecture provides prescriptive guidance coupled with Azure best practices. It follows design principles across eight critical design areas for an organization's Azure environment. The enterprise-scale approach to building landing zones includes three sets of assets to support cloud teams:
+Enterprise-scale architecture provides prescriptive guidance coupled with Azure best practices. It follows design principles across eight critical design areas for an organization's Azure environment.
 
 ## Learn more
 
-To learn more about enterprise-scale architecture, visit the following articles:
+The enterprise-scale approach to building landing zones includes three sets of assets to support cloud teams:
 
 - **Design guidelines:** A guide to the critical decisions that drive the design of enterprise-scale landing zones in the Cloud Adoption Framework.
 
