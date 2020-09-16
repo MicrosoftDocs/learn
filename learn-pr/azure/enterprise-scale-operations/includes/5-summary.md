@@ -5,3 +5,7 @@ For central teams to maintain operational visibility within a large-scale Azure 
 Providing a platform that meets application requirements for HA and DR requires a thorough understanding of the mechanisms used by the application teams to achieve their goals. The platform team will be responsible for connectivity and guiding region selection for platform replication capabilities.
 
 A secure Azure estate that provides central teams with real-time visibility into the changes in the environment is critical to meeting governance and compliance requirements. To achieve this goal state Azure Security Center and Azure Sentinel should be used for real-time insights and approved resource configurations should be enforced with Azure Policy.
+
+## Learn more
+
+To learn more about enterprise-scale architecture operational design principles, visit the following articles:

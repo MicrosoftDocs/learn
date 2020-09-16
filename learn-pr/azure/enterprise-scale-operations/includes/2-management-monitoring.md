@@ -4,7 +4,7 @@ Platform-level holistic (horizontal) resource monitoring and alerting must be de
 
 This diagram shows a dedicated management subscription to support global management capabilities such as Azure Monitor Log Analytics workspaces and Azure Automation runbooks.
 
-![A diagram of enterprise-scale management and monitoring.](../media/management-and-monitoring.png)
+:::image type="content" source="../media/management-and-monitoring.png" alt-text="A diagram of enterprise-scale management and monitoring.":::
 
 ## Log Analytics workspace design
 

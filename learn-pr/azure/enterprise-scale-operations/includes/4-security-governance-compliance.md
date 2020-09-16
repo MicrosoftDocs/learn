@@ -2,9 +2,9 @@ Managing security, governance, and compliance within an Azure estate through a c
 
 ## Encryption and key management
 
-Encryption is a vital step towards ensuring data privacy, compliance, and data residency in Microsoft Azure. It is also one of the most important security concerns of many enterprises.
+Encryption is a vital step towards ensuring data privacy, compliance, and data residency in Azure. It is also one of the most important security concerns of many enterprises.
 
-Azure supports various encryption models, including server-side encryption using service-managed keys, customer-managed keys in Key Vault, or customer-managed keys on customer-controlled hardware. With client-side encryption, you can manage and store keys on-premises or in another secure location. An organization should define its encryption requirements for the services it uses, and enforce encryption configurations via Azure Policy.
+Azure supports various encryption models, including server-side encryption using service-managed keys, customer-managed keys in Azure Key Vault, or customer-managed keys on customer-controlled hardware. With client-side encryption, you can manage and store keys on-premises or in another secure location. An organization should define its encryption requirements for the services it uses, and enforce encryption configurations via Azure Policy.
 
 Without proper protection and management of the keys, encryption is useless. Key Vault is the recommended enterprise-scale solution for managing and controlling access to encryption keys used by cloud services. Permissions to access keys can be assigned to services or users via Azure Active Directory accounts.
 
@@ -28,7 +28,7 @@ For insights and analysis of the changes occurring within an enterprise estate, 
 
 Azure Active Directory reports provide another important view into activity within the enterprise estate and should be regularly reviewed as part of the security monitoring processes. The reports include security reports and activity reports. Security reports provide insight into an organization's identities, and activity reports provide insight into user behaviors.
 
-Azure Security Center should be the starting point for security monitoring of Azure resources. Enable the Standard tier for all subscriptions via Azure Policy.
+Azure Security Center should be the starting point for security monitoring of Azure resources. Enable the standard tier for all subscriptions via Azure Policy.
 
 ## Platform security
 
