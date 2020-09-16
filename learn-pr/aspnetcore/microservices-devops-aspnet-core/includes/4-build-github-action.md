@@ -42,14 +42,12 @@ Create a GitHub Action for the build with the following steps:
 
         - name: Build and push Docker image
           uses: docker/build-push-action@v1.1.0
-          env:
-            CONTEXT_PATH: .
           with:
             username: ${{ secrets.REGISTRY_USERNAME }}
             password: ${{ secrets.REGISTRY_PASSWORD }}
             registry: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-            path: ${{ env.CONTEXT_PATH }}
-            dockerfile: ${{ format('{0}/{1}', env.CONTEXT_PATH, 'src/Services/Coupon/Coupon.API/Dockerfile.acr') }}
+            path: .
+            dockerfile: './src/Services/Coupon/Coupon.API/Dockerfile.acr'
             repository: 'coupon.api'
             tags: 'linux-latest'
             push: true
@@ -69,7 +67,7 @@ Create a GitHub Action for the build with the following steps:
     > [!IMPORTANT]
     > Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice is kept in a separate repository.
 
-1. Replace the default Action file name of *:::no-loc text="main.yml":::* with *:::no-loc text="build.yml":::*:
+1. Replace the default workflow file name of *:::no-loc text="main.yml":::* with *:::no-loc text="build.yml":::*:
 
     :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-build-github-action/action-file-name.png":::
 
@@ -96,7 +94,7 @@ You've finished creating the build workflow for your CI/CD pipeline. The Marketi
 View the real-time progress of the build by completing the following steps:
 
 1. Select the **:::no-loc text="Actions":::** tab.
-1. Select the most recent workflow run listed for the *:::no-loc text="eShop build":::* workflow. The commit message used in the previous step becomes the run's name.
+1. Select the most recent workflow run listed for the **:::no-loc text="eShop build":::** workflow. The commit message used in the previous step becomes the run's name.
 
     :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="eShop build workflow listed on the workflows page" border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
 

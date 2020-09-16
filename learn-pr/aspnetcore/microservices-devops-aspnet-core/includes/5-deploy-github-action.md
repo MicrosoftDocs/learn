@@ -47,7 +47,7 @@ Create a GitHub Action for deployment of the coupon service with the following s
 
         - name: Deploy
           run: |
-            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{ secrets.IP_ADDRESS }} --set protocol=http ${{ format('{0}/{1}', '.', 'deploy/k8s/helm-simple/coupon') }}
+            helm upgrade --install eshoplearn-coupon --namespace=default --set registry=${{ secrets.REGISTRY_LOGIN_SERVER }} --set imagePullPolicy=Always --set host=${{ secrets.IP_ADDRESS }} --set protocol=http './deploy/k8s/helm-simple/coupon'
     ```
 
     The preceding YAML defines a GitHub Action that:
@@ -60,7 +60,7 @@ Create a GitHub Action for deployment of the coupon service with the following s
         - `Azure Login` logs in to Azure using the service principal credentials.
         - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
-1. Replace the default Action file name of *:::no-loc text="main.yml":::* with *:::no-loc text="deploy.yml":::*.
+1. Replace the default workflow file name of *:::no-loc text="main.yml":::* with *:::no-loc text="deploy.yml":::*.
 1. Commit the *deploy.yml* workflow file directly to the `main` branch.
 
 These two GitHub Action definitions are stored in the repository's *:::no-loc text=".github/workflows":::* directory. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
@@ -71,16 +71,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
 1. From the **:::no-loc text="Code":::** tab, edit the *:::no-loc text="deploy/k8s/helm-simple/coupon/Chart.yaml":::* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
-    ```yml
-    apiVersion: v2
-    name: coupon
-
-    # YAML omitted for brevity
-
-    # This is the version number of the application being deployed. This version number should be
-    # incremented each time you make changes to the application.
-    appVersion: 1.1.0
-    ```
+    :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/Chart.yaml" highlight="8":::
 
     It's important that you update the app version in the Helm chart. This change causes the pod to be replaced when the chart is deployed to AKS with `helm upgrade`.
 1. Commit and push this change to the `main` branch.
@@ -90,7 +81,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 ## Monitor the deployment
 
 1. Select the **:::no-loc text="Actions":::** tab in your repository to monitor the deployment's progress.
-1. Select the most recent workflow run listed for the *eShop deploy* workflow. The commit message used in the previous step becomes the run's name.
+1. Select the most recent workflow run listed for the **:::no-loc text="eShop deploy":::** workflow. The commit message used in the previous step becomes the run's name.
 
     :::image type="content" source="../media/5-deploy-github-action/eshop-deploy-workflow.png" alt-text="eShop deploy workflow listed on the workflows page" border="true" lightbox="../media/5-deploy-github-action/eshop-deploy-workflow.png":::
 
@@ -104,13 +95,13 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
     :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
 
-1. Run the following command to monitor your pods:
+1. Back in the command shell, run the following command to monitor the pods in your AKS cluster:
 
     ```bash
-    kubectl get pods -w
+    kubectl get pods --watch
     ```
 
-    The preceding command retrieves the status for all the pods in a Kubernetes deployment. The `-w` flag instructs `kubectl` to watch for changes. The status of the existing and newly deployed pods will be displayed in real time. A variation of the following output appears:
+    The preceding command retrieves the status for all the pods in a Kubernetes deployment. The `--watch` flag instructs `kubectl` to watch for changes. The status of the existing and newly deployed pods will be displayed in real time. A variation of the following output appears:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
