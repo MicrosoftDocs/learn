@@ -12,9 +12,9 @@ Azure Resource Manager now provides the *what-if* operation to highlight the cha
 > The *what-if* operation is currently in preview. As a preview release, the results may sometimes show that a resource will change when actually no change will happen. We're working to reduce these issues, but we need your help. Please report these issues at https://aka.ms/whatifissues?azure-portal=true.
 >
 
-Using the *what-if* operation allows you to run your code in a *dry-run* context that will allow you to validate your template before actually deploying said template. The *what-if* operation confirms if the changes made by your template match your expectations *without* applying those changes to real resources or to the state of those resources.
+Using the *what-if* operation allows you to estimate what would happen were you to deploy by comparing the current stat model to our desired state model. The *what-if* operation confirms if the changes made by your template match your expectations *without* applying those changes to real resources or to the state of those resources.
 
-One more benefit of this operation is that, unlike some of the other tools out there, the *what-if* operation actually compares your template with the target environment, not against a state file maintained outside of the target environment. Therefore making it simpler to test against multiple environments (Dev, Test, Prod...)
+A benefit to using a state file, is that I can do some work disconnected and possibly avoid some round trips to the server - allowing for a tighter development cycle. Reliance on an external API puts me at the mercy of my network connection for my dev cycle so having the *what-if* operation can end up saving you a lot of time.
 
 ## Change types
 
@@ -36,13 +36,54 @@ You maintain the control of how much information you want to see from the *what-
 
 For example, when changing the storage type in a template that deploys a single storage account to an existing environment.
 
-The PowerShell command parameter "-WhatIfResultFormat FullResourcePayloads" will produce the following results:
+The PowerShell command parameter `-WhatIfResultFormat FullResourcePayloads` will produce the following results:
 
-:::image type="content" source="../media/whatif-fullresourcepayloads.png" alt-text="Results from executing a deployment with -WhatIfResultFormat FullResourcePayloads parameter in PowerShell." border="true":::
+```output
+New-AzResourceGroupDeployment `
+>> -Name $deploymentName `
+>> -ResourceGroupName What-If `
+>> -TemplateFile $templateFile `
+>> storagePrefix whatif `
+>> -WhatIfResultFormat FullResourcePayloads `
+>> -Whatif
 
-And, the PowerShell command parameter "-WhatIfResultFormat ResourceIdOnly " will produce the following results:
+Note: As What-If is currently in preview, the result may contain false positive predictions (noise). You can help us improve th accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
 
-:::image type="content" source="../media/whatif-resourceIdonly.png" alt-text="Results from executing a deployment with -WhatIfResultFormat ResourceIdOnly parameter in PowerShell." border="true":::
+Resource and property changes are indicated with this symbol:
+  ~ Modify
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-if
+
+  ~ Microsoft.Storage/storageAccounts/whatifbszktl3jpcqrc [2019-06-01]
+
+Resource changes: 1 to modify
+```
+
+And, the PowerShell command parameter `-WhatIfResultFormat ResourceIdOnly` will produce the following results:
+
+```output
+PS X:> Nw-AzureResourceGroupDeployment `
+>> -Name $deploymentName `
+>> -ResourceGroupName What-if `
+>> -TemplateFile  $templateFile
+>> -storagePrefix  whatif `
+>> -storageSKU  Standard_LRS `
+>> -WhatIfResultFormat ResourceIdOnly `
+>> -Whatif
+
+Note: As What-If is currently in preview, the result may contain false positive predictions (noise). You can help us improve th accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
+
+Resource and property changes are indicated with this symbol:
+   ! Deploy
+
+The deployment will update the following scope:
+
+Scope: /subscriptions/54a522b6-6cd7-4325-b4e6-566f9d921835/resourceGroups/What-if
+
+  ! Microsoft.Storage/storageAccounts/whatifbszktl3jpcqrc
+```
 
 ## Removal or deletion of resources and deployment modes
 
@@ -53,14 +94,3 @@ To that end, the *what-if* operation supports using *deployment mode*. The defau
 When set to *complete mode*, resources not in the template are deleted.
 
 To preview changes before deploying a template, use the *confirm switch* parameter with the deployment command. If the changes are as you expected, acknowledge that you want the deployment to complete.
-
-## Deployment naming
-
-A deployment needs a name. For every deployment, you need a *deployment name*. You have two options:
-
-- **Provide a name when deploying**. You can provide the name as an argument when calling the deployment tool.
-- **Use default** if you don't provide a name for the deployment, the name of the template file is used by default. For example, if you deploy a template named **azuredeploy.json** and don't specify a deployment name, the deployment will be named **azuredeploy**.  
-
-Good naming matters. Using unique meaningful deployment names for each deployment provides you with additional simplicity when reviewing deployments and troubleshooting events and maintain unique entries in the deployment history.  
-
-Reusing the same name means something. Every time you run a deployment, an entry is added to the resource group's deployment history with the deployment name. If you run another deployment and give it the same name, the previous entry is replaced with the current deployment. A benefit to specifying a unique name for each deployment is that you can run them concurrently without conflict.

@@ -7,7 +7,7 @@ Here you will deploy an ARM template using PowerShell and the Az module. You wil
 
 Before installing the required PowerShell module, make sure you have PowerShell Core (6.x or 7.x)
 
-- **Upgrade to/Install latest PowerShell Core**. If you have PowerShell 5.x or earlier, [update your version of PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.4.0&WT.mc_id=MSLearn-ARM-pierrer). You can't install the required module on PowerShell 5.x or earlier.
+- **Upgrade to/Install latest PowerShell**. If you have Windows PowerShell 5.x or earlier or PowerShell Core 6.2.3 or earlier, [install the latest version of PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps?view=azps-4.4.0) You can't install the required module on Windows PowerShell 5.x or earlier.
 
 - **Install the Az Module**. To use *what-if* in PowerShell, you must have version **4.2 or later of the Az module**.
 
@@ -35,16 +35,19 @@ Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
 
 There are potentially two different paths here:
 
-- **You DON'T have the module installed previously**. Install this module use the following command in an elevated privileged (running PowerShell as administrator) PowerShell session:
+> [!NOTE]
+> In order to avoid using PowerShell in an *elevated mode* you can use the argument `-Scope CurrentUser` to install or update modules on your user.
+
+- **You DON'T have the module installed previously**. Install this module use the following command :
 
    ```powershell
-   Install-Module -Name Az -Force
+   Install-Module -Name Az -Force -Scope CurrentUser
    ```
 
-- **You need to update a pre existing module**. If you have an older version of the **Az Module**, and need to update it, use the following command, again in an elevated privileged (running PowerShell as administrator) PowerShell session:
+- **You need to update a pre existing module**. If you have an older version of the **Az Module**, and need to update it, use the following command:
 
    ```powershell
-   Update-Module -Name Az
+   Update-Module -Name Az -Scope CurrentUser
    ```
 
 ## Deploy the first ARM Template
@@ -82,8 +85,8 @@ You can sign into your Azure account from the terminal. If you are on Windows, t
 1. **Change your active subscription to the Concierge Subscription**. Be sure to substitute *{Your subscription ID}* with the ID of the Concierge Subscription you just got in the last command.
 
     ```powershell
-    $context = Get-AzSubscription -SubscriptionId {Your subscription ID}
-    Set-AzContext $context
+    $subscription = Get-AzSubscription -SubscriptionId {Your subscription ID}
+    Set-AzContext $subscription
     ```
 
 ### Set default resource group
@@ -103,7 +106,7 @@ You can sign into your Azure account from the terminal. If you are on Windows, t
       ```
 
       > [!NOTE]
-      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0&WT.mc_id=MSlearn-ARM-pierrer)** Powershell command.
+      > Normally, when you use a PowerShell or an Azure CLI command to deploy a template you need to specify the target **resource group** name.  In the exercise in this module we are bypassing this requirement by setting the context of our deployment by specifying our sandbox resource group name in the step below by using the **[Set-AzDefault](https://docs.microsoft.com/powershell/module/az.accounts/set-azdefault?view=azps-4.5.0)** Powershell command.
 
 ### Deploy the first template to Azure
 

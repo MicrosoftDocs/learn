@@ -11,7 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Validate your deployments using What-if and the Test toolkit
-summary: TBD
+summary: This module teaches two major things, how to preview your changes with the **What-If** operation and the value of doing so. Secondly it teaches you how to create valid templates and gives you good recommendations that you can follow using the **arm-ttk** tool.
 abstract: |
   After completing this module, you'll be able to:
   - Preview what changes will happen before you deploy by using the what-if operation.

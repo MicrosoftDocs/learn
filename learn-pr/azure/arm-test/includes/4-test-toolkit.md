@@ -1,4 +1,4 @@
-You've learned so far how the *what-if* command can be used to preview changes to your existing deployment. There's another aspect that is important to test for as well, namely does my template follow sound recommendations? So what are these *recommendations* and why might they be beneficial for your template to adhere to?
+You've learned so far how the *what-if* command can be used to preview changes to your existing deployment. *What-if* can help you build confidence as you create and edit your templates, but there are other ways we can make it easier to create valid templates and provide recommendations to improve their quality. So what are these recommendations and why might they be beneficial for your template to adhere to?
 
 > [!NOTE]
 > Lets get one thing clear, these are recommendations, not requirements. You are highly encouraged to follow these recommendations however.

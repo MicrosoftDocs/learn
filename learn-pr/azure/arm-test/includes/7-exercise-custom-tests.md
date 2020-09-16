@@ -2,7 +2,7 @@ As a member of a product team it's important to be able to implement some team o
 
 ## Author and run a Custom test
 
-You will author a custom test and use the **arm-ttk** tool to run it. Furthermore you will need to correct the deployment template to ensure the test passes. The custom test will be looking to verify that any deployed resources are being deployed in **westeurope**. This rule is a domain-specific requirement on the product the team you are working on.
+You will author a custom test and use the **arm-ttk** tool to run it. Furthermore you will need to correct the deployment template to ensure the test passes. The custom test will be looking to verify that all parameters follow a naming rule. This rule is a domain-specific requirement on the product the team you are working on.
 
 1. Open a terminal window
 1. Clone the `ADDRESS` repo by running this command:
@@ -25,7 +25,7 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
 1. Locate your installation directory for the **arm-ttk** tool.
 1. Place yourself in the sub directory **testcases/deploymentTemplate**
-1. Create a file **Custom-Location.test.ps1** and give the file the following content:
+1. Create a file **Custom-ParameterNaming.test.ps1** and give the file the following content:
 
    ```powershell
    param(
@@ -64,7 +64,7 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
        [+] adminUsername Should Not Be A Literal (16 ms)
        [+] apiVersions Should Be Recent (4 ms)
        [+] artifacts parameter (1 ms)
-       [-] Custom Location (4 ms)  To be implemented
+       [-] Custom ParameterNaming (2 ms)  To be implemented
        [+] DependsOn Best Practices (2 ms)
        [+] Deployment Resources Must Not Be Debug (2 ms)
        [+] DeploymentTemplate Must Not Contain Hardcoded Uri (4 ms)
@@ -91,18 +91,10 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
    In the above output your test is indicated, fourth from the top with this line:
 
       ```output
-      [-] Custom Location (4 ms)  To be implemented
+      [-] Custom ParameterNaming (4 ms)  To be implemented
       ```
 
    Great, the test is found.
-
-   There's also another test output with the following appearance:
-
-      ```output
-      [-] Resources Should Have Location (2 ms)                                                   Resource  Location must be an expression or 'global'
-      ```
-
-   This test indicates that a resources location should either be the value **global** or an expression. The test you are about to write will, when implemented, override the behavior of this test. Domain-specific rules may do that. In such a case, it's recommended that you delete that test from the **testcases/deploymentTemplate** sub directory.
 
 1. Inspect the **azuredeploy.json** file located in your cloned directory. The file should have the following content:
 
@@ -111,35 +103,62 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
       "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
       "contentVersion": "1.0.0.0",
       "parameters": {},
-      "resources": [{
-        "location": "westus"
-      }]
+      "resources": []
    }
    ```
 
-   The above file content indicates that it has one resource in the **resources** array. That one resource has a location value of **westus**. The test you are about to implement should detect this value as incorrect, as it should be **westeurope**.
+   The above file content indicates that it has no parameters as the **parameters** property is set to `{}`. The test you are about to implement should detect if any parameters are defined and if they adhere to a naming standard.
 
-1. Implement the test by navigating to the sub directory **testcases/deploymentTemplate** and opening up the file **Custom-Location.test.ps1**. Replace the file content with the following code:
+1. Implement the test by navigating to the sub directory **testcases/deploymentTemplate** and opening up the file **Custom-ParameterNaming.test.ps1**. Replace the file content with the following code:
 
    ```powershell
+   <#
+   .Synopsis
+    Ensures that all parameters adheres to a naming standard
+   .Description
+    All parameters should start with the company specific prefix 'tailwind'
+   #>
    param(
-   [Parameter(Mandatory=$false,Position=0)] #not mandatory for case of an empty resource array
-   [PSObject]
-   $MainTemplateResources
+      # The Template Object
+      [Parameter(Mandatory = $true, Position = 0)]
+      [PSObject]
+      $TemplateObject,
+
+      # The Template JSON Text
+      [Parameter(Mandatory = $true, Position = 0)]
+      [PSObject]
+      $TemplateText
    )
-    foreach ($mtr in $MainTemplateResources) {
-        foreach ($resource in @(@($mtr) + $mtr.ParentResources)) {
-            if ($resource.Location) {
-                $location = "$($resource.location)".Trim()
-                if ($location -notmatch '^westeurope$') {
-                    Write-Error "Resource $($resource.Name) Location must be be located in westeurope'" -TargetObject $resource
-                }
-            }
-        }
+
+   foreach ($parameter in $TemplateObject.parameters.psobject.properties) {
+     # If the parameter name starts with tailwind, then the parameter is correctly named
+     if ($parameter.Name -notmatch 'tailwind*') {
+        Write-Error "Parameter '$($parameter.Name)' must start with prefix 'tailwind'" -TargetObject $parameter
+     }
    }
    ```
 
-   The above code iterates through all the resources and inspects the location property and checks whether it matches **westeurope**. If there's no match, then it invokes the **Write-Error** command-let with a suitable message.
+   The above code iterates through all the parameters and inspects its name and checks whether it the name starts with **tailwind**. If parameter does not match naming rule, then the code invokes the **Write-Error** command-let with a suitable message.
+
+1. Open up **azuredeploy.json** and change it to the following content:
+
+   ```json
+   {
+       "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+       "contentVersion": "1.0.0.0",
+       "parameters": {
+       "location": {
+         "type": "string",
+         "metadata": {
+           "description": "a deployment location"
+         }
+       }
+     },
+     "resources": []
+   }
+   ```
+
+   The above template content defines a parameter **location** that doesn't fulfil the naming rule, as it lacks the **tailwind** prefix in its naming.
 
 1. Run the **arm-ttk** tool.
 
@@ -159,16 +178,18 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
    1. Run the **arm-ttk** tool by typing the following command in the terminal:
 
       ```powershell-interactive
-      Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-Location
+      Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-ParameterNaming
       ```
 
-      The above command is run with the parameter **-Test**, which takes as test name as input. You've provided **Custom-Location** as argument, which means only your newly developed test will be run. Using this parameter is a good practice when developing a test as it limits what is being run and outputted.
+      The above command is run with the parameter **-Test**, which takes a test name as input. You've provided **Custom-ParameterNaming** as argument, which means only your newly developed test will be run. Using this parameter is a good practice when developing a test as it limits what is being run and output to the terminal.
 
       This command results in the following output:
 
       ```output
-      Validating custom\azuredeploy.json                                                          deploymentTemplate
-      [-] Custom Location (1 ms) Resource  Location must be be located in westeurope'
+      Validating custom\azuredeploy.json
+      deploymentTemplate
+
+      [-] Custom ParameterNaming (2ms) Parameter 'location' must start with prefix 'tailwind'
       ```
 
       The result above indicates that your test works. Let's ensure that is the case by altering the deployment file.
@@ -177,14 +198,21 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    ```json
    {
-      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-      "contentVersion": "1.0.0.0",
-      "parameters": {},
-      "resources": [{
-        "location": "westeurope"
-      }]
+     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+     "contentVersion": "1.0.0.0",
+     "parameters": {
+       "tailwindLocation": {
+         "type": "string",
+         "metadata": {
+           "description": "a deployment location"
+         }
+       }
+     },
+     "resources": []
    }
    ```
+
+   Above the parameter **location** has been renamed to **tailwindLocation**. In theory, this parameter should now pass the test. Let's verify.
 
 1. Run the **arm-ttk** tool:
 
@@ -204,14 +232,14 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
    1. Run the **arm-ttk** tool by typing the following command in the terminal:
 
       ```powershell-interactive
-      Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-Location
+      Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-ParameterNaming
       ```
 
       You should now see the following output:
 
       ```output
       Validating custom\azuredeploy.json                                                        deploymentTemplate
-      [+] Custom Location (1 ms)
+      [+] Custom ParameterNaming (2 ms)
       ```
 
-Success, you've managed to implement and a run custom test. Furthermore you've managed to correct a deployment template to match the tests condition.
+Success, you've managed to implement and run a custom test. Furthermore you've managed to correct a deployment template to match the tests condition.
