@@ -168,7 +168,8 @@ Complete the following steps to verify your change is deployed:
 1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 1. Back in the command shell, select the **:::no-loc text="Centralized logging":::** URL.
 1. In the Seq logs search text box, enter *Applying coupon DISC-5* and press <kbd>Enter</kbd>.
-1. Observe an entry in the logs similar to the following content:
+
+    The logs are filtered to display the following entry:
 
     :::image type="content" source="../media/5-deploy-github-action/seq-logs.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-logs.png":::
 
