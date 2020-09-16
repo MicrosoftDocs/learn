@@ -9,21 +9,23 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Deploy Azure Sentinel and connect data sources
-summary: TODO
+summary: In this course you'll learn how to deploy Azure Sentinel, connect it to data sources, and harness the power of Azure and AI to provide analysis of security alerts.
 abstract: | 
-  In this module, you will:
-  - TODO
-  - TODO
-  - TODO
-prerequisites: | 
-  - TODO
-iconUrl: http://via.placeholder.com/120x120
+  After completing this module, you'll be able to:
+  - Deploy Azure Sentinel.
+  - Connect to the services you want to monitor.
+  - Manage the log data collected by connectors.
+prerequisites: |
+  - Experience performing fundamental Azure administration
+  - Experience working with Azure Monitor and its Log Analytics workspace
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - solution-architect
 products:
 - azure
+- azure-sentinel
 units:
 - learn.azure.azure-sentinel-deploy-connect.1-introduction
 - learn.azure.azure-sentinel-deploy-connect.2-deployment-options
@@ -31,8 +33,7 @@ units:
 - learn.azure.azure-sentinel-deploy-connect.4-connect-data-sources
 - learn.azure.azure-sentinel-deploy-connect.5-data-connection-methods
 - learn.azure.azure-sentinel-deploy-connect.6-manage-logs
-- learn.azure.azure-sentinel-deploy-connect.7-deploy-demo
-- learn.azure.azure-sentinel-deploy-connect.8-knowledge-check
-- learn.azure.azure-sentinel-deploy-connect.9-summary
+- learn.azure.azure-sentinel-deploy-connect.7-knowledge-check
+- learn.azure.azure-sentinel-deploy-connect.8-summary
 badge:
   uid: learn.azure.azure-sentinel-deploy-connect.badge
