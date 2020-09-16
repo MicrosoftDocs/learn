@@ -33,7 +33,7 @@ In this task, we will create a Windows Server 2019 Datacenter - Gen1 virtual mac
     | Inbound port rules - Allow select ports | **RDP (3389)** and **HTTP (80)**|
     | | |
 
-4. Switch to the Networking tab, and look for the **Select inboud ports**:
+4. Switch to the Networking tab, and look for the **Select inbound ports**:
 
     | Settings | Values |
     | -- | -- |
