@@ -20,8 +20,8 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Python installed
-- Visual Studio Code with Python extension installed
+- [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
+- [Visual Studio Code with Python Extension](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
 
 > [!Note]
 > No coding experience is required to complete these lessons!
