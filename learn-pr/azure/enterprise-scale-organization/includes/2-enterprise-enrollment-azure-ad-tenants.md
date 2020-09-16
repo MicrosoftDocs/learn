@@ -1,12 +1,10 @@
-## Enterprise enrollment
-
 An Enterprise Agreement (EA) enrollment represents the commercial relationship between Microsoft and how your organization uses Azure. It provides the basis for billing across all your subscriptions and affects administration of your digital estate. Your EA enrollment is managed via an Azure EA portal. An enrollment often represents an organization's hierarchy, which includes departments, accounts, and subscriptions. This hierarchy represents cost-enrollment groups within an organization.
 
 This module focuses on organizations with Enterprise Agreements who will be deploying into an enterprise-scale architecture. Pay-as-you-go subscriptions, Visual Studio subscriptions, and Cloud Solution Provider (CSP) subscriptions can be used and guidance will be provided in later revisions.
 
-:::image type="content" source="../media/2-ea.png" alt-text="An Azure EA enrollment hierarchy.":::
+:::image type="content" source="../media/2-eterprise-agreement.png" alt-text="An Azure EA enrollment hierarchy.":::
 
-### Azure EA portal
+## Azure EA portal
 
 The Azure EA portal you can help you manage your hierarchy and reconcile the cost for your Enterprise Agreement services. Within the portal, you can create departments, subscriptions and accounts. You can also create and manage API keys for your enrollment.
 
@@ -16,35 +14,35 @@ Accounts are organizational units in the Azure EA portal. They can be used to ma
 
 Subscriptions are the smallest unit in the Azure EA portal. Subscription act as containers for Azure services managed by the service administrator. Your organization deploys Azure services into its subscriptions.
 
-### Enterprise user roles
+## Enterprise user roles
 
 EA enrollment roles link users with their functional role. The roles work in both the enterprise portal and the Azure portal. These roles are:
 
-#### Enterprise administrator
+### Enterprise administrator
 
 This role has the highest level of access and can manage accounts and account owners, enterprise administrators, and department administrators. The account can also view usage across all accounts as well as unbilled charges. You can also manage notification contacts.
 
-#### Department administrator
+### Department administrator
 
 This role allows you to create and manage departments, create new account owners, view usage details for departments that are managed by the department administrator, and view cost. Deployment administrators can be granted read-only access. You may have multiple department administrators for each enterprise enrollment.
 
-#### Account owner
+### Account owner
 
 Account owners can create and manage subscriptions, manage service administrators, and view usage for subscriptions.  
 
-#### Service administrator
+### Service administrator
 
 The service administrator role has permissions to manage services in the Azure portal and assign users to the co-administrator role.
 
-#### Notification contact
+### Notification contact
 
 This account receives notifications about usage related to enrollment.
 
-### Enterprise enrollment design recommendations and considerations
+## Enterprise enrollment design recommendations and considerations
 
 Review these design recommendations and considerations for designing your enterprise enrollment:
 
-**Recommendations:**
+**Recommendations**:
 
 - Only use the authentication type _work or school account_ for all account types. Avoid using the _Microsoft account_ account type.
 - Set up the notification contact email address to ensure that notifications are sent to an appropriate group mailbox.
@@ -58,7 +56,7 @@ Review these design recommendations and considerations for designing your enterp
 - Don't move or rename an EA account in Azure AD.
 - Periodically audit the EA portal to review who has access, and avoid using a Microsoft account when possible.
 
-**Considerations:**
+**Considerations**:
 
 - The enrollment provides a hierarchical organizational structure to govern the management of subscriptions.
 - Multiple environments can be separated at an EA-account level to support holistic isolation.
@@ -76,7 +74,7 @@ Azure AD is also used by software as a service applications such as Microsoft 36
 
 Ask basic security questions during the Azure AD design phase, such as how your organization manages credentials and how it controls human, application, and programmatic access.
 
-**Recommendations:**
+**Recommendations**:
 
 - Use Azure AD seamless single sign-on based on the selected planning topology.
 - If your organization doesn't have an identity infrastructure, start by implementing an Azure-AD-only identity deployment. Such deployment with Azure AD Domain Services and Microsoft Enterprise Mobility + Security provides end-to-end protection for SaaS applications, enterprise applications, and devices.
@@ -86,6 +84,6 @@ Ask basic security questions during the Azure AD design phase, such as how your 
 - If dev/test and production are going to be isolated environments from an identity perspective, separate them at a tenant level via multiple tenants.
 - Avoid creating a new Azure AD tenant unless there's a strong identity and access management justification and processes are already in place.
 
-**Considerations:**
+**Considerations**:
 
 - Multiple Azure AD tenants can function in the same enrollment.

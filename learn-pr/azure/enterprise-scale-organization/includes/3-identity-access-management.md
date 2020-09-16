@@ -10,7 +10,7 @@ Enterprise organizations typically follow a least-privileged approach to operati
 
 Identity and access management is a multistep process that involves careful planning for identity integration and other security considerations, such as blocking legacy authentication and planning for modern passwords. Staging planning also involves selection of business-to-business or business-to-consumer identity and access management. While these requirements vary, there are common design considerations and recommendations to consider for an enterprise landing zone.
 
-![Figure 1: Identity and access management](../media/3-iam.png)
+:::image type="content" source="../media/3-identity-access-management.png" alt-text="Figure 1: Identity and access management":::
 
 When planning for role-based access, use custom RBAC role definitions within the Azure AD tenant and consider the following key roles:
 
@@ -24,7 +24,7 @@ When planning for role-based access, use custom RBAC role definitions within the
 
 ### Identity and access management design recommendations and considerations
 
-**Recommendations:**
+**Recommendations**:
 
 - Use Azure AD RBAC to manage data-plane access to resources, where possible. Examples are Azure Key Vault, a storage account, or a SQL Database.
 - Deploy Azure AD conditional-access policies for any user with rights to Azure environments. Doing so provides another mechanism to help protect a controlled Azure environment from unauthorized access.
@@ -40,7 +40,7 @@ When planning for role-based access, use custom RBAC role definitions within the
 - Use privileged identities for automation runbooks that require elevated access permissions. Automated workflows that violate critical security boundaries should be governed by the same tools and policies that users of equivalent privilege are.
 - Don't add users directly to Azure resource scopes. This lack of centralized management greatly increases the management required to prevent unauthorized access to restricted data.
 
-**Considerations:**
+**Considerations**:
 
 - There are limits around the number of custom roles and role assignments that must be considered when you lay down a framework around IAM and governance. For more information, see Azure RBAC service limits.
 - There's a limit of 2,000 custom RBAC role assignments per subscription.
@@ -55,7 +55,7 @@ A critical design decision that an enterprise organization must make when adopti
 
 ### Authentication inside a landing zone design recommendations and considerations
 
-**Recommendations:**
+**Recommendations**:
 
 - Use centralized and delegated responsibilities to manage resources deployed inside the landing zone based on role and security requirements.
 - Privileged operations such as creating service principal objects, registering applications in Azure AD, and procuring and handling certificates or wildcard certificates require special permissions. Consider which users will be handling such requests and how to secure and monitor their accounts with the degree of diligence required.
@@ -67,7 +67,7 @@ A critical design decision that an enterprise organization must make when adopti
 - Deploy Azure AD DS within the primary region because this service can only be projected into one subscription.
 - Use managed identities instead of service principals for authentication to Azure services. This approach reduces exposure to credential theft.
 
-**Considerations:**
+**Considerations**:
 
 - Consider centralized and delegated responsibilities to manage resources deployed inside the landing zone.
 - Applications that rely on domain services and use older protocols can use Azure AD DS.
