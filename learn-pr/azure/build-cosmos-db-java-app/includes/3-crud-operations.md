@@ -13,7 +13,7 @@ The main operations for Azure Cosmos DB documents are part of the [CosmosAsyncCo
 
 Upsert performs a create or replace operation depending on whether the document already exists.
 
-To perform any of these operations, you will need helper classes (Java POJO classes) that represent the objects stored in the database. Because we're working with a database of users, you'll want to have a **User** class representing user entities. This class will store primary data such as their first name, last name, and user id (which is required, as that's the partition key to enable horizontal scaling). Each user has some shipping preferences and coupons associated, so you will want **ShippingPreference** and **CouponsUsed** datatypes to represent those entities as well. Finally, each user may have some order history that is potentially unbounded, so want to have separate **OrderHistory** entities with a corresponding Java POJO class.
+To perform any of these operations, you will need helper classes (Java POJO classes) that represent the objects stored in the database. Because we're working with a database of users, you'll want to have a **User** class representing user entities. This class will store primary data such as their first name, last name, and user ID (which is required, as that's the partition key to enable horizontal scaling). Each user has some shipping preferences and coupons associated, so you will want **ShippingPreference** and **CouponsUsed** datatypes to represent those entities as well. Finally, each user may have some order history that is potentially unbounded, so want to have separate **OrderHistory** entities with a corresponding Java POJO class.
 
 Navigate to **src/main/java/com/azure/azure-cosmos-java-sql-app-mslearn** and take a look in the **datatypes** folder - you will see several POJOs - **User**, **ShippingPreference**, **OrderHistory**, **CouponsUsed**. So we have provided all of the entity POJOs and their helper classes!
 
@@ -198,9 +198,9 @@ Next we will create some entities and perform some basic CRUD operations on the 
 
     ```java
     /**
-     * Take in a Java POJO argument, extract id and partition key, and read the corresponding document from the container.
-     * In this case the id is the partition key.
-     * @param user User POJO to pull id and partition key from.
+     * Take in a Java POJO argument, extract ID and partition key, and read the corresponding document from the container.
+     * In this case the ID is the partition key.
+     * @param user User POJO to pull ID and partition key from.
      */
     private static CosmosItemResponse<User> readUserDocument(final User user) {
         CosmosItemResponse<User> userReadResponse = null;
@@ -248,8 +248,8 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
     ```java
     /**
-     * Take in a Java POJO argument, extract id and partition key,
-     * and replace the existing document with the same id and partition key to match.
+     * Take in a Java POJO argument, extract ID and partition key,
+     * and replace the existing document with the same ID and partition key to match.
      * @param user User POJO representing the document update.
      */
     private static void replaceUserDocument(final User user) {
@@ -292,7 +292,7 @@ Azure Cosmos DB supports replacing JSON documents. In this case, we'll update a 
 
     ```java
     /**
-     * Take in a Java POJO argument, extract id and partition key,
+     * Take in a Java POJO argument, extract ID and partition key,
      * and delete the corresponding document.
      * @param user User POJO representing the document update.
      */

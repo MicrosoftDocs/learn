@@ -1,17 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.cosmos-db-java-app.5-summary
+uid: learn.cosmos-db-java-app.5-knowledge-check
 metadata:
-  title: Summary
-  description: Summary
-  ms.date: 08/26/2020
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 09/15/2020
   author: anfeldma-ms
   ms.author: anfeldma
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Summary
+title: Knowledge check
 durationInMinutes: 3
-content: |
-  [!include[](includes/5-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
@@ -23,7 +21,7 @@ quiz:
       explanation: "Specify the access credentials for your Azure Cosmos DB account."
     - content: "From the Azure portal"
       isCorrect: true
-      explanation: "It is trivial to find the URI and key in the **Keys** blade of the Azure Portal."
+      explanation: "It is trivial to find the URI and key in the **Keys** blade of the Azure portal."
     - content: "Using the Azure CLI"
       isCorrect: false
       explanation: "While this approach is a good choice, especially since Visual Studio Code has a built-in terminal, it does demand knowledge of the required commands. There is a more convenient alternative."

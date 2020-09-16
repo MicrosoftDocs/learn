@@ -2,10 +2,10 @@ In this unit, you will create a basic console app using an IDE of your choice to
 
 ## Create Azure Cosmos DB resources
 
-For completing this lab, Microsoft Learn provides you with a Concierge subscription to Azure in which you can create accounts and resources. You will set up an Azure Cosmos DB account in this subscription and then create a database and container.
+For completing this lab, Microsoft Learn provides you with a free Azure sandbox in which you can create accounts and resources. You will set up an Azure Cosmos DB account in this subscription and then create a database and container.
 
-1. Click [here](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to log into the Concierge subscription on Azure Portal, using the same account you activated the sandbox with. 
-1. Using the Azure Portal, create an Azure Cosmos DB account with the name of your choice. When the opportunity arrives to choose a Resource Group for your account, find the concierge Resource Group <rgn>[Sandbox resource group]</rgn> and select that.
+1. Log in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Using the Azure portal, create an Azure Cosmos DB account with the name of your choice. When the opportunity arrives to choose a resource group for your account, find the resource group <rgn>[Sandbox resource group]</rgn> and select that.
 1. In your Azure Cosmos DB account, create a database **Users**.
 1. In the database **Users**, create a container **WebCustomers**. Provision **400 RU/s** for **WebCustomers**.
 
@@ -98,7 +98,7 @@ For completing this lab, Microsoft Learn provides you with a Concierge subscript
     private static String primaryKey = "<your-cosmosdb-master-key>";
     ```
 
-1. Return to the [Azure Portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the **Keys** blade, and copy-paste your Azure Cosmos DB endpoint URI and primary key into the variable definitions above. For example, if your uri is `https://cosmosacct.documents.azure.com:443/`, your new variable assignment will look like this: `private static String endpointUri = "https://cosmosacct.documents.azure.com:443/";`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, your new variable assignment will look like this: `private static String primaryKey = "elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==";`.
+1. Return to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), navigate to the **Keys** blade, and copy-paste your Azure Cosmos DB endpoint URI and primary key into the variable definitions above. For example, if your uri is `https://cosmosacct.documents.azure.com:443/`, your new variable assignment will look like this: `private static String endpointUri = "https://cosmosacct.documents.azure.com:443/";`. If your primary key is `elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==`, your new variable assignment will look like this: `private static String primaryKey = "elzirrKCnXlacvh1CRAnQdYVbVLspmYHQyYrhx0PltHi8wn5lHVHFnd1Xm3ad5cn4TUcH4U0MSeHsVykkFPHpQ==";`.
 
 ## Create the CosmosAsyncClient
 

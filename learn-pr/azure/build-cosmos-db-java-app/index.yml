@@ -30,6 +30,7 @@ units:
 - learn.cosmos-db-java-app.2-setup
 - learn.cosmos-db-java-app.3-crud-operations
 - learn.cosmos-db-java-app.4-query
-- learn.cosmos-db-java-app.5-summary
+- learn.cosmos-db-java-app.5-knowledge-check
+- learn.cosmos-db-java-app.6-summary
 badge:
   uid: learn.cosmos-db-java-app.badge
