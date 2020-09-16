@@ -32,6 +32,6 @@ Azure Sentinel is tightly integrated with other cloud services, enabling you to 
 
 Azure Sentinel is designed to help you enable end to end security operations including collection, detection, investigation, and response.
 
-:::image type="content" source="../media/02-end-to-end.png" alt-text="Diagram showing the end to end functionality of Azure Sentinel":::
+:::image type="content" source="../media/02-end-to-end.svg" alt-text="Diagram showing the end to end functionality of Azure Sentinel":::
 
 Let's take a look at the key components that make up Azure Sentinel.
