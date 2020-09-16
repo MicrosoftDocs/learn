@@ -40,15 +40,17 @@ quiz:
       isCorrect: true
       explanation: 'Kusto Query Language (KQL) is a language used for querying data in Log Analytics, which is where Azure Sentinel holds its data.'
 
-  - content: 'With Azure Sentinel, you can connect data from resources that reside in other cloud providers and on premises. True or False?'
+  - content: 'Which Azure service stores the log data ingested into Azure Sentinel?'
     choices:
-    - content: 'True'
-      isCorrect: true
-      explanation: 'You can connect data from Azure, on-premises or other cloud providers in to Azure Sentinel using data connectors.'
-    - content: 'False'
+    - content: 'Azure Data Factory'
       isCorrect: false
-      explanation: 'You can connect data from Azure, on-premises or other cloud providers in to Azure Sentinel using data connectors.'
-
+      explanation: 'Azure Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+    - content: 'Azure Log Analytics'
+      isCorrect: true
+      explanation: 'Azure Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
+    - content: 'Azure Monitor'
+      isCorrect: false
+      explanation: 'Azure Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
   - content: 'Within Azure Sentinel, which Azure product is used to run automated playbooks in response to alerts?'
     choices:
     - content: 'Azure Log Analytics'
