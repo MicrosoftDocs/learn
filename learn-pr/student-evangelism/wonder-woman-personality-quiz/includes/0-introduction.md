@@ -47,7 +47,7 @@ In this module, you'll discover how to:
 
 ## Prerequisites
 
-- [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
+- [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/3-exercise-install-python3?azure-portal=true)
 - [Visual Studio Code with Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
 
 > [!Note]
