@@ -109,4 +109,4 @@ With all five secrets configured, you'll see the following page:
 
 :::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Page displaying three GitHub secrets" border="true" lightbox="../media/3-permissions-secrets/github-secrets.png":::
 
-In this unit, you verified the app was deployed correctly. You then created an Azure service principal and stored related sensitive information as GitHub secrets.
+In this unit, you verified the app was deployed correctly. You then created an Azure Active Directory service principal and stored related sensitive information as GitHub secrets.

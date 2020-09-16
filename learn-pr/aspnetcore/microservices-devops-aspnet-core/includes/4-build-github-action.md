@@ -58,13 +58,13 @@ Create a GitHub Action for the build with the following steps:
     The preceding YAML defines a GitHub Action that:
 
     - Is triggered when a commit is pushed to the coupon service's source code or unit tests in the `main` branch.
-    - Defines step-specific environment variables.
+    - Defines step-specific environment variables. For example, the `Run unit tests` step defines `DOTNET_CLI_TELEMETRY_OPTOUT` and `DOTNET_NOLOGO`. With regards to the .NET Core CLI, those environment variables opt out of usage data collection and suppress the first-run telemetry message, respectively.
     - Has one job&mdash;a set of steps that execute on the same workflow runner&mdash;named `build-and-push-docker-image`. The job:
         - Executes the xUnit tests for the coupon service.
         - Builds the Docker image and pushes it to the ACR instance.
-        - Runs in an `ubuntu-latest` runner and has three steps, two of which are standard actions available from the [GitHub Actions marketplace](https://github.com/marketplace?type=actions):
-            - `Get code from the repository` checks out the `main` branch.
-            - `Build and push Docker image` builds the image and pushes it to ACR.
+        - Runs in an `ubuntu-latest` runner and has three steps, two of which use actions available from the [GitHub Actions marketplace](https://github.com/marketplace?type=actions):
+            - `Get code from the repository` uses the `actions/checkout@v1` action to check out the `main` branch.
+            - `Build and push Docker image` uses the `docker/build-push-action@v1.1.0` action to build the container image and push it to ACR.
 
     > [!IMPORTANT]
     > Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice is kept in a separate repository.
@@ -73,11 +73,11 @@ Create a GitHub Action for the build with the following steps:
 
     :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="GitHub Action file name text box" border="true" lightbox="../media/4-build-github-action/action-file-name.png":::
 
-1. Select the **:::no-loc text="Start commit":::** button, select the **:::no-loc text="Commit directly to the `main` branch":::** radio button, and select **:::no-loc text="Commit new file":::** to save the Action file.
+1. Select the **:::no-loc text="Start commit":::** button, select the **:::no-loc text="Commit directly to the `main` branch":::** radio button, and select **:::no-loc text="Commit new file":::** to save the workflow file.
 
 ## Trigger a build
 
-You've finished creating the "build" action for your CI/CD pipeline. The Marketing department wants to start a campaign to better track discount code usage. With this feature, Marketing can better understand which discount codes are most effective in boosting sales. To support this feature, make the following changes in the `main` branch:
+You've finished creating the build workflow for your CI/CD pipeline. The Marketing department wants to start a campaign to better track discount code usage. With this feature, Marketing can better understand which discount codes are most effective in boosting sales. To support this feature, make the following changes in the `main` branch:
 
 1. Select the **:::no-loc text="Code":::** tab in your fork of the repository.
 1. Edit the *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::* file by clicking the pencil (edit) icon. In the *:::no-loc text="CouponController.cs":::* file, replace the comment `// Add LogInformation call` with the following code:
@@ -131,4 +131,4 @@ When the build completes successfully, all steps are prefixed with a green check
 > - Understand how to execute .NET Core CLI commands in GitHub Actions.
 > - Understand how the failure of a step can prevent execution of the remaining build steps.
 
-In this unit, you created a GitHub action to build the coupon service. You added logging to the coupon service and saw how committing that code triggered the build workflow. Finally, you learned how to monitor the build's progress in real time.
+In this unit, you created a GitHub Action to build the coupon service. You added logging to the coupon service and saw how committing that code triggered the build workflow. Next, you fixed a failing unit test and triggered the build again. Finally, you learned how to monitor the build's progress in real time.

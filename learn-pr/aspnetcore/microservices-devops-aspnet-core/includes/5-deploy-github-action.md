@@ -7,7 +7,7 @@ In this unit, you'll complete the following tasks:
 
 ## Create the deployment action
 
-Create a GitHub Action for the deployment with the following steps:
+Create a GitHub Action for deployment of the coupon service with the following steps:
 
 1. Select the **:::no-loc text="Actions":::** tab again, select the **:::no-loc text="New workflow":::** button, and select the **:::no-loc text="set up a workflow yourself":::** link.
 1. Replace the YAML in the editor with the following YAML:
@@ -61,7 +61,7 @@ Create a GitHub Action for the deployment with the following steps:
         - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
 1. Replace the default Action file name of *:::no-loc text="main.yml":::* with *:::no-loc text="deploy.yml":::*.
-1. Commit the *deploy.yml* file directly to the `main` branch.
+1. Commit the *deploy.yml* workflow file directly to the `main` branch.
 
 These two GitHub Action definitions are stored in the repository's *:::no-loc text=".github/workflows":::* directory. To make changes, update the appropriate file locally and push to the `main` branch. Alternatively, create a pull request (PR). If you create a PR, the Action is triggered when merging to `main`.
 
@@ -135,7 +135,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
     In the preceding output, notice that a new `coupon` pod was created. While the old pod is still running and when the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
-1. Once the new pod's *Ready* status displays `1/1`, press <kbd>Ctrl+C</kbd> to exit `kubectl`.
+1. Once the new pod's *:::no-loc text="Ready":::* status displays `1/1`, press <kbd>Ctrl+C</kbd> to exit `kubectl`.
 1. Run the following command to check the coupon service deployment history:
 
     ```bash
@@ -167,6 +167,7 @@ Complete the following steps to verify your change is deployed:
 1. Enter the code *:::no-loc text="DISC-5":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a five USD discount, and select **:::no-loc text="APPLY":::**.
 1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 1. Back in the command shell, select the **:::no-loc text="Centralized logging":::** URL.
+1. In the Seq logs search text box, enter *Applying coupon DISC-5* and press <kbd>Enter</kbd>.
 1. Observe an entry in the logs similar to the following content:
 
     :::image type="content" source="../media/5-deploy-github-action/seq-logs.png" alt-text="A screen capture of the Seq log output" border="true" lightbox="../media/5-deploy-github-action/seq-logs.png":::
@@ -187,3 +188,5 @@ Rollback was a success! Happy Helming!
 
 > [!NOTE]
 > In a real-life scenario, you'll have multiple environments to which the build's artifacts can be deployed. For example, you might have development, testing, and staging environments. The deployment workflows can be triggered by events like merging PRs. Quality or approval gates, such as a stakeholder's PR approval, can be added to prevent unexpected deployments to production.
+
+In this unit, you created a GitHub Action to deploy the coupon service to AKS. To test the deployment workflow, you incremented the coupon service version in its Helm chart. Upon completion of the deployment workflow run, you searched the Seq logs to confirm the discount code redemption message was present. Finally, you reverted the coupon service in AKS to version 1.0.0.

@@ -1,16 +1,18 @@
 In this module, you:
 
-- Created an AKS cluster with an initial e-commerce app.
-- Configured permissions and secrets to support the GitHub Actions.
-- Implemented a GitHub Actions CI/CD pipeline to deploy the change to AKS.
-- Implemented a coupon service logging change.
-- Rolled back the deployment to the previous version.
+- Authenticated GitHub Actions to an ACR instance.
+- Stored sensitive information used by the GitHub Actions.
+- Implemented a GitHub Action to build the coupon service's container image in ACR.
+- Modified the coupon service code to trigger a build.
+- Implemented a GitHub Action to deploy the coupon service container to the AKS cluster.
+- Modified the coupon service's Helm chart to trigger a deployment to AKS.
+- Reverted the coupon service to a previous deployment.
 
 [!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 
 ## Remove Azure service principal
 
-Earlier you created an Azure service principal, which allows GitHub to authenticate to each Azure resource. To remove the service principal, run the following script:
+Earlier, you created an Azure Active Directory service principal, which allows GitHub to authenticate to each Azure resource. To remove the service principal, run the following script:
 
 ```bash
 ./deploy/k8s/cleanup-service-principal.sh
@@ -37,5 +39,3 @@ The preceding script:
 [!INCLUDE[reset the Azure Cloud Shell](../../includes/microservices/reset-az-cloud-shell.md)]
 
 [!INCLUDE[learn more with these resources](../../includes/microservices/learn-more.md)]
-
-
