@@ -9,3 +9,7 @@ A secure Azure estate that provides central teams with real-time visibility into
 ## Learn more
 
 To learn more about enterprise-scale architecture operational design principles, visit the following articles:
+
+- [Enterprise-scale management and monitoring](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/management-and-monitoring)
+- [Enterprise-scale business continuity and disaster recovery](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/business-continuity-and-disaster-recovery)
+- [Enterprise-scale security, governance, and compliance](https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/ready/enterprise-scale/security-governance-and-compliance)
