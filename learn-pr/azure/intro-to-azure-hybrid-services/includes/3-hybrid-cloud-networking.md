@@ -4,7 +4,7 @@ From the perspective of the Tailwind Traders scenario, Tailwind Traders must be 
 
 In this unit, you’ll learn about several different networking technologies that allow on-premises and cloud resources to be networked together into a single hybrid cloud.
 
-# What is an Azure VPN?
+## What is an Azure VPN?
 
 An [Azure VPN gateway](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpngateways) allows you to connect your on-premises network to Azure by using a secure VPN tunnel across the public internet. Azure VPN connections are like traditional VPN connections that might exist between a branch office and a head office location. Each virtual network can only have a single VPN gateway, but each VPN gateway supports multiple connections. Figure 1 indicates a connection between an on-premises network’s perimeter gateway device and a VPN gateway on an Azure virtual network. It depicts the connection between an Azure Stack device and a VPN gateway.
 
