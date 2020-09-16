@@ -1,8 +1,8 @@
-Azure Static Web Apps publishes websites to a production environment by building apps from a GitHub repository. In this exercise, you'll build a web application using your preferred front-end framework from a GitHub repository.
+Azure Static Web Apps publishes websites to a production environment by building apps from a GitHub repository. In this exercise, you'll build a web application using Blazor from a GitHub repository.
 
 ## Create a repository
 
-This tutorial makes it easy for you to create a new repository by using a GitHub template repository. A series of templates are available where each contains a starter app built with a different front-end framework.
+This tutorial makes it easy for you to create a new repository by using a GitHub template repository. A template is available which contains a starter app built with Blazor.
 
 1. Navigate to the [create from template page](https://github.com/MicrosoftDocs/mslearn-staticwebapp-dotnet/generate?azure-portal=true) for the template repository.
    - If you get a 404 Page Not Found error, sign in to GitHub and try again.

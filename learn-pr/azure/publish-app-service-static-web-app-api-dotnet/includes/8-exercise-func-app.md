@@ -136,7 +136,7 @@ Now it's time to watch your web app and Azure Functions project work together. S
 
 It's time to see your application running locally against the Azure Functions API.
 
-Browse to `https://localhost:44348/`.
+Browse to the web application (eg: `https://localhost:44348/`).
 
 You built your application and now it's running locally making HTTP GET requests to your API.
 

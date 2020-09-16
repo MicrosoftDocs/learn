@@ -46,7 +46,7 @@ Next, configure your new app and link it to your GitHub repository.
 
 ### Build
 
-Next, add configuration details specific to your preferred front-end framework.
+Next, confirm that the Blazor options are correct for your project.
 
 | Setting                 | Value       |
 | ----------------------- | ----------- |
