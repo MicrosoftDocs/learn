@@ -19,7 +19,7 @@ abstract: |
   <strong>No coding experience is required to complete this learn module.</strong>
 prerequisites: |
   - [Python installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
-  - [Visual Studio Code with the Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/?azure-portal=true)
+  - [Visual Studio Code with the Python extension installed](https://docs.microsoft.com/learn/modules/python-install-vscode/6-exercise-write-execute-first-script)
 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
