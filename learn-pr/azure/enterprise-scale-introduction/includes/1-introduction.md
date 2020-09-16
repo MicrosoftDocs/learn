@@ -10,10 +10,10 @@ There is almost no capital cost associated with IT in the cloud, because hardwar
 
 After completing this module, you will be able to:
 
-1. Explain the vision for enterprise-scale architecture in the Cloud Adoption Framework
-1. Describe the top customer challenges enterprise-scale Azure adoption addresses
-1. Define the Cloud Adoption Framework approach for enterprise-scale landing zones
-1. Explain the enterprise-scale architecture design principles
+- Explain the vision for enterprise-scale architecture in the Cloud Adoption Framework
+- Describe the top customer challenges enterprise-scale Azure adoption addresses
+- Define the Cloud Adoption Framework approach for enterprise-scale landing zones
+- Explain the enterprise-scale architecture design principles
 
 ## Prerequisites
 

@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.enterprise-scale-introduction.3-enterprise-scale-architecture-approach
 metadata:
-  title: Enterprise-scale Architecture approach
-  description: Enterprise-scale Architecture approach
-  ms.date: 09/30/2020
+  title: Enterprise-scale architecture approach
+  description: Enterprise-scale architecture approach
+  ms.date: 09/21/2020
   author: jeffmitchell
   ms.author: jemitche
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Enterprise-scale Architecture approach
+title: Enterprise-scale architecture approach
 durationInMinutes: 10
 content: |
   [!include[](includes/3-enterprise-scale-architecture-approach.md)]
