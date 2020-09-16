@@ -12,11 +12,13 @@ title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
 summary: Implement GitHub Actions to build a container image and deploy to Azure Kubernetes Service.
 abstract: |
   In this module, you will:
-  - Deploy an existing ASP.NET Core microservices app to AKS.
-  - Configure GitHub Action permissions and secrets.
-  - Create a GitHub Action to build a container image
-  - Create a GitHub Action to deploy to AKS.
-  - Modify a microservice and verify its deployment to AKS.
+  - Authenticate GitHub Actions to a container registry.
+  - Securely store sensitive information used by the GitHub Actions.
+  - Implement a GitHub Action to build the container image for a microservice.
+  - Modify and commit the microservice code to trigger a build.
+  - Implement a GitHub Action to deploy a container to a Kubernetes cluster.
+  - Modify and commit a Helm chart to trigger a deployment.
+  - Revert the microservice to a previous deployment.  
 prerequisites: |
   - Conceptual knowledge of DevOps practices at the beginner level
   - Conceptual knowledge of containers and AKS at the beginner level
@@ -26,6 +28,8 @@ levels:
   - intermediate
 roles:
   - developer
+  - devops-engineer
+  - solution-architect
 products:
   - dotnet
   - aspnet-core
