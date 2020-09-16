@@ -21,7 +21,7 @@ quiz:
     - content: 'A solution for checking your security posture in the cloud'
       isCorrect: false
       explanation: 'Being aware of  your security posture in the cloud is very important. Azure Security Center is a product that helps you to understand this, not Azure Sentinel.'
-    - content: 'An end to end solution for Security operations'
+    - content: 'An end to end solution for security operations'
       isCorrect:  true
       explanation: 'Yes, Azure Sentinel gives you an end to end solution for security operations, including visibility, analytics, hunting, incident and automation.'
     - content: 'A solution for securely storing keys and secrets in the cloud'
@@ -51,7 +51,7 @@ quiz:
     - content: 'Azure Monitor'
       isCorrect: false
       explanation: 'Azure Log Analytics is the underlying service that stores the log data for Azure Sentinel.'
-  - content: 'Within Azure Sentinel, which Azure product is used to run automated Playbooks in response to alerts?'
+  - content: 'Within Azure Sentinel, which Azure product is used to run automated playbooks in response to alerts?'
     choices:
     - content: 'Azure Log Analytics'
       isCorrect: false
