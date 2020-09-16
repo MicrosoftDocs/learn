@@ -37,7 +37,7 @@ quiz:
         - content: "True"
           isCorrect: false
           explanation: "You can use a Free Azure Account or a Microsoft Learn Sandbox to create resources."
-    - content: "True or False: In an Infrastructure-as-a-Service environment, the cloud tenent is responsible for routine hardware maintenance."
+    - content: "True or False: In an Infrastructure-as-a-Service environment, the cloud tenant is responsible for routine hardware maintenance."
       choices:
         - content: "True"
           isCorrect: false
