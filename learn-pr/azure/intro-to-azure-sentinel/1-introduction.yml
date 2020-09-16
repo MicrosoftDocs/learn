@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-sentinel.1-introduction
-title: Introduction to Azure Sentinel
+title: Introduction
 metadata:
-  title: Introduction to Azure Sentinel
-  description: Introduction to Azure Sentinel
+  title: Introduction
+  description: Introduction
   ms.date: 09/21/2020
   author: deanobalino
   ms.author: debryen
