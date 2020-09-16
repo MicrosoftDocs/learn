@@ -39,7 +39,7 @@ units:
   - learn.azure.publish-static-web-app-and-api-dotnet.5-fallback-routes
   - learn.azure.publish-static-web-app-and-api-dotnet.6-exercise-fallback-routes
   - learn.azure.publish-static-web-app-and-api-dotnet.7-build-api
-  - learn.azure.publish-static-web-app-and-api-dotnet.8-exercise-func-app
+  - learn.azure.publish-static-web-app-and-api-dotnet.8-exercise-function-app
   - learn.azure.publish-static-web-app-and-api-dotnet.9-action
   - learn.azure.publish-static-web-app-and-api-dotnet.10-exercise-action
   - learn.azure.publish-static-web-app-and-api-dotnet.11-knowledge-check

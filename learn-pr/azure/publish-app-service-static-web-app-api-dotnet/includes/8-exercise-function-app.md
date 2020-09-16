@@ -47,7 +47,7 @@ You just extended your Azure Function app with a function to get your products!
 
 Notice the `Run` method of the newly created C# class has a `HttpTrigger` attribute on the first argument, the `HttpRequest`. This attribute is used to define the access level of the Function, as well as the HTTP method(s) to listen for and the route endpoint.
 
-The route endpoint will be `null` by default, meaning that the endpoint will use the value of the `FunctionName` attribute, which is `ProductsGet`. Settings the `Route` property to `"products"` will override the default behaviour.
+The route endpoint will be `null` by default, meaning that the endpoint will use the value of the `FunctionName` attribute, which is `ProductsGet`. Settings the `Route` property to `"products"` will override the default behavior.
 
 Now your function is triggered on an HTTP `GET` request to **products**. Your `Run` method should look like the following code:
 

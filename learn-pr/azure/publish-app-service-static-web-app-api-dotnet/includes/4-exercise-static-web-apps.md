@@ -40,13 +40,7 @@ Next, configure your new app and link it to your GitHub repository.
    | _Repository_   | **my-static-blazor-app**                                    |
    | _Branch_       | **main**                                                 |
 
-1. Click the **Next: Build >** button to edit the build configuration
-
-:::image type="content" source="../media/next-build-button.png" alt-text="Next: Build button":::
-
-### Build
-
-Next, confirm that the Blazor options are correct for your project.
+1. From **Build Presets**, select Blazor and confirm the options are correct for your project.
 
 | Setting                 | Value       |
 | ----------------------- | ----------- |
