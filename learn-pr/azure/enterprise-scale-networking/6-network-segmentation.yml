@@ -1,47 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.enterprise-scale-networking.6-network-segmentation
 metadata:
-  title: Network segmentation
-  description: Network segmentation
-  ms.date: 09/30/2020
-  author: telmosampaio
-  ms.author: telmos
+  title: Network segmentation planning for enterprise-scale
+  description: Network segmentation planning for enterprise-scale
+  ms.date: 09/21/2020
+  author: jknightly
+  ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Network segmentation
+title: Network segmentation planning for enterprise-scale
 durationInMinutes: 10
 content: |
   [!include[](includes/6-network-segmentation.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: 'Question 1'
-    choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
-
-  - content: 'Question 2'
-    choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'

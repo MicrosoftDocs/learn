@@ -1,47 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.enterprise-scale-networking.2-ip-addressing
 metadata:
-  title: IP addressing
-  description: IP addressing
-  ms.date: 09/30/2020
-  author: telmosampaio
-  ms.author: telmos
+  title: Enterprise-scale IP address planning
+  description: Enterprise-scale IP address planning
+  ms.date: 09/21/2020
+  author: jknightly
+  ms.author: joknight
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: IP addressing
-durationInMinutes: 10
+title: Enterprise-scale IP address planning
+durationInMinutes: 5
 content: |
   [!include[](includes/2-ip-addressing.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-
-  - content: 'Question 1'
-    choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
-
-  - content: 'Question 2'
-    choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
-      isCorrect: true
-      explanation: 'Explanation 4'
