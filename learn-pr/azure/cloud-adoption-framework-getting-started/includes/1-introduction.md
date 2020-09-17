@@ -16,4 +16,4 @@ In this module, you will:
 
 Before applying the CAF learn modules, you should have a general understanding of your current cloud adoption plan & an understanding of the roadblocks that may be presenting your organization from being successful.
 
-As an alternative, a narrative and cloud adoption plan will be provided for a reference customer called "Northwind Traders".
+As an alternative, a narrative and cloud adoption plan will be provided for a reference customer called "Tailwind Traders".

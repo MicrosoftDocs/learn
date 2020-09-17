@@ -1,23 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.cloud-adoption-framework-getting-started
 metadata:
-  title: "TBD - Learn"
-  description: TBD
+  title: "Getting Start with the Microsoft Cloud Adoption Framework for Azure"
+  description: CAF Getting Started. Use the Cloud Adoption Framework Getting Started guides to unblock your organization’s cloud adoption efforts 
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "TBD"
-summary: TBD.
+title: "Getting Start with the Microsoft Cloud Adoption Framework for Azure"
+summary: The Microsoft Cloud Adoption Framework for Azure is a guide for the full lifecycle of cloud adoption. Along your organization’s journey to the cloud you may encounter a number of roadblocks that can be easily removed with common approaches used by thousands of customers.
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Understand common roadblocks that prevent adoption success
+  - Evaluate one or more guides that can help you get things moving (or moving faster) 
+  - Get started on the proper course of action using shared guidance and related Learn modules
 prerequisites: |
-  - A
-  - B
+  - General understanding of your current cloud adoption plan & an understanding of the roadblocks that may be presenting your organization from being successful
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
@@ -26,6 +25,20 @@ roles:
 - administrator
 - developer
 - solution-architect
+- auditor
+- business-analyst
+- business-owner
+- data-engineer
+- database-administrator
+- developer
+- devops-engineer
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
 products:
 - azure
 units:
