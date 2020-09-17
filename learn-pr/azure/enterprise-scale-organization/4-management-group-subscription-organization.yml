@@ -16,14 +16,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: Management groups can be used to aggregate policy and initiative assignments via Azure Policy.
+  - content: Which of the following is a valid use of management groups?
     choices:
-    - content: "True"
+    - content: "Aggregate policies and initiative assignments via Azure Policy."
       isCorrect: true
-      explanation: True, management groups can be used to aggregate policies and initiative assignments via Azure Policy.
-    - content: "False"
+      explanation: Correct, management groups can be used to aggregate policies and initiative assignments via Azure Policy.
+    - content: "Autoscaling of resources when load increases."
       isCorrect: false
-      explanation: True, management groups can be used to aggregate policies and initiative assignments via Azure Policy.
+      explanation: Management groups cannot be used to autoscale resources.
+    - content: "Storing sensitive data such as keys and secrets."
+      isCorrect: false
+      explanation: Management groups cannot be used to store sensitive data.
 
   - content: Subscriptions are a unit of management, billing, and scale within Azure.  Which one of these items follows the Microsoft Cloud Adaption Framework for Azure as a valid design consideration or recommendation?
     choices:
