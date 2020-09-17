@@ -18,6 +18,7 @@ abstract: |
 
     "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
 prerequisites: |
+    - A PC running Windows 10
     - Basic knowledge of Azure Sphere
     - USB cable to connect Azure Sphere to the computer
     - USB-to-serial adapter
