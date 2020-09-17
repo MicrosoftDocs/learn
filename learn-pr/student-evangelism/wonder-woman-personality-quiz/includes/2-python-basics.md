@@ -128,7 +128,9 @@ Python puts a special meaning on the words "true" and "false," and calls them Bo
 
 You might be comfortable with arithmetic, where numbers are operated on to produce other numbers: 1 + 2 is 3. The operands are the numbers 1 and 2, and the operator is the addition operator (+). 
 
-In Boolean logic, Boolean values (true or false) are operated on to produce other Boolean values. We might say, "If it's cold outside AND it's raining, then grab a parka." Then both conditions must be met (must be true) for us to grab a parka. Here the operands are whether or not it's cold outside and whether or not it's raining; the AND operator
+In Boolean logic, Boolean values (true or false) are operated on to produce other Boolean values. We might say, "If it's cold outside AND it's raining, then grab a parka." Then both conditions must be met (must be true) for us to grab a parka. Here the operands are whether or not it's cold outside and whether or not it's raining; the AND operator indicates that BOTH must be true to execute the next part. 
+
+Similarly, we could use the OR operator to indicate that if either operand is true, the next part should execute. For example we might say, "If it's cold outside OR its raining, then grab a parka. " In this case, if it's cold outside but not raining, it's hot outside and raining, or it's cold outside and raining then you should grab a parka. 
 
 Now that we have a handle on some of the basics, let's move on to making the quiz.
 
