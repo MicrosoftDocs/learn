@@ -18,13 +18,13 @@ quiz:
 
   - content: ' Contoso is creating their global connectivity subscription to support Azure services across 6 regions globally in the US, Europe, Australia and India. Contoso will mostly be using PaaS services with Private Link but also about 500 virtual machines. Contoso has small colocation facilities and datacenters in 20 different countries on every populated continent. Contoso currently uses multiple MPLS networks from 3 different providers to provide datacenter and large office connectivity. Contoso requires firewalls for all traffic moving between on premises and Azure and needs to minimize latency for these connections. Contoso will have many applications that need to communicate across Azure regions and cross premises. Contoso also wants to minimize cost and complexity. Contoso should?'
     choices:
-    - content: '-A. Implement a hub and spoke network, with Azure Firewall in the hubs and a hub in each of the six Azure regions.'
+    - content: 'Implement a hub and spoke network, with Azure Firewall in the hubs and a hub in each of the six Azure regions.'
       isCorrect: false
-      explanation: 'This will work, but Azure Virtual Wan is preferred over a hub and spoke unless the customer needs highly granular control of routing'
-    - content: 'Implement Virtual Wan with Secured Hubs (Azure Firewall) in each of the six Azure Regions'
+      explanation: 'This will work, but Azure Virtual Wan is preferred over a hub and spoke unless the customer needs highly granular control of routing.'
+    - content: 'Implement Virtual Wan with Secured Hubs (Azure Firewall) in each of the six Azure Regions.'
       isCorrect: true
-      explanation: 'Virtual WAN is the preferred enterprise solution over hub and spoke, Azure Firewall will meet the firewall requirement'
-    - content: 'Use only one very large Virtual Network in each region. Deploy Azure Firewall into that vnet and all services for that region.'
+      explanation: 'Virtual WAN is the preferred enterprise solution over hub and spoke, Azure Firewall will meet the firewall requirement.'
+    - content: 'Use only one very large virtual network in each region. Deploy Azure Firewall into that virtual network and all services for that region.'
       isCorrect: false
       explanation: 'This will technically work, but is cost and complexity prohibitive.'
     - content: 'Deploy Virtual WAN'
@@ -33,15 +33,15 @@ quiz:
 
   - content: ' Contoso is creating their global connectivity subscription to support Azure services across 6 regions globally in the US, Europe, Australia and India. Contoso will mostly be using PaaS services with Private Link but also about 3000 virtual machines per region. Contoso has small colocation facilities and datacenters in 20 different countries on every populated continent. Contoso currently uses multiple MPLS networks from 3 different providers to provide datacenter and large office connectivity. Contoso requires firewalls for all traffic moving between on premises and Azure and needs to minimize latency for these connections. Contoso will have many applications that need to communicate across Azure regions and cross premises. Contoso also wants to minimize cost and complexity. Contoso should?'
     choices:
-    - content: '-Implement a hub and spoke network, with Azure Firewall in the hubs and a hub in each of the six Azure regions.'
+    - content: 'Implement a hub and spoke network, with Azure Firewall in the hubs and a hub in each of the six Azure regions.'
       isCorrect: true
-      explanation: 'Hub and spoke allows for more than 2000 VMs per region which is a current limitation of Virtual WAN'
+      explanation: 'Hub and spoke allows for more than 2000 VMs per region which is a current limitation of Virtual WAN.'
     - content: 'Implement Virtual Wan with Secured Hubs (Azure Firewall) in each of the six Azure Regions'
       isCorrect: false
-      explanation: 'Hub and spoke allows for more than 2000 VMs per region which is a current limitation of Virtual WAN'
+      explanation: 'Hub and spoke allows for more than 2000 VMs per region which is a current limitation of Virtual WAN.'
     - content: 'Use only one very large Virtual Network in each region. Deploy Azure Firewall into that vnet and all services for that region.'
       isCorrect: false
       explanation: 'This will technically work, but is cost and complexity prohibitive.'
-    - content: 'Deploy Virtual WAN'
+    - content: 'Deploy Virtual WAN.'
       isCorrect: false
       explanation: 'Virtual WAN could be part of the solution but misses the firewall requirement and has a limit of 2000 VMs per region'
