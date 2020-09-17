@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.3-exercise-what-if
-title: Exercise - What-if
+title: Exercise - Preview changes with the What-if command
 metadata:
-  title: Exercise - What-if
+  title: Exercise - Preview changes with the What-if command
   description: Use the What-if tool to predict what a deployment will carry out if applied.
   author: softchris
   ms.author: chnoring

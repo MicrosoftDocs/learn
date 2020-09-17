@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.5-exercise-test-toolkit
-title: Exercise - Test toolkit
+title: Exercise - Apply good practices to your template using th ARM Test toolkit
 metadata:
-  title: Exercise - Test toolkit
-  description: Use the test toolkit to apply some best practices to your templates.
+  title: Exercise - Apply good practices to your template using th ARM Test toolkit
+  description: Use the test toolkit to apply some good practices to your templates.
   author: softchris
   ms.author:  chnoring
   ms.date: 09/17/2020

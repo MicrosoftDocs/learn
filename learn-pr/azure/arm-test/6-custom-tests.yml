@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.arm-test.6-custom-tests
-title: Author custom tests
+title: Implement domain specific rules by authoring custom tests
 metadata:
-  title: Author custom tests
+  title: Implement domain specific rules by authoring custom tests
   description: The testing tool comes with a set of tests that it runs at every invocation of the tool. However, you might want to apply org-specific tests to your templates. This is exactly what you can do by authoring custom tests that can also be run by the testing toolkit.
   author: softchris
   ms.author: chnoring

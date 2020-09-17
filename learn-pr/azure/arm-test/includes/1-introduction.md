@@ -12,4 +12,4 @@ After completing this module, you'll be able to:
 
 - Preview what changes will happen before you deploy by using the what-if operation.
 - Validate your templates adherence to sound recommendations using ARM Template Test Toolkit.
-- Implement domain specific rules for deployments that can be run by ARM Template Test Toolkit.
+- Implement domain-specific rules for deployments that can be run by ARM Template Test Toolkit.

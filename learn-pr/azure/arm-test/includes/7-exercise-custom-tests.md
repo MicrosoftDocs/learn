@@ -151,7 +151,7 @@ You will author a custom test and use the Test Toolkit tool to run it. Furthermo
    }
    ```
 
-   The above template content defines a parameter **location** that doesn't fulfil the naming rule, as it lacks the **tailwind** prefix in its naming.
+   The above template content defines a parameter **location** that doesn't fulfill the naming rule, as it lacks the **tailwind** prefix in its naming.
 
 1. Run the Test Toolkit tool.
 

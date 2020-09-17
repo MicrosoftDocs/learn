@@ -38,13 +38,13 @@ There are potentially two different paths here:
 > [!NOTE]
 > In order to avoid using PowerShell in an *elevated mode* you can use the argument `-Scope CurrentUser` to install or update modules on your user.
 
-- **You DON'T have the module installed previously**. Install this module use the following command :
+- **You DON'T have the module installed previously**. Install this module use the following command:
 
    ```powershell
    Install-Module -Name Az -Force -Scope CurrentUser
    ```
 
-- **You need to update a pre existing module**. If you have an older version of the **Az Module**, and need to update it, use the following command:
+- **You need to update a pre-existing module**. If you have an older version of the **Az Module**, and need to update it, use the following command:
 
    ```powershell
    Update-Module -Name Az -Scope CurrentUser
@@ -55,16 +55,16 @@ There are potentially two different paths here:
 You will be able to deploy your ARM Template by carrying out the following steps:
 
 1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-1. **Set the active subscription**. This can be accomplished by invoking a PowerShell cmdlet.
-1. **Set default resource group**. Also this can be done by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
+1. **Set the active subscription**. This task can be accomplished by invoking a PowerShell cmdlet.
+1. **Set default resource group**. Also this task can be carried out by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
 1. **Carry out the deployment**. This step involves using the cmdlet **New-AzResourceGroupDeployment** with a URL to a template as an argument.
 
 ### Sign in to Azure
 
-You can sign into your Azure account from the terminal. If you are on Windows, the terminal will default to PowerShell. On other OSs you can use the command line executable `pwsh` to launch a PowerShell shell from the terminal.
+You can sign into your Azure account from the terminal. If you are on Windows, the terminal will default to PowerShell. On other OSs, you can use the command line executable `pwsh` to launch a PowerShell shell from the terminal.
 
 1. **Open the integrated terminal in Visual Studio Code**. Be sure you are signing in to the same account that activated the sandbox.
-    1. If you have a non Windows OS, type `pwsh` to ensure the PowerShell shell is running.
+    1. If you have a non-Windows OS, type `pwsh` to ensure the PowerShell shell is running.
 
 1. **Sign in to Azure**. Run the following command (it will open a browser that allows you to sign in to your account).
 
@@ -142,7 +142,7 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
     >
     ```
 
-1. **Verify the deployment in the portal**. To validate that your deployment have been created and sent to Azure you can navigate to the the Azure portal, [Azure portal](https://portal.azure.com?azure-portal=true), make sure you are in the sandbox subscription.
+1. **Verify the deployment in the portal**. To validate that your deployment has been created and sent to Azure you can navigate to the Azure portal, [Azure portal](https://portal.azure.com?azure-portal=true), make sure you are in the sandbox subscription.
 
    1. Select your avatar in the upper right corner of the page.
    1. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
@@ -153,7 +153,7 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
 
    :::image type="content" source="../../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. **Inspect deployment details**. Click the *what-if-before* deployment to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with 2 subnets have been deployed.
+1. **Inspect deployment details**. Click the *what-if-before* deployment to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with two subnets have been deployed.
 
    :::image type="content" source="../../media/3-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
@@ -165,7 +165,7 @@ Leave the page open in your browser. You will check on deployments again later.
 
 Now that you've deployed the template, you're ready to test the *what-if* operation. This time you will deploy a template that changes the virtual network you deployed in un the first part.
 
-The differences in the second template is:
+The differences in the second template are:
 
 - **Tag removed**. The original tag was removed.
 - **Subnet removed**. A subnet has been removed.
@@ -220,7 +220,7 @@ The differences in the second template is:
     >
     ```
 
-   You'll notice that the result is colour coded in addition to a "prefix"
+   You'll notice that the result is color coded in addition to a "prefix"
 
       - Purple and "~" for any modifications
       - Green and "+" for new resources to be created
@@ -228,7 +228,7 @@ The differences in the second template is:
 
 ## Deploy using the Complete mode and confirmation option
 
-In these next steps you will deploy an empty template over your existing environment.
+In these next steps, you will deploy an empty template over your existing environment.
 
 1. **Run the deployment in complete mode**. Type the following PowerShell command:
 
@@ -285,7 +285,7 @@ In these next steps you will deploy an empty template over your existing environ
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "Y"):
     ```
 
-1. **Confirm deployment**. Type **A** for "[A] Yes to All", to execute and clean out your environment. Once it completes it will display the following results:
+1. **Confirm deployment**. Type **A** for "[A] Yes to All", to execute and clean out your environment. Once it completes, it will display the following results:
 
     ```output
     Are you sure you want to execute the deployment?
@@ -308,7 +308,7 @@ In these next steps you will deploy an empty template over your existing environ
     >
     ```
 
-1. **Verify deployment**. Navigate back to the open browser you used earlier, and verify that there were 2 successful deployment.
+1. **Verify deployment**. Navigate back to the open browser you used earlier, and verify that there were two successful deployments.
 
     - The first one you deployed.
     - The complete one that removed all resources, and the VNet is no longer there.

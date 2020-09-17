@@ -137,7 +137,7 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
     }
     ```
 
-1. **Verify the deployment in the portal**. To validate that your deployment have been created and sent to Azure you can navigate to the the Azure portal, [Azure portal](https://portal.azure.com?azure-portal=true), make sure you are in the sandbox subscription.
+1. **Verify the deployment in the portal**. To validate that your deployment has been created and sent to Azure you can navigate to the Azure portal, [Azure portal](https://portal.azure.com?azure-portal=true), make sure you are in the sandbox subscription.
 
    1. Select your avatar in the upper right corner of the page.
    1. Choose **Switch directory**. In the list, choose the **Microsoft Learn Sandbox** directory.
@@ -148,7 +148,7 @@ Now that you have setup your subscription in the Visual Studio Code (Visual Stud
 
    :::image type="content" source="../../media/3-portal-deployment-success.png" alt-text="Azure portal interface for the deployments with the one deployment listed and a succeeded status." border="true":::
 
-1. **Inspect deployment details**. Click the *what-if-before* deployment to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with 2 subnets have been deployed.
+1. **Inspect deployment details**. Click the *what-if-before* deployment to see what resources were deployed. In this case, one VNet (address space 10.0.0.0/16) with two subnets have been deployed.
 
    :::image type="content" source="../../media/3-portal-deployment-details.png" alt-text="Azure portal interface for the specific deployment with no resources listed." border="true":::
 
@@ -160,7 +160,7 @@ Leave the page open in your browser. You will check on deployments again.
 
 Now that you've deployed the template, you're ready to test the *what-if* operation. This time you will deploy a template that changes the virtual network you deployed in un the first part.
 
-The differences in the second template is:
+The differences in the second template are:
 
 - **Tag removed**. The original tag was removed.
 - **Subnet removed**. A subnet has been removed.
@@ -215,7 +215,7 @@ The differences in the second template is:
 
 ## Deploy using Complete mode and the confirm-with-what-if option
 
-In these next steps you will deploy an empty template over your existing environment.
+In these next steps, you will deploy an empty template over your existing environment.
 
 1. **Run the deployment in complete mode**. Type the following Azure CLI command:
 
