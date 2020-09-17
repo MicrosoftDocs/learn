@@ -26,11 +26,9 @@ Azure Relay allows Tailwind Traders to publish some applications that run on the
 
 App Service Hybrid Connections can use any application resource in any network that’s able to send outbound requests to Azure on port 443. For example, you can use Azure App Service Hybrid Connections to allow a web app running in Azure to use a SQL Server database running on-premises. Hybrid Connections provide access from an app running in Azure to a Transmission Control Protocol (TCP) endpoint. App Service Hybrid Connections aren’t limited to workloads running on Windows Server platforms and you can configure App Service Hybrid Connections to access any resource provided it functions as a TCP endpoint, regardless of which application protocol is being used. For example, you could configure an App Service Hybrid Connection between a web app running in Azure and a MySQL database running on an on-premises Linux virtual machine.
 
-Hybrid Connections use a relay agent that you deploy in a location where the agent can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured by using Transport Layer Security (TLS) 1.2 and shared access signature (SAS) keys are used for authentication and authorization. Figure 12 depicts an App Service Hybrid Connection between a web app running in Azure and a database endpoint running on-premises.
+Hybrid Connections use a relay agent that you deploy in a location where the agent can establish connectivity to the TCP endpoint on the internal network and establish a connection to Azure. This connection is secured by using Transport Layer Security (TLS) 1.2 and shared access signature (SAS) keys are used for authentication and authorization. The image below depicts an App Service Hybrid Connection between a web app running in Azure and a database endpoint running on-premises.
 
 :::image type="content" source="../media/image12.png" alt-text="App Service Hybrid Connection between Web App in Azure and database endpoint on-premises." lightbox="../media/image12.png":::
-
-Figure 12. App Service Hybrid Connection.
 
 App Service Hybrid Connections have the following functionality:
 
@@ -59,19 +57,17 @@ Application Proxy functions with the following applications:
 - Web applications that use header-based or form-based authentication
 - Applications hosted through Remote Desktop Gateway
 
-Application Proxy functions in the following manner depicted in Figure 13:
+Application Proxy functions in the following manner depicted in the image below:
 
 1. The user connects to the application through a publicly available endpoint and then performs an Azure AD sign-on.
 2. A token is forwarded to the user’s device after the sign-in completes.
-3. The client device forwards token to the Application Proxy service, which returns the User Principal Name (UPN) and Security Principal Name (SPN) from the token. Application proxy then forwards the request to the Application Proxy Connector.
+3. The client device forwards token to the Application Proxy service, which returns the user principal name (UPN) and security principal name (SPN) from the token. Application proxy then forwards the request to the Application Proxy Connector.
 4. If single sign-on has been enabled, the Application Proxy Connector performs additional authentication.
 5. The Application Proxy Connector forwards request to the on-premises application.
 6. The response is sent through connector and Application Proxy service to user.
 
 :::image type="content" source="../media/image13.png" alt-text=" Application Proxy functionality with user outside organizational network making connection through Application Proxy Service to on-premises application." lightbox="../media/image13.png":::
 
-Figure 13. Application Proxy.
-
-**Note:** Users of internal networks that allow direct connection to applications should avoid using Application Proxy.
+Users of internal networks that allow direct connection to applications should avoid using Application Proxy.
 
 At Tailwind Traders, Azure AD Application proxy can be used to provide external users access to internal applications that use Active Directory authentication.
