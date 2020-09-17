@@ -20,10 +20,13 @@ quiz:
     choices:
     - content: Microsoft account
       isCorrect: false
-      explanation: Only use the authentication type _work or school account_ for all account types. Avoid using the _Microsoft account_ account type.
+      explanation: "Microsoft accounts shouldn't be used for enterprise enrollment."
     - content: Work or school account
       isCorrect: true
-      explanation: Only use the authentication type _work or school account_ for all account types. Avoid using the _Microsoft account_ account type.
+      explanation: You should only use the authentication type _work or school account_ for all account types.
+    - content: GitHub account
+      isCorrect: false
+      explanation: "GitHub accounts can't be used for enterprise enrollment."
 
   - content: An Azure AD tenant provides identity and access management. When designing your solution, which of the following are valid design considerations or recommendations?
     choices:
