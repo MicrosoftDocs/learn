@@ -30,7 +30,7 @@ First, you'll create a Cognitive Services Text Analytics resource that matches t
 
 To deploy the Language Detection container image as Azure IoT Edge modules from Azure Marketplace, follow these steps:
 
-1. In the Azure portal, enter **Language Detection Container – Azure Cognitive Services** into the search and open the Azure Marketplace result.
+1. In the Azure portal, enter **Edge Module – Language Detection (Text Analytics)** into the search and open the Azure Marketplace result.
 
 1. Select **Create** to create the image.
 
@@ -44,7 +44,7 @@ To deploy the Language Detection container image as Azure IoT Edge modules from 
 
 1. Click the **Create** button. It will take you to the **Set modules** page. Keep the page open, because you'll configure Cognitive Services in the next step.
 
-1. Click on the **LanguageDetectionContainerAzureCognitiveServices** IoT Edge module.
+1. Click on the **EdgeModuleLanguageDetectionTextAnalytics** IoT Edge module.
 
    ![The illustration shows the container image in your device.](../media/edge-module.png)
 
