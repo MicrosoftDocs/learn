@@ -4,8 +4,6 @@ Before you start the module, you need to set up your virtual environment.
 
 # Set up a virtual environment
 
-Firstly, you need to go to the .
-
 You'll need:
 
 - A Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com/) or a Student Subscription at [https://aka.ms/azureforstudents].
