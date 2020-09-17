@@ -28,7 +28,7 @@ quiz:
       isCorrect: true
       explanation: 'DDoS Standard provides SLA backed DDoS protection with log data'
 
-  - content: "Contoso needs multiple 10 Gpbs circuits in a single peering location. Which of the following designs should they consider?"
+  - content: "Contoso needs multiple 10 Gbps circuits in a single peering location. Which of the following designs should they consider?"
     choices:
     - content: 'Azure VPN'
       isCorrect: false
