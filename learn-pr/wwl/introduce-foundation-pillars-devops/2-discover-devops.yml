@@ -4,12 +4,12 @@ title: Discover DevOps
 metadata:
   title: Discover DevOps
   description: "Discover DevOps"
-  ms.date: 09/19/2020
+  ms.date: 09/20/2020
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 10
+durationInMinutes: 4
 content: |
   [!include[](includes/2-discover-devops.md)]
