@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-ready.3-common-operating-models
-title: Exercise - TBD
+title: Compare common operating models
 metadata:
-  title: Exercise - TBD
-  description: TBD.
+  title: Compare common operating models
+  description: Operating models define a number of constraints that will impact your environmental design.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn

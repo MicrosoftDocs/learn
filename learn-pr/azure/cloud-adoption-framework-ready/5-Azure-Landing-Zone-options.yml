@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-ready.5-azure-landing-zone-options
-title: Knowledge check
+title: Choose an Azure Landing Zone option
 metadata:
-  title: Knowledge check
-  description: Check your knowledge.
+  title: Choose an Azure Landing Zone option
+  description: Apply what you've learned to choose the best Azure Landing zone implementation option
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn

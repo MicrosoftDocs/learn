@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-ready.4-design-areas
-title: Knowledge check
+title: Azure Landing Zone design areas
 metadata:
-  title: Knowledge check
-  description: Check your knowledge.
+  title: Azure Landing Zone design areas
+  description: The design areas outline the considerations that are included in each of the available Azure Landing Zones.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn
@@ -23,4 +23,3 @@ quiz:
     - content: "Start with Enterprise-Scale"
       isCorrect: false
       explanation: "In the last knowledge check, we reviewed why an Enterprise Operations would be problematic for Tailwind. The same answer would suggest that their development velocity would best align with a Start small approach."
-
