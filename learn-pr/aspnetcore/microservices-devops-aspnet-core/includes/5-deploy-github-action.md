@@ -101,38 +101,28 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
     :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Actions tab showing a completed build and deployment" border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
 
-1. Back in the command shell, run the following command to monitor the pods in your AKS cluster:
+1. Back in the command shell, run the following command to monitor the coupon service pods in your AKS cluster:
 
     ```bash
-    kubectl get pods --watch
+    kubectl get pods --selector service=coupon --watch
     ```
 
-    The preceding command retrieves the status for all the pods in a Kubernetes deployment. The `--watch` flag instructs `kubectl` to watch for changes. The status of the existing and newly deployed pods will be displayed in real time. A variation of the following output appears:
+    In the preceding command:
+
+    - The `--selector` flag filters the list to only pods for the coupon service. For this reason, pods for other services in the cluster aren't displayed.
+    - The `--watch` flag instructs `kubectl` to watch for changes. When a change is detected, an additional table row is appended to the command shell output. The status of the existing and newly deployed pods is displayed in real time.
+
+    A variation of the following output appears:
 
     ```console
     NAME                              READY   STATUS              RESTARTS   AGE
-    backgroundtasks-c4fdf75bb-2zfpl   1/1     Running             1          31m
-    basket-78bdff857f-s9x9p           1/1     Running             1          31m
-    basketdata-66d657d89d-ksr54       1/1     Running             0          31m
-    catalog-569786957c-kww64          1/1     Running             3          31m
     coupon-5b9597995-7s4hh            1/1     Running             1          31m
     coupon-74fd48bbd-rqgfd            0/1     ContainerCreating   0          22s
-    identity-556cb7b974-j84hh         1/1     Running             2          31m
-    nosqldata-5ccc5d7747-h79fw        1/1     Running             0          31m
-    ordering-6c456f5d4c-xrjbx         1/1     Running             2          31m
-    payment-7677755767-s6s98          1/1     Running             1          31m
-    rabbitmq-7877fcd685-5drsq         1/1     Running             0          31m
-    seq-669f9cf486-46q6r              1/1     Running             0          31m
-    signalr-64d9c95564-b2wjx          1/1     Running             1          31m
-    sqldata-6f8c8c577-2vckd           1/1     Running             0          31m
-    webshoppingagg-78445b66f5-gpllh   1/1     Running             0          31m
-    webspa-64786f994f-xmsc4           1/1     Running             0          31m
-    webstatus-8887f6f55-bvq76         1/1     Running             0          31m
     ```
 
     In the preceding output, notice that a new `coupon` pod was created. While the old pod is still running and when the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
-1. Once the new pod's *:::no-loc text="Ready":::* status displays `1/1`, press <kbd>Ctrl+C</kbd> to exit `kubectl`.
+1. Once the new pod's *:::no-loc text="Ready":::* status displays `1/1`, press <kbd>Ctrl+C</kbd> to stop `kubectl`'s watch mode.
 1. Run the following command to check the coupon service deployment history:
 
     ```bash

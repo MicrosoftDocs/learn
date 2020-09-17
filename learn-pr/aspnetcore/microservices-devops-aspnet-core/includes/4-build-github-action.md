@@ -78,7 +78,11 @@ Create a GitHub Action for the build with the following steps:
 You've finished creating the build workflow for your CI/CD pipeline. The Marketing department wants to start a campaign to better track discount code usage. With this feature, Marketing can better understand which discount codes are most effective in boosting sales. To support this feature, make the following changes in the `main` branch:
 
 1. Select the **:::no-loc text="Code":::** tab in your fork of the repository.
-1. Edit the *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::* file by clicking the pencil (edit) icon. In the *:::no-loc text="CouponController.cs":::* file, replace the comment `// Add LogInformation call` with the following code:
+1. Edit the *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::* file by clicking the edit icon:
+
+    :::image type="content" source="../media/4-build-github-action/edit-file-icon.png" alt-text="GitHub edit file icon" border="true" lightbox="../media/4-build-github-action/edit-file-icon.png":::
+
+1. Replace the comment `// Add LogInformation call` with the following code:
 
     ```csharp
     _logger.LogInformation("Applying coupon {CouponCode}", code);
