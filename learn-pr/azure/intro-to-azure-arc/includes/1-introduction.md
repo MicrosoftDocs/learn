@@ -1,4 +1,3 @@
-<!-- comment added for test -->
 Microsoft Azure Arc can help you manage Windows Server instances, Kubernetes clusters, and connected data sources.
 
 Contoso, Ltd. is a midsize financial services company in London with a branch office in New York City. Most of its compute environment runs on-premises on Windows Server. This includes virtualized workloads on Windows Server 2012 R2 hosts. Contoso IT staff members are migrating Contoso servers to Windows Server 2019.

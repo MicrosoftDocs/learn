@@ -28,12 +28,10 @@ products:
 units:
 - learn.azure.intro-to-azure-arc.1-introduction
 - learn.azure.intro-to-azure-arc.2-describe-azure-arc
-- learn.azure.intro-to-azure-arc.3-onboard-server-instances
-- learn.azure.intro-to-azure-arc.4-use-azure-arc-to-manage-windows-server-instances
-- learn.azure.intro-to-azure-arc.5-describe-azure-arc-enabled-kubernetes
-- learn.azure.intro-to-azure-arc.6-use-azure-policy-with-azure-arc
-- learn.azure.intro-to-azure-arc.7-integrate-azure-arc-with-azure-monitor
-- learn.azure.intro-to-azure-arc.8-knowledge-check
-- learn.azure.intro-to-azure-arc.9-summary
+- learn.azure.intro-to-azure-arc.3-describe-azure-arc-enabled-servers
+- learn.azure.intro-to-azure-arc.4-describe-azure-arc-enabled-kubernetes
+- learn.azure.intro-to-azure-arc.5-describe-azure-arc-azure-policy-and-azure-monitor
+- learn.azure.intro-to-azure-arc.6-knowledge-check
+- learn.azure.intro-to-azure-arc.7-summary
 badge:
   uid: learn.azure.intro-to-azure-arc.badge
