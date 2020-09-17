@@ -15,7 +15,7 @@ Create a GitHub Action for the build with the following steps:
 
 1. Replace the YAML in the editor with the following YAML:
 
-    ```yml
+    ```yaml
     name: eShop build
 
     on:
@@ -59,7 +59,7 @@ Create a GitHub Action for the build with the following steps:
     - Defines step-specific environment variables. For example, the `Run unit tests` step defines `DOTNET_CLI_TELEMETRY_OPTOUT` and `DOTNET_NOLOGO`. With regards to the .NET Core CLI, those environment variables opt out of usage data collection and suppress the first-run telemetry message, respectively.
     - Has one job&mdash;a set of steps that execute on the same workflow runner&mdash;named `build-and-push-docker-image`. The job:
         - Executes the xUnit tests for the coupon service.
-        - Builds the Docker image and pushes it to the ACR instance.
+        - Builds the Docker image and pushes it to an ACR instance. ACR is a private container registry used for the modified coupon container image. You don't have permission to modify the Microsoft-owned container registry from which the original image was retrieved.
         - Runs in an `ubuntu-latest` runner and has three steps, two of which use actions available from the [GitHub Actions marketplace](https://github.com/marketplace?type=actions):
             - `Get code from the repository` uses the `actions/checkout@v1` action to check out the `main` branch.
             - `Build and push Docker image` uses the `docker/build-push-action@v1.1.0` action to build the container image and push it to ACR.
