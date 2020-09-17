@@ -36,7 +36,7 @@ quiz:
     - content: 'Implement a hub and spoke network, with Azure Firewall in the hubs and a hub in each of the six Azure regions.'
       isCorrect: true
       explanation: 'Hub and spoke allows for more than 2000 VMs per region which is a current limitation of Virtual WAN.'
-    - content: 'Implement Virtual Wan with Secured Hubs (Azure Firewall) in each of the six Azure Regions'
+    - content: 'Implement Virtual Wan with Secured Hubs (Azure Firewall) in each of the six Azure Regions.'
       isCorrect: false
       explanation: 'Hub and spoke allows for more than 2000 VMs per region which is a current limitation of Virtual WAN.'
     - content: 'Use only one very large Virtual Network in each region. Deploy Azure Firewall into that vnet and all services for that region.'
