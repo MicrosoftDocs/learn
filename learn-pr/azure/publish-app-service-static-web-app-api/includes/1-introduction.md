@@ -1,6 +1,6 @@
 Your company is launching a shopping list web app. Through the site, customers can add, edit, view, and remove items from their list.
 
-As you build the app, your first concerns are that your app is hosted securely, is globally available, and published automatically. Rather than build up a web server to handle all these concerns, you decide to use a hosting solution that serves your assets easily, without much setup or configuration.
+As you build the app, your first concerns are that your app is hosted securely, is globally available, and published automatically. Rather than build a web server to handle all these concerns, you decide to use a hosting solution that serves your assets easily, without much setup or configuration.
 
 ## What is Azure Static Web Apps?
 
@@ -8,7 +8,7 @@ Azure Static Web Apps solves the hard problems all the way from your source code
 
 While you stay focused on developing your app, Azure Static Web Apps automatically builds and hosts it from a GitHub repository.
 
-Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. Under a traditional web server architecture, these files are served from a single server along side any required API endpoints.
+Static web apps are commonly built using libraries and frameworks like Angular, React, Svelte, or Vue. These apps include HTML, CSS, JavaScript, and image assets that make up the application. When using a traditional web server architecture, these files are served from a single server along side any required API endpoints.
 
 With Azure Static Web Apps, static assets are separated from a traditional web server and are instead served from points globally distributed around the world. This distribution makes serving files much faster as files are physically closer to end users. API endpoints, which are optional, are hosted using a serverless architecture, which avoids the need for a full back-end server all together.
 
@@ -19,13 +19,13 @@ The model for Azure Static Web Apps is that you get exactly what you need, no mo
 > [!NOTE]
 > Azure Static Web Apps is currently in preview.
 
-When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions workflow in the app's source code repository that monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure.
+When you create an Azure Static Web Apps resource, Azure sets up a GitHub Actions workflow in the app's source code repository. The workflow monitors a branch of your choice. Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app and its API to Azure.
 
-Azure hosts and serves your web app while Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand.
+Azure hosts and serves your web app. Azure Functions powers back-end API functionality, which provides automatic scaling out and scaling in based on demand.
 
 ### Optional APIs
 
-Azure Static Web Apps is ideal for serving purely static content, but it also has great support for static web apps that need APIs behind them. This means you can host your static web app with or without an API.
+Azure Static Web Apps is ideal for serving purely static content, but it also has great support for static web apps that need APIs behind them. So you can host your static web app with or without an API.
 
 In this module's exercises, you'll deploy an app using your preferred web framework.
 
