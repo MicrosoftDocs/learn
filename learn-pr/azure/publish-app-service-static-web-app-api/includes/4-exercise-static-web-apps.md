@@ -40,6 +40,12 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
    :::image type="content" source="../media/extension-create-button.png" alt-text="Application name":::
 
+1. Select the **Concierge Subscription**
+   :::image type="content" source="../media/extension-select-subscription.png" alt-text="Select Subscription":::
+
+   > [!NOTE]
+   > If you do not see the Concierge Subscription listed, ensure you logged into Azure in Visual Studio Code using the same account used to create the sandbox. Additionally, if you have filtered your Azure subscriptions in the Azure Account extension, verify the Concierge Subscription is checked in the `> Azure: Select Subscriptions` command.
+
 1. The command palate opens at the top of the editor and prompts you to name your application.
 
    Type **my-first-static-web-app** and press **Enter**.
@@ -120,11 +126,19 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
    :::image type="content" source="../media/extension-location.png" alt-text="Resource location":::
 
-9. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+9. Click the **Select Existing** button to select the resource group that has been created for you in the Azure sandbox
 
-   :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
+   :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
 
-10. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-first-static-web-app** and select **Open in Portal** to view app in the Azure portal.
+10. Select the resource group beginning with the word **learn**
+
+    :::image type="content" source="../media/extension-select-resource-group.png" alt-text="Select resource group":::
+
+11. Once the app is created, a confirmation notification is shown in Visual Studio Code.
+
+    :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
+
+12. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-first-static-web-app** and select **Open in Portal** to view app in the Azure portal.
 
     :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
