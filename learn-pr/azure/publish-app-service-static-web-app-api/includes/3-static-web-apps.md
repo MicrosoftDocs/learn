@@ -26,9 +26,9 @@ The **App artifact location** is a relative path to the build output directory o
 
 ### From source code to static assets with GitHub Actions
 
-Your GitHub repo contains source code, not static assets, and so it needs to be built before it can be published.
+Your GitHub repo contains source code, so it needs to be built before it can be published.
 
-When you create a Static Web Apps instance, Azure creates a GitHub Actions workflow in your repository. Every time you push changes or create a pull request against the branch you release from, the workflow builds your app, turning your source code into static assets that can be served by Azure. Once the build is complete, then the action deploys the assets.
+When you create a Static Web Apps instance, Azure creates a GitHub Actions workflow in your repository. The workflow builds your app every time you push changes or create a pull request against the branch you chose to track. This build process turns your source code into static assets which are served by Azure. Once the build is complete, then the action deploys the assets.
 
 The GitHub Action is added to your repository in the _.github/workflows_ folder. You can review or modify this file as needed. The settings you enter when you create the resource are stored in the GitHub Action's file.
 
