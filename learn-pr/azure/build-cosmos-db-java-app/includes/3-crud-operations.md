@@ -1,4 +1,4 @@
-After you've made the connection to Azure Cosmos DB, the next step is to create, read, replace, and delete the documents that are stored in the database. In this unit, you'll create user documents in your `WebCustomer` collection. Then, you'll retrieve them by ID, replace them, and delete them.
+You've made the connection to Azure Cosmos DB. In this unit, you'll create user documents in your `WebCustomer` collection. Then, you'll retrieve the documents by ID, replace them, and delete them.
 
 ## Working with documents programmatically
 
@@ -70,9 +70,9 @@ Next we'll create some entities and perform some basic CRUD operations on the Az
 
     The `@NoArgsConstructor` annotation will generate a constructor with no arguments that sets default field values. The `@AllArgsConstructor` annotation will generate another constructor with a full set of arguments to specify all field values directly.
 
-    Note that `User` has an `id` property. All Azure Cosmos DB documents require an `id` property, so all POJO we intend to serialize into JSON documents must have an `id` field.
+    Note that `User` has an `id` property. All Azure Cosmos DB documents require an `id` property, so all POJOs we intend to serialize into JSON documents must have an `id` field.
 
-1. Now add the following method to **CosmosApp.java**:
+1. Add the following method to **CosmosApp.java**:
 
     ```java
     /**
@@ -93,7 +93,7 @@ Next we'll create some entities and perform some basic CRUD operations on the Az
     }
     ```
 
-1. Then, return to the `basicOperations` method and add the following to the end of that method, *before* the `client.close()` call.
+1. Return to the `basicOperations` method and add the following to the end of that method, *before* the `client.close()` call.
 
     ```java
     User maxaxam = new User(
@@ -188,7 +188,7 @@ In `basicOperations`, there are three new actions:
 
 Calling `createUserDocumentsIfNotExist` inserts both `User` instances as items/documents in Azure Cosmos DB. In having you pass the `User` instances as a list, our intent is to model a performant method for ingesting POJOs quickly into Azure Cosmos DB, using minimum compute resources. `createUserDocumentsIfNotExist` implements efficient async insertion of a list of POJOs. 
 
-Suppose that our goal is to maximize requests/second per thread. For comparison, the sync approach to writing `createUserDocumentsIfNotExist` - ignoring for a moment the `readItem` check - would be to iterate over each `User` in `users`. For each `User` `u`, we'd make a *blocking* call to `createItem`:
+Suppose that our goal is to maximize requests/second per thread. For comparison, the sync approach to writing `createUserDocumentsIfNotExist` - ignoring for a moment the `readItem` check - would be to iterate over each `User` instance in `users`. For each `User` `u`, we'd make a *blocking* call to `createItem`:
 
 ```java
 container.createItem(u, new PartitionKey(u.getUserId()), new CosmosItemRequestOptions()).block(); // <= Note the .block() which hangs until request response.

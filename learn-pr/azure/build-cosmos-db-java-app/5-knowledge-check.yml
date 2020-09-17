@@ -42,7 +42,7 @@ quiz:
     choices:
     - content: "Call `upsertItem` with `FirstName=Fran`"
       isCorrect: false
-      explanation: "Although the SDK does have an `upsertItem` method, there's currently no patch API to update specific fields"
+      explanation: "Although the SDK does have an `upsertItem` method, there's currently no patch API to update specific fields."
     - content: "Call `upsertItem` with an updated `Person` object"
       isCorrect: false
       explanation: "Although this way would work, it isn't the minimum necessary access to meet our requirements. Upsert operations will replace a document if its key already exists or add a new document if not. We don't want to add a new one, so using this method risks introducing subtle, hard-to-track bugs."

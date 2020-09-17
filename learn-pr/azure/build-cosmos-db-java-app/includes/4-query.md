@@ -1,6 +1,6 @@
 Now that you've created documents in your application, let's query them from your application. The Azure Cosmos DB Java SDK uses SQL queries. The .NET SDK has additional support for LINQ queries, but the Java SDK has no analog. This unit focuses on running SQL queries from your application, as opposed to the portal.
 
-We'll use the user documents you've created for your online retailer application to test these queries.
+We'll use the user documents that you created for your online retailer application to test these queries.
 
 ## Run SQL queries
 
