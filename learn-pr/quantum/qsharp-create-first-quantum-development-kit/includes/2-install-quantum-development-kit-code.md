@@ -15,7 +15,7 @@ Before you set up your environment, let's take a look at what you get with the Q
 
 The QDK gives you everything you need to start writing quantum programs. Included in the QDK is the Q# programming language.
 
-Q# is a *domain-specific programming language* (DSL). A DSL is a computer language that's built for a specific kind of application, just like how HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
+Q# is a *domain-specific language* (DSL). A DSL is a computer language that's built for a specific kind of application, like HTML is built for web pages. Q# enables you to focus on your quantum algorithms without having to worry about many of the underlying details, such as the physical layout of a quantum computer.
 
 The QDK includes:
 
@@ -34,7 +34,8 @@ The QDK includes:
 Follow these steps to install the QDK and add extensions to Visual Studio Code. The extensions provide support for developing quantum algorithms in Q#.
 
 1. Open Visual Studio Code.
-1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode&azure-portal=true). Select **Install**, and then follow the installation steps.
+1. Go to [Microsoft Quantum Development Kit for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode&azure-portal=true).
+1. Select **Install**, and then follow the installation steps.
 
 > [!NOTE]
 > If you already have an older version of the QDK, we recommend that you [update to the latest version](/quantum/install-guide/update?azure-portal=true).
@@ -79,7 +80,7 @@ Project templates enable you to quickly create Q# applications, libraries, and u
 
 ### Run the program
 
-Now let's run the program to verify that everything is set up correctly. You use the `dotnet` utility to run Q# programs.
+Now let's run the program to verify that everything is set up correctly. You use the `dotnet` tool to run Q# programs.
 
 1. From the **View** menu, select **Terminal** or **Integrated Terminal**.
 1. Run `dotnet run`.
@@ -87,12 +88,13 @@ Now let's run the program to verify that everything is set up correctly. You use
     ```bash
     dotnet run
     ```
-1. The program prints this message:
 
-    ```output
-    Hello quantum world!
-    ```
+The program prints this message:
+
+```output
+Hello quantum world!
+```
 
 Great work. You just ran your first Q# program!
 
-You likely noticed that this basic program doesn't involve any quantum computations. Shortly, you'll use quantum computation to create a random number generator.
+You likely noticed that this basic program involves no quantum computations. Shortly, you'll use quantum computation to create a random number generator.

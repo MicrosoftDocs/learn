@@ -1,6 +1,6 @@
-Quantum computing is based on quantum mechanics, which describes how objects at atomic and subatomic scale behave and interact with one another.
+Quantum computing is based on quantum mechanics, which describes how atomic and subatomic objects behave and interact with one another.
 
-Although there are more formal methods for learning the mathematics and theory behind quantum computing, here we'll define a few basic terms and walk through the structure of a basic Q# program. You'll apply these concepts later as you build your quantum random number generator.
+Although you can follow more formal methods to learn the mathematics and theory behind quantum computing, here we'll define a few terms and explore the structure of a basic Q# program. You'll apply these concepts later as you build your quantum random-number generator.
 
 > [!TIP]
 > As you explore quantum computing, you'll need to understand the concepts at the mathematical level. You'll find resources to help you understand more of the theory behind quantum computing at the end of this module. If you already have a background in quantum computing, here you'll learn how Q# applies the concepts.
@@ -9,9 +9,9 @@ Although there are more formal methods for learning the mathematics and theory b
 
 Even if you're new to quantum computing, you may have heard the terms _qubit_ and _superposition_. These concepts are fundamental to quantum computing, but what do they mean?
 
-A _qubit_ (quantum bit) is a basic unit of quantum information, analogous to a bit in classical computing.
+A _qubit_ (quantum bit) is a basic unit of quantum information. It's analogous to a bit in classical computing.
 
-While a bit (binary digit) can have a value of either zero or one, a qubit in _superposition_ has a combination of both the zero and one states, with some probability of being zero or one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from being in superposition to one of the classical states.
+A bit (binary digit) can have a value of either zero or one. In contrast, a qubit in _superposition_ has a combination of both the zero state and the one state, with some probability of being either zero or one when measured. The act of measuring a qubit changes the qubit's state. In other words, when measured, a qubit goes from a state of superposition to one of the classical states.
 
 ## What's in a Q# program?
 
@@ -43,15 +43,15 @@ namespace HelloQuantum {
 }
 ```
 
-Namespaces help you organize related functionality. Their use becomes important when you use Q# libraries in your programs and when you write your own libraries.
+Namespaces help you organize related functionality. You need namespaces when you use Q# libraries in your programs and when you write your own libraries.
 
 ### Libraries
 
-Q# makes extensive use of libraries. A library is a package that contains functions and operations that you can use in quantum programs.
+Q# uses libraries extensively. A library is a package that contains functions and operations that you can use in quantum programs.
 
-For example, the [Microsoft.Quantum.Chemistry](/qsharp/api/qsharp/microsoft.quantum.chemistry?azure-portal=true) library helps you perform quantum calculations that relate to chemistry. There are several standard libraries that include all sorts of basic operations.
+For example, the [Microsoft.Quantum.Chemistry](/qsharp/api/qsharp/microsoft.quantum.chemistry?azure-portal=true) library helps you perform quantum calculations that relate to chemistry. The various standard libraries include all sorts of basic operations.
 
-When you call a function or operation from a library, you specify the library's namespace. Here's an example that calls the `Message` function from the `Microsoft.Quantum.Intrinsic` library to print a message to the console:
+When you call a function or operation from a library, you specify the library's namespace. This example calls the `Message` function from the `Microsoft.Quantum.Intrinsic` library to print a message to the console:
 
 ```qsharp
 namespace HelloQuantum {
