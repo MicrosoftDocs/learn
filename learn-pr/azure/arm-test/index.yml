@@ -1,17 +1,17 @@
 ### YamlMime:Module
 uid: learn.arm-test
 metadata:
-  title: Validate your deployments using What-if and the Test toolkit
-  description: Leverage the Test toolkit and apply it on your Azure Resource
-    Manager templates to ensure the templates follow best practices before
+  title: Validate your deployments by using what-if and the ARM Template Test Toolkit
+  description: Leverage the ARM Template Test Toolkit and apply it on your Azure Resource
+    Manager templates to ensure the templates follow good practices before
     deployment. Apply the What-if command to see the impact of a deployment before it's applied. 
-  ms.date: 09/03/2020
+  ms.date: 09/17/2020
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Validate your deployments using What-if and the Test toolkit
-summary: This module teaches two major things, how to preview your changes with the **What-If** operation and the value of doing so. Secondly it teaches you how to create valid templates and gives you good recommendations that you can follow using the **arm-ttk** tool.
+title: Validate your deployments by using what-if and the ARM Template Test Toolkit
+summary: This module teaches two major things, how to preview your changes with the **What-If** operation and the value of doing so. Secondly it teaches you how to create valid templates and gives you good recommendations that you can follow using the ARM Template Test Toolkit tool.
 abstract: |
   After completing this module, you'll be able to:
   - Preview what changes will happen before you deploy by using the what-if operation.
@@ -19,11 +19,15 @@ abstract: |
   - Implement domain specific rules for deployments that can be run by ARM Template Test Toolkit.
 iconUrl: /learn/achievements/undefined.svg
 levels:
-  - beginner
+  - intermediate
 roles:
   - developer
+  - administrator
+  - solution-architect
 products:
-  - vs
+  - azure
+  - azure-clis
+  - azure-resource-manager
 prerequisites: |
   - Familiarity with Azure, including the Azure portal, subscriptions, resource
   groups, and resource definitions.

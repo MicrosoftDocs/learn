@@ -29,17 +29,17 @@ When using the *what-if* operation, it will list six different types of changes:
 
 ## Result format
 
-You maintain the control of how much information you want to see from the *what-if* operation.  There are two levels of detail that can be returned about the predicted changes:
+The PowerShell cmdlet `New-AzResourceGroupDeployment` creates a new the deployment on a resource group. By adding the *what-if* operation as a parameter to this command, the command switches from carrying out the deployment to merely report a *preview* of what will happen, were you to carry it out. Additionally you can control the amount of textual output of the *what-if* operation by using one of two parameters. The parameters are:
 
-1. **FullResourcePayloads**. This mode returns a list of resources that will change and details about all the properties that will change as per the template.
-1. **ResourceIdOnly**. This mode returns a list of resources that will change, but not all the details.
+1. **FullResourcePayloads**. By including this parameter you get a *verbose* output consisting of a list of resources, that will change, and details about all the properties that will change as per the template.
+1. **ResourceIdOnly**. This mode returns *only* a list of resources that will change, but not all the details.
 
 For example, when changing the storage type in a template that deploys a single storage account to an existing environment.
 
 The PowerShell command parameter `-WhatIfResultFormat FullResourcePayloads` will produce the following results:
 
 ```output
-New-AzResourceGroupDeployment `
+PS > New-AzResourceGroupDeployment `
 >> -Name $deploymentName `
 >> -ResourceGroupName What-If `
 >> -TemplateFile $templateFile `
@@ -64,12 +64,12 @@ Resource changes: 1 to modify
 And, the PowerShell command parameter `-WhatIfResultFormat ResourceIdOnly` will produce the following results:
 
 ```output
-PS X:> Nw-AzureResourceGroupDeployment `
+PS > Nw-AzureResourceGroupDeployment `
 >> -Name $deploymentName `
 >> -ResourceGroupName What-if `
->> -TemplateFile  $templateFile
->> -storagePrefix  whatif `
->> -storageSKU  Standard_LRS `
+>> -TemplateFile $templateFile
+>> -storagePrefix whatif `
+>> -storageSKU Standard_LRS `
 >> -WhatIfResultFormat ResourceIdOnly `
 >> -Whatif
 

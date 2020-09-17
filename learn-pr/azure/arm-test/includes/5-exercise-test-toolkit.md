@@ -1,26 +1,28 @@
-You're part of a development team at the company Tailwind Traders. As part of that work you need to author ARM templates to deploy and manage resources in the Cloud. You want to ensure the templates follow some sounds practices before it's deployed. You therefore elect to use the ARM-ttk tool to help you analyze your templates, so you can rectify any problems. 
+You're part of a development team at the company Tailwind Traders. As part of that work you need to author ARM templates to deploy and manage resources in the cloud. You want to ensure the templates follow some sounds practices before it's deployed. You therefore elect to use the ARM Testing tool to help you analyze your templates, so you can rectify any problems. 
 
 ## Detect and fix issues on your template by running the Test toolkit
 
-You will run the arm-ttk tool on a deployment template and fix any errors it detects by changing the template.
+You will run the Test toolkit on a deployment template and fix any errors it detects by changing the template.
 
-1. Open a terminal window via VS Code.
-1. Clone the `ADDRESS` repo by running this command:
+1. **Create a template file**. Create a file called `azuredeploy.json`. Give it the following content:
 
-   ```bash
-   git clone <repo url>
-   ```
-
-1. Go to your files by running the command:
-
-   ```bash
-   cd <url>
-   ```
-
-1. You should now have access to these files:
-
-   ```bash
-   -| azuredeploy.json
+   ```json
+   {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+         "location": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]",
+            "metadata": {
+               "description": "Location for the resources."
+            }
+         }
+      },
+      "resources": [{
+         "location": "westus"
+      }]
+   }
    ```
 
 1. **Note down template location**. Before proceeding, make a note of the location of your files.
@@ -30,7 +32,7 @@ You will run the arm-ttk tool on a deployment template and fix any errors it det
    pwsh
    ```
 
-   You should see an output looking roughly like the below:
+   You should see an output looking similar to the below:
 
    ```output
    PowerShell 7.0.3
@@ -45,13 +47,13 @@ You will run the arm-ttk tool on a deployment template and fix any errors it det
    1. **Locate tool**. Next, in the terminal navigate to the location of the file **arm-ttk.psd1**
    1. **Import the arm-ttk module**. Type the following command in the terminal:
 
-      ```powershell-interactive
+      ```powershell
       Import-Module ./arm-ttk.psd1
       ```
   
    1. **Run the tool**. Ensure you use the location of your GitHub files below as an argument to **-TemplatePath**. Run the tool by typing the following command:
 
-      ```powershell-interactive
+      ```powershell
       Test-AzTemplate -TemplatePath path/to/starter/template
       ```
 
@@ -109,7 +111,7 @@ You will run the arm-ttk tool on a deployment template and fix any errors it det
 
          The tests are failing for two reasons:
 
-         - **The location parameter isn't used**. This error message might, for example,  indicate that we have used it in the past and forgot to clean it up. Or that it should be used but we forgot to update our code.
+         - **The location parameter isn't used**. This error message might, for example, indicate that we have used it in the past and forgot to clean it up. Or that it should be used but we forgot to update our code.
          - **The location property is set to the hardcoded string westus**. Using this option is not considered a good practice as you want to be able to control the location of a resource with input parameters when you are deploying.
 
 1. **Apply fix to template**. So how to fix the above failing tests?
@@ -134,7 +136,7 @@ You will run the arm-ttk tool on a deployment template and fix any errors it det
 
 1. **Verify the fix**. Run the test tool once again with the following command:
 
-   ```powershell-interactive
+   ```powershell
    Test-AzTemplate -TemplatePath path/to/starter/template
    ```
 

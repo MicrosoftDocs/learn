@@ -5,13 +5,13 @@
 Here, you will deploy an Azure Resource Manager (ARM) template from a sample repository that deploys a Virtual Network (VNet) in your sandbox subscription. Once the deployment is complete, you will then deploy a template that is slightly different. It differs in the following ways:
 
 1. **Changed address space**. A change of address space in a virtual subnet
-1. **Additional Subnet**. An additional Subnet in the virtual network
+1. **Additional subnet**. An additional subnet in the virtual network
 
 The second deployment will include the *what-if* operation in order to review the expected changes.
 
 ## Prerequisites
 
-- **Install VS Code extension**. This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
+- **Install Visual Studio Code extension**. This exercise uses the [Azure Resource Manager Tools for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools). Be sure to install this extension in Visual Studio Code.
 
 - **Install latest Azure CLI**. To use what-if in Azure CLI, you must have Azure CLI 2.5.0 or later. If needed, [install the latest version of Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest).
 
@@ -20,17 +20,17 @@ The second deployment will include the *what-if* operation in order to review th
 You will be able to deploy your ARM Template by carrying out the following steps:
 
 1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-1. **Set the active subscription**. This can be accomplished by invoking a PowersHell command-let.
-1. **Set default resource group**. Also this can be done by invoking a PowerShell command-let. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-1. **Carry out the deployment**. This step involves using the command-let **New-AzResourceGroupDeployment** with a URL to a template as an argument.
+1. **Set the active subscription**. This can be accomplished by invoking a PowerShell cmdlet.
+1. **Set default resource group**. Also this can be done by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
+1. **Carry out the deployment**. This step involves using the command **az deployment group create** with a URL to a template as an argument.
 
 ### Sign in to Azure
 
 1. **Open the integrated terminal in Visual Studio Code**. Be sure you are signing in to the same account that activated the sandbox.
 
-1. **Sign in to Azure**. From the VS Code terminal, run this command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
+1. **Sign in to Azure**. From the Visual Studio Code terminal, run this command to sign in to Azure. Running this command will open a browser that allows you to sign in to your account.
 
-    ```azurecli-interactive
+    ```azurecli
     az login
     ```
 
@@ -42,13 +42,13 @@ You will be able to deploy your ARM Template by carrying out the following steps
 
 1. **Get the subscription ID**. The command will list your subscriptions and their IDs. The subscription ID is the second column. Look for Concierge Subscription and copy the SubscriptionId (third column). It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*.
 
-    ```azurecli-interactive
+    ```azurecli
     az account list -o table
     ```
 
 1. **Change your active subscription to the Concierge Subscription**. Be sure to substitute *{Your subscription ID}* with the ID of the Concierge Subscription you just got in the last command.
 
-    ```azurecli-interactive
+    ```azurecli
     az account set -s {Your subscription ID}
     ```
 
@@ -58,14 +58,14 @@ You will be able to deploy your ARM Template by carrying out the following steps
 
     1. **Get the resource group name**. You first need to get the resource group name by using the following command.
 
-       ```azurecli-interactive
+       ```azurecli
        az group list -o table
        ```
 
     1. **Set the default name**. Use the name of the resource name provided by the last command in this command. (It will look like something like **learn-a73131a1-b618-48b8-af70-21af7ca420c4**). Using the name, will allow you to omit that parameter from the rest of the Azure PowerShell commands in this exercise.
 
-       ```azurecli-interactive
-       az configure --defaults group={Resource Group Name}
+       ```azurecli
+       az configure --defaults group=resource group name
        ```
 
     > [!NOTE]
@@ -73,11 +73,11 @@ You will be able to deploy your ARM Template by carrying out the following steps
 
 ### Deploy the first template to Azure
 
-Now that you have setup your subscription in the Visual Studio Code (VS Code) terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
+Now that you have setup your subscription in the Visual Studio Code (Visual Studio Code) terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
 
 1. **Deploy the template**. Type the following command in the terminal:
 
-    ```azurecli-interactive
+    ```azurecli
     az deployment group create \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
     ```
@@ -85,8 +85,6 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
     The terminal output will show ```Running...```. When that finishes, the results of the above command will be something similar to the below output:
 
     ```output
-    > az deployment group create \
-    >     --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
     {
       "id": "/subscriptions/03821083-c843-496d-b555-65106b80c178/resourceGroups/learn-2c05151d-0776-4ba4-b522-2543d030b66c/providers/Microsoft.Resources/deployments/what-if-before",
       "location": null,
@@ -170,7 +168,7 @@ The differences in the second template is:
 
 1. **Perform the *what-if* operation**. Type in the following Azure CLI command in the terminal:
 
-    ```azurecli-interactive
+    ```azurecli
     az deployment group \
       what-if \
       --template-uri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json"
@@ -179,7 +177,6 @@ The differences in the second template is:
     The *what-if* output appears similar to:
 
     ```output
-    > az deployment group what-if --template-uri https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json
     This command is in preview. It may be changed/removed in a future release.
     Note: As What-If is currently in preview, the result may contain false positive predictions (noise).
     You can help us improve the accuracy of the result by opening an issue here: https://aka.ms/WhatIfIssues.
@@ -222,7 +219,7 @@ In these next steps you will deploy an empty template over your existing environ
 
 1. **Run the deployment in complete mode**. Type the following Azure CLI command:
 
-    ```azurecli-interactive
+    ```azurecli
     az deployment group \
       --mode Complete \
       --confirm-with-what-if \

@@ -6,7 +6,7 @@ metadata:
   description: Use the What-if tool to predict what a deployment will carry out if applied.
   author: softchris
   ms.author: chnoring
-  ms.date: 09/02/2020
+  ms.date: 09/17/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface

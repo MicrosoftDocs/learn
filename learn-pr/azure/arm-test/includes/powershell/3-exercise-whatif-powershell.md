@@ -21,7 +21,7 @@ To verify the PowerShell version you can use the following command in a PowerShe
 
 You should see a similar output:
 
-```powershell-interactive
+```powershell
 > (Get-Host).Version
 
 Major  Minor  Build  Revision PSSemVerPreReleaseLabel    PSSemVerBuildLabel
@@ -55,9 +55,9 @@ There are potentially two different paths here:
 You will be able to deploy your ARM Template by carrying out the following steps:
 
 1. **Sign in to Azure**. You will be able to sign in using Visual Studio Code and using the integrated terminal.
-1. **Set the active subscription**. This can be accomplished by invoking a PowerShell command-let.
-1. **Set default resource group**. Also this can be done by invoking a PowerShell command-let. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
-1. **Carry out the deployment**. This step involves using the command-let **New-AzResourceGroupDeployment** with a URL to a template as an argument.
+1. **Set the active subscription**. This can be accomplished by invoking a PowerShell cmdlet.
+1. **Set default resource group**. Also this can be done by invoking a PowerShell cmdlet. The reason for setting these default values on subscription and resource group is to ensure the resources are created in the correct place.
+1. **Carry out the deployment**. This step involves using the cmdlet **New-AzResourceGroupDeployment** with a URL to a template as an argument.
 
 ### Sign in to Azure
 
@@ -110,7 +110,7 @@ You can sign into your Azure account from the terminal. If you are on Windows, t
 
 ### Deploy the first template to Azure
 
-Now that you have setup your subscription in the Visual Studio Code (VS Code) terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
+Now that you have setup your subscription in the Visual Studio Code (Visual Studio Code) terminal, you are ready to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources being created. However, you'll see a successful deployment.
 
 1. **Deploy the template**. Use the following PowerShell AZ module commands in the terminal.
 
@@ -121,7 +121,7 @@ Now that you have setup your subscription in the Visual Studio Code (VS Code) te
 
     You'll see the text **Running...** in the terminal. When the command finishes, the results of the above command should be something like the following
 
-    ```powershell-interactive
+    ```powershell
     > New-AzResourceGroupDeployment `
     >> -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-before.json"
 
@@ -171,7 +171,7 @@ The differences in the second template is:
 - **Subnet removed**. A subnet has been removed.
 - **Prefix changed**. Address prefix has changed.
 
-1. **Perform the *what-if* operation**. Use the following PowerShell command, note how you are calling the same command-let when deploying but you use *-Whatif* as an argument.
+1. **Perform the *what-if* operation**. Use the following PowerShell command, note how you are calling the same cmdlet when deploying but you use *-Whatif* as an argument.
 
     ```powershell
     New-AzResourceGroupDeployment `
@@ -181,7 +181,7 @@ The differences in the second template is:
 
     The what-if output appears similar to:
 
-    ```powershell-interactive
+    ```powershell
     > New-AzResourceGroupDeployment `
     >>   -Whatif `
     >>   -TemplateUri "https://raw.githubusercontent.com/Azure/azure-docs-json-samples/master/azure-resource-manager/what-if/what-if-after.json"
@@ -241,7 +241,7 @@ In these next steps you will deploy an empty template over your existing environ
 
     The output will be similar to the below.
 
-    ```powershell-interactive
+    ```powershell
     > New-AzResourceGroupDeployment `
     >> -Mode Complete `
     >> -Confirm `

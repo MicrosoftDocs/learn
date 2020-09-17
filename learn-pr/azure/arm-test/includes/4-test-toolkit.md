@@ -12,7 +12,7 @@ There are recommendations on different levels, everything from parameters and va
 
 ## The test toolkit
 
-For the reasons mentioned above, using a testing tool is a good idea so you can focus on authoring while knowing that a tool will find any issues and make your templates better. There is such a testing tool called the ARM Template Test toolkit or **arm-ttk** for short.
+For the reasons mentioned above, using a testing tool is a good idea so you can focus on authoring while knowing that a tool will find any issues and make your templates better. There is such a testing tool called the ARM Template Test toolkit or **Test Toolkit** for short.
 
 It addresses the problems mentioned above by running a series of tests. The tests can be grouped into the following categories:
 
@@ -28,7 +28,7 @@ The tool is a PowerShell script. To be able to run it, you would need to go thro
 1. **Download the script**. The script is hosted in a GitHub repository and can be downloaded from there or fetched via a `git clone` command.
 1. **Import the script**. This step is just a one-liner instruction that you enter in a terminal window and looks like this:
 
-   ```bash
+   ```powershell
    Import-Module .\arm-ttk.psd1
    ```
 
@@ -40,7 +40,7 @@ Now you are ready to run the tests on your template.
 
 Running the tests involves invoking the script with the appropriate arguments. The `-TemplatePath` is a mandatory argument that expects a string that points to the location of the starter deployment template, which is either `azuredeploy.json` or `maintemplate.json`. A typical test run can therefore look like the below command:
 
-```bash
+```powershell
 Test-AzTemplate.sh -TemplatePath path/to/template
 ```
 
@@ -70,7 +70,7 @@ The arguments can be used in the following ways:
 
 - **Run tests on a single file**. You might want to only run tests on a single file you are currently working on. To test out a single file type the following command in the terminal:
 
-   ```bash
+   ```powershell
    Test-AzTemplate -TemplatePath path/to/starter/template -File cdn.json
    ```
 
@@ -78,7 +78,7 @@ The arguments can be used in the following ways:
 
 - **Run a single type of test on all files**. Sometimes you might want to run only a single type of test to ensure you are fulfilling the criteria for just that scenario. You can accomplish this task by typing the following command in the terminal:
 
-   ```bash
+   ```powershell
    Test-AzTemplate -TemplatePath path/to/starter/template -Test "Resources Should Have Location"
    ```  
 

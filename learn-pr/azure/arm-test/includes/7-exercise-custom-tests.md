@@ -1,29 +1,22 @@
-As a member of a product team it's important to be able to implement some team or domain-specific rules. A way to do so is to implement the rules as tests that you can run with the test tool **arm-ttk**.
+As a member of a product team it's important to be able to implement some team or domain-specific rules. A way to do so is to implement the rules as tests that you can run with the test tool Test Toolkit.
 
 ## Author and run a Custom test
 
-You will author a custom test and use the **arm-ttk** tool to run it. Furthermore you will need to correct the deployment template to ensure the test passes. The custom test will be looking to verify that all parameters follow a naming rule. This rule is a domain-specific requirement on the product the team you are working on.
+You will author a custom test and use the Test Toolkit tool to run it. Furthermore you will need to correct the deployment template to ensure the test passes. The custom test will be looking to verify that all parameters follow a naming rule. This rule is a domain-specific requirement on the product the team you are working on.
 
 1. Open a terminal window
-1. Clone the `ADDRESS` repo by running this command:
+1. **Create a template file**. Create a file called `azuredeploy.json`. Give it the following content:
 
-   ```bash
-   git clone <repo url>
+   ```json
+   {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {},
+      "resources": []
+   }
    ```
 
-1. Go to your files by running the command:
-
-   ```bash
-   cd <url>
-   ```
-
-1. You should now have access to these files:
-
-   ```bash
-   azuredeploy.json
-   ```
-
-1. Locate your installation directory for the **arm-ttk** tool.
+1. Locate your installation directory for the Test Toolkit tool.
 1. Place yourself in the sub directory **testcases/deploymentTemplate**
 1. Create a file **Custom-ParameterNaming.test.ps1** and give the file the following content:
 
@@ -37,7 +30,7 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
    Write-Error "To be implemented"
    ```
 
-1. Ensure the **arm-ttk** tool runs this file by starting a test run with the following command at the root of the installation directory:
+1. Ensure the Test Toolkit tool runs this file by starting a test run with the following command at the root of the installation directory:
 
    1. Start the PowerShell shell:
 
@@ -47,13 +40,13 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    1. Import the **arm-ttk** module.
 
-      ```powershell-interactive
+      ```powershell
       Import-Module ./arm-ttk.psd1
       ```
 
-   1. Run the **arm-ttk** tool by typing the following command in the terminal, don't forget to change the **-TemplatePath** argument to your path:
+   1. Run the Test Toolkit tool by typing the following command in the terminal, don't forget to change the **-TemplatePath** argument to your path:
 
-      ```powershell-interactive
+      ```powershell
       Test-AzTemplate -TemplatePath /path/to/deployment/template
       ```
 
@@ -138,7 +131,7 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
    }
    ```
 
-   The above code iterates through all the parameters and inspects its name and checks whether it the name starts with **tailwind**. If parameter does not match naming rule, then the code invokes the **Write-Error** command-let with a suitable message.
+   The above code iterates through all the parameters and inspects its name and checks whether it the name starts with **tailwind**. If parameter does not match naming rule, then the code invokes the **Write-Error** cmdlet with a suitable message.
 
 1. Open up **azuredeploy.json** and change it to the following content:
 
@@ -160,7 +153,7 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    The above template content defines a parameter **location** that doesn't fulfil the naming rule, as it lacks the **tailwind** prefix in its naming.
 
-1. Run the **arm-ttk** tool.
+1. Run the Test Toolkit tool.
 
    1. Place yourself at the installation directory root.
    1. Start the PowerShell shell by typing the following terminal command:
@@ -169,15 +162,15 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
       pwsh
       ```
 
-   1. Type the following to import the arm-ttk module:
+   1. Type the following to import the **arm-ttk** module:
 
-      ```powershell-interactive
+      ```powershell
       Import-Module ./arm-ttk.psd1
       ```
 
-   1. Run the **arm-ttk** tool by typing the following command in the terminal:
+   1. Run the Test Toolkit tool by typing the following command in the terminal:
 
-      ```powershell-interactive
+      ```powershell
       Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-ParameterNaming
       ```
 
@@ -214,7 +207,7 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    Above the parameter **location** has been renamed to **tailwindLocation**. In theory, this parameter should now pass the test. Let's verify.
 
-1. Run the **arm-ttk** tool:
+1. Run the Test Toolkit tool:
 
    1. Place yourself at the installation directory root.
    1. Start the PowerShell shell by typing the following terminal command:
@@ -225,13 +218,13 @@ You will author a custom test and use the **arm-ttk** tool to run it. Furthermor
 
    1. Type the following to import the **arm-ttk** module:
 
-      ```powershell-interactive
+      ```powershell
       Import-Module ./arm-ttk.psd1
       ```
 
-   1. Run the **arm-ttk** tool by typing the following command in the terminal:
+   1. Run the Test Toolkit tool by typing the following command in the terminal:
 
-      ```powershell-interactive
+      ```powershell
       Test-AzTemplate -TemplatePath /path/to/deployment/template -Test Custom-ParameterNaming
       ```
 

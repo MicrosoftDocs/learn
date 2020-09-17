@@ -1,6 +1,6 @@
 So far you've looked at how to run some tests on your templates. However, you might operate in a domain like a company or team that has its own set of rules. These rules could mean that you want to *customize* what the test experience is like. You might have the following scenarios:
 
-- **Run specific test suite**. Upon install of the **arm-ttk** tool, you're given a set of tests that will be run. These tests are located at the following directory **<install directory>/arm-ttk/testcases/deploymentTemplate**. It is possible to *customize* this test run experience. One way to customize, as we've seen in the previous unit, is by using the parameter **-Test**. You can also edit what tests are being run by removing files in the mentioned directory.
+- **Run specific test suite**. Upon install of the Test Toolkit tool, you're given a set of tests that will be run. These tests are located at the following directory **<install directory>/arm-ttk/testcases/deploymentTemplate**. It is possible to *customize* this test run experience. One way to customize, as we've seen in the previous unit, is by using the parameter **-Test**. You can also edit what tests are being run by removing files in the mentioned directory.
 - **Author and run domain-specific tests**. It is possible to author your own set of tests to enforce domain-specific rules. This unit will focus mostly on this scenario.
 
 ## Authoring and running your own tests
@@ -25,7 +25,7 @@ To author a test file name, you need to write it in PowerShell. There are three 
 
 - **Documentation**. This part is optional but highly advantageous to add. It resides at the top of the file and is usually consisting of a set of comments describing the test, what it does and how to call it. It can look, for example,  like so:
 
-   ```bash
+   ```powershell
    <#
    .Synopsis
        Ensures that all IDs use the resourceID() function.

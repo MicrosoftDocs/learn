@@ -6,7 +6,7 @@ metadata:
   description: Author and run custom tests to ensure your templates complies with org-specific requirements.
   author: softchris
   ms.author: chnoring
-  ms.date: 09/02/2020
+  ms.date: 09/17/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

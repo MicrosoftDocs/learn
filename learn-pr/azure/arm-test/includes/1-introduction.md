@@ -1,6 +1,6 @@
 Azure Resource Manager (ARM) templates use things like parameters, variables, functions, and more to create the templates. These constructs allow you to save time, as you don't need to create a new template per environment, you get consistent naming and so on.
 
-You are the person on a software team authoring these templates. You plan to deploy the described infrastructure in the templates. As you author these templates you care about having a fast feedback loop. It's important that you can be made aware of any issues prior to deployment. Issues that can occur while authoring can be things such as errors in the template/s or violation against best practices or that you simply aren't deploying what you think you are deploying.
+You are the person on a software team for the company Tailwind Traders authoring these templates. You plan to deploy the described infrastructure in the templates. As you author these templates you care about having a fast feedback loop. It's important that you can be made aware of any issues prior to deployment. Issues that can occur while authoring can be things such as errors in the template/s or violation against good practices or that you simply aren't deploying what you think you are deploying.
 
 You decide to evaluate the existing set of tools that addresses the above issues.
 
