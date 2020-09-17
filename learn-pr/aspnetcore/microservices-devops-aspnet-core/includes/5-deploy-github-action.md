@@ -12,7 +12,7 @@ Create a GitHub Action for deployment of the coupon service with the following s
 1. Select the **:::no-loc text="Actions":::** tab again, select the **:::no-loc text="New workflow":::** button, and select the **:::no-loc text="set up a workflow yourself":::** link.
 1. Replace the YAML in the editor with the following YAML:
 
-    ```yml
+    ```yaml
     name: eShop deploy
 
     on:
@@ -62,7 +62,7 @@ Create a GitHub Action for deployment of the coupon service with the following s
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` runner and has five steps:
         1. `Azure Kubernetes set context` sets the AKS credentials in the runner's *:::no-loc text=".kube/config":::* file.
         1. `Get code from the repository` checks out the code from the repository.
-        1. `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
+        1. `Helm tool installer` installs [Helm](https://helm.sh/), an open-source package manager for Kubernetes.
         1. `Azure Login` logs in to Azure using the service principal credentials.
         1. `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
