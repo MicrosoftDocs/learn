@@ -4,7 +4,7 @@ Start by creating a folder for your code on your computer where you can easily f
 
 Next, open Visual Studio Code. From the **Start** screen, select **Open folder** and choose your **WW84** folder.
 
-![Screenshot that shows how to open a folder in V S Code.](../media/2-open-folder-vscode.png)
+![Screenshot that shows how to open a folder in Visual Studio Code.](../media/2-open-folder-vscode.png)
 
 Now create a file called **decrypt.py**.
 

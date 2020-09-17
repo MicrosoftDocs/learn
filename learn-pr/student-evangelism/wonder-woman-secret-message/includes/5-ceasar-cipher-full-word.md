@@ -1,22 +1,22 @@
 Now that you know how to decode one letter given a certain shift amount, you can decode entire words and phrases!
 
-To decipher a complete word, you need to invoke the `lassoLetter()` function for each letter in the word, and then put all of the decoded letters together into a decoded word. 
+To decipher a complete word, you need to invoke the `lassoLetter()` function for each letter in the word. Then you put all of the decoded letters together into a decoded word. 
 
-This time you'll write a function called `lassoWord()` that has two parameters: `word` and `shiftAmount`. 
+This time, you'll write a function called `lassoWord()` that has two parameters: `word` and `shiftAmount`. 
 
 ```python
 def lassoWord( word, shiftAmount ):
 ```
 
-## Words are collections of letters
+## Words as collections of letters
 
-One way to think about words is that they're really just collections of letters. For example, you could think of the word "Hello" as:
+One way to think about words is that they're really just collections of letters. For example, you can think of the word "Hello" as:
 
 > 'H' - 'e' - 'l' - 'l' - 'o'
 
-A variable can be a name for one piece of data: one word, one letter, one formula, one function, and so on. Python has many ways to represent collections of data. One way is with a "list."
+A variable can be a name for one piece of data: one word, one letter, one formula, one function, and so on. Python has many ways to represent collections of data. One way is with a *list*.
 
-A list is exactly what it sounds like. A word can be considered as a list of letters. Even better: Python has a way to loop through each item in a list one at a time! 
+A list is exactly what it sounds like. A word can be considered a list of letters. Even better: Python has a way to loop through each item in a list one at a time. 
 
 ## List iteration with a for loop
 
@@ -37,7 +37,7 @@ def lassoWord( word, shiftAmount ):
     for letter in word:
 ```
 
-Now that you understand this Python functionality, you can do something to _each letter_ in a word like invoking the `lassoLetter()` function.
+Now that you understand this Python functionality, you can do something to _each letter_ in a word, like invoking the `lassoLetter()` function.
 
 ## Invoke the lassoLetter() function
 
@@ -50,14 +50,14 @@ def lassoWord( word, shiftAmount ):
         lassoLetter( letter, shiftAmount )
 ```
 
-Remember when you wrote the `lassoLetter()` function, that the last line of code in the function was the following:
+Remember that when you wrote the `lassoLetter()` function, the last line of code in the function was the following:
 
 ```python
 # Send the decoded letter back
 return decodedLetter
 ```
 
-This is called a `return statement`. This statement sends back the value to the line that invoked the function. To capture that return value, all you have to do is use a variable!
+This is called a *return statement*. This statement sends back the value to the line that invoked the function. To capture that return value, all you have to do is use a variable:
 
 ```python
 def lassoWord( word, shiftAmount ):
@@ -84,7 +84,7 @@ You can trace the code to see how this works:
 | 4 | 'l' | 'm' | |
 | 5 | 'o' | 'p' | |
 
-What you're left with is a variable named `decodedLetter` with a value of just the letter 'p'. But, what you wanted was a variable named `decodedWord` to have the value "ifmmp." Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign `+` between two words or letters to combine them together.
+You're left with a variable named `decodedLetter` that has a value of just the letter 'p'. But, what you wanted was a variable named `decodedWord` to have the value `ifmmp`. Recall from the Python basics that we reviewed earlier in this module, you can use the plus sign (`+`) between two words or letters to combine them.
 
 ```python
 def lassoWord( word, shiftAmount ):
@@ -110,7 +110,7 @@ With this code, the entire word is now stored in the variable `decodedWord`. You
 
 ### Comment your code
 
-Don't forget to add comments to your code, so you know exactly what's happening! (If you return to this exercise later on, you don't want to have to decipher your own code, pun intended.)
+Don't forget to add comments to your code, so you know exactly what's happening! (If you return to this exercise later on, you don't want to have to decipher your own code.)
 
 ```python
 # Define a function to find the truth in a secret message
@@ -138,20 +138,20 @@ def lassoWord( word, shiftAmount ):
 
 ## Test your functions
 
-Press the green **Play** button, and ... nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function, but -- nothing invokes the `lassoWord()` function yet! 
+Press the green **Play** button, and ... nothing should happen. You've written your two functions, and the `lassoWord()` function does invoke the `lassoLetter()` function. But nothing invokes the `lassoWord()` function yet! 
 
-Test your new code by invoking the `lassoWord()` function with **terra** as the value for the `word` parameter and **13** as the value for the `shiftAmount` parameter. 
+Test your new code by invoking the `lassoWord()` function with `terra` as the value for the `word` parameter and `13` as the value for the `shiftAmount` parameter. 
 
 ```python
 # Try to decode the word "terra"
 print( "Shifting terra by 13 gives: \n" + lassoWord( "terra", 13 ) )
 ```
 
-Now when you press the **Play** button, you should see the word **green** printed in the console:
+Now when you press the **Play** button, you should see the word **green** printed on the console:
 
 ![Screenshot of a test of calls to the lasso functions.](../media/test-lasso-functions.png)
 
-## Review complete decrypt.py file
+## Review the complete decrypt.py file
 
 Now that you've written two lasso functions, your complete **decrypt.py** file should look like this:
 

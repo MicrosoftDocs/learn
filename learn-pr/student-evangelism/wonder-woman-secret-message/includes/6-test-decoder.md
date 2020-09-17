@@ -10,7 +10,7 @@ After our analysis in this module, here's what you need to do to decode the mess
 
 ## Add print statements
 
-Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your ** decrypt.py** file to print all the decoded words.
+Just like when you tested your `lassoWord()` function on the word "terra" and shifted it by 13, you can add `print()` statements to the bottom of your **decrypt.py** file to print all the decoded words.
 
 ```python
 print( "Shifting WHY by 13 gives: \n" + lassoWord( "WHY", 13 ) )

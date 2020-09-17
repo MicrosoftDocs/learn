@@ -1,14 +1,14 @@
-How to figure out the **true** letter code that matches the decoded letter involves cycling around the alphabet. If your `letterCode` + `shiftAmount` is equal to or greater than 123, you need to return back to 97 to continue counting.
+How to figure out the *true* letter code that matches the decoded letter involves cycling around the alphabet. If your `letterCode` + `shiftAmount` value is equal to or greater than 123, you need to return to 97 to continue counting.
 
-How do you get 123? It's just 97 (the letter code for the 'a' character) plus 26 (the number of letters in the alphabet). If you look at the ASCII number for 'z', you'll see that it's 122!
+How do you get 123? It's just 97 (the letter code for the 'a' character) plus 26 (the number of letters in the alphabet). If you look at the ASCII number for 'z', you'll see that it's 122.
 
-You could write conditional statements to check this value, but there's an easier way!
+You could write conditional statements to check this value, but there's an easier way.
 
 ## Mod operator
 
-To wrap around the alphabet the easy way, you need a special operator called `mod`, which is the percent sign **%**. 
+To wrap around the alphabet the easy way, you need a special operator called `mod`, which is the percent sign (%). 
 
-`Mod` (%) divides two numbers and returns the remainder. If you run the following code in Python to set three variables by using `mod`:
+The `mod` operator divides two numbers and returns the remainder. If you run the following code in Python to set three variables by using `mod`:
 
 ```python
 threeTwo = 3 % 2
@@ -30,11 +30,11 @@ With the `mod` operator in mind, you need two new variables:
 - `aAscii`: Holds the ASCII code value for the letter 'a'. We get this value by calling the `ord('a')` function and passing in the letter.
 - `alphabetSize`: Holds the number of letters in the alphabet, 26.
 
-Here's the formula to figure out what is the `trueLetterCode` value:
+Here's the formula to figure out the `trueLetterCode` value:
 
 `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 
-You can review this formula with a couple examples.
+You can review this formula with a couple of examples.
 
 ### Example 1: Letter 'a' and shift by 2
 
@@ -52,7 +52,7 @@ Start with these two values:
 | `trueLetterCode` | 97 + (((97 - 97) + 2) % 26)  | 2 <br>**Note:** See the detailed explanation for this calculation after the table. | |
 | `decodedLetter`  | `chr(99)`  | `c` | |
 
-You can review the formula for `trueLetterCode` just like you would any other math formula (remember to follow _PEMDAS_ order of operations):
+You can review the formula for `trueLetterCode` just as you would any other math formula. Follow [PEMDAS](https://www.bing.com/search?q=pemdas&form=QBLH&sp=-1&pq=&sc=0-0&qs=n&sk=&cvid=AC7B1BB83E3C4E5B9C6F4AAEF3A32874), where you evaluate a mathematical expression in the order of parenthesis, exponents, multiplication, division, addition, and subtraction.
 
 > `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 > 
@@ -78,7 +78,7 @@ Start with these two values:
 | `trueLetterCode` | 97 + (((119 - 97) + 13) % 26)  | 106 <br>**Note:** See the detailed explanation for this calculation after the table. | |
 | `decodedLetter`  | `chr(106)` | `j` | |
 
-You can review the formula for `trueLetterCode` just like you would any other math formula (remember PEMDAS):
+You can review the formula for `trueLetterCode` just as you would any other math formula (remember PEMDAS):
 
 > `aAscii` + (((`letterCode` - `aAscii`) + `shiftAmount`) % `alphabetSize`)
 > 
@@ -119,6 +119,6 @@ def lassoLetter( letter, shiftAmount ):
     return decodedLetter
 ```
 
-Now that you have the `lassoLetter()` function, you can call this on each letter in the secret message!
+Now that you have the `lassoLetter()` function, you can call this on each letter in the secret message.
 
 *WONDER WOMAN 1984 TM & © DC and WBEI. RATED PG-13*
