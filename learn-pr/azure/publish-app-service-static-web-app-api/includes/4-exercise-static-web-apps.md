@@ -6,59 +6,28 @@ Now that you've created your GitHub repository, you can create a Static Web Apps
 
 This tutorial uses the Azure sandbox to provide you with a free, temporary Azure subscription you can use to complete the exercise. Before proceeding, make sure you have activated the sandbox at the top of this page.
 
-## Customize Visual Studio Code
+The Azure sandbox that you just activated allows you to use Azure services without incurring any costs.
 
-Before you begin, you need to grant Visual Studio Code access to the Azure subscription used by the sandbox. This subscription was created when you activate the sandbox and allows you to use Azure services without incurring any costs.
+## Install the Azure Static Web Apps extension for Visual Studio
 
-### Add concierge tenant to Visual Studio Code
+1. Go to the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestaticwebapps&azure-portal=true) and install the **Azure Static Web Apps** extension for Visual Studio Code.
 
-The following steps associate the free Azure subscription created for you with Visual Studio Code. At the end of the tutorial you'll follow steps to restore Visual Studio Code back to its original settings.
+1. When the extension tab loads in Visual Studio Code, click **Install**.
 
-1. In the Cloud Shell, run the following command and copy the tenant ID to your clipboard.
+1. After installation is complete, click **Reload**.
 
-   ```bash
-   az account list --query "[?name=='Concierge Subscription'].tenantId" -o tsv
-   ```
+## Sign into Azure in Visual Studio Code
 
-1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
+1. In Visual Studio Code, sign in to Azure by clicking **View** > **Command Palette** and typing **Azure: Sign In**. You must have the [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account&azure-portal=true) extension installed to use Azure: Sign In.
 
-1. Open settings in Visual Studio Code. On Windows or Linux, select **File > Preferences > Settings**. On macOS, select **Code > Preferences > Settings**.
+   > [!IMPORTANT]
+   > Login to Azure using the same account used to create the sandbox. The sandbox provides access to a Concierge Subscription.
 
-1. Navigate through **User Settings > Extensions > Azure configuration**
-
-1. Enter the tenant in the **Azure: Tenant** textbox.
-
-![Add tenant ID to Visual Studio Code Azure extension configuration](../media/vs-code-tenant.png)
-
-### Sign out and back in
-
-Now that you've made these changes, you need to sign out and back into the Azure extension.
-
-1. Press **F1** to open the Visual Studio Code command palette.
-
-1. Search for and select **Azure: Sign Out**.
-
-1. Press **F1** again.
-
-1. Search for and select **Azure: Sign In** and sign in with the same account you used to sign into the Learn sandbox.
-
-### Select subscription
-
-1. Click on the Azure extension icon.
-
-   ![Visual Studio Code Azure extension icon](../media/vs-code-azure-extension-icon.png)
-
-1. Under the _Static Web Apps (Preview)_ heading, click on **Select Subscriptions**.
-
-   ![Visual Studio Code Azure extension: Functions section](../media/vs-code-select-subscriptions.png)
-
-1. Next, the command palette appears. Select **Concierge Subscription** and click **OK**.
-
-   ![Visual Studio Code Azure extension: Select concierge subscription](../media/vs-code-select-concierge.png)
-
-Now Visual Studio Code is configured to use the sandbox resources and avoid any billing against your account.
+1. Follow the prompts to copy and paste the code provided in the web browser, which authenticates your Visual Studio Code session.
 
 ## Create a static web app
+
+1. Open Visual Studio Code and go to **File > Open Folder** to open the repository you cloned to your computer in the editor.
 
 1. Inside Visual Studio Code, select the Azure logo in the Activity Bar to open the Azure extensions window.
 
