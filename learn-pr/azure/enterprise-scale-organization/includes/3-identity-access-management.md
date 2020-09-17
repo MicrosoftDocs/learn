@@ -12,14 +12,130 @@ Identity and access management is a multistep process that involves careful plan
 
 When planning for role-based access, use custom RBAC role definitions within the Azure AD tenant and consider the following key roles:
 
-> [!div class="mx-tdBreakAll"]
-> | Role | Usage | Actions | No actions |
-> |--|--|--|--|
-> | Azure platform owner | Management group and subscription lifecycle management | `*` |  |
-> | Network management (NetOps) | Platform-wide global connectivity management: virtual networks, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute, and others | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |  |
-> | Security operations (SecOps) | Security administrator role with a horizontal view across the entire Azure estate | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |  |
-> | Subscription owner | Delegated role for subscription owner derived from subscription owner role | `*` | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
-> | Application owners (DevOps/AppOps) | Contributor role granted for application/operations team |  | `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action` |
+- **Azure platform owner**: Used for management group and subscription lifecycle management.
+
+  ```json
+  {
+    "Name": "Azure platform owner",
+    "Id": "88888888-8888-8888-8888-888888888888",
+    "IsCustom": true,
+    "Description": "Used for management group and subscription lifecycle management.",
+    "Actions": [
+      "*"
+    ],
+    "NotActions": [],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+      "/"
+    ]
+  }
+  ```
+
+- **Network management (NetOps)**: Used for platform-wide global connectivity management of virtual networks, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute, and others.
+
+  ```json
+  {
+    "Name": "NetOps",
+    "Id": "88888888-8888-8888-8888-888888888888",
+    "IsCustom": true,
+    "Description": "Used for platform-wide global connectivity management of network resources.",
+    "Actions": [
+      "*/read",
+      "Microsoft.Authorization/*/write",
+      "Microsoft.Network/vpnGateways/*",
+      "Microsoft.Network/expressRouteCircuits/*",
+      "Microsoft.Network/routeTables/write",
+      "Microsoft.Network/vpnSites/*"
+    ],
+    "NotActions": [],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+      "/"
+    ]
+  }
+  ```
+
+- **Security operations (SecOps)**: Security administrator role with a horizontal view across the entire Azure estate.
+
+  ```json
+  {
+    "Name": "SecOps",
+    "Id": "88888888-8888-8888-8888-888888888888",
+    "IsCustom": true,
+    "Description": "Used for platform-wide visibility of security resources.",
+    "Actions": [
+      "*/read",
+      "*/register/action",
+      "Microsoft.KeyVault/locations/deletedVaults/purge/action",
+      "Microsoft.Insights/alertRules/*",
+      "Microsoft.Authorization/policyDefinitions/*",
+      "Microsoft.Authorization/policyAssignments/*",
+      "Microsoft.Authorization/policySetDefinitions/*",
+      "Microsoft.PolicyInsights/*",
+      "Microsoft.Security/*"
+    ],
+    "NotActions": [],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+      "/"
+    ]
+  }
+  ```
+
+- **Subscription owner**: Delegated role for subscription owner derived from subscription owner role.
+
+  ```json
+  {
+    "Name": "Subscription owner",
+    "Id": "88888888-8888-8888-8888-888888888888",
+    "IsCustom": true,
+    "Description": "Delegated role for subscription owner derived from subscription owner role.",
+    "Actions": [
+      "*"
+    ],
+    "NotActions": [
+      "Microsoft.Authorization/*/write",
+      "Microsoft.Network/vpnGateways/*",
+      "Microsoft.Network/expressRouteCircuits/*",
+      "Microsoft.Network/routeTables/write",
+      "Microsoft.Network/vpnSites/*"
+    ],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+      "/"
+    ]
+  }
+  ```
+
+- **Appliction owners (DevOps/AppOps)**: Contributor role granted for application/operations team.
+
+  ```json
+  {
+    "Name": "Application owners",
+    "Id": "88888888-8888-8888-8888-888888888888",
+    "IsCustom": true,
+    "Description": "Contributor role granted for application/operations team.",
+    "Actions": [
+      "*"
+    ],
+    "NotActions": [
+      "Microsoft.Network/publicIPAddresses/write",
+      "Microsoft.Network/virtualNetworks/write",
+      "Microsoft.KeyVault/locations/deletedVaults/purge/action"
+    ],
+    "DataActions": [],
+    "NotDataActions": [],
+    "AssignableScopes": [
+      "/subscriptions/{applicationSubscriptionId1}",
+      "/subscriptions/{applicationSubscriptionId2}",
+      "/providers/Microsoft.Management/managementGroups/{applicationGroupId1}"
+    ]
+  }
+  ```
 
 ### Identity and access management design recommendations and considerations
 
