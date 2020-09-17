@@ -155,18 +155,18 @@ Now Visual Studio Code is configured to use the sandbox resources and avoid any 
 
    :::image type="content" source="../media/extension-confirmation.png" alt-text="Created confirmation":::
 
-10. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **Production** and select **Open in Portal** to view app in the Azure portal.
+10. In the Visual Studio Code Explorer window, return to the _Static Web Apps_ section and right-click on **my-first-static-web-app** and select **Open in Portal** to view app in the Azure portal.
 
     :::image type="content" source="../media/extension-open-in-portal.png" alt-text="Open portal":::
 
 > [!NOTE]
-> Your repository is extraordinary in that it contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
+> Your repository is a bit different than the ones you may have used in the past. It contains four different apps in four different folders. Each folder contains an app created in a different JavaScript framework. This isn't common. Typically, you have one app in the root of your repository and specify `/` for the app path location. This is a great example of why Azure Static Web Apps lets you configure the locations in the first place - you get full control over how the app is built.
 
 ### Review the GitHub Action
 
 At this stage, your Static Web Apps instance is created in Azure, but your app isn't yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
 
-You can check the status of your build and deploy action by clicking the link shown below to navigate to the Actions page of your GitHub repository:
+You can check the status of your build and deploy action by clicking the link shown below screenshot allows you to navigate to the Actions page of your GitHub repository:
 
 :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
