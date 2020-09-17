@@ -4,8 +4,6 @@
 
 Management group structures within an Azure Active Directory (Azure AD) tenant support organizational mapping and must be considered thoroughly when an organization plans Azure adoption at scale.
 
-:::image type="content" source="../media/4-subscription-organization.png" alt-text="Figure 1: Management group and subscription organization.":::
-
 **Recommendations**:
 
 - Keep the management group hierarchy reasonably flat with no more than three to four levels, ideally. This restriction reduces management overhead and complexity.
