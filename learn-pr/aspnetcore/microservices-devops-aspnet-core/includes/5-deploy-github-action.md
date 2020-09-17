@@ -60,11 +60,11 @@ Create a GitHub Action for deployment of the coupon service with the following s
 
     - Is triggered when a commit is pushed to the coupon service's Helm chart in the `main` branch.
     - Has one job, named `deploy-to-aks`, that deploys new images. The job runs in an `ubuntu-latest` runner and has five steps:
-        - `Azure Kubernetes set context` sets the AKS credentials in the runner's *:::no-loc text=".kube/config":::* file.
-        - `Get code from the repository` checks out the code from the repository.
-        - `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
-        - `Azure Login` logs in to Azure using the service principal credentials.
-        - `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
+        1. `Azure Kubernetes set context` sets the AKS credentials in the runner's *:::no-loc text=".kube/config":::* file.
+        1. `Get code from the repository` checks out the code from the repository.
+        1. `Helm tool installer` installs Helm, an open-source package manager for Kubernetes.
+        1. `Azure Login` logs in to Azure using the service principal credentials.
+        1. `Deploy` executes the `helm upgrade` command, passing the ACR instance name as the `registry` parameter. This parameter tells Helm to use your ACR instance rather than the public container registry.
 
 1. Replace the default workflow file name of *:::no-loc text="main.yml":::* with *:::no-loc text="deploy.yml":::*.
 1. Commit the *deploy.yml* workflow file directly to the `main` branch.
@@ -77,7 +77,7 @@ To trigger a deployment, you'll increment the `appVersion` in the coupon service
 
 1. From the **:::no-loc text="Code":::** tab, edit the *:::no-loc text="deploy/k8s/helm-simple/coupon/Chart.yaml":::* file by clicking the edit icon. Update the `appVersion` property value to `1.1.0`:
 
-    :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/Chart.yaml" highlight="8":::
+    :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/chart.yaml" highlight="8":::
 
     It's important that you update the app version in the Helm chart. This change causes the pod to be replaced when the chart is deployed to AKS with `helm upgrade`.
 1. Commit and push this change to the `main` branch.
