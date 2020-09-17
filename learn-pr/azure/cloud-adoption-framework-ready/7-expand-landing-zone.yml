@@ -9,6 +9,6 @@ metadata:
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 20
 content: |
   [!include[](includes/7-expand-landing-zone.md)]

@@ -1,23 +1,25 @@
 ### YamlMime:Module
 uid: learn.azure.cloud-adoption-framework-ready
 metadata:
-  title: "TBD - Learn"
-  description: TBD
+  title: "Choose the best Azure Landing Zone to support your cloud operations requirements"
+  description: Azure Landing Zones help accelerate configuration of your environment to meet your operational requirements.
   ms.date: 09/22/2020
-  author: jamcneil
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: "TBD"
+title: "Choose the best Azure Landing Zone to support your cloud operations requirements"
 summary: TBD.
 abstract: |
   In this module, you will:
-  - A
-  - B
-  - C
+  - Compare your operations management, governance, and security requirements to common operating models 
+  - Evaluate Azure Landing Zone implementation options against your short and long-term requirements 
+  - Choose the best Azure Landing Zones & support learn modules to support your cloud adoption needs 
 prerequisites: |
-  - A
-  - B
+  - Understanding of your organization’s cloud adoption strategy 
+  - Familiarity with Azure cloud environment including network configuration, network connectivity, azure active directory 
+  - Familiarity with Azure governance tools including Azure Policy, Azure Blueprints, Azure Resource Manager templates 
+  - General understanding of the environmental requirements needed to proceed with your cloud adoption plan  
 iconUrl: /learn/achievements/generic-badge.svg
 ratingEnabled: true
 levels:
@@ -26,6 +28,20 @@ roles:
 - administrator
 - developer
 - solution-architect
+- auditor
+- business-analyst
+- business-owner
+- data-engineer
+- database-administrator
+- developer
+- devops-engineer
+- functional-consultant
+- privacy-manager
+- risk-practitioner
+- security-engineer
+- solution-architect
+- student
+- technology-manager 
 products:
 - azure
 units:
