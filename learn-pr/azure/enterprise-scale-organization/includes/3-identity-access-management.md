@@ -12,13 +12,14 @@ Identity and access management is a multistep process that involves careful plan
 
 When planning for role-based access, use custom RBAC role definitions within the Azure AD tenant and consider the following key roles:
 
-| Role | Usage | Actions | No actions |
-|--|--|--|--|
-| Azure platform owner | Management group and subscription lifecycle management | `*` |  |
-| Network management (NetOps) | Platform-wide global connectivity management: virtual networks, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute, and others | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |  |
-| Security operations (SecOps) | Security administrator role with a horizontal view across the entire Azure estate | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |  |
-| Subscription owner | Delegated role for subscription owner derived from subscription owner role | `*` | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
-| Application owners (DevOps/AppOps) | Contributor role granted for application/operations team |  | `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action` |
+> [!div class="mx-tdBreakAll"]
+> | Role | Usage | Actions | No actions |
+> |--|--|--|--|
+> | Azure platform owner | Management group and subscription lifecycle management | `*` |  |
+> | Network management (NetOps) | Platform-wide global connectivity management: virtual networks, UDRs, NSGs, NVAs, VPN, Azure ExpressRoute, and others | `*/read`, `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |  |
+> | Security operations (SecOps) | Security administrator role with a horizontal view across the entire Azure estate | `*/read`, `*/register/action`, `Microsoft.KeyVault/locations/deletedVaults/purge/action`, `Microsoft.Insights/alertRules/*`, `Microsoft.Authorization/policyDefinitions/*`, `Microsoft.Authorization/policyAssignments/*`, `Microsoft.Authorization/policySetDefinitions/*`, `Microsoft.PolicyInsights/*`, `Microsoft.Security/*` |  |
+> | Subscription owner | Delegated role for subscription owner derived from subscription owner role | `*` | `Microsoft.Authorization/*/write`, `Microsoft.Network/vpnGateways/*`, `Microsoft.Network/expressRouteCircuits/*`, `Microsoft.Network/routeTables/write`, `Microsoft.Network/vpnSites/*` |
+> | Application owners (DevOps/AppOps) | Contributor role granted for application/operations team |  | `Microsoft.Network/publicIPAddresses/write`, `Microsoft.Network/virtualNetworks/write`, `Microsoft.KeyVault/locations/deletedVaults/purge/action` |
 
 ### Identity and access management design recommendations and considerations
 
