@@ -114,8 +114,8 @@ The UI consists of a quad which serves as a flat surface for the text. Displayed
 
     :::image type="content" source="../media/create-translation-script.png" alt-text="A screenshot of the project window. The plus icon in the top left corner is highlighted. The translation script within the assets section is highlighted.":::
 
-1. In the **Project** window, double click on the script to open in Visual Studio Code.
-1. In Visual Studio Code, replace the default code provided in the template with the following:
+1. In the **Project** window, double click on the script to open in Visual Studio.
+1. In Visual Studio, replace the default code provided in the template with the following:
     ```csharp
     using System.Collections;
     using System.Collections.Generic;
