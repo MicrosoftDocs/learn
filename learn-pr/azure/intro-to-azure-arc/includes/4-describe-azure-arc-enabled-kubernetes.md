@@ -1,11 +1,11 @@
-Contoso currently host a number of Kubernetes clusters in a datacenter in London. They want to be able to manage these resources using a consistent collection of tools and processes. In addition to managing servers, Contoso could use Azure Arc to configure and manage their Kubernetes clusters. 
+Contoso currently hosts several Kubernetes clusters in a datacenter in London. IT staff at Contoso want to be able to manage these resources using a consistent collection of tools and processes. In addition to managing servers, Contoso IT staff could use Azure Arc to configure and manage Contoso's Kubernetes clusters.
 
 ## What is Azure Arc enabled Kubernetes?
 
-Using Azure Arc, you can attach and then configure Kubernetes clusters, whether they're hosted on Azure or elsewhere. A significant benefit of implementing Azure Arc enabled Kubernetes is that you can bring a consistent management interface and approach to managing your resources. 
+Using Azure Arc, you can attach and then configure Kubernetes clusters, whether they're hosted on Azure or elsewhere. A significant benefit of implementing Azure Arc enabled Kubernetes is that you can bring a consistent management interface and approach to managing your resources.
 
 > [!NOTE]
-> This is true even if those resources are located outside of Azure, either in your on-premises datacenter, or else hosted by a third party provider. 
+> This is true even if those resources are located outside of Azure, either in your on-premises datacenter, or hosted by a third-party provider.
 
 As a result, you can use the following to manage your clusters:
 
@@ -15,13 +15,13 @@ As a result, you can use the following to manage your clusters:
 
 When you attach a Kubernetes cluster to Azure Arc, it:
 
-- Is assigned an Azure Resource Manager ID. 
+- Is assigned an Azure Resource Manager ID.
 - Has a managed identity.
 - Is located in an Azure resource group.
 - Appears in the Azure portal.
 - Can receive tags like any other Azure resource.
 
-You can implement Azure Arc enabled Kubernetes to support Kubernetes clusters that are deployed outside Azure for inventorying, grouping, and tagging. In addition, you can use:
+You can implement Azure Arc enabled Kubernetes to support Kubernetes clusters that are deployed outside Azure for collecting inventory data, grouping, and tagging. In addition, you can use:
 
 - GitOps-based configuration management to deploy applications and apply configurations.
 - Azure Policy to apply policies to Kubernetes clusters.
@@ -31,35 +31,35 @@ You can implement Azure Arc enabled Kubernetes to support Kubernetes clusters th
 
 ### What can you do with Azure Arc enabled Kubernetes?
 
-You can use Azure Arc enabled Kubernetes to address several needs in your organization. These include: 
+You can use Azure Arc enabled Kubernetes to address several needs in your organization. These include:
 
-- Providing for unification of management and administration tools.
+- Providing unified management and administration tools.
 - Performing configuration with integrated management.
 - Collecting inventory data.
 
-#### Provide for unification of management and administration tools
+#### Provide unified management and administration tools
 
 With Azure Arc enabled Kubernetes, you can create a shared application and infrastructure environment. This approach enables you to implement:
 
 - A consistent view of your resources using the Azure portal and APIs across:
     - Your datacenters
     - Edge locations
-    - Multiple hosting providers 
+    - Multiple hosting providers
 - A shared management and administration view, enabling you to connect to Kubernetes alongside Windows Server and Linux VMs, physical servers, and Azure data services.
-- Clear roles and responsibilities for your IT staff, providing for role separation while still maintaining visibility of and access to resources, whatever their location.
+- Clear roles and responsibilities for your IT staff, providing role separation while still maintaining visibility and access to resources, wherever their location.
 
 #### Perform configuration with integrated management
 
 Use Azure Arc enabled Kubernetes integrated management to more efficiently create, apply, and enforce policies to Kubernetes apps, data, and infrastructure, wherever those resources are located. Specifically, you can:
 
 - Use Azure Policy to:
-    - Establish consistent configurations across all your Kubernetes clusters
-    - Enforce run-time conformance and to audit resources
+    - Establish consistent configurations across all your Kubernetes clusters.
+    - Enforce run-time conformance and audit resources.
 - Implement role-based access control (RBAC) across systems and different types of resources to help to standardize security.
 - Automate and delegate remediation of incidents and problems to service teams.
-- Implement additional Azure services and leverage your choice of Azure tools:
+- Implement additional Azure services and leverage your choice of Azure tools to:
     - Integrate with Azure Monitor, Security Center, GitHub, and others.
-    - Automate configuration and infrastructure as code provide repeatable deployments using templates
+    - Automate configuration and infrastructure as code provide repeatable deployments using templates.
     - Provide end-to-end identity for your users and your resources with Azure Resource Manager and Azure Active Directory (Azure AD).
 
 #### Collect inventory data
@@ -73,7 +73,6 @@ By implementing Azure Arc enabled Kubernetes, you can more efficiently collect i
 - Tracking resources by creating and applying standardized and custom tags.
 - Searching your global resources with Azure Resource Graph.
 
-
 ### Azure Arc enabled Kubernetes agents
 
 Similar to the way that you onboard servers to Azure Arc, you must also deploy agents to your Kubernetes clusters. The Kubernetes agent is responsible for:
@@ -82,10 +81,10 @@ Similar to the way that you onboard servers to Azure Arc, you must also deploy a
 - Collecting Azure Arc logs and metrics.
 - Monitoring configuration requests.
 
-Azure Arc enabled Kubernetes provides a number of agents. 
+Azure Arc enabled Kubernetes provides a number of agents.
 
 > [!NOTE]
-> These agents run in the Kubernetes cluster that you deploy to the `azure-arc` namespace. 
+> These agents run in the Kubernetes cluster that you deploy to the `azure-arc` namespace.
 
 The following table describes these agents.
 
