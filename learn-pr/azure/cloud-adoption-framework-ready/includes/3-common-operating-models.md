@@ -4,7 +4,8 @@ In this exercise, you will review common operating models to see which ones best
 
 Four common operating models show up across countless cloud adoption efforts. We use these operating models to shape conversations about environmental design and configuration. Each operating model maps to one or more Azure Landing Zones to accelerate initial deployment.
 
-TODO: Add ops model image
+![List of the four common operating models compared in this article](https://docs.microsoft.com/azure/cloud-adoption-framework/_images/operating-model/operating-model-complexity.png)
+_Figure 1: Comparison of common operating models discussed in this unit, ranked by architectural complexity: Decentralized Operations, Central Operation, Enterprise Operations, and Distributed Operations._
 
 The image above plots the four common operating models from least to most complex for comparison purposes.
 
@@ -28,9 +29,10 @@ The following characteristics aid in aligning to one of the common operating mod
 
 ## Decentralized operations
 
-TODO: Add image
-
 The least complex operating model is a fully decentralized model. This model is highly focused on independent workloads with minimal dependency on centralized operations. This model is also referred to as Bi-Modal IT or Decentralized IT.
+
+![Decentralized operations](https://docs.microsoft.com/azure/cloud-adoption-framework/_images/operating-model/decentralized-operations.png)
+_Figure 2: Decentralized operations focuses on individual workloads and dependent assets_
 
 **Strategic priority:** Decentralization is most commonly seen when organizations prioritize *innovation over control*. This model is very common in start up organizations but is an increasing trend in larger organizations, as well.
 
@@ -50,9 +52,12 @@ Compare more pros, cons, and characteristics of [decentralized operations in the
 
 ## Centralized operations
 
-TODO: Add image
+Centralized operations is the most common operations model in information technology. This model is highly focused on controlled production environment managed solely by centralized operations.
 
-Centralized operations is the most common operations model in information technology. This model is highly focused on controlled production environment managed solely by centralized operations. Management of non-production environments vary significantly from organization to organization. But in a centralized operations model, even the non-production environments are likely to be constrained by governance and security requirements.
+![Centralized operations](https://docs.microsoft.com/azure/cloud-adoption-framework/_images/operating-model/centralized-operations.png)
+_Figure 3: Centralized operations focuses on a smaller number of landing zones w/ embedded foundational utilities_
+
+Management of non-production environments vary significantly from organization to organization. But in a centralized operations model, even the non-production environments are likely to be constrained by governance and security requirements.
 
 **Strategic priority:** When control and stability in the business are more important than innovation, this model tends to be the highest trend. Central operations is often seen in larger organizations or stable organizations. This model is very common when 3rd party compliance requirements driven environmental decisions.
 
@@ -72,9 +77,12 @@ Compare more pros, cons, and characteristics of [Centralized operations in the C
 
 ## Enterprise operations
 
-TODO: Add image
+Enterprise operations is the suggested operating model for customers who are migrating entire data centers or large portfolios to the cloud.
 
-Enterprise operations is the suggested operating model for customers who are migrating entire data centers or large portfolios to the cloud. This operating model focuses on democratizing decisions and delegated responsibilities to balance the need for innovation in some landing zones and tighter control in others.
+![Enterprise operations](https://docs.microsoft.com/azure/cloud-adoption-framework/_images/operating-model/enterprise-operations.png)
+_Figure 4: Enterprise operations focuses on a larger number of landing zones w/ foundational utilities centralized into a platform foundation_
+
+This operating model focuses on democratizing decisions and delegated responsibilities to balance the need for innovation in some landing zones and tighter control in others.
 
 **Strategic priority:** This operating model prioritizes democratization to balance innovation and control. This is a strategic priority for large organizations that need to protect existing interests while empowering innovation to keep pace with market changes.
 
@@ -93,9 +101,12 @@ Enterprise operations is the suggested operating model for customers who are mig
 Compare more pros, cons, and characteristics of [Enterprise operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare#enterprise-operations).
 ## Distributed operations
 
-TODO: Add image
+Distributed operations is the most complex form of operations, which attempts to blend each of the models above.
 
-Distributed operations is the most complex form of operations. This approach to operations is discouraged when ever possible. This approach is commonly seen when companies grow through rapid acquisition resulting in a distributed mixture of the prior three operating models. Companies may exist in this state for extended periods of time, but in order to minimize redundancy and promote more efficient operations customers should consider developing a plan to transition to one of the less complex models.
+![Distributed operations](https://docs.microsoft.com/azure/cloud-adoption-framework/_images/operating-model/complex-operations.png)
+_Figure 4: Distributed operations attempts to integrate multiple existing operating models_
+
+This approach to operations is discouraged when ever possible. This approach is commonly seen when companies grow through rapid acquisition resulting in a distributed mixture of the prior three operating models. Companies may exist in this state for extended periods of time, but in order to minimize redundancy and promote more efficient operations customers should consider developing a plan to transition to one of the less complex models.
 
 **Strategic priority:** This model is used when organizations favor integration of acquired business units, over innovation or control. This is often a temporary or bridge strategy required to move to a more efficient operating model in the future. This model does tend to persist when the organization seeks to maintain autonomy & is considering a near term exit strategy, as is commonly seen in private equity or holding companies.
 
