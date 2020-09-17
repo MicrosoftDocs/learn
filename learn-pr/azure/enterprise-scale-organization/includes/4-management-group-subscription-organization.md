@@ -1,4 +1,4 @@
-
+Properly organizing your subscriptions will play a key role in governance for your cloud resources. It also ensures you can properly manage the costs for resources and quotas for deployed resources in your organization.
 
 ## Define a management group hierarchy
 
@@ -6,7 +6,7 @@ Management group structures within an Azure Active Directory (Azure AD) tenant s
 
 When defining the management group hierarchy consider that management groups can be used to aggregate policy and initiative assignments via Azure Policy. This will provide flexibility and organization of policy across multiple subscriptions. Also keep in consideration that a management group tree can support up to six levels of depth. This limit doesn't include the tenant root level or the subscription level.
 
-It is recommended that the management group hierarchy is kept reasonably flat with no more than three to four levels, ideally.  This restriction will reduce the management over head and complexity.  Avoid duplicating your organizational structure into a deeply nested management group hierarchy.  Management groups should be used for policy assignments versus billing purposes.  This approach necessitates using management groups for their intended purpose in Enterprise-scale architecture, which is providing Azure policy's for workloads that require the same type of security and compliance under the same management group level.
+It is recommended that the management group hierarchy is kept reasonably flat with no more than three to four levels, ideally.  This restriction will reduce the management overhead and complexity.  Avoid duplicating your organizational structure into a deeply nested management group hierarchy.  Management groups should be used for policy assignments versus billing purposes. This approach necessitates using management groups for their intended purpose in Enterprise-scale architecture, which is providing Azure policy's for workloads that require the same type of security and compliance under the same management group level.
 
 Create management groups under your root-level management group to represent the types of workloads (archetypes) that you'll host and ones based on their security, compliance, connectivity, and feature needs. This grouping structure allows you to have a set of Azure policies applied at the management group level for all workloads that require the same security, compliance, connectivity, and feature settings.
 
