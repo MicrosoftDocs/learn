@@ -8,13 +8,13 @@ Azure Virtual WAN is a Microsoft-managed solution where global transit connectiv
 
 :::image type="content" source="../media/virtual-wan-topology.png" alt-text="Diagram that illustrates a Virtual WAN network topology.":::
 
-The diagram above shows fully deployed Enterprise Scale landing zone. The connectivity subscription contains Virtual WAN and the Landing Zone subscription has specific applications and their components.
+The diagram above shows fully deployed enterprise-scale landing zone. The connectivity subscription contains Virtual WAN and the Landing Zone subscription has specific applications and their components.
 
 ### Recommendations
 
 Virtual WAN is recommended for new large or global network deployments in Azure where you need global transit connectivity across Azure regions and on-premises locations. That way, you don't have to manually set up transitive routing for Azure networking. 
 
-Deploy a Virtual WAN hub per Azure region and connect them to large offices or data centers with ExpressRoute. Use VPN for smaller locations and point-to-site VPN for remote users. Azure Firewalls can be deployed into the Virtual WAN hub, but third party firewalls have to be deployed into a spoke virtual network. There's no need to build a transit network on top of Virtual WAN. Virtual WAN is the transit network. Azure Virtual WAN is limited to two thousand virtual machines Virtual WAN hub.
+Deploy a Virtual WAN hub per Azure region and connect them to large offices or data centers with ExpressRoute. Use VPN for smaller locations and point-to-site VPN for remote users. Azure Firewalls can be deployed into the Virtual WAN hub, but third-party firewalls have to be deployed into a spoke virtual network. There's no need to build a transit network on top of Virtual WAN. Virtual WAN is the transit network. Azure Virtual WAN is limited to 2000 virtual machines Virtual WAN hub.
 
 ## Hub and spoke
 
@@ -30,4 +30,4 @@ The diagram below shows a basic hub and spoke topology, where ExpressRoute is de
 
 ## Recommendations
 
-Each Azure region should have a hub, firewalls and ExpressRoute/VPN gateways should be deployed in that hub so that all spoke virtual networks can route through the hub or use shared services like DNS deployed there.  Use multiple Expressroute circuits for a few reasons. First for resiliency, in different peering locations and different providers if possible. Next, for dedicated bandwidth to projects or to production to avoid 'noisy neighbor problems'.
+Each Azure region should have a hub, firewalls, and ExpressRoute/VPN gateways should be deployed in that hub so that all spoke virtual networks can route through the hub or use shared services like DNS deployed there.  Use multiple Expressroute circuits for a few reasons. First for resiliency, in different peering locations and different providers if possible. Next, for dedicated bandwidth to projects or to production to avoid 'noisy neighbor problems'.

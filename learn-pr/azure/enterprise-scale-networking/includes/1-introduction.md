@@ -4,7 +4,7 @@ Enterprise grade networking is critical to deploying enterprise grade applicatio
 
 After completing this module, you will be able to:
 
-- Chose the right network topology
+- Choose the right network topology
 - Define the IP addressing for Azure resources
 - Determine DNS recommendations
 - Determine how to connect to Azure
