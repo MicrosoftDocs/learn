@@ -10,7 +10,7 @@ You have learned to:
 
 ## Learn more
 
-To learn more about enterprise scale, the Microsoft Cloud Adoption Framework for Azure, and related tools, review these resource:
+To learn more about enterprise scale, the Microsoft Cloud Adoption Framework for Azure, and related tools, review these resources:
 
 - [Enterprise-scale and the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/)
 - [Enterprise Agreement enrollment and Azure Active Directory tenants](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/enterprise-scale/enterprise-enrollment-and-azure-ad-tenants)
