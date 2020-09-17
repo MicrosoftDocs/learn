@@ -6,11 +6,11 @@ Let’s start by reviewing what you find about using Azure Marketplace to find a
 
 ## Finding software and services in Azure Marketplace
 
-Azure Marketplace has thousands of software products, certified to run on Azure, built by Microsoft and a vast network of industry leading technology companies. You can also use Azure Marketplace to connect with certified Microsoft partners who provide consulting services to help with cloud migration, systems integration, data management and analytics, and other cloud projects.
+Azure Marketplace has thousands of software applications built by Microsoft and a vast network of industry-leading technology providers. You can also use Azure Marketplace to connect with certified Microsoft partners who provide consulting services to help with cloud migration, systems integration, data management and analytics, and other cloud projects.
 
-Azure Marketplace is a part of Azure and can be accessed from the Azure portal or the Azure Marketplace online store.
+Azure Marketplace is a part of Azure and can be accessed from the Azure portal and the Azure Marketplace online store.
 
-To access Azure Marketplace from the Azure portal, log in with your Azure account credentials at <https://portal.azure.com> and click “create a resource” on the homepage. This will open the Azure Marketplace experience in the Azure portal, where you’ll be able to start browsing the catalog of software and services.
+To access Azure Marketplace from the Azure portal, log in with your Azure account credentials at <https://portal.azure.com> and click “create a resource” on the homepage. This will open the Azure Marketplace experience, where you’ll be able to start browsing the catalog of software and services.
 
 ![Screenshot of the "create a resource" button on the home page of the Azure portal](../media/1-azure-portal-homepage-create-resource.png)
 
