@@ -3,45 +3,45 @@ uid: learn.azure.enterprise-scale-operations.2-management-monitoring
 metadata:
   title: Management and monitoring
   description: Management and monitoring
-  ms.date: 09/30/2020
-  author: telmosampaio
-  ms.author: telmos
+  ms.date: 09/21/2020
+  author: ejhenry
+  ms.author: erhenry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Management and monitoring
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/2-management-monitoring.md)]
 quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: An organization runs Azure services in Japan East, UK South, East US 2, and West US 2. They have no sovereignty requirements for their management and monitoring data. How many Log Analytics workspaces should they use for platform management and monitoring log data?
     choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+    - content: '1'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: Correct, a single Log Analytics workspace is recommended for platform log data.
+    - content: '2'
+      isCorrect: false
+      explanation: A single Log Analytics workspace is recommended for platform log data when not constrained by sovereignty requirements.
+    - content: '3'
+      isCorrect: false
+      explanation: A single Log Analytics workspace is recommended for platform log data when not constrained by sovereignty requirements.
+    - content: '4'
+      isCorrect: false
+      explanation: A single Log Analytics workspace is recommended for platform log data when not constrained by sovereignty requirements.
 
-  - content: 'Question 2'
+  - content: Where can you find a record of all write operations (PUT, POST, DELETE) for subscription resources?
     choices:
-    - content: 'Answer 1'
+    - content: Azure Security Center
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
+      explanation: The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.
+    - content: Azure Resource Graph
       isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
+      explanation: The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.
+    - content: Diagnostic log
       isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.
+    - content: Azure activity log
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: The activity log contains all write operations (PUT, POST, DELETE) for subscription resources.
