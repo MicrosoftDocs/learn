@@ -130,7 +130,7 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
    :::image type="content" source="../media/extension-no-permissions.png" alt-text="Select existing resource group":::
 
-10. Select the resource group beginning with the word **learn**
+10. Select the resource group named <rgn>[Sandbox resource group]</rgn>
 
     :::image type="content" source="../media/extension-select-resource-group.png" alt-text="Select resource group":::
 
