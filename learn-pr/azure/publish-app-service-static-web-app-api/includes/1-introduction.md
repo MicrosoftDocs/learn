@@ -65,7 +65,29 @@ Once you choose your client application, you'll:
 1. Automatically build and deploy your web app to Azure from a GitHub repository with GitHub Actions
 1. Finally, you'll explore and launch your application, as shown below
 
-:::image type="content" source="../media/my-shopping-list-app.png" alt-text="A set of four screenshots illustrating the four sample applications":::
+::: zone pivot="angular"
+
+:::image type="content" source="../media/my-shopping-list-app-angular.png" alt-text="A screenshot illustrating the angular sample application":::
+
+::: zone-end
+
+::: zone pivot="react"
+
+:::image type="content" source="../media/my-shopping-list-app-react.png" alt-text="A screenshot illustrating the react sample application":::
+
+::: zone-end
+
+::: zone pivot="svelte"
+
+:::image type="content" source="../media/my-shopping-list-app-svelte.png" alt-text="A screenshot illustrating the svelte sample application":::
+
+::: zone-end
+
+::: zone pivot="vue"
+
+:::image type="content" source="../media/my-shopping-list-app-vue.png" alt-text="A screenshot illustrating the vue sample application":::
+
+::: zone-end
 
 ## Next steps
 

@@ -111,8 +111,6 @@ Click the link to browse to your application.
 
 Browse to `http://localhost:4200`.
 
->
-
 ::: zone-end
 
 ::: zone pivot="react"
