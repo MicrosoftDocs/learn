@@ -31,7 +31,7 @@ For Tailwind Traders, having a single location to manage Windows Server and Linu
 
 ## What is Azure Stack HCI?
 
-Azure Stack HCI is a hyper-converged infrastructure operating system that allows you to host Hyper-V virtual machines running Windows and Linux operating systems. Unlike running on a hyperconverged Windows Server Hyper-V cluster, Azure Stack HCI is designed to provide you the option of deploying and managing virtual machines through the Azure Portal or Windows Admin Center.
+Azure Stack HCI is a hyper-converged infrastructure operating system that allows you to host Hyper-V virtual machines running Windows and Linux operating systems. Unlike running on a hyperconverged Windows Server Hyper-V cluster, Azure Stack HCI is designed to provide you the option of deploying and managing virtual machines through the Azure portal or Windows Admin Center.
 
 Unlike a traditional Windows Server virtualization deployment in which the local operations team maintain responsibility for managing the host operating system, Azure Stack HCI is an Azure service. A customer acquires a validated hardware configuration from an approved vendor, connects the system to an internet-connected network, and an Azure service manages the infrastructure. Because they’re fully connected to Azure, all hybrid Azure services, such as Azure Update Management, Azure Site Recovery, and Azure Backup are automatically integrated.
 
@@ -49,7 +49,7 @@ Tailwind Traders already has an HPC deployment. However, their capacity to perfo
 
 ## What is Azure Arc enabled Kubernetes?
 
-Azure Arc enabled Kubernetes allows you to attach and configure Kubernetes clusters so that they can be managed through the Azure Portal. When you use Azure Arc enabled Kubernetes, you can:
+Azure Arc enabled Kubernetes allows you to attach and configure Kubernetes clusters so that they can be managed through the Azure portal. When you use Azure Arc enabled Kubernetes, you can:
 
 - Connect Kubernetes clusters running outside of Azure and perform inventory, grouping, and tagging tasks.
 - Deploy applications and apply configuration to Azure Arc enabled Kubernetes clusters by using GitOps–based configuration management.
@@ -64,7 +64,7 @@ The benefit for Tailwind Traders of using Azure Arc for Kubernetes is that it al
 
 ## What is Azure Arc enabled data services?
 
-Azure Arc enabled data services allows organizations to manage supported databases running in Azure and on-premises by using one set of tools. Azure Arc enabled data services allows organizations to run Azure Database for PostgreSQL Servers and SQL Managed Instances on-premises while managing those instances through Azure Data Studio, the Azure Portal, or Azure CLI.
+Azure Arc enabled data services allows organizations to manage supported databases running in Azure and on-premises by using one set of tools. Azure Arc enabled data services allows organizations to run Azure Database for PostgreSQL Servers and SQL Managed Instances on-premises while managing those instances through Azure Data Studio, the Azure portal, or Azure CLI.
 
 When enabled, Azure Arc enabled data services allows you to automate the patching and update processes for these on-premises database instances in the same way that Microsoft manages these processes when you deploy PostgreSQL and SQL managed instances in Azure. Azure Arc enabled data services also allows organizations to apply the database advanced threat protection functionality available in Azure Security Center for Azure SQL databases to database server instances running on-premises.
 

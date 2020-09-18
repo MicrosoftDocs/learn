@@ -1,5 +1,5 @@
 
-Tailwind Traders must ensure that the same file share content is reliably available in each branch office. However, its existing file server infrastructure makes that a challenge. Some smaller branch offices, such as the company's retail outlet in Wangaratta, Australia, don’t have local file server endpoints. So, retail outlets file and folder access occurs across a VPN connection to a file server in the Melbourne Office.
+Tailwind Traders must ensure that the same file share content is reliably available in each branch office. However, its existing file server infrastructure makes that a challenge. Some smaller branch offices, such as the company's retail outlet in Wangaratta, Australia, don’t have local file server endpoints. So, access for retail outlets to files and folders occurs across a VPN connection to a file server in the Melbourne office.
 
 Another challenge for Tailwind Traders is that users are creating new files all the time. As a result, the volumes that host the file shares regularly end up full and require administrator intervention to free up disk space. This storage problem isn’t limited to the volumes that host file shares. Several on-premises SQL databases keep expanding to the point that they consume existing storage capacity and database administrators must regularly add storage.
 
@@ -27,6 +27,6 @@ Tailwind Traders currently uses a distributed file system (DFS) to replicate a s
 
 Microsoft SQL Server Stretch Databases allow you to automatically migrate rarely accessed data transparently and securely to Azure. When a query is made against data that’s been migrated to Azure, the query results return, but there’s an increased delay over query time compared to data retrieved from tables stored on-premises.
 
-SQL Server Stretch Database has the advantage over other solutions of removing infrequently accessed data from the database in that the data itself remains online. It’s not necessary to modify any existing queries and the application remains unaware of the the location of data.
+SQL Server Stretch Database has the advantage over other solutions of removing infrequently accessed data from the database in that the data itself remains online. It’s not necessary to modify any existing queries and the application remains unaware of the location of data.
 
 Tailwind Traders can enable Stretch Database on databases where they’ve had to keep adding storage to accommodate table growth. When Stretch Database is enabled, infrequently accessed table data will be transparently migrated to Azure on a continuous basis. This allows new data to be written to tables, remaining on-premises and close to the application performing the query while shifting colder data into Azure.

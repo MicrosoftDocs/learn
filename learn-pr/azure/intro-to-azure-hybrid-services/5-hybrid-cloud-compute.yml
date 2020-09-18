@@ -16,11 +16,11 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'As a part of their hybrid strategy, Tailwind Traders wants to manage container orchestration through the Azure Portal instead of using on-premises tools. Which of the following hybrid-cloud compute technologies allows Tailwind Traders to accomplish this goal?'
+  - content: 'As a part of their hybrid strategy, Tailwind Traders wants to manage container orchestration through the Azure portal instead of using on-premises tools. Which of the following hybrid-cloud compute technologies allows Tailwind Traders to accomplish this goal?'
     choices:
     - content: 'Azure Arc enabled Kubernetes.'
       isCorrect: true
-      explanation: 'Azure Arc enabled Kubernetes is a container orchestration service that allows you to manage container orchestration through the Azure Portal.'
+      explanation: 'Azure Arc enabled Kubernetes is a container orchestration service that allows you to manage container orchestration through the Azure portal.'
     - content: 'Azure Stack HCI'
       isCorrect: false
       explanation: 'Azure Stack HCI is an on-premises hyperconverged virtualization host solution. While it’s possible to host a container orchestration solution on those virtual machines, Azure Stack HCI isn’t a container orchestration solution.'
