@@ -10,7 +10,7 @@ Enterprise organizations typically follow a least-privileged approach to operati
 
 Identity and access management is a multistep process that involves careful planning for identity integration and other security considerations, such as blocking legacy authentication and planning for modern passwords. Staging planning also involves selection of business-to-business or business-to-consumer identity and access management. While these requirements vary, there are common design considerations and recommendations to consider for an enterprise landing zone.
 
-:::image type="content" source="../media/3-identity-access-management-large.png" alt-text="Identity and access management.":::
+:::image type="content" source="../media/3-identity-access-management.png" alt-text="Identity and access management." lightbox="../media/3-identity-access-management-large.png":::
 
 When planning for role-based access, use custom RBAC role definitions within the Azure AD tenant and consider the following key roles:
 

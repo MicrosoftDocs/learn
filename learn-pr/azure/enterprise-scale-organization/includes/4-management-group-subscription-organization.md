@@ -4,7 +4,7 @@ Properly organizing your subscriptions will play a key role in governance for yo
 
 Management group structures within an Azure Active Directory (Azure AD) tenant support organizational mapping and must be considered thoroughly when an organization plans Azure adoption at scale.  
 
-:::image type="content" source="../media/4-subscription-organization-large.png" alt-text="Management group hierarchy.":::
+:::image type="content" source="../media/4-subscription-organization.png" alt-text="Management group hierarchy." lightbox="../media/4-subscription-organization-large.png":::
 
 When defining the management group hierarchy consider that management groups can be used to aggregate policy and initiative assignments via Azure Policy. This will provide flexibility and organization of policy across multiple subscriptions. Also keep in consideration that a management group tree can support up to six levels of depth. This limit doesn't include the tenant root level or the subscription level.
 
