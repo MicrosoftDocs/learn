@@ -25,7 +25,9 @@ roles:
 products:
 - azure
 - azure-sentinel
-prerequisites: None
+prerequisites: |
+  - Familiarity with security operations in an organization
+  - Basic experience with Azure services
 units:
 - learn.intro-to-azure-sentinel.1-introduction
 - learn.intro-to-azure-sentinel.2-what-is-azure-sentinel

@@ -12,3 +12,8 @@ By the end of this module, you'll be able to:
 
 - Identify the various components and functionality of Azure Sentinel.
 - Identify use cases where Azure Sentinel would be a good solution.
+
+## Prerequisites
+
+- Familiarity with security operations in an organization
+- Basic experience with Azure services
