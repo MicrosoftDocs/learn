@@ -22,8 +22,8 @@ You'll need:
      - **Suspend idle environment after**: 120 minutes
   5. Wait for the environment to be created, and then click **Connect** to connect to it. This will open a browser-based instance of Visual Studio Code.
 
-After you've completed the setup steps above, you can use your Visual Studio Codespace environment to complete the labs.
+After you've completed the setup steps above, you can use your Visual Studio Codespace environment to complete the module.
 
-  1. Now go to the folder **IoT Edge anomaly detection tutorial** and click on **00-anomaly-detection-tutorial.ipynb**.
-  2. You'll run all the code cells step by step in the notebook. The notebook is available in the [GitHub repository.](https://github.com/MicrosoftDocs/Train-package-Azure-ML-module-for-IoT-Edge).
+  1. Now go to the folder **IoT Edge anomaly detection tutorial** and click on **Creating-and-deploying-Azure-machine-learning-module.ipynb**.
+  2. You'll run all the code cells step by step in the notebook. The notebook is available in the [GitHub repository](https://github.com/MicrosoftDocs/Train-package-Azure-ML-module-for-IoT-Edge).
   
