@@ -1,4 +1,4 @@
-In this module, you learned about Tailspin Traders and the blockers they ran into through their parts of their cloud adoption journey. This narrative will be revisited in multiple Learn modules about the Cloud Adoption Framework.
+In this module, you learned about Tailwind Traders and the blockers they ran into through their parts of their cloud adoption journey. This narrative will be revisited in multiple Learn modules about the Cloud Adoption Framework.
 
 You also learned about ways the getting started guides can help unblock common impediments to cloud adoption. In the following modules, you will be able to go deeper into each methodology to avoid blockers all together and become truly efficient at each area of cloud adoption.
 

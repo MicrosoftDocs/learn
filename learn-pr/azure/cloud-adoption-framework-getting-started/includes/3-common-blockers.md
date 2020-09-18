@@ -13,15 +13,15 @@ Those guides categorize blockers into the following areas on the [getting starte
 
 ## Scenario 1: The CIO is concerned with progress
 
-In the previous unit the Tailspin Traders team was considering migrating two datacenters to avoid costly contract renewals and move to modern operating model in the cloud. A migration team has been assembled consisting of a project manager, central operations/infrastructure team, and an IT manager.
+In the previous unit the Tailwind Traders team was considering migrating two datacenters to avoid costly contract renewals and move to modern operating model in the cloud. A migration team has been assembled consisting of a project manager, central operations/infrastructure team, and an IT manager.
 
 In the last 3 months, the team has migrated a few hundred VMs to Azure. They've retired 30% of the VMs in the existing datacenter. To the team, it feels like they are ahead of schedule, but they haven't retired any production hosts yet. As the deadline for this project rapidly approaches, the CIO has begun to express concerns with progress towards retiring the physical infrastructure in the existing datacenters. Unfortunately, the team doesn't have a clear dependency map to show which hosts each VM is dependent on, let alone when a host is no longer needed.
 
-This is a common experience for customers who are new to cloud migration. Engaging an experience partner can help with these concerns. As can proper planning and data-driven decisions. The getting started guide on [accelerating migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true?azure-portal=true) will help the Tailspin Traders team through this concern. In particular, that guide will help the team create a data-driven dialog with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and map that data to actionable cloud adoption plans.
+This is a common experience for customers who are new to cloud migration. Engaging an experience partner can help with these concerns. As can proper planning and data-driven decisions. The getting started guide on [accelerating migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true?azure-portal=true) will help the Tailwind Traders team through this concern. In particular, that guide will help the team create a data-driven dialog with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and map that data to actionable cloud adoption plans.
 
 ## Scenario 2: Cost misalignment
 
-The Tailspin Traders team has gotten their migration factory processes running smoothly. The finance director recently joined the team to review the budget and overall progress. That meeting didn't go as expected. Progress towards business objectives was well received. But, the actual cloud costs are rising at a much higher pace than expected. Updated forecasts suggest that the final costs of hosting in the cloud will be significantly higher than expected.
+The Tailwind Traders team has gotten their migration factory processes running smoothly. The finance director recently joined the team to review the budget and overall progress. That meeting didn't go as expected. Progress towards business objectives was well received. But, the actual cloud costs are rising at a much higher pace than expected. Updated forecasts suggest that the final costs of hosting in the cloud will be significantly higher than expected.
 
 As cloud adoption scales, customers commonly experience issues related to proper controls. By accelerating the migration effort, the migration team has skipped important steps around governance and establishing proper guardrails. Cost is the first indicator of this missed step. Fortunately, it's the easiest to get back under control.
 
@@ -29,7 +29,7 @@ The getting started guide on [managing cloud costs](/azure/cloud-adoption-framew
 
 ## Scenario 3: Operations support
 
-When a migration results in a production workload being hosted in the cloud, the business now takes a dependency on the operations of those cloud assets. For our friends at Tailspin Traders, they didn't account for this dependency. It was just assumed that the central operations team would use their existing tools and processes to manage operations. That assumption may prove accurate.
+When a migration results in a production workload being hosted in the cloud, the business now takes a dependency on the operations of those cloud assets. For our friends at Tailwind Traders, they didn't account for this dependency. It was just assumed that the central operations team would use their existing tools and processes to manage operations. That assumption may prove accurate.
 
 Before operational management processes could be kicked off, the CIO asked a few basic questions. Since the team didn't have an answer readily available, she advised that production traffic remain with the current datacenter until the team knew the answers to the following:
 
