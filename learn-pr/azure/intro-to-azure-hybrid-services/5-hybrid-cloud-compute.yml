@@ -16,32 +16,27 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Question 1'
+  - content: 'As a part of their hybrid strategy, Tailwind Traders wants to manage container orchestration through the Azure portal instead of using on-premises tools. Which of the following hybrid-cloud compute technologies allows Tailwind Traders to accomplish this goal?'
     choices:
-    - content: 'Answer 1'
-      isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
-      isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+    - content: 'Azure Arc enabled Kubernetes.'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'Azure Arc enabled Kubernetes is a container orchestration service that allows you to manage container orchestration through the Azure portal.'
+    - content: 'Azure Stack HCI'
+      isCorrect: false
+      explanation: 'Azure Stack HCI is an on-premises hyperconverged virtualization host solution. While it’s possible to host a container orchestration solution on those virtual machines, Azure Stack HCI isn’t a container orchestration solution.'
+    - content: 'Azure Arc enabled servers'
+      isCorrect: false
+      explanation: 'Azure Arc enabled servers are servers that exist outside the Azure IaaS environment and are connected to Azure, and for which Azure can provide some limited management functionality.'
 
-  - content: 'Question 2'
+
+  - content: 'As a part of their hybrid cloud strategy, Tailwind Traders wants to occasionally burst the calculations they perform on their high performance compute cluster onto a series of temporary Azure virtual machines. Which of the following technologies could they use to manage this process?'
     choices:
-    - content: 'Answer 1'
+    - content: 'Azure Arc enabled servers.'
       isCorrect: false
-      explanation: 'Explanation 1'
-    - content: 'Answer 2'
+      explanation: 'Azure Arc enabled servers allows you to perform certain management tasks against on-premises servers. It does not allow you to manage high performance computing tasks and burst those tasks into Azure.'
+    - content: 'Azure Arc enabled Kubernetes'
       isCorrect: false
-      explanation: 'Explanation 2'
-    - content: 'Answer 3'
-      isCorrect: false
-      explanation: 'Explanation 3'
-    - content: 'Answer 4'
+      explanation: 'Azure Arc enabled Kubernetes allows you to manage container orchestration in hybrid environments.'
+    - content: 'Hybrid HPC.'
       isCorrect: true
-      explanation: 'Explanation 4'
+      explanation: 'Hybrid HPC allows an organization to burst High Performance Computing workloads onto temporary Azure virtual machines'
