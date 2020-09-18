@@ -1,5 +1,3 @@
-CAF getting started: unblock cloud adoption with the Cloud Adoption Framework getting started guides
-
 The Microsoft Cloud Adoption Framework for Azure Learn modules will teach you how to apply the various guidance, tools, best practices, and reference architectures found within each of the methodologies. This module serves as an accelerator, helping you accelerate and unblock adoption in parallel to your learning paths.
 
 In this module, you will review the narrative that spans the majority of the Learn modules in this learning path. You will also see how various getting started guides can accelerate results across your adoption efforts.
