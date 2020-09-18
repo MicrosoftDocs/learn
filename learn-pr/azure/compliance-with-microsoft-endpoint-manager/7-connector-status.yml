@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.7-connector-status
-title: Data protection framework
+title: Connector status
 metadata:
-  title: Data protection framework
-  description: Understand the data protection framework for Microsoft Endpoint Manager. 
+  title: Connector status
+  description: Understand connector status.
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.4-troubleshooting-portal
-title: Protect apps
+title: Troubleshooting portal
 metadata:
-  title: Protect apps
-  description: Understand app protection in Microsoft Endpoint Manager.
+  title: Troubleshooting portal
+  description: Understand the Troubleshooting portal.
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre

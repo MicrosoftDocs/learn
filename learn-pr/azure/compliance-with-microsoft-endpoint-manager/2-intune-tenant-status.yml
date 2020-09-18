@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.2-intune-tenant-status
-title: App lifecycle
+title: Intune tenant status
 metadata:
-  title: App lifecycle
-  description: Understand the app lifecycle in Microsoft Endpoint Manager.
+  title: Intune tenant status
+  description: Understand Intune tenant status.
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre

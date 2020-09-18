@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.8-client-health
-title: Data protection framework
+title: Client health with co-management
 metadata:
-  title: Data protection framework
-  description: Understand the data protection framework for Microsoft Endpoint Manager. 
+  title: Client health with co-management
+  description: Understand client health with co-management. 
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.3-service-health-dashboard
-title: Configure apps
+title: Service health dashboard
 metadata:
-  title: Configure apps
-  description: Configure apps with Microsoft Endpoint Manager.
+  title: Service health dashboard
+  description: Understand the Service health dashboard.
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre

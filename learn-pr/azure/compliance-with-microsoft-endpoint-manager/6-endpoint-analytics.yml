@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.6-endpoint-analytics
-title: Data protection framework
+title: Endpoint analytics
 metadata:
-  title: Data protection framework
-  description: Understand the data protection framework for Microsoft Endpoint Manager. 
+  title: Endpoint analytics
+  description: Understand Endpoint analytics. 
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre

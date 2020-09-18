@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.compliance-with-microsoft-endpoint-manager.5-intune-reports
-title: Protected apps
+title: Intune reports
 metadata:
-  title: Protected apps
-  description: Learn about the available protected apps for Microsoft Endpoint Manager.
+  title: Intune reports
+  description: Learn about Intune reports.
   ms.date: 08/19/2020
   author: Erikre
   ms.author: erikre
