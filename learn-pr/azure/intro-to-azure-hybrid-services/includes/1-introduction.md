@@ -26,9 +26,9 @@ After completing this module, you’ll be able to:
 
 ## Prerequisites
 
-To get the best learning experience from this module, you should have knowledge of:
+To get the best learning experience from this module, you should have:
 
-- Azure networking fundamentals
-- Azure compute fundamentals
-- Azure security fundamentals
-- On-premises workload fundamentals
+- Basic understanding of Azure networking fundamentals
+- Basic understanding of Azure compute fundamentals
+- Basic understanding of Azure security fundamentals
+- Basic understanding of On-premises workload fundamentals

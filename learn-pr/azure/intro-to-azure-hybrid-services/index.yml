@@ -2,22 +2,29 @@
 uid: learn.azure.intro-to-azure-hybrid-services
 metadata:
   title: Introduction to Azure hybrid cloud services
-  description: TODO
+  description: Get an introductory overview of various hybrid-cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
   ms.date: 09/21/2019
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Azure hybrid cloud services
-summary: TODO
+summary: Get an introductory overview of various hybrid-cloud technologies and how you can connect an on-premises environment to Azure in a way that works best for your organization.
 abstract: | 
   In this module, you will:
-  - TODO
-  - TODO
-  - TODO
+  - Describe the elements of an Azure hybrid-cloud deployment.
+  - Explain methods of connecting on-premises networks to workloads in Azure.
+  - Understand how to use the same set of identities in hybrid environments.
+  - List the types of Azure hybrid-cloud compute workloads.
+  - Explain hybrid cloud application infrastructure.
+  - Describe the services that support files and data in hybrid clouds.
+  - Explain technologies that support hybrid-cloud security.
 prerequisites: | 
-  - TODO
-iconUrl: http://via.placeholder.com/120x120
+  - Basic understanding of Azure networking fundamentals
+  - Basic understanding of Azure compute fundamentals
+  - Basic understanding of Azure security fundamentals
+  - Basic understanding of On-premises workload fundamentals
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
