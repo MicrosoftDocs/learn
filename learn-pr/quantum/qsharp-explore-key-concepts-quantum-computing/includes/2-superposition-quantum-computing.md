@@ -9,7 +9,7 @@ Quantum computers are controllable quantum mechanical devices that exploit the p
 
 $$i \hbar \frac{\partial}{\partial t}\psi(t)= \hat H \psi(t).$$
 
-It captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $\hat H$, of the system, with $t$ being time and $\hbar$ being the Planck constant.
+This equation captures the _wave function_, $\psi(t)$, and the energy Hamiltonian, $\hat H$, of the system. Here, $t$ is time and $\hbar$ is the Planck constant.
 
 Fortunately, you don't need the Schrödinger equation to do quantum programming. In practice, nobody thinks in terms of the Schrödinger equation when they write quantum algorithms. But we can use the equation to help us understand some concepts of quantum computing.
 
@@ -20,7 +20,7 @@ wave function. The probability amplitude is a complex number that determines the
 getting a certain outcome when we measure
 the system. 
 
-The probability amplitude is an important difference from classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather, we describe bits in terms of the probabilities of finding their states when we observe them.
+The probability amplitude is an important difference from classical computing. In quantum computing, we don't describe bits as being in determined, factual states. Rather, we describe bits by the probabilities of finding their states when we observe them.
 
 ### What's Dirac bra-ket notation?
 
@@ -101,7 +101,7 @@ quantum mechanics and therefore of quantum computing.
 
 A fundamental difference between classical computers and quantum computers is
 that programs in quantum computers are intrinsically probabilistic, whereas classical
-computers are usually deterministic. Quantum algorithms consist of linear operations
+computers are usually deterministic. Quantum algorithms consist of linear operations that are
 applied to a register of qubits to modify the states to a particular
 superposition of all possibilities. Each possible state has an associated
 probability amplitude. When we make a measurement, we obtain one of the possible
@@ -123,14 +123,14 @@ In the next figure, you can see a simplified comparison between qubits and bits:
 
 ![Representation of bits versus qubits. A bit is a unit for measuring information.](../media/2-superposition.png)
 
-The following image shows the probability associated with each simplified qubit. 
+The following figure shows the probability associated with each simplified qubit. 
  
 ![Figure depicting the probability associated with each simplified qubit.](../media/2-probability.png)
 
 These examples don't represent actual qubits. After all, coins and marble
 vending machines can't exist in superposition states. But the examples help us visualize
 the probabilities. Only quantum systems like ions or superconducting circuits
-can exists in the superposition states that enable the power of quantum
+can exist in the superposition states that enable the power of quantum
 computing.
 
 How do we know the probabilities associated with a given superposition? Suppose we have a register of two qubits that can be in a superposition of four possible states: $$\ket{\psi} = a \ket{00} + b \ket{01} + c \ket{10} + d \ket{11}.$$
@@ -145,23 +145,21 @@ $\ket{01}$, it's $P(01)=|b|^2$, and so on.
 There are no restrictions on the types of numbers the probability amplitudes can
 be. They can be positive, negative, or even complex numbers. However, in a valid quantum superposition, all probabilities must sum to one: $|a|^2+|b|^2+|c|^2+|d|^2=1$. This constraint is often known as the _normalization condition_. You can think of the normalization condition as the fact that you always obtain an outcome when you measure, so the probabilities of measuring every possible outcome must sum to one.
 
-In the next figure, you can see how the number of parameters needed to simulate a
-quantum superposition grows exponentially with the number of qubits. Note that
-it doesn't mean that the information that we can store in a superposition grows
-exponentially with the number of qubits, since we can't obtain the complete
-information of the superposition but just the results after a measurement.
+In the next figure, you see how the number of parameters needed to simulate a
+quantum superposition grows exponentially with the number of qubits. That growth doesn't mean that the information that we can store in a superposition grows
+exponentially with the number of qubits. After all, we can't obtain the complete
+information about the superposition. We obtain only the results after a measurement.
 
-![Figure explaining the scale of parameters with the number of qubits. The following text can be read: Not only does the number of possible configurations grow exponentially with the number of qubits as two to the N, the number of possible combinations of amplitude is infinite, as long as their squares---the probabilities---add up to 1. N qubits will have
-two to the N possible configurations in superposition.](../media/2-scale.png)
+![Figure explaining that the number of possible configurations grows exponentially with the number of qubits as 2 to the N. The number of possible combinations of amplitude is infinite, as long as their squares add up to 1.](../media/2-scale.png)
 
 In the example state we produced for the quantum random bit generator,
 $\ket{\psi}=\frac1{\sqrt2} \ket{0} + \frac1{\sqrt2} \ket{1}$, the probability
-for each state is:
+for each state is
 
 $$P(0)=\left|\frac1{\sqrt{2}}\right|^2=\frac12;$$
 $$P(1)=\left|\frac1{\sqrt{2}}\right|^2=\frac12.$$
 
-Each state has a 50% probability of being measured and hence we have a balanced
+Each state has a 50-percent probability of being measured, so we have a balanced
 bit generator. We also can check that $\frac12 + \frac12 = 1$.
 
 In the next part, you'll use Q# to see how to prepare different superpositions of qubits and inspect their probabilities.
