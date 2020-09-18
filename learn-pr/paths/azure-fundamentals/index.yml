@@ -13,7 +13,8 @@ title: Azure fundamentals
 summary: |
   New to the cloud? Azure Fundamentals teaches you basic cloud concepts, provides a streamlined overview of many Azure services, and guides you with hands-on exercises to deploy your very first services for free.
 
-  We recently released a refreshed set of Azure Fundamentals learning paths that enable you to choose the topic areas you're interested in most. Begin your journey to the cloud with the [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) learning path.
+  > [!NOTE]
+  > We recently released a refreshed set of Azure Fundamentals learning paths that enable you to choose the topic areas you're interested in most. Begin your journey to the cloud with the [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) learning path.
 
   This older version is available for those who are trying to complete it but will be removed at some point in the future.
 
