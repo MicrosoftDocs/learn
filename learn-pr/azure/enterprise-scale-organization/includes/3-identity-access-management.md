@@ -113,7 +113,7 @@ When planning for role-based access, use custom RBAC role definitions within the
   }
   ```
 
-- **Appliction owners (DevOps/AppOps)**: Contributor role granted for application/operations team.
+- **Application owners (DevOps/AppOps)**: Contributor role granted for application/operations team.
 
   ```json
   {
