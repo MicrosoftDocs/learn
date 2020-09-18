@@ -6,11 +6,11 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. Click **Create a resource** in the upper-left corner of the Azure portal.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 
-1. In the search box, enter  **Ubuntu Server**. 
-1. Under the **Marketplace** result, select the **All results** link on the top right-hand side to see the different versions available. 
-1. Select **Ubuntu Server 18.04 LTS Canonical** from the presented list.
+1. In the search box, enter  **Ubuntu Server**.
+
+1. Select **Ubuntu Server 18.04 LTS Canonical** from the list.
 
 1. Click the **Create** button to start configuring the VM.
 
@@ -18,7 +18,7 @@ We can create Linux VMs with the Azure portal, the Azure CLI, or Azure PowerShel
 
 The VM creation experience in the portal is presented in a wizard format to walk you through all the configuration areas for the VM. Clicking the **Next** button will take you to the next configurable section. However, you can move between the sections at will with the tabs running across the top that identify each part.
 
-![Screenshot of the Azure portal showing the initial Create a virtual machine blade for an Ubuntu Server machine.](../media/3-azure-portal-create-vm.png)
+![Screenshot of the Azure portal showing the initial Create a virtual machine pane for an Ubuntu Server machine.](../media/3-azure-portal-create-vm.png)
 
 Once you fill in all the required options (identified with red asterisks), you can skip the remainder of the wizard experience and start creating the VM through the **Review + Create** button at the bottom.
 
@@ -31,10 +31,7 @@ We'll start with the **Basics** section. These instructions are for the Sandbox 
 1. For **Resource group**, the resource group with the name **<rgn>[sandbox resource group name]</rgn>** should be selected for you by default. 
 
 1. In the **Instance details** section, enter a name for your web server VM, such as **test-web-eus-vm1**. This indicates the environment (**test**), the role (**web**), location (**East US**), service (**vm**), and instance number (**1**).
-    - It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes.
-
-    > [!NOTE]
-    > As you change settings and tab out of each free-text field, Azure will validate each value automatically and place a green check mark next to it when it's good. You can hover your mouse pointer over error indicators to get more information on issues it discovers.
+It's considered best practice to standardize your resource names, so you can quickly identify their purpose. Linux VM names must be between 1 and 64 characters and be comprised of numbers, letters, and dashes.
 
 1. Select a location.
 
@@ -50,11 +47,8 @@ We'll start with the **Basics** section. These instructions are for the Sandbox 
 1. Moving on to the **Administrator account** section, for **Authentication type** select the **SSH public key** option.
 
 1. Enter a **username** you'll use to sign in with SSH. Choose something you can remember or write it down.
-
-1. Copy the SSH key from your public key file you created in the previous unit and paste it into the **SSH public key** field.
-
-    > [!IMPORTANT]
-    > When you copy the public key into the Azure portal, make sure not to add any additional whitespace or line-feed characters.
+1. For **SSH public key source**, select **Use existing public key**.
+1. Paste the SSH key from your public key file you created in the previous unit into the **SSH public key** field. It should look similar to the example shown in unit 3 with no additional whitespace or line-feed characters.
 
 1. In the **INBOUND PORT RULES** section, first select **Allow selected ports**. Since this is a Linux VM, we want to be able to access the VM using SSH remotely. Scroll the **Select inbound ports** list if necessary until you find **SSH (22)** and enable it.
 
@@ -72,9 +66,9 @@ Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). L
 
 1. Click the **Create and attach a new disk** link in the **Data disks** section.
 
-    ![Screenshot of the Azure portal showing the Create a new disk blade.](../media/3-add-data-disk.png)
+    ![Screenshot of the Azure portal showing the Create a new disk pane.](../media/3-add-data-disk.png)
 
-1. You can take all the defaults: **Premium SSD**, the auto-generated name, size of **1023** GiB, and **None (empty disk)** for **Source type**, although notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
+1. You can take all the defaults: **Premium SSD**, the auto-generated name, size of **1024** GiB, and **None (empty disk)** for **Source type**, although notice that source type is where you could use a snapshot or Azure Blob storage to create a VHD.
 
 1. Click **OK** to create the disk and go back to the **Data disks** section.
 
@@ -90,8 +84,7 @@ Recall that we will get an OS disk (/dev/sda) and a temporary disk (/dev/sdb). L
     - **Address space**: The overall IPV4 space available to this network.
     - **Subnets**: The first subnet to subdivide the address space - it must fit within the defined address space. Once the VNet is created, you can add additional subnets.
 
-> [!NOTE]
-> By default, Azure will create a virtual network, network interface, and public IP for your VM. It's not trivial to change the networking options after the VM has been created, so always double-check the network assignments on services you create in Azure. For this exercise, the defaults should work fine.
+By default, Azure creates a virtual network, network interface, and public IP for your VM. It's not trivial to change the networking options after the VM has been created, so always double-check the network assignments on services you create in Azure. For this exercise, the defaults should work fine.
 
 ## Finish configuring the VM and create the image
 

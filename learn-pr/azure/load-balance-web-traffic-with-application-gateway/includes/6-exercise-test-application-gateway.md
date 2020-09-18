@@ -16,7 +16,7 @@ The final step is to test the application gateway and verify that it implements 
 
 1. Using a web browser, navigate to the web site at the URL returned by the previous command. This is the address of your application gateway. Verify that the home page of the vehicle registration web app appears. Note the name of the web server that you're using as shown in the footer (**webServer1** or **webServer2**).
 
-    ![Screenshot showing an image of the vehicle registration web app.](../media/6-default-page.png)
+    :::image type="content" source="../media/6-default-page.png" alt-text="Screenshot showing an image of the vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
 
 1. Click **Register a Vehicle**, enter the details of a vehicle, and then click **Register**.
 
@@ -56,11 +56,11 @@ You just confirmed that routing to the root page works, as you were able to pull
 
 1. Now click **Register a Vehicle** in the web browser of the application gateway page. This should bring up the Vehicle Registration page for the vehicle registration site. With **/VehicleRegistration/** in the URL, this routes to the **vmPool** where our vehicle registration site is running.
 
-    ![Screenshot showing an image of the vehicle registration web app.](../media/6-vehicle-registration.png)
+    :::image type="content" source="../media/6-vehicle-registration.png" alt-text="Screenshot showing an image of the vehicle registration web app." loc-scope="other"::: <!-- no-loc -->
 
 1. Now visit `http://<vehicleAppGateway>/LicenseRenewal/Create`. This should take you to the license renewal page running on App Service. With **/LicenseRenewal/** in the URL, this routes to the **appServicePool** where our license renewal site is running.
 
-    ![Screenshot showing an image of the license renewal web app.](../media/6-license-renewal.png)
+    :::image type="content" source="../media/6-license-renewal.png" alt-text="Screenshot showing an image of the license renewal web app." loc-scope="other"::: <!-- no-loc -->
 
 With this configuration, we can direct all users for both sites through our Application Gateway, giving them one root URL to remember. We can add additional sites as we expand our web presence.
 

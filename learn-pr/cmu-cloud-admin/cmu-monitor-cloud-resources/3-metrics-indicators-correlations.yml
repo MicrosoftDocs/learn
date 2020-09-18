@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.3-metrics-indicators-correlations
+title: Metrics, indicators, and correlations
+metadata:
+  title: Metrics, indicators, and correlations
+  description: Metrics, indicators, and correlations
+  ms.date: 1/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-metrics-indicators-correlations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "A count of requests per minute reaching a server is an example of which of the following?"
+      choices:
+      - content: "A performance metric"
+        isCorrect: true
+        explanation: "Correct! Requests-per-minute is a metric, not an indicator or a correlation."
+      - content: "A performance indicator"
+        isCorrect: false
+        explanation: "Incorrect. Requests-per-minute is a metric, not an indicator or a correlation."
+      - content: "A correlation"
+        isCorrect: false
+        explanation: "Incorrect. Requests-per-minute is a metric, not an indicator or a correlation."
+      - content: "None of the above"
+        isCorrect: false
+        explanation: "Incorrect. Requests-per-minute is a metric, not an indicator or a correlation."
+
+    - content: "To monitor the performance of an application deployed to the cloud and determine when it needs to be scaled to meet demand, you've configured a dashboard to show the number of requests received per minute and the number of requests processed per minute. The idea is that if the count of requests processed plateaus while the count of requests received continues to grow, the server might be saturated and you need more servers. In this scenario, which of the following are you employing?"
+      choices:
+      - content: "A performance metric"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval and the number of requests that couldn't be processed."
+      - content: "A performance indicator"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval and the number of requests that couldn't be processed."
+      - content: "A USE correlation"
+        isCorrect: true
+        explanation: "Correct! USE considers the number of requests processed during a given interval and the number of requests that couldn't be processed."
+      - content: "A RED correlation"
+        isCorrect: false
+        explanation: "Incorrect. This is an example of a USE correlation, which considers the number of requests processed during a given interval and the number of requests that couldn't be processed."

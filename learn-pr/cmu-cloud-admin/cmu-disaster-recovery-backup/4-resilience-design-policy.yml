@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-disaster-recovery-backup.4-resilience-design-policy
+title: Resilience in design and policy
+metadata:
+  title: Resilience in design and policy
+  description: Resilience in design and policy
+  ms.date: 03/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 14
+content: |
+  [!include[](includes/4-resilience-design-policy.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "What is the primary purpose of resilience in information systems?"
+      choices:
+      - content: "To ensure that all data, whether stored on-premises or in the cloud, is backed up and ready to be restored if an unplanned failure occurs"
+        isCorrect: false
+        explanation: "Incorrect. Backup and replication are elements that contribute to resilience, but backups alone do not make systems resilient."
+      - content: "To ensure that systems can scale to meet demand when demand spikes unexpectedly"
+        isCorrect: false
+        explanation: "Incorrect. This is a description of elasticity, not resilience."
+      - content: "To reduce the cost of maintaining failover clusters, which typically aren't used unless an unplanned failure occurs"
+        isCorrect: false
+        explanation: "Incorrect. Resiliency typically increases costs by maintaining replicas of the resources that comprise a system."
+      - content: "To maintain acceptable service levels even when unplanned failures occur"
+        isCorrect: true
+        explanation: "Correct! A system that fails over to a secondary set of resources when primary resources go down is a resilient system."
+    
+    - content: "True or false: Hosting an application on a resilient cloud platform makes the application resilient, too"
+      choices:
+      - content: "True"
+        isCorrect: false
+        explanation: "Incorrect. Applications must be designed for resiliency, even if they're hosted on resilient cloud platforms."
+      - content: "False"
+        isCorrect: true
+        explanation: "Correct! Applications must be designed for resiliency, even if they're hosted on resilient cloud platforms."
+      

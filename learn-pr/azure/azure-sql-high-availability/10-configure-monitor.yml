@@ -1,0 +1,45 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-high-availability.10-configure-monitor
+metadata:
+  title: Configure and monitor availability
+  description: Configure and monitor availability
+  ms.date: 08/05/2020
+  author: amthomas46
+  ms.author: antho
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure and monitor availability
+durationInMinutes: 10
+content: |
+  [!include[](includes/10-configure-monitor.md)]
+quiz:
+    title: Knowledge check
+    questions:
+    - content: "What methods can you use to monitor region and datacenter availability?"
+      choices:
+      - content: "Azure status dashboard"
+        isCorrect: false
+        explanation: "Are there other ways?"
+      - content: "SMS alerts"
+        isCorrect: false
+        explanation: "Are there other ways?"
+      - content: "Email alerts"
+        isCorrect: false
+        explanation: "Are there other ways?"
+      - content: "All of the above"
+        isCorrect: true
+        explanation: "Correct! These methods are all configurable options for monitoring the availability of regions and datacenters. You can also view Azure Service Health in the Azure portal."
+    - content: "Which of the following tools doesn't allow you to monitor instance, server, and database availability?"
+      choices:
+      - content: "Azure Service Health in the Azure portal"
+        isCorrect: true
+        explanation: "Correct. You can use Azure Service Health to monitor the availability of a general region or service but not your specific database or instance availability."
+      - content: "Azure Resource Health in the Azure portal"
+        isCorrect: false
+        explanation: "This tool does provide monitoring for instance, server, and database availability. Review the Instance, server, and database availability section in the unit."
+      - content: "Azure PowerShell commands"
+        isCorrect: false
+        explanation: "This tool does provide monitoring for instance, server, and database availability. Review the Instance, server, and database availability section in the unit."
+      - content: "Azure CLI commands"
+        isCorrect: false
+        explanation: "This tool does provide monitoring for instance, server, and database availability. Review the Instance, server, and database availability section in the unit."

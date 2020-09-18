@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-dns-for-windows-server-iaas-vms.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Contoso IT staff want to ensure that internal and external clients resolve names to internal and external IP addresses respectively. What do they need to do?"
+    choices:
+    - content: "Set up split-horizon DNS by creating two DNS zones in Azure—one private and one public. The zones must have different names."
+      isCorrect: false
+      explanation: "That's incorrect. They must create two zones—one private and one public. However, the zones must be the same name. For example, `Contoso.com`."
+    - content: "Set up split-horizon DNS by creating two DNS zones in Azure—one private and one public, both with the same name."
+      isCorrect: true
+      explanation: "That's correct. They must create two zones—one public and one private. The zones must also have the same name, for example, `Contoso.com`."
+    - content: "Set up split-horizon DNS by creating a single, private DNS zone in Azure."
+      isCorrect: false
+      explanation: "That's incorrect. They must create two zones, one public and one private. The zones must also have the same name, for example, `Contoso.com`."
+  - content: "After creating a private zone in Azure DNS, what must an administrator do before their resources can use the zone?"
+    choices:
+    - content: "Link their VNets to the zone."
+      isCorrect: true
+      explanation: "That's correct. When they link the zone to VNets, then resources attached to those VNets can access the zone."
+    - content: "Link their VMs to the zone."
+      isCorrect: false
+      explanation: "That's incorrect. They cannot link the VMs directly. Rather, they should link the VNets to the zone to which the VMs are attached."
+    - content: "Enable autoregistration on the VNet link to the zone."
+      isCorrect: false
+      explanation: "That's incorrect. Autoregistration is optional, and is not required for the zone to become accessible."
+  - content: "From an internet-connected on-premises host, Pavel is unable to resolve an IP address from an FQDN for one of the internet-facing VMs in Azure. He created a private DNS zone. What does he need to do?"
+    choices:
+    - content: "Troubleshoot DNS on the client by using a standard name resolution troubleshooting procedure. For example, empty the name cache, and then use `nslookup` to verify the resolution process."
+      isCorrect: false
+      explanation: "That's incorrect. The problem is that Pavel needs to create a public DNS zone to support this scenario."
+    - content: "Make sure that the appropriate IP address is added as a record set in the DNS zone."
+      isCorrect: false
+      explanation: "That's incorrect. The problem is that Pavel needs to create a public DNS zone to support this scenario."
+    - content: "Create a public DNS zone for the domain name that contains the record, and add the record set for the VM's FQDN."
+      isCorrect: true
+      explanation: "That's correct. A public DNS zone is required for this scenario."

@@ -1,0 +1,88 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.2-full-virtualization
+title: Full virtualization vs. paravirtualization
+metadata:
+  title: Full virtualization vs. paravirtualization
+  description: Full virtualization vs. paravirtualization
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-full-virtualization.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1 question 1
+  - content: "Critical instructions are problematic because they are:"
+    choices:
+    - content: "A subset of the set of privileged instructions; thus, they always trap if executed in user mode."
+      isCorrect: false
+      explanation: "Incorrect. The hypervisor can control all privileged instructions because they always trap in user mode. As such, these instructions cannot illegally alter the system. Recall the definition of critical instructions."
+    - content: "A subset of the set of privileged instructions; thus, they do not trap if executed in user mode."
+      isCorrect: false
+      explanation: "Incorrect. Privileged instructions always trap in user mode. Recall the definition of critical instructions."
+    - content: "A subset of the set of unprivileged instructions. They can modify the configuration of the system resources and trap if executed in user mode."
+      isCorrect: false
+      explanation: "Incorrect. Critical instructions do not trap if executed in user mode. Recall the definition of critical instructions."
+    - content: "A subset of the set of unprivileged instructions. They can modify the configuration of the system resources and do not trap if executed in user mode."
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I Get This block 1 question 2
+  - content: "Can an efficient hypervisor be constructed for an ISA with only one critical instruction?"
+    choices:
+    - content: "Yes"
+      isCorrect: false
+      explanation: "Incorrect. There are techniques that can handle critical instructions, such as code patching, emulation, and paravirtualization. But, it will not be efficient according to Popek and Goldberg's theorem. Does it really matter if the ISA has one critical instruction or more than one?"
+    - content: "No"
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I Get This block 1 question 3
+  - content: "One way to deal with critical instructions is to scan the guest code before execution and replace the critical instructions with traps to the hypervisor. In what way is this approach efficient?"
+    choices:
+    - content: "Allows most of the virtual environments to run in user space but without modifying the guest OS"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Is ideal for performance"
+      isCorrect: false
+      explanation: "Incorrect. Scanning every instruction takes time and degrades performance. Think carefully about how efficient this approach can be."
+    - content: "Allows most of the virtual environments to run in user space but would require a modification to the guest OS"
+      isCorrect: false
+      explanation: "Incorrect. This is a completely different yet valid approach called paravirtualization. Think carefully about how efficient this approach can be."
+
+# Did I Get This block 1 question 4
+  - content: "The virtualization approach that executes a set of hypercalls that correspond to critical instructions is called:"
+    choices:
+    - content: "Code patching"
+      isCorrect: false
+      explanation: "Incorrect. Code patching scans and replaces critical instructions with no need to modify the guest OS. Recall the definitions of various virtualization techniques."
+    - content: "Emulation"
+      isCorrect: false
+      explanation: "Incorrect. The emulation approach is used by full virtualization. Recall the definitions of various virtualization techniques."
+    - content: "Paravirtualization"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Full virtualization"
+      isCorrect: false
+      explanation: "Incorrect. The full virtualization approach uses emulation. Recall the definitions of various virtualization techniques."      
+
+# Did I Get This block 1 question 5
+  - content: "One of the most commonly used ISAs today is IA-32. IA-32 includes 17 critical instructions. Which of the following hypervisor types can be constructed for IA-32?"
+    choices:
+    - content: "A true or efficient hypervisor"
+      isCorrect: false
+      explanation: "Incorrect. Does this hypervisor follow Popek and Goldberg's principle? According to Popek and Goldberg, a true or efficient hypervisor can be constructed only if sensitive instructions always trap in user mode. Critical instructions are sensitive instructions but do not trap in user mode. Thus, a hypervisor for an ISA with critical instructions such as IA-32 can still be constructed, but it will not be true or efficient as defined by Popek and Goldberg. Smith and Nair refer to such a hypervisor simply as a hypervisor. "
+    - content: "Hypervisor"
+      isCorrect: true
+      explanation: "Correct!"
+
+  # Did I Get This block 2 question has intro statement and no visible graphic
+  # content: "Match the statements below to either Full virtualization or Paravirtualization."
+
+  # Did I Get This block 3 question has intro statement and no visible graphic
+  # content: "Associate each of the following approaches to the appropriate demonstrated figures."

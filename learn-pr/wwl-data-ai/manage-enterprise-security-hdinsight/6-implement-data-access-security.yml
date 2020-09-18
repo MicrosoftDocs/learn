@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-enterprise-security-in-hdinsight.implement-data-access-security
+title: Implement data access security
+metadata:
+  title: Implement data access security
+  description: "Implement Data Access security"
+  ms.date: 02/28/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-implement-data-access-security.md)]

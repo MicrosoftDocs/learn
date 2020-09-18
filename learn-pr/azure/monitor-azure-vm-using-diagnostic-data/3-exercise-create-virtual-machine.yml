@@ -3,7 +3,7 @@ uid: learn.azure.monitor-azure-vm-using-diagnostic-data.exercise-create-virtual-
 title: Exercise - Set up a VM with boot diagnostics
 metadata:
   title: Exercise - Set up a VM with boot diagnostics
-  description: Deploy a Linux virtual machine and enable boot diagnostics. Once the VM is created, you'll quickly set up a graph to view the CPU usages and inbound traffic. You'll also check the boot diagnostics are working correctly.
+  description: Deploy a Linux virtual machine and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usage and inbound traffic. You'll also check that boot diagnostics are working correctly.
   ms.date: 10/18/2019
   author: cwatson-cat
   ms.author: cwatson

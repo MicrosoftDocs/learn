@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.architect-migration-bcdr
+metadata:
+  title: Architect migration, business continuity, and disaster recovery in Azure learning path
+  description: Learn how to migrate resources to Azure, how to provide site recovery for your applications in Azure and on-premises, and how to your applications are available through service interruptions and changes in load.
+  brand: azure
+  ms.date: 10/23/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect migration, business continuity, and disaster recovery in Azure
+summary: Learn how to migrate resources to Azure, how to provide site recovery for your applications in Azure and on-premises, and how to your applications are available through service interruptions and changes in load.
+prerequisites: |
+  - Familiarity with virtual machines
+  - Familiarity with backup and restore concepts
+  - Familiarity with high availability and autoscaling concepts
+iconUrl: /learn/achievements/architect-migration-bcdr.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-virtual-machines
+- azure-backup
+- azure-site-recovery
+- azure-app-service
+- azure-sql-database
+modules:
+- learn.design-your-migration-to-azure
+- learn.protect-on-premises-infrastructure-with-azure-site-recovery
+- learn.protect-infrastructure-with-azure-site-recovery
+- learn.protect-virtual-machines-with-azure-backup
+- learn.backup-restore-azure-sql
+- learn.build-app-with-scale-sets
+- learn.app-service-autoscale-rules
+- learn.azure.app-service-scale-up-scale-out
+- learn.design-a-geographically-distributed-application
+trophy:
+  uid: learn.architect-migration-bcdr.trophy

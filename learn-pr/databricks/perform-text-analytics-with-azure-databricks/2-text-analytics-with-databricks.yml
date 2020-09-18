@@ -4,8 +4,8 @@ metadata:
   title: Text analytics with Azure Databricks
   description: Setup the required services in your Azure subscription.
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Text analytics with Azure Databricks

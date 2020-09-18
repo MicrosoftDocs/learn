@@ -1,0 +1,3 @@
+Image classification is used to assign images to categories, or classes. Patterns in image pixel values are used to determine which class a particular image belongs, and a model is trained to match the patterns in the pixel values to a set of class labels. You can use the Custom Vision cognitive service to train image classification models and deploy them as services for applications to use.
+
+You can find out more about the Custom Vision service in the [service documentation](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service?azure-portal=true).

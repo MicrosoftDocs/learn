@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="106px" height="107px" viewBox="0 0 106 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>process and translate speech with azure cognitive speech services/synthesize-text-input-to-speech</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-2.8%" y="-2.8%" width="106.0%" height="106.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="100" height="100"></rect>
+        <path d="M50,0 C77.6142375,0 100,22.3857625 100,50 C100,77.6142375 77.6142375,100 50,100 C22.3857625,100 0,77.6142375 0,50 C0,22.3857625 22.3857625,0 50,0 Z M50,4 C24.5949015,4 4,24.5949015 4,50 C4,75.4050985 24.5949015,96 50,96 C75.4050985,96 96,75.4050985 96,50 C96,24.5949015 75.4050985,4 50,4 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-8">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#0062B3" offset="0%"></stop>
+            <stop stop-color="#00549B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9685455%" y1="-12.1621622%" x2="49.9685455%" y2="124.710425%" id="linearGradient-10">
+            <stop stop-color="#A67AF4" offset="0%"></stop>
+            <stop stop-color="#A478F1" offset="30%"></stop>
+            <stop stop-color="#9C71E9" offset="49%"></stop>
+            <stop stop-color="#8F64DA" offset="65%"></stop>
+            <stop stop-color="#7C53C5" offset="80%"></stop>
+            <stop stop-color="#643DAA" offset="93%"></stop>
+            <stop stop-color="#552F99" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="45.6066946%" y1="-4.60251046%" x2="56.4853556%" y2="130.125523%" id="linearGradient-11">
+            <stop stop-color="#A67AF4" offset="0%"></stop>
+            <stop stop-color="#A478F1" offset="30%"></stop>
+            <stop stop-color="#9C71E9" offset="49%"></stop>
+            <stop stop-color="#8F64DA" offset="65%"></stop>
+            <stop stop-color="#7C53C5" offset="80%"></stop>
+            <stop stop-color="#643DAA" offset="93%"></stop>
+            <stop stop-color="#552F99" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Process-and-translate-speech-with-Azure-Cognitive-Speech-Services" transform="translate(-160.000000, -510.000000)">
+            <g id="process-and-translate-speech-with-azure-cognitive-speech-services/synthesize-text-input-to-speech" transform="translate(160.000000, 510.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="102.5" height="102.5" rx="50"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(3.000000, 3.000000)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="100" height="100"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-18" transform="translate(27.000000, 22.000000)" fill-rule="nonzero">
+                    <g id="Group">
+                        <path d="M24.3631796,0.047564187 L2.05332247,0.047564187 C1.07652213,0.047564187 0.28466899,0.832981707 0.28466899,1.80184332 L0.28466899,49.1981567 C0.28466899,50.1670183 1.07652213,50.9524358 2.05332247,50.9524358 L40.467235,50.9524358 C41.4440354,50.9524358 42.2358885,50.1670183 42.2358885,49.1981567 L42.2358885,17.8365701 C42.2358885,16.8677085 41.4440354,16.082291 40.467235,16.082291 L27.7143125,16.082291 C26.754649,16.082291 25.976688,15.3106527 25.976688,14.3587887 L25.976688,1.80184332 C25.9955613,0.884240273 25.2861441,0.11292997 24.3631796,0.047564187 Z" id="Path" fill="url(#linearGradient-8)"></path>
+                        <path d="M42.4756098,17.1734694 L25.1707317,0 L25.1707317,13.9147465 C25.1707317,15.7144895 26.6325539,17.1734694 28.435803,17.1734694 L42.4756098,17.1734694 Z" id="Path" fill="#92C4FC"></path>
+                    </g>
+                    <path d="M32.3567416,26 L9.49719101,26 C8.67031525,26 8,26.5506898 8,27.23 C8,27.9093102 8.67031525,28.46 9.49719101,28.46 L32.502809,28.46 C33.3296848,28.46 34,27.9093102 34,27.23 C34,26.5506898 33.3296848,26 32.502809,26 L32.3567416,26 Z M21.1151685,18.27 L8.80617978,18.27 C8.36093898,18.27 8,18.8206898 8,19.5 C8,20.1793102 8.36093898,20.73 8.80617978,20.73 L21.1938202,20.73 C21.639061,20.73 22,20.1793102 22,19.5 C22,18.8206898 21.639061,18.27 21.1938202,18.27 L21.1151685,18.27 Z M32.1566867,33.015 L9.6998189,33.015 C9.12626408,32.9393986 8.55320243,33.1530533 8.23708676,33.5603508 C7.92097108,33.9676483 7.92097108,34.4923517 8.23708676,34.8996492 C8.55320243,35.3069467 9.12626408,35.5206014 9.6998189,35.445 L32.3001811,35.445 C32.8737359,35.5206014 33.4467976,35.3069467 33.7629132,34.8996492 C34.0790289,34.4923517 34.0790289,33.9676483 33.7629132,33.5603508 C33.4467976,33.1530533 32.8737359,32.9393986 32.3001811,33.015 L32.1566867,33.015 Z M32.3567416,40 L9.49719101,40 C8.67031525,40 8,40.5506898 8,41.23 C8,41.9093102 8.67031525,42.46 9.49719101,42.46 L32.502809,42.46 C33.3296848,42.46 34,41.9093102 34,41.23 C34,40.5506898 33.3296848,40 32.502809,40 L32.3567416,40 Z" id="Shape" fill="#83B9F9"></path>
+                </g>
+                <g id="Notification-Hub" transform="translate(45.000000, 50.000000)">
+                    <g id="Group" transform="translate(1.000000, 4.000000)" fill="url(#linearGradient-9)" fill-rule="nonzero">
+                        <path d="M31.9746032,1.37585793 L31.9746032,22.4096208 C31.9746032,22.7117728 31.8572281,23.0012758 31.6487246,23.2130957 C31.4402211,23.4249156 31.1581146,23.5412922 30.8657778,23.5360827 L22.3710476,23.5360827 C22.2257354,23.5360827 22.1079365,23.6578185 22.1079365,23.8079873 L22.1079365,27.2067948 C22.1061727,27.4127821 21.991935,27.6000573 21.812857,27.6905326 C21.633779,27.7810078 21.4206051,27.7591501 21.2622222,27.6340734 L16.1503492,23.594348 L15.9812063,23.594348 L1.13422222,23.594348 C0.84188542,23.5995575 0.559778893,23.4831808 0.351275399,23.271361 C0.142771904,23.0595411 0.0253968133,22.770038 0.0253968133,22.4678861 L0.0253968133,1.37585793 C0.0253968133,1.07370597 0.142771904,0.784202897 0.351275399,0.572383034 C0.559778893,0.36056317 0.84188542,0.244186499 1.13422222,0.249228355 L30.8657778,0.249228355 C31.1581146,0.244186499 31.4402211,0.36056317 31.6487246,0.572383034 C31.8572281,0.784202897 31.9746032,1.07370597 31.9746032,1.37585793 Z" id="Path"></path>
+                    </g>
+                    <rect id="Rectangle" x="0" y="0" width="34" height="34"></rect>
+                </g>
+                <g id="Person" transform="translate(47.000000, 56.000000)" fill-rule="nonzero">
+                    <path d="M16.3971187,20 C17.2823656,20 18,19.2774325 18,18.3861004 L18,18.1949807 C17.4305553,13.1409266 14.4989699,9 8.99433819,9 C3.48970649,9 0.558121031,12.503861 0.00976691563,18.2162162 C-0.037416471,18.6447228 0.0876401878,19.0744242 0.357055727,19.4095194 C0.626471267,19.7446146 1.01784608,19.9572432 1.44392383,20 L16.3971187,20 Z" id="Path" fill="url(#linearGradient-10)"></path>
+                    <path d="M8.52918288,9.79402985 C7.63278459,9.79446009 6.75505747,9.51890013 6,9 L8.52918288,16 L11,9.14626866 C10.2492242,9.60670915 9.39304356,9.83116956 8.52918288,9.79402985 Z" id="Path" fill="#FFFFFF" opacity="0.8"></path>
+                    <circle id="Oval" fill="url(#linearGradient-11)" cx="8.5" cy="5.5" r="5.5"></circle>
+                </g>
+                <g id="Speech-lines-" transform="translate(63.000000, 59.000000)" stroke="#FFFFFF" stroke-linecap="round">
+                    <path d="M3,7 C4.65685425,7 6,5.65685425 6,4 C6,2.34314575 4.65685425,1 3,1" id="Path"></path>
+                    <path d="M0,6 C1.1045695,6 2,5.1045695 2,4 C2,2.8954305 1.1045695,2 0,2" id="Path-Copy-4"></path>
+                    <path d="M6,8 C8.209139,8 10,6.209139 10,4 C10,1.790861 8.209139,0 6,0" id="Path"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

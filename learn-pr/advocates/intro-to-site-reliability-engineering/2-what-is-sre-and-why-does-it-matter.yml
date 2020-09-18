@@ -4,10 +4,9 @@ title: What is SRE and why does it matter?
 metadata:
   title: What is SRE and why does it matter?
   description: What is SRE and why does it matter?
-  ms.date: 09/26/2018
-  #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

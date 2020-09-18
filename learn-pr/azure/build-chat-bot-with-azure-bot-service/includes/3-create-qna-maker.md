@@ -23,7 +23,7 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
 
     Setting|Value|Description
     ---|---|---
-    Name|*choose a unique name*|This name must be unique within Azure, so make sure a green check mark appears next to it *AND* in the **App name** box further down the blade.
+    Name|*choose a unique name*|This name must be unique within Azure, so make sure a green check mark appears next to it *AND* in the **App name** box further down the pane.
     Subscription|*Select your subscription*|Select your Azure subscription.
     Pricing tier|F0|A basic free tier.
     Location|*Select the region closest to you from the drop-down*|Select the location where the service should be located.
@@ -33,13 +33,13 @@ In this unit, you will use QnA Maker to create a knowledge base containing quest
     App name|*Leave default*|The default value is populated based on your QnA Maer name. You can change this if you'd like a different name for the web app, or leave the default value.
     Website location|*Select the region closest to you from the drop-down*|Select the location where the website should be located.
 
-1. Select the **Create** button at the bottom of the blade.
+1. Select the **Create** button at the bottom of the pane.
 
-    ![Screenshot of the Azure portal showing the QnA Maker Create blade with configuration values as described.](../media/3-new-qna-maker-service.png)
+    ![Screenshot of the Azure portal showing the QnA Maker Create pane with configuration values as described.](../media/3-new-qna-maker-service.png)
 
 1. Select **Resource groups** in the ribbon on the left side of the portal, and locate your **mslearn-factbot** resource group.
 
-    Wait until "Deploying" changes to "Succeeded" at the top of the blade, indicating that the QnA service and the resources associated with it were successfully deployed. If the message disappears, you can select the bell icon in the menu bar to view the status. You can also select **Refresh** at the top of the blade to refresh the deployment status.
+    Wait until "Deploying" changes to "Succeeded" at the top of the pane, indicating that the QnA service and the resources associated with it were successfully deployed. If the message disappears, you can select the bell icon in the menu bar to view the status. You can also select **Refresh** at the top of the pane to refresh the deployment status.
 
 ## Create, Populate, and Train Your QnA Maker Knowledge Base
 
@@ -77,7 +77,7 @@ The next step is to populate your knowledge base with questions and answers. You
 
 1. Select the **Test** button to the right of the **Save and train** button. Type "Hi" into the message box and press **Enter**. Confirm that the response is "Welcome to the QnA Factbot," as shown below.
 
-    ![Screenshot of a test interaction with the created chat bot.](../media/3-test-kb.png)
+    :::image type="content" source="../media/3-test-kb.png" alt-text="Screenshot of a test interaction with the created chat bot." loc-scope="azure-cognitive-services"::: <!-- no-loc -->
 
 1. Type "What book has sold the most copies?" into the message box and press **Enter**. What is the response?
 

@@ -37,7 +37,7 @@ Your database team has exported your company's current video catalog into a JSON
 
 A video has a title string, a difficulty rating integer, length in minutes, a publication date and time, and a file size in megabytes.
 
-In the unit, you'll use the Import data wizard to create an index, and import your video catalog into the Azure Search service you created earlier.
+In the unit, you'll use the Import data wizard to create an index, and import your video catalog into the Azure Cognitive Search service you created earlier.
 
 ## Load the video catalog into Azure blob storage
 
@@ -63,11 +63,13 @@ In the unit, you'll use the Import data wizard to create an index, and import yo
     az storage blob upload --connection-string $CREDENTIALS --container-name $CONTAINER --file video-catalog.json --name VideoCatalog
     ```
 
-## Create an Azure Search index for your data in the Azure portal
+## Create a search index for your data in the Azure portal
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
 
-1. In the **All Resources** view of the portal, select the Azure Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
+1. On the Azure portal menu or from the **Home** page, select **All resources**.
+
+1. Select the Azure Cognitive Search resource you created to navigate to its overview page. Note the ability to add indexes, import data, and search created indexes.
 
 1. On the **northwindfitness** search Overview page, select **Import data**.
 
@@ -90,7 +92,7 @@ In the unit, you'll use the Import data wizard to create an index, and import yo
 
     ![Screenshot of the Azure portal, showing the dialog shown while an index is being created](../media/5-exercise-screenshot-5.png)
 
-    Azure Search will read the contents of the JSON file and create an index schema automatically.
+    Azure Cognitive Search will read the contents of the JSON file and create an index schema automatically.
 
 1. On the **Add cognitive search (Optional)** page, select **Skip to: Customize Target Index**.
 

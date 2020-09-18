@@ -2,14 +2,12 @@
 uid: learn-wwl.azure-iot-strategy-and-solutions.2-why-azure-for-iot
 title: Why Azure for IoT
 metadata:
-  title: Why Azure for IoT
-  description: .
-  ms.date: 01/31/2019
+  description: Describes the business challenges that IoT is focused on addressing.
+  ms.date: 04/10/2020
   author: msmkitris1
   ms.author: mkitris
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
   [!include[](includes/2-Why-Azure-for-IoT.md)]

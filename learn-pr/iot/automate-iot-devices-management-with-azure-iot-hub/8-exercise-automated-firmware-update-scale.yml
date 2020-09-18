@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.iot.automate-iot-devices-management-with-azure-iot-hub.exercise-automated-firmware-update-at-scale
+metadata:
+  title: Exercise - Automated firmware update at scale
+  description: In this unit, we will apply what we learned in previously to configure a firmware update on several groups of devices, illustrating a real life scenario.
+  ms.date: 12/17/2019
+  author: olivierbloch
+  ms.author: Olivier.Bloch
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: True
+interactive: bash-editor
+title: Exercise - Automated firmware update at scale
+durationInMinutes: 15
+content: |
+  [!include[](includes/8-exercise-automated-firmware-update-scale.md)]

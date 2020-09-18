@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eliminate-risk.4-repudiation-not-claiming-responsibility-for-an-action-taken
+title: Repudiation - not claiming responsibility for an action taken
+metadata:
+  title: Repudiation - not claiming responsibility for an action taken
+  description: Learn about Repudiation and its corresponding security control
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-repudiation-not-claiming-responsibility-for-an-action-taken.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which statement describes a potential security control against repudiation?"
+    choices:
+    - content: "Sender digitally signs a message so the receiver knows who the message came from"
+      isCorrect: false
+      explanation: "This message applies to spoofing"
+    - content: "System logs all actions and users to keep everyone accountable"
+      isCorrect: true
+      explanation: "This statement applies to repudiation"
+    - content: "System grants administrative access to users listed on the access control list"
+      isCorrect: false
+      explanation: "This statement applies to tampering, information disclosure, denial of service and elevation of privilege "

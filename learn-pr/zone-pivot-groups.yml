@@ -12,6 +12,8 @@ groups:
     title: Sandbox
   - id: support
     title: Support
+  - id: educators
+    title: Educators
 - id: os
   title: Operating system
   prompt: Choose your operating system
@@ -96,6 +98,46 @@ groups:
       title: Node.js
     - id: python
       title: Python
+- id: dev-lang-csharp-python
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: python
+      title: Python
+- id: dev-lang-nodeexpress-pythonflask
+  title: Development platform
+  prompt: Choose your platform
+  pivots:
+    - id: nodeexpress
+      title: Express and Node.js (JavaScript)
+    - id: pythonflask
+      title: Flask (Python)
+- id: dev-lang-csharp-node
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: node
+      title: Node.js
+- id: dev-lang-javascript-powershell
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: javascript
+      title: JavaScript
+    - id: powershell
+      title: PowerShell
+- id: dev-lang-csharp-powershell
+  title: Development language
+  prompt: Choose your development language
+  pivots:
+    - id: csharp
+      title: C#
+    - id: powershell
+      title: PowerShell
 - id: platform-cloud
   title: Platform
   prompt: Choose which platform you want to run in the cloud
@@ -156,7 +198,7 @@ groups:
       title: People Strategy
     - id: technology-strategy
       title: Technology Strategy
-- id: migration-strategy  
+- id: migration-strategy 
   title: Migration-Strategy
   prompt: Click on each of the buttons to learn more about each migration strategy.
   pivots:
@@ -206,3 +248,79 @@ groups:
       title: PostgreSQL
     - id: sql
       title: SQL Server
+- id: vsandcode
+  title: IDE
+  prompt: Choose your app Integrated Development Environment (IDE)
+  pivots:
+    - id: vscode
+      title: Visual Studio Code
+    - id: vstudio
+      title: Visual Studio
+- id: vs-vscode-language
+  title: IDE and language
+  prompt: Choose your Integrated Development Environment (IDE) and development language
+  pivots:
+    - id: vscode-node
+      title: Visual Studio Code + Node.js
+    - id: vscode-csharp
+      title: Visual Studio Code + C#
+    - id: vs-node
+      title: Visual Studio + Node.js
+    - id: vs-csharp
+      title: Visual Studio + C#
+- id: bash-vscode
+  title: Operating system
+  prompt: Choose an Integrated Development Environment (IDE) or the shell
+  pivots:
+    - id: bash
+      title: Bash
+    - id: vscode
+      title: Visual Studio Code
+- id: dev-env-csharp-java-cli
+  title: Development environment
+  prompt: Choose your development environment
+  pivots:
+    - id: csharp
+      title: C#
+    - id: java
+      title: Java
+    - id: cli
+      title: Azure CLI
+- id: dev-javascript-framework
+  title: JavaScript framework
+  prompt: Choose your JavaScript framework or library
+  pivots:
+    - id: angular
+      title: Angular
+    - id: react
+      title: React
+    - id: svelte
+      title: Svelte
+    - id: vue
+      title: Vue
+- id: data-azure-database
+  title: Azure database environment
+  prompt: Choose your database
+  pivots:
+    - id: azuresql
+      title: Azure SQL Database
+    - id: postgresql
+      title: Azure Database for PostgreSQL
+    - id: mysql
+      title: Azure Database for MySQL   
+- id: platform-windows-linux
+  title: Platform
+  prompt: Choose your platform 
+  pivots:
+    - id: windows
+      title: Windows
+    - id: linux
+      title: Linux
+- id: azure-shell-interface
+  title: Shell
+  prompt: Choose your Azure shell
+  pivots:
+    - id: powershell
+      title: PowerShell
+    - id: cli
+      title: Azure CLI

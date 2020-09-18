@@ -6,11 +6,11 @@ Remember, the process you followed was specific to .NET Core applications. The t
 
 Let's check in with the team one last time. They're having their weekly team meeting, and Mara wants to show everyone the latest updates.
 
-**Tim**: I'm glad to see you're making good progress stabilizing our builds. But that sure looks like a lot of code!
+**Tim:** I'm glad to see you're making good progress stabilizing our builds. But that sure looks like a lot of code!
 
-**Andy**: Yes, it's a fair amount. But it's all things we do anyway. And now that parts are automated, we only need to define them one time. And because it's code, we have a common vocabulary for defining our build process and a consistent place to keep it all.
+**Andy:** Yes, it's a fair amount. But it's all things we do anyway. And now that parts are automated, we only need to define them one time. And because it's code, we have a common vocabulary for defining our build process and a consistent place to keep it all.
 
-**Mara**: Thank you all for giving it a try. Now, what's next on the list?
+**Mara:** Thank you all for giving it a try. Now, what's next on the list?
 
 ## Learn more
 

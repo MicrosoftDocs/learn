@@ -25,7 +25,7 @@ Use these resources to discover more.
 
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
-- [Azure AI product page](http://azure.com/ai)
+- [Azure AI product page](https://azure.com/ai)
 - [Azure case studies](https://azure.microsoft.com/case-studies/)
 - [Microsoft Azure Blog](https://azure.microsoft.com/blog/)
 - [Channel 9 AI Show](https://channel9.msdn.com/Shows/AI-Show)

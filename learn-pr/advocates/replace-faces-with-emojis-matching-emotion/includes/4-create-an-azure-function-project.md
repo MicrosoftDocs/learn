@@ -20,11 +20,11 @@ There are many ways to create Azure Functions. One of the easier ways is with Vi
    > [!NOTE]
    > If you're asked to overwrite files, like `.gitignore`, answer **no** to all.
 
-   ![Create new Azure Function dialog appears at the top of the VS Code screen.](../media/4.create-new-project.png)
+   ![Create new Azure Function dialog appears at the top of the Visual Studio Code screen.](../media/4.create-new-project.png)
 
 1. Select the folder where you want to create the function app. Select the current folder (the folder that you opened in Visual Studio code)
 
-   ![Select folder dialog at the top of VS Code.](../media/4.select-folder.png)
+   ![Select folder dialog at the top of Visual Studio Code.](../media/4.select-folder.png)
 
 1. Choose **JavaScript** as the desired language.
 
@@ -44,7 +44,7 @@ Again, you're going to use the Visual Studio Code Extension.
 
 1. Click on **View** then **Command Palette**, then search for and select **Azure Functions: Create Function...**
 
-    ![Create New Function dialog in the top of the VS Code window.](../media/4.create-function.png)
+    ![Create New Function dialog in the top of the Visual Studio Code window.](../media/4.create-function.png)
 
 1. Select the folder where you originally created the function project.
 
@@ -114,7 +114,7 @@ You can run and debug the app inside Visual Studio Code.
 
     ```output
     Http Functions:
-    
+
             MojifyImage: http://localhost:7071/api/MojifyImage
     ```
 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>AI edge engineer/introduction-to-azure-sphere</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AI-edge-engineer" transform="translate(-160.000000, -320.000000)">
+            <g id="AI-edge-engineer/introduction-to-azure-sphere" transform="translate(160.000000, 320.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <circle id="Oval" stroke="#FFFFFF" cx="50.5" cy="50.5" r="31.5"></circle>
+                <g id="Group-4" transform="translate(10.000000, 11.000000)">
+                    <polygon id="Path-57" fill="#5CA5DD" points="32.8930664 5 33.9365234 11.4741211 41 11.4741211 39 5"></polygon>
+                    <polygon id="Path-57" fill="#509BD5" points="58.8930664 59 59.9365234 65.4741211 67 65.4741211 65 59"></polygon>
+                    <polygon id="Path-57" fill="#4491CD" points="8 49 9.04345703 55.4741211 16.1069336 55.4741211 14.1069336 49"></polygon>
+                    <g id="Group-3" transform="translate(0.000000, 33.000000)">
+                        <rect id="Rectangle" fill="#0178D7" x="0" y="0" width="18" height="18"></rect>
+                        <rect id="Rectangle" fill="#50E6FF" x="3" y="3" width="12" height="12"></rect>
+                        <rect id="Rectangle" fill="#23395E" x="3" y="3" width="2" height="2"></rect>
+                        <rect id="Rectangle" fill="#23395E" x="13" y="3" width="2" height="2"></rect>
+                        <rect id="Rectangle" fill="#23395E" x="3" y="13" width="2" height="2"></rect>
+                        <rect id="Rectangle" fill="#23395E" x="13" y="13" width="2" height="2"></rect>
+                    </g>
+                    <g id="Group" transform="translate(36.000000, 0.000000)">
+                        <circle id="Oval" fill="#0178D7" cx="13" cy="13" r="13"></circle>
+                        <circle id="Oval" fill="#50E6FF" cx="13" cy="13" r="10"></circle>
+                        <circle id="Oval" fill="#23395E" cx="7" cy="20" r="2"></circle>
+                        <circle id="Oval" fill="#23395E" cx="18" cy="5" r="2"></circle>
+                    </g>
+                    <g id="Group-2" transform="translate(42.000000, 55.000000)">
+                        <polygon id="Path-53" fill="#0178D7" points="10 -9.52402342e-13 0 5.40496879 0 18.0165626 10 23.4215314 20 18.0165626 20 5.40496879"></polygon>
+                        <polyline id="Path-54" stroke="#51E7FF" points="4 7.34215314 10 11.7107657 10 20"></polyline>
+                        <line x1="17" y1="7.34215314" x2="10" y2="11.7107657" id="Path-55" stroke="#51E7FF"></line>
+                        <polygon id="Path-53" fill="#23395E" points="3 5 1 6.08099376 1 8.60331253 3 9.68430628 5 8.60331253 5 6.08099376"></polygon>
+                        <polygon id="Path-53" fill="#23395E" points="17 5 15 6.08099376 15 8.60331253 17 9.68430628 19 8.60331253 19 6.08099376"></polygon>
+                        <polygon id="Path-53" fill="#23395E" points="10 9 8 10.0809938 8 12.6033125 10 13.6843063 12 12.6033125 12 10.0809938"></polygon>
+                        <polygon id="Path-53" fill="#23395E" points="10 17 8 18.0809938 8 20.6033125 10 21.6843063 12 20.6033125 12 18.0809938"></polygon>
+                    </g>
+                    <polygon id="Path-56" fill="#FFFFFF" transform="translate(13.547852, 56.237061) scale(-1, 1) rotate(-36.000000) translate(-13.547852, -56.237061) " points="12 54 13.0200195 58.4741211 15.0957031 55.5"></polygon>
+                    <polygon id="Path-56" fill="#FFFFFF" transform="translate(65.547852, 59.237061) scale(-1, 1) rotate(60.000000) translate(-65.547852, -59.237061) " points="64 57 65.0200195 61.4741211 67.0957031 58.5"></polygon>
+                    <polygon id="Path-56" fill="#FFFFFF" transform="translate(65.547852, 59.237061) scale(-1, 1) rotate(60.000000) translate(-65.547852, -59.237061) " points="64 57 65.0200195 61.4741211 67.0957031 58.5"></polygon>
+                    <polygon id="Path-56" fill="#FFFFFF" transform="translate(33.547852, 9.237061) rotate(-6.000000) translate(-33.547852, -9.237061) " points="32 7 33.0200195 11.4741211 35.0957031 8.5"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.1-overview
+title: Spark overview
+metadata:
+  title: Spark overview
+  description: An overview of the Apache Spark distributed programming analytics engine.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/1-overview.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Original course uses GUI drop-down box for choices not available in YAML. Converted choices to text.
+  - content: "The lineage of an RDD is tracked by the _________________."
+    choices:
+    - content: "Task scheduler"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "Cluster manager"
+      isCorrect: false
+      explanation: "Incorrect."  
+    - content: "Executor"
+      isCorrect: false
+      explanation: "Incorrect."              
+    - content: "Driver"
+      isCorrect: true
+      explanation: "Correct!"

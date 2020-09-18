@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.3-program-cloud
+title: Distributed programming on the cloud
+metadata:
+  title: Distributed programming on the cloud
+  description: Distributed programming on the cloud
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-program-cloud.md)]

@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.4-stream-case-study
+title: 'Streaming architectures: Case study'
+metadata:
+  title: 'Streaming architectures: Case study'
+  description: Review a case study about streaming architectures.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-stream-case-study.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following provides parallelism in Samza?"
+    choices:
+    - content: "Tasks, by running on multiple threads for a single job"
+      isCorrect: false
+      explanation: "Incorrect. The real source of parallelism depends on how the flow of data can be managed. Review this page if you're not sure."
+    - content: "YARN, by running multiple node managers"
+      isCorrect: false
+      explanation: "Incorrect. The real source of parallelism depends on how the flow of data can be managed. Review this page if you're not sure."
+    - content: "Partitioning, by dividing the input data into more pieces, allowing parallel processing by multiple tasks"
+      isCorrect: true
+      explanation: "Correct! More partitions enable more parallelism."

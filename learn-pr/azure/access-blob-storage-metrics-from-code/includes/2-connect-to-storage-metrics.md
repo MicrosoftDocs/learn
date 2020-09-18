@@ -6,7 +6,9 @@ To do that, you must understand how your Storage Account sends information to Az
 
 Azure Monitor is a solution that can gather and store information from many different types of application components, and it includes a wide range of tools for analyzing, visualizing, and responding to this data. As such, Azure Monitor is a single tool that you can use to watch and optimize all the components of your system wherever they run.
 
-![Azure Monitor overview](../media/2-azure-monitor-overview.png)
+:::image type="complex" source="../media/2-azure-monitor-overview.png" alt-text="Conceptual overview diagram of Azure Monitor.":::
+   Diagram of Azure Montior taking in inputs of Application, Operating System, Azure Resources, Azure Subscription, Azure Tenant, and Custom Sources. Those inputs lead to Metrics and Logs data stores, which then feed to systems for reporting and reaction, titled Insights, Visualize, Analyze, Respond, and Integrate.
+:::image-end:::
 
 Azure Monitor collects two types of data:
 
@@ -38,7 +40,7 @@ Originally, Azure Storage collected metrics and stored them in **$Metric** table
 
 In the Azure portal, classic storage metrics are shown on pages with **(classic)** appended to the title:
 
-![Classic metrics pages in the Azure portal](../media/2-classic-metrics-in-portal.png)
+![Screenshot of the Azure Portal with the Monitoring (classic) navigation options highlighted.](../media/2-classic-metrics-in-portal.png)
 
 Old storage metrics still work, but they are deprecated, and support for them is likely to end in the future. If you're using old metrics, you should migrate them to the new storage metrics as soon as possible.
 

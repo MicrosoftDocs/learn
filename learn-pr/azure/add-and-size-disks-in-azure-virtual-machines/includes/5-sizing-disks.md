@@ -62,11 +62,11 @@ You can also expand a disk through the Azure portal.
 
 1. Select the data disk you want to resize.
 
-    ![Screenshot showing the disks section of a VM with the VHD we want to edit highlighted](../media/5-portal-disks.png)
+    ![Screenshot showing the disks section of a VM with the VHD we want to edit highlighted.](../media/5-portal-disks.png)
 
 1. In the disk details, type a size _larger_ than the current size. You can also change from Premium to Standard (or vice-versa) here. These settings will adjust your performance as shown in the predicted IOPS section.
 
-    ![Screenshot showing the VHD edit screen with the new size field highlighted](../media/5-resize-disk.png)
+    ![Screenshot showing the VHD edit screen with the new size field highlighted.](../media/5-resize-disk.png)
 
 1. Click **Save** to save the changes.
 

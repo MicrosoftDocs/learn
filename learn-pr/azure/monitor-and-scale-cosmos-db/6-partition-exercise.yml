@@ -9,9 +9,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 azureSandbox: true
 durationInMinutes: 10
-interactive: bash
 content: |
   [!include[](includes/6-partition-exercise.md)]

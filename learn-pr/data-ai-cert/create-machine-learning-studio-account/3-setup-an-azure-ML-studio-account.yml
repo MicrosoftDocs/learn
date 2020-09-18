@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-machine-learning-studio-account.setup-an-azure-ML-studio-account
-title: Setting up an Azure Machine Learning Studio account
+title: Exercise - prepare to create an Azure Machine Learning Studio account
 metadata:
-  title: Setting up an Azure Machine Learning Studio account
-  description: Set up an Azure Machine Learning Studio account
+  title: Exercise - prepare to create an Azure Machine Learning Studio account
+  description: Prepare to setup an Azure Machine Learning Studio account
   ms.date: 12/12/2018
   author: gerryaobrien
   ms.author: gerryo
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/3-setup-an-azure-ML-studio-account.md)]

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.collaborate-with-git.1-collaborate-using-pull
+title: Collaborate using pull
+metadata:
+  title: Collaborate using pull
+  description: Collaborate with another developer by pulling changes from one another's trees
+  ms.date: 06/24/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+content: |
+  [!include[](includes/1-collaborate-using-pull.md)]

@@ -4,7 +4,7 @@ As a software developer at your company, you've the opportunity to grow your ski
 
 The Azure CLI is Microsoft's cross-platform command-line tool for managing Azure resources. It's available for macOS, Linux, and Windows, or in the browser using [Azure Cloud Shell](https://docs.microsoft.com/azure/cloud-shell/overview). We have complete coverage of using this tool in the **Control Azure services with the CLI** module.
 
-You can use the Azure Cloud Shell by signing in to the panel on the right.
+You can use the Azure Cloud Shell by signing in at [https://shell.azure.com](https://shell.azure.com?azure-portal=true). Note you'll use your own Azure account for the exercises in this module and charges will apply.
 
 ## Managing deployments
 
@@ -18,7 +18,7 @@ The Azure CLI includes the `az group deployment` command to manage Azure Resourc
 
 For a complete list of available deployment commands, see the [az group deployment command reference](https://docs.microsoft.com/cli/azure/group/deployment?view=azure-cli-latest#az-group-deployment-create)
 
-We'll use `az group deployment create` to provision our virtual machine.
+We'll use `az deployment group create` to provision our virtual machine.
 
 ## Create a JSON deployment parameters file
 
@@ -77,12 +77,12 @@ az group create --location <location> --name learn-deep-dsvm
 
 ## Deploy the DSVM to your resource group
 
-We now have a resource group and have defined parameters for the DSVM Resource Manager template in a file called `parameter_file.json`. We'll run the `az group deployment create` next to provision our virtual machine.
+We now have a resource group and have defined parameters for the DSVM Resource Manager template in a file called `parameter_file.json`. We'll run the `az deployment group create` next to provision our virtual machine.
 
 1. Execute the following command in Azure Cloud Shell:
 
     ```azurecli
-    az group deployment create \
+    az deployment group create \
     --resource-group learn-deep-dsvm \
     --template-uri https://raw.githubusercontent.com/Azure/DataScienceVM/master/Scripts/CreateDSVM/Ubuntu/azuredeploy.json \
     --parameters parameter_file.json

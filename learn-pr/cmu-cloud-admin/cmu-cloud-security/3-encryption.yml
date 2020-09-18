@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-cloud-security.3-encryption
+title: Encryption
+metadata:
+  title: Encryption
+  description: Encryption
+  ms.date: 01/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-encryption.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    
+    - content: "Alice wants Bob to send her a message, and she wants Bob to encrypt the message using public-key cryptography so that it can be securely transmitted. Which of the following actions should Alice and Bob take?"
+      choices:
+      - content: "Alice sends Bob her public key and asks Bob to encrypt the message with that key. When Alice receives the message, she decrypts it with her private key."
+        isCorrect: true
+        explanation: "Correct! Bob encrypts the message with Alice's public key, and Alice decrypts it with her private key. Because the message can't be decrypted with Alice's public key (it can only be decrypted with Alice's private key, which she shares with no one), it is not a security risk if the public key is stolen."
+      - content: "Alice sends Bob her public key and asks Bob to encrypt the message with that key. When Alice receives the message, she decrypts it with her public key."
+        isCorrect: false
+        explanation: "Incorrect. Bob encrypts the message with Alice's public key, and Alice decrypts it with her private key. Because the message can't be decrypted with Alice's public key (it can only be decrypted with Alice's private key, which she shares with no one), it is not a security risk if the public key is stolen."
+      - content: "Alice sends Bob her private key and asks Bob to encrypt the message with that key. When Alice receives the message, she decrypts it with her public key."
+        isCorrect: false
+        explanation: "Incorrect. Bob encrypts the message with Alice's public key, and Alice decrypts it with her private key. Because the message can't be decrypted with Alice's public key (it can only be decrypted with Alice's private key, which she shares with no one), it is not a security risk if the public key is stolen."
+      - content: "Alice sends Bob her private key and asks Bob to encrypt the message with that key. When Alice receives the message, she decrypts it with her private key."
+        isCorrect: false
+        explanation: "Incorrect. Bob encrypts the message with Alice's public key, and Alice decrypts it with her private key. Because the message can't be decrypted with Alice's public key (it can only be decrypted with Alice's private key, which she shares with no one), it is not a security risk if the public key is stolen."
+
+    - content: "Data encrypted using the Advanced Encryption Standard (AES) and a 256-bit encryption key can be encoded in 2256 different ways. Assuming a supercomputer can test one trillion different key combinations per second, approximately how long would it take one million such supercomputers running in parallel to decrypt an AES-256-encrypted document using brute force?"
+      choices:
+      - content: "Approximately 4x10<sup>2</sup> (that is, 400) years"
+        isCorrect: false
+        explanation: "Incorrect. Try 2<sup>256</sup> combinations / (10<sup>12</sup> combinations per second per computer * 10<sup>6</sup> computers) / (31,557,000 seconds per year)"
+      - content: "Approximately 4x10<sup>10</sup> years"
+        isCorrect: false
+        explanation: "Incorrect. Try 2<sup>256</sup> combinations / (10<sup>12</sup> combinations per second per computer * 10<sup>6</sup> computers) / (31,557,000 seconds per year)"
+      - content: "Approximately 4x10<sup>50</sup> years"
+        isCorrect: true
+        explanation: "Correct! 2<sup>256</sup> combinations / (10<sup>12</sup> combinations per second per computer * 10<sup>6</sup> computers) / (31,557,000 seconds per year) = 3.7 * 10<sup>51</sup>"
+      - content: "Approximately 4x10<sup>100</sup> years"
+        isCorrect: false
+        explanation: "Incorrect. Try 2<sup>256</sup> combinations / (10<sup>12</sup> combinations per second per computer * 10<sup>6</sup> computers) / (31,557,000 seconds per year)"

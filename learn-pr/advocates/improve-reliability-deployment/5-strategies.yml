@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-deployment.5-strategies
+title: "Deployment strategies"
+metadata:
+  title: "Deployment strategies"
+  description: "Deployment strategies"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-strategies.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'A deployment strategy that involves making a duplicate of the production environment, upgrading that environment, and then cutting completely over to the duplicate is:'
+    choices:
+    - content: 'blue-green deployment'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'rolling deployment'
+      isCorrect: false
+      explanation: 'A rolling deployment upgrades the environment in place gradually.'
+    - content: 'canary deployment'
+      isCorrect: false
+      explanation: 'A canary deployment rolls out the upgrade to a subset of users or the production traffic and increases the percentage over time, monitoring the results each step of the way.'
+      
+  - content: 'A deployment strategy that involves rolling out the upgrade to a subset of users or the production traffic and increases the percentage over time is:'
+    choices:
+    - content: 'blue-green deployment'
+      isCorrect: false
+      explanation: 'This describes a canary deployment.'
+    - content: 'rolling deployment'
+      isCorrect: false
+      explanation: 'This describes a canary deployment.'
+    - content: 'canary deployment'
+      isCorrect: true
+      explanation: 'Correct.'

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-docker-containers.5-when-use-docker-containers
+title: When to use Docker containers
+
+metadata:
+  title: When to use Docker containers
+  description: In this unit, you'll see the benefits of using Docker as well as some considerations to help you decide when to use Docker. 
+  ms.date: 10/05/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-when-use-docker-containers.md)]

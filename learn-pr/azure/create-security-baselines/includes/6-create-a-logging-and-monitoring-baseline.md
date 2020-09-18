@@ -3,7 +3,7 @@ Logging and monitoring are a critical requirement when trying to identify, detec
 > [!NOTE]
 > An Azure activity log is a subscription log that provides insight into subscription-level events that have occurred in Azure. Using the activity log, you can determine the what, the who, and the when for any write operations taken on the resources in your subscription.
 
-## Azure SQL Server recommendations
+## Logging policy recommendations
 
 Here are the security recommendations you should follow to set logging and monitoring policies on your Azure subscriptions. Included with each recommendation are the basic steps to follow in the Azure portal. You should perform these steps on your own subscription with your own resources to validate the security for each. Keep in mind that **Level 2** options might restrict some features or activity, so carefully consider which security options you decide to enforce.
 
@@ -19,7 +19,7 @@ There is a single Activity Log for each Azure subscription. It provides data abo
 1. Configure the setting.
 1. Select **Save**.
 
-![Screenshot the activity log profile setting blade](../media/6-export-log.png)
+![Screenshot the activity log profile setting pane](../media/6-export-log.png)
 
 ### Ensure that activity log retention is set to 365 days or more - Level 1
 
@@ -38,7 +38,7 @@ Setting the Retention (days) to 0 retains the data forever.
 1. Select **Policy** from the **Filter by resource type** pull down.
 1. Click **Done**.
 
-![Screenshot the activity log profile setting blade](../media/6-resource.png)
+![Screenshot the activity log profile setting pane](../media/6-resource.png)
 
 ### Create an activity log alert for "Creating, updating, or deleting a Network Security Group" - Level 1
 
@@ -62,7 +62,7 @@ Monitoring for **Create or update SQL Server Firewall Rule** events gives insigh
 1. Select **SQL servers** from the **Filter by resource type** pull down.
 1. Click **Done**
 
-![Screenshot the activity log profile setting blade](../media/6-sql-server.png)
+![Screenshot the activity log profile setting pane](../media/6-sql-server.png)
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.

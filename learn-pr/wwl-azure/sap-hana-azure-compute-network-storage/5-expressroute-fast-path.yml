@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sap-hana-azure-compute-network-storage.expressroute-fast-path
+title: Expressroute fast path
+metadata:
+  title: Expressroute fast path
+  description: Expressroute fast path
+  ms.date: 12/20/2019
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-expressroute-fast-path.md)]

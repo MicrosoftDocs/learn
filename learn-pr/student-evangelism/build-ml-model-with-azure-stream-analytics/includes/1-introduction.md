@@ -1,30 +1,24 @@
-Imagine you are the leader of a group of climate scientists who are concerned about the polar-bear population in the Arctic. As such, your team has placed hundreds of motion-activated cameras at strategic locations throughout the region. 
+You are the leader of a group of climate scientists who are concerned about the dwindling polar-bear population in the Arctic. As such, your team has placed hundreds of motion-activated cameras at strategic locations throughout the region. Rather than manually examine each photograph to determine whether it contains a polar bear, you have been challenged to devise an automated system that processes data from these cameras in real time and displays an alert on a map when a polar bear is photographed. You need a solution that incorporates artificial intelligence (AI) to determine with a high degree of accuracy whether a photo contains a polar bear. And you need it fast, because climate change won't wait.
 
-![Picture of a polar bear in the arctic](../media/1-polar-bear.png)
+In this module, you will build such a system using Microsoft Azure and Azure Cognitive Services. Specifically, you will use Azure Blob Storage to store photographs, Azure's Custom Vision Service to analyze photographs for polar bears, Azure Functions to pass each photograph uploaded to blob storage to the Custom Vision Service, Microsoft Power BI to build a dashboard for visualizing results, and Azure SQL Database as a data source for Power BI. The dashboard will show where polar bears are being spotted in green, and other wildlife activity in red.
 
-Rather than manually examine each photograph to determine if it contains a polar bear, you have been challenged to devise an automated system that processes data from these cameras in real time and displays an alert on a map when a polar bear is photographed. You need a solution that incorporates real-time stream processing to analyze raw data for potential sightings, and one that incorporates artificial intelligence (AI) and machine learning to determine with a high degree of accuracy whether a photo contains a polar bear. And you need it fast, because climate change won't wait.
+![Polar bear map](../media/live-map.png)
 
-Azure provides all the services and features you need to build a solution for this problem including storage capabilities for photographs, live stream analytics, image classifications with Microsoft Cognitive services, and data visualization with Power BI.
+## Learning objectives
 
-[!INCLUDE[](../../../includes/azure-free-trial-note.md)]
+In the units that follow, you will deploy several Azure services and integrate them to form an end-to-end solution, culminating in a Power BI report that depicts where polar bears are being spotted. Along the way, you will learn:
 
-## Learning Objectives
-
-In this module, you will:
-
-- Create an Azure Storage account and an IoT hub and use a Node.js app to connect them to a simulated camera
-- Use Azure Stream Analytics to run queries on live streams to analyze input and an Azure Function to return output
-- Use Microsoft Cognitive Services to train an image classification model and call the model from an app or service
-- Connect Power BI to an Azure SQL database and visualize data from the database
-
-> [!IMPORTANT]
-> This module is highly interactive - you will be performing steps in the Azure portal and Azure Cloud Shell in every unit. It's also longer than most Microsoft Learn modules as it's intended to walk you through building a full end-to-end solution using several Azure services together. You will need an Azure subscription to complete this module.
->
-> To get more focused learning on each of the components used in this module, make sure to check out other modules which cover independent services and provide more depth about creating and using them.
+- How to create an Azure Storage account and upload blobs to it
+- How to write an Azure Function that is triggered when a blob is uploaded to storage
+- How to use Azure's Custom Vision Service to train a machine-learning model to recognize polar bears
+- How to invoke a Custom Vision Service model from an Azure Function
+- How to create an Azure SQL Database and write records to it
+- How to connect Power BI to an Azure SQL Database
+- How to create a report with informative visuals in Power BI
 
 ## Prerequisites
 
 - An Azure subscription
-- A basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
+- Basic knowledge of Azure services, the Azure portal, and the Azure CLI tools
 - Familiarity with Node.js
-- [Power BI Desktop](https://powerbi.microsoft.com/desktop/)
+- Power BI Desktop

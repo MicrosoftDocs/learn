@@ -25,7 +25,7 @@ ExpressRoute works by peering your on-premises networks with networks running in
 
 - Ensure that BGP sessions for routing domains have been configured. Depending on your partner, this might be their or your responsibility. Additionally, for each ExpressRoute circuit, Microsoft requires redundant BGP sessions between Microsoft’s routers and your peering routers.
 - You or your providers need to translate the private IP addresses used on-premises to public IP addresses by using a NAT service. Microsoft will reject anything except public IP addresses through Microsoft peering.
-- Reserve several blocks of IP addresses in your network for routing traffic to the Microsoft cloud. You configure these blocks as either a /30 subnet or two /29 subnets in your IP address space. One of these subnets is used to configure the primary circuit to the Microsoft cloud, and the other implements a secondary circuit. You use the first address in these subnets to communicate with services in the Microsoft cloud. Microsoft uses the second address to establish a BGP session.
+- Reserve several blocks of IP addresses in your network for routing traffic to the Microsoft cloud. You configure these blocks as either a /29 subnet or two /30 subnets in your IP address space. One of these subnets is used to configure the primary circuit to the Microsoft cloud, and the other implements a secondary circuit. You use the first address in these subnets to communicate with services in the Microsoft cloud. Microsoft uses the second address to establish a BGP session.
 
 ExpressRoute supports two peering schemes:
 

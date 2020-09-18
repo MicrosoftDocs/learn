@@ -21,7 +21,7 @@ You'd like to integrate this system with the bike booking and rental process fro
 
 You want to ensure that bike technicians on both campuses stick to the following workflow when they maintain a bike following a rental:
 
-![Bike maintenance workflow](../media/5-bike-maintenance-workflow.png)
+![Decision flow diagram detailing the logic for the Bike maintenance workflow.](../media/5-bike-maintenance-workflow.png)
 
 The details are as follows:
 
@@ -40,7 +40,7 @@ The details are as follows:
 
 To implement the business process and integrate with the bike location database, let's consider the following set of technologies.
 
-- Microsoft Flow
+- Microsoft Power Automate
 - Azure Logic Apps
 - Azure Functions
 - Azure Service Apps WebJobs
@@ -49,7 +49,7 @@ As in the previous scenario, any of these technologies could be used to build th
 
 ### Design-first or code-first?
 
-To implement this workflow using just Logic Apps or Flow would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system, place orders with a third-party parts company. This is new business logic and there is no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Flow.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
+To implement this workflow using just Logic Apps or Power Automate would be difficult. While we haven't heard too many low-level details, it's clear that this process needs to access an inventory system, place orders with a third-party parts company. This is new business logic and there is no requirement that we consider a design-first approach. We can wrap our solution in a custom connector to integrate with other workflows created with Logic Apps or Power Automate.  As a developer, you have most flexibility by approaching this scenario from a code-first approach, so let's do that!
 
 ### Azure Functions or Azure Apps Service WebJobs?
 

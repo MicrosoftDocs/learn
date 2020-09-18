@@ -14,7 +14,7 @@ Publishers of APIs use the Azure portal to control how each API is exposed to co
 
 Response headers are metadata associated with HTTP responses that provide the detailed context of the response. The headers do not relate to the content being returned. They can expose information about the Server and platform technology being used.
 
-![Response Headers](../media/2-response-headers.png)
+:::image type="content" source="../media/2-response-headers.png" alt-text="Response Headers." loc-scope="other":::
 
 In the census example, it is important that you remove the following headers:
 

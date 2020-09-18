@@ -79,6 +79,9 @@ Use these resources to discover more.
 
 - [Governance in documentation](https://docs.microsoft.com/azure/architecture/cloud-adoption/governance?branch=master)
 
+- [Azure Blueprints samples](https://docs.microsoft.com/azure/governance/blueprints/samples/)
+
+
 ### Cloud adoption plan:
 
 - Review [sample business outcomes](https://docs.microsoft.com/azure/architecture/cloud-adoption/business-strategy/business-outcomes/index).

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150px" height="180px" viewBox="0 0 150 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>process and translate speech with Azure Cognitive Speech Services/process-and-translate-speech-with-azure-cognitive-speech-services</title>
+    <defs>
+        <path d="M0,33.2969808 L0,100 L0,100 C0,138.66 31.33998,170 70.0002438,170 C108.66002,170 140,138.66 140,100 L140,33.2969808 C140,31.2968402 138.808016,29.4891496 136.969596,28.7012556 L71.9695965,0.844112783 C70.7118525,0.305079649 69.2881475,0.305079649 68.0304035,0.844112783 L3.03040351,28.7012556 C1.19198427,29.4891496 1.53141027e-15,31.2968402 0,33.2969808 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#153A66" stop-opacity="0.996585446" offset="0%"></stop>
+            <stop stop-color="#051D32" offset="100%"></stop>
+        </linearGradient>
+        <path d="M68.0304035,0.844112783 C69.2042979,0.341015192 70.5227628,0.307475352 71.7159332,0.743493264 L71.9695965,0.844112783 L136.969596,28.7012556 C138.737307,29.458846 139.907353,31.1592957 139.994741,33.0670965 L140,33.2969808 L140,100 C140,138.66 108.66002,170 70.0002438,170 C31.7265826,170 0.627531629,139.283666 0.00937797431,101.15758 L0,100 L0,33.2969808 C0,31.3737687 1.10205646,29.6284874 2.82117804,28.7966451 L3.03040351,28.7012556 L68.0304035,0.844112783 Z M70,5.43983793 L5,33.2969808 L5,100 C5,135.898618 34.1014459,165 70.0002438,165 C105.53964,165 134.417293,136.477667 134.991292,101.074895 L135,100 L135,33.2969808 L70,5.43983793 Z" id="path-4"></path>
+        <filter x="-24.3%" y="-31.5%" width="148.6%" height="161.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#0062B3" offset="0%"></stop>
+            <stop stop-color="#00549B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-8">
+            <stop stop-color="#0062B3" offset="0%"></stop>
+            <stop stop-color="#00549B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-9">
+            <stop stop-color="#0062B3" offset="0%"></stop>
+            <stop stop-color="#00549B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="97.5691716%" x2="50%" y2="-5.30956676%" id="linearGradient-10">
+            <stop stop-color="#0078D4" offset="0%"></stop>
+            <stop stop-color="#1380DA" offset="16%"></stop>
+            <stop stop-color="#3C91E5" offset="53%"></stop>
+            <stop stop-color="#559CEC" offset="82%"></stop>
+            <stop stop-color="#5EA0EF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-11" x="10" y="0" width="49" height="81" rx="24.5"></rect>
+        <filter x="-14.3%" y="-6.2%" width="128.6%" height="117.3%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="-9.93901477%" x2="50%" y2="100%" id="linearGradient-13">
+            <stop stop-color="#EFEFEF" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M67.5283714,39.4166667 L45.2175928,39.4166667 L41.5846634,30.3104167 C41.2698857,29.51875 40.5042382,29 39.6554812,29 C38.8067242,29 38.0410768,29.51875 37.7262991,30.3104167 L31.3445188,46.3072917 L29.1182197,40.7270833 C28.803442,39.9354167 28.0377946,39.4166667 27.1890376,39.4166667 L10.0043843,39.4166667 C10.0848323,41.2977588 10.0078221,41.8167642 10.0444991,43.5833333 L25.7813683,43.5833333 L29.4153366,52.6895833 C29.7301143,53.48125 30.4957618,54 31.3445188,54 C32.1932758,54 32.9589232,53.48125 33.2737009,52.6895833 L39.6554812,36.6927083 L41.8817803,42.2729167 C42.196558,43.0645833 42.9622054,43.5833333 43.8109624,43.5833333 L59.0227544,43.5833333 C58.9785817,41.9382032 59.0005218,41.1249569 58.9689294,39.4166667" id="path-14"></path>
+        <filter x="-0.9%" y="-2.0%" width="101.7%" height="108.0%" filterUnits="objectBoundingBox" id="filter-15">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Process-and-translate-speech-with-Azure-Cognitive-Speech-Services" transform="translate(-135.000000, -40.000000)">
+            <g id="process-and-translate-speech-with-Azure-Cognitive-Speech-Services/process-and-translate-speech-with-azure-cognitive-speech-services" transform="translate(160.000000, 73.000000)">
+                <g id="Trophy-Plates/Round-Shield" transform="translate(0.000000, 7.000000)">
+                    <g id="BG" transform="translate(-20.000000, -35.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <path stroke="#FFFFFF" stroke-width="5" d="M2.04560526,26.4033931 C0.666790831,26.9943135 -0.469610484,27.9676578 -1.26130819,29.1682982 C-2.0530059,30.3689387 -2.5,31.7968754 -2.5,33.2969808 L-2.5,100 C-2.5,120.020375 5.61483157,138.145388 18.7347908,151.265302 C31.8547252,164.38519 49.97977,172.5 70.0002438,172.5 C90.0204999,172.5 108.145449,164.385168 121.26533,151.265242 C134.385192,138.145334 142.5,120.020345 142.5,100 L142.5,33.2969808 C142.5,31.7968754 142.053006,30.3689387 141.261308,29.1682982 C140.46961,27.9676578 139.333209,26.9943135 137.954395,26.4033931 L72.9543947,-1.45374979 C71.6660213,-2.00590984 70.5928241,-2.97398642 2.04560526,26.4033931 Z"></path>
+                        <g id="Colors/Microsoft-365/BG-Gradient-5" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <rect id="Rectangle" x="0" y="0" width="140" height="170"></rect>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(-20.000000, -35.000000)">
+                        <mask id="mask-5" fill="white">
+                            <use xlink:href="#path-4"></use>
+                        </mask>
+                        <use fill="#000000" fill-rule="nonzero" xlink:href="#path-4"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-5)" fill="#0076D7">
+                            <rect id="Microsoft-365/Border" x="0" y="0" width="140" height="170"></rect>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-3" transform="translate(15.000000, 0.000000)">
+                    <g id="Group-2" filter="url(#filter-6)" transform="translate(0.000000, 56.000062)" stroke-width="9">
+                        <path d="M69.8732323,6.15063556e-14 C69.9571721,0.988832189 70,1.98938343 70,2.99993768 C70,22.3299039 54.3299662,37.9999377 35,37.9999377 C15.6700338,37.9999377 0,22.3299039 0,2.99993768 C0,1.98938343 0.0428279217,0.988832189 0.126767706,6.18394225e-14 Z" id="Combined-Shape" stroke="url(#linearGradient-7)"></path>
+                        <line x1="35" y1="23.0844467" x2="35" y2="48.9999377" id="Path-81" stroke="url(#linearGradient-8)"></line>
+                        <line x1="10" y1="53.2460206" x2="59" y2="53.2460206" id="Path-82" stroke="url(#linearGradient-9)" stroke-linecap="round"></line>
+                    </g>
+                    <g id="Rectangle">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <use fill="url(#linearGradient-10)" fill-rule="evenodd" xlink:href="#path-11"></use>
+                    </g>
+                    <g id="Fill-71">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-15)" xlink:href="#path-14"></use>
+                        <use fill="url(#linearGradient-13)" fill-rule="evenodd" xlink:href="#path-14"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

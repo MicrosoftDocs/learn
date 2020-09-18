@@ -8,7 +8,7 @@ In this exercise, you'll see how to restore a successful backup to replace a VM 
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) by using the same account that you used in the previous exercise.
 
-1. Select **All Services**, and then search for and select **Storage accounts**.
+1. In the Azure portal, search for and select **Storage accounts**.
 
     ![Select storage accounts](../media/6-select-storage-accounts.png)
 
@@ -36,7 +36,7 @@ A backup can't be restored if the VM is allocated and running. If you forget to 
 
 To prevent this error, use the following steps:
 
-1. On the left menu, select **Virtual machines**, and then select **NW-APP01**.
+1. In the Azure portal, search for and select **Virtual machines**, and then select **NW-APP01**.
 
     ![Screenshot of the VM overview page](../media/6-vm-overview.png)
 

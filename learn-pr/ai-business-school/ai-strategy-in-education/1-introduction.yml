@@ -5,11 +5,11 @@ metadata:
   title: Introduction
   description: Introduction to AI strategy in education.
   ms.date: 08/27/2019
-  author: RWortmanMorris
-  ms.author: rawortma
+  author: Adriamen
+  ms.author: japerena
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
 durationInMinutes: 1 
 content: |
-  [!include[](includes/1-introduction.md)] 
+  [!include[](includes/1-introduction.md)]

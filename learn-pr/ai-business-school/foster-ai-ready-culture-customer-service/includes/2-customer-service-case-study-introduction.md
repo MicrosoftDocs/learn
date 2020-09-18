@@ -1,6 +1,6 @@
 ## Abstract
 
-Our customer service organization was looking for ways to meet the ever-growing expectations of our customers at scale. We identified that AI could help us create a better service experience by equipping our agents with predictions and recommendations, surfacing new insights from customer feedback, and streamlining our customers’ self-service experience. Since implementing these solutions, case resolution has sped up dramatically and customer satisfaction scores have increased by nearly a third.
+Our customer service organization was looking for ways to meet the ever-growing expectations of our customers at scale. We identified that AI could help us create a better service experience by equipping our agents with predictions and recommendations, surfacing new insights from customer feedback, and streamlining our customers' self-service experience. Since implementing these solutions, case resolution has sped up dramatically and customer satisfaction scores have increased by nearly a third.
 
 Learn about how we incorporated AI into our customer service processes and consider how AI could transform your own customer service organization.
 
@@ -15,13 +15,13 @@ Customers expect service that is immediate, effective, seamless across channels,
 To deliver on customer expectations at scale, customer service organizations are looking to AI to supplement and augment the skills of their employees. Gartner estimates that 25% of all customer care and support operations will integrate AI technology across engagement channels by 2020, up from less than 2% in 2017.<sup>2</sup>
 :::column-end:::
 :::column span="2":::
-![92% of consumers would stop purchasing after three or fewer bad experiences, 26% of consumers would stop purchasing after a single bad experience](../media/2.5.1.A.Customer-Service-case-study-intro.jpg)
+![92% of consumers would stop purchasing after three or fewer bad experiences, 26% of consumers would stop purchasing after a single bad experience. These percentages are represented in icons of two individuals: the first one is colored in a darker blue at its 92%, the second only at its 26%.](../media/2.5.1.A.Customer-Service-case-study-intro.jpg)
 :::column-end:::
 :::row-end:::
 
 ## Microsoft context: Customer experience
 
-At Microsoft, we’ve faced the same hurdles as many other organizations in adapting to meet the needs and expectations of today’s customers. To support our customers more effectively, we envisioned creating better self-service experiences and empowering our service agents with relevant context, insights, and recommendations at their fingertips during interactions with customers. In addition, we hoped to glean more insights from customer chat records and feedback and create processes for surfacing and acting on these insights.
+At Microsoft, we've faced the same hurdles as many other organizations in adapting to meet the needs and expectations of today's customers. To support our customers more effectively, we envisioned creating better self-service experiences and empowering our service agents with relevant context, insights, and recommendations at their fingertips during interactions with customers. In addition, we hoped to glean more insights from customer chat records and feedback and create processes for surfacing and acting on these insights.
 
 Our goal was to improve customer satisfaction and retention and transform customer service from a cost center to a key differentiator, using AI to drive scale, efficiency, and insights.
 
@@ -51,6 +51,6 @@ The following are questions you can use to start thinking about how to implement
 
 ## AI maturity
 
-Depending on your organization’s level of AI maturity, your ability to implement AI will vary. We recommend that you evaluate your AI maturity by asking questions like: Is your organization an early adopter of technology or do you wait until it has matured? Do you have governance structures in place to ensure AI applications are driving towards your desired business outcomes?
+Depending on your organization's level of AI maturity, your ability to implement AI will vary. We recommend that you evaluate your AI maturity by asking questions like: Is your organization an early adopter of technology or do you wait until it has matured? Do you have governance structures in place to ensure AI applications are driving towards your desired business outcomes?
 
-Now that you understand the context of the challenges customer service organizations face today, and you’ve considered critical questions to answer before implementing AI, watch the executive perspective video with Aileen Allkins, Microsoft Corporate Vice President of Customer Service & Support.
+Now that you understand the context of the challenges customer service organizations face today, and you've considered critical questions to answer before implementing AI, watch the executive perspective video with Aileen Allkins, Microsoft Corporate Vice President of Customer Service & Support.

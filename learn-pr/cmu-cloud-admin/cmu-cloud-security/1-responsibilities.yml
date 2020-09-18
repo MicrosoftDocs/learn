@@ -1,0 +1,74 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-cloud-security.1-responsibilities
+title: Cloud security responsibilities
+metadata:
+  title: Cloud security responsibilities
+  description: Cloud security responsibilities
+  ms.date: 01/15/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/1-responsibilities.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "True or false: When IT infrastructure is moved to a public cloud, the cloud provider assumes all responsibility for the security of that infrastructure and the applications that it hosts."
+      choices:
+      - content: "True"
+        isCorrect: false
+        explanation: "Incorrect. Cloud providers and cloud customers share responsibility for the security of their systems."
+      - content: "False"
+        isCorrect: true
+        explanation: "Correct!  Cloud providers and cloud customers share responsibility for the security of their systems."
+
+    - content: "(ISC)<sup>2</sup> stands for:"
+      choices:
+      - content: "International Information System Security Concerns Center"
+        isCorrect: false
+        explanation: "Incorrect. (ISC)<sup>2</sup> stands for International Information System Security Certification Consortium."
+      - content: "International Information System Security Certification Consortium"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "International Information System Standards for Cloud Certification"
+        isCorrect: false
+        explanation: "Incorrect. (ISC)<sup>2</sup> stands for International Information System Security Certification Consortium."
+      - content: "International Information System Standards for Cloud Certification"
+        isCorrect: false
+        explanation: "Incorrect. (ISC)<sup>2</sup> stands for International Information System Security Certification Consortium."
+      - content: "International Information System Standards for Cloud Certainty"
+        isCorrect: false
+        explanation: "Incorrect. (ISC)<sup>2</sup> stands for International Information System Security Certification Consortium."
+
+    - content: "The idea of Factor Analysis of Information Risk (FAIR) is to:"
+      choices:
+      - content: "Assign a monetary value to cybersecurity risks"
+        isCorrect: true
+        explanation: "Correct! The purpose of FAIR isn't to mitigate cybersecurity risks, but to quantify their cost."
+      - content: "Enable root-cause analysis for cybersecurity risks"
+        isCorrect: false
+        explanation: "Incorrect. The purpose of FAIR isn't to mitigate cybersecurity risks, but to quantify their cost."
+      - content: "Enable perpetrators of cybersecurity attacks to be identified"
+        isCorrect: false
+        explanation: "Incorrect. The purpose of FAIR isn't to mitigate cybersecurity risks, but to quantify their cost."
+      - content: "Provide cutting-edge defenses against cybersecurity attacks"
+        isCorrect: false
+        explanation: "Incorrect. The purpose of FAIR isn't to mitigate cybersecurity risks, but to quantify their cost."
+      
+    - content: "Your organization hosts a public-facing Web site in Azure App Service or AWS Elastic Beanstalk. According to the Shared Responsibility Model (SRM), who has responsibility for securing access to these services through Identity and Access Management (IAM)?"
+      choices:
+      - content: "You (the customer)"
+        isCorrect: false
+        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
+      - content: "The cloud provider (Amazon or Microsoft)"
+        isCorrect: false
+        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
+      - content: "Both you and the cloud provider"
+        isCorrect: true
+        explanation: "Correct! Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."
+      - content: "The third party hired to audit the site's security configuration"
+        isCorrect: false
+        explanation: "Incorrect. Azure App Service and AWS Elastic Beanstalk are PaaS services. According to SRM, the cloud provider and the cloud customer share responsibility for IAM in PaaS applications."

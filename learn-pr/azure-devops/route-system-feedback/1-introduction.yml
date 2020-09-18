@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azdo.route-system-feedback.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: Learn about collecting monitoring data from your applications and infrastructure.
+  ms.date: 12/20/2019
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

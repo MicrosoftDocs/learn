@@ -24,9 +24,9 @@ quiz:
     - content: "Assess Azure readiness, migrate with confidence, migrate databases"
       isCorrect: false
       explanation: "Migrate databases isn't a feature of Azure Migrate. You use Azure Database Migration Service for database migration."
-    - content: "Obtain VM size recommendations, assess Azure readiness, assess physical servers"
+    - content: "Obtain VM size recommendations, assess Azure readiness, replicate identities to Azure AD"
       isCorrect: false
-      explanation: "Azure Migrate can't be used to assess physical servers. Third-party partner tools are required to do that."
+      explanation: "Azure Migrate isn't used to replicate identities to Azure AD. You can use Azure AD Connect to replicate your Active Directory to Azure AD."
   - content: "What is the order of steps to complete an Azure readiness assessment?"
     choices:
     - content: "Install the Dependency Agent on each on-premises VM, install the collector appliance on the vCenter Server, edit the default properties of an assessment, and then create the assessment."

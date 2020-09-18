@@ -188,7 +188,7 @@ To use PowerShell, CLI and portal with zone pivots for this.
 33. Leave Floating IP as Disabled
 34. Click OK to complete the load balancer configuration.
 35. Open Microsoft Edge on your machine.
-36. Browse to [http://LoadBalancerIP](http://LoadBalancerIP)
+36. Browse to `http://{load balancer IP}`
 37. You will see that response will be returned from one of the virtual machines
 38. Try Force Refresh using Ctrl+F5 few times to see that response will be returned from both virtual machines randomly
 39. Stop the webVM1 server and force a refresh of the webpage, all traffic will be returned from webVM2

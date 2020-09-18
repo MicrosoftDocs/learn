@@ -2,14 +2,14 @@
 
 :::row:::
 :::column span="2":::
-Ochsner Health System is Louisiana’s largest not-for-profit health system with 30 owned, managed, and affiliated hospitals and more than 80 health centers and urgent care centers. Ochsner has more than 18,000 employees and over 1,100 physicians in more than 90 medical specialties and subspecialties.
+Ochsner Health System is Louisiana's largest not-for-profit health system with 30 owned, managed, and affiliated hospitals and more than 80 health centers and urgent care centers. Ochsner has more than 18,000 employees and over 1,100 physicians in more than 90 medical specialties and subspecialties.
 
 Ochsner is actively engaged in both training and research. It sponsors or hosts around 290 medical residents, 550 medical students, 150 advanced practice providers, 1,200 nursing students and 575 allied health students every year. Ochsner also conducts more than 700 clinical research studies annually.
 
 Ochsner has a history of expansion and innovation. In 2009, Ochsner partnered with the University of Queensland, Australia, to create the Ochsner Clinical School and an innovation accelerator called innovationOchsner (iO), with the aim of improving the experience of both patients and healthcare providers within their system. Ochsner also showed positive growth in terms of clinical visits, patients served, and revenue in the years 2016, 2017 and 2018, with revenue surpassing $3B for the first time in 2017.
 :::column-end:::
 :::column span="2":::
-![Ochsner Health System: South Lousiana's largest not-for-profit healthcare delivery system. 1100 Physicians, 1200 nursing students, 1800 employees, 500 medical students](../media/1.6.2.A.Ochsner-Health-System-case-study-introduction1.jpg)
+![Ochsner Health System: South Lousiana's largest not-for-profit healthcare delivery system. It includes 1100 physicians, 1200 nursing students, 1800 employees, and 500 medical students.](../media/1.6.2.A.Ochsner-Health-System-case-study-introduction1.jpg)
 :::column-end:::
 :::row-end:::
 
@@ -33,4 +33,4 @@ Ochsner maintains a vast electronic record system, and can take automated vital 
 4. Medical professionals often report that they do not have time to learn new methods or technologies due to high patient workloads. How might this affect the design goals for a new AI-based technology?
 5. Trained AI systems need to be tested before they are relied upon, especially in a safety-critical environment such as healthcare. How could Ochsner gather enough data to measure the effectiveness of a solution, but also keep patients safe?
 
-Now that you understand the context of the challenges Ochsner and similar healthcare organizations face today, and you’ve considered critical questions to answer before implementing AI in the industry, watch the executive perspective video with David Le Penske, Director, Healthcare & Life Sciences at Insight Digital Innovation.
+Now that you understand the context of the challenges Ochsner and similar healthcare organizations face today, and you've considered critical questions to answer before implementing AI in the industry, watch the executive perspective video with David Le Penske, Director, Healthcare & Life Sciences at Insight Digital Innovation.

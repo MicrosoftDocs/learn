@@ -7,7 +7,7 @@ In this unit, you will install **PowerShell** on your local machine.
 
 ## Linux
 
-Installing PowerShell for Linux will involve using a package manager. We will use **Ubuntu 18.04** for our example here, but we have [detailed instructions for other versions and distributions in our documentation](https://docs.microsoft.com/powershell/scripting/setup/installing-powershell-core-on-linux).
+Installing PowerShell for Linux will involve using a package manager. We will use **Ubuntu 18.04** for our example here, but we have [detailed instructions for other versions and distributions in our documentation](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux).
 
 You will install PowerShell Core on Ubuntu Linux using the Advanced Packaging Tool (**apt**) and the Bash command line. 
 
@@ -55,7 +55,7 @@ On macOS, the first step is to install **PowerShell Core**. This is done using t
 1. Install Homebrew-Cask to obtain more packages, including the PowerShell Core package:
 
     ```bash
-    brew tap caskroom/cask
+    brew tap homebrew/cask
     ```
 
 1. Install PowerShell Core:
@@ -76,7 +76,7 @@ On macOS, the first step is to install **PowerShell Core**. This is done using t
 
 ## Windows
 
-PowerShell is included with Windows, however there may be an update available for your machine. The Azure support we are going to use requires PowerShell version 5.0 or higher. You can check the version you have installed through the following steps:
+PowerShell is included with Windows, however there may be an update available for your machine. The Azure support we are going to use requires PowerShell with a major version of 5.0 or higher. You can check the version you have installed through the following steps:
 
 1. Open the **Start** menu and type **Windows PowerShell**. There may be multiple shortcut links available:
     - Windows PowerShell - this is the 64-bit version and generally what you should choose.
@@ -92,7 +92,7 @@ PowerShell is included with Windows, however there may be an update available fo
     $PSVersionTable.PSVersion
     ```
 
-If the version number is lower than 5.0, follow these instructions for [upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/setup/installing-windows-powershell?view=powershell-6#upgrading-existing-windows-powershell).
+If the major version number is lower than 5.0, follow these instructions for [upgrading existing Windows PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-windows-powershell#upgrading-existing-windows-powershell).
 
 ::: zone-end
 

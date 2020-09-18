@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.transcribe-speech-input-text
+metadata:
+  title: Transcribe speech input to text
+  description: "Speech to text from the speech service, known as speech recognition, enables real time transcription of audio streams into text. Your applications, tools, or devices can consume, display, and take action on this text as command input."
+  ms.date: 09/06/2020
+  author: wwlpublish
+  ms.author: gerryo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Transcribe speech input to text
+summary: Speech-to-text from the speech service,  known as speech recognition, enables real time transcription of audio streams into text. Your applications, tools, or devices can consume, display, and take action on this text as command input.
+abstract: |
+  In this module you will:
+  - Create a Speech Service
+  - View Access Keys and Endpoints
+  - Review Supported Languages
+prerequisites: |
+  * Ability to navigate the Azure portal
+  * Knowledge of C#
+  * Knowledge of JSON file formats
+iconUrl: /learn/achievements/transcribe-speech-input-text.svg
+levels:
+- intermediate
+roles:
+- ai-engineer
+- data-scientist
+- developer
+- solution-architect
+- student
+products:
+- azure-cognitive-services
+units:
+- learn.wwl.transcribe-speech-input-text.introduction
+- learn.wwl.transcribe-speech-input-text.overview-speech
+- learn.wwl.transcribe-speech-input-text.create-speech-service
+- learn.wwl.transcribe-speech-input-text.view-access-keys-endpoints
+- learn.wwl.transcribe-speech-input-text.exercise-convert-speech-from-audio-file
+- learn.wwl.transcribe-speech-input-text.review-supported-languages
+- learn.wwl.transcribe-speech-input-text.optional-exercise-listen-incoming-data
+- learn.wwl.transcribe-speech-input-text.knowledge-check
+- learn.wwl.transcribe-speech-input-text.summary
+badge:
+  uid: learn.wwl.transcribe-speech-input-text.badge

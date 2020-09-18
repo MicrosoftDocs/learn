@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Foundations of Data Science/test-hypothesis-by-simulating-statistics</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-8">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-9" cx="15" cy="15" r="15"></circle>
+        <filter x="-3.3%" y="-3.3%" width="106.7%" height="113.3%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <radialGradient cx="49.5767219%" cy="41.8273748%" fx="49.5767219%" fy="41.8273748%" r="46.6452425%" gradientTransform="translate(0.495767,0.418274),scale(1.000000,0.863636),translate(-0.495767,-0.418274)" id="radialGradient-11">
+            <stop stop-color="#6BB9F2" offset="0%"></stop>
+            <stop stop-color="#65B6F1" offset="20%"></stop>
+            <stop stop-color="#55AEF0" offset="45%"></stop>
+            <stop stop-color="#3AA2EE" offset="74%"></stop>
+            <stop stop-color="#1B93EB" offset="100%"></stop>
+        </radialGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="-1.34572488e-14%" id="linearGradient-12">
+            <stop stop-color="#773ADC" offset="0%"></stop>
+            <stop stop-color="#9255E6" offset="25%"></stop>
+            <stop stop-color="#A669EE" offset="50%"></stop>
+            <stop stop-color="#B376F2" offset="76%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0.303030303%" id="linearGradient-13">
+            <stop stop-color="#773ADC" offset="0%"></stop>
+            <stop stop-color="#9255E6" offset="25%"></stop>
+            <stop stop-color="#A669EE" offset="50%"></stop>
+            <stop stop-color="#B376F2" offset="76%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="99.6969697%" x2="50%" y2="0%" id="linearGradient-14">
+            <stop stop-color="#773ADC" offset="0%"></stop>
+            <stop stop-color="#9255E6" offset="25%"></stop>
+            <stop stop-color="#A669EE" offset="50%"></stop>
+            <stop stop-color="#B376F2" offset="76%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Foundations-of-Data-Science-2" transform="translate(-159.000000, -509.000000)">
+            <g id="Foundations-of-Data-Science/test-hypothesis-by-simulating-statistics" transform="translate(160.000000, 510.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-7)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <polygon id="Fill-1" fill="#DBF1FF" points="44.8940811 41.3992746 48.659964 45.1651575 48.659964 33 51.3389998 33 51.3389998 45.047024 55.1055735 41.2804503 57 43.1748768 49.9770299 50.2707297 43 43.2936994"></polygon>
+                <g id="Group" transform="translate(35.000000, 9.000000)">
+                    <g id="Oval">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                        <use fill="url(#linearGradient-8)" fill-rule="evenodd" xlink:href="#path-9"></use>
+                    </g>
+                    <g id="Machine-Learning" transform="translate(7.000000, 3.000000)" fill-rule="nonzero">
+                        <path d="M10.7147394,21.782021 L9.55159401,22.9943965 C9.4472085,23.1004269 9.30388206,23.1594663 9.15475619,23.1578947 L7.18425113,23.1578947 C7.03987372,23.1558157 6.90215717,23.0970612 6.80109737,22.9943965 L5.63795203,21.782021 C5.53066341,21.673047 5.47154729,21.5259249 5.47374328,21.373355 L5.47374328,18.5263158 L10.9473684,18.5263158 L10.9473684,21.373355 C10.9321627,21.5364453 10.8474701,21.6852272 10.7147394,21.782021 L10.7147394,21.782021 Z" id="Path" fill="#A3A3A3"></path>
+                        <path d="M8,0.000369652092 C5.7319541,-0.0215973361 3.56329478,0.936402539 2.04312252,2.6318055 C0.522950252,4.32720847 -0.202976749,6.59745472 0.0491448699,8.86772217 C0.414857116,12.210032 3.58436325,13.7652292 4.47832652,18.0079163 C4.54231412,18.3104738 4.8077955,18.5266583 5.11493672,18.5263158 L10.8850633,18.5263158 C11.1922045,18.5266583 11.4576859,18.3104738 11.5216735,18.0079163 C12.4156368,13.7652292 15.5851429,12.210032 15.9508551,8.86772217 C16.2029767,6.59745472 15.4770497,4.32720847 13.9568775,2.6318055 C12.4367052,0.936402539 10.2680459,-0.0215973361 8,0.000369652092 Z" id="Path" fill="url(#radialGradient-11)"></path>
+                        <path d="M10.9473684,20.2105263 L5.47374328,21.3809099 L5.47374328,21.4665477 C5.47154729,21.6264063 5.53066341,21.7805569 5.63795203,21.8947368 L5.63795203,21.8947368 L10.9473684,20.824264 L10.9473684,20.2105263 Z" id="Path" fill="#E6E6E6"></path>
+                        <polygon id="Path" fill="#E6E6E6" points="5.47368421 20.2105263 10.9473684 19.1056842 10.9473684 18.5263158 5.47368421 19.6311579"></polygon>
+                    </g>
+                </g>
+                <g id="Metrics" transform="translate(30.000000, 44.000000)" fill-rule="nonzero">
+                    <polygon id="Path" fill="#B796F9" points="35.0278331 2.75862069 24.7767059 20.7373203 13.9346616 9.8488121 2.75862069 24.1304834 5.37920959 26.1562523 14.2429662 14.8879124 25.4960832 26.2068966 37.9310345 4.40455798"></polygon>
+                    <circle id="Oval" fill="url(#linearGradient-12)" cx="13.7931034" cy="12.4137931" r="4.13793103"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-13)" cx="25.5172414" cy="22.7586207" r="4.13793103"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-14)" cx="35.862069" cy="4.13793103" r="4.13793103"></circle>
+                    <circle id="Oval" fill="url(#linearGradient-14)" cx="4.13793103" cy="24.8275862" r="4.13793103"></circle>
+                    <rect id="Rectangle" fill="#D1EFF8" x="11.0344828" y="24.137931" width="6.89655172" height="19.3103448" rx="0.28"></rect>
+                    <rect id="Rectangle" fill="#A7E5FC" x="22.0689655" y="31.0344828" width="6.89655172" height="12.4137931" rx="0.28"></rect>
+                    <rect id="Rectangle" fill="#74E0F8" x="32.4137931" y="17.2413793" width="6.89655172" height="26.2068966" rx="0.28"></rect>
+                    <rect id="Rectangle" fill="#FFFFFF" x="0.689655172" y="31.0344828" width="6.89655172" height="12.4137931" rx="0.28"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

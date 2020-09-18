@@ -4,8 +4,8 @@ metadata:
   title: Plan your multi-factor authentication deployment
   description: Learn the things to consider as you plan to turn on Azure MFA.
   ms.date: 10/02/2019
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

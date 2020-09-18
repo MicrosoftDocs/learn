@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="107px" viewBox="0 0 107 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 60.1 (88133) - https://sketch.com -->
+    <title>Introduction to version control with Git/introduction-to-git</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <rect id="path-3" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-8.3%" y="-5.9%" width="116.7%" height="111.8%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0963541667 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M14.2695809,37.0678267 L18.266682,37.0678267 L18.266682,46.3326304 L16.1225417,46.3326304 L16.1225417,38.7884331 L14.2695809,38.7884331 L14.2695809,37.0678267 Z M23.8520351,46.4914557 C21.5755404,46.4914557 19.8814049,44.7576138 19.8814049,41.7002286 C19.8814049,38.6428433 21.5755404,36.9090015 23.8520351,36.9090015 C26.1417651,36.9090015 27.8226653,38.6428433 27.8226653,41.7002286 C27.8226653,44.7576138 26.1417651,46.4914557 23.8520351,46.4914557 Z M23.8520351,44.6782012 C24.9241052,44.6782012 25.6652895,43.8046626 25.6652895,41.7002286 C25.6652895,39.5957946 24.9241052,38.7222559 23.8520351,38.7222559 C22.7932004,38.7222559 22.0520161,39.5957946 22.0520161,41.7002286 C22.0520161,43.8046626 22.7932004,44.6782012 23.8520351,44.6782012 Z M28.365318,37.0678267 L32.3624191,37.0678267 L32.3624191,46.3326304 L30.2182788,46.3326304 L30.2182788,38.7884331 L28.365318,38.7884331 L28.365318,37.0678267 Z" id="path-6"></path>
+        <filter x="-0.7%" y="-1.3%" width="101.4%" height="105.2%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="0.25" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.249094203 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M25.1802925,11.5648443 L14.12678,0.512687202 C13.4907892,-0.12388135 12.4584318,-0.12388135 11.821641,0.512687202 L9.52650119,2.80804923 L12.4378113,5.71935933 C13.1146209,5.49084526 13.8903777,5.64405901 14.4296211,6.18340909 C14.9716643,6.72611889 15.1237848,7.50849737 14.8895379,8.18757345 L17.6955236,10.9935591 C18.3743774,10.7596233 19.1576225,10.9107616 19.6996879,11.453787 C20.4575351,12.211412 20.4575351,13.439064 19.6996879,14.196889 C18.9417296,14.9549584 17.7140775,14.9549584 16.955697,14.196889 C16.3858562,13.6266038 16.2449125,12.789341 16.5335326,12.0872447 L13.9166422,9.47035419 L13.91642,16.3566625 C14.1011822,16.4481259 14.2755452,16.5702 14.42951,16.7234982 C15.187135,17.4810344 15.187135,18.7084642 14.42951,19.4672669 C13.6716628,20.2247808 12.4434553,20.2247808 11.686408,19.4672669 C10.9286719,18.7085309 10.9286719,17.481101 11.686408,16.7234982 C11.87367,16.5365695 12.0903517,16.3950815 12.3215544,16.300245 L12.3215544,9.34994212 C12.0902406,9.25550564 11.8738144,9.11507303 11.6862747,8.92664447 C11.112323,8.35313727 10.9740903,7.51076385 11.2684432,6.80595661 L8.39846296,3.93553195 L0.819990805,11.5137819 C0.18322227,12.1508393 0.18322227,13.1831967 0.819990805,13.8198097 L11.8728367,24.871989 C12.509183,25.5085575 13.5411849,25.5085575 14.1784201,24.871989 L25.1801592,13.8720275 C25.8167277,13.2351479 25.8167277,12.2024794 25.1801592,11.5657775" id="path-8"></path>
+        <filter x="-0.5%" y="-0.5%" width="101.0%" height="102.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="0.25" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.249094203 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="78.4210223%" y1="-7.24023438%" x2="15.5786468%" y2="110.793945%" id="linearGradient-10">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-11" x="-3" y="-3" width="106" height="106" rx="53"></rect>
+        <filter x="-0.5%" y="-0.5%" width="101.9%" height="101.9%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Introduction-to-version-control-with-Git" transform="translate(-47.000000, -257.000000)">
+            <g id="Introduction-to-version-control-with-Git/introduction-to-git" transform="translate(50.000000, 260.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <g id="Circle-" mask="url(#mask-2)">
+                        <g transform="translate(-2.000000, -2.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="BG" stroke="none" fill="none"></g>
+                            <g id="Color/Blue" stroke="none" fill="none" mask="url(#mask-4)" fill-rule="evenodd">
+                                <rect id="Rectangle" fill="#55A2FF" x="0" y="0" width="100" height="100"></rect>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Book-1" filter="url(#filter-5)" mask="url(#mask-2)">
+                        <g transform="translate(24.000000, 16.000000)">
+                            <g id="Book" stroke-width="1" fill-rule="evenodd" transform="translate(0.167481, 0.387536)">
+                                <path d="M0.832518557,55.6124645 L0.832518557,61.6124645 C0.839673316,62.8067453 1.6709668,63.6146507 2.83251856,63.6124645 L46.8325186,63.6124645 L46.8325186,55.6124645 L0.832518557,55.6124645 Z" id="Shape" fill="#BE9555" fill-rule="nonzero"></path>
+                                <path d="M2.83251856,56.6124645 L2.83251856,60.6124645 C2.86672747,61.717521 3.75260508,62.6147293 4.78807411,62.6124645 L46.8325186,62.6124645 L46.8325186,56.6124645 L2.83251856,56.6124645 Z" id="Shape" fill="#FFFFFF" fill-rule="nonzero"></path>
+                                <polygon id="Shape" fill="#4F4D52" fill-rule="nonzero" opacity="0.2" points="2.83251856 56.6124645 2.83251856 57.6124645 46.8325186 57.6124645 46.8325186 56.6124645"></polygon>
+                                <polygon id="Shape" fill="#4F4D52" fill-rule="nonzero" opacity="0.2" points="20.8325186 56.6124645 26.8325186 62.6124645 20.8325186 62.6124645"></polygon>
+                                <polygon id="Shape" fill="#EF6F59" fill-rule="nonzero" points="21.8325186 66.6124645 17.8325186 64.6124645 14.8325186 66.6124645 14.8325186 56.6124645 21.8325186 56.6124645"></polygon>
+                                <polygon id="Shape" fill="#F7CB64" fill-rule="nonzero" points="46.8325186 55.6124645 0.832518557 55.6124645 0.832518557 0.612464493 46.8325186 0.612464493"></polygon>
+                                <path d="M23.8325186,51.6124645 C23.8325186,52.7164645 22.9384486,53.6124645 21.8325186,53.6124645 L0.832518557,53.6124645 L0.832518557,55.6124645 L46.8325186,55.6124645 L46.8325186,3.61246449 L25.8325186,3.61246449 C24.7265885,3.61246449 23.8325186,4.50746449 23.8325186,5.61246449 L23.8325186,51.6124645 Z" id="Fill-361" fill-opacity="0.126868207" fill="#000000"></path>
+                            </g>
+                            <g id="101">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
+                                <use fill="#4C3B12" fill-rule="evenodd" xlink:href="#path-6"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Git-logo" mask="url(#mask-2)">
+                        <g transform="translate(35.000000, 24.000000)" id="Path">
+                            <g>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                                <use fill="#4C3B12" fill-rule="evenodd" xlink:href="#path-8"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border">
+                    <path d="M50,0 C74.5263677,-4.50542066e-15 94.9281966,17.6592499 99.1842495,40.9565123 L94.2027317,73.3905473 C85.8096395,89.2186645 69.1638777,100 50,100 C30.9551233,100 14.3971863,89.3521454 5.95457608,73.6848234 L0.0261464987,48.3675131 C0.887696267,21.508872 22.932015,4.97230817e-15 50,0 Z" id="Combined-Shape" fill="url(#linearGradient-10)" fill-rule="evenodd" opacity="0.400000006" style="mix-blend-mode: overlay;"></path>
+                    <g>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                        <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="-1" y="-1" width="102" height="102" rx="51"></rect>
+                    </g>
+                    <rect stroke="#0078D4" stroke-width="4" x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

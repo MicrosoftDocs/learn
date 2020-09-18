@@ -2,7 +2,7 @@
 uid: learn.intro-to-hpc.2-azure-batch
 metadata:
   title: Azure Batch
-  description: In this unit, you will learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
+  description: In this unit, you'll learn about the Azure Batch service and how it helps you to manage high-performance compute tasks.
   ms.date: 10/10/2019
   author: jboeshart
   ms.author: jaboes

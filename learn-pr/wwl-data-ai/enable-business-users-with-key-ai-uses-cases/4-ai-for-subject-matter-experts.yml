@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-business-users-with-key-ai-uses-cases.ai-for-subject-matter-experts
+title: AI for subject matter experts
+metadata:
+  title: AI for subject matter experts
+  description: "AI for subject matter experts"
+  ms.date: 08/05/2020
+  author: wwlpublish
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-ai-for-subject-matter-experts.md)]

@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.aspnet-configurationbuilder.2-exercise-setup-app-deploy-resources
+title: Exercise - Set up an application and deploy Azure resources
+metadata:
+  title: Exercise - Set up an application and deploy Azure resources
+  description: In this unit, you set up an application and deploy Azure resources.
+  ms.date: 06/30/2020
+  author: coderandhiker
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+interactive: powershell
+azureSandbox: true
+content: |
+  [!include[](includes/2-exercise-setup-app-deploy-resources.md)]
+tasks:
+- action: exists
+  environment: azure
+  hint: "Create the web app."
+  azure:
+    resource:
+      type: "Microsoft.Web/sites"
+- action: exists
+  environment: azure
+  hint: "Create the Azure SQL Database instance."
+  azure:
+    resource:
+      type: Microsoft.Sql/servers

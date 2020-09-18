@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="107px" height="107px" viewBox="0 0 107 107" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>Capture feedback to continuously improve your software with Azure DevOps/Recommend-and-design-system-feedback-mechanisms</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-10.3%" y="-12.1%" width="120.5%" height="124.2%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0964956975 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M54.4471895,12.3239078 C71.2529268,15.3840979 84,30.1928493 84,48 C84,65.7639604 71.3146865,80.5440488 54.569402,83.653618 L54.747375,88.7218254 L46.1021193,80.6859067 L54.1639507,72.068439 L54.447,80.1658254 L54.4473678,78.1598925 C68.2662028,75.1780235 78.6268657,62.8075426 78.6268657,48 C78.6268657,33.1924574 68.2662028,20.8219765 54.4473678,17.8401075 L54.4471895,12.3239078 Z M42.6347673,6.72182541 L50.9934027,15.0535941 L42.6347673,23.3853628 L42.6342699,17.6272397 C28.2779738,20.1821902 17.3731343,32.808563 17.3731343,48 C17.3731343,63.5655756 28.8217225,76.438185 43.7011505,78.5430936 L43.7011761,84.0000552 C25.8454864,81.860266 12,66.5585184 12,48 C12,29.812652 25.2972052,14.7531066 42.6347256,12.1440472 L42.6347673,6.72182541 Z" id="path-4"></path>
+        <filter x="-1.4%" y="-1.2%" width="102.8%" height="104.9%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="78.4210223%" y1="-7.24023438%" x2="15.5786468%" y2="110.793945%" id="linearGradient-6">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-7" x="-3" y="-3" width="106" height="106" rx="53"></rect>
+        <filter x="-0.5%" y="-0.5%" width="101.9%" height="101.9%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Capture-feedback-to-continuously-improve-your-software-with-Azure-DevOps" transform="translate(-109.000000, -287.000000)">
+            <g id="Capture-feedback-to-continuously-improve-your-software-with-Azure-DevOps/Recommend-and-design-system-feedback-mechanisms" transform="translate(112.000000, 290.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <g id="Circle-" transform="translate(-2.000000, 0.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="BG"></g>
+                        <g id="Color/Blue" mask="url(#mask-2)" fill="#55A2FF" fill-rule="evenodd">
+                            <rect id="Rectangle" x="0" y="0" width="100" height="100"></rect>
+                        </g>
+                    </g>
+                    <g id="Speech" filter="url(#filter-3)" transform="translate(28.142857, 34.000000)">
+                        <path d="M37.6696429,0 L2.04464286,0 C1.38854911,0 0.857142857,0.528 0.857142857,1.17857143 L0.857142857,23.5714286 C0.857142857,24.222 1.38854911,24.75 2.04464286,24.75 L6.79464286,24.75 L6.79464286,31.8214286 C6.79464286,32.2981607 7.08379911,32.72775 7.52792411,32.9104286 C7.67458036,32.9705357 7.82895536,33 7.98154911,33 C8.29089286,33 8.59489286,32.880375 8.82170536,32.6546786 L16.7868616,24.75 L37.6696429,24.75 C38.3251429,24.75 38.8571429,24.222 38.8571429,23.5714286 L38.8571429,1.17857143 C38.8571429,0.528 38.3251429,0 37.6696429,0" id="Fill-138" fill="#EFB252"></path>
+                        <path d="M14.8571429,12.5 C14.8571429,13.880625 13.7377679,15 12.3571429,15 C10.9765179,15 9.85714286,13.880625 9.85714286,12.5 C9.85714286,11.11875 10.9765179,10 12.3571429,10 C13.7377679,10 14.8571429,11.11875 14.8571429,12.5" id="Fill-139" fill="#FFFFFE"></path>
+                        <path d="M22.8571429,12.5 C22.8571429,13.880625 21.7377679,15 20.3571429,15 C18.9765179,15 17.8571429,13.880625 17.8571429,12.5 C17.8571429,11.11875 18.9765179,10 20.3571429,10 C21.7377679,10 22.8571429,11.11875 22.8571429,12.5" id="Fill-140" fill="#FFFFFE"></path>
+                        <path d="M30.8571429,12.5 C30.8571429,13.880625 29.7377679,15 28.3571429,15 C26.9765179,15 25.8571429,13.880625 25.8571429,12.5 C25.8571429,11.11875 26.9765179,10 28.3571429,10 C29.7377679,10 30.8571429,11.11875 30.8571429,12.5" id="Fill-141" fill="#FFFFFE"></path>
+                    </g>
+                    <g id="Combined-Shape" fill-rule="nonzero">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#FFFFFF" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+                <g id="Azure-Border">
+                    <path d="M50,0 C74.5263677,-4.50542066e-15 94.9281966,17.6592499 99.1842495,40.9565123 L94.2027317,73.3905473 C85.8096395,89.2186645 69.1638777,100 50,100 C30.9551233,100 14.3971863,89.3521454 5.95457608,73.6848234 L0.0261464987,48.3675131 C0.887696267,21.508872 22.932015,4.97230817e-15 50,0 Z" id="Combined-Shape" fill="url(#linearGradient-6)" fill-rule="evenodd" opacity="0.400000006" style="mix-blend-mode: overlay;"></path>
+                    <g>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="-1" y="-1" width="102" height="102" rx="51"></rect>
+                    </g>
+                    <rect stroke="#0078D4" stroke-width="4" x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

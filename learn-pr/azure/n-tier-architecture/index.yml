@@ -2,19 +2,19 @@
 uid: learn.n-tier-architecture
 metadata:
   title: Tour the N-tier architecture style for your application
-  description: Use a resource manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
+  description: Discover the benefits of a Resource Manager template to deploy an application in an N-tier architecture and review best practices for deployments of this style.
   ms.date: 01/15/2019
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Tour the N-tier architecture style for your application
-summary: Use a resource manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
+summary: Use a Resource Manager template to deploy an application styled in an N-tier architecture, identify key concepts of N-tier architectures, and review best practices for deployments of this style.
 abstract:  | 
   In this module, you will:
   - Identify the features, limitations, and considerations of the N-tier architecture style
   - Identify use cases for when an N-tier architecture is appropriate
-  - Deploy a sample N-tier architecture with a resource manager template
+  - Deploy a sample N-tier architecture with a Resource Manager template
   - Identify methods and resources to improve your N-tier architecture
 prerequisites: |
   - Knowledge of Azure virtual machines at a beginner level

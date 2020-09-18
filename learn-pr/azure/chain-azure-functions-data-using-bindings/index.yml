@@ -4,8 +4,8 @@ metadata:
   title: Chain Azure Functions together by using input and output bindings
   description: In this module, we'll learn how to integrate your Azure Function with various data sources by using bindings.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Chain Azure Functions together using input and output bindings
@@ -17,12 +17,12 @@ abstract: |
   - Store data in Azure Cosmos DB using Azure Functions
   - Send messages to Azure Queue Storage using Azure Functions
 prerequisites: None
-cardDescription: Integrate data sources with your Azure Functions serverless logic by using bindings.
 iconUrl: /learn/achievements/chain-azure-functions-data-using-bindings.svg
 levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - azure
 - azure-cosmos-db

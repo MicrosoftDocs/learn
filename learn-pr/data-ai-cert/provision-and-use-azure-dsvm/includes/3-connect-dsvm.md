@@ -5,13 +5,13 @@ You can always access your VM from the Azure portal. Since we created a Windows 
 1. Switch back to the Azure portal.
 
 1. In the left sidebar of the portal, select **Virtual Machines**.
-1. Locate the DSVM you just created (**Win2016**) and select it. This will bring up the **Overview** blade.
+1. Locate the DSVM you just created (**Win2016**) and select it. This will bring up the **Overview** pane.
 
-    ![Screenshot of the Virtual Machines blade.](../media/3-create-vm.png)
+    ![Screenshot of the Virtual Machines pane.](../media/3-create-vm.png)
 
-1. From the **Overview** blade, select the **Connect** link highlighted below.
+1. From the **Overview** pane, select the **Connect** link highlighted below.
 
-    ![Screenshot of the Connect button selected in the Virtual Machines blade.](../media/3-connect-vm.png)
+    ![Screenshot of the Connect button selected in the Virtual Machines pane.](../media/3-connect-vm.png)
 
 1. Select the **Download RDP file** button to download the RDP configuration using your browser. You can open the Remote Desktop Protocol (RDP) file directly, or you can download it and then open it with the Remote Desktop Connection app on Windows, macOS, or most Linux distributions.
 

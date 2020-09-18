@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-zero-etl-analytics-hdinsight-interactive-query.3-hdinsight-adhoc-analytics-architecture-patterns
+title: HDInsight interactive queries
+metadata:
+  title: HDInsight interactive queries
+  description: HDInsight interactive queries
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-hdinsight-interactive-queries.md)]

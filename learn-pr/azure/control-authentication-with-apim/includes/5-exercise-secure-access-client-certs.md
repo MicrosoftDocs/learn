@@ -38,7 +38,7 @@ First, use the Cloud Shell to create a self-signed certificate, which you will u
 Because you are using the Consumption tier for API Management, you must configure the gateway to accept client certificates. Follow these steps:
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu, click **All resources** and then click your API Management gateway.
+1. On the Azure portal menu or from the **Home** page, select **All resources** and then click your API Management gateway.
 1. Under **Settings**, click **Custom domains**.
 1. For the **Request client certificates** option, select **Yes**, and then click **Save**.
 
@@ -62,7 +62,7 @@ In the next section, you will configure API Management to accept a request only 
 
 Now, create the authentication policy within the API Management gateway:
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the left menu, click **All Resources**, and then select your API gateway.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All Resources**, and then select your API gateway.
 1. Click **APIs**, select **Weather Data**, and then click the **Inbound processing** policies button.
 
     ![Inbound processing policy button](../media/5-inbound-policy.png)

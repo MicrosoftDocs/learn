@@ -2,10 +2,10 @@
 uid: learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
 metadata:
   title: Run parallel tasks in Azure Batch with the Azure CLI
-  description: In this module, you will learn how to use jobs in the Azure Batch service to run tasks in parallel.
+  description: Find out about the Azure Batch capabilities designed to help you efficiently run large-scale parallel and high-performance computing applications in the cloud.
   ms.date: 05/06/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Run parallel tasks in Azure Batch with the Azure CLI

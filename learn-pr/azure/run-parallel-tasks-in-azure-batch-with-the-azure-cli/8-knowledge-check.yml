@@ -4,11 +4,10 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 05/06/2019
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Knowledge check
 durationInMinutes: 4
 quiz:

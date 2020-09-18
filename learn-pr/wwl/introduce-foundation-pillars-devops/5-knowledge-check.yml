@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduce-foundation-pillars-devops.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/20/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What are the primary benefits that DevOps provides?"
+    choices:
+    - content: "A framework for creating multidisciplinary teams and a means of measuring coders’ effectiveness."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. These aren't primary benefits of DevOps."
+    - content: "The ability to deliver more features to market faster and to increase agility when faced with change."
+      isCorrect: true
+      explanation: "That’s correct. These are primary benefits that DevOps provides."
+    - content: "Processes to facilitate code deployment and minimize coding errors."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. These aren't primary benefits of DevOps."
+  - content: "Why is culture considered an essential foundation for DevOps?"
+    choices:
+    - content: "Because studies have shown, it’s impossible to improve software delivery performance in the absence of a bureaucratic organizational culture."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't why culture is considered an essential foundation for DevOps."
+    - content: "Because the emergence of social media has enhanced communication flow, which was previously understood to be the sole essential foundation for DevOps."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't why culture is considered an essential foundation for DevOps."
+    - content: "Because DevOps needs a growth and continuous learning mindset to succeed, which requires a strong cultural foundation supported by leadership."
+      isCorrect: true
+      explanation: "That’s correct. This answer states why culture is considered an essential foundation for DevOps."
+  - content: "Which statement describing the product definition is false?"
+    choices:
+    - content: "A product can be a repeatable service or platform."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This is an accurate statement regarding products."
+    - content: "A product delivers capabilities that customers value."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This is an accurate statement regarding products."
+    - content: "Product management is made to serve external customers."
+      isCorrect: true
+      explanation: "That’s correct. This isn't a true statement regarding product definition."
+  - content: "What is the main difference between a product and a project?"
+    choices:
+    - content: "Only a product evolves over time."
+      isCorrect: true
+      explanation: "That’s correct. Unlike projects, products evolve over time."
+    - content: "A product has a clear definition of what needs to be delivered."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't the main difference between projects and products."
+    - content: "A product has a date when it needs to be delivered."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't the main difference between projects and products."
+  - content: "Why is a full stack team needed to support a product?"
+    choices:
+    - content: "So that multiple development teams can support a product."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't why a full stack team is needed to support the product."
+    - content: "To be able to support the product end to end."
+      isCorrect: true
+      explanation: "That’s correct. This is why a full stack team is needed to support the product."
+    - content: "To develop specialized skillsets."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn't why a full stack team is needed to support the product."

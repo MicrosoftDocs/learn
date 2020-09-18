@@ -1,0 +1,86 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.1-pros-cons
+title: Pros and cons of cloud computing
+metadata:
+  title: Pros and cons of cloud computing
+  description: The business case for cloud computing.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/1-pros-cons.md)]
+# Waiting for input for Did I Get This block
+#quiz:
+#  title: Check your knowledge
+#  questions:
+#
+# Did I Get This block has intro statement and no visible graphic      
+# - content "Complete the following table by matching each risk to its associated impact:"        
+
+# Remove from visibility - questions from Learn By Doing blocks
+# learn by doing block 1 question 1
+#    - content: "The user's total cost of ownership (TCO) for a single physical server is $5,000 for 3 years. The user is considering utilizing a server in the cloud instead. What is the ownership cost of the server per hour, rounded to the nearest cent?"
+#      choices:
+#      - content: "19 cents"
+#        isCorrect: true
+#        explanation: "Correct! The cost is $5,000 / (3 × 365 × 24) = 19 cents per hour."
+#      - content: "26 cents"
+#        isCorrect: false
+#        explanation: "Incorrect. The cost is $5,000 / (3 × 365 × 24)."
+#      - content: "28 cents"
+#        isCorrect: false
+#        explanation: "Incorrect. The cost is $5,000 / (3 × 365 × 24)."
+#      - content: "52 cents"
+#        isCorrect: false
+#        explanation: "Incorrect. The cost is $5,000 / (3 × 365 × 24)."
+#
+# learn by doing block 1 question 2
+#    - content: "The user's TCO for a single physical server is $5,000 for 3 years. The user is considering utilizing a server in the cloud instead. Assume that the user's server utilization is around 10%. Over a span of 3 years, what is the effective number of hours that the server is used?"
+#      choices:
+#      - content: "2,200"
+#        isCorrect: false
+#        explanation: "Incorrect. The number of effective hours used is 3 × 365 × 24 × 0.10."
+#      - content: "2,468"
+#        isCorrect: false
+#        explanation: "Incorrect. The number of effective hours used is 3 × 365 × 24 × 0.10."
+#      - content: "2,492"
+#        isCorrect: false
+#        explanation: "Incorrect. The number of effective hours used is 3 × 365 × 24 × 0.10."
+#      - content: "2,628"
+#        isCorrect: true
+#        explanation: "Correct! The number of effective hours used is 3 × 365 × 24 × 0.10 = 2,628 hours."
+#
+# learn by doing block 1 question 3
+#    - content: "The user's TCO for a single compute server is $5,000 for 3 years. The user is considering utilizing a server in the cloud instead. A cloud service provider offers to rent a virtualized server for 20 cents an hour. The user wants to only rent the server for the number of hours calculated in the previous question. How much money (rounded to the nearest dollar) would the user save if they rented the server?"
+#      choices:
+#      - content: "$2,400"
+#        isCorrect: false
+#        explanation: "Incorrect. The savings is $5,000 - (2,628 × 0.20)."
+#      - content: "$4,474"
+#        isCorrect: true
+#        explanation: "Correct! The savings is $5,000 - (2,628 × 0.20) = $4,474."
+#      - content: "$6,820"
+#        isCorrect: false
+#        explanation: "Incorrect. The savings is $5,000 - (2,628 × 0.20)."
+#      - content: "$8,420"
+#        isCorrect: false
+#        explanation: "Incorrect. The savings is $5,000 - (2,628 × 0.20)."
+#
+# learn by doing block 2 question 1
+#    - content: "Suppose a bank in country A uses a cloud provider in country B to service a customer in country C. The customer's information was hacked by someone in country D. Which entity should be held liable?"
+#      choices:
+#      - content: "Bank in country A"
+#        isCorrect: false
+#        explanation: "Incorrect. The laws aren't that clear yet. What about the responsibility of the other entities?"
+#      - content: "Cloud provider in country B"
+#        isCorrect: false
+#        explanation: "Incorrect. The laws aren't that clear yet. What about the responsibility of the other entities?"
+#      - content: "Hacker in country D"
+#        isCorrect: false
+#        explanation: "Incorrect. The laws aren't that clear yet. What about the responsibility of the other entities?" 
+#      - content: "Not sure"
+#        isCorrect: true
+#        explanation: "Correct! The laws covering such scenarios aren't mature. Furthermore, how could such a claim be enforced?" 

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-docker-containers.4-how-docker-containers-work
+title: How Docker containers work
+
+metadata:
+  title: How Docker containers work
+  description: In this unit, we explore how Docker containers work and how to run containers. We also discuss the life cycle of a Docker container.
+  ms.date: 10/05/2019
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-how-docker-containers-work.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "A container is launched using the --publish 80:8080 flag. Which of the following options is the most likely network configured used for the container?"
+    choices:
+    - content: "none"
+      isCorrect: false
+      explanation: "None is the network configuration that disables networking for containers."
+    - content: "bridge"
+      isCorrect: true
+      explanation: "The Bridge network configuration is an internal, private network used by the container and isolates the container network from the Docker host network. We use the publish flag to map ports between the container and host ports."
+    - content: "host"
+      isCorrect: false
+      explanation: "The Host network configuration allows the container to use the host's IP address and ports. The publish flag isn't used with this network."
+ 
+  - content: "Which storage option is the best choice that allows the host and container to share a file to manage name server resolution, for example the resolve.conf file on Linux?"
+    choices:
+    - content: "A volume"
+      isCorrect: false
+      explanation: "A volume is stored on the host filesystem at a specific folder location. However, volume data isn't meant to be updated by the host."
+    - content: "Bind mount"
+      isCorrect: true
+      explanation: "A bind mount, like a volume, is stored on the host filesystem at a specific folder location. However, bind mount data is expected to be updated by the host. The resolve.conf contents is expected to change by the host and used by both the container and host."

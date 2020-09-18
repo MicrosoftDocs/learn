@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-build-apps-cloud.3-manage-failures
+title: Build fault-tolerant cloud services
+metadata:
+  title: Build fault-tolerant cloud services
+  description: Learn how to build fault-tolerant cloud services
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-manage-failures.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following test scenarios will **not** help testing the resiliency and readiness of a cloud service?"
+    choices:
+    - content: "Randomly turning off VM instances that constitute the service"
+      isCorrect: false
+      explanation: "Incorrect. This will help in testing the resiliency and readiness of a cloud service, but how about the others? Should you really be doing any of these things on a money-making application?"
+    - content: "Turning off an entire datacenter or availability zone"
+      isCorrect: false
+      explanation: "Incorrect. This will help in testing the resiliency and readiness of a cloud service, but how about the others? Should you really be doing any of these things on a money-making application?"
+    - content: "Randomly deleting the files that back up the production database of the main web server"
+      isCorrect: false
+      explanation: "Incorrect. This will help in testing the resiliency and readiness of a cloud service, but how about the others? Should you really be doing any of these things on a money-making application?"
+    - content: "All of these tests ensure the resiliency of the cloud service"
+      isCorrect: true
+      explanation: "Correct!"
+

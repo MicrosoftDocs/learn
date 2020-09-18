@@ -65,7 +65,7 @@ Let's start by creating the server login that we'll use for the exercises in thi
 
 Resource classes manage resource allocation for query execution in SQL Data Warehouse. They help you control memory allocation, CPU cycles, and concurrency slots given to each query.
 
-[Learn more about resource classes.](https://docs.microsoft.com/azure/sql-data-warehouse/sql-data-warehouse-develop-concurrency#resource-classes)
+[Learn more about resource classes.](https://docs.microsoft.com/azure/sql-data-warehouse/resource-classes-for-workload-management)
 
 To assign a resource class to the user added to SQL Data Warehouse, run this statement in same query window that you used for the previous step:
 

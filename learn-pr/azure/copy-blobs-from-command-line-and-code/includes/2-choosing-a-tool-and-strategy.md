@@ -4,7 +4,7 @@ In this unit, you'll learn about three common cross-platform tools that you can 
 
 ## Azure CLI
 
-The Azure CLI provides access to Azure Storage through the `az storage` series of commands. 
+The Azure CLI provides access to Azure Storage through the `az storage` series of commands.
 
 The basic commands to upload and download blobs between blob storage and the local file system are synchronous. Transferring a large blob could potentially take several hours, depending on the network bandwidth available. Additionally, if a transfer fails part-way through, there's no simple way of restarting the operation from the point of failure; you must repeat the entire operation.
 

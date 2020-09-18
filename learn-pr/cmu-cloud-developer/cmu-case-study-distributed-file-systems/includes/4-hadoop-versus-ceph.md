@@ -1,0 +1,17 @@
+We now summarize<sup>[1][^1]</sup> the primary differences between HDFS and Ceph.
+
+- **Architectural differences**: HDFS follows the model of collocating compute and storage. HDFS DataNodes are typically coresident with MapReduce nodes, and the key idea behind the entire model is to bring the computation to the data. Ceph is designed to be a stand-alone storage service, although the OSDs that store data in Ceph could potentially be co-located with MapReduce nodes.
+- **Compatibility**: HDFS clients have to be implemented using one of the APIs. HDFS was not designed to be a POSIX file system and does not support some of the POSIX semantics (e.g., opening existing files for writing<!-- is an example -->). Workarounds, such as a FUSE driver, exist that allow HDFS to be mounted. However, most applications will have to be reimplemented with an HDFS client if they do not already support the workaround. Ceph, on the other hand, exposes multiple APIs, including the POSIX-compliant Ceph FS driver, which makes it much easier to integrate with existing applications when compared to HDFS.
+- **Data layout**: HDFS NameNodes expose the physical location of blocks to client applications, which can use this information to potentially improve locality of data accesses. Ceph is similar, metadata servers will always expose the location of the data object to the client when a request for data is made.
+- **Support for small files**: HDFS lacks support for small files because it is optimized for large block sizes (64MB by default). In Ceph, stripe width is typically on the order of kilobytes, which makes it more general-purpose than HDFS.
+- **Concurrent writes**: HDFS is a write-once model that allows only a single file to write to a file at a time. Ceph supports multiple, concurrent writers and is hence the more flexible of the two file systems.
+- **Consistency model**: HDFS guarantees consistency by restricting writes to a single client and not allowing any file updates, while Ceph can guarantee sequential consistency except in rare situations involving a network partition of some of the OSDs.
+- **Caching** HDFS supports read-ahead caching on the client side through the streaming model. Clients in Ceph can possess read caches and write buffers only if the client has been provided a lease by the MDS (when the client has exclusive access to a file). When multiple clients are accessing the same file in Ceph, these leases are revoked, forcing the I/O to be synchronous, in order to manage consistency. 
+- **Fault tolerance**: HDFS is built for fault tolerance with built-in support for replication at the block level and is rack aware, however, the Namenode is a single-point of failure in HDFS. Ceph, on the other hand is quite robust as it uses complex peer-to-peer protocols to ensure that it is quite fault tolerant. Failure recovery in Ceph is also quite fast due to the presence of write logs that can be replayed to bring a node up to speed. 
+<br>
+***
+### References
+
+1. _Maltzahn, C., Molina-Estolano, E., Khurana, A., Nelson, A. J., Brandt, S. A., & Weil, S. (2010). [Ceph as a scalable alternative to the Hadoop Distributed File System](https://www.usenix.org/system/files/login/articles/73508-maltzahn.pdf) The USENIX Magazine vol.35_
+
+[^1]: <https://www.usenix.org/system/files/login/articles/73508-maltzahn.pdf> "Maltzahn, C., Molina-Estolano, E., Khurana, A., Nelson, A. J., Brandt, S. A., & Weil, S. (2010). *Ceph as a scalable alternative to the Hadoop Distributed File System* The USENIX Magazine vol.35"

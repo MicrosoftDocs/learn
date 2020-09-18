@@ -1,10 +1,10 @@
 In this unit, you learn about the benefits of automated testing and the kinds of testing you can perform. You also learn what makes a good test and be introduced to the various testing tools that are available to you.
 
-Let's begin by checking in with the Tailspin Toys web team.
+Let's begin by checking in with the Tailspin web team.
 
 ## The need for automated testing
 
-Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Azure DevOps Services. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
+Mara, the newest member of the team, is slowly introducing her teammates to DevOps and Microsoft Azure DevOps. In particular, she's using Azure Boards and Azure Pipelines to get everyone started.
 
 To begin the project, the team has identified three key needs to address:
 
@@ -18,23 +18,23 @@ Things are about to change. Amita is stressed and frustrated. She's stressed bec
 
 Mara has already taken on the first two issues and has started thinking about the third issue, creating unit tests. And it couldn't come at a better time. Amita has already pinged Andy and Mara about the problem. She wants to know if they'll work with her to improve the code quality and eliminate those bugs.
 
-**Amita**: Thanks for meeting with me. I wanted to see if we can stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now. Reporting the same broken functionality over and over on something that should work is driving me crazy!
+**Amita:** Thanks for meeting with me. I wanted to see if we can stop breaking the filtering feature on the leaderboard. Is there any way we can get more stability? I'm pulled in all kinds of directions right now. Reporting the same broken functionality over and over on something that should work is driving me crazy!
 
-**Mara**: I have an idea. You've seen the automated pipeline. I think we can add unit tests to the automated build. Unit testing is about testing a single piece of functionality, like the filtering feature, in isolation. We'd catch regression errors before they ever get to you.
+**Mara:** I have an idea. You've seen the automated pipeline. I think we can add unit tests to the automated build. Unit testing is about testing a single piece of functionality, like the filtering feature, in isolation. We'd catch regression errors before they ever get to you.
 
-**Andy**: We tried unit testing a while ago but we had trouble keeping the tests up to date, so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and nothing was in place to keep us honest.
+**Andy:** We tried unit testing a while ago but we had trouble keeping the tests up to date, so we gave up. Part of the problem was that, when the tests failed on the build server, there was no way to know about it. Plus, we're pressured for time. We'd ignore failed tests and nothing was in place to keep us honest.
 
-**Mara**: If we add tests to the Azure Pipelines build, the build will fail if any tests fail. That should certainly keep us honest! Andy and I could do this and it will make life better for you, Amita.
+**Mara:** If we add tests to the Azure Pipelines build, the build will fail if any tests fail. That should certainly keep us honest! Andy and I could do this and it will make life better for you, Amita.
 
-**Amita**: I'm all for an easier life, but you're not going to put me out of a job, are you?
+**Amita:** I'm all for an easier life, but you're not going to put me out of a job, are you?
 
-**Mara**: There's still plenty of manual testing to do. This is just one piece of the puzzle.
+**Mara:** There's still plenty of manual testing to do. This is just one piece of the puzzle.
 
-**Andy**: I agree. It's our job to make sure we're handing off quality code to you. I say we at least try it. Unit tests run fast. They should add only a minute to the build process, at most. Plus, there are other kinds of tests we can run as well, such as lint and code coverage tests.
+**Andy:** I agree. It's our job to make sure we're handing off quality code to you. I say we at least try it. Unit tests run fast. They should add only a minute to the build process, at most. Plus, there are other kinds of tests we can run as well, such as lint and code coverage tests.
 
 Honestly, I've wanted to do this for a long time. Mara's given us a good start with the automated build pipeline. I think it's time for me to get more involved.
 
-**Amita**: Thank you both! I can't wait to see the results.
+**Amita:** Thank you both! I can't wait to see the results.
 
 ## What is automated testing?
 
@@ -46,9 +46,9 @@ Manual testing has its benefits. But as your code base grows in size, testing al
 
 When we think about automated testing, it's common to separate tests into layers. Mike Cohn proposes this concept, known as the _test pyramid_, in his book _Succeeding with Agile_.
 
-![The test pyramid showing the unit and UI layers](../media/2-test-pyramid.png)
+![Screenshot of test pyramid showing the unit test layer at the bottom, marked with callout 1, and UI layer tests at the top, marked with callout 2.](../media/2-test-pyramid.png)
 
-Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels ![Callout 1](../../shared/media/callout-01.png) of your software, such as functions, classes, and methods. You focus progressively less effort as features are combined, such as at the user interface (UI) layer ![Callout 2](../../shared/media/callout-02.png). The idea is that if you can verify that each lower-level component works as expected in isolation, tests at the higher levels need only verify that multiple components work together to get the expected result.
+Although this is a simplistic version of Cohn's model, the concept illustrates that you focus most of your effort on writing tests that verify the foundational levels of your software (callout 1 in the pyramid), such as functions, classes, and methods. You focus progressively less effort as features are combined, such as at the user interface (UI) layer (callout 2 in the pyramid). The idea is that if you can verify that each lower-level component works as expected in isolation, tests at the higher levels need only verify that multiple components work together to get the expected result.
 
 ### When should I write tests?
 

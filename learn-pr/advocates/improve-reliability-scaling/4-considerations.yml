@@ -1,0 +1,41 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-scaling.4-considerations
+title: "Capacity planning considerations"
+metadata:
+  title: "Capacity planning considerations"
+  description: "Capacity planning considerations"
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure  
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-considerations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of the following can you use to get limits for compute resources for any Azure service?'
+    choices:
+    - content: 'Azure Monitor'
+      isCorrect: false
+      explanation: 'Azure monitor is not used to retrieve the limits for compute resources.'
+    - content: 'the List Usage endpoint'
+      isCorrect: true
+      explanation: 'Correct.'
+    - content: 'CosmosDB'
+      isCorrect: false
+      explanation: 'CosmosDB is a storage system. It does not help you retrieve limits for compute resources.'
+      
+  - content: 'Before scaling out resources, you should:'
+    choices:
+    - content: 'find the bugs in your application or service'
+      isCorrect: true
+      explanation: 'Correct, you may find you need to scale out less.'
+    - content: 'scale up'
+      isCorrect: false
+      explanation: 'It is better to first determine if there are issues in your application and service because you may find you do not need to scale.'
+    - content: 'increase soft service limits'
+      isCorrect: false
+      explanation: 'It is better to first determine if issued in your application or service are causing you to consume more resources than you need.'

@@ -6,12 +6,11 @@ metadata:
   description: Exercise - Connect to Jupyter through Docker on the DSVM
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
-interactive: bash
 durationInMinutes: 8
 content: |
   [!include[](includes/5-connect-to-jupyter-through-docker-on-the-dsvm.md)]

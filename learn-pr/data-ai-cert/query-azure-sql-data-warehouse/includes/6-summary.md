@@ -1,4 +1,4 @@
-In this module, we explored how to create a sample database with Azure SQL Data Warehouse and connect to it by using SQL Server Management Studio. We then explored simple queries that can be issued against the data warehouse and examined how the data can be visualized in both Excel and Power BI.
+In this module, we explored how to create a sample database with Azure Synapse Analytics and connect to it by using SQL Server Management Studio. We then explored simple queries that can be issued against the data warehouse and examined how the data can be visualized in both Excel and Power BI.
 
 ## Cleanup
 

@@ -17,7 +17,7 @@ In the previous unit, you learned how to design an efficient partitioning strate
 
 1. On the **Number of requests** chart, find the time when you populated this collection. You should see a peak in requests at this time.
 
-    ![Screenshot that shows the chart for Azure Cosmos DB requests over time](../media/6-request-peak.png)
+    :::image type="content" source="../media/6-request-peak.png" alt-text="Screenshot that shows the chart for Azure Cosmos DB requests over time." loc-scope="other"::: <!-- no-loc -->
 
 1. Enter that time on the **Max consumed RU/s by each partition key range** chart and select **Apply**.
 

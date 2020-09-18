@@ -15,7 +15,7 @@ Notice that the default response type for all the commands we've done so far is 
 az vm list --output table
 ```
 
-Along with `table`, you can specify `json` (the default), `jsonc` (colorized JSON), or `tsv` (Table-Separated Values). Try a few variations with the above command to see the difference.
+Along with `table`, you can specify `json` (the default), `jsonc` (colorized JSON), or `tsv` (Tab-Separated Values). Try a few variations with the above command to see the difference.
 
 ## Getting the IP address
 

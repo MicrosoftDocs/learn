@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.azure-well-architected-introduction
+metadata:
+  title: Introduction to the Microsoft Azure Well-Architected Framework
+  description: Learn how using key principles throughout your cloud architecture can help you design and build a solid architectural foundation that you can continuously improve.
+  ms.date: 05/19/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to the Microsoft Azure Well-Architected Framework
+summary: You want to build great things on Azure, but you're not sure exactly what that means. Using key principles throughout your architecture, regardless of technology choice, can help you design, build, and continuously improve your architecture.
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the pillars of the Azure Well-Architected Framework
+    - Identify key principles for creating a solid architectural foundation
+prerequisites: |
+  - Experience building or operating solutions by using core infrastructure technology such as data storage, compute, and networking
+  - Experience building or operating technology systems to solve business problems
+iconUrl: /learn/achievements/azure-well-architected-introduction.svg
+levels:
+- beginner
+roles:
+- solution-architect
+products:
+- azure
+units:
+- learn.azure-well-architected-introduction.1-introduction
+- learn.azure-well-architected-introduction.2-pillars
+- learn.azure-well-architected-introduction.3-cost-optimization
+- learn.azure-well-architected-introduction.4-operational-excellence
+- learn.azure-well-architected-introduction.5-performance-efficiency
+- learn.azure-well-architected-introduction.6-reliability
+- learn.azure-well-architected-introduction.7-security
+- learn.azure-well-architected-introduction.8-summary
+badge:
+  uid: learn.azure-well-architected-introduction.badge

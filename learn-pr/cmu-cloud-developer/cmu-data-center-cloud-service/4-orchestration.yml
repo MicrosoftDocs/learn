@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-cloud-service.4-orchestration
+title: Cloud orchestration and automation
+metadata:
+  title: Cloud orchestration and automation
+  description: Learn about cloud orchestration and automation
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-orchestration.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following is **not** an effect of cloud orchestration?"
+    choices:
+    - content: "Need for many more administrators within a datacenter to manage complicated tools like Chef and Puppet"
+      isCorrect: true
+      explanation: "Correct! Cloud orchestration simplifies the management of resources and can reduce the number of administrators needed to perform routine tasks in a datacenter."
+    - content: "Easy-to-use web portals to provision and monitor resources"
+      isCorrect: false
+      explanation: "Incorrect. This is an effect of cloud orchestration. What is the effect of cloud orchestration on the manageability of resources and services?"
+    - content: "Ready-made scripts that allow various parts of the infrastructure to be automatically created"
+      isCorrect: false
+      explanation: "Incorrect. This is an effect of cloud orchestration. What is the effect of cloud orchestration on the manageability of resources and services?"
+    - content: "Improved collaboration between multiple technical teams in a large cloud application"
+      isCorrect: false
+      explanation: "Incorrect. This is an effect of cloud orchestration. What is the effect of cloud orchestration on the manageability of resources and services?"
+

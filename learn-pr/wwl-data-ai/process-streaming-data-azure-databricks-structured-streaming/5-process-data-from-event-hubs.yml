@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-streaming-data-azure-databricks-structured-streaming.process-data-from-event-hubs
+title: Process data from Event Hubs with structured streaming
+metadata:
+  title: Process data from Event Hubs with structured streaming
+  description: "Process data from Event Hubs with structured streaming"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/5-process-data-from-event-hubs.md)]

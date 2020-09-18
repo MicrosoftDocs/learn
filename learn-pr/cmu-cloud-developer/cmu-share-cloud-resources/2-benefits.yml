@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.2-benefits
+title: Benefits of virtualization
+metadata:
+  title: Benefits of virtualization
+  description: Benefits of virtualization
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-benefits.md)]

@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-devops-continuous-security-operations.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 09/20/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What should a continuous security approach include?"
+    choices:
+    - content: "Manual remediation in environments with combined legacy and modern application platforms"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t what a continuous security approach should include."
+    - content: "Secure software delivery, secure infrastructure and secure automation"
+      isCorrect: true
+      explanation: "That’s correct. A continuous security approach should include secure software delivery, secure infrastructure and secure automation."
+    - content: "Distributed denial of service, mobile malware, DNS"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t what a continuous security approach should include."
+  - content: "Which defensive mindset is appropriate to take?"
+    choices:
+    - content: "With enough automation of security checks in the continuous delivery system, you will be able to protect the majority of threats."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t an appropriate defensive mindset."
+    - content: "Defensive mechanisms are layered to protect valuable data and information."
+      isCorrect: true
+      explanation: "That’s correct. This is an appropriate defensive mindset."
+    - content: "High tech companies are less likely to be attacked."
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. This isn’t an appropriate defensive mindset."
+  - content: "What are three principles of DevOps that most apply to continuous security?"
+    choices:
+    - content: "Shift left, automation and continuous improvement"
+      isCorrect: true
+      explanation: "That’s correct. These are the three principles that most apply to continuous security."
+    - content: "Customer-focused design, OKRs, metrics"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. These aren't the three principles that most apply to continuous security."
+    - content: "Continuous operations, lean product and shift-right testing"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. These aren't the three principles that most apply to continuous security."
+  - content: "Continuous Operations reduces or eliminates the need for planned downtimes or interruptions, such as scheduled maintenance. What should continuous monitoring of infrastructure, applications, and services be tied to, if possible?"
+    choices:
+    - content: "Security scanning"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Security scanning shouldn’t be tied to continuous monitoring."
+    - content: "Sprint planning"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. Sprint planning shouldn’t be tied to continuous monitoring."
+    - content: "Automated remediation"
+      isCorrect: true
+      explanation: "That’s correct. Automated remediation should be tied to continuous monitoring if possible."
+  - content: "A large part of the value of DevOps in general is about finding the right balance between which of the following?"
+    choices:
+    - content: "Innovation (speed) and business continuity (control)"
+      isCorrect: true
+      explanation: "That’s correct. The value of DevOps in general is about finding a balance between innovation and business continuity."
+    - content: "Discussion (iteration) and implementation (deployment)"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. The value of DevOps isn’t about finding a balance between discussion and implementation."
+    - content: "Estimation (planning) and achievability (results)"
+      isCorrect: false
+      explanation: "Sorry, that’s incorrect. The value of DevOps isn’t about finding a balance between estimation and achievability."

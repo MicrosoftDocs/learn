@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.branch-merge-git.4-exercise-resolve-merge-conflicts
+title: Exercise - Resolve merge conflicts
+metadata:
+  title: Exercise - Resolve merge conflicts
+  description: Modify unmerged branches and resolve merge conflicts
+  ms.date: 06/24/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-git
+  ROBOTS: NOINDEX
+durationInMinutes: 10
+azureSandbox: true
+interactive: bash
+content: |
+  [!include[](includes/4-exercise-resolve-merge-conflicts.md)]

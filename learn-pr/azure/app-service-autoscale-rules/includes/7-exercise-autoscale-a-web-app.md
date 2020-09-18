@@ -14,9 +14,13 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 
-1. Choose **Create a resource**, select **Web**, and then click **Web App**.
+1. From the Azure portal menu, select **Create a resource**.
 
-    ![Screenshot of the New blade in the Azure portal showing the Web options available in the Azure Marketplace](../media/7-search-web-app-annotated.png)
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/7-create-a-resource.png)
+
+1. Select **Web**, and then select **Web App**.
+
+    ![Screenshot of the Azure Marketplace with a callout highlighting navigation from Web to Web App option.](../media/7-search-web-app-annotated.png)
 
 1. Specify the values in the following table for the properties of the web app.
 
@@ -70,7 +74,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. Using a web browser, go to `https://<your-webapp-name>.azurewebsites.net/api/reservations/1`. Visiting this URL sends a GET request to the web API to retrieve the details of reservation number 1. You should see a result similar to the one shown below. The response contains a JSON document with the details of the booking. Remember that this is dummy data:
 
-    ![Screenshot of a web browser sending a web API request to the hotel reservation system web app](../media/7-web-api-annotated.png)
+    ![Screenshot of a web browser sending a web API request to the hotel reservation system web app.](../media/7-web-api-annotated.png)
 
 1. Return to the Cloud Shell and move to the **~/mslearn-hotel-reservation-system/src/HotelReservationSystemTestClient** folder:
 
@@ -113,7 +117,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
     dotnet run
     ```
 
-   ![Screenshot of a client app running, showing the responses and error messages that occur](../media/7-web-client-annotated.png)
+   ![Screenshot of a client app running, showing the responses and error messages that occur.](../media/7-web-client-annotated.png)
 
 1. Press Enter to stop the client application.
 
@@ -125,19 +129,19 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. In the default autoscale rule, verify that the scale mode is set to **Scale based on a metric**, and then click **Add a rule**.
 
-    ![Screenshot of the web app in the Azure portal while configuring autoscaling](../media/7-add-rule-annotated.png)
+    ![Screenshot of the web app in the Azure portal while configuring autoscaling.](../media/7-add-rule-annotated.png)
 
 1. Add a rule that increases the instance count by one if the average CPU utilization across all instances in the web site exceeds 50 percent in the preceding five minutes. This is a scale-out rule.
 
-    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-out rule](../media/7-first-rule-annotated.png)
+    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-out rule.](../media/7-first-rule-annotated.png)
 
 1. Click **Add a rule** again. Add a rule that reduces the instance count by one if the average CPU utilization across all instances in the web site drops below 30 percent in the preceding five minutes. This is a scale-in rule. Remember that it's good practice to define scale rules in pairs.
 
-    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-in rule](../media/7-second-rule-annotated.png)
+    ![Screenshot of the web app in the Azure portal while configuring the autoscaling scale-in rule.](../media/7-second-rule-annotated.png)
 
 1. In the **Default** auto scale condition window, in the **Instance limits** section, set the **Maximum** instance count to five. Name the Autoscale setting **ScaleOnCPU**, and then click **Save**.
 
-    ![Screenshot of the complete autoscale settings for the web app](../media/7-web-autoscale-settings-annotated.png)
+    ![Screenshot of the complete autoscale settings for the web app.](../media/7-web-autoscale-settings-annotated.png)
 
 ## Monitor autoscale events
 
@@ -150,7 +154,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
 
 1. While the client app is running, switch back to the Azure portal showing the autoscale settings for the web app, and click **Run history**. Under **show data for last**, click **1 hour**. Initially, the chart will be empty as it will take several minutes for autoscaling to kick in.
 
-1. While you're waiting for autoscaling events to occur, go to the blade for your web service (not the service plan), and under **Monitoring**, click **Metrics**.
+1. While you're waiting for autoscaling events to occur, go to the pane for your web service (not the service plan), and under **Monitoring**, click **Metrics**.
 
 1. Add the following metrics to the chart, set the time range to **Last 30 minutes**, and then pin the chart to the current dashboard:
 
@@ -167,7 +171,7 @@ The exercise also runs a client app that simulates a number of users issuing POS
    - The number of HTTP 4.xx errors diminishes.
    - The average response time drops.
 
-    ![Screenshot of the Metrics chart for the web app](../media/7-metrics-chart-annotated.png)
+    ![Screenshot of the Metrics chart for the web app with three lines pointing towards autoscaling events.](../media/7-metrics-chart-annotated.png)
 
     Each major spike in the CPU Time indicates that more CPU processing power has become available. This is a result of autoscaling.
 
@@ -176,11 +180,11 @@ The exercise also runs a client app that simulates a number of users issuing POS
     - The Data In, Data Out, and Requests metrics have increased.
     - The Average Response Time has dropped.
   
-    ![Screenshot of the charts on the Overview page of the web app](../media/7-overview-charts.png)
+    ![Screenshot of the charts on the Overview page of the web app.](../media/7-overview-charts.png)
 
 1. Click **Scale out (App Service plan)**, and then click **Run history**. Click **1 hour**. The graph should now indicate that autoscaling has occurred. The number of instances will have increased (it may have reached five, depending on how long the client app has been running), and you should see a number of autoscale events reported.
 
-    ![Screenshot of the chart showing how autoscaling has increased the instance count for the web app](../media/7-increase-instances.png)
+    ![Screenshot of the chart showing how autoscaling has increased the instance count for the web app.](../media/7-increase-instances.png)
 
     > [!NOTE]
     > The autoscale events are reported in pairs. The first event occurs when autoscaling has triggered an increase in the number of instances. The second event occurs when autoscaling has completed.

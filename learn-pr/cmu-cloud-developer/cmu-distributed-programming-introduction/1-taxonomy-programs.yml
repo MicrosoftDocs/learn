@@ -1,0 +1,100 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.1-taxonomy-programs
+title: Categories of computer programs
+metadata:
+  title: Categories of computer programs
+  description: Categories of computer programs
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/1-taxonomy-programs.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1 question 1
+  - content: "A UNIX shell script uses `grep` and `awk` to process plain text files, one at a time, in order to extract information. This program is run along with others on a UNIX OS. What kind of program is this most likely to be?"
+    choices:
+    - content: "Sequential"
+      isCorrect: true
+      explanation: "Correct! The program runs sequentially over each of the text files."    
+    - content: "Parallel"
+      isCorrect: false
+      explanation: "Incorrect. There is no parallel element in this particular UNIX script."
+    - content: "Distributed"
+      isCorrect: false
+      explanation: "Incorrect. This UNIX script runs on a single computer."
+    - content: "Concurrent"
+      isCorrect: false
+      explanation: "Incorrect. This UNIX script may spawn individual processes like `grep` and `awk`, but they don't execute concurrently."
+
+# Did I Get This block 1 question 2
+  - content: "A robot receptionist application runs on a Linux OS and has multiple functional modules that run simultaneously to accomplish several tasks, such as speech generation and facial expressions. These functional modules are designed to be independent processes that can share time on a single processor or core. What kind of program is this most likely to be?"
+    choices:
+    - content: "Distributed"
+      isCorrect: false
+      explanation: "Incorrect. This program runs on a single computer."
+    - content: "Parallel"
+      isCorrect: false
+      explanation: "Incorrect. There is no parallel element in this particular program because it runs on a single processor or core."
+    - content: "Concurrent"
+      isCorrect: true
+      explanation: "Correct! The program utilizes multiple processes that run concurrently."          
+    - content: "Sequential"
+      isCorrect: false
+      explanation: "Incorrect. This program uses multiple processes that run concurrently."
+
+# Did I Get This block 1 question 3
+  - content: "MATLAB includes a toolbox that automatically takes code written in MATLAB and executes it on multicore processors and/or GPUs to speed up computations. What kind of program does this toolbox most likely generate?"
+    choices:
+    - content: "Parallel"
+      isCorrect: true
+      explanation: "Correct! The toolkit runs on multicore processors and/or GPUs to execute instructions in parallel."    
+    - content: "Distributed"
+      isCorrect: false
+      explanation: "Incorrect. The toolkit runs on a single computer."
+    - content: "Concurrent"
+      isCorrect: false
+      explanation: "Incorrect. This uses multicore processors and/or GPUs to speed up computations, so it is better suited for another model."
+    - content: "Sequential"
+      isCorrect: false
+      explanation: "Incorrect. This toolkit uses multicore processors and/or GPUs to speed up computations."
+
+# Did I Get This block 1 question 4
+  - content: "Folding@Home is a large-scale computing project that uses the idle time of volunteers' computers to perform complex, protein-folding simulations over the internet. What kind of program is Folding@Home most likely to be?"
+    choices:  
+    - content: "Concurrent"
+      isCorrect: false
+      explanation: "Incorrect. Folding@Home runs across multiple computers connected to a network."
+    - content: "Sequential"
+      isCorrect: false
+      explanation: "Incorrect. Folding@Home runs across multiple computers connected to a network, so it is not sequential."
+    - content: "Parallel"
+      isCorrect: false
+      explanation: "Incorrect. Folding@Home runs across multiple computers connected to a network."
+    - content: "Distributed"
+      isCorrect: true
+      explanation: "Correct! Folding@Home runs across multiple computers connected to a network, hence making it a distributed program."
+
+# Did I Get This block 2 has only intro statement and no visible graphic      
+# content: "Order the following abstractions in distributed programming from the smallest to the largest:"  
+
+# Did I Get This block 3
+  - content: "Which of the following statements is true in distributed programs?"
+    choices:
+    - content: "Threads, process, jobs, and applications all typically share memory."
+      isCorrect: false
+      explanation: "Incorrect. Processes, jobs, and applications do not share memory."
+    - content: "Threads that are part of a single process typically have access to the same memory space."
+      isCorrect: true
+      explanation: "Correct! Threads typically have access to the same memory."          
+    - content: "Threads and processes that are part of the same job typically have access to the same memory space."
+      isCorrect: false
+      explanation: "That's not quite right. Jobs may not have access to the same memory."
+    - content: "None of the above."
+      isCorrect: false
+      explanation: "That's not quite right. At least one of the options is true."

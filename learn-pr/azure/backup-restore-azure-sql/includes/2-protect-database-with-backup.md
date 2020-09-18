@@ -6,7 +6,7 @@ Here, you'll learn about Azure SQL Database backups and how to use them effectiv
 
 ## Storage for Azure SQL Database backups
 
-SQL Database automatically creates database backups. The backups are kept for 7 to 35 days. The retention time depends on the purchasing model and the service tier that you choose when you create your database. When the backups are complete, they're stored as blobs in a read-access geo-redundant storage (RA-GRS) account in your Azure subscription. To help protect against a datacenter outage, they're replicated to a paired datacenter.
+SQL Database automatically creates database backups. The backups are kept for 7 to 35 days. The retention time depends on the purchasing model and the service tier that you choose when you create your database. When the backups are complete, they're stored as blobs in a read-access geo-redundant storage (RA-GRS) account in your Azure subscription. RA-GRS accounts are replicated to a paired region, giving you protection from service impact in a region.
 
 Azure SQL Database uses SQL Server technology to make these types of backups:
 

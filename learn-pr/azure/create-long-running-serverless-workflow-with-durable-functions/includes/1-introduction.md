@@ -14,5 +14,5 @@ In this module, you will:
 
 ## Prerequisites
 
-- Practical experience with Azure Functions.
-- Practical experience with the Azure portal.
+- Experience with Azure Functions
+- Experience with the Azure portal

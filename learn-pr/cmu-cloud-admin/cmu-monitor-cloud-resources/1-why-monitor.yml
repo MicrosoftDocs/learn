@@ -1,0 +1,32 @@
+### YamlMime:ModuleUnit
+uid:  learn.cmu-cloud-admin.cmu-monitor-cloud-resources.1-why-monitor
+title: Why monitor
+metadata:
+  title: Why monitor
+  description: Why monitor
+  ms.date: 1/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/1-why-monitor.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Users are complaining that a Web site you deployed to the cloud has suddenly become very slow. Which of the following metrics might be helpful to you in resolving the problem?"
+      choices:
+      - content: "Bounce rate (the number of users who visit your site and immediately leave)"
+        isCorrect: false
+        explanation: "Incorrect. Request wait time is a common metric used to determine whether a server is overloaded."
+      - content: "Average length of time requests wait in the request queue"
+        isCorrect: true
+        explanation: "Correct! If a Web site seems slow, it is often because the Web server is receiving more traffic than it can handle. Request wait time is a common metric used to determine whether a server is overloaded."
+      - content: "Average page-load time"
+        isCorrect: false
+        explanation: "Incorrect. Request wait time is a common metric used to determine whether a server is overloaded. Poor performance can affect page load times, but pages sometimes load quickly even if the server takes a long time to respond to page requests. Page loads don't begin until after the server has responded."
+      - content: "Average number of pages visited by each user"
+        isCorrect: false
+        explanation: "Incorrect. Request wait time is a common metric used to determine whether a server is overloaded."

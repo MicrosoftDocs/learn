@@ -6,11 +6,13 @@ In this exercise, you'll create an Azure Cosmos DB Gremlin API account, database
 
 Start by creating the database in Azure, by adding an Azure Cosmos DB account that uses the Graph API.
 
-1. Browse to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), and sign in using the account that you used when you activated the sandbox.
+1. On the Azure portal menu, select **Create a resource**.
 
-1. Click **+ Create a resource**, then **Databases**, and then click **Azure Cosmos DB**.
+   ![Create a resource from Azure portal menu](../media/4-create-a-resource-azure-cosmos-db.png)
 
-   ![Screenshot showing creating a new Azure Cosmos DB Account](../media/5-create-cosmos-db.png)
+1. Select **Databases** > **Azure Cosmos DB**.
+
+   ![Select Azure Cosmos DB](../media/4-select-database-azure-cosmos-db.png)
 
 1. In the **Create Azure Cosmos DB Account** wizard, complete the **Basics** page with these values, and then click **Review + create**.
 
@@ -33,7 +35,7 @@ It might take a few minutes for Azure to create your new Azure Cosmos DB account
 
 ## Add a graph
 
-1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), click **All resources**, and then click the Cosmos database you created.
+1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), search for and select the Cosmos database you created.
 
 1. On the **Overview** tab, copy the value for the **Gremlin Endpoint**; you'll use this value when you create your application in the next section.
 
@@ -45,9 +47,9 @@ It might take a few minutes for Azure to create your new Azure Cosmos DB account
 
    | Setting| Suggested value | Description |
    | --- | --- | --- |
-   | **Database id** | `sample-database` | Enter **sample-database** as the name for the new database. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space. |
+   | **Database ID** | `sample-database` | Enter **sample-database** as the name for the new database. Database names must be between 1 and 255 characters, and cannot contain / \ # ? or a trailing space. |
    | **Throughput** | `400 RUs` | Change the throughput to **400** request units per second (RU/s). If you want to reduce latency, you can scale up the throughput later. |
-   | **Graph id** | `sample-graph` | Enter **sample-graph** as the name for your new collection. Graph names have the same character requirements as database IDs. |
+   | **Graph ID** | `sample-graph` | Enter **sample-graph** as the name for your new collection. Graph names have the same character requirements as database IDs. |
    | **Partition key** | `/name` | Enter **/name** as the partition key. |
 
    ![Screenshot showing creating a new Graph](../media/5-azure-cosmosdb-data-explorer-graph.png)

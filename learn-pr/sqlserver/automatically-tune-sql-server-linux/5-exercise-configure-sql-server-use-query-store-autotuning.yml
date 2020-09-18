@@ -5,13 +5,12 @@ metadata:
   title: Configure SQL Server to use Query Store and autotuning
   description: In this unit, you will set up Query Store and autotuning and then use Azure Data Studio to monitor the effect on performance.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 5
-## TODO: Update this when we have the correct Lab ID
-labId: 47218
+interactive: bash
+azureSandbox: true
 content: |
   [!include[](includes/5-exercise-configure-sql-server-use-query-store-autotuning.md)]

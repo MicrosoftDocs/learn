@@ -36,7 +36,7 @@ Let's use the Azure portal to create a new VM and install the extension.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true) with the same account and subscription you used in the previous exercise. We'll reuse the same resource group so we can delete both VMs at the same time.
 
-1. Select **Create a resource** from the left sidebar.
+1. On the Azure portal menu or the **home** page, select **Create a resource**.
 
 1. Select **Windows Server 2016 Datacenter** from the quick picklist.
 

@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.data-ai.intro-to-data-science-in-azure
+hidden: true
 metadata:
   title: Introduction to Data Science in Azure
-  description: Learn the Data Science process and the steps involved in detail.
+  description: Get acquainted with the Data Science process details, specialized roles, and the steps involved that reveal valuable insights.
   ms.date: 03/18/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  #ms.learn-contact: smmark
 title: Introduction to Data Science in Azure
 summary: In this module, you will learn about the Data Science process from end to end.  You will see that there are several specialized roles involved.
 abstract: |
@@ -21,6 +21,7 @@ levels:
 - beginner
 roles:
 - data-scientist
+- student
 products:
 - azure
 units:

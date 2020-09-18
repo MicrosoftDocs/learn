@@ -1,6 +1,6 @@
 You have learned the basics of creating and connecting to an Azure storage account. You wrote a simple application to connect to a storage account and create a blob container. Other modules in this Learning Path will build on that knowledge to show you how to use Blob Storage and Queues to store data and connect apps together.
 
-We only used examples of JavaScript and C#, but Azure supports a variety of other languages. Check the official [SDK Tools documentation page](https://docs.microsoft.com/azure/#pivot=sdkstools) to find the official list of links to the client libraries for all the currently supported languages.
+We only used examples of JavaScript and C#, but Azure supports a variety of other languages. Check the official [SDK Tools documentation page](/azure/sdks/) to find the official list of links to the client libraries for all the currently supported languages.
 
 ## Additional resources
 

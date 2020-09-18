@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.move-azure-resources-to-another-resource-group.assess-resources
+title: Assess resources that can move
+metadata:
+  title: Assess resources that can move
+  description: Assess resources that can move
+  ms.date: 12/23/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-assess-resources.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: Which one of these resource types can't be moved between resource groups?
+    choices:
+    - content: Azure Active Directory Domain Services
+      isCorrect: true
+      explanation: According to the move operation support list, Azure AD DS can't be moved. 
+    - content: Azure Storage accounts
+      isCorrect: false
+      explanation: According to the move operation support list, Azure Storage accounts can be moved.
+    - content: Azure virtual machines
+      isCorrect: false
+      explanation: According to the move operation support list, Azure virtual machines can be moved.
+  - content: Which one of these resource types can be moved across resource groups?
+    choices:
+    - content: Azure Backup vault
+      isCorrect: false
+      explanation: An Azure Backup vault can't be moved, according to the move operation support list. 
+    - content: Azure Application Gateway
+      isCorrect: false
+      explanation: You can't move Azure Application Gateway, according to the move operation support list. 
+    - content: Azure virtual networks  
+      isCorrect: true
+      explanation: You can move Azure virtual networks, according to the move operation support list. 
+  - content: When can you move a virtual machine?
+    choices:
+    - content: You can move virtual machines, but you have to first remove any network security groups. 
+      isCorrect: false
+      explanation: You don't need to remove the network security groups to be able to move your virtual machines. 
+    - content: You can move virtual machines, but you have to first make sure that you can move all of its dependent resources along with it. 
+      isCorrect: true
+      explanation: Your virtual machines have dependent resources without which they can't function properly. Make sure you move them together. 
+    - content: You can move virtual machines, but you have to first make sure that you can remove any SSD disks before attempting to move them. 
+      isCorrect: false
+      explanation: You can move virtual machines, regardless of whether the virtual machine has SSD or HDD disks attached. 

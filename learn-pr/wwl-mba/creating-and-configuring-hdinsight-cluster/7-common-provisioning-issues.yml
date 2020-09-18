@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.creating-and-configuring-hdinsight-cluster.7-common-provisioning-issues
+title: Common provisioning Issues
+metadata:
+  title: Common Provisioning Issues
+  description: Common Provisioning Issues
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 6
+content: |
+  [!include[](includes/7-common-provisioning-issues.md)]

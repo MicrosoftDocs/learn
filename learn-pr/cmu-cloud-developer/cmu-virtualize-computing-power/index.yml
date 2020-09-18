@@ -1,0 +1,56 @@
+### YamlMime:Module
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power
+metadata:
+  title: Virtualize computing power
+  description: Carnegie Mellon University's Cloud Developer course. Learn about how computing power is virtualized using virtual CPUs. Covers different types of CPU virtualization.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Virtualize computing power
+summary: Learn about how computing power is virtualized to create cloud resources. Covers different types of CPU virtualization.
+abstract: | 
+  In this module, you will:
+  - Distinguish between different modes of operations in various systems such as traditional operating systems and virtualized systems
+  - Identify the three main classes of system instructions
+  - Indicate the condition to enable efficient hypervisors
+  - Explain how a hypervisor can handle system traps
+  - Identify the difference between efficient hypervisors and hypervisors
+  - Describe why and when code patching is needed
+  - Recognize the dissimilarity between full virtualization and paravirtualization
+  - Explain the advantages and disadvantages of full virtualization and paravirtualization
+  - Identify the difference between emulation and direct native execution
+  - 'Recognize the two types of emulation: interpretation and binary translation'
+  - Explain some major interpretation and binary translation techniques
+  - Compare and contrast decode-and-dispatch, direct-threaded, and indirect-threaded interpreters
+  - Identify the difference in virtual CPU allocation between symmetric multiprocessing and uniprocessor virtual machines
+  - 'Describe the two major virtual CPU schedulers in Xen: Simple Earliest Deadline First and Credit Scheduler'
+    
+  In partnership with Dr. Majd Sakr and Carnegie Mellon University.
+prerequisites: |
+  - Understand what cloud computing is, including cloud service models, and common cloud providers
+  - Know the technologies that enable cloud computing
+  - Understand how cloud service providers pay for and bill for the cloud
+  - Know what datacenters are and why they exist
+  - Know how datacenters are set up, powered, and provisioned
+  - Understand how cloud resources are provisioned and metered
+  - Be familiar with the concept of virtualization
+  - Know what the different types of virtualization are
+iconUrl: /learn/achievements/cmu-cloud-developer/virtualize-computing-power.svg
+levels:
+- beginner
+roles:
+- developer
+- student
+products:
+- azure
+units:
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.0-introduction
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.1-instructions
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.2-full-virtualization
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.3-emulation
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.4-virtual-cpu
+- learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.5-summary
+badge:
+  uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.badge

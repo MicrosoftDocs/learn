@@ -12,7 +12,7 @@ Azure Load Balancer is a service you can use to distribute traffic across multip
 - **Source port**: The port of the requesting client.
 - **Destination IP**: The destination IP of the request.
 - **Destination port**: The destination port of the request.
-- **Protocol type**: The specified protocol type. For example, HTTP, HTTPS, HTTP/2.
+- **Protocol type**: The specified protocol type, TCP or UDP.
 
 ![A diagram that shows an overview of Azure Load Balancer](../media/2-load-balancer-distribution.svg)
 

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-arrays-operations.solution-1
+title: First solution
+metadata:
+  title: First solution
+  description: Review one possible solution to the first challenge in this module.
+  ms.date: 10/14/2019
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/6-solution-1.md)]

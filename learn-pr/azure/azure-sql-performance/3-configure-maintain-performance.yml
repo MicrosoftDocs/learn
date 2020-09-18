@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.azure-sql-performance.3-configure-maintain-performance
+metadata:
+  title: Configure and maintain performance
+  description: Configure and maintain performance
+  ms.date: 08/05/2020
+  author: rgward
+  ms.author: bobward
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure and maintain performance
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-configure-maintain-performance.md)]
+quiz:
+    title: "Knowledge check"
+    questions:
+    - content: "The number of files for tempdb is configurable for Azure SQL Database by which method?"
+      choices:
+      - content: "The T-SQL ALTER DATABASE statement"
+        isCorrect: false
+        explanation: "You can't modify the file properties for tempdb through T-SQL."
+      - content: "File properties in SQL Server Management Studio (SSMS)"
+        isCorrect: false
+        explanation: "File properties in SSMS use T-SQL, and therefore isn't supported."
+      - content: "Increasing the number of vCores through the Azure portal"
+        isCorrect: true
+        explanation: "Increasing the number of vCores can give you additional tempdb files."
+    - content: "You can configure I/O Performance for Azure SQL Database by which method?"
+      choices:
+      - content: "Place database files on Azure Premium Storage"
+        isCorrect: false
+        explanation: "Users don't have access for physical file placement with Azure SQL Database."
+      - content: "Choose a deployment option that meets your I/O requirements"
+        isCorrect: true
+        explanation: "Resource limits for specific deployment options have I/O performance commitments."
+      - content: "Place specific tables and indexes on different filegroups"
+        isCorrect: false
+        explanation: "You don't have access to create filegroups with Azure SQL Database."
+    - content: "How do you maintain indexes with Azure SQL?"
+      choices:
+      - content: "You can create, rebuild, and reorganize indexes in Azure SQL just like SQL Server"
+        isCorrect: true
+        explanation: "Azure SQL supports all options to create, rebuild, and reorganize indexes, just like SQL Server."
+      - content: "Use a specific deployment option that supports rebuilding indexes"
+        isCorrect: false
+        explanation: "All deployment options support rebuilding indexes."
+      - content: "Use an offline index rebuild because online index rebuilds aren't supported on Azure SQL"
+        isCorrect: false
+        explanation: "Azure SQL supports online and resumable index rebuilds."

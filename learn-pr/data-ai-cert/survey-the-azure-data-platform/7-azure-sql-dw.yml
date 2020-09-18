@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.survey-the-azure-data-platform.azure-sql-dw
-title: Understand Azure SQL Data Warehouse
+title: Understand Azure Synapse Analytics
 metadata:
-  title: Understand Azure SQL Data Warehouse
-  description: Understand Azure SQL Data Warehouse
+  title: Understand Azure Synapse Analytics
+  description: Understand Azure Synapse Analytics
   ms.date: 01/31/2019
   author: ctesta-oneillmsft
   ms.author: chris.testaoneill

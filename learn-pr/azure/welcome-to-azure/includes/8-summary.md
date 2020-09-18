@@ -2,7 +2,7 @@ Nice work! With your first website under your belt, you now have a sense of how 
 
 Azure provides services that can help transform the way your organization delivers new features to your users in ways you simply can't do without the power of the cloud.
 
-![A graduation cap representing the successful start of your learning journey](../media/7-heading.png)
+:::image type="icon" border="false" source="../media/7-heading.png":::
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 

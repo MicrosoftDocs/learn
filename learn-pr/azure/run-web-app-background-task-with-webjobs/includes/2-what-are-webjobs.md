@@ -18,7 +18,7 @@ Your WebJobs can be written as scripts of several different kinds including Wind
 
 Alternatively, you can write WebJobs using a framework such as Python or Node.js. In this application, however, you'll build a WebJob as a compiled console application by using Visual Studio. This approach enables you to use the WebJobs tools in Visual Studio to ease development. Visual Studio will automatically package and deploy the WebJob along with the web app.
 
-![WebJob Console App in Web App Project](../media/2-webjob-console-app.PNG)
+:::image type="content" source="../media/2-webjob-console-app.png" alt-text="WebJob Console App in Web App Project." loc-scope="vs":::
 
 Web Jobs written as part of a Visual Studio project can be deployed:
 

@@ -2,7 +2,7 @@
 uid: learn.student-evangelism.intro-to-python
 metadata:
   title: Introduction to Python
-  description: Learn how to write basic Python code, declare variables, and work with console input and output
+  description: Learn about the Python programming language, how to execute statements and scripts, declare variables, and create a basic Python app.
   ms.date: 04/30/2019
   author: ShanaMatthews
   ms.author: shanama
@@ -22,6 +22,7 @@ levels:
 - beginner
 roles:
 - developer
+- student
 products:
 - azure
 #- azure-notebook  # TODO: add to taxonomy

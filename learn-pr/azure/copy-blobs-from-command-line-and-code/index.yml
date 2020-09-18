@@ -3,15 +3,15 @@ uid: learn.azure.copy-blobs-from-command-line-and-code
 metadata:
   title: Copy and move blobs from one container or storage account to another from the command line and in code
   description: Learn how to utilize .NET Storage Client library, AzCopy, and Azure CLI utilities to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
-  ms.date: 05/06/2019
-  author: adrianstevens
-  ms.author: adsteven
+  ms.date: 01/27/2020
+  author: patridge
+  ms.author: adpatrid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Copy and move blobs from one container or storage account to another from the command line and in code
 summary: Use .NET, AzCopy, and Azure CLI to migrate files between Azure storage accounts.
-abstract: >
-  In this module, you will: |
+abstract: |
+  In this module, you will:
   - Identify when to use synchronous and asynchronous methods for transferring blobs
   - Copy and move blobs between Azure storage accounts using .NET Storage Client library
   - Copy and move blobs between Azure storage accounts using the Azure CLI

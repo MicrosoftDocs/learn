@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.publish-azure-web-app-with-azure-toolkit-intellij.3-exercise-create-web-app-intellij
+title: Exercise - Build a web app in IntelliJ IDEA
+metadata:
+  title: Exercise - Build a web app in IntelliJ IDEA
+  description: In this unit, you'll use the Azure Toolkit for IntelliJ to create a new web app project.
+  ms.date: 03/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-web-app-intellij.md)]

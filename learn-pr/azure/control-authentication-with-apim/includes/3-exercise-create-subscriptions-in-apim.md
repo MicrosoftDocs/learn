@@ -55,7 +55,7 @@ To save time, let's start by running a script to host our API in Azure. The scri
 The next step in this exercise is to create an API gateway in the Azure portal. In the next exercise, you'll use this gateway to publish your API.
 
 1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
-1. In the left menu, click **+ Create a resource**.
+1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 1. Click **Developer tools**, and then click **API Management**.
 1. In the **API Management service** page, enter the following details and then click **Create**:
 
@@ -79,7 +79,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 Once deployment has completed, import the Weather API into the API Management gateway:
 
-1. In the Azure portal, click **All Resources**, and then select your API gateway.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your API gateway.
 1. Under **API management**, click **APIs**.
 1. On the **Add a new API** page, click **OpenAPI**.
 1. On the **Create from OpenAPI specification** page, in the **OpenAPI specification** textbox, paste the Swagger JSON URL that you saved earlier in the exercise. When you tab out of the box, some of the other fields will be populated for you. This data is imported from the OpenAPI specification that Swagger created.

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Customize your XamarinForms apps/tweak-xamarin-froms-visual-with-effects</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-8.5%" y="-23.5%" width="117.0%" height="147.1%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0974923514 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Customize-your-XamarinForms-apps-1" transform="translate(-50.000000, -1060.000000)">
+            <g id="Customize-your-XamarinForms-apps/tweak-xamarin-froms-visual-with-effects" transform="translate(50.000000, 1060.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <path d="M25.3248129,22.8162177 C25.3882645,22.8099458 25.4548156,22.8099458 25.5184647,22.8162177 L33.4855114,22.8162177 C33.8381766,22.8235349 34.1802631,23.0278946 34.3563772,23.3348418 L47.8715142,47.4837069 C47.9395426,47.603103 47.983376,47.7361307 48.0000086,47.8726695 C48.0166516,47.7360986 48.0604435,47.6030612 48.128503,47.4837069 L61.6112918,23.3348418 C61.7929948,23.0185913 62.1511058,22.8131027 62.5143586,22.8162177 L70.4814078,22.8162177 C71.1868988,22.8224896 71.7152237,23.7134664 71.3846234,24.339706 L58.1922213,48.0023415 L71.3846234,71.6325618 C71.7465152,72.2623969 71.2051904,73.1946844 70.4814078,73.1884548 L62.5143586,73.1884548 C62.1447573,73.1853185 61.7845294,72.9656136 61.6112918,72.637415 L48.128503,48.4885505 C48.0604747,48.3691534 48.0166412,48.236116 48.0000086,48.0995869 C47.9833657,48.2361481 47.9395737,48.3692059 47.8715142,48.4885505 L34.3563772,72.637415 C34.188283,72.9563313 33.8443761,73.1739354 33.4855114,73.1884548 L25.5184647,73.1884548 C24.7946813,73.1947261 24.2535029,72.2623969 24.6153946,71.6325618 L37.8077926,48.0023415 L24.6153946,24.339706 C24.2991567,23.7683353 24.6849832,22.938175 25.3248129,22.8162177 L25.3248129,22.8162177 Z" id="Logo-path" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                    <g id="Group-8" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(24.500000, 28.811514)">
+                            <polygon id="Fill-414" fill="#5F707A" points="20.457 5.8285 26.542 5.8285 26.542 2.4685 20.457 2.4685"></polygon>
+                            <polygon id="Fill-415" fill="#5F707A" points="1.42108547e-13 8.3065 3.622 8.3065 3.622 2.7135 1.42108547e-13 2.7135"></polygon>
+                            <polygon id="Fill-416" fill="#5F707A" points="43.377 8.3065 47 8.3065 47 2.7135 43.377 2.7135"></polygon>
+                            <path d="M17.889,16.1675 C13.299,16.8535 8.71,16.7465 4.121,15.8445 C1.972,10.7145 1.108,5.7825 2.521,1.1145 C8.799,-0.3715 15.077,-0.3715 21.356,1.1145 C22.146,5.6355 20.274,10.7535 17.889,16.1675" id="Fill-417" fill="#DDDDD7"></path>
+                            <path d="M5.553,14.1615 C3.845,10.1775 3.173,6.3475 4.309,2.7155 C9.314,1.5595 14.319,1.5595 19.324,2.7155 C19.977,6.2355 18.521,10.2075 16.628,14.4085 C12.937,14.9545 9.245,14.8725 5.553,14.1615" id="Fill-418" fill="#374C5A"></path>
+                            <path d="M29.11,16.1675 C33.7,16.8535 38.289,16.7465 42.878,15.8445 C45.027,10.7145 45.891,5.7825 44.478,1.1145 C38.2,-0.3715 31.922,-0.3715 25.643,1.1145 C24.853,5.6355 26.725,10.7535 29.11,16.1675" id="Fill-419" fill="#DDDDD7"></path>
+                            <path d="M41.446,14.1615 C43.154,10.1775 43.826,6.3475 42.69,2.7155 C37.685,1.5595 32.68,1.5595 27.676,2.7155 C27.022,6.2355 28.478,10.2075 30.371,14.4085 C34.062,14.9545 37.754,14.8725 41.446,14.1615" id="Fill-420" fill="#374C5A"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

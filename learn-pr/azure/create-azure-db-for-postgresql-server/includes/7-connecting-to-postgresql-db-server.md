@@ -14,9 +14,9 @@ You also need to disable the **Enforce SSL connection** option.
 
 1. Navigate to the server resource for which you would like to create a firewall rule.
 
-1. Select the **Connection Security** option to open the connection security blade to the right.
+1. Select the **Connection Security** option to open the connection security pane to the right.
 
-    ![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/6-db-security-settings.png)
+    :::image type="content" source="../media/6-db-security-settings.png" alt-text="Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource pane.":::
 
 Recall that you want to allow access to PowerShell clients running `psql`.
 
@@ -42,7 +42,7 @@ Or, you can add a firewall rule to allow access to all IP addresses by adding a 
 1. In the Azure Cloud Shell on the right, connect `psql` to your server using the following command. Make sure to replace the server name and admin name.
 
     ```bash
-    psql --host=<server-name>.postgres.database.azure.com --username=<admin-user>@<server-name> --dbname=postgres
+    psql --host=$serverName.postgres.database.azure.com --username=$userName@$serverName --dbname=postgres
     ```
 
     Use the values you chose for the `server-name`, and `admin-user`.

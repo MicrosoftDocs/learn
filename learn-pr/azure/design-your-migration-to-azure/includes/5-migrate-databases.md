@@ -53,7 +53,7 @@ The assessment will generate a report on completion, including a set of recommen
 
 A Data Migration Assistant report looks like this:
 
-![Sample DMA Report](../media/5-dma-assessment.png)  
+:::image type="content" source="../media/5-dma-assessment.png" alt-text="Sample DMA Report." loc-scope="azure-database-migration"::: <!-- no-loc -->
 
 ### Migrate the schema by using the Data Migration Assistant
 
@@ -61,7 +61,7 @@ Each database has a schema that represents its entire structure. The schema defi
 
 To use the Data Migration Assistant to migrate the schema, create a new **Migration** project. Select your on-premises SQL Server instance as the source server, and your Azure SQL Database instance as the target server. Set the scope of the migration to **Schema Only**. After you connect to the source database, choose the schema objects to deploy to the new SQL database. The Data Migration Assistant will create a script to take the required actions. Then, select **Deploy Schema** to run the script. When the script is complete, check the target server to make sure the database has been configured correctly.
 
-![Screenshot of the Data Migration Assistant exporting a schema](../media/5-dma-migrate-schema.png)
+:::image type="content" source="../media/5-dma-migrate-schema.png" alt-text="Screenshot of the Data Migration Assistant exporting a schema." loc-scope="azure-database-migration":::
 
 ### Migrate your data with Database Migration Service
 

@@ -13,7 +13,7 @@ For example, let's say your configured throughput is 500 RUs per second (RU/s), 
 ## Review metrics for your database
 
 1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) by using your Microsoft Learn account.
-1. Search on Azure Cosmos DB.
+1. Search for and select **Azure Cosmos DB**.
 
    ![Screenshot that shows search in the Azure portal](../media/4-search-cosmos-db.png)
 
@@ -120,13 +120,18 @@ If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `C
 1. Reset your `ENDPOINT` and `KEY` variables by running the following commands.
 
     ```bash
-    export ENDPOINT=$(az cosmosdb list --resource-group <rgn>Sandbox Resource Group</rgn> \
-            --output tsv --query [0].documentEndpoint)
+    export ENDPOINT=$(az cosmosdb list \
+        --resource-group <rgn>[sandbox resource group name]</rgn> \
+        --output tsv \
+        --query [0].documentEndpoint)
     ```
 
     ```bash
-    export KEY=$(az cosmosdb list-keys --resource-group <rgn>Sandbox Resource Group</rgn>  \
-            --name $COSMOS_NAME --output tsv --query primaryMasterKey)
+    export KEY=$(az cosmosdb keys list \
+        --resource-group <rgn>[sandbox resource group name]</rgn>  \
+        --name $COSMOS_NAME \
+        --output tsv \
+        --query primaryMasterKey)
     ```
 
 ### Write a single document
@@ -134,7 +139,7 @@ If Azure Cloud Shell times out, you need to reset the `ENDPOINT`, `KEY`, and  `C
 1. In Cloud Shell, if you need to, change the directory to `ExerciseCosmosDB`.
 
     ```bash
-    cd mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
+    cd ~/mslearn-monitor-azure-cosmos-db/ExerciseCosmosDB
     ```
 
 1. Run the following command to insert a document into the **Orders** collection.

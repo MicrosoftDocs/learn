@@ -4,12 +4,11 @@ title: Inputs and Outputs
 metadata:
   title: Inputs and Outputs
   description: Inputs and Outputs
-  author: lnyswonger
+  author: patridge
+  ms.author: adpatrid
   ms.date: 09/24/2018
-  ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 10
 content: |
   [!include[](includes/3-inputs-and-outputs.md)]

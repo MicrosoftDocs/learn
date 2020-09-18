@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="102px" viewBox="0 0 102 102" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Foundations of Data Science/predict-classes-with-a-knn-classifier</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-8">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-9">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="99.5565878%" id="linearGradient-10">
+            <stop stop-color="#14C2D2" offset="0%"></stop>
+            <stop stop-color="#0396A4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-11">
+            <stop stop-color="#D02716" offset="0%"></stop>
+            <stop stop-color="#DA5C46" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Foundations-of-Data-Science-2" transform="translate(-159.000000, -1269.000000)">
+            <g id="Foundations-of-Data-Science/predict-classes-with-a-knn-classifier" transform="translate(160.000000, 1270.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-7)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <circle id="Oval" fill="url(#linearGradient-8)" cx="50" cy="51" r="17"></circle>
+                <path d="M50,81 C66.5685425,81 80,67.5685425 80,51 C80,34.4314575 66.5685425,21 50,21 C33.4314575,21 20,34.4314575 20,51 C20,67.5685425 33.4314575,81 50,81 Z" id="Oval" stroke="#FFFFFF" stroke-dasharray="3"></path>
+                <rect id="Rectangle" fill="url(#linearGradient-9)" x="38" y="51" width="6" height="6"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-9)" x="26" y="40" width="6" height="6"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-9)" x="50" y="24" width="6" height="6"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-9)" x="22" y="24" width="6" height="6"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-9)" x="13" y="51" width="6" height="6"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-9)" x="11" y="60" width="6" height="6"></rect>
+                <circle id="Oval" fill="url(#linearGradient-10)" cx="55" cy="53" r="3"></circle>
+                <polygon id="Path-104" fill="url(#linearGradient-11)" points="50 58 47 64 53 64"></polygon>
+                <polygon id="Path-104" fill="url(#linearGradient-11)" points="60 44 57 50 63 50"></polygon>
+                <polygon id="Path-104" fill="url(#linearGradient-11)" points="83 28 80 34 86 34"></polygon>
+                <polygon id="Path-104" fill="url(#linearGradient-11)" points="67 15 64 21 70 21"></polygon>
+                <polygon id="Path-104" fill="url(#linearGradient-11)" points="56 84 53 90 59 90"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

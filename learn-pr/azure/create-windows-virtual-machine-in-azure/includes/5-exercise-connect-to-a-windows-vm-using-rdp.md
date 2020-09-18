@@ -33,7 +33,7 @@ You can enter this information into the RDP client, or download a pre-configured
 
 1. Click the **Connect** button at the top of the pane.
 
-1. In the **Connect to virtual machine** blade, note the **IP address** and **Port number** settings, then click **Download RDP File** and save it to your computer.
+1. In the **Connect to virtual machine** pane, note the **IP address** and **Port number** settings, then click **Download RDP File** and save it to your computer.
 
 1. Before we connect, let's adjust a few settings. On Windows, find the file using Explorer, right-click and select **Edit**. On MacOS you will need to open the file first with the RDP client and then right-click on the item in the displayed list and select **Edit**.
 

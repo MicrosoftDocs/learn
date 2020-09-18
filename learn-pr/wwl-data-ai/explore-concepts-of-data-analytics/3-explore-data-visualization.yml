@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-concepts-of-data-analytics.explore-data-visualization
+title: Explore data visualization
+metadata:
+  title: Explore data visualization
+  description: "Explore data visualization"
+  ms.date: 08/31/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-explore-data-visualization.md)]

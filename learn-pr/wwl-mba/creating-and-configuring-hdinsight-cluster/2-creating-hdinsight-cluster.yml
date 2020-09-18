@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.creating-and-configuring-hdinsight-cluster.2-creating-a-hdinsight-cluster
+title: Creating an HDInsight cluster
+metadata:
+  title: 'Creating a HDInsight Cluster '
+  description: 'Creating a HDInsight Cluster '
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-creating-hdinsight-cluster.md)]

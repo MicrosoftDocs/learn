@@ -3,7 +3,7 @@ In this exercise we'll enrich the documentation a developer sees about our API b
 
 1. Examine the Swagger UI endpoint of our API by navigating to **API-ROOT-URL**/swagger in your browser. **API-ROOT-URL** is the value you saved in the preceding exercise for the URL of your API You should see output in the browser similar to the following, when  you select the **Get** method. 
 
-    ![Default Swagger UI for our API](../media/swagger-ui-initial.png)
+    :::image type="content" source="../media/swagger-ui-initial.png" alt-text="Default Swagger UI for our API." loc-scope="third-party":::
 
     Swagger UI gives us some useful information about the API. It shows the methods that you can call, in our simple case one method called **PriceFrame**. We see it is an HTTP Get operation and takes two required parameters, namely, Height and Width. You can also select **Try it out**, enter values for Height and Width and select **Execute** to see the API call in action. 
 
@@ -17,7 +17,7 @@ In this exercise we'll enrich the documentation a developer sees about our API b
     cd ~/code/PrintFramerAPI
     ```
 
-1. Open the Code editor window for the project using the following command.
+1. Open the Cloud Shell editor for the project using the following command.
 
     ```bash
     code .
@@ -54,17 +54,17 @@ In this exercise we'll enrich the documentation a developer sees about our API b
        // Register the Swagger generator, defining 1 or more Swagger documents
        services.AddSwaggerGen(c =>
        {
-           c.SwaggerDoc("v1", new Info
+           c.SwaggerDoc("v1", new OpenApiInfo
            {
                Version = "v1",
                Title = "PrintFramer API",
                Description = "Calculates the cost of a picture frame based on its dimensions.",
-               TermsOfService = "None",
-               Contact = new Contact
+               TermsOfService = new Uri("https://go.microsoft.com/fwlink/?LinkID=206977"),
+               Contact = new OpenApiContact
                {
                    Name = "Your name",
                    Email = string.Empty,
-                   Url = "https://www.microsoft.com/learn"
+                   Url = new Uri("https://www.microsoft.com/learn")
                }
            });
 
@@ -116,13 +116,13 @@ In this exercise we'll enrich the documentation a developer sees about our API b
 
 1. Look at the Swagger UI again at **API-ROOT-URL**/swagger and observe the added information provided by your XML comments. 
 
-    ![Swagger UI with more documentation from XML comments for our API](../media/swagger-ui-and-xml-comments.png)
+    :::image type="content" source="../media/swagger-ui-and-xml-comments.png" alt-text="Swagger UI with more documentation from XML comments for our API." loc-scope="third-party":::
 
 ## Add data annotations to your API
 
 You use attributes from the `System.ComponentModel.DataAnnotations` namespace, to enable Swagger to improve the documentation.
 
-1. In the API controller, add a `[Produces("text/plain")]` attribute to the controller, to show that our API supports a content type response for **text/plain**.
+1. In the API controller, **PriceFrameController.cs**, add a `[Produces("text/plain")]` attribute to the controller, to show that our API supports a content type response for **text/plain**.
 
     ```csharp
     [Produces("text/plain")]
@@ -194,6 +194,6 @@ So far, our API returns the status code 200 whether or not it could calculate a 
 
 1. Look at the Swagger UI again at **API-ROOT-URL**/swagger and observe the added information provided by these annotations. The final Swagger Ui for our API is shown in the following screenshot. 
 
-    ![Swagger UI with more documentation from XML comments for our API](../media/swagger-ui-final.png)
+    :::image type="content" source="../media/swagger-ui-final.png" alt-text="Swagger UI with more documentation from XML comments for our API." loc-scope="third-party":::
 
 In this exercise, we enriched the information that a developer receives about our API, making it much easier to consume. 

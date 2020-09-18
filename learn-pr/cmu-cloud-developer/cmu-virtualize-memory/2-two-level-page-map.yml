@@ -1,0 +1,36 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.2-two-level-page-map
+title: Two-level page mapping
+metadata:
+  title: Two-level page mapping
+  description: Two-level page mapping
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-two-level-page-map.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "Two-level page mapping, as employed by system memory virtualization, entails:"
+    choices:
+    - content: "Physical-to-real address translation"    
+      isCorrect: false
+      explanation: "Incorrect. Processes in guest OSs issue virtual addresses. Where is the two-level page mapping technique used, and what address spaces are involved?"
+    - content: "Virtual-to-real address translation"
+      isCorrect: false
+      explanation: "Incorrect. This is only a single level of mapping. In addition to this correct mapping, two-level page mapping still requires another level of mapping. Where is the two-level page mapping technique used, and what address spaces are involved?"
+    - content: "Real-to-physical address translation"
+      isCorrect: false
+      explanation: "Incorrect. Page tables in guest OSs perform virtual-to-real address translations. Where is the two-level page mapping technique used, and what address spaces are involved?"
+    - content: "Virtual-to-real and then real-to-physical address translations"
+      isCorrect: true
+      explanation: "Correct! Page tables in guest OSs perform virtual-to-real address translations, and page tables in the hypervisor (called real page tables) perform real-to-physical address translations. Two-level page mapping assumes a native virtualized system."      
+    - content: "Real-to-virtual address translation"
+      isCorrect: false
+      explanation: "Incorrect. Processes in guest OSs issue virtual addresses. Where is the two-level page mapping technique used, and what address spaces are involved?"
+    

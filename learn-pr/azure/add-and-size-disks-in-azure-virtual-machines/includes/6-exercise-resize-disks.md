@@ -50,7 +50,7 @@ The final step is to tell the OS about the available space. Just like the partit
 1. Although you can reserve a fixed public IP address for your VM, by default your VM receives a new public IP address when it is de-allocated and restarted. Run the following `az vm show` command to update your Bash variable with your VM's new public IP address.
 
     ```azurecli
-    ipaddress=$(az vm show --name support-web-vm01 -d --query [publicIps] --o tsv)
+    ipaddress=$(az vm show --name support-web-vm01 -d --query [publicIps] -o tsv)
     ```
 
 1. As you did earlier, run `lsblk` on your VM over SSH to understand its current state.

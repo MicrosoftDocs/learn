@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 01/31/2019
-  author: bcafferky
-  ms.author: brcaffer
+  author: GraemeMalcolm
+  ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX
@@ -40,15 +40,3 @@ quiz:
     - content: "Deep Learning VM which is configured to use GPUs."
       isCorrect: true
       explanation: "This is correct.  The DSVM includes all the software needed for training deep learning models and use graphic processor units (GPUs) which perform calculations much faster than standard CPUs."
-
-  - content: "Which Linux-Based version DSVM supports deep learning?"
-    choices: 
-    - content: "Ubuntu Linux DSVM"
-      isCorrect: true
-      explanation: "This is correct.  Only the Data Science VM running on Ubuntu supports deep learning."
-    - content: "CentOS Linux DSVM"
-      isCorrect: false
-      explanation: "This is not correct.  The Data Science VM running on CentOS does not include the tools for deep learning."
-    - content: "Fedora Linux DSVM"
-      isCorrect: false
-      explanation: "This is not correct.  A Fedora DSVM is not available."

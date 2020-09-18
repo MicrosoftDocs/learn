@@ -20,3 +20,140 @@ achievements:
   title: Authenticate browser-based apps with Azure App Services
   summary: Authenticate browser-based apps with Azure App Services
   iconUrl: /learn/achievements/authenticate-browser-based-apps-with-azure-app-services.svg
+- uid: learn.azure-intro-mobile-app-service.badge
+  type: badge
+  title: "Introduction to Mobile Apps in Azure App Service"
+  summary: "Introduction to Mobile Apps in Azure App Service"
+  iconUrl: /learn/achievements/azure-intro-mobile-app-service.svg
+- uid: learn-wwl.learn-business-value-of-azure.trophy
+  type: trophy
+  title: Learn the business value of Microsoft Azure
+  summary: Learn the business value of Microsoft Azure
+  iconUrl: /learn/achievements/azure-sfa-generalist-path.svg
+- uid: learn-wwl.microsoft-cloud-adoption-framework-for-azure.badge
+  type: badge
+  title: Microsoft Cloud Adoption Framework for Azure
+  summary: Microsoft Cloud Adoption Framework for Azure
+  iconUrl: /learn/achievements/microsoft-cloud-adoption-framework-for-azure.svg
+- uid: learn-wwl.cloud-operating-model.badge
+  type: badge
+  title: Overview of the Microsoft Cloud Operating Model
+  summary: Overview of the Microsoft Cloud Operating Model
+  iconUrl: /learn/achievements/cloud-operating-model.svg
+- uid: learn-wwl.welcome-to-the-azure-generalist.badge
+  type: badge
+  title: Welcome to Microsoft Azure
+  summary: Welcome to Microsoft Azure
+  iconUrl: /learn/achievements/welcome-azure-generalist.svg
+- uid: learn-wwl.introduction-to-azure-areas-and-solutions.badge
+  type: badge
+  title: Introduction to Azure solutions
+  summary: Introduction to Azure solutions
+  iconUrl: /learn/achievements/intro-to-azure-areas-and-solutions.svg
+- uid: learn-xamarin.university-veteran.badge
+  type: badge
+  title: Xamarin University Veteran
+  summary: Prior student of Xamarin University
+  iconUrl: /learn/achievements/xamarin/xamarin-university-veteran-badge.svg
+- uid: learn.secure-access-azure-ad-multi-factor-authentication.badge
+  type: badge
+  title: Secure your Azure resources with Conditional Access
+  summary: Secure your Azure resources with Conditional Access
+  iconUrl: /learn/achievements/secure-azure-resources-with-conditional-access.svg
+- uid: learn.azure-services-features.badge
+  type: badge
+  title: Tour Azure services and features
+  summary: Tour Azure services and features
+  iconUrl: /learn/achievements/tour-azure-portal-features.svg
+- uid: learn.create-neural-network-with-dsvm.badge
+  type: badge
+  title: Create a neural network with DSVM
+  summary: Create a neural network with DSVM
+  iconUrl: /learn/achievements/create-neural-network-with-dsvm.svg
+# HACK: Adding achievement from UID that was never meant to be published, but was earned by 280+ folks anyway.
+- uid: learn.cert.administer-infrastructure-resources-in-azure.trophy
+  type: trophy
+  title: Administer infrastructure resources in Azure
+  summary: Administer infrastructure resources in Azure
+  iconUrl: /learn/achievements/generic-trophy.svg
+# HACK: Adding achievement from UID that was never meant to be published, but was earned by 280+ folks anyway.
+- uid: learn.cert.administer-compute-resources-in-azure.trophy
+  type: trophy
+  title: Administer compute resources in Azure
+  summary: Administer compute resources in Azure
+  iconUrl: /learn/achievements/generic-trophy.svg
+- uid: learn.data-ai.build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.badge
+  type: badge
+  title: Build an FAQ chatbot with QnA Maker and Azure Bot Service
+  summary: Build an FAQ chatbot with QnA Maker and Azure Bot Service
+  iconUrl: /learn/achievements/data-ai/build-a-faq-chat-bot-with-qna-maker-and-azure-bot-service.svg
+- uid: learn.architect-great-solutions-in-azure.trophy
+  type: trophy
+  title: Architect great solutions in Azure
+  summary: Architect great solutions in Azure
+  iconUrl: /learn/achievements/architect-great-solutions-in-azure.svg
+- uid: learn.pillars-of-a-great-azure-architecture.badge
+  type: badge
+  title: Pillars of a great Azure architecture
+  summary: Pillars of a great Azure architecture
+  iconUrl: /learn/achievements/pillars-of-a-great-azure-architecture.svg
+- uid: learn.design-for-availability-and-recoverability.badge
+  type: badge
+  title: Design for availability and recoverability in Azure
+  summary: Design for availability and recoverability in Azure
+  iconUrl: /learn/achievements/design-for-availability-and-recoverability-in-azure.svg
+- uid: learn.design-for-efficiency-and-operations.badge
+  type: badge
+  title: Design for efficiency and operations in Azure
+  summary: Design for efficiency and operations in Azure
+  iconUrl: /learn/achievements/design-for-efficiency-and-operations-in-azure.svg
+- uid: learn.design-for-performance-and-scalability.badge
+  type: badge
+  title: Design for performance and scalability in Azure
+  summary: Design for performance and scalability in Azure
+  iconUrl: /learn/achievements/design-for-performance-and-scalability-in-azure.svg
+- uid: learn.design-for-security.badge
+  type: badge
+  title: Design for security in Azure
+  summary: Design for security in Azure
+  iconUrl: /learn/achievements/design-for-security-in-azure.svg
+- uid: learn.data-ai.convert-speech-to-text.badge
+  type: badge
+  title: Transcribe speech in real time with Azure Cognitive Services
+  summary: Transcribe speech in real time with Azure Cognitive Services
+  iconUrl: /learn/achievements/data-ai/convert-speech-to-text.svg
+- uid: learn.data-ai.translate-speech-with-speech-services.trophy
+  type: trophy
+  title: Process and translate speech with Azure Cognitive Speech Services
+  summary: Process and translate speech with Azure Cognitive Speech Services
+  iconUrl: /learn/achievements/data-ai/translate-speech-with-speech-services.svg
+- uid: learn.introduction-to-classification.badge
+  type: badge
+  title: Predict categories with machine learning classification
+  summary: Predict categories with machine learning classification
+  iconUrl: /learn/achievements/introduction-to-classification.svg
+- uid: learn.unsupervised-learning.badge
+  type: badge
+  title: Use unsupervised learning to analyze unlabeled data
+  summary: Use unsupervised learning to analyze unlabeled data
+  iconUrl: /learn/achievements/introduction-to-unsupervised-learning.svg
+- uid: learn.deep-learning.badge
+  type: badge
+  title: Use deep learning models to make predictions about specialized data
+  summary: Use deep learning models to make predictions about specialized data
+  iconUrl: /learn/achievements/introduction-to-deep-learning.svg
+- uid: learn.neural-networks.badge
+  type: badge
+  title: Make predictions from complex data with neural networks
+  summary: Make predictions from complex data with neural networks
+  iconUrl: /learn/achievements/introduction-to-neural-networks.svg
+- uid: learn.ml-crash-course.trophy
+  type: trophy
+  title: Machine learning crash course
+  summary: Machine learning crash course
+  iconUrl: /learn/achievements/ml-crash-course.svg
+- uid: learn.introduction-to-regression.badge
+  type: badge
+  title: Predict numeric values with regression
+  summary: Predict numeric values with regression
+  iconUrl: /learn/achievements/introduction-to-regression.svg

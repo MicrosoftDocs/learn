@@ -109,7 +109,7 @@ Identify the subtasks of *Deploy Azure virtual machines from VHD templates*
       - Images can be created in a variety of ways:
         - Via the Portal
         Open the Azure portal.
-          - In the menu on the left, select Virtual machines and then select the VM from the list.
+          - On the Azure portal menu or from the Home page, select Virtual machines and then select the VM from the list.
           - In the Virtual machine page for the VM, on the upper menu, select Capture.
           - The Create Image page appears.
           - For Name, either accept the pre-populated name or enter a name that you would like to use for the image.

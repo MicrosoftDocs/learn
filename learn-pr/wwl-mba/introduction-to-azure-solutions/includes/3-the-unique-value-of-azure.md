@@ -13,7 +13,7 @@ With more than 1,000 new capabilities added in the last year, Azure is growing t
 
 |  |  |
 | ------------ | -------------| 
-|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about how Azure makes developers and IT professionals future ready by providing services and capabilities today and tomorrows.|
+|![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about how Azure makes developers and IT professionals future ready by providing services and capabilities today and tomorrow.|
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3RSD3]
 
 ## Build on your terms
@@ -43,6 +43,6 @@ Azure provides a safe and secure environment that you can trust, as evidenced by
 |![Icon indicating play video](../media/video-icon.png)|Watch this video to learn more about Azure as the *trusted* cloud.|
 >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE3RVet]
 
-In summary, Azure provides unique capability to Invent with Purpose by providing a future ready platform, the abilty to build on your terms, seamless hybrid cloud soltuions, and a cloud you can trust. Your organization can digitally transform and achieve your business objectives.
+In summary, Azure provides unique capability to Invent with Purpose by providing a future ready platform, the ability to build on your terms, seamless hybrid cloud solutions, and a cloud you can trust. Your organization can digitally transform and achieve your business objectives.
 
 We’ll continue to explore the unique Azure differentiators as we dive into Azure solutions and services.

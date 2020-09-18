@@ -24,7 +24,7 @@ A product road map is hard to build. It’s a balancing act of finding the right
 
 ## What does a road map look like?
 
-The final form of your road map could be represented in many different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's [a spreadsheet](https://github.com/msft4startups/learn-modules/raw/master/product_module/ProductRoadmapTemplate.xlsx) or document, or stored in a specialized road map tool.
+The final form of your road map could be represented in many different ways. Sometimes it's a wall of Post It notes in your office showing your plan for the product, other times it's a spreadsheet or document, or stored in a specialized road map tool.
 
 ![A product road map](../media/story.png)
 

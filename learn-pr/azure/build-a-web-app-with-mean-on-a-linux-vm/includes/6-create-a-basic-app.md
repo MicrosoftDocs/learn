@@ -6,7 +6,7 @@ The web application you'll see here demonstrates many concepts that apply to mos
 
 Here's what the Books web application will look like.
 
-![A web page with a form and submission button.](../media/6-book-page.png)
+![Screenshot of a web page with a form and submission button.](../media/6-book-page.png)
 
 Here's how each component of the MEAN stack fits in.
 
@@ -438,10 +438,10 @@ You're now ready to test out your Node.js web application!
 
     You see the index page, which includes a web form.
 
-    ![A screenshot of the book web page with a form and submission button.](../media/6-book-page.png)
+    ![Screenshot of the book web page with a form and submission button.](../media/6-book-page.png)
 
     Try adding a few books to the database. Each time you add a book, the page updates the complete list of books.
 
-    ![A screenshot of the book web page with sample data populated](../media/6-book-sample-entries.png)
+    ![Screenshot of the book web page with sample data populated.](../media/6-book-sample-entries.png)
 
     You can also click the **Delete** button to delete a book from the database.

@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.migrate-onpremises-workloads-azure.migrate-onprem-vms
+title: Migrate on-premises virtual machines
+metadata:
+  title: Migrate on-premises virtual machines
+  description: "Migrate on-premises virtual machines"
+  ms.date: 03/02/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-migrate-on-premises-virtual-machines.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "During replication, what does a status of **Protected** indicate for a virtual machine?"
+    choices:
+    - content: "Critical issues have been encountered for the VM during replication."
+      isCorrect: false
+      explanation: "A critical issue relates to the VM’s replication health, not the replication status. A critical or warning value in the replication health column indicates there were issues causing replication cycles to fail."
+    - content: "The VM state is healthy and is ready for migration."
+      isCorrect: false
+      explanation: "A status of Protected indicates the initial replication is complete and replication data has been uploaded to a replication storage account. It doesn’t refer to the health of the VM, which is displayed in a separate column."
+    - content: "Initial replication is complete and delta replication can begin."
+      isCorrect: true
+      explanation: "Correct. When the machine status is protected, initial replication is complete, replication data has been uploaded to a replication storage account, and delta replication can begin. You can also perform a test migration when initial replication is complete."
+  - content: "What happens to a Hyper-V VM during delta replication?"
+    choices:
+    - content: "VHDs on the VM are replicated one-by-one until they are all copied to Azure."
+      isCorrect: false
+      explanation: "Replication and copying of VHDs happens during initial replication, not during delta replication."
+    - content: "Incremental changes to on-premises disks are periodically replicated to Azure."
+      isCorrect: true
+      explanation: "Correct. The Recovery Services agent periodically updates replication logs with delta replication changes to an Azure storage account."
+    - content: "A Hyper-V VM snapshot is created, and disk changes are tracked using Hyper-V Replica."
+      isCorrect: false
+      explanation: "This process happens during the initial replication phase, not during delta replication. The snapshot is deleted before delta replication begins."

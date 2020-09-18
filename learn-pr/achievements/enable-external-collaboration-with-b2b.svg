@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Azure Solution Architect - Authentication and Authorization/enable-secure-external-collaboration-for-your-applications-with-azure-ad-b2b</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-20.0%" y="-20.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-4" cx="10" cy="10" r="10"></circle>
+        <filter x="-24.7%" y="-24.7%" width="149.5%" height="154.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-20.0%" y="-20.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-7">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-8" cx="10" cy="10" r="10"></circle>
+        <filter x="-24.7%" y="-24.7%" width="149.5%" height="154.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-20.0%" y="-20.0%" width="140.0%" height="140.0%" filterUnits="objectBoundingBox" id="filter-11">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-12" cx="10" cy="10" r="10"></circle>
+        <filter x="-25.0%" y="-23.5%" width="150.0%" height="147.1%" filterUnits="objectBoundingBox" id="filter-14">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <circle id="path-15" cx="10" cy="10" r="10"></circle>
+        <filter x="-5.0%" y="-5.0%" width="110.0%" height="120.0%" filterUnits="objectBoundingBox" id="filter-16">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-25.0%" y="-21.6%" width="150.0%" height="145.9%" filterUnits="objectBoundingBox" id="filter-17">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.102921196 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Azure-Solution-Architect---Authentication-and-Authorization" transform="translate(-50.000000, -460.000000)">
+            <g id="Azure-Solution-Architect---Authentication-and-Authorization/enable-secure-external-collaboration-for-your-applications-with-azure-ad-b2b" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <path d="M48.1282051,30 L48.1282051,70.3076172" id="Path-2" stroke="#FFFFFF" stroke-width="1.5" mask="url(#mask-2)"></path>
+                    <path d="M37.5141464,43.0686258 L37.9679505,65.5654255" id="Path-2" stroke="#FFFFFF" stroke-width="1.5" mask="url(#mask-2)" transform="translate(37.741048, 54.317026) rotate(70.000000) translate(-37.741048, -54.317026) "></path>
+                    <path d="M57.5141464,43.0686258 L57.9679505,65.5654255" id="Path-2" stroke="#FFFFFF" stroke-width="1.5" mask="url(#mask-2)" transform="translate(57.741048, 54.317026) scale(-1, 1) rotate(70.000000) translate(-57.741048, -54.317026) "></path>
+                    <g id="Person" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(13.000000, 52.000000)">
+                            <mask id="mask-5" fill="white">
+                                <use xlink:href="#path-4"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="#0078D4" fill-rule="evenodd" xlink:href="#path-4"></use>
+                            <g id="Person" filter="url(#filter-6)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-5)">
+                                <g transform="translate(2.058824, 4.117647)">
+                                    <path d="M7.79411765,13.5294118 C6.73691176,13.5294118 5.88235294,12.6344118 5.88235294,11.5277451 L5.88235294,5.5277451 C5.88235294,4.42441176 6.73691176,3.52941176 7.79411765,3.52941176 C8.84941176,3.52941176 9.70588235,4.42441176 9.70588235,5.5277451 L9.70588235,11.5277451 C9.70588235,12.6344118 8.84941176,13.5294118 7.79411765,13.5294118" id="Fill-304" fill="#E6E6E6"></path>
+                                    <path d="M7.79411765,8.52941176 C5.43715686,8.52941176 3.52941176,6.61882353 3.52941176,4.26470588 C3.52941176,1.91058824 5.43715686,0 7.79411765,0 C10.1468137,0 12.0588235,1.91058824 12.0588235,4.26470588 C12.0588235,6.61882353 10.1468137,8.52941176 7.79411765,8.52941176 Z" id="Fill-305" fill="#FFFFFF"></path>
+                                    <path d="M3.72938266,5.55908528 C4.50216717,6.64459578 5.77075201,7.35294118 7.20588235,7.35294118 C9.55857843,7.35294118 11.4705882,5.44235294 11.4705882,3.08823529 C11.4705882,2.63779887 11.4005878,2.20360048 11.2708937,1.79591703 C11.7669253,2.49279471 12.0588235,3.34489445 12.0588235,4.26470588 C12.0588235,6.61882353 10.1468137,8.52941176 7.79411765,8.52941176 C5.88889738,8.52941176 4.27719907,7.28101461 3.72938266,5.55908528 Z" id="Combined-Shape" fill="#E6E6E6"></path>
+                                    <path d="M7.95043751,9.60819571 C4.28657643,9.60819571 1.17222423,12.3145192 0.00855834372,16.078784 L15.8909113,16.078784 C14.7286508,12.3145192 11.6128932,9.60819571 7.95043751,9.60819571 Z" id="Fill-307" fill="#FFFFFF"></path>
+                                    <path d="M8.59100346,9.60819571 L5.29411765,16.078784 L15.8823529,16.078784 C14.7944637,12.475139 11.9640138,9.86245561 8.59100346,9.60819571" id="Fill-321" fill="#E6E6E6"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Person" filter="url(#filter-7)" mask="url(#mask-2)">
+                        <g transform="translate(38.000000, 67.000000)">
+                            <mask id="mask-9" fill="white">
+                                <use xlink:href="#path-8"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="#0078D4" fill-rule="evenodd" xlink:href="#path-8"></use>
+                            <g id="Person" filter="url(#filter-10)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-9)">
+                                <g transform="translate(2.058824, 4.117647)">
+                                    <path d="M7.79411765,13.5294118 C6.73691176,13.5294118 5.88235294,12.6344118 5.88235294,11.5277451 L5.88235294,5.5277451 C5.88235294,4.42441176 6.73691176,3.52941176 7.79411765,3.52941176 C8.84941176,3.52941176 9.70588235,4.42441176 9.70588235,5.5277451 L9.70588235,11.5277451 C9.70588235,12.6344118 8.84941176,13.5294118 7.79411765,13.5294118" id="Fill-304" fill="#E6E6E6"></path>
+                                    <path d="M7.79411765,8.52941176 C5.43715686,8.52941176 3.52941176,6.61882353 3.52941176,4.26470588 C3.52941176,1.91058824 5.43715686,0 7.79411765,0 C10.1468137,0 12.0588235,1.91058824 12.0588235,4.26470588 C12.0588235,6.61882353 10.1468137,8.52941176 7.79411765,8.52941176 Z" id="Fill-305" fill="#FFFFFF"></path>
+                                    <path d="M3.72938266,5.55908528 C4.50216717,6.64459578 5.77075201,7.35294118 7.20588235,7.35294118 C9.55857843,7.35294118 11.4705882,5.44235294 11.4705882,3.08823529 C11.4705882,2.63779887 11.4005878,2.20360048 11.2708937,1.79591703 C11.7669253,2.49279471 12.0588235,3.34489445 12.0588235,4.26470588 C12.0588235,6.61882353 10.1468137,8.52941176 7.79411765,8.52941176 C5.88889738,8.52941176 4.27719907,7.28101461 3.72938266,5.55908528 Z" id="Combined-Shape" fill="#E6E6E6"></path>
+                                    <path d="M7.95043751,9.60819571 C4.28657643,9.60819571 1.17222423,12.3145192 0.00855834372,16.078784 L15.8909113,16.078784 C14.7286508,12.3145192 11.6128932,9.60819571 7.95043751,9.60819571 Z" id="Fill-307" fill="#FFFFFF"></path>
+                                    <path d="M8.59100346,9.60819571 L5.29411765,16.078784 L15.8823529,16.078784 C14.7944637,12.475139 11.9640138,9.86245561 8.59100346,9.60819571" id="Fill-321" fill="#E6E6E6"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Person" filter="url(#filter-11)" mask="url(#mask-2)">
+                        <g transform="translate(63.000000, 52.000000)">
+                            <mask id="mask-13" fill="white">
+                                <use xlink:href="#path-12"></use>
+                            </mask>
+                            <use id="Mask" stroke="none" fill="#0078D4" fill-rule="evenodd" xlink:href="#path-12"></use>
+                            <g id="Person" filter="url(#filter-14)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" mask="url(#mask-13)">
+                                <g transform="translate(2.058824, 4.117647)">
+                                    <path d="M7.79411765,13.5294118 C6.73691176,13.5294118 5.88235294,12.6344118 5.88235294,11.5277451 L5.88235294,5.5277451 C5.88235294,4.42441176 6.73691176,3.52941176 7.79411765,3.52941176 C8.84941176,3.52941176 9.70588235,4.42441176 9.70588235,5.5277451 L9.70588235,11.5277451 C9.70588235,12.6344118 8.84941176,13.5294118 7.79411765,13.5294118" id="Fill-304" fill="#E6E6E6"></path>
+                                    <path d="M7.79411765,8.52941176 C5.43715686,8.52941176 3.52941176,6.61882353 3.52941176,4.26470588 C3.52941176,1.91058824 5.43715686,0 7.79411765,0 C10.1468137,0 12.0588235,1.91058824 12.0588235,4.26470588 C12.0588235,6.61882353 10.1468137,8.52941176 7.79411765,8.52941176 Z" id="Fill-305" fill="#FFFFFF"></path>
+                                    <path d="M3.72938266,5.55908528 C4.50216717,6.64459578 5.77075201,7.35294118 7.20588235,7.35294118 C9.55857843,7.35294118 11.4705882,5.44235294 11.4705882,3.08823529 C11.4705882,2.63779887 11.4005878,2.20360048 11.2708937,1.79591703 C11.7669253,2.49279471 12.0588235,3.34489445 12.0588235,4.26470588 C12.0588235,6.61882353 10.1468137,8.52941176 7.79411765,8.52941176 C5.88889738,8.52941176 4.27719907,7.28101461 3.72938266,5.55908528 Z" id="Combined-Shape" fill="#E6E6E6"></path>
+                                    <path d="M7.95043751,9.60819571 C4.28657643,9.60819571 1.17222423,12.3145192 0.00855834372,16.078784 L15.8909113,16.078784 C14.7286508,12.3145192 11.6128932,9.60819571 7.95043751,9.60819571 Z" id="Fill-307" fill="#FFFFFF"></path>
+                                    <path d="M8.59100346,9.60819571 L5.29411765,16.078784 L15.8823529,16.078784 C14.7944637,12.475139 11.9640138,9.86245561 8.59100346,9.60819571" id="Fill-321" fill="#E6E6E6"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" mask="url(#mask-2)">
+                        <g transform="translate(38.000000, 10.000000)">
+                            <g id="Oval">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-16)" xlink:href="#path-15"></use>
+                                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-15"></use>
+                            </g>
+                            <g id="azure-active-directory-icon" stroke-width="1" fill-rule="evenodd" transform="translate(3.000000, 3.000000)">
+                                <ellipse id="Oval" fill="#0078D4" cx="7.11864407" cy="2" rx="1.89830508" ry="2"></ellipse>
+                                <ellipse id="Oval" fill="#0078D4" cx="7.11864407" cy="12" rx="1.89830508" ry="2"></ellipse>
+                                <rect id="Rectangle" fill="#0078D4" x="6.6440678" y="3.5" width="1.4" height="8.5"></rect>
+                                <ellipse id="Oval" fill="#0078D4" cx="12.1016949" cy="7.5" rx="1.89830508" ry="2"></ellipse>
+                                <ellipse id="Oval" fill="#0078D4" cx="1.89830508" cy="7.5" rx="1.89830508" ry="2"></ellipse>
+                                <polygon id="Rectangle" fill="#0078D4" transform="translate(9.728814, 5.000000) rotate(-40.000000) translate(-9.728814, -5.000000) " points="9.35014213 0.851806757 10.3203036 0.826769272 10.107485 9.14819324 9.1373235 9.17323073"></polygon>
+                                <polygon id="Rectangle" fill="#0078D4" transform="translate(4.508475, 5.000000) scale(-1, 1) rotate(-40.000000) translate(-4.508475, -5.000000) " points="4.12980315 0.851806757 5.09996463 0.826769272 4.88714601 9.14819324 3.91698452 9.17323073"></polygon>
+                                <polygon id="Rectangle" fill="#0078D4" transform="translate(9.491525, 9.250000) scale(1, -1) rotate(-56.000000) translate(-9.491525, -9.250000) " points="9.09965834 5.16031364 10.0837585 5.13674117 9.88339251 13.3396864 8.89929234 13.3632588"></polygon>
+                                <polygon id="Rectangle" fill="#0078D4" transform="translate(4.745763, 9.250000) scale(-1, -1) rotate(-56.000000) translate(-4.745763, -9.250000) " points="4.35389563 5.16031364 5.3379958 5.13674117 5.13762979 13.3396864 4.15352963 13.3632588"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Shield" filter="url(#filter-17)" mask="url(#mask-2)">
+                        <g transform="translate(40.000000, 39.000000)">
+                            <path d="M7.90588235,0.576470588 C6.37096993,2.30818824 3.66745098,2.88235294 0.585620915,2.88235294 L0.585620915,7.49411765 C0.585620915,12.2488471 2.72665098,15.3087529 7.90588235,17.8705882 C13.0848209,15.3087529 15.2261438,12.2488471 15.2261438,7.49411765 L15.2261438,2.88235294 C12.1446065,2.88235294 9.44079477,2.30818824 7.90588235,0.576470588" id="Fill-22" fill="#7CB65A"></path>
+                            <path d="M7.90588235,0.576470588 L7.90588235,12.3941176 C5.9024732,12.3941176 4.26419869,10.8693529 4.11398693,8.93529412 C4.10666667,9.0307 4.09934641,9.12610588 4.09934641,9.22352941 C4.09934641,11.0463294 5.42197124,12.5656176 7.17414902,12.9014118 C7.59462484,12.9821176 7.90588235,13.3311706 7.90588235,13.7528588 L7.90588235,17.8705882 C13.0848209,15.3087529 15.2261438,12.2488471 15.2261438,7.49411765 L15.2261438,2.88235294 C12.1446065,2.88235294 9.44079477,2.30818824 7.90588235,0.576470588" id="Fill-23" fill="#629E3F"></path>
+                            <path d="M1.17124183,3.44412353 L1.17124183,7.48864118 C1.17124183,11.9554235 3.12721569,14.7928118 7.90588235,17.2229235 C12.684549,14.7928118 14.6405229,11.9554235 14.6405229,7.48864118 L14.6405229,3.44412353 C11.5622065,3.36975882 9.34768105,2.69528824 7.90588235,1.39217647 C6.46408366,2.69528824 4.24955817,3.36975882 1.17124183,3.44412353 Z M7.90588235,18.4470588 C7.81569673,18.4470588 7.72580392,18.4265941 7.64293856,18.3856647 C2.28597124,15.7344765 0,12.4754 0,7.48864118 L0,2.87457059 C0,2.55607059 0.262065359,2.29781176 0.585620915,2.29781176 C3.95704052,2.29781176 6.20699608,1.60777647 7.46461699,0.188217647 C7.68715294,-0.0628352941 8.12461176,-0.0628352941 8.34714771,0.188217647 C9.60476863,1.60777647 11.8547242,2.29781176 15.2261438,2.29781176 C15.5494065,2.29781176 15.8117647,2.55607059 15.8117647,2.87457059 L15.8117647,7.48864118 C15.8117647,12.4754 13.5257935,15.7344765 8.16882614,18.3856647 C8.08596078,18.4265941 7.99606797,18.4470588 7.90588235,18.4470588 L7.90588235,18.4470588 Z" id="Fill-24" fill="#629E3F"></path>
+                            <path d="M11.7124183,8.64705882 C11.7124183,10.7163 10.0082614,12.3941176 7.90588235,12.3941176 C5.80350327,12.3941176 4.09934641,10.7163 4.09934641,8.64705882 C4.09934641,6.57781765 5.80350327,4.9 7.90588235,4.9 C10.0082614,4.9 11.7124183,6.57781765 11.7124183,8.64705882" id="Fill-25" fill="#FFFFFE"></path>
+                            <path d="M10.0767791,7.08655294 C9.84809412,6.86144118 9.47710327,6.86144118 9.24871111,7.08655294 L7.31850458,8.9866 L6.62132288,8.30636471 C6.60463268,8.28330588 6.58764967,8.26024706 6.56627451,8.23949412 C6.33758954,8.01438235 5.96659869,8.01438235 5.73820654,8.23949412 C5.51157124,8.46172353 5.51010719,8.82201765 5.73205752,9.04770588 L5.72503007,9.05462353 L6.90622745,10.2075647 C7.13491242,10.4326765 7.50590327,10.4326765 7.73458824,10.2075647 L10.0750222,7.90312353 C10.0756078,7.90283529 10.0761935,7.90225882 10.0767791,7.90168235 C10.3054641,7.67657059 10.3054641,7.31108824 10.0767791,7.08655294" id="Fill-26" fill="#7CB65A"></path>
+                        </g>
+                    </g>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

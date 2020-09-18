@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.process-streaming-data-azure-databricks-structured-streaming.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/15/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 5
+quiz:
+  questions:
+  - content: "When doing a write stream command, what does the `outputMode(\"append\")` option do?"
+    choices:
+    - content: "The append mode allows records to be updated and changed in place"
+      isCorrect: false
+      explanation: "The append mode allows records to be added to the output sink. Using the update mode will allow updated records to be changed in place."
+    - content: "The append outputMode allows records to be added to the output sink"
+      isCorrect: true
+      explanation: "The outputMode \"append\" option informs the write stream to add only new records to the output sink. The \"complete\" option is to rewrite the full output - applicable to aggregations operations. Finally, the \"update\" option is for updating changed records in place."
+    - content: "The append mode replaces existing records and updates aggregates"
+      isCorrect: false
+      explanation: "The append mode allows records to be added to the output sink. It does not replace existing records and update aggregates."
+  - content: "In Spark Structured Streaming, what method should be used to read streaming data into a DataFrame?"
+    choices:
+    - content: "spark.readStream"
+      isCorrect: true
+      explanation: "Use the `spark.readStream` method to start reading data from a streaming query into a DataFrame."
+    - content: "spark.read"
+      isCorrect: false
+      explanation: "Use the `spark.readStream` method to start reading data from a streaming query into a DataFrame. `spark.read` is used for batch and interactive queries."
+    - content: "spark.stream.read"
+      isCorrect: false
+      explanation: "Use the `spark.readStream` method to start reading data from a streaming query into a DataFrame."
+  - content: "What happens if the command `option(\"checkpointLocation\", pointer-to-checkpoint directory)` is not specified?"
+    choices:
+    - content: "It will not be possible to create more than one streaming query that uses the same streaming source since they will conflict"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "The streaming job will function as expected since the `checkpointLocation` option does not exist"
+      isCorrect: false
+      explanation: "Incorrect."
+    - content: "When the streaming job stops, all state around the streaming job is lost, and upon restart, the job must start from scratch"
+      isCorrect: true
+      explanation: "Setting the `checkpointLocation` is required for many sinks used in Structured Streaming. For those sinks where this setting is optional, keep in mind that when you do not set this value, you risk losing your place in the stream."

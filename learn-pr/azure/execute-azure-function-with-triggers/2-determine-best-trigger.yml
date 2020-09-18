@@ -5,11 +5,10 @@ metadata:
   title: Determine the best trigger for your Azure function 
   description: Determine the best trigger for your Azure function 
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
   [!include[](includes/2-determine-best-trigger.md)]

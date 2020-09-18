@@ -166,7 +166,7 @@ Now that our service is running on Azure Functions, we need to point our drone a
 
 1. With the site redeployed, refresh your page and you should see that it updated.
 
-    ![Screenshot of the redeployed Drone Delivery website](../media/7-web-site-after.png)
+    :::image type="content" source="../media/7-web-site-after.png" alt-text="Screenshot of the redeployed Drone Delivery website." loc-scope="other":::
 
 ## Test the performance of the new architecture
 
@@ -176,7 +176,7 @@ Now that we've moved the resource-constrained service to a microservice that run
 
 1. The first attempt might give similar results to the monolithic application. Refresh the page, and resubmit the request if prompted. Do this step several times, and you should see **100 messages sent in 1 second**.
 
-    ![Screenshot of performance of the Drone Delivery site after moving to a microservices architecture](../media/7-web-site-fast.png)
+    :::image type="content" source="../media/7-web-site-fast.png" alt-text="Screenshot of performance of the Drone Delivery site after moving to a microservices architecture." loc-scope="other":::
 
 The initial attempt was slower while the function app started up. After it was up and running, the response time was significantly better than when this code was running in the monolithic architecture. 
 

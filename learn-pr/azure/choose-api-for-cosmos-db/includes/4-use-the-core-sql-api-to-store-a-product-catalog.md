@@ -1,4 +1,4 @@
-You've decided to look at how the new project is going store the catalog for your customer facing e-commerce site. The sales team is likely to need support for adding new product categories quickly. The team had issues in the past as the old system that was using a relational database was too structured. Any necessary changes to add properties to products required downtime to update the table schemas, queries, and databases.
+You've decided to look at how the new project is going to store the catalog for your customer facing e-commerce site. The sales team is likely to need support for adding new product categories quickly. The team had issues in the past as the old system that was using a relational database was too structured. Any necessary changes to add properties to products required downtime to update the table schemas, queries, and databases.
 
 A flat, denormalized table was being used, which also lead to many columns being empty. The database needs to store products in a way that will enable filtering data based on the category where the products are located.
 

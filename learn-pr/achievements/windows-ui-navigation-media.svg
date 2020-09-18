@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="105px" height="100px" viewBox="0 0 105 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.2 (15855) - http://www.bohemiancoding.com/sketch -->
+    <title>creating-ui-2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="68" height="68" rx="48"></rect>
+        <rect id="path-3" x="0" y="0" width="68" height="68" rx="48"></rect>
+        <rect id="path-5" x="0" y="0" width="96" height="96" rx="48"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="creating-ui-navigating" sketch:type="MSLayerGroup" transform="translate(2.000000, 2.000000)">
+            <g id="Badges">
+                <g id="Application-Foundations">
+                    <g id="Application-Foundations/creating-ui">
+                        <g id="Mask">
+                            <g id="mask-2" fill="#FFFFFF" sketch:type="MSShapeGroup">
+                                <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+                            </g>
+                            <g id="BG" fill="#55A2FF" sketch:type="MSShapeGroup">
+                                <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+                            </g>
+                            <g id="window" transform="translate(0.000000, 3.000000)">
+                                <mask id="mask-2" sketch:name="path-1" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g id="path-1"></g>
+                                <g id="Phone" mask="url(#mask-2)">
+                                    <g transform="translate(13.458333, 10.625000)" id="windowapp">
+                                        <g transform="translate(0.000000, 0.000000)">
+                                            <g id="Phone-BG" transform="translate(3.355263, 3.541667)" sketch:type="MSShapeGroup">
+                                                <rect id="Rectangle" stroke="#000000" fill="#FFFFFE" x="1.77635684e-15" y="-1.77635684e-15" width="35.7894737" height="36.125"></rect>
+                                                <rect id="Rectangle" fill="#E1E4E1" x="1.77635684e-15" y="-1.77635684e-15" width="35.7894737" height="36.125"></rect>
+                                                <rect id="Rectangle" fill="#546670" x="1.77635684e-15" y="-1.77635684e-15" width="35.7894737" height="2.83333333"></rect>
+                                                <rect id="Rectangle" fill="#435665" x="17.8947368" y="-1.77635684e-15" width="17.8947368" height="2.83333333"></rect>
+                                            </g>
+                                            <g id="Text" transform="translate(10.065789, 29.750000)" sketch:type="MSShapeGroup">
+                                                <rect id="Rectangle" fill="#E1E4E1" x="0" y="0" width="22.3684211" height="2.125" rx="1.5"></rect>
+                                                <path d="M11.1842105,0 L20.6907895,0 C21.6173198,-1.07793879e-16 22.3684211,0.475697453 22.3684211,1.0625 L22.3684211,1.0625 C22.3684211,1.64930254 21.6173198,2.125 20.6907895,2.125 L11.1842105,2.125 L11.1842105,0 L11.1842105,0 Z" id="Rectangle" fill="#BEC4BE"></path>
+                                                <rect id="Rectangle" fill="#E1E4E1" x="0" y="4.25" width="22.3684211" height="2.125" rx="1.5"></rect>
+                                                <path d="M11.1842105,4.25 L20.6907895,4.25 C21.6173198,4.25 22.3684211,4.72569746 22.3684211,5.3125 L22.3684211,5.3125 C22.3684211,5.89930254 21.6173198,6.375 20.6907895,6.375 L11.1842105,6.375 L11.1842105,4.25 L11.1842105,4.25 Z" id="Rectangle" fill="#BEC4BE"></path>
+                                            </g>
+                                            <g id="Text" transform="translate(10.065789, 8.500000)" sketch:type="MSShapeGroup">
+                                                <rect id="Rectangle" fill="#E1E4E1" x="0" y="0" width="22.3684211" height="2.125" rx="1.5"></rect>
+                                                <path d="M11.1842105,0 L20.6907895,0 C21.6173198,-1.07793879e-16 22.3684211,0.475697453 22.3684211,1.0625 L22.3684211,1.0625 C22.3684211,1.64930254 21.6173198,2.125 20.6907895,2.125 L11.1842105,2.125 L11.1842105,0 L11.1842105,0 Z" id="Rectangle" fill="#BEC4BE"></path>
+                                            </g>
+                                            <path d="M21.25,26.2083333 L31.875,26.2083333 C32.1838435,26.2083333 32.4342105,26.3668991 32.4342105,26.5625 L32.4342105,26.5625 C32.4342105,26.7581009 32.1838435,26.9166667 31.875,26.9166667 L21.25,26.9166667 L21.25,26.2083333 L21.25,26.2083333 Z" id="Rectangle" fill="#BEC4BE" sketch:type="MSShapeGroup"></path>
+                                            <path d="M21.25,27.625 L31.875,27.625 C32.1838435,27.625 32.4342105,27.7835658 32.4342105,27.9791667 L32.4342105,27.9791667 C32.4342105,28.1747675 32.1838435,28.3333333 31.875,28.3333333 L21.25,28.3333333 L21.25,27.625 L21.25,27.625 Z" id="Rectangle" fill="#BEC4BE" sketch:type="MSShapeGroup"></path>
+                                            <rect id="Rectangle" fill="#DF5142" sketch:type="MSShapeGroup" x="10.0657895" y="26.2083333" width="8.94736842" height="2.125" rx="0.5"></rect>
+                                            <rect id="Rectangle" fill="#7CB65A" sketch:type="MSShapeGroup" x="10.0657895" y="12.75" width="8.94736842" height="2.125" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#69994E" sketch:type="MSShapeGroup" x="23.4868421" y="12.75" width="8.94736842" height="2.125" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#C5CCCD" sketch:type="MSShapeGroup" x="10.0657895" y="15.5833333" width="3.35526316" height="4.25" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#546670" sketch:type="MSShapeGroup" x="10.0657895" y="20.5416667" width="3.35526316" height="4.25" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#DF5142" sketch:type="MSShapeGroup" x="15.6578947" y="15.5833333" width="3.35526316" height="9.20833333" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#69994E" sketch:type="MSShapeGroup" x="23.4868421" y="15.5833333" width="8.94736842" height="9.20833333" rx="1"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="window-copy" transform="translate(28.000000, 26.000000)">
+                                <mask id="mask-4" sketch:name="path-1" fill="white">
+                                    <use xlink:href="#path-3"></use>
+                                </mask>
+                                <g id="path-1"></g>
+                                <g id="Phone" mask="url(#mask-4)">
+                                    <g transform="translate(13.458333, 10.625000)" id="Group">
+                                        <g>
+                                            <g id="Phone-BG" transform="translate(3.355263, 3.541667)" sketch:type="MSShapeGroup">
+                                                <rect id="Rectangle" stroke="#000000" fill="#FFFFFE" x="7.10542736e-15" y="0" width="35.7894737" height="36.125"></rect>
+                                                <rect id="Rectangle" fill="#E1E4E1" x="7.10542736e-15" y="0" width="35.7894737" height="36.125"></rect>
+                                                <rect id="Rectangle" fill="#546670" x="7.10542736e-15" y="0" width="35.7894737" height="2.83333333"></rect>
+                                                <rect id="Rectangle" fill="#435665" x="17.8947368" y="0" width="17.8947368" height="2.83333333"></rect>
+                                            </g>
+                                            <g id="Text" transform="translate(10.065789, 29.750000)" sketch:type="MSShapeGroup">
+                                                <rect id="Rectangle" fill="#E1E4E1" x="0" y="0" width="22.3684211" height="2.125" rx="1.5"></rect>
+                                                <path d="M11.1842105,0 L20.6907895,0 C21.6173198,-1.07793879e-16 22.3684211,0.475697453 22.3684211,1.0625 L22.3684211,1.0625 C22.3684211,1.64930254 21.6173198,2.125 20.6907895,2.125 L11.1842105,2.125 L11.1842105,0 L11.1842105,0 Z" id="Rectangle" fill="#BEC4BE"></path>
+                                                <rect id="Rectangle" fill="#E1E4E1" x="0" y="4.25" width="22.3684211" height="2.125" rx="1.5"></rect>
+                                                <path d="M11.1842105,4.25 L20.6907895,4.25 C21.6173198,4.25 22.3684211,4.72569746 22.3684211,5.3125 L22.3684211,5.3125 C22.3684211,5.89930254 21.6173198,6.375 20.6907895,6.375 L11.1842105,6.375 L11.1842105,4.25 L11.1842105,4.25 Z" id="Rectangle" fill="#BEC4BE"></path>
+                                            </g>
+                                            <g id="Text" transform="translate(10.065789, 8.500000)" sketch:type="MSShapeGroup">
+                                                <rect id="Rectangle" fill="#E1E4E1" x="0" y="0" width="22.3684211" height="2.125" rx="1.5"></rect>
+                                                <path d="M11.1842105,0 L20.6907895,0 C21.6173198,-1.07793879e-16 22.3684211,0.475697453 22.3684211,1.0625 L22.3684211,1.0625 C22.3684211,1.64930254 21.6173198,2.125 20.6907895,2.125 L11.1842105,2.125 L11.1842105,0 L11.1842105,0 Z" id="Rectangle" fill="#BEC4BE"></path>
+                                            </g>
+                                            <path d="M21.25,26.2083333 L31.875,26.2083333 C32.1838435,26.2083333 32.4342105,26.3668991 32.4342105,26.5625 L32.4342105,26.5625 C32.4342105,26.7581009 32.1838435,26.9166667 31.875,26.9166667 L21.25,26.9166667 L21.25,26.2083333 L21.25,26.2083333 Z" id="Rectangle" fill="#BEC4BE" sketch:type="MSShapeGroup"></path>
+                                            <path d="M21.25,27.625 L31.875,27.625 C32.1838435,27.625 32.4342105,27.7835658 32.4342105,27.9791667 L32.4342105,27.9791667 C32.4342105,28.1747675 32.1838435,28.3333333 31.875,28.3333333 L21.25,28.3333333 L21.25,27.625 L21.25,27.625 Z" id="Rectangle" fill="#BEC4BE" sketch:type="MSShapeGroup"></path>
+                                            <rect id="Rectangle" fill="#DF5142" sketch:type="MSShapeGroup" x="10.0657895" y="26.2083333" width="8.94736842" height="2.125" rx="0.5"></rect>
+                                            <rect id="Rectangle" fill="#7CB65A" sketch:type="MSShapeGroup" x="10.0657895" y="12.75" width="8.94736842" height="2.125" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#69994E" sketch:type="MSShapeGroup" x="23.4868421" y="12.75" width="8.94736842" height="2.125" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#C5CCCD" sketch:type="MSShapeGroup" x="10.0657895" y="15.5833333" width="3.35526316" height="4.25" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#546670" sketch:type="MSShapeGroup" x="10.0657895" y="20.5416667" width="3.35526316" height="4.25" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#DF5142" sketch:type="MSShapeGroup" x="15.6578947" y="15.5833333" width="3.35526316" height="9.20833333" rx="1"></rect>
+                                            <rect id="Rectangle" fill="#69994E" sketch:type="MSShapeGroup" x="23.4868421" y="15.5833333" width="8.94736842" height="9.20833333" rx="1"></rect>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Sparkle-Clipped" transform="translate(1.000000, 0.000000)">
+                                <mask id="mask-6" sketch:name="path-1" fill="white">
+                                    <use xlink:href="#path-5"></use>
+                                </mask>
+                                <g id="path-1"></g>
+                                <path d="M31.1963016,74.2026007 C31.1963016,68.4785163 26.5840851,63.8662998 20.8600006,63.8662998 C26.5840851,63.8662998 31.1963016,59.2540833 31.1963016,53.5299988 C31.1963016,59.2540833 35.8085181,63.8662998 41.5326025,63.8662998 C35.8085181,63.8662998 31.1963016,68.4785163 31.1963016,74.2026007 L31.1963016,74.2026007 Z M76.1969275,26.0984637 C70.050769,26.0984637 65.0984637,21.1461585 65.0984637,15 C65.0984637,21.1461585 60.1461585,26.0984637 54,26.0984637 C60.1461585,26.0984637 65.0984637,31.050769 65.0984637,37.1969275 C65.0984637,31.050769 70.050769,26.0984637 76.1969275,26.0984637 L76.1969275,26.0984637 Z" id="Sparkle" opacity="0.949999988" fill="#FFFFFF" sketch:type="MSShapeGroup" mask="url(#mask-6)"></path>
+                            </g>
+                        </g>
+                        <g id="Azure-Border" stroke="#0078D4" stroke-width="4" sketch:type="MSShapeGroup">
+                            <rect id="Rectangle-path" x="0" y="0" width="96" height="96" rx="48"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

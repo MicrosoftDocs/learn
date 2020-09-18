@@ -4,11 +4,10 @@ metadata:
   title: Create a function that is triggered by a webhook
   description: Create a function that is triggered by a webhook
   ms.date: 04/30/2019
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Create a function that is triggered by a webhook
 durationInMinutes: 4
 content: |

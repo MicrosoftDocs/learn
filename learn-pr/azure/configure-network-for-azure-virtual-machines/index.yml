@@ -2,7 +2,7 @@
 uid: learn.configure-the-network-for-your-virtual-machines
 metadata:
   title: Configure the network for your virtual machines
-  description: You will learn how external services communicate to virtual machines and other Azure resources, either over the internet or by using dedicated private connections. You will cover how to connect your local on-premises networks into Azure using virtual networks, VPN gateways, and Azure ExpressRoute.
+  description: Learn how to connect your local on-premises networks into Azure using virtual networks, VPN gateways, and Azure ExpressRoute.
   ms.date: 09/24/2018
   author: cwatson-cat
   ms.author: cwatson

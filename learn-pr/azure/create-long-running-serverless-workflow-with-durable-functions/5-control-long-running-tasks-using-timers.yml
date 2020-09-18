@@ -5,11 +5,10 @@ metadata:
   title: Control long-running tasks using timers
   description: Control long-running tasks using timers
   ms.date: 04/24/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 6
 content: |
   [!include[](includes/5-control-long-running-tasks-using-timers.md)]

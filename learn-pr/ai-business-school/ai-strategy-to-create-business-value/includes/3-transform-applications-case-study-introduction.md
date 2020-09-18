@@ -1,6 +1,6 @@
 ## Abstract
 
-Telefónica is one of the world’s largest telecommunications companies. Like all telecommunications companies, it has been hit by digital disruption and changing customer preferences. This case study describes how Telefónica used AI to transform its relationships with customers, ultimately increasing customer loyalty and satisfaction. Its AI platform improves the customer experience and provides customers with more choice about how to consume its products and services with a new technology that offers voice UI in real-time, using cognitive intelligence for deeper personalization.
+Telefónica is one of the world's largest telecommunications companies. Like all telecommunications companies, it has been hit by digital disruption and changing customer preferences. This case study describes how Telefónica used AI to transform its relationships with customers, ultimately increasing customer loyalty and satisfaction. Its AI platform improves the customer experience and provides customers with more choice about how to consume its products and services with a new technology that offers voice UI in real-time, using cognitive intelligence for deeper personalization.
 
 ## Industry context
 :::row:::
@@ -10,7 +10,7 @@ Telefónica is one of the largest telecommunications companies in the world, ope
 At the closing of 2018 Telefónica had over 356 million customers, including 271 million mobile customers, over 13 million fiber and cable customers, and almost 8 million pay-TV customers. In 2018 Telefónica earned 48,693 million euros in revenue, with a net profit of 3,331 million euros.
 :::column-end:::
 :::column span="2":::
-![Situation of Telefónica at the closing of 2018 with number of customers](../media/1-2-1-A-Telefonica-case-study-introduction.jpg)
+![Situation of Telefónica at the closing of 2018 with number of customers. 8 million pay-TV customers, 271 million mobile customers, 13 million fiber and cable customers.](../media/1-2-1-A-Telefonica-case-study-introduction.jpg)
 :::column-end:::
 :::row-end:::
 
@@ -25,7 +25,7 @@ Telefónica has strong market share in its core markets. Being exposed to multip
 Telefónica began its transformation in 2010, when it committed to a massive digitalization project to make its platforms intelligent and modernize the business. To make use of its treasure-trove of existing data, Telefónica created a cognitive platform that incorporates information about core connectivity assets, unified IT systems, and products and services offered to users. Over the last few years, the company has also branched out into added-value media and internet services.
 :::column-end:::
 :::column span="2":::
-![The challenges for Telefónica were digital disruption, changing customer preferences, and economic vulnerabilities](../media/1-2-1-B-Telefonica-case-study-introduction.jpg)
+![The challenges for Telefónica were digital disruption, changing customer preferences, and economic vulnerabilities.](../media/1-2-1-B-Telefonica-case-study-introduction.jpg)
 :::column-end:::
 :::row-end:::
 
@@ -38,4 +38,4 @@ Telefónica began its transformation in 2010, when it committed to a massive dig
 5. How could Telefónica manage product releases to ensure the lowest possible number of customers experienced problems, and ensure any problems were fixed as soon as possible?
 6. How could Telefónica use AI to capitalize on its strengths – a broad customer base, large percentage of market share, and a high degree of customer loyalty?
 
-Now that you’ve gained context on the challenges Telefónica faces today, and considered critical questions to answer before implementing AI, watch the executive perspective video with Chema Alonso, Telefónica’s Chief Data Officer.
+Now that you've gained context on the challenges Telefónica faces today, and considered critical questions to answer before implementing AI, watch the executive perspective video with Chema Alonso, Telefónica's Chief Data Officer.

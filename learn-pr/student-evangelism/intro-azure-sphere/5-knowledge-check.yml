@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-azure-sphere.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: In this section, we create interactive questions that validate if the learner has understood the learning objectives
+  ms.date: 04/14/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 5 # dummy number at present
+content: |
+quiz:
+  questions:
+  - content: "Which feature of Azure Sphere would you use to manage legacy (brownfield) devices?"
+    choices:
+    - content: "The Linux based operating system of Azure Sphere"
+      isCorrect: false
+      explanation: "The operating system is a part of the overall security solution but is not uniquely responsible for securing legacy devices"
+    - content: "The crossover microcontroller unit(MCU)"
+      isCorrect: false
+      explanation: "The crossover microcontroller unit is a part of the overall security solution but is not uniquely responsible for securing legacy devices"
+    - content: "The Guardian module"
+      isCorrect: true
+      explanation: "Legacy IoT devices are supported through the Guardian modules. Guardian Modules are implemented as a hardware solution and support connections to the Azure Sphere Security Service for security checks and automated patching. They also connect to Brownfield devices through device-specific protocols."
+  - content: "The Azure Sphere platform is designed around the seven properties of highly secured devices. Collectively, what are the seven principles designed to achieve"
+    choices:
+    - content: "The seven properties of highly secured devices are designed to secure the hardware, software and the Cloud connection – thereby providing end-to-end / holistic security"
+      isCorrect: true
+      explanation: "The Azure Sphere platform is designed around the seven properties to secure the entire hardware, software and the Cloud environment."
+    - content: "The seven properties of highly secured devices are designed to secure legacy devices. Legacy devices offer the greatest threat for IoT devices"
+      isCorrect: false
+      explanation: "Support for legacy devices is part of the Azure Sphere platform – but not the entire focus of the platform"
+    - content: "The seven properties of highly secured devices are designed for supporting safe data transmission from IoT devices"
+      isCorrect: false
+      explanation: "Support for safe data transmission is part of the focus for the Azure Sphere platform – but not the entire focus of the platform"
+  - content: "Identify the feature of Azure Sphere that ensures that your products are running the most up-to-date Azure Sphere OS."
+    choices:
+    - content: "Azure Sphere Security broadcast"
+      isCorrect: false
+      explanation: "“Azure Sphere Security broadcast” is not a feature of Azure Sphere"
+    - content: "Azure Sphere Security Service"
+      isCorrect: true
+      explanation: "The Azure Sphere Security Service supports authentication, software update, and failure reporting over secured cloud-to-device and device-to-cloud channels. The result is a secured communications infrastructure that ensures that your products are running the most up-to-date Azure Sphere OS."
+    - content: "Azure Sphere Software updates"
+      isCorrect: false
+      explanation: "“Azure Sphere Software updates” is not a user managed feature of Azure Sphere"
+    
+    

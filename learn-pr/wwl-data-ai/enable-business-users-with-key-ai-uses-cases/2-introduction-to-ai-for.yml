@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.enable-business-users-with-key-ai-uses-cases.introduction-to-ai-for
+title: Introduction to AI for business users
+metadata:
+  title: Introduction to AI for business users
+  description: "Introduction to AI for business users"
+  ms.date: 08/05/2020
+  author: wwlpublish
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-introduction-to-ai-for.md)]

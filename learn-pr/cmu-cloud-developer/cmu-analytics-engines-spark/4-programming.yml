@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-spark.4-programming
+title: Programming in Spark
+metadata:
+  title: Programming in Spark
+  description: Programming in Spark
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-programming.md)]

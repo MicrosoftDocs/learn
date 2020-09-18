@@ -1,0 +1,68 @@
+### YamlMime:ModuleUnit
+uid: learn.improve-reliability-introduction.3-modern-operations
+title: "Modern operations"
+metadata:
+  title: "Modern operations"
+  description: "What are the modern operations practices of site reliability engineering (SRE) and DevOps and why they can help us with reliability challenges."
+  ms.date: 05/07/2020
+  author: dnblankedelman
+  ms.author: dnb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-modern-operations.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: 'Which of these modern operations practices has a specific focus on the continuous delivery of value to end users?'
+    choices:
+    - content: 'DevOps'
+      isCorrect: true
+      explanation: 'Correct, this is part of one of the definitions for DevOps.'
+    - content: 'site reliability engineering (SRE)'
+      isCorrect: false
+      explanation: 'SRE focuses more on reliability than delivery.'
+
+  - content: 'Which of these things is not a core part of the engineering culture of DevOps?'
+    choices:
+    - content: 'learning'
+      isCorrect: false
+      explanation: 'Learning is part of the engineering culture of DevOps.'
+    - content: 'time management'
+      isCorrect: true
+      explanation: 'Time management is not a core part of the engineering culture of DevOps.'
+    - content: 'ownership'
+      isCorrect: false
+      explanation: 'Ownership is part of the engineering culture of DevOps.'
+    - content: 'collaboration'
+      isCorrect: false
+      explanation: 'Collaboration is part of the engineering culture of DevOps.'
+
+  - content: 'Which of these practices are common to both DevOps and SRE?'
+    choices:
+    - content: 'monitoring/observability'
+      isCorrect: false
+      explanation: 'This is one of the common practices, but there are more.'
+    - content: 'proper incident response'
+      isCorrect: false
+      explanation: 'This is one of the common practices, but there are more.'
+    - content: 'automation'
+      isCorrect: false
+      explanation: 'This is one of the common practices, but there are more.'
+    - content: 'collaboration'
+      isCorrect: false
+      explanation: 'This is one of the common practices, but there are more.'
+    - content: 'all of the above'
+      isCorrect: true
+      explanation: 'Correct.'
+
+  - content: 'Which of these modern operations practices focuses primarily on reliability?'
+    choices:
+    - content: 'DevOps'
+      isCorrect: false
+      explanation: 'DevOps (for some definitions) focuses more on delivery.'
+    - content: 'site reliability engineering'
+      isCorrect: true
+      explanation: 'Correct.'

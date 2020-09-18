@@ -1,0 +1,82 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-economics.2-economics-users
+title: Economics of cloud computing for users
+metadata:
+  title: Economics for users
+  description: The economics of cloud computing for users.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-economics-users.md)]
+# Unit has questions only from Learn By Doing block - remove from visibility
+#quiz:
+#  title: Check your knowledge
+#  questions:
+#
+# learn by doing block question 1
+#    - content: "A business with 200 employees wants to replace its legacy email system with a new solution. Using an in-house solution, the business will need to purchase two servers (for failover redundancy) at $5,000 each, a storage array at $20,000, and one-time software purchase fees totaling about $2,000. In addition, it has to account for yearly costs of power and real estate ($5,000), software support subscriptions ($1,000), and IT personnel ($10,000). What is the total capital expenditure (CapEx)?"
+#      choices:
+#      - content: "$0"
+#        isCorrect: false
+#        explanation: "Incorrect. CapEx includes upfront costs, but not operational costs."
+#      - content: "$16,000"
+#        isCorrect: false
+#        explanation: "Incorrect. CapEx includes upfront costs, but not operational costs."
+#      - content: "$20,000"
+#        isCorrect: false
+#        explanation: "Incorrect. CapEx includes upfront costs, but not operational costs."
+#      - content: "$32,000"
+#        isCorrect: true
+#        explanation: "Correct! CapEx includes upfront costs, but not operational costs."
+#
+# learn by doing block question 2
+#    - content: "A business with 200 employees wants to replace its legacy email system with a new solution. Using an in-house solution, the business will need to purchase two servers (for failover redundancy) at $5,000 each, a storage array at $20,000, and one-time software purchase fees totaling about $2,000. In addition, it has to account for yearly costs of power and real estate ($5,000), software support subscriptions ($1,000), and IT personnel ($10,000). What is the yearly operational expenditure (OpEx)?"
+#      choices:
+#      - content: "$0"
+#        isCorrect: false
+#        explanation: "Incorrect. OpEx includes operational costs, but not upfront costs."
+#      - content: "$16,000 "
+#        isCorrect: true
+#        explanation: "Correct! OpEx includes operational costs, but not upfront costs."
+#      - content: "$20,000"
+#        isCorrect: false
+#        explanation: "Incorrect. OpEx includes operational costs, but not upfront costs."
+#      - content: "$32,000"
+#        isCorrect: false
+#        explanation: "Incorrect. OpEx includes operational costs, but not upfront costs."
+#
+# learn by doing block question 3
+#    - content: "A business with 200 employees wants to replace its legacy email system with a cloud-based solution. A cloud provider has offered the business an online service that charges a flat fee of $100 per user per year. What is the capital expenditure (CapEx)?"
+#      choices:
+#      - content: "$0"
+#        isCorrect: true
+#        explanation: "Correct! CapEx includes upfront costs, but not operational costs."
+#      - content: "$16,000 "
+#        isCorrect: false
+#        explanation: "Incorrect. CapEx includes upfront costs, but not operational costs."
+#      - content: "$20,000"
+#        isCorrect: false
+#        explanation: "Incorrect. CapEx includes upfront costs, but not operational costs."
+#      - content: "$32,000"
+#        isCorrect: false
+#        explanation: "Incorrect. CapEx includes upfront costs, but not operational costs."
+#
+# learn by doing block question 4
+#    - content: "A business with 200 employees wants to replace its legacy email system with a cloud-based solution. A cloud provider has offered the business an online service that charges a flat fee of $100 per user per year. What is the yearly operational expenditure (OpEx)?"
+#      choices:
+#      - content: "$0"
+#        isCorrect: false
+#        explanation: "Incorrect. OpEx includes operational costs, but not upfront costs."
+#      - content: "$16,000 "
+#        isCorrect: false
+#        explanation: "Incorrect. OpEx includes operational costs, but not upfront costs."
+#      - content: "$20,000"
+#        isCorrect: true
+#        explanation: "Correct! OpEx includes operational costs, but not upfront costs."
+#      - content: "$32,000"
+#        isCorrect: false
+#        explanation: "Incorrect. OpEx includes operational costs, but not upfront costs."

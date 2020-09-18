@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.2-message-queues-case-study
+title: 'Message queues: Case study'
+metadata:
+  title: 'Message queues: Case study'
+  description: Review a case study about message queues.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-message-queues-case-study.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "How would you organize messages in a Kafka cluster, if you needed them to be processed in order by consumers?"
+    choices:
+    - content: "Messages can be published in round-robin order over multiple Kafka topics. Kafka guarantees the order of messages across topics using a sequence number."
+      isCorrect: false
+      explanation: "Incorrect. Where does Kafka maintain an append-only immutable log? Review this page if you're not sure."
+    - content: "Messages must be published within a Kafka topic, as all messages within a Kafka topic are guaranteed to be in order."
+      isCorrect: false
+      explanation: "Incorrect. Where does Kafka maintain an append-only immutable log? Review this page if you're not sure."
+    - content: "Messages must be published within a partition in a Kafka topic, as all messages within a partition are guaranteed to be ordered."
+      isCorrect: true
+      explanation: "Correct! Kafka guarantees that messages within a partition are ordered by arrival. Messages across partitions or topics are not guaranteed to be ordered."

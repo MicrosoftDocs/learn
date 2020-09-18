@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.hdinsight-configuration-to-build-open-source-analytical-solutions.3-decision-criteria-selecting-correct-hdinsight-configuration-option
+title: Decision criteria for selecting the correct HDInsight configuration option
+metadata:
+  title: Decision criteria for selecting the correct HDInsight configuration option
+  description: Decision criteria for selecting the correct HDInsight configuration option
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 7
+content: |
+  [!include[](includes/3-decision-criteria.md)]

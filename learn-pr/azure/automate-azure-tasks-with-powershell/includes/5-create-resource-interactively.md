@@ -62,7 +62,7 @@ To install the latest Azure PowerShell module, run the following commands:
 1. Type the following command, and then press Enter:
 
     ```powershell
-    Install-Module -Name Az -AllowClobber
+    Install-Module -Name Az -AllowClobber -SkipPublisherCheck
     ```
 
 This installs the module for all users by default (controlled by the scope parameter).
@@ -265,7 +265,7 @@ Get-AzResource | ft
 You can also filter it to specific resource groups to only list resources associated with that group:
 
 ```powershell
-Get-AzResource -ResourceGroup ExerciseResources
+Get-AzResource -ResourceGroupName ExerciseResources
 ```
 
 ### Creating an Azure Virtual Machine

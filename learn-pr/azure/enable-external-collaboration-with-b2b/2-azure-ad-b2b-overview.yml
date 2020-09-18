@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-external-collaboration-with-b2b.2-azure-ad-b2b-overview
+metadata:
+  title: What is Azure AD B2B?
+  description: What is Azure AD B2B?
+  ms.date: 03/12/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: What is Azure AD B2B?
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-azure-ad-b2b-overview.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: How are guest users different from regular member users?
+    choices:
+    - content: Guest users have fewer restrictions compared with regular member users.
+      isCorrect: false
+      explanation: Guest users have more restrictions than regular member users.
+    - content: Guest users have more restrictions compared with regular members users.
+      isCorrect: true
+      explanation: Guest user access is for external users, and guest user type accounts have fewer permissions.
+    - content: Guest users and regular member users have the same level of permissions.
+      isCorrect: false
+      explanation: Guest users have more restrictions than regular member users.
+  - content: How can you add an additional layer of protection to the application?
+    choices:
+    - content: Use unconditional access policies in Azure AD B2B.
+      isCorrect: false
+      explanation: There's no such thing as unconditional access policies in Azure.
+    - content: Use conditional access policies in Azure AD B2B.
+      isCorrect: true
+      explanation: Conditional access policies offer further protection for your applications. You can ensure that your applications are only accessed when all conditions you set have been met.
+    - content: Use criteria access policies in Azure AD B2B.
+      isCorrect: false
+      explanation: There's no such thing as criteria access policies in Azure.

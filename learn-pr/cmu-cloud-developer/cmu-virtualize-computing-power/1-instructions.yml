@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.1-instructions
+title: Virtualize CPU instructions
+metadata:
+  title: Virtualize CPU instructions
+  description: Virtualize CPU instructions
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-instructions.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "The <italic>Set CPU timer</italic> instruction from IBM System/370 replaces the CPU internal timer with the contents of a location in memory if the CPU is in system mode and traps if it is not. What is the type of this instruction?"
+    choices:
+    - content: "Control sensitive"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Behavior sensitive"
+      isCorrect: false
+      explanation: "Incorrect. These are instructions that behave according to how resources are configured in the system. Does the <italic>Set CPU timer</italic> instruction modify any configuration of the resources in the system?"
+    - content: "Innocuous"
+      isCorrect: false
+      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the <italic>Set CPU timer</italic> instruction modify any configuration of the resources in the system?"
+
+  - content: "The <italic>Load Real Address</italic> instruction from IBM takes a virtual address and saves the corresponding physical address in a specified general-purpose register. The result of the value stored in the register depends on the state of the physical memory resource. What is the type of this instruction?"
+    choices:
+    - content: "Control sensitive"
+      isCorrect: false
+      explanation: "Incorrect. These are instructions that attempt to modify the configurations of the system resources. Does the <italic>Load Real Address</italic> instruction modify any configuration of the resources in the system?"
+    - content: "Behavior sensitive"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Innocuous"
+      isCorrect: false
+      explanation: "Incorrect. These instructions are not sensitive. Thus, they do not alter system configurations or behave according to such configurations. Does the <italic>Load Real Address</italic> instruction modify any configuration of the resources in the system?"
+
+  - content: "According to Popek and Goldberg's theorem, a hypervisor can be constructed only if:"
+    choices:
+    - content: "Every instruction traps to the hypervisor if executed in user mode."
+      isCorrect: false
+      explanation: "Incorrect. There are instructions, such as innocuous instructions, that can safely run in user mode. Popek and Goldberg stated that some kind of instructions in user mode need to trap to hypervisor. Think about why this is necessary."
+    - content: "Every innocuous instruction traps to the hypervisor if executed in user mode."
+      isCorrect: false
+      explanation: "Incorrect. Innocuous instructions do not attempt to alter system configurations and thus need not trap to the hypervisor. Popek and Goldberg stated that some kind of instructions in user mode need to trap to hypervisor. Think about why this is necessary."
+    - content: "Every control-sensitive instruction traps to the hypervisor if executed in user mode."
+      isCorrect: false
+      explanation: "Incorrect. Control-sensitive instructions need to trap to the hypervisor but not solely. There are other types of instructions that also need to trap to the hypervisor. Popek and Goldberg stated that some kind of instructions in user mode need to trap to hypervisor. Think about why this is necessary." 
+    - content: "Every behavior-sensitive instruction traps to the hypervisor if executed in user mode."
+      isCorrect: false
+      explanation: "Incorrect. Behavior-sensitive instructions need to trap to the hypervisor but not solely. There are other types of instructions that also need to trap to the hypervisor. Popek and Goldberg stated that some kind of instructions in user mode need to trap to hypervisor. Think about why this is necessary."
+    - content: "Every sensitive instruction traps to the hypervisor if executed in user mode."
+      isCorrect: true
+      explanation: "Correct!"

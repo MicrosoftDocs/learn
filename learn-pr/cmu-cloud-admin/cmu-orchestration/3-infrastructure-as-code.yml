@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-orchestration.3-infrastructure-as-code
+title: Infrastructure as code
+metadata:
+  title: Infrastructure as code
+  description: Introduces the concept of infrastructure as code and how it is used in enterprise
+  ms.date: 12/31/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 11
+content: |
+  [!include[](includes/3-infrastructure-as-code.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "Which of the following statements best describes the primary purpose of Infrastructure-as-Code (IaC)?"
+      choices:
+      - content: "The principal objective of IaC is to simplify the process of deploying cloud resources to two or more cloud environments."
+        isCorrect: false
+        explanation: "Incorrect. Some (but not all) IaC tools can be used to deploy resources to multiple cloud environments, but that is not IaC's principal objective."
+      - content: "The principal objective of IaC is to ensure the high availability of virtual machines and other cloud resources."
+        isCorrect: false
+        explanation: "Incorrect. IaC does not address availability. Its purpose is to make the composition of a solution deployed to the cloud both explicitly definable and dynamic like a program."
+      - content: "The principal objective of IaC is to define a process for achieving an outcome (for example, the process for provisioning a set of cloud resources) without having to define the outcome itself."
+        isCorrect: false
+        explanation: "Incorrect. With IaC, you define the outcome that you want, and an IaC tool creates a process for defining that outcome."
+      - content: "The principal objective of IaC is to make the composition of a solution deployed to the cloud both explicitly definable and dynamic like a program."
+        isCorrect: true
+        explanation: "Correct! Change a program, and you change what that program produces. Change a definition of a cloud solution, and IaC changes the solution."
+
+    - content: "Which of the following actions might a cloud administrator perform with an IaC/CM tool?"
+      choices:
+      - content: "Use XML or another declarative language to define the resources that comprise a cloud solution, and then use an IaC/CM tool to deploy the solution to a cloud data center."
+        isCorrect: false
+        explanation: "Incorrect. This is one way to use an IaC/CM tool, but not the only one."
+      - content: "Revise an XML document that defines a cloud solution to include new cloud resources, and then use an IaC/CM tool to update the solution in a cloud data center."
+        isCorrect: false
+        explanation: "Incorrect. This is one way to use an IaC/CM tool, but not the only one."
+      - content: "Revise an XML document that defines a cloud solution to remove some resources and modify others, and then use an IaC/CM tool to update the solution in a cloud data center."
+        isCorrect: false
+        explanation: "Incorrect. This is one way to use an IaC/CM tool, but not the only one."
+      - content: "All of the above."
+        isCorrect: true
+        explanation: "Correct! IaC defines an outcome, and IaC/CM tool produces that outcome, regardless of whether cloud resources have to be created, modified, or deleted."

@@ -2,11 +2,11 @@ You've developed two Azure functions locally. Let's now get your local functions
 
 ## Create an Azure Function App on Azure
 
-You're going to start by creating the Azure Function App using VS Code, and the Azure Functions extension.
+You're going to start by creating the Azure Function App using Visual Studio Code, and the Azure Functions extension.
 
 1. Click on **View** then **Command Palette** and select **Azure Function: Deploy to Function App**.
 
-   ![Deploy To Function App dialog at the top of VS Code.](../media/7.deploy-to-function-app.png)
+   ![Deploy To Function App dialog at the top of Visual Studio Code.](../media/7.deploy-to-function-app.png)
 
 2. Confirm that you want to upload the current project.
 
@@ -63,11 +63,11 @@ You should see some json returned.
 
 Remember, you have some settings we put in `local.settings.json`. These settings were the keys and URL for Cognitive Services. Since `local.settings.json` is local, it's never copied to production when you deploy.
 
-Usually, you would need to open the Azure portal and manually add the settings in the UI, or use `func` in the Azure CLI. Since you're using VS Code, you can use the Azure Function extension and the command palette to upload your local settings!
+Usually, you would need to open the Azure portal and manually add the settings in the UI, or use `func` in the Azure CLI. Since you're using Visual Studio Code, you can use the Azure Function extension and the command palette to upload your local settings!
 
 1. Click on **View** then **Command Palette** and select **Azure Functions: Upload Local Settings**.
 
-    ![Upload Local Setting dialog in VS Code. It says ">upload local".](../media/7.upload-local-settings.png)
+    ![Upload Local Setting dialog in Visual Studio Code. It says ">upload local".](../media/7.upload-local-settings.png)
 
 2. Choose `local.settings.json`.
 

@@ -59,14 +59,18 @@ Finally, let's add the connection string into our app so it can access the stora
 Your code should look something like this (the string value will be unique to your account).
 
 ```csharp
-...
+using System;
+
 namespace QueueApp
 {
     class Program
     {
         private const string ConnectionString = "DefaultEndpointsProtocol=https; ...";
         
-        ...
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World!");
+        }
     }
 }
 ```

@@ -10,11 +10,11 @@ With Batch Explorer you can manage batch accounts, and see vast amounts of infor
 
 For example, you can see all the nodes you create in a Batch pool.
 
-![Visualization of Batch Explorer nodes panel](../media/6-batch-explorer-nodes.png)
+:::image type="content" source="../media/6-batch-explorer-nodes.png" alt-text="Visualization of Batch Explorer nodes panel." loc-scope="other"::: <!-- no-loc -->
 
 Drilling down further, you can see what kind of state they are in, whether working or idle.
 
-![Visualization of Batch Explorer node states](../media/6-batch-explorer-node-states.png)
+:::image type="content" source="../media/6-batch-explorer-node-states.png" alt-text="Visualization of Batch Explorer node states." loc-scope="other":::
 
 ## Installing Azure Batch Explorer
 

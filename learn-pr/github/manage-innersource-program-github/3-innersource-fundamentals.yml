@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.manage-innersource-program-github.3-innersource-fundamentals
+title:  Exercise - InnerSource fundamentals
+metadata:
+  title:  Exercise - InnerSource fundamentals
+  description: Learn to manage a successful InnerSource program on GitHub through effective discoverability, guidance, and maintenance.
+  ms.date: 06/26/2020
+  author: tpetchel
+  ms.author: thpetche
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 36
+content: |
+  [!include[](includes/3-innersource-fundamentals.md)]

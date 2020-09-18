@@ -1,4 +1,4 @@
-PolyBase can read data from several file formats and data sources. Before you upload your data into Azure SQL Data Warehouse, you must prepare the source data into an acceptable format for PolyBase. These formats include:
+PolyBase can read data from several file formats and data sources. Before you upload your data into Azure Synapse Analytics, you must prepare the source data into an acceptable format for PolyBase. These formats include:
 
 - Comma-delimited text files (UTF-8 and UTF-16).
 - Hadoop file formats, such as RC files, Optimized Row Columnar (ORC) files, and Parquet files.
@@ -41,11 +41,11 @@ Let's upload the data into the blob container.
 
 1. Select the container named **data-files** to open it.
 
-1. Select the **Upload** icon. In the **Upload blob** blade on the right, browse and select the **DimDate2.txt** file you downloaded.
+1. Select the **Upload** icon. In the **Upload blob** pane on the right, browse and select the **DimDate2.txt** file you downloaded.
 
     ![Uploading data file](../media/5-upload-data-file.png)
 
-1. After the file is uploaded, close the **Upload blob** blade. The file appears in your blob container.
+1. After the file is uploaded, close the **Upload blob** pane. The file appears in your blob container.
 
 > [!TIP]
 > This example uses a single text file to upload data. It's a best practice to split up the data between data files of equal size that match the number of compute nodes in your data warehouse. That way you gain full parallelism of all the text files against each available compute node. For example, if you use a **Gen1 - DWU6000** or **Gen2 - DW30000c** configuration, you can import 60 text files in parallel because there are 60 nodes.

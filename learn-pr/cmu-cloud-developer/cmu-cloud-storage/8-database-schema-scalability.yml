@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.8-database-schema-scalability
+title: 'Database design: Schema and scalability'
+metadata:
+  title: 'Database design: Schema and scalability'
+  description: Learn how to design databases with a focus on schema design and scalability.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/8-database-schema-scalability.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Suppose you're designing a storage system for an application that extracts tables from webpages. The application plans to assign a unique identifier for each table and then store the table in the database in a raw XML-based format. What kind of system might be best suited for this type of application?"
+    choices:
+    - content: "Strict schema-based database"
+      isCorrect: false
+      explanation: "That's not quite right. A strict schema may impose too many restrictions on the application developer. Consider the flexibility of each option presented. Which of them is most likely to be amenable to change in the future, should the application require it?"
+    - content: "Schemaless database (such as a key-value store)"
+      isCorrect: true
+      explanation: "Correct! Given the nature of the data stored, key-value stores offer increased flexibility to the application to store arbitrary data indexed by key."
+
+  - content: "An airline reservation system uses a database to keep track of passengers, airlines, and flights. The system is used to book passengers on flights and retrieve the information regarding passengers that have an existing booking on a flight. What kind of database is most likely in use to power this system?"
+    choices:
+    - content: "OLAP"
+      isCorrect: false
+      explanation: "That's not quite right. There is no real analytical component in this application. What kind of queries does this application generate? Do these queries work on individual rows of a database or do they aggregate information from multiple rows across multiple tables?"
+    - content: "OLTP"
+      isCorrect: true
+      explanation: "That's correct. This is an example of a transaction processing system. Booking flights and retrieving reservations are simple transactions that affect only a few rows of the database per query."
+
+  - content: "A travel application analyzes flight trends by ingesting worldwide passenger data to provide tourist trends for travel agents and international tour operators. What kind of underlying database system is this application most likely to use?"
+    choices:
+    - content: "OLTP"
+      isCorrect: false
+      explanation: "That's not quite right. This system does more than just simple transactions on the data. Consider the kinds of analysis this application does and the kinds of queries it would need to send to the database to process the required information."
+    - content: "OLAP"
+      isCorrect: true
+      explanation: "Correct! This application may have to perform complex queries on the given dataset that may span multiple rows and tables. This is an example of an OLAP system."

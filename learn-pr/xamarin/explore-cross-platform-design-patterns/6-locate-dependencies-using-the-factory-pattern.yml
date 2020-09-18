@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-xamarin.explore-cross-platform-design-patterns.6-locate-dependencies-using-the-factory-pattern
+metadata:
+  title: Locate dependencies by using the factory pattern
+  description: "Learn how to use a factory pattern to locate dependencies."
+  ms.date: 05/01/2019
+  author: patridge
+  ms.author: adpatrid
+  ms.topic: interactive-tutorial
+  ms.prod: learning-xamarin
+  
+title: Locate dependencies by using the factory pattern
+durationInMinutes: 7
+content: |
+  [!include[](includes/6-locate-dependencies-using-the-factory-pattern.md)]

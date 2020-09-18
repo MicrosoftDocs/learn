@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-introduction-to-azure-search.5-exercise-create-an-azure-search-index-in-the-portal
-title: Exercise - Create an Azure Search index in the Azure portal
+title: Exercise - Create an Azure Cognitive Search index in the Azure portal
 metadata:
-  title: Exercise - Create an Azure Search index in the Azure portal
-  description: In this exercise, you'll load and index JSON data in the Azure Search service
+  title: Exercise - Create an Azure Cognitive Search index in the Azure portal
+  description: In this exercise, you'll load and index JSON data in the Azure Cognitive Search service
   ms.date: 06/13/2019
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 5
 interactive: bash
 azureSandbox: true

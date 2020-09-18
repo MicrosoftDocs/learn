@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.allow-users-to-reset-their-password.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this unit, you'll learn about a business scenario where self-service password resets can reduce administrative costs.
+  ms.date: 11/18/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

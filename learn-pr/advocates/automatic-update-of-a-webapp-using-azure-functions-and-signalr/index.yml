@@ -15,6 +15,7 @@ abstract: |
     - Evaluate an existing project that implements polling
     - Update an application architecture to support push technologies with SignalR Service and Azure Functions
     - Host a static website in an Azure Storage account
+    - Modify a Vue.js and JavaScript web application to use SignalR
 prerequisites: |
   - Knowledge of JavaScript
   - Familiarity with Azure Functions, Azure Cosmos DB and Visual Studio Code

@@ -1,4 +1,4 @@
-Watch this video from Jean-Phlippe Courtois, Executive Vice President and President, Microsoft Global Sales, Marketing and Operations, as he shares how his leadership team is creating an AI-ready culture, the role of the chain-of-command in building trust in AI, and his reflections on where to start with implementing AI.
+Watch this video from Jean-Philippe Courtois, Executive Vice President and President, Microsoft Global Sales, Marketing and Operations, as he shares how his leadership team is creating an AI-ready culture, the role of the chain-of-command in building trust in AI, and his reflections on where to start with implementing AI.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y4Bk]
 

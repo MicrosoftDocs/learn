@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.analyze-costs-create-budgets-azure-cost-management.exercise-see-trends
+title: Exercise - Determine your most expensive resource and see trends
+metadata:
+  title: Exercise - Determine your most expensive resource and see trends
+  description: Exercise - Determine your most expensive resource and see trends
+  ms.date: 11/20/2019
+  author: bandersmsft
+  ms.author: banders
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-exercise-see-trends.md)]

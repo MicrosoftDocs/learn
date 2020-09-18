@@ -1,0 +1,16 @@
+Inclusive Marketing is about resonating, understanding, and empathizing with the customer, finding exclusions and innovating. It embodies the heart of an inclusive culture and springboards off inclusive design, looking outward into the world, seeking to create connection by reflecting common human values in an authentic and real way. You can’t have Inclusive Marketing without an inclusive culture, ultimately seeking to embrace and connect with the customer authentically.
+
+Beginning with the simple framework of what, who and how you market. One or all three of these pivots can be used to begin exploring and learning. This helps bring you close to your customer and proximity ultimately leads to innovation. Inclusive marketing isn't something that is done in addition to or as a side bar to your existing campaign, it IS the campaign. Through curiosity, you can better understand your customer and new trending viewpoints. Couple this with a focus on enduring human values and your campaign has the ability to touch everyone. Finally, by following the five principles used to design an inclusive strategy a marketer gains insight and direction to create a campaign that binds everyone together. Allowing the concepts to resonate globally because it's grounded in common human values. Inclusive marketing is a no-brainer because it reflects the actual world we live in, rather than a fictional placed filled with unrealistically perfect models. From breaking stereotypes to simply aiming to reflect or embrace people in the real world, inclusive marketing paints the picture of enduring stories and commonality that all human beings can resonate with.
+
+
+## References
+
+- [Inclusive Marketing: Why it’s essential for your brand](https://about.ads.microsoft.com/blog/post/january-2020/inclusive-marketing-why-its-essential-for-your-brand)
+- [How Microsoft defines and pursues inclusive marketing](https://www.warc.com/content/paywall/article/event-reports/how-microsoft-defines-and-pursues-inclusive-marketing/129014)
+- [LGBT advertising: How brands are taking a stance on issues](https://www.thinkwithgoogle.com/intl/en-gb/consumer-insights/lgbt-advertising-how-brands-are-taking-stance-issues/)
+- [Brands & Stands: Social Purpose is the New Black](https://engageforgood.com/guides/statistics-every-cause-marketer-should-know/ ) 
+- [Inspiring Girls to Stay in STEM and #MakeWhatsNext](https://blogs.microsoft.com/on-the-issues/2017/03/07/inspiring-girls-stay-stem-makewhatsnext/)
+- [Diversity + Inclusion = Better Decision Making At Work](https://www.forbes.com/sites/eriklarson/2017/09/21/new-research-diversity-inclusion-better-decision-making-at-work/#8f41d994cbfa)
+- [Microsoft Super Bowl 2020 Commercial: Be The One / Katie Sowers](https://www.youtube.com/watch?v=_xPn4DXIj5w)
+- [Maurice Harris, an artist in full bloom](https://www.youtube.com/watch?v=W6Dp6dzfH2Y)
+

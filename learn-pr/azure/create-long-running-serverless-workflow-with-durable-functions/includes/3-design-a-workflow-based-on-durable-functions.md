@@ -1,10 +1,10 @@
-Durable Functions can be used to orchestrate a long-running workflow as a set of activities. Each step in the process can be mapped to a function type, and each task mapped to an activity. Having an automated process means you don't have to worry about manually monitoring or escalating if a task isn't done. 
+You can use Durable Functions to orchestrate a long-running workflow as a set of activities. You can map each step in the process to a function type, and each task to an activity. Having an automated process means you don't have to worry about manually monitoring or escalating a task if it isn't done. 
 
-As we continue to think about automating our proposal approval process, we need to consider the cases when a step in the process does not complete in time and needs to be escalated. What if we need a manager's approval for a particular size of proposal, but the manager is late with a response?
+As we continue to think about automating our proposal approval process, we need to consider the cases when a step in the process does not complete in time and needs to be escalated. For example: what if we need a manager's approval for a particular size of proposal, but the manager is late with a response?
 
 Escalation steps are useful to the business, as they move along a task when a deadline has been reached. They ensure tasks are completed, and not forgotten. An escalation step could involve sending out reminders or even reassigning a task to someone higher up the managerial hierarchy.
 
-In this unit, you'll design a workflow based on Durable Functions.
+In this unit, you'll design a workflow based on Durable Functions. In the next exercise, you'll apply this knowledge to create an app with Azure Durable Functions.
 
 ## Description of the design approval process
 
@@ -23,10 +23,10 @@ The following table shows how the workflow steps can be mapped to the function t
 
 | Workflow function | Durable Function Type |
 |--|--|
-| Submitting a project design  proposal for approval | Client Function |
-| Assign an Approval task  to relevant member  of staff | Orchestration Function | 
-| Approval task | Activity Function |
-| Escalation task | Activity Function |
+| Submitting a project design  proposal for approval | _Client_ Function |
+| Assign an Approval task  to relevant member  of staff | _Orchestration_ Function | 
+| Approval task | _Activity_ Function |
+| Escalation task | _Activity_ Function |
 
 The Orchestration function will manage a rule in the workflow that starts the escalation activity if the approval activity doesn't return within a specified time.
 

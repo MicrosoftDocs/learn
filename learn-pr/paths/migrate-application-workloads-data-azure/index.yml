@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.migrate-application-workloads-data-azure
+metadata:
+  title: Migrate application workloads and data to Azure
+  description: Migrate application workloads and data to Azure
+  ms.date: 03/06/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Migrate application workloads and data to Azure
+prerequisites: |
+  - Knowledge of cloud and traditional architecture concepts
+  - Knowledge of networking, compute, and database systems
+  - Familiarity with virtualization concepts like VMs, virtual networks, and virtual hard disks
+  - Ability to manage cloud identities with Azure Active Directory
+  - Basic familiarity with relational data
+  - Basic familiarity with SQL Server
+  - Basic familiarity with Azure SQL Database
+summary: |
+  Determine a migration approach for on-premises workloads and databases and ready those resources for migration to Microsoft Azure. Migrate on-premises Hyper-V-based application workloads and relational data to the cloud using Azure Migrate.
+iconUrl: /learn/achievements/migrate-application-workloads-data-azure.svg
+levels:
+- intermediate
+roles:
+- administrator
+- data-engineer
+- solution-architect
+products:
+- azure
+- azure-sql-database
+modules:
+- learn.design-your-migration-to-azure
+- learn.wwl.prepare-onpremises-workloads-migration-azure
+- learn.wwl.migrate-onpremises-workloads-azure
+- learn.migrate-sql-server-relational-data
+trophy:
+  uid: learn.wwl.migrate-application-workloads-data-azure.trophy

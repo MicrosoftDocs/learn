@@ -1,4 +1,4 @@
-Get ready to start building a CI pipeline with Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
+Get ready to start building a CI pipeline with Microsoft Azure Pipelines. The first step is to build and run the *Space Game* web app on your local machine. Understanding how to build software locally will prepare you to repeat the process in the pipeline.
 
 Mara is going to do exactly that and, by following the procedures, you can do the same thing. Everyone on the team, including Mara, uses Visual Studio Code to build and run applications. But the team uses a centralized version control system for its code, and Mara is more comfortable with GitHub, so she's going to use that. If you've never used GitHub, don't worry. Just follow along for now. All will be explained here and in later modules.
 
@@ -9,7 +9,7 @@ First you'll set up Visual Studio Code so you can build the website locally and 
 Visual Studio Code comes with an integrated terminal, so you can edit files and work from the command line all from one place.
 
 1. Start Visual Studio Code.
-1. On the **View** menu, select **Terminal** or **Integrated Terminal**. (The option you see depends on your operating system.)
+1. On the **View** menu, select **Terminal**.
 1. In the drop-down list, select **bash**:
 
     ![Selecting the Bash shell in Visual Studio Code](../../shared/media/vscode-terminal-bash.png)
@@ -17,6 +17,8 @@ Visual Studio Code comes with an integrated terminal, so you can edit files and 
     The terminal window lets you choose any shell that's installed on your system, like Bash, Zsh, and PowerShell.
 
     Here you'll use Bash. Git for Windows provides Git Bash, which makes it easy to run Git commands.
+
+    [!include[](../../shared/includes/troubleshoot-code-terminal.md)]
 
 1. Run the `cd` command to navigate to the directory you want to work from, like your home directory (`~`). You can choose a different directory if you want.
 
@@ -56,7 +58,7 @@ Although you can propose changes to the original project, here you'll work with 
 To fork the *Space Game* web project into your GitHub account:
 
 1. In a web browser, go to [GitHub](https://github.com?azure-portal=true) and sign in.
-1. Go to the [*Space Game*](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
+1. Go to the [Space Game](https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web?azure-portal=true) web project.
 1. Select **Fork**:
 
     ![The Fork button on GitHub](../media/3-github-fork-button.png)
@@ -66,7 +68,7 @@ To fork the *Space Game* web project into your GitHub account:
 
 You now have a copy of the *Space Game* web project in your GitHub account. Now you'll download, or *clone*, a copy to your computer so you can work with it.
 
-A clone, just a like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
+A clone, just like a fork, is a copy of a repository. When you clone a repository, you can make changes, verify they work as you expect, and then upload those changes back to GitHub. You can also synchronize your local copy with changes other authenticated users have made to GitHub's copy of your repository.
 
 To clone the *Space Game* web project to your computer:
 
@@ -77,10 +79,8 @@ To clone the *Space Game* web project to your computer:
 1. In Visual Studio Code, go to the terminal window and run the `git clone` command. Replace the URL that's shown here with the contents of your clipboard:
 
     ```bash
-    git clone --branch master --single-branch https://github.com/your-name/mslearn-tailspin-spacegame-web.git
+    git clone https://github.com/your-name/mslearn-tailspin-spacegame-web.git
     ```
-
-    You can typically omit the `--branch` and `--single-branch` arguments. We include them here to help you get starter code from the Microsoft repository in later modules.
 
 1. Move to the `mslearn-tailspin-spacegame-web` directory. This is the root directory of your repository.
 
@@ -131,7 +131,7 @@ upstream        https://github.com/MicrosoftDocs/mslearn-tailspin-spacegame-web.
 
 In Visual Studio Code, your terminal window points to the root directory of the *Space Game* web project. You'll now open the project from the file explorer so you can view its structure and work with files.
 
-1. On the **File** menu, select **Open** or **Open Folder**.
+1. On the **File** menu, select **Open**.
 1. Navigate to the root directory of the *Space Game* web project.
 
     (You can run the `pwd` command in the terminal window to see the full path if you need a reminder.)
@@ -151,9 +151,11 @@ Now that you have the web application, you can build and run it locally.
     dotnet build --configuration Release
     ```
 
-    .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
+    > [!NOTE]
+    > If the `dotnet` command is not found, review the prerequisites at the start of this module. You may need to install .NET Core.
 
-    You'll likely see a few build warnings in the output. These warnings are included intentionally. You can ignore them for now.
+    .NET Core projects typically come with two build configurations: Debug and Release. Debug builds aren't optimized for performance. They make it easier for you to trace through your program and troubleshoot issues. Here we choose the Release configuration just to see the web app in action.
+ 
 1. From the terminal window, run this `dotnet run` command to run the application:
 
     ```bash
@@ -166,20 +168,21 @@ Now that you have the web application, you can build and run it locally.
 
 In development mode, the *Space Game* web site is configured to run on port 5000.
 
-From a new browser tab, navigate to [http://localhost:5000](http://localhost:5000?azure-portal=true) to see the running application.
+From a new browser tab, navigate to `http://localhost:5000` to see the running application.
 
 You see this:
 
 ![The Space Game web site](../media/3-space-game-top.png)
 
 > [!TIP]
-> If you see an error in your browser that's related to a certificate error, select Ctrl+C from your terminal to stop the running application.
+> If you see an error in your browser that's related to a privacy or certificate error, select <kbd>Ctrl+C</kbd> from your terminal to stop the running application.
+> 
 > Then run `dotnet dev-certs https --trust` and select **Yes** when prompted. Or [see this blog post](https://www.hanselman.com/blog/DevelopingLocallyWithASPNETCoreUnderHTTPSSSLAndSelfSignedCerts.aspx?azure-portal=true) for more information.
 >
-> After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to [http://localhost:5000](http://localhost:5000?azure-portal=true) from a new browser tab to see the running application.
+> After your computer trusts your local SSL certificate, run the `dotnet run` command a second time and go to `http://localhost:5000` from a new browser tab to see the running application.
 
 You can interact with the page, including the leaderboard. When you select a player's name, you see details about that player.
 
 ![The Space Game leaderboard](../media/3-space-game-leaderboard-profile.png)
 
-When you're finished, return to the terminal window and select Ctrl+C to stop the running application.
+When you're finished, return to the terminal window and select <kbd>Ctrl+C</kbd> to stop the running application.

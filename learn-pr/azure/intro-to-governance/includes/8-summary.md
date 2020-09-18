@@ -3,6 +3,7 @@ In this module you've learned about Azure governance methodologies, monitoring a
 ## Learn More
 
 Here are some places to go to learn more about what we've covered today:
+
 - [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement)
 - [Microsoft Trust Center](https://www.microsoft.com/trustcenter)
 - [Service Trust Portal](https://aka.ms/STP)

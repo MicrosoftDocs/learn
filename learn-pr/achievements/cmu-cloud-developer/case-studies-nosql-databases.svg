@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>CMU dev 3 Cloud storage/Case-studies-NoSQL-databases-and-cloud-object-storage</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#99D3FF" offset="0%"></stop>
+            <stop stop-color="#0FA6FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-0.5%" y="-0.5%" width="102.0%" height="102.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M50,2.83018868 C76.0511674,2.83018868 97.1698113,23.9488326 97.1698113,50 C97.1698113,76.0511674 76.0511674,97.1698113 50,97.1698113 C23.9488326,97.1698113 2.83018868,76.0511674 2.83018868,50 C2.83018868,23.9488326 23.9488326,2.83018868 50,2.83018868 Z M50,6.60377358 C26.032926,6.60377358 6.60377358,26.032926 6.60377358,50 C6.60377358,73.967074 26.032926,93.3962264 50,93.3962264 C73.967074,93.3962264 93.3962264,73.967074 93.3962264,50 C93.3962264,26.032926 73.967074,6.60377358 50,6.60377358 Z" id="path-6"></path>
+        <linearGradient x1="12.6250784%" y1="49.9430975%" x2="87.2968103%" y2="50.1703227%" id="linearGradient-8">
+            <stop stop-color="#005BA1" offset="0%"></stop>
+            <stop stop-color="#0060A9" offset="7%"></stop>
+            <stop stop-color="#0071C8" offset="36%"></stop>
+            <stop stop-color="#0078D4" offset="52%"></stop>
+            <stop stop-color="#0074CD" offset="64%"></stop>
+            <stop stop-color="#006ABB" offset="82%"></stop>
+            <stop stop-color="#005BA1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="-9.93901477%" x2="50%" y2="92.7254775%" id="linearGradient-9">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#EFEFEF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[CMU-dev-3]-Cloud-storage" transform="translate(-160.000000, -700.000000)">
+            <g id="CMU-dev-3-Cloud-storage/Case-studies-NoSQL-databases-and-cloud-object-storage" transform="translate(160.000000, 700.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g></g>
+                        <g id="Colors/Microsoft-365/BG-Gradient-1" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                    <g id="Border">
+                        <g id="White-Border">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="2" y="2" width="96" height="96" rx="48"></rect>
+                        </g>
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(2.830189, 2.830189)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-3" transform="translate(29.000000, 22.000000)" fill-rule="nonzero">
+                    <g id="Icon-storage-92-StorSimple-Data-Managers">
+                        <path d="M20.9834864,15.1053341 C9.38821604,15.1053341 0,11.7967042 0,7.39622642 L0,48.257806 C0,52.459766 9.2235105,55.9007411 20.6870164,56 L20.9834864,56 C32.5787567,56 42,52.6913701 42,48.3570649 L42,7.49548531 C42.032855,11.7305316 32.6116978,15.1384204 20.9834864,15.1053341 Z" id="Path" fill="url(#linearGradient-8)"></path>
+                        <path d="M42,7.45998955 C42,11.5405367 32.5788235,14.8241019 20.9835294,14.7922227 C9.38823529,14.7603434 0,11.6042952 0,7.36435173 C0,3.12440824 9.42117647,-0.0316399161 20.9505882,0.000239358215 C32.48,0.0321186326 41.9341176,3.37944244 41.9341176,7.45998955" id="Path" fill="#F2F2F2"></path>
+                        <path d="M37.8,6.91627661 C37.8,9.5271415 30.5037359,11.6545129 21.5083419,11.62228 C12.5129478,11.5900471 5.25,9.4626757 5.25,6.81957791 C5.25,4.17648011 12.5462641,2.08134162 21.4750256,2.11357452 C30.4037871,2.14580742 37.7666837,4.27317881 37.7333675,6.91627661" id="Path" fill="#50E6FF"></path>
+                        <path d="M21,8.46315912 C16.7282005,8.37862722 12.4700437,8.91448077 8.4,10.0487642 C12.4652707,11.1986573 16.728354,11.725551 21,11.6060548 C25.2752356,11.7044385 29.5378529,11.1584448 33.6,9.99213541 C29.5233844,8.88814659 25.2674361,8.37169865 21,8.46315912 L21,8.46315912 Z" id="Path" fill="#198AB3"></path>
+                    </g>
+                    <g id="Cloud-White" transform="translate(9.000000, 24.000000)" fill="url(#linearGradient-9)">
+                        <g id="Group-31">
+                            <g id="Icon-migrate-281-Azure-Migrate">
+                                <path d="M24.8192771,11.6251069 C24.7340172,8.9986717 22.6838163,6.81790882 19.9752389,6.47258806 C19.8084152,2.77430183 16.5821684,-0.108427668 12.7348567,0.0031315281 C9.68830534,-0.027573566 6.94928997,1.7834383 5.88815953,4.53010493 C2.58519965,4.89930174 0.0717947453,7.55543548 0,10.7526356 C0.193347605,14.3051201 3.28557892,17.0676383 6.98363108,16.9916281 L18.9653511,16.9916281 L19.2734524,16.9916281 C22.3302384,16.9470642 24.7917517,14.5651347 24.8192771,11.6251069 L24.8192771,11.6251069 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

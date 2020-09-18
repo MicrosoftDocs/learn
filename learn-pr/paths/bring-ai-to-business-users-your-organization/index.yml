@@ -1,0 +1,29 @@
+### YamlMime:LearningPath
+uid: learn.wwl.bring-ai-to-business-users-your-organization
+metadata:
+  title: Bring AI to business users in your organization
+  description: Learn how to implement machine learning with this business development course in Microsoft business school
+  ms.date: 08/05/2020
+  author: wwlpublish
+  ms.author: japerena
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Bring AI to business users in your organization
+prerequisites: |
+  None
+summary: |
+  To truly empower an organization with AI, business leaders need to put AI in the hands of everyone, not just developers and data scientists.
+iconUrl: /learn/achievements/bring-ai-to-business-users-your-organization.svg
+levels:
+- beginner
+roles:
+- business-user
+products:
+- m365
+- power-platform
+modules:
+- learn.wwl.enable-business-users-with-key-ai-uses-cases
+- learn-bizapps.wwl.introduction-power-bi
+- learn-bizapps.wwl.introduction-power-platform
+trophy:
+  uid: learn.wwl.bring-ai-to-business-users-your-organization.trophy

@@ -4,8 +4,8 @@ metadata:
   title: Exploratory data analysis in Azure Databricks
   description: Do exploratory data analysis (EDA) with Azure Databricks
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Exploratory data analysis in Azure Databricks

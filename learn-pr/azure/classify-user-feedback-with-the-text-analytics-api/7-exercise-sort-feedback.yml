@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Sort messages into different queues based on sentiment score
   description: In the final part of our lab, we'll add code and bindings to our function to sort our messages by sentiment and forward them to output queues for further processing.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 azureSandbox: true
 durationInMinutes: 8
 content: |

@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-share-cloud-resources.7-resource-sharing-multiprocessor
+title: Multiprocessor resource sharing
+metadata:
+  title: Multiprocessor resource sharing
+  description: Multiprocessor resource sharing
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/7-resource-sharing-multiprocessor.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block question 1 has intro statement and no visible graphic   
+#  - content: "Match the benefits with sharing a multiprocessor system either in space or in time."
+
+# Did I Get This block question 2
+  - content: "What is the upper limit on the number of partitions that can be supported in a multiprocessor system with <i>N</i> processors shared in <b>space</b>?"
+    choices:
+    - content: "<i>N</i>"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "<i>N</i>-1"
+      isCorrect: false
+      explanation: "Incorrect. Remember that in space sharing, access to a partition is exclusive. The right answer is <i>N</i>, not <i>N</i>-1."
+    - content: "In principle, it's infinity. But in practice, <i>c</i> &#215; <i>N</i>, where <i>c</i> is a constant factor."
+      isCorrect: false
+      explanation: "Incorrect. This is an upper limit for **time**, not space. Remember that in space sharing, access to a partition is exclusive."
+
+# Did I Get This block question 3
+  - content: "What is the upper limit on the number of partitions that can be supported in a multiprocessor system with <i>N</i> processors shared in <b>time</b>?"
+    choices:
+    - content: "<i>N</i>"
+      isCorrect: false
+      explanation: "Incorrect. This is an upper limit on the number of partitions for **space**, not time. When sharing a multiple processor in time, is there any limitation on how many concurrent partitions we can have?"
+    - content: "<i>N</i>-1"
+      isCorrect: false
+      explanation: "Incorrect. When sharing a multiple processor in time, is there any limitation on how many concurrent partitions we can have? The right answer is based on <i>N</i>, not <i>N</i>-1."
+    - content: "In principle, it's infinity. But in practice, <i>c</i> &#215; <i>N</i>, where <i>c</i> is a constant factor."
+      isCorrect: true
+      explanation: "Correct!"

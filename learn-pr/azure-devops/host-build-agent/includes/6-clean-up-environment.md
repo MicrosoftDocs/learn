@@ -1,4 +1,4 @@
-You're all done with the tasks for this module. In this unit, you move the work item to the **Done** state on Azure Boards and clean up your Azure DevOps environment.
+You're all done with the tasks for this module. In this unit, you move the work item to the **Done** state on Microsoft Azure Boards and clean up your Microsoft Azure DevOps environment.
 
 > [!IMPORTANT]
 > This page contains important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes. Be sure to perform the cleanup steps if you ran the template earlier in this module.
@@ -20,9 +20,6 @@ To complete the work item:
 
 ## Disable the pipeline or delete your project
 
-> [!IMPORTANT]
-> You can skip this section if you plan to continue to the next module and use the same Azure DevOps project.
-
 Each module in this learning path provides a template that you can run to create a clean environment for the duration of the module.
 
 Running multiple templates creates multiple Azure Pipelines projects, each pointing to the same GitHub repository. This action can cause multiple pipelines to run each time you push a change to your GitHub repository. This action, in turn, can cause you to run out of free build minutes on our hosted agents. Therefore, it's important to disable or delete your pipeline before you move on to the next module.
@@ -35,14 +32,11 @@ This option disables the pipeline so that it doesn't process further build reque
 
 To disable the pipeline:
 
-1. In Azure Pipelines, go to your pipeline.
-1. Select **Edit**.
+1. In Azure Pipelines, navigate to your pipeline.
+1. From the drop-down menu, select **Settings**:
 
-    ![Azure Pipelines showing the location of the Edit button](../../shared/media/azure-pipelines-edit-button.png)
-1. At the top right, select **Settings**.
-
-    ![Azure Pipelines showing the Settings menu option](../../shared/media/azure-pipelines-settings-button.png)
-1. Under **Processing of new run requests**, select **Disabled**, and then select **Save**.
+    ![The Settings menu option in Azure Pipelines](../../shared/media/azure-pipelines-settings-button.png)
+1. Under **Processing of new run requests**, select **Disabled** and then select **Save**.
 
     Your pipeline will no longer process build requests.
 

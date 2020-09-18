@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.architect-compute-infrastructure
+metadata:
+  title: Architect compute infrastructure in Azure learning path
+  description: Learn how to architect compute infrastructure and solutions to automate your business processes in Azure.
+  brand: azure
+  ms.date: 10/22/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect compute infrastructure in Azure
+summary: Learn how to architect compute infrastructure and solutions to automate your business processes in Azure.
+prerequisites: |
+  - Familiarity with virtual machines
+  - Familiarity networking and storage concepts for virtual machines
+iconUrl: /learn/achievements/architect-compute-infrastructure.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-virtual-machines
+modules:
+- learn.intro-to-compute
+- learn.manage-vms-with-azure-cli
+- learn.choose-compute-provisioning
+- learn.build-azure-vm-templates
+- learn.deploy-vms-from-vhd-templates
+- learn.build-app-with-scale-sets
+- learn.choose-azure-service-to-integrate-and-automate-business-processes
+- learn.intro-to-hpc
+- learn.run-parallel-tasks-in-azure-batch-with-the-azure-cli
+trophy:
+  uid: learn.architect-compute-infrastructure.trophy

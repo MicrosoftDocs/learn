@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.secure-data-at-rest
+metadata:
+  title: Introduction to securing data at rest on Azure
+  description: Identify the data in your organization and store it on Azure. Store secrets securely, and use client-side encryption and Storage Service Encryption to help protect your data.
+  ms.date: 10/29/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to securing data at rest on Azure
+summary: Identify the data in your organization and store it on Azure. Store secrets securely, and use client-side encryption and Storage Service Encryption to help protect your data.
+abstract: |
+  In this module, you will:
+  - Identify the types of data that your organization is using and the security requirements for that data
+  - Identify the encryption capabilities for services on Azure
+prerequisites: |
+  - Basic understanding of SSL/TLS encryption
+  - Basic knowledge of Azure PaaS services
+iconUrl: /learn/achievements/secure-data-at-rest.svg
+badge:
+  uid: learn.secure-data-at-rest.badge
+levels: 
+- beginner
+roles: 
+- solution-architect
+- developer
+products:
+- azure
+- azure-sql-database
+- azure-cosmos-db
+- azure-storage
+- azure-key-vault
+units:
+- learn.secure-data-at-rest.1-introduction
+- learn.secure-data-at-rest.2-classify-data
+- learn.secure-data-at-rest.3-azure-storage-service-encryption
+- learn.secure-data-at-rest.4-secure-azure-sql-cosmos-db-data
+- learn.secure-data-at-rest.5-azure-key-vault
+- learn.secure-data-at-rest.6-summary

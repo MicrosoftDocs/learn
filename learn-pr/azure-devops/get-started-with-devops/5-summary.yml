@@ -4,6 +4,6 @@ metadata:
   title: Summary
   description: Summarize what you've learned, and discover resources to learn more.
 title: Summary
-durationInMinutes: 2
+durationInMinutes: 5
 content: |
  [!include[](includes/5-summary.md)]

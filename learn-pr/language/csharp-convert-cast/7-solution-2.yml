@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.languages.csharp-convert-cast.solution-2
+title: Second Solution
+metadata:
+  title: Second Solution
+  description: Solution to the second challenge in this module.
+  ms.date: 10/03/2019
+  author: bobtabor-msft
+  ms.author: rotabor
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+azureSandbox: false
+interactive: csharp
+content: |
+  [!include[](includes/7-solution-2.md)]

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.create-an-experiment-in-ml-studio.create-an-experiment-in-ML-studio
-title: Create an experiment
+title: Exercise - Create an experiment
 metadata:
-  title: Create an experiment
+  title: Exercise - Create an experiment
   description: Create an experiment in Azure Machine Learning Studio
   ms.date: 12/12/2018
   author: gerryaobrien

@@ -5,11 +5,18 @@ The university needs a location to store data that's currently in text files. Th
 SQL Database is a relational database service that's based on the latest stable version of Microsoft SQL Server Database Engine. SQL Database is an easy-to-use, high-performance database that's reliable and highly secure. You can use SQL Database to build new apps, websites, and microservices in the programming language of your choice, and you won't have to manage infrastructure.
 
 You can create a single database through the Azure portal or by using Azure PowerShell or CLI.
-- To use the Azure portal, select **SQL databases** under **Favorites**, or select **+Create a resource**, **Databases**, and then **SQL Database**.
-- To use CLI, run the **az sql server create** and **az sql db create** commands.
-- To use PowerShell, run the **New-AzSqlServer** and **New-AzSqlDatabase** commands.
 
-![Screenshots of the Azure portal show ways to create a new Azure SQL database.](../media/2-create-database.png)
+1. From the Azure portal menu, select **Create a resource**.
+
+    ![Screenshot of Azure portal menu and Create a resource option.](../media/2-create-a-resource.png)
+
+1. Select **Databases**, and then select **SQL Database**.
+
+    ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
+
+1. To use CLI, run the **az sql server create** and **az sql db create** commands.
+
+1. To use PowerShell, run the **New-AzSqlServer** and **New-AzSqlDatabase** commands.
 
 When you create a single database, you're prompted to specify the server to manage it. You can create a new server or use an existing server.
 

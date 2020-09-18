@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.student-evangelism.analyze-review-sentiment-with-keras.summary
-title: Summary and knowledge check
+title: Summary
 metadata:
-  title: Summary and knowledge check
+  title: Summary
   description: Confirm that you understand the steps required to build and train a neural network to analyze sentiment.
   ms.date: 02/24/2019
   author: JeffProsise

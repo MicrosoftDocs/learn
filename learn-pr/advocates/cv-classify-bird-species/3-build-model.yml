@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.advocates.cv-classify-bird-species.3-build-model
+title: Exercise - Build the model
+azureSandbox: true
+metadata:
+  title: Exercise - Build the model
+  description: Build the model
+  ms.date: 04/30/2020
+  author: cassieview
+  ms.author: cassieb
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/3-build-model.md)]

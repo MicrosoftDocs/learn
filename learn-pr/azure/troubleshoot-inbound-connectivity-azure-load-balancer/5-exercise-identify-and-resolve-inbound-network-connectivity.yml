@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-inbound-network-connectivity-azure-load-balancer.exercise-identify-and-resolve-inbound-network-connectivity
+title: Exercise - Identify and resolve inbound network connectivity
+metadata:
+  title: Exercise - Identify and resolve inbound network connectivity
+  description: Exercise - Identify and resolve inbound network connectivity
+  ms.date: 03/23/2020
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 40
+azureSandbox: false
+content: |
+  [!include[](includes/5-exercise-identify-and-resolve-inbound-network-connectivity.md)]

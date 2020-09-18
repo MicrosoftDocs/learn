@@ -2,21 +2,20 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
 
 1. Returning to your **Artworks**\* project in the Custom Vision Service portal, select the  **Performance** tab.
 
-    ![Screenshot of the top bar of the Artworks project with the Performance tab highlighted](../media/5-performance-tab.png)
+    :::image type="content" source="../media/5-performance-tab.png" alt-text="Screenshot of the top bar of the Artworks project with the Performance tab highlighted." loc-scope="other"::: <!-- "Custom vision", no-loc -->
 
 1. Select **Publish** to publish the latest iteration.
 
 1. Select **Prediction URL**. This displays a dialog of the information we need to make our calls. 
 
-    ![Screenshot of the prediction url dialog box showing the detailed information on how to use prediction API when you have image URL and when you have image file](../media/5-portal-prediction-url.png)
+    :::image type="content" source="../media/5-portal-prediction-url.png" alt-text="Screenshot of the prediction url dialog box showing the detailed information on how to use prediction API when you have image URL and when you have image file." loc-scope="other"::: <!-- "Custom vision", no-loc -->
 
     As the dialog shows, we can call the prediction endpoint and pass it an image URL. We can also pass a raw image to the endpoint in the body of the request.
 
     Take note of three pieces of information from this dialog.
-     - **Prediction-Key**: This key has to be set as a header in all requests. That's what gives us access to the endpoint.
+    - **Prediction-Key**: This key has to be set as a header in all requests. That's what gives us access to the endpoint.
     - **Request URL**: The dialog shows two different URLs. If we're posting an image URL, then use the first URL, which ends in `/url`. If we want to post a raw image in the body of our request, we use the second URL, which ends in `/image`.
     - **Content-Type**: If we're posting a raw image, we set the body of the request to the binary representation of the image and the content type to `application/octet-stream`. If we're posting an image URL, we put that as JSON in the body and set the content type to `application/json`.
-    
 
 3. Copy and save the first URL and the `Prediction-Key` value from the **How to use the Prediction API** dialog. 
 
@@ -38,7 +37,9 @@ In the last exercise, we tested our trained model using the **Quick Test** featu
     | jq '.'
     ```
 
-    When the command completes, you'll see a JSON response similar to the following screenshot. The API returns a probability for every tag in the model. As you can see, with a probability close to 1 for the `"painting"` **tagName** value, this image is definitely a painting. However, it's not a painting by any of the artists with which we trained our model. 
+    When the command completes, you'll see a JSON response similar to the following screenshot. The API returns a probability for every tag in the model. As you can see, with a probability close to 1 for the `"painting"` **tagName** value, this image is definitely a painting. However, it's not a painting by any of the artists with which we trained our model.
+
+    :::image type="content" source="../media/5-prediction-json.png" alt-text="Screenshot of a JSON response showing probability for each tag." loc-scope="other"::: <!-- "Custom vision", no-loc -->
 
     ![Screenshot of a JSON response showing probability for each tag](../media/5-prediction-json.png) 
 

@@ -28,7 +28,9 @@ A firewall is a service that grants server access based on the originating IP ad
 
 The Azure Database for PostgreSQL server firewall prevents all access to your database server until you specify which computers have permission. The firewall configuration allows you to specify a range of IP addresses that are allowed to connect to the server. The server always uses the default PostgreSQL connection information.
 
-![An illustration showing Azure Database for PostgreSQL server firewall scanning the IP address of all incoming requests. Only requests coming from a range of pre-defined valid IP addresses are forwarded to the database](../media/6-firewall-diagram.png)
+:::image type="complex" source="../media/6-firewall-diagram.png" alt-text="Illustration shows the Azure Database for PostgreSQL server firewall scanning the IP address of all incoming requests.":::
+   Illustration shows the Azure Database for PostgreSQL server firewall scanning the IP address of all incoming requests. Only requests coming from a range of pre-defined valid IP addresses are forwarded to the database.
+:::image-end:::
 
 ### Azure Database for PostgreSQL server SSL connections
 
@@ -40,9 +42,9 @@ Let's look at the decisions and steps you make to configure an Azure Database fo
 
 Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with. Navigate to the server resource for which you'd like to create a firewall rule.
 
-Then, you'll select the **Connection Security** option to open the connection security blade to the right.
+Then, you'll select the **Connection Security** option to open the connection security pane to the right.
 
-![Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource blade](../media/6-db-security-settings.png)
+:::image type="content" source="../media/6-db-security-settings.png" alt-text="Screenshot of the Azure portal showing the Connection security section of the PostgreSQL database resource pane.":::
 
 On this screen, you have several options. You can:
 

@@ -16,7 +16,7 @@ Azure Security Center enables you to see which VMs require the VM Agent and will
 1. Select a Workspace to use.
 1. Click **Save**.
 
-![Screenshot ASC Auto provisioning blade](../media/8-auto.png)
+![Screenshot ASC Auto provisioning pane](../media/8-auto.png)
 
 ### Ensure that OS disk are encrypted - Level 1
 
@@ -25,25 +25,25 @@ Azure Disk Encryption helps protect and safeguard your data to meet your organiz
 If you use Azure Security Center (recommended), you're alerted if you have VMs that aren't encrypted.
 
 1. Sign in to the Azure portal.
-1. Go to the **Virtual machines** blade.
+1. Go to the **Virtual machines** pane.
 1. For each VM, go to **Settings**.
 1. Select **Disks**.
 1. Ensure that the **OS disk** has encryption set to **Enabled**.
 1. Ensure that each disk under **Data disks** has encryption set to **Enabled**.
 
-![Screenshot VM disk encryption blade](../media/8-asc-disk-encryption.png)
+![Screenshot VM disk encryption pane](../media/8-asc-disk-encryption.png)
 
 ### Ensure only approved extensions are installed - Level 1
 
 Azure virtual machine (VM) extensions are small applications that provide post-deployment configuration and automation tasks on Azure VMs. For example, if a virtual machine requires software installation, anti-virus protection, or to run a script inside of it, a VM extension can be used. Azure VM extensions can be run with the Azure CLI, PowerShell, Azure Resource Manager templates, and the Azure portal. Extensions can be bundled with a new VM deployment, or run against any existing system.
 
 1. Sign in to the Azure portal.
-1. Go to the **Virtual machines** blade.
+1. Go to the **Virtual machines** pane.
 1. For each VM, go to **Settings**.
 1. Select **Extensions**.
 1. Ensure that the listed extensions are approved for use.
 
-![Screenshot of VM Extensions blade](../media/8-extensions.png)
+![Screenshot of VM Extensions pane](../media/8-extensions.png)
 
 ### Ensure that the OS patches for the VMs are applied - Level 1
 
@@ -54,11 +54,11 @@ Azure Security Center monitors daily Windows and Linux virtual machines (VMs) an
 1. Go to **Security Center - Recommendations**.
 1. Ensure that there are no recommendations for **Apply system updates**.
 
-![Screenshot of ASC Recommendations blade](../media/8-asc-recommend.png)
+![Screenshot of ASC Recommendations pane](../media/8-asc-recommend.png)
 
 ### Ensure that VMs have an installed and running endpoint protection solution - Level 1
 
-Azure Security Center monitors the status of antimalware protection and reports this under the Endpoint protection issues blade. Security Center highlights issues, such as detected threats and insufficient protection, which can make your virtual machines (VMs) and computers vulnerable to antimalware threats. By using the information under Endpoint protection issues, you can identify a plan to address any issues identified.
+Azure Security Center monitors the status of antimalware protection and reports this under the Endpoint protection issues pane. Security Center highlights issues, such as detected threats and insufficient protection, which can make your virtual machines (VMs) and computers vulnerable to antimalware threats. By using the information under Endpoint protection issues, you can identify a plan to address any issues identified.
 
 1. Use the same process as described in the previous recommendation.
 

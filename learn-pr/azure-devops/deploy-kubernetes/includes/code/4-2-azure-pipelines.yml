@@ -1,0 +1,6 @@
+variables:
+  buildConfiguration: 'Release'
+  leaderboardRepository: 'leaderboard'
+  webRepository: 'web'
+  tag: '$(Build.BuildId)'
+  imagePullSecret: 'secret'

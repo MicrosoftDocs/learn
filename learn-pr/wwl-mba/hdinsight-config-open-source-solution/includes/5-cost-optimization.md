@@ -1,0 +1,7 @@
+The first step in the cost optimization of HDInsight is selecting the correct cluster type for the workload being serviced. Choosing the wrong cluster type can lead to longer processing times, with more compute being used than is required. This results in costs that may not be appropriate to the activity being performed and may be excessive for the operation.  
+
+Previously, selecting the correct size of cluster was also as important to ensure that your workloads can be serviced quickly at peak demand. However, selecting the cluster size was fixed. It could not be changed without stopping the cluster and manually reprovisioning it with the new size. These steps were inconvenient and would delay the processing of data.  
+
+In recent times, HDInsight has introduced an autoscaling feature that scales the compute of the cluster to meet on demand processing needs.  The autoscaling feature enables you to scale up the HDInsight cluster during peak demand and scale down when the operations are relatively quiet. This feature ensures that you can minimize your spend in line with the demand that your HDInsight setup is servicing.  
+
+You should delete clusters that are not in use. You can monitor the HDInsight Cluster using either Apache Ambari or Azure Monitor to identify the clusters that are not being utilized.

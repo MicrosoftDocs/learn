@@ -3,21 +3,20 @@ set -e
 
 # Select a default .NET version if one is not specified
 if [ -z "$DOTNET_VERSION" ]; then
-  DOTNET_VERSION=2.1.505
+  DOTNET_VERSION=3.1.300
 fi
 
 # Add the Node.js PPA so that we can install the latest version
-curl -sL https://deb.nodesource.com/setup_10.x | bash -
+curl -sL https://deb.nodesource.com/setup_14.x | bash -
 
-# Install Node.js (which includes npm)
-apt-get install -y nodejs
+# Install Node.js, npm, and jq
+apt-get install -y nodejs npm jq
 
 # Install gulp
 npm install -g gulp
 
-# Change ownership of npm directories to the sudo (non-root) user
+# Change ownership of the .npm directory to the sudo (non-root) user
 chown -R $SUDO_USER ~/.npm
-chown -R $SUDO_USER ~/.config
 
 # Install .NET as the sudo (non-root) user
 sudo -i -u $SUDO_USER bash << EOF

@@ -14,7 +14,7 @@ The properties folder contains configuration data for where you are hosting your
 
 ### wwwroot
 
-The wwwroot file contains all of your static assets for your site, such as the .css, .js, images, and .lib files. When you are ready to style and add more functionality to your site, you will work in here.
+The wwwroot file contains all of your static assets for your site, such as the css, js, images, and lib files. When you are ready to style and add more functionality to your site, you will work in here.
 
 ### Pages
 
@@ -31,17 +31,13 @@ Each page in your site is represented with two code files:
 
 This is a configuration file for ASP.NET Core.
 
-### bundleconfig.json
-
-The bundleconfig.json is preprocessing configuration. This file is making your .css and .js files smaller when they are published.
-
 ### Program.cs and Startup.cs
 
 Program.cs and Startup.cs configure and launch your web host for your site.
 
 ## Introduction to Razor templates
 
-We will want to make some basic changes to our website. In order to do this, you will need to have a basic understanding of how to leverage the Razor templates to customize your web app.
+We will want to make some basic changes to our website. You will need to have a basic understanding of how to leverage the Razor templates to customize your web app.
 
 ## What is Razor?
 
@@ -49,24 +45,24 @@ Razor is an ASP.NET syntax used to create dynamic web pages with C#. When a serv
 
 Razor uses `@` directives to tell ASP.NET how to process a page.
 
-For example, take a look at the code in the `Contact.cshtml` page:
+For example, take a look at the code in the `Privacy.cshtml` page:
 
 ```aspx-csharp
 @page
-@model ContactModel
+@model PrivacyModel
 @{
-    ViewData["Title"] = "Contact";
+    ViewData["Title"] = "Privacy Policy";
 }
-<h2>@ViewData["Title"]</h2>
-<h3>@Model.Message</h3>
-...
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
 ```
 
 - The `@page` directive is telling ASP.NET to process this file as a Razor page.
-- The `@model` directive is telling ASP.NET to tie this Razor page with a C# class called `ContactModel`.
+- The `@model` directive is telling ASP.NET to tie this Razor page with a C# class called `PrivacyModel`.
 
-Razor also uses the `@` symbol to transition between code and HTML. If you look at the snippet above, you'll notice `@{ ... }`. This is a **Razor code block**. It's code which is _executed but not rendered_.
+Razor also uses the `@` symbol to transition between code and HTML. If you look at the preceding snippet, you'll notice `@{ ... }`. This is a **Razor code block**. It's code that is _executed but not rendered_.
 
-To render the output of a code statement, we use the `@` in front of a C# expression. We have two examples of that in the code block above in the `<h2>` and `<h3>` tags.
+To render the output of a code statement, use the `@` in front of a C# expression. There's one example in the preceding code block in the `<h1>` tag.
 
 Creating and publishing a website are just the first steps in creating a good website. Once you start to add content, you'll need to update your site. Once you've initially published your site to Azure, you can update at any time.

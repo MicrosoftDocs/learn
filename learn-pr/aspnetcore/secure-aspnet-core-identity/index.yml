@@ -29,11 +29,11 @@ levels:
 roles:
 - developer
 products:
-- azure
 - dotnet
 - aspnet-core
 - dotnet-core
 - ef-core
+- azure
 units:
 - learn.secure-aspnet-core-identity.1-introduction
 - learn.secure-aspnet-core-identity.2-setup-environment

@@ -1,42 +1,40 @@
-In this module, you'll add functional tests &mdash; tests that verify an application's behavior &mdash; to the pipeline.
+In this module, you'll add functional tests to the pipeline. These tests verify an application's behavior.
 
-In [Create a multi-stage pipeline with Azure Pipelines](/learn/modules/create-multi-stage-pipeline?azure-portal=true), you helped the Tailspin web team design and build a release management workflow. This workflow enables the team to move changes through a series of stages, such as the _Dev_ stage and the _Test_ stage, all the way out to a _Staging_ environment that resembles production.
+In the [Manage database changes in Azure Pipelines](/learn/modules/manage-database-changes-in-azure-pipelines?azure-portal=true) module, you helped the Tailspin Toys web team connect their web application to Azure SQL Database. You also used a release approval to help the developers and the database administrator manage changes to the database schema.
 
-The stages that you and the team defined provide the overall shape of your pipeline, but there's more that you can add to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_, where management can review the new features and decide if they want to make the release publicly available.
+The stages that you and the team defined provide the overall shape of your pipeline. But you can add more to each stage. For example, in the _Test_ stage, Amita still tests the web application manually as she always has. When she's satisfied, she manually promotes the application to _Staging_. In _Staging_, management reviews the new features and decides whether to make the release publicly available.
 
-In [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true), you incorporated unit and code coverage tests into the build process. These help ensure that there are no regression bugs and that the code meets a company's standards for quality and style. But what kinds of tests can you run once a service is operational and actually deployed to an environment?
+In the [Run quality tests in your build pipeline using Azure Pipelines](/learn/modules/run-quality-tests-build-pipeline?azure-portal=true) module, you incorporated unit and code coverage tests into the build process. These tests help avoid regression bugs and ensure that the code meets the company's standards for quality and style. But what kinds of tests can you run after a service is operational and deployed to an environment?
 
 ## Learning objectives
 
 In this module, you will:
 
-- Define what functional tests are and identify some of the more popular kinds of tests you can run.
+- Define functional tests and identify some popular kinds of tests.
 - Map manual testing steps to automated test cases.
-- Run automated UI tests locally and in the pipeline with Selenium.
+- Run automated UI tests locally and in the pipeline by using Selenium.
 
 ## Prerequisites
 
-The modules in this learning path form a progression.
-
-To follow the progression from the beginning, be sure to first complete these learning paths:
+The modules in this learning path form a progression. To follow the progression from the beginning, complete these learning paths first:
 
 * [Evolve your DevOps practices](/learn/paths/evolve-your-devops-practices?azure-portal=true)
 * [Build applications with Azure DevOps](/learn/paths/build-applications-with-azure-devops?azure-portal=true)
 
-We also recommend you start at the beginning of this learning path, [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true).
+We also recommend that you start at the beginning of the [Deploy applications with Azure DevOps](/learn/paths/deploy-applications-with-azure-devops?azure-portal=true) learning path.
 
-If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need:
+If you want to go through just this module, you need to set up a development environment on your Windows, macOS, or Linux system. You need these assets:
 
-* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true)
-* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true)
-* A [GitHub](https://github.com/join?azure-portal=true) account
-* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true)
-* [.NET Core 2.1](https://www.microsoft.com/net/download?azure-portal=true)
-* [Git](https://git-scm.com/downloads?azure-portal=true)
+* An [Azure DevOps organization](https://dev.azure.com?azure-portal=true).
+* An [Azure subscription](https://azure.microsoft.com/free/?azure-portal=true).
+* A [GitHub](https://github.com/join?azure-portal=true) account.
+* [Visual Studio Code](https://code.visualstudio.com?azure-portal=true).
+* [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1?azure-portal=true).
+* [Git](https://git-scm.com/downloads?azure-portal=true).
 
-You can get started with Azure and Azure DevOps for free.
+You can get started with Azure and Azure DevOps for free. You don't need an Azure subscription to work with Azure DevOps, but here you'll use Azure DevOps to deploy to resources that exist in your Azure subscription.
 
-This environment lets you complete the exercises in this and future modules. You can also use it to apply your new skills to your own projects.
+This environment lets you complete the exercises in this module and future modules. You can also use it to apply your new skills to your own projects.
 
 [!include[](../../shared/includes/project-details-note.md)]
 
@@ -56,4 +54,4 @@ You met the _Space Game_ web team at Tailspin Toys in previous modules. As a ref
 
 :::row-end:::
 
-Mara has prior experience with DevOps and is helping the team adopt a more automated process that uses Azure DevOps.
+Mara has prior experience with DevOps. She's helping the team adopt a more automated process that uses Azure DevOps.

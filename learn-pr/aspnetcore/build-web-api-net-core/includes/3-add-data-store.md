@@ -3,10 +3,10 @@ A type of class called a *Model* is needed to represent a dog toy in inventory. 
 An in-memory database is used in this unit for simplicity. Choose a different data store for production environments, such as SQL Server or Azure SQL Database.
 
 > [!IMPORTANT]
-> If the Cloud Shell session ever times out or disconnects, reconnect and run the following command after reconnecting to set the working directory to *:::no-loc text="~/contoso-pets/src/ContosoPets.Api":::* and launch the editor:
+> If the Cloud Shell session ever times out or disconnects, reconnect and run the following command after reconnecting to set the working directory to *:::no-loc text="~/aspnet-learn/src/ContosoPets.Api":::* and launch the editor:
 >
 > ```bash
-> cd ~/contoso-pets/src/ContosoPets.Api && code .
+> cd ~/aspnet-learn/src/ContosoPets.Api && code .
 > ```
 
 1. Run the following command:
@@ -131,12 +131,12 @@ An in-memory database is used in this unit for simplicity. Choose a different da
                         new Product
                         {
                             Name = "Squeaky Bone",
-                            Price = 20.99m
+                            Price = 20.99m,
                         },
                         new Product
                         {
                             Name = "Knotted Rope",
-                            Price = 12.99m
+                            Price = 12.99m,
                         }
                     );
 
@@ -180,22 +180,19 @@ An in-memory database is used in this unit for simplicity. Choose a different da
             private static void SeedDatabase(IHost host)
             {
                 var scopeFactory = host.Services.GetRequiredService<IServiceScopeFactory>();
+                using var scope = scopeFactory.CreateScope();
+                var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
 
-                using (var scope = scopeFactory.CreateScope())
+                if (context.Database.EnsureCreated())
                 {
-                    var context = scope.ServiceProvider.GetRequiredService<ContosoPetsContext>();
-
-                    if (context.Database.EnsureCreated())
+                    try
                     {
-                        try
-                        {
-                            SeedData.Initialize(context);
-                        }
-                        catch (Exception ex)
-                        {
-                            var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-                            logger.LogError(ex, "A database seeding error occurred.");
-                        }
+                        SeedData.Initialize(context);
+                    }
+                    catch (Exception ex)
+                    {
+                        var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+                        logger.LogError(ex, "A database seeding error occurred.");
                     }
                 }
             }

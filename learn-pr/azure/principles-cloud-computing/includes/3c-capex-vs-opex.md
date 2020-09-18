@@ -8,7 +8,7 @@ These two approaches to investment are referred to as:
 
 ## CapEx computing costs
 
-A typical on-premises data center includes costs such as:
+A typical on-premises datacenter includes costs such as:
 
 ### Server costs
 
@@ -28,15 +28,15 @@ This is the cost to back up, copy, or archive data. Options might include settin
 
 ### Organization continuity and disaster recovery costs
 
-Along with server fault tolerance and redundancy, you need to plan for how to recover from a disaster and continue operating. Your plan should consist of creating a data recovery site. It could also include backup generators. Most of these are upfront costs, especially if you build a data recovery site, but there's an additional ongoing cost for the infrastructure and its maintenance.
+Along with server fault tolerance and redundancy, you need to plan for how to recover from a disaster and continue operating. Your plan should consist of creating a disaster recovery site. It could also include backup generators. Most of these are upfront costs, especially if you build a disaster recovery site, but there's an additional ongoing cost for the infrastructure and its maintenance.
 
 ### Datacenter infrastructure costs
 
-These are costs for electricity, floor space, cooling, and building maintenance.
+These are costs for construction and building equipment, as well as future renovation and remodeling costs that may arise as demands grow. Additionally, this infrastructure incurs operational expenses for electricity, floor space, cooling, and building maintenance.
 
 ### Technical personnel
 
-Based on the technology used, you'll need technical expertise and workforce to install, deploy, and manage the systems in the datacenter and at the data recovery site.
+While not a capital expenditure, the personnel required to work on your infrastructure are specific to on-premises datacenters. You will need the technical expertise and workforce to install, deploy, and manage the systems in the datacenter and at the disaster recovery site.
 
 ## OpEx cloud computing costs
 
@@ -48,7 +48,7 @@ Using a pay-per-use model requires actively managing your subscriptions to ensur
 
 ### Scaling charges based on usage/demand instead of fixed hardware or capacity. 
 
-Cloud computing can bill in various ways, such as the number of users or CPU usage time. However, billing categories can also include allocated RAM, I/O operations per second (IOPS), and storage space. Plan for backup traffic and data recovery traffic to determine the bandwidth needed.
+Cloud computing can bill in various ways, such as the number of users or CPU usage time. However, billing categories can also include allocated RAM, I/O operations per second (IOPS), and storage space. Plan for backup traffic and disaster recovery traffic to determine the bandwidth needed.
 
 ### Billing at the user or organization level.
 
@@ -62,7 +62,9 @@ With capital expenditures, you plan your expenses at the start of a project or b
 
 Demand and growth can be unpredictable and can outpace expectation, which is a challenge for the CapEx model as shown in the following graph.
 
-![A graph showing how expected demand can be different from real demand and how CapEx infrastructure can be exceeded by demand.](../media/3c-capexvsopex.png)
+:::image type="complex" source="../media/3c-capexvsopex.png" alt-text="A graph showing how expected demand can be different from real demand and how CapEx infrastructure can be exceeded by demand.":::
+    Graph shows costs versus time, with time on the horizontal axis. Lines are plotted for demand prediction, actual demand costs, capital expenditure costs, and auto scaled costs. The demand prediction goes up linearly over time. Actual costs form an increasing sine wave style plotting. Capital expenditure costs go up in a stairstep shape as infrustructure is added to meet exceeded actual demand. Auto scaled costs nearly align to the sine wave style curve of the actual demand.
+:::image-end:::
 
 With the OpEx model, companies wanting to try a new product or service don't need to invest in equipment. Instead, they pay as much or as little for the infrastructure as required. 
 

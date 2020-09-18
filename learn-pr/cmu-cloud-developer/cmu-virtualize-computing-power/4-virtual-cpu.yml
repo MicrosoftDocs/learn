@@ -1,0 +1,65 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-computing-power.4-virtual-cpu
+title: Use virtual CPUs
+metadata:
+  title: Use virtual CPUs
+  description: Use virtual CPUs
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-virtual-cpu.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is a virtual machine with a width of 12 called?"
+    choices:
+    - content: "A uniprocessor virtual machine"
+      isCorrect: false
+      explanation: "Incorrect. A uniprocessor virtual machine has a width of 1. The width represents the amount of vCPUs of a VM."
+    - content: "A symmetric multiprocessor virtual machine"
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "At different points in time, a vCPU can run at different pCPUs."
+    choices:
+    - content: "True"
+      isCorrect: true
+      explanation: "Correct!"    
+    - content: "False"
+      isCorrect: false
+      explanation: "Incorrect. Think about whether this is feasible. At a certain point in time, a vCPU can be scheduled at only one pCPU. At different quanta of time, the same vCPU can be scheduled at different pCPUs."
+
+  - content: "Assume an SEDF scheduler has the following three vCPUs:<ul><li>vCPU1: slice = 20 ms and period = 100 ms</li><li>vCPU2: slice = 2 ms and period = 10 ms</li><li>vCPU3: slice = 5 ms and period = 10 ms</li></ul>Assume all of the vCPUs are in the ready state. Which of the three vCPUs will be selected next by SEDF?"
+    choices:
+    - content: "vCPU1"
+      isCorrect: false
+      explanation: "Incorrect. vCPU1 has the latest deadline for starting its quantum. Which vCPU has the earliest deadline to start its quantum?"
+    - content: "vCPU2"
+      isCorrect: false
+      explanation: "Incorrect. vCPU2 has the earliest deadline for starting its quantum, but can wait for 8 ms. Which vCPU has the earliest deadline to start its quantum?"      
+    - content: "vCPU3"
+      isCorrect: true
+      explanation: "Correct!"
+
+  - content: "Assume a machine with one pCPU and a credit scheduler has the following two vCPUs:<ul><li>vCPU1: weight = 128 and cap = 25%</li><li>vCPU2: weight = 256 and no cap</li></ul>Which of the following statements is correct?"
+    choices:
+    - content: "vCPU2 will get twice as much pCPU time as vCPU1 until vCPU1 reaches its cap of 25%."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "vCPU1 will get a quarter as much pCPU time as vCPU2 until it reaches its cap of 25%."
+      isCorrect: false
+      explanation: "Incorrect. vCPU1 will receive half the shares of vCPU2 because vCPU2 has a weight that is double that of vCPU1. Recall the relation between two weighted vCPUs and the definition of cap."
+    - content: "vCPU1 will get half as much pCPU time as vCPU2 all the time and for 100% of the pCPU capacity."
+      isCorrect: false
+      explanation: "Incorrect. vCPU1 is capped. The cap in the credit scheduler represents a proportion of the total pCPU that can be used by a certain vCPU. Recall the relation between two weighted vCPUs and the definition of cap."
+    - content: "vCPU1 will get half as much pCPU time as vCPU2 until vCPU2 reaches a cap of 75%."
+      isCorrect: false
+      explanation: "Incorrect. vCPU2 is not capped. Recall the relation between two weighted vCPUs and the definition of cap."
+    - content: "vCPU1 will get half as much pCPU time as vCPU2 until vCPU2 reaches a cap of 25%."
+      isCorrect: false
+      explanation: "Incorrect. vCPU2 is not capped. Recall the relation between two weighted vCPUs and the definition of cap."

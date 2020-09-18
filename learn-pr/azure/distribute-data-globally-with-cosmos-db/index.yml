@@ -2,7 +2,7 @@
 uid: learn.distribute-data-globally-with-cosmos-db
 metadata:
   title: Distribute your data globally with Azure Cosmos DB
-  description: Learn how to distribute your data globally with Azure Cosmos DB.
+  description: Discover the benefits of writing and replicating customized data to regions around the world with Azure Cosmos DB global distribution.
   ms.date: 09/24/2018
   author: rmcmurray
   ms.author: robmcm
@@ -15,7 +15,6 @@ abstract: |
     - Learn about the benefits of writing and replicating data to multiple regions around the world
     - Change the read and write priorities for the regions in which your data is located
     - Change the consistency setting for your database
-cardDescription: Distribute your data globally with Azure Cosmos DB
 prerequisites: None
 iconUrl: /learn/achievements/distribute-data-globally-with-cosmos-db.svg
 levels:

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-admin.cmu-monitor-cloud-resources.4-remediation-planning
+title: Remediation planning
+metadata:
+  title: Remediation planning
+  description: Remediation planning
+  ms.date: 1/15/2019
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/4-remediation-planning.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+    - content: "The primary objective of a key performance indicator (KPI) is to:"
+      
+      choices:
+      - content: "Trigger an action such as a warning or alert when something is wrong or is about to go wrong"
+        isCorrect: true
+        explanation: "Correct!"
+      - content: "Log problems and the actions taken to correct them in a persistent data store for later analysis"
+        isCorrect: false
+        explanation: "Incorrect. The primary objective of a KPI is to make sure administrators are notified when something is wrong or is about to go wrong."
+      - content: "Quantify the performance of a system as it relates to one of the following: health, success in meeting business objectives, user satisfaction, or speed in mitigating problems"
+        isCorrect: false
+        explanation: "Incorrect. The primary objective of a KPI is to make sure administrators are notified when something is wrong or is about to go wrong."
+      - content: "Determine who to blame when a system goes down"
+        isCorrect: false
+        explanation: "Incorrect. The primary objective of a KPI is to make sure administrators are notified when something is wrong or is about to go wrong."
+
+    - content: "The basic principle of everyday remediation is to:"
+      choices:
+      - content: "Ensure that system administrators are aware when problems occur that affect the responsiveness of a system or its ability  to serve business objectives."
+        isCorrect: false
+        explanation: "Incorrect. The primary goal of everyday remediation is to continually make improvements to a system to head off problems before they occur."
+      - content: "Ensure that system administrators are aware when the ratio of requests processed to requests received falls below a specified threshold, usually 50%."
+        isCorrect: false
+        explanation: "Incorrect. The primary goal of everyday remediation is to continually make improvements to a system to head off problems before they occur."
+      - content: "Use performance metrics of various types to promptly mitigate breakages when they occur, and to identify trends in the IT department's response time."
+        isCorrect: false
+        explanation: "Incorrect. The primary goal of everyday remediation is to continually make improvements to a system to head off problems before they occur."
+      - content: "Use performance metrics of various types to continually improve a system, even when it hasn't reached a breaking point."
+        isCorrect: true
+        explanation: "Correct! The primary goal of everyday remediation is to continually make improvements to a system to head off problems before they occur."

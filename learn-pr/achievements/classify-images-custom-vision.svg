@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Explore computer vision in Microsoft Azure/classify-images-with-the-custom-vision-service</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <filter x="-2.9%" y="-2.9%" width="106.4%" height="106.4%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="2.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0.5" dy="0.5" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.821822822   0 0 0 0 0.831640661   0 0 0 0 0.835737288  0 0 0 1 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-4">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-5" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <path d="M47.1698113,0 C73.2209788,0 94.3396226,21.1186439 94.3396226,47.1698113 C94.3396226,73.2209788 73.2209788,94.3396226 47.1698113,94.3396226 C21.1186439,94.3396226 0,73.2209788 0,47.1698113 C0,21.1186439 21.1186439,0 47.1698113,0 Z M47.1698113,3.77358491 C23.2027373,3.77358491 3.77358491,23.2027373 3.77358491,47.1698113 C3.77358491,71.1368854 23.2027373,90.5660377 47.1698113,90.5660377 C71.1368854,90.5660377 90.5660377,71.1368854 90.5660377,47.1698113 C90.5660377,23.2027373 71.1368854,3.77358491 47.1698113,3.77358491 Z" id="path-6"></path>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-8">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0001648%" y1="5.51438126e-05%" x2="50.0001648%" y2="100.00009%" id="linearGradient-9">
+            <stop stop-color="#00ABDE" offset="0%"></stop>
+            <stop stop-color="#007ED8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-11">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-12">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0001648%" y1="5.51438126e-05%" x2="50.0001648%" y2="100.00009%" id="linearGradient-13">
+            <stop stop-color="#28B2EF" offset="0%"></stop>
+            <stop stop-color="#40C4F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="14.033217%" x2="50.0140555%" y2="75.7604863%" id="linearGradient-14">
+            <stop stop-color="#5D2BAF" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="38%"></stop>
+            <stop stop-color="#B77AF4" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0001648%" y1="5.51438126e-05%" x2="50.0001648%" y2="100.00009%" id="linearGradient-15">
+            <stop stop-color="#00ABDE" offset="0%"></stop>
+            <stop stop-color="#007ED8" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-16">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0140555%" y1="2.51545844e-15%" x2="50.0140555%" y2="100.054352%" id="linearGradient-17">
+            <stop stop-color="#B77AF4" offset="0%"></stop>
+            <stop stop-color="#8C4FE4" offset="62%"></stop>
+            <stop stop-color="#773ADC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-18">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-19">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#22A5CB" offset="11%"></stop>
+            <stop stop-color="#29BADE" offset="23%"></stop>
+            <stop stop-color="#2EC9EB" offset="37%"></stop>
+            <stop stop-color="#31D1F3" offset="53%"></stop>
+            <stop stop-color="#32D4F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-20">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-21">
+            <stop stop-color="#F0FFFD" offset="0%"></stop>
+            <stop stop-color="#D2EBFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50.0001648%" y1="5.51438126e-05%" x2="50.0001648%" y2="100.00009%" id="linearGradient-22">
+            <stop stop-color="#28B2EF" offset="0%"></stop>
+            <stop stop-color="#40C4F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-23">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Explore-computer-vision-in-Microsoft-Azure" transform="translate(-160.000000, -700.000000)">
+            <g id="Explore-computer-vision-in-Microsoft-Azure/classify-images-with-the-custom-vision-service" transform="translate(160.000000, 700.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                            <rect stroke="#F2F1F0" stroke-width="2.5" x="-1.25" y="-1.25" width="96.8396226" height="96.8396226" rx="48.4198113"></rect>
+                        </g>
+                        <g id="Colors/Azure/BG-Solid-Badges" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-5"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Azure/Border" mask="url(#mask-7)" fill="#27C0F5">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                </g>
+                <path d="M52,26.6086957 L45.5,26.8 L45.5,72.029106 L52,72.029106 M52,50 L40.7564103,50" id="Path-51" stroke="#FFFFFF"></path>
+                <g id="Group" transform="translate(11.000000, 36.000000)">
+                    <g id="Group-2">
+                        <rect id="Rectangle" fill="url(#linearGradient-8)" x="0" y="0" width="25" height="17.9347826" rx="1"></rect>
+                        <path d="M1.77967539,15.6187645 L22.7564103,15.6187645 L19.8702715,7.7629468 L18.011072,10.5445677 L14.4177132,5.22349272 L10.283914,12.2230888 C7.20864503,11.1325091 4.97892581,11.4927365 3.59475633,13.303771 C2.21058684,15.1148054 1.60555986,15.8864699 1.77967539,15.6187645 Z" id="Path-32" fill="url(#linearGradient-9)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-10)" cx="5.25147929" cy="5.22349272" rx="1.7504931" ry="1.74116424"></ellipse>
+                    </g>
+                    <g id="Group-2" transform="translate(2.500000, 3.333333)">
+                        <rect id="Rectangle" fill="url(#linearGradient-11)" x="0" y="0" width="25" height="17.9347826" rx="1"></rect>
+                        <path d="M1.77967539,15.6187645 L22.7564103,15.6187645 L19.8702715,7.7629468 L18.011072,10.5445677 L14.4177132,5.22349272 L10.283914,12.2230888 C7.20864503,11.1325091 4.97892581,11.4927365 3.59475633,13.303771 C2.21058684,15.1148054 1.60555986,15.8864699 1.77967539,15.6187645 Z" id="Path-32" fill="url(#linearGradient-9)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-10)" cx="5.25147929" cy="5.22349272" rx="1.7504931" ry="1.74116424"></ellipse>
+                    </g>
+                    <g id="Group-2" transform="translate(5.000000, 5.833333)">
+                        <rect id="Rectangle" fill="url(#linearGradient-12)" x="0" y="0" width="25" height="17.9347826" rx="1"></rect>
+                        <path d="M1.77967539,15.6187645 L22.7564103,15.6187645 L19.8702715,7.7629468 L18.011072,10.5445677 L14.4177132,5.22349272 L10.283914,12.2230888 C7.20864503,11.1325091 4.97892581,11.4927365 3.59475633,13.303771 C2.21058684,15.1148054 1.60555986,15.8864699 1.77967539,15.6187645 Z" id="Path-32" fill="url(#linearGradient-9)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-13)" cx="5.25147929" cy="5.22349272" rx="1.7504931" ry="1.74116424"></ellipse>
+                    </g>
+                </g>
+                <g id="Group-4" transform="translate(52.000000, 62.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 0.000000)">
+                        <rect id="Rectangle" fill="url(#linearGradient-14)" x="0" y="0" width="24" height="17.2173913" rx="1"></rect>
+                        <path d="M1.70848837,14.9940139 L21.8461538,14.9940139 L19.0754607,7.45242893 L17.2906291,10.122785 L13.8410047,5.01455301 L9.87255741,11.7341652 C6.92029923,10.6872088 4.77976878,11.0330271 3.45096607,12.7716201 C2.12216337,14.5102132 1.54133746,15.2510111 1.70848837,14.9940139 Z" id="Path-32" fill="url(#linearGradient-15)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-16)" cx="5.04142012" cy="5.01455301" rx="1.68047337" ry="1.67151767"></ellipse>
+                    </g>
+                    <g id="Group-2" transform="translate(2.000000, 2.000000)">
+                        <rect id="Rectangle" fill="url(#linearGradient-17)" x="0" y="0" width="24" height="17.2173913" rx="1"></rect>
+                        <path d="M1.70848837,14.9940139 L21.8461538,14.9940139 L19.0754607,7.45242893 L17.2906291,10.122785 L13.8410047,5.01455301 L9.87255741,11.7341652 C6.92029923,10.6872088 4.77976878,11.0330271 3.45096607,12.7716201 C2.12216337,14.5102132 1.54133746,15.2510111 1.70848837,14.9940139 Z" id="Path-32" fill="url(#linearGradient-18)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-16)" cx="5.04142012" cy="5.01455301" rx="1.68047337" ry="1.67151767"></ellipse>
+                    </g>
+                </g>
+                <g id="Group-5" transform="translate(52.000000, 40.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 0.000000)">
+                        <rect id="Rectangle" fill="url(#linearGradient-19)" x="0" y="0" width="24" height="17.2173913" rx="1"></rect>
+                        <path d="M1.70848837,14.9940139 L21.8461538,14.9940139 L19.0754607,7.45242893 L17.2906291,10.122785 L13.8410047,5.01455301 L9.87255741,11.7341652 C6.92029923,10.6872088 4.77976878,11.0330271 3.45096607,12.7716201 C2.12216337,14.5102132 1.54133746,15.2510111 1.70848837,14.9940139 Z" id="Path-32" fill="url(#linearGradient-15)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-16)" cx="5.04142012" cy="5.01455301" rx="1.68047337" ry="1.67151767"></ellipse>
+                    </g>
+                    <g id="Group-2" transform="translate(2.000000, 2.000000)">
+                        <rect id="Rectangle" fill="url(#linearGradient-20)" x="0" y="0" width="24" height="17.2173913" rx="1"></rect>
+                        <path d="M1.70848837,14.9940139 L21.8461538,14.9940139 L19.0754607,7.45242893 L17.2906291,10.122785 L13.8410047,5.01455301 L9.87255741,11.7341652 C6.92029923,10.6872088 4.77976878,11.0330271 3.45096607,12.7716201 C2.12216337,14.5102132 1.54133746,15.2510111 1.70848837,14.9940139 Z" id="Path-32" fill="url(#linearGradient-15)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-16)" cx="5.04142012" cy="5.01455301" rx="1.68047337" ry="1.67151767"></ellipse>
+                    </g>
+                </g>
+                <g id="Group-6" transform="translate(52.000000, 18.000000)">
+                    <g id="Group-2" transform="translate(0.000000, 0.000000)">
+                        <rect id="Rectangle" fill="url(#linearGradient-21)" x="0" y="0" width="24" height="17.2173913" rx="1"></rect>
+                        <path d="M1.70848837,14.9940139 L21.8461538,14.9940139 L19.0754607,7.45242893 L17.2906291,10.122785 L13.8410047,5.01455301 L9.87255741,11.7341652 C6.92029923,10.6872088 4.77976878,11.0330271 3.45096607,12.7716201 C2.12216337,14.5102132 1.54133746,15.2510111 1.70848837,14.9940139 Z" id="Path-32" fill="url(#linearGradient-15)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-22)" cx="5.04142012" cy="5.01455301" rx="1.68047337" ry="1.67151767"></ellipse>
+                    </g>
+                    <g id="Group-2" transform="translate(2.000000, 2.000000)">
+                        <rect id="Rectangle" fill="url(#linearGradient-23)" x="0" y="0" width="24" height="17.2173913" rx="1"></rect>
+                        <path d="M1.70848837,14.9940139 L21.8461538,14.9940139 L19.0754607,7.45242893 L17.2906291,10.122785 L13.8410047,5.01455301 L9.87255741,11.7341652 C6.92029923,10.6872088 4.77976878,11.0330271 3.45096607,12.7716201 C2.12216337,14.5102132 1.54133746,15.2510111 1.70848837,14.9940139 Z" id="Path-32" fill="url(#linearGradient-15)"></path>
+                        <ellipse id="Oval" fill="url(#linearGradient-22)" cx="5.04142012" cy="5.01455301" rx="1.68047337" ry="1.67151767"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

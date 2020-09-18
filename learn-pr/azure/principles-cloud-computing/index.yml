@@ -2,7 +2,7 @@
 uid: learn.principles-cloud-computing
 metadata:
   title: Cloud Concepts - Principles of cloud computing
-  description: Explore the core concepts of cloud computing and how it can help your business.
+  description: Explore the core concepts and benefits of cloud computing as you learn how to choose a cloud deployment model customized for your organization.
   ms.date: 09/24/2018
   author: patridge 
   ms.author: adpatrid
@@ -25,6 +25,7 @@ roles:
 - business-user
 - developer
 - solution-architect
+- student
 products:
 - azure
 - azure-portal

@@ -1,8 +1,9 @@
 ### YamlMime:Module
 uid: learn.intro-to-azure-databricks
+hidden: true
 metadata:
   title: Intro to Azure Databricks
-  description: Learn the fundamentals of Azure Databricks and Apache Spark notebooks.
+  description: Discover the capabilities of Azure Databricks and the Apache Spark notebook for processing huge data files.
   ms.date: 02/20/2019
   author: jasallen
   ms.author: jasdeb

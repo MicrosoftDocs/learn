@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-lighthouse.5-video-cross-tenant-management
+metadata:
+  title: Set up cross-tenant management
+  description: See how to create a cross-tenant management for your customers.
+  ms.date: 01/08/2020
+  author: iankensey
+  ms.author: v-geo
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Set up cross-tenant management
+durationInMinutes: 12
+content: |
+  [!include[](includes/5-video-cross-tenant-management.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: 'As Contoso, how would you find the customers you have onboarded?'
+    choices:
+    - content: From the Onboarded Customers page.
+      isCorrect: false
+      explanation: That's incorrect. There is no onboarded customers page. The My customers page shows the onboarded subscriptions.
+    - content: From the My Customers page.
+      isCorrect: true
+      explanation: That's correct. This page will show all the customers who have completed the onboarding processes.
+    - content: From the Subscriptions page.
+      isCorrect: false
+      explanation: That's incorrect. The subscriptions page only shows the Contoso subscriptions. The My customers page shows the onboarded subscriptions.
+  - content: 'How would you check the compliance of an onboarded customers resource against Azures default security policy?'
+    choices:
+    - content: Using Azure Sentinel and filtering for the desired customer.
+      isCorrect: false
+      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
+    - content: Using Azure Monitor and filtering for the desired customer.
+      isCorrect: false
+      explanation: That's incorrect. Security Center will let you know if a subscription or other resource meets Azure's default security policy.
+    - content: Using Security Center and filtering for the desired customer.
+      isCorrect: true
+      explanation: That's correct. Security Center will let you know if a specific or all subscriptions meet the security policy.
+      

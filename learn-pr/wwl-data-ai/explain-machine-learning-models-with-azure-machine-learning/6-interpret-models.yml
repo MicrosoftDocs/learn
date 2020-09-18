@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explain-machine-learning-models-with-azure-machine-learning.exercise-interpret-models
+title: Exercise - Interpret models
+metadata:
+  title: Exercise - Interpret models
+  description: "Get hands-on experience of interpreting models."
+  ms.date: 08/30/2020
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-interpret-models.md)]

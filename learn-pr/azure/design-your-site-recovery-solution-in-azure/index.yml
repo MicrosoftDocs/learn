@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.design-your-site-recovery-solution-in-azure
+metadata:
+  title: Design your site recovery solution in Azure
+  description: Protect your applications and data from disasters with a well-designed site recovery solution.
+  ms.date: 11/18/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Design your site recovery solution in Azure
+summary: Protect your applications and data from disasters with a well-designed site recovery solution.
+abstract: |
+  In this module, you will:
+  - Define the site recovery requirements for your applications
+  - Select the proper solutions to provide site recovery for your applications
+prerequisites: |
+  - Basic knowledge of business continuity and disaster recovery practices
+iconUrl: /learn/achievements/design-your-site-recovery-solution-on-azure.svg
+badge:
+  uid: learn.design-your-site-recovery-solution-in-azure.badge
+levels: 
+- intermediate
+roles: 
+- solution-architect
+products:
+- azure
+- azure-backup
+- azure-site-recovery
+units:
+- learn.design-your-site-recovery-solution-in-azure.1-introduction
+- learn.design-your-site-recovery-solution-in-azure.2-develop-bcdr-plan
+- learn.design-your-site-recovery-solution-in-azure.3-use-azure-site-recovery
+- learn.design-your-site-recovery-solution-in-azure.4-build-resilient-application-services
+- learn.design-your-site-recovery-solution-in-azure.5-build-resilient-data-services
+- learn.design-your-site-recovery-solution-in-azure.6-summary

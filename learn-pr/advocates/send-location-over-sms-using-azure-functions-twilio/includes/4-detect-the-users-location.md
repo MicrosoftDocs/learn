@@ -56,7 +56,7 @@ There are two ways to get the user's location - the last known or the current. T
     ![The running app showing the user's location](../media/4-running-app-showing-location.png)
 
 > [!NOTE]
-> This app uses the last known location. In a production-quality app, you would want to get the current accurate location with a time-out, and if one is not found in time, fall back to the last known. You can read more on how to do this in the [Xamarin.Essentials Geolocation docs](https://docs.microsoft.com/xamarin/essentials/geolocation?tabs=uwp#using-geolocation?azure-portal=true).
+> This app uses the last known location. In a production-quality app, you would want to get the current accurate location with a time-out, and if one is not found in time, fall back to the last known. You can read more on how to do this in the [Xamarin.Essentials Geolocation docs](https://docs.microsoft.com/xamarin/essentials/geolocation?tabs=uwp#using-geolocation).
 > 
 > This app does not have error handling. In a production-quality app, you should handle any exceptions that occur, such as if the location was not available.
 

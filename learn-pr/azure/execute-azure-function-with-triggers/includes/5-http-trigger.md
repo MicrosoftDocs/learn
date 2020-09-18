@@ -38,7 +38,7 @@ One setting that's important to understand is **Request parameter name**. This s
 
 To invoke an HTTP trigger, you send an HTTP request to the URL for your function. To get this URL, go to the code page for your function and select the **Get function URL** link.
 
-![Screenshot of the Azure portal showing a Functions App blade with the app's Get function URL button highlighted.](../media/5-function-url.png)
+![Screenshot of the Azure portal showing a Functions App pane with the app's Get function URL button highlighted.](../media/5-function-url.png)
 
 After you have the URL for your function, you can send HTTP requests. If your function receives data, remember that you can use either query string parameters or supply the data through the request body.
 

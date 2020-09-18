@@ -1,0 +1,37 @@
+### YamlMime:LearningPath
+uid: learn.architect-secure-infrastructure
+metadata:
+  title: Architect secure infrastructure in Azure learning path
+  description: Learn about the tools and services available on Azure to ensure your resources are secure.
+  brand: azure
+  ms.date: 10/23/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect secure infrastructure in Azure
+summary: Learn about the tools and services available on Azure to ensure your resources are secure.
+prerequisites: None
+iconUrl: /learn/achievements/architect-secure-infrastructure.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-virtual-machines
+- azure-resource-manager
+- azure-application-gateway
+- azure-key-vault
+- azure-sql-database
+modules:
+- learn.azure-security.resolve-threats-with-azure-security-center
+- learn.secure-your-azure-virtual-machine-disks
+- learn.manage-secrets-with-azure-key-vault
+- learn.secure-azure-resources-with-rbac
+- learn.end-to-end-encryption-with-app-gateway
+- learn.secure-data-at-rest
+- learn.secure-your-azure-sql-database
+- learn.monitor-report-aad-security-events
+trophy:
+  uid: learn.architect-secure-infrastructure.trophy

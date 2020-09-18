@@ -2,7 +2,7 @@
 uid: learn.create-azure-db-for-postgresql
 metadata:
   title: Create an Azure Database for PostgreSQL server
-  description: Azure Database for PostgreSQL provides fully managed, enterprise-ready community PostgreSQL database as a service. Learn how to create and deploy this service and connect it to your applications.
+  description: Learn how to create and deploy Azure Database for PostgreSQL for fully managed, enterprise-ready PostgreSQL database services.
   ms.date: 09/24/2018
   author: cryophobia
   ms.author: chrvaw

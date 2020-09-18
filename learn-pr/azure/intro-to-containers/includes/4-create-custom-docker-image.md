@@ -12,7 +12,7 @@ An image can be customized by starting a container with the base image and makin
 
 Manually completing the above process is time-consuming and error-prone. It could be scripted with a script language like Bash, but Docker provides a more effective way of automating image creation via a *Dockerfile*.
 
-A Dockerfile is a plain text file containing all the commands needed to build an image. Dockerfiles are written in a minimal scripting language designed for building and configuring images. documents the operations required to build an image starting with a base image.
+A Dockerfile is a plain text file containing all the commands needed to build an image. Dockerfiles are written in a minimal scripting language designed for building and configuring images, and documents the operations required to build an image starting with a base image.
 
 The following example shows a Dockerfile that builds a .NET Core 2.2 application and packages it into a new image.
 

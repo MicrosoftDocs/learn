@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.develop-azure-functions-app-with-maven-plugin.3-exercise-create-azure-function-maven-archetype
+title: Exercise - create an Azure function using the Maven archetype
+metadata:
+  title: Exercise - create an Azure function using the Maven archetype
+  description: You'll create an Azure function using the Maven archetype using the Azure Cloud Shell, and ensure that all the build files are correctly configured.
+  ms.date: 04/01/2020
+  author: rmcmurray
+  ms.author: robmcm
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/3-exercise-create-azure-function-maven-archetype.md)]

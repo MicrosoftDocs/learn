@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.github-actions-ci.2-github-actions-workflows-ci
+title: How do I use GitHub Actions to create workflows for CI?
+metadata:
+  title: How do I use GitHub Actions to create workflows for CI?
+  description: Learn how to use GitHub Actions and workflows to implement continuous integration.
+  ms.date: 05/19/2020
+  author: jamcneil
+  ms.author: jumcn
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 9
+content: |
+  [!include[](includes/2-github-actions-workflows-ci.md)]

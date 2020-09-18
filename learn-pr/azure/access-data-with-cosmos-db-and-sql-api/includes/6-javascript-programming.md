@@ -4,7 +4,7 @@ Let's start by creating a new stored procedure in the portal. The portal automat
 
 1. In the Data Explorer, select **New Stored Procedure** from the toolbar as shown in the following image.
 
-    ![Screenshot showing the New Stored Procedure feature in the Data Explorer](../media/6-create-stored-procedure.png)
+    ![Screenshot of the Data Explorer with the New Stored Procedure button highlighted.](../media/6-create-stored-procedure.png)
 
     Data Explorer displays a new tab with a sample stored procedure.
 
@@ -16,7 +16,8 @@ Let's start by creating a new stored procedure in the portal. The portal automat
    - **Type**: _String_
    - **Value**: _33218896_
 
-    ![Run a stored procedure in the portal](../media/6-stored-procedure.png)
+    ![Screenshot of the input parameters pane.](../media/6-stored-procedure.png)
+
 1. Select **Execute**. Note that stored procedures work within a single partition.
 
     The **Result** pane displays the feed from the first document in the container.
@@ -102,7 +103,7 @@ Now, let's create a stored procedure that creates documents.
 
     You can go back to the Documents tab and click the **Refresh** button and see the new document as shown below.
 
-    ![Screenshot showing the refresh button in the Data Explorer](../media/6-refresh-document-view.png)
+    ![Screenshot of a query in the Data Explorer with the Refresh button highlighted.](../media/6-refresh-document-view.png)
 
 ## Create a user-defined function
 
@@ -110,7 +111,7 @@ Now, let's create a UDF in Data Explorer.
 
 1. In the Data Explorer, click **New UDF**. You may need to click the down arrow next to **New Stored Procedure** to see **New UDF**.
 
-    ![Screenshot showing the New UDF dropdown in the Data Explorer](../media/6-create-udf.png)
+    ![Screenshot of the Data Explorer with the down arrow menu button and New UDF button highlighted.](../media/6-create-udf.png)
 
 1. Paste the following code into the window, name the UDF *producttax*, and then click **Save**.
 
@@ -139,4 +140,4 @@ Now, let's create a UDF in Data Explorer.
 
 1. Select **Execute Query** to run the updated query using your new UDF.
 
-   ![Screenshot showing the results of the UDF in the Data Explorer window](../media/6-run-the-udf.png)
+    ![Screenshot of the UDF results in the Data Explorer pane.](../media/6-run-the-udf.png)

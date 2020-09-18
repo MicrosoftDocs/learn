@@ -84,7 +84,7 @@ If your `SqlCommand` object references an SQL statement that doesn't return a re
 int numDeleted = deleteOrdersForCustomer.ExecuteNonQuery();
 ```
 
-If you expect the command to take a while to run, you can use the `ExecteNonQueryAsync` method to perform the operation asynchronously.
+If you expect the command to take a while to run, you can use the `ExecuteNonQueryAsync` method to perform the operation asynchronously.
 
 ## Execute a query and fetch data
 

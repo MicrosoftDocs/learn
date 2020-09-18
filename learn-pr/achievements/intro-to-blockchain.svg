@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>NA/Introduction-to-Blockchain</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <linearGradient x1="77.8299825%" y1="11.1997378%" x2="-99.6885927%" y2="253.807911%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+        <rect id="path-5" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-0.5%" y="-0.5%" width="102.0%" height="102.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M50,2.83018868 C76.0511674,2.83018868 97.1698113,23.9488326 97.1698113,50 C97.1698113,76.0511674 76.0511674,97.1698113 50,97.1698113 C23.9488326,97.1698113 2.83018868,76.0511674 2.83018868,50 C2.83018868,23.9488326 23.9488326,2.83018868 50,2.83018868 Z M50,6.60377358 C26.032926,6.60377358 6.60377358,26.032926 6.60377358,50 C6.60377358,73.967074 26.032926,93.3962264 50,93.3962264 C73.967074,93.3962264 93.3962264,73.967074 93.3962264,50 C93.3962264,26.032926 73.967074,6.60377358 50,6.60377358 Z" id="path-7"></path>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-10">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="66.2861582%" y1="67.2010453%" x2="38.4542622%" y2="13.9502856%" id="linearGradient-11">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="49.9774416%" y1="17.9912184%" x2="49.9774416%" y2="124.588364%" id="linearGradient-12">
+            <stop stop-color="#32D4F5" offset="0%"></stop>
+            <stop stop-color="#31D1F3" offset="47%"></stop>
+            <stop stop-color="#2EC9EB" offset="63%"></stop>
+            <stop stop-color="#29BADE" offset="77%"></stop>
+            <stop stop-color="#22A5CB" offset="89%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+            <stop stop-color="#198AB3" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="N/A-3" transform="translate(-160.000000, -700.000000)">
+            <g id="NA/Introduction-to-Blockchain" transform="translate(160.000000, 700.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g></g>
+                        <g id="Colors/Microsoft-365/BG-Solid-Badge" mask="url(#mask-2)">
+                            <g id="Rectangle">
+                                <use fill="#0078D4" xlink:href="#path-4"></use>
+                                <use fill-opacity="0.4" fill="url(#linearGradient-3)" xlink:href="#path-4"></use>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Border">
+                        <g id="White-Border">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="2" y="2" width="96" height="96" rx="48"></rect>
+                        </g>
+                        <mask id="mask-8" fill="white">
+                            <use xlink:href="#path-7"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-7"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-8)" fill="#0076D7">
+                            <g transform="translate(2.830189, 2.830189)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-5" transform="translate(36.000000, 10.000000)">
+                    <polygon id="Path-20" fill="url(#linearGradient-9)" points="14 2.56353808e-13 0 8 14 16.4930702 28 8"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-10)" transform="translate(21.000000, 19.500000) scale(-1, 1) translate(-21.000000, -19.500000) " points="14 21.7819528 14 8 28 16.4930702 28 31"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-11)" points="0 21.7819528 0 8 14 16.4930702 14 31"></polygon>
+                </g>
+                <rect id="Rectangle" fill="url(#linearGradient-12)" transform="translate(38.531828, 36.531828) rotate(46.000000) translate(-38.531828, -36.531828) " x="38.0318279" y="28.5318279" width="1" height="16" rx="0.5"></rect>
+                <g id="Group-5" transform="translate(12.000000, 35.000000)">
+                    <polygon id="Path-20" fill="url(#linearGradient-9)" points="14 2.56353808e-13 0 8 14 16.4930702 28 8"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-10)" transform="translate(21.000000, 19.500000) scale(-1, 1) translate(-21.000000, -19.500000) " points="14 21.7819528 14 8 28 16.4930702 28 31"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-11)" points="0 21.7819528 0 8 14 16.4930702 14 31"></polygon>
+                </g>
+                <g id="Group-5" transform="translate(61.000000, 35.000000)">
+                    <polygon id="Path-20" fill="url(#linearGradient-9)" points="14 2.56353808e-13 0 8 14 16.4930702 28 8"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-10)" transform="translate(21.000000, 19.500000) scale(-1, 1) translate(-21.000000, -19.500000) " points="14 21.7819528 14 8 28 16.4930702 28 31"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-11)" points="0 21.7819528 0 8 14 16.4930702 14 31"></polygon>
+                </g>
+                <rect id="Rectangle" fill="url(#linearGradient-12)" transform="translate(38.531828, 61.531828) scale(1, -1) rotate(51.000000) translate(-38.531828, -61.531828) " x="38.0318279" y="53.5318279" width="1" height="16" rx="0.5"></rect>
+                <rect id="Rectangle" fill="url(#linearGradient-12)" transform="translate(62.531828, 60.531828) scale(-1, -1) rotate(40.000000) translate(-62.531828, -60.531828) " x="62.0318279" y="52.5318279" width="1" height="16" rx="0.5"></rect>
+                <g id="Group-5" transform="translate(36.000000, 60.000000)">
+                    <polygon id="Path-20" fill="url(#linearGradient-9)" points="14 2.56353808e-13 0 8 14 16.4930702 28 8"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-10)" transform="translate(21.000000, 19.500000) scale(-1, 1) translate(-21.000000, -19.500000) " points="14 21.7819528 14 8 28 16.4930702 28 31"></polygon>
+                    <polygon id="Path-21" fill="url(#linearGradient-11)" points="0 21.7819528 0 8 14 16.4930702 14 31"></polygon>
+                </g>
+                <rect id="Rectangle" fill="url(#linearGradient-12)" transform="translate(63.531828, 35.531828) scale(-1, 1) rotate(39.000000) translate(-63.531828, -35.531828) " x="63.0318279" y="27.5318279" width="1" height="16" rx="0.5"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

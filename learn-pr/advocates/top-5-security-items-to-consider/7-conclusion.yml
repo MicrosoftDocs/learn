@@ -4,12 +4,11 @@ title: Conclusion
 metadata:
   title: Conclusion
   description: Conclusion
-  author: lnyswonger
+  author: patridge
+  ms.author: adpatrid
   ms.date: 09/24/2018
-  ms.author: luken
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 1
 content: |
   [!include[](includes/7-conclusion.md)]

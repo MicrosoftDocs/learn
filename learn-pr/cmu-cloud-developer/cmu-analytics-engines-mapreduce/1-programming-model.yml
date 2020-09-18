@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.1-programming-model
+title: Programming model
+metadata:
+  title: Programming model
+  description: The MapReduce programming model
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/1-programming-model.md)]
+#quiz:
+#  title: Check your knowledge
+#  questions:
+#
+# Did I Get This block uses image "quiz-unit-2-mapreduce-1.png"
+# Original course uses interactive GUI not available in YAML. Added plain text sample choices.
+#  - content: "The following image illustrates the various phases and stages of MapReduce.<br>
+#              <img src=./media/quiz-unit-2-mapreduce-1.png></img> <br>
+#              Associate each of the phases and stages with their appropriate position on the diagram."
+#    choices:
+#    - content: "1 = Map Phase | 2 = Shuffle Stage | 3 = Merge & Sort Stage | 4 = Reduce Stage | 5 = Reduce Phase"
+#      isCorrect: true
+#      explanation: "Correct."
+#    - content: "1 = Merge & Sort Stage | 2 = Shuffle Stage | 3 = Reduce Stage | 4 = Reduce Stage | 5 = Reduce Phase"
+#      isCorrect: false
+#      explanation: "Incorrect."

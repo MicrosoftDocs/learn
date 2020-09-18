@@ -4,11 +4,10 @@ metadata:
   title: Read data with input bindings
   description: In this hands-on unit, we'll read data from Azure Cosmos DB in our Azure function by using an Azure Cosmos DB input binding.
   ms.date: 09/24/2018
-  author: andrewjbyrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Read data with input bindings
 durationInMinutes: 5
 content: |

@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.introduction.5-program-cloud-synchronization
+title: Synchronous vs. asynchronous computation
+metadata:
+  title: Synchronous vs. asynchronous computation
+  description: Synchronous vs. asynchronous computation
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  show_latex: true
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-program-cloud-synchronization.md)]
+
+# Learn By Doing block not converted to yaml

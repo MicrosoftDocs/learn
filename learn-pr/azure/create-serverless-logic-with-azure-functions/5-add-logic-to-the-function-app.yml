@@ -5,11 +5,11 @@ metadata:
   title: Exercise - Add logic to the function app
   description: Add the business logic + trigger into the Function App
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
+  zone_pivot_groups: dev-lang-javascript-powershell
 azureSandbox: true
 durationInMinutes: 10
 content: |

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Customize your XamarinForms apps/create-custom-controls-in-xamarin-forms-with-renderers</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="96" height="96" rx="48"></rect>
+        <filter x="-7.1%" y="-6.2%" width="114.3%" height="112.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.100060096 0" type="matrix" in="shadowOffsetOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Customize-your-XamarinForms-apps-2" transform="translate(-50.000000, -460.000000)">
+            <g id="Customize-your-XamarinForms-apps/create-custom-controls-in-xamarin-forms-with-renderers" transform="translate(50.000000, 460.000000)">
+                <g id="Mask" transform="translate(2.000000, 2.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="BG" fill="#55A2FF" xlink:href="#path-1"></use>
+                    <path d="M25.8449567,58.2182251 L16.9411905,58.2182251 C13.9409032,58.2182251 11.5,55.7773219 11.5,52.7770346 C11.5,49.7767473 13.9409032,47.3358441 16.9411905,47.3358441 C17.2165345,47.3358441 17.4933278,47.3607203 17.7904119,47.4131338 C18.8425155,43.8488721 22.0881955,41.4 25.8449567,41.4 C30.4818502,41.4 34.2540692,45.1722191 34.2540692,49.8091125 C34.2540692,54.446006 30.4818502,58.2182251 25.8449567,58.2182251 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)"></path>
+                    <g id="Group-8" filter="url(#filter-3)" mask="url(#mask-2)">
+                        <g transform="translate(20.000000, 15.000000)">
+                            <path d="M50,40 L6,40 C2.691,40 0,42.691 0,46 L0,52 C0,55.309 2.691,58 6,58 L50,58 C53.309,58 56,55.309 56,52 L56,46 C56,42.691 53.309,40 50,40" id="Fill-278" fill="#546670"></path>
+                            <path d="M38,40 L38,36 C38,34.895 37.104,34 36,34 L20,34 C18.895,34 18,34.895 18,36 L18,40 L38,40" id="Fill-279" fill="#30404D"></path>
+                            <path d="M22,22.389 L22,34 L34,34 L34,22.389 C37.684,20.263 40,16.316 40,12 C40,5.383 34.617,0 28,0 C21.383,0 16,5.383 16,12 C16,16.316 18.316,20.263 22,22.389" id="Fill-280" fill="#DF5142"></path>
+                            <path d="M6,58 C6,61.309 8.691,64 12,64 L44,64 C47.309,64 50,61.309 50,58 L6,58" id="Fill-281" fill="#30404D"></path>
+                            <path d="M29,22.389 L22,22.389 L22,23 L25.949,24.316 C27.174,24.725 28,25.871 28,27.162 L28,30 C28,31.105 27.105,32 26,32 L22,32 L22,34 L34,34 L34,22.389 L29,22.389" id="Fill-282" fill="#C2423D"></path>
+                            <path d="M6,58 C6,58.702 6.128,59.373 6.35,60 L26,60 C27.105,60 28,60.895 28,62 L28,64 L44,64 C46.607,64 48.824,62.327 49.65,60 C49.872,59.373 50,58.702 50,58 L6,58" id="Fill-283" fill="#182A37"></path>
+                            <path d="M28,44 L28,54 C28,55.105 27.105,56 26,56 L1.54,56 C2.64,57.224 4.229,58 6,58 L50,58 C53.314,58 56,55.314 56,52 L56,46 C56,44.462 55.414,43.063 54.46,42 L30,42 C28.895,42 28,42.895 28,44" id="Fill-284" fill="#30404D"></path>
+                            <path d="M29,36 L29,38 C29,38.552 28.552,39 28,39 L18,39 L18,40 L38,40 L38,36 C38,35.634 37.894,35.295 37.723,35 L30,35 C29.448,35 29,35.448 29,36" id="Fill-285" fill="#182A37"></path>
+                            <path d="M34.847,2.153 C36.201,4.095 37,6.453 37,9 C37,15.627 31.627,21 25,21 C22.453,21 20.095,20.201 18.153,18.847 C20.321,21.959 23.92,24 28,24 C34.627,24 40,18.627 40,12 C40,7.92 37.959,4.321 34.847,2.153" id="Fill-286" fill="#C2423D"></path>
+                        </g>
+                    </g>
+                    <path d="M76.2021778,32.4090648 L59.3067461,32.4090648 C56.3123928,32.4090648 53.8760716,29.9727435 53.8760716,26.9783903 C53.8760716,24.6484318 55.3657358,22.6010314 57.5495548,21.8559006 C58.0053513,16.912255 62.14259,13.1 67.1510536,13.1 C72.0322404,13.1 76.1358873,16.7793785 76.723088,21.5724676 C79.4740746,21.8355718 81.6328522,24.1596349 81.6328522,26.9783903 C81.6328522,29.9727435 79.196531,32.4090648 76.2021778,32.4090648 Z" id="Cloud" fill="#FFFFFF" fill-rule="nonzero" opacity="0.900000036" mask="url(#mask-2)"></path>
+                </g>
+                <g id="Azure-Border" stroke="#0078D4" stroke-width="4">
+                    <rect x="2" y="2" width="96" height="96" rx="48"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.data-ai.data-warehouse-security.azure-dw-security-control
-title: Use Azure SQL Data Warehouse security controls
+title: Use Azure Synapse Analytics security controls
 metadata:
-  title: Use Azure SQL Data Warehouse security controls
-  description: Use Azure SQL Data Warehouse security controls
+  title: Use Azure Synapse Analytics security controls
+  description: Use Azure Synapse Analytics security controls
   ms.date: 01/31/2019
-  author: ctesta-oneillmsft
-  ms.author: chris.testaoneill
+  author: wwlpublish
+  ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 20
 content: |
   [!include[](includes/2-azure-dw-security-control.md)]

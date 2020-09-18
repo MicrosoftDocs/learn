@@ -4,7 +4,7 @@ We've seen this in our system: the web portal calls a web service, which works g
 
 ## What is Azure Queue storage?
 
-Azure Queue storage is an Azure service that implements cloud-based queues. Each queue maintains a list of messages. Application components access a queue using a REST API or an Azure-supplied client library. Typically, you will have one or more _sender_ components and one or more _receiver_ components. Sender components add messages to the queue. Receiver components retrieve messages from the front of the queue for processing. The following illustration shows multiple sender applications adding messages to the Azure Queue and one receiver application retrieving the messages.
+Azure [Queue storage](https://azure.microsoft.com/services/storage/queues/) is an Azure service that implements cloud-based queues. Each queue maintains a list of messages. Application components access a queue using a REST API or an Azure-supplied client library. Typically, you will have one or more _sender_ components and one or more _receiver_ components. Sender components add messages to the queue. Receiver components retrieve messages from the front of the queue for processing. The following illustration shows multiple sender applications adding messages to the Azure Queue and one receiver application retrieving the messages.
 
 ![An illustration showing a high-level architecture of Azure Queue storage](../media/2-queue-overview.png)
 
@@ -37,17 +37,17 @@ If you want to create a structured message, you could format the message content
 
 ## Creating a storage account
 
-A queue must be part of a storage account. You can create a storage account using the Azure CLI (or PowerShell), or Azure portal. The portal is easiest because it's all guided and prompts you for each piece of information. 
+A queue must be part of a [storage account](https://azure.microsoft.com/services/storage/). You can create a storage account using the Azure CLI (or PowerShell), or Azure portal. The portal is easiest because it's all guided and prompts you for each piece of information. 
 
 The following screenshot shows the location of the Storage accounts category.
 
-![Screenshot of the All services blade with the Storage accounts category highlighted.](../media/2-create-storage-account-1.png)
+![Screenshot of the All services pane with the Storage accounts category highlighted.](../media/2-create-storage-account-1.png)
 
-There are several options you can supply when you create the account, most of which you can use the default selection. We covered these options in a previous module, but you can hover over the `(i)` tip associated with each option to get a reminder of what it does. Here's an example of filling out the portal blade.
+There are several options you can supply when you create the account, most of which you can use the default selection. We covered these options in a previous module, but you can hover over the `(i)` tip associated with each option to get a reminder of what it does. Here's an example of filling out the portal pane.
 
-The following screenshot displays the Create storage account blade and the information required to create a storage account.
+The following screenshot displays the Create storage account pane and the information required to create a storage account.
 
-![Screenshot of the Create storage account blade showing the options to specify when creating a storage account.](../media/2-create-storage-account-2.png)
+![Screenshot of the Create storage account pane showing the options to specify when creating a storage account.](../media/2-create-storage-account-2.png)
 
 ### Settings for queues
 When you create a storage account that will contain queues, you should consider the following settings:
@@ -56,5 +56,5 @@ When you create a storage account that will contain queues, you should consider 
 - The **Access tier** setting which is shown for StorageV2 accounts applies only to Blob storage and does not affect queues.
 - You should choose a location that is close to either the source components or destination components or (preferably) both.
 - Data is always replicated to multiple servers to guard against disk failures and other hardware problems. You have a choice of replication strategies: **Locally Redundant Storage (LRS)** is low-cost but vulnerable to disasters that affect an entire data center while **Geo-Redundant Storage (GRS)** replicates data to other Azure data centers. Choose the replication strategy that meets your redundancy needs.
-- The performance tier determines how your message are stored: **Standard** uses magnetic drives while **Premium** uses solid-state drives. Choose Standard if you expect peaks in demand to be short. Consider Premium if queue length sometimes becomes long and you need to minimize the time to access messages.
+- The performance tier determines how your messages are stored: **Standard** uses magnetic drives while **Premium** uses solid-state drives. Choose Standard if you expect peaks in demand to be short. Consider Premium if queue length sometimes becomes long and you need to minimize the time to access messages.
 - Require secure transfer if sensitive information may pass through the queue. This setting ensures that all connections to the queue are encrypted using Secure Sockets Layer (SSL).

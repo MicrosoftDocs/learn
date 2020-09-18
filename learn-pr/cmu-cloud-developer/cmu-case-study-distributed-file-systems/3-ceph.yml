@@ -1,0 +1,44 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.3-ceph
+title: 'Case study: CEPH file system'
+metadata:
+  title: 'Case study: CEPH file system'
+  description: Case study about the CEPH file system.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 24
+content: |
+  [!include[](includes/3-ceph.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "At its core, Ceph is a:"
+    choices:
+    - content: "Distributed file system"
+      isCorrect: false
+      explanation: "Incorrect. While Ceph can be used as a distributed file system through CephFS, its core element is not a distributed file system. What kind of system is RADOS?"
+    - content: "Block storage system"
+      isCorrect: false
+      explanation: "Incorrect. While a layer called RBD can be used to export block storage devices from Ceph, it is not a block storage system at its core. What kind of system is RADOS?"      
+    - content: "Relational database system"
+      isCorrect: false
+      explanation: "Incorrect. What kind of system is RADOS?"
+    - content: "Distributed key-value (object) store"
+      isCorrect: true
+      explanation: "Correct! The core component of Ceph is RADOS, which is essentially a distributed key-value store."
+    - content: "Local file system"
+      isCorrect: false
+      explanation: "Incorrect. What kind of system is RADOS?"
+
+  - content: "When writing an application that uses Ceph storage cluster, developers are limited to either RADOSGW, RBD or the CephFS APIs."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Are these the only APIs available to interact with a Ceph storage cluster? There is a lower level API that can be used to interact with Ceph. "
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct! The **librados** library allows developers to interact with a Ceph storage cluster at the lowest (object) level."

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.enable-external-collaboration-with-b2b.4-exercise-invite-users
+metadata:
+  title: Exercise - Invite guest users with Azure AD B2B through the Azure portal
+  description: Exercise - Invite guest users with Azure AD B2B through the Azure portal
+  ms.date: 09/30/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Invite guest users with Azure AD B2B through the Azure portal
+durationInMinutes: 15
+azureSandbox: true
+content: |
+  [!include[](includes/4-exercise-invite-users.md)]

@@ -25,7 +25,7 @@ Policies are inherited from the subscription down to the resource groups. Howeve
 
 You can view the active security policies through the Security Center dashboard through the Security policy view:
 
-![Screenshot of the Security policy blade in the Azure Security Center product](../media/3-security-center-policy-mgt.png)
+![Screenshot of the Security policy pane in the Azure Security Center product](../media/3-security-center-policy-mgt.png)
 
 Two organizational groups are shown in the image above: management groups and subscriptions. These are taken directly from Azure policy. Selecting one of these elements allows you to drill into the details for that group or subscription.
 

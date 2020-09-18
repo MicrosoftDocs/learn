@@ -2,7 +2,7 @@
 uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
 metadata:
   title: Azure VM HPC instances
-  description: In this unit, you will learn about H-series Virtual Machines and the tasks you can use them for.
+  description: In this unit, you'll learn about H-series Virtual Machines and the tasks you can use them for.
   ms.date: 10/10/2019
   author: jboeshart
   ms.author: jaboes
@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "You're trying to provision several H-series Azure VMs in the Azure portal to solve some complex financial equations. How can you resolve the errors you are receiving?"
     choices:
-    - content: "Use the Azure Virtual Machines Pricing Detail page to ensure that the problem you want to solve is supported by the kind of VM you're trying to deploy."
+    - content: "Use the Azure Virtual Machines pricing detail page to ensure that the problem you want to solve is supported by the kind of VM you're trying to deploy."
       isCorrect: false
-      explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. You can't solve them by using the Pricing Detail page."
+      explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. You can't solve them by using the pricing detail page."
     - content: "Tell Azure that your subscription needs to support a greater number of cores than is allowed by default."
       isCorrect: true
-      explanation: "Because H-series VMs use large numbers of core, you can quickly reach the limit for your subscription. Open a support request to increase this limit."
+      explanation: "Because H-series VMs use large numbers of cores, you can quickly reach the limit for your subscription. Open a support request to increase this limit."
     - content: "Try again at a different time."
       isCorrect: false
       explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. You will see the same errors at any later time."

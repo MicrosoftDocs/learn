@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="101px" viewBox="0 0 101 101" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>CMU dev 4 Distributed programming on the cloud/Distributed-computing-on-the-cloud-Spark</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="94.3396226" height="94.3396226" rx="47.1698113"></rect>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#99D3FF" offset="0%"></stop>
+            <stop stop-color="#0FA6FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="0" y="0" width="100" height="100" rx="50"></rect>
+        <filter x="-0.5%" y="-0.5%" width="102.0%" height="102.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="4" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="1" dy="1" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <path d="M50,2.83018868 C76.0511674,2.83018868 97.1698113,23.9488326 97.1698113,50 C97.1698113,76.0511674 76.0511674,97.1698113 50,97.1698113 C23.9488326,97.1698113 2.83018868,76.0511674 2.83018868,50 C2.83018868,23.9488326 23.9488326,2.83018868 50,2.83018868 Z M50,6.60377358 C26.032926,6.60377358 6.60377358,26.032926 6.60377358,50 C6.60377358,73.967074 26.032926,93.3962264 50,93.3962264 C73.967074,93.3962264 93.3962264,73.967074 93.3962264,50 C93.3962264,26.032926 73.967074,6.60377358 50,6.60377358 Z" id="path-6"></path>
+        <filter x="-24.0%" y="-34.7%" width="148.1%" height="169.4%" filterUnits="objectBoundingBox" id="filter-8">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feMorphology radius="1" operator="erode" in="SourceAlpha" result="shadowInner"></feMorphology>
+            <feOffset dx="0" dy="2" in="shadowInner" result="shadowInner"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="shadowInner" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-9">
+            <stop stop-color="#D2EBFF" offset="0%"></stop>
+            <stop stop-color="#F0FFFD" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-26.7%" y="-41.4%" width="153.3%" height="182.8%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.1 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <linearGradient x1="50%" y1="125.699103%" x2="50%" y2="6.86796686%" id="linearGradient-11">
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#198AB3" offset="0%"></stop>
+            <stop stop-color="#22A5CB" offset="11%"></stop>
+            <stop stop-color="#29BADE" offset="23%"></stop>
+            <stop stop-color="#2EC9EB" offset="37%"></stop>
+            <stop stop-color="#31D1F3" offset="53%"></stop>
+            <stop stop-color="#32D4F5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="2.04550253%" x2="50%" y2="100%" id="linearGradient-12">
+            <stop stop-color="#FFE02A" offset="0%"></stop>
+            <stop stop-color="#FFB518" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Badges" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="[CMU-dev-4]-Distributed-programming-on-the-cloud" transform="translate(-160.000000, -700.000000)">
+            <g id="CMU-dev-4-Distributed-programming-on-the-cloud/Distributed-computing-on-the-cloud-Spark" transform="translate(160.000000, 700.000000)">
+                <g id="Badge-Plates/Circle">
+                    <g id="BG" transform="translate(2.830189, 2.830189)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g></g>
+                        <g id="Colors/Microsoft-365/BG-Gradient-1" mask="url(#mask-2)" fill="url(#linearGradient-3)">
+                            <rect id="Rectangle" x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                        </g>
+                    </g>
+                    <g id="Border">
+                        <g id="White-Border">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                            <rect stroke="#F2F1F0" stroke-width="4" stroke-linejoin="square" x="2" y="2" width="96" height="96" rx="48"></rect>
+                        </g>
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Boarder" fill="#0078D4" fill-rule="nonzero" xlink:href="#path-6"></use>
+                        <g id="Colors/Microsoft-365/Border" mask="url(#mask-7)" fill="#0076D7">
+                            <g transform="translate(2.830189, 2.830189)" id="Microsoft-365/Border">
+                                <rect x="0" y="0" width="94.3396226" height="94.3396226"></rect>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group" transform="translate(24.000000, 17.000000)">
+                    <g id="Cloud-White" filter="url(#filter-8)" fill="url(#linearGradient-9)" fill-rule="nonzero">
+                        <g id="Group-31" transform="translate(0.398268, 0.000000)">
+                            <g id="Icon-migrate-281-Azure-Migrate">
+                                <path d="M40.4831508,13.7066571 C40.1450548,5.8749921 33.606528,-0.229611533 25.8093095,0.00663147127 C19.6349655,-0.0583910809 14.0838943,3.77669286 11.9333367,9.59316338 C5.23933796,10.3749919 0.145504017,15.9997457 0,22.7702872 C0.391851146,30.2931955 6.65877329,36.143234 14.1534923,35.9822712 L38.4364448,35.9822712 L39.0608636,35.9822712 C45.2559498,35.8879006 50.2446167,30.8438147 50.3004016,24.6178734 C50.1276081,19.0560107 45.9725343,14.4379246 40.4831508,13.7066571 Z" id="Path"></path>
+                            </g>
+                        </g>
+                    </g>
+                    <g id="Group-2" filter="url(#filter-10)" transform="translate(4.000000, 37.000000)">
+                        <line x1="37.0588235" y1="-1.55431223e-14" x2="37.0588235" y2="10.7713748" id="Path-15" stroke="#FFFFFF" stroke-width="1.5"></line>
+                        <rect id="Rectangle" fill="#F3F3F3" x="29.1176471" y="6.51620875" width="15.8823529" height="8.28571429" rx="1"></rect>
+                        <line x1="7.94117647" y1="-1.55431223e-14" x2="7.94117647" y2="10.7713748" id="Path-15" stroke="#FFFFFF" stroke-width="1.5"></line>
+                        <rect id="Rectangle" fill="#F3F3F3" x="0" y="6.51620875" width="15.8823529" height="8.28571429" rx="1"></rect>
+                        <line x1="22.318214" y1="1.38095238" x2="22.318214" y2="23.0876373" id="Path-15" stroke="#FFFFFF" stroke-width="1.5"></line>
+                        <rect id="Rectangle" fill="#F3F3F3" x="14.5588235" y="20.3257326" width="15.8823529" height="8.28571429" rx="1"></rect>
+                    </g>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="7" y="46" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="14" y="46" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="36" y="46" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="43" y="46" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="22" y="60" width="3" height="3"></rect>
+                    <rect id="Rectangle" fill="url(#linearGradient-11)" x="28" y="60" width="3" height="3"></rect>
+                </g>
+                <g id="Lightning" transform="translate(45.000000, 25.000000)" fill="url(#linearGradient-12)">
+                    <polygon id="Fill-409" points="10 0 2.33333333 0 0 12.3083799 3.70381731 12.3083799 3.70381731 23 9.66666667 8.96871442 6.66666667 8.96871442"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

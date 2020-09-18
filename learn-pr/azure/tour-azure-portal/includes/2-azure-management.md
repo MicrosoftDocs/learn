@@ -27,7 +27,7 @@ For example, Azure PowerShell provides the `New-AzVM` command that creates a vir
 New-AzVM `
     -ResourceGroupName "MyResourceGroup" `
     -Name "TestVm" `
-    -Image "UbuntuLTS"
+    -Image "UbuntuLTS" `
     ...
 ```
 
@@ -41,8 +41,8 @@ Azure CLI is a cross-platform command-line program that connects to Azure and ex
 az vm create \
   --resource-group MyResourceGroup \
   --name TestVm \
-  --image UbuntuLTS
-  --generate-ssh-keys
+  --image UbuntuLTS \
+  --generate-ssh-keys \
   ...
 ```
 

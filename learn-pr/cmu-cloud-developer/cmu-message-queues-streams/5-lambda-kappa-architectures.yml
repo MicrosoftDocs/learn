@@ -1,0 +1,28 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.message-queues-stream-processing.5-lambda-kappa-architectures
+title: Big data processing architectures
+metadata:
+  title: Big data processing architectures
+  description: Big data processing architectures
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-lambda-kappa-architectures.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What is the main difference between the Lambda and Kappa architectures?"
+    choices:
+    - content: "Lambda architectures include a layer for batch processing, while Kappa architectures do not."
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "Kappa architectures include a layer for batch processing, while Lambda does not."
+      isCorrect: false
+      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Review the material if you're not sure."
+    - content: "Both architectures are fundamentally the same."
+      isCorrect: false
+      explanation: "Incorrect. One of the architectures supports batch processing but the other does not. Review the material if you're not sure."

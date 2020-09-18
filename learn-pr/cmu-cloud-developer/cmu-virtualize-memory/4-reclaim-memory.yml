@@ -1,0 +1,73 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.how-cloud-works.cmu-virtualize-memory.4-reclaim-memory
+title: Reclaiming memory and memory issues
+metadata:
+  title: Reclaiming memory and memory issues
+  description: Reclaiming memory and memory issues
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-reclaim-memory.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1
+  - content: "True or false? The hypervisor can automatically reclaim pages when deactivated by guest OSs."
+    choices:
+    - content: "True"
+      isCorrect: false
+      explanation: "Incorrect. Due to multiple levels of page mapping, the hypervisor remains oblivious about the pages that become inactive at guest OSs. Therefore, the hypervisor cannot automatically reclaim those pages unless it is informed about them. Is there any way the hypervisor can automatically know of any deactivated pages in the virtual machine?"
+    - content: "False"
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I Get This block 2 question 1
+# Quiz uses image "quiz-memory-state.png"
+  - content: "Consider the following memory state as imposed by two VMs running on a single physical host: <br>
+              <img src=./media/quiz-memory-state.png></img> <br>
+              Assume that the shown hypervisor employs a ballooning process. <br><br>
+              How would the hypervisor recognize inactive pages to reclaim them?"
+    choices:
+    - content: "By deflating the balloon at VM1"
+      isCorrect: false
+      explanation: "Incorrect. The balloon is deflated by the hypervisor to enable guest OSs to unpin pinned pages. Where does a balloon driver exist, and where does a balloon exist?"
+    - content: "By inflating the balloon at VM1"
+      isCorrect: false
+      explanation: "Incorrect. The balloon is inflated by the hypervisor, not at VM1. Where does a balloon driver exist, and where does a balloon exist?"
+    - content: "By deflating the balloon at VM2"
+      isCorrect: false
+      explanation: "Incorrect. The balloon is deflated by the hypervisor to enable guest OSs to unpin pinned pages. Where does a balloon driver exist, and where does a balloon exist?"
+    - content: "By inflating the balloon at VM2"
+      isCorrect: false
+      explanation: "Incorrect. The balloon is inflated by the hypervisor, not at VM2. Where does a balloon driver exist, and where does a balloon exist?"
+    - content: "By deflating the balloons at VM1 and VM2"
+      isCorrect: false
+      explanation: "Incorrect. The balloon is deflated by the hypervisor to enable guest OSs to unpin pinned pages. Where does a balloon driver exist, and where does a balloon exist?"
+    - content: "By inflating the balloons at VM1 and VM2"
+      isCorrect: false
+      explanation: "Incorrect. The balloon is inflated only at the hypervisor. Where does a balloon driver exist, and where does a balloon exist?"
+    - content: "By inflating the balloon at the hypervisor"
+      isCorrect: true
+      explanation: "Correct! The balloon exists at the hypervisor and shared by all virtual machines. The hypervisor inflates the balloon by incrementing its target size. The VMs learn about balloon inflations through the balloon drivers deployed at guest OSs. Balloon drivers at guest OSs poll to the hypervisor regularly and read the target balloon size. Guest OSs recognize an inflation if the balloon size has increased."
+
+# Did I Get This block 2 question 2
+  - content: "How many pages in total can the hypervisor reclaim when applying the ballooning process?"
+    choices:
+    - content: "1"
+      isCorrect: false
+      explanation: "Incorrect. At only VM1, there is at least one inactive page. Count the number of real pages that aren't currently used by the VMs."
+    - content: "3"
+      isCorrect: false
+      explanation: "Incorrect. At VM1 and VM2, there are more than three inactive pages. Count the number of real pages that aren't currently used by the VMs."
+    - content: "5"
+      isCorrect: true
+      explanation: "Correct!"
+    - content: "6"
+      isCorrect: false
+      explanation: "Incorrect. At VM1 and VM2, there is a total of six real pages, of which five are inactive and one is active (used by VM1). Count the number of real pages that aren't currently used by the VMs."
+      

@@ -1,0 +1,33 @@
+### YamlMime:LearningPath
+uid: learn.architect-infrastructure-operations
+metadata:
+  title: Architect infrastructure operations in Azure learning path
+  description: Learn how to monitor, analyze, and manage the ongoing operation of your infrastructure in Azure.
+  brand: azure
+  ms.date: 10/22/2019
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Architect infrastructure operations in Azure
+summary: Learn how to monitor, analyze, and manage the ongoing operation of your infrastructure in Azure.
+prerequisites: None
+iconUrl: /learn/achievements/architect-infrastructure-operations.svg
+levels:
+- intermediate
+roles:
+- solution-architect
+products:
+- azure
+- azure-monitor
+- azure-cost-management
+- azure-resource-manager
+- azure-policy
+modules:
+- learn.control-and-organize-with-resource-manager
+- learn.intro-to-governance
+- learn.design-monitoring-strategy-on-azure
+- learn.incident-response-with-alerting-on-azure
+- learn.analyze-infrastructure-with-azure-monitor-logs
+trophy:
+  uid: learn.architect-infrastructure-operations.trophy

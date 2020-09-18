@@ -39,7 +39,7 @@ Next, upload the JSON file to a Blob storage container:
     > To find resources by name, use the Search field at the top of the Azure portal. To find related resources, use your resource group.
 
 1. Select the **streamsource** Blob storage account you created earlier.
-1. Under **Blob service**, select **Blobs**.
+1. Under **Blob service**, select **Containers**.
 
     ![Screenshot showing how to set up an input Blob container](../media/6-input-blob.png)
 
@@ -63,7 +63,7 @@ Next, set up the destination for the transformed data:
 
     ![Screenshot of Storage Explorer in Azure portal](../media/6-storage-explorer.png)
 
-1. On the right, go to **BLOB CONTAINERS**.
+1. On the right, go to **CONTAINERS**.
 1. Select the container you created.
 1. From the menu above the container details, select **New Folder**. If you don't see this option, open the **More** list to find it.
 1. For the folder name, type **output**, and then select **Create**. Here you're creating a placeholder. Azure won't show the folder until you add a file to it.

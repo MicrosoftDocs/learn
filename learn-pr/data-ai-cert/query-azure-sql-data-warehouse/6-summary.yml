@@ -17,17 +17,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What is the default port that's used to connect to an Azure SQL Server data warehouse?"
+  - content: "What is the default port that's used to connect to an Azure Synapse Analytics data warehouse?"
     choices: 
     - content: "TCP port 1344"
       isCorrect: false
-      explanation: "This answer is incorrect. The default port that's used to connect to an Azure SQL Server data warehouse is TCP port 1433."
+      explanation: "This answer is incorrect. The default port that's used to connect to an Azure Synapse Analytics data warehouse is TCP port 1433."
     - content: "UDP port 1433"
       isCorrect: false
-      explanation: "This answer is incorrect. The default port that's used to connect to an Azure SQL Server data warehouse is TCP port 1433."
+      explanation: "This answer is incorrect. The default port that's used to connect to an Azure Synapse Analytics data warehouse is TCP port 1433."
     - content: "TCP port 1433"
       isCorrect: true
-      explanation: "Correct. The default port that's used to connect to an Azure SQL Server data warehouse is TCP port 1433"
+      explanation: "Correct. The default port that's used to connect to an Azure Synapse Analytics data warehouse is TCP port 1433"
 
   - content: "The following query is used to retrieve the sales by business reseller, but the performance of the query is slow. The query is as follows: SELECT S.[SalesAmount] AS [Sales], R.[BusinessType],R.[ResellerName] FROM [FactResellerSales] AS S JOIN [DimReseller] AS R ON S.[ResellerKey] = R.[ResellerKey]. The tables referenced within the query are configured with a distribution of Round_Robin with a clustered columnstore index. The data engineer wants to improve the performance of the query. What operation can be used to improve the performance of the query?"
     choices: 

@@ -12,7 +12,7 @@ In this unit, you'll import Matplotlib into the notebook you've been working wit
     sns.set()
     ```
 
-    The first statement is one of several [magic commands](http://ipython.readthedocs.io/en/stable/interactive/magics.html) supported by the Python kernel that you selected when you created the notebook. It enables Jupyter to render Matplotlib output in a notebook without making repeated calls to [show](https://matplotlib.org/devdocs/api/_as_gen/matplotlib.pyplot.show.html). And it must appear before any references to Matplotlib itself. The final statement configures [Seaborn](https://seaborn.pydata.org/) to enhance the output from Matplotlib.
+    The first statement is one of several [magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html) supported by the Python kernel that you selected when you created the notebook. It enables Jupyter to render Matplotlib output in a notebook without making repeated calls to [show](https://matplotlib.org/devdocs/api/_as_gen/matplotlib.pyplot.show.html). And it must appear before any references to Matplotlib itself. The final statement configures [Seaborn](https://seaborn.pydata.org/) to enhance the output from Matplotlib.
 
 1. To see Matplotlib at work, execute the following code in a new cell to plot the [ROC curve](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) for the machine-learning model you built in the previous lab:
 

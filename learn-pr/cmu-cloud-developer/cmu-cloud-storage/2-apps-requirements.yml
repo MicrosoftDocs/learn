@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.2-apps-requirements
+title: Applications and requirements
+metadata:
+  title: Applications and requirements
+  description: Applications and requirements
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-apps-requirements.md)]

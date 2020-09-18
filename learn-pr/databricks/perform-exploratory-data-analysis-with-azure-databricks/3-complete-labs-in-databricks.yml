@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Perform exploratory data analysis (EDA) with Databricks
   description: Learn how to do exploratory data analysis (EDA) with Azure Databricks
   ms.date: 02/20/2019
-  author: barlan
-  ms.author: barlan
+  author: jasallen 
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
 title: Exercise - Perform exploratory data analysis (EDA) with Databricks

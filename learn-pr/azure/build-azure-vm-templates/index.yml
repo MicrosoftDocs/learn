@@ -28,6 +28,7 @@ products:
 - azure
 - azure-clis
 - azure-virtual-machines
+- azure-resource-manager
 units:
 - learn.build-azure-vm-templates.1-introduction
 - learn.build-azure-vm-templates.2-define-templates

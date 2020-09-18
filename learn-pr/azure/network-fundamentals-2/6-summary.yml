@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.network-fundamentals-2.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Review what you've learned about network security fundamentals.
+  ms.date: 01/09/2020
+  author: cryophobia
+  ms.author: chrvaw
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

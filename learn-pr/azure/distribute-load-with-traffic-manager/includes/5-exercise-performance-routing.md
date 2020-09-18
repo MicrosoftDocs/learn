@@ -13,7 +13,7 @@ Your network architect would like to ensure customers have the best performance.
         --output table
     ```
 
-1. Create two new endpoints that that point to the public IP addresses of the virutal machines.
+1. Create two new endpoints that point to the public IP addresses of the virtual machines.
 
     ```azurecli
     WestId=$(az network public-ip show \
@@ -57,7 +57,7 @@ Your network architect would like to ensure customers have the best performance.
 
 1. Depending on where you're located, you'll be directed to the best performing endpoint.
 
-    ![Screenshot of a webpage running the web app closest to you](../media/5-performance-testing.png)
+    :::image type="content" source="../media/5-performance-testing.png" alt-text="Screenshot of a webpage running the web app closest to you." loc-scope="other":::
 
 1. Use `nslookup` to resolve the Traffic Manager profile domain name.
 

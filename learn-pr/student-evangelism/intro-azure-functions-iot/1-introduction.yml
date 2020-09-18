@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.oxford.intro-iot-funtions-iot.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: In this section, we help the learner to decide if the product will meet their needs by explaining when to use the product and how it works.
+  ms.date: 03/23/2020
+  author: leestott
+  ms.author: leestott
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure-iot-hub
+durationInMinutes: 3 # dummy number at present
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,6 +1,6 @@
-Insights uncovered from connected devices and backend systems can be transformed into powerful applications and services that help you improve operational and business performance.
+Insights are uncovered from telemetry data during the data processing by the backend systems. These insights can be transformed into powerful processes and services, that help you improve operational and business performance.
 
-Industries with opportunity to innovate with IoT include:
+Many industries can benefit by innovating with IoT. Examples of industries includes:
 
 - Manufacturing
 - Transportation and logistics
@@ -10,25 +10,25 @@ Industries with opportunity to innovate with IoT include:
 - Government
 - Healthcare
 - Financial services
-- Smart spaces
+- Smart buildings, and smart cities
 
 ### Azure IoT solutions applied across industries
 
-Azure IoT solutions tend to be horizontal and span multiple industries. Industry experts may use different terminology to describe IoT applications, but they are generally referring to the five common scenarios listed below. Later in the module, we will also review how these solutions can be applied with Azure IoT services.
+Azure IoT solutions tend to be horizontal, and can span multiple industries. Industry experts may use different terminology to describe IoT applications, but they are generally referring to the five common scenarios listed below. Later in the module, we'll review how these solutions can be applied with Azure IoT services.
 
 |Scenario|Description|Industry Example|
 |----------|-----------|----------|
-|**Remote monitoring**|Remote monitoring is the foundation for all IoT solutions. It helps to monitor products and systems to collect performance data and diagnose issues remotely. | Remote monitoring solutions of freight or equipment in the logistics industry help to reduce servicing costs, improve up-time, and increase user satisfaction. |
-|**Predictive maintenance**|Predictive maintenance is a power use case that is common for device manufacturers. The solution monitors the condition of in-service equipment to predict when maintenance is performed vs. time-based systems. At its core, this is remote monitoring and machine learning. | The manufacturing industry utilizes predictive maintenance to monitor equipment to determine if components are performing properly or can remain in-service. |
-|**Facilities management**|Facilities management enables the ability to optimize usage, user experience, and energy consumption in any facility. For example, Digital Twin is a variant of IoT Hub that provides spatial intelligence capabilities for scenarios like facilities management. | The energy industry uses facilities management combined with remote monitoring to manage energy usage to reduce cost, optimize, and compare performance. |
-|**Connected manufacturing**|Connected manufacturing is the ability to manage production lines (or other commercial applications) using embedded devices and sensors. | The renewable energy industry uses real-time performance monitoring of solar panel production lines to improve efficiency through preventative maintenance and failure prediction for controlled shutdowns. This solution is the combination of remote monitoring and predictive maintenance, but with support from industrial equipment to work together securely. |
-|**Fleet management**|Fleet management is the ability to monitor a fleet of vehicles with connect sensors, such as planes, trains, trucks, cars, forklifts, etc. |  The transportation industry uses real-time visibility to track location and speed of vehicles, resulting in fewer insurance claims and lower fuel costs. They enable IoT assets such as “connected” or “smart vehicle solutions” for tracking. |
+|**Remote monitoring**|Remote monitoring is the foundation for all IoT solutions. Sensors in embedded devices send continuous telemetry data to the cloud, for monitoring. | In the retail industry, remote monitoring enables in-store analytics, and smart inventory management. For government, issues like water quality, connected waste management, and weather monitoring, can be addressed effectively. In healthcare, the continuous monitoring of patients can be managed remotely.|
+|**Predictive maintenance**|Predictive maintenance is another top use case, and is a priority for many device manufacturers. The solution monitors the condition of in-service equipment to determine when maintenance should be done. At its core, this scenario is a combination of remote monitoring and machine learning. | The manufacturing industry uses predictive maintenance to monitor equipment for early signs that maintenance is required. Early signs might be increasing, or irregular, vibration, temperature, or any other metric. This warning enables equipment to be checked, and repaired if need be, before failure. |
+|**Facilities management**|Facilities management optimizes usage, user experience, and energy consumption in any facility. The _Digital Twin_ feature of an Azure IoT Hub provides the capabilities  to manage _recorded_ and _desired_ device settings. These two settings enable the fine control of devices, and enable effective facilities management. Another important feature is remote security.| The energy industry uses facilities management, combined with remote monitoring, to optimize energy usage. In agriculture, the environment of refrigerated storage, wine cellars, and cheese caves, can be monitored and adjusted. In a smart building, physical access can be controlled, perhaps making use of an AI-based recognition technology.|
+|**Connected manufacturing**|Connected manufacturing is the ability to manage production lines, or other similar applications, using embedded IoT devices and sensors. | The renewable energy industry uses real-time performance monitoring of solar panel production lines. This monitoring improves efficiency, both through preventative maintenance, and also failure prediction, enabling controlled shutdowns. This solution is the combination of remote monitoring and predictive maintenance, with considerable input from industrial equipment. The solution enables a lot of equipment to work together securely, aiding workplace safely and quality control. |
+|**Fleet management**|Fleet management is the ability to monitor a fleet of vehicles with location-aware sensors. These vehicles can be planes, trains, ships, drones, trucks, cars, forklifts, and so on. |  The transportation industry uses real-time visibility to track location and speed of vehicles. This tracking results in fewer insurance claims, and lower fuel costs. This example is sometimes referred to as a "connected" or "smart vehicle solution". |
 
 --------------------------------
 
 ### How Azure IoT works for preventative maintenance and analytics
 
-With preventative maintenance and analytics through IoT, you can adjust processes and systems to trigger actions that can be prevented. In addition, you can translate insights from the data your organization collects on manufacturing equipment to identify operational changes.
+With preventative maintenance and stream analytics through IoT, you set conditions that, if met, will trigger actions. These actions, if done quickly, prevent equipment from failing. Also, you can translate insights from streaming data to identify operational changes. In this case, not for failure prevention, but for improvements in performance.
 
 |  |  |
 | ------------ | -------------|
@@ -36,11 +36,11 @@ With preventative maintenance and analytics through IoT, you can adjust processe
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE2NQ4B]
 
-Through a greater understanding of maintenance planning, Rolls-Royce’s airline customers were able to reduce flight disruptions while saving millions of dollars per year.
+Through a greater understanding of engine maintenance planning, Rolls-Royce's airline customers reduced flight disruptions, and saved millions of dollars per year.
 
 ### How Azure IoT works for transportation and smart cities
 
-The Alaska Department of Transportation uses Azure IoT technologies to make informed decisions about deploying road crews that address challenges and better meet citizen expectations.
+With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska Department of Transportation found a scalable IoT solution to track powerful storms.
 
 |  |  |
 | ------------ | -------------|
@@ -48,13 +48,11 @@ The Alaska Department of Transportation uses Azure IoT technologies to make info
 
 > [!Video https://www.microsoft.com/videoplayer/embed/RE2NvkS]
 
-With Azure IoT solutions, including Azure IoT Edge and Azure IoT Hub, the Alaska Department of Transportation found a scalable IoT solution to fight winter storms.
-
-Azure IoT is not only a transformative tool for driving business outcomes, it is a catalyst for greater change within an organization. When you connect equipment, machines, and tools, you can draw insights for innovation and opportunities.
+Azure IoT isn't only a transformative tool for driving business outcomes, it's a catalyst for greater change within an organization. When you connect equipment, machines, and tools, you can draw insights for innovation and opportunities.
 
 |  |  |
 | ------------ | -------------|
-|![Icon of lightbulb](../media/lightbulb.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry and your organization? Are there solutions from other industries that you can also leverage?*
+|![Icon of lightbulb](../media/lightbulb.png)|*Take another look at the variety of business outcomes supported by Azure IoT. Which ones are relevant to your industry or your organization? Are there solutions from other industries that might work for you?*
 |
 
-Now that you’ve seen examples of IoT being applied to some industries, let’s take a look at IoT solutions.
+Now that you've seen examples of IoT being applied to some industries, let's take a look at Azure IoT services.

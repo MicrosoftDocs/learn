@@ -18,11 +18,11 @@ It's recommended that you disable direct RDP and SSH access to your Azure VMs fr
     * Azure Bastion Host
 
 1. Sign in to the Azure portal.
-1. For each VM. open the **Networking** blade.
+1. For each VM. open the **Networking** pane.
 1. Verify that the **Inbound Port Rules** does not have a rule for RDP. For example: `port=3389, protocol = TCP, Source = Any or Internet`
 1. Verify that the **Inbound Port Rules** does not have a rule for SSH. For example: `port=22, protocol = TCP, Source = Any or Internet`
 
-![Screenshot the VM networking blade](../media/7-rdp.png)
+![Screenshot the VM networking pane](../media/7-rdp.png)
 
 ### Restrict SQL Server access from the Internet - Level 1
 
@@ -37,7 +37,7 @@ To access an instance of the SQL Server through a firewall, you must configure t
 1. Ensure that the firewall rules exist, and no rule has a Start IP of `0.0.0.0` and End IP of `0.0.0.0` or other combinations which allows access to wider public IP ranges.
 1. Select **Save**.
 
-![Screenshot the VM networking blade](../media/7-firewall.png)
+![Screenshot the VM networking pane](../media/7-firewall.png)
 
 ### Configure the NSG flow log retention period for more than 90 days - Level 2
 
@@ -53,7 +53,7 @@ Network security group (NSG) flow logs are a feature of Network Watcher that all
 1. Ensure **Retention (days)** setting is greater than 90 days.
 1. Select **Save**.
 
-![Screenshot the nsg flow blade](../media/7-nsg-flow.png)
+![Screenshot the nsg flow pane](../media/7-nsg-flow.png)
 
 ### Enable Network Watcher - Level 1
 
@@ -64,7 +64,7 @@ Network security group (NSG) flow logs are a feature of Network Watcher that all
 1. Select **Regions**, to expand it, and then select your region.
 1. Select **Enable Network Watcher**.
 
-![Screenshot the nsg flow blade](../media/7-network-watcher.png)
+![Screenshot the nsg flow pane](../media/7-network-watcher.png)
 
 > [!TIP]
 > Remember to select **Save** if you make changes to any of the settings.

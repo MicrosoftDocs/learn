@@ -21,9 +21,9 @@ Azure Cloud Shell is a browser-based shell experience that's hosted in the cloud
 
 ## Create an Azure Database for PostgreSQL server using the Azure CLI
 
-You'll use the Azure Cloud Shell terminal on the right to create an Azure Database for PostgreSQL server using Azure CLI.
+You'll use the Azure Cloud Shell terminal to create an Azure Database for PostgreSQL server using Azure CLI.
 
-The Azure CLI server creation command usage help showing all available parameters looks like the following example:
+The Azure CLI server creation command provides usage help that shows all available parameters. Here is an example of the command:
 
 ```azurecli
 az postgres server create [-h] [--verbose] [--debug]
@@ -32,7 +32,7 @@ az postgres server create [-h] [--verbose] [--debug]
                             --resource-group RESOURCE_GROUP_NAME --name SERVER_NAME
                             --sku-name SKU_NAME [--location LOCATION]
                             --admin-user ADMINISTRATOR_LOGIN
-                            [--admin-password ADMINISTRATOR_LOGIN_PASSWORD]
+                            --admin-password ADMINISTRATOR_LOGIN_PASSWORD
                             [--backup-retention BACKUP_RETENTION]
                             [--geo-redundant-backup GEO_REDUNDANT_BACKUP]
                             [--ssl-enforcement {Enabled,Disabled}]
@@ -43,7 +43,7 @@ az postgres server create [-h] [--verbose] [--debug]
 
 ```
 
-The optional parameters are surrounded in brackets. Let's examine a few of the common ones.
+The optional parameters are surrounded in brackets. Let's examine a few of the common parameters.
 
 ### Parameters
 
@@ -58,8 +58,6 @@ Examples:
 - `--sku-name B_Gen4_4` maps to Basic, Gen 4, and 4 vCores.
 - `--sku-name GP_Gen5_32` maps to General Purpose, Gen 5, and 32 vCores.
 - `--sku-name MO_Gen5_2` maps to Memory Optimized, Gen 5, and 2 vCores.
-
-Recall that we discussed the three pricing tiers in the unit where we created the server using the portal.
 
 Let's assume you want to use a Basic, Gen 5, and 1 vCore compute resource. You'll specify the parameter as `--sku-name B_Gen5_1`.
 

@@ -43,15 +43,15 @@ quiz:
  
   - content: "What is the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub?"
     choices:
-    - content: "64 KB"
-      isCorrect: false
-      explanation: "64 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
-    - content: "128 KB"
-      isCorrect: false
-      explanation: "128 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
     - content: "256 KB"
-      isCorrect: true
-      explanation: "The maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub is 256 KB."
+      isCorrect: false
+      explanation: "256 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
     - content: "512 KB"
       isCorrect: false
-      explanation: "512 KB is more than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
+      explanation: "512 KB is less than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."
+    - content: "1 MB"
+      isCorrect: true
+      explanation: "The maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub is 1 MB."
+    - content: "2 MB"
+      isCorrect: false
+      explanation: "2 MB is more than the maximum size for a single publication (individual or batch) that is allowed by Azure Event Hub."

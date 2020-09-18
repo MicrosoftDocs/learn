@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.send-location-over-sms-from-mobile-using-azure-functions-twilio.5-create-an-azure-functions-mobile-backend
-title: Create an Azure Functions project
+title: Exercise - Create an Azure Functions project
 metadata:
   title: Create an Azure Functions project
   description: Create an Azure Functions project with a single function that acts as a mobile back end
   ms.date: 09/24/2018
   #TODO: Update with real author name.
-  author: markjulmar
-  ms.author: smmark
+  author: adrianstevens
+  ms.author: adsteven
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ROBOTS: NOINDEX

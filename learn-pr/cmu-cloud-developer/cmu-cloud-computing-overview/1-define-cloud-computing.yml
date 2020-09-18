@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-cloud-computing-overview.1-define-cloud-computing
+title: Definition of cloud computing
+metadata:
+  title: Definition of cloud computing
+  description: Definition of cloud computing.
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/1-define-cloud-computing.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "What is the definition of cloud computing?"
+    choices:
+    - content: "Cloud computing is the delivery of computing as a service over a network, whereby distributed resources are provided to an end user as a utility."
+      isCorrect: true
+      explanation: "Correct! Cloud computing allows the leasing of resources over the internet in a pay-as-you-go model."
+    - content: "Cloud computing is the delivery of computing resources to a local datacenter, located in the same place as the user."
+      isCorrect: false
+      explanation: "Cloud computing allows the leasing of resources over the internet in a pay-as-you-go model."
+    - content: "Cloud computing is distributed computing, where information flows throughout the atmosphere."
+      isCorrect: false
+      explanation: "Cloud computing allows the leasing of resources over the internet in a pay-as-you-go model."
+
+  - content: "Based on the material above, which of the following is not an aspect of cloud computing?"
+    choices:
+    - content: "The delivery of computing as a service over a network"
+      isCorrect: false
+      explanation: "That's not quite right. The question asks which of the following is not an aspect of cloud computing. The delivery of computing as a service over a network is an aspect of cloud computing. Try another option."
+    - content: "A model where clients pay for only what they use"
+      isCorrect: false
+      explanation: "That's not quite right. The question asks which of the following is not an aspect of cloud computing. Pay-as-you-go is an aspect cloud computing. Try another option."
+    - content: "Transformation of IT products into services"
+      isCorrect: false
+      explanation: "That's not quite right. The question asks which of the following is not an aspect of cloud computing. Cloud computing enables the transformation of IT products into services. Try another option."
+    - content: "A model where the client must buy and own every aspect related to IT"
+      isCorrect: true
+      explanation: "Great job! Cloud computing transforms IT from products to services and strives to eliminate up-front costs and ownership of IT resources. In cloud computing, the client does not have to buy and own every aspect related to IT."
+  
+  - content: "What are the drawbacks of an organization owning an IT solution?"
+    choices:
+    - content: "Upfront cost"
+      isCorrect: false
+      explanation: "That's right, but is this the only drawback of owning an IT solution?"
+    - content: "Maintenance"
+      isCorrect: false
+      explanation: "That's right, but is this the only drawback of owning an IT solution?"
+    - content: "Fixed size"
+      isCorrect: false
+      explanation: "That's right, but is this the only drawback of owning an IT solution?"
+    - content: "Low average utilization"
+      isCorrect: false
+      explanation: "That's right, but is this the only drawback of owning an IT solution?"
+    - content: "All of the above"
+      isCorrect: true
+      explanation: "That's right! All of these issues can be drawbacks to owning an IT solution."

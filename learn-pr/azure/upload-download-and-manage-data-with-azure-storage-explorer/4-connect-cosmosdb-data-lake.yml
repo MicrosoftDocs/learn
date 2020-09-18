@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.upload-download-and-manage-data-with-azure-storage-explorer.4-connect-cosmosdb-data-lake
+metadata:
+  title: Connect Azure Storage Explorer to Azure Cosmos DB and Data Lake
+  description: Connect Azure Storage Explorer to Azure Cosmos DB and Data Lake
+  ms.date: 03/05/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Connect Azure Storage Explorer to Azure Cosmos DB and Data Lake
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-connect-cosmosdb-data-lake.md)]

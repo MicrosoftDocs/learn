@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.build-ml-model-with-azure-stream-analytics.4-azure-functions
+title: Exercise - Write an Azure Function to analyze photographs
+metadata:
+  title: Exercise - Write an Azure Function to analyze photographs
+  description: Write an Azure Function to analyze photographs by passing them to the Custom Vision Service
+  ms.date: 05/08/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-azure-functions.md)]

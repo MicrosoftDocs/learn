@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+#TODO: Revisit title
+title: An overview of Visual Studio features
+uid: learn-windows.introducing-visual-studio.1-visual-studio-features
+metadata:
+  title: An overview of Visual Studio features
+  description: A look at what Visual Studio can do.
+  ms.date: 12/10/2018
+  author: JohnKennedy
+  ms.author: jken
+  ms.topic: interactive-tutorial
+  ms.prod: learning-windows
+  
+durationInMinutes: 15
+content: |
+    [!include[](includes/1-visual-studio-features.md)]

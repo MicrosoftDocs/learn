@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.11-nosql-databases
+title: NoSQL databases
+metadata:
+  title: NoSQL databases
+  description: NoSQL databases
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 16
+content: |
+  [!include[](includes/11-nosql-databases.md)]

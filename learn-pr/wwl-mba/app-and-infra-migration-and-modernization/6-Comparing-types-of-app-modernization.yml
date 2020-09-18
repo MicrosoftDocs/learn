@@ -9,7 +9,6 @@ metadata:
   ms.author: maargued
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 durationInMinutes: 4
 content: |
   [!include[](includes/6-Comparing-types-of-app-modernization.md)]

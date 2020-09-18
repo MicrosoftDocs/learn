@@ -1,0 +1,34 @@
+### YamlMime:LearningPath
+uid: learn.wwl.azure-data-fundamentals-explore-core-data-concepts
+metadata:
+  title: 'Azure Data Fundamentals: Explore core data concepts'
+  description: 'Azure Data Fundamentals: Explore core data concepts'
+  ms.date: 06/26/2020
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Azure Data Fundamentals: Explore core data concepts'
+prerequisites: |
+  None
+summary: |
+  Learn the fundamentals of database concepts in a cloud environment, get basic skilling in cloud data services, and build your foundational knowledge of cloud data services within Microsoft Azure.
+  You will identify and describe core data concepts such as relational, non-relational, big data, and analytics, and explore how this technology is implemented with Microsoft Azure. You will explore the roles, tasks, and responsibilities in the world of data.
+iconUrl: /learn/achievements/azure-data-fundamentals-explore-core-data-concepts.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-user
+- data-engineer
+- student
+products:
+- azure
+modules:
+- learn.wwl.explore-core-data-concepts
+- learn.wwl.explore-roles-responsibilities-world-of-data
+- learn.wwl.describe-concepts-of-relational-data
+- learn.wwl.explore-concepts-of-non-relational-data
+- learn.wwl.explore-concepts-of-data-analytics
+trophy:
+  uid: learn.wwl.azure-data-fundamentals-explore-core-data-concepts.trophy

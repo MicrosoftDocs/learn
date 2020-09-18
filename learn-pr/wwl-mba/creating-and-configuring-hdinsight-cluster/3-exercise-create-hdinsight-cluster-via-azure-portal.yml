@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.creating-and-configuring-hdinsight-cluster.3-exercise-create-hdinsight-cluster-via-azure-portal
+title: Exercise - Create an HDInsight cluster via the Azure portal
+metadata:
+  title: 'Exercise - Create a HDInsight cluster via the Azure portal '
+  description: 'Exercise - Create a HDInsight cluster via the Azure portal '
+  ms.date: 10/25/2019
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: False
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-exercise-create-hdinsight-cluster-via-azure-portal.md)]

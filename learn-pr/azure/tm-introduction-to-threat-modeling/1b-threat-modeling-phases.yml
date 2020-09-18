@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.tm-introduction-to-threat-modeling.1b-threat-modeling-phases
+title: Threat Modeling Phases
+metadata:
+  title: Threat Modeling Phases
+  description: Explore the four high-level phases of threat modeling.
+  ms.date: 02/28/2020
+  author: rodsan
+  ms.author: rodsan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-threat-modeling
+durationInMinutes: 2
+content: |
+  [!include[](includes/1b-threat-modeling-phases.md)]

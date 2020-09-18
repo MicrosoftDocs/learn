@@ -19,7 +19,7 @@ For developers, API Management provides a range of benefits.
 - **Health monitoring**. APIs are consumed by remote clients. So it can be difficult to identify potential problems or errors. API Management lets you view error responses and log files, and filter by types of responses.
 - **Modern formats like JSON**. APIs have used many different data exchange formats over the years from XML to CSV and many more. API Management enables you to expose these formats using modern data models like JSON.
 - **Connections to any API**. In many businesses, APIs are located across different countries and use different formats. API Management lets you add all of these disparate APIs into single modern interface.
-- **Analytics**. As your develop your APIs, its useful to see how often your APIs are being called and by which types of systems. API Management allows you to visualize this data within the Azure portal. 
+- **Analytics**. As you develop your APIs, it's useful to see how often your APIs are being called and by which types of systems. API Management allows you to visualize this data within the Azure portal. 
 - **Security**. Security is paramount when dealing with system data. Unauthorized breaches can cost companies money, time lost in reworking code, and reputational loss. Security tools that you can use with Azure API management include OAuth 2.0 user authorization, and integration with Azure Active Directory.
 
 
@@ -37,7 +37,7 @@ When you create an Azure API management gateway, you must select from one of sev
 ## API management setup
 
 To set up API management, you:
-1. Create an API Management gateway. The name you use for the gateway  must be globally unique within the ***.azure-api.net** namespace.
+1. Create an API Management gateway. The name you use for the gateway  must be globally unique within the **.azure-api.net** namespace.
 1. Register an existing Web API with the gateway. Registering the API makes the API available to consumers at the **\<gateway\>.azure-api.net** endpoint.
 1. Call the existing API through the gateway. Consumers can now use the API at the endpoint URL, or through the developer portal.
 

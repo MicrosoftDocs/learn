@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.migrate-sql-server-relational-data.4-exercise-assess-database
+metadata:
+  title: Exercise - Assess a database by using Data Migration Assistant
+  description: Exercise - Assess a database by using Data Migration Assistant
+  ms.date: 02/21/2020
+  author: jboeshart
+  ms.author: jaboes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise - Assess a database by using Data Migration Assistant
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-exercise-assess-database.md)]

@@ -27,13 +27,13 @@ Follow these steps to see what roles are assigned at the resource group scope.
 
 1. In the navigation list, click **Resource groups**.
 
-   ![Screenshot of the Azure portal showing the Resource groups blade](../media/4-resource-groups.png)
+   ![Screenshot of the Azure portal showing the Resource groups pane](../media/4-resource-groups.png)
 
 1. Find and click the resource group named **FirstUpConsultantsRG1-_XXXXXXX_**.
 
 1. Click **Access control (IAM)**.
 
-   ![Screenshot showing the location of the Access control (IAM) option in the selected resource group blade](../media/4-resource-group-access-control.png)
+   ![Screenshot showing the location of the Access control (IAM) option in the selected resource group pane](../media/4-resource-group-access-control.png)
 
 1. Click the **Role assignments** tab.
 

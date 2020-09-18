@@ -23,9 +23,11 @@ Before you begin to build and deploy solutions with Azure services, make sure yo
 | ![Icon of lightbulb](../media/lightbulb.png)| *Each landing zone is part of a broader solution for organizing resources across a cloud environment. These resources include management groups, resource groups, and subscriptions. Azure offers many services that help you organize resources, control costs, and secure and manage your organization’s Azure subscription. Azure Cost Management also provides a few ways to help you predict, analyze, and manage costs.*|
 |
 
-> [!TIP]
+> [!NOTE]
 > For an interactive experience, view the environment-readiness content in the Azure portal. Go to the Azure Quickstart Center in the Azure portal, and select Introduction to Azure Setup. Then follow the step-by-step instructions.
 
+> [!TIP]
+> Standards-based Azure Blueprints samples are available and ready to use. Visit the list of available samples that are ready to use or modify for your needs, linked in the “Summary and resources” unit at the end of this module.
 
 :::row:::
 ![Icon of key](../media/key-takeaway.png)

@@ -30,7 +30,7 @@ SQL elastic pools must be hosted in a SQL server. You'll specify an existing ser
 
 Like many Azure resources, elastic pools can be created from the Azure portal, or the Azure CLI using the `az sql elastic-pools create` command, or via PowerShell using the `New-AzSqlElasticPool` command.
 
-In the next unit, we'll use the portal to create a SQL elastic pool. 
+In the next unit, you'll complete an exercise to create a SQL elastic pool. 
 
 ## Add databases to an elastic pool
 

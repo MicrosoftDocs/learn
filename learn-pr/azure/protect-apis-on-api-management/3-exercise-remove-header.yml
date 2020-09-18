@@ -15,16 +15,3 @@ interactive: bash
 azureSandbox: true
 content: |
   [!include[](includes/3-exercise-remove-header.md)]
-tasks:
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.Web/sites"
-  hint: "Follow the instructions above to create an API app and API Management resource."
-- action: exists
-  environment: azure
-  azure:
-    resource:
-      type: "Microsoft.ApiManagement/service"
-  hint: "Follow the instructions above to create an API app and API Management resource."

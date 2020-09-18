@@ -1,0 +1,100 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-basics.cmu-data-center-design.2-infrastructure
+title: Infrastructure and facilities
+metadata:
+  title: Infrastructure and facilities
+  description: Infrastructure and facilities
+  ms.date: 02/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 24
+content: |
+  [!include[](includes/2-infrastructure.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block 1  
+  - content: "Which of the following is **not** a typical feature in a datacenter server room?"
+    choices:
+    - content: "Raised floor"
+      isCorrect: false
+      explanation: "Incorrect. Raised floors are fairly common in datacenters. Which of these options is not vital in modern datacenters?"
+    - content: "Computer room air conditioner (CRAC)"
+      isCorrect: false
+      explanation: "Incorrect. CRACs are common in datacenters. Which of these options is not vital in modern datacenters?"
+    - content: "Power distribution units (PDUs)"
+      isCorrect: false
+      explanation: "Incorrect. PDUs are common in datacenters. Which of these options is not vital in modern datacenters?"
+    - content: "Display walls"
+      isCorrect: true
+      explanation: "Correct! Display walls are not common in datacenters but may be used in datacenter monitoring and control rooms."
+
+# Did I Get This block 2 question 1
+  - content: "What are the primary design goals in planning, configuring, and implementing power distribution for datacenters?"
+    choices:
+    - content: "Carbon footprint and environment friendliness"
+      isCorrect: false
+      explanation: "Incorrect. Carbon footprint and environment friendliness are important factors in datacenter design, but may not necessarily be the primary design goals for power distribution. One of the other options actually takes care of these goals. What do organizations care about the most regarding datacenters?"
+    - content: "Manageability and utilization"
+      isCorrect: false
+      explanation: "Incorrect. Manageability and utilization may be considered in planning, configuring, and implementing power distribution for datacenters, but they aren't the primary design goals. What do organizations care about the most regarding datacenters?"
+    - content: "Reduced capital expenses"
+      isCorrect: false
+      explanation: "Incorrect. Capital expenses may be considered in planning, configuring, and implementing power distribution for datacenters, but they aren't necessarily the primary design goals. What do organizations care about the most regarding datacenters?"
+    - content: "Efficiency and reliability"
+      isCorrect: true
+      explanation: "Correct! Efficiency and reliability are the primary design goals in power distribution design."
+      
+# Did I Get This block 2 question 2      
+  - content: "Which entity is responsible for selecting the power feed that goes into a datacenter?"
+    choices:
+    - content: "UPS line conditioner"
+      isCorrect: false
+      explanation: "Incorrect. The UPS line conditioner simply ensures a clean power output from the DC/AC conversion of the power from battery backup."
+    - content: "Generator bypass switch"
+      isCorrect: false
+      explanation: "Incorrect. The generator bypass switch is used to manually switch between main power feeds and generator feeds."
+    - content: "Power distribution unit"
+      isCorrect: false
+      explanation: "Incorrect. The power distribution units distribute power feeds into individual datacenter equipment."
+    - content: "Automatic or universal transfer switch"
+      isCorrect: true
+      explanation: "Correct!"
+
+# Did I Get This block 3 question 3 has intro statement and no visible graphic      
+#  - content: "Match each of the power distribution descriptions to its associated technique."
+
+# Did I Get This block 4 question 1
+  - content: "Why is cooling so important in datacenters?"
+    choices:
+    - content: "To prevent data loss from magnetic drives"
+      isCorrect: false
+      explanation: "Incorrect. That's not the main reason cooling is important in datacenters. Consider all the methods used to cool datacenters."
+    - content: "IT equipment generates heat and must be cooled to maintain optimum performance and obtain maximum life"
+      isCorrect: true
+      explanation: "Correct! Cooling improves efficiency and extends the life of IT equipment."
+    - content: "To prevent fire hazards"
+      isCorrect: false
+      explanation: "Incorrect. IT equipment usually has mechanisms that allow for shutting down in case of overheating. Consider all the methods used to cool datacenters."
+
+# Did I Get This block 4 question 2 
+  - content: "Which of the following is **not** a datacenter cooling technique?"
+    choices:
+    - content: "Evaporative cooling"
+      isCorrect: false
+      explanation: "Incorrect. Use of evaporative cooling techniques is typical in datacenters. Consider all the methods that are used to cool datacenters."
+    - content: "Use of CRACs"
+      isCorrect: false
+      explanation: "Incorrect. Use of computer room air conditioners, or CRACs, is typical in datacenters. Consider all the methods that are used to cool datacenters."
+    - content: "Dry ice chiller"
+      isCorrect: true
+      explanation: "Correct! We have yet to hear of anyone cooling their datacenters with dry ice!"    
+    - content: "Top-of-rack cooling"
+      isCorrect: false
+      explanation: "Incorrect. Use of top-of-rack cooling techniques is typical in datacenters. Consider all the methods that are used to cool datacenters."    
+    - content: "In-row cooling"
+      isCorrect: false
+      explanation: "Incorrect. Use of in-row cooling techniques is typical in datacenters. Consider all the methods that are used to cool datacenters."

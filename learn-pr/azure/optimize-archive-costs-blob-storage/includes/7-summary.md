@@ -6,9 +6,9 @@ In this module, you learned about using storage tiers to help manage data saved 
 
 Managing access tiers using C#(.NET) apps:
 
-* [CloudBlockBlob.SetStandardBlobTier Method](https://docs.microsoft.com/dotnet/api/microsoft.windowsazure.storage.blob.cloudblockblob.setstandardblobtier?view=azure-dotnet)
+* [CloudBlockBlob.SetStandardBlobTier Method](https://docs.microsoft.com/dotnet/api/microsoft.azure.storage.blob.cloudblockblob.setstandardblobtier)
 
-* [StandardBlobTier Enum](https://docs.microsoft.com/dotnet/api/microsoft.windowsazure.storage.blob.standardblobtier?view=azure-dotnet)
+* [StandardBlobTier Enum](https://docs.microsoft.com/dotnet/api/microsoft.azure.storage.blob.standardblobtier)
 
 Managing access tiers using REST API:
 
@@ -18,8 +18,8 @@ Managing access tiers using REST API:
 
 Managing access tiers using Java apps:
 
-* [CloudBlockBlob.uploadStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob._cloud_block_blob.uploadstandardblobtier?view=azure-java-legacy)
+* [CloudBlockBlob.uploadStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob.cloudblockblob.uploadstandardblobtier?view=azure-java-legacy)
 
-* [BlobProperties.setStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob._blob_properties.setstandardblobtier?view=azure-java-legacy)
+* [BlobProperties.setStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob.blobproperties.setstandardblobtier?view=azure-java-legacy)
 
-* [BlobProperties.getStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob._blob_properties.getstandardblobtier?view=azure-java-legacy)
+* [BlobProperties.getStandardBlobTier Method](https://docs.microsoft.com/java/api/com.microsoft.azure.storage.blob.blobproperties.getstandardblobtier?view=azure-java-legacy)

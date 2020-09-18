@@ -40,7 +40,7 @@ Schedule-based scaling specifies a start and end time, and the number of instanc
 
 In this case, the default rule scales the system back down to two instances. This value is the **Maximum** in this default scale condition.
 
-![Screenshot showing an example of a schedule-based scale condition](../media/4-schedule-based-scale-rule.png)
+![Screenshot showing an example of a schedule-based scale condition.](../media/4-schedule-based-scale-rule.png)
 
 ### Use metrics-based autoscaling
 
@@ -71,4 +71,4 @@ Finally, plan for a scale-in when a workload decreases. Consider defining scale 
 
 The following image shows a scale rule defined in the Azure portal.
 
-![Example of a metrics-based scale rule in the Azure portal](../media/4-example-scale-rule.png)
+![Screenshot of a metrics-based scale rule in the Azure portal.](../media/4-example-scale-rule.png)

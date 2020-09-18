@@ -4,11 +4,10 @@ metadata:
   title: Sentiment analysis and the Text Analytics API
   description: In this unit, we'll talk about the field of text analytics and set the stage for using Azure Cognitive Services to discover sentiment in text from our apps.
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 title: Sentiment analysis and the Text Analytics API
 durationInMinutes: 4
 content: |

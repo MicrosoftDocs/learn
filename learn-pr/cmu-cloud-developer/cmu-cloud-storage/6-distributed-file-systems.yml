@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.cloud-storage-overview.6-distributed-file-systems
+title: Distributed file systems
+metadata:
+  title: Distributed file systems
+  description: Distributed file systems
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-distributed-file-systems.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "The Hadoop Distributed File System (HDFS) allows for files to be created only once in its namespace. A file, once written, may not be updated or appended to. What file-sharing semantics does HDFS follow?"
+    choices:
+    - content: "Session semantics"
+      isCorrect: false
+      explanation: "That's not quite right. Session semantics should allow updates to files once the files are closed."
+    - content: "Atomic transactions"
+      isCorrect: false
+      explanation: "That's not quite right. Atomic transactions should allow parallel updates to files at any time."
+    - content: "Immutable semantics"
+      isCorrect: true
+      explanation: "Correct! Since file updates are not a valid operation in HDFS, the file system is immutable."
+    - content: "UNIX semantics"
+      isCorrect: false
+      explanation: "That's not quite right. UNIX semantics should allow updates to files at any time."
+
+  - content: "Dropbox is a cloud service that allows users to store and share files on the cloud. Users can install a client application that automatically syncs files from the user's local file system to the cloud. When a shared file is opened for writing, Dropbox waits for the application to close the file before committing the changes to the cloud. Files can be updated by any client. What file-sharing semantics does Dropbox follow?"
+    choices:
+    - content: "Atomic transactions"
+      isCorrect: false
+      explanation: "That's not quite right. Updates to a file are propagated only after the file is closed in the client."
+    - content: "UNIX semantics"
+      isCorrect: false
+      explanation: "That's not quite right. UNIX semantics should allow updates to files at any time, and users should see changes instantaneously."
+    - content: "Session semantics"
+      isCorrect: true
+      explanation: "Correct! Since updates to a file are propagated only after the file is closed in the client, Dropbox follows session semantics to share files."
+    - content: "Immutable semantics"
+      isCorrect: false
+      explanation: "That's not quite right. Dropbox allows users to modify files once they are closed."

@@ -6,13 +6,13 @@ Let's say you work for a company that sells a variety of products ranging from c
 
 ## Understand the business problem
 
-In any problem-solving method the problem must first be identified. This can either be in the form of a question or a statement. There is always a general business understanding that will motivate the data science process in each situation.
+In any problem-solving method, the problem must first be identified. This identification can either be in the form of a question or a statement. There is always a general business understanding that will motivate the data science process in each situation.
 
 In our example, your company understands they could be selling more brooms if they knew how many they could expect to sell each month, and stock their shelves accordingly.
 
 ## Understand and prepare the data
 
-Data understanding comes from the process of acquiring and exploring available data. This step involves obtaining and preparing the data to be used in model training. To train models, it's important to understand the data. Data scientists start by performing exploratory data analysis (EDA) to better understand the data they're working with, and identify which data elements drive the outcome they want to predict. With this understanding, can cleanse the data and extract the features required for modeling.
+Data understanding comes from the process of acquiring and exploring available data. This step involves obtaining and preparing the data to be used in model training. To train models, it's important to understand the data. Data scientists start by performing exploratory data analysis (EDA) to better understand the data they're working with, and identify which data elements drive the outcome they want to predict. With this understanding, you can cleanse the data and extract the features required for modeling.
 
 Your company gives their data to the data science team. The data engineer cleans and preps the data so that it's ready for the modeling process. EDA helps you learn about the relationship among data elements, which helps determine which data (or *features*) you will need to train the model. For example, it might help to know what people most frequently buy with brooms.
 

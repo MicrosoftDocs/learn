@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.cloud-storage.case-study-distributed-fs.4-hadoop-versus-ceph
+title: Comparison of Hadoop versus Ceph file systems
+metadata:
+  title: Comparison of Hadoop versus Ceph file systems
+  description: A case study comparison of the Hadoop distributed file system (HDFS) versus the Ceph file system.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-hadoop-versus-ceph.md)]
+# quiz:
+#  title: Check your knowledge
+#  questions:
+#
+# Did I Get This block question has only intro statement and no visible graphic      
+# content: "Please summarize the differences between HDFS and Ceph by matching the sentences shown with their appropriate place in the table."

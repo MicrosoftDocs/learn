@@ -1,0 +1,40 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.prepare-onpremises-workloads-migration-azure.deploy-azure-migrate-appliance
+title: Deploy the Azure Migrate appliance
+metadata:
+  title: Deploy the Azure Migrate appliance
+  description: "Deploy the Azure Migrate appliance"
+  ms.date: 03/02/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-deploy-azure-migrate-appliance.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the order of steps to deploy the Azure Migrate appliance?"
+    choices:
+    - content: "Download the VHD, register the appliance, configure appliance prerequisites, and then create the appliance VM."
+      isCorrect: false
+      explanation: "You can’t register the appliance until you've created it. First, download the VHD and create the appliance."
+    - content: "Download the VHD, configure appliance prerequisites, create the appliance VM, and then register the appliance."
+      isCorrect: false
+      explanation: "You can’t configure appliance prerequisites until you've created the appliance. First, download the VHD and create the appliance. Then perform configuration and registration."
+    - content: "Download the VHD, create the appliance VM, configure appliance prerequisites, and then register the appliance."
+      isCorrect: true
+      explanation: "This is the correct order of steps."
+  - content: "When importing the Hyper-V VHD file, what do you need to do to ensure the Azure Migrate appliance can communicate with the Hyper-V host?"
+    choices:
+    - content: "Specify a virtual network switch for the appliance VM to use."
+      isCorrect: true
+      explanation: "Correct. You specify a network switch as part of using the Import Virtual Machine Wizard in Hyper-V Manager. The network switch is used to communicate with the Hyper-V host."
+    - content: "Ensure URL and port requirements for the Hyper-V host are in place."
+      isCorrect: false
+      explanation: "You do need to verify Azure URL and port requirements. However, you do this before starting the appliance, not when importing the Hyper-V VHD file."
+    - content: "Configure the appliance computer time to be synchronized with the internet time server."
+      isCorrect: false
+      explanation: "Configuring the appliance computer time synchronization doesn't ensure that the appliance can communicate with the Hyper-V host. Computer time synchronization occurs automatically when setting up the appliance prerequisites."

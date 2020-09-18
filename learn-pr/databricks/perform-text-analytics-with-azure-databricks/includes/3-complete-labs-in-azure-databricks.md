@@ -9,7 +9,7 @@ Clone the lab archives that provide sample notebooks with detailed steps for bas
 
 1. From the Azure portal, navigate to your deployed Azure Databricks workspace and select **Launch Workspace**.
 1. Within the Workspace, using the command bar on the left, select **Workspace**, **Users**, and select your username (the entry with house icon).
-1. In the blade that appears, select the downwards pointing chevron next to your name, and select **Import**.
+1. In the pane that appears, select the downwards pointing chevron next to your name, and select **Import**.
 
     ![A screenshot showing the menu option to import the archive](../media/import-archive.png)
 

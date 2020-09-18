@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.aks-deploy-container-app.2-create-aks-cluster
+metadata:
+  title: Create an Azure Kubernetes Service cluster
+  description: Explore some of the architectural concepts you need to consider when you configure your first Azure Kubernetes Service cluster. You'll review concepts such as common cluster architecture and application routing.
+  ms.date: 07/31/2020
+  author: khaosdoctor
+  ms.author: ludossan
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Create an Azure Kubernetes Service cluster
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-create-aks-cluster.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "Which are examples of Kubernetes cluster architectures?"
+      choices:
+        - content: "Single control plane, several nodes."
+          isCorrect: true
+          explanation: "This is the most common case of Kubernetes architecture, where you have one control plane and several nodes to support the workloads."
+        - content: "Several control planes, single node."
+          isCorrect: false
+          explanation: "While it's possible to do so, it isn't recommended and it doesn't make sense to have one single node in a cluster."
+        - content: "No nodes, only control plane."
+          isCorrect: false
+          explanation: "The control plane node can't receive workloads, so there can't be a single control plane."
+
+    - content: "What are node pools?"
+      choices:
+        - content: "A configuration to create multiple node types in the same cluster."
+          isCorrect: true
+          explanation: "You can have several nodes with different sizes in different node pools across your cluster. You can even tell applications and pods to spin up in nodes according to their characteristics."
+        - content: "A place to store the nodes you will create in the future without paying."
+          isCorrect: false
+          explanation: "Node pools do store nodes, but they're not storage."
+        - content: "An Azure resource that allows for node sharing between clusters."
+          isCorrect: false
+          explanation: "Node pools aren't Azure resources."
+
+    - content: "What does the HTTP application routing add-on do?"
+      choices:
+        - content: "Allows for internal routing of HTTP applications among Kubernetes nodes."
+          isCorrect: false
+          explanation: "The concept of allowing routes is correct, but it doesn't do so internally."
+        - content: "Logs all routing messages from HTTP workloads."
+          isCorrect: false
+          explanation: "This add-on isn't meant to do that. Instead, it's connected to networking."
+        - content: "Allows for instant exposing of an app to external networks when you create ingresses."
+          isCorrect: true
+          explanation: "HTTP application routing allows you to instantly expose workloads to the web."

@@ -1,0 +1,41 @@
+### YamlMime:LearningPath
+uid: learn.wwl.devops-dojo-white-belt-foundation
+metadata:
+  title: 'Introduce DevOps Dojo: Create efficiencies that support your business'
+  description: Start your DevOps Dojo journey.  Create multidisciplinary DevOps teams by using shared tools and processes that are designed to make your organization’s software development and implementation projects more efficient.
+  ms.date: 09/17/2020
+  author: wwlpublish
+  ms.author: sallybre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Introduce DevOps Dojo: Create efficiencies that support your business'
+prerequisites: |
+  none
+summary: |
+  Start your DevOps Dojo journey.  Learn how to create multidisciplinary DevOps teams by using shared tools and processes designed to make your organization’s software development and implementation projects more efficient.
+iconUrl: /learn/achievements/devops-dojo-white-belt-foundation.svg
+levels:
+- beginner
+roles:
+- administrator
+- business-analyst
+- business-owner
+- business-user
+- developer
+- devops-engineer
+- functional-consultant
+- maker
+- security-engineer
+- solution-architect
+- technology-manager
+products:
+- azure
+modules:
+- learn.wwl.introduce-foundation-pillars-devops
+- learn.wwl.define-foundation-pillars
+- learn.wwl.analyze-devops-continuous-planning-intergration
+- learn.wwl.explain-devops-continous-delivery-quality
+- learn.wwl.explore-devops-continuous-security-operations
+- learn.wwl.characterize-devops-continous-collaboration-improvement
+trophy:
+  uid: learn.wwl.devops-dojo-white-belt-foundation.trophy

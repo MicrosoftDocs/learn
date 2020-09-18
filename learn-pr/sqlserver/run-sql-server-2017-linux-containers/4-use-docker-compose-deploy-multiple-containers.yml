@@ -1,29 +1,39 @@
 ### YamlMime:ModuleUnit
 uid: learn-sqlserver.run-sql-server-2017-linux-containers.4-use-docker-compose-deploy-multiple-containers
-title: Use Docker Compose to deploy multiple containers
+title: Create custom images
 metadata:
-  title: Use Docker Compose to deploy multiple containers
-  description: In this unit, you will learn how to deploy several containers in Docker by using Docker Compose.
+  title: Create custom images
+  description: In this unit, you will learn how to use Dockerfiles to create customized container images.
   ms.date: 06/11/2019
-  author: alistairmatthews
-  ms.author: v-alism
+  author: markohot
+  ms.author: markohot
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-  ROBOTS: NOINDEX
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-use-docker-compose-deploy-multiple-containers.md)]
+  [!include[](includes/4-create-custom-images.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "You receive an 'Access denied' message when you run the command 'docker-compose up'. How should you resolve the problem?"
+  - content: "You want to create a new container image based on the SQL Server on Linux image. You're using Docker to host your containers. Which directive should you use in the Dockerfile to specify this parent?"
     choices:
-    - content: "Prepend the 'sudo' command to the docker-compose command."
+    - content: "The COPY directive"
+      isCorrect: false
+      explanation: "The COPY directive copies a file into the image. To specify the parent image, use the FROM directive."
+    - content: "The FROM directive"
       isCorrect: true
-      explanation: "You must execute the docker-compose command with elevated privileges, so use the 'sudo' command."
-    - content: "Use the 'environment' directive in the YAML file to set the correct user name."
+      explanation: "The FROM directive is used to specify the parent image in the Dockerfile."
+    - content: "The ENV directive"
       isCorrect: false
-      explanation: "You must execute the docker-compose command with elevated privileges, so use the 'sudo' command."
-    - content: "Use the 'docker run' command to start the containers."
+      explanation: "The ENV directive sets an environment variable for the new image. To specify the parent image, use the FROM directive."
+  - content: "You include this line in a Dockerfile: '#CMD [/opt/mssql/bin/sqlservr]'. When you build the image, SQL Server is not run. What must you do to fix the problem?"
+    choices:
+    - content: "Use #RUN instead of #CMD."
       isCorrect: false
-      explanation: "You must execute the docker-compose command with elevated privileges, so use the 'sudo' command."
+      explanation: "CMD is the correct directive, but the '#' makes the line a comment and Docker ignores it."
+    - content: "Use CMD instead of #CMD."
+      isCorrect: true
+      explanation: "CMD is the correct directive, but the '#' makes the line a comment and Docker ignores it."
+    - content: "Use #ENV instead of #CMD."
+      isCorrect: false
+      explanation: "CMD is the correct directive, but the '#' makes the line a comment and Docker ignores it."

@@ -58,7 +58,7 @@ Webhooks offer a lightweight mechanism for your app to be notified by another se
 - A stretch is to log info from each event to a CosmosDB, but at least mention where the learner could take this solution. 
 - Follow the Learn-Exercise pattern of paired units as much as possible in this module. Teach something and then let the user practice in an exercise.
 - The final learn-exercise pair should focus on securing the webhook payload with a secret. Explain why that's important and how it is done, then update the code in the next exercise to decrypt the payload and once again show some of the contents. 
-- Consider using the portal (sandbox) for function creation. Alternatively use VS Code. 
+- Consider using the portal (sandbox) for function creation. Alternatively use Visual Studio Code. 
 - Preference is to write function code in JavaScript to lign with other modules in the learning path. We can always add a C# pivot or alternative later. 
 - References
   - [GitHub Webhooks](https://developer.github.com/webhooks/)

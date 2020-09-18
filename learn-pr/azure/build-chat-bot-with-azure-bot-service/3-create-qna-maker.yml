@@ -5,11 +5,10 @@ metadata:
   title: Exercise - Create a knowledge base with Microsoft QnA Maker
   description: Create a knowledge base with Microsoft QnA Maker
   ms.date: 09/24/2018
-  author: AndrewJByrne
-  ms.author: anbyrne
+  author: jasallen
+  ms.author: jasdeb
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ROBOTS: NOINDEX
 #labId: 46466
 durationInMinutes: 20
 content: |

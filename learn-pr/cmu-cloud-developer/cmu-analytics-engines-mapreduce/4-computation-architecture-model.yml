@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.cmu-cloud-computing.distributed-programming.analytics-engines-mapreduce.4-computation-architecture-model
+title: Computation and architectural models
+metadata:
+  title: Computation and architectural models
+  description: Learn about the computation and architectural models in MapReduce.
+  ms.date: 03/20/2020
+  author: shanamatthews
+  ms.author: shanama
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-computation-architecture-model.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+
+# Did I Get This block question 1    
+  - content: "Based on Hadoop's architectural model, how are tasks assigned to slots in TaskTrackers?"
+    choices:
+    - content: "Push strategy: the JobTracker directly assigns tasks to individual task slots."
+      isCorrect: false
+      explanation: "Incorrect. TaskTrackers always report their status to the JobTracker, which assigns the individual TaskTrackers with tasks if they are free. Review how tasks are assigned to individual TaskTrackers in Hadoop."
+    - content: "Pull strategy: the TaskTrackers notify the JobTracker of vacant slots and ask for tasks to be allotted to their vacant slots."
+      isCorrect: true
+      explanation: "Correct! TaskTrackers always report their status to the JobTracker, which assigns the individual TaskTrackers with tasks if they are free. This is a pull strategy."
+    - content: "Push-pull strategy: the JobTracker pushes tasks to TaskTrackers without checking for vacant slots, and TaskTrackers pull tasks from the JobTracker by always requesting them."
+      isCorrect: false
+      explanation: "Incorrect. TaskTrackers always report their status to the JobTracker, which assigns the individual TaskTrackers with tasks if they are free. Review how tasks are assigned to individual TaskTrackers in Hadoop."
+
+# Did I Get This block question 2
+# Question uses image that's missing in the original course. Added image placeholder.
+# Original course uses text field for each distance value. For yaml, made choices of possible values for all distances.
+#  - content: "Assume the following network topology:<br> 
+#             <img src=./media/quiz-placeholder.png></img> <br>
+#             Compute the following distances:"
+#    choices:
+#    - content: "D(TT<sup>1</sup>,TT<sup>1</sup>) = 0, D(TT<sup>1</sup>,TT<sup>2</sup>) = 1, D(TT<sup>1</sup>,TT<sup>4</sup>) = 4, D(TT<sup>5</sup>,TT<sup>3</sup>) = 3"
+#      isCorrect: false
+#      explanation: "Incorrect. Each edge traversed to get from one TaskTracker to another counts as 1."
+#    - content: "D(TT<sup>1</sup>,TT<sup>1</sup>) = 0, D(TT<sup>1</sup>,TT<sup>2</sup>) = 1, D(TT<sup>1</sup>,TT<sup>4</sup>) = 4, D(TT<sup>5</sup>,TT<sup>3</sup>) = 5"
+#      isCorrect: false
+#      explanation: "Incorrect. Each edge traversed to get from one TaskTracker to another counts as 1."
+#    - content: "D(TT<sup>1</sup>,TT<sup>1</sup>) = 0, D(TT<sup>1</sup>,TT<sup>2</sup>) = 2, D(TT<sup>1</sup>,TT<sup>4</sup>) = 4, D(TT<sup>5</sup>,TT<sup>3</sup>) = 4"
+#      isCorrect: true
+#      explanation: "Correct!"
+#    - content: "D(TT<sup>1</sup>,TT<sup>1</sup>) = 1, D(TT<sup>1</sup>,TT<sup>2</sup>) = 2, D(TT<sup>1</sup>,TT<sup>4</sup>) = 5, D(TT<sup>5</sup>,TT<sup>3</sup>) = 4"
+#      isCorrect: false
+#      explanation: "Incorrect. Each edge traversed to get from one TaskTracker to another counts as 1."

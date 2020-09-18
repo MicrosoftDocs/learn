@@ -28,7 +28,7 @@ You do most of the exercises in this module on your local machine, deploying to 
 
 1. Add Azure Extensions to Visual Studio Code
 
-    If you don't have them already, install these VS Code extensions:
+    If you don't have them already, install these Visual Studio Code extensions:
     - [Azure Account](https://marketplace.visualstudio.com/items?azure-portal=true&itemName=ms-vscode.azure-account)
     - [Azure Functions](https://marketplace.visualstudio.com/items?azure-portal=true&itemName=ms-azuretools.vscode-azurefunctions)
 
