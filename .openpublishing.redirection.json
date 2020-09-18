@@ -3134,6 +3134,36 @@
       "source_path": "learn-pr/cmu-cloud-computing/cmu-virtualize-memory/index.md",
       "redirect_url": "https://docs.microsoft.com/learn/modules/cmu-virtualize-memory/index",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/7-build-api.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/8-exercise-func-app.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/9-action.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/10-exercise-action.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/11-knowledge-check.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/publish-app-service-static-web-app-api/12-summary.md",
+      "redirect_url": "https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api",
+      "redirect_document_id": false
     }
   ]
 }
