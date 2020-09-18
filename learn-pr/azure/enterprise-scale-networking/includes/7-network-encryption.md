@@ -8,7 +8,7 @@ Third-party VPN appliances are available in the marketplace and OS-based encrypt
 
 The diagram below illustrates the encryption flow with: A. IPSec VPN, B. MACSec and C. VPN over ExpressRoute with Virtual WAN.
 
-:::image type="content" source="../media/encryption-flows.png" alt-text="Diagram that illustrates encryption flows.":::
+:::image type="content" source="../media/7-encryption-flows.png" alt-text="Diagram that illustrates encryption flows." lightbox="../media/7-encryption-flows-large.png":::
 
 ## Recommendations
 
