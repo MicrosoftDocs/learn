@@ -66,18 +66,18 @@ quiz:
     - content: 'All the above'
       isCorrect: true
       explanation: 'Great job. With Private Azure Marketplace, you have the flexibility to  allow purchases for a subset of all current plans, all current plans, or all plans available now and in the future.'
-  - content: 'Azure Policy can help your organization manage costs by controlling virtual machine deployment using which of the following criteria?'
+  - content: 'Azure Policy can help your organization manage costs by controlling virtual machine deployments using which of the following criteria?'
     choices:
     - content: 'Only virtual machines from certain software vendors can be deployed on the subscription'
       isCorrect: false
-      explanation: 'Azure Policy gives you the ability to control virtual machine deployments in a variety of ways, including based on the software provider, operating system, or Azure global region.'
+      explanation: 'Azure Policy gives you the ability to control virtual machine deployments in a variety of ways. Three common examples are limiting deployments based on the software provider, operating system, or Azure global region.'
     - content: 'Restrictions on virtual machines deployed to either Windows or Linux resources'
       isCorrect: false
-      explanation: 'Azure Policy gives you the ability to control virtual machine deployments in a variety of ways, including based on the software provider, operating system, or Azure global region.'
+      explanation: 'Azure Policy gives you the ability to control virtual machine deployments in a variety of ways. Three common examples are limiting deployments based on the software provider, operating system, or Azure global region.'
     - content: 'Limit users to deploying virtual machines from certain Azure global regions'
       isCorrect: false
-      explanation: 'Azure Policy gives you the ability to control virtual machine deployments in a variety of ways, including based on the software provider, operating system, or Azure global region.'
+      explanation: 'Azure Policy gives you the ability to control virtual machine deployments in a variety of ways. Three common examples are limiting deployments based on the software provider, operating system, or Azure global region.'
     - content: 'All the above'
       isCorrect: true
-      explanation: 'Great! Azure Policy gives you the ability to control virtual machine deployments in a variety of ways, including based on the software provider, operating system, or Azure global region.'
+      explanation: 'Great! Azure Policy gives you the ability to control virtual machine deployments in a variety of ways. Three common examples are limiting deployments based on the software provider, operating system, or Azure global region.'
       
