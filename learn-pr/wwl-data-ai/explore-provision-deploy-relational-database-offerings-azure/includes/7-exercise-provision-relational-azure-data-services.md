@@ -105,7 +105,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | **Password** | *Pa55w.rd* |
     | **Confirm password** | *Pa55w.rd* |
 
-1. Select **Review + Create**, and then select **Create** to create your Azure MySQL database.
+1. Select **Review + Create**, and then select **Create** to create your Azure PostgreSQL database.
 
 1. On the toolbar, select **Notifications** to monitor the deployment process.
 

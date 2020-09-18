@@ -1,0 +1,1 @@
+In this module you have been introduced to Apache HBase in Azure HDInsight, learned about the scenarios and requirements in which HBase would be useful, you deployed a cluster, learned about architectural patterns and run YCSB benchmark to understand the performance of HDInsight HBase cluster.

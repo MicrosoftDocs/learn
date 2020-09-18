@@ -4,7 +4,7 @@ Here, we'll go beyond connections that run over the Internet to dedicated lines 
 
 ## Azure ExpressRoute
 
-Microsoft Azure ExpressRoute enables organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the Internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Office 365 and Dynamics 365.
+Microsoft Azure ExpressRoute enables organizations to extend their on-premises networks into the Microsoft Cloud over a private connection implemented by a connectivity provider. This arrangement means that the connectivity to the Azure datacenters doesn't go over the Internet but across a dedicated link. ExpressRoute also facilitates efficient connections with other Microsoft cloud-based services, such as Microsoft 365 and Dynamics 365.
 
 Advantages that ExpressRoute provides include:
 
@@ -85,7 +85,7 @@ You can connect only one virtual network to the private peering domain.
 
 #### Microsoft peering
 
-Microsoft peering supports connections to cloud-based SaaS offerings, such as Office 365 and Dynamics 365. This peering option provides bi-directional connectivity between your company's WAN and Microsoft cloud services.
+Microsoft peering supports connections to cloud-based SaaS offerings, such as Microsoft 365 and Dynamics 365. This peering option provides bi-directional connectivity between your company's WAN and Microsoft cloud services.
 
 ### ExpressRoute health
 

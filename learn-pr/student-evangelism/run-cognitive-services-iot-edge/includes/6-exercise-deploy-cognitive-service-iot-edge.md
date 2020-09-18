@@ -32,15 +32,15 @@ To deploy the Language Detection container image as Azure IoT Edge modules from 
 
 1. In the Azure portal, enter **Language Detection Container – Azure Cognitive Services** into the search and open the Azure Marketplace result.
 
-2. Select **Get it now** to download the image. 
+2. Select **Create** to create the image.
 
 3. It will take you to the Azure portal's **Target Devices for IoT Edge Module** page. Provide the following required information.
 
-   ​	a. Select your subscription.
+    a. Select your subscription.
 
-   ​	b. Select the IoT hub created in an earlier step.
+    b. Select the IoT hub created in an earlier step.
 
-   ​	c. Select **Find device** and find your IoT Edge device created in an earlier step.
+    c. Select **Find device** and find your IoT Edge device created in an earlier step.
 
 4. Click the **Create** button. It will take you to the **Set modules** page. Keep the page open, because you'll configure Cognitive Services in the next step.
 
@@ -50,20 +50,22 @@ To deploy the Language Detection container image as Azure IoT Edge modules from 
 
 6. Navigate to **Environment Variables** and provide the following information.
 
-   ​	a. Keep the value **accept** for **Eula**.
+    a. Keep the value **accept** for **Eula**.
 
-   ​	b. Fill out **Billing** with your Cognitive Services endpoint.
+    b. Fill out **Billing** with your Cognitive Services endpoint.
 
-   ​	c. Fill out **ApiKey** with your Cognitive Services API key.
+    c. Fill out **ApiKey** with your Cognitive Services API key.
 
    ![The illustration shows environment variables.](../media/provide-info.png)
 
 7. Click **Update**.
 
-8. Select **Next: Routes** to  define your route. You define all messages from all modules to go to Azure IoT Hub. 
+8. Select **Next: Routes** to  define your route. You define all messages from all modules to go to Azure IoT Hub.
 
 9. Select **Next: Review + create**. You can preview the JSON file that defines all the modules that get deployed to your IoT Edge device.
 
-10. After you complete module deployment, you'll go back to the **IoT Edge** page of your IoT hub. Select your device from the list of IoT Edge devices to see its details.
+10. Select **Create** to start the module deployment.
 
-11. Scroll down and see the modules listed. Check that the runtime status is running for modules.
+11. After you complete module deployment, you'll go back to the **IoT Edge** page of your IoT hub. Select your device from the list of IoT Edge devices to see its details.
+
+12. Scroll down and see the modules listed. Check that the runtime status is running for modules.
