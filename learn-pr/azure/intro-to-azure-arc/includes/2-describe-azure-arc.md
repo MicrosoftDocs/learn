@@ -22,8 +22,8 @@ Azure Arc also extends adoption of cloud practices such as DevOps and Azure secu
 
 Azure Arc has the potential to dramatically alter the management strategy in hybrid scenarios. You can use Azure Arc in the following ways:
 
-- Azure Policy guest configuration. Azure Policy supports auditing Azure Arc resources to validate such settings as configurations of the operating system, applications, and environment settings.
-- Support for resource context access to log analytics data. Resource context enables you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because Azure Arc presents individual on-premises Windows computers as Azure resources, you can control access to their respective logs by applying role-based access control permissions on these resources.
-- Integration with Azure monitor. You can use Azure Monitor to help monitor and manage your server resources. *Azure Monitor* is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and to Microsoft and other cloud providers.
+- Azure Policy Guest Configuration. Azure Policy supports auditing Azure Arc resources to validate such settings as configurations of the operating system, applications, and environment settings.
+- Support for resource context access to Log Analytics data. Resource context enables you to restrict the scope of access to Log Analytics data based on the permissions to the corresponding Azure resource. Because Azure Arc presents individual hybrid systems as Azure resources, you can control access to their respective logs by applying role-based access control permissions on these resources.
+- Integration with Azure Monitor. You can use Azure Monitor to help monitor and manage your server resources. Azure Monitor is a core component of the Microsoft strategy to extend comprehensive, cloud-based monitoring functionality beyond Azure to on-premises datacenters and to Microsoft and other cloud providers.
 - Inventory of assets. Using Azure Arc, you can tag and query across both hybrid and Azure assets.
-- Unify the Azure portal. Enables you to review and configure Azure Arc resources using a consistent interface.
+- Consolidate views of management services in the Azure portal. Enables you to review and configure Azure Arc resources using a consistent interface.
