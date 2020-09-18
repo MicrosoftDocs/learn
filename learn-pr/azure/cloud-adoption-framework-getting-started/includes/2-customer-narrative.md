@@ -30,7 +30,7 @@ The retail innovation team is a division of Tailwind Traders' information techno
 
 The CIO of Tailwind Traders has recently retired. The new CIO is focused on improving technical operations in a number of areas to fuel greater innovation throughout the company, while limiting disruptions to core business operations. The cloud will play an important role in this transition.
 
-![Analogy using traffic routing to demonstrate the shift in IT operations](/azure/cloud-adoption-framework/_images/ready/ccoe-paradigm-shift.png?azure-portal=true?azure-portal=true)
+![Analogy using traffic routing to demonstrate the shift in IT operations](/azure/cloud-adoption-framework/_images/ready/ccoe-paradigm-shift.png)
 
 A cornerstone of this strategy will be a shift in the operating model, moving from a centralized command and control operating model, to a model that focuses on delegated responsibilities led by a cloud center of excellence team. This transition is expected to take several years. But the CIO will be looking for small incremental steps to transition in each of the coming projects.
 
