@@ -15,8 +15,8 @@ summary: |
 
   > [!NOTE]
   > We recently released a refreshed set of Azure Fundamentals learning paths that enable you to choose the topic areas you're interested in most. Begin your journey to the cloud with the [Azure Fundamentals part 1: Describe core Azure concepts](https://docs.microsoft.com/learn/paths/az-900-describe-cloud-concepts/) learning path.
-
-  This older version is available for those who are trying to complete it but will be removed at some point in the future.
+  >
+  > This version is available for those who are trying to complete it but will be removed at some point in the future.
 
   In this learning path, you will:
     - Learn cloud concepts such as High Availability, Scalability, Elasticity, Agility, Fault Tolerance, and Disaster Recovery
