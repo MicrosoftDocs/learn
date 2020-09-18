@@ -14,6 +14,9 @@ abstract: |
   By the end of this module, you will be able to:
   - Identify the various components and functionality of Azure Sentinel.
   - Identify use cases where Azure Sentinel would be a good solution.
+prerequisites: |
+  - Familiarity with security operations in an organization
+  - Basic experience with Azure services
 iconUrl: /learn/achievements/intro-to-azure-sentinel.svg
 levels:
 - beginner
@@ -25,9 +28,6 @@ roles:
 products:
 - azure
 - azure-sentinel
-prerequisites: |
-  - Familiarity with security operations in an organization
-  - Basic experience with Azure services
 units:
 - learn.intro-to-azure-sentinel.1-introduction
 - learn.intro-to-azure-sentinel.2-what-is-azure-sentinel
