@@ -4,9 +4,9 @@ title: Walkthrough - Create a Virtual Machine with PowerShell
 metadata:
   title: Walkthrough - Create a VM with PowerShell
   description: "Walkthrough - Create a VM with PowerShell"
-  ms.date: 08/03/2020
+  ms.date: 09/20/2020
   author: wwlpublish
-  ms.author: roberts
+  ms.author: cwsuseng
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true
