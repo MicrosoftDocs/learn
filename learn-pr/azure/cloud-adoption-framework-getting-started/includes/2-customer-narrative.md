@@ -38,7 +38,7 @@ A cornerstone of this strategy will be a shift in the operating model, moving fr
 
 Tailwind Traders have three datacenters currently. One is located within the same office building that their employees work in; this building and datacenter is owned by Tailwind Traders. The two other datacenters are in separate locations and are leased from datacenter providers. Their datacenters are a mix of physical servers and virtual servers. The virtualisation platforms they use are a mix between Hyper-V and VMware as over the years they have had different people in charge of the IT department who have had different strategy ideas.
 
-Primarily their servers run Windows Server, which is a mix of Windows Server 2008 R2, Windows Server 2012 and Windows 2016. They have a few Windows Server 2019, but that is the exception instead of the rule. Upgrading the operating systems to the latest or having a consistent strategy has never been a priority for the organization, despite various IT team members trying to push that message.
+Their servers run Windows Server primarily, with a mix of Windows Server 2008 R2, Windows Server 2012, and Windows Server 2016. They have only a few Windows Server 2019 instances. Upgrading the operating systems to the latest version or following a consistent strategy has never been a priority for the organization, despite various IT team members trying to push that goal.
 
 There are a few Linux and other open-source servers, but the IT operations team aren't familiar with them as the development team have introduced them with no real collaboration between the teams.
 
