@@ -30,13 +30,13 @@ The retail innovation team is a division of Tailwind Traders' information techno
 
 The CIO of Tailwind Traders has recently retired. The new CIO is focused on improving technical operations in a number of areas to fuel greater innovation throughout the company, while limiting disruptions to core business operations. The cloud will play an important role in this transition.
 
-![Analogy using traffic routing to demonstrate the shift in IT operations](/azure/cloud-adoption-framework/_images/ready/ccoe-paradigm-shift.png?azure-portal=true)
+![Analogy using traffic routing to demonstrate the shift in IT operations](/azure/cloud-adoption-framework/_images/ready/ccoe-paradigm-shift.png)
 
 A cornerstone of this strategy will be a shift in the operating model, moving from a centralized command and control operating model, to a model that focuses on delegated responsibilities led by a cloud center of excellence team. This transition is expected to take several years. But the CIO will be looking for small incremental steps to transition in each of the coming projects.
 
 ## IT portfolio overview
 
-Tailwind Traders have three datacenters currently. One is located within the same office building that their employees work in; this building and datacenter is owned by Tailwind Traders. The two other datacenters are in separate locations and are leased from datacenter providers. Their datacenters are a mix of physical servers and virtual servers. The virtualisation platforms they use are a mix between Hyper-V and VMware as over the years they have had different people in charge of the IT department who have had different strategy ideas.
+Tailwind Traders have three datacenters currently. One is located within the same office building that their employees work in; this building and datacenter is owned by Tailwind Traders. The two other datacenters are in separate locations and are leased from datacenter providers. Their datacenters are a mix of physical servers and virtual servers. The virtualization platforms they use are a mix between Hyper-V and VMware as over the years they have had different people in charge of the IT department who have had different strategy ideas.
 
 Their servers run Windows Server primarily, with a mix of Windows Server 2008 R2, Windows Server 2012, and Windows Server 2016. They have only a few Windows Server 2019 instances. Upgrading the operating systems to the latest version or following a consistent strategy has never been a priority for the organization, despite various IT team members trying to push that goal.
 
@@ -51,5 +51,5 @@ The leases for the two datacenters are due to run out in 18months and 2 years. T
 - **Project manager:** Part of the IT department and they help to keep projects on time, on budget and ensure all the right stakeholders are involved.
 - **Central operations/infrastructure team:** The ops team are currently in charge of the datacenters, looking after the hardware maintenance, operating systems, patch management, networking, out of hours support, etc. Most of the team are very familiar with the current infrastructure, have very little coding experience and the majority hold Microsoft qualifications relating to Windows Server.
 - **Developer:** The in-house development team make the website for the online store that Tailwind Traders host out of their own datacenters.
-- **IT manager:** In charge of the ops, developer and project management teams. Is looking to make the IT department run better and replace old servers and look to the future to help make Tailwind Traders more competitive and also make things better for his ops team who have to juggle a lot of different systems.
-- **Finance director:** Is looking to reduce costs where he can from the budget. The finance director is very familiar with the capex expenditure he has to deal with in terms of the IT department and equipment.
+- **IT manager:** In charge of the ops, developer and project management teams. Is looking to make the IT department run better and replace old servers and look to the future to help make Tailwind Traders more competitive and also make things better for his operations team who have to juggle a lot of different systems.
+- **Finance director:** Is looking to reduce costs where he can from the budget. The finance director is very familiar with the capital expenditure he has to deal with in terms of the IT department and equipment.
