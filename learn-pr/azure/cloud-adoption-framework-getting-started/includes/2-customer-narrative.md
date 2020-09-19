@@ -1,17 +1,17 @@
 ![Tailwind Traders logo](../media/logo.png)
 
-Tailwind Traders, is a modern commerce company. For 30+ years, Tailwind has been a popular retail destination growing to over 50 physical stores. Several years ago, their CEO saw changes coming in retail and bought a competing ecommerce start up that was growing aggressive in niche markets. Today, the company is seen as an innovative leader with customer-focused local store fronts.
+Tailwind Traders is a modern commerce company. For over 30 years, Tailwind has been a popular retail destination growing to over 50 physical stores. Several years ago, their CEO anticipated changes in retail and bought a competing e-commerce startup that was growing aggressively in niche markets. Today, the company is seen as an innovative leader with customer-focused local storefronts.
 
 ## Retail innovation
 
-Tailwind Traders' retail innovation team uses technology to continually redefine Tailwind's position as a leader in modern commerce.
+The Tailwind Traders retail innovation team uses technology to continually redefine Tailwind's position as a leader in modern commerce.
 
 ![Image of the website and app which started the retail innovation efforts](../media/retail-innovations.png)
 
-The retail innovation team reports to the companies chief technology officer (CTO), who was the CEO of the acquired ecommerce start up. Those technology solutions are the primary hub for interactions with customers. Those solutions impact 60% of global revenue, and produces 30% of gross sales annually. A few examples of those innovations include:
+The retail innovation team reports to the company's chief technology officer (CTO), who was the CEO of the acquired e-commerce startup. Those technology solutions are the primary hub for interactions with customers. Those solutions affect 60% of global revenue and produce 30% of gross sales annually. A few examples of those innovations include:
 
-- Boundless commerce: originally a simple ecommerce solution, this custom-built platform now provides online and offline experiences for customers. Purchases can be made from the platform. But the customer's viewing history is also used by the mobile app to customize the retail experience with in-store ads, shopping lists, and other interactions.
-- Analytics, AI, and robotics innovation: the team is experimenting with drone delivery, autonomous warehousing, and other AI lead approaches to reduce cost, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
+- **Boundless commerce:** Originally a simple e-commerce solution, this custom-built platform now provides online and offline experiences for customers. Purchases can be made from the platform. But the customer's viewing history is also used by the mobile app to customize the retail experience with in-store ads, shopping lists, and other interactions.
+- **Analytics, AI, and robotics innovation:** The team is experimenting with drone delivery, autonomous warehousing, and other AI lead approaches to reduce cost, scale through automation, and improve customer experiences. These experiments are built on big data, analytics, and AI solutions.
 
 ## Information technology
 
@@ -19,7 +19,7 @@ Beyond new innovations, Tailwind's central IT teams support all of the back-offi
 
 ![Balance speed and control](../media/balance.png)
 
-The retail innovation team is a division of Tailwind Traders' information technology team. That team is led by Tailwind trader's CIO. When you think of Tailwind Traders, you probably first think of ecommerce and innovation. This is just the beginning of Tailwind's technical capability and a small portion of the overall IT spend. Tailwind supports 3,500 employees less than 100 are dedicated to information technology. The innovation team consists of only 20 employees, mostly developers. Beyond core innovation, the IT team supports the following types of technologies:
+The retail innovation team is a division of Tailwind Traders' information technology team. That team is led by Tailwind trader's CIO. When you think of Tailwind Traders, you probably first think of e-commerce and innovation. This is just the beginning of Tailwind's technical capability and a small portion of the overall IT spend. Tailwind supports 3,500 employees less than 100 are dedicated to information technology. The innovation team consists of only 20 employees, mostly developers. Beyond core innovation, the IT team supports the following types of technologies:
 
 - **Smart storefronts:** Environmental controls, doors, lighting, interactive shelves, in-store displays and advertisements, and over 500 point of sales systems
 - **Corporate headquarters:** More than 900 employees are hosted in corporate headquarters with technology systems covering best of breed solutions to support processes across real estate, logistics, supply chain, pricing, human resources, employee schedules/tracking, payroll, etc...
@@ -30,7 +30,7 @@ The retail innovation team is a division of Tailwind Traders' information techno
 
 The CIO of Tailwind Traders has recently retired. The new CIO is focused on improving technical operations in a number of areas to fuel greater innovation throughout the company, while limiting disruptions to core business operations. The cloud will play an important role in this transition.
 
-![Analogy using traffic routing to demonstrate the shift in IT operations](/azure/cloud-adoption-framework/_images/ready/ccoe-paradigm-shift.png)
+![Analogy using traffic routing to demonstrate the shift in IT operations](/azure/cloud-adoption-framework/_images/ready/ccoe-paradigm-shift.png?azure-portal=true)
 
 A cornerstone of this strategy will be a shift in the operating model, moving from a centralized command and control operating model, to a model that focuses on delegated responsibilities led by a cloud center of excellence team. This transition is expected to take several years. But the CIO will be looking for small incremental steps to transition in each of the coming projects.
 
