@@ -95,8 +95,8 @@ The concept of refactoring a landing zone is simple, but execution requires prop
 
 The advantage of a refactoring-based approach, is the ability to create parallel iteration paths for development. The image below provides an example of two parallel iteration paths: cloud adoption and cloud platform. Both progress at their own pace, with minimal risk of becoming a blocker to either team's daily efforts. Alignment on the adoption plan and refactoring guardrails can lead to agreement about milestones and clarity about future-state dependencies.
 
-![Landing zone parallel iteration](/azure/cloud-adoption-framework/_images/ready/iterations.png?azure-portal=true)
-*Figure 4: Landing zone parallel iteration.*
+![Landing zone parallel iteration](/azure/cloud-adoption-framework/_images/ready/iterations.png)
+_Figure 1: Landing zone parallel iteration._
 
 In the example iteration paths above, the cloud adoption team is migrating their portfolio of 100 workloads to the cloud. In parallel, the cloud platform team is focused on staying ahead of the cloud adoption plan to ensure the environment is prepared for those workloads.
 
@@ -132,6 +132,7 @@ For this example, the above set of agreed upon conditions will allow the adoptio
 
 The section of the Ready methodology on expanding your landing zone will aid in moving towards the longer term requirements. As the cloud adoption team progresses with their adoption plan, review [expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
 
-![Parallel landing zone iteration](/azure/cloud-adoption-framework/_images/ready/refactor-methodologies.png?azure-portal=true) *Figure 5: Deeper methodologies assisting a parallel landing zone iteration.*
+![Parallel landing zone iteration](/azure/cloud-adoption-framework/_images/ready/refactor-methodologies.png)
+_Figure 2: Deeper methodologies assisting a parallel landing zone iteration._
 
 Each subsection of [expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern methodology or the Manage methodology) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines.

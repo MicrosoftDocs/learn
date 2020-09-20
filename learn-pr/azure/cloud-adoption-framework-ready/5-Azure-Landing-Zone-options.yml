@@ -43,7 +43,7 @@ quiz:
     - content: All of the above
       isCorrect: true
       explanation: .
-  - content: If all of the indicators in the prior question were observed, which would be a better starting point for Tailwind trader?
+  - content: If all of the indicators in the prior question were observed, which would be a better starting point for Tailwind Traders?
     choices:
     - content: CAF Migration landing zone blueprint
       isCorrect: false

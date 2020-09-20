@@ -22,8 +22,7 @@ In the prior unit of this Learn module, you assigned the initial blueprint to a 
 
 At a minimum, you'll likely need two subscriptions: production and nonproduction.
 
-![An initial subscription model showing keys next to boxes labeled "production" and "nonproduction"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model.png?azure-portal=true)
-
+![An initial subscription model showing keys next to boxes labeled "production" and "nonproduction"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model.png)
 _Figure 1: An initial subscription model with keys next to boxes labeled "production" and "nonproduction"._
 
 - Create one Azure subscription to contain your production workloads.
@@ -42,16 +41,14 @@ This approach has many benefits:
 
 If innovation goals are part of your cloud adoption strategy, consider creating one or more sandbox subscriptions. You can apply security policies to keep these test subscriptions isolated from your production and nonproduction environments. Users can easily experiment with Azure capabilities in these isolated environments. Use an Azure Dev/Test offer to create these subscriptions.
 
-![An initial subscription model showing keys next to boxes labeled "production", "nonproduction", and "sandboxes"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model-with-sandboxes.png?azure-portal=true)
-
+![An initial subscription model showing keys next to boxes labeled "production", "nonproduction", and "sandboxes"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model-with-sandboxes.png)
 _Figure 2: A subscription model with sandbox subscriptions._
 
 ### Shared services subscription
 
 If you're planning to host **more than 1,000 VMs or compute instances in the cloud within 24 months**, create another Azure subscription to host shared services. This will prepare you to support your end-state enterprise architecture. If you plan to implement enterprise operations, you may wish to further subdivide your shared services subscriptions to be feature-specific. For more information, see the **Start with enterprise-scale** Learn modules.
 
-![An initial subscription model showing keys next to boxes labeled "production" and "shared services"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model-with-shared-services.png?azure-portal=true)
-
+![An initial subscription model showing keys next to boxes labeled "production" and "shared services"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model-with-shared-services.png)
 _Figure 3: A subscription model with shared services._
 
 ### Plan for subscription scaling
@@ -72,16 +69,16 @@ The CAF Migration landing zone blueprint demonstrates network configuration, but
 
 - [Review networking options](/azure/cloud-adoption-framework/ready/considerations/networking-options?azure-portal=true) for some of the network options to consider.
 - [Evaluate a network perspective](/azure/cloud-adoption-framework/reference/networking-vdc?azure-portal=true) to see a number of ways to combine those network options to create a virtual datacenter within your Azure environment.
-- [Plan for your virtual networks](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json?azure-portal=true).
-- [Follow best practices for network security](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
+- [Plan for your virtual networks](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
+- [Follow best practices for network security](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true?azure-portal=true).
 
 ## Implement additional identity and access management considerations
 
-Similar to network, the CAF migration blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [role-based access control (RBAC) considerations](/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true)
+Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [Role-based access control (RBAC) considerations](/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true)
 
 ## Plan for parallel maturity of Govern, Security, and Manage methodologies
 
-The above steps help you prepare for your first cloud adoption efforts. However, to reach true scale in the cloud, you'll need to continue to invest in your Azure landing zones to reach operating model requirements regarding governance, security, and operations management. Each of these requirements is addressed in parallel methodologies in the Cloud Adoption Framework and their associatted Learn modules.
+The above steps help you prepare for your first cloud adoption efforts. However, to reach true scale in the cloud, you'll need to continue to invest in your Azure landing zones to reach operating model requirements regarding governance, security, and operations management. Each of these requirements is addressed in parallel methodologies in the Cloud Adoption Framework and their associated Learn modules.
 
 > [!IMPORTANT]
-> If parallel maturity is not a desirable approach, consider completing the CAF Enterprise-Scale Learn modules. The approach covered in those modules will guide you through a richer implementation option of Azure landing zones. That approach provides an opinionated implementation for all of the above considerations. That implementation establishes an environment that's ready to support Enterprise Operations.
+> If parallel maturity is not a desirable approach, consider completing the CAF Enterprise-Scale Learn modules. The approach covered in those modules will guide you through a richer implementation option of Azure landing zones. That approach provides an opinionated implementation for all of the above considerations. That implementation establishes an environment that's ready to support enterprise operations.
