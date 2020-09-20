@@ -1,4 +1,4 @@
-Before deploying an Azure Landing Zone, it's important to understand what you will need from your cloud environment to support your chosen operating model. Each Azure landing zone implementation option provides a deployment approach and defined design principles. Before choosing an implementation option, use this article to gain an understanding of the design areas listed in the following table.
+Before deploying an Azure landing zone, it's important to understand what you will need from your cloud environment to support your chosen operating model. Each Azure landing zone implementation option provides a deployment approach and defined design principles. Before choosing an implementation option, use this article to gain an understanding of the design areas listed in the following table.
 
 ## Design areas
 
@@ -15,7 +15,7 @@ Regardless of the deployment option, you should carefully consider each design a
 | Business continuity and disaster recovery (BCDR) | BCDR provides the foundation for reliability and rapid recovery. | Manage |
 | Deployment options | Align the best tools and templates to deploy your landing zones and supporting resources. | Ready |
 
-## Start with Enterprise-Scale
+## Start with enterprise scale
 
 For customers who adhere to an enterprise operations model, the enterprise-scale approach will provide a rich set of design principles in each of the above areas.
 
@@ -29,7 +29,7 @@ Subscriptions should be used as a unit of management and scale aligned with busi
 
 Azure Policy should be used to provide guardrails and ensure continued compliance with your organization's platform, along with the applications deployed onto it. Azure Policy also provides application owners with sufficient freedom and a secure unhindered path to the cloud.
 
-**Design impact:** Azure Policy provides a cloud-first governance approach by enforcing sound policies. It is also used in a DINE (Deploy, If Not Exist) capacity to automatically deploy critical architecture elements if they are deleted or changed, integrating the CICD pipeline for environment deployment with the central governance tooling.
+**Design impact:** Azure Policy provides a cloud-first governance approach by enforcing sound policies. It is also used in a DeployIfNotExists capacity to automatically deploy critical architecture elements if they are deleted or changed, integrating the CI/CD pipeline for environment deployment with the central governance tooling.
 
 ### Single control and management plane
 
@@ -37,7 +37,7 @@ Azure Policy should be used to provide guardrails and ensure continued complianc
 
 Enterprise-scale architecture shouldn't consider any abstraction layers, such as customer-developed portals or tooling. It should provide a consistent experience for both centrally managed operation teams and dedicated workload operations teams. Azure provides a unified and consistent control plane across all Azure resources and provisioning channels subject to role-based access and policy-driven controls. Azure can be used to establish a standardized set of policies and controls for governing the entire enterprise estate.
 
-**Design impact:** RBAC and Azure Policy are used to ensure that all workload deployments adhere to seperation of duty and other governance requirements.
+**Design impact:** Role-based access control (RBAC) and Azure Policy are used to ensure that all workload deployments adhere to separation of duties and other governance requirements.
 
 ### Application-centric and archetype-neutral
 
@@ -49,7 +49,7 @@ Enterprise-scale architecture should focus on application-centric migrations and
 
 The enterprise-scale architecture approach advocates using Azure-native platform services and capabilities whenever possible. This approach should align with Azure platform roadmaps to ensure that new capabilities are available within your environments. Azure platform roadmaps should help to inform the migration strategy and enterprise-scale trajectory.
 
-**Design impact:** Operations management, Security, and Governance processes will leverage cloud-native tooling as a primary operating model when using this approach. This will result in changes to existing operational processes.
+**Design impact:** Operations management, security, and governance processes will use cloud-native tooling as a primary operating model when using this approach. This will result in changes to existing operational processes.
 
 ### Recommendations
 
@@ -63,40 +63,40 @@ For customers who adhere to a centralized operations model, the enterprise-scale
 
 ### Initial adoption requirements
 
-When starting initial adoption efforts, there a few core criteria that must be met prior to adoption. Before moving assets to the cloud, the design areas of Identity, Network, & Deployment options. Some specific requirements regarding Resource organization should also be addressed, specifically initial subscriptions design, naming standards, and tagging schemas.
+When starting initial adoption efforts, there a few core criteria that must be met prior to adoption. Before moving assets to the cloud, the design areas of identity, network, and deployment options. Some specific requirements regarding resource organization should also be addressed, specifically initial subscriptions design, naming standards, and tagging schemas.
 
-**Design impact:** The initial architecture will be significantly smaller & will require additional effort reach production readiness.
+**Design impact:** The initial architecture will be significantly smaller and will require additional effort reach production readiness.
 
 ### Teach fundamental decisions
 
-Rather than provide opinionated solutions the start small approach leverages decision trees to help guide customers to specific implementations, best practices, and smaller modular reference architectures. This teaches the cloud platform team to build out the most appropriate solution for their needs.
+Rather than provide opinionated solutions the start small approach uses decision trees to help guide customers to specific implementations, best practices, and smaller modular reference architectures. This teaches the cloud platform team to build out the most appropriate solution for their needs.
 
 **Design impact:** Many design decisions are purposefully not included in the initial architecture to help the team learn through best practice implementation.
 
 ### Deferred decisions
 
-When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The Start small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprint to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the cloud adoption framework guide implementation of those individual disciplines.
+When building out an environment to support existing operations processes, you don't always know what you will need in the beginning. The start-small approach demonstrates ways to use cloud-first tools including Azure Resource Manager, Azure Policy, and Azure Blueprints to start building your environment. But rich configuration decisions are then deferred to run in parallel to your cloud adoption plan. As adoption progresses, the Govern, Manage, and Secure methodologies of the Cloud Adoption Framework guide implementation of those individual disciplines.
 
-**Design impact:** You may need to complete a foundational implementation of Govern, Secure, and Manage in parallel to landing zone deployment.
+**Design impact:** You may need to complete a foundational implementation of the Govern, Manage, and Secure methodologies in parallel to landing zone deployment.
 
 ### Refactoring
 
-The principles for the start small approach is rooted in refactoring. To avoid many common blockers, we suggest an iterative approach based on well-structured cloud adoption plan, which maximizes learning opportunities and minimizes time to business success. Refactoring and parallel efforts are critical to this approach.
+The principles for the start-small approach are rooted in refactoring. To avoid many common blockers, we suggest an iterative approach based on well-structured cloud adoption plan, which maximizes learning opportunities and minimizes time to business success. Refactoring and parallel efforts are critical to this approach.
 
 The concept of refactoring a landing zone is simple, but execution requires proper guardrails. The concept shown above outlines the basic flow:
 
 - When you're ready to build your first landing zone, start with an initial landing zone defined via a template.
-- Once that landing zone is deployed, use the decision trees in the subsequent articles under the `Expand your landing zone` section of the table of contents to refactor and add to your initial landing zone.
+- Once that landing zone is deployed, use the decision trees in the subsequent articles under the **Expand your landing zone** section of the table of contents to refactor and add to your initial landing zone.
 - Repeat decision trees and refactoring until you have an enterprise-ready environment that meets the enhanced requirements of your security, operations, and governance teams.
 
-**Design impact:** Minor refactoring is common. Significant shifts from one operations model to another may result in major restructuring. I.E. Customers who deploy one subscription to host workloads and foundational utilities, may hit scale restrictions. If your portfolio is much broader, requiring multiple landing zones this approach may require restructuring or redesigning common elements like AD, Network, etc... to expand to an enterprise operating model.
+**Design impact:** Minor refactoring is common. Significant shifts from one operations model to another may result in major restructuring. In other words, customers who deploy one subscription to host workloads and foundational utilities might hit scale restrictions. If your portfolio is much broader, requiring multiple landing zones this approach may require restructuring or redesigning common elements such as Active Directory or networking to expand to an enterprise operating model.
 
 #### Development approach
 
 The advantage of a refactoring-based approach, is the ability to create parallel iteration paths for development. The image below provides an example of two parallel iteration paths: cloud adoption and cloud platform. Both progress at their own pace, with minimal risk of becoming a blocker to either team's daily efforts. Alignment on the adoption plan and refactoring guardrails can lead to agreement about milestones and clarity about future-state dependencies.
 
-![Landing zone parallel iteration](https://docs.microsoft.com/azure/cloud-adoption-framework/_images/ready/iterations.png)
-_Figure 4: Landing zone parallel iteration._
+![Landing zone parallel iteration](/azure/cloud-adoption-framework/_images/ready/iterations.png?azure-portal=true)
+*Figure 4: Landing zone parallel iteration.*
 
 In the example iteration paths above, the cloud adoption team is migrating their portfolio of 100 workloads to the cloud. In parallel, the cloud platform team is focused on staying ahead of the cloud adoption plan to ensure the environment is prepared for those workloads.
 
@@ -116,7 +116,7 @@ All initial landing zone templates have limitations. Guardrails or policies duri
 
 As an example of establishing refactoring guardrails, lets compare the development approach in the prior example and the CAF Migration landing zone blueprint.
 
-- Per the [assumptions of the CAF Migration landing zone blueprint](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/migrate-landing-zone#assumptions), this initial landing zone is not designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring.
+- Per the [assumptions of the CAF Migration landing zone blueprint](/azure/cloud-adoption-framework/ready/migrate-landing-zone#assumptions?azure-portal=true), this initial landing zone is not designed for sensitive data or mission-critical workloads. Those features will have to be added through refactoring.
 - In this example, lets assume that the portfolio of 100 workloads will require both mission critical and sensitive data hosting capabilities.
 
 To balance these two competing requirements, the adoption team and platform team will agree to and operate under the following conditions:
@@ -130,9 +130,8 @@ For this example, the above set of agreed upon conditions will allow the adoptio
 
 #### Meeting long-term requirements while refactoring
 
-The section of the Ready methodology on expanding your landing zone will aid in moving towards the longer term requirements. As the cloud adoption team progresses with their adoption plan, review [Expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
+The section of the Ready methodology on expanding your landing zone will aid in moving towards the longer term requirements. As the cloud adoption team progresses with their adoption plan, review [expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) for guidance to help make decisions and refactor to meet the evolving requirements of various teams.
 
-![Parallel landing zone iteration](https://docs.microsoft.com/azure/cloud-adoption-framework/_images/ready/refactor-methodologies.png)
-_Figure 5: Deeper methodologies assisting a parallel landing zone iteration._
+![Parallel landing zone iteration](/azure/cloud-adoption-framework/_images/ready/refactor-methodologies.png?azure-portal=true) *Figure 5: Deeper methodologies assisting a parallel landing zone iteration.*
 
-Each subsection of [Expand your landing zone](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as govern or manage) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines.
+Each subsection of [expand your landing zone](/azure/cloud-adoption-framework/ready/considerations/?azure-portal=true) maps to one of the additions outlined in the image above. Beyond those basic expansions, the deeper methodologies (such as the Govern methodology or the Manage methodology) of this framework will aid in going beyond basic landing zone modifications to implement long-term disciplines.
