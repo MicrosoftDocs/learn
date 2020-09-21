@@ -9,7 +9,7 @@ Using Azure Arc, you can connect Kubernetes clusters located anywhere to Azure a
 
 When you implement Azure Arc you can then start to use many Azure services to manage your clusters; these include (among others):
 
-- Azure Portal
+- Azure portal
 - Azure Resource Graph
 - Azure Policy
 - Azure Monitor
