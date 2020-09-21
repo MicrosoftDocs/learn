@@ -120,7 +120,7 @@ $\ket{1}$. You can create such state with Q#.
    |1⟩:    -0,707107 +  0.000000 i  ==     ***********          [ 0.500000 ] ---     [  3,14159 rad ]
    ```
 
-   You see how the phase for the state $\ket{0}$ is $\pi$ radians. This is because
+   You see how the phase for the state $\ket{1}$ is $\pi$ radians. This is because
    the negative numbers in the complex plane lie in the negative part of the
    x-axis, and so it's $\pi$ radians in polar coordinates. Note that, although
    the phase is non-zero, the probabilities remain the same.
