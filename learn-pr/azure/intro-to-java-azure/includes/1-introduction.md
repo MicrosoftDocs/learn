@@ -3,8 +3,6 @@ This module is for Java Developers and System Administrators with  experience in
 
 ## Learning Objectives
 
-**This subsection should be a cut-and-paste of the "abstract" field from index.yml, including "By the end of this module, you will be able to:"**
-
 The goal of this module is to welcome you as Java Developers on Azure. No particular Azure knowledge is required. In this module, you will begin to discover the opportunities for Java developers on Azure.
 
 - The role of Java at Microsoft
@@ -15,7 +13,5 @@ The goal of this module is to welcome you as Java Developers on Azure. No partic
 - Summary of the Key Takeaways
 
 ## Prerequisites
-
-**This subsection should be a cut-and-paste of the "prerequisites" field from index.yml.**
 
 - Basic Development experience in Java or system operating knowledge for Java based architectures.

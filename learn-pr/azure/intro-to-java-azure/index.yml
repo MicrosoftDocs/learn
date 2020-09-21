@@ -2,27 +2,27 @@
 uid: learn.azure.intro-to-java-azure
 metadata:
   title: Introduction to Java on Azure
-  description: This field's contents are not rendered anywhere, but it's used for SEO and searches on the Browse Learn page. It should contain 2-4 complete sentences, with a focus on key search terms that should surface this module as a result.
+  description: The goal of this module is to welcome you as Java Developers on Azure. In this module, you will begin to discover the opportunities for Java developers on Azure.
   ms.date: 9/10/2020
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Introduction to Java on Azure
-summary: See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-introductory-summaries?branch=master
+summary: Azure offers multiple ways to deploy your Java applications. Java is the most used language among enterprises. As a matter of fact; It is widely used inside Microsoft as well. In this module we proof Javas importance, discuss it's various appearances and give an overview of typical deployment offers for your Java Solutions on Azure.
+ This module is for Java Developers and System Administrators with experience in operating systems running Java applications. No coding is involved in this conceptual module.
 abstract: |
- See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-learning-objectives?branch=master. 
+ The goal of this module is to welcome you as Java Developers on Azure. No particular Azure knowledge is required.
 
  By the end of this module, you will be able to:
- - One
- - Two
- - Three
-prerequisites: |
- See https://review.docs.microsoft.com/en-us/learn-docs/docs/id-guidance-prerequisites?branch=master.
 
- - One
- - Two
- - Three
+ - differentiate between Java Apps
+ - explain the opportunities for Java developers on Azure
+ 
+prerequisites: |
+
+ - Basic Development experience in Java or system operating knowledge for Java based architectures
+
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
