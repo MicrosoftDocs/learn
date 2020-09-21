@@ -29,7 +29,7 @@ Let's take a closer look at the most commonly used categories:
 - Web
 - Internet of Things (IoT)
 - Big data
-- Artificial intelligence
+- AI
 - DevOps
 
   :::column-end:::
@@ -160,13 +160,13 @@ Open-source cluster technologies have been developed to deal with these large da
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud. |
 > | Azure Databricks | Collaborative Apache Spark-based analytics service that can be integrated with other big data services in Azure. |
 
-### Artificial intelligence
+### AI
 
-Artificial intelligence, in the context of cloud computing, is based around a broad range of services, the core of which is machine learning. Machine learning is a data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends. Using machine learning, computers learn without being explicitly programmed.
+AI, in the context of cloud computing, is based around a broad range of services, the core of which is machine learning. Machine learning is a data science technique that allows computers to use existing data to forecast future behaviors, outcomes, and trends. Using machine learning, computers learn without being explicitly programmed.
 
 Forecasts or predictions from machine learning can make apps and devices smarter. For example, when you shop online, machine learning helps recommend other products you might like based on what you've purchased. Or when your credit card is swiped, machine learning compares the transaction to a database of transactions and helps detect fraud. And when your robot vacuum cleaner vacuums a room, machine learning helps it decide whether the job is done.
 
-Here are some of the most common artificial intelligence and machine learning service types in Azure.
+Here are some of the most common AI and machine learning service types in Azure.
 
 > [!div class="mx-tableFixed"]
 > | Service name | Description |
