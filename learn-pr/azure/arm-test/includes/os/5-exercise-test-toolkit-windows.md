@@ -1,5 +1,3 @@
-### Install
-
 Install PowerShell Core on Windows by following the instructions in this [link](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows)
 
 ### Download the Test toolkit

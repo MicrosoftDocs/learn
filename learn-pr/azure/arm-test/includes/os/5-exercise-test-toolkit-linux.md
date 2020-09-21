@@ -1,5 +1,3 @@
-### Install
-
 1. **Install PowerShell Core**. Follow the instructions in this [link](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos)
 
 1. Verify installation. Type the following command in the terminal:

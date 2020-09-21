@@ -1,5 +1,3 @@
-### Install
-
 1. **Install PowerShell Core**. Follow the instructions in this [link](https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-macos)
 
 1. **Install `coreutils`**. You also need to download a library called `coreutils`. It can be fetched via `brew` with the following command typed in the terminal:
@@ -90,10 +88,10 @@ It's recommended that you have two different terminal windows open for this exer
 
 You will run the Test toolkit on a path containing a deployment template and fix any errors it detects by changing the template.
 
-> [!NOTE]
-> In the exercise you are about to carry out you will only scan one template file. The Test toolkit however is capable of scanning all the files in a path and all its sub directories. The reason is that a large deployment might be split up on many files and the `azuredeploy.json` is just the entry point that may or may not link to many sub templates.
+> [!WARNING]
+> In this exercise, you scan one template file. The Test Toolkit scans all files beneath the directory you specify. It does so because a deployment can be made up of several files. Be sure that there are no JSON files beneath the directory where *azuredeploy.json* is located.
 
-1. **Start the shell**. Navigate to the sub directory `arm-ttk/`, of the Test toolkit installation directory, Type the following command in the terminal to start a PowerShell shell:
+1. **Start the shell**. Navigate to the sub directory *arm-ttk/*, of the Test toolkit installation directory, Type the following command in the terminal to start a PowerShell shell:
 
    ```bash
    pwsh
