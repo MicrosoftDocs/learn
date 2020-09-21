@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.web-app-and-api.12-summary
+uid: learn.azure.static-web-app-and-api.12-summary
 metadata:
   title: Summary
   description: Summary of the app
-  ms.date: 05/08/2020
+  ms.date: 09/22/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
