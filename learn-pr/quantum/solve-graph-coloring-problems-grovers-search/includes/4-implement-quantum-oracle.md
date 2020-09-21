@@ -1,5 +1,9 @@
 Now, you will implement a quantum oracle for the graph coloring problem.
 
+> [!NOTE]
+> In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 
+> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](https://docs.microsoft.com/quantum).
+
 ## Create the project
 
 Start by creating a Q# project like you did for the quantum random number generator in the [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true) module. To do so:
@@ -54,7 +58,7 @@ Vertex 4 - color #1 (green)
 ```
 
 When we work with graph coloring in a quantum program, we use the same encoding, but with the basis states $|0\rangle$ and $|1\rangle$ instead of the classical bits `false` and `true`. 
-The same coloring would be represented as a 10-qubit state $|0010011101\rangle$.
+The same coloring would be represented as a 10-qubit state $|0010011110\rangle$.
 
 ## Implementing the oracle
 
@@ -70,7 +74,7 @@ A typical approach to implementing a quantum oracle for a given function is as f
    * The classical AND gate can be realized using the [Toffoli gate](https://en.wikipedia.org/wiki/Toffoli_gate) (double-controlled X gate) and an extra qubit.
 
 3. If the algorithm calls for a phase oracle, transform the marking oracle into a phase oracle.  
-  This step uses a standard trick called "phase kickback": applying a marking oracle to an input register and a target qubit in a certain state will have the same effect on the input register as applying a phase oracle to it.
+  This step uses a standard trick called "phase kickback": applying a marking oracle to an input array of qubits and a target qubit in a certain state will have the same effect on the input array as applying a phase oracle to it.
 
 Let's see how this approach works for our vertex coloring problem!
 
@@ -78,21 +82,17 @@ Let's see how this approach works for our vertex coloring problem!
 
 The smallest building block for checking whether the given graph coloring is valid is taking a pair of vertices connected by an edge and checking whether their assigned colors are the same or different.
 
-The operation that implements this check has to take two 2-qubit registers as inputs, representing the colors of the vertices, and a qubit we'll use to mark the result of the comparison by flipping its state if the colors are the same.
-To compare the registers, we compare their corresponding bits to each other; if all pairs of bits are the same, then the registers are the same.
+The operation that implements this check (`MarkColorEquality`) has to take two 2-qubit arrays as inputs, representing the colors of the vertices, and a qubit we'll use to mark the result of the comparison by flipping its state if the colors are the same.
+To compare the qubit arrays, we compare their corresponding bits to each other; if all pairs of bits are the same, then the arrays are the same, and the colors of the vertices stored in those arrays are the same.
 To compare a pair of bits, we can compute their XOR: if it is 0, the bits are the same, otherwise they are different.
 
-Here is the Q# code that implements this check and uses it to compare two registers: the first one in the $|00\rangle$ state and the second one in an equal superposition of all basis states.
+Here is the Q# code that implements this check and uses it to compare two qubit arrays: the first one in the $|00\rangle$ state and the second one in an equal superposition of all basis states.
 
 :::code language="qsharp" source="code/4-program-3.qs":::
 
 > [!NOTE]
 > The [`DumpRegister`](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.dumpregister) function is similar to `DumpMachine` you've seen in the previous modules, but it prints the information about the state of a subset of qubits (a register), rather than all qubits used by the program. 
 > In the current implementation of the full-state simulator `DumpRegister` can only be used if that register is not entangled with the rest of the qubits.
-
-> [!NOTE]
-> In this module we'll focus on high-level behavior of quantum oracles and (in the following units) Grover's search algorithm. 
-> We encourage you to dig deeper into the code on your own, in particular, to look up any unfamiliar operations and language constructs in the [Q# documentation](https://docs.microsoft.com/quantum).
 
 Here is the output of this code:
 

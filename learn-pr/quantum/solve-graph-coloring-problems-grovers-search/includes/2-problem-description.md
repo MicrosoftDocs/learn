@@ -23,7 +23,7 @@ Some of these problems are better suited to benefit from using Grover's algorith
 
 ## Graph coloring problem
 
-Graph coloring problem (more precisely called [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring)) is formulated as follows: given a graph, assign a label ("color") to each of the graph's vertices so that no two vertices connected by an edge have the same label.
+The graph coloring problem, more precisely known as the [proper vertex coloring problem](https://en.wikipedia.org/wiki/Graph_coloring#Vertex_coloring), is formulated as follows: given a graph, assign a label ("color") to each of the graph's vertices such that no two vertices that share a common edge have the same label.
 
 Here is an example graph with five vertices and seven edges:
 
@@ -41,6 +41,6 @@ In fact, you cannot label the vertices of this graph using just three colors; yo
 
 In this module, we'll consider the problem of finding a 4-coloring of the graph - that is, a solution that uses, at most, four colors. (Without any constraint on the number of colors used, finding a valid graph coloring is trivial - you just assign a new label to each vertex you see!)
 
-In general, graph coloring is an [NP-complete problem](https://en.wikipedia.org/wiki/NP-completeness) and the best known solutions take exponential time to run.
+In general, graph coloring is an [NP-complete problem](https://en.wikipedia.org/wiki/NP-completeness), and the best currently known solutions to the problem take exponential time to run.
 
 In the next units of this module, you'll see how quantum computing can help speed up the solution to this problem.
