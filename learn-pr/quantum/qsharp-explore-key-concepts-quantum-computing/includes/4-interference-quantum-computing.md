@@ -25,15 +25,15 @@ quantum computers exploit the phenomenon of *wave interference*.
 
 ## Complex numbers to describe waves
 
-As mentioned earlier, probability amplitudes can be complex numbers.
+As we mentioned earlier, probability amplitudes can be complex numbers.
 
-Complex numbers are a handy mathematical tool to describe waves. In fact, they were already used to describe waves long before the discovery of quantum mechanics. They provide intuition to understand interference.
+Complex numbers are a handy mathematical tool to describe waves. In fact, they were used to describe waves long before the discovery of quantum mechanics. They give us intuition to understand interference.
 
-But what is wave interference? Waves are governed by a linear equation (remember, waves and quantum states are mathematically the same thing). This
+But what is wave interference? Waves are governed by a linear equation. (Remember, waves and quantum states are mathematically the same thing.) This characteristic
 implies that waves can be superposed, just like we discussed for quantum states earlier. Superposition of different waves enables their amplitudes
 to interfere, resulting in different effects on the overall state. There are two types of interference:
 
-![An illustration explaining constructive and destructive interference](../media/4-interference.svg)
+![An illustration explaining constructive interference and destructive interference. Constructive interference means that amplitudes can add to each other. Destructive interference means that amplitudes can cancel each other out.](../media/4-interference.svg)
 
 - **Constructive interference**
 
