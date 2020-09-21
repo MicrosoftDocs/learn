@@ -20,7 +20,7 @@ quiz:
         - content: "Delete the Azure Static Web Apps instance and recreate it."
           isCorrect: false
           explanation: "The Azure Static Web Apps instance doesn't need to be recreated to redeploy changes to your web app."
-        - content: "Push commits to the watched branched or create pull request to watched branch."
+        - content: "Push commits to the watched branched or create pull request to the watched branch."
           isCorrect: true
           explanation: "Every time you push commits or create pull requests into the watched branch, the GitHub Action automatically builds and deploys your app to Azure."
         - content: "Create a new GitHub Actions workflow to build and publish your web app."
