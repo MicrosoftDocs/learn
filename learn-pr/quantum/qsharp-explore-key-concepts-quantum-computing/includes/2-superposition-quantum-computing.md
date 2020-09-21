@@ -33,7 +33,7 @@ For example, $\ket{0}$ and $\ket{1}$ are two possible states of a qubit. If a qu
 > measurement the informal idea of "observing" a qubit, which immediately
 > collapses the quantum superposition to one of the two basis states that correspond to classical values 0 and 1. If you
 > want to learn more about measurements in the
-> context of quantum mechanics its historical discussion, you will find detailed information in the
+> context of quantum mechanics and its historical discussion, you will find detailed information in the
 > [Wikipedia article on the measurement
 > problem](https://wikipedia.org/wiki/Measurement_problem).
 
@@ -65,7 +65,7 @@ probability amplitudes of $\ket{\psi_1}$ and $\ket{\psi_2}$, respectively.
 Remember that in the module [Create your first Q# program by using the Quantum
 Development
 Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit?azure-portal=true)
-you used superposition to create a quantum random number generator. You used the operator `H` to put a qubit in the state $\ket{0}$ into superposition.
+you used superposition to create a quantum random number generator. You used the operation `H` to prepare a qubit in the state $\ket{0}$ into superposition.
 Mathematically, this is: $$  H \ket{0} = \frac1{\sqrt2} \ket{0} +
 \frac1{\sqrt2} \ket{1}.$$
 
