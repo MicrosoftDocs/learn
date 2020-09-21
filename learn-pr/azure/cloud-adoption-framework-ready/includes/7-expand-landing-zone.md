@@ -26,7 +26,7 @@ At a minimum, you'll likely need two subscriptions: production and nonproduction
 _Figure 1: An initial subscription model with keys next to boxes labeled "production" and "nonproduction"._
 
 - Create one Azure subscription to contain your production workloads.
-- Create a second subscription to serve as your nonproduction (dev/test) environment, using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test) for lower pricing.
+- Create a second subscription to serve as your nonproduction (dev/test) environment, using an [Azure Dev/Test offer](https://azure.microsoft.com/pricing/dev-test?azure-portal=true) for lower pricing.
 
 This approach has many benefits:
 
@@ -67,14 +67,14 @@ The article on [recommended naming and tagging conventions](/azure/cloud-adoptio
 
 The CAF Migration landing zone blueprint demonstrates network configuration, but provides little actionable configuration. You'll need to refactor the network configuration in that blueprint prior to deploying workloads to the new landing zone.
 
-- [Review networking options](/azure/cloud-adoption-framework/ready/considerations/networking-options?azure-portal=true) for some of the network options to consider.
-- [Evaluate a network perspective](/azure/cloud-adoption-framework/reference/networking-vdc?azure-portal=true) to see a number of ways to combine those network options to create a virtual datacenter within your Azure environment.
-- [Plan for your virtual networks](/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
-- [Follow best practices for network security](/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
+- [Review networking options](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/networking-options?azure-portal=true) for some of the network options to consider.
+- [Evaluate a network perspective](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/networking-vdc?azure-portal=true) to see a number of ways to combine those network options to create a virtual datacenter within your Azure environment.
+- [Plan for your virtual networks](https://docs.microsoft.com/azure/virtual-network/virtual-network-vnet-plan-design-arm?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
+- [Follow best practices for network security](https://docs.microsoft.com/azure/security/fundamentals/network-best-practices?toc=/azure/cloud-adoption-framework/toc.json&bc=/azure/cloud-adoption-framework/_bread/toc.json&azure-portal=true).
 
 ## Implement additional identity and access management considerations
 
-Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [Role-based access control (RBAC) considerations](/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true)
+Similar to network, the CAF Migration landing zone blueprint deploys a basic role-based access control (RBAC) requirement. But you will likely want to refactor that requirement to include deeper identity considerations. For more information, see [Role-based access control (RBAC) considerations](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/considerations/roles?azure-portal=true)
 
 ## Plan for parallel maturity of Govern, Security, and Manage methodologies
 

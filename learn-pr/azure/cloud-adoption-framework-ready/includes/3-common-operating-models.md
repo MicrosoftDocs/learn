@@ -17,7 +17,7 @@ The following characteristics aid in aligning to one of the common operating mod
 
 **Organization:** Organization of people drives a number of operations decisions. Do you have a small IT team cover all of your portfolio? Are there separate teams dedicated to functions like security, governance, operations? Are teams organized around individual workloads? Are you bound by rigid third-party compliance standards that are reviewed by an auditor or other compliance bodies?
 
-**Portfolio scope:** The size of your portfolio and where you focus operations is another important consideration for each operating model. Do you manage a large complex multicloud portfolio of workloads? Can the portfolio be supported by a single cloud platform? Do all of your workloads need to live in a single production subscription? Do you focus on workload specific operations with no central support? Learn more about these terms in the [portfolio hierarchy article](/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?azure-portal=true).
+**Portfolio scope:** The size of your portfolio and where you focus operations is another important consideration for each operating model. Do you manage a large complex multicloud portfolio of workloads? Can the portfolio be supported by a single cloud platform? Do all of your workloads need to live in a single production subscription? Do you focus on workload specific operations with no central support? Learn more about these terms in the [portfolio hierarchy article](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?azure-portal=true).
 
 **Accountability (separation of duties):** When it comes to technology, there's always something that can go wrong. That's why few teams sign up for a 100% uptime SLA. When things break or aren't performing as expected, who's accountable for taking the call? Who's accountable for proactive fixes to minimize outage? Who's accountable for cloud economics and ongoing budgets? Accountability (and associated access requirements) drives a number of environmental design decisions.
 
@@ -48,7 +48,7 @@ _Figure 2: Decentralized operations focuses on individual workloads and dependen
 
 **Platform development velocity:** Decentralized operations may share deployment scripts across workloads, but there are little to no central resources shared across workloads.
 
-Compare more pros, cons, and characteristics of [decentralized operations in the Cloud Adoption Framework](/azure/cloud-adoption-framework/operating-model/compare?azure-portal=true).
+Compare more pros, cons, and characteristics of [decentralized operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare?azure-portal=true).
 
 ## Centralized operations
 
@@ -73,7 +73,7 @@ Management of non-production environments vary significantly from organization t
 
 **Platform development velocity:** Central operations teams typically require a start-small approach to address common utilities. Then over time, the team will focus on building best of breed solutions into the environment.
 
-Compare more pros, cons, and characteristics of [centralized operations in the Cloud Adoption Framework](/azure/cloud-adoption-framework/operating-model/compare#centralized-operations?azure-portal=true).
+Compare more pros, cons, and characteristics of [centralized operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare#centralized-operations?azure-portal=true).
 
 ## Enterprise operations
 
@@ -98,7 +98,7 @@ This operating model focuses on democratizing decisions and delegated responsibi
 
 **Platform development velocity:** To encourage centralization of governance, security, and operations across a fast growing portfolio of workloads, the enterprise operations teams will require an enterprise solution be implemented prior to adoption.
 
-Compare more pros, cons, and characteristics of [enterprise operations in the Cloud Adoption Framework](/azure/cloud-adoption-framework/operating-model/compare#enterprise-operations?azure-portal=true).
+Compare more pros, cons, and characteristics of [enterprise operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare#enterprise-operations?azure-portal=true).
 
 ## Distributed operations
 
@@ -123,4 +123,4 @@ This approach to operations is discouraged when ever possible. This approach is 
 
 **Platform development velocity:** Evaluation of the portfolio of workload operations should identify an acceptable velocity for platform development that aligns to "start small" or "enterprise-scale" approaches. The primary data point to determine direction will depend on the most common operations management approach across the portfolio.
 
-Compare more pros, cons, and characteristics of [distributed operations in the Cloud Adoption Framework](/azure/cloud-adoption-framework/operating-model/compare#distributed-operations?azure-portal=true).
+Compare more pros, cons, and characteristics of [distributed operations in the Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/operating-model/compare#distributed-operations?azure-portal=true).
