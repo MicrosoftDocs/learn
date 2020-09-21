@@ -26,13 +26,7 @@ The tool is a PowerShell script. To be able to run it, you would need to go thro
 
 1. **Install the PowerShell Core**, this task is done differently depending if you are on Linux, Mac, or Windows.
 1. **Download the script**. The script is hosted in a GitHub repository and can be downloaded from there or fetched via a `git clone` command.
-1. **Import the script**. This step is just a one-liner instruction that you enter in a terminal window and looks like this:
-
-   ```powershell
-   Import-Module .\arm-ttk.psd1
-   ```
-
-   Ensure you are standing in the directory of **arm-ttk.psd1** when you run this command.
+1. **Import the script**. This step is just a one-liner instruction that you enter in a terminal window.
 
 Now you are ready to run the tests on your template.
 

@@ -1,173 +1,31 @@
 You're part of a development team at the company Tailwind Traders. As part of that work you need to author ARM templates to deploy and manage resources in the cloud. You want to ensure the templates follow some sounds practices before it's deployed. You therefore elect to use the ARM Testing tool to help you analyze your templates, so you can rectify any problems. 
 
-## Detect and fix issues on your template by running the Test toolkit
+## Set up your testing environment
 
-You will run the Test toolkit on a deployment template and fix any errors it detects by changing the template.
+The tool is a PowerShell script. To be able to run it, you would need to go through the following steps:
 
-1. **Create a template file**. Create a file called `azuredeploy.json`. Give it the following content:
+1. **Install the PowerShell Core**, this task is done differently depending if you are on Linux, Mac, or Windows. 
+1. **Download the script**. The script is hosted in a GitHub repository and can be downloaded from there or fetched via a `git clone` command. 
+1. **Import the script**. This step is just a one-liner instruction that you enter in a terminal window.
 
-   ```json
-   {
-      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-      "contentVersion": "1.0.0.0",
-      "parameters": {
-         "location": {
-            "type": "string",
-            "defaultValue": "[resourceGroup().location]",
-            "metadata": {
-               "description": "Location for the resources."
-            }
-         }
-      },
-      "resources": [{
-         "location": "westus"
-      }]
-   }
-   ```
+### Install PowerShell
 
-1. **Note down template location**. Before proceeding, make a note of the location of your files.
-1. **Start the shell**. Type the following command in the terminal to start a PowerShell shell:
+::: zone pivot="linux"
 
-   ```bash
-   pwsh
-   ```
+[!include[](./os/5-exercise-test-toolkit-linux.md)]
 
-   You should see an output looking similar to the below:
+::: zone-end
 
-   ```output
-   PowerShell 7.0.3
-   Copyright (c) Microsoft Corporation. All rights reserved.
+::: zone pivot="macos"
 
-   https://aka.ms/powershell
-   Type 'help' to get help.
-   ```
+[!include[](./os/5-exercise-test-toolkit-macos.md)]
 
-1. **Analyze template**.
+::: zone-end
 
-   1. **Locate tool**. Next, in the terminal navigate to the location of the file **arm-ttk.psd1**
-   1. **Import the arm-ttk module**. Type the following command in the terminal:
+::: zone pivot="windows"
 
-      ```powershell
-      Import-Module ./arm-ttk.psd1
-      ```
-  
-   1. **Run the tool**. Ensure you use the location of your GitHub files below as an argument to **-TemplatePath**. Run the tool by typing the following command:
+[!include[](./os/5-exercise-test-toolkit-windows.md)]
 
-      ```powershell
-      Test-AzTemplate -TemplatePath path/to/starter/template
-      ```
+::: zone-end
 
-       You should see the following output in the terminal:
-
-      ```output
-       Validating deploy\azuredeploy.json                                                        deploymentTemplate
-       [+] adminUsername Should Not Be A Literal (4 ms)
-       [+] apiVersions Should Be Recent (2 ms)
-       [+] artifacts parameter (1 ms)
-       [+] DependsOn Best Practices (2 ms)
-       [+] Deployment Resources Must Not Be Debug (2 ms)
-       [+] DeploymentTemplate Must Not Contain Hardcoded Uri (1 ms)
-       [+] DeploymentTemplate Schema Is Correct (1 ms)
-       [+] Dynamic Variable References Should Not Use Concat (1 ms)
-       [+] IDs Should Be Derived From ResourceIDs (3 ms)
-       [+] Location Should Not Be Hardcoded (1 ms)
-       [+] ManagedIdentityExtension must not be used (2 ms)
-       [+] Min And Max Value Are Numbers (1 ms)
-       [+] Outputs Must Not Contain Secrets (4 ms)
-       [-] Parameters Must Be Referenced (2 ms) Unreferenced parameter: location
-       [+] Parameters Property Must Exist (1 ms)
-       [+] providers apiVersions Is Not Permitted (1 ms)
-       [+] ResourceIds should not contain (1 ms)
-       [-] Resources Should Have Location (8 ms) Resource  Location must be an expression or 'global'                                                               [+] Secure String Parameters Cannot Have Default (1 ms)
-       [+] Template Should Not Contain Blanks (1 ms)
-       [+] Variables Must Be Referenced (1 ms)
-       [+] Virtual Machines Should Not Be Preview (3 ms)
-       [+] VM Images Should Use Latest Version (1 ms)
-       [+] VM Size Should Be A Parameter (3 ms)
-      ```
-
-   1. **Analyze results**. Note above how two tests are failing,  **Resources Should have Location is failing** and  **Parameters Must Be Referenced**. A failing test is indicated by the prefix **[-]**.
-
-      To understand what's going on, open the **azuredeploy.json** file, it should look like so:
-
-         ```json
-         {
-            "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
-            "contentVersion": "1.0.0.0",
-            "parameters": {
-              "location": {
-                "type": "string",
-                "defaultValue": "[resourceGroup().location]",
-                "metadata": {
-                    "description": "Location for the resources."
-                }
-              }
-            },
-            "resources": [{
-              "location": "westus"
-            }]
-         }
-         ```
-
-         The tests are failing for two reasons:
-
-         - **The location parameter isn't used**. This error message might, for example, indicate that we have used it in the past and forgot to clean it up. Or that it should be used but we forgot to update our code.
-         - **The location property is set to the hardcoded string westus**. Using this option is not considered a good practice as you want to be able to control the location of a resource with input parameters when you are deploying.
-
-1. **Apply fix to template**. So how to fix the above failing tests?
-
-   As the test indicates, we could try replacing **westus** with the text **global**. However, that would only fix one of the problems. Most likely we want to use the **location** parameter and set the resources location to that value. The reason is two-fold, not only can the location parameter be set as an argument when deploying, it also has reasonable fallback of being set to the **resourceGroup().location** as *defaultValue* should you omit to set the **location** when running the deployment.
-
-   1. **Change the template**. Locate the first resource item in the **resources** array and replace the following content:
-
-      ```json
-      "resources": [{
-        "location": "westus"
-      }]
-      ```
-
-      with this content:
-
-      ```json
-      "resources": [{
-        "location": "[parameters('location')]"
-      }]
-      ```
-
-1. **Verify the fix**. Run the test tool once again with the following command:
-
-   ```powershell
-   Test-AzTemplate -TemplatePath path/to/starter/template
-   ```
-
-   You now get an output where all tests pass:
-
-   ```output
-   Validating deploy\azuredeploy.json                                                        deploymentTemplate
-   [+] adminUsername Should Not Be A Literal (6 ms)
-   [+] apiVersions Should Be Recent (2 ms)
-   [+] artifacts parameter (1 ms)
-   [+] DependsOn Best Practices (1 ms)
-   [+] Deployment Resources Must Not Be Debug (1 ms)
-   [+] DeploymentTemplate Must Not Contain Hardcoded Uri (1 ms)
-   [+] DeploymentTemplate Schema Is Correct (1 ms)
-   [+] Dynamic Variable References Should Not Use Concat (1 ms)
-   [+] IDs Should Be Derived From ResourceIDs (4 ms)
-   [+] Location Should Not Be Hardcoded (1 ms)
-   [+] ManagedIdentityExtension must not be used (1 ms)
-   [+] Min And Max Value Are Numbers (1 ms)
-   [+] Outputs Must Not Contain Secrets (1 ms)
-   [+] Parameters Must Be Referenced (1 ms)
-   [+] Parameters Property Must Exist (1 ms)
-   [+] providers apiVersions Is Not Permitted (1 ms)
-   [+] ResourceIds should not contain (1 ms)
-   [+] Resources Should Have Location (1 ms)
-   [+] Secure String Parameters Cannot Have Default (1 ms)
-   [+] Template Should Not Contain Blanks (1 ms)
-   [+] Variables Must Be Referenced (1 ms)
-   [+] Virtual Machines Should Not Be Preview (4 ms)
-   [+] VM Images Should Use Latest Version (1 ms)
-   [+] VM Size Should Be A Parameter (4 ms)
-   ```
-
-Success, you've managed to run the test tool, locate, and fix errors.
+Now you are ready to run the tests on your template.
