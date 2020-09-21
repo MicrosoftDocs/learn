@@ -22,7 +22,7 @@ In the prior unit of this Learn module, you assigned the initial blueprint to a 
 
 At a minimum, you'll likely need two subscriptions: production and nonproduction.
 
-![An initial subscription model showing keys next to boxes labeled "production" and "nonproduction"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model.png)
+:::image type="content" source="../media/initial-subscription-model.png" alt-text="An initial subscription model showing keys next to boxes labeled production and nonproduction.":::
 _Figure 1: An initial subscription model with keys next to boxes labeled "production" and "nonproduction"._
 
 - Create one Azure subscription to contain your production workloads.
@@ -41,14 +41,14 @@ This approach has many benefits:
 
 If innovation goals are part of your cloud adoption strategy, consider creating one or more sandbox subscriptions. You can apply security policies to keep these test subscriptions isolated from your production and nonproduction environments. Users can easily experiment with Azure capabilities in these isolated environments. Use an Azure Dev/Test offer to create these subscriptions.
 
-![An initial subscription model showing keys next to boxes labeled "production", "nonproduction", and "sandboxes"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model-with-sandboxes.png)
+:::image type="content" source="../media/initial-subscription-model-with-sandboxes.png" alt-text="Image showing an initial subscription model showing keys next to boxes labeled production, nonproduction, and sandboxes.":::
 _Figure 2: A subscription model with sandbox subscriptions._
 
 ### Shared services subscription
 
 If you're planning to host **more than 1,000 VMs or compute instances in the cloud within 24 months**, create another Azure subscription to host shared services. This will prepare you to support your end-state enterprise architecture. If you plan to implement enterprise operations, you may wish to further subdivide your shared services subscriptions to be feature-specific. For more information, see the **Start with enterprise-scale** Learn modules.
 
-![An initial subscription model showing keys next to boxes labeled "production" and "shared services"](/azure/cloud-adoption-framework/_images/ready/initial-subscription-model-with-shared-services.png)
+:::image type="content" source="../media/initial-subscription-model-with-shared-services.png" alt-text="An image showing an initial subscription model showing keys next to boxes labeled production and shared services.":::
 _Figure 3: A subscription model with shared services._
 
 ### Plan for subscription scaling

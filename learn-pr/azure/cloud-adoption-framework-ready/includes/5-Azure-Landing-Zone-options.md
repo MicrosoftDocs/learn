@@ -4,7 +4,7 @@ Azure landing zones provide cloud adoption teams with a well-managed environment
 
 Configuration of your cloud environment can be one of the biggest enables to cloud success. It can also be one of the biggest blockers, if the configuration is misaligned with how you want to operate workloads in the cloud. If the success of your adoption project is critical and your team is not sure how to proceed, you are advised to consult a partner.
 
-Many of the top Microsoft partners provide offerings aligned to the Ready methodology of the Cloud Adoption Framework. Those offerings typically include the partners own customized Azure landing zone implementation option. [Find a partner](https://www.microsoft.com/azure/partners/adopt?filters=ready)
+Many of the top Microsoft partners provide offerings aligned to the Ready methodology of the Cloud Adoption Framework. Those offerings typically include the partners own customized Azure landing zone implementation option. [Find a partner](https://www.microsoft.com/azure/partners/adopt?filters=ready&azure-protal=true)
 
 Before engaging a partner, review the guide to evaluating [partner implementation options for Azure landing zones](/azure/cloud-adoption-framework/ready/landing-zone/partner-landing-zone).
 
