@@ -1,12 +1,12 @@
 Just like our example of organizing books in a library, enterprise-scale design comes with set of design principles to manage the platform at scale. These principles serve as a compass for subsequent design decisions across critical technical domains. Familiarize yourself with these principles to better understand their impact and the trade-offs associated with nonadherence.
 
-:::image type="content" source="../media/subscription-democratization.png" alt-text="Subscription democratization":::
+:::image type="content" source="../media/3-subscription-democratization.png" alt-text="Subscription democratization" lightbox="../media/3-subscription-democratization-large.png":::
 
 - **Subscription democratization**: Subscriptions should be used as a unit of management and scale aligned with business needs and priorities to support business areas and portfolio owners to accelerate application migrations and new application development.
 
 - **Policy-driven governance**: Azure Policy should be used to provide guardrails and ensure continued compliance with your organization's platform, along with the applications deployed onto it.
 
-  :::image type="content" source="../media/policy.png" alt-text="A diagram of Azure Policy with management group and subscription organization.":::
+  :::image type="content" source="../media/3-policy.png" alt-text="A diagram of Azure Policy with management group and subscription organization." lightbox="../media/3-policy-large.png":::
 
 - **Single control and management plane**: Enterprise-scale architecture shouldn't consider any abstraction layers, such as customer-developed portals or tooling. It should provide a consistent experience for both AppOps (centrally managed operation teams) and DevOps (dedicated application operation teams).
 
@@ -18,7 +18,7 @@ Just like our example of organizing books in a library, enterprise-scale design 
 
   Not all enterprises adopt Azure the same way, so enterprise-scale landing zone architectures like in the image below may vary between customers based on requirements. The design guideline considerations and recommendations might yield different trade-offs based on your organization's scenario. Some variation is expected, but if you follow the core recommendations, the resulting target architecture will set your organization on a path to sustainable scale.
 
-  :::image type="content" source="../media/enterprise-scale-landing-zone.png" alt-text="A diagram of an enterprise-scale landing zone.":::
+  :::image type="content" source="../media/3-enterprise-scale-landing-zone.png" alt-text="A diagram of an enterprise-scale landing zone." lightbox="../media/3-enterprise-scale-landing-zone-large.png":::
 
 - **Scope**: With enterprise-scale landing zones, the scope of a landing zone grows considerably to support application migrations and green field development at scale in Azure. This expansion allows for design that can scale across your organization's full IT portfolio, which looks well beyond a short-term cloud adoption plan.
 
