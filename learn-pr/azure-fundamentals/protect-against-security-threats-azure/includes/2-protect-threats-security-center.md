@@ -26,7 +26,7 @@ Here's an example of what you might see in Azure Security Center:
 
 Let's say that Tailwind Traders must comply with the Payment Card Industry's Data Security Standard (PCI DSS). This report shows that the company has resources that it needs to remediate.
 
-Under the **Resource security hygiene** section, Tailwind Traders can see the health of its resources from a security perspective. To help you prioritize remediation actions, recommendations are categorized as low, medium, and high. Here's an example:
+In the **Resource security hygiene** section, Tailwind Traders can see the health of its resources from a security perspective. To help prioritize remediation actions, recommendations are categorized as low, medium, and high. Here's an example:
 
 :::image type="content" source="../media/2-security-center-dashboard.png" alt-text="Azure Security Center dashboard showing the resource security hygiene section. Recommendations are categorized as low, medium, and high.":::
 
@@ -50,11 +50,11 @@ Secure score helps you:
 
 ## Protect against threats
 
-Security Center includes advanced cloud defense capabilities for virtual machines, network security, and file integrity. Let's take a look at how some of these capabilities apply to Tailwind Traders.
+Security Center includes advanced cloud defense capabilities for virtual machines, network security, and file integrity. Let's look at how some of these capabilities apply to Tailwind Traders.
 
 * **Just-in-time VM access**
 
-    Tailwind Traders will configure just-in-time access to VMs. This access blocks traffic by default to specific network ports of virtual machines, but allows traffic for a specified time when requested and approved by an administrator.
+    Tailwind Traders will configure just-in-time access to VMs. This access blocks traffic by default to specific network ports of virtual machines, but allows traffic for a specified time when an administrator requests and approves it.
 
 * **Adaptive application controls**
 

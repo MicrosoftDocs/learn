@@ -24,7 +24,7 @@ quiz:
       explanation: With Azure Security Center, you can define a list of allowed applications to ensure that only applications you allow can run. Azure Security Center can also detect and block malware from being installed on your VMs.
     - content: Periodically run a script that lists the running processes on each VM. The IT manager can then shut down any applications that shouldn't be running.
       isCorrect: false
-      explanation: Although you could follow this approach, it's tedious, time-consuming, and prone to errors. Is there a more automated approach the company can take?
+      explanation: Although you could follow this approach, it's tedious, time-consuming, and prone to errors. Is there a more automated approach that the company can take?
   - content: What's the easiest way for Tailwind Traders to combine security data from all of its monitoring tools into a single report that it can take action on?
     choices:
     - content: Collect security data in Azure Sentinel.

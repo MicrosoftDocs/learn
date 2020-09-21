@@ -1,4 +1,4 @@
-Tailwind Traders faces a number of security challenges. Tn today's digital world, its needs aren't unique.
+Tailwind Traders faces a number of security challenges. In today's digital world, its needs aren't unique.
 
 Azure provides tools and services that can help you detect and act on important security events. It also provides ways to help keep your data safe, which can prevent security incidents from happening to begin with.
 

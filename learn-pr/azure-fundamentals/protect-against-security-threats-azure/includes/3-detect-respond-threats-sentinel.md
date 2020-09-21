@@ -21,7 +21,7 @@ Azure Sentinel enables you to:
 
 ## Connect your data sources
 
-Tailwind Traders decides to explore the capabilities of Azure Sentinel. First, it identifies and connects its data sources.
+Tailwind Traders decides to explore the capabilities of Azure Sentinel. First, the company identifies and connects its data sources.
 
 Azure Sentinel supports a number of data sources, which it can analyze for security events. These connections are handled by built-in connectors or industry-standard log formats and APIs.
 
@@ -41,7 +41,7 @@ Tailwind Traders needs to be notified when something suspicious occurs. It decid
 
 **Built in analytics** use templates designed by Microsoft's team of security experts and analysts based on known threats, common attack vectors, and escalation chains for suspicious activity. These templates can be customized and search across the environment for any activity that looks suspicious. Some templates use machine learning behavioral analytics that are based on Microsoft proprietary algorithms.
 
-**Custom analytics** are rules that you create to search for specific criteria within your environment. You can preview the number of results that the query would generate (based on past log events) and set a schedule for the query to run. You an also set an alert threshold.
+**Custom analytics** are rules that you create to search for specific criteria within your environment. You can preview the number of results that the query would generate (based on past log events) and set a schedule for the query to run. You can also set an alert threshold.
 
 ## Investigate and respond
 

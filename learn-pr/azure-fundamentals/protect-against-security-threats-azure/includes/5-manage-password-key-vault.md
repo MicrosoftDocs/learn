@@ -46,7 +46,7 @@ The Azure CLI as a way to work with Azure resources from the command line or fro
 
 ## Add a password to the key vault
 
-1. Under **Settings**, select **Secrets** > **Generate/Import**.
+1. Under **Settings**, select **Secrets**, and then select **Generate/Import**.
 1. On the **Create a secret** pane, fill in these settings:
 
     | Setting | Value |
