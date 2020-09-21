@@ -6,7 +6,7 @@ metadata:
   description: Operating models define a number of constraints that will impact your environmental design.
   ms.date: 09/22/2020
   author: BrianBlanchard
-  ms.author: jumcn
+  ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 20

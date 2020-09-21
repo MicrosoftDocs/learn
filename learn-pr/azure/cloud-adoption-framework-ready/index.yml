@@ -5,7 +5,7 @@ metadata:
   description: Azure landing zones help accelerate configuration of your environment to meet your operational requirements.
   ms.date: 09/22/2020
   author: BrianBlanchard
-  ms.author: jumcn
+  ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Choose the best Azure landing zone to support your cloud operations requirements

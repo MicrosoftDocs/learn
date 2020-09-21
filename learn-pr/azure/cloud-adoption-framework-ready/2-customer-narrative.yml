@@ -6,9 +6,9 @@ metadata:
   description: Tailwind Traders is preparing their cloud environment. Learn more about their operating model needs to help them find the best Azure landing zone to get started.
   ms.date: 09/22/2020
   author: BrianBlanchard
-  ms.author: jumcn
+  ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/2-customer-narrative.md)]
