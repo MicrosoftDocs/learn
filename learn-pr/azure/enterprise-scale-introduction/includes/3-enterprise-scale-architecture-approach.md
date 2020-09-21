@@ -1,6 +1,6 @@
 Just like our example of organizing books in a library, enterprise-scale design comes with set of design principles to manage the platform at scale. These principles serve as a compass for subsequent design decisions across critical technical domains. Familiarize yourself with these principles to better understand their impact and the trade-offs associated with nonadherence.
 
-:::image type="content" source="../media/3-subscription-democratization.png" alt-text="Subscription democratization" lightbox="../media/3-subscription-democratization-large.png":::
+:::image type="content" source="../media/3-subscription-democratization.svg" alt-text="Subscription democratization" lightbox="../media/3-subscription-democratization-large.png":::
 
 - **Subscription democratization**: Subscriptions should be used as a unit of management and scale aligned with business needs and priorities to support business areas and portfolio owners to accelerate application migrations and new application development.
 
