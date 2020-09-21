@@ -26,4 +26,4 @@ After completing this module, you'll be able to:
 
 You will need basic knowledge of the principles of quantum computing: superposition, interference, entanglement, and measurement. For more information, see [Explore the key concepts of quantum computing by using Q#](https://docs.microsoft.com/learn/modules/qsharp-explore-key-concepts-quantum-computing/).
 
-You will also need some familiarity with Q# and the Quantum Development Kit. For more information, see [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/en-us/learn/modules/qsharp-create-first-quantum-development-kit/).
+You will also need some familiarity with Q# and the Quantum Development Kit. For more information, see [Create your first Q# program by using the Quantum Development Kit](https://docs.microsoft.com/learn/modules/qsharp-create-first-quantum-development-kit/).
