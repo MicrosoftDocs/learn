@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.benefits-microsoft-endpoint-manager.6-benefits-of-co-management
+title: Benefits of co-management
+metadata:
+  title: Data protection framework
+  description: Learn about the benefits of co-management.
+  ms.date: 08/19/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-benefits-of-co-management.md)]

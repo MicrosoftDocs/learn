@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.benefits-microsoft-endpoint-manager.3-streamlined-and-flexible
+title: Streamlined and flexible
+metadata:
+  title: Streamlined and flexible
+  description: Understand how Microsoft Endpoint Manager is streamlined and flexible.
+  ms.date: 08/19/2020
+  author: Erikre
+  ms.author: erikre
+  ms.topic: interactive-tutorial
+  ms.prod: learning-endpoint-manager
+  ROBOTS: NOINDEX
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-streamlined-and-flexible.md)]
