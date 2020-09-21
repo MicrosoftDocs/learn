@@ -207,12 +207,9 @@ instead of one qubit three times.
     Here, we introduce three concepts:
 
     * The `qubits` variable now represents a `Qubit` array with a length of three. You can learn more about arrays in Q# in the [QDK documentation](https://docs.microsoft.com/quantum/user-guide/language/types#array-types?azure-portal=true).
-    * The
-      [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true),
-      [ResetAll](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.intrinsic.resetall)
-      and
+    * The operations [ApplyToEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.canon.applytoeach?azure-portal=true) and
       [ForEach](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.arrays.foreach?azure-portal=true)
-      operations perform operations and measurements on multiple qubits with
+      are useful to measure and act on multiple qubits with
       less code. Q# libraries offer many different operations and functions that make writing
       quantum programs more efficient.
     * The [BoolArrayAsInt](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.boolarrayasint?azure-portal=true) and [ResultArrayAsBoolArray](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.convert.resultarrayasboolarray?azure-portal=true) functions from the `Microsoft.Quantum.Convert` library transform the binary `Result` array returned by `ForEach(M, qubits)` into an integer.
