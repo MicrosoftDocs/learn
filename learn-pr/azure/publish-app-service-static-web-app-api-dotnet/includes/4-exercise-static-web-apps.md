@@ -42,15 +42,15 @@ Next, configure your new app and link it to your GitHub repository.
 
 1. From **Build Presets**, select Blazor and confirm the options are correct for your project.
 
-| Setting                 | Value       |
-| ----------------------- | ----------- |
-| _App location_          | **/Client** |
-| _Api location_          | **/Api**    |
-| _App artifact location_ | **wwwroot** |
+   | Setting                 | Value       |
+   | ----------------------- | ----------- |
+   | _App location_          | **/Client** |
+   | _Api location_          | **/Api**    |
+   | _App artifact location_ | **wwwroot** |
 
-Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
+   Click the **Review + create** button. This will bring you to the page where you can review the resource before you create it.
 
-:::image type="content" source="../media/review-create-button.png" alt-text="Review + create button":::
+   :::image type="content" source="../media/review-create-button.png" alt-text="Review + create button":::
 
 ### Review + create
 

@@ -69,34 +69,34 @@ Now, change the function endpoint to return the products:
 1. Open _ProductsGet.cs_
 1. Replace its contents with the following code:
 
-```csharp
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Extensions.Http;
-using Microsoft.AspNetCore.Http;
+    ```csharp
+    using System.Threading.Tasks;
+    using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Azure.WebJobs;
+    using Microsoft.Azure.WebJobs.Extensions.Http;
+    using Microsoft.AspNetCore.Http;
 
-namespace Api
-{
-    public class ProductsGet
+    namespace Api
     {
-        private readonly IProductData productData;
-
-        public ProductsGet(IProductData productData)
+        public class ProductsGet
         {
-            this.productData = productData;
-        }
+            private readonly IProductData productData;
 
-        [FunctionName("ProductsGet")]
-        public async Task<IActionResult> Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req)
-        {
-            var products = await productData.GetProducts();
-            return new OkObjectResult(products);
+            public ProductsGet(IProductData productData)
+            {
+                this.productData = productData;
+            }
+
+            [FunctionName("ProductsGet")]
+            public async Task<IActionResult> Run(
+                [HttpTrigger(AuthorizationLevel.Anonymous, "get", Route = "products")] HttpRequest req)
+            {
+                var products = await productData.GetProducts();
+                return new OkObjectResult(products);
+            }
         }
     }
-}
-```
+    ```
 
 You have now turned the class from a static to an instance class, added the interface to the constructor so it can be injected by the Dependency Injection framework and configured the Function to return the product list when called.
 

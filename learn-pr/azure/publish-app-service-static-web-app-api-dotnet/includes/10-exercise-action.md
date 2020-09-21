@@ -4,7 +4,7 @@ Your web app and API are both running locally. Now it's time to publish your web
 
 You've made changes to your API in the previous exercise. Commit those changes to the **api** branch and push them to GitHub.
 
-## Create a Pull Request
+## Create a pull request
 
 You pushed your **api** branch to GitHub. Now you want the GitHub Action to publish your web app and API in a preview URL. So your next step is to create a pull request against the **main** branch.
 
