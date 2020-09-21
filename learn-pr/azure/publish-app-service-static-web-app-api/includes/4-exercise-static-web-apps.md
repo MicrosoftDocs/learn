@@ -155,14 +155,14 @@ The Azure sandbox that you just activated allows you to use Azure services witho
 
 At this stage, your Static Web Apps instance is created in Azure, but your app isn't yet deployed. The GitHub Action that Azure creates in your repository will run automatically to trigger the first build and deployment of your app, but it takes a couple minutes to finish.
 
-You can check the status of your build and deploy action by clicking the link shown below screenshot allows you to navigate to the Actions page of your GitHub repository:
+You can check the status of your build and deploy action by navigating to the Actions page of your GitHub repository.
 
-:::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
+1. Click the link shown below in the screenshot
 
-Once you're there:
+    :::image type="content" source="../media/goto-action.png" alt-text="Browse to see the progress of the GitHub Actions workflow":::
 
 1. Click **Azure Static Web Apps CI/CD**
-1. Click the commit titled **Azure Static Web Apps added workflow for file for CI/CD**
+1. Click the topmost commit titled similar to **ci: add Azure Static Web Apps workflow file**
 1. Click the **Build and Deploy Job** link
 
 From here, you can observe the progress of your app as it builds.
