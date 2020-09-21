@@ -5,7 +5,7 @@ metadata:
   description: CAF getting started. Use the Cloud Adoption Framework getting started guides to unblock your organization’s cloud adoption efforts 
   ms.date: 09/22/2020
   author: BrianBlanchard
-  ms.author: jumcn
+  ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Getting started with the Microsoft Cloud Adoption Framework for Azure

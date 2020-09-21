@@ -4,7 +4,7 @@ In this exercise, you review a few common blockers to find the most applicable g
 
 The Cloud Adoption Framework spans the entire cloud adoption lifecycle. Throughout that lifecycle you may use a variety of methodologies, which are each designed to help a specific role deliver a defined function. But when you are dealing with an adoption blocker, there isn't time to mature along all of those potential roles and methodologies. The getting started guides pull out the actionable tasks and deliverables from each relevant methodologies to help a smaller team deliver results faster.
 
-Those guides categorize blockers into the following areas on the [getting started help page](/azure/cloud-adoption-framework/get-started/help?azure-portal=true):
+Those guides categorize blockers into the following areas on the [getting started help page](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/help?azure-portal=true):
 
 - **Establish teams:** Depending on your adoption strategy and operating model, you might need to establish a few teams. This section helps you get those new teams started, or redistribute duties if a dedicated team isn't needed.
 - **Improve controls:** As adoption of the cloud grows, you need a solid operating model to ensure wise decisions and proper organizational change. Align people and improve operations to develop your cloud operating model.
@@ -17,7 +17,7 @@ In the previous unit the Tailwind Traders team was considering migrating two dat
 
 In the last 3 months, the team has migrated a few hundred VMs to Azure. They've retired 30% of the VMs in the existing datacenter. To the team, it feels like they are ahead of schedule, but they haven't retired any production hosts yet. As the deadline for this project rapidly approaches, the CIO has begun to express concerns with progress towards retiring the physical infrastructure in the existing datacenters. Unfortunately, the team doesn't have a clear dependency map to show which hosts each VM is dependent on, let alone when a host is no longer needed.
 
-This is a common experience for customers who are new to cloud migration. Engaging an experience partner can help with these concerns. As can proper planning and data-driven decisions. The getting started guide on [accelerating migration](/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) will help the Tailwind Traders team through this concern. In particular, that guide will help the team create a data-driven dialog with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and map that data to actionable cloud adoption plans.
+This is a common experience for customers who are new to cloud migration. Engaging an experience partner can help with these concerns. As can proper planning and data-driven decisions. The getting started guide on [accelerating migration](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/migrate?azure-portal=true) will help the Tailwind Traders team through this concern. In particular, that guide will help the team create a data-driven dialog with leadership around stakeholder expectations and the general strategy. It will also help the team collect data on the overall portfolio and map that data to actionable cloud adoption plans.
 
 ## Scenario 2: Cost misalignment
 
@@ -25,7 +25,7 @@ The Tailwind Traders team has gotten their migration factory processes running s
 
 As cloud adoption scales, customers commonly experience issues related to proper controls. By accelerating the migration effort, the migration team has skipped important steps around governance and establishing proper guardrails. Cost is the first indicator of this missed step. Fortunately, it's the easiest to get back under control.
 
-The getting started guide on [managing cloud costs](/azure/cloud-adoption-framework/get-started/manage-costs?azure-portal=true) is the best starting point for this common blocker. That article outlines a series of best practices to quickly optimize enterprise costs and resolve the finance director's concerns. But it then builds on those best practices by establishing recurring processes to minimize budgetary surprises in the future.
+The getting started guide on [managing cloud costs](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/manage-costs?azure-portal=true) is the best starting point for this common blocker. That article outlines a series of best practices to quickly optimize enterprise costs and resolve the finance director's concerns. But it then builds on those best practices by establishing recurring processes to minimize budgetary surprises in the future.
 
 ## Scenario 3: Operations support
 
@@ -40,4 +40,4 @@ Before operational management processes could be kicked off, the CIO asked a few
 - Are we capitalizing on the advanced operations built into the Azure platform?
 - What guardrails will be in place to ensure that all workload teams meet best practices for stable operations?
 
-You don't necessarily need to change how you operate to adopt the cloud. But during any migration of a full datacenter, the team should be able to answer these basic operations management questions. Transitioning to an operations team after migration is often a blocker for migration efforts. The getting started guide on [building a cloud operations team](/azure/cloud-adoption-framework/get-started/team/cloud-operations?azure-portal=true) walks through 9 steps to answer each of these questions and determine whether you need a dedicated cloud operations teams.
+You don't necessarily need to change how you operate to adopt the cloud. But during any migration of a full datacenter, the team should be able to answer these basic operations management questions. Transitioning to an operations team after migration is often a blocker for migration efforts. The getting started guide on [building a cloud operations team](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/team/cloud-operations?azure-portal=true) walks through 9 steps to answer each of these questions and determine whether you need a dedicated cloud operations teams.

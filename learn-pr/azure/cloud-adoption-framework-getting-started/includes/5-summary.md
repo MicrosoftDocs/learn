@@ -8,4 +8,4 @@ Get started with the CAF Ready methodology to learn about common operating model
 
 ## Learn more
 
-Get started with the [Cloud Adoption Framework](/azure/cloud-adoption-framework/get-started/?azure-portal=true) to find more getting started articles that can help with additional common blockers.
+Get started with the [Cloud Adoption Framework](https://docs.microsoft.com/azure/cloud-adoption-framework/get-started/?azure-portal=true) to find more getting started articles that can help with additional common blockers.
