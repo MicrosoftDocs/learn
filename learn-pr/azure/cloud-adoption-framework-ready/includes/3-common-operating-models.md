@@ -4,7 +4,7 @@ In this exercise, you will review common operating models to see which ones best
 
 Four common operating models show up across countless cloud adoption efforts. We use these operating models to shape conversations about environmental design and configuration. Each operating model maps to one or more Azure landing zones to accelerate initial deployment.
 
-:::image type="content" source="../media/operating-model-complexity.png" alt-text="List of the four common operating models compared in this article.":::
+:::image type="content" source="../media/operating-model-complexity.png" alt-text="List of the four common operating models compared in this article." border="false":::
 _Figure 1: Comparison of common operating models discussed in this unit, ranked by architectural complexity: decentralized operations, central operations, enterprise operations, and distributed operations._
 
 The image above plots the four common operating models from least to most complex for comparison purposes.
@@ -31,7 +31,7 @@ The following characteristics aid in aligning to one of the common operating mod
 
 The least complex operating model is a fully decentralized model. This model is highly focused on independent workloads with minimal dependency on centralized operations. This model is also referred to as bimodal IT or decentralized IT.
 
-:::image type="content" source="../media/decentralized-operations.png" alt-text="Image explaining decentralized operations focuses on individual workloads and dependent assets.":::
+:::image type="content" source="../media/decentralized-operations.png" alt-text="Image explaining decentralized operations focuses on individual workloads and dependent assets." border="false":::
 _Figure 2: Decentralized operations focuses on individual workloads and dependent assets._
 
 **Strategic priority:** Decentralization is most commonly seen when organizations prioritize *innovation over control*. This model is very common in startup organizations but is an increasing trend in larger organizations, as well.
@@ -54,7 +54,7 @@ Compare more pros, cons, and characteristics of [decentralized operations in the
 
 Centralized operations is the most common operations model in information technology. This model is highly focused on controlled production environment managed solely by centralized operations.
 
-:::image type="content" source="../media/centralized-operations.png" alt-text="Image explaining centralized operations focuses on a smaller number of landing zones with embedded foundational utilities.":::
+:::image type="content" source="../media/centralized-operations.png" alt-text="Image explaining centralized operations focuses on a smaller number of landing zones with embedded foundational utilities." border="false":::
 _Figure 3: Centralized operations focuses on a smaller number of landing zones with embedded foundational utilities._
 
 Management of non-production environments vary significantly from organization to organization. But in a centralized operations model, even the non-production environments are likely to be constrained by governance and security requirements.
@@ -79,7 +79,7 @@ Compare more pros, cons, and characteristics of [centralized operations in the C
 
 Enterprise operations is the suggested operating model for customers who are migrating entire datacenters or large portfolios to the cloud.
 
-:::image type="content" source="../media/enterprise-operations.png" alt-text="Image explaining enterprise operations focuses on a larger number of landing zones with foundational utilities centralized into a platform foundation.":::
+:::image type="content" source="../media/enterprise-operations.png" alt-text="Image explaining enterprise operations focuses on a larger number of landing zones with foundational utilities centralized into a platform foundation." border="false":::
 _Figure 4: Enterprise operations focuses on a larger number of landing zones with foundational utilities centralized into a platform foundation._
 
 This operating model focuses on democratizing decisions and delegated responsibilities to balance the need for innovation in some landing zones and tighter control in others.
@@ -104,7 +104,7 @@ Compare more pros, cons, and characteristics of [enterprise operations in the Cl
 
 Distributed operations is the most complex form of operations, which attempts to blend each of the models above.
 
-:::image type="content" source="../media/complex-operations.png" alt-text="Image explaining distributed operations attempts to integrate multiple existing operating models.":::
+:::image type="content" source="../media/complex-operations.png" alt-text="Image explaining distributed operations attempts to integrate multiple existing operating models." border="false":::
 _Figure 5: Distributed operations attempts to integrate multiple existing operating models._
 
 This approach to operations is discouraged when ever possible. This approach is commonly seen when companies grow through rapid acquisition resulting in a distributed mixture of the prior three operating models. Companies may exist in this state for extended periods of time, but in order to minimize redundancy and promote more efficient operations customers should consider developing a plan to transition to one of the less complex models.
