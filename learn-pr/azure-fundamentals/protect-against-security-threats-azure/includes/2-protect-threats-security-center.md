@@ -68,6 +68,6 @@ Security Center includes advanced cloud defense capabilities for virtual machine
 
 ## Respond to security alerts
 
-Tailwind Traders can use Security Center to get a centralized view of all of its security alerts. From there, Tailwind Traders can dismiss false alerts, investigate them further, remediate alerts manually, or use an automated response with a *workflow automation*.
+Tailwind Traders can use Security Center to get a centralized view of all of its security alerts. From there, the company can dismiss false alerts, investigate them further, remediate alerts manually, or use an automated response with a *workflow automation*.
 
 Workflow automation uses Azure Logic Apps and Security Center connectors. The logic app can be triggered by a threat detection alert or by a Security Center recommendation, filtered by name or by severity. You can then configure the logic app to run an action such as sending an email or posting a message to a Microsoft Teams channel.

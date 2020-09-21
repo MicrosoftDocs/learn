@@ -1,8 +1,8 @@
-Tailwind Traders faces a number of security challenges. But in today's digital world, their needs aren't unique.
+Tailwind Traders faces a number of security challenges. Tn today's digital world, its needs aren't unique.
 
-Luckily, Azure provides a number of tools and services that can help you detect and act on important security events. It also provides ways to help keep your data safe, which can prevent security incidents from happening to begin with.
+Azure provides tools and services that can help you detect and act on important security events. It also provides ways to help keep your data safe, which can prevent security incidents from happening to begin with.
 
-In this module, you learned about a number of Azure services that relate to security. Here's a brief summary:
+In this module, you learned about Azure services that relate to security. Here's a brief summary:
 
 * Azure Security Center provides visibility of your security posture across all of your services, both on Azure and on-premises.
 * Azure Sentinel aggregates security data from many different sources and provides additional capabilities for threat detection and response.
@@ -11,7 +11,7 @@ In this module, you learned about a number of Azure services that relate to secu
 
 ## Learn more
 
-Here are additional resources to help you go further.
+Here are more resources to help you go further.
 
 ### Azure Security Center
 
