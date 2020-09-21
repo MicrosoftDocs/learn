@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.cloud-adoption-framework-getting-started.2-customer-narrative
-title: Customer Narrative
+title: Customer narrative
 metadata:
-  title: Customer Narrative
-  description: Tailspin Traders will serve as a customer narrative throughout the Cloud Adoption Framework learn modules. This unit will share the core narrative to establish context.
+  title: Customer narrative
+  description: Tailwind Traders serves as a customer narrative throughout the Cloud Adoption Framework Learn modules. This unit shares the core narrative to establish context.
   ms.date: 09/22/2020
   author: BrianBlanchard
   ms.author: jumcn
@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which assets in the technology portfolio summary aren't compatible with Azure?"
+  - content: Which assets in the technology portfolio summary aren't compatible with Azure?
     choices:
-    - content: "VMWare virtualization"
+    - content: VMware virtualization
       isCorrect: false
-      explanation: "The Azure VMWare Solution deploys a VMWare private cloud to Azure"
-    - content: "Linux and other open source servers"
+      explanation: The Azure VMware Solution deploys a VMware private cloud to Azure
+    - content: Linux and other open-source servers
       isCorrect: false
-      explanation: "Azure loves open source. Azure Migrate is capable of migrating Linux and other open source operating systems to Azure."
-    - content: "Windows servers"
+      explanation: Azure loves open-source software. Azure Migrate is capable of migrating Linux and other open-source operating systems to Azure.
+    - content: Windows servers
       isCorrect: false
-      explanation: "Windows servers, including older versions like 08 R2 are compatible with Azure"
-    - content: "All of the above are compatible with Azure"
+      explanation: Windows servers, including older versions like 2008 R2, are compatible with Azure
+    - content: All of the above are compatible with Azure
       isCorrect: true
-      explanation: "Azure can host VMWare, Windows, Linux, and a variety of other technical assets."
-  - content: "What risks could prevent Tailspin Traders be successful migrating two data centers in the next 18 to 24 months?"
+      explanation: Azure can host VMware, Windows, Linux, and a variety of other technical assets.
+  - content: What risks could prevent Tailwind Traders be successful migrating two datacenters in the next 18 to 24 months?
     choices:
-    - content: "Effort and time to migrate the portfolio"
+    - content: Effort and time to migrate the portfolio
       isCorrect: false
-      explanation: "Realistic expectations regarding the work, plans, and skills required are very important. But this isn't the only risk to migration."
-    - content: "Controls to operate the migrated assets"
+      explanation: Realistic expectations regarding the work, plans, and skills required are very important. But this isn't the only risk to migration.
+    - content: Controls to operate the migrated assets
       isCorrect: false
-      explanation: "To migrate entire data centers, governance, security, and operations controls are required. But this isn't the only risk."
-    - content: "Organization of people, teams, and responsibilities"
+      explanation: To migrate entire datacenters, governance, security, and operations controls are required. But this isn't the only risk.
+    - content: Organization of people, teams, and responsibilities
       isCorrect: false
-      explanation: "Multiple functions are required to be successful when migrating production workloads. As adoption continues the alignment of teams will become more important."
-    - content: "It depends... All of the above"
+      explanation: Multiple functions are required to be successful when migrating production workloads. As adoption continues the alignment of teams will become more important.
+    - content: It depends... All of the above
       isCorrect: true
-      explanation: "At different stages of cloud adoption, the risks and roadblocks will change. The next module in this series will help detect and address each of these common risks."
+      explanation: At different stages of cloud adoption, the risks and roadblocks will change. The next module in this series will help detect and address each of these common risks.
