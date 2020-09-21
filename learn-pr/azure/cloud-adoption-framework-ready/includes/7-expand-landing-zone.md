@@ -23,6 +23,7 @@ In the prior unit of this Learn module, you assigned the initial blueprint to a 
 At a minimum, you'll likely need two subscriptions: production and nonproduction.
 
 :::image type="content" source="../media/initial-subscription-model.png" alt-text="An initial subscription model showing keys next to boxes labeled production and nonproduction.":::
+
 _Figure 1: An initial subscription model with keys next to boxes labeled "production" and "nonproduction"._
 
 - Create one Azure subscription to contain your production workloads.
@@ -42,6 +43,7 @@ This approach has many benefits:
 If innovation goals are part of your cloud adoption strategy, consider creating one or more sandbox subscriptions. You can apply security policies to keep these test subscriptions isolated from your production and nonproduction environments. Users can easily experiment with Azure capabilities in these isolated environments. Use an Azure Dev/Test offer to create these subscriptions.
 
 :::image type="content" source="../media/initial-subscription-model-with-sandboxes.png" alt-text="Image showing an initial subscription model showing keys next to boxes labeled production, nonproduction, and sandboxes.":::
+
 _Figure 2: A subscription model with sandbox subscriptions._
 
 ### Shared services subscription
@@ -53,7 +55,7 @@ _Figure 3: A subscription model with shared services._
 
 ### Plan for subscription scaling
 
-As cloud adoption grows, you may need to further subdivide your production subscriptions for a number of valid business reasons. This is true for central or enterprise operations. For more information on subscription scaling, see [Scale with multiple subscriptions](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true).
+As cloud adoption grows, you may need to further subdivide your production subscriptions for a number of valid business reasons. This is true for central or enterprise operations. For more information on subscription scaling, see [Scale with multiple subscriptions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true).
 
 ## Adhere to naming and tagging conventions
 
@@ -61,7 +63,7 @@ Organize your cloud assets to support operational management and accounting requ
 
 Changing resource names can be difficult. Establish a comprehensive naming convention before you begin any large cloud deployment.
 
-The article on [recommended naming and tagging conventions](/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) provides guidance, samples, automated approaches, and a Microsoft Excel workbook to capture and socialize your naming and tagging conventions.
+The article on [recommended naming and tagging conventions](https://docs.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/naming-and-tagging?azure-portal=true) provides guidance, samples, automated approaches, and a Microsoft Excel workbook to capture and socialize your naming and tagging conventions.
 
 ## Review networking options
 

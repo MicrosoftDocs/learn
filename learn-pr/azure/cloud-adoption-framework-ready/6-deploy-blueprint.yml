@@ -5,7 +5,7 @@ metadata:
   title: Deploy the CAF Migration landing zone blueprint to start small
   description: The start small approach allows for a rapid landing zone deployment, that can later be expanded to meet your needs
   ms.date: 09/22/2020
-  author: Brian.Blanchard
+  author: BrianBlanchard
   ms.author: bblanch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

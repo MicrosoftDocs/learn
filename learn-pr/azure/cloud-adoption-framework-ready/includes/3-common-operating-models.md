@@ -17,7 +17,7 @@ The following characteristics aid in aligning to one of the common operating mod
 
 **Organization:** Organization of people drives a number of operations decisions. Do you have a small IT team cover all of your portfolio? Are there separate teams dedicated to functions like security, governance, operations? Are teams organized around individual workloads? Are you bound by rigid third-party compliance standards that are reviewed by an auditor or other compliance bodies?
 
-**Portfolio scope:** The size of your portfolio and where you focus operations is another important consideration for each operating model. Do you manage a large complex multicloud portfolio of workloads? Can the portfolio be supported by a single cloud platform? Do all of your workloads need to live in a single production subscription? Do you focus on workload specific operations with no central support? Learn more about these terms in the [portfolio hierarchy article](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?azure-portal=true).
+**Portfolio scope:** The size of your portfolio and where you focus operations is another important consideration for each operating model. Do you manage a large complex multicloud portfolio of workloads? Can the portfolio be supported by a single cloud platform? Do all of your workloads need to live in a single production subscription? Do you focus on workload-specific operations with no central support? Learn more about these terms in the [portfolio hierarchy article](https://docs.microsoft.com/azure/cloud-adoption-framework/reference/fundamental-concepts/hosting-hierarchy?azure-portal=true).
 
 **Accountability (separation of duties):** When it comes to technology, there's always something that can go wrong. That's why few teams sign up for a 100% uptime SLA. When things break or aren't performing as expected, who's accountable for taking the call? Who's accountable for proactive fixes to minimize outage? Who's accountable for cloud economics and ongoing budgets? Accountability (and associated access requirements) drives a number of environmental design decisions.
 
@@ -31,12 +31,12 @@ The following characteristics aid in aligning to one of the common operating mod
 
 The least complex operating model is a fully decentralized model. This model is highly focused on independent workloads with minimal dependency on centralized operations. This model is also referred to as bimodal IT or decentralized IT.
 
-:::image type="content" source="..media/decentralized-operations.png" alt-text="Image explaining decentralized operations focuses on individual workloads and dependent assets.":::
+:::image type="content" source="../media/decentralized-operations.png" alt-text="Image explaining decentralized operations focuses on individual workloads and dependent assets.":::
 _Figure 2: Decentralized operations focuses on individual workloads and dependent assets._
 
 **Strategic priority:** Decentralization is most commonly seen when organizations prioritize *innovation over control*. This model is very common in startup organizations but is an increasing trend in larger organizations, as well.
 
-**Organization:** Teams are organized around workloads or business processes, which contrasts with the other three operating models.
+**Organization:** Teams are organized around workloads or business processes, which contrast with the other three operating models.
 
 **Portfolio scope:** Scope of the portfolio is also isolated to workload levels. When an organization is entirely decentralized the organization is unlikely to invest much time in management of portfolio alignment.
 
@@ -65,9 +65,9 @@ Management of non-production environments vary significantly from organization t
 
 **Portfolio scope:** Centralized operations teams tend to focus on one landing zone or a small number of landing zones. Within those landing zones, foundational utilities are deployed to support a combination of workloads in each landing zone. This operations model tends to create scale challenges when supporting robust cloud foundations and multicloud portfolios.
 
-**Accountability (separation of duties):** In this operations model, central IT or central operations are typically accountable for all assets in production. Separation of duties tends to focus on environment isolation, which prevents workload specific teams from interacting with production assets.
+**Accountability (separation of duties):** In this operations model, central IT or central operations are typically accountable for all assets in production. Separation of duties tends to focus on environment isolation, which prevents workload-specific teams from interacting with production assets.
 
-**Standardization:** Standardization across workloads is likely very high. However, as the portfolio grows to span multiple landing zones or multiple cloud platforms, that standardization could break down requiring significant modifications to the environment.
+**Standardization:** Standardization across workloads is likely high. However, as the portfolio grows to span multiple landing zones or multiple cloud platforms, that standardization could break down requiring significant modifications to the environment.
 
 **Operations priority:** Centralized operations is most commonly seen when an organization considers their cloud operating model to be a secondary operating model. Since the existing on-premises or private cloud operations are the primary model, these organizations tend to carry forward existing operations tools and limit primary usage of modern cloud-first operations tools.
 
@@ -84,9 +84,9 @@ _Figure 4: Enterprise operations focuses on a larger number of landing zones wit
 
 This operating model focuses on democratizing decisions and delegated responsibilities to balance the need for innovation in some landing zones and tighter control in others.
 
-**Strategic priority:** This operating model prioritizes democratization to balance innovation and control. This is a strategic priority for large organizations that need to protect existing interests while empowering innovation to keep pace with market changes.
+**Strategic priority:** The strategic priority operating model prioritizes democratization to balance innovation and control. This is a strategic priority for large organizations that need to protect existing interests while empowering innovation to keep pace with market changes.
 
-**Organization:** Enterprise operations empowers build and operate capabilities in each workload team. Supporting those teams are a series of teams aligned by function, such as governance, security, and operations. Uniting the workload and supporting teams is a dedicated cloud center of excellence team to coordinate activities and ensure operational excellence across the cloud foundation.
+**Organization:** Enterprise operations empowers build and operate capabilities in each workload team. is a series of teams aligned by function, such as governance, security, and operations. Uniting the workload and supporting teams is a dedicated cloud center of excellence team to coordinate activities and ensure operational excellence across the cloud foundation.
 
 **Portfolio scope:** The scope of enterprise operations focuses on the holistic cloud foundation to ensure that foundational utilities are centralized and available to all landing zones. Landing zones and dedicated workload environments can then be deployed in a self-service capacity with all the required dependencies provided by the cloud foundation.
 
