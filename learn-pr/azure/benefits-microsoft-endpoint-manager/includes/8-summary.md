@@ -1,16 +1,12 @@
-You can use Microsoft Intune to manage the devices and apps that your company's workforce uses. At times, you'll need to verify the health of these devices and apps. Fortunately, there are a number of tools you can use to resolve compliance issues for end user's devices and apps, as well as your tenant.
+Microsoft Endpoint Manager provides the services and tools you need in one location to manage your organization's endpoint. 
 
-Microsoft Endppoint Manager provides the tools, reports, and resources you need to confirm the state your Enterprise Mobility Solution.
+Modern IT provides cloud intelligence at the core. Microsoft Endpoint Manager provides this modern management. Microsoft Endpoint Manager doesn't require you to make an either/or decision between on-prem and cloud management. You can do both, and modernize at your own pace, to manage risk in a smart way. To take advantage of the cloud and modern IT, but also give you the tools and capabilities to also manage your existing on-prem investments.
 
-In this module, you've learned about the possible migration path to Microsoft Endpoint Manager. Here are some of the things you covered.
-
-- Intune tenant status
-- The service health dashboard  
-- The troubleshooting portal
-- Intune reports
-- Endpoint analytics
-- Connector status
-- Client health with co-management
+In this module, you've learned about the benefits of Microsoft Endpoint Manager. Microsoft Endpoint Manager has the following attributes:
+- Secure and intelligent
+- Streamlined and flexible
+- Maximized investment
+- Increased productivity
 - 
 ## Learn more
 

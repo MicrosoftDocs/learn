@@ -1,13 +1,10 @@
-It's not uncommon for end users to experience long boot times or other disruptions. These disruptions can be due to a combination of:
-- Legacy hardware
-- Software configurations that aren't optimized for the end-user experience
-- Issues caused by configuration changes and updates
+Co-management adds new functionality to your existing Configuration Manager deployment, without changing how you already work. When you enable co-management, you immediately begin benefitting from the cloud. You can apply that value to your existing management infrastructure and processes.
 
-These issues and other end-user experience problems persist because IT doesn't have much visibility into the end-user experience. Generally, the only visibility into these issues comes from a slow costly support channel that doesn't usually provide clear information about what needs to be optimized. It's not only IT support bearing the cost of these problems. The time information workers spend dealing with issues is also costly. Performance, reliability, and support issues that reduce user productivity can have a large impact on an organization's bottom line as well.
+When you enroll existing Configuration Manager clients in co-management, you gain the following immediate value:  
 
-Endpoint analytics aims to improve user productivity and reduce IT support costs by providing insights into the user experience. The insights enable IT to optimize the end-user experience with proactive support and to detect regressions to the user experience by assessing user impact of configuration changes.
-
-Endpoint analytics currently focuses on three things:
-- **Recommended software**: Recommendations for providing the best user experience.
-- **Proactive remediation scripting**: Fix common support issues before end-users notice issues.
-- **Start up performance**: Help IT get users from power-on to productivity quickly without lengthy boot and sign in delays.
+- **Conditional access with device compliance**
+- **Intune-based remote actions, for example: restart, remote control, or factory reset**
+- **Centralized visibility of device health**
+- **Link users, devices, and apps with Azure Active Directory (Azure AD)**
+- **Modern provisioning with Windows Autopilot**
+- **Remote actions**

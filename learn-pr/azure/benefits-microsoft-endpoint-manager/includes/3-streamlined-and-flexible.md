@@ -1,7 +1,19 @@
-On the Service health dashboard you can view details for *Service incidents* that affect your tenant, and *Intune news* that provides information about updates and planned changes.
+Flexible support for diverse corporate and BYOD scenarios while increasing productivity and collaboration.
 
-## Intune Service Health and message center
-View details for active incidents and advisories without having to navigate to the Microsoft 365 Service Health Dashboard or the Message Center, both located in the [Microsoft 365 admin center](https://admin.microsoft.com). Only incidents that affect your tenant are shown.  
+## Unified Management
+Manage your PCs, Macs, and mobile devices in one place.
+- **Manage all your endpoints from a single console** - M365 Admin Center provides a single console for all management activities.
+- **Extend on-premises infrastructure with cloud security** - Use guided deployments to extend on-premises infrastructure.
+- **Provide the best Office 365 management experience** - Provide the best Office Experience with security and config management, cloud content optimization.
+- **Manage key mobile apps Microsoft Outlook and Edge** - Stay secure with Microsoft Apps (aka Office 365 Pro Plus) and Microsoft Edge for iOS and Android.
 
-## Intune Message Center  
-View informational communications from the Intune service team without having to navigate to the Office Message Center. Communications include messages about changes that have recently happened to the Intune service, or that are on the way for your tenant.  
+<img alt="Unified management" src="../media/intro-to-endpoint-manager-08.png" width="700">
+
+## Zero Touch Provisioning
+With Microsoft Endpoint Manager, you can simplify software updates and provisioning for all devices. By using Windows Autopilot, Android Enterprise, Apple DEP, and Samsung Knox Mobile Enrollment, you can do the following:
+
+- **Decrease costly image creation workload**
+- **Self-service provisioning directly by end users**
+- **Faster time to productivity**
+- **Out of the box security**
+- **Lower OPEX for staying current**
