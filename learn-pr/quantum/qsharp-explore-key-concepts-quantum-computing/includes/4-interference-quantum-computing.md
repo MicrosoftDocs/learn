@@ -1,26 +1,25 @@
 Until now, you've been using superpositions only with real positive amplitudes.
 You might be wondering, why not directly use the probabilities to represent the
 superposition? Well, the ability to have negative and complex amplitudes is one
-of the main ingredients that makes quantum computing work. Let's examine it
+of the main capacities that makes quantum computing work. Let's examine it
 further.
 
 ## Waves of probabilities
 
-The term *wave function* might be familiar to you (in fact, the `DumpMachine` function you just used names the quantum state as a "wave function").
+The term *wave function* might be familiar to you. You might have noticed that the `DumpMachine` function you just used names the quantum state as a "wave function."
 
-Physicists often use this term as a synonym to design the quantum state of a
-system. It's because the Schrödinger equation introduced at the beginning of
+Physicists often use this term as a synonym for the quantum state of a
+system. They use the term because the Schrödinger equation that we introduced at the beginning of
 this
 module has the same mathematical structure as classical wave equations.
 
-![A diagram showing a wave function and the Schrödinger equation](../media/4-wave.png)
+![A diagram showing a wave function and the Schrödinger equation.](../media/4-wave.png)
 
-You might have also heard the term "probability wave". In fact, the term
-*probability amplitude* is inspired directly from the term *amplitude* of a
+You might have also heard the term *probability wave*. In fact, the term
+*probability amplitude* is inspired by the idea of the *amplitude* of a
 wave.
 
-If probability amplitudes of qubits follow a wave-like equation, it implies that
-you'll observe many of the different well-known properties of waves. Quantum
+When probability amplitudes of qubits can be described by wave-like equations, you'll observe many of the well-known properties of waves. Quantum
 algorithms exploit these properties to perform calculations. In particular,
 quantum computers exploit the phenomenon of *wave interference*.
 

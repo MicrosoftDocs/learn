@@ -82,7 +82,7 @@ quantum mechanics and therefore of quantum computing.
 
 > [!NOTE]
 > In this module and the documentation for Q#, we use $\LaTeX$
-> fonts to design mathematical *linear operators* that take qubit states to qubit
+> fonts for mathematical *linear operators* that take qubit states to qubit
 > states. Conversely, we use `code` font to represent *Q# operations*
 > that take qubit registers as inputs to transform their state. For example, the
 > linear operator $H$ maps the input state $\ket{0}$ to the state
