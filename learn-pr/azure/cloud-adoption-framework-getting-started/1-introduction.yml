@@ -3,9 +3,9 @@ uid: learn.azure.cloud-adoption-framework-getting-started.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: TBD.
+  description: Review of the getting started Learn module.
   ms.date: 09/22/2020
-  author: jamcneil
+  author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
