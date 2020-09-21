@@ -1,38 +1,40 @@
-Tailwind Traders currently runs their workloads on-premises, in their datacenter. Running on-premises means that they're responsible for all aspects of security - from physical access to buildings all the way down to how data travels in and out of the network. They want to know how their current defense in depth strategy compares to running in the cloud.
+Tailwind Traders currently runs its workloads on-premises, in its datacenter. Running on-premises means that the company is responsible for all aspects of security, from physical access to buildings all the way down to how data travels in and out of the network. The company wants to know how its current defense-in-depth strategy compares to running in the cloud.
 
 The objective of *defense in depth* is to protect information and prevent it from being stolen by those who aren't authorized to access it.
 
-A defense in depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorized access to data.
+A defense-in-depth strategy uses a series of mechanisms to slow the advance of an attack that aims at acquiring unauthorized access to data.
+
+## Layers of defense in depth
 
 You can visualize defense in depth as a set of layers, with the data to be secured at the center.
 
-:::image type="content" source="../media/2-defense-depth.png" alt-text="A diagram showing each defense in depth layer. From the center, these layers are: Data, Application, Compute, Network, Perimeter, Identity & Access, and Physical Security." border="false":::
+:::image type="content" source="../media/2-defense-depth.png" alt-text="A diagram showing each layer of defense in depth. From the center, these layers are: data, application, compute, network, perimeter, identity and access, and physical security." border="false":::
 
 Each layer provides protection so that if one layer is breached, a subsequent layer is already in place to prevent further exposure. This approach removes reliance on any single layer of protection. It slows down an attack and provides alert telemetry that security teams can act upon, either automatically or manually.
 
 Here's a brief overview of the role of each layer:
 
-+ The **Physical Security** layer is the first line of defense to protect computing hardware in the datacenter.
-+ The **Identity & Access** layer controls access to infrastructure and change control.
-+ The **Perimeter** layer uses distributed denial-of-service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for end users.
-+ The **Network** layer limits communication between resources through segmentation and access controls.
-+ The **Compute** layer secures access to virtual machines.
-+ The **Application** layer ensures that applications are secure and free of security vulnerabilities.
-+ The **Data** layer controls access to business and customer data that you need to protect.
++ The *physical security* layer is the first line of defense to protect computing hardware in the datacenter.
++ The *identity and access* layer controls access to infrastructure and change control.
++ The *perimeter* layer uses distributed denial-of-service (DDoS) protection to filter large-scale attacks before they can cause a denial of service for users.
++ The *network* layer limits communication between resources through segmentation and access controls.
++ The *compute* layer secures access to virtual machines.
++ The *application* layer helps ensure that applications are secure and free of security vulnerabilities.
++ The *data* layer controls access to business and customer data that you need to protect.
 
-These defense in depth layers provide a guideline for you to help make security configuration decisions in all of the layers of your applications.
+These layers provide a guideline for you to help make security configuration decisions in all of the layers of your applications.
 
-Azure provides security tools and features at every level of the defense in depth concept. Let's take a closer look at each layer:
+Azure provides security tools and features at every level of the defense-in-depth concept. Let's take a closer look at each layer:
 
 :::row:::
   :::column:::
-    ![A security camera representing physical security](../media/2-physical-security.png)
+    ![A security camera that represents physical security.](../media/2-physical-security.png)
   :::column-end:::
   :::column span="3":::
 
-**Physical Security**
+**Physical security**
 
-Physically securing access to buildings and controlling access to computing hardware within the datacenter is the first line of defense.
+Physically securing access to buildings and controlling access to computing hardware within the datacenter are the first line of defense.
 
 With physical security, the intent is to provide physical safeguards against access to assets. These safeguards ensure that other layers can't be bypassed, and loss or theft is handled appropriately. Microsoft uses various physical security mechanisms in its cloud datacenters.
   :::column-end:::
@@ -40,16 +42,16 @@ With physical security, the intent is to provide physical safeguards against acc
 
 :::row:::
   :::column:::
-    ![A badge representing a secure access](../media/2-policies-access.png)
+    ![A badge that represents secure access.](../media/2-policies-access.png)
   :::column-end:::
   :::column span="3":::
 
-**Identity & Access**
+**Identity and access**
 
 At this layer, it's important to:
 
 - Control access to infrastructure and change control.
-- Use single sign-on (SSO) and multi-factor authentication (MFA).
+- Use single sign-on (SSO) and multifactor authentication.
 - Audit events and changes.
 
 The identity and access layer is all about ensuring that identities are secure, access is granted only to what's needed, and sign-in events and changes are logged.
@@ -58,7 +60,7 @@ The identity and access layer is all about ensuring that identities are secure, 
 
 :::row:::
   :::column:::
-    ![A physical barrier representing the network perimeter](../media/2-perimeter.png)
+    ![A physical barrier that represents the network perimeter.](../media/2-perimeter.png)
   :::column-end:::
   :::column span="3":::
 
@@ -66,7 +68,7 @@ The identity and access layer is all about ensuring that identities are secure, 
 
 At this layer, it's important to:
 
-- Use distributed denial of service (DDoS) protection to filter large-scale attacks before they can impact the availability of a system for end users.
+- Use DDoS protection to filter large-scale attacks before they can affect the availability of a system for users.
 - Use perimeter firewalls to identify and alert on malicious attacks against your network.
 
 At the network perimeter, it's about protecting from network-based attacks against your resources. Identifying these attacks, eliminating their impact, and alerting you when they happen are important ways to keep your network secure.
@@ -75,7 +77,7 @@ At the network perimeter, it's about protecting from network-based attacks again
 
 :::row:::
   :::column:::
-    ![Three connected systems representing networking](../media/2-networking.png)
+    ![Three connected systems that represent networking.](../media/2-networking.png)
   :::column-end:::
   :::column span="3":::
 
@@ -94,7 +96,7 @@ At this layer, the focus is on limiting the network connectivity across all your
 
 :::row:::
   :::column:::
-    ![A terminal representing compute](../media/2-compute.png)
+    ![A terminal that represents compute.](../media/2-compute.png)
   :::column-end:::
   :::column span="3":::
 
@@ -111,7 +113,7 @@ Malware, unpatched systems, and improperly secured systems open your environment
 
 :::row:::
   :::column:::
-    ![Image of a file on the network](../media/2-application.png)
+    ![Image of a file on the network.](../media/2-application.png)
   :::column-end:::
   :::column span="3":::
 
@@ -123,7 +125,7 @@ At this layer, it's important to:
 - Store sensitive application secrets in a secure storage medium.
 - Make security a design requirement for all application development.
 
-Integrating security into the application development lifecycle helps reduce the number of vulnerabilities introduced in code. Every development team should ensure that their applications are secure by default.
+Integrating security into the application development lifecycle helps reduce the number of vulnerabilities introduced in code. Every development team should ensure that its applications are secure by default.
   :::column-end:::
 :::row-end:::
 
@@ -142,20 +144,25 @@ In almost all cases, attackers are after data:
 - Stored in software as a service (SaaS) applications, such as Office 365.
 - Managed through cloud storage.
 
-It's the responsibility of those storing and controlling access to data to ensure that it's properly secured. Often, there are regulatory requirements that dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
+Those who store and control access to data are responsible for ensuring that it's properly secured. Often, regulatory requirements dictate the controls and processes that must be in place to ensure the confidentiality, integrity, and availability of the data.
   :::column-end:::
 :::row-end:::
 
-## Understand your security posture
+## Security posture
 
 Your *security posture* is your organization's ability to protect from and respond to security threats. The common principles used to define a security posture are *confidentiality*, *integrity*, and *availability*, known collectively as CIA.
 
 + **Confidentiality**
 
-    The *principle of least privilege* means restricting access to information only to individuals explicitly granted access, at only the level they need to perform their work. This information includes protection of user passwords, email content, and access levels to applications and underlying infrastructure.
+    The *principle of least privilege* means restricting access to information only to individuals explicitly granted access, at only the level that they need to perform their work. This information includes protection of user passwords, email content, and access levels to applications and underlying infrastructure.
 + **Integrity**
 
-    The prevention of unauthorized changes to information at rest (when it is stored) or in transit (when it is being transferred from one place to another, including from a local computer to the cloud). A common approach used in data transmission is for the sender to create a unique fingerprint of the data using a one-way hashing algorithm. The hash is sent to the receiver along with the data. The data's hash is recalculated and compared to the original by the receiver to ensure the data wasn't lost or modified in transit.
+    Prevent unauthorized changes to information:
+    
+    - At rest: when it's stored.
+    - In transit: when it's being transferred from one place to another, including from a local computer to the cloud. 
+    
+    A common approach used in data transmission is for the sender to create a unique fingerprint of the data by using a one-way hashing algorithm. The hash is sent to the receiver along with the data. The receiver recalculates the data's hash and compares it to the original to ensure that the data wasn't lost or modified in transit.
 + **Availability**
 
-    Ensure services are functioning and are able to be accessed only by authorized users. *Denial of service attacks* are designed to degrade the availability of a system, impacting its users.
+    Ensure that services are functioning and can be accessed only by authorized users. *Denial-of-service attacks* are designed to degrade the availability of a system, affecting its users.
