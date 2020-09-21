@@ -184,7 +184,7 @@ az spring-cloud app logs -n todo-service -f
 Now that the application is deployed, it's time to test it!
 
 1. In the Azure portal, go to **Apps** in your Azure Spring Cloud instance.
-    1. Verify that **todo-service** has a Discovery status which says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
+    1. Verify **todo-service** has a Discovery status that says UP(1),DOWN(0). This shows that it is correctly registered in the Spring Cloud Service Registry.
     1. Select **todo-service** to have more information on the microservice.
 1. Copy/paste the "Test Endpoint" that is provided.
 
