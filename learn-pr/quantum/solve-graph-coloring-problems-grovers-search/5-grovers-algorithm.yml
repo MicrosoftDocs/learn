@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.quantum.solve-graph-coloring-problems-grovers-search.5-grovers-algorithm
-title: What is Grover's algorithm?
+title: Grover's search algorithm
 metadata:
-  description: TBD.
+  description: High-level description of Grover's algorithm and its analysis.
   ms.date: 09/19/2020
   author: tcNickolas
   ms.author: mamykhai
   ms.topic: interactive-tutorial
   ms.prod: learning-quantum
-durationInMinutes: 1
+durationInMinutes: 25
 content: |
   [!include[](includes/5-grovers-algorithm.md)]
