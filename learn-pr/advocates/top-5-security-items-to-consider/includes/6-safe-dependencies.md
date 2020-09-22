@@ -1,6 +1,6 @@
-A large percentage of code present in modern applications are the libraries and dependencies chosen by you: the developer. This is a common practice that saves time and money. However, the downside is that you are now responsible for this code, even though others wrote it, because you used it in your project. If a researcher (or worse, a hacker) discovers a vulnerability in one of these 3rd party libraries, then the same flaw will likely also be present in your app.
+A large percentage of code present in modern applications is made up of the libraries and dependencies chosen by you: the developer. This is a common practice that saves time and money. However, the downside is that you are now responsible for this code, even though others wrote it, because you used it in your project. If a researcher (or worse, a hacker) discovers a vulnerability in one of these 3rd party libraries, then the same flaw will likely also be present in your app.
 
-Using components with known vulnerabilities is a huge problem in our industry. It is so problematic that is has made the [OWASP top ten list](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) of worst web application vulnerabilities, holding at #9 for several years.
+Using components with known vulnerabilities is a huge problem in our industry. It is so problematic that it has made the [OWASP top ten list](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) of worst web application vulnerabilities, holding at #9 for several years.
 
 ## Track known security vulnerabilities
 
@@ -19,7 +19,7 @@ You could put a daily task into your phone to go and check this list, but luckil
 
 - [OWASP Dependency Check](https://www.owasp.org/index.php/OWASP_Dependency_Check), which has a [Jenkins plugin](https://wiki.jenkins.io/display/JENKINS/OWASP+Dependency-Check+Plugin)
 - [OWASP SonarQube](https://github.com/OWASP/sonarqube)
-- [Snyk](https://snyk.io), which is free for open source repositories in GitHub
+- [Snyk](https://snyk.io), which is free for open-source repositories in GitHub
 - [Black Duck](https://www.blackducksoftware.com) which is used by many enterprises
 - [RubySec](https://github.com/rubysec/rubysec.com) an advisory database just for Ruby
 - [Retire.js](https://github.com/retirejs/retire.js/) a tool for verifying if your JavaScript libraries are out of date; can be used as a plugin for various tools, including [Burp Suite](https://www.portswigger.net)
