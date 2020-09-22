@@ -9,6 +9,6 @@ After completing this module, you will be able to:
 * Secure Azure Data Share
 * Manage existing shares
 
-**Prerequisite:**
+## Pre-requisit
 
 Before taking this module, it is recommended that you complete Data Fundamentals.
