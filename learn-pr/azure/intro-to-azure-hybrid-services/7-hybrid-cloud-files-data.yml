@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-hybrid-services.7-hybrid-cloud-files-data
 metadata:
   title: Hybrid cloud files and data
   description: Hybrid cloud files and data
-  ms.date: 09/21/2019
+  ms.date: 09/21/2020
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Tailwind Traders needs to ensure that the volumes on file servers don’t run out of disk space. At present, natural activity at Tailwind Traders offices weekly adds approximately 500 megabytes (MB) of data to the volumes that host important company. Historically, this has meant that IT pros must remove approximately 100 gigabytes (GB) of old files every few months to allow sufficient storage space for new files. Tailwind Traders has configured Azure File Sync for all existing file shares and the file shares have all replicated to corresponding Azure File Shares in Azure. Which of the following strategies should Tailwind Traders pursue to ensure that it won’t be necessary to remove disused files and folders from file servers in future?'
+  - content: 'Tailwind Traders needs to ensure that the volumes on file servers don’t run out of disk space. At present, natural activity at Tailwind Traders offices weekly adds approximately 500 megabytes (MB) of data to the volumes that host important company. Historically, this has meant that IT pros must remove approximately 100 gigabytes (GB) of old files every few months to allow sufficient storage space for new files. Tailwind Traders has configured Azure File Sync for all existing file shares and the file shares have all replicated to corresponding Azure File Shares in Azure. Which of the following strategies should Tailwind Traders pursue to ensure that it won’t be necessary to remove disused files and folders from file servers in the future?'
     choices:
     - content: 'Enable deduplication on each file server that’s configured with Azure File Sync.'
       isCorrect: false
