@@ -8,11 +8,11 @@ First of all,    the company that wants to share data with you, needs to invite 
 
 1.	**Open Invitation from email:**
 
-In order to open the invitation from email, you need to check your email inbox for an invitation from your data provider ( i.e. the company that is sending you the data share) which you can find easily by checking the title: Azure Data share invitation from: yourdataprovider@domain.com. 
+    In order to open the invitation from email, you need to check your email inbox for an invitation from your data provider ( i.e. the company that is sending you the data share) which you can find easily by checking the title: Azure Data share invitation from: yourdataprovider@domain.com. 
 
 2.	**Open invitation from Azure Portal:**
 
-In order to open the invitation from the Azure Portal, you can search in the Azure Portal for Data Share Invitations where you will be taken into a list of data share invitations that you can accept/reject. 
+    In order to open the invitation from the Azure Portal, you can search in the Azure Portal for Data Share Invitations where you will be taken into a list of data share invitations that you can accept/reject. 
 
 The next step is to receive the data on which you’re going to perform analytics on. The first step is that you’re data share resource’s managed identity needs to get access to the target Azure data store (such as  Data Lake, SQL DB etc). 
 
