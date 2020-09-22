@@ -3,7 +3,7 @@ uid: learn.wwl.perform-advanced-streaming-data-transformations-with-spark-kafka
 metadata:
   title: Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight
   description: "Perform advanced streaming data transformations with Apache Spark and Kafka in Azure HDInsight"
-  ms.date: 02/28/2020
+  ms.date: 08/05/2020
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial

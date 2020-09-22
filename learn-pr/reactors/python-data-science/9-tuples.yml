@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.reactors.python-data-science.9-tuples
+title: Tuples
+metadata:
+  title: Tuples in Python for data science
+  description: Learn how to use tuples in Python for data science.
+  ms.date: 04/22/2020
+  author: sguthals
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-reactors
+durationInMinutes: 4
+content: |
+  [!include[](includes/9-tuples.md)] 

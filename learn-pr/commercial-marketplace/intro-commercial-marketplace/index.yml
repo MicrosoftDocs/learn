@@ -29,7 +29,7 @@ roles:
 - administrator
 products:
 - azure
-- dynamics
+- dynamics-365
 - m365
 - office-365
 - power-platform

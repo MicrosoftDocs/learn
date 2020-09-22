@@ -93,7 +93,7 @@ Use Azure Synapse Analytics for:
 - Very high volumes of data (multi-terabyte to petabyte sized datasets).
 - Very complex queries and aggregations.
 - Data mining, and data exploration.
-- Complex ELT operations. *ELT* stands for *Extract, Transform, and Load*, and refers to the way in which you can retrieve raw data from multiple sources, convert this data into a standard format, and store it. 
+- Complex ETL operations. *ETL* stands for *Extract, Transform, and Load*, and refers to the way in which you can retrieve raw data from multiple sources, convert this data into a standard format, and store it. 
 - Low to mid concurrency (128 users or fewer).
 
 Use Azure Analysis Services for:

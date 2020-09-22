@@ -53,7 +53,7 @@ Identify the subtasks of *Add custom domain name to Azure Active Directory*
     - What are Custom Domain Names?
         - Initial onmicrosoft.com domain name
             - Custom domain will give access to resources secured with onmicrosoft.com domain as well as any resources accessed with registered custom domain name
-        - Add a familiar domain name not already created by service such as Office365
+        - Add a familiar domain name not already created by service such as Microsoft 365
         - Domain must already be registered (you can buy a domain name by using App Service domains or a third-party domain name registrar)
         - Add a subdomain
             - Subdomains are automatically verified
@@ -79,8 +79,8 @@ Identify the subtasks of *Add custom domain name to Azure Active Directory*
         - New-MsolDomain cmdlet 
     - Take over management of unmanaged Power BI tenants
         - Power BI users can create unmanaged tenants with self-service sign-up
-    - Office365
-        - It is not necessary to create a custom domain if one has already been created by Office365 (see note)
+    - Microsoft 365
+        - It is not necessary to create a custom domain if one has already been created by Microsoft 365 (see note)
    - Mention scenario where after adding the domain name, you'd create user accounts. Users would sign in by using account name that has custom domain. Provide example of what the sign-in name would look like with custom domain.
      
     **Knowledge check**
@@ -117,9 +117,9 @@ Identify the subtasks of *Add custom domain name to Azure Active Directory*
 
 - Couple of things a bit off topic but should maybe be mentioned briefly:
 
-   Office 365 related
-  - If they have Office 365 and have a custom domain added there, they don't need add the domain in Azure AD unless O365 is set up in a different tenant/directory as their Azure subscription or they want to use a different domain.
-  - If they plan to later add Office 365 and use Exchange Online for email with the same domain they've already added to Azure AD, they'd need to add an MX record to Azure AD.
+   Microsoft 365-related
+  - If they have Microsoft 365 and have a custom domain added there, they don't need add the domain in Azure AD unless Microsoft 365 is set up in a different tenant/directory as their Azure subscription or they want to use a different domain.
+  - If they plan to later add Microsoft 365 and use Exchange Online for email with the same domain they've already added to Azure AD, they'd need to add an MX record to Azure AD.
 
   Other services to mention very briefly:
   - Customers can use whatever DNS service they want to. If they want to centralize DNS services on Azure, they can use Azure DNS. There's a module planned for that service.

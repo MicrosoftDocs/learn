@@ -4,14 +4,14 @@ metadata:
   title: Exercise - Test your IoT Central device
   description: Test a device by monitoring the results on the dashboard.
   ms.date: 10/17/2019
-  author: olivierbloch
+  author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: vs-vscode-language
 title: Test your IoT Central device
 # azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 7
 content: |
   [!include[](includes/6-test-your-iot-device.md)]
 quiz:
@@ -23,10 +23,10 @@ quiz:
     - content: 'Device ID and Primary Key'
       isCorrect: false
       explanation: Both of these values are needed, but more information is required to complete a connection.
-    - content: 'Scope ID, Device ID, and Primary Key'
+    - content: 'ID Scope, Device ID, and Primary Key'
       isCorrect: true
       explanation: These three strings identify the app, the device, and permission to communicate with IoT Central.
-    - content:  'Scope ID, Device ID, Primary Key, and Secondary Key'
+    - content:  'ID Scope, Device ID, Primary Key, and Secondary Key'
       isCorrect: false
       explanation: Secondary Key isn't needed.
       

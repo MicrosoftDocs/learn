@@ -12,9 +12,9 @@ Moving beyond simple face detection, some algorithms can also return other infor
 
 ![facial landmarks image showing data around face characteristics](../media/landmarks-1.png)
 
-These facial landmarks can be used as features with which to train a machine learning model from which you can infer information about a person, such as their gender, age, or emotional state, like this:
+These facial landmarks can be used as features with which to train a machine learning model from which you can infer information about a person, such as their perceived age or perceived emotional state, like this:
 
-![A happy 25-year old female](../media/face-attributes.png)
+![A happy 25-year old](../media/face-attributes.png)
 
 ## Facial recognition
 

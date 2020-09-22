@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.mixed-reality-toolkit-project-unity.4-import-resources
+title: Import and configure resources
+metadata:
+  title: Import and configure resources
+  description: Import and configure resources
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.date: 08/11/2020
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-import-resources.md)]

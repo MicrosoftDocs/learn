@@ -19,15 +19,22 @@ In this task, we will create a virtual network.
 
     | Setting | Value | 
     | --- | --- |
-    | Name | **vnet1** |
-    | Address space |**10.1.0.0/16** |
     | Subscription | Ensure **Concierge Subscription** is selected |
     | Resource group | **<rgn>[sandbox resource group name]</rgn>** |
-    | Location | **(US) East US** |
+    | Name | **vnet1** |
+    | Region | **(US) East US** |
+
+   :::image type="content" source="../media/basics-tab-create-virtual-network.png" alt-text="Screenshot of the Create virtual network blade with the default fields of the Basics tab.":::
+
+4. Click on the **IP Addresses** tab and fill in the following values (leave the defaults for other fields):
+
+    | Setting | Value | 
+    | --- | --- |
+    | Address space |**10.1.0.0/16** |
     | Subnet - Name | **default** |
     | Subnet Address range | **10.1.0.0/24** |
 
-   ![Screenshot of the Create virtual network blade with the default fields.](../media/create-virtual-network-blade.png)
+   :::image type="content" source="../media/ip-address-tab-create-virtual-network.png" alt-text="Screenshot of the Create virtual network blade with the default fields of the IP Address tab.":::
 
 5. Click the **Review + create** button. Ensure the validation passes.
 
@@ -50,7 +57,7 @@ In this task, we will create two virtual machines in the virtual network.
    | Resource group |  **<rgn>[sandbox resource group name]</rgn>** |
    | Virtual machine name | **vm1**|
    | Region | **(US) East US** |
-   | Image | **Windows Server 2019 Datacenter** |
+   | Image | **Windows Server 2019 Datacenter - Gen1** |
    | Username| **azureuser** |
    | Password| **Pa$$w0rd1234** |
    | Public inbound ports| Select **Allow selected ports**  |
@@ -108,7 +115,7 @@ In this task, we will allow ICMP connections and test whether the virtual machin
    ping vm2
    ```
    
-   ![Screenshot of PowerShell command prompt with the command ping vm2 after its completion and the output indicating the command wasn't successful.](../media/powershell-command-prompt-ping.png)
+   :::image type="content" source="../media/powershell-command-prompt-ping.png" alt-text="Screenshot of PowerShell command prompt with the command ping vm2 after its completion and the output indicating the command wasn't successful.":::
 
     > [!NOTE]
     > You will now open an RDP session to vm2 and allow incoming ICMP connections
@@ -119,21 +126,23 @@ In this task, we will allow ICMP connections and test whether the virtual machin
 
     ```PowerShell
       New-NetFirewallRule –DisplayName “Allow ICMPv4-In” –Protocol ICMPv4
-     ```
-   
+    ```
 
-    ![Screenshot of PowerShell command prompt with the command New-NetFirewallRule DisplayName Allow ICMPv4-In –Protocol ICMPv4 after its completion and the output indicating the command was successful.](../media/command.png)
+    :::image type="content" source="../media/command.png" alt-text="Screenshot of PowerShell command prompt with the command New-NetFirewallRule DisplayName Allow ICMPv4-In –Protocol ICMPv4 after its completion and the output indicating the command was successful.":::
 
     > [!NOTE]
     > You will now switch to the RDP session to vm1 and try the ping again
 
 11. Return to the RDP session to vm1 and try the ping again. You should now be successful. 
 
-   ```PowerShell
-   ping vm2
-   ```
+
+    ```PowerShell
+    ping vm2
+    ```
 
 Congratulations! You have configured and deployed two virtual machines in a virtual network. You have also configured the Windows firewall so one of the virtual machines allows incoming ping requests. 
 
 > [!NOTE]
-> To avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.
+> This lab is using the **Azure Sandbox**, so all you need to do is close your Azure Portal to shutdown all the resources created in this lab.  Please do not delete the resource group provided.
+> 
+> If you had used your own subscription, to avoid additional costs, you can remove this resource group. Search for resource groups, click your resource group, and then click **Delete resource group**. Verify the name of the resource group and then click **Delete**. Monitor the **Notifications** to see how the delete is proceeding.

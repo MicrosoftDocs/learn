@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.student-evangelism.introduction-python-nasa.4-nasa-stem
+metadata:
+  title: Dive into STEM through the opportunities of NASA
+  description: Learn about how NASA applies STEM
+  ms.date: 07/22/2020
+  author: angevin17
+  ms.author: sguthals
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Dive into STEM through the opportunities of NASA
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-nasa-stem.md)]

@@ -23,7 +23,7 @@ The following *:::no-loc text="src":::* subdirectories contain .NET Core project
 
 After the app has deployed to AKS, you'll see a variation of the following message in the command shell:
 
-```
+```console
 The eShop-Learn application has been deployed.
 
 You can begin exploring these services (when available):
@@ -50,7 +50,7 @@ Even though the app has been deployed, it might take a few minutes to come onlin
 
 1. After all the services are healthy, select the **Web SPA application** link in the command shell to test the *:::no-loc text="eShopOnContainers":::* web app. The following page appears:
 
-    :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa.png" alt-text="eShop SPA" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="eShop single page app" border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
 1. Complete a purchase as follows:
     1. Select the **LOGIN** link in the upper right to sign into the app. The credentials are provided on the page.
@@ -58,6 +58,6 @@ Even though the app has been deployed, it might take a few minutes to come onlin
     1. Select the shopping bag icon in the upper right.
     1. Select **CHECKOUT**, and then select **PLACE ORDER** to complete the purchase.
 
-    :::image type="content" source="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../media/4-review-code-verify-deployment/eshop-spa-shopping-bag.png":::
+    :::image type="content" source="../../media/microservices/eshop-spa-shopping-bag.png" alt-text="shopping cart with .NET Blue Hoodie" border="true" lightbox="../../media/microservices/eshop-spa-shopping-bag.png":::
 
 In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. You'll review the design of the new coupon service in the next unit.

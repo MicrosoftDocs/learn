@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.implement-dns-for-windows-server-iaas-vms.implement-dns-azure-iaas-virtual-machines
+title: Implement DNS with Azure IaaS virtual machines
+metadata:
+  title: Implement DNS with Azure IaaS virtual machines
+  description: "Implement DNS with Azure IaaS virtual machines"
+  ms.date: 08/14/2020
+  author: wwlpublish
+  ms.author: tonyj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/05-implement-domain-name-system-azure-iaas-virtual-machines.md)]

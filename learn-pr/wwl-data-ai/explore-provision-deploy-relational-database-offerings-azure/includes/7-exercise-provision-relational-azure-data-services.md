@@ -29,9 +29,9 @@ Over time if you realize you need additional compute power to keep up with deman
 
     | Setting      | Value |
     | ------------ | ----- |
-    | **Server name** | Use your initials and the date in numeric format. For example, *jpws01012020*. |
-    | **Server admin login** | *azureadmin*. |
-    | **Password** | *Pa55w.rd** |
+    | **Server name** | Use your initials and the date in numeric format. For example, *jpws01012020* |
+    | **Server admin login** | *azureadmin* |
+    | **Password** | *Pa55w.rd* |
     | **Confirm password** | *Pa55w.rd* |
     | **Location** | Select the default location |
 
@@ -88,7 +88,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
 
     | Setting      | Value |
     | ------------ | ----- |    
-    | **Server name** | Enter *postgres*, followed by your initials and date in numeric format. For example, *postgresjpws01012020*. |
+    | **Server name** | Enter *postgres*, followed by your initials and date in numeric format. For example, *postgresjpws01012020* |
     | **Data source** | *None* |
     | **Location** | Select the default location |
     | **Version** | Keep default setting |
@@ -105,7 +105,7 @@ In this exercise, you'll set up Azure Database for PostgreSQL
     | **Password** | *Pa55w.rd* |
     | **Confirm password** | *Pa55w.rd* |
 
-1. Select **Review + Create**, and then select **Create** to create your Azure MySQL database.
+1. Select **Review + Create**, and then select **Create** to create your Azure PostgreSQL database.
 
 1. On the toolbar, select **Notifications** to monitor the deployment process.
 
@@ -141,7 +141,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting      | Value |
     | ------------ | ----- |    
-    | **Server name** | Enter *mysql* followed by your initials and the date in numeric format. For example, *mysqljpws01012020*. |
+    | **Server name** | Enter *mysql* followed by your initials and the date in numeric format. For example, *mysqljpws01012020* |
     | **Data source** | *None* |
     | **Location** | Select the default location |
     | **Version** | Keep default setting |
@@ -154,7 +154,7 @@ In this exercise you'll set up Azure Database for MySQL
 
     | Setting      | Value |
     | ------------ | ----- |    
-    | **Admin username** | azureadmin. |
+    | **Admin username** | azureadmin |
     | **Password** | Pa55w.rd |
     | **Confirm password** | Pa55w.rd |
 
@@ -168,6 +168,5 @@ In this exercise you'll set up Azure Database for MySQL
     > ![Screenshot of the Azure portal showing the Notifications menu with the Pin to dashboard button from a recent deployment success message highlighted.](../media/6-notifications-complete-mysql.png)
 
 ::: zone-end
-
 
 

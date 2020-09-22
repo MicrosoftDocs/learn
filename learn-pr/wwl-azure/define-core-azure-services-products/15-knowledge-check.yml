@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/27/2020
+  ms.date: 09/19/2020
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
@@ -27,17 +27,17 @@ quiz:
     - content: "Virtual machine scale sets"
       isCorrect: true
       explanation: "That's correct. Virtual machine scale sets let you deploy and manage a set of identical virtual machines."
-  - content: "Which of the following should be used when the primary concern is about the code running a service? In this implementation, there it is ok to ignore the underlying platform or infrastructure?"
+  - content: "Which of the following should be used when the primary concern is to perform work in response to an event (often via a REST command) that needs a response in a few seconds?"
     choices:
     - content: "Azure App Service"
       isCorrect: false
       explanation: "That's incorrect.  App Service is the blade in Azure where you find Azure Functions."
     - content: "Azure Container Instances"
       isCorrect: false
-      explanation: "That's incorrect.  You still have to be aware of and manage the underlying container with this solution."
+      explanation: "That's incorrect.  In this case you are still running a full application that may not be designed for quick responses to events."
     - content: "Azure Functions"
       isCorrect: true
-      explanation: "That's correct. Azure Functions are ideal when you're concerned only about the code running your service and not the underlying platform or infrastructure."
+      explanation: "That's correct. Azure Functions are used when you need to perform work in response to an event (often via a REST request), timer, or message from another Azure service, and when that work can be completed quickly, within seconds or less."
   - content: "Which of the following services is a distributed network of servers that can efficiently deliver web content to users?"
     choices:
     - content: "Azure App Services"

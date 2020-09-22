@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase
+metadata:
+  title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
+  description: "Run Petabyte level OSS NoSQL databases with HDInsight HBase"
+  ms.date: 09/12/2020
+  author: wwlpublish
+  ms.author: chtestao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Run Petabyte level OSS NoSQL databases with HDInsight HBase
+summary: Learn how HBase provides random access and strong consistency for large amounts of unstructured and semi structured data in a schema less database organized by column families.
+abstract: |
+  * Introduction
+  * Use HDInsight HBase clusters
+  * Describe HBase Architecture Patterns
+  * Exercise - Provisioning a HDInsight HBase cluster
+  * Exercise – Run benchmarks in HBase
+  * Understand HBase Best Practices
+  * Summary
+  * Knowledge Check
+prerequisites: |
+  The following pre-requisite should be completed:
+  1. Successfully log in to the Azure portal
+  2. Understand the Azure storage options
+  3. Understand the Azure compute options
+  4. Create and configure a HDInsight Cluster in the Azure portal
+iconUrl: /learn/achievements/run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.svg
+levels:
+- beginner
+roles:
+- data-engineer
+- data-scientist
+products:
+- azure-hdinsight
+units:
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.introduction
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.describe-apache-hbase
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.explain-clusters-architecture-application-patterns
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.improve-write-read-performance-of-hbase-clusters
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.determine-migration-high-availability-strategies
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.use-apache-phoenix-on
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.determine-cluster-performance
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.perform-benchmarking-hbase
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.knowledge-check
+- learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.summary
+badge:
+  uid: learn.wwl.run-petabyte-level-oss-nosql-databases-with-hdinsight-hbase.badge

@@ -1,4 +1,4 @@
-Data analytics is concerned with taking the data that your organization produces it, and using it to establish a picture of how your organization is performing, and what you can do to maintain business performance. Data analytics helps you to identify strengths and weaknesses in your organization, and enable you to make appropriate business decisions.
+Data analytics is concerned with taking the data that your organization produces, and using it to establish a picture of how your organization is performing, and what you can do to maintain business performance. Data analytics helps you to identify strengths and weaknesses in your organization, and enables you to make appropriate business decisions.
 
 The data a company uses can come from many sources. There could be a mass of historical data to comb through, and fresh data continuing to arrive all the time. This data could be the result of customer purchases, bank transactions, stock price movements, real-time weather data, monitoring devices, or even cameras. In a data analytics solution, you combine this data and construct a data warehouse that you can use to ask (and answer) questions about your business operations. Building a data warehouse requires that you can capture the data that you need and *wrangle* it into an appropriate format. You can then use analysis tools and visualizations to examine the information, and identity trends and their causes.
 
@@ -31,7 +31,7 @@ The aim of data processing is to convert the raw data into one or more business 
 > [!div class="mx-imgBorder"]
 > ![Processing ingested data to generate data models](../media/2-process-stage.png)
 
-## What is and ELT and ETL?
+## What is ELT and ETL?
 
 The data processing mechanism can take two approaches to retrieving the ingested data, processing this data to transform it and generate models, and then saving the transformed data and models. These approaches are known as ETL and ELT.
 

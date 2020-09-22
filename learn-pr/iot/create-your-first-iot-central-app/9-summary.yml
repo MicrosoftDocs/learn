@@ -4,7 +4,7 @@ metadata:
   title: Summary
   description: Summary
   ms.date: 10/17/2019
-  author: olivierbloch
+  author: PeterTurcan
   ms.author: Olivier.Bloch
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
@@ -18,9 +18,9 @@ quiz:
 
   - content: 'What ID is identical for all devices connected to one IoT Central app?'
     choices: 
-    - content: 'Scope ID'
+    - content: 'ID Scope'
       isCorrect: true
-      explanation: The Scope ID identifies the IoT Central app.
+      explanation: The ID Scope identifies the IoT Central app.
     - content: 'Device ID'
       isCorrect: false
       explanation: The Device ID is unique to each device.
