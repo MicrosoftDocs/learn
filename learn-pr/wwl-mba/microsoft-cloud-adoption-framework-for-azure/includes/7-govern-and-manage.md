@@ -18,7 +18,7 @@ Because governance requirements will evolve throughout the cloud adoption journe
 Incremental governance relies on a small set of corporate policies, processes, and tools to establish a foundation for adoption and governance. That foundation is called a *minimum viable product (MVP)*. An MVP allows the governance team to quickly incorporate governance into implementations throughout the adoption lifecycle. After this MVP is deployed, additional layers of governance can be quickly incorporated into the environment.
 
 > [!TIP]
-> To determine where you should start to implement your own cloud governance, use the Cloud Governance Tool linked in the “Summary and resources” unit at the end of this module.
+> To determine where you should start to implement your own cloud governance, use the Microsoft Assessment Tools linked in the “Summary and resources” unit at the end of this module.
 
 ## Cloud management
 

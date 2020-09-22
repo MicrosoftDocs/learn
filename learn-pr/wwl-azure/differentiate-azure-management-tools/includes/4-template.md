@@ -29,7 +29,7 @@ In this task, we will browse the Azure quickstart gallery and deploy a template 
 
 5. If prompted, sign in to the Azure subscription you want to use in this lab.
 
-6. Click **Edit template**. The Resource Manager template format uses the JSON format. Review the variables and locate the virtual machine name. Change the name to **myVMTemplate**. **Save** your changes.
+6. Click **Edit template**. The Resource Manager template format uses the JSON format. Review the parameters and variables.  Then locate the parameter for virtual machine name. Change the name to **myVMTemplate**. **Save** your changes. You are returned to the **Custom deployment** blade in the Azure portal.
 
     ![Screenshot of the template with the VM name change highlighted.](../media/0901.png)
 
