@@ -4,7 +4,7 @@ In this module, you'll take an entry-level end-to-end look at Azure and its capa
 
 ## Learning objectives
 
-After you complete this module, you'll be able to:
+After completing this module, you'll be able to:
 
 - Describe the basic concepts of cloud computing.
 - Determine whether Azure is the right solution for your business needs.
@@ -13,4 +13,4 @@ After you complete this module, you'll be able to:
 ## Prerequisites
 
 - You should be familiar with basic computing concepts and terminology.
-- An understanding of cloud computing is helpful but isn't necessary.
+- Familiarity with cloud computing is helpful but isn't necessary.

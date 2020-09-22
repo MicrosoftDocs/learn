@@ -44,10 +44,10 @@ Compute services are often one of the primary reasons why companies move to the 
 > |--------------|------------------|
 > | Azure Virtual Machines    | Windows or Linux virtual machines (VMs) hosted in Azure                  |
 > | Azure Virtual Machine Scale Sets | Scaling for Windows or Linux VMs hosted in Azure                  |
-> | Azure Kubernetes Service  | Enables management of a cluster of VMs that run containerized services   |
+> | Azure Kubernetes Service  | Cluster management for VMs that run containerized services   |
 > | Azure Service Fabric      | Distributed systems platform that runs in Azure or on-premises              |
 > | Azure Batch               | Managed service for parallel and high-performance computing applications |
-> | Azure Container Instances | Run containerized apps on Azure without provisioning servers or VMs      |
+> | Azure Container Instances | Containerized apps run on Azure without provisioning servers or VMs      |
 > | Azure Functions           | An event-driven, serverless compute service                              |
 
 ### Networking
@@ -80,7 +80,7 @@ Azure provides four main types of storage services.
 > | Service name | Service function |
 > |--------------|------------------|
 > | Azure Blob storage  | Storage service for very large objects, such as video files or bitmaps               |
-> | Azure File storage  | File shares that you can access and manage like a file server                        |
+> | Azure File storage  | File shares that can be accessed and managed like a file server                        |
 > | Azure Queue storage | A data store for queuing and reliably delivering messages between applications       |
 > | Azure Table storage | A NoSQL store that hosts unstructured data independent of any schema                 |
 
@@ -114,10 +114,10 @@ Azure provides multiple database services to store a wide variety of data types 
 > | Azure SQL Database | Fully managed relational database with auto-scale, integral intelligence, and robust security |
 > | Azure Database for MySQL | Fully managed and scalable MySQL relational database with high availability and security |
 > | Azure Database for PostgreSQL | Fully managed and scalable PostgreSQL relational database with high availability and security |
-> | SQL Server on VMs | Host enterprise SQL Server apps in the cloud |
+> | SQL Server on Azure Virtual Machines | Service that hosts enterprise SQL Server apps in the cloud |
 > | Azure Synapse Analytics | Fully managed data warehouse with integral security at every level of scale at no extra cost |
-> | Azure Database Migration Service | Migrates your databases to the cloud with no application code changes |
-> | Azure Cache for Redis | Caches frequently used and static data to reduce data and application latency |
+> | Azure Database Migration Service | Service that migrates databases to the cloud with no application code changes |
+> | Azure Cache for Redis | Fully managed service caches frequently used and static data to reduce data and application latency |
 > | Azure Database for MariaDB | Fully managed and scalable MariaDB relational database with high availability and security |
 
 ### Web
@@ -136,16 +136,16 @@ Having a great web experience is critical in today's business world. Azure inclu
 
 ### IoT
 
-People are able to access more information than ever before. Personal digital assistants (PDAs) led to smartphones, and now there are smart watches, smart thermostats, and even smart refrigerators. Personal computers used to be the norm. Now the internet allows any item that's online-capable to access valuable information. This ability for devices to garner and then relay information for data analysis is referred to as the IoT.
+People are able to access more information than ever before. Personal digital assistants led to smartphones, and now there are smart watches, smart thermostats, and even smart refrigerators. Personal computers used to be the norm. Now the internet allows any item that's online-capable to access valuable information. This ability for devices to garner and then relay information for data analysis is referred to as IoT.
 
 Many services can assist and drive end-to-end solutions for IoT on Azure.
 
 > [!div class="mx-tableFixed"]
 > | Service name | Description |
 > |--------------|-------------|
-> | IoT Central | Fully managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage your IoT assets at scale |
+> | IoT Central | Fully managed global IoT software as a service (SaaS) solution that makes it easy to connect, monitor, and manage IoT assets at scale |
 > | Azure IoT Hub | Messaging hub that provides secure communications between and monitoring of millions of IoT devices |
-> | IoT Edge | Push your data analysis models directly onto your IoT devices, allowing them to react quickly to state changes without needing to consult cloud-based AI models.
+> | IoT Edge | Fully managed service that allows data analysis models to be pushed directly onto IoT devices, which allows them to react quickly to state changes without needing to consult cloud-based AI models
 
 ### Big data
 
@@ -158,7 +158,7 @@ Open-source cluster technologies have been developed to deal with these large da
 > |--------------|-------------|
 > | Azure Synapse Analytics | Run analytics at a massive scale by using a cloud-based enterprise data warehouse that takes advantage of massively parallel processing to run complex queries quickly across petabytes of data. |
 > | Azure HDInsight | Process massive amounts of data with managed clusters of Hadoop clusters in the cloud. |
-> | Azure Databricks | Collaborative Apache Spark-based analytics service that can be integrated with other big data services in Azure. |
+> | Azure Databricks | Integrate this collaborative Apache Spark-based analytics service with other big data services in Azure. |
 
 ### AI
 
@@ -172,14 +172,14 @@ Here are some of the most common AI and machine learning service types in Azure.
 > | Service name | Description |
 > |--------------|-------------|
 > | Azure Machine Learning Service | Cloud-based environment you can use to develop, train, test, deploy, manage, and track machine learning models. It can auto-generate a model and auto-tune it for you. It will let you start training on your local machine, and then scale out to the cloud. |
-> | Azure Machine Learning Studio | Collaborative, drag-and-drop visual workspace where you can build, test, and deploy machine learning solutions using prebuilt machine learning algorithms and data-handling modules. |
+> | Azure Machine Learning Studio | Collaborative visual workspace where you can build, test, and deploy machine learning solutions by using prebuilt machine learning algorithms and data-handling modules. |
 
 A closely related set of products are the _cognitive services_. You can use these prebuilt APIs in your applications to solve complex problems.
 
 > [!div class="mx-tableFixed"]
 > | Service name | Description |
 > |--------------|-------------|
-> | Vision | Image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos. |
+> | Vision | Use image-processing algorithms to smartly identify, caption, index, and moderate your pictures and videos. |
 > | Speech | Convert spoken audio into text, use voice for verification, or add speaker recognition to your app. |
 > | Knowledge mapping | Map complex information and data to solve tasks such as intelligent recommendations and semantic search. |
 > | Bing Search | Add Bing Search APIs to your apps and harness the ability to comb billions of webpages, images, videos, and news with a single API call. |
@@ -193,5 +193,5 @@ DevOps brings together people, processes, and technology by automating software 
 > [!div class="mx-tableFixed"]
 > | Service name | Description |
 > |--------------|-------------|
-> | Azure DevOps | Azure DevOps (formerly known as Visual Studio Team Services) provides development collaboration tools that include high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. |
-> | Azure DevTest Labs | Quickly create on-demand Windows and Linux environments you can use to test or demo your applications directly from your deployment pipelines. |
+> | Azure DevOps | Use development collaboration tools such as high-performance pipelines, free private Git repositories, configurable Kanban boards, and extensive automated and cloud-based load testing. Formerly known as Visual Studio Team Services. |
+> | Azure DevTest Labs | Quickly create on-demand Windows and Linux environments to test or demo applications directly from deployment pipelines. |
